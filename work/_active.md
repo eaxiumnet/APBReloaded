@@ -93,28 +93,48 @@ precede menu/district content. Detail level: M0–M7 fully specced; M8+ specced 
 architecture level — each gets a spec-expansion task as its first step when it becomes the
 active milestone (recorded in this file, keeping one plan per effort).
 
-### M0 — Hygiene & baseline  *(brief #1)*
+### M0 — Hygiene & baseline  *(brief #1)* — ✅ COMPLETE 2026-07-19
 - Files: repo root, `Source\APBReloaded\Variant_*`, template maps/`APBReloadedCharacter*`,
   `work\`.
-- Actions: git init + .gitignore (`2011 apb/`, `Binaries/`, `Intermediate/`, `Saved/`,
-  `DerivedDataCache/`, `Content/Extracted/`) + baseline commit; delete template leftovers
-  (separate commit); move `work/login_swap/` → `work/_archive/login_swap/`.
-- Verify: `tests\build_and_run.ps1` exit 0; editor builds; `git log` shows both commits.
+- Actions: git init + .gitignore (`2011 apb/`, `APB Reloaded/` (7.3 GB retail clone found at
+  repo root), `Binaries/`, `Intermediate/`, `Saved/`, `DerivedDataCache/`,
+  `Content/Extracted/`, `.codegraph/`, `.omo/`) + baseline commit; deleted template leftovers
+  (Variant_* source, template classes, `Content\ThirdPerson`, `Content\Variant_*` incl. the
+  4 template maps); moved `work/login_swap/` → `work/_archive/login_swap/`.
+- Fixes landed during verification: vswhere fallback in `tests\build_and_run.ps1`; removed
+  stale `Engine/SkyAtmosphere.h` include (moved into `SkyAtmosphereComponent.h` in 5.8);
+  `bUseUnity=false` in Build.cs (purge regrouped unity blobs → anonymous-namespace
+  collisions in Domain helpers).
+- Evidence: `tests\build_and_run.ps1` FAILS=0; `APBReloadedEditor` + `APBReloaded` Win64
+  Development builds Succeeded; `git log` = 5 commits (baseline, vswhere fix, template
+  purge, SkyAtmosphere fix, unity fix). Note: `tools\UEViewer` + 3 archived tool dirs are
+  embedded git repos (gitlinked, not content-tracked) — fine for local-only use.
 
-### M1 — Architecture & conventions  *(brief #1)*
-- Files: `work\ARCHITECTURE.md` (done), `Source\APBReloaded\Systems\{Frontend,District,
-  Server,Economy}\` folder moves, `tools\import_ledger.json` skeleton.
-- Actions: relocate existing Systems files into subfolders (mechanical, one commit); create
-  ledger + `work\IMPORT_STATUS.md` generator.
-- Verify: full rebuild clean; gates pass; IMPORT_STATUS renders.
+### M1 — Architecture & conventions  *(brief #1)* — ✅ COMPLETE 2026-07-19
+- Files: `work\ARCHITECTURE.md` (done), `Source\APBReloaded\Systems\{Frontend,District,Server}\`,
+  `tools\import_ledger.json`, `tools\scripts\build_import_status.py`.
+- Actions: moved 34 Systems files into `Frontend/` (14) / `District/` (20), `APBWorldGameMode`
+  → `Server/`; bridge files (GameInstanceSubsystem, PlayerState, SessionProbeSubsystem) stay
+  at Systems root; `PrivateIncludePaths` added for subfolders (`Economy/` deferred to M12 —
+  no code yet); created ledger (seeded from on-disk reality) + read-only status generator.
+- Evidence: editor + game builds Succeeded post-move; `tests\build_and_run.ps1` FAILS=0;
+  `work\IMPORT_STATUS.md` renders (4,376 imported uassets; honest block coverage: Financial
+  1/~270, Waterfront 1/~268 manifests). Commits: `c70b939` restructure, ledger tooling commit.
 
-### M2 — Persistence foundation  *(injected; blocks #5/#11/#13/#14 — D5)*
-- Files: new `Domain\APBPersistence.h/.cpp`, `APBWorldService.*`, `APBSocial.h` (mail),
-  `APBGameInstanceSubsystem` (wire `Saved\DomainDB`), `tests\run_domain_tests.cpp`.
-- Actions: repository interfaces + JSON impls per ARCHITECTURE.md §4 schemas; load/save
-  hooks; autosave on mutation, save on logout/district exit.
-- Expected: register → restart process → login → character/cash/inventory intact.
-- Verify: new restart-parity domain tests green.
+### M2 — Persistence foundation  *(injected; blocks #5/#11/#13/#14 — D5)* — ✅ COMPLETE 2026-07-19
+- Files: new `Domain\APBPersistence.h/.cpp` (`apb::JsonDomainStore`), `APBWorldService.*`
+  (`InitPersistence`/`SaveAllNow`/`LogoutAccount`/`SendMail`/`MarkMailRead`/`MailInbox`),
+  `APBSocial.h` (real `MailService`; friends/clan stay stubbed),
+  `APBGameInstanceSubsystem` (`PersistDir=<ProjectSavedDir>/DomainDB`, save on Deinitialize),
+  `tests\run_persistence_tests.cpp`, `tests\build_and_run.ps1` (two suites).
+- Actions: JSON-file repos per ARCHITECTURE.md §4 adapted to actual Domain types
+  (deviations documented in code: wardrobe as array with colors/decal; auction/mail gain
+  `next_id`; bid/fee/expiry fields deferred to M12 with the AuctionHouse extension).
+  Persistence is opt-in — no persist dir ⇒ exact previous in-memory behavior.
+- Expected: register → restart process → login → character/cash/inventory intact. **Proven**
+  by restart-parity suite (two instances sharing a store, both factions, auction+mail parity).
+- Verify: domain suite FAILS=0 + persistence suite FAILS=0 (independently re-run);
+  editor + game builds Succeeded. Commit `207756c` (+ `*.obj` untracking follow-up).
 
 ### M3 — Extraction pipeline completion  *(brief #2)*
 - Files: `tools\scripts\export_2011_ui*.py`, `extract_2011_login_assets.py`,
