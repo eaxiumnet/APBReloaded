@@ -8,6 +8,10 @@ public class APBReloaded : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
+		// Domain .cpp files define same-named anonymous-namespace helpers; unity
+		// blobs merge them into one TU and collide. Compile each file separately.
+		bUseUnity = false;
+
 		PublicDependencyModuleNames.AddRange(new string[] {
 			"Core",
 			"CoreUObject",
