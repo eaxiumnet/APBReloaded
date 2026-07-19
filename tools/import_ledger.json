@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "updated": "2026-07-19",
+  "statuses": ["extracted", "imported", "bound", "manual"],
+  "note": "Single tracking mechanism for extraction/import status (plan D12). One entry per asset or coherent asset group. asset_key format: 'upk_path#object' for singles, 'group:<path>' for batches.",
+  "entries": [
+    { "asset_key": "group:Districts/Asylum", "source": "retail", "dest": "/Game/Imported/Districts/Asylum", "status": "imported", "updated": "pre-ledger" },
+    { "asset_key": "group:Characters/Contacts", "source": "retail", "dest": "/Game/Imported/Characters/Contacts", "status": "imported", "updated": "pre-ledger", "items": ["Contact_Bloodrose", "Contact_LaRocha", "Contact_Sofia"] },
+    { "asset_key": "group:Characters/Wardrobe", "source": "retail", "dest": "/Game/Imported/Characters/Wardrobe", "status": "imported", "updated": "pre-ledger" },
+    { "asset_key": "group:Vehicles", "source": "retail", "dest": "/Game/Imported/Vehicles", "status": "imported", "updated": "pre-ledger" },
+    { "asset_key": "group:Audio/LoginTheme", "source": "retail", "dest": "/Game/Audio", "status": "imported", "updated": "pre-ledger" },
+    { "asset_key": "group:2011/MenuArt", "source": "2011", "dest": "/Game/Imported/UI/Menu2011", "status": "extracted", "updated": "pending M3" },
+    { "asset_key": "group:2011/UISfx", "source": "2011", "dest": "/Game/Audio/UI", "status": "extracted", "updated": "pending M3" },
+    { "asset_key": "group:Districts/Financial", "source": "retail", "dest": "/Game/Imported/Districts/Financial", "status": "imported", "updated": "pre-ledger", "note": "partial — 1 of ~270 block manifests (M9)" },
+    { "asset_key": "group:Districts/Waterfront", "source": "retail", "dest": "/Game/Imported/Districts/Waterfront", "status": "imported", "updated": "pre-ledger", "note": "partial — 1 of ~268 block manifests (M10)" }
+  ]
+}
