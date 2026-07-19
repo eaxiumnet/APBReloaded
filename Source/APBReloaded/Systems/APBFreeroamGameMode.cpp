@@ -31,8 +31,7 @@
 #include "GameFramework/Pawn.h"
 #include "EngineUtils.h"
 
-// Minimal sky atmosphere actor (engine class may be ASkyAtmosphere in UE5)
-#include "Engine/SkyAtmosphere.h"
+// ASkyAtmosphere is declared in Components/SkyAtmosphereComponent.h in UE 5.8
 
 AAPBFreeroamGameMode::AAPBFreeroamGameMode()
 {
