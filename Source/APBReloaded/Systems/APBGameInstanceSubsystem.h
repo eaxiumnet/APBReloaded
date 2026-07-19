@@ -156,5 +156,7 @@ public:
 	bool CanMutateDomain() const;
 
 	FString DataDir;
+	/** Domain JSON persistence root: <ProjectSavedDir>/DomainDB (M2). */
+	FString PersistDir;
 	void* Service = nullptr;
 };

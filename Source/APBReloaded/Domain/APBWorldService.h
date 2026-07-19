@@ -9,6 +9,7 @@
 #include "APBCustomization.h"
 #include "APBModelRegistry.h"
 #include "APBSocial.h"
+#include "APBPersistence.h"
 namespace apb {
 enum class SessionPhase { Boot, LoggedIn, WorldLobby, District };
 struct DistrictSession {
@@ -52,6 +53,7 @@ public:
 	WorldDirectory world_dir;
 	DistrictRouter district_router;
 	SocialService social;
+	MailService mail;
 	ConfigBlobStore config_blobs;
 	DistrictStreamPlan stream_plan;
 	SessionPhase phase = SessionPhase::Boot;
@@ -67,7 +69,25 @@ public:
 	std::string active_world_id;
 	std::vector<std::string> log;
 
+	// ---- persistence (M2, opt-in) ----
+	JsonDomainStore store;
+	int32_t character_slot = 0;
+
 	bool InitFromDataDir(const std::string& dir);
+	/** Opt-in file persistence. When never called (or it fails), behavior is
+	 *  exactly the previous in-memory mode. Loads accounts/auction/mail. */
+	bool InitPersistence(const std::string& dir);
+	bool PersistenceActive() const { return store.IsActive(); }
+	/** Force-save all aggregates (accounts/character/auction/mail). */
+	void SaveAllNow();
+	/** Saves the current character, clears session character state, logs out. */
+	void LogoutAccount();
+	/** Inventory grant with persistence hook. */
+	bool GrantItem(const std::string& item_id, int32_t qty);
+	/** Mail from the current character with persistence hook. */
+	bool SendMail(const std::string& to, const std::string& subject, const std::string& body, int64_t cash = 0);
+	bool MarkMailRead(int64_t id);
+	std::vector<const MailMessage*> MailInbox() const;
 	bool RegisterAccount(const std::string& user, const std::string& pass);
 	bool LoginAccount(const std::string& user, const std::string& pass);
 	bool EnterWorld(const std::string& world_id = "W1");
@@ -101,5 +121,12 @@ public:
 	double OppositionPressure() const { return threat.CurrentTier().opposition_multiplier; }
 	/** Pure snapshot of shipped Domain fields — used by UE SyncPlayerStateFromDomain and Domain tests. */
 	DomainSnapshot CaptureSnapshot() const;
+
+private:
+	void PersistAccounts();
+	void PersistCharacter();
+	void PersistAuction();
+	void PersistMail();
+	void TryLoadPersistedCharacter();
 };
 }

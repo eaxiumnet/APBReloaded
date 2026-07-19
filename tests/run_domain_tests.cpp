@@ -169,9 +169,9 @@ void TestDistrictLoop() {
 		w.AdvanceMission(1.0);
 	}
 	CHECK(w.mission->status == MissionStatus::Completed, "mission completed multi-stage");
-	// social stubs non-blocking
+	// social stubs non-blocking (friends/clan); mail via real MailService (M2)
 	CHECK(w.social.AddFriend("Bob"), "friend stub");
-	CHECK(w.social.SendMail("Runner", "Bob", "hi", "body"), "mail stub");
+	CHECK(w.SendMail("Bob", "hi", "body"), "mail send");
 	CHECK(w.social.CreateClan("C1", "Crew", "CRW", "Runner"), "clan stub");
 	// config blob
 	CHECK(w.SaveCharacterConfig(), "save config blob");

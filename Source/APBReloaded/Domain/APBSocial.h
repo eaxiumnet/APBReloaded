@@ -4,14 +4,73 @@
 
 namespace apb {
 
-/** Non-blocking social stubs: mail, friends, clan — do not block core loop. */
+/** Minimal real mail service (M2, ARCHITECTURE.md §4): messages carry
+ *  id/from/to/subject/body, item+cash attachments, and a read flag.
+ *  A cash-only send is represented as one attachment with empty item_id. */
+struct MailAttachment {
+	std::string item_id;
+	int32_t count = 0;
+	int64_t cash = 0;
+};
+
 struct MailMessage {
 	int64_t id = 0;
 	std::string from, to, subject, body;
-	int64_t cash_attached = 0;
+	std::vector<MailAttachment> attachments;
 	bool read = false;
 };
 
+class MailService {
+public:
+	std::vector<MailMessage> messages;
+	int64_t next_mail_id = 1;
+
+	bool SendMail(const std::string& from, const std::string& to, const std::string& subject,
+		const std::string& body, int64_t cash = 0) {
+		std::vector<MailAttachment> att;
+		if (cash > 0) att.push_back(MailAttachment{"", 0, cash});
+		return SendMailWithAttachments(from, to, subject, body, att);
+	}
+
+	bool SendMailWithAttachments(const std::string& from, const std::string& to, const std::string& subject,
+		const std::string& body, const std::vector<MailAttachment>& attachments) {
+		if (from.empty() || to.empty()) return false;
+		MailMessage m;
+		m.id = next_mail_id++;
+		m.from = from; m.to = to; m.subject = subject; m.body = body;
+		m.attachments = attachments;
+		messages.push_back(m);
+		return true;
+	}
+
+	std::vector<const MailMessage*> InboxFor(const std::string& character) const {
+		std::vector<const MailMessage*> out;
+		for (const auto& m : messages) if (m.to == character) out.push_back(&m);
+		return out;
+	}
+
+	int32_t UnreadCount(const std::string& character) const {
+		int32_t n = 0;
+		for (const auto& m : messages) if (m.to == character && !m.read) ++n;
+		return n;
+	}
+
+	MailMessage* Find(int64_t id) {
+		for (auto& m : messages) if (m.id == id) return &m;
+		return nullptr;
+	}
+	const MailMessage* Find(int64_t id) const {
+		for (const auto& m : messages) if (m.id == id) return &m;
+		return nullptr;
+	}
+
+	bool MarkRead(int64_t id) {
+		if (MailMessage* m = Find(id)) { m->read = true; return true; }
+		return false;
+	}
+};
+
+/** Non-blocking social stubs: friends, clan — do not block core loop. */
 struct FriendEntry {
 	std::string name;
 	bool online = false;
@@ -24,20 +83,8 @@ struct ClanInfo {
 
 class SocialService {
 public:
-	std::vector<MailMessage> inbox;
 	std::vector<FriendEntry> friends;
 	std::optional<ClanInfo> clan;
-	int64_t next_mail_id = 1;
-
-	bool SendMail(const std::string& from, const std::string& to, const std::string& subject,
-		const std::string& body, int64_t cash = 0) {
-		if (from.empty() || to.empty()) return false;
-		MailMessage m;
-		m.id = next_mail_id++;
-		m.from = from; m.to = to; m.subject = subject; m.body = body; m.cash_attached = cash;
-		inbox.push_back(m);
-		return true;
-	}
 
 	bool AddFriend(const std::string& name) {
 		if (name.empty()) return false;
@@ -67,6 +114,8 @@ struct AccountRecord {
 	std::string username;
 	std::string password_hash; // private offline: plain compare of hash field
 	bool banned = false;
+	std::string created_utc;     // ISO-8601, set on register
+	std::string last_login_utc;  // ISO-8601, set on successful login
 };
 
 class LoginService {

@@ -70,12 +70,26 @@ bool WorldService::InitFromDataDir(const std::string& dir) {
 }
 bool WorldService::RegisterAccount(const std::string& user, const std::string& pass) {
 	bool r = login.Register(user, pass);
+	if (r) {
+		auto it = login.accounts.find(user);
+		if (it != login.accounts.end() && it->second.created_utc.empty())
+			it->second.created_utc = NowUtcIso();
+		PersistAccounts();
+	}
 	log.push_back(r ? ("REGISTER " + user) : "REGISTER_FAIL");
 	return r;
 }
 bool WorldService::LoginAccount(const std::string& user, const std::string& pass) {
 	bool r = login.Login(user, pass);
-	if (r) phase = SessionPhase::LoggedIn;
+	if (r) {
+		phase = SessionPhase::LoggedIn;
+		const std::string now = NowUtcIso();
+		auto it = login.accounts.find(user);
+		if (it != login.accounts.end()) it->second.last_login_utc = now;
+		if (login.session) login.session->last_login_utc = now;
+		PersistAccounts();
+		TryLoadPersistedCharacter();
+	}
 	log.push_back(r ? ("LOGIN " + user) : "LOGIN_FAIL");
 	return r;
 }
@@ -98,6 +112,7 @@ bool WorldService::CreateCharacter(const std::string& name, Faction faction) {
 	for (const auto& kv : catalog.items) if (kv.second.category == "Weapon") { inventory.Grant(kv.first, 1); break; }
 	if (phase == SessionPhase::Boot || phase == SessionPhase::LoggedIn) phase = SessionPhase::WorldLobby;
 	log.push_back(std::string("CHAR ") + name + " " + FactionName(faction));
+	PersistCharacter();
 	return true;
 }
 bool WorldService::ApplyAppearance(const CharacterAppearance& app) {
@@ -105,12 +120,14 @@ bool WorldService::ApplyAppearance(const CharacterAppearance& app) {
 	log.push_back("APPEARANCE_APPLY slots=" + std::to_string(appearance.clothing.size())
 		+ " height=" + std::to_string(appearance.body.height)
 		+ " bulk=" + std::to_string(appearance.body.bulk));
+	PersistCharacter();
 	return true;
 }
 bool WorldService::EquipClothing(const std::string& slot, const std::string& item_id, int32_t c0, int32_t c1, const std::string& decal) {
 	if (!character) return false;
 	auto r = customization.EquipFromCatalog(appearance, slot, item_id, c0, c1, decal);
 	log.push_back(r.ok ? ("EQUIP " + slot + "=" + item_id) : ("EQUIP_FAIL " + r.error));
+	if (r.ok) PersistCharacter();
 	return r.ok;
 }
 std::string WorldService::SaveAppearanceBlob() const { return appearance.Serialize(); }
@@ -169,6 +186,7 @@ bool WorldService::ExitDistrict() {
 	if (!district || !character) return false;
 	district_router.Exit(character->name);
 	log.push_back("EXIT_DISTRICT " + district->district_id);
+	PersistCharacter();
 	district.reset(); vehicle.reset();
 	phase = SessionPhase::WorldLobby;
 	return true;
@@ -176,17 +194,25 @@ bool WorldService::ExitDistrict() {
 ArmasResult WorldService::ArmasBuy(const std::string& item_id) {
 	ArmasResult r; if (!character) { r.error = "no_character"; return r; }
 	r = armas.Purchase(*character, inventory, item_id);
-	log.push_back(r.ok ? ("ARMAS_BUY " + item_id) : ("ARMAS_FAIL " + r.error)); return r;
+	log.push_back(r.ok ? ("ARMAS_BUY " + item_id) : ("ARMAS_FAIL " + r.error));
+	if (r.ok) PersistCharacter();
+	return r;
 }
 AuctionResult WorldService::AuctionList(const std::string& item_id, int32_t qty, int64_t price) {
 	AuctionResult r; if (!character) { r.error = "no_character"; return r; }
 	r = auction.ListItem(character->name, inventory, *character, item_id, qty, price);
-	log.push_back(r.ok ? ("AUCTION_LIST " + std::to_string(r.listing_id)) : ("AUCTION_LIST_FAIL " + r.error)); return r;
+	log.push_back(r.ok ? ("AUCTION_LIST " + std::to_string(r.listing_id)) : ("AUCTION_LIST_FAIL " + r.error));
+	if (r.ok) { PersistCharacter(); PersistAuction(); }
+	return r;
 }
 AuctionResult WorldService::AuctionBuy(int64_t listing_id, CharacterProfile& seller_profile, Inventory& seller_inv) {
 	AuctionResult r; if (!character) { r.error = "no_character"; return r; }
 	r = auction.Buyout(character->name, *character, inventory, seller_profile, seller_inv, listing_id);
-	log.push_back(r.ok ? ("AUCTION_BUY " + std::to_string(listing_id)) : ("AUCTION_BUY_FAIL " + r.error)); return r;
+	log.push_back(r.ok ? ("AUCTION_BUY " + std::to_string(listing_id)) : ("AUCTION_BUY_FAIL " + r.error));
+	// Seller state is caller-owned (may belong to another account); only the
+	// buyer aggregate and the listing store are persisted here.
+	if (r.ok) { PersistCharacter(); PersistAuction(); }
+	return r;
 }
 bool WorldService::StartMissionScript(const std::string& mission_id) {
 	if (!character) return false;
@@ -268,6 +294,82 @@ bool WorldService::ExitVehicle() {
 std::vector<std::string> WorldService::StreamChunksNear(double x, double y) const {
 	return stream_plan.ChunksNear(x, y);
 }
+
+// ---------------------------------------------------------------- persistence
+bool WorldService::InitPersistence(const std::string& dir) {
+	if (!store.Init(dir)) { log.push_back("PERSIST_INIT_FAIL " + dir); return false; }
+	bool accOk = store.LoadAccounts(login);
+	store.LoadAuction(auction);
+	store.LoadMail(mail);
+	log.push_back("PERSIST_INIT dir=" + dir
+		+ " accounts=" + std::to_string(login.accounts.size())
+		+ " listings=" + std::to_string(auction.listings.size())
+		+ " mail=" + std::to_string(mail.messages.size())
+		+ (accOk ? "" : " (fresh)"));
+	return true;
+}
+void WorldService::SaveAllNow() {
+	PersistAccounts();
+	PersistCharacter();
+	PersistAuction();
+	PersistMail();
+}
+void WorldService::LogoutAccount() {
+	PersistCharacter();
+	log.push_back("LOGOUT" + (login.session ? (" " + login.session->username) : ""));
+	district.reset(); vehicle.reset();
+	login.Logout();
+	character.reset();
+	inventory.slots.clear();
+	appearance = CharacterAppearance{};
+	phase = SessionPhase::Boot;
+}
+bool WorldService::GrantItem(const std::string& item_id, int32_t qty) {
+	if (!character) return false;
+	bool ok = inventory.Grant(item_id, qty);
+	if (ok) PersistCharacter();
+	return ok;
+}
+bool WorldService::SendMail(const std::string& to, const std::string& subject, const std::string& body, int64_t cash) {
+	if (!character) return false;
+	bool ok = mail.SendMail(character->name, to, subject, body, cash);
+	log.push_back(ok ? ("MAIL_SEND to=" + to) : "MAIL_SEND_FAIL");
+	if (ok) PersistMail();
+	return ok;
+}
+bool WorldService::MarkMailRead(int64_t id) {
+	bool ok = mail.MarkRead(id);
+	if (ok) PersistMail();
+	return ok;
+}
+std::vector<const MailMessage*> WorldService::MailInbox() const {
+	if (!character) return {};
+	return mail.InboxFor(character->name);
+}
+void WorldService::PersistAccounts() {
+	if (store.IsActive()) store.SaveAccounts(login);
+}
+void WorldService::PersistCharacter() {
+	if (!store.IsActive() || !character || !login.session) return;
+	store.SaveCharacter(login.session->username, character_slot, *character, appearance, inventory, threat.points);
+}
+void WorldService::PersistAuction() {
+	if (store.IsActive()) store.SaveAuction(auction);
+}
+void WorldService::PersistMail() {
+	if (store.IsActive()) store.SaveMail(mail);
+}
+void WorldService::TryLoadPersistedCharacter() {
+	if (!store.IsActive() || !login.session) return;
+	const std::string& acct = login.session->username;
+	if (!store.HasCharacter(acct, character_slot)) return;
+	CharacterProfile p; CharacterAppearance app; Inventory inv; double tp = 0;
+	if (!store.LoadCharacter(acct, character_slot, p, app, inv, tp)) return;
+	character = p; appearance = app; inventory = inv;
+	threat.points = tp; threat.faction = p.faction;
+	log.push_back("PERSIST_LOAD_CHAR " + p.name + " cash=" + std::to_string(p.cash));
+}
+
 DomainSnapshot WorldService::CaptureSnapshot() const {
 	DomainSnapshot s;
 	if (character) {

@@ -31,6 +31,7 @@ void UAPBGameInstanceSubsystem::Initialize(FSubsystemCollectionBase& Collection)
 	Super::Initialize(Collection);
 	Service = new apb::WorldService();
 	DataDir = FPaths::ProjectContentDir() / TEXT("Data");
+	PersistDir = FPaths::ProjectSavedDir() / TEXT("DomainDB");
 	InitCatalogFromProjectData();
 
 	// Default FPS lock 60 (config t.MaxFPS + GameUserSettings; F8 debug can change)
@@ -55,6 +56,7 @@ void UAPBGameInstanceSubsystem::Deinitialize()
 {
 	if (Service)
 	{
+		Svc(Service)->SaveAllNow(); // flush DomainDB on shutdown when persistence is active
 		delete Svc(Service);
 		Service = nullptr;
 	}
@@ -65,6 +67,9 @@ bool UAPBGameInstanceSubsystem::InitCatalogFromProjectData()
 {
 	if (!Service) return false;
 	const bool Ok = Svc(Service)->InitFromDataDir(TCHAR_TO_UTF8(*DataDir));
+	const bool PersistOk = Svc(Service)->InitPersistence(TCHAR_TO_UTF8(*PersistDir));
+	UE_LOG(LogTemp, Warning, TEXT("APB persistence init ok=%d dir=%s (Saved/DomainDB JSON)"),
+		PersistOk ? 1 : 0, *PersistDir);
 	// Steam-derived Content/Data (districts/catalogs from apbdb + placement JSON).
 	const int32 DistrictN = Svc(Service)->ListDistricts().size();
 	UE_LOG(LogTemp, Warning,
