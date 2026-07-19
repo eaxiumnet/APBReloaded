@@ -1,0 +1,880 @@
+enum etPlayerCustomisation
+{
+	PC_CHARACTER = 0,
+	PC_VEHICLE = 1,
+	PC_GRAFFITI = 2,
+	PC_THEME = 3,
+	PC_MAX = 4,
+};
+enum etCustomisationPrecacheType
+{
+	CPCT_Character = 0,
+	CPCT_Vehicle = 1,
+	CPCT_Graffiti = 2,
+	CPCT_Statue = 3,
+	CPCT_Theme = 4,
+	CPCT_MAX = 5,
+enum etCustomisationPrecacheType
+{
+	CPCT_Character = 0,
+	CPCT_Vehicle = 1,
+	CPCT_Graffiti = 2,
+	CPCT_Statue = 3,
+	CPCT_Theme = 4,
+	CPCT_MAX = 5,
+};
+enum etAchievementType
+{
+	AchievementType_None = 0,
+	AchievementType_MaxKills = 1,
+	AchievementType_MAX = 2,
+};
+enum etActivityMessageLocation
+enum etCustomisedAssetPriority
+{
+	CAMPriority_SelfCharacter = 0,
+	CAMPriority_SelfVehicle = 1,
+	CAMPriority_Groupmate = 2,
+	CAMPriority_Friend = 3,
+	CAMPriority_SameMission = 4,
+	CAMPriority_Threat11 = 5,
+	CAMPriority_Threat13 = 6,
+	CAMPriority_SideMate = 7,
+	CAMPriority_MAX = 8,
+};
+enum etDeployedUsableArray
+{
+	DeployedUsableArray_None = 0,
+	DeployedUsableArray_Character = 1,
+enum etFaction
+{
+	kFACTION_None = 0,
+	kFACTION_Enforcer = 1,
+	kFACTION_Criminal = 2,
+	kFACTION_Both = 3,
+	kFACTION_MAX = 4,
+};
+enum etFeedbackMessage
+{
+	FeedbackQuestion_None = 0,
+	FeedbackQuestion_Standard = 1,
+	FeedbackQuestion_Special = 2,
+	FeedbackQuestion_BalancedMatch = 3,
+	FeedbackQuestion_NotReadyNag = 4,
+	FeedbackQuestion_MAX = 5,
+enum etModifierStackingSlot
+{
+	ModifierStackingSlot_None = 0,
+	ModifierStackingSlot_cActivated = 1,
+	ModifierStackingSlot_cConsumable = 2,
+	ModifierStackingSlot_cHealth = 3,
+	ModifierStackingSlot_cMinigame = 4,
+	ModifierStackingSlot_cUtility = 5,
+	ModifierStackingSlot_vActivated = 6,
+	ModifierStackingSlot_vChassis = 7,
+	ModifierStackingSlot_vEngine = 8,
+	ModifierStackingSlot_vGeneric = 9,
+	ModifierStackingSlot_vTrunk = 10,
+	ModifierStackingSlot_wBarrel = 11,
+	ModifierStackingSlot_wMagazine = 12,
+	ModifierStackingSlot_wReceiver = 13,
+enum etVehicleBatch
+{
+	VehicleBatch_None = 0,
+	VehicleBatch_A = 1,
+	VehicleBatch_B = 2,
+	VehicleBatch_C = 3,
+	VehicleBatch_D = 4,
+	VehicleBatch_E = 5,
+	VehicleBatch_F = 6,
+	VehicleBatch_G = 7,
+	VehicleBatch_H = 8,
+	VehicleBatch_MAX = 9,
+};
+enum etVehicleColour
+{
+	White = 0,
+enum etVehicleColour
+{
+	White = 0,
+	Silver = 1,
+	Grey = 2,
+	SlateGrey = 3,
+	DarkGrey = 4,
+	Black = 5,
+	CadetBlue = 6,
+	RoyalBlue = 7,
+	MediumBlue = 8,
+	Blue = 9,
+	DarkBlueMike = 10,
+	LightSlateGrey = 11,
+	Cyan = 12,
+	MediumSeaGreen = 13,
+enum etVehicleDamageVFXState
+{
+	VehicleDamageVFX_None = 0,
+	VehicleDamageVFX_DamageState1 = 1,
+	VehicleDamageVFX_DamageState2 = 2,
+	VehicleDamageVFX_DamageState3 = 3,
+	VehicleDamageVFX_DamageState4 = 4,
+	VehicleDamageVFX_MAX = 5,
+};
+enum etVehicleDistricts
+{
+	None_ = 0,
+	Financial = 1,
+	etVehicleDistricts_MAX = 2,
+};
+enum etVehicleDriveType
+enum etVehicleDistricts
+{
+	None_ = 0,
+	Financial = 1,
+	etVehicleDistricts_MAX = 2,
+};
+enum etVehicleDriveType
+{
+	kVehicleDriveRWD = 0,
+	kVehicleDriveFWD = 1,
+	kVehicleDriveAWD = 2,
+	etVehicleDriveType_MAX = 3,
+};
+enum etVehicleGear
+{
+	VehicleGear_Reverse = 0,
+enum etVehicleDriveType
+{
+	kVehicleDriveRWD = 0,
+	kVehicleDriveFWD = 1,
+	kVehicleDriveAWD = 2,
+	etVehicleDriveType_MAX = 3,
+};
+enum etVehicleGear
+{
+	VehicleGear_Reverse = 0,
+	VehicleGear = 1,
+	VehicleGear = 2,
+	VehicleGear = 3,
+	VehicleGear = 4,
+	VehicleGear = 5,
+	VehicleGear = 6,
+enum etVehicleGear
+{
+	VehicleGear_Reverse = 0,
+	VehicleGear = 1,
+	VehicleGear = 2,
+	VehicleGear = 3,
+	VehicleGear = 4,
+	VehicleGear = 5,
+	VehicleGear = 6,
+	VehicleGear_MAX = 7,
+};
+enum etVehicleInteractionAnimation
+{
+	kVIA_Open_Door = 0,
+	kVIA_Close_Door = 1,
+	kVIA_Close_Door_From_Inside = 2,
+enum etVehicleInteractionAnimation
+{
+	kVIA_Open_Door = 0,
+	kVIA_Close_Door = 1,
+	kVIA_Close_Door_From_Inside = 2,
+	kVIA_Get_In_And_Close_Door = 3,
+	kVIA_Open_Door_And_Get_Out = 4,
+	kVIA_Open_Door_And_Bail_Out = 5,
+	kVIA_Swap_Seats = 6,
+	kVIA_Enter_VCP = 7,
+	kVIA_Exit_VCP = 8,
+	kVIA_Eject_Doing_Initial_Criminal = 9,
+	kVIA_Eject_Doing_Initial_Enforcer = 10,
+	kVIA_Eject_Doing_Later_Criminal = 11,
+	kVIA_Eject_Doing_Later_Enforcer = 12,
+	kVIA_Eject_Seat_Slide_Criminal = 13,
+enum etVehicleModelClass
+{
+	VehicleModelClass_None = 0,
+	VehicleModelClass_MAX = 1,
+};
+enum etVehiclePositionIndex
+{
+	VehiclePositionIndex_FrontLeft = 0,
+	VehiclePositionIndex_FrontRight = 1,
+	VehiclePositionIndex_RearLeft = 2,
+	VehiclePositionIndex_RearRight = 3,
+	VehiclePositionIndex_Cargo = 4,
+	VehiclePositionIndex_MAX = 5,
+};
+enum etVehicleSetupType
+{
+enum etVehiclePositionIndex
+{
+	VehiclePositionIndex_FrontLeft = 0,
+	VehiclePositionIndex_FrontRight = 1,
+	VehiclePositionIndex_RearLeft = 2,
+	VehiclePositionIndex_RearRight = 3,
+	VehiclePositionIndex_Cargo = 4,
+	VehiclePositionIndex_MAX = 5,
+};
+enum etVehicleSetupType
+{
+	VehicleSetupType_None = 0,
+	VehicleSetupType_AmbientSUV_PickupKingCab = 1,
+	VehicleSetupType_AmbientSUV_SUV = 2,
+	VehicleSetupType_AmbientTruck_BoxBackCurtain = 3,
+	VehicleSetupType_AmbientUtility_2DoorCabriolet = 4,
+enum etVehicleSetupType
+{
+	VehicleSetupType_None = 0,
+	VehicleSetupType_AmbientSUV_PickupKingCab = 1,
+	VehicleSetupType_AmbientSUV_SUV = 2,
+	VehicleSetupType_AmbientTruck_BoxBackCurtain = 3,
+	VehicleSetupType_AmbientUtility_2DoorCabriolet = 4,
+	VehicleSetupType_AmbientUtility_2DoorCoupe = 5,
+	VehicleSetupType_AmbientTruck_Cement = 6,
+	VehicleSetupType_AmbientUtility_2DoorHatchbackVan = 7,
+	VehicleSetupType_AmbientTruck_Garbage = 8,
+	VehicleSetupType_AmbientUtility_4DoorEstate = 9,
+	VehicleSetupType_AmbientUtility_4DoorEstateVan = 10,
+	VehicleSetupType_AmbientUtility_4DoorHatchback = 11,
+	VehicleSetupType_AmbientUtility_4DoorSedan = 12,
+	VehicleSetupType_AmbientUtility_ClassicMuscle = 13,
+enum etVehicleSpecificationMethod
+{
+	VehicleSpecification_ByVehicleCategory = 0,
+	VehicleSpecification_ByVehicleSubCategory = 1,
+	VehicleSpecification_SpecificVehicleSetupType = 2,
+	VehicleSpecification_MAX = 3,
+};
+enum etVehicleTempSetup
+{
+	VehicleTempSetup_2DoorCar = 0,
+	VehicleTempSetup_4DoorCar = 1,
+	VehicleTempSetup_KingCab = 2,
+	VehicleTempSetup_Roadster = 3,
+	VehicleTempSetup_VanStandard = 4,
+	VehicleTempSetup_2DrCoupe = 5,
+	VehicleTempSetup_2DrVan = 6,
+enum etVehicleTempSetup
+{
+	VehicleTempSetup_2DoorCar = 0,
+	VehicleTempSetup_4DoorCar = 1,
+	VehicleTempSetup_KingCab = 2,
+	VehicleTempSetup_Roadster = 3,
+	VehicleTempSetup_VanStandard = 4,
+	VehicleTempSetup_2DrCoupe = 5,
+	VehicleTempSetup_2DrVan = 6,
+	VehicleTempSetup_4DrEstate = 7,
+	VehicleTempSetup_ClassicMuscle = 8,
+	VehicleTempSetup_Utility1Estate = 9,
+	VehicleTempSetup_EstateVan = 10,
+	VehicleTempSetup_ExecSaloon = 11,
+	VehicleTempSetup_Hatchback = 12,
+	VehicleTempSetup_Lowrider = 13,
+enum etVehicleUICategory
+{
+	VehicleUICategory_None = 0,
+	VehicleUICategory_MAX = 1,
+};
+enum etVIPAssignmentMethod
+{
+	VIPAssignmentMethod_SideLeader = 0,
+	VIPAssignmentMethod_HighestHeatPlayer = 1,
+	VIPAssignmentMethod_MAX = 2,
+};
+enum etWarningPromptGroup
+{
+	WPG_Warning_Email = 0,
+	WPG_Warning_Vending = 1,
+	WPG_Warning_MAX = 2,
+enum etWeaponClass
+{
+	Grenade = 0,
+	Projectile = 1,
+	Raycast = 2,
+	ShotGun = 3,
+	Witnessing = 4,
+	etWeaponClass_MAX = 5,
+};
+enum etWeaponFiringState
+{
+	WeaponNone = 0,
+	WeaponSemi = 1,
+	WeaponAuto = 2,
+	WeaponBurst = 3,
+	WeaponCooking = 4,
+enum etWeaponFiringState
+{
+	WeaponNone = 0,
+	WeaponSemi = 1,
+	WeaponAuto = 2,
+	WeaponBurst = 3,
+	WeaponCooking = 4,
+	etWeaponFiringState_MAX = 5,
+};
+enum etWeaponImpactClass
+{
+	WIC_Null = 0,
+	WIC_Small = 1,
+	WIC_Medium = 2,
+	WIC_Heavy = 3,
+	WIC_Explosive = 4,
+enum etWeaponImpactClass
+{
+	WIC_Null = 0,
+	WIC_Small = 1,
+	WIC_Medium = 2,
+	WIC_Heavy = 3,
+	WIC_Explosive = 4,
+	WIC_Melee = 5,
+	WIC_Shotgun = 6,
+	WIC_NonLethal = 7,
+	WIC_MAX = 8,
+};
+enum etWeaponOverrideType
+{
+	WeaponOverrideUseDeployed = 0,
+	WeaponOverrideUseFromInventoryOrDeployed = 1,
+enum etWeaponOverrideType
+{
+	WeaponOverrideUseDeployed = 0,
+	WeaponOverrideUseFromInventoryOrDeployed = 1,
+	WeaponOverrideUseFromInventoryOrEmpty = 2,
+	WeaponOverrideUseFromInventoryOrCreate = 3,
+	WeaponOverrideAlwaysCreate = 4,
+	etWeaponOverrideType_MAX = 5,
+};
+enum etWeaponPickupAvailability
+{
+	WPA_OwnerOnly = 0,
+	WPA_OwnerTeam = 1,
+	WPA_OpposingTeam = 2,
+	WPA_OwnerMission = 3,
+	WPA_OwnerFaction = 4,
+enum etWeaponPickupAvailability
+{
+	WPA_OwnerOnly = 0,
+	WPA_OwnerTeam = 1,
+	WPA_OpposingTeam = 2,
+	WPA_OwnerMission = 3,
+	WPA_OwnerFaction = 4,
+	WPA_NonOwnerFaction = 5,
+	WPA_NonOwner = 6,
+	WPA_Everyone = 7,
+	WPA_MAX = 8,
+};
+enum etWitnessingFunctionality
+{
+	RulesetWitnessing_Off = 0,
+	RulesetWitnessing_HeatGenerated = 1,
+enum etWorldFaction
+{
+	kWorldFaction_Normal = 0,
+	kWorldFaction_Recommended = 1,
+	kWorldFaction_Full = 2,
+	kWorldFaction_MAX = 3,
+};
+enum etYesNoEither
+{
+	kYNE_Either = 0,
+	kYNE_Yes = 1,
+	kYNE_No = 2,
+	kYNE_MAX = 3,
+};
+enum etTeamChangeEventType
+{
+enum etVehicleStudioRenderTargetType
+{
+	VSRT_EXTERIOR_DIFFUSE = 0,
+	VSRT_EXTERIOR_NORMAL = 1,
+	VSRT_EXTERIOR_EMISSIVE = 2,
+	VSRT_INTERIOR_DIFFUSE = 3,
+	VSRT_INTERIOR_NORMAL = 4,
+	VSRT_INTERIOR_EMISSIVE = 5,
+	VSRT_WHEEL_DIFFUSE = 6,
+	VSRT_WHEEL_NORMAL = 7,
+	VSRT_EXTERIOR_DECALS = 8,
+	VSRT_MAX = 9,
+};
+enum etAmmoResupplyResult
+{
+	kAmmoResupply_OK = 0,
+enum etWeaponResupplyResult
+{
+	kWeaponResupply_OK = 0,
+	kWeaponResupply_NoWeaponDeployedInSlot = 1,
+	kWeaponResupply_WeaponFull = 2,
+	kWeaponResupply_InsufficientFunds = 3,
+	kWeaponResupply_SupplierEmpty = 4,
+	kAmmoResupply_WeaponLocked = 5,
+	kWeaponResupply_Fail = 6,
+	kWeaponResupply_AlreadyResupplying = 7,
+	etWeaponResupplyResult_MAX = 8,
+};
+enum etWeaponType
+{
+	WeaponType_None = 0,
+	WeaponType_Primary = 1,
+enum etWeaponType
+{
+	WeaponType_None = 0,
+	WeaponType_Primary = 1,
+	WeaponType_Secondary = 2,
+	WeaponType_Grenade = 3,
+	WeaponType_MAX = 4,
+};
+enum etInventoryAccessResult
+{
+	kInventoryAccess_OK = 0,
+	kInventoryAccess_WrongFaction = 1,
+	kInventoryAccess_WrongGroup = 2,
+	kInventoryAccess_AmmoCarrierFnModInactive = 3,
+	kInventoryAccess_AmmoCarrierDepotNotDeployed = 4,
+	kInventoryAccess_AmmoCarrierVehicleMoving = 5,
+enum etWeaponState
+{
+	WEAPONSTATE_Normal = 0,
+	WEAPONSTATE_UnHolster = 1,
+	WEAPONSTATE_Holster = 2,
+	WEAPONSTATE_Reloading = 3,
+	WEAPONSTATE_QuickReload = 4,
+	WEAPONSTATE_EndReloading = 5,
+	WEAPONSTATE_SwitchToUnarmed = 6,
+	WEAPONSTATE_MAX = 7,
+};
+enum etGrenadeWeaponState
+{
+	GRENADEWEAPON_Normal = 0,
+	GRENADEWEAPON_PinPull = 1,
+	GRENADEWEAPON_Throw = 2,
+enum etGrenadeWeaponState
+{
+	GRENADEWEAPON_Normal = 0,
+	GRENADEWEAPON_PinPull = 1,
+	GRENADEWEAPON_Throw = 2,
+	GRENADEWEAPON_MAX = 3,
+};
+enum etCSAMirrorState
+{
+	CSAMirror_UseCameraSwap = 0,
+	CSAMirror_NotMirrored = 1,
+	CSAMirror_Mirrored = 2,
+	CSAMirror_MAX = 3,
+};
+enum etCharacterLeanState
+{
+enum EVehicleType
+{
+	VEHICLETYPE_None = 0,
+	VEHICLETYPE_Free = 1,
+	VEHICLETYPE_LivingCity = 2,
+	VEHICLETYPE_PlayerDeployed = 3,
+	VEHICLETYPE_HackSpawned = 4,
+	VEHICLETYPE_TestPseudoKinematic = 5,
+	VEHICLETYPE_ParkedTaskTarget = 6,
+	VEHICLETYPE_MAX = 7,
+};
+enum etVehicleSpawnState
+{
+	eVSS_NotSpawned = 0,
+	eVSS_Spawned = 1,
+	eVSS_DiedDamaged = 2,
+enum etVehicleSpawnState
+{
+	eVSS_NotSpawned = 0,
+	eVSS_Spawned = 1,
+	eVSS_DiedDamaged = 2,
+	eVSS_DiedVandalised = 3,
+	eVSS_Recycled = 4,
+	eVSS_Telefragged = 5,
+	eVSS_MAX = 6,
+};
+enum etSeatUseState
+{
+	SUS_None = 0,
+	SUS_LockedDuringHijack = 1,
+	SUS_UsingNotOnRoutingToVAP = 2,
+	SUS_UsingNotOnGettingInNonOwning = 3,
+enum etVehicleExitPosition
+{
+	VEP_None = 0,
+	VEP_AtVAP = 1,
+	VEP_Teleport = 2,
+	VEP_MAX = 3,
+};
+enum etSeatActionEnum
+{
+	SAE_GettingIn = 0,
+	SAE_GettingOut = 1,
+	SAE_MAX = 2,
+};
+enum etLaneState
+{
+	kLS_None = 0,
+enum etVehicleTextureType
+{
+	VT_EXTERIOR_DIFFUSE = 0,
+	VT_EXTERIOR_NORMAL = 1,
+	VT_EXTERIOR_EMISSIVE = 2,
+	VT_INTERIOR_DIFFUSE = 3,
+	VT_INTERIOR_NORMAL = 4,
+	VT_INTERIOR_EMISSIVE = 5,
+	VT_WHEEL_DIFFUSE = 6,
+	VT_WHEEL_NORMAL = 7,
+	VT_EXTERIOR_ScratchDiffuse_DirtMask_DamageMask_DustMask = 8,
+	VT_EXTERIOR_DamagedNormal = 9,
+	VT_EXTERIOR_ScratchMask = 10,
+	VT_MAX = 11,
+};
+enum etVehicleLookupTextureType
+enum etVehicleLookupTextureType
+{
+	VLT_DAMAGE = 0,
+	VLT_EMISSIVE = 1,
+	VLT_MAX = 2,
+};
+enum etDeliverableState
+{
+	DeliverableState_None = 0,
+	DeliverableState_Free = 1,
+	DeliverableState_CarriedOwners = 2,
+	DeliverableState_CarriedOpposition = 3,
+	DeliverableState_Delivering = 4,
+	DeliverableState_Delivered = 5,
+	DeliverableState_MAX = 6,
+};
+enum ECurrentVehicleCameraMode
+{
+	VCM_NONE = 0,
+	VCM_DRIVER = 1,
+	VCM_PASSENGER_SIT = 2,
+	VCM_PASSENGER_AIM = 3,
+	VCM_PASSENGER_MARKS = 4,
+	VCM_MAX = 5,
+};
+enum EDumpedStatType
+{
+	eDUMPEDSTATTYPE_None = 0,
+	eDUMPEDSTATTYPE_Nsecs = 1,
+	eDUMPEDSTATTYPE_Minute = 2,
+	eDUMPEDSTATTYPE_Hour = 3,
+	eDUMPEDSTATTYPE_MAX = 4,
+enum etVehicleSpawnErrorCode
+{
+	kVehicleSpawn_OK = 0,
+	kVehicleSpawn_NoDeployedVehicle = 1,
+	kVehicleSpawn_WrongFaction = 2,
+	kVehicleSpawn_JustSpawnedAVehicle = 3,
+	kVehicleSpawn_NotAllowedToRecall = 4,
+	kVehicleSpawn_InsufficientFunds = 5,
+	kVehicleSpawn_AllBaysOccupied = 6,
+	kVehicleSpawn_NoSpawnBays = 7,
+	kVehicleSpawn_PlayerIsDead = 8,
+	kVehicleSpawn_SpawnFailed = 9,
+	kVehicleSpawn_MAX = 10,
+};
+enum etMissionSide
+{
+enum etVehicleBuildState
+{
+	kVBS_SourceAssetStreaming = 0,
+	kVBS_Mesh = 1,
+	kVBS_UVBleedMesh = 2,
+	kVBS_SourceTexturesStreamingDelay = 3,
+	kVBS_ExteriorTexture = 4,
+	kVBS_InteriorTexture = 5,
+	kVBS_GlassTexture = 6,
+	kVBS_WheelsTexture = 7,
+	kVBS_EvictResources = 8,
+	kVBS_Audio = 9,
+	kVBS_MAX = 10,
+};
+enum etHeatDebugInfoReason
+{
+enum etWeaponSlot
+{
+	PrimaryWeaponSlot = 0,
+	SecondaryWeaponSlot = 1,
+	MeleeWeaponSlot = 2,
+	GrenadeWeaponSlot = 3,
+	etWeaponSlot_MAX = 4,
+};
+enum ChangeWeaponInstantFlags
+{
+	CWIF_FullDuration = 0,
+	CWIF_InstantUnequip = 1,
+	CWIF_InstantEquip = 2,
+	CWIF_CompletelyInstant = 3,
+	CWIF_MAX = 4,
+};
+enum ChangeWeaponInstantFlags
+{
+	CWIF_FullDuration = 0,
+	CWIF_InstantUnequip = 1,
+	CWIF_InstantEquip = 2,
+	CWIF_CompletelyInstant = 3,
+	CWIF_MAX = 4,
+};
+enum etChatMessageType
+{
+	kCHAT_SAY = 0,
+	kCHAT_YELL = 1,
+	kCHAT_TRADE = 2,
+	kCHAT_WHISPER = 3,
+	kCHAT_WHISPER_SENT = 4,
+	kCHAT_METAGROUP = 5,
+enum etVehicleTextureBuildState
+{
+	kVTBS_Null = 0,
+	kVTBS_Exterior_Setup = 1,
+	kVTBS_Exterior_Clear_Decals = 2,
+	kVTBS_Exterior_Build_Decals = 3,
+	kVTBS_Exterior_GenerateUVMask = 4,
+	kVTBS_Exterior_Decals_Dilate = 5,
+	kVTBS_Exterior_Diffuse_Base = 6,
+	kVTBS_Exterior_Diffuse_Parts = 7,
+	kVTBS_Exterior_Diffuse_LicencePlate = 8,
+	kVTBS_Exterior_Normal_Base = 9,
+	kVTBS_Exterior_Normal_Parts = 10,
+	kVTBS_Exterior_Normal_LicencePlate = 11,
+	kVTBS_Exterior_Diffuse_MergeDecals = 12,
+	kVTBS_Exterior_Normal_MergeDecals = 13,
+enum etVehicleValidatorState
+{
+	kVVS_Null = 0,
+	kVVS_DecompressAssetCustomisation = 1,
+	kVVS_CheckVehicleType = 2,
+	kVVS_StripCustomisation = 3,
+	kVVS_FixupBackwardsCompatibility = 4,
+	kVVS_RemoveWrongFactionComponents = 5,
+	kVVS_FixupMandatoryComponents = 6,
+	kVVS_LoadAddedMandatoryComponents = 7,
+	kVVS_Complete = 8,
+	kVVS_MAX = 9,
+};
+enum etVehicleValidatorType
+{
+	kVVT_Null = 0,
+enum etVehicleValidatorType
+{
+	kVVT_Null = 0,
+	kVVT_V_A_Roadster = 1,
+	kVVT_V_C_Carrying = 2,
+	kVVT_V_E_Carrying = 3,
+	kVVT_V_E_Perf = 4,
+	kVVT_V_A_ExecSaloon = 5,
+	kVVT_V_E_Compact = 6,
+	kVVT_V_C_Perf = 7,
+	kVVT_V_A_ClassicMuscle = 8,
+	kVVT_MAX = 9,
+};
+enum etMeshBuildState
+{
+	kMBS_Null = 0,
+enum etAnimTreeDecision_Vehicle
+{
+	None = 0,
+	StandardCar = 1,
+	StandardVan = 2,
+	VanSlideDoor = 3,
+	StandardTruck = 4,
+	etAnimTreeDecision_Vehicle_MAX = 5,
+};
+enum etAPBSupportPages
+{
+	NotDefined = 0,
+	AccountManagementURL = 1,
+	ArmasProductURL = 2,
+	ArmasStoreCharacterSelectURL = 3,
+	ArmasStoreURL = 4,
+enum etCharacterCustomisationOverride
+{
+	None = 0,
+	Minigame_Infection_Headless = 1,
+	Minigame_Infection_Pumpkin = 2,
+	Christmas_Elf = 3,
+	Christmas_Santa = 4,
+	Easter_Invulnerable = 5,
+	Undedox = 6,
+	Necrocite = 7,
+	Zombicine = 8,
+	Minigame_MusicalCheckpoints_Ghost = 9,
+	Nutcracker_Prince = 10,
+	Nutcracker_Soldier = 11,
+	SugarPlumFairy = 12,
+	etCharacterCustomisationOverride_MAX = 13,
+enum etClothingItemCategory
+{
+	None = 0,
+	ClothingAccessoryClothing = 1,
+	ClothingAccessoryEquipment = 2,
+	ClothingAccessoryOther = 3,
+	ClothingArmourPads = 4,
+	ClothingArmourVests = 5,
+	ClothingBadges = 6,
+	ClothingBeltHigh = 7,
+	ClothingBeltLoose = 8,
+	ClothingBeltLow = 9,
+	ClothingBodyHair = 10,
+	ClothingBottomsShorts = 11,
+	ClothingBottomsTrousers = 12,
+	ClothingContact = 13,
+enum etFactionRestrictedLocation
+{
+	None = 0,
+	SimpleGameplayLevelTest_Both = 1,
+	SimpleGameplayLevelTest_Criminal = 2,
+	SimpleGameplayLevelTest_Enforcer = 3,
+	Social_Criminal = 4,
+	Social_Enforcer = 5,
+	etFactionRestrictedLocation_MAX = 6,
+};
+enum etGolemPartClass
+{
+	None = 0,
+	AliceBandCatEars = 1,
+	Aliceband = 2,
+	Arm_SkinTight_L = 3,
+enum etMinigame_WeaponDrop
+{
+	WeaponDrop_Test = 0,
+	WeaponDrop_Anarchy = 1,
+	WeaponDrop_MAX = 2,
+};
+enum etMinigameTeamName
+{
+	None = 0,
+	Faction = 1,
+	Participants = 2,
+	Enemies = 3,
+	Survivors = 4,
+	Pumpkin_Army = 5,
+	Nice = 6,
+	Naughty = 7,
+enum etMinigameWeaponSpawnCategory
+{
+	None = 0,
+	Test = 1,
+	WeaponDrop_Anarchy = 2,
+	WeaponDrop_Riot = 3,
+	etMinigameWeaponSpawnCategory_MAX = 4,
+};
+enum etMinigame_Survival_Economy
+{
+	Survival = 0,
+	Survival_Test = 1,
+	etMinigame_Survival_Economy_MAX = 2,
+};
+enum etMissionPlayerSpawnTheme
+{
+enum etVehicleAudioPart
+{
+	AudioAmp1 = 0,
+	AudioAmp2 = 1,
+	AudioAmp3 = 2,
+	AudioAmp4 = 3,
+	AudioAmp5 = 4,
+	AudioAmpLC1 = 5,
+	AudioAmpLC2 = 6,
+	AudioDumpValve1 = 7,
+	AudioDumpValve10 = 8,
+	AudioDumpValve11 = 9,
+	AudioDumpValve12 = 10,
+	AudioDumpValve13 = 11,
+	AudioDumpValve14 = 12,
+	AudioDumpValve15 = 13,
+enum etVehicleAudioPartDefaults
+{
+	Ambient2DrCoupe = 0,
+	Ambient2DrVan = 1,
+	AmbientConvertible = 2,
+	AmbientHatchback = 3,
+	AmbientKingCab = 4,
+	AmbientPickup = 5,
+	AmbientSaloon = 6,
+	AmbientSUV = 7,
+	AmbientTruck = 8,
+	AmbientUtility_ClassicMuscle = 9,
+	AmbientUtility_ExecSaloon = 10,
+	AmbientUtility_LowRider = 11,
+	AmbientUtility_SportsSUV = 12,
+	AmbientUtility_Taxi = 13,
+enum etVehicleCategory
+{
+	None = 0,
+	Car_Lowrider = 1,
+	Car_Muscle = 2,
+	Car_Roadster = 3,
+	Emergency = 4,
+	Car = 5,
+	Pickup = 6,
+	Security = 7,
+	SUV_Van = 8,
+	Taxi = 9,
+	Truck = 10,
+	Van = 11,
+	Car_ExecSaloon = 12,
+	Car_Utility = 13,
+enum etVehicleMenuEntry
+{
+	Menu_Customisable = 0,
+	Menu_Presets = 1,
+	Menu_MyVehicles = 2,
+	Menu_Components = 3,
+	Menu_Paint = 4,
+	Menu_Decals = 5,
+	Menu_LicencePlate = 6,
+	Customisation_ = 7,
+	Root_ = 8,
+	Menu_Rename = 9,
+	Menu_Deploy = 10,
+	Menu_Delete = 11,
+	Menu_Save = 12,
+	Management_ = 13,
+enum etVehiclePlayerAnimationSet
+{
+	StandardCarFrontLeft = 0,
+	StandardCarFrontRight = 1,
+	StandardSUVFrontLeft = 2,
+	StandardTruckFrontLeft = 3,
+	StandardTruckFrontRight = 4,
+	StandardVanFrontLeft = 5,
+	StandardVanFrontRight = 6,
+	VanSlideDoorBackLeft = 7,
+	VanSlideDoorBackRight = 8,
+	StandardSUVFrontRight = 9,
+	VanTruckFrontLeft = 10,
+	VanTruckFrontRight = 11,
+	etVehiclePlayerAnimationSet_MAX = 12,
+};
+enum etVehicleUIComponentInfo
+{
+	A_2DrCoupe_BumperFront = 0,
+	A_2DrCoupe_BumperRear = 1,
+	A_2DrCoupe_Door = 2,
+	A_2DrCoupe_Hood = 3,
+	A_2DrCoupe_PoliceLightsMain = 4,
+	A_2DrCoupe_PoliceLightsSecondaryFront02 = 5,
+	A_2DrCoupe_RoofExterior = 6,
+	A_2DrCoupe_SideSkirts = 7,
+	A_2DrCoupe_Spoiler = 8,
+	A_2DrCoupe_Wheels = 9,
+	A_2DrCoupe_WingMirrors = 10,
+	A_2DrVan_BumperFront = 11,
+	A_2DrVan_BumperRear = 12,
+	A_2DrVan_Door = 13,
+enum etWeaponLoadout
+{
+	None = 0,
+	Empty = 1,
+	NoPrimary = 2,
+	Snowballs = 3,
+	Snowballs_Auto = 4,
+	ElfVIP = 5,
+	GoldenWeapon_GrenadeLauncher_Easter = 6,
+	GoldenWeapon_Explosive = 7,
+	GoldenWeapon_Snub = 8,
+	Infection_Protagonist = 9,
+	Christmas_12Days_01 = 10,
+	Christmas_12Days_02 = 11,
+	Christmas_12Days_03 = 12,
+	Christmas_12Days_04 = 13,

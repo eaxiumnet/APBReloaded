@@ -1,0 +1,98 @@
+[
+  {
+    "id": "Financial",
+    "numeric_id": 1,
+    "name": "Financial",
+    "map": "Lvl_APB_Financial_Freeroam",
+    "source": "https://apbdb.com/districts",
+    "joinable": true,
+    "max_players": 64,
+    "audio_banks": "Main Main_Media Financial Financial_Media",
+    "abbrev": "F",
+    "live_source": "apbdb+live_Current.log"
+  },
+  {
+    "id": "FinancialChaos",
+    "numeric_id": 2,
+    "name": "Financial - Anarchy",
+    "map": "Lvl_APB_FinancialChaos_Freeroam",
+    "source": "https://apbdb.com/districts",
+    "joinable": true,
+    "max_players": 64,
+    "audio_banks": "Main Main_Media Financial Financial_Media",
+    "abbrev": "F",
+    "live_source": "apbdb+live_Current.log"
+  },
+  {
+    "id": "PGAsylum",
+    "numeric_id": 4,
+    "name": "Abington Towers",
+    "map": "Lvl_APB_PGAsylum_Freeroam",
+    "source": "https://apbdb.com/districts",
+    "joinable": true,
+    "max_players": 64,
+    "audio_banks": "Main Main_Media SocialCriminal SocialCriminal_Media",
+    "abbrev": "CS",
+    "live_source": "apbdb+live_Current.log"
+  },
+  {
+    "id": "PGBeacon",
+    "numeric_id": 5,
+    "name": "The Beacon",
+    "map": "Lvl_APB_PGBeacon_Freeroam",
+    "source": "https://apbdb.com/districts",
+    "joinable": true,
+    "max_players": 64,
+    "audio_banks": "Main Main_Media Waterfront Waterfront_Media",
+    "abbrev": "Beacon",
+    "live_source": "apbdb+live_Current.log"
+  },
+  {
+    "id": "PGCrate",
+    "numeric_id": 6,
+    "name": "Baylan Shipping Storage",
+    "map": "Lvl_APB_PGCrate_Freeroam",
+    "source": "https://apbdb.com/districts",
+    "joinable": true,
+    "max_players": 64,
+    "audio_banks": "Main Main_Media Waterfront Waterfront_Media",
+    "abbrev": "Crate",
+    "live_source": "apbdb+live_Current.log"
+  },
+  {
+    "id": "Social",
+    "numeric_id": 9,
+    "name": "Breakwater Marina",
+    "map": "Lvl_APB_Social_Freeroam",
+    "source": "https://apbdb.com/districts",
+    "joinable": true,
+    "max_players": 64,
+    "audio_banks": "SocialEnforcer SocialEnforcer_Media",
+    "abbrev": "RS",
+    "live_source": "apbdb+live_Current.log"
+  },
+  {
+    "id": "Waterfront",
+    "numeric_id": 11,
+    "name": "Waterfront",
+    "map": "Lvl_APB_Waterfront_Freeroam",
+    "source": "https://apbdb.com/districts",
+    "joinable": true,
+    "max_players": 64,
+    "audio_banks": "Main Main_Media Waterfront Waterfront_Media",
+    "abbrev": "W",
+    "live_source": "apbdb+live_Current.log"
+  },
+  {
+    "id": "FinancialRiot",
+    "numeric_id": 12,
+    "name": "Financial - RIOT",
+    "map": "Lvl_APB_FinancialRiot_Freeroam",
+    "source": "https://apbdb.com/districts",
+    "joinable": true,
+    "max_players": 64,
+    "audio_banks": "Main Main_Media Financial Financial_Media",
+    "abbrev": "F",
+    "live_source": "apbdb+live_Current.log"
+  }
+]

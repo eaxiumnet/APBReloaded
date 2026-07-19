@@ -1,0 +1,41 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[6] =
+{
+    ReferencedTextures[0] = Texture2D'LoadingScreen_Flames_RimGlow'
+    ReferencedTextures[1] = Texture2D'LoadingScreen_Flames_Emburs'
+    ReferencedTextures[2] = Texture2D'LoadingScreen_Flames'
+    ReferencedTextures[3] = Texture2D'LoadingScreen_Flames_Mask'
+    ReferencedTextures[4] = Texture2D'LoadingScreen_Flames_Alpha'
+    ReferencedTextures[5] = Texture2D'LoadingScreen_Flames_Emburs_02'
+}
+Expressions[29] =
+{
+    Expressions[0] = MaterialExpressionTextureSample'Flames_BG.MaterialExpressionTextureSample_58'
+    Expressions[4] = MaterialExpressionTextureSample'Flames_BG.MaterialExpressionTextureSample_60'
+    Expressions[8] = MaterialExpressionTextureSample'Flames_BG.MaterialExpressionTextureSample_0'
+    Expressions[10] = MaterialExpressionTextureSample'Flames_BG.MaterialExpressionTextureSample_1'
+    Expressions[13] = MaterialExpressionTextureSample'Flames_BG.MaterialExpressionTextureSample_3'
+    Expressions[18] = MaterialExpressionTextureSample'Flames_BG.MaterialExpressionTextureSample_5'
+    Expressions[23] = MaterialExpressionScalarParameter'Flames_BG.MaterialExpressionScalarParameter_2'
+    Expressions[24] = MaterialExpressionTextureSample'Flames_BG.MaterialExpressionTextureSample_2'
+    Expressions[27] = MaterialExpressionTextureSample'Flames_BG.MaterialExpressionTextureSample_6'
+}
+CachedExpressionData = 
+BlendMode = BLEND_Translucent (2)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[0] = {}
+CollectedScalarParameters[1] =
+{
+    CollectedScalarParameters[0] = { Value=1, Name=UI_Opacity, Group=None }
+}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

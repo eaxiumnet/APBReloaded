@@ -1,0 +1,29 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[3] =
+{
+    ReferencedTextures[0] = Texture2D'LoadingScreen_Flames'
+    ReferencedTextures[1] = Texture2D'LoadingScreen_FactionIcon_Crim_Mask'
+    ReferencedTextures[2] = Texture2D'LoadingScreen_FactionIcon_Crim'
+}
+Expressions[7] =
+{
+    Expressions[0] = MaterialExpressionTextureSample'LoadingScreen_FactionIcon_Crim_Mat.MaterialExpressionTextureSample_0'
+    Expressions[1] = MaterialExpressionTextureSample'LoadingScreen_FactionIcon_Crim_Mat.MaterialExpressionTextureSample_1'
+    Expressions[2] = MaterialExpressionTextureSample'LoadingScreen_FactionIcon_Crim_Mat.MaterialExpressionTextureSample_2'
+}
+CachedExpressionData = 
+BlendMode = BLEND_Translucent (2)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[0] = {}
+CollectedScalarParameters[0] = {}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

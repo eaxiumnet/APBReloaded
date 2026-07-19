@@ -1,0 +1,49 @@
+{
+  "source": "https://apbdb.com",
+  "api": "https://api.apbdb.com/beacon",
+  "cdn": "https://cdn.apbdb.com/img",
+  "engine": "5.8",
+  "project": "D:/APBReloaded",
+  "fetched_at": "2026-07-16T17:22:46.947211+00:00",
+  "live_version": {
+    "version": "1.33.0.856474",
+    "pubdate": "2026-06-24T10:12:31.000Z"
+  },
+  "otw_version": {
+    "version": "1.33.0.857075",
+    "pubdate": "2026-07-16T11:36:34.000Z"
+  },
+  "db_version": {
+    "version": "1.33.0.854463",
+    "pubdate": "2026-05-13T01:00:00.000Z"
+  },
+  "counts": {
+    "weapons_catalog": 792,
+    "weapons_with_stats": 44,
+    "vehicles_catalog": 575,
+    "missions_normalized": 40,
+    "contacts_lore": 67,
+    "districts": 8,
+    "heat_rows": 13,
+    "clothing": 2051,
+    "vehicles_domain": 575
+  },
+  "endpoints": {
+    "items": "https://api.apbdb.com/beacon/items?cat=Weapon|Vehicle&page=N",
+    "item_detail": "https://api.apbdb.com/beacon/items/{sAPBDB}",
+    "heat": "https://api.apbdb.com/beacon/heat",
+    "districts": "https://api.apbdb.com/beacon/districts",
+    "missions": "https://api.apbdb.com/beacon/missions",
+    "contacts": "https://api.apbdb.com/beacon/contacts",
+    "ammo": "https://api.apbdb.com/beacon/items/ammo",
+    "roles": "https://api.apbdb.com/beacon/roles",
+    "version": "https://api.apbdb.com/beacon/version"
+  },
+  "notes": [
+    "APB:Db is a community SPA; data comes from api.apbdb.com/beacon (not scraped HTML).",
+    "Weapon combat numbers live under detail.eWeaponTypeLink.eWeaponType_0.",
+    "threat_table.json opposition_multiplier uses apbdb fRewardMultiplier as pressure proxy.",
+    "Full contact bios and raw SDD-shaped rows are under tools/apbdb/raw/."
+  ],
+  "clothing_expanded_at": "2026-07-16T19:10:54.841413+00:00"
+}

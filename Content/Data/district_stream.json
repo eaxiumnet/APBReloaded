@@ -1,0 +1,103 @@
+{
+  "active_district_id": "Financial",
+  "chunk_size": 64.0,
+  "chunks": [
+    {
+      "id": "fin_nw",
+      "origin": [
+        -128,
+        -128
+      ],
+      "size": 64,
+      "landmarks": [
+        "Praetorian HQ approach"
+      ],
+      "building_density": 0.7
+    },
+    {
+      "id": "fin_ne",
+      "origin": [
+        -64,
+        -128
+      ],
+      "size": 64,
+      "landmarks": [
+        "Financial tower block"
+      ],
+      "building_density": 0.85
+    },
+    {
+      "id": "fin_sw",
+      "origin": [
+        -128,
+        -64
+      ],
+      "size": 64,
+      "landmarks": [
+        "Parking garage"
+      ],
+      "building_density": 0.55
+    },
+    {
+      "id": "fin_se",
+      "origin": [
+        -64,
+        -64
+      ],
+      "size": 64,
+      "landmarks": [
+        "Mission contact plaza"
+      ],
+      "building_density": 0.75
+    },
+    {
+      "id": "fin_center",
+      "origin": [
+        0,
+        0
+      ],
+      "size": 64,
+      "landmarks": [
+        "Crossroads"
+      ],
+      "building_density": 0.9
+    },
+    {
+      "id": "fin_east",
+      "origin": [
+        64,
+        0
+      ],
+      "size": 64,
+      "landmarks": [
+        "Waterfront approach"
+      ],
+      "building_density": 0.6
+    },
+    {
+      "id": "fin_mission",
+      "origin": [
+        0,
+        64
+      ],
+      "size": 64,
+      "landmarks": [
+        "Objective warehouse"
+      ],
+      "building_density": 0.5
+    },
+    {
+      "id": "fin_spawn",
+      "origin": [
+        -64,
+        64
+      ],
+      "size": 64,
+      "landmarks": [
+        "Faction spawn"
+      ],
+      "building_density": 0.4
+    }
+  ],
+  "stream_radius_chunks": 2
+}

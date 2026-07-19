@@ -1,0 +1,684 @@
+[
+  {
+    "id": "JG_BCS4_Bom1",
+    "title": "2,4,6-TRINITROTOLUENE",
+    "contact_id": "Contact_BCS_Bomber",
+    "faction": 2,
+    "group_min": 3,
+    "group_max": 4,
+    "takeout_count": 8,
+    "owning_side_bias": 1.0,
+    "opposition_on_takeouts": true,
+    "opposition_auto": true,
+    "last_stage": "Bombing",
+    "stages": [
+      {
+        "index": 0,
+        "type": "contact",
+        "name": "Stage 1",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 1,
+        "type": "travel",
+        "name": "Stage 2",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 2,
+        "type": "objective",
+        "name": "Stage 3",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 3,
+        "type": "defend",
+        "name": "Stage 4",
+        "target_progress": 5.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 4,
+        "type": "extract",
+        "name": "Stage 5",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      }
+    ],
+    "source": "https://apbdb.com/missions"
+  },
+  {
+    "id": "JG_BCS0_FoE1_B",
+    "title": "A BLOOD ROSE WITH A BADGE",
+    "contact_id": "Contact_Criminal",
+    "faction": 2,
+    "group_min": 2,
+    "group_max": 2,
+    "takeout_count": 5,
+    "owning_side_bias": 1.0,
+    "opposition_on_takeouts": true,
+    "opposition_auto": true,
+    "last_stage": "Extract",
+    "stages": [
+      {
+        "index": 0,
+        "type": "contact",
+        "name": "Stage 1",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 1,
+        "type": "travel",
+        "name": "Stage 2",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 2,
+        "type": "objective",
+        "name": "Stage 3",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 3,
+        "type": "defend",
+        "name": "Stage 4",
+        "target_progress": 5.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 4,
+        "type": "extract",
+        "name": "Stage 5",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      }
+    ],
+    "source": "https://apbdb.com/missions"
+  },
+  {
+    "id": "JG_BCS2_Bom1",
+    "title": "A DISH BEST SERVED COLD",
+    "contact_id": "Contact_Criminal",
+    "faction": 2,
+    "group_min": 2,
+    "group_max": 2,
+    "takeout_count": 5,
+    "owning_side_bias": 1.0,
+    "opposition_on_takeouts": true,
+    "opposition_auto": true,
+    "last_stage": "Extract",
+    "stages": [
+      {
+        "index": 0,
+        "type": "contact",
+        "name": "Stage 1",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 1,
+        "type": "travel",
+        "name": "Stage 2",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 2,
+        "type": "objective",
+        "name": "Stage 3",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      }
+    ],
+    "source": "https://apbdb.com/missions"
+  },
+  {
+    "id": "JG_BCL2_Bom2",
+    "title": "A TAX ATTACK",
+    "contact_id": "Contact_Criminal",
+    "faction": 2,
+    "group_min": 3,
+    "group_max": 4,
+    "takeout_count": 8,
+    "owning_side_bias": 1.0,
+    "opposition_on_takeouts": true,
+    "opposition_auto": true,
+    "last_stage": "Extract",
+    "stages": [
+      {
+        "index": 0,
+        "type": "contact",
+        "name": "Stage 1",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 1,
+        "type": "travel",
+        "name": "Stage 2",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 2,
+        "type": "objective",
+        "name": "Stage 3",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 3,
+        "type": "defend",
+        "name": "Stage 4",
+        "target_progress": 5.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 4,
+        "type": "extract",
+        "name": "Stage 5",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      }
+    ],
+    "source": "https://apbdb.com/missions"
+  },
+  {
+    "id": "DB_BES0_Pic1_T",
+    "title": "ALWAYS USE PROTECTION",
+    "contact_id": "Contact_Enforcer",
+    "faction": 1,
+    "group_min": 3,
+    "group_max": 4,
+    "takeout_count": 5,
+    "owning_side_bias": 1.0,
+    "opposition_on_takeouts": true,
+    "opposition_auto": true,
+    "last_stage": "Extract",
+    "stages": [
+      {
+        "index": 0,
+        "type": "contact",
+        "name": "Stage 1",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 1,
+        "type": "travel",
+        "name": "Stage 2",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 2,
+        "type": "objective",
+        "name": "Stage 3",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 3,
+        "type": "defend",
+        "name": "Stage 4",
+        "target_progress": 5.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 4,
+        "type": "extract",
+        "name": "Stage 5",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      }
+    ],
+    "source": "https://apbdb.com/missions"
+  },
+  {
+    "id": "JG_BCL1_Bom1_G",
+    "title": "AN EXPLOSIVE TRIAL",
+    "contact_id": "Contact_Criminal",
+    "faction": 2,
+    "group_min": 2,
+    "group_max": 2,
+    "takeout_count": 15,
+    "owning_side_bias": 1.0,
+    "opposition_on_takeouts": true,
+    "opposition_auto": true,
+    "last_stage": "Extract",
+    "stages": [
+      {
+        "index": 0,
+        "type": "contact",
+        "name": "Stage 1",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 1,
+        "type": "travel",
+        "name": "Stage 2",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 2,
+        "type": "objective",
+        "name": "Stage 3",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 3,
+        "type": "defend",
+        "name": "Stage 4",
+        "target_progress": 5.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 4,
+        "type": "extract",
+        "name": "Stage 5",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      }
+    ],
+    "source": "https://apbdb.com/missions"
+  },
+  {
+    "id": "JG_BCL4_VCa1",
+    "title": "ANTISOCIAL NETWORKING",
+    "contact_id": "Contact_Criminal",
+    "faction": 2,
+    "group_min": 3,
+    "group_max": 4,
+    "takeout_count": 23,
+    "owning_side_bias": 1.0,
+    "opposition_on_takeouts": true,
+    "opposition_auto": true,
+    "last_stage": "Extract",
+    "stages": [
+      {
+        "index": 0,
+        "type": "contact",
+        "name": "Stage 1",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 1,
+        "type": "travel",
+        "name": "Stage 2",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 2,
+        "type": "objective",
+        "name": "Stage 3",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 3,
+        "type": "defend",
+        "name": "Stage 4",
+        "target_progress": 5.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 4,
+        "type": "extract",
+        "name": "Stage 5",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      }
+    ],
+    "source": "https://apbdb.com/missions"
+  },
+  {
+    "id": "DB_BES1_Pic4_P",
+    "title": "AVENGE THE FALLEN",
+    "contact_id": "Contact_Enforcer",
+    "faction": 1,
+    "group_min": 3,
+    "group_max": 4,
+    "takeout_count": 15,
+    "owning_side_bias": 1.0,
+    "opposition_on_takeouts": true,
+    "opposition_auto": true,
+    "last_stage": "Extract",
+    "stages": [
+      {
+        "index": 0,
+        "type": "contact",
+        "name": "Stage 1",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 1,
+        "type": "travel",
+        "name": "Stage 2",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 2,
+        "type": "objective",
+        "name": "Stage 3",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 3,
+        "type": "defend",
+        "name": "Stage 4",
+        "target_progress": 5.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 4,
+        "type": "extract",
+        "name": "Stage 5",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      }
+    ],
+    "source": "https://apbdb.com/missions"
+  },
+  {
+    "id": "JG_BCM3_Bur1",
+    "title": "BAD INVESTMENT",
+    "contact_id": "Contact_Criminal",
+    "faction": 2,
+    "group_min": 3,
+    "group_max": 4,
+    "takeout_count": 0,
+    "owning_side_bias": 1.0,
+    "opposition_on_takeouts": false,
+    "opposition_auto": true,
+    "last_stage": "Extract",
+    "stages": [
+      {
+        "index": 0,
+        "type": "contact",
+        "name": "Stage 1",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 1,
+        "type": "travel",
+        "name": "Stage 2",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 2,
+        "type": "objective",
+        "name": "Stage 3",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 3,
+        "type": "defend",
+        "name": "Stage 4",
+        "target_progress": 5.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 4,
+        "type": "extract",
+        "name": "Stage 5",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      }
+    ],
+    "source": "https://apbdb.com/missions"
+  },
+  {
+    "id": "JG_BCS0_FoE1_G",
+    "title": "BADGE OF DISHONOR",
+    "contact_id": "Contact_Criminal",
+    "faction": 2,
+    "group_min": 2,
+    "group_max": 2,
+    "takeout_count": 5,
+    "owning_side_bias": 1.0,
+    "opposition_on_takeouts": true,
+    "opposition_auto": true,
+    "last_stage": "Extract",
+    "stages": [
+      {
+        "index": 0,
+        "type": "contact",
+        "name": "Stage 1",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 1,
+        "type": "travel",
+        "name": "Stage 2",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 2,
+        "type": "objective",
+        "name": "Stage 3",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 3,
+        "type": "defend",
+        "name": "Stage 4",
+        "target_progress": 5.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 4,
+        "type": "extract",
+        "name": "Stage 5",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      }
+    ],
+    "source": "https://apbdb.com/missions"
+  },
+  {
+    "id": "JG_BEL4_FoE1",
+    "title": "BANG FOR YOUR BUCK",
+    "contact_id": "Contact_Enforcer",
+    "faction": 1,
+    "group_min": 3,
+    "group_max": 4,
+    "takeout_count": 23,
+    "owning_side_bias": 1.0,
+    "opposition_on_takeouts": true,
+    "opposition_auto": true,
+    "last_stage": "Extract",
+    "stages": [
+      {
+        "index": 0,
+        "type": "contact",
+        "name": "Stage 1",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 1,
+        "type": "travel",
+        "name": "Stage 2",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 2,
+        "type": "objective",
+        "name": "Stage 3",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 3,
+        "type": "defend",
+        "name": "Stage 4",
+        "target_progress": 5.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 4,
+        "type": "extract",
+        "name": "Stage 5",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      }
+    ],
+    "source": "https://apbdb.com/missions"
+  },
+  {
+    "id": "DB_BES0_Pic1_P",
+    "title": "BANKROLL COLLECTION",
+    "contact_id": "Contact_Enforcer",
+    "faction": 1,
+    "group_min": 3,
+    "group_max": 4,
+    "takeout_count": 5,
+    "owning_side_bias": 1.0,
+    "opposition_on_takeouts": true,
+    "opposition_auto": true,
+    "last_stage": "Extract",
+    "stages": [
+      {
+        "index": 0,
+        "type": "contact",
+        "name": "Stage 1",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 1,
+        "type": "travel",
+        "name": "Stage 2",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 2,
+        "type": "objective",
+        "name": "Stage 3",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 3,
+        "type": "defend",
+        "name": "Stage 4",
+        "target_progress": 5.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 4,
+        "type": "extract",
+        "name": "Stage 5",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      }
+    ],
+    "source": "https://apbdb.com/missions"
+  },
+  {
+    "id": "APB_Script_WitnessProtection",
+    "title": "WITNESS PROTECTION",
+    "contact_id": "Contact_Enf_Social",
+    "faction": 1,
+    "group_min": 2,
+    "group_max": 4,
+    "takeout_count": 6,
+    "opposition_on_takeouts": true,
+    "opposition_auto": true,
+    "stages": [
+      {
+        "index": 0,
+        "type": "contact",
+        "name": "Briefing",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 1,
+        "type": "travel",
+        "name": "Reach Safehouse",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 2,
+        "type": "escort",
+        "name": "Escort Witness",
+        "target_progress": 3.0,
+        "win_condition": "progress",
+        "fail_condition": "takeouts_opposition"
+      },
+      {
+        "index": 3,
+        "type": "defend",
+        "name": "Secure Perimeter",
+        "target_progress": 4.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 4,
+        "type": "extract",
+        "name": "Evac",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      }
+    ],
+    "source": "https://apbdb.com/missions"
+  },
+  {
+    "id": "APB_Script_FailDemo",
+    "title": "FAIL PATH DEMO",
+    "contact_id": "Contact_Test",
+    "faction": 0,
+    "takeout_count": 2,
+    "opposition_on_takeouts": true,
+    "opposition_auto": true,
+    "stages": [
+      {
+        "index": 0,
+        "type": "contact",
+        "name": "Start",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      },
+      {
+        "index": 1,
+        "type": "objective",
+        "name": "Hold Objective",
+        "target_progress": 10.0,
+        "win_condition": "progress",
+        "fail_condition": "takeouts_opposition"
+      },
+      {
+        "index": 2,
+        "type": "extract",
+        "name": "Leave",
+        "target_progress": 1.0,
+        "win_condition": "progress"
+      }
+    ],
+    "source": "https://apbdb.com/missions"
+  }
+]

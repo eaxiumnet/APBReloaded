@@ -1,0 +1,95 @@
+ShowCollPane:1
+SaveAllTextures:0
+SaveSingleTexture:0
+ShowSingleTextureString:0
+SupportTPF:0
+UseSizeFilter:0
+Height:1,1
+Width:1,1
+Depth:1,1
+UseFormatFilter:0
+FileFormat:16
+FontColour:255,0,0,255
+TextureColour:0,255,0,255
+
+
+
+PACKAGE|GW2_Events.zip|GW 2 - Event  (start regions)||ROTA|This is only an example, this mod does not work at all !!
+
+
+BEGIN_GROUP|Asura||Person1, Person2|Asura start region
+
+BEGIN_GROUP|Event 1|D|Person1|<- in this mod, groups are disabled by default
+TEXTURE|test.dds|0|Texture title 1|||<- textures are enable by default in this mod, but ar not loaded because the group is disabled
+TEXTURE|test.dds|0|Texture title 2|||if you want to select/deselct single textures, please uncheck the group before.
+TEXTURE|test.dds|0|Texture title 3|||
+END_GROUP
+
+BEGIN_GROUP|Event 2|D|Person1|some information
+TEXTURE|test.dds|0||||
+TEXTURE|test.dds|0||||
+TEXTURE|test.dds|0||||
+END_GROUP
+
+BEGIN_GROUP|Event 3|D|Person2|some more information
+TEXTURE|test.dds|0||||
+TEXTURE|test.dds|0||||
+TEXTURE|test.dds|0||||
+END_GROUP
+END_GROUP
+
+BEGIN_GROUP|Charr||Person1, Person3|Charr start region
+
+BEGIN_GROUP|Event 1|D|Person3|some information ...
+TEXTURE|test.dds|0||||
+TEXTURE|test.dds|0||||
+TEXTURE|test.dds|0||||
+END_GROUP
+
+BEGIN_GROUP|Event 2|D|Person1|some other information ...
+TEXTURE|test.dds|0||||
+TEXTURE|test.dds|0||||
+TEXTURE|test.dds|0||||
+END_GROUP
+
+BEGIN_GROUP|Event 3|D|Person1,Person3|some other information ...
+TEXTURE|test.dds|0||||
+TEXTURE|test.dds|0||||
+TEXTURE|test.dds|0||||
+END_GROUP
+END_GROUP
+
+BEGIN_GROUP|Human||Person4, Person5|Human start region
+END_GROUP
+
+BEGIN_GROUP|Norn||Person1, Person2|Norn start region
+END_GROUP
+
+BEGIN_GROUP|Sylvari||Person2|Sylvari start region
+END_GROUP
+
+
+
+PACKAGE|cars.zip|Car Mod||ROTA|This is only an example, this mod does not work at all !!
+
+
+BEGIN_GROUP|racing car||Person1|
+TEXTURE|test.dds|0|racing car  1|||
+TEXTURE|test.dds|0|racing car  1|D||alternative
+TEXTURE|test.dds|0|racing car  2|||
+TEXTURE|test.dds|0|racing car 3|||
+END_GROUP
+
+BEGIN_GROUP|normal cars||Person2, Person3|
+TEXTURE|test.dds|0|Car 1|||
+TEXTURE|test.dds|0|Car 2|||
+TEXTURE|test.dds|0|Car 3|||
+TEXTURE|test.dds|0|Car 4|||
+END_GROUP
+
+BEGIN_GROUP|Trucks||Person4, Person5|
+TEXTURE|test.dds|0|...|||
+TEXTURE|test.dds|0|...|||
+END_GROUP
+
+

@@ -1,0 +1,31 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[2] =
+{
+    ReferencedTextures[0] = Texture2D'LoadingIcon_MAIN'
+    ReferencedTextures[1] = Texture2D'Timer_BG'
+}
+Expressions[9] =
+{
+    Expressions[0] = MaterialExpressionTextureSample'LoadingArrows.MaterialExpressionTextureSample_0'
+    Expressions[3] = MaterialExpressionScalarParameter'LoadingArrows.MaterialExpressionScalarParameter_0'
+    Expressions[4] = MaterialExpressionTextureSample'LoadingArrows.MaterialExpressionTextureSample_4'
+}
+CachedExpressionData = 
+BlendMode = BLEND_Translucent (2)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[0] = {}
+CollectedScalarParameters[1] =
+{
+    CollectedScalarParameters[0] = { Value=1, Name=UI_Opacity, Group=None }
+}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

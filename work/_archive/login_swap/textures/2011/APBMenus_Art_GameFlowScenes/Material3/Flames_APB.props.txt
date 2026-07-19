@@ -1,0 +1,33 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[2] =
+{
+    ReferencedTextures[0] = Texture2D'LoadingScreen_APBFlame_Alpha'
+    ReferencedTextures[1] = Texture2D'LoadingScreen_Flames'
+}
+Expressions[16] =
+{
+    Expressions[0] = MaterialExpressionTextureSample'Flames_APB.MaterialExpressionTextureSample_57'
+    Expressions[3] = MaterialExpressionTextureSample'Flames_APB.MaterialExpressionTextureSample_60'
+    Expressions[9] = MaterialExpressionTextureSample'Flames_APB.MaterialExpressionTextureSample_6'
+    Expressions[10] = MaterialExpressionTextureSample'Flames_APB.MaterialExpressionTextureSample_9'
+    Expressions[15] = MaterialExpressionScalarParameter'Flames_APB.MaterialExpressionScalarParameter_0'
+}
+CachedExpressionData = 
+BlendMode = BLEND_Translucent (2)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[0] = {}
+CollectedScalarParameters[1] =
+{
+    CollectedScalarParameters[0] = { Value=1, Name=UI_Opacity, Group=None }
+}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

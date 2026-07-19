@@ -1,0 +1,176 @@
+enum etPlayerCustomisation
+{
+	PC_CHARACTER = 0,
+	PC_VEHICLE = 1,
+	PC_GRAFFITI = 2,
+	PC_THEME = 3,
+	PC_MAX = 4,
+}
+
+enum etCustomisationPrecacheType
+{
+	CPCT_Character = 0,
+	CPCT_Vehicle = 1,
+	CPCT_Graffiti = 2,
+	CPCT_Statue = 3,
+	CPCT_Theme = 4,
+	CPCT_MAX = 5,
+}
+
+enum etFaction
+{
+	kFACTION_None = 0,
+	kFACTION_Enforcer = 1,
+	kFACTION_Criminal = 2,
+	kFACTION_Both = 3,
+	kFACTION_MAX = 4,
+}
+
+enum etHeatConstant
+{
+	HeatConstant_DecayDelay = 0,
+	HeatConstant_DecayInterval = 1,
+	HeatConstant_DecayRate = 2,
+	HeatConstant_EquilibriumAmount = 3,
+	HeatConstant_HeatAmountMax = 4,
+	HeatConstant_PayForHeatPrice = 5,
+	HeatConstant_UnDecayDelay = 6,
+	HeatConstant_UnDecayInterval = 7,
+	HeatConstant_UnDecayRate = 8,
+	HeatConstant_MAX = 9,
+}
+
+enum etContactType
+{
+	ContactType_None = 0,
+	ContactType_Ambient = 1,
+	ContactType_Fixer = 2,
+	ContactType_MissionProvider = 3,
+	ContactType_Organisation = 4,
+	ContactType_TurfContact = 5,
+	ContactType_MAX = 6,
+}
+
+enum etDifficultyRating
+{
+	Difficulty_VeryEasy = 0,
+	Difficulty_Easy = 1,
+	Difficulty_Medium = 2,
+	Difficulty_Hard = 3,
+	Difficulty_VeryHard = 4,
+	Difficulty_MAX = 5,
+}
+
+enum etCapacityItemType
+{
+	Capacity_Clothing = 0,
+	Capacity_Clothing = 1,
+	Capacity_Clothing = 2,
+	Capacity_Clothing = 3,
+	Capacity_Clothing_Max = 4,
+	Capacity_Outfit = 5,
+	Capacity_Outfit = 6,
+	Capacity_Outfit = 7,
+	Capacity_Outfit_Max = 8,
+	Capacity_Songs = 9,
+	Capacity_Songs = 10,
+	Capacity_Songs = 11,
+	Capacity_Songs = 12,
+	Capacity_Songs_Max = 13,
+	Capacity_Symbol = 14,
+	Capacity_Symbol = 15,
+	Capacity_Symbol = 16,
+	Capacity_Symbol = 17,
+	Capacity_Symbol_Max = 18,
+	Capacity_Themes = 19,
+	Capacity_Themes = 20,
+	Capacity_Themes = 21,
+	Capacity_Themes = 22,
+	Capacity_Themes_Max = 23,
+	Capacity_Vehicle = 24,
+	Capacity_Vehicle = 25,
+	Capacity_Vehicle = 26,
+	Capacity_Vehicle = 27,
+	Capacity_Vehicle_Max = 28,
+	Capacity_FnMod = 29,
+	Capacity_Weapon = 30,
+	Capacity_Clothing = 31,
+	Capacity_Symbol = 32,
+	Capacity_MAX = 33,
+}
+
+enum etCharacterStatus
+{
+	GMS_None = 0,
+	GMS_Dead = 1,
+	GMS_TaskParticipant = 2,
+	GMS_NonTaskParticipant = 3,
+	GMS_Stunned = 4,
+	GMS_Arrested = 5,
+	GMS_Driving = 6,
+	GMS_OutOfDistrict = 7,
+	GMS_Ready = 8,
+	GMS_DND = 9,
+	GMS_AFK = 10,
+	GMS_Disconnected = 11,
+	GMS_MAX = 12,
+}
+
+enum etCrimeType
+{
+	CrimeType_Assault = 0,
+	CrimeType_Mugging = 1,
+	CrimeType_Kidnapping = 2,
+	CrimeType_VehicleTheft = 3,
+	CrimeType_HitAndRun = 4,
+	CrimeType_Assassination = 5,
+	CrimeType_RamRaid = 6,
+	CrimeType_Arson = 7,
+	CrimeType_PickUp = 8,
+	CrimeType_Vandalism = 9,
+	CrimeType_Graffiti = 10,
+	CrimeType_TestAttackProp = 11,
+	CrimeType_Max = 12,
+}
+
+#define CONST_NotorietyEffect_None                               0
+#define CONST_NotorietyLevel_None                                0
+KB_Notoriety = 22,
+KB_Notoriety_KillPed = 23,
+AM_HeatYouNotorietyLevelDrops = 13,
+AM_HeatYouNotorietyLevelRaise = 14,
+AM_HeatYouPrestigeLevelDrops = 15,
+AM_HeatYouPrestigeLevelRaise = 16,
+AM_Heat_BountyClaimed_AnyCrimKillCrim = 17,
+AM_Heat_BountyClaimed_AnyCrimKillEnf = 18,
+AM_Heat_BountyClaimed_AnyEnfKillCrim = 19,
+AM_Heat_BountyClaimed_AnyEnfKillEnf = 20,
+AM_Heat_BountyClaimed_YouCrimKillCrim = 21,
+AM_Heat_BountyClaimed_YouCrimKillEnf = 22,
+AM_Heat_BountyClaimed_YouEnfKillCrim = 23,
+AM_Heat_BountyClaimed_YouEnfKillEnf = 24,
+AM_Heat_Bounty_AnyNotorietyLevel5ForCriminals = 25,
+AM_Heat_Bounty_AnyNotorietyLevel5ForEnforcers = 26,
+AM_Heat_Bounty_AnyPrestigeLevel5 = 27,
+AM_Heat_Bounty_TeamNotorietyLevel5 = 28,
+AM_Heat_Bounty_TeamPrestigeLevel5 = 29,
+AM_Heat_Bounty_YouNotorietyLevel5 = 30,
+AM_Heat_Bounty_YouPrestigeLevel5 = 31,
+AM_HeatAnyNotorietyLevel0 = 131,
+AM_HeatSideNotorietyLevelDrops = 132,
+AM_HeatSideNotorietyLevelRaise = 133,
+AM_HeatSidePrestigeLevelDrops = 134,
+AM_HeatSidePrestigeLevelRaise = 135,
+AM_HeatSideWitnessedByEnforcer = 136,
+AM_HeatSideWitnessedCrime = 137,
+AM_HeatYouNotorietyLevel0 = 138,
+AM_HeatYouNotorietyLevel0HUD = 139,
+AM_HeatYouNotorietyLevel1 = 140,
+AM_HeatYouNotorietyLevel2Drop = 141,
+AM_HeatYouNotorietyLevel2Rise = 142,
+AM_HeatYouNotorietyLevel3Drop = 143,
+AM_HeatYouNotorietyLevel3Raise = 144,
+AM_HeatYouNotorietyLevel4Drop = 145,
+AM_HeatYouNotorietyLevel4Raise = 146,
+AM_HeatYouNotorietyLevelDrops = 147,
+

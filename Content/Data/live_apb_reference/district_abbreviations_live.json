@@ -1,0 +1,47 @@
+{
+  "district_abbreviations_live": [
+    {
+      "abbrev": "CS",
+      "name": "Asylum",
+      "id": "PGAsylum"
+    },
+    {
+      "abbrev": "ES",
+      "name": "EnforcerSocial",
+      "id": "EnforcerSocial"
+    },
+    {
+      "abbrev": "F",
+      "name": "Financial",
+      "id": "Financial"
+    },
+    {
+      "abbrev": "W",
+      "name": "Waterfront",
+      "id": "Waterfront"
+    },
+    {
+      "abbrev": "RS",
+      "name": "RWorldSocial",
+      "id": "Social"
+    }
+  ],
+  "login_streaming_levels": [
+    "uidistrict_crimescene",
+    "uidistrict_login01",
+    "uidistrict_nightclub",
+    "uidistrict_skatepark",
+    "uidistrict_beachscene",
+    "uidistrict_posedcharacters",
+    "uidistrict_districtselect"
+  ],
+  "engine_ports": {
+    "game": 7777,
+    "peer": 7778,
+    "server_beacon": 8777,
+    "beacon": 9777
+  },
+  "net_server_max_tick_rate": 30,
+  "net_server_max_tick_rate_social": 20,
+  "source_log": "APBGame\\Logs\\Current.log"
+}

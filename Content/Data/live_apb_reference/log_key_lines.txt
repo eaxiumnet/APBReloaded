@@ -1,0 +1,145 @@
+ActivateLevel | 17:25:24 - Log: ActivateLevel uidistrict_crimescene 1 1 0
+ActivateLevel | 17:25:24 - Log: ActivateLevel uidistrict_crimescene_artprops 1 1 0
+ActivateLevel | 17:25:24 - Log: ActivateLevel uidistrict_login01 1 1 0
+ActivateLevel | 17:25:24 - Log: ActivateLevel uidistrict_login01_artprops 1 1 0
+ActivateLevel | 17:25:24 - Log: ActivateLevel uidistrict_nightclub 1 1 0
+ActivateLevel | 17:25:24 - Log: ActivateLevel uidistrict_nightclub_artprops 1 1 0
+ActivateLevel | 17:25:24 - Log: ActivateLevel uidistrict_skatepark 1 1 0
+ActivateLevel | 17:25:24 - Log: ActivateLevel uidistrict_skatepark_artprops 1 1 0
+ActivateLevel | 17:25:24 - Log: ActivateLevel uidistrict_beachscene 1 1 0
+ActivateLevel | 17:25:24 - Log: ActivateLevel uidistrict_beachscene_artprops 1 1 0
+ActivateLevel | 17:25:24 - Log: ActivateLevel uidistrict_posedcharacters 1 1 0
+ActivateLevel | 17:25:24 - Log: ActivateLevel uidistrict_districtselect 1 1 0
+ActivateLevel | 17:25:24 - Log: ActivateLevel uidistrict_districtselect_artprops 1 1 0
+LOADING EPOCH | 17:25:16 - APB_LoadTiming: 26.48 : LOADING EPOCH [ Initial startup ] / Before loading level
+LOADING EPOCH | 17:25:24 - APB_LoadTiming: 34.55 : LOADING EPOCH [ Loaded login level ] / FEngineLoop::Init() finished!
+LOADING EPOCH | 17:25:24 - APB_LoadTiming: 35.06 : LOADING EPOCH [ Load map ] / Before RouteBeginPlay
+LOADING EPOCH | 17:25:26 - APB_LoadTiming: 36.75 : LOADING EPOCH [ RouteBeginPlay ] / Finished blocked loads
+WorldInfo.StreamingLevels | 17:25:26 - Log: WorldInfo.StreamingLevels.Length = 16
+Login | 17:24:53 - Log: 	Map=APBLoginLevel.apb
+Login | 17:24:53 - Log: 	LocalMap=APBLoginLevel.apb
+Login | 17:24:53 - Log: 	HideLoginDetails=False
+Login | 17:25:16 - Log: GConfig::Find has loaded file:  ..\APBGame\Config\APBCompat_APBLoginLevel.ini
+Login | 17:25:16 - Log: Bringing World APBLoginLevel.TheWorld up for play (0) at 2026.07.16-19.25.16
+Login | 17:25:24 - APB_LoadTiming: 34.55 : LOADING EPOCH [ Loaded login level ] / FEngineLoop::Init() finished!
+Login | 17:25:24 - Log: ActivateLevel uidistrict_login01 1 1 0
+Login | 17:25:24 - Log: ActivateLevel uidistrict_login01_artprops 1 1 0
+Login | 17:25:25 - Warning: Blocked loading of editor object cAPBRWTechLevelInfo uidistrict_login01.TheWorld:PersistentLevel.cAPBRWTechLevelInfo_0.
+Login | 17:26:53 - APB_UI: UcUIDataStore_GameFlowManager::StartLoginSequence
+Login | 17:27:00 - APB_UI: UcUIDataStore_GameFlowManager::StartLoginSequence
+Login | 17:27:00 - APB_UI: UcUIDataStore_GameFlowManager::OpenLoginScreen()
+District | 17:24:53 - Log: [District_Import]
+District | 17:24:53 - Log: 	DEFAULTDISTRICT_PATH=..\APBGame\Content\Dev\
+District | 17:24:53 - Log: 	DEFAULT_TEMPLATE_DISTRICT=MidtownMaster_Template.apb
+District | 17:24:53 - Log: 	DISTRICT_MAP_PATH=Maps
+District | 17:24:53 - Log: 	DEFAULT_DISTRICT_NAME=UnnamedDistrict
+District | 17:24:53 - Log: 	Bitmaps[0]=FinancialDistrict_Temp.bmp
+District | 17:24:53 - Log: 	Bitmaps[1]=MidtownDistrict_Q207_MiniMap.BMP
+District | 17:24:53 - Log: 	Bitmaps[2]=WaterfrontDistrict.bmp
+District | 17:24:53 - Log: 	Bitmaps[3]=UnknownDistrict.BMP
+District | 17:24:53 - Log: [APBEditor.RWTechImportersDistrictAbbreviations]
+District | 17:24:53 - Log: 	DistrictAbbreviations[0]=(Abbreviation="CS",Name="Asylum")
+District | 17:24:53 - Log: 	DistrictAbbreviations[1]=(Abbreviation="ES",Name="EnforcerSocial")
+District | 17:24:53 - Log: 	DistrictAbbreviations[2]=(Abbreviation="F",Name="Financial")
+District | 17:24:53 - Log: 	DistrictAbbreviations[3]=(Abbreviation="W",Name="Waterfront")
+District | 17:24:53 - Log: 	DistrictAbbreviations[4]=(Abbreviation="RS",Name="RWorldSocial")
+Financial | 17:24:53 - Log: 	Bitmaps[0]=FinancialDistrict_Temp.bmp
+Financial | 17:24:53 - Log: 	DistrictAbbreviations[2]=(Abbreviation="F",Name="Financial")
+Waterfront | 17:24:53 - Log: 	Bitmaps[2]=WaterfrontDistrict.bmp
+Waterfront | 17:24:53 - Log: 	DistrictAbbreviations[3]=(Abbreviation="W",Name="Waterfront")
+Mission | 17:24:53 - Log: 	Suppress[37]=APB_MissionsDetailed
+Mission | 17:24:53 - Log: 	Suppress[71]=APB_MissionsTaskObjective
+Mission | 17:24:53 - Log: 	Suppress[72]=APB_MissionsTaskItems
+Mission | 17:24:53 - Log: 	Suppress[89]=APB_MissionVFX
+Mission | 17:24:53 - Log: 	GlobalDataStoreClasses[70]=APBUserInterface.cUIDataStore_HUD_Mission
+Mission | 17:24:53 - Log: 	GlobalDataStoreClasses[87]=APBUserInterface.cUIDataStore_HUD_MissionsDisabled
+Mission | 17:24:53 - Log: 	GlobalDataStoreClasses[161]=APBUserInterface.cUIDataStore_Mission_Overview
+Mission | 17:24:53 - Log: 	GlobalDataStoreClasses[162]=APBUserInterface.cUIDataStore_Mission_HUD
+Mission | 17:24:53 - Log: 	Package[26]=APBMenus_MissionInfo2
+Mission | 17:24:53 - Log: 	m_bAlwaysUseMissionCache=true
+Mission | 17:24:53 - Log: 	m_nVerbosityMissionManager=1
+Mission | 17:24:53 - Log: 	m_bMissionsEnabled=true
+Mission | 17:24:53 - Log: 	HelpMissionRewards=https://apb.support.gamersfirst.com/customer/portal/articles/148501-mission-rewards
+Mission | 17:24:53 - Log: 	Bindings[22]=(Name="V",Command="ToggleMissionStats")
+Mission | 17:24:53 - Log: 	Bindings[135]=(Name="K",Command="ToggleReadyForMissions",Control=False,Group="Actions")
+Weapon | 17:24:53 - Log: 	TEXTUREGROUP_Weapon[0]=(MinLODSize=256,MaxLODSize=4096,LODBias=0)
+Weapon | 17:24:53 - Log: 	TEXTUREGROUP_Weapon[1]=(MinLODSize=256,MaxLODSize=4096,LODBias=0)
+Weapon | 17:24:53 - Log: 	TEXTUREGROUP_WeaponNormalMap[0]=(MinLODSize=256,MaxLODSize=4096,LODBias=0)
+Weapon | 17:24:53 - Log: 	TEXTUREGROUP_WeaponNormalMap[1]=(MinLODSize=256,MaxLODSize=4096,LODBias=0)
+Weapon | 17:24:53 - Log: 	TEXTUREGROUP_WeaponSpecular[0]=(MinLODSize=256,MaxLODSize=4096,LODBias=0)
+Weapon | 17:24:53 - Log: 	TEXTUREGROUP_WeaponSpecular[1]=(MinLODSize=256,MaxLODSize=4096,LODBias=0)
+Weapon | 17:24:53 - Log: 	GlobalDataStoreClasses[72]=APBUserInterface.cUIDataStore_HUD_WeaponInfo
+Weapon | 17:24:53 - Log: 	GlobalDataStoreClasses[124]=APBUserInterface.cUIDataStore_WC_CustomizeWeaponSlotPreview
+Weapon | 17:24:53 - Log: [Engine.Weapon]
+Weapon | 17:24:53 - Log: 	m_bDebugWeaponAimDirection=false
+Weapon | 17:24:53 - Log: [APBGame.cWeapon]
+Weapon | 17:24:53 - Log: [APBGame.cWeaponAttachment]
+Weapon | 17:24:53 - Log: [APBGame.cVisualFX_Weapon]
+Weapon | 17:24:53 - Log: 	Bindings[61]=(Name="R",Command="ReloadWeapon",Group="Combat",OnFootOnly=true)
+Weapon | 17:24:53 - Log: 	Bindings[63]=(Name="one",AdditionalName1="MouseScrollDown", Command="NextWeapon",Group="Combat",OnFootOnly=true)
+Vehicle | 17:24:53 - Init: 	bVehicleGenerateUVBleedMesh=false
+Vehicle | 17:24:53 - Init: 	bVehicleForceGCAfterBuild=false
+Vehicle | 17:24:53 - Init: 	bUseSimplifiedVehicleMaterials=false
+Vehicle | 17:24:53 - Init: 	bCompressDiffuseLocalPlayerVehicleTextures=false
+Vehicle | 17:24:53 - Init: 	bCompressDiffuseOtherPlayerVehicleTextures=false
+Vehicle | 17:24:53 - Init: 	nNumVehicleLOD=2
+Vehicle | 17:24:53 - Init: 	nVehicleExteriorTextureSize=1024
+Vehicle | 17:24:53 - Init: 	nVehicleExteriorNormalTextureSize=512
+Vehicle | 17:24:53 - Init: 	nVehicleExteriorEmissiveTextureSize=256
+Vehicle | 17:24:53 - Init: 	nVehicleInteriorTextureSize=512
+Vehicle | 17:24:53 - Init: 	nVehicleInteriorEmissiveTextureSize=256
+Vehicle | 17:24:53 - Init: 	nVehicleWheelTextureSize=256
+Vehicle | 17:24:53 - Init: 	nVehicleWheelEmissiveTextureSize=128
+Vehicle | 17:24:53 - Init: 	nVehicleGlassTextureSize=512
+Vehicle | 17:24:53 - Init: 	MaxLCVehicleTextureSize=32505856
+Notoriety | 17:24:53 - Log: 	HelpNotoriety=https://apb.support.gamersfirst.com/customer/portal/articles/148505-notoriety
+Notoriety | 17:24:53 - Log: 	HelpNotorietyKillPed=https://apb.support.gamersfirst.com/customer/portal/articles/148511-notoriety-killing-pedestrians
+NetDriver | 17:24:53 - Log: 	NetworkDevice=IpDrv.TcpNetDriver
+NetDriver | 17:24:53 - Log: 	FallbackNetworkDevice=IpDrv.TcpNetDriver
+NetDriver | 17:24:53 - Log: [IpDrv.TcpNetDriver]
+Browse | 17:24:53 - Log: [Actor Browser]
+Browse | 17:24:53 - Log: [Group Browser]
+Browse | 17:24:53 - Log: [Tag Browser]
+Browse | 17:24:53 - Log: [Master Browser]
+Browse | 17:24:53 - Log: [UnrealEd.BrowserManager]
+Browse | 17:24:53 - Log: 	BrowserPanes[0]=(PaneID=0,WxWindowClassName="WxGenericBrowser",FriendlyName="GenericBrowser",CloneOfPaneID=-1,CloneNumber=-1)
+Browse | 17:24:53 - Log: 	BrowserPanes[1]=(PaneID=1,WxWindowClassName="WxActorBrowser",FriendlyName="ActorBrowser",CloneOfPaneID=-1,CloneNumber=-1)
+Browse | 17:24:53 - Log: 	BrowserPanes[2]=(PaneID=2,WxWindowClassName="WxGroupBrowser",FriendlyName="GroupBrowser",CloneOfPaneID=-1,CloneNumber=-1)
+Browse | 17:24:53 - Log: 	BrowserPanes[3]=(PaneID=3,WxWindowClassName="WxLevelBrowser",FriendlyName="LevelBrowser",CloneOfPaneID=-1,CloneNumber=-1)
+Browse | 17:24:53 - Log: 	BrowserPanes[4]=(PaneID=4,WxWindowClassName="WxReferencedAssetsBrowser",FriendlyName="ReferencedAssetsBrowser",CloneOfPaneID=-1,CloneNumber=-1)
+Browse | 17:24:53 - Log: 	BrowserPanes[5]=(PaneID=5,WxWindowClassName="WxTerrainBrowser",FriendlyName="TerrainBrowser",CloneOfPaneID=-1,CloneNumber=-1)
+Browse | 17:24:53 - Log: 	BrowserPanes[6]=(PaneID=6,WxWindowClassName="WxPrimitiveStatsBrowser",FriendlyName="Primitive Stats",CloneOfPaneID=-1,CloneNumber=-1)
+Browse | 17:24:53 - Log: 	BrowserPanes[7]=(PaneID=7,WxWindowClassName="WxDynamicShadowStatsBrowser",FriendlyName="Dynamic Shadow Stats",CloneOfPaneID=-1,CloneNumber=-1)
+Browse | 17:24:53 - Log: 	BrowserPanes[8]=(PaneID=8,WxWindowClassName="WxSceneManager",FriendlyName="SceneManager",CloneOfPaneID=-1,CloneNumber=-1)
+Browse | 17:24:53 - Log: 	BrowserPanes[9]=(PaneID=30,WxWindowClassName="WxLogBrowser",FriendlyName="LogBrowser",CloneOfPaneID=-1,CloneNumber=-1)
+Travel | 17:24:53 - Log: 	ServerTravelPause=4.0
+Travel | 17:24:53 - Log: 	ServerTravelPause=4.0
+Map= | 17:24:53 - Log: 	Map=APBLoginLevel.apb
+Map= | 17:24:53 - Log: 	LocalMap=APBLoginLevel.apb
+Map= | 17:24:53 - Log: 	TransitionMap=Entry
+Map= | 17:24:53 - Log: 	;LocalMap=APBStart.apb
+Map= | 17:24:53 - Log: 	StatColorMappings=(StatName="AverageFPS",ColorMap=((In=15.0,Out=(R=255)),(In=30.0,Out=(G=255))))
+Error: | 17:25:15 - Error: Exception in UObject::StaticLoadObject
+Error: | 17:25:15 - Error: StaticLoadObjectFailed: Mirage_BumperFront02
+Error: | 17:25:15 - Error: Unable to find UI texture icon row :: Vehicle_Comp_SungnyemunMirage_BumperFront02
+Error: | 17:25:15 - Error: Exception in UObject::StaticLoadObject
+Error: | 17:25:15 - Error: StaticLoadObjectFailed: Mirage_BumperFront03
+Error: | 17:25:15 - Error: Unable to find UI texture icon row :: Vehicle_Comp_SungnyemunMirage_BumperFront03
+Error: | 17:25:15 - Error: Exception in UObject::StaticLoadObject
+Error: | 17:25:15 - Error: StaticLoadObjectFailed: Mirage_BumperRear02
+Error: | 17:25:15 - Error: Unable to find UI texture icon row :: Vehicle_Comp_SungnyemunMirage_BumperRear02
+Error: | 17:25:15 - Error: Exception in UObject::StaticLoadObject
+Error: | 17:25:15 - Error: StaticLoadObjectFailed: Mirage_BumperRear03
+Error: | 17:25:15 - Error: Unable to find UI texture icon row :: Vehicle_Comp_SungnyemunMirage_BumperRear03
+Error: | 17:25:15 - Error: Exception in UObject::StaticLoadObject
+Error: | 17:25:15 - Error: StaticLoadObjectFailed: Mirage_Hood02
+Error: | 17:25:15 - Error: Unable to find UI texture icon row :: Vehicle_Comp_SungnyemunMirage_Hood02
+Critical | 17:24:53 - Init: 	fCAM_MemoryThresholdCritical=75000.000
+Critical | 17:24:53 - Init: 	fCAM_MemoryThresholdCritical=75000.000
+Critical | 17:24:53 - Log: 	fCAM_MemoryThresholdCritical=75000
+Critical | 17:24:53 - Log: 	fCAM_MemoryThresholdCritical=75000
+Critical | 17:24:53 - Log: 	fCAM_MemoryThresholdCritical=75000
+Critical | 17:24:53 - Log: 	fCAM_MemoryThresholdCritical=75000
+Critical | 17:24:53 - Log: 	fCAM_MemoryThresholdCritical=75000
+Critical | 17:24:53 - Log: 	fCAM_MemoryThresholdCritical=75000.000000
+Critical | 17:24:56 - Progress: Preload 3 rows in table ScaleformCriticalTimers

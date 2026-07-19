@@ -1,0 +1,27 @@
+# Unreal Engine build outputs
+Binaries/
+Intermediate/
+Saved/
+DerivedDataCache/
+
+# Reference game installs / copies (local only, never commit)
+2011 apb/
+APB Reloaded/
+
+# Tool caches
+.codegraph/
+.omo/
+
+# Extracted reference trees (large, regenerable)
+Content/Extracted/
+
+# IDE / generated files
+.vs/
+.idea/
+*.sln
+*.suo
+*.user
+
+# OS noise
+Thumbs.db
+Desktop.ini

@@ -1,0 +1,4149 @@
+{
+  "source_install": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages",
+  "umodel": "D:\\APBReloaded\\Tools\\UEViewer\\umodel.exe",
+  "umodel_game_tag": "apb",
+  "notes": [
+    "APB cooked packages use FileVersion 564 / Licensee 33 (UE3).",
+    "Stock umodel detects -game=apb but many cooked packages fail CompressedChunk/header parse (custom cook/compress).",
+    "Engine Content packages list OK. Full mesh export requires working umodel APB decompress or updated build.",
+    "name_hints are string-mined from package bytes for reference when full export fails.",
+    "Export targets for 3D DCC: PSK/PSA (ActorX), glTF if available, TGA textures; import to UE5 via FBX after DCC conversion."
+  ],
+  "package_counts_by_folder": {
+    "BlobShadowTextures.upk": 1,
+    "DepthBias_Samples.upk": 1,
+    "FeatureLightsPrefabs.upk": 1,
+    "FX_HUDMarkers.upk": 1,
+    "GenericAssets.upk": 1,
+    "PawnInterpolation.upk": 1,
+    "Precache.upk": 1,
+    "Anim": 81,
+    "APB_CharacterTool": 1753,
+    "APB_Vehicles": 2649,
+    "AsylumDistrict": 30,
+    "Audio": 2,
+    "BRDF": 1,
+    "Character": 356,
+    "CharacterCustomisation": 3,
+    "DesignObjects": 198,
+    "Environment": 9,
+    "FinancialDistrict": 122,
+    "Interface": 226,
+    "MaterialDatabase": 479,
+    "Pedestrians": 1,
+    "PGBeaconDistrict": 3,
+    "PGCrateDistrict": 22,
+    "RWorldSocialDistrict": 7,
+    "RWTechIcons": 1,
+    "SymbolEditor": 23,
+    "UIDistrict": 7,
+    "Vehicles": 390,
+    "VFX": 85,
+    "WaterfrontDistrict": 124
+  },
+  "total_packages": 6579,
+  "scan_seconds": 41.78,
+  "vehicles": [
+    {
+      "package": "AudioSiren_1",
+      "rel_path": "APB_Vehicles\\Common\\AudioSiren_1.upk",
+      "family": "Common",
+      "size": 786,
+      "ue5_import_hint": "/Game/Imported/Vehicles/Common/AudioSiren_1",
+      "name_hints": []
+    },
+    {
+      "package": "AudioSiren_2",
+      "rel_path": "APB_Vehicles\\Common\\AudioSiren_2.upk",
+      "family": "Common",
+      "size": 833,
+      "ue5_import_hint": "/Game/Imported/Vehicles/Common/AudioSiren_2",
+      "name_hints": []
+    },
+    {
+      "package": "AudioSiren_3",
+      "rel_path": "APB_Vehicles\\Common\\AudioSiren_3.upk",
+      "family": "Common",
+      "size": 833,
+      "ue5_import_hint": "/Game/Imported/Vehicles/Common/AudioSiren_3",
+      "name_hints": []
+    },
+    {
+      "package": "AudioSiren_4",
+      "rel_path": "APB_Vehicles\\Common\\AudioSiren_4.upk",
+      "family": "Common",
+      "size": 829,
+      "ue5_import_hint": "/Game/Imported/Vehicles/Common/AudioSiren_4",
+      "name_hints": []
+    },
+    {
+      "package": "AudioSiren_5",
+      "rel_path": "APB_Vehicles\\Common\\AudioSiren_5.upk",
+      "family": "Common",
+      "size": 834,
+      "ue5_import_hint": "/Game/Imported/Vehicles/Common/AudioSiren_5",
+      "name_hints": []
+    },
+    {
+      "package": "AudioSiren_6",
+      "rel_path": "APB_Vehicles\\Common\\AudioSiren_6.upk",
+      "family": "Common",
+      "size": 837,
+      "ue5_import_hint": "/Game/Imported/Vehicles/Common/AudioSiren_6",
+      "name_hints": []
+    },
+    {
+      "package": "AudioSiren_7",
+      "rel_path": "APB_Vehicles\\Common\\AudioSiren_7.upk",
+      "family": "Common",
+      "size": 837,
+      "ue5_import_hint": "/Game/Imported/Vehicles/Common/AudioSiren_7",
+      "name_hints": []
+    },
+    {
+      "package": "AudioSiren_8",
+      "rel_path": "APB_Vehicles\\Common\\AudioSiren_8.upk",
+      "family": "Common",
+      "size": 833,
+      "ue5_import_hint": "/Game/Imported/Vehicles/Common/AudioSiren_8",
+      "name_hints": []
+    },
+    {
+      "package": "SirenFlashPattern_1",
+      "rel_path": "APB_Vehicles\\Common\\SirenFlashPattern_1.upk",
+      "family": "Common",
+      "size": 825,
+      "ue5_import_hint": "/Game/Imported/Vehicles/Common/SirenFlashPattern_1",
+      "name_hints": []
+    },
+    {
+      "package": "SirenFlashPattern_2",
+      "rel_path": "APB_Vehicles\\Common\\SirenFlashPattern_2.upk",
+      "family": "Common",
+      "size": 755,
+      "ue5_import_hint": "/Game/Imported/Vehicles/Common/SirenFlashPattern_2",
+      "name_hints": []
+    },
+    {
+      "package": "SirenFlashPattern_3",
+      "rel_path": "APB_Vehicles\\Common\\SirenFlashPattern_3.upk",
+      "family": "Common",
+      "size": 755,
+      "ue5_import_hint": "/Game/Imported/Vehicles/Common/SirenFlashPattern_3",
+      "name_hints": []
+    },
+    {
+      "package": "SirenFlashPattern_4",
+      "rel_path": "APB_Vehicles\\Common\\SirenFlashPattern_4.upk",
+      "family": "Common",
+      "size": 755,
+      "ue5_import_hint": "/Game/Imported/Vehicles/Common/SirenFlashPattern_4",
+      "name_hints": []
+    },
+    {
+      "package": "SirenFlashPattern_5",
+      "rel_path": "APB_Vehicles\\Common\\SirenFlashPattern_5.upk",
+      "family": "Common",
+      "size": 755,
+      "ue5_import_hint": "/Game/Imported/Vehicles/Common/SirenFlashPattern_5",
+      "name_hints": []
+    },
+    {
+      "package": "SirenFlashPattern_6",
+      "rel_path": "APB_Vehicles\\Common\\SirenFlashPattern_6.upk",
+      "family": "Common",
+      "size": 755,
+      "ue5_import_hint": "/Game/Imported/Vehicles/Common/SirenFlashPattern_6",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrCoupe_Badge_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_Badge_1.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 15129,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_Badge_1",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrCoupe_Badge_2",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_Badge_2.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 508,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_Badge_2",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrCoupe_BrakeCailpers_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_BrakeCailpers_1.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 19570,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_BrakeCailpers_1",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrCoupe_BumperFront_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_BumperFront_1.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 3779,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_BumperFront_1",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrCoupe_BumperFront_2",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_BumperFront_2.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 49254,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_BumperFront_2",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "BumperFront",
+        "Bumper_Front",
+        "HubCap",
+        "LODHysteresiX1P",
+        "LODInfoD",
+        "LODMaj",
+        "Texture2",
+        "Vehicle_BodDb",
+        "m_iTotalLOD"
+      ]
+    },
+    {
+      "package": "V_A_2DrCoupe_BumperRear_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_BumperRear_1.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 44169,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_BumperRear_1",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "BumperRear",
+        "Bumper_Front",
+        "HubCap",
+        "LODHysteresi",
+        "LODInfoD",
+        "LODMav",
+        "Texture2",
+        "Vehicle_BodDb",
+        "m_iTotalLOD"
+      ]
+    },
+    {
+      "package": "V_A_2DrCoupe_Door_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_Door_1.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 895,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_Door_1",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrCoupe_FrontBase_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_FrontBase_1.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 3880,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_FrontBase_1",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrCoupe_FrontBase_2",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_FrontBase_2.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 64603,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_FrontBase_2",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "Bumper_Front",
+        "HubCap",
+        "LODHysteresiX1P",
+        "LODInfoD",
+        "LODMaj",
+        "Texture2",
+        "Vehicle_BodDb",
+        "m_iTotalLOD"
+      ]
+    },
+    {
+      "package": "V_A_2DrCoupe_Grill_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_Grill_1.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 3779,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_Grill_1",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrCoupe_Grill_2",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_Grill_2.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 13425,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_Grill_2",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrCoupe_HeadLightGlass_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_HeadLightGlass_1.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 3795,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_HeadLightGlass_1",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrCoupe_HeadLightGlass_2",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_HeadLightGlass_2.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 10314,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_HeadLightGlass_2",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrCoupe_HeadLightMain_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_HeadLightMain_1.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 3786,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_HeadLightMain_1",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrCoupe_HeadLightMain_2",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_HeadLightMain_2.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 22194,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_HeadLightMain_2",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrCoupe_Hood_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_Hood_1.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 3775,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_Hood_1",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrCoupe_Hood_2",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_Hood_2.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 21511,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_Hood_2",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrCoupe_PoliceLightsMain_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_PoliceLightsMain_1.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 16057,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_PoliceLightsMain_1",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrCoupe_PoliceLightsMain_2",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_PoliceLightsMain_2.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 25329,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_PoliceLightsMain_2",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrCoupe_PoliceLightsMain_3",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_PoliceLightsMain_3.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 23185,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_PoliceLightsMain_3",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrCoupe_PoliceLightsMain_4",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_PoliceLightsMain_4.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 10361,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_PoliceLightsMain_4",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrCoupe_PoliceLightsMain_5",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_PoliceLightsMain_5.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 12529,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_PoliceLightsMain_5",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrCoupe_PoliceLightsMain_6",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_PoliceLightsMain_6.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 14088,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_PoliceLightsMain_6",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrCoupe_PoliceLightsMain_7",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_PoliceLightsMain_7.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 31869,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_PoliceLightsMain_7",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrCoupe_PoliceLightsSecondaryFront02_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_PoliceLightsSecondaryFront02_1.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 13344,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_PoliceLightsSecondaryFront02_1",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrCoupe_PoliceLightsSecondaryFront02_2",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_PoliceLightsSecondaryFront02_2.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 18059,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_PoliceLightsSecondaryFront02_2",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrCoupe_PoliceLightsSecondaryFront02_3",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_PoliceLightsSecondaryFront02_3.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 12633,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_PoliceLightsSecondaryFront02_3",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrCoupe_PoliceLightsSecondaryFront02_4",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_PoliceLightsSecondaryFront02_4.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 9553,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_PoliceLightsSecondaryFront02_4",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrCoupe_RoofExterior_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_RoofExterior_1.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 57567,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_RoofExterior_1",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "Bumper_Front",
+        "HubCap",
+        "LODHysteresi",
+        "LODInfoD",
+        "LODMav",
+        "Texture2",
+        "Vehicle_BodDb",
+        "m_iTotalLOD"
+      ]
+    },
+    {
+      "package": "V_A_2DrCoupe_RoofGlass_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_RoofGlass_1.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 24280,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_RoofGlass_1",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrCoupe_RoofInterior_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_RoofInterior_1.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 22958,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_RoofInterior_1",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrCoupe_SeatsFront_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_SeatsFront_1.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 25092,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_SeatsFront_1",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrCoupe_SideSkirts_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_SideSkirts_1.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 15596,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_SideSkirts_1",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrCoupe_Spoiler_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_Spoiler_1.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 19043,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_Spoiler_1",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrCoupe_SteeringWheel_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_SteeringWheel_1.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 18502,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_SteeringWheel_1",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrCoupe_TailLightsMain_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_TailLightsMain_1.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 16016,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_TailLightsMain_1",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrCoupe_Wheels_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_Wheels_1.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 119681,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_Wheels_1",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "Bumper_Front",
+        "GameTextures",
+        "HubCap",
+        "LODHysteresi",
+        "LODInfo",
+        "LODMat",
+        "Vehicle_BodLe",
+        "Vehicles",
+        "Wheels",
+        "etTextureCategor"
+      ]
+    },
+    {
+      "package": "V_A_2DrCoupe_Wheels_10",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_Wheels_10.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 145487,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_Wheels_10",
+      "name_hints": [
+        "Bumper_Front",
+        "GameTextures",
+        "HubCap",
+        "LODHysteresi",
+        "LODInfo",
+        "LODMat",
+        "Vehicle_BodHbD",
+        "Vehicles",
+        "Wheel07",
+        "Wheels",
+        "a_sWheelSocketNames",
+        "etTextureCategor",
+        "keletalMeshe",
+        "oHLOD"
+      ]
+    },
+    {
+      "package": "V_A_2DrCoupe_Wheels_11",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_Wheels_11.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 145797,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_Wheels_11",
+      "name_hints": [
+        "Bumper_Front",
+        "GameTextures",
+        "HubCap",
+        "LODHysteresi",
+        "LODInfo",
+        "LODMat",
+        "Vehicle_BodHbD",
+        "Vehicles",
+        "Wheel08",
+        "Wheels",
+        "a_sWheelSocketNames",
+        "etTextureCategor",
+        "keletalMeshe",
+        "oHLOD"
+      ]
+    },
+    {
+      "package": "V_A_2DrCoupe_Wheels_12",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_Wheels_12.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 145011,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_Wheels_12",
+      "name_hints": [
+        "Bumper_Front",
+        "GameTextures",
+        "HubCap",
+        "LODHysteresi",
+        "LODInfo",
+        "LODMat",
+        "Vehicle_BodHbD",
+        "Vehicles",
+        "Wheel08",
+        "Wheels",
+        "a_sWheelSocketNames",
+        "etTextureCategor",
+        "keletalMeshe",
+        "oHLOD"
+      ]
+    },
+    {
+      "package": "V_A_2DrCoupe_Wheels_13",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_Wheels_13.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 143808,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_Wheels_13",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "Bumper_Front",
+        "GameTextures",
+        "HubCap",
+        "LODHysteresi",
+        "LODInfo",
+        "LODMat",
+        "Vehicle_BodLe",
+        "Vehicles",
+        "Wheel08",
+        "Wheels",
+        "etTextureCategor"
+      ]
+    },
+    {
+      "package": "V_A_2DrCoupe_Wheels_14",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_Wheels_14.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 145561,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_Wheels_14",
+      "name_hints": [
+        "Bumper_Front",
+        "GameTextures",
+        "HubCap",
+        "LODHysteresi",
+        "LODInfo",
+        "LODMat",
+        "Vehicle_BodHbD",
+        "Vehicles",
+        "Wheel08",
+        "Wheels",
+        "a_sWheelSocketNames",
+        "etTextureCategor",
+        "keletalMeshe",
+        "oHLOD"
+      ]
+    },
+    {
+      "package": "V_A_2DrCoupe_Wheels_15",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_Wheels_15.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 146758,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_Wheels_15",
+      "name_hints": [
+        "Bumper_Front",
+        "GameTextures",
+        "HubCap",
+        "LODHysteresi",
+        "LODInfo",
+        "LODMat",
+        "Vehicle_BodHbD",
+        "Vehicles",
+        "Wheel09",
+        "Wheels",
+        "a_sWheelSocketNames",
+        "etTextureCategor",
+        "keletalMeshe",
+        "oHLOD"
+      ]
+    },
+    {
+      "package": "V_A_2DrCoupe_Wheels_16",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_Wheels_16.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 145245,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_Wheels_16",
+      "name_hints": [
+        "Bumper_Front",
+        "GameTextures",
+        "HubCap",
+        "LODHysteresi",
+        "LODInfo",
+        "LODMat",
+        "Vehicle_BodHbD",
+        "Vehicles",
+        "Wheel09",
+        "Wheels",
+        "a_sWheelSocketNames",
+        "etTextureCategor",
+        "keletalMeshe",
+        "oHLOD"
+      ]
+    },
+    {
+      "package": "V_A_2DrCoupe_Wheels_17",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_Wheels_17.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 144807,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_Wheels_17",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "Bumper_Front",
+        "GameTextures",
+        "HubCap",
+        "LODHysteresi",
+        "LODInfo",
+        "LODMat",
+        "Vehicle_BodLe",
+        "Vehicles",
+        "Wheel09",
+        "Wheels",
+        "etTextureCategor"
+      ]
+    },
+    {
+      "package": "V_A_2DrCoupe_Wheels_18",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_Wheels_18.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 146375,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_Wheels_18",
+      "name_hints": [
+        "Bumper_Front",
+        "GameTextures",
+        "HubCap",
+        "LODHysteresi",
+        "LODInfo",
+        "LODMat",
+        "Vehicle_BodHbD",
+        "Vehicles",
+        "Wheel09",
+        "Wheels",
+        "a_sWheelSocketNames",
+        "etTextureCategor",
+        "keletalMeshe",
+        "oHLOD"
+      ]
+    },
+    {
+      "package": "V_A_2DrCoupe_Wheels_2",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_Wheels_2.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 128800,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_Wheels_2",
+      "name_hints": [
+        "Bumper_Front",
+        "GameTextures",
+        "HubCap",
+        "LODHysteresi",
+        "LODInfo",
+        "LODMat",
+        "VehicleL",
+        "Vehicle_BodHbD",
+        "Wheels",
+        "a_sWheelSocketNames",
+        "etTextureCategor",
+        "keletalMeshe",
+        "oHLOD"
+      ]
+    },
+    {
+      "package": "V_A_2DrCoupe_Wheels_3",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_Wheels_3.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 122017,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_Wheels_3",
+      "name_hints": [
+        "Bumper_Front",
+        "GameTextures",
+        "HubCap",
+        "LODHysteresi",
+        "LODInfo",
+        "LODMat",
+        "Vehicle_BodHbD",
+        "Vehicles",
+        "Wheels",
+        "a_sWheelSocketNames",
+        "etTextureCategor",
+        "keletalMeshe",
+        "oHLOD"
+      ]
+    },
+    {
+      "package": "V_A_2DrCoupe_Wheels_4",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_Wheels_4.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 122220,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_Wheels_4",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "Bumper_Front",
+        "GameTextures",
+        "HubCap",
+        "LODHysteresi",
+        "LODInfo",
+        "LODMat",
+        "Vehicle_BodLe",
+        "Vehicles",
+        "Wheels",
+        "etTextureCategor"
+      ]
+    },
+    {
+      "package": "V_A_2DrCoupe_Wheels_5",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_Wheels_5.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 129540,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_Wheels_5",
+      "name_hints": [
+        "Bumper_Front",
+        "GameTextures",
+        "HubCap",
+        "LODHysteresi",
+        "LODInfo",
+        "LODMat",
+        "VehicleL",
+        "Vehicle_BodHbD",
+        "Wheels",
+        "a_sWheelSocketNames",
+        "etTextureCategor",
+        "keletalMeshe",
+        "oHLOD"
+      ]
+    },
+    {
+      "package": "V_A_2DrCoupe_Wheels_6",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_Wheels_6.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 121578,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_Wheels_6",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "Bumper_Front",
+        "GameTextures",
+        "HubCap",
+        "LODHysteresi",
+        "LODInfo",
+        "LODMat",
+        "Vehicle_BodLe",
+        "Vehicles",
+        "Wheels",
+        "etTextureCategor"
+      ]
+    },
+    {
+      "package": "V_A_2DrCoupe_Wheels_7",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_Wheels_7.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 147071,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_Wheels_7",
+      "name_hints": [
+        "Bumper_Front",
+        "GameTextures",
+        "HubCap",
+        "LODHysteresi",
+        "LODInfo",
+        "LODMat",
+        "Vehicle_BodHbD",
+        "Vehicles",
+        "Wheel07",
+        "Wheels",
+        "a_sWheelSocketNames",
+        "etTextureCategor",
+        "keletalMeshe",
+        "oHLOD"
+      ]
+    },
+    {
+      "package": "V_A_2DrCoupe_Wheels_8",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_Wheels_8.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 145704,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_Wheels_8",
+      "name_hints": [
+        "Bumper_Front",
+        "GameTextures",
+        "HubCap",
+        "LODHysteresi",
+        "LODInfo",
+        "LODMat",
+        "Vehicle_BodHbD",
+        "Vehicles",
+        "Wheel07",
+        "Wheels",
+        "a_sWheelSocketNames",
+        "etTextureCategor",
+        "keletalMeshe",
+        "oHLOD"
+      ]
+    },
+    {
+      "package": "V_A_2DrCoupe_Wheels_9",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_Wheels_9.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 145300,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_Wheels_9",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "Bumper_Front",
+        "GameTextures",
+        "HubCap",
+        "LODHysteresi",
+        "LODInfo",
+        "LODMat",
+        "Vehicle_BodLe",
+        "Vehicles",
+        "Wheel07",
+        "Wheels",
+        "etTextureCategor"
+      ]
+    },
+    {
+      "package": "V_A_2DrCoupe_WindowWipers_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_WindowWipers_1.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 7638,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_WindowWipers_1",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrCoupe_WingMirrors_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrCoupe\\V_A_2DrCoupe_WingMirrors_1.upk",
+      "family": "V_A_2DrCoupe",
+      "size": 15768,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrCoupe/V_A_2DrCoupe_WingMirrors_1",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_Badge_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_Badge_1.upk",
+      "family": "V_A_2DrVan",
+      "size": 13205,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_Badge_1",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_BrakeCaliper_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_BrakeCaliper_1.upk",
+      "family": "V_A_2DrVan",
+      "size": 19521,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_BrakeCaliper_1",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_BumperFront_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_BumperFront_1.upk",
+      "family": "V_A_2DrVan",
+      "size": 3777,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_BumperFront_1",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_BumperFront_2",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_BumperFront_2.upk",
+      "family": "V_A_2DrVan",
+      "size": 3777,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_BumperFront_2",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_BumperFront_3",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_BumperFront_3.upk",
+      "family": "V_A_2DrVan",
+      "size": 51855,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_BumperFront_3",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "BumperFront",
+        "Bumper_Front",
+        "HubCap",
+        "LODHysteresiX1P",
+        "LODInfoD",
+        "LODMaj",
+        "Texture2",
+        "Vehicle_BodDb",
+        "m_iTotalLOD"
+      ]
+    },
+    {
+      "package": "V_A_2DrVan_BumperRear_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_BumperRear_1.upk",
+      "family": "V_A_2DrVan",
+      "size": 49002,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_BumperRear_1",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "BumperRear",
+        "Bumper_Front",
+        "HubCap",
+        "LODHysteresi",
+        "LODInfoD",
+        "LODMav",
+        "Texture2",
+        "Vehicle_BodDb",
+        "m_iTotalLOD"
+      ]
+    },
+    {
+      "package": "V_A_2DrVan_Door_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_Door_1.upk",
+      "family": "V_A_2DrVan",
+      "size": 882,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_Door_1",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_FrontBase_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_FrontBase_1.upk",
+      "family": "V_A_2DrVan",
+      "size": 3780,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_FrontBase_1",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_FrontBase_2",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_FrontBase_2.upk",
+      "family": "V_A_2DrVan",
+      "size": 3780,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_FrontBase_2",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_FrontBase_3",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_FrontBase_3.upk",
+      "family": "V_A_2DrVan",
+      "size": 61756,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_FrontBase_3",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "Bumper_Front",
+        "HubCap",
+        "LODHysteresiX1P",
+        "LODInfoD",
+        "LODMaj",
+        "Texture2",
+        "Vehicle_BodDb",
+        "m_iTotalLOD"
+      ]
+    },
+    {
+      "package": "V_A_2DrVan_Grill_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_Grill_1.upk",
+      "family": "V_A_2DrVan",
+      "size": 3777,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_Grill_1",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_Grill_2",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_Grill_2.upk",
+      "family": "V_A_2DrVan",
+      "size": 3777,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_Grill_2",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_Grill_3",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_Grill_3.upk",
+      "family": "V_A_2DrVan",
+      "size": 25886,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_Grill_3",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_HeadlightGlass_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_HeadlightGlass_1.upk",
+      "family": "V_A_2DrVan",
+      "size": 3926,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_HeadlightGlass_1",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_HeadlightGlass_2",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_HeadlightGlass_2.upk",
+      "family": "V_A_2DrVan",
+      "size": 3798,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_HeadlightGlass_2",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_HeadlightGlass_3",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_HeadlightGlass_3.upk",
+      "family": "V_A_2DrVan",
+      "size": 10343,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_HeadlightGlass_3",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_HeadLightMain_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_HeadLightMain_1.upk",
+      "family": "V_A_2DrVan",
+      "size": 3784,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_HeadLightMain_1",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_HeadLightMain_2",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_HeadLightMain_2.upk",
+      "family": "V_A_2DrVan",
+      "size": 3784,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_HeadLightMain_2",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_HeadLightMain_3",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_HeadLightMain_3.upk",
+      "family": "V_A_2DrVan",
+      "size": 19897,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_HeadLightMain_3",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_Hood_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_Hood_1.upk",
+      "family": "V_A_2DrVan",
+      "size": 3773,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_Hood_1",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_Hood_2",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_Hood_2.upk",
+      "family": "V_A_2DrVan",
+      "size": 3773,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_Hood_2",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_Hood_3",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_Hood_3.upk",
+      "family": "V_A_2DrVan",
+      "size": 23906,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_Hood_3",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_PoliceLightsMain_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_PoliceLightsMain_1.upk",
+      "family": "V_A_2DrVan",
+      "size": 16716,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_PoliceLightsMain_1",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_PoliceLightsMain_2",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_PoliceLightsMain_2.upk",
+      "family": "V_A_2DrVan",
+      "size": 26517,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_PoliceLightsMain_2",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_PoliceLightsMain_3",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_PoliceLightsMain_3.upk",
+      "family": "V_A_2DrVan",
+      "size": 25131,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_PoliceLightsMain_3",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_PoliceLightsMain_4",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_PoliceLightsMain_4.upk",
+      "family": "V_A_2DrVan",
+      "size": 10472,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_PoliceLightsMain_4",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_PoliceLightsMain_5",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_PoliceLightsMain_5.upk",
+      "family": "V_A_2DrVan",
+      "size": 12964,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_PoliceLightsMain_5",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_PoliceLightsMain_6",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_PoliceLightsMain_6.upk",
+      "family": "V_A_2DrVan",
+      "size": 9185,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_PoliceLightsMain_6",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_PoliceLightsMain_7",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_PoliceLightsMain_7.upk",
+      "family": "V_A_2DrVan",
+      "size": 32087,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_PoliceLightsMain_7",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_PoliceLightsSecondaryFront01_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_PoliceLightsSecondaryFront01_1.upk",
+      "family": "V_A_2DrVan",
+      "size": 529,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_PoliceLightsSecondaryFront01_1",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_PoliceLightsSecondaryFront01_2",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_PoliceLightsSecondaryFront01_2.upk",
+      "family": "V_A_2DrVan",
+      "size": 529,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_PoliceLightsSecondaryFront01_2",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_PoliceLightsSecondaryFront01_3",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_PoliceLightsSecondaryFront01_3.upk",
+      "family": "V_A_2DrVan",
+      "size": 529,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_PoliceLightsSecondaryFront01_3",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_PoliceLightsSecondaryFront01_4",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_PoliceLightsSecondaryFront01_4.upk",
+      "family": "V_A_2DrVan",
+      "size": 529,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_PoliceLightsSecondaryFront01_4",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_PoliceLightsSecondaryFront02_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_PoliceLightsSecondaryFront02_1.upk",
+      "family": "V_A_2DrVan",
+      "size": 529,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_PoliceLightsSecondaryFront02_1",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_PoliceLightsSecondaryFront02_2",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_PoliceLightsSecondaryFront02_2.upk",
+      "family": "V_A_2DrVan",
+      "size": 529,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_PoliceLightsSecondaryFront02_2",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_PoliceLightsSecondaryFront02_3",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_PoliceLightsSecondaryFront02_3.upk",
+      "family": "V_A_2DrVan",
+      "size": 529,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_PoliceLightsSecondaryFront02_3",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_PoliceLightsSecondaryFront02_4",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_PoliceLightsSecondaryFront02_4.upk",
+      "family": "V_A_2DrVan",
+      "size": 529,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_PoliceLightsSecondaryFront02_4",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_PoliceLightsSecondaryFront03_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_PoliceLightsSecondaryFront03_1.upk",
+      "family": "V_A_2DrVan",
+      "size": 13356,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_PoliceLightsSecondaryFront03_1",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_PoliceLightsSecondaryFront03_2",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_PoliceLightsSecondaryFront03_2.upk",
+      "family": "V_A_2DrVan",
+      "size": 17995,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_PoliceLightsSecondaryFront03_2",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_PoliceLightsSecondaryFront03_3",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_PoliceLightsSecondaryFront03_3.upk",
+      "family": "V_A_2DrVan",
+      "size": 12567,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_PoliceLightsSecondaryFront03_3",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_PoliceLightsSecondaryFront03_4",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_PoliceLightsSecondaryFront03_4.upk",
+      "family": "V_A_2DrVan",
+      "size": 9569,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_PoliceLightsSecondaryFront03_4",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_Roof_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_Roof_1.upk",
+      "family": "V_A_2DrVan",
+      "size": 34591,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_Roof_1",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_SeatsFront_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_SeatsFront_1.upk",
+      "family": "V_A_2DrVan",
+      "size": 24787,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_SeatsFront_1",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_SideSkirts_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_SideSkirts_1.upk",
+      "family": "V_A_2DrVan",
+      "size": 16074,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_SideSkirts_1",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_Spoiler_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_Spoiler_1.upk",
+      "family": "V_A_2DrVan",
+      "size": 46053,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_Spoiler_1",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "Bumper_Front",
+        "HubCap",
+        "LODHysteresiX",
+        "LODInfoD",
+        "LODMav",
+        "Texture2",
+        "Vehicle_BodDb",
+        "m_iTotalLOD"
+      ]
+    },
+    {
+      "package": "V_A_2DrVan_SteeringWheel_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_SteeringWheel_1.upk",
+      "family": "V_A_2DrVan",
+      "size": 17611,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_SteeringWheel_1",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_TailLightsGlass_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_TailLightsGlass_1.upk",
+      "family": "V_A_2DrVan",
+      "size": 511,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_TailLightsGlass_1",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_TailLightsMain_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_TailLightsMain_1.upk",
+      "family": "V_A_2DrVan",
+      "size": 25624,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_TailLightsMain_1",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_Wheels_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_Wheels_1.upk",
+      "family": "V_A_2DrVan",
+      "size": 119675,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_Wheels_1",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "Bumper_Front",
+        "GameTextures",
+        "HubCap",
+        "LODHysteresi",
+        "LODInfo",
+        "LODMat",
+        "Vehicle_BodLe",
+        "Vehicles",
+        "Wheels",
+        "etTextureCategor"
+      ]
+    },
+    {
+      "package": "V_A_2DrVan_Wheels_10",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_Wheels_10.upk",
+      "family": "V_A_2DrVan",
+      "size": 145485,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_Wheels_10",
+      "name_hints": [
+        "Bumper_Front",
+        "GameTextures",
+        "HubCap",
+        "LODHysteresi",
+        "LODInfo",
+        "LODMat",
+        "Vehicle_BodHbD",
+        "Vehicles",
+        "Wheel07",
+        "Wheels",
+        "a_sWheelSocketNames",
+        "etTextureCategor",
+        "keletalMeshe",
+        "oHLOD"
+      ]
+    },
+    {
+      "package": "V_A_2DrVan_Wheels_11",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_Wheels_11.upk",
+      "family": "V_A_2DrVan",
+      "size": 145822,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_Wheels_11",
+      "name_hints": [
+        "Bumper_Front",
+        "GameTextures",
+        "HubCap",
+        "LODHysteresi",
+        "LODInfo",
+        "LODMat",
+        "Vehicle_BodHbD",
+        "Vehicles",
+        "Wheel08",
+        "Wheels",
+        "a_sWheelSocketNames",
+        "etTextureCategor",
+        "keletalMeshe",
+        "oHLOD"
+      ]
+    },
+    {
+      "package": "V_A_2DrVan_Wheels_12",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_Wheels_12.upk",
+      "family": "V_A_2DrVan",
+      "size": 145078,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_Wheels_12",
+      "name_hints": [
+        "Bumper_Front",
+        "GameTextures",
+        "HubCap",
+        "LODHysteresi",
+        "LODInfo",
+        "LODMat",
+        "Vehicle_BodHbD",
+        "Vehicles",
+        "Wheel08",
+        "Wheels",
+        "a_sWheelSocketNames",
+        "etTextureCategor",
+        "keletalMeshe",
+        "oHLOD"
+      ]
+    },
+    {
+      "package": "V_A_2DrVan_Wheels_13",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_Wheels_13.upk",
+      "family": "V_A_2DrVan",
+      "size": 144531,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_Wheels_13",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "Bumper_Front",
+        "GameTextures",
+        "HubCap",
+        "LODHysteresi",
+        "LODInfo",
+        "LODMat",
+        "Vehicle_BodLe",
+        "Vehicles",
+        "Wheel08",
+        "Wheels",
+        "etTextureCategor"
+      ]
+    },
+    {
+      "package": "V_A_2DrVan_Wheels_14",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_Wheels_14.upk",
+      "family": "V_A_2DrVan",
+      "size": 145564,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_Wheels_14",
+      "name_hints": [
+        "Bumper_Front",
+        "GameTextures",
+        "HubCap",
+        "LODHysteresi",
+        "LODInfo",
+        "LODMat",
+        "Vehicle_BodHbD",
+        "Vehicles",
+        "Wheel08",
+        "Wheels",
+        "a_sWheelSocketNames",
+        "etTextureCategor",
+        "keletalMeshe",
+        "oHLOD"
+      ]
+    },
+    {
+      "package": "V_A_2DrVan_Wheels_15",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_Wheels_15.upk",
+      "family": "V_A_2DrVan",
+      "size": 146773,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_Wheels_15",
+      "name_hints": [
+        "Bumper_Front",
+        "GameTextures",
+        "HubCap",
+        "LODHysteresi",
+        "LODInfo",
+        "LODMat",
+        "Vehicle_BodHbD",
+        "Vehicles",
+        "Wheel09",
+        "Wheels",
+        "a_sWheelSocketNames",
+        "etTextureCategor",
+        "keletalMeshe",
+        "oHLOD"
+      ]
+    },
+    {
+      "package": "V_A_2DrVan_Wheels_16",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_Wheels_16.upk",
+      "family": "V_A_2DrVan",
+      "size": 145248,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_Wheels_16",
+      "name_hints": [
+        "Bumper_Front",
+        "GameTextures",
+        "HubCap",
+        "LODHysteresi",
+        "LODInfo",
+        "LODMat",
+        "Vehicle_BodHbD",
+        "Vehicles",
+        "Wheel09",
+        "Wheels",
+        "a_sWheelSocketNames",
+        "etTextureCategor",
+        "keletalMeshe",
+        "oHLOD"
+      ]
+    },
+    {
+      "package": "V_A_2DrVan_Wheels_17",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_Wheels_17.upk",
+      "family": "V_A_2DrVan",
+      "size": 144805,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_Wheels_17",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "Bumper_Front",
+        "GameTextures",
+        "HubCap",
+        "LODHysteresi",
+        "LODInfo",
+        "LODMat",
+        "Vehicle_BodLe",
+        "Vehicles",
+        "Wheel09",
+        "Wheels",
+        "etTextureCategor"
+      ]
+    },
+    {
+      "package": "V_A_2DrVan_Wheels_18",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_Wheels_18.upk",
+      "family": "V_A_2DrVan",
+      "size": 146374,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_Wheels_18",
+      "name_hints": [
+        "Bumper_Front",
+        "GameTextures",
+        "HubCap",
+        "LODHysteresi",
+        "LODInfo",
+        "LODMat",
+        "Vehicle_BodHbD",
+        "Vehicles",
+        "Wheel09",
+        "Wheels",
+        "a_sWheelSocketNames",
+        "etTextureCategor",
+        "keletalMeshe",
+        "oHLOD"
+      ]
+    },
+    {
+      "package": "V_A_2DrVan_Wheels_19",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_Wheels_19.upk",
+      "family": "V_A_2DrVan",
+      "size": 508,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_Wheels_19",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_Wheels_2",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_Wheels_2.upk",
+      "family": "V_A_2DrVan",
+      "size": 128822,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_Wheels_2",
+      "name_hints": [
+        "Bumper_Front",
+        "GameTextures",
+        "HubCap",
+        "LODHysteresi",
+        "LODInfo",
+        "LODMat",
+        "VehicleL",
+        "Vehicle_BodHbD",
+        "Wheels",
+        "a_sWheelSocketNames",
+        "etTextureCategor",
+        "keletalMeshe",
+        "oHLOD"
+      ]
+    },
+    {
+      "package": "V_A_2DrVan_Wheels_3",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_Wheels_3.upk",
+      "family": "V_A_2DrVan",
+      "size": 129145,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_Wheels_3",
+      "name_hints": [
+        "Bumper_Front",
+        "GameTextures",
+        "HubCap",
+        "LODHysteresi",
+        "LODInfo",
+        "LODMat",
+        "VehicleL",
+        "Vehicle_BodHbD",
+        "Wheels",
+        "a_sWheelSocketNames",
+        "etTextureCategor",
+        "keletalMeshe",
+        "oHLOD"
+      ]
+    },
+    {
+      "package": "V_A_2DrVan_Wheels_4",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_Wheels_4.upk",
+      "family": "V_A_2DrVan",
+      "size": 122196,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_Wheels_4",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "Bumper_Front",
+        "GameTextures",
+        "HubCap",
+        "LODHysteresi",
+        "LODInfo",
+        "LODMat",
+        "Vehicle_BodLe",
+        "Vehicles",
+        "Wheels",
+        "etTextureCategor"
+      ]
+    },
+    {
+      "package": "V_A_2DrVan_Wheels_5",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_Wheels_5.upk",
+      "family": "V_A_2DrVan",
+      "size": 129547,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_Wheels_5",
+      "name_hints": [
+        "Bumper_Front",
+        "GameTextures",
+        "HubCap",
+        "LODHysteresi",
+        "LODInfo",
+        "LODMat",
+        "VehicleL",
+        "Vehicle_BodHbD",
+        "Wheels",
+        "a_sWheelSocketNames",
+        "etTextureCategor",
+        "keletalMeshe",
+        "oHLOD"
+      ]
+    },
+    {
+      "package": "V_A_2DrVan_Wheels_6",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_Wheels_6.upk",
+      "family": "V_A_2DrVan",
+      "size": 121587,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_Wheels_6",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "Bumper_Front",
+        "GameTextures",
+        "HubCap",
+        "LODHysteresi",
+        "LODInfo",
+        "LODMat",
+        "Vehicle_BodLe",
+        "Vehicles",
+        "Wheels",
+        "etTextureCategor"
+      ]
+    },
+    {
+      "package": "V_A_2DrVan_Wheels_7",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_Wheels_7.upk",
+      "family": "V_A_2DrVan",
+      "size": 147080,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_Wheels_7",
+      "name_hints": [
+        "Bumper_Front",
+        "GameTextures",
+        "HubCap",
+        "LODHysteresi",
+        "LODInfo",
+        "LODMat",
+        "Vehicle_BodHbD",
+        "Vehicles",
+        "Wheel07",
+        "Wheels",
+        "a_sWheelSocketNames",
+        "etTextureCategor",
+        "keletalMeshe",
+        "oHLOD"
+      ]
+    },
+    {
+      "package": "V_A_2DrVan_Wheels_8",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_Wheels_8.upk",
+      "family": "V_A_2DrVan",
+      "size": 145722,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_Wheels_8",
+      "name_hints": [
+        "Bumper_Front",
+        "GameTextures",
+        "HubCap",
+        "LODHysteresi",
+        "LODInfo",
+        "LODMat",
+        "Vehicle_BodHbD",
+        "Vehicles",
+        "Wheel07",
+        "Wheels",
+        "a_sWheelSocketNames",
+        "etTextureCategor",
+        "keletalMeshe",
+        "oHLOD"
+      ]
+    },
+    {
+      "package": "V_A_2DrVan_Wheels_9",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_Wheels_9.upk",
+      "family": "V_A_2DrVan",
+      "size": 145311,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_Wheels_9",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "Bumper_Front",
+        "GameTextures",
+        "HubCap",
+        "LODHysteresi",
+        "LODInfo",
+        "LODMat",
+        "Vehicle_BodLe",
+        "Vehicles",
+        "Wheel07",
+        "Wheels",
+        "etTextureCategor"
+      ]
+    },
+    {
+      "package": "V_A_2DrVan_WindowWipers_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_WindowWipers_1.upk",
+      "family": "V_A_2DrVan",
+      "size": 9430,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_WindowWipers_1",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_2DrVan_WingMirrors_1",
+      "rel_path": "APB_Vehicles\\V_A_2DrVan\\V_A_2DrVan_WingMirrors_1.upk",
+      "family": "V_A_2DrVan",
+      "size": 14955,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_2DrVan/V_A_2DrVan_WingMirrors_1",
+      "name_hints": []
+    },
+    {
+      "package": "v_a_classicmuscle_Badge_1",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_Badge_1.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 5259,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_Badge_1",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_ClassicMuscle_BrakeCalipers_1",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\V_A_ClassicMuscle_BrakeCalipers_1.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 14868,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/V_A_ClassicMuscle_BrakeCalipers_1",
+      "name_hints": []
+    },
+    {
+      "package": "v_a_classicmuscle_Bullbars_1",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_Bullbars_1.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 30900,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_Bullbars_1",
+      "name_hints": []
+    },
+    {
+      "package": "v_a_classicmuscle_BumperFront_1",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_BumperFront_1.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 59584,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_BumperFront_1",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "BumperFront",
+        "Bumper_Front",
+        "HubCap",
+        "LODHysteresiX1P",
+        "LODInfoD",
+        "LODMaj",
+        "Texture2",
+        "Vehicle_BodDb",
+        "m_iTotalLOD"
+      ]
+    },
+    {
+      "package": "v_a_classicmuscle_BumperFront_2",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_BumperFront_2.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 72298,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_BumperFront_2",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "BumperFront",
+        "Bumper_Front",
+        "HubCap",
+        "LODHysteresiX1P",
+        "LODInfoD",
+        "LODMaj",
+        "Texture2",
+        "Vehicle_BodDb",
+        "m_iTotalLOD"
+      ]
+    },
+    {
+      "package": "v_a_classicmuscle_BumperFront_3",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_BumperFront_3.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 86234,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_BumperFront_3",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "BumperFront",
+        "Bumper_Front",
+        "HubCap",
+        "LODHysteresiX1P",
+        "LODInfoD",
+        "LODMaj",
+        "Texture2",
+        "Vehicle_BodDb",
+        "m_iTotalLOD"
+      ]
+    },
+    {
+      "package": "v_a_classicmuscle_BumperFront_4",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_BumperFront_4.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 72918,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_BumperFront_4",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "BumperFront",
+        "Bumper_Front",
+        "HubCap",
+        "LODHysteresiX1P",
+        "LODInfoD",
+        "LODMaj",
+        "Texture2",
+        "Vehicle_BodDb",
+        "m_iTotalLOD"
+      ]
+    },
+    {
+      "package": "v_a_classicmuscle_BumperFront_5",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_BumperFront_5.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 63314,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_BumperFront_5",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "BumperFront",
+        "Bumper_Front",
+        "HubCap",
+        "LODHysteresiX1P",
+        "LODInfoD",
+        "LODMaj",
+        "Texture2",
+        "Vehicle_BodDb",
+        "m_iTotalLOD"
+      ]
+    },
+    {
+      "package": "v_a_classicmuscle_BumperFront_6",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_BumperFront_6.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 83205,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_BumperFront_6",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "Bumper_Front",
+        "HubCap",
+        "LODHysteresiD5",
+        "LODInfoD",
+        "LODMav",
+        "Texture2",
+        "Vehicle_BodDb",
+        "m_iTotalLOD"
+      ]
+    },
+    {
+      "package": "v_a_classicmuscle_BumperFront_7",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_BumperFront_7.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 83182,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_BumperFront_7",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "BumperFront",
+        "Bumper_Front",
+        "HubCap",
+        "LODHysteresiX1P",
+        "LODInfoD",
+        "LODMaj",
+        "Texture2",
+        "Vehicle_BodDb",
+        "m_iTotalLOD"
+      ]
+    },
+    {
+      "package": "v_a_classicmuscle_BumperFront_8",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_BumperFront_8.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 83185,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_BumperFront_8",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "BumperFront",
+        "Bumper_Front",
+        "HubCap",
+        "LODHysteresiX1P",
+        "LODInfoD",
+        "LODMaj",
+        "Texture2",
+        "Vehicle_BodDb",
+        "m_iTotalLOD"
+      ]
+    },
+    {
+      "package": "v_a_classicmuscle_BumperRear_1",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_BumperRear_1.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 48268,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_BumperRear_1",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "BumperRear",
+        "Bumper_Front",
+        "HubCap",
+        "LODHysteresiP1P",
+        "LODInfoD",
+        "LODMaj",
+        "Texture2",
+        "Vehicle_BodDb",
+        "m_iTotalLOD"
+      ]
+    },
+    {
+      "package": "v_a_classicmuscle_BumperRear_2",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_BumperRear_2.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 86240,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_BumperRear_2",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "BumperRear",
+        "Bumper_Front",
+        "HubCap",
+        "LODHysteresiP1P",
+        "LODInfoD",
+        "LODMaj",
+        "Texture2",
+        "Vehicle_BodDb",
+        "m_iTotalLOD"
+      ]
+    },
+    {
+      "package": "v_a_classicmuscle_BumperRear_3",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_BumperRear_3.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 80569,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_BumperRear_3",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "BumperRear",
+        "Bumper_Front",
+        "HubCap",
+        "LODHysteresiP1P",
+        "LODInfoD",
+        "LODMaj",
+        "Texture2",
+        "Vehicle_BodDb",
+        "m_iTotalLOD"
+      ]
+    },
+    {
+      "package": "v_a_classicmuscle_BumperRear_4",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_BumperRear_4.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 59175,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_BumperRear_4",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "BumperRear",
+        "Bumper_Front",
+        "HubCap",
+        "LODHysteresiP1P",
+        "LODInfoD",
+        "LODMaj",
+        "Texture2",
+        "Vehicle_BodDb",
+        "m_iTotalLOD"
+      ]
+    },
+    {
+      "package": "v_a_classicmuscle_BumperRear_5",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_BumperRear_5.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 69433,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_BumperRear_5",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "BumperRear",
+        "Bumper_Front",
+        "HubCap",
+        "LODHysteresiP1P",
+        "LODInfoD",
+        "LODMaj",
+        "Texture2",
+        "Vehicle_BodDb",
+        "m_iTotalLOD"
+      ]
+    },
+    {
+      "package": "v_a_classicmuscle_BumperRear_6",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_BumperRear_6.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 57279,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_BumperRear_6",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "BumperRear",
+        "Bumper_Front",
+        "HubCap",
+        "LODHysteresiP1P",
+        "LODInfoD",
+        "LODMaj",
+        "Texture2",
+        "Vehicle_BodDb",
+        "m_iTotalLOD"
+      ]
+    },
+    {
+      "package": "v_a_classicmuscle_Dashboard_1",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_Dashboard_1.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 512,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_Dashboard_1",
+      "name_hints": []
+    },
+    {
+      "package": "v_a_classicmuscle_DoorsInterior_1",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_DoorsInterior_1.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 12566,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_DoorsInterior_1",
+      "name_hints": []
+    },
+    {
+      "package": "v_a_classicmuscle_DoorsInterior_2",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_DoorsInterior_2.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 17066,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_DoorsInterior_2",
+      "name_hints": []
+    },
+    {
+      "package": "v_a_classicmuscle_DoorsInterior_3",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_DoorsInterior_3.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 22099,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_DoorsInterior_3",
+      "name_hints": []
+    },
+    {
+      "package": "v_a_classicmuscle_DoorsInterior_4",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_DoorsInterior_4.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 22098,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_DoorsInterior_4",
+      "name_hints": []
+    },
+    {
+      "package": "v_a_classicmuscle_Doors_1",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_Doors_1.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 27867,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_Doors_1",
+      "name_hints": []
+    },
+    {
+      "package": "v_a_classicmuscle_Doors_2",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_Doors_2.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 36273,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_Doors_2",
+      "name_hints": []
+    },
+    {
+      "package": "v_a_classicmuscle_Doors_3",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_Doors_3.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 45291,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_Doors_3",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "Bumper_Front",
+        "Doors",
+        "HubCap",
+        "LODHysteresiP1P",
+        "LODInfoD",
+        "LODMaj",
+        "Texture2",
+        "Vehicle_BodDb",
+        "m_iTotalLOD"
+      ]
+    },
+    {
+      "package": "v_a_classicmuscle_Exhausts_1",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_Exhausts_1.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 16657,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_Exhausts_1",
+      "name_hints": []
+    },
+    {
+      "package": "v_a_classicmuscle_Exhausts_2",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_Exhausts_2.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 16401,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_Exhausts_2",
+      "name_hints": []
+    },
+    {
+      "package": "v_a_classicmuscle_Exhausts_3",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_Exhausts_3.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 49638,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_Exhausts_3",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "Bumper_Front",
+        "HubCap",
+        "LODHysteresiH2P",
+        "LODInfoD",
+        "LODMav",
+        "Texture2",
+        "Vehicle_BodDb",
+        "m_iTotalLOD"
+      ]
+    },
+    {
+      "package": "v_a_classicmuscle_Exhausts_4",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_Exhausts_4.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 31683,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_Exhausts_4",
+      "name_hints": []
+    },
+    {
+      "package": "v_a_classicmuscle_Exhausts_5",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_Exhausts_5.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 23951,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_Exhausts_5",
+      "name_hints": []
+    },
+    {
+      "package": "v_a_classicmuscle_Exhausts_6",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_Exhausts_6.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 23578,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_Exhausts_6",
+      "name_hints": []
+    },
+    {
+      "package": "v_a_classicmuscle_HeadlightsGlass_1",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_HeadlightsGlass_1.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 5389,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_HeadlightsGlass_1",
+      "name_hints": []
+    },
+    {
+      "package": "v_a_classicmuscle_HeadlightsMain_1",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_HeadlightsMain_1.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 42822,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_HeadlightsMain_1",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "Bumper_Front",
+        "HubCap",
+        "LODHysteresiX1P",
+        "LODInfoD",
+        "LODMaj",
+        "Texture2",
+        "Vehicle_BodDb",
+        "m_iTotalLOD"
+      ]
+    },
+    {
+      "package": "v_a_classicmuscle_HeadlightsMain_2",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_HeadlightsMain_2.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 46571,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_HeadlightsMain_2",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "Bumper_Front",
+        "HubCap",
+        "LODHysteresiX1P",
+        "LODInfoD",
+        "LODMaj",
+        "Texture2",
+        "Vehicle_BodDb",
+        "m_iTotalLOD"
+      ]
+    },
+    {
+      "package": "v_a_classicmuscle_HeadlightsMain_3",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_HeadlightsMain_3.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 30520,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_HeadlightsMain_3",
+      "name_hints": []
+    },
+    {
+      "package": "v_a_classicmuscle_HeadlightsMain_4",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_HeadlightsMain_4.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 34422,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_HeadlightsMain_4",
+      "name_hints": []
+    },
+    {
+      "package": "v_a_classicmuscle_HeadlightsMain_5",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_HeadlightsMain_5.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 67569,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_HeadlightsMain_5",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "Bumper_Front",
+        "HubCap",
+        "LODHysteresiX1P",
+        "LODInfoD",
+        "LODMaj",
+        "Texture2",
+        "Vehicle_BodDb",
+        "m_iTotalLOD"
+      ]
+    },
+    {
+      "package": "v_a_classicmuscle_HeadlightsMain_6",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_HeadlightsMain_6.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 80633,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_HeadlightsMain_6",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "Bumper_Front",
+        "HubCap",
+        "LODHysteresiD5",
+        "LODInfoD",
+        "LODMav",
+        "Texture2",
+        "Vehicle_BodDb",
+        "m_iTotalLOD"
+      ]
+    },
+    {
+      "package": "v_a_classicmuscle_HeadlightsMain_7",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_HeadlightsMain_7.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 80631,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_HeadlightsMain_7",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "Bumper_Front",
+        "HubCap",
+        "LODHysteresiD5",
+        "LODInfoD",
+        "LODMav",
+        "Texture2",
+        "Vehicle_BodDb",
+        "m_iTotalLOD"
+      ]
+    },
+    {
+      "package": "v_a_classicmuscle_Hood_1",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_Hood_1.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 27509,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_Hood_1",
+      "name_hints": []
+    },
+    {
+      "package": "v_a_classicmuscle_Hood_2",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_Hood_2.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 45423,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_Hood_2",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "Bumper_Front",
+        "HubCap",
+        "LODHysteresiD",
+        "LODInfoD",
+        "LODMav",
+        "Texture2",
+        "Vehicle_BodDb",
+        "m_iTotalLOD"
+      ]
+    },
+    {
+      "package": "v_a_classicmuscle_Hood_3",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_Hood_3.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 49092,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_Hood_3",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "Bumper_Front",
+        "HubCap",
+        "LODHysteresiD",
+        "LODInfoD",
+        "LODMav",
+        "Texture2",
+        "Vehicle_BodDb",
+        "m_iTotalLOD"
+      ]
+    },
+    {
+      "package": "v_a_classicmuscle_Hood_4",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_Hood_4.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 73668,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_Hood_4",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "Bumper_Front",
+        "HubCap",
+        "LODHysteresiD",
+        "LODInfoD",
+        "LODMav",
+        "Texture2",
+        "Vehicle_BodDb",
+        "m_iTotalLOD"
+      ]
+    },
+    {
+      "package": "v_a_classicmuscle_Hood_5",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_Hood_5.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 45083,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_Hood_5",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "Bumper_Front",
+        "HubCap",
+        "LODHysteresiX1P",
+        "LODInfoD",
+        "LODMaj",
+        "Texture2",
+        "Vehicle_BodDb",
+        "m_iTotalLOD"
+      ]
+    },
+    {
+      "package": "v_a_classicmuscle_Hood_6",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_Hood_6.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 90188,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_Hood_6",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "Bumper_Front",
+        "HubCap",
+        "LODHysteresiD",
+        "LODInfoD",
+        "LODMav",
+        "Texture2",
+        "Vehicle_BodDb",
+        "m_iTotalLOD"
+      ]
+    },
+    {
+      "package": "V_A_ClassicMuscle_InteriorProps_1",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\V_A_ClassicMuscle_InteriorProps_1.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 13132,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/V_A_ClassicMuscle_InteriorProps_1",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_ClassicMuscle_PoliceLightsMain_1",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\V_A_ClassicMuscle_PoliceLightsMain_1.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 18739,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/V_A_ClassicMuscle_PoliceLightsMain_1",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_ClassicMuscle_PoliceLightsMain_2",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\V_A_ClassicMuscle_PoliceLightsMain_2.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 29456,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/V_A_ClassicMuscle_PoliceLightsMain_2",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_ClassicMuscle_PoliceLightsMain_3",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\V_A_ClassicMuscle_PoliceLightsMain_3.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 29146,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/V_A_ClassicMuscle_PoliceLightsMain_3",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_ClassicMuscle_PoliceLightsMain_4",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\V_A_ClassicMuscle_PoliceLightsMain_4.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 11299,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/V_A_ClassicMuscle_PoliceLightsMain_4",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_ClassicMuscle_PoliceLightsMain_5",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\V_A_ClassicMuscle_PoliceLightsMain_5.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 12825,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/V_A_ClassicMuscle_PoliceLightsMain_5",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_ClassicMuscle_PoliceLightsMain_6",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\V_A_ClassicMuscle_PoliceLightsMain_6.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 14556,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/V_A_ClassicMuscle_PoliceLightsMain_6",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_ClassicMuscle_PoliceLightsMain_7",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\V_A_ClassicMuscle_PoliceLightsMain_7.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 35697,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/V_A_ClassicMuscle_PoliceLightsMain_7",
+      "name_hints": []
+    },
+    {
+      "package": "v_a_classicmuscle_PoliceLightsMain_8",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_PoliceLightsMain_8.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 63627,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_PoliceLightsMain_8",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "Bumper_Front",
+        "HubCap",
+        "LODHysteresiL4P",
+        "LODInfoD",
+        "LODMaj",
+        "Texture2",
+        "Vehicle_BodDb",
+        "m_iTotalLOD"
+      ]
+    },
+    {
+      "package": "v_a_classicmuscle_PoliceLightsMain_9",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_PoliceLightsMain_9.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 39471,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_PoliceLightsMain_9",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_ClassicMuscle_PoliceLightsSecondary_1",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\V_A_ClassicMuscle_PoliceLightsSecondary_1.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 8326,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/V_A_ClassicMuscle_PoliceLightsSecondary_1",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_ClassicMuscle_PoliceLightsSecondary_2",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\V_A_ClassicMuscle_PoliceLightsSecondary_2.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 10947,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/V_A_ClassicMuscle_PoliceLightsSecondary_2",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_ClassicMuscle_PoliceLightsSecondary_3",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\V_A_ClassicMuscle_PoliceLightsSecondary_3.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 9814,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/V_A_ClassicMuscle_PoliceLightsSecondary_3",
+      "name_hints": []
+    },
+    {
+      "package": "V_A_ClassicMuscle_PoliceLightsSecondary_4",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\V_A_ClassicMuscle_PoliceLightsSecondary_4.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 9689,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/V_A_ClassicMuscle_PoliceLightsSecondary_4",
+      "name_hints": []
+    },
+    {
+      "package": "v_a_classicmuscle_RollCage_1",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_RollCage_1.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 16141,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_RollCage_1",
+      "name_hints": []
+    },
+    {
+      "package": "v_a_classicmuscle_RoofExterior_1",
+      "rel_path": "APB_Vehicles\\V_A_ClassicMuscle\\v_a_classicmuscle_RoofExterior_1.upk",
+      "family": "V_A_ClassicMuscle",
+      "size": 46000,
+      "ue5_import_hint": "/Game/Imported/Vehicles/V_A_ClassicMuscle/v_a_classicmuscle_RoofExterior_1",
+      "name_hints": [
+        "BaseSkelMeshe",
+        "Bumper_Front",
+        "HubCap",
+        "LODHysteresiH8",
+        "LODInfoD",
+        "LODMab",
+        "Texture2",
+        "Vehicle_BodDb",
+        "m_iTotalLOD"
+      ]
+    }
+  ],
+  "vehicles_total": 2649,
+  "characters": [
+    {
+      "package": "Marketing_IAO",
+      "rel_path": "Character\\Contact\\Marketing_IAO.upk",
+      "size": 6192659,
+      "ue5_import_hint": "/Game/Imported/Characters/Marketing_IAO",
+      "name_hints": [
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial",
+        "s0LOD"
+      ]
+    },
+    {
+      "package": "Marketing_IAO_01",
+      "rel_path": "Character\\Contact\\Marketing_IAO_01.upk",
+      "size": 5813589,
+      "ue5_import_hint": "/Game/Imported/Characters/Marketing_IAO_01",
+      "name_hints": [
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial",
+        "s0LOD"
+      ]
+    },
+    {
+      "package": "Contact_LaRocha",
+      "rel_path": "Character\\Contact\\Contact_LaRocha.upk",
+      "size": 5762239,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_LaRocha",
+      "name_hints": [
+        "LODGroup",
+        "LODHysteres",
+        "LODInfoD",
+        "RDFTexture3D",
+        "SkellH",
+        "TEXTUREGROUP_World",
+        "rdf_M_Contact_Enforcement_LaRocha_Base"
+      ]
+    },
+    {
+      "package": "Marketing_Nocturnal",
+      "rel_path": "Character\\Contact\\Marketing_Nocturnal.upk",
+      "size": 4959056,
+      "ue5_import_hint": "/Game/Imported/Characters/Marketing_Nocturnal",
+      "name_hints": [
+        "LODGroup",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_Sofia",
+      "rel_path": "Character\\Contact\\Contact_Sofia.upk",
+      "size": 4169579,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Sofia",
+      "name_hints": [
+        "LODHysteres",
+        "LODInfoD",
+        "Meshe",
+        "RDFTexture3D",
+        "Skelx",
+        "Weapon_Magnum_Revolver_LOD",
+        "rdf_F_Contact_Enforcement_Sofia_Bas"
+      ]
+    },
+    {
+      "package": "Contact_Bloodrose",
+      "rel_path": "Character\\Contact\\Contact_Bloodrose.upk",
+      "size": 4142451,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Bloodrose",
+      "name_hints": [
+        "LODHysteres",
+        "LODInfoD",
+        "RDFTexture3D",
+        "Skelx",
+        "rdf_F_Contact_Criminal_Bloodrose_Ba"
+      ]
+    },
+    {
+      "package": "Contact_Zombie",
+      "rel_path": "Character\\Contact\\Contact_Zombie.upk",
+      "size": 3522906,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Zombie",
+      "name_hints": [
+        "Contact_Zombi",
+        "LODHystere",
+        "LODInfo",
+        "RDFTexture3D",
+        "TEXCAT_Character",
+        "TEXTUREGROUP_World",
+        "dWithSkeletalMes",
+        "orMaterialInpu"
+      ]
+    },
+    {
+      "package": "Contact_Necrocite1",
+      "rel_path": "Character\\Contact\\Contact_Necrocite1.upk",
+      "size": 3114617,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Necrocite1",
+      "name_hints": [
+        "Contact_Necrocit",
+        "LODGroup",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_Undedox1",
+      "rel_path": "Character\\Contact\\Contact_Undedox1.upk",
+      "size": 3083950,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Undedox1",
+      "name_hints": [
+        "LODGroup",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "contact_undedox",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_Zombicine1",
+      "rel_path": "Character\\Contact\\Contact_Zombicine1.upk",
+      "size": 3038829,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Zombicine1",
+      "name_hints": [
+        "Contact_Zombicin",
+        "LODGroup",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_Bloodrose_Simeone_V2",
+      "rel_path": "Character\\Contact\\Contact_Bloodrose_Simeone_V2.upk",
+      "size": 2437439,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Bloodrose_Simeone_V2",
+      "name_hints": [
+        "Contact_Bloodrose_Simeone_V2X",
+        "LODGroup",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_GKing_Chiro",
+      "rel_path": "Character\\Contact\\Contact_GKing_Chiro.upk",
+      "size": 2378612,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_GKing_Chiro",
+      "name_hints": [
+        "LODGrou",
+        "LODHysteres",
+        "LODInf",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial",
+        "s0LOD"
+      ]
+    },
+    {
+      "package": "Contact_GKing_DoubleB",
+      "rel_path": "Character\\Contact\\Contact_GKing_DoubleB.upk",
+      "size": 2348781,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_GKing_DoubleB",
+      "name_hints": [
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "_Worn_LOD",
+        "contact_gking_double",
+        "odyMaterial",
+        "weapon_sawnoffs"
+      ]
+    },
+    {
+      "package": "Contact_Javez_Valentine",
+      "rel_path": "Character\\Contact\\Contact_Javez_Valentine.upk",
+      "size": 2338916,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Javez_Valentine",
+      "name_hints": [
+        "Contact_Javez_Valent",
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "ui_scene_GKing_player",
+      "rel_path": "Character\\Contact\\ui_scene_GKing_player.upk",
+      "size": 2299057,
+      "ue5_import_hint": "/Game/Imported/Characters/ui_scene_GKing_player",
+      "name_hints": [
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial",
+        "s0LOD"
+      ]
+    },
+    {
+      "package": "Contact_Violet_Valentine_03",
+      "rel_path": "Character\\Contact\\Contact_Violet_Valentine_03.upk",
+      "size": 2296173,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Violet_Valentine_03",
+      "name_hints": [
+        "Contact_Violet_Valentine_0",
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_Praetorian_EvaOrlandez",
+      "rel_path": "Character\\Contact\\Contact_Praetorian_EvaOrlandez.upk",
+      "size": 2295050,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Praetorian_EvaOrlandez",
+      "name_hints": [
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "contact_praetorian_evaorlandez",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_Bloodrose_BritneyBloodrose",
+      "rel_path": "Character\\Contact\\Contact_Bloodrose_BritneyBloodrose.upk",
+      "size": 2289695,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Bloodrose_BritneyBloodrose",
+      "name_hints": [
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "contact_bloodrose_britneyb",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_Violet_Valentine",
+      "rel_path": "Character\\Contact\\Contact_Violet_Valentine.upk",
+      "size": 2286428,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Violet_Valentine",
+      "name_hints": [
+        "Contact_Violet_Valenti",
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_Praetorian_EvaOrlandez_V2",
+      "rel_path": "Character\\Contact\\Contact_Praetorian_EvaOrlandez_V2.upk",
+      "size": 2286102,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Praetorian_EvaOrlandez_V2",
+      "name_hints": [
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "contact_praetorian_evaorlandez",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_PrentissTiger_SimonTran",
+      "rel_path": "Character\\Contact\\Contact_PrentissTiger_SimonTran.upk",
+      "size": 2277500,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_PrentissTiger_SimonTran",
+      "name_hints": [
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "contact_prentisstiger_simontranD",
+        "odyMaterial",
+        "s0LOD"
+      ]
+    },
+    {
+      "package": "Contact_Specialist_Wilde",
+      "rel_path": "Character\\Contact\\Contact_Specialist_Wilde.upk",
+      "size": 2274472,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Specialist_Wilde",
+      "name_hints": [
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "contact_specialist_wildeH",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_GKing_Birth_V4",
+      "rel_path": "Character\\Contact\\Contact_GKing_Birth_V4.upk",
+      "size": 2256409,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_GKing_Birth_V4",
+      "name_hints": [
+        "Contact_GKing_Birth_V4",
+        "LODGroup",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_PrentissTiger_Chiza",
+      "rel_path": "Character\\Contact\\Contact_PrentissTiger_Chiza.upk",
+      "size": 2250578,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_PrentissTiger_Chiza",
+      "name_hints": [
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "contact_prentisstiger_chiz",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_Bloodrose_Sennet_V2",
+      "rel_path": "Character\\Contact\\Contact_Bloodrose_Sennet_V2.upk",
+      "size": 2248740,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Bloodrose_Sennet_V2",
+      "name_hints": [
+        "Contact_Bloodrose_SennetH",
+        "LODGroup",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_Javez_Valentine_02",
+      "rel_path": "Character\\Contact\\Contact_Javez_Valentine_02.upk",
+      "size": 2247266,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Javez_Valentine_02",
+      "name_hints": [
+        "Contact_Javez_Valentine_02P",
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial",
+        "s0LOD"
+      ]
+    },
+    {
+      "package": "Contact_Anarchist02",
+      "rel_path": "Character\\Contact\\Contact_Anarchist02.upk",
+      "size": 2243851,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Anarchist02",
+      "name_hints": [
+        "LODGroup",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_GKing_Birth_V2",
+      "rel_path": "Character\\Contact\\Contact_GKing_Birth_V2.upk",
+      "size": 2232970,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_GKing_Birth_V2",
+      "name_hints": [
+        "LODGroup",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_GKings_Birth",
+      "rel_path": "Character\\Contact\\Contact_GKings_Birth.upk",
+      "size": 2223101,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_GKings_Birth",
+      "name_hints": [
+        "Contact_GKings_BirthX",
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial",
+        "s0LOD"
+      ]
+    },
+    {
+      "package": "Contact_Bloodrose_ByronBloodrose",
+      "rel_path": "Character\\Contact\\Contact_Bloodrose_ByronBloodrose.upk",
+      "size": 2209536,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Bloodrose_ByronBloodrose",
+      "name_hints": [
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "contact_bloodrose_byronb",
+        "odyMaterial",
+        "s0LOD"
+      ]
+    },
+    {
+      "package": "Contact_Misc_GKingEliteMale",
+      "rel_path": "Character\\Contact\\Contact_Misc_GKingEliteMale.upk",
+      "size": 2203041,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Misc_GKingEliteMale",
+      "name_hints": [
+        "Contact_Misc_GKingEliteMal",
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial",
+        "s0LOD"
+      ]
+    },
+    {
+      "package": "Contact_Ophelia_Valentine",
+      "rel_path": "Character\\Contact\\Contact_Ophelia_Valentine.upk",
+      "size": 2202087,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Ophelia_Valentine",
+      "name_hints": [
+        "Contact_Ophelia_Valent",
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "F_SugarPlumFairy",
+      "rel_path": "Character\\Contact\\F_SugarPlumFairy.upk",
+      "size": 2201108,
+      "ue5_import_hint": "/Game/Imported/Characters/F_SugarPlumFairy",
+      "name_hints": [
+        "LODGrou",
+        "LODHysteres",
+        "LODInf",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_Bloodrose_Suji",
+      "rel_path": "Character\\Contact\\Contact_Bloodrose_Suji.upk",
+      "size": 2192750,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Bloodrose_Suji",
+      "name_hints": [
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "contact_bloodrose_suji",
+        "odyMaterial",
+        "s0LOD"
+      ]
+    },
+    {
+      "package": "Contact_Special_Dahlia",
+      "rel_path": "Character\\Contact\\Contact_Special_Dahlia.upk",
+      "size": 2191469,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Special_Dahlia",
+      "name_hints": [
+        "Contact_Special_Dahlia",
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_Praetorian_MiguelEstebano_V2",
+      "rel_path": "Character\\Contact\\Contact_Praetorian_MiguelEstebano_V2.upk",
+      "size": 2185755,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Praetorian_MiguelEstebano_V2",
+      "name_hints": [
+        "LODGrou",
+        "LODHySWres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "contact_praetorian_miguelestebano",
+        "odyMaterial",
+        "s0LOD"
+      ]
+    },
+    {
+      "package": "Contact_Prentiss_Violet_V2",
+      "rel_path": "Character\\Contact\\Contact_Prentiss_Violet_V2.upk",
+      "size": 2182840,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Prentiss_Violet_V2",
+      "name_hints": [
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "contact_prentiss_violet_v2P",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_PrentissTiger_LynetteCasey",
+      "rel_path": "Character\\Contact\\Contact_PrentissTiger_LynetteCasey.upk",
+      "size": 2179317,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_PrentissTiger_LynetteCasey",
+      "name_hints": [
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "contact_prentisstiger_lynettecaseyP",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_GKing_Gumball_V4",
+      "rel_path": "Character\\Contact\\Contact_GKing_Gumball_V4.upk",
+      "size": 2178207,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_GKing_Gumball_V4",
+      "name_hints": [
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "contact_gking_gumball_v4H",
+        "odyMaterial",
+        "s0LOD"
+      ]
+    },
+    {
+      "package": "Contact_Undedox2",
+      "rel_path": "Character\\Contact\\Contact_Undedox2.upk",
+      "size": 2162962,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Undedox2",
+      "name_hints": [
+        "Contact_Undedox",
+        "LODGroup",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_Zombicine2",
+      "rel_path": "Character\\Contact\\Contact_Zombicine2.upk",
+      "size": 2159179,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Zombicine2",
+      "name_hints": [
+        "Contact_Zombicine",
+        "LODGroup",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_Bloodrose_Lilith_V2",
+      "rel_path": "Character\\Contact\\Contact_Bloodrose_Lilith_V2.upk",
+      "size": 2159073,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Bloodrose_Lilith_V2",
+      "name_hints": [
+        "Contact_Bloodrost",
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial",
+        "s0LOD"
+      ]
+    },
+    {
+      "package": "Contact_Necrocite2",
+      "rel_path": "Character\\Contact\\Contact_Necrocite2.upk",
+      "size": 2156685,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Necrocite2",
+      "name_hints": [
+        "Contact_Necrocite",
+        "LODGroup",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_GKing_TerriQuan",
+      "rel_path": "Character\\Contact\\Contact_GKing_TerriQuan.upk",
+      "size": 2155064,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_GKing_TerriQuan",
+      "name_hints": [
+        "LODGrou",
+        "LODHysteres",
+        "LODInf",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "contact_gking_terriqua",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_Praetorian_TyDurrant",
+      "rel_path": "Character\\Contact\\Contact_Praetorian_TyDurrant.upk",
+      "size": 2154940,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Praetorian_TyDurrant",
+      "name_hints": [
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "contact_praetorian_tydurrantX",
+        "odyMaterial",
+        "s0LOD"
+      ]
+    },
+    {
+      "package": "Contact_Praetorian_AlettaCadagan",
+      "rel_path": "Character\\Contact\\Contact_Praetorian_AlettaCadagan.upk",
+      "size": 2150873,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Praetorian_AlettaCadagan",
+      "name_hints": [
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "contact_praetorian_alettacadagaD",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_Brood_Gruff",
+      "rel_path": "Character\\Contact\\Contact_Brood_Gruff.upk",
+      "size": 2138664,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Brood_Gruff",
+      "name_hints": [
+        "LODGroup",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "contact_brood_gruf",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_Bloodrose_PaganBloodrose",
+      "rel_path": "Character\\Contact\\Contact_Bloodrose_PaganBloodrose.upk",
+      "size": 2134177,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Bloodrose_PaganBloodrose",
+      "name_hints": [
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "contact_bloodrose_paganb",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_Celebrity_MikaWong",
+      "rel_path": "Character\\Contact\\Contact_Celebrity_MikaWong.upk",
+      "size": 2126111,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Celebrity_MikaWong",
+      "name_hints": [
+        "Contact_Celebrity_MikaWo",
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Rioter_Antagonist",
+      "rel_path": "Character\\Contact\\Rioter_Antagonist.upk",
+      "size": 2123990,
+      "ue5_import_hint": "/Game/Imported/Characters/Rioter_Antagonist",
+      "name_hints": [
+        "LODGroup",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_Marketting_AuntSamantha",
+      "rel_path": "Character\\Contact\\Contact_Marketting_AuntSamantha.upk",
+      "size": 2121421,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Marketting_AuntSamantha",
+      "name_hints": [
+        "Contact_Mark",
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_Praetorian_SaulLinklater",
+      "rel_path": "Character\\Contact\\Contact_Praetorian_SaulLinklater.upk",
+      "size": 2115636,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Praetorian_SaulLinklater",
+      "name_hints": [
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "contact_praetorian_saullinkl",
+        "hUBmE",
+        "odyMaterial",
+        "s0LOD"
+      ]
+    },
+    {
+      "package": "Contact_PrentissTiger_ChungHee",
+      "rel_path": "Character\\Contact\\Contact_PrentissTiger_ChungHee.upk",
+      "size": 2115389,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_PrentissTiger_ChungHee",
+      "name_hints": [
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "contact_prentisstiger_chunghee",
+        "odyMaterial",
+        "s0LOD"
+      ]
+    },
+    {
+      "package": "Contact_Praetorian_WilsonLeBoyce",
+      "rel_path": "Character\\Contact\\Contact_Praetorian_WilsonLeBoyce.upk",
+      "size": 2113474,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Praetorian_WilsonLeBoyce",
+      "name_hints": [
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "contact_praetorian_wilsonleboyc",
+        "odyMaterial",
+        "s0LOD"
+      ]
+    },
+    {
+      "package": "Dev_Ghoulface",
+      "rel_path": "Character\\Contact\\Dev_Ghoulface.upk",
+      "size": 2112877,
+      "ue5_import_hint": "/Game/Imported/Characters/Dev_Ghoulface",
+      "name_hints": [
+        "LODGro",
+        "LODHysteres",
+        "LODInfo",
+        "TEXTUREGROUP_LCPedestria",
+        "_AnimSet",
+        "_Contact_Specific_Standing",
+        "alMeshActor",
+        "anim_p",
+        "bMirrorSkeleton",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_DevilDog_Valentine",
+      "rel_path": "Character\\Contact\\Contact_DevilDog_Valentine.upk",
+      "size": 2110114,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_DevilDog_Valentine",
+      "name_hints": [
+        "Contact_DevilDog_Valenti",
+        "LODGroup",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_PrentissTiger_AkikoX",
+      "rel_path": "Character\\Contact\\Contact_PrentissTiger_AkikoX.upk",
+      "size": 2108146,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_PrentissTiger_AkikoX",
+      "name_hints": [
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "_Worn_LOD",
+        "contact_prentisstiger_akikoxX",
+        "odyMaterial",
+        "weapon_k"
+      ]
+    },
+    {
+      "package": "Contact_Specialist_Ophelia_Combat_V2",
+      "rel_path": "Character\\Contact\\Contact_Specialist_Ophelia_Combat_V2.upk",
+      "size": 2106970,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Specialist_Ophelia_Combat_V2",
+      "name_hints": [
+        "Contact_Specialist_Ophelia_Combat_V2",
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_GKing_BaezBenjamin",
+      "rel_path": "Character\\Contact\\Contact_GKing_BaezBenjamin.upk",
+      "size": 2106305,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_GKing_BaezBenjamin",
+      "name_hints": [
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestrian",
+        "contact_gking_baezbenjaminP",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_Praetorian_HeaChoi",
+      "rel_path": "Character\\Contact\\Contact_Praetorian_HeaChoi.upk",
+      "size": 2104416,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Praetorian_HeaChoi",
+      "name_hints": [
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "contact_praetorian_heachoiP",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_Praetorian_Grissom",
+      "rel_path": "Character\\Contact\\Contact_Praetorian_Grissom.upk",
+      "size": 2090533,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Praetorian_Grissom",
+      "name_hints": [
+        "LODGroup",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "contact_praetorian_grissomP",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_DevilDog_Valentine_06",
+      "rel_path": "Character\\Contact\\Contact_DevilDog_Valentine_06.upk",
+      "size": 2081593,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_DevilDog_Valentine_06",
+      "name_hints": [
+        "Contact_DevilDog_Valentine_06",
+        "LODGroup",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_Misc_GKingEliteFemale",
+      "rel_path": "Character\\Contact\\Contact_Misc_GKingEliteFemale.upk",
+      "size": 2074955,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Misc_GKingEliteFemale",
+      "name_hints": [
+        "Contact_Misc_GKingEliteFemal",
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_Specialist_Speedball",
+      "rel_path": "Character\\Contact\\Contact_Specialist_Speedball.upk",
+      "size": 2071254,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Specialist_Speedball",
+      "name_hints": [
+        "Contact_Specialisth",
+        "LODGroup",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Rioter_Male_MD04_LineUp",
+      "rel_path": "Character\\Contact\\Rioter_Male_MD04_LineUp.upk",
+      "size": 2070737,
+      "ue5_import_hint": "/Game/Imported/Characters/Rioter_Male_MD04_LineUp",
+      "name_hints": [
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial",
+        "s0LOD"
+      ]
+    },
+    {
+      "package": "Contact_PrentissTiger_StuPhoenix",
+      "rel_path": "Character\\Contact\\Contact_PrentissTiger_StuPhoenix.upk",
+      "size": 2066604,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_PrentissTiger_StuPhoenix",
+      "name_hints": [
+        "Contact_PrentissTiger_StuPhoenix",
+        "LODGroup",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_Specialist_AnnePartridge",
+      "rel_path": "Character\\Contact\\Contact_Specialist_AnnePartridge.upk",
+      "size": 2064108,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Specialist_AnnePartridge",
+      "name_hints": [
+        "Contact_Specialist_AnnePartridg",
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_PrentissTiger_DevilDog",
+      "rel_path": "Character\\Contact\\Contact_PrentissTiger_DevilDog.upk",
+      "size": 2060659,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_PrentissTiger_DevilDog",
+      "name_hints": [
+        "LODGroup",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "contact_prentisstiger_devildog",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_Bloodrose_Tiptoe_V2",
+      "rel_path": "Character\\Contact\\Contact_Bloodrose_Tiptoe_V2.upk",
+      "size": 2056002,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Bloodrose_Tiptoe_V2",
+      "name_hints": [
+        "LODGroup",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "contact_bloodrose_tiptoe_v",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_Special_SpyGirl",
+      "rel_path": "Character\\Contact\\Contact_Special_SpyGirl.upk",
+      "size": 2055831,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Special_SpyGirl",
+      "name_hints": [
+        "Contact_Special_SpyGir",
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_Anarchist04",
+      "rel_path": "Character\\Contact\\Contact_Anarchist04.upk",
+      "size": 2054756,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Anarchist04",
+      "name_hints": [
+        "LODGroup",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_Praetorian_Sabbat",
+      "rel_path": "Character\\Contact\\Contact_Praetorian_Sabbat.upk",
+      "size": 2052791,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Praetorian_Sabbat",
+      "name_hints": [
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "contact_praetorian_sabba",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "LC_F_Clubber_Casual_AsianDark_04",
+      "rel_path": "Character\\LC\\Baked\\LC_F_Clubber_Casual_AsianDark_04.upk",
+      "size": 2051111,
+      "ue5_import_hint": "/Game/Imported/Characters/LC_F_Clubber_Casual_AsianDark_04",
+      "name_hints": [
+        "Clothing_Ma",
+        "LODGrou",
+        "LODHysteres",
+        "LODInfoX",
+        "SkeletalMe",
+        "TEXTUREGROUP4",
+        "lc_characters_comm"
+      ]
+    },
+    {
+      "package": "Contact_GKing_ArlonBenjamin_V2",
+      "rel_path": "Character\\Contact\\Contact_GKing_ArlonBenjamin_V2.upk",
+      "size": 2050671,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_GKing_ArlonBenjamin_V2",
+      "name_hints": [
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "contact_gking_arlonbenjamiP",
+        "odyMaterial",
+        "s0LOD"
+      ]
+    },
+    {
+      "package": "Contact_Brood_Whut",
+      "rel_path": "Character\\Contact\\Contact_Brood_Whut.upk",
+      "size": 2049285,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Brood_Whut",
+      "name_hints": [
+        "LODGroup",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "contact_brood_whu",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_Chaos_Shadowstrike_Male",
+      "rel_path": "Character\\Contact\\Contact_Chaos_Shadowstrike_Male.upk",
+      "size": 2046807,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Chaos_Shadowstrike_Male",
+      "name_hints": [
+        "Contact_Chaos_",
+        "LODGroup",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_ToxinAgent",
+      "rel_path": "Character\\Contact\\Contact_ToxinAgent.upk",
+      "size": 2041068,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_ToxinAgent",
+      "name_hints": [
+        "Contact_ToxinAgen",
+        "LODGroup",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_GKing_Javez",
+      "rel_path": "Character\\Contact\\Contact_GKing_Javez.upk",
+      "size": 2040702,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_GKing_Javez",
+      "name_hints": [
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "contact_gking_javez",
+        "odyMaterial",
+        "s0LOD"
+      ]
+    },
+    {
+      "package": "Contact_Marketting_UncleSam",
+      "rel_path": "Character\\Contact\\Contact_Marketting_UncleSam.upk",
+      "size": 2038160,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Marketting_UncleSam",
+      "name_hints": [
+        "Contact_Mark",
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial",
+        "s0LOD"
+      ]
+    },
+    {
+      "package": "ui_Female_cop1",
+      "rel_path": "Character\\Contact\\ui_Female_cop1.upk",
+      "size": 2034423,
+      "ue5_import_hint": "/Game/Imported/Characters/ui_Female_cop1",
+      "name_hints": [
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_GKing_GraysonFell",
+      "rel_path": "Character\\Contact\\Contact_GKing_GraysonFell.upk",
+      "size": 2024897,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_GKing_GraysonFell",
+      "name_hints": [
+        "Contact_GKing_GraysonFel",
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial",
+        "s0LOD"
+      ]
+    },
+    {
+      "package": "ui_scene_Praetorian_player",
+      "rel_path": "Character\\Contact\\ui_scene_Praetorian_player.upk",
+      "size": 2019002,
+      "ue5_import_hint": "/Game/Imported/Characters/ui_scene_Praetorian_player",
+      "name_hints": [
+        "LODGroup",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_AnnePartridge",
+      "rel_path": "Character\\Contact\\Contact_AnnePartridge.upk",
+      "size": 2016533,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_AnnePartridge",
+      "name_hints": [
+        "Contact_AnnePartridg",
+        "LODGroup",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "LC_F_Uniformed_Smart_HispanicDark_06",
+      "rel_path": "Character\\LC\\Baked\\LC_F_Uniformed_Smart_HispanicDark_06.upk",
+      "size": 2011541,
+      "ue5_import_hint": "/Game/Imported/Characters/LC_F_Uniformed_Smart_HispanicDark_06",
+      "name_hints": [
+        "Clothing_Ma",
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP4",
+        "lc_characters_comm"
+      ]
+    },
+    {
+      "package": "Contact_PrentissTiger_MirriKent",
+      "rel_path": "Character\\Contact\\Contact_PrentissTiger_MirriKent.upk",
+      "size": 2005527,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_PrentissTiger_MirriKent",
+      "name_hints": [
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "contact_prentisstiger_mirrikentD",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Dev_Androvald",
+      "rel_path": "Character\\Contact\\Dev_Androvald.upk",
+      "size": 1994068,
+      "ue5_import_hint": "/Game/Imported/Characters/Dev_Androvald",
+      "name_hints": [
+        "LODGro",
+        "LODHysteres",
+        "LODInfo",
+        "TEXTUREGROUP_LCPedestria",
+        "_AnimSet",
+        "_Contact_Generic",
+        "alMeshActor",
+        "anim_p",
+        "bMirrorSkeleton",
+        "g4LOD",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "LC_M_Seedy_Grifter_AsianDyed_06",
+      "rel_path": "Character\\LC\\Baked\\LC_M_Seedy_Grifter_AsianDyed_06.upk",
+      "size": 1993613,
+      "ue5_import_hint": "/Game/Imported/Characters/LC_M_Seedy_Grifter_AsianDyed_06",
+      "name_hints": [
+        "Clothing_Ma",
+        "GolemSkeletalMe",
+        "LODGroup",
+        "LODHysteres",
+        "LODInfo",
+        "LODMaterialMa",
+        "TEXTUREGROUP4",
+        "lc_characters_commpUP"
+      ]
+    },
+    {
+      "package": "Contact_Bloodrose_SeungBloodrose",
+      "rel_path": "Character\\Contact\\Contact_Bloodrose_SeungBloodrose.upk",
+      "size": 1987457,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Bloodrose_SeungBloodrose",
+      "name_hints": [
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "contact_bloodrose_seungb",
+        "odyMaterial",
+        "s0LOD"
+      ]
+    },
+    {
+      "package": "Contact_PrentissTiger_DarrylKent",
+      "rel_path": "Character\\Contact\\Contact_PrentissTiger_DarrylKent.upk",
+      "size": 1987351,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_PrentissTiger_DarrylKent",
+      "name_hints": [
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "contact_prentisstiger_darrylken",
+        "odyMaterial",
+        "s0LOD"
+      ]
+    },
+    {
+      "package": "LC_F_LowerClass_Welfare_CaucasianDark_04",
+      "rel_path": "Character\\LC\\Baked\\LC_F_LowerClass_Welfare_CaucasianDark_04.upk",
+      "size": 1983517,
+      "ue5_import_hint": "/Game/Imported/Characters/LC_F_LowerClass_Welfare_CaucasianDark_04",
+      "name_hints": [
+        "Clothing_Ma",
+        "LODGrou",
+        "LODHysteres",
+        "LODInfoX",
+        "SkeletalMe",
+        "TEXTUREGROUP4",
+        "lc_characters_comm"
+      ]
+    },
+    {
+      "package": "Contact_Praetorian_Templeton_V4",
+      "rel_path": "Character\\Contact\\Contact_Praetorian_Templeton_V4.upk",
+      "size": 1979443,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Praetorian_Templeton_V4",
+      "name_hints": [
+        "Contact_Praetorian_Templeton_V4D",
+        "LODGroup",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_Bloodrose_StregaBloodrose",
+      "rel_path": "Character\\Contact\\Contact_Bloodrose_StregaBloodrose.upk",
+      "size": 1977862,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Bloodrose_StregaBloodrose",
+      "name_hints": [
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "contact_bloodrose_strega",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "LC_F_Urban1_HipHop_HispanicDyed_06",
+      "rel_path": "Character\\LC\\Baked\\LC_F_Urban1_HipHop_HispanicDyed_06.upk",
+      "size": 1977855,
+      "ue5_import_hint": "/Game/Imported/Characters/LC_F_Urban1_HipHop_HispanicDyed_06",
+      "name_hints": [
+        "Clothing_Ma",
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP4",
+        "lc_characters_commd"
+      ]
+    },
+    {
+      "package": "LC_F_Clubber_Fashion_AsianDyed_02",
+      "rel_path": "Character\\LC\\Baked\\LC_F_Clubber_Fashion_AsianDyed_02.upk",
+      "size": 1976329,
+      "ue5_import_hint": "/Game/Imported/Characters/LC_F_Clubber_Fashion_AsianDyed_02",
+      "name_hints": [
+        "Clothing_Ma",
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP4",
+        "lc_characters_comml"
+      ]
+    },
+    {
+      "package": "Contact_Misc_CSAHunter1",
+      "rel_path": "Character\\Contact\\Contact_Misc_CSAHunter1.upk",
+      "size": 1970292,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Misc_CSAHunter1",
+      "name_hints": [
+        "Contact_Misc_CSAHunter",
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial",
+        "s0LOD"
+      ]
+    },
+    {
+      "package": "Contact_GKing_Shift_V2",
+      "rel_path": "Character\\Contact\\Contact_GKing_Shift_V2.upk",
+      "size": 1969011,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_GKing_Shift_V2",
+      "name_hints": [
+        "Contact_GKing_Shift_V2",
+        "LODGroup",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_Praetorian_KasparDanko_V2",
+      "rel_path": "Character\\Contact\\Contact_Praetorian_KasparDanko_V2.upk",
+      "size": 1964975,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_Praetorian_KasparDanko_V2",
+      "name_hints": [
+        "LODGroup",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "contact_praetorian_kaspardanko",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "LC_M_Urban1_Rocker_CaucasianLight_03",
+      "rel_path": "Character\\LC\\Baked\\LC_M_Urban1_Rocker_CaucasianLight_03.upk",
+      "size": 1964786,
+      "ue5_import_hint": "/Game/Imported/Characters/LC_M_Urban1_Rocker_CaucasianLight_03",
+      "name_hints": [
+        "Clothing_Ma",
+        "LODGrou",
+        "LODHysteres",
+        "LODInfoh",
+        "SkeletalMe",
+        "TEXTUREGROUP4",
+        "lc_characters_commhkH"
+      ]
+    },
+    {
+      "package": "Contact_GKing_HarmonBenjamin",
+      "rel_path": "Character\\Contact\\Contact_GKing_HarmonBenjamin.upk",
+      "size": 1964130,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_GKing_HarmonBenjamin",
+      "name_hints": [
+        "LODGroup",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestriaP",
+        "contact_gking_harmonbenjaminX",
+        "odyMaterial"
+      ]
+    },
+    {
+      "package": "Contact_PrentissTiger_ByeongLee",
+      "rel_path": "Character\\Contact\\Contact_PrentissTiger_ByeongLee.upk",
+      "size": 1963774,
+      "ue5_import_hint": "/Game/Imported/Characters/Contact_PrentissTiger_ByeongLee",
+      "name_hints": [
+        "LODGrou",
+        "LODHysteres",
+        "LODInfo",
+        "SkeletalMe",
+        "TEXTUREGROUP_LCPedestria",
+        "contact_prentisstiger_byeongleeD",
+        "odyMaterial",
+        "s0LOD"
+      ]
+    }
+  ],
+  "characters_total": 356,
+  "catalog_vehicles": [
+    {
+      "id": "Vehicle_Car_A_UtilityTaxi",
+      "name": "Dolton Broadwing",
+      "category": "Vehicle",
+      "criminal": true,
+      "enforcer": true,
+      "max_speed": 21.2,
+      "accel": 14.0,
+      "health": 800.0,
+      "source": "https://apbdb.com/"
+    },
+    {
+      "id": "Vehicle_Car_A_UtilityTaxi_slot_1",
+      "name": "Dolton Broadwing D 110",
+      "category": "Vehicle",
+      "criminal": true,
+      "enforcer": true,
+      "max_speed": 21.2,
+      "accel": 14.0,
+      "health": 800.0,
+      "source": "https://apbdb.com/"
+    },
+    {
+      "id": "Vehicle_Car_A_UtilityTaxi_slot_2",
+      "name": "Dolton Broadwing D 210",
+      "category": "Vehicle",
+      "criminal": true,
+      "enforcer": true,
+      "max_speed": 21.2,
+      "accel": 14.0,
+      "health": 800.0,
+      "source": "https://apbdb.com/"
+    },
+    {
+      "id": "Vehicle_Car_A_UtilityTaxi_slot_3",
+      "name": "Dolton Broadwing D 310",
+      "category": "Vehicle",
+      "criminal": true,
+      "enforcer": true,
+      "max_speed": 21.2,
+      "accel": 14.0,
+      "health": 800.0,
+      "source": "https://apbdb.com/"
+    },
+    {
+      "id": "Vehicle_Car_A_UtilityTaxi_slot_4",
+      "name": "Dolton Broadwing D 410",
+      "category": "Vehicle",
+      "criminal": true,
+      "enforcer": true,
+      "max_speed": 21.2,
+      "accel": 14.0,
+      "health": 800.0,
+      "source": "https://apbdb.com/"
+    },
+    {
+      "id": "Vehicle_Car_A_UtilityLowRider",
+      "name": "Dolton Fresno",
+      "category": "Vehicle",
+      "criminal": true,
+      "enforcer": true,
+      "max_speed": 21.4,
+      "accel": 14.0,
+      "health": 800.0,
+      "source": "https://apbdb.com/"
+    },
+    {
+      "id": "Vehicle_Car_A_UtilityLowRider_slot_1",
+      "name": "Dolton Fresno D 100",
+      "category": "Vehicle",
+      "criminal": true,
+      "enforcer": true,
+      "max_speed": 21.4,
+      "accel": 14.0,
+      "health": 800.0,
+      "source": "https://apbdb.com/"
+    },
+    {
+      "id": "Vehicle_Car_A_UtilityLowRider_slot_2",
+      "name": "Dolton Fresno D 200",
+      "category": "Vehicle",
+      "criminal": true,
+      "enforcer": true,
+      "max_speed": 21.4,
+      "accel": 14.0,
+      "health": 800.0,
+      "source": "https://apbdb.com/"
+    }
+  ]
+}

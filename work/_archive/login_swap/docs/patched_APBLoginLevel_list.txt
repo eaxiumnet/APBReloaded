@@ -1,0 +1,6 @@
+Found 3 game files (0 skipped) in 1 folders at path "D:/APBReloaded/work/login_swap/decompressed/2011/unpacked"
+Scanned game directory in 0.0 sec, 10 allocs, 0.00 MBytes serialized in 0 calls.
+******** APBLoginLevel_patched ********
+*** ERROR: Unable to read 1 bytes at pos=0x8212
+FFileReader::Serialize: File=APBLoginLevel_patched.apb <- FArchive::ByteOrderSerialize <- FPackageFileSummary::Serialize3 <- FPackageFileSummary<<: Ver=564/33 <- UnPackage::UnPackage: APBLoginLevel_patched.apb, ver=564/33, game=apb <- UnPackage::LoadPackage(info): APBLoginLevel_patched.apb <- Main: umodel_build=1
+
