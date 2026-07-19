@@ -1,6 +1,6 @@
 # Import Status
 
-Generated: 2026-07-19 21:47 UTC by `tools/scripts/build_import_status.py` (read-only).
+Generated: 2026-07-19 22:13 UTC by `tools/scripts/build_import_status.py` (read-only).
 
 ## Ledger entries (tools/import_ledger.json)
 
@@ -11,15 +11,15 @@ Generated: 2026-07-19 21:47 UTC by `tools/scripts/build_import_status.py` (read-
 | `group:Characters/Wardrobe` | retail | **imported** | `/Game/Imported/Characters/Wardrobe` |  |
 | `group:Vehicles` | retail | **imported** | `/Game/Imported/Vehicles` |  |
 | `group:Audio/LoginTheme` | retail | **imported** | `/Game/Audio` |  |
-| `group:2011/MenuArt` | 2011 | **extracted** | `/Game/Imported/UI/Menu2011` | umodel 547 spike: WORKS (work/umodel_547_spike.md). 77 pkgs, 2085 PNG at Content/Extracted/2011/MenuArt (APBMenus_Art*, Font, FrontEnd, Skins) via tools/scripts/export_2011_menu_art.py |
-| `group:2011/UISfx` | 2011 | **extracted** | `/Game/Audio/UI` | 72 UISounds WAV (Basic_Media+Main_Media) at Content/Extracted/2011/UISfx via tools/scripts/extract_2011_ui_sfx.py (vgmstream decode) |
+| `group:2011/MenuArt` | 2011 | **imported** | `/Game/Imported/UI/Menu2011` | umodel 547 spike: WORKS (work/umodel_547_spike.md). 77 pkgs, 2085 PNG extracted at Content/Extracted/2011/MenuArt. M4a: 123 spec-referenced textures imported (Login 14, Chrome 52, CharSelect 20, DistrictSelect 12, Loading 19, Reference 6) via tools/scripts/import_menu2011_assets.py — chrome sourced from the fuller LiveCurrentScene APBMenus_Art dump (222 PNGs; MenuArt tree has only 8 for that package). Spec: work/menu2011_spec.md |
+| `group:2011/UISfx` | 2011 | **imported** | `/Game/Audio/UI` | 72 UISounds WAV (Basic_Media+Main_Media) extracted at Content/Extracted/2011/UISfx. M4a: 12 menu-interaction WAVs imported to /Game/Audio/UI (hover/click/back/error/popup/scene-open/list-select/char-confirm/slider/loading) — mapping table in work/menu2011_spec.md §7 |
 | `group:2011/Movies` | 2011 | **manual** | `/Game/Movies` | SplashScreen.bik + IntroTitles.bik preserved at Content/Extracted/2011/Movies (Bink 1). ffmpeg unavailable; UE5.8 BinkMedia is Bink2/.bk2-only. Re-encode to .bk2 (Bink2ForUnreal.exe) or mp4 pending M4 — see work/umodel_547_spike.md |
 | `data:retail/palettes` | retail | **extracted** | `Content/Data/palettes.json` | 7 palettes, 1134 colors from retail Colours/*.ini via tools/convert/parse_colours.py |
 | `data:ui_strings` | 2011+retail | **extracted** | `Content/Data/ui_strings_2011.json + ui_strings_retail.json` | 7 frontend sections each (504 keys 2011 / 588 keys retail) via tools/convert/parse_int_tables.py |
 | `group:Districts/Financial` | retail | **imported** | `/Game/Imported/Districts/Financial` | partial — 1 of ~270 block manifests (M9) |
 | `group:Districts/Waterfront` | retail | **imported** | `/Game/Imported/Districts/Waterfront` | partial — 1 of ~268 block manifests (M10) |
 
-## Imported uassets on disk (4376 total)
+## Imported uassets on disk (4499 total)
 
 | category | .uasset count |
 |---|---|
@@ -30,6 +30,7 @@ Generated: 2026-07-19 21:47 UTC by `tools/scripts/build_import_status.py` (read-
 | Districts/Financial | 2558 |
 | Districts/Social | 256 |
 | Districts/Waterfront | 511 |
+| UI | 123 |
 | Vehicles | 60 |
 
 ## District placement manifest coverage
