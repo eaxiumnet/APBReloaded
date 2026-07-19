@@ -13,21 +13,26 @@ namespace apb_layout
 {
 static constexpr float kDesignW = 1920.f;
 static constexpr float kDesignH = 1080.f;
-static constexpr float kLogoAspect = 128.f / 512.f; // Login_APB_Logo.png
+static constexpr float kLogoAspect = 128.f / 256.f; // LoadingScreen_APB (2011 RTW logo, 256×128)
 
 enum class ScaleMode : int { Fit = 0, Fill = 1, Stretch = 2 };
 
-/** Design-space dialog size (before viewport scale). Login must fit without scroll. */
+/** Design-space dialog size (before viewport scale). Login must fit without scroll.
+ *  Geometry per work\menu2011_spec.md §3–5 (measured from 2011 UIScene previews). */
 inline void DesignPanelSize(const char* StageToken, float& OutW, float& OutH)
 {
 	if (!StageToken) { OutW = 440.f; OutH = 400.f; return; }
-	// Compact non-scroll GameFlow login plate (logo integrated into header)
-	if (std::strcmp(StageToken, "Login") == 0) { OutW = 380.f; OutH = 400.f; return; }
-	if (std::strcmp(StageToken, "CharacterSelect") == 0) { OutW = 460.f; OutH = 420.f; return; }
+	// 2011 Login_Scene window: preview-measured ~52% screen width. Compact = returning
+	// user (credentials only); LoginTOS = first-run with scrollable TOS body.
+	if (std::strcmp(StageToken, "Login") == 0) { OutW = 1006.f; OutH = 480.f; return; }
+	if (std::strcmp(StageToken, "LoginTOS") == 0) { OutW = 1006.f; OutH = 898.f; return; }
+	// Lobby_Scene: left char list + name plate + play bar
+	if (std::strcmp(StageToken, "CharacterSelect") == 0) { OutW = 640.f; OutH = 560.f; return; }
 	if (std::strcmp(StageToken, "CharacterCreate") == 0) { OutW = 560.f; OutH = 640.f; return; }
-	if (std::strcmp(StageToken, "DistrictSelect") == 0) { OutW = 520.f; OutH = 480.f; return; }
+	// District rows with 256×195 photos
+	if (std::strcmp(StageToken, "DistrictSelect") == 0) { OutW = 900.f; OutH = 560.f; return; }
 	if (std::strcmp(StageToken, "Settings") == 0) { OutW = 500.f; OutH = 520.f; return; }
-	if (std::strcmp(StageToken, "Loading") == 0) { OutW = 400.f; OutH = 220.f; return; }
+	if (std::strcmp(StageToken, "Loading") == 0) { OutW = 460.f; OutH = 260.f; return; }
 	OutW = 440.f;
 	OutH = 400.f;
 }
@@ -93,15 +98,13 @@ inline void ScaledPanelSize(const char* StageToken, float ViewportX, float Viewp
 	}
 }
 
-/** Logo size tracks panel width at Login_APB_Logo 512×128 aspect (scales with dialog). */
+/** Logo size tracks panel width at LoadingScreen_APB 256×128 (2:1) aspect. */
 inline void LogoSizeFromPanelWidth(float PanelW, float& OutLogoW, float& OutLogoH)
 {
 	float W = PanelW * 0.88f;
 	if (W < 220.f) W = 220.f;
 	if (W > 520.f) W = 520.f;
-	float H = W * kLogoAspect;
-	if (H < 56.f) H = 56.f;
-	if (H > 130.f) H = 130.f;
+	float H = W * kLogoAspect; // 110..260 — always on-aspect
 	OutLogoW = W;
 	OutLogoH = H;
 }

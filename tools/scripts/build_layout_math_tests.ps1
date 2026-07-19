@@ -4,6 +4,7 @@ $out = "$proj\Binaries\Win64"
 $scratch = if ($env:APB_SCRATCH) { $env:APB_SCRATCH } else { "C:\Users\Support\AppData\Local\Temp\grok-goal-4381756b8529\implementer" }
 New-Item -ItemType Directory -Force -Path $out,$scratch | Out-Null
 $vswhere = "${env:ProgramFiles(x86)}\Microsoft Visual Studio\Installer\vswhere.exe"
+if (-not (Test-Path $vswhere)) { $vswhere = "C:\Program Files (x86)\Microsoft Visual Studio\Installer\vswhere.exe" }
 $install = & $vswhere -latest -products * -requires Microsoft.VisualStudio.Component.VC.Tools.x86.x64 -property installationPath
 $vsdev = Join-Path $install "Common7\Tools\VsDevCmd.bat"
 $exe = "$out\APBLayoutMathTests.exe"
