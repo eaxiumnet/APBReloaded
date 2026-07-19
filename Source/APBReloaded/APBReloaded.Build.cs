@@ -36,6 +36,13 @@ public class APBReloaded : ModuleRules
 
 		PrivateDependencyModuleNames.AddRange(new string[] { });
 
+		// Systems subfolders (M1 restructure) — keeps bare-filename includes working.
+		PrivateIncludePaths.AddRange(new string[] {
+			"APBReloaded/Systems/Frontend",
+			"APBReloaded/Systems/District",
+			"APBReloaded/Systems/Server"
+		});
+
 		PublicIncludePaths.AddRange(new string[] {
 			"APBReloaded",
 			"APBReloaded/Systems",
