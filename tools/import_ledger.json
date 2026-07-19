@@ -9,8 +9,11 @@
     { "asset_key": "group:Characters/Wardrobe", "source": "retail", "dest": "/Game/Imported/Characters/Wardrobe", "status": "imported", "updated": "pre-ledger" },
     { "asset_key": "group:Vehicles", "source": "retail", "dest": "/Game/Imported/Vehicles", "status": "imported", "updated": "pre-ledger" },
     { "asset_key": "group:Audio/LoginTheme", "source": "retail", "dest": "/Game/Audio", "status": "imported", "updated": "pre-ledger" },
-    { "asset_key": "group:2011/MenuArt", "source": "2011", "dest": "/Game/Imported/UI/Menu2011", "status": "extracted", "updated": "pending M3" },
-    { "asset_key": "group:2011/UISfx", "source": "2011", "dest": "/Game/Audio/UI", "status": "extracted", "updated": "pending M3" },
+    { "asset_key": "group:2011/MenuArt", "source": "2011", "dest": "/Game/Imported/UI/Menu2011", "status": "extracted", "updated": "2026-07-19", "note": "umodel 547 spike: WORKS (work/umodel_547_spike.md). 77 pkgs, 2085 PNG at Content/Extracted/2011/MenuArt (APBMenus_Art*, Font, FrontEnd, Skins) via tools/scripts/export_2011_menu_art.py" },
+    { "asset_key": "group:2011/UISfx", "source": "2011", "dest": "/Game/Audio/UI", "status": "extracted", "updated": "2026-07-19", "note": "72 UISounds WAV (Basic_Media+Main_Media) at Content/Extracted/2011/UISfx via tools/scripts/extract_2011_ui_sfx.py (vgmstream decode)" },
+    { "asset_key": "group:2011/Movies", "source": "2011", "dest": "/Game/Movies", "status": "manual", "updated": "2026-07-19", "note": "SplashScreen.bik + IntroTitles.bik preserved at Content/Extracted/2011/Movies (Bink 1). ffmpeg unavailable; UE5.8 BinkMedia is Bink2/.bk2-only. Re-encode to .bk2 (Bink2ForUnreal.exe) or mp4 pending M4 — see work/umodel_547_spike.md" },
+    { "asset_key": "data:retail/palettes", "source": "retail", "dest": "Content/Data/palettes.json", "status": "extracted", "updated": "2026-07-19", "note": "7 palettes, 1134 colors from retail Colours/*.ini via tools/convert/parse_colours.py" },
+    { "asset_key": "data:ui_strings", "source": "2011+retail", "dest": "Content/Data/ui_strings_2011.json + ui_strings_retail.json", "status": "extracted", "updated": "2026-07-19", "note": "7 frontend sections each (504 keys 2011 / 588 keys retail) via tools/convert/parse_int_tables.py" },
     { "asset_key": "group:Districts/Financial", "source": "retail", "dest": "/Game/Imported/Districts/Financial", "status": "imported", "updated": "pre-ledger", "note": "partial — 1 of ~270 block manifests (M9)" },
     { "asset_key": "group:Districts/Waterfront", "source": "retail", "dest": "/Game/Imported/Districts/Waterfront", "status": "imported", "updated": "pre-ledger", "note": "partial — 1 of ~268 block manifests (M10)" }
   ]

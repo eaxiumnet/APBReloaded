@@ -1,6 +1,6 @@
 # Import Status
 
-Generated: 2026-07-19 21:11 UTC by `tools/scripts/build_import_status.py` (read-only).
+Generated: 2026-07-19 21:47 UTC by `tools/scripts/build_import_status.py` (read-only).
 
 ## Ledger entries (tools/import_ledger.json)
 
@@ -11,8 +11,11 @@ Generated: 2026-07-19 21:11 UTC by `tools/scripts/build_import_status.py` (read-
 | `group:Characters/Wardrobe` | retail | **imported** | `/Game/Imported/Characters/Wardrobe` |  |
 | `group:Vehicles` | retail | **imported** | `/Game/Imported/Vehicles` |  |
 | `group:Audio/LoginTheme` | retail | **imported** | `/Game/Audio` |  |
-| `group:2011/MenuArt` | 2011 | **extracted** | `/Game/Imported/UI/Menu2011` |  |
-| `group:2011/UISfx` | 2011 | **extracted** | `/Game/Audio/UI` |  |
+| `group:2011/MenuArt` | 2011 | **extracted** | `/Game/Imported/UI/Menu2011` | umodel 547 spike: WORKS (work/umodel_547_spike.md). 77 pkgs, 2085 PNG at Content/Extracted/2011/MenuArt (APBMenus_Art*, Font, FrontEnd, Skins) via tools/scripts/export_2011_menu_art.py |
+| `group:2011/UISfx` | 2011 | **extracted** | `/Game/Audio/UI` | 72 UISounds WAV (Basic_Media+Main_Media) at Content/Extracted/2011/UISfx via tools/scripts/extract_2011_ui_sfx.py (vgmstream decode) |
+| `group:2011/Movies` | 2011 | **manual** | `/Game/Movies` | SplashScreen.bik + IntroTitles.bik preserved at Content/Extracted/2011/Movies (Bink 1). ffmpeg unavailable; UE5.8 BinkMedia is Bink2/.bk2-only. Re-encode to .bk2 (Bink2ForUnreal.exe) or mp4 pending M4 — see work/umodel_547_spike.md |
+| `data:retail/palettes` | retail | **extracted** | `Content/Data/palettes.json` | 7 palettes, 1134 colors from retail Colours/*.ini via tools/convert/parse_colours.py |
+| `data:ui_strings` | 2011+retail | **extracted** | `Content/Data/ui_strings_2011.json + ui_strings_retail.json` | 7 frontend sections each (504 keys 2011 / 588 keys retail) via tools/convert/parse_int_tables.py |
 | `group:Districts/Financial` | retail | **imported** | `/Game/Imported/Districts/Financial` | partial — 1 of ~270 block manifests (M9) |
 | `group:Districts/Waterfront` | retail | **imported** | `/Game/Imported/Districts/Waterfront` | partial — 1 of ~268 block manifests (M10) |
 
