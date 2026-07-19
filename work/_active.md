@@ -136,16 +136,23 @@ active milestone (recorded in this file, keeping one plan per effort).
 - Verify: domain suite FAILS=0 + persistence suite FAILS=0 (independently re-run);
   editor + game builds Succeeded. Commit `207756c` (+ `*.obj` untracking follow-up).
 
-### M3 — Extraction pipeline completion  *(brief #2)*
-- Files: `tools\scripts\export_2011_ui*.py`, `extract_2011_login_assets.py`,
-  `export_apb_level_parallel.py`, `tools\UEViewer\`, `tools\WwiseExtract\`;
-  new `tools\convert\parse_int_tables.py`.
-- Actions: verify umodel on **547** (2011) vs 564 (retail) packages (spike, cap 2 attempts);
-  batch: 2011 menu art/fonts, UI sfx from `Basic_Media.bnk`/`Main_Media.bnk`,
-  `SplashScreen.bik`/`IntroTitles.bik` → mp4, retail `Colours\*.ini` → `palettes.json`,
-  retail INT tables → catalog JSON; every batch updates the ledger.
-- Expected: all M4/M5 inputs on disk under `Content\Extracted\` + `Content\Data\`.
-- Verify: ledger shows `extracted` for every M4/M5 dependency; docs updated.
+### M3 — Extraction pipeline completion  *(brief #2)* — ✅ COMPLETE 2026-07-19
+- **umodel 547 spike: WORKS** (1st attempt, no overrides; verdict `work\umodel_547_spike.md`)
+  — the project's biggest extraction risk is retired for both installs.
+- Batches (commits `9894c94`, `39aa684`, `66fa765`):
+  - 2011 menu art + fonts: **77 packages → 2,085 PNG** in `Content\Extracted\2011\MenuArt\`
+    (+ manifest) via new `tools\scripts\export_2011_menu_art.py`.
+  - 2011 UI sfx: **72 WAV** in `Content\Extracted\2011\UISfx\` via
+    `tools\scripts\extract_2011_ui_sfx.py` (bank .txt sidecar parsing + vgmstream).
+  - Videos: Bink 1 `.bik` preserved; ffmpeg unavailable and UE 5.8 BinkMedia is Bink-2-only
+    → re-encode (RAD/ffmpeg) deferred to M4; **menu motion backgrounds already exist as
+    WebM/MKV** from prior work, so M4 is not blocked. Ledger entry `group:2011/Movies=manual`.
+  - `Content\Data\palettes.json`: 7 retail palettes, 1,134 colors (`tools\convert\parse_colours.py`).
+  - `Content\Data\ui_strings_{2011,retail}.json`: 510/594 keys across 8 menu sections
+    (`tools\convert\parse_int_tables.py`, parameterized; 2011 INT is ASCII, retail UTF-16LE —
+    parser sniffs BOM).
+- Verify: ledger updated (MenuArt/UISfx `extracted`, Movies `manual`, palettes/ui_strings
+  `extracted`); `work\IMPORT_STATUS.md` regenerated; JSONs validated by parse.
 
 ### M4 — 2011 main menu  *(brief #3 — D2/D3)*
 - Files: `Systems\Frontend\APBFrontendWidget.*`, `APBFrontendLayoutMath.h`,
