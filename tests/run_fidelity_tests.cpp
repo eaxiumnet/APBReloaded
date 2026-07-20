@@ -2,6 +2,7 @@
 #include "../Source/APBReloaded/Domain/APBWorldService.h"
 #include <iostream>
 #include <string>
+#include <fstream>
 using namespace apb;
 static int fails = 0;
 #define CHECK(c,m) do{ if(!(c)){ std::cerr<<"FAIL: "<<m<<"\n"; ++fails; } else { std::cout<<"PASS: "<<m<<"\n"; } }while(0)
@@ -99,11 +100,89 @@ void TestSessionLoop() {
 	CHECK(w.mission->status == MissionStatus::Completed, "scripted mission completed");
 }
 
+void TestWardrobeTabsM5() {
+	const auto& tabs = CustomizationService::WardrobeTabs();
+	CHECK(tabs.size() == 15, "15 wardrobe tabs");
+	CHECK(std::string(CustomizationService::SlotForTab(1)) == "torso", "tab 1 -> torso");
+	CHECK(std::string(CustomizationService::SlotForTab(15)) == "bodyhair", "tab 15 -> bodyhair");
+	CHECK(std::string(CustomizationService::SlotForTab(99)).empty(), "unknown tab -> empty");
+	std::ifstream in(DataDir()+"/wardrobe_categories.json");
+	CHECK(in.good(), "open wardrobe_categories.json");
+	std::string line; int matched = 0;
+	while (std::getline(in, line)) {
+		for (const auto& t : tabs) {
+			std::string idKey = "\"tab_id\": " + std::to_string(t.tab_id) + ",";
+			std::string slotKey = "\"domain_slot\": \"" + std::string(t.domain_slot) + "\"";
+			if (line.find(idKey) != std::string::npos) {
+				CHECK(line.find(slotKey) != std::string::npos, std::string("json tab ")+std::to_string(t.tab_id)+" -> "+t.domain_slot);
+				++matched;
+			}
+		}
+	}
+	CHECK(matched == 15, "all 15 tabs cross-checked vs json");
+}
+
+void TestSymbolLayerM5() {
+	CharacterAppearance a;
+	a.body.hair_color = 7;
+	SymbolLayer s; s.symbol_id = 42; s.target_slot = "torso";
+	s.pos_x = 1.5f; s.pos_y = -2.25f; s.rotation = 90.f; s.scale = 0.5f;
+	s.color_primary = 12; s.color_secondary = 3;
+	a.symbols.push_back(s);
+	std::string blob = a.Serialize();
+	CharacterAppearance loaded;
+	CHECK(CharacterAppearance::Deserialize(blob, loaded), "deserialize symbol blob");
+	CHECK(loaded.symbols.size() == 1, "one symbol restored");
+	const auto& r = loaded.symbols[0];
+	CHECK(r.symbol_id == 42 && r.target_slot == "torso", "symbol id+slot restored");
+	CHECK(r.pos_x == 1.5f && r.pos_y == -2.25f && r.rotation == 90.f && r.scale == 0.5f, "symbol transform restored");
+	CHECK(r.color_primary == 12 && r.color_secondary == 3, "symbol colors restored");
+	// backward compat: legacy 1-pipe blob has no symbols
+	CharacterAppearance legacy;
+	CHECK(CharacterAppearance::Deserialize("H=1;B=0.5|torso:Item_X:0:0:", legacy), "deserialize legacy blob");
+	CHECK(legacy.symbols.empty(), "legacy blob has no symbols");
+	CHECK(legacy.clothing.size() == 1, "legacy clothing intact");
+}
+
+void TestFifteenSlotsM5() {
+	CharacterAppearance a;
+	for (const auto& t : CustomizationService::WardrobeTabs())
+		a.Equip(t.domain_slot, std::string("Item_")+t.domain_slot, t.tab_id, 0);
+	CHECK(a.clothing.size() == 15, "15 distinct slots equipped independently");
+	std::string blob = a.Serialize();
+	CharacterAppearance loaded;
+	CHECK(CharacterAppearance::Deserialize(blob, loaded), "deserialize 15-slot blob");
+	CHECK(loaded.clothing.size() == 15, "15 slots survive restart");
+	for (const auto& t : CustomizationService::WardrobeTabs())
+		CHECK(loaded.FindSlot(t.domain_slot) != nullptr, std::string("slot ")+t.domain_slot+" restored");
+}
+
+void TestRandomizeM5() {
+	WorldService w;
+	CHECK(w.InitFromDataDir(DataDir()), "randomize init catalog");
+	CustomizationService svc; svc.catalog = &w.catalog;
+	CharacterAppearance r1 = svc.Randomize(Faction::Criminal, 12345);
+	CharacterAppearance r2 = svc.Randomize(Faction::Criminal, 12345);
+	CharacterAppearance r3 = svc.Randomize(Faction::Criminal, 99999);
+	CHECK(!r1.DiffersFrom(r2), "same seed -> deterministic");
+	CHECK(r1.DiffersFrom(r3), "different seed -> different result");
+	CHECK(r1.body.height >= 0.8f && r1.body.height <= 1.2f, "randomized height in range");
+	CHECK(r1.clothing.size() >= 10, "randomize fills most tab pools");
+	for (const auto& c : r1.clothing) {
+		const ItemDef* it = w.catalog.FindItem(c.item_id);
+		CHECK(it != nullptr && it->wardrobe_tab >= 1, std::string("randomized ")+c.slot+" is a real tabbed item");
+	}
+}
+
 int main() {
 	std::cout << "APB fidelity tests (mission scripts + customization + session)\n";
 	TestMissionScripts();
 	TestCustomization();
 	TestSessionLoop();
+	TestWardrobeTabsM5();
+	TestSymbolLayerM5();
+	TestFifteenSlotsM5();
+	TestRandomizeM5();
 	std::cout << "FAILS=" << fails << "\n";
 	return fails ? 1 : 0;
 }

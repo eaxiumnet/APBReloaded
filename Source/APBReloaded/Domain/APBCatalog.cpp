@@ -85,6 +85,8 @@ bool Catalog::LoadClothingJson(const std::string& path){
 		d.armas_price=(int64_t)JsonGetNumber(obj,"armas_price",100);
 		d.market_value=d.armas_price/2;
 		d.armas_listed=JsonGetNumber(obj,"armas_listed",1)!=0;
+		d.slot=JsonGetString(obj,"slot");
+		d.wardrobe_tab=(int32_t)JsonGetNumber(obj,"wardrobe_tab",0);
 		items[d.id]=d;
 	}
 	return true;

@@ -31,6 +31,8 @@ struct ItemDef {
 	int32_t clip=0;
 	int64_t armas_price=0, market_value=0;
 	bool armas_listed=false;
+	std::string slot;
+	int32_t wardrobe_tab=0; // clothing only; 1..15, 0=unset
 };
 struct DistrictInfo {
 	std::string id, name, map_name;

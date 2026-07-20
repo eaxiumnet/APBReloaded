@@ -10,6 +10,7 @@ $vsdev = Join-Path $install "Common7\Tools\VsDevCmd.bat"
 $srcs = "`"$dom\APBCatalog.cpp`" `"$dom\APBInventory.cpp`" `"$dom\APBArmas.cpp`" `"$dom\APBAuction.cpp`" `"$dom\APBMission.cpp`" `"$dom\APBCombat.cpp`" `"$dom\APBCustomization.cpp`" `"$dom\APBModelRegistry.cpp`" `"$dom\APBPersistence.cpp`" `"$dom\APBWorldService.cpp`""
 $exe = "$out\APBDomainTests.exe"
 $exe2 = "$out\APBPersistenceTests.exe"
+$exe3 = "$out\APBFidelityTests.exe"
 $cmd = @"
 call `"$vsdev`" -arch=amd64 -host_arch=amd64 >nul
 cl /nologo /EHsc /std:c++17 /O2 /I`"$dom`" /Fe:`"$exe`" $srcs `"$proj\tests\run_domain_tests.cpp`"
@@ -19,6 +20,10 @@ if errorlevel 1 exit /b 1
 cl /nologo /EHsc /std:c++17 /O2 /I`"$dom`" /Fe:`"$exe2`" $srcs `"$proj\tests\run_persistence_tests.cpp`"
 if errorlevel 1 exit /b 1
 `"$exe2`"
+if errorlevel 1 exit /b 1
+cl /nologo /EHsc /std:c++17 /O2 /I`"$dom`" /Fe:`"$exe3`" $srcs `"$proj\tests\run_fidelity_tests.cpp`"
+if errorlevel 1 exit /b 1
+`"$exe3`"
 exit /b %ERRORLEVEL%
 "@
 $bat = Join-Path $env:TEMP "apb_domain_build.bat"
