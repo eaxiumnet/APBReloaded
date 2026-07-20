@@ -91,24 +91,34 @@ Shows faction, cash/G1C, threat, inventory slots, mission stage.
 
 ## Automated proof (cold-start Frontend map — required)
 
-Must launch the **default Frontend map** (no Financial freeroam override). The probe drives splash→login→character→body→district, then **OpenLevel** to freeroam and asserts world props + walk/shoot/interact/vehicle.
+Must launch the **default Frontend map** (no Financial freeroam override). Two gates share the same menu sequence (splash -> login -> character -> body -> district -> travel dispatch):
+
+- `frontend_menu` (**M4 gate**): validates every menu stage through the district-select travel dispatch, then stops. Independent of world content, so it passes today. Both gates now call `RequestEngineExit` after their terminal verdict, so the editor self-exits instead of hanging.
+- `frontend_flow` (**M9 geometry + M12 vehicles integration gate**): runs the menu sequence, then `OpenLevel` to freeroam and asserts world props + walk/shoot/interact/vehicle. Its `FRONTEND_FLOW_OK` verdict needs walkable geometry and vehicles, so it stays red until those milestones land.
 
 ```powershell
 $env:APB_SCRATCH = "C:\Users\Support\AppData\Local\Temp\grok-goal-5b882b537032\implementer"
-# Preferred: default GameDefaultMap (Lvl_APB_Frontend) — no map argument
+# M4 menu gate (default GameDefaultMap Lvl_APB_Frontend — no map argument):
 & "D:\UE58\UE_5.8\Engine\Binaries\Win64\UnrealEditor.exe" `
   "D:\APBReloaded\APBReloaded.uproject" -game `
-  -APBProbe=frontend_flow -APBScratch=$env:APB_SCRATCH -nullrhi -nosplash -nosound -unattended -log
+  -APBProbe=frontend_menu -APBScratch=$env:APB_SCRATCH -nullrhi -nosplash -nosound -unattended -log
 
-# Equivalent explicit Frontend path:
-# ... uproject /Game/Maps/Lvl_APB_Frontend -game -APBProbe=frontend_flow ...
+# Full integration gate (swap the mode; needs M9 geometry + M12 vehicles to pass):
+# ... -APBProbe=frontend_flow ...
 ```
 
-Expect in `{SCRATCH}/frontend_flow.log`:
+Expect in `{SCRATCH}/frontend_menu.log` (M4):
 - `COLD_START_OK frontend_map=1` / `MAP_COLD map=...Frontend...`
-- `BODY height=... bulk=...`
-- `TRAVEL_OPENLEVEL_CALLED` then `MAP_AFTER_TRAVEL map=...Financial...`
+- `login_fail ...` then `login_ok stage=CharacterSelect`
+- `BODY height=... bulk=...` · `APPEARANCE slots_equipped=7`
+- `DISTRICTS count=8` · `DISTRICT_ENTER ok=1 district=Financial`
+- `TRAVEL_OPENLEVEL_CALLED` then `FRONTEND_MENU_OK` (editor exits)
+
+Expect additionally in `{SCRATCH}/frontend_flow.log` (M9+M12):
+- `MAP_AFTER_TRAVEL map=...Financial...`
 - `WORLD_PROPS bots>0 mailbox>0 ammo>0 resupply>0 vehicles>0`
 - `WALK_OK=1` · `SHOOT` · `INTERACT` · `VEHICLE enter=1`
 - `FRONTEND_FLOW_OK`
+
+The full spine (`tools/run_verification_gates.ps1`) hard-gates `frontend_menu` and only runs `frontend_flow` under `-IntegrationGate`.
 
