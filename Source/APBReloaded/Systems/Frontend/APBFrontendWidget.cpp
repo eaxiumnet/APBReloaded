@@ -1568,114 +1568,162 @@ void UAPBFrontendWidget::RebuildStageBody()
 		AddToScroll(Links, 2.f);
 		break;
 	}
-	case EAPBFrontendStage::CharacterSelect:
-	{
-		BeginStageContent(false); // fixed card, no scroll
-		ApplyPanelChrome(true, PanelCol);
-		if (TitleText)
+		case EAPBFrontendStage::CharacterSelect:
 		{
-			TitleText->SetVisibility(ESlateVisibility::Visible);
-			TitleText->SetText(FText::FromString(TEXT("CHARACTER SELECT")));
-		}
-		if (SubtitleText)
-		{
-			SubtitleText->SetVisibility(ESlateVisibility::Visible);
-			SubtitleText->SetText(FText::FromString(TEXT("Choose an operative or create a new one")));
-		}
-		if (StatusText) StatusText->SetVisibility(ESlateVisibility::Visible);
-		if (HintText)
-		{
-			HintText->SetVisibility(ESlateVisibility::Visible);
-			HintText->SetText(FText::FromString(TEXT("Criminal or Enforcer is set at character create")));
-		}
-
-		FString CharLine = TEXT("Empty slot — create a character");
-		FString FacLine = TEXT("Faction: —");
-		bool bHas = false;
-		if (UGameInstance* GI = GetGameInstance())
-		{
-			if (UAPBGameInstanceSubsystem* APB = GI->GetSubsystem<UAPBGameInstanceSubsystem>())
+			BeginStageContent(false);
+			ApplyPanelChrome(true, PanelCol);
+			if (TitleText)
 			{
-				const auto Snap = APB->CaptureDomainSnapshot();
-				bHas = Snap.bHasCharacter;
-				if (bHas)
+				TitleText->SetVisibility(ESlateVisibility::Visible);
+				TitleText->SetText(FText::FromString(S2011(TEXT("CharacterSelectScreen.CharacterSelect"), TEXT("CHARACTER SELECT"))));
+				TitleText->SetColorAndOpacity(FSlateColor(APB_WHITE));
+				TitleText->SetFont(FCoreStyle::GetDefaultFontStyle("Bold", 28));
+				TitleText->SetJustification(ETextJustify::Left);
+			}
+			if (SubtitleText)
+			{
+				SubtitleText->SetVisibility(ESlateVisibility::Collapsed);
+				SubtitleText->SetText(FText::GetEmpty());
+			}
+			if (StatusText) StatusText->SetVisibility(ESlateVisibility::Visible);
+			if (HintText) HintText->SetVisibility(ESlateVisibility::Collapsed);
+
+			FString CharacterName = S2011(TEXT("CharacterSelectScreen.EmptyCharacter"), TEXT("Empty"));
+			FString FactionName = TEXT("-");
+			int32 ThreatRating = 0;
+			bool bHas = false;
+			bool bEnforcer = false;
+			if (UGameInstance* GI = GetGameInstance())
+			{
+				if (UAPBGameInstanceSubsystem* APB = GI->GetSubsystem<UAPBGameInstanceSubsystem>())
 				{
-					CharLine = FString::Printf(TEXT("%s"), *Snap.CharacterName);
-					FacLine = Snap.bEnforcer ? TEXT("Faction: ENFORCER") : TEXT("Faction: CRIMINAL");
-					if (StatusText)
+					const auto Snap = APB->CaptureDomainSnapshot();
+					bHas = Snap.bHasCharacter;
+					if (bHas)
 					{
-						StatusText->SetText(FText::FromString(FString::Printf(TEXT("Ready — %s"), *Snap.CharacterName)));
+						CharacterName = Snap.CharacterName;
+						bEnforcer = Snap.bEnforcer;
+						FactionName = bEnforcer ? TEXT("ENFORCER") : TEXT("CRIMINAL");
+						ThreatRating = FMath::Max(0, FMath::RoundToInt(Snap.ThreatPoints));
+						if (StatusText)
+						{
+							StatusText->SetText(FText::FromString(FString::Printf(TEXT("Ready - %s"), *Snap.CharacterName)));
+						}
+					}
+					else if (StatusText)
+					{
+						StatusText->SetText(FText::FromString(TEXT("No character on this account")));
 					}
 				}
-				else if (StatusText)
+			}
+			if (TexBrandKey.Get())
+			{
+				UImage* BrandChip = MakeImage(TEXT("CharacterBrandChip"), TexBrandKey.Get());
+				USizeBox* BrandChipSize = WidgetTree->ConstructWidget<USizeBox>(USizeBox::StaticClass(), TEXT("CharacterBrandChipSize"));
+				BrandChipSize->SetWidthOverride(32.f);
+				BrandChipSize->SetHeightOverride(32.f);
+				BrandChipSize->AddChild(BrandChip);
+				AddToScroll(BrandChipSize, 2.f);
+			}
+
+			UBorder* LeftPanel = WidgetTree->ConstructWidget<UBorder>(UBorder::StaticClass(), TEXT("CharacterLeftPanel"));
+			{
+				FSlateBrush Brush;
+				if (TexWindowPanel.Get()) Brush = APB_PanelBrush(TexWindowPanel.Get(), FLinearColor::White);
+				else APB_MakeBoxBrush(Brush, APB_PANEL);
+				LeftPanel->SetBrush(Brush);
+				LeftPanel->SetBrushColor(TexWindowPanel.Get() ? FLinearColor::White : APB_PANEL);
+				LeftPanel->SetPadding(FMargin(18.f, 14.f));
+			}
+			UVerticalBox* LeftV = WidgetTree->ConstructWidget<UVerticalBox>(UVerticalBox::StaticClass(), TEXT("CharacterLeftPanelV"));
+			LeftPanel->AddChild(LeftV);
+			UTextBlock* CharactersHeader = MakeLabel(TEXT("CharactersHeader"), TEXT("CHARACTERS"), 15, APB_WHITE);
+			CharactersHeader->SetFont(FCoreStyle::GetDefaultFontStyle("Bold", 15));
+			if (UVerticalBoxSlot* VS = LeftV->AddChildToVerticalBox(CharactersHeader)) VS->SetPadding(FMargin(2.f, 4.f, 2.f, 8.f));
+
+			UButton* CreateB = MakeAccentButton(TEXT("CreateOpen"), S2011(TEXT("CharacterSelectScreen.CreateCharacter"), TEXT("CREATE CHARACTER")), APB_AMBER);
+			CreateB->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnCreateCharOpen);
+			if (UVerticalBoxSlot* VS = LeftV->AddChildToVerticalBox(CreateB)) VS->SetPadding(FMargin(0.f, 0.f, 0.f, 6.f));
+
+			UButton* CharacterRow = MakeAccentButton(TEXT("CharacterRow"), CharacterName, bHas ? APB_AMBER : APB_BTN);
+			if (bHas && TexBtnLight.Get())
+			{
+				FButtonStyle Style = CharacterRow->GetStyle();
+				Style.Normal = APB_TexBrush(TexBtnLight.Get(), FLinearColor::White);
+				Style.Hovered = APB_TexBrush(TexBtnLight.Get(), APB_AMBER_HI);
+				Style.Pressed = APB_TexBrush(TexBtnLight.Get(), APB_AMBER);
+				CharacterRow->SetStyle(Style);
+			}
+			CharacterRow->SetIsEnabled(bHas);
+			if (!bHas)
+			{
+				if (UTextBlock* EmptyLabel = Cast<UTextBlock>(CharacterRow->GetContent())) EmptyLabel->SetColorAndOpacity(FSlateColor(APB_MUTED));
+			}
+			if (UVerticalBoxSlot* VS = LeftV->AddChildToVerticalBox(CharacterRow)) VS->SetPadding(FMargin(0.f, 0.f, 0.f, 6.f));
+
+			if (bHas)
+			{
+				if (UTexture2D* FactionTex = bEnforcer ? TexFactionEnf.Get() : TexFactionCrim.Get())
 				{
-					StatusText->SetText(FText::FromString(TEXT("No character on this account")));
+					UImage* FI = MakeImage(TEXT("CharacterFactionIcon"), FactionTex);
+					USizeBox* FISz = WidgetTree->ConstructWidget<USizeBox>(USizeBox::StaticClass(), TEXT("CS_FacIcoSz"));
+					FISz->SetHeightOverride(32.f);
+					FISz->SetWidthOverride(32.f);
+					FISz->AddChild(FI);
+					if (UVerticalBoxSlot* VS = LeftV->AddChildToVerticalBox(FISz)) VS->SetHorizontalAlignment(HAlign_Right);
 				}
 			}
-		}
+			AddToScroll(LeftPanel, 8.f);
 
-		UBorder* Card = WidgetTree->ConstructWidget<UBorder>(UBorder::StaticClass(), TEXT("CharSelectCard"));
-		{
-			FSlateBrush Brush;
-			Brush.DrawAs = ESlateBrushDrawType::Box;
-			Brush.TintColor = FSlateColor(FLinearColor(0.06f, 0.12f, 0.20f, 0.96f));
-			Card->SetBrush(Brush);
-			Card->SetBrushColor(FLinearColor(0.06f, 0.12f, 0.20f, 0.96f));
-			Card->SetPadding(FMargin(16.f, 14.f));
-		}
-		UVerticalBox* CardV = WidgetTree->ConstructWidget<UVerticalBox>(UVerticalBox::StaticClass(), TEXT("CharSelectCardV"));
-		Card->AddChild(CardV);
-		auto CardLineFn = [&](const FString& Name, const FString& Text, FLinearColor C, int32 Sz)
-		{
-			UTextBlock* T = MakeLabel(Name, Text, Sz, C);
-			if (UVerticalBoxSlot* S = CardV->AddChildToVerticalBox(T))
+			UBorder* NamePlate = WidgetTree->ConstructWidget<UBorder>(UBorder::StaticClass(), TEXT("CharacterNamePlate"));
 			{
-				S->SetPadding(FMargin(2.f, 4.f));
+				FSlateBrush Brush;
+				if (TexBtnOn.Get()) Brush = APB_TexBrush(TexBtnOn.Get(), FLinearColor::White);
+				else APB_MakeBoxBrush(Brush, APB_BTN);
+				NamePlate->SetBrush(Brush);
+				NamePlate->SetPadding(FMargin(16.f, 10.f));
 			}
-		};
-		CardLineFn(TEXT("CS_SlotTitle"), TEXT("CHARACTER SLOT 01"), APB_AMBER, 12);
-		CardLineFn(TEXT("CS_CharName"), CharLine, APB_WHITE, 18);
-		CardLineFn(TEXT("CS_Fac"), FacLine, APB_AMBER, 14);
-		if (bHas)
-		{
-			UTexture2D* FacIco = nullptr;
-			if (UGameInstance* GI3 = GetGameInstance())
+			UHorizontalBox* NameRow = WidgetTree->ConstructWidget<UHorizontalBox>(UHorizontalBox::StaticClass(), TEXT("CharacterNameRow"));
+			NamePlate->AddChild(NameRow);
+			UVerticalBox* NameTextV = WidgetTree->ConstructWidget<UVerticalBox>(UVerticalBox::StaticClass(), TEXT("CharacterNameTextV"));
+			UTextBlock* NameText = MakeLabel(TEXT("CharacterName"), CharacterName.ToUpper(), 20, bHas ? APB_WHITE : APB_MUTED);
+			NameText->SetFont(FCoreStyle::GetDefaultFontStyle("Bold", 20));
+			NameTextV->AddChildToVerticalBox(NameText);
+			NameTextV->AddChildToVerticalBox(MakeLabel(TEXT("CharacterFaction"), FString::Printf(TEXT("%s: %s"), *S2011(TEXT("CharacterSelectScreen.Faction"), TEXT("FACTION")), *FactionName), 13, APB_MUTED));
+			NameTextV->AddChildToVerticalBox(MakeLabel(TEXT("CharacterThreat"), FString::Printf(TEXT("%s / %s"), *S2011(TEXT("CharacterSelectScreen.Rating"), TEXT("RATING")), *S2011(TEXT("CharacterSelectScreen.Threat"), TEXT("THREAT"))), 13, APB_MUTED));
+			if (UHorizontalBoxSlot* HS = NameRow->AddChildToHorizontalBox(NameTextV)) HS->SetSize(FSlateChildSize(ESlateSizeRule::Fill));
+			if (TexRing.Get())
 			{
-				if (UAPBGameInstanceSubsystem* APB3 = GI3->GetSubsystem<UAPBGameInstanceSubsystem>())
+				UBorder* Badge = WidgetTree->ConstructWidget<UBorder>(UBorder::StaticClass(), TEXT("ThreatBadge"));
+				Badge->SetBrush(APB_TexBrush(TexRing.Get(), FLinearColor::White));
+				Badge->SetPadding(FMargin(10.f));
+				UTextBlock* ThreatText = MakeLabel(TEXT("ThreatValue"), FString::FromInt(ThreatRating), 20, APB_AMBER_HI);
+				ThreatText->SetFont(FCoreStyle::GetDefaultFontStyle("Bold", 20));
+				ThreatText->SetJustification(ETextJustify::Center);
+				Badge->AddChild(ThreatText);
+				if (UHorizontalBoxSlot* HS = NameRow->AddChildToHorizontalBox(Badge))
 				{
-					FacIco = APB3->CaptureDomainSnapshot().bEnforcer ? TexFactionEnf.Get() : TexFactionCrim.Get();
+					HS->SetPadding(FMargin(12.f, 0.f, 0.f, 0.f));
+					HS->SetHorizontalAlignment(HAlign_Right);
+					HS->SetVerticalAlignment(VAlign_Center);
 				}
 			}
-			if (FacIco)
-			{
-				UImage* FI = MakeImage(TEXT("CS_FacIco"), FacIco);
-				USizeBox* FISz = WidgetTree->ConstructWidget<USizeBox>(USizeBox::StaticClass(), TEXT("CS_FacIcoSz"));
-				FISz->SetHeightOverride(40.f);
-				FISz->SetWidthOverride(40.f);
-				FISz->AddChild(FI);
-				CardV->AddChildToVerticalBox(FISz);
-			}
-		}
-		CardLineFn(TEXT("CS_Hint"), bHas ? TEXT("Select CONTINUE to open the district server list") : TEXT("Create a character before entering San Paro"), APB_MUTED, 11);
-		AddToScroll(Card, 8.f);
+			AddToScroll(NamePlate, 8.f);
 
-		UButton* CreateB = MakeAccentButton(TEXT("CreateOpen"), TEXT("  CREATE NEW CHARACTER  "), FLinearColor(0.45f, 0.22f, 0.08f, 1.f));
-		CreateB->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnCreateCharOpen);
-		AddToScroll(CreateB, 12.f);
-		UButton* UseB = MakeAccentButton(TEXT("UseExisting"), TEXT("  CONTINUE  "), FLinearColor(0.12f, 0.42f, 0.22f, 1.f));
-		UseB->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnSelectExistingChar);
-		AddToScroll(UseB, 8.f);
-		UHorizontalBox* Bot = WidgetTree->ConstructWidget<UHorizontalBox>(UHorizontalBox::StaticClass(), TEXT("CSBot"));
-		UButton* Back = MakeButton(TEXT("BackLogin"), TEXT("  BACK  "));
-		Back->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnBackToLogin);
-		UButton* SetB = MakeButton(TEXT("CSSettings"), TEXT("  SETTINGS  "));
-		SetB->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnOpenSettings);
-		if (UHorizontalBoxSlot* HS = Bot->AddChildToHorizontalBox(Back)) { HS->SetPadding(FMargin(2.f)); HS->SetSize(FSlateChildSize(ESlateSizeRule::Fill)); }
-		if (UHorizontalBoxSlot* HS = Bot->AddChildToHorizontalBox(SetB)) { HS->SetPadding(FMargin(2.f)); HS->SetSize(FSlateChildSize(ESlateSizeRule::Fill)); }
-		AddToScroll(Bot, 12.f);
-		LogStage(TEXT("char_select_ui_built"));
-		break;
-	}
+			UButton* PlayB = MakeAccentButton(TEXT("UseExisting"), S2011(TEXT("CharacterSelectScreen.Play"), TEXT("PLAY")), APB_AMBER);
+			PlayB->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnSelectExistingChar);
+			AddToScroll(PlayB, 8.f);
+			UHorizontalBox* Bot = WidgetTree->ConstructWidget<UHorizontalBox>(UHorizontalBox::StaticClass(), TEXT("CSBot"));
+			UButton* Back = MakeButton(TEXT("BackLogin"), S2011(TEXT("CharacterSelectScreen.Logout"), TEXT("LOGOUT")));
+			Back->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnBackToLogin);
+			UButton* SetB = MakeButton(TEXT("CSSettings"), S2011(TEXT("APBLoginScreen.Settings"), TEXT("SETTINGS")));
+			SetB->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnOpenSettings);
+			if (UHorizontalBoxSlot* HS = Bot->AddChildToHorizontalBox(Back)) { HS->SetPadding(FMargin(2.f)); HS->SetSize(FSlateChildSize(ESlateSizeRule::Fill)); }
+			if (UHorizontalBoxSlot* HS = Bot->AddChildToHorizontalBox(SetB)) { HS->SetPadding(FMargin(2.f)); HS->SetSize(FSlateChildSize(ESlateSizeRule::Fill)); }
+			AddToScroll(Bot, 12.f);
+			LogStage(TEXT("char_select_ui_built"));
+			break;
+		}
 	case EAPBFrontendStage::CharacterCreate:
 	{
 		BeginStageContent(true); // long form may scroll
@@ -1795,13 +1843,26 @@ void UAPBFrontendWidget::RebuildStageBody()
 		LogStage(TEXT("char_create_ui_faction_buttons"));
 		break;
 	}
-	case EAPBFrontendStage::DistrictSelect:
-	{
-		BeginStageContent(true); // district list can scroll
-		ApplyPanelChrome(true, PanelCol);
-		if (TitleText) TitleText->SetText(FText::FromString(TEXT("SELECT DISTRICT")));
-		if (SubtitleText) SubtitleText->SetText(FText::FromString(TEXT("SELECT THE DISTRICT IN WHICH YOU WISH TO ENTER SAN PARO")));
-		if (HintText) HintText->SetText(FText::FromString(TEXT("Select a row, then ENTER DISTRICT")));
+		case EAPBFrontendStage::DistrictSelect:
+		{
+			BeginStageContent(true); // district list can scroll
+			ApplyPanelChrome(true, PanelCol);
+			if (TitleText)
+			{
+				TitleText->SetVisibility(ESlateVisibility::Visible);
+				TitleText->SetText(FText::FromString(S2011(TEXT("DistrictSelect_Action.DistrictSelect"), TEXT("SELECT DISTRICT"))));
+				TitleText->SetColorAndOpacity(FSlateColor(APB_WHITE));
+				TitleText->SetFont(FCoreStyle::GetDefaultFontStyle("Bold", 28));
+				TitleText->SetJustification(ETextJustify::Left);
+			}
+			if (SubtitleText)
+			{
+				SubtitleText->SetVisibility(ESlateVisibility::Visible);
+				SubtitleText->SetText(FText::FromString(S2011(TEXT("DistrictSelect_Action.Title"), TEXT("ACTION DISTRICTS"))));
+				SubtitleText->SetColorAndOpacity(FSlateColor(APB_AMBER));
+				SubtitleText->SetFont(FCoreStyle::GetDefaultFontStyle("Bold", 15));
+			}
+			if (HintText) HintText->SetText(FText::FromString(TEXT("Select a district, then enter San Paro")));
 
 		DistrictIds.Reset();
 		DistrictMaps.Reset();
@@ -1821,57 +1882,102 @@ void UAPBFrontendWidget::RebuildStageBody()
 					DistrictIds.Add(Parts[0]);
 					DistrictNames.Add(Parts[1]);
 					DistrictMaps.Add(Parts.Num() > 2 ? Parts[2] : TEXT("Lvl_APB_Financial_Freeroam"));
-					DistrictCombo->AddOption(FString::Printf(TEXT("%s — %s"), *Parts[1], *Parts[0]));
+					DistrictCombo->AddOption(FString::Printf(TEXT("%s - %s"), *Parts[1], *Parts[0]));
+					}
 				}
 			}
-		}
 
-		// Classic world-select: black header strip + clean rows
-		AddToScroll(MakeLabel(TEXT("srvHead"), TEXT("NAME                          ID                 STATUS"), 10, APB_MUTED), 2.f);
-
-		const int32 N = FMath::Min(DistrictIds.Num(), 8);
-		for (int32 i = 0; i < N; ++i)
-		{
-			const FString Label = FString::Printf(TEXT("  %s   ·  %s   ·  ONLINE"),
-				*DistrictNames[i], *DistrictIds[i]);
-			UButton* RowB = MakeAccentButton(FString::Printf(TEXT("DistRow_%d"), i), Label, APB_BTN);
-			switch (i)
+			const int32 N = FMath::Min(DistrictIds.Num(), 8);
+			for (int32 i = 0; i < N; ++i)
 			{
-			case 0: RowB->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnDistrictRow0); break;
-			case 1: RowB->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnDistrictRow1); break;
-			case 2: RowB->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnDistrictRow2); break;
-			case 3: RowB->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnDistrictRow3); break;
-			case 4: RowB->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnDistrictRow4); break;
-			case 5: RowB->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnDistrictRow5); break;
-			case 6: RowB->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnDistrictRow6); break;
-			case 7: RowB->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnDistrictRow7); break;
-			default: break;
-			}
-			AddToScroll(RowB, 3.f);
-		}
-		if (DistrictIds.Num() == 0)
-		{
-			AddToScroll(MakeLabel(TEXT("noDist"), TEXT("No districts loaded — check Content/Data/districts.json"), 12, APB_AMBER), 8.f);
-			if (StatusText) StatusText->SetText(FText::FromString(TEXT("District list empty")));
-		}
-		else
-		{
-			SelectDistrictIndex(0);
-		}
-		DistrictCombo->OnSelectionChanged.AddDynamic(this, &UAPBFrontendWidget::OnDistrictComboChanged);
-		AddToScroll(DistrictCombo, 0.f);
+				UBorder* DistrictRow = WidgetTree->ConstructWidget<UBorder>(UBorder::StaticClass(), *FString::Printf(TEXT("DistrictPanel_%d"), i));
+				{
+					FSlateBrush Brush;
+					if (TexWindowPanel.Get()) Brush = APB_PanelBrush(TexWindowPanel.Get(), FLinearColor::White);
+					else APB_MakeBoxBrush(Brush, APB_PANEL);
+					DistrictRow->SetBrush(Brush);
+					DistrictRow->SetBrushColor(TexWindowPanel.Get() ? FLinearColor::White : APB_PANEL);
+					DistrictRow->SetPadding(FMargin(16.f, 12.f));
+				}
+				UHorizontalBox* DistrictRowH = WidgetTree->ConstructWidget<UHorizontalBox>(UHorizontalBox::StaticClass(), *FString::Printf(TEXT("DistrictRowH_%d"), i));
+				DistrictRow->AddChild(DistrictRowH);
 
-		UButton* Enter = MakeAccentButton(TEXT("EnterDist"), TEXT("  ENTER DISTRICT  "), FLinearColor(0.12f, 0.42f, 0.22f, 1.f));
-		Enter->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnEnterDistrict);
-		AddToScroll(Enter, 12.f);
-		UButton* SetB = MakeButton(TEXT("DistSettings"), TEXT("  SETTINGS  "));
-		SetB->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnOpenSettings);
-		AddToScroll(SetB, 6.f);
-		UButton* BackCS = MakeButton(TEXT("DistBack"), TEXT("  BACK TO CHARACTERS  "));
-		BackCS->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnCharCreateBack);
-		AddToScroll(BackCS, 6.f);
-		break;
-	}
+				UTexture2D* DistrictPhoto = nullptr;
+				if (DistrictNames[i].Contains(TEXT("Financial"), ESearchCase::IgnoreCase)) DistrictPhoto = TexDistFinancial.Get();
+				else if (DistrictNames[i].Contains(TEXT("Social"), ESearchCase::IgnoreCase)) DistrictPhoto = TexDistSocial.Get();
+				else if (DistrictNames[i].Contains(TEXT("Waterfront"), ESearchCase::IgnoreCase)) DistrictPhoto = TexDistWaterfront.Get();
+				if (DistrictPhoto)
+				{
+					UImage* Photo = MakeImage(FString::Printf(TEXT("DistrictPhoto_%d"), i), DistrictPhoto);
+					USizeBox* PhotoSize = WidgetTree->ConstructWidget<USizeBox>(USizeBox::StaticClass(), *FString::Printf(TEXT("DistrictPhotoSize_%d"), i));
+					PhotoSize->SetWidthOverride(256.f);
+					PhotoSize->SetHeightOverride(195.f);
+					PhotoSize->AddChild(Photo);
+					if (UHorizontalBoxSlot* HS = DistrictRowH->AddChildToHorizontalBox(PhotoSize))
+					{
+						HS->SetPadding(FMargin(0.f, 0.f, 18.f, 0.f));
+						HS->SetVerticalAlignment(VAlign_Center);
+					}
+				}
+
+				UVerticalBox* DistrictInfo = WidgetTree->ConstructWidget<UVerticalBox>(UVerticalBox::StaticClass(), *FString::Printf(TEXT("DistrictInfo_%d"), i));
+				UTextBlock* DistrictName = MakeLabel(FString::Printf(TEXT("DistrictName_%d"), i), DistrictNames[i].ToUpper(), 20, APB_WHITE);
+				DistrictName->SetFont(FCoreStyle::GetDefaultFontStyle("Bold", 20));
+				if (UVerticalBoxSlot* VS = DistrictInfo->AddChildToVerticalBox(DistrictName)) VS->SetPadding(FMargin(0.f, 12.f, 0.f, 4.f));
+				DistrictInfo->AddChildToVerticalBox(MakeLabel(FString::Printf(TEXT("DistrictId_%d"), i), FString::Printf(TEXT("%s - ONLINE"), *DistrictIds[i]), 13, APB_MUTED));
+
+				UButton* RowB = MakeAccentButton(FString::Printf(TEXT("DistRow_%d"), i), S2011(TEXT("DistrictSelect_Action.JoinDistrict"), TEXT("ENTER DISTRICT")), APB_AMBER);
+				switch (i)
+				{
+				case 0: RowB->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnDistrictRow0); break;
+				case 1: RowB->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnDistrictRow1); break;
+				case 2: RowB->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnDistrictRow2); break;
+				case 3: RowB->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnDistrictRow3); break;
+				case 4: RowB->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnDistrictRow4); break;
+				case 5: RowB->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnDistrictRow5); break;
+				case 6: RowB->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnDistrictRow6); break;
+				case 7: RowB->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnDistrictRow7); break;
+				default: break;
+				}
+				RowB->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnEnterDistrict);
+				if (UVerticalBoxSlot* VS = DistrictInfo->AddChildToVerticalBox(RowB))
+				{
+					VS->SetPadding(FMargin(0.f, 24.f, 0.f, 8.f));
+					VS->SetHorizontalAlignment(HAlign_Right);
+				}
+				if (UHorizontalBoxSlot* HS = DistrictRowH->AddChildToHorizontalBox(DistrictInfo))
+				{
+					HS->SetSize(FSlateChildSize(ESlateSizeRule::Fill));
+					HS->SetVerticalAlignment(VAlign_Fill);
+				}
+				AddToScroll(DistrictRow, 10.f);
+			}
+			if (DistrictIds.Num() == 0)
+			{
+				AddToScroll(MakeLabel(TEXT("noDist"), TEXT("No districts loaded - check Content/Data/districts.json"), 12, APB_AMBER), 8.f);
+				if (StatusText) StatusText->SetText(FText::FromString(TEXT("District list empty")));
+			}
+			else
+			{
+				SelectDistrictIndex(0);
+			}
+			DistrictCombo->OnSelectionChanged.AddDynamic(this, &UAPBFrontendWidget::OnDistrictComboChanged);
+			AddToScroll(DistrictCombo, 0.f);
+
+			UButton* Enter = MakeAccentButton(TEXT("EnterDist"), S2011(TEXT("DistrictSelect_Action.JoinDistrict"), TEXT("ENTER DISTRICT")), APB_AMBER);
+			Enter->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnEnterDistrict);
+			AddToScroll(Enter, 12.f);
+			UHorizontalBox* DistrictFooter = WidgetTree->ConstructWidget<UHorizontalBox>(UHorizontalBox::StaticClass(), TEXT("DistrictFooter"));
+			UButton* BackCS = MakeButton(TEXT("DistBack"), TEXT("BACK"));
+			BackCS->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnCharCreateBack);
+			UButton* SetB = MakeButton(TEXT("DistSettings"), S2011(TEXT("APBLoginScreen.Settings"), TEXT("SETTINGS")));
+			SetB->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnOpenSettings);
+			if (UHorizontalBoxSlot* HS = DistrictFooter->AddChildToHorizontalBox(BackCS)) { HS->SetPadding(FMargin(0.f, 0.f, 4.f, 0.f)); HS->SetSize(FSlateChildSize(ESlateSizeRule::Fill)); }
+			if (UHorizontalBoxSlot* HS = DistrictFooter->AddChildToHorizontalBox(SetB)) { HS->SetPadding(FMargin(4.f, 0.f, 0.f, 0.f)); HS->SetSize(FSlateChildSize(ESlateSizeRule::Fill)); }
+			AddToScroll(DistrictFooter, 6.f);
+			LogStage(TEXT("district_select_ui_built"));
+			break;
+		}
 	case EAPBFrontendStage::Settings:
 	{
 		BeginStageContent(true);
@@ -1917,7 +2023,7 @@ void UAPBFrontendWidget::RebuildStageBody()
 			{
 				HS->SetPadding(FMargin(2.f));
 				HS->SetSize(FSlateChildSize(ESlateSizeRule::Fill));
-			}
+				}
 		}
 		AddToScroll(ModeRow, 4.f);
 
@@ -1935,8 +2041,8 @@ void UAPBFrontendWidget::RebuildStageBody()
 			{
 				HS->SetPadding(FMargin(2.f));
 				HS->SetSize(FSlateChildSize(ESlateSizeRule::Fill));
-			}
-		}
+				}
+				}
 		AddToScroll(AspRow, 4.f);
 		DisplayModeLabel = MakeLabel(TEXT("DispLbl"), TEXT(""), 11, APB_MUTED);
 		RefreshResolutionLabel();
@@ -1964,7 +2070,7 @@ void UAPBFrontendWidget::RebuildStageBody()
 		AddToScroll(Back, 12.f);
 		LogStage(FString::Printf(TEXT("settings_ui vol=%.2f scale=%d"), MenuAudioVolume, (int32)UiScaleMode));
 		break;
-	}
+		}
 	case EAPBFrontendStage::Loading:
 	{
 		BeginStageContent(false);
