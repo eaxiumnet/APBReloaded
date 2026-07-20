@@ -605,10 +605,11 @@ void UAPBSessionProbeSubsystem::EndFrontendProbe()
 {
 	if (bTerminal) return;
 	bTerminal = true;
+	// PlayableTimer is world-owned (entry timer); FrontendTravelTimer is GI-owned (survives travel).
+	// Clear each only on its owning manager — FTimerHandles are manager-local.
 	if (UWorld* W = GetWorld()) W->GetTimerManager().ClearTimer(PlayableTimer);
 	if (UGameInstance* GI = GetGameInstance())
 	{
-		GI->GetTimerManager().ClearTimer(PlayableTimer);
 		GI->GetTimerManager().ClearTimer(FrontendTravelTimer);
 	}
 	RequestEngineExit(TEXT("APBProbe frontend terminal verdict"));
@@ -622,6 +623,7 @@ void UAPBSessionProbeSubsystem::FrontendFail(const FString& Reason)
 
 void UAPBSessionProbeSubsystem::RunFrontendFlowProbe()
 {
+	if (bTerminal) return;
 	// If we already traveled, this is the freeroam half (should be invoked via PostTravel).
 	if (bFrontendTravelPending)
 	{
@@ -862,7 +864,8 @@ void UAPBSessionProbeSubsystem::RunFrontendFlowPostTravel()
 			}
 			else
 			{
-				AppendLog(TEXT("FRONTEND_FLOW_FAIL no_freeroam_character_after_travel"));
+				FrontendFail(TEXT("no_freeroam_character_after_travel"));
+				return;
 			}
 		}
 	}
