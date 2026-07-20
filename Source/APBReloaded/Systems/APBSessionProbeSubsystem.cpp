@@ -1,4 +1,5 @@
 #include "APBSessionProbeSubsystem.h"
+#include "CoreGlobals.h"
 #include "APBInteractable.h"
 #include "APBBotNPC.h"
 #include "APBFrontendTypes.h"
@@ -59,6 +60,7 @@ void UAPBSessionProbeSubsystem::StartProbe(const FString& InMode)
 	if (Mode == TEXT("client_loop")) LogPath += TEXT("client_loop.log");
 	else if (Mode == TEXT("playable")) LogPath += TEXT("playable_probe.log");
 	else if (Mode == TEXT("mp_observe")) LogPath += TEXT("mp_client_observe.log");
+	else if (Mode == TEXT("frontend_menu")) LogPath += TEXT("frontend_menu.log");
 	else if (Mode == TEXT("frontend_flow")) LogPath += TEXT("frontend_flow.log");
 	else LogPath += TEXT("probe.log");
 
@@ -128,13 +130,14 @@ void UAPBSessionProbeSubsystem::ArmProbeTimers(UWorld* World)
 		// Wait a few seconds for travel/join + OnRep before first poll
 		World->GetTimerManager().SetTimer(MpTimer, FTimerDelegate::CreateUObject(this, &UAPBSessionProbeSubsystem::MpPoll), 1.0f, true, 3.0f);
 	}
-	else if (Mode == TEXT("frontend_flow"))
+	else if (Mode == TEXT("frontend_menu") || Mode == TEXT("frontend_flow"))
 	{
-		// Cold-start on Frontend map; post-travel freeroam asserts run after OpenLevel
+		// Cold-start on Frontend map; frontend_flow additionally runs post-travel freeroam asserts.
 		bFrontendTravelPending = false;
 		FrontendEquippedSlots = 0;
+		bTerminal = false;
 		World->GetTimerManager().SetTimer(PlayableTimer, FTimerDelegate::CreateUObject(this, &UAPBSessionProbeSubsystem::RunFrontendFlowProbe), 2.0f, false);
-		AppendLog(TEXT("PROBE_TIMER frontend_flow in 2s"));
+		AppendLog(FString::Printf(TEXT("PROBE_TIMER %s in 2s"), *Mode));
 	}
 }
 
@@ -593,6 +596,30 @@ void UAPBSessionProbeSubsystem::MpPoll()
 	}
 }
 
+FString UAPBSessionProbeSubsystem::FrontendVerdictPrefix() const
+{
+	return (Mode == TEXT("frontend_menu")) ? TEXT("FRONTEND_MENU") : TEXT("FRONTEND_FLOW");
+}
+
+void UAPBSessionProbeSubsystem::EndFrontendProbe()
+{
+	if (bTerminal) return;
+	bTerminal = true;
+	if (UWorld* W = GetWorld()) W->GetTimerManager().ClearTimer(PlayableTimer);
+	if (UGameInstance* GI = GetGameInstance())
+	{
+		GI->GetTimerManager().ClearTimer(PlayableTimer);
+		GI->GetTimerManager().ClearTimer(FrontendTravelTimer);
+	}
+	RequestEngineExit(TEXT("APBProbe frontend terminal verdict"));
+}
+
+void UAPBSessionProbeSubsystem::FrontendFail(const FString& Reason)
+{
+	AppendLog(FString::Printf(TEXT("%s_FAIL %s"), *FrontendVerdictPrefix(), *Reason));
+	EndFrontendProbe();
+}
+
 void UAPBSessionProbeSubsystem::RunFrontendFlowProbe()
 {
 	// If we already traveled, this is the freeroam half (should be invoked via PostTravel).
@@ -604,7 +631,7 @@ void UAPBSessionProbeSubsystem::RunFrontendFlowProbe()
 
 	UGameInstance* GI = GetGameInstance();
 	UAPBGameInstanceSubsystem* APB = GI ? GI->GetSubsystem<UAPBGameInstanceSubsystem>() : nullptr;
-	if (!APB) { AppendLog(TEXT("FAIL no_apb")); return; }
+	if (!APB) { FrontendFail(TEXT("no_apb")); return; }
 
 	UWorld* World = GetWorld();
 	const FString MapName = World ? World->GetMapName() : TEXT("");
@@ -613,8 +640,8 @@ void UAPBSessionProbeSubsystem::RunFrontendFlowProbe()
 		|| MapName.Contains(TEXT("Lvl_APB_Frontend"), ESearchCase::IgnoreCase);
 	if (!bOnFrontend)
 	{
-		AppendLog(TEXT("FRONTEND_FLOW_FAIL need_default_Lvl_APB_Frontend_map (got wrong cold map)"));
 		AppendLog(TEXT("HINT launch without freeroam map override: -game only or /Game/Maps/Lvl_APB_Frontend"));
+		FrontendFail(TEXT("need_default_Lvl_APB_Frontend_map (got wrong cold map)"));
 		return;
 	}
 	AppendLog(TEXT("COLD_START_OK frontend_map=1"));
@@ -643,7 +670,7 @@ void UAPBSessionProbeSubsystem::RunFrontendFlowProbe()
 		UI->OnLoginClicked();
 		if (UI->GetStage() != EAPBFrontendStage::Login)
 		{
-			AppendLog(TEXT("FRONTEND_FLOW_FAIL expected_Login_after_bad_password"));
+			FrontendFail(TEXT("expected_Login_after_bad_password"));
 			return;
 		}
 		AppendLog(TEXT("login_fail stage=Login bad_password=1"));
@@ -652,7 +679,7 @@ void UAPBSessionProbeSubsystem::RunFrontendFlowProbe()
 		AppendLog(FString::Printf(TEXT("UI_STAGE=%s via_widget=1 action=OnLoginClicked login_ok"), *UI->GetStageToken()));
 		if (UI->GetStage() != EAPBFrontendStage::CharacterSelect)
 		{
-			AppendLog(TEXT("FRONTEND_FLOW_FAIL expected_CharacterSelect_after_OnLoginClicked"));
+			FrontendFail(TEXT("expected_CharacterSelect_after_OnLoginClicked"));
 			return;
 		}
 		AppendLog(TEXT("login_ok stage=CharacterSelect theme=841514482_APBTheme1"));
@@ -660,7 +687,7 @@ void UAPBSessionProbeSubsystem::RunFrontendFlowProbe()
 		AppendLog(FString::Printf(TEXT("UI_STAGE=%s via_widget=1 action=OnCreateCharOpen"), *UI->GetStageToken()));
 		if (UI->GetStage() != EAPBFrontendStage::CharacterCreate)
 		{
-			AppendLog(TEXT("FRONTEND_FLOW_FAIL expected_CharacterCreate_after_OnCreateCharOpen"));
+			FrontendFail(TEXT("expected_CharacterCreate_after_OnCreateCharOpen"));
 			return;
 		}
 	}
@@ -671,7 +698,7 @@ void UAPBSessionProbeSubsystem::RunFrontendFlowProbe()
 		APB->RegisterAccount(TEXT("player1"), TEXT("password"));
 		const bool bLogin0 = APB->Login(TEXT("player1"), TEXT("password"));
 		AppendLog(FString::Printf(TEXT("AUTH ok=%d"), bLogin0 ? 1 : 0));
-		if (!bLogin0) { AppendLog(TEXT("FRONTEND_FLOW_FAIL login")); return; }
+		if (!bLogin0) { FrontendFail(TEXT("login")); return; }
 		APB->EnterWorld(TEXT("W1"));
 		AppendLog(TEXT("UI_STAGE=CharacterSelect via_widget=0"));
 		AppendLog(TEXT("UI_STAGE=CharacterCreate via_widget=0"));
@@ -700,7 +727,7 @@ void UAPBSessionProbeSubsystem::RunFrontendFlowProbe()
 		BodyH, BodyB, bBody ? 1 : 0, ReadH, ReadB));
 	if (!bBody || FMath::Abs(ReadH - BodyH) > 0.001f)
 	{
-		AppendLog(TEXT("FRONTEND_FLOW_FAIL body_profile"));
+		FrontendFail(TEXT("body_profile"));
 		return;
 	}
 
@@ -714,7 +741,7 @@ void UAPBSessionProbeSubsystem::RunFrontendFlowProbe()
 	AppendLog(FString::Printf(TEXT("APPEARANCE slots_equipped=%d required=7"), FrontendEquippedSlots));
 	if (FrontendEquippedSlots < 7)
 	{
-		AppendLog(TEXT("FRONTEND_FLOW_FAIL clothing_slots"));
+		FrontendFail(TEXT("clothing_slots"));
 		return;
 	}
 
@@ -735,13 +762,25 @@ void UAPBSessionProbeSubsystem::RunFrontendFlowProbe()
 	AppendLog(FString::Printf(TEXT("DISTRICTS count=%d"), Districts.Num()));
 	const bool bJoin = APB->JoinDistrict(TEXT("Financial"));
 	AppendLog(FString::Printf(TEXT("DISTRICT_ENTER ok=%d district=Financial"), bJoin ? 1 : 0));
-	if (!bJoin) { AppendLog(TEXT("FRONTEND_FLOW_FAIL district")); return; }
+	if (!bJoin) { FrontendFail(TEXT("district")); return; }
 	APB->PushDomainSnapshotToAllPlayerStates();
 
 	// Real travel — same path as UI Enter District
 	const FString TravelMap = TEXT("Lvl_APB_Financial_Freeroam");
 	const FString Opts = TEXT("listen?game=/Script/APBReloaded.APBFreeroamGameMode");
 	AppendLog(FString::Printf(TEXT("TRAVEL_REQUEST map=%s opts=%s"), *TravelMap, *Opts));
+
+	// frontend_menu (M4 gate) stops at travel dispatch: every UI stage validated + district
+	// selected + OpenLevel called. Post-travel playables are the M9/M12 frontend_flow gate.
+	if (Mode == TEXT("frontend_menu"))
+	{
+		UGameplayStatics::OpenLevel(this, FName(*TravelMap), true, Opts);
+		AppendLog(TEXT("TRAVEL_OPENLEVEL_CALLED"));
+		AppendLog(TEXT("FRONTEND_MENU_OK"));
+		EndFrontendProbe();
+		return;
+	}
+
 	bFrontendTravelPending = true;
 	if (GI)
 	{
@@ -757,6 +796,7 @@ void UAPBSessionProbeSubsystem::RunFrontendFlowProbe()
 
 void UAPBSessionProbeSubsystem::RunFrontendFlowPostTravel()
 {
+	if (bTerminal) return;
 	bFrontendTravelPending = false;
 	UGameInstance* GI = GetGameInstance();
 	UAPBGameInstanceSubsystem* APB = GI ? GI->GetSubsystem<UAPBGameInstanceSubsystem>() : nullptr;
@@ -765,8 +805,7 @@ void UAPBSessionProbeSubsystem::RunFrontendFlowPostTravel()
 	AppendLog(FString::Printf(TEXT("MAP_AFTER_TRAVEL map=%s"), *MapName));
 	if (!MapName.Contains(TEXT("Financial"), ESearchCase::IgnoreCase))
 	{
-		AppendLog(TEXT("FRONTEND_FLOW_FAIL travel_map_not_financial"));
-		AppendLog(TEXT("FRONTEND_FLOW_FAIL"));
+		FrontendFail(TEXT("travel_map_not_financial"));
 		return;
 	}
 	AppendLog(TEXT("UI_STAGE=InDistrict after_travel=1"));
@@ -847,4 +886,5 @@ void UAPBSessionProbeSubsystem::RunFrontendFlowPostTravel()
 	{
 		AppendLog(TEXT("FRONTEND_FLOW_FAIL post_travel_playables"));
 	}
+	EndFrontendProbe();
 }
