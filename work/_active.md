@@ -160,8 +160,10 @@ active milestone (recorded in this file, keeping one plan per effort).
 - Actions: restage Login/CharSelect/DistrictSelect to 2011 layout using extracted chrome +
   `[APBLoginScreen]`/`[CharacterSelectScreen]` strings + UI sfx; boot flow splash video →
   login; 2011 menu music (existing extracted theme WAVs).
-- Verify: updated layout-math tests green; `-APBProbe=frontend_flow` passes; side-by-side
-  screenshot fidelity checklist vs 2011 capture stored in `work\` signed off.
+- Verify: updated layout-math tests green; `-APBProbe=frontend_menu` passes (terminal
+  `FRONTEND_MENU_OK`, self-exits) — menu-scoped gate independent of M9 geometry / M12 vehicles;
+  composite `frontend_flow` held as M9+M12 integration gate (`run_verification_gates.ps1 -IntegrationGate`);
+  side-by-side screenshot fidelity checklist vs 2011 capture (`work\menu2011_fidelity_checklist.md`) signed off.
 
 ### M5 — Retail character creation  *(brief #4 — D4)*
 - Files: `Domain\APBCustomization.*`, `Content\Data\{clothing.json, palettes.json}`,

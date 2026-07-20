@@ -1,11 +1,12 @@
 # Fail-fast verification gate spine for APB Reloaded 1:1.
-# Order: bind report -> domain tests -> host client_loop -> client mp_observe -> playable.
+# Order: bind report -> domain tests -> host client_loop -> client mp_observe -> playable -> frontend_menu (M4) -> frontend_flow (M9+M12, -IntegrationGate).
 param(
   [string]$Scratch = "C:\Users\Support\AppData\Local\Temp\grok-goal-4ec7b7726483\implementer",
   [string]$Project = "D:\APBReloaded\APBReloaded.uproject",
   [string]$Editor = "D:\UE58\UE_5.8\Engine\Binaries\Win64\UnrealEditor.exe",
   [string]$Map = "/Game/Maps/Lvl_APB_Financial_Freeroam",
-  [int]$Port = 17777
+  [int]$Port = 17777,
+  [switch]$IntegrationGate
 )
 
 $ErrorActionPreference = "Stop"
@@ -77,7 +78,9 @@ $mpLog = Join-Path $Scratch "mp_client_observe.log"
 $mpDistrict = Join-Path $Scratch "mp_district.log"
 $playable = Join-Path $Scratch "playable_probe.log"
 $freeroam = Join-Path $Scratch "freeroam_district.log"
-Remove-Item $clientLoop, $mpLog, $mpDistrict, $playable, $freeroam -Force -ErrorAction SilentlyContinue
+$frontendMenu = Join-Path $Scratch "frontend_menu.log"
+$frontendFlow = Join-Path $Scratch "frontend_flow.log"
+Remove-Item $clientLoop, $mpLog, $mpDistrict, $playable, $freeroam, $frontendMenu, $frontendFlow -Force -ErrorAction SilentlyContinue
 
 # 2) Host listen + client_loop (map URL must include ?listen for UE IpNetDriver)
 Log "STEP host_client_loop"
@@ -212,6 +215,68 @@ if (Test-Path $freeroam) {
   Log "FREEROAM_LOG_PRESENT"
 }
 
+# 5) Frontend menu gate (M4): 2011 menu Splash->Login->CharSelect->CharCreate->DistrictSelect->travel dispatch.
+# Terminates at TRAVEL_OPENLEVEL_CALLED with FRONTEND_MENU_OK; independent of M9 geometry / M12 vehicles.
+$FrontendMap = "/Game/Maps/Lvl_APB_Frontend"
+Log "STEP frontend_menu"
+$fmArgs = @(
+  $Project, $FrontendMap, "-game",
+  "-APBProbe=frontend_menu", "-APBScratch=$Scratch", "-nosplash", "-nosound", "-nullrhi", "-unattended", "-log"
+)
+$fmProc = Start-Process -FilePath $Editor -ArgumentList $fmArgs -PassThru -WorkingDirectory (Split-Path $Editor) -NoNewWindow
+$sw5 = [Diagnostics.Stopwatch]::StartNew()
+$okFm = $false
+$fmFail = $false
+while (-not $fmProc.HasExited -and $sw5.Elapsed.TotalSeconds -lt 120) {
+  Start-Sleep 2
+  if (Test-Path $frontendMenu) {
+    $c = Get-Content $frontendMenu -Raw -ErrorAction SilentlyContinue
+    if ($c -match "FRONTEND_MENU_OK") { $okFm = $true; Start-Sleep 2; break }
+    if ($c -match "FRONTEND_MENU_FAIL") { $fmFail = $true; break }
+  }
+}
+Stop-Soft $fmProc
+if ($fmFail) {
+  $fmTail = if (Test-Path $frontendMenu) { (Get-Content $frontendMenu -ErrorAction SilentlyContinue | Where-Object { $_ -match "FRONTEND_MENU_FAIL|UI_STAGE|DISTRICT" } | Select-Object -Last 6) -join " | " } else { "" }
+  Fail "frontend_menu probe reported FRONTEND_MENU_FAIL : $fmTail"
+}
+if (-not $okFm) { Fail "frontend_menu probe did not write FRONTEND_MENU_OK within timeout" }
+Require-Fresh $frontendMenu (Get-Date).AddMinutes(-5) "FRONTEND_MENU_OK"
+Log "FRONTEND_MENU_OK"
+
+# 6) Frontend flow integration gate (M9 geometry + M12 vehicles): menu THEN post-travel freeroam
+# playables. Off by default because post-travel props/walk/vehicle need content that lands in later
+# milestones; enable with -IntegrationGate once those ship.
+if ($IntegrationGate) {
+  Log "STEP frontend_flow"
+  $ffArgs = @(
+    $Project, $FrontendMap, "-game",
+    "-APBProbe=frontend_flow", "-APBScratch=$Scratch", "-nosplash", "-nosound", "-nullrhi", "-unattended", "-log"
+  )
+  $ffProc = Start-Process -FilePath $Editor -ArgumentList $ffArgs -PassThru -WorkingDirectory (Split-Path $Editor) -NoNewWindow
+  $sw4 = [Diagnostics.Stopwatch]::StartNew()
+  $okFf = $false
+  $ffFail = $false
+  while (-not $ffProc.HasExited -and $sw4.Elapsed.TotalSeconds -lt 150) {
+    Start-Sleep 2
+    if (Test-Path $frontendFlow) {
+      $c = Get-Content $frontendFlow -Raw -ErrorAction SilentlyContinue
+      if ($c -match "FRONTEND_FLOW_OK") { $okFf = $true; Start-Sleep 2; break }
+      if ($c -match "FRONTEND_FLOW_FAIL") { $ffFail = $true; break }
+    }
+  }
+  Stop-Soft $ffProc
+  if ($ffFail) {
+    $ffTail = if (Test-Path $frontendFlow) { (Get-Content $frontendFlow -ErrorAction SilentlyContinue | Where-Object { $_ -match "FRONTEND_FLOW_FAIL|UI_STAGE|GATE " } | Select-Object -Last 6) -join " | " } else { "" }
+    Fail "frontend_flow probe reported FRONTEND_FLOW_FAIL : $ffTail"
+  }
+  if (-not $okFf) { Fail "frontend_flow probe did not write FRONTEND_FLOW_OK within timeout" }
+  Require-Fresh $frontendFlow (Get-Date).AddMinutes(-5) "FRONTEND_FLOW_OK"
+  Log "FRONTEND_FLOW_OK"
+} else {
+  Log "FRONTEND_FLOW_SKIPPED integration_gate_off (enable with -IntegrationGate after M9+M12)"
+}
+
 Log "GATE_PASS"
 $summary = @{
   gate = "PASS"
@@ -222,6 +287,8 @@ $summary = @{
   mp_parity = "OK"
   playable_walk = "OK"
   playable_drive = "OK"
+  frontend_menu = "FRONTEND_MENU_OK"
+  frontend_flow = if ($IntegrationGate) { "FRONTEND_FLOW_OK" } else { "SKIPPED_integration_gate_off" }
   time = (Get-Date).ToString("o")
 } | ConvertTo-Json
 Set-Content -Path (Join-Path $Scratch "gate_summary.json") -Value $summary
