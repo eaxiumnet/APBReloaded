@@ -23,6 +23,7 @@ class UMediaPlayer;
 class UMediaTexture;
 class UFileMediaSource;
 class USlider;
+class USoundBase;
 
 UCLASS()
 class APBRELOADED_API UAPBFrontendWidget : public UUserWidget
@@ -82,6 +83,10 @@ public:
 	UFUNCTION() void OnDistrictRow5();
 	UFUNCTION() void OnDistrictRow6();
 	UFUNCTION() void OnDistrictRow7();
+	UFUNCTION() void OnAnyHover();
+	UFUNCTION() void OnAccountLink();
+	UFUNCTION() void OnReplayVideosLink();
+	UFUNCTION() void OnRememberToggled(bool bIsChecked);
 
 	void StartLoginMusic();
 	void StopLoginMusic();
@@ -114,12 +119,17 @@ protected:
 	void SelectDistrictIndex(int32 Index);
 	void RefreshFactionButtons();
 	void RefreshVolumeLabel();
-	void LoadLobbyChromeTextures();
+	void LoadMenu2011Assets();
 	void ApplyDisplaySettings();
 	void RefreshResolutionLabel();
 	/** Design-space panel size for current stage (1920×1080 reference). */
 	void GetDesignPanelSize(float& OutW, float& OutH) const;
-	UTexture2D* ImportUiTex(const FString& FileName) const;
+	/** 2011 string table (Content/Data/ui_strings_2011.json) with hardcoded fallbacks. */
+	void LoadUiStrings2011();
+	FString S2011(const FString& SectionKey, const FString& Fallback) const;
+	/** Staged 2011 UI sounds (/Game/Audio/UI) — spec §7 swappable mapping table. */
+	void LoadUiSounds();
+	void PlayUiSfx(FName SfxSlot);
 	void ApplyTextureToImage(UImage* Img, UTexture2D* Tex, FLinearColor Tint = FLinearColor::White);
 	void ApplyTextureToBorder(UBorder* Border, UTexture2D* Tex, FLinearColor Tint);
 	UImage* MakeImage(const FString& Name, UTexture2D* Tex, float H = 0.f);
@@ -177,6 +187,37 @@ protected:
 	UPROPERTY() TObjectPtr<UTexture2D> TexAvatarMale = nullptr;
 	UPROPERTY() TObjectPtr<UTexture2D> TexAvatarFemale = nullptr;
 	bool bLobbyChromeLoaded = false;
+
+	// ---- M4b: staged 2011 menu chrome (/Game/Imported/UI/Menu2011, spec §2) ----
+	UPROPERTY() TObjectPtr<UTexture2D> TexWindowPanel = nullptr;   // MessageBox_BG (9-slice)
+	UPROPERTY() TObjectPtr<UTexture2D> TexBtnOn = nullptr;         // Menu_Button_On
+	UPROPERTY() TObjectPtr<UTexture2D> TexBtnOff = nullptr;        // Menu_Button_Off
+	UPROPERTY() TObjectPtr<UTexture2D> TexBtnLight = nullptr;      // Menu_Button_Light (amber select)
+	UPROPERTY() TObjectPtr<UTexture2D> TexTextEntry = nullptr;     // APB_BG_TextEntry (underline field)
+	UPROPERTY() TObjectPtr<UTexture2D> TexCheckTrue = nullptr;     // Check_True
+	UPROPERTY() TObjectPtr<UTexture2D> TexCheckFalse = nullptr;    // Check_False
+	UPROPERTY() TObjectPtr<UTexture2D> TexBrandKey = nullptr;      // JKICON_login_header_key
+	UPROPERTY() TObjectPtr<UTexture2D> TexFooter = nullptr;        // frontendFooter grunge strip
+	UPROPERTY() TObjectPtr<UTexture2D> TexCloseBtn = nullptr;      // JKICON_close_default
+	UPROPERTY() TObjectPtr<UTexture2D> TexRing = nullptr;          // BG_Button_Active_Ring (rating badge)
+	UPROPERTY() TObjectPtr<UTexture2D> TexDistFinancial = nullptr;
+	UPROPERTY() TObjectPtr<UTexture2D> TexDistSocial = nullptr;
+	UPROPERTY() TObjectPtr<UTexture2D> TexDistWaterfront = nullptr;
+
+	UPROPERTY() TObjectPtr<UBorder> FooterBar = nullptr;           // bottom grunge strip (Login only)
+	UPROPERTY() TObjectPtr<UImage> SplashLogo = nullptr;           // LoadingScreen_APB (Splash only)
+	UPROPERTY() TObjectPtr<UImage> TitleChip = nullptr;            // amber key glyph in title row
+	UPROPERTY() TObjectPtr<UButton> TitleCloseBtn = nullptr;       // window close → exit to desktop
+	UPROPERTY() TObjectPtr<UCheckBox> RememberCheck = nullptr;
+
+	/** [Section].[Key] → text, from ui_strings_2011.json. */
+	TMap<FString, FString> UiStrings2011;
+	bool bUiStringsLoaded = false;
+	/** Spec §7 sfx slots (UI_Hover/UI_Click/...) → staged sound. */
+	UPROPERTY() TMap<FName, TObjectPtr<USoundBase>> UiSfx;
+	bool bUiSfxLoaded = false;
+	/** First-run state: tall Login window with TOS scroll + Accept (spec §3.2 State A). */
+	bool bFirstRunTOS = false;
 
 	UPROPERTY() TObjectPtr<USizeBox> PanelSizeBox = nullptr;
 	UPROPERTY() TObjectPtr<UBorder> PanelBorder = nullptr;

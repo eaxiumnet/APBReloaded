@@ -47,22 +47,27 @@
 #include "MediaPlayer.h"
 #include "MediaTexture.h"
 #include "FileMediaSource.h"
+#include "Components/Overlay.h"
+#include "Components/OverlaySlot.h"
+#include "Dom/JsonObject.h"
+#include "Serialization/JsonReader.h"
+#include "Serialization/JsonSerializer.h"
 
-// 2011 GameFlow Login_Scene palette (from Login_Scene_Preview):
-// light video bed + centered near-black plate + thin cyan header strip
+// 2011 RTW GameFlow palette (menu2011_spec §2.3): monochrome greys + single amber accent.
+// #FFC254 is the Menu_Button_Light selection amber — replaces the old cyan identity.
 static const FLinearColor APB_PAPER(0.f, 0.f, 0.f, 1.f);
 static const FLinearColor APB_BG(0.f, 0.f, 0.f, 1.f);
-static const FLinearColor APB_PANEL(0.04f, 0.04f, 0.05f, 0.94f);
-static const FLinearColor APB_PANEL_EDGE(0.15f, 0.72f, 0.92f, 1.f); // cyan header
+static const FLinearColor APB_PANEL(0.31f, 0.31f, 0.31f, 0.96f);      // #4F4F4F MessageBox_BG
+static const FLinearColor APB_PANEL_EDGE(1.f, 0.761f, 0.329f, 1.f);   // #FFC254 amber frame
 static const FLinearColor APB_FIELD(0.08f, 0.09f, 0.10f, 1.f);
-static const FLinearColor APB_FIELD_FOCUS(0.06f, 0.14f, 0.18f, 1.f);
-static const FLinearColor APB_CYAN(0.22f, 0.82f, 0.96f, 1.f);
-static const FLinearColor APB_AMBER(0.95f, 0.70f, 0.20f, 1.f);
+static const FLinearColor APB_FIELD_FOCUS(0.10f, 0.10f, 0.11f, 1.f);
+static const FLinearColor APB_AMBER(1.f, 0.761f, 0.329f, 1.f);        // #FFC254
+static const FLinearColor APB_AMBER_HI(1.f, 0.984f, 0.612f, 1.f);     // #FFFB9C
 static const FLinearColor APB_WHITE(0.96f, 0.97f, 0.98f, 1.f);
 static const FLinearColor APB_MUTED(0.62f, 0.66f, 0.70f, 1.f);
 static const FLinearColor APB_BTN(0.16f, 0.17f, 0.19f, 1.f);
-static const FLinearColor APB_BTN_HOVER(0.22f, 0.48f, 0.62f, 1.f);
-static const FLinearColor APB_BTN_OK(0.12f, 0.42f, 0.55f, 1.f); // cyan-metal primary (not green "web")
+static const FLinearColor APB_BTN_HOVER(0.34f, 0.28f, 0.16f, 1.f);
+static const FLinearColor APB_BTN_OK(0.42f, 0.30f, 0.10f, 1.f);       // amber-metal primary
 static const FLinearColor APB_BTN_DANGER(0.28f, 0.14f, 0.14f, 1.f);
 static const FLinearColor APB_CRIM(0.72f, 0.12f, 0.14f, 1.f);
 static const FLinearColor APB_ENF(0.12f, 0.32f, 0.62f, 1.f);
@@ -74,6 +79,27 @@ static void APB_MakeBoxBrush(FSlateBrush& Brush, const FLinearColor& Tint)
 	Brush.TintColor = FSlateColor(Tint);
 	// Thin edge via margin (solid plate look)
 	Brush.Margin = FMargin(0.f);
+}
+
+/** Flat image brush from a staged 2011 texture (shape lives in alpha; tint with care). */
+static FSlateBrush APB_TexBrush(UTexture2D* Tex, const FLinearColor& Tint)
+{
+	FSlateBrush Brush;
+	Brush.DrawAs = ESlateBrushDrawType::Image;
+	Brush.SetResourceObject(Tex);
+	Brush.TintColor = FSlateColor(Tint);
+	return Brush;
+}
+
+/** 9-slice brush from a staged 2011 panel texture (MessageBox_BG margin ≈ 26/512). */
+static FSlateBrush APB_PanelBrush(UTexture2D* Tex, const FLinearColor& Tint)
+{
+	FSlateBrush Brush;
+	Brush.DrawAs = ESlateBrushDrawType::Box;
+	Brush.SetResourceObject(Tex);
+	Brush.Margin = FMargin(0.05f);
+	Brush.TintColor = FSlateColor(Tint);
+	return Brush;
 }
 
 UTextBlock* UAPBFrontendWidget::MakeLabel(const FString& Name, const FString& Text, int32 Size, FLinearColor Color)
@@ -94,24 +120,36 @@ UButton* UAPBFrontendWidget::MakeButton(const FString& Name, const FString& Labe
 
 UButton* UAPBFrontendWidget::MakeAccentButton(const FString& Name, const FString& Label, FLinearColor NormalTint)
 {
-	// Retro metal plate buttons: flat fill, cyan-lean hover, compact padding
+	// 2011 menu buttons: staged Menu_Button_Off/On/Light plates; amber box fallback while unstaged
 	UButton* B = WidgetTree->ConstructWidget<UButton>(UButton::StaticClass(), *Name);
 	FButtonStyle Style = B->GetStyle();
-	const FLinearColor Hover = FLinearColor(
-		FMath::Min(1.f, NormalTint.R + 0.12f),
-		FMath::Min(1.f, NormalTint.G + 0.22f),
-		FMath::Min(1.f, NormalTint.B + 0.28f),
-		1.f);
-	const FLinearColor Press = NormalTint * FLinearColor(0.55f, 0.55f, 0.55f, 1.f);
-	APB_MakeBoxBrush(Style.Normal, NormalTint);
-	APB_MakeBoxBrush(Style.Hovered, Hover);
-	APB_MakeBoxBrush(Style.Pressed, Press);
-	APB_MakeBoxBrush(Style.Disabled, NormalTint * 0.5f);
+	const bool bHasPlates = (TexBtnOff != nullptr);
+	if (bHasPlates)
+	{
+		Style.Normal = APB_TexBrush(TexBtnOff, FLinearColor::White);
+		Style.Hovered = APB_TexBrush(TexBtnOn ? TexBtnOn : TexBtnOff, FLinearColor::White);
+		Style.Pressed = APB_TexBrush(TexBtnLight ? TexBtnLight : TexBtnOff, FLinearColor::White);
+		Style.Disabled = APB_TexBrush(TexBtnOff, FLinearColor::White.CopyWithNewOpacity(0.5f));
+	}
+	else
+	{
+		const FLinearColor Hover = FLinearColor(
+			FMath::Min(1.f, NormalTint.R + 0.12f),
+			FMath::Min(1.f, NormalTint.G + 0.22f),
+			FMath::Min(1.f, NormalTint.B + 0.28f),
+			1.f);
+		const FLinearColor Press = NormalTint * FLinearColor(0.55f, 0.55f, 0.55f, 1.f);
+		APB_MakeBoxBrush(Style.Normal, NormalTint);
+		APB_MakeBoxBrush(Style.Hovered, Hover);
+		APB_MakeBoxBrush(Style.Pressed, Press);
+		APB_MakeBoxBrush(Style.Disabled, NormalTint * 0.5f);
+	}
 	Style.NormalPadding = FMargin(14.f, 7.f);
 	Style.PressedPadding = FMargin(14.f, 7.f);
 	B->SetStyle(Style);
 	B->SetBackgroundColor(NormalTint);
-	UTextBlock* L = MakeLabel(Name + TEXT("_L"), Label.ToUpper(), 12, APB_WHITE);
+	B->OnHovered.AddDynamic(this, &UAPBFrontendWidget::OnAnyHover);
+	UTextBlock* L = MakeLabel(Name + TEXT("_L"), Label.ToUpper(), 12, bHasPlates ? APB_AMBER : APB_WHITE);
 	L->SetJustification(ETextJustify::Center);
 	B->AddChild(L);
 	return B;
@@ -119,72 +157,195 @@ UButton* UAPBFrontendWidget::MakeAccentButton(const FString& Name, const FString
 
 UEditableTextBox* UAPBFrontendWidget::MakeTextField(const FString& Name, const FString& Hint, bool bPassword)
 {
-	// Inset field: dark fill, subtle cyan focus (GameFlow text entry feel)
+	// 2011 login field: staged APB_BG_TextEntry underline plate; dark inset fallback
 	UEditableTextBox* Box = WidgetTree->ConstructWidget<UEditableTextBox>(UEditableTextBox::StaticClass(), *Name);
 	Box->SetHintText(FText::FromString(Hint));
 	Box->SetIsPassword(bPassword);
 	Box->SetForegroundColor(APB_WHITE);
 	FEditableTextBoxStyle Style = Box->WidgetStyle;
-	APB_MakeBoxBrush(Style.BackgroundImageNormal, APB_FIELD);
-	APB_MakeBoxBrush(Style.BackgroundImageHovered, APB_FIELD + FLinearColor(0.03f, 0.03f, 0.04f, 0.f));
-	APB_MakeBoxBrush(Style.BackgroundImageFocused, APB_FIELD_FOCUS);
-	APB_MakeBoxBrush(Style.BackgroundImageReadOnly, APB_FIELD * 0.8f);
+	if (TexTextEntry)
+	{
+		Style.BackgroundImageNormal = APB_TexBrush(TexTextEntry, FLinearColor::White);
+		Style.BackgroundImageHovered = APB_TexBrush(TexTextEntry, APB_AMBER);
+		Style.BackgroundImageFocused = APB_TexBrush(TexTextEntry, APB_AMBER_HI);
+		Style.BackgroundImageReadOnly = APB_TexBrush(TexTextEntry, FLinearColor::White.CopyWithNewOpacity(0.6f));
+	}
+	else
+	{
+		APB_MakeBoxBrush(Style.BackgroundImageNormal, APB_FIELD);
+		APB_MakeBoxBrush(Style.BackgroundImageHovered, APB_FIELD + FLinearColor(0.03f, 0.03f, 0.04f, 0.f));
+		APB_MakeBoxBrush(Style.BackgroundImageFocused, APB_FIELD_FOCUS);
+		APB_MakeBoxBrush(Style.BackgroundImageReadOnly, APB_FIELD * 0.8f);
+	}
 	Style.Padding = FMargin(10.f, 8.f);
 	Style.ForegroundColor = FSlateColor(APB_WHITE);
 	Box->WidgetStyle = Style;
 	return Box;
 }
 
-UTexture2D* UAPBFrontendWidget::ImportUiTex(const FString& FileName) const
+/** Load a staged 2011 menu texture from /Game/Imported/UI/Menu2011/<Sub>/<Name>. */
+static UTexture2D* APB_LoadMenu2011Tex(const TCHAR* Sub, const TCHAR* Name)
 {
-	const FString ContentRoot = FPaths::ConvertRelativePathToFull(FPaths::ProjectContentDir());
-	const FString Candidates[] = {
-		ContentRoot / TEXT("UI/Frontend/Retail") / FileName,
-		ContentRoot / TEXT("UI/Frontend/2011") / FileName,
-		ContentRoot / TEXT("Extracted/Retail/LogoExport/APBMenus_Art_GameFlowScenes/Texture2D") / FileName,
-		ContentRoot / TEXT("Extracted/UI/2011_rtw/APBMenus_Art_GameFlowScenes/APBMenus_Art_GameFlowScenes/Texture2D") / FileName,
-		ContentRoot / TEXT("Extracted/UI/2011_rtw/APBMenus_GameFlowScenes/APBMenus_GameFlowScenes/Texture2D") / FileName,
-		ContentRoot / TEXT("Extracted/UI/2011_rtw/APBMenus_Art/APBMenus_Art/Texture2D") / FileName,
-	};
-	for (const FString& P : Candidates)
-	{
-		if (!FPaths::FileExists(P)) continue;
-		if (UTexture2D* T = FImageUtils::ImportFileAsTexture2D(P))
-		{
-			UE_LOG(LogTemp, Log, TEXT("APBFrontend TEX %s <= %s"), *FileName, *P);
-			return T;
-		}
-	}
-	UE_LOG(LogTemp, Warning, TEXT("APBFrontend TEX miss %s"), *FileName);
-	return nullptr;
+	const FString Path = FString::Printf(TEXT("/Game/Imported/UI/Menu2011/%s/%s.%s"), Sub, Name, Name);
+	UTexture2D* T = LoadObject<UTexture2D>(nullptr, *Path);
+	if (!T) UE_LOG(LogTemp, Warning, TEXT("APBFrontend TEX miss %s"), *Path);
+	return T;
 }
 
-void UAPBFrontendWidget::LoadLobbyChromeTextures()
+void UAPBFrontendWidget::LoadMenu2011Assets()
 {
 	if (bLobbyChromeLoaded) return;
 	bLobbyChromeLoaded = true;
-	// Art used as full-bleed / character framing — not as button 9-slices
-	TexGraffiti = ImportUiTex(TEXT("NewBackgroundImage.png"));
-	if (!TexGraffiti) TexGraffiti = ImportUiTex(TEXT("NewBackgroundImage.tga"));
-	// Retail as-is: Login_APB_Logo.png (APB RELOADED) — do not reprocess
-	TexLogo = ImportUiTex(TEXT("Login_APB_Logo.png"));
-	TexFactionCrim = ImportUiTex(TEXT("CriminalFactionicon.tga"));
-	if (!TexFactionCrim) TexFactionCrim = ImportUiTex(TEXT("newCriminalcon.tga"));
-	if (!TexFactionCrim) TexFactionCrim = ImportUiTex(TEXT("LoadingScreen_FactionIcon_Crim.tga"));
-	TexFactionCrimOff = ImportUiTex(TEXT("CriminalFactionicon_Unselected.tga"));
-	TexFactionEnf = ImportUiTex(TEXT("EnforcerFactionicon.tga"));
-	if (!TexFactionEnf) TexFactionEnf = ImportUiTex(TEXT("newEnforcerIcon.tga"));
-	if (!TexFactionEnf) TexFactionEnf = ImportUiTex(TEXT("LoadingScreen_FactionIcon_Enf.tga"));
-	TexFactionEnfOff = ImportUiTex(TEXT("EnforcerFactionicon_Unselected.tga"));
+
+	// Branding / splash
+	TexLogo = APB_LoadMenu2011Tex(TEXT("Loading"), TEXT("LoadingScreen_APB"));
+	// Full-bleed graffiti backdrop
+	TexGraffiti = APB_LoadMenu2011Tex(TEXT("Login"), TEXT("NewBackgroundImage"));
+	// Faction icons (kept for character create/select plates)
+	TexFactionCrim = APB_LoadMenu2011Tex(TEXT("CharSelect"), TEXT("CriminalFactionicon"));
+	TexFactionCrimOff = APB_LoadMenu2011Tex(TEXT("CharSelect"), TEXT("CriminalFactionicon_Unselected"));
+	TexFactionEnf = APB_LoadMenu2011Tex(TEXT("CharSelect"), TEXT("EnforcerFactionicon"));
+	TexFactionEnfOff = APB_LoadMenu2011Tex(TEXT("CharSelect"), TEXT("EnforcerFactionicon_Unselected"));
+	// Window chrome + controls
+	TexWindowPanel = APB_LoadMenu2011Tex(TEXT("Chrome"), TEXT("MessageBox_BG"));
+	TexBtnOn = APB_LoadMenu2011Tex(TEXT("Chrome"), TEXT("Menu_Button_On"));
+	TexBtnOff = APB_LoadMenu2011Tex(TEXT("Chrome"), TEXT("Menu_Button_Off"));
+	TexBtnLight = APB_LoadMenu2011Tex(TEXT("Chrome"), TEXT("Menu_Button_Light"));
+	TexTextEntry = APB_LoadMenu2011Tex(TEXT("Login"), TEXT("APB_BG_TextEntry"));
+	TexCheckTrue = APB_LoadMenu2011Tex(TEXT("Login"), TEXT("Check_True"));
+	TexCheckFalse = APB_LoadMenu2011Tex(TEXT("Login"), TEXT("Check_False"));
+	TexBrandKey = APB_LoadMenu2011Tex(TEXT("Login"), TEXT("JKICON_login_header_key"));
+	TexFooter = APB_LoadMenu2011Tex(TEXT("Login"), TEXT("frontendFooter"));
+	TexCloseBtn = APB_LoadMenu2011Tex(TEXT("Login"), TEXT("JKICON_close_default"));
+	TexRing = APB_LoadMenu2011Tex(TEXT("Chrome"), TEXT("BG_Button_Active_Ring"));
+	// District splash photos
+	TexDistFinancial = APB_LoadMenu2011Tex(TEXT("DistrictSelect"), TEXT("FinancialDistrict_MainPhoto256x195"));
+	TexDistSocial = APB_LoadMenu2011Tex(TEXT("DistrictSelect"), TEXT("SocialDistrict_MainPhoto256x195"));
+	TexDistWaterfront = APB_LoadMenu2011Tex(TEXT("DistrictSelect"), TEXT("WaterfrontDistrict_MainPhoto256x195"));
+
 	// No full-screen male/female character overlays
 	TexAvatarMale = nullptr;
 	TexAvatarFemale = nullptr;
-	UE_LOG(LogTemp, Warning, TEXT("APBFrontend ART logo_reloaded=%d graffiti=%d facC=%d facE=%d (no L/R avatar overlays)"),
-		TexLogo ? 1 : 0, TexGraffiti ? 1 : 0, TexFactionCrim ? 1 : 0, TexFactionEnf ? 1 : 0);
+	UE_LOG(LogTemp, Warning, TEXT("APBFrontend ART2011 logo=%d graffiti=%d panel=%d btn=%d/%d/%d entry=%d footer=%d ring=%d facC=%d facE=%d"),
+		TexLogo ? 1 : 0, TexGraffiti ? 1 : 0, TexWindowPanel ? 1 : 0,
+		TexBtnOn ? 1 : 0, TexBtnOff ? 1 : 0, TexBtnLight ? 1 : 0,
+		TexTextEntry ? 1 : 0, TexFooter ? 1 : 0, TexRing ? 1 : 0,
+		TexFactionCrim ? 1 : 0, TexFactionEnf ? 1 : 0);
 }
 
-// Prefer Content/UI/Frontend/Retail for Login_APB_Logo if not in 2011 folder
-// (ImportUiTex candidates already include 2011; add Retail path in ImportUiTex)
+void UAPBFrontendWidget::LoadUiStrings2011()
+{
+	if (bUiStringsLoaded) return;
+	bUiStringsLoaded = true;
+
+	const FString JsonPath = FPaths::ProjectContentDir() / TEXT("Data/ui_strings_2011.json");
+	FString Raw;
+	if (!FFileHelper::LoadFileToString(Raw, *JsonPath))
+	{
+		UE_LOG(LogTemp, Warning, TEXT("APBFrontend STR2011 missing %s"), *JsonPath);
+		return;
+	}
+	TSharedPtr<FJsonObject> Root;
+	TSharedRef<TJsonReader<>> Reader = TJsonReaderFactory<>::Create(Raw);
+	if (!FJsonSerializer::Deserialize(Reader, Root) || !Root.IsValid())
+	{
+		UE_LOG(LogTemp, Warning, TEXT("APBFrontend STR2011 parse failed %s"), *JsonPath);
+		return;
+	}
+	for (const auto& Sec : Root->Values)
+	{
+		if (Sec.Key == TEXT("_meta")) continue;
+		const TSharedPtr<FJsonObject>* SecObj = nullptr;
+		if (!Sec.Value.IsValid() || !Sec.Value->TryGetObject(SecObj) || !SecObj || !SecObj->IsValid()) continue;
+		for (const auto& KV : (*SecObj)->Values)
+		{
+			FString Val;
+			if (KV.Value.IsValid() && KV.Value->TryGetString(Val))
+			{
+				UiStrings2011.Add(FString(Sec.Key) + TEXT(".") + FString(KV.Key), Val);
+			}
+		}
+	}
+	UE_LOG(LogTemp, Log, TEXT("APBFrontend STR2011 loaded %d strings"), UiStrings2011.Num());
+}
+
+FString UAPBFrontendWidget::S2011(const FString& SectionKey, const FString& Fallback) const
+{
+	if (const FString* Found = UiStrings2011.Find(SectionKey))
+	{
+		return *Found;
+	}
+	return Fallback;
+}
+
+void UAPBFrontendWidget::LoadUiSounds()
+{
+	if (bUiSfxLoaded) return;
+	bUiSfxLoaded = true;
+
+	// Spec §7: 2011 menu sfx slots → staged /Game/Audio/UI assets
+	struct FSfxRow { FName Slot; const TCHAR* Asset; };
+	const FSfxRow Rows[] = {
+		{ TEXT("UI_Hover"),       TEXT("TabSound_10") },
+		{ TEXT("UI_Click"),       TEXT("ButtonPos") },
+		{ TEXT("UI_Back"),        TEXT("Button2") },
+		{ TEXT("UI_Error"),       TEXT("Error") },
+		{ TEXT("UI_Popup"),       TEXT("PopUp") },
+		{ TEXT("UI_SceneOpen"),   TEXT("Positive3") },
+		{ TEXT("UI_ListSelect"),  TEXT("Spark") },
+		{ TEXT("UI_CharConfirm"), TEXT("Positive") },
+		{ TEXT("UI_SliderTick"),  TEXT("Button4_616844292") },
+		{ TEXT("UI_LoadingPing"), TEXT("CSABeep2") },
+	};
+	for (const FSfxRow& Row : Rows)
+	{
+		const FString Path = FString::Printf(TEXT("/Game/Audio/UI/%s.%s"), Row.Asset, Row.Asset);
+		if (USoundBase* SB = LoadObject<USoundBase>(nullptr, *Path))
+		{
+			UiSfx.Add(Row.Slot, SB);
+		}
+		else
+		{
+			UE_LOG(LogTemp, Warning, TEXT("APBFrontend SFX miss %s"), *Path);
+		}
+	}
+	UE_LOG(LogTemp, Log, TEXT("APBFrontend SFX loaded %d/%d slots"), UiSfx.Num(), (int32)UE_ARRAY_COUNT(Rows));
+}
+
+void UAPBFrontendWidget::PlayUiSfx(FName SfxSlot)
+{
+	if (!bUiSfxLoaded) LoadUiSounds();
+	if (TObjectPtr<USoundBase>* Found = UiSfx.Find(SfxSlot))
+	{
+		if (USoundBase* SB = *Found)
+		{
+			UGameplayStatics::PlaySound2D(this, SB, FMath::Max(MenuAudioVolume, 0.01f));
+		}
+	}
+}
+
+void UAPBFrontendWidget::OnAnyHover()
+{
+	PlayUiSfx(TEXT("UI_Hover"));
+}
+
+void UAPBFrontendWidget::OnAccountLink()
+{
+	PlayUiSfx(TEXT("UI_Click"));
+	LogStage(TEXT("account link (external account page — M4c)"));
+}
+
+void UAPBFrontendWidget::OnReplayVideosLink()
+{
+	PlayUiSfx(TEXT("UI_Click"));
+	LogStage(TEXT("replay videos (intro movie gallery — M4c)"));
+}
+
+void UAPBFrontendWidget::OnRememberToggled(bool bIsChecked)
+{
+	PlayUiSfx(TEXT("UI_Click"));
+	UE_LOG(LogTemp, Log, TEXT("APBFrontend remember-userid %d"), bIsChecked ? 1 : 0);
+}
 
 void UAPBFrontendWidget::ApplyTextureToImage(UImage* Img, UTexture2D* Tex, FLinearColor Tint)
 {
@@ -966,7 +1127,7 @@ void UAPBFrontendWidget::BuildLayout()
 	RootCanvas = WidgetTree->ConstructWidget<UCanvasPanel>(UCanvasPanel::StaticClass(), TEXT("RootCanvas"));
 	WidgetTree->RootWidget = RootCanvas;
 
-	LoadLobbyChromeTextures();
+	LoadMenu2011Assets();
 
 	// Classic composition (from Login_Scene_Preview / live Login_BG):
 	// z0 paper | z1 graffiti still | z2 video bed | z5 L/R avatars | z15 logo | z20 center black card
@@ -1330,7 +1491,7 @@ void UAPBFrontendWidget::RebuildStageBody()
 				S->SetPadding(FMargin(2.f, 4.f));
 			}
 		};
-		CardLineFn(TEXT("CS_SlotTitle"), TEXT("CHARACTER SLOT 01"), APB_CYAN, 12);
+		CardLineFn(TEXT("CS_SlotTitle"), TEXT("CHARACTER SLOT 01"), APB_AMBER, 12);
 		CardLineFn(TEXT("CS_CharName"), CharLine, APB_WHITE, 18);
 		CardLineFn(TEXT("CS_Fac"), FacLine, APB_AMBER, 14);
 		if (bHas)
@@ -1404,14 +1565,14 @@ void UAPBFrontendWidget::RebuildStageBody()
 		PrevFrame->AddChild(CharPreviewImage);
 		CharPreviewSizeBox->AddChild(PrevFrame);
 		AddToScroll(CharPreviewSizeBox, 4.f);
-		AddToScroll(MakeLabel(TEXT("Prev3DLabel"), TEXT("3D PREVIEW"), 11, APB_CYAN), 2.f);
+		AddToScroll(MakeLabel(TEXT("Prev3DLabel"), TEXT("3D PREVIEW"), 11, APB_AMBER), 2.f);
 
-		AddToScroll(MakeLabel(TEXT("cn"), TEXT("OPERATIVE NAME"), 12, APB_CYAN), 6.f);
+		AddToScroll(MakeLabel(TEXT("cn"), TEXT("OPERATIVE NAME"), 12, APB_AMBER), 6.f);
 		CharNameBox = MakeTextField(TEXT("CharCreateNameBox"), TEXT("Display name"), false);
 		CharNameBox->SetText(FText::FromString(TEXT("Operative")));
 		AddToScroll(CharNameBox, 2.f);
 
-		AddToScroll(MakeLabel(TEXT("facTitle"), TEXT("FACTION"), 12, APB_CYAN), 10.f);
+		AddToScroll(MakeLabel(TEXT("facTitle"), TEXT("FACTION"), 12, APB_AMBER), 10.f);
 		// Icon row (stripped Criminal/Enforcer faction icons)
 		UHorizontalBox* IcoRow = WidgetTree->ConstructWidget<UHorizontalBox>(UHorizontalBox::StaticClass(), TEXT("FacIcoRow"));
 		FactionCrimeIcon = MakeImage(TEXT("FacCrimeIco"), TexFactionCrim);
@@ -1466,7 +1627,7 @@ void UAPBFrontendWidget::RebuildStageBody()
 
 		auto AddSlot = [&](const TCHAR* Label, TObjectPtr<UComboBoxString>& Out, const TCHAR* Name)
 		{
-			AddToScroll(MakeLabel(FString(Name) + TEXT("L"), Label, 11, APB_CYAN), 4.f);
+			AddToScroll(MakeLabel(FString(Name) + TEXT("L"), Label, 11, APB_AMBER), 4.f);
 			Out = WidgetTree->ConstructWidget<UComboBoxString>(UComboBoxString::StaticClass(), Name);
 			Out->OnSelectionChanged.AddDynamic(this, &UAPBFrontendWidget::OnClothingSelectionChanged);
 			AddToScroll(Out, 2.f);
@@ -1580,7 +1741,7 @@ void UAPBFrontendWidget::RebuildStageBody()
 		if (HintText) HintText->SetText(FText::FromString(TEXT("Fit works on 4:3 / 16:9 / 16:10")));
 
 		// --- Resolution ---
-		AddToScroll(MakeLabel(TEXT("resL"), TEXT("RESOLUTION"), 12, APB_CYAN), 4.f);
+		AddToScroll(MakeLabel(TEXT("resL"), TEXT("RESOLUTION"), 12, APB_AMBER), 4.f);
 		ResolutionCombo = WidgetTree->ConstructWidget<UComboBoxString>(UComboBoxString::StaticClass(), TEXT("ResCombo"));
 		{
 			const TCHAR* Presets[] = {
@@ -1600,7 +1761,7 @@ void UAPBFrontendWidget::RebuildStageBody()
 		}
 		AddToScroll(ResolutionCombo, 4.f);
 
-		AddToScroll(MakeLabel(TEXT("modeL"), TEXT("DISPLAY MODE"), 12, APB_CYAN), 10.f);
+		AddToScroll(MakeLabel(TEXT("modeL"), TEXT("DISPLAY MODE"), 12, APB_AMBER), 10.f);
 		UHorizontalBox* ModeRow = WidgetTree->ConstructWidget<UHorizontalBox>(UHorizontalBox::StaticClass(), TEXT("ModeRow"));
 		UButton* WinB = MakeAccentButton(TEXT("ModeWin"), TEXT(" Windowed "), APB_BTN);
 		UButton* FsB = MakeAccentButton(TEXT("ModeFs"), TEXT(" Fullscreen "), APB_BTN);
@@ -1618,7 +1779,7 @@ void UAPBFrontendWidget::RebuildStageBody()
 		}
 		AddToScroll(ModeRow, 4.f);
 
-		AddToScroll(MakeLabel(TEXT("aspL"), TEXT("UI ASPECT MODE"), 12, APB_CYAN), 10.f);
+		AddToScroll(MakeLabel(TEXT("aspL"), TEXT("UI ASPECT MODE"), 12, APB_AMBER), 10.f);
 		UHorizontalBox* AspRow = WidgetTree->ConstructWidget<UHorizontalBox>(UHorizontalBox::StaticClass(), TEXT("AspRow"));
 		UButton* FitB = MakeAccentButton(TEXT("AspFit"), TEXT(" Fit "), APB_BTN_OK);
 		UButton* FillB = MakeAccentButton(TEXT("AspFill"), TEXT(" Fill "), APB_BTN);
@@ -1644,7 +1805,7 @@ void UAPBFrontendWidget::RebuildStageBody()
 		AddToScroll(ApplyRes, 8.f);
 
 		// --- Menu audio ---
-		AddToScroll(MakeLabel(TEXT("audL"), TEXT("MENU AUDIO"), 12, APB_CYAN), 12.f);
+		AddToScroll(MakeLabel(TEXT("audL"), TEXT("MENU AUDIO"), 12, APB_AMBER), 12.f);
 		VolumeValueText = MakeLabel(TEXT("VolVal"), TEXT(""), 14, APB_WHITE);
 		RefreshVolumeLabel();
 		AddToScroll(VolumeValueText, 4.f);
@@ -1669,7 +1830,7 @@ void UAPBFrontendWidget::RebuildStageBody()
 		if (TitleText) TitleText->SetText(FText::FromString(TEXT("ENTERING DISTRICT")));
 		if (SubtitleText) SubtitleText->SetText(FText::FromString(SelectedDistrictId));
 		if (StatusText) StatusText->SetText(FText::FromString(TEXT("Streaming San Paro…")));
-		AddToScroll(MakeLabel(TEXT("load"), TEXT("Please wait"), 16, APB_CYAN), 8.f);
+		AddToScroll(MakeLabel(TEXT("load"), TEXT("Please wait"), 16, APB_AMBER), 8.f);
 		break;
 	}
 	default: break;
