@@ -1,0 +1,22 @@
+{
+  "_comment": "M5 retail character-creation wardrobe model. 15 category tabs mapped from the apbdb subcategory taxonomy already present in clothing.json. Each tab resolves to a distinct domain equip-slot key so layered wear (e.g. Tops + Armour + Webbing on the torso region) serializes independently via CharacterAppearance clothing[] (APBCustomization). The original 7 keys (head/torso/legs/feet/hands/face/accessory) are preserved so the M4 frontend_menu 7-slot equip does not regress; 8 new keys are added for the remaining tabs.",
+  "camera_source": "retail APBGame/Config/APBLCC.ini [APBGame.RTWLCCMalePawn]/[RTWLCCFemalePawn] CameraViews (single shared preset per gender)",
+  "default_camera": { "pos_y": 280.0, "pos_z": 95.0, "target_z": 95.0, "fov": 55.0, "max_tilt": 30.0 },
+  "categories": [
+    { "tab_id": 1,  "domain_slot": "torso",     "display": "Tops",              "subcategories": ["ClothingTop"],                          "camera_frame": { "pos_y": 200.0, "pos_z": 110.0, "target_z": 105.0, "fov": 48.0 } },
+    { "tab_id": 2,  "domain_slot": "legs",      "display": "Bottoms",           "subcategories": ["ClothingBottoms"],                      "camera_frame": { "pos_y": 210.0, "pos_z": 55.0,  "target_z": 55.0,  "fov": 48.0 } },
+    { "tab_id": 3,  "domain_slot": "feet",      "display": "Footwear",          "subcategories": ["ClothingFootwear"],                     "camera_frame": { "pos_y": 150.0, "pos_z": 25.0,  "target_z": 25.0,  "fov": 45.0 } },
+    { "tab_id": 4,  "domain_slot": "head",      "display": "Headwear",          "subcategories": ["ClothingHeadwear"],                     "camera_frame": { "pos_y": 140.0, "pos_z": 150.0, "target_z": 150.0, "fov": 40.0 } },
+    { "tab_id": 5,  "domain_slot": "hands",     "display": "Handwear",          "subcategories": ["ClothingHandWear"],                     "camera_frame": { "pos_y": 180.0, "pos_z": 95.0,  "target_z": 95.0,  "fov": 46.0 } },
+    { "tab_id": 6,  "domain_slot": "face",      "display": "Facewear",          "subcategories": ["ClothingEyewear", "ClothingMasks"],     "camera_frame": { "pos_y": 130.0, "pos_z": 152.0, "target_z": 152.0, "fov": 38.0 } },
+    { "tab_id": 7,  "domain_slot": "underwear", "display": "Underwear",         "subcategories": ["ClothingUnderwear"],                    "camera_frame": { "pos_y": 280.0, "pos_z": 95.0,  "target_z": 95.0,  "fov": 55.0 } },
+    { "tab_id": 8,  "domain_slot": "outerwear", "display": "Outerwear",         "subcategories": ["ClothingOverall"],                      "camera_frame": { "pos_y": 220.0, "pos_z": 110.0, "target_z": 100.0, "fov": 50.0 } },
+    { "tab_id": 9,  "domain_slot": "dress",     "display": "Skirts & Dresses",  "subcategories": ["ClothingSkirtsAndDresses"],             "camera_frame": { "pos_y": 250.0, "pos_z": 80.0,  "target_z": 75.0,  "fov": 52.0 } },
+    { "tab_id": 10, "domain_slot": "jewellery", "display": "Jewellery",         "subcategories": ["ClothingJewellery"],                    "camera_frame": { "pos_y": 130.0, "pos_z": 150.0, "target_z": 150.0, "fov": 38.0 } },
+    { "tab_id": 11, "domain_slot": "belt",      "display": "Belts",             "subcategories": ["ClothingBelts"],                        "camera_frame": { "pos_y": 180.0, "pos_z": 78.0,  "target_z": 78.0,  "fov": 46.0 } },
+    { "tab_id": 12, "domain_slot": "accessory", "display": "Accessories",       "subcategories": ["ClothingAccessory"],                    "camera_frame": { "pos_y": 200.0, "pos_z": 110.0, "target_z": 105.0, "fov": 48.0 } },
+    { "tab_id": 13, "domain_slot": "webbing",   "display": "Webbing",           "subcategories": ["ClothingWebbing"],                      "camera_frame": { "pos_y": 200.0, "pos_z": 100.0, "target_z": 95.0,  "fov": 48.0 } },
+    { "tab_id": 14, "domain_slot": "armour",    "display": "Armour",            "subcategories": ["ClothingArmour", "ClothingBadges"],     "camera_frame": { "pos_y": 210.0, "pos_z": 110.0, "target_z": 100.0, "fov": 50.0 } },
+    { "tab_id": 15, "domain_slot": "bodyhair",  "display": "Body & Facial Hair","subcategories": ["ClothingBodyHair", "ClothingFacialHair"],"camera_frame": { "pos_y": 130.0, "pos_z": 150.0, "target_z": 150.0, "fov": 38.0 } }
+  ]
+}
