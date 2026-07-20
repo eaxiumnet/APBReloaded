@@ -4,6 +4,7 @@
 #include "APBPrivateServerOpcodes.h"
 #include "Misc/Paths.h"
 #include "Misc/FileHelper.h"
+#include "Misc/Parse.h"
 #include "HAL/PlatformFilemanager.h"
 #include "Engine/World.h"
 #include "Engine/Engine.h"
@@ -52,6 +53,13 @@ void UAPBGameInstanceSubsystem::Initialize(FSubsystemCollectionBase& Collection)
 		}
 	}
 	UE_LOG(LogTemp, Warning, TEXT("APB FPS default lock t.MaxFPS (prefer 60)"));
+
+	FString WSHost;
+	if (FParse::Value(FCommandLine::Get(), TEXT("WorldServerHost="), WSHost) && !WSHost.IsEmpty())
+	{
+		bWorldServerMode = true;
+		UE_LOG(LogTemp, Warning, TEXT("APBSubsystem world-server-client mode host=%s"), *WSHost);
+	}
 }
 
 void UAPBGameInstanceSubsystem::Deinitialize()
@@ -175,7 +183,24 @@ int32 UAPBGameInstanceSubsystem::GetThreatBotCount() const
 
 bool UAPBGameInstanceSubsystem::Login(const FString& User, const FString& Pass)
 {
-	if (!Service || !CanMutateDomain()) return false;
+	if (!Service) return false;
+	const UWorld* World = GetWorld();
+	if (bWorldServerMode && World && World->GetNetMode() == NM_Client)
+	{
+		for (FConstPlayerControllerIterator It = World->GetPlayerControllerIterator(); It; ++It)
+		{
+			if (APlayerController* PC = It->Get())
+			{
+				if (AAPBPlayerState* PS = PC->GetPlayerState<AAPBPlayerState>())
+				{
+					PS->Server_LoginRequest(User, Pass);
+					return true;
+				}
+			}
+		}
+		return false;
+	}
+	if (!CanMutateDomain()) return false;
 	return Svc(Service)->LoginAccount(TCHAR_TO_UTF8(*User), TCHAR_TO_UTF8(*Pass));
 }
 
@@ -551,9 +576,38 @@ void UAPBGameInstanceSubsystem::SyncPlayerStateFromDomain(AAPBPlayerState* Playe
 		S.SessionId);
 }
 
+bool UAPBGameInstanceSubsystem::ConnectToWorldServer(const FString& Host, int32 Port)
+{
+	bWorldServerMode = true;
+	UE_LOG(LogTemp, Warning, TEXT("APBSubsystem ConnectToWorldServer host=%s port=%d"), *Host, Port);
+	return true;
+}
+
+bool UAPBGameInstanceSubsystem::IsWorldServerConnected() const
+{
+	return bWorldServerMode;
+}
+
+FString UAPBGameInstanceSubsystem::GetIssuedTicket() const
+{
+	if (!bWorldServerMode) return FString();
+	const UWorld* World = GetWorld();
+	if (!World) return FString();
+	for (FConstPlayerControllerIterator It = World->GetPlayerControllerIterator(); It; ++It)
+	{
+		if (const APlayerController* PC = It->Get())
+		{
+			if (const AAPBPlayerState* PS = PC->GetPlayerState<AAPBPlayerState>())
+			{
+				if (!PS->IssuedTicketJson.IsEmpty()) return PS->IssuedTicketJson;
+			}
+		}
+	}
+	return FString();
+}
+
 void UAPBGameInstanceSubsystem::PushDomainSnapshotToAllPlayerStates()
 {
-	// Server / listen-host only: one Domain capture → all PlayerStates → OnRep on clients
 	if (!CanMutateDomain()) return;
 	UWorld* World = GetWorld();
 	if (!World) return;

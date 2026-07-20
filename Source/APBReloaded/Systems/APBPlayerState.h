@@ -61,4 +61,38 @@ public:
 	/** Authority: push domain snapshot for multipath observers. */
 	void ApplyDomainSnapshot(float Threat, int64 InCash, int64 InG1C, int32 InvCount,
 		const FString& Mission, int32 StageIdx, int32 StageCount, const FString& SessionId);
+
+	// ── M6 world-server auth RPCs ─────────────────────────────────────────────
+
+	/** Replicated results (world-server → client). */
+	UPROPERTY(ReplicatedUsing=OnRep_WorldAuth, BlueprintReadOnly, Category="APB|Auth")
+	bool bWorldAuthOk = false;
+
+	UPROPERTY(ReplicatedUsing=OnRep_WorldAuth, BlueprintReadOnly, Category="APB|Auth")
+	FString CharListJson;
+
+	UPROPERTY(ReplicatedUsing=OnRep_WorldAuth, BlueprintReadOnly, Category="APB|Auth")
+	FString DistrictListJson;
+
+	UPROPERTY(ReplicatedUsing=OnRep_WorldAuth, BlueprintReadOnly, Category="APB|Auth")
+	FString IssuedTicketJson;
+
+	UFUNCTION()
+	void OnRep_WorldAuth();
+
+	/** Client → server: request login. */
+	UFUNCTION(Server, Reliable, WithValidation, BlueprintCallable, Category="APB|Auth")
+	void Server_LoginRequest(const FString& User, const FString& Pass);
+
+	/** Client → server: fetch char list (requires prior successful login). */
+	UFUNCTION(Server, Reliable, WithValidation, BlueprintCallable, Category="APB|Auth")
+	void Server_GetCharList();
+
+	/** Client → server: fetch district list (requires prior successful login). */
+	UFUNCTION(Server, Reliable, WithValidation, BlueprintCallable, Category="APB|Auth")
+	void Server_GetDistrictList();
+
+	/** Client → server: issue a travel ticket for CharName + DistrictId. */
+	UFUNCTION(Server, Reliable, WithValidation, BlueprintCallable, Category="APB|Auth")
+	void Server_IssueTicket(const FString& CharName, const FString& DistrictId);
 };

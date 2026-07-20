@@ -62,6 +62,8 @@ void UAPBSessionProbeSubsystem::StartProbe(const FString& InMode)
 	else if (Mode == TEXT("mp_observe")) LogPath += TEXT("mp_client_observe.log");
 	else if (Mode == TEXT("frontend_menu")) LogPath += TEXT("frontend_menu.log");
 	else if (Mode == TEXT("frontend_flow")) LogPath += TEXT("frontend_flow.log");
+	else if (Mode == TEXT("world_server")) LogPath += TEXT("world_server.log");
+	else if (Mode == TEXT("world_server_client")) LogPath += TEXT("world_server_client_") + WSClientId + TEXT(".log");
 	else LogPath += TEXT("probe.log");
 
 	if (Mode != TEXT("mp_observe"))
@@ -132,12 +134,26 @@ void UAPBSessionProbeSubsystem::ArmProbeTimers(UWorld* World)
 	}
 	else if (Mode == TEXT("frontend_menu") || Mode == TEXT("frontend_flow"))
 	{
-		// Cold-start on Frontend map; frontend_flow additionally runs post-travel freeroam asserts.
 		bFrontendTravelPending = false;
 		FrontendEquippedSlots = 0;
 		bTerminal = false;
 		World->GetTimerManager().SetTimer(PlayableTimer, FTimerDelegate::CreateUObject(this, &UAPBSessionProbeSubsystem::RunFrontendFlowProbe), 2.0f, false);
 		AppendLog(FString::Printf(TEXT("PROBE_TIMER %s in 2s"), *Mode));
+	}
+	else if (Mode == TEXT("world_server"))
+	{
+		WS_LoginCount = 0; WS_CharListCount = 0; WS_DistrictListCount = 0; WS_TicketCount = 0;
+		bTerminal = false;
+		World->GetTimerManager().SetTimer(WorldServerTimer, FTimerDelegate::CreateUObject(this, &UAPBSessionProbeSubsystem::RunWorldServerProbe), 1.0f, true, 2.0f);
+		AppendLog(TEXT("PROBE_TIMER world_server polling every 1s after 2s delay"));
+	}
+	else if (Mode == TEXT("world_server_client"))
+	{
+		FParse::Value(FCommandLine::Get(), TEXT("WSClientId="), WSClientId);
+		bWSClientDone = false;
+		bTerminal = false;
+		World->GetTimerManager().SetTimer(WorldServerTimer, FTimerDelegate::CreateUObject(this, &UAPBSessionProbeSubsystem::RunWorldServerClientProbe), 0.5f, true, 3.0f);
+		AppendLog(FString::Printf(TEXT("PROBE_TIMER world_server_client id=%s polling every 0.5s after 3s"), *WSClientId));
 	}
 }
 
@@ -890,4 +906,95 @@ void UAPBSessionProbeSubsystem::RunFrontendFlowPostTravel()
 		AppendLog(TEXT("FRONTEND_FLOW_FAIL post_travel_playables"));
 	}
 	EndFrontendProbe();
+}
+
+void UAPBSessionProbeSubsystem::RunWorldServerProbe()
+{
+	if (bTerminal) return;
+	UWorld* World = GetWorld();
+	if (!World) return;
+
+	int32 NewLogin = 0, NewCharList = 0, NewDistList = 0, NewTicket = 0;
+	for (FConstPlayerControllerIterator It = World->GetPlayerControllerIterator(); It; ++It)
+	{
+		if (const APlayerController* PC = It->Get())
+		{
+			if (const AAPBPlayerState* PS = PC->GetPlayerState<AAPBPlayerState>())
+			{
+				if (PS->bWorldAuthOk)               ++NewLogin;
+				if (!PS->CharListJson.IsEmpty())     ++NewCharList;
+				if (!PS->DistrictListJson.IsEmpty()) ++NewDistList;
+				if (!PS->IssuedTicketJson.IsEmpty()) ++NewTicket;
+			}
+		}
+	}
+	WS_LoginCount        = FMath::Max(WS_LoginCount,        NewLogin);
+	WS_CharListCount     = FMath::Max(WS_CharListCount,     NewCharList);
+	WS_DistrictListCount = FMath::Max(WS_DistrictListCount, NewDistList);
+	WS_TicketCount       = FMath::Max(WS_TicketCount,       NewTicket);
+
+	AppendLog(FString::Printf(TEXT("WS_POLL login=%d charlist=%d districtlist=%d ticket=%d"),
+		WS_LoginCount, WS_CharListCount, WS_DistrictListCount, WS_TicketCount));
+
+	if (WS_LoginCount >= 2 && WS_TicketCount >= 2)
+	{
+		bTerminal = true;
+		World->GetTimerManager().ClearTimer(WorldServerTimer);
+		AppendLog(FString::Printf(TEXT("WORLD_SERVER_GATE_OK login=%d charlist=%d districtlist=%d ticket=%d"),
+			WS_LoginCount, WS_CharListCount, WS_DistrictListCount, WS_TicketCount));
+		FPlatformMisc::RequestExit(false);
+	}
+}
+
+void UAPBSessionProbeSubsystem::RunWorldServerClientProbe()
+{
+	if (bTerminal || bWSClientDone) return;
+	UWorld* World = GetWorld();
+	if (!World) return;
+	UGameInstance* GI = GetGameInstance();
+	UAPBGameInstanceSubsystem* APB = GI ? GI->GetSubsystem<UAPBGameInstanceSubsystem>() : nullptr;
+	if (!APB) return;
+
+	for (FConstPlayerControllerIterator It = World->GetPlayerControllerIterator(); It; ++It)
+	{
+		if (APlayerController* PC = It->Get())
+		{
+			AAPBPlayerState* PS = PC->GetPlayerState<AAPBPlayerState>();
+			if (!PS) continue;
+
+			if (!PS->bWorldAuthOk)
+			{
+				const FString User = TEXT("probe_") + WSClientId;
+				const FString Pass = TEXT("probe_pass");
+				APB->RegisterAccount(User, Pass);
+				PS->Server_LoginRequest(User, Pass);
+				AppendLog(FString::Printf(TEXT("WS_CLIENT id=%s sent_login user=%s"), *WSClientId, *User));
+				return;
+			}
+			if (PS->CharListJson.IsEmpty())
+			{
+				PS->Server_GetCharList();
+				AppendLog(FString::Printf(TEXT("WS_CLIENT id=%s sent_charlist"), *WSClientId));
+				return;
+			}
+			if (PS->DistrictListJson.IsEmpty())
+			{
+				PS->Server_GetDistrictList();
+				AppendLog(FString::Printf(TEXT("WS_CLIENT id=%s sent_districtlist"), *WSClientId));
+				return;
+			}
+			if (PS->IssuedTicketJson.IsEmpty())
+			{
+				PS->Server_IssueTicket(TEXT("Operative"), TEXT("Financial"));
+				AppendLog(FString::Printf(TEXT("WS_CLIENT id=%s sent_issue_ticket"), *WSClientId));
+				return;
+			}
+			bWSClientDone = true;
+			bTerminal = true;
+			World->GetTimerManager().ClearTimer(WorldServerTimer);
+			AppendLog(FString::Printf(TEXT("WORLD_CLIENT_OK login=1 charlist=1 districtlist=1 ticket=1 id=%s"), *WSClientId));
+			FPlatformMisc::RequestExit(false);
+			return;
+		}
+	}
 }

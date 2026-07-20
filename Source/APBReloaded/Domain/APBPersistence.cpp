@@ -136,6 +136,7 @@ bool JsonDomainStore::SaveAccounts(const LoginService& login) const {
 		ss << "\n    { \"id\": \"" << JsonEscape(a.account_id)
 			<< "\", \"name\": \"" << JsonEscape(a.username)
 			<< "\", \"pass\": \"" << JsonEscape(a.password_hash)
+			<< "\", \"salt\": \"" << JsonEscape(a.password_salt)
 			<< "\", \"banned\": " << (a.banned ? "true" : "false")
 			<< ", \"created_utc\": \"" << JsonEscape(a.created_utc)
 			<< "\", \"last_login_utc\": \"" << JsonEscape(a.last_login_utc) << "\" }";
@@ -155,6 +156,7 @@ bool JsonDomainStore::LoadAccounts(LoginService& login) const {
 		if (a.username.empty()) continue;
 		a.account_id = JsonGetString(obj, "id", "ACC-" + a.username);
 		a.password_hash = JsonGetString(obj, "pass");
+		a.password_salt = JsonGetString(obj, "salt"); // empty = legacy plaintext record
 		a.banned = JsonGetBool(obj, "banned", false);
 		a.created_utc = JsonGetString(obj, "created_utc");
 		a.last_login_utc = JsonGetString(obj, "last_login_utc");

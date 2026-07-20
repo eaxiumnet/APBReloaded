@@ -328,4 +328,7 @@ protected:
 	int32 DisplayMode = 0;
 	int32 PendingResX = 1920;
 	int32 PendingResY = 1080;
+
+	FTimerHandle WorldAuthPollTimer;
+	float WorldAuthTimeout = 0.f;
 };

@@ -1,5 +1,6 @@
 #pragma once
 #include "APBTypes.h"
+#include "APBCrypto.h"
 #include <set>
 
 namespace apb {
@@ -112,10 +113,11 @@ public:
 struct AccountRecord {
 	std::string account_id;
 	std::string username;
-	std::string password_hash; // private offline: plain compare of hash field
+	std::string password_hash;
+	std::string password_salt; // empty = legacy plaintext record (migrate on next login)
 	bool banned = false;
-	std::string created_utc;     // ISO-8601, set on register
-	std::string last_login_utc;  // ISO-8601, set on successful login
+	std::string created_utc;
+	std::string last_login_utc;
 };
 
 class LoginService {
@@ -127,8 +129,13 @@ public:
 		if (user.empty() || pass.empty() || accounts.count(user)) return false;
 		AccountRecord a;
 		a.account_id = "ACC-" + user;
-		a.username = user;
-		a.password_hash = pass; // offline only
+		a.username   = user;
+		a.password_salt = random_hex(16); // 16 bytes = 32 hex chars
+		auto salt_bytes = hex_decode(a.password_salt);
+		auto pass_bytes = reinterpret_cast<const uint8_t*>(pass.data());
+		auto dk = pbkdf2_hmac_sha256(pass_bytes, pass.size(),
+		                              salt_bytes.data(), salt_bytes.size());
+		a.password_hash = hex_encode(dk.data(), dk.size());
 		accounts[user] = a;
 		return true;
 	}
@@ -136,8 +143,30 @@ public:
 	bool Login(const std::string& user, const std::string& pass) {
 		auto it = accounts.find(user);
 		if (it == accounts.end() || it->second.banned) return false;
-		if (it->second.password_hash != pass) return false;
-		session = it->second;
+		AccountRecord& rec = it->second;
+		if (rec.password_salt.empty()) {
+			// Legacy plaintext path: compare directly, then migrate in-place.
+			if (rec.password_hash != pass) return false;
+			rec.password_salt = random_hex(16);
+			auto salt_bytes = hex_decode(rec.password_salt);
+			auto pass_bytes = reinterpret_cast<const uint8_t*>(pass.data());
+			auto dk = pbkdf2_hmac_sha256(pass_bytes, pass.size(),
+			                              salt_bytes.data(), salt_bytes.size());
+			rec.password_hash = hex_encode(dk.data(), dk.size());
+		} else {
+			// Salted PBKDF2 path: constant-time compare.
+			auto salt_bytes = hex_decode(rec.password_salt);
+			auto pass_bytes = reinterpret_cast<const uint8_t*>(pass.data());
+			auto dk = pbkdf2_hmac_sha256(pass_bytes, pass.size(),
+			                              salt_bytes.data(), salt_bytes.size());
+			std::string candidate = hex_encode(dk.data(), dk.size());
+			if (candidate.size() != rec.password_hash.size()) return false;
+			unsigned char diff = 0;
+			for (size_t i = 0; i < candidate.size(); ++i)
+				diff |= (unsigned char)(candidate[i] ^ rec.password_hash[i]);
+			if (diff != 0) return false;
+		}
+		session = rec;
 		return true;
 	}
 

@@ -211,12 +211,114 @@ active milestone (recorded in this file, keeping one plan per effort).
   `[CharacterCustomisationScreens]` screenshot checklist left for optional manual capture
   (same posture as M4 visual sign-off).
 
-### M6 — Login/auth + world server  *(brief #5 — D6/D11)*
-- Files: `APBReloadedServer.Target.cs`, `AAPBWorldGameMode` (fill shell), new
-  `Systems\Server\APBServerControl.*`, `APBGameInstanceSubsystem` (connect flow), Config.
-- Actions: cook `APBReloadedServer`; world role = login/auth/directory/character DB via
-  WorldService + M2 stores; ticket issuing.
-- Verify: world server + 2 clients: login → char select → district list served from world.
+### M6 — Login/auth + world server  *(brief #5 — D6/D11)*  — PLAN (hyperplan 2026-07-20)
+
+> Authored by the `plan` agent from a 5-member adversarial bundle (minimalist / architect /
+> hardcore / maverick / deep-research; 3 cross-attack rounds). Decision-complete: execute with
+> zero further interview. Ordered single-concern commits C1–C13 in parallel groups A–G.
+
+**RESOLVED DECISIONS (honor these; they survived cross-attack):**
+- **R1 build blocker = HARD WALL.** Installed `BaseEngine.ini` `InstalledPlatforms` list Editor+Game
+  only (no `PlatformType="Server"`); UBT rejects `TargetType.Server` at `UEBuildTarget.cs`. This box
+  can NEVER cook `APBReloadedServer` without a source engine. → Run the world-server **role** on the
+  **Game target** headless (`-WorldServer -nullrhi -nosound -unattended`); role keyed off the CLI flag
+  (NOT `IsRunningDedicatedServer()`). KEEP `APBReloadedServer.Target.cs` untouched for a future source
+  cook. Document, don't fake. Marking M6 "blocked" is rejected.
+- **R2 transport.** M6 client↔world login / char-select / district-list are **served by the world
+  authority to the 2 connected clients over UE's own NetDriver** (Server RPCs + OnRep — the path the
+  probe already exercises), replacing the in-process path for those flows. NO bespoke client-facing TCP
+  socket in M6. D6's "TCP/JSON control channel" = world↔district relay, **deferred to M7**.
+- **R3 auth.** PRIMARY defect = **authorization gating** (Domain mutations gated by authenticated
+  session identity; two clients on one authority must not cross-contaminate) — ranks ABOVE password
+  KDF. ALSO replace plaintext with a salted KDF that compiles in pure-C++17 Domain with NO new deps
+  (PBKDF2-HMAC-SHA256, header-only). Ticket = HMAC-SHA256 envelope + `jti` + short expiry (~90s) +
+  one-use replay cache + constant-time verify, M2-persistable. Ed25519/asymmetric = M7. TLS on
+  localhost = DEFERRED to M16.
+- **R4 scope kills.** Behavioral-oracle (running `APBprivate.exe`) OUT of M6 (32-bit native + .NET +
+  MySQL; impractical; zero gate value) — note only. No protocol emulation (`APBPrivateServerOpcodes.h`
+  stays unused). Deferred to M7: world↔district TCP/JSON relay, cross-district travel + ticket
+  redemption, chat. M6 only ISSUES + stores + self-verifies tickets (no district-side consumption).
+
+**Verify gate (milestone):** world-server role process + 2 client processes; both complete
+login → char-select → district-list **served by the world authority**. Extend
+`tools\run_verification_gates.ps1` (step 7) — 1 headless world-server + 2 client procs. Plus: 4 domain
+suites `FAILS=0`; `APBReloaded` + `APBReloadedEditor` build exit 0; `APBReloadedServer` expected-fail
+documented (not a regression).
+
+**Parallel groups:** A = {C1, C2} · B = {C3} · C = {C4, C5} (both after C3) · D = {C6→C7→C8}
+(after C4+C5) · E = {C9, C11} (after C8) · F = {C10 after C9; C12 after C11} · G = {C13, after all}.
+
+- **C1 — `work/m6_server_target_limit.md`** (doc). Record the installed-engine Server-target wall
+  (`InstalledBuild.txt` + `BaseEngine.ini` Editor/Game-only `InstalledPlatforms`; UBT throw site), the
+  role-flag resolution, and the M16 source-engine path. *Verify:* file states root cause + decision.
+- **C2 — `tests/run_auth_tests.cpp`** (RED first). 5 tests locking the API: salted-hash stored (not
+  plaintext, 16-byte hex salt); login hashed OK/wrong/banned; legacy-plaintext migrate-on-login;
+  ticket issue→verify field parity + tamper-fail; ticket replay blocked after `ConsumeJti`.
+  *Verify:* `cl /std:c++17` compiles the suite (link may fail until C3–C5).
+- **C3 — `Domain/APBCrypto.h`** (header-only, pure C++17, no platform headers). `sha256` (FIPS
+  180-4), `hmac_sha256` (RFC 2104), `pbkdf2_hmac_sha256` (RFC 2898; iters=10000, dk=32),
+  `hmac_sha256_hex`, `hex_encode/decode`, `random_hex` (`random_device`+`mt19937_64`; M16 →
+  `BCryptGenRandom`). *Verify:* smoke TU compiles + links, exit 0.
+- **C4 — `Domain/APBTicket.{h,cpp}`** (after C3). `TicketPayload{account,character,faction,district,
+  jti,issued_utc,expiry_secs}`; `TicketService::Global()` singleton; `IssueTicket(...)`→`payload.sig`
+  HMAC token; `VerifyTicket` (constant-time HMAC compare + expiry + jti-unseen); `ConsumeJti` one-use
+  `unordered_set` (M7 → JsonDomainStore). Add to `build_and_run.ps1` sources. *Verify:* C2 ticket tests
+  GREEN.
+- **C5 — auth hardening** `Domain/APBSocial.h` + `Domain/APBPersistence.{h,cpp}` + `tests/build_and_run.ps1`
+  (after C3). Add `AccountRecord.password_salt`; `Register` salts+PBKDF2-hashes; `Login` re-derives +
+  constant-time compares, `salt==""` ⇒ legacy plaintext compare then migrate-on-success; persist/load
+  `password_salt` (empty default = back-compat); add 4th test suite `APBAuthTests`. *Verify:* all 4
+  suites `FAILS=0` (existing register→login domain/persistence tests still pass — API unchanged).
+- **C6 — `Systems/Server/APBWorldGameMode.{h,cpp}`** (fill shell; after C4+C5). Per-connection
+  `TMap<FString,TUniquePtr<apb::WorldService>> PlayerServices` (key = PC unique id) — **the
+  multi-tenancy fix**: each client gets its OWN authenticated WorldService, no shared `session`.
+  `BeginPlay` creates `ServerControl`; `PostLogin` inits a per-player service from data+persist dir;
+  `Logout` saves + erases. *Verify:* `APBReloaded` + `APBReloadedEditor` build exit 0.
+- **C7 — `Systems/Server/APBServerControl.{h,cpp}` + `Config/DefaultGame.ini`** (after C6). `UObject`
+  owning role selection (`FParse::Param(-WorldServer)`) + the auth-gated serving surface:
+  `LoginRequest`, `GetCharListJson`, `GetDistrictListJson`, `IssueTicketJson` (each resolves the
+  caller's per-player service; ticket issue requires `IsLoggedIn`). World-role activates via
+  `?game=/Script/APBReloaded.AAPBWorldGameMode` URL (no GameModeMapPrefixes clash). Add `[APBServer]`
+  `WorldPort=17778`, `WorldPersistDir`. *Verify:* build exit 0; `-WorldServer` detected.
+- **C8 — `Systems/APBPlayerState.{h,cpp}`** (after C7). 4 `Server,Reliable,WithValidation` RPCs
+  (`Server_LoginRequest/GetCharList/GetDistrictList/IssueTicket`) dispatching to
+  `GetAuthGameMode<AAPBWorldGameMode>()->ServerControl`; 4 `ReplicatedUsing` fields
+  (`bWorldAuthOk`, `CharListJson`, `DistrictListJson`, `IssuedTicketJson`) with `OnRep_*` logging;
+  register in `GetLifetimeReplicatedProps`; validate inputs (non-empty, len caps). *Verify:* build exit 0.
+- **C9 — `Systems/APBGameInstanceSubsystem.{h,cpp}`** (after C8; parallel w/ C11). Add
+  `bWorldServerMode` + `ConnectToWorldServer(host,port)` + `IsWorldServerConnected` +
+  `GetIssuedTicket`. `Initialize` reads `-WorldServerHost`; `Login`/`GetDistrictList` route through the
+  local `APBPlayerState` Server RPCs when `NM_Client && bWorldServerMode`, else existing in-process
+  path UNCHANGED (no `frontend_menu` regression). *Verify:* build exit 0; standalone probe unaffected.
+- **C10 — `Systems/Frontend/APBFrontendWidget.cpp`** (after C9). Async world-server UX: `OnLoginClicked`
+  fires `Server_LoginRequest` + polls `bWorldAuthOk` (timer, 10s timeout) → advance to CharacterSelect
+  (reuses existing `SetStage`); `OnEnterDistrict` appends `?APBTicket=<token>`. Standalone paths
+  untouched. *Verify:* build exit 0; `frontend_menu` probe still `FRONTEND_MENU_OK` (same code path).
+- **C11 — `Systems/APBSessionProbeSubsystem.{h,cpp}`** (after C8; parallel w/ C9). Two modes:
+  `world_server` (authority: counts PlayerStates reaching auth/charlist/districtlist/ticket == 2, then
+  writes `WORLD_SERVER_GATE_OK login=N ... ticket=N` + exits) and `world_server_client`
+  (`-WSClientId=<id>`: drives login→charlist→districtlist→ticket via Server RPCs, writes
+  `WORLD_CLIENT_OK ... id=<id>` + exits). *Verify:* build exit 0.
+- **C12 — `tools/run_verification_gates.ps1`** (after C11). Insert step 7 `world_server_gate`: launch 1
+  headless world-server (`?game=...AAPBWorldGameMode -WorldServer -Port=17778 -APBProbe=world_server`) +
+  2 clients (`127.0.0.1:17778 -APBProbe=world_server_client -WSClientId=alice|bob`); wait ≤180s for
+  `WORLD_SERVER_GATE_OK`; `Require-Fresh` asserts `login=2` and `ticket=2`; add to `gate_summary.json`.
+  *Verify:* `pwsh` syntax-parses; step runs.
+- **C13 — Final milestone verify** (no file changes). 4 domain suites `FAILS=0`; `APBReloaded` +
+  `APBReloadedEditor` builds `Result: Succeeded`; `APBReloadedServer` expected-fail logged as
+  `server_target_unsupported_by_distribution` (matches C1, not a regression); `run_verification_gates.ps1`
+  all 7 steps `GATE_PASS`.
+
+**Risks & mitigations.** (1) *KDF pulls a dep the `cl`-compiled harness can't take* → C3 is header-only
+pure C++17 (no OpenSSL/bcrypt); if PBKDF2 self-test fails after 2 attempts, STOP + `work/` note
+(AGENTS.md rule 5), fall back to a documented salted-SHA256×N (still not plaintext, flag M16). (2)
+*Client connect flow / RPC timing flakiness* → generous probe timeouts + `ForceNetUpdate`; if the
+two-client gate loops >2 attempts, STOP + note rather than retry-tune. (3) *Widget async login
+regressing `frontend_menu`* → standalone path left byte-for-byte unchanged; world path gated behind
+`bWorldServerMode`. **Assumptions made (unresolved by bundle):** ticket JSON is a compact
+`payload.signature` string (not full JWT); per-connection WorldService (not one shared) is the
+multi-tenancy fix the auth decision implies; `?game=` URL override is preferred over a
+GameModeMapPrefixes edit to avoid clashing with the existing frontend GameMode mapping.
 
 ### M7 — District servers + travel + chat baseline  *(brief #6 — D6/D10)*
 - Files: `APBDistrictGameMode`, `APBServerControl` (register/heartbeat/ticket/char.handoff/

@@ -277,6 +277,59 @@ if ($IntegrationGate) {
   Log "FRONTEND_FLOW_SKIPPED integration_gate_off (enable with -IntegrationGate after M9+M12)"
 }
 
+# 7) World-server gate (M6): 1 headless world-server + 2 clients; both reach login→charlist→districtlist→ticket.
+$wsLog      = Join-Path $Scratch "world_server.log"
+$wsAliceLog = Join-Path $Scratch "world_server_client_alice.log"
+$wsBobLog   = Join-Path $Scratch "world_server_client_bob.log"
+Remove-Item $wsLog, $wsAliceLog, $wsBobLog -Force -ErrorAction SilentlyContinue
+$FrontendMap = "/Game/Maps/Lvl_APB_Frontend"
+$WSPort = 17778
+Log "STEP world_server_gate"
+
+$wsServerArgs = @(
+  $Project, "$FrontendMap?game=/Script/APBReloaded.AAPBWorldGameMode",
+  "-game", "-WorldServer", "-Port=$WSPort",
+  "-APBProbe=world_server", "-APBScratch=$Scratch",
+  "-nosplash", "-nosound", "-nullrhi", "-unattended", "-log"
+)
+$wsServerProc = Start-Process -FilePath $Editor -ArgumentList $wsServerArgs -PassThru -WorkingDirectory (Split-Path $Editor) -NoNewWindow
+
+Start-Sleep 5
+
+$wsAliceArgs = @(
+  $Project, "127.0.0.1:$WSPort",
+  "-game", "-WorldServerHost=127.0.0.1", "-WSClientId=alice",
+  "-APBProbe=world_server_client", "-APBScratch=$Scratch",
+  "-nosplash", "-nosound", "-nullrhi", "-unattended", "-log"
+)
+$wsBobArgs = @(
+  $Project, "127.0.0.1:$WSPort",
+  "-game", "-WorldServerHost=127.0.0.1", "-WSClientId=bob",
+  "-APBProbe=world_server_client", "-APBScratch=$Scratch",
+  "-nosplash", "-nosound", "-nullrhi", "-unattended", "-log"
+)
+$wsAliceProc = Start-Process -FilePath $Editor -ArgumentList $wsAliceArgs -PassThru -WorkingDirectory (Split-Path $Editor) -NoNewWindow
+$wsBobProc   = Start-Process -FilePath $Editor -ArgumentList $wsBobArgs   -PassThru -WorkingDirectory (Split-Path $Editor) -NoNewWindow
+
+$swWs = [Diagnostics.Stopwatch]::StartNew()
+$okWs = $false
+while ($swWs.Elapsed.TotalSeconds -lt 180) {
+  Start-Sleep 3
+  if (Test-Path $wsLog) {
+    $c = Get-Content $wsLog -Raw -ErrorAction SilentlyContinue
+    if ($c -match "WORLD_SERVER_GATE_OK") { $okWs = $true; Start-Sleep 2; break }
+  }
+}
+Stop-Soft $wsAliceProc
+Stop-Soft $wsBobProc
+Stop-Soft $wsServerProc
+
+if (-not $okWs) { Fail "world_server_gate: WORLD_SERVER_GATE_OK not written within 180s" }
+Require-Fresh $wsLog (Get-Date).AddMinutes(-5) "WORLD_SERVER_GATE_OK"
+Require-Fresh $wsLog (Get-Date).AddMinutes(-5) "login=2"
+Require-Fresh $wsLog (Get-Date).AddMinutes(-5) "ticket=2"
+Log "WORLD_SERVER_GATE_OK"
+
 Log "GATE_PASS"
 $summary = @{
   gate = "PASS"
@@ -289,6 +342,7 @@ $summary = @{
   playable_drive = "OK"
   frontend_menu = "FRONTEND_MENU_OK"
   frontend_flow = if ($IntegrationGate) { "FRONTEND_FLOW_OK" } else { "SKIPPED_integration_gate_off" }
+  world_server_gate = "WORLD_SERVER_GATE_OK"
   time = (Get-Date).ToString("o")
 } | ConvertTo-Json
 Set-Content -Path (Join-Path $Scratch "gate_summary.json") -Value $summary

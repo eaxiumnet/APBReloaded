@@ -11,6 +11,8 @@ $srcs = "`"$dom\APBCatalog.cpp`" `"$dom\APBInventory.cpp`" `"$dom\APBArmas.cpp`"
 $exe = "$out\APBDomainTests.exe"
 $exe2 = "$out\APBPersistenceTests.exe"
 $exe3 = "$out\APBFidelityTests.exe"
+$exe4 = "$out\APBAuthTests.exe"
+$srcs_auth = "$srcs `"$dom\APBTicket.cpp`""
 $cmd = @"
 call `"$vsdev`" -arch=amd64 -host_arch=amd64 >nul
 cl /nologo /EHsc /std:c++17 /O2 /I`"$dom`" /Fe:`"$exe`" $srcs `"$proj\tests\run_domain_tests.cpp`"
@@ -24,6 +26,10 @@ if errorlevel 1 exit /b 1
 cl /nologo /EHsc /std:c++17 /O2 /I`"$dom`" /Fe:`"$exe3`" $srcs `"$proj\tests\run_fidelity_tests.cpp`"
 if errorlevel 1 exit /b 1
 `"$exe3`"
+if errorlevel 1 exit /b 1
+cl /nologo /EHsc /std:c++17 /O2 /I`"$dom`" /DAPB_AUTH_V2 /DAPB_TICKET_AVAILABLE /Fe:`"$exe4`" $srcs_auth `"$proj\tests\run_auth_tests.cpp`"
+if errorlevel 1 exit /b 1
+`"$exe4`"
 exit /b %ERRORLEVEL%
 "@
 $bat = Join-Path $env:TEMP "apb_domain_build.bat"

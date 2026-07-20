@@ -191,4 +191,21 @@ public:
 	/** Domain JSON persistence root: <ProjectSavedDir>/DomainDB (M2). */
 	FString PersistDir;
 	void* Service = nullptr;
+
+	// ── M6 world-server client mode ───────────────────────────────────────────
+
+	/** True when this client connected to a dedicated world-server process. */
+	UPROPERTY(BlueprintReadOnly, Category="APB|Auth")
+	bool bWorldServerMode = false;
+
+	/** Connect to a world-server at host:port. Sets bWorldServerMode on success. */
+	UFUNCTION(BlueprintCallable, Category="APB|Auth")
+	bool ConnectToWorldServer(const FString& Host, int32 Port);
+
+	UFUNCTION(BlueprintCallable, Category="APB|Auth")
+	bool IsWorldServerConnected() const;
+
+	/** Last ticket string issued by the world server (for district travel URL). */
+	UFUNCTION(BlueprintCallable, Category="APB|Auth")
+	FString GetIssuedTicket() const;
 };

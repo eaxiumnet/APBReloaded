@@ -23,7 +23,6 @@ std::string JsonEscape(const std::string& s);
  *    auction.json                      — AuctionHouse listings
  *    mail.json                         — MailService messages
  *
- *  Passwords stay plaintext (private offline port; hashing is M16, documented).
  *  All load functions tolerate missing files (fresh start = empty state). */
 class JsonDomainStore {
 public:

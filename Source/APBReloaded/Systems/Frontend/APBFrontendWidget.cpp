@@ -53,6 +53,7 @@
 #include "Dom/JsonObject.h"
 #include "Serialization/JsonReader.h"
 #include "Serialization/JsonSerializer.h"
+#include "APBPlayerState.h"
 
 // 2011 RTW GameFlow palette (menu2011_spec §2.3): monochrome greys + single amber accent.
 // #FFC254 is the Menu_Button_Light selection amber — replaces the old cyan identity.
@@ -2218,7 +2219,6 @@ void UAPBFrontendWidget::SetLoginCredentials(const FString& User, const FString&
 void UAPBFrontendWidget::OnLoginClicked()
 {
 	PlayUiSfx(TEXT("UI_Click"));
-	// Classic gate: credentials only — no auto-register (use CREATE NEW ACCOUNT).
 	const FString User = UserBox ? UserBox->GetText().ToString().TrimStartAndEnd() : FString();
 	const FString Pass = PassBox ? PassBox->GetText().ToString() : FString();
 	UAPBGameInstanceSubsystem* APB = GetGameInstance() ? GetGameInstance()->GetSubsystem<UAPBGameInstanceSubsystem>() : nullptr;
@@ -2227,6 +2227,43 @@ void UAPBFrontendWidget::OnLoginClicked()
 	{
 		if (StatusText) StatusText->SetText(FText::FromString(TEXT("Enter email and password")));
 		LogStage(TEXT("login_fail_empty"));
+		return;
+	}
+	if (APB->bWorldServerMode)
+	{
+		if (StatusText) StatusText->SetText(FText::FromString(TEXT("Connecting to world server...")));
+		APB->Login(User, Pass);
+		GetWorld()->GetTimerManager().SetTimer(WorldAuthPollTimer, [this, APB]()
+		{
+			const UWorld* W = GetWorld();
+			if (!W) return;
+			for (FConstPlayerControllerIterator It = W->GetPlayerControllerIterator(); It; ++It)
+			{
+				if (const APlayerController* PC = It->Get())
+				{
+					if (const AAPBPlayerState* PS = PC->GetPlayerState<AAPBPlayerState>())
+					{
+						if (PS->bWorldAuthOk)
+						{
+							GetWorld()->GetTimerManager().ClearTimer(WorldAuthPollTimer);
+							WorldAuthTimeout = 0.f;
+							bFirstRunTOS = false;
+							LogStage(TEXT("login_ok_world"));
+							SetStage(EAPBFrontendStage::CharacterSelect);
+							return;
+						}
+					}
+				}
+			}
+			WorldAuthTimeout += 0.5f;
+			if (WorldAuthTimeout >= 10.f)
+			{
+				GetWorld()->GetTimerManager().ClearTimer(WorldAuthPollTimer);
+				WorldAuthTimeout = 0.f;
+				if (StatusText) StatusText->SetText(FText::FromString(TEXT("World server login timed out")));
+				LogStage(TEXT("login_fail_timeout"));
+			}
+		}, 0.5f, true);
 		return;
 	}
 	if (!APB->Login(User, Pass))
@@ -2713,6 +2750,14 @@ void UAPBFrontendWidget::OnEnterDistrict()
 	LogStage(FString::Printf(TEXT("travel=%s map=%s"), *SelectedDistrictId, *SelectedDistrictMap));
 	FString MapName = SelectedDistrictMap;
 	if (MapName.IsEmpty()) MapName = TEXT("Lvl_APB_Financial_Freeroam");
-	const FString Opts = TEXT("listen?game=/Script/APBReloaded.APBFreeroamGameMode");
+	FString Opts = TEXT("listen?game=/Script/APBReloaded.APBFreeroamGameMode");
+	if (APB->bWorldServerMode)
+	{
+		const FString Ticket = APB->GetIssuedTicket();
+		if (!Ticket.IsEmpty())
+		{
+			Opts += TEXT("?APBTicket=") + Ticket;
+		}
+	}
 	UGameplayStatics::OpenLevel(this, FName(*MapName), true, Opts);
 }

@@ -31,6 +31,11 @@ private:
 	void FrontendFail(const FString& Reason);
 	void EndFrontendProbe();
 
+	/** M6: world-server authority probe — counts clients reaching auth/charlist/districtlist/ticket. */
+	void RunWorldServerProbe();
+	/** M6: world-server client probe — drives login→charlist→districtlist→ticket via Server RPCs. */
+	void RunWorldServerClientProbe();
+
 	FString Mode;
 	bool bTerminal = false;
 	FString LogPath;
@@ -40,6 +45,14 @@ private:
 	FTimerHandle PlayableTimer;
 	FTimerHandle MpTimer;
 	FTimerHandle FrontendTravelTimer;
+	FTimerHandle WorldServerTimer;
 	bool bFrontendTravelPending = false;
 	int32 FrontendEquippedSlots = 0;
+
+	int32 WS_LoginCount = 0;
+	int32 WS_CharListCount = 0;
+	int32 WS_DistrictListCount = 0;
+	int32 WS_TicketCount = 0;
+	FString WSClientId;
+	bool bWSClientDone = false;
 };
