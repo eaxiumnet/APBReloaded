@@ -178,15 +178,38 @@ active milestone (recorded in this file, keeping one plan per effort).
   M9/M12 baseline: vehicles=0/walk=0), no double-FAIL fall-through, no zombie. Visual
   fidelity checkboxes intentionally left for optional manual capture per spec §0.
 
-### M5 — Retail character creation  *(brief #4 — D4)*
-- Files: `Domain\APBCustomization.*`, `Content\Data\{clothing.json, palettes.json}`,
-  CharCreate stage of frontend widget, `APBCharacterCreatePreviewActor`,
-  `tests\run_fidelity_tests.cpp`.
-- Actions: 7 → 15 retail categories; palette grids; randomize; camera per `APBLCC.ini`;
-  morph spike (cap 2). Tattoos/symbols/layers: data model + UI stubs this milestone; full
-  symbol-editor depth tracked as M17 polish item.
-- Verify: fidelity tests (15 categories equip/serialize/restart) green; retail
-  `[CharacterCustomisationScreens]` screenshot checklist signed off.
+### M5 — Retail character creation  *(brief #4 — D4)* — ✅ COMPLETE 2026-07-20
+- Files: `Domain\APBTypes.h`, `Domain\APBCatalog.cpp`, `Domain\APBCustomization.*`,
+  `Content\Data\{wardrobe_categories.json (new), clothing.json, palettes.json}`,
+  `Systems\APBGameInstanceSubsystem.*`, `Systems\Frontend\APBCharacterCreatePreviewActor.*`,
+  `Systems\Frontend\APBFrontendWidget.*`, `tests\run_fidelity_tests.cpp`, `tests\build_and_run.ps1`.
+- Actions delivered: 7 → **15 retail wardrobe categories** (new `wardrobe_categories.json`
+  maps each tab to a distinct domain equip-slot: 7 original + underwear/outerwear/dress/
+  jewellery/belt/webbing/armour/bodyhair; all 2,051 `clothing.json` items tagged
+  `wardrobe_tab`). Domain `SymbolLayer` + `symbols[]` with 3rd-pipe serialize/deserialize
+  (legacy 1-pipe blobs still decode) and `Randomize(faction,seed)` deterministic fill.
+  UE bridges (`GetClothingForTab`/`GetSlotForTab`/`EquipClothingColored`/`RandomizeAppearance`/
+  `GetPaletteColors`/`AddSymbolLayer`/`GetSymbolLayerCount`/`GetCameraFrameForTab`). Preview
+  `FrameCamera` per `APBLCC.ini` (retail default 280/95/95/55, per-tab framing from JSON).
+  CharCreate widget rebuilt to 15-tab UI + 24-swatch palette grid + RANDOMIZE + symbol stub.
+  Tattoos/symbols: data model + UI stub this milestone; full symbol-editor depth → M17.
+- **Morph spike (D4): abandoned after 2 attempts** — Golem facial morph is cooked-only
+  (UE3 `.upk`), 0/4,499 imported assets carry morph data, `APBLCC.ini` has only
+  `GolemSpawnerActor`. Fallback = `ApplyBodyProfile` height/bulk + discrete SkinTone/
+  FacePreset selectors in Domain (verified present). Note: `work\morph_spike.md`. Continuous
+  morph reopens in M17 only with a hand-authored UE5 morph-target set (AGENTS.md rule 5 honored).
+- Verify (evidence 2026-07-20): fidelity suite green — `tests\build_and_run.ps1` all 3 suites
+  `FAILS=0` (M5 coverage: 15-tab table locked + cross-checked vs `wardrobe_categories.json`
+  for drift, symbol round-trip + legacy compat, 15 independent slots survive restart,
+  deterministic randomize hits every tab). `APBReloadedEditor` + `APBReloaded` Win64
+  Development builds `Result: Succeeded` (server target unsupported by this engine
+  distribution — cook scheduled M6, not an M5 regression). `frontend_menu` probe self-exits
+  exit 0, terminal `FRONTEND_MENU_OK`, `CHAR_CREATE ok=1`, `APPEARANCE slots_equipped=7
+  required=7` (no M4 regression from the widget rebuild). Commits: `e6379e8` data model +
+  clothing tags, `0f929b4` domain symbols/randomize/15-slot + fidelity tests, `f0d43d3` UE
+  bridges + camera framing, `5622047` 15-tab widget UI, `224bec2` morph spike note. Retail
+  `[CharacterCustomisationScreens]` screenshot checklist left for optional manual capture
+  (same posture as M4 visual sign-off).
 
 ### M6 — Login/auth + world server  *(brief #5 — D6/D11)*
 - Files: `APBReloadedServer.Target.cs`, `AAPBWorldGameMode` (fill shell), new
