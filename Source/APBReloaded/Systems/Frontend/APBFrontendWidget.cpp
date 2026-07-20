@@ -9,6 +9,7 @@
 #include "Components/Border.h"
 #include "Components/VerticalBox.h"
 #include "Components/HorizontalBox.h"
+#include "Components/UniformGridPanel.h"
 #include "Components/TextBlock.h"
 #include "Components/EditableTextBox.h"
 #include "Components/Button.h"
@@ -1425,7 +1426,9 @@ void UAPBFrontendWidget::RebuildStageBody()
 	RememberCheck = nullptr;
 	EnforcerCheck = nullptr;
 	FactionCriminalBtn = FactionEnforcerBtn = nullptr;
-	SlotHead = SlotTorso = SlotLegs = SlotFeet = SlotHands = SlotAccessory = SlotFace = nullptr;
+	WardrobeItemCombo = nullptr;
+	SymbolCountLabel = nullptr;
+	PaletteGrid = nullptr;
 	DistrictCombo = nullptr;
 	BodyHeightBox = BodyBuildBox = nullptr;
 	PreviewSummary = nullptr;
@@ -1815,21 +1818,85 @@ void UAPBFrontendWidget::RebuildStageBody()
 		BodyBuildBox->OnTextCommitted.AddDynamic(this, &UAPBFrontendWidget::OnBodyTextCommitted);
 		AddToScroll(BodyBuildBox, 2.f);
 
-		auto AddSlot = [&](const TCHAR* Label, TObjectPtr<UComboBoxString>& Out, const TCHAR* Name)
+		static const TCHAR* WardrobeLabels[] = { TEXT("Torso"), TEXT("Legs"), TEXT("Feet"), TEXT("Head"), TEXT("Hands"), TEXT("Face"), TEXT("Underwear"), TEXT("Outerwear"), TEXT("Dress"), TEXT("Jewellery"), TEXT("Belt"), TEXT("Accessory"), TEXT("Webbing"), TEXT("Armour"), TEXT("Bodyhair") };
+		AddToScroll(MakeLabel(TEXT("WardrobeTitle"), TEXT("WARDROBE"), 12, APB_AMBER), 8.f);
+		UHorizontalBox* WardrobeTabs = WidgetTree->ConstructWidget<UHorizontalBox>(UHorizontalBox::StaticClass(), TEXT("WardrobeTabs"));
+		for (int32 TabId = 1; TabId <= 15; ++TabId)
 		{
-			AddToScroll(MakeLabel(FString(Name) + TEXT("L"), Label, 11, APB_AMBER), 4.f);
-			Out = WidgetTree->ConstructWidget<UComboBoxString>(UComboBoxString::StaticClass(), Name);
-			Out->OnSelectionChanged.AddDynamic(this, &UAPBFrontendWidget::OnClothingSelectionChanged);
-			AddToScroll(Out, 2.f);
-		};
-		AddSlot(TEXT("Head"), SlotHead, TEXT("SlotHead"));
-		AddSlot(TEXT("Torso"), SlotTorso, TEXT("SlotTorso"));
-		AddSlot(TEXT("Legs"), SlotLegs, TEXT("SlotLegs"));
-		AddSlot(TEXT("Feet"), SlotFeet, TEXT("SlotFeet"));
-		AddSlot(TEXT("Hands"), SlotHands, TEXT("SlotHands"));
-		AddSlot(TEXT("Accessory"), SlotAccessory, TEXT("SlotAcc"));
-		AddSlot(TEXT("Face"), SlotFace, TEXT("SlotFace"));
-		RefreshClothingCombos();
+			UButton* TabButton = MakeButton(FString::Printf(TEXT("WardrobeTab%d"), TabId), WardrobeLabels[TabId - 1]);
+			switch (TabId)
+			{
+			case 1: TabButton->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnWardrobeTab1); break;
+			case 2: TabButton->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnWardrobeTab2); break;
+			case 3: TabButton->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnWardrobeTab3); break;
+			case 4: TabButton->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnWardrobeTab4); break;
+			case 5: TabButton->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnWardrobeTab5); break;
+			case 6: TabButton->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnWardrobeTab6); break;
+			case 7: TabButton->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnWardrobeTab7); break;
+			case 8: TabButton->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnWardrobeTab8); break;
+			case 9: TabButton->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnWardrobeTab9); break;
+			case 10: TabButton->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnWardrobeTab10); break;
+			case 11: TabButton->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnWardrobeTab11); break;
+			case 12: TabButton->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnWardrobeTab12); break;
+			case 13: TabButton->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnWardrobeTab13); break;
+			case 14: TabButton->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnWardrobeTab14); break;
+			case 15: TabButton->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnWardrobeTab15); break;
+			default: break;
+			}
+			if (UHorizontalBoxSlot* HS = WardrobeTabs->AddChildToHorizontalBox(TabButton)) { HS->SetPadding(FMargin(1.f)); HS->SetSize(FSlateChildSize(ESlateSizeRule::Fill)); }
+		}
+		AddToScroll(WardrobeTabs, 4.f);
+		WardrobeItemCombo = WidgetTree->ConstructWidget<UComboBoxString>(UComboBoxString::StaticClass(), TEXT("WardrobeItemCombo"));
+		WardrobeItemCombo->OnSelectionChanged.AddDynamic(this, &UAPBFrontendWidget::OnClothingSelectionChanged);
+		AddToScroll(WardrobeItemCombo, 2.f);
+		AddToScroll(MakeLabel(TEXT("PaletteLabel"), TEXT("PRIMARY COLOR"), 11, APB_AMBER), 4.f);
+		PaletteGrid = WidgetTree->ConstructWidget<UUniformGridPanel>(UUniformGridPanel::StaticClass(), TEXT("PaletteGrid"));
+		UAPBGameInstanceSubsystem* APB = GetGameInstance() ? GetGameInstance()->GetSubsystem<UAPBGameInstanceSubsystem>() : nullptr;
+		WardrobePaletteColors = APB ? APB->GetPaletteColors(TEXT("Clothing"), 0) : TArray<FLinearColor>();
+		const int32 PaletteCount = FMath::Min(WardrobePaletteColors.Num(), 24);
+		for (int32 ColorIndex = 0; ColorIndex < PaletteCount; ++ColorIndex)
+		{
+			UButton* Swatch = MakeButton(FString::Printf(TEXT("PaletteSwatch%d"), ColorIndex), TEXT(" "));
+			Swatch->SetBackgroundColor(WardrobePaletteColors[ColorIndex]);
+			switch (ColorIndex)
+			{
+			#define APB_SWATCH_HANDLER(Index) case Index: Swatch->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnPaletteSwatch##Index); break;
+			APB_SWATCH_HANDLER(0) APB_SWATCH_HANDLER(1) APB_SWATCH_HANDLER(2) APB_SWATCH_HANDLER(3) APB_SWATCH_HANDLER(4) APB_SWATCH_HANDLER(5)
+			APB_SWATCH_HANDLER(6) APB_SWATCH_HANDLER(7) APB_SWATCH_HANDLER(8) APB_SWATCH_HANDLER(9) APB_SWATCH_HANDLER(10) APB_SWATCH_HANDLER(11)
+			APB_SWATCH_HANDLER(12) APB_SWATCH_HANDLER(13) APB_SWATCH_HANDLER(14) APB_SWATCH_HANDLER(15) APB_SWATCH_HANDLER(16) APB_SWATCH_HANDLER(17)
+			APB_SWATCH_HANDLER(18) APB_SWATCH_HANDLER(19) APB_SWATCH_HANDLER(20) APB_SWATCH_HANDLER(21) APB_SWATCH_HANDLER(22) APB_SWATCH_HANDLER(23)
+			#undef APB_SWATCH_HANDLER
+			default: break;
+			}
+			PaletteGrid->AddChildToUniformGrid(Swatch, ColorIndex / 8, ColorIndex % 8);
+		}
+		if (PaletteCount > 0) AddToScroll(PaletteGrid, 2.f);
+		UButton* Randomize = MakeAccentButton(TEXT("RandomizeAppearance"), TEXT("  RANDOMIZE  "), APB_AMBER);
+		Randomize->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnRandomizeAppearance);
+		AddToScroll(Randomize, 8.f);
+		AddToScroll(MakeLabel(TEXT("SymbolStub"), TEXT("SYMBOLS / TATTOOS: full editor is M17"), 10, APB_MUTED), 4.f);
+		UHorizontalBox* SymbolRow = WidgetTree->ConstructWidget<UHorizontalBox>(UHorizontalBox::StaticClass(), TEXT("SymbolRow"));
+		UButton* AddSymbol = MakeButton(TEXT("AddSymbol"), TEXT("  ADD SYMBOL  "));
+		AddSymbol->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnAddSymbol);
+		SymbolRow->AddChildToHorizontalBox(AddSymbol);
+		SymbolCountLabel = MakeLabel(TEXT("SymbolCount"), APB ? FString::Printf(TEXT("%d layers"), APB->GetSymbolLayerCount()) : TEXT("0 layers"), 10, APB_MUTED);
+		if (UHorizontalBoxSlot* HS = SymbolRow->AddChildToHorizontalBox(SymbolCountLabel)) HS->SetPadding(FMargin(8.f, 0.f));
+		AddToScroll(SymbolRow, 2.f);
+		ActiveWardrobeTab = 1;
+		WardrobeItemIds.SetNum(15);
+		if (APB)
+		{
+			for (int32 TabId = 1; TabId <= 15; ++TabId)
+			{
+				const TArray<FAPBClothingChoice> Choices = APB->GetClothingForTab(TabId, 60);
+				if (Choices.Num() > 0)
+				{
+					WardrobeItemIds[TabId - 1] = Choices[0].Id;
+					APB->EquipClothingColored(APB->GetSlotForTab(TabId), Choices[0].Id, SelectedColorIndex, SelectedColorIndex);
+				}
+			}
+		}
+		RefreshWardrobeItems();
 
 		PreviewSummary = MakeLabel(TEXT("PrevSummary"), TEXT("3D studio ready"), 11, APB_MUTED);
 		AddToScroll(PreviewSummary, 6.f);
@@ -2103,27 +2170,38 @@ void UAPBFrontendWidget::OnDistrictComboChanged(FString SelectedItem, ESelectInf
 
 void UAPBFrontendWidget::RefreshClothingCombos()
 {
-	UGameInstance* GI = GetGameInstance();
-	UAPBGameInstanceSubsystem* APB = GI ? GI->GetSubsystem<UAPBGameInstanceSubsystem>() : nullptr;
-	if (!APB) return;
-	bSuppressPreviewRefresh = true;
-	auto Fill = [&](UComboBoxString* Box, const FString& ClothSlot)
+	RefreshWardrobeItems();
+}
+
+void UAPBFrontendWidget::SelectWardrobeTab(int32 TabId)
+{
+	ActiveWardrobeTab = FMath::Clamp(TabId, 1, 15);
+	RefreshWardrobeItems();
+	if (UAPBGameInstanceSubsystem* APB = GetGameInstance() ? GetGameInstance()->GetSubsystem<UAPBGameInstanceSubsystem>() : nullptr)
 	{
-		if (!Box) return;
-		Box->ClearOptions();
-		for (const FAPBClothingChoice& C : APB->GetClothingForSlot(ClothSlot, 24))
+		float PosY = 0.f, PosZ = 0.f, TargetZ = 0.f, Fov = 0.f;
+		if (CharPreviewActor && APB->GetCameraFrameForTab(ActiveWardrobeTab, PosY, PosZ, TargetZ, Fov)) CharPreviewActor->FrameCamera(PosY, PosZ, TargetZ, Fov);
+	}
+	RefreshCharacterPreviewFromUI();
+}
+
+void UAPBFrontendWidget::RefreshWardrobeItems()
+{
+	UAPBGameInstanceSubsystem* APB = GetGameInstance() ? GetGameInstance()->GetSubsystem<UAPBGameInstanceSubsystem>() : nullptr;
+	if (!APB || !WardrobeItemCombo) return;
+	bSuppressPreviewRefresh = true;
+	WardrobeItemCombo->ClearOptions();
+	for (const FAPBClothingChoice& Choice : APB->GetClothingForTab(ActiveWardrobeTab, 60)) WardrobeItemCombo->AddOption(FString::Printf(TEXT("%s | %s"), *Choice.Id, *Choice.Name));
+	if (WardrobeItemCombo->GetOptionCount() > 0)
+	{
+		const FString SelectedId = WardrobeItemIds.IsValidIndex(ActiveWardrobeTab - 1) ? WardrobeItemIds[ActiveWardrobeTab - 1] : FString();
+		int32 SelectedOption = 0;
+		for (int32 OptionIndex = 0; OptionIndex < WardrobeItemCombo->GetOptionCount(); ++OptionIndex)
 		{
-			Box->AddOption(FString::Printf(TEXT("%s | %s"), *C.Id, *C.Name));
+			if (WardrobeItemCombo->GetOptionAtIndex(OptionIndex).StartsWith(SelectedId + TEXT(" |"))) { SelectedOption = OptionIndex; break; }
 		}
-		if (Box->GetOptionCount() > 0) Box->SetSelectedIndex(0);
-	};
-	Fill(SlotHead, TEXT("head"));
-	Fill(SlotTorso, TEXT("torso"));
-	Fill(SlotLegs, TEXT("legs"));
-	Fill(SlotFeet, TEXT("feet"));
-	Fill(SlotHands, TEXT("hands"));
-	Fill(SlotAccessory, TEXT("accessory"));
-	Fill(SlotFace, TEXT("face"));
+		WardrobeItemCombo->SetSelectedIndex(SelectedOption);
+	}
 	bSuppressPreviewRefresh = false;
 }
 
@@ -2360,6 +2438,66 @@ void UAPBFrontendWidget::OnDistrictRow5() { SelectDistrictIndex(5); }
 void UAPBFrontendWidget::OnDistrictRow6() { SelectDistrictIndex(6); }
 void UAPBFrontendWidget::OnDistrictRow7() { SelectDistrictIndex(7); }
 
+void UAPBFrontendWidget::OnWardrobeTab1() { SelectWardrobeTab(1); }
+void UAPBFrontendWidget::OnWardrobeTab2() { SelectWardrobeTab(2); }
+void UAPBFrontendWidget::OnWardrobeTab3() { SelectWardrobeTab(3); }
+void UAPBFrontendWidget::OnWardrobeTab4() { SelectWardrobeTab(4); }
+void UAPBFrontendWidget::OnWardrobeTab5() { SelectWardrobeTab(5); }
+void UAPBFrontendWidget::OnWardrobeTab6() { SelectWardrobeTab(6); }
+void UAPBFrontendWidget::OnWardrobeTab7() { SelectWardrobeTab(7); }
+void UAPBFrontendWidget::OnWardrobeTab8() { SelectWardrobeTab(8); }
+void UAPBFrontendWidget::OnWardrobeTab9() { SelectWardrobeTab(9); }
+void UAPBFrontendWidget::OnWardrobeTab10() { SelectWardrobeTab(10); }
+void UAPBFrontendWidget::OnWardrobeTab11() { SelectWardrobeTab(11); }
+void UAPBFrontendWidget::OnWardrobeTab12() { SelectWardrobeTab(12); }
+void UAPBFrontendWidget::OnWardrobeTab13() { SelectWardrobeTab(13); }
+void UAPBFrontendWidget::OnWardrobeTab14() { SelectWardrobeTab(14); }
+void UAPBFrontendWidget::OnWardrobeTab15() { SelectWardrobeTab(15); }
+
+void UAPBFrontendWidget::OnPaletteSwatch0() { SelectedColorIndex = 0; OnClothingSelectionChanged(FString(), ESelectInfo::Direct); }
+void UAPBFrontendWidget::OnPaletteSwatch1() { SelectedColorIndex = 1; OnClothingSelectionChanged(FString(), ESelectInfo::Direct); }
+void UAPBFrontendWidget::OnPaletteSwatch2() { SelectedColorIndex = 2; OnClothingSelectionChanged(FString(), ESelectInfo::Direct); }
+void UAPBFrontendWidget::OnPaletteSwatch3() { SelectedColorIndex = 3; OnClothingSelectionChanged(FString(), ESelectInfo::Direct); }
+void UAPBFrontendWidget::OnPaletteSwatch4() { SelectedColorIndex = 4; OnClothingSelectionChanged(FString(), ESelectInfo::Direct); }
+void UAPBFrontendWidget::OnPaletteSwatch5() { SelectedColorIndex = 5; OnClothingSelectionChanged(FString(), ESelectInfo::Direct); }
+void UAPBFrontendWidget::OnPaletteSwatch6() { SelectedColorIndex = 6; OnClothingSelectionChanged(FString(), ESelectInfo::Direct); }
+void UAPBFrontendWidget::OnPaletteSwatch7() { SelectedColorIndex = 7; OnClothingSelectionChanged(FString(), ESelectInfo::Direct); }
+void UAPBFrontendWidget::OnPaletteSwatch8() { SelectedColorIndex = 8; OnClothingSelectionChanged(FString(), ESelectInfo::Direct); }
+void UAPBFrontendWidget::OnPaletteSwatch9() { SelectedColorIndex = 9; OnClothingSelectionChanged(FString(), ESelectInfo::Direct); }
+void UAPBFrontendWidget::OnPaletteSwatch10() { SelectedColorIndex = 10; OnClothingSelectionChanged(FString(), ESelectInfo::Direct); }
+void UAPBFrontendWidget::OnPaletteSwatch11() { SelectedColorIndex = 11; OnClothingSelectionChanged(FString(), ESelectInfo::Direct); }
+void UAPBFrontendWidget::OnPaletteSwatch12() { SelectedColorIndex = 12; OnClothingSelectionChanged(FString(), ESelectInfo::Direct); }
+void UAPBFrontendWidget::OnPaletteSwatch13() { SelectedColorIndex = 13; OnClothingSelectionChanged(FString(), ESelectInfo::Direct); }
+void UAPBFrontendWidget::OnPaletteSwatch14() { SelectedColorIndex = 14; OnClothingSelectionChanged(FString(), ESelectInfo::Direct); }
+void UAPBFrontendWidget::OnPaletteSwatch15() { SelectedColorIndex = 15; OnClothingSelectionChanged(FString(), ESelectInfo::Direct); }
+void UAPBFrontendWidget::OnPaletteSwatch16() { SelectedColorIndex = 16; OnClothingSelectionChanged(FString(), ESelectInfo::Direct); }
+void UAPBFrontendWidget::OnPaletteSwatch17() { SelectedColorIndex = 17; OnClothingSelectionChanged(FString(), ESelectInfo::Direct); }
+void UAPBFrontendWidget::OnPaletteSwatch18() { SelectedColorIndex = 18; OnClothingSelectionChanged(FString(), ESelectInfo::Direct); }
+void UAPBFrontendWidget::OnPaletteSwatch19() { SelectedColorIndex = 19; OnClothingSelectionChanged(FString(), ESelectInfo::Direct); }
+void UAPBFrontendWidget::OnPaletteSwatch20() { SelectedColorIndex = 20; OnClothingSelectionChanged(FString(), ESelectInfo::Direct); }
+void UAPBFrontendWidget::OnPaletteSwatch21() { SelectedColorIndex = 21; OnClothingSelectionChanged(FString(), ESelectInfo::Direct); }
+void UAPBFrontendWidget::OnPaletteSwatch22() { SelectedColorIndex = 22; OnClothingSelectionChanged(FString(), ESelectInfo::Direct); }
+void UAPBFrontendWidget::OnPaletteSwatch23() { SelectedColorIndex = 23; OnClothingSelectionChanged(FString(), ESelectInfo::Direct); }
+
+void UAPBFrontendWidget::OnRandomizeAppearance()
+{
+	if (UAPBGameInstanceSubsystem* APB = GetGameInstance() ? GetGameInstance()->GetSubsystem<UAPBGameInstanceSubsystem>() : nullptr)
+	{
+		APB->RandomizeAppearance(AppearanceRandomSeed++);
+		RefreshWardrobeItems();
+		RefreshCharacterPreviewFromUI();
+	}
+}
+
+void UAPBFrontendWidget::OnAddSymbol()
+{
+	if (UAPBGameInstanceSubsystem* APB = GetGameInstance() ? GetGameInstance()->GetSubsystem<UAPBGameInstanceSubsystem>() : nullptr)
+	{
+		APB->AddSymbolLayer(1, APB->GetSlotForTab(ActiveWardrobeTab), 0.f, 0.f, 0.f, 1.f, SelectedColorIndex, 0);
+		if (SymbolCountLabel) SymbolCountLabel->SetText(FText::FromString(FString::Printf(TEXT("%d layers"), APB->GetSymbolLayerCount())));
+	}
+}
+
 static FString ComboId(UComboBoxString* Box)
 {
 	if (!Box) return FString();
@@ -2426,6 +2564,8 @@ void UAPBFrontendWidget::RefreshCharacterPreviewFromUI()
 {
 	EnsureCharacterPreview();
 	if (!CharPreviewActor) return;
+	UAPBGameInstanceSubsystem* APB = GetGameInstance() ? GetGameInstance()->GetSubsystem<UAPBGameInstanceSubsystem>() : nullptr;
+	if (!APB) return;
 
 	const bool bEnf = bCreateAsEnforcer || (EnforcerCheck && EnforcerCheck->IsChecked());
 	const FString MeshPath = CharPreviewActor->ApplyBaseMesh(bEnf);
@@ -2435,17 +2575,11 @@ void UAPBFrontendWidget::RefreshCharacterPreviewFromUI()
 	if (BodyBuildBox) Bulk = FCString::Atof(*BodyBuildBox->GetText().ToString());
 	CharPreviewActor->ApplyBodyProfile(Height, Bulk);
 
-	struct Pair { const TCHAR* Slot; UComboBoxString* Box; };
-	const Pair Pairs[] = {
-		{ TEXT("head"), SlotHead }, { TEXT("torso"), SlotTorso }, { TEXT("legs"), SlotLegs },
-		{ TEXT("feet"), SlotFeet }, { TEXT("hands"), SlotHands }, { TEXT("accessory"), SlotAccessory },
-		{ TEXT("face"), SlotFace },
-	};
 	int32 Bound = 0;
-	for (const Pair& P : Pairs)
+	for (int32 TabId = 1; TabId <= 15; ++TabId)
 	{
-		const FString Id = ComboId(P.Box);
-		if (!Id.IsEmpty() && CharPreviewActor->ApplyClothingSlotVisual(P.Slot, Id))
+		const FString ItemId = WardrobeItemIds.IsValidIndex(TabId - 1) ? WardrobeItemIds[TabId - 1] : FString();
+		if (!ItemId.IsEmpty() && CharPreviewActor->ApplyClothingSlotVisual(APB->GetSlotForTab(TabId), ItemId))
 		{
 			++Bound;
 		}
@@ -2463,19 +2597,13 @@ void UAPBFrontendWidget::OnClothingSelectionChanged(FString SelectedItem, ESelec
 {
 	if (bSuppressPreviewRefresh) return;
 	if (CurrentStage != EAPBFrontendStage::CharacterCreate) return;
-	// Domain equip for the changed selection set
 	if (UAPBGameInstanceSubsystem* APB = GetGameInstance() ? GetGameInstance()->GetSubsystem<UAPBGameInstanceSubsystem>() : nullptr)
 	{
-		struct Pair { const TCHAR* Slot; UComboBoxString* Box; };
-		const Pair Pairs[] = {
-			{ TEXT("head"), SlotHead }, { TEXT("torso"), SlotTorso }, { TEXT("legs"), SlotLegs },
-			{ TEXT("feet"), SlotFeet }, { TEXT("hands"), SlotHands }, { TEXT("accessory"), SlotAccessory },
-			{ TEXT("face"), SlotFace },
-		};
-		for (const Pair& P : Pairs)
+		const FString Id = ComboId(WardrobeItemCombo);
+		if (!Id.IsEmpty())
 		{
-			const FString Id = ComboId(P.Box);
-			if (!Id.IsEmpty()) APB->EquipClothingItem(P.Slot, Id);
+			if (WardrobeItemIds.IsValidIndex(ActiveWardrobeTab - 1)) WardrobeItemIds[ActiveWardrobeTab - 1] = Id;
+			APB->EquipClothingColored(APB->GetSlotForTab(ActiveWardrobeTab), Id, SelectedColorIndex, SelectedColorIndex);
 		}
 	}
 	RefreshCharacterPreviewFromUI();
@@ -2518,20 +2646,15 @@ void UAPBFrontendWidget::ApplyAppearanceFromEditor()
 	Bulk = FMath::Clamp(Bulk, 0.8f, 1.2f);
 	APB->ApplyBodyProfile(Height, Bulk, 1, 1);
 	LogStage(FString::Printf(TEXT("body height=%.3f bulk=%.3f"), Height, Bulk));
-	struct Pair { const TCHAR* Slot; UComboBoxString* Box; };
-	const Pair Pairs[] = {
-		{ TEXT("head"), SlotHead }, { TEXT("torso"), SlotTorso }, { TEXT("legs"), SlotLegs },
-		{ TEXT("feet"), SlotFeet }, { TEXT("hands"), SlotHands }, { TEXT("accessory"), SlotAccessory },
-		{ TEXT("face"), SlotFace },
-	};
 	FString Summary = FString::Printf(TEXT("body H=%.2f B=%.2f;"), Height, Bulk);
-	for (const Pair& P : Pairs)
+	for (int32 TabId = 1; TabId <= 15; ++TabId)
 	{
-		const FString Id = ComboId(P.Box);
-		if (!Id.IsEmpty())
+		const FString ItemId = WardrobeItemIds.IsValidIndex(TabId - 1) ? WardrobeItemIds[TabId - 1] : FString();
+		if (!ItemId.IsEmpty())
 		{
-			APB->EquipClothingItem(P.Slot, Id);
-			Summary += FString::Printf(TEXT("%s=%s;"), P.Slot, *Id);
+			const FString ClothingSlot = APB->GetSlotForTab(TabId);
+			APB->EquipClothingColored(ClothingSlot, ItemId, SelectedColorIndex, SelectedColorIndex);
+			Summary += FString::Printf(TEXT("%s=%s;"), *ClothingSlot, *ItemId);
 		}
 	}
 	if (PreviewSummary) PreviewSummary->SetText(FText::FromString(TEXT("Equipped: ") + Summary));
