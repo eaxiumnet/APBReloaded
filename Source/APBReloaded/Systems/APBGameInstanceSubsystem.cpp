@@ -10,6 +10,8 @@
 #include "GameFramework/PlayerController.h"
 #include "Kismet/GameplayStatics.h"
 #include "HAL/IConsoleManager.h"
+#include "Serialization/JsonReader.h"
+#include "Serialization/JsonSerializer.h"
 
 static apb::WorldService* Svc(void* P) { return reinterpret_cast<apb::WorldService*>(P); }
 static const apb::WorldService* SvcC(const void* P) { return reinterpret_cast<const apb::WorldService*>(P); }
@@ -332,6 +334,131 @@ TArray<FAPBClothingChoice> UAPBGameInstanceSubsystem::GetClothingForSlot(const F
 		Out.Add(C);
 	}
 	return Out;
+}
+
+TArray<FAPBClothingChoice> UAPBGameInstanceSubsystem::GetClothingForTab(int32 TabId, int32 MaxItems) const
+{
+	TArray<FAPBClothingChoice> Out;
+	if (!Service) return Out;
+	for (const auto& kv : SvcC(Service)->catalog.items)
+	{
+		if (kv.second.wardrobe_tab != TabId) continue;
+		FAPBClothingChoice C;
+		C.Id = UTF8_TO_TCHAR(kv.second.id.c_str());
+		C.Name = UTF8_TO_TCHAR(kv.second.name.c_str());
+		C.Slot = UTF8_TO_TCHAR(apb::CustomizationService::SlotForTab(TabId));
+		C.ArmasPrice = kv.second.armas_price;
+		Out.Add(C);
+	}
+	Out.Sort([](const FAPBClothingChoice& A, const FAPBClothingChoice& B) { return A.Id < B.Id; });
+	if (Out.Num() > MaxItems) Out.SetNum(MaxItems);
+	return Out;
+}
+
+FString UAPBGameInstanceSubsystem::GetSlotForTab(int32 TabId) const
+{
+	return UTF8_TO_TCHAR(apb::CustomizationService::SlotForTab(TabId));
+}
+
+bool UAPBGameInstanceSubsystem::EquipClothingColored(const FString& Slot, const FString& ItemId, int32 ColorPrimary, int32 ColorSecondary)
+{
+	if (!Service || !CanMutateDomain()) return false;
+	return Svc(Service)->EquipClothing(TCHAR_TO_UTF8(*Slot), TCHAR_TO_UTF8(*ItemId), ColorPrimary, ColorSecondary);
+}
+
+bool UAPBGameInstanceSubsystem::RandomizeAppearance(int32 Seed)
+{
+	if (!Service || !CanMutateDomain()) return false;
+	apb::WorldService* W = Svc(Service);
+	if (!W->character) return false;
+	apb::CharacterAppearance App = W->customization.Randomize(W->character->faction, (uint32_t)Seed);
+	const bool bOk = W->ApplyAppearance(App);
+	if (bOk)
+	{
+		UE_LOG(LogTemp, Log, TEXT("APB RANDOMIZE seed=%d clothing=%d"), Seed, (int32)App.clothing.size());
+	}
+	return bOk;
+}
+
+TArray<FLinearColor> UAPBGameInstanceSubsystem::GetPaletteColors(const FString& PaletteName, int32 RowIndex) const
+{
+	TArray<FLinearColor> Out;
+	const FString Path = DataDir / TEXT("palettes.json");
+	FString Text;
+	if (!FFileHelper::LoadFileToString(Text, *Path)) return Out;
+	TSharedPtr<FJsonObject> Root;
+	const TSharedRef<TJsonReader<>> Reader = TJsonReaderFactory<>::Create(Text);
+	if (!FJsonSerializer::Deserialize(Reader, Root) || !Root.IsValid()) return Out;
+	const TSharedPtr<FJsonObject>* Pal = nullptr;
+	if (!Root->TryGetObjectField(PaletteName, Pal) || !Pal) return Out;
+	const TArray<TSharedPtr<FJsonValue>>* Rows = nullptr;
+	if (!(*Pal)->TryGetArrayField(TEXT("rows"), Rows) || !Rows) return Out;
+	if (RowIndex < 0 || RowIndex >= Rows->Num()) return Out;
+	const TArray<TSharedPtr<FJsonValue>>& Colors = (*Rows)[RowIndex]->AsArray();
+	for (const TSharedPtr<FJsonValue>& CV : Colors)
+	{
+		const TSharedPtr<FJsonObject> CO = CV->AsObject();
+		if (!CO.IsValid()) continue;
+		const float R = (float)CO->GetNumberField(TEXT("r")) / 255.f;
+		const float G = (float)CO->GetNumberField(TEXT("g")) / 255.f;
+		const float B = (float)CO->GetNumberField(TEXT("b")) / 255.f;
+		Out.Add(FLinearColor(R, G, B, 1.f));
+	}
+	return Out;
+}
+
+bool UAPBGameInstanceSubsystem::AddSymbolLayer(int32 SymbolId, const FString& TargetSlot, float PosX, float PosY, float Rotation, float Scale, int32 ColorPrimary, int32 ColorSecondary)
+{
+	if (!Service || !CanMutateDomain()) return false;
+	apb::WorldService* W = Svc(Service);
+	if (!W->character) return false;
+	apb::CharacterAppearance App = W->appearance;
+	apb::SymbolLayer L;
+	L.symbol_id = SymbolId; L.target_slot = TCHAR_TO_UTF8(*TargetSlot);
+	L.pos_x = PosX; L.pos_y = PosY; L.rotation = Rotation; L.scale = Scale;
+	L.color_primary = ColorPrimary; L.color_secondary = ColorSecondary;
+	App.symbols.push_back(L);
+	return W->ApplyAppearance(App);
+}
+
+int32 UAPBGameInstanceSubsystem::GetSymbolLayerCount() const
+{
+	if (!Service) return 0;
+	return (int32)SvcC(Service)->appearance.symbols.size();
+}
+
+bool UAPBGameInstanceSubsystem::GetCameraFrameForTab(int32 TabId, float& OutPosY, float& OutPosZ, float& OutTargetZ, float& OutFov) const
+{
+	OutPosY = 280.f; OutPosZ = 95.f; OutTargetZ = 95.f; OutFov = 55.f;
+	const FString Path = DataDir / TEXT("wardrobe_categories.json");
+	FString Text;
+	if (!FFileHelper::LoadFileToString(Text, *Path)) return false;
+	TSharedPtr<FJsonObject> Root;
+	const TSharedRef<TJsonReader<>> Reader = TJsonReaderFactory<>::Create(Text);
+	if (!FJsonSerializer::Deserialize(Reader, Root) || !Root.IsValid()) return false;
+	const TSharedPtr<FJsonObject>* DefCam = nullptr;
+	if (Root->TryGetObjectField(TEXT("default_camera"), DefCam) && DefCam)
+	{
+		OutPosY = (float)(*DefCam)->GetNumberField(TEXT("pos_y"));
+		OutPosZ = (float)(*DefCam)->GetNumberField(TEXT("pos_z"));
+		OutTargetZ = (float)(*DefCam)->GetNumberField(TEXT("target_z"));
+		OutFov = (float)(*DefCam)->GetNumberField(TEXT("fov"));
+	}
+	const TArray<TSharedPtr<FJsonValue>>* Cats = nullptr;
+	if (!Root->TryGetArrayField(TEXT("categories"), Cats) || !Cats) return false;
+	for (const TSharedPtr<FJsonValue>& CV : *Cats)
+	{
+		const TSharedPtr<FJsonObject> CO = CV->AsObject();
+		if (!CO.IsValid() || (int32)CO->GetNumberField(TEXT("tab_id")) != TabId) continue;
+		const TSharedPtr<FJsonObject>* Frame = nullptr;
+		if (!CO->TryGetObjectField(TEXT("camera_frame"), Frame) || !Frame) return true;
+		OutPosY = (float)(*Frame)->GetNumberField(TEXT("pos_y"));
+		OutPosZ = (float)(*Frame)->GetNumberField(TEXT("pos_z"));
+		OutTargetZ = (float)(*Frame)->GetNumberField(TEXT("target_z"));
+		OutFov = (float)(*Frame)->GetNumberField(TEXT("fov"));
+		return true;
+	}
+	return true;
 }
 
 FString UAPBGameInstanceSubsystem::GetDistrictMapName(const FString& DistrictId) const

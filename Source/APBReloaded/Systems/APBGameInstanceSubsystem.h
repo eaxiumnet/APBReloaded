@@ -115,6 +115,38 @@ public:
 	UFUNCTION(BlueprintCallable, Category="APB|Customization")
 	TArray<FAPBClothingChoice> GetClothingForSlot(const FString& Slot, int32 MaxItems = 40) const;
 
+	/** M5: clothing rows for a wardrobe tab (1..15) from the parsed Domain catalog. */
+	UFUNCTION(BlueprintCallable, Category="APB|Customization")
+	TArray<FAPBClothingChoice> GetClothingForTab(int32 TabId, int32 MaxItems = 60) const;
+
+	/** M5: domain equip-slot key for a wardrobe tab (1..15). */
+	UFUNCTION(BlueprintCallable, Category="APB|Customization")
+	FString GetSlotForTab(int32 TabId) const;
+
+	/** M5: equip with palette color indices (EquipClothingItem drops color). */
+	UFUNCTION(BlueprintCallable, Category="APB|Customization")
+	bool EquipClothingColored(const FString& Slot, const FString& ItemId, int32 ColorPrimary, int32 ColorSecondary);
+
+	/** M5: randomize the whole appearance for the current character's faction. */
+	UFUNCTION(BlueprintCallable, Category="APB|Customization")
+	bool RandomizeAppearance(int32 Seed);
+
+	/** M5: palette row colors (Clothing/Hair/Symbols) from palettes.json. */
+	UFUNCTION(BlueprintCallable, Category="APB|Customization")
+	TArray<FLinearColor> GetPaletteColors(const FString& PaletteName, int32 RowIndex) const;
+
+	/** M5: append a symbol/tattoo layer (stub; full editor is M17). */
+	UFUNCTION(BlueprintCallable, Category="APB|Customization")
+	bool AddSymbolLayer(int32 SymbolId, const FString& TargetSlot, float PosX, float PosY, float Rotation, float Scale, int32 ColorPrimary, int32 ColorSecondary);
+
+	/** M5: current symbol/tattoo layer count. */
+	UFUNCTION(BlueprintCallable, Category="APB|Customization")
+	int32 GetSymbolLayerCount() const;
+
+	/** M5: per-tab preview camera frame from wardrobe_categories.json (retail APBLCC), default_camera fallback. */
+	UFUNCTION(BlueprintCallable, Category="APB|Customization")
+	bool GetCameraFrameForTab(int32 TabId, float& OutPosY, float& OutPosZ, float& OutTargetZ, float& OutFov) const;
+
 	/** Map soft path for a district id (Lvl_APB_*). */
 	UFUNCTION(BlueprintCallable, Category="APB|World")
 	FString GetDistrictMapName(const FString& DistrictId) const;

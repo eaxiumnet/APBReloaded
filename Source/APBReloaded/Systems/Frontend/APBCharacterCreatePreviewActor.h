@@ -32,6 +32,10 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "APB|Create")
 	void ApplyBodyProfile(float Height, float Build);
 
+	/** Frame the capture per retail APBLCC values: distance PosY, height PosZ, aim TargetZ, FOV. */
+	UFUNCTION(BlueprintCallable, Category = "APB|Create")
+	void FrameCamera(float PosY, float PosZ, float TargetZ, float Fov);
+
 	/**
 	 * Visual bind for a clothing slot using catalog item id.
 	 * Torso/face can swap body mesh from wardrobe pool; other slots toggle markers.

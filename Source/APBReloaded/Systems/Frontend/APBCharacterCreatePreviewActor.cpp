@@ -76,6 +76,7 @@ void AAPBCharacterCreatePreviewActor::BeginPlay()
 		}
 		Capture->CaptureScene();
 	}
+	FrameCamera(280.f, 95.f, 95.f, 55.f);
 	ApplyBaseMesh(false);
 	UE_LOG(LogTemp, Warning, TEXT("APBCharCreate PREVIEW_ACTOR_SPAWN path=%s"), *LastMeshPath);
 }
@@ -140,6 +141,19 @@ void AAPBCharacterCreatePreviewActor::ApplyBodyProfile(float Height, float Build
 		BodyMesh->SetRelativeScale3D(FVector(Build, Build, Height));
 	}
 	UE_LOG(LogTemp, Warning, TEXT("APBCharCreate PREVIEW_BODY height=%.3f build=%.3f"), Height, Build);
+	CaptureNow();
+}
+
+void AAPBCharacterCreatePreviewActor::FrameCamera(float PosY, float PosZ, float TargetZ, float Fov)
+{
+	if (!Capture) return;
+	Capture->SetRelativeLocation(FVector(PosY, 0.f, PosZ));
+	// Camera faces -X (yaw 180); pitch up/down to aim at TargetZ over horizontal distance PosY.
+	const float Pitch = FMath::RadiansToDegrees(FMath::Atan2(TargetZ - PosZ, FMath::Max(PosY, 1.f)));
+	Capture->SetRelativeRotation(FRotator(Pitch, 180.f, 0.f));
+	Capture->FOVAngle = FMath::Clamp(Fov, 10.f, 120.f);
+	UE_LOG(LogTemp, Warning, TEXT("APBCharCreate PREVIEW_FRAME posY=%.1f posZ=%.1f targetZ=%.1f fov=%.1f pitch=%.2f"),
+		PosY, PosZ, TargetZ, Fov, Pitch);
 	CaptureNow();
 }
 
