@@ -154,7 +154,7 @@ active milestone (recorded in this file, keeping one plan per effort).
 - Verify: ledger updated (MenuArt/UISfx `extracted`, Movies `manual`, palettes/ui_strings
   `extracted`); `work\IMPORT_STATUS.md` regenerated; JSONs validated by parse.
 
-### M4 — 2011 main menu  *(brief #3 — D2/D3)*
+### M4 — 2011 main menu  *(brief #3 — D2/D3)* — ✅ COMPLETE 2026-07-20
 - Files: `Systems\Frontend\APBFrontendWidget.*`, `APBFrontendLayoutMath.h`,
   `Content\Imported\UI\Menu2011\`, `Content\Audio\UI\`, `Content\Movies\`.
 - Actions: restage Login/CharSelect/DistrictSelect to 2011 layout using extracted chrome +
@@ -164,6 +164,19 @@ active milestone (recorded in this file, keeping one plan per effort).
   `FRONTEND_MENU_OK`, self-exits) — menu-scoped gate independent of M9 geometry / M12 vehicles;
   composite `frontend_flow` held as M9+M12 integration gate (`run_verification_gates.ps1 -IntegrationGate`);
   side-by-side screenshot fidelity checklist vs 2011 capture (`work\menu2011_fidelity_checklist.md`) signed off.
+- Evidence (2026-07-20): CharSelect+DistrictSelect 2011 restage committed `af40e5e`.
+  Menu-scoped `frontend_menu` probe mode added (terminal `FRONTEND_MENU_OK` after all UI
+  stages + district select + OpenLevel dispatch, then `RequestEngineExit`); `frontend_flow`
+  retained as the M9/M12 integration gate. Probe commits `123e23e` (mode split + terminal
+  hygiene decls), `013353b` (single-terminal-verdict enforcement: no_freeroam fail-return,
+  per-manager timer clears, bTerminal symmetry). Gate spine `605fce1`
+  (`run_verification_gates.ps1`: frontend_menu hard-gated w/ Require-Fresh, frontend_flow
+  behind `-IntegrationGate`). Docs `e91f934` (HOW_TO_PLAY both modes).
+  Both targets build exit 0. Runtime: `frontend_menu` self-exits 19s exit 0, 21-line log
+  ending `FRONTEND_MENU_OK`, zero FAIL, no zombie; `frontend_flow` self-exits 27s exit 0,
+  30-line log, exactly one terminal `FRONTEND_FLOW_FAIL post_travel_playables` (expected
+  M9/M12 baseline: vehicles=0/walk=0), no double-FAIL fall-through, no zombie. Visual
+  fidelity checkboxes intentionally left for optional manual capture per spec §0.
 
 ### M5 — Retail character creation  *(brief #4 — D4)*
 - Files: `Domain\APBCustomization.*`, `Content\Data\{clothing.json, palettes.json}`,
