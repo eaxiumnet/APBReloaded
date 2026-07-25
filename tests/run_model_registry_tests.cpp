@@ -120,7 +120,7 @@ void TestShippedPlacementResolveAndNearSpawnMetrics() {
 
 /** Static proof freeroam game mode still invokes loader with district id. */
 void TestFreeroamSourceInvokesLoader() {
-  const std::string gm = ReadFile(R"(D:\APBReloaded\Source\APBReloaded\Systems\APBFreeroamGameMode.cpp)");
+  const std::string gm = ReadFile(R"(D:\APBReloaded\Source\APBReloaded\Systems\District\APBFreeroamGameMode.cpp)");
   CHECK(!gm.empty(), "APBFreeroamGameMode.cpp readable");
   CHECK(gm.find("LoadDistrictContent") != std::string::npos, "freeroam has LoadDistrictContent");
   CHECK(gm.find("LoadManifestForDistrict") != std::string::npos, "freeroam calls LoadManifestForDistrict");
@@ -133,7 +133,7 @@ void TestFreeroamSourceInvokesLoader() {
         || gm.find("refusing") != std::string::npos
         || gm.find("no BasicShapes") != std::string::npos,
         "freeroam does not treat cubes as world success");
-  const std::string loader = ReadFile(R"(D:\APBReloaded\Source\APBReloaded\Systems\APBDistrictPlacementLoader.cpp)");
+  const std::string loader = ReadFile(R"(D:\APBReloaded\Source\APBReloaded\Systems\District\APBDistrictPlacementLoader.cpp)");
   CHECK(loader.find("BasicShapes/Cube") != std::string::npos, "loader rejects Engine cubes");
   CHECK(loader.find("Imported/Districts") != std::string::npos, "loader resolves Imported/Districts");
   CHECK(loader.find("EnsureVisibleMeshMaterials") != std::string::npos, "loader ensures visible materials");
