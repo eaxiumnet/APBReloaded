@@ -131,10 +131,11 @@ def parse_package(data: bytes) -> Pkg:
     r.p = imp_off
     imports: list[dict] = []
     for _ in range(imp_count):
-        r.fname(names)                        # class package
+        cls_pkg = r.fname(names)              # class package
         cls = r.fname(names)                  # class name
-        r.i32()                               # outer
-        imports.append({"cls": cls, "name": r.fname(names)})
+        outer = r.i32()                       # outer: >0 export, <0 import, 0 = root
+        imports.append({"cls_pkg": cls_pkg, "cls": cls, "outer": outer,
+                        "name": r.fname(names)})
     return Pkg(names, imports)
 
 
@@ -148,6 +149,43 @@ UE3_PROP_TYPES = frozenset((
 ))
 
 _NI_CACHE: dict[int, tuple[list[str], dict[str, int]]] = {}
+
+
+def import_path(pkg: Pkg, ref: int) -> str | None:
+    """Resolve a UE3 object reference to a fully package-qualified path.
+
+    A negative ref is a 1-based index into the import table. Walking the `outer` chain is
+    what turns a bare object name into `Package.Group.Object` -- required because
+    StaticMesh references point at meshes living in *other* packages, and a bare stem
+    cannot be bound to a uasset without guessing (the exact guess that produced
+    cross-district asset substitution).
+
+    Returns None for export refs (>0) and 0, which callers must resolve locally.
+    """
+    if ref >= 0:
+        return None
+    parts: list[str] = []
+    seen: set[int] = set()
+    cur = ref
+    while cur < 0:
+        idx = -cur - 1
+        if idx in seen or not (0 <= idx < len(pkg.imports)):
+            break
+        seen.add(idx)
+        imp = pkg.imports[idx]
+        parts.append(imp["name"])
+        cur = imp.get("outer", 0)
+    if not parts:
+        return None
+    return ".".join(reversed(parts))
+
+
+def import_class(pkg: Pkg, ref: int) -> str | None:
+    """Declared class of a negative import ref, for referential-integrity checks."""
+    if ref >= 0:
+        return None
+    idx = -ref - 1
+    return pkg.imports[idx]["cls"] if 0 <= idx < len(pkg.imports) else None
 
 
 def name_index(names: list[str]) -> dict[str, int]:
@@ -292,6 +330,26 @@ def decode_prop(ptype: str, sname: str | None, body: bytes,
     return {"type": ptype, "size": len(body), "raw": body[:32].hex()}
 
 
+def object_array(blob: bytes, names: list[str], prop: str) -> list[int]:
+    """Every element of a UE3 object-reference ArrayProperty, in declaration order.
+
+    extract_actor_transforms.py returned on the first mesh-bearing member of
+    m_aComponents, so a building with N mesh components emitted 1 placement. Enumerating
+    the whole array is what makes the emitted count conserve against the source.
+    """
+    p = props_map(blob, names).get(prop)
+    if not isinstance(p, dict) or "raw" not in p:
+        return []
+    count, raw = p.get("count") or 0, p["raw"]
+    n = min(count, len(raw) // 4)
+    return [struct.unpack_from("<i", raw, i * 4)[0] for i in range(n)]
+
+
+def component_members(blob: bytes, names: list[str]) -> list[int]:
+    """All component refs of a cStreamedComponentSet (not just the first)."""
+    return object_array(blob, names, "m_aComponents")
+
+
 def uru_to_deg(u: int) -> float:
     return round((u % 65536) * 360.0 / 65536.0, 3)
 
@@ -303,6 +361,145 @@ RETAIL_MAPS = Path(r"C:\Program Files (x86)\Steam\steamapps\common\APB Reloaded"
 def load(stem: str, maps_dir: Path):
     data = decompress(stem, maps_dir).read_bytes()
     return data, parse_package(data), exports(stem, maps_dir)
+
+
+def prop_cache(data: bytes, pkg: Pkg, rows: list[dict]) -> dict[int, dict]:
+    out: dict[int, dict] = {}
+    for row in rows:
+        if row["off"] + row["size"] > len(data):
+            continue
+        out[row["idx"]] = props_map(data[row["off"]:row["off"] + row["size"]], pkg.names)
+    return out
+
+
+def deref(ref, by_idx: dict[int, dict], expect: str | None = None) -> dict | None:
+    """Resolve a positive UE3 export reference to its export row.
+
+    UE3 export refs are 1-based; umodel's -list index column is 0-based, so the base is
+    `ref - 1`. Measured on Block09: this base gives an exact class match 137/137 on both
+    `m_ComponentSet` -> cStreamedComponentSet and `StaticMeshComponent` ->
+    StaticMeshComponent, while base `ref` is off-by-one on every edge. A single proven
+    base is used deliberately -- trying multiple bases and accepting whichever matches
+    would silently bind the wrong object whenever the expected class repeats.
+
+    `expect` is a referential-integrity assertion, not a search filter: a mismatch returns
+    None so the caller emits an `*_unresolved` reason instead of a wrong object.
+    """
+    if not isinstance(ref, int) or ref <= 0:
+        return None
+    row = by_idx.get(ref - 1)
+    if row is None or (expect is not None and row["cls"] != expect):
+        return None
+    return row
+
+
+_MESH_HOSTS = ("StaticMeshComponent", "cStreamedStaticMeshComponent",
+               "InstancedStaticMeshComponent", "cAPBStaticMeshComponent")
+
+
+def mesh_component_refs(props: dict) -> list[tuple[str, int]]:
+    """Mesh-bearing component edges of a cStreamedBuildingActor, in a stable order.
+
+    Measured on Block09: geometry hangs off the actor's DIRECT `StaticMeshComponent`
+    property (137/137 resolve to a StaticMeshComponent export). `m_aComponents` is NOT a
+    geometry list -- its three slots are [FeatureGroupComponent, null, PointLightComponent]
+    on all 137 sets, so treating it as the mesh list yields zero meshes.
+
+    `CollisionComponent` is reported separately because it is a distinct obligation:
+    collision must be ported, but it is not a rendered placement.
+    """
+    out: list[tuple[str, int]] = []
+    for key in ("StaticMeshComponent", "CollisionComponent"):
+        ref = props.get(key)
+        if isinstance(ref, int) and ref > 0:
+            out.append((key, ref))
+    return out
+
+
+def placement_records(stem: str, maps_dir: Path) -> list[dict]:
+    """Emit one record per (building actor, mesh component) edge with full provenance.
+
+    Every row is keyed by source_id = (package sha256 prefix, actor export index, edge
+    name) so a UE-spawned actor can be compared back to the exact source object.
+
+    Absence is recorded separately from value. `scale_present` distinguishes "the package
+    omitted Scale3D, so the UE3 default 1.0 applies" from "the package stored 1.0", and
+    `rotation_present` records that `cStreamedBuildingActor` carries NO Rotation property
+    at all in retail (0/137 on Block09; Rotation exists only on PrefabInstance, lights, and
+    graffiti actors). The shipped pipeline's per-instance yaw ramp therefore fabricated a
+    field that does not exist in the source.
+
+    Rows that cannot be resolved are emitted with a `reason` code instead of being dropped,
+    so `candidates == emitted + unresolved` holds and nothing vanishes silently.
+    """
+    data, pkg, rows = load(stem, maps_dir)
+    by_idx = {r["idx"]: r for r in rows}
+    cache = prop_cache(data, pkg, rows)
+    sha = hashlib.sha256(data).hexdigest()[:12]
+    out: list[dict] = []
+
+    for row in rows:
+        if row["cls"] != "cStreamedBuildingActor":
+            continue
+        ap = cache.get(row["idx"], {})
+        loc = ap.get("Location") if isinstance(ap.get("Location"), list) else None
+        arot = ap.get("Rotation")
+        rot_present = isinstance(arot, list) and len(arot) == 3
+        rot = [uru_to_deg(v) for v in arot] if rot_present else [0.0, 0.0, 0.0]
+
+        edges = mesh_component_refs(ap)
+        if not edges:
+            out.append({"source_id": f"{sha}:{row['idx']}:-", "actor": row["name"],
+                        "reason": "no_mesh_component", "location": loc,
+                        "rotation": rot, "rotation_present": rot_present,
+                        "scale": [1.0, 1.0, 1.0], "scale_present": False,
+                        "mesh_ref": None, "mesh_path": None})
+            continue
+
+        for edge, cref in edges:
+            sid = f"{sha}:{row['idx']}:{edge}"
+            crow = deref(cref, by_idx)
+            if crow is None:
+                out.append({"source_id": sid, "actor": row["name"], "edge": edge,
+                            "reason": "component_unresolved", "location": loc,
+                            "rotation": rot, "rotation_present": rot_present,
+                            "scale": [1.0, 1.0, 1.0], "scale_present": False,
+                            "mesh_ref": cref, "mesh_path": None})
+                continue
+
+            cp = cache.get(crow["idx"], {})
+            sc = cp.get("Scale3D")
+            scale_present = isinstance(sc, list) and len(sc) == 3
+            mref = cp.get("StaticMesh")
+            mpath = import_path(pkg, mref) if isinstance(mref, int) else None
+            if mpath is None and isinstance(mref, int) and mref > 0:
+                local = deref(mref, by_idx)
+                mpath = f"{stem}.{local['name']}" if local else None
+
+            rec = {
+                "source_id": sid,
+                "actor": row["name"],
+                "edge": edge,
+                "component": crow["name"],
+                "component_class": crow["cls"],
+                "location": loc,
+                "rotation": rot,
+                "rotation_present": rot_present,
+                "scale": [round(v, 6) for v in sc] if scale_present else [1.0, 1.0, 1.0],
+                "scale_present": scale_present,
+                "mesh_ref": mref if isinstance(mref, int) else None,
+                "mesh_path": mpath,
+                "mesh_class": import_class(pkg, mref) if isinstance(mref, int) else None,
+            }
+            if crow["cls"] not in _MESH_HOSTS:
+                rec["reason"] = "non_mesh_component"
+            elif mpath is None:
+                rec["reason"] = "mesh_unresolved"
+            elif edge == "CollisionComponent":
+                rec["reason"] = "collision_only"
+            out.append(rec)
+
+    return out
 
 
 def main(argv: list[str]) -> None:

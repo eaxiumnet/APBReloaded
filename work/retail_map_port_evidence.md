@@ -150,12 +150,100 @@ framing, 16-byte GUIDs, and an **orthonormal 3x3 basis plus translation**:
 -0.59854   0.79606  -0.08961
 ```
 
-So prefab-hosted geometry placements can be recovered. This matters because
-`PrefabInstance` (239) outnumbers `cStreamedBuildingActor` (137) in Block09 — prefabs are
-the dominant geometry carrier in retail and the old extractor ignored them completely.
+So prefab-hosted geometry placements can be recovered, and the old extractor ignored them
+completely.
+
+### Correction (2026-07-28): prefabs are NOT proven to be the dominant carrier
+An earlier revision of this file claimed prefabs dominate because `PrefabInstance` (239)
+outnumbers `cStreamedBuildingActor` (137). **That inference is invalid.** It compares
+*root actors*, not rendered mesh instances. The 137 component sets already reference 392
+`StaticMeshComponent`s, so one building emits several meshes; a prefab may emit zero, one,
+or many. The relative share is unknown until `PI_Bytes` is decoded and cannot be inferred
+from root counts. `PI_Bytes` is therefore a **completeness gate, not the critical path**.
+
+## Five confirmed fail-open blockers (verified by reading code, 2026-07-28)
+Each was read directly, not inferred. All five let a partial or wrong result report success.
+
+1. **Dedup key drops rotation and scale.**
+   `APBDistrictPlacementLoader.cpp:346` builds `Key = E.MeshId + "@" + E.Location.ToString()`.
+   Co-located instances differing only in rotation/scale collapse into one. Writing real
+   rotations would *silently delete* real instances — and the skip is counted as success.
+
+2. **`LoadPlacementMesh` substitutes assets across districts.**
+   `APBDistrictPlacementLoader.cpp:241-267`: on a failed path it tries 6 district folders x
+   5 stem variants and returns the first hit. A Financial mesh can resolve to a Waterfront
+   asset. This defeats visual verification — the city looks plausible but is wrong.
+
+3. **Import outer index is discarded.**
+   `apb_level_dump.py:132` calls bare `r.i32()` for the import outer, so package-qualified
+   resolution of `StaticMesh` (a negative import index) is impossible.
+
+4. **Only the first component of a set is emitted, and the wrong set is walked.**
+   `extract_actor_transforms.py:275-283` `return`s inside the `m_aComponents` loop on the
+   first mesh-bearing member. Worse, `m_aComponents` is not the geometry list at all — see
+   the corrected chain model below.
+
+5. **Text-scanning Domain mirror never reads rotation.**
+   `Domain/APBDistrictPlacement.h:182` scans for `"mesh_id"` instead of walking JSON and
+   extracts no rotation. It actively certifies fabricated manifests as valid.
+
+## Revised critical path
+Prove the **non-prefab slice end-to-end** (extract -> import-resolve -> manifest -> UE
+spawn -> visual) with per-row provenance first; decode `PI_Bytes` after. A `PI_Bytes` dead
+end then leaves a *measured incomplete* port instead of invalidating the whole pipeline.
+
+## Fidelity gates (replacing the weak ones)
+Rejected as primary gates: "rotation is not an arithmetic ramp" catches only the one known
+fraud; "non-unit scale count > 0" passes with 1 real row among thousands of fabricated ones;
+per-class export count cannot equal placement count (actors/components/resources differ in
+cardinality).
+
+Adopted:
+- **Shuffle invariance** — shuffle source-record order and imported-asset enumeration,
+  regenerate, assert every `source_id` keeps identical mesh + transform. This is the
+  *general* detector: it catches `(i*11)%360`, `imported[i % len]`, and any index-derived
+  fabrication automatically.
+- **Conservation** — per source class, `candidates = emitted + unresolved + excluded`, with
+  machine-readable reason codes and zero unclassified exports.
+- **Keyed lineage** — every row carries `source_id` = (package sha256, export index,
+  component index), plus the mesh object-reference chain.
+- **Missingness parity** — record `scale_present` separately from the value, so "absent
+  therefore 1.0" stays distinguishable from a fabricated 1.0.
+- **Fail-closed binding + runtime parity** — no fallback assets, no location-only dedup;
+  UE-spawned asset path and world matrix must equal the manifest, keyed by `source_id`.
+
+## Corrected chain model (measured on Block09, 2026-07-28)
+Three assumptions carried by the old pipeline are false. All figures below come from
+`tools/scripts/test_apb_level_dump.py` (29/29 green) plus two throwaway diagnostics.
+
+| Claim | Measured reality |
+|---|---|
+| Geometry hangs off `m_ComponentSet.m_aComponents` | **False.** All 137 sets hold exactly `[FeatureGroupComponent, null, PointLightComponent]` — 411 members, **zero meshes**. |
+| Buildings carry a `Rotation` | **False.** 0/137 `cStreamedBuildingActor` have `Rotation`. Only `PrefabInstance` (227), `PointNightLight` (161), `PointLight` (57), `SpotLight` (26), `SpotNightLight` (25), `cGraffitiCrimeTarget` (22), `cPlayerGraffitiDisplayPoint` (2) do. |
+| Buildings carry a per-instance `Scale3D` | **False.** 0/137 building-owned components have `Scale3D`. The 25 `Scale3D` components are elsewhere (e.g. `StaticMeshComponent_885` = `[0.2,4.0,2.0]`, mesh `GenericAssets.1mCube`). |
+
+The real geometry edge is the actor's **direct `StaticMeshComponent` property**: 137/137
+resolve to a `StaticMeshComponent` export. `CollisionComponent` is a second edge, emitted
+with `reason=collision_only` — a real porting obligation, but not a rendered placement.
+
+**Export ref base is `ref - 1`** (umodel `-list` index is 0-based, UE3 refs are 1-based):
+exact class match 137/137 on both edges, off-by-one on every edge under base `ref`. A
+single proven base is used deliberately; trying both and accepting whichever matches would
+bind the wrong object whenever the expected class repeats.
+
+Consequence for the shipped manifests: the per-instance yaw ramp `(i*11)%360` did not merely
+compute a wrong rotation, it **invented a field absent from the source**, and the hardcoded
+`[1,1,1]` scale coincidentally matches the UE3 default while carrying no source evidence.
+Hence `rotation_present` / `scale_present` are recorded separately from the values.
 
 ## Open items
-1. Decode `PI_Bytes` fully (embedded prefab actor set) — required for true 1:1.
-3. Resolve `StaticMesh` import indices to names, cross-package.
-4. `PointLight` / `StaticLightCollectionActor` need per-class handling.
-5. Extend from one block to all 44 Financial blocks, then the other districts.
+1. Close the remaining fail-open blockers (1, 2, 5 — dedup key, cross-district asset
+   substitution, Domain text-scan mirror). Blockers 3 and 4 are closed and gated.
+2. Non-prefab Block09 micro-slice proven end-to-end with provenance.
+3. Decode `PI_Bytes` fully (embedded prefab actor set) — required for true 1:1.
+4. `PointLight` / `StaticLightCollectionActor` per-class handling.
+5. Prove the 945 unparsed exports hide no `AActor`-derived exports (class-ancestry check,
+   independent of `umodel -list`). `Model`/`Polys` may still carry BSP/collision and
+   `ShadowMap1D`/`LightMapTexture2D` affect lighting — excluded from placements, but they
+   remain separate fidelity obligations, not "irrelevant".
+6. Extend to all 44 Financial blocks, then the other districts.
