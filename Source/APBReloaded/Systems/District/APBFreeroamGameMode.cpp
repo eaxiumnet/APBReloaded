@@ -210,12 +210,21 @@ void AAPBFreeroamGameMode::EnsureDistrictLighting(const FVector& At)
 		SpawnedActors.Add(PPV);
 	}
 
-	// Large visible ground plane at street level (roads sit ~Z=0; player_start Z~600)
+	// INVISIBLE fall-through backstop only. The retail ground is real now: the Financial
+	// manifest carries 348 layer=road + 630 layer=terrain rows at transform_source=retail_actor,
+	// with road surfaces at Z~-4.99. This plane must therefore never be visible and never sit at
+	// or above that level:
+	//   - Visible, it WAS the flat sheet. A colour census of work/evidence/financial_render.png
+	//     found one bucket, rgb(248,248,248), at 113881/921600 px = 12.36% of frame - this plane
+	//     wearing the BasicShapeMaterial fallback. Hiding it drops that bucket to 252 px (0.03%)
+	//     and lifts midtone geometry 20.76% -> 25.89%. Hence no EnsureVisibleMeshMaterials here.
+	//   - At Z=+5 it sat ABOVE the roads it was standing in for, occluding them.
+	// It is kept purely so a pawn that tunnels past streamed collision does not fall forever.
 	{
 		UStaticMesh* Plane = LoadObject<UStaticMesh>(nullptr, TEXT("/Engine/BasicShapes/Plane.Plane"));
 		if (Plane)
 		{
-			const FVector GroundAt(At.X, At.Y, 5.f);
+			const FVector GroundAt(At.X, At.Y, -2000.f);
 			AStaticMeshActor* Floor = World->SpawnActor<AStaticMeshActor>(GroundAt, FRotator::ZeroRotator, Sp);
 			if (Floor)
 			{
@@ -223,11 +232,11 @@ void AAPBFreeroamGameMode::EnsureDistrictLighting(const FVector& At)
 				UStaticMeshComponent* SMC = Floor->GetStaticMeshComponent();
 				SMC->SetMobility(EComponentMobility::Movable);
 				SMC->SetStaticMesh(Plane);
-				// Plane is 100x100 cm; scale to ~4km square
 				Floor->SetActorScale3D(FVector(4000.f, 4000.f, 1.f));
 				SMC->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
 				SMC->SetCollisionResponseToAllChannels(ECR_Block);
-				UAPBDistrictPlacementLoader::EnsureVisibleMeshMaterials(SMC);
+				SMC->SetVisibility(false);
+				SMC->SetHiddenInGame(true);
 				SpawnedActors.Add(Floor);
 			}
 		}
