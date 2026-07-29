@@ -1,0 +1,30 @@
+TwoSided = true
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[2] = { Texture2D'Common.Textures.puff_impact_01_TXT' }
+Expressions[28] =
+{
+    Expressions[3] = MaterialExpressionTextureSample'Common.Materials.smoke_puff_ring_MAT.MaterialExpressionTextureSample_3'
+    Expressions[7] = MaterialExpressionTextureSample'Common.Materials.smoke_puff_ring_MAT.MaterialExpressionTextureSample_1'
+    Expressions[12] = MaterialExpressionScalarParameter'Common.Materials.smoke_puff_ring_MAT.MaterialExpressionScalarParameter_3'
+    Expressions[15] = MaterialExpressionScalarParameter'Common.Materials.smoke_puff_ring_MAT.MaterialExpressionScalarParameter_2'
+    Expressions[20] = MaterialExpressionTextureSample'Common.Materials.smoke_puff_ring_MAT.MaterialExpressionTextureSample_0'
+}
+CachedExpressionData = 
+BlendMode = BLEND_Translucent (2)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[0] = {}
+CollectedScalarParameters[2] =
+{
+    CollectedScalarParameters[0] = { Value=1, Name=Frensel_Power, Group=None }
+    CollectedScalarParameters[1] = { Value=7, Name=Frensel_Contrast, Group=None }
+}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

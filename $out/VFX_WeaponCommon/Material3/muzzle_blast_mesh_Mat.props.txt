@@ -1,0 +1,36 @@
+TwoSided = true
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[1] = { Texture2D'Textures.blast_01' }
+Expressions[21] =
+{
+    Expressions[8] = MaterialExpressionScalarParameter'Materials.muzzle_blast_mesh_Mat.MaterialExpressionScalarParameter_0'
+    Expressions[9] = MaterialExpressionScalarParameter'Materials.muzzle_blast_mesh_Mat.MaterialExpressionScalarParameter_2'
+    Expressions[12] = MaterialExpressionTextureSampleParameter2D'Materials.muzzle_blast_mesh_Mat.MaterialExpressionTextureSampleParameter2D_0'
+}
+CachedExpressionData = 
+BlendMode = BLEND_Additive (3)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[1] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'Textures.blast_01'
+        Name = Texture
+        Group = None
+    }
+}
+CollectedScalarParameters[2] =
+{
+    CollectedScalarParameters[0] = { Value=7, Name=Frensel_Power, Group=None }
+    CollectedScalarParameters[1] = { Value=7, Name=Frensel_Contrast, Group=None }
+}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

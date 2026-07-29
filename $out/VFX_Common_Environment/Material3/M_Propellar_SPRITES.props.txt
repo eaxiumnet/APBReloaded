@@ -1,0 +1,26 @@
+TwoSided = true
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[2] =
+{
+    ReferencedTextures[0] = Texture2D'Actor_EnvironmentAmbient.PoliceCopter_PropellarBlade'
+}
+Expressions[12] =
+{
+    Expressions[0] = MaterialExpressionTextureSample'Actor_EnvironmentAmbient.M_Propellar_SPRITES.MaterialExpressionTextureSample_1'
+    Expressions[6] = MaterialExpressionTextureSample'Actor_EnvironmentAmbient.M_Propellar_SPRITES.MaterialExpressionTextureSample_3'
+}
+CachedExpressionData = 
+BlendMode = BLEND_Translucent (2)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[0] = {}
+CollectedScalarParameters[0] = {}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

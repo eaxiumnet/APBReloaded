@@ -1,0 +1,37 @@
+TwoSided = true
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[2] =
+{
+    ReferencedTextures[0] = Texture2D'Textures.shot_flash_01_TXT'
+    ReferencedTextures[1] = Texture2D'Textures.shot_flash_01_UPG_TXT'
+}
+Expressions[19] =
+{
+    Expressions[9] = MaterialExpressionScalarParameter'Materials.upgrd_mzl_flsh_mesh_04_Mat.MaterialExpressionScalarParameter_0'
+    Expressions[10] = MaterialExpressionScalarParameter'Materials.upgrd_mzl_flsh_mesh_04_Mat.MaterialExpressionScalarParameter_2'
+    Expressions[12] = MaterialExpressionScalarParameter'Materials.upgrd_mzl_flsh_mesh_04_Mat.MaterialExpressionScalarParameter_1'
+    Expressions[13] = MaterialExpressionScalarParameter'Materials.upgrd_mzl_flsh_mesh_04_Mat.MaterialExpressionScalarParameter_3'
+    Expressions[14] = MaterialExpressionScalarParameter'Materials.upgrd_mzl_flsh_mesh_04_Mat.MaterialExpressionScalarParameter_5'
+}
+CachedExpressionData = 
+BlendMode = BLEND_Additive (3)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[0] = {}
+CollectedScalarParameters[5] =
+{
+    CollectedScalarParameters[0] = { Value=7, Name=Frensel_Power, Group=None }
+    CollectedScalarParameters[1] = { Value=7, Name=Frensel_Contrast, Group=None }
+    CollectedScalarParameters[2] = { Value=0, Name=Hue, Group=None }
+    CollectedScalarParameters[3] = { Value=1, Name=Saturation, Group=None }
+    CollectedScalarParameters[4] = { Value=1, Name=Brightness, Group=None }
+}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

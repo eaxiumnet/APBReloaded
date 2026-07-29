@@ -1,0 +1,136 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[5] =
+{
+    ReferencedTextures[0] = Texture2D'T_Normal'
+    ReferencedTextures[1] = Texture2D'T_DetailNormal'
+    ReferencedTextures[2] = Texture2D'T_Emissive'
+    ReferencedTextures[3] = Texture2D'T_Diffuse'
+    ReferencedTextures[4] = Texture2D'Variation'
+}
+Expressions[52] =
+{
+    Expressions[2] = MaterialExpressionVectorParameter'M_Shader_Complex.MaterialExpressionVectorParameter_3'
+    Expressions[3] = MaterialExpressionTextureSampleParameter2D'M_Shader_Complex.MaterialExpressionTextureSampleParameter2D_9'
+    Expressions[6] = MaterialExpressionScalarParameter'M_Shader_Complex.MaterialExpressionScalarParameter_13'
+    Expressions[7] = MaterialExpressionTextureSampleParameter2D'M_Shader_Complex.MaterialExpressionTextureSampleParameter2D_8'
+    Expressions[8] = MaterialExpressionScalarParameter'M_Shader_Complex.MaterialExpressionScalarParameter_12'
+    Expressions[10] = MaterialExpressionTextureSampleParameter2D'M_Shader_Complex.MaterialExpressionTextureSampleParameter2D_7'
+    Expressions[12] = MaterialExpressionScalarParameter'M_Shader_Complex.MaterialExpressionScalarParameter_11'
+    Expressions[14] = MaterialExpressionScalarParameter'M_Shader_Complex.MaterialExpressionScalarParameter_10'
+    Expressions[17] = MaterialExpressionTextureSampleParameter2D'M_Shader_Complex.MaterialExpressionTextureSampleParameter2D_5'
+    Expressions[20] = MaterialExpressionScalarParameter'M_Shader_Complex.MaterialExpressionScalarParameter_8'
+    Expressions[22] = MaterialExpressionScalarParameter'M_Shader_Complex.MaterialExpressionScalarParameter_7'
+    Expressions[24] = MaterialExpressionVectorParameter'M_Shader_Complex.MaterialExpressionVectorParameter_0'
+    Expressions[25] = MaterialExpressionTextureSampleParameter2D'M_Shader_Complex.MaterialExpressionTextureSampleParameter2D_1'
+    Expressions[34] = MaterialExpressionScalarParameter'M_Shader_Complex.MaterialExpressionScalarParameter_9'
+    Expressions[36] = MaterialExpressionVectorParameter'M_Shader_Complex.MaterialExpressionVectorParameter_2'
+    Expressions[40] = MaterialExpressionTextureSampleParameter2D'M_Shader_Complex.MaterialExpressionTextureSampleParameter2D_6'
+    Expressions[42] = MaterialExpressionTextureSampleParameter2D'M_Shader_Complex.MaterialExpressionTextureSampleParameter2D_11'
+    Expressions[44] = MaterialExpressionScalarParameter'M_Shader_Complex.MaterialExpressionScalarParameter_16'
+    Expressions[45] = MaterialExpressionTextureSampleParameter2D'M_Shader_Complex.MaterialExpressionTextureSampleParameter2D_17'
+    Expressions[49] = MaterialExpressionVectorParameter'M_Shader_Complex.MaterialExpressionVectorParameter_1'
+    Expressions[51] = MaterialExpressionScalarParameter'M_Shader_Complex.MaterialExpressionScalarParameter_14'
+}
+CachedExpressionData = 
+BlendMode = BLEND_Opaque (0)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[8] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'T_DetailNormal'
+        Name = DetailNormal
+        Group = None
+    }
+    CollectedTextureParameters[1] =
+    {
+        Texture = Texture2D'T_Normal'
+        Name = Normal
+        Group = None
+    }
+    CollectedTextureParameters[2] =
+    {
+        Texture = Texture2D'T_Emissive'
+        Name = Specular
+        Group = None
+    }
+    CollectedTextureParameters[3] =
+    {
+        Texture = Texture2D'Variation'
+        Name = VariationTexture
+        Group = None
+    }
+    CollectedTextureParameters[4] =
+    {
+        Texture = Texture2D'T_Emissive'
+        Name = Emissive
+        Group = None
+    }
+    CollectedTextureParameters[5] =
+    {
+        Texture = Texture2D'T_Diffuse'
+        Name = Diffuse
+        Group = None
+    }
+    CollectedTextureParameters[6] =
+    {
+        Texture = Texture2D'T_Emissive'
+        Name = ReflectionMask
+        Group = None
+    }
+    CollectedTextureParameters[7] =
+    {
+        Texture = Texture2D'T_Emissive'
+        Name = Reflection
+        Group = None
+    }
+}
+CollectedScalarParameters[9] =
+{
+    CollectedScalarParameters[0] = { Value=20, Name=DetailNormalScale, Group=None }
+    CollectedScalarParameters[1] = { Value=5, Name=SpecPower, Group=None }
+    CollectedScalarParameters[2] = { Value=12, Name=VariationSpecularMult, Group=None }
+    CollectedScalarParameters[3] = { Value=1, Name=VariationPower, Group=None }
+    CollectedScalarParameters[4] = { Value=0, Name=VariationRotate, Group=None }
+    CollectedScalarParameters[5] = { Value=0.3, Name=VariationScale, Group=None }
+    CollectedScalarParameters[6] = { Value=100, Name=VariationMultiply, Group=None }
+    CollectedScalarParameters[7] = { Value=1, Name=ReflectionMultiply, Group=None }
+    CollectedScalarParameters[8] = { Value=0, Name=DetailNormalRotate, Group=None }
+}
+CollectedVectorParameters[4] =
+{
+    CollectedVectorParameters[0] =
+    {
+        Value = { R=0, G=0, B=0, A=0 }
+        Name = NormalDetailMultiply
+        Group = None
+    }
+    CollectedVectorParameters[1] =
+    {
+        Value = { R=0, G=0, B=0, A=0 }
+        Name = EmissiveColor
+        Group = None
+    }
+    CollectedVectorParameters[2] =
+    {
+        Value = { R=0, G=0, B=0, A=0 }
+        Name = VariationColor
+        Group = None
+    }
+    CollectedVectorParameters[3] =
+    {
+        Value = { R=1, G=1, B=1, A=0 }
+        Name = NormalMultiply
+        Group = None
+    }
+}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

@@ -1,0 +1,23 @@
+# APB Content Studio — local tooling artifacts (never commit build/deps output)
+
+# Python backend
+server/.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Frontend
+web/node_modules/
+web/dist/
+web/.vite/
+web/*.tsbuildinfo
+
+# Local mesh conversion cache (if added)
+.cache/
+*.glb
+
+# Playwright (Track B Slice 1 QA)
+web/test-results/
+web/playwright-report/
+web/blob-report/
+web/.playwright/

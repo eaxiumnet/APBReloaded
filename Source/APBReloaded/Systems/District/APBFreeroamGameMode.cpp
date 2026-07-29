@@ -200,7 +200,9 @@ void AAPBFreeroamGameMode::EnsureDistrictLighting(const FVector& At)
 		S.bOverride_AutoExposureMethod = true;
 		S.AutoExposureMethod = EAutoExposureMethod::AEM_Manual;
 		S.bOverride_AutoExposureBias = true;
-		S.AutoExposureBias = 1.0f;
+		// AEM_Manual reads this as EV100; 1.0 is a near-darkness value and over-exposed the
+		// district once lit surfacing replaced the unlit debug material (12.5% pixels clipped).
+		S.AutoExposureBias = 8.0f;
 		S.bOverride_AutoExposureApplyPhysicalCameraExposure = true;
 		S.AutoExposureApplyPhysicalCameraExposure = false;
 		S.bOverride_ColorSaturation = true;

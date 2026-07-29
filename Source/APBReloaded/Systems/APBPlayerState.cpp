@@ -43,6 +43,7 @@ void AAPBPlayerState::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutL
 	DOREPLIFETIME(AAPBPlayerState, bHasPendingClanInvite);
 	DOREPLIFETIME(AAPBPlayerState, bHasPendingGroupInvite);
 	DOREPLIFETIME(AAPBPlayerState, bGroupAllReady);
+	DOREPLIFETIME(AAPBPlayerState, MailUnreadCount);
 }
 
 void AAPBPlayerState::ApplyFactionAuthority(EAPBFaction NewFaction)
@@ -256,6 +257,16 @@ static void DispatchSocialOp(APlayerState* PS, const FString& Character,
 		const FString Status = DispatchSocialOpDirect(APB, Character, SocialOp, Arg1, Arg2);
 		UE_LOG(LogTemp, Log, TEXT("SOCIAL_RPC_OP character=%s op=%s status=%s"),
 			*Character, *SocialOp, *Status);
+		// Echo the result to the owning client and refresh replicated social fields
+		// so direct clients observe RPC outcomes the same way relayed ones do.
+		if (AAPBPlayerState* APS = Cast<AAPBPlayerState>(PS))
+		{
+			APS->Client_SocialResult(SocialOp, Status, FString());
+		}
+		if (AAPBWorldGameMode* WGM = World->GetAuthGameMode<AAPBWorldGameMode>())
+		{
+			WGM->PushSocialStateToPlayerStates();
+		}
 		return;
 	}
 
@@ -405,19 +416,14 @@ static FString DispatchSocialOpDirect(UAPBGameInstanceSubsystem* APB, const FStr
 	// Mail ops
 	if (Op == TEXT("mail.send"))
 	{
-		// Arg1 = recipient, Arg2 = subject|body (pipe-separated)
-		FString Subject, BodyText;
-		if (Arg2.Contains(TEXT("|")))
-		{
-			Subject = Arg2.Left(Arg2.Find(TEXT("|")));
-			BodyText = Arg2.RightChop(Arg2.Find(TEXT("|") ) + 1);
-		}
-		else
-		{
-			Subject = Arg2;
-			BodyText = TEXT("");
-		}
-		const bool bOk = APB->SocialMailSend(Character, Arg1, Subject, BodyText, 0);
+		// Server_SocialMail passes a single Arg1 payload: To|Subject|Body
+		FString To, Subject, BodyText;
+		TArray<FString> Parts;
+		Arg1.ParseIntoArray(Parts, TEXT("|"), true);
+		if (Parts.Num() >= 1) To = Parts[0];
+		if (Parts.Num() >= 2) Subject = Parts[1];
+		if (Parts.Num() >= 3) BodyText = Parts[2];
+		const bool bOk = APB->SocialMailSend(Character, To, Subject, BodyText, 0);
 		return bOk ? TEXT("ok") : TEXT("domain_rejected");
 	}
 	if (Op == TEXT("mail.markread"))
@@ -479,6 +485,8 @@ bool AAPBPlayerState::Server_SocialMail_Validate(const FString& Op, const FStrin
 
 void AAPBPlayerState::Client_SocialResult_Implementation(const FString& Op, const FString& Status, const FString& Body)
 {
+	LastSocialOp = Op;
+	LastSocialStatus = Status;
 	UE_LOG(LogTemp, Log, TEXT("SOCIAL_RESULT op=%s status=%s body=%s"), *Op, *Status, *Body);
 }
 

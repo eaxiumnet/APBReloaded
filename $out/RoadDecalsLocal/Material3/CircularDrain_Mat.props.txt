@@ -1,0 +1,29 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = true
+ReferencedTextures[3] =
+{
+    ReferencedTextures[0] = Texture2D'CircularDrain1_Normal'
+    ReferencedTextures[1] = Texture2D'CircularDrain1_Diffuse'
+    ReferencedTextures[2] = Texture2D'CircularDrain1_Specular'
+}
+Expressions[3] =
+{
+    Expressions[0] = MaterialExpressionTextureSample'CircularDrain_Mat.MaterialExpressionTextureSample_9'
+    Expressions[1] = MaterialExpressionTextureSample'CircularDrain_Mat.MaterialExpressionTextureSample_10'
+    Expressions[2] = MaterialExpressionTextureSample'CircularDrain_Mat.MaterialExpressionTextureSample_11'
+}
+CachedExpressionData = 
+BlendMode = BLEND_Masked (1)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[0] = {}
+CollectedScalarParameters[0] = {}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

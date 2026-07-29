@@ -1,0 +1,38 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[3] =
+{
+    ReferencedTextures[0] = Texture2D'Texture.WoodDebris01_Normal'
+    ReferencedTextures[1] = Texture2D'Texture.WoodDebris01_Damage'
+    ReferencedTextures[2] = Texture2D'Texture.WoodDebris01_Specular'
+}
+Expressions[14] =
+{
+    Expressions[0] = MaterialExpressionTextureSample'Wood.M_Generic_Wood01_FinancialParkBench_02.MaterialExpressionTextureSample_1'
+    Expressions[1] = MaterialExpressionTextureSample'Wood.M_Generic_Wood01_FinancialParkBench_02.MaterialExpressionTextureSample_2'
+    Expressions[2] = MaterialExpressionTextureSample'Wood.M_Generic_Wood01_FinancialParkBench_02.MaterialExpressionTextureSample_3'
+    Expressions[9] = MaterialExpressionVectorParameter'Wood.M_Generic_Wood01_FinancialParkBench_02.MaterialExpressionVectorParameter_1'
+}
+CachedExpressionData = 
+BlendMode = BLEND_Opaque (0)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[0] = {}
+CollectedScalarParameters[0] = {}
+CollectedVectorParameters[1] =
+{
+    CollectedVectorParameters[0] =
+    {
+        Value = { R=0.001433, G=0.013473, B=0.044553, A=1 }
+        Name = None
+        Group = None
+    }
+}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

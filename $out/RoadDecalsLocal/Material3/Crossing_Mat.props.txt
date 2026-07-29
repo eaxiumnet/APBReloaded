@@ -1,0 +1,27 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = true
+ReferencedTextures[2] =
+{
+    ReferencedTextures[0] = Texture2D'Markings_Pattern_DiffSpec_Dup'
+    ReferencedTextures[1] = Texture2D'CrossWalk_NormAlph'
+}
+Expressions[7] =
+{
+    Expressions[0] = MaterialExpressionTextureSample'Crossing_Mat.MaterialExpressionTextureSample_14'
+    Expressions[2] = MaterialExpressionTextureSample'Crossing_Mat.MaterialExpressionTextureSample_15'
+}
+CachedExpressionData = 
+BlendMode = BLEND_Masked (1)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[0] = {}
+CollectedScalarParameters[0] = {}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

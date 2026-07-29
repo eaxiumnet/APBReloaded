@@ -1,0 +1,33 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[5] =
+{
+    ReferencedTextures[0] = Texture2D'Common.Textures.GenericNoise_Nmap'
+    ReferencedTextures[1] = Texture2D'Water.Textures.SplashTile_txt'
+    ReferencedTextures[2] = Texture2D'Common.Textures.Generic_clipMask_txt'
+    ReferencedTextures[3] = Texture2D'Water.Textures.MistAndDisturbance_txt'
+    ReferencedTextures[4] = TextureCube3'Water.Textures.Liquid_cubemap'
+}
+Expressions[31] =
+{
+    Expressions[0] = MaterialExpressionTextureSample'Water.Materials.SplashColumn_mat.MaterialExpressionTextureSample_3'
+    Expressions[8] = MaterialExpressionTextureSample'Water.Materials.SplashColumn_mat.MaterialExpressionTextureSample_6'
+    Expressions[10] = MaterialExpressionTextureSample'Water.Materials.SplashColumn_mat.MaterialExpressionTextureSample_8'
+    Expressions[11] = MaterialExpressionTextureSample'Water.Materials.SplashColumn_mat.MaterialExpressionTextureSample_10'
+    Expressions[19] = MaterialExpressionTextureSample'Water.Materials.SplashColumn_mat.MaterialExpressionTextureSample_4'
+}
+CachedExpressionData = 
+BlendMode = BLEND_Translucent (2)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[0] = {}
+CollectedScalarParameters[0] = {}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

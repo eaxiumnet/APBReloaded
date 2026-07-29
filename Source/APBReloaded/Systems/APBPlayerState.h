@@ -135,6 +135,17 @@ public:
 	UPROPERTY(ReplicatedUsing=OnRep_Social, BlueprintReadOnly, Category="APB|Social")
 	bool bGroupAllReady = false;
 
+	UPROPERTY(ReplicatedUsing=OnRep_Social, BlueprintReadOnly, Category="APB|Social")
+	int32 MailUnreadCount = 0;
+
+	// Client-side echo of the last Client_SocialResult callback (not replicated;
+	// written locally on the owning client so probes/UI can observe RPC outcomes).
+	UPROPERTY(BlueprintReadOnly, Category="APB|Social")
+	FString LastSocialOp;
+
+	UPROPERTY(BlueprintReadOnly, Category="APB|Social")
+	FString LastSocialStatus;
+
 	UFUNCTION()
 	void OnRep_Social();
 

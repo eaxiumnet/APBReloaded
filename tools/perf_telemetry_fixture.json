@@ -1,0 +1,10 @@
+{
+  "schema_version": "apb.perf.v1",
+  "captured_at_utc": "2026-07-23T00:00:00.0000000Z",
+  "terminal_marker": "LOAD_GATE_FAIL",
+  "run": {"map": "Social", "map_asset": "Lvl_APB_Social_Freeroam", "scalability_profile": "High", "clients": 64, "duration_seconds": 0, "latency_ms": 0, "packet_loss_percent": 0, "build_sha": "fixture-not-a-runtime-proof"},
+  "hardware": {"os": "fixture", "cpu": "fixture", "logical_processors": 1, "ram_mb": 1, "gpu": "fixture", "vram_mb": 1},
+  "metrics": {"fps": {"p50": 0, "p95": 0, "p99": 0}, "frame_ms": {"p50": 0, "p95": 0, "p99": 0}, "tick_ms": {"p50": 0, "p95": 0, "p99": 0}, "cpu_percent": 0, "ram_mb": 0, "vram_mb": 0, "rtt_ms": {"p50": 0, "p95": 0, "p99": 0}, "packet_loss_percent": 0, "replication_rate": 0, "corrections": 0, "missed_authoritative_steps": 0},
+  "evidence": {"raw_log": "fixture-only", "launch_observed": false, "synthetic": true, "claims_64_player": false},
+  "load_contract": {"hosts_manifest": "fixture-only", "workload": ["movement", "combat", "vehicle"], "identities": ["load_001", "load_002", "load_003", "load_004", "load_005", "load_006", "load_007", "load_008", "load_009", "load_010", "load_011", "load_012", "load_013", "load_014", "load_015", "load_016", "load_017", "load_018", "load_019", "load_020", "load_021", "load_022", "load_023", "load_024", "load_025", "load_026", "load_027", "load_028", "load_029", "load_030", "load_031", "load_032", "load_033", "load_034", "load_035", "load_036", "load_037", "load_038", "load_039", "load_040", "load_041", "load_042", "load_043", "load_044", "load_045", "load_046", "load_047", "load_048", "load_049", "load_050", "load_051", "load_052", "load_053", "load_054", "load_055", "load_056", "load_057", "load_058", "load_059", "load_060", "load_061", "load_062", "load_063", "load_064"], "assignments": [], "observed_live_clients": 0, "required_live_clients": 64}
+}

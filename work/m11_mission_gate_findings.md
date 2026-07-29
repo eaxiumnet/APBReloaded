@@ -1,7 +1,7 @@
 # M11 Mission Gate Findings
 
 **Created:** 2026-07-29
-**Status:** S1/S2/S3 VALIDATED against existing gate evidence; fresh runtime blocked by engine PCG crash
+**Status:** ✅ GREEN — fresh `M11_MISSION_GATE_OK` on 2026-07-29 (PCG-blocker diagnosis corrected below)
 
 ## Summary
 
@@ -107,4 +107,43 @@ files are external and cannot be edited.
 | S2 opposition race | ✅ VALIDATED | 2026-07-26 client_loop.log OPP_WIN_DRIVE opp_won=1 |
 | S3 regression | ✅ VALIDATED | 2026-07-26 client_loop.log VEHICLE_DOMAIN + FIRE_SYNC |
 | Peer replication | ✅ VALIDATED | 2026-07-26 mp_client_observe.log CLIENT_OBS opp_won=1 mission=2,4,6-TRINITROTOLUENE |
-| Fresh gate run | ⚠️ BLOCKED | Engine PCG crash (SecondsSinceStart:0); not M11-related |
+| Fresh gate run | ✅ GREEN 2026-07-29 | m11_mission_gate.log M11_MISSION_GATE_OK (see correction below) |
+
+## CORRECTION 2026-07-29: PCG blocker diagnosis was wrong — real cause was M16 secret preflight
+
+The "engine PCG crash blocker" section above is **mis-diagnosed**. Evidence from a fresh
+root-cause pass (crash dir `UECC-Windows-79A07ADC4E84DFD64A53E2AC869937D5_0000`):
+
+1. **The PCG assert is a shutdown-path event, not an init blocker.** In every crash log
+   containing it, `Engine exit requested (reason: Win RequestExit)` precedes the PCG
+   `PCGDataViewRegistry` unregister ensures and the `RegistryPtr && SettingsStaticClass`
+   appError. `SecondsSinceStart: 0` is a crash-context field, not proof of init-time.
+   The assert also already occurred on **2026-07-23** (crash dir
+   `UECC-Windows-96CF45774B34A136713CBA9CFCF64DFF_0003`), i.e. *before* the "last good"
+   2026-07-26 gate — it never blocked anything.
+
+2. **The real blocker:** the M16 zero-trust secret provider. Any launch whose command
+   line contains `?listen` is classified role=`district` by
+   `FAPBSecretProvider::DeploymentRole()` (`APBSecretProvider.cpp`), and without
+   `APB_DEPLOYMENT_SECRET` set the preflight halts the process:
+   ```
+   DEPLOYMENT_SECRET_PROVIDER_HALT reason=missing_secret role=district listener=not_started
+   FPlatformMisc::RequestExitWithStatus(0, 1, FAPBSecretProvider::PreflightRole)
+   ```
+   That `RequestExitWithStatus` IS the mysterious `Win RequestExit`. This preflight
+   landed with M16 zero-trust *after* 2026-07-26 — which is exactly why gates ran on
+   26/07 and died on 28/07+. Newer gates (`run_m6_world_gate.ps1`,
+   `run_m7_directory_gate.ps1`, `run_m16_zerotrust_gate.ps1`) already set
+   `APB_DEPLOYMENT_SECRET = 'a1'*32` in-process; `run_m11_mission_gate.ps1` predated
+   that pattern and never got it.
+
+3. **Fix applied:** `tools/run_m11_mission_gate.ps1` now sets/restores
+   `APB_DEPLOYMENT_SECRET` (same `'a1'*32` pattern as the other gates).
+
+4. **Fresh result (2026-07-29 10:48):** `M11_MISSION_GATE_OK` — S1_TIMEOUT_HOST_OK,
+   S2_OPP_RACE_HOST_OK, S3_REGRESSION_OK, MP_OBSERVE_CONNECTED,
+   PEER_MISSION_REPLICATION_OK. Scratch:
+   `C:\Users\Support\AppData\Local\Temp\grok-goal-m11-mission\implementer\m11_mission_gate.log`.
+
+The `.uproject` PCG disable can stay (the project does not use PCG), but it was never
+the fix and `-NoNativeTests`/engine-level changes are NOT needed.

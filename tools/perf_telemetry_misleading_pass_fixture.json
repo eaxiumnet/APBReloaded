@@ -1,0 +1,9 @@
+{
+  "schema_version": "apb.perf.v1",
+  "captured_at_utc": "2026-07-23T00:00:00.0000000Z",
+  "terminal_marker": "PERF_GATE_OK",
+  "run": {"map": "Social", "map_asset": "Lvl_APB_Social_Freeroam", "scalability_profile": "High", "clients": 1, "duration_seconds": 60, "latency_ms": 0, "packet_loss_percent": 0, "build_sha": "fixture"},
+  "hardware": {"os": "fixture", "cpu": "fixture", "logical_processors": 1, "ram_mb": 1, "gpu": "fixture", "vram_mb": 1},
+  "metrics": {"fps": {"p50": 60, "p95": 60, "p99": 60}, "frame_ms": {"p50": 16.7, "p95": 16.7, "p99": 16.7}, "tick_ms": {"p50": 1, "p95": 1, "p99": 1}, "cpu_percent": 1, "ram_mb": 1, "vram_mb": 1, "rtt_ms": {"p50": 1, "p95": 1, "p99": 1}, "packet_loss_percent": 0, "replication_rate": 1, "corrections": 0, "missed_authoritative_steps": 0},
+  "evidence": {"raw_log": "fixture-only", "launch_observed": false, "synthetic": true, "claims_64_player": false}
+}

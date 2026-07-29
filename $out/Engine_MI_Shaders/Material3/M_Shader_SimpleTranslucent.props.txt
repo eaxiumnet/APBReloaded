@@ -1,0 +1,41 @@
+TwoSided = true
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[2] =
+{
+    ReferencedTextures[0] = Texture2D'T_Diffuse'
+    ReferencedTextures[1] = Texture2D'T_ReflectionMask'
+}
+Expressions[2] =
+{
+    Expressions[0] = MaterialExpressionTextureSampleParameter2D'M_Shader_SimpleTranslucent.MaterialExpressionTextureSampleParameter2D_1'
+    Expressions[1] = MaterialExpressionTextureSampleParameter2D'M_Shader_SimpleTranslucent.MaterialExpressionTextureSampleParameter2D_0'
+}
+CachedExpressionData = 
+BlendMode = BLEND_Translucent (2)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[2] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'T_ReflectionMask'
+        Name = OpacityMask
+        Group = None
+    }
+    CollectedTextureParameters[1] =
+    {
+        Texture = Texture2D'T_Diffuse'
+        Name = Diffuse
+        Group = None
+    }
+}
+CollectedScalarParameters[0] = {}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

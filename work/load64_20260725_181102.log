@@ -1,0 +1,6 @@
+2026-07-25T18:11:02.7249473+02:00 LOAD_GATE_RAW_LOG_START
+2026-07-25T18:11:02.8735556+02:00 LOAD_GATE_REQUEST map=Social clients=2 duration_seconds=5 latency_ms=0 loss_percent=0
+2026-07-25T18:11:02.8859094+02:00 LOAD_ASSIGNMENT identity=load_001 account=probe_load_001 host=localhost transport=local primary=movement workload=movement,combat,vehicle
+2026-07-25T18:11:02.8927270+02:00 LOAD_ASSIGNMENT identity=load_002 account=probe_load_002 host=localhost transport=local primary=combat workload=movement,combat,vehicle
+2026-07-25T18:11:02.9004617+02:00 LOAD_CONTRACT_READY clients=2 hosts=1 assignments=2 launch=skipped
+2026-07-25T18:11:02.9072303+02:00 LOAD_GATE_FAIL reason=validate_only_no_launch

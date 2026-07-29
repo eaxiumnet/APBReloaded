@@ -1,0 +1,45 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[11] =
+{
+    ReferencedTextures[0] = Texture2D'Materials.NPC_Male_Contact_YoDawg_Main_Norm_Dup'
+    ReferencedTextures[1] = Texture2D'greyStone-Norm'
+    ReferencedTextures[2] = Texture2D'Falloff'
+    ReferencedTextures[3] = Texture2D'greyStone'
+    ReferencedTextures[4] = Texture2D'Diff-green'
+    ReferencedTextures[5] = Texture2D'dirt2-diff'
+    ReferencedTextures[6] = Texture2D'green-alpha'
+    ReferencedTextures[7] = Texture2D'dirt2'
+    ReferencedTextures[8] = TextureCube3'YCube'
+    ReferencedTextures[9] = Texture2D'Norm'
+    ReferencedTextures[10] = Texture2D'SpecFalloff'
+}
+Expressions[73] =
+{
+    Expressions[5] = MaterialExpressionTextureSample'Materials.Bronze_Fallback.MaterialExpressionTextureSample_8'
+    Expressions[8] = MaterialExpressionTextureSample'Materials.Bronze_Fallback.MaterialExpressionTextureSample_1'
+    Expressions[11] = MaterialExpressionTextureSample'Materials.Bronze_Fallback.MaterialExpressionTextureSample_9'
+    Expressions[25] = MaterialExpressionTextureSample'Materials.Bronze_Fallback.MaterialExpressionTextureSample_10'
+    Expressions[32] = MaterialExpressionTextureSample'Materials.Bronze_Fallback.MaterialExpressionTextureSample_5'
+    Expressions[33] = MaterialExpressionTextureSample'Materials.Bronze_Fallback.MaterialExpressionTextureSample_6'
+    Expressions[42] = MaterialExpressionTextureSample'Materials.Bronze_Fallback.MaterialExpressionTextureSample_14'
+    Expressions[45] = MaterialExpressionTextureSample'Materials.Bronze_Fallback.MaterialExpressionTextureSample_4'
+    Expressions[49] = MaterialExpressionTextureSample'Materials.Bronze_Fallback.MaterialExpressionTextureSample_3'
+    Expressions[56] = MaterialExpressionTextureSample'Materials.Bronze_Fallback.MaterialExpressionTextureSample_2'
+    Expressions[60] = MaterialExpressionTextureSample'Materials.Bronze_Fallback.MaterialExpressionTextureSample_0'
+}
+CachedExpressionData = 
+BlendMode = BLEND_Opaque (0)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[0] = {}
+CollectedScalarParameters[0] = {}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

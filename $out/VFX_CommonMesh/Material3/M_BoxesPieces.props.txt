@@ -1,0 +1,29 @@
+TwoSided = true
+bDisableDepthTest = false
+bIsMasked = true
+ReferencedTextures[3] = { Texture2D'Texture.VFX_BoxPieces_Alpha' }
+Expressions[31] =
+{
+    Expressions[10] = MaterialExpressionTextureSample'Misc.M_BoxesPieces.MaterialExpressionTextureSample_2'
+    Expressions[16] = MaterialExpressionScalarParameter'Misc.M_BoxesPieces.MaterialExpressionScalarParameter_2'
+    Expressions[17] = MaterialExpressionScalarParameter'Misc.M_BoxesPieces.MaterialExpressionScalarParameter_3'
+    Expressions[28] = MaterialExpressionTextureSample'Misc.M_BoxesPieces.MaterialExpressionTextureSample_3'
+}
+CachedExpressionData = 
+BlendMode = BLEND_Masked (1)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[0] = {}
+CollectedScalarParameters[2] =
+{
+    CollectedScalarParameters[0] = { Value=10, Name=None, Group=None }
+    CollectedScalarParameters[1] = { Value=5, Name=None, Group=None }
+}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

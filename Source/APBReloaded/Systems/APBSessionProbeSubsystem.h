@@ -123,9 +123,12 @@ private:
 	TArray<FTimerHandle> ChatCommandTimers;
 	FString SocialRole;
 	bool bSocialLoginSent = false;
+	bool bSocialWorldLoginSent = false;
 	bool bSocialClanOk = false;
+	bool bSocialClanInviteOk = false;
 	bool bSocialFriendsOk = false;
 	bool bSocialGroupsOk = false;
+	bool bSocialGroupInviteOk = false;
 	bool bSocialMailOk = false;
 	int64 SocialProbeStartMs = 0;
 	bool bSocialDone = false;

@@ -1,0 +1,68 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[1] = { Texture2D'explosions.Textures.SmokeSpear_txt' }
+Expressions[44] =
+{
+    Expressions[5] = MaterialExpressionTextureSample'explosions.Materials.smokeSpear_Mat.MaterialExpressionTextureSample_3'
+    Expressions[11] = MaterialExpressionTextureSample'explosions.Materials.smokeSpear_Mat.MaterialExpressionTextureSample_5'
+    Expressions[23] = MaterialExpressionVectorParameter'explosions.Materials.smokeSpear_Mat.MaterialExpressionVectorParameter_1'
+    Expressions[26] = MaterialExpressionVectorParameter'explosions.Materials.smokeSpear_Mat.MaterialExpressionVectorParameter_4'
+    Expressions[29] = MaterialExpressionTextureSample'explosions.Materials.smokeSpear_Mat.MaterialExpressionTextureSample_0'
+    Expressions[31] = MaterialExpressionVectorParameter'explosions.Materials.smokeSpear_Mat.MaterialExpressionVectorParameter_2'
+    Expressions[36] = MaterialExpressionVectorParameter'explosions.Materials.smokeSpear_Mat.MaterialExpressionVectorParameter_0'
+    Expressions[37] = MaterialExpressionVectorParameter'explosions.Materials.smokeSpear_Mat.MaterialExpressionVectorParameter_3'
+    Expressions[43] = MaterialExpressionVectorParameter'explosions.Materials.smokeSpear_Mat.MaterialExpressionVectorParameter_5'
+}
+CachedExpressionData = 
+BlendMode = BLEND_Translucent (2)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[0] = {}
+CollectedScalarParameters[0] = {}
+CollectedVectorParameters[6] =
+{
+    CollectedVectorParameters[0] =
+    {
+        Value = { R=0.024223, G=0.023104, B=0.011881, A=1 }
+        Name = SmokeShadow
+        Group = None
+    }
+    CollectedVectorParameters[1] =
+    {
+        Value = { R=0.007751, G=0.005028, B=0.003303, A=1 }
+        Name = SmokeFill
+        Group = None
+    }
+    CollectedVectorParameters[2] =
+    {
+        Value = { R=2, G=-5, B=0.5, A=1 }
+        Name = FillLight
+        Group = None
+    }
+    CollectedVectorParameters[3] =
+    {
+        Value = { R=20, G=5, B=0.5, A=1 }
+        Name = KeyLight
+        Group = None
+    }
+    CollectedVectorParameters[4] =
+    {
+        Value = { R=0.005522, G=0.005522, B=0.002932, A=1 }
+        Name = SmokeHighlights
+        Group = None
+    }
+    CollectedVectorParameters[5] =
+    {
+        Value = { R=0.016988, G=0.012664, B=0.007751, A=1 }
+        Name = SmokeFill
+        Group = None
+    }
+}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

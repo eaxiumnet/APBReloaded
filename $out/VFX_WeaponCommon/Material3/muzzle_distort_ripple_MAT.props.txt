@@ -1,0 +1,27 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[1] =
+{
+    ReferencedTextures[0] = Texture2D'Textures.Distortion_Ripples_greypack'
+}
+Expressions[26] =
+{
+    Expressions[15] = MaterialExpressionTextureSample'Materials.muzzle_distort_ripple_MAT.MaterialExpressionTextureSample_0'
+    Expressions[16] = MaterialExpressionTextureSample'Materials.muzzle_distort_ripple_MAT.MaterialExpressionTextureSample_2'
+    Expressions[21] = MaterialExpressionTextureSample'Materials.muzzle_distort_ripple_MAT.MaterialExpressionTextureSample_4'
+}
+CachedExpressionData = 
+BlendMode = BLEND_Additive (3)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[0] = {}
+CollectedScalarParameters[0] = {}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

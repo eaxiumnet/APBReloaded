@@ -1,0 +1,27 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[2] =
+{
+    ReferencedTextures[0] = Texture2D'VFX_Enf_Magnum.BulletShell_Normal_01'
+    ReferencedTextures[1] = Texture2D'VFX_Enf_Magnum.BulletShell_Diffuse_01'
+}
+Expressions[2] =
+{
+    Expressions[0] = MaterialExpressionTextureSample'VFX_Enf_Magnum.M_BulletCasing.MaterialExpressionTextureSample_0'
+    Expressions[1] = MaterialExpressionTextureSample'VFX_Enf_Magnum.M_BulletCasing.MaterialExpressionTextureSample_1'
+}
+CachedExpressionData = 
+BlendMode = BLEND_Opaque (0)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[0] = {}
+CollectedScalarParameters[0] = {}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

@@ -64,6 +64,11 @@ public:
 	 *  crediting the social service would drop the payout on the floor. */
 	apb::WorldService* ServiceForCharacter(const FString& Character) const;
 
+	/** Refresh every connected player's replicated social fields from SocialAuthority.
+	 *  Public: the PlayerState RPC dispatch path must trigger it after direct social
+	 *  mutations on the world authority. */
+	void PushSocialStateToPlayerStates();
+
 private:
 	TMap<FString, TUniquePtr<FAPBPlayerService>> PlayerServices;
 	apb::WorldService SocialAuthority;
@@ -95,7 +100,6 @@ private:
 	void MarkRelayPlayerLeft(const apb::RelayMessage& Message);
 	void ForwardRelayChat(const apb::RelayMessage& Message);
 	void HandleSocialRequest(const apb::RelayMessage& Message);
-	void PushSocialStateToPlayerStates();
 	FAPBPlayerService* ServiceFor(APlayerController* PC) const;
 	static FString PCKey(APlayerController* PC);
 };

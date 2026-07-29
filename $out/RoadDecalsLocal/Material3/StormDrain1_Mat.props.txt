@@ -1,0 +1,29 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = true
+ReferencedTextures[3] =
+{
+    ReferencedTextures[0] = Texture2D'StormDrain1_Normal'
+    ReferencedTextures[1] = Texture2D'StormDrain1_Diffuse'
+    ReferencedTextures[2] = Texture2D'StormDrain1_Specular'
+}
+Expressions[3] =
+{
+    Expressions[0] = MaterialExpressionTextureSample'StormDrain1_Mat.MaterialExpressionTextureSample_25'
+    Expressions[1] = MaterialExpressionTextureSample'StormDrain1_Mat.MaterialExpressionTextureSample_26'
+    Expressions[2] = MaterialExpressionTextureSample'StormDrain1_Mat.MaterialExpressionTextureSample_27'
+}
+CachedExpressionData = 
+BlendMode = BLEND_Masked (1)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[0] = {}
+CollectedScalarParameters[0] = {}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

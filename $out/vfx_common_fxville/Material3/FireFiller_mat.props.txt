@@ -1,0 +1,70 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[3] =
+{
+    ReferencedTextures[0] = Texture2D'Common.Textures.simple_noise_txt'
+    ReferencedTextures[1] = Texture2D'Fire.Textures.FireTile_txt'
+    ReferencedTextures[2] = Texture2D'Common.Textures.DetailEdgeMask_txt'
+}
+Expressions[110] =
+{
+    Expressions[2] = MaterialExpressionScalarParameter'Fire.Materials.FireFiller_mat.MaterialExpressionScalarParameter_6'
+    Expressions[9] = MaterialExpressionTextureSample'Fire.Materials.FireFiller_mat.MaterialExpressionTextureSample_49'
+    Expressions[15] = MaterialExpressionTextureSample'Fire.Materials.FireFiller_mat.MaterialExpressionTextureSample_51'
+    Expressions[17] = MaterialExpressionTextureSample'Fire.Materials.FireFiller_mat.MaterialExpressionTextureSample_50'
+    Expressions[20] = MaterialExpressionTextureSample'Fire.Materials.FireFiller_mat.MaterialExpressionTextureSample_48'
+    Expressions[26] = MaterialExpressionTextureSample'Fire.Materials.FireFiller_mat.MaterialExpressionTextureSample_47'
+    Expressions[28] = MaterialExpressionTextureSample'Fire.Materials.FireFiller_mat.MaterialExpressionTextureSample_46'
+    Expressions[36] = MaterialExpressionTextureSample'Fire.Materials.FireFiller_mat.MaterialExpressionTextureSample_3'
+    Expressions[45] = MaterialExpressionScalarParameter'Fire.Materials.FireFiller_mat.MaterialExpressionScalarParameter_9'
+    Expressions[47] = MaterialExpressionTextureSample'Fire.Materials.FireFiller_mat.MaterialExpressionTextureSample_1'
+    Expressions[56] = MaterialExpressionStaticSwitchParameter'Fire.Materials.FireFiller_mat.MaterialExpressionStaticSwitchParameter_2'
+    Expressions[58] = MaterialExpressionTextureSampleParameter2D'Fire.Materials.FireFiller_mat.MaterialExpressionTextureSampleParameter2D_0'
+    Expressions[60] = MaterialExpressionStaticSwitchParameter'Fire.Materials.FireFiller_mat.MaterialExpressionStaticSwitchParameter_1'
+    Expressions[63] = MaterialExpressionScalarParameter'Fire.Materials.FireFiller_mat.MaterialExpressionScalarParameter_5'
+    Expressions[67] = MaterialExpressionScalarParameter'Fire.Materials.FireFiller_mat.MaterialExpressionScalarParameter_1'
+    Expressions[73] = MaterialExpressionScalarParameter'Fire.Materials.FireFiller_mat.MaterialExpressionScalarParameter_3'
+    Expressions[76] = MaterialExpressionScalarParameter'Fire.Materials.FireFiller_mat.MaterialExpressionScalarParameter_0'
+    Expressions[79] = MaterialExpressionStaticSwitchParameter'Fire.Materials.FireFiller_mat.MaterialExpressionStaticSwitchParameter_0'
+    Expressions[82] = MaterialExpressionScalarParameter'Fire.Materials.FireFiller_mat.MaterialExpressionScalarParameter_4'
+    Expressions[86] = MaterialExpressionScalarParameter'Fire.Materials.FireFiller_mat.MaterialExpressionScalarParameter_2'
+    Expressions[88] = MaterialExpressionTextureSample'Fire.Materials.FireFiller_mat.MaterialExpressionTextureSample_0'
+    Expressions[94] = MaterialExpressionTextureSample'Fire.Materials.FireFiller_mat.MaterialExpressionTextureSample_31'
+    Expressions[96] = MaterialExpressionTextureSample'Fire.Materials.FireFiller_mat.MaterialExpressionTextureSample_30'
+    Expressions[99] = MaterialExpressionTextureSample'Fire.Materials.FireFiller_mat.MaterialExpressionTextureSample_7'
+    Expressions[105] = MaterialExpressionTextureSample'Fire.Materials.FireFiller_mat.MaterialExpressionTextureSample_20'
+    Expressions[107] = MaterialExpressionTextureSample'Fire.Materials.FireFiller_mat.MaterialExpressionTextureSample_18'
+}
+CachedExpressionData = 
+BlendMode = BLEND_Translucent (2)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[1] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'Common.Textures.gradients_A_txt'
+        Name = Mask
+        Group = None
+    }
+}
+CollectedScalarParameters[8] =
+{
+    CollectedScalarParameters[0] = { Value=0.5, Name=DepthBias, Group=None }
+    CollectedScalarParameters[1] = { Value=1, Name=TopLoopTile, Group=None }
+    CollectedScalarParameters[2] = { Value=1, Name=FadeEdgesCenter, Group=None }
+    CollectedScalarParameters[3] = { Value=5, Name=FadeEdges, Group=None }
+    CollectedScalarParameters[4] = { Value=800, Name=BrightnessOfGradient, Group=None }
+    CollectedScalarParameters[5] = { Value=0.0015, Name=HeightOfGradient, Group=None }
+    CollectedScalarParameters[6] = { Value=10, Name=FresnelValue, Group=None }
+    CollectedScalarParameters[7] = { Value=1, Name=EmissiveHot, Group=None }
+}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

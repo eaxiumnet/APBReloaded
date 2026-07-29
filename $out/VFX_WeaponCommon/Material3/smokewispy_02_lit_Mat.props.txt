@@ -1,0 +1,24 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[2] = { Texture2D'Textures.greypack_01_txt' }
+Expressions[16] =
+{
+    Expressions[0] = MaterialExpressionTextureSample'Materials.smokewispy_02_lit_Mat.MaterialExpressionTextureSample_3'
+    Expressions[5] = MaterialExpressionTextureSample'Materials.smokewispy_02_lit_Mat.MaterialExpressionTextureSample_5'
+    Expressions[15] = MaterialExpressionTextureSample'Materials.smokewispy_02_lit_Mat.MaterialExpressionTextureSample_2'
+}
+CachedExpressionData = 
+BlendMode = BLEND_Translucent (2)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[0] = {}
+CollectedScalarParameters[0] = {}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

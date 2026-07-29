@@ -1,0 +1,32 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = true
+ReferencedTextures[3] =
+{
+    ReferencedTextures[0] = Texture2D'Water.Textures.LiquidSpecular_txt'
+    ReferencedTextures[1] = Texture2D'Water.Textures.LiquidDistortion_txt'
+}
+Expressions[30] =
+{
+    Expressions[2] = MaterialExpressionTextureSampleParameter2D'Debris.Materials.Mud_mat.MaterialExpressionTextureSampleParameter2D_0'
+    Expressions[7] = MaterialExpressionTextureSample'Debris.Materials.Mud_mat.MaterialExpressionTextureSample_3'
+    Expressions[10] = MaterialExpressionTextureSample'Debris.Materials.Mud_mat.MaterialExpressionTextureSample_1'
+    Expressions[22] = MaterialExpressionTextureSample'Debris.Materials.Mud_mat.MaterialExpressionTextureSample_0'
+}
+CachedExpressionData = 
+BlendMode = BLEND_Masked (1)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[1] =
+{
+    CollectedTextureParameters[0] = { Texture=None, Name=MudTexture, Group=None }
+}
+CollectedScalarParameters[0] = {}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

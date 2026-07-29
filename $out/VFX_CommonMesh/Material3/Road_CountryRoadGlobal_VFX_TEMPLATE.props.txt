@@ -1,0 +1,63 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[6] = { Texture2D'REF_TEMPLATE.RGB_Terran_REF_01' }
+Expressions[49] =
+{
+    Expressions[1] = MaterialExpressionTextureSample'REF_TEMPLATE.Road_CountryRoadGlobal_VFX_TEMPLATE.MaterialExpressionTextureSample_1'
+    Expressions[6] = MaterialExpressionTextureSample'REF_TEMPLATE.Road_CountryRoadGlobal_VFX_TEMPLATE.MaterialExpressionTextureSample_4'
+    Expressions[8] = MaterialExpressionScalarParameter'REF_TEMPLATE.Road_CountryRoadGlobal_VFX_TEMPLATE.MaterialExpressionScalarParameter_3'
+    Expressions[10] = MaterialExpressionTextureSampleParameter2D'REF_TEMPLATE.Road_CountryRoadGlobal_VFX_TEMPLATE.MaterialExpressionTextureSampleParameter2D_0'
+    Expressions[11] = MaterialExpressionTextureSample'REF_TEMPLATE.Road_CountryRoadGlobal_VFX_TEMPLATE.MaterialExpressionTextureSample_6'
+    Expressions[23] = MaterialExpressionTextureSample'REF_TEMPLATE.Road_CountryRoadGlobal_VFX_TEMPLATE.MaterialExpressionTextureSample_0'
+    Expressions[28] = MaterialExpressionTextureSample'REF_TEMPLATE.Road_CountryRoadGlobal_VFX_TEMPLATE.MaterialExpressionTextureSample_9'
+    Expressions[31] = MaterialExpressionTextureSample'REF_TEMPLATE.Road_CountryRoadGlobal_VFX_TEMPLATE.MaterialExpressionTextureSample_5'
+    Expressions[33] = MaterialExpressionVectorParameter'REF_TEMPLATE.Road_CountryRoadGlobal_VFX_TEMPLATE.MaterialExpressionVectorParameter_0'
+    Expressions[35] = MaterialExpressionTextureSampleParameter2D'REF_TEMPLATE.Road_CountryRoadGlobal_VFX_TEMPLATE.MaterialExpressionTextureSampleParameter2D_1'
+    Expressions[40] = MaterialExpressionVectorParameter'REF_TEMPLATE.Road_CountryRoadGlobal_VFX_TEMPLATE.MaterialExpressionVectorParameter_3'
+}
+CachedExpressionData = 
+BlendMode = BLEND_Opaque (0)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[2] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'REF_TEMPLATE.RGB_Terran_REF_01'
+        Name = GlobalBlend
+        Group = None
+    }
+    CollectedTextureParameters[1] =
+    {
+        Texture = Texture2D'REF_TEMPLATE.RGB_Terran_REF_01'
+        Name = GlobalBlend
+        Group = None
+    }
+}
+CollectedScalarParameters[1] =
+{
+    CollectedScalarParameters[0] = { Value=0.2, Name=DirtStrength, Group=None }
+}
+CollectedVectorParameters[2] =
+{
+    CollectedVectorParameters[0] =
+    {
+        Value = { R=0, G=0, B=1, A=1 }
+        Name = None
+        Group = None
+    }
+    CollectedVectorParameters[1] =
+    {
+        Value = { R=0.63878, G=0.774227, B=0.45908, A=1 }
+        Name = Grass_SpecColour
+        Group = None
+    }
+}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

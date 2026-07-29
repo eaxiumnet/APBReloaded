@@ -1,0 +1,295 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = true
+ReferencedTextures[3] =
+{
+    ReferencedTextures[0] = Texture2D'T_Normal'
+    ReferencedTextures[1] = Texture2D'T_Diffuse'
+    ReferencedTextures[2] = Texture2D'T_ReflectionMask'
+}
+Expressions[194] =
+{
+    Expressions[0] = MaterialExpressionStaticSwitchParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionStaticSwitchParameter_11'
+    Expressions[2] = MaterialExpressionStaticSwitchParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionStaticSwitchParameter_12'
+    Expressions[5] = MaterialExpressionVectorParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionVectorParameter_29'
+    Expressions[6] = MaterialExpressionTextureSampleParameter2D'M_ES_Phong_Masked_Master_1sided.MaterialExpressionTextureSampleParameter2D_29'
+    Expressions[8] = MaterialExpressionScalarParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionScalarParameter_34'
+    Expressions[9] = MaterialExpressionStaticSwitchParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionStaticSwitchParameter_0'
+    Expressions[13] = MaterialExpressionScalarParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionScalarParameter_4'
+    Expressions[16] = MaterialExpressionTextureSampleParameter2D'M_ES_Phong_Masked_Master_1sided.MaterialExpressionTextureSampleParameter2D_1'
+    Expressions[18] = MaterialExpressionStaticSwitchParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionStaticSwitchParameter_10'
+    Expressions[21] = MaterialExpressionStaticSwitchParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionStaticSwitchParameter_8'
+    Expressions[22] = MaterialExpressionStaticSwitchParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionStaticSwitchParameter_17'
+    Expressions[25] = MaterialExpressionTextureSampleParameter2D'M_ES_Phong_Masked_Master_1sided.MaterialExpressionTextureSampleParameter2D_30'
+    Expressions[27] = MaterialExpressionStaticSwitchParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionStaticSwitchParameter_3'
+    Expressions[30] = MaterialExpressionScalarParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionScalarParameter_3'
+    Expressions[32] = MaterialExpressionScalarParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionScalarParameter_32'
+    Expressions[34] = MaterialExpressionScalarParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionScalarParameter_33'
+    Expressions[41] = MaterialExpressionVectorParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionVectorParameter_28'
+    Expressions[44] = MaterialExpressionStaticSwitchParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionStaticSwitchParameter_7'
+    Expressions[46] = MaterialExpressionStaticSwitchParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionStaticSwitchParameter_15'
+    Expressions[47] = MaterialExpressionTextureSampleParameter2D'M_ES_Phong_Masked_Master_1sided.MaterialExpressionTextureSampleParameter2D_28'
+    Expressions[48] = MaterialExpressionStaticSwitchParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionStaticSwitchParameter_14'
+    Expressions[51] = MaterialExpressionStaticSwitchParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionStaticSwitchParameter_26'
+    Expressions[54] = MaterialExpressionScalarParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionScalarParameter_29'
+    Expressions[55] = MaterialExpressionStaticSwitchParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionStaticSwitchParameter_22'
+    Expressions[58] = MaterialExpressionScalarParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionScalarParameter_37'
+    Expressions[59] = MaterialExpressionScalarParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionScalarParameter_35'
+    Expressions[61] = MaterialExpressionTextureSampleParameter2D'M_ES_Phong_Masked_Master_1sided.MaterialExpressionTextureSampleParameter2D_27'
+    Expressions[62] = MaterialExpressionStaticSwitchParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionStaticSwitchParameter_2'
+    Expressions[65] = MaterialExpressionScalarParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionScalarParameter_28'
+    Expressions[67] = MaterialExpressionStaticSwitchParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionStaticSwitchParameter_23'
+    Expressions[69] = MaterialExpressionVectorParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionVectorParameter_0'
+    Expressions[70] = MaterialExpressionStaticSwitchParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionStaticSwitchParameter_9'
+    Expressions[72] = MaterialExpressionVectorParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionVectorParameter_2'
+    Expressions[76] = MaterialExpressionVectorParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionVectorParameter_1'
+    Expressions[78] = MaterialExpressionScalarParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionScalarParameter_0'
+    Expressions[81] = MaterialExpressionStaticSwitchParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionStaticSwitchParameter_5'
+    Expressions[84] = MaterialExpressionTextureSampleParameter2D'M_ES_Phong_Masked_Master_1sided.MaterialExpressionTextureSampleParameter2D_24'
+    Expressions[86] = MaterialExpressionScalarParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionScalarParameter_31'
+    Expressions[87] = MaterialExpressionScalarParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionScalarParameter_30'
+    Expressions[88] = MaterialExpressionStaticSwitchParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionStaticSwitchParameter_16'
+    Expressions[91] = MaterialExpressionVectorParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionVectorParameter_10'
+    Expressions[94] = MaterialExpressionTextureSampleParameter2D'M_ES_Phong_Masked_Master_1sided.MaterialExpressionTextureSampleParameter2D_25'
+    Expressions[96] = MaterialExpressionVectorParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionVectorParameter_25'
+    Expressions[99] = MaterialExpressionVectorParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionVectorParameter_24'
+    Expressions[102] = MaterialExpressionTextureSampleParameter2D'M_ES_Phong_Masked_Master_1sided.MaterialExpressionTextureSampleParameter2D_11'
+    Expressions[104] = MaterialExpressionVectorParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionVectorParameter_11'
+    Expressions[106] = MaterialExpressionTextureSampleParameter2D'M_ES_Phong_Masked_Master_1sided.MaterialExpressionTextureSampleParameter2D_10'
+    Expressions[107] = MaterialExpressionStaticSwitchParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionStaticSwitchParameter_13'
+    Expressions[109] = MaterialExpressionTextureSampleParameter2D'M_ES_Phong_Masked_Master_1sided.MaterialExpressionTextureSampleParameter2D_26'
+    Expressions[111] = MaterialExpressionVectorParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionVectorParameter_27'
+    Expressions[112] = MaterialExpressionStaticSwitchParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionStaticSwitchParameter_1'
+    Expressions[113] = MaterialExpressionStaticSwitchParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionStaticSwitchParameter_18'
+    Expressions[114] = MaterialExpressionStaticSwitchParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionStaticSwitchParameter_20'
+    Expressions[119] = MaterialExpressionVectorParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionVectorParameter_16'
+    Expressions[120] = MaterialExpressionStaticSwitchParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionStaticSwitchParameter_21'
+    Expressions[121] = MaterialExpressionTextureSampleParameter2D'M_ES_Phong_Masked_Master_1sided.MaterialExpressionTextureSampleParameter2D_16'
+    Expressions[124] = MaterialExpressionScalarParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionScalarParameter_1'
+    Expressions[126] = MaterialExpressionScalarParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionScalarParameter_2'
+    Expressions[129] = MaterialExpressionTextureSampleParameter2D'M_ES_Phong_Masked_Master_1sided.MaterialExpressionTextureSampleParameter2D_17'
+    Expressions[130] = MaterialExpressionStaticSwitchParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionStaticSwitchParameter_19'
+    Expressions[132] = MaterialExpressionStaticSwitchParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionStaticSwitchParameter_4'
+    Expressions[133] = MaterialExpressionStaticSwitchParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionStaticSwitchParameter_27'
+    Expressions[134] = MaterialExpressionTextureSampleParameter2D'M_ES_Phong_Masked_Master_1sided.MaterialExpressionTextureSampleParameter2D_23'
+    Expressions[136] = MaterialExpressionScalarParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionScalarParameter_11'
+    Expressions[137] = MaterialExpressionStaticSwitchParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionStaticSwitchParameter_6'
+    Expressions[143] = MaterialExpressionScalarParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionScalarParameter_15'
+    Expressions[147] = MaterialExpressionScalarParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionScalarParameter_14'
+    Expressions[149] = MaterialExpressionVectorParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionVectorParameter_14'
+    Expressions[150] = MaterialExpressionStaticSwitchParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionStaticSwitchParameter_25'
+    Expressions[160] = MaterialExpressionStaticSwitchParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionStaticSwitchParameter_24'
+    Expressions[168] = MaterialExpressionStaticSwitchParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionStaticSwitchParameter_28'
+    Expressions[169] = MaterialExpressionStaticSwitchParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionStaticSwitchParameter_30'
+    Expressions[172] = MaterialExpressionStaticSwitchParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionStaticSwitchParameter_29'
+    Expressions[175] = MaterialExpressionTextureSampleParameter2D'M_ES_Phong_Masked_Master_1sided.MaterialExpressionTextureSampleParameter2D_2'
+    Expressions[176] = MaterialExpressionScalarParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionScalarParameter_5'
+    Expressions[180] = MaterialExpressionScalarParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionScalarParameter_18'
+    Expressions[182] = MaterialExpressionScalarParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionScalarParameter_19'
+    Expressions[183] = MaterialExpressionScalarParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionScalarParameter_20'
+    Expressions[190] = MaterialExpressionStaticSwitchParameter'M_ES_Phong_Masked_Master_1sided.MaterialExpressionStaticSwitchParameter_31'
+    Expressions[193] = MaterialExpressionTextureSampleParameter2D'M_ES_Phong_Masked_Master_1sided.MaterialExpressionTextureSampleParameter2D_4'
+}
+CachedExpressionData = 
+BlendMode = BLEND_Masked (1)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[15] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'T_DetailNormal'
+        Name = DetailNormal
+        Group = None
+    }
+    CollectedTextureParameters[1] =
+    {
+        Texture = Texture2D'T_Diffuse'
+        Name = BumpOffsetTexture
+        Group = None
+    }
+    CollectedTextureParameters[2] =
+    {
+        Texture = Texture2D'T_Base_Tile_Emmisive'
+        Name = BlendAlphaTex
+        Group = None
+    }
+    CollectedTextureParameters[3] =
+    {
+        Texture = Texture2D'T_Normal'
+        Name = Normal_02
+        Group = None
+    }
+    CollectedTextureParameters[4] =
+    {
+        Texture = Texture2D'T_Normal'
+        Name = Normal_01
+        Group = None
+    }
+    CollectedTextureParameters[5] =
+    {
+        Texture = Texture2D'T_Diffuse'
+        Name = Diffuse_01
+        Group = None
+    }
+    CollectedTextureParameters[6] =
+    {
+        Texture = Texture2D'T_Diffuse'
+        Name = Diffuse_02
+        Group = None
+    }
+    CollectedTextureParameters[7] =
+    {
+        Texture = Texture2D'T_Specular'
+        Name = Specular_02
+        Group = None
+    }
+    CollectedTextureParameters[8] =
+    {
+        Texture = Texture2D'T_Specular'
+        Name = Specular_01
+        Group = None
+    }
+    CollectedTextureParameters[9] =
+    {
+        Texture = Texture2D'T_Emissive'
+        Name = EmissiveTex
+        Group = None
+    }
+    CollectedTextureParameters[10] =
+    {
+        Texture = Texture2D'T_Emissive'
+        Name = Reflection
+        Group = None
+    }
+    CollectedTextureParameters[11] =
+    {
+        Texture = Texture2D'T_Emissive'
+        Name = ReflectionMask
+        Group = None
+    }
+    CollectedTextureParameters[12] =
+    {
+        Texture = Texture2D'T_Base_Tile_Variation'
+        Name = VariationTexture
+        Group = None
+    }
+    CollectedTextureParameters[13] =
+    {
+        Texture = Texture2D'T_Base_Tile_Specular'
+        Name = BlendModulationTexture
+        Group = None
+    }
+    CollectedTextureParameters[14] =
+    {
+        Texture = Texture2D'T_ReflectionMask'
+        Name = OpacityMask
+        Group = None
+    }
+}
+CollectedScalarParameters[21] =
+{
+    CollectedScalarParameters[0] = { Value=8, Name=DetailNormalScale, Group=None }
+    CollectedScalarParameters[1] = { Value=1, Name=BumpOffsetHeight, Group=None }
+    CollectedScalarParameters[2] = { Value=1, Name=BlendAlphaScale, Group=None }
+    CollectedScalarParameters[3] = { Value=4, Name=FalloffMultiply, Group=None }
+    CollectedScalarParameters[4] = { Value=2, Name=FalloffExponent, Group=None }
+    CollectedScalarParameters[5] = { Value=1, Name=Tex_Scale_02, Group=None }
+    CollectedScalarParameters[6] = { Value=1, Name=Tex_Scale_01_Y, Group=None }
+    CollectedScalarParameters[7] = { Value=1, Name=Tex_Scale_01_X, Group=None }
+    CollectedScalarParameters[8] = { Value=1, Name=Tex_Scale_01, Group=None }
+    CollectedScalarParameters[9] = { Value=1, Name=FresnelFalloffExponent, Group=None }
+    CollectedScalarParameters[10] = { Value=25, Name=SpecPower2, Group=None }
+    CollectedScalarParameters[11] = { Value=5, Name=SpecPower1, Group=None }
+    CollectedScalarParameters[12] = { Value=0.5, Name=Reflection Offset, Group=None }
+    CollectedScalarParameters[13] = { Value=0.5, Name=Reflection Scale, Group=None }
+    CollectedScalarParameters[14] = { Value=0.3, Name=VariationScale, Group=None }
+    CollectedScalarParameters[15] = { Value=1, Name=VariationMax, Group=None }
+    CollectedScalarParameters[16] = { Value=1, Name=VariationPower, Group=None }
+    CollectedScalarParameters[17] = { Value=1, Name=BlendModulationScale, Group=None }
+    CollectedScalarParameters[18] = { Value=-0.5, Name=Modulation_Offset, Group=None }
+    CollectedScalarParameters[19] = { Value=1, Name=Modulation_Power, Group=None }
+    CollectedScalarParameters[20] = { Value=0.5, Name=Modulation_Multiply, Group=None }
+}
+CollectedVectorParameters[12] =
+{
+    CollectedVectorParameters[0] =
+    {
+        Value = { R=2, G=2, B=0, A=1 }
+        Name = DetailNormalIntensity
+        Group = None
+    }
+    CollectedVectorParameters[1] =
+    {
+        Value = { R=0, G=0, B=1, A=1 }
+        Name = WorldVector
+        Group = None
+    }
+    CollectedVectorParameters[2] =
+    {
+        Value = { R=1, G=1, B=1, A=1 }
+        Name = NormalIntensity
+        Group = None
+    }
+    CollectedVectorParameters[3] =
+    {
+        Value = { R=1, G=1, B=1, A=1 }
+        Name = Transmission_Color
+        Group = None
+    }
+    CollectedVectorParameters[4] =
+    {
+        Value = { R=1, G=1, B=1, A=5 }
+        Name = FresnelColor
+        Group = None
+    }
+    CollectedVectorParameters[5] =
+    {
+        Value = { R=1, G=1, B=1, A=1 }
+        Name = Specular_01_Color
+        Group = None
+    }
+    CollectedVectorParameters[6] =
+    {
+        Value = { R=1, G=1, B=1, A=1 }
+        Name = Diffuse_02_Color
+        Group = None
+    }
+    CollectedVectorParameters[7] =
+    {
+        Value = { R=1, G=1, B=1, A=1 }
+        Name = Diffuse_01_Color
+        Group = None
+    }
+    CollectedVectorParameters[8] =
+    {
+        Value = { R=1, G=1, B=1, A=2 }
+        Name = Specular_02_Color
+        Group = None
+    }
+    CollectedVectorParameters[9] =
+    {
+        Value = { R=1, G=1, B=1, A=0.1 }
+        Name = EmissiveColor
+        Group = None
+    }
+    CollectedVectorParameters[10] =
+    {
+        Value = { R=1, G=1, B=1, A=1 }
+        Name = ReflectionColor
+        Group = None
+    }
+    CollectedVectorParameters[11] =
+    {
+        Value = { R=1, G=1, B=1, A=1 }
+        Name = VariationColor
+        Group = None
+    }
+}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

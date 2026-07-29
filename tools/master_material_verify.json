@@ -1,0 +1,19 @@
+{
+  "loaded": true,
+  "params": {},
+  "sampler_mismatch": [],
+  "probe": "none",
+  "diag": {
+    "expression_collection": "RAISED:Material: Failed to find property 'expression_collection' for attribute 'expression_collection' on 'Material'",
+    "expressions": "RAISED:Material: Property 'Expressions' for attribute 'expressions' on 'Material' is protected and cannot be read",
+    "get_texture_parameter_names": [
+      "T_Diffuse",
+      "T_Normal",
+      "T_SpecMask",
+      "T_Emissive"
+    ],
+    "material_attrs": []
+  },
+  "recompiled": true,
+  "ok": false
+}

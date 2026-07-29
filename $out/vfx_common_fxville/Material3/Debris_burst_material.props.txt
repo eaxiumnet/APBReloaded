@@ -1,0 +1,28 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[2] =
+{
+    ReferencedTextures[0] = Texture2D'Common.Textures.simple_noise_txt'
+    ReferencedTextures[1] = Texture2D'Sparks.Textures.3x3_SparkFlashes_txt'
+}
+Expressions[15] =
+{
+    Expressions[4] = MaterialExpressionTextureSample'Debris.Materials.Debris_burst_material.MaterialExpressionTextureSample_8'
+    Expressions[6] = MaterialExpressionTextureSample'Debris.Materials.Debris_burst_material.MaterialExpressionTextureSample_6'
+    Expressions[10] = MaterialExpressionTextureSample'Debris.Materials.Debris_burst_material.MaterialExpressionTextureSample_1'
+}
+CachedExpressionData = 
+BlendMode = BLEND_Translucent (2)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[0] = {}
+CollectedScalarParameters[0] = {}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

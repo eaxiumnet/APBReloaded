@@ -1,0 +1,74 @@
+﻿{
+    "schema_version":  "apb.perf.v1",
+    "captured_at_utc":  "2026-07-23T05:38:55.3743469Z",
+    "terminal_marker":  "LOAD_GATE_FAIL",
+    "run":  {
+                "map":  "       ",
+                "map_asset":  "",
+                "scalability_profile":  "Server",
+                "clients":  1,
+                "duration_seconds":  1,
+                "latency_ms":  0,
+                "packet_loss_percent":  0,
+                "build_sha":  "58754f9a30e393bde1f0d4f6770f88bd12bb3a1e"
+            },
+    "hardware":  {
+                     "os":  "Microsoft Windows 11 Pro N for Workstations",
+                     "cpu":  "AMD Ryzen 7 7800X3D 8-Core Processor           ",
+                     "logical_processors":  16,
+                     "ram_mb":  31831.9,
+                     "gpu":  "Parsec Virtual Display Adapter",
+                     "vram_mb":  0
+                 },
+    "metrics":  {
+                    "fps":  {
+                                "p50":  0,
+                                "p95":  0,
+                                "p99":  0
+                            },
+                    "frame_ms":  {
+                                     "p50":  0,
+                                     "p95":  0,
+                                     "p99":  0
+                                 },
+                    "tick_ms":  {
+                                    "p50":  0,
+                                    "p95":  0,
+                                    "p99":  0
+                                },
+                    "cpu_percent":  0,
+                    "ram_mb":  0,
+                    "vram_mb":  0,
+                    "rtt_ms":  {
+                                   "p50":  0,
+                                   "p95":  0,
+                                   "p99":  0
+                               },
+                    "packet_loss_percent":  0,
+                    "replication_rate":  0,
+                    "corrections":  0,
+                    "missed_authoritative_steps":  0
+                },
+    "evidence":  {
+                     "raw_log":  "D:\\APBReloaded\\work\\load64_20260723_073854.log",
+                     "launch_observed":  false,
+                     "synthetic":  false,
+                     "claims_64_player":  false
+                 },
+    "load_contract":  {
+                          "hosts_manifest":  "D:\\APBReloaded\\tools\\load_hosts.example.json",
+                          "workload":  [
+                                           "movement",
+                                           "combat",
+                                           "vehicle"
+                                       ],
+                          "identities":  [
+
+                                         ],
+                          "assignments":  [
+
+                                          ],
+                          "observed_live_clients":  0,
+                          "required_live_clients":  1
+                      }
+}

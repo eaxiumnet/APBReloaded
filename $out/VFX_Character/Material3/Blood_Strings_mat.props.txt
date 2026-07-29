@@ -1,0 +1,42 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = true
+ReferencedTextures[3] = { Texture2D'Textures.1x4_blood_strings1x4_txt' }
+Expressions[37] =
+{
+    Expressions[2] = MaterialExpressionTextureSampleParameter2D'Materials.Blood_Strings_mat.MaterialExpressionTextureSampleParameter2D_0'
+    Expressions[7] = MaterialExpressionTextureSample'Materials.Blood_Strings_mat.MaterialExpressionTextureSample_3'
+    Expressions[10] = MaterialExpressionTextureSample'Materials.Blood_Strings_mat.MaterialExpressionTextureSample_1'
+    Expressions[21] = MaterialExpressionVectorParameter'Materials.Blood_Strings_mat.MaterialExpressionVectorParameter_0'
+    Expressions[22] = MaterialExpressionTextureSample'Materials.Blood_Strings_mat.MaterialExpressionTextureSample_0'
+}
+CachedExpressionData = 
+BlendMode = BLEND_Masked (1)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[1] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'Textures.1x4_blood_strings1x4_txt'
+        Name = BloodTexture
+        Group = None
+    }
+}
+CollectedScalarParameters[0] = {}
+CollectedVectorParameters[1] =
+{
+    CollectedVectorParameters[0] =
+    {
+        Value = { R=2, G=0, B=0.01, A=1 }
+        Name = None
+        Group = None
+    }
+}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

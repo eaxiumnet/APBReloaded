@@ -1,0 +1,38 @@
+TwoSided = true
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[3] =
+{
+    ReferencedTextures[0] = Texture2D'Texture.MetalDebris01_Normal'
+    ReferencedTextures[1] = Texture2D'Texture.MetalDebris01_Specular'
+    ReferencedTextures[2] = Texture2D'Texture.MetalDebris01_Diffuse'
+}
+Expressions[10] =
+{
+    Expressions[0] = MaterialExpressionTextureSample'Metal.M_Metal_Scraped_02_Blue.MaterialExpressionTextureSample_0'
+    Expressions[1] = MaterialExpressionTextureSample'Metal.M_Metal_Scraped_02_Blue.MaterialExpressionTextureSample_1'
+    Expressions[2] = MaterialExpressionTextureSample'Metal.M_Metal_Scraped_02_Blue.MaterialExpressionTextureSample_3'
+    Expressions[7] = MaterialExpressionVectorParameter'Metal.M_Metal_Scraped_02_Blue.MaterialExpressionVectorParameter_0'
+}
+CachedExpressionData = 
+BlendMode = BLEND_Opaque (0)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[0] = {}
+CollectedScalarParameters[0] = {}
+CollectedVectorParameters[1] =
+{
+    CollectedVectorParameters[0] =
+    {
+        Value = { R=0.061907, G=0.103634, B=0.201096, A=1 }
+        Name = None
+        Group = None
+    }
+}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

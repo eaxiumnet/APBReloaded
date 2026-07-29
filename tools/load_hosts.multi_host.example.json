@@ -1,0 +1,25 @@
+{
+  "schema_version": "apb.load-hosts.v1",
+  "hosts": [
+    {
+      "name": "load-host-a",
+      "address": "192.0.2.10",
+      "enabled": true,
+      "max_clients": 32,
+      "launch_transport": "powershell-remoting",
+      "scratch_root": "C:/APBReloadedLoadScratch",
+      "editor": "D:/UE58/UE_5.8/Engine/Binaries/Win64/UnrealEditor.exe",
+      "project": "D:/APBReloaded/APBReloaded.uproject"
+    },
+    {
+      "name": "load-host-b",
+      "address": "192.0.2.11",
+      "enabled": true,
+      "max_clients": 32,
+      "launch_transport": "powershell-remoting",
+      "scratch_root": "C:/APBReloadedLoadScratch",
+      "editor": "D:/UE58/UE_5.8/Engine/Binaries/Win64/UnrealEditor.exe",
+      "project": "D:/APBReloaded/APBReloaded.uproject"
+    }
+  ]
+}

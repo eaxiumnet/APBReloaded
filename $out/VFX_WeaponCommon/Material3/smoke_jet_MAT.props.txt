@@ -1,0 +1,27 @@
+TwoSided = true
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[1] = { Texture2D'Textures.dart_muzzle_TXT' }
+Expressions[11] =
+{
+    Expressions[5] = MaterialExpressionScalarParameter'Materials.smoke_jet_MAT.MaterialExpressionScalarParameter_2'
+    Expressions[10] = MaterialExpressionScalarParameter'Materials.smoke_jet_MAT.MaterialExpressionScalarParameter_3'
+}
+CachedExpressionData = 
+BlendMode = BLEND_Translucent (2)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[0] = {}
+CollectedScalarParameters[2] =
+{
+    CollectedScalarParameters[0] = { Value=7, Name=Frensel_Contrast, Group=None }
+    CollectedScalarParameters[1] = { Value=5, Name=Frensel_Power, Group=None }
+}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

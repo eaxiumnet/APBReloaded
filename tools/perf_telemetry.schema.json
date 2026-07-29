@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://apb-reloaded.local/perf-telemetry.schema.json",
+  "type": "object",
+  "required": ["schema_version", "captured_at_utc", "terminal_marker", "run", "hardware", "metrics", "evidence"],
+  "properties": {
+    "schema_version": {"type": "string", "const": "apb.perf.v1"},
+    "captured_at_utc": {"type": "string", "minLength": 20},
+    "terminal_marker": {"type": "string", "enum": ["PERF_GATE_OK", "PERF_GATE_FAIL", "LOAD_GATE_OK", "LOAD_GATE_FAIL"]},
+    "run": {
+      "type": "object",
+      "required": ["map", "map_asset", "scalability_profile", "clients", "duration_seconds", "latency_ms", "packet_loss_percent", "build_sha"],
+      "properties": {
+        "map": {"type": "string", "minLength": 1},
+        "map_asset": {"type": "string", "minLength": 1},
+        "scalability_profile": {"type": "string", "minLength": 1},
+        "clients": {"type": "integer", "minimum": 0},
+        "duration_seconds": {"type": "number", "minimum": 0},
+        "latency_ms": {"type": "number", "minimum": 0},
+        "packet_loss_percent": {"type": "number", "minimum": 0, "maximum": 100},
+        "build_sha": {"type": "string", "minLength": 1}
+      }
+    },
+    "hardware": {
+      "type": "object",
+      "required": ["os", "cpu", "logical_processors", "ram_mb", "gpu", "vram_mb"],
+      "properties": {
+        "os": {"type": "string"}, "cpu": {"type": "string"}, "logical_processors": {"type": "integer", "minimum": 1},
+        "ram_mb": {"type": "number", "minimum": 0}, "gpu": {"type": "string"}, "vram_mb": {"type": "number", "minimum": 0}
+      }
+    },
+    "metrics": {
+      "type": "object",
+      "required": ["fps", "frame_ms", "tick_ms", "cpu_percent", "ram_mb", "vram_mb", "rtt_ms", "packet_loss_percent", "replication_rate", "corrections", "missed_authoritative_steps"],
+      "properties": {
+        "fps": {"$ref": "#/$defs/percentiles"}, "frame_ms": {"$ref": "#/$defs/percentiles"}, "tick_ms": {"$ref": "#/$defs/percentiles"},
+        "rtt_ms": {"$ref": "#/$defs/percentiles"}, "cpu_percent": {"type": "number", "minimum": 0}, "ram_mb": {"type": "number", "minimum": 0},
+        "vram_mb": {"type": "number", "minimum": 0}, "packet_loss_percent": {"type": "number", "minimum": 0, "maximum": 100},
+        "replication_rate": {"type": "number", "minimum": 0}, "corrections": {"type": "integer", "minimum": 0},
+        "missed_authoritative_steps": {"type": "integer", "minimum": 0}
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "required": ["raw_log", "launch_observed", "synthetic", "claims_64_player"],
+      "properties": {
+        "raw_log": {"type": "string", "minLength": 1}, "launch_observed": {"type": "boolean"},
+        "synthetic": {"type": "boolean"}, "claims_64_player": {"type": "boolean"}
+      }
+    },
+    "load_contract": {
+      "type": "object",
+      "required": ["hosts_manifest", "workload", "identities", "assignments", "observed_live_clients", "required_live_clients"],
+      "properties": {
+        "hosts_manifest": {"type": "string", "minLength": 1},
+        "workload": {"type": "array", "minItems": 3, "items": {"type": "string"}},
+        "identities": {"type": "array", "items": {"type": "string"}},
+        "assignments": {"type": "array", "items": {"type": "object"}},
+        "observed_live_clients": {"type": "integer", "minimum": 0},
+        "required_live_clients": {"type": "integer", "minimum": 0}
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"terminal_marker": {"enum": ["LOAD_GATE_OK", "LOAD_GATE_FAIL"]}}},
+      "then": {"required": ["load_contract"]}
+    },
+    {
+      "if": {"properties": {"evidence": {"properties": {"launch_observed": {"const": false}}}}},
+      "then": {"properties": {"terminal_marker": {"enum": ["PERF_GATE_FAIL", "LOAD_GATE_FAIL"]}}}
+    },
+    {
+      "if": {"properties": {"evidence": {"properties": {"synthetic": {"const": true}}}}},
+      "then": {"properties": {"terminal_marker": {"enum": ["PERF_GATE_FAIL", "LOAD_GATE_FAIL"]}}}
+    }
+  ],
+  "$defs": {"percentiles": {"type": "object", "required": ["p50", "p95", "p99"], "properties": {"p50": {"type": "number"}, "p95": {"type": "number"}, "p99": {"type": "number"}}}}
+}

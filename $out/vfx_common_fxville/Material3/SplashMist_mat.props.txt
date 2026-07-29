@@ -1,0 +1,29 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[3] =
+{
+    ReferencedTextures[0] = Texture2D'Common.Textures.GenericNoise_Nmap'
+    ReferencedTextures[1] = Texture2D'Water.Textures.MistAndDisturbance_txt'
+    ReferencedTextures[2] = TextureCube3'Water.Textures.Liquid_cubemap'
+}
+Expressions[23] =
+{
+    Expressions[0] = MaterialExpressionTextureSample'Water.Materials.SplashMist_mat.MaterialExpressionTextureSample_3'
+    Expressions[5] = MaterialExpressionTextureSample'Water.Materials.SplashMist_mat.MaterialExpressionTextureSample_6'
+    Expressions[11] = MaterialExpressionTextureSample'Water.Materials.SplashMist_mat.MaterialExpressionTextureSample_4'
+}
+CachedExpressionData = 
+BlendMode = BLEND_Translucent (2)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[0] = {}
+CollectedScalarParameters[0] = {}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

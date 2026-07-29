@@ -1,0 +1,37 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[1] =
+{
+    ReferencedTextures[0] = Texture2D'Debris.Textures.wood_splinter1_flip_txt'
+}
+Expressions[10] =
+{
+    Expressions[2] = MaterialExpressionTextureSampleParameter2D'Debris.Materials.Wood_parent_Mat.MaterialExpressionTextureSampleParameter2D_0'
+    Expressions[5] = MaterialExpressionScalarParameter'Debris.Materials.Wood_parent_Mat.MaterialExpressionScalarParameter_0'
+}
+CachedExpressionData = 
+BlendMode = BLEND_Translucent (2)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[1] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'Debris.Textures.wood_splinter1_flip_txt'
+        Name = Wood_flipbook
+        Group = None
+    }
+}
+CollectedScalarParameters[1] =
+{
+    CollectedScalarParameters[0] = { Value=1, Name=Loops, Group=None }
+}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

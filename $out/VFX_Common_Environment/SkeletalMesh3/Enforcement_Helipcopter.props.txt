@@ -1,0 +1,27 @@
+LODInfo[1] =
+{
+    LODInfo[0] =
+    {
+        DisplayFactor = 0
+        LODHysteresis = 0.02
+        LODMaterialMap[0] = {}
+        bEnableShadowCasting[6] = { true, true, true, true, true, true }
+        BonesToRemove[0] = {}
+        BonesToPrioritize[0] = {}
+        SourceImportFilename = ""
+    }
+}
+Sockets[0] = {}
+bHasVertexColors = false
+EnableTwistBoneFixers = true
+EnableClavicleFixer = true
+Skeleton = None
+Materials[6] =
+{
+    Materials[0] = Material3'Actor_EnvironmentAmbient.M_Helicopter'
+    Materials[1] = Material3'Actor_EnvironmentAmbient.M_Helicopter_Details'
+    Materials[2] = Material3'Actor_EnvironmentAmbient.M_Helicopter_Interior'
+    Materials[3] = Material3'Actor_EnvironmentAmbient.M_Helicopter_Guns'
+    Materials[4] = Material3'Actor_EnvironmentAmbient.M_Propellar_SPRITES'
+    Materials[5] = Material3'Actor_EnvironmentAmbient.LightBeam_shader_VFX'
+}

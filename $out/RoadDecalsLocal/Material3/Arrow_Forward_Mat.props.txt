@@ -1,0 +1,54 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = true
+ReferencedTextures[3] =
+{
+    ReferencedTextures[0] = Texture2D'Arrow_Forward_NormAlph_Dup'
+    ReferencedTextures[1] = Texture2D'Markings_Pattern_DiffSpec_Dup'
+    ReferencedTextures[2] = Texture2D'CrossWalk_NormAlph'
+}
+Expressions[14] =
+{
+    Expressions[1] = MaterialExpressionVectorParameter'Arrow_Forward_Mat.MaterialExpressionVectorParameter_2'
+    Expressions[4] = MaterialExpressionVectorParameter'Arrow_Forward_Mat.MaterialExpressionVectorParameter_3'
+    Expressions[5] = MaterialExpressionTextureSample'Arrow_Forward_Mat.MaterialExpressionTextureSample_3'
+    Expressions[11] = MaterialExpressionTextureSample'Arrow_Forward_Mat.MaterialExpressionTextureSample_4'
+    Expressions[12] = MaterialExpressionTextureSample'Arrow_Forward_Mat.MaterialExpressionTextureSample_5'
+    Expressions[13] = MaterialExpressionTextureSampleParameter2D'Arrow_Forward_Mat.MaterialExpressionTextureSampleParameter2D_1'
+}
+CachedExpressionData = 
+BlendMode = BLEND_Masked (1)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[1] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'Arrow_Forward_NormAlph_Dup'
+        Name = Markings_Arrow_Texture
+        Group = None
+    }
+}
+CollectedScalarParameters[0] = {}
+CollectedVectorParameters[2] =
+{
+    CollectedVectorParameters[0] =
+    {
+        Value = { R=2, G=1, B=0, A=1 }
+        Name = Markings_Arrow_Scale
+        Group = None
+    }
+    CollectedVectorParameters[1] =
+    {
+        Value = { R=1, G=1, B=0, A=1 }
+        Name = Markings_Pattern_Scale
+        Group = None
+    }
+}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

@@ -145,6 +145,38 @@ bool AAPBWorldGameMode::LoginPlayer(APlayerController* PC,
 	Svc->Service->RegisterAccount(U, P);
 	bool ok = Svc->Service->LoginAccount(U, P);
 	if (!ok) { OutError = TEXT("login_failed"); return false; }
+
+	// M14: bind the connection's social identity server-authoritatively. Direct world
+	// clients (no district relay) must still be admitted + online for clan invites,
+	// friend presence, and the name-keyed PushSocialStateToPlayerStates to reach them.
+	// Identity = the domain character when one exists, else the password-verified account.
+	FString Identity = User;
+	FString FactionName = TEXT("Criminal");
+	if (Svc->Service->character.has_value())
+	{
+		Identity = UTF8_TO_TCHAR(Svc->Service->character->name.c_str());
+		FactionName = (Svc->Service->character->faction == apb::Faction::Enforcer)
+			? TEXT("Enforcer") : TEXT("Criminal");
+	}
+	if (PC && PC->PlayerState)
+	{
+		PC->PlayerState->SetPlayerName(Identity);
+	}
+	if (!FindAdmittedPlayer(Identity))
+	{
+		FAPBAdmittedPlayer Entry;
+		Entry.Account           = User;
+		Entry.Character         = Identity;
+		Entry.Faction           = FactionName;
+		Entry.Jti               = TEXT("direct");
+		Entry.DistrictNumericId = 0;
+		Entry.bAdmitted         = true;
+		AdmittedRoster.Add(Identity, MoveTemp(Entry));
+	}
+	SocialAuthority.friends_svc.SetOnline(TCHAR_TO_UTF8(*Identity), true);
+	UE_LOG(LogTemp, Log, TEXT("SOCIAL_DIRECT_BIND character=%s account=%s faction=%s"),
+		*Identity, *User, *FactionName);
+	PushSocialStateToPlayerStates();
 	return true;
 }
 
@@ -863,6 +895,9 @@ void AAPBWorldGameMode::PushSocialStateToPlayerStates()
 
 		// Friend state
 		PS->OnlineFriendCount = static_cast<int32>(SocialAuthority.friends_svc.OnlineFriendsOf(CharName).size());
+
+		// Mail state — unread count is the client-visible inbox badge.
+		PS->MailUnreadCount = SocialAuthority.mail.UnreadCount(CharName);
 
 		PS->OnRep_Social();
 		PS->ForceNetUpdate();

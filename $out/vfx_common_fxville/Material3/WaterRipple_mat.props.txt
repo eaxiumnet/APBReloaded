@@ -1,0 +1,27 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[2] =
+{
+    ReferencedTextures[0] = Texture2D'Water.Textures.WaterRipple_txt'
+    ReferencedTextures[1] = TextureCube3'Water.Textures.Liquid_cubemap'
+}
+Expressions[21] =
+{
+    Expressions[0] = MaterialExpressionTextureSample'Water.Materials.WaterRipple_mat.MaterialExpressionTextureSample_3'
+    Expressions[1] = MaterialExpressionTextureSample'Water.Materials.WaterRipple_mat.MaterialExpressionTextureSample_4'
+}
+CachedExpressionData = 
+BlendMode = BLEND_Translucent (2)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[0] = {}
+CollectedScalarParameters[0] = {}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

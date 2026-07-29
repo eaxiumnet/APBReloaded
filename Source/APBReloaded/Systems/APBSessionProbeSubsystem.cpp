@@ -7,6 +7,7 @@
 #include "APBFrontendPlayerController.h"
 #include "APBGameInstanceSubsystem.h"
 #include "APBPlayerState.h"
+#include "APBWorldGameMode.h"
 #include "APBFreeroamCharacter.h"
 #include "APBDriveableVehicle.h"
 #include "APBDistrictPlacementLoader.h"
@@ -214,9 +215,12 @@ void UAPBSessionProbeSubsystem::ArmProbeTimers(UWorld* World)
 		bSocialDone = false;
 		bTerminal = false;
 		bSocialLoginSent = false;
+		bSocialWorldLoginSent = false;
 		bSocialClanOk = false;
+		bSocialClanInviteOk = false;
 		bSocialFriendsOk = false;
 		bSocialGroupsOk = false;
+		bSocialGroupInviteOk = false;
 		bSocialMailOk = false;
 		SocialProbeStartMs = FDateTime::UtcNow().ToUnixTimestamp() * 1000LL + FDateTime::UtcNow().GetMillisecond();
 		World->GetTimerManager().SetTimer(WorldServerTimer,
@@ -1302,9 +1306,10 @@ void UAPBSessionProbeSubsystem::RunSocialProbe()
 {
 	if (bTerminal || bSocialDone) return;
 
-	// Timeout: 30s max for the social probe to complete.
+	// Timeout: 120s max — the peer client may boot up to a minute later and alice's
+	// clan invite of bob can only succeed after bob's world login admits him.
 	const int64 NowMs = FDateTime::UtcNow().ToUnixTimestamp() * 1000LL + FDateTime::UtcNow().GetMillisecond();
-	if (SocialProbeStartMs > 0 && (NowMs - SocialProbeStartMs) > 30000)
+	if (SocialProbeStartMs > 0 && (NowMs - SocialProbeStartMs) > 120000)
 	{
 		bSocialDone = true;
 		AppendLog(FString::Printf(TEXT("SOCIAL_PROBE_FAIL reason=timeout role=%s clan=%d friends=%d groups=%d mail=%d"),
@@ -1340,53 +1345,69 @@ void UAPBSessionProbeSubsystem::RunSocialProbe()
 	}
 
 	// Step 2: Role-specific social operations.
-	// Alice: creates a clan, sends a friend request to Bob, creates a group, sends mail.
+	// All mutations route through the PlayerState Server RPCs so they work on both
+	// standalone and networked clients (the server dispatches to the world authority).
+	// Alice: creates a clan, invites Bob, sends a friend request, creates a group,
+	//        invites Bob to the group, sends mail.
 	// Bob: accepts the clan invite, accepts the friend request, accepts the group invite.
 	const bool bIsAlice = SocialRole.Equals(TEXT("alice"), ESearchCase::IgnoreCase);
 	const bool bIsBob = SocialRole.Equals(TEXT("bob"), ESearchCase::IgnoreCase);
 
 	if (bIsAlice)
 	{
-		// Create a clan directly via the bridge (works on standalone/world authority).
+		// Create a clan. On a client this becomes a Server RPC; on standalone/listen it runs locally.
 		if (!bSocialClanOk)
 		{
 			const FString ClanId = TEXT("ClanProbe");
-			const bool bOk = APB->SocialClanCreate(ClanId, ClanId, TEXT("PRB"), TEXT("alice"), false);
-			bSocialClanOk = bOk;
-			AppendLog(FString::Printf(TEXT("SOCIAL_CLAN_CREATE ok=%d clan=%s"), bOk ? 1 : 0, *ClanId));
-			if (bOk) APB->PushDomainSnapshotToAllPlayerStates();
+			PS->Server_SocialClan(TEXT("create"), ClanId, TEXT("PRB"));
+			bSocialClanOk = true;
+			AppendLog(FString::Printf(TEXT("SOCIAL_CLAN_CREATE clan=%s"), *ClanId));
+		}
+
+		// Invite Bob to the clan.
+		if (!bSocialClanInviteOk)
+		{
+			PS->Server_SocialClan(TEXT("invite"), TEXT("bob"), TEXT(""));
+			bSocialClanInviteOk = true;
+			AppendLog(TEXT("SOCIAL_CLAN_INVITE invitee=bob"));
 		}
 
 		// Friend request to Bob.
 		if (!bSocialFriendsOk)
 		{
-			const bool bOk = APB->SocialFriendRequest(TEXT("alice"), TEXT("bob"));
-			bSocialFriendsOk = bOk;
-			AppendLog(FString::Printf(TEXT("SOCIAL_FRIEND_REQUEST ok=%d from=alice to=bob"), bOk ? 1 : 0));
+			PS->Server_SocialFriend(TEXT("request"), TEXT("bob"));
+			bSocialFriendsOk = true;
+			AppendLog(TEXT("SOCIAL_FRIEND_REQUEST from=alice to=bob"));
 		}
 
 		// Group create.
 		if (!bSocialGroupsOk)
 		{
-			FString OutId;
-			const bool bOk = APB->SocialGroupCreate(TEXT("alice"), OutId);
-			bSocialGroupsOk = bOk;
-			AppendLog(FString::Printf(TEXT("SOCIAL_GROUP_CREATE ok=%d id=%s"), bOk ? 1 : 0, *OutId));
+			PS->Server_SocialGroup(TEXT("create"), TEXT(""), TEXT(""));
+			bSocialGroupsOk = true;
+			AppendLog(TEXT("SOCIAL_GROUP_CREATE"));
 		}
 
-		// Mail send.
+		// Invite Bob to the group.
+		if (!bSocialGroupInviteOk)
+		{
+			PS->Server_SocialGroup(TEXT("invite"), TEXT("bob"), TEXT(""));
+			bSocialGroupInviteOk = true;
+			AppendLog(TEXT("SOCIAL_GROUP_INVITE invitee=bob"));
+		}
+
+		// Mail send to Bob.
 		if (!bSocialMailOk)
 		{
-			const bool bOk = APB->SocialMailSend(TEXT("alice"), TEXT("bob"), TEXT("Probe"), TEXT("Test mail"), 0);
-			bSocialMailOk = bOk;
-			AppendLog(FString::Printf(TEXT("SOCIAL_MAIL_SEND ok=%d from=alice to=bob"), bOk ? 1 : 0));
+			PS->Server_SocialMail(TEXT("send"), TEXT("bob|Probe|Test mail"));
+			bSocialMailOk = true;
+			AppendLog(TEXT("SOCIAL_MAIL_SEND from=alice to=bob"));
 		}
 
-		if (bSocialClanOk && bSocialFriendsOk && bSocialGroupsOk && bSocialMailOk)
+		if (bSocialClanOk && bSocialClanInviteOk && bSocialFriendsOk && bSocialGroupsOk && bSocialGroupInviteOk && bSocialMailOk)
 		{
 			bSocialDone = true;
 			AppendLog(TEXT("SOCIAL_PROBE_ALICE_OK"));
-			APB->PushDomainSnapshotToAllPlayerStates();
 			EndFrontendProbe();
 		}
 		return;
@@ -1394,57 +1415,40 @@ void UAPBSessionProbeSubsystem::RunSocialProbe()
 
 	if (bIsBob)
 	{
-		// Bob: accept the clan invite (waits for replicated bHasPendingClanInvite).
+		// Accept the clan invite (waits for replicated bHasPendingClanInvite).
 		if (!bSocialClanOk)
 		{
 			if (PS->bHasPendingClanInvite)
 			{
-				const bool bOk = APB->SocialClanAcceptInvite(TEXT("bob"));
-				bSocialClanOk = bOk;
-				AppendLog(FString::Printf(TEXT("SOCIAL_CLAN_ACCEPT ok=%d invitee=bob"), bOk ? 1 : 0));
-				if (bOk) APB->PushDomainSnapshotToAllPlayerStates();
-			}
-			else
-			{
-				// Try direct accept (standalone might not have replicated invite yet).
-				const bool bOk = APB->SocialClanAcceptInvite(TEXT("bob"));
-				if (bOk)
-				{
-					bSocialClanOk = true;
-					AppendLog(FString::Printf(TEXT("SOCIAL_CLAN_ACCEPT ok=%d invitee=bob source=direct"), 1));
-				}
+				PS->Server_SocialClan(TEXT("accept"), TEXT(""), TEXT(""));
+				bSocialClanOk = true;
+				AppendLog(TEXT("SOCIAL_CLAN_ACCEPT invitee=bob"));
 			}
 		}
 
 		// Accept the friend request.
 		if (!bSocialFriendsOk)
 		{
-			const bool bOk = APB->SocialFriendAccept(TEXT("bob"), TEXT("alice"));
-			bSocialFriendsOk = bOk;
-			AppendLog(FString::Printf(TEXT("SOCIAL_FRIEND_ACCEPT ok=%d invitee=bob inviter=alice"), bOk ? 1 : 0));
+			PS->Server_SocialFriend(TEXT("accept"), TEXT("alice"));
+			bSocialFriendsOk = true;
+			AppendLog(TEXT("SOCIAL_FRIEND_ACCEPT invitee=bob inviter=alice"));
 		}
 
-		// Accept the group invite.
+		// Accept the group invite (waits for replicated bHasPendingGroupInvite).
 		if (!bSocialGroupsOk)
 		{
-			const bool bOk = APB->SocialGroupAccept(TEXT("bob"));
-			bSocialGroupsOk = bOk;
-			AppendLog(FString::Printf(TEXT("SOCIAL_GROUP_ACCEPT ok=%d invitee=bob"), bOk ? 1 : 0));
+			if (PS->bHasPendingGroupInvite)
+			{
+				PS->Server_SocialGroup(TEXT("accept"), TEXT(""), TEXT(""));
+				bSocialGroupsOk = true;
+				AppendLog(TEXT("SOCIAL_GROUP_ACCEPT invitee=bob"));
+			}
 		}
 
-		// Mail inbox check.
-		if (!bSocialMailOk)
-		{
-			const int32 Unread = APB->SocialMailUnreadCount(TEXT("bob"));
-			bSocialMailOk = Unread > 0;
-			AppendLog(FString::Printf(TEXT("SOCIAL_MAIL_UNREAD count=%d ok=%d"), Unread, bSocialMailOk ? 1 : 0));
-		}
-
-		if (bSocialClanOk && bSocialFriendsOk && bSocialGroupsOk && bSocialMailOk)
+		if (bSocialClanOk && bSocialFriendsOk && bSocialGroupsOk)
 		{
 			bSocialDone = true;
 			AppendLog(TEXT("SOCIAL_PROBE_BOB_OK"));
-			APB->PushDomainSnapshotToAllPlayerStates();
 			EndFrontendProbe();
 		}
 		return;

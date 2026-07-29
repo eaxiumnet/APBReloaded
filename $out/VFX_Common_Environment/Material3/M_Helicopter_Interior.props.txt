@@ -1,0 +1,29 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[3] =
+{
+    ReferencedTextures[0] = Texture2D'Actor_EnvironmentAmbient.ChopperGEAR_HK_Police_NORM'
+    ReferencedTextures[1] = Texture2D'Actor_EnvironmentAmbient.ChopperGEAR_HK_Police_DIF'
+    ReferencedTextures[2] = Texture2D'Actor_EnvironmentAmbient.ChopperGEAR_HK_Police_SPEC'
+}
+Expressions[5] =
+{
+    Expressions[0] = MaterialExpressionTextureSample'Actor_EnvironmentAmbient.M_Helicopter_Interior.MaterialExpressionTextureSample_0'
+    Expressions[1] = MaterialExpressionTextureSample'Actor_EnvironmentAmbient.M_Helicopter_Interior.MaterialExpressionTextureSample_4'
+    Expressions[2] = MaterialExpressionTextureSample'Actor_EnvironmentAmbient.M_Helicopter_Interior.MaterialExpressionTextureSample_5'
+}
+CachedExpressionData = 
+BlendMode = BLEND_Opaque (0)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[0] = {}
+CollectedScalarParameters[0] = {}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

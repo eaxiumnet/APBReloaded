@@ -1,0 +1,50 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[1] = { Texture2D'Arrow_Forward_NormAlph_Dup' }
+Expressions[13] =
+{
+    Expressions[2] = MaterialExpressionTextureSampleParameter2D'MpTest.MaterialExpressionTextureSampleParameter2D_0'
+    Expressions[5] = MaterialExpressionVectorParameter'MpTest.MaterialExpressionVectorParameter_3'
+    Expressions[8] = MaterialExpressionVectorParameter'MpTest.MaterialExpressionVectorParameter_0'
+    Expressions[12] = MaterialExpressionScalarParameter'MpTest.MaterialExpressionScalarParameter_0'
+}
+CachedExpressionData = 
+BlendMode = BLEND_Modulate (4)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[1] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'Arrow_Forward_NormAlph_Dup'
+        Name = Markings_Arrow_Texture
+        Group = None
+    }
+}
+CollectedScalarParameters[1] =
+{
+    CollectedScalarParameters[0] = { Value=0.5, Name=Dirt_Strength, Group=None }
+}
+CollectedVectorParameters[2] =
+{
+    CollectedVectorParameters[0] =
+    {
+        Value = { R=2, G=1, B=0, A=1 }
+        Name = Markings_Arrow_Scale
+        Group = None
+    }
+    CollectedVectorParameters[1] =
+    {
+        Value = { R=1, G=1, B=0.875138, A=1 }
+        Name = Colour_Tint
+        Group = None
+    }
+}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}
