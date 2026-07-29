@@ -224,6 +224,34 @@ void TestTicketPayloadEscaped() {
 }
 #endif // APB_TICKET_AVAILABLE
 
+void TestB64UrlRejectsInvalid() {
+    bool caught = false;
+    try {
+        apb::TicketService::Global().VerifyTicket("aW52YWxpZA=$.test", *(new apb::TicketClaims()));
+    } catch (const std::invalid_argument&) {
+        caught = true;
+    }
+    CHECK(caught, "TestB64UrlRejectsInvalid: b64url_decode throws invalid_argument on bad character");
+}
+
+void TestHexDecodeRejectsMalformed() {
+    bool caught_odd = false;
+    try {
+        apb::hex_decode("abc");
+    } catch (const std::invalid_argument&) {
+        caught_odd = true;
+    }
+    CHECK(caught_odd, "TestHexDecodeRejectsMalformed: hex_decode throws invalid_argument on odd length");
+    
+    bool caught_bad_char = false;
+    try {
+        apb::hex_decode("abxy");
+    } catch (const std::invalid_argument&) {
+        caught_bad_char = true;
+    }
+    CHECK(caught_bad_char, "TestHexDecodeRejectsMalformed: hex_decode throws invalid_argument on bad character");
+}
+
 void TestSecretMaterialRejected() {
     CHECK(!is_valid_secret_material(""), "T6: empty secret material rejected");
     CHECK(!is_valid_secret_material("0123456789abcdef"), "T6: too-short secret material rejected");
@@ -251,6 +279,8 @@ int main() {
     TestTicketReplayBlocked();
     TestJsonIntOverflowContained();
     TestTicketPayloadEscaped();
+    TestB64UrlRejectsInvalid();
+    TestHexDecodeRejectsMalformed();
 #else
     std::cout << "NOTE: APB_TICKET_AVAILABLE not defined -- tests 4-5 skipped (C4 implements)\n";
 #endif

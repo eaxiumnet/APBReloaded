@@ -150,10 +150,12 @@ inline bool is_valid_secret_material(const std::string& material){
 }
 
 inline std::vector<uint8_t> hex_decode(const std::string& s){
+    if (s.size() % 2 != 0) throw std::invalid_argument("odd length hex");
     auto v=[](char c)->uint8_t{
         if(c>='0'&&c<='9') return uint8_t(c-'0');
         if(c>='a'&&c<='f') return uint8_t(c-'a'+10);
-        return uint8_t(c-'A'+10);
+        if(c>='A'&&c<='F') return uint8_t(c-'A'+10);
+        throw std::invalid_argument("invalid hex character");
     };
     std::vector<uint8_t> out;out.reserve(s.size()/2);
     for(size_t i=0;i+1<s.size();i+=2) out.push_back((v(s[i])<<4)|v(s[i+1]));

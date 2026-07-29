@@ -36,20 +36,61 @@ std::string TicketService::b64url_decode(const std::string& s) {
     std::string out;
     unsigned buf = 0; int bits = 0;
     for (char c : s) {
-        int v = val(c); if (v < 0) continue;
-        buf = (buf << 6) | unsigned(v); bits += 6;
-        if (bits >= 8) { bits -= 8; out += char((buf >> bits) & 0xff); }
+        if (c == '=') continue; // padding
+        int v = val(c);
+        if (v == -1) throw std::invalid_argument("invalid b64url character");
+        buf = (buf << 6) | v;
+        bits += 6;
+        if (bits >= 8) {
+            bits -= 8;
+            out.push_back(char(buf >> bits));
+        }
+    }
+    return out;
+}
+
+static std::string escape_json(const std::string& s) {
+    std::string out;
+    out.reserve(s.size() + 2);
+    for (char c : s) {
+        if (c == '"') out += "\\\"";
+        else if (c == '\\') out += "\\\\";
+        else if (c == '\n') out += "\\n";
+        else if (c == '\r') out += "\\r";
+        else if (c == '\t') out += "\\t";
+        else out += c;
+    }
+    return out;
+}
+
+static std::string unescape_json(const std::string& s) {
+    std::string out;
+    out.reserve(s.size());
+    bool escape = false;
+    for (char c : s) {
+        if (escape) {
+            if (c == '"') out += '"';
+            else if (c == '\\') out += '\\';
+            else if (c == 'n') out += '\n';
+            else if (c == 'r') out += '\r';
+            else if (c == 't') out += '\t';
+            else out += c;
+            escape = false;
+        } else {
+            if (c == '\\') escape = true;
+            else out += c;
+        }
     }
     return out;
 }
 
 std::string TicketService::build_payload(const TicketClaims& c) {
     std::ostringstream o;
-    o << "{\"account\":\"" << c.account << "\""
-      << ",\"character\":\"" << c.character << "\""
-      << ",\"faction\":\"" << c.faction << "\""
-      << ",\"district\":\"" << c.district << "\""
-      << ",\"jti\":\"" << c.jti << "\""
+    o << "{\"account\":\"" << escape_json(c.account) << "\""
+      << ",\"character\":\"" << escape_json(c.character) << "\""
+      << ",\"faction\":\"" << escape_json(c.faction) << "\""
+      << ",\"district\":\"" << escape_json(c.district) << "\""
+      << ",\"jti\":\"" << escape_json(c.jti) << "\""
       << ",\"issued\":" << c.issued_utc
       << ",\"expiry\":" << c.expiry_secs
       << "}";
@@ -61,8 +102,18 @@ static std::string json_str(const std::string& json, const std::string& key) {
     auto pos = json.find(needle);
     if (pos == std::string::npos) return {};
     pos += needle.size();
-    auto end = json.find('"', pos);
-    return (end == std::string::npos) ? std::string{} : json.substr(pos, end - pos);
+    auto end = pos;
+    while (end < json.size()) {
+        if (json[end] == '\\') {
+            end += 2;
+        } else if (json[end] == '"') {
+            break;
+        } else {
+            end++;
+        }
+    }
+    if (end >= json.size() || json[end] != '"') return {};
+    return unescape_json(json.substr(pos, end - pos));
 }
 
 static std::optional<int64_t> json_int(const std::string& json, const std::string& key) {
@@ -70,11 +121,18 @@ static std::optional<int64_t> json_int(const std::string& json, const std::strin
     auto pos = json.find(needle);
     if (pos == std::string::npos) return std::nullopt;
     pos += needle.size();
+    
+    // Skip any whitespace after colon
+    while (pos < json.size() && (json[pos] == ' ' || json[pos] == '\t')) {
+        pos++;
+    }
+    
+    if (pos >= json.size()) return std::nullopt;
+    
     try {
-        size_t parsed = 0;
-        const std::string value = json.substr(pos);
-        const int64_t result = std::stoll(value, &parsed);
-        if (parsed == 0) return std::nullopt;
+        size_t parsed_len = 0;
+        int64_t result = std::stoll(json.substr(pos), &parsed_len, 10);
+        if (parsed_len == 0) return std::nullopt;
         return result;
     } catch (const std::invalid_argument&) {
         return std::nullopt;
