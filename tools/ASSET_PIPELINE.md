@@ -80,3 +80,33 @@ Notes:
 - Net: Port 7777, Peer 7778, tick rate 30 (social 20).
 - Stats/lore: prefer `tools/apbdb/sync_apbdb.py` + UPK extract over process dumps.
 
+## Additional tools & prebuilt assets available (2026-07-22)
+
+Five archives were dropped at repo root and staged to `tools\_incoming\`. Verified capabilities below.
+
+### Extraction tools
+| Item | Staged path | Status |
+|------|-------------|--------|
+| **umodel_apb** (UE Viewer fork, built 2025-11-01) | `tools\_incoming\umodel_apb\umodel_64.exe` | **Redundant.** Byte-identical export to the repo's `tools\UEViewer\umodel_64.exe` on both retail **564/33** and 2011 **547/31** packages. The repo build (2026-07-16) is newer and already covers both. Keep only as a backup binary. |
+| **NinjaRipper 1.7.1** (+ importers) | `tools\_incoming\ninjaripper\` | **Available — fallback only.** Live D3D6/7/8/9/11 draw-call ripper. x64/x86 `NinjaRipper.exe` + injector DLLs + Blender/3ds Max/Noesis `.rip` importers. |
+
+**When to reach for NinjaRipper (not umodel):**
+- Packages that crash umodel (rare, pre-2012 variants).
+- **Runtime-composited character-customization textures** (symbols/decals) — these exist only on-screen, never as files on disk. This is its unique value.
+- `.rip` format: sig `0xDEADBEEF` v4; per-draw-call fragment, view-space, **no skeleton hierarchy**, no material graph.
+- Cost: heavy manual reassembly; **BattlEye ban risk** if ripping the live client (use offline/LAN).
+- NOT for audio — APB uses Wwise `.bnk/.wem`; use existing `tools\WwiseExtract`.
+
+### Prebuilt Blender assets (community reconstructions — rip+cleanup+assembly already done)
+| Asset | Location | Blender ver | Contents |
+|-------|----------|-------------|----------|
+| **Eevee material library** | `tools\_incoming\eevee\APB_Eevee_Materials_Whiskey_V1.1.1.blend` (extracted) | 2.80 | APB shader graphs recreated for Eevee — reference for authoring matching UE5.8 materials |
+| **Social District scene** | `APB_Scene_Social_District.zip` (root, **not extracted**, 472 MB blend) | 3.x/4.x | Full assembled Social District level geometry |
+| **Vehicles pack** | `APB_Data_Vehicles.rar` (root, **not extracted**, 440 MB blend) | 3.x/4.x | All APB vehicles assembled |
+
+**Blocker:** Blender is **not installed** on this machine (checked Program Files/x86/D:). The two large scene/vehicle blends (~1.9 GB uncompressed) are inert until a **Blender 4.x** install exists; left archived to save disk. Once installed:
+1. Open blend → export **glTF/FBX** → import to UE5.8 under `/Game/Imported/...`.
+2. This skips raw rip+reassembly for those assets — the main acceleration these uploads provide.
+
+> **Private use:** these community blends and all extracts stay private / offline (same rule as §Private use above).
+

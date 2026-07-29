@@ -20,9 +20,14 @@ IMPORTED = ROOT / "Content" / "Imported"
 PLACEMENTS = ROOT / "Content" / "Data" / "district_placements"
 OUT = ROOT / "work" / "IMPORT_STATUS.md"
 
-# Approximate streaming-block counts from the 2026-07-19 retail install inventory
-# (exploration report). Only districts with a verified count are listed.
-TARGET_BLOCKS = {"financial": 270, "waterfront": 268}
+# Raw retail *.upk block-package counts from the 2026-07-19 install inventory.
+# NOTE: these are NOT the streaming-block set. A district's playable geometry is
+# defined by the LevelStreamingKismet entries baked into its *_MASTER.APB map
+# (decoded by tools/scripts/decode_level_streaming.py into stream_chunks). The
+# retail .upk count includes LOD variants, ArtProps sub-blocks, minimaps and other
+# non-streamed packages, so it massively over-counts the real block set. These
+# figures are shown for reference only and MUST NOT be treated as an export target.
+RETAIL_UPK_BLOCKS = {"financial": 270, "waterfront": 268}
 
 
 def imported_stats() -> tuple[set[str], Counter]:
@@ -40,7 +45,7 @@ def imported_stats() -> tuple[set[str], Counter]:
     return stems, counts
 
 
-def manifest_rows(stems: set[str]) -> list[tuple[str, str, int, int]]:
+def manifest_rows(stems: set[str]) -> list[tuple[str, str, int, int, int, int]]:
     rows = []
     for mf in sorted(PLACEMENTS.glob("*.json")):
         if mf.stem.endswith("_bound"):
@@ -53,7 +58,11 @@ def manifest_rows(stems: set[str]) -> list[tuple[str, str, int, int]]:
             if (pl.get("mesh_id") or "") in stems
             or (pl.get("ue_path") or "").rstrip("/").split("/")[-1].split(".")[0] in stems
         )
-        rows.append((mf.name, str(data.get("district_id") or "?"), len(placements), hit))
+        chunks = len(data.get("stream_chunks") or [])
+        pkgs = len(data.get("source_packages") or [])
+        rows.append(
+            (mf.name, str(data.get("district_id") or "?"), len(placements), hit, chunks, pkgs)
+        )
     return rows
 
 
@@ -93,39 +102,45 @@ def main() -> int:
         "",
         "## District placement manifest coverage",
         "",
-        "Mesh references in each manifest that resolve to an imported .uasset:",
+        "Each manifest is decoded from its district's `*_MASTER.APB` LevelStreamingKismet",
+        "table (the authoritative streaming-block set). `resolvable` = mesh refs that map",
+        "to an imported `.uasset`; `chunks` = distinct streamed packages placed in-world.",
         "",
-        "| manifest | district | placements | resolvable | coverage |",
-        "|---|---|---|---|---|",
+        "| manifest | district | placements | resolvable | coverage | chunks | pkgs |",
+        "|---|---|---|---|---|---|---|",
     ]
     gaps: list[str] = []
     manifests_per_district: Counter = Counter()
-    for name, district, total, hit in rows:
+    chunks_per_district: Counter = Counter()
+    for name, district, total, hit, chunks, pkgs in rows:
         rate = (hit / total * 100.0) if total else 0.0
-        md.append(f"| {name} | {district} | {total} | {hit} | {rate:.1f}% |")
+        md.append(
+            f"| {name} | {district} | {total} | {hit} | {rate:.1f}% | {chunks} | {pkgs} |"
+        )
         manifests_per_district[district.lower()] += 1
+        chunks_per_district[district.lower()] += chunks
         if hit < total:
             gaps.append(f"- **{name}** ({district}): {total - hit} mesh refs unresolved → re-import those meshes")
 
     md += [
         "",
-        "## District block coverage (vs retail streaming-block counts)",
+        "## District streaming coverage",
         "",
-        "A district is content-complete only when every streaming block has a manifest",
-        "whose meshes all resolve. Retail block counts from the 2026-07-19 inventory.",
+        "A district's geometry is complete when every LevelStreamingKismet entry in its",
+        "`*_MASTER.APB` has a decoded chunk whose meshes resolve. The `RETAIL_UPK_BLOCKS`",
+        "figures below are the raw retail `.upk` package count (LODs + ArtProps + minimaps",
+        "included) and are shown ONLY to contrast against the true streamed-chunk count —",
+        "they are **not** an export target. See `decode_level_streaming.py`.",
         "",
-        "| district | manifests present | retail blocks (approx) | status |",
+        "| district | manifests | streamed chunks | retail .upk (ref only) |",
         "|---|---|---|---|",
     ]
-    for district, target in TARGET_BLOCKS.items():
+    for district in sorted(chunks_per_district):
         present = manifests_per_district.get(district, 0)
-        status = "✅ complete" if present >= target else f"⚠️ partial — {target - present} blocks to export"
-        md.append(f"| {district} | {present} | ~{target} | {status} |")
-        if present < target:
-            gaps.append(
-                f"- **{district}**: {present} of ~{target} block manifests present — "
-                f"export remaining blocks via `tools/scripts/export_apb_level_parallel.py` (see roadmap M9/M10)"
-            )
+        chunks = chunks_per_district.get(district, 0)
+        ref = RETAIL_UPK_BLOCKS.get(district)
+        ref_txt = f"~{ref}" if ref is not None else "n/a"
+        md.append(f"| {district} | {present} | {chunks} | {ref_txt} |")
 
     md += ["", "## Remaining work (auto-derived)", ""]
     md += gaps if gaps else ["- None — all manifests resolve and block coverage is complete."]

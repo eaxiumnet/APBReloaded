@@ -297,9 +297,12 @@ def decode_prop(ptype: str, sname: str | None, body: bytes,
     if ptype in _PRIMS:
         return struct.unpack_from(_PRIMS[ptype], body)[0] if len(body) >= 4 else None
     if ptype == "NameProperty":
+        # UE3 FName is (NameIndex, Number) where Number>0 encodes "<base>_<Number-1>".
+        # Dropping it aliases distinct exports onto one name (F13).
         if len(body) >= 8:
-            i = struct.unpack_from("<i", body)[0]
-            return names[i] if 0 <= i < len(names) else f"?{i}"
+            i, num = struct.unpack_from("<ii", body)
+            base = names[i] if 0 <= i < len(names) else f"?{i}"
+            return f"{base}_{num - 1}" if num > 0 else base
         return None
     if ptype == "StrProperty":
         if len(body) < 4:
@@ -363,6 +366,45 @@ def load(stem: str, maps_dir: Path):
     return data, parse_package(data), exports(stem, maps_dir)
 
 
+def export_table(data: bytes) -> list[dict]:
+    """Parse FObjectExport, which parse_package discards (it drops count/offset at :110).
+
+    Layout is UnPackage3.cpp Serialize3 for ArVer 564 / LicenseeVer 33, verified against
+    `umodel -list`: MATCH=3400 MISMATCH=0 on Block09. No ComponentMap (gated ArVer<543).
+    `outer` is what identifies the actor that owns a vertex-lit component, and therefore
+    what positions the visible geometry (F14).
+    """
+    r = R(data)
+    if r.u32() != UE_TAG:
+        raise ValueError("bad package tag")
+    r.p = 8
+    r.i32()
+    n = r.i32()
+    r.raw(n if n > 0 else (-n) * 2)
+    r.u32()
+    r.i32(), r.i32()
+    exp_count, exp_off = r.i32(), r.i32()
+
+    r.p = exp_off
+    out: list[dict] = []
+    for _ in range(exp_count):
+        cls_idx, super_idx = r.i32(), r.i32()
+        outer = r.i32()
+        name_i, name_num = r.i32(), r.i32()
+        archetype = r.i32()
+        r.u32(), r.u32()
+        size, offset, flags = r.i32(), r.i32(), r.i32()
+        nc = r.i32()
+        r.raw(nc * 4)
+        r.raw(16)
+        r.i32()
+        out.append({"cls": cls_idx, "super": super_idx, "outer": outer,
+                    "name_index": name_i, "name_number": name_num,
+                    "archetype": archetype, "size": size, "off": offset,
+                    "export_flags": flags})
+    return out
+
+
 def prop_cache(data: bytes, pkg: Pkg, rows: list[dict]) -> dict[int, dict]:
     out: dict[int, dict] = {}
     for row in rows:
@@ -395,6 +437,31 @@ def deref(ref, by_idx: dict[int, dict], expect: str | None = None) -> dict | Non
 
 _MESH_HOSTS = ("StaticMeshComponent", "cStreamedStaticMeshComponent",
                "InstancedStaticMeshComponent", "cAPBStaticMeshComponent")
+
+# Actor classes in sibling packages (Props, ArtProps, Design, TILE) that carry
+# directly-visible mesh geometry. Unlike cStreamedBuildingActor (which hides its
+# direct component and renders via m_VertexLitComponent — F14), these classes render
+# the StaticMeshComponent directly: no HiddenGame=True, no vertex-lit indirection.
+_PROP_ACTOR_CLASSES = (
+    "cStreamedLightingStaticMeshActor",  # street furniture, props (73+ per Props pkg)
+    "StaticMeshActor",                    # standard UE3 placed meshes (39+ per Props pkg)
+    "cStreamedRoadActor",                 # road tiles (7 per TILE_ROADS pkg)
+    "cProp",                              # APB prop actors (289 in Props_Block09)
+)
+
+
+def _resolve_mesh_ref(mref, pkg, by_idx, stem):
+    """Resolve a StaticMesh ObjectProperty ref to a package-qualified path.
+
+    Negative refs are imports (resolved via import_path); positive refs are local
+    exports (resolved by name). Returns (mesh_ref, mesh_path, mesh_class)."""
+    if not isinstance(mref, int):
+        return None, None, None
+    mpath = import_path(pkg, mref)
+    if mpath is None and mref > 0:
+        local = deref(mref, by_idx)
+        mpath = f"{stem}.{local['name']}" if local else None
+    return mref, mpath, import_class(pkg, mref) if mref < 0 else None
 
 
 def mesh_component_refs(props: dict) -> list[tuple[str, int]]:
@@ -499,6 +566,221 @@ def placement_records(stem: str, maps_dir: Path) -> list[dict]:
                 rec["reason"] = "collision_only"
             out.append(rec)
 
+    return out
+
+
+def _emit_renderables(rows, cache, sha, render, named_by, renders_via, own_mesh):
+    out: list[dict] = []
+    for row in rows:
+        if row["cls"] != "cStreamedBuildingActor":
+            continue
+        idx = row["idx"]
+        ap = cache.get(idx, {})
+        loc = ap.get("Location") if isinstance(ap.get("Location"), list) else None
+        arot = ap.get("Rotation")
+        rot_present = isinstance(arot, list) and len(arot) == 3
+        rec = {
+            "source_id": f"{sha}:{idx}:vertexlit",
+            "actor": row["name"],
+            "location": loc,
+            "rotation": [uru_to_deg(v) for v in arot] if rot_present else [0.0, 0.0, 0.0],
+            "rotation_present": rot_present,
+            "scale": [1.0, 1.0, 1.0],
+            "scale_present": False,
+            "mesh_ref": None,
+            "mesh_path": None,
+        }
+        vis = render.get(idx)
+        if vis is not None:
+            rec.update(vis)
+            rec["host"] = row["name"]
+            rec["named_by"] = named_by.get(idx)
+            rec["visible"] = not vis["hidden"]
+            rec["transform_source"] = "host_actor"
+            if rec["mesh_path"] is None:
+                rec["reason"] = "mesh_unresolved"
+            elif loc is None:
+                rec["reason"] = "host_location_missing"
+            elif vis["hidden"]:
+                rec["reason"] = "vertexlit_component_hidden"
+        elif idx in renders_via:
+            rec["reason"] = "renders_via_host"
+            rec["host"] = renders_via[idx]
+        elif idx in own_mesh:
+            rec["reason"] = "no_vertexlit_reference"
+        else:
+            rec["reason"] = "no_geometry_in_package_family"
+        out.append(rec)
+    return out
+
+
+def renderable_placements(stem: str, maps_dir: Path) -> list[dict]:
+    """One row per cStreamedBuildingActor, keyed on what retail actually renders.
+
+    retail sets HiddenGame=True on every direct StaticMeshComponent (137/137 on Block09),
+    so that component is never the visible geometry. The rendered mesh is the
+    m_VertexLitComponent target: it carries a StaticMesh, has no Hidden property, stores no
+    transform of its own, and is outered to a DIFFERENT actor whose Location places it
+    (delta 0.000 over 57/57). Rows are therefore keyed on the HOST actor; the actor that
+    merely names the component is emitted with a reason so neither is double-counted, and
+    actors with no geometry anywhere are reported rather than back-filled (F14, F15).
+    """
+    data, pkg, rows = load(stem, maps_dir)
+    by_idx = {r["idx"]: r for r in rows}
+    by_name = {r["name"]: r for r in rows}
+    cache = prop_cache(data, pkg, rows)
+    table = export_table(data)
+    sha = hashlib.sha256(data).hexdigest()[:12]
+
+    render: dict[int, dict] = {}
+    named_by: dict[int, str] = {}
+    renders_via: dict[int, str] = {}
+    own_mesh: set[int] = set()
+
+    for row in rows:
+        if row["cls"] != "cStreamedBuildingActor":
+            continue
+        crow = deref(cache.get(row["idx"], {}).get("StaticMeshComponent"), by_idx)
+        if crow is None:
+            continue
+        cp = cache.get(crow["idx"], {})
+        if isinstance(cp.get("StaticMesh"), int):
+            own_mesh.add(row["idx"])
+        vname = cp.get("m_VertexLitComponent")
+        vl = by_name.get(vname) if isinstance(vname, str) else None
+        if vl is None or vl["idx"] >= len(table):
+            continue
+        outer = table[vl["idx"]]["outer"]
+        host = by_idx.get(outer - 1) if outer > 0 else None
+        if host is None:
+            continue
+        vp = cache.get(vl["idx"], {})
+        mref = vp.get("StaticMesh")
+        bref = cp.get("StaticMesh")
+        render[host["idx"]] = {
+            "component": vl["name"], "component_class": vl["cls"],
+            "mesh_ref": mref if isinstance(mref, int) else None,
+            "mesh_path": import_path(pkg, mref) if isinstance(mref, int) else None,
+            "mesh_class": import_class(pkg, mref) if isinstance(mref, int) else None,
+            "hidden": vp.get("HiddenGame") is True,
+            # Authored topology from the graph, not from stripping "_VertexLit" off a name.
+            "base_mesh_ref": bref if isinstance(bref, int) else None,
+            "base_mesh_path": import_path(pkg, bref) if isinstance(bref, int) else None,
+            "base_mesh_class": import_class(pkg, bref) if isinstance(bref, int) else None,
+        }
+        named_by[host["idx"]] = row["name"]
+        renders_via[row["idx"]] = host["name"]
+
+    return _emit_renderables(rows, cache, sha, render, named_by, renders_via, own_mesh)
+
+
+def prop_placement_records(stem: str, maps_dir: Path) -> list[dict]:
+    """Emit placement records for prop/road actors in sibling packages.
+
+    Handles cStreamedLightingStaticMeshActor, StaticMeshActor, cStreamedRoadActor,
+    and cProp — the actor classes found in Props, ArtProps, Design, and TILE packages.
+    Unlike cStreamedBuildingActor (which hides its direct component and renders via
+    m_VertexLitComponent — F14), these classes render the StaticMeshComponent directly:
+    no HiddenGame=True, no vertex-lit indirection. The component's StaticMesh property
+    is the visible mesh, and the actor's Location/Rotation/Scale3D place it in the world.
+
+    Provenance and conservation follow the same contract as placement_records:
+    every row carries a source_id, unresolved rows carry a reason code, and nothing
+    vanishes silently.
+    """
+    data, pkg, rows = load(stem, maps_dir)
+    by_idx = {r["idx"]: r for r in rows}
+    cache = prop_cache(data, pkg, rows)
+    sha = hashlib.sha256(data).hexdigest()[:12]
+    out: list[dict] = []
+
+    for row in rows:
+        if row["cls"] not in _PROP_ACTOR_CLASSES:
+            continue
+        ap = cache.get(row["idx"], {})
+        loc = ap.get("Location") if isinstance(ap.get("Location"), list) else None
+        arot = ap.get("Rotation")
+        rot_present = isinstance(arot, list) and len(arot) == 3
+        rot = [uru_to_deg(v) for v in arot] if rot_present else [0.0, 0.0, 0.0]
+
+        # These actors expose their mesh via StaticMeshComponent just like buildings,
+        # but the component IS visible — no m_VertexLitComponent indirection.
+        smc_ref = ap.get("StaticMeshComponent")
+        if not isinstance(smc_ref, int) or smc_ref <= 0:
+            out.append({
+                "source_id": f"{sha}:{row['idx']}:-",
+                "actor": row["name"],
+                "actor_class": row["cls"],
+                "reason": "no_mesh_component",
+                "location": loc,
+                "rotation": rot,
+                "rotation_present": rot_present,
+                "scale": [1.0, 1.0, 1.0],
+                "scale_present": False,
+                "mesh_ref": None,
+                "mesh_path": None,
+            })
+            continue
+
+        sid = f"{sha}:{row['idx']}:StaticMeshComponent"
+        crow = deref(smc_ref, by_idx)
+        if crow is None:
+            out.append({
+                "source_id": sid,
+                "actor": row["name"],
+                "actor_class": row["cls"],
+                "reason": "component_unresolved",
+                "location": loc,
+                "rotation": rot,
+                "rotation_present": rot_present,
+                "scale": [1.0, 1.0, 1.0],
+                "scale_present": False,
+                "mesh_ref": smc_ref,
+                "mesh_path": None,
+            })
+            continue
+
+        cp = cache.get(crow["idx"], {})
+        sc = cp.get("Scale3D")
+        scale_present = isinstance(sc, list) and len(sc) == 3
+        mref = cp.get("StaticMesh")
+        mref_val, mpath, mclass = _resolve_mesh_ref(mref, pkg, by_idx, stem)
+
+        rec = {
+            "source_id": sid,
+            "actor": row["name"],
+            "actor_class": row["cls"],
+            "edge": "StaticMeshComponent",
+            "component": crow["name"],
+            "component_class": crow["cls"],
+            "location": loc,
+            "rotation": rot,
+            "rotation_present": rot_present,
+            "scale": [round(v, 6) for v in sc] if scale_present else [1.0, 1.0, 1.0],
+            "scale_present": scale_present,
+            "mesh_ref": mref_val,
+            "mesh_path": mpath,
+            "mesh_class": mclass,
+        }
+        if crow["cls"] not in _MESH_HOSTS:
+            rec["reason"] = "non_mesh_component"
+        elif mpath is None:
+            rec["reason"] = "mesh_unresolved"
+        out.append(rec)
+
+    return out
+
+
+def all_placement_records(stem: str, maps_dir: Path) -> list[dict]:
+    """All placement records from a package: buildings (renderable_placements) +
+    props/roads (prop_placement_records).
+
+    This is the unified entry point for district-wide manifest builders. Both sub-functions
+    load the package internally and return empty lists when no relevant actors exist, so
+    calling both unconditionally is correct and avoids a redundant pre-scan load().
+    """
+    out = renderable_placements(stem, maps_dir)
+    out.extend(prop_placement_records(stem, maps_dir))
     return out
 
 

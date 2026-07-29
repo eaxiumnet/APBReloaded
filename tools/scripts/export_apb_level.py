@@ -101,10 +101,13 @@ _PKG_CACHE: dict[str, Path] = {}
 def package_already_exported(out_dir: Path) -> bool:
     if not out_dir.is_dir():
         return False
-    return any(out_dir.rglob("*.pskx")) or any(out_dir.rglob("*.psk")) or any(out_dir.rglob("*.tga"))
+    return (any(out_dir.rglob("*.gltf")) or any(out_dir.rglob("*.glb"))
+            or any(out_dir.rglob("*.pskx")) or any(out_dir.rglob("*.psk"))
+            or any(out_dir.rglob("*.tga")))
 
 
-def umodel_export(path_root: Path, package_stem: str, out: Path, meshes_only: bool = False) -> dict:
+def umodel_export(path_root: Path, package_stem: str, out: Path, meshes_only: bool = False,
+                  gltf: bool = True) -> dict:
     out.mkdir(parents=True, exist_ok=True)
     if package_already_exported(out):
         return {
@@ -121,6 +124,9 @@ def umodel_export(path_root: Path, package_stem: str, out: Path, meshes_only: bo
         "-export",
         f"-out={out}",
     ]
+    # glTF 2.0 preserves tangents + all UV sets (lightmap UV1); ActorX pskx has neither.
+    if gltf:
+        cmd.append("-gltf")
     if meshes_only:
         cmd.append("-meshes")
     cmd.append(package_stem)
@@ -164,7 +170,8 @@ def export_level(
         try:
             old = json.loads(man_path.read_text(encoding="utf-8"))
             if (old.get("mesh_count") or 0) + (old.get("tga_count") or 0) > 0:
-                psk_n = len(list(out.rglob("*.psk"))) + len(list(out.rglob("*.pskx")))
+                psk_n = (len(list(out.rglob("*.psk"))) + len(list(out.rglob("*.pskx")))
+                         + len(list(out.rglob("*.gltf"))))
                 tga_n = len(list(out.rglob("*.tga")))
                 if psk_n + tga_n > 0:
                     return {
@@ -223,14 +230,14 @@ def export_level(
         time.sleep(0.1)
 
     # Count meshes: level tree + shared package paths referenced
-    psk = list(out.rglob("*.psk")) + list(out.rglob("*.pskx"))
+    psk = list(out.rglob("*.psk")) + list(out.rglob("*.pskx")) + list(out.rglob("*.gltf"))
     tga = list(out.rglob("*.tga"))
     for r in results:
         shared = r.get("shared")
         if shared:
             sp = Path(shared)
             if sp.is_dir():
-                psk += list(sp.rglob("*.psk")) + list(sp.rglob("*.pskx"))
+                psk += list(sp.rglob("*.psk")) + list(sp.rglob("*.pskx")) + list(sp.rglob("*.gltf"))
                 tga += list(sp.rglob("*.tga"))
     # unique by path
     psk = list({str(p): p for p in psk}.values())
@@ -292,7 +299,8 @@ def export_all_apb(limit: int = 0) -> int:
     total_mesh = sum(s.get("mesh_count") or 0 for s in summaries)
     total_tga = sum(s.get("tga_count") or 0 for s in summaries)
     # unique meshes on disk under Levels
-    disk_mesh = len(list(OUT_ROOT.rglob("*.pskx"))) + len(list(OUT_ROOT.rglob("*.psk")))
+    disk_mesh = (len(list(OUT_ROOT.rglob("*.pskx"))) + len(list(OUT_ROOT.rglob("*.psk")))
+                 + len(list(OUT_ROOT.rglob("*.gltf"))))
     disk_tga = len(list(OUT_ROOT.rglob("*.tga")))
     report = {
         "levels_total": len(levels),
@@ -358,7 +366,7 @@ def main() -> int:
             print(f"[{i}] {pkg.name}")
             umodel_export(CONTENT, pkg.stem, out / pkg.stem)
             time.sleep(0.15)
-        psk = list(out.rglob("*.pskx")) + list(out.rglob("*.psk"))
+        psk = list(out.rglob("*.pskx")) + list(out.rglob("*.psk")) + list(out.rglob("*.gltf"))
         print(f"total meshes {len(psk)} -> {out}")
         return 0
 

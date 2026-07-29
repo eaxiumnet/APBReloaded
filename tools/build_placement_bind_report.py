@@ -21,7 +21,7 @@ SCRATCH = Path(
 )
 
 MANIFESTS = [
-    "Financial_Block09.json",
+    "Financial_Block09_realv2.json",
     "Waterfront_Block05.json",
     "Asylum_Block.json",
     "Beacon_Block.json",
@@ -59,6 +59,7 @@ def resolve_folder(district_id: str) -> str:
 def bind_one(path: Path, imported: set[str]) -> dict:
     data = json.loads(path.read_text(encoding="utf-8"))
     placements = data.get("placements") or []
+    total = data.get("source_visible_placement_count") or len(placements)
     bound = []
     missing_ids: set[str] = set()
     for pl in placements:
@@ -89,7 +90,6 @@ def bind_one(path: Path, imported: set[str]) -> dict:
         else:
             if mid:
                 missing_ids.add(mid)
-    total = len(placements)
     bcount = len(bound)
     rate = (bcount / total) if total else 0.0
     out = dict(data)
@@ -130,7 +130,7 @@ def main():
             f"{name}: bound={row['bound']}/{row['total']} hit_rate={row['hit_rate']} missing_ids={row['missing_count']}"
         )
     # hero threshold
-    fin = next((d for d in report["districts"] if d.get("file") == "Financial_Block09.json"), None)
+    fin = next((d for d in report["districts"] if d.get("file") == "Financial_Block09_realv2.json"), None)
     report["financial_hit_rate"] = fin["hit_rate"] if fin else 0.0
     report["financial_pass"] = bool(fin and fin["hit_rate"] >= 0.9)
     out = SCRATCH / "bind_report.json"

@@ -239,7 +239,8 @@ Hence `rotation_present` / `scale_present` are recorded separately from the valu
 ## Open items
 1. Close the remaining fail-open blockers (1, 2, 5 — dedup key, cross-district asset
    substitution, Domain text-scan mirror). Blockers 3 and 4 are closed and gated.
-2. Non-prefab Block09 micro-slice proven end-to-end with provenance.
+2. ~~Non-prefab Block09 micro-slice proven end-to-end with provenance.~~ **CLOSED
+   2026-07-28** — see "Block09 non-prefab slice proven end-to-end" below.
 3. Decode `PI_Bytes` fully (embedded prefab actor set) — required for true 1:1.
 4. `PointLight` / `StaticLightCollectionActor` per-class handling.
 5. Prove the 945 unparsed exports hide no `AActor`-derived exports (class-ancestry check,
@@ -247,3 +248,49 @@ Hence `rotation_present` / `scale_present` are recorded separately from the valu
    `ShadowMap1D`/`LightMapTexture2D` affect lighting — excluded from placements, but they
    remain separate fidelity obligations, not "irrelevant".
 6. Extend to all 44 Financial blocks, then the other districts.
+
+## Block09 non-prefab slice proven end-to-end (2026-07-28, closes open item 2)
+
+`Financial_Block09_realv2.json` — `provenance=real`, 274 rows, 36 renderable, 238 rejected
+with reason codes, `missing_source_id=0`.
+
+Manifest gate — `python tools/scripts/test_block09_manifest_gate.py` → exit 0:
+`GATE_SOURCE_ID_UNIQUE` / `GATE_MISSINGNESS_PARITY` / `GATE_NO_RAMP` /
+`GATE_RENDERABLE_COUNT` / `GATE_ROW_CONSERVATION` / `GATE_SPAWN_POINTS_DERIVED` all PASS.
+
+Runtime spawn (real RHI, GPU, standalone `-game`):
+
+```
+UnrealEditor.exe D:\APBReloaded\APBReloaded.uproject \
+  "/Game/Maps/Lvl_APB_Financial_Freeroam?game=/Script/APBReloaded.APBFreeroamGameMode" \
+  -game -RenderOffScreen -ResX=1600 -ResY=900 \
+  -APBProbe=playable -APBCapture=<png> -APBScratch=<dir> \
+  -nosplash -nosound -unattended -log -abslog=<log>
+```
+
+Markers observed:
+
+| Marker | Value |
+|---|---|
+| `Game class is` | `APBFreeroamGameMode` |
+| `PLACEMENT_MANIFEST_CHOSEN` | `Financial_Block09_realv2.json provenance=real renderable=36 rejected=238` |
+| `APB freeroam STREAM_SPAWN` | `n=36 in_radius=36 load_failed=0` |
+| `MESH_LOAD` | `spawned=36 failed=0 skipped_dup=0` |
+| `PLACEMENT_IDENTITY_REJECT` | none |
+| `DISTRICT_LIGHTS` | `real=448/448` |
+
+Runtime spawn count equals manifest `renderable=36` with zero load failures and zero
+identity rejects. All 36 are genuine `FD_B09_*` / `FinancialDistrict_Block09_Generic_*`
+imported assets — no engine primitives, no fallback substitution.
+
+Evidence: `work/logs/block09_realv2_s4/` (`s4_block09_scene.png` real-RHI capture,
+`s4_freeroam_district.log`, `s4_markers.txt`).
+
+**`?game=` is mandatory.** Launching without it resolves `GlobalDefaultGameMode`
+(`APBFrontendGameMode`), the district loader never runs, and the client sits on the looping
+login movie — the `GameModeMapPrefixes` entry does not win for `-game` standalone.
+
+Not closed by this slice: the capture frame is dominated by flat-red untextured fallback and
+the meshes read as near-black silhouettes. Neither originates in the manifest (no row carries
+a scale key; lighting spawned `sun/sky/atmos/fog/ppv=1`); both belong to
+`m9_financial_realrhi_render_findings.md`.

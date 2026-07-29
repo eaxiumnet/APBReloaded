@@ -8,6 +8,7 @@
 //   APB_TICKET_AVAILABLE -- C4 creates APBTicket.h + TicketService
 
 #include "../Source/APBReloaded/Domain/APBSocial.h"
+#include "../Source/APBReloaded/Domain/APBCrypto.h"
 
 // TODO: C3+C4 implements APBCrypto.h + APBTicket.h
 // TODO: C5 adds password_salt to AccountRecord in APBSocial.h
@@ -16,12 +17,44 @@
 #endif
 
 #include <iostream>
+#include <stdexcept>
 #include <string>
 
 using namespace apb;
 
 static int fails = 0;
 #define CHECK(cond, msg) do { if(!(cond)){ std::cerr<<"FAIL: "<<msg<<"\n"; ++fails; } else { std::cout<<"PASS: "<<msg<<"\n"; } } while(0)
+
+#ifdef APB_TICKET_AVAILABLE
+static const std::string kTicketTestSecret(64, 'a');
+
+std::string EncodeTicketPayload(const std::string& payload) {
+    static constexpr char chars[] =
+        "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_";
+    std::string encoded;
+    encoded.reserve((payload.size() * 4 + 2) / 3);
+    unsigned buffer = 0;
+    int bits = 0;
+    for (unsigned char c : payload) {
+        buffer = (buffer << 8) | c;
+        bits += 8;
+        while (bits >= 6) {
+            bits -= 6;
+            encoded += chars[(buffer >> bits) & 0x3f];
+        }
+    }
+    if (bits > 0) encoded += chars[(buffer << (6 - bits)) & 0x3f];
+    return encoded;
+}
+
+std::string SignTicketPayload(const std::string& payload_encoded) {
+    const auto key = hex_decode(kTicketTestSecret);
+    const std::string signature = hmac_sha256_hex(
+        key.data(), key.size(),
+        reinterpret_cast<const uint8_t*>(payload_encoded.data()), payload_encoded.size());
+    return payload_encoded + "." + signature;
+}
+#endif
 
 // --- Test 1: Salted hash stored (not plaintext, 16-byte hex salt) ----------
 #ifdef APB_AUTH_V2
@@ -140,6 +173,68 @@ void TestTicketReplayBlocked() {
 }
 #endif // APB_TICKET_AVAILABLE
 
+#ifdef APB_TICKET_AVAILABLE
+void TestJsonIntOverflowContained() {
+    // Given: a correctly signed ticket whose network-supplied issued field exceeds int64_t.
+    TicketService& ts = TicketService::Global();
+    ts.SetSecret(kTicketTestSecret);
+    const std::string payload =
+        "{\"account\":\"ACC-hostile\",\"character\":\"Hostile\","
+        "\"faction\":\"Criminal\",\"district\":\"Financial\","
+        "\"jti\":\"overflow-jti\",\"issued\":999999999999999999999999,\"expiry\":300}";
+    const std::string token = SignTicketPayload(EncodeTicketPayload(payload));
+
+    // When: the hostile ticket crosses the verification boundary.
+    TicketClaims out;
+    bool refused = false;
+    try {
+        refused = !ts.VerifyTicket(token, out);
+    } catch (const std::invalid_argument&) {
+        refused = false;
+    } catch (const std::out_of_range&) {
+        refused = false;
+    }
+
+    // Then: decoding produces a typed refusal rather than an exception or valid defaults.
+    CHECK(refused, "TestJsonIntOverflowContained: overflowing integer ticket refused");
+}
+#endif // APB_TICKET_AVAILABLE
+
+#ifdef APB_TICKET_AVAILABLE
+void TestTicketPayloadEscaped() {
+    TicketService& ts = TicketService::Global();
+    ts.SetSecret(kTicketTestSecret);
+    TicketClaims req;
+    req.account = "ACC-\"hostile\\account\nline";
+    req.character = "Char\t\"quoted\"";
+    req.faction = "Criminal\\Enforcer";
+    req.district = "Financial\rDistrict";
+    req.expiry_secs = 300;
+
+    const std::string token = ts.IssueTicket(req);
+    TicketClaims out;
+    const bool verified = ts.VerifyTicket(token, out);
+
+    CHECK(verified &&
+          out.account == req.account &&
+          out.character == req.character &&
+          out.faction == req.faction &&
+          out.district == req.district,
+          "TestTicketPayloadEscaped: hostile strings round-trip exactly");
+}
+#endif // APB_TICKET_AVAILABLE
+
+void TestSecretMaterialRejected() {
+    CHECK(!is_valid_secret_material(""), "T6: empty secret material rejected");
+    CHECK(!is_valid_secret_material("0123456789abcdef"), "T6: too-short secret material rejected");
+    CHECK(!is_valid_secret_material(
+        "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdeg"),
+        "T6: non-hex secret material rejected");
+    CHECK(is_valid_secret_material(
+        "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"),
+        "T6: 32-byte hex secret material accepted");
+}
+
 int main() {
     std::cout << "APB Auth tests (C2 RED suite)\n";
 
@@ -154,9 +249,13 @@ int main() {
 #ifdef APB_TICKET_AVAILABLE
     TestTicketIssueVerify();
     TestTicketReplayBlocked();
+    TestJsonIntOverflowContained();
+    TestTicketPayloadEscaped();
 #else
     std::cout << "NOTE: APB_TICKET_AVAILABLE not defined -- tests 4-5 skipped (C4 implements)\n";
 #endif
+
+    TestSecretMaterialRejected();
 
     std::cout << "FAILS=" << fails << "\n";
     return fails ? 1 : 0;

@@ -10,6 +10,9 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
+$projectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
+. (Join-Path $PSScriptRoot "scripts\APBPortContract.ps1")
+$apbPorts = Get-APBPortContract -ProjectRoot $projectRoot
 New-Item -ItemType Directory -Force -Path $Scratch | Out-Null
 $gateLog = Join-Path $Scratch "gate_run.log"
 
@@ -57,23 +60,41 @@ $bind = Get-Content $bindPath -Raw | ConvertFrom-Json
 Log ("BIND financial_hit_rate={0} pass={1}" -f $bind.financial_hit_rate, $bind.financial_pass)
 if (-not $bind.financial_pass) { Fail "financial bind hit_rate < 0.9" }
 
-# 1) Domain tests
+# 0b) Financial manifest gate (required): validates the merged Financial district manifest and
+#     emits FINANCIAL_MANIFEST_OK.
+Remove-Item $financialManifest -Force -ErrorAction SilentlyContinue
+Log "STEP financial_manifest_gate"
+& python "D:\APBReloaded\tools\scripts\test_financial_district_manifest_gate.py" --skip-extractor 2>&1 | Tee-Object -FilePath $financialManifest
+if ($LASTEXITCODE -ne 0) { Fail "financial_manifest_gate exit $LASTEXITCODE" }
+Require-Fresh $financialManifest (Get-Date).AddMinutes(-30) "FINANCIAL_MANIFEST_OK"
+Log "FINANCIAL_MANIFEST_OK"
+
+# 1) Domain tests — build first, then run the freshly-built binary.
+Log "STEP domain_tests_build"
+& powershell -NoProfile -ExecutionPolicy Bypass -File "D:\APBReloaded\tests\build_and_run.ps1" 2>&1 | Tee-Object -FilePath (Join-Path $Scratch "domain_tests_build.log")
+if ($LASTEXITCODE -ne 0) { Fail "domain_tests build exit $LASTEXITCODE" }
+
 Log "STEP domain_tests"
 $domain = "D:\APBReloaded\Binaries\Win64\APBDomainTests.exe"
-if (-not (Test-Path $domain)) { Fail "missing $domain" }
+if (-not (Test-Path $domain)) { Fail "missing $domain after build" }
 & $domain 2>&1 | Tee-Object -FilePath (Join-Path $Scratch "domain_tests_final.log")
 if ($LASTEXITCODE -ne 0) { Fail "domain_tests exit $LASTEXITCODE" }
 Require-Fresh (Join-Path $Scratch "domain_tests_final.log") (Get-Date).AddMinutes(-15) "FAILS=0"
 
+# 2) Model registry tests — build from source first (no stale prebuilt binary), then run.
+Log "STEP model_registry_build"
+& powershell -NoProfile -ExecutionPolicy Bypass -File "D:\APBReloaded\tools\scripts\build_model_registry_tests.ps1" 2>&1 | Tee-Object -FilePath (Join-Path $Scratch "model_registry_build.log")
+if ($LASTEXITCODE -ne 0) { Fail "model_registry build exit $LASTEXITCODE" }
+
+Log "STEP model_registry"
 $model = "D:\APBReloaded\Binaries\Win64\APBModelRegistryTests.exe"
-if (Test-Path $model) {
-  Log "STEP model_registry"
-  & $model 2>&1 | Tee-Object -FilePath (Join-Path $Scratch "model_registry_tests.log")
-  if ($LASTEXITCODE -ne 0) { Fail "model_registry exit $LASTEXITCODE" }
-  Require-Fresh (Join-Path $Scratch "model_registry_tests.log") (Get-Date).AddMinutes(-15) "FAILS=0"
-}
+if (-not (Test-Path $model)) { Fail "missing $model after build" }
+& $model 2>&1 | Tee-Object -FilePath (Join-Path $Scratch "model_registry_tests.log")
+if ($LASTEXITCODE -ne 0) { Fail "model_registry exit $LASTEXITCODE" }
+Require-Fresh (Join-Path $Scratch "model_registry_tests.log") (Get-Date).AddMinutes(-15) "FAILS=0"
 
 $clientLoop = Join-Path $Scratch "client_loop.log"
+$financialManifest = Join-Path $Scratch "financial_manifest_gate.log"
 $mpLog = Join-Path $Scratch "mp_client_observe.log"
 $mpDistrict = Join-Path $Scratch "mp_district.log"
 $playable = Join-Path $Scratch "playable_probe.log"
@@ -107,6 +128,8 @@ if (-not $okHost) {
 Require-Fresh $clientLoop (Get-Date).AddMinutes(-5) "CLIENT_LOOP_OK"
 # Primary loop must exercise Domain vehicle spawn+possess with catalog IDs
 Require-Fresh $clientLoop (Get-Date).AddMinutes(-5) "VEHICLE_DOMAIN spawn=1 possess=1"
+# D16b Site-1: FireWeaponLocal must sync PlayerState from Domain via the bridge on its own.
+Require-Fresh $clientLoop (Get-Date).AddMinutes(-5) "FIRE_SYNC ok=1"
 Log "HOST_CLIENT_LOOP_OK"
 
 # 3) Client join + mp_observe
@@ -283,11 +306,11 @@ $wsAliceLog = Join-Path $Scratch "world_server_client_alice.log"
 $wsBobLog   = Join-Path $Scratch "world_server_client_bob.log"
 Remove-Item $wsLog, $wsAliceLog, $wsBobLog -Force -ErrorAction SilentlyContinue
 $FrontendMap = "/Game/Maps/Lvl_APB_Frontend"
-$WSPort = 17778
+$WSPort = $apbPorts.World
 Log "STEP world_server_gate"
 
 $wsServerArgs = @(
-  $Project, "$FrontendMap?game=/Script/APBReloaded.AAPBWorldGameMode",
+  $Project, "${FrontendMap}?listen?game=/Script/APBReloaded.APBWorldGameMode",
   "-game", "-WorldServer", "-Port=$WSPort",
   "-APBProbe=world_server", "-APBScratch=$Scratch",
   "-nosplash", "-nosound", "-nullrhi", "-unattended", "-log"
@@ -330,6 +353,62 @@ Require-Fresh $wsLog (Get-Date).AddMinutes(-5) "login=2"
 Require-Fresh $wsLog (Get-Date).AddMinutes(-5) "ticket=2"
 Log "WORLD_SERVER_GATE_OK"
 
+# 8) M7 travel-spine gate (required): composes the five green M7 leg gates
+#    (travel, ticket, handoff, chat, relay) and emits M7_TRAVEL_GATE_OK.
+$m7Log = Join-Path $Scratch "m7_travel_gate.log"
+Remove-Item $m7Log -Force -ErrorAction SilentlyContinue
+$m7Script = Join-Path $PSScriptRoot "run_m7_gate.ps1"
+Log "STEP m7_travel_gate"
+& powershell -NoProfile -ExecutionPolicy Bypass -File $m7Script `
+    -Scratch (Join-Path $Scratch "m7") -Project $Project -Editor $Editor 2>&1 |
+  Tee-Object -FilePath $m7Log
+if ($LASTEXITCODE -ne 0) { Fail "m7_travel_gate: run_m7_gate.ps1 exited $LASTEXITCODE" }
+Require-Fresh $m7Log (Get-Date).AddMinutes(-30) "M7_TRAVEL_GATE_OK"
+Log "M7_TRAVEL_GATE_OK"
+
+# 9) M7 directory gate (required): 1 world + 2 Financial instances; validates host-excluded
+#    population aggregation, least-loaded placement, stale eviction, and post-evict regression
+#    travel. Emits M7_DIRECTORY_GATE_OK.
+$m7DirLog = Join-Path $Scratch "m7_directory_gate.log"
+Remove-Item $m7DirLog -Force -ErrorAction SilentlyContinue
+$m7DirScript = Join-Path $PSScriptRoot "run_m7_directory_gate.ps1"
+Log "STEP m7_directory_gate"
+& powershell -NoProfile -ExecutionPolicy Bypass -File $m7DirScript `
+    -Scratch (Join-Path $Scratch "m7_directory") -Project $Project -Editor $Editor 2>&1 |
+  Tee-Object -FilePath $m7DirLog
+if ($LASTEXITCODE -ne 0) { Fail "m7_directory_gate: run_m7_directory_gate.ps1 exited $LASTEXITCODE" }
+Require-Fresh $m7DirLog (Get-Date).AddMinutes(-30) "M7_DIRECTORY_GATE_OK"
+Log "M7_DIRECTORY_GATE_OK"
+
+# 9b) M11 mission gate (required): 2-client listen-server probe validating S1 (stage
+#     timeout) + S2 (opposition race) on host + peer mission replication. Emits
+#     M11_MISSION_GATE_OK.
+$m11Log = Join-Path $Scratch "m11_mission_gate.log"
+Remove-Item $m11Log -Force -ErrorAction SilentlyContinue
+$m11Script = Join-Path $PSScriptRoot "run_m11_mission_gate.ps1"
+Log "STEP m11_mission_gate"
+& powershell -NoProfile -ExecutionPolicy Bypass -File $m11Script `
+    -Scratch (Join-Path $Scratch "m11") -Project $Project -Editor $Editor 2>&1 |
+  Tee-Object -FilePath $m11Log
+if ($LASTEXITCODE -ne 0) { Fail "m11_mission_gate: run_m11_mission_gate.ps1 exited $LASTEXITCODE" }
+Require-Fresh $m11Log (Get-Date).AddMinutes(-15) "M11_MISSION_GATE_OK"
+Log "M11_MISSION_GATE_OK"
+
+# 10) M16 persistence gate (required, editor-free): clean-bootstrap allow-list (S1),
+#     -Clean refusal without -Force + -Force positive control (S4), and domain restart
+#     parity / write-once / corrupt-reject via APBPersistenceTests.exe (S2/S3/S5).
+#     Emits M16_PERSISTENCE_GATE_OK.
+$m16Log = Join-Path $Scratch "m16_persistence_gate.log"
+Remove-Item $m16Log -Force -ErrorAction SilentlyContinue
+$m16Script = Join-Path $PSScriptRoot "run_m16_persistence_gate.ps1"
+Log "STEP m16_persistence_gate"
+& powershell -NoProfile -ExecutionPolicy Bypass -File $m16Script `
+    -Scratch (Join-Path $Scratch "m16") 2>&1 |
+  Tee-Object -FilePath $m16Log
+if ($LASTEXITCODE -ne 0) { Fail "m16_persistence_gate: run_m16_persistence_gate.ps1 exited $LASTEXITCODE" }
+Require-Fresh $m16Log (Get-Date).AddMinutes(-30) "M16_PERSISTENCE_GATE_OK"
+Log "M16_PERSISTENCE_GATE_OK"
+
 Log "GATE_PASS"
 $summary = @{
   gate = "PASS"
@@ -337,12 +416,17 @@ $summary = @{
   financial_bind_pass = $bind.financial_pass
   domain = "FAILS=0"
   client_loop = "CLIENT_LOOP_OK"
+  site1_fire_sync = "FIRE_SYNC ok=1"
   mp_parity = "OK"
   playable_walk = "OK"
   playable_drive = "OK"
   frontend_menu = "FRONTEND_MENU_OK"
   frontend_flow = if ($IntegrationGate) { "FRONTEND_FLOW_OK" } else { "SKIPPED_integration_gate_off" }
   world_server_gate = "WORLD_SERVER_GATE_OK"
+  m7_travel_gate = "M7_TRAVEL_GATE_OK"
+  m7_directory_gate = "M7_DIRECTORY_GATE_OK"
+  m11_mission_gate = "M11_MISSION_GATE_OK"
+  m16_persistence_gate = "M16_PERSISTENCE_GATE_OK"
   time = (Get-Date).ToString("o")
 } | ConvertTo-Json
 Set-Content -Path (Join-Path $Scratch "gate_summary.json") -Value $summary

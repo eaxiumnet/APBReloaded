@@ -40,16 +40,16 @@ events). No game rules in Blueprints.
 ## 3. Runtime topology (dedicated deployment)
 
 ```
-┌────────────┐   UE netdriver (game port 17777)   ┌─────────────────────────────┐
+┌────────────┐   UE netdriver (game port 17778)   ┌─────────────────────────────┐
 │  Client A  ├────────────────────────────────────►│  WORLD SERVER (1 process)   │
 │  Client B  ├────────────────────────────────────►│  APBReloadedServer          │
-└────────────┘                                    │  -WorldServer -Port=17777   │
+└────────────┘                                    │  -WorldServer -Port=17778   │
        │ ClientTravel(IP:port, ticket)            │  Hosts: login/auth, world   │
        ▼                                          │  directory, character DB,   │
 ┌─────────────────────────┐   TCP/JSON control    │  mail, auction, chat relay, │
 │ DISTRICT SERVER(S)      │◄──────────────────────┤  matchmaking coordinator    │
-│ -District=Waterfront    │   (port 17778)        └─────────────────────────────┘
-│ -Port=17801             │                              owns Domain DB (JSON)
+│ -District=Waterfront    │   (port 17800)        └─────────────────────────────┘
+│ -Port=17821             │                              owns Domain DB (JSON)
 │ -WorldAddr=127.0.0.1    │
 │ Hosts freeroam map,     │
 │ gameplay replication    │
@@ -59,10 +59,10 @@ events). No game rules in Blueprints.
 - **One binary, role by CLI** (D6). `-WorldServer` hosts a headless lobby map; district
   role hosts `Lvl_APB_<District>_Freeroam`. Standalone/listen keeps the current in-process
   WorldService path — same Domain code, no fork.
-- **Control channel** (TCP, JSON-lines, world listens on 17778): `district.register`,
+- **Control channel** (TCP, JSON-lines, world listens on 17800): `district.register`,
   `district.heartbeat`, `district.directory` (world → clients via lobby), `char.handoff`,
   `ticket.validate`, `chat.relay`, `mail.notify`, `auction.sync`.
-- **Login flow**: client → world (UE connect on 17777) → login RPC → WorldService
+- **Login flow**: client → world (UE connect on 17778) → login RPC → WorldService
   `LoginAccount` (D5 store) → char select → district select requests reservation →
   world returns `{ip, port, one-time ticket}` → `ClientTravel`.
 - **District join flow**: district receives PostLogin → `ticket.validate` to world →
@@ -75,6 +75,35 @@ events). No game rules in Blueprints.
   `chat.relay` through world. ChatService in Domain enforces rate limits/blocks.
 - **Anti-tamper note**: district never trusts client-supplied character data — only world
   `char.handoff` over the control channel.
+
+### Relay and port contract
+
+`Source\APBReloaded\Systems\APBPorts.h` is the allocation authority; `[APBServer]` in
+`Config\DefaultGame.ini` mirrors it, and launch scripts parse the header rather than carrying
+their own port defaults. `DistrictPort(numeric_id)` returns `17810 + numeric_id` for positive
+stable catalog IDs and `0` for an invalid ID.
+
+| Role | Port | Resolution |
+|---|---:|---|
+| World game / NetDriver (UDP) | 17778 | `apb::ports::World` |
+| World-district relay (TCP) | 17800 | `apb::ports::Relay` |
+| District game base (reserved) | 17810 | `apb::ports::DistrictBase` |
+
+| District | numeric_id | Port |
+|---|---:|---:|
+| Financial | 1 | 17811 |
+| FinancialChaos | 2 | 17812 |
+| PGAsylum | 4 | 17814 |
+| PGBeacon | 5 | 17815 |
+| PGCrate | 6 | 17816 |
+| Social | 9 | 17819 |
+| Waterfront | 11 | 17821 |
+| FinancialRiot | 12 | 17822 |
+
+The relay is a versioned JSON-lines protocol: every newline-terminated frame requires
+`version`, `request_id`, `sent_ms`, and `auth`. Frames are capped at 64 KiB; the request
+timestamp window is 2 s; the receive queue is bounded at 256; reconnect backoff is
+exponential from 250 ms to 5000 ms; a district is evicted after two missed 5 s heartbeats.
 
 ## 4. Data & persistence schemas (D5: JSON docs, `Saved\DomainDB\`)
 
@@ -136,6 +165,7 @@ same asset exists in both and provenance matters.
 | Video | `.bik` | ffmpeg/RAD | `.mp4` | MediaPlayer/Electra (plugins already on) |
 | Strings/data | `.INT/.INI`, apbdb.com | `apbdb\sync_apbdb.py`, new INT parsers | `Content\Data\*.json` | Catalog loaders (existing) |
 | Animations | `Anim\*.upk` | umodel → `.psa` | retarget to UE5 skeleton | M13/M17 scope |
+| Relay control | `APBRelayProtocol.{h,cpp}` | versioned JSON-lines | 64 KiB frames, 2 s window, 256 queue | `Systems\Server\` TCP transport |
 
 Every batch run updates `tools\import_ledger.json`; the bind report
 (`build_placement_bind_report.py`) is the gap oracle: any manifest entry not resolving to a
@@ -150,7 +180,7 @@ real `.uasset` (never `/Engine/BasicShapes/Cube`) is the remaining-work list.
 | Char-create preview | SceneCapture2D studio (existing `APBCharacterCreatePreviewActor`) |
 | Clothing color | Dynamic Material Instances driven by `palettes.json` |
 | Gameplay replication | PlayerState/GameMode/validated RPCs (existing pattern) |
-| World↔district control | `FSocket`/TCP JSON in `Systems\Server\` subsystem |
+| World↔district control | `FSocket`/TCP JSON-lines v1 in `Systems\Server\`; `version`, `request_id`, `sent_ms`, and `auth` are mandatory |
 | NPC bots | StateTree (plugin already enabled) |
 | Streaming | Existing manifest chunk streamer; World Partition evaluation deferred to M17 |
 | Persistence | JSON docs now (D5); SQLite/Postgres adapter path in §10 |

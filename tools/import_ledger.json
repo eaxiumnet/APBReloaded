@@ -1,20 +1,4571 @@
 {
   "version": 1,
   "updated": "2026-07-19",
-  "statuses": ["extracted", "imported", "bound", "manual"],
+  "statuses": [
+    "extracted",
+    "imported",
+    "bound",
+    "manual"
+  ],
   "note": "Single tracking mechanism for extraction/import status (plan D12). One entry per asset or coherent asset group. asset_key format: 'upk_path#object' for singles, 'group:<path>' for batches.",
   "entries": [
-    { "asset_key": "group:Districts/Asylum", "source": "retail", "dest": "/Game/Imported/Districts/Asylum", "status": "imported", "updated": "pre-ledger" },
-    { "asset_key": "group:Characters/Contacts", "source": "retail", "dest": "/Game/Imported/Characters/Contacts", "status": "imported", "updated": "pre-ledger", "items": ["Contact_Bloodrose", "Contact_LaRocha", "Contact_Sofia"] },
-    { "asset_key": "group:Characters/Wardrobe", "source": "retail", "dest": "/Game/Imported/Characters/Wardrobe", "status": "imported", "updated": "pre-ledger" },
-    { "asset_key": "group:Vehicles", "source": "retail", "dest": "/Game/Imported/Vehicles", "status": "imported", "updated": "pre-ledger" },
-    { "asset_key": "group:Audio/LoginTheme", "source": "retail", "dest": "/Game/Audio", "status": "imported", "updated": "pre-ledger" },
-    { "asset_key": "group:2011/MenuArt", "source": "2011", "dest": "/Game/Imported/UI/Menu2011", "status": "imported", "updated": "2026-07-19", "note": "umodel 547 spike: WORKS (work/umodel_547_spike.md). 77 pkgs, 2085 PNG extracted at Content/Extracted/2011/MenuArt. M4a: 123 spec-referenced textures imported (Login 14, Chrome 52, CharSelect 20, DistrictSelect 12, Loading 19, Reference 6) via tools/scripts/import_menu2011_assets.py — chrome sourced from the fuller LiveCurrentScene APBMenus_Art dump (222 PNGs; MenuArt tree has only 8 for that package). Spec: work/menu2011_spec.md" },
-    { "asset_key": "group:2011/UISfx", "source": "2011", "dest": "/Game/Audio/UI", "status": "imported", "updated": "2026-07-19", "note": "72 UISounds WAV (Basic_Media+Main_Media) extracted at Content/Extracted/2011/UISfx. M4a: 12 menu-interaction WAVs imported to /Game/Audio/UI (hover/click/back/error/popup/scene-open/list-select/char-confirm/slider/loading) — mapping table in work/menu2011_spec.md §7" },
-    { "asset_key": "group:2011/Movies", "source": "2011", "dest": "/Game/Movies", "status": "manual", "updated": "2026-07-19", "note": "SplashScreen.bik + IntroTitles.bik preserved at Content/Extracted/2011/Movies (Bink 1). ffmpeg unavailable; UE5.8 BinkMedia is Bink2/.bk2-only. Re-encode to .bk2 (Bink2ForUnreal.exe) or mp4 pending M4 — see work/umodel_547_spike.md" },
-    { "asset_key": "data:retail/palettes", "source": "retail", "dest": "Content/Data/palettes.json", "status": "extracted", "updated": "2026-07-19", "note": "7 palettes, 1134 colors from retail Colours/*.ini via tools/convert/parse_colours.py" },
-    { "asset_key": "data:ui_strings", "source": "2011+retail", "dest": "Content/Data/ui_strings_2011.json + ui_strings_retail.json", "status": "extracted", "updated": "2026-07-19", "note": "7 frontend sections each (504 keys 2011 / 588 keys retail) via tools/convert/parse_int_tables.py" },
-    { "asset_key": "group:Districts/Financial", "source": "retail", "dest": "/Game/Imported/Districts/Financial", "status": "imported", "updated": "pre-ledger", "note": "partial — 1 of ~270 block manifests (M9)" },
-    { "asset_key": "group:Districts/Waterfront", "source": "retail", "dest": "/Game/Imported/Districts/Waterfront", "status": "imported", "updated": "pre-ledger", "note": "partial — 1 of ~268 block manifests (M10)" }
+    {
+      "asset_key": "group:Districts/Asylum",
+      "source": "retail",
+      "dest": "/Game/Imported/Districts/Asylum",
+      "status": "imported",
+      "updated": "pre-ledger"
+    },
+    {
+      "asset_key": "group:Characters/Contacts",
+      "source": "retail",
+      "dest": "/Game/Imported/Characters/Contacts",
+      "status": "imported",
+      "updated": "pre-ledger",
+      "items": [
+        "Contact_Bloodrose",
+        "Contact_LaRocha",
+        "Contact_Sofia"
+      ]
+    },
+    {
+      "asset_key": "group:Characters/Wardrobe",
+      "source": "retail",
+      "dest": "/Game/Imported/Characters/Wardrobe",
+      "status": "imported",
+      "updated": "pre-ledger"
+    },
+    {
+      "asset_key": "group:Vehicles",
+      "source": "retail",
+      "dest": "/Game/Imported/Vehicles",
+      "status": "imported",
+      "updated": "pre-ledger"
+    },
+    {
+      "asset_key": "group:Audio/LoginTheme",
+      "source": "retail",
+      "dest": "/Game/Audio",
+      "status": "imported",
+      "updated": "pre-ledger"
+    },
+    {
+      "asset_key": "group:2011/MenuArt",
+      "source": "2011",
+      "dest": "/Game/Imported/UI/Menu2011",
+      "status": "imported",
+      "updated": "2026-07-19",
+      "note": "umodel 547 spike: WORKS (work/umodel_547_spike.md). 77 pkgs, 2085 PNG extracted at Content/Extracted/2011/MenuArt. M4a: 123 spec-referenced textures imported (Login 14, Chrome 52, CharSelect 20, DistrictSelect 12, Loading 19, Reference 6) via tools/scripts/import_menu2011_assets.py — chrome sourced from the fuller LiveCurrentScene APBMenus_Art dump (222 PNGs; MenuArt tree has only 8 for that package). Spec: work/menu2011_spec.md"
+    },
+    {
+      "asset_key": "group:2011/UISfx",
+      "source": "2011",
+      "dest": "/Game/Audio/UI",
+      "status": "imported",
+      "updated": "2026-07-19",
+      "note": "72 UISounds WAV (Basic_Media+Main_Media) extracted at Content/Extracted/2011/UISfx. M4a: 12 menu-interaction WAVs imported to /Game/Audio/UI (hover/click/back/error/popup/scene-open/list-select/char-confirm/slider/loading) — mapping table in work/menu2011_spec.md §7"
+    },
+    {
+      "asset_key": "group:2011/Movies",
+      "source": "2011",
+      "dest": "/Game/Movies",
+      "status": "manual",
+      "updated": "2026-07-19",
+      "note": "SplashScreen.bik + IntroTitles.bik preserved at Content/Extracted/2011/Movies (Bink 1). ffmpeg unavailable; UE5.8 BinkMedia is Bink2/.bk2-only. Re-encode to .bk2 (Bink2ForUnreal.exe) or mp4 pending M4 — see work/umodel_547_spike.md"
+    },
+    {
+      "asset_key": "data:retail/palettes",
+      "source": "retail",
+      "dest": "Content/Data/palettes.json",
+      "status": "extracted",
+      "updated": "2026-07-19",
+      "note": "7 palettes, 1134 colors from retail Colours/*.ini via tools/convert/parse_colours.py"
+    },
+    {
+      "asset_key": "data:ui_strings",
+      "source": "2011+retail",
+      "dest": "Content/Data/ui_strings_2011.json + ui_strings_retail.json",
+      "status": "extracted",
+      "updated": "2026-07-19",
+      "note": "7 frontend sections each (504 keys 2011 / 588 keys retail) via tools/convert/parse_int_tables.py"
+    },
+    {
+      "asset_key": "group:Districts/Financial",
+      "source": "retail",
+      "dest": "/Game/Imported/Districts/Financial",
+      "status": "imported",
+      "updated": "2026-07-20",
+      "note": "MASTER LevelStreaming decoded: 57 chunks / 2345 placements, 100% resolvable (Financial_Block09.json). Streaming set complete; verify variants (Chaos/Riot) separately — see work/district_coverage_note.md"
+    },
+    {
+      "asset_key": "group:Districts/Waterfront",
+      "source": "retail",
+      "dest": "/Game/Imported/Districts/Waterfront",
+      "status": "imported",
+      "updated": "2026-07-20",
+      "note": "MASTER LevelStreaming decoded: 30 chunks / 1394 placements, 100% resolvable (Waterfront_Block05.json). Streaming set complete — see work/district_coverage_note.md"
+    },
+    {
+      "asset_key": "weapon/Weapon_Armas_AgroSniper",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Armas_AgroSniper",
+      "dest": "/Game/Imported/Weapons/Weapon_Armas_AgroSniper",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_Armas_LightMachineGun_762",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Armas_LightMachineGun_762",
+      "dest": "/Game/Imported/Weapons/Weapon_Armas_LightMachineGun_762",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_Armas_Magnum",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Armas_Magnum",
+      "dest": "/Game/Imported/Weapons/Weapon_Armas_Magnum",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_Armas_Shotgun",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Armas_Shotgun",
+      "dest": "/Game/Imported/Weapons/Weapon_Armas_Shotgun",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_Armas_SniperRifle_50Cal",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Armas_SniperRifle_50Cal",
+      "dest": "/Game/Imported/Weapons/Weapon_Armas_SniperRifle_50Cal",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_Armas_SubMachineGun_Pitbull",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Armas_SubMachineGun_Pitbull",
+      "dest": "/Game/Imported/Weapons/Weapon_Armas_SubMachineGun_Pitbull",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_AssaultRifle",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle",
+      "dest": "/Game/Imported/Weapons/Weapon_AssaultRifle",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_AssaultRifle_Apocalypse",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_Apocalypse",
+      "dest": "/Game/Imported/Weapons/Weapon_AssaultRifle_Apocalypse",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_AssaultRifle_ATac",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_ATac",
+      "dest": "/Game/Imported/Weapons/Weapon_AssaultRifle_ATac",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_AssaultRifle_COBR-A",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_COBR-A",
+      "dest": "/Game/Imported/Weapons/Weapon_AssaultRifle_COBR-A",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_AssaultRifle_CR5",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_CR5",
+      "dest": "/Game/Imported/Weapons/Weapon_AssaultRifle_CR5",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_AssaultRifle_Fanatic",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_Fanatic",
+      "dest": "/Game/Imported/Weapons/Weapon_AssaultRifle_Fanatic",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_AssaultRifle_FAR",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_FAR",
+      "dest": "/Game/Imported/Weapons/Weapon_AssaultRifle_FAR",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_AssaultRifle_NTEC-7",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_NTEC-7",
+      "dest": "/Game/Imported/Weapons/Weapon_AssaultRifle_NTEC-7",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_AssaultRifle_Raptor",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_Raptor",
+      "dest": "/Game/Imported/Weapons/Weapon_AssaultRifle_Raptor",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_AssaultRifle_VAS",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_VAS",
+      "dest": "/Game/Imported/Weapons/Weapon_AssaultRifle_VAS",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_AutomaticShotgun",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AutomaticShotgun",
+      "dest": "/Game/Imported/Weapons/Weapon_AutomaticShotgun",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_BaseAssaultRifle",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_BaseAssaultRifle",
+      "dest": "/Game/Imported/Weapons/Weapon_BaseAssaultRifle",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_BurstFirePistol",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_BurstFirePistol",
+      "dest": "/Game/Imported/Weapons/Weapon_BurstFirePistol",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_BurstFireRifle",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_BurstFireRifle",
+      "dest": "/Game/Imported/Weapons/Weapon_BurstFireRifle",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_CAP40",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_CAP40",
+      "dest": "/Game/Imported/Weapons/Weapon_CAP40",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_Carbine",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Carbine",
+      "dest": "/Game/Imported/Weapons/Weapon_Carbine",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_Colby_Commander",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Colby_Commander",
+      "dest": "/Game/Imported/Weapons/Weapon_Colby_Commander",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_ColbyClassic",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_ColbyClassic",
+      "dest": "/Game/Imported/Weapons/Weapon_ColbyClassic",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_ConcussionGrenade",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_ConcussionGrenade",
+      "dest": "/Game/Imported/Weapons/Weapon_ConcussionGrenade",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_CrowdControlGun",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_CrowdControlGun",
+      "dest": "/Game/Imported/Weapons/Weapon_CrowdControlGun",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_DartGun",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_DartGun",
+      "dest": "/Game/Imported/Weapons/Weapon_DartGun",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_EightBall",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_EightBall",
+      "dest": "/Game/Imported/Weapons/Weapon_EightBall",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_EMPGrenade",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_EMPGrenade",
+      "dest": "/Game/Imported/Weapons/Weapon_EMPGrenade",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_Explosive_AAEPD",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Explosive_AAEPD",
+      "dest": "/Game/Imported/Weapons/Weapon_Explosive_AAEPD",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_Explosive_AAPED",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Explosive_AAPED",
+      "dest": "/Game/Imported/Weapons/Weapon_Explosive_AAPED",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_Explosive_EOL",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Explosive_EOL",
+      "dest": "/Game/Imported/Weapons/Weapon_Explosive_EOL",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_FlareGun",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_FlareGun",
+      "dest": "/Game/Imported/Weapons/Weapon_FlareGun",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_FragmentationGrenade",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_FragmentationGrenade",
+      "dest": "/Game/Imported/Weapons/Weapon_FragmentationGrenade",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_GrenadeLauncher",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_GrenadeLauncher",
+      "dest": "/Game/Imported/Weapons/Weapon_GrenadeLauncher",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_HouseBrick",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_HouseBrick",
+      "dest": "/Game/Imported/Weapons/Weapon_HouseBrick",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_Katana",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Katana",
+      "dest": "/Game/Imported/Weapons/Weapon_Katana",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_LightMachineGun_556",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LightMachineGun_556",
+      "dest": "/Game/Imported/Weapons/Weapon_LightMachineGun_556",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_LightMachineGun_762",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LightMachineGun_762",
+      "dest": "/Game/Imported/Weapons/Weapon_LightMachineGun_762",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_LightMachineGun_SSW",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LightMachineGun_SSW",
+      "dest": "/Game/Imported/Weapons/Weapon_LightMachineGun_SSW",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_LMG_AMG",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LMG_AMG",
+      "dest": "/Game/Imported/Weapons/Weapon_LMG_AMG",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_LMG_CAS",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LMG_CAS",
+      "dest": "/Game/Imported/Weapons/Weapon_LMG_CAS",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_LMG_Swarm",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LMG_Swarm",
+      "dest": "/Game/Imported/Weapons/Weapon_LMG_Swarm",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_MachinePistol",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_MachinePistol",
+      "dest": "/Game/Imported/Weapons/Weapon_MachinePistol",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_MachinePistol_PDW",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_MachinePistol_PDW",
+      "dest": "/Game/Imported/Weapons/Weapon_MachinePistol_PDW",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_Magnum",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Magnum",
+      "dest": "/Game/Imported/Weapons/Weapon_Magnum",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_Magnum_Revolver",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Magnum_Revolver",
+      "dest": "/Game/Imported/Weapons/Weapon_Magnum_Revolver",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_MobilePhone",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_MobilePhone",
+      "dest": "/Game/Imported/Weapons/Weapon_MobilePhone",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_ObeyaBattleRifle",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_ObeyaBattleRifle",
+      "dest": "/Game/Imported/Weapons/Weapon_ObeyaBattleRifle",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_PDW57",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_PDW57",
+      "dest": "/Game/Imported/Weapons/Weapon_PDW57",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_PercussionGrenade",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_PercussionGrenade",
+      "dest": "/Game/Imported/Weapons/Weapon_PercussionGrenade",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_Retail_Magnum",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Retail_Magnum",
+      "dest": "/Game/Imported/Weapons/Weapon_Retail_Magnum",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_Revolver_Apocalypse",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Revolver_Apocalypse",
+      "dest": "/Game/Imported/Weapons/Weapon_Revolver_Apocalypse",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_Revolver_Showstopper",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Revolver_Showstopper",
+      "dest": "/Game/Imported/Weapons/Weapon_Revolver_Showstopper",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_Rifle",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Rifle",
+      "dest": "/Game/Imported/Weapons/Weapon_Rifle",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_Rifle_FFA",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Rifle_FFA",
+      "dest": "/Game/Imported/Weapons/Weapon_Rifle_FFA",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_Rifle_PBR",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Rifle_PBR",
+      "dest": "/Game/Imported/Weapons/Weapon_Rifle_PBR",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_Rifle_SACR",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Rifle_SACR",
+      "dest": "/Game/Imported/Weapons/Weapon_Rifle_SACR",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_RiotGun",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_RiotGun",
+      "dest": "/Game/Imported/Weapons/Weapon_RiotGun",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_RocketLauncher",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_RocketLauncher",
+      "dest": "/Game/Imported/Weapons/Weapon_RocketLauncher",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_SawnOffShotgun",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SawnOffShotgun",
+      "dest": "/Game/Imported/Weapons/Weapon_SawnOffShotgun",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_Secondary_Fr0g",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Secondary_Fr0g",
+      "dest": "/Game/Imported/Weapons/Weapon_Secondary_Fr0g",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_Secondary_Mountie",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Secondary_Mountie",
+      "dest": "/Game/Imported/Weapons/Weapon_Secondary_Mountie",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_Secondary_OCSP",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Secondary_OCSP",
+      "dest": "/Game/Imported/Weapons/Weapon_Secondary_OCSP",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_Secondary_OUL",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Secondary_OUL",
+      "dest": "/Game/Imported/Weapons/Weapon_Secondary_OUL",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_SemiAutoPistol",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SemiAutoPistol",
+      "dest": "/Game/Imported/Weapons/Weapon_SemiAutoPistol",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_Shotgun",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Shotgun",
+      "dest": "/Game/Imported/Weapons/Weapon_Shotgun",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_Shotgun_DOW",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Shotgun_DOW",
+      "dest": "/Game/Imported/Weapons/Weapon_Shotgun_DOW",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_Shotgun_Shredder",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Shotgun_Shredder",
+      "dest": "/Game/Imported/Weapons/Weapon_Shotgun_Shredder",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_Shotgun_Tas20",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Shotgun_Tas20",
+      "dest": "/Game/Imported/Weapons/Weapon_Shotgun_Tas20",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_SMG_ACES",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_ACES",
+      "dest": "/Game/Imported/Weapons/Weapon_SMG_ACES",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_SMG_C9S",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_C9S",
+      "dest": "/Game/Imported/Weapons/Weapon_SMG_C9S",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_SMG_CBMP",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_CBMP",
+      "dest": "/Game/Imported/Weapons/Weapon_SMG_CBMP",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_SMG_Norsemen",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_Norsemen",
+      "dest": "/Game/Imported/Weapons/Weapon_SMG_Norsemen",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_SMG_Vector",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_Vector",
+      "dest": "/Game/Imported/Weapons/Weapon_SMG_Vector",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_SniperRifle_50Cal",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_50Cal",
+      "dest": "/Game/Imported/Weapons/Weapon_SniperRifle_50Cal",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_SniperRifle_HVR762",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_HVR762",
+      "dest": "/Game/Imported/Weapons/Weapon_SniperRifle_HVR762",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_SniperRifle_Pathfinder",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_Pathfinder",
+      "dest": "/Game/Imported/Weapons/Weapon_SniperRifle_Pathfinder",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_SniperRifle_PSR",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_PSR",
+      "dest": "/Game/Imported/Weapons/Weapon_SniperRifle_PSR",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_SniperRifle_SBSR",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_SBSR",
+      "dest": "/Game/Imported/Weapons/Weapon_SniperRifle_SBSR",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_SniperRifle_Vesper",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_Vesper",
+      "dest": "/Game/Imported/Weapons/Weapon_SniperRifle_Vesper",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_SnowBall",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SnowBall",
+      "dest": "/Game/Imported/Weapons/Weapon_SnowBall",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_SnubNoseRevolver",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SnubNoseRevolver",
+      "dest": "/Game/Imported/Weapons/Weapon_SnubNoseRevolver",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_StarterSMG",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_StarterSMG",
+      "dest": "/Game/Imported/Weapons/Weapon_StarterSMG",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_StingerGrenade",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_StingerGrenade",
+      "dest": "/Game/Imported/Weapons/Weapon_StingerGrenade",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_StunGun",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_StunGun",
+      "dest": "/Game/Imported/Weapons/Weapon_StunGun",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_SubMachineGun",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SubMachineGun",
+      "dest": "/Game/Imported/Weapons/Weapon_SubMachineGun",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_TacticalAssaultRifle",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_TacticalAssaultRifle",
+      "dest": "/Game/Imported/Weapons/Weapon_TacticalAssaultRifle",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_TommyGun",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_TommyGun",
+      "dest": "/Game/Imported/Weapons/Weapon_TommyGun",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "weapon/Weapon_Vas",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Vas",
+      "dest": "/Game/Imported/Weapons/Weapon_Vas",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00"
+    },
+    {
+      "asset_key": "material/2mScaffold",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\2mScaffold",
+      "dest": "/Game/Imported/MaterialDatabase/2mScaffold",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Aerials",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Aerials",
+      "dest": "/Game/Imported/MaterialDatabase/Aerials",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/AirDucts",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\AirDucts",
+      "dest": "/Game/Imported/MaterialDatabase/AirDucts",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Alarm",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Alarm",
+      "dest": "/Game/Imported/MaterialDatabase/Alarm",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/AmmoVendingMachine",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\AmmoVendingMachine",
+      "dest": "/Game/Imported/MaterialDatabase/AmmoVendingMachine",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/ApartmentSalesBanner",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\ApartmentSalesBanner",
+      "dest": "/Game/Imported/MaterialDatabase/ApartmentSalesBanner",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/ArsonDoor",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\ArsonDoor",
+      "dest": "/Game/Imported/MaterialDatabase/ArsonDoor",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Asphalt",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Asphalt",
+      "dest": "/Game/Imported/MaterialDatabase/Asphalt",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Asylum_Banners",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Asylum_Banners",
+      "dest": "/Game/Imported/MaterialDatabase/Asylum_Banners",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Asylum_BlackMarketGoods",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Asylum_BlackMarketGoods",
+      "dest": "/Game/Imported/MaterialDatabase/Asylum_BlackMarketGoods",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Asylum_Decals",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Asylum_Decals",
+      "dest": "/Game/Imported/MaterialDatabase/Asylum_Decals",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Backdrop",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Backdrop",
+      "dest": "/Game/Imported/MaterialDatabase/Backdrop",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Balcony",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Balcony",
+      "dest": "/Game/Imported/MaterialDatabase/Balcony",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Balloon_Prop",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Balloon_Prop",
+      "dest": "/Game/Imported/MaterialDatabase/Balloon_Prop",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Bank_lights",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Bank_lights",
+      "dest": "/Game/Imported/MaterialDatabase/Bank_lights",
+      "status": "manual",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": "MIC/emissive color params, no bitmaps - reconstruct at import"
+    },
+    {
+      "asset_key": "material/Bank_Package",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Bank_Package",
+      "dest": "/Game/Imported/MaterialDatabase/Bank_Package",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Bank_Vault_Doors",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Bank_Vault_Doors",
+      "dest": "/Game/Imported/MaterialDatabase/Bank_Vault_Doors",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/BankMachine",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\BankMachine",
+      "dest": "/Game/Imported/MaterialDatabase/BankMachine",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Banners",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Banners",
+      "dest": "/Game/Imported/MaterialDatabase/Banners",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/BarbWire",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\BarbWire",
+      "dest": "/Game/Imported/MaterialDatabase/BarbWire",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/BarrelsAndBoxes",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\BarrelsAndBoxes",
+      "dest": "/Game/Imported/MaterialDatabase/BarrelsAndBoxes",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/BasketBallHoop",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\BasketBallHoop",
+      "dest": "/Game/Imported/MaterialDatabase/BasketBallHoop",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Baylan_01",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Baylan_01",
+      "dest": "/Game/Imported/MaterialDatabase/Baylan_01",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/BedFrame",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\BedFrame",
+      "dest": "/Game/Imported/MaterialDatabase/BedFrame",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/BeerBottle",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\BeerBottle",
+      "dest": "/Game/Imported/MaterialDatabase/BeerBottle",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Billboard",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Billboard",
+      "dest": "/Game/Imported/MaterialDatabase/Billboard",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Bollards",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Bollards",
+      "dest": "/Game/Imported/MaterialDatabase/Bollards",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Boxcar",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Boxcar",
+      "dest": "/Game/Imported/MaterialDatabase/Boxcar",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/BoxHedge",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\BoxHedge",
+      "dest": "/Game/Imported/MaterialDatabase/BoxHedge",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/BreakableDoors",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\BreakableDoors",
+      "dest": "/Game/Imported/MaterialDatabase/BreakableDoors",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/breakwater_galleria",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\breakwater_galleria",
+      "dest": "/Game/Imported/MaterialDatabase/breakwater_galleria",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Brick_Large",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Brick_Large",
+      "dest": "/Game/Imported/MaterialDatabase/Brick_Large",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Brick_New",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Brick_New",
+      "dest": "/Game/Imported/MaterialDatabase/Brick_New",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Brick_Old",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Brick_Old",
+      "dest": "/Game/Imported/MaterialDatabase/Brick_Old",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Brick_Old_GraffitiTemp",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Brick_Old_GraffitiTemp",
+      "dest": "/Game/Imported/MaterialDatabase/Brick_Old_GraffitiTemp",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Brick_OldPaint",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Brick_OldPaint",
+      "dest": "/Game/Imported/MaterialDatabase/Brick_OldPaint",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Brick_Paint",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Brick_Paint",
+      "dest": "/Game/Imported/MaterialDatabase/Brick_Paint",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Brick_RLD",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Brick_RLD",
+      "dest": "/Game/Imported/MaterialDatabase/Brick_RLD",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Brick_Rough",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Brick_Rough",
+      "dest": "/Game/Imported/MaterialDatabase/Brick_Rough",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Brick_Test",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Brick_Test",
+      "dest": "/Game/Imported/MaterialDatabase/Brick_Test",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/BridgeCars",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\BridgeCars",
+      "dest": "/Game/Imported/MaterialDatabase/BridgeCars",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/BusShelter",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\BusShelter",
+      "dest": "/Game/Imported/MaterialDatabase/BusShelter",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Cables",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Cables",
+      "dest": "/Game/Imported/MaterialDatabase/Cables",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Canvas",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Canvas",
+      "dest": "/Game/Imported/MaterialDatabase/Canvas",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/CardboardBox",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\CardboardBox",
+      "dest": "/Game/Imported/MaterialDatabase/CardboardBox",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/CargoContainer",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\CargoContainer",
+      "dest": "/Game/Imported/MaterialDatabase/CargoContainer",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Carpet",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Carpet",
+      "dest": "/Game/Imported/MaterialDatabase/Carpet",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/CeilingTiles",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\CeilingTiles",
+      "dest": "/Game/Imported/MaterialDatabase/CeilingTiles",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Cement",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Cement",
+      "dest": "/Game/Imported/MaterialDatabase/Cement",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/ChainLinkFence",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\ChainLinkFence",
+      "dest": "/Game/Imported/MaterialDatabase/ChainLinkFence",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/CinderBlocks",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\CinderBlocks",
+      "dest": "/Game/Imported/MaterialDatabase/CinderBlocks",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/CivicGarbageCan",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\CivicGarbageCan",
+      "dest": "/Game/Imported/MaterialDatabase/CivicGarbageCan",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Clocks",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Clocks",
+      "dest": "/Game/Imported/MaterialDatabase/Clocks",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/ColourBalancingSpheres",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\ColourBalancingSpheres",
+      "dest": "/Game/Imported/MaterialDatabase/ColourBalancingSpheres",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/CommercialWindows",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\CommercialWindows",
+      "dest": "/Game/Imported/MaterialDatabase/CommercialWindows",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Concrete",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Concrete",
+      "dest": "/Game/Imported/MaterialDatabase/Concrete",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Concrete_Block",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Concrete_Block",
+      "dest": "/Game/Imported/MaterialDatabase/Concrete_Block",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Concrete_Floor",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Concrete_Floor",
+      "dest": "/Game/Imported/MaterialDatabase/Concrete_Floor",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Concrete_Generic",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Concrete_Generic",
+      "dest": "/Game/Imported/MaterialDatabase/Concrete_Generic",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Concrete_Grooved",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Concrete_Grooved",
+      "dest": "/Game/Imported/MaterialDatabase/Concrete_Grooved",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Concrete_Horizontal",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Concrete_Horizontal",
+      "dest": "/Game/Imported/MaterialDatabase/Concrete_Horizontal",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Concrete_RLD",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Concrete_RLD",
+      "dest": "/Game/Imported/MaterialDatabase/Concrete_RLD",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Concrete_SmallBlocks",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Concrete_SmallBlocks",
+      "dest": "/Game/Imported/MaterialDatabase/Concrete_SmallBlocks",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/ConcreteBarrier",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\ConcreteBarrier",
+      "dest": "/Game/Imported/MaterialDatabase/ConcreteBarrier",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/ConstructionAids",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\ConstructionAids",
+      "dest": "/Game/Imported/MaterialDatabase/ConstructionAids",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/ControlDesk",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\ControlDesk",
+      "dest": "/Game/Imported/MaterialDatabase/ControlDesk",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Cornice",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Cornice",
+      "dest": "/Game/Imported/MaterialDatabase/Cornice",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/CrimeScene",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\CrimeScene",
+      "dest": "/Game/Imported/MaterialDatabase/CrimeScene",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/CSD_Brick",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\CSD_Brick",
+      "dest": "/Game/Imported/MaterialDatabase/CSD_Brick",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/CSD_Ceiling",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\CSD_Ceiling",
+      "dest": "/Game/Imported/MaterialDatabase/CSD_Ceiling",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/CSD_Cement",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\CSD_Cement",
+      "dest": "/Game/Imported/MaterialDatabase/CSD_Cement",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/CSD_DoorsCell",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\CSD_DoorsCell",
+      "dest": "/Game/Imported/MaterialDatabase/CSD_DoorsCell",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/CSD_DoorsCorridor",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\CSD_DoorsCorridor",
+      "dest": "/Game/Imported/MaterialDatabase/CSD_DoorsCorridor",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/CSD_DoorsLift",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\CSD_DoorsLift",
+      "dest": "/Game/Imported/MaterialDatabase/CSD_DoorsLift",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/CSD_DoorsUtility",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\CSD_DoorsUtility",
+      "dest": "/Game/Imported/MaterialDatabase/CSD_DoorsUtility",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/CSD_FilingCabinet",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\CSD_FilingCabinet",
+      "dest": "/Game/Imported/MaterialDatabase/CSD_FilingCabinet",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/CSD_FloorTiles",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\CSD_FloorTiles",
+      "dest": "/Game/Imported/MaterialDatabase/CSD_FloorTiles",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/CSD_Glass",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\CSD_Glass",
+      "dest": "/Game/Imported/MaterialDatabase/CSD_Glass",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/CSD_InteriorLights",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\CSD_InteriorLights",
+      "dest": "/Game/Imported/MaterialDatabase/CSD_InteriorLights",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/CSD_Kitchen",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\CSD_Kitchen",
+      "dest": "/Game/Imported/MaterialDatabase/CSD_Kitchen",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/CSD_KitchenObjects",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\CSD_KitchenObjects",
+      "dest": "/Game/Imported/MaterialDatabase/CSD_KitchenObjects",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/CSD_KitchenShelvingUnits",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\CSD_KitchenShelvingUnits",
+      "dest": "/Game/Imported/MaterialDatabase/CSD_KitchenShelvingUnits",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/CSD_Laptop",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\CSD_Laptop",
+      "dest": "/Game/Imported/MaterialDatabase/CSD_Laptop",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/CSD_Litter",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\CSD_Litter",
+      "dest": "/Game/Imported/MaterialDatabase/CSD_Litter",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/CSD_MapBoard",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\CSD_MapBoard",
+      "dest": "/Game/Imported/MaterialDatabase/CSD_MapBoard",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/CSD_MiscObjects",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\CSD_MiscObjects",
+      "dest": "/Game/Imported/MaterialDatabase/CSD_MiscObjects",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/CSD_OperatingRoomEquipment",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\CSD_OperatingRoomEquipment",
+      "dest": "/Game/Imported/MaterialDatabase/CSD_OperatingRoomEquipment",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/CSD_OperatingTrolley",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\CSD_OperatingTrolley",
+      "dest": "/Game/Imported/MaterialDatabase/CSD_OperatingTrolley",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/CSD_PictureFrames",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\CSD_PictureFrames",
+      "dest": "/Game/Imported/MaterialDatabase/CSD_PictureFrames",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/CSD_Plaque",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\CSD_Plaque",
+      "dest": "/Game/Imported/MaterialDatabase/CSD_Plaque",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/CSD_RoseWindow",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\CSD_RoseWindow",
+      "dest": "/Game/Imported/MaterialDatabase/CSD_RoseWindow",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/CSD_Rubble",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\CSD_Rubble",
+      "dest": "/Game/Imported/MaterialDatabase/CSD_Rubble",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/CSD_StaticMeshes",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\CSD_StaticMeshes",
+      "dest": "/Game/Imported/MaterialDatabase/CSD_StaticMeshes",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/CSD_TestPackage",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\CSD_TestPackage",
+      "dest": "/Game/Imported/MaterialDatabase/CSD_TestPackage",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/CSD_Vista",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\CSD_Vista",
+      "dest": "/Game/Imported/MaterialDatabase/CSD_Vista",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/CSD_Water",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\CSD_Water",
+      "dest": "/Game/Imported/MaterialDatabase/CSD_Water",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/CSD_Wood",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\CSD_Wood",
+      "dest": "/Game/Imported/MaterialDatabase/CSD_Wood",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/CSD_WoodenDesk",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\CSD_WoodenDesk",
+      "dest": "/Game/Imported/MaterialDatabase/CSD_WoodenDesk",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Culvert",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Culvert",
+      "dest": "/Game/Imported/MaterialDatabase/Culvert",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Dancefloor",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Dancefloor",
+      "dest": "/Game/Imported/MaterialDatabase/Dancefloor",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/DestructibleGlass",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\DestructibleGlass",
+      "dest": "/Game/Imported/MaterialDatabase/DestructibleGlass",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/DiamondFloor",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\DiamondFloor",
+      "dest": "/Game/Imported/MaterialDatabase/DiamondFloor",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/DisplayPoint_CharacterMesh",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\DisplayPoint_CharacterMesh",
+      "dest": "/Game/Imported/MaterialDatabase/DisplayPoint_CharacterMesh",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/DisplayPoint_VehicleMesh",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\DisplayPoint_VehicleMesh",
+      "dest": "/Game/Imported/MaterialDatabase/DisplayPoint_VehicleMesh",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/DJ_Equipment",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\DJ_Equipment",
+      "dest": "/Game/Imported/MaterialDatabase/DJ_Equipment",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Door_BackDoor",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Door_BackDoor",
+      "dest": "/Game/Imported/MaterialDatabase/Door_BackDoor",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Door_OldStone",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Door_OldStone",
+      "dest": "/Game/Imported/MaterialDatabase/Door_OldStone",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Door_Rear",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Door_Rear",
+      "dest": "/Game/Imported/MaterialDatabase/Door_Rear",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Doors_Residential1",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Doors_Residential1",
+      "dest": "/Game/Imported/MaterialDatabase/Doors_Residential1",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Doors_Residential2",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Doors_Residential2",
+      "dest": "/Game/Imported/MaterialDatabase/Doors_Residential2",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/DoorsBoarded",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\DoorsBoarded",
+      "dest": "/Game/Imported/MaterialDatabase/DoorsBoarded",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Dumpster",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Dumpster",
+      "dest": "/Game/Imported/MaterialDatabase/Dumpster",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/ElectricalBox",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\ElectricalBox",
+      "dest": "/Game/Imported/MaterialDatabase/ElectricalBox",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Emissive",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Emissive",
+      "dest": "/Game/Imported/MaterialDatabase/Emissive",
+      "status": "manual",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": "MIC/emissive color params, no bitmaps - reconstruct at import"
+    },
+    {
+      "asset_key": "material/Enforcer_Office_Clutter",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Enforcer_Office_Clutter",
+      "dest": "/Game/Imported/MaterialDatabase/Enforcer_Office_Clutter",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/EnforcerFoodLitter",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\EnforcerFoodLitter",
+      "dest": "/Game/Imported/MaterialDatabase/EnforcerFoodLitter",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/EnforcerSigns",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\EnforcerSigns",
+      "dest": "/Game/Imported/MaterialDatabase/EnforcerSigns",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/EquipmentCase",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\EquipmentCase",
+      "dest": "/Game/Imported/MaterialDatabase/EquipmentCase",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/ESD_DecalMeshes",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\ESD_DecalMeshes",
+      "dest": "/Game/Imported/MaterialDatabase/ESD_DecalMeshes",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/ESD_Plaque",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\ESD_Plaque",
+      "dest": "/Game/Imported/MaterialDatabase/ESD_Plaque",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/ESD_StaticMesh_01",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\ESD_StaticMesh_01",
+      "dest": "/Game/Imported/MaterialDatabase/ESD_StaticMesh_01",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/ESD_StaticMeshes",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\ESD_StaticMeshes",
+      "dest": "/Game/Imported/MaterialDatabase/ESD_StaticMeshes",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/ExitSigns",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\ExitSigns",
+      "dest": "/Game/Imported/MaterialDatabase/ExitSigns",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Fabric",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Fabric",
+      "dest": "/Game/Imported/MaterialDatabase/Fabric",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FactionLogoAPB",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FactionLogoAPB",
+      "dest": "/Game/Imported/MaterialDatabase/FactionLogoAPB",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Faux_Wall",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Faux_Wall",
+      "dest": "/Game/Imported/MaterialDatabase/Faux_Wall",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FD_Block02",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FD_Block02",
+      "dest": "/Game/Imported/MaterialDatabase/FD_Block02",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FD_Block06",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FD_Block06",
+      "dest": "/Game/Imported/MaterialDatabase/FD_Block06",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FD_Block07",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FD_Block07",
+      "dest": "/Game/Imported/MaterialDatabase/FD_Block07",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FD_Block08",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FD_Block08",
+      "dest": "/Game/Imported/MaterialDatabase/FD_Block08",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FD_Block12",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FD_Block12",
+      "dest": "/Game/Imported/MaterialDatabase/FD_Block12",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FD_Block16",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FD_Block16",
+      "dest": "/Game/Imported/MaterialDatabase/FD_Block16",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FD_Block21",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FD_Block21",
+      "dest": "/Game/Imported/MaterialDatabase/FD_Block21",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FD_Block26",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FD_Block26",
+      "dest": "/Game/Imported/MaterialDatabase/FD_Block26",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FD_Block43",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FD_Block43",
+      "dest": "/Game/Imported/MaterialDatabase/FD_Block43",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FD_DecalMeshes",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FD_DecalMeshes",
+      "dest": "/Game/Imported/MaterialDatabase/FD_DecalMeshes",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FD_Lanterns",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FD_Lanterns",
+      "dest": "/Game/Imported/MaterialDatabase/FD_Lanterns",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FD_NeonSigns",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FD_NeonSigns",
+      "dest": "/Game/Imported/MaterialDatabase/FD_NeonSigns",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FD_Signage",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FD_Signage",
+      "dest": "/Game/Imported/MaterialDatabase/FD_Signage",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FD_Signage_Animated",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FD_Signage_Animated",
+      "dest": "/Game/Imported/MaterialDatabase/FD_Signage_Animated",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FD_SignDecals",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FD_SignDecals",
+      "dest": "/Game/Imported/MaterialDatabase/FD_SignDecals",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FD_StaticMeshes",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FD_StaticMeshes",
+      "dest": "/Game/Imported/MaterialDatabase/FD_StaticMeshes",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Fence",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Fence",
+      "dest": "/Game/Imported/MaterialDatabase/Fence",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Fence_RustyRailings",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Fence_RustyRailings",
+      "dest": "/Game/Imported/MaterialDatabase/Fence_RustyRailings",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FenceAndPost",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FenceAndPost",
+      "dest": "/Game/Imported/MaterialDatabase/FenceAndPost",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FenceAndPostRusty",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FenceAndPostRusty",
+      "dest": "/Game/Imported/MaterialDatabase/FenceAndPostRusty",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FencePost",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FencePost",
+      "dest": "/Game/Imported/MaterialDatabase/FencePost",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FenceProfiles",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FenceProfiles",
+      "dest": "/Game/Imported/MaterialDatabase/FenceProfiles",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FenceUVTest",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FenceUVTest",
+      "dest": "/Game/Imported/MaterialDatabase/FenceUVTest",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FenceWood_1",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FenceWood_1",
+      "dest": "/Game/Imported/MaterialDatabase/FenceWood_1",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Fender",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Fender",
+      "dest": "/Game/Imported/MaterialDatabase/Fender",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Ferry",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Ferry",
+      "dest": "/Game/Imported/MaterialDatabase/Ferry",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FerryFloor",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FerryFloor",
+      "dest": "/Game/Imported/MaterialDatabase/FerryFloor",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FerryHull",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FerryHull",
+      "dest": "/Game/Imported/MaterialDatabase/FerryHull",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Fieldstone_Brick",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Fieldstone_Brick",
+      "dest": "/Game/Imported/MaterialDatabase/Fieldstone_Brick",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Financial_CarnacCasino",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Financial_CarnacCasino",
+      "dest": "/Game/Imported/MaterialDatabase/Financial_CarnacCasino",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FinancialAirConditioningUnit",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FinancialAirConditioningUnit",
+      "dest": "/Game/Imported/MaterialDatabase/FinancialAirConditioningUnit",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FinancialAmmoCrates",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FinancialAmmoCrates",
+      "dest": "/Game/Imported/MaterialDatabase/FinancialAmmoCrates",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FinancialAmmoStore",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FinancialAmmoStore",
+      "dest": "/Game/Imported/MaterialDatabase/FinancialAmmoStore",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FinancialAwnings",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FinancialAwnings",
+      "dest": "/Game/Imported/MaterialDatabase/FinancialAwnings",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FinancialCableReels",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FinancialCableReels",
+      "dest": "/Game/Imported/MaterialDatabase/FinancialCableReels",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FinancialCafeFurniture",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FinancialCafeFurniture",
+      "dest": "/Game/Imported/MaterialDatabase/FinancialCafeFurniture",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FinancialCandyCane",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FinancialCandyCane",
+      "dest": "/Game/Imported/MaterialDatabase/FinancialCandyCane",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FinancialCivicGarbageCan",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FinancialCivicGarbageCan",
+      "dest": "/Game/Imported/MaterialDatabase/FinancialCivicGarbageCan",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FinancialConcertHallDome",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FinancialConcertHallDome",
+      "dest": "/Game/Imported/MaterialDatabase/FinancialConcertHallDome",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FinancialConcreteCrucible",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FinancialConcreteCrucible",
+      "dest": "/Game/Imported/MaterialDatabase/FinancialConcreteCrucible",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FinancialConstructionPipes",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FinancialConstructionPipes",
+      "dest": "/Game/Imported/MaterialDatabase/FinancialConstructionPipes",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FinancialCrashBarrier",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FinancialCrashBarrier",
+      "dest": "/Game/Imported/MaterialDatabase/FinancialCrashBarrier",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FinancialCutoutDevilDog",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FinancialCutoutDevilDog",
+      "dest": "/Game/Imported/MaterialDatabase/FinancialCutoutDevilDog",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FinancialDoors_Office1",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FinancialDoors_Office1",
+      "dest": "/Game/Imported/MaterialDatabase/FinancialDoors_Office1",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FinancialEscalator",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FinancialEscalator",
+      "dest": "/Game/Imported/MaterialDatabase/FinancialEscalator",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FinancialFlagPole",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FinancialFlagPole",
+      "dest": "/Game/Imported/MaterialDatabase/FinancialFlagPole",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FinancialFlagPole_Tiptoe",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FinancialFlagPole_Tiptoe",
+      "dest": "/Game/Imported/MaterialDatabase/FinancialFlagPole_Tiptoe",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FinancialFreewayScafolding",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FinancialFreewayScafolding",
+      "dest": "/Game/Imported/MaterialDatabase/FinancialFreewayScafolding",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FinancialLightsModern",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FinancialLightsModern",
+      "dest": "/Game/Imported/MaterialDatabase/FinancialLightsModern",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FinancialOfficeDesk",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FinancialOfficeDesk",
+      "dest": "/Game/Imported/MaterialDatabase/FinancialOfficeDesk",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FinancialParkBench",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FinancialParkBench",
+      "dest": "/Game/Imported/MaterialDatabase/FinancialParkBench",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FinancialPortaCabin",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FinancialPortaCabin",
+      "dest": "/Game/Imported/MaterialDatabase/FinancialPortaCabin",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FinancialSnowPile",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FinancialSnowPile",
+      "dest": "/Game/Imported/MaterialDatabase/FinancialSnowPile",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FinancialStreetlights",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FinancialStreetlights",
+      "dest": "/Game/Imported/MaterialDatabase/FinancialStreetlights",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FinancialStreetSign",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FinancialStreetSign",
+      "dest": "/Game/Imported/MaterialDatabase/FinancialStreetSign",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FinancialTicketBarriers",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FinancialTicketBarriers",
+      "dest": "/Game/Imported/MaterialDatabase/FinancialTicketBarriers",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FinancialTicketMachine",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FinancialTicketMachine",
+      "dest": "/Game/Imported/MaterialDatabase/FinancialTicketMachine",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FinancialTowerCrane",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FinancialTowerCrane",
+      "dest": "/Game/Imported/MaterialDatabase/FinancialTowerCrane",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FinancialVendingStand",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FinancialVendingStand",
+      "dest": "/Game/Imported/MaterialDatabase/FinancialVendingStand",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FinancialWaterfrontSafety",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FinancialWaterfrontSafety",
+      "dest": "/Game/Imported/MaterialDatabase/FinancialWaterfrontSafety",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FinancialWindows_Office1",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FinancialWindows_Office1",
+      "dest": "/Game/Imported/MaterialDatabase/FinancialWindows_Office1",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Fireboom_ClassicMuscle_Crim",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Fireboom_ClassicMuscle_Crim",
+      "dest": "/Game/Imported/MaterialDatabase/Fireboom_ClassicMuscle_Crim",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Fireboom_ClassicMuscle_Enf",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Fireboom_ClassicMuscle_Enf",
+      "dest": "/Game/Imported/MaterialDatabase/Fireboom_ClassicMuscle_Enf",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FireEscape_Rusty",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FireEscape_Rusty",
+      "dest": "/Game/Imported/MaterialDatabase/FireEscape_Rusty",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FireHydrant",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FireHydrant",
+      "dest": "/Game/Imported/MaterialDatabase/FireHydrant",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FireObjects",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FireObjects",
+      "dest": "/Game/Imported/MaterialDatabase/FireObjects",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FloorTiles",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FloorTiles",
+      "dest": "/Game/Imported/MaterialDatabase/FloorTiles",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Foliage_New",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Foliage_New",
+      "dest": "/Game/Imported/MaterialDatabase/Foliage_New",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FoliageBulky",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FoliageBulky",
+      "dest": "/Game/Imported/MaterialDatabase/FoliageBulky",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FoliageBushy",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FoliageBushy",
+      "dest": "/Game/Imported/MaterialDatabase/FoliageBushy",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FoliageGrassy",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FoliageGrassy",
+      "dest": "/Game/Imported/MaterialDatabase/FoliageGrassy",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FreestandingFence",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FreestandingFence",
+      "dest": "/Game/Imported/MaterialDatabase/FreestandingFence",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/FruitStall",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\FruitStall",
+      "dest": "/Game/Imported/MaterialDatabase/FruitStall",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Gantry",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Gantry",
+      "dest": "/Game/Imported/MaterialDatabase/Gantry",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Garage",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Garage",
+      "dest": "/Game/Imported/MaterialDatabase/Garage",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/GarageDoorsCanopy",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\GarageDoorsCanopy",
+      "dest": "/Game/Imported/MaterialDatabase/GarageDoorsCanopy",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/GarageDoorsSegmented",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\GarageDoorsSegmented",
+      "dest": "/Game/Imported/MaterialDatabase/GarageDoorsSegmented",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/GarageDoorsSliding",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\GarageDoorsSliding",
+      "dest": "/Game/Imported/MaterialDatabase/GarageDoorsSliding",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/GarbageBag",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\GarbageBag",
+      "dest": "/Game/Imported/MaterialDatabase/GarbageBag",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/GarbageCan",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\GarbageCan",
+      "dest": "/Game/Imported/MaterialDatabase/GarbageCan",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/GasCylinders",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\GasCylinders",
+      "dest": "/Game/Imported/MaterialDatabase/GasCylinders",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/GasStationPump",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\GasStationPump",
+      "dest": "/Game/Imported/MaterialDatabase/GasStationPump",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/GasStationSign",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\GasStationSign",
+      "dest": "/Game/Imported/MaterialDatabase/GasStationSign",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Generic_Banners",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Generic_Banners",
+      "dest": "/Game/Imported/MaterialDatabase/Generic_Banners",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Generic_Foliage",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Generic_Foliage",
+      "dest": "/Game/Imported/MaterialDatabase/Generic_Foliage",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Generic_Plaque",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Generic_Plaque",
+      "dest": "/Game/Imported/MaterialDatabase/Generic_Plaque",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Girder",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Girder",
+      "dest": "/Game/Imported/MaterialDatabase/Girder",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Glass",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Glass",
+      "dest": "/Game/Imported/MaterialDatabase/Glass",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Glass_Chips",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Glass_Chips",
+      "dest": "/Game/Imported/MaterialDatabase/Glass_Chips",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Glass_Dirty",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Glass_Dirty",
+      "dest": "/Game/Imported/MaterialDatabase/Glass_Dirty",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/GlassTemp",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\GlassTemp",
+      "dest": "/Game/Imported/MaterialDatabase/GlassTemp",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/GolemobileMaterials",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\GolemobileMaterials",
+      "dest": "/Game/Imported/MaterialDatabase/GolemobileMaterials",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/GolemobileMaterialsSimplified",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\GolemobileMaterialsSimplified",
+      "dest": "/Game/Imported/MaterialDatabase/GolemobileMaterialsSimplified",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/GraffitiDecals",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\GraffitiDecals",
+      "dest": "/Game/Imported/MaterialDatabase/GraffitiDecals",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/GraffitiMaps",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\GraffitiMaps",
+      "dest": "/Game/Imported/MaterialDatabase/GraffitiMaps",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/GraffitiStencil",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\GraffitiStencil",
+      "dest": "/Game/Imported/MaterialDatabase/GraffitiStencil",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Grass",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Grass",
+      "dest": "/Game/Imported/MaterialDatabase/Grass",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Gutter",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Gutter",
+      "dest": "/Game/Imported/MaterialDatabase/Gutter",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/HarbourWall",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\HarbourWall",
+      "dest": "/Game/Imported/MaterialDatabase/HarbourWall",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/IndustrialAirConditioningUnit",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\IndustrialAirConditioningUnit",
+      "dest": "/Game/Imported/MaterialDatabase/IndustrialAirConditioningUnit",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/IndustrialGenerator",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\IndustrialGenerator",
+      "dest": "/Game/Imported/MaterialDatabase/IndustrialGenerator",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/IndustrialMachinery",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\IndustrialMachinery",
+      "dest": "/Game/Imported/MaterialDatabase/IndustrialMachinery",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/IndustrialWheeledUnits",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\IndustrialWheeledUnits",
+      "dest": "/Game/Imported/MaterialDatabase/IndustrialWheeledUnits",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/InformationBooth",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\InformationBooth",
+      "dest": "/Game/Imported/MaterialDatabase/InformationBooth",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/InsulationRoll",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\InsulationRoll",
+      "dest": "/Game/Imported/MaterialDatabase/InsulationRoll",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/InteriorWall_Old",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\InteriorWall_Old",
+      "dest": "/Game/Imported/MaterialDatabase/InteriorWall_Old",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/John_TemplateFiles",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\John_TemplateFiles",
+      "dest": "/Game/Imported/MaterialDatabase/John_TemplateFiles",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/JokerStore",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\JokerStore",
+      "dest": "/Game/Imported/MaterialDatabase/JokerStore",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Ladder",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Ladder",
+      "dest": "/Game/Imported/MaterialDatabase/Ladder",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Lathing",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Lathing",
+      "dest": "/Game/Imported/MaterialDatabase/Lathing",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/LeaningMan",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\LeaningMan",
+      "dest": "/Game/Imported/MaterialDatabase/LeaningMan",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Leather",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Leather",
+      "dest": "/Game/Imported/MaterialDatabase/Leather",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/LitterDecals",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\LitterDecals",
+      "dest": "/Game/Imported/MaterialDatabase/LitterDecals",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/LoadingBayDoor",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\LoadingBayDoor",
+      "dest": "/Game/Imported/MaterialDatabase/LoadingBayDoor",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/LOGO_MyWorld",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\LOGO_MyWorld",
+      "dest": "/Game/Imported/MaterialDatabase/LOGO_MyWorld",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Mailbox",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Mailbox",
+      "dest": "/Game/Imported/MaterialDatabase/Mailbox",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Mattress",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Mattress",
+      "dest": "/Game/Imported/MaterialDatabase/Mattress",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Metal",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Metal",
+      "dest": "/Game/Imported/MaterialDatabase/Metal",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Metal_RLD",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Metal_RLD",
+      "dest": "/Game/Imported/MaterialDatabase/Metal_RLD",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Metal_Wall",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Metal_Wall",
+      "dest": "/Game/Imported/MaterialDatabase/Metal_Wall",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Metal_Wall_Modern",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Metal_Wall_Modern",
+      "dest": "/Game/Imported/MaterialDatabase/Metal_Wall_Modern",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/MetalFence",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\MetalFence",
+      "dest": "/Game/Imported/MaterialDatabase/MetalFence",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/MetalFrames",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\MetalFrames",
+      "dest": "/Game/Imported/MaterialDatabase/MetalFrames",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Metals",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Metals",
+      "dest": "/Game/Imported/MaterialDatabase/Metals",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/MidtownBoardedDoorsWindows",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\MidtownBoardedDoorsWindows",
+      "dest": "/Game/Imported/MaterialDatabase/MidtownBoardedDoorsWindows",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/MidtownDistrict_Lights",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\MidtownDistrict_Lights",
+      "dest": "/Game/Imported/MaterialDatabase/MidtownDistrict_Lights",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/ModernBricks",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\ModernBricks",
+      "dest": "/Game/Imported/MaterialDatabase/ModernBricks",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/MonitorArray",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\MonitorArray",
+      "dest": "/Game/Imported/MaterialDatabase/MonitorArray",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Motorway",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Motorway",
+      "dest": "/Game/Imported/MaterialDatabase/Motorway",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/MyWorld",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\MyWorld",
+      "dest": "/Game/Imported/MaterialDatabase/MyWorld",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Neon",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Neon",
+      "dest": "/Game/Imported/MaterialDatabase/Neon",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/NEON_Cocktail",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\NEON_Cocktail",
+      "dest": "/Game/Imported/MaterialDatabase/NEON_Cocktail",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/NewspaperBox",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\NewspaperBox",
+      "dest": "/Game/Imported/MaterialDatabase/NewspaperBox",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/NewsRacksLadder",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\NewsRacksLadder",
+      "dest": "/Game/Imported/MaterialDatabase/NewsRacksLadder",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/NewsRacksWire",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\NewsRacksWire",
+      "dest": "/Game/Imported/MaterialDatabase/NewsRacksWire",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/NewsStand",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\NewsStand",
+      "dest": "/Game/Imported/MaterialDatabase/NewsStand",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/ObserveMan",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\ObserveMan",
+      "dest": "/Game/Imported/MaterialDatabase/ObserveMan",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/OfficeChair",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\OfficeChair",
+      "dest": "/Game/Imported/MaterialDatabase/OfficeChair",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/OfficeChairExec_01_LOD0",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\OfficeChairExec_01_LOD0",
+      "dest": "/Game/Imported/MaterialDatabase/OfficeChairExec_01_LOD0",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/OldWalls",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\OldWalls",
+      "dest": "/Game/Imported/MaterialDatabase/OldWalls",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/OrnamentalMetalwork",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\OrnamentalMetalwork",
+      "dest": "/Game/Imported/MaterialDatabase/OrnamentalMetalwork",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Pallets",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Pallets",
+      "dest": "/Game/Imported/MaterialDatabase/Pallets",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/ParkBench",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\ParkBench",
+      "dest": "/Game/Imported/MaterialDatabase/ParkBench",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/ParkingBarrier",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\ParkingBarrier",
+      "dest": "/Game/Imported/MaterialDatabase/ParkingBarrier",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/ParkingMeter",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\ParkingMeter",
+      "dest": "/Game/Imported/MaterialDatabase/ParkingMeter",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/ParkLight",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\ParkLight",
+      "dest": "/Game/Imported/MaterialDatabase/ParkLight",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/PavementDecals",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\PavementDecals",
+      "dest": "/Game/Imported/MaterialDatabase/PavementDecals",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/PavingSlabs",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\PavingSlabs",
+      "dest": "/Game/Imported/MaterialDatabase/PavingSlabs",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/PayPhone",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\PayPhone",
+      "dest": "/Game/Imported/MaterialDatabase/PayPhone",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Pipes",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Pipes",
+      "dest": "/Game/Imported/MaterialDatabase/Pipes",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Planters",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Planters",
+      "dest": "/Game/Imported/MaterialDatabase/Planters",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/PlasterBoardPack",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\PlasterBoardPack",
+      "dest": "/Game/Imported/MaterialDatabase/PlasterBoardPack",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Plastic",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Plastic",
+      "dest": "/Game/Imported/MaterialDatabase/Plastic",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/PlayerMailbox",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\PlayerMailbox",
+      "dest": "/Game/Imported/MaterialDatabase/PlayerMailbox",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Plywood",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Plywood",
+      "dest": "/Game/Imported/MaterialDatabase/Plywood",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/PoolSign",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\PoolSign",
+      "dest": "/Game/Imported/MaterialDatabase/PoolSign",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/PoolTiles",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\PoolTiles",
+      "dest": "/Game/Imported/MaterialDatabase/PoolTiles",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/PortableSpotlight",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\PortableSpotlight",
+      "dest": "/Game/Imported/MaterialDatabase/PortableSpotlight",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/PosterDecals",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\PosterDecals",
+      "dest": "/Game/Imported/MaterialDatabase/PosterDecals",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Praetorian_Signage",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Praetorian_Signage",
+      "dest": "/Game/Imported/MaterialDatabase/Praetorian_Signage",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/PrentissTigers_Banners",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\PrentissTigers_Banners",
+      "dest": "/Game/Imported/MaterialDatabase/PrentissTigers_Banners",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Prop_Crown_Female",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Prop_Crown_Female",
+      "dest": "/Game/Imported/MaterialDatabase/Prop_Crown_Female",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Prop_Crown_Male",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Prop_Crown_Male",
+      "dest": "/Game/Imported/MaterialDatabase/Prop_Crown_Male",
+      "status": "manual",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": "MIC/emissive color params, no bitmaps - reconstruct at import"
+    },
+    {
+      "asset_key": "material/Prop_CSAHunter_Corpse01",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Prop_CSAHunter_Corpse01",
+      "dest": "/Game/Imported/MaterialDatabase/Prop_CSAHunter_Corpse01",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Prop_Mannequin_F_FU_01",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Prop_Mannequin_F_FU_01",
+      "dest": "/Game/Imported/MaterialDatabase/Prop_Mannequin_F_FU_01",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Prop_Mannequin_F_FU_01_Plain",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Prop_Mannequin_F_FU_01_Plain",
+      "dest": "/Game/Imported/MaterialDatabase/Prop_Mannequin_F_FU_01_Plain",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Prop_Mannequin_F_JA_Lily",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Prop_Mannequin_F_JA_Lily",
+      "dest": "/Game/Imported/MaterialDatabase/Prop_Mannequin_F_JA_Lily",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Prop_Mannequin_F_JA_Love",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Prop_Mannequin_F_JA_Love",
+      "dest": "/Game/Imported/MaterialDatabase/Prop_Mannequin_F_JA_Love",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Prop_Mannequin_F_JA_Onishema",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Prop_Mannequin_F_JA_Onishema",
+      "dest": "/Game/Imported/MaterialDatabase/Prop_Mannequin_F_JA_Onishema",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Prop_Mannequin_F_JA_Reisama",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Prop_Mannequin_F_JA_Reisama",
+      "dest": "/Game/Imported/MaterialDatabase/Prop_Mannequin_F_JA_Reisama",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Prop_Mannequin_F_NewCross_01",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Prop_Mannequin_F_NewCross_01",
+      "dest": "/Game/Imported/MaterialDatabase/Prop_Mannequin_F_NewCross_01",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Prop_Mannequin_F_NewCross_01_Plain",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Prop_Mannequin_F_NewCross_01_Plain",
+      "dest": "/Game/Imported/MaterialDatabase/Prop_Mannequin_F_NewCross_01_Plain",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Prop_Mannequin_F_Ophelia_01",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Prop_Mannequin_F_Ophelia_01",
+      "dest": "/Game/Imported/MaterialDatabase/Prop_Mannequin_F_Ophelia_01",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Prop_Mannequin_F_Ophelia_01_Plain",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Prop_Mannequin_F_Ophelia_01_Plain",
+      "dest": "/Game/Imported/MaterialDatabase/Prop_Mannequin_F_Ophelia_01_Plain",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Prop_Mannequin_F_Villainy_01",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Prop_Mannequin_F_Villainy_01",
+      "dest": "/Game/Imported/MaterialDatabase/Prop_Mannequin_F_Villainy_01",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Prop_Mannequin_F_Villainy_01_Plain",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Prop_Mannequin_F_Villainy_01_Plain",
+      "dest": "/Game/Imported/MaterialDatabase/Prop_Mannequin_F_Villainy_01_Plain",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Prop_Mannequin_M_FU_01",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Prop_Mannequin_M_FU_01",
+      "dest": "/Game/Imported/MaterialDatabase/Prop_Mannequin_M_FU_01",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Prop_Mannequin_M_FU_01_Plain",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Prop_Mannequin_M_FU_01_Plain",
+      "dest": "/Game/Imported/MaterialDatabase/Prop_Mannequin_M_FU_01_Plain",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Prop_Mannequin_M_JA_JeremyStyle",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Prop_Mannequin_M_JA_JeremyStyle",
+      "dest": "/Game/Imported/MaterialDatabase/Prop_Mannequin_M_JA_JeremyStyle",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Prop_Mannequin_M_JA_Rapid99",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Prop_Mannequin_M_JA_Rapid99",
+      "dest": "/Game/Imported/MaterialDatabase/Prop_Mannequin_M_JA_Rapid99",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Prop_Mannequin_M_NewCross_01",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Prop_Mannequin_M_NewCross_01",
+      "dest": "/Game/Imported/MaterialDatabase/Prop_Mannequin_M_NewCross_01",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Prop_Mannequin_M_NewCross_01_Plain",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Prop_Mannequin_M_NewCross_01_Plain",
+      "dest": "/Game/Imported/MaterialDatabase/Prop_Mannequin_M_NewCross_01_Plain",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Prop_Mannequin_M_Ophelia_01",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Prop_Mannequin_M_Ophelia_01",
+      "dest": "/Game/Imported/MaterialDatabase/Prop_Mannequin_M_Ophelia_01",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Prop_Mannequin_M_Ophelia_01_Plain",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Prop_Mannequin_M_Ophelia_01_Plain",
+      "dest": "/Game/Imported/MaterialDatabase/Prop_Mannequin_M_Ophelia_01_Plain",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Prop_Mannequin_M_Villainy_01",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Prop_Mannequin_M_Villainy_01",
+      "dest": "/Game/Imported/MaterialDatabase/Prop_Mannequin_M_Villainy_01",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Prop_Mannequin_M_Villainy_01_Plain",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Prop_Mannequin_M_Villainy_01_Plain",
+      "dest": "/Game/Imported/MaterialDatabase/Prop_Mannequin_M_Villainy_01_Plain",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/PropsGenericMaterials",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\PropsGenericMaterials",
+      "dest": "/Game/Imported/MaterialDatabase/PropsGenericMaterials",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/PublicAddress",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\PublicAddress",
+      "dest": "/Game/Imported/MaterialDatabase/PublicAddress",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Pumpkin",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Pumpkin",
+      "dest": "/Game/Imported/MaterialDatabase/Pumpkin",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Radiator",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Radiator",
+      "dest": "/Game/Imported/MaterialDatabase/Radiator",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/RainScreen",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\RainScreen",
+      "dest": "/Game/Imported/MaterialDatabase/RainScreen",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Ramps",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Ramps",
+      "dest": "/Game/Imported/MaterialDatabase/Ramps",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/RamRaidShopFront",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\RamRaidShopFront",
+      "dest": "/Game/Imported/MaterialDatabase/RamRaidShopFront",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/RamRaidShopInteriors",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\RamRaidShopInteriors",
+      "dest": "/Game/Imported/MaterialDatabase/RamRaidShopInteriors",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/ReflectionMap-FD",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\ReflectionMap-FD",
+      "dest": "/Game/Imported/MaterialDatabase/ReflectionMap-FD",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/ReflectionMap-WD",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\ReflectionMap-WD",
+      "dest": "/Game/Imported/MaterialDatabase/ReflectionMap-WD",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Road_Lane_Shaders",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Road_Lane_Shaders",
+      "dest": "/Game/Imported/MaterialDatabase/Road_Lane_Shaders",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/RoadDecals",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\RoadDecals",
+      "dest": "/Game/Imported/MaterialDatabase/RoadDecals",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/RoadDecalsLocal",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\RoadDecalsLocal",
+      "dest": "/Game/Imported/MaterialDatabase/RoadDecalsLocal",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/RoadMarkers",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\RoadMarkers",
+      "dest": "/Game/Imported/MaterialDatabase/RoadMarkers",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Roads",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Roads",
+      "dest": "/Game/Imported/MaterialDatabase/Roads",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/RoadShader",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\RoadShader",
+      "dest": "/Game/Imported/MaterialDatabase/RoadShader",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/RoadSigns",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\RoadSigns",
+      "dest": "/Game/Imported/MaterialDatabase/RoadSigns",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/RoadSurfaces_CSD",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\RoadSurfaces_CSD",
+      "dest": "/Game/Imported/MaterialDatabase/RoadSurfaces_CSD",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/RoadSurfaces_KerbStone",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\RoadSurfaces_KerbStone",
+      "dest": "/Game/Imported/MaterialDatabase/RoadSurfaces_KerbStone",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/RoadSurfaces_Lanes",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\RoadSurfaces_Lanes",
+      "dest": "/Game/Imported/MaterialDatabase/RoadSurfaces_Lanes",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/RoadSurfaces_Pathway",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\RoadSurfaces_Pathway",
+      "dest": "/Game/Imported/MaterialDatabase/RoadSurfaces_Pathway",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Rock",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Rock",
+      "dest": "/Game/Imported/MaterialDatabase/Rock",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/RollUpDoor",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\RollUpDoor",
+      "dest": "/Game/Imported/MaterialDatabase/RollUpDoor",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Roof_Corrugated",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Roof_Corrugated",
+      "dest": "/Game/Imported/MaterialDatabase/Roof_Corrugated",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Roof_CorrugatedMetal",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Roof_CorrugatedMetal",
+      "dest": "/Game/Imported/MaterialDatabase/Roof_CorrugatedMetal",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Roof_Tile",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Roof_Tile",
+      "dest": "/Game/Imported/MaterialDatabase/Roof_Tile",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Roof_TileOld",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Roof_TileOld",
+      "dest": "/Game/Imported/MaterialDatabase/Roof_TileOld",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/RoofSupport",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\RoofSupport",
+      "dest": "/Game/Imported/MaterialDatabase/RoofSupport",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/RoofVents",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\RoofVents",
+      "dest": "/Game/Imported/MaterialDatabase/RoofVents",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/RoundCeiling",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\RoundCeiling",
+      "dest": "/Game/Imported/MaterialDatabase/RoundCeiling",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/RTW_Banners",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\RTW_Banners",
+      "dest": "/Game/Imported/MaterialDatabase/RTW_Banners",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Rubber",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Rubber",
+      "dest": "/Game/Imported/MaterialDatabase/Rubber",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/RWorld_Bar_Props",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\RWorld_Bar_Props",
+      "dest": "/Game/Imported/MaterialDatabase/RWorld_Bar_Props",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/RWorld_Blimp",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\RWorld_Blimp",
+      "dest": "/Game/Imported/MaterialDatabase/RWorld_Blimp",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/RWorld_DJMixingDecks",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\RWorld_DJMixingDecks",
+      "dest": "/Game/Imported/MaterialDatabase/RWorld_DJMixingDecks",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/RWorld_Doors",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\RWorld_Doors",
+      "dest": "/Game/Imported/MaterialDatabase/RWorld_Doors",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/RWorld_DrinksFridge",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\RWorld_DrinksFridge",
+      "dest": "/Game/Imported/MaterialDatabase/RWorld_DrinksFridge",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/RWorld_ExteriorStatuePoint",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\RWorld_ExteriorStatuePoint",
+      "dest": "/Game/Imported/MaterialDatabase/RWorld_ExteriorStatuePoint",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/RWorld_Jukebox",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\RWorld_Jukebox",
+      "dest": "/Game/Imported/MaterialDatabase/RWorld_Jukebox",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/RWorld_NightclubTables",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\RWorld_NightclubTables",
+      "dest": "/Game/Imported/MaterialDatabase/RWorld_NightclubTables",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/RWorld_ParkLight",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\RWorld_ParkLight",
+      "dest": "/Game/Imported/MaterialDatabase/RWorld_ParkLight",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/RWorld_SearchLight",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\RWorld_SearchLight",
+      "dest": "/Game/Imported/MaterialDatabase/RWorld_SearchLight",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/RWorld_ShowRoom_Props",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\RWorld_ShowRoom_Props",
+      "dest": "/Game/Imported/MaterialDatabase/RWorld_ShowRoom_Props",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/RWorld_SkateRamps",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\RWorld_SkateRamps",
+      "dest": "/Game/Imported/MaterialDatabase/RWorld_SkateRamps",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/RWorld_Social_Interactive_Pods",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\RWorld_Social_Interactive_Pods",
+      "dest": "/Game/Imported/MaterialDatabase/RWorld_Social_Interactive_Pods",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/RWorld_Speakers",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\RWorld_Speakers",
+      "dest": "/Game/Imported/MaterialDatabase/RWorld_Speakers",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/RWorld_StreetBillboard",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\RWorld_StreetBillboard",
+      "dest": "/Game/Imported/MaterialDatabase/RWorld_StreetBillboard",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/RWorld_WallPanels",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\RWorld_WallPanels",
+      "dest": "/Game/Imported/MaterialDatabase/RWorld_WallPanels",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/RWorldTemp",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\RWorldTemp",
+      "dest": "/Game/Imported/MaterialDatabase/RWorldTemp",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Sandstone_Brick",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Sandstone_Brick",
+      "dest": "/Game/Imported/MaterialDatabase/Sandstone_Brick",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Satellite_Dish",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Satellite_Dish",
+      "dest": "/Game/Imported/MaterialDatabase/Satellite_Dish",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/SatelliteDishes",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\SatelliteDishes",
+      "dest": "/Game/Imported/MaterialDatabase/SatelliteDishes",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/SecurityCamera",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\SecurityCamera",
+      "dest": "/Game/Imported/MaterialDatabase/SecurityCamera",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Shared_Maps",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Shared_Maps",
+      "dest": "/Game/Imported/MaterialDatabase/Shared_Maps",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Shop_Awning",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Shop_Awning",
+      "dest": "/Game/Imported/MaterialDatabase/Shop_Awning",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Shop_ShopFaked_Dining",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Shop_ShopFaked_Dining",
+      "dest": "/Game/Imported/MaterialDatabase/Shop_ShopFaked_Dining",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Shop_ShopFaked_Retail",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Shop_ShopFaked_Retail",
+      "dest": "/Game/Imported/MaterialDatabase/Shop_ShopFaked_Retail",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Shop_Sign_Alpha",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Shop_Sign_Alpha",
+      "dest": "/Game/Imported/MaterialDatabase/Shop_Sign_Alpha",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Shop_Sign_Alpha_Carpark",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Shop_Sign_Alpha_Carpark",
+      "dest": "/Game/Imported/MaterialDatabase/Shop_Sign_Alpha_Carpark",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Shop_Sign_Hori",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Shop_Sign_Hori",
+      "dest": "/Game/Imported/MaterialDatabase/Shop_Sign_Hori",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Shop_Sign_Lamp",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Shop_Sign_Lamp",
+      "dest": "/Game/Imported/MaterialDatabase/Shop_Sign_Lamp",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Shop_Sign_Square",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Shop_Sign_Square",
+      "dest": "/Game/Imported/MaterialDatabase/Shop_Sign_Square",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Shop_Sign_Vert",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Shop_Sign_Vert",
+      "dest": "/Game/Imported/MaterialDatabase/Shop_Sign_Vert",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Shop_WindowFronts",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Shop_WindowFronts",
+      "dest": "/Game/Imported/MaterialDatabase/Shop_WindowFronts",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/ShopFront_Doors",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\ShopFront_Doors",
+      "dest": "/Game/Imported/MaterialDatabase/ShopFront_Doors",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/ShopFront_Financial",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\ShopFront_Financial",
+      "dest": "/Game/Imported/MaterialDatabase/ShopFront_Financial",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/ShopFront_Midtown",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\ShopFront_Midtown",
+      "dest": "/Game/Imported/MaterialDatabase/ShopFront_Midtown",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/ShopFront_Textures",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\ShopFront_Textures",
+      "dest": "/Game/Imported/MaterialDatabase/ShopFront_Textures",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/ShopSigns_Brackets_Textures",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\ShopSigns_Brackets_Textures",
+      "dest": "/Game/Imported/MaterialDatabase/ShopSigns_Brackets_Textures",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/ShopSigns_Cafe",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\ShopSigns_Cafe",
+      "dest": "/Game/Imported/MaterialDatabase/ShopSigns_Cafe",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/ShopSigns_Diner",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\ShopSigns_Diner",
+      "dest": "/Game/Imported/MaterialDatabase/ShopSigns_Diner",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/ShopSigns_Restaurant",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\ShopSigns_Restaurant",
+      "dest": "/Game/Imported/MaterialDatabase/ShopSigns_Restaurant",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/ShopSigns_Shop",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\ShopSigns_Shop",
+      "dest": "/Game/Imported/MaterialDatabase/ShopSigns_Shop",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/ShopSigns_ShopLight",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\ShopSigns_ShopLight",
+      "dest": "/Game/Imported/MaterialDatabase/ShopSigns_ShopLight",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/ShopSigns_ShortRectangle",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\ShopSigns_ShortRectangle",
+      "dest": "/Game/Imported/MaterialDatabase/ShopSigns_ShortRectangle",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/ShopSigns_Small",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\ShopSigns_Small",
+      "dest": "/Game/Imported/MaterialDatabase/ShopSigns_Small",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/ShopSigns_Square",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\ShopSigns_Square",
+      "dest": "/Game/Imported/MaterialDatabase/ShopSigns_Square",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Signage",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Signage",
+      "dest": "/Game/Imported/MaterialDatabase/Signage",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Signage_Billboard",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Signage_Billboard",
+      "dest": "/Game/Imported/MaterialDatabase/Signage_Billboard",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Sink",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Sink",
+      "dest": "/Game/Imported/MaterialDatabase/Sink",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Skips",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Skips",
+      "dest": "/Game/Imported/MaterialDatabase/Skips",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Skylights",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Skylights",
+      "dest": "/Game/Imported/MaterialDatabase/Skylights",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/SkyscraperWindows",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\SkyscraperWindows",
+      "dest": "/Game/Imported/MaterialDatabase/SkyscraperWindows",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Social_Interactive_Pods",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Social_Interactive_Pods",
+      "dest": "/Game/Imported/MaterialDatabase/Social_Interactive_Pods",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Social_Vista",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Social_Vista",
+      "dest": "/Game/Imported/MaterialDatabase/Social_Vista",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/SocialMailbox",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\SocialMailbox",
+      "dest": "/Game/Imported/MaterialDatabase/SocialMailbox",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/SoundWall",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\SoundWall",
+      "dest": "/Game/Imported/MaterialDatabase/SoundWall",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/SpawnTunnel",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\SpawnTunnel",
+      "dest": "/Game/Imported/MaterialDatabase/SpawnTunnel",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/SpotlightStand",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\SpotlightStand",
+      "dest": "/Game/Imported/MaterialDatabase/SpotlightStand",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/StockTicker",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\StockTicker",
+      "dest": "/Game/Imported/MaterialDatabase/StockTicker",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Stones",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Stones",
+      "dest": "/Game/Imported/MaterialDatabase/Stones",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/StoneWork",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\StoneWork",
+      "dest": "/Game/Imported/MaterialDatabase/StoneWork",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/StopLights",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\StopLights",
+      "dest": "/Game/Imported/MaterialDatabase/StopLights",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/StopSign",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\StopSign",
+      "dest": "/Game/Imported/MaterialDatabase/StopSign",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/StreetBillboard",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\StreetBillboard",
+      "dest": "/Game/Imported/MaterialDatabase/StreetBillboard",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/StreetLight",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\StreetLight",
+      "dest": "/Game/Imported/MaterialDatabase/StreetLight",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/StreetSign",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\StreetSign",
+      "dest": "/Game/Imported/MaterialDatabase/StreetSign",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Stucco",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Stucco",
+      "dest": "/Game/Imported/MaterialDatabase/Stucco",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Stucco_Banded",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Stucco_Banded",
+      "dest": "/Game/Imported/MaterialDatabase/Stucco_Banded",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Stucco_Broken",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Stucco_Broken",
+      "dest": "/Game/Imported/MaterialDatabase/Stucco_Broken",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/StuntRamps",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\StuntRamps",
+      "dest": "/Game/Imported/MaterialDatabase/StuntRamps",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Tarpaulins",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Tarpaulins",
+      "dest": "/Game/Imported/MaterialDatabase/Tarpaulins",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/TaxiRank",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\TaxiRank",
+      "dest": "/Game/Imported/MaterialDatabase/TaxiRank",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/TelephoneCables",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\TelephoneCables",
+      "dest": "/Game/Imported/MaterialDatabase/TelephoneCables",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/TelephonePole",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\TelephonePole",
+      "dest": "/Game/Imported/MaterialDatabase/TelephonePole",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Temp_Ground",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Temp_Ground",
+      "dest": "/Game/Imported/MaterialDatabase/Temp_Ground",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Terrain",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Terrain",
+      "dest": "/Game/Imported/MaterialDatabase/Terrain",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Terrain_Asphalt",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Terrain_Asphalt",
+      "dest": "/Game/Imported/MaterialDatabase/Terrain_Asphalt",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Terrain_Concrete",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Terrain_Concrete",
+      "dest": "/Game/Imported/MaterialDatabase/Terrain_Concrete",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Terrain_RLD",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Terrain_RLD",
+      "dest": "/Game/Imported/MaterialDatabase/Terrain_RLD",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/TestMapBlockNames",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\TestMapBlockNames",
+      "dest": "/Game/Imported/MaterialDatabase/TestMapBlockNames",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/TexturePageLOD2_TPageA",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\TexturePageLOD2_TPageA",
+      "dest": "/Game/Imported/MaterialDatabase/TexturePageLOD2_TPageA",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/TexturePageLOD2_TPageB",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\TexturePageLOD2_TPageB",
+      "dest": "/Game/Imported/MaterialDatabase/TexturePageLOD2_TPageB",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/TiledCeiling",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\TiledCeiling",
+      "dest": "/Game/Imported/MaterialDatabase/TiledCeiling",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Transparent",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Transparent",
+      "dest": "/Game/Imported/MaterialDatabase/Transparent",
+      "status": "manual",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": "MIC/emissive color params, no bitmaps - reconstruct at import"
+    },
+    {
+      "asset_key": "material/Tree",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Tree",
+      "dest": "/Game/Imported/MaterialDatabase/Tree",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/TreeLarge",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\TreeLarge",
+      "dest": "/Game/Imported/MaterialDatabase/TreeLarge",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/TreeSmall",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\TreeSmall",
+      "dest": "/Game/Imported/MaterialDatabase/TreeSmall",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/TrestleTableChair",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\TrestleTableChair",
+      "dest": "/Game/Imported/MaterialDatabase/TrestleTableChair",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/UIDistrict_BeachMAT",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\UIDistrict_BeachMAT",
+      "dest": "/Game/Imported/MaterialDatabase/UIDistrict_BeachMAT",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/UIDistrict_NightClubMAT",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\UIDistrict_NightClubMAT",
+      "dest": "/Game/Imported/MaterialDatabase/UIDistrict_NightClubMAT",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/VehicleNoEntrySign",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\VehicleNoEntrySign",
+      "dest": "/Game/Imported/MaterialDatabase/VehicleNoEntrySign",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/VehicleSpawnIcon",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\VehicleSpawnIcon",
+      "dest": "/Game/Imported/MaterialDatabase/VehicleSpawnIcon",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/VehicleTicketMachine",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\VehicleTicketMachine",
+      "dest": "/Game/Imported/MaterialDatabase/VehicleTicketMachine",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/VendingMachine",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\VendingMachine",
+      "dest": "/Game/Imported/MaterialDatabase/VendingMachine",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/VictorianRidge",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\VictorianRidge",
+      "dest": "/Game/Imported/MaterialDatabase/VictorianRidge",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/VideoScreens",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\VideoScreens",
+      "dest": "/Game/Imported/MaterialDatabase/VideoScreens",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Walkways",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Walkways",
+      "dest": "/Game/Imported/MaterialDatabase/Walkways",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/WallTiles",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\WallTiles",
+      "dest": "/Game/Imported/MaterialDatabase/WallTiles",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/WantedPosters",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\WantedPosters",
+      "dest": "/Game/Imported/MaterialDatabase/WantedPosters",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Warehouse_CrateAndBoxes",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Warehouse_CrateAndBoxes",
+      "dest": "/Game/Imported/MaterialDatabase/Warehouse_CrateAndBoxes",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/WarehouseDoor",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\WarehouseDoor",
+      "dest": "/Game/Imported/MaterialDatabase/WarehouseDoor",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/WarehouseDoors",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\WarehouseDoors",
+      "dest": "/Game/Imported/MaterialDatabase/WarehouseDoors",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/WarningStripe",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\WarningStripe",
+      "dest": "/Game/Imported/MaterialDatabase/WarningStripe",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/WashingLine",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\WashingLine",
+      "dest": "/Game/Imported/MaterialDatabase/WashingLine",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Water",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Water",
+      "dest": "/Game/Imported/MaterialDatabase/Water",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Waterfront_Marina",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Waterfront_Marina",
+      "dest": "/Game/Imported/MaterialDatabase/Waterfront_Marina",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Waterfront_Shelving",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Waterfront_Shelving",
+      "dest": "/Game/Imported/MaterialDatabase/Waterfront_Shelving",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Waterfront_Skyline",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Waterfront_Skyline",
+      "dest": "/Game/Imported/MaterialDatabase/Waterfront_Skyline",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Waterfront_TallShip",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Waterfront_TallShip",
+      "dest": "/Game/Imported/MaterialDatabase/Waterfront_TallShip",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/WaterfrontCargoCrane",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\WaterfrontCargoCrane",
+      "dest": "/Game/Imported/MaterialDatabase/WaterfrontCargoCrane",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/WaterfrontCargoShips",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\WaterfrontCargoShips",
+      "dest": "/Game/Imported/MaterialDatabase/WaterfrontCargoShips",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/WaterfrontCleats",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\WaterfrontCleats",
+      "dest": "/Game/Imported/MaterialDatabase/WaterfrontCleats",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/WaterfrontLighthouseAndBridge",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\WaterfrontLighthouseAndBridge",
+      "dest": "/Game/Imported/MaterialDatabase/WaterfrontLighthouseAndBridge",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/WaterfrontLocomotive",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\WaterfrontLocomotive",
+      "dest": "/Game/Imported/MaterialDatabase/WaterfrontLocomotive",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/WaterfrontPalmTree",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\WaterfrontPalmTree",
+      "dest": "/Game/Imported/MaterialDatabase/WaterfrontPalmTree",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/WaterfrontPowerYacht",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\WaterfrontPowerYacht",
+      "dest": "/Game/Imported/MaterialDatabase/WaterfrontPowerYacht",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/WaterfrontSailingYacht",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\WaterfrontSailingYacht",
+      "dest": "/Game/Imported/MaterialDatabase/WaterfrontSailingYacht",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/WaterfrontSleepers",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\WaterfrontSleepers",
+      "dest": "/Game/Imported/MaterialDatabase/WaterfrontSleepers",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/WaterfrontTankCar",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\WaterfrontTankCar",
+      "dest": "/Game/Imported/MaterialDatabase/WaterfrontTankCar",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/WaterfrontWaterTower",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\WaterfrontWaterTower",
+      "dest": "/Game/Imported/MaterialDatabase/WaterfrontWaterTower",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/WD_Banners",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\WD_Banners",
+      "dest": "/Game/Imported/MaterialDatabase/WD_Banners",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Wheelchair",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Wheelchair",
+      "dest": "/Game/Imported/MaterialDatabase/Wheelchair",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Window_Industrial",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Window_Industrial",
+      "dest": "/Game/Imported/MaterialDatabase/Window_Industrial",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Window_OldStone",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Window_OldStone",
+      "dest": "/Game/Imported/MaterialDatabase/Window_OldStone",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/WindowDormer",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\WindowDormer",
+      "dest": "/Game/Imported/MaterialDatabase/WindowDormer",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/WindowGuards",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\WindowGuards",
+      "dest": "/Game/Imported/MaterialDatabase/WindowGuards",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Windows_Residential1",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Windows_Residential1",
+      "dest": "/Game/Imported/MaterialDatabase/Windows_Residential1",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Windows_Residential2",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Windows_Residential2",
+      "dest": "/Game/Imported/MaterialDatabase/Windows_Residential2",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/WindowsBoarded",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\WindowsBoarded",
+      "dest": "/Game/Imported/MaterialDatabase/WindowsBoarded",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/WindowTiles",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\WindowTiles",
+      "dest": "/Game/Imported/MaterialDatabase/WindowTiles",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Wires",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Wires",
+      "dest": "/Game/Imported/MaterialDatabase/Wires",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Wood_Horizontal",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Wood_Horizontal",
+      "dest": "/Game/Imported/MaterialDatabase/Wood_Horizontal",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Wood-RLD",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Wood-RLD",
+      "dest": "/Game/Imported/MaterialDatabase/Wood-RLD",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/WoodenCrates",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\WoodenCrates",
+      "dest": "/Game/Imported/MaterialDatabase/WoodenCrates",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/WoodFrames",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\WoodFrames",
+      "dest": "/Game/Imported/MaterialDatabase/WoodFrames",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    },
+    {
+      "asset_key": "material/Woods",
+      "source": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Woods",
+      "dest": "/Game/Imported/MaterialDatabase/Woods",
+      "status": "extracted",
+      "updated": "2026-07-21T08:52:13.1555666+02:00",
+      "note": null
+    }
   ]
 }

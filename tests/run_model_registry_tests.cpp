@@ -71,10 +71,10 @@ void TestShippedPlacementResolveAndNearSpawnMetrics() {
   CHECK(ResolveDistrictIdFromMapName("Lvl_APB_PGAsylum_Freeroam") == "PGAsylum", "map→PGAsylum");
   CHECK(PlacementBaseNameForDistrict("Financial") == "Financial_Block09", "Financial base name");
   CHECK(PlacementBaseNameForDistrict("Waterfront") == "Waterfront_Block05", "Waterfront base name");
-  CHECK(PreferredManifestFileName("Financial", true) == "Financial_Block09_bound.json", "prefer bound Financial");
+	CHECK(PreferredManifestFileName("Financial", true) == "Financial_Block09_bound.json", "prefer bound Financial");
 
   const std::string finPath = std::string(R"(D:\APBReloaded\Content\Data\district_placements\)")
-    + PreferredManifestFileName("Financial", true);
+		+ PreferredManifestFileName("Financial", true);
   const std::string finText = ReadFile(finPath);
   CHECK(!finText.empty(), "load Financial bound manifest file");
   DistrictManifestPure fin;
@@ -102,7 +102,7 @@ void TestShippedPlacementResolveAndNearSpawnMetrics() {
   std::cout << "ASSET_SPOT assetHits=" << assetHits << "/" << assetChecks << "\n";
 
   const std::string wfPath = std::string(R"(D:\APBReloaded\Content\Data\district_placements\)")
-    + PreferredManifestFileName("Waterfront", true);
+		+ PreferredManifestFileName("Waterfront", true);
   const std::string wfText = ReadFile(wfPath);
   CHECK(!wfText.empty(), "load Waterfront bound manifest file");
   DistrictManifestPure wf;

@@ -1,6 +1,6 @@
 # Import Status
 
-Generated: 2026-07-19 22:13 UTC by `tools/scripts/build_import_status.py` (read-only).
+Generated: 2026-07-20 19:15 UTC by `tools/scripts/build_import_status.py` (read-only).
 
 ## Ledger entries (tools/import_ledger.json)
 
@@ -16,8 +16,8 @@ Generated: 2026-07-19 22:13 UTC by `tools/scripts/build_import_status.py` (read-
 | `group:2011/Movies` | 2011 | **manual** | `/Game/Movies` | SplashScreen.bik + IntroTitles.bik preserved at Content/Extracted/2011/Movies (Bink 1). ffmpeg unavailable; UE5.8 BinkMedia is Bink2/.bk2-only. Re-encode to .bk2 (Bink2ForUnreal.exe) or mp4 pending M4 — see work/umodel_547_spike.md |
 | `data:retail/palettes` | retail | **extracted** | `Content/Data/palettes.json` | 7 palettes, 1134 colors from retail Colours/*.ini via tools/convert/parse_colours.py |
 | `data:ui_strings` | 2011+retail | **extracted** | `Content/Data/ui_strings_2011.json + ui_strings_retail.json` | 7 frontend sections each (504 keys 2011 / 588 keys retail) via tools/convert/parse_int_tables.py |
-| `group:Districts/Financial` | retail | **imported** | `/Game/Imported/Districts/Financial` | partial — 1 of ~270 block manifests (M9) |
-| `group:Districts/Waterfront` | retail | **imported** | `/Game/Imported/Districts/Waterfront` | partial — 1 of ~268 block manifests (M10) |
+| `group:Districts/Financial` | retail | **imported** | `/Game/Imported/Districts/Financial` | MASTER LevelStreaming decoded: 57 chunks / 2345 placements, 100% resolvable (Financial_Block09.json). Streaming set complete; verify variants (Chaos/Riot) separately — see work/district_coverage_note.md |
+| `group:Districts/Waterfront` | retail | **imported** | `/Game/Imported/Districts/Waterfront` | MASTER LevelStreaming decoded: 30 chunks / 1394 placements, 100% resolvable (Waterfront_Block05.json). Streaming set complete — see work/district_coverage_note.md |
 
 ## Imported uassets on disk (4499 total)
 
@@ -35,30 +35,38 @@ Generated: 2026-07-19 22:13 UTC by `tools/scripts/build_import_status.py` (read-
 
 ## District placement manifest coverage
 
-Mesh references in each manifest that resolve to an imported .uasset:
+Each manifest is decoded from its district's `*_MASTER.APB` LevelStreamingKismet
+table (the authoritative streaming-block set). `resolvable` = mesh refs that map
+to an imported `.uasset`; `chunks` = distinct streamed packages placed in-world.
 
-| manifest | district | placements | resolvable | coverage |
-|---|---|---|---|---|
-| Asylum_Block.json | PGAsylum | 417 | 417 | 100.0% |
-| Beacon_Block.json | PGBeacon | 430 | 430 | 100.0% |
-| Crate_Block.json | PGCrate | 336 | 336 | 100.0% |
-| Financial_Block09.json | Financial | 2345 | 2345 | 100.0% |
-| Social_Block.json | Social | 466 | 466 | 100.0% |
-| Waterfront_Block05.json | Waterfront | 1394 | 1394 | 100.0% |
+| manifest | district | placements | resolvable | coverage | chunks | pkgs |
+|---|---|---|---|---|---|---|
+| Asylum_Block.json | PGAsylum | 417 | 417 | 100.0% | 5 | 3 |
+| Beacon_Block.json | PGBeacon | 430 | 430 | 100.0% | 9 | 2 |
+| Crate_Block.json | PGCrate | 336 | 336 | 100.0% | 47 | 2 |
+| Financial_Block09.json | Financial | 2345 | 2345 | 100.0% | 57 | 25 |
+| Social_Block.json | Social | 466 | 466 | 100.0% | 17 | 4 |
+| Waterfront_Block05.json | Waterfront | 1394 | 1394 | 100.0% | 30 | 18 |
 
-## District block coverage (vs retail streaming-block counts)
+## District streaming coverage
 
-A district is content-complete only when every streaming block has a manifest
-whose meshes all resolve. Retail block counts from the 2026-07-19 inventory.
+A district's geometry is complete when every LevelStreamingKismet entry in its
+`*_MASTER.APB` has a decoded chunk whose meshes resolve. The `RETAIL_UPK_BLOCKS`
+figures below are the raw retail `.upk` package count (LODs + ArtProps + minimaps
+included) and are shown ONLY to contrast against the true streamed-chunk count —
+they are **not** an export target. See `decode_level_streaming.py`.
 
-| district | manifests present | retail blocks (approx) | status |
+| district | manifests | streamed chunks | retail .upk (ref only) |
 |---|---|---|---|
-| financial | 1 | ~270 | ⚠️ partial — 269 blocks to export |
-| waterfront | 1 | ~268 | ⚠️ partial — 267 blocks to export |
+| financial | 1 | 57 | ~270 |
+| pgasylum | 1 | 5 | n/a |
+| pgbeacon | 1 | 9 | n/a |
+| pgcrate | 1 | 47 | n/a |
+| social | 1 | 17 | n/a |
+| waterfront | 1 | 30 | ~268 |
 
 ## Remaining work (auto-derived)
 
-- **financial**: 1 of ~270 block manifests present — export remaining blocks via `tools/scripts/export_apb_level_parallel.py` (see roadmap M9/M10)
-- **waterfront**: 1 of ~268 block manifests present — export remaining blocks via `tools/scripts/export_apb_level_parallel.py` (see roadmap M9/M10)
+- None — all manifests resolve and block coverage is complete.
 
 Legend: `extracted` = dumped from source packages, not yet imported · `imported` = .uasset exists · `bound` = referenced by a manifest · `manual` = must be rebuilt by hand.

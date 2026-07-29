@@ -17,6 +17,12 @@ void TestMissionScripts() {
 	CHECK(s->stages.size() >= 3, "stage count >= 3");
 	CHECK(!s->contact_id.empty(), "contact_id set");
 	CHECK(s->stages[0].type == "contact", "first stage contact");
+	// apbdb-sourced per-stage countdown (api.apbdb.com/beacon/missions/JG_BCS4_Bom1,
+	// aStages[].nTimeLimit). Locks catalog against un-sourced/guessed timer drift.
+	CHECK(s->stages[0].time_limit_sec == 300.0, "JG_BCS4_Bom1 stage0 apbdb timer=300");
+	for (size_t i = 0; i < s->stages.size(); ++i) {
+		CHECK(s->stages[i].time_limit_sec == 300.0, "JG_BCS4_Bom1 all stages apbdb timer=300");
+	}
 	MissionRun run = MissionRun::FromScript(*s, Faction::Criminal);
 	run.Start();
 	CHECK(run.status == MissionStatus::Active, "mission active");
