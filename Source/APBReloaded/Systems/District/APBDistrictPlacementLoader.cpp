@@ -250,11 +250,9 @@ void UAPBDistrictPlacementLoader::EnsureVisibleMeshMaterials(UStaticMeshComponen
 {
 	if (!Comp) return;
 
-	// Prefer materials that stay readable without baked lightmaps / full Lumen bounce.
-	// umodel imports only ship WorldGrid slots — under black sky + low ambient they look pure black.
+	// Never engine LevelColoration* here: flat unlit primaries caused the "red ground" defect.
+	// Their old justification (M_APBMaster failed to compile, imports rendered black) is void.
 	static const TCHAR* Candidates[] = {
-		TEXT("/Engine/EngineDebugMaterials/LevelColorationUnlitMaterial.LevelColorationUnlitMaterial"),
-		TEXT("/Engine/EngineDebugMaterials/LevelColorationLitMaterial.LevelColorationLitMaterial"),
 		TEXT("/Engine/BasicShapes/BasicShapeMaterial.BasicShapeMaterial"),
 		TEXT("/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"),
 	};
