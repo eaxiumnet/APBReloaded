@@ -1,0 +1,37 @@
+[
+    {
+        "id":  "ThreatLevel_Training",
+        "displayed_name":  "In Training",
+        "allowed_district_threats":  "",
+        "rank":  0,
+        "source":  "APBGame/Localization/INT/ThreatLevels.INT (retail; mirror of SDD table ThreatLevel)"
+    },
+    {
+        "id":  "ThreatLevel_01",
+        "displayed_name":  "Green",
+        "allowed_district_threats":  "",
+        "rank":  1,
+        "source":  "APBGame/Localization/INT/ThreatLevels.INT (retail; mirror of SDD table ThreatLevel)"
+    },
+    {
+        "id":  "ThreatLevel_02",
+        "displayed_name":  "Bronze",
+        "allowed_district_threats":  "Green, Bronze, Silver or Gold",
+        "rank":  2,
+        "source":  "APBGame/Localization/INT/ThreatLevels.INT (retail; mirror of SDD table ThreatLevel)"
+    },
+    {
+        "id":  "ThreatLevel_03",
+        "displayed_name":  "Silver",
+        "allowed_district_threats":  "Bronze, Silver or Gold",
+        "rank":  3,
+        "source":  "APBGame/Localization/INT/ThreatLevels.INT (retail; mirror of SDD table ThreatLevel)"
+    },
+    {
+        "id":  "ThreatLevel_04",
+        "displayed_name":  "Gold",
+        "allowed_district_threats":  "Silver or Gold",
+        "rank":  4,
+        "source":  "APBGame/Localization/INT/ThreatLevels.INT (retail; mirror of SDD table ThreatLevel)"
+    }
+]

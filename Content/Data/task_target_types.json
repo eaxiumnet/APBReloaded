@@ -1,0 +1,710 @@
+[
+    {
+        "id":  "Aerials",
+        "display_name":  "Aerial",
+        "order":  0,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "Alarms",
+        "display_name":  "Alarm",
+        "order":  1,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "ArsonDoor",
+        "display_name":  "Door",
+        "order":  2,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "BackDoor",
+        "display_name":  "Back door",
+        "order":  3,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "BackDoor_Arson",
+        "display_name":  "Back door",
+        "order":  4,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "BankMachine",
+        "display_name":  "ATM",
+        "order":  5,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "BusShelter",
+        "display_name":  "Bus shelter",
+        "order":  6,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "Checkpoint_SmallDropOff",
+        "display_name":  "Checkpoint",
+        "order":  7,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "Checkpoint_LargePedestrianRendezvous",
+        "display_name":  "Checkpoint",
+        "order":  8,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "Checkpoint_Race",
+        "display_name":  "Checkpoint",
+        "order":  9,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "Checkpoint_SmallDropOff_Criminal",
+        "display_name":  "Checkpoint",
+        "order":  10,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "Checkpoint_SmallDropOff_Enforcer",
+        "display_name":  "Checkpoint",
+        "order":  11,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "Checkpoint_TerritoryControl",
+        "display_name":  "Checkpoint",
+        "order":  12,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "Checkpoint_VehicleDropOff",
+        "display_name":  "Checkpoint",
+        "order":  13,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "CommercialWindows",
+        "display_name":  "Window",
+        "order":  14,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "CommercialWindows_Arson",
+        "display_name":  "Window",
+        "order":  15,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "Container",
+        "display_name":  "Container",
+        "order":  16,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "Crate1LONGcrate",
+        "display_name":  "Crate",
+        "order":  17,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "Crate2TALLcrate",
+        "display_name":  "Crate",
+        "order":  18,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "Doors_Residential1",
+        "display_name":  "Doorway",
+        "order":  19,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "Doorway",
+        "display_name":  "Doorway",
+        "order":  20,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "Dropoff_Alley",
+        "display_name":  "Checkpoint",
+        "order":  21,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "Dropoff_Hideout",
+        "display_name":  "Checkpoint",
+        "order":  22,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "Dropoff_Lockup",
+        "display_name":  "Checkpoint",
+        "order":  23,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "Dropoff_Shop",
+        "display_name":  "Checkpoint",
+        "order":  24,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "ElectricalBox",
+        "display_name":  "Electrical box",
+        "order":  25,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "FinancialPortacabins",
+        "display_name":  "Portacabin",
+        "order":  26,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "FinancialPortacabinsLarge",
+        "display_name":  "Portacabin",
+        "order":  27,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "FinancialTicketMachine",
+        "display_name":  "Ticket machine",
+        "order":  28,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "FinancialVendingStand",
+        "display_name":  "Vending stand",
+        "order":  29,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "FireHydrant",
+        "display_name":  "Fire hydrant",
+        "order":  30,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "FruitStall",
+        "display_name":  "Fruit stall",
+        "order":  31,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "GarageDoorsSegmented",
+        "display_name":  "Garage Door",
+        "order":  32,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "GarageDoorsSegmented_NonRamRaid",
+        "display_name":  "Garage Door",
+        "order":  33,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "Graffiti_Default",
+        "display_name":  "Graffiti Point",
+        "order":  34,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "IndustrialAirConditioningUnit",
+        "display_name":  "Air Conditioning Unit",
+        "order":  35,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "InvisibleProp",
+        "display_name":  "Target Area",
+        "order":  36,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "MailBox",
+        "display_name":  "Mail box",
+        "order":  37,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "NewspaperBox",
+        "display_name":  "Newspaper Box",
+        "order":  38,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "NewsStand",
+        "display_name":  "News Stand",
+        "order":  39,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "NPC_Lower_Female",
+        "display_name":  "Pedestrian",
+        "order":  40,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "NPC_Lower_Male",
+        "display_name":  "Pedestrian",
+        "order":  41,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "NPC_Pimp_Male",
+        "display_name":  "Drug Mule",
+        "order":  42,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "NPC_Standard_Female",
+        "display_name":  "Pedestrian",
+        "order":  43,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "NPC_Standard_Male",
+        "display_name":  "Pedestrian",
+        "order":  44,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "NPC_Urban_Female",
+        "display_name":  "Pedestrian",
+        "order":  45,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "NPC_Urban_Male",
+        "display_name":  "Pedestrian",
+        "order":  46,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "OpenWorldDropoff_Criminals",
+        "display_name":  "Fence",
+        "order":  47,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "OpenWorldDropoff_Enforcers",
+        "display_name":  "Secure Lockup",
+        "order":  48,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "ParkBench",
+        "display_name":  "Bench",
+        "order":  49,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "ParkedVehicleSpawn",
+        "display_name":  "Vehicle",
+        "order":  50,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "ParkingMeter",
+        "display_name":  "Parking Meter",
+        "order":  51,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "PayPhone",
+        "display_name":  "Pay Phone",
+        "order":  52,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "Prop_ElectricalBox",
+        "display_name":  "Electrical Box",
+        "order":  53,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "Prop_FruitStall",
+        "display_name":  "Fruit Stall",
+        "order":  54,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "Prop_MailBox",
+        "display_name":  "Mail Box",
+        "order":  55,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "Prop_NewspaperVending",
+        "display_name":  "Newspaper Box",
+        "order":  56,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "Prop_NewsStand",
+        "display_name":  "News Stand",
+        "order":  57,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "Prop_ParkingMeter",
+        "display_name":  "Parking Meter",
+        "order":  58,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "Prop_PhoneBooth",
+        "display_name":  "Pay Phone",
+        "order":  59,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "Prop_VendingMachine",
+        "display_name":  "Vending Machine",
+        "order":  60,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "SatelliteDishes",
+        "display_name":  "Satellite Dish",
+        "order":  61,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "SatelliteDishes_Feature",
+        "display_name":  "Satellite Dish",
+        "order":  62,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "SecurityCamera",
+        "display_name":  "Security Camera",
+        "order":  63,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "SecurityCamera_Feature",
+        "display_name":  "Security Camera",
+        "order":  64,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "ShopFront_Bank",
+        "display_name":  "Bank",
+        "order":  65,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "ShopFront_ClothingStore",
+        "display_name":  "Clothing Store",
+        "order":  66,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "ShopFront_ClothingStore_NonRamRaid",
+        "display_name":  "Clothing Store",
+        "order":  67,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "ShopFront_Doors",
+        "display_name":  "Shop Door",
+        "order":  68,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "ShopFront_DrugStore",
+        "display_name":  "Drugstore",
+        "order":  69,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "ShopFront_DrugStore_NonRamRaid",
+        "display_name":  "Drugstore",
+        "order":  70,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "ShopFront_Electronics",
+        "display_name":  "Electronics Store",
+        "order":  71,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "ShopFront_Electronics_GDC",
+        "display_name":  "Electronics Store",
+        "order":  72,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "ShopFront_Electronics_NonRamRaid",
+        "display_name":  "Electronics Store",
+        "order":  73,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "ShopFront_GarageDoor",
+        "display_name":  "Garage Door",
+        "order":  74,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "ShopFront_Interior",
+        "display_name":  "Shopfront",
+        "order":  75,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "ShopFront_Jewellers",
+        "display_name":  "Jewellers",
+        "order":  76,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "ShopFront_Jewellery",
+        "display_name":  "Jewellers",
+        "order":  77,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "ShopFront_Jewellery_NonRamRaid",
+        "display_name":  "Jewellers",
+        "order":  78,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "ShopFront_MiniMart",
+        "display_name":  "MiniMart",
+        "order":  79,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "VehicleDropoff_Alley",
+        "display_name":  "Checkpoint",
+        "order":  80,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "VehicleDropoff_Carpark",
+        "display_name":  "Checkpoint",
+        "order":  81,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "VehicleDropoff_Lockup",
+        "display_name":  "Checkpoint",
+        "order":  82,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "VendingMachine_Drinks",
+        "display_name":  "Vending Machine",
+        "order":  83,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "VendingMachine_Snack",
+        "display_name":  "Vending Machine",
+        "order":  84,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "WarehousePallet",
+        "display_name":  "Pallet",
+        "order":  85,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "Yacht",
+        "display_name":  "Yacht",
+        "order":  86,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "Pumpkin",
+        "display_name":  "Pumpkin",
+        "order":  87,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "PumpkinPurple",
+        "display_name":  "Purple Pumpkin",
+        "order":  88,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "WeaponTest",
+        "display_name":  "Weapon Test Checkpoint",
+        "order":  89,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "NPC_Easter_Bunny",
+        "display_name":  "Mr Bunny",
+        "order":  90,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "NPC_Easter_Chicken",
+        "display_name":  "Mr Chicken",
+        "order":  91,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "Prop_Epidemic_BarrelStack",
+        "display_name":  "Virus Barrels",
+        "order":  92,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "CheckpointVolume_Epidemic",
+        "display_name":  "Checkpoint",
+        "order":  93,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "CheckpointVolume_Epidemic_Start_T0",
+        "display_name":  "Checkpoint",
+        "order":  94,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "CheckpointVolume_Epidemic_Start_T1",
+        "display_name":  "Checkpoint",
+        "order":  95,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "CheckpointVolume_Epidemic_Start_T2",
+        "display_name":  "Checkpoint",
+        "order":  96,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "CheckpointVolume_Epidemic_End",
+        "display_name":  "Checkpoint",
+        "order":  97,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "CheckpointVolume_Epidemic_0_1p_T0",
+        "display_name":  "Checkpoint",
+        "order":  98,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "CheckpointVolume_Epidemic_0_2p_T0",
+        "display_name":  "Checkpoint",
+        "order":  99,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "CheckpointVolume_Epidemic_1_1pt_T0",
+        "display_name":  "Checkpoint",
+        "order":  100,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "CheckpointVolume_Epidemic_1_2pt_T0",
+        "display_name":  "Checkpoint",
+        "order":  101,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "CheckpointVolume_Epidemic_1_3pt_T0",
+        "display_name":  "Checkpoint",
+        "order":  102,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "CheckpointVolume_Epidemic_0_1p_T1",
+        "display_name":  "Checkpoint",
+        "order":  103,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "CheckpointVolume_Epidemic_0_2p_T1",
+        "display_name":  "Checkpoint",
+        "order":  104,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "CheckpointVolume_Epidemic_1_1pt_T1",
+        "display_name":  "Checkpoint",
+        "order":  105,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "CheckpointVolume_Epidemic_1_2pt_T1",
+        "display_name":  "Checkpoint",
+        "order":  106,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "CheckpointVolume_Epidemic_1_3pt_T1",
+        "display_name":  "Checkpoint",
+        "order":  107,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "CheckpointVolume_Epidemic_0_1p_T2",
+        "display_name":  "Checkpoint",
+        "order":  108,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "CheckpointVolume_Epidemic_0_2p_T2",
+        "display_name":  "Checkpoint",
+        "order":  109,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "CheckpointVolume_Epidemic_1_1pt_T2",
+        "display_name":  "Checkpoint",
+        "order":  110,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "CheckpointVolume_Epidemic_1_2pt_T2",
+        "display_name":  "Checkpoint",
+        "order":  111,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "CheckpointVolume_Epidemic_1_3pt_T2",
+        "display_name":  "Checkpoint",
+        "order":  112,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "CheckpointVolume_MusicalCheckpoints",
+        "display_name":  "Checkpoint",
+        "order":  113,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "RiotBombTarget",
+        "display_name":  "RIOT Device",
+        "order":  114,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "RiotDropOffCheckpoint",
+        "display_name":  "Checkpoint",
+        "order":  115,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "RiotVan",
+        "display_name":  "RIOT Unit",
+        "order":  116,
+        "source":  "TaskTargetTypes.INT"
+    },
+    {
+        "id":  "PumpkinRed",
+        "display_name":  "Red Pumpkin",
+        "order":  117,
+        "source":  "TaskTargetTypes.INT"
+    }
+]

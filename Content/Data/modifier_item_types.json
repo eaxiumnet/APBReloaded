@@ -1,0 +1,2274 @@
+[
+    {
+        "id":  "Mod_None",
+        "category":  "Special",
+        "type_label":  "",
+        "description":  "DNT - DO NOT TRANSLATE",
+        "order":  0,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "Mod_Vacant",
+        "category":  "Special",
+        "type_label":  "",
+        "description":  "DNT - DO NOT TRANSLATE",
+        "order":  1,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_FieldSupplier",
+        "category":  "Character",
+        "type_label":  "Activated Modification",
+        "description":  "A Field Deployment Kit that allows players and any teammates nearby to resupply ammunition and switch weapon loadouts.",
+        "order":  2,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_ClottingAgent1",
+        "category":  "Character",
+        "type_label":  "Health Modification",
+        "description":  "Coagulants in the bloodstream cause any damage taken to regenerate itself slightly faster, after the initial delay.",
+        "order":  3,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_ClottingAgent2",
+        "category":  "Character",
+        "type_label":  "Health Modification",
+        "description":  "Coagulants in the bloodstream cause any damage taken to regenerate itself moderately faster, after the initial delay.",
+        "order":  4,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_ClottingAgent3",
+        "category":  "Character",
+        "type_label":  "Health Modification",
+        "description":  "Coagulants in the bloodstream cause any damage taken to regenerate itself much faster, after the initial delay.",
+        "order":  5,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_HappyLandings1",
+        "category":  "Character",
+        "type_label":  "Utility Modification",
+        "description":  "Extensive training has improved your ability to land correctly, allowing you to take slightly less damage when falling from a height.",
+        "order":  6,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_HappyLandings2",
+        "category":  "Character",
+        "type_label":  "Utility Modification",
+        "description":  "Extensive training has improved your ability to land correctly, allowing you to take a lot less damage when falling from a height.",
+        "order":  7,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_HappyLandings3",
+        "category":  "Character",
+        "type_label":  "Utility Modification",
+        "description":  "Extensive training has improved your ability to land correctly, stopping you taking any damage when falling from a height.",
+        "order":  8,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_Kevlar1",
+        "category":  "Character",
+        "type_label":  "Health Modification",
+        "description":  "Subdermal Kevlar Implants slightly decrease the amount of damage you take from incoming fire.",
+        "order":  9,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_Kevlar2",
+        "category":  "Character",
+        "type_label":  "Health Modification",
+        "description":  "Subdermal Kevlar Implants moderately decrease the amount of damage you take from incoming fire.",
+        "order":  10,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_Kevlar3",
+        "category":  "Character",
+        "type_label":  "Health Modification",
+        "description":  "Subdermal Kevlar Implants heavily decrease the amount of damage you take from incoming fire.",
+        "order":  11,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_MobileSupplyUnit",
+        "category":  "Vehicle",
+        "type_label":  "Trunk Modification",
+        "description":  "Turns your vehicle into an ammo distributor, allowing you and your group to restock your weapons.",
+        "order":  12,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_Explosives1",
+        "category":  "Vehicle",
+        "type_label":  "Generic Modification",
+        "description":  "Explosives and shrapnel within the vehicle's frame slightly increase the blast radius when it explodes.",
+        "order":  13,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_Explosives2",
+        "category":  "Vehicle",
+        "type_label":  "Generic Modification",
+        "description":  "Explosives and shrapnel within the vehicle's frame moderately increase the blast radius when it explodes.",
+        "order":  14,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_Explosives3",
+        "category":  "Vehicle",
+        "type_label":  "Generic Modification",
+        "description":  "Explosives and shrapnel within the vehicle's frame greatly increase the blast radius when it explodes.",
+        "order":  15,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_ChassisStrengthening1",
+        "category":  "Vehicle",
+        "type_label":  "Chassis Modification",
+        "description":  "Improved Alloys in the vehicle's frame slightly reduces the amount of damage it takes from collisions.",
+        "order":  16,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_ChassisStrengthening2",
+        "category":  "Vehicle",
+        "type_label":  "Chassis Modification",
+        "description":  "Improved Alloys in the vehicle's frame moderately reduces the amount of damage it takes from collisions.",
+        "order":  17,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_ChassisStrengthening3",
+        "category":  "Vehicle",
+        "type_label":  "Chassis Modification",
+        "description":  "Improved Alloys in the vehicle's frame greatly reduces the amount of damage it takes from collisions.",
+        "order":  18,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_ArmoredEngine1",
+        "category":  "Vehicle",
+        "type_label":  "Engine Modification",
+        "description":  "Kevlar plates around the engine block slightly increase the amount of damage the vehicle must take before it is set on fire.",
+        "order":  19,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_ArmoredEngine2",
+        "category":  "Vehicle",
+        "type_label":  "Engine Modification",
+        "description":  "Kevlar plates around the engine block moderately increase the amount of damage the vehicle must take before it is set on fire.",
+        "order":  20,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_ArmoredEngine3",
+        "category":  "Vehicle",
+        "type_label":  "Engine Modification",
+        "description":  "Kevlar plates around the engine block moderately increase the amount of damage the vehicle must take before it is set on fire.",
+        "order":  21,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_Fireproofing1",
+        "category":  "Vehicle",
+        "type_label":  "Engine Modification",
+        "description":  "Fire Retardant material around the engine slows the spread of flames, slightly reducing the damage it takes from internal fire damage.",
+        "order":  22,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_Fireproofing2",
+        "category":  "Vehicle",
+        "type_label":  "Engine Modification",
+        "description":  "Fire Retardant material around the engine slows the spread of flames, moderately reducing the damage it takes from internal fire damage.",
+        "order":  23,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_Fireproofing3",
+        "category":  "Vehicle",
+        "type_label":  "Engine Modification",
+        "description":  "Fire Retardant material around the engine slows the spread of flames, greatly reducing the damage it takes from internal fire damage.",
+        "order":  24,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_Nitro1",
+        "category":  "Vehicle",
+        "type_label":  "Activated Modification",
+        "description":  "NOS injectors allow the user to trigger a period of slightly improved engine performance.",
+        "order":  25,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_Nitro2",
+        "category":  "Vehicle",
+        "type_label":  "Activated Modification",
+        "description":  "NOS injectors allow the user to trigger a period of moderately improved engine performance.",
+        "order":  26,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_Nitro3",
+        "category":  "Vehicle",
+        "type_label":  "Activated Modification",
+        "description":  "NOS injectors allow the user to trigger a period of greatly improved engine performance.",
+        "order":  27,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_ExtraCargoCapacity1",
+        "category":  "Vehicle",
+        "type_label":  "Trunk Modification",
+        "description":  "Slightly increases the vehicle's available cargo storage space.",
+        "order":  28,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_ExtraCargoCapacity2",
+        "category":  "Vehicle",
+        "type_label":  "Trunk Modification",
+        "description":  "Moderately increases the vehicle's available cargo storage space.",
+        "order":  29,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_ExtraCargoCapacity3",
+        "category":  "Vehicle",
+        "type_label":  "Trunk Modification",
+        "description":  "Greatly increases the vehicle's available cargo storage space.",
+        "order":  30,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_FastFixChassis1",
+        "category":  "Vehicle",
+        "type_label":  "Generic Modification",
+        "description":  "Easier access to core systems and the vehicle's frame allows for slightly improved repair time.",
+        "order":  31,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_FastFixChassis2",
+        "category":  "Vehicle",
+        "type_label":  "Generic Modification",
+        "description":  "Easier access to core systems and the vehicle's frame allows for moderately improved repair time.",
+        "order":  32,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_FastFixChassis3",
+        "category":  "Vehicle",
+        "type_label":  "Generic Modification",
+        "description":  "Easier access to core systems and the vehicle's frame allows for greatly improved repair time.",
+        "order":  33,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_RammingPlate1",
+        "category":  "Vehicle",
+        "type_label":  "Chassis Modification",
+        "description":  "Tough Iron Plates mounted at the front of the vehicle's engine slightly increases the force transmitted when ramming enemy vehicles or objects.",
+        "order":  34,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_RammingPlate2",
+        "category":  "Vehicle",
+        "type_label":  "Chassis Modification",
+        "description":  "Tough Iron Plates mounted at the front of the vehicle's engine noticeably increases the force transmitted when ramming enemy vehicles or objects.",
+        "order":  35,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_RammingPlate3",
+        "category":  "Vehicle",
+        "type_label":  "Chassis Modification",
+        "description":  "Tough Iron Plates mounted at the front of the vehicle's engine greatly increases the force transmitted when ramming enemy vehicles or objects.",
+        "order":  36,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_SteelPlating1",
+        "category":  "Vehicle",
+        "type_label":  "Chassis Modification",
+        "description":  "Steel Plates in the vehicle's chassis slightly reduces the damage caused by weapons fire.",
+        "order":  37,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_SteelPlating2",
+        "category":  "Vehicle",
+        "type_label":  "Chassis Modification",
+        "description":  "Steel Plates in the vehicle's chassis noticeably reduces the damage caused by weapons fire.",
+        "order":  38,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_SteelPlating3",
+        "category":  "Vehicle",
+        "type_label":  "Chassis Modification",
+        "description":  "Steel Plates in the vehicle's chassis greatly reduces the damage caused by weapons fire.",
+        "order":  39,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Bandolier1",
+        "category":  "Weapon",
+        "type_label":  "Magazine Modification",
+        "description":  "Allows the user to carry a small amount of extra ammunition for the attached weapon.",
+        "order":  40,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Bandolier2",
+        "category":  "Weapon",
+        "type_label":  "Magazine Modification",
+        "description":  "Allows the user to carry a medium amount of extra ammunition for the attached weapon.",
+        "order":  41,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Bandolier3",
+        "category":  "Weapon",
+        "type_label":  "Magazine Modification",
+        "description":  "Allows the user to carry a large amount of extra ammunition for the attached weapon.",
+        "order":  42,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_HeavyBarrel1",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "A Heavier Barrel reduces the amount of vibration in the weapon, slightly reducing the accuracy degredation per shot.",
+        "order":  43,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_HeavyBarrel2",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "A Heavier Barrel reduces the amount of vibration in the weapon, moderately reducing the accuracy degredation per shot.",
+        "order":  44,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_HeavyBarrel3",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "A Heavier Barrel reduces the amount of vibration in the weapon, heavily reducing the accuracy degredation per shot",
+        "order":  45,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_ReflexSight1",
+        "category":  "Weapon",
+        "type_label":  "Upper Rail Modification",
+        "description":  "Reflex sights allow for faster target aquisition at close ranges without obscuring the user's field of view. This helps slightly improve accuracy outside marksmanship mode.",
+        "order":  46,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_ReflexSight2",
+        "category":  "Weapon",
+        "type_label":  "Upper Rail Modification",
+        "description":  "Reflex sights allow for faster target aquisition at close ranges without obscuring the user's field of view. This helps moderately improve accuracy outside marksmanship mode.",
+        "order":  47,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_ReflexSight3",
+        "category":  "Weapon",
+        "type_label":  "Upper Rail Modification",
+        "description":  "Reflex sights allow for faster target aquisition at close ranges without obscuring the user's field of view. This helps heavily improve accuracy outside marksmanship mode.",
+        "order":  48,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_MagazinePull1",
+        "category":  "Weapon",
+        "type_label":  "Magazine Modification",
+        "description":  "Rubberized loops on the magazines allow them to be handled easier, slightly improving reload times.",
+        "order":  49,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_MagazinePull2",
+        "category":  "Weapon",
+        "type_label":  "Magazine Modification",
+        "description":  "Rubberized loops on the magazines allow them to be handled easier, moderately improving reload times.",
+        "order":  50,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_MagazinePull3",
+        "category":  "Weapon",
+        "type_label":  "Magazine Modification",
+        "description":  "Rubberized loops on the magazines allow them to be handled easier, greatly improving reload times.",
+        "order":  51,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Rifling1",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "Precision laser-cut polygonal rifling helps improve the operational range of the weapon, slightly increasing the range while reducing fire rate to protect the barrel.",
+        "order":  52,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Rifling2",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "Precision laser-cut polygonal rifling helps improve the operational range of the weapon, slightly increasing the range while reducing fire rate to protect the barrel.",
+        "order":  53,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Rifling3",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "Precision laser-cut polygonal rifling helps improve the operational range of the weapon, slightly increasing the range while reducing fire rate to protect the barrel.",
+        "order":  54,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_HuntingSight1",
+        "category":  "Weapon",
+        "type_label":  "Upper Rail Modification",
+        "description":  "Pin-hole target aperture sight slightly improves accuracy when focusing in marksmanship mode.",
+        "order":  55,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_HuntingSight2",
+        "category":  "Weapon",
+        "type_label":  "Upper Rail Modification",
+        "description":  "Pin-hole target aperture sight noticeably improves accuracy when focusing in marksmanship mode.",
+        "order":  56,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_HuntingSight3",
+        "category":  "Weapon",
+        "type_label":  "Upper Rail Modification",
+        "description":  "Pin-hole target aperture sight greatly improves accuracy when focusing in marksmanship mode.",
+        "order":  57,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_CoolingJacket1",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "A Cooling Jacket reduces the heat generated with continuous fire, allowing the weapon to fire slightly closer to its cyclic rate.",
+        "order":  58,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_CoolingJacket2",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "A Cooling Jacket reduces the heat generated with continuous fire, allowing the weapon to fire closer to its cyclic rate.",
+        "order":  59,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_CoolingJacket3",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "A Cooling Jacket reduces the heat generated with continuous fire, allowing the weapon to fire much closer to its cyclic rate.",
+        "order":  60,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_ExtendedMagazine1",
+        "category":  "Weapon",
+        "type_label":  "Magazine Modification",
+        "description":  "Slightly increases the ammo capacity of your weapon's magazine.",
+        "order":  61,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_ExtendedMagazine2",
+        "category":  "Weapon",
+        "type_label":  "Magazine Modification",
+        "description":  "Noticeably increases the ammo capacity of your weapon's magazine.",
+        "order":  62,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_ExtendedMagazine3",
+        "category":  "Weapon",
+        "type_label":  "Magazine Modification",
+        "description":  "Greatly increases the ammo capacity of your weapon's magazine.",
+        "order":  63,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_ThreePointSling1",
+        "category":  "Weapon",
+        "type_label":  "Receiver Modification",
+        "description":  "A three-point sling attached to the front and rear of the receiver allows the weapon to be equipped slightly faster.",
+        "order":  64,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_ThreePointSling2",
+        "category":  "Weapon",
+        "type_label":  "Receiver Modification",
+        "description":  "A three-point sling attached to the front and rear of the receiver allows the weapon to be equipped noticeably faster.",
+        "order":  65,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_ThreePointSling3",
+        "category":  "Weapon",
+        "type_label":  "Receiver Modification",
+        "description":  "A three-point sling attached to the front and rear of the receiver allows the weapon to be equipped much faster.",
+        "order":  66,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FNMod_Character_HardLanding",
+        "category":  "Character",
+        "type_label":  "Utility Modification.",
+        "description":  "Failing to brace yourself from falling removes any recovery time when landing. Your legs won't like you for it though.",
+        "order":  67,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_AmmoCarrier_Radius",
+        "category":  "Character",
+        "type_label":  "Activated Modification",
+        "description":  "A Field Deployment Kit that allows players and any teammates nearby to resupply ammunition and switch weapon loadouts. This version allows teammates to resupply from twice as far away.",
+        "order":  68,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_AmmoCarrier_Deploy",
+        "category":  "Character",
+        "type_label":  "Activated Modification",
+        "description":  "A Field Deployment Kit that allows players and any teammates nearby to resupply ammunition and switch weapon loadouts. This version deploys and undeploys faster than normal.",
+        "order":  69,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_AmmoCarrier_Resupply",
+        "category":  "Character",
+        "type_label":  "Activated Modification",
+        "description":  "A Field Deployment Kit that allows players and any teammates nearby to resupply ammunition and switch weapon loadouts. This version resupplys ammo faster.",
+        "order":  70,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_AmmoCarrier_Health",
+        "category":  "Character",
+        "type_label":  "Activated Modification",
+        "description":  "A Field Deployment Kit that allows players and any teammates nearby to resupply ammunition and switch weapon loadouts. This version provides a temporary boost in health when in use.",
+        "order":  71,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_AmmoCarrier_Cooldown",
+        "category":  "Character",
+        "type_label":  "Activated Modification",
+        "description":  "A Field Deployment Kit that allows players and any teammates nearby to resupply ammunition and switch weapon loadouts. This version has a reduced cooldown over standard.",
+        "order":  72,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_AirControl",
+        "category":  "Character",
+        "type_label":  "Utility Modification",
+        "description":  "Ability to Control yourself more while in the air.",
+        "order":  73,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_MobilitySling",
+        "category":  "Weapon",
+        "type_label":  "Receiver Modification",
+        "description":  "A Joker manufactured sling designed to act as a stability aid while moving. This allows the user to walk or run faster while in marksmanship mode.",
+        "order":  74,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_Fragile",
+        "category":  "Character",
+        "type_label":  "Health Modification",
+        "description":  "Years of track training have honed you into a running machine.",
+        "order":  75,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_TestMod",
+        "category":  "Vehicle",
+        "type_label":  "General Modification",
+        "description":  "Used to Test Effects",
+        "order":  76,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_TestMod",
+        "category":  "Character",
+        "type_label":  "General Modification",
+        "description":  "Used to Test Effects",
+        "order":  77,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_TestMod",
+        "category":  "Weapon",
+        "type_label":  "General Modification",
+        "description":  "Used to Test Effects",
+        "order":  78,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_CarSurfer",
+        "category":  "Character",
+        "type_label":  "Utility Modification",
+        "description":  "By utilising years of training in balance and poise, you are able to keep steady on the roofs of moving vehicles.",
+        "order":  79,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Silencer_Pistol",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "A Suppressor and Subsonic rounds help better obfuscate the direction of the shooter at the expense of magazine capacity and hard damage.",
+        "order":  80,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Silencer_SniperRifle",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "A Suppressor and Speciality rounds dampen the sound and muzzle flare and remove all tracers. The special rounds slightly reduces range compared to the standard HVR model.",
+        "order":  81,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Silencer_SMG",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "A Suppressor helps reduce muzzle flare and dampens sound. Reduced muzzle velocity caused by the extra friction of the suppressor however makes the weapon slightly less effective when hitting hard targets such as vehicles.",
+        "order":  82,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_Brick",
+        "category":  "Vehicle",
+        "type_label":  "Activated Modification",
+        "description":  "Not exactly the most technologically impressive modification on the market, but a brick on the accelerator will allow the user to jump out of the vehicle while it keeps accelerating towards your intended target, keeping them occupied enough for you to take them down.",
+        "order":  83,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_RadarJammer",
+        "category":  "Character",
+        "type_label":  "Activated Modification",
+        "description":  "A mobile jamming device allows you to jam any enemy targets in the area, transmitting your Personal Graffiti directly over their radar. The power for this however highlights you on the radar to any players not jammed.",
+        "order":  84,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_Spotter",
+        "category":  "Character",
+        "type_label":  "Activated Modification",
+        "description":  "Cross-Team Heads-up modifications allow you to target and track enemies you spot through walls and other obstacles, relaying this information to your teammates for a short duration.",
+        "order":  85,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_Devlar",
+        "category":  "Character",
+        "type_label":  "",
+        "description":  "Developer Armour",
+        "order":  86,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_ClottingAgent2_Armas",
+        "category":  "Character",
+        "type_label":  "Health Modification",
+        "description":  "Coagulants in the bloodstream cause any damage taken to regenerate itself moderately faster, after the initial delay.",
+        "order":  87,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_Kevlar2_Armas",
+        "category":  "Character",
+        "type_label":  "Health Modification",
+        "description":  "Subdermal Kevlar Implants moderately decrease the amount of damage you take from incoming fire.",
+        "order":  88,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Tagger-Valentines",
+        "category":  "Weapon",
+        "type_label":  "Receiver Modification",
+        "description":  "RFID Tags attached to fired rounds effectively mark enemy targets, highlighting them on your Heads Up Display for you and your team. <Color:R=0.6 G=0.09 B=0.09>This mod is embedded and cannot be removed from the weapon.<Color:R=1 G=1 B=1>",
+        "order":  89,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Tagger-Duck",
+        "category":  "Weapon",
+        "type_label":  "Receiver Modification",
+        "description":  "RFID Tags attached to fired rounds effectively mark enemy targets, highlighting them on your Heads Up Display for you and your team. <Color:R=0.6 G=0.09 B=0.09>This mod is embedded and cannot be removed from the weapon.<Color:R=1 G=1 B=1>",
+        "order":  90,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_Valzipram",
+        "category":  "Character",
+        "type_label":  "Utility Modification",
+        "description":  "Over the counter medication to relax your muscles during times of great stress. This flexibility allows you to survive hits from vehicles at greater speeds.",
+        "order":  91,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_FlakJacket",
+        "category":  "Character",
+        "type_label":  "Health Modification",
+        "description":  "Flak Jackets consist of a number of steel plates stitched into any available clothing. Designed to reduce any shrapnel and other explosive effects, this modification heavily reduces any damage from any explosive weaponry, though you do lose a bit of pocket space.",
+        "order":  92,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_Muffler",
+        "category":  "Vehicle",
+        "type_label":  "Engine Modification",
+        "description":  "A muffled exhaust hides your vehicle from enemy radar as long as you are not accelerating. Additional tweaks reduce engine braking, allowing you to coast for long distances.",
+        "order":  93,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_MuzzleBrake_Horizontal",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "This recoil compensator takes gases produced by the weapon and directs them to the sides, reducing horizontal recoil at the expense of vertical.",
+        "order":  94,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Tagger",
+        "category":  "Weapon",
+        "type_label":  "Receiver Modification",
+        "description":  "RFID Tags attached to fired rounds effectively mark enemy targets, highlighting them on your Heads Up Display for you and your team.",
+        "order":  95,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_HighMagnificationScope",
+        "category":  "Weapon",
+        "type_label":  "Upper Rail Modification",
+        "description":  "Custom High-Magnification Scope greatly improves accuracy when focusing in marksmanship mode, as well as providing distance to target data.",
+        "order":  96,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_Meteor",
+        "category":  "Vehicle",
+        "type_label":  "Activated Modification",
+        "description":  "When Activated, Meteor will activate several systems in the vehicle. It will accelerate to maximum speed with a small amount of on-board Nitrous Oxide, and impact sensors on the vehicle will trigger a self-destruct when they are triggered by a collision or excessive gunfire.",
+        "order":  97,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Tagger-Rapid99",
+        "category":  "Weapon",
+        "type_label":  "Receiver Modification",
+        "description":  "RFID Tags attached to fired rounds effectively mark enemy targets, highlighting them on your Heads Up Display for you and your team. <Color:R=0.6 G=0.09 B=0.09>This mod is embedded and cannot be removed from the weapon.<Color:R=1 G=1 B=1>",
+        "order":  98,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Tagger-Sluttles",
+        "category":  "Weapon",
+        "type_label":  "Receiver Modification",
+        "description":  "RFID Tags attached to fired rounds effectively mark enemy targets, highlighting them on your Heads Up Display for you and your team. <Color:R=0.6 G=0.09 B=0.09>This mod is embedded and cannot be removed from the weapon.<Color:R=1 G=1 B=1>",
+        "order":  99,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Tagger-Reaper",
+        "category":  "Weapon",
+        "type_label":  "Receiver Modification",
+        "description":  "RFID Tags attached to fired rounds effectively mark enemy targets, highlighting them on your Heads Up Display for you and your team. <Color:R=0.6 G=0.09 B=0.09>This mod is embedded and cannot be removed from the weapon.<Color:R=1 G=1 B=1>",
+        "order":  100,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Tagger-PurpleCat",
+        "category":  "Weapon",
+        "type_label":  "Receiver Modification",
+        "description":  "RFID Tags attached to fired rounds effectively mark enemy targets, highlighting them on your Heads Up Display for you and your team. <Color:R=0.6 G=0.09 B=0.09>This mod is embedded and cannot be removed from the weapon.<Color:R=1 G=1 B=1>",
+        "order":  101,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Tagger-Cat",
+        "category":  "Weapon",
+        "type_label":  "Receiver Modification",
+        "description":  "RFID Tags attached to fired rounds effectively mark enemy targets, highlighting them on your Heads Up Display for you and your team. <Color:R=0.6 G=0.09 B=0.09>This mod is embedded and cannot be removed from the weapon.<Color:R=1 G=1 B=1>",
+        "order":  102,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Silencer_Rifle_Integrated",
+        "category":  "Weapon",
+        "type_label":  "Receiver Modification",
+        "description":  "A Suppressor helps reduce muzzle flare and dampens sound. Reduced muzzle velocity caused by the extra friction of the suppressor however makes the weapon slightly less effective when hitting hard targets such as vehicles.",
+        "order":  103,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Flare",
+        "category":  "Weapon",
+        "type_label":  "Receiver Modification",
+        "description":  "When the flare explodes, it will spot all enemies within line of sight of the flare, highlighting them on your Heads Up Display for you and your team. <Color:R=0.6 G=0.09 B=0.09>This mod is embedded and cannot be removed from the weapon.<Color:R=1 G=1 B=1>",
+        "order":  104,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_MobileSpawnPoint",
+        "category":  "Vehicle",
+        "type_label":  "Trunk Modification",
+        "description":  "Turns your vehicle into a Mobile Spawn Point. You can spawn from any vehicle with Mobile Spawn Point once every 2 minutes.",
+        "order":  105,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_ExtendedBarrel",
+        "category":  "Weapon",
+        "type_label":  "",
+        "description":  "The ACES Extended Barrel transforms what is primarily an SMG platform into a pseudo-rifle. The longer rifled barrel allows for higher velocity rounds to be used, increasing damage. The reduced fire rate is also a blessing in disguise, making the accuracy bloom more managable.",
+        "order":  106,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_ShortBarrel",
+        "category":  "Weapon",
+        "type_label":  "",
+        "description":  "The default configuration for the ACES, the Short Barrel allows for the system to output more bullets without worry of ruining the weapon barrel. Accuracy however is decreased due to the increased fire rate and lack of rifling.",
+        "order":  107,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_HuntingSight_Anubis",
+        "category":  "Weapon",
+        "type_label":  "Upper Rail Modification",
+        "description":  "A custom sight greatly improves accuracy when focusing in marksmanship mode, while providing a unique crosshair.",
+        "order":  108,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_FlakJacket_Joker",
+        "category":  "Character",
+        "type_label":  "Health Modification",
+        "description":  "Flak Jackets consist of a number of steel plates stitched into any available clothing. Designed to reduce any shrapnel and other explosive effects, this modification heavily reduces any damage from any explosive weaponry, though you do lose a bit of pocket space.",
+        "order":  109,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_Fragile_Joker",
+        "category":  "Character",
+        "type_label":  "Health Modification",
+        "description":  "Years of track training have honed you into a running machine.",
+        "order":  110,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FNMod_Character_HardLanding_Joker",
+        "category":  "Character",
+        "type_label":  "Utility Modification.",
+        "description":  "Failing to brace yourself from falling removes any recovery time when landing. Your legs won't like you for it though.",
+        "order":  111,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_CarSurfer_Joker",
+        "category":  "Character",
+        "type_label":  "Utility Modification",
+        "description":  "By utilising years of training in balance and poise, you are able to keep steady on the roofs of moving vehicles.",
+        "order":  112,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_RadarJammer_Joker",
+        "category":  "Character",
+        "type_label":  "Activated Modification",
+        "description":  "A mobile jamming device allows you to jam any enemy targets in the area, transmitting your Personal Graffiti directly over their radar. The power for this however highlights you on the radar to any players not jammed.",
+        "order":  113,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_Spotter_Joker",
+        "category":  "Character",
+        "type_label":  "Activated Modification",
+        "description":  "Cross-Team Heads-up modifications allow you to target and track enemies you spot through walls and other obstacles, relaying this information to your teammates for a short duration.",
+        "order":  114,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_Valzipram_Joker",
+        "category":  "Character",
+        "type_label":  "Utility Modification",
+        "description":  "Over the counter medication to relax your muscles during times of great stress. This flexibility allows you to survive hits from vehicles at greater speeds.",
+        "order":  115,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_RemoteDetonator",
+        "category":  "Character",
+        "type_label":  "Activated Modification",
+        "description":  "A custom detonator paired with small explosives planted within your personal vehicle allows you to explode it from a distance.",
+        "order":  116,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_Brick_Joker",
+        "category":  "Vehicle",
+        "type_label":  "Activated Modification",
+        "description":  "Not exactly the most technologically impressive modification on the market, but a brick on the accelerator will allow the user to jump out of the vehicle while it keeps accelerating towards your intended target, keeping them occupied enough for you to take them down.",
+        "order":  117,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_MobilitySling_Joker",
+        "category":  "Weapon",
+        "type_label":  "Receiver Modification",
+        "description":  "A Joker manufactured sling designed to act as a stability aid while moving. This allows the user to walk or run faster while in marksmanship mode.",
+        "order":  118,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Tagger_Joker",
+        "category":  "Weapon",
+        "type_label":  "Receiver Modification",
+        "description":  "RFID Tags attached to fired rounds effectively mark enemy targets, highlighting them on your Heads Up Display for you and your team.",
+        "order":  119,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_HighMagnificationScope_Joker",
+        "category":  "Weapon",
+        "type_label":  "Upper Rail Modification",
+        "description":  "Custom High-Magnification Scope greatly improves accuracy when focusing in marksmanship mode, as well as providing distance to target data.",
+        "order":  120,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Piercing_Armas",
+        "category":  "Weapon",
+        "type_label":  "Receiver Modification",
+        "description":  "Adjustments to the firing mechanism of the weapon allow the bullets to pierce most objects they hit (not including vehicles and walls). The act of piercing an object however heavily reduces the hard damage, as well as reducing the damage done to subsequent objects hit.",
+        "order":  121,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_Blowtorch",
+        "category":  "Character",
+        "type_label":  "Activated Modification",
+        "description":  "This blowtorch will repair any metal objects it hits, especially useful to keep your vehicle in good repair. Not recommended for use as emergency first aid.",
+        "order":  122,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Piercing",
+        "category":  "Weapon",
+        "type_label":  "Receiver Modification",
+        "description":  "Adjustments to the firing mechanism of the weapon allow the bullets to pierce most objects they hit (not including vehicles and walls). The act of piercing an object however heavily reduces the hard damage, as well as reducing the damage done to subsequent objects hit.",
+        "order":  123,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_DoubleDrum",
+        "category":  "Weapon",
+        "type_label":  "Magazine Modification",
+        "description":  "Double-drums massively extend the amount of ammunition the weapon can hold in both the magazine and storage, at costs to several other areas.",
+        "order":  124,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_HighBurnFuel",
+        "category":  "Vehicle",
+        "type_label":  "Generic Modification",
+        "description":  "Specialised Fuel that only ignites under heavy compression removes the dangerous explosion that often occurs under fire during the San Paro daily commute.",
+        "order":  125,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_RadarTower",
+        "category":  "Vehicle",
+        "type_label":  "Trunk Modification",
+        "description":  "A Mobile Radar Tower in the trunk of your vehicle can detect nearby enemies and show them on your radar even when you are not inside the vehicle. Any enemies detected in this way can see your vehicle on their radar.",
+        "order":  126,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_Blowtorch_Joker",
+        "category":  "Character",
+        "type_label":  "Activated Modification",
+        "description":  "This blowtorch will repair any metal objects it hits, especially useful to keep your vehicle in good repair. Not recommended for use as emergency first aid.",
+        "order":  127,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_HighBurnFuel_Joker",
+        "category":  "Vehicle",
+        "type_label":  "Generic Modification",
+        "description":  "Specialised Fuel that only ignites under heavy compression removes the dangerous explosion that often occurs under fire during the San Paro daily commute.",
+        "order":  128,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_RadarTower_Joker",
+        "category":  "Vehicle",
+        "type_label":  "Trunk Modification",
+        "description":  "A Mobile Radar Tower in the trunk of your vehicle can detect nearby enemies and show them on your radar even when you are not inside the vehicle. Any enemies detected in this way can see your vehicle on their radar.",
+        "order":  129,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_Muffler_Joker",
+        "category":  "Vehicle",
+        "type_label":  "Engine Modification",
+        "description":  "A muffled exhaust hides your vehicle from enemy radar as long as you are not accelerating. Additional tweaks reduce engine braking, allowing you to coast for long distances.",
+        "order":  130,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_RemoteDetonator_Joker",
+        "category":  "Character",
+        "type_label":  "Activated Modification",
+        "description":  "A custom detonator paired with small explosives planted around your personal vehicle allows you to explode it from a distance.",
+        "order":  131,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_BurstAvalanche_Armas",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "These barrel adjustments allow the weapon to fire an extra round per burst of the weapon. Less powerful loads need to be used to stop the barrel wearing out with the increased throughput.",
+        "order":  132,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_BananaMag_Armas",
+        "category":  "Weapon",
+        "type_label":  "Magazine Modification",
+        "description":  "A curved magazine allows you to fit more rounds into the weapon without requiring longer to load or unload. They do however take up more space, reducing the number you can hold in reserve.",
+        "order":  133,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_Flag",
+        "category":  "Character",
+        "type_label":  "Activated Modification",
+        "description":  "This deployable banner projects your personal symbol, projecting your dominance to all-comers.",
+        "order":  134,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_GermanReticle_Armas",
+        "category":  "Weapon",
+        "type_label":  "Upper Rail Modification",
+        "description":  "Custom High-Magnification Scope greatly improves accuracy when focusing in marksmanship mode, while providing an open 3-post reticle with a central dot to provide a clear view.",
+        "order":  135,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_Minigame_GoldenWeapon",
+        "category":  "Character",
+        "type_label":  "Event Modification",
+        "description":  "Easter Fun and Games - This modification increases your health and movement speed slightly.",
+        "order":  136,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Tagger-Suit-Joker_Armas",
+        "category":  "Weapon",
+        "type_label":  "Receiver Modification",
+        "description":  "Special Card Suit RFID Tags attached to fired rounds mark enemy targets, highlighting them on your Heads Up Display for you and your team.",
+        "order":  137,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Tagger-Suit-Clubs_Armas",
+        "category":  "Weapon",
+        "type_label":  "Receiver Modification",
+        "description":  "Special Card Suit RFID Tags attached to fired rounds mark enemy targets, highlighting them on your Heads Up Display for you and your team.",
+        "order":  138,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Tagger-Suit-Spades_Armas",
+        "category":  "Weapon",
+        "type_label":  "Receiver Modification",
+        "description":  "Special Card Suit RFID Tags attached to fired rounds mark enemy targets, highlighting them on your Heads Up Display for you and your team.",
+        "order":  139,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_ChamberedRound_Armas",
+        "category":  "Weapon",
+        "type_label":  "Receiver Modification",
+        "description":  "A round left in the chamber speeds up reloading.",
+        "order":  140,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Tagger-Suit-Hearts_Armas",
+        "category":  "Weapon",
+        "type_label":  "Receiver Modification",
+        "description":  "Special Card Suit RFID Tags attached to fired rounds mark enemy targets, highlighting them on your Heads Up Display for you and your team.",
+        "order":  141,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Tagger-Suit-Diamonds_Armas",
+        "category":  "Weapon",
+        "type_label":  "Receiver Modification",
+        "description":  "Special Card Suit RFID Tags attached to fired rounds mark enemy targets, highlighting them on your Heads Up Display for you and your team.",
+        "order":  142,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_MechanicalChoke",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "Complex mechanisms in the barrel allow the weapon to dynamically adjust the Shotgun's choke on the fly. This allows the user to gain a tighter spread by entering marksmanship mode, at the cost of fire rate.",
+        "order":  143,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_DevPackage",
+        "category":  "Character",
+        "type_label":  "",
+        "description":  "Anyone ask for supplies?",
+        "order":  144,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_MicroRockets",
+        "category":  "Weapon",
+        "type_label":  "Magazine Modification",
+        "description":  "Micro-Rockets are smaller, less powerful projectiles that can be loaded two at a time. They have a smaller blast radius, and are affected by gravity, but fly faster and gain damage as they fly. At 83m each rocket is as effective as an OSMAW.",
+        "order":  145,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Norsemen-Hel",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "Rounds are cycled through the action more fluidly when the weapon is fired continuously, resulting in better accuracy as you fire more.",
+        "order":  146,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_EOL-LightFrag",
+        "category":  "Weapon",
+        "type_label":  "",
+        "description":  "Adaptations to fire low-yield style grenades that arm after a short duration in the air. These do medium damage over an average blast radius.",
+        "order":  147,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_EOL-Concussion",
+        "category":  "Weapon",
+        "type_label":  "",
+        "description":  "Adaptations to fire concussion style grenades that arm after a medium duration in the air. These bounce very little and do extreme damage to targets caught in their small blast radius, especially vehicles.",
+        "order":  148,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_EOL-Percussion",
+        "category":  "Weapon",
+        "type_label":  "",
+        "description":  "Adaptations to fire percussion style grenades that arm after a very short duration in the air. These do medium damage over an short blast radius.",
+        "order":  149,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Norsemen-Hoenir",
+        "category":  "Weapon",
+        "type_label":  "Magazine Modification",
+        "description":  "Less bullets make the magazine lighter, allowing it to be removed more easily.",
+        "order":  150,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Norsemen-Tyr",
+        "category":  "Weapon",
+        "type_label":  "Receiver Modification",
+        "description":  "As more bullets are fired, recoil compensators kick in to reduce recoil and stabalise the weapon. A three-point sling also reduces equip time.",
+        "order":  151,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Norsemen-Hel-Mini",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "Rounds are cycled through the action more fluidly when the weapon is fired continuously, resulting in slightly better accuracy as you fire more.",
+        "order":  152,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Norsemen-Hoenir-Mini",
+        "category":  "Weapon",
+        "type_label":  "Magazine Modification",
+        "description":  "Less bullets make the magazine slightly lighter, allowing it to be removed more easily.",
+        "order":  153,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Norsemen-Tyr-Mini",
+        "category":  "Weapon",
+        "type_label":  "Receiver Modification",
+        "description":  "As more bullets are fired, recoil compensators kick in to reduce recoil and partially stabalise the weapon. A two-point sling also reduces equip time.",
+        "order":  154,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_UL3-Damage",
+        "category":  "Weapon",
+        "type_label":  "Magazine Modification",
+        "description":  "Frangible rounds deal more damage against fleshy targets close up but are less aerodynamic, losing momentum and thus impact potential at range, along with doing almost no damage against hard targets.",
+        "order":  155,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_UL3-FireRate",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "Despite the extremely efficient nature of this Cooling Jacket, generated heat is still enough with the increased fire rate to expand the barrel and cause the weapon to lose accuracy when fired continually.",
+        "order":  156,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_MuzzleBrake_Horizontal_RUS",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "This recoil compensator takes gases produced by the weapon and directs them to the sides, reducing horizontal recoil at the expense of vertical.",
+        "order":  157,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_UL3-Distance",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "While quickly overwhelmed, shock absorbers between the barrel and stock provide a small initial increase to accuracy along with heavily reducing the accuracy lost in the initial rounds of a burst.",
+        "order":  158,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Raptor_Silencer",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "The XTD-7s Silencer combines high-tech materials with the pinnacle of baffle design in order to create a weapon that's so whisper quiet, it won't show up initially on even the most sophisticated listening devices.",
+        "order":  159,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_AMG_Stabiliser",
+        "category":  "Weapon",
+        "type_label":  "Receiver Modification",
+        "description":  "Machine controlled weights are distributed around the receiver to compensate for the recoil in real-time.",
+        "order":  160,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_HeavyBarrel1_RUS",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "A Heavier Barrel reduces the amount of vibration in the weapon, slightly reducing the accuracy degredation per shot.",
+        "order":  161,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_SelectFire",
+        "category":  "Weapon",
+        "type_label":  "Receiver Modification",
+        "description":  "The weapon will now switch to Burst-Fire Mode when entering Marksmanship.",
+        "order":  162,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_PistolChoke",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "A custom choked barrel for the Showstopper, this tightens the spread of the weapon and increases the effective range. Fire rate has been reduced in order to reduce wear to the barrel.",
+        "order":  163,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_CoolingJacket1_OTW",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "A Cooling Jacket reduces the heat generated with continuous fire, allowing the weapon to fire slightly closer to its cyclic rate. <Color:R=0 G=1 B=0>OTW Test - This now affects Burst Interval also<Color:R=1 G=1 B=1>",
+        "order":  164,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_CoolingJacket2_OTW",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "A Cooling Jacket reduces the heat generated with continuous fire, allowing the weapon to fire slightly closer to its cyclic rate. <Color:R=0 G=1 B=0>OTW Test - This now affects Burst Interval also<Color:R=1 G=1 B=1>",
+        "order":  165,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_CoolingJacket3_OTW",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "A Cooling Jacket reduces the heat generated with continuous fire, allowing the weapon to fire much closer to its cyclic rate. <Color:R=0 G=1 B=0>OTW Test - This now affects Burst Interval also<Color:R=1 G=1 B=1>",
+        "order":  166,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Bandolier1_OTW",
+        "category":  "Weapon",
+        "type_label":  "Magazine Modification",
+        "description":  "Allows the user to carry a small amount of extra ammunition for the attached weapon.",
+        "order":  167,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Bandolier2_OTW",
+        "category":  "Weapon",
+        "type_label":  "Magazine Modification",
+        "description":  "Allows the user to carry a medium amount of extra ammunition for the attached weapon.",
+        "order":  168,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Bandolier3_OTW",
+        "category":  "Weapon",
+        "type_label":  "Magazine Modification",
+        "description":  "Allows the user to carry a large amount of extra ammunition for the attached weapon.",
+        "order":  169,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_ExtendedMagazine1_OTW",
+        "category":  "Weapon",
+        "type_label":  "Magazine Modification",
+        "description":  "Slightly increases the ammo capacity of your weapon's magazine.",
+        "order":  170,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_ExtendedMagazine2_OTW",
+        "category":  "Weapon",
+        "type_label":  "Magazine Modification",
+        "description":  "Noticeably increases the ammo capacity of your weapon's magazine.",
+        "order":  171,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_ExtendedMagazine3_OTW",
+        "category":  "Weapon",
+        "type_label":  "Magazine Modification",
+        "description":  "Greatly increases the ammo capacity of your weapon's magazine.",
+        "order":  172,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_HeavyBarrel1_OTW",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "A Heavier Barrel reduces the amount of vibration in the weapon, slightly reducing the accuracy degredation per shot.",
+        "order":  173,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_HeavyBarrel2_OTW",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "A Heavier Barrel reduces the amount of vibration in the weapon, moderately reducing the accuracy degredation per shot.",
+        "order":  174,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_HeavyBarrel3_OTW",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "A Heavier Barrel reduces the amount of vibration in the weapon, heavily reducing the accuracy degredation per shot",
+        "order":  175,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_HuntingSight1_OTW",
+        "category":  "Weapon",
+        "type_label":  "Upper Rail Modification",
+        "description":  "Pin-hole target aperture sight slightly improves accuracy when focusing in marksmanship mode.",
+        "order":  176,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_HuntingSight2_OTW",
+        "category":  "Weapon",
+        "type_label":  "Upper Rail Modification",
+        "description":  "Pin-hole target aperture sight noticeably improves accuracy when focusing in marksmanship mode.",
+        "order":  177,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_HuntingSight3_OTW",
+        "category":  "Weapon",
+        "type_label":  "Upper Rail Modification",
+        "description":  "Pin-hole target aperture sight greatly improves accuracy when focusing in marksmanship mode.",
+        "order":  178,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_MagazinePull1_OTW",
+        "category":  "Weapon",
+        "type_label":  "Magazine Modification",
+        "description":  "Rubberized loops on the magazines allow them to be handled easier, slightly improving reload times.",
+        "order":  179,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_MagazinePull2_OTW",
+        "category":  "Weapon",
+        "type_label":  "Magazine Modification",
+        "description":  "Rubberized loops on the magazines allow them to be handled easier, moderately improving reload times.",
+        "order":  180,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_MagazinePull3_OTW",
+        "category":  "Weapon",
+        "type_label":  "Magazine Modification",
+        "description":  "Rubberized loops on the magazines allow them to be handled easier, greatly improving reload times.",
+        "order":  181,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_ReflexSight1_OTW",
+        "category":  "Weapon",
+        "type_label":  "Upper Rail Modification",
+        "description":  "Reflex sights allow for faster target aquisition at close ranges without obscuring the user's field of view. This helps slightly improve accuracy outside marksmanship mode.",
+        "order":  182,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_ReflexSight2_OTW",
+        "category":  "Weapon",
+        "type_label":  "Upper Rail Modification",
+        "description":  "Reflex sights allow for faster target aquisition at close ranges without obscuring the user's field of view. This helps moderately improve accuracy outside marksmanship mode.",
+        "order":  183,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_ReflexSight3_OTW",
+        "category":  "Weapon",
+        "type_label":  "Upper Rail Modification",
+        "description":  "Reflex sights allow for faster target aquisition at close ranges without obscuring the user's field of view. This helps heavily improve accuracy outside marksmanship mode.",
+        "order":  184,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Rifling1_OTW",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "Precision laser-cut polygonal rifling helps improve the operational range of the weapon, slightly increasing the range while reducing fire rate to protect the barrel. <Color:R=0 G=1 B=0>OTW Test - Now affects percentage then adds extra (works better on longer range weapons)<Color:R=1 G=1 B=1>",
+        "order":  185,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Rifling2_OTW",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "Precision laser-cut polygonal rifling helps improve the operational range of the weapon, increasing the range while reducing fire rate to protect the barrel. <Color:R=0 G=1 B=0>OTW Test - Now affects percentage then adds extra (works better on longer range weapons)<Color:R=1 G=1 B=1>",
+        "order":  186,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Rifling3_OTW",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "Precision laser-cut polygonal rifling helps improve the operational range of the weapon, greatly increasing the range while reducing fire rate to protect the barrel. <Color:R=0 G=1 B=0>OTW Test - Now affects percentage then adds extra (works better on longer range weapons)<Color:R=1 G=1 B=1>",
+        "order":  187,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_ThreePointSling1_OTW",
+        "category":  "Weapon",
+        "type_label":  "Receiver Modification",
+        "description":  "A three-point sling attached to the front and rear of the receiver allows the weapon to be equipped slightly faster.",
+        "order":  188,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_ThreePointSling2_OTW",
+        "category":  "Weapon",
+        "type_label":  "Receiver Modification",
+        "description":  "A three-point sling attached to the front and rear of the receiver allows the weapon to be equipped noticeably faster.",
+        "order":  189,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_ThreePointSling3_OTW",
+        "category":  "Weapon",
+        "type_label":  "Receiver Modification",
+        "description":  "A three-point sling attached to the front and rear of the receiver allows the weapon to be equipped much faster.",
+        "order":  190,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Bandolier50",
+        "category":  "Weapon",
+        "type_label":  "Magazine Mod",
+        "description":  "A special mod for GunGame, sets Ammo in reserve to 50.",
+        "order":  191,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_PreventWeaponDrop",
+        "category":  "Character",
+        "type_label":  "",
+        "description":  "Sticky Fingers - for when 'From my Cold Dead Hands' doesn't go far enough.",
+        "order":  192,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_ControlledAim_Armas",
+        "category":  "Weapon",
+        "type_label":  "Upper Rail Modification",
+        "description":  "When entering marksmanship mode the weapon switches state, lowering fire rate and heavily increasing accuracy in order to improve the ability to land shots at range.",
+        "order":  193,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_ShotgunSlug",
+        "category":  "Weapon",
+        "type_label":  "Magazine Modification",
+        "description":  "Modifies the gun to be able to fire slug ammo. Slug ammo being slightly larger than other shotgun shells also reduces the maximum magazine by one.",
+        "order":  194,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_MobileCover",
+        "category":  "Character",
+        "type_label":  "Activated Modification",
+        "description":  "Spawns a piece of Mobile Cover, painted with your personal Graffiti.",
+        "order":  195,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_ClottingAgent1_Joker",
+        "category":  "Character",
+        "type_label":  "Health Modification",
+        "description":  "Coagulants in the bloodstream cause any damage taken to regenerate itself slightly faster, after the initial delay.",
+        "order":  196,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_ClottingAgent2_Joker",
+        "category":  "Character",
+        "type_label":  "Health Modification",
+        "description":  "Coagulants in the bloodstream cause any damage taken to regenerate itself moderately faster, after the initial delay.",
+        "order":  197,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_ClottingAgent3_Joker",
+        "category":  "Character",
+        "type_label":  "Health Modification",
+        "description":  "Coagulants in the bloodstream cause any damage taken to regenerate itself much faster, after the initial delay.",
+        "order":  198,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_HappyLandings1_Joker",
+        "category":  "Character",
+        "type_label":  "Utility Modification",
+        "description":  "Extensive training has improved your ability to land correctly, allowing you to take slightly less damage when falling from a height.",
+        "order":  199,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_HappyLandings2_Joker",
+        "category":  "Character",
+        "type_label":  "Utility Modification",
+        "description":  "Extensive training has improved your ability to land correctly, allowing you to take a lot less damage when falling from a height.",
+        "order":  200,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_HappyLandings3_Joker",
+        "category":  "Character",
+        "type_label":  "Utility Modification",
+        "description":  "Extensive training has improved your ability to land correctly, stopping you taking any damage when falling from a height.",
+        "order":  201,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_Kevlar1_Joker",
+        "category":  "Character",
+        "type_label":  "Health Modification",
+        "description":  "Subdermal Kevlar Implants slightly decrease the amount of damage you take from incoming fire.",
+        "order":  202,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_Kevlar2_Joker",
+        "category":  "Character",
+        "type_label":  "Health Modification",
+        "description":  "Subdermal Kevlar Implants moderately decrease the amount of damage you take from incoming fire.",
+        "order":  203,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_Kevlar3_Joker",
+        "category":  "Character",
+        "type_label":  "Health Modification",
+        "description":  "Subdermal Kevlar Implants heavily decrease the amount of damage you take from incoming fire.",
+        "order":  204,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Bandolier1_Joker",
+        "category":  "Weapon",
+        "type_label":  "Magazine Modification",
+        "description":  "Allows the user to carry a small amount of extra ammunition for the attached weapon.",
+        "order":  205,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Bandolier2_Joker",
+        "category":  "Weapon",
+        "type_label":  "Magazine Modification",
+        "description":  "Allows the user to carry a medium amount of extra ammunition for the attached weapon.",
+        "order":  206,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Bandolier3_Joker",
+        "category":  "Weapon",
+        "type_label":  "Magazine Modification",
+        "description":  "Allows the user to carry a large amount of extra ammunition for the attached weapon.",
+        "order":  207,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_HeavyBarrel1_Joker",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "A Heavier Barrel reduces the amount of vibration in the weapon, slightly reducing the accuracy degredation per shot.",
+        "order":  208,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_HeavyBarrel2_Joker",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "A Heavier Barrel reduces the amount of vibration in the weapon, moderately reducing the accuracy degredation per shot.",
+        "order":  209,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_HeavyBarrel3_Joker",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "A Heavier Barrel reduces the amount of vibration in the weapon, heavily reducing the accuracy degredation per shot",
+        "order":  210,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_ReflexSight1_Joker",
+        "category":  "Weapon",
+        "type_label":  "Upper Rail Modification",
+        "description":  "Reflex sights allow for faster target aquisition at close ranges without obscuring the user's field of view. This helps slightly improve accuracy outside marksmanship mode.",
+        "order":  211,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_ReflexSight2_Joker",
+        "category":  "Weapon",
+        "type_label":  "Upper Rail Modification",
+        "description":  "Reflex sights allow for faster target aquisition at close ranges without obscuring the user's field of view. This helps moderately improve accuracy outside marksmanship mode.",
+        "order":  212,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_ReflexSight3_Joker",
+        "category":  "Weapon",
+        "type_label":  "Upper Rail Modification",
+        "description":  "Reflex sights allow for faster target aquisition at close ranges without obscuring the user's field of view. This helps heavily improve accuracy outside marksmanship mode.",
+        "order":  213,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_MagazinePull1_Joker",
+        "category":  "Weapon",
+        "type_label":  "Magazine Modification",
+        "description":  "Rubberized loops on the magazines allow them to be handled easier, slightly improving reload times.",
+        "order":  214,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_MagazinePull2_Joker",
+        "category":  "Weapon",
+        "type_label":  "Magazine Modification",
+        "description":  "Rubberized loops on the magazines allow them to be handled easier, moderately improving reload times.",
+        "order":  215,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_MagazinePull3_Joker",
+        "category":  "Weapon",
+        "type_label":  "Magazine Modification",
+        "description":  "Rubberized loops on the magazines allow them to be handled easier, greatly improving reload times.",
+        "order":  216,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Rifling1_Joker",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "Precision laser-cut polygonal rifling helps improve the operational range of the weapon, slightly increasing the range while reducing fire rate to protect the barrel.",
+        "order":  217,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Rifling2_Joker",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "Precision laser-cut polygonal rifling helps improve the operational range of the weapon, slightly increasing the range while reducing fire rate to protect the barrel.",
+        "order":  218,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Rifling3_Joker",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "Precision laser-cut polygonal rifling helps improve the operational range of the weapon, slightly increasing the range while reducing fire rate to protect the barrel.",
+        "order":  219,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_HuntingSight1_Joker",
+        "category":  "Weapon",
+        "type_label":  "Upper Rail Modification",
+        "description":  "Pin-hole target aperture sight slightly improves accuracy when focusing in marksmanship mode.",
+        "order":  220,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_HuntingSight2_Joker",
+        "category":  "Weapon",
+        "type_label":  "Upper Rail Modification",
+        "description":  "Pin-hole target aperture sight noticeably improves accuracy when focusing in marksmanship mode.",
+        "order":  221,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_HuntingSight3_Joker",
+        "category":  "Weapon",
+        "type_label":  "Upper Rail Modification",
+        "description":  "Pin-hole target aperture sight greatly improves accuracy when focusing in marksmanship mode.",
+        "order":  222,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_CoolingJacket1_Joker",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "A Cooling Jacket reduces the heat generated with continuous fire, allowing the weapon to fire slightly closer to its cyclic rate.",
+        "order":  223,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_CoolingJacket2_Joker",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "A Cooling Jacket reduces the heat generated with continuous fire, allowing the weapon to fire closer to its cyclic rate.",
+        "order":  224,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_CoolingJacket3_Joker",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "A Cooling Jacket reduces the heat generated with continuous fire, allowing the weapon to fire much closer to its cyclic rate.",
+        "order":  225,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_ExtendedMagazine1_Joker",
+        "category":  "Weapon",
+        "type_label":  "Magazine Modification",
+        "description":  "Slightly increases the ammo capacity of your weapon's magazine.",
+        "order":  226,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_ExtendedMagazine2_Joker",
+        "category":  "Weapon",
+        "type_label":  "Magazine Modification",
+        "description":  "Noticeably increases the ammo capacity of your weapon's magazine.",
+        "order":  227,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_ExtendedMagazine3_Joker",
+        "category":  "Weapon",
+        "type_label":  "Magazine Modification",
+        "description":  "Greatly increases the ammo capacity of your weapon's magazine.",
+        "order":  228,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_ThreePointSling1_Joker",
+        "category":  "Weapon",
+        "type_label":  "Receiver Modification",
+        "description":  "A three-point sling attached to the front and rear of the receiver allows the weapon to be equipped slightly faster.",
+        "order":  229,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_ThreePointSling2_Joker",
+        "category":  "Weapon",
+        "type_label":  "Receiver Modification",
+        "description":  "A three-point sling attached to the front and rear of the receiver allows the weapon to be equipped noticeably faster.",
+        "order":  230,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_ThreePointSling3_Joker",
+        "category":  "Weapon",
+        "type_label":  "Receiver Modification",
+        "description":  "A three-point sling attached to the front and rear of the receiver allows the weapon to be equipped much faster.",
+        "order":  231,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_Explosives1_Joker",
+        "category":  "Vehicle",
+        "type_label":  "Generic Modification",
+        "description":  "Explosives and shrapnel within the vehicle's frame slightly increase the blast radius when it explodes.",
+        "order":  232,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_Explosives2_Joker",
+        "category":  "Vehicle",
+        "type_label":  "Generic Modification",
+        "description":  "Explosives and shrapnel within the vehicle's frame moderately increase the blast radius when it explodes.",
+        "order":  233,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_Explosives3_Joker",
+        "category":  "Vehicle",
+        "type_label":  "Generic Modification",
+        "description":  "Explosives and shrapnel within the vehicle's frame greatly increase the blast radius when it explodes.",
+        "order":  234,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_ChassisStrengthening1_Joker",
+        "category":  "Vehicle",
+        "type_label":  "Chassis Modification",
+        "description":  "Improved Alloys in the vehicle's frame slightly reduces the amount of damage it takes from collisions.",
+        "order":  235,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_ChassisStrengthening2_Joker",
+        "category":  "Vehicle",
+        "type_label":  "Chassis Modification",
+        "description":  "Improved Alloys in the vehicle's frame moderately reduces the amount of damage it takes from collisions.",
+        "order":  236,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_ChassisStrengthening3_Joker",
+        "category":  "Vehicle",
+        "type_label":  "Chassis Modification",
+        "description":  "Improved Alloys in the vehicle's frame greatly reduces the amount of damage it takes from collisions.",
+        "order":  237,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_ArmoredEngine1_Joker",
+        "category":  "Vehicle",
+        "type_label":  "Engine Modification",
+        "description":  "Kevlar plates around the engine block slightly increase the amount of damage the vehicle must take before it is set on fire.",
+        "order":  238,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_ArmoredEngine2_Joker",
+        "category":  "Vehicle",
+        "type_label":  "Engine Modification",
+        "description":  "Kevlar plates around the engine block moderately increase the amount of damage the vehicle must take before it is set on fire.",
+        "order":  239,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_ArmoredEngine3_Joker",
+        "category":  "Vehicle",
+        "type_label":  "Engine Modification",
+        "description":  "Kevlar plates around the engine block moderately increase the amount of damage the vehicle must take before it is set on fire.",
+        "order":  240,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_Fireproofing1_Joker",
+        "category":  "Vehicle",
+        "type_label":  "Engine Modification",
+        "description":  "Fire Retardant material around the engine slows the spread of flames, slightly reducing the damage it takes from internal fire damage.",
+        "order":  241,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_Fireproofing2_Joker",
+        "category":  "Vehicle",
+        "type_label":  "Engine Modification",
+        "description":  "Fire Retardant material around the engine slows the spread of flames, moderately reducing the damage it takes from internal fire damage.",
+        "order":  242,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_Fireproofing3_Joker",
+        "category":  "Vehicle",
+        "type_label":  "Engine Modification",
+        "description":  "Fire Retardant material around the engine slows the spread of flames, greatly reducing the damage it takes from internal fire damage.",
+        "order":  243,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_Nitro1_Joker",
+        "category":  "Vehicle",
+        "type_label":  "Activated Modification",
+        "description":  "NOS injectors allow the user to trigger a period of slightly improved engine performance.",
+        "order":  244,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_Nitro2_Joker",
+        "category":  "Vehicle",
+        "type_label":  "Activated Modification",
+        "description":  "NOS injectors allow the user to trigger a period of moderately improved engine performance.",
+        "order":  245,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_Nitro3_Joker",
+        "category":  "Vehicle",
+        "type_label":  "Activated Modification",
+        "description":  "NOS injectors allow the user to trigger a period of greatly improved engine performance.",
+        "order":  246,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_ExtraCargoCapacity1_Joker",
+        "category":  "Vehicle",
+        "type_label":  "Trunk Modification",
+        "description":  "Slightly increases the vehicle's available cargo storage space.",
+        "order":  247,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_ExtraCargoCapacity2_Joker",
+        "category":  "Vehicle",
+        "type_label":  "Trunk Modification",
+        "description":  "Moderately increases the vehicle's available cargo storage space.",
+        "order":  248,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_ExtraCargoCapacity3_Joker",
+        "category":  "Vehicle",
+        "type_label":  "Trunk Modification",
+        "description":  "Greatly increases the vehicle's available cargo storage space.",
+        "order":  249,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_FastFixChassis1_Joker",
+        "category":  "Vehicle",
+        "type_label":  "Generic Modification",
+        "description":  "Easier access to core systems and the vehicle's frame allows for slightly improved repair time.",
+        "order":  250,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_FastFixChassis2_Joker",
+        "category":  "Vehicle",
+        "type_label":  "Generic Modification",
+        "description":  "Easier access to core systems and the vehicle's frame allows for moderately improved repair time.",
+        "order":  251,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_FastFixChassis3_Joker",
+        "category":  "Vehicle",
+        "type_label":  "Generic Modification",
+        "description":  "Easier access to core systems and the vehicle's frame allows for greatly improved repair time.",
+        "order":  252,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_RammingPlate1_Joker",
+        "category":  "Vehicle",
+        "type_label":  "Chassis Modification",
+        "description":  "Tough Iron Plates mounted at the front of the vehicle's engine slightly increases the force transmitted when ramming enemy vehicles or objects.",
+        "order":  253,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_RammingPlate2_Joker",
+        "category":  "Vehicle",
+        "type_label":  "Chassis Modification",
+        "description":  "Tough Iron Plates mounted at the front of the vehicle's engine noticeably increases the force transmitted when ramming enemy vehicles or objects.",
+        "order":  254,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_RammingPlate3_Joker",
+        "category":  "Vehicle",
+        "type_label":  "Chassis Modification",
+        "description":  "Tough Iron Plates mounted at the front of the vehicle's engine greatly increases the force transmitted when ramming enemy vehicles or objects.",
+        "order":  255,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_SteelPlating1_Joker",
+        "category":  "Vehicle",
+        "type_label":  "Chassis Modification",
+        "description":  "Steel Plates in the vehicle's chassis slightly reduces the damage caused by weapons fire.",
+        "order":  256,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_SteelPlating2_Joker",
+        "category":  "Vehicle",
+        "type_label":  "Chassis Modification",
+        "description":  "Steel Plates in the vehicle's chassis noticeably reduces the damage caused by weapons fire.",
+        "order":  257,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_SteelPlating3_Joker",
+        "category":  "Vehicle",
+        "type_label":  "Chassis Modification",
+        "description":  "Steel Plates in the vehicle's chassis greatly reduces the damage caused by weapons fire.",
+        "order":  258,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_MuzzleBrake_Vertical",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "This recoil compensator takes gases produced by the weapon and directs them upwards, reducing vertical recoil at the expense of horizontal.",
+        "order":  259,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_LongRangeRifling",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "An experimental barrel consisting of a very thin steel wrapped with carbon fiber, resulting in a weapon that can effectively hit targets much further away, with a moderate reduction to fire rate to prevent the layers from splitting.",
+        "order":  260,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_Suspension_Tuning",
+        "category":  "Vehicle",
+        "type_label":  "Tuning Modification",
+        "description":  "Extra light shock absorbers to soften a vehicle’s suspension and allow for a smoother feel when operating the vehicle.",
+        "order":  261,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_BurstKingdom_Armas",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "A burst module designed to turn previously fully automatic weapons into burst rifles with superior accuracy.",
+        "order":  262,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Silencer_Reaper",
+        "category":  "Weapon",
+        "type_label":  "Receiver Modification",
+        "description":  "A Suppressor designed by none other than Devil Dog himself. Optimized to the utmost to help the user stay unnoticed around San Paro.",
+        "order":  263,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Piercing_NCR",
+        "category":  "Weapon",
+        "type_label":  "Upper Rail Modification",
+        "description":  "An improved sight coupled with piercing rounds to ensure pin-point accuracy as well as immense stopping power.",
+        "order":  264,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Piercing_NCR_Armas",
+        "category":  "Weapon",
+        "type_label":  "Upper Rail Modification",
+        "description":  "An improved sight coupled with piercing rounds to ensure pin-point accuracy as well as immense stopping power.",
+        "order":  265,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_EnchantressStock_Armas",
+        "category":  "Weapon",
+        "type_label":  "",
+        "description":  "An improved stock allowing for quick target acquisition and superior accuracy on the move.",
+        "order":  266,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_C9S_Sight_Armas",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "A custom fitted silencer combined with a prototype weapon switch allowing bullets to be fired at a much higher velocity for increased damage.",
+        "order":  267,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_EMPResistance",
+        "category":  "Vehicle",
+        "type_label":  "Chassis Modification",
+        "description":  "Copper Plates in the vehicle's chassis greatly reduces the effectiveness of incoming EMP Strikes.",
+        "order":  268,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Vehicle_SteeringAngle",
+        "category":  "Vehicle",
+        "type_label":  "Tuning Modification",
+        "description":  "A high-angle performance setup featuring enhanced steering knuckles and rack geometry to allow for tighter steering angles.",
+        "order":  269,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_AdvancedIronsight",
+        "category":  "Weapon",
+        "type_label":  "Upper Rail Modification",
+        "description":  "Advanced Iron sight which greatly improves accuracy when focusing in marksmanship mode without increased magnification.",
+        "order":  270,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Cantedsight",
+        "category":  "Weapon",
+        "type_label":  "Upper Rail Modification",
+        "description":  "An advanced sight enabling a clear sight picture with integrated features to allow for steadier target acquisition.",
+        "order":  271,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_LightweightFrame",
+        "category":  "Weapon",
+        "type_label":  "Receiver Modification",
+        "description":  "A light weight weapon frame designed for the heavier end of common firearms to be operated more freely.",
+        "order":  272,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_LowMagnificationSight",
+        "category":  "Weapon",
+        "type_label":  "",
+        "description":  "TEST MOD DO NOT USE",
+        "order":  273,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Bandolier3_Tutorial",
+        "category":  "Weapon",
+        "type_label":  "Magazine Modification",
+        "description":  "Allows the user to carry a large amount of extra ammunition for the attached weapon.",
+        "order":  274,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_HeavyBarrel3_Tutorial",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "A Heavier Barrel reduces the amount of vibration in the weapon, heavily reducing the accuracy degredation per shot",
+        "order":  275,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_ReflexSight3_Tutorial",
+        "category":  "Weapon",
+        "type_label":  "Upper Rail Modification",
+        "description":  "Reflex sights allow for faster target aquisition at close ranges without obscuring the user's field of view. This helps heavily improve accuracy outside marksmanship mode.",
+        "order":  276,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_MagazinePull3_Tutorial",
+        "category":  "Weapon",
+        "type_label":  "Magazine Modification",
+        "description":  "Rubberized loops on the magazines allow them to be handled easier, greatly improving reload times.",
+        "order":  277,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_Rifling3_Tutorial",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "Precision laser-cut polygonal rifling helps improve the operational range of the weapon, slightly increasing the range while reducing fire rate to protect the barrel.",
+        "order":  278,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_HuntingSight3_Tutorial",
+        "category":  "Weapon",
+        "type_label":  "Upper Rail Modification",
+        "description":  "Pin-hole target aperture sight greatly improves accuracy when focusing in marksmanship mode.",
+        "order":  279,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_CoolingJacket3_Tutorial",
+        "category":  "Weapon",
+        "type_label":  "Barrel Modification",
+        "description":  "A Cooling Jacket reduces the heat generated with continuous fire, allowing the weapon to fire much closer to its cyclic rate.",
+        "order":  280,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_ExtendedMagazine3_Tutorial",
+        "category":  "Weapon",
+        "type_label":  "Magazine Modification",
+        "description":  "Greatly increases the ammo capacity of your weapon's magazine.",
+        "order":  281,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Weapon_ThreePointSling3_Tutorial",
+        "category":  "Weapon",
+        "type_label":  "Receiver Modification",
+        "description":  "A three-point sling attached to the front and rear of the receiver allows the weapon to be equipped much faster.",
+        "order":  282,
+        "source":  "ModifierItemTypes.INT"
+    },
+    {
+        "id":  "FnMod_Character_ClottingAgent3_Tutorial",
+        "category":  "Character",
+        "type_label":  "Health Modification",
+        "description":  "Coagulants in the bloodstream cause any damage taken to regenerate itself much faster, after the initial delay.",
+        "order":  283,
+        "source":  "ModifierItemTypes.INT"
+    }
+]

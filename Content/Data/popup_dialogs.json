@@ -1,0 +1,992 @@
+[
+  {
+    "id": "AD_AmmoLow_Chat",
+    "body": "Ammo: Locate an Ammo Vending Machine to resupply ammunition.",
+    "order": 0,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_ArrestedOtherPlayer_Chat",
+    "body": "Arrests: Players that you have arrested will be respawned, however players from their team could also free them. Killing an arrested player will invoke a penalty.",
+    "order": 1,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_Arrested_Chat",
+    "body": "Arrests: Enforcers can arrest you, however members of your team can free you.",
+    "order": 2,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_CSA_EnterVehicle_Chat",
+    "body": "Vehicles: Use movement keys to drive and <Key:Handbrake> for handbrake. If your vehicle takes damage you can repair it at any GA5 station around the city.",
+    "order": 3,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_ContactLevelUp_Chat",
+    "body": "Standing: Increasing your Standing Level with Contacts earns you better mission offers and new rewards.",
+    "order": 4,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_JoinGroupOnMission_1",
+    "body": "You have joined a Group that is already on a Mission.",
+    "order": 5,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_JoinGroupOnMission_2",
+    "body": "You will not be able to participate in the Mission or enter the Group's vehicles until the Mission is over.",
+    "order": 6,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_KillPedestrian_Criminal_Chat",
+    "body": "Notoriety: Killing civilians causes your Notoriety to increase, resulting in Enforcers being dispatched against you.",
+    "order": 7,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_KillPedestrian_Enforcer_Chat",
+    "body": "Prestige: Killing civilians has a negative impact on Prestige, which affect your rewards.",
+    "order": 8,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_MailRecievedRewards_1",
+    "body": "You have new mail!\nCheck the map, <col:Tutorial_KeyPress><key:toggledistrictmap></col>, for the location of Mailboxes.",
+    "order": 9,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_MailRecievedRewards_Chat",
+    "body": "Head to a Mailbox to access your mail.",
+    "order": 10,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_Match_DispatchedAgainstOpposition_Chat",
+    "body": "Dispatch: Watch the Mission Display to see your objective. Opposition players will have their names highlighted red to identify them.",
+    "order": 11,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_Match_OppositionAssigned_Chat",
+    "body": "Dispatch: The opposition's goal is usually to prevent you from completing your objective. You may have a limited amount of lives to complete a stage or mission. Opposition players will have their names highlighted red to identify them.",
+    "order": 12,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_MissionAccepted_Chat",
+    "body": "Missions: The mission status information contains important information related to your mission and will be updated as the mission progresses. In most missions, your objective will have a target marker to lead you to it.",
+    "order": 13,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_MobileSupplyUnit_2",
+    "body": "Move to the rear of the vehicle and press <col:Tutorial_KeyPress><key:DoInventoryCSAKeyPressed></col> to change weapons / equipment within your Inventory .",
+    "order": 14,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_MobileSupplyUnit_Chat",
+    "body": "Ammo: To use a mobile supply unit move to the rear of the vehicle to resupply ammo, or press <key:DoInventoryCSAKeyPressed> to change weapons / equipment within your Inventory .",
+    "order": 15,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_Notoriety0",
+    "body": "Notoriety Level 0: You have committed crimes without detection and will receive greater rewards. Enforcers will not be dispatched against you.",
+    "order": 16,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_Notoriety1Dec",
+    "body": "Notoriety Level 1: You will receive increased rewards. Enforcers will not be dispatched against you unless they witness you committing a crime.",
+    "order": 17,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_Notoriety1Inc",
+    "body": "Notoriety Level 1: You will receive reduced rewards. Enforcers will not be dispatched against you unless they witness you committing a crime.",
+    "order": 18,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_Notoriety2Dec",
+    "body": "Notoriety Level 2: You will receive reduced rewards, and Enforcers will only be dispatched against your missions.",
+    "order": 19,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_Notoriety2Inc",
+    "body": "Notoriety Level 2: Enforcers may now be dispatched against your missions. You will receive basic rewards.",
+    "order": 20,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_Notoriety3Dec",
+    "body": "Notoriety Level 3: You will receive reduced rewards. Enforcers may be dispatched against you.",
+    "order": 21,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_Notoriety3Inc",
+    "body": "Notoriety Level 3: You will receive a small increase in rewards and Enforcers may be dispatched against you.",
+    "order": 22,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_Notoriety4Dec",
+    "body": "Notoriety Level 4: You can now only kill or be killed by those within your mission. Your rewards will be less significant.",
+    "order": 23,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_Notoriety4Inc",
+    "body": "Notoriety Level 4: You can be matched against stronger opponents and will earn greater rewards.",
+    "order": 24,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_Notoriety5",
+    "body": "Notoriety Level 5: You will receive significantly improved rewards. You are now able to kill and be killed by any player in the district. Players will be able to identify your location on the map.",
+    "order": 25,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_NotorietyChange_Chat",
+    "body": "Notoriety: Committing crimes, killing Enforcers and wining missions will cause your Notoriety to rise. This will result in greater rewards and more Enforcer attention.",
+    "order": 26,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_OpenWorld_DeliverArmouredVan_1",
+    "body": "You have received a bonus for delivering an Armored Van.",
+    "order": 27,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_OpenWorld_DeliverCheapVehicle_1",
+    "body": "You have received a reduced reward for delivering a cheap, common vehicle.",
+    "order": 28,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_OpenWorld_DeliverDamagedtVehicle_1",
+    "body": "You have received a small reward for delivering a damaged vehicle.",
+    "order": 29,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_OpenWorld_DeliverExpensiveVehicle_1",
+    "body": "You have received an increased reward for delivering an expensive vehicle.",
+    "order": 30,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_OpenWorld_DeliverPerfectVehicle_1",
+    "body": "You have received an increased reward for delivering a vehicle in perfect condition.",
+    "order": 31,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_OpenWorld_HijackVehicle_Chat",
+    "body": "Crimes: Stolen vehicles can be dropped off at various points around the city for cash rewards.",
+    "order": 32,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_OpenWorld_Mugging_Chat",
+    "body": "Crimes: Mugging pedestrians will often generate items which you can deliver for cash rewards. It will also increase your Notoriety level and attract the attention of the Enforcers.",
+    "order": 33,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_OpenWorld_Not5Announce_1",
+    "body": "A Criminal player has reached Notoriety level 5.",
+    "order": 34,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_OpenWorld_Not5Announce_2",
+    "body": "That player can now enter into combat with anyone in the District, including you.",
+    "order": 35,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_OpenWorld_Not5Announce_3",
+    "body": "There will also be a substantial reward for the player who eliminates them.",
+    "order": 36,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_OpenWorld_Not5Announce_Chat",
+    "body": "Bounty: When a Criminal hits Notoriety level 5 they can kill and be killed by anyone in the district. There is a reward for taking them out! Check the Map for their location.",
+    "order": 37,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_OpenWorld_Pres5Announce_1",
+    "body": "An Enforcer player has reached Prestige level 5.",
+    "order": 38,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_OpenWorld_Pres5Announce_2",
+    "body": "That player can now enter into combat with anyone in the District, including you.",
+    "order": 39,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_OpenWorld_Pres5Announce_3",
+    "body": "There will also be a substantial reward for the player who eliminates them.",
+    "order": 40,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_OpenWorld_Pres5Announce_Chat",
+    "body": "Bounty: When an Enforcer hits Prestige level 5 they can kill and be killed by anyone in the district. There is a reward for taking them out! Check the Map for their location.",
+    "order": 41,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_OpenWorld_RamRaid_3",
+    "body": "Larger items are worth more than smaller ones, but are more difficult to carry.",
+    "order": 42,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_OpenWorld_RamRaid_Chat",
+    "body": "Crimes: Ram-raiding shopfronts can provide you with items to steal and take to a drop-off point for a reward.",
+    "order": 43,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_OpenWorld_Witnessed_Chat",
+    "body": "Witnessing: Enforcers can become dispatched against you if they witness you committing a crime. Be careful to avoid attention whilst you can be witnessed.",
+    "order": 44,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_Overtime",
+    "body": "Overtime: When a mission timer runs out but a mission critical objective is occurring, the game may go into Overtime. This will occur either when a player is in the process of completing the final objective of a stage, or if a team is behind on points, but is holding the majority of objectives.",
+    "order": 45,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_PickupTaskItem_Instruct",
+    "body": "Press <col:Tutorial_KeyPress><Key:DoCSAKeyPressed></col> to pick up the item.",
+    "order": 46,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_PickupTaskItem_Instruct_Chat",
+    "body": "Items: You can pick up items by pressing <Key:DoCSAKeyPressed>.",
+    "order": 47,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_PlayerStunned_Chat",
+    "body": "Stun: You will be unable to move until your stamina recovers. Enforcers can arrest Criminals whilst they are stunned.",
+    "order": 48,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_Prestige0",
+    "body": "Prestige Level 0: You have failed to uphold the duties of an Enforcer and will receive significantly reduced rewards.",
+    "order": 49,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_Prestige1Dec",
+    "body": "Prestige Level 1: You will receive reduced rewards and less challenging matches.",
+    "order": 50,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_Prestige1Inc",
+    "body": "Prestige Level 1: You can be matched against stronger opponents and will earn greater rewards.",
+    "order": 51,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_Prestige2Dec",
+    "body": "Prestige Level 2: You will receive reduced rewards and less challenging matches.",
+    "order": 52,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_Prestige2Inc",
+    "body": "Prestige Level 2: You can be matched against stronger opponents and will earn greater rewards.",
+    "order": 53,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_Prestige3Dec",
+    "body": "Prestige Level 3: You will receive reduced rewards and less challenging matches.",
+    "order": 54,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_Prestige3Inc",
+    "body": "Prestige Level 3: You can be matched against stronger opponents and will earn greater rewards.",
+    "order": 55,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_Prestige4Dec",
+    "body": "Prestige Level 4: You can now only kill or be killed by those within your mission. Your rewards will not be as significant.",
+    "order": 56,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_Prestige4Inc",
+    "body": "Prestige Level 4: You can be matched against stronger opponents and will earn greater rewards.",
+    "order": 57,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_Prestige5",
+    "body": "Prestige Level 5: You will earn high rewards and can engage any player in combat.",
+    "order": 58,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_Prestige5_1",
+    "body": "Your Prestige level has now risen to 5.",
+    "order": 59,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_Prestige5_2",
+    "body": "You can now kill and be killed by any player in the District.",
+    "order": 60,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_PrestigeChange_Chat",
+    "body": "Prestige: Upholding the law and defeating Criminals increases your Prestige, earning you greater rewards.",
+    "order": 61,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_Progression_LostMission_Chat",
+    "body": "Mission: You will only receive a nominal reward if you fail to complete your mission. Losing opposed missions will have a negative effect on your Threat.",
+    "order": 62,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_Progression_WonMission_Chat",
+    "body": "Mission: After successfully completing a mission you will have earned rewards. Winning opposed missions will have a positive effect on your Threat.",
+    "order": 63,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_SpawnVehicle_2",
+    "body": "Find the nearby Vehicle Spawn Machine then press <col:Tutorial_KeyPress><Key:DoCSAKeyPressed></col> to use it.",
+    "order": 64,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_SpawnVehicle_Chat",
+    "body": "Vehicles: To spawn your vehicle, locate a Vehicle Spawn Machine then press <Key:DoCSAKeyPressed> to use it.",
+    "order": 65,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_StunnedTeammate",
+    "body": "Demerit! You have stunned a teammate and will receive lesser rewards for this mission. Further team stuns result in harsher penalties, and you can be kicked for too many infractions.",
+    "order": 66,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_TeamKill",
+    "body": "You incur a punishment for killing members of your team.",
+    "order": 67,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_TeamKill_Chat",
+    "body": "Combat: You incur a punishment for killing members of your team.",
+    "order": 68,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "AD_Threat_Chat",
+    "body": "Threat: Your Threat is a gauge of your skill level, and is used within matchmaking. It is affected by winning and losing missions.",
+    "order": 69,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "GUI_CityMap_SelectFinancial_1",
+    "body": "The Financial District is an Action District.",
+    "order": 70,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "GUI_CityMap_SelectFinancial_2",
+    "body": "Here you can undertake missions, fight other players, and gain cash and equipment.",
+    "order": 71,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "GUI_CityMap_SelectSocial_1",
+    "body": "The Social District is a safe place to socialize and work on customizing your character.",
+    "order": 72,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "GUI_CityMap_SelectWaterfront_1",
+    "body": "The Waterfront District is an Action District.",
+    "order": 73,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "GUI_CityMap_SelectWaterfront_2",
+    "body": "Here you can undertake missions, fight other players and gain cash and equipment.",
+    "order": 74,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "GUI_DisplayPoint_Generic_Chat",
+    "body": "Display Points: Build your celebrity within San Paro with Display Points. The four kinds of display points are Audio, Graffiti, Vehicle and Statue. Some display points are earned by winning Leagues, whereas others can be Purchased on the Marketplace or are Free (First Come, First Served).",
+    "order": 75,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "GUI_DisplayPoint_Graffiti_Billboard_1",
+    "body": "Display Points build your celebrity within San Paro.",
+    "order": 76,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "GUI_DisplayPoint_Graffiti_Billboard_2",
+    "body": "There are numerous billboards throughout the Action Districts to display your graffiti on.",
+    "order": 77,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "GUI_DisplayPoint_Graffiti_Billboard_3",
+    "body": "See if you can find them all!",
+    "order": 78,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "GUI_DistrictMap_Chat",
+    "body": "Map: You can place waypoints on the Map and select icons from the Legend to help you navigate.",
+    "order": 79,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "HUDO_AdHocDeliveredItems_1",
+    "body": "You have received a reward for delivering stolen goods.",
+    "order": 80,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "HUDO_AdHocDeliveredItems_Failed_1",
+    "body": "You are unable to deliver and fence so many stolen goods within such a short period of time.",
+    "order": 81,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "HUDO_AdHocDeliveredItems_Failed_2",
+    "body": "You can either drop the items off at another location or come back later.",
+    "order": 82,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "HUDO_AdHocDeliveredItems_Incomplete_1",
+    "body": "Your delivery of stolen items was incomplete. Only some items were delivered",
+    "order": 83,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "HUDO_AdHocDeliveredItems_Incomplete_2",
+    "body": "You are unable to deliver and fence so many stolen goods within such a short period of time.",
+    "order": 84,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "HUDO_AdHocDeliveredItems_Incomplete_3",
+    "body": "You can either drop the remaining items off at another location or come back later.",
+    "order": 85,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "HUDO_AdHocDeliveredVehicle_Failed_1",
+    "body": "You are unable to deliver the stolen vehicle.",
+    "order": 86,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "HUDO_AdHocDeliveredVehicle_Failed_2",
+    "body": "Try another drop-off, or come back later.",
+    "order": 87,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "HUDO_ContactReferral_1",
+    "body": "Your current Contact has referred you to another Contact in the Organization.",
+    "order": 88,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "HUDO_ContactReferral_2",
+    "body": "You can now pledge to the new Contact at any time to receive mission offers and rewards from them.",
+    "order": 89,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "HUDO_ContactReferral_Chat",
+    "body": "Contacts: You can now pledge to the new Contact at any time to receive mission offers and rewards from them.",
+    "order": 90,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "HUDO_MaxedContact_Chat",
+    "body": "Contacts: Missions undertaken for Contacts where you have maximum Contact Standing will not gain you further levels.",
+    "order": 91,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "HUDO_OutOfAmmo_Chat",
+    "body": "Ammo: Locate an Ammo Vending Machine to resupply ammunition.",
+    "order": 92,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "RO_Character_Chat",
+    "body": "Players: Press <Key:DoTertiaryCSAKeyPressed> to interact with players.",
+    "order": 93,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "RO_Contact_Chat",
+    "body": "Contacts: Press <key:DoCSAKeyPressed> to speak to Contacts",
+    "order": 94,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "RO_DisplayPoint_Chat",
+    "body": "Display Points: Press <key:DoCSAKeyPressed> to interact with Display Points",
+    "order": 95,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "RO_OpenWorld_BreakIn_Chat",
+    "body": "Crimes: Press <key:DoCSAKeyPressed> to break into buildings.",
+    "order": 96,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "RO_OpenWorld_Mugging_Chat",
+    "body": "Crimes: Press <key:DoCSAKeyPressed> to mug pedestrians.",
+    "order": 97,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "RO_OpenWorld_RamRaid_Chat",
+    "body": "Crimes: Drive a vehicle into the shop front to perform ram raid.",
+    "order": 98,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "RO_Vehicle_Generic_Chat_Crim",
+    "body": "Vehicles: Press <key:DoCSAKeyPressed> to hijack and enter vehicles.",
+    "order": 99,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "RO_Vehicle_Generic_Chat_Enf",
+    "body": "Vehicles: Press <key:DoCSAKeyPressed> to commandeer and enter vehicles.",
+    "order": 100,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "RO_Vehicle_NotUsable",
+    "body": "You cannot enter this vehicle.",
+    "order": 101,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "RO_Vehicle_Stolen_Chat",
+    "body": "Vehicles: Vehicles previous stolen by Criminals can be dropped off for rewards. Stolen vehicles can be dropped off for rewards. Press <key:DoCSAKeyPressed> to enter vehicle.",
+    "order": 102,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "RO_Vending_Ammo_Chat",
+    "body": "Ammo: When by an Ammo Vending Machine you will automatically resupply ammo. Press <key:DoCSAKeyPressed> to purchase ammo. Press <key:DoInventoryCSAKeyPressed> to change weapons / equipment within your Inventory.",
+    "order": 103,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "RO_Vending_Generic_Chat",
+    "body": "Press <key:DoCSAKeyPressed> to interact with objects.",
+    "order": 104,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "RO_Vending_Mail_Chat",
+    "body": "Mail: Your mail can be accessed by pressing <key:DoCSAKeyPressed> by a mailbox",
+    "order": 105,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "RO_Vending_Vehicle_Chat",
+    "body": "Vehicles: You can press <key:DoCSAKeyPressed> by a Vehicle Spawn Machines to spawn your personal vehicle.",
+    "order": 106,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "SD_Garage_CustomisationDecals_1",
+    "body": "Apply individual Vinyls, Decals and Fonts directly to your vehicle.",
+    "order": 107,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "SD_Garage_CustomisationDecals_2",
+    "body": "Or, open the Designer to create and save more complex designs.",
+    "order": 108,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "SD_Garage_CustomisationPaint_1",
+    "body": "You can apply a custom paint job to your vehicle, or even to individual body parts (on some vehicles).",
+    "order": 109,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "SD_Garage_CustomisationPaint_2",
+    "body": "Select the paint style you want from this list.",
+    "order": 110,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "SD_Garage_CustomisationParts_1",
+    "body": "You can customize various parts on your vehicle. Some vehicles allow more customization than others.",
+    "order": 111,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "SD_Garage_CustomisationParts_2",
+    "body": "Use these buttons to preview engine, horn and siren audio.",
+    "order": 112,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "SD_Garage_CustomisationPlates_1",
+    "body": "Give your vehicle a custom license plate by typing in the box.",
+    "order": 113,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "SD_Garage_CustomisationPlates_2",
+    "body": "You can also change the plate's background.",
+    "order": 114,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "SD_Garage_Customisation_1",
+    "body": "Select a customization option from this menu.",
+    "order": 115,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "SD_Garage_Customisation_Camera",
+    "body": "Use these buttons to quickly change the camera view.",
+    "order": 116,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "SD_Garage_Opened_1",
+    "body": "This is the Garage, where you can purchase and customize vehicles.",
+    "order": 117,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "SD_Persona_1",
+    "body": "You can customize almost any aspect of your character's appearance.",
+    "order": 118,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "SD_Persona_2",
+    "body": "Start by selecting a category from the top list.",
+    "order": 119,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "SD_Persona_3",
+    "body": "Then select an individual attribute to tweak.",
+    "order": 120,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "SD_Persona_4",
+    "body": "Use the camera controls to zoom in on your character.",
+    "order": 121,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "SD_SymbolEditor_1",
+    "body": "You can add Vinyls, Decals and Fonts to your symbol.",
+    "order": 122,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "SD_SymbolEditor_2",
+    "body": "Each shape is added as a separate layer, which can be individually edited.",
+    "order": 123,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "SD_SymbolEditor_3",
+    "body": "Use the Transform tools to manipulate your shapes.",
+    "order": 124,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "SD_SymbolEditor_4",
+    "body": "You can apply Effects to any layer of your symbol.",
+    "order": 125,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "SD_Wardrobe_AddCustomizable_1",
+    "body": "Click on an item to preview it on your character.",
+    "order": 126,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "SD_Wardrobe_AddCustomizable_2",
+    "body": "Click the Buy button to purchase an item.",
+    "order": 127,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "SD_Wardrobe_AddItem_1",
+    "body": "Customizable Clothing consists of base items which you can customize yourself.",
+    "order": 128,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "SD_Wardrobe_AddItem_2",
+    "body": "Select Preset Clothing to purchase pre-customized items and accessories.",
+    "order": 129,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "SD_Wardrobe_ItemCustomization_1",
+    "body": "Here you can customize items of clothing and accessories.",
+    "order": 130,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "SD_Wardrobe_ItemCustomization_2",
+    "body": "You can change the color of individual areas of clothing items.",
+    "order": 131,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "SD_Wardrobe_ItemCustomization_3",
+    "body": "You can also add decals to clothing.",
+    "order": 132,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "SD_Wardrobe_Open_1",
+    "body": "This is the Wardrobe, where you can purchase and customize clothing and accessories.",
+    "order": 133,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "SD_Wardrobe_Open_2",
+    "body": "Items you own are shown here and can be put on and taken off.",
+    "order": 134,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "SD_Wardrobe_Open_3",
+    "body": "You can create multiple Outfits and switch quickly between them.",
+    "order": 135,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "TD_FirstSpawn_1",
+    "body": "Welcome to San Paro's Financial District.\nUse keys <col:Tutorial_KeyPress><key:MoveForward></col>, <col:Tutorial_KeyPress><key:StrafeLeft></col>, <col:Tutorial_KeyPress><key:MoveBackward></col> and <col:Tutorial_KeyPress><key:StrafeRight></col> to move. Hold <col:Tutorial_KeyPress><key:Sprint></col> to sprint.",
+    "order": 136,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "TD_FirstSpawn_3",
+    "body": "We've sent you a welcome mail in the post.\nGo to the nearby Mailbox and check it out.",
+    "order": 137,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "TD_FirstSpawn_Chat_1",
+    "body": "Press <key:ReplayLastHelpUI> at any time to play back the previous tutorial message. In addition to these messages, you can also find further help within chat. Press <key:OpenFullChat> to view these messages.",
+    "order": 138,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "TD_Notoriety0",
+    "body": "Notoriety Level 0: Within an Action District, you would receive increased rewards. Enforcers would only be dispatched against you if they witnessed you committing a crime.",
+    "order": 139,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "TD_Notoriety1Dec",
+    "body": "Notoriety Level 1: Within an Action District, you would receive increased rewards. Enforcers would only be dispatched against you if they witnessed you committing a crime.",
+    "order": 140,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "TD_Notoriety1Inc",
+    "body": "Notoriety Level 1: Within an Action District, you would receive slightly lower rewards. Enforcers would only be dispatched against you if they witness you committing a crime.",
+    "order": 141,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "TD_Notoriety2Dec",
+    "body": "Notoriety Level 2: You would be receiving fewer rewards within an Action District and Enforcers would only be dispatched against your missions.",
+    "order": 142,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "TD_Notoriety2Inc",
+    "body": "Notoriety Level 2: Within an Action District, Enforcers might now be dispatched against your missions. You would receive basic rewards.",
+    "order": 143,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "TD_Notoriety3Dec",
+    "body": "Notoriety Level 3: Within an Action District you would receive fewer rewards. Enforcers may be dispatched against you.",
+    "order": 144,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "TD_Notoriety3Inc",
+    "body": "Notoriety Level 3: You would be receiving a small increase in rewards within an Action District and Enforcers may be dispatched against you.",
+    "order": 145,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "TD_Notoriety4Dec",
+    "body": "Notoriety Level 4: You would now only be able to kill or be killed by those within your mission. Your rewards would be less significant.",
+    "order": 146,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "TD_Notoriety4Inc",
+    "body": "Notoriety Level 4: You could now be matched against stronger opponents and will earn greater rewards within an Action District.",
+    "order": 147,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "TD_Notoriety5",
+    "body": "Notoriety Level 5: You would be receiving significantly improved rewards within an Action District. You would also be able to kill and be killed by any player in the district.",
+    "order": 148,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "TD_Prestige0",
+    "body": "Prestige Level 0: You have failed to uphold the duties of an Enforcer and would receive significantly lower rewards within a standard ruleset.",
+    "order": 149,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "TD_Prestige1Dec",
+    "body": "Prestige Level 1: You would receive reduced rewards and less challenging matches within a standard ruleset.",
+    "order": 150,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "TD_Prestige1Inc",
+    "body": "Prestige Level 1: You would be matched against stronger opponents and earn greater rewards within a standard ruleset.",
+    "order": 151,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "TD_Prestige2Dec",
+    "body": "Prestige Level 2: You would receive reduced rewards and less challenging matches within a standard ruleset.",
+    "order": 152,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "TD_Prestige2Inc",
+    "body": "Prestige Level 2: You would be matched against stronger opponents and earn greater rewards within a standard ruleset.",
+    "order": 153,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "TD_Prestige3Dec",
+    "body": "Prestige Level 3: You would receive reduced rewards and less challenging matches within a standard ruleset.",
+    "order": 154,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "TD_Prestige3Inc",
+    "body": "Prestige Level 3: You would be matched against stronger opponents and earn greater rewards within a standard ruleset.",
+    "order": 155,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "TD_Prestige4Dec",
+    "body": "Prestige Level 4: You would now only kill or be killed by those within your mission. Your rewards would not be as significant within a standard ruleset.",
+    "order": 156,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "TD_Prestige4Inc",
+    "body": "Prestige Level 4: You would be matched against stronger opponents and earn greater rewards within a standard ruleset.",
+    "order": 157,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "TD_Prestige5",
+    "body": "Prestige Level 5: You would earn high rewards and could engage any player in combat within a standard ruleset.",
+    "order": 158,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "TD_TutorialsComplete_2",
+    "body": "You can now group up and play some opposed missions, or switch to an Action District to play the game for real.",
+    "order": 159,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "TD_TutorialsComplete_3",
+    "body": "To switch, press <col:Tutorial_KeyPress>Esc</col> to open the Main Menu and click on District Select.",
+    "order": 160,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "TD_TutorialsComplete_Chat",
+    "body": "Tutorials Complete: You can now group up and play some opposed missions, or switch to an Action District to play the game for real. To switch, press Esc to open the Main Menu and click on District Select.",
+    "order": 161,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "TD_TutorialsReminder_1",
+    "body": "You have completed the Tutorial missions.",
+    "order": 162,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "TD_TutorialsReminder_2",
+    "body": "You can now switch to an Action District to play the game for real.",
+    "order": 163,
+    "source": "PopupDialogs.INT"
+  },
+  {
+    "id": "TD_TutorialsReminder_3",
+    "body": "To switch, press <col:Tutorial_KeyPress>Esc</col> to open the Main Menu and click on District Select.",
+    "order": 164,
+    "source": "PopupDialogs.INT"
+  }
+]

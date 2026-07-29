@@ -1,0 +1,2865 @@
+[
+  {
+    "scene": "Login_Scene",
+    "widget": "UILabelButton_TOS",
+    "text": "Create a new APB Account.",
+    "order": 0,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Login_Scene",
+    "widget": "Check_RememberData",
+    "text": "Remember the email address each time the program starts.",
+    "order": 1,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Login_Scene",
+    "widget": "UILabelButton_AccMgmt",
+    "text": "Manage your account.",
+    "order": 2,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Login_Scene",
+    "widget": "UILabelButton_ReplayVideos",
+    "text": "Watch the opening movies again.",
+    "order": 3,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Login_Scene",
+    "widget": "UILabelButton_Credits",
+    "text": "View the APB credit list.",
+    "order": 4,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Lobby_Scene",
+    "widget": "RotationSliders",
+    "text": "Hold the right mouse button to rotate the character view.",
+    "order": 5,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Lobby_Scene",
+    "widget": "UILabel_Cash",
+    "text": "The selected characters bank balance.",
+    "order": 6,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Lobby_Scene",
+    "widget": "UILabel_CharacterPlayedTime",
+    "text": "How long this character has spent playing APB.",
+    "order": 7,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Lobby_Scene",
+    "widget": "UILabelButton_Logout",
+    "text": "Log out of this account.",
+    "order": 8,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Lobby_Scene",
+    "widget": "cUILabelButton_Play",
+    "text": "Play APB with the selected Character.",
+    "order": 9,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Lobby_Scene",
+    "widget": "UILabelButton_Options",
+    "text": "Change your settings.",
+    "order": 10,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Lobby_Scene",
+    "widget": "UILabelButton_AccMgmt",
+    "text": "Manage your account.",
+    "order": 11,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Lobby_Scene",
+    "widget": "UIButton_RatingTooltipHACK",
+    "text": "Rank: a measure of how much game content you have completed.",
+    "order": 12,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "FactionChoice",
+    "widget": "UIButton_FI_Crim",
+    "text": "Choose the Criminal Faction.",
+    "order": 13,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "FactionChoice",
+    "widget": "UIButton_FI_Enf",
+    "text": "Choose the Enforcer Faction.",
+    "order": 14,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "FactionChoice",
+    "widget": "Marker",
+    "text": "Scroll the text.",
+    "order": 15,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "FactionChoice",
+    "widget": "IncrementButton",
+    "text": "Scroll down.",
+    "order": 16,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "FactionChoice",
+    "widget": "DecrementButton",
+    "text": "Scroll up.",
+    "order": 17,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_Default",
+    "widget": "UIButton_Snapshot",
+    "text": "Take a gender-specific snapshot of your current character design.",
+    "order": 18,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_Default",
+    "widget": "UIButton_RevertSnapshot",
+    "text": "Revert to the last snapshot of the current gender.",
+    "order": 19,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_Default",
+    "widget": "cUIButton_Male",
+    "text": "Create a Male character.",
+    "order": 20,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_Default",
+    "widget": "cUIButton_Female",
+    "text": "Create a Female character.",
+    "order": 21,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_Default",
+    "widget": "cUIThumbnailList_Color",
+    "text": "Constrain character skin colour.",
+    "order": 22,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_Default",
+    "widget": "cUIThumbnailList_Body",
+    "text": "Constrain character body shape.",
+    "order": 23,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_Default",
+    "widget": "cUIThumbnailList_Age",
+    "text": "Constrain character age.",
+    "order": 24,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_Default",
+    "widget": "UILabelButton_Random",
+    "text": "Randomize your character's appearance.",
+    "order": 25,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_Default",
+    "widget": "UIButton_FullBody",
+    "text": "Camera zoomed out to view character's entire body.",
+    "order": 26,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_Default",
+    "widget": "UIButton_Closeup",
+    "text": "Camera partially zoomed in and scrollable to view body detail.",
+    "order": 27,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_Default",
+    "widget": "UIButton_Head",
+    "text": "Camera zoomed in on character's head.",
+    "order": 28,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_Default",
+    "widget": "UIButton_Pause",
+    "text": "Pause ambient character animation.",
+    "order": 29,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_Default",
+    "widget": "UIButton_Play",
+    "text": "Resume ambient character animation.",
+    "order": 30,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_Default",
+    "widget": "UIButton_AC_Pause",
+    "text": "Pause Character idle animation.",
+    "order": 31,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_Default",
+    "widget": "UIButton_AC_Play",
+    "text": "Play Character idle animation.",
+    "order": 32,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_Default",
+    "widget": "UIButton_CC_face",
+    "text": "Facial view.",
+    "order": 33,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_Default",
+    "widget": "UIButton_CC_close",
+    "text": "Upper body view.",
+    "order": 34,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_Default",
+    "widget": "UIButton_CC_full",
+    "text": "Full body view.",
+    "order": 35,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "DebugCityMap",
+    "widget": "UILabelButton_Advanced",
+    "text": "View advanced District options.",
+    "order": 36,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "DebugCityMap",
+    "widget": "UIButton_Expand",
+    "text": "View advanced District options.",
+    "order": 37,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "DebugCityMap",
+    "widget": "UILabelButton_Basic",
+    "text": "Close the advanced District options.",
+    "order": 38,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "DebugCityMap",
+    "widget": "UIButton_Collapse",
+    "text": "Close the advanced District options.",
+    "order": 39,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "DebugCityMap",
+    "widget": "UIEditBox_PlayerNameEntry",
+    "text": "Enter an existing players name.",
+    "order": 40,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "DebugCityMap",
+    "widget": "UIImage_JoinPlayer_BG",
+    "text": "Automatically join the same District Instance as the specified player.",
+    "order": 41,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "DebugCityMap",
+    "widget": "UIImage_JoinLeader",
+    "text": "Automatically join the same District Instance as your Group Leader.",
+    "order": 42,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "DebugCityMap",
+    "widget": "UIImage_Social",
+    "text": "Open the Social Menu.",
+    "order": 43,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "DebugCityMap",
+    "widget": "UILabelButton_Join",
+    "text": "Join the selected District Instance.",
+    "order": 44,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "DebugCityMap",
+    "widget": "UILabelButton_JoinLeader",
+    "text": "Automatically join the same District Instance as your Group Leader.",
+    "order": 45,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "DebugCityMap",
+    "widget": "UILabelButton_JoinPlayer",
+    "text": "Automatically join the same District Instance as the specified player.",
+    "order": 46,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "DebugCityMap",
+    "widget": "UILabelButton_Dropdown_District_BG",
+    "text": "Select a District from the dropdown list.",
+    "order": 47,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "DebugCityMap",
+    "widget": "UILabelButton_RulesetFilter",
+    "text": "Select a Ruleset from the dropdown list.",
+    "order": 48,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "DebugCityMap",
+    "widget": "UILabelButton_Social_Dropdown",
+    "text": "Select the type of players to display \\nfrom the dropdown list.",
+    "order": 49,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "DebugCityMap",
+    "widget": "cUIButton_Chat",
+    "text": "Toggle Chat Panel.",
+    "order": 50,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_Canvas",
+    "widget": "cUIButton_IndexDecrimentSkip",
+    "text": "Skip back 10.",
+    "order": 51,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_Canvas",
+    "widget": "cUIButton_IndexDecriment",
+    "text": "Previous.",
+    "order": 52,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_Canvas",
+    "widget": "cUIButton_IndexIncrement",
+    "text": "Next.",
+    "order": 53,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_Canvas",
+    "widget": "cUIButton_IndexIncrementSkip",
+    "text": "Skip forward 10.",
+    "order": 54,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_Canvas",
+    "widget": "cUIButton_Delete",
+    "text": "Delete color from from the selected palette cell.",
+    "order": 55,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_Canvas",
+    "widget": "cUIButton_Copy",
+    "text": "Add current color to the selected palette cell.",
+    "order": 56,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_Canvas",
+    "widget": "cUIThumbnailList_CustomColours",
+    "text": "Select a cell to make it your current color. You can add custom colors to empty cells or replace the pigment of an existing one if you already have it selected.",
+    "order": 57,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_FacialHair",
+    "widget": "UIButton_Right",
+    "text": "Switch to editing Body Hair.",
+    "order": 58,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_FacialHair",
+    "widget": "UIList_AvailFacialHair",
+    "text": "Select facial hair type to add.",
+    "order": 59,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_FacialHair",
+    "widget": "cUIButton_Add",
+    "text": "Add selected facial hair.",
+    "order": 60,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_FacialHair",
+    "widget": "cUIButton_Remove",
+    "text": "Remove selected facial hair.",
+    "order": 61,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "UITabButton_0",
+    "text": "Vinyls are shapes which you can color and\\ncombine to make more complex designs.",
+    "order": 62,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "UITabButton_1",
+    "text": "Decals are pre-made colorful symbols which can\\nbe layered into your overall design.",
+    "order": 63,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "UITabButton_2",
+    "text": "Fonts are sets of letters you can use \\nto add text to your designs.",
+    "order": 64,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "UITabButton_3",
+    "text": "Symbols are custom designs you've made \\nor obtained from other players.",
+    "order": 65,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "UITabButton_4",
+    "text": "Advanced color options.",
+    "order": 66,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "UILabel_Opacity",
+    "text": "Opacity of the selected color.",
+    "order": 67,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "UIImage_ColourPreview",
+    "text": "Preview selected color.",
+    "order": 68,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "cUIThumbnailList_CustomColours",
+    "text": "Select a cell to make your current shape that color. \\nYou can add custom colors to empty cells or replace \\nthe pigment of an existing one if you already have it\\nselected.",
+    "order": 69,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "UIButton_copy",
+    "text": "Add selected color to your Palette.",
+    "order": 70,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "UIButton_Delete",
+    "text": "Delete the selected color from your Palette.",
+    "order": 71,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "UISlider_LipDetail",
+    "text": "Adjust layer opacity.",
+    "order": 72,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "Button_CopyLayer",
+    "text": "Create an exact copy of the selected layer.",
+    "order": 73,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "Button_DeleteLayer",
+    "text": "Delete selected layer.",
+    "order": 74,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "UILabelButton_Effects",
+    "text": "Apply an effect to the selected layer.",
+    "order": 75,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "UIButton_Close",
+    "text": "Exit Designer.",
+    "order": 76,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "UICheckbox_MoveFree",
+    "text": "Move the selected layers.\\nPress 1 on your keyboard to access this quickly.",
+    "order": 77,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "UICheckbox_MoveHorizontally",
+    "text": "Move the selected layers left or right.",
+    "order": 78,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "UICheckbox_MoveVertically",
+    "text": "Move the selected layers up or down.",
+    "order": 79,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "UICheckbox_ScaleUniformally",
+    "text": "Resize the selected layers while retaining their aspect ratio.\\nPress 2 on your keyboard to access this quickly.",
+    "order": 80,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "UICheckbox_ScaleNoneUniformally",
+    "text": "Resize the selected layers, changing their height or width independently.",
+    "order": 81,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "UICheckbox_ScaleHorizontally",
+    "text": "Change the width of the selected layers.",
+    "order": 82,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "UICheckbox_ScaleVertically",
+    "text": "Change the height of the selected layers.",
+    "order": 83,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "UICheckbox_Rotate",
+    "text": "Rotate the selected layers.\\nPress 3 on your keyboard to access this quickly.",
+    "order": 84,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "Button_RightAngleCW",
+    "text": "Click to rotate the selected layers 90 degrees clockwise.",
+    "order": 85,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "Button_RightAngleCCW",
+    "text": "Click to rotate the selected layers 90 degrees counterclockwise.",
+    "order": 86,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "UICheckbox_SkewFree",
+    "text": "Skew the selected layers vertically and horizontally.",
+    "order": 87,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "UICheckbox_SkewHorizontally",
+    "text": "Skew the selected layers horizontally.",
+    "order": 88,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "UICheckbox_SkewVertically",
+    "text": "Skew the selected layers vertically.",
+    "order": 89,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "Button_FlipHoriz",
+    "text": "Click to flip the selected the selected layers horizontally.",
+    "order": 90,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "Button_FlipVert",
+    "text": "Click to flip the selected the selected layers vertically.",
+    "order": 91,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "UITabButton_UITabPage_Vinyls",
+    "text": "Vinyls are shapes which you can color and\\ncombine to make more complex designs.",
+    "order": 92,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "UITabButton_UITabPage_Decals",
+    "text": "Decals are pre-made colorful symbols which can\\nbe layered into your overall design.",
+    "order": 93,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "UITabButton_UITabPage_Fonts",
+    "text": "Fonts are sets of letters you can use\\nto add text to your designs.\\n",
+    "order": 94,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "UITabButton_UITabPage_Symbols",
+    "text": "Symbols are custom designs you've made\\nor obtained from other players.\\n",
+    "order": 95,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "cUIButton_Copy",
+    "text": "Add current color to the selected palette cell.",
+    "order": 96,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "cUIButton_Delete",
+    "text": "Delete color from the selected palette cell.",
+    "order": 97,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "cUIButton_Last_Page",
+    "text": "Go to last page.",
+    "order": 98,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "cUIButton_Vinyl_Page_Next",
+    "text": "Next page.",
+    "order": 99,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "cUIButton_Page_Previous",
+    "text": "Previous page.",
+    "order": 100,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "cUIButton_First_Page",
+    "text": "Go to first page.",
+    "order": 101,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "cUIButton_Chat",
+    "text": "Open chat window.",
+    "order": 102,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "UITabButton_UITabPage_Picker",
+    "text": "Color picker.",
+    "order": 103,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "UITabButton_UITabPage_HSL",
+    "text": "Numerical color controls.",
+    "order": 104,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "UITabButton_UITabPage_Custom",
+    "text": "Color palette.",
+    "order": 105,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "cUIButton_LUM_Increase",
+    "text": "Increase luminosity.",
+    "order": 106,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "cUIButton_LUM_Decrease",
+    "text": "Reduce luminosity.",
+    "order": 107,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "cUIButton_SAT_Increase",
+    "text": "Increase color saturation.",
+    "order": 108,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "cUIButton_SAT_Decrease",
+    "text": "Reduce color saturation.",
+    "order": 109,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "cUIButton_HUE_Increase",
+    "text": "Next hue.",
+    "order": 110,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "cUIButton_HUE_Decrease",
+    "text": "Previous hue.",
+    "order": 111,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "cUISliderCanvas_HueSat",
+    "text": "Click on the hue/saturation chart to select a color.",
+    "order": 112,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "UISlider_Luminosity",
+    "text": "Luminosity slider.",
+    "order": 113,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "UIEditBox_Lum",
+    "text": "Click here and type to enter a luminosity value.",
+    "order": 114,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "UIEditBox_Sat",
+    "text": "Click here and type to enter a saturation value.",
+    "order": 115,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "UIEditBox_Hue",
+    "text": "Click here and type to enter a hue value.",
+    "order": 116,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "List_Layers",
+    "text": "Select layers here or hold down the Ctrl key and click \\nshapes on the Canvas.",
+    "order": 117,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SymbolEditor_0001",
+    "widget": "cUILabelButton_Duplicate_Layer",
+    "text": "Click to create a copy of the currently selected layer\\nor hold down the Alt key and click on the Canvas.",
+    "order": 118,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Main",
+    "widget": "UIButton_Audio_Engine",
+    "text": "Preview the vehicle engine sound.",
+    "order": 119,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Main",
+    "widget": "UIButton_Audio_Horn",
+    "text": "Preview the vehicle horn sound.",
+    "order": 120,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Main",
+    "widget": "UIButton_Cam_Left",
+    "text": "View the right side of the vehicle.",
+    "order": 121,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Main",
+    "widget": "UIButton_Cam_Right",
+    "text": "View the left side of the vehicle.",
+    "order": 122,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Main",
+    "widget": "UIButton_Cam_Top",
+    "text": "View the top of the vehicle.",
+    "order": 123,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Main",
+    "widget": "UIButton_Cam_Default",
+    "text": "Return to the default camera view.",
+    "order": 124,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Main",
+    "widget": "UILabelButton_Exit",
+    "text": "Exit the Garage.",
+    "order": 125,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Main",
+    "widget": "UIButton_BuyPoints",
+    "text": "Buy more G1C.",
+    "order": 126,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Main",
+    "widget": "UIButton_Help",
+    "text": "Open the APB Knowledgebase.",
+    "order": 127,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Main",
+    "widget": "UIButton_Audio_Siren",
+    "text": "Preview the vehicle siren sound.",
+    "order": 128,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Main",
+    "widget": "cUIButton_TURBO",
+    "text": "Mouse over to hear the selected vehicle's engine and turbo.",
+    "order": 129,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Main",
+    "widget": "cUIButton_ENGINE",
+    "text": "Mouse over to hear the selected vehicle's engine and turbo.",
+    "order": 130,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Main",
+    "widget": "cUIButton_HORN",
+    "text": "Mouse over to hear the selected vehicle's horn.",
+    "order": 131,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Main",
+    "widget": "cUIButton_SIREN",
+    "text": "Mouse over to hear the selected vehicle's siren.",
+    "order": 132,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Main",
+    "widget": "cUIButton_Parts",
+    "text": "Vehicle parts.",
+    "order": 133,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Main",
+    "widget": "cUIButton_Paint",
+    "text": "Paint colors.",
+    "order": 134,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Main",
+    "widget": "cUIButton_Decals",
+    "text": "Decals.",
+    "order": 135,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Main",
+    "widget": "cUIButton_Plates",
+    "text": "License Plates.",
+    "order": 136,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Main",
+    "widget": "cUIButton_Chat",
+    "text": "Open chat window.",
+    "order": 137,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_PartSelection",
+    "widget": "UILabelButton_Back",
+    "text": "Return to the customization menu.",
+    "order": 138,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Paint",
+    "widget": "UILabelButton_Back",
+    "text": "Return to the customization menu.",
+    "order": 139,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Paint",
+    "widget": "cUIButton_Copy",
+    "text": "Copy current color to the selected palette cell.",
+    "order": 140,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Paint",
+    "widget": "cUIButton_Delete",
+    "text": "Delete color from the selected palette cell.",
+    "order": 141,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Paint",
+    "widget": "cUIThumbnailList_CustomColours",
+    "text": "Select a cell to make it your current color. You can add \\ncustom colors to empty cells or replace the pigment \\nof an existing one if you already have it selected.",
+    "order": 142,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Paint",
+    "widget": "UITabButton_UITabPage_Picker",
+    "text": "Color picker.",
+    "order": 143,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Paint",
+    "widget": "UITabButton_UITabPage_HSL",
+    "text": "Numerical color controls.",
+    "order": 144,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Paint",
+    "widget": "UITabButton_UITabPage_Custom",
+    "text": "Color palette.",
+    "order": 145,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Paint",
+    "widget": "UISlider_Luminosity",
+    "text": "Luminosity slider.",
+    "order": 146,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Paint",
+    "widget": "cUISliderCanvas_HueSat",
+    "text": "Click on the hue/saturation chart to select a color.",
+    "order": 147,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Paint",
+    "widget": "UIEditBox_Lum",
+    "text": "Click here and type to enter a luminosity value.",
+    "order": 148,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Paint",
+    "widget": "UIEditBox_Sat",
+    "text": "Click here and type to enter a saturation value.",
+    "order": 149,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Paint",
+    "widget": "UIEditBox_Hue",
+    "text": "Click here and type to enter a hue value.",
+    "order": 150,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Paint",
+    "widget": "cUIButton_LUM_Increase",
+    "text": "Increase luminosity.",
+    "order": 151,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Paint",
+    "widget": "cUIButton_LUM_Decrease",
+    "text": "Reduce luminosity.",
+    "order": 152,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Paint",
+    "widget": "cUIButton_SAT_Increase",
+    "text": "Increase saturation.",
+    "order": 153,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Paint",
+    "widget": "cUIButton_SAT_Decrease",
+    "text": "Reduce saturation.",
+    "order": 154,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Paint",
+    "widget": "cUIButton_HUE_Increase",
+    "text": "Next hue.",
+    "order": 155,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Paint",
+    "widget": "cUIButton_HUE_Decrease",
+    "text": "Previous hue.",
+    "order": 156,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Decals",
+    "widget": "cUIButton_NewLayer",
+    "text": "Add a new decal layer.",
+    "order": 157,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Decals",
+    "widget": "cUIButton_InsertLayer",
+    "text": "Insert a new decal layer.",
+    "order": 158,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Decals",
+    "widget": "cUIButton_CopyLayer",
+    "text": "Duplicate the selected decal layer.",
+    "order": 159,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Decals",
+    "widget": "cUIButton_DeleteLayer",
+    "text": "Delete the selected decal layer.",
+    "order": 160,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Decals",
+    "widget": "UISlider_TatOpacity",
+    "text": "Change the opacity of the selected decal layer.",
+    "order": 161,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Decals",
+    "widget": "UILabelButton_ChangeTatColor",
+    "text": "Change the color of the selected decal layer.",
+    "order": 162,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Decals",
+    "widget": "UILabelButton_ChangeTat",
+    "text": "Change the currently selected decal.",
+    "order": 163,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Decals",
+    "widget": "UILabelButton_SymbolStudio",
+    "text": "Open the Symbol Editor.",
+    "order": 164,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Decals",
+    "widget": "UILabelButton_Back",
+    "text": "Return to the customization menu.",
+    "order": 165,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Decals",
+    "widget": "UITabButton_UITabPage_Custom",
+    "text": "Color palette.",
+    "order": 166,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Decals",
+    "widget": "UITabButton_UITabPage_Picker",
+    "text": "Color picker.",
+    "order": 167,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Decals",
+    "widget": "UITabButton_UITabPage_HSL",
+    "text": "Numerical color controls.",
+    "order": 168,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Decals",
+    "widget": "cUISliderCanvas_HueSat",
+    "text": "Click on the hue/saturation chart to select a color.",
+    "order": 169,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Decals",
+    "widget": "UISlider_Luminosity",
+    "text": "Luminosity slider.",
+    "order": 170,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Decals",
+    "widget": "UIEditBox_Lum",
+    "text": "Click here and type to enter a luminosity value.",
+    "order": 171,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Decals",
+    "widget": "UIEditBox_Sat",
+    "text": "Click here and type to enter a saturation value.",
+    "order": 172,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Decals",
+    "widget": "UIEditBox_Hue",
+    "text": "Click here and type to enter a hue value.",
+    "order": 173,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Decals",
+    "widget": "cUIButton_LUM_Increase",
+    "text": "Increase luminosity.",
+    "order": 174,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Decals",
+    "widget": "cUIButton_LUM_Decrease",
+    "text": "Reduce luminosity.",
+    "order": 175,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Decals",
+    "widget": "cUIButton_SAT_Increase",
+    "text": "Increase saturation.",
+    "order": 176,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Decals",
+    "widget": "cUIButton_SAT_Decrease",
+    "text": "Reduce saturation.",
+    "order": 177,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Decals",
+    "widget": "cUIButton_HUE_Increase",
+    "text": "Next hue.",
+    "order": 178,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Decals",
+    "widget": "cUIButton_HUE_Decrease",
+    "text": "Previous hue.",
+    "order": 179,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Decals",
+    "widget": "cUIButton_Delete",
+    "text": "Delete color from the selected palette cell.",
+    "order": 180,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_Decals",
+    "widget": "cUIButton_Copy",
+    "text": "Add current color to the selected palette cell.",
+    "order": 181,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_LicensePlate",
+    "widget": "cUIButton_IndexDecriment",
+    "text": "Select previous background.",
+    "order": 182,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_LicensePlate",
+    "widget": "cUIButton_IndexIncrement",
+    "text": "Select next background.",
+    "order": 183,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_LicensePlate",
+    "widget": "UILabelButton_Back",
+    "text": "Return to the customization menu.",
+    "order": 184,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Armory",
+    "widget": "UITabButton_1",
+    "text": "Apply upgrades to weapons.",
+    "order": 185,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Armory",
+    "widget": "UITabButton_2",
+    "text": "Apply upgrades to your character.",
+    "order": 186,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Armory",
+    "widget": "UITabButton_3",
+    "text": "Apply upgrades to vehicles.",
+    "order": 187,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Armory",
+    "widget": "Purchase_Filter",
+    "text": "Filter by item type.",
+    "order": 188,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Armory",
+    "widget": "Purchase_SubFilter",
+    "text": "Filter by item sub-type.",
+    "order": 189,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Armory",
+    "widget": "Close",
+    "text": "Exit Armory.",
+    "order": 190,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ViewMessage",
+    "widget": "UIImage_AddFriend",
+    "text": "Add the player to your friend list.",
+    "order": 191,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ViewMessage",
+    "widget": "UIImage_Ignore",
+    "text": "Add the player to your ignore list.",
+    "order": 192,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ViewMessage",
+    "widget": "UIImage_DetachItem",
+    "text": "View mail attachment.",
+    "order": 193,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ViewMessage",
+    "widget": "UILabelButton_DetachItem",
+    "text": "Retrieve attached item(s).",
+    "order": 194,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ViewMessage",
+    "widget": "UILabelButton_DetachCash",
+    "text": "Retrieve attached cash.",
+    "order": 195,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ViewMessage",
+    "widget": "UIButton_Close",
+    "text": "Exit Mail.",
+    "order": 196,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ViewMessage",
+    "widget": "cUIButton_Delete_Mail",
+    "text": "Delete currently selected email.",
+    "order": 197,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Wardrobe_Camera",
+    "widget": "UIButton_Head_Cam",
+    "text": "Camera zoomed in on character's head.",
+    "order": 198,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Wardrobe_Camera",
+    "widget": "UIButton_Body_Cam",
+    "text": "Camera zoomed out to view character's entire body.",
+    "order": 199,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Wardrobe_Camera",
+    "widget": "UIButton_Dolly_Cam",
+    "text": "Camera partially zoomed in and scrollable to view body detail.",
+    "order": 200,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Wardrobe_Camera",
+    "widget": "UIButton_Pause",
+    "text": "Pause Character idle animation.",
+    "order": 201,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Wardrobe_Camera",
+    "widget": "UIButton_Play",
+    "text": "Play Character idle animation.",
+    "order": 202,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Wardrobe_Camera",
+    "widget": "UIButton_Head",
+    "text": "Facial view.",
+    "order": 203,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Wardrobe_Camera",
+    "widget": "UIButton_Torso",
+    "text": "Upper body view.",
+    "order": 204,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Wardrobe_Camera",
+    "widget": "UIButton_Body",
+    "text": "Full body view.",
+    "order": 205,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "DeploymentInventory2",
+    "widget": "Weapon_Firearm_View",
+    "text": "View this weapon in 3D.",
+    "order": 206,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "DeploymentInventory2",
+    "widget": "Vehicle_View",
+    "text": "View this vehicle in 3D.",
+    "order": 207,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "DeploymentInventory2",
+    "widget": "Close",
+    "text": "Exit Inventory.",
+    "order": 208,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "DeploymentInventory2",
+    "widget": "cUIButton_Firearm_View",
+    "text": "View 3D model.",
+    "order": 209,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "DeploymentInventory2",
+    "widget": "cUIButton_Vehicle_View",
+    "text": "View 3D model.",
+    "order": 210,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "DeploymentInventory2",
+    "widget": "Weapon_Firearm_WWW",
+    "text": "View this weapon's details in the Vault.",
+    "order": 211,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "DeploymentInventory2",
+    "widget": "Weapon_Vehicle_WWW",
+    "text": "View this vehicle's details in the Vault.",
+    "order": 212,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "DeploymentInventory2",
+    "widget": "MusicTheme_Play",
+    "text": "Preview Theme.",
+    "order": 213,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "DeploymentInventory2",
+    "widget": "MusicTheme_Stop",
+    "text": "Stop Theme.",
+    "order": 214,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "DeploymentInventory2",
+    "widget": "Weapon_FnMod_WWW",
+    "text": "View this upgrade's details in the Vault.",
+    "order": 215,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "DeploymentInventory2",
+    "widget": "Weapon_Equipment_WWW",
+    "text": "View this equipment's details in the Vault.",
+    "order": 216,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ItemPreview_UnlockTargetItem",
+    "widget": "Vehicle_View",
+    "text": "Open a 3D preview of the item.",
+    "order": 217,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "DistrictMap_MapMode_001",
+    "widget": "UICheckbox_TrackPlayer",
+    "text": "Keep map centered on yourself.",
+    "order": 218,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "DistrictMap_MapMode_001",
+    "widget": "UICheckbox_AutoZoom",
+    "text": "Zoom automatically around spawn points.",
+    "order": 219,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "DistrictMap_MapMode_001",
+    "widget": "UICheckbox_ToggleAll",
+    "text": "Click to show/hide all markers on map.",
+    "order": 220,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "DistrictMap_MapMode_001",
+    "widget": "UIButton_DefaultPosition",
+    "text": "Return map to default position and zoom.",
+    "order": 221,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "DistrictMap_MapMode_001",
+    "widget": "UIButton_CentreOnPlayer",
+    "text": "Focus on yourself.",
+    "order": 222,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "DistrictMap_MapMode_001",
+    "widget": "UISlider_Zoom",
+    "text": "Adjust map zoom.",
+    "order": 223,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "DistrictMap_MapMode_001",
+    "widget": "UICheckbox_TextLabels",
+    "text": "Toggle text labels for map markers.",
+    "order": 224,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Wardrobe_PartSelection",
+    "widget": "UICheckbox_PairItems",
+    "text": "Keep items that have a Left and Right version paired.",
+    "order": 225,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Wardrobe_PartSelection",
+    "widget": "UIButton_Close",
+    "text": "Exit Wardrobe.",
+    "order": 226,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Wardrobe_PartSelection",
+    "widget": "cUIButton_LayerUp",
+    "text": "Put the selected clothing item over other clothing.",
+    "order": 227,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Wardrobe_PartSelection",
+    "widget": "cUIButton_LayerDown",
+    "text": "Put the selected clothing item under other clothing.",
+    "order": 228,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Wardrobe_PartSelection",
+    "widget": "cUIButton_Chat",
+    "text": "Open chat window.",
+    "order": 229,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "MusicPlayback",
+    "widget": "RemoveFilter",
+    "text": "Reset Search.",
+    "order": 230,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "MusicPlayback",
+    "widget": "cUIButton_Filter",
+    "text": "Search Tracks.",
+    "order": 231,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "MusicPlayback",
+    "widget": "Close",
+    "text": "Close Music Player.",
+    "order": 232,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "StorageInventory2",
+    "widget": "CloseWindow",
+    "text": "Exit Locker.",
+    "order": 233,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "StorageInventory2",
+    "widget": "cUIButton_Firearm_View",
+    "text": "View 3D model.",
+    "order": 234,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "StorageInventory2",
+    "widget": "cUIButton_Clothing_View",
+    "text": "View this item on your Character.",
+    "order": 235,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "StorageInventory2",
+    "widget": "cUIButton_Vehicle_View",
+    "text": "View 3D model.",
+    "order": 236,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "StorageInventory2",
+    "widget": "Weapon_FnMod_WWW",
+    "text": "View this upgrade's details in the Vault.",
+    "order": 237,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "StorageInventory2",
+    "widget": "Weapon_Ammo_WWW",
+    "text": "View this ammo type's details in the Vault.",
+    "order": 238,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "StorageInventory2",
+    "widget": "Weapon_Equipment_WWW",
+    "text": "View this equipment's details in the Vault.",
+    "order": 239,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "StorageInventory2",
+    "widget": "MusicTheme_Play",
+    "text": "Preview Theme.",
+    "order": 240,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "StorageInventory2",
+    "widget": "MusicTheme_Stop",
+    "text": "Stop Theme.",
+    "order": 241,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "StorageInventory2",
+    "widget": "Weapon_Vehicle_WWW",
+    "text": "View this vehicle's details in the Vault.",
+    "order": 242,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "StorageInventory2",
+    "widget": "Weapon_Firearm_WWW",
+    "text": "View this weapon's details in the Vault.",
+    "order": 243,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "DisplayPoint",
+    "widget": "cUIButton_Close",
+    "text": "Close Display Point Window.",
+    "order": 244,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "OptionsMenu",
+    "widget": "Close",
+    "text": "Exit Options Menu.",
+    "order": 245,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "PopUpMenu",
+    "widget": "cUIButton_Close",
+    "text": "Exit Menu.",
+    "order": 246,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_Tattoos",
+    "widget": "Button_NewLayer",
+    "text": "Add new layer.",
+    "order": 247,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_Tattoos",
+    "widget": "Button_InstertLayer",
+    "text": "Insert new layer.",
+    "order": 248,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_Tattoos",
+    "widget": "Button_CopyLayer",
+    "text": "Duplicate layer.",
+    "order": 249,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_Tattoos",
+    "widget": "Button_DeleteLayer",
+    "text": "Delete layer.",
+    "order": 250,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_Tattoos",
+    "widget": "UIButton_Close",
+    "text": "Close color palette.",
+    "order": 251,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_Tattoos",
+    "widget": "ThumbnailList_HC",
+    "text": "Click a cell to make the current tattoo that color.",
+    "order": 252,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_Tattoos",
+    "widget": "Button_ResetTransforms",
+    "text": "Click to reset the Tattoo back to its original state.",
+    "order": 253,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "MarketPlace",
+    "widget": "Close",
+    "text": "Exit Marketplace.",
+    "order": 254,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "MarketPlace",
+    "widget": "Button_Clear_Seller",
+    "text": "Clear Seller Filter.",
+    "order": 255,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "MarketPlace",
+    "widget": "NavBtn_Previous",
+    "text": "Previous auctions page.",
+    "order": 256,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "MarketPlace",
+    "widget": "NavBtn_Next",
+    "text": "Next auctions page.",
+    "order": 257,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "MarketPlace",
+    "widget": "cUIButton_Clothing_View",
+    "text": "View this item on your Character.",
+    "order": 258,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "MarketPlace",
+    "widget": "MusicTheme_Play",
+    "text": "Preview Theme.",
+    "order": 259,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "MarketPlace",
+    "widget": "cUIButton_Firearm_View",
+    "text": "View 3D model.",
+    "order": 260,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "MarketPlace",
+    "widget": "Weapon_Firearm_WWW",
+    "text": "View this weapon's details in the Vault.",
+    "order": 261,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "MarketPlace",
+    "widget": "Weapon_FnMod_WWW",
+    "text": "View this upgrade's details in the Vault.",
+    "order": 262,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "MarketPlace",
+    "widget": "Weapon_Equipment_WWW",
+    "text": "View this equipment's details in the Vault.",
+    "order": 263,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "MarketPlace",
+    "widget": "cUIButton_Vehicle_View",
+    "text": "View 3D model.",
+    "order": 264,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "MarketPlace",
+    "widget": "Weapon_Vehicle_WWW",
+    "text": "View this vehicle's details in the Vault.",
+    "order": 265,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "SocialUI_Base",
+    "widget": "cUIButton_Close",
+    "text": "Close Groups & Friends Menu.",
+    "order": 266,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ChatInterface_Maximized",
+    "widget": "UIButton_CloseChat",
+    "text": "Exit Full Chat Mode.",
+    "order": 267,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ChatInterface_Maximized",
+    "widget": "cUIButton_Chat_Options",
+    "text": "Chat Options.",
+    "order": 268,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ChatInterface_Maximized",
+    "widget": "cUIButton_ChatMode",
+    "text": "Set Chat Status.",
+    "order": 269,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ChatCommands",
+    "widget": "UIButton_CloseCommands",
+    "text": "Close Command List.",
+    "order": 270,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ChatOptions",
+    "widget": "cUIButton_Copy",
+    "text": "Copy Color to Selected Cell.",
+    "order": 271,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ChatOptions",
+    "widget": "cUIButton_Delete",
+    "text": "Delete Color from Selected Cell.",
+    "order": 272,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ChatOptions",
+    "widget": "cUIButton_Close",
+    "text": "Close Chat Options Window.",
+    "order": 273,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ChatFilters",
+    "widget": "cUIButton_Close",
+    "text": "Close Chat Tab Options Window.",
+    "order": 274,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Scoreboard",
+    "widget": "UIButton_Close",
+    "text": "Close Scoreboard.",
+    "order": 275,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ActionContact",
+    "widget": "Close",
+    "text": "Close Contact Vending Window.",
+    "order": 276,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ActionContact",
+    "widget": "cUIButton_Firearm_View",
+    "text": "View 3D model.",
+    "order": 277,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ActionContact",
+    "widget": "cUIButton_Clothing_View",
+    "text": "View this item on your Character.",
+    "order": 278,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ActionContact",
+    "widget": "cUIButton_Vehicle_View",
+    "text": "View 3D model.",
+    "order": 279,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ActionContact",
+    "widget": "Weapon_Firearm_WWW",
+    "text": "View this weapon's details in the Vault.",
+    "order": 280,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ActionContact",
+    "widget": "Weapon_FnMod_WWW",
+    "text": "View this upgrade's details in the Vault.",
+    "order": 281,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ActionContact",
+    "widget": "Weapon_Vehicle_WWW",
+    "text": "View this vehicle's details in the Vault.",
+    "order": 282,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ActionContact",
+    "widget": "Weapon_Equipment_WWW",
+    "text": "View this equipment's details in the Vault.",
+    "order": 283,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Leagues",
+    "widget": "UIButton_Close",
+    "text": "Close Leagues Window.",
+    "order": 284,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "PlayerInfo",
+    "widget": "UIButton_Close",
+    "text": "Close Player Info Window.",
+    "order": 285,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "PlayerInfo",
+    "widget": "UIButton_ThemePlay",
+    "text": "Listen to your Current Theme.",
+    "order": 286,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "PlayerInfo",
+    "widget": "UIButton_ThemeStop",
+    "text": "Stop Theme.",
+    "order": 287,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "WebbrowserScene",
+    "widget": "Close",
+    "text": "Close Browser.",
+    "order": 288,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CreateTeam",
+    "widget": "UIButton_Close",
+    "text": "Cancel.",
+    "order": 289,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "EditTeamMOTD",
+    "widget": "UIButton_Close",
+    "text": "Cancel.",
+    "order": 290,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "TeamManagement",
+    "widget": "Message_Button",
+    "text": "Edit Clan's Message of the Day.",
+    "order": 291,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "TeamManagement",
+    "widget": "Info_Button",
+    "text": "Edit Clan's Info.",
+    "order": 292,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "TeamManagement",
+    "widget": "Symbol_Button",
+    "text": "Edit Clan's Symbol.",
+    "order": 293,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "TeamManagement",
+    "widget": "Close",
+    "text": "Close Clan Management Window.",
+    "order": 294,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "TeamManagement",
+    "widget": "Info_ButtonTooltipHACK",
+    "text": "You are not authorized to change this field.",
+    "order": 295,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "TeamManagement",
+    "widget": "Symbol_ButtonTooltipHACK",
+    "text": "You are not authorized to change this field.",
+    "order": 296,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "TeamManagement",
+    "widget": "Message_ButtonTooltipHACK",
+    "text": "You are not authorized to change this field.",
+    "order": 297,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "EditTeamInfo",
+    "widget": "UIButton_Close",
+    "text": "Cancel.",
+    "order": 298,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "PrimitiveSelector_0002",
+    "widget": "UIButton_CloseWindow",
+    "text": "Cancel.",
+    "order": 299,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "PrimitiveSelector_0002",
+    "widget": "cUIButton_Page_Next",
+    "text": "Next page.",
+    "order": 300,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "PrimitiveSelector_0002",
+    "widget": "cUIButton_Page_Previous",
+    "text": "Previous page.",
+    "order": 301,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ViewTeamMember",
+    "widget": "EditBio_Button",
+    "text": "Edit Player's Bio.",
+    "order": 302,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ViewTeamMember",
+    "widget": "EditPubNote_Button",
+    "text": "Edit Player's Public Note.",
+    "order": 303,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ViewTeamMember",
+    "widget": "EditPrivNote_Button",
+    "text": "Edit Player's Private Note.",
+    "order": 304,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ViewTeamMember",
+    "widget": "EditBio_ButtonTooltipHACK",
+    "text": "You are not authorized to change this field.",
+    "order": 305,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ViewTeamMember",
+    "widget": "EditPubNote_ButtonTooltipHACK",
+    "text": "You are not authorized to change this field.",
+    "order": 306,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ViewTeamMember",
+    "widget": "EditPrivNote_ButtonTooltipHACK",
+    "text": "You are not authorized to change this field.",
+    "order": 307,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CreatorNameSelection",
+    "widget": "Close",
+    "text": "Cancel.",
+    "order": 308,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ContextMenu_SocialDistrict",
+    "widget": "UILabelButton_Exit",
+    "text": "Exit Persona.",
+    "order": 309,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ContextMenu_SocialDistrict",
+    "widget": "cUIButton_Collapse_Funds",
+    "text": "Hide character changes.",
+    "order": 310,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ContextMenu_SocialDistrict",
+    "widget": "cUIButton_Expand_Funds",
+    "text": "Show character changes.",
+    "order": 311,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ContextMenu_SocialDistrict",
+    "widget": "cUIButton_Chat",
+    "text": "Open Chat Window.",
+    "order": 312,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "MySymbolsSelector_0001",
+    "widget": "cUIButton_Close_Button",
+    "text": "Cancel and exit Designer.",
+    "order": 313,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ClothingUI_DecalControls",
+    "widget": "UIToggleButton_MoveHoriz",
+    "text": "Move the Decal left or right.",
+    "order": 314,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ClothingUI_DecalControls",
+    "widget": "UIToggleButton_MoveVert",
+    "text": "Move the Decal up or down.",
+    "order": 315,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ClothingUI_DecalControls",
+    "widget": "UIToggleButton_ScaleUni",
+    "text": "Resize the Decal while maintaining its aspect ratio.",
+    "order": 316,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ClothingUI_DecalControls",
+    "widget": "UIToggleButton_ScaleNonUni",
+    "text": "Resize the Decal, changing their height or width independently.",
+    "order": 317,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ClothingUI_DecalControls",
+    "widget": "UIToggleButton_ScaleHoriz",
+    "text": "Change the width of the Decal.",
+    "order": 318,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ClothingUI_DecalControls",
+    "widget": "UIToggleButton_ScaleVert",
+    "text": "Change the height of the Decal.",
+    "order": 319,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ClothingUI_DecalControls",
+    "widget": "UIToggleButton_Rotate",
+    "text": "Rotate the Decal.",
+    "order": 320,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ClothingUI_DecalControls",
+    "widget": "UIToggleButton_SkewFree",
+    "text": "Skew the Decal vertically and horizontally.",
+    "order": 321,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ClothingUI_DecalControls",
+    "widget": "UIToggleButton_SkewHoriz",
+    "text": "Skew the Decal horizontally.",
+    "order": 322,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ClothingUI_DecalControls",
+    "widget": "UIToggleButton_SkewVert",
+    "text": "Skew the Decal vertically.",
+    "order": 323,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ClothingUI_DecalControls",
+    "widget": "Button_FlipHoriz",
+    "text": "Click to flip the the Decal horizontally.",
+    "order": 324,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ClothingUI_DecalControls",
+    "widget": "Button_FlipVert",
+    "text": "Click to flip the Decal vertically.",
+    "order": 325,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ClothingUI_DecalControls",
+    "widget": "Button_ResetTransforms",
+    "text": "Click to reset the Decal back to its original state.",
+    "order": 326,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ClothingUI_DecalControls",
+    "widget": "UIToggleButton_MoveFree",
+    "text": "Move the Decal.",
+    "order": 327,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ClothingUI_DecalControls",
+    "widget": "UIToggleButton_Cylindrical",
+    "text": "Wrap the Decal around the highlighted body part below.",
+    "order": 328,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ClothingUI_DecalControls",
+    "widget": "UIToggleButton_Orthogonal",
+    "text": "Project the Decal onto clothing.",
+    "order": 329,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ClothingUI_DecalControls",
+    "widget": "cUIButton_reproject",
+    "text": "Project the Decal from the camera's viewpoint.",
+    "order": 330,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ClothingUI_DecalControls",
+    "widget": "cUIButton_FixNormal",
+    "text": "Realign the Decal to the clothing's surface.",
+    "order": 331,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ClothingUI_DecalControls",
+    "widget": "cUIButton_RotateCW",
+    "text": "Click to rotate the Decal 90 degrees clockwise.",
+    "order": 332,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ClothingUI_DecalControls",
+    "widget": "cUIButton_RotateCCW",
+    "text": "Click to rotate the Decal 90 degrees counterclockwise.",
+    "order": 333,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Wardrobe_CustomisationRoot",
+    "widget": "UIButton_Close",
+    "text": "Cancel customization and exit Wardrobe.",
+    "order": 334,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Wardrobe_CustomisationRoot",
+    "widget": "UITabButton_UITabPage_Custom",
+    "text": "Color palette.",
+    "order": 335,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Wardrobe_CustomisationRoot",
+    "widget": "UITabButton_UITabPage_Picker",
+    "text": "Color picker.",
+    "order": 336,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Wardrobe_CustomisationRoot",
+    "widget": "UITabButton_UITabPage_HSL",
+    "text": "Numerical color controls.",
+    "order": 337,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Wardrobe_CustomisationRoot",
+    "widget": "UISlider_Luminosity",
+    "text": "Luminosity slider.",
+    "order": 338,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Wardrobe_CustomisationRoot",
+    "widget": "cUISliderCanvas_HueSat",
+    "text": "Click on the hue/saturation chart to select a color.",
+    "order": 339,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Wardrobe_CustomisationRoot",
+    "widget": "cUIButton_LUM_Increase",
+    "text": "Increase luminosity.",
+    "order": 340,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Wardrobe_CustomisationRoot",
+    "widget": "cUIButton_LUM_Decrease",
+    "text": "Decrease luminosity.",
+    "order": 341,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Wardrobe_CustomisationRoot",
+    "widget": "cUIButton_SAT_Increase",
+    "text": "Increase color saturation.",
+    "order": 342,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Wardrobe_CustomisationRoot",
+    "widget": "cUIButton_SAT_Decrease",
+    "text": "Decrease color saturation.",
+    "order": 343,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Wardrobe_CustomisationRoot",
+    "widget": "cUIButton_HUE_Increase",
+    "text": "Next hue.",
+    "order": 344,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Wardrobe_CustomisationRoot",
+    "widget": "cUIButton_HUE_Decrease",
+    "text": "Previous hue.",
+    "order": 345,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Wardrobe_CustomisationRoot",
+    "widget": "cUIButton_Copy",
+    "text": "Copy current color to the selected palette cell.",
+    "order": 346,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Wardrobe_CustomisationRoot",
+    "widget": "cUIButton_Delete",
+    "text": "Delete color from the selected palette cell.",
+    "order": 347,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Wardrobe_CustomisationRoot",
+    "widget": "cUIThumbnailList_CustomColours",
+    "text": "Select a cell to make it your current color. You can add\\ncustom colors to empty cells or replace the pigment \\nof an existing one if you already have it selected.",
+    "order": 348,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Wardrobe_CustomisationRoot",
+    "widget": "UIEditBox_Lum",
+    "text": "Click here and type to enter a luminosity value.",
+    "order": 349,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Wardrobe_CustomisationRoot",
+    "widget": "UIEditBox_Sat",
+    "text": "Click here and type to enter a saturation value.",
+    "order": 350,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Wardrobe_CustomisationRoot",
+    "widget": "UIEditBox_Hue",
+    "text": "Click here and type to enter a hue value.",
+    "order": 351,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "Wardrobe_CustomisationRoot",
+    "widget": "UISlider_OverlayStrength",
+    "text": "Changes the opacity of the clothing's overlay. An overlay is a texture that makes the clothing look worn and faded.",
+    "order": 352,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_TattooControls",
+    "widget": "cUIButton_reproject",
+    "text": "Project the tattoo from the camera's viewpoint.",
+    "order": 353,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_TattooControls",
+    "widget": "cUIButton_normal",
+    "text": "Realign the tattoo to the body's surface.",
+    "order": 354,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_TattooControls",
+    "widget": "UICheckbox_MoveFree",
+    "text": "Move the tattoo.",
+    "order": 355,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_TattooControls",
+    "widget": "UICheckbox_MoveHorz",
+    "text": "Move the tattoo left or right.",
+    "order": 356,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_TattooControls",
+    "widget": "UICheckbox_MoveVert",
+    "text": "Move the tattoo up or down.",
+    "order": 357,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_TattooControls",
+    "widget": "UICheckbox_ScaleUniformally",
+    "text": "Resize the tattoo while maintaining its aspect ratio.",
+    "order": 358,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_TattooControls",
+    "widget": "UICheckbox_ScaleHorizontally",
+    "text": "Change the width of the tattoo.",
+    "order": 359,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_TattooControls",
+    "widget": "UICheckbox_ScaleVert",
+    "text": "Change the height of the tattoo.",
+    "order": 360,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_TattooControls",
+    "widget": "UICheckbox_Rotate",
+    "text": "Rotate the tattoo.",
+    "order": 361,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_TattooControls",
+    "widget": "cUIButton_RotateCW",
+    "text": "Click to rotate the tattoo 90 degrees clockwise.",
+    "order": 362,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_TattooControls",
+    "widget": "cUIButton_RotateCCW",
+    "text": "Click to rotate the tattoo 90 degrees counterclockwise.",
+    "order": 363,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_TattooControls",
+    "widget": "UICheckbox_SkewFree",
+    "text": "Skew the tattoo vertically and horizontally.",
+    "order": 364,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_TattooControls",
+    "widget": "UICheckbox_SkewHorizontally",
+    "text": "Skew the tattoo horizontally.",
+    "order": 365,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_TattooControls",
+    "widget": "UICheckbox_SkewVertically",
+    "text": "Skew the tattoo vertically.",
+    "order": 366,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_TattooControls",
+    "widget": "Button_FlipHoriz",
+    "text": "Click to flip the tattoo horizontally.",
+    "order": 367,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_TattooControls",
+    "widget": "Button_FlipVert",
+    "text": "Click to flip the tattoo vertically.",
+    "order": 368,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_TattooControls",
+    "widget": "cUIButton_Cylindrical",
+    "text": "Wrap the tattoo around the highlighted body part below.",
+    "order": 369,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_TattooControls",
+    "widget": "cUIButton_Perspective",
+    "text": "Project the tattoo onto body.",
+    "order": 370,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_TattooControls",
+    "widget": "UIToggleButton_Orthogonal",
+    "text": "Project the tattoo onto body.",
+    "order": 371,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_TattooControls",
+    "widget": "UIToggleButton_Cylindrical",
+    "text": "Wrap the tattoo around the highlighted body part below.",
+    "order": 372,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_TattooControls",
+    "widget": "Button_ResetTransforms",
+    "text": "Click to reset the Tattoo back to its original state.",
+    "order": 373,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ClothingUI_Decals",
+    "widget": "cUIButton_Replace",
+    "text": "Change the selected Clothing Decal.",
+    "order": 374,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ClothingUI_Decals",
+    "widget": "cUIButton_NewLayer",
+    "text": "Add a new Clothing Decal.",
+    "order": 375,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_DecalControls",
+    "widget": "UIToggleButton_MoveFree",
+    "text": "Move the decal.",
+    "order": 376,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_DecalControls",
+    "widget": "UIToggleButton_MoveHorz",
+    "text": "Move the decal left and right.",
+    "order": 377,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_DecalControls",
+    "widget": "UIToggleButton_MoveVert",
+    "text": "Move the decal up or down.",
+    "order": 378,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_DecalControls",
+    "widget": "UIToggleButton_ScaleUniform",
+    "text": "Resize the decal while maintaining its aspect ratio.",
+    "order": 379,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_DecalControls",
+    "widget": "UIToggleButton_ScaleFree",
+    "text": "Resize the decal, changing their height or width independently.",
+    "order": 380,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_DecalControls",
+    "widget": "UIToggleButton_ScaleHorz",
+    "text": "Change the width of the decal.",
+    "order": 381,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_DecalControls",
+    "widget": "UIToggleButton_ScaleVert",
+    "text": "Change the height of the decal.",
+    "order": 382,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_DecalControls",
+    "widget": "UIToggleButton_Rotate",
+    "text": "Rotate the decal.",
+    "order": 383,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_DecalControls",
+    "widget": "cUIButton_ResetTransform",
+    "text": "Click to reset the decal back to its original state.",
+    "order": 384,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_DecalControls",
+    "widget": "UIToggleButton_RotateCW",
+    "text": "Click to rotate the decal 90 degrees clockwise.",
+    "order": 385,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_DecalControls",
+    "widget": "UIToggleButton_RotateCCW",
+    "text": "Click to rotate the decal 90 degrees counterclockwise.",
+    "order": 386,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_DecalControls",
+    "widget": "UIToggleButton_SkewFree",
+    "text": "Skew the decal vertically and horizontally.",
+    "order": 387,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_DecalControls",
+    "widget": "UIToggleButton_SkewHoriz",
+    "text": "Skew the decal horizontally.",
+    "order": 388,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_DecalControls",
+    "widget": "UIToggleButton_SkewVert",
+    "text": "Skew the decal vertically.",
+    "order": 389,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_DecalControls",
+    "widget": "Button_FlipHoriz",
+    "text": "Click to flip the decal horizontally.",
+    "order": 390,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_DecalControls",
+    "widget": "Button_FlipVert",
+    "text": "Click to flip the decal vertically.",
+    "order": 391,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_DecalControls",
+    "widget": "cUIButton_RotateCW",
+    "text": "Click to rotate the decal 90 degrees clockwise.",
+    "order": 392,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "VehicleUI_DecalControls",
+    "widget": "cUIButton_RotateCCW",
+    "text": "Click to rotate the decal 90 degrees counterclockwise.",
+    "order": 393,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ThemeEditor",
+    "widget": "UIButton_Close",
+    "text": "Exit Music Studio.",
+    "order": 394,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ThemeEditor",
+    "widget": "cUIButton_Play",
+    "text": "Play track.",
+    "order": 395,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ThemeEditor",
+    "widget": "cUIButton_Pause",
+    "text": "Pause track.",
+    "order": 396,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ThemeEditor",
+    "widget": "cUIButton_Stop",
+    "text": "Stop track.",
+    "order": 397,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ThemeEditor",
+    "widget": "cUIButton_Tempo_Increment",
+    "text": "Speed up track's tempo.",
+    "order": 398,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ThemeEditor",
+    "widget": "cUIButton_Tempo_Decriment",
+    "text": "Slow down track's tempo.",
+    "order": 399,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ThemeEditor",
+    "widget": "UIEditBox_Name",
+    "text": "Click here to rename the Track.",
+    "order": 400,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ThemeEditor",
+    "widget": "UIList_Tracks",
+    "text": "Click the speaker icon to the right of a track to mute/unmute the individual tracks, or click the mic to the left to mute/unmute all other tracks.",
+    "order": 401,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ThemeEditor",
+    "widget": "Sequencer",
+    "text": "Right click the panels here to change which pattern each track plays.",
+    "order": 402,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ThemeEditor",
+    "widget": "cUIMSTrackPattern_Patterns",
+    "text": "Patterns are sequences of notes that are played by the track's selected instrument. Right click patterns here to rename them.",
+    "order": 403,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ThemeEditor",
+    "widget": "UISlider_Vol",
+    "text": "Moving this slider left or right alters the volume of this specific track. This volume is used for all patterns within the track.",
+    "order": 404,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ThemeEditor",
+    "widget": "UISlider_Pan",
+    "text": "Moving the slider left or right pans the audio between the respective speakers. If moved all the way to one side, all the track's audio will be played exclusively on that side's speaker.",
+    "order": 405,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "ThemeEditor",
+    "widget": "UICheckbox_Metrome",
+    "text": "Toggle the metronome; a series of timed beats designed to aid in measuring tempo.",
+    "order": 406,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_Hair",
+    "widget": "cUIButton_IndexDecrimentSkip",
+    "text": "Skip back 10.",
+    "order": 407,
+    "source": "Tooltips.INT"
+  },
+  {
+    "scene": "CharacterCustomisation_Hair",
+    "widget": "cUIButton_IndexIncrementSkip",
+    "text": "Skip forward 10.",
+    "order": 408,
+    "source": "Tooltips.INT"
+  }
+]

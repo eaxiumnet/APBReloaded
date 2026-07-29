@@ -1,0 +1,962 @@
+[
+  {
+    "id": "Root",
+    "title": "Welcome to San Paro",
+    "subtitle": "City Guide",
+    "body": "<br>Welcome to the Havalynd District of San Paro! This tutorial is designed to gently guide you through the initial stages of learning how everything works in APB: Reloaded. <br><br>Once you close this UI window, you simply need to complete the tasks that appear on the right side of your screen. You can press <font color=\"#FFAC00\"><binding>ToggleTutorialUI</binding></font> at any time to bring up this UI again and it will automatically go to the page that will help you complete your current task. You will be rewarded for completing each section. You can complete them in any order but we recommend you complete them in the order they appear. <br>Good luck out there.",
+    "order": 0,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Basic",
+    "title": "Basic",
+    "subtitle": "Everything you need to know.",
+    "body": "<br>The Basic section will teach you the fundamentals of playing, and while they won't make you a superstar, you'll learn everything you need to know in order to get started. We'll start with movement, then proceed on to more complex systems such as the inventory and driving, as well as how to start a mission and get fighting.",
+    "order": 1,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "MovementActions",
+    "title": "Movement & Actions",
+    "subtitle": "I get around",
+    "body": "<br>Keeping on the move is incredibly important to staying alive in San Paro. This section will teach you the basics.<br>",
+    "order": 2,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "MovementActions_Sprint50m",
+    "title": "Sprint for 50 Meters",
+    "subtitle": "I don't run on television",
+    "body": "<br>You can run with <font color=\"#FFAC00\"><binding>MoveForward</binding></font>, <font color=\"#FFAC00\"><binding>MoveBackward</binding></font>, <font color=\"#FFAC00\"><binding>StrafeLeft</binding></font> and <font color=\"#FFAC00\"><binding>StrafeRight</binding></font>. If you press <font color=\"#FFAC00\"><binding>Sprint</binding></font> while running your character will sprint. Sprinting allows you to move faster, but you cannot fire your weapon while sprinting.<br><br>Gameplay Tips!<br><br><li>Sprinting is great for moving while under attack.</li><br><li>You can't see your crosshair while sprinting so make sure to stop sprinting before shooting with a gun that relies on accuracy to be effective.</li><br>",
+    "order": 3,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "MovementAction_Jump",
+    "title": "Jumping",
+    "subtitle": "Spring in your Step!",
+    "body": "<br>Your character can jump by pressing <font color=\"#FFAC00\"><binding>Jump</binding></font> button. Jumping is very useful for getting around the game world and avoiding gunfire.<br><br>Gameplay Tips!<br><br><li>With some well-timed jumps you can make it between rooftops, this is very useful for surprising fellow players. </li><br><li>Try using vehicles or dumpsters to jump over walls rather than taking more conventional routes.</li><br><li>Don’t have time to take the stairs? Jump!</li><br>",
+    "order": 4,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "MovementAction_Crouch",
+    "title": "Crouching",
+    "subtitle": "Take cover over there!",
+    "body": "<br>Press <font color=\"#FFAC00\"><binding>Duck</binding></font> to crouch. Crouching means you present a smaller target to the enemy and can hide behind cars or low walls.<br><br>Crouching also helps keep weapons under control, making you more accurate when firing.<br><br>Gameplay Tips!<br><br><li>Crouching behind cars makes for plentiful cover when under fire, but keep an eye on the engine as damaged cars can catch fire and explode!</li><br><li>At long ranges, players can shoot under vehicles to hit you, even if you are crouching. Be careful!</li><br>",
+    "order": 5,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "MovementActions_KickDoor",
+    "title": "Kick a Door",
+    "subtitle": "Put the Boot in!",
+    "body": "<br>Only certain kinds of doors can be opened. Move your cursor over the door and look at the bottom of your screen.<br><br>If you see a door symbol you can open the door. To open a door, approach it and press your <font color=\"#FFAC00\"><binding>DoCSAKeyPressed</binding></font> key.<br><br>Gameplay Tips!<br><br><li><font color=\"#FFAC00\"><binding>DoCSAKeyPressed</binding></font> is the general interaction key, used for most actions in the game.</li><br>",
+    "order": 6,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "MovementActions_Map",
+    "title": "Map Navigation",
+    "subtitle": "Introduction to Cartography",
+    "body": "<br>Press <font color=\"#FFAC00\"><binding>ToggleDistrictMap</binding></font> to open the map for your current district. This can be very useful for finding objectives, group members, or other points of interest.<br><br>Gameplay Tips!<br><br><li>You can toggle options in the Legend to turn specific icons on or off.</li><br>",
+    "order": 7,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Inventory",
+    "title": "Mail and Inventory",
+    "subtitle": "Deep pockets",
+    "body": "<br>This section of the Tutorial will explain how to check your mail, access your inventory, purchase ammo and equip items to your character. As you progress through the game, you will unlock many items for purchase that may suit your playstyle better.",
+    "order": 8,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Inventory_Mailboxes",
+    "title": "Mailboxes",
+    "subtitle": "This ain't snail mail",
+    "body": "<br>Mail sent from your contacts or other players can be retrieved from the Mailboxes that can be found by most Spawn Zones, and at Joker Ammo stores throughout San Paro.<br><br> Follow the blue mail icon on your HUD to find the nearest Mailbox.<br><br> Approach the Mailbox and press the <font color=\"#FFAC00\"><binding>DoCSAKeyPressed</binding></font> key to open the mail interface.<br>",
+    "order": 9,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Inventory_ItemsMail",
+    "title": "Items in Mail",
+    "subtitle": "Hey mister postman",
+    "body": "<br>Congratulations on Completing the Movement and Actions section. As a reward you have received this lovely Field Supplier and some initial spending money. <br><br>Once you have read a message, you can click on the Paperclip icon to retrieve it from the mail.<br>",
+    "order": 10,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Inventory_EquippingModifications",
+    "title": "Equipping Modifications",
+    "subtitle": "All the utility you could want",
+    "body": "<br>Move to an Ammo Zone (near an Ammunition Vending Machine, Contact or Mailbox) and press <font color=\"#FFAC00\"><binding>DoInventoryCSAKeyPressed</binding></font> to open the inventory. If the screen has red padlocks on it you're not in an Ammo Zone.<br><br>Click the Character tab and double click an Empty Slot in the Character Mods frame.<br><br>Select the modification you want on the left side of the screen.<br>",
+    "order": 11,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Inventory_PurchaseAmmo",
+    "title": "Purchase Ammo",
+    "subtitle": "I'm running out of gun food",
+    "body": "<br>When you die or approach an Ammo Zone your currently equipped weapon will consume ammunition from your stockpile to refill itself. When your stockpile empties you will no longer resupply with ammunition.<br><br>To buy more ammunition approach an Ammo Vending Machine and press the <font color=\"#FFAC00\"><binding>DoCSAKeyPressed</binding></font> key. Select the type of ammunition you want to buy and then click Purchase. You can also adjust the amount of ammunition you want to purchase with the slider before purchasing.<br><br>Gameplay Tips!<br><br><li>Stock up on Ammo before Readying up! You'd be surprised how quickly you blow through bullets.</li><br>",
+    "order": 12,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Combat",
+    "title": "Combat",
+    "subtitle": "Learning the ropes",
+    "body": "<br>San Paro is a very dangerous place, and you need to know how to handle yourself if you want to survive here.<br><br>Let's teach you the basics before you get into a real fight.",
+    "order": 13,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Combat_AimYourWeapon",
+    "title": "Marksmanship Mode",
+    "subtitle": "Aim to misbehave",
+    "body": "<br>You can achieve greater accuracy with your weapon by going into Marksmanship Mode. Do this by holding <font color=\"#FFAC00\"><binding>HoldMarksmanship</binding></font>. <br><br>Gameplay Tips!<br><br><li>Some weapons benefit more than others when you enter Marksmanship Mode. Sniper rifles benefit hugely but submachine guns and shotguns barely improve at all.</li><br>",
+    "order": 14,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Combat_SwitchCameraShoulder",
+    "title": "Switch Camera Shoulder",
+    "subtitle": "Check those corners",
+    "body": "<br>You can switch what shoulder your camera is behind by pressing <font color=\"#FFAC00\"><binding>SwitchCameraSide</binding></font>. This can give you a critical advantage over your opposition.<br><br>Use this to check around corners before advancing into unknown territory.<br>",
+    "order": 15,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Combat_Lean",
+    "title": "Leaning",
+    "subtitle": "Lean on me",
+    "body": "<br>When in Marksmanship mode you can lean by pressing <font color=\"#FFAC00\"><binding>LeanLeft</binding></font> or <font color=\"#FFAC00\"><binding>LeanRight</binding> </font>. This will allow you to shoot around corners without exposing your full body.<br>",
+    "order": 16,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Combat_EmptyMagazine",
+    "title": "Empty your Magazine",
+    "subtitle": "Pull the trigger till it goes... click",
+    "body": "<br>Next, we're going to fire your weapon. Hold down <font color=\"#FFAC00\"><binding>Fire</binding></font> to fire your weapon. Keep shooting it until you run out of ammo and have to reload.<br><br>Gameplay Tips!<br><br><li>You can only shoot enemy players with <font color=\"#FF0000\">Red</font> or <font color=\"#FFAC00\">Yellow</font> names.</li><br><li>You can reload manually by pressing <font color=\"#FFAC00\"><binding>ReloadWeapon</binding></font></li><br><li>Fire in bursts at medium/long range to maintain accuracy.</li><br>",
+    "order": 17,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Combat_EquipGrenades",
+    "title": "Equip your Grenades",
+    "subtitle": "It's Boom Time",
+    "body": "<br>It's time to equip the grenades you were sent for completing the Inventory Section (If you haven't yet, you'll need to go back and do this). Go to your Mail to retrieve and equip them in the same way you did the field supplier.<br><br>Gameplay Tips!<br><br><li>Other weapons and modifications can be equipped in the same way.<br><br><li>Killing players with grenades will progress your Grenadier role, giving you access to different types of grenades.</li>",
+    "order": 18,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Combat_ThrowGrenade",
+    "title": "Throw a Grenade",
+    "subtitle": "Just like College Football",
+    "body": "<br>The grenades you received for the previous tutorial section will come in very handy. Throw one by pressing <font color=\"#FFAC00\"><binding>ThrowGrenade_StopFire</binding></font>. Be sure to aim a little higher than where you want to throw it.<br><br>Gameplay Tips!<br><br><li>You can cook the grenade by holding the key down instead. Be careful it doesn't explode in your hand!</li><br>",
+    "order": 19,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Combat_DeployFieldSupplier",
+    "title": "Use your Field Supplier",
+    "subtitle": "Logistics are key",
+    "body": "<br>Press <font color=\"#FFAC00\"><binding>ToggleAmmoCarrierMod</binding></font> to deploy the Field Supplier that you equipped earlier. This will resupply you and any friendly players around you.<br><br>There is a significant cooldown once used, and you are very exposed when using it, so be careful.<br>",
+    "order": 20,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Vehicles",
+    "title": "Vehicles",
+    "subtitle": "Getting from A to B",
+    "body": "<br>Missions can often require you to travel large distances between objectives. This makes vehicles an important way to get around the city. In this section, we'll teach you how to summon your own, drive it around and how to utilise the city's civilian population to get you a replacement if you need it.",
+    "order": 21,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Vehicles_SpawnVehicleOwn",
+    "title": "Spawn a Vehicle of your Own",
+    "subtitle": "Time to Drive",
+    "body": "<br>Vehicle spawners are located throughout the game world - primarily in the garages near each spawn area and at repair stations around the map. Find a Vehicle spawner nearby and approach it.<br><br>Press <font color=\"#FFAC00\"><binding>DoCSAKeyPressed</binding></font> to activate the vehicle spawner and spawn a vehicle.<br><br>Gameplay Tips!<br><br><li>Your starter car is FREE to spawn but later ones can cost CASH each time.</li><br><li>Your first vehicle has a built in Spawn Point, for when you die in a mission. Later you will get vehicles with slots you can place your own modifications in.</li><br>",
+    "order": 22,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Vehicles_DriveVehicle500Meters",
+    "title": "Drive the Vehicle 500 Meters",
+    "subtitle": "Test Drive",
+    "body": "<br>Drive around the city for a while. Get used to how vehicles handle and try out different models. Notice how they all handle differently in different situations.<br><br>Press <font color=\"#FFAC00\"><binding>VehicleForward</binding></font>, <font color=\"#FFAC00\"><binding>VehicleBackward</binding></font>, <font color=\"#FFAC00\"><binding>VehicleLeft</binding></font>, <font color=\"#FFAC00\"><binding>VehicleRight</binding></font> to control the vehicle. <font color=\"#FFAC00\"><binding>Handbrake</binding></font> allows you to put on the handbrake and drift around corners.<br><br>Drive the Vehicle you're in 500 Meters to proceed.<br><br>Gameplay Tips!<br><br><li>Getting to know the layout of the city is critical to a successful career in San Paro. You'll see the name of the area you are currently in below your radar, located on the lower right of your screen. Drive around. Get to know the place. </li><br><li><font color=\"#FFAC00\"><binding>IndicatorLeft</binding></font>/<font color=\"#FFAC00\"><binding>IndicatorRight</binding></font> will toggle your indicators. Be a considerate driver.",
+    "order": 23,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Vehicles_Commandeer",
+    "title": "Commandeer a Vehicle",
+    "subtitle": "My need is greater than yours",
+    "body": "<br>All pedestrian vehicles can be commandeered. Approach the vehicle and press the <font color=\"#FFAC00\"><binding>DoCSAKeyPressed</binding></font> key when standing near the side of the vehicle.<br><br>Your character will then move to commandeer the vehicle.<br><br>Gameplay Tips!<br><br><li>Every vehicle type has its own benefits and downsides. Sports cars are fast, but don't expect them to hold up in a fire-fight.</li><br><br><li>You can also find parked cars around the city. Interacting with them will cause you to break in and take them.</li><br>",
+    "order": 24,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Vehicles_Hijack",
+    "title": "Hijack a Vehicle",
+    "subtitle": "My need is greater than yours",
+    "body": "<br>All pedestrian vehicles can be hijacked. Approach the vehicle and press the <font color=\"#FFAC00\"><binding>DoCSAKeyPressed</binding></font> key when standing near the side of the vehicle.<br><br>Your character will then move to hijack the vehicle.<br><br>Gameplay Tips!<br><br><li>Every vehicle type has its own benefits and downsides. Sports cars are fast, but don't expect them to hold up in a fire-fight.</li><br><br><li>You can also find parked cars around the city. Interacting with them will cause you to break in and take them.</li><br>",
+    "order": 25,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Missions",
+    "title": "Missions",
+    "subtitle": "Reporting for duty",
+    "body": "<br>Missions are the core of the game, putting you up against other players in fights that rage throughout the district. They are given by contacts, and completing them will award you standing with these contacts that will unlock new items for you to buy. We will teach you how to pledge to Contacts and start missions, as well as how to deal with any opposition you find along the way.",
+    "order": 26,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Missions_PledgeContact_Enf",
+    "title": "Pledge to a Contact",
+    "subtitle": "Pledge of allegiance",
+    "body": "<br>Pledging to Contacts allows you to receive missions; your primary form of progression. Find <font color=\"#FFAC00\">Violet Prentiss</font> or <font color=\"#FFAC00\">Ty Durrant</font> and press <font color=\"#FFAC00\">F</font> on them to open their screens. Click the pledge button to give them your allegiance. This is also possible by pressing <font color=\"#FFAC00\"><binding>TogglePlayerInfoUI</binding></font> and double-clicking their name in the progression list.<br><br>Gameplay Tips!<br><br><li>You can review what rewards a contact will give you from the Pledge Window.</li><br><li>Completed contacts will refer you to new contacts for more rewards.</li><br><li>If you forget to pledge, don't worry. You will be automatically pledged to a random contact you have unlocked.</li><br>",
+    "order": 27,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Missions_PledgeContact_Crim",
+    "title": "Pledge to a Contact",
+    "subtitle": "Oh captain my captain",
+    "body": "<br>Pledging to Contacts allows you to receive missions; your primary form of progression. Find <font color=\"#FFAC00\">Veronika Lee</font> or <font color=\"#FFAC00\">Strega Bloodrose</font> and press <font color=\"#FFAC00\">F</font> on them to open their screens. Click the pledge button to give them your allegiance. This is also possible by pressing <font color=\"#FFAC00\"><binding>TogglePlayerInfoUI</binding></font> and double-clicking their name in the progression list.<br><br>Gameplay Tips!<br><br><li>You can review what rewards a contact will give you from the Pledge Window.</li><br><li>Completed contacts will refer you to new contacts for more rewards.</li><br><li>If you forget to pledge, don't worry. You will be automatically pledged to a random contact you have unlocked.</li><br>",
+    "order": 28,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Missions_DailyActivities_Enf",
+    "title": "Daily Activities",
+    "subtitle": "An apple a day",
+    "body": "<br>Once completed, Contacts will offer you daily activities that will reward you with a special currency, Joker Tickets. Talk to <font color=\"#FFAC00\">Wilson Leboyce</font> to get your initial Daily Activity.<br><br>Gameplay Tips!<br><br><li>Most Daily Activities require a mission to complete. You will learn about that shortly.</li><br><li>Daily Activities refresh at midnight. Come back tomorrow for more.</li><br><li>Joker Tickets can be redeemed at the Distribution Center in Breakwater Marina (Social District).</li><br>",
+    "order": 29,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Missions_DailyActivities_Crim",
+    "title": "Daily Activities",
+    "subtitle": "An apple a day",
+    "body": "<br>Once completed, Contacts will offer you daily activities that will reward you with a special currency, Joker Tickets. Talk to <font color=\"#FFAC00\">Double-B</font> to get your initial Daily Activity.<br><br>Gameplay Tips!<br><br><li>Most Daily Activities require a mission to complete. You will learn about that shortly.</li><br><li>Daily Activities refresh at midnight. Come back tomorrow for more.</li><br><li>Joker Tickets can be redeemed at the Distribution Center in Breakwater Marina (Social District).</li><br>",
+    "order": 30,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Missions_GoReady",
+    "title": "Go Ready",
+    "subtitle": "Ready up noob",
+    "body": "<br>Ready up by pressing <font color=\"#FFAC00\"><binding>ToggleReadyForMissions</binding></font>.<br><br>WHEN NOT READY, YOU WILL NOT GET INTO MATCHES AGAINST OTHER PLAYERS.<br><br>Once you are ready, you will be available for automatic matchmaking. You will now, after a few moments, be brought into a match against other players. Remember! <font color=\"#C60000\">RED</font> names are Enemies, <font color=\"#14FF00\">GREEN</font> names are Teammates and FRIENDLY FIRE is ALWAYS on! Shoot at the <font color=\"#C60000\">RED</font> names.</u><br><br>Good luck!<br><br>Gameplay Tips!<br><br><li>Don't ready up until you're actually ready! Make sure you have ammo and are ready to rock. Don't AFK in a match!</li><br>",
+    "order": 31,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Missions_StartMission",
+    "title": "Start a Mission",
+    "subtitle": "Good things come",
+    "body": "<br>Once you are ready, we will look for any opposition to dispatch you against. This will group you up with other team members that are also ready and waiting.<br><br>It can sometimes take a short while for us to find something that is right for you, so be patient.<br>",
+    "order": 32,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Missions_GetOpposition",
+    "title": "Get Opposition",
+    "subtitle": "Shit just hit the fan",
+    "body": "<br>When you get a mission, sometimes it will take a while for the opposition to get into gear and send some guys to try to stop you.<br><br>Use the available time to complete as many mission objectives as possible. Once you get the APB though, be ready to get into a fight. Opponents that are trying to kill you will have <font color=\"#C60000\">Red</font> names.<br><br>Kill them first!<br>",
+    "order": 33,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Missions_CompleteMissionObjective",
+    "title": "Capture or Assist an Objective",
+    "subtitle": "Do your part",
+    "body": "<br>Every mission in APB Reloaded is based around Mission Objectives. Press <font color=\"#FFAC00\"><binding>DoCSAKeyPressed</binding></font> on any orange objective to activate it.<br><br>If you are nearby a teammate that is activating it, you get a bonus for helping to guard him. There are several kinds of mission objective:<br><br><li><font color=\"#FF6600\">Orange</font> markers are things you must ATTACK.</li><br><li><font color=\"#0978FF\">Blue</font> markers are things that you must DEFEND. </li><br><li><font color=\"#9815C4\">Purple</font> markers are items that must be PICKED UP.</li><br><li><font color=\"#595959\">Gray</font> markers are things that are NOT HELD by ANYONE and should be CAPTURED.</li><br>",
+    "order": 34,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Missions_KillEnemyPlayer",
+    "title": "Help Kill an Enemy Player",
+    "subtitle": "Shoot dammit",
+    "body": "<br>As you will probably have noticed by now, you can't damage just anyone in APB Reloaded. You must become opposed to your enemy before you can hurt them.<br><br>Once you're in a mission look for people with <font color=\"#C60000\">RED</font> names and shoot them, BUT DON'T SHOOT AT THE <font color=\"#14FF00\">GREEN</font> NAMES! If you wound a player that then dies, you will be awarded points equal to the percentage of damage you caused him, up to a maximum of 85.<br><br>Gameplay Tips!<br><br><li>You have regenerating health. If you're hurt, take cover and hide until you heal up. When you're at full health you will hear a short beep.</li><br>",
+    "order": 35,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Missions_FinishMission",
+    "title": "Finish a Mission",
+    "subtitle": "It's over",
+    "body": "<br>Missions are made up of various stages. When you complete the final stage of the mission, the outcome is determined, granting your team a WIN, LOSE or TIE. The score you gained during the mission will determine any bonus rewards in cash and standing you will receive.<br><br>Gameplay Tip!<br><br><li>Winning feels great, but you can’t win all the time.<br><br>Learn from every defeat. Regroup, Rearm and Retry.</li><br>",
+    "order": 36,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Social",
+    "title": "Social",
+    "subtitle": "Shoot the breeze",
+    "body": "<br>The Social District is a tranquil place where there's no danger and no missions to partake in. While it can be used to chill out, chat to friends and show off your cool creations, primarily it's a place to customize.<br><br>This section will teach you how the basic customization editors work. Keep an eye out for the more advanced ones.<br>",
+    "order": 37,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Social_JoiningSocial",
+    "title": "Joining Social",
+    "subtitle": "Let your hair down",
+    "body": "<br>In order to customize anything on your character you need to head to the Social District. To access Social District from any district press <font color=\"#FFAC00\">ESCAPE</font> and select <font color=\"#FFAC00\">District Select</font>.<br><br>You'll see the screen above. Click Social and then click Join District.<br><br>Gameplay Tips!<br><br><li>Social is a magical place where no one fights. The billboards are a little weird though.</li><br>",
+    "order": 38,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Social_CreateSymbolSymbolDesigner",
+    "title": "Create a Symbol in the Designer",
+    "subtitle": "Paint a pretty picture",
+    "body": "<br>Creating a personalized symbol can really set your character apart. Head to a symbol customisation kiosk (the light blue ones) in the Social District and press <font color=\"#FFAC00\"><binding>DoCSAKeyPressed</binding></font> to activate it. When you open the symbol designer you'll see a menu that says Load Symbol at the top. If this is your first time in the Symbol Designer just click the only icon available to you. You'll then be taken into the Designer screen. On the left of the screen you can see your symbol pallet. This contains all the symbols that are available to you. You can click and drag any symbol from there onto the canvas. With the menu on the right side of the screen you can change the layering on all the symbols you've placed and apply effects (such as outline, gradients and masks).<br><br>You can use the menu at the bottom of the screen to change the coloration of the symbol you have selected in your Layers menu and the background color of the palette to see how your symbol will look when used as a tattoo. The menu at the top of the screen allows you to move, rotate and resize symbols. Try them all and see what they do. Experiment and see what you can come up with!<br><br>To save your symbol click the Menu drop down in the top right of the screen and click 'Save.' You can exit the Symbol Designer at any time by pressing the close button in the top right of the screen.<br><br>Gameplay Tips!<br><br><li>The symbol designer can take a bit of getting used to but it's really powerful once you get to know it. Play around with it and explore!</li><br><li>You can save out copies of symbols by using the Save As command.</li><br><li>Please note: Reloaded Productions and GamersFirst reserve the right to remove symbols with offensive content.</li><br>",
+    "order": 39,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Social_CustomizeItemClothingWardrobe",
+    "title": "Customize an Item in the Wardrobe",
+    "subtitle": "Clothes maketh the man",
+    "body": "<br>In APB what you do is only as important as how good you look as you're doing it. Head to a Clothing customization kiosk (the purple ones) in the Social District and press <font color=\"#FFAC00\"><binding>DoCSAKeyPressed</binding></font> to activate it. Once opened, on the left side of the screen is a list of your clothing. Select an item of clothing that can be customized (typically anything with a nickname, such as 'Training Day' or 'Newborn', can not be customized as they are preset) and click the Customize button. You'll be taken to another menu that looks like the one below. Your menu will have different text labels and a different description but they should be close enough! From this panel you can change the color of the different parts of your outfit.<br><br>Select one of the sections from the menu and then use the color palette, the dropper or the # symbol to change the color. Once you're happy with the basic color of your item of clothing you can click the Star icon next to the paint brush to apply symbols to your clothing. Click the plus symbol to add a symbol to your outfit. Through effective and creative use of symbols you can do almost anything with your outfits so spend some time making something that looks great!<br><br>You can use the menu on the right side to change the position, shape and size of symbols. Try the different commands to see what they can do. Once you're happy click Save and then close the Wardrobe Editor.<br><br>Gameplay Tips!<br><br><li>Use the right mouse button to rotate around your character. In some camera views (which can be selected on the right side of the screen) you can zoom and track the camera with the middle mouse button and the left mouse button respectively.</li><br><li>Sometimes you'll need to 'reproject' your symbols back onto your character. Click the Reproject button to reproject.</li><br><li>You unlock more clothing by progressing with contacts.</li><br>",
+    "order": 40,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Social_CustomizeVehicleGarage",
+    "title": "Customize a Vehicle in the Garage",
+    "subtitle": "Grease on the overalls",
+    "body": "<br>You can customize the appearance of your vehicle by heading to a Garage Kiosk in the Social District and pressing <font color=\"#FFAC00\"><binding>DoCSAKeyPressed</binding></font> to activate it. Once you're inside the Garage Editor you'll see your available vehicles. Preset vehicles can not be customized. Select a non-preset vehicle or your 'starter' vehicle and click Customize.<br><br>The four tabs on the left side of the screen will allow you to edit vehicle components, the color of your vehicle, place symbols on your vehicle and change the license plate of your vehicle. Click through them all and see what options are available to you. Changing the color of individual parts of your vehicle uses the same process as changing the color of clothing parts. Applying decals is the same process as with clothing customization but there are a few extra options such as the ability to mirror decals from one side of the vehicle to the other. You can preview your vehicle's engine sound, horn and (if you're an enforcer) the sound of its siren by moving your mouse to the top right of the screen.<br><br>From the top right of the screen you can also change the camera angle to one of the preset views that are available. Save your changes to your vehicle by clicking Save.<br><br>Gameplay Tips!<br><br><li>You can purchase new vehicle kits from the Joker Store and from the Armas Marketplace.</li><br><li>Sometimes you'll need to 'reproject' your symbols back onto your vehicle to make them appear correctly. Click the Reproject button in the symbol control panel in the bottom right to do this.</li><br>",
+    "order": 41,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Social_PerformEmote",
+    "title": "Perform an Emote",
+    "subtitle": "It's ok to cry",
+    "body": "<br>You can perform emotes by either typing the name of the emote into chat and prefacing it with a / (e.g. /wave ) or by pressing <font color=\"#FFAC00\"><binding>OpenEmoteCommands</binding></font> and then selecting the emote you want to perform and pressing enter. Emotes can be awarded by contacts randomly after missions, with higher chances the better your score.<br><br>Gameplay Tips!<br><br><li>You can also buy access to emotes through Armas Marketplace.</li><br><li>You can cancel out of doing an emote by moving your character.</li><br>",
+    "order": 42,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Advanced",
+    "title": "Advanced",
+    "subtitle": "Mastering the arts",
+    "body": "<br>Once you've learned the basics it's time to get stuck in to the more advanced stuff. This category of tutorials don't cover basic functionality, instead focusing on the more in-depth parts of APB.<br><br>Advanced Categories reward Joker Tickets, a rare currency that can be used to buy exclusive items from Joker Distribution in Breakwater Marina (Social District).",
+    "order": 43,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Armas",
+    "title": "Armas Marketplace",
+    "subtitle": "Lets go shopping!",
+    "body": "<br>The Armas Marketplace is APB's Cash Shop, allowing you to purchase all manner of things, from unique weapons, vehicle kits and clothing assets to Premium Membership and the chance to win legendary items.",
+    "order": 44,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Armas_TrialWeapon",
+    "title": "Redeem a Trial weapon",
+    "subtitle": "Try before you buy!",
+    "body": "<br>There are numerous ways to access Armas Marketplace, one way is to press <font color=\"#FFAC00\">ESCAPE</font> to bring up the option menu and select Armas Marketplace. You can also access the marketplace from Mailboxes and in the Inventory.<br>Browse around the marketplace and find a Trial weapon. These are free weapons that you can try every so often when they come on sale, and are a good way to see if you like a gun before splashing some cash, or simply as a bit of a freebie. Items purchased from Armas will appear in your Mail.<br><br>Gameplay Tips!<br><br><li>Most of the weapons on Armas are also available through Joker Distribution in the Social District.</li><br><li>Armas weapons are different, but aren't 'better'.</li>",
+    "order": 45,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Criminal",
+    "title": "Criminal Faction Activities",
+    "subtitle": "I fought the law...",
+    "body": "<br>Other than missions, there are a number of ways to exploit the citizens of San Paro for personal gain. This section will help you get started on the road to making your fortune.",
+    "order": 46,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Criminal_MugLC",
+    "title": "Mug a Pedestrian",
+    "subtitle": "Like a pinata",
+    "body": "<br>Criminals can Mug the residents of San Paro. To do this, approach a pedestrian in the street and press <font color=\"#FFAC00\"><binding>DoCSAKeyPressed</binding></font>.<br>A progress indicator will appear and once complete, the target will surrender cash or valuables. To pick these up, press <font color=\"#FFAC00\"><binding>DoCSAKeyPressed</binding></font>. Any valuable items recovered will be added to your carried objects.<br><br>Gameplay Tips!<br><br><li>Be on the lookout: if an Enforcer witnesses you mugging someone, they might phone it in.</li><br><li>Items recovered by mugging can be fenced at mission contacts for quick cash. This cash can then be laundered, but we'll cover this a little later in the tutorial.</li><br>",
+    "order": 47,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Criminal_RamRaidShop",
+    "title": "Ram Raid a Shop",
+    "subtitle": "Smash and Grab",
+    "body": "<br>Criminals can Ram Raid certain stores and fence the stolen goods for quick cash. These are identifiable by the goods on display in the window and the Ram Raid icon that shows when hovering over the window.<br>Drive your vehicle into the window to smash it and gain access to the loot. Pick up loot items by pressing <font color=\"#FFAC00\"><binding>DoCSAKeyPressed</binding></font>.<br>Transport the loot to the trunk of your vehicle, press <font color=\"#FFAC00\"><binding>DoCSAKeyPressed</binding></font> to load it into the trunk then bring it to a Fence or any Contact for a cash reward.<br><br>Gameplay Tips!<br><br><li>Look out for Enforcers if you're planning to Ram Raid a store. If they witness you, you're going to have a bad time.</li><br><li>Large items are heavy, slowing you from running at full speed. There is also limited space in a vehicles trunks for these items, some vehicles can hold a lot more than others</li><br><li>If you load items into a vehicle you don't own, it can be stolen along with the loot!</li><br>",
+    "order": 48,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Criminal_DeliverItemsContact",
+    "title": "Deliver Items to a Contact",
+    "subtitle": "Drop off!",
+    "body": "<br>Once you have several items in your possession proceed to a contact from your faction. The contact will then convert the items into money that goes in your Stash.<br><br>This money can now be taken to a money laundry so it can be added to your character's cash total.<br><br>Gameplay Tips!<br><br><li>Remember, you can be witnessed by Enforcers while doing this so be quick!</li><br>",
+    "order": 49,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Criminal_Reach2500Stash",
+    "title": "Reach $2500 Stash",
+    "subtitle": "Payday",
+    "body": "<br>Use mugging and ram raiding to bring your total Stash amount up to $2500. Once you have $2500 you will be witnessable by any enforcers at all times, so try and keep out of sight. The value of all items you currently have, including on your person and in your vehicle, count towards ths total in addition to your stash money.<br><br>Gameplay Tips!<br><br><li>You can also steal vehicles and drop them off at Chop Shops located around the city for Stash money. More expensive vehicles and those in better condition are more lucrative.</li><br><li>Your Stash will be lost when you change districts or log out, so be sure to drop it off before you leave San Paro.</li>",
+    "order": 50,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Criminal_DropStash",
+    "title": "Drop off your Stash",
+    "subtitle": "Cash in your chips",
+    "body": "<br>Now that you've got a lot of money in your stash, head to a Money Laundry and turn over your stash.<br><br>Hand over the stash that you've built and you'll be given the cash for it and your notoriety will be returned to zero. If you are in a group, money gained is split amongst everyone in that group, so any team-member dropping off a stash will complete this event.<br><br>You can find Money Laundries around the city by opening your map and selecting Money Laundry from the Legend menu.<br><br>Gameplay Tips!<br><br><li>The higher your notoriety, the more money you will get when you drop off your stash.</li><br><li>Enforcers will often loiter at these locations looking for high value targets so be very careful!</li><br>",
+    "order": 51,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Criminal_Get4xNotorietyMultiplier",
+    "title": "Get a 4x Notoriety Multiplier",
+    "subtitle": "Bad to the Bone",
+    "body": "<br>As you commit crimes, your Notoriety will increase, which will increase the rewards you receive. You can tell how many 'stars' your notoriety is by looking in the top left of your screen.<br><br>You can hit notoriety 4 by committing crimes against the city. Your notoriety will slowly drop over time or if you kill teammates. Reach Notoriety 4.<br><br>Gameplay Tips!<br><br><li>Don't go over Notoriety 4 just yet! When you do, you'll become PVP unlocked to everyone in the district!</li><br>",
+    "order": 52,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Criminal_ReachHeatLevel5",
+    "title": "Reach Notoriety 5",
+    "subtitle": "Most Wanted",
+    "body": "<br>Most actions you perform will affect your Notoriety. Killing Enforcers is the fastest way to reach Notoriety 5. <br><br>When you hit Notoriety 5, you will be targeted by every Enforcer in the district, so kill 'em before they can kill you.<br><br>Gameplay Tips!<br><br><li>You get a massive increase to your kill rewards in this mode, make the most of it.</li>",
+    "order": 53,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Criminal_KillHeat5EnemyPlayer",
+    "title": "Kill a Prestige 5 Enforcer",
+    "subtitle": "Bounty Hunter",
+    "body": "<br>As you play APB Reloaded you'll see notifications that an Enforcer has reached Prestige 5. Open your map and look for that player's name on the map.<br><br>Track them down and kill them before anyone else can for a big reward!<br><br>Gameplay Tips!<br><br><li>5 Star Players are usually 5 Stars for a reason! This won't be an easy kill.</li><br>",
+    "order": 54,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Enforcer",
+    "title": "Enforcer Faction Activities",
+    "subtitle": "Protect and Serve",
+    "body": "<br>Crime-fighting is not limited just to missions. This section will help teach you how to track and take down criminals attempting to steal from the shops and citizens of San Paro, along with recovering stolen goods.",
+    "order": 55,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Enforcer_LocateStolenVehicleDeliver",
+    "title": "Find and Deliver a Stolen Vehicle",
+    "subtitle": "Return to Owner",
+    "body": "<br>As an Enforcer, it's your job to help keep the peace in San Paro. Criminals will often steal vehicles and leave them lying around the city, such as the one pictured above.<br><br>Notice that it says the vehicle is Usable - Stolen. This means that a Criminal player has recently used the vehicle. Find a stolen vehicle and enter it. When you do, vehicle impounds will show up on your map. <br><br>Take the vehicle to an impound (if the vehicle has been damaged on the way, take it to a gas station for repairs) and turn it over. You will then be given some cash for returning the vehicle to its rightful owner.<br><br>Gameplay Tips!<br><br><li>Some vehicles are worth more than others. Try and find expensive stolen vehicles!</li><br>",
+    "order": 56,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Enforcer_DropStash",
+    "title": "Drop off a >$500 Stash",
+    "subtitle": "Delivering the Evidence",
+    "body": "<br>As you gather money as an Enforcer you'll notice that your Stash is increasing. Check the cash total in the top left of your screen to see what your stash is.<br><br>Return stolen vehicles or stolen loot to lockups to get money for your stash. Gather over $500 Stash without witnessing a criminal and then hand it in at an Evidence vault. <br><br>Gameplay Tips!<br><br><li>You can find evidence vaults by pressing <font color=\"#FFAC00\"><binding>ToggleDistrictMap</binding></font> to open the map and selecting Evidence Vault from the Legend.</li>",
+    "order": 57,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Enforcer_WitnessCriminalPlayer",
+    "title": "Witness a Criminal Player",
+    "subtitle": "Caught in the act",
+    "body": "<br>If you see a criminal player doing something that looks illegal then move your mouse cursor over them. If your reticle turns orange you can press <font color=\"#FFAC00\"><binding>Witness</binding></font> to witness them and begin an opposed mission against them.<br><br>Witness mission do not give you standing but they do give you a chance of taking that player's current stash. Since the Enforcer controls when the Witness Mission begins, you get to wait for the Criminal to be in an exposed position before attacking.<br><br>Pick your moment and pick your weapon before striking!<br><br>Gameplay Tips!<br><br><li>You have to get the Stash Money from the Criminal and take it to your Drop-Off during this mission. Grab it and go!</li><br>",
+    "order": 58,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Enforcer_StunArrestCriminalPlayer",
+    "title": "Stun and Arrest a Criminal Player",
+    "subtitle": "Miranda Rights",
+    "body": "<br>Crowd Control Guns (Unlocked from Ty Durrant) allow you to Stun criminals.<br><br>Buy one and shoot at an enemy to stun them. Once stunned, approach them quickly and press <font color=\"#FFAC00\"><binding>DoCSAKeyPressed</binding></font> to arrest them. Careful, less than lethal rounds are not as effective as bullets, so this will be challenging.<br><br>Gameplay Tips!<br><br><li>You can buy Handcuffs that speed up the rate at which the arresting progress bar is filled.</li><br><li>You can get better Crowd Control weapons by arresting players to progress the Cop Role.</li><br>",
+    "order": 59,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Enforcer_Get4xPrestigeMultiplier",
+    "title": "Get a 4x Prestige Multiplier",
+    "subtitle": "Model Officer",
+    "body": "<br>As you perform duties, your Prestige will increase, which will increase the rewards you receive. You can tell how many 'stars' your Prestige is by looking in the top left of your screen.<br><br>You can hit Prestige 4 by witnessing and Killing criminals. Your Prestige will drop if you perform any crimes, such as killing pedestrians or killing teammates. Prestige of less than 2 heavily reduces rewards. Prestige will very slowly drop if you are above Prestige 2 or rise if you are below. Reach Prestige 4.<br><br>Gameplay Tips!<br><br><li>Don't go over Prestige 4 just yet! When you do, you'll become PVP unlocked to everyone in the district!</li><br>",
+    "order": 60,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Enforcer_ReachHeatLevel5",
+    "title": "Reach Prestige 5",
+    "subtitle": "Decorated Officer",
+    "body": "<br>Most actions you perform will affect your Prestige. Killing or arresting Criminals is the fastest way to reach Prestige 5. <br><br>When you hit Prestige 5, you will be targeted by every Criminal in the district, so kill 'em before they can kill you.<br><br>Gameplay Tips!<br><br><li>You get a massive increase to your kill rewards while in this mode, make the most of it.</li>",
+    "order": 61,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Enforcer_KillHeat5EnemyPlayer",
+    "title": "Kill a Notoriety 5 Criminal",
+    "subtitle": "Bounty Hunter",
+    "body": "<br>As you play APB Reloaded you'll see notifications that another player has reached Heat 5. Open your map and look for that player's name on the map.<br><br>Track them down and kill them before anyone else can for a big reward!<br><br>Gameplay Tips!<br><br><li>5 Star Players are usually 5 Stars for a reason! This won't be an easy kill.</li><br>",
+    "order": 62,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "AdvancedCombat",
+    "title": "Advanced Combat",
+    "subtitle": "Standing Tall",
+    "body": "<br>Killing isn't always easy, and if you want to stay ahead of the game, it's best to learn some advanced techniques. This section of the tutorial will show you how to kill more efficiently.",
+    "order": 63,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "AdvancedCombat_CookGrenade",
+    "title": "Cook a Grenade",
+    "subtitle": "Hot Potato",
+    "body": "<br>Cook a Grenade for 2 seconds. You can hold onto a grenade as it cooks through its fuse. This allows you to get a greater amount of control over when a grenade explodes which can help with blowing up enemies that are on the move.<br><br>To cook a Grenade, press and hold <font color=\"#FFAC00\"><binding>ThrowGrenade_StopFire</binding></font>. Then release before it beeps continously. Watch out though! Grenades can explode in your hand and do a huge amount of damage to you.<br><br>Gameplay Tips!<br><br><li>You can cook all kinds of grenade but some are worth cooking more than others - Percussion grenades, for example, explode on impact regardless of if they've been cooked or not.</li><br><li>Judging distance and fuse time is a skill that's learned over a long period of time. Don't worry if you don't get it right the first time.</li><br>",
+    "order": 64,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "AdvancedCombat_KillEnemyPlayerGrenade",
+    "title": "Kill an Enemy with a Grenade",
+    "subtitle": "One... two... five...",
+    "body": "<br>Throw a Grenade at an enemy with the <font color=\"#FFAC00\"><binding>ThrowGrenade_StopFire</binding></font> key. Different Grenades will deal different amounts of damage and have different explosive types. Try to cook the grenade before throwing it or use it to finish your enemy off after hurting them with your main weapons first!<br><br>Gameplay Tips!<br><br><li>To get a little extra range with a grenade, angle up higher and jump. Release the grenade at the apex of your jump and the grenade will go further.</li><br><li>Try using a grenade to flush an enemy out of cover!</li><br>",
+    "order": 65,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "AdvancedCombat_KillEnemyPlayerPrimarySecondary",
+    "title": "Kill one Enemy with Two Weapons",
+    "subtitle": "The old switcharoo",
+    "body": "<br>Secondary weapons are very effective against other players, and sometimes it's better to switch to a secondary to finish someone off rather than reloading or if they move out of effective range of your primary.<br><br>Kill another player with a combination of Primary and Secondary weapons by hitting an enemy with your primary first and then your secondary second.<br><br>Gameplay Tips!<br><br><li>There's no locational damage. Shooting someone in the foot is just as good as shooting them in the head so aim for center-mass for maximum accuracy!</li><br>",
+    "order": 66,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "AdvancedCombat_KillEnemyPlayerRunningOver",
+    "title": "Run over an Enemy",
+    "subtitle": "Roadkill",
+    "body": "<br>As well as their normal uses, Vehicles can make very effective weapons. Get in a car and run someone over with it. <br><br>Gameplay Tips!<br><br><li>Try to catch them unaware or when they're distracted.</li><br><li>It's easier to run people down with faster cars, but their low profile can mean they can be jumped over if your target is skillful.</li><br>",
+    "order": 67,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "AdvancedCombat_KillPlayer_AssaultRifle",
+    "title": "Kill an Enemy with an Assault Rifle",
+    "subtitle": "My little friend",
+    "body": "<br>Assault Rifles are very much the Jack of All Trades when it comes to weapons. Don't be expecting to win fights against shotguns point blank, or win sniper duels, but the Assault Rifles are decent at most ranges and are kings of the 30-50m ranges.<br><br>Gameplay Tips!<br><br><li>If you're considering spraying at close range, crouching both increases your accuracy and lowers your profile for any return fire.</li><br><li>Watch your accuracy. Assault rifles lose accuracy quickly when fired, but recover at a rapid rate. Burst at medium range and tap at long range</li><br><li>Assault Rifles start losing damage at 50m. If your enemy is in the far distance, don't even bother shooting, you'll just warn the enemy. Close the gap and exploit your weapon's strengths.</li>",
+    "order": 68,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "AdvancedCombat_KillPlayer_SniperRifles",
+    "title": "Kill an Enemy with a Sniper",
+    "subtitle": "Slow is smooth, smooth is fast",
+    "body": "<br>King of the extreme ranges, Sniper Rifles deal substantial amounts of damage at a very low fire rate. Be sure to take your time and ensure your shots hit, as you'll be waiting a while if you miss. <br><br>Gameplay Tips!<br><br><li>Snipers are ideal both for support and picking off wounded soldiers. The HVR-762 especially can almost kill a person in one shot. Consider adding a tagger when you unlock it (available earlier from the Joker Store) to let your teammates know you've hit a target.</li><br><li>The DMR does more damage the further away from a target you are. Upwards of 88m it's a 2 shot kill.</li><br><li>Grab a close-range secondary when you can as you are very fragile if someone closes the distance. Be aware that once you fire a shot with the HVR series you cannot switch weapon until you re-bolt the weapon.</li>",
+    "order": 69,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "AdvancedCombat_KillPlayer_LMG",
+    "title": "Kill an Enemy with an LMG",
+    "subtitle": "A one-man war",
+    "body": "<br>Massive amounts of ammo make LMGs the perfect suppressive weapon, allowing you to take out many enemy players per magazine. When other weapons start running low, you can be just getting started. High effective range also makes these weapons useful at a distance, as long as you can control the high recoil.<br><br>Gameplay Tips!<br><br><li>While the ALIG will drop an enemy player easily enough, it's real strength lies as an anti-vehicle weapon.</li><br><li>Don't be afraid to spray a bit with the SHAW, you've got the ammo to spare.</li><br><li>LMGs are very inaccurate on the move, fire from a static position then switch to your sidearm when you want to move.",
+    "order": 70,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "AdvancedCombat_KillPlayer_Rifle",
+    "title": "Kill an Enemy with a Rifle",
+    "subtitle": "For fighting AND fun",
+    "body": "<br>Between the ranges of Assault Rifles and Sniper Rifles lies Marksmanship Rifles. These are long range weapons that excel up to 70m against a range of targets. Unlike snipers they fire reasonably fast so can be used to take down or suppress multiple long-range targets at a time.<br><br>Gameplay Tips!<br><br><li>Carbine Rifles, such as the OSCAR and the SR15 Carbine are accurate at short-medium range when fired from the hip, but not nearly as powerful at long range.</li><br><li>You have much more maneuverability than a sniper. When in a duel use this to your advantage.</li><br><li>Rifles tend not to be very good against cars, so don't bother trying to shoot them unless you've got some time on your hands.</li><br><li>Team up with an HVR-762 for the perfect long range kill-team.</li>",
+    "order": 71,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "AdvancedCombat_KillPlayer_SMG",
+    "title": "Kill an Enemy with an SMG",
+    "subtitle": "Ho. Ho. Ho.",
+    "body": "<br>Spray, don't pray. SMGs are high fire rate, low accuracy weapons that excel in close-quarters. While they have a very fast time to kill, their low accuracy means you need to stay alive and get close to the enemy in order to be effective. Dodge, duck and stealth your way until you are within 20m of your enemy, then empty your magazine before they know what's hit them.<br><br>Gameplay Tips!<br><br><li>You need to minimise damage taken as you get close. Use back-alleys and vehicles to avoid enemy lines of sight until you are ready to kill.</li><br<li>Shotguns are very dangerous to you, but SMGs kill slightly faster. In a straight duel you should win as long as you aim well, are bold, and press your advantage.</li><br><li>Strafing side to side while firing at your target will help mitigate incoming damage.</li>",
+    "order": 72,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "AdvancedCombat_KillPlayer_Shotguns",
+    "title": "Kill an Enemy with a Shotgun",
+    "subtitle": "Kept for close encounters",
+    "body": "<br>Shotguns are the undisputed kings of the back alleys, where cover abounds and ranges are often point blank. A close range shotgun shot will almost kill any player, and a sustained burst from an automatic shotgun will test the nerves of even the most hardly enemy combatant.<br><br>Gameplay Tips!<br><br><li>It takes time to rack the pump-action shotguns between attacks. Sprint behind cover between shots.</li><br><li>The pump-action shotguns are effective at around 15m, and the NFAS at around 10. Get close before firing to maximise the initial damage.</li><br></li>A long ranged pistol like the Colby RSA is a perfect accompaniment to a shotgun.",
+    "order": 73,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "AdvancedCombat_KillPlayer_Secondary",
+    "title": "Kill an Enemy with a Sidearm",
+    "subtitle": "There was a fire-fight!",
+    "body": "<br>Don't take sidearms for granted. Unlike in most games, APB's selection of secondary weapons are lethal. They can and will annihilate most primary weapons if you manage to catch them outside of their specialist ranges.<br><br>Gameplay Tips!<br><br><li>Your starting Obeya-FBW is a very powerful weapon in its own right. Use it to your advantage, and don't underestimate it in an enemies hands.</li><br><li>Consider paring a long range primary with a short range secondary, or vice versa, to cover your weaknesses.</li>",
+    "order": 74,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "AdvancedMissions",
+    "title": "Advanced Missions",
+    "subtitle": "Whatever it takes",
+    "body": "<br>Taking part is all well and good, but if you want to get ahead you'll want to start winning some missions. This section explains how MVP status, winning missions, and gaining medals affects your Score, and how Score affects your rewards.",
+    "order": 75,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "AdvancedMissions_WinMission",
+    "title": "Win a Mission",
+    "subtitle": "Proving your worth",
+    "body": "<br>Winning a mission will give you more cash and standing rewards than losing or drawing the mission. Win a mission by completing the stages as described in the mission text and as shown on your HUD.<br><br>Use everything you've learned so far to play with your team, go for the objective and take the victory.<br><br>Gameplay Tips!<br><br><li>Winning isn't everything; it's the only thing. </li><br>",
+    "order": 76,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "AdvancedMissions_WinMissionScoreX",
+    "title": "Win a Mission with 1000 Score",
+    "subtitle": "Earn your way",
+    "body": "<br>Whenever you do anything in a mission that contributes to the mission progressing (killing an enemy, attacking a location, defending someone that's assaulting an objective and so on) you get Score.<br><br>Score determines how well you did in a mission and also contributes to the reward you get at the end of a mission. Score also determines what happens to your Threat as you play missions (what servers you can access and who you get matched up against is determined by your Threat). Think of Threat as how badass you are.<br><br>Win a Mission with a Score greater than 1000.<br><br>Gameplay Tips!<br><br><li>Score can be gathered through many means! Killing enemy players, defending the VIP, assaulting objectives, defending people attacking objectives and so on will give you Score!</li><br><li>You can lose Score by being a bad player. Team-kills and suicides will reduce your Score.</li><br>",
+    "order": 77,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "AdvancedMissions_ObtainXMedalsMission",
+    "title": "Obtain 5 Medals in one Mission",
+    "subtitle": "Shiny",
+    "body": "<br>Medals are obtained for doing cool things in missions. Kill streaks, chained kills, multi-kills, killing enemies that are attacking your Defend target, carrying your item and so on will give you Medals.<br><br>Medals give you a little cash and standing boost at the end of the mission so chase after them! Obtain more than 5 Medals in one Mission.<br><br>Gameplay Tips!<br><br><li>Try out different things and see if you can find more medals!</li><br><li>Medals for team kills or repeated suicides REDUCE the amount of cash and standing you get at the end of a mission. Don't chase those ones. They're a mark of shame.</li><br>",
+    "order": 78,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "AdvancedMissions_CompleteXMissionObjectives",
+    "title": "Fullfill 3 Objectives in one Mission",
+    "subtitle": "Third time's the charm",
+    "body": "<br>By Completing mission objectives you help push the mission forwards. Play the objective, run defence, offence and know when to switch it up.<br><br>Gameplay Tips!<br><br><li>One of the key skills in APB Reloaded is knowing when to change your playstyle. Learn when to go on the offensive, when to go full defense and when to play the objective. This isn't a skill that can be taught, unfortunately, but it's something you'll learn.</li><br>Complete 3 Objectives in a single mission.",
+    "order": 79,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "AdvancedMissions_BeMVP",
+    "title": "Be MVP",
+    "subtitle": "Best of the best",
+    "body": "<br>Become the MVP in a mission. Kill the most, die the least, defend and attack the most. Be everywhere. Be all over the enemy team like a bad rash and save your buddies from getting taken down at the last second.<br><br>When you're MVP it's because you earned it with ammo in your gun and the twitch in your trigger finger.<br><br>Gameplay Tips!<br><br><li>Winning MVP gives you a big cash and standing boost at the end of a mission!</li><br>",
+    "order": 80,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "AdvancedMissions_CreateJoinGroup",
+    "title": "Create or Join a Group",
+    "subtitle": "Making new friends",
+    "body": "<br>To create or join a group simply find someone that wants to join a group and accept their group invite by pressing <font color=\"#FFAC00\"><binding>InGameQuestionAccepted</binding></font> when the invitation comes.<br><br>Alternatively, if you want to start a group, find someone that wants to join a group and type /groupinvite and then the character's name.<br><br>You can also join public groups by opening the Social menu with the <font color=\"#FFAC00\"><binding>ToggleSocialUI</binding></font> key, finding a public group and clicking Join Group.<br><br>Gameplay Tips!<br><br><li>Try and find a group with people that are your friends. Fully public groups full of people you don't really know can often be difficult to coordinate with.</li><br>",
+    "order": 81,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Progression",
+    "title": "Progression",
+    "subtitle": "Getting on the ladder",
+    "body": "<br>If you want to get ahead, you're going to want more gear. This can be done by both levelling contacts to gain access to equipment, and using that equipment to unlock new versions of them. This section contains information on the various ways to progress your character.",
+    "order": 82,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Progression_MaxContactFinancialWaterfront_ENF",
+    "title": "Max a Contact in Each District",
+    "subtitle": "District Dealing",
+    "body": "<br>When you're in a Mission District you can pledge up to a contact as stated in a previous tutorial. When you run missions for that contact you gain standing with them and that causes you to progress with them.<br><br>Progressing with contacts increases your rating and also gives you new items and weapons to use. Max out a Contact in Financial and Waterfront.<br><br>Gameplay Tips!<br><br><li>Remember, you can't progress with characters that aren't in your current district! Switch your district if you need to progress with contacts in another district!</li><br>",
+    "order": 83,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Progression_MaxContactFinancialWaterfront_CRIM",
+    "title": "Max a Contact in Each District",
+    "subtitle": "District Dealing",
+    "body": "<br>When you're in a Mission District you can pledge up to a contact as stated in a previous tutorial. When you run missions for that contact you gain standing with them and that causes you to progress with them.<br><br>Progressing with contacts increases your rating and also gives you new items and weapons to use. Max out a Contact in Financial and Waterfront.<br><br>Gameplay Tips!<br><br><li>Remember, you can't progress with characters that aren't in your current district! Switch your district if you need to progress with contacts in another district!</li><br>",
+    "order": 84,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Progression_FinishFirstFourContacts_ENF",
+    "title": "Finish the First Four Contacts",
+    "subtitle": "Best Friends Forever",
+    "body": "<br>Four contacts are unlocked for you to progress with at the start of your career in APB Reloaded. Press <font color=\"#FFAC00\"><binding>TogglePlayerInfoUI</binding></font> and go to the Progression tab to see who they are! Reach Maximum level with those four contacts! For each level you gain with the contacts, you will increase in rank which allows you to use more items and provides new titles for you to use.<br><br>Gameplay Tips!<br><br><li>Get a drink. This could take a while.</li><br>",
+    "order": 85,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Progression_Roles",
+    "title": "Level up a Role",
+    "subtitle": "Practise makes perfect",
+    "body": "<br>As you use weapons or equipment, you will progress roles that are associated with that item. Check the Roles tab in the Character Info UI <font color=\"#FFAC00\">(<binding>TogglePlayerInfoUI</binding>)</font> to see how each role is progressed. Progressing each role generally provides upgraded versions of the items that progress them.<br><br>Gameplay Tips!<br><br><li>Complete the weapon Roles to unlock a special \"Chrome\" skin for all weapons that advance the Role.</li><br><li>Look out for the special Event Roles that appear with certain events throughout the year as they often award unique prizes only available during that event!</li><br>",
+    "order": 86,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Progression_FinishFirstFourContacts_CRIM",
+    "title": "Finish the First Four Contacts",
+    "subtitle": "Best Friends Forever",
+    "body": "<br>Four contacts are unlocked for you to progress with at the start of your career in APB Reloaded. Press <font color=\"#FFAC00\"><binding>TogglePlayerInfoUI</binding></font> and go to the Progression tab to see who they are! Reach Maximum level with those four contacts! For each level you gain with the contacts, you will increase in rank which allows you to use more items and provides new titles for you to use.<br><br>Gameplay Tips!<br><br><li>Get a drink. This could take a while.</li><br>",
+    "order": 87,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "AdvancedMinigame",
+    "title": "Dynamic Events",
+    "subtitle": "Dangerous neighborhood",
+    "body": "Dynamic Events are small games that will appear regularly in the action districts. If you are not currently participating in a mission, you can join in the event instead. Each event has a different way in which to enter the game, but it generally involves either initially triggering it (in which case you become the Protagonist of that game) or interacting with the Protagonist in some way. \nIf at any point you want to leave the event and you are currently available to do so (you are not currently the focus of the game), you can do so by pressing K.",
+    "order": 88,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "AdvancedMinigame_MugPedestrian",
+    "title": "Drug-Mule",
+    "subtitle": "Haul ass",
+    "body": "Other players are not the only criminals out there. Occasionally you may spot a pedestrian with a suspicious backpack shuffling down the streets. These are drug mules, and they carry items that both enforcers and other criminals would do anything to get their hands on, either to drop into an evidence locker, or sell to the highest bidder.\nIf you find a Drug-Mule roaming the streets, walk up to him and press <font color=\"#FFAC00\"><binding>DoCSAKeyPressed</binding></font> to force him to drop the drugs. If you're in a hurry, shooting him works too, but you'll lose some of the product. Picking up any of the packages will start the Drug-Mule event. Grab as many packages as you can and deliver them to the nearest contact. \nIf you are feeling confident, once you have packages you can hunt down others instead and steal theirs rather than drop them off, but if you die you'll lose any you have accumulated.",
+    "order": 89,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "AdvancedMinigame_Butcher",
+    "title": "The Butcher",
+    "subtitle": "Advanced Warfare",
+    "body": "A highly classified variant of the O-PGL rocket launcher has been lost from Obeya Corps. Armory R&D, and has found its way into San Paro. This weapon fires high damage percussion grenades that explode on impact, and has a massive ammunition capacity to allow for sustained fire over long periods. \nIf you find this weapon, Obeya will pay a handsome reward for its retreival, with one caveat. It still needs field tested. You need to kill a number of other players with this weapon once you retrieve it before you can return it to any friendly Contact. To help you in this task, the weapon also injects you with advanced stimulants, increasing your speed, health and regeneration times.\nIf you manage to find another player testing this weapon, you can take him down and immediately gain it yourself, and get given the same task to kill others. Be aware that he'll probably want it back though to continue his streak, so watch your back.",
+    "order": 90,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "FightClub",
+    "title": "Fight Club",
+    "subtitle": "Prove your worth",
+    "body": "<br>Fight Club districts are smaller areas with constantly running missions that include everyone in the district. They're great for when you only have a few minutes to play, or just want a simpler experience.<br><br>Completing weekly challenges in Fight Club awards you Joker Tickets that can be used to purchase items from the Joker Distribution store in Social.</li><br>",
+    "order": 91,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "FightClub_JoinFightClubInstance",
+    "title": "Join a Fight Club Instance",
+    "subtitle": "Joining the fight",
+    "body": "<br>Fight Club is a great way to blow off steam after fighting in mission districts. To enter a Fight Club district open your District Select menu and select the Fight Club instance that looks appealing and click Join District.<br><br>Fight Club is different from Mission Districts as you can't progress with contacts in them. The missions are much larger than in Mission Districts - they're usually single stage and pure combat.<br><br>Gameplay Tips!<br><br><li>Get in there and get fighting! It's fast and furious so stay sharp!</li><br>",
+    "order": 92,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "FightClub_CompleteFightClubRound",
+    "title": "Play a Fight Club Round",
+    "subtitle": "You gotta fight...",
+    "body": "<br>Complete a Fight Club Round. Doesn't matter if you win or if you lose, just reach the end and kill as many enemies as you can on the way there.<br><br>If you win, you'll be rewarded with more cash than through any other mission kind in APB Reloaded. If you lose you'll still get a healthy reward!<br><br>Gameplay Tips!<br><br><li>Keep an eye on the mission type. Some are item capture missions and others are full Deathmatch! Contribute to your team's effort!</li><br><li>Remember to use the /team chat channel!</li><br>",
+    "order": 93,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "FightClub_PerformWeeklyChallenge",
+    "title": "Progress the Challenge",
+    "subtitle": "Challenge Accepted!",
+    "body": "<br>In the top left of your screen while in Fight Club you can see a challenge. Complete your assigned challenge. If you're in Asylum, gain some cash (This is also a Weekly Challenge).<br><br>You can see your total target in the menu in the top right. If you're in Baylan, you've been given a more specific challenge. Complete the challenge as listed.<br><br>Gameplay Tips!<br><br><li>Change your play style to gain rewards! </li><br><li>In Asylum, you can skip your current challenge if it's too difficult by pressing <font color=\"#FFAC00\"><binding>ProvingGroundsSkipActivity</binding></font>.</li><br>",
+    "order": 94,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "FightClub_QualifyReward",
+    "title": "Complete a Weekly Challenge",
+    "subtitle": "Play to Win",
+    "body": "<br>When you complete enough Tasks, you'll complete a level in the Weekly Challenge. Challenges come in Bronze, Silver and Gold varieties. You can see your current progress on the Fight Club Challenges screen by pressing <font color=\"#FFAC00\"><binding>ToggleProvingGroundsChallengesUI</binding></font>. <br><br>Bronze challenges are easy to do and get you a small amount of Joker Tickets.<br><br>Silver challenges are harder and get you a larger amount of Joker Tickets.<br><br>Gold Challenges are very difficult and you must be in the top 10% of ALL the players on your server at Monday, 6 AM UTC to qualify for gold. If you don't, you won't get the gold reward so keep fighting!<br><br>Gameplay Tips!<br><br><li>Complete challenges to get a reward!</li><br><li>Jump through those hoops.</li><br>",
+    "order": 95,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "AdvancedSocial",
+    "title": "Advanced Social",
+    "subtitle": "Talk the talk",
+    "body": "<br>This section explains the more advanced editors, and how to sell your creations for profit.",
+    "order": 96,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "AdvancedSocial_CreateDeathThemeMusicEditor",
+    "title": "Create a Death Theme",
+    "subtitle": "Part-Time DJ",
+    "body": "<br>When you kill another player in APB Reloaded you can play a custom created Death Theme to them. To create a Death Theme find a Music Studio Kiosk in the Social district and press <font color=\"#FFAC00\"><binding>DoCSAKeyPressed</binding></font> to activate it. Music Studio Kiosks are kiosks that have a white screen with a black piano on it. Select New to create a new theme.<br><br>You'll be taken to a sequencer view. You can change the musical instrument you want to use by clicking the Selected Instrument option and selecting the instrument you want to use. Paint notes onto the keyboard to the right of the menu. You can preview your track at any time by pressing play.<br><br>You can use multiple instruments by clicking different Tracks in the top half of the menu. Try and create a theme with at least two instruments in it. The music studio can be a little intimidating at first but stick with it and you'll be creating masterpieces in no time.<br><br>Click Save to save your theme.<br><br>Gameplay Tips!<br><br><li>You can set advanced modifications on a Track through the Modifications to the right of Pattern in the menu.</li><br><li>You can use the Metronome if you want to get your timing right.</li><br><li>You can adjust the tempo of your track by using the buttons on either side of the tempo value.</li><br><li>Inappropriate themes may be deleted.</li><br>",
+    "order": 97,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "AdvancedSocial_CreateJoinClan",
+    "title": "Create or Join a Clan",
+    "subtitle": "Better together",
+    "body": "<br>To Create or Join a Clan you either need to wait for someone to invite you to join a clan and accept the invitation or you can found your own clan by opening the main menu with <font color=\"#FFAC00\">ESCAPE</font> and selecting Clan Management.<br><br>If you Create a Clan you will be prompted to enter the name for your clan. Once you do so, click Create. If the name is already in use your new clan will not be formed. If the name is available your new clan will be founded!<br><br>Gameplay Tips!<br><br><li>Clans are great at finding groups. Once you get into a clan, introduce yourself and say hello.</li><br>",
+    "order": 98,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "AdvancedSocial_PutItemMarketplace",
+    "title": "Put an Item up for Sale",
+    "subtitle": "Playing the market",
+    "body": "<br>You can sell items for Cash on the Marketplace in Social District. Find a Marketplace Kiosk and press <font color=\"#FFAC00\"><binding>DoCSAKeyPressed</binding></font> to activate it. Marketplace Kiosks are green kiosks with a white price tag on them.<br><br>In the screen that appears you'll see an Add New Item Auction button. Click it. Choose an item from your locker and click Select. Set a Start Price and a Buy Price, set a duration and, if you like, set the auction to be faction specific.<br><br>When you're happy with your settings click Start Auction.<br><br>Gameplay Tips!<br><br><li>You can search for items to buy on the Marketplace by using the filters at the top of the window to filter to what you want to buy (clothing, themes, cars etc) and clicking search.</li><br><li>You can track your auction through the My Auctions tab as well as being able to track your bids through the My Bids tab.</li><br><li>All money on the Marketplace and Items won through the marketplace are returned to your mail inbox at the end of the auction.</li><br>",
+    "order": 99,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "AdvancedSocial_JokerDistribution",
+    "title": "Purchase from Joker Distribution",
+    "subtitle": "Cashing in your tickets",
+    "body": "<br>Joker Distribution is a shop in Breakwater Marina that will sell a number of items to you for Joker Tickets. Each of the assistants offer different types of things.<br><br><li>Ophelia sells Customization goods.</li><br><li>Wilde sells timed items, mostly weapons and modifications.</li><br><li>Speedball sells Outfits that have been made by other community members.</li><br><br>Most items in Joker Distribution can also be found in the Armas Marketplace or are received late in progression through normal contacts.<br><br>Gameplay Tips!<br><br><li>Spend wisely, there are fewer ways to get Joker Tickets than cash.</li><br><li>Check out the forums (forums.gamersfirst.com) for customization competitions to get your gear in the Joker Distribution Store. Winners receive an exclusive title and weapon skin.",
+    "order": 100,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Riot",
+    "title": "RIOT",
+    "subtitle": "Who could have predicted this...",
+    "body": "<br>RIOT is a last-team standing game mode where you compete to stay alive and complete missions. Find gear and gain cash to improve your odds of surviving. Pick up access codes to locate and arm emitters to gain large sums of money to share with your team. If you make it to the last safe area, be the highest bribe or kill everyone else to win and get a ride to safety in the R.I.O.T. van.  <br><br>Gear up, gain cash and be the last ones alive.",
+    "order": 101,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Riot_PrimaryWeapon",
+    "title": "Primary Weapon",
+    "subtitle": "Gear up",
+    "body": "You won't survive long with just the handgun you start with. Find a primary weapon in the environment and pick it up to equip it.<br><br>Gameplay Tips!<br><br><li>Primary weapons are shown on your radar by <font color=\"#0978FF\">dark blue</font> icons.</li><br><li>At mid-long ranges, primary weapons will emit a <font color=\"#0978FF\">dark blue beam</font>.</li><br><li>The Red Hill compounds set up at various intersections often contain large numbers of weapons.</li>",
+    "order": 102,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Riot_SecondaryWeapon",
+    "title": "Secondary Weapon",
+    "subtitle": "You'll need a backup",
+    "body": "Ditch the handgun for something better. Find a new secondary in the environment and pick it up to equip it.<br><br>Gameplay Tips!<br><br><li>Secondary weapons are shown on your radar by <font color=\"#AAAAFF\">light blue</font> icons.</li><br><li>At mid-long ranges, secondary weapons will emit a <font color=\"#AAAAFF\">light blue beam</font>.</li><br><li>The Red Hill compounds set up at various intersections often contain large numbers of weapons.</li>",
+    "order": 103,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Riot_HazmatSuit",
+    "title": "Hazmat Suit",
+    "subtitle": "Prevention is better than cure",
+    "body": "The gas released by the RIOT devices is at a lethal concentration and will kill anyone after prolonged exposure. Hazmat suits can be found around the map and appear on your HUD and radar as <font color=\"#0978FF\">dark blue</font> icons. If you find yourself caught in the middle of a block saturated with chemicals, you better have a hazmat suit ready to equip. These sit in your consumable slot and can be activated with <font color=\"#FFAC00\"><binding>ToggleConsumable</binding></font>. Once active, they will make you immune to device emissions for a limited amount of time.<br><br>Gameplay Tips!<br><br><li>Look for the 'Safe Area' HUD icon to find your way to a nearby gas-free block.</li><br><li>Hazmat suits don't last forever, and have a cooldown. Once one wears off, you'll die before you can equip another one.</li>",
+    "order": 104,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Riot_AccessCode",
+    "title": "Acquire an Access Code",
+    "subtitle": "Say the magic word",
+    "body": "The RIOT devices scattered around Havalynd are password protected. If you want to trigger one and fill a block with deadly chemicals, you'll need to find and pick up one of the Access Codes that spawn periodically at random locations throughout the map. These appear on your HUD with the <font color=\"#9815c4\">'RIOT Access Code'</font> message. Be careful when approaching one; they'll be highly contested. \nOnce you have acquired an access code, you will have 5 minutes to use it to arm as many RIOT devices as possible, so get to it.",
+    "order": 105,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Riot_EmitterTrigger",
+    "title": "Arm a RIOT Device",
+    "subtitle": "The ends justify the means",
+    "body": "While you have an active Access Code, nearby RIOT devices will appear on your HUD. Use these markers to find a device and the code will allow you to hack it. This will trigger a countdown until the deivce becomes active. If you're successful, you and your team will receive a cash reward from R.I.O.T. for doing their dirty work. <br><br>Gameplay Tips!<br><br><li>Once it's armed, run!</li>",
+    "order": 106,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Riot_Cash",
+    "title": "Cash",
+    "subtitle": "Money makes the world go round",
+    "body": "The district is quarantined and you can't bring your own cash in, so you'll have to make do with what you can scavenge from within the district. Cash can be found from...<br><br><li>Finding it in the environment (small amounts).</li><br><li>Arming RIOT devices (large amounts).</li><br><li>Killing enemies and taking any cash that they drop.</li><br><br>When picked up, cash is rewarded to you and all your teammates. It can be used to unlock your normal weapons, or gain an additional life if you don't currently have one.",
+    "order": 107,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Riot_UnlockPrimaryWeapon",
+    "title": "Unlock Primary Weapon",
+    "subtitle": "Lock and Load",
+    "body": "Once you reach <font color=\"#FFAC00\">$2000</font>, you'll be able to unlock your primary weapon. Find a Primary Weapon cache in the world and interact with it to unlock whichever weapon you are normally equipped with. You can also unlock it with the HUD notification that appears when you first acquire necessary funds.<br><br>Gameplay Tips!<br><br><li>Make sure you have the weapon you want to unlock equipped before the start of the minigame.</li>",
+    "order": 108,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "Riot_UnlockSecondaryWeapon",
+    "title": "Unlock Secondary Weapon",
+    "subtitle": "Concealed Carry",
+    "body": "Once you reach <font color=\"#FFAC00\">$1000</font>, you'll be able to unlock your secondary weapon. Find a Secondary Weapon cache in the world and interact with it to unlock whichever weapon you are normally equipped with. You can also unlock it with the HUD notification that appears when you first acquire necessary funds.<br><br>Gameplay Tips!<br><br><li>Make sure you have the weapon you want to unlock equipped before the start of the minigame.</li>",
+    "order": 109,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "KnowledgeBase",
+    "title": "Knowledge Base",
+    "subtitle": "A little knowledge is a dangerous thing",
+    "body": "This knowledge-base section is not part of the rest of the tutorials. There are no events to complete, and no rewards for making your way through it. This section however will provide in-depth descriptions of various mechanics and items, along with tactics and suggestions to get the best out of them.",
+    "order": 110,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "KnowledgeBase_Consumables",
+    "title": "Consumables",
+    "subtitle": "Consumer culture",
+    "body": "Consumables are single-use items that can be equipped in the fourth character slot. They provide powerful abilities that can be triggered once, but are used up in the process. You can hold up to 100 of each consumable at a time. While some of these items are triggered and have an immediate or lasting effect, others deploy items that provide effects in themselves.\n\n\nConsumables are primarily gained through participating in Dynamic Events, but can also be received as random rewards from completing missions, or purchased in the Joker Store.",
+    "order": 111,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "KnowledgeBase_Consumables_Medkit",
+    "title": "Med-Spray",
+    "subtitle": "MEDIC!",
+    "body": "When triggered, Med-Spray immediately starts the health regeneration of any characters caught within its area of effect, allowing you to immediately start regenerating you or any nearby teammates from damage you have taken. This is great when you take a massive amount of damage and manage to get to cover, but only have a second or two before enemies bear down on you. Using it while in direct combat is not recommended though, as bullets still stop regeneration and any damage will immediately stop the effect.\n\nThe Spray does not distinguish between friendlies and enemies though, so be careful using it when in close combat or you might inadvertently heal your enemies. Also, as it triggers health regeneration, it has little to no effect when used with Clotting Agent.",
+    "order": 112,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "KnowledgeBase_Consumables_Epinephrine",
+    "title": "Epinephrine Injector",
+    "subtitle": "Drug runner",
+    "body": "If you need to get into or out of an area fast, Epinephrine is your best friend. When triggered, it immediately increases your run and sprint speeds by significant amounts, though it does deal damage to you in the process. You will lose half of your current health, so it's very useful when you are already low on health and need to get out of the immediate area, or if time is running out and you need to get to a target right away regardless of the cost.",
+    "order": 113,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "KnowledgeBase_Consumables_MobileCover",
+    "title": "Mobile Cover",
+    "subtitle": "Duck and cover",
+    "body": "When you deploy Mobile Cover, after a short delay a large metal shield will appear in your hands, blocking all damage in a frontal arc. This shield can be dropped and will expand to a size that will fully protect a crouched player. This allows you to better fortify an area, or create a staging point to attack from in an area without any natural cover. As a neat benefit, the cover also displays the graffiti of the owning player on the front while it is deployed.\n\nWhile very sturdy, the Mobile Cover is not invincible and can be destroyed if it takes enough damage, so be careful utilising it against anti-vehicle weapons such as the ALIG or OSMAW. It's also very vulnerable to vehicles, which can knock it over.\n\nAs with all deployed items, the Mobile Cover can be captured by the enemy team, so it's imperative to keep it close if you don't want to give your opposition an advantage.",
+    "order": 114,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "KnowledgeBase_Consumables_SupplyBox",
+    "title": "Supply Box",
+    "subtitle": "Gear up",
+    "body": "Supply Boxes work very similarly to the Field Supplier modification, supplying any nearby players to the Supply Box with ammo. While the Field Supplier can provide as much ammo as you need, the Supply Box has a limited number of magazines available (remaining magazines are visible on the lid) while freeing you to move around and defend yourself while using it. \n\nAs with all deployable items, the Supply Box can be used by opponents, so protect it from enemies. In a pinch though, it can be used as a trap as it will explode when shot.",
+    "order": 115,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "KnowledgeBase_HolidayEvents",
+    "title": "Holiday Events",
+    "subtitle": "That time of year",
+    "body": "Throughout the year, San Paro runs events during various Holidays. These can range from roles and achievements, to full events in their own districts. By completing activities during these holiday events, players can win unique coloured titles, to new weapons and clothing. Some events reward TROPHIES, unique preset clothing items themed to that Holiday. Collect trophies to receive a special prize at the end of the year.",
+    "order": 116,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "KnowledgeBase_HolidayEvents_EasterEggHunt2015",
+    "title": "Easter Egg Hunt",
+    "subtitle": "Putting the Bunny back in the box",
+    "body": "OBJECTIVE: Collect as many EGGS as possible by MUGGING BUNNIES, CHICKENS as well as other PLAYERS. Collect as many EGGS as you can during the Easter Egg Hunt 2015 to earn TITLES and the coveted TROPHY.\n•\tThe EASTER EGG HUNT EVENT is a free for all, no teams and no factions.\n•\tAT START BUNNIES AND CHICKENS will be spawned in the district, the first one MUGGED will start the game (20 Min playtime)\n\nMUGGING SCORING:\n•\tBUNNIES: 1 EGG\n•\tCHICKENS: 5 EGGS\n•\tPLAYER successfully KILLS another PLAYER EARNS HALF OF THEIR COLLECTED EGGS (NOT ONES THAT ARE BANKED).\n•\tPLAYER that has been KILLED will LOSE HALF OF THEIR COLLECTED EGGS (NOT ONES THAT ARE BANKED).\n•\tPLAYER that has been MUGGED will LOSE ALL OF THEIR COLLECTED EGGS (NOT ONES THAT ARE BANKED).\n•\tPLAYERS THAT SUCCESSFULLY MUG  will be invulnerable and receive a speed boost to allow them to make a quick escape in case they are under threat from others. The invulnerable player will also have their weapons unequipped for the duration of this effect. The effect will be cancelled if you enter a vehicle or activate a character mod.\n•\tIt’s not possible for other PLAYERS to interfere with a MUGGING.\n\nOnce a PLAYER has EGGS, they can bank the amount by delivering them to a contact. Delivered EGGS can earn a PLAYER a BONUS amount.\n\nDELIVER EGGS TO A CONTACT to BANK YOUR EGGS AND EARN A BONUS:\n•\t1st Time is a 5X BONUS\n•\t2nd Time is a 3X BONUS\n•\t3rd Time is a 2X BONUS\nAll others DELIVERIES HAVE no BONUS APPLIED, but the EGGS will be BANKED\n\nADDED NOTES:\n•\tIn order to allow players to sneak up on others to mug them, players won’t be displayed on the radar.\n•\tHUD markers will display where the CHICKENS are located.\n•\tHUD markers will be displayed for the top 20% of Players.\n•\tBUNNIES and OTHER PLAYERS can only be spotted by line of sight.",
+    "order": 117,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "KnowledgeBase_HolidayEvents_SlayBells",
+    "title": "Slay Bells 2018",
+    "subtitle": "Frozen Assets",
+    "body": "A cold front has arrived, and the local criminals and enforcers are taking advantage of the snow to fight for supremacy in San Paro as it slowly freezes over.\n\nAs each round starts, checkpoints become available to capture. For each checkpoint you hold at the end of the round over 1, your team will gain a point. If you hold no checkpoints at the end of each round, you'll lose a point. \n\nIf you run out of points and then fail to hold a checkpoint, your team will enter sudden death. During this time, you will be unable to respawn until your team gains a point. If your entire team dies, or the round ends without you capturing a point, your team is eliminated and all players are added to other teams.\n\nAfter each round, blocks around San Paro will become frozen. Entering these blocks will cause you to take frostbite damage. \n\nOnce enough time has passed, Stage 2 begins. Rounds become shorter and blocks freeze faster. Players can no longer be added to teams. Blocks continue to freeze until only one is left, at which point the remaining teams fight until only one remains.",
+    "order": 118,
+    "source": "Tutorials.INT"
+  },
+  {
+    "id": "KnowledgeBase_HolidayEvent_12DeathsOfChristmas",
+    "title": "12 Deaths of Christmas 2018",
+    "subtitle": "On the first day of Christmas, my Arms Dealer gave to me...",
+    "body": "Christmas is a time of giving (bullets) and receiving (new weapons).\n\n12 Deaths of Christmas is a gun-game event where players have to progress through 12 tiers of weapons.\n\nYou start at Tier 1 and are given a Joker CR5. Gaining 100 score with this weapon through enemy assists or kills will progress to the next tier, switching it out to the next weapon. \n\nContinue gaining score until you reach the final tier, 12, where you will be given Snowballs. Be the first to get a kill with a Snowball to win the match!",
+    "order": 119,
+    "source": "Tutorials.INT"
+  }
+]

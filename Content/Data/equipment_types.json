@@ -1,0 +1,482 @@
+[
+    {
+        "id":  "Equipment_BatteringRam",
+        "description":  "A Battering Ram used to breach doors.",
+        "base":  "Equipment_BatteringRam",
+        "mk":  0,
+        "order":  0,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_BatteringRam_Mk2",
+        "description":  "An improved Battering Ram used to breach doors quickly.",
+        "base":  "Equipment_BatteringRam",
+        "mk":  2,
+        "order":  1,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_BatteringRam_Mk3",
+        "description":  "A significantly improved Battering Ram used to breach doors very quickly.",
+        "base":  "Equipment_BatteringRam",
+        "mk":  3,
+        "order":  2,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_BatteringRam_Mk4",
+        "description":  "A high-efficiency Battering Ram used to breach doors as quickly as possible.",
+        "base":  "Equipment_BatteringRam",
+        "mk":  4,
+        "order":  3,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_BrassKnuckles",
+        "description":  "Light brass knuckles, for mugging the citizens of San Paro.",
+        "base":  "Equipment_BrassKnuckles",
+        "mk":  0,
+        "order":  4,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_BrassKnuckles_Mk2",
+        "description":  "Medium brass knuckles, for mugging the citizens of San Paro quickly.",
+        "base":  "Equipment_BrassKnuckles",
+        "mk":  2,
+        "order":  5,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_BrassKnuckles_Mk3",
+        "description":  "Heavy brass knuckles, for mugging the citizens of San Paro very quickly.",
+        "base":  "Equipment_BrassKnuckles",
+        "mk":  3,
+        "order":  6,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_BrassKnuckles_Mk4",
+        "description":  "Brutal brass knuckles, for mugging the citizens of San Paro as quickly as possible.",
+        "base":  "Equipment_BrassKnuckles",
+        "mk":  4,
+        "order":  7,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_Camera",
+        "description":  "A camera used for crime scene investigations",
+        "base":  "Equipment_Camera",
+        "mk":  0,
+        "order":  8,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_Camera_Mk2",
+        "description":  "An improved camera for crime scene investigations",
+        "base":  "Equipment_Camera",
+        "mk":  2,
+        "order":  9,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_Camera_Mk3",
+        "description":  "A significantly improved camera for crime scene investigations",
+        "base":  "Equipment_Camera",
+        "mk":  3,
+        "order":  10,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_Camera_Mk4",
+        "description":  "A high-efficiency camera used for crime scene investigations",
+        "base":  "Equipment_Camera",
+        "mk":  4,
+        "order":  11,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_Crowbar",
+        "description":  "A crowbar for levering doors and windows open.",
+        "base":  "Equipment_Crowbar",
+        "mk":  0,
+        "order":  12,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_Crowbar_Mk2",
+        "description":  "A sturdy crowbar for levering doors and windows open quickly.",
+        "base":  "Equipment_Crowbar",
+        "mk":  2,
+        "order":  13,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_Crowbar_Mk3",
+        "description":  "A strong crowbar for levering doors and windows open very quickly.",
+        "base":  "Equipment_Crowbar",
+        "mk":  3,
+        "order":  14,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_Crowbar_Mk4",
+        "description":  "A heavy-duty crowbar for levering doors and windows open as quickly as possible.",
+        "base":  "Equipment_Crowbar",
+        "mk":  4,
+        "order":  15,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_Explosives",
+        "description":  "Home-made explosives used to destroy special targets; easily defused.",
+        "base":  "Equipment_Explosives",
+        "mk":  0,
+        "order":  16,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_Explosives_Mk2",
+        "description":  "Standard-issue explosives used to destroy special targets.",
+        "base":  "Equipment_Explosives",
+        "mk":  2,
+        "order":  17,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_Explosives_Mk3",
+        "description":  "A somewhat complex explosive device used to destroy special targets. Tricky to defuse.",
+        "base":  "Equipment_Explosives",
+        "mk":  3,
+        "order":  18,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_Explosives_Mk4",
+        "description":  "A complex, high-yield explosive device used to destroy special targets. Takes great effort to defuse, even for a bomb expert.",
+        "base":  "Equipment_Explosives",
+        "mk":  4,
+        "order":  19,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_Hacking",
+        "description":  "Home-made hacking equipment",
+        "base":  "Equipment_Hacking",
+        "mk":  0,
+        "order":  20,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_Hacking_Mk2",
+        "description":  "Standard issue hacking equipment",
+        "base":  "Equipment_Hacking",
+        "mk":  2,
+        "order":  21,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_Hacking_Mk3",
+        "description":  "Advanced hacking equipment",
+        "base":  "Equipment_Hacking",
+        "mk":  3,
+        "order":  22,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_Hacking_Mk4",
+        "description":  "Very, very expensive hacking equipment",
+        "base":  "Equipment_Hacking",
+        "mk":  4,
+        "order":  23,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_HandcuffKeys",
+        "description":  "A cheap skeleton key used to free arrested Criminals.",
+        "base":  "Equipment_HandcuffKeys",
+        "mk":  0,
+        "order":  24,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_HandcuffKeys_Mk2",
+        "description":  "A skeleton key used to free arrested Criminals quickly.",
+        "base":  "Equipment_HandcuffKeys",
+        "mk":  2,
+        "order":  25,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_HandcuffKeys_Mk3",
+        "description":  "A high-quality skeleton key used to free arrested Criminals very quickly.",
+        "base":  "Equipment_HandcuffKeys",
+        "mk":  3,
+        "order":  26,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_HandcuffKeys_Mk4",
+        "description":  "A superior-quality master key used to free arrested Criminals as quickly as possible.",
+        "base":  "Equipment_HandcuffKeys",
+        "mk":  4,
+        "order":  27,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_Handcuffs",
+        "description":  "Standard-issue handcuffs for arresting Criminals.",
+        "base":  "Equipment_Handcuffs",
+        "mk":  0,
+        "order":  28,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_Handcuffs_Mk2",
+        "description":  "Sturdy SPPD handcuffs for quickly arresting Criminals.",
+        "base":  "Equipment_Handcuffs",
+        "mk":  2,
+        "order":  29,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_Handcuffs_Mk3",
+        "description":  "Heavy-duty SWAT handcuffs for very quickly arresting Criminals.",
+        "base":  "Equipment_Handcuffs",
+        "mk":  3,
+        "order":  30,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_Handcuffs_Mk4",
+        "description":  "FBI-issue handcuffs for arresting Criminals as quickly as possible.",
+        "base":  "Equipment_Handcuffs",
+        "mk":  4,
+        "order":  31,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_PaintSprayer",
+        "description":  "A paint sprayer, for putting up Enforcer propaganda.",
+        "base":  "Equipment_PaintSprayer",
+        "mk":  0,
+        "order":  32,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_PaintSprayer_Mk2",
+        "description":  "A thick-stream paint sprayer for putting up Enforcer propaganda quickly.",
+        "base":  "Equipment_PaintSprayer",
+        "mk":  2,
+        "order":  33,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_PaintSprayer_Mk3",
+        "description":  "A wide-dispersal paint sprayer for putting up Enforcer propaganda very quickly.",
+        "base":  "Equipment_PaintSprayer",
+        "mk":  3,
+        "order":  34,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_PaintSprayer_Mk4",
+        "description":  "A wide-dispersal, heavy-duty paint sprayer for putting up Enforcer propaganda as quickly as possible.",
+        "base":  "Equipment_PaintSprayer",
+        "mk":  4,
+        "order":  35,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_PetrolCan",
+        "description":  "A small gas can, for committing arson.",
+        "base":  "Equipment_PetrolCan",
+        "mk":  0,
+        "order":  36,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_PetrolCan_Mk2",
+        "description":  "A medium gas can, for committing arson quickly.",
+        "base":  "Equipment_PetrolCan",
+        "mk":  2,
+        "order":  37,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_PetrolCan_Mk3",
+        "description":  "A large gas can, for committing arson very quickly.",
+        "base":  "Equipment_PetrolCan",
+        "mk":  3,
+        "order":  38,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_PetrolCan_Mk4",
+        "description":  "The largest available gas can, for committing arson as quickly as possible.",
+        "base":  "Equipment_PetrolCan",
+        "mk":  4,
+        "order":  39,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_PoliceBadge",
+        "description":  "An official badge for intimidating suspects.",
+        "base":  "Equipment_PoliceBadge",
+        "mk":  0,
+        "order":  40,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_PoliceBadge_Mk2",
+        "description":  "A Sergeant's badge for quickly intimidating suspects.",
+        "base":  "Equipment_PoliceBadge",
+        "mk":  2,
+        "order":  41,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_PoliceBadge_Mk3",
+        "description":  "A Lieutenant's badge for very quickly intimidating suspects.",
+        "base":  "Equipment_PoliceBadge",
+        "mk":  3,
+        "order":  42,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_PoliceBadge_Mk4",
+        "description":  "A Captain's badge for intimidating suspects as quickly as possible.",
+        "base":  "Equipment_PoliceBadge",
+        "mk":  4,
+        "order":  43,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_Sabotage",
+        "description":  "Home-made explosives used to destroy special targets; easily defused.",
+        "base":  "Equipment_Sabotage",
+        "mk":  0,
+        "order":  44,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_Sabotage_Mk2",
+        "description":  "Standard-issue explosives used to destroy special targets.",
+        "base":  "Equipment_Sabotage",
+        "mk":  2,
+        "order":  45,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_Sabotage_Mk3",
+        "description":  "A somewhat complex explosive device used to destroy special targets. Tricky to defuse.",
+        "base":  "Equipment_Sabotage",
+        "mk":  3,
+        "order":  46,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_Sabotage_Mk4",
+        "description":  "A complex, high-yield explosive device used to destroy special targets. Takes great effort to defuse, even for a bomb expert.",
+        "base":  "Equipment_Sabotage",
+        "mk":  4,
+        "order":  47,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_SlimJim",
+        "description":  "A 'Slim Jim' which, slipped between window and door to pop the lock, allows entry into a locked vehicle.",
+        "base":  "Equipment_SlimJim",
+        "mk":  0,
+        "order":  48,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_SlimJim_Mk2",
+        "description":  "A notched 'Slim Jim' which, slipped between window and door to pop the lock, allows quick entry into a locked vehicle.",
+        "base":  "Equipment_SlimJim",
+        "mk":  2,
+        "order":  49,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_SlimJim_Mk3",
+        "description":  "A multiple-notch 'Slim Jim' which, slipped between window and door to pop the lock, allows very quick entry into a locked vehicle.",
+        "base":  "Equipment_SlimJim",
+        "mk":  3,
+        "order":  50,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_SlimJim_Mk4",
+        "description":  "A titanium 'Slim Jim' which, slipped between window and door to pop the lock, allows entry into a locked vehicle as quickly as possible.",
+        "base":  "Equipment_SlimJim",
+        "mk":  4,
+        "order":  51,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_SprayCan",
+        "description":  "A can of spray paint for putting up graffiti.",
+        "base":  "Equipment_SprayCan",
+        "mk":  0,
+        "order":  52,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_SprayCan_Mk2",
+        "description":  "A good-quality can of spray paint for putting up graffiti quickly.",
+        "base":  "Equipment_SprayCan",
+        "mk":  2,
+        "order":  53,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_SprayCan_Mk3",
+        "description":  "A high-quality can of spray paint for putting up graffiti very quickly.",
+        "base":  "Equipment_SprayCan",
+        "mk":  3,
+        "order":  54,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_SprayCan_Mk4",
+        "description":  "A top-quality can of spray paint for putting up graffiti as quickly as possible.",
+        "base":  "Equipment_SprayCan",
+        "mk":  4,
+        "order":  55,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_WireCutters",
+        "description":  "Wire cutters for defusing explosives or committing sabotage.",
+        "base":  "Equipment_WireCutters",
+        "mk":  0,
+        "order":  56,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_WireCutters_Mk2",
+        "description":  "Sturdy wire cutters for defusing explosives or committing sabotage quickly.",
+        "base":  "Equipment_WireCutters",
+        "mk":  2,
+        "order":  57,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_WireCutters_Mk3",
+        "description":  "Heavy-duty wire cutters for defusing explosives or committing sabotage very quickly.",
+        "base":  "Equipment_WireCutters",
+        "mk":  3,
+        "order":  58,
+        "source":  "EquipmentTypes.INT"
+    },
+    {
+        "id":  "Equipment_WireCutters_Mk4",
+        "description":  "Heavy-duty, SWAT-issue wire cutters for defusing explosives or committing sabotage as quickly as possible.",
+        "base":  "Equipment_WireCutters",
+        "mk":  4,
+        "order":  59,
+        "source":  "EquipmentTypes.INT"
+    }
+]

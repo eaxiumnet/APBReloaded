@@ -1,0 +1,6176 @@
+[
+  {
+    "id": "AM_Abandon_Match_Fail",
+    "display_text": "<col:HUDMessage_Error>You cannot abandon opposed missions.</col>",
+    "chat_text": "",
+    "order": 0,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_AdHocEnemySideDeliverItem",
+    "display_text": "<CharacterNameA> has delivered a stolen item.",
+    "chat_text": "",
+    "order": 1,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_AdHocEnemySideDeliverItems",
+    "display_text": "<CharacterNameA> has delivered some stolen goods.",
+    "chat_text": "",
+    "order": 2,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_AdHocEnemySideDeliverVehicle",
+    "display_text": "<CharacterNameA> delivered a stolen vehicle.",
+    "chat_text": "",
+    "order": 3,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_AdHocSideDeliverItem",
+    "display_text": "<CharacterNameA> delivered an item",
+    "chat_text": "",
+    "order": 4,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_AdHocSideDeliverItems",
+    "display_text": "<CharacterNameA> delivered some items",
+    "chat_text": "",
+    "order": 5,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_AdHocSideDeliverVehicleDamaged",
+    "display_text": "<CharacterNameA> delivered the <VehicleName>",
+    "chat_text": "",
+    "order": 6,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_AdHocSideDeliverVehicleUndamaged",
+    "display_text": "<CharacterNameA> delivered a vehicle in good condition",
+    "chat_text": "",
+    "order": 7,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_AdHocYouDeliverItem",
+    "display_text": "You delivered stolen goods",
+    "chat_text": "",
+    "order": 8,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_AdHocYouDeliverItems",
+    "display_text": "You delivered some stolen goods",
+    "chat_text": "",
+    "order": 9,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_AdHocYouDeliverItems_AllFailed",
+    "display_text": "<col:HUDMessage_Error>You can't deliver those items to this location</col>",
+    "chat_text": "",
+    "order": 10,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_AdHocYouDeliverItems_AllFailed_2",
+    "display_text": "Item delivery failed",
+    "chat_text": "",
+    "order": 11,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_AdHocYouDeliverItems_AllFailed_OnMission",
+    "display_text": "You can't deliver items during a mission",
+    "chat_text": "",
+    "order": 12,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_AdHocYouDeliverItems_SomeFailed",
+    "display_text": "<col:HUDMessage_Error>You can't deliver all of your items to this location</col>",
+    "chat_text": "",
+    "order": 13,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_AdHocYouDeliverItems_SomeFailed_2",
+    "display_text": "Item delivery incomplete",
+    "chat_text": "",
+    "order": 14,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_AdHocYouDeliverVehicle",
+    "display_text": "You delivered the <VehicleName>",
+    "chat_text": "",
+    "order": 15,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_AdHocYouDeliverVehicleFailed",
+    "display_text": "<col:HUDMessage_Error>You can't drop off several vehicles in a short time. Take it to another location or come back later.</col>",
+    "chat_text": "",
+    "order": 16,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_AdHocYouDeliverVehicleFailed_2",
+    "display_text": "Vehicle delivery failed",
+    "chat_text": "",
+    "order": 17,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_AdHocYouDeliverVehicleFailed_OnMission",
+    "display_text": "You can't drop off vehicles during a mission",
+    "chat_text": "",
+    "order": 18,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_AmmoFromStorage_InsufficientAmmo",
+    "display_text": "<col:HUDMessage_Error>Couldn't fully resupply <WeaponName> - not enough stored ammo</col>",
+    "chat_text": "",
+    "order": 19,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_AmmoFromStorage_Resupplied",
+    "display_text": "Resupplied your <WeaponName> with <AmmoResupplied> ammunition. \nYou have <AmmoInLocker> ammunition remaining in your locker.",
+    "chat_text": "",
+    "order": 20,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_AmmoYouOutOfBullets",
+    "display_text": "<col:HUDMessage_Error>Out of bullets</col>",
+    "chat_text": "",
+    "order": 21,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_AmmoYouOutOfGrenades",
+    "display_text": "<col:HUDMessage_Error>Out of grenades</col>",
+    "chat_text": "",
+    "order": 22,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_AmmoYouOutOfProjectiles",
+    "display_text": "<col:HUDMessage_Error>Out of ammo</col>",
+    "chat_text": "",
+    "order": 23,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_AmmoZone_BoughtAmmoAndFullyResupplied",
+    "display_text": "Resupplied your <WeaponName> by emptying your Locker and making an additional purchase of <AmmoAmount> ammunition for $<AmmoCost>",
+    "chat_text": "",
+    "order": 24,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_AmmoZone_BoughtAmmoCouldNotFullyResupply",
+    "display_text": "<col:HUDMessage_Error>Couldn't fully resupply <WeaponName> - not enough cash or stored ammo</col>",
+    "chat_text": "",
+    "order": 25,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_AmmoZone_Deactivate",
+    "display_text": "You are no longer in a mobile resupply point.",
+    "chat_text": "",
+    "order": 26,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_AmmoZone_Fail",
+    "display_text": "<col:HUDMessage_Error>Ammo resupply failed</col>",
+    "chat_text": "",
+    "order": 27,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_AmmoZone_Fail_AllWeaponsFull",
+    "display_text": "<col:HUDMessage_Error>Ammo resupply failed - All weapons full</col>",
+    "chat_text": "",
+    "order": 28,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_AmmoZone_Fail_Arrested",
+    "display_text": "<col:HUDMessage_Error>Ammo resupply failed - You are arrested</col>",
+    "chat_text": "",
+    "order": 29,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_AmmoZone_Fail_Dead",
+    "display_text": "<col:HUDMessage_Error>Ammo resupply failed - You are dead</col>",
+    "chat_text": "",
+    "order": 30,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_AmmoZone_Fail_DepotNotDeployed",
+    "display_text": "<col:HUDMessage_Error>Ammo resupply failed - Depot not accessible</col>",
+    "chat_text": "",
+    "order": 31,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_AmmoZone_Fail_FnModInactive",
+    "display_text": "<col:HUDMessage_Error>Ammo resupply failed - Ammo Carrier Modification is inactive</col>",
+    "chat_text": "",
+    "order": 32,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_AmmoZone_Fail_InVehicle",
+    "display_text": "<col:HUDMessage_Error>Ammo resupply failed - You are in a vehicle</col>",
+    "chat_text": "",
+    "order": 33,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_AmmoZone_Fail_InsufficientFunds",
+    "display_text": "<col:HUDMessage_Error>Ammo resupply failed - Insufficient funds</col>",
+    "chat_text": "",
+    "order": 34,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_AmmoZone_Fail_NoEquippedWeapon",
+    "display_text": "<col:HUDMessage_Error>Ammo resupply failed - No equipped weapon</col>",
+    "chat_text": "",
+    "order": 35,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_AmmoZone_Fail_Unconcious",
+    "display_text": "<col:HUDMessage_Error>Ammo resupply failed - You are unconscious</col>",
+    "chat_text": "",
+    "order": 36,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_AmmoZone_Fail_VehicleMoving",
+    "display_text": "<col:HUDMessage_Error>Ammo resupply failed - Mobile resupply vehicle is moving</col>",
+    "chat_text": "",
+    "order": 37,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_AmmoZone_Fail_WrongFaction",
+    "display_text": "<col:HUDMessage_Error>Your Faction cannot use this Supply Depot</col>",
+    "chat_text": "",
+    "order": 38,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_AmmoZone_Fail_WrongGroup",
+    "display_text": "<col:HUDMessage_Error>This supply unit belongs to another group.</col>",
+    "chat_text": "",
+    "order": 39,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Attacked_InvulnerablePlayer",
+    "display_text": "<col:HUDMessage_Error>This player has just respawned and cannot be damaged yet.</col>",
+    "chat_text": "",
+    "order": 40,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_BackupAnyRequest",
+    "display_text": "<CharacterNameA> has requested backup",
+    "chat_text": "",
+    "order": 41,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_CSA_TeammateSucceed",
+    "display_text": "A Team-Mate has Completed an Objective.",
+    "chat_text": "",
+    "order": 42,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_CombatAnyStreakArrestOn",
+    "display_text": "<CharacterNameA> is currently on an Arrest Streak of <ArrestStreakLength>",
+    "chat_text": "",
+    "order": 43,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_CombatAnyStreakArrestStop",
+    "display_text": "<CharacterNameA> has ended <CharacterNameB>'s Arrest Streak",
+    "chat_text": "",
+    "order": 44,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_CombatAnyStreakKillOn",
+    "display_text": "<CharacterNameA> is currently on a Kill Streak of <KillStreakLength>",
+    "chat_text": "",
+    "order": 45,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_CombatAnyStreakKillStop",
+    "display_text": "<CharacterNameA> has ended <CharacterNameB>'s Kill Streak",
+    "chat_text": "",
+    "order": 46,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_CombatAnyStreakWin",
+    "display_text": "<CharacterNameA> has won the last <MissionStreakLength> matches",
+    "chat_text": "",
+    "order": 47,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_CombatArrestOpp",
+    "display_text": "<col:Action_Enemy><ArrestingCharacterName></col> <hudtexture:KillIcon_Arrest> <col:Action_Team><ArrestedCharacterName></col>",
+    "chat_text": "",
+    "order": 48,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_CombatArrestTeam",
+    "display_text": "<col:Action_Team><CharacterNameA></col> <hudtexture:KillIcon_Arrest> <col:Action_Enemy><CharacterNameB></col>",
+    "chat_text": "",
+    "order": 49,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_CombatKillOpp",
+    "display_text": "<col:Action_Enemy><KillerCharacterName></col> <col:Action_Enemy_Assist><KillerAssistName></col><WeaponIcon> <col:Action_Team><KilledCharacterName></col>",
+    "chat_text": "",
+    "order": 50,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_CombatKillTeam",
+    "display_text": "<col:Action_Team><KillerCharacterName></col> <col:Action_Team_Assist><KillerAssistName></col><WeaponIcon> <col:Action_Enemy><KilledCharacterName></col>",
+    "chat_text": "",
+    "order": 51,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_CombatKillTeamOther",
+    "display_text": "<col:Action_Team><KillerCharacterName></col> <hudtexture:KillIcon_Generic> <col:Action_Enemy><KilledCharacterName></col>",
+    "chat_text": "",
+    "order": 52,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_CombatKillWithOwn",
+    "display_text": "You killed <CharacterNameA> with his own weapon!",
+    "chat_text": "",
+    "order": 53,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_CombatMuggedOpp",
+    "display_text": "<col:Action_Enemy><KillerCharacterName></col> <hudtexture:KillIcon_Generic> <col:Action_Team><KilledCharacterName></col>",
+    "chat_text": "",
+    "order": 54,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_CombatMuggedTeam",
+    "display_text": "<col:Action_Team><KillerCharacterName></col> <hudtexture:KillIcon_Generic> <col:Action_Enemy><KilledCharacterName></col>",
+    "chat_text": "",
+    "order": 55,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_CombatRescueOpp",
+    "display_text": "<col:Action_Enemy><CharacterNameA></col> <hudtexture:KillIcon_Rescue> <col:Action_Enemy><CharacterNameB></col>",
+    "chat_text": "",
+    "order": 56,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_CombatRescueTeam",
+    "display_text": "<col:Action_Team><CharacterNameA></col> <hudtexture:KillIcon_Rescue> <col:Action_Team><CharacterNameB></col>",
+    "chat_text": "",
+    "order": 57,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_CombatStunOpp",
+    "display_text": "<col:Action_Enemy><CharacterNameA></col> <hudtexture:KillIcon_Stun> <col:Action_Team><CharacterNameB></col>",
+    "chat_text": "",
+    "order": 58,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_CombatStunSelfOpp",
+    "display_text": "<hudtexture:KillIcon_Stun> <col:Action_Enemy><CharacterNameA></col>",
+    "chat_text": "",
+    "order": 59,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_CombatStunSelfTeam",
+    "display_text": "<hudtexture:KillIcon_Stun> <col:Action_Team><CharacterNameA></col>",
+    "chat_text": "",
+    "order": 60,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_CombatStunTMOpp",
+    "display_text": "<col:Action_Enemy><CharacterNameB></col> <hudtexture:KillIcon_Stun> <col:Action_Enemy><CharacterNameA></col>",
+    "chat_text": "",
+    "order": 61,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_CombatStunTMTeam",
+    "display_text": "<col:Action_Team><CharacterNameB></col> <hudtexture:KillIcon_Stun> <col:Action_Team><CharacterNameA></col>",
+    "chat_text": "",
+    "order": 62,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_CombatStunTeam",
+    "display_text": "<col:Action_Team><CharacterNameA></col> <hudtexture:KillIcon_Stun> <col:Action_Enemy><CharacterNameB></col>",
+    "chat_text": "",
+    "order": 63,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_CombatSuicideOpp",
+    "display_text": "<hudtexture:KillIcon_Generic> <col:Action_Enemy><CharacterNameA></col>",
+    "chat_text": "",
+    "order": 64,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_CombatSuicideTeam",
+    "display_text": "<hudtexture:KillIcon_Generic> <col:Action_Team><CharacterNameA></col>",
+    "chat_text": "",
+    "order": 65,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_CombatTKOpp",
+    "display_text": "<col:Action_Enemy><KillerCharacterName></col> <col:Action_Enemy_Assist><KillerAssistName></col><WeaponIcon> <col:Action_Enemy><KilledCharacterName></col>",
+    "chat_text": "",
+    "order": 66,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_CombatTKOppOther",
+    "display_text": "<col:Action_Enemy><KillerCharacterName></col> <hudtexture:KillIcon_Generic> <col:Action_Enemy><KilledCharacterName></col>",
+    "chat_text": "",
+    "order": 67,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_CombatTKTeam",
+    "display_text": "<col:Action_Team><KillerCharacterName></col> <col:Action_Team_Assist><KillerAssistName></col><WeaponIcon><col:Action_Team><KilledCharacterName></col>",
+    "chat_text": "",
+    "order": 68,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_CombatTKTeamOther",
+    "display_text": "<col:Action_Team><KillerCharacterName></col> <hudtexture:KillIcon_Generic> <col:Action_Team><KilledCharacterName></col>",
+    "chat_text": "",
+    "order": 69,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_CombatValentinePrimary",
+    "display_text": "<col:Valentine_Pink>You have spread the love!</col>",
+    "chat_text": "",
+    "order": 70,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_CombatValentineSecondary",
+    "display_text": "<col:Valentine_Pink>You have spread the love!</col>",
+    "chat_text": "",
+    "order": 71,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_CombatYouKillReward",
+    "display_text": "Kill Reward - $<APBCash> +$<APBCashBonusPremium>, <ContactStanding> +<ContactStandingBonusPremium> contact standing",
+    "chat_text": "",
+    "order": 72,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_CombatYouPlayerAssistReward",
+    "display_text": "Assist Reward - $<APBCash> +$<APBCashBonusPremium>, <ContactStanding> +<ContactStandingBonusPremium> contact standing",
+    "chat_text": "",
+    "order": 73,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_CombatYouStreakArrestOn",
+    "display_text": "You are on an <col:ceremony_highlight>Arrest Streak</col> of <ArrestStreakLength> arrests in a row without dying.",
+    "chat_text": "",
+    "order": 74,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_CombatYouStreakArrestStop",
+    "display_text": "You ended the Arrest Streak of <CharacterNameB>",
+    "chat_text": "",
+    "order": 75,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_CombatYouStreakKillOn",
+    "display_text": "You are on a <col:ceremony_highlight>Kill Streak</col> of <KillStreakLength> kills in a row without dying.",
+    "chat_text": "",
+    "order": 76,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_CombatYouStreakKillStop",
+    "display_text": "You ended the Kill Streak of <CharacterNameB>",
+    "chat_text": "",
+    "order": 77,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_CombatYouStreakWinOn",
+    "display_text": "You are on a <col:ceremony_highlight>Win Streak</col> of <MissionStreakLength> missions in a row without defeat.",
+    "chat_text": "",
+    "order": 78,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_CombatYouStunnedSomeoneReward",
+    "display_text": "Stun Reward - $<APBCash> +$<APBCashBonusPremium>, <ContactStanding> +<ContactStandingBonusPremium> contact standing",
+    "chat_text": "",
+    "order": 79,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_CombatYouWereArrested_Main",
+    "display_text": "You have been arrested and are awaiting rescue.\nIf you are not rescued, you will be respawned.",
+    "chat_text": "",
+    "order": 80,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Combat_DeathMsg_KillWeapon",
+    "display_text": "<WeaponIcon> \nKilled By\n<CharacterNameA>\n<KillerAssistName>",
+    "chat_text": "",
+    "order": 81,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Combat_DeathMsg_Suicide",
+    "display_text": "<hudtexture:KillIcon_Generic>\nSuicide",
+    "chat_text": "",
+    "order": 82,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Combat_DeathMsg_TK",
+    "display_text": "<WeaponIcon>\nKilled By\n<CharacterNameA>\n<KillerAssistName>",
+    "chat_text": "",
+    "order": 83,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Combat_Event_BunnyMug",
+    "display_text": "<col:Action_Team><CharacterNameA></col>\n<hudtexture:KillIcon_Generic>\n<col:Yellow>Drug-Mule</col>",
+    "chat_text": "",
+    "order": 84,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_ContactError_Aggrevated",
+    "display_text": "<col:HUDMessage_Error><ContactName> is pissed at you. Wait a while until they cool off.</col>",
+    "chat_text": "<ContactName> does not want to deal with you right now. You have rejected too many mission offers.",
+    "order": 85,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_ContactError_Ambient",
+    "display_text": "<col:HUDMessage_Error><ContactName> cannot be pledged to.</col>",
+    "chat_text": "",
+    "order": 86,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_ContactError_ContactLocked",
+    "display_text": "<col:HUDMessage_Error>You have not unlocked <ContactName> yet.</col>",
+    "chat_text": "",
+    "order": 87,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_ContactError_InMission",
+    "display_text": "<col:HUDMessage_Error>You must finish your mission before interacting with <ContactName>.</col>",
+    "chat_text": "",
+    "order": 88,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_ContactError_WrongFaction",
+    "display_text": "<col:HUDMessage_Error><ContactName> is of the opposing Faction.</col>",
+    "chat_text": "",
+    "order": 89,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_ContactInteraction_Pledged_Single",
+    "display_text": "You have pledged with <ContactName>",
+    "chat_text": "",
+    "order": 90,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_ContactInteraction_Unpledged_Single",
+    "display_text": "You are no longer pledged",
+    "chat_text": "",
+    "order": 91,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Contact_Pledge_Break",
+    "display_text": "You are no longer pledged",
+    "chat_text": "",
+    "order": 92,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Contact_Pledge_BreakFail_OnMission",
+    "display_text": "<col:HUDMessage_Error>Can't break pledge: You're in a mission!</col>",
+    "chat_text": "",
+    "order": 93,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Contact_Pledge_Make",
+    "display_text": "You have pledged your services to <ContactName>",
+    "chat_text": "",
+    "order": 94,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_DamagedYouTaskTargetObstruction_Player",
+    "display_text": "<col:HUDMessage_Error>You are taking damage because you are obstructing a mission target from respawning.</col>",
+    "chat_text": "",
+    "order": 95,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_DamagedYouTaskTargetObstruction_Vehicle",
+    "display_text": "<col:HUDMessage_Error>Your vehicle is taking damage because you are obstructing a mission target from respawning.</col>",
+    "chat_text": "",
+    "order": 96,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_DeliverVehicle_Fail_PlayerOwned",
+    "display_text": "<col:HUDMessage_Error>You cannot deliver a player-owned vehicle!</col>",
+    "chat_text": "",
+    "order": 97,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_DeliverVehicle_Fail_TaskItem",
+    "display_text": "<col:HUDMessage_Error>This vehicle is a part of a mission and can't be sold!</col>",
+    "chat_text": "",
+    "order": 98,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_DeployedUsable_InCooldown",
+    "display_text": "<col:HUDMessage_Error>Item is not ready yet</col>",
+    "chat_text": "",
+    "order": 99,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_DestroyProp_Halloween_Pumpkin",
+    "display_text": "<col:Halloween_Orange>Smashing!</col>",
+    "chat_text": "",
+    "order": 100,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_DestroyProp_Halloween_Pumpkin_Purple",
+    "display_text": "<col:Purple>Smashing!</col>\n<CollectablesRemaining> Purple Pumpkins left in <DistrictName>.",
+    "chat_text": "",
+    "order": 101,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_DestroyProp_Halloween_Pumpkin_Red",
+    "display_text": "<col:Red>Smashing!</col>\n<CollectablesRemaining> Red Pumpkins left in <DistrictName>.",
+    "chat_text": "",
+    "order": 102,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Display_Graffiti_Fail",
+    "display_text": "<col:HUDMessage_Error>You have no graffiti equipped!</col>",
+    "chat_text": "",
+    "order": 103,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_DistrictBlock",
+    "display_text": "<DistrictBlock>",
+    "chat_text": "",
+    "order": 104,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_EnterResupplyZone",
+    "display_text": "Press <Key:DoInventoryCSAKeyPressed> to change weapons/equipment.",
+    "chat_text": "",
+    "order": 105,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_EnterResupplyZone_Vehicle",
+    "display_text": "You are near a vehicle's resupply zone.  Go to the trunk for ammo or press [<Key:DoInventoryCSAKeyPressed>] to change your loadout.",
+    "chat_text": "",
+    "order": 106,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_EscalationAnyRequest",
+    "display_text": "<CharacterNameA> has requested escalation (<ObjectiveNumber>/<ObjectiveTotal>)",
+    "chat_text": "",
+    "order": 107,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Event_EggDrop",
+    "display_text": "<col:Yellow>Hunt Successful!</col>",
+    "chat_text": "",
+    "order": 108,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_FameAnyContactLevelMax",
+    "display_text": "<CharacterNameA> has maxed out <ContactName>",
+    "chat_text": "",
+    "order": 109,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_FameAnyContactLevelMax_Tutorial",
+    "display_text": "<CharacterNameA> has completed the tutorial missions.",
+    "chat_text": "",
+    "order": 110,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_FameAnyEarnAchievement",
+    "display_text": "<CharacterNameA> attained <AchievementName>",
+    "chat_text": "",
+    "order": 111,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_FameAnyRoleGainLevel",
+    "display_text": "<CharacterNameA> reached <RoleName> <RoleLevel>",
+    "chat_text": "",
+    "order": 112,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_FameAnyRoleLevelMax",
+    "display_text": "<CharacterNameA> reached <RoleName> level 15",
+    "chat_text": "",
+    "order": 113,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_FameMatchEarnedMedal",
+    "display_text": "<CharacterNameA> received the <MedalName> medal",
+    "chat_text": "",
+    "order": 114,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_FameTeamContactGainLevel",
+    "display_text": "<CharacterNameA> reached level <ContactLevel> with <ContactName>",
+    "chat_text": "",
+    "order": 115,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_FameTeamOrganisationGainLevel",
+    "display_text": "<CharacterNameA> reached level <OrganisationLevel> with the <OrganisationName>",
+    "chat_text": "",
+    "order": 116,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_FameYouContactGainLevel",
+    "display_text": "You have increased your standing with <col:ceremony_highlight><ContactName></col> to Level <col:ceremony_highlight><ContactLevel></col>.",
+    "chat_text": "<ContactName> Contact Level <ContactLevel>",
+    "order": 117,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_FameYouContactLevelMax",
+    "display_text": "You have earned the maximum standing from <col:ceremony_highlight><ContactName></col>.",
+    "chat_text": "Maximum standing earned: <ContactName>",
+    "order": 118,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_FameYouContactReferal",
+    "display_text": "You've been referred to <col:ceremony_highlight><ContactName></col>.",
+    "chat_text": "",
+    "order": 119,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_FameYouEarnAchievement",
+    "display_text": "You have attained the <col:ceremony_highlight><AchievementName></col> achievement",
+    "chat_text": "Achievement: <AchievementName>",
+    "order": 120,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_FameYouEarnMedal",
+    "display_text": "Medal Awarded! <col:ceremony_highlight><MedalName></col> : <MedalDescription>",
+    "chat_text": "",
+    "order": 121,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_FameYouOrganisationGainLevel",
+    "display_text": "You have increased your standing with <col:ceremony_highlight><OrganisationName></col> to Level <col:ceremony_highlight><OrganisationLevel></col>.",
+    "chat_text": "<OrganisationName> Level <OrganisationLevel>",
+    "order": 122,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_FameYouOrganisationMaxLevel",
+    "display_text": "You have earned the maximum standing with <col:ceremony_highlight><OrganisationName></col>.",
+    "chat_text": "Maximum standing earned: <OrganisationName>",
+    "order": 123,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_FameYouRoleGainLevel",
+    "display_text": "You have advanced to <col:ceremony_highlight><RoleName> Level <RoleLevel></col>.",
+    "chat_text": "Role: <RoleName> Level <RoleLevel>",
+    "order": 124,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_FameYouRoleMaxLevel",
+    "display_text": "You have completed all levels of the <col:ceremony_highlight><RoleName></col> role.",
+    "chat_text": "",
+    "order": 125,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_GroupAnyNewLeader",
+    "display_text": "<CharacterNameA> is now the group leader",
+    "chat_text": "",
+    "order": 126,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_GroupIsReady",
+    "display_text": "Your group is ready for missions.",
+    "chat_text": "",
+    "order": 127,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_GroupNotReady",
+    "display_text": "Your group is not ready for missions.",
+    "chat_text": "",
+    "order": 128,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_GroupYouNewLeader",
+    "display_text": "You are now the group leader!",
+    "chat_text": "",
+    "order": 129,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_HeatAnyNotorietyLevel0",
+    "display_text": "<CharacterNameA> has been committing crimes under the radar. Don't let them get away with it!",
+    "chat_text": "",
+    "order": 130,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_HeatSideNotorietyLevelDrops",
+    "display_text": "<CharacterNameA>'s Notoriety has fallen to <HeatLevel>",
+    "chat_text": "",
+    "order": 131,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_HeatSideNotorietyLevelRaise",
+    "display_text": "<CharacterNameA>'s Notoriety has risen to <HeatLevel>",
+    "chat_text": "",
+    "order": 132,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_HeatSidePrestigeLevelDrops",
+    "display_text": "<CharacterNameA>'s Prestige has fallen to <HeatLevel>",
+    "chat_text": "",
+    "order": 133,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_HeatSidePrestigeLevelRaise",
+    "display_text": "<CharacterNameA>'s Prestige has risen to <HeatLevel>",
+    "chat_text": "",
+    "order": 134,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_HeatSideWitnessedByEnforcer",
+    "display_text": "<CharacterNameA> witnessed <CharacterNameB>",
+    "chat_text": "",
+    "order": 135,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_HeatSideWitnessedCrime",
+    "display_text": "<CharacterNameA> witnessed <CharacterNameB>",
+    "chat_text": "",
+    "order": 136,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_HeatYouNotorietyLevel0",
+    "display_text": "Enforcers alerted to your stealthy play",
+    "chat_text": "",
+    "order": 137,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_HeatYouNotorietyLevel0HUD",
+    "display_text": "Notoriety Level 0 - You have successfully avoided attention, so your rewards will improve.",
+    "chat_text": "",
+    "order": 138,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_HeatYouNotorietyLevel1",
+    "display_text": "Notoriety Level <HeatLevel>: You will receive standard rewards. Enforcers will not be dispatched against you unless they witness you committing a crime.",
+    "chat_text": "",
+    "order": 139,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_HeatYouNotorietyLevel2Drop",
+    "display_text": "Notoriety Level <HeatLevel>: You will only receive standard rewards and Enforcers will only be dispatched against your missions.",
+    "chat_text": "",
+    "order": 140,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_HeatYouNotorietyLevel2Rise",
+    "display_text": "Notoriety Level <HeatLevel>: Enforcers may now be dispatched against your missions. You will receive standard rewards.",
+    "chat_text": "",
+    "order": 141,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_HeatYouNotorietyLevel3Drop",
+    "display_text": "Notoriety Level <HeatLevel>: You will receive less rewards. Enforcers may be dispatched against you.",
+    "chat_text": "",
+    "order": 142,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_HeatYouNotorietyLevel3Raise",
+    "display_text": "Notoriety Level <HeatLevel>: You will receive a small increase in rewards and Enforcers may be dispatched against you.",
+    "chat_text": "",
+    "order": 143,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_HeatYouNotorietyLevel4Drop",
+    "display_text": "Notoriety Level <HeatLevel>: You can now only kill or be killed by those within your mission. Your rewards will be less significant.",
+    "chat_text": "",
+    "order": 144,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_HeatYouNotorietyLevel4Raise",
+    "display_text": "Notoriety Level <HeatLevel>: You can be matched against stronger opponents and will earn greater rewards.",
+    "chat_text": "",
+    "order": 145,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_HeatYouNotorietyLevelDrops",
+    "display_text": "Your <col:ceremony_highlight>Notoriety</col> has fallen to <col:ceremony_highlight><HeatLevel></col>",
+    "chat_text": "",
+    "order": 146,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_HeatYouNotorietyLevelRaise",
+    "display_text": "Your <col:ceremony_highlight>Notoriety</col> has risen to <col:ceremony_highlight><HeatLevel></col>",
+    "chat_text": "",
+    "order": 147,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_HeatYouPrestigeLevel0",
+    "display_text": "Prestige Level 0 - For failing to uphold the duties of an Enforcer, your rewards will be diminished!",
+    "chat_text": "Prestige Level 0: You have failed to uphold the duties of an Enforcer and will receive significantly lower rewards.",
+    "order": 148,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_HeatYouPrestigeLevel0HUD",
+    "display_text": "Prestige Level 0 - For failing to uphold the duties of an Enforcer, your rewards will be diminished!",
+    "chat_text": "",
+    "order": 149,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_HeatYouPrestigeLevel1234Increase",
+    "display_text": "Prestige Level <HeatLevel>: You can be matched against stronger opponents and will earn greater rewards.",
+    "chat_text": "",
+    "order": 150,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_HeatYouPrestigeLevel123Drop",
+    "display_text": "Prestige Level <HeatLevel>: You will receive reduced rewards and less challenging matches.",
+    "chat_text": "",
+    "order": 151,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_HeatYouPrestigeLevel4Drop",
+    "display_text": "Prestige Level <HeatLevel>: You can now only kill or be killed by those within your mission. Your rewards will not be as significant.",
+    "chat_text": "",
+    "order": 152,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_HeatYouPrestigeLevelDrops",
+    "display_text": "Your <col:ceremony_highlight>Prestige</col> has fallen to <col:ceremony_highlight><HeatLevel></col>",
+    "chat_text": "",
+    "order": 153,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_HeatYouPrestigeLevelRaise",
+    "display_text": "Your <col:ceremony_highlight>Prestige</col> has risen to <col:ceremony_highlight><HeatLevel></col>",
+    "chat_text": "",
+    "order": 154,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_HeatYouWitness",
+    "display_text": "You witnessed <CharacterNameB>",
+    "chat_text": "",
+    "order": 155,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_HeatYouYourCrimeWasWitnessed",
+    "display_text": "You have been witnessed by <CharacterNameB>",
+    "chat_text": "",
+    "order": 156,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_HeatYouYourCrimeWasWitnessed_Tutorial",
+    "display_text": "You have been witnessed by <CharacterNameB>",
+    "chat_text": "",
+    "order": 157,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_HeatYou_WitnessCrime1_CrimIdle_EnfIdle",
+    "display_text": "You witnessed <CharacterNameB>.",
+    "chat_text": "",
+    "order": 158,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_HeatYou_WitnessCrime2_CrimIdle_EnfMission",
+    "display_text": "Please continue your current task; other units can deal with <CharacterNameB>",
+    "chat_text": "",
+    "order": 159,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_HeatYou_WitnessCrime3_CrimIdle_EnfMatch",
+    "display_text": "Please continue pursuing your current suspect(s); other units can deal with <CharacterNameB>",
+    "chat_text": "",
+    "order": 160,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_HeatYou_WitnessCrime4_CrimMatch_EnfIdle",
+    "display_text": "Other units are already opposed against <CharacterNameB>; please pursue other targets",
+    "chat_text": "",
+    "order": 161,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_HeatYou_WitnessCrime5_CrimMatch_EnfMission",
+    "display_text": "Please continue with your current task; other units are already opposed against <CharacterNameB>",
+    "chat_text": "",
+    "order": 162,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_HeatYou_WitnessCrime6_CrimMatch_EnfMatch",
+    "display_text": "Please continue pursuing your current suspect(s); other units are already opposed against <CharacterNameB>",
+    "chat_text": "",
+    "order": 163,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_HeatYou_WitnessCrime7_BothOnSameMatch",
+    "display_text": "You are already in pursuit of <CharacterNameB>",
+    "chat_text": "",
+    "order": 164,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_HeatYou_WitnessCrime8_CrimOvermatched",
+    "display_text": "Hold off pursuit, <CharacterNameB> isn't worth bothering with!",
+    "chat_text": "",
+    "order": 165,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_HeatYou_WitnessCrime9_EnfOvermatched",
+    "display_text": "Back off, <CharacterNameB> is too strong to take on without reinforcements",
+    "chat_text": "",
+    "order": 166,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_HeatYou_WitnessCrime_Tutorial",
+    "display_text": "You witnessed <CharacterNameB>.",
+    "chat_text": "",
+    "order": 167,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Heat_BountyClaimed_AnyCrimKillCrim",
+    "display_text": "<col:ceremony_highlight><CharacterNameA></col> killed fellow criminal <col:ceremony_highlight><CharacterNameB></col> and has been penalised.",
+    "chat_text": "",
+    "order": 168,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Heat_BountyClaimed_AnyCrimKillEnf",
+    "display_text": "<col:ceremony_highlight><CharacterNameA></col> executed <col:ceremony_highlight><CharacterNameB></col> and claimed the bounty on them.",
+    "chat_text": "",
+    "order": 169,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Heat_BountyClaimed_AnyEnfKillCrim",
+    "display_text": "<col:ceremony_highlight><CharacterNameA></col> brought <col:ceremony_highlight><CharacterNameB></col> to justice and claimed the bounty on their head.",
+    "chat_text": "",
+    "order": 170,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Heat_BountyClaimed_AnyEnfKillEnf",
+    "display_text": "<col:ceremony_highlight><CharacterNameA></col> executed fellow Enforcer <col:ceremony_highlight><CharacterNameB></col> and has been penalised.",
+    "chat_text": "",
+    "order": 171,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Heat_BountyClaimed_AnyKillLevel5",
+    "display_text": "<CharacterNameA> collected the bounty for <CharacterNameB>",
+    "chat_text": "",
+    "order": 172,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Heat_BountyClaimed_You",
+    "display_text": "You collected the bounty for <CharacterNameB>",
+    "chat_text": "",
+    "order": 173,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Heat_BountyClaimed_YouCrimKillCrim",
+    "display_text": "You killed fellow criminal <col:ceremony_highlight><CharacterNameB></col> and have been penalised.",
+    "chat_text": "",
+    "order": 174,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Heat_BountyClaimed_YouCrimKillEnf",
+    "display_text": "You executed <col:ceremony_highlight><CharacterNameB></col> and claimed the bounty the on their head.",
+    "chat_text": "",
+    "order": 175,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Heat_BountyClaimed_YouEnfKillCrim",
+    "display_text": "You claimed the bounty on <col:ceremony_highlight><CharacterNameB></col>, bringing them to justice.",
+    "chat_text": "",
+    "order": 176,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Heat_BountyClaimed_YouEnfKillEnf",
+    "display_text": "You have executed a <col:ceremony_highlight>fellow Enforcer</col> and have been penalised.",
+    "chat_text": "",
+    "order": 177,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Heat_Bounty_AnyNotorietyLevel5",
+    "display_text": "A bounty has been placed on <CharacterNameA>",
+    "chat_text": "",
+    "order": 178,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Heat_Bounty_AnyNotorietyLevel5ForCriminals",
+    "display_text": "A bounty has been placed on <col:ceremony_highlight><CharacterNameA></col>. Kill them to claim the reward.",
+    "chat_text": "",
+    "order": 179,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Heat_Bounty_AnyNotorietyLevel5ForEnforcers",
+    "display_text": "A bounty has been placed on <col:ceremony_highlight><CharacterNameA></col>. All units intercept!",
+    "chat_text": "",
+    "order": 180,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Heat_Bounty_AnyPrestigeLevel5",
+    "display_text": "There's a contract out on <col:ceremony_highlight><CharacterNameA></col> – execute them!",
+    "chat_text": "",
+    "order": 181,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Heat_Bounty_AnyPrestigeLevel5_2",
+    "display_text": "There's a contract out on <CharacterNameA>",
+    "chat_text": "",
+    "order": 182,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Heat_Bounty_TeamNotorietyLevel5",
+    "display_text": "A bounty has been placed on your team-mate, <col:ceremony_highlight><CharacterNameA></col>. Watch out!",
+    "chat_text": "",
+    "order": 183,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Heat_Bounty_TeamPrestigeLevel5",
+    "display_text": "A bounty has been placed on your team-mate, <col:ceremony_highlight><CharacterNameA></col>. Watch out!",
+    "chat_text": "",
+    "order": 184,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Heat_Bounty_YouNotorietyLevel5",
+    "display_text": "A <col:ceremony_highlight>bounty</col> has been placed on your head! Take out as many enforcers as you can before they take you down.",
+    "chat_text": "",
+    "order": 185,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Heat_Bounty_YouPrestigeLevel5",
+    "display_text": "A <col:ceremony_highlight>hit</col> is out on you!  Take out as many criminals as you can along the way.",
+    "chat_text": "",
+    "order": 186,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Heat_Tutorial_YouNotorietyLevel0",
+    "display_text": "Notoriety Level <HeatLevel>: Within an Action District you will receive standard rewards. Enforcers would only be dispatched against you if they witness you committing a crime.",
+    "chat_text": "",
+    "order": 187,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Heat_Tutorial_YouNotorietyLevel1",
+    "display_text": "Notoriety Level <HeatLevel>: Within an Action District you will receive standard rewards. Enforcers would only be dispatched against you if they witness you committing a crime.",
+    "chat_text": "",
+    "order": 188,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Heat_Tutorial_YouNotorietyLevel2Drop",
+    "display_text": "Notoriety Level <HeatLevel>: You would only be receiving standard rewards within an Action District and Enforcers would only be dispatched against your missions.",
+    "chat_text": "",
+    "order": 189,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Heat_Tutorial_YouNotorietyLevel2Rise",
+    "display_text": "Notoriety Level <HeatLevel>: Within an Action District, Enforcers might now be dispatched against your missions. You would still receive standard rewards.",
+    "chat_text": "",
+    "order": 190,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Heat_Tutorial_YouNotorietyLevel3Drop",
+    "display_text": "Notoriety Level <HeatLevel>: Within an Action District you would receive fewer rewards. Enforcers may be dispatched against you.",
+    "chat_text": "",
+    "order": 191,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Heat_Tutorial_YouNotorietyLevel3Rise",
+    "display_text": "Notoriety Level <HeatLevel>: You would be receiving a small increase in rewards within an Action District and Enforcers may be dispatched against you.",
+    "chat_text": "",
+    "order": 192,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Heat_Tutorial_YouNotorietyLevel4Drop",
+    "display_text": "Notoriety Level <HeatLevel>: You would now only be able to kill or be killed by those within your mission. Your rewards would be less significant.",
+    "chat_text": "",
+    "order": 193,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Heat_Tutorial_YouNotorietyLevel4Rise",
+    "display_text": "Notoriety Level <HeatLevel>: You could now be matched against stronger opponents and will earn greater rewards within an Action District.",
+    "chat_text": "",
+    "order": 194,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Heat_Tutorial_YouNotorietyLevel5",
+    "display_text": "Notoriety Level 5: You would be receiving significantly improved rewards within an Action District. You would also be able to kill and be killed by any player in the district.",
+    "chat_text": "",
+    "order": 195,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Heat_Tutorial_YouPrestigeLevel0",
+    "display_text": "Prestige Level 0: You have failed to uphold the duties of an Enforcer and will receive significantly lower rewards.",
+    "chat_text": "",
+    "order": 196,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Heat_Tutorial_YouPrestigeLevel1234Rise",
+    "display_text": "Prestige Level <HeatLevel>: You can be matched against stronger opponents and will earn greater rewards.",
+    "chat_text": "",
+    "order": 197,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Heat_Tutorial_YouPrestigeLevel123Drop",
+    "display_text": "Prestige Level <HeatLevel>: You will receive reduced rewards and less challenging matches.",
+    "chat_text": "",
+    "order": 198,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Heat_Tutorial_YouPrestigeLevel4Drop",
+    "display_text": "Prestige Level <HeatLevel>: You can now only kill or be killed by those within your mission. Your rewards will not be as significant.",
+    "chat_text": "",
+    "order": 199,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Heat_Tutorial_YouPrestigeLevel5",
+    "display_text": "Prestige Level 5: You will earn high rewards and can engage any player in combat.",
+    "chat_text": "",
+    "order": 200,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_ItemOperation_Fail_InsufficientFunds",
+    "display_text": "<col:HUDMessage_Error>You have insufficient funds to perform this operation</col>",
+    "chat_text": "",
+    "order": 201,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_JoinGroup_LeaderInDifferentMission",
+    "display_text": "You have joined a Group that is already on a Mission.",
+    "chat_text": "",
+    "order": 202,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_LocationBeacon_Enter",
+    "display_text": "You are near <LocationBeacon>",
+    "chat_text": "",
+    "order": 203,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_MailBox_Fail_WrongFaction",
+    "display_text": "<col:HUDMessage_Error>Your faction is not allowed to use this mailbox</col>",
+    "chat_text": "",
+    "order": 204,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_MatchAbandonSideTooSmall",
+    "display_text": "Match Over – Opponents have fled",
+    "chat_text": "",
+    "order": 205,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_MatchAbandonSoloLeftSide",
+    "display_text": "<CharacterNameA> has fled from <CharacterNameB>'s team",
+    "chat_text": "",
+    "order": 206,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_MatchAbandonSoloVsSide",
+    "display_text": "<CharacterNameA> has fled from <CharacterNameB>'s team",
+    "chat_text": "",
+    "order": 207,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_MatchAbandonSoloVsSolo",
+    "display_text": "<CharacterNameA> has fled from <CharacterNameB>",
+    "chat_text": "",
+    "order": 208,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_MatchAnyWinSideVsSide",
+    "display_text": "<CharacterNameA>'s team has defeated <CharacterNameB>'s team",
+    "chat_text": "",
+    "order": 209,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_MatchAnyWinSideVsSolo",
+    "display_text": "<CharacterNameA>'s team has defeated <CharacterNameB>",
+    "chat_text": "",
+    "order": 210,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_MatchAnyWinSoloVsSide",
+    "display_text": "<CharacterNameA> has defeated <CharacterNameB>'s team",
+    "chat_text": "",
+    "order": 211,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_MatchAnyWinSoloVsSolo",
+    "display_text": "<CharacterNameA> has defeated <CharacterNameB>",
+    "chat_text": "",
+    "order": 212,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_MatchUnopposed",
+    "display_text": "Mission over",
+    "chat_text": "",
+    "order": 213,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_MatchYouAbandon",
+    "display_text": "<col:HUDMessage_Error>The team leader removed you from the mission</col>",
+    "chat_text": "",
+    "order": 214,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_MatchYouLoseSolo",
+    "display_text": "Mission over - you lost",
+    "chat_text": "",
+    "order": 215,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_MatchYouLoseTeam",
+    "display_text": "Mission over - your team lost",
+    "chat_text": "",
+    "order": 216,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_MatchYouLoseUnopposed",
+    "display_text": "Mission failed",
+    "chat_text": "",
+    "order": 217,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_MatchYouSomeGroupMemberIsNotInTheMission",
+    "display_text": "<col:HUDMessage_Error>Not all members of your group will be on this mission</col>",
+    "chat_text": "",
+    "order": 218,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_MatchYouWinSolo",
+    "display_text": "Mission over - you won",
+    "chat_text": "",
+    "order": 219,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_MatchYouWinTeam",
+    "display_text": "Mission over - your team won",
+    "chat_text": "",
+    "order": 220,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_MinigameCompleteReward",
+    "display_text": "Event Complete",
+    "chat_text": "",
+    "order": 221,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_MinigameElfEvent_Assigned_Bodyguard",
+    "display_text": "You are now a bodyguard, get a head start and protect your VIP: <CharacterNameA>. The match starts soon.",
+    "chat_text": "You are now a bodyguard, get a head start and protect your VIP: <CharacterNameA>. The match starts soon.",
+    "order": 222,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_MinigameElfEvent_Assigned_VIP",
+    "display_text": "You are now the VIP, get a head start and stay alive!",
+    "chat_text": "You are now the VIP, get a head start and stay alive!",
+    "order": 223,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_MinigameElfEvent_Complete_Kills",
+    "display_text": "",
+    "chat_text": "During the elf event, you managed to make <ObjectiveTotal> kill(s)!",
+    "order": 224,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_MinigameElfEvent_Complete_NonVIP_Lost",
+    "display_text": "Santa and the elves live to fight another day. Ho Ho Ho, Merry Christmas!",
+    "chat_text": "Santa and the elves live to fight another day. Ho Ho Ho, Merry Christmas!",
+    "order": 225,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_MinigameElfEvent_Complete_NonVIP_Shame",
+    "display_text": "Unfortunately <CharacterNameA> could no longer bear all of this, and decied to be a grinch.",
+    "chat_text": "Unfortunately <CharacterNameA> could no longer bear all of this, and decied to be a grinch.",
+    "order": 226,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_MinigameElfEvent_Complete_NonVIP_Won",
+    "display_text": "<CharacterNameA> took out Santa! Ho Ho Ho, Merry Christmas!",
+    "chat_text": "<CharacterNameA> took out Santa! Ho Ho Ho, Merry Christmas!",
+    "order": 227,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_MinigameElfEvent_Complete_VIP_Lost",
+    "display_text": "<CharacterNameA> took out Santa. Ho Ho Ho, Merry Christmas!",
+    "chat_text": "<CharacterNameA> took out Santa. Ho Ho Ho, Merry Christmas!",
+    "order": 228,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_MinigameElfEvent_Complete_VIP_Shame",
+    "display_text": "You grinch, you ruined chrimstmas for everyone!",
+    "chat_text": "You grinch, you ruined chrimstmas for everyone!",
+    "order": 229,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_MinigameElfEvent_Complete_VIP_Won",
+    "display_text": "Santa and the elves live to fight another day. Ho Ho Ho, Merry Christmas!",
+    "chat_text": "Santa and the elves live to fight another day. Ho Ho Ho, Merry Christmas!",
+    "order": 230,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_MinigameElfEvent_Hunt_Started",
+    "display_text": "The hunt is on! Everyone, try to take out <CharacterNameA>, and don't let their elf bodyguards stop you!",
+    "chat_text": "The hunt is on! Everyone, try to take out <CharacterNameA>, and don't let their elf bodyguards stop you!",
+    "order": 231,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_MinigameElfEvent_Hunt_Started_VIPGroup",
+    "display_text": "The hunt is on! Protect <CharacterNameA> from the horde!",
+    "chat_text": "The hunt is on! Protect <CharacterNameA> from the horde!",
+    "order": 232,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_MinigameFDM_Complete_CriminalsLose",
+    "display_text": "Enforcers win the Snowball Fight",
+    "chat_text": "",
+    "order": 233,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_MinigameFDM_Complete_CriminalsWin",
+    "display_text": "Criminals win the Snowball Fight!",
+    "chat_text": "",
+    "order": 234,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_MinigameFDM_Complete_EnforcersLose",
+    "display_text": "Criminals win the Snowball Fight",
+    "chat_text": "",
+    "order": 235,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_MinigameFDM_Complete_EnforcersWin",
+    "display_text": "Enforcers win the Snowball Fight!",
+    "chat_text": "",
+    "order": 236,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_MinigameFDM_Complete_Kills_Lose",
+    "display_text": "",
+    "chat_text": "Congratulations, you completed a Snowball Fight! You took down <ObjectiveTotal> enemies.",
+    "order": 237,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_MinigameFDM_Complete_Kills_Win",
+    "display_text": "",
+    "chat_text": "Congratulations, you won a Snowball Fight! You took down <ObjectiveTotal> enemies.",
+    "order": 238,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_MinigameGoldenGun_TurnIn_Others",
+    "display_text": "<CharacterNameA> has enough kills to turn in the weapon!",
+    "chat_text": "",
+    "order": 239,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_MinigameGoldenGun_TurnIn_Player",
+    "display_text": "You have enough kills, turn in the weapon to the nearest contact",
+    "chat_text": "",
+    "order": 240,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Minigame_Player_Joined",
+    "display_text": "<CharacterNameA> has joined the Event",
+    "chat_text": "<CharacterNameA> has joined the Event",
+    "order": 241,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Minigame_Player_Left",
+    "display_text": "<CharacterNameA> has left the Event",
+    "chat_text": "<CharacterNameA> has left the Event",
+    "order": 242,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Minigame_Protagonist_Assigned_GoldenGun",
+    "display_text": "You are the Chosen One!",
+    "chat_text": "You are the Chosen One!",
+    "order": 243,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Minigame_Protagonist_Assigned_GoldenGun_Others",
+    "display_text": "<CharacterNameA> is the Chosen One!",
+    "chat_text": "<CharacterNameA> is the Chosen One!",
+    "order": 244,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Minigame_Protagonist_Assigned_Mug",
+    "display_text": "You are carrying the most eggs!",
+    "chat_text": "You are carrying the most eggs!",
+    "order": 245,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Minigame_Protagonist_Assigned_Mug_Others",
+    "display_text": "<CharacterNameA> is carrying the most eggs!",
+    "chat_text": "<CharacterNameA> is carrying the most eggs!",
+    "order": 246,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Minigame_Started_Generic",
+    "display_text": "<col:Yellow>'<MinigameName>' has started.",
+    "chat_text": "'<MinigameName>' has started.",
+    "order": 247,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Minigame_Started_GoldenGun",
+    "display_text": "<col:Yellow>'<MinigameName>' has started.",
+    "chat_text": "'<MinigameName>' has started. Find the weapon to become the Chosen One.",
+    "order": 248,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Minigame_Started_Mugging",
+    "display_text": "<col:Yellow>'<MinigameName>' has started.",
+    "chat_text": "'<MinigameName>' has started, the bunnies and chickens are on the loose. Find them and steal their eggs!",
+    "order": 249,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_MissionSideLeaderOfferReceivedDispatch",
+    "display_text": "Mission Offer: <OfferType>",
+    "chat_text": "",
+    "order": 250,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_MissionSideLeaderOfferReceivedMission",
+    "display_text": "Mission Offer: <JustificationText>",
+    "chat_text": "",
+    "order": 251,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_MissionSideMemberOfferReceivedDispatch",
+    "display_text": "Group leader received mission offer: <OfferType>",
+    "chat_text": "",
+    "order": 252,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_MissionSideMemberOfferReceivedMission",
+    "display_text": "Group leader received mission offer: <JustificationText>",
+    "chat_text": "",
+    "order": 253,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_MissionSideOfferRejected",
+    "display_text": "Mission Offer rejected",
+    "chat_text": "",
+    "order": 254,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_MissionSideOfferRevoked",
+    "display_text": "Mission Offer has been revoked",
+    "chat_text": "",
+    "order": 255,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_Arrests",
+    "display_text": "Mission Over -- You scored the required number of kills or arrests.",
+    "chat_text": "",
+    "order": 256,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_Arrests_Fail",
+    "display_text": "Mission Over -- Opponents scored the required number of kills or arrests.",
+    "chat_text": "",
+    "order": 257,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_BackupGroupArrived",
+    "display_text": "A group of <GroupSize>, led by <CharacterNameA>, has joined your team",
+    "chat_text": "",
+    "order": 258,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_BackupPlayerArrived",
+    "display_text": "<CharacterNameA> has joined your team",
+    "chat_text": "",
+    "order": 259,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_DispatchedVsGroup",
+    "display_text": "<col:HUDMessage_APB>You have been dispatched against a group of <NumOpponents>, led by <CharacterNameA></col>",
+    "chat_text": "",
+    "order": 260,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_DispatchedVsPlayer",
+    "display_text": "<col:HUDMessage_APB>You have been dispatched against <CharacterNameA></col>",
+    "chat_text": "",
+    "order": 261,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_Draw",
+    "display_text": "Mission Over -- The mission ended in a draw.",
+    "chat_text": "",
+    "order": 262,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_FinalStage",
+    "display_text": "<col:HUDMessage_Mission>Final Stage!</col>",
+    "chat_text": "",
+    "order": 263,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_Kills",
+    "display_text": "Mission Over -- You scored the required number of kills.",
+    "chat_text": "",
+    "order": 264,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_Kills_Fail",
+    "display_text": "Mission Over -- Opponents scored the required number of kills.",
+    "chat_text": "",
+    "order": 265,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_NotFinalStage",
+    "display_text": "<col:HUDMessage_Mission>Stage completed!\nYou are now on Stage <MissionStage></col>",
+    "chat_text": "",
+    "order": 266,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_Objective_Any_Arson",
+    "display_text": "<CharacterNameA> completed arson",
+    "chat_text": "",
+    "order": 267,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_Objective_Any_Bomb",
+    "display_text": "<CharacterNameA> planted a bomb",
+    "chat_text": "",
+    "order": 268,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_Objective_Any_BombDisposal",
+    "display_text": "<CharacterNameA> defused a bomb",
+    "chat_text": "",
+    "order": 269,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_Objective_Any_Burglary",
+    "display_text": "<CharacterNameA> completed a burglary",
+    "chat_text": "",
+    "order": 270,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_Objective_Any_CSI",
+    "display_text": "<CharacterNameA> completed investigation",
+    "chat_text": "",
+    "order": 271,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_Objective_Any_Delivery",
+    "display_text": "<CharacterNameA> made a delivery",
+    "chat_text": "",
+    "order": 272,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_Objective_Any_Delivery_Partial",
+    "display_text": "<AmmoAmount> items out of <AmmoCost> delivered",
+    "chat_text": "",
+    "order": 273,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_Objective_Any_Graffiti",
+    "display_text": "<CharacterNameA> sprayed graffiti",
+    "chat_text": "",
+    "order": 274,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_Objective_Any_Hacking",
+    "display_text": "<CharacterNameA> hacked the objective",
+    "chat_text": "",
+    "order": 275,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_Objective_Any_Pickup",
+    "display_text": "<CharacterNameA> picked up an item",
+    "chat_text": "",
+    "order": 276,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_Objective_Any_Raid",
+    "display_text": "<CharacterNameA> completed raid",
+    "chat_text": "",
+    "order": 277,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_Objective_Any_Sabotage",
+    "display_text": "<CharacterNameA> completed sabotage",
+    "chat_text": "",
+    "order": 278,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_Objective_Any_VehicleBreakIn",
+    "display_text": "<CharacterNameA> broke into the vehicle",
+    "chat_text": "",
+    "order": 279,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_Objective_You_Arson",
+    "display_text": "You completed arson",
+    "chat_text": "",
+    "order": 280,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_Objective_You_Bomb",
+    "display_text": "You planted a bomb",
+    "chat_text": "",
+    "order": 281,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_Objective_You_BombDisposal",
+    "display_text": "You defused a bomb",
+    "chat_text": "",
+    "order": 282,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_Objective_You_Burglary",
+    "display_text": "You completed a burglary",
+    "chat_text": "",
+    "order": 283,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_Objective_You_CSI",
+    "display_text": "You completed investigation",
+    "chat_text": "",
+    "order": 284,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_Objective_You_Delivery",
+    "display_text": "You made a delivery",
+    "chat_text": "",
+    "order": 285,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_Objective_You_Graffiti",
+    "display_text": "You sprayed graffiti",
+    "chat_text": "",
+    "order": 286,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_Objective_You_Hacking",
+    "display_text": "You hacked the objective",
+    "chat_text": "",
+    "order": 287,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_Objective_You_Pickup",
+    "display_text": "You picked up an item",
+    "chat_text": "",
+    "order": 288,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_Objective_You_Raid",
+    "display_text": "You completed raid",
+    "chat_text": "",
+    "order": 289,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_Objective_You_Sabotage",
+    "display_text": "You completed sabotage",
+    "chat_text": "",
+    "order": 290,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_Objective_You_VehicleBreakIn",
+    "display_text": "You broke into the vehicle",
+    "chat_text": "",
+    "order": 291,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_OppositionCompleteStage",
+    "display_text": "<col:HUDMessage_Mission>The opposition has completed their objective! \nNow on Stage <MissionStage></col>",
+    "chat_text": "",
+    "order": 292,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_OppositionGroupAdded",
+    "display_text": "<col:HUDMessage_APB>A group of <GroupSize>, led by <CharacterNameA>, has joined the opposition\nTotal opposition: <TotalGroupSize></col>",
+    "chat_text": "",
+    "order": 293,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_OppositionGroupAssigned",
+    "display_text": "<col:HUDMessage_APB>A group led by <CharacterNameA> has been dispatched against you\nTotal opposition: <TotalGroupSize></col>",
+    "chat_text": "",
+    "order": 294,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_OppositionPlayerAdded",
+    "display_text": "<col:HUDMessage_APB><CharacterNameA> has joined the opposition\nTotal opposition: <TotalGroupSize></col>",
+    "chat_text": "",
+    "order": 295,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_OppositionPlayerAssigned",
+    "display_text": "<col:HUDMessage_APB><CharacterNameA> has been dispatched against you.</col>",
+    "chat_text": "",
+    "order": 296,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_OppositionPlayerRemoved",
+    "display_text": "<col:HUDMessage_APB><CharacterNameA> has left the opposition\nTotal opposition: <TotalGroupSize></col>",
+    "chat_text": "",
+    "order": 297,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_OwnerGroupAdded",
+    "display_text": "<col:HUDMessage_APB>A group of <GroupSize>, led by <CharacterNameA>, has been called in against you\nTotal opposition: <TotalGroupSize></col>",
+    "chat_text": "",
+    "order": 298,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_OwnerPlayerAdded",
+    "display_text": "<col:HUDMessage_APB><CharacterNameA> has been called in against you\nTotal opposition: <TotalGroupSize></col>",
+    "chat_text": "",
+    "order": 299,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_OwnerPlayerRemoved",
+    "display_text": "<col:HUDMessage_APB><CharacterNameA> has left the opposition\nTotal opposition: <TotalGroupSize></col>",
+    "chat_text": "",
+    "order": 300,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_Prevent",
+    "display_text": "Mission Over -- Opponents have failed to complete their objectives.",
+    "chat_text": "",
+    "order": 301,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_Prevent_Fail",
+    "display_text": "Mission Over -- Opponents have completed their objectives.",
+    "chat_text": "",
+    "order": 302,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_Task_Item_Delivered_Ally",
+    "display_text": "<col:HUDMessage_Mission>Your team has delivered <AmmoAmount> items out of <AmmoCost></col>",
+    "chat_text": "",
+    "order": 303,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_Task_Item_Delivered_Enemy",
+    "display_text": "<col:HUDMessage_Mission>The opposition has delivered <AmmoAmount> items out of <AmmoCost>!</col>",
+    "chat_text": "",
+    "order": 304,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_Time_OneMinuteRemaining",
+    "display_text": "<col:HUDMessage_Mission>One minute remaining!</col>",
+    "chat_text": "",
+    "order": 305,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Mission_Time_Opp_OneMinute",
+    "display_text": "<col:HUDMessage_Mission>One minute remaining!</col>",
+    "chat_text": "",
+    "order": 306,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Modifier_Unapplied_Expired",
+    "display_text": "Your <ModifierName> modifier expired and has been unapplied.",
+    "chat_text": "Your <ModifierName> modifier expired and has been unapplied.",
+    "order": 307,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_OpenWorldItem_Spawned",
+    "display_text": "Pick up the item",
+    "chat_text": "",
+    "order": 308,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_OpenWorldItems_Spawned",
+    "display_text": "Pick up the items",
+    "chat_text": "",
+    "order": 309,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RatingYouChanged",
+    "display_text": "You are now Rank: <RatingLevel>",
+    "chat_text": "",
+    "order": 310,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RemovedFromGroup",
+    "display_text": "You are no longer a part of the group.",
+    "chat_text": "",
+    "order": 311,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Resupply_Fail",
+    "display_text": "<col:HUDMessage_Error>You must be at a vending machine or a resupply zone to restore your ammunition.</col>",
+    "chat_text": "",
+    "order": 312,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardBonus",
+    "display_text": "Bonus - $<APBCash> +$<APBCashBonusPremium>",
+    "chat_text": "",
+    "order": 313,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardBonusVehicleArmoredVan",
+    "display_text": "Armored Van Bonus - $<APBCash> +$<APBCashBonusPremium>",
+    "chat_text": "",
+    "order": 314,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardBonusVehicleCheap",
+    "display_text": "Cheap Vehicle Bonus - $<APBCash> +$<APBCashBonusPremium>",
+    "chat_text": "",
+    "order": 315,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardBonusVehicleExpensive",
+    "display_text": "Expensive Vehicle Bonus - $<APBCash> +$<APBCashBonusPremium>",
+    "chat_text": "",
+    "order": 316,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardBonusVehicleMidPrice",
+    "display_text": "Mid Price Vehicle Bonus - $<APBCash> +$<APBCashBonusPremium>",
+    "chat_text": "",
+    "order": 317,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardBonusVehiclePristine",
+    "display_text": "Pristine Vehicle Bonus - $<APBCash> +$<APBCashBonusPremium>",
+    "chat_text": "",
+    "order": 318,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardCashOnly",
+    "display_text": "You've gained $<APBCash>",
+    "chat_text": "",
+    "order": 319,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardCashTokens",
+    "display_text": "You've gained <RewardTokens> JT, $<APBCash>",
+    "chat_text": "",
+    "order": 320,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardForArson",
+    "display_text": "Arson Reward - $<APBCash> +$<APBCashBonusPremium>",
+    "chat_text": "",
+    "order": 321,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardForBombDisposal",
+    "display_text": "Bomb Disposal Reward - $<APBCash> +$<APBCashBonusPremium>",
+    "chat_text": "",
+    "order": 322,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardForBombing",
+    "display_text": "Bombing Reward - $<APBCash> +$<APBCashBonusPremium>",
+    "chat_text": "",
+    "order": 323,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardForBurglary",
+    "display_text": "Burglary Reward - $<APBCash> +$<APBCashBonusPremium>",
+    "chat_text": "",
+    "order": 324,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardForForcedEntry",
+    "display_text": "Raid Reward - $<APBCash> +$<APBCashBonusPremium>",
+    "chat_text": "",
+    "order": 325,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardForGraffiti",
+    "display_text": "Graffiti Reward - $<APBCash> +$<APBCashBonusPremium>",
+    "chat_text": "",
+    "order": 326,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardForMugging",
+    "display_text": "Mugging Reward - $<APBCash> +$<APBCashBonusPremium>",
+    "chat_text": "",
+    "order": 327,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardForOpenWorldLarge",
+    "display_text": "You have delivered a large task item and received $<APBCash> +$<APBCashBonusPremium>",
+    "chat_text": "Delivery Reward - $<APBCash>",
+    "order": 328,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardForOpenWorldMedium",
+    "display_text": "You have delivered a medium task item and received $<APBCash> +$<APBCashBonusPremium>",
+    "chat_text": "Delivery Reward - $<APBCash>",
+    "order": 329,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardForOpenWorldSmallMultiple",
+    "display_text": "You have delivered some small task items and received $<APBCash> +$<APBCashBonusPremium>",
+    "chat_text": "Delivery Reward - $<APBCash>",
+    "order": 330,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardForOpenWorldSmallSingle",
+    "display_text": "You have delivered a small task item and received $<APBCash> +$<APBCashBonusPremium>",
+    "chat_text": "Delivery Reward - $<APBCash>",
+    "order": 331,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardForPlayerArrest",
+    "display_text": "Arrest Reward - $<APBCash> +$<APBCashBonusPremium>",
+    "chat_text": "",
+    "order": 332,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardForPlayerArrestLevel5",
+    "display_text": "Level 5 Arrest Bonus - $<APBCash> +$<APBCashBonusPremium>",
+    "chat_text": "",
+    "order": 333,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardForPlayerRescue",
+    "display_text": "Rescue Reward - $<APBCash> +$<APBCashBonusPremium>",
+    "chat_text": "",
+    "order": 334,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardForTargetCompletion",
+    "display_text": "Target Reward - $<APBCash> +$<APBCashBonusPremium>",
+    "chat_text": "",
+    "order": 335,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardForVehicleDelivery",
+    "display_text": "Vehicle Delivery Reward - $<APBCash> +$<APBCashBonusPremium>",
+    "chat_text": "",
+    "order": 336,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardForWitness",
+    "display_text": "Witness Reward - $<APBCash> +$<APBCashBonusPremium>",
+    "chat_text": "",
+    "order": 337,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardOrganization",
+    "display_text": "You received reward(s) from the <OrganisationName>",
+    "chat_text": "",
+    "order": 338,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardRandomRewardGained_Dispatch",
+    "display_text": "You've received reward(s) for completing a Dispatch",
+    "chat_text": "",
+    "order": 339,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardRandomRewardGained_Mission",
+    "display_text": "You've received reward(s) for completing <JustificationText>",
+    "chat_text": "",
+    "order": 340,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardTokensOnly",
+    "display_text": "You've gained <RewardTokens> JT",
+    "chat_text": "",
+    "order": 341,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardUnlockClothing",
+    "display_text": "New <col:ceremony_highlight>clothing</col> available for purchase in the Wardrobe!",
+    "chat_text": "",
+    "order": 342,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardUnlockEmotes",
+    "display_text": "New <col:ceremony_highlight>emotes</col> available for use!",
+    "chat_text": "",
+    "order": 343,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardUnlockEquipment",
+    "display_text": "New <col:ceremony_highlight>equipment</col> available for purchase from Vendors!",
+    "chat_text": "",
+    "order": 344,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardUnlockFeature",
+    "display_text": "New <col:ceremony_highlight>feature</col> available for use!",
+    "chat_text": "",
+    "order": 345,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardUnlockFnMod",
+    "display_text": "New <col:ceremony_highlight>mods</col> available for purchase from Vendors!",
+    "chat_text": "",
+    "order": 346,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardUnlockInstrument",
+    "display_text": "New <col:ceremony_highlight>instrument</col> available for use in the Music Studio!",
+    "chat_text": "",
+    "order": 347,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardUnlockPrimitive",
+    "display_text": "New <col:ceremony_highlight>primitives</col> available for use in the Designer!",
+    "chat_text": "",
+    "order": 348,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardUnlockSong",
+    "display_text": "New <col:ceremony_highlight>songs</col> available for use in the Music Editor!",
+    "chat_text": "",
+    "order": 349,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardUnlockSymbol",
+    "display_text": "New <col:ceremony_highlight>symbol</col> available for use in the Designer!",
+    "chat_text": "",
+    "order": 350,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardUnlockTheme",
+    "display_text": "New <col:ceremony_highlight>themes</col> available for use in the Music Editor!",
+    "chat_text": "",
+    "order": 351,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardUnlockTitle",
+    "display_text": "New <col:ceremony_highlight>title</col> available for use!",
+    "chat_text": "",
+    "order": 352,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardUnlockVehicle",
+    "display_text": "New <col:ceremony_highlight>vehicles</col> available for purchase in the Garage!",
+    "chat_text": "",
+    "order": 353,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardUnlockVehicleComponent",
+    "display_text": "New <col:ceremony_highlight>vehicle components</col> available in the Garage!",
+    "chat_text": "",
+    "order": 354,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardUnlockWeapon",
+    "display_text": "New <col:ceremony_highlight>weapons</col> available for purchase from Vendors!",
+    "chat_text": "",
+    "order": 355,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardUnlockWeaponSkin",
+    "display_text": "New <col:ceremony_highlight>weapon skins</col> available for your Weapons!",
+    "chat_text": "",
+    "order": 356,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_RewardYouReceivedItem",
+    "display_text": "You've gained access to '<ItemDisplayName>'",
+    "chat_text": "",
+    "order": 357,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Reward_ConsumptionError",
+    "display_text": "<col:HUDMessage_Error>Not enough room in your Inventory for the selected items</col>",
+    "chat_text": "",
+    "order": 358,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Reward_NewMail",
+    "display_text": "You have new mail: <RewardDisplayName>\nGo to the nearest mailbox to retreive.",
+    "chat_text": "",
+    "order": 359,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_SideAnyNewLeader",
+    "display_text": "<CharacterNameA> is now the team leader",
+    "chat_text": "",
+    "order": 360,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_SideYouNewLeader",
+    "display_text": "You are now the team leader",
+    "chat_text": "",
+    "order": 361,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Spawn_Halloween_PurplePumpkin",
+    "display_text": "<col:Purple><CollectablesRemaining> Purple Pumpkins left in <DistrictName>.</col>",
+    "chat_text": "",
+    "order": 362,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Spawn_Halloween_PurplePumpkin_Chat",
+    "display_text": "The nearest Purple Pumpkin is at <CollectablesNextLocale>.",
+    "chat_text": "",
+    "order": 363,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Spawn_Halloween_RedPumpkin",
+    "display_text": "<col:Red><CollectablesRemaining> Red Pumpkins left in <DistrictName>.</col>",
+    "chat_text": "",
+    "order": 364,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Spawn_Halloween_RedPumpkin_Chat",
+    "display_text": "The nearest Red Pumpkin is at <CollectablesNextLocale>.",
+    "chat_text": "",
+    "order": 365,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_StreetVolume_Enter",
+    "display_text": "<StreetName>",
+    "chat_text": "",
+    "order": 366,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_TaskItem_Spawned",
+    "display_text": "Pick up the item",
+    "chat_text": "",
+    "order": 367,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_TaskItems_Spawned",
+    "display_text": "Pick up the items",
+    "chat_text": "",
+    "order": 368,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_TeamLeadershipVote_Begin",
+    "display_text": "<CharacterNameA> has requested team leadership.",
+    "chat_text": "",
+    "order": 369,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_TeamLeadershipVote_End_Accepted",
+    "display_text": "The team leadership request by <CharacterNameA> was accepted.",
+    "chat_text": "",
+    "order": 370,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_TeamLeadershipVote_End_Rejected",
+    "display_text": "The team leadership request by <CharacterNameA> was rejected.",
+    "chat_text": "",
+    "order": 371,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_TeamRemoveFailedCooldown",
+    "display_text": "Failed to remove player.\nAnother player was removed from this side too recently.\nYou may try again in <RemainingTime> seconds.",
+    "chat_text": "",
+    "order": 372,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_TeamRemoveFailedDemerits",
+    "display_text": "Failed to remove player.\nPlayers require a demerit to be kicked.",
+    "chat_text": "",
+    "order": 373,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_ThreatAnyChanged",
+    "display_text": "<CharacterNameA> is now Threat: <ThreatLevel>",
+    "chat_text": "",
+    "order": 374,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_ThreatAnyChanged_Crim",
+    "display_text": "<CharacterNameA> is now Threat: <ThreatLevel>",
+    "chat_text": "",
+    "order": 375,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_ThreatAnyChanged_Enf",
+    "display_text": "<CharacterNameA> is now Threat: <ThreatLevel>",
+    "chat_text": "",
+    "order": 376,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_ThreatAnyMaxPlayerEnter_Crim",
+    "display_text": "<CharacterNameA> has entered the District",
+    "chat_text": "",
+    "order": 377,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_ThreatAnyMaxPlayerEnter_Enf",
+    "display_text": "<CharacterNameA> has entered the District",
+    "chat_text": "",
+    "order": 378,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_ThreatAnyMaxPlayerLeave_Crim",
+    "display_text": "<CharacterNameA> left the District",
+    "chat_text": "",
+    "order": 379,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_ThreatAnyMaxPlayerLeave_Enf",
+    "display_text": "<CharacterNameA> left the District",
+    "chat_text": "",
+    "order": 380,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_ThreatTeamChanged",
+    "display_text": "<CharacterNameA> is now Threat: <ThreatLevel>",
+    "chat_text": "",
+    "order": 381,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_ThreatYouChanged",
+    "display_text": "You are now Threat: <ThreatLevel>",
+    "chat_text": "",
+    "order": 382,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_TitleNotUnlocked",
+    "display_text": "<col:HUDMessage_Error>You have not unlocked this title yet</col>",
+    "chat_text": "",
+    "order": 383,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_TurnMissionAcceptanceStateFailed",
+    "display_text": "<col:HUDMessage_Error>You cannot toggle mission offers on/off unless you are the group leader.</col>",
+    "chat_text": "",
+    "order": 384,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_VIP_Any",
+    "display_text": "<CharacterNameA> is the VIP",
+    "chat_text": "",
+    "order": 385,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_VIP_Opposition",
+    "display_text": "<col:HUDMessage_VIP><CharacterNameA> is the opponent's VIP</col>",
+    "chat_text": "",
+    "order": 386,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_VIP_Side",
+    "display_text": "<col:HUDMessage_VIP><CharacterNameA> is now your team's VIP</col>",
+    "chat_text": "",
+    "order": 387,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_VIP_You",
+    "display_text": "<col:HUDMessage_VIP>VIP Stage!\nYou are the VIP</col>",
+    "chat_text": "",
+    "order": 388,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_VIP_You_2",
+    "display_text": "You are the VIP",
+    "chat_text": "",
+    "order": 389,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Vehicle_BeginRepair",
+    "display_text": "Your vehicle is being repaired.",
+    "chat_text": "",
+    "order": 390,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Vehicle_BrokenInto",
+    "display_text": "You have broken into a vehicle!  Press <Key:VehicleForward> or <Key:VehicleBackward> to hotwire it.",
+    "chat_text": "",
+    "order": 391,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Vehicle_Cargo_Full",
+    "display_text": "<col:HUDMessage_Error>There is no more room in your vehicle for that item.</col>",
+    "chat_text": "",
+    "order": 392,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Vehicle_EnterFail_CargoFull",
+    "display_text": "<col:HUDMessage_Error>There is not enough space for this cargo item.</col>",
+    "chat_text": "",
+    "order": 393,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Vehicle_EnterFail_EnemyOwnedVehicle",
+    "display_text": "<col:HUDMessage_Error>You cannot enter the deployed vehicle of a player who is not part of your team.</col>",
+    "chat_text": "",
+    "order": 394,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Vehicle_EnterFail_EnemyTarget",
+    "display_text": "<col:HUDMessage_Error>You are not permitted to enter this vehicle.</col>",
+    "chat_text": "",
+    "order": 395,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Vehicle_EnterFail_NotAllowed",
+    "display_text": "<col:HUDMessage_Error>You are not permitted to drive this vehicle.</col>",
+    "chat_text": "",
+    "order": 396,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Vehicle_EnterFail_NotPartOfMission",
+    "display_text": "<col:HUDMessage_Error>You are not a part of this player's mission.</col>",
+    "chat_text": "",
+    "order": 397,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Vehicle_EnterFail_OpponentInVehicle",
+    "display_text": "<col:HUDMessage_Error>You are not permitted to enter this vehicle. \nIt is occupied by a player who is not part of your team.</col>",
+    "chat_text": "",
+    "order": 398,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Vehicle_EnterFail_PositionOccupied",
+    "display_text": "<col:HUDMessage_Error>This position is occupied.</col>",
+    "chat_text": "",
+    "order": 399,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Vehicle_SpawnBay_AllBaysOccupied",
+    "display_text": "<col:HUDMessage_Error>You cannot spawn a vehicle at this time. Vehicle spawn area is full</col>",
+    "chat_text": "",
+    "order": 400,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Vehicle_SpawnBay_NoDeployedVehicle",
+    "display_text": "<col:HUDMessage_Error>You do not have a vehicle deployed in your Inventory</col>",
+    "chat_text": "",
+    "order": 401,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Vehicle_SpawnBay_NoFunds",
+    "display_text": "<col:HUDMessage_Error>You have insufficient funds to spawn your vehicle</col>",
+    "chat_text": "",
+    "order": 402,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Vehicle_SpawnBay_NotAllowedToRecall",
+    "display_text": "<col:HUDMessage_Error>You cannot recall your vehicle at this time</col>",
+    "chat_text": "",
+    "order": 403,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Vehicle_SpawnBay_WrongFaction",
+    "display_text": "<col:HUDMessage_Error>Your Faction cannot use this Vehicle Spawn Zone</col>",
+    "chat_text": "",
+    "order": 404,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Vehicle_Unequipped_Expired",
+    "display_text": "Your <VehicleName> expired and has been unequipped.",
+    "chat_text": "Your <VehicleName> expired and has been unequipped.",
+    "order": 405,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_WeaponSkinNotUnlocked",
+    "display_text": "<col:HUDMessage_Error>You have not unlocked this weapon skin yet</col>",
+    "chat_text": "",
+    "order": 406,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_Weapon_Unequipped_Expired",
+    "display_text": "Your <WeaponName> expired and has been unequipped.",
+    "chat_text": "Your <WeaponName> expired and has been unequipped.",
+    "order": 407,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_WinStreak_Mission",
+    "display_text": "<CharacterNameA> has won <MissionStreakLength> missions without losing!",
+    "chat_text": "",
+    "order": 408,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AM_WinStreak_Mission_Ended",
+    "display_text": "<CharacterNameB> has ended <CharacterNameA>'s win streak of <MissionStreakLength> missions!",
+    "chat_text": "",
+    "order": 409,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AmmoZone_InsufficientFunds",
+    "display_text": "<col:HUDMessage_Error>Not enough cash to resupply <WeaponType></col>",
+    "chat_text": "",
+    "order": 410,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AmmoZone_NoDeployedWeapons",
+    "display_text": "<col:HUDMessage_Error>Ammo resupply failed - No weapons equipped</col>",
+    "chat_text": "",
+    "order": 411,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Armory_DisabledInMissions",
+    "display_text": "Armory not accessible while in a mission",
+    "chat_text": "",
+    "order": 412,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AutoKick_Inactivity",
+    "display_text": "Warning: You are about to get kicked due to inactivity. Perform an action (enter vehicle, climb ladder, damage an enemy or object etc) to become Active.",
+    "chat_text": "",
+    "order": 413,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AutoKick_SuicidesWarning",
+    "display_text": "Warning: 1 More Suicide in the next 5 Minutes and you will be Kicked.",
+    "chat_text": "",
+    "order": 414,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "AutoKick_TeamKillsWarning",
+    "display_text": "Warning: 1 More Team Kill in the next 5 Minutes and you will be Kicked.",
+    "chat_text": "",
+    "order": 415,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Autokill_InsideGeometry",
+    "display_text": "You were killed for being in a forbidden area.",
+    "chat_text": "",
+    "order": 416,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "BroadcastSystemMessage",
+    "display_text": "<message>",
+    "chat_text": "",
+    "order": 417,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "BugTracker_BugReportError",
+    "display_text": "There was an error submitting your bug report.  Please contact customer support.",
+    "chat_text": "",
+    "order": 418,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "BugTracker_BugReportSuccess",
+    "display_text": "Thank you for submitting a bug report. It has been recorded as this item:\n<ReferenceCode>",
+    "chat_text": "",
+    "order": 419,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "CharacterCustomisation_OverBudget",
+    "display_text": "<col:HUDMessage_Error>Your customization is too complex. Try fewer decals, or reduce the number of decal layers.</col>",
+    "chat_text": "",
+    "order": 420,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "ClanMgmt_DispandSuccess",
+    "display_text": "You have disbanded your clan",
+    "chat_text": "",
+    "order": 421,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "ClanMgmt_InviteSent",
+    "display_text": "Clan invite sent to <CharacterName>",
+    "chat_text": "",
+    "order": 422,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "ClanMgmt_NotInSocialDistrict",
+    "display_text": "Clan Management is only accessible in a Social District",
+    "chat_text": "",
+    "order": 423,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "ClanMgmt_RemovedFromClan",
+    "display_text": "You have been removed from the clan.",
+    "chat_text": "",
+    "order": 424,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "CustomisationEditor_InventoryLimitHit",
+    "display_text": "<col:HUDMessage_Error><category> inventory limit reached. Destroy or sell some items if you need to make space.",
+    "chat_text": "",
+    "order": 425,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "CustomisationZone",
+    "display_text": "Welcome to Breakwater Marina!",
+    "chat_text": "",
+    "order": 426,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "DailyActivityAutoAssigned",
+    "display_text": "Complete <DailyActivityTitle> to win <RewardDisplayName>",
+    "chat_text": "Complete the assigned ' <DailyActivityTitle>' Daily Activity to win <RewardDisplayName>. You can select Daily Activities manually by talking to completed contacts when not in a mission.",
+    "order": 427,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "DailyActivityComplete_Common",
+    "display_text": "Congratulations on completing <DailyActivityTitle>.\nYou have received <RewardDisplayName>",
+    "chat_text": "",
+    "order": 428,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "DailyActivityComplete_Rare",
+    "display_text": "Congratulations on completing <DailyActivityTitle>.\nYou have received <RewardDisplayName>",
+    "chat_text": "",
+    "order": 429,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "DailyActivityComplete_Uncommon",
+    "display_text": "Congratulations on completing <DailyActivityTitle>.\nYou have received <RewardDisplayName>",
+    "chat_text": "",
+    "order": 430,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "DebugMessage",
+    "display_text": "<Text>",
+    "chat_text": "",
+    "order": 431,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "DisplayPoint_Audio_None",
+    "display_text": "<col:HUDMessage_Error>This Audio Display Point cannot be interacted with</col>",
+    "chat_text": "",
+    "order": 432,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "DisplayPoint_Audio_WrongFaction",
+    "display_text": "<col:HUDMessage_Error>You cannot interact with Audio Display Points for the opposing Faction</col>",
+    "chat_text": "",
+    "order": 433,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "DisplayPoint_Graffiti_None",
+    "display_text": "<col:HUDMessage_Error>This Graffiti Display Point cannot be interacted with</col>",
+    "chat_text": "",
+    "order": 434,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "DisplayPoint_Graffiti_WrongFaction",
+    "display_text": "<col:HUDMessage_Error>You cannot interact with Graffiti Display Points for the opposing Faction</col>",
+    "chat_text": "",
+    "order": 435,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "DisplayPoint_None",
+    "display_text": "<col:HUDMessage_Error>This Display Point cannot be interacted with</col>",
+    "chat_text": "",
+    "order": 436,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "DisplayPoint_Statue_None",
+    "display_text": "<col:HUDMessage_Error>This Statue Display Point cannot be interacted with</col>",
+    "chat_text": "",
+    "order": 437,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "DisplayPoint_Statue_WrongFaction",
+    "display_text": "<col:HUDMessage_Error>You cannot interact with Statue Display Points for the opposing Faction</col>",
+    "chat_text": "",
+    "order": 438,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "DisplayPoint_Taken",
+    "display_text": "<col:HUDMessage_Error><CharacterNameA> has claimed <DisplayPointName>!</col>",
+    "chat_text": "",
+    "order": 439,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "DisplayPoint_Vehicle_None",
+    "display_text": "<col:HUDMessage_Error>This Vehicle Display Point cannot be interacted with</col>",
+    "chat_text": "",
+    "order": 440,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "DisplayPoint_Vehicle_WrongFaction",
+    "display_text": "<col:HUDMessage_Error>You cannot interact with Vehicle Display Points for the opposing Faction</col>",
+    "chat_text": "",
+    "order": 441,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "DisplayPoint_WrongFaction",
+    "display_text": "<col:HUDMessage_Error>You cannot interact with the Display Points of the opposing Faction</col>",
+    "chat_text": "",
+    "order": 442,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "DistrictEnter_ActionEvent",
+    "display_text": "You have entered a Community Event District\nSee Chat for further details",
+    "chat_text": "This district hosts a special set of rules which makes it the perfect place to host Community Events without the risk of being disturbed by San Paro's usual chaos. Griefing is not tolerated and missions are DISABLED in this district.",
+    "order": 443,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "DistrictEnter_HighTTK",
+    "display_text": "You have entered the High TTK District\nSee Chat for further details",
+    "chat_text": "In this district, weapons have been altered to take longer to kill other players. To compensate, accuracy profiles have been changed to make it more attainable to hit the ideal time to kill with weapons.",
+    "order": 444,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "DistrictEnter_WeaponPrototype",
+    "display_text": "You have entered Weapon Prototype District A\nSee Chat for further details",
+    "chat_text": "Playing in this district allows us to gather large amounts of data that helps balance potential future weapon changes. Missions have matchmaking disabled, and heat is disabled. This district uses the 'A' set of balance stats.",
+    "order": 445,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "DistrictEnter_WeaponPrototype2",
+    "display_text": "You have entered the Weapon Prototype District B\nSee Chat for further details",
+    "chat_text": "Playing in this district allows us to gather large amounts of data that helps balance potential future weapon changes. Missions have matchmaking disabled, and heat is disabled. This district uses the 'B' set of balance stats.",
+    "order": 446,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "ElectedSpawnPointDeactivated",
+    "display_text": "Selected spawn point now unavailable! Please choose again.",
+    "chat_text": "",
+    "order": 447,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "ElectiveSpawn_Unavailable",
+    "display_text": "<ElectiveSpawnUnavailableReason>: Spawn Map unavailable",
+    "chat_text": "",
+    "order": 448,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "FactionRestrictedLocation",
+    "display_text": "<col:HUDMessage_Error>VIP Area - You're not on the list.\n(This area is off-limits to your Faction)</col>",
+    "chat_text": "",
+    "order": 449,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "FnMod_Disabled",
+    "display_text": "You cannot equip <WeaponName> in this district.",
+    "chat_text": "Your <WeaponName> is not available for use in this district type and will be unable to be activated. Switch to an alternative item.",
+    "order": 450,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "GM_Frozen",
+    "display_text": "<col:HUDMessage_Error>You cannot move because a GM is limiting your actions</col>",
+    "chat_text": "",
+    "order": 451,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Garage_InvalidCustomisation",
+    "display_text": "<col:HUDMessage_Error>Vehicle customization is invalid</col>",
+    "chat_text": "",
+    "order": 452,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Garage_OutOfDecalSpace",
+    "display_text": "<col:HUDMessage_Error>You have reached the maximum number of decals; remove an existing decal to make space</col>",
+    "chat_text": "",
+    "order": 453,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Garage_VehicleOverBudget",
+    "display_text": "<col:HUDMessage_Error>Your customization is too complex. Try fewer decals, or reduce the number of decal layers.</col>",
+    "chat_text": "",
+    "order": 454,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "GiftBox_Opened",
+    "display_text": "",
+    "chat_text": "Your gift box was opened!",
+    "order": 455,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "GiftBox_Opened_Other",
+    "display_text": "",
+    "chat_text": "<CharacterNameA>'s gift box was opened!",
+    "order": 456,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "GroupWaypointSpam",
+    "display_text": "You have created too many Group Waypoints in too short a time. Please wait 10 seconds before trying again.",
+    "chat_text": "",
+    "order": 457,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Group_InviteBounced",
+    "display_text": "<col:HUDMessage_Error><CharacterName> cannot accept your group invite at this time</col>",
+    "chat_text": "",
+    "order": 458,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Group_InviteBouncedTutorial",
+    "display_text": "<col:HUDMessage_Error><CharacterName> is unable to accept your group invite. They are currently completing the tutorial.</col>",
+    "chat_text": "",
+    "order": 459,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Group_InviteDeclined",
+    "display_text": "<col:HUDMessage_Error><CharacterName> has declined your group invite</col>",
+    "chat_text": "",
+    "order": 460,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Group_InviteSent",
+    "display_text": "Group invite sent to <CharacterName>",
+    "chat_text": "",
+    "order": 461,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Inventory_CreatedCopies",
+    "display_text": "A duplicate of the item has been created",
+    "chat_text": "",
+    "order": 462,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Inventory_DisabledInMissions",
+    "display_text": "<col:HUDMessage_Error>Inventory only accessible at a Supply Depot</col>",
+    "chat_text": "",
+    "order": 463,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Inventory_Refurbished",
+    "display_text": "Item has been refurbished",
+    "chat_text": "",
+    "order": 464,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "JokerTicketStore_RandomReward_Awarded",
+    "display_text": "Through your purchase of <ItemDisplayName>, you have received a permanent <RewardDescription>.",
+    "chat_text": "You have been awarded a chance item.",
+    "order": 465,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Killed",
+    "display_text": "You killed <CharacterName>!",
+    "chat_text": "",
+    "order": 466,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "KilledBy_REDUNDANT",
+    "display_text": "You were killed by <CharacterName>!",
+    "chat_text": "",
+    "order": 467,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "KilledSelf_REDUNDANT",
+    "display_text": "You killed yourself!",
+    "chat_text": "",
+    "order": 468,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "LocaleSystem_DistrictBlockEntered",
+    "display_text": "You have now entered <DistrictBlock>",
+    "chat_text": "",
+    "order": 469,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "LocaleSystem_LocationBeaconEntered",
+    "display_text": "You are now near <LocationBeacon>",
+    "chat_text": "",
+    "order": 470,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "LocalisationTest",
+    "display_text": "\"\"<Test1>\" - \"<Test2>\" -> Working if there is text in the quotes\"",
+    "chat_text": "",
+    "order": 471,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Mail_ItemAddedToInventory_Normal",
+    "display_text": "Item transferred to your Locker",
+    "chat_text": "",
+    "order": 472,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Mail_ItemAddedToInventory_Reward_Combined",
+    "display_text": "Reward item(s) transferred to your Locker\nUnlocks consumed",
+    "chat_text": "",
+    "order": 473,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Mail_ItemAddedToInventory_Reward_Items",
+    "display_text": "Reward item(s) transferred to your Locker",
+    "chat_text": "",
+    "order": 474,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Mail_ItemAddedToInventory_Reward_Unlocks",
+    "display_text": "Unlocks consumed",
+    "chat_text": "",
+    "order": 475,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Mail_RewardPackageRetrieved",
+    "display_text": "Reward package was successfully retrieved",
+    "chat_text": "",
+    "order": 476,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Matchmaking_NotAbleToReadyConditionChange",
+    "display_text": "You have been removed from the matchmaking queue as you or a group member's status has changed.",
+    "chat_text": "",
+    "order": 477,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Matchmaking_NotAbleToReadyDistrict",
+    "display_text": "You are unable to queue for a match as a member of your group is either offline or in another district.",
+    "chat_text": "",
+    "order": 478,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Christmas_Infection_DidNotSurvive",
+    "display_text": "You are filled with \"Holiday Cheer\"!",
+    "chat_text": "",
+    "order": 479,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Christmas_Infection_EnteredEndArea",
+    "display_text": "You have entered the party area",
+    "chat_text": "",
+    "order": 480,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Christmas_Infection_Infected_Majority",
+    "display_text": "The majority of survivors have been dosed!",
+    "chat_text": "Not many of you left, keep fighting and moving.  This is almost over.",
+    "order": 481,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Christmas_Infection_KillNutcrackerLeader",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 482,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Christmas_Infection_LeftEndArea",
+    "display_text": "You have left the party area. Return!",
+    "chat_text": "",
+    "order": 483,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Christmas_Infection_LostProtagonist",
+    "display_text": "The Nutcracker Prince has fallen!",
+    "chat_text": "On your death the \"Holiday Cheer\" high has abated, and you have regained your sanity. Survive or take out the Nutcracker Prince to reclaim your throne.",
+    "order": 484,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Christmas_Infection_PlayerConverted",
+    "display_text": "You have been dosed and are now part of the Nutcracker Army!",
+    "chat_text": "You fought hard, but are now high on \"Holiday Cheer\", and things are about to get weird.  Spread out and dose those pesky faries to bring \"Holiday Cheer\" to the masses.",
+    "order": 485,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Christmas_Infection_PlayerConverted_TeammatesNearby",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 486,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Christmas_Infection_PlayerEndedInArea",
+    "display_text": "\"\"Holiday Cheer\" has run its course.\"",
+    "chat_text": "",
+    "order": 487,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Christmas_Infection_Snowman",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 488,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Christmas_Infection_Survived",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 489,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Christmas_Infection_Survivor_Gong",
+    "display_text": "You hear the gong of the clock, it is almost over",
+    "chat_text": "",
+    "order": 490,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Christmas_Infection_Survivor_Survived",
+    "display_text": "You have survived the 'Holiday Cheer!'",
+    "chat_text": "The drug-filled air has cleared, you have survived being dosed.  You are now safe, but for how long?",
+    "order": 491,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Easter2015_Complete",
+    "display_text": "Egg Hunt Over. \n<CharacterNameA> delivered the most eggs.",
+    "chat_text": "",
+    "order": 492,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Ending_Mugging_Easter2015",
+    "display_text": "The Hunt is almost over, <Score> Seconds Left! Deliver your remaining eggs!",
+    "chat_text": "<Score> seconds left.",
+    "order": 493,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Ending_Mugging_Easter2015_Subsequent",
+    "display_text": "<Score> seconds left.",
+    "chat_text": "",
+    "order": 494,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Epidemic_Objective_Activated_MidPoint",
+    "display_text": "The Infection is Spreading! \nMore Areas are available to infect.",
+    "chat_text": "",
+    "order": 495,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Epidemic_Team_ScoreReached_Enemy",
+    "display_text": "<TeamName> have reached 100% Infection. Stop them Capturing Memorial Park at all Costs!",
+    "chat_text": "<TeamName> have reached 100% Infection. If they capture Memorial Park, their toxin will be spread across all of San Paro. Stop it at all costs!",
+    "order": 496,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Epidemic_Team_ScoreReached_Friendly",
+    "display_text": "Infection Complete! Capture Memorial Park to Win!",
+    "chat_text": "You have infected the entirety of Financial District with <TeamName>. Capture Memorial Park to spread the toxin across all of San Paro.",
+    "order": 497,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_FindTarget_TargetFound_First",
+    "display_text": "You have found Ghoulface first. Congratulations!",
+    "chat_text": "",
+    "order": 498,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_FindTarget_TargetFound_First_Other",
+    "display_text": "Ghoulface has been found by <CharacterNameA> in <DistrictBlock>!. You have <Score> seconds left to find him to claim a prize!",
+    "chat_text": "Ghoulface is ready to leave, keep looking till he is gone.",
+    "order": 499,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_FindTarget_TargetFound_NotFirst",
+    "display_text": "You have found Ghoulface!",
+    "chat_text": "",
+    "order": 500,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_FindTarget_TargetFound_NotFirst_Other",
+    "display_text": "<CharacterNameA> has found Ghoulface. <Score> seconds remaining till he disappears.",
+    "chat_text": "",
+    "order": 501,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_GunGame_Christmas_PlayerReachedRank",
+    "display_text": "<CharacterNameA> has Reached Tier <Score>",
+    "chat_text": "",
+    "order": 502,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_GunGame_Christmas_PlayerReachedRank_High",
+    "display_text": "<CharacterNameA> has Reached Tier <Score>!",
+    "chat_text": "<CharacterNameA> Has Reached Rank <Score>. They are close to winning!",
+    "order": 503,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_GunGame_ReachedRank_02",
+    "display_text": "New Weapon:<col: TaskItem_Neutral> FFA 5.56",
+    "chat_text": "For the 2nd Gun of Christmas, the Tigers gave to me. An FFA 5.56.",
+    "order": 504,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_GunGame_ReachedRank_02_Crim",
+    "display_text": "New Weapon:<col: TaskItem_Neutral> FFA 5.56",
+    "chat_text": "For the 2nd Gun of Christmas, the G-Kings gave to me. An FFA 5.56.",
+    "order": 505,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_GunGame_ReachedRank_03",
+    "display_text": "New Weapon:<col: TaskItem_Neutral> Shredder DF PR3",
+    "chat_text": "For the 3rd Gun of Christmas, the Tigers gave to me. A Shredder DF PR3.",
+    "order": 506,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_GunGame_ReachedRank_03_Crim",
+    "display_text": "New Weapon:<col: TaskItem_Neutral> Shredder DF PR3",
+    "chat_text": "For the 3rd Gun of Christmas, the G-Kings gave to me. A Shredder DF PR3.",
+    "order": 507,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_GunGame_ReachedRank_04",
+    "display_text": "New Weapon:<col: TaskItem_Neutral> ACES Rifle",
+    "chat_text": "For the 4th Gun of Christmas, the Tigers gave to me. An Agrotech ACES Rifle.",
+    "order": 508,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_GunGame_ReachedRank_04_Crim",
+    "display_text": "New Weapon:<col: TaskItem_Neutral> ACES Rifle",
+    "chat_text": "For the 4th Gun of Christmas, the G-Kings gave to me. An Agrotech ACES Rifle.",
+    "order": 509,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_GunGame_ReachedRank_05",
+    "display_text": "New Weapon:<col: TaskItem_Neutral> S1-FA",
+    "chat_text": "For the 5th Gun of Christmas,the Tigers gave to me. An S1-FA 'Frenzy'.",
+    "order": 510,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_GunGame_ReachedRank_05_Crim",
+    "display_text": "New Weapon:<col: TaskItem_Neutral> S1-FA",
+    "chat_text": "For the 5th Gun of Christmas, the G-Kings gave to me. An S1-FA 'Frenzy'.",
+    "order": 511,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_GunGame_ReachedRank_06",
+    "display_text": "New Weapon:<col: TaskItem_Neutral> CASE",
+    "chat_text": "For the 6th Gun of Christmas, the Tigers gave to me. A CASE 'The Bolo'.",
+    "order": 512,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_GunGame_ReachedRank_06_Crim",
+    "display_text": "New Weapon:<col: TaskItem_Neutral> CASE",
+    "chat_text": "For the 6th Gun of Christmas, the G-Kings gave to me. A CASE 'The Bolo'.",
+    "order": 513,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_GunGame_ReachedRank_07",
+    "display_text": "New Weapon:<col: TaskItem_Neutral> Norseman",
+    "chat_text": "For the 7th Gun of Christmas, the Tigers gave to me. A Norseman 'Odin'.",
+    "order": 514,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_GunGame_ReachedRank_07_Crim",
+    "display_text": "New Weapon:<col: TaskItem_Neutral> Norseman",
+    "chat_text": "For the 7th Gun of Christmas, the G-Kings gave to me. A Norseman 'Odin'.",
+    "order": 515,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_GunGame_ReachedRank_08",
+    "display_text": "New Weapon:<col: TaskItem_Neutral> PSR-SD",
+    "chat_text": "For the 8th Gun of Christmas, the Tigers gave to me. A PSR-SD.",
+    "order": 516,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_GunGame_ReachedRank_08_Crim",
+    "display_text": "New Weapon:<col: TaskItem_Neutral> PSR-SD",
+    "chat_text": "For the 8th Gun of Christmas, the G-Kings gave to me. A PSR-SD.",
+    "order": 517,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_GunGame_ReachedRank_09",
+    "display_text": "New Weapon:<col: TaskItem_Neutral> SBSR",
+    "chat_text": "For the 9th Gun of Christmas, the Tigers gave to me. An SBSR 'Coroner'.",
+    "order": 518,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_GunGame_ReachedRank_09_Crim",
+    "display_text": "New Weapon:<col: TaskItem_Neutral> SBSR",
+    "chat_text": "For the 9th Gun of Christmas, the G-Kings gave to me. An SBSR 'Coroner'.",
+    "order": 519,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_GunGame_ReachedRank_10",
+    "display_text": "New Weapon:<col: TaskItem_Neutral> AAEPD",
+    "chat_text": "For the 10th Gun of Christmas, the Tigers gave to me. An AAEPD (and a Blowtorch).",
+    "order": 520,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_GunGame_ReachedRank_10_Crim",
+    "display_text": "New Weapon:<col: TaskItem_Neutral> AAEPD",
+    "chat_text": "For the 10th Gun of Christmas, the G-Kings gave to me. An AAEPD (and a Blowtorch).",
+    "order": 521,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_GunGame_ReachedRank_11",
+    "display_text": "New Weapon:<col: TaskItem_Neutral> Colby .45 AP",
+    "chat_text": "For the 11th Gun of Christmas, the Tigers gave to me. A Colby .45 AP.",
+    "order": 522,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_GunGame_ReachedRank_11_Crim",
+    "display_text": "New Weapon:<col: TaskItem_Neutral> Colby .45 AP",
+    "chat_text": "For the 11th Gun of Christmas, the G-Kings gave to me. A Colby .45 AP.",
+    "order": 523,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_GunGame_ReachedRank_12",
+    "display_text": "New Weapon:<col: TaskItem_Neutral> SNR 850",
+    "chat_text": "For the 12th Gun of Christmas, the Tigers gave to me. A Colby SNR 850.",
+    "order": 524,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_GunGame_ReachedRank_12_Crim",
+    "display_text": "New Weapon:<col: TaskItem_Neutral> SNR 850",
+    "chat_text": "For the 12th Gun of Christmas, the G-Kings gave to me. A Colby SNR 850.",
+    "order": 525,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_GunGame_ReachedRank_13",
+    "display_text": "New Weapon:<col: TaskItem_Neutral> Snowball",
+    "chat_text": "",
+    "order": 526,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_GunGame_ReachedRank_13_Crim",
+    "display_text": "New Weapon:<col: TaskItem_Neutral> Snowball",
+    "chat_text": "",
+    "order": 527,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_GunGame_ReachedRank_13_Others",
+    "display_text": "<col: TaskItem_Neutral><CharacterNameA> has Reached the Final Level. One more Kill and they Win!",
+    "chat_text": "<CharacterNameA> has reached the 'Snowball' Weapon. If they kill someone, they win!",
+    "order": 528,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_GunGame_ReachedRank_13_OthersDead",
+    "display_text": "<col: TaskItem_Neutral><CharacterNameA> has Reached the Final Level. One more Kill and they Win!",
+    "chat_text": "<CharacterNameA> has reached the 'Snowball' Weapon. If they kill someone, they win!",
+    "order": 529,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Halloween_Infection_DidNotSurvive",
+    "display_text": "Your soul is forever damned",
+    "chat_text": "",
+    "order": 530,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Halloween_Infection_EnteredEndArea",
+    "display_text": "You have entered the party area",
+    "chat_text": "",
+    "order": 531,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Halloween_Infection_Infected_Majority",
+    "display_text": "The majority of survivors have been converted!",
+    "chat_text": "Not many of you left, keep fighting and moving.  This is almost over.",
+    "order": 532,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Halloween_Infection_KillHeadless",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 533,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Halloween_Infection_LeftEndArea",
+    "display_text": "You have left the party area. Return!",
+    "chat_text": "",
+    "order": 534,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Halloween_Infection_LostProtagonist",
+    "display_text": "The Curse is Lifted",
+    "chat_text": "On your death the curse was lifted, and you have regained your humanity. Survive or take out the Headless Horseman to reclaim what was yours.",
+    "order": 535,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Halloween_Infection_PlayerConverted",
+    "display_text": "You have been converted to the Pumpkin Head Army!",
+    "chat_text": "You fought hard, but now the touch of the horseman has made you stronger.  You are one of us, the Pumpkin Head Soldiers.  Spread out and gather more brothers and sisters, raise our army to defeat all who oppose us.",
+    "order": 536,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Halloween_Infection_PlayerConverted_TeammatesNearby",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 537,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Halloween_Infection_PlayerEndedInArea",
+    "display_text": "The infection runs its course",
+    "chat_text": "",
+    "order": 538,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Halloween_Infection_Pumpkin",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 539,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Halloween_Infection_Survived",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 540,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Halloween_Infection_Survivor_Gong",
+    "display_text": "You hear the gong of the clock, it is almost over",
+    "chat_text": "",
+    "order": 541,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Halloween_Infection_Survivor_Survived",
+    "display_text": "You have survived the Nightmare",
+    "chat_text": "The sky has cleared the evil plagueing San Paro has ended.  You are now safe, but for how long?",
+    "order": 542,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Mugging_Easter2015_SpawnImmunity",
+    "display_text": "You respawned with eggs, granting you a temporary Egg Shield that protects you from damage and boosts your speed.",
+    "chat_text": "",
+    "order": 543,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Mugging_Easter_DeliveredItems",
+    "display_text": "You have Delivered your Eggs!",
+    "chat_text": "You have delivered <Score> Egg(s). Delivering eggs gains you score and means you can't lose them, but each time you do your multiplier drops.",
+    "order": 544,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Mugging_Easter_DeliveredItems_Other",
+    "display_text": "<CharacterNameA> has Delivered <Score> Eggs",
+    "chat_text": "",
+    "order": 545,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Mugging_Easter_GainedItems",
+    "display_text": "",
+    "chat_text": "You have gained <Score> Eggs!",
+    "order": 546,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Mugging_Easter_GainedItems_Single",
+    "display_text": "",
+    "chat_text": "You have gained <Score> Egg!",
+    "order": 547,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Mugging_Easter_HeldItemsAtEnd",
+    "display_text": "You had <Score> Eggs at the end, which have been turned in.",
+    "chat_text": "",
+    "order": 548,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Mugging_Easter_HeldItemsAtEnd_Single",
+    "display_text": "You had <Score> Egg at the end, which has been turned in.",
+    "chat_text": "",
+    "order": 549,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Mugging_Easter_LostItems",
+    "display_text": "",
+    "chat_text": "You lost <Score> Eggs.",
+    "order": 550,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Mugging_Easter_LostItems_Single",
+    "display_text": "",
+    "chat_text": "You lost <Score> Egg.",
+    "order": 551,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Mugging_Easter_PlayerMug_Muggee",
+    "display_text": "You have been mugged, losing <Score> Eggs.",
+    "chat_text": "You lost <Score> Eggs by being mugged. Mug them faster next time, or shoot them down before they can get to you.",
+    "order": 552,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Mugging_Easter_PlayerMug_Muggee_Single",
+    "display_text": "You have been mugged, losing <Score> Egg.",
+    "chat_text": "You lost <Score> Egg by being mugged. Mug them faster next time, or shoot them down before they can get to you.",
+    "order": 553,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Mugging_Easter_PlayerMug_Mugger",
+    "display_text": "You have Mugged <CharacterNameA>, gaining <Score> Eggs!",
+    "chat_text": "You gained <Score> Eggs by mugging <CharacterNameA>!",
+    "order": 554,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Mugging_Easter_PlayerMug_Mugger_Single",
+    "display_text": "You have Mugged <CharacterNameA>, gaining <Score> Egg!",
+    "chat_text": "You gained <Score> Egg by mugging <CharacterNameA>!",
+    "order": 555,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Mugging_Easter_Protagonist",
+    "display_text": "You now have the most Eggs!",
+    "chat_text": "You have the most eggs! Other players can see you at all times. Drop the eggs off at a contact to gain score and bank your winnings.",
+    "order": 556,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Mugging_Easter_Protagonist_Other",
+    "display_text": "<CharacterNameA> has the most Eggs. Track them down and Mug/Kill them!",
+    "chat_text": "<CharacterNameA> now has the most eggs. Hunt them down and mug or kill them in order to steal their eggs for yourself.",
+    "order": 557,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Mugging_Invulnerability_Denied",
+    "display_text": "Egg Shield Denied",
+    "chat_text": "Egg Shield Immunity denied: You have had an Egg Shield too recently.",
+    "order": 558,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_MusicalCheckpoints_All_Complete",
+    "display_text": "San Paro has Frozen! The <TeamName> are the Victors!",
+    "chat_text": "",
+    "order": 559,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_MusicalCheckpoints_CapturedCheckpoint",
+    "display_text": "Checkpoint Captured. Hold it until the Round Ends!",
+    "chat_text": "",
+    "order": 560,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_MusicalCheckpoints_Complete",
+    "display_text": "San Paro has Frozen! You have Won for the glory of The <TeamName>.",
+    "chat_text": "",
+    "order": 561,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_MusicalCheckpoints_Died_SuddenDeath",
+    "display_text": "You have been Eliminated. If your team successfully holds a checkpoint at the end of a round, you’ll re-enter the game.",
+    "chat_text": "",
+    "order": 562,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_MusicalCheckpoints_Died_SuddenDeath_All",
+    "display_text": "The <TeamName> have been Eliminated and has entered Sudden Death!",
+    "chat_text": "The <TeamName> have been Eliminated and have entered Sudden Death!",
+    "order": 563,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_MusicalCheckpoints_LosingCheckpoint",
+    "display_text": "An Enemy is Capturing your Checkpoint",
+    "chat_text": "",
+    "order": 564,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_MusicalCheckpoints_LostCheckpoint",
+    "display_text": "You Have Lost Control of a Checkpoint",
+    "chat_text": "",
+    "order": 565,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_MusicalCheckpoints_RoundEnded_Even_Team",
+    "display_text": "Round Complete! <TeamName> have <Score> Lives Remaining",
+    "chat_text": "",
+    "order": 566,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_MusicalCheckpoints_RoundEnded_Gain_Team",
+    "display_text": "Round Complete! <TeamName> have <Score> Lives Remaining",
+    "chat_text": "",
+    "order": 567,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_MusicalCheckpoints_RoundEnded_Loss_Team",
+    "display_text": "Round Lost! <TeamName> has <Score> Lives Remaining",
+    "chat_text": "",
+    "order": 568,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_MusicalCheckpoints_RoundEnded_ScoreToAll",
+    "display_text": "",
+    "chat_text": "<TeamName>: <Score> Lives Remaining.",
+    "order": 569,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_MusicalCheckpoints_RoundNearlyEnded",
+    "display_text": "Round Almost Over. Hold your Checkpoint!",
+    "chat_text": "",
+    "order": 570,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_MusicalCheckpoints_RoundNearlyEnded_Gain",
+    "display_text": "Round Almost Over. Hold your Checkpoints and the <TeamName> will gain <Score> Life(s).",
+    "chat_text": "",
+    "order": 571,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_MusicalCheckpoints_RoundNearlyEnded_Loss",
+    "display_text": "Round Almost Over! Capture a Checkpoint!",
+    "chat_text": "",
+    "order": 572,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_MusicalCheckpoints_TeamEliminated_All",
+    "display_text": "The <TeamName> have been eliminated!",
+    "chat_text": "",
+    "order": 573,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_MusicalCheckpoints_TeamEliminated_Team",
+    "display_text": "Your Team has been Eliminated",
+    "chat_text": "",
+    "order": 574,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_MusicalCheckpoints_TeamJoined",
+    "display_text": "You have been added to <TeamName>",
+    "chat_text": "",
+    "order": 575,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_MusicalCheckpoints_TeamJoined_Team",
+    "display_text": "<CharacterNameA> has been added to your team",
+    "chat_text": "",
+    "order": 576,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Protagonist_Assigned_Christmas_Infection",
+    "display_text": "You are the new Nutcracker Prince!",
+    "chat_text": "You are the new Nutcracker Prince!",
+    "order": 577,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Protagonist_Assigned_Christmas_Infection_Others",
+    "display_text": "<CharacterNameA> is the new Nutcracker Prince!",
+    "chat_text": "<CharacterNameA> is the new Nutcracker Prince!",
+    "order": 578,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Protagonist_Assigned_Halloween_Infection",
+    "display_text": "You are the Headless Horseman!",
+    "chat_text": "HAHAHAHAHA!  You have been found worthy of being my Headless Horseman.  Turn those you kill into your army of death!!! \nFetch your war horse ENVEGAS, grind the bones of the weak that dare to oppose you!\nBut beware, someone more worthy may take the power away from you. Now go out and bring me the souls of the defeated.",
+    "order": 579,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Protagonist_Assigned_Halloween_Infection_Others",
+    "display_text": "<CharacterNameA> is the Headless Horseman!",
+    "chat_text": "This is not possible…the dreaded Horseman curse is real.  You have two options available to you.  \n1. Destroy the HEADLESS HORSEMAN to become it\n2. Fight or Run to SURVIVE\nThe choice is yours!",
+    "order": 580,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Started_Christmas_FirstInfection_Chat",
+    "display_text": "",
+    "chat_text": "As the fog rolls in, visibility will become reduced. Enemy players will become harder to see, only becoming clear when you look at them directly or they make a loud noise.",
+    "order": 581,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Started_Christmas_FirstInfection_Others",
+    "display_text": "The Prince has been Dosed!",
+    "chat_text": "The new drug \"Holiday Cheer\" is spreading.  You have two options available to you.  \n1. Destroy the Nutcracker Prince to ascend to the throne.\n2. Fight or Run to remain undosed.\nThe choice is yours!",
+    "order": 582,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Started_Christmas_FirstInfection_Player",
+    "display_text": "You are the Nutcracker Prince!",
+    "chat_text": "",
+    "order": 583,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Started_Christmas_GunGame",
+    "display_text": "First Weapon: <col: TaskItem_Neutral> Joker CR5",
+    "chat_text": "For the First Gun of Christmas, the Tigers gave to me... A Joker CR5. Gain Score to Increase Weapon Tiers and Gain New Weapons. First player to reach the final Snowball Weapon and gain a kill wins.",
+    "order": 584,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Started_Christmas_GunGame_Crim",
+    "display_text": "First Weapon: <col: TaskItem_Neutral> Joker CR5",
+    "chat_text": "For the First Gun of Christmas, the G-Kings gave to me... A Joker CR5. Gain Score to Increase Weapon Tiers and Gain New Weapons. First player to reach the final Snowball Weapon and gain a kill wins.",
+    "order": 585,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Started_Christmas_Infection",
+    "display_text": "Interact with the Snowman to become the first Nutcracker!",
+    "chat_text": "",
+    "order": 586,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Started_FindTarget",
+    "display_text": "<col:Yellow>'<MinigameName>' has started.",
+    "chat_text": "Ghoulface is in the district. Find him to win a surprise.",
+    "order": 587,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Started_GunGame",
+    "display_text": "<col:Yellow>'<MinigameName>' has started.",
+    "chat_text": "'<MinigameName>' has been started in <DistrictBlock> by a GM. Head to the block to take part. Earn Joker Tickets provided by our wonderful benefactors from Redhill.",
+    "order": 588,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Started_GunGame_Exo",
+    "display_text": "<col:Yellow>'<MinigameName>' has started.",
+    "chat_text": "On behalf of Redhill, please enjoy this preview of some newly available weapons. '<MinigameName>' has been started in <DistrictBlock>. Head there to earn your Joker Tickets",
+    "order": 589,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Started_GunGame_Explosives",
+    "display_text": "<col:Yellow>'<MinigameName>' has started.",
+    "chat_text": "Grab your flak jacket, '<MinigameName>' has been started in <DistrictBlock> by a GM, with all weapons being of an explosive nature. Earn Joker Tickets provided by our wonderful benefactors from Redhill.",
+    "order": 590,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Started_GunGame_Frosi",
+    "display_text": "<col:Yellow>'<MinigameName>' has started.",
+    "chat_text": "On behalf of Redhill, please enjoy this preview of some newly available weapons. '<MinigameName>' has been started in <DistrictBlock>. Head there to earn your Joker Tickets",
+    "order": 591,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Started_GunGame_JokerBox",
+    "display_text": "<col:Yellow>'<MinigameName>' has started.",
+    "chat_text": "You feeling lucky, well are you? '<MinigameName>' has been started in <DistrictBlock> by a GM. Head to the block to take part.  Weapons are all from the Joker Boxes. Earn Joker Tickets provided by our wonderful benefactors from Redhill.",
+    "order": 592,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Started_GunGame_Pistols",
+    "display_text": "<col:Yellow>'<MinigameName>' has started.",
+    "chat_text": "Draw, partner! '<MinigameName>' has been started in <DistrictBlock> by a GM. Earn Joker Tickets provided by our wonderful benefactors from Redhill.",
+    "order": 593,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Started_GunGame_Streak",
+    "display_text": "<col:Yellow>'<MinigameName>' has started.",
+    "chat_text": "'<MinigameName>' has been started in <DistrictBlock> by a GM. Earn Joker Tickets provided by our wonderful benefactors from Redhill. Be careful though, you'll need multiple kills without dying to reach those dizzying heights.",
+    "order": 594,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Started_Halloween_FirstInfection_Chat",
+    "display_text": "",
+    "chat_text": "As the fog rolls in, visibility will become reduced. Enemy players will become harder to see, only becoming clear when you look at them directly or they make a loud noise.",
+    "order": 595,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Started_Halloween_FirstInfection_Others",
+    "display_text": "A Spectre has Arisen!",
+    "chat_text": "This is not possible…the dreaded Horseman curse is real.  You have two options available to you.  \n1. Destroy the HEADLESS HORSEMAN to become it\n2. Fight or Run to SURVIVE\nThe choice is yours!",
+    "order": 596,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Started_Halloween_FirstInfection_Player",
+    "display_text": "You are the Headless Horseman!",
+    "chat_text": "",
+    "order": 597,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Started_Halloween_Infection",
+    "display_text": "Destroy the most Pumpkins to become the first Headless Horseman!",
+    "chat_text": "",
+    "order": 598,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Survival_AccessCodeSpawned",
+    "display_text": "ACCESS CODE SPAWNED -  Grab one to arm a RIOT Device",
+    "chat_text": "",
+    "order": 599,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Survival_Bomb_Armed_All",
+    "display_text": "RIOT Device armed.",
+    "chat_text": "A RIOT DEVICE has been armed in <DistrictBlock>. Release in <Score>s.",
+    "order": 600,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Survival_Bomb_Armed_Secondary",
+    "display_text": "<DistrictBlock>",
+    "chat_text": "",
+    "order": 601,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Survival_Bomb_Armed_Team",
+    "display_text": "Your team armed a RIOT Device.",
+    "chat_text": "Your Team has armed the RIOT DEVICE in <DistrictBlock>",
+    "order": 602,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Survival_Bomb_Disarmed_All",
+    "display_text": "The Emitter in <DistrictBlock> has been defused. It's safe. For now.",
+    "chat_text": "The RIOT DEVICE in <DistrictBlock> has been defused. It's safe. For now.",
+    "order": 603,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Survival_Bomb_Disarmed_Team",
+    "display_text": "Your Team has defused the Emitter in <DistrictBlock>. It's safe. For now.",
+    "chat_text": "Your Team has defused the RIOT DEVICE in <DistrictBlock>. It's safe. For now.",
+    "order": 604,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Survival_Economy_PickupAvailable_Primary",
+    "display_text": "PRIMARY - Now Available",
+    "chat_text": "You have earned enough cash to use the Primary Weapon Gun Caches that are scattered throughout the map. Find and use one to unlock your primary weapon.",
+    "order": 605,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Survival_Economy_PickupAvailable_Respawn",
+    "display_text": "EXTRA LIFE - Now Available",
+    "chat_text": "You have earned enough cash to use the Medical Kits. Find and activate one to gain an additional life.",
+    "order": 606,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Survival_Economy_PickupAvailable_Secondary",
+    "display_text": "SECONDARY  - Now Available",
+    "chat_text": "You have earned enough cash to use the Secondary Weapon Gun Caches that are scattered throughout the map. Find and use one to unlock your secondary weapon.",
+    "order": 607,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Survival_EndGame_Started",
+    "display_text": "RIOT Van leaving soon",
+    "chat_text": "The last RIOT Extraction Team will leave in 6 minutes. If you bribe them more than anyone else, you'll be on board when they escape. If you don't have enough, better make sure you're the only one's standing by that point.",
+    "order": 608,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Survival_EndGame_Started_Secondary",
+    "display_text": "Get the biggest Bribe to the Van",
+    "chat_text": "",
+    "order": 609,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Survival_LivesAdded_Self",
+    "display_text": "EXTRA LIFE AWARDED",
+    "chat_text": "",
+    "order": 610,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Survival_LivesAdded_Team",
+    "display_text": "<CharacterNameA> has an extra life.",
+    "chat_text": "",
+    "order": 611,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Survival_Objective_Assigned_Bomb",
+    "display_text": "Arm RIOT DEVICES\n(Access Code expires in <col:Yellow>5 minutes</col>).",
+    "chat_text": "Arm RIOT Devices to earn cash. You have 5 minutes until your access code expires.",
+    "order": 612,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Survival_Objective_Assigned_Defuse",
+    "display_text": "Protect RIOT Devices from being Armed.",
+    "chat_text": "Enemy teams will try to arm the RIOT Devices located in each block.\nFind and Defuse any that are set to gain cash.",
+    "order": 613,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Survival_Pickup_Consumable_Self",
+    "display_text": "Hazmat Suit Consumable.",
+    "chat_text": "Hazmat Suits make you temporarily immune to the effects of the RIOT Devices. Use them to push through gas filled areas without taking damage. Press <key:ToggleConsumable> to activate.",
+    "order": 614,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Survival_Pickup_Consumable_Self_Secondary",
+    "display_text": "Press <key:ToggleConsumable> to activate.",
+    "chat_text": "",
+    "order": 615,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Survival_Pickup_PrimaryWeapon_Self",
+    "display_text": "Primary unlocked.",
+    "chat_text": "",
+    "order": 616,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Survival_Pickup_PrimaryWeapon_Team",
+    "display_text": "<CharacterNameA>: Unlocked Primary.",
+    "chat_text": "",
+    "order": 617,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Survival_Pickup_SecondaryWeapon_Self",
+    "display_text": "Secondary unlocked.",
+    "chat_text": "",
+    "order": 618,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Survival_Pickup_SecondaryWeapon_Team",
+    "display_text": "<CharacterNameA>: Unlocked Secondary.",
+    "chat_text": "",
+    "order": 619,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Survival_Player_Kill_Counted",
+    "display_text": "Killed <CharacterNameA>.",
+    "chat_text": "",
+    "order": 620,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_Survival_Respawn_Team",
+    "display_text": "<CharacterNameA> Respawned!",
+    "chat_text": "",
+    "order": 621,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_WeaponDrop_DropSpawned_0",
+    "display_text": "Weapons are spawning at Ga5 stations.",
+    "chat_text": "",
+    "order": 622,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_WeaponDrop_DropSpawned_1",
+    "display_text": "Basic Weapons are now spawning in your team's turf.",
+    "chat_text": "Though the contacts have disappeared, they've left something to help. Check their usual haunts for discarded weapons.",
+    "order": 623,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_WeaponDrop_DropSpawned_2",
+    "display_text": "Snipers and Explosives are now available.",
+    "chat_text": "Sniper Rifles and Explosives can now be found around the district. Check vantage points and garages.",
+    "order": 624,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_WeaponDrop_DropSpawned_3",
+    "display_text": "New weapons can be found in random locations.",
+    "chat_text": "",
+    "order": 625,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_WeaponDrop_DropSpawned_4",
+    "display_text": "",
+    "chat_text": "The contacts send more help. Check their usual locations for new weapons.",
+    "order": 626,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_WeaponDrop_DropSpawned_5",
+    "display_text": "Check your District Map!",
+    "chat_text": "Legendary: <ItemDisplayName> spawned near <DistrictBlock>",
+    "order": 627,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_WeaponDrop_DropSpawned_6",
+    "display_text": "New weapons can be found in random locations.",
+    "chat_text": "",
+    "order": 628,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_WeaponDrop_DropSpawned_7",
+    "display_text": "Weapons can now be found near Anarchy Contacts.",
+    "chat_text": "Looks like you need some help. Weapons will now spawn near your Anarchy contacts.",
+    "order": 629,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_WeaponDrop_DropSpawned_8",
+    "display_text": "Head to <DistrictBlock> and finish this!",
+    "chat_text": "The final push has started! Dozens of Legendaries can be found near <DistrictBlock>",
+    "order": 630,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_WeaponDrop_HighScore_Attained",
+    "display_text": "You are now a Provocateur!",
+    "chat_text": "By becoming a Provocateur, you have now unlocked the ability to use your primary weapon!",
+    "order": 631,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_WeaponDrop_HighScore_Attained_Others",
+    "display_text": "<CharacterNameA> is a Provocateur. Kill them!",
+    "chat_text": "<CharacterNameA> is now a Provocateur and can use their primary weapon. Hunt them down and take it!",
+    "order": 632,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_WeaponDrop_HighScore_Attained_Team",
+    "display_text": "<CharacterNameA> is a Provocateur. Protect them!",
+    "chat_text": "<CharacterNameA> is now a Provocateur and can use their primary weapon. Protect them.",
+    "order": 633,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_WeaponDrop_HighScore_Killed",
+    "display_text": "Provocateur <CharacterNameA> Eliminated",
+    "chat_text": "",
+    "order": 634,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_WeaponDrop_HighScore_Killed_Others",
+    "display_text": "<CharacterNameA> has killed the Provocateur, <CharacterNameB>",
+    "chat_text": "",
+    "order": 635,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_WeaponDrop_Player_Joined",
+    "display_text": "",
+    "chat_text": "You have been transported to a team spawn zone and your primary weapon removed. Search for a new one.",
+    "order": 636,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_WeaponDrop_Protagonist_Attained",
+    "display_text": "You are the Anarchist!",
+    "chat_text": "You are now the Anarchist. You are worth 3 Lives to your team, stay alive!",
+    "order": 637,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_WeaponDrop_Protagonist_Attained_Others",
+    "display_text": "<CharacterNameA> is now the Anarchist",
+    "chat_text": "<CharacterNameA> is now the Anarchist. Kill Them!",
+    "order": 638,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_WeaponDrop_Protagonist_Attained_Team",
+    "display_text": "<CharacterNameA> is now the Anarchist",
+    "chat_text": "<CharacterNameA> is now the Anarchist. Protect them at all costs!",
+    "order": 639,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_WeaponDrop_Protagonist_Killed",
+    "display_text": "You have killed the Anarchist, <CharacterNameA>",
+    "chat_text": "",
+    "order": 640,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_WeaponDrop_Protagonist_Killed_Others",
+    "display_text": "The Anarchist <CharacterNameA> was killed by <CharacterNameB>",
+    "chat_text": "",
+    "order": 641,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_WeaponDrop_Started",
+    "display_text": "<MinigameName> Has Started!",
+    "chat_text": "",
+    "order": 642,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Minigame_WeaponDrop_WeaponUnlocked_Ceremony",
+    "display_text": "Your Primary Weapon is now available for use.",
+    "chat_text": "",
+    "order": 643,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Mission_EnemyStageComplete",
+    "display_text": "Opposition Stage Completed: Now on Stage <Stage_Cur>",
+    "chat_text": "",
+    "order": 644,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Mission_ItemDelivered",
+    "display_text": "Item Delivered: <Item_Cur> / <Item_Max>",
+    "chat_text": "",
+    "order": 645,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Mission_Overtime_CSALose",
+    "display_text": "OVERTIME! \nEnemy Completing Objective!",
+    "chat_text": "",
+    "order": 646,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Mission_Overtime_CSALose_Chat",
+    "display_text": "OVERTIME! \nAn enemy is completing an objective. Stop him completing it to end overtime and win the mission.",
+    "chat_text": "",
+    "order": 647,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Mission_Overtime_CSAWin",
+    "display_text": "OVERTIME! \nTeam Completing Objective!",
+    "chat_text": "",
+    "order": 648,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Mission_Overtime_CSAWin_Chat",
+    "display_text": "OVERTIME!\nYou or a teammate is completing an objective. Complete it or protect your teammate until he does to move onto the next stage.",
+    "chat_text": "",
+    "order": 649,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Mission_Overtime_GraffitiLose",
+    "display_text": "OVERTIME!",
+    "chat_text": "",
+    "order": 650,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Mission_Overtime_GraffitiLose_Chat",
+    "display_text": "OVERTIME!\nKill the enemy that is spraying the point / Recapture the majority of graffiti points (whichever is appropriate)",
+    "chat_text": "",
+    "order": 651,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Mission_Overtime_GraffitiWin",
+    "display_text": "OVERTIME!",
+    "chat_text": "",
+    "order": 652,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Mission_Overtime_GraffitiWin_Chat",
+    "display_text": "OVERTIME!\nHold Out until you complete the objective / gain most points (whichever is appropriate)",
+    "chat_text": "",
+    "order": 653,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Mission_Overtime_PointsHeldLose",
+    "display_text": "OVERTIME! \nCapture the Objectives!",
+    "chat_text": "",
+    "order": 654,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Mission_Overtime_PointsHeldLose_Chat",
+    "display_text": "OVERTIME!\nYour team is currently winning on points but the enemy is holding the majority of Objectives and so has a chance to win. Regain control of the majority of Objectives before the enemy beats your point score to win.",
+    "chat_text": "",
+    "order": 655,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Mission_Overtime_PointsHeldWin",
+    "display_text": "OVERTIME!\nHold the Objectives!",
+    "chat_text": "",
+    "order": 656,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Mission_Overtime_PointsHeldWin_Chat",
+    "display_text": "OVERTIME!\nYour team is currently losing on points but you can still win! As you are holding the majority of Objectives the mission won't end until you lose the majority or win on points. Hold On!",
+    "chat_text": "",
+    "order": 657,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Mission_StageComplete",
+    "display_text": "Stage Complete! You are now on Stage <Stage_Cur>",
+    "chat_text": "",
+    "order": 658,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "MusicPlayer_ImportComplete",
+    "display_text": "Import Complete! <xxx> new tracks found",
+    "chat_text": "",
+    "order": 659,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "MusicPlayer_PlaylistAddTracks",
+    "display_text": "\"<xxx> tracks added to the playlist \"<plname>\"\"",
+    "chat_text": "",
+    "order": 660,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "MusicStudio_FileTooLarge",
+    "display_text": "<col:HUDMessage_Error>File size limit reached. You will need to reduce the complexity if you wish to save the item.</col>",
+    "chat_text": "",
+    "order": 661,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "MusicStudio_MemoryUsageFull",
+    "display_text": "<col:HUDMessage_Error>Audio sample limit reached. You will need to reduce the complexity to save this item.</col>",
+    "chat_text": "",
+    "order": 662,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "MusicStudio_PasteConflicts",
+    "display_text": "<col:HUDMessage_Error>The paste operation conflicted with existing notes. Some of your note data was discarded.</col>",
+    "chat_text": "",
+    "order": 663,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "NotReadyNagMessage",
+    "display_text": "You are 'Not Ready' and will not receive missions.",
+    "chat_text": "",
+    "order": 664,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "OpenWorld_ItemDelivered",
+    "display_text": "Items delivered",
+    "chat_text": "",
+    "order": 665,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "OpenWorld_VehicleDelivered",
+    "display_text": "Vehicle delivered",
+    "chat_text": "",
+    "order": 666,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "OutOfBounds",
+    "display_text": "<col:HUDMessage_Error>You went out of bounds, and were teleported.</col>",
+    "chat_text": "",
+    "order": 667,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "PlayerInfo_PlayerHasLeftGame",
+    "display_text": "<CharacterName> has left the game.",
+    "chat_text": "",
+    "order": 668,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "ProvingGrounds_ChallengePrizeQualified_1_Enter",
+    "display_text": "You are now in the running to win the First Prize.",
+    "chat_text": "",
+    "order": 669,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "ProvingGrounds_ChallengePrizeQualified_1_Leave",
+    "display_text": "You are no longer in the running for the First Prize. Fight harder!",
+    "chat_text": "",
+    "order": 670,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "ProvingGrounds_ChallengePrizeQualified_2_Enter",
+    "display_text": "You have completed the Second Challenge!",
+    "chat_text": "",
+    "order": 671,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "ProvingGrounds_ChallengePrizeQualified_3_Enter",
+    "display_text": "You have completed the Third Challenge!",
+    "chat_text": "",
+    "order": 672,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "ProvingGrounds_ChallengePrizeReceived_Bronze",
+    "display_text": "You've won the Third Prize in a weekly Challenge. Check your mailbox for the reward.",
+    "chat_text": "",
+    "order": 673,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "ProvingGrounds_ChallengePrizeReceived_Gold",
+    "display_text": "You've won the First Prize in a weekly Challenge. Check your mailbox for the reward.",
+    "chat_text": "",
+    "order": 674,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "ProvingGrounds_ChallengePrizeReceived_Silver",
+    "display_text": "You've won the Second Prize in a weekly Challenge. Check your mailbox for the reward.",
+    "chat_text": "",
+    "order": 675,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "ProvingGrounds_Challenge_MissionWarning",
+    "display_text": "The challenges for this week are about to cycle. Missions will end in one minute!",
+    "chat_text": "",
+    "order": 676,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "ProvingGrounds_Challenge_New",
+    "display_text": "A New Challenge has started! Prize levels reset.",
+    "chat_text": "",
+    "order": 677,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "ProvingGrounds_Challenge_New_Promote",
+    "display_text": "New Challenges have started in Fight Club!",
+    "chat_text": "",
+    "order": 678,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "ProvingGrounds_MissionActivityComplete_SystemMessage",
+    "display_text": "Congratulations! New Activity Assigned!",
+    "chat_text": "",
+    "order": 679,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "ProvingGrounds_MissionActivity_Completed",
+    "display_text": "Complete enough activites to win the Challenges and collect <col:Bronze>Joker Tickets</col>.",
+    "chat_text": "",
+    "order": 680,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "ProvingGrounds_MissionActivity_Completed_Chat",
+    "display_text": "<col:Bronze>Complete enough activities to win the weekly Challenge and you'll earn Joker Tickets. Exchange these in Social with Ophelia and Wilde for cool stuff!</col>",
+    "chat_text": "",
+    "order": 681,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "ProvingGrounds_WaitingForMission",
+    "display_text": "Waiting for Players...",
+    "chat_text": "",
+    "order": 682,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Resupply_Fail_PickedUpWeapon",
+    "display_text": "<col:HUDMessage_Error>This weapon cannot be resupplied.</col>",
+    "chat_text": "Weapons picked up from Secret Santa Gift Boxes cannot be resupplied.",
+    "order": 683,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Reward_Unlock_Clothing",
+    "display_text": "You can buy new clothing in the customisation studio.",
+    "chat_text": "",
+    "order": 684,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Reward_Unlock_Emotes",
+    "display_text": "You can perform new emotes.",
+    "chat_text": "",
+    "order": 685,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Reward_Unlock_Vehicles",
+    "display_text": "You can buy new vehicles from the garage.",
+    "chat_text": "",
+    "order": 686,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Reward_Unlock_Weapons",
+    "display_text": "You can buy new weapons from contacts.",
+    "chat_text": "",
+    "order": 687,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Combat_ArrestEnemy",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 688,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Combat_KillEnemy",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 689,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Combat_KillEnemyAssist",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 690,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Combat_RescueTeammate",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 691,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Combat_StunnedEnemy",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 692,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Combat_StunnedTeammate",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 693,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalBigWin_All",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 694,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalBigWin_Arrest_10_100",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 695,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalBigWin_Arrest_10_25",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 696,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalBigWin_Arrest_10_33",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 697,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalBigWin_Arrest_10_50",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 698,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalBigWin_Arrest_10_75",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 699,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalBigWin_Defuse",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 700,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalBigWin_Detonate",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 701,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalBigWin_Rescue_12",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 702,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalBigWin_Rescue_15",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 703,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalBigWin_Rescue_3",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 704,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalBigWin_Rescue_6",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 705,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalBigWin_Rescue_9",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 706,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalBigWin_Takeout_11",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 707,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalBigWin_Takeout_15",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 708,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalBigWin_Takeout_5",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 709,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalBigWin_Takeout_7",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 710,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalBigWin_Takeout_9",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 711,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalDishonour_AFK",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 712,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalDishonour_ArrestedKill_1",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 713,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalDishonour_ArrestedKill_10",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 714,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalDishonour_ArrestedKill_2",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 715,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalDishonour_ArrestedKill_3",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 716,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalDishonour_ArrestedKill_4",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 717,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalDishonour_ArrestedKill_5",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 718,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalDishonour_ArrestedKill_6",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 719,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalDishonour_ArrestedKill_7",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 720,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalDishonour_ArrestedKill_8",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 721,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalDishonour_ArrestedKill_9",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 722,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalDishonour_FriendlyKill_1",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 723,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalDishonour_FriendlyKill_10",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 724,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalDishonour_FriendlyKill_2",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 725,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalDishonour_FriendlyKill_3",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 726,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalDishonour_FriendlyKill_4",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 727,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalDishonour_FriendlyKill_5",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 728,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalDishonour_FriendlyKill_6",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 729,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalDishonour_FriendlyKill_7",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 730,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalDishonour_FriendlyKill_8",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 731,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalDishonour_FriendlyKill_9",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 732,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalDishonour_FriendlyStun_1",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 733,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalDishonour_FriendlyStun_2",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 734,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalDishonour_FriendlyStun_3",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 735,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalDishonour_FriendlyStun_4",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 736,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalDishonour_FriendlyStun_5",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 737,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalDishonour_SelfKill_02",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 738,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalDishonour_SelfKill_03",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 739,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalDishonour_SelfKill_04",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 740,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalDishonour_SelfKill_05",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 741,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalDishonour_SelfKill_06",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 742,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalDishonour_SelfKill_07",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 743,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalDishonour_SelfKill_08",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 744,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalDishonour_SelfKill_09",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 745,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalDishonour_SelfKill_10",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 746,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalDishonour_SelfKill_15",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 747,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalDishonour_SelfKill_20",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 748,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalDishonour_SelfKill_25",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 749,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalDishonour_SelfKill_30",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 750,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalKillBehind",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 751,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalKillStreak_05",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 752,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalKillStreak_10",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 753,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalKillStreak_15",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 754,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalKillStreak_20",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 755,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalKillStreak_25",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 756,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalKillStreak_30",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 757,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalSituational_AntiGraffitiKill",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 758,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalSituational_ArrestStreakKiller",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 759,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalSituational_ArsonKill",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 760,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalSituational_DriverAssistKill",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 761,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalSituational_GraffitiingKill",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 762,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalSituational_GrenadeKill",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 763,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalSituational_KillStreakArrest",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 764,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalSituational_KillStreakKiller",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 765,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalSituational_MeleeKill",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 766,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalSituational_PostDeathKill",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 767,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalSituational_SuperKill",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 768,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalSituational_TaskItemKill_1",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 769,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalSituational_VIPKill",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 770,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalSituational_VehicleKill",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 771,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalTimeLimit_Kills_2",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 772,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalTimeLimit_Kills_3",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 773,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalTimeLimit_Kills_4",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 774,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Earned_MedalTimeLimit_Kills_5",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 775,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_KillTeam_Chaos",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 776,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Match_Won",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 777,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Minigame_Generic",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 778,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Minigame_Mugging_Easter_NPC_Kill",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 779,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Minigame_Mugging_NPC_Kill",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 780,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Mission_Assist_CSA_Arson",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 781,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Mission_Assist_CSA_Bombings",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 782,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Mission_Assist_CSA_Burglary",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 783,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Mission_Assist_CSA_CarTheft",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 784,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Mission_Assist_CSA_DefuseBomb",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 785,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Mission_Assist_CSA_DeliverItem",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 786,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Mission_Assist_CSA_ForcedEntry",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 787,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Mission_Assist_CSA_Graffiti",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 788,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Mission_Assist_CSA_Hacking",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 789,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Mission_Assist_CSA_Investigate",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 790,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Mission_Assist_CSA_Vandalism",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 791,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Mission_Assist_Sabotage",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 792,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Mission_CSA_Arson",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 793,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Mission_CSA_Bombings",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 794,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Mission_CSA_Burglary",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 795,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Mission_CSA_CarTheft",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 796,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Mission_CSA_Checkpoint",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 797,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Mission_CSA_DefuseBomb",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 798,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Mission_CSA_DeliverItem",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 799,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Mission_CSA_ForcedEntry",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 800,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Mission_CSA_Graffiti",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 801,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Mission_CSA_Hacking",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 802,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Mission_CSA_Investigate",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 803,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Mission_CSA_Mugging",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 804,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Mission_CSA_Sabotage",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 805,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Mission_CSA_Vandalism",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 806,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Mission_ObjectiveHoldPoints",
+    "display_text": "+<Score>",
+    "chat_text": "",
+    "order": 807,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Score_Mission_Pickup",
+    "display_text": "None",
+    "chat_text": "",
+    "order": 808,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "SeasonalEvent_Active",
+    "display_text": "<SeasonalEvent> is active!",
+    "chat_text": "<SeasonalEvent> is active!",
+    "order": 809,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "SeasonalEvent_Active_BonusCash",
+    "display_text": "<SeasonalEvent> Event is active all APB$ gains increased by 50%!",
+    "chat_text": "<SeasonalEvent> is active!",
+    "order": 810,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "SeasonalEvent_Active_BonusJokerTickets",
+    "display_text": "<SeasonalEvent> Event is active all Joker Ticket gains increased by 100%!",
+    "chat_text": "<SeasonalEvent> is active!",
+    "order": 811,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "SeasonalEvent_Active_BonusRoleProg",
+    "display_text": "<SeasonalEvent> Event is active all Weapon Kills count twice toward their role!",
+    "chat_text": "<SeasonalEvent> is active!",
+    "order": 812,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "SeasonalEvent_Active_BonusStanding",
+    "display_text": "<SeasonalEvent> Event is active all Contact Standing gains increased by 50%!",
+    "chat_text": "<SeasonalEvent> is active!",
+    "order": 813,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "SeasonalEvent_Deactivate_BonusCash",
+    "display_text": "<SeasonalEvent> Event has ended!",
+    "chat_text": "<SeasonalEvent> Event has ended!",
+    "order": 814,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "SeasonalEvent_Deactivate_BonusJokerTickets",
+    "display_text": "<SeasonalEvent> Event has ended!",
+    "chat_text": "<SeasonalEvent> Event has ended!",
+    "order": 815,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "SeasonalEvent_Deactivate_BonusRoleProg",
+    "display_text": "<SeasonalEvent> Event has ended!",
+    "chat_text": "<SeasonalEvent> Event has ended!",
+    "order": 816,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "SeasonalEvent_Deactivate_BonusStanding",
+    "display_text": "<SeasonalEvent> Event has ended!",
+    "chat_text": "<SeasonalEvent> Event has ended!",
+    "order": 817,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Subscription_LimitNear",
+    "display_text": "You are running out of Action District time.  Please update your account.\n\nRemaining minutes of playtime: <Minutes>.",
+    "chat_text": "You are running out of Action District time.  Please update your account. Remaining minutes of playtime: <Minutes>.",
+    "order": 818,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "SwitchWeapon_NoDeployedWeapon_Grenade",
+    "display_text": "<col:HUDMessage_Error>No grenades equipped!</col>",
+    "chat_text": "",
+    "order": 819,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "SwitchWeapon_NoDeployedWeapon_Primary",
+    "display_text": "<col:HUDMessage_Error>No primary weapon equipped!</col>",
+    "chat_text": "",
+    "order": 820,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "SwitchWeapon_NoDeployedWeapon_Secondary",
+    "display_text": "<col:HUDMessage_Error>No secondary weapon equipped!</col>",
+    "chat_text": "",
+    "order": 821,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "SymbolEditor_AddTooMany",
+    "display_text": "<col:HUDMessage_Error>Unable to add <Primitive>, as doing so would exceed the layer limit</col>",
+    "chat_text": "",
+    "order": 822,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "SymbolEditor_AtSymbolLimit",
+    "display_text": "<col:HUDMessage_Error>You have reached the maximum number of symbols you can store.  Please delete some before trying to create a new symbol.</col>",
+    "chat_text": "",
+    "order": 823,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "SymbolEditor_DuplicateTooMany",
+    "display_text": "<col:HUDMessage_Error>Unable to duplicate the selected layers, as doing so would exceed the layer limit</col>",
+    "chat_text": "",
+    "order": 824,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "SymbolEditor_SymbolHasNoLayers",
+    "display_text": "<col:HUDMessage_Error>The symbol you added contains no layers...</col>",
+    "chat_text": "",
+    "order": 825,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Test1",
+    "display_text": "Test1",
+    "chat_text": "",
+    "order": 826,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Test2",
+    "display_text": "Test2",
+    "chat_text": "Test",
+    "order": 827,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Test3",
+    "display_text": "Test3",
+    "chat_text": "",
+    "order": 828,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Test4",
+    "display_text": "Test4",
+    "chat_text": "",
+    "order": 829,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "TestAction",
+    "display_text": "TestAction TestAction TestAction TestAction Blah Blah Blah Blah Blah Blah BLAHDEBLAHDEBLAHDEBLAHDEBLAHDEBLAH",
+    "chat_text": "",
+    "order": 830,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "TestFontLarge",
+    "display_text": "Testing Large Font",
+    "chat_text": "",
+    "order": 831,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "TestFontMedium",
+    "display_text": "Testing Medium Font",
+    "chat_text": "",
+    "order": 832,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "TestFontSmall",
+    "display_text": "Testing Small Font",
+    "chat_text": "",
+    "order": 833,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "TimeLimitedReward_MissionWin_Growl",
+    "display_text": "Win the mission to receive the <RewardDescription>!",
+    "chat_text": "You have been chosen for the chance to win an <RewardDescription>, the newest vehicle on the block. To succeed, you and your team must win this mission!",
+    "order": 834,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "TimeLimitedReward_MissionWin_Growl_Fail",
+    "display_text": "<col:Purple_Bright>You didn't manage to win the <RewardDescription>.",
+    "chat_text": "You didn't complete the Challenge to win the <RewardDescription>. Better luck next time.",
+    "order": 835,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "TimeLimitedReward_MissionWin_Growl_Fail_NoParticipation",
+    "display_text": "<col:Purple_Bright>You didn't manage to win the <RewardDescription>.",
+    "chat_text": "You didn't complete the Challenge to win the <RewardDescription>. You need to participate in the mission in order to win.",
+    "order": 836,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "TimeLimitedReward_MissionWin_Growl_Success",
+    "display_text": "<col:Purple_Bright>Congratuations! You have won the <RewardDescription>!",
+    "chat_text": "You have successfully completed your challenge. Check your mailbox for your <RewardDescription>. You can also purchase additional vehicles in the garage or from contacts.",
+    "order": 837,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "TimeLimitedReward_MissionWin_Growl_Success_Others",
+    "display_text": "<col:Purple_Bright><CharacterNameA> has won the <RewardDescription>!",
+    "chat_text": "<CharacterNameA> has won the <RewardDescription>! A new challenger to win will be chosen soon. Stick around for your chance to be chosen.",
+    "order": 838,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "TradeCanceled",
+    "display_text": "Trade with <CharacterNameA> has been Cancelled.",
+    "chat_text": "",
+    "order": 839,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "TradeChanged_Cash",
+    "display_text": "Trade Changed! Cash Altered by <CharacterNameA>",
+    "chat_text": "Money Changed: Accept Trade Offer was automatically rejected due to the money being adjusted.",
+    "order": 840,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "TradeChanged_ItemAdded",
+    "display_text": "Trade Changed! The '<ItemDisplayName>' item was added by <CharacterNameA>",
+    "chat_text": "Item Added:  <ItemDisplayName>. Accepted trade was automatically rejected due to <CharacterNameA> adding <ItemDisplayName> to the trade.",
+    "order": 841,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "TradeChanged_ItemRemoved",
+    "display_text": "Trade Changed! The '<ItemDisplayName>' item was removed by <CharacterNameA>",
+    "chat_text": "Item Removed!: <ItemDisplayName>. Accepted trade was automatically rejected due to <CharacterNameA> removing <ItemDisplayName> from the trade.",
+    "order": 842,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "TradeChanged_Partner",
+    "display_text": "Trade Changed! Your accept button has been cancelled.",
+    "chat_text": "Trade Accept was automatically rejected.",
+    "order": 843,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "TradeChanged_Self",
+    "display_text": "Trade Changed! Your accept button has been cancelled.",
+    "chat_text": "",
+    "order": 844,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "TradeCompleted",
+    "display_text": "Trade Success!",
+    "chat_text": "",
+    "order": 845,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "TradeFailed",
+    "display_text": "Trade Failed",
+    "chat_text": "",
+    "order": 846,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "TradeFailed_ContactCS",
+    "display_text": "CRITICAL ERROR: TRADE FAILED! CONTACT CUSTOMER SERVICE IMMEDIATELY",
+    "chat_text": "",
+    "order": 847,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "TradeLockChanged_PermBan",
+    "display_text": "Your account has been permanently banned from trading.",
+    "chat_text": "Your Account has been permanently banned from trading",
+    "order": 848,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "TradeLockChanged_Removed",
+    "display_text": "Trade-Lock removed, happy Trading!",
+    "chat_text": "The ban on trading on your account has been removed.",
+    "order": 849,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "TradeLockChanged_TempBan",
+    "display_text": "Your Account has been temporarily locked from trading.",
+    "chat_text": "Your account has been temporarily locked from trading for the next <DeltaTime>",
+    "order": 850,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "TradeLockedAtStartup_Temp",
+    "display_text": "",
+    "chat_text": "Time remaining on Trade Lock: <DeltaTime>",
+    "order": 851,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "TradeStarted",
+    "display_text": "Trade Started with <CharacterNameA>",
+    "chat_text": "Trade started with <CharacterNameA>. Use '/tr' to discuss the trade between you.",
+    "order": 852,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Tutorial",
+    "display_text": "Tutorial",
+    "chat_text": "",
+    "order": 853,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "TutorialMessage_CategoryComplete",
+    "display_text": "You have completed the <TutorialTitle> category. Check the mail for your rewards.",
+    "chat_text": "",
+    "order": 854,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "TutorialMessage_EventComplete",
+    "display_text": "You have completed the <TutorialTitle> tutorial.",
+    "chat_text": "",
+    "order": 855,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "TutorialMessage_SuperCategoryComplete",
+    "display_text": "You have completed all of the <TutorialTitle> tutorials. Check your mail for a reward!",
+    "chat_text": "",
+    "order": 856,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "UnstickRespawn",
+    "display_text": "Respawning Player",
+    "chat_text": "",
+    "order": 857,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "UnstickRespawnNotAllowed",
+    "display_text": "<col:HUDMessage_Error>You can't respawn right now</col>",
+    "chat_text": "",
+    "order": 858,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Vault_RedeemComplete",
+    "display_text": "Vault Item has been redeemed.",
+    "chat_text": "False",
+    "order": 859,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "VehicleBloatedCustomisation",
+    "display_text": "Vehicle customization too complex to patch",
+    "chat_text": "",
+    "order": 860,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "VehicleCritical_Fire",
+    "display_text": "<col:HUDMessage_Error>Vehicle critically damaged!\nIt is going to explode!</col>",
+    "chat_text": "",
+    "order": 861,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "VehicleEmp_Active",
+    "display_text": "<col:HUDMessage_Error>Vehicle affected by EMP!</col>",
+    "chat_text": "",
+    "order": 862,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "VehicleInvalidCustomisation",
+    "display_text": "Removing illegally modified vehicle customizations",
+    "chat_text": "",
+    "order": 863,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "VehicleRepairZone",
+    "display_text": "You have entered a Vehicle Repair Zone. Your vehicle is being repaired.",
+    "chat_text": "",
+    "order": 864,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "VehicleSpawnZone",
+    "display_text": "Find the nearby Vehicle Spawn Machine then press <Key:DoCSAKeyPressed> to use it and spawn your equipped vehicle",
+    "chat_text": "",
+    "order": 865,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "VehicleSpawnZone_SpawnVehicle",
+    "display_text": "Find the nearby Pay and Display machine then press <Key:DoCSAKeyPressed> to use it and spawn your equipped vehicle",
+    "chat_text": "",
+    "order": 866,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Vending_Purchase",
+    "display_text": "<item> has been added to your Locker.",
+    "chat_text": "",
+    "order": 867,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Vending_Sell",
+    "display_text": "You sold <Item> for <Amount>.",
+    "chat_text": "",
+    "order": 868,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Wardrobe_EditWillAffect",
+    "display_text": "Edits to this item will affect:\n<Outfits>",
+    "chat_text": "",
+    "order": 869,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Wardrobe_ItemAddedToInventory",
+    "display_text": "<Item> added to your Locker.",
+    "chat_text": "",
+    "order": 870,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Wardrobe_ItemOverBudget",
+    "display_text": "<col:HUDMessage_Error>Your customization is too complex. Try fewer decals, or reduce the number of decal layers.</col>",
+    "chat_text": "",
+    "order": 871,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Wardrobe_OutfitOverBudget",
+    "display_text": "<col:HUDMessage_Error>Your outfit has too much customization to wear into the game. Try a different combination of worn items, or reduce their complexity.</col>",
+    "chat_text": "",
+    "order": 872,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Waypoint_Reached",
+    "display_text": "Waypoint Reached",
+    "chat_text": "",
+    "order": 873,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "WeaponCustomizationUI_Fail",
+    "display_text": "To access your Armory, press [<Key:DoInventoryCSAKeyPressed>] near an ammo vending machine, then [<Key:ToggleWeaponCustomisationUI>]",
+    "chat_text": "",
+    "order": 874,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Weapon_Disabled",
+    "display_text": "You cannot equip <WeaponName> in this district.",
+    "chat_text": "Your <WeaponName> is not available for use in this district type and will not be equipped. Switch to an alternative weapon.",
+    "order": 875,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Weapon_Override_Equiped",
+    "display_text": "New Weapon Assigned",
+    "chat_text": "",
+    "order": 876,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Weapon_Pickup",
+    "display_text": "You have picked up a new Weapon.",
+    "chat_text": "",
+    "order": 877,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Witnessable_Always",
+    "display_text": "Your Stash has reached $2500. You can now be witnessed by Enforcers at all times. Be Careful!",
+    "chat_text": "Between dirty cash on you and items you have stored in your vehicle, you have accumulated a stash of $2500 and are now permanently witnessable by Enforcers. You may want to take this opportunity to drop the stash off at a Money Launderer.",
+    "order": 878,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Witnessing_WitnessedByNPC",
+    "display_text": "A pedestrian witnessed you committing a crime",
+    "chat_text": "",
+    "order": 879,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Witnessing_WitnessedByPlayer",
+    "display_text": "<CharacterName> witnessed you committing a crime",
+    "chat_text": "",
+    "order": 880,
+    "source": "HUDMessages.INT"
+  },
+  {
+    "id": "Witnessing_YouWitnessedPlayer",
+    "display_text": "You witnessed <CharacterName> committing a crime",
+    "chat_text": "",
+    "order": 881,
+    "source": "HUDMessages.INT"
+  }
+]

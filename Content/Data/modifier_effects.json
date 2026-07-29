@@ -1,0 +1,1712 @@
+[
+  {
+    "id": "Character_JumpControl",
+    "category": "Character",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+400%<Color:R=1 G=1 B=1> air control"
+    ],
+    "order": 0,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Character_HardLanding",
+    "category": "Character",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+75%<Color:R=1 G=1 B=1> damage when landing on a target",
+      "<Color:R=0 G=1 B=0>+100%<Color:R=1 G=1 B=1> fall recovery time"
+    ],
+    "order": 1,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Usable_Consumable_Epinephrine",
+    "category": "Usable",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+50%<Color:R=1 G=1 B=1> sprint speed",
+      "<Color:R=0 G=1 B=0>+20%<Color:R=1 G=1 B=1> run speed",
+      "<Color:R=1 G=0 B=0>-40%<Color:R=1 G=1 B=1> health",
+      "<Color:R=1 G=0 B=0>-50% <Color:R=1 G=1 B=1> Jump Height while active."
+    ],
+    "order": 2,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Character_FieldSupplier",
+    "category": "Character",
+    "lines": [
+      "Deploys a <Color:R=0.7 G=0 B=0.7>Field Supplier<Color:R=1 G=1 B=1> for 30 seconds."
+    ],
+    "order": 3,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Character_FieldSupplier_Health",
+    "category": "Character",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+100%<Color:R=1 G=1 B=1 health",
+      "Deploys a <Color:R=0.7 G=0 B=0.7>Field Supplier<Color:R=1 G=1 B=1> for 30 seconds.",
+      "<Color:R=1 G=0 B=0>-10 seconds<Color:R=1 G=1 B=1> deploy time"
+    ],
+    "order": 4,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Character_FieldSupplier_Deploy",
+    "category": "Character",
+    "lines": [
+      "Deploys a <Color:R=0.7 G=0 B=0.7>Field Supplier<Color:R=1 G=1 B=1> for 30 seconds."
+    ],
+    "order": 5,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Character_FieldSupplier_Radius",
+    "category": "Character",
+    "lines": [
+      "Deploys a <Color:R=0.7 G=0 B=0.7>Field Supplier<Color:R=1 G=1 B=1> for 20 seconds.",
+      "<Color:R=0 G=1 B=0>+100%<Color:R=1 G=1 B=1> radius of field supplier"
+    ],
+    "order": 6,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Character_FieldSupplier_Resupply",
+    "category": "Character",
+    "lines": [
+      "Deploys a <Color:R=0.7 G=0 B=0.7>Field Supplier<Color:R=1 G=1 B=1> for 30 seconds."
+    ],
+    "order": 7,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Character_Fragile",
+    "category": "Character",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+14%<Color:R=1 G=1 B=1> sprint speed",
+      "<Color:R=0 G=1 B=0>+14%<Color:R=1 G=1 B=1> run speed",
+      "<Color:R=1 G=0 B=0>-14%<Color:R=1 G=1 B=1> health"
+    ],
+    "order": 8,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Character_ClottingAgent1",
+    "category": "Character",
+    "lines": [
+      "<Color:R=0 G=1 B=0>-25%<Color:R=1 G=1 B=1> health regen delay",
+      "<Color:R=1 G=0 B=0>+25%<Color:R=1 G=1 B=1> health regen time"
+    ],
+    "order": 9,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Character_ClottingAgent2",
+    "category": "Character",
+    "lines": [
+      "<Color:R=0 G=1 B=0>-50%<Color:R=1 G=1 B=1> health regen delay",
+      "<Color:R=1 G=0 B=0>+50%<Color:R=1 G=1 B=1> health regen time"
+    ],
+    "order": 10,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Character_ClottingAgent3",
+    "category": "Character",
+    "lines": [
+      "<Color:R=0 G=1 B=0>-80%<Color:R=1 G=1 B=1> health regen delay",
+      "<Color:R=1 G=0 B=0>+100%<Color:R=1 G=1 B=1> health regen time"
+    ],
+    "order": 11,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Character_HappyLandings1",
+    "category": "Character",
+    "lines": [
+      "<Color:R=0 G=1 B=0>-50%<Color:R=1 G=1 B=1> falling damage taken",
+      "<Color:R=1 G=0 B=0>-0.05 m/s<Color:R=1 G=1 B=1> falling speed at which you need to brace for impact"
+    ],
+    "order": 12,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Character_HappyLandings2",
+    "category": "Character",
+    "lines": [
+      "<Color:R=0 G=1 B=0>-70%<Color:R=1 G=1 B=1> falling damage taken",
+      "<Color:R=1 G=0 B=0>-0.1 m/s<Color:R=1 G=1 B=1> falling speed at which you need to brace for impact"
+    ],
+    "order": 13,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Character_HappyLandings3",
+    "category": "Character",
+    "lines": [
+      "<Color:R=0 G=1 B=0>-100%<Color:R=1 G=1 B=1> falling damage taken",
+      "<Color:R=1 G=0 B=0>-0.15 m/s<Color:R=1 G=1 B=1> falling speed at which you need to brace for impact"
+    ],
+    "order": 14,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Character_Kevlar1",
+    "category": "Character",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+10%<Color:R=1 G=1 B=1> player health",
+      "<Color:R=1 G=0 B=0>-15%<Color:R=1 G=1 B=1> sprint speed"
+    ],
+    "order": 15,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Character_Kevlar2",
+    "category": "Character",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+20%<Color:R=1 G=1 B=1> player health",
+      "<Color:R=1 G=0 B=0>-20%<Color:R=1 G=1 B=1> sprint speed",
+      "<Color:R=1 G=0 B=0>-10%<Color:R=1 G=1 B=1> run speed",
+      "<Color:R=1 G=0 B=0>-10%<Color:R=1 G=1 B=1> speed in marksmanship mode."
+    ],
+    "order": 16,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Character_Kevlar3",
+    "category": "Character",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+30%<Color:R=1 G=1 B=1> player health",
+      "<Color:R=1 G=0 B=0>-20%<Color:R=1 G=1 B=1> sprint speed",
+      "<Color:R=1 G=0 B=0>-20%<Color:R=1 G=1 B=1> run speed",
+      "<Color:R=1 G=0 B=0>-20%<Color:R=1 G=1 B=1> speed in marksmanship mode."
+    ],
+    "order": 17,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Vehicle_Explosives1",
+    "category": "Vehicle",
+    "lines": [
+      "<Color:R=0.7 G=0.7 B=0>+5%<Color:R=1 G=1 B=1> Ground Zero blast radius",
+      "<Color:R=0.7 G=0.7 B=0>+15%<Color:R=1 G=1 B=1> blast radius"
+    ],
+    "order": 18,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Vehicle_Explosives2",
+    "category": "Vehicle",
+    "lines": [
+      "<Color:R=0.7 G=0.7 B=0>+10%<Color:R=1 G=1 B=1> Ground Zero blast radius",
+      "<Color:R=0.7 G=0.7 B=0>+30%<Color:R=1 G=1 B=1> blast radius"
+    ],
+    "order": 19,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Vehicle_Explosives3",
+    "category": "Vehicle",
+    "lines": [
+      "<Color:R=0.7 G=0.7 B=0>+20%<Color:R=1 G=1 B=1> Ground Zero blast radius",
+      "<Color:R=0.7 G=0.7 B=0>+45%<Color:R=1 G=1 B=1> blast radius"
+    ],
+    "order": 20,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Vehicle_ChassisStrengthening1",
+    "category": "Vehicle",
+    "lines": [
+      "<Color:R=0 G=1 B=0>-10%<Color:R=1 G=1 B=1> damage taken from vehicle collisions",
+      "<Color:R=1 G=0 B=0>-10%<Color:R=1 G=1 B=1> damage done by vehicle collisions"
+    ],
+    "order": 21,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Vehicle_ChassisStrengthening2",
+    "category": "Vehicle",
+    "lines": [
+      "<Color:R=0 G=1 B=0>-20%<Color:R=1 G=1 B=1> damage taken from vehicle collisions",
+      "<Color:R=1 G=0 B=0>-20%<Color:R=1 G=1 B=1> damage done by vehicle collisions"
+    ],
+    "order": 22,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Vehicle_ChassisStrengthening3",
+    "category": "Vehicle",
+    "lines": [
+      "<Color:R=0 G=1 B=0>-30%<Color:R=1 G=1 B=1> damage taken from vehicle collisions",
+      "<Color:R=1 G=0 B=0>-30%<Color:R=1 G=1 B=1> damage done by vehicle collisions"
+    ],
+    "order": 23,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Vehicle_ArmoredEngine1",
+    "category": "Vehicle",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+40%<Color:R=1 G=1 B=1> delay before engine fire",
+      "<Color:R=1 G=0 B=0>+40%<Color:R=1 G=1 B=1> engine fire damage"
+    ],
+    "order": 24,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Vehicle_ArmoredEngine2",
+    "category": "Vehicle",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+60%<Color:R=1 G=1 B=1> delay before engine fire",
+      "<Color:R=1 G=0 B=0>+60%<Color:R=1 G=1 B=1> engine fire damage"
+    ],
+    "order": 25,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Vehicle_ArmoredEngine3",
+    "category": "Vehicle",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+80%<Color:R=1 G=1 B=1> delay before engine fire",
+      "<Color:R=1 G=0 B=0>+80%<Color:R=1 G=1 B=1> engine fire damage"
+    ],
+    "order": 26,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Vehicle_Fireproofing1",
+    "category": "Vehicle",
+    "lines": [
+      "<Color:R=0 G=1 B=0>-20%<Color:R=1 G=1 B=1> engine fire damage"
+    ],
+    "order": 27,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Vehicle_Fireproofing2",
+    "category": "Vehicle",
+    "lines": [
+      "<Color:R=0 G=1 B=0>-35%<Color:R=1 G=1 B=1> engine fire damage"
+    ],
+    "order": 28,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Vehicle_Fireproofing3",
+    "category": "Vehicle",
+    "lines": [
+      "<Color:R=0 G=1 B=0>-50%<Color:R=1 G=1 B=1> engine fire damage"
+    ],
+    "order": 29,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Vehicle_Nitro1",
+    "category": "Vehicle",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+100%<Color:R=1 G=1 B=1> engine output torque",
+      "<Color:R=0 G=1 B=0>+1m/s<Color:R=1 G=1 B=1> top speed",
+      "<Color:R=1 G=0 B=0>-70%<Color:R=1 G=1 B=1> turning speed"
+    ],
+    "order": 30,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Vehicle_Nitro2",
+    "category": "Vehicle",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+200%<Color:R=1 G=1 B=1> engine output torque",
+      "<Color:R=0 G=1 B=0>+2m/s<Color:R=1 G=1 B=1> top speed",
+      "<Color:R=1 G=0 B=0>-80%<Color:R=1 G=1 B=1> turning speed"
+    ],
+    "order": 31,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Vehicle_Nitro3",
+    "category": "Vehicle",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+400%<Color:R=1 G=1 B=1> engine output torque",
+      "<Color:R=0 G=1 B=0>+3m/s<Color:R=1 G=1 B=1> top speed",
+      "<Color:R=1 G=0 B=0>-90%<Color:R=1 G=1 B=1> turning speed",
+      "<Color:R=1 G=0 B=0>WARNING: May have undesired results on high torque engines.<Color:R=1 G=1 B=1>"
+    ],
+    "order": 32,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Vehicle_ExtraCargoCapacity1",
+    "category": "Vehicle",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+1<Color:R=1 G=1 B=1> cargo capacity"
+    ],
+    "order": 33,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Vehicle_ExtraCargoCapacity2",
+    "category": "Vehicle",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+2<Color:R=1 G=1 B=1> cargo capacity"
+    ],
+    "order": 34,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Vehicle_ExtraCargoCapacity3",
+    "category": "Vehicle",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+4<Color:R=1 G=1 B=1> cargo capacity"
+    ],
+    "order": 35,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Vehicle_FieldSupplier",
+    "category": "Vehicle",
+    "lines": [
+      "Vehicle trunk is a <Color:R=0.7 G=0 B=0.7>Field Supplier<Color:R=1 G=1 B=1>",
+      "<Color:R=1 G=0 B=0>-3<Color:R=1 G=1 B=1> cargo capacity",
+      "<Color: R=1 G=0 B=0>Disables on critical damage<Color:R=1 B=1 G=1>"
+    ],
+    "order": 36,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Vehicle_FastFixChassis1",
+    "category": "Vehicle",
+    "lines": [
+      "<Color:R=0 G=1 B=0>10%<Color:R=1 G=1 B=1> repair time"
+    ],
+    "order": 37,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Vehicle_FastFixChassis2",
+    "category": "Vehicle",
+    "lines": [
+      "<Color:R=0 G=1 B=0>20%<Color:R=1 G=1 B=1> repair time"
+    ],
+    "order": 38,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Vehicle_FastFixChassis3",
+    "category": "Vehicle",
+    "lines": [
+      "<Color:R=0 G=1 B=0>30%<Color:R=1 G=1 B=1> repair time"
+    ],
+    "order": 39,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Vehicle_RaisedSuspension1",
+    "category": "Vehicle",
+    "lines": [
+      "<Color:R=1 G=1 B=0>20cm<Color:R=1 G=1 B=1>. Front Suspension height",
+      "<Color:R=1 G=1 B=0>20cm<Color:R=1 G=1 B=1>. Rear Suspension Height",
+      "<Color:R=1 G=0 B=0>CURRENTLY BUGGED - DO NOT RELEASE"
+    ],
+    "order": 40,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Vehicle_RammingPlate1",
+    "category": "Vehicle",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+20%<Color:R=1 G=1 B=1> ramming damage",
+      "<Color:R=1 G=0 B=0>+20%<Color:R=1 G=1 B=1> collision damage",
+      "<Color:R=1 G=0 B=0>-35%<Color:R=1 G=1 B=1> brake efficiency"
+    ],
+    "order": 41,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Vehicle_RammingPlate2",
+    "category": "Vehicle",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+35%<Color:R=1 G=1 B=1> ramming damage",
+      "<Color:R=1 G=0 B=0>+35%<Color:R=1 G=1 B=1> collision damage",
+      "<Color:R=1 G=0 B=0>-35%<Color:R=1 G=1 B=1> brake efficiency"
+    ],
+    "order": 42,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Vehicle_RammingPlate3",
+    "category": "Vehicle",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+50%<Color:R=1 G=1 B=1> ramming damage",
+      "<Color:R=1 G=0 B=0>+50%<Color:R=1 G=1 B=1> collision damage",
+      "<Color:R=1 G=0 B=0>-35%<Color:R=1 G=1 B=1> brake efficiency"
+    ],
+    "order": 43,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Vehicle_SteelPlating1",
+    "category": "Vehicle",
+    "lines": [
+      "<Color:R=0 G=1 B=0>-10%<Color:R=1 G=1 B=1> damage from weapons",
+      "<Color:R=1 G=0 B=0>-2%<Color:R=1 G=1 B=1> max speed"
+    ],
+    "order": 44,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Vehicle_SteelPlating2",
+    "category": "Vehicle",
+    "lines": [
+      "<Color:R=0 G=1 B=0>-20%<Color:R=1 G=1 B=1> damage from weapons",
+      "<Color:R=1 G=0 B=0>-4%<Color:R=1 G=1 B=1> max speed"
+    ],
+    "order": 45,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Vehicle_SteelPlating3",
+    "category": "Vehicle",
+    "lines": [
+      "<Color:R=0 G=1 B=0>-30%<Color:R=1 G=1 B=1> damage from weapons",
+      "<Color:R=1 G=0 B=0>-6%<Color:R=1 G=1 B=1> max speed"
+    ],
+    "order": 46,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_Bandolier1",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+20%<Color:R=1 G=1 B=1> stored ammo",
+      "<Color:R=1 G=0 B=0>+25%<Color:R=1 G=1 B=1> resupply time"
+    ],
+    "order": 47,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_Bandolier2",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+35%<Color:R=1 G=1 B=1> stored ammo",
+      "<Color:R=1 G=0 B=0>+50%<Color:R=1 G=1 B=1> resupply time"
+    ],
+    "order": 48,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_Bandolier3",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+50%<Color:R=1 G=1 B=1> stored ammo",
+      "<Color:R=1 G=0 B=0>+75%<Color:R=1 G=1 B=1> resupply time"
+    ],
+    "order": 49,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_HeavyBarrel1",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>-10%<Color:R=1 G=1 B=1> accuracy loss",
+      "<Color:R=1 G=0 B=0>-2%<Color:R=1 G=1 B=1> weapon damage"
+    ],
+    "order": 50,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_HeavyBarrel2",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>-20%<Color:R=1 G=1 B=1> accuracy loss",
+      "<Color:R=1 G=0 B=0>-5%<Color:R=1 G=1 B=1> weapon damage"
+    ],
+    "order": 51,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_HeavyBarrel3",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>-30%<Color:R=1 G=1 B=1> accuracy loss",
+      "<Color:R=1 G=0 B=0>-10%<Color:R=1 G=1 B=1> weapon damage"
+    ],
+    "order": 52,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_ReflexSight1",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>Slightly<Color:R=1 G=1 B=1> improves accuracy when moving",
+      "<Color:R=0.7 G=0.7 B=0>-5<Color:R=1 G=1 B=1> degrees zoom level",
+      "<Color:R=1 G=0 B=0>Slightly<Color:R=1 G=1 B=1> reduces benefit of marksmanship mode"
+    ],
+    "order": 53,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_ReflexSight2",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>Moderately<Color:R=1 G=1 B=1> improves accuracy when moving",
+      "<Color:R=0.7 G=0.7 B=0>-5<Color:R=1 G=1 B=1> degrees zoom level",
+      "<Color:R=1 G=0 B=0>Moderately<Color:R=1 G=1 B=1> reduces benefit of marksmanship mode"
+    ],
+    "order": 54,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_ReflexSight3",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>Substantially<Color:R=1 G=1 B=1> improves accuracy when moving",
+      "<Color:R=0.7 G=0.7 B=0>-5<Color:R=1 G=1 B=1> degrees zoom level",
+      "<Color:R=1 G=0 B=0>Substantially<Color:R=1 G=1 B=1> benefit of marksmanship mode"
+    ],
+    "order": 55,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_MagazinePull1",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>-20%<Color:R=1 G=1 B=1> reload time",
+      "<Color:R=1 G=0 B=0>-10%<Color:R=1 G=1 B=1> magazine capacity"
+    ],
+    "order": 56,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_MagazinePull2",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>-30%<Color:R=1 G=1 B=1> reload time",
+      "<Color:R=1 G=0 B=0>-15%<Color:R=1 G=1 B=1> magazine capacity"
+    ],
+    "order": 57,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_MagazinePull3",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>-40%<Color:R=1 G=1 B=1> reload time",
+      "<Color:R=1 G=0 B=0>-20%<Color:R=1 G=1 B=1> magazine capacity"
+    ],
+    "order": 58,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_Rifling1",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+3m<Color:R=1 G=1 B=1> effective range",
+      "<Color:R=1 G=0 B=0>Slightly<Color:R=1 G=1 B=1> increases maximum reticle bloom"
+    ],
+    "order": 59,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_Rifling2",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+5m<Color:R=1 G=1 B=1> effective range",
+      "<Color:R=1 G=0 B=0>Moderately<Color:R=1 G=1 B=1> increases maximum reticle bloom"
+    ],
+    "order": 60,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_HuntingSight1",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>Slightly<Color:R=1 G=1 B=1> improves benefit of marksmanship mode",
+      "<Color:R=0.7 G=0.7 B=0>+5 degrees<Color:R=1 G=1 B=1> zoom level",
+      "<Color:R=1 G=0 B=0>Slightly<Color:R=1 G=1 B=1> decreases accuracy while running"
+    ],
+    "order": 61,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_HuntingSight2",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>Moderately<Color:R=1 G=1 B=1> improves benefit of marksmanship mode",
+      "<Color:R=0.7 G=0.7 B=0>+5 degrees<Color:R=1 G=1 B=1> zoom level",
+      "<Color:R=1 G=0 B=0>Moderately<Color:R=1 G=1 B=1> decreases accuracy while running"
+    ],
+    "order": 62,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_HuntingSight3",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>Substantially<Color:R=1 G=1 B=1> improves benefit of marksmanship mode",
+      "<Color:R=0.7 G=0.7 B=0>+5 degrees<Color:R=1 G=1 B=1> zoom level",
+      "<Color:R=1 G=0 B=0>Substantially<Color:R=1 G=1 B=1> decreases accuracy while running"
+    ],
+    "order": 63,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_CoolingJacket1",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+3%<Color:R=1 G=1 B=1> fire rate",
+      "<Color:R=1 G=0 B=0>Slightly<Color:R=1 G=1 B=1> worsens minimum accuracy",
+      "<Color:R=1 G=0 B=0>Slightly<Color:R=1 G=1 B=1> increases shotgun spread"
+    ],
+    "order": 64,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_CoolingJacket2",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+5%<Color:R=1 G=1 B=1> fire rate",
+      "<Color:R=1 G=0 B=0>Moderately<Color:R=1 G=1 B=1> worsens minimum accuracy",
+      "<Color:R=1 G=0 B=0>Moderately<Color:R=1 G=1 B=1> increases shotgun spread"
+    ],
+    "order": 65,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_CoolingJacket3",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+7%<Color:R=1 G=1 B=1> fire rate",
+      "<Color:R=1 G=0 B=0>Substantially<Color:R=1 G=1 B=1> worsens minimum accuracy",
+      "<Color:R=1 G=0 B=0>Substantially<Color:R=1 G=1 B=1> increases shotgun spread"
+    ],
+    "order": 66,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_ExtendedMagazine1",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+10%<Color:R=1 G=1 B=1> magazine size",
+      "<Color:R=1 G=0 B=0>+10%<Color:R=1 G=1 B=1> reload time"
+    ],
+    "order": 67,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_ExtendedMagazine2",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+20%<Color:R=1 G=1 B=1> magazine size",
+      "<Color:R=1 G=0 B=0>+20%<Color:R=1 G=1 B=1> reload time"
+    ],
+    "order": 68,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_ExtendedMagazine3",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+30%<Color:R=1 G=1 B=1> magazine size",
+      "<Color:R=1 G=0 B=0>+30%<Color:R=1 G=1 B=1> reload time"
+    ],
+    "order": 69,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_ThreePointSling1",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>-13%<Color:R=1 G=1 B=1> equip time"
+    ],
+    "order": 70,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_ThreePointSling2",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>-26%<Color:R=1 G=1 B=1> equip time"
+    ],
+    "order": 71,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_ThreePointSling3",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>-39%<Color:R=1 G=1 B=1> equip time"
+    ],
+    "order": 72,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_CombatSling",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+50cm/s<Color:R=1 G=1 B=1> movement speed in marksmanship"
+    ],
+    "order": 73,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_Minigame_Infection",
+    "category": "Weapon",
+    "lines": [
+      "Spots hostile opponents within 60m of flare."
+    ],
+    "order": 74,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Character_CarSurfer",
+    "category": "Character",
+    "lines": [
+      "Allows players to stand on the top of moving vehicles without being knocked off"
+    ],
+    "order": 75,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Vehicle_Innocence",
+    "category": "Vehicle",
+    "lines": [
+      "<Color:R=0 G=1 B=0>-100%<Color:R=1 G=1 B=1> damage from collision",
+      "<Color:R=1 G=0 B=0>+30%<Color:R=1 G=1 B=1> damage taken from bullets and explosions"
+    ],
+    "order": 76,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Vehicle_Guilt",
+    "category": "Vehicle",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+100%<Color:R=1 G=1 B=1> ramming damage",
+      "<Color:R=1 G=0 B=0>+100%<Color:R=1 G=1 B=1> collision damage",
+      "<Color:R=1 G=0 B=0>+20%<Color:R=1 G=1 B=1> Damage taken from Bullets and Explosions"
+    ],
+    "order": 77,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_Silencer_Pistol",
+    "category": "Weapon",
+    "lines": [
+      "Reduces muzzle flash and audio",
+      "Removes tracers",
+      "",
+      "<Color:R=0 G=1 B=0>-50%<Color:R=1 G=1 B=1> horizontal recoil",
+      "<Color:R=1 G=0 B=0>+25%<Color: R=1 G=1 B=1> vertical recoil",
+      "<Color:R=1 G=0 B=0>-10%<Color:R=1 G=1 B=1> damage to vehicles"
+    ],
+    "order": 78,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_Silencer_SMG",
+    "category": "Weapon",
+    "lines": [
+      "Reduces muzzle flash and audio",
+      "Removes tracers",
+      "<Color:R=0 G=1 B=0>-30%<Color:R=1 G=1 B=1> recoil",
+      "<Color:R=1 G=0 B=0>-10%<Color:R=1 G=1 B=1> damage to vehicles"
+    ],
+    "order": 79,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_Silencer_SniperRifle",
+    "category": "Weapon",
+    "lines": [
+      "Reduces muzzle flash and audio",
+      "Removes tracers",
+      "<Color:R=0 G=1 B=0>-50%<Color:R=1 G=1 B=1> recoil"
+    ],
+    "order": 80,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Vehicle_Brick",
+    "category": "Vehicle",
+    "lines": [
+      "<Color:R=0.7 G=0 B=0.7>Vehicle accelerates constantly<Color:R=1 G=1 B=1> for the duration of modification."
+    ],
+    "order": 81,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Character_Devlar",
+    "category": "Character",
+    "lines": [
+      "- <Color:R=1 G=0 B=0>Increases Air Control by 400%<Color:R=1 G=1 B=1>",
+      "-<Color:R=1 G=0.5 B=0> Increases Sprint speed by +100%<Color:R=1 G=1 B=1>",
+      "-<Color:R=1 G=1 B=0> Increases Crouch speed by +3000%<Color:R=1 G=1 B=1>",
+      "-<Color:R=0 G=1 B=0> Increases health by +1000%<Color:R=1 G=1 B=1>",
+      "- <Color:R=0.12 G=1 B=0.95>Increases Stamina by +1000%.</Col>",
+      "-<Color:R=0 G=0 B=1> Allows players to Car Surf.<Color:R=1 G=1 B=1>",
+      "-<Color:R=0.43 G=0 B=1> Removes Stun animation when landing.<Color:R=1 G=1 B=1>",
+      "- <Color:R=1.56 G=1 B=1>Cannot be Run Over.</Col>",
+      "<Color:R=0.56 G=0 B=1>Makes you breakfast in Bed.</Col>"
+    ],
+    "order": 82,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Vehicle_Meteor",
+    "category": "Vehicle",
+    "lines": [
+      "<Color:R=0.7 G=0 B=0.7>Vehicle accelerates constantly<Color:R=1 G=1 B=1>",
+      "<Color:R=0.7 G=0 B=0.7>Vehicle explodes on impact!<Color:R=1 G=1 B=1>",
+      "Increases top speed of vehicle to <Color: R=0 G=1 B=0>maximum<Color: R=1 G=1 B=1>",
+      "<Color:R=1 G=0 B=0>+400%<Color:R=1 G=1 B=1> damage taken from gunfire"
+    ],
+    "order": 83,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_Tagger-Valentines",
+    "category": "Weapon",
+    "lines": [
+      "Places <Color:R=1 G=0.52 B=0.86>Love Hearts<Color:R=1 G=1 B=1> above targets that you hit, for 8 seconds.",
+      "Enemy player can see when they are tagged."
+    ],
+    "order": 84,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_Tagger-Duck",
+    "category": "Weapon",
+    "lines": [
+      "Places <Color:R=1 G=0.95 B=0>a Rubber Ducky<Color:R=1 G=1 B=1> above targets that you hit, for 8 seconds.",
+      "Enemy player can see when they are tagged."
+    ],
+    "order": 85,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_Tagger",
+    "category": "Weapon",
+    "lines": [
+      "Places <Color:R=1 G=0.95 B=0>a Target Marker<Color:R=1 G=1 B=1> above targets that you hit, for 8 seconds.",
+      "Enemy player can see when they are tagged."
+    ],
+    "order": 86,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_MuzzleBrake_Vertical",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>-30%<Color:R=1 G=1 B=1> vertical recoil",
+      "<Color:R=1 G=0 B=0>+7%<Color:R=1 G=1 B=1> horizontal recoil"
+    ],
+    "order": 87,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_MuzzleBrake_Horizontal",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>-30%<Color:R=1 G=1 B=1> horizontal recoil",
+      "<Color:R=1 G=0 B=0>+10%<Color:R=1 G=1 B=1> vertical recoil"
+    ],
+    "order": 88,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Character_Valzipram",
+    "category": "Character",
+    "lines": [
+      "<Color:R=0 G=1 B=0>Greatly<Color:R=1 G=1 B=1> increases resilience to vehicle impact"
+    ],
+    "order": 89,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Character_FlakJacket",
+    "category": "Character",
+    "lines": [
+      "<Color:R=0 G=1 B=0>-40%<Color:R=1 G=1 B=1> explosion damage taken",
+      "<Color:R=1 G=0 B=0>-1<Color:R=1 G=1 B=1> Grenade count"
+    ],
+    "order": 90,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Character_RadarJammer",
+    "category": "Character",
+    "lines": [
+      "<Color:R=0 G=1 B=0>50m<Color:R=1 G=1 B=1> Radar Jamming on enemies",
+      "<Color:R=1 G=0 B=0>Appear on Radar<Color:R=1 G=1 B=1> for unjammed enemies"
+    ],
+    "order": 91,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_Tagger-Rapid99",
+    "category": "Weapon",
+    "lines": [
+      "Places <Color:R=0.13 G=0.94 B=1>Your Personal Logo<Color:R=1 G=1 B=1> above targets that you hit, for 8 seconds.",
+      "Enemy player can see when they are tagged."
+    ],
+    "order": 92,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_Tagger-Sluttles",
+    "category": "Weapon",
+    "lines": [
+      "Places <Color:R=0.13 G=0.94 B=1>Your Personal Logo<Color:R=1 G=1 B=1> above targets that you hit, for 8 seconds.",
+      "Enemy player can see when they are tagged."
+    ],
+    "order": 93,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_Tagger-Reaper",
+    "category": "Weapon",
+    "lines": [
+      "Places a <Color:R=0.13 G=0.94 B=1>Scythe<Color:R=1 G=1 B=1> above targets that you hit, for 8 seconds.",
+      "Enemy player can see when they are tagged."
+    ],
+    "order": 94,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_Tagger-PurpleCat",
+    "category": "Weapon",
+    "lines": [
+      "Places <Color:R=0.13 G=0.94 B=1>Your Personal Logo<Color:R=1 G=1 B=1> above targets that you hit, for 8 seconds.",
+      "Enemy player can see when they are tagged."
+    ],
+    "order": 95,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Character_Spotter",
+    "category": "Character",
+    "lines": [
+      "Places a <Color:R=0.13 G=0.94 B=1>Mark<Color:R=1 G=1 B=1> above enemies that you target, for 8 seconds"
+    ],
+    "order": 96,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_Tagger-Cat",
+    "category": "Weapon",
+    "lines": [
+      "Places a <Color:R=0.13 G=0.94 B=1>Cat<Color:R=1 G=1 B=1> above targets that you hit, for 8 seconds.",
+      "Enemy player can see when they are tagged."
+    ],
+    "order": 97,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_Silencer_Rifle_Integrated",
+    "category": "Weapon",
+    "lines": [
+      "Reduces muzzle flash and audio",
+      "Removes tracers"
+    ],
+    "order": 98,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_HighMagnificationScope",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>Substantially<Color:R=1 G=1 B=1> improves benefit of marksmanship mode",
+      "Sets zoom level to <Color:R=0.7 G=0.7 B=0>15 degrees",
+      "<Color:R=1 G=0 B=0>Substantially<Color:R=1 G=1 B=1> decreases accuracy while running",
+      "Changes <Color:R=0.7 G=0.7 B=0>Marksmanship Crosshair<Color:R=1 G=1 B=1>.",
+      "Removes <Color:R=1 G=0 B=0>Non-Marksmanship Crosshair.<Color:R=1 G=1 B=1>"
+    ],
+    "order": 99,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_Flare",
+    "category": "Weapon",
+    "lines": [
+      "Spots hostile opponents within 60m of flare."
+    ],
+    "order": 100,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Vehicle_MobileSpawnPoint",
+    "category": "Vehicle",
+    "lines": [
+      "Allows player to <Color:R=0.13 G=0.94 B=1>Spawn in their Vehicle<Color:R=1 G=1 B=1>",
+      "Can only use any mobile spawn once every <Color:R=0.13 G=0.94 B=1>120<Color:R=1 G=1 B=1> seconds.",
+      "<Color:R=1 G=0 B=0>Disables on Critical Damage<Color:R=1 B=1 G=1>",
+      "<Color:R=1 G=0 B=0>Reveals Vehicle on Enemy radar<Color:R=1 B=1 G=1>",
+      "Invalid if within 20m of death location",
+      "Invalid if enemy within 55m"
+    ],
+    "order": 101,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_ExtendedBarrel",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+6.6%<Color:R=1 G=1 B=1> damage",
+      "<Color:R=1 G=0 B=0>-10%<Color:R=1 G=1 B=1> fire rate",
+      "<Color:R=1 G=0 B=0>-5.7%<Color:R=1 G=1 B=1> hard damage",
+      "<Color:R=0 G=1 B=0>-30%<Color:R=1 G=1 B=1> vertical recoil"
+    ],
+    "order": 102,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_ShortBarrel",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+10%<Color:R=1 G=1 B=1> fire rate",
+      "<Color:R=1 G=0 B=0>Slightly<Color:R=1 G=1 B=1> decreases benefit of marksmanship mode",
+      "<Color:R=1 G=0 B=0>-7.5%<Color:R=1 G=1 B=1> minimum accuracy"
+    ],
+    "order": 103,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_HuntingSight_Anubis",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>Substantially<Color:R=1 G=1 B=1> increases benefit of marksmanship mode",
+      "Changes <Color:R=0.7 G=0.7 B=0>marksmanship crosshair",
+      "<Color:R=1 G=0 B=0>Substantially<Color:R=1 G=1 B=1> decreases accuracy while running"
+    ],
+    "order": 104,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_Piercing",
+    "category": "Weapon",
+    "lines": [
+      "Hits up to <Color:R=0 G=1 B=0>3<Color:R=1 G=1 B=1> targets",
+      "<Color:R=1 G=0 B=0>-30%<Color:R=1 G=1 B=1> damage per pierce",
+      "<Color:R=1 G=0 B=0>-50% <Color:R=1 G=1 B=1> hard damage"
+    ],
+    "order": 105,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Vehicle_MobileRadarTower",
+    "category": "Vehicle",
+    "lines": [
+      "Detects enemies within <Color:R=0 G=1 B=0>20m<Color:R=1 G=1 B=1>",
+      "Vehicle <Color:R=1 G=0 B=0>appears on Radar<Color:R=1 G=1 B=1> of detected enemies",
+      "<Color: R=1 G=0 B=0>Disables on critical damage<Color:R=1 B=1 G=1>"
+    ],
+    "order": 106,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_DoubleDrumMag",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+200%<Color:R=1 G=1 B=1> magazine size",
+      "<Color:R=0 G=1 B=0>+100%<Color:R=1 G=1 B=1> stored ammo",
+      "<Color:R=0 G=1 B=0>+31%<Color:R=1 G=1 B=1> fire rate",
+      "<Color:R=1 G=0 B=0>+60%<Color:R=1 G=1 B=1> reload time",
+      "Adds a <Color:R=1 G=0 B=0>0.59s<Color:R=1 G=1 B=1> delay before firing.",
+      "<Color:R=1 G=0 B=0>moderately<Color:R=1 G=1 B=1> increases recoil"
+    ],
+    "order": 107,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Character_RemoteDetonator",
+    "category": "Character",
+    "lines": [
+      "Detonates your Deployed Vehicle after <Color:R=0.7 G=0 B=0.7>2s + 0.05s per meter<Color:R=1 G=1 B=1>"
+    ],
+    "order": 108,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Vehicle_HighBurnFuel",
+    "category": "Vehicle",
+    "lines": [
+      "Your vehicle deals <Color:R=0.7 G=0 B=0.7>0 damage<Color:R=1 G=1 B=1> when exploding.",
+      "",
+      "Reduces the max health of your vehicle by <Color:R=1 G=0 B=0>15%<Color:R=1 G=1 B=1>."
+    ],
+    "order": 109,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Vehicle_Muffler",
+    "category": "Vehicle",
+    "lines": [
+      "<Color: R=0 G=1 B=0>Hides Vehicle<Color: R=1 G=1 B=1> from radar while coasting.",
+      "<Color: R=1 G=0 B=0>-65%<Color:R=1 B=1 G=1> Engine Braking"
+    ],
+    "order": 110,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_BurstAvalanche",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=1 G=0 B=0>-1<Color:R=1 G=1 B=1> rounds in first burst",
+      "<Color:R=0 G=1 B=0>+1<Color:R=1 G=1 B=1> rounds in subsequent bursts",
+      "<Color:R=1 G=0 B=0>-10%<Color:R=1 G=1 B=1>. damage done"
+    ],
+    "order": 111,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_BananaMag",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+2<Color:R=1 G=1 B=1> Magazine size",
+      "<Color:R=1 G=0 B=0>-20%<Color:R=1 G=1 B=1> stored ammo"
+    ],
+    "order": 112,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Usable_Consumable_Medikit",
+    "category": "Usable",
+    "lines": [
+      "Immediately starts health regeneration for all players within <Color: R=0 G=1 B=1>5m<Color:R=1 G=1 B=1>.",
+      "<Color:R=1 G=0 B=0>50%<Color:R=1 G=1 B=1> reduced regeneration rate"
+    ],
+    "order": 113,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_GermanReticle",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>Substantially<Color:R=1 G=1 B=1> increases benefit of marksmanship mode",
+      "Changes <Color:R=0.7 G=0.7 B=0>Crosshair<Color:R=1 G=1 B=1>",
+      "<Color:R=1 G=0 B=0>Substantially<Color:R=1 G=1 B=1> accuracy while running"
+    ],
+    "order": 114,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Character_Minigame_GoldenWeapon",
+    "category": "Character",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+15%<Color:R=1 G=1 B=1> run speed",
+      "<Color:R=0 G=1 B=0>+15%<Color:R=1 G=1 B=1> sprint speed",
+      "<Color:R=0 G=1 B=0>+150%<Color:R=1 G=1 B=1> health",
+      "<Color:R=0 G=1 B=0>+100%<Color:R=1 G=1 B=1> resilience to vehicle impact",
+      "<Color:R=0 G=1 B=0>-75%<Color:R=1 G=1 B=1> explosion damage taken",
+      "<Color:R=0 G=1 B=0>+150%<Color:R=1 G=1 B=1> stamina",
+      "<Color:R=0 G=1 B=0>-50%<Color:R=1 G=1 B=1> health regen delay"
+    ],
+    "order": 115,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_Tagger_Suit_Clubs",
+    "category": "Weapon",
+    "lines": [
+      "Places 'Club' Icon above targets that you hit, for 8 seconds.",
+      "Enemy player can see when they are tagged."
+    ],
+    "order": 116,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_Tagger_Suit_Diamond",
+    "category": "Weapon",
+    "lines": [
+      "Places 'Diamond' Icon above targets that you hit, for 8 seconds.",
+      "Enemy player can see when they are tagged."
+    ],
+    "order": 117,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_Tagger_Suit_Hearts",
+    "category": "Weapon",
+    "lines": [
+      "Places 'Heart' Icon above targets that you hit, for 8 seconds.",
+      "Enemy player can see when they are tagged."
+    ],
+    "order": 118,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_Tagger_Suit_Spades",
+    "category": "Weapon",
+    "lines": [
+      "Places 'Spade' Icon above targets that you hit, for 8 seconds.",
+      "Enemy player can see when they are tagged."
+    ],
+    "order": 119,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_Tagger_Suit_Joker",
+    "category": "Weapon",
+    "lines": [
+      "Places 'Joker' Icon above targets that you hit, for 8 seconds.",
+      "Enemy player can see when they are tagged."
+    ],
+    "order": 120,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_MicroRockets",
+    "category": "Weapon",
+    "lines": [
+      "Replaces projectile with <Color:R=0.7 G=0 B=0.7>Micro-Rockets<Color:R=1 G=1 B=1>"
+    ],
+    "order": 121,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_ChamberedRound",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0.7 G=0 B=0.7>When Magazine is Not-Empty:<Color:R=1 G=1 B=1>",
+      "Reloading provides <Color:R=0 G=1 B=0>+1<Color:R=1 G=1 B=1> extra bullet",
+      "<Color:R=0 G=1 B=0>-30% reload time",
+      "<Color:R=0.7 G=0 B=0.7>When Magazine is Empty:<Color:R=1 G=1 B=1>",
+      "<Color:R=1 G=0 B=0>+40%<Color:R=1 G=1 B=1> reload time"
+    ],
+    "order": 122,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_MechanicalChoke",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0.7 G=0 B=0.7>When in Marksmanship Mode:<Color:R=1 G=1 B=1>",
+      "<Color:R=0 G=1 B=0>-45%<Color:R=1 G=1 B=1> decreased spread",
+      "<Color:R=1 G=0 B=0>-20%<Color:R=1 G=1 B=1> decreased fire rate"
+    ],
+    "order": 123,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_Norsemen-Hel",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+70%<Color:R=1 G=1 B=1> base accuracy when firing"
+    ],
+    "order": 124,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_EOL_Percussion",
+    "category": "Weapon",
+    "lines": [
+      "Fires <Color:R=0.7 G=0 B=0.7>'Percussion'<Color:R=1 G=1 B=1> contact Grenades",
+      "<Color:R=1 G=0 B=0>-1<Color:R=1 G=1 B=1> magazine capacity"
+    ],
+    "order": 125,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_EOL-Concussion",
+    "category": "Weapon",
+    "lines": [
+      "Fires <Color:R=0.7 G=0 B=0.7>'Concussion'<Color:R=1 G=1 B=1> contact Grenades",
+      "<Color:R=1 G=0 B=0>-2<Color:R=1 G=1 B=1> magazine capacity"
+    ],
+    "order": 126,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_EOL-LightFrag",
+    "category": "Weapon",
+    "lines": [
+      "Fires <Color:R=0.7 G=0 B=0.7>'Low-Yield'<Color:R=1 G=1 B=1> contact Grenades"
+    ],
+    "order": 127,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_Norsemen-Hoenir",
+    "category": "Weapon",
+    "lines": [
+      "Up to <Color:R=0 G=1 B=0>-70%<Color:R=1 G=1 B=1> reload time based on remaining ammo."
+    ],
+    "order": 128,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_Norsemen-Hel-Mini",
+    "category": "Weapon",
+    "lines": [
+      "Up to <Color:R=0 G=1 B=0>+35%<Color:R=1 G=1 B=1> accuracy when firing."
+    ],
+    "order": 129,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_Norsemen-Hoenir-Mini",
+    "category": "Weapon",
+    "lines": [
+      "Up to <Color:R=0 G=1 B=0>-30%<Color:R=1 G=1 B=1> reload time"
+    ],
+    "order": 130,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_Norsemen-Tyr-Mini",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>-26%<Color:R=1 G=1 B=1> equip time",
+      "<Color:R=0 G=1 B=0>-55%<Color:R=1 G=1 B=1> recoil when firing"
+    ],
+    "order": 131,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_Norsemen-Tyr",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>-39%<Color:R=1 G=1 B=1> equip time",
+      "<Color:R=0 G=1 B=0>-85%<Color:R=1 G=1 B=1> recoil when firing"
+    ],
+    "order": 132,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_UL3-Damage",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+5%<Color:R=1 G=1 B=1> damage against players.",
+      "<Color:R=1 G=0 B=0>-55%<Color:R=1 G=1 B=1> hard damage",
+      "<Color:R=1 G=0 B=0>-5m<Color:R=1 G=1 B=1> effective range",
+      "---",
+      "Reduces muzzle flash and audio",
+      "Removes tracers",
+      "<Color:R=1 G=0 B=0>-1<Color:R=1 G=1 B=1>. magazine size"
+    ],
+    "order": 133,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_UL3-FireRate",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=1 G=0 B=0>+10%<Color:R=1 G=1 B=1> accuracy-loss per shot",
+      "---",
+      "<Color:R=0 G=1 B=0>-39%<Color:R=1 G=1 B=1> equip time",
+      "<Color:R=0 G=1 B=0>+10%<Color:R=1 G=1 B=1> fire rate"
+    ],
+    "order": 134,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_UL3-Distance",
+    "category": "Weapon",
+    "lines": [
+      "When starting firing:",
+      "<Color:R=0 G=1 B=0>slightly<Color:R=1 G=1 B=1> increases base accuracy",
+      "<Color:R=0 G=1 B=0>slightly<Color:R=1 G=1 B=1> reduces accuracy loss",
+      "On subsequent rounds fired:",
+      "<Color:R=0 G=1 B=0>slightly<Color:R=1 G=1 B=1> decreases base accuracy",
+      "<Color:R=1 G=0 B=0>significantly<Color:R=1 G=1 B=1> increases accuracy loss",
+      "---",
+      "<Color:R=0 G=1 B=0>+30%<Color:R=1 G=1 B=1> magazine size",
+      "<Color:R=1 G=0 B=0>+30%<Color:R=1 G=1 B=1> reload time"
+    ],
+    "order": 135,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_Raptor_Silencer",
+    "category": "Weapon",
+    "lines": [
+      "- Does not appear on radar above <Color:R=0 G=1 B=0>50m<Color:R=1 G=1 B=1>",
+      "- Does not appear on radar for first <Color:R=0 G=1 B=0>3<Color:R=1 G=1 B=1> shots",
+      "- Reduces Muzzle Flash and Audio",
+      "- Removes Tracers"
+    ],
+    "order": 136,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_AMG_Stabiliser",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=1 G=0 B=0>+50%<Color:R=1 G=1 B=1> vertical recoil",
+      "Up to <Color:R=0 G=1 B=0>-75%<Color:R=1 G=1 B=1> vertical recoil when firing",
+      "<Color:R=1 G=0 B=0>+25%<Color:R=1 G=1 B=1> horizontal recoil",
+      "Up to <Color:R=0 G=1 B=0>-75%<Color:R=1 G=1 B=1> horizontal recoil when firing"
+    ],
+    "order": 137,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_SelectFire",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0.7 G=0 B=0.7>When in Marksmanship Mode:<Color:R=1 G=1 B=1>",
+      "Switches to a <Color:R=1 G=0.95 B=0>4-Round Burst<Color:R=1 G=1 B=1>",
+      "<Color:R=0 G=1 B=0>+75%<Color:R=1 G=1 B=1> aim accuracy",
+      "Outside Marksmanship:",
+      "<Color:R=1 G=0 B=0>-10%<Color:R=1 G=1 B=1> base accuracy"
+    ],
+    "order": 138,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_PistolChoke",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=1 G=0 B=0>-45%<Color:R=1 G=1 B=1> fire rate",
+      "<Color:R=0 G=1 B=0>-50%<Color:R=1 G=1 B=1> pellet spread.",
+      "<Color:R=0 G=1 B=0>+8m<Color:R=1 G=1 B=1> effective range"
+    ],
+    "order": 139,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_Rifling3",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+7m<Color:R=1 G=1 B=1> effective range",
+      "<Color:R=1 G=0 B=0>Substantially<Color:R=1 G=1 B=1> increases maximum reticle bloom"
+    ],
+    "order": 140,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_CoolingJacket1_TestA",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+3%<Color:R=1 G=1 B=1> fire rate",
+      "<Color:R=1 G=0 B=0>Slightly<Color:R=1 G=1 B=1> worsens minimum accuracy",
+      "<Color:R=1 G=0 B=0>Slightly<Color:R=1 G=1 B=1> increases shotgun spread"
+    ],
+    "order": 141,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_CoolingJacket2_TestA",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+5%<Color:R=1 G=1 B=1> fire rate",
+      "<Color:R=1 G=0 B=0>Moderately<Color:R=1 G=1 B=1> worsens minimum accuracy",
+      "<Color:R=1 G=0 B=0>Moderately<Color:R=1 G=1 B=1> increases shotgun spread"
+    ],
+    "order": 142,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_CoolingJacket3_TestA",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+7%<Color:R=1 G=1 B=1> fire rate",
+      "<Color:R=1 G=0 B=0>Substantially<Color:R=1 G=1 B=1> worsens minimum accuracy",
+      "<Color:R=1 G=0 B=0>Substantially<Color:R=1 G=1 B=1> increases shotgun spread"
+    ],
+    "order": 143,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Character_PreventWeaponDrop",
+    "category": "Character",
+    "lines": [
+      "Don't drop weapons on death",
+      "You can no longer pick up weapons"
+    ],
+    "order": 144,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_Bandolier50",
+    "category": "Weapon",
+    "lines": [
+      "Sets stored ammo to <Color:R=0 G=1 B=0>50<Color:R=1 G=1 B=1>"
+    ],
+    "order": 145,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Usable_Minigame_Hazmat",
+    "category": "Usable",
+    "lines": [
+      "You do not take damage from aerial poison."
+    ],
+    "order": 146,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_ControlledAim",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=1 G=0 B=0>-50%<Color:R=1 G=1 B=1> fire rate",
+      "Increases marksmanship accuracy by <Color:R=0 G=1 B=0>+20%<Color:R=1 G=1 B=1>"
+    ],
+    "order": 147,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Usable_Minigame_Hazmat_Spawn",
+    "category": "Usable",
+    "lines": [
+      "You do not take damage from aerial poison."
+    ],
+    "order": 148,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_ShotgunSlug",
+    "category": "Weapon",
+    "lines": [
+      "Modifies the weapon to be able to fire slug ammo."
+    ],
+    "order": 149,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Character_Minigame_Devlar",
+    "category": "Character",
+    "lines": [
+      "- <Color:R=1.56 G=1 B=1>Cannot be Run Over.</Col>",
+      "-<Color:R=1 G=0.5 B=0> Impervious to Friendly Fire<Color:R=1 G=1 B=1>",
+      "-<Color:R=1 G=1 B=0> Landing on enemies does +100% damage<Color:R=1 G=1 B=1>",
+      "-<Color:R=0.43 G=0 B=1> Removes Stun animation when landing.<Color:R=1 G=1 B=1>",
+      "-<Color:R=0 G=1 B=0> Falling damage reduced by -100%<Color:R=1 G=1 B=1>",
+      "- <Color:R=0.56 G=0 B=1>Falling stamina damage reduced by -100%</Col>",
+      "- <Color:R=0.12 G=1 B=0.95>Increases possible jump height by +10000%.</Col>",
+      "-<Color:R=0 G=0 B=1> Allows players to Car Surf.<Color:R=1 G=1 B=1>",
+      "- <Color:R=1 G=0 B=0>Increases Air Control by 150%<Color:R=1 G=1 B=1>"
+    ],
+    "order": 150,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_LongRangeRifling",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>+25%<Color:R=1 G=1 B=1> effective range",
+      "<Color:R=1 G=0 B=0>-10%<Color:R=1 G=1 B=1> fire rate",
+      "<Color:R=1 G=0 B=0>-20%<Color:R=1 G=1 B=1> burst rate"
+    ],
+    "order": 151,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Vehicle_Suspension_Tuning",
+    "category": "Vehicle",
+    "lines": [
+      "<Color:R=0 G=1 B=0>-50%<Color:R=1 G=1 B=1> Suspension Dampening",
+      "<Color:R=0 G=1 B=0>-50%<Color:R=1 G=1 B=1> Suspension Stiffness"
+    ],
+    "order": 152,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_BurstKingdom",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=1 G=1 B=1>Modifies the weapon to fire in four-round bursts.",
+      "<Color:R=0 G=1 B=0>Significantly decreases accuracy loss when firing the weapon."
+    ],
+    "order": 153,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_Silencer_Reaper",
+    "category": "Weapon",
+    "lines": [
+      "Reduces muzzle flash and audio",
+      "Removes tracers",
+      "<Color:R=0 G=1 B=0>-50%<Color:R=1 G=1 B=1> recoil"
+    ],
+    "order": 154,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_Piercing_NCR",
+    "category": "Weapon",
+    "lines": [
+      "Hits up to <Color:R=0 G=1 B=0>2<Color:R=1 G=1 B=1> targets",
+      "<Color:R=1 G=0 B=0>-30%<Color:R=1 G=1 B=1> damage per pierce",
+      "<Color:R=0 G=1 B=0>Substantially<Color:R=1 G=1 B=1> improves benefit of marksmanship mode",
+      "<Color:R=0.7 G=0.7 B=0>+5 degrees<Color:R=1 G=1 B=1> zoom level",
+      "<Color:R=1 G=0 B=0>Substantially<Color:R=1 G=1 B=1> decreases accuracy while running"
+    ],
+    "order": 155,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_EnchantressStock",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>Significantly decreases accuracy loss when moving as well as jumping."
+    ],
+    "order": 156,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_C9S_Sight_Legendary",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0.7 G=0 B=0.7>When in Marksmanship Mode:<Color:R=1 G=1 B=1>",
+      "Switches to <Color:R=1 G=0.95 B=0>Semi-Automatic<Color:R=1 G=1 B=1>",
+      "<Color:R=0 G=1 B=0>Substantially<Color:R=1 G=1 B=1> improves benefit of marksmanship mode",
+      "<Color:R=0 G=1 B=0>Slightly<Color:R=1 G=1 B=1> improves weapon damage",
+      "<Color:R=1 G=0 B=0>Moderately<Color:R=1 G=1 B=1> decreases accuracy recovery",
+      "<Color:R=1 G=0 B=0>Moderately<Color:R=1 G=1 B=1> decreases weapon rate of fire"
+    ],
+    "order": 157,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Vehicle_Steeringangle",
+    "category": "Vehicle",
+    "lines": [
+      "Increases steering angle 0ms by 10%",
+      "Increases steering angle 12ms by 25%",
+      "Increases steering angle 22ms by 30%"
+    ],
+    "order": 158,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_Cantedsight",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>Substantially<Color:R=1 G=1 B=1> increases accuracy gain when crouched.",
+      "<Color:R=1 G=0 B=0>Substantially<Color:R=1 G=1 B=1> decreases accuracy while running"
+    ],
+    "order": 159,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_AdvancedIronsight",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>Substantially<Color:R=1 G=1 B=1> improves benefit of marksmanship mode",
+      "<Color:R=1 G=0 B=0>Substantially<Color:R=1 G=1 B=1> decreases accuracy while running"
+    ],
+    "order": 160,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Weapon_LightweightFrame",
+    "category": "Weapon",
+    "lines": [
+      "<Color:R=0 G=1 B=0>Removes existing movement speed penalties<Color:R=1 G=1 B=1>",
+      "<Color:R=0.7 G=0.7 B=0>Strongly reduced effects for shoulder-fired Rocket Launchers<Color:R=1 G=1 B=1>",
+      "",
+      "<Color:R=1 G=0 B=0>Substantially<Color:R=1 G=1 B=1> decreases accuracy when jumping"
+    ],
+    "order": 161,
+    "source": "ModifierEffects.INT"
+  },
+  {
+    "id": "Vehicle_EMPResistance",
+    "category": "Vehicle",
+    "lines": [
+      "Reduces the Effectiveness of EMP Strikes by <Color:R=0 G=1 B=0>40%<Color:R=1 G=1 B=1>"
+    ],
+    "order": 162,
+    "source": "ModifierEffects.INT"
+  }
+]

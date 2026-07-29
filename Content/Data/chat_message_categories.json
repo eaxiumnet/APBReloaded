@@ -1,0 +1,212 @@
+[
+    {
+        "id":  "Broadcast_System",
+        "slash_command":  "DNT - DO NOT TRANSLATE",
+        "secondary_slash_command":  "DNT - DO NOT TRANSLATE",
+        "tag":  "Broadcast",
+        "description":  "DNT - DO NOT TRANSLATE",
+        "syntax_example":  "DNT - DO NOT TRANSLATE",
+        "order":  0,
+        "source":  "ChatMessageCategories.INT"
+    },
+    {
+        "id":  "Clan",
+        "slash_command":  "/c",
+        "secondary_slash_command":  "/clan",
+        "tag":  "Clan",
+        "description":  "Allows you to restrict your chat to members of your clan",
+        "syntax_example":  "/c message",
+        "order":  1,
+        "source":  "ChatMessageCategories.INT"
+    },
+    {
+        "id":  "Combat",
+        "slash_command":  "DNT - DO NOT TRANSLATE",
+        "secondary_slash_command":  "DNT - DO NOT TRANSLATE",
+        "tag":  "Combat",
+        "description":  "DNT - DO NOT TRANSLATE",
+        "syntax_example":  "DNT - DO NOT TRANSLATE",
+        "order":  2,
+        "source":  "ChatMessageCategories.INT"
+    },
+    {
+        "id":  "District",
+        "slash_command":  "/d",
+        "secondary_slash_command":  "/district",
+        "tag":  "District",
+        "description":  "Allows you to chat with the whole district",
+        "syntax_example":  "/d Hello everyone!",
+        "order":  3,
+        "source":  "ChatMessageCategories.INT"
+    },
+    {
+        "id":  "Group",
+        "slash_command":  "/g",
+        "secondary_slash_command":  "/group",
+        "tag":  "Group",
+        "description":  "Allows you to restrict your chat to members of your group",
+        "syntax_example":  "/g You guys ready for a mission?",
+        "order":  4,
+        "source":  "ChatMessageCategories.INT"
+    },
+    {
+        "id":  "Mission",
+        "slash_command":  "DNT - DO NOT TRANSLATE",
+        "secondary_slash_command":  "DNT - DO NOT TRANSLATE",
+        "tag":  "Mission",
+        "description":  "DNT - DO NOT TRANSLATE",
+        "syntax_example":  "DNT - DO NOT TRANSLATE",
+        "order":  5,
+        "source":  "ChatMessageCategories.INT"
+    },
+    {
+        "id":  "AutoReply",
+        "slash_command":  "DNT - DO NOT TRANSLATE",
+        "secondary_slash_command":  "DNT - DO NOT TRANSLATE",
+        "tag":  "AutoReply",
+        "description":  "DNT - DO NOT TRANSLATE",
+        "syntax_example":  "DNT - DO NOT TRANSLATE",
+        "order":  6,
+        "source":  "ChatMessageCategories.INT"
+    },
+    {
+        "id":  "Officer",
+        "slash_command":  "/o",
+        "secondary_slash_command":  "/officer",
+        "tag":  "Officer",
+        "description":  "Allows you to chat to the leader or fellow officers of your clan.",
+        "syntax_example":  "/o I think Qwentle is cheating...",
+        "order":  7,
+        "source":  "ChatMessageCategories.INT"
+    },
+    {
+        "id":  "Reply",
+        "slash_command":  "/r",
+        "secondary_slash_command":  "/reply",
+        "tag":  "Reply",
+        "description":  "Allows you to reply to the last whisper that you received",
+        "syntax_example":  "/r message",
+        "order":  8,
+        "source":  "ChatMessageCategories.INT"
+    },
+    {
+        "id":  "Say",
+        "slash_command":  "/s",
+        "secondary_slash_command":  "/say",
+        "tag":  "Say",
+        "description":  "Allows you to speak to anyone nearby",
+        "syntax_example":  "/s message",
+        "order":  9,
+        "source":  "ChatMessageCategories.INT"
+    },
+    {
+        "id":  "System",
+        "slash_command":  "DNT - DO NOT TRANSLATE",
+        "secondary_slash_command":  "DNT - DO NOT TRANSLATE",
+        "tag":  "System",
+        "description":  "DNT - DO NOT TRANSLATE",
+        "syntax_example":  "DNT - DO NOT TRANSLATE",
+        "order":  10,
+        "source":  "ChatMessageCategories.INT"
+    },
+    {
+        "id":  "Team",
+        "slash_command":  "/t",
+        "secondary_slash_command":  "/team",
+        "tag":  "Team",
+        "description":  "Allows you to restrict your chat to members of your team",
+        "syntax_example":  "/t Yay, we got backup",
+        "order":  11,
+        "source":  "ChatMessageCategories.INT"
+    },
+    {
+        "id":  "Vehicle",
+        "slash_command":  "DNT - DO NOT TRANSLATE",
+        "secondary_slash_command":  "DNT - DO NOT TRANSLATE",
+        "tag":  "Vehicle",
+        "description":  "DNT - DO NOT TRANSLATE",
+        "syntax_example":  "DNT - DO NOT TRANSLATE",
+        "order":  12,
+        "source":  "ChatMessageCategories.INT"
+    },
+    {
+        "id":  "Whisper",
+        "slash_command":  "/w",
+        "secondary_slash_command":  "/whisper",
+        "tag":  "Whisper",
+        "description":  "Allows you to whisper to a single player",
+        "syntax_example":  "/w playername message",
+        "order":  13,
+        "source":  "ChatMessageCategories.INT"
+    },
+    {
+        "id":  "Whisper_Sent",
+        "slash_command":  "DNT - DO NOT TRANSLATE",
+        "secondary_slash_command":  "DNT - DO NOT TRANSLATE",
+        "tag":  "To",
+        "description":  "DNT - DO NOT TRANSLATE",
+        "syntax_example":  "DNT - DO NOT TRANSLATE",
+        "order":  14,
+        "source":  "ChatMessageCategories.INT"
+    },
+    {
+        "id":  "Yell",
+        "slash_command":  "/y",
+        "secondary_slash_command":  "/yell",
+        "tag":  "Yell",
+        "description":  "Allows you to yell at anyone nearby",
+        "syntax_example":  "/y message",
+        "order":  15,
+        "source":  "ChatMessageCategories.INT"
+    },
+    {
+        "id":  "Tutorial",
+        "slash_command":  "DNT - DO NOT TRANSLATE",
+        "secondary_slash_command":  "DNT - DO NOT TRANSLATE",
+        "tag":  "Tutorial",
+        "description":  "DNT - DO NOT TRANSLATE",
+        "syntax_example":  "DNT - DO NOT TRANSLATE",
+        "order":  16,
+        "source":  "ChatMessageCategories.INT"
+    },
+    {
+        "id":  "Minigame",
+        "slash_command":  "DNT - DO NOT TRANSLATE",
+        "secondary_slash_command":  "DNT - DO NOT TRANSLATE",
+        "tag":  "Event",
+        "description":  "DNT - DO NOT TRANSLATE",
+        "syntax_example":  "DNT - DO NOT TRANSLATE",
+        "order":  17,
+        "source":  "ChatMessageCategories.INT"
+    },
+    {
+        "id":  "GiftBox",
+        "slash_command":  "DNT - DO NOT TRANSLATE",
+        "secondary_slash_command":  "DNT - DO NOT TRANSLATE",
+        "tag":  "GiftBox",
+        "description":  "DNT - DO NOT TRANSLATE",
+        "syntax_example":  "DNT - DO NOT TRANSLATE",
+        "order":  18,
+        "source":  "ChatMessageCategories.INT"
+    },
+    {
+        "id":  "Challenge",
+        "slash_command":  "DNT - DO NOT TRANSLATE",
+        "secondary_slash_command":  "DNT - DO NOT TRANSLATE",
+        "tag":  "Challenge!",
+        "description":  "DNT - DO NOT TRANSLATE",
+        "syntax_example":  "DNT - DO NOT TRANSLATE",
+        "order":  19,
+        "source":  "ChatMessageCategories.INT"
+    },
+    {
+        "id":  "Trade",
+        "slash_command":  "/tr",
+        "secondary_slash_command":  "/trade",
+        "tag":  "Trade",
+        "description":  "Allows you to speak to people you're trading with.",
+        "syntax_example":  "/tr message",
+        "order":  20,
+        "source":  "ChatMessageCategories.INT"
+    }
+]

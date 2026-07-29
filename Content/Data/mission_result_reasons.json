@@ -1,0 +1,121 @@
+[
+    {
+        "id":  "Abandoned",
+        "win_message":  "The other side gave up",
+        "lose_message":  "You gave up",
+        "draw_message":  "",
+        "source":  "APBGame/Localization/INT/MissionResultReasons.INT (retail; mirror of SDD table MissionResultReason)"
+    },
+    {
+        "id":  "ChallengeCycled",
+        "win_message":  "The challenges for this week are finished",
+        "lose_message":  "The challenges for this week are finished",
+        "draw_message":  "The challenges for this week are finished",
+        "source":  "APBGame/Localization/INT/MissionResultReasons.INT (retail; mirror of SDD table MissionResultReason)"
+    },
+    {
+        "id":  "CompletedUnopposed",
+        "win_message":  "You have completed your objectives without opposition",
+        "lose_message":  "",
+        "draw_message":  "",
+        "source":  "APBGame/Localization/INT/MissionResultReasons.INT (retail; mirror of SDD table MissionResultReason)"
+    },
+    {
+        "id":  "Declined",
+        "win_message":  "The other side declined to pursue you",
+        "lose_message":  "",
+        "draw_message":  "",
+        "source":  "APBGame/Localization/INT/MissionResultReasons.INT (retail; mirror of SDD table MissionResultReason)"
+    },
+    {
+        "id":  "Emergency",
+        "win_message":  "",
+        "lose_message":  "",
+        "draw_message":  "Server killed the mission",
+        "source":  "APBGame/Localization/INT/MissionResultReasons.INT (retail; mirror of SDD table MissionResultReason)"
+    },
+    {
+        "id":  "Forced",
+        "win_message":  "GM says \"you win\".",
+        "lose_message":  "GM says \"you lose\".",
+        "draw_message":  "GM says \"you draw\".",
+        "source":  "APBGame/Localization/INT/MissionResultReasons.INT (retail; mirror of SDD table MissionResultReason)"
+    },
+    {
+        "id":  "ObjectiveCompleted",
+        "win_message":  "You completed a critical objective",
+        "lose_message":  "The other side completed a critical objective",
+        "draw_message":  "",
+        "source":  "APBGame/Localization/INT/MissionResultReasons.INT (retail; mirror of SDD table MissionResultReason)"
+    },
+    {
+        "id":  "ObjectiveFailed",
+        "win_message":  "You failed to complete the objective",
+        "lose_message":  "You failed to complete the objective",
+        "draw_message":  "",
+        "source":  "APBGame/Localization/INT/MissionResultReasons.INT (retail; mirror of SDD table MissionResultReason)"
+    },
+    {
+        "id":  "OppositionDestroyedOwnerTarget",
+        "win_message":  "The other side failed to protect a critical target",
+        "lose_message":  "You destroyed a critical target",
+        "draw_message":  "",
+        "source":  "APBGame/Localization/INT/MissionResultReasons.INT (retail; mirror of SDD table MissionResultReason)"
+    },
+    {
+        "id":  "OwnersDestroyedOwnerTarget",
+        "win_message":  "The other side failed to protect a critical target",
+        "lose_message":  "You failed to protect a critical target",
+        "draw_message":  "",
+        "source":  "APBGame/Localization/INT/MissionResultReasons.INT (retail; mirror of SDD table MissionResultReason)"
+    },
+    {
+        "id":  "Reassigned",
+        "win_message":  "",
+        "lose_message":  "",
+        "draw_message":  "You were reassigned.",
+        "source":  "APBGame/Localization/INT/MissionResultReasons.INT (retail; mirror of SDD table MissionResultReason)"
+    },
+    {
+        "id":  "RemovedFromSide",
+        "win_message":  "",
+        "lose_message":  "The team leader removed you from the team",
+        "draw_message":  "",
+        "source":  "APBGame/Localization/INT/MissionResultReasons.INT (retail; mirror of SDD table MissionResultReason)"
+    },
+    {
+        "id":  "SideTooSmall",
+        "win_message":  "The other side doesn't have enough players",
+        "lose_message":  "Your side doesn't have enough players",
+        "draw_message":  "",
+        "source":  "APBGame/Localization/INT/MissionResultReasons.INT (retail; mirror of SDD table MissionResultReason)"
+    },
+    {
+        "id":  "TimedOut",
+        "win_message":  "The other side ran out of time",
+        "lose_message":  "You ran out of time",
+        "draw_message":  "",
+        "source":  "APBGame/Localization/INT/MissionResultReasons.INT (retail; mirror of SDD table MissionResultReason)"
+    },
+    {
+        "id":  "VipKillLimitReached",
+        "win_message":  "You killed the VIP",
+        "lose_message":  "The other side killed the VIP",
+        "draw_message":  "",
+        "source":  "APBGame/Localization/INT/MissionResultReasons.INT (retail; mirror of SDD table MissionResultReason)"
+    },
+    {
+        "id":  "WonFinalObjective",
+        "win_message":  "You completed the mission",
+        "lose_message":  "The other side completed the mission",
+        "draw_message":  "",
+        "source":  "APBGame/Localization/INT/MissionResultReasons.INT (retail; mirror of SDD table MissionResultReason)"
+    },
+    {
+        "id":  "WonMostObjectives",
+        "win_message":  "You won most objectives",
+        "lose_message":  "The other side won most objectives",
+        "draw_message":  "",
+        "source":  "APBGame/Localization/INT/MissionResultReasons.INT (retail; mirror of SDD table MissionResultReason)"
+    }
+]

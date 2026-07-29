@@ -1,0 +1,1604 @@
+[
+  {
+    "id": "AntiGraffiti",
+    "desc0": "Cover Graffiti:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 0,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "AntiGraffitiOpposition",
+    "desc0": "Defend Graffiti:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 1,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "ArmedGuard",
+    "desc0": "Guard Targets:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 2,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "ArmedGuardOpBombs",
+    "desc0": "Guard Targets:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 3,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "ArsonBuilding",
+    "desc0": "Arson:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 4,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "ArsonBuildingOpposition",
+    "desc0": "Stop Arson:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 5,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "ArsonBuildingThenArson",
+    "desc0": "Arson:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 6,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "ArsonBuildingThenArsonOpposition",
+    "desc0": "Arson:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 7,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "ArsonVehicle",
+    "desc0": "Arson:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 8,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "ArsonVehicleOpposition",
+    "desc0": "Stop Arson:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 9,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "ArsonVehicleThenArson",
+    "desc0": "Arson:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 10,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "ArsonVehicleThenArsonOpposition",
+    "desc0": "Arson:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 11,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "BombDisposal",
+    "desc0": "Bombs Armed:",
+    "desc1": "Bombs Disarmed:",
+    "desc2": "",
+    "desc3": "",
+    "order": 12,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "BombDisposalNoTimer",
+    "desc0": "Disarm Bombs:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 13,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "BombDisposalNoTimerOpposition",
+    "desc0": "Guard Bombs:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 14,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "BombDisposalOpposition",
+    "desc0": "Bombs Armed:",
+    "desc1": "Bombs Disarmed:",
+    "desc2": "",
+    "desc3": "",
+    "order": 15,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "BombDisposalThenDisposal",
+    "desc0": "Disarm Bombs:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 16,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "BombDisposalThenDisposalOpposition",
+    "desc0": "Guard Bombs:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 17,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "BombDisposalVehicle",
+    "desc0": "Bomb Fuse:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 18,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "BombDisposalVehicleOpposition",
+    "desc0": "Bomb Fuse:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 19,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "Bombing",
+    "desc0": "Bomb Fuse:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 20,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "BombingMultiple",
+    "desc0": "Arm Bombs:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 21,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "BombingMultipleOpposition",
+    "desc0": "Stop Bombings:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 22,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "BombingNoTimer",
+    "desc0": "Arm Bombs:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 23,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "BombingNoTimerOpBombs",
+    "desc0": "Arm Bombs:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 24,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "BombingNoTimerOpposition",
+    "desc0": "Stop Bombings:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 25,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "BombingOpposition",
+    "desc0": "Bomb Fuse:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 26,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "BombingThenBombing",
+    "desc0": "Arm Bombs:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 27,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "BombingThenBombingOpposition",
+    "desc0": "Stop Bombings:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 28,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "BombingVehicle",
+    "desc0": "Bomb Fuse:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 29,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "BombingVehicleMultiple",
+    "desc0": "Arm Bombs:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 30,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "BombingVehicleMultipleOpposition",
+    "desc0": "Stop Bombings:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 31,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "BombingVehicleOpposition",
+    "desc0": "Bomb Fuse:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 32,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "BreakInBuilding",
+    "desc0": "Burglaries:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 33,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "BreakInBuildingOpposition",
+    "desc0": "Stop Burglaries:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 34,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "BreakInVehicleLocked",
+    "desc0": "Vehicle Break-ins:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 35,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "BreakInVehicleLockedOpposition",
+    "desc0": "Protect Vehicles:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 36,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "BreakInVehicleUnlocked",
+    "desc0": "Vehicle Break-ins:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 37,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "BreakInVehicleUnlockedOpposition",
+    "desc0": "Protect Vehicles:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 38,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "BugPlanting",
+    "desc0": "Plant Bugs:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 39,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "BugPlantingOpposition",
+    "desc0": "Protect Targets:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 40,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "BugPlantingThenBugPlanting",
+    "desc0": "Plant Bugs:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 41,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "BugPlantingThenBugPlantingOpposition",
+    "desc0": "Protect Targets:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 42,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "BurglaryMultiBuilding15",
+    "desc0": "Burglaries:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 43,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "BurglaryMultiBuilding15Opposition",
+    "desc0": "Stop Burglaries:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 44,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "BurglaryThenBurglary",
+    "desc0": "Burglaries:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 45,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "BurglaryThenBurglaryOpposition",
+    "desc0": "Stop Burglaries:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 46,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "BurglaryThenDelivery",
+    "desc0": "Burglaries:",
+    "desc1": "Deliver Items:",
+    "desc2": "",
+    "desc3": "",
+    "order": 47,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "BurglaryThenDeliveryOpposition",
+    "desc0": "Stop Burglaries:",
+    "desc1": "Stop Deliveries:",
+    "desc2": "",
+    "desc3": "",
+    "order": 48,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "Bust",
+    "desc0": "Busts:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 49,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "BustOpposition",
+    "desc0": "Stop Busts:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 50,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "CheckpointAllAtOnce",
+    "desc0": "Claim Checkpoints:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 51,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "CheckpointAllAtOnceOpposition",
+    "desc0": "Guard Checkpoints:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 52,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "CheckpointHold15",
+    "desc0": "Claim Checkpoints:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 53,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "CheckpointHold15Opposition",
+    "desc0": "Guard Checkpoints:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 54,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "CheckpointVehicleSequential",
+    "desc0": "Claim Checkpoints:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 55,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "CheckpointVehicleSequentialOpposition",
+    "desc0": "Guard Checkpoints:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 56,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "CrimeSceneInvestigation",
+    "desc0": "CSI Targets:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 57,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "CrimeSceneInvestigationOpposition",
+    "desc0": "Prevent CSI:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 58,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "DeathmatchOwnerOnly",
+    "desc0": "Takeouts:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 59,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "DeathmatchOwnerOnlyOpposition",
+    "desc0": "Lives:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 60,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "DeliverItems",
+    "desc0": "Deliver Items:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 61,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "DeliverItemsAndVehicleTimed",
+    "desc0": "Deliver Items:",
+    "desc1": "Deliver Vehicles:",
+    "desc2": "",
+    "desc3": "",
+    "order": 62,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "DeliverItemsAndVehicleTimedOpposition",
+    "desc0": "Stop Deliveries:",
+    "desc1": "Stop Transport:",
+    "desc2": "",
+    "desc3": "",
+    "order": 63,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "DeliverItemsConsecutive",
+    "desc0": "Deliver Items:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 64,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "DeliverItemsConsecutiveOpposition",
+    "desc0": "Stop Deliveries:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 65,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "DeliverItemsOpposition",
+    "desc0": "Stop Deliveries:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 66,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "DeliverItemsTimed",
+    "desc0": "Deliver Items:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 67,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "DeliverItemsTimedOpposition",
+    "desc0": "Stop Deliveries:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 68,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "DeliverSharedItemOpposition",
+    "desc0": "Deliver Items:",
+    "desc1": "Items Lost:",
+    "desc2": "",
+    "desc3": "",
+    "order": 69,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "DeliverSharedItemOwner",
+    "desc0": "Deliver Items:",
+    "desc1": "Items Lost:",
+    "desc2": "",
+    "desc3": "",
+    "order": 70,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "DeliverVehicle",
+    "desc0": "Deliver Vehicles:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 71,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "DeliverVehicleOpposition",
+    "desc0": "Stop Transport:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 72,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "DisposalSearch1_stage0",
+    "desc0": "Bomb Fuse:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 73,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "DisposalSearch1_stage0Opposition",
+    "desc0": "Bomb Fuse:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 74,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "DisposalSearch1_stage1",
+    "desc0": "Bomb Fuse:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 75,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "DisposalSearch1_stage1Opposition",
+    "desc0": "Bomb Fuse:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 76,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "DisposalSearch1_stage2",
+    "desc0": "Raid Targets:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 77,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "DisposalSearch1_stage2Opposition",
+    "desc0": "Prevent Raids:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 78,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "DisposalSearch1_stage3",
+    "desc0": "Deliver Items:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 79,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "DisposalSearch1_stage3Opposition",
+    "desc0": "Stop Deliveries:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 80,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "Escape",
+    "desc0": "Escaping",
+    "desc1": "Lives:",
+    "desc2": "Time Penalty:",
+    "desc3": "",
+    "order": 81,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "EscapeBounty",
+    "desc0": "Escaping",
+    "desc1": "Time Penalty:",
+    "desc2": "",
+    "desc3": "",
+    "order": 82,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "EscapeBountyOpposition",
+    "desc0": "Escaping",
+    "desc1": "Time Penalty:",
+    "desc2": "",
+    "desc3": "",
+    "order": 83,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "EscapeInstant",
+    "desc0": "Escaping",
+    "desc1": "Time Penalty:",
+    "desc2": "",
+    "desc3": "",
+    "order": 84,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "EscapeInstantOpposition",
+    "desc0": "Escaping",
+    "desc1": "Time Penalty:",
+    "desc2": "",
+    "desc3": "",
+    "order": 85,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "EscapeOpposition",
+    "desc0": "Escaping",
+    "desc1": "Takeouts:",
+    "desc2": "Time Penalty:",
+    "desc3": "",
+    "order": 86,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "Escort",
+    "desc0": "VIP Lives:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 87,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "EscortOpposition",
+    "desc0": "VIP Lives:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 88,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "EscortShared",
+    "desc0": "Points Taken:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 89,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "EscortVIPDeathmatch",
+    "desc0": "VIP Takeouts:",
+    "desc1": "VIP Lives:",
+    "desc2": "",
+    "desc3": "",
+    "order": 90,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "EscortVIPDeathmatchOpp",
+    "desc0": "VIP Takeouts:",
+    "desc1": "VIP Lives:",
+    "desc2": "",
+    "desc3": "",
+    "order": 91,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "ForcedArrest",
+    "desc0": "Arrest Targets:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 92,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "ForcedArrestOpposition",
+    "desc0": "Stop Arrests:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 93,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "ForcedEntry",
+    "desc0": "Raid Targets:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 94,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "ForcedEntryMultiBuilding15",
+    "desc0": "Raid Targets:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 95,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "ForcedEntryMultiBuilding15Opposition",
+    "desc0": "Stop Raids:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 96,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "ForcedEntryOpposition",
+    "desc0": "Stop Raids:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 97,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "ForcedEntryThenDeliverItems",
+    "desc0": "Raid Targets:",
+    "desc1": "Deliver Items:",
+    "desc2": "",
+    "desc3": "",
+    "order": 98,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "ForcedEntryThenDeliverItemsOpposition",
+    "desc0": "Stop Raids:",
+    "desc1": "Stop Deliveries:",
+    "desc2": "",
+    "desc3": "",
+    "order": 99,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "ForcedEntryThenForcedEntry",
+    "desc0": "Raid Targets:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 100,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "ForcedEntryThenForcedEntryOpposition",
+    "desc0": "Stop Raids:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 101,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "GraffitiNoHoldPoints",
+    "desc0": "Spray Graffiti:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 102,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "GraffitiNoHoldPointsOpposition",
+    "desc0": "Stop Graffiti:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 103,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "Hacking",
+    "desc0": "Hack Targets:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 104,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "HackingOpposition",
+    "desc0": "Prevent Hacks:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 105,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "Investigate",
+    "desc0": "Investigations:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 106,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "InvestigateOpposition",
+    "desc0": "Prevent Investigations:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 107,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "InvestigateThenDeliverItems",
+    "desc0": "Investigations:",
+    "desc1": "Deliver Items:",
+    "desc2": "",
+    "desc3": "",
+    "order": 108,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "InvestigateThenDeliverItemsOpposition",
+    "desc0": "Stop Investigations:",
+    "desc1": "Stop Deliveries:",
+    "desc2": "",
+    "desc3": "",
+    "order": 109,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "InvestigateThenInvestigate",
+    "desc0": "Investigations:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 110,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "InvestigateThenInvestigateOpposition",
+    "desc0": "Stop Investigations:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 111,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "LootVehicleEnforcer",
+    "desc0": "Loot Vehicles:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 112,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "LootVehicleEnforcerOpposition",
+    "desc0": "Prevent Lootings:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 113,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "LootVehicleLocked",
+    "desc0": "Loot Vehicles:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 114,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "LootVehicleLockedMultiStage",
+    "desc0": "Loot Vehicles:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 115,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "LootVehicleLockedMultiStageOpposition",
+    "desc0": "Stop Lootings:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 116,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "LootVehicleLockedOpposition",
+    "desc0": "Stop Lootings:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 117,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "Mugging",
+    "desc0": "Mug Civilians:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 118,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "MuggingOpposition",
+    "desc0": "Stop Muggings:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 119,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "PickupItem",
+    "desc0": "Pick Up Items:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 120,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "PickupItemMultiStage",
+    "desc0": "Pick Up Items:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 121,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "PickupItemOpposition",
+    "desc0": "Stop Pickups:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 122,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "PickupItemOppositionMultiStage",
+    "desc0": "Stop Pickups:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 123,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "PickupItemThenDeliver",
+    "desc0": "Pick Up Items:",
+    "desc1": "Deliver Items:",
+    "desc2": "",
+    "desc3": "",
+    "order": 124,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "PickupItemThenDeliverOpposition",
+    "desc0": "Stop Pickups:",
+    "desc1": "Stop Deliveries:",
+    "desc2": "",
+    "desc3": "",
+    "order": 125,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "PickupVehicle",
+    "desc0": "Pick Up Vehicles:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 126,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "PickupVehicleCargo",
+    "desc0": "Pick Up Vehicles:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 127,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "PickupVehicleCargoOpposition",
+    "desc0": "Stop Pickups:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 128,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "PickupVehicleCargoOppositionThenDeliver",
+    "desc0": "Stop Pickups:",
+    "desc1": "Stop Deliveries:",
+    "desc2": "",
+    "desc3": "",
+    "order": 129,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "PickupVehicleCargoThenDeliver",
+    "desc0": "Pick Up Vehicles:",
+    "desc1": "Deliver Items:",
+    "desc2": "",
+    "desc3": "",
+    "order": 130,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "PickupVehicleOpposition",
+    "desc0": "Stop Pickups:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 131,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "PointCapture",
+    "desc0": "",
+    "desc1": "",
+    "desc2": "Team Hold Points",
+    "desc3": "Enemy Hold Points",
+    "order": 132,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "PointCaptureOpposition",
+    "desc0": "",
+    "desc1": "",
+    "desc2": "Team Hold Points",
+    "desc3": "Enemy Hold Points",
+    "order": 133,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "RamRaidBuilding",
+    "desc0": "Ramraid Buildings:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 134,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "RamRaidBuildingOpposition",
+    "desc0": "Stop Ramraids:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 135,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "Sabotage",
+    "desc0": "Sabotage Targets:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 136,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "SabotageOpposition",
+    "desc0": "Prevent Sabotage:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 137,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "SabotageThenSabotage",
+    "desc0": "Sabotage Targets:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 138,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "SabotageThenSabotageOpposition",
+    "desc0": "Stop Sabotage:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 139,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "Scan",
+    "desc0": "Scan Targets:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 140,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "ScanOpposition",
+    "desc0": "Prevent Scans:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 141,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "Scavenger",
+    "desc0": "Capture <Col:StageText>Task Items</Col> and hold them at your <Col:StageText>Base</Col> to gain points. Raid the enemy base and protect your own.",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 142,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "ScavengerOpposition",
+    "desc0": "Capture <Col:StageText>Task Items</Col> and hold them at your <Col:StageText>Base</Col> to gain points. Raid the enemy base and protect your own.",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 143,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "StopAndSearch",
+    "desc0": "Search Civilians:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 144,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "StopAndSearchOpposition",
+    "desc0": "Stop Searches:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 145,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "Survival",
+    "desc0": "Lives:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 146,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "SurvivalKills",
+    "desc0": "Lives:",
+    "desc1": "Takeouts:",
+    "desc2": "",
+    "desc3": "",
+    "order": 147,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "SurvivalKillsOpposition",
+    "desc0": "Takeouts:",
+    "desc1": "Lives:",
+    "desc2": "",
+    "desc3": "",
+    "order": 148,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "SurvivalOpposition",
+    "desc0": "Takeouts:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 149,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "TerritoryControl",
+    "desc0": "",
+    "desc1": "",
+    "desc2": "Team Hold Points",
+    "desc3": "Enemy Hold Points",
+    "order": 150,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "TerritoryControlOpposition",
+    "desc0": "",
+    "desc1": "",
+    "desc2": "Team Hold Points",
+    "desc3": "Enemy Hold Points",
+    "order": 151,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "Test_InvestigateMultiStage",
+    "desc0": "Investigations:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 152,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "Test_InvestigateOppositionMultiStage",
+    "desc0": "Stop Investigations:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 153,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "TutorialAntiGraffiti1_Stage1",
+    "desc0": "Cover Graffiti:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 154,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "TutorialAntigraffiti1_stage0",
+    "desc0": "Cover Graffiti:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 155,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "TutorialAntigraffiti1_stage0Opposition",
+    "desc0": "Defend Graffiti:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 156,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "TutorialAntigraffiti1_stage1Opposition",
+    "desc0": "Defend Graffiti:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 157,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "TutorialGraffiti1_stage0",
+    "desc0": "Spray Graffiti:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 158,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "TutorialGraffiti1_stage0Opposition",
+    "desc0": "Stop Graffiti:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 159,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "TutorialGraffiti1_stage1",
+    "desc0": "Spray Graffiti:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 160,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "TutorialGraffiti1_stage1Opposition",
+    "desc0": "Stop Graffiti:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 161,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "VandaliseBuilding",
+    "desc0": "Vandalize Targets:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 162,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "VandaliseBuildingOpposition",
+    "desc0": "Stop Vandalism:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 163,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "VandaliseGeneral",
+    "desc0": "Vandalize Targets:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 164,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "VandaliseGeneralOpposition",
+    "desc0": "Stop Vandalism:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 165,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "VandaliseGeneralThenVandalise",
+    "desc0": "Vandalize Targets:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 166,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "VandaliseGeneralThenVandaliseOpposition",
+    "desc0": "Stop Vandalism:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 167,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "VandaliseVehicle",
+    "desc0": "Vandalize Vehicles:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 168,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "VandaliseVehicleOpposition",
+    "desc0": "Stop Vandalism:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 169,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "VehicleSeizureThenDeliver",
+    "desc0": "Seize Vehicles:",
+    "desc1": "Deliver Vehicles:",
+    "desc2": "",
+    "desc3": "",
+    "order": 170,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "VehicleSeizureThenDeliverOpposition",
+    "desc0": "Stop Seizures:",
+    "desc1": "Stop Deliveries:",
+    "desc2": "",
+    "desc3": "",
+    "order": 171,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "VehicleTheftLocked",
+    "desc0": "Steal Vehicles:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 172,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "VehicleTheftLockedOpposition",
+    "desc0": "Protect Vehicles:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 173,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "VehicleTheftThenDeliver",
+    "desc0": "Steal Vehicles:",
+    "desc1": "Deliver Vehicles:",
+    "desc2": "",
+    "desc3": "",
+    "order": 174,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "VehicleTheftThenDeliverOpposition",
+    "desc0": "Protect Vehicles:",
+    "desc1": "Stop Deliveries:",
+    "desc2": "",
+    "desc3": "",
+    "order": 175,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "VehicleTheftUnlocked",
+    "desc0": "Steal Vehicles:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 176,
+    "source": "TaskOperationUIProfile.INT"
+  },
+  {
+    "id": "VehicleTheftUnlockedOpposition",
+    "desc0": "Protect Vehicles:",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "order": 177,
+    "source": "TaskOperationUIProfile.INT"
+  }
+]

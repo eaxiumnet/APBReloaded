@@ -1,0 +1,806 @@
+[
+  {
+    "id": "E_Move",
+    "message": "In the Customization Editors, press 1 to select the Move tool.",
+    "order": 0,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "E_Resize",
+    "message": "In the Customization Editors, press 2 to select the Resize tool.",
+    "order": 1,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "E_Rotate",
+    "message": "In the Customization Editors, press 3 to select the Rotate tool.",
+    "order": 2,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "ED_Layers",
+    "message": "Within the Designer use Shift or Ctrl to select multiple layers.",
+    "order": 3,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "EP_TattooOpacity",
+    "message": "In the Persona Studio try setting tattoos to 70-80 percent opacity to give them a more lived-in look.",
+    "order": 4,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GL_AccountDetails",
+    "message": "Never give your account details or password to anyone else. GamersFirst will never ask you for your account password.",
+    "order": 5,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GL_APBSite",
+    "message": "Visit www.APB.com for the latest news and forum discussions.",
+    "order": 6,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GL_PickUpGroups",
+    "message": "Using the command '/lfg' will automatically search for a group for you to join.",
+    "order": 7,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_AccuracyBursts",
+    "message": "Fire in short controlled bursts to maintain a high accuracy and land more hits.",
+    "order": 8,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_Ammo",
+    "message": "Be sure to stock up on ammo on a regular basis!",
+    "order": 9,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_C_Rescue",
+    "message": "If a member of your team is arrested, you can free them by running up to them and pressing <key:DoCSAKeyPressed>.",
+    "order": 10,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_ChangeLoadout",
+    "message": "You can change your loadout at Joker Ammo Machines, Contacts, Mailboxes and Vehicle Spawn Machines.",
+    "order": 11,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_CookNades",
+    "message": "Keep Fragmentation, Stun and Concussion Grenades primed for longer to give the enemy little time to react.",
+    "order": 12,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_E_Arrest",
+    "message": "You can arrest Criminals by stunning them with Less than Lethal weapons then using the Action key (<:key:DoCSAKeyPressed>) on them.",
+    "order": 13,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_E_Rescue",
+    "message": "Criminals can rescue their arrested teammates if left unattended.",
+    "order": 14,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_Equipment",
+    "message": "Remember to purchase new Equipment to increase the speed of your actions on Missions.",
+    "order": 15,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_GroupUp1",
+    "message": "When you are playing solo, the Groups page will provide a list of Public Groups you can join.",
+    "order": 16,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_GroupUp2",
+    "message": "APB is most fun when playing in a Group and it allows for more tactical play.",
+    "order": 17,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_GroupWithBackup",
+    "message": "If you called in someone for backup and enjoyed playing with them, why not invite them to your Group?",
+    "order": 18,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_ItemsInBoot",
+    "message": "Place larger items in the trunk of your vehicle to save carrying them.",
+    "order": 19,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_Jumping",
+    "message": "Jumping in combat decreases your accuracy and leaves you vulnerable.",
+    "order": 20,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_Leaning",
+    "message": "When in Marksmanship Mode, press <key:LeanLeft> or <key:LeanRight> to lean around corners.",
+    "order": 21,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_SHAW",
+    "message": "The SHAW Light Machine Gun is great for suppressing players, but not effective on the move.",
+    "order": 22,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_LowAmmo",
+    "message": "Running out of ammo? Switch to a Secondary Weapon or grenade to finish them off.",
+    "order": 23,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_LTLCanKill",
+    "message": "Less than Lethal weapons can kill an opponent if you keep firing. Cease fire once your opponent is stunned.",
+    "order": 24,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_Marksmanship",
+    "message": "Using Marksmanship mode increases your accuracy.",
+    "order": 25,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_MM_Settings",
+    "message": "You can change your Control Settings so that Marksmanship Mode is either a Hold or Toggle.",
+    "order": 26,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_N5",
+    "message": "Notoriety 5 can only be reached through combat and missions.",
+    "order": 27,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_N5Bounties",
+    "message": "Take out a Notoriety 5 Criminal for great rewards.",
+    "order": 28,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_N5Teammate",
+    "message": "Be careful when riding in a vehicle with a Notoriety 5 team mate. Your vehicle will be vulnerable to attack!",
+    "order": 29,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_Notoriety",
+    "message": "Maintaining a high Notoriety earns greater rewards.",
+    "order": 30,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_P5Bounties",
+    "message": "Claim the Bounty on a Prestige 5 Enforcer to earn a handsome reward.",
+    "order": 31,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_P5FriendlyFire",
+    "message": "Killing an Enforcer at Prestige 5 gives you a heavy Prestige penalty.",
+    "order": 32,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_P5Teammate",
+    "message": "Be careful when riding in a vehicle with a Prestige 5 team mate. Your vehicle will be vulnerable to attack!",
+    "order": 33,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_P5Waste",
+    "message": "Killing a fellow Enforcer whilst at Prestige 5 will ruin your chance to earn high rewards.",
+    "order": 34,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_Percs",
+    "message": "Percussion Grenades are a great way to finish off an opponent.",
+    "order": 35,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_PersonalVehicles",
+    "message": "Opponents cannot enter or drive your personal deployed vehicle.",
+    "order": 36,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_Prestige",
+    "message": "Upholding the law will increase your Prestige and rewards.",
+    "order": 37,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_Range",
+    "message": "Check the range of your weapon within your Locker. A sub machine gun will lose out to a rifle at longer ranges.",
+    "order": 38,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_Rating",
+    "message": "Some items require a minimum Rank level to be equipped.",
+    "order": 39,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_ReticuleFriendly",
+    "message": "A green reticule indicates that you are aiming at a friendly target.",
+    "order": 40,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_Scoreboard",
+    "message": "The Scoreboard (<key:ToggleScoreboardUI>) displays each player's Primary Weapon. Be sure to check out who you are up against.",
+    "order": 41,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_ShootUnderVehicles",
+    "message": "If your enemy is hiding behind a car, see if you can hit them by shooting under the car.",
+    "order": 42,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_SpawningVehicle",
+    "message": "While the initial vehicle is free to spawn, more expensive vehicles will cost up to $100.",
+    "order": 43,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_StaminaDamage_C",
+    "message": "Falling from height will cause significant Stamina damage and make you an easy target for Less than Lethal weapons.",
+    "order": 44,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_StaminaDamage_E",
+    "message": "Criminals who have just taken a heavy fall have low Stamina and are easy targets to stun.",
+    "order": 45,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_SupplyUnit",
+    "message": "Having a Supply Unit in your Group offers the opportunity to resupply or switch your weapons at any time.",
+    "order": 46,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_TeamKills",
+    "message": "Team kills have a negative effect on your rewards at the end of a Mission.",
+    "order": 47,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_TeamTalk",
+    "message": "Use /T to talk to everyone on your team in a Mission.",
+    "order": 48,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_Teamwork",
+    "message": "Effective teamwork can defeat any weapon or challenging objective.",
+    "order": 49,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_Threat",
+    "message": "Your Threat is used for matchmaking. It is affected by winning and losing Missions.",
+    "order": 50,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_Upgrades_Selection",
+    "message": "Pick your Modifications based on your play style and what suits you best.",
+    "order": 51,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_UpgradesActivatable",
+    "message": "Some Modifications are activatable - check what key they use before going into battle!",
+    "order": 52,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_VehicleCombat",
+    "message": "As a passenger you can lean and shoot out of vehicles with certain weapons by pressing the movement keys <key:MoveForward>, <key:StrafeLeft> <key:MoveBackward> & <key:StrafeRight>.",
+    "order": 53,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_VehicleCritical",
+    "message": "When you see smoke coming out of a vehicle, get out and keep clear!",
+    "order": 54,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_VoIPEnemy",
+    "message": "Remember that nearby opponents can hear you on VoIP. Interact with them!",
+    "order": 55,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_VoIPTeam",
+    "message": "Use VoIP (Hold <key:SetPushToTalkOn>) to work with your team mates during Missions.",
+    "order": 56,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_WaypointLetters",
+    "message": "Use the lettered objective markers during Missions to coordinate with your team.",
+    "order": 57,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_WeaponsCQB",
+    "message": "Weapons such as shotguns and submachine guns are great in small areas such as back alleys or inside a vehicle.",
+    "order": 58,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_WeaponsHVR",
+    "message": "A High Velocity Rifle is very powerful but vulnerable at close range.",
+    "order": 59,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_WeaponVariety",
+    "message": "Practice with different weapons so that you know when to switch based on your team and current Mission.",
+    "order": 60,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "KP_CameraSwitch",
+    "message": "To switch which shoulder your camera is positioned, press <key:SwitchCameraSide>.",
+    "order": 61,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "OW_C_VehiclesPristine",
+    "message": "Deliver a vehicle in pristine condition to receive an extra reward.",
+    "order": 62,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "OW_E_MuggingDelivery",
+    "message": "You can take loot stolen by Criminals from muggings and deliver it for a reward.",
+    "order": 63,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "OW_E_RamraidDeliver",
+    "message": "If you see a Criminal loading up a stolen vehicle with loot from a ramraid, recover the van and goods and deliver them for a reward.",
+    "order": 64,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "OW_E_StolenVehicles",
+    "message": "You can deliver vehicles stolen by Criminals for a reward.",
+    "order": 65,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "OW_E_VehiclesPristine",
+    "message": "Deliver a vehicle in pristine condition to receive an extra reward.",
+    "order": 66,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "OW_Graffiti",
+    "message": "There are numerous billboards throughout the Action Districts to display your graffiti on.",
+    "order": 67,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "OW_Witness_C",
+    "message": "Enforcers may be offered a Bounty Mission against you if they Witness you committing a crime.",
+    "order": 68,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "OW_Witness_E",
+    "message": "Witnessing a Criminal may give you the opportunity to take a Bounty Mission against them.",
+    "order": 69,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "OW_WitnessVehicles_C",
+    "message": "Hijacking and driving stolen vehicles is a crime. If you don't want to be Witnessed, take your own vehicle.",
+    "order": 70,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "PG_Pledge_1",
+    "message": "If you are not Pledged, a random previously unlocked Contact will offer you a Mission.",
+    "order": 71,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "PG_Pledge_2",
+    "message": "Pledge to a Contact to receive Missions solely from them.",
+    "order": 72,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "PG_StandingLevel",
+    "message": "You can unlock new items by raising your Standing with Contacts",
+    "order": 73,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "SL_AudioDisplayPoints",
+    "message": "Audio Display Points allow you to play Songs created in the Music Studio for all to hear.",
+    "order": 74,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "SL_GroupUp",
+    "message": "See if there is anyone available to group up for Missions using the Groups & Friends Menu.",
+    "order": 75,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "SL_Kiosks",
+    "message": "Check the Map (<key:ToggleDistrictMap>) to locate Customization Kiosks.",
+    "order": 76,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "SL_MailScam",
+    "message": "Be careful when sending items in the mail to strangers: the Marketplace is a safer and more secure way to trade.",
+    "order": 77,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "SL_Marketplace_Buy",
+    "message": "You can purchase Weapons, Equipment, Vehicles and much more from other players through the Marketplace.",
+    "order": 78,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "SL_Marketplace_DisplayPoints",
+    "message": "You can purchase Graffiti Display Point Tokens on the Marketplace, allowing you to display your Symbols for all to see.",
+    "order": 79,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "SL_Marketplace_Sell",
+    "message": "Selling items on the Marketplace is a good way to make APB$ and Points, whilst enhancing your celebrity image.",
+    "order": 80,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "SL_MusicStudio",
+    "message": "You can create Themes and Songs within the Music Studio.",
+    "order": 81,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "SL_WhereToCustomise",
+    "message": "You can customize your character within the Social District.",
+    "order": 82,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "UI_CharacterInfo",
+    "message": "Check out the Character Info Screen for information on your character, progression, and Roles and Achievements.",
+    "order": 83,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "UI_Map_Waypoints",
+    "message": "You can place Waypoints on the District Map to help guide you around.",
+    "order": 84,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "UI_MusicPlayer_Import",
+    "message": "You can import your own MP3s into the Music Player (<key:ToggleMusicPlaybackUI>).",
+    "order": 85,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "UI_MusicPlayer_OnFoot",
+    "message": "You can choose to hear music all the time or just in vehicles within the Music Player (<key:ToggleMusicPlaybackUI>).",
+    "order": 86,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "UI_MusicPlayer_Playlists",
+    "message": "Set up your own playlists in the Music Player (<key:ToggleMusicPlaybackUI>).",
+    "order": 87,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "UI_RemotePledge",
+    "message": "You can Pledge to a Contact by clicking on their icon on the District Map (<key:ToggleDistrictMap>) or from within Character Information (<key:TogglePlayerInfoUI>).",
+    "order": 88,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "UI_Scoreboard",
+    "message": "Press <key:ToggleScoreboardUI> to view the Scoreboard and information on your opponents.",
+    "order": 89,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "SL_Whisper",
+    "message": "To quickly reply to a Whisper, press <key:OpenQuickReply>.",
+    "order": 90,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "SL_Marketplace_VehicleDP",
+    "message": "You can purchase Vehicle Display Point Tokens on the Marketplace to display your vehicle within the Social District.",
+    "order": 91,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "SL_Marketplace_StatueDP",
+    "message": "Statues are a great way to become famous. Purchase their Display Point Tokens on the Marketplace.",
+    "order": 92,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "SL_Marketplace_SellFaction_C",
+    "message": "Selling a weapon but worried about it falling into the wrong hands? You can specify the auction on the Marketplace to be Criminal only.",
+    "order": 93,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "SL_Marketplace_SellFaction_E",
+    "message": "Selling a weapon but worried about it falling into the wrong hands? You can specify the auction on the Marketplace to be Enforcer only.",
+    "order": 94,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "ED_DupeLayer",
+    "message": "In the Customization Editors, you can quickly duplicate the selected layer by holding the Alt key and clicking on the canvas.",
+    "order": 95,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "Ed_CtrlZCtrlY",
+    "message": "You can use CTRL + Z and CTRL + Y to undo and redo actions within the Designer.",
+    "order": 96,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "EW_SelectedOnly",
+    "message": "In the Wardrobe use the \"Selected Only\" option when customizing to give a clearer view of the clothing item.",
+    "order": 97,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "EW_ProjectSections",
+    "message": "In the Wardrobe, Decals can be projected onto individual sections of clothing. Look for the dropdown on the right hand side.",
+    "order": 98,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "EW_RealignClothing",
+    "message": "In the Wardrobe you can realign Decals to the clothing surface for a more natural look.",
+    "order": 99,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "EG_LicensePlate",
+    "message": "The text and color of license plates can be changed when customizing a vehicle.",
+    "order": 100,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "EG_Camera",
+    "message": "In the Garage use the preset camera angles to help place decals.",
+    "order": 101,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "EG_EngineAudio",
+    "message": "After customizing engine audio you can preview it In the Garage.",
+    "order": 102,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "EP_BodyPaint",
+    "message": "In the Persona Studio, using the \"Body Paint\" option for tattoos allows you to display white and the result is much more vibrant.",
+    "order": 103,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "Ed_Camera",
+    "message": "In the Customization Editors, hold down the Right Mouse Button and move the mouse to rotate and move the camera.",
+    "order": 104,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "EP_Zoom",
+    "message": "In the Persona Studio use the Scroll Wheel to zoom in and out on your character.",
+    "order": 105,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "EW_Zoom",
+    "message": "In the Wardrobe use the Scroll Wheel to zoom in and out on your character.",
+    "order": 106,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "EG_Zoom",
+    "message": "In the Garage use the Scroll Wheel to zoom in and out on your vehicle.",
+    "order": 107,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_PitManeuver",
+    "message": "To execute a 'pit maneuver' on an opponent's vehicle, drive up and quick-turn into their rear left or rear right to spin them around.",
+    "order": 108,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GL_Unstick",
+    "message": "Manage to get yourself stuck? Use '/unstick' to respawn.",
+    "order": 109,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "SL_Emotes",
+    "message": "Press <key:OpenEmoteCommands> to access the Emotes List.",
+    "order": 110,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "LS_Armas",
+    "message": "Armas Marketplace leases unique and interesting weapons to players for limited periods of time.",
+    "order": 111,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "LS_Scout",
+    "message": "Sniper Rifle weighing you down? Armas has the answer! The HVR-243 Scout provides long range capability without slowing you down.",
+    "order": 112,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "LS_Whisper",
+    "message": "Equipped with a low magnification scope and silencer, the OCA-626 'Whisper' is the close range weapon for discerning operators. Find it at the Armas Marketplace.",
+    "order": 113,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "LS_Shotgun",
+    "message": "The Colby CSG-20 Shotgun uses 20-gauge shells for a smoother shot dispersion.  Get yours at the Armas Marketplace today!",
+    "order": 114,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "LS_NTEC",
+    "message": "At Armas, we know that getting a clear bead on your target is important.  As such we've made a Scoped N-TEC 5 available for leasing in the underground market.",
+    "order": 115,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "LS_STAR",
+    "message": "When you absolutely must get those shots on target, choose a STAR 556 'LCR', brought to you by Armas Marketplace.",
+    "order": 116,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "LS_ACT44",
+    "message": "Style is as important as efficiency when it comes to killing.  Armas has gold plated an ACT44 so you can look good while kicking ass.  The scope is just icing on the cake.",
+    "order": 117,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_Horn",
+    "message": "Pedestrians will run out of your way if you use the horn (<key:StartVehicleHorn>) or sirens (<key:ToggleSpecialLights>) on your vehicle.",
+    "order": 118,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_FlushNades",
+    "message": "High-Radius Explosives such as Fragmentation Grenades and 40mm Grenades (From the O-PGL) can be used to flush entrenched opponents.",
+    "order": 119,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_HVRTap",
+    "message": "When using the HVR, coordinate with a teammate to take down wounded targets quickly.",
+    "order": 120,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_Shotgun",
+    "message": "The JG-840 is powerful, but suffers from a low refire rate.  Use cover while readying the next shot to minimize exposure.",
+    "order": 121,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_Carbine",
+    "message": "The Joker SR-15 Carbine sustains decent accuracy on the move, making it an ideal close-medium range weapon for mobile users.",
+    "order": 122,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_NTEC",
+    "message": "The NTEC suffers heavily from accuracy degradation, but is deadly when fired in bursts from marksmanship mode.",
+    "order": 123,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "GP_SMG",
+    "message": "Both the OCA-626 and PMG-28 lose very little accuracy when moving and firing fully automatic, but do not gain a bonus for marksmanship.",
+    "order": 124,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "LS_Tutorial",
+    "message": "Learn and earn by completing tutorial categories to gain rewards. Press <key:ToggleTutorialUI> to show details on your current task.",
+    "order": 125,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "Epidemic_Barrels_Explode",
+    "message": "Remember: your small barrels are filled with corrosive toxin and will eventually explode!",
+    "order": 126,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "Epidemic_Protect",
+    "message": "Protect or destroy large barrel bundles to fight for control of infected territories.",
+    "order": 127,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "Epidemic_Enemy_Poison",
+    "message": "Enemy toxins will harm you! Be careful when navigating captured territories.",
+    "order": 128,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "Epidemic_Win",
+    "message": "To win the game: get your toxin to 100% and then capture Havalynd Central - Memorial Park.",
+    "order": 129,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "Epidemic_Rewards",
+    "message": "Complete epidemic daily activities to gain extra rewards!",
+    "order": 130,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "Epidemic_Repair",
+    "message": "If your barrels have taken gun fire, you can repair the damage with a blowtorch.",
+    "order": 131,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "Epidemic_Spread",
+    "message": "More neutral territories will become available as the infections increase.",
+    "order": 132,
+    "source": "LoadingMovieTips.INT"
+  },
+  {
+    "id": "Epidemic_Capture",
+    "message": "Even if your team hasn't reached 100% infection, you can still capture the last neutral territory!",
+    "order": 133,
+    "source": "LoadingMovieTips.INT"
+  }
+]

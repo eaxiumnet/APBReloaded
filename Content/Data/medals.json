@@ -1,0 +1,658 @@
+[
+    {
+        "id":  "KillStreak_05",
+        "title":  "Kill Streak Rank 1",
+        "description":  "Kill 5 opponents without dying",
+        "category":  "KillStreak",
+        "order":  0,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "BigWin_All",
+        "title":  "Champion",
+        "description":  "Win a mission by completing all task stages personally",
+        "category":  "BigWin",
+        "order":  1,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "BigWin_Arrest_10_100",
+        "title":  "Judicator Rank 5",
+        "description":  "Win a mission with 10 takeouts, 100% of which are arrests",
+        "category":  "BigWin",
+        "order":  2,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "BigWin_Arrest_10_25",
+        "title":  "Judicator Rank 1",
+        "description":  "Win a mission with 10 takeouts, 25% of which are arrests",
+        "category":  "BigWin",
+        "order":  3,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "BigWin_Arrest_10_33",
+        "title":  "Judicator Rank 2",
+        "description":  "Win a mission with 10 takeouts, 33% of which are arrests",
+        "category":  "BigWin",
+        "order":  4,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "BigWin_Arrest_10_50",
+        "title":  "Judicator Rank 3",
+        "description":  "Win a mission with 10 takeouts, 50% of which are arrests",
+        "category":  "BigWin",
+        "order":  5,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "BigWin_Arrest_10_75",
+        "title":  "Judicator Rank 4",
+        "description":  "Win a mission with 10 takeouts, 75% of which are arrests",
+        "category":  "BigWin",
+        "order":  6,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "BigWin_Defuse",
+        "title":  "Steady Hand",
+        "description":  "Defuse all bombs on the mission",
+        "category":  "BigWin",
+        "order":  7,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "BigWin_Detonate",
+        "title":  "Demolisher",
+        "description":  "Detonate and plant all bombs on the mission",
+        "category":  "BigWin",
+        "order":  8,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "BigWin_Rescue_12",
+        "title":  "Sleight of Hand Rank 4",
+        "description":  "Free 12 teammates from arrest",
+        "category":  "BigWin",
+        "order":  9,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "BigWin_Rescue_15",
+        "title":  "Sleight of Hand Rank 5",
+        "description":  "Free 15 teammates from arrest",
+        "category":  "BigWin",
+        "order":  10,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "BigWin_Rescue_3",
+        "title":  "Sleight of Hand Rank 1",
+        "description":  "Free 3 teammates from arrest",
+        "category":  "BigWin",
+        "order":  11,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "BigWin_Rescue_6",
+        "title":  "Sleight of Hand Rank 2",
+        "description":  "Free 6 teammates from arrest",
+        "category":  "BigWin",
+        "order":  12,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "BigWin_Rescue_9",
+        "title":  "Sleight of Hand Rank 3",
+        "description":  "Free 9 teammates from arrest",
+        "category":  "BigWin",
+        "order":  13,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "BigWin_Takeout_11",
+        "title":  "Reaper Rank 4",
+        "description":  "Win a mission with at least 11 takeouts",
+        "category":  "BigWin",
+        "order":  14,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "BigWin_Takeout_15",
+        "title":  "Reaper Rank 5",
+        "description":  "Win a mission with at least 15 takeouts",
+        "category":  "BigWin",
+        "order":  15,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "BigWin_Takeout_5",
+        "title":  "Reaper Rank 1",
+        "description":  "Win a mission with at least 5 takeouts",
+        "category":  "BigWin",
+        "order":  16,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "BigWin_Takeout_7",
+        "title":  "Reaper Rank 2",
+        "description":  "Win a mission with at least 7 takeouts",
+        "category":  "BigWin",
+        "order":  17,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "BigWin_Takeout_9",
+        "title":  "Reaper Rank 3",
+        "description":  "Win a mission with at least 9 takeouts",
+        "category":  "BigWin",
+        "order":  18,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Dishonour_ArrestedKill_1",
+        "title":  "Demerit: Police Battery Rank 1",
+        "description":  "Kill 1 arrested opponent.",
+        "category":  "Dishonour",
+        "order":  19,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Dishonour_ArrestedKill_10",
+        "title":  "Demerit: Police Battery Rank 10",
+        "description":  "Kill 10 arrested opponents.",
+        "category":  "Dishonour",
+        "order":  20,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Dishonour_ArrestedKill_2",
+        "title":  "Demerit: Police Battery Rank 2",
+        "description":  "Kill 2 arrested opponents.",
+        "category":  "Dishonour",
+        "order":  21,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Dishonour_ArrestedKill_3",
+        "title":  "Demerit: Police Battery Rank 3",
+        "description":  "Kill 3 arrested opponents.",
+        "category":  "Dishonour",
+        "order":  22,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Dishonour_ArrestedKill_4",
+        "title":  "Demerit: Police Battery Rank 4",
+        "description":  "Kill 4 arrested opponents.",
+        "category":  "Dishonour",
+        "order":  23,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Dishonour_ArrestedKill_5",
+        "title":  "Demerit: Police Battery Rank 5",
+        "description":  "Kill 5 arrested opponents.",
+        "category":  "Dishonour",
+        "order":  24,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Dishonour_ArrestedKill_6",
+        "title":  "Demerit: Police Battery Rank 6",
+        "description":  "Kill 6 arrested opponents.",
+        "category":  "Dishonour",
+        "order":  25,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Dishonour_ArrestedKill_7",
+        "title":  "Demerit: Police Battery Rank 7",
+        "description":  "Kill 7 arrested opponents.",
+        "category":  "Dishonour",
+        "order":  26,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Dishonour_ArrestedKill_8",
+        "title":  "Demerit: Police Battery Rank 8",
+        "description":  "Kill 8 arrested opponents.",
+        "category":  "Dishonour",
+        "order":  27,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Dishonour_ArrestedKill_9",
+        "title":  "Demerit: Police Battery Rank 9",
+        "description":  "Kill 9 arrested opponents.",
+        "category":  "Dishonour",
+        "order":  28,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Dishonour_FriendlyKill_1",
+        "title":  "Demerit: Team Killer 1",
+        "description":  "Kill 1 member of your group.",
+        "category":  "Dishonour",
+        "order":  29,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Dishonour_FriendlyKill_10",
+        "title":  "Demerit: Team Killer 10",
+        "description":  "Kill 10 members of your group.",
+        "category":  "Dishonour",
+        "order":  30,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Dishonour_FriendlyKill_2",
+        "title":  "Demerit: Team Killer 2",
+        "description":  "Kill 2 members of your group.",
+        "category":  "Dishonour",
+        "order":  31,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Dishonour_FriendlyKill_3",
+        "title":  "Demerit: Team Killer 3",
+        "description":  "Kill 3 members of your group.",
+        "category":  "Dishonour",
+        "order":  32,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Dishonour_FriendlyKill_4",
+        "title":  "Demerit: Team Killer 4",
+        "description":  "Kill 4 members of your group.",
+        "category":  "Dishonour",
+        "order":  33,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Dishonour_FriendlyKill_5",
+        "title":  "Demerit: Team Killer 5",
+        "description":  "Kill 5 members of your group.",
+        "category":  "Dishonour",
+        "order":  34,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Dishonour_FriendlyKill_6",
+        "title":  "Demerit: Team Killer 6",
+        "description":  "Kill 6 members of your group.",
+        "category":  "Dishonour",
+        "order":  35,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Dishonour_FriendlyKill_7",
+        "title":  "Demerit: Team Killer 7",
+        "description":  "Kill 7 members of your group.",
+        "category":  "Dishonour",
+        "order":  36,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Dishonour_FriendlyKill_8",
+        "title":  "Demerit: Team Killer 8",
+        "description":  "Kill 8 members of your group.",
+        "category":  "Dishonour",
+        "order":  37,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Dishonour_FriendlyKill_9",
+        "title":  "Demerit: Team Killer 9",
+        "description":  "Kill 9 members of your group.",
+        "category":  "Dishonour",
+        "order":  38,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Dishonour_FriendlyStun_1",
+        "title":  "Demerit: Team Stunner 1",
+        "description":  "Stun 1 member of your group",
+        "category":  "Dishonour",
+        "order":  39,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Dishonour_FriendlyStun_2",
+        "title":  "Demerit: Team Stunner 2",
+        "description":  "Stun 2 members of your group.",
+        "category":  "Dishonour",
+        "order":  40,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Dishonour_FriendlyStun_3",
+        "title":  "Demerit: Team Stunner 3",
+        "description":  "Stun 3 members of your group.",
+        "category":  "Dishonour",
+        "order":  41,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Dishonour_FriendlyStun_4",
+        "title":  "Demerit: Team Stunner 4",
+        "description":  "Stun 4 members of your group.",
+        "category":  "Dishonour",
+        "order":  42,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Dishonour_FriendlyStun_5",
+        "title":  "Demerit: Team Stunner 5",
+        "description":  "Stun 5 members of your group.",
+        "category":  "Dishonour",
+        "order":  43,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Dishonour_SelfKill_02",
+        "title":  "Demerit: Suicide Rank 1",
+        "description":  "Inflict 2 deaths upon yourself.",
+        "category":  "Dishonour",
+        "order":  44,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Dishonour_SelfKill_03",
+        "title":  "Demerit: Suicide Rank 2",
+        "description":  "Inflict 3 deaths upon yourself.",
+        "category":  "Dishonour",
+        "order":  45,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Dishonour_SelfKill_04",
+        "title":  "Demerit: Suicide Rank 3",
+        "description":  "Inflict 4 deaths upon yourself.",
+        "category":  "Dishonour",
+        "order":  46,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Dishonour_SelfKill_05",
+        "title":  "Demerit: Suicide Rank 4",
+        "description":  "Inflict 5 deaths upon yourself.",
+        "category":  "Dishonour",
+        "order":  47,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Dishonour_SelfKill_06",
+        "title":  "Demerit: Suicide Rank 5",
+        "description":  "Inflict 6 deaths upon yourself.",
+        "category":  "Dishonour",
+        "order":  48,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Dishonour_SelfKill_07",
+        "title":  "Demerit: Suicide Rank 6",
+        "description":  "Inflict 7 deaths upon yourself.",
+        "category":  "Dishonour",
+        "order":  49,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "KillBehind",
+        "title":  "Backstabber",
+        "description":  "Kill an opponent from behind with a melee weapon",
+        "category":  "KillBehind",
+        "order":  50,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "KillStreak_10",
+        "title":  "Kill Streak Rank 2",
+        "description":  "Kill 10 opponents without dying",
+        "category":  "KillStreak",
+        "order":  51,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "KillStreak_15",
+        "title":  "Kill Streak Rank 3",
+        "description":  "Kill 15 opponents without dying",
+        "category":  "KillStreak",
+        "order":  52,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "KillStreak_20",
+        "title":  "Kill Streak Rank 4",
+        "description":  "Kill 20 opponents without dying",
+        "category":  "KillStreak",
+        "order":  53,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "KillStreak_25",
+        "title":  "Kill Streak Rank 5",
+        "description":  "Kill 25 opponents without dying",
+        "category":  "KillStreak",
+        "order":  54,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "KillStreak_30",
+        "title":  "Kill Streak Rank 6",
+        "description":  "Kill 30 opponents without dying",
+        "category":  "KillStreak",
+        "order":  55,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Situational_AntiGraffitiKill",
+        "title":  "War on Anti-Graffiti",
+        "description":  "Kill an opponent while they are covering up graffiti",
+        "category":  "Situational",
+        "order":  56,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Situational_ArrestStreakKiller",
+        "title":  "Cop Killer",
+        "description":  "Kill an opponent who has arrested 5 or more players without a death",
+        "category":  "Situational",
+        "order":  57,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Situational_ArsonKill",
+        "title":  "Firebug Squasher",
+        "description":  "Kill an opponent while they are committing arson",
+        "category":  "Situational",
+        "order":  58,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Situational_DriverAssistKill",
+        "title":  "Drive-by",
+        "description":  "A passenger in your car kills an opponent while you drive",
+        "category":  "Situational",
+        "order":  59,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Situational_GraffitiingKill",
+        "title":  "War on Graffiti",
+        "description":  "Kill an opponent while they are applying graffiti",
+        "category":  "Situational",
+        "order":  60,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Situational_GrenadeKill",
+        "title":  "Pineapple Farmer",
+        "description":  "Kill an opponent with a grenade",
+        "category":  "Situational",
+        "order":  61,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Situational_KillStreakArrest",
+        "title":  "High Risk Warrant",
+        "description":  "Arrest an opponent who has killed 5 or more players without a death",
+        "category":  "Situational",
+        "order":  62,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Situational_KillStreakKiller",
+        "title":  "Bounty Hunter",
+        "description":  "Kill an opponent who has killed 5 or more players without a death",
+        "category":  "Situational",
+        "order":  63,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Situational_MeleeKill",
+        "title":  "Battery",
+        "description":  "Kill an opponent with a melee weapon",
+        "category":  "Situational",
+        "order":  64,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Situational_PostDeathKill",
+        "title":  "Reach Beyond the Grave",
+        "description":  "Kill an opponent after your own death",
+        "category":  "Situational",
+        "order":  65,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Situational_SuperKill",
+        "title":  "Kill 'Em All",
+        "description":  "Kill an entire team at the same time",
+        "category":  "Situational",
+        "order":  66,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Situational_TaskItemKill_1",
+        "title":  "Transporter Slayer",
+        "description":  "Kill an opponent who is carrying a task item",
+        "category":  "Situational",
+        "order":  67,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Situational_VIPKill",
+        "title":  "Assassination",
+        "description":  "Kill an opponent who is a VIP",
+        "category":  "Situational",
+        "order":  68,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Situational_VehicleKill",
+        "title":  "Vehicular Slaughter",
+        "description":  "Kill an opponent with a vehicle",
+        "category":  "Situational",
+        "order":  69,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "TimeLimit_Kills_2",
+        "title":  "Blitzkrieg Rank 1",
+        "description":  "Kill 2 opponents within 5 seconds of each other",
+        "category":  "TimeLimit",
+        "order":  70,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "TimeLimit_Kills_3",
+        "title":  "Blitzkrieg Rank 2",
+        "description":  "Kill 3 opponents within 10 seconds of each other",
+        "category":  "TimeLimit",
+        "order":  71,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "TimeLimit_Kills_4",
+        "title":  "Blitzkrieg Rank 3",
+        "description":  "Kill 4 opponents within 15 seconds of each other",
+        "category":  "TimeLimit",
+        "order":  72,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "TimeLimit_Kills_5",
+        "title":  "Blitzkrieg Rank 4",
+        "description":  "Kill 5 opponents within 25 seconds of each other",
+        "category":  "TimeLimit",
+        "order":  73,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Dishonour_SelfKill_08",
+        "title":  "Demerit: Suicide Rank 7",
+        "description":  "Inflict 8 deaths upon yourself.",
+        "category":  "Dishonour",
+        "order":  74,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Dishonour_SelfKill_09",
+        "title":  "Demerit: Suicide Rank 8",
+        "description":  "Inflict 9 deaths upon yourself.",
+        "category":  "Dishonour",
+        "order":  75,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Dishonour_SelfKill_10",
+        "title":  "Demerit: Suicide Rank 9",
+        "description":  "Inflict 10 deaths upon yourself.",
+        "category":  "Dishonour",
+        "order":  76,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Dishonour_SelfKill_15",
+        "title":  "Demerit: Suicide Rank 10",
+        "description":  "Inflict 15 deaths upon yourself.",
+        "category":  "Dishonour",
+        "order":  77,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Dishonour_SelfKill_20",
+        "title":  "Demerit: Suicide Rank 11",
+        "description":  "Inflict 20 deaths upon yourself.",
+        "category":  "Dishonour",
+        "order":  78,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Dishonour_SelfKill_25",
+        "title":  "Demerit: Suicide Rank 12",
+        "description":  "Inflict 25 deaths upon yourself.",
+        "category":  "Dishonour",
+        "order":  79,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Dishonour_SelfKill_30",
+        "title":  "Demerit: Suicide Rank 13",
+        "description":  "Inflict 30 deaths upon yourself.",
+        "category":  "Dishonour",
+        "order":  80,
+        "source":  "Medals.INT"
+    },
+    {
+        "id":  "Dishonour_AFK",
+        "title":  "Demerit: Sleepy-Head",
+        "description":  "Awarded for having AFK status for more than 30 seconds during a mission.",
+        "category":  "Dishonour",
+        "order":  81,
+        "source":  "Medals.INT"
+    }
+]

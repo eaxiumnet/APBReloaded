@@ -1,0 +1,1199 @@
+[
+  {
+    "id": "DestroyEnemyVehicles",
+    "variant": 1,
+    "title": "Casamajor Car-nage",
+    "hud_description": "Blow up <col: Yellow>3</col> enemy vehicles.",
+    "long_description": "Enforcers think they're all safe, tucked up in their little cars. Could you, um, prove that they're not? Just <col: Yellow>blow up three enemy vehicles</col> they don't even need to be in them just... make them go away.",
+    "order": 0,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "DestroyEnemyVehicles",
+    "variant": 2,
+    "title": "Vroom Vroom Boom",
+    "hud_description": "Blow up <col: Yellow>3</col> enemy vehicles.",
+    "long_description": "Criminals think that there is honor to be found in hiding behind armor plated vehicles. <col: Yellow>Destroy three enemy vehicles</col> and show them not to hide. Prevent them from being able to flee like the rats they are.",
+    "order": 1,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Mission_CompleteObjectives",
+    "variant": 1,
+    "title": "Filler Piece",
+    "hud_description": "Complete <col: Yellow>5</col> objectives.",
+    "long_description": "I need some footage for my show tonight, 211 in Progress. Can you get out there and make some noise? I don't want footage of you getting carried away in an ambulance or something so get out there and <col: Yellow>complete five objectives,</col> okay?",
+    "order": 2,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Mission_CompleteObjectives",
+    "variant": 2,
+    "title": "Win by the Inches",
+    "hud_description": "Complete or Assist <col: Yellow>5</col> objectives.",
+    "long_description": "Hey, shug. We've got to keep the scoreboard in mind so could you get out there and <col: Yellow>complete five objectives?</col> I don't need to see it all in one go or anything, I just need someone to meet the quota's for the day, okay?",
+    "order": 3,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Mods_AmmoSupplied",
+    "variant": 1,
+    "title": "Supply Lines Open",
+    "hud_description": "Resupply <col: Yellow>25</col> magazines to teammates.",
+    "long_description": "Heyyyy. Double B keeps bragging about how many Suppliers she gives out. Use your <col: Yellow>Field Supplier</col> to <col: Yellow>resupply your teammates</col> 25 times today. We'll show her that no one cares if you're just giving it away, it only matters if they know how to work it.",
+    "order": 4,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Mods_AmmoSupplied",
+    "variant": 2,
+    "title": "Water Boy for Guns",
+    "hud_description": "Resupply <col: Yellow>25</col> magazines to teammates.",
+    "long_description": "Hey, Broseph. Gotta teach you about humility. You're gonna become your teams water boy. There's nothin' wrong with making sure that your teammates are well stocked with ammo so <col: Yellow>resupply 25 of your teammates</col> with your <col: Yellow>field supplier.</col>",
+    "order": 5,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "PVP_KillAny",
+    "variant": 1,
+    "title": "Lead Poisoning",
+    "hud_description": "Kill <col: Yellow>5</col> enemies.",
+    "long_description": "Some Enforcer posers were rolling around Prentiss like they owned the place. Could you be a lamb and send a message? <col: Yellow>Kill 5 Enforcers</col> just to send a message.",
+    "order": 6,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "PVP_KillAny",
+    "variant": 2,
+    "title": "Meat and Potatoes",
+    "hud_description": "Kill <col: Yellow>5</col> enemies.",
+    "long_description": "Hey. Put your best boots on, it's time to kick someone's shit in. Get out there and kill <col: Yellow>5</col> Criminals.",
+    "order": 7,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Medal_Blitzkreig1",
+    "variant": 1,
+    "title": "Like Lightning",
+    "hud_description": "Earn <col: Yellow>1</col> Blitzkrieg medals.",
+    "long_description": "You wanna do something cool? <col: Yellow>Blitzkrieg 2 Enforcers</col> for me. 2 kills in five seconds. Get in there and hit them like a bolt of lightning!",
+    "order": 8,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Medal_Blitzkreig1",
+    "variant": 2,
+    "title": "Make ‘em Count",
+    "hud_description": "Earn <col: Yellow>1</col> Blitzkrieg medals.",
+    "long_description": "I want you to prove that you're not just tough but quick too. <col: Yellow>Blitzkrieg 2 Criminals.</col> That means kill 2 Criminals in five seconds. You got it in you, champ?",
+    "order": 9,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Mission_WinMission",
+    "variant": 1,
+    "title": "Beta Testing",
+    "hud_description": "Win <col: Yellow>2</col> missions.",
+    "long_description": "Dude. My beta waves are flagging, can you get out there and do something to keep them from going all theta on me? <col: Yellow>Win two missions</col> and send me a message? Thanks. Now, I need some coffee.",
+    "order": 10,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Mission_WinMission",
+    "variant": 2,
+    "title": "Satisfied Customers",
+    "hud_description": "Win <col: Yellow>2</col> missions.",
+    "long_description": "Hey hon. We need a little bit of a PR victory. Nothing major, yeah? Just a little something to show that all the money we're pumping into Havalynd is worth pumping. Get out there and <col: Yellow>win 2 missions</col> and report back. Ciao.",
+    "order": 11,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Mods_VehicleSpawns",
+    "variant": 1,
+    "title": "Like a Clown Car",
+    "hud_description": "Have <col: Yellow>3</col> players spawn in your vehicle.",
+    "long_description": "You ever see a clown car? No? Get a vehicle with  <col: Yellow>Mobile Spawn Point</col> and have <col: Yellow>3 players</col> spawn in your vehicle. See? It's a clown car.",
+    "order": 12,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Mods_VehicleSpawns",
+    "variant": 2,
+    "title": "A Red Carpet Moment",
+    "hud_description": "Have <col: Yellow>3</col> players spawn in your vehicle.",
+    "long_description": "You wanna know the best feeling? Getting out of a limo at the red carpet and having your people follow you. Makes you feel like you've arrived, babe! Get <col: Yellow>3 Players</col> to <col: Yellow>spawn in your vehicle.</col>",
+    "order": 13,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "PvP_KillShotgun",
+    "variant": 1,
+    "title": "Seeing Red",
+    "hud_description": "Kill <col: Yellow>4<col> enemies with your shotgun.",
+    "long_description": "Enforcers are rolling up on my shit. Get out there, pull a <col: Yellow>shotgun</col> on them turn <col: Yellow>4<col> of those fuckers into a fine red mist. Up close and personal, like.",
+    "order": 14,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "PvP_KillShotgun",
+    "variant": 2,
+    "title": "CQB Weapons Training",
+    "hud_description": "Kill <col: Yellow>4<col> enemies with a shotgun.",
+    "long_description": "Variety is the spice of life. It's important to keep your options open and I wanna see what you can do when you get close enough to see their pupils dilate the moment they hear you pull the trigger. Grab a <col: Yellow>shotgun and kill 4 Criminals.</col>",
+    "order": 15,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "PvP_KillAssaultRifles",
+    "variant": 1,
+    "title": "Assault Rifle Training",
+    "hud_description": "Kill <col: Yellow>5</col> enemies with an assault rifle.",
+    "long_description": "Got something nice and simple for you right now. I need you to <col: Yellow>kill 5 Enforcers with assault rifles.</col> Nice and simple, but it keeps the balance sheet straight. Not glamorous, I know, but I get a feeling you'll enjoy it anyway.",
+    "order": 16,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "PvP_KillAssaultRifles",
+    "variant": 2,
+    "title": "Mirri's Meltdown",
+    "hud_description": "Kill <col: Yellow>5</col> enemies with an assault rifle.",
+    "long_description": "Mirri's havin' a 'moment,' which means she's about to meltdown over a lack of clean kills recently. Can you help me build up her Zen? Get out there and <col: Yellow>kill 5 Criminals with assault rifles?</col> Just make it clean and simple.",
+    "order": 17,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "PvP_KillRifle",
+    "variant": 1,
+    "title": "But This One Is Mine",
+    "hud_description": "Kill <col: Yellow>5</col> enemies with Marksman weapons.",
+    "long_description": "Bonita gets to spend her time at dinner parties and with her flavor of the month boyfriend and I get to help out on the streets and actually doing shit that's useful. How about you make yourself useful for me? <col: Yellow>Kill 5 Enforcers</col> with a rifle.",
+    "order": 18,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "PvP_KillRifle",
+    "variant": 2,
+    "title": "Knock Off Knock Out",
+    "hud_description": "Kill <col: Yellow>5</col> enemies with Marksman weapons.",
+    "long_description": "Criminals have a new shipment of cheap knock off rifles from some Eurasian country. Where the fuck is Eurasia? Is that near, like, Russia or something? Fuck it, get out there and <col: Yellow>5 Criminals with a rifle.</col> Fuckin’ poors and their off brand shit.",
+    "order": 19,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "PvP_KillSecondary",
+    "variant": 1,
+    "title": "Kill More Enforcers",
+    "hud_description": "Kill <col: Yellow>3</col> enemies with your secondary.",
+    "long_description": "It's kind of a thing for us to kill Enforcers. So how about you get the fuck out there, <col: Yellow>kill 3 Enforcers with your secondary weapon</col> and then give yourself a nice pat on the back for doing such a good job...",
+    "order": 20,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "PvP_KillSecondary",
+    "variant": 2,
+    "title": "Street Justice",
+    "hud_description": "Kill <col: Yellow>3</col> enemies with your secondary.",
+    "long_description": "Back when I was a cop I used to love my revolver. See, everyone else on the force had an SNR but I had an RSA. That thing could blow a guy's knee wide open if they weren't feeling talkative. I want you to <col: Yellow>kill 3 Criminals with a secondary.</col>",
+    "order": 21,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "PvP_RunOver",
+    "variant": 1,
+    "title": "How Very Alarming!",
+    "hud_description": "Run over <col: Yellow>2</col> enemies with your vehicle.",
+    "long_description": "Nothing like the sound of a body hitting the bumper to wake you up in the morning. Hey, can you record the noise of <col: Yellow>2 Enforcers getting run down</col> for me? I need something to get me up in the morning and I've been told to lay off the coffee.",
+    "order": 22,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "PvP_RunOver",
+    "variant": 2,
+    "title": "Handbrake Heartbreak",
+    "hud_description": "Run over <col: Yellow>2</col> enemies with your vehicle.",
+    "long_description": "On a battlefield the most important six inches is between your ears. Think about things, stay on your toes and improvise when needed. Before the end of the day, I want you to <col: Yellow>run down 2 Criminals</col> in your vehicle.",
+    "order": 23,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "OW_DeliverDumpTrucks",
+    "variant": 1,
+    "title": "Take a Dump",
+    "hud_description": "Deliver <col: Yellow>5</col> Dump Truck's to a Chop Shop.",
+    "long_description": "Alright, bawbag? Job in Waterfront needs something a bit heavier. Get out there, nick <col: Yellow>5 dump truck's</col> and hand them in to a <col: Yellow>chop shop</col> for shipping around the city. Cheers, pal.",
+    "order": 24,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "OW_DeliverSecurityVans",
+    "variant": 1,
+    "title": "Grade A Security",
+    "hud_description": "Deliver <col: Yellow>5</col> Security Van's to a Chop Shop.",
+    "long_description": "Alright, bawjaws? Gwan do your ol' pal Grayson a solid? I owe money to the sort of people that you don't wanna owe a pint tae. Can you lift <col: Yellow>5 Security Vans</col> and drop them off at a <col: Yellow> chop shop</col> for me? Magic.",
+    "order": 25,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "OW_DeliverTaxi",
+    "variant": 1,
+    "title": "False Economy",
+    "hud_description": "Deliver <col: Yellow>5</col> Taxi's to a Chop Shop.",
+    "long_description": "Alright, numpty bollocks? We've got a front that runs taxi’s but someone keeps stealing all our cabs. Can you get out there and steal <col: Yellow>5 taxi's and bring them to a chop shop?</col> I can’t believe people keep stealing our taxi's, five at a time...",
+    "order": 26,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "OW_DeliverTVs",
+    "variant": 1,
+    "title": "TV Fort",
+    "hud_description": "Deliver <col: Yellow>5</col> TV's to a fence.",
+    "long_description": "I'm building a TV fort. It's exactly what it sounds like. Get out there and <col: Yellow>deliver 5 TV's</col> to me. Even the best of forts started small but between you and every other freak out there, I'll have enough for a scale replica of Forche Bank.",
+    "order": 27,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "OW_DeliverVehicles",
+    "variant": 1,
+    "title": "Small Theft Auto",
+    "hud_description": "Deliver <col: Yellow>8</col> vehicles to a Chop Shop.",
+    "long_description": "Scrap metal's huge in China right now. I wanna test the waters with the market. Get out there and <col: Yellow>steal and drop-off 8 cars</col> for me to ship over there as scrap. I'm sure once we file off the numbers under the hood no one'll care.",
+    "order": 28,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "OW_KillHeat5",
+    "variant": 1,
+    "title": "Like a Gelding Knife",
+    "hud_description": "Kill <col: Yellow>1</col> Prestige five Enforcer.",
+    "long_description": "I want you to be the gelding knife to some Enforcers dream of being the big, swinging dick in the district. <col: Yellow>Kill a Prestige 5 Enforcer</col> for me. Send pics.",
+    "order": 29,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "OW_KillHeat5",
+    "variant": 2,
+    "title": "Shock and Awe",
+    "hud_description": "Kill <col: Yellow>1</col> Notoriety five Criminal.",
+    "long_description": "We're going to try and new tack for a moment. <col: Yellow>Kill a notoriety 5 Criminal.</col> Cut off the head of the snake and the body will die soon after. Mmhm, I don't think it'll work either but it's worth a shot.",
+    "order": 30,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "OW_LargeStash",
+    "variant": 1,
+    "title": "Skint",
+    "hud_description": "Gather a <col: Yellow>$1000</col> stash.",
+    "long_description": "I'm as skint as a snow shoveller in July. Can you <col: Yellow>grab a stash of $1000</col>  for me? Ta.",
+    "order": 31,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "OW_MurderPedestrians",
+    "variant": 1,
+    "title": "Don't Ask Why",
+    "hud_description": "Kill <col: Yellow>150</col> pedestrians.",
+    "long_description": "Hey can you <col: Yellow>murder 150 pedestrians,</col> film it with a camera and give me the film? I need it for reasons. Don't do more than a hundred and fifty though... any more or less and I can't- you know what? Never mind. Just mow the fuckers down.",
+    "order": 32,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "OW_RecoverVehicles",
+    "variant": 1,
+    "title": "Lost and Found",
+    "hud_description": "Recover <col: Yellow>3</col> stolen vehicles.",
+    "long_description": "Can you <col: Yellow>recover 3 vehicles</col> that have been stolen by Criminal's? We need to start returning some of these things to their owners or every insurance broker in the city is going to go bust...",
+    "order": 33,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "OW_WinWitnessMission",
+    "variant": 1,
+    "title": "Winning Witness",
+    "hud_description": "Win <col: Yellow>$350</col> worth of witness missions.",
+    "long_description": "I'm getting tired of Criminal's getting away with stealing everything that's not nailed down and handing it in. <col: Yellow>Win $350 worth of Witness missions</col> and get their stash back to the original owners.",
+    "order": 34,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "OW_WitnessEnemies",
+    "variant": 1,
+    "title": "Totes Legit",
+    "hud_description": "Witness <col: Yellow>1</col> Criminal.",
+    "long_description": "<col: Yellow>Witness a Criminal</col> doing something illegal. This shouldn't be difficult, especially in this city.",
+    "order": 35,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "PvP_ArrestPlayer",
+    "variant": 1,
+    "title": "Take Them Alive",
+    "hud_description": "Arrest <col: Yellow>1</col> Criminal.",
+    "long_description": "I need you to take a Criminal alive. We think that they're planning something and we want as much information about it before it happens so <col: Yellow>arrest 1 Criminal</col> and we'll take it from there. Thank you.",
+    "order": 36,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "PvP_KillGrenade",
+    "variant": 1,
+    "title": "Fall Down, Go Boom",
+    "hud_description": "Kill <col: Yellow>3</col> Enforcers with grenades.",
+    "long_description": "I'm a big fan of grenades. I'm making a frag video in honor of my favorite type and need some footage. <col: Yellow>Grenade kill 3 Enforcers.</col> Doesn't have to be all at once and can be with any kind of grenade, I just need some footage.",
+    "order": 37,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "PvP_KillGrenade",
+    "variant": 2,
+    "title": "Ninja Smoke Bomb!",
+    "hud_description": "Kill <col: Yellow>3</col> Criminals with grenades.",
+    "long_description": "I've heard stories of people around the city pretending to be ninja. They throw a grenade at their feet and their enemies disappear. Disgusting. Ninja should not be emulated. <col: Yellow>Kill 3 Criminals with grenades</col> and show proper use.",
+    "order": 38,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "PvP_KillLMG",
+    "variant": 1,
+    "title": "Size Matters",
+    "hud_description": "Kill <col: Yellow>3</col> Enforcers with Light Machine Guns.",
+    "long_description": "Light Machine Gun's aren't really all that delicate. Then again, I suppose sometimes all you really want from life is a great, big weapon huh? Get out there and <col: Yellow>kill 3 Enforcers with a Light Machine Gun.</col>",
+    "order": 39,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "PvP_KillLMG",
+    "variant": 2,
+    "title": "Suppressed Rage",
+    "hud_description": "Kill <col: Yellow>3</col> Criminals with Light Machine Guns.",
+    "long_description": "One of the most important things to understand on the battlefield is when to change up your role. LMG's, for example, can be for suppression and direct fire. Try it out. <col: Yellow>Kill 3 Criminals with an LMG.</col>",
+    "order": 40,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "PvP_KillSMG",
+    "variant": 1,
+    "title": "Something Stylish",
+    "hud_description": "Kill <col: Yellow>5</col> Enforcers with Sub Machine Guns.",
+    "long_description": "I'm thinking of switching my pistol for an SMG. I'm just worried that I might not have the firepower needed to get from the club to the hotel and back again in one piece. Can you demo an SMG for me? Just <col: Yellow>kill 5 Enforcers with an SMG.</col>",
+    "order": 41,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "PvP_KillSMG",
+    "variant": 2,
+    "title": "A Tigers Claw",
+    "hud_description": "Kill <col: Yellow>5</col> Criminals with Sub Machine Guns.",
+    "long_description": "Hey! Get your claws out, tiger! There's Criminal's that need lead poisoning. Grab a <col: Yellow>sub machine gun and kill 5 Criminals</col> for me.",
+    "order": 42,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Mission_MVP_Financial",
+    "variant": 1,
+    "title": "Most Valuable G-King",
+    "hud_description": "Be MVP <col:yellow>Once.</col>",
+    "long_description": "The G-Kings are expanding. We're looking for brave men and women to take the lead in our community. We need people that are valuable to both the organization and to individual operations. <col: Yellow>Become MVP once</col> and we'll see if you’re a leader.",
+    "order": 43,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Mission_MVP_Financial",
+    "variant": 2,
+    "title": "Most Valuable 'Torian",
+    "hud_description": "Be MVP <col:yellow>Once.</col>",
+    "long_description": "I value results more than anyone else you'll ever meet. I want people that can turn a failure into a success. I'm not sure I want you, though. Convince me. <col: Yellow>Become MVP once</col> and we'll talk more.",
+    "order": 44,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Mission_MVP_Waterfront",
+    "variant": 1,
+    "title": "Most Valuable Tiger",
+    "hud_description": "Be MVP <col:yellow>Once.</col>",
+    "long_description": "Some people call the Tigers elitist pricks. They're right. We are. Most people just aren't good enough to be in the Tigers, or in Prentiss for that matter. If you <col: Yellow>win MVP once</col> we'll talk more about taking you more serious in future.",
+    "order": 45,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Mission_MVP_Waterfront",
+    "variant": 2,
+    "title": "Most Valuable 'Rose",
+    "hud_description": "Be MVP <col:yellow>Once.</col>",
+    "long_description": "In my organization there's only one thing that matters: Results. It's the results that matter.  Prove that you're the best and we'll talk more. Go win a match and <col: Yellow>be MVP once.</col>",
+    "order": 46,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Mission_MVP_Waterfront",
+    "variant": 3,
+    "title": "Bloodrose Business",
+    "hud_description": "Be MVP <col:yellow>Once.</col>",
+    "long_description": "Business is slower than usual and Simeone has requested that you do what you can to change that. <col: Yellow>Become MVP once</col> and show the streets of Waterfront who's really in charge of this place.",
+    "order": 47,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Mission_MVP_Waterfront",
+    "variant": 4,
+    "title": "Tiger Territory",
+    "hud_description": "Be MVP <col:yellow>Once.</col>",
+    "long_description": "You've been doing well out there! We're seeing less and less gang activity on our streets. Keep it that way and <col: Yellow>Become MVP once</col> to show the Criminal scum who really runs things on the 'front.",
+    "order": 48,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Rare_KillStreak_Financial",
+    "variant": 1,
+    "title": "Nothing Personal",
+    "hud_description": "Reach a Kill Streak of <col: Yellow>15.</col>",
+    "long_description": "It’s just business. Go out, <col: Yellow>kill 15 Enforcers in a streak</col> for a reward. It’s nothing personal.",
+    "order": 49,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Rare_KillStreak_Financial",
+    "variant": 2,
+    "title": "Big Data",
+    "hud_description": "Reach a Kill Streak of <col: Yellow>15.</col>",
+    "long_description": "Big data is information that’s so huge in complexity that you can’t process it by traditional means. I've been looking into it and the Praetorians are generating interesting values. <col: Yellow>Kill 15 Criminals in a streak.</col> Let’s make a statistical anomaly.",
+    "order": 50,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Rare_KillStreak_Waterfront",
+    "variant": 1,
+    "title": "Be A Winner!",
+    "hud_description": "Reach a Kill Streak of <col: Yellow>15.</col>",
+    "long_description": "Get your game face on, bitch! Get out there, stamp on someone’s fuckin’ throat, pound a beer and fuck their girlfriend! Before ya do, though, <col: Yellow>kill 15 Criminals in a streak!</col> Be a fucking WINNER!",
+    "order": 51,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Rare_KillStreak_Waterfront",
+    "variant": 2,
+    "title": "Like You Mean It",
+    "hud_description": "Reach a Kill Streak of <col: Yellow>15.</col>",
+    "long_description": "You'll have noticed by now that some think the Blood Roses are a poser teenagers, annoyed at their precious, carefree lives. Emo vampire role-players gone feral. Prove them wrong. <col: Yellow>Kill 15 Enforcers in a streak<col> for me. That'll send a message.",
+    "order": 52,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Rare_MvPStreak_Financial",
+    "variant": 1,
+    "title": "Celebrity Status",
+    "hud_description": "Get MVP <col: Yellow>3</col> in a row.",
+    "long_description": "Probably the best way to become famous is by being good at something - the easiest way is with a sextape and I don't think you're cut out for that. <col: Yellow>Earn MVP 3 times in a streak</col> and you'll get on the Effigy front cover.",
+    "order": 53,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Rare_MvPStreak_Financial",
+    "variant": 2,
+    "title": "Consistency Counts",
+    "hud_description": "Get MVP <col: Yellow>3</col> in a row.",
+    "long_description": "Some floor trader was on his phone, talking about his latest trade. It sounded like a short term win that'd lose in the long run. Are you a good long term investment? Let's see. <col: Yellow>Win MVP 3 times in a row</col> and we'll see.",
+    "order": 54,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Rare_MvPStreak_Waterfront",
+    "variant": 1,
+    "title": "Be The Best",
+    "hud_description": "Get MVP <col: Yellow>3</col> in a row.",
+    "long_description": "You win the cup once and people think it's a fluke. You win the cup twice and people think that you're onto something. You win the cup three times? People think you're the best. <col: Yellow>Win MVP in a mission 3 times in a row</col> and prove who you are.",
+    "order": 55,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Rare_MvPStreak_Waterfront",
+    "variant": 2,
+    "title": "Soft Power",
+    "hud_description": "Get MVP <col: Yellow>3</col> in a row.",
+    "long_description": "Having a rep really helps. Walking into a place, giving a look, and having them hand over their protection money’s perfect. That's what we called 'soft power.' I wanna build you up like that. <col: Yellow>Get MVP 3 times in a row</col> for me.",
+    "order": 56,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Rare_WinStreak_Financial",
+    "variant": 1,
+    "title": "Office Politics",
+    "hud_description": "Win <col:yellow>5</col> missions in a row.",
+    "long_description": "I need someone to show the naysayers that we're capable of winning and capable of doing it repeatedly. <col: Yellow>Win 5 missions in a row</col> to give me some ammo in the board room and help me shut them up.",
+    "order": 57,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Rare_WinStreak_Financial",
+    "variant": 2,
+    "title": "High Performers",
+    "hud_description": "Win <col:yellow>5</col> missions in a row.",
+    "long_description": "I have a selection of high profile operatives in my portfolio. I'm thinking of expanding said portfolio. <col: Yellow>Win 5 missions in a row</col> and we'll see about advancing your status in the… portfolio.",
+    "order": 58,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Rare_WinStreak_Waterfront",
+    "variant": 1,
+    "title": "The Only Thing",
+    "hud_description": "Win <col:yellow>5</col> missions in a row.",
+    "long_description": "You know who I hate? People that say 'they tried' when they lose. Fuck those people. Winners never quit. <col: Yellow>Win 5 Missions in a streak,</col> find a loser, punch them in fuckin' face, spit on them and then win some more!",
+    "order": 59,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Rare_WinStreak_Waterfront",
+    "variant": 2,
+    "title": "A Real Earner",
+    "hud_description": "Win <col:yellow>5</col> missions in a row.",
+    "long_description": "The best people are the ones that work and earn. I think you're someone that I can depend on, but I need proof. <col: Yellow>Get out there and win 5 missions in a row</col> and we'll talk about a reward.",
+    "order": 60,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Streak_Kill5",
+    "variant": 1,
+    "title": "Old School Kicks",
+    "hud_description": "Achieve a Kill Streak of <col: Yellow>5.</col>",
+    "long_description": "For all my talk of being a businessman there's always one thing that it comes back to: the bread and butter of putting people on the ground. <col: Yellow>Hit a kill streak of 5.</col>",
+    "order": 61,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Streak_Kill5",
+    "variant": 2,
+    "title": "Hitman",
+    "hud_description": "Achieve a Kill Streak of <col: Yellow>5.</col>",
+    "long_description": "We have teams that just walk into a room and start killing. Retribution Squads. We get headlines and we get a hit. Let's see if you have the stomach for it. <col: Yellow>Hit a streak of 5 kills</col> and we'll talk about moving you up off a street team.",
+    "order": 62,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Streak_Kill5",
+    "variant": 3,
+    "title": "Down But Not Out",
+    "hud_description": "Achieve a Kill Streak of <col: Yellow>5.</col>",
+    "long_description": "We're being pushed back go even out the numbers. <col: Yellow>Hit a kill streak of 5.</col>",
+    "order": 63,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Streak_Kill5_2",
+    "variant": 1,
+    "title": "Make the Conversion",
+    "hud_description": "Achieve a Kill Streak of <col: Yellow>5.</col>",
+    "long_description": "Hitting checkpoints and objectives is great and all, but I'd like to see more bodies hitting more floors, you know? <col: Yellow>Hit a kill streak of 5.</col> I like you, so try not to get your ass shot, cool?",
+    "order": 64,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Streak_Kill5_2",
+    "variant": 2,
+    "title": "Balance the Books",
+    "hud_description": "Achieve a Kill Streak of <col: Yellow>5.</col>",
+    "long_description": "More Praetorians are getting killed than are killing. Change that. <col: Yellow>hit a kill streak of 5.</col>",
+    "order": 65,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Streak_Kill5_2",
+    "variant": 3,
+    "title": "Continued Assault",
+    "hud_description": "Achieve a Kill Streak of <col: Yellow>5.</col>",
+    "long_description": "Keep the pressure up and make sure we stay on top of them. <col: Yellow>Hit a kill streak of 5.</col>",
+    "order": 66,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Mods_JammedEnemies",
+    "variant": 1,
+    "title": "aaaag static",
+    "hud_description": "fuq wi <col: Yellow>5</col> Enforcers radarz.",
+    "long_description": "oi. Cud u use ur <col: Yellow>radar jammer</col> on sum Enforvers. <col: Yellow>5 shud do.</col>",
+    "order": 67,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Mods_JammedEnemies",
+    "variant": 2,
+    "title": "Feel Like Jammin'",
+    "hud_description": "Jam <col: Yellow>5</col> Criminals.",
+    "long_description": "As a sniper you shouldn’t be getting close enough for them to spot you but sometimes you can’t help it. Equip your <col: Yellow>radar jammer and jam 5 enemies radar.</col> Seriously, no one sees it coming. It's hilarious.",
+    "order": 68,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Mods_SpottedEnemies",
+    "variant": 1,
+    "title": "Paparazzi",
+    "hud_description": "Spot <col: Yellow>5</col> Enforcers.",
+    "long_description": "Gettin' real mad at the paparazzi that keep stealing pictures of Bonita and I. Can you show them how it feels? <col:yellow>Spot 5 Enforcers</col> and we'll see about getting their pictures up on SPiN.",
+    "order": 69,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Mods_SpottedEnemies",
+    "variant": 2,
+    "title": "Tactical Feedback",
+    "hud_description": "Spot <col: Yellow>5</col> Criminals.",
+    "long_description": "Tactical information requested. Investigate Criminals operating in your AO. <col: Yellow>Spot 5 Criminals</col> using your spotter mod.",
+    "order": 70,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Mods_TaggedEnemies",
+    "variant": 1,
+    "title": "get to da choppah",
+    "hud_description": "tag <col: Yellow>10</col> forcerz. Ez du it nau.",
+    "long_description": "i wunt u 2 tag some enofacorcers. <col: Yellow>10ll do.</col>",
+    "order": 71,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Mods_TaggedEnemies",
+    "variant": 2,
+    "title": "The Other Kind of Tag",
+    "hud_description": "Tag <col: Yellow>10</col> Criminals.",
+    "long_description": "A sniper can't be expected to do everything themselves which means, occasionally, we need a little bit of help. That's where Tagger comes in. It marks people for execution at long range. <col:yellow>Go tag 10 Criminals with Tagger.</col>",
+    "order": 72,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "PvP_KillExplosives",
+    "variant": 1,
+    "title": "bit of bangin",
+    "hud_description": "kabow <col: Yellow>5</col> Enforcers with explosive gunz.",
+    "long_description": "srsly i dunno wut u wnt me 2 write. take a fing that goes like a rockit, get some derren types and blow em tha fuq uppppppppp. <col: Yellow>u herd. blow up 5 Enforcerz.</col>",
+    "order": 73,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "PvP_KillExplosives",
+    "variant": 2,
+    "title": "Heavy Ordinance",
+    "hud_description": "Kill <col: Yellow>5</col> Criminals with Demolition weapons.",
+    "long_description": "Oh hey, I get it. Because I'm a big guy, I have to be the one with the rocket and grenade launchers? How creative of you. <col: Yellow>Kill 5 Criminals with explosive weapons.</col> Not grenades, just rocket launchers and grenade launchers.",
+    "order": 74,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "PvP_KillSniper",
+    "variant": 1,
+    "title": "Keep It Clean",
+    "hud_description": "Kill <col: Yellow>8</col>Enforcers with a Sniper Rifle.",
+    "long_description": "Hey, I can't be seen to be getting my hands dirty. Can you <col: Yellow>kill 8 Enforcers with Sniper Rifles</col> for me please? I'll just... take your word for it that it's done.",
+    "order": 75,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "PvP_KillSniper",
+    "variant": 2,
+    "title": "SPORTS CLICHES!",
+    "hud_description": "Kill <col: Yellow>8</col> Criminals with a Sniper Rifle.",
+    "long_description": "Hey! Put on your game face, get some war paint on and do some other really cliché jock shit. Look, I don't give a fuck? Daddy's tired and wants to see you <col: Yellow>kill 8 Criminals with a Sniper Rifle.</col> Now fuck off before my hangover turns violent.",
+    "order": 76,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Mission_CompleteMission",
+    "variant": 1,
+    "title": "Babysitting",
+    "hud_description": "Complete <col: Yellow>1</col> Mission.",
+    "long_description": "I keep getting brought in to do all this baby sitting. Mobile Spawners and field Suppliers won't deliver themselves, you know? Go <col: Yellow>complete a mission</col> and you'll get a reward. Doesn't matter if you win or lose, just so long as you finish.",
+    "order": 77,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Mission_CompleteMission",
+    "variant": 2,
+    "title": "First Steps",
+    "hud_description": "Complete <col: Yellow>1</col> Mission.",
+    "long_description": "You'll never progress if you don't finish missions. <col: Yellow>Finish a mission</col> and I'll give you a reward. Doesn't matter if you win or lose, just that you finish. Now, get out of here.",
+    "order": 78,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Rare_KillSnubNose_Financial",
+    "variant": 1,
+    "title": "snubscription is ded",
+    "hud_description": "kill <col: Yellow>25</col> doods w a snub nose. lol.",
+    "long_description": "I keep herin about how snubscription is ded as a payment model. Itz not ded, itz just restin. <col: Yellow>Kill 25 Enforcers</col> w ur snubby.",
+    "order": 79,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Rare_KillSnubNose_Financial",
+    "variant": 2,
+    "title": "Up Close And Personal",
+    "hud_description": "Kill <col: Yellow>25</col> Criminals with a Snub Nose Revolver",
+    "long_description": "I keep tellin’ people that I can fuck them up if they get close too. I can use a SNR to kill twenty guys before lunch. See if you can do better. <col: Yellow>Kill 25 Criminals</col> with a <col: Yellow>Snub Nose Revolver.</col>",
+    "order": 80,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Rare_KillSnubNose_Waterfront",
+    "variant": 1,
+    "title": "Humiliation",
+    "hud_description": "Kill <col: Yellow>25</col> Criminals with a Snub Nose Revolver",
+    "long_description": "Humiliating and enemy is almost as important as killing them. You've got to show his buddies that you're not above rubbing salt into the wounds. <col: Yellow>Kill 25 Criminals</col> with a <col: Yellow>Snub Nose Revolver.</col>",
+    "order": 81,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Rare_KillSnubNose_Waterfront",
+    "variant": 2,
+    "title": "It's Cute!",
+    "hud_description": "Kill <col: Yellow>25</col> Enforcers with a Snub Nose Revolver",
+    "long_description": "I'm working on a designer pistol. Just something cute and sexy. Thing is it's gotta be practical as well as stylish. <col:Yellow>Kill 25 Enforcers</col> with a <col:Yellow>Snub Nose Revolver</col> for me as a field test.",
+    "order": 82,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Halloween_PvP_KillPlayer",
+    "variant": 1,
+    "title": "Not the Done Thing",
+    "hud_description": "Kill <col: Yellow>15</col> Enforcers.",
+    "long_description": "I know it is not the done thing, to ask something of a friend you know for only two weeks in a year but I would ask of you that you <col: Yellow>wreak bloody violence</col> upon <col: Yellow>15 Enforcers.</col> I'll try and make it worth your while, hm?",
+    "order": 83,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Halloween_PvP_KillPlayer",
+    "variant": 2,
+    "title": "Wages of Sin",
+    "hud_description": "Kill <col: Yellow>15</col> Criminals.",
+    "long_description": "Kill <col: Yellow>15</col> Criminals. Doesn't matter how you do it, just so long as you get it done. Give the reaper somethin' to do.",
+    "order": 84,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Halloween_Mission_Complete",
+    "variant": 1,
+    "title": "Glory Awaits",
+    "hud_description": "Complete <col: Yellow>5</col> Missions.",
+    "long_description": "Let me begin by saying, I don't even require victory from you for this. I am very magnanimous like that, am I not? I simply require of you to <col: Yellow> Complete 5 Missions.</col> No matter if you win or lose. It's the taking part that counts, you little hellion.",
+    "order": 85,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Halloween_Mission_Complete",
+    "variant": 2,
+    "title": "Lost the Will to Live",
+    "hud_description": "Complete <col: Yellow>5</col> Missions.",
+    "long_description": "You ever wanted something to be over so much that you don't care how it ends? Remember that TV show with the magic island? Yeah, my entire life is like that. Gimme some closure. <col: Yellow>Complete 5 Missions.</col> You don't even have to win them.",
+    "order": 86,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Halloween_PvP_KillPlayer_SnubNose",
+    "variant": 1,
+    "title": "Slayer",
+    "hud_description": "Kill <col: Yellow>5</col> Enforcers with a Snub Nose Revolver.",
+    "long_description": "People say time is the fire in which we burn and that the greatest slayer of man is the simple passing of the hours. Clearly these people never met you. <col: Yellow>Kill 5 Enforcers</col> with a <col: Yellow>Snub Nose Revolver.</col>",
+    "order": 87,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Halloween_PvP_KillPlayer_SnubNose",
+    "variant": 2,
+    "title": "Pop Gun Fun",
+    "hud_description": "Kill <col: Yellow>5</col> Criminals with a Snub Nose Revolver.",
+    "long_description": "They say the best way to make a ghost is piss someone off before you kill them. <col: Yellow>Kill 5 Criminals</col> with a <col: Yellow>Snub Nose Revolver</col> and we'll test out that theory.",
+    "order": 88,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "PvP_KillBlowtorch",
+    "variant": 1,
+    "title": "Blown Away",
+    "hud_description": "Murder People with a Blowtorch",
+    "long_description": "Murder People with a Blowtorch",
+    "order": 89,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "PvP_KillBlowtorch",
+    "variant": 2,
+    "title": "Burn that Motha Down",
+    "hud_description": "Kill <col: Yellow>1</col> Enforcer with a Blowtorch.",
+    "long_description": "Classic disco is the best disco. Time for a little inferno, you dig? Kill an Enforcer with a blowtorch. Burn that motha downnnnnnn-",
+    "order": 90,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Mods_RepairBlowtorch",
+    "variant": 1,
+    "title": "Keep ‘em Rolling",
+    "hud_description": "Repair <col: Yellow>2000</col> damage.",
+    "long_description": "Make sure your fireteam’s vehicles are kept in top condition. Repair 2000 damage to vehicles with a blowtorch. That’ll save everyone some cash and you’ll get a reward.",
+    "order": 91,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Mods_RepairBlowtorch",
+    "variant": 2,
+    "title": "Right Tool, Right Job.",
+    "hud_description": "Repair <col: Yellow>2000</col> damage.",
+    "long_description": "Sometimes you’ve just gotta do what makes sense at that time. Use that blowtorch I gave you and Repair 2000 damage to vehicles. Right tool, right job.",
+    "order": 92,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Rare_KillFlaregun",
+    "variant": 1,
+    "title": "Indirect Victory",
+    "hud_description": "Kill <col: Yellow>3</col> Criminals with a Flare Gun.",
+    "long_description": "Remember how I told you not to use your flare gun as a direct fire weapon? I want you to use your Flare Gun to kill 3 Criminals. What can I tell you, I’m a woman of contradictions.",
+    "order": 93,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Rare_KillFlaregun",
+    "variant": 2,
+    "title": "Wrong Tool, Right Job",
+    "hud_description": "Kill <col: Yellow>3</col> Enforcers with a Flare Gun.",
+    "long_description": "You ever wanted to make someone scream ‘bullshit!’ at the top of their lungs? Use a Flare Gun to kill 3 Enforcers, and listen close because every time you do it, you’ll be able to hear the siren song of the rage-quit.",
+    "order": 94,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Christmas_Kills",
+    "variant": 1,
+    "title": "The Naughty List...",
+    "hud_description": "Kill <col: Yellow>30</col> Enforcers for Criminelf's new \"Naughty List\".",
+    "long_description": "*HIC* Santa gave me the Naughty List of all the bad Enforcers he wants \"taken care of\" this year, but I've lost it... Well, smoked it... *HIC* So, to be on the safe side, I'm going to assume they've all been bad this year...*HIC*",
+    "order": 95,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Christmas_Kills",
+    "variant": 2,
+    "title": "The Naughty List...",
+    "hud_description": "Kill <col: Yellow>30</col> Criminals for Elforcer's new \"Naughty List\".",
+    "long_description": "*HIC* Santa gave me the Naughty List of all the bad Criminals he wants \"taken care of\" this year, but I've lost it... Well, smoked it... *HIC* So, to be on the safe side, I'm going to assume they've all been bad this year...*HIC*",
+    "order": 96,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Chaos_Anarchy_Kills_Secondary",
+    "variant": 1,
+    "title": "Anarchy - Secondary Kills",
+    "hud_description": "Kill <col: Yellow>10</col> Enemies with Secondaries.",
+    "long_description": "Kill <col: Yellow>10</col> Enemies with Secondaries.",
+    "order": 97,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Chaos_Anarchy_Kills",
+    "variant": 1,
+    "title": "Anarchy - Kills",
+    "hud_description": "Kill <col: Yellow>30</col> Enemies.",
+    "long_description": "Kill <col: Yellow>30</col> Enemies.",
+    "order": 98,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Chaos_Anarchy_Kills_PrimarySniperRifles",
+    "variant": 1,
+    "title": "Anarchy - Sniper Rifle Kills",
+    "hud_description": "Kill <col: Yellow>10</col> Enemies with High Velocity Rifles.",
+    "long_description": "Kill <col: Yellow>10</col> Enemies with High Velocity Rifles.",
+    "order": 99,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Chaos_Anarchy_Kills_HighScorePlayer",
+    "variant": 1,
+    "title": "Anarchy - Kill Provocateurs",
+    "hud_description": "Kill <col: Yellow>3</col> Provocateurs.",
+    "long_description": "Kill <col: Yellow>3</col> Provocateurs.",
+    "order": 100,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Chaos_Anarchy_GameWin",
+    "variant": 1,
+    "title": "Anarchy - Win Event",
+    "hud_description": "Win the <col: Yellow>Anarchy</col> Event.",
+    "long_description": "Win the <col: Yellow>Anarchy</col> Event.",
+    "order": 101,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Chaos_Anarchy_GameComplete",
+    "variant": 1,
+    "title": "Anarchy - Complete Event",
+    "hud_description": "Complete <col: Yellow>3</col> Anarchy Events.",
+    "long_description": "Complete <col: Yellow>3</col> Anarchy Events.",
+    "order": 102,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Chaos_Anarchy_KillStreakWithSnub",
+    "variant": 1,
+    "title": "Anarchy - SNR Kill Streak.",
+    "hud_description": "Kill <col: Yellow>3</col> Enemies with a Snub Nose Revolver without dying.",
+    "long_description": "Kill <col: Yellow>3</col> Enemies with a Snub Nose Revolver without dying.",
+    "order": 103,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Chaos_Anarchy_KillStreak",
+    "variant": 1,
+    "title": "Anarchy - Kill Streak",
+    "hud_description": "Kill <col: Yellow>5</col> Enemies without dying.",
+    "long_description": "Kill <col: Yellow>5</col> Enemies without dying.",
+    "order": 104,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Chaos_Anarchy_Kills_LMGs",
+    "variant": 1,
+    "title": "Anarchy - LMG Kills",
+    "hud_description": "Kill <col: Yellow>10</col> Enemies with LMGs.",
+    "long_description": "Kill <col: Yellow>10</col> Enemies with LMGs.",
+    "order": 105,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Chaos_Anarchy_Kills_SMGS",
+    "variant": 1,
+    "title": "Anarchy - SMG Kills",
+    "hud_description": "Kill <col: Yellow>10</col> Enemies with SMGs.",
+    "long_description": "Kill <col: Yellow>10</col> Enemies with SMGs.",
+    "order": 106,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Chaos_Anarchy_Kills_Shotguns",
+    "variant": 1,
+    "title": "Anarchy - Shotgun Kills",
+    "hud_description": "Kill <col: Yellow>10</col> Enemies with Shotguns.",
+    "long_description": "Kill <col: Yellow>10</col> Enemies with Shotguns.",
+    "order": 107,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Chaos_Anarchy_Kills_AssaultRifles",
+    "variant": 1,
+    "title": "Anarchy - AR Kills",
+    "hud_description": "Kill <col: Yellow>10</col> Enemies with Assault Rifles.",
+    "long_description": "Kill <col: Yellow>10</col> Enemies with Assault Rifles.",
+    "order": 108,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Halloween_Epidemic_CaptureArea",
+    "variant": 1,
+    "title": "Poison Pusher",
+    "hud_description": "Capture <col: Yellow>3</col> Locations",
+    "long_description": "Capture <col: Yellow>3</col> Locations",
+    "order": 109,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Halloween_Epidemic_DamageBarrels",
+    "variant": 1,
+    "title": "Clean-Up",
+    "hud_description": "Deal <col: Yellow>5000</col> Damage to Enemy Barrel Stacks",
+    "long_description": "Deal <col: Yellow>5000</col> to Enemy Toxin Barrel Stacks",
+    "order": 110,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Halloween_Epidemic_WinMatch",
+    "variant": 1,
+    "title": "Infectious Personality",
+    "hud_description": "Win <col: Yellow>1</col> Match",
+    "long_description": "Win <col: Yellow>1</col> Match",
+    "order": 111,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Halloween_Epidemic_DefendArea",
+    "variant": 1,
+    "title": "Germ Guard",
+    "hud_description": "Kill <col: Yellow>5</col> Enemies while in friendly Locations",
+    "long_description": "Kill <col: Yellow>5</col> Enemies while in friendly Locations",
+    "order": 112,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Halloween_Epidemic_DefendBarrel",
+    "variant": 1,
+    "title": "Contagion Convoy",
+    "hud_description": "Kill <col: Yellow>3</col> Enemies while near friendly small Toxin Barrels",
+    "long_description": "Kill <col: Yellow>3</col> Enemies while near friendly toxin barrels (not barrel stacks)",
+    "order": 113,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Halloween_Epidemic_KillPlayers_FinalArea",
+    "variant": 1,
+    "title": "Final Stand",
+    "hud_description": "Kill <col: Yellow>3</col> in the Final Location",
+    "long_description": "Reach the Final Stage of the Epidemic and Kill <col: Yellow>3</col> while in the Final Location",
+    "order": 114,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Christmas_SlayBells_HoldCheckpoints",
+    "variant": 1,
+    "title": "Slay Bells - Hold Checkpoint",
+    "hud_description": "Complete <col: Yellow>5</col> Rounds holding checkpoints.",
+    "long_description": "End <col: Yellow>5</col> rounds successfully holding at least one checkpoint.\n\nCompleting Daily Activities gains you progress towards the <Col: Red>Slay Bells</Col> Role.",
+    "order": 115,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Christmas_SlayBells_KillPlayers",
+    "variant": 1,
+    "title": "Slay Bells - Kill Players",
+    "hud_description": "Kill <col: Yellow>15</col> Players",
+    "long_description": "Kill <col: Yellow>15</col> players in the Slay Bells event.\n\nCompleting Daily Activities gains you progress towards the <Col: Red>Slay Bells</Col> Role.",
+    "order": 116,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Christmas_12Deaths_Rank5",
+    "variant": 1,
+    "title": "FIVE GOLD RINGS!",
+    "hud_description": "Reach Weapon Tier <col: Yellow>5</col>",
+    "long_description": "Reach Weapon Tier <col: Yellow>5</col>\n\nCompleting Daily Activities gains you progress towards the <Col: Red>Slay Bells</Col> Role.",
+    "order": 117,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Christmas_12Deaths_CompleteMatches",
+    "variant": 1,
+    "title": "12 Deaths - Complete Event",
+    "hud_description": "Complete <col: Yellow>3</col> Matches",
+    "long_description": "Complete <col: Yellow>3</col> Matches\n\nCompleting Daily Activities gains you progress towards the <Col: Red>Slay Bells</Col> Role.",
+    "order": 118,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Survival_Kills_Rifles",
+    "variant": 1,
+    "title": "RIOT Rifle Kills",
+    "hud_description": "Kill <col: Yellow>5</col> Enemies with Rifles.",
+    "long_description": "Kill <col: Yellow>5</col> Enemies with Rifles.\n\nAwards a choice of weapons with a 5-Day Lease.",
+    "order": 119,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Survival_Kills_LMGs",
+    "variant": 1,
+    "title": "RIOT LMG Kills",
+    "hud_description": "Kill <col: Yellow>5</col> Enemies with LMGs.",
+    "long_description": "Kill <col: Yellow>5</col> Enemies with LMGs.\n\nAwards a choice of weapons with a 5-Day Lease.",
+    "order": 120,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Survival_Kills_SMGS",
+    "variant": 1,
+    "title": "RIOT SMG Kills",
+    "hud_description": "Kill <col: Yellow>5</col> Enemies with SMGs.",
+    "long_description": "Kill <col: Yellow>5</col> Enemies with SMGs.\n\nAwards a choice of weapons with a 5-Day Lease.",
+    "order": 121,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Survival_Kills_Shotguns",
+    "variant": 1,
+    "title": "RIOT Shotgun Kills",
+    "hud_description": "Kill <col: Yellow>5</col> Enemies with Shotguns.",
+    "long_description": "Kill <col: Yellow>5</col> Enemies with Shotguns.\n\nAwards a choice of weapons with a 5-Day Lease.",
+    "order": 122,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Survival_Kills_AssaultRifles",
+    "variant": 1,
+    "title": "RIOT AR Kills",
+    "hud_description": "Kill <col: Yellow>5</col> Enemies with Assault Rifles.",
+    "long_description": "Kill <col: Yellow>5</col> Enemies with Assault Rifles.\n\nAwards a choice of weapons with a 5-Day Lease.",
+    "order": 123,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Survival_Kills_SniperRifles",
+    "variant": 1,
+    "title": "RIOT Sniper Kills",
+    "hud_description": "Kill <col: Yellow>5</col> Enemies with High Velocity Rifles.",
+    "long_description": "Kill <col: Yellow>5</col> Enemies with High Velocity Rifles.\n\nAwards a choice of weapons with a 5-Day Lease.",
+    "order": 124,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Survival_Kills",
+    "variant": 1,
+    "title": "RIOT Kill Enemies",
+    "hud_description": "Kill <col: Yellow>10</col> Enemies.",
+    "long_description": "Kill <col: Yellow>10</col> Enemies.",
+    "order": 125,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Survival_MatchesCompleted",
+    "variant": 1,
+    "title": "RIOT Complete Matches",
+    "hud_description": "Complete <col: Yellow>3</col> Matches",
+    "long_description": "Complete <col: Yellow>3</col> Matches",
+    "order": 126,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Rare_KillScout_ISSR-B",
+    "variant": 1,
+    "title": "A Final Request",
+    "hud_description": "Kill <col: Yellow>15</col> Enforcers with an N-HVR 243",
+    "long_description": "Simeone has got many enemies, grab the tools we provided you with and take out some of that enforcer scum patrolling our streets. Do well and I'll make sure Simeone knows about the things you do for him. <col: Yellow>Kill 15 Enforcers</col> with a <col: Yellow>N-HVR 243 'Scout'.</col>",
+    "order": 127,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Rare_KillScout_ISSR-B",
+    "variant": 2,
+    "title": "Shipment Of Goods",
+    "hud_description": "Kill <col: Yellow>15</col> Criminals with an N-HVR 243",
+    "long_description": "A new shipment of guns came in not long ago. Show me you can handle yourself on these streets and I'll provide you with the goods. <col: Yellow>Kill 15 Criminals</col> with a <col: Yellow>N-HVR 243 'Scout'.</col>",
+    "order": 128,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Rare_KillM9_ISSR-A",
+    "variant": 1,
+    "title": "For Old Times' Sake",
+    "hud_description": "Kill <col: Yellow>15</col> Criminals with an Joker M9",
+    "long_description": "Help me relive the days when I had to make do with now-outdated standard issue pieces. <col: Yellow>Eliminate 15 Criminals using my beloved Joker M9.</col> Make this old man proud.",
+    "order": 129,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "Rare_KillM9_ISSR-A",
+    "variant": 2,
+    "title": "Old Dog New Tricks",
+    "hud_description": "Kill <col: Yellow>15</col> Enforcers with an Joker M9",
+    "long_description": "Do me a favor - grab your M9 and <col: Yellow>mow down the 'Forcer scum</col> trying to start shit on our turf.",
+    "order": 130,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "PvP_EMPHits",
+    "variant": 1,
+    "title": "Noise Complaint",
+    "hud_description": "Successfully disable <col: Yellow>5</col> Criminal Vehicles using an EMP Grenade.",
+    "long_description": "This one is just personal. I'm not a fan of the garbage these Crims are playing from their car stereos. Fry the electronics in <col: Yellow>5 cars</col> with a pulse from an EMP Grenade.",
+    "order": 131,
+    "source": "DailyActivityContacts.INT"
+  },
+  {
+    "id": "PvP_EMPHits",
+    "variant": 2,
+    "title": "Lights Out",
+    "hud_description": "Successfully disable <col: Yellow>5</col> Enforcer Vehicles using an EMP Grenade.",
+    "long_description": "Go have some fun - disable <col: Yellow>5 Enforcer Vehicles using an EMP</col> Grenade and watch them lose their shit with all their fancy tech destroyed.",
+    "order": 132,
+    "source": "DailyActivityContacts.INT"
+  }
+]
