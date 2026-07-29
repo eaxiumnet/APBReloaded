@@ -1,0 +1,22 @@
+{
+  "package": "VFX_WaterfrontSleepers",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\VFX\\Props\\WaterfrontDistrict\\VFX_WaterfrontSleepers.upk",
+  "district": "Waterfront",
+  "meshes": [
+    {
+      "mesh": "WaterfrontSleepers_Damage1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "WaterfrontSleepers_Damage_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|waterfrontsleepers_damage_mat": [
+      "WaterfrontSleepers"
+    ]
+  }
+}

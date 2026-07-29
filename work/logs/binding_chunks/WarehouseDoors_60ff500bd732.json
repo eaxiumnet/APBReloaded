@@ -1,0 +1,22 @@
+{
+  "package": "WarehouseDoors",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\WaterfrontDistrict\\PropMaterials\\WarehouseDoors.upk",
+  "district": "Waterfront",
+  "meshes": [
+    {
+      "mesh": "WarehouseDoors",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "WarehouseDoors_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|warehousedoors_mat": [
+      "WarehouseDoors"
+    ]
+  }
+}

@@ -1,0 +1,117 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: WaterfrontDistrict/Roads/WaterfrontDistrict_TILE_001_000_BLOCK_500_750ROADS_Package.upk Ver: 564/33 Engine: 3908 Names: 24 Exports: 4 Imports: 8 Game: 80001D
+Loading StaticMesh3 Road_Tile_001_000_Block_500_750_000000000000009a_LOD_0 from package WaterfrontDistrict/Roads/WaterfrontDistrict_TILE_001_000_BLOCK_500_750ROADS_Package.upk
+BoolProperty: unknown UStaticMesh3 m_bRequiresCollisionData
+BoolProperty: unknown UStaticMesh3 m_bDiscardCPURenderData
+Loading package: MaterialDatabase/TerrainMaterials/Terrain.upk Ver: 564/33 Engine: 3908 Names: 236 Exports: 449 Imports: 50 Game: 80001D
+Loading StaticMesh3 Road_Tile_001_000_Block_500_750_000000000000009a_LOD_1 from package WaterfrontDistrict/Roads/WaterfrontDistrict_TILE_001_000_BLOCK_500_750ROADS_Package.upk
+Loading Material3 RailwayTrack from package MaterialDatabase/TerrainMaterials/Terrain.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 Railway_Track_01 from package MaterialDatabase/TerrainMaterials/Terrain.upk
+Loading package: MaterialDatabase/GenericMaterials/Shared_Maps.upk Ver: 564/33 Engine: 3908 Names: 128 Exports: 50 Imports: 15 Game: 80001D
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 Railway_Gravel_01 from package MaterialDatabase/TerrainMaterials/Terrain.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Texture2D Metal_Generic_01 from package MaterialDatabase/TerrainMaterials/Terrain.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D StormDrainMask from package MaterialDatabase/TerrainMaterials/Terrain.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Stones_001_Norm from package MaterialDatabase/TerrainMaterials/Terrain.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D RailwaySleepers_01 from package MaterialDatabase/TerrainMaterials/Terrain.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D RailwaySleepers_01_Norm from package MaterialDatabase/TerrainMaterials/Terrain.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D Stones_002_Norm from package MaterialDatabase/TerrainMaterials/Terrain.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D TerrainMask01 from package MaterialDatabase/TerrainMaterials/Terrain.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D DirtOverlay_01 from package MaterialDatabase/GenericMaterials/Shared_Maps.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Stones_001_DiffSpec from package MaterialDatabase/TerrainMaterials/Terrain.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Stones_002_DiffSpec from package MaterialDatabase/TerrainMaterials/Terrain.upk
+ByteProperty: unknown UTexture2D LODCategory
+BoolProperty: unknown UMaterialExpressionTextureSample bRealtimePreview
+Loading Texture2D Stones_001_Alpha from package MaterialDatabase/TerrainMaterials/Terrain.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D lichen_001 from package MaterialDatabase/TerrainMaterials/Terrain.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 494 allocs, 7.44 MBytes serialized in 139 calls.
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: Road_Tile_001_000_Block_500_750_000000000000009a_LOD_0
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-719.66, Y=627.154, Z=-0.130851 }
+        BoxExtent = { X=3768.92, Y=9578.56, Z=7.50069 }
+        SphereRadius = 10235.3
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[3] =
+            {
+                Sections[0] = { Material=Material3'RailwayTrack', FirstIndex=0, NumFaces=210 }
+                Sections[1] = { Material=Material3'Railway_Track_01', FirstIndex=630, NumFaces=105 }
+                Sections[2] = { Material=Material3'Railway_Gravel_01', FirstIndex=945, NumFaces=140 }
+            }
+            NumVerts = 962
+            IndexCount = 1365
+            NumTexCoords = 3
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: Road_Tile_001_000_Block_500_750_000000000000009a_LOD_1
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-719.66, Y=627.154, Z=-0.130851 }
+        BoxExtent = { X=3768.92, Y=9578.56, Z=7.50069 }
+        SphereRadius = 10235.3
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[3] =
+            {
+                Sections[0] = { Material=Material3'RailwayTrack', FirstIndex=0, NumFaces=210 }
+                Sections[1] = { Material=Material3'Railway_Track_01', FirstIndex=630, NumFaces=105 }
+                Sections[2] = { Material=Material3'Railway_Gravel_01', FirstIndex=945, NumFaces=140 }
+            }
+            NumVerts = 962
+            IndexCount = 1365
+            NumTexCoords = 3
+        }
+    }
+    LodCount = 1

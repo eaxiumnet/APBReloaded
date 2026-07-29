@@ -1,0 +1,145 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.0 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/WaterfrontDistrict/PropMaterials/BridgeCars.upk Ver: 564/33 Engine: 3908 Names: 107 Exports: 29 Imports: 19 Game: 80001D
+Loading Material3 BridgeCars_Mat from package MaterialDatabase/WaterfrontDistrict/PropMaterials/BridgeCars.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading StaticMesh3 testBridgeModel from package MaterialDatabase/WaterfrontDistrict/PropMaterials/BridgeCars.upk
+Loading Texture2D CarsLine from package MaterialDatabase/WaterfrontDistrict/PropMaterials/BridgeCars.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D CarsLine-Emis from package MaterialDatabase/WaterfrontDistrict/PropMaterials/BridgeCars.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 122 allocs, 0.77 MBytes serialized in 20 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: BridgeCars_Mat
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[2] = { Texture2D'CarsLine-Emis', Texture2D'CarsLine' }
+    Expressions[21] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'BridgeCars_Mat.MaterialExpressionTextureSample_0'
+        Expressions[3] = MaterialExpressionTextureSample'BridgeCars_Mat.MaterialExpressionTextureSample_1'
+        Expressions[7] = MaterialExpressionVectorParameter'BridgeCars_Mat.MaterialExpressionVectorParameter_0'
+        Expressions[12] = MaterialExpressionTextureSample'BridgeCars_Mat.MaterialExpressionTextureSample_3'
+        Expressions[14] = MaterialExpressionTextureSample'BridgeCars_Mat.MaterialExpressionTextureSample_5'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[1] =
+    {
+        CollectedVectorParameters[0] =
+        {
+            Value = { R=0, G=0, B=0, A=0 }
+            Name = None
+            Group = None
+        }
+    }
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'CarsLine' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'CarsLine-Emis' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_3
+ { Texture=Texture2D'CarsLine' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_5
+ { Texture=Texture2D'CarsLine-Emis' }
+
+Object info:
+============
+ClassName: MaterialExpressionVectorParameter ObjectName: MaterialExpressionVectorParameter_0
+    DefaultValue = { R=0, G=0, B=0, A=0 }
+    ParameterName = None
+    Group = None
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: testBridgeModel
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-1426.91, Y=1331.72, Z=444.966 }
+        BoxExtent = { X=54518.8, Y=54837.5, Z=2854.52 }
+        SphereRadius = 77354.3
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[2] =
+            {
+                Sections[0] = { Material=Material3'BridgeCars_Mat', FirstIndex=0, NumFaces=28 }
+                Sections[1] = { Material=None, FirstIndex=0, NumFaces=0 }
+            }
+            NumVerts = 60
+            IndexCount = 84
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: Texture2D ObjectName: CarsLine
+    SizeX = 1024
+    SizeY = 128
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: CarsLine-Emis
+    SizeX = 1024
+    SizeY = 128
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 

@@ -1,0 +1,2584 @@
+{
+  "package": "FinancialDistrict_FinancialDistrict_Block32_Package",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\FinancialDistrict\\Buildings\\FinancialDistrict_FinancialDistrict_Block32_Package.UPK",
+  "district": "Financial",
+  "meshes": [
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0001_LOD_0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "PaveSlab01",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "Brick_Burnished_Beige_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "Conc_PARENT_Baked",
+          "material_class": "Material3"
+        },
+        {
+          "index": 3,
+          "material": "Granite_Square2_Grey",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0001_LOD_1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "PaveSlab01",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "Brick_Burnished_Beige_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "Conc_PARENT_Baked",
+          "material_class": "Material3"
+        },
+        {
+          "index": 3,
+          "material": "Granite_Square2_Grey",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0001_LOD_2",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Brick_Burnished_Beige_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Conc_Grey",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0001_LOD_3",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0001_VertexLit_LOD_0",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0002_LOD_0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Conc_Grey",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Brick_Burnished_Brown_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "Metal_PARENT_Baked",
+          "material_class": "Material3"
+        },
+        {
+          "index": 3,
+          "material": "Pipe",
+          "material_class": "Material3"
+        },
+        {
+          "index": 4,
+          "material": "chainlinkfence_BulletAndGrenades",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0002_LOD_1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Conc_Grey",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Brick_Burnished_Brown_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "chainlinkfence_BulletAndGrenades",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0002_LOD_3",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0002_VertexLit_LOD_0",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0003_LOD_0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Stucco_M01_White",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Brick_Burnished_Beige_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "Conc_Grey",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0003_LOD_1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Stucco_M01_White",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Brick_Burnished_Beige_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "Conc_Grey",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 3,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0003_LOD_2",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Brick_Burnished_Beige_NG",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0003_LOD_3",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0003_VertexLit_LOD_0",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0004_LOD_0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Granite_Square2_Grey",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Stucco_M01_White",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "PaveSlab01",
+          "material_class": "Material3"
+        },
+        {
+          "index": 3,
+          "material": "PaintedMetal_White",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 4,
+          "material": "Conc_Grey",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 5,
+          "material": "Glass_Transparent_DirtyNoReflection_Exterior",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0004_LOD_1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Granite_Square2_Grey",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Stucco_M01_White",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "PaveSlab01",
+          "material_class": "Material3"
+        },
+        {
+          "index": 3,
+          "material": "PaintedMetal_White",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 4,
+          "material": "Glass_Transparent_DirtyNoReflection_Exterior",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0004_LOD_3",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0004_VertexLit_LOD_0",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0005_LOD_0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "PaintedMetal_White",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Conc_Grey",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "Glass_Transparent_DirtyNoReflection_Exterior",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0005_LOD_1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "PaintedMetal_White",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Glass_Transparent_DirtyNoReflection_Exterior",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0005_LOD_3",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0005_VertexLit_LOD_0",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0006_LOD_0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "PaveSlab01",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "Brick_Burnished_Grey2_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "Conc_PARENT_Baked",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0006_LOD_1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "PaveSlab01",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "Brick_Burnished_Grey2_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "Conc_PARENT_Baked",
+          "material_class": "Material3"
+        },
+        {
+          "index": 3,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0006_LOD_2",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Brick_Burnished_Grey2_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Conc_PARENT_Baked",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0006_VertexLit_LOD_0",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0007_LOD_0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Stucco_M01_White",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Brick_Burnished_Beige_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "Conc_Grey",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 3,
+          "material": "Granite_Square2_Grey",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0007_LOD_1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Stucco_M01_White",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Brick_Burnished_Beige_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "Conc_Grey",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 3,
+          "material": "Granite_Square2_Grey",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 4,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0007_LOD_2",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Stucco_M01_White",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Brick_Burnished_Beige_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "Conc_Grey",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0007_LOD_3",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0007_VertexLit_LOD_0",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0008_LOD_0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "PaveSlab01",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "Metal_M02_Grey",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "chainlinkfence_BulletsOnly",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0008_LOD_1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Metal_M02_Grey",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "chainlinkfence_BulletsOnly",
+          "material_class": "Material3"
+        },
+        {
+          "index": 2,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0008_LOD_3",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0008_VertexLit_LOD_0",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0009_LOD_0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Brick_Burnished_Beige_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Grass_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 2,
+          "material": "Stucco_M01_White",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0009_LOD_1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Brick_Burnished_Beige_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Grass_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0009_LOD_3",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0009_VertexLit_LOD_0",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0010_LOD_0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Stucco_M01_White",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Conc_Grey",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0010_LOD_1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Stucco_M01_White",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Conc_Grey",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0010_VertexLit_LOD_0",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0011_LOD_0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Metal_M02_Grey",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "chainlinkfence_BulletsOnly",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0011_LOD_3",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Generic_0011_VertexLit_LOD_0",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_High-street (restaurant) (MC)_0001_LOD_0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Conc_Grey",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Stone_RectVSmall_Red",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "Stucco_M01_White",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 3,
+          "material": "Brick_Burnished_Beige_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 4,
+          "material": "Balcony_Grey",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 5,
+          "material": "PaveSlab01",
+          "material_class": "Material3"
+        },
+        {
+          "index": 6,
+          "material": "Stucco_M01_White_Graffiti",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 7,
+          "material": "Stone_RectVSmall_Red_Graffiti",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_High-street (restaurant) (MC)_0001_LOD_1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Conc_Grey",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Stone_RectVSmall_Red",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "Stucco_M01_White",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 3,
+          "material": "Brick_Burnished_Beige_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 4,
+          "material": "Balcony_Grey",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 5,
+          "material": "PaveSlab01",
+          "material_class": "Material3"
+        },
+        {
+          "index": 6,
+          "material": "Restaurant_PizzaJoint_Traditional_MAT",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 7,
+          "material": "Restaurant_Diner_CityDiner_MAT",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 8,
+          "material": "Stucco_M01_White_Graffiti",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 9,
+          "material": "Stone_RectVSmall_Red_Graffiti",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 10,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 11,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_High-street (restaurant) (MC)_0001_LOD_2",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Conc_Grey",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Stucco_M01_White",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "Brick_Burnished_Beige_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 3,
+          "material": "Balcony_Grey",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_High-street (restaurant) (MC)_0001_LOD_3",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_High-street (restaurant) (MC)_0001_VertexLit_LOD_0",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_High-street (shop) (MC)_0001_LOD_0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Brick_Burnished_GreyLight_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Grass_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 2,
+          "material": "Conc_PARENT_Baked",
+          "material_class": "Material3"
+        },
+        {
+          "index": 3,
+          "material": "PaveSlab01",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_High-street (shop) (MC)_0001_LOD_1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Brick_Burnished_GreyLight_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Grass_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 2,
+          "material": "PaveSlab01",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_High-street (shop) (MC)_0001_LOD_2",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Brick_Burnished_GreyLight_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Grass_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_High-street (shop) (MC)_0001_LOD_3",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_High-street (shop) (MC)_0001_VertexLit_LOD_0",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_High-street (shop) (MC)_0002_LOD_0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Brick_Burnished_GreyLight_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Conc_Grey",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "PaveSlab01",
+          "material_class": "Material3"
+        },
+        {
+          "index": 3,
+          "material": "Metal_Brushed_Silver",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 4,
+          "material": "Glass_4P_Plain",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 5,
+          "material": "Balcony_Blue",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 7,
+          "material": "Brick_Burnished_GreyLight_NG_Graffiti",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_High-street (shop) (MC)_0002_LOD_1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Brick_Burnished_GreyLight_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Conc_Grey",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "PaveSlab01",
+          "material_class": "Material3"
+        },
+        {
+          "index": 3,
+          "material": "Metal_Brushed_Silver",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 4,
+          "material": "Glass_4P_Plain",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 5,
+          "material": "Balcony_Blue",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 6,
+          "material": "Brick_Burnished_GreyLight_NG_Graffiti",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 7,
+          "material": "Lights_Wall_Roof",
+          "material_class": "Material3"
+        },
+        {
+          "index": 8,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        },
+        {
+          "index": 9,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_High-street (shop) (MC)_0002_LOD_2",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Brick_Burnished_GreyLight_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Balcony_Blue",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "Glass_4P_Plain",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 3,
+          "material": "Conc_Grey",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_High-street (shop) (MC)_0002_LOD_3",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_High-street (shop) (MC)_0002_VertexLit_LOD_0",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_High-street (shop) (MC)_0003_LOD_0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Brick_Burnished_GreyLight_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Grass_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 2,
+          "material": "Conc_PARENT_Baked",
+          "material_class": "Material3"
+        },
+        {
+          "index": 3,
+          "material": "PaveSlab01",
+          "material_class": "Material3"
+        },
+        {
+          "index": 4,
+          "material": "Roof_CorrugatedMetal_GreyOrange",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 5,
+          "material": "Brick_Burnished_GreyLight_NG_Graffiti",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_High-street (shop) (MC)_0003_LOD_1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Brick_Burnished_GreyLight_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Grass_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 2,
+          "material": "Conc_PARENT_Baked",
+          "material_class": "Material3"
+        },
+        {
+          "index": 3,
+          "material": "PaveSlab01",
+          "material_class": "Material3"
+        },
+        {
+          "index": 4,
+          "material": "Roof_CorrugatedMetal_GreyOrange",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 5,
+          "material": "Brick_Burnished_GreyLight_NG_Graffiti",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 6,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_High-street (shop) (MC)_0003_LOD_2",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Brick_Burnished_GreyLight_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Conc_GreyLight",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_High-street (shop) (MC)_0003_LOD_3",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_High-street (shop) (MC)_0003_VertexLit_LOD_0",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0001_LOD_0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "RainScreen_Grey",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Conc_GreyLight",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "BandH_Rainscreen_Grey_01",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 3,
+          "material": "Granite_Square2_Grey",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 4,
+          "material": "Stucco_M01_White",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 5,
+          "material": "Grass_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0001_LOD_1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "RainScreen_Grey",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Granite_Square2_Grey",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "Stucco_M01_White",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 3,
+          "material": "Grass_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 4,
+          "material": "Conc_GreyLight",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 5,
+          "material": "BandH_Rainscreen_Grey_01",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 6,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0001_LOD_2",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "RainScreen_Grey",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "BandH_Rainscreen_Grey_01",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "Conc_GreyLight",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0001_LOD_3",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0001_VertexLit_LOD_0",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0002_LOD_0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Brick_Burnished_Baked",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "Conc_PARENT_Baked",
+          "material_class": "Material3"
+        },
+        {
+          "index": 2,
+          "material": "BandH_Rainscreen_Grey_01",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0002_LOD_1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Brick_Burnished_Baked",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "Conc_PARENT_Baked",
+          "material_class": "Material3"
+        },
+        {
+          "index": 2,
+          "material": "BandH_Rainscreen_Grey_01",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 3,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0002_LOD_2",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Brick_Burnished_Grey_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Conc_GreyLight",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "BandH_Rainscreen_Grey_01",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0002_LOD_3",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0002_VertexLit_LOD_0",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0003_LOD_0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Stucco_M01_White",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "RainScreen_Grey",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "BandH_Rainscreen_Grey_01",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 3,
+          "material": "Granite_Square2_Grey",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 4,
+          "material": "PaveSlab01",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0003_LOD_1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Granite_Square2_Grey",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Stucco_M01_White",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "PaveSlab01",
+          "material_class": "Material3"
+        },
+        {
+          "index": 3,
+          "material": "RainScreen_Grey",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 4,
+          "material": "BandH_Rainscreen_Grey_01",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 5,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0003_LOD_2",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "RainScreen_Grey",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Stucco_M01_White",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "BandH_Rainscreen_Grey_01",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0003_LOD_3",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0003_VertexLit_LOD_0",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0004_LOD_0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Brick_Burnished_Brown_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Conc_GreyDark",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "PaveSlab01",
+          "material_class": "Material3"
+        },
+        {
+          "index": 3,
+          "material": "RainScreen_SilverDark",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 4,
+          "material": "Glass_4P_NoInterior_Black",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 5,
+          "material": "Glass_4P_Brown",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0004_LOD_1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Brick_Burnished_Brown_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Conc_GreyDark",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "PaveSlab01",
+          "material_class": "Material3"
+        },
+        {
+          "index": 3,
+          "material": "RainScreen_SilverDark",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 4,
+          "material": "Glass_4P_NoInterior_Black",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 5,
+          "material": "Glass_4P_Brown",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 6,
+          "material": "Lights_Wall_Roof",
+          "material_class": "Material3"
+        },
+        {
+          "index": 7,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0004_LOD_2",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Brick_Burnished_Brown_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Conc_GreyDark",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "RainScreen_SilverDark",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 3,
+          "material": "Glass_4P_NoInterior_Black",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 4,
+          "material": "Glass_4P_Brown",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0004_LOD_3",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0004_VertexLit_LOD_0",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0005_LOD_0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Brick_Burnished_Beige_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Conc_Grey",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "Stucco_M01_White",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 3,
+          "material": "PaveSlab01",
+          "material_class": "Material3"
+        },
+        {
+          "index": 4,
+          "material": "Grass_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 5,
+          "material": "Glass_4P_Plain",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 6,
+          "material": "Stucco_M01_White_Graffiti",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 7,
+          "material": "Stucco_M01_White_Graffiti",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0005_LOD_1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Brick_Burnished_Beige_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Stucco_M01_White",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "PaveSlab01",
+          "material_class": "Material3"
+        },
+        {
+          "index": 3,
+          "material": "Grass_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 4,
+          "material": "Conc_Grey",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 5,
+          "material": "Glass_4P_Plain",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 6,
+          "material": "Stucco_M01_White_Graffiti",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 7,
+          "material": "Stucco_M01_White_Graffiti",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 8,
+          "material": "Lights_Wall_Roof",
+          "material_class": "Material3"
+        },
+        {
+          "index": 9,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0005_LOD_2",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Brick_Burnished_Beige_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Conc_Grey",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "Glass_4P_Plain",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0005_LOD_3",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0005_VertexLit_LOD_0",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0006_LOD_0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Brick_Burnished_Brown_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Conc_PARENT_Baked",
+          "material_class": "Material3"
+        },
+        {
+          "index": 2,
+          "material": "PaveSlab01",
+          "material_class": "Material3"
+        },
+        {
+          "index": 3,
+          "material": "RainScreen_SilverDark",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 4,
+          "material": "Glass_4P_Brown",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 5,
+          "material": "Metal_M02_Grey",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 6,
+          "material": "Brick_Burnished_Brown_NG_Graffiti",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 7,
+          "material": "Brick_Burnished_Brown_NG_Graffiti",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 8,
+          "material": "chainlinkfence_BulletsOnly",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0006_LOD_1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Brick_Burnished_Brown_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Conc_GreyDark",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "PaveSlab01",
+          "material_class": "Material3"
+        },
+        {
+          "index": 3,
+          "material": "RainScreen_SilverDark",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 4,
+          "material": "Glass_4P_Brown",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 5,
+          "material": "Metal_M02_Grey",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 6,
+          "material": "Brick_Burnished_Brown_NG_Graffiti",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 7,
+          "material": "Brick_Burnished_Brown_NG_Graffiti",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 8,
+          "material": "Lights_Wall_Roof",
+          "material_class": "Material3"
+        },
+        {
+          "index": 9,
+          "material": "chainlinkfence_BulletsOnly",
+          "material_class": "Material3"
+        },
+        {
+          "index": 10,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0006_LOD_2",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Brick_Burnished_Brown_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Conc_GreyDark",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "Metal_M02_Grey",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 3,
+          "material": "RainScreen_SilverDark",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 4,
+          "material": "Glass_4P_Brown",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 5,
+          "material": "chainlinkfence_BulletsOnly",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0006_LOD_3",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0006_VertexLit_LOD_0",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0007_LOD_0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Stucco_M01_White",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Conc_PARENT_Baked",
+          "material_class": "Material3"
+        },
+        {
+          "index": 2,
+          "material": "Stone_RectVSmall_Red",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 3,
+          "material": "Brick_Burnished_Beige_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 4,
+          "material": "PaveSlab01",
+          "material_class": "Material3"
+        },
+        {
+          "index": 5,
+          "material": "Balcony_Grey",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 6,
+          "material": "Stucco_M01_White_Graffiti",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0007_LOD_1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Stucco_M01_White",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Conc_PARENT_Baked",
+          "material_class": "Material3"
+        },
+        {
+          "index": 2,
+          "material": "Stone_RectVSmall_Red",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 3,
+          "material": "Brick_Burnished_Beige_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 4,
+          "material": "PaveSlab01",
+          "material_class": "Material3"
+        },
+        {
+          "index": 5,
+          "material": "Balcony_Grey",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 6,
+          "material": "Shop_HairSalon_Stylish2_MAT",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 7,
+          "material": "Stucco_M01_White_Graffiti",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 8,
+          "material": "Lights_Wall_Roof",
+          "material_class": "Material3"
+        },
+        {
+          "index": 9,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        },
+        {
+          "index": 10,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0007_LOD_2",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Stucco_M01_White",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Brick_Burnished_Beige_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "Balcony_Grey",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0007_LOD_3",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0007_VertexLit_LOD_0",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0008_LOD_0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Stucco_M01_White",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Conc_PARENT_Baked",
+          "material_class": "Material3"
+        },
+        {
+          "index": 2,
+          "material": "PaveSlab01",
+          "material_class": "Material3"
+        },
+        {
+          "index": 3,
+          "material": "Brick_Burnished_Beige_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 4,
+          "material": "Glass_4P_Plain",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 6,
+          "material": "Stucco_M01_White_Graffiti",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 7,
+          "material": "Stucco_M01_White_Graffiti",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0008_LOD_1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Stucco_M01_White",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Conc_PARENT_Baked",
+          "material_class": "Material3"
+        },
+        {
+          "index": 2,
+          "material": "PaveSlab01",
+          "material_class": "Material3"
+        },
+        {
+          "index": 3,
+          "material": "Brick_Burnished_Beige_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 4,
+          "material": "Glass_4P_Plain",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 5,
+          "material": "Stucco_M01_White_Graffiti",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 6,
+          "material": "Stucco_M01_White_Graffiti",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 7,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0008_LOD_2",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Brick_Burnished_Beige_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Glass_4P_Plain",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 3,
+          "material": "Conc_Grey",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0008_LOD_3",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0008_VertexLit_LOD_0",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0009_LOD_0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Brick_Burnished_GreyLight_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Conc_PARENT_Baked",
+          "material_class": "Material3"
+        },
+        {
+          "index": 2,
+          "material": "Grass_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 3,
+          "material": "PaveSlab01",
+          "material_class": "Material3"
+        },
+        {
+          "index": 5,
+          "material": "Brick_Burnished_GreyLight_NG_Graffiti",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0009_LOD_1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Brick_Burnished_GreyLight_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Conc_PARENT_Baked",
+          "material_class": "Material3"
+        },
+        {
+          "index": 2,
+          "material": "Grass_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 3,
+          "material": "PaveSlab01",
+          "material_class": "Material3"
+        },
+        {
+          "index": 5,
+          "material": "Brick_Burnished_GreyLight_NG_Graffiti",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 6,
+          "material": "Lights_Wall_Roof",
+          "material_class": "Material3"
+        },
+        {
+          "index": 7,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0009_LOD_2",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Brick_Burnished_GreyLight_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Conc_Grey",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0009_LOD_3",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0009_VertexLit_LOD_0",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0010_LOD_0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "PaveSlab01",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "Brick_Burnished_Brown_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "Conc_GreyDark",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 3,
+          "material": "Glass_4P_Brown",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 4,
+          "material": "RainScreen_SilverDark",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0010_LOD_1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "PaveSlab01",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "Brick_Burnished_Brown_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "Conc_GreyDark",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 3,
+          "material": "Glass_4P_Brown",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 4,
+          "material": "RainScreen_SilverDark",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 5,
+          "material": "FD_OWT_Pawnshop4_MAT",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 6,
+          "material": "Lights_Wall_Roof",
+          "material_class": "Material3"
+        },
+        {
+          "index": 7,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0010_LOD_2",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Brick_Burnished_Brown_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Conc_GreyDark",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "Glass_4P_Brown",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 3,
+          "material": "RainScreen_SilverDark",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0010_LOD_3",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0010_VertexLit_LOD_0",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0011_LOD_0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "RainScreen_Grey",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Conc_PARENT_Baked",
+          "material_class": "Material3"
+        },
+        {
+          "index": 2,
+          "material": "Brick_Burnished_Grey_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 3,
+          "material": "BandH_Rainscreen_Grey_01",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 4,
+          "material": "Conc_GreyLight_Graffiti",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 5,
+          "material": "Conc_GreyLight_Graffiti",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0011_LOD_1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "RainScreen_Grey",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Conc_PARENT_Baked",
+          "material_class": "Material3"
+        },
+        {
+          "index": 2,
+          "material": "Brick_Burnished_Grey_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 3,
+          "material": "BandH_Rainscreen_Grey_01",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 4,
+          "material": "Conc_GreyLight_Graffiti",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 5,
+          "material": "Conc_GreyLight_Graffiti",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 6,
+          "material": "Lights_Wall_Roof",
+          "material_class": "Material3"
+        },
+        {
+          "index": 7,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        },
+        {
+          "index": 8,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0011_LOD_2",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "BandH_Rainscreen_Grey_01",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Conc_PARENT_Baked",
+          "material_class": "Material3"
+        },
+        {
+          "index": 2,
+          "material": "Brick_Burnished_Grey_NG",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0011_LOD_3",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0011_VertexLit_LOD_0",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0012_LOD_0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Conc_GreyDark",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Brick_Burnished_Brown_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "PaveSlab01",
+          "material_class": "Material3"
+        },
+        {
+          "index": 3,
+          "material": "RainScreen_SilverDark",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 4,
+          "material": "Glass_4P_Brown",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 5,
+          "material": "Brick_Burnished_Brown_NG_Graffiti",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0012_LOD_1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Conc_GreyDark",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Brick_Burnished_Brown_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "PaveSlab01",
+          "material_class": "Material3"
+        },
+        {
+          "index": 3,
+          "material": "RainScreen_SilverDark",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 4,
+          "material": "Glass_4P_Brown",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 5,
+          "material": "Brick_Burnished_Brown_NG_Graffiti",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 6,
+          "material": "Lights_Wall_Roof",
+          "material_class": "Material3"
+        },
+        {
+          "index": 7,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 8,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0012_LOD_2",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Brick_Burnished_Brown_NG",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Conc_GreyDark",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "RainScreen_SilverDark",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 3,
+          "material": "Glass_4P_Brown",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0012_LOD_3",
+      "raw_slots": []
+    },
+    {
+      "mesh": "FinancialDistrict_Block32_Residental (UC)_0012_VertexLit_LOD_0",
+      "raw_slots": []
+    }
+  ],
+  "material_loads": {
+    "material3|paveslab01": [
+      "PavingSlabs"
+    ],
+    "materialinstanceconstant|brick_burnished_beige_ng": [
+      "Brick_Large"
+    ],
+    "material3|conc_parent_baked": [
+      "Concrete"
+    ],
+    "materialinstanceconstant|granite_square2_grey": [
+      "WallTiles"
+    ],
+    "materialinstanceconstant|conc_grey": [
+      "Concrete"
+    ],
+    "materialinstanceconstant|brick_burnished_brown_ng": [
+      "Brick_Large"
+    ],
+    "material3|metal_parent_baked": [
+      "Metal"
+    ],
+    "material3|pipe": [
+      "Pipes"
+    ],
+    "material3|chainlinkfence_bulletandgrenades": [
+      "Fence"
+    ],
+    "materialinstanceconstant|stucco_m01_white": [
+      "Stucco"
+    ],
+    "material3|texturepagelod2_tpagea": [
+      "TexturePageLOD2_TPageA"
+    ],
+    "materialinstanceconstant|paintedmetal_white": [
+      "Metal"
+    ],
+    "materialinstanceconstant|glass_transparent_dirtynoreflection_exterior": [
+      "Glass_Dirty"
+    ],
+    "materialinstanceconstant|brick_burnished_grey2_ng": [
+      "Brick_Large"
+    ],
+    "materialinstanceconstant|metal_m02_grey": [
+      "Metal"
+    ],
+    "material3|chainlinkfence_bulletsonly": [
+      "Fence"
+    ],
+    "material3|grass_mat": [
+      "Grass"
+    ],
+    "materialinstanceconstant|stone_rectvsmall_red": [
+      "WallTiles"
+    ],
+    "materialinstanceconstant|balcony_grey": [
+      "Balcony"
+    ],
+    "materialinstanceconstant|stucco_m01_white_graffiti": [
+      "Stucco"
+    ],
+    "materialinstanceconstant|stone_rectvsmall_red_graffiti": [
+      "WallTiles"
+    ],
+    "materialinstanceconstant|restaurant_pizzajoint_traditional_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|restaurant_diner_citydiner_mat": [
+      "Signage"
+    ],
+    "material3|texturepagelod2_tpageb_mat": [
+      "TexturePageLOD2_TPageB"
+    ],
+    "materialinstanceconstant|brick_burnished_greylight_ng": [
+      "Brick_Large"
+    ],
+    "materialinstanceconstant|metal_brushed_silver": [
+      "Metal"
+    ],
+    "materialinstanceconstant|glass_4p_plain": [
+      "SkyscraperWindows"
+    ],
+    "materialinstanceconstant|balcony_blue": [
+      "Balcony"
+    ],
+    "materialinstanceconstant|brick_burnished_greylight_ng_graffiti": [
+      "Brick_Large"
+    ],
+    "material3|lights_wall_roof": [
+      "MidtownDistrict_Lights"
+    ],
+    "materialinstanceconstant|roof_corrugatedmetal_greyorange": [
+      "Roof_CorrugatedMetal"
+    ],
+    "materialinstanceconstant|conc_greylight": [
+      "Concrete"
+    ],
+    "materialinstanceconstant|rainscreen_grey": [
+      "RainScreen"
+    ],
+    "materialinstanceconstant|bandh_rainscreen_grey_01": [
+      "SkyscraperWindows"
+    ],
+    "material3|brick_burnished_baked": [
+      "Brick_Large"
+    ],
+    "materialinstanceconstant|brick_burnished_grey_ng": [
+      "Brick_Large"
+    ],
+    "materialinstanceconstant|conc_greydark": [
+      "Concrete"
+    ],
+    "materialinstanceconstant|rainscreen_silverdark": [
+      "RainScreen"
+    ],
+    "materialinstanceconstant|glass_4p_nointerior_black": [
+      "SkyscraperWindows"
+    ],
+    "materialinstanceconstant|glass_4p_brown": [
+      "SkyscraperWindows"
+    ],
+    "materialinstanceconstant|brick_burnished_brown_ng_graffiti": [
+      "Brick_Large"
+    ],
+    "materialinstanceconstant|shop_hairsalon_stylish2_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|fd_owt_pawnshop4_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|conc_greylight_graffiti": [
+      "Concrete"
+    ],
+    "materialinstanceconstant|brick_burnished_beige": [
+      "Brick_Large"
+    ],
+    "material3|walltile_parent": [
+      "WallTiles"
+    ],
+    "material3|conc_parent": [
+      "Concrete"
+    ],
+    "materialinstanceconstant|brick_burnished_brown": [
+      "Brick_Large"
+    ],
+    "material3|stucco_parent": [
+      "Stucco"
+    ],
+    "material3|paintedmetal_parent": [
+      "Metal"
+    ],
+    "material3|glass_transparent_dirtynoreflection_interior": [
+      "Glass_Dirty"
+    ],
+    "materialinstanceconstant|brick_burnished_grey2": [
+      "Brick_Large"
+    ],
+    "material3|metal_parent": [
+      "Metal"
+    ],
+    "material3|balcony_parent": [
+      "Balcony"
+    ],
+    "material3|signage_asian_fastfood_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|brick_burnished_greylight": [
+      "Brick_Large"
+    ],
+    "material3|metal_brushed_parent_doublesided": [
+      "Metal"
+    ],
+    "material3|windows_new_parent": [
+      "SkyscraperWindows"
+    ],
+    "material3|roof_corrugatedmetal_parent_oob": [
+      "Roof_CorrugatedMetal"
+    ],
+    "material3|rainscreen_parent": [
+      "RainScreen"
+    ],
+    "material3|windows_rainscreen_parent": [
+      "SkyscraperWindows"
+    ],
+    "materialinstanceconstant|brick_burnished_grey": [
+      "Brick_Large"
+    ],
+    "material3|glass_parent": [
+      "SkyscraperWindows"
+    ],
+    "material3|brick_burnished_parent": [
+      "Brick_Large"
+    ]
+  }
+}

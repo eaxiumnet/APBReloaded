@@ -1,0 +1,97 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block06.upk Ver: 564/33 Engine: 3908 Names: 91 Exports: 19 Imports: 15 Game: 80001D
+Loading Material3 SkyCity_mat from package MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block06.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading StaticMesh3 SkyCity from package MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block06.upk
+Loading Texture2D SkyCity_masks from package MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block06.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 81 allocs, 0.10 MBytes serialized in 4 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: SkyCity_mat
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[1] = { Texture2D'SkyCity_masks' }
+    Expressions[14] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'SkyCity_mat.MaterialExpressionTextureSample_0'
+        Expressions[7] = MaterialExpressionTextureSample'SkyCity_mat.MaterialExpressionTextureSample_2'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'SkyCity_masks' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_2
+ { Texture=Texture2D'SkyCity_masks' }
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: SkyCity
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=130498, Y=-155079, Z=6224.77 }
+        BoxExtent = { X=1410.88, Y=2036.91, Z=5391.21 }
+        SphereRadius = 5917.74
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'SkyCity_mat', FirstIndex=0, NumFaces=1515 }
+            }
+            NumVerts = 4878
+            IndexCount = 4545
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: Texture2D ObjectName: SkyCity_masks
+    SizeX = 64
+    SizeY = 64
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 6
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 

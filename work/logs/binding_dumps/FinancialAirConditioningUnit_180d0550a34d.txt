@@ -1,0 +1,113 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.0 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAirConditioningUnit.upk Ver: 564/33 Engine: 3908 Names: 96 Exports: 12 Imports: 10 Game: 80001D
+Loading Material3 FinancialAirConditioningUnit_Mat from package MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAirConditioningUnit.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Texture2D FinancialAirConditioningUnit_DiffSpec from package MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAirConditioningUnit.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FinancialAirConditioningUnit_Norm from package MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAirConditioningUnit.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D FinancialAirConditioningUnit_Opac from package MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAirConditioningUnit.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 105 allocs, 0.23 MBytes serialized in 7 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: FinancialAirConditioningUnit_Mat
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'FinancialAirConditioningUnit_Norm'
+        ReferencedTextures[1] = Texture2D'FinancialAirConditioningUnit_DiffSpec'
+        ReferencedTextures[2] = Texture2D'FinancialAirConditioningUnit_Opac'
+    }
+    Expressions[6] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'FinancialAirConditioningUnit_Mat.MaterialExpressionTextureSample_2'
+        Expressions[1] = MaterialExpressionTextureSample'FinancialAirConditioningUnit_Mat.MaterialExpressionTextureSample_3'
+        Expressions[5] = MaterialExpressionTextureSample'FinancialAirConditioningUnit_Mat.MaterialExpressionTextureSample_0'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'FinancialAirConditioningUnit_Opac' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_2
+ { Texture=Texture2D'FinancialAirConditioningUnit_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_3
+ { Texture=Texture2D'FinancialAirConditioningUnit_Norm' }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialAirConditioningUnit_DiffSpec
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialAirConditioningUnit_Norm
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialAirConditioningUnit_Opac
+    SizeX = 128
+    SizeY = 128
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 7
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 

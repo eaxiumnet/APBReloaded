@@ -1,0 +1,267 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCleats.upk Ver: 564/33 Engine: 3908 Names: 144 Exports: 32 Imports: 19 Game: 80001D
+Loading Material3 WaterfrontCleats_MAT from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCleats.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading StaticMesh3 WaterfrontCleats_Button from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCleats.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_3"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_3"
+Loading StaticMesh3 WaterfrontCleats_Curved from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCleats.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_2"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_2"
+Loading StaticMesh3 WaterfrontCleats_Hollow from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCleats.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_1"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_1"
+Loading StaticMesh3 WaterfrontCleats_HollowRope from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCleats.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_0"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_0"
+Loading Texture2D WaterfrontCleats_DiffSpec from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCleats.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D WaterfrontCleats_Norm from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCleats.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loaded in 0.0 sec, 202 allocs, 0.29 MBytes serialized in 6 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: WaterfrontCleats_MAT
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[2] = { Texture2D'WaterfrontCleats_Norm', Texture2D'WaterfrontCleats_DiffSpec' }
+    Expressions[3] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'WaterfrontCleats_MAT.MaterialExpressionTextureSample_2'
+        Expressions[2] = MaterialExpressionTextureSample'WaterfrontCleats_MAT.MaterialExpressionTextureSample_3'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_2
+ { Texture=Texture2D'WaterfrontCleats_Norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_3
+ { Texture=Texture2D'WaterfrontCleats_DiffSpec' }
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: WaterfrontCleats_Button
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-0.000152588, Y=0, Z=24.3745 }
+        BoxExtent = { X=34.0193, Y=34.0193, Z=24.3745 }
+        SphereRadius = 41.8502
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[2] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'WaterfrontCleats_MAT', FirstIndex=0, NumFaces=260 }
+            }
+            NumVerts = 502
+            IndexCount = 780
+            NumTexCoords = 1
+        }
+        Lods[1] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'WaterfrontCleats_MAT', FirstIndex=0, NumFaces=110 }
+            }
+            NumVerts = 242
+            IndexCount = 330
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 2
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: WaterfrontCleats_Curved
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=4.95911e-05, Y=0, Z=14.7534 }
+        BoxExtent = { X=43.9796, Y=15.8622, Z=14.7534 }
+        SphereRadius = 46.0401
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[2] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'WaterfrontCleats_MAT', FirstIndex=0, NumFaces=142 }
+            }
+            NumVerts = 308
+            IndexCount = 426
+            NumTexCoords = 1
+        }
+        Lods[1] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'WaterfrontCleats_MAT', FirstIndex=0, NumFaces=58 }
+            }
+            NumVerts = 166
+            IndexCount = 174
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 2
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: WaterfrontCleats_Hollow
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-0.00909996, Y=0, Z=6.0192 }
+        BoxExtent = { X=18.2028, Y=6.2594, Z=6.0192 }
+        SphereRadius = 18.9677
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[2] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'WaterfrontCleats_MAT', FirstIndex=0, NumFaces=130 }
+            }
+            NumVerts = 304
+            IndexCount = 390
+            NumTexCoords = 1
+        }
+        Lods[1] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'WaterfrontCleats_MAT', FirstIndex=0, NumFaces=52 }
+            }
+            NumVerts = 152
+            IndexCount = 156
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 2
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: WaterfrontCleats_HollowRope
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-0.00909996, Y=64.3669, Z=-141.926 }
+        BoxExtent = { X=18.2028, Y=70.8496, Z=153.965 }
+        SphereRadius = 169.19
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[2] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'WaterfrontCleats_MAT', FirstIndex=0, NumFaces=242 }
+            }
+            NumVerts = 476
+            IndexCount = 726
+            NumTexCoords = 1
+        }
+        Lods[1] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'WaterfrontCleats_MAT', FirstIndex=0, NumFaces=128 }
+            }
+            NumVerts = 300
+            IndexCount = 384
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 2
+
+Object info:
+============
+ClassName: Texture2D ObjectName: WaterfrontCleats_DiffSpec
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: WaterfrontCleats_Norm
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source = 

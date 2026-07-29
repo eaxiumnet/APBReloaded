@@ -1,0 +1,178 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.0 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/FinancialDistrict/PropMaterials/FinancialEscalator.upk Ver: 564/33 Engine: 3908 Names: 128 Exports: 18 Imports: 21 Game: 80001D
+Loading Material3 FinancialEscalator_MAT from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialEscalator.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading StaticMesh3 FinancialEscalator from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialEscalator.upk
+Loading package: MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk Ver: 564/33 Engine: 3908 Names: 153 Exports: 58 Imports: 26 Game: 80001D
+Loading Texture2D FinancialEscalator_DiffSpec from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialEscalator.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FinancialEscalator_Emis from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialEscalator.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FinancialEscalator_Norm from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialEscalator.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Material3 PropGlass from package MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk
+BoolProperty: unknown UMaterial3 bEnableShadowCasting
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading TextureCube3 SkyBlue from package MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk
+ByteProperty: unknown UTextureCube3 LODCategory
+Loading Texture2D Cube_L from package MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Cube_R from package MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Cube_F from package MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Cube_B from package MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Cube_T from package MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Cube_A from package MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 296 allocs, 2.54 MBytes serialized in 39 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: FinancialEscalator_MAT
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'FinancialEscalator_Norm'
+        ReferencedTextures[1] = Texture2D'FinancialEscalator_Emis'
+        ReferencedTextures[2] = Texture2D'FinancialEscalator_DiffSpec'
+    }
+    Expressions[6] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'FinancialEscalator_MAT.MaterialExpressionTextureSample_1'
+        Expressions[1] = MaterialExpressionTextureSample'FinancialEscalator_MAT.MaterialExpressionTextureSample_3'
+        Expressions[2] = MaterialExpressionTextureSample'FinancialEscalator_MAT.MaterialExpressionTextureSample_5'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'FinancialEscalator_Emis' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_3
+ { Texture=Texture2D'FinancialEscalator_Norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_5
+ { Texture=Texture2D'FinancialEscalator_DiffSpec' }
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialEscalator
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0.0123901, Y=-0.0131989, Z=255.422 }
+        BoxExtent = { X=475.767, Y=82.3002, Z=255.422 }
+        SphereRadius = 545.847
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[2] =
+    {
+        Lods[0] =
+        {
+            Sections[2] =
+            {
+                Sections[0] = { Material=Material3'FinancialEscalator_MAT', FirstIndex=0, NumFaces=415 }
+                Sections[1] = { Material=Material3'PropGlass', FirstIndex=1245, NumFaces=87 }
+            }
+            NumVerts = 1772
+            IndexCount = 1506
+            NumTexCoords = 1
+        }
+        Lods[1] =
+        {
+            Sections[2] =
+            {
+                Sections[0] = { Material=Material3'FinancialEscalator_MAT', FirstIndex=0, NumFaces=306 }
+                Sections[1] = { Material=Material3'PropGlass', FirstIndex=918, NumFaces=56 }
+            }
+            NumVerts = 1320
+            IndexCount = 1086
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 2
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialEscalator_DiffSpec
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialEscalator_Emis
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialEscalator_Norm
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source = 

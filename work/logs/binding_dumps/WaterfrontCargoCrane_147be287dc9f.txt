@@ -1,0 +1,227 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCargoCrane.upk Ver: 564/33 Engine: 3908 Names: 136 Exports: 37 Imports: 18 Game: 80001D
+Loading Material3 WaterfrontCargoCrane_MAT from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCargoCrane.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading StaticMesh3 WaterfrontCargoCranesA from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCargoCrane.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_1"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_1"
+Loading StaticMesh3 WaterfrontCargoCranesB_LOD0 from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCargoCrane.upk
+Loading StaticMesh3 WaterfrontCargoCranesC_LOD0 from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCargoCrane.upk
+Loading Texture2D WaterfrontCargoCranes_DiffSpec from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCargoCrane.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D WaterfrontCargoCranes_Masks from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCargoCrane.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D WaterfrontCargoCranes_Norm from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCargoCrane.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loaded in 0.0 sec, 186 allocs, 1.58 MBytes serialized in 23 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: WaterfrontCargoCrane_MAT
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'WaterfrontCargoCranes_Norm'
+        ReferencedTextures[1] = Texture2D'WaterfrontCargoCranes_DiffSpec'
+        ReferencedTextures[2] = Texture2D'WaterfrontCargoCranes_Masks'
+    }
+    Expressions[26] =
+    {
+        Expressions[1] = MaterialExpressionTextureSample'WaterfrontCargoCrane_MAT.MaterialExpressionTextureSample_0'
+        Expressions[2] = MaterialExpressionTextureSample'WaterfrontCargoCrane_MAT.MaterialExpressionTextureSample_1'
+        Expressions[3] = MaterialExpressionTextureSample'WaterfrontCargoCrane_MAT.MaterialExpressionTextureSample_2'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'WaterfrontCargoCranes_Norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'WaterfrontCargoCranes_Masks' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_2
+ { Texture=Texture2D'WaterfrontCargoCranes_DiffSpec' }
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: WaterfrontCargoCranesA
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=1891.69, Y=184.282, Z=3081.02 }
+        BoxExtent = { X=4161.95, Y=1294.72, Z=3081.02 }
+        SphereRadius = 4429.25
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[2] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'WaterfrontCargoCrane_MAT', FirstIndex=0, NumFaces=1210 }
+            }
+            NumVerts = 3992
+            IndexCount = 3630
+            NumTexCoords = 1
+        }
+        Lods[1] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'WaterfrontCargoCrane_MAT', FirstIndex=0, NumFaces=712 }
+            }
+            NumVerts = 2520
+            IndexCount = 2136
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 2
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: WaterfrontCargoCranesB_LOD0
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=1686.11, Y=184.957, Z=3206.55 }
+        BoxExtent = { X=4161.95, Y=1073.63, Z=3206.79 }
+        SphereRadius = 4362.35
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'WaterfrontCargoCrane_MAT', FirstIndex=0, NumFaces=614 }
+            }
+            NumVerts = 2080
+            IndexCount = 1842
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: WaterfrontCargoCranesC_LOD0
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=450.857, Y=184.957, Z=4390.04 }
+        BoxExtent = { X=2926.69, Y=1073.63, Z=4390.28 }
+        SphereRadius = 5177.45
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'WaterfrontCargoCrane_MAT', FirstIndex=0, NumFaces=620 }
+            }
+            NumVerts = 2128
+            IndexCount = 1860
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: Texture2D ObjectName: WaterfrontCargoCranes_DiffSpec
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: WaterfrontCargoCranes_Masks
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: WaterfrontCargoCranes_Norm
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source = 

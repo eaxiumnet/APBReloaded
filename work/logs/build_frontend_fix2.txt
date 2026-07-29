@@ -1,0 +1,30 @@
+Using bundled DotNet SDK version: 10.0 win-x64
+Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" APBReloadedEditor Win64 Development -Project=D:\APBReloaded\APBReloaded.uproject -WaitMutex
+Log file: C:\Users\Support\AppData\Local\UnrealBuildTool\Log.txt
+Determining max actions to execute in parallel (8 physical cores, 16 logical cores)
+  Executing up to 8 processes, one per physical core
+Using 'git status' to determine working set for adaptive non-unity build (D:\APBReloaded).
+UbaServer - Listening on 0.0.0.0:1345
+Invalidating makefile for APBReloadedEditor (APBReloaded.Build.cs modified)
+UHT compiled-in object format Default
+D:\APBReloaded\Source\APBReloaded\Domain\APBCatalog.cpp(1): error: Expected APBCatalog.h to be first header included.
+Building APBReloadedEditor...
+===== Toolchain Information =====
+Using ISPC compiler (D:\UE58\UE_5.8\Engine\Source\ThirdParty\Intel\ISPC\bin\Windows\ispc.exe)
+  Intel(r) Implicit SPMD Program Compiler (Intel(r) ISPC), 1.24.0 (build commit  @ 20250404, LLVM 18.1.2) 
+Using Visual Studio 14.50.35729 toolchain (C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717) and Windows 10.0.22621.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[Adaptive Build] Excluded from APBReloaded unity file: APBAntiCheat.cpp, APBAuction.cpp, APBChat.cpp, APBClan.cpp, APBDistrictDirectory.cpp, APBFriends.cpp, APBGroup.cpp, APBMatchmaking.cpp, APBMission.cpp, APBPersistence.cpp, APBProgression.cpp, APBRelayProtocol.cpp, APBSocialStore.cpp, APBVehicle.cpp, APBWorldService.cpp, APBSessionProbeSubsystem.cpp, APBDistrictGameMode.cpp, APBFreeroamGameMode.cpp, APBFrontendWidget.cpp, APBWorldGameMode.cpp
+=================================
+Using Unreal Build Accelerator local executor to run 2 action(s)
+  CPU 8 physical cores, 16 logical cores
+  Memory 31.09 GB physical, 57.39 GB/84.73 GB committed
+  UBA Storage capacity 40 GB
+[1/2] Link [x64] UnrealEditor-APBReloaded.dll
+[2/2] WriteMetadata APBReloadedEditor.target [NoUba]
+
+Total time in Unreal Build Accelerator local executor: 3.69 seconds
+Output binary: D:\UE58\UE_5.8\Engine\Binaries\Win64\UnrealEditor.exe
+
+Result: Succeeded
+Total execution time: 14.08 seconds
+Trace written to file C:\Users\Support\AppData\Local\UnrealBuildTool\Trace.uba with size 6.0kb

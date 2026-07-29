@@ -1,0 +1,143 @@
+M16_S1_BOOTSTRAP_ALLOWLIST_OK
+M16_S4_CLEAN_REFUSED_OK
+M16_S4_CLEAN_FORCE_OK
+M16_S2_RESTART_PARITY_OK
+M16_S3_WRITE_ONCE_OK
+M16_S5_CORRUPT_REJECT_OK
+M16_PERSISTENCE_GATE_OK
+GATE_EXIT=0
+--- APBPersistenceTests.exe (S2/S3/S5 source) ---
+EXE_EXIT=0
+APB Persistence tests (restart parity)
+PASS: A init catalog
+PASS: persistence inactive before InitPersistence
+PASS: A persistence init
+PASS: persistence active after InitPersistence
+PASS: two distinct armas items available
+PASS: A register alice
+PASS: A login alice
+PASS: A create criminal char
+PASS: A equip clothing
+PASS: A grant item x3
+PASS: A armas buy (g1c spend)
+PASS: A auction list
+PASS: A send mail to PBob
+PASS: A armas count decremented by listing
+PASS: A armas stock remains after listing
+PASS: A character cleared on logout
+PASS: A register bob
+PASS: A login bob
+PASS: A create enforcer char
+PASS: accounts.json exists
+PASS: alice character file exists
+PASS: bob character file exists
+PASS: auction.json exists
+PASS: mail.json exists
+PASS: B init catalog
+PASS: B persistence init
+PASS: B mail restored for PBob
+PASS: B mail unread before read-flag test
+PASS: B mail subject matches
+PASS: B mail body matches
+PASS: B mail cash attachment matches
+PASS: B claim mail cash attachment
+PASS: B attachment claimed (no unclaimed)
+PASS: B auction listing restored active
+PASS: B login alice (account persisted)
+PASS: B character auto-loaded on login
+PASS: B character name matches
+PASS: B faction matches
+PASS: B cash matches
+PASS: B g1c matches
+PASS: B inventory armas count matches
+PASS: B inventory has armas-bought item
+PASS: B threat points match
+PASS: B appearance blob matches
+PASS: B progress contact standing restored
+PASS: B progress role xp restored
+PASS: B progress unknown contact defaults 0
+PASS: B mark mail read
+PASS: C init catalog
+PASS: C persistence init
+PASS: C login bob
+PASS: C bob character restored
+PASS: C enforcer faction persisted
+PASS: C mail read flag persisted
+PASS: C mail claimed flag persisted
+PASS: D init catalog
+PASS: D persistence inactive (no InitPersistence)
+PASS: D register in-memory
+PASS: D login in-memory
+PASS: D create char in-memory
+PASS: D grant item in-memory
+PASS: D send mail in-memory
+PASS: D state intact after SaveAllNow no-op
+PASS: E store init
+PASS: E no progress file yet
+PASS: E save progress
+PASS: E progress file created
+PASS: E load progress
+PASS: E contact standing restored
+PASS: E second contact restored
+PASS: E role xp restored
+PASS: E unknown contact defaults 0
+PASS: E missing progress -> false
+PASS: E missing leaves empty
+PASS: F accounts fixture seeded
+PASS: F accounts corrupt file written
+PASS: F accounts fresh store init
+PASS: F accounts corrupt load rejected
+PASS: F accounts corrupt load leaves destination untouched
+PASS: F accounts valid auction sibling loads
+PASS: F accounts valid mail sibling loads
+PASS: F accounts valid character sibling loads
+PASS: F character fixture seeded
+PASS: F character corrupt file written
+PASS: F character fresh store init
+PASS: F character corrupt load rejected
+PASS: F character corrupt load leaves destination untouched
+PASS: F character valid accounts sibling loads
+PASS: F character valid auction sibling loads
+PASS: F character valid mail sibling loads
+PASS: F auction fixture seeded
+PASS: F auction corrupt file written
+PASS: F auction fresh store init
+PASS: F auction corrupt load rejected
+PASS: F auction corrupt load leaves destination untouched
+PASS: F auction valid accounts sibling loads
+PASS: F auction valid mail sibling loads
+PASS: F auction valid character sibling loads
+PASS: F mail fixture seeded
+PASS: F mail corrupt file written
+PASS: F mail fresh store init
+PASS: F mail corrupt load rejected
+PASS: F mail corrupt load leaves destination untouched
+PASS: F mail valid accounts sibling loads
+PASS: F mail valid auction sibling loads
+PASS: F mail valid character sibling loads
+PASS: G store init
+PASS: G interrupted final file written
+PASS: G stale temp file written
+PASS: G save replaces interrupted final file
+PASS: G load after atomic replacement
+PASS: G replacement record is coherent
+PASS: G atomic save removes stale temp file
+PASS: H first store init
+PASS: H pre-restart mail created
+PASS: H pre-restart auction saved
+PASS: H pre-restart mail saved
+PASS: H restarted store init
+PASS: H restarted auction loaded
+PASS: H restarted mail loaded
+PASS: H post-restart auction created
+PASS: H post-restart auction id exceeds pre-restart maximum
+PASS: H post-restart mail created
+PASS: H post-restart mail id exceeds pre-restart maximum
+PASS: I init catalog
+PASS: I persistence init
+PASS: I register account
+PASS: I login account
+PASS: I create character
+PASS: I character physical-write counter is observable
+PASS: I one LogoutAccount triggers exactly one character snapshot write
+FAILS=0

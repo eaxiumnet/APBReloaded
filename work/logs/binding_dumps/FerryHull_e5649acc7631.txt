@@ -1,0 +1,196 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.0 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/WaterfrontDistrict/Ferry/FerryHull.upk Ver: 564/33 Engine: 3908 Names: 82 Exports: 12 Imports: 16 Game: 80001D
+Loading Material3 FerryHull_Mat from package MaterialDatabase/WaterfrontDistrict/Ferry/FerryHull.upk
+Loading package: MaterialDatabase/GenericMaterials/Metal/Metal.upk Ver: 564/33 Engine: 3908 Names: 274 Exports: 407 Imports: 43 Game: 80001D
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading StaticMesh3 ferry_UVTestObject from package MaterialDatabase/WaterfrontDistrict/Ferry/FerryHull.upk
+Loading StaticMesh3 FerryModel from package MaterialDatabase/WaterfrontDistrict/Ferry/FerryHull.upk
+Loading package: MaterialDatabase/WaterfrontDistrict/Ferry/FerryFloor.upk Ver: 564/33 Engine: 3908 Names: 100 Exports: 15 Imports: 14 Game: 80001D
+Loading package: MaterialDatabase/GenericMaterials/Glass/Glass.upk Ver: 564/33 Engine: 3908 Names: 188 Exports: 155 Imports: 39 Game: 80001D
+Loading Texture2D FerryFloor-Overlay2ndUv from package MaterialDatabase/WaterfrontDistrict/Ferry/FerryHull.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FerryFloor-Overlay2ndUv-Diff from package MaterialDatabase/WaterfrontDistrict/Ferry/FerryHull.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FerryHull from package MaterialDatabase/WaterfrontDistrict/Ferry/FerryHull.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D PaintedMetal_Norm from package MaterialDatabase/GenericMaterials/Metal/Metal.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Material3 FerryFloor_Mat from package MaterialDatabase/WaterfrontDistrict/Ferry/FerryFloor.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 Glass_Solid from package MaterialDatabase/GenericMaterials/Glass/Glass.upk
+BoolProperty: unknown UMaterial3 bForceSafeBuildingCheck
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Texture2D FerryFloor_NormDiff from package MaterialDatabase/WaterfrontDistrict/Ferry/FerryFloor.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading TextureCube3 SkyBlue from package MaterialDatabase/GenericMaterials/Glass/Glass.upk
+ByteProperty: unknown UTextureCube3 LODCategory
+Loading Texture2D FerryFloor-Overlay from package MaterialDatabase/WaterfrontDistrict/Ferry/FerryFloor.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Cube_Sky from package MaterialDatabase/GenericMaterials/Glass/Glass.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 439 allocs, 4.66 MBytes serialized in 147 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: FerryHull_Mat
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[2] = { Texture2D'PaintedMetal_Norm', Texture2D'FerryFloor-Overlay2ndUv' }
+    Expressions[4] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'FerryHull_Mat.MaterialExpressionTextureSample_1'
+        Expressions[2] = MaterialExpressionTextureSample'FerryHull_Mat.MaterialExpressionTextureSample_2'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'FerryFloor-Overlay2ndUv' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_2
+ { Texture=Texture2D'PaintedMetal_Norm' }
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: ferry_UVTestObject
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=107990, Y=-141388, Z=1721.62 }
+        BoxExtent = { X=4587.96, Y=10055.1, Z=3539.11 }
+        SphereRadius = 10655.5
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FerryHull_Mat', FirstIndex=0, NumFaces=9162 }
+            }
+            NumVerts = 25542
+            IndexCount = 27486
+            NumTexCoords = 2
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FerryModel
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-620.485, Y=-693.113, Z=1721.66 }
+        BoxExtent = { X=4587.96, Y=10055.1, Z=3539.11 }
+        SphereRadius = 10655.5
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[6] =
+            {
+                Sections[0] = { Material=Material3'FerryHull_Mat', FirstIndex=0, NumFaces=6218 }
+                Sections[1] = { Material=Material3'FerryFloor_Mat', FirstIndex=18654, NumFaces=1 }
+                Sections[2] = { Material=Material3'FerryFloor_Mat', FirstIndex=0, NumFaces=0 }
+                Sections[3] = { Material=Material3'FerryFloor_Mat', FirstIndex=18657, NumFaces=174 }
+                Sections[4] = { Material=Material3'Glass_Solid', FirstIndex=19179, NumFaces=71 }
+                Sections[5] = { Material=Material3'Glass_Solid', FirstIndex=19392, NumFaces=456 }
+            }
+            NumVerts = 20016
+            IndexCount = 20760
+            NumTexCoords = 2
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FerryFloor-Overlay2ndUv
+    SizeX = 2048
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 11
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FerryFloor-Overlay2ndUv-Diff
+    SizeX = 1024
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FerryHull
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 

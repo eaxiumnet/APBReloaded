@@ -1,0 +1,97 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block21.upk Ver: 564/33 Engine: 3908 Names: 88 Exports: 31 Imports: 15 Game: 80001D
+Loading Material3 Aztec from package MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block21.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading StaticMesh3 AztecSignTest from package MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block21.upk
+Loading Texture2D Aztec from package MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block21.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 90 allocs, 0.44 MBytes serialized in 10 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: Aztec
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[1] = { Texture2D'Aztec' }
+    Expressions[24] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'Aztec.MaterialExpressionTextureSample_1'
+        Expressions[16] = MaterialExpressionTextureSample'Aztec.MaterialExpressionTextureSample_5'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'Aztec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_5
+ { Texture=Texture2D'Aztec' }
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: AztecSignTest
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=160586, Y=-138900, Z=1965.07 }
+        BoxExtent = { X=705.219, Y=41.1562, Z=1585.94 }
+        SphereRadius = 1736.16
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'Aztec', FirstIndex=0, NumFaces=178 }
+            }
+            NumVerts = 416
+            IndexCount = 534
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Aztec
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 

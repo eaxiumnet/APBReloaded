@@ -1,0 +1,45 @@
+{
+  "package": "FinancialTowerCrane",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\FinancialDistrict\\PropMaterials\\FinancialTowerCrane.upk",
+  "district": "Financial",
+  "meshes": [
+    {
+      "mesh": "FinancialTowerCrane",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialTowerCrane_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialTowerCrane_Double",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialTowerCrane_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialTowerCraneTall_LOD0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialTowerCrane_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|financialtowercrane_mat": [
+      "FinancialTowerCrane"
+    ],
+    "materialinstanceconstant|financialtowercrane_blue_inst": [
+      "FinancialTowerCrane"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "package": "FinancialOfficeDesk",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\FinancialDistrict\\PropMaterials\\FinancialOfficeDesk.upk",
+  "district": "Financial",
+  "meshes": [
+    {
+      "mesh": "Financial_Office_2desk",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialOfficeDesk",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialOfficeDesk",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialOfficeDesk",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|financialofficedesk": [
+      "FinancialOfficeDesk"
+    ]
+  }
+}

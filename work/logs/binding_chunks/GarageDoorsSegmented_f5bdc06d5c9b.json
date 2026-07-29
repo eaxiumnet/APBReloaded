@@ -1,0 +1,98 @@
+{
+  "package": "GarageDoorsSegmented",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\FinancialDistrict\\FeatureMaterials\\GarageDoorsSegmented.upk",
+  "district": "Financial",
+  "meshes": [
+    {
+      "mesh": "GarageDoor_CRIME_LOD0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "GarageDoorsSegmented_Mat_INST",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "GarageDoor_Damage1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "GarageDoorsSegmented_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "GarageDoor_Damage2",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "GarageDoorsSegmented_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "GarageDoor_LOD0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "GarageDoorsSegmented_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "GarageDoorsSegmentedProp_Alum",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "GarageDoorsSegmented_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "GarageDoorsSegmentedProp_AlumWin",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "GarageDoorsSegmented_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "GarageDoorsSegmentedProp_Wood",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "GarageDoorsSegmented_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "GarageDoorsSegmentedProp_WoodWin",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "GarageDoorsSegmented_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|garagedoorssegmented_mat": [
+      "GarageDoorsSegmented"
+    ],
+    "material3|garagedoorssegmented_room_mat": [
+      "GarageDoorsSegmented"
+    ],
+    "materialinstanceconstant|garagedoorssegmented_mat_inst": [
+      "GarageDoorsSegmented"
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+Using bundled DotNet SDK version: 10.0 win-x64
+Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" APBReloadedEditor Win64 Development -Project=D:\APBReloaded\APBReloaded.uproject -WaitMutex
+Log file: C:\Users\Support\AppData\Local\UnrealBuildTool\Log.txt
+Determining max actions to execute in parallel (8 physical cores, 16 logical cores)
+  Executing up to 8 processes, one per physical core
+Using 'git status' to determine working set for adaptive non-unity build (D:\APBReloaded).
+UbaServer - Listening on 0.0.0.0:1345
+Invalidating makefile for APBReloadedEditor (source file added)
+UHT compiled-in object format Default
+D:\APBReloaded\Source\APBReloaded\Domain\APBCatalog.cpp(1): error: Expected APBCatalog.h to be first header included.
+UHT processed APBReloadedEditor in 9.585602 seconds (3 generated files written)
+Building APBReloadedEditor...
+===== Toolchain Information =====
+Using ISPC compiler (D:\UE58\UE_5.8\Engine\Source\ThirdParty\Intel\ISPC\bin\Windows\ispc.exe)
+  Intel(r) Implicit SPMD Program Compiler (Intel(r) ISPC), 1.24.0 (build commit  @ 20250404, LLVM 18.1.2) 
+Using Visual Studio 14.50.35729 toolchain (C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717) and Windows 10.0.22621.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[Adaptive Build] Excluded from APBReloaded unity file: APBAntiCheat.cpp, APBAuction.cpp, APBChat.cpp, APBClan.cpp, APBDistrictDirectory.cpp, APBFriends.cpp, APBGroup.cpp, APBMatchmaking.cpp, APBMission.cpp, APBPersistence.cpp, APBProgression.cpp, APBRelayProtocol.cpp, APBSocialStore.cpp, APBVehicle.cpp, APBWorldService.cpp, APBSessionProbeSubsystem.cpp, APBDistrictGameMode.cpp, APBFreeroamGameMode.cpp, APBFrontendWidget.cpp, APBWorldGameMode.cpp
+=================================
+Using Unreal Build Accelerator local executor to run 29 action(s)
+  CPU 8 physical cores, 16 logical cores
+  Memory 31.09 GB physical, 58.68 GB/84.73 GB committed
+  UBA Storage capacity 40 GB
+[1/29] Compile [x64] APBAntiCheat.cpp
+[2/29] Compile [x64] APBDistrictDirectory.cpp
+[3/29] Compile [x64] APBAuction.cpp
+[4/29] Compile [x64] APBChat.cpp
+[5/29] Compile [x64] APBClan.cpp
+[6/29] Compile [x64] APBDebugMenuWidget.cpp
+[7/29] Compile [x64] APBFriends.cpp
+[8/29] Compile [x64] APBFrontendPlayerController.cpp
+[9/29] Compile [x64] APBFreeroamGameMode.cpp
+[10/29] Compile [x64] APBDistrictGameMode.cpp
+[11/29] Compile [x64] APBGroup.cpp
+[12/29] Compile [x64] APBMatchmaking.cpp
+[13/29] Compile [x64] APBMission.cpp
+[14/29] Compile [x64] APBGameInstanceSubsystem.cpp
+[15/29] Compile [x64] APBRelayProtocol.cpp
+[16/29] Compile [x64] APBProgression.cpp
+[17/29] Compile [x64] APBPersistence.cpp
+[18/29] Compile [x64] APBFrontendWidget.cpp
+[19/29] Compile [x64] APBPlayerState.cpp
+[20/29] Compile [x64] APBVehicle.cpp
+[21/29] Compile [x64] APBSocialStore.cpp
+[22/29] Compile [x64] APBSessionProbeSubsystem.cpp
+[23/29] Compile [x64] APBServerControl.cpp
+[24/29] Compile [x64] APBWorldGameMode.cpp
+[25/29] Compile [x64] APBWorldService.cpp
+[26/29] Compile [x64] Module.APBReloaded.gen.cpp
+[27/29] Link [x64] UnrealEditor-APBReloaded.lib
+[28/29] Link [x64] UnrealEditor-APBReloaded.dll
+APBDistrictGameMode.cpp.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: class FString __cdecl FUniqueNetIdWrapper::ToString(void)const " (__imp_?ToString@FUniqueNetIdWrapper@@QEBA?AVFString@@XZ) referenced in function "protected: static class FString __cdecl AAPBDistrictGameMode::TicketNetKey(struct FUniqueNetIdRepl const &)" (?TicketNetKey@AAPBDistrictGameMode@@KA?AVFString@@AEBUFUniqueNetIdRepl@@@Z)
+  Hint on symbols that are defined and could potentially match:
+    "__declspec(dllimport) public: class FString __cdecl FDateTime::ToString(void)const " (__imp_?ToString@FDateTime@@QEBA?AVFString@@XZ)
+    "__declspec(dllimport) public: class FString __cdecl FName::ToString(void)const " (__imp_?ToString@FName@@QEBA?AVFString@@XZ)
+    "__declspec(dllimport) public: class FString const & __cdecl FText::ToString(void)const " (__imp_?ToString@FText@@QEBAAEBVFString@@XZ)
+D:\APBReloaded\Binaries\Win64\UnrealEditor-APBReloaded.dll : fatal error LNK1120: 1 unresolved externals
+Total time in Unreal Build Accelerator local executor: 62.91 seconds
+
+Result: Failed (OtherCompilationError)
+Total execution time: 79.34 seconds
+Trace written to file C:\Users\Support\AppData\Local\UnrealBuildTool\Trace.uba with size 20.2kb

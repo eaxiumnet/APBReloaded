@@ -1,0 +1,63 @@
+{
+  "package": "FerryHull",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\WaterfrontDistrict\\Ferry\\FerryHull.upk",
+  "district": "Waterfront",
+  "meshes": [
+    {
+      "mesh": "ferry_UVTestObject",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FerryHull_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FerryModel",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FerryHull_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "FerryFloor_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 2,
+          "material": "FerryFloor_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 3,
+          "material": "FerryFloor_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 4,
+          "material": "Glass_Solid",
+          "material_class": "Material3"
+        },
+        {
+          "index": 5,
+          "material": "Glass_Solid",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|ferryhull_mat": [
+      "FerryHull"
+    ],
+    "material3|ferryfloor_mat": [
+      "FerryFloor"
+    ],
+    "material3|glass_solid": [
+      "Glass"
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "package": "FD_Block26",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\FinancialDistrict\\StaticMeshes\\FD_Block26.upk",
+  "district": "Financial",
+  "meshes": [
+    {
+      "mesh": "B26_Banner",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Banner_CommunityHall_01",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "Metal_M03_GreyDark",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "B26_HotelSign",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Metal_M03_GreyDark",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "HotelSign",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|hotelsign": [
+      "FD_Block26"
+    ],
+    "material3|banner_communityhall_01": [
+      "FD_Signage"
+    ],
+    "materialinstanceconstant|metal_m03_greydark": [
+      "Metal"
+    ],
+    "material3|metal_parent": [
+      "Metal"
+    ]
+  }
+}

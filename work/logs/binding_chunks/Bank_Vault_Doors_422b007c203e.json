@@ -1,0 +1,52 @@
+{
+  "package": "Bank_Vault_Doors",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\FinancialDistrict\\PropMaterials\\Bank_Vault_Doors.upk",
+  "district": "Financial",
+  "meshes": [
+    {
+      "mesh": "Bank_Vault_Door_Closed",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Bank_Vault_Door_Round_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Bank_Vault_Door_Open",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Bank_Vault_Door_Round_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Bank_Vault_Door_Round_Closed",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Bank_Vault_Door_Round_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Bank_Vault_Door_Round_Open",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Bank_Vault_Door_Round_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|bank_vault_door_round_mat": [
+      "Bank_Vault_Doors"
+    ]
+  }
+}

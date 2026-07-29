@@ -1,0 +1,507 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontLighthouseAndBridge.upk Ver: 564/33 Engine: 3908 Names: 161 Exports: 92 Imports: 37 Game: 80001D
+Loading Material3 Water from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontLighthouseAndBridge.upk
+Loading package: MaterialDatabase/TerrainMaterials/Water.upk Ver: 564/33 Engine: 3908 Names: 284 Exports: 453 Imports: 46 Game: 80001D
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 WD_Block15_HillsAndTrees_Mat from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontLighthouseAndBridge.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 WD_Block15_LighthouseAndBridge_Mat from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontLighthouseAndBridge.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading package: MaterialDatabase/GenericMaterials/Shared_Maps.upk Ver: 564/33 Engine: 3908 Names: 128 Exports: 50 Imports: 15 Game: 80001D
+BoolProperty: unknown UMaterialExpressionVectorParameter bRealtimePreview
+Loading StaticMesh3 WaterPlane from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontLighthouseAndBridge.upk
+Loading StaticMesh3 WD_Block15_LighthouseAndBridge_LOD0 from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontLighthouseAndBridge.upk
+Loading Texture2D WD_Block15_HillsAndTrees_Diff from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontLighthouseAndBridge.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D WD_Block15_HillsAndTrees_Emis from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontLighthouseAndBridge.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D WD_Block15_HillsAndTrees_Norm from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontLighthouseAndBridge.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D WD_Block15_HillsAndTrees_Opac from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontLighthouseAndBridge.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D WD_Block15_LighthouseAndBridge_Diff from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontLighthouseAndBridge.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D WD_Block15_LighthouseAndBridge_Emis from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontLighthouseAndBridge.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D WD_Block15_LighthouseAndBridge_Norm from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontLighthouseAndBridge.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D WD_Block15_LighthouseAndBridge_Opac from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontLighthouseAndBridge.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Waves_Norm from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D Water_Colour from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading TextureCube3 Block03_LightCube_Daytime from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTextureCube3 LODCategory
+Loading TextureCube3 Block03_LightCube_Nighttime from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTextureCube3 LODCategory
+Loading TextureCube3 StaticCapture from package MaterialDatabase/GenericMaterials/Shared_Maps.upk
+ByteProperty: unknown UTextureCube3 LODCategory
+Loading Texture2D Block03_LightCube_DaytimePosX from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Block03_LightCube_DaytimeNegX from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Block03_LightCube_DaytimePosY from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Block03_LightCube_DaytimeNegY from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Block03_LightCube_DaytimePosZ from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Block03_LightCube_DaytimeNegZ from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Block03_LightCube_NighttimePosX from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Block03_LightCube_NighttimeNegX from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Block03_LightCube_NighttimePosY from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Block03_LightCube_NighttimeNegY from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Block03_LightCube_NighttimePosZ from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Block03_LightCube_NighttimeNegZ from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D StaticCubemapTexture_Tex6PosX from package MaterialDatabase/GenericMaterials/Shared_Maps.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D StaticCubemapTexture_Tex6NegX from package MaterialDatabase/GenericMaterials/Shared_Maps.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D StaticCubemapTexture_Tex6PosY from package MaterialDatabase/GenericMaterials/Shared_Maps.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D StaticCubemapTexture_Tex6NegY from package MaterialDatabase/GenericMaterials/Shared_Maps.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D StaticCubemapTexture_Tex6PosZ from package MaterialDatabase/GenericMaterials/Shared_Maps.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D StaticCubemapTexture_Tex6NegZ from package MaterialDatabase/GenericMaterials/Shared_Maps.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 565 allocs, 5.02 MBytes serialized in 142 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: Water
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[5] =
+    {
+        ReferencedTextures[0] = Texture2D'Waves_Norm'
+        ReferencedTextures[1] = Texture2D'Water_Colour'
+        ReferencedTextures[2] = TextureCube3'Block03_LightCube_Daytime'
+        ReferencedTextures[3] = TextureCube3'Block03_LightCube_Nighttime'
+        ReferencedTextures[4] = TextureCube3'StaticCapture'
+    }
+    Expressions[55] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'Water.MaterialExpressionTextureSample_5'
+        Expressions[9] = MaterialExpressionTextureSample'Water.MaterialExpressionTextureSample_7'
+        Expressions[13] = MaterialExpressionTextureSample'Water.MaterialExpressionTextureSample_8'
+        Expressions[16] = MaterialExpressionTextureSample'Water.MaterialExpressionTextureSample_9'
+        Expressions[19] = MaterialExpressionTextureSample'Water.MaterialExpressionTextureSample_10'
+        Expressions[29] = MaterialExpressionVectorParameter'Water.MaterialExpressionVectorParameter_0'
+        Expressions[31] = MaterialExpressionVectorParameter'Water.MaterialExpressionVectorParameter_1'
+        Expressions[34] = MaterialExpressionVectorParameter'Water.MaterialExpressionVectorParameter_2'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[3] =
+    {
+        CollectedVectorParameters[0] =
+        {
+            Value = { R=0.054592, G=0.133209, B=0.378676, A=1 }
+            Name = None
+            Group = None
+        }
+        CollectedVectorParameters[1] =
+        {
+            Value = { R=0.054592, G=0.133209, B=0.378676, A=1 }
+            Name = None
+            Group = None
+        }
+        CollectedVectorParameters[2] =
+        {
+            Value = { R=0.054592, G=0.133209, B=0.378676, A=1 }
+            Name = None
+            Group = None
+        }
+    }
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: Material3 ObjectName: WD_Block15_HillsAndTrees_Mat
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'WD_Block15_HillsAndTrees_Norm'
+        ReferencedTextures[1] = Texture2D'WD_Block15_HillsAndTrees_Emis'
+        ReferencedTextures[2] = Texture2D'WD_Block15_HillsAndTrees_Diff'
+        ReferencedTextures[3] = Texture2D'WD_Block15_HillsAndTrees_Opac'
+    }
+    Expressions[10] =
+    {
+        Expressions[1] = MaterialExpressionTextureSample'WD_Block15_HillsAndTrees_Mat.MaterialExpressionTextureSample_0'
+        Expressions[2] = MaterialExpressionTextureSample'WD_Block15_HillsAndTrees_Mat.MaterialExpressionTextureSample_1'
+        Expressions[3] = MaterialExpressionTextureSample'WD_Block15_HillsAndTrees_Mat.MaterialExpressionTextureSample_2'
+        Expressions[5] = MaterialExpressionTextureSample'WD_Block15_HillsAndTrees_Mat.MaterialExpressionTextureSample_3'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: Material3 ObjectName: WD_Block15_LighthouseAndBridge_Mat
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'WD_Block15_LighthouseAndBridge_Norm'
+        ReferencedTextures[1] = Texture2D'WD_Block15_LighthouseAndBridge_Emis'
+        ReferencedTextures[2] = Texture2D'WD_Block15_LighthouseAndBridge_Diff'
+        ReferencedTextures[3] = Texture2D'WD_Block15_LighthouseAndBridge_Opac'
+    }
+    Expressions[10] =
+    {
+        Expressions[1] = MaterialExpressionTextureSample'WD_Block15_LighthouseAndBridge_Mat.MaterialExpressionTextureSample_0'
+        Expressions[2] = MaterialExpressionTextureSample'WD_Block15_LighthouseAndBridge_Mat.MaterialExpressionTextureSample_1'
+        Expressions[3] = MaterialExpressionTextureSample'WD_Block15_LighthouseAndBridge_Mat.MaterialExpressionTextureSample_2'
+        Expressions[5] = MaterialExpressionTextureSample'WD_Block15_LighthouseAndBridge_Mat.MaterialExpressionTextureSample_3'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.33333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_10
+ { Texture=TextureCube3'StaticCapture' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_5
+ { Texture=Texture2D'Water_Colour' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_7
+ { Texture=Texture2D'Waves_Norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_8
+ { Texture=Texture2D'Waves_Norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_9
+ { Texture=Texture2D'Waves_Norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'WD_Block15_HillsAndTrees_Diff' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'WD_Block15_HillsAndTrees_Norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_2
+ { Texture=Texture2D'WD_Block15_HillsAndTrees_Emis' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_3
+ { Texture=Texture2D'WD_Block15_HillsAndTrees_Opac' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'WD_Block15_LighthouseAndBridge_Diff' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'WD_Block15_LighthouseAndBridge_Norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_2
+ { Texture=Texture2D'WD_Block15_LighthouseAndBridge_Emis' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_3
+ { Texture=Texture2D'WD_Block15_LighthouseAndBridge_Opac' }
+
+Object info:
+============
+ClassName: MaterialExpressionVectorParameter ObjectName: MaterialExpressionVectorParameter_0
+    DefaultValue = { R=0.054592, G=0.133209, B=0.378676, A=1 }
+    ParameterName = None
+    Group = None
+
+Object info:
+============
+ClassName: MaterialExpressionVectorParameter ObjectName: MaterialExpressionVectorParameter_1
+    DefaultValue = { R=0.054592, G=0.133209, B=0.378676, A=1 }
+    ParameterName = None
+    Group = None
+
+Object info:
+============
+ClassName: MaterialExpressionVectorParameter ObjectName: MaterialExpressionVectorParameter_2
+    DefaultValue = { R=0.054592, G=0.133209, B=0.378676, A=1 }
+    ParameterName = None
+    Group = None
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: WaterPlane
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0, Y=0, Z=0 }
+        BoxExtent = { X=2000, Y=2000, Z=0 }
+        SphereRadius = 2828.43
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'Water', FirstIndex=0, NumFaces=2 }
+            }
+            NumVerts = 8
+            IndexCount = 6
+            NumTexCoords = 2
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: WD_Block15_LighthouseAndBridge_LOD0
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=227324, Y=-161256, Z=9723.74 }
+        BoxExtent = { X=147210, Y=163415, Z=16442.2 }
+        SphereRadius = 217236
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[2] =
+            {
+                Sections[0] =
+                {
+                    Material = Material3'WD_Block15_LighthouseAndBridge_Mat'
+                    FirstIndex = 0
+                    NumFaces = 3071
+                }
+                Sections[1] = { Material=Material3'WD_Block15_HillsAndTrees_Mat', FirstIndex=9213, NumFaces=2922 }
+            }
+            NumVerts = 11940
+            IndexCount = 17979
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: Texture2D ObjectName: WD_Block15_HillsAndTrees_Diff
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: WD_Block15_HillsAndTrees_Emis
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: WD_Block15_HillsAndTrees_Norm
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: WD_Block15_HillsAndTrees_Opac
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: WD_Block15_LighthouseAndBridge_Diff
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: WD_Block15_LighthouseAndBridge_Emis
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: WD_Block15_LighthouseAndBridge_Norm
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: WD_Block15_LighthouseAndBridge_Opac
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 

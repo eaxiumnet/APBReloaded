@@ -1,0 +1,219 @@
+{
+  "package": "Waterfront_Marina",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\WaterfrontDistrict\\Waterfront_Marina.upk",
+  "district": "Waterfront",
+  "meshes": [
+    {
+      "mesh": "Fence_Test",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "WoodPlank_Painted_Green",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Marina_Bridge",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Conc_GreyDark",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Girder_Mat_Painted",
+          "material_class": "Material3"
+        },
+        {
+          "index": 2,
+          "material": "Gantry_Medium",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Marina_Concrete_Platforms",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "HarbourWall",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "Conc_GreyDark",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Marina_Gantry",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Gantry_Medium",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Marina_Glass",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Glass_Dirty_Dark",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "PaintedMetal_Black",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Marina_LightPosts",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "WoodenPlanks_Ground",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "WoodenPlanks_Ground_Brown",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Marina_Posts",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Wood_Vertical_Grey",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "WoodenPlanks_Ground",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Marina_Railing",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "PaintedMetal_White",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Marina_Signs",
+      "raw_slots": []
+    },
+    {
+      "mesh": "Marina_Stairs",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "WoodenPlanks_Ground_Brown",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Marina_TallPoles",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Wood_Vertical_Grey",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Marina_Walkways",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "WoodenPlanks_Ground",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "WoodenPlanks_Ground_Brown",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Marina_WaterFoam",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Water_FoamEdge",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|glass_dirty_dark": [
+      "Waterfront_Marina"
+    ],
+    "material3|water_foamedge": [
+      "Waterfront_Marina"
+    ],
+    "material3|woodenplanks_ground": [
+      "Waterfront_Marina"
+    ],
+    "materialinstanceconstant|woodenplanks_ground_brown": [
+      "Waterfront_Marina"
+    ],
+    "materialinstanceconstant|woodplank_painted_green": [
+      "Woods"
+    ],
+    "materialinstanceconstant|conc_greydark": [
+      "Concrete"
+    ],
+    "material3|girder_mat_painted": [
+      "Girder"
+    ],
+    "materialinstanceconstant|gantry_medium": [
+      "Gantry"
+    ],
+    "material3|harbourwall": [
+      "HarbourWall"
+    ],
+    "materialinstanceconstant|paintedmetal_black": [
+      "Metal"
+    ],
+    "materialinstanceconstant|wood_vertical_grey": [
+      "Woods"
+    ],
+    "materialinstanceconstant|paintedmetal_white": [
+      "Metal"
+    ],
+    "material3|woodplank_painted_parent": [
+      "Woods"
+    ],
+    "material3|conc_parent": [
+      "Concrete"
+    ],
+    "material3|gantry": [
+      "Gantry"
+    ],
+    "material3|paintedmetal_parent": [
+      "Metal"
+    ],
+    "material3|wood_painted_parent": [
+      "Woods"
+    ]
+  }
+}

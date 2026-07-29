@@ -1,0 +1,156 @@
+{
+  "package": "FinancialStreetSign",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\FinancialDistrict\\PropMaterials\\FinancialStreetSign.upk",
+  "district": "Financial",
+  "meshes": [
+    {
+      "mesh": "StreetSignBracket",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialStreetSign_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "FinancialStreetSign_Sign_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "StreetSignPole_LOD0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialStreetSign_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "FinancialStreetSign_Sign_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "StreetSignWall_LOD0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialStreetSign_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "FinancialStreetSign_Sign_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|financialstreetsign_mat": [
+      "FinancialStreetSign"
+    ],
+    "material3|financialstreetsign_sign_mat": [
+      "FinancialStreetSign"
+    ],
+    "materialinstanceconstant|streetsign_street01": [
+      "FinancialStreetSign"
+    ],
+    "materialinstanceconstant|streetsign_street02": [
+      "FinancialStreetSign"
+    ],
+    "materialinstanceconstant|streetsign_street03": [
+      "FinancialStreetSign"
+    ],
+    "materialinstanceconstant|streetsign_street04": [
+      "FinancialStreetSign"
+    ],
+    "materialinstanceconstant|streetsign_street05": [
+      "FinancialStreetSign"
+    ],
+    "materialinstanceconstant|streetsign_street06": [
+      "FinancialStreetSign"
+    ],
+    "materialinstanceconstant|streetsign_street07": [
+      "FinancialStreetSign"
+    ],
+    "materialinstanceconstant|streetsign_street08": [
+      "FinancialStreetSign"
+    ],
+    "materialinstanceconstant|streetsign_street09": [
+      "FinancialStreetSign"
+    ],
+    "materialinstanceconstant|streetsign_street10": [
+      "FinancialStreetSign"
+    ],
+    "materialinstanceconstant|streetsign_street11": [
+      "FinancialStreetSign"
+    ],
+    "materialinstanceconstant|streetsign_street12": [
+      "FinancialStreetSign"
+    ],
+    "materialinstanceconstant|streetsign_street13": [
+      "FinancialStreetSign"
+    ],
+    "materialinstanceconstant|streetsign_street14": [
+      "FinancialStreetSign"
+    ],
+    "materialinstanceconstant|streetsign_street15": [
+      "FinancialStreetSign"
+    ],
+    "materialinstanceconstant|streetsign_street16": [
+      "FinancialStreetSign"
+    ],
+    "materialinstanceconstant|streetsign_street17": [
+      "FinancialStreetSign"
+    ],
+    "materialinstanceconstant|streetsign_street18": [
+      "FinancialStreetSign"
+    ],
+    "materialinstanceconstant|streetsign_street19": [
+      "FinancialStreetSign"
+    ],
+    "materialinstanceconstant|streetsign_street20": [
+      "FinancialStreetSign"
+    ],
+    "materialinstanceconstant|streetsign_street21": [
+      "FinancialStreetSign"
+    ],
+    "materialinstanceconstant|streetsign_street22": [
+      "FinancialStreetSign"
+    ],
+    "materialinstanceconstant|streetsign_street23": [
+      "FinancialStreetSign"
+    ],
+    "materialinstanceconstant|streetsign_street24": [
+      "FinancialStreetSign"
+    ],
+    "materialinstanceconstant|streetsign_street25": [
+      "FinancialStreetSign"
+    ],
+    "materialinstanceconstant|streetsign_street26": [
+      "FinancialStreetSign"
+    ],
+    "materialinstanceconstant|streetsign_street27": [
+      "FinancialStreetSign"
+    ],
+    "materialinstanceconstant|streetsign_street28": [
+      "FinancialStreetSign"
+    ],
+    "materialinstanceconstant|streetsign_street29": [
+      "FinancialStreetSign"
+    ],
+    "materialinstanceconstant|streetsign_street30": [
+      "FinancialStreetSign"
+    ],
+    "materialinstanceconstant|streetsign_street31": [
+      "FinancialStreetSign"
+    ],
+    "materialinstanceconstant|streetsign_street32": [
+      "FinancialStreetSign"
+    ]
+  }
+}

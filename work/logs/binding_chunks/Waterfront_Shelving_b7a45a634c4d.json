@@ -1,0 +1,42 @@
+{
+  "package": "Waterfront_Shelving",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\WaterfrontDistrict\\PropMaterials\\Waterfront_Shelving.upk",
+  "district": "Waterfront",
+  "meshes": [
+    {
+      "mesh": "Waterfront_Shelving_Double_4x2x4",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Shelving_Metal",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Waterfront_Shelving_Double_8x4x4",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Shelving_Metal",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Waterfront_Shelving_Single_5x2x4",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Shelving_Metal",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|shelving_metal": [
+      "Waterfront_Shelving"
+    ]
+  }
+}

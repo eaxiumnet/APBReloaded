@@ -1,0 +1,22 @@
+{
+  "package": "WD_Banners",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\WaterfrontDistrict\\Signs\\WD_Banners.upk",
+  "district": "Waterfront",
+  "meshes": [
+    {
+      "mesh": "Banners_New_Test",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Hanging_Banners_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|hanging_banners_mat": [
+      "WD_Banners"
+    ]
+  }
+}

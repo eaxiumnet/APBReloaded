@@ -1,0 +1,684 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/FinancialDistrict/Signs/ApartmentSalesBanner.upk Ver: 564/33 Engine: 3908 Names: 100 Exports: 124 Imports: 13 Game: 80001D
+Loading Material3 fortuneGateway from package MaterialDatabase/FinancialDistrict/Signs/ApartmentSalesBanner.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 GrestyMews from package MaterialDatabase/FinancialDistrict/Signs/ApartmentSalesBanner.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 HallasanAspect from package MaterialDatabase/FinancialDistrict/Signs/ApartmentSalesBanner.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 HallasanPeninsula from package MaterialDatabase/FinancialDistrict/Signs/ApartmentSalesBanner.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 MerchantParkApartments from package MaterialDatabase/FinancialDistrict/Signs/ApartmentSalesBanner.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 MerchantQuarter from package MaterialDatabase/FinancialDistrict/Signs/ApartmentSalesBanner.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 MerchantVillage from package MaterialDatabase/FinancialDistrict/Signs/ApartmentSalesBanner.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 RiversideLofts from package MaterialDatabase/FinancialDistrict/Signs/ApartmentSalesBanner.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading StaticMesh3 Banner_Test from package MaterialDatabase/FinancialDistrict/Signs/ApartmentSalesBanner.upk
+Loading Texture2D ApartmentSalesBanner_fortuneGateway from package MaterialDatabase/FinancialDistrict/Signs/ApartmentSalesBanner.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D ApartmentSalesBanner_GrestyMews from package MaterialDatabase/FinancialDistrict/Signs/ApartmentSalesBanner.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D ApartmentSalesBanner_HallasanAspect from package MaterialDatabase/FinancialDistrict/Signs/ApartmentSalesBanner.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D ApartmentSalesBanner_HallasanPeninsula from package MaterialDatabase/FinancialDistrict/Signs/ApartmentSalesBanner.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D ApartmentSalesBanner_MerchantPark from package MaterialDatabase/FinancialDistrict/Signs/ApartmentSalesBanner.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D ApartmentSalesBanner_Merchantquarter from package MaterialDatabase/FinancialDistrict/Signs/ApartmentSalesBanner.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D ApartmentSalesBanner_MerchantVillage from package MaterialDatabase/FinancialDistrict/Signs/ApartmentSalesBanner.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D ApartmentSalesBanner_norm from package MaterialDatabase/FinancialDistrict/Signs/ApartmentSalesBanner.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D ApartmentSalesBanner_RiverfrontLofts from package MaterialDatabase/FinancialDistrict/Signs/ApartmentSalesBanner.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Banner_Wind_NORM from package MaterialDatabase/FinancialDistrict/Signs/ApartmentSalesBanner.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 344 allocs, 1.27 MBytes serialized in 18 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: fortuneGateway
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'ApartmentSalesBanner_norm'
+        ReferencedTextures[1] = Texture2D'Banner_Wind_NORM'
+        ReferencedTextures[2] = Texture2D'ApartmentSalesBanner_fortuneGateway'
+    }
+    Expressions[12] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'fortuneGateway.MaterialExpressionTextureSample_1'
+        Expressions[9] = MaterialExpressionTextureSample'fortuneGateway.MaterialExpressionTextureSample_0'
+        Expressions[10] = MaterialExpressionTextureSample'fortuneGateway.MaterialExpressionTextureSample_2'
+        Expressions[11] = MaterialExpressionTextureSample'fortuneGateway.MaterialExpressionTextureSample_4'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: Material3 ObjectName: GrestyMews
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'ApartmentSalesBanner_norm'
+        ReferencedTextures[1] = Texture2D'Banner_Wind_NORM'
+        ReferencedTextures[2] = Texture2D'ApartmentSalesBanner_GrestyMews'
+    }
+    Expressions[13] =
+    {
+        Expressions[1] = MaterialExpressionTextureSample'GrestyMews.MaterialExpressionTextureSample_7'
+        Expressions[4] = MaterialExpressionTextureSample'GrestyMews.MaterialExpressionTextureSample_8'
+        Expressions[6] = MaterialExpressionTextureSample'GrestyMews.MaterialExpressionTextureSample_9'
+        Expressions[12] = MaterialExpressionTextureSample'GrestyMews.MaterialExpressionTextureSample_10'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: Material3 ObjectName: HallasanAspect
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'ApartmentSalesBanner_norm'
+        ReferencedTextures[1] = Texture2D'Banner_Wind_NORM'
+        ReferencedTextures[2] = Texture2D'ApartmentSalesBanner_HallasanAspect'
+    }
+    Expressions[13] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'HallasanAspect.MaterialExpressionTextureSample_6'
+        Expressions[4] = MaterialExpressionTextureSample'HallasanAspect.MaterialExpressionTextureSample_11'
+        Expressions[6] = MaterialExpressionTextureSample'HallasanAspect.MaterialExpressionTextureSample_12'
+        Expressions[12] = MaterialExpressionTextureSample'HallasanAspect.MaterialExpressionTextureSample_13'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: Material3 ObjectName: HallasanPeninsula
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'ApartmentSalesBanner_norm'
+        ReferencedTextures[1] = Texture2D'Banner_Wind_NORM'
+        ReferencedTextures[2] = Texture2D'ApartmentSalesBanner_HallasanPeninsula'
+    }
+    Expressions[13] =
+    {
+        Expressions[1] = MaterialExpressionTextureSample'HallasanPeninsula.MaterialExpressionTextureSample_5'
+        Expressions[4] = MaterialExpressionTextureSample'HallasanPeninsula.MaterialExpressionTextureSample_14'
+        Expressions[6] = MaterialExpressionTextureSample'HallasanPeninsula.MaterialExpressionTextureSample_15'
+        Expressions[12] = MaterialExpressionTextureSample'HallasanPeninsula.MaterialExpressionTextureSample_16'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: Material3 ObjectName: MerchantParkApartments
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'ApartmentSalesBanner_norm'
+        ReferencedTextures[1] = Texture2D'Banner_Wind_NORM'
+        ReferencedTextures[2] = Texture2D'ApartmentSalesBanner_MerchantPark'
+    }
+    Expressions[13] =
+    {
+        Expressions[1] = MaterialExpressionTextureSample'MerchantParkApartments.MaterialExpressionTextureSample_8'
+        Expressions[4] = MaterialExpressionTextureSample'MerchantParkApartments.MaterialExpressionTextureSample_17'
+        Expressions[6] = MaterialExpressionTextureSample'MerchantParkApartments.MaterialExpressionTextureSample_18'
+        Expressions[12] = MaterialExpressionTextureSample'MerchantParkApartments.MaterialExpressionTextureSample_19'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: Material3 ObjectName: MerchantQuarter
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'ApartmentSalesBanner_norm'
+        ReferencedTextures[1] = Texture2D'Banner_Wind_NORM'
+        ReferencedTextures[2] = Texture2D'ApartmentSalesBanner_Merchantquarter'
+    }
+    Expressions[13] =
+    {
+        Expressions[1] = MaterialExpressionTextureSample'MerchantQuarter.MaterialExpressionTextureSample_4'
+        Expressions[4] = MaterialExpressionTextureSample'MerchantQuarter.MaterialExpressionTextureSample_20'
+        Expressions[6] = MaterialExpressionTextureSample'MerchantQuarter.MaterialExpressionTextureSample_21'
+        Expressions[12] = MaterialExpressionTextureSample'MerchantQuarter.MaterialExpressionTextureSample_22'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: Material3 ObjectName: MerchantVillage
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'ApartmentSalesBanner_norm'
+        ReferencedTextures[1] = Texture2D'Banner_Wind_NORM'
+        ReferencedTextures[2] = Texture2D'ApartmentSalesBanner_MerchantVillage'
+    }
+    Expressions[13] =
+    {
+        Expressions[1] = MaterialExpressionTextureSample'MerchantVillage.MaterialExpressionTextureSample_3'
+        Expressions[4] = MaterialExpressionTextureSample'MerchantVillage.MaterialExpressionTextureSample_23'
+        Expressions[6] = MaterialExpressionTextureSample'MerchantVillage.MaterialExpressionTextureSample_24'
+        Expressions[12] = MaterialExpressionTextureSample'MerchantVillage.MaterialExpressionTextureSample_25'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: Material3 ObjectName: RiversideLofts
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'ApartmentSalesBanner_norm'
+        ReferencedTextures[1] = Texture2D'Banner_Wind_NORM'
+        ReferencedTextures[2] = Texture2D'ApartmentSalesBanner_RiverfrontLofts'
+    }
+    Expressions[13] =
+    {
+        Expressions[1] = MaterialExpressionTextureSample'RiversideLofts.MaterialExpressionTextureSample_2'
+        Expressions[4] = MaterialExpressionTextureSample'RiversideLofts.MaterialExpressionTextureSample_26'
+        Expressions[6] = MaterialExpressionTextureSample'RiversideLofts.MaterialExpressionTextureSample_27'
+        Expressions[12] = MaterialExpressionTextureSample'RiversideLofts.MaterialExpressionTextureSample_28'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'ApartmentSalesBanner_norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'ApartmentSalesBanner_fortuneGateway' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_2
+ { Texture=Texture2D'Banner_Wind_NORM' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_4
+ { Texture=Texture2D'ApartmentSalesBanner_norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_10
+ { Texture=Texture2D'Banner_Wind_NORM' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_7
+ { Texture=Texture2D'ApartmentSalesBanner_GrestyMews' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_8
+ { Texture=Texture2D'ApartmentSalesBanner_norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_9
+ { Texture=Texture2D'ApartmentSalesBanner_norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_11
+ { Texture=Texture2D'ApartmentSalesBanner_norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_12
+ { Texture=Texture2D'ApartmentSalesBanner_norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_13
+ { Texture=Texture2D'Banner_Wind_NORM' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_6
+ { Texture=Texture2D'ApartmentSalesBanner_HallasanAspect' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_14
+ { Texture=Texture2D'ApartmentSalesBanner_norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_15
+ { Texture=Texture2D'ApartmentSalesBanner_norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_16
+ { Texture=Texture2D'Banner_Wind_NORM' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_5
+ { Texture=Texture2D'ApartmentSalesBanner_HallasanPeninsula' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_17
+ { Texture=Texture2D'ApartmentSalesBanner_norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_18
+ { Texture=Texture2D'ApartmentSalesBanner_norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_19
+ { Texture=Texture2D'Banner_Wind_NORM' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_8
+ { Texture=Texture2D'ApartmentSalesBanner_MerchantPark' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_20
+ { Texture=Texture2D'ApartmentSalesBanner_norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_21
+ { Texture=Texture2D'ApartmentSalesBanner_norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_22
+ { Texture=Texture2D'Banner_Wind_NORM' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_4
+ { Texture=Texture2D'ApartmentSalesBanner_Merchantquarter' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_23
+ { Texture=Texture2D'ApartmentSalesBanner_norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_24
+ { Texture=Texture2D'ApartmentSalesBanner_norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_25
+ { Texture=Texture2D'Banner_Wind_NORM' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_3
+ { Texture=Texture2D'ApartmentSalesBanner_MerchantVillage' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_2
+ { Texture=Texture2D'ApartmentSalesBanner_RiverfrontLofts' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_26
+ { Texture=Texture2D'ApartmentSalesBanner_norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_27
+ { Texture=Texture2D'ApartmentSalesBanner_norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_28
+ { Texture=Texture2D'Banner_Wind_NORM' }
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: Banner_Test
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0, Y=-3.05176e-05, Z=-133.31 }
+        BoxExtent = { X=0.0001, Y=378.758, Z=512.068 }
+        SphereRadius = 633.59
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'fortuneGateway', FirstIndex=0, NumFaces=12 }
+            }
+            NumVerts = 32
+            IndexCount = 36
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: Texture2D ObjectName: ApartmentSalesBanner_fortuneGateway
+    SizeX = 256
+    SizeY = 64
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: ApartmentSalesBanner_GrestyMews
+    SizeX = 64
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: ApartmentSalesBanner_HallasanAspect
+    SizeX = 64
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: ApartmentSalesBanner_HallasanPeninsula
+    SizeX = 64
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: ApartmentSalesBanner_MerchantPark
+    SizeX = 64
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: ApartmentSalesBanner_Merchantquarter
+    SizeX = 64
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: ApartmentSalesBanner_MerchantVillage
+    SizeX = 64
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: ApartmentSalesBanner_norm
+    SizeX = 64
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: ApartmentSalesBanner_RiverfrontLofts
+    SizeX = 64
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Banner_Wind_NORM
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 

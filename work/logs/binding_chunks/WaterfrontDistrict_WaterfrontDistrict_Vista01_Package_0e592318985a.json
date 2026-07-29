@@ -1,0 +1,249 @@
+{
+  "package": "WaterfrontDistrict_WaterfrontDistrict_Vista01_Package",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\WaterfrontDistrict\\Buildings\\WaterfrontDistrict_WaterfrontDistrict_Vista01_Package.UPK",
+  "district": "Waterfront",
+  "meshes": [
+    {
+      "mesh": "WD_Vista01_CityGroundPlane_VertexLit_LOD_0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TERR_Asphalt_01",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "WD_Vista01_CityPlantag_VertexLit_LOD_0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Conc_GreyLight",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Glass_4P_Plain",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "Metal_Wall_Modern_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 3,
+          "material": "Metal_M01_GreyLight",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 4,
+          "material": "Glass_4P_Black_FullyLit",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 5,
+          "material": "Glass_Transparent_Blue",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "WD_Vista01_CitySkyline_VertexLit_LOD_0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Skyline_Windows",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "Skyline_Windows_V2",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "Skyline_Windows_V3",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 3,
+          "material": "EmissiveLights_Red_Night",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 4,
+          "material": "Concrete_M03_GreyDeep",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 5,
+          "material": "NeonStrip_Red_VertPulse",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 6,
+          "material": "BandV2_Conc_Dark_1PNew",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 7,
+          "material": "RoofTop_Signs_01",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "WD_Vista01_CitySkylineextra_VertexLit_LOD_0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "EmissiveLights_CoolBlue_Night",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Glass_4P_Cyan",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "Metal_Brushed_SilverBlue",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 3,
+          "material": "NeonStrip_Blue",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 4,
+          "material": "RainScreen_BlueGreen",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 5,
+          "material": "EmissiveLights_Red_Night",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "WD_Vista01_Warehouses_VertexLit_LOD_0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "B44_Docks_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|terr_asphalt_01": [
+      "Terrain"
+    ],
+    "materialinstanceconstant|conc_greylight": [
+      "Concrete"
+    ],
+    "materialinstanceconstant|glass_4p_plain": [
+      "SkyscraperWindows"
+    ],
+    "material3|metal_wall_modern_mat": [
+      "Metal_Wall_Modern"
+    ],
+    "materialinstanceconstant|metal_m01_greylight": [
+      "Metal"
+    ],
+    "materialinstanceconstant|glass_4p_black_fullylit": [
+      "SkyscraperWindows"
+    ],
+    "materialinstanceconstant|glass_transparent_blue": [
+      "Glass"
+    ],
+    "material3|skyline_windows": [
+      "Waterfront_Skyline"
+    ],
+    "materialinstanceconstant|skyline_windows_v2": [
+      "Waterfront_Skyline"
+    ],
+    "materialinstanceconstant|skyline_windows_v3": [
+      "Waterfront_Skyline"
+    ],
+    "materialinstanceconstant|emissivelights_red_night": [
+      "Emissive"
+    ],
+    "materialinstanceconstant|concrete_m03_greydeep": [
+      "Concrete"
+    ],
+    "materialinstanceconstant|neonstrip_red_vertpulse": [
+      "Neon"
+    ],
+    "materialinstanceconstant|bandv2_conc_dark_1pnew": [
+      "SkyscraperWindows"
+    ],
+    "material3|rooftop_signs_01": [
+      "FD_NeonSigns"
+    ],
+    "materialinstanceconstant|emissivelights_coolblue_night": [
+      "Emissive"
+    ],
+    "materialinstanceconstant|glass_4p_cyan": [
+      "SkyscraperWindows"
+    ],
+    "materialinstanceconstant|metal_brushed_silverblue": [
+      "Metal"
+    ],
+    "materialinstanceconstant|neonstrip_blue": [
+      "Neon"
+    ],
+    "materialinstanceconstant|rainscreen_bluegreen": [
+      "RainScreen"
+    ],
+    "material3|b44_docks_mat": [
+      "FD_StaticMeshes"
+    ],
+    "material3|conc_parent": [
+      "Concrete"
+    ],
+    "material3|windows_new_parent": [
+      "SkyscraperWindows"
+    ],
+    "material3|metal_parent": [
+      "Metal"
+    ],
+    "material3|glass_fullylit_parent": [
+      "SkyscraperWindows"
+    ],
+    "material3|glass_transparent": [
+      "Glass"
+    ],
+    "materialinstanceconstant|emissivelights_red": [
+      "Emissive"
+    ],
+    "materialinstanceconstant|neonstrip_red": [
+      "Neon"
+    ],
+    "materialinstanceconstant|emissivelights_coolblue": [
+      "Emissive"
+    ],
+    "materialinstanceconstant|glass_4p_nointerior_cyan": [
+      "SkyscraperWindows"
+    ],
+    "material3|metal_brushed_parent": [
+      "Metal"
+    ],
+    "material3|neonstrip_parent": [
+      "Neon"
+    ],
+    "material3|rainscreen_parent": [
+      "RainScreen"
+    ],
+    "material3|emissivelights_parent": [
+      "Emissive"
+    ],
+    "material3|glass_parent": [
+      "SkyscraperWindows"
+    ]
+  }
+}

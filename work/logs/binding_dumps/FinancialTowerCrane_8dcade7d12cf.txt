@@ -1,0 +1,297 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTowerCrane.upk Ver: 564/33 Engine: 3908 Names: 167 Exports: 31 Imports: 26 Game: 80001D
+Loading Material3 FinancialTowerCrane_Mat from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTowerCrane.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading MaterialInstanceConstant FinancialTowerCrane_Blue_INST from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTowerCrane.upk
+StrProperty: unknown UMaterialInstanceConstant RWTGuid
+ArrayProperty: unknown UMaterialInstanceConstant Channels
+Loading StaticMesh3 FinancialTowerCrane from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTowerCrane.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_1"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_1"
+Loading StaticMesh3 FinancialTowerCrane_Double from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTowerCrane.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_3"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_3"
+Loading StaticMesh3 FinancialTowerCraneTall_LOD0 from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTowerCrane.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_3"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_3"
+Loading Texture2D FinancialTowerCrane_DiffSpec from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTowerCrane.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FinancialTowerCrane_Mask from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTowerCrane.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FinancialTowerCrane_Norm from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTowerCrane.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D FinancialTowerCrane_Opac from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTowerCrane.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 206 allocs, 2.14 MBytes serialized in 29 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: FinancialTowerCrane_Mat
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'FinancialTowerCrane_Norm'
+        ReferencedTextures[1] = Texture2D'FinancialTowerCrane_DiffSpec'
+        ReferencedTextures[2] = Texture2D'FinancialTowerCrane_Mask'
+        ReferencedTextures[3] = Texture2D'FinancialTowerCrane_Opac'
+    }
+    Expressions[9] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'FinancialTowerCrane_Mat.MaterialExpressionTextureSample_4'
+        Expressions[3] = MaterialExpressionTextureSample'FinancialTowerCrane_Mat.MaterialExpressionTextureSample_6'
+        Expressions[4] = MaterialExpressionVectorParameter'FinancialTowerCrane_Mat.MaterialExpressionVectorParameter_1'
+        Expressions[7] = MaterialExpressionTextureSample'FinancialTowerCrane_Mat.MaterialExpressionTextureSample_7'
+        Expressions[8] = MaterialExpressionTextureSample'FinancialTowerCrane_Mat.MaterialExpressionTextureSample_8'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.2
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[1] =
+    {
+        CollectedVectorParameters[0] =
+        {
+            Value = { R=1, G=0, B=0, A=1 }
+            Name = Colour
+            Group = None
+        }
+    }
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_4
+ { Texture=Texture2D'FinancialTowerCrane_Norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_6
+ { Texture=Texture2D'FinancialTowerCrane_Mask' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_7
+ { Texture=Texture2D'FinancialTowerCrane_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_8
+ { Texture=Texture2D'FinancialTowerCrane_Opac' }
+
+Object info:
+============
+ClassName: MaterialExpressionVectorParameter ObjectName: MaterialExpressionVectorParameter_1
+    DefaultValue = { R=1, G=0, B=0, A=1 }
+    ParameterName = Colour
+    Group = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: FinancialTowerCrane_Blue_INST
+    Parent = Material3'FinancialTowerCrane_Mat'
+    ScalarParameterValues[0] = {}
+    TextureParameterValues[0] = {}
+    VectorParameterValues[1] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterInfo = 
+            ParameterValue = { R=0, G=0, B=0.38891, A=1 }
+            ParameterName = Colour
+        }
+    }
+    BasePropertyOverrides = 
+    StaticParameters = 
+    RuntimeVirtualTextureParameterValues[0] = {}
+    FontParameterValues[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialTowerCrane
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=681.728, Y=3.05176e-05, Z=1807.26 }
+        BoxExtent = { X=1955.24, Y=320.58, Z=1807.26 }
+        SphereRadius = 2308.38
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[2] =
+            {
+                Sections[0] = { Material=Material3'FinancialTowerCrane_Mat', FirstIndex=0, NumFaces=656 }
+                Sections[1] = { Material=None, FirstIndex=0, NumFaces=0 }
+            }
+            NumVerts = 2256
+            IndexCount = 1968
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialTowerCrane_Double
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=681.728, Y=3.05176e-05, Z=2406.3 }
+        BoxExtent = { X=1955.24, Y=320.58, Z=2406.3 }
+        SphereRadius = 2671.54
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialTowerCrane_Mat', FirstIndex=0, NumFaces=680 }
+            }
+            NumVerts = 2352
+            IndexCount = 2040
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialTowerCraneTall_LOD0
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=672.105, Y=-35.0893, Z=3437.77 }
+        BoxExtent = { X=1955.24, Y=352.67, Z=3437.48 }
+        SphereRadius = 3583.33
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[3] =
+            {
+                Sections[0] = { Material=Material3'FinancialTowerCrane_Mat', FirstIndex=0, NumFaces=956 }
+                Sections[1] = { Material=None, FirstIndex=0, NumFaces=0 }
+                Sections[2] = { Material=None, FirstIndex=0, NumFaces=0 }
+            }
+            NumVerts = 3296
+            IndexCount = 2868
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialTowerCrane_DiffSpec
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialTowerCrane_Mask
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialTowerCrane_Norm
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialTowerCrane_Opac
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 

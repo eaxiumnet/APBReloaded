@@ -1,0 +1,52 @@
+{
+  "package": "WaterfrontCleats",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\WaterfrontDistrict\\PropMaterials\\WaterfrontCleats.upk",
+  "district": "Waterfront",
+  "meshes": [
+    {
+      "mesh": "WaterfrontCleats_Button",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "WaterfrontCleats_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "WaterfrontCleats_Curved",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "WaterfrontCleats_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "WaterfrontCleats_Hollow",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "WaterfrontCleats_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "WaterfrontCleats_HollowRope",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "WaterfrontCleats_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|waterfrontcleats_mat": [
+      "WaterfrontCleats"
+    ]
+  }
+}

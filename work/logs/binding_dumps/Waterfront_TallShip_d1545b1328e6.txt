@@ -1,0 +1,216 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/WaterfrontDistrict/PropMaterials/Waterfront_TallShip.upk Ver: 564/33 Engine: 3908 Names: 80 Exports: 14 Imports: 10 Game: 80001D
+Loading Material3 SHIP_AlphaDetails_MAT from package MaterialDatabase/WaterfrontDistrict/PropMaterials/Waterfront_TallShip.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 SHIP_DeckDetails_MAT from package MaterialDatabase/WaterfrontDistrict/PropMaterials/Waterfront_TallShip.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 SHIP_Details_MAT from package MaterialDatabase/WaterfrontDistrict/PropMaterials/Waterfront_TallShip.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 SHIP_Hull01_MAT from package MaterialDatabase/WaterfrontDistrict/PropMaterials/Waterfront_TallShip.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Texture2D SHIP_AlphaDetails from package MaterialDatabase/WaterfrontDistrict/PropMaterials/Waterfront_TallShip.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D SHIP_DeckDetails from package MaterialDatabase/WaterfrontDistrict/PropMaterials/Waterfront_TallShip.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D SHIP_Details from package MaterialDatabase/WaterfrontDistrict/PropMaterials/Waterfront_TallShip.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D SHIP_Hull01 from package MaterialDatabase/WaterfrontDistrict/PropMaterials/Waterfront_TallShip.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 156 allocs, 2.04 MBytes serialized in 32 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: SHIP_AlphaDetails_MAT
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[1] = { Texture2D'SHIP_AlphaDetails' }
+    Expressions[1] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'SHIP_AlphaDetails_MAT.MaterialExpressionTextureSample_6'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: Material3 ObjectName: SHIP_DeckDetails_MAT
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[1] = { Texture2D'SHIP_DeckDetails' }
+    Expressions[1] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'SHIP_DeckDetails_MAT.MaterialExpressionTextureSample_2'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: Material3 ObjectName: SHIP_Details_MAT
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[1] = { Texture2D'SHIP_Details' }
+    Expressions[1] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'SHIP_Details_MAT.MaterialExpressionTextureSample_4'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: Material3 ObjectName: SHIP_Hull01_MAT
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[1] = { Texture2D'SHIP_Hull01' }
+    Expressions[1] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'SHIP_Hull01_MAT.MaterialExpressionTextureSample_3'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_6
+ { Texture=Texture2D'SHIP_AlphaDetails' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_2
+ { Texture=Texture2D'SHIP_DeckDetails' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_4
+ { Texture=Texture2D'SHIP_Details' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_3
+ { Texture=Texture2D'SHIP_Hull01' }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: SHIP_AlphaDetails
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: SHIP_DeckDetails
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: SHIP_Details
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: SHIP_Hull01
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 

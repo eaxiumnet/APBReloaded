@@ -1,0 +1,22 @@
+{
+  "package": "FinancialSnowPile",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\FinancialDistrict\\PropMaterials\\FinancialSnowPile.upk",
+  "district": "Financial",
+  "meshes": [
+    {
+      "mesh": "SnowPile_LOD0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialSnowPile_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|financialsnowpile_mat": [
+      "FinancialSnowPile"
+    ]
+  }
+}

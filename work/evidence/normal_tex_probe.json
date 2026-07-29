@@ -1,0 +1,54 @@
+{
+  "master_intact": {
+    "loaded": true,
+    "texture_params": [
+      "T_Diffuse",
+      "T_Normal",
+      "T_SpecMask",
+      "T_Emissive"
+    ],
+    "param_count": 4
+  },
+  "candidates": {
+    "/Engine/EngineMaterials/DefaultNormal": {
+      "does_asset_exist": false,
+      "load": false
+    },
+    "/Engine/EngineMaterials/DefaultNormal.DefaultNormal": {
+      "does_asset_exist": false,
+      "load": false
+    },
+    "/Engine/EngineMaterials/BaseFlattenNormalMap": {
+      "does_asset_exist": true,
+      "load": true,
+      "class": "Texture2D",
+      "compression_settings": "<TextureCompressionSettings.TC_NORMALMAP: 1>",
+      "srgb": "False"
+    },
+    "/Engine/EngineMaterials/FlatNormal": {
+      "does_asset_exist": false,
+      "load": false
+    },
+    "/Engine/EngineResources/DefaultTexture": {
+      "does_asset_exist": true,
+      "load": true,
+      "class": "Texture2D",
+      "compression_settings": "<TextureCompressionSettings.TC_DEFAULT: 0>",
+      "srgb": "True"
+    }
+  },
+  "normalmap_textures": [
+    {
+      "path": "/Engine/EngineMaterials/BaseFlattenNormalMap.BaseFlattenNormalMap",
+      "compression": "<TextureCompressionSettings.TC_NORMALMAP: 1>"
+    },
+    {
+      "path": "/Engine/EngineMaterials/BaseFlattenNormalMap_VT.BaseFlattenNormalMap_VT",
+      "compression": "<TextureCompressionSettings.TC_NORMALMAP: 1>"
+    },
+    {
+      "path": "/Engine/EngineMaterials/T_Default_Material_Grid_N.T_Default_Material_Grid_N",
+      "compression": "<TextureCompressionSettings.TC_NORMALMAP: 1>"
+    }
+  ]
+}

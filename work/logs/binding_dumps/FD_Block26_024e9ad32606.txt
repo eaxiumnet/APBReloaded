@@ -1,0 +1,191 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block26.upk Ver: 564/33 Engine: 3908 Names: 75 Exports: 11 Imports: 14 Game: 80001D
+Loading Material3 HotelSign from package MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block26.upk
+Loading package: MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk Ver: 564/33 Engine: 3908 Names: 259 Exports: 400 Imports: 47 Game: 80001D
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading StaticMesh3 B26_Banner from package MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block26.upk
+Loading package: MaterialDatabase/GenericMaterials/Metal/Metal.upk Ver: 564/33 Engine: 3908 Names: 274 Exports: 407 Imports: 43 Game: 80001D
+Loading StaticMesh3 B26_HotelSign from package MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block26.upk
+Loading Texture2D NEON_Flicker_01 from package MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block26.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Spectrum from package MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Material3 Banner_CommunityHall_01 from package MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk
+Loading package: MaterialDatabase/FinancialDistrict/Signs/Banners.upk Ver: 564/33 Engine: 3908 Names: 122 Exports: 55 Imports: 17 Game: 80001D
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading MaterialInstanceConstant Metal_M03_GreyDark from package MaterialDatabase/GenericMaterials/Metal/Metal.upk
+StrProperty: unknown UMaterialInstanceConstant RWTGuid
+ArrayProperty: unknown UMaterialInstanceConstant Channels
+ObjectProperty: unknown UMaterialInstanceConstant BakedMaterial
+FloatProperty: unknown UMaterialInstanceConstant m_BakedTextureCoordinate
+Loading Texture2D Banner_Wind_NORM from package MaterialDatabase/FinancialDistrict/Signs/Banners.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D Banner_CommunityHall_Border from package MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Material3 Metal_PARENT from package MaterialDatabase/GenericMaterials/Metal/Metal.upk
+BoolProperty: unknown UMaterial3 bForceSafeBuildingCheck
+Loading package: MaterialDatabase/GenericMaterials/Shared_Maps.upk Ver: 564/33 Engine: 3908 Names: 128 Exports: 50 Imports: 15 Game: 80001D
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading package: MaterialDatabase/GenericMaterials/GraffitiMaps.upk Ver: 564/33 Engine: 3908 Names: 93 Exports: 18 Imports: 9 Game: 80001D
+BoolProperty: unknown UMaterialExpressionVectorParameter bRealtimePreview
+Loading Texture2D DirtOverlay_01 from package MaterialDatabase/GenericMaterials/Shared_Maps.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Metal_Generic_01 from package MaterialDatabase/GenericMaterials/Metal/Metal.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading TextureCube3 Chrome_CubeReflection from package MaterialDatabase/GenericMaterials/Metal/Metal.upk
+ByteProperty: unknown UTextureCube3 LODCategory
+Loading Texture2D BlackTransparent from package MaterialDatabase/GenericMaterials/GraffitiMaps.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Metal_Checkerplate_Norm from package MaterialDatabase/GenericMaterials/Metal/Metal.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D Chrome_CubeReflectionPosX from package MaterialDatabase/GenericMaterials/Metal/Metal.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Chrome_CubeReflectionNegX from package MaterialDatabase/GenericMaterials/Metal/Metal.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Chrome_CubeReflectionPosY from package MaterialDatabase/GenericMaterials/Metal/Metal.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Chrome_CubeReflectionNegY from package MaterialDatabase/GenericMaterials/Metal/Metal.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Chrome_CubeReflectionPosZ from package MaterialDatabase/GenericMaterials/Metal/Metal.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Chrome_CubeReflectionNegZ from package MaterialDatabase/GenericMaterials/Metal/Metal.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 443 allocs, 2.66 MBytes serialized in 60 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: HotelSign
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[2] = { Texture2D'Spectrum', Texture2D'NEON_Flicker_01' }
+    Expressions[5] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'HotelSign.MaterialExpressionTextureSample_0'
+        Expressions[2] = MaterialExpressionTextureSample'HotelSign.MaterialExpressionTextureSample_1'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'Spectrum' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'NEON_Flicker_01' }
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: B26_Banner
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=1.80106, Y=3.37732, Z=-112.745 }
+        BoxExtent = { X=353.461, Y=382.799, Z=241.684 }
+        SphereRadius = 562.926
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[2] =
+            {
+                Sections[0] = { Material=Material3'Banner_CommunityHall_01', FirstIndex=0, NumFaces=8 }
+                Sections[1] =
+                {
+                    Material = MaterialInstanceConstant'Metal_M03_GreyDark'
+                    FirstIndex = 24
+                    NumFaces = 42
+                }
+            }
+            NumVerts = 194
+            IndexCount = 150
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: B26_HotelSign
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-1.74355, Y=1.89476, Z=-0.00012207 }
+        BoxExtent = { X=170.585, Y=158.564, Z=591.672 }
+        SphereRadius = 630.537
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[2] =
+            {
+                Sections[0] =
+                {
+                    Material = MaterialInstanceConstant'Metal_M03_GreyDark'
+                    FirstIndex = 0
+                    NumFaces = 504
+                }
+                Sections[1] = { Material=Material3'HotelSign', FirstIndex=1512, NumFaces=132 }
+            }
+            NumVerts = 1848
+            IndexCount = 1908
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: Texture2D ObjectName: NEON_Flicker_01
+    SizeX = 64
+    SizeY = 64
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 6
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 

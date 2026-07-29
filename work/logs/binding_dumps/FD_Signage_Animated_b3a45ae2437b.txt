@@ -1,0 +1,549 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/FinancialDistrict/Signs/FD_Signage_Animated.upk Ver: 564/33 Engine: 3908 Names: 181 Exports: 152 Imports: 48 Game: 80001D
+Loading Material3 Banzai-Spiral_Mat from package MaterialDatabase/FinancialDistrict/Signs/FD_Signage_Animated.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 DissolveBillboard_PARENT from package MaterialDatabase/FinancialDistrict/Signs/FD_Signage_Animated.upk
+Loading package: MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk Ver: 564/33 Engine: 3908 Names: 259 Exports: 400 Imports: 47 Game: 80001D
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 LCDEffect_PARENT from package MaterialDatabase/FinancialDistrict/Signs/FD_Signage_Animated.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 NewSign from package MaterialDatabase/FinancialDistrict/Signs/FD_Signage_Animated.upk
+Loading package: MaterialDatabase/GenericMaterials/Misc/Neon.upk Ver: 564/33 Engine: 3908 Names: 174 Exports: 79 Imports: 30 Game: 80001D
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 RTW from package MaterialDatabase/FinancialDistrict/Signs/FD_Signage_Animated.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+BoolProperty: unknown UMaterialExpressionVectorParameter bRealtimePreview
+BoolProperty: unknown UMaterialExpressionVectorParameter bRealtimePreview
+BoolProperty: unknown UMaterialExpressionVectorParameter bRealtimePreview
+Loading MaterialInstanceConstant DissolveBillboard_Enjinn from package MaterialDatabase/FinancialDistrict/Signs/FD_Signage_Animated.upk
+StrProperty: unknown UMaterialInstanceConstant RWTGuid
+ArrayProperty: unknown UMaterialInstanceConstant Channels
+Loading MaterialInstanceConstant DissolveBillboard_Enjinn2 from package MaterialDatabase/FinancialDistrict/Signs/FD_Signage_Animated.upk
+StrProperty: unknown UMaterialInstanceConstant RWTGuid
+ArrayProperty: unknown UMaterialInstanceConstant Channels
+Loading MaterialInstanceConstant DissolveBillboard_Gunpod from package MaterialDatabase/FinancialDistrict/Signs/FD_Signage_Animated.upk
+StrProperty: unknown UMaterialInstanceConstant RWTGuid
+ArrayProperty: unknown UMaterialInstanceConstant Channels
+Loading MaterialInstanceConstant LCDEffect_4Life from package MaterialDatabase/FinancialDistrict/Signs/FD_Signage_Animated.upk
+StrProperty: unknown UMaterialInstanceConstant RWTGuid
+ArrayProperty: unknown UMaterialInstanceConstant Channels
+Loading Texture2D Banzai-Spiral from package MaterialDatabase/FinancialDistrict/Signs/FD_Signage_Animated.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D Banzai-Spiral-text from package MaterialDatabase/FinancialDistrict/Signs/FD_Signage_Animated.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D DissolveNoise from package MaterialDatabase/FinancialDistrict/Signs/FD_Signage_Animated.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Pixels from package MaterialDatabase/FinancialDistrict/Signs/FD_Signage_Animated.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Text from package MaterialDatabase/FinancialDistrict/Signs/FD_Signage_Animated.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Enjinn from package MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Enjinn_02 from package MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D 4Life from package MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D PulseDirectionSeperator from package MaterialDatabase/GenericMaterials/Misc/Neon.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Realtime from package MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Enjinn_03 from package MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Enjinn_04 from package MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D GunsIpod from package MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D GunsIpod_02 from package MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 541 allocs, 6.46 MBytes serialized in 191 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: Banzai-Spiral_Mat
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] = { Texture2D'Pixels', Texture2D'Banzai-Spiral-text', Texture2D'Banzai-Spiral' }
+    Expressions[43] =
+    {
+        Expressions[2] = MaterialExpressionTextureSample'Banzai-Spiral_Mat.MaterialExpressionTextureSample_1'
+        Expressions[14] = MaterialExpressionTextureSample'Banzai-Spiral_Mat.MaterialExpressionTextureSample_0'
+        Expressions[34] = MaterialExpressionVectorParameter'Banzai-Spiral_Mat.MaterialExpressionVectorParameter_0'
+        Expressions[35] = MaterialExpressionVectorParameter'Banzai-Spiral_Mat.MaterialExpressionVectorParameter_2'
+        Expressions[36] = MaterialExpressionVectorParameter'Banzai-Spiral_Mat.MaterialExpressionVectorParameter_4'
+        Expressions[38] = MaterialExpressionTextureSample'Banzai-Spiral_Mat.MaterialExpressionTextureSample_2'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[3] =
+    {
+        CollectedVectorParameters[0] =
+        {
+            Value = { R=1, G=0, B=0, A=1 }
+            Name = None
+            Group = None
+        }
+        CollectedVectorParameters[1] =
+        {
+            Value = { R=1, G=1, B=1, A=1 }
+            Name = None
+            Group = None
+        }
+        CollectedVectorParameters[2] =
+        {
+            Value = { R=1, G=1, B=1, A=1 }
+            Name = None
+            Group = None
+        }
+    }
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: Material3 ObjectName: DissolveBillboard_PARENT
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'Pixels'
+        ReferencedTextures[1] = Texture2D'Enjinn'
+        ReferencedTextures[2] = Texture2D'Enjinn_02'
+        ReferencedTextures[3] = Texture2D'DissolveNoise'
+    }
+    Expressions[32] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'DissolveBillboard_PARENT.MaterialExpressionTextureSample_0'
+        Expressions[1] = MaterialExpressionTextureSample'DissolveBillboard_PARENT.MaterialExpressionTextureSample_1'
+        Expressions[7] = MaterialExpressionTextureSample'DissolveBillboard_PARENT.MaterialExpressionTextureSample_2'
+        Expressions[13] = MaterialExpressionTextureSample'DissolveBillboard_PARENT.MaterialExpressionTextureSample_3'
+        Expressions[28] = MaterialExpressionTextureSampleParameter2D'DissolveBillboard_PARENT.MaterialExpressionTextureSampleParameter2D_0'
+        Expressions[29] = MaterialExpressionTextureSampleParameter2D'DissolveBillboard_PARENT.MaterialExpressionTextureSampleParameter2D_1'
+        Expressions[31] = MaterialExpressionScalarParameter'DissolveBillboard_PARENT.MaterialExpressionScalarParameter_0'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[2] =
+    {
+        CollectedTextureParameters[0] = { Texture=Texture2D'Enjinn', Name=Picture1, Group=None }
+        CollectedTextureParameters[1] = { Texture=Texture2D'Enjinn_02', Name=Picture2, Group=None }
+    }
+    CollectedScalarParameters[1] =
+    {
+        CollectedScalarParameters[0] = { Value=0, Name=TimeOffset, Group=None }
+    }
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: Material3 ObjectName: LCDEffect_PARENT
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[1] = { Texture2D'4Life' }
+    Expressions[7] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'LCDEffect_PARENT.MaterialExpressionTextureSample_4'
+        Expressions[6] = MaterialExpressionTextureSampleParameter2D'LCDEffect_PARENT.MaterialExpressionTextureSampleParameter2D_2'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[1] =
+    {
+        CollectedTextureParameters[0] = { Texture=Texture2D'4Life', Name=Picture, Group=None }
+    }
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: Material3 ObjectName: NewSign
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] = { Texture2D'Pixels', Texture2D'PulseDirectionSeperator', Texture2D'Text' }
+    Expressions[39] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'NewSign.MaterialExpressionTextureSample_5'
+        Expressions[17] = MaterialExpressionVectorParameter'NewSign.MaterialExpressionVectorParameter_0'
+        Expressions[30] = MaterialExpressionTextureSample'NewSign.MaterialExpressionTextureSample_6'
+        Expressions[32] = MaterialExpressionVectorParameter'NewSign.MaterialExpressionVectorParameter_3'
+        Expressions[34] = MaterialExpressionTextureSample'NewSign.MaterialExpressionTextureSample_2'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[2] =
+    {
+        CollectedVectorParameters[0] =
+        {
+            Value = { R=0.965815, G=0, B=0, A=1 }
+            Name = None
+            Group = None
+        }
+        CollectedVectorParameters[1] =
+        {
+            Value = { R=1, G=1, B=1, A=1 }
+            Name = None
+            Group = None
+        }
+    }
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: Material3 ObjectName: RTW
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[1] = { Texture2D'Realtime' }
+    Expressions[7] = { MaterialExpressionTextureSample'RTW.MaterialExpressionTextureSample_0' }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionScalarParameter ObjectName: MaterialExpressionScalarParameter_0
+ { DefaultValue=0, ParameterName=TimeOffset, Group=None }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'Banzai-Spiral' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'Banzai-Spiral-text' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_2
+ { Texture=Texture2D'Pixels' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'Enjinn' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'Enjinn_02' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_2
+ { Texture=Texture2D'DissolveNoise' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_3
+ { Texture=Texture2D'Pixels' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_4
+ { Texture=Texture2D'4Life' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_2
+ { Texture=Texture2D'Pixels' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_5
+ { Texture=Texture2D'PulseDirectionSeperator' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_6
+ { Texture=Texture2D'Text' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'Realtime' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSampleParameter2D ObjectName: MaterialExpressionTextureSampleParameter2D_0
+ { ParameterName=Picture1, Group=None, Texture=Texture2D'Enjinn' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSampleParameter2D ObjectName: MaterialExpressionTextureSampleParameter2D_1
+ { ParameterName=Picture2, Group=None, Texture=Texture2D'Enjinn_02' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSampleParameter2D ObjectName: MaterialExpressionTextureSampleParameter2D_2
+ { ParameterName=Picture, Group=None, Texture=Texture2D'4Life' }
+
+Object info:
+============
+ClassName: MaterialExpressionVectorParameter ObjectName: MaterialExpressionVectorParameter_0
+    DefaultValue = { R=1, G=0, B=0, A=1 }
+    ParameterName = None
+    Group = None
+
+Object info:
+============
+ClassName: MaterialExpressionVectorParameter ObjectName: MaterialExpressionVectorParameter_2
+    DefaultValue = { R=1, G=1, B=1, A=1 }
+    ParameterName = None
+    Group = None
+
+Object info:
+============
+ClassName: MaterialExpressionVectorParameter ObjectName: MaterialExpressionVectorParameter_4
+    DefaultValue = { R=1, G=1, B=1, A=1 }
+    ParameterName = None
+    Group = None
+
+Object info:
+============
+ClassName: MaterialExpressionVectorParameter ObjectName: MaterialExpressionVectorParameter_0
+    DefaultValue = { R=0.965815, G=0, B=0, A=1 }
+    ParameterName = None
+    Group = None
+
+Object info:
+============
+ClassName: MaterialExpressionVectorParameter ObjectName: MaterialExpressionVectorParameter_3
+    DefaultValue = { R=1, G=1, B=1, A=1 }
+    ParameterName = None
+    Group = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: DissolveBillboard_Enjinn
+    Parent = Material3'DissolveBillboard_PARENT'
+    ScalarParameterValues[0] = {}
+    TextureParameterValues[0] = {}
+    VectorParameterValues[0] = {}
+    BasePropertyOverrides = 
+    StaticParameters = 
+    RuntimeVirtualTextureParameterValues[0] = {}
+    FontParameterValues[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: DissolveBillboard_Enjinn2
+    Parent = Material3'DissolveBillboard_PARENT'
+    ScalarParameterValues[0] = {}
+    TextureParameterValues[2] =
+    {
+        TextureParameterValues[0] = { ParameterInfo=, ParameterValue=Texture2D'Enjinn_03', ParameterName=Picture1 }
+        TextureParameterValues[1] = { ParameterInfo=, ParameterValue=Texture2D'Enjinn_04', ParameterName=Picture2 }
+    }
+    VectorParameterValues[0] = {}
+    BasePropertyOverrides = 
+    StaticParameters = 
+    RuntimeVirtualTextureParameterValues[0] = {}
+    FontParameterValues[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: DissolveBillboard_Gunpod
+    Parent = Material3'DissolveBillboard_PARENT'
+    ScalarParameterValues[1] =
+    {
+        ScalarParameterValues[0] = { ParameterInfo=, ParameterValue=3.6, ParameterName=TimeOffset }
+    }
+    TextureParameterValues[2] =
+    {
+        TextureParameterValues[0] = { ParameterInfo=, ParameterValue=Texture2D'GunsIpod', ParameterName=Picture1 }
+        TextureParameterValues[1] = { ParameterInfo=, ParameterValue=Texture2D'GunsIpod_02', ParameterName=Picture2 }
+    }
+    VectorParameterValues[0] = {}
+    BasePropertyOverrides = 
+    StaticParameters = 
+    RuntimeVirtualTextureParameterValues[0] = {}
+    FontParameterValues[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: LCDEffect_4Life
+    Parent = Material3'LCDEffect_PARENT'
+    ScalarParameterValues[0] = {}
+    TextureParameterValues[0] = {}
+    VectorParameterValues[0] = {}
+    BasePropertyOverrides = 
+    StaticParameters = 
+    RuntimeVirtualTextureParameterValues[0] = {}
+    FontParameterValues[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Banzai-Spiral
+    SizeX = 512
+    SizeY = 512
+    Format = PF_A8R8G8B8 (2)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Banzai-Spiral-text
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: DissolveNoise
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Pixels
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Text
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 

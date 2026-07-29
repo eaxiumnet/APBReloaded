@@ -1,0 +1,57 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.0 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/FinancialDistrict/FeatureMaterials/WindowGuards.upk Ver: 564/33 Engine: 3908 Names: 71 Exports: 6 Imports: 7 Game: 80001D
+Loading Material3 WindowGuards from package MaterialDatabase/FinancialDistrict/FeatureMaterials/WindowGuards.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Texture2D WindowGuard_DiffAlpha from package MaterialDatabase/FinancialDistrict/FeatureMaterials/WindowGuards.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 53 allocs, 0.04 MBytes serialized in 3 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: WindowGuards
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[1] = { Texture2D'WindowGuard_DiffAlpha' }
+    Expressions[2] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'WindowGuards.MaterialExpressionTextureSample_0'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.6
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'WindowGuard_DiffAlpha' }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: WindowGuard_DiffAlpha
+    SizeX = 128
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 

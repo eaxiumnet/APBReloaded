@@ -1,0 +1,369 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.0 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTicketMachine.upk Ver: 564/33 Engine: 3908 Names: 268 Exports: 94 Imports: 69 Game: 80001D
+Loading Material3 FinancialTicketMachine_Damage_MAT from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTicketMachine.upk
+Loading package: MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk Ver: 564/33 Engine: 3908 Names: 153 Exports: 58 Imports: 26 Game: 80001D
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 FinancialTicketMachine_MAT from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTicketMachine.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading StaticMesh3 FinancialTicketMachine from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTicketMachine.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_1"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_1"
+Loading StaticMesh3 FinancialTicketMachine_damage1 from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTicketMachine.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_9"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_9"
+Loading StaticMesh3 FinancialTicketMachine_damage2 from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTicketMachine.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_0"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_0"
+Loading Texture2D FinancialTicketMachine_Damage from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTicketMachine.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FinancialTicketMachine_DiffSpec from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTicketMachine.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FinancialTicketMachine_Emis from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTicketMachine.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FinancialTicketMachine_EnvMask from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTicketMachine.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FinancialTicketMachine_Norm from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTicketMachine.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading TextureCube3 SkyBlue from package MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk
+ByteProperty: unknown UTextureCube3 LODCategory
+Loading Texture2D Cube_L from package MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Cube_R from package MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Cube_F from package MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Cube_B from package MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Cube_T from package MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Cube_A from package MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 364 allocs, 2.83 MBytes serialized in 51 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: FinancialTicketMachine_Damage_MAT
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[5] =
+    {
+        ReferencedTextures[0] = Texture2D'FinancialTicketMachine_Norm'
+        ReferencedTextures[1] = Texture2D'FinancialTicketMachine_Damage'
+        ReferencedTextures[2] = Texture2D'FinancialTicketMachine_Emis'
+        ReferencedTextures[3] = Texture2D'FinancialTicketMachine_EnvMask'
+        ReferencedTextures[4] = TextureCube3'SkyBlue'
+    }
+    Expressions[19] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'FinancialTicketMachine_Damage_MAT.MaterialExpressionTextureSample_1'
+        Expressions[1] = MaterialExpressionTextureSample'FinancialTicketMachine_Damage_MAT.MaterialExpressionTextureSample_4'
+        Expressions[8] = MaterialExpressionTextureSample'FinancialTicketMachine_Damage_MAT.MaterialExpressionTextureSample_10'
+        Expressions[12] = MaterialExpressionTextureSample'FinancialTicketMachine_Damage_MAT.MaterialExpressionTextureSample_0'
+        Expressions[14] = MaterialExpressionTextureSample'FinancialTicketMachine_Damage_MAT.MaterialExpressionTextureSample_3'
+        Expressions[16] = MaterialExpressionTextureSample'FinancialTicketMachine_Damage_MAT.MaterialExpressionTextureSample_5'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: Material3 ObjectName: FinancialTicketMachine_MAT
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[5] =
+    {
+        ReferencedTextures[0] = Texture2D'FinancialTicketMachine_Norm'
+        ReferencedTextures[1] = Texture2D'FinancialTicketMachine_DiffSpec'
+        ReferencedTextures[2] = Texture2D'FinancialTicketMachine_Emis'
+        ReferencedTextures[3] = Texture2D'FinancialTicketMachine_EnvMask'
+        ReferencedTextures[4] = TextureCube3'SkyBlue'
+    }
+    Expressions[17] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'FinancialTicketMachine_MAT.MaterialExpressionTextureSample_1'
+        Expressions[1] = MaterialExpressionTextureSample'FinancialTicketMachine_MAT.MaterialExpressionTextureSample_2'
+        Expressions[2] = MaterialExpressionTextureSample'FinancialTicketMachine_MAT.MaterialExpressionTextureSample_4'
+        Expressions[9] = MaterialExpressionTextureSample'FinancialTicketMachine_MAT.MaterialExpressionTextureSample_10'
+        Expressions[10] = MaterialExpressionTextureSample'FinancialTicketMachine_MAT.MaterialExpressionTextureSample_11'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'FinancialTicketMachine_Damage' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'FinancialTicketMachine_Norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_10
+ { Texture=Texture2D'FinancialTicketMachine_EnvMask' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_3
+ { Texture=Texture2D'FinancialTicketMachine_Damage' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_4
+ { Texture=Texture2D'FinancialTicketMachine_Emis' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_5
+ { Texture=Texture2D'FinancialTicketMachine_Damage' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'FinancialTicketMachine_Norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_10
+ { Texture=Texture2D'FinancialTicketMachine_EnvMask' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_11
+ { Texture=Texture2D'FinancialTicketMachine_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_2
+ { Texture=Texture2D'FinancialTicketMachine_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_4
+ { Texture=Texture2D'FinancialTicketMachine_Emis' }
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialTicketMachine
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-0.973396, Y=0, Z=128.272 }
+        BoxExtent = { X=111.697, Y=124.174, Z=128.272 }
+        SphereRadius = 201.123
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialTicketMachine_MAT', FirstIndex=0, NumFaces=375 }
+            }
+            NumVerts = 1066
+            IndexCount = 1125
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialTicketMachine_damage1
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=2.2527, Y=0.0814514, Z=128.272 }
+        BoxExtent = { X=112.534, Y=129.561, Z=128.272 }
+        SphereRadius = 201.804
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] =
+                {
+                    Material = Material3'FinancialTicketMachine_Damage_MAT'
+                    FirstIndex = 0
+                    NumFaces = 467
+                }
+            }
+            NumVerts = 1240
+            IndexCount = 1401
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialTicketMachine_damage2
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0.435951, Y=0.376755, Z=128.272 }
+        BoxExtent = { X=120.225, Y=128.449, Z=128.272 }
+        SphereRadius = 201.09
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] =
+                {
+                    Material = Material3'FinancialTicketMachine_Damage_MAT'
+                    FirstIndex = 0
+                    NumFaces = 501
+                }
+            }
+            NumVerts = 1342
+            IndexCount = 1503
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialTicketMachine_Damage
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialTicketMachine_DiffSpec
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialTicketMachine_Emis
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialTicketMachine_EnvMask
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialTicketMachine_Norm
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source = 

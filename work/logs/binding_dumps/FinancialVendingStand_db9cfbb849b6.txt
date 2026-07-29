@@ -1,0 +1,554 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/FinancialDistrict/PropMaterials/FinancialVendingStand.upk Ver: 564/33 Engine: 3908 Names: 253 Exports: 95 Imports: 58 Game: 80001D
+Loading Material3 FinancialVendingStand_Damage_MAT from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialVendingStand.upk
+Loading package: MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk Ver: 564/33 Engine: 3908 Names: 153 Exports: 58 Imports: 26 Game: 80001D
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 FinancialVendingStand_MAT from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialVendingStand.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 VendingStand_Massive_Damage_MAT from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialVendingStand.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 VendingStand_Massive_MAT from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialVendingStand.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading StaticMesh3 FinancialVendingStand from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialVendingStand.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_3"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_3"
+Loading StaticMesh3 FinancialVendingStand_Damage1 from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialVendingStand.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_1"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_1"
+Loading StaticMesh3 FinancialVendingStand_Damage2 from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialVendingStand.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_4"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_4"
+Loading Texture2D FinancialVendingStand_Damage from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialVendingStand.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FinancialVendingStand_DiffSpec from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialVendingStand.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FinancialVendingStand_EmisRefMask from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialVendingStand.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FinancialVendingStand_Massive_Damage from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialVendingStand.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FinancialVendingStand_Massive_DiffSpec from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialVendingStand.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FinancialVendingStand_Massive_Emis from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialVendingStand.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FinancialVendingStand_Massive_Norm from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialVendingStand.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D FinancialVendingStand_Norm from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialVendingStand.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D FinancialVendingStand_Opac from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialVendingStand.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading TextureCube3 SkyBlue from package MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk
+ByteProperty: unknown UTextureCube3 LODCategory
+Loading Texture2D Cube_L from package MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Cube_R from package MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Cube_F from package MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Cube_B from package MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Cube_T from package MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Cube_A from package MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 496 allocs, 5.36 MBytes serialized in 101 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: FinancialVendingStand_Damage_MAT
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[6] =
+    {
+        ReferencedTextures[0] = Texture2D'FinancialVendingStand_Norm'
+        ReferencedTextures[1] = Texture2D'FinancialVendingStand_DiffSpec'
+        ReferencedTextures[2] = Texture2D'FinancialVendingStand_EmisRefMask'
+        ReferencedTextures[3] = Texture2D'FinancialVendingStand_Damage'
+        ReferencedTextures[4] = Texture2D'FinancialVendingStand_Opac'
+        ReferencedTextures[5] = TextureCube3'SkyBlue'
+    }
+    Expressions[23] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'FinancialVendingStand_Damage_MAT.MaterialExpressionTextureSample_1'
+        Expressions[1] = MaterialExpressionTextureSample'FinancialVendingStand_Damage_MAT.MaterialExpressionTextureSample_2'
+        Expressions[2] = MaterialExpressionTextureSample'FinancialVendingStand_Damage_MAT.MaterialExpressionTextureSample_13'
+        Expressions[9] = MaterialExpressionTextureSample'FinancialVendingStand_Damage_MAT.MaterialExpressionTextureSample_14'
+        Expressions[10] = MaterialExpressionTextureSample'FinancialVendingStand_Damage_MAT.MaterialExpressionTextureSample_17'
+        Expressions[17] = MaterialExpressionTextureSample'FinancialVendingStand_Damage_MAT.MaterialExpressionTextureSample_3'
+        Expressions[18] = MaterialExpressionTextureSample'FinancialVendingStand_Damage_MAT.MaterialExpressionTextureSample_5'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.5
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: Material3 ObjectName: FinancialVendingStand_MAT
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[5] =
+    {
+        ReferencedTextures[0] = Texture2D'FinancialVendingStand_Norm'
+        ReferencedTextures[1] = Texture2D'FinancialVendingStand_EmisRefMask'
+        ReferencedTextures[2] = Texture2D'FinancialVendingStand_DiffSpec'
+        ReferencedTextures[3] = Texture2D'FinancialVendingStand_Opac'
+        ReferencedTextures[4] = TextureCube3'SkyBlue'
+    }
+    Expressions[22] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'FinancialVendingStand_MAT.MaterialExpressionTextureSample_1'
+        Expressions[1] = MaterialExpressionTextureSample'FinancialVendingStand_MAT.MaterialExpressionTextureSample_2'
+        Expressions[2] = MaterialExpressionTextureSample'FinancialVendingStand_MAT.MaterialExpressionTextureSample_4'
+        Expressions[4] = MaterialExpressionTextureSample'FinancialVendingStand_MAT.MaterialExpressionTextureSample_13'
+        Expressions[11] = MaterialExpressionTextureSample'FinancialVendingStand_MAT.MaterialExpressionTextureSample_14'
+        Expressions[12] = MaterialExpressionTextureSample'FinancialVendingStand_MAT.MaterialExpressionTextureSample_17'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.5
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: Material3 ObjectName: VendingStand_Massive_Damage_MAT
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'FinancialVendingStand_Massive_Norm'
+        ReferencedTextures[1] = Texture2D'FinancialVendingStand_Massive_Damage'
+        ReferencedTextures[2] = Texture2D'FinancialVendingStand_Massive_DiffSpec'
+    }
+    Expressions[4] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'VendingStand_Massive_Damage_MAT.MaterialExpressionTextureSample_22'
+        Expressions[1] = MaterialExpressionTextureSample'VendingStand_Massive_Damage_MAT.MaterialExpressionTextureSample_23'
+        Expressions[2] = MaterialExpressionTextureSample'VendingStand_Massive_Damage_MAT.MaterialExpressionTextureSample_1'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: Material3 ObjectName: VendingStand_Massive_MAT
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'FinancialVendingStand_Massive_Norm'
+        ReferencedTextures[1] = Texture2D'FinancialVendingStand_Massive_DiffSpec'
+        ReferencedTextures[2] = Texture2D'FinancialVendingStand_Massive_Emis'
+    }
+    Expressions[4] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'VendingStand_Massive_MAT.MaterialExpressionTextureSample_22'
+        Expressions[1] = MaterialExpressionTextureSample'VendingStand_Massive_MAT.MaterialExpressionTextureSample_23'
+        Expressions[3] = MaterialExpressionTextureSample'VendingStand_Massive_MAT.MaterialExpressionTextureSample_0'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'FinancialVendingStand_Opac' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_13
+ { Texture=Texture2D'FinancialVendingStand_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_14
+ { Texture=Texture2D'FinancialVendingStand_EmisRefMask' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_17
+ { Texture=Texture2D'FinancialVendingStand_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_2
+ { Texture=Texture2D'FinancialVendingStand_Norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_3
+ { Texture=Texture2D'FinancialVendingStand_Damage' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_5
+ { Texture=Texture2D'FinancialVendingStand_Damage' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'FinancialVendingStand_Opac' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_13
+ { Texture=Texture2D'FinancialVendingStand_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_14
+ { Texture=Texture2D'FinancialVendingStand_EmisRefMask' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_17
+ { Texture=Texture2D'FinancialVendingStand_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_2
+ { Texture=Texture2D'FinancialVendingStand_Norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_4
+ { Texture=Texture2D'FinancialVendingStand_EmisRefMask' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'FinancialVendingStand_Massive_Damage' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_22
+ { Texture=Texture2D'FinancialVendingStand_Massive_Norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_23
+ { Texture=Texture2D'FinancialVendingStand_Massive_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'FinancialVendingStand_Massive_Emis' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_22
+ { Texture=Texture2D'FinancialVendingStand_Massive_Norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_23
+ { Texture=Texture2D'FinancialVendingStand_Massive_DiffSpec' }
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialVendingStand
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=19.8476, Y=-6.8774, Z=129.06 }
+        BoxExtent = { X=113.329, Y=238.942, Z=129.06 }
+        SphereRadius = 289.408
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[2] =
+            {
+                Sections[0] = { Material=Material3'FinancialVendingStand_MAT', FirstIndex=0, NumFaces=548 }
+                Sections[1] = { Material=Material3'VendingStand_Massive_MAT', FirstIndex=1644, NumFaces=2 }
+            }
+            NumVerts = 1818
+            IndexCount = 1650
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialVendingStand_Damage1
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=19.9527, Y=-7.2196, Z=129.63 }
+        BoxExtent = { X=113.434, Y=239.284, Z=129.676 }
+        SphereRadius = 289.471
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[2] =
+            {
+                Sections[0] = { Material=Material3'FinancialVendingStand_Damage_MAT', FirstIndex=0, NumFaces=610 }
+                Sections[1] = { Material=Material3'VendingStand_Massive_Damage_MAT', FirstIndex=1830, NumFaces=2 }
+            }
+            NumVerts = 1998
+            IndexCount = 1836
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialVendingStand_Damage2
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=14.1973, Y=-9.71855, Z=132.476 }
+        BoxExtent = { X=118.627, Y=241.783, Z=132.476 }
+        SphereRadius = 289.089
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[2] =
+            {
+                Sections[0] = { Material=Material3'FinancialVendingStand_Damage_MAT', FirstIndex=0, NumFaces=516 }
+                Sections[1] = { Material=Material3'VendingStand_Massive_Damage_MAT', FirstIndex=1548, NumFaces=2 }
+            }
+            NumVerts = 1830
+            IndexCount = 1554
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialVendingStand_Damage
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialVendingStand_DiffSpec
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialVendingStand_EmisRefMask
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialVendingStand_Massive_Damage
+    SizeX = 256
+    SizeY = 128
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialVendingStand_Massive_DiffSpec
+    SizeX = 256
+    SizeY = 128
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialVendingStand_Massive_Emis
+    SizeX = 256
+    SizeY = 128
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialVendingStand_Massive_Norm
+    SizeX = 256
+    SizeY = 128
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialVendingStand_Norm
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialVendingStand_Opac
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 

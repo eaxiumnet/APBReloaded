@@ -1,0 +1,22 @@
+{
+  "package": "VehicleNoEntrySign",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\FinancialDistrict\\FeatureMaterials\\VehicleNoEntrySign.upk",
+  "district": "Financial",
+  "meshes": [
+    {
+      "mesh": "vehiclenoentrysign",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "VehicleNoEntrySign_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|vehiclenoentrysign_mat": [
+      "VehicleNoEntrySign"
+    ]
+  }
+}

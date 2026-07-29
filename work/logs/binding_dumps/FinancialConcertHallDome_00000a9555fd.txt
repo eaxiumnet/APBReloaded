@@ -1,0 +1,222 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/FinancialDistrict/PropMaterials/FinancialConcertHallDome.upk Ver: 564/33 Engine: 3908 Names: 105 Exports: 29 Imports: 19 Game: 80001D
+Loading Material3 Iron_Panels from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialConcertHallDome.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 Reflective_Rooftiles from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialConcertHallDome.upk
+Loading package: MaterialDatabase/GenericMaterials/Shared_Maps.upk Ver: 564/33 Engine: 3908 Names: 128 Exports: 50 Imports: 15 Game: 80001D
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Texture2D Colour_Iron_Panels from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialConcertHallDome.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Normal_Iron_Panels from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialConcertHallDome.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Normal_ReflectiveRooftiles from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialConcertHallDome.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Spec_Iron_panels from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialConcertHallDome.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Spec_ReflectiveRooftiles from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialConcertHallDome.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading TextureCube3 StaticCapture from package MaterialDatabase/GenericMaterials/Shared_Maps.upk
+ByteProperty: unknown UTextureCube3 LODCategory
+Loading Texture2D StaticCubemapTexture_Tex6PosX from package MaterialDatabase/GenericMaterials/Shared_Maps.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D StaticCubemapTexture_Tex6NegX from package MaterialDatabase/GenericMaterials/Shared_Maps.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D StaticCubemapTexture_Tex6PosY from package MaterialDatabase/GenericMaterials/Shared_Maps.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D StaticCubemapTexture_Tex6NegY from package MaterialDatabase/GenericMaterials/Shared_Maps.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D StaticCubemapTexture_Tex6PosZ from package MaterialDatabase/GenericMaterials/Shared_Maps.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D StaticCubemapTexture_Tex6NegZ from package MaterialDatabase/GenericMaterials/Shared_Maps.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 221 allocs, 2.11 MBytes serialized in 42 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: Iron_Panels
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'Normal_Iron_Panels'
+        ReferencedTextures[1] = Texture2D'Colour_Iron_Panels'
+        ReferencedTextures[2] = Texture2D'Spec_Iron_panels'
+    }
+    Expressions[8] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'Iron_Panels.MaterialExpressionTextureSample_6'
+        Expressions[1] = MaterialExpressionTextureSample'Iron_Panels.MaterialExpressionTextureSample_0'
+        Expressions[6] = MaterialExpressionTextureSample'Iron_Panels.MaterialExpressionTextureSample_1'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: Material3 ObjectName: Reflective_Rooftiles
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'Normal_ReflectiveRooftiles'
+        ReferencedTextures[1] = Texture2D'Spec_ReflectiveRooftiles'
+        ReferencedTextures[2] = TextureCube3'StaticCapture'
+    }
+    Expressions[11] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'Reflective_Rooftiles.MaterialExpressionTextureSample_0'
+        Expressions[1] = MaterialExpressionTextureSample'Reflective_Rooftiles.MaterialExpressionTextureSample_1'
+        Expressions[3] = MaterialExpressionTextureSample'Reflective_Rooftiles.MaterialExpressionTextureSample_4'
+        Expressions[5] = MaterialExpressionTextureSample'Reflective_Rooftiles.MaterialExpressionTextureSample_5'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'Normal_Iron_Panels' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'Spec_Iron_panels' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_6
+ { Texture=Texture2D'Colour_Iron_Panels' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'Spec_ReflectiveRooftiles' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'Spec_ReflectiveRooftiles' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_4
+ { Texture=Texture2D'Normal_ReflectiveRooftiles' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_5
+ { Texture=TextureCube3'StaticCapture' }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Colour_Iron_Panels
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Normal_Iron_Panels
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Normal_ReflectiveRooftiles
+    SizeX = 128
+    SizeY = 128
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 7
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Spec_Iron_panels
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Spec_ReflectiveRooftiles
+    SizeX = 128
+    SizeY = 128
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 7
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 

@@ -1,0 +1,135 @@
+{
+  "package": "FinancialCivicGarbageCan",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\FinancialDistrict\\PropMaterials\\FinancialCivicGarbageCan.upk",
+  "district": "Financial",
+  "meshes": [
+    {
+      "mesh": "FinancialCivicGarbageCan_Ashtray",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialCivicGarbageCan_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialCivicGarbageCan_Ashtray_Damage1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialCivicGarbageCan_Damage_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialCivicGarbageCan_Ashtray_Damage2",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialCivicGarbageCan_Damage_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialCivicGarbageCan_Capped",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialCivicGarbageCan_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialCivicGarbageCan_Capped_Damage1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialCivicGarbageCan_Damage_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialCivicGarbageCan_Capped_Damage2",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialCivicGarbageCan_Damage_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialCivicGarbageCan_Cylinder",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialCivicGarbageCan_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialCivicGarbageCan_Cylinder_Damage1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialCivicGarbageCan_Damage_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialCivicGarbageCan_Cylinder_Damage2",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialCivicGarbageCan_Damage_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialCivicGarbageCan_Door",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialCivicGarbageCan_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialCivicGarbageCan_Door_Damage1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialCivicGarbageCan_Damage_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialCivicGarbageCan_Door_Damage2",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialCivicGarbageCan_Damage_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|financialcivicgarbagecan_damage_mat": [
+      "FinancialCivicGarbageCan"
+    ],
+    "material3|financialcivicgarbagecan_mat": [
+      "FinancialCivicGarbageCan"
+    ]
+  }
+}

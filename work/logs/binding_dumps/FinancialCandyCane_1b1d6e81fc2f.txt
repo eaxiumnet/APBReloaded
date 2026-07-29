@@ -1,0 +1,149 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.0 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCandyCane.upk Ver: 564/33 Engine: 3908 Names: 94 Exports: 11 Imports: 8 Game: 80001D
+Loading Material3 CandyCane_MAT from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCandyCane.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading StaticMesh3 CandyCane_LOD0 from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCandyCane.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_0"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_0"
+Loading Texture2D CandyCane_Diff_256 from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCandyCane.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D CandyCane_Norm_256 from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCandyCane.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D CandyCane_Spec from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCandyCane.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 119 allocs, 0.42 MBytes serialized in 11 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: CandyCane_MAT
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'CandyCane_Norm_256'
+        ReferencedTextures[1] = Texture2D'CandyCane_Diff_256'
+        ReferencedTextures[2] = Texture2D'CandyCane_Spec'
+    }
+    Expressions[3] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'CandyCane_MAT.MaterialExpressionTextureSample_0'
+        Expressions[1] = MaterialExpressionTextureSample'CandyCane_MAT.MaterialExpressionTextureSample_2'
+        Expressions[2] = MaterialExpressionTextureSample'CandyCane_MAT.MaterialExpressionTextureSample_3'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'CandyCane_Diff_256' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_2
+ { Texture=Texture2D'CandyCane_Norm_256' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_3
+ { Texture=Texture2D'CandyCane_Spec' }
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: CandyCane_LOD0
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=14.9323, Y=-0.0493, Z=58.9406 }
+        BoxExtent = { X=18.813, Y=3.9166, Z=59.0051 }
+        SphereRadius = 61.9316
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'CandyCane_MAT', FirstIndex=0, NumFaces=236 }
+            }
+            NumVerts = 310
+            IndexCount = 708
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: Texture2D ObjectName: CandyCane_Diff_256
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: CandyCane_Norm_256
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: CandyCane_Spec
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 

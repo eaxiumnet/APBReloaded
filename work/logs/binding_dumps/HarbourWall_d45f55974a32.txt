@@ -1,0 +1,117 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/WaterfrontDistrict/HarbourWall.upk Ver: 564/33 Engine: 3908 Names: 74 Exports: 8 Imports: 7 Game: 80001D
+Loading Material3 HarbourWall from package MaterialDatabase/WaterfrontDistrict/HarbourWall.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading StaticMesh3 HarbourWall from package MaterialDatabase/WaterfrontDistrict/HarbourWall.upk
+Loading Texture2D HarbourWall_DiffSpec from package MaterialDatabase/WaterfrontDistrict/HarbourWall.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D HarbourWall_Norm from package MaterialDatabase/WaterfrontDistrict/HarbourWall.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loaded in 0.0 sec, 113 allocs, 1.01 MBytes serialized in 18 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: HarbourWall
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[2] = { Texture2D'HarbourWall_Norm', Texture2D'HarbourWall_DiffSpec' }
+    Expressions[2] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'HarbourWall.MaterialExpressionTextureSample_0'
+        Expressions[1] = MaterialExpressionTextureSample'HarbourWall.MaterialExpressionTextureSample_1'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'HarbourWall_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'HarbourWall_Norm' }
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: HarbourWall
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0, Y=-0.00134277, Z=0 }
+        BoxExtent = { X=519.699, Y=1422.55, Z=205 }
+        SphereRadius = 1498.76
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'HarbourWall', FirstIndex=0, NumFaces=10 }
+            }
+            NumVerts = 40
+            IndexCount = 30
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: Texture2D ObjectName: HarbourWall_DiffSpec
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: HarbourWall_Norm
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_NormalmapAlpha (12)
+    Source = 

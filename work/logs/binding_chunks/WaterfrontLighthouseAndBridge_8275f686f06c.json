@@ -1,0 +1,43 @@
+{
+  "package": "WaterfrontLighthouseAndBridge",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\WaterfrontDistrict\\PropMaterials\\WaterfrontLighthouseAndBridge.upk",
+  "district": "Waterfront",
+  "meshes": [
+    {
+      "mesh": "WaterPlane",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Water",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "WD_Block15_LighthouseAndBridge_LOD0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "WD_Block15_LighthouseAndBridge_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "WD_Block15_HillsAndTrees_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|water": [
+      "WaterfrontLighthouseAndBridge"
+    ],
+    "material3|wd_block15_hillsandtrees_mat": [
+      "WaterfrontLighthouseAndBridge"
+    ],
+    "material3|wd_block15_lighthouseandbridge_mat": [
+      "WaterfrontLighthouseAndBridge"
+    ]
+  }
+}

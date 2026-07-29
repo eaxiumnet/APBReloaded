@@ -1,0 +1,101 @@
+{
+  "package": "FinancialLightsModern",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\FinancialDistrict\\PropMaterials\\FinancialLightsModern.upk",
+  "district": "Financial",
+  "meshes": [
+    {
+      "mesh": "FinancialLightsModern_DishLight",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialLightsModern_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialLightsModern_HoodedLight",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialLightsModern_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialLightsModern_Parklight",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialLightsModern_Parklight_Nightlight",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialLightsModern_PoleLight",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialLightsModern_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialLightsModern_PoleLight_Damage1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialLightsModern_Damage_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialLightsModern_Uplight_Rounded",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialLightsModern_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialLightsModern_UpLight_Square",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialLightsModern_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialLightsModern_WallLight_Tower_Interior",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialLightsModern_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|financiallightsmodern_damage_mat": [
+      "FinancialLightsModern"
+    ],
+    "material3|financiallightsmodern_interior_mat": [
+      "FinancialLightsModern"
+    ],
+    "material3|financiallightsmodern_mat": [
+      "FinancialLightsModern"
+    ],
+    "materialinstanceconstant|financiallightsmodern_parklight_nightlight": [
+      "FinancialLightsModern"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+Task 4 fidelity oracle validation receipt
+Date: 2026-07-23
+UE launch/build: not run (explicitly deferred by Task 4)
+
+Command:
+pwsh -NoProfile -File tools/test_validate_fidelity_oracle.ps1
+Result: exit 0
+Output:
+FIDELITY_ORACLE_TEST_PASS baseline=allow_deferred
+FIDELITY_ORACLE_TEST_PASS expected=ROW_PENDING row=district.social.streamed_asset
+FIDELITY_ORACLE_TEST_PASS expected=ROW_REQUIRED_FIELD_MISSING row=menu.strings.2011 detail=hash
+FIDELITY_ORACLE_TEST_PASS expected=ROW_HASH_MISMATCH row=menu.strings.2011
+FIDELITY_ORACLE_TEST_PASS expected=ROW_SOURCE_PRECEDENCE_MISMATCH row=menu.strings.2011
+FIDELITY_ORACLE_TEST_PASS expected=ROW_PLACEHOLDER_DESTINATION row=menu.strings.2011
+FIDELITY_ORACLE_TEST_CLEANUP removed=C:\Users\Support\AppData\Local\Temp\apb-fidelity-oracle-0fb114f50b7041aca6f597011fe4d0b7
+
+Command:
+pwsh -NoProfile -File tools/validate_fidelity_oracle.ps1 -AllowDeferred
+Result: exit 0
+Output:
+FIDELITY_ORACLE_PASS rows=20 allow_deferred=True
+
+Command:
+$errors = $null; [void][System.Management.Automation.Language.Parser]::ParseFile((Resolve-Path 'tools/validate_fidelity_oracle.ps1'), [ref]$null, [ref]$errors); if ($errors.Count -gt 0) { $errors | ForEach-Object { $_.ToString() }; exit 1 }; 'POWERSHELL_PARSE_PASS tools/validate_fidelity_oracle.ps1'
+Result: exit 0
+Output:
+POWERSHELL_PARSE_PASS tools/validate_fidelity_oracle.ps1

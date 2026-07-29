@@ -1,0 +1,30 @@
+{
+  "package": "FinancialEscalator",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\FinancialDistrict\\PropMaterials\\FinancialEscalator.upk",
+  "district": "Financial",
+  "meshes": [
+    {
+      "mesh": "FinancialEscalator",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialEscalator_MAT",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "PropGlass",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|financialescalator_mat": [
+      "FinancialEscalator"
+    ],
+    "material3|propglass": [
+      "PropsGenericMaterials"
+    ]
+  }
+}

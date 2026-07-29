@@ -1,0 +1,45 @@
+{
+  "package": "WaterfrontPalmTree",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\WaterfrontDistrict\\PropMaterials\\WaterfrontPalmTree.upk",
+  "district": "Waterfront",
+  "meshes": [
+    {
+      "mesh": "WaterfrontPalmTree_Large",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "WaterfrontPalmTree_Trunk_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "WaterfrontPalmTree_Leaves_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "WaterfrontPalmTree_Small",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "WaterfrontPalmTree_Trunk_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "WaterfrontPalmTree_Leaves_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|waterfrontpalmtree_leaves_mat": [
+      "WaterfrontPalmTree"
+    ],
+    "material3|waterfrontpalmtree_trunk_mat": [
+      "WaterfrontPalmTree"
+    ]
+  }
+}

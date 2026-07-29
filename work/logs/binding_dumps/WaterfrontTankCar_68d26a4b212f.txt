@@ -1,0 +1,169 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.0 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontTankCar.upk Ver: 564/33 Engine: 3908 Names: 136 Exports: 16 Imports: 19 Game: 80001D
+Loading Material3 WaterfrontTankCar_Mat from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontTankCar.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading StaticMesh3 WaterfrontTankCar from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontTankCar.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_8"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_8"
+Loading Texture2D WaterfrontTankCar_DiffSpec from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontTankCar.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D WaterfrontTankCar_Norm from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontTankCar.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D WaterfrontTankCar_Opac from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontTankCar.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 163 allocs, 1.53 MBytes serialized in 33 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: WaterfrontTankCar_Mat
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'WaterfrontTankCar_Norm'
+        ReferencedTextures[1] = Texture2D'WaterfrontTankCar_DiffSpec'
+        ReferencedTextures[2] = Texture2D'WaterfrontTankCar_Opac'
+    }
+    Expressions[4] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'WaterfrontTankCar_Mat.MaterialExpressionTextureSample_0'
+        Expressions[1] = MaterialExpressionTextureSample'WaterfrontTankCar_Mat.MaterialExpressionTextureSample_1'
+        Expressions[2] = MaterialExpressionTextureSample'WaterfrontTankCar_Mat.MaterialExpressionTextureSample_2'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'WaterfrontTankCar_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'WaterfrontTankCar_Norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_2
+ { Texture=Texture2D'WaterfrontTankCar_Opac' }
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: WaterfrontTankCar
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=4.57764e-05, Y=1.53949, Z=238.897 }
+        BoxExtent = { X=164.966, Y=929.061, Z=238.787 }
+        SphereRadius = 943.741
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[3] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'WaterfrontTankCar_Mat', FirstIndex=0, NumFaces=3860 }
+            }
+            NumVerts = 9526
+            IndexCount = 11580
+            NumTexCoords = 1
+        }
+        Lods[1] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'WaterfrontTankCar_Mat', FirstIndex=0, NumFaces=1030 }
+            }
+            NumVerts = 3242
+            IndexCount = 3090
+            NumTexCoords = 1
+        }
+        Lods[2] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'WaterfrontTankCar_Mat', FirstIndex=0, NumFaces=180 }
+            }
+            NumVerts = 412
+            IndexCount = 540
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 3
+
+Object info:
+============
+ClassName: Texture2D ObjectName: WaterfrontTankCar_DiffSpec
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: WaterfrontTankCar_Norm
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: WaterfrontTankCar_Opac
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 

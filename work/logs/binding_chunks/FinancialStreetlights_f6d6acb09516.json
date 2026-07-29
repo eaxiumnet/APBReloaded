@@ -1,0 +1,32 @@
+{
+  "package": "FinancialStreetlights",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\FinancialDistrict\\PropMaterials\\FinancialStreetlights.upk",
+  "district": "Financial",
+  "meshes": [
+    {
+      "mesh": "FinancialStreetlights_Double",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialStreetlights_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialStreetlights_Single",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialStreetlights_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|financialstreetlights_mat": [
+      "FinancialStreetlights"
+    ]
+  }
+}

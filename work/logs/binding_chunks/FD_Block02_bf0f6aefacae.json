@@ -1,0 +1,35 @@
+{
+  "package": "FD_Block02",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\FinancialDistrict\\StaticMeshes\\FD_Block02.upk",
+  "district": "Financial",
+  "meshes": [
+    {
+      "mesh": "MultiBars",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "GFX_Eq",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "TheTowers",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Neon_Glow",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|gfx_eq": [
+      "FD_Block02"
+    ],
+    "material3|neon_glow": [
+      "FD_Block02"
+    ]
+  }
+}

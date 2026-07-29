@@ -1,0 +1,181 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/FinancialDistrict/Signs/PoolSign.upk Ver: 564/33 Engine: 3908 Names: 115 Exports: 60 Imports: 23 Game: 80001D
+Loading Material3 PoolSign_Mat from package MaterialDatabase/FinancialDistrict/Signs/PoolSign.upk
+BoolProperty: unknown UMaterial3 bEnableShadowCasting
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading StaticMesh3 Plane from package MaterialDatabase/FinancialDistrict/Signs/PoolSign.upk
+Loading StaticMesh3 tempPoolSignDelete from package MaterialDatabase/FinancialDistrict/Signs/PoolSign.upk
+Loading Texture2D PoolSign_AnimationMask from package MaterialDatabase/FinancialDistrict/Signs/PoolSign.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D PoolSign_DiffAlph from package MaterialDatabase/FinancialDistrict/Signs/PoolSign.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D PoolSign_Emis from package MaterialDatabase/FinancialDistrict/Signs/PoolSign.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 157 allocs, 0.42 MBytes serialized in 26 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: PoolSign_Mat
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'PoolSign_AnimationMask'
+        ReferencedTextures[1] = Texture2D'PoolSign_Emis'
+        ReferencedTextures[2] = Texture2D'PoolSign_DiffAlph'
+    }
+    Expressions[49] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'PoolSign_Mat.MaterialExpressionTextureSample_1'
+        Expressions[44] = MaterialExpressionTextureSample'PoolSign_Mat.MaterialExpressionTextureSample_2'
+        Expressions[45] = MaterialExpressionTextureSample'PoolSign_Mat.MaterialExpressionTextureSample_3'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.1
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'PoolSign_AnimationMask' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_2
+ { Texture=Texture2D'PoolSign_DiffAlph' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_3
+ { Texture=Texture2D'PoolSign_Emis' }
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: Plane
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0, Y=0, Z=0 }
+        BoxExtent = { X=50, Y=50, Z=0 }
+        SphereRadius = 70.7107
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'PoolSign_Mat', FirstIndex=0, NumFaces=2 }
+            }
+            NumVerts = 8
+            IndexCount = 6
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: tempPoolSignDelete
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0, Y=0, Z=0 }
+        BoxExtent = { X=435.813, Y=473.377, Z=507.619 }
+        SphereRadius = 819.57
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'PoolSign_Mat', FirstIndex=0, NumFaces=50 }
+            }
+            NumVerts = 200
+            IndexCount = 150
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: Texture2D ObjectName: PoolSign_AnimationMask
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: PoolSign_DiffAlph
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: PoolSign_Emis
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 

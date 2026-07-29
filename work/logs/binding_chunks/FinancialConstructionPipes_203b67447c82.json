@@ -1,0 +1,52 @@
+{
+  "package": "FinancialConstructionPipes",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\FinancialDistrict\\PropMaterials\\FinancialConstructionPipes.upk",
+  "district": "Financial",
+  "meshes": [
+    {
+      "mesh": "FinancialConstructionPipes_Chamber",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialConstructionPipes_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialConstructionPipes_Hole",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialConstructionPipes_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialConstructionPipes_Long",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialConstructionPipes_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialConstructionPipes_TPipe",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialConstructionPipes_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|financialconstructionpipes_mat": [
+      "FinancialConstructionPipes"
+    ]
+  }
+}

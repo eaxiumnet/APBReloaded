@@ -1,0 +1,100 @@
+{
+  "package": "FinancialCafeFurniture",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\FinancialDistrict\\PropMaterials\\FinancialCafeFurniture.upk",
+  "district": "Financial",
+  "meshes": [
+    {
+      "mesh": "cafefurnitureparasoldamage01",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialCafeFurniture_Damage_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialCafeFurniture_Chair",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialCafeFurniture_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialCafeFurniture_Chair_Damage1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialCafeFurniture_Damage_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialCafeFurniture_Table_Round",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialCafeFurniture_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialCafeFurniture_Table_Round_Damage1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialCafeFurniture_Damage_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialCafeFurniture_Table_Square",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialCafeFurniture_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialCafeFurniture_Table_Square_Damage1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialCafeFurniture_Damage_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|financialcafefurniture_damage_mat": [
+      "FinancialCafeFurniture"
+    ],
+    "material3|financialcafefurniture_mat": [
+      "FinancialCafeFurniture"
+    ],
+    "materialinstanceconstant|financialcafefurniture_blue_mat": [
+      "FinancialCafeFurniture"
+    ],
+    "materialinstanceconstant|financialcafefurniture_damage_blue_mat": [
+      "FinancialCafeFurniture"
+    ],
+    "materialinstanceconstant|financialcafefurniture_damage_green_mat": [
+      "FinancialCafeFurniture"
+    ],
+    "materialinstanceconstant|financialcafefurniture_gking_mat": [
+      "FinancialCafeFurniture"
+    ],
+    "materialinstanceconstant|financialcafefurniture_green_mat": [
+      "FinancialCafeFurniture"
+    ]
+  }
+}

@@ -1,0 +1,206 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.0 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/WaterfrontDistrict/Signs/WD_Banners.upk Ver: 564/33 Engine: 3908 Names: 102 Exports: 29 Imports: 15 Game: 80001D
+Loading Material3 Hanging_Banners_MAT from package MaterialDatabase/WaterfrontDistrict/Signs/WD_Banners.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading StaticMesh3 Banners_New_Test from package MaterialDatabase/WaterfrontDistrict/Signs/WD_Banners.upk
+Loading Texture2D Banners_New_Texture from package MaterialDatabase/WaterfrontDistrict/Signs/WD_Banners.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Banners_New_Texture_Emis from package MaterialDatabase/WaterfrontDistrict/Signs/WD_Banners.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Banners_New_Texture_Norm from package MaterialDatabase/WaterfrontDistrict/Signs/WD_Banners.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D Banners_New_Texture_Spec from package MaterialDatabase/WaterfrontDistrict/Signs/WD_Banners.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Banners_New_Texture_Wind_NORM from package MaterialDatabase/WaterfrontDistrict/Signs/WD_Banners.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loaded in 0.0 sec, 194 allocs, 3.35 MBytes serialized in 50 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: Hanging_Banners_MAT
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[5] =
+    {
+        ReferencedTextures[0] = Texture2D'Banners_New_Texture_Wind_NORM'
+        ReferencedTextures[1] = Texture2D'Banners_New_Texture_Norm'
+        ReferencedTextures[2] = Texture2D'Banners_New_Texture'
+        ReferencedTextures[3] = Texture2D'Banners_New_Texture_Emis'
+        ReferencedTextures[4] = Texture2D'Banners_New_Texture_Spec'
+    }
+    Expressions[20] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'Hanging_Banners_MAT.MaterialExpressionTextureSample_0'
+        Expressions[1] = MaterialExpressionTextureSample'Hanging_Banners_MAT.MaterialExpressionTextureSample_1'
+        Expressions[2] = MaterialExpressionTextureSample'Hanging_Banners_MAT.MaterialExpressionTextureSample_2'
+        Expressions[3] = MaterialExpressionTextureSample'Hanging_Banners_MAT.MaterialExpressionTextureSample_3'
+        Expressions[16] = MaterialExpressionTextureSample'Hanging_Banners_MAT.MaterialExpressionTextureSample_4'
+        Expressions[17] = MaterialExpressionTextureSample'Hanging_Banners_MAT.MaterialExpressionTextureSample_6'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'Banners_New_Texture' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'Banners_New_Texture_Emis' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_2
+ { Texture=Texture2D'Banners_New_Texture_Norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_3
+ { Texture=Texture2D'Banners_New_Texture_Spec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_4
+ { Texture=Texture2D'Banners_New_Texture_Wind_NORM' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_6
+ { Texture=Texture2D'Banners_New_Texture_Wind_NORM' }
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: Banners_New_Test
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=496.245, Y=5.3233, Z=-14.2419 }
+        BoxExtent = { X=192.023, Y=0.3234, Z=132.111 }
+        SphereRadius = 232.474
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'Hanging_Banners_MAT', FirstIndex=0, NumFaces=80 }
+            }
+            NumVerts = 192
+            IndexCount = 240
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Banners_New_Texture
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Banners_New_Texture_Emis
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Banners_New_Texture_Norm
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Banners_New_Texture_Spec
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Banners_New_Texture_Wind_NORM
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source = 

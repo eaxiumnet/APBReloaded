@@ -1,0 +1,208 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/FinancialDistrict/PropMaterials/FinancialConstructionPipes.upk Ver: 564/33 Engine: 3908 Names: 135 Exports: 31 Imports: 21 Game: 80001D
+Loading Material3 FinancialConstructionPipes_Mat from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialConstructionPipes.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading StaticMesh3 FinancialConstructionPipes_Chamber from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialConstructionPipes.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_0"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_0"
+Loading StaticMesh3 FinancialConstructionPipes_Hole from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialConstructionPipes.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_1"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_1"
+Loading StaticMesh3 FinancialConstructionPipes_Long from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialConstructionPipes.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_2"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_2"
+Loading StaticMesh3 FinancialConstructionPipes_TPipe from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialConstructionPipes.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_1"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_1"
+Loading Texture2D FinancialConstructionPipes_DiffSpec from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialConstructionPipes.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 156 allocs, 0.77 MBytes serialized in 12 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: FinancialConstructionPipes_Mat
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[1] = { Texture2D'FinancialConstructionPipes_DiffSpec' }
+    Expressions[3] =
+    {
+        Expressions[1] = MaterialExpressionTextureSample'FinancialConstructionPipes_Mat.MaterialExpressionTextureSample_0'
+        Expressions[2] = MaterialExpressionTextureSample'FinancialConstructionPipes_Mat.MaterialExpressionTextureSample_1'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'FinancialConstructionPipes_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=None }
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialConstructionPipes_Chamber
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=5.79335, Y=-9.39371, Z=150 }
+        BoxExtent = { X=200, Y=201.717, Z=150 }
+        SphereRadius = 321.232
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialConstructionPipes_Mat', FirstIndex=0, NumFaces=250 }
+            }
+            NumVerts = 736
+            IndexCount = 750
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialConstructionPipes_Hole
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0.421906, Y=8.8836, Z=104.741 }
+        BoxExtent = { X=105.79, Y=99.5745, Z=105.359 }
+        SphereRadius = 149.305
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[2] =
+            {
+                Sections[0] = { Material=Material3'FinancialConstructionPipes_Mat', FirstIndex=0, NumFaces=444 }
+                Sections[1] = { Material=None, FirstIndex=0, NumFaces=0 }
+            }
+            NumVerts = 1228
+            IndexCount = 1332
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialConstructionPipes_Long
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-0.00754547, Y=-0.0202484, Z=90.6872 }
+        BoxExtent = { X=90.3936, Y=179.36, Z=90.3935 }
+        SphereRadius = 201.654
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialConstructionPipes_Mat', FirstIndex=0, NumFaces=192 }
+            }
+            NumVerts = 648
+            IndexCount = 576
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialConstructionPipes_TPipe
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0.463562, Y=-12.8165, Z=94.1419 }
+        BoxExtent = { X=249.331, Y=145.617, Z=93.877 }
+        SphereRadius = 289.541
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialConstructionPipes_Mat', FirstIndex=0, NumFaces=480 }
+            }
+            NumVerts = 1424
+            IndexCount = 1440
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialConstructionPipes_DiffSpec
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 

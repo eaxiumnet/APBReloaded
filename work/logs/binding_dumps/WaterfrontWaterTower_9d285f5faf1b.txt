@@ -1,0 +1,159 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.0 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontWaterTower.upk Ver: 564/33 Engine: 3908 Names: 143 Exports: 21 Imports: 21 Game: 80001D
+Loading Material3 WaterfrontWaterTower_MAT from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontWaterTower.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading StaticMesh3 WaterfrontWaterTower from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontWaterTower.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_0"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_0"
+Loading Texture2D WaterfrontWaterTower_DiffSpec from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontWaterTower.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D WaterfrontWaterTower_Norm from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontWaterTower.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D WaterfrontWaterTower_Opac from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontWaterTower.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 139 allocs, 1.52 MBytes serialized in 20 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: WaterfrontWaterTower_MAT
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'WaterfrontWaterTower_Norm'
+        ReferencedTextures[1] = Texture2D'WaterfrontWaterTower_DiffSpec'
+        ReferencedTextures[2] = Texture2D'WaterfrontWaterTower_Opac'
+    }
+    Expressions[9] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'WaterfrontWaterTower_MAT.MaterialExpressionTextureSample_0'
+        Expressions[1] = MaterialExpressionTextureSample'WaterfrontWaterTower_MAT.MaterialExpressionTextureSample_1'
+        Expressions[2] = MaterialExpressionTextureSample'WaterfrontWaterTower_MAT.MaterialExpressionTextureSample_2'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.5
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'WaterfrontWaterTower_Norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'WaterfrontWaterTower_Opac' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_2
+ { Texture=Texture2D'WaterfrontWaterTower_DiffSpec' }
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: WaterfrontWaterTower
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=9.87955, Y=-3.05176e-05, Z=608.82 }
+        BoxExtent = { X=342.364, Y=332.485, Z=608.82 }
+        SphereRadius = 695.215
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[2] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'WaterfrontWaterTower_MAT', FirstIndex=0, NumFaces=488 }
+            }
+            NumVerts = 1746
+            IndexCount = 1464
+            NumTexCoords = 1
+        }
+        Lods[1] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'WaterfrontWaterTower_MAT', FirstIndex=0, NumFaces=216 }
+            }
+            NumVerts = 838
+            IndexCount = 648
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 2
+
+Object info:
+============
+ClassName: Texture2D ObjectName: WaterfrontWaterTower_DiffSpec
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: WaterfrontWaterTower_Norm
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: WaterfrontWaterTower_Opac
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 

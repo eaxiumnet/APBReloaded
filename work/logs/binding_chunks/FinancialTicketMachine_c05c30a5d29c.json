@@ -1,0 +1,45 @@
+{
+  "package": "FinancialTicketMachine",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\FinancialDistrict\\PropMaterials\\FinancialTicketMachine.upk",
+  "district": "Financial",
+  "meshes": [
+    {
+      "mesh": "FinancialTicketMachine",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialTicketMachine_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialTicketMachine_damage1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialTicketMachine_Damage_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialTicketMachine_damage2",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialTicketMachine_Damage_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|financialticketmachine_damage_mat": [
+      "FinancialTicketMachine"
+    ],
+    "material3|financialticketmachine_mat": [
+      "FinancialTicketMachine"
+    ]
+  }
+}

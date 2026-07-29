@@ -1,0 +1,43 @@
+{
+  "package": "FinancialAmmoStore",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\FinancialDistrict\\FeatureMaterials\\FinancialAmmoStore.upk",
+  "district": "Financial",
+  "meshes": [
+    {
+      "mesh": "AmmoStore",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "AmmoStore_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "RamRaidShopFront_MAT",
+          "material_class": "Material3"
+        },
+        {
+          "index": 2,
+          "material": "PropGlass",
+          "material_class": "Material3"
+        },
+        {
+          "index": 3,
+          "material": "AmmoStore_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|ammostore_mat": [
+      "FinancialAmmoStore"
+    ],
+    "material3|ramraidshopfront_mat": [
+      "ShopFront_Textures"
+    ],
+    "material3|propglass": [
+      "ShopFront_Textures"
+    ]
+  }
+}

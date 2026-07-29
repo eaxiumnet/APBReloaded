@@ -1,0 +1,245 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontSleepers.upk Ver: 564/33 Engine: 3908 Names: 184 Exports: 34 Imports: 41 Game: 80001D
+Loading Material3 WaterfrontSleepers_Damage_Mat from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontSleepers.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 WaterfrontSleepers_Mat from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontSleepers.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading StaticMesh3 WaterfrontSleepers from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontSleepers.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_2"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_2"
+Loading StaticMesh3 WaterfrontSleepers_Damage1 from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontSleepers.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_3"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_3"
+Loading Texture2D WaterfrontSleepers_Damage from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontSleepers.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D WaterfrontSleepers_DiffSpec from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontSleepers.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D WaterfrontSleepers_Norm from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontSleepers.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loaded in 0.0 sec, 184 allocs, 2.18 MBytes serialized in 25 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: WaterfrontSleepers_Damage_Mat
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'WaterfrontSleepers_Norm'
+        ReferencedTextures[1] = Texture2D'WaterfrontSleepers_DiffSpec'
+        ReferencedTextures[2] = Texture2D'WaterfrontSleepers_Damage'
+    }
+    Expressions[5] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'WaterfrontSleepers_Damage_Mat.MaterialExpressionTextureSample_5'
+        Expressions[1] = MaterialExpressionTextureSample'WaterfrontSleepers_Damage_Mat.MaterialExpressionTextureSample_6'
+        Expressions[3] = MaterialExpressionTextureSample'WaterfrontSleepers_Damage_Mat.MaterialExpressionTextureSample_7'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: Material3 ObjectName: WaterfrontSleepers_Mat
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[2] = { Texture2D'WaterfrontSleepers_Norm', Texture2D'WaterfrontSleepers_DiffSpec' }
+    Expressions[3] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'WaterfrontSleepers_Mat.MaterialExpressionTextureSample_5'
+        Expressions[1] = MaterialExpressionTextureSample'WaterfrontSleepers_Mat.MaterialExpressionTextureSample_6'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_5
+ { Texture=Texture2D'WaterfrontSleepers_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_6
+ { Texture=Texture2D'WaterfrontSleepers_Norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_7
+ { Texture=Texture2D'WaterfrontSleepers_Damage' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_5
+ { Texture=Texture2D'WaterfrontSleepers_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_6
+ { Texture=Texture2D'WaterfrontSleepers_Norm' }
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: WaterfrontSleepers
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-4.95911e-05, Y=-0.556595, Z=57.8559 }
+        BoxExtent = { X=55.8898, Y=133.698, Z=57.715 }
+        SphereRadius = 151.954
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[2] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'WaterfrontSleepers_Mat', FirstIndex=0, NumFaces=260 }
+            }
+            NumVerts = 1004
+            IndexCount = 780
+            NumTexCoords = 1
+        }
+        Lods[1] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'WaterfrontSleepers_Mat', FirstIndex=0, NumFaces=44 }
+            }
+            NumVerts = 176
+            IndexCount = 132
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 2
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: WaterfrontSleepers_Damage1
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-1.69045, Y=2.35881, Z=58.7949 }
+        BoxExtent = { X=61.458, Y=147.631, Z=58.654 }
+        SphereRadius = 159.37
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[2] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'WaterfrontSleepers_Damage_Mat', FirstIndex=0, NumFaces=316 }
+            }
+            NumVerts = 1144
+            IndexCount = 948
+            NumTexCoords = 1
+        }
+        Lods[1] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'WaterfrontSleepers_Damage_Mat', FirstIndex=0, NumFaces=128 }
+            }
+            NumVerts = 512
+            IndexCount = 384
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 2
+
+Object info:
+============
+ClassName: Texture2D ObjectName: WaterfrontSleepers_Damage
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: WaterfrontSleepers_DiffSpec
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: WaterfrontSleepers_Norm
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source = 

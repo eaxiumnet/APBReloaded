@@ -1,0 +1,61 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.0 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: VFX/Props/WaterfrontDistrict/VFX_WaterfrontSleepers.upk Ver: 564/33 Engine: 3908 Names: 246 Exports: 168 Imports: 85 Game: 80001D
+Loading StaticMesh3 WaterfrontSleepers_Damage1 from package VFX/Props/WaterfrontDistrict/VFX_WaterfrontSleepers.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_3"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_3"
+Loading package: MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontSleepers.upk Ver: 564/33 Engine: 3908 Names: 184 Exports: 34 Imports: 41 Game: 80001D
+Loading Material3 WaterfrontSleepers_Damage_Mat from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontSleepers.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Texture2D WaterfrontSleepers_Norm from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontSleepers.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D WaterfrontSleepers_DiffSpec from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontSleepers.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D WaterfrontSleepers_Damage from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontSleepers.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 178 allocs, 2.37 MBytes serialized in 31 calls.
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: WaterfrontSleepers_Damage1
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-1.69045, Y=2.35881, Z=58.7949 }
+        BoxExtent = { X=61.458, Y=147.631, Z=58.654 }
+        SphereRadius = 159.37
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[2] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'WaterfrontSleepers_Damage_Mat', FirstIndex=0, NumFaces=316 }
+            }
+            NumVerts = 1144
+            IndexCount = 948
+            NumTexCoords = 1
+        }
+        Lods[1] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'WaterfrontSleepers_Damage_Mat', FirstIndex=0, NumFaces=128 }
+            }
+            NumVerts = 512
+            IndexCount = 384
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 2

@@ -1,0 +1,288 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontPalmTree.upk Ver: 564/33 Engine: 3908 Names: 137 Exports: 28 Imports: 21 Game: 80001D
+Loading Material3 WaterfrontPalmTree_Leaves_Mat from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontPalmTree.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 WaterfrontPalmTree_Trunk_Mat from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontPalmTree.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading StaticMesh3 WaterfrontPalmTree_Large from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontPalmTree.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_5"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_5"
+Loading StaticMesh3 WaterfrontPalmTree_Small from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontPalmTree.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_6"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_6"
+Loading Texture2D PalmTree_Leaves1_DiffSpec from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontPalmTree.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D PalmTree_Leaves1_Norm from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontPalmTree.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D PalmTree_Leaves1_Opac from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontPalmTree.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D PalmTree_Trunk_DiffSpec from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontPalmTree.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D PalmTree_Trunk_Norm from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontPalmTree.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loaded in 0.0 sec, 222 allocs, 3.11 MBytes serialized in 34 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: WaterfrontPalmTree_Leaves_Mat
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'PalmTree_Leaves1_Norm'
+        ReferencedTextures[1] = Texture2D'PalmTree_Leaves1_DiffSpec'
+        ReferencedTextures[2] = Texture2D'PalmTree_Leaves1_Opac'
+    }
+    Expressions[4] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'WaterfrontPalmTree_Leaves_Mat.MaterialExpressionTextureSample_0'
+        Expressions[1] = MaterialExpressionTextureSample'WaterfrontPalmTree_Leaves_Mat.MaterialExpressionTextureSample_1'
+        Expressions[2] = MaterialExpressionTextureSample'WaterfrontPalmTree_Leaves_Mat.MaterialExpressionTextureSample_2'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: Material3 ObjectName: WaterfrontPalmTree_Trunk_Mat
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[2] = { Texture2D'PalmTree_Trunk_Norm', Texture2D'PalmTree_Trunk_DiffSpec' }
+    Expressions[3] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'WaterfrontPalmTree_Trunk_Mat.MaterialExpressionTextureSample_3'
+        Expressions[1] = MaterialExpressionTextureSample'WaterfrontPalmTree_Trunk_Mat.MaterialExpressionTextureSample_4'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'PalmTree_Leaves1_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'PalmTree_Leaves1_Norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_2
+ { Texture=Texture2D'PalmTree_Leaves1_Opac' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_3
+ { Texture=Texture2D'PalmTree_Trunk_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_4
+ { Texture=Texture2D'PalmTree_Trunk_Norm' }
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: WaterfrontPalmTree_Large
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-4.51212, Y=1.93336, Z=404.803 }
+        BoxExtent = { X=260.204, Y=254.149, Z=404.803 }
+        SphereRadius = 423.549
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[2] =
+    {
+        Lods[0] =
+        {
+            Sections[2] =
+            {
+                Sections[0] = { Material=Material3'WaterfrontPalmTree_Trunk_Mat', FirstIndex=0, NumFaces=190 }
+                Sections[1] = { Material=Material3'WaterfrontPalmTree_Leaves_Mat', FirstIndex=570, NumFaces=960 }
+            }
+            NumVerts = 2306
+            IndexCount = 3450
+            NumTexCoords = 1
+        }
+        Lods[1] =
+        {
+            Sections[2] =
+            {
+                Sections[0] = { Material=Material3'WaterfrontPalmTree_Trunk_Mat', FirstIndex=0, NumFaces=69 }
+                Sections[1] = { Material=Material3'WaterfrontPalmTree_Leaves_Mat', FirstIndex=207, NumFaces=641 }
+            }
+            NumVerts = 1600
+            IndexCount = 2130
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 2
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: WaterfrontPalmTree_Small
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=4.42184, Y=-9.47285, Z=253.222 }
+        BoxExtent = { X=177.477, Y=170.798, Z=253.222 }
+        SphereRadius = 265.68
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[2] =
+    {
+        Lods[0] =
+        {
+            Sections[2] =
+            {
+                Sections[0] = { Material=Material3'WaterfrontPalmTree_Trunk_Mat', FirstIndex=0, NumFaces=158 }
+                Sections[1] = { Material=Material3'WaterfrontPalmTree_Leaves_Mat', FirstIndex=474, NumFaces=816 }
+            }
+            NumVerts = 1964
+            IndexCount = 2922
+            NumTexCoords = 1
+        }
+        Lods[1] =
+        {
+            Sections[2] =
+            {
+                Sections[0] = { Material=Material3'WaterfrontPalmTree_Trunk_Mat', FirstIndex=0, NumFaces=54 }
+                Sections[1] = { Material=Material3'WaterfrontPalmTree_Leaves_Mat', FirstIndex=162, NumFaces=544 }
+            }
+            NumVerts = 1356
+            IndexCount = 1794
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 2
+
+Object info:
+============
+ClassName: Texture2D ObjectName: PalmTree_Leaves1_DiffSpec
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: PalmTree_Leaves1_Norm
+    SizeX = 256
+    SizeY = 128
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: PalmTree_Leaves1_Opac
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: PalmTree_Trunk_DiffSpec
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: PalmTree_Trunk_Norm
+    SizeX = 256
+    SizeY = 128
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source = 

@@ -1,0 +1,22 @@
+{
+  "package": "W_HarbourRope",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\WaterfrontDistrict\\Props\\W_HarbourRope.upk",
+  "district": "Waterfront",
+  "meshes": [
+    {
+      "mesh": "HarbourRope",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "HarbourRope_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|harbourrope_mat": [
+      "W_HarbourRope"
+    ]
+  }
+}

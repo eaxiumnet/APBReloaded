@@ -1,0 +1,126 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/FinancialDistrict/PropMaterials/Planters.upk Ver: 564/33 Engine: 3908 Names: 118 Exports: 18 Imports: 18 Game: 80001D
+Loading Material3 Planter from package MaterialDatabase/FinancialDistrict/PropMaterials/Planters.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading StaticMesh3 Planter_Box_LOD0 from package MaterialDatabase/FinancialDistrict/PropMaterials/Planters.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_7"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_7"
+Loading StaticMesh3 Planter_BoxDble_LOD0 from package MaterialDatabase/FinancialDistrict/PropMaterials/Planters.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_6"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_6"
+Loading Texture2D Planter_DiffAlpha from package MaterialDatabase/FinancialDistrict/PropMaterials/Planters.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 113 allocs, 0.61 MBytes serialized in 11 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: Planter
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[1] = { Texture2D'Planter_DiffAlpha' }
+    Expressions[2] = { MaterialExpressionTextureSample'Planter.MaterialExpressionTextureSample_1' }
+    CachedExpressionData = 
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'Planter_DiffAlpha' }
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: Planter_Box_LOD0
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=6.23105, Y=0.489449, Z=123.222 }
+        BoxExtent = { X=86.608, Y=69.0389, Z=123.222 }
+        SphereRadius = 144.204
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'Planter', FirstIndex=0, NumFaces=248 }
+            }
+            NumVerts = 784
+            IndexCount = 744
+            NumTexCoords = 2
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: Planter_BoxDble_LOD0
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-4.3446, Y=-3.3501, Z=116.4 }
+        BoxExtent = { X=76.0271, Y=122.937, Z=116.362 }
+        SphereRadius = 164.521
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'Planter', FirstIndex=0, NumFaces=461 }
+            }
+            NumVerts = 1542
+            IndexCount = 1383
+            NumTexCoords = 2
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Planter_DiffAlpha
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 

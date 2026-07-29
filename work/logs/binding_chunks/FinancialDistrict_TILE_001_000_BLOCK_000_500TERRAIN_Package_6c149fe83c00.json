@@ -1,0 +1,151 @@
+{
+  "package": "FinancialDistrict_TILE_001_000_BLOCK_000_500TERRAIN_Package",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\FinancialDistrict\\Terrain\\FinancialDistrict_TILE_001_000_BLOCK_000_500TERRAIN_Package.upk",
+  "district": "Financial",
+  "meshes": [
+    {
+      "mesh": "MT001000B000500_532_LOD_0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TERR_PaveSlab_01",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "MT001000B000500_532_LOD_1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TERR_PaveSlab_01",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "MT001000B000500_533_LOD_0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TERR_PaveSlab_01",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "Conc_PARENT_Baked",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "MT001000B000500_533_LOD_1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TERR_PaveSlab_01",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "Conc_PARENT_Baked",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "MT001000B000500_706_LOD_0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TERR_Asphalt_01_FD",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "MT001000B000500_706_LOD_1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TERR_Asphalt_01_FD",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "MT001000B000500_715_LOD_0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TERR_PaveSlab_01",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "MT001000B000500_715_LOD_1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TERR_PaveSlab_01",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "MT001000B000500_716_LOD_0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TERR_PaveSlab_01",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "MT001000B000500_716_LOD_1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TERR_PaveSlab_01",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "MT001000B000500_717_LOD_0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TERR_PaveSlab_01",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "MT001000B000500_717_LOD_1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TERR_PaveSlab_01",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|terr_paveslab_01": [
+      "Terrain"
+    ],
+    "material3|conc_parent_baked": [
+      "Concrete"
+    ],
+    "materialinstanceconstant|terr_asphalt_01_fd": [
+      "Terrain"
+    ],
+    "material3|terr_asphalt_01": [
+      "Terrain"
+    ]
+  }
+}

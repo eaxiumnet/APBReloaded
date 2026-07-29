@@ -1,0 +1,257 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.0 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/FinancialDistrict/PropMaterials/Bank_Vault_Doors.upk Ver: 564/33 Engine: 3908 Names: 115 Exports: 22 Imports: 13 Game: 80001D
+Loading Material3 Bank_Vault_Door_Round_MAT from package MaterialDatabase/FinancialDistrict/PropMaterials/Bank_Vault_Doors.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading StaticMesh3 Bank_Vault_Door_Closed from package MaterialDatabase/FinancialDistrict/PropMaterials/Bank_Vault_Doors.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_5"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_5"
+Loading StaticMesh3 Bank_Vault_Door_Open from package MaterialDatabase/FinancialDistrict/PropMaterials/Bank_Vault_Doors.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_4"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_4"
+Loading StaticMesh3 Bank_Vault_Door_Round_Closed from package MaterialDatabase/FinancialDistrict/PropMaterials/Bank_Vault_Doors.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_2"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_2"
+Loading StaticMesh3 Bank_Vault_Door_Round_Open from package MaterialDatabase/FinancialDistrict/PropMaterials/Bank_Vault_Doors.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_0"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_0"
+Loading Texture2D Bank_Vault_Door_Round_DIFF from package MaterialDatabase/FinancialDistrict/PropMaterials/Bank_Vault_Doors.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Bank_Vault_Door_Round_NORM from package MaterialDatabase/FinancialDistrict/PropMaterials/Bank_Vault_Doors.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D Bank_Vault_Door_Round_SPEC from package MaterialDatabase/FinancialDistrict/PropMaterials/Bank_Vault_Doors.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 208 allocs, 1.27 MBytes serialized in 35 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: Bank_Vault_Door_Round_MAT
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'Bank_Vault_Door_Round_NORM'
+        ReferencedTextures[1] = Texture2D'Bank_Vault_Door_Round_DIFF'
+        ReferencedTextures[2] = Texture2D'Bank_Vault_Door_Round_SPEC'
+    }
+    Expressions[8] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'Bank_Vault_Door_Round_MAT.MaterialExpressionTextureSample_0'
+        Expressions[1] = MaterialExpressionTextureSample'Bank_Vault_Door_Round_MAT.MaterialExpressionTextureSample_1'
+        Expressions[2] = MaterialExpressionTextureSample'Bank_Vault_Door_Round_MAT.MaterialExpressionTextureSample_2'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'Bank_Vault_Door_Round_DIFF' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'Bank_Vault_Door_Round_SPEC' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_2
+ { Texture=Texture2D'Bank_Vault_Door_Round_NORM' }
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: Bank_Vault_Door_Closed
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=10.6959, Y=9.91821e-05, Z=167.236 }
+        BoxExtent = { X=38.1058, Y=114.611, Z=167.236 }
+        SphereRadius = 206.29
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'Bank_Vault_Door_Round_MAT', FirstIndex=0, NumFaces=870 }
+            }
+            NumVerts = 2438
+            IndexCount = 2610
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: Bank_Vault_Door_Open
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=82.5399, Y=-37.1147, Z=167.236 }
+        BoxExtent = { X=109.95, Y=151.726, Z=167.236 }
+        SphereRadius = 251.152
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'Bank_Vault_Door_Round_MAT', FirstIndex=0, NumFaces=956 }
+            }
+            NumVerts = 2718
+            IndexCount = 2868
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: Bank_Vault_Door_Round_Closed
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=28.2612, Y=0, Z=236.534 }
+        BoxExtent = { X=69.9339, Y=258.46, Z=242.778 }
+        SphereRadius = 361.432
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'Bank_Vault_Door_Round_MAT', FirstIndex=0, NumFaces=1170 }
+            }
+            NumVerts = 3246
+            IndexCount = 3510
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: Bank_Vault_Door_Round_Open
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=183.676, Y=104.267, Z=236.534 }
+        BoxExtent = { X=254.366, Y=362.727, Z=242.778 }
+        SphereRadius = 505.187
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'Bank_Vault_Door_Round_MAT', FirstIndex=0, NumFaces=1942 }
+            }
+            NumVerts = 5180
+            IndexCount = 5826
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Bank_Vault_Door_Round_DIFF
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Bank_Vault_Door_Round_NORM
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Bank_Vault_Door_Round_SPEC
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 

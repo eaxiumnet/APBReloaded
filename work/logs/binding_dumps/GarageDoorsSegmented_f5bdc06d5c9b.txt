@@ -1,0 +1,678 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.0 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/FinancialDistrict/FeatureMaterials/GarageDoorsSegmented.upk Ver: 564/33 Engine: 3908 Names: 304 Exports: 149 Imports: 70 Game: 80001D
+Loading Material3 GarageDoorsSegmented_Mat from package MaterialDatabase/FinancialDistrict/FeatureMaterials/GarageDoorsSegmented.upk
+WARNING: Import(EngineResources.Black) was not found
+Loading package: MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk Ver: 564/33 Engine: 3908 Names: 153 Exports: 58 Imports: 26 Game: 80001D
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 GarageDoorsSegmented_Room_Mat from package MaterialDatabase/FinancialDistrict/FeatureMaterials/GarageDoorsSegmented.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+BoolProperty: unknown UMaterialExpressionVectorParameter bRealtimePreview
+BoolProperty: unknown UMaterialExpressionVectorParameter bRealtimePreview
+Loading MaterialInstanceConstant GarageDoorsSegmented_Mat_INST from package MaterialDatabase/FinancialDistrict/FeatureMaterials/GarageDoorsSegmented.upk
+StrProperty: unknown UMaterialInstanceConstant RWTGuid
+ArrayProperty: unknown UMaterialInstanceConstant Channels
+Loading StaticMesh3 GarageDoor_CRIME_LOD0 from package MaterialDatabase/FinancialDistrict/FeatureMaterials/GarageDoorsSegmented.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_0"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_0"
+Loading StaticMesh3 GarageDoor_Damage1 from package MaterialDatabase/FinancialDistrict/FeatureMaterials/GarageDoorsSegmented.upk
+Loading StaticMesh3 GarageDoor_Damage2 from package MaterialDatabase/FinancialDistrict/FeatureMaterials/GarageDoorsSegmented.upk
+Loading StaticMesh3 GarageDoor_LOD0 from package MaterialDatabase/FinancialDistrict/FeatureMaterials/GarageDoorsSegmented.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_0"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_0"
+Loading StaticMesh3 GarageDoorsSegmentedProp_Alum from package MaterialDatabase/FinancialDistrict/FeatureMaterials/GarageDoorsSegmented.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_2"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_2"
+Loading StaticMesh3 GarageDoorsSegmentedProp_AlumWin from package MaterialDatabase/FinancialDistrict/FeatureMaterials/GarageDoorsSegmented.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_3"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_3"
+Loading StaticMesh3 GarageDoorsSegmentedProp_Wood from package MaterialDatabase/FinancialDistrict/FeatureMaterials/GarageDoorsSegmented.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_4"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_4"
+Loading StaticMesh3 GarageDoorsSegmentedProp_WoodWin from package MaterialDatabase/FinancialDistrict/FeatureMaterials/GarageDoorsSegmented.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_1"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_1"
+Loading Texture2D GarageDoorsSegmented_DiffSpec from package MaterialDatabase/FinancialDistrict/FeatureMaterials/GarageDoorsSegmented.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D GarageDoorsSegmented_EmisGlassMask from package MaterialDatabase/FinancialDistrict/FeatureMaterials/GarageDoorsSegmented.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D GarageDoorsSegmented_Norm from package MaterialDatabase/FinancialDistrict/FeatureMaterials/GarageDoorsSegmented.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D GarageDoorsSegmented_RGBMask from package MaterialDatabase/FinancialDistrict/FeatureMaterials/GarageDoorsSegmented.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D GarageDoorsSegmented_Room from package MaterialDatabase/FinancialDistrict/FeatureMaterials/GarageDoorsSegmented.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Sky from package MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 455 allocs, 2.97 MBytes serialized in 43 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: GarageDoorsSegmented_Mat
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[6] =
+    {
+        ReferencedTextures[0] = Texture2D'GarageDoorsSegmented_Norm'
+        ReferencedTextures[2] = Texture2D'GarageDoorsSegmented_DiffSpec'
+        ReferencedTextures[3] = Texture2D'GarageDoorsSegmented_RGBMask'
+        ReferencedTextures[4] = Texture2D'GarageDoorsSegmented_EmisGlassMask'
+        ReferencedTextures[5] = Texture2D'Sky'
+    }
+    Expressions[55] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'GarageDoorsSegmented_Mat.MaterialExpressionTextureSample_0'
+        Expressions[1] = MaterialExpressionTextureSample'GarageDoorsSegmented_Mat.MaterialExpressionTextureSample_2'
+        Expressions[2] = MaterialExpressionTextureSample'GarageDoorsSegmented_Mat.MaterialExpressionTextureSample_4'
+        Expressions[3] = MaterialExpressionTextureSample'GarageDoorsSegmented_Mat.MaterialExpressionTextureSample_13'
+        Expressions[5] = MaterialExpressionVectorParameter'GarageDoorsSegmented_Mat.MaterialExpressionVectorParameter_0'
+        Expressions[11] = MaterialExpressionTextureSample'GarageDoorsSegmented_Mat.MaterialExpressionTextureSample_1'
+        Expressions[16] = MaterialExpressionTextureSample'GarageDoorsSegmented_Mat.MaterialExpressionTextureSample_7'
+        Expressions[22] = MaterialExpressionTextureSample'GarageDoorsSegmented_Mat.MaterialExpressionTextureSample_8'
+        Expressions[26] = MaterialExpressionTextureSample'GarageDoorsSegmented_Mat.MaterialExpressionTextureSample_14'
+        Expressions[34] = MaterialExpressionVectorParameter'GarageDoorsSegmented_Mat.MaterialExpressionVectorParameter_3'
+        Expressions[38] = MaterialExpressionTextureSample'GarageDoorsSegmented_Mat.MaterialExpressionTextureSample_6'
+        Expressions[39] = MaterialExpressionTextureSample'GarageDoorsSegmented_Mat.MaterialExpressionTextureSample_9'
+        Expressions[44] = MaterialExpressionTextureSample'GarageDoorsSegmented_Mat.MaterialExpressionTextureSample_10'
+        Expressions[45] = MaterialExpressionTextureSample'GarageDoorsSegmented_Mat.MaterialExpressionTextureSample_11'
+        Expressions[46] = MaterialExpressionVectorParameter'GarageDoorsSegmented_Mat.MaterialExpressionVectorParameter_4'
+        Expressions[47] = MaterialExpressionTextureSample'GarageDoorsSegmented_Mat.MaterialExpressionTextureSample_12'
+        Expressions[50] = MaterialExpressionTextureSample'GarageDoorsSegmented_Mat.MaterialExpressionTextureSample_15'
+        Expressions[52] = MaterialExpressionTextureSample'GarageDoorsSegmented_Mat.MaterialExpressionTextureSample_18'
+        Expressions[53] = MaterialExpressionTextureSample'GarageDoorsSegmented_Mat.MaterialExpressionTextureSample_20'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[3] =
+    {
+        CollectedVectorParameters[0] =
+        {
+            Value = { R=0.965815, G=0.932277, B=0.573159, A=1 }
+            Name = None
+            Group = None
+        }
+        CollectedVectorParameters[1] =
+        {
+            Value = { R=0.68002, G=0.68002, B=0.68002, A=1 }
+            Name = Wood
+            Group = None
+        }
+        CollectedVectorParameters[2] =
+        {
+            Value = { R=0.297653, G=0.183549, B=0.103634, A=1 }
+            Name = Walls
+            Group = None
+        }
+    }
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: Material3 ObjectName: GarageDoorsSegmented_Room_Mat
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[1] = { Texture2D'GarageDoorsSegmented_Room' }
+    Expressions[1] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'GarageDoorsSegmented_Room_Mat.MaterialExpressionTextureSample_0'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionScalarParameter ObjectName: MaterialExpressionScalarParameter_0
+ { DefaultValue=0, ParameterName=EmissiveUVOverride, Group=None }
+
+Object info:
+============
+ClassName: MaterialExpressionScalarParameter ObjectName: MaterialExpressionScalarParameter_1
+ { DefaultValue=1, ParameterName=EmissiveUVMask, Group=None }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'GarageDoorsSegmented_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'GarageDoorsSegmented_EmisGlassMask' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_10
+ { Texture=Texture2D'GarageDoorsSegmented_RGBMask' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_11
+ { Texture=Texture2D'GarageDoorsSegmented_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_12
+ { Texture=Texture2D'GarageDoorsSegmented_RGBMask' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_13
+ { Texture=Texture2D'GarageDoorsSegmented_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_14
+ { Texture=Texture2D'GarageDoorsSegmented_EmisGlassMask' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_15
+ { Texture=Texture2D'GarageDoorsSegmented_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_18
+ { Texture=Texture2D'GarageDoorsSegmented_EmisGlassMask' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_2
+ { Texture=Texture2D'GarageDoorsSegmented_EmisGlassMask' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_20
+ { Texture=Texture2D'GarageDoorsSegmented_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_4
+ { Texture=Texture2D'GarageDoorsSegmented_Norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_6
+ { Texture=Texture2D'GarageDoorsSegmented_RGBMask' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_7
+ { Texture=Texture2D'GarageDoorsSegmented_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_8
+ { Texture=Texture2D'Sky' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_9
+ { Texture=Texture2D'GarageDoorsSegmented_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'GarageDoorsSegmented_Room' }
+
+Object info:
+============
+ClassName: MaterialExpressionVectorParameter ObjectName: MaterialExpressionVectorParameter_0
+    DefaultValue = { R=0.965815, G=0.932277, B=0.573159, A=1 }
+    ParameterName = None
+    Group = None
+
+Object info:
+============
+ClassName: MaterialExpressionVectorParameter ObjectName: MaterialExpressionVectorParameter_3
+    DefaultValue = { R=0.68002, G=0.68002, B=0.68002, A=1 }
+    ParameterName = Wood
+    Group = None
+
+Object info:
+============
+ClassName: MaterialExpressionVectorParameter ObjectName: MaterialExpressionVectorParameter_4
+    DefaultValue = { R=0.297653, G=0.183549, B=0.103634, A=1 }
+    ParameterName = Walls
+    Group = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: GarageDoorsSegmented_Mat_INST
+    Parent = Material3'GarageDoorsSegmented_Mat'
+    ScalarParameterValues[0] = {}
+    TextureParameterValues[0] = {}
+    VectorParameterValues[0] = {}
+    BasePropertyOverrides = 
+    StaticParameters = 
+    RuntimeVirtualTextureParameterValues[0] = {}
+    FontParameterValues[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: GarageDoor_CRIME_LOD0
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=5.96265, Y=-6.10352e-05, Z=162.356 }
+        BoxExtent = { X=5.96415, Y=224.75, Z=162.356 }
+        SphereRadius = 277.322
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] =
+                {
+                    Material = MaterialInstanceConstant'GarageDoorsSegmented_Mat_INST'
+                    FirstIndex = 0
+                    NumFaces = 66
+                }
+            }
+            NumVerts = 232
+            IndexCount = 198
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: GarageDoor_Damage1
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-29.7149, Y=-6.10352e-05, Z=162.356 }
+        BoxExtent = { X=38.4275, Y=224.75, Z=162.356 }
+        SphereRadius = 279.908
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'GarageDoorsSegmented_Mat', FirstIndex=0, NumFaces=162 }
+            }
+            NumVerts = 408
+            IndexCount = 486
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: GarageDoor_Damage2
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-29.7149, Y=0, Z=162.356 }
+        BoxExtent = { X=38.4275, Y=224.75, Z=162.356 }
+        SphereRadius = 279.908
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'GarageDoorsSegmented_Mat', FirstIndex=0, NumFaces=133 }
+            }
+            NumVerts = 330
+            IndexCount = 399
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: GarageDoor_LOD0
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=5.96265, Y=-6.10352e-05, Z=162.356 }
+        BoxExtent = { X=5.96415, Y=224.75, Z=162.356 }
+        SphereRadius = 277.322
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'GarageDoorsSegmented_Mat', FirstIndex=0, NumFaces=66 }
+            }
+            NumVerts = 232
+            IndexCount = 198
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: GarageDoorsSegmentedProp_Alum
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-202.481, Y=-0.0133514, Z=190.118 }
+        BoxExtent = { X=201.283, Y=224.781, Z=190.118 }
+        SphereRadius = 356.621
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[2] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'GarageDoorsSegmented_Mat', FirstIndex=0, NumFaces=290 }
+            }
+            NumVerts = 1000
+            IndexCount = 870
+            NumTexCoords = 1
+        }
+        Lods[1] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'GarageDoorsSegmented_Mat', FirstIndex=0, NumFaces=158 }
+            }
+            NumVerts = 542
+            IndexCount = 474
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 2
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: GarageDoorsSegmentedProp_AlumWin
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-202.47, Y=-0.0133514, Z=190.118 }
+        BoxExtent = { X=201.283, Y=224.781, Z=190.118 }
+        SphereRadius = 356.621
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[2] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'GarageDoorsSegmented_Mat', FirstIndex=0, NumFaces=320 }
+            }
+            NumVerts = 1072
+            IndexCount = 960
+            NumTexCoords = 1
+        }
+        Lods[1] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'GarageDoorsSegmented_Mat', FirstIndex=0, NumFaces=170 }
+            }
+            NumVerts = 542
+            IndexCount = 510
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 2
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: GarageDoorsSegmentedProp_Wood
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-202.369, Y=-0.0133514, Z=190.118 }
+        BoxExtent = { X=201.283, Y=224.781, Z=190.118 }
+        SphereRadius = 356.621
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[2] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'GarageDoorsSegmented_Mat', FirstIndex=0, NumFaces=290 }
+            }
+            NumVerts = 998
+            IndexCount = 870
+            NumTexCoords = 1
+        }
+        Lods[1] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'GarageDoorsSegmented_Mat', FirstIndex=0, NumFaces=156 }
+            }
+            NumVerts = 534
+            IndexCount = 468
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 2
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: GarageDoorsSegmentedProp_WoodWin
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-202.387, Y=-0.0133514, Z=190.118 }
+        BoxExtent = { X=201.283, Y=224.781, Z=190.118 }
+        SphereRadius = 356.621
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[2] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'GarageDoorsSegmented_Mat', FirstIndex=0, NumFaces=320 }
+            }
+            NumVerts = 1070
+            IndexCount = 960
+            NumTexCoords = 1
+        }
+        Lods[1] =
+        {
+            Sections[2] =
+            {
+                Sections[0] = { Material=Material3'GarageDoorsSegmented_Mat', FirstIndex=0, NumFaces=170 }
+                Sections[1] = { Material=None, FirstIndex=0, NumFaces=0 }
+            }
+            NumVerts = 542
+            IndexCount = 510
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 2
+
+Object info:
+============
+ClassName: Texture2D ObjectName: GarageDoorsSegmented_DiffSpec
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: GarageDoorsSegmented_EmisGlassMask
+    SizeX = 128
+    SizeY = 128
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 7
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: GarageDoorsSegmented_Norm
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: GarageDoorsSegmented_RGBMask
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: GarageDoorsSegmented_Room
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 

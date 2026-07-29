@@ -1,0 +1,25 @@
+{
+  "package": "AmmoVendingMachine",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\FinancialDistrict\\PropMaterials\\AmmoVendingMachine.upk",
+  "district": "Financial",
+  "meshes": [
+    {
+      "mesh": "AmmoVendingMachine_LOD0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "AmmoVendingMachine",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|ammovendingmachine": [
+      "AmmoVendingMachine"
+    ],
+    "materialinstanceconstant|ammovendingmachine_beaconbash_mat": [
+      "AmmoVendingMachine"
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+MAP=Lvl_APB_Financial_Freeroam DISTRICT=Financial
+DISTRICT_LIGHT sun=1 sky=1 atmos=1 fog=1 ppv=1 at=(177030,133148,2340)
+DISTRICT_LIGHTS district=Financial spawned=448 total=448 radius=60000
+PLAYER_ALIGN at=(177030,133148,2340) player_starts=2
+STREAM_SPAWN district=Financial package=FinancialDistrict_Block09 chunks=0 spawned=36 total=36 radius=60000 player_start=(177030,133148,2340) in_radius=36 load_failed=0 near_metric=36
+BOUND_SPAWN district=Financial bound=36 total_manifest=274 hit_rate=0.000 loaded_bound=0 spawned_near=36 load_failed=0
+MESH_LOAD district=Financial attempted_in_radius=36 spawned=36 failed=0 skipped_dup=0
+PLAYER_ALIGN at=(177030,133148,2340) player_starts=3

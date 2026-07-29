@@ -1,0 +1,153 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/FinancialDistrict/PropMaterials/FinancialOfficeDesk.upk Ver: 564/33 Engine: 3908 Names: 101 Exports: 13 Imports: 12 Game: 80001D
+Loading Material3 FinancialOfficeDesk from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialOfficeDesk.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading StaticMesh3 Financial_Office_2desk from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialOfficeDesk.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_0"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_0"
+Loading StaticMesh3 FinancialOfficeDesk from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialOfficeDesk.upk
+Loading Texture2D FinancialOfficeDeskDiffSpec from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialOfficeDesk.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FinancialOfficeDeskNorm from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialOfficeDesk.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loaded in 0.0 sec, 137 allocs, 1.14 MBytes serialized in 21 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: FinancialOfficeDesk
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[2] = { Texture2D'FinancialOfficeDeskNorm', Texture2D'FinancialOfficeDeskDiffSpec' }
+    Expressions[5] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'FinancialOfficeDesk.MaterialExpressionTextureSample_0'
+        Expressions[1] = MaterialExpressionTextureSample'FinancialOfficeDesk.MaterialExpressionTextureSample_1'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'FinancialOfficeDeskDiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'FinancialOfficeDeskNorm' }
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: Financial_Office_2desk
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-403.437, Y=0, Z=96.8865 }
+        BoxExtent = { X=338.805, Y=63.0474, Z=96.8864 }
+        SphereRadius = 354.645
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialOfficeDesk', FirstIndex=0, NumFaces=732 }
+            }
+            NumVerts = 2462
+            IndexCount = 2196
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialOfficeDesk
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-620.472, Y=2.4199, Z=96.8865 }
+        BoxExtent = { X=770.472, Y=63.6749, Z=96.8864 }
+        SphereRadius = 776.365
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialOfficeDesk', FirstIndex=0, NumFaces=1110 }
+            }
+            NumVerts = 3804
+            IndexCount = 3330
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialOfficeDeskDiffSpec
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialOfficeDeskNorm
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_NormalmapAlpha (12)
+    Source = 

@@ -1,0 +1,659 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/FinancialDistrict/PropMaterials/FinancialLightsModern.upk Ver: 564/33 Engine: 3908 Names: 331 Exports: 244 Imports: 84 Game: 80001D
+Loading Material3 FinancialLightsModern_Damage_MAT from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialLightsModern.upk
+BoolProperty: unknown UMaterial3 bEnableShadowCasting
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 FinancialLightsModern_Interior_MAT from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialLightsModern.upk
+BoolProperty: unknown UMaterial3 bEnableShadowCasting
+Loading package: MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk Ver: 564/33 Engine: 3908 Names: 153 Exports: 58 Imports: 26 Game: 80001D
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 FinancialLightsModern_MAT from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialLightsModern.upk
+BoolProperty: unknown UMaterial3 bEnableShadowCasting
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading MaterialInstanceConstant FinancialLightsModern_Parklight_Nightlight from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialLightsModern.upk
+StrProperty: unknown UMaterialInstanceConstant RWTGuid
+ArrayProperty: unknown UMaterialInstanceConstant Channels
+Loading StaticMesh3 FinancialLightsModern_DishLight from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialLightsModern.upk
+Loading StaticMesh3 FinancialLightsModern_HoodedLight from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialLightsModern.upk
+Loading StaticMesh3 FinancialLightsModern_Parklight from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialLightsModern.upk
+Loading StaticMesh3 FinancialLightsModern_PoleLight from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialLightsModern.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_0"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_0"
+Loading StaticMesh3 FinancialLightsModern_PoleLight_Damage1 from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialLightsModern.upk
+Loading StaticMesh3 FinancialLightsModern_Uplight_Rounded from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialLightsModern.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_1"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_1"
+Loading StaticMesh3 FinancialLightsModern_UpLight_Square from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialLightsModern.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_2"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_2"
+Loading StaticMesh3 FinancialLightsModern_WallLight_Tower_Interior from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialLightsModern.upk
+Loading Texture2D FinancialLightsModern_Damage from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialLightsModern.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FinancialLightsModern_DiffSpec from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialLightsModern.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FinancialLightsModern_Emis from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialLightsModern.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FinancialLightsModern_GlassMask from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialLightsModern.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FinancialLightsModern_Norm from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialLightsModern.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D Sky from package MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 408 allocs, 2.52 MBytes serialized in 39 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: FinancialLightsModern_Damage_MAT
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'FinancialLightsModern_Norm'
+        ReferencedTextures[1] = Texture2D'FinancialLightsModern_DiffSpec'
+        ReferencedTextures[2] = Texture2D'FinancialLightsModern_Damage'
+    }
+    Expressions[5] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'FinancialLightsModern_Damage_MAT.MaterialExpressionTextureSample_0'
+        Expressions[1] = MaterialExpressionTextureSample'FinancialLightsModern_Damage_MAT.MaterialExpressionTextureSample_2'
+        Expressions[4] = MaterialExpressionTextureSample'FinancialLightsModern_Damage_MAT.MaterialExpressionTextureSample_3'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: Material3 ObjectName: FinancialLightsModern_Interior_MAT
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[5] =
+    {
+        ReferencedTextures[0] = Texture2D'FinancialLightsModern_GlassMask'
+        ReferencedTextures[1] = Texture2D'FinancialLightsModern_DiffSpec'
+        ReferencedTextures[2] = Texture2D'FinancialLightsModern_Norm'
+        ReferencedTextures[3] = Texture2D'FinancialLightsModern_Emis'
+        ReferencedTextures[4] = Texture2D'Sky'
+    }
+    Expressions[26] =
+    {
+        Expressions[1] = MaterialExpressionTextureSample'FinancialLightsModern_Interior_MAT.MaterialExpressionTextureSample_3'
+        Expressions[2] = MaterialExpressionTextureSample'FinancialLightsModern_Interior_MAT.MaterialExpressionTextureSample_9'
+        Expressions[10] = MaterialExpressionTextureSample'FinancialLightsModern_Interior_MAT.MaterialExpressionTextureSample_8'
+        Expressions[11] = MaterialExpressionTextureSample'FinancialLightsModern_Interior_MAT.MaterialExpressionTextureSample_10'
+        Expressions[15] = MaterialExpressionTextureSample'FinancialLightsModern_Interior_MAT.MaterialExpressionTextureSample_18'
+        Expressions[17] = MaterialExpressionTextureSample'FinancialLightsModern_Interior_MAT.MaterialExpressionTextureSample_19'
+        Expressions[21] = MaterialExpressionTextureSample'FinancialLightsModern_Interior_MAT.MaterialExpressionTextureSample_2'
+        Expressions[25] = MaterialExpressionVectorParameter'FinancialLightsModern_Interior_MAT.MaterialExpressionVectorParameter_2'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[1] =
+    {
+        CollectedVectorParameters[0] =
+        {
+            Value = { R=1, G=0.796917, B=0.267358, A=1 }
+            Name = None
+            Group = None
+        }
+    }
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: Material3 ObjectName: FinancialLightsModern_MAT
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[5] =
+    {
+        ReferencedTextures[0] = Texture2D'FinancialLightsModern_GlassMask'
+        ReferencedTextures[1] = Texture2D'FinancialLightsModern_DiffSpec'
+        ReferencedTextures[2] = Texture2D'FinancialLightsModern_Norm'
+        ReferencedTextures[3] = Texture2D'FinancialLightsModern_Emis'
+        ReferencedTextures[4] = Texture2D'Sky'
+    }
+    Expressions[30] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'FinancialLightsModern_MAT.MaterialExpressionTextureSample_1'
+        Expressions[3] = MaterialExpressionTextureSample'FinancialLightsModern_MAT.MaterialExpressionTextureSample_3'
+        Expressions[4] = MaterialExpressionTextureSample'FinancialLightsModern_MAT.MaterialExpressionTextureSample_9'
+        Expressions[12] = MaterialExpressionTextureSample'FinancialLightsModern_MAT.MaterialExpressionTextureSample_8'
+        Expressions[13] = MaterialExpressionTextureSample'FinancialLightsModern_MAT.MaterialExpressionTextureSample_10'
+        Expressions[17] = MaterialExpressionTextureSample'FinancialLightsModern_MAT.MaterialExpressionTextureSample_18'
+        Expressions[19] = MaterialExpressionTextureSample'FinancialLightsModern_MAT.MaterialExpressionTextureSample_19'
+        Expressions[26] = MaterialExpressionStaticSwitchParameter'FinancialLightsModern_MAT.MaterialExpressionStaticSwitchParameter_0'
+        Expressions[29] = MaterialExpressionVectorParameter'FinancialLightsModern_MAT.MaterialExpressionVectorParameter_3'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[1] =
+    {
+        CollectedVectorParameters[0] =
+        {
+            Value = { R=1, G=0.804559, B=0.297653, A=1 }
+            Name = None
+            Group = None
+        }
+    }
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionStaticSwitchParameter ObjectName: MaterialExpressionStaticSwitchParameter_0
+    DefaultValue = true
+    DefaultValue = false
+    ParameterName = Toggle_Nightlight
+    Group = None
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'FinancialLightsModern_Norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_2
+ { Texture=Texture2D'FinancialLightsModern_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_3
+ { Texture=Texture2D'FinancialLightsModern_Damage' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_10
+ { Texture=Texture2D'FinancialLightsModern_GlassMask' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_18
+ { Texture=Texture2D'Sky' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_19
+ { Texture=Texture2D'FinancialLightsModern_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_2
+ { Texture=Texture2D'FinancialLightsModern_Emis' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_3
+ { Texture=Texture2D'FinancialLightsModern_Norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_8
+ { Texture=Texture2D'FinancialLightsModern_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_9
+ { Texture=Texture2D'FinancialLightsModern_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'FinancialLightsModern_Emis' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_10
+ { Texture=Texture2D'FinancialLightsModern_GlassMask' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_18
+ { Texture=Texture2D'Sky' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_19
+ { Texture=Texture2D'FinancialLightsModern_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_3
+ { Texture=Texture2D'FinancialLightsModern_Norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_8
+ { Texture=Texture2D'FinancialLightsModern_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_9
+ { Texture=Texture2D'FinancialLightsModern_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionVectorParameter ObjectName: MaterialExpressionVectorParameter_2
+    DefaultValue = { R=1, G=0.796917, B=0.267358, A=1 }
+    ParameterName = None
+    Group = None
+
+Object info:
+============
+ClassName: MaterialExpressionVectorParameter ObjectName: MaterialExpressionVectorParameter_3
+    DefaultValue = { R=1, G=0.804559, B=0.297653, A=1 }
+    ParameterName = None
+    Group = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: FinancialLightsModern_Parklight_Nightlight
+    Parent = Material3'FinancialLightsModern_MAT'
+    ScalarParameterValues[0] = {}
+    TextureParameterValues[0] = {}
+    VectorParameterValues[0] = {}
+    BasePropertyOverrides = 
+    StaticParameters = 
+    RuntimeVirtualTextureParameterValues[0] = {}
+    FontParameterValues[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialLightsModern_DishLight
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0, Y=0, Z=0.69775 }
+        BoxExtent = { X=14.7325, Y=14.7325, Z=0.51885 }
+        SphereRadius = 14.7416
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialLightsModern_MAT', FirstIndex=0, NumFaces=48 }
+            }
+            NumVerts = 116
+            IndexCount = 144
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialLightsModern_HoodedLight
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0, Y=4.95911e-05, Z=10.6945 }
+        BoxExtent = { X=14.1982, Y=14.1982, Z=10.6945 }
+        SphereRadius = 17.7753
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialLightsModern_MAT', FirstIndex=0, NumFaces=150 }
+            }
+            NumVerts = 356
+            IndexCount = 450
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialLightsModern_Parklight
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0, Y=0, Z=0.69775 }
+        BoxExtent = { X=14.7325, Y=14.7325, Z=0.51885 }
+        SphereRadius = 14.7416
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] =
+                {
+                    Material = MaterialInstanceConstant'FinancialLightsModern_Parklight_Nightlight'
+                    FirstIndex = 0
+                    NumFaces = 48
+                }
+            }
+            NumVerts = 116
+            IndexCount = 144
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialLightsModern_PoleLight
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0, Y=0, Z=160.739 }
+        BoxExtent = { X=26.9429, Y=27.0913, Z=160.739 }
+        SphereRadius = 163.079
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[2] =
+            {
+                Sections[0] = { Material=Material3'FinancialLightsModern_MAT', FirstIndex=0, NumFaces=159 }
+                Sections[1] = { Material=None, FirstIndex=0, NumFaces=0 }
+            }
+            NumVerts = 432
+            IndexCount = 477
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialLightsModern_PoleLight_Damage1
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=1.31645, Y=5.75575, Z=164.105 }
+        BoxExtent = { X=26.968, Y=24.4001, Z=164.105 }
+        SphereRadius = 165.98
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialLightsModern_Damage_MAT', FirstIndex=0, NumFaces=195 }
+            }
+            NumVerts = 470
+            IndexCount = 585
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialLightsModern_Uplight_Rounded
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=2.8855, Y=0, Z=22.9682 }
+        BoxExtent = { X=15.2822, Y=12.8532, Z=22.9682 }
+        SphereRadius = 23.9207
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialLightsModern_MAT', FirstIndex=0, NumFaces=210 }
+            }
+            NumVerts = 408
+            IndexCount = 630
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialLightsModern_UpLight_Square
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0, Y=0, Z=27.0357 }
+        BoxExtent = { X=16.9179, Y=24.7276, Z=27.0357 }
+        SphereRadius = 37.2315
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialLightsModern_MAT', FirstIndex=0, NumFaces=78 }
+            }
+            NumVerts = 208
+            IndexCount = 234
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialLightsModern_WallLight_Tower_Interior
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=10.852, Y=0, Z=21.8211 }
+        BoxExtent = { X=10.852, Y=7.0068, Z=21.8211 }
+        SphereRadius = 24.3706
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialLightsModern_MAT', FirstIndex=0, NumFaces=85 }
+            }
+            NumVerts = 140
+            IndexCount = 255
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialLightsModern_Damage
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialLightsModern_DiffSpec
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialLightsModern_Emis
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialLightsModern_GlassMask
+    SizeX = 128
+    SizeY = 128
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 7
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialLightsModern_Norm
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source = 

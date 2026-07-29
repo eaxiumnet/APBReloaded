@@ -1,0 +1,416 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/FinancialDistrict/StaticMeshes/FD_StaticMeshes.upk Ver: 564/33 Engine: 3908 Names: 139 Exports: 62 Imports: 25 Game: 80001D
+Loading Material3 B44_Docks_MAT from package MaterialDatabase/FinancialDistrict/StaticMeshes/FD_StaticMeshes.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+BoolProperty: unknown UMaterialExpressionVectorParameter bRealtimePreview
+BoolProperty: unknown UMaterialExpressionVectorParameter bRealtimePreview
+Loading StaticMesh3 B16_Bridge_01 from package MaterialDatabase/FinancialDistrict/StaticMeshes/FD_StaticMeshes.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_2"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_2"
+Loading package: MaterialDatabase/GenericMaterials/Concrete/Concrete.upk Ver: 564/33 Engine: 3908 Names: 220 Exports: 242 Imports: 32 Game: 80001D
+Loading StaticMesh3 B16_Bridge_02 from package MaterialDatabase/FinancialDistrict/StaticMeshes/FD_StaticMeshes.upk
+Loading StaticMesh3 B44_00 from package MaterialDatabase/FinancialDistrict/StaticMeshes/FD_StaticMeshes.upk
+Loading StaticMesh3 B44_01 from package MaterialDatabase/FinancialDistrict/StaticMeshes/FD_StaticMeshes.upk
+Loading StaticMesh3 B44_02 from package MaterialDatabase/FinancialDistrict/StaticMeshes/FD_StaticMeshes.upk
+Loading StaticMesh3 B44_03 from package MaterialDatabase/FinancialDistrict/StaticMeshes/FD_StaticMeshes.upk
+Loading StaticMesh3 B44_04 from package MaterialDatabase/FinancialDistrict/StaticMeshes/FD_StaticMeshes.upk
+Loading StaticMesh3 B44_05 from package MaterialDatabase/FinancialDistrict/StaticMeshes/FD_StaticMeshes.upk
+Loading Texture2D B44_Diff from package MaterialDatabase/FinancialDistrict/StaticMeshes/FD_StaticMeshes.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D B44_Masks from package MaterialDatabase/FinancialDistrict/StaticMeshes/FD_StaticMeshes.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading MaterialInstanceConstant Conc_Grey from package MaterialDatabase/GenericMaterials/Concrete/Concrete.upk
+StrProperty: unknown UMaterialInstanceConstant RWTGuid
+ArrayProperty: unknown UMaterialInstanceConstant Channels
+ObjectProperty: unknown UMaterialInstanceConstant BakedMaterial
+FloatProperty: unknown UMaterialInstanceConstant m_BakedTextureCoordinate
+Loading Material3 Conc_PARENT from package MaterialDatabase/GenericMaterials/Concrete/Concrete.upk
+Loading package: MaterialDatabase/GenericMaterials/Shared_Maps.upk Ver: 564/33 Engine: 3908 Names: 128 Exports: 50 Imports: 15 Game: 80001D
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading package: MaterialDatabase/GenericMaterials/GraffitiMaps.upk Ver: 564/33 Engine: 3908 Names: 93 Exports: 18 Imports: 9 Game: 80001D
+Loading Texture2D Concrete_003_Norm from package MaterialDatabase/GenericMaterials/Concrete/Concrete.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D DirtOverlay_01 from package MaterialDatabase/GenericMaterials/Shared_Maps.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Concrete_01_DiffSpec from package MaterialDatabase/GenericMaterials/Concrete/Concrete.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D StreakyDirt from package MaterialDatabase/GenericMaterials/Shared_Maps.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D BlackTransparent from package MaterialDatabase/GenericMaterials/GraffitiMaps.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Concrete_cracks01_NRM2 from package MaterialDatabase/GenericMaterials/Concrete/Concrete.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D SmashedEndPiece_NRM from package MaterialDatabase/GenericMaterials/Concrete/Concrete.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loaded in 0.0 sec, 530 allocs, 5.89 MBytes serialized in 89 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: B44_Docks_MAT
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[2] = { Texture2D'B44_Diff', Texture2D'B44_Masks' }
+    Expressions[47] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'B44_Docks_MAT.MaterialExpressionTextureSample_0'
+        Expressions[13] = MaterialExpressionTextureSample'B44_Docks_MAT.MaterialExpressionTextureSample_1'
+        Expressions[19] = MaterialExpressionVectorParameter'B44_Docks_MAT.MaterialExpressionVectorParameter_0'
+        Expressions[22] = MaterialExpressionVectorParameter'B44_Docks_MAT.MaterialExpressionVectorParameter_3'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[2] =
+    {
+        CollectedVectorParameters[0] =
+        {
+            Value = { R=0.88318, G=0.804559, B=0.348865, A=1 }
+            Name = 1
+            Group = None
+        }
+        CollectedVectorParameters[1] =
+        {
+            Value = { R=1, G=0, B=0, A=1 }
+            Name = 2
+            Group = None
+        }
+    }
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'B44_Diff' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'B44_Masks' }
+
+Object info:
+============
+ClassName: MaterialExpressionVectorParameter ObjectName: MaterialExpressionVectorParameter_0
+    DefaultValue = { R=0.88318, G=0.804559, B=0.348865, A=1 }
+    ParameterName = 1
+    Group = None
+
+Object info:
+============
+ClassName: MaterialExpressionVectorParameter ObjectName: MaterialExpressionVectorParameter_3
+    DefaultValue = { R=1, G=0, B=0, A=1 }
+    ParameterName = 2
+    Group = None
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: B16_Bridge_01
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0.00796509, Y=-0.00390625, Z=0 }
+        BoxExtent = { X=435.871, Y=1530.03, Z=373.271 }
+        SphereRadius = 1613.66
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'Conc_Grey', FirstIndex=0, NumFaces=862 }
+            }
+            NumVerts = 2808
+            IndexCount = 2586
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: B16_Bridge_02
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-0.00115967, Y=0.000976562, Z=0 }
+        BoxExtent = { X=563.22, Y=2246.62, Z=392.997 }
+        SphereRadius = 2290.11
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'Conc_Grey', FirstIndex=0, NumFaces=1174 }
+            }
+            NumVerts = 3668
+            IndexCount = 3522
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: B44_00
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=25140, Y=-45480.7, Z=2997.97 }
+        BoxExtent = { X=47990.9, Y=52938.1, Z=12998.6 }
+        SphereRadius = 69250.1
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'B44_Docks_MAT', FirstIndex=0, NumFaces=1265 }
+            }
+            NumVerts = 4710
+            IndexCount = 3795
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: B44_01
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=22478.5, Y=-132231, Z=182.745 }
+        BoxExtent = { X=40664, Y=42692.3, Z=10183.4 }
+        SphereRadius = 50574.3
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'B44_Docks_MAT', FirstIndex=0, NumFaces=1429 }
+            }
+            NumVerts = 5244
+            IndexCount = 4287
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: B44_02
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=55231.4, Y=-201708, Z=206.584 }
+        BoxExtent = { X=43754.3, Y=58811.8, Z=10207.2 }
+        SphereRadius = 63446.1
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'B44_Docks_MAT', FirstIndex=0, NumFaces=623 }
+            }
+            NumVerts = 2426
+            IndexCount = 1869
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: B44_03
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=179926, Y=-205129, Z=999.136 }
+        BoxExtent = { X=78522.5, Y=53720.2, Z=10999.8 }
+        SphereRadius = 94476.3
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'B44_Docks_MAT', FirstIndex=0, NumFaces=629 }
+            }
+            NumVerts = 2364
+            IndexCount = 1887
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: B44_04
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=240557, Y=-91677.9, Z=158.329 }
+        BoxExtent = { X=49875.8, Y=84491.6, Z=10159 }
+        SphereRadius = 87879.1
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'B44_Docks_MAT', FirstIndex=0, NumFaces=726 }
+            }
+            NumVerts = 2702
+            IndexCount = 2178
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: B44_05
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=147962, Y=-6773.24, Z=999.15 }
+        BoxExtent = { X=87677.9, Y=46254.5, Z=10999.8 }
+        SphereRadius = 90145.8
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'B44_Docks_MAT', FirstIndex=0, NumFaces=876 }
+            }
+            NumVerts = 3128
+            IndexCount = 2628
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: Texture2D ObjectName: B44_Diff
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: B44_Masks
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 

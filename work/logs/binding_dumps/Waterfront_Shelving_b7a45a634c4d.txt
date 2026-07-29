@@ -1,0 +1,247 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/WaterfrontDistrict/PropMaterials/Waterfront_Shelving.upk Ver: 564/33 Engine: 3908 Names: 151 Exports: 61 Imports: 24 Game: 80001D
+Loading Material3 Shelving_Metal from package MaterialDatabase/WaterfrontDistrict/PropMaterials/Waterfront_Shelving.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading StaticMesh3 Waterfront_Shelving_Double_4x2x4 from package MaterialDatabase/WaterfrontDistrict/PropMaterials/Waterfront_Shelving.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_1"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_1"
+Loading StaticMesh3 Waterfront_Shelving_Double_8x4x4 from package MaterialDatabase/WaterfrontDistrict/PropMaterials/Waterfront_Shelving.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_2"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_2"
+Loading StaticMesh3 Waterfront_Shelving_Single_5x2x4 from package MaterialDatabase/WaterfrontDistrict/PropMaterials/Waterfront_Shelving.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_3"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_3"
+Loading Texture2D PaintFlakeMask from package MaterialDatabase/WaterfrontDistrict/PropMaterials/Waterfront_Shelving.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Shelving from package MaterialDatabase/WaterfrontDistrict/PropMaterials/Waterfront_Shelving.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D Shelving_DIFF from package MaterialDatabase/WaterfrontDistrict/PropMaterials/Waterfront_Shelving.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D WearMask from package MaterialDatabase/WaterfrontDistrict/PropMaterials/Waterfront_Shelving.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 191 allocs, 0.87 MBytes serialized in 23 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: Shelving_Metal
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[3] = { Texture2D'Shelving', Texture2D'Shelving_DIFF', Texture2D'WearMask' }
+    Expressions[36] =
+    {
+        Expressions[17] = MaterialExpressionTextureSample'Shelving_Metal.MaterialExpressionTextureSample_0'
+        Expressions[18] = MaterialExpressionTextureSample'Shelving_Metal.MaterialExpressionTextureSample_2'
+        Expressions[19] = MaterialExpressionTextureSample'Shelving_Metal.MaterialExpressionTextureSample_4'
+        Expressions[20] = MaterialExpressionTextureSample'Shelving_Metal.MaterialExpressionTextureSample_1'
+        Expressions[21] = MaterialExpressionTextureSample'Shelving_Metal.MaterialExpressionTextureSample_3'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'Shelving' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'Shelving_DIFF' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_2
+ { Texture=Texture2D'Shelving' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_3
+ { Texture=Texture2D'WearMask' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_4
+ { Texture=Texture2D'Shelving' }
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: Waterfront_Shelving_Double_4x2x4
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-0.118591, Y=-0.214905, Z=201.651 }
+        BoxExtent = { X=203.073, Y=99.9912, Z=202.387 }
+        SphereRadius = 303.171
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'Shelving_Metal', FirstIndex=0, NumFaces=588 }
+            }
+            NumVerts = 1968
+            IndexCount = 1764
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: Waterfront_Shelving_Double_8x4x4
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0.0308228, Y=0.200958, Z=201.362 }
+        BoxExtent = { X=399.928, Y=200.062, Z=202.676 }
+        SphereRadius = 490.472
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'Shelving_Metal', FirstIndex=0, NumFaces=736 }
+            }
+            NumVerts = 2480
+            IndexCount = 2208
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: Waterfront_Shelving_Single_5x2x4
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=6.0784, Y=-0.312805, Z=141.62 }
+        BoxExtent = { X=245.07, Y=99.8933, Z=142.356 }
+        SphereRadius = 299.897
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'Shelving_Metal', FirstIndex=0, NumFaces=396 }
+            }
+            NumVerts = 1328
+            IndexCount = 1188
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: Texture2D ObjectName: PaintFlakeMask
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Shelving
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_NormalmapAlpha (12)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Shelving_DIFF
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: WearMask
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 

@@ -1,0 +1,269 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.0 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTicketBarriers.upk Ver: 564/33 Engine: 3908 Names: 164 Exports: 45 Imports: 29 Game: 80001D
+Loading Material3 TicketBarriers_Mat from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTicketBarriers.upk
+Loading package: MaterialDatabase/GenericMaterials/Glass/Glass.upk Ver: 564/33 Engine: 3908 Names: 188 Exports: 155 Imports: 39 Game: 80001D
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading StaticMesh3 TicketBarriers_CentralGate from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTicketBarriers.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_12"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_12"
+Loading StaticMesh3 TicketBarriers_EndGate from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTicketBarriers.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_15"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_15"
+Loading StaticMesh3 TicketBarriers_Railing from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTicketBarriers.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_0"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_0"
+Loading StaticMesh3 TicketBarriers_Ticket_Gate from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTicketBarriers.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_13"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_13"
+Loading Texture2D TicketBarriers_DiffSpec from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTicketBarriers.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D TicketBarriers_EmisRefMask from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTicketBarriers.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D TicketBarriers_Norm from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTicketBarriers.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading TextureCube3 SkyBlue from package MaterialDatabase/GenericMaterials/Glass/Glass.upk
+ByteProperty: unknown UTextureCube3 LODCategory
+Loading Texture2D Cube_Sky from package MaterialDatabase/GenericMaterials/Glass/Glass.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 241 allocs, 1.45 MBytes serialized in 30 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: TicketBarriers_Mat
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'TicketBarriers_Norm'
+        ReferencedTextures[1] = Texture2D'TicketBarriers_EmisRefMask'
+        ReferencedTextures[2] = Texture2D'TicketBarriers_DiffSpec'
+        ReferencedTextures[3] = TextureCube3'SkyBlue'
+    }
+    Expressions[15] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'TicketBarriers_Mat.MaterialExpressionTextureSample_0'
+        Expressions[9] = MaterialExpressionTextureSample'TicketBarriers_Mat.MaterialExpressionTextureSample_1'
+        Expressions[10] = MaterialExpressionTextureSample'TicketBarriers_Mat.MaterialExpressionTextureSample_7'
+        Expressions[12] = MaterialExpressionTextureSample'TicketBarriers_Mat.MaterialExpressionTextureSample_8'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=None }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'TicketBarriers_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_7
+ { Texture=Texture2D'TicketBarriers_EmisRefMask' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_8
+ { Texture=Texture2D'TicketBarriers_Norm' }
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: TicketBarriers_CentralGate
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0, Y=0, Z=59.4771 }
+        BoxExtent = { X=81.765, Y=43.462, Z=59.4771 }
+        SphereRadius = 98.8032
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'TicketBarriers_Mat', FirstIndex=0, NumFaces=254 }
+            }
+            NumVerts = 816
+            IndexCount = 762
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: TicketBarriers_EndGate
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0, Y=-15.8085, Z=57.5 }
+        BoxExtent = { X=81.765, Y=27.6535, Z=57.5 }
+        SphereRadius = 100.589
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'TicketBarriers_Mat', FirstIndex=0, NumFaces=142 }
+            }
+            NumVerts = 444
+            IndexCount = 426
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: TicketBarriers_Railing
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0, Y=0, Z=48.5908 }
+        BoxExtent = { X=5.0279, Y=89.3354, Z=48.5908 }
+        SphereRadius = 101.695
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'TicketBarriers_Mat', FirstIndex=0, NumFaces=184 }
+            }
+            NumVerts = 404
+            IndexCount = 552
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: TicketBarriers_Ticket_Gate
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0, Y=15.8085, Z=59.4771 }
+        BoxExtent = { X=81.765, Y=27.6535, Z=59.4771 }
+        SphereRadius = 101.732
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'TicketBarriers_Mat', FirstIndex=0, NumFaces=182 }
+            }
+            NumVerts = 560
+            IndexCount = 546
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: Texture2D ObjectName: TicketBarriers_DiffSpec
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: TicketBarriers_EmisRefMask
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: TicketBarriers_Norm
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source = 

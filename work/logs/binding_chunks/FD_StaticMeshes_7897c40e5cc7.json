@@ -1,0 +1,98 @@
+{
+  "package": "FD_StaticMeshes",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\FinancialDistrict\\StaticMeshes\\FD_StaticMeshes.upk",
+  "district": "Financial",
+  "meshes": [
+    {
+      "mesh": "B16_Bridge_01",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Conc_Grey",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "B16_Bridge_02",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Conc_Grey",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "B44_00",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "B44_Docks_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "B44_01",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "B44_Docks_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "B44_02",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "B44_Docks_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "B44_03",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "B44_Docks_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "B44_04",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "B44_Docks_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "B44_05",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "B44_Docks_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|b44_docks_mat": [
+      "FD_StaticMeshes"
+    ],
+    "materialinstanceconstant|conc_grey": [
+      "Concrete"
+    ],
+    "material3|conc_parent": [
+      "Concrete"
+    ]
+  }
+}

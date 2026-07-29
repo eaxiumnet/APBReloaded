@@ -1,0 +1,184 @@
+{
+  "package": "Financial_CarnacCasino",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\FinancialDistrict\\StaticMeshes\\Financial_CarnacCasino.upk",
+  "district": "Financial",
+  "meshes": [
+    {
+      "mesh": "Basic_Layout",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "ModernStucco_Carnac_Casino_Dup",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "EyeOfRah",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "ModernStucco_Carnac_Casino_Dup",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FlamingTorch",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "PaintedMetal_Black",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Kajiki_Sign",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Conc_Sign_Kajiki_Emmisive",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "ConcGrime_GreyDark",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "Flames_Dup",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Needle",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "ModernStucco_Carnac_Casino_Dup",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Pillar",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Praetorian_Pillar",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "pillar1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "ModernStucco_Carnac_Casino_Dup",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Pillar_Test",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "ModernStucco_Carnac_Casino_Dup",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "PillarTop",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Conc_PARENT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Plinth",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Praetorian_Plaque",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "Conc_PARENT",
+          "material_class": "Material3"
+        },
+        {
+          "index": 2,
+          "material": "Praetorian_Pillar",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Praetorian_Carved",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Praetorian_Plaque",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Praetorian_DiscSmooth",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Logo",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "PaintedMetal_Black",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|conc_sign_kajiki_emmisive": [
+      "Financial_CarnacCasino"
+    ],
+    "material3|flames_dup": [
+      "Financial_CarnacCasino"
+    ],
+    "material3|logo": [
+      "Financial_CarnacCasino"
+    ],
+    "material3|modernstucco_carnac_casino_dup": [
+      "Financial_CarnacCasino"
+    ],
+    "material3|praetorian_pillar": [
+      "Financial_CarnacCasino"
+    ],
+    "material3|praetorian_plaque": [
+      "Financial_CarnacCasino"
+    ],
+    "materialinstanceconstant|paintedmetal_black": [
+      "Metal"
+    ],
+    "materialinstanceconstant|concgrime_greydark": [
+      "Concrete"
+    ],
+    "material3|conc_parent": [
+      "Concrete"
+    ],
+    "material3|paintedmetal_parent": [
+      "Metal"
+    ]
+  }
+}

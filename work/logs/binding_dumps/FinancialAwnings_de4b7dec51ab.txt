@@ -1,0 +1,513 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.0 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAwnings.upk Ver: 564/33 Engine: 3908 Names: 208 Exports: 51 Imports: 40 Game: 80001D
+Loading Material3 FinancialAwnings_Damage_Mat from package MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAwnings.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 FinancialAwnings_Mat from package MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAwnings.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+BoolProperty: unknown UMaterialExpressionVectorParameter bRealtimePreview
+BoolProperty: unknown UMaterialExpressionVectorParameter bRealtimePreview
+Loading MaterialInstanceConstant FinancialAwnings_Black from package MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAwnings.upk
+StrProperty: unknown UMaterialInstanceConstant RWTGuid
+ArrayProperty: unknown UMaterialInstanceConstant Channels
+Loading MaterialInstanceConstant FinancialAwnings_Blue from package MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAwnings.upk
+StrProperty: unknown UMaterialInstanceConstant RWTGuid
+ArrayProperty: unknown UMaterialInstanceConstant Channels
+Loading MaterialInstanceConstant FinancialAwnings_Brown from package MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAwnings.upk
+StrProperty: unknown UMaterialInstanceConstant RWTGuid
+ArrayProperty: unknown UMaterialInstanceConstant Channels
+Loading MaterialInstanceConstant FinancialAwnings_Green from package MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAwnings.upk
+StrProperty: unknown UMaterialInstanceConstant RWTGuid
+ArrayProperty: unknown UMaterialInstanceConstant Channels
+Loading MaterialInstanceConstant FinancialAwnings_LightBlue from package MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAwnings.upk
+StrProperty: unknown UMaterialInstanceConstant RWTGuid
+ArrayProperty: unknown UMaterialInstanceConstant Channels
+Loading MaterialInstanceConstant FinancialAwnings_Violet from package MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAwnings.upk
+StrProperty: unknown UMaterialInstanceConstant RWTGuid
+ArrayProperty: unknown UMaterialInstanceConstant Channels
+Loading StaticMesh3 FinancialAwnings_CafeBarrier from package MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAwnings.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_0"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_0"
+Loading StaticMesh3 FinancialAwnings_CafeBarrier_Damage1 from package MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAwnings.upk
+Loading Texture2D FinancialAwnings_2Mask from package MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAwnings.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FinancialAwnings_Damage from package MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAwnings.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FinancialAwnings_DiffSpec from package MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAwnings.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FinancialAwnings_Norm from package MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAwnings.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D FinancialAwnings_Spec from package MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAwnings.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 242 allocs, 1.86 MBytes serialized in 38 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: FinancialAwnings_Damage_Mat
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[5] =
+    {
+        ReferencedTextures[0] = Texture2D'FinancialAwnings_Norm'
+        ReferencedTextures[1] = Texture2D'FinancialAwnings_DiffSpec'
+        ReferencedTextures[2] = Texture2D'FinancialAwnings_2Mask'
+        ReferencedTextures[3] = Texture2D'FinancialAwnings_Damage'
+        ReferencedTextures[4] = Texture2D'FinancialAwnings_Spec'
+    }
+    Expressions[10] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'FinancialAwnings_Damage_Mat.MaterialExpressionTextureSample_0'
+        Expressions[2] = MaterialExpressionTextureSample'FinancialAwnings_Damage_Mat.MaterialExpressionTextureSample_1'
+        Expressions[5] = MaterialExpressionTextureSample'FinancialAwnings_Damage_Mat.MaterialExpressionTextureSample_4'
+        Expressions[7] = MaterialExpressionTextureSample'FinancialAwnings_Damage_Mat.MaterialExpressionTextureSample_5'
+        Expressions[8] = MaterialExpressionTextureSample'FinancialAwnings_Damage_Mat.MaterialExpressionTextureSample_6'
+        Expressions[9] = MaterialExpressionVectorParameter'FinancialAwnings_Damage_Mat.MaterialExpressionVectorParameter_2'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[1] =
+    {
+        CollectedVectorParameters[0] =
+        {
+            Value = { R=0.68002, G=0.086901, B=0.154152, A=1 }
+            Name = Colour Mask
+            Group = None
+        }
+    }
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: Material3 ObjectName: FinancialAwnings_Mat
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'FinancialAwnings_Norm'
+        ReferencedTextures[1] = Texture2D'FinancialAwnings_DiffSpec'
+        ReferencedTextures[2] = Texture2D'FinancialAwnings_2Mask'
+        ReferencedTextures[3] = Texture2D'FinancialAwnings_Spec'
+    }
+    Expressions[8] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'FinancialAwnings_Mat.MaterialExpressionTextureSample_0'
+        Expressions[2] = MaterialExpressionTextureSample'FinancialAwnings_Mat.MaterialExpressionTextureSample_1'
+        Expressions[4] = MaterialExpressionVectorParameter'FinancialAwnings_Mat.MaterialExpressionVectorParameter_3'
+        Expressions[6] = MaterialExpressionTextureSample'FinancialAwnings_Mat.MaterialExpressionTextureSample_4'
+        Expressions[7] = MaterialExpressionTextureSample'FinancialAwnings_Mat.MaterialExpressionTextureSample_5'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[1] =
+    {
+        CollectedVectorParameters[0] =
+        {
+            Value = { R=0.68002, G=0.086901, B=0.154152, A=1 }
+            Name = Colour Mask
+            Group = None
+        }
+    }
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'FinancialAwnings_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'FinancialAwnings_Norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_4
+ { Texture=Texture2D'FinancialAwnings_Spec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_5
+ { Texture=Texture2D'FinancialAwnings_Damage' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_6
+ { Texture=Texture2D'FinancialAwnings_2Mask' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'FinancialAwnings_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'FinancialAwnings_Norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_4
+ { Texture=Texture2D'FinancialAwnings_Spec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_5
+ { Texture=Texture2D'FinancialAwnings_2Mask' }
+
+Object info:
+============
+ClassName: MaterialExpressionVectorParameter ObjectName: MaterialExpressionVectorParameter_2
+    DefaultValue = { R=0.68002, G=0.086901, B=0.154152, A=1 }
+    ParameterName = Colour Mask
+    Group = None
+
+Object info:
+============
+ClassName: MaterialExpressionVectorParameter ObjectName: MaterialExpressionVectorParameter_3
+    DefaultValue = { R=0.68002, G=0.086901, B=0.154152, A=1 }
+    ParameterName = Colour Mask
+    Group = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: FinancialAwnings_Black
+    Parent = Material3'FinancialAwnings_Mat'
+    ScalarParameterValues[0] = {}
+    TextureParameterValues[0] = {}
+    VectorParameterValues[1] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterInfo = 
+            ParameterValue = { R=0.000107, G=0.000107, B=0.000805, A=1 }
+            ParameterName = Colour Mask
+        }
+    }
+    BasePropertyOverrides = 
+    StaticParameters = 
+    RuntimeVirtualTextureParameterValues[0] = {}
+    FontParameterValues[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: FinancialAwnings_Blue
+    Parent = Material3'FinancialAwnings_Mat'
+    ScalarParameterValues[0] = {}
+    TextureParameterValues[0] = {}
+    VectorParameterValues[1] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterInfo = 
+            ParameterValue = { R=0.166872, G=0.2468, B=0.38891, A=1 }
+            ParameterName = Colour Mask
+        }
+    }
+    BasePropertyOverrides = 
+    StaticParameters = 
+    RuntimeVirtualTextureParameterValues[0] = {}
+    FontParameterValues[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: FinancialAwnings_Brown
+    Parent = Material3'FinancialAwnings_Mat'
+    ScalarParameterValues[0] = {}
+    TextureParameterValues[0] = {}
+    VectorParameterValues[1] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterInfo = 
+            ParameterValue = { R=0.193972, G=0.063815, B=0.065754, A=1 }
+            ParameterName = Colour Mask
+        }
+    }
+    BasePropertyOverrides = 
+    StaticParameters = 
+    RuntimeVirtualTextureParameterValues[0] = {}
+    FontParameterValues[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: FinancialAwnings_Green
+    Parent = Material3'FinancialAwnings_Mat'
+    ScalarParameterValues[0] = {}
+    TextureParameterValues[0] = {}
+    VectorParameterValues[1] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterInfo = 
+            ParameterValue = { R=0.046149, G=0.263175, B=0.147998, A=1 }
+            ParameterName = Colour Mask
+        }
+    }
+    BasePropertyOverrides = 
+    StaticParameters = 
+    RuntimeVirtualTextureParameterValues[0] = {}
+    FontParameterValues[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: FinancialAwnings_LightBlue
+    Parent = Material3'FinancialAwnings_Mat'
+    ScalarParameterValues[0] = {}
+    TextureParameterValues[0] = {}
+    VectorParameterValues[1] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterInfo = 
+            ParameterValue = { R=0.47044, G=0.74453, B=0.819964, A=1 }
+            ParameterName = Colour Mask
+        }
+    }
+    BasePropertyOverrides = 
+    StaticParameters = 
+    RuntimeVirtualTextureParameterValues[0] = {}
+    FontParameterValues[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: FinancialAwnings_Violet
+    Parent = Material3'FinancialAwnings_Mat'
+    ScalarParameterValues[0] = {}
+    TextureParameterValues[0] = {}
+    VectorParameterValues[1] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterInfo = 
+            ParameterValue = { R=0.227137, G=0.190463, B=0.334458, A=1 }
+            ParameterName = Colour Mask
+        }
+    }
+    BasePropertyOverrides = 
+    StaticParameters = 
+    RuntimeVirtualTextureParameterValues[0] = {}
+    FontParameterValues[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialAwnings_CafeBarrier
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-0.00680065, Y=0.00920105, Z=50.6003 }
+        BoxExtent = { X=15.0325, Y=89.7296, Z=50.6003 }
+        SphereRadius = 103.047
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialAwnings_Mat', FirstIndex=0, NumFaces=516 }
+            }
+            NumVerts = 1036
+            IndexCount = 1548
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialAwnings_CafeBarrier_Damage1
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0.0619001, Y=-0.28215, Z=50.7702 }
+        BoxExtent = { X=15.3331, Y=89.4109, Z=50.7702 }
+        SphereRadius = 102.858
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialAwnings_Damage_Mat', FirstIndex=0, NumFaces=604 }
+            }
+            NumVerts = 1142
+            IndexCount = 1812
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialAwnings_2Mask
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialAwnings_Damage
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialAwnings_DiffSpec
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialAwnings_Norm
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialAwnings_Spec
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 

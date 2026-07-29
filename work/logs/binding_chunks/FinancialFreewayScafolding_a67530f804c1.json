@@ -1,0 +1,37 @@
+{
+  "package": "FinancialFreewayScafolding",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\FinancialDistrict\\PropMaterials\\FinancialFreewayScafolding.upk",
+  "district": "Financial",
+  "meshes": [
+    {
+      "mesh": "FreewayScafolding_Half_LOD0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialFreewayScafolding_MAT",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "FinancialFreewayScafolding_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FreewayScafolding_LOD0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialFreewayScafolding_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|financialfreewayscafolding_mat": [
+      "FinancialFreewayScafolding"
+    ]
+  }
+}

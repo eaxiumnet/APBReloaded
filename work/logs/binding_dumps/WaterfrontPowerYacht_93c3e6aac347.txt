@@ -1,0 +1,435 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontPowerYacht.upk Ver: 564/33 Engine: 3908 Names: 258 Exports: 114 Imports: 60 Game: 80001D
+Loading Material3 PowerYacht_Damage_Mat from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontPowerYacht.upk
+Loading package: MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk Ver: 564/33 Engine: 3908 Names: 153 Exports: 58 Imports: 26 Game: 80001D
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 PowerYacht_Mat from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontPowerYacht.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading MaterialInstanceConstant PowerYacht_Mat_INST from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontPowerYacht.upk
+StrProperty: unknown UMaterialInstanceConstant RWTGuid
+ArrayProperty: unknown UMaterialInstanceConstant Channels
+Loading StaticMesh3 PowerYacht_Crime_LOD0 from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontPowerYacht.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_1"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_1"
+Loading StaticMesh3 PowerYacht_Damage_LOD0 from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontPowerYacht.upk
+Loading StaticMesh3 PowerYacht_LOD0 from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontPowerYacht.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_0"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_0"
+Loading Texture2D PowerYacht_DamageDiff from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontPowerYacht.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D PowerYacht_Diff from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontPowerYacht.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D PowerYacht_Mask from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontPowerYacht.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D PowerYacht_Norm_FullRes from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontPowerYacht.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D PowerYacht_Opac from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontPowerYacht.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D PowerYacht_Spec from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontPowerYacht.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Sky from package MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 376 allocs, 3.56 MBytes serialized in 81 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: PowerYacht_Damage_Mat
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[6] =
+    {
+        ReferencedTextures[0] = Texture2D'PowerYacht_Norm_FullRes'
+        ReferencedTextures[1] = Texture2D'PowerYacht_DamageDiff'
+        ReferencedTextures[2] = Texture2D'Sky'
+        ReferencedTextures[3] = Texture2D'PowerYacht_Mask'
+        ReferencedTextures[4] = Texture2D'PowerYacht_Spec'
+        ReferencedTextures[5] = Texture2D'PowerYacht_Opac'
+    }
+    Expressions[19] =
+    {
+        Expressions[2] = MaterialExpressionTextureSample'PowerYacht_Damage_Mat.MaterialExpressionTextureSample_0'
+        Expressions[3] = MaterialExpressionTextureSample'PowerYacht_Damage_Mat.MaterialExpressionTextureSample_2'
+        Expressions[4] = MaterialExpressionTextureSample'PowerYacht_Damage_Mat.MaterialExpressionTextureSample_1'
+        Expressions[5] = MaterialExpressionTextureSample'PowerYacht_Damage_Mat.MaterialExpressionTextureSample_3'
+        Expressions[9] = MaterialExpressionTextureSample'PowerYacht_Damage_Mat.MaterialExpressionTextureSample_4'
+        Expressions[11] = MaterialExpressionTextureSample'PowerYacht_Damage_Mat.MaterialExpressionTextureSample_5'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: Material3 ObjectName: PowerYacht_Mat
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[6] =
+    {
+        ReferencedTextures[0] = Texture2D'PowerYacht_Norm_FullRes'
+        ReferencedTextures[1] = Texture2D'PowerYacht_Diff'
+        ReferencedTextures[2] = Texture2D'Sky'
+        ReferencedTextures[3] = Texture2D'PowerYacht_Mask'
+        ReferencedTextures[4] = Texture2D'PowerYacht_Spec'
+        ReferencedTextures[5] = Texture2D'PowerYacht_Opac'
+    }
+    Expressions[19] =
+    {
+        Expressions[2] = MaterialExpressionTextureSample'PowerYacht_Mat.MaterialExpressionTextureSample_0'
+        Expressions[3] = MaterialExpressionTextureSample'PowerYacht_Mat.MaterialExpressionTextureSample_2'
+        Expressions[4] = MaterialExpressionTextureSample'PowerYacht_Mat.MaterialExpressionTextureSample_1'
+        Expressions[5] = MaterialExpressionTextureSample'PowerYacht_Mat.MaterialExpressionTextureSample_3'
+        Expressions[9] = MaterialExpressionTextureSample'PowerYacht_Mat.MaterialExpressionTextureSample_4'
+        Expressions[11] = MaterialExpressionTextureSample'PowerYacht_Mat.MaterialExpressionTextureSample_5'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'PowerYacht_Norm_FullRes' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'PowerYacht_DamageDiff' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_2
+ { Texture=Texture2D'PowerYacht_Opac' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_3
+ { Texture=Texture2D'PowerYacht_Spec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_4
+ { Texture=Texture2D'Sky' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_5
+ { Texture=Texture2D'PowerYacht_Mask' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'PowerYacht_Norm_FullRes' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'PowerYacht_Diff' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_2
+ { Texture=Texture2D'PowerYacht_Opac' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_3
+ { Texture=Texture2D'PowerYacht_Spec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_4
+ { Texture=Texture2D'Sky' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_5
+ { Texture=Texture2D'PowerYacht_Mask' }
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: PowerYacht_Mat_INST
+    Parent = Material3'PowerYacht_Mat'
+    ScalarParameterValues[0] = {}
+    TextureParameterValues[0] = {}
+    VectorParameterValues[0] = {}
+    BasePropertyOverrides = 
+    StaticParameters = 
+    RuntimeVirtualTextureParameterValues[0] = {}
+    FontParameterValues[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: PowerYacht_Crime_LOD0
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=695.334, Y=-0.00320435, Z=384.463 }
+        BoxExtent = { X=1368.87, Y=321.47, Z=400.689 }
+        SphereRadius = 1414.57
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[2] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] =
+                {
+                    Material = MaterialInstanceConstant'PowerYacht_Mat_INST'
+                    FirstIndex = 0
+                    NumFaces = 1745
+                }
+            }
+            NumVerts = 3756
+            IndexCount = 5235
+            NumTexCoords = 1
+        }
+        Lods[1] =
+        {
+            Sections[1] =
+            {
+                Sections[0] =
+                {
+                    Material = MaterialInstanceConstant'PowerYacht_Mat_INST'
+                    FirstIndex = 0
+                    NumFaces = 705
+                }
+            }
+            NumVerts = 1738
+            IndexCount = 2115
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 2
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: PowerYacht_Damage_LOD0
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=695.334, Y=-0.00320435, Z=307.404 }
+        BoxExtent = { X=1368.87, Y=321.47, Z=323.63 }
+        SphereRadius = 1397.13
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[2] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'PowerYacht_Damage_Mat', FirstIndex=0, NumFaces=1387 }
+            }
+            NumVerts = 2956
+            IndexCount = 4161
+            NumTexCoords = 1
+        }
+        Lods[1] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'PowerYacht_Damage_Mat', FirstIndex=0, NumFaces=601 }
+            }
+            NumVerts = 1518
+            IndexCount = 1803
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 2
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: PowerYacht_LOD0
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=695.334, Y=-0.00320435, Z=384.463 }
+        BoxExtent = { X=1368.87, Y=321.47, Z=400.689 }
+        SphereRadius = 1414.57
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[2] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'PowerYacht_Mat', FirstIndex=0, NumFaces=1745 }
+            }
+            NumVerts = 3756
+            IndexCount = 5235
+            NumTexCoords = 1
+        }
+        Lods[1] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'PowerYacht_Mat', FirstIndex=0, NumFaces=705 }
+            }
+            NumVerts = 1738
+            IndexCount = 2115
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 2
+
+Object info:
+============
+ClassName: Texture2D ObjectName: PowerYacht_DamageDiff
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: PowerYacht_Diff
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: PowerYacht_Mask
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: PowerYacht_Norm_FullRes
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: PowerYacht_Opac
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: PowerYacht_Spec
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 

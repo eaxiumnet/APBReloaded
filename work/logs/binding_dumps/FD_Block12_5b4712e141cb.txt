@@ -1,0 +1,54 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block12.upk Ver: 564/33 Engine: 3908 Names: 72 Exports: 10 Imports: 9 Game: 80001D
+Loading Material3 SignPanels from package MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block12.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Texture2D SignPanels from package MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block12.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 53 allocs, 0.02 MBytes serialized in 3 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: SignPanels
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[1] = { Texture2D'SignPanels' }
+    Expressions[6] = { MaterialExpressionTextureSample'SignPanels.MaterialExpressionTextureSample_0' }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'SignPanels' }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: SignPanels
+    SizeX = 256
+    SizeY = 128
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 

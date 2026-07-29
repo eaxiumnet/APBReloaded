@@ -1,0 +1,31 @@
+{
+  "package": "Banners",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\FinancialDistrict\\Signs\\Banners.upk",
+  "district": "Financial",
+  "meshes": [
+    {
+      "mesh": "Banners_TEST",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Banners_material",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|banners_material": [
+      "Banners"
+    ],
+    "material3|banners_noanim": [
+      "Banners"
+    ],
+    "materialinstanceconstant|banners_material_cityhall": [
+      "Banners"
+    ],
+    "materialinstanceconstant|banners_material_festival": [
+      "Banners"
+    ]
+  }
+}

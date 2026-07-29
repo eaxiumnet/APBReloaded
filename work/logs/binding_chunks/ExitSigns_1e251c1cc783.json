@@ -1,0 +1,62 @@
+{
+  "package": "ExitSigns",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\FinancialDistrict\\FeatureMaterials\\ExitSigns.upk",
+  "district": "Financial",
+  "meshes": [
+    {
+      "mesh": "ExitArrow_Left",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "exitsigns",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ExitSign",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "exitsigns",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ExitSignArrow_Left",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "exitsigns",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ParkingSign",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "exitsigns",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ParkingSign_Left",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "exitsigns",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|exitsigns": [
+      "ExitSigns"
+    ]
+  }
+}

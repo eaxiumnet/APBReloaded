@@ -1,0 +1,32 @@
+{
+  "package": "Planters",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\FinancialDistrict\\PropMaterials\\Planters.upk",
+  "district": "Financial",
+  "meshes": [
+    {
+      "mesh": "Planter_Box_LOD0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Planter",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Planter_BoxDble_LOD0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Planter",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|planter": [
+      "Planters"
+    ]
+  }
+}

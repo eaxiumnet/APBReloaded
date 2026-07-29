@@ -1,0 +1,641 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.0 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: FinancialDistrict/Terrain/FinancialDistrict_TILE_001_000_BLOCK_250_500TERRAIN_Package.upk Ver: 564/33 Engine: 3908 Names: 38 Exports: 16 Imports: 15 Game: 80001D
+Loading StaticMesh3 MT001000B250500_720_LOD_0 from package FinancialDistrict/Terrain/FinancialDistrict_TILE_001_000_BLOCK_250_500TERRAIN_Package.upk
+BoolProperty: unknown UStaticMesh3 m_bRequiresCollisionData
+BoolProperty: unknown UStaticMesh3 m_bDiscardCPURenderData
+Loading package: MaterialDatabase/TerrainMaterials/Terrain.upk Ver: 564/33 Engine: 3908 Names: 236 Exports: 449 Imports: 50 Game: 80001D
+Loading StaticMesh3 MT001000B250500_720_LOD_1 from package FinancialDistrict/Terrain/FinancialDistrict_TILE_001_000_BLOCK_250_500TERRAIN_Package.upk
+Loading StaticMesh3 MT001000B250500_721_LOD_0 from package FinancialDistrict/Terrain/FinancialDistrict_TILE_001_000_BLOCK_250_500TERRAIN_Package.upk
+BoolProperty: unknown UStaticMesh3 m_bRequiresCollisionData
+BoolProperty: unknown UStaticMesh3 m_bDiscardCPURenderData
+Loading StaticMesh3 MT001000B250500_721_LOD_1 from package FinancialDistrict/Terrain/FinancialDistrict_TILE_001_000_BLOCK_250_500TERRAIN_Package.upk
+Loading StaticMesh3 MT001000B250500_730_LOD_0 from package FinancialDistrict/Terrain/FinancialDistrict_TILE_001_000_BLOCK_250_500TERRAIN_Package.upk
+BoolProperty: unknown UStaticMesh3 m_bRequiresCollisionData
+BoolProperty: unknown UStaticMesh3 m_bDiscardCPURenderData
+Loading StaticMesh3 MT001000B250500_730_LOD_1 from package FinancialDistrict/Terrain/FinancialDistrict_TILE_001_000_BLOCK_250_500TERRAIN_Package.upk
+Loading StaticMesh3 MT001000B250500_732_LOD_0 from package FinancialDistrict/Terrain/FinancialDistrict_TILE_001_000_BLOCK_250_500TERRAIN_Package.upk
+BoolProperty: unknown UStaticMesh3 m_bRequiresCollisionData
+BoolProperty: unknown UStaticMesh3 m_bDiscardCPURenderData
+Loading StaticMesh3 MT001000B250500_732_LOD_1 from package FinancialDistrict/Terrain/FinancialDistrict_TILE_001_000_BLOCK_250_500TERRAIN_Package.upk
+Loading StaticMesh3 MT001000B250500_733_LOD_0 from package FinancialDistrict/Terrain/FinancialDistrict_TILE_001_000_BLOCK_250_500TERRAIN_Package.upk
+BoolProperty: unknown UStaticMesh3 m_bRequiresCollisionData
+BoolProperty: unknown UStaticMesh3 m_bDiscardCPURenderData
+Loading package: MaterialDatabase/GenericMaterials/Terrain/Grass.upk Ver: 564/33 Engine: 3908 Names: 205 Exports: 392 Imports: 41 Game: 80001D
+Loading package: MaterialDatabase/GenericMaterials/Concrete/Concrete.upk Ver: 564/33 Engine: 3908 Names: 220 Exports: 242 Imports: 32 Game: 80001D
+Loading StaticMesh3 MT001000B250500_733_LOD_1 from package FinancialDistrict/Terrain/FinancialDistrict_TILE_001_000_BLOCK_250_500TERRAIN_Package.upk
+Loading StaticMesh3 MT001000B250500_734_LOD_0 from package FinancialDistrict/Terrain/FinancialDistrict_TILE_001_000_BLOCK_250_500TERRAIN_Package.upk
+BoolProperty: unknown UStaticMesh3 m_bRequiresCollisionData
+BoolProperty: unknown UStaticMesh3 m_bDiscardCPURenderData
+Loading package: MaterialDatabase/GenericMaterials/Paving/FloorTiles.upk Ver: 564/33 Engine: 3908 Names: 194 Exports: 185 Imports: 33 Game: 80001D
+Loading StaticMesh3 MT001000B250500_734_LOD_1 from package FinancialDistrict/Terrain/FinancialDistrict_TILE_001_000_BLOCK_250_500TERRAIN_Package.upk
+Loading StaticMesh3 MT001000B250500_739_LOD_0 from package FinancialDistrict/Terrain/FinancialDistrict_TILE_001_000_BLOCK_250_500TERRAIN_Package.upk
+BoolProperty: unknown UStaticMesh3 m_bRequiresCollisionData
+BoolProperty: unknown UStaticMesh3 m_bDiscardCPURenderData
+Loading StaticMesh3 MT001000B250500_739_LOD_1 from package FinancialDistrict/Terrain/FinancialDistrict_TILE_001_000_BLOCK_250_500TERRAIN_Package.upk
+Loading Material3 TERR_PaveSlab_01 from package MaterialDatabase/TerrainMaterials/Terrain.upk
+Loading package: MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Pathway.upk Ver: 564/33 Engine: 3908 Names: 185 Exports: 155 Imports: 36 Game: 80001D
+Loading package: MaterialDatabase/GenericMaterials/Shared_Maps.upk Ver: 564/33 Engine: 3908 Names: 128 Exports: 50 Imports: 15 Game: 80001D
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 Grass_Mat from package MaterialDatabase/GenericMaterials/Terrain/Grass.upk
+Loading package: MaterialDatabase/GenericMaterials/Foliage/Foliage_New.upk Ver: 564/33 Engine: 3908 Names: 146 Exports: 94 Imports: 27 Game: 80001D
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading MaterialInstanceConstant Conc_Grey from package MaterialDatabase/GenericMaterials/Concrete/Concrete.upk
+StrProperty: unknown UMaterialInstanceConstant RWTGuid
+ArrayProperty: unknown UMaterialInstanceConstant Channels
+ObjectProperty: unknown UMaterialInstanceConstant BakedMaterial
+FloatProperty: unknown UMaterialInstanceConstant m_BakedTextureCoordinate
+Loading MaterialInstanceConstant Floor_Stone2_Square_Grey from package MaterialDatabase/GenericMaterials/Paving/FloorTiles.upk
+StrProperty: unknown UMaterialInstanceConstant RWTGuid
+ArrayProperty: unknown UMaterialInstanceConstant Channels
+Loading Material3 Conc_PARENT_Baked from package MaterialDatabase/GenericMaterials/Concrete/Concrete.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading MaterialInstanceConstant Floor_Stone3_Square_Grey from package MaterialDatabase/GenericMaterials/Paving/FloorTiles.upk
+StrProperty: unknown UMaterialInstanceConstant RWTGuid
+ArrayProperty: unknown UMaterialInstanceConstant Channels
+Loading MaterialInstanceConstant Floor_Stone2_Square_Beige from package MaterialDatabase/GenericMaterials/Paving/FloorTiles.upk
+StrProperty: unknown UMaterialInstanceConstant RWTGuid
+ArrayProperty: unknown UMaterialInstanceConstant Channels
+Loading Texture2D Sidewalk_SquareStone2_Norm from package MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Pathway.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D DirtOverlay_01 from package MaterialDatabase/GenericMaterials/Shared_Maps.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Sidewalk_SquareStone2_DiffSpec from package MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Pathway.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Concrete_01_DiffSpec from package MaterialDatabase/GenericMaterials/Concrete/Concrete.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D SquarePavementTints from package MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Pathway.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Dirt_DiffSpec from package MaterialDatabase/GenericMaterials/Terrain/Grass.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Grass_DiffSpec from package MaterialDatabase/GenericMaterials/Terrain/Grass.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FD_GrassMasks from package MaterialDatabase/GenericMaterials/Terrain/Grass.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D CloverTiles from package MaterialDatabase/GenericMaterials/Foliage/Foliage_New.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Daisy_test from package MaterialDatabase/GenericMaterials/Foliage/Foliage_New.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Material3 Conc_PARENT from package MaterialDatabase/GenericMaterials/Concrete/Concrete.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Texture2D Stone02_DiffSpec from package MaterialDatabase/GenericMaterials/Paving/FloorTiles.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Material3 FloorTile_PARENT from package MaterialDatabase/GenericMaterials/Paving/FloorTiles.upk
+Loading package: MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk Ver: 564/33 Engine: 3908 Names: 246 Exports: 261 Imports: 36 Game: 80001D
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading package: MaterialDatabase/GenericMaterials/GraffitiMaps.upk Ver: 564/33 Engine: 3908 Names: 93 Exports: 18 Imports: 9 Game: 80001D
+Loading Texture2D Concrete_003_Norm from package MaterialDatabase/GenericMaterials/Concrete/Concrete.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D Conc_PARENT_Baked_LookupTexture from package MaterialDatabase/GenericMaterials/Concrete/Concrete.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D StreakyDirt from package MaterialDatabase/GenericMaterials/Shared_Maps.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Tile_Square03_NormMask_256x256 from package MaterialDatabase/GenericMaterials/Paving/FloorTiles.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+BoolProperty: unknown UMaterialExpressionVectorParameter bRealtimePreview
+Loading Texture2D PavingSlab_NormMask_256x256 from package MaterialDatabase/GenericMaterials/Paving/FloorTiles.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D TileVariation from package MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D DirtMap_Masks from package MaterialDatabase/GenericMaterials/Paving/FloorTiles.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D BlackTransparent from package MaterialDatabase/GenericMaterials/GraffitiMaps.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Concrete_cracks01_NRM2 from package MaterialDatabase/GenericMaterials/Concrete/Concrete.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D SmashedEndPiece_NRM from package MaterialDatabase/GenericMaterials/Concrete/Concrete.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D Tile_Square_03_Mask from package MaterialDatabase/GenericMaterials/Paving/FloorTiles.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 1238 allocs, 9.99 MBytes serialized in 211 calls.
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: MT001000B250500_720_LOD_0
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0, Y=0, Z=-2.91038e-11 }
+        BoxExtent = { X=2944, Y=2734.38, Z=0.000367733 }
+        SphereRadius = 4017.95
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'TERR_PaveSlab_01', FirstIndex=0, NumFaces=2 }
+            }
+            NumVerts = 8
+            IndexCount = 6
+            NumTexCoords = 3
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: MT001000B250500_720_LOD_1
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0, Y=0, Z=-2.91038e-11 }
+        BoxExtent = { X=2944, Y=2734.38, Z=0.000367733 }
+        SphereRadius = 4017.95
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'TERR_PaveSlab_01', FirstIndex=0, NumFaces=2 }
+            }
+            NumVerts = 8
+            IndexCount = 6
+            NumTexCoords = 3
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: MT001000B250500_721_LOD_0
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0, Y=0, Z=-2.91038e-11 }
+        BoxExtent = { X=2944, Y=2734.38, Z=0.000367733 }
+        SphereRadius = 4017.95
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'TERR_PaveSlab_01', FirstIndex=0, NumFaces=2 }
+            }
+            NumVerts = 8
+            IndexCount = 6
+            NumTexCoords = 3
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: MT001000B250500_721_LOD_1
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0, Y=0, Z=-2.91038e-11 }
+        BoxExtent = { X=2944, Y=2734.38, Z=0.000367733 }
+        SphereRadius = 4017.95
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'TERR_PaveSlab_01', FirstIndex=0, NumFaces=2 }
+            }
+            NumVerts = 8
+            IndexCount = 6
+            NumTexCoords = 3
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: MT001000B250500_730_LOD_0
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=20.324, Y=-10937.5, Z=-0.000955742 }
+        BoxExtent = { X=3437.04, Y=13671.9, Z=0.00134414 }
+        SphereRadius = 14097.3
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'TERR_PaveSlab_01', FirstIndex=0, NumFaces=10 }
+            }
+            NumVerts = 28
+            IndexCount = 30
+            NumTexCoords = 3
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: MT001000B250500_730_LOD_1
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=20.324, Y=-10937.5, Z=-0.000955742 }
+        BoxExtent = { X=3437.04, Y=13671.9, Z=0.00134414 }
+        SphereRadius = 14097.3
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'TERR_PaveSlab_01', FirstIndex=0, NumFaces=10 }
+            }
+            NumVerts = 28
+            IndexCount = 30
+            NumTexCoords = 3
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: MT001000B250500_732_LOD_0
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0, Y=-96.875, Z=-8.46921e-06 }
+        BoxExtent = { X=3190, Y=2637.5, Z=0.000370017 }
+        SphereRadius = 4139.14
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'TERR_PaveSlab_01', FirstIndex=0, NumFaces=6 }
+            }
+            NumVerts = 14
+            IndexCount = 18
+            NumTexCoords = 3
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: MT001000B250500_732_LOD_1
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0, Y=-96.875, Z=-8.46921e-06 }
+        BoxExtent = { X=3190, Y=2637.5, Z=0.000370017 }
+        SphereRadius = 4139.14
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'TERR_PaveSlab_01', FirstIndex=0, NumFaces=6 }
+            }
+            NumVerts = 14
+            IndexCount = 18
+            NumTexCoords = 3
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: MT001000B250500_733_LOD_0
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=107.858, Y=-96.8774, Z=4.99976 }
+        BoxExtent = { X=3297.85, Y=2831.25, Z=5.00016 }
+        SphereRadius = 4346.48
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[3] =
+            {
+                Sections[0] = { Material=Material3'TERR_PaveSlab_01', FirstIndex=0, NumFaces=32 }
+                Sections[1] = { Material=Material3'Grass_Mat', FirstIndex=96, NumFaces=17 }
+                Sections[2] = { Material=MaterialInstanceConstant'Conc_Grey', FirstIndex=147, NumFaces=138 }
+            }
+            NumVerts = 562
+            IndexCount = 561
+            NumTexCoords = 3
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: MT001000B250500_733_LOD_1
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=107.858, Y=-96.8774, Z=4.99976 }
+        BoxExtent = { X=3297.85, Y=2831.25, Z=5.00016 }
+        SphereRadius = 4346.48
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[3] =
+            {
+                Sections[0] = { Material=Material3'TERR_PaveSlab_01', FirstIndex=0, NumFaces=32 }
+                Sections[1] = { Material=Material3'Grass_Mat', FirstIndex=96, NumFaces=17 }
+                Sections[2] = { Material=MaterialInstanceConstant'Conc_Grey', FirstIndex=147, NumFaces=138 }
+            }
+            NumVerts = 562
+            IndexCount = 561
+            NumTexCoords = 3
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: MT001000B250500_734_LOD_0
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=63.3525, Y=-53.3848, Z=3.89354e-05 }
+        BoxExtent = { X=2704.87, Y=3612.68, Z=0.000393446 }
+        SphereRadius = 4513.07
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[4] =
+            {
+                Sections[0] = { Material=Material3'TERR_PaveSlab_01', FirstIndex=0, NumFaces=28 }
+                Sections[1] =
+                {
+                    Material = MaterialInstanceConstant'Floor_Stone2_Square_Grey'
+                    FirstIndex = 84
+                    NumFaces = 4
+                }
+                Sections[2] = { Material=Material3'Conc_PARENT_Baked', FirstIndex=96, NumFaces=28 }
+                Sections[3] =
+                {
+                    Material = MaterialInstanceConstant'Floor_Stone3_Square_Grey'
+                    FirstIndex = 180
+                    NumFaces = 10
+                }
+            }
+            NumVerts = 86
+            IndexCount = 210
+            NumTexCoords = 4
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: MT001000B250500_734_LOD_1
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=63.3525, Y=-53.3848, Z=3.89354e-05 }
+        BoxExtent = { X=2704.87, Y=3612.68, Z=0.000393446 }
+        SphereRadius = 4513.07
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[4] =
+            {
+                Sections[0] = { Material=Material3'TERR_PaveSlab_01', FirstIndex=0, NumFaces=28 }
+                Sections[1] =
+                {
+                    Material = MaterialInstanceConstant'Floor_Stone2_Square_Grey'
+                    FirstIndex = 84
+                    NumFaces = 4
+                }
+                Sections[2] = { Material=Material3'Conc_PARENT_Baked', FirstIndex=96, NumFaces=28 }
+                Sections[3] =
+                {
+                    Material = MaterialInstanceConstant'Floor_Stone3_Square_Grey'
+                    FirstIndex = 180
+                    NumFaces = 10
+                }
+            }
+            NumVerts = 86
+            IndexCount = 210
+            NumTexCoords = 4
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: MT001000B250500_739_LOD_0
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-0.00292969, Y=-56.2439, Z=4.99999 }
+        BoxExtent = { X=3416.72, Y=2790.62, Z=5.00038 }
+        SphereRadius = 4411.53
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[5] =
+            {
+                Sections[0] = { Material=Material3'TERR_PaveSlab_01', FirstIndex=0, NumFaces=33 }
+                Sections[1] =
+                {
+                    Material = MaterialInstanceConstant'Floor_Stone3_Square_Grey'
+                    FirstIndex = 99
+                    NumFaces = 2
+                }
+                Sections[2] =
+                {
+                    Material = MaterialInstanceConstant'Floor_Stone2_Square_Beige'
+                    FirstIndex = 105
+                    NumFaces = 4
+                }
+                Sections[3] = { Material=Material3'Grass_Mat', FirstIndex=117, NumFaces=2 }
+                Sections[4] = { Material=MaterialInstanceConstant'Conc_Grey', FirstIndex=123, NumFaces=96 }
+            }
+            NumVerts = 408
+            IndexCount = 411
+            NumTexCoords = 3
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: MT001000B250500_739_LOD_1
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-0.00292969, Y=-56.2439, Z=4.99999 }
+        BoxExtent = { X=3416.72, Y=2790.62, Z=5.00038 }
+        SphereRadius = 4411.53
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[5] =
+            {
+                Sections[0] = { Material=Material3'TERR_PaveSlab_01', FirstIndex=0, NumFaces=33 }
+                Sections[1] =
+                {
+                    Material = MaterialInstanceConstant'Floor_Stone3_Square_Grey'
+                    FirstIndex = 99
+                    NumFaces = 2
+                }
+                Sections[2] =
+                {
+                    Material = MaterialInstanceConstant'Floor_Stone2_Square_Beige'
+                    FirstIndex = 105
+                    NumFaces = 4
+                }
+                Sections[3] = { Material=Material3'Grass_Mat', FirstIndex=117, NumFaces=2 }
+                Sections[4] = { Material=MaterialInstanceConstant'Conc_Grey', FirstIndex=123, NumFaces=96 }
+            }
+            NumVerts = 408
+            IndexCount = 411
+            NumTexCoords = 3
+        }
+    }
+    LodCount = 1

@@ -1,0 +1,168 @@
+{
+  "package": "FD_Block43",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\FinancialDistrict\\StaticMeshes\\FD_Block43.upk",
+  "district": "Financial",
+  "meshes": [
+    {
+      "mesh": "Hospital_Plaque",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Hospital_Plaque",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "Brick_Burnished_Beige",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "Conc_GreyDark",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Hospital_Signs",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Hospital_Sign",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "PaintedMetal_Black",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Sign_Arrow",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Hospital_Sign",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Sign_DangerDeath",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Hospital_Sign",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Sign_H",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Hospital_Sign",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Sign_NoEntry",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Hospital_Sign",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Sign_NoSmoking",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Hospital_Sign",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Sign_Radiation",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Hospital_Sign",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Sign_Radiology_Xray",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Hospital_Sign",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Sign_ToiletFemale",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Hospital_Sign",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Sign_ToiletMale",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Hospital_Sign",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Sign_Wheelchair",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Hospital_Sign",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|hospital_plaque": [
+      "FD_Block43"
+    ],
+    "material3|hospital_sign": [
+      "FD_Block43"
+    ],
+    "materialinstanceconstant|brick_burnished_beige": [
+      "Brick_Large"
+    ],
+    "materialinstanceconstant|conc_greydark": [
+      "Concrete"
+    ],
+    "materialinstanceconstant|paintedmetal_black": [
+      "Metal"
+    ],
+    "material3|brick_burnished_parent": [
+      "Brick_Large"
+    ],
+    "material3|conc_parent": [
+      "Concrete"
+    ],
+    "material3|paintedmetal_parent": [
+      "Metal"
+    ]
+  }
+}

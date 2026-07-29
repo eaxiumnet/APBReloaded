@@ -1,0 +1,196 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/FinancialDistrict/PropMaterials/FinancialFreewayScafolding.upk Ver: 564/33 Engine: 3908 Names: 124 Exports: 19 Imports: 21 Game: 80001D
+Loading Material3 FinancialFreewayScafolding_MAT from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialFreewayScafolding.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading StaticMesh3 FreewayScafolding_Half_LOD0 from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialFreewayScafolding.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_0"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_0"
+Loading StaticMesh3 FreewayScafolding_LOD0 from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialFreewayScafolding.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_1"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_1"
+Loading Texture2D FreewayScafolding_DiffSpec from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialFreewayScafolding.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FreewayScafolding_Norm from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialFreewayScafolding.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loaded in 0.0 sec, 194 allocs, 1.73 MBytes serialized in 23 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: FinancialFreewayScafolding_MAT
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[2] = { Texture2D'FreewayScafolding_Norm', Texture2D'FreewayScafolding_DiffSpec' }
+    Expressions[2] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'FinancialFreewayScafolding_MAT.MaterialExpressionTextureSample_0'
+        Expressions[1] = MaterialExpressionTextureSample'FinancialFreewayScafolding_MAT.MaterialExpressionTextureSample_1'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'FreewayScafolding_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'FreewayScafolding_Norm' }
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FreewayScafolding_Half_LOD0
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=1.13174, Y=-15.0475, Z=317.87 }
+        BoxExtent = { X=227.305, Y=386.746, Z=317.898 }
+        SphereRadius = 529.001
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[3] =
+    {
+        Lods[0] =
+        {
+            Sections[2] =
+            {
+                Sections[0] = { Material=Material3'FinancialFreewayScafolding_MAT', FirstIndex=0, NumFaces=808 }
+                Sections[1] = { Material=Material3'FinancialFreewayScafolding_MAT', FirstIndex=0, NumFaces=0 }
+            }
+            NumVerts = 2422
+            IndexCount = 2424
+            NumTexCoords = 2
+        }
+        Lods[1] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialFreewayScafolding_MAT', FirstIndex=0, NumFaces=442 }
+            }
+            NumVerts = 1386
+            IndexCount = 1326
+            NumTexCoords = 2
+        }
+        Lods[2] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialFreewayScafolding_MAT', FirstIndex=0, NumFaces=130 }
+            }
+            NumVerts = 400
+            IndexCount = 390
+            NumTexCoords = 2
+        }
+    }
+    LodCount = 3
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FreewayScafolding_LOD0
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=1.13174, Y=9.15527e-05, Z=514.585 }
+        BoxExtent = { X=227.305, Y=401.794, Z=514.614 }
+        SphereRadius = 658.108
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[3] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialFreewayScafolding_MAT', FirstIndex=0, NumFaces=1032 }
+            }
+            NumVerts = 3156
+            IndexCount = 3096
+            NumTexCoords = 2
+        }
+        Lods[1] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialFreewayScafolding_MAT', FirstIndex=0, NumFaces=364 }
+            }
+            NumVerts = 1264
+            IndexCount = 1092
+            NumTexCoords = 2
+        }
+        Lods[2] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialFreewayScafolding_MAT', FirstIndex=0, NumFaces=164 }
+            }
+            NumVerts = 520
+            IndexCount = 492
+            NumTexCoords = 2
+        }
+    }
+    LodCount = 3
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FreewayScafolding_DiffSpec
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FreewayScafolding_Norm
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source = 

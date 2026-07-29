@@ -1,0 +1,38 @@
+{
+  "package": "FD_Block16",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\FinancialDistrict\\StaticMeshes\\FD_Block16.upk",
+  "district": "Financial",
+  "meshes": [
+    {
+      "mesh": "B16_Bridge_01",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Conc_Grey",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "B16_Bridge_02",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Conc_Grey",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|temp": [
+      "FD_Block16"
+    ],
+    "materialinstanceconstant|conc_grey": [
+      "Concrete"
+    ],
+    "material3|conc_parent": [
+      "Concrete"
+    ]
+  }
+}

@@ -1,0 +1,290 @@
+{
+  "master": {
+    "loaded": true,
+    "texture_params": [
+      "T_Diffuse",
+      "T_Normal",
+      "T_SpecMask",
+      "T_Emissive"
+    ],
+    "scalar_params": [
+      "RoughnessScale",
+      "SpecScale",
+      "EmissiveIntensity"
+    ],
+    "used_with_nanite": true,
+    "used_with_static_lighting": true,
+    "used_with_instanced_static_meshes": true,
+    "used_with_skeletal_mesh": true
+  },
+  "meshes": [
+    {
+      "path": "/Game/Imported/Districts/Crate/FinancialDoors_Office1_Double_7b3904aa-d340-4c9d-9027-313e96e54d46.FinancialDoors_Office1_Double_7b3904aa-d340-4c9d-9027-313e96e54d46",
+      "slots": [
+        {
+          "slot": 0,
+          "slot_name": "WorldGridMaterial",
+          "material": "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+        }
+      ]
+    },
+    {
+      "path": "/Game/Imported/Districts/Financial/FD_B01_Signage01_VertexLit_LOD_0.FD_B01_Signage01_VertexLit_LOD_0",
+      "slots": [
+        {
+          "slot": 0,
+          "slot_name": "WorldGridMaterial",
+          "material": "/Game/Imported/MaterialDatabase/Metal/MI_Metal_Brushed_Silver.MI_Metal_Brushed_Silver"
+        }
+      ]
+    },
+    {
+      "path": "/Game/Imported/Districts/Financial/FD_B01_Signage02_VertexLit_LOD_0.FD_B01_Signage02_VertexLit_LOD_0",
+      "slots": [
+        {
+          "slot": 0,
+          "slot_name": "WorldGridMaterial",
+          "material": "/Game/Imported/MaterialDatabase/SkyscraperWindows/MI_Glass_GlowingPanels_Green.MI_Glass_GlowingPanels_Green"
+        }
+      ]
+    },
+    {
+      "path": "/Game/Imported/Districts/Financial/FD_B01_Signage03_VertexLit_LOD_0.FD_B01_Signage03_VertexLit_LOD_0",
+      "slots": [
+        {
+          "slot": 0,
+          "slot_name": "WorldGridMaterial",
+          "material": "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+        }
+      ]
+    },
+    {
+      "path": "/Game/Imported/Districts/Financial/FD_B01_Signage05_VertexLit_LOD_0.FD_B01_Signage05_VertexLit_LOD_0",
+      "slots": [
+        {
+          "slot": 0,
+          "slot_name": "WorldGridMaterial",
+          "material": "/Game/Imported/MaterialDatabase/Metal/MI_Metal_Brushed_Silver.MI_Metal_Brushed_Silver"
+        }
+      ]
+    },
+    {
+      "path": "/Game/Imported/Districts/Financial/FD_B01_SignageScaffold_VertexLit_LOD_0.FD_B01_SignageScaffold_VertexLit_LOD_0",
+      "slots": [
+        {
+          "slot": 0,
+          "slot_name": "WorldGridMaterial",
+          "material": "/Game/Imported/MaterialDatabase/FD_Signage/MI_Billboard_Scaffold_Mat.MI_Billboard_Scaffold_Mat"
+        }
+      ]
+    },
+    {
+      "path": "/Game/Imported/Districts/Financial/FD_B01_TaejoSign_LOD_0.FD_B01_TaejoSign_LOD_0",
+      "slots": [
+        {
+          "slot": 0,
+          "slot_name": "WorldGridMaterial",
+          "material": "/Game/Imported/MaterialDatabase/Concrete/MI_ConcGrime_Grey.MI_ConcGrime_Grey"
+        }
+      ]
+    },
+    {
+      "path": "/Game/Imported/Districts/Financial/FD_B02_AnsaCredit_LOD_0.FD_B02_AnsaCredit_LOD_0",
+      "slots": [
+        {
+          "slot": 0,
+          "slot_name": "WorldGridMaterial",
+          "material": "/Game/Imported/MaterialDatabase/Metal/MI_PaintedMetal_Yellow.MI_PaintedMetal_Yellow"
+        }
+      ]
+    },
+    {
+      "path": "/Game/Imported/Districts/Financial/FD_B02_Criminalenterprise1_LOD_0.FD_B02_Criminalenterprise1_LOD_0",
+      "slots": [
+        {
+          "slot": 0,
+          "slot_name": "WorldGridMaterial",
+          "material": "/Game/Imported/MaterialDatabase/Metal/MI_Metal_Corroded.MI_Metal_Corroded"
+        }
+      ]
+    },
+    {
+      "path": "/Game/Imported/Districts/Financial/FD_B02_Criminalenterprise_LOD_0.FD_B02_Criminalenterprise_LOD_0",
+      "slots": [
+        {
+          "slot": 0,
+          "slot_name": "WorldGridMaterial",
+          "material": "/Game/Imported/MaterialDatabase/Metal/MI_Metal_Corroded.MI_Metal_Corroded"
+        }
+      ]
+    },
+    {
+      "path": "/Game/Imported/Districts/Financial/FD_B02_GFXBars_VertexLit_LOD_0.FD_B02_GFXBars_VertexLit_LOD_0",
+      "slots": [
+        {
+          "slot": 0,
+          "slot_name": "WorldGridMaterial",
+          "material": "/Game/Imported/MaterialDatabase/FD_Block02/MI_GFX_Eq.MI_GFX_Eq"
+        }
+      ]
+    },
+    {
+      "path": "/Game/Imported/Districts/Financial/FD_B02_Hopemallsign1_LOD_0.FD_B02_Hopemallsign1_LOD_0",
+      "slots": [
+        {
+          "slot": 0,
+          "slot_name": "WorldGridMaterial",
+          "material": "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+        }
+      ]
+    },
+    {
+      "path": "/Game/Imported/Districts/Financial/FD_B02_Hopemallsign_LOD_0.FD_B02_Hopemallsign_LOD_0",
+      "slots": [
+        {
+          "slot": 0,
+          "slot_name": "WorldGridMaterial",
+          "material": "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+        }
+      ]
+    },
+    {
+      "path": "/Game/Imported/Districts/Financial/FD_B02_Signage02_VertexLit_LOD_0.FD_B02_Signage02_VertexLit_LOD_0",
+      "slots": [
+        {
+          "slot": 0,
+          "slot_name": "WorldGridMaterial",
+          "material": "/Game/Imported/MaterialDatabase/SkyscraperWindows/MI_Glass_4P_NoInterior_Blue.MI_Glass_4P_NoInterior_Blue"
+        }
+      ]
+    },
+    {
+      "path": "/Game/Imported/Districts/Financial/FD_B02_Signage03_LOD_0.FD_B02_Signage03_LOD_0",
+      "slots": [
+        {
+          "slot": 0,
+          "slot_name": "WorldGridMaterial",
+          "material": "/Game/Imported/MaterialDatabase/Metal/MI_PaintedMetal_Black.MI_PaintedMetal_Black"
+        }
+      ]
+    },
+    {
+      "path": "/Game/Imported/Districts/Financial/FD_B02_Signage06_VertexLit_LOD_0.FD_B02_Signage06_VertexLit_LOD_0",
+      "slots": [
+        {
+          "slot": 0,
+          "slot_name": "WorldGridMaterial",
+          "material": "/Game/Imported/MaterialDatabase/Metal/MI_Metal_Brushed_Silver.MI_Metal_Brushed_Silver"
+        }
+      ]
+    },
+    {
+      "path": "/Game/Imported/Districts/Financial/FD_B02_Signage08_VertexLit_LOD_0.FD_B02_Signage08_VertexLit_LOD_0",
+      "slots": [
+        {
+          "slot": 0,
+          "slot_name": "WorldGridMaterial",
+          "material": "/Game/Imported/MaterialDatabase/Metal/MI_Metal_Brushed_Silver.MI_Metal_Brushed_Silver"
+        }
+      ]
+    },
+    {
+      "path": "/Game/Imported/Districts/Financial/FD_B02_Signage09_VertexLit_LOD_0.FD_B02_Signage09_VertexLit_LOD_0",
+      "slots": [
+        {
+          "slot": 0,
+          "slot_name": "WorldGridMaterial",
+          "material": "/Game/Imported/MaterialDatabase/Metal/MI_Metal_Brushed_Silver.MI_Metal_Brushed_Silver"
+        }
+      ]
+    },
+    {
+      "path": "/Game/Imported/Districts/Financial/FD_B02_Signage10_VertexLit_LOD_0.FD_B02_Signage10_VertexLit_LOD_0",
+      "slots": [
+        {
+          "slot": 0,
+          "slot_name": "WorldGridMaterial",
+          "material": "/Game/Imported/MaterialDatabase/Metal/MI_Metal_Brushed_Silver.MI_Metal_Brushed_Silver"
+        }
+      ]
+    },
+    {
+      "path": "/Game/Imported/Districts/Financial/FD_B02_Signage11_VertexLit_LOD_0.FD_B02_Signage11_VertexLit_LOD_0",
+      "slots": [
+        {
+          "slot": 0,
+          "slot_name": "WorldGridMaterial",
+          "material": "/Game/Imported/MaterialDatabase/Metal/MI_Metal_Brushed_Silver.MI_Metal_Brushed_Silver"
+        }
+      ]
+    },
+    {
+      "path": "/Game/Imported/Districts/Financial/FD_B02_Signage12_VertexLit_LOD_0.FD_B02_Signage12_VertexLit_LOD_0",
+      "slots": [
+        {
+          "slot": 0,
+          "slot_name": "WorldGridMaterial",
+          "material": "/Game/Imported/MaterialDatabase/Metal/MI_Metal_Brushed_Silver.MI_Metal_Brushed_Silver"
+        }
+      ]
+    },
+    {
+      "path": "/Game/Imported/Districts/Financial/FD_B02_Signageb03_VertexLit_LOD_0.FD_B02_Signageb03_VertexLit_LOD_0",
+      "slots": [
+        {
+          "slot": 0,
+          "slot_name": "WorldGridMaterial",
+          "material": "/Game/Imported/MaterialDatabase/Metal/MI_PaintedMetal_Black.MI_PaintedMetal_Black"
+        }
+      ]
+    },
+    {
+      "path": "/Game/Imported/Districts/Financial/FD_B02_SignageScaffold10_VertexLit_LOD_0.FD_B02_SignageScaffold10_VertexLit_LOD_0",
+      "slots": [
+        {
+          "slot": 0,
+          "slot_name": "WorldGridMaterial",
+          "material": "/Game/Imported/MaterialDatabase/FD_Signage/MI_Billboard_Scaffold_Mat.MI_Billboard_Scaffold_Mat"
+        }
+      ]
+    },
+    {
+      "path": "/Game/Imported/Districts/Financial/FD_B02_SignageScaffold11_VertexLit_LOD_0.FD_B02_SignageScaffold11_VertexLit_LOD_0",
+      "slots": [
+        {
+          "slot": 0,
+          "slot_name": "WorldGridMaterial",
+          "material": "/Game/Imported/MaterialDatabase/FD_Signage/MI_Billboard_Scaffold_Mat.MI_Billboard_Scaffold_Mat"
+        }
+      ]
+    },
+    {
+      "path": "/Game/Imported/Districts/Financial/FD_B02_SignageScaffold12_VertexLit_LOD_0.FD_B02_SignageScaffold12_VertexLit_LOD_0",
+      "slots": [
+        {
+          "slot": 0,
+          "slot_name": "WorldGridMaterial",
+          "material": "/Game/Imported/MaterialDatabase/FD_Signage/MI_Billboard_Scaffold_Mat.MI_Billboard_Scaffold_Mat"
+        }
+      ]
+    }
+  ],
+  "mics": [
+    {
+      "path": "/Game/Imported/MaterialDatabase/2mScaffold/MI_2mScaffold_MAT.MI_2mScaffold_MAT",
+      "parent": "/Game/Imported/Materials/M_APBMaster.M_APBMaster",
+      "textures": {
+        "T_Diffuse": "/Game/Imported/MaterialDatabase/2mScaffold/FreewayScafolding_DiffSpec.FreewayScafolding_DiffSpec",
+        "T_Normal": "/Game/Imported/MaterialDatabase/2mScaffold/FreewayScafolding_Norm.FreewayScafolding_Norm",
+        "T_SpecMask": "/Engine/EngineResources/DefaultTexture.DefaultTexture",
+        "T_Emissive": "/Engine/EngineResources/DefaultTexture.DefaultTexture"
+      }
+    }
+  ],
+  "slot_histogram": {
+    "WorldGridMaterial": 4,
+    "MI_MaterialDatabase": 21
+  },
+  "mesh_total_listed": 2559,
+  "mic_total_listed": 4113
+}

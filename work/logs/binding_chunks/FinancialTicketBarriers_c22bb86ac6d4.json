@@ -1,0 +1,52 @@
+{
+  "package": "FinancialTicketBarriers",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\FinancialDistrict\\PropMaterials\\FinancialTicketBarriers.upk",
+  "district": "Financial",
+  "meshes": [
+    {
+      "mesh": "TicketBarriers_CentralGate",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TicketBarriers_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "TicketBarriers_EndGate",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TicketBarriers_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "TicketBarriers_Railing",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TicketBarriers_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "TicketBarriers_Ticket_Gate",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TicketBarriers_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|ticketbarriers_mat": [
+      "FinancialTicketBarriers"
+    ]
+  }
+}

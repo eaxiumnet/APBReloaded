@@ -1,0 +1,42 @@
+{
+  "package": "WaterfrontCargoCrane",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\WaterfrontDistrict\\PropMaterials\\WaterfrontCargoCrane.upk",
+  "district": "Waterfront",
+  "meshes": [
+    {
+      "mesh": "WaterfrontCargoCranesA",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "WaterfrontCargoCrane_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "WaterfrontCargoCranesB_LOD0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "WaterfrontCargoCrane_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "WaterfrontCargoCranesC_LOD0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "WaterfrontCargoCrane_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|waterfrontcargocrane_mat": [
+      "WaterfrontCargoCrane"
+    ]
+  }
+}

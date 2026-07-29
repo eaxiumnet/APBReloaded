@@ -1,0 +1,42 @@
+{
+  "package": "FinancialAmmoCrates",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\FinancialDistrict\\PropMaterials\\FinancialAmmoCrates.upk",
+  "district": "Financial",
+  "meshes": [
+    {
+      "mesh": "AmmoCrates_Large",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "AmmoCrates_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "AmmoCrates_Medium",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "AmmoCrates_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "AmmoCrates_Small",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "AmmoCrates_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|ammocrates_mat": [
+      "FinancialAmmoCrates"
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "package": "FinancialDistrict_TILE_000_001_BLOCK_500_750TERRAIN_Package",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\FinancialDistrict\\Terrain\\FinancialDistrict_TILE_000_001_BLOCK_500_750TERRAIN_Package.upk",
+  "district": "Financial",
+  "meshes": [
+    {
+      "mesh": "MT000001B500750_318_LOD_0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TERR_Asphalt_01_FD",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "MT000001B500750_318_LOD_1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TERR_Asphalt_01_FD",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "MT000001B500750_319_LOD_0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Conc_Grey",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "MT000001B500750_319_LOD_1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Conc_Grey",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "materialinstanceconstant|terr_asphalt_01_fd": [
+      "Terrain"
+    ],
+    "materialinstanceconstant|conc_grey": [
+      "Concrete"
+    ],
+    "material3|terr_asphalt_01": [
+      "Terrain"
+    ],
+    "material3|conc_parent": [
+      "Concrete"
+    ]
+  }
+}

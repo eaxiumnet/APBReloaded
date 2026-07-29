@@ -1,0 +1,48 @@
+{
+  "package": "WaterfrontPowerYacht",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\WaterfrontDistrict\\PropMaterials\\WaterfrontPowerYacht.upk",
+  "district": "Waterfront",
+  "meshes": [
+    {
+      "mesh": "PowerYacht_Crime_LOD0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "PowerYacht_Mat_INST",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "PowerYacht_Damage_LOD0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "PowerYacht_Damage_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "PowerYacht_LOD0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "PowerYacht_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|poweryacht_damage_mat": [
+      "WaterfrontPowerYacht"
+    ],
+    "material3|poweryacht_mat": [
+      "WaterfrontPowerYacht"
+    ],
+    "materialinstanceconstant|poweryacht_mat_inst": [
+      "WaterfrontPowerYacht"
+    ]
+  }
+}

@@ -1,0 +1,340 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/FinancialDistrict/PropMaterials/FinancialWaterfrontSafety.upk Ver: 564/33 Engine: 3908 Names: 206 Exports: 52 Imports: 37 Game: 80001D
+Loading Material3 FinancialWaterfrontSafety_Damage_Mat from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialWaterfrontSafety.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 FinancialWaterfrontSafety_Mat from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialWaterfrontSafety.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading StaticMesh3 WaterfrontSafety_LifePreserver_Pole from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialWaterfrontSafety.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_9"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_9"
+Loading StaticMesh3 WaterfrontSafety_LifePreserver_Pole_Damage1 from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialWaterfrontSafety.upk
+Loading StaticMesh3 WaterfrontSafety_LifePreserver_Shrouded from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialWaterfrontSafety.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_8"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_8"
+Loading StaticMesh3 WaterfrontSafety_LifePreserver_Shrouded_Damage1 from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialWaterfrontSafety.upk
+Loading Texture2D FinancialWaterfrontSafety_Damage from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialWaterfrontSafety.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FinancialWaterfrontSafety_DiffSpec from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialWaterfrontSafety.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FinancialWaterfrontSafety_Norm from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialWaterfrontSafety.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D FinancialWaterfrontSafety_Opac from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialWaterfrontSafety.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 230 allocs, 1.91 MBytes serialized in 32 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: FinancialWaterfrontSafety_Damage_Mat
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'FinancialWaterfrontSafety_Norm'
+        ReferencedTextures[1] = Texture2D'FinancialWaterfrontSafety_Damage'
+        ReferencedTextures[2] = Texture2D'FinancialWaterfrontSafety_DiffSpec'
+        ReferencedTextures[3] = Texture2D'FinancialWaterfrontSafety_Opac'
+    }
+    Expressions[5] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'FinancialWaterfrontSafety_Damage_Mat.MaterialExpressionTextureSample_5'
+        Expressions[1] = MaterialExpressionTextureSample'FinancialWaterfrontSafety_Damage_Mat.MaterialExpressionTextureSample_6'
+        Expressions[2] = MaterialExpressionTextureSample'FinancialWaterfrontSafety_Damage_Mat.MaterialExpressionTextureSample_7'
+        Expressions[3] = MaterialExpressionTextureSample'FinancialWaterfrontSafety_Damage_Mat.MaterialExpressionTextureSample_8'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.3
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: Material3 ObjectName: FinancialWaterfrontSafety_Mat
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'FinancialWaterfrontSafety_Norm'
+        ReferencedTextures[1] = Texture2D'FinancialWaterfrontSafety_DiffSpec'
+        ReferencedTextures[2] = Texture2D'FinancialWaterfrontSafety_Opac'
+    }
+    Expressions[3] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'FinancialWaterfrontSafety_Mat.MaterialExpressionTextureSample_0'
+        Expressions[1] = MaterialExpressionTextureSample'FinancialWaterfrontSafety_Mat.MaterialExpressionTextureSample_1'
+        Expressions[2] = MaterialExpressionTextureSample'FinancialWaterfrontSafety_Mat.MaterialExpressionTextureSample_2'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.3
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_5
+ { Texture=Texture2D'FinancialWaterfrontSafety_Damage' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_6
+ { Texture=Texture2D'FinancialWaterfrontSafety_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_7
+ { Texture=Texture2D'FinancialWaterfrontSafety_Norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_8
+ { Texture=Texture2D'FinancialWaterfrontSafety_Opac' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'FinancialWaterfrontSafety_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'FinancialWaterfrontSafety_Opac' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_2
+ { Texture=Texture2D'FinancialWaterfrontSafety_Norm' }
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: WaterfrontSafety_LifePreserver_Pole
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=7.8261, Y=-0.21405, Z=67.718 }
+        BoxExtent = { X=17.4681, Y=36.8592, Z=67.718 }
+        SphereRadius = 70.5968
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialWaterfrontSafety_Mat', FirstIndex=0, NumFaces=365 }
+            }
+            NumVerts = 878
+            IndexCount = 1095
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: WaterfrontSafety_LifePreserver_Pole_Damage1
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=11.1733, Y=-1.9982, Z=67.718 }
+        BoxExtent = { X=20.8153, Y=34.528, Z=67.718 }
+        SphereRadius = 71.7611
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] =
+                {
+                    Material = Material3'FinancialWaterfrontSafety_Damage_Mat'
+                    FirstIndex = 0
+                    NumFaces = 349
+                }
+            }
+            NumVerts = 838
+            IndexCount = 1047
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: WaterfrontSafety_LifePreserver_Shrouded
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-6.37175, Y=-0.0289001, Z=180.796 }
+        BoxExtent = { X=27.1983, Y=41.5876, Z=180.743 }
+        SphereRadius = 184.266
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialWaterfrontSafety_Mat', FirstIndex=0, NumFaces=445 }
+            }
+            NumVerts = 956
+            IndexCount = 1335
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: WaterfrontSafety_LifePreserver_Shrouded_Damage1
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-5.44195, Y=-5.80955, Z=180.796 }
+        BoxExtent = { X=28.1281, Y=40.0319, Z=180.743 }
+        SphereRadius = 183.75
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] =
+                {
+                    Material = Material3'FinancialWaterfrontSafety_Damage_Mat'
+                    FirstIndex = 0
+                    NumFaces = 443
+                }
+            }
+            NumVerts = 936
+            IndexCount = 1329
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialWaterfrontSafety_Damage
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialWaterfrontSafety_DiffSpec
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialWaterfrontSafety_Norm
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialWaterfrontSafety_Opac
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 

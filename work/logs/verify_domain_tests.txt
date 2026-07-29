@@ -1,0 +1,1873 @@
+
+D:\APBReloaded>call "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\Tools\VsDevCmd.bat" -arch=amd64 -host_arch=amd64  1>nul 
+APBCatalog.cpp
+APBInventory.cpp
+APBArmas.cpp
+APBAuction.cpp
+APBMission.cpp
+APBCombat.cpp
+APBCustomization.cpp
+APBModelRegistry.cpp
+APBProgression.cpp
+APBPersistence.cpp
+APBWorldService.cpp
+run_domain_tests.cpp
+Generating Code...
+APB Domain tests (shipped WorldService)
+PASS: auth init catalog
+PASS: login_fail unknown user
+PASS: register carol
+PASS: register_fail duplicate
+PASS: login_fail bad password
+PASS: login_ok correct password
+PASS: session active after login_ok
+PASS: session cleared after logout
+PASS: login_fail banned
+LOGIN_PATH login_ok + login_fail exercised on LoginService
+PASS: host init catalog
+PASS: client init catalog
+PASS: register alice
+PASS: login alice
+PASS: enter world W1
+PASS: host create criminal
+PASS: register bob
+PASS: login bob
+PASS: client enter world
+PASS: client create enforcer
+PASS: live district set size >= 6
+PASS: Financial/Waterfront/Social present
+PASS: reserve district
+PASS: host join district
+PASS: host phase district
+PASS: host session exists
+PASS: peer joins same session
+PASS: two peers in district session
+PASS: stream plan has multiple chunks
+PASS: chunks near origin loaded
+SESSION DS-Financial-1 map=Lvl_APB_Financial_Freeroam players=2 chunks_near=7
+PASS: economy init
+PASS: buyer char
+PASS: armas catalog scalable (>=20)
+PASS: catalog has armas item
+PASS: armas purchase ok
+PASS: g1c deducted
+PASS: item in inventory
+PASS: armas reject insufficient
+PASS: auction list ok
+PASS: item removed on list
+PASS: auction buyout ok
+PASS: buyer received auction item
+PASS: seller received cash minus 5% marketplace fee (1000-50)
+PASS: second list ok
+PASS: auction reject funds
+PASS: auction reject unknown item
+PASS: loop init
+PASS: reg
+PASS: login
+PASS: world
+PASS: runner
+PASS: join
+PASS: weapon stats from catalog
+PASS: vehicle fleet families >= 20
+PASS: spawn vehicle
+PASS: possess vehicle
+PASS: vehicle possessed
+PASS: exit vehicle
+PASS: weapon def
+PASS: shot hit
+PASS: damage from catalog stats
+PASS: threat rose after kill
+PASS: notoriety tracks threat
+PASS: higher threat more opposition bots
+PASS: opposition pressure scales
+PASS: threat tiers available
+PASS: mission active
+PASS: opposition contesting
+PASS: mission completed multi-stage
+PASS: mission complete awards cash
+PASS: mission complete awards contact standing
+PASS: friend stub
+PASS: mail send
+PASS: clan stub
+PASS: save config blob
+PASS: load config blob
+PASS: snap init
+PASS: snap char
+PASS: snap has character
+PASS: snap cash == character cash
+PASS: snap g1c == character g1c
+PASS: snap inv slots == inventory.slots.size
+PASS: snap total qty
+PASS: snap armas
+PASS: snap g1c after buy
+PASS: snap inv after buy
+PASS: g1c decreased after buy
+PASS: snap mission stages
+PASS: snap mission title
+PASS: snap session id
+PASS: snap stage index matches mission
+PASS: snap threat matches
+PASS: snap exposes 2 contact standings
+PASS: snap exposes 1 role xp
+PASS: snap contacts id-sorted
+PASS: snap contacts id-sorted 2
+PASS: snap contact standing value
+PASS: snap role xp value
+PASS: snap active contact id == mission contact
+PASS: opp init
+PASS: opp char
+PASS: opp mission active
+PASS: opp mission contesting
+PASS: snap exposes contesting
+PASS: snap opp progress starts at 0
+PASS: snap opposition_won starts false
+PASS: AdvanceOpposition reports a decision
+PASS: opposition win fails mission
+PASS: opposition_won set on mission
+PASS: snap exposes opposition_won
+PASS: snap mission failed after opposition win
+PASS: opp2 init
+PASS: opp2 char
+PASS: owner wins race when faster
+PASS: no opposition win when owner completes
+PASS: opposition cannot flip a completed mission
+PASS: timeout init
+PASS: timeout char
+PASS: timeout mission active
+PASS: arm tick does not time out
+PASS: snap exposes stage time limit
+PASS: not timed out yet
+PASS: within window no timeout
+PASS: mission still active within window
+PASS: past deadline times out
+PASS: timeout fails mission
+PASS: timed_out flag set
+PASS: snap exposes timed_out
+PASS: snap failed after timeout
+PASS: timeout2 init
+PASS: timeout2 char
+PASS: no-limit stage never times out
+PASS: no-limit mission stays active
+PASS: contact_levels.json parses
+PASS: loaded full retail contact roster
+PASS: CriminalDefault max_level 10
+PASS: Binky max_level 3
+PASS: Clyde max_level 1
+PASS: Financial_C07 max_level 15
+PASS: Financial_C11 max_level 20
+PASS: unknown contact has no level
+PASS: normalize strips leading zero
+PASS: normalize keeps multi-digit
+PASS: normalize leaves non-numeric id
+PASS: lore id resolves to padded entry
+PASS: ladder sized to real max 5
+PASS: ladder sized to real max 20
+PASS: unknown falls back to default 15
+PASS: contactlevels world init
+PASS: world loaded retail contact levels
+PASS: player_roles.json parses
+PASS: loaded full retail role roster
+PASS: Role2_CrimArson present
+PASS: Role2_CrimArson -> Arsonist
+PASS: Role2_CrimArson has description
+PASS: Role2_Crim_Hacking present
+PASS: Role2_Crim_Hacking -> Black-Hat
+PASS: description single-line
+PASS: no role text carries a mangled u0027 escape
+PASS: at least one role apostrophe round-trips as a literal char
+PASS: playerroles world init
+PASS: world merged full retail roster
+PASS: world Role2_CrimArson -> Arsonist
+PASS: mission_templates.json parses
+PASS: loaded full retail mission-title roster
+PASS: AE_BCS0_Ter1_B title
+PASS: DB_BCS4_Del1 title
+PASS: apostrophe title decoded
+PASS: unknown id returns default
+PASS: missiontitles world init
+PASS: world loaded retail mission titles
+PASS: world loaded mission scripts
+PASS: retail-scheme scripts resolve to canonical titles
+PASS: no retail-scheme script id is left without a title
+PASS: every loaded script carries a display title after ApplyTo
+PASS: DB_BCS3_Ars1 script loaded
+PASS: DB_BCS3_Ars1 stamped with canonical title
+PASS: ApplyTo is idempotent
+PASS: task_objectives.json parses
+PASS: loaded full retail stage-brief roster
+PASS: AE_BCS0_Ter1_B_Stage01 present
+PASS: brief template_id parsed
+PASS: brief stage parsed
+PASS: owner_brief parsed
+PASS: dispatch_brief parsed
+PASS: brief markup preserved
+PASS: no mangled u003c escape
+PASS: multi-stage template returns all stages
+PASS: ForTemplate is stage-ordered
+PASS: first stage is 1
+PASS: taskobjectives world init
+PASS: world loaded stage briefs
+PASS: every brief template_id resolves to a canonical mission title
+PASS: task_operations.json parses
+PASS: loaded full retail operation-label roster
+PASS: graffiti op label
+PASS: checkpoint op label
+PASS: escape op label
+PASS: missing op returns default
+PASS: missing op Find is null
+PASS: no mangled \uXXXX escape in any op label
+PASS: taskoperations world init
+PASS: world loaded operation labels
+PASS: world op label resolves
+PASS: mission_result_reasons.json parses
+PASS: loaded full retail result-reason roster
+PASS: timedout win message
+PASS: timedout lose message
+PASS: final objective win message
+PASS: unopposed win message
+PASS: apostrophe round-trips in lose message
+PASS: missing reason returns default
+PASS: missing reason Find is null
+PASS: no mangled \uXXXX escape in any result-reason message
+PASS: resultreasons world init
+PASS: world loaded result reasons
+PASS: world result-reason message resolves
+PASS: threat_ratings.json parses
+PASS: loaded all five retail threat-rating tiers
+PASS: training display name
+PASS: green display name
+PASS: gold display name
+PASS: reverse lookup by display name
+PASS: ratings sorted by rank
+PASS: bronze may join green district
+PASS: bronze may join gold district
+PASS: silver may not join green district
+PASS: gold may join silver district
+PASS: gold may not join bronze district
+PASS: green confined to green district
+PASS: green may not join bronze district
+PASS: missing rating returns default
+PASS: missing rating Find is null
+PASS: threatratings world init
+PASS: world loaded threat ratings
+PASS: world matchmaking gate resolves
+PASS: factions.json parses
+PASS: loaded None/Enforcer/Criminal (DNT 'Both' skipped)
+PASS: None entry titled 'General Info'
+PASS: enforcer display name
+PASS: criminal info title
+PASS: ForFaction(Enforcer) resolves
+PASS: ForFaction(Criminal) resolves
+PASS: GeneralInfo() is the None row
+PASS: factions sorted by rank
+PASS: enforcer lore opening verbatim
+PASS: enforcer lore names Prentiss Tigers
+PASS: criminal lore names G-Kings and Blood Roses
+PASS: apostrophe round-trips
+PASS: no leftover \u escapes
+PASS: enforcer lore keeps blank-line paragraph breaks
+PASS: no literal backslash-n leaked through
+PASS: enforcer lore has multiple paragraphs
+PASS: DNT 'Both' faction absent
+PASS: missing faction returns default
+PASS: factioninfo world init
+PASS: world loaded faction info
+PASS: world faction lookup resolves
+PASS: heatlevels world init
+PASS: threat table loaded from apbdb data
+PASS: notoriety L0 description present
+PASS: reaches notoriety L5
+PASS: notoriety L5 description present
+PASS: no leftover \u escape
+PASS: prestige P0 description present
+PASS: six notoriety + six prestige tiers
+PASS: every notoriety tier has a description
+PASS: every notoriety tier has a description
+PASS: every notoriety tier has a description
+PASS: every notoriety tier has a description
+PASS: every notoriety tier has a description
+PASS: every notoriety tier has a description
+PASS: every prestige tier has a description
+PASS: every prestige tier has a description
+PASS: every prestige tier has a description
+PASS: every prestige tier has a description
+PASS: every prestige tier has a description
+PASS: every prestige tier has a description
+PASS: heat snapshot init
+PASS: heat char
+PASS: snapshot exposes notoriety tier name
+PASS: snapshot exposes heat description
+PASS: snapshot threat level matches current tier
+PASS: organisations.json parses
+PASS: loaded all 19 named organisations (empty 'None' skipped)
+PASS: G-Kings display name
+PASS: Praetorians display name
+PASS: RIOT full display name
+PASS: Joker Distribution display name
+PASS: Blood Roses are Criminal
+PASS: SPPD is Enforcer
+PASS: Armas store is neutral
+PASS: G-Kings is a gang
+PASS: Joker Box No-Trade is a store front
+PASS: Joker Distribution is a vendor
+PASS: six criminal-affiliated organisations
+PASS: six enforcer-affiliated organisations
+PASS: seven neutral (store/vendor/tutorial/seasonal) orgs
+PASS: criminal orgs stay rank-ordered
+PASS: criminal orgs stay rank-ordered
+PASS: criminal orgs stay rank-ordered
+PASS: criminal orgs stay rank-ordered
+PASS: criminal orgs stay rank-ordered
+PASS: eight gangs classified
+PASS: three Armas store fronts
+PASS: organisations sorted by rank
+PASS: missing org Find is null
+PASS: missing org returns default
+PASS: organisations world init
+PASS: world loaded organisations
+PASS: world org lookup resolves
+PASS: medals.json parses
+PASS: loaded all 82 medals
+PASS: kill streak rank 1 title
+PASS: kill streak rank 1 criteria
+PASS: Champion title
+PASS: VIP kill titled Assassination
+PASS: apostrophe title round-trips
+PASS: no leftover \u escape
+PASS: BigWin category
+PASS: TimeLimit category
+PASS: standalone KillBehind category
+PASS: AFK is a demerit dishonour
+PASS: Champion is not a dishonour
+PASS: thirty-nine demerit dishonours
+PASS: dishonour count matches category count
+PASS: six kill-streak ranks
+PASS: kill-streak medals stay ordered
+PASS: kill-streak medals stay ordered
+PASS: kill-streak medals stay ordered
+PASS: kill-streak medals stay ordered
+PASS: kill-streak medals stay ordered
+PASS: big-win medal family present
+PASS: six distinct medal categories
+PASS: first category is KillStreak
+PASS: medals sorted by order
+PASS: missing medal Find is null
+PASS: missing medal returns default
+PASS: medals world init
+PASS: world loaded medals
+PASS: world medal lookup resolves
+PASS: street_names.json parses
+PASS: loaded all 191 street names
+PASS: named street resolves
+PASS: ampersand intersection round-trips
+PASS: named street kind
+PASS: named street is not an intersection
+PASS: junction is an intersection
+PASS: retail typo key present
+PASS: typo key classified Financial
+PASS: typo key is an intersection
+PASS: typo key label verbatim
+PASS: financial street count
+PASS: waterfront street count
+PASS: named-street count
+PASS: intersection count
+PASS: every street is in a known district
+PASS: two districts
+PASS: financial district first
+PASS: ForDistrict count matches
+PASS: accented label round-trips
+PASS: no stray unicode escape
+PASS: streets sorted by order
+PASS: missing street Find is null
+PASS: missing street returns default
+PASS: street names world init
+PASS: world loaded street names
+PASS: world street lookup resolves
+PASS: ammo_categories.json parses
+PASS: loaded all 24 ammo categories
+PASS: rifle full name
+PASS: magnum abbreviated label
+PASS: shotgun quantity template
+PASS: sniper abbreviated label
+PASS: None sentinel present
+PASS: None sentinel name
+PASS: empty-name row dropped
+PASS: rifle counter formats
+PASS: shotgun counter formats
+PASS: grenade counter formats
+PASS: num token preserved
+PASS: ammo sorted by order
+PASS: missing ammo Find is null
+PASS: missing ammo returns default
+PASS: missing ammo format default
+PASS: ammo categories world init
+PASS: world loaded ammo categories
+PASS: world ammo format resolves
+PASS: scoreboard_descriptions.json parses
+PASS: loaded all 22 scoreboard columns
+PASS: arrests tooltip
+PASS: kills tooltip
+PASS: player-name tooltip
+PASS: threat tooltip apostrophe
+PASS: no literal \u in tooltip
+PASS: cash-premium tooltip
+PASS: scoreboard sorted by order
+PASS: missing column Find is null
+PASS: missing column returns default
+PASS: scoreboard world init
+PASS: world loaded scoreboard columns
+PASS: world scoreboard resolves
+PASS: hud_combat_messages.json parses
+PASS: loaded all 145 combat feed messages
+PASS: kill-enemy bottom line
+PASS: kill-assist bottom line
+PASS: arrest bottom line
+PASS: objective-complete bottom line
+PASS: arson top-line label
+PASS: character-name token preserved
+PASS: medal-name token preserved
+PASS: no literal \u in token
+PASS: score+dollar token preserved
+PASS: teamkill demerit line
+PASS: match-won empty top line kept
+PASS: match-won bottom line
+PASS: both-empty placeholder dropped
+PASS: kill-enemy name substituted
+PASS: score token substituted
+PASS: combat feed sorted by order
+PASS: missing feed Find is null
+PASS: missing feed returns default
+PASS: hud combat world init
+PASS: world loaded combat feed messages
+PASS: world combat feed resolves
+-- ModifierEffects (mod tooltips) from retail --
+PASS: modifier_effects.json parses
+PASS: loaded all 163 modifier effects
+PASS: four mod categories present and sorted
+PASS: 92 weapon mods
+PASS: 40 vehicle mods
+PASS: 27 character mods
+PASS: 4 usable/consumable mods
+PASS: jump-control has one line
+PASS: jump-control markup line verbatim
+PASS: hard-landing has two lines
+PASS: epinephrine has four lines
+PASS: field-supplier-health reassembled to three lines
+PASS: no literal \u in markup
+PASS: jump-control parses into two colour runs
+PASS: first run is green +400%
+PASS: second run is white air control
+PASS: plain text strips colour markup
+PASS: malformed no-'>' tag kept literal
+PASS: mods sorted by file order
+PASS: missing mod Find is null
+PASS: missing mod has zero lines
+PASS: missing mod Lines is empty
+PASS: modifier effects world init
+PASS: world loaded modifier effects
+PASS: world modifier effect resolves
+-- ModifierItemTypes (mod items) from retail --
+PASS: modifier_item_types.json parses
+PASS: loaded all 284 modifier item types
+PASS: four item categories present and sorted
+PASS: 160 weapon items
+PASS: 69 vehicle items
+PASS: 53 character items
+PASS: 2 special/placeholder items
+PASS: kevlar1 type label
+PASS: kevlar1 flavour description verbatim
+PASS: nitro3 category
+PASS: apostrophe preserved in description
+PASS: no literal \u in description
+PASS: flavour-only item has no type label
+PASS: flavour-only description kept
+PASS: EffectId strips FnMod_ prefix
+PASS: EffectId strips prefix + _Tutorial suffix
+PASS: placeholder id passes through
+PASS: EffectIdFor resolves stored item
+PASS: modifier_effects.json parses
+PASS: explosives1 item found
+PASS: item binds to a real modifier effect row
+PASS: items sorted by file order
+PASS: missing item Find is null
+PASS: missing item returns default label
+PASS: missing item description empty
+PASS: modifier item types world init
+PASS: world loaded modifier item types
+PASS: world modifier item resolves
+-- RoleMilestones (per-rank role progression) from retail --
+PASS: role_milestones.json parses
+PASS: loaded all 705 role milestones
+PASS: anniversary rank 1 title verbatim
+PASS: anniversary rank 5 title verbatim
+PASS: RoleId strips trailing rank
+PASS: Rank parses trailing number
+PASS: Rank parses rank 5
+PASS: RoleId leaves suffix-less id alone
+PASS: Rank is -1 with no numeric suffix
+PASS: RoleIdFor resolves stored milestone
+PASS: RankFor resolves stored milestone
+PASS: anniversary role has 5 milestones
+PASS: ForRole sorted ascending, rank 1 first
+PASS: ForRole last is rank 5
+PASS: backup milestone grants a reward
+PASS: reward body verbatim, U+21B5 collapsed to space
+PASS: title-only milestone has no reward
+PASS: reward subject apostrophe preserved
+PASS: no literal \u in subject
+PASS: milestones sorted by file order
+PASS: missing milestone Find is null
+PASS: missing milestone returns default title
+PASS: missing milestone body empty
+PASS: role milestones world init
+PASS: world loaded role milestones
+PASS: milestone binds to a real player_roles row
+-- HUDMessages (on-screen HUD notifications) from retail --
+PASS: hud_messages.json parses
+PASS: loaded all 882 HUD messages
+PASS: error banner colour span verbatim
+PASS: token banner verbatim
+PASS: no literal \u in display text
+PASS: StripColor removes colour wrappers
+PASS: PlainDisplayText strips colour span
+PASS: StripColor keeps substitution tokens
+PASS: FormatDisplay substitutes token
+PASS: two tokens filled by repeated Format
+PASS: chat text verbatim where present
+PASS: messages sorted by file order
+PASS: missing message Find is null
+PASS: missing message returns default display
+PASS: missing message plain text empty
+PASS: hud messages world init
+PASS: world loaded HUD messages
+PASS: world HUD message resolves + strips colour
+-- RewardPackages (reward-bundle display text) from retail --
+PASS: reward_packages.json parses
+PASS: loaded all 1661 reward packages
+PASS: achievement reward desc verbatim
+PASS: lease desc apostrophe verbatim
+PASS: APB$ text preserved
+PASS: no literal \u in description
+PASS: out-of-season desc empty in retail
+PASS: DescriptionFor falls back to regular desc when OOS empty
+PASS: package has description
+PASS: missing package has no description
+PASS: Category is the family token before first underscore
+PASS: Category of id with no underscore is whole id
+PASS: ForCategory returns the Challenges family
+PASS: empty-description package (None) dropped
+PASS: packages sorted by file order
+PASS: missing package Find is null
+PASS: missing package returns default description
+PASS: reward packages world init
+PASS: world loaded reward packages
+PASS: world reward package resolves description
+-- WeightedRewards (reward-mail subject/body) from retail --
+PASS: weighted_rewards.json parses
+PASS: loaded all 189 weighted-reward mails
+PASS: bio reward subject verbatim
+PASS: bio reward body starts verbatim
+PASS: bio reward body apostrophe preserved
+PASS: U+21B5 paragraph break became newline
+PASS: no literal \u in subject
+PASS: legendary reward subject verbatim
+PASS: out-of-season subject empty in retail
+PASS: MailSubjectFor falls back to regular subject when OOS empty
+PASS: MailBodyFor falls back to regular body when OOS empty
+PASS: reward has mail text
+PASS: missing reward has no mail text
+PASS: Category is the family token before first underscore
+PASS: ForCategory returns the Bio family
+PASS: rewards sorted by file order
+PASS: missing reward Find is null
+PASS: missing reward returns default subject
+PASS: weighted rewards world init
+PASS: world loaded weighted rewards
+PASS: world weighted reward resolves subject
+-- RedeemableRewards (player-choice confirmation mails) from retail --
+PASS: redeemable_rewards.json parses
+PASS: loaded all 1471 redeemable-reward mails
+PASS: retail preset subject verbatim
+PASS: retail preset body starts verbatim
+PASS: U+21B5 paragraph break became newline
+PASS: no literal \u in subject
+PASS: leased preset subject verbatim
+PASS: leased preset body empty in retail
+PASS: subject-only reward still counts as having mail text
+PASS: subject-only reward has no body
+PASS: retail preset has a body
+PASS: missing reward has no mail text
+PASS: Category is the family token before first underscore
+PASS: ForCategory returns the Weapon family
+PASS: rewards sorted by file order
+PASS: missing reward Find is null
+PASS: missing reward returns default subject
+PASS: redeemable rewards world init
+PASS: world loaded redeemable rewards
+PASS: world redeemable reward resolves subject
+-- RewardPackageItemTypes (per-component descriptions + mails) from retail --
+PASS: reward_item_types.json parses
+PASS: loaded all 139 reward item types
+PASS: component description verbatim
+PASS: component has a description
+PASS: desc-only component has no mail
+PASS: no literal \u in description
+PASS: mail subject verbatim incl. embedded quotes
+PASS: mail body starts verbatim
+PASS: U+21B5 paragraph break became newline
+PASS: outfit component has confirmation mail
+PASS: Category is the second token (families share the RewardPackage_ prefix)
+PASS: Category resolves Outfit family
+PASS: ForCategory returns the Clothing family
+PASS: items sorted by file order
+PASS: missing item Find is null
+PASS: missing item returns default description
+PASS: reward item types world init
+PASS: world loaded reward item types
+PASS: world reward item type resolves description
+-- InventoryItemTypes (master id -> display-name dictionary) from retail --
+PASS: inventory_item_types.json parses
+PASS: loaded all 12997 inventory item types
+PASS: Mod_None display name verbatim
+PASS: Mod_Vacant display name verbatim
+PASS: Reward_GenericReward display name verbatim
+PASS: Mod_None creator verbatim
+PASS: Mod_None has a display name
+PASS: no literal \u in display name
+PASS: Category is the first token
+PASS: Category resolves Reward family
+PASS: ForCategory returns the Mod family
+PASS: items sorted by file order
+PASS: missing item Find is null
+PASS: missing item returns default display name
+PASS: inventory item types world init
+PASS: world loaded inventory item types
+PASS: world inventory item type resolves display name
+-- UnlockItemTypes (unlock-item id -> description) from retail --
+PASS: unlock_item_types.json parses
+PASS: loaded all 1972 unlock item types
+PASS: unlock description verbatim incl. embedded quotes
+PASS: second unlock description verbatim
+PASS: unlock has a description
+PASS: no literal \u in description
+PASS: Category is the first token
+PASS: ForCategory returns the Unlock family
+PASS: items sorted by file order
+PASS: missing unlock Find is null
+PASS: missing unlock returns default description
+PASS: unlock item types world init
+PASS: world loaded unlock item types
+PASS: world unlock item type resolves description
+-- InventoryItemInfraCategories (item category taxonomy) from retail --
+PASS: inventory_infra_categories.json parses
+PASS: loaded all 149 inventory infra categories
+PASS: display name verbatim
+PASS: compound display name verbatim
+PASS: plural label verbatim
+PASS: singular label verbatim
+PASS: category exists
+PASS: no literal \u in label
+PASS: items sorted by file order
+PASS: placeholder None dropped
+PASS: missing category Find is null
+PASS: missing category returns default label
+PASS: inventory infra categories world init
+PASS: world loaded inventory infra categories
+PASS: world inventory infra category resolves display name
+-- WeaponItemTypes (weapon id -> rich description) from retail --
+PASS: weapon_item_types.json parses
+PASS: loaded all 839 weapon item types
+PASS: weapon description begins verbatim
+PASS: short weapon description verbatim
+PASS: weapon has a description
+PASS: no literal \u in description
+PASS: Category is the first token
+PASS: Class is the second token
+PASS: ForCategory returns the Weapon family
+PASS: ForClass returns the SniperRifle class
+PASS: items sorted by file order
+PASS: missing weapon Find is null
+PASS: missing weapon returns default description
+PASS: weapon item types world init
+PASS: world loaded weapon item types
+PASS: world weapon item type resolves description
+-- VehicleItemTypes (vehicle id -> rich description) from retail --
+PASS: vehicle_item_types.json parses
+PASS: loaded all 569 vehicle item types
+PASS: vehicle description begins verbatim
+PASS: second vehicle description begins verbatim
+PASS: vehicle has a description
+PASS: no literal \u in description
+PASS: Category is the first token
+PASS: Class is the second token
+PASS: ForCategory returns the Vehicle family
+PASS: ForClass returns the Car class
+PASS: items sorted by file order
+PASS: missing vehicle Find is null
+PASS: missing vehicle returns default description
+PASS: vehicle item types world init
+PASS: world loaded vehicle item types
+PASS: world vehicle item type resolves description
+-- ClothingItemTypes (clothing id -> rich description) from retail --
+PASS: clothing_item_types.json parses
+PASS: loaded all 1836 clothing item types
+PASS: clothing description begins verbatim
+PASS: second clothing description begins verbatim
+PASS: clothing has a description
+PASS: no literal \u in description
+PASS: Category is the first token
+PASS: Class is the second token
+PASS: ForCategory returns the Clothing family
+PASS: ForClass returns the Preset class
+PASS: ForClass returns the M (male) class
+PASS: items sorted by file order
+PASS: missing clothing Find is null
+PASS: missing clothing returns default description
+PASS: clothing item types world init
+PASS: world loaded clothing item types
+PASS: world clothing item type resolves description
+-- Contacts (authoritative retail name + untruncated bio) from retail --
+PASS: contacts_catalog.json parses
+PASS: loaded all 97 contacts
+PASS: contact display name verbatim
+PASS: contact has a bio
+PASS: no literal \u in bio
+PASS: None DNT placeholder dropped
+PASS: District is the first token
+PASS: ForDistrict returns the Financial contacts
+PASS: ForDistrict returns the Waterfront contacts
+PASS: items sorted by file order
+PASS: missing contact Find is null
+PASS: missing contact returns default title
+PASS: contacts catalog world init
+PASS: world loaded contacts catalog
+PASS: world contact resolves display name
+-- Tutorials (in-game City Guide onboarding text) from retail --
+PASS: tutorials.json parses
+PASS: loaded all 120 tutorials
+PASS: tutorial title verbatim
+PASS: tutorial subtitle verbatim
+PASS: tutorial title keeps literal '&'
+PASS: tutorial has a body
+PASS: HTML markup kept verbatim in body
+PASS: no literal \u in body
+PASS: items sorted by file order
+PASS: None DNT placeholder dropped
+PASS: missing tutorial Find is null
+PASS: missing tutorial returns default title
+PASS: tutorials world init
+PASS: world loaded tutorials
+PASS: world tutorial resolves title
+-- LoadingMovieTips (loading-screen gameplay hints) from retail --
+PASS: loading_tips.json parses
+PASS: loaded all 134 loading tips
+PASS: loading tip message verbatim
+PASS: second loading tip begins verbatim
+PASS: no literal \u in message
+PASS: Category is the first token
+PASS: ForCategory returns the GP tips
+PASS: items sorted by file order
+PASS: None DNT placeholder dropped
+PASS: missing tip Find is null
+PASS: missing tip returns default message
+PASS: loading tips world init
+PASS: world loaded loading tips
+PASS: world loading tip resolves message
+-- DisplayPoint (collectible/achievement/progression display entries) from retail --
+PASS: display_points.json parses
+PASS: loaded all 277 display points
+PASS: display point title verbatim
+PASS: display point obtained-by begins verbatim
+PASS: retail ShortTitle DNT placeholder preserved verbatim
+PASS: no literal \u in title
+PASS: District is the first token
+PASS: ForDistrict returns the Financial points
+PASS: items sorted by file order
+PASS: None DNT placeholder row dropped
+PASS: missing point Find is null
+PASS: missing point returns default title
+PASS: display points world init
+PASS: world loaded display points
+PASS: world display point resolves title
+-- PopupDialogs (in-game advisory / help popups) from retail --
+PASS: popup_dialogs.json parses
+PASS: loaded all 165 popup dialogs
+PASS: popup body verbatim
+PASS: second popup body begins verbatim
+PASS: no literal \u in body
+PASS: Category is the first token
+PASS: ForCategory returns the AD popups
+PASS: items sorted by file order
+PASS: None DNT placeholder dropped
+PASS: missing popup Find is null
+PASS: missing popup returns default body
+PASS: popup dialogs world init
+PASS: world loaded popup dialogs
+PASS: world popup dialog resolves body
+-- HUDMarkerVisualText (role-dependent HUD marker labels) from retail --
+PASS: hud_marker_text.json parses
+PASS: loaded all 112 HUD marker texts
+PASS: owner-attack label verbatim
+PASS: opposition-attack label keeps <Color:...> markup verbatim
+PASS: no literal \u in label
+PASS: Family is the first token
+PASS: items sorted by file order
+PASS: None DNT placeholder dropped
+PASS: missing marker Find is null
+PASS: missing marker returns default label
+PASS: hud marker text world init
+PASS: world loaded HUD marker texts
+PASS: world HUD marker resolves owner-attack label
+-- ChatMessageCategories (chat channel slash commands + help) from retail --
+PASS: chat_message_categories.json parses
+PASS: loaded all 21 chat message categories
+PASS: 10 player-usable slash-command channels
+PASS: Clan primary slash command
+PASS: Clan secondary slash command
+PASS: District primary slash command
+PASS: Whisper primary slash command
+PASS: Trade primary is /tr (not /trade)
+PASS: Trade secondary is /trade
+PASS: Officer primary slash command
+PASS: Reply primary slash command
+PASS: Yell primary slash command
+PASS: Team primary slash command
+PASS: Clan tag verbatim
+PASS: Whisper_Sent tag is To
+PASS: Minigame tag is Event
+PASS: Challenge tag keeps exclamation
+PASS: Clan description content
+PASS: Officer description content
+PASS: Clan syntax example
+PASS: District syntax example
+PASS: Broadcast_System has no player slash command
+PASS: Combat has no player slash command
+PASS: Broadcast_System tag still valid
+PASS: FindBySlashCommand /c -> Clan
+PASS: FindBySlashCommand /clan -> Clan
+PASS: FindBySlashCommand /TR -> Trade (case-insensitive)
+PASS: FindBySlashCommand /w -> Whisper
+PASS: FindBySlashCommand unknown is null
+PASS: channels sorted by file order
+PASS: None DNT placeholder dropped
+PASS: missing channel Find is null
+PASS: no literal \u in description
+PASS: chat message categories world init
+PASS: world loaded chat message categories
+PASS: world resolves Trade slash
+-- EmoteCommands (emote slash commands + display names) from retail --
+PASS: emote_commands.json parses
+PASS: loaded all 50 emote commands
+PASS: 15 dance emotes
+PASS: Dance slash command
+PASS: Wave slash command
+PASS: Bow slash command
+PASS: Surrender slash command
+PASS: Taunt slash command
+PASS: Body Pop display name
+PASS: Dance 80s display name
+PASS: Strike A Pose 1 display name
+PASS: Thumbs Up display name
+PASS: Coin Toss display name
+PASS: FindBySlashCommand /dance -> Dance
+PASS: FindBySlashCommand /WAVE -> Wave (case-insensitive)
+PASS: FindBySlashCommand /bodypop -> Body Pop
+PASS: FindBySlashCommand unknown is null
+PASS: Dance is dance
+PASS: Dance 80s is dance
+PASS: Dance Urban is dance
+PASS: Wave is not dance
+PASS: Bow is not dance
+PASS: emotes sorted by file order
+PASS: missing emote Find is null
+PASS: missing emote returns default name
+PASS: no literal \u in display name
+PASS: emote commands world init
+PASS: world loaded emote commands
+PASS: world resolves Dance slash
+-- CeremonyMsgs (big on-screen celebration popup titles) from retail --
+PASS: hud_ceremony_msgs.json parses
+PASS: loaded all 93 ceremony messages
+PASS: kill streak title
+PASS: arrest streak title
+PASS: win streak title
+PASS: medal earned title
+PASS: contact level up title
+PASS: contact maxed title
+PASS: role level up title
+PASS: notoriety up title
+PASS: notoriety down title
+PASS: prestige up title
+PASS: rank up title
+PASS: bounty claimed title
+PASS: bad shot title
+PASS: notoriety 5 title
+PASS: prestige 5 title
+PASS: unlock clothing title
+PASS: unlock weapons title
+PASS: unlock vehicles title
+PASS: unlock emotes title
+PASS: unlock symbol title
+PASS: unlock title title
+PASS: AM category
+PASS: Minigame category
+PASS: ProvingGrounds category
+PASS: 54 AM ceremonies
+PASS: 15 Minigame ceremonies
+PASS: ProvingGrounds ceremonies exist
+PASS: Weapon_Pickup has placeholder
+PASS: kill streak no placeholder
+PASS: trade completed title
+PASS: trade cancelled title
+PASS: msgs sorted by file order
+PASS: missing msg Find is null
+PASS: missing msg returns default title
+PASS: no literal \u in title
+PASS: ceremony msgs world init
+PASS: world loaded ceremony msgs
+PASS: world resolves title
+-- TaskTargetTypes (mission objective display names) from retail --
+PASS: task_target_types.json parses
+PASS: loaded all 118 task target types
+PASS: BankMachine -> ATM
+PASS: Graffiti_Default -> Graffiti Point
+PASS: Alarms -> Alarm
+PASS: BackDoor -> Back door
+PASS: BusShelter -> Bus shelter
+PASS: ElectricalBox -> Electrical box
+PASS: FireHydrant -> Fire hydrant
+PASS: MailBox -> Mail box
+PASS: ParkBench -> Bench
+PASS: PayPhone -> Pay Phone
+PASS: NPC_Standard_Male -> Pedestrian
+PASS: NPC_Pimp_Male -> Drug Mule
+PASS: Checkpoint_Race -> Checkpoint
+PASS: TerritoryControl -> Checkpoint
+PASS: ParkedVehicleSpawn -> Vehicle
+PASS: Criminal dropoff -> Fence
+PASS: Enforcer dropoff -> Secure Lockup
+PASS: Easter Bunny -> Mr Bunny
+PASS: Easter Chicken -> Mr Chicken
+PASS: PumpkinRed -> Red Pumpkin
+PASS: RiotBombTarget -> RIOT Device
+PASS: RiotVan -> RIOT Unit
+PASS: NPC_Standard_Male is NPC
+PASS: BankMachine is not NPC
+PASS: Checkpoint_Race is checkpoint
+PASS: BankMachine is not checkpoint
+PASS: many Checkpoint variants
+PASS: multiple Pedestrian NPCs
+PASS: has distinct display names
+PASS: targets sorted by file order
+PASS: A_None empty name dropped
+PASS: missing target Find is null
+PASS: missing target returns default
+PASS: no literal \u in name
+PASS: task target types world init
+PASS: world loaded task target types
+PASS: world resolves display name
+FAILS=0
+APBCatalog.cpp
+APBInventory.cpp
+APBArmas.cpp
+APBAuction.cpp
+APBMission.cpp
+APBCombat.cpp
+APBCustomization.cpp
+APBModelRegistry.cpp
+APBProgression.cpp
+APBPersistence.cpp
+APBWorldService.cpp
+run_persistence_tests.cpp
+Generating Code...
+APB Persistence tests (restart parity)
+PASS: A init catalog
+PASS: persistence inactive before InitPersistence
+PASS: A persistence init
+PASS: persistence active after InitPersistence
+PASS: two distinct armas items available
+PASS: A register alice
+PASS: A login alice
+PASS: A create criminal char
+PASS: A equip clothing
+PASS: A grant item x3
+PASS: A armas buy (g1c spend)
+PASS: A auction list
+PASS: A send mail to PBob
+PASS: A armas count decremented by listing
+PASS: A armas stock remains after listing
+PASS: A character cleared on logout
+PASS: A register bob
+PASS: A login bob
+PASS: A create enforcer char
+PASS: accounts.json exists
+PASS: alice character file exists
+PASS: bob character file exists
+PASS: auction.json exists
+PASS: mail.json exists
+PASS: B init catalog
+PASS: B persistence init
+PASS: B mail restored for PBob
+PASS: B mail unread before read-flag test
+PASS: B mail subject matches
+PASS: B mail body matches
+PASS: B mail cash attachment matches
+PASS: B claim mail cash attachment
+PASS: B attachment claimed (no unclaimed)
+PASS: B auction listing restored active
+PASS: B login alice (account persisted)
+PASS: B character auto-loaded on login
+PASS: B character name matches
+PASS: B faction matches
+PASS: B cash matches
+PASS: B g1c matches
+PASS: B inventory armas count matches
+PASS: B inventory has armas-bought item
+PASS: B threat points match
+PASS: B appearance blob matches
+PASS: B progress contact standing restored
+PASS: B progress role xp restored
+PASS: B progress unknown contact defaults 0
+PASS: B mark mail read
+PASS: C init catalog
+PASS: C persistence init
+PASS: C login bob
+PASS: C bob character restored
+PASS: C enforcer faction persisted
+PASS: C mail read flag persisted
+PASS: C mail claimed flag persisted
+PASS: D init catalog
+PASS: D persistence inactive (no InitPersistence)
+PASS: D register in-memory
+PASS: D login in-memory
+PASS: D create char in-memory
+PASS: D grant item in-memory
+PASS: D send mail in-memory
+PASS: D state intact after SaveAllNow no-op
+PASS: E store init
+PASS: E no progress file yet
+PASS: E save progress
+PASS: E progress file created
+PASS: E load progress
+PASS: E contact standing restored
+PASS: E second contact restored
+PASS: E role xp restored
+PASS: E unknown contact defaults 0
+PASS: E missing progress -> false
+PASS: E missing leaves empty
+FAILS=0
+APBCatalog.cpp
+APBInventory.cpp
+APBArmas.cpp
+APBAuction.cpp
+APBMission.cpp
+APBCombat.cpp
+APBCustomization.cpp
+APBModelRegistry.cpp
+APBProgression.cpp
+APBPersistence.cpp
+APBWorldService.cpp
+run_fidelity_tests.cpp
+Generating Code...
+APB fidelity tests (mission scripts + customization + session)
+PASS: load mission_scripts.json
+PASS: scripts non-empty
+PASS: find JG_BCS4_Bom1
+PASS: stage count >= 3
+PASS: contact_id set
+PASS: first stage contact
+PASS: mission active
+PASS: opposition contesting
+PASS: runtime stages >= 3
+PASS: script completes multi-stage
+PASS: find fail demo script
+PASS: opposition takeouts force fail
+PASS: init for customization
+PASS: create alpha
+PASS: equip torso hoodie
+PASS: equip legs jeans
+PASS: torso id retained
+PASS: legs id retained
+PASS: serialize appearance
+PASS: equip enf jacket
+PASS: equip enf pants
+PASS: two characters differ
+PASS: deserialize
+PASS: reload torso
+PASS: reload legs
+PASS: reload body fields
+PASS: reject unknown clothing
+PASS: session init
+PASS: session create
+PASS: session equip
+PASS: session boots
+PASS: districts
+PASS: join district
+PASS: phase district
+PASS: customization present on session
+PASS: start scripted mission
+PASS: scripted stages loaded
+PASS: contact from script
+PASS: weapon in catalog
+PASS: catalog weapon hit
+PASS: threat rose
+PASS: scripted mission completed
+PASS: 15 wardrobe tabs
+PASS: tab 1 -> torso
+PASS: tab 15 -> bodyhair
+PASS: unknown tab -> empty
+PASS: open wardrobe_categories.json
+PASS: json tab 1 -> torso
+PASS: json tab 2 -> legs
+PASS: json tab 3 -> feet
+PASS: json tab 4 -> head
+PASS: json tab 5 -> hands
+PASS: json tab 6 -> face
+PASS: json tab 7 -> underwear
+PASS: json tab 8 -> outerwear
+PASS: json tab 9 -> dress
+PASS: json tab 10 -> jewellery
+PASS: json tab 11 -> belt
+PASS: json tab 12 -> accessory
+PASS: json tab 13 -> webbing
+PASS: json tab 14 -> armour
+PASS: json tab 15 -> bodyhair
+PASS: all 15 tabs cross-checked vs json
+PASS: deserialize symbol blob
+PASS: one symbol restored
+PASS: symbol id+slot restored
+PASS: symbol transform restored
+PASS: symbol colors restored
+PASS: deserialize legacy blob
+PASS: legacy blob has no symbols
+PASS: legacy clothing intact
+PASS: 15 distinct slots equipped independently
+PASS: deserialize 15-slot blob
+PASS: 15 slots survive restart
+PASS: slot torso restored
+PASS: slot legs restored
+PASS: slot feet restored
+PASS: slot head restored
+PASS: slot hands restored
+PASS: slot face restored
+PASS: slot underwear restored
+PASS: slot outerwear restored
+PASS: slot dress restored
+PASS: slot jewellery restored
+PASS: slot belt restored
+PASS: slot accessory restored
+PASS: slot webbing restored
+PASS: slot armour restored
+PASS: slot bodyhair restored
+PASS: randomize init catalog
+PASS: same seed -> deterministic
+PASS: different seed -> different result
+PASS: randomized height in range
+PASS: randomize fills most tab pools
+PASS: randomized torso is a real tabbed item
+PASS: randomized legs is a real tabbed item
+PASS: randomized feet is a real tabbed item
+PASS: randomized head is a real tabbed item
+PASS: randomized hands is a real tabbed item
+PASS: randomized face is a real tabbed item
+PASS: randomized underwear is a real tabbed item
+PASS: randomized outerwear is a real tabbed item
+PASS: randomized dress is a real tabbed item
+PASS: randomized jewellery is a real tabbed item
+PASS: randomized belt is a real tabbed item
+PASS: randomized accessory is a real tabbed item
+PASS: randomized webbing is a real tabbed item
+PASS: randomized armour is a real tabbed item
+PASS: randomized bodyhair is a real tabbed item
+FAILS=0
+APBCatalog.cpp
+APBInventory.cpp
+APBArmas.cpp
+APBAuction.cpp
+APBMission.cpp
+APBCombat.cpp
+APBCustomization.cpp
+APBModelRegistry.cpp
+APBProgression.cpp
+APBPersistence.cpp
+APBWorldService.cpp
+APBTicket.cpp
+run_auth_tests.cpp
+Generating Code...
+APB Auth tests (C2 RED suite)
+PASS: T1: register alice
+PASS: T1: salt is 32 hex chars (16 bytes)
+PASS: T1: hash is not plaintext
+PASS: T1: salt non-empty
+PASS: T1: register bob (same pass)
+PASS: T1: unique salt per account
+PASS: T2: register carol
+PASS: T2: login_ok hashed
+PASS: T2: login_fail wrong password
+PASS: T2: login_fail unknown user
+PASS: T2: login_fail banned
+PASS: T3: legacy login succeeds
+PASS: T3: post-migrate salt is 32 hex chars
+PASS: T3: post-migrate hash not plaintext
+PASS: T3: post-migrate login still works
+PASS: T3: post-migrate wrong password fails
+PASS: T4: ticket issued non-empty
+PASS: T4: payload.signature separator present
+PASS: T4: ticket verifies
+PASS: T4: account parity
+PASS: T4: character parity
+PASS: T4: faction parity
+PASS: T4: district parity
+PASS: T4: jti non-empty
+PASS: T4: tampered ticket rejected
+PASS: T5: replay token issued
+PASS: T5: first verify ok
+PASS: T5: ConsumeJti accepted
+PASS: T5: second verify blocked (replay)
+FAILS=0
+APBChat.cpp
+run_chat_tests.cpp
+Generating Code...
+APB Chat tests (M7 N5)
+PASS: T1: district delivered
+PASS: T1: reaches all 3 players
+PASS: T1: everyone incl sender
+PASS: T2: whisper delivered
+PASS: T2: target gets it
+PASS: T2: sender gets echo
+PASS: T2: bystander does NOT
+PASS: T2: offline target rejected
+PASS: T2: DND target rejected
+PASS: T3: sender still succeeds
+PASS: T3: ignorer does not receive
+PASS: T3: others (self) still receive
+PASS: T3: whisper reports delivered
+PASS: T3: ignored whisper dropped for target
+PASS: T3: sender still sees own whisper echo
+PASS: T4: filtered for bob
+PASS: T4: raw for carol (opted out)
+PASS: T5: msg1 ok
+PASS: T5: msg2 ok
+PASS: T5: msg3 ok
+PASS: T5: msg4 muted
+PASS: T5: recovers after window
+PASS: T6: group delivered
+PASS: T6: same-group members receive
+PASS: T6: other group excluded
+PASS: T6: no faction set -> BadChannel
+PASS: T7: /w parses target+body
+PASS: T7: /d district
+PASS: T7: /g group
+PASS: T7: plain uses default
+PASS: T7: /w with no message is malformed
+PASS: T7: blank line not ok
+PASS: T8: SubmitRaw whisper routes
+PASS: T8: system broadcast delivered
+PASS: T8: system bypasses ignore -> reaches all
+FAILS=0
+APBGroup.cpp
+run_group_tests.cpp
+Generating Code...
+APB Group tests (M14)
+PASS: T1: create ok
+PASS: T1: alice in her group
+PASS: T1: alice is leader
+PASS: T1: size 1
+PASS: T1: no double group
+PASS: T1: leader invites bob
+PASS: T1: bob has pending invite
+PASS: T1: invite alone does not join
+PASS: T1: bob accepts
+PASS: T1: bob joined, size 2
+PASS: T1: accept clears invite
+PASS: T2: solo invite auto-creates
+PASS: T2: carol became leader
+PASS: T2: dave joins carol's group
+PASS: T3: group full at 4
+PASS: T3: invite rejected when full
+PASS: T4: cannot invite self
+PASS: T4: first invite ok
+PASS: T4: duplicate invite rejected
+PASS: T4: cannot invite grouped player
+PASS: T4: non-leader cannot invite
+PASS: T5: decline ok
+PASS: T5: invite cleared after decline
+PASS: T5: accept with no invite fails
+PASS: T5: decline with no invite fails
+PASS: T6: alice leads
+PASS: T6: leader leaves
+PASS: T6: alice removed
+PASS: T6: leadership -> earliest joined (bob)
+PASS: T6: size 2 after leave
+PASS: T6: non-member leave fails
+PASS: T7: solo leader leaves
+PASS: T7: emptied group disbanded
+PASS: T7: alice no longer grouped
+PASS: T8: non-leader cannot kick
+PASS: T8: leader cannot kick self
+PASS: T8: cannot kick non-member
+PASS: T8: leader kicks bob
+PASS: T8: bob removed
+PASS: T9: only leader transfers
+PASS: T9: transfer to non-member fails
+PASS: T9: transfer ok
+PASS: T9: bob now leads
+PASS: T9: ex-leader cannot disband
+PASS: T9: leader disbands
+PASS: T9: all cleared
+PASS: T10: not all ready initially
+PASS: T10: alice ready
+PASS: T10: still not all ready
+PASS: T10: bob ready
+PASS: T10: all ready now
+PASS: T10: non-member cannot ready
+PASS: T10: only leader assigns mission
+PASS: T10: leader assigns mission
+PASS: T10: mission recorded
+PASS: T10: clear mission
+PASS: T10: mission cleared
+PASS: T11: bob pending pre-disband
+PASS: T11: disband
+PASS: T11: pending invite purged on disband
+PASS: T11: bob cannot accept vanished group
+FAILS=0
+APBClan.cpp
+run_clan_tests.cpp
+Generating Code...
+=== APBClanTests (M14 ClanService) ===
+PASS: T1: create ok
+PASS: T1: leader is member
+PASS: T1: alice is leader
+PASS: T1: size 1
+PASS: T1: leader query
+PASS: T1: leader seeded at rank 0 (Officer)
+PASS: T1: empty id
+PASS: T1: empty name
+PASS: T1: duplicate id rejected
+PASS: T1: duplicate name (ci) rejected
+PASS: T1: duplicate tag (ci) rejected
+PASS: T1: leader already clanned
+PASS: T2: no self-invite
+PASS: T2: wrong faction
+PASS: T2: outsider can't invite
+PASS: T2: leader invites bob
+PASS: T2: bob has pending invite
+PASS: T2: no double invite
+PASS: T2: bob accepts
+PASS: T2: bob at lowest rank
+PASS: T2: plain member lacks invite perm
+PASS: T2: target already clanned
+PASS: T3: invite bob ok
+PASS: T3: bob accepts (size 2)
+PASS: T3: at cap
+PASS: T3: clan full on invite
+PASS: T4: A invites bob
+PASS: T4: B invites bob
+PASS: T4: two pending
+PASS: T4: bob accepts
+PASS: T4: joined most-recent (C2)
+PASS: T4: all invites cleared on join
+PASS: T4: C invites dan
+PASS: T4: dan declines
+PASS: T4: decline clears
+PASS: T4: nothing to decline
+PASS: T4: nothing to accept
+PASS: T5: leader can't leave
+PASS: T5: leader still in clan
+PASS: T5: stranger not in clan
+PASS: T5: bob leaves
+PASS: T5: bob gone, size 1
+PASS: T6: officer promoted
+PASS: T6: no self-kick
+PASS: T6: leader untouchable
+PASS: T6: member lacks kick perm
+PASS: T6: can't kick equal rank
+PASS: T6: officer kicks member
+PASS: T6: member removed
+PASS: T6: leader kicks officer2
+PASS: T6: officer2 removed
+PASS: T6: no such member
+PASS: T7: non-leader can't disband
+PASS: T7: leader disbands
+PASS: T7: memberships cleared
+PASS: T7: clan gone
+PASS: T7: dangling invite purged
+PASS: T7: disband when clanless
+PASS: T8: no self-transfer
+PASS: T8: only leader transfers
+PASS: T8: target must be member
+PASS: T8: transfer ok
+PASS: T8: new is leader
+PASS: T8: old stays as member
+PASS: T8: both at rank 0
+PASS: T8: former leader can now leave
+PASS: T9: member lacks EditMotd
+PASS: T9: leader sets motd
+PASS: T9: motd stored
+PASS: T9: outsider can't set
+PASS: T10: member can't add ranks
+PASS: T10: leader adds rank
+PASS: T10: assign bob to Recruiter
+PASS: T10: bob is Recruiter
+PASS: T10: bob now has Invite perm
+PASS: T10: bob lacks Kick perm
+PASS: T10: bob (Recruiter) invites
+PASS: T10: bad rank index
+PASS: T10: leader rank fixed
+PASS: T10: leader has All
+PASS: T11: clanless -> empty
+PASS: T11: not in clan
+PASS: T11: no such clan leader
+PASS: T11: no such clan
+PASS: T11: size of missing clan
+PASS: T11: members of missing clan
+PASS: T11: members listed
+PASS: T12: SaveJson non-empty
+PASS: T12: LoadJson ok
+PASS: T12: both clans restored
+PASS: T12: leaders restored
+PASS: T12: faction restored
+PASS: T12: escaped name round-trips
+PASS: T12: tag restored
+PASS: T12: motd restored
+PASS: T12: member count restored
+PASS: T12: membership index rebuilt
+PASS: T12: cross-clan index rebuilt
+PASS: T12: promoted rank restored
+PASS: T12: default rank restored
+PASS: T12: officer perms restored
+PASS: T12: member perms restored
+PASS: T12: custom rank index valid
+PASS: T12: custom rank + perm restored
+PASS: T12: join seq monotonic post-reload
+PASS: T12: empty input rejected
+PASS: T12: no-clans input rejected
+PASS: T12: re-save differs after adding member (sanity)
+PASS: T12: save/load/save is idempotent
+FAILS=0
+APBFriends.cpp
+run_friend_tests.cpp
+Generating Code...
+=== APBFriendTests (M14 FriendsService) ===
+PASS: T1: alice requests bob
+PASS: T1: bob has incoming
+PASS: T1: alice has outgoing
+PASS: T1: request alone is not friendship
+PASS: T1: bob accepts
+PASS: T1: mutual friends
+PASS: T1: request cleared on accept
+PASS: T1: both lists updated
+PASS: T2: no self-request
+PASS: T2: empty rejected
+PASS: T2: first request ok
+PASS: T2: duplicate rejected
+PASS: T2: already friends
+PASS: T2: accept no invite
+PASS: T2: decline no invite
+PASS: T3: bob declines
+PASS: T3: request cleared
+PASS: T3: not friends after decline
+PASS: T4: bob -> alice
+PASS: T4: alice -> bob (reciprocal)
+PASS: T4: auto-accepted into friendship
+PASS: T4: all requests cleared
+PASS: T5: remove non-friend
+PASS: T5: alice removes bob
+PASS: T5: mutual removal
+PASS: T5: both lists cleared
+PASS: T6: bob at cap
+PASS: T6: target list full
+PASS: T6: sender list full
+PASS: T7: no self-ignore
+PASS: T7: ignore troll
+PASS: T7: is ignoring
+PASS: T7: listed in ignores
+PASS: T7: already ignored
+PASS: T7: ignore list full
+PASS: T8: can't friend one you ignore
+PASS: T8: target ignores you
+PASS: T8: can't ignore a friend
+PASS: T8: un-ignore bob
+PASS: T8: can friend after un-ignore
+PASS: T9: bob ignores alice
+PASS: T9: pending request dropped by ignore
+PASS: T9: un-ignore non-ignored
+PASS: T9: un-ignore ok
+PASS: T9: no longer ignoring
+PASS: T10: bob offline by default
+PASS: T10: bob online
+PASS: T10: only bob shows online
+PASS: T10: bob offline -> none online
+PASS: T11: SaveJson non-empty
+PASS: T11: LoadJson ok
+PASS: T11: alice-bob restored
+PASS: T11: alice-carol restored
+PASS: T11: alice has 2 friends
+PASS: T11: ignores restored
+PASS: T11: ignore is directional
+PASS: T11: pending request not persisted
+PASS: T11: presence not persisted
+PASS: T11: save/load/save idempotent
+PASS: T11: empty rejected
+PASS: T11: empty content -> false
+FAILS=0
+APBSocialStore.cpp
+APBClan.cpp
+APBFriends.cpp
+run_social_store_tests.cpp
+Generating Code...
+=== APB SocialStore Tests (M14 file round-trip) ===
+[SocialStore] init + path derivation
+[SocialStore] missing-file tolerance (fresh start)
+[SocialStore] clans.json save -> load round-trip
+[SocialStore] friends.json save -> load round-trip
+[SocialStore] overwrite existing file + idempotent bytes
+FAILS=0
+run_mail_tests.cpp
+=== APB Mail Tests (M14 attachment claim + delete) ===
+[Mail] send + inbox + unread count
+[Mail] claim attachments (Take All) once
+[Mail] delete requires claim first
+[Mail] expiry purge (caller-supplied clock)
+FAILS=0
+APBRelayProtocol.cpp
+run_relay_tests.cpp
+Generating Code...
+=== APB Relay Protocol Tests (M7 N4 codec) ===
+PASS: verb <-> token symmetric for all known verbs
+PASS: unknown token -> Unknown verb
+PASS: Unknown verb token is 'unknown'
+PASS: register round-trips
+PASS: register_ack(ok) round-trips
+PASS: heartbeat round-trips
+PASS: report_load round-trips
+PASS: expect ticket round-trips
+PASS: expect_ack round-trips
+PASS: chat relay round-trips
+PASS: player_joined round-trips
+PASS: player_left round-trips
+PASS: expect: account+character intact
+PASS: expect: faction+jti intact
+PASS: expect: district+numeric_id intact
+PASS: encoded message ends with newline
+PASS: empty string fields are omitted from the wire
+PASS: encode emits exactly one line
+PASS: zero seq omitted
+PASS: expect_ack emits ok:false explicitly
+PASS: expect_ack(false) round-trips as rejection
+PASS: non-ack verb does not emit ok
+PASS: message with quotes/backslashes decodes
+PASS: quote + backslash body preserved verbatim
+PASS: embedded newline in body cannot inject a second line
+PASS: stream yields the two complete messages
+PASS: stream preserves message order
+PASS: partial trailing line retained in buffer
+PASS: completing the partial line decodes it
+PASS: buffer fully consumed after final newline
+PASS: CRLF line + valid line parsed, garbage skipped
+PASS: CRLF-terminated line parsed with fields intact
+PASS: valid line after garbage still parsed
+PASS: empty line rejected
+PASS: object with no verb rejected
+PASS: unknown verb rejected
+PASS: minimal valid heartbeat accepted
+FAILS=0
+APBMatchmaking.cpp
+run_matchmaking_tests.cpp
+Generating Code...
+=== APB Matchmaking Tests (M11 threat-tier opposition) ===
+PASS: empty party_id rejected
+PASS: enqueue accepted
+PASS: queued once
+PASS: re-queue accepted
+PASS: re-queue does not duplicate
+PASS: re-queue replaced ticket + reset wait
+PASS: PlayersWaiting sums party_size
+PASS: cancel of absent party returns false
+PASS: cancel removes the party
+PASS: exact-tier opposing parties pair immediately
+PASS: pairing reports tier + zero slack
+PASS: one party on each side
+PASS: sides sorted by faction
+PASS: matched parties leave the queue
+PASS: same-faction parties never pair (opposition is cross-faction)
+PASS: both remain queued
+PASS: no wait -> exact tier (tolerance 0)
+PASS: under one interval -> still 0
+PASS: one interval -> tolerance 1
+PASS: three intervals -> tolerance 3
+PASS: four intervals -> tolerance 4
+PASS: tolerance caps at max_tolerance
+PASS: clock skew (now<enqueued) -> 0
+PASS: tier gap 3 with no wait does not pair
+PASS: tier gap 3 at tolerance 2 still does not pair
+PASS: unmatched parties stay queued
+PASS: widened tolerance pairs the tier-3 gap
+PASS: match tier is the tougher side
+PASS: one criminal pairs with exactly one enforcer
+PASS: closest-tier opponent chosen over farther one
+PASS: the farther-tier enforcer stays queued
+PASS: group counts all members in players-waiting
+PASS: solo counts one
+PASS: group stays intact through matching
+PASS: two opposing pairs form in one pass
+PASS: oldest-first fairness: E0<->C0
+PASS: second pair E1<->C1
+PASS: queue drained
+FAILS=0
+APBAuction.cpp
+APBInventory.cpp
+APBCatalog.cpp
+run_auction_tests.cpp
+Generating Code...
+=== APB Auction Tests (M12 marketplace bid/buyout/expiry/fee/cancel) ===
+PASS: list buyout-only ok
+PASS: item escrowed out of seller inventory on list
+PASS: buyout ok
+PASS: buyer charged full buyout price
+PASS: seller receives price minus 5% fee (1000 - 50)
+PASS: buyer receives the item
+PASS: listing marked sold
+PASS: fee_paid recorded
+PASS: list bid+buyout ok
+PASS: cannot bid on own listing
+PASS: bid below start_price rejected
+PASS: bid >= buyout rejected (use buyout)
+PASS: rejected bids do not escrow funds
+PASS: bid at/after expiry rejected
+PASS: list bid-only ok
+PASS: first bid accepted
+PASS: first bidder escrowed 600
+PASS: higher bid accepted
+PASS: second bidder escrowed 800
+PASS: outbid first bidder refunded 600 via mail
+PASS: high bid updated to B2/800
+PASS: bid below current high rejected
+PASS: winning bid placed
+PASS: not settled before expiry
+PASS: settled at expiry
+PASS: winner receives item via mail
+PASS: seller receives winning bid minus 5% fee (1000-50)
+PASS: listing sold on settle
+PASS: already-settled listing not re-settled
+PASS: unsold listing settles at expiry
+PASS: unsold item returned to seller via mail
+PASS: listing marked expired
+PASS: bid placed before cancel
+PASS: only the seller can cancel
+PASS: seller cancels listing
+PASS: standing bidder refunded on cancel
+PASS: item returned to seller on cancel
+PASS: listing marked cancelled
+PASS: cancelled listing cannot be bought
+FAILS=0
+APBVehicle.cpp
+APBCatalog.cpp
+run_vehicle_tests.cpp
+Generating Code...
+=== APB Vehicle Tests (M13) ===
+PASS: VehicleCar -> Car
+PASS: VehicleTruck -> Truck
+PASS: VehicleVan -> Van
+PASS: VehicleMotorcycle -> Motorcycle
+PASS: bike (lowercase) -> Motorcycle
+PASS: unknown subcategory -> Unknown
+PASS: inline json parsed
+PASS: three vehicles loaded
+PASS: estate found
+PASS: estate class = Car
+PASS: estate health parsed
+PASS: estate usable by both factions
+PASS: praetorian enforcer-only
+PASS: praetorian min_rating parsed
+PASS: bike class = Motorcycle
+PASS: bike criminal-only
+PASS: unknown vehicle rejected
+PASS: unknown_vehicle error
+PASS: criminal cannot spawn enforcer vehicle
+PASS: rating below min rejected
+PASS: enforcer at exact rating spawns
+PASS: rating-0 vehicle spawns for both factions
+PASS: criminal r40 sees estate + bike
+PASS: enforcer r40 sees only estate
+PASS: enforcer r200 sees estate + praetorian
+PASS: instance starts at full health
+PASS: full health = Pristine
+PASS: pristine speed factor 1.0
+PASS: 50% health = Damaged
+PASS: damaged speed factor 0.9
+PASS: 18.75% health = Critical
+PASS: critical speed factor 0.7
+PASS: repair adds health
+PASS: repaired above 60% = Pristine
+PASS: repair clamps at max_health
+PASS: over-damage clamps at 0
+PASS: 0 health = Destroyed, not Alive
+PASS: destroyed speed factor 0.0
+PASS: real vehicles.json parsed at least one vehicle
+PASS: known real id present
+PASS: known real id maps to Car
+PASS: known real id has health
+FAILS=0
+APBProgression.cpp
+APBCatalog.cpp
+run_progression_tests.cpp
+Generating Code...
+=== APB Progression Tests (M15 economy/progression) ===
+PASS: contacts parsed
+PASS: roles parsed
+PASS: three contacts
+PASS: two roles
+PASS: contact title parsed
+PASS: district derived from id prefix
+PASS: role name parsed
+PASS: two Financial contacts
+PASS: one Waterfront contact
+PASS: Financial_C1 -> Financial
+PASS: Waterfront_C3 -> Waterfront
+PASS: no underscore -> empty
+PASS: ladder has levels 0..15
+PASS: level 0 at standing 0
+PASS: level 1 threshold 1000
+PASS: level 2 threshold 3000 (1000+2000)
+PASS: standing 0 = level 0
+PASS: standing 999 = level 0
+PASS: standing 1000 = level 1
+PASS: standing 2999 = level 1
+PASS: standing 3000 = level 2
+PASS: huge standing clamps at max level
+PASS: over-max level clamps
+PASS: unknown contact standing 0
+PASS: unknown contact level 0
+PASS: add standing returns total
+PASS: 1200 standing = level 1
+PASS: 3000 standing = level 2
+PASS: negative standing ignored
+PASS: role xp accrues
+PASS: role xp accumulates
+PASS: role xp readback
+PASS: mult 1.0 leaves cash/standing
+PASS: role xp flat at mult 1.0
+PASS: cash scaled by 1.55
+PASS: standing scaled by 1.55
+PASS: role xp NOT threat-scaled
+PASS: cash halved
+PASS: standing 501*0.5=250.5 rounds to 251
+PASS: negative multiplier -> 0 cash/standing
+PASS: role xp still awarded
+PASS: no unlocks at level 0
+PASS: level 1 unlocks OSCAR only
+PASS: OSCAR unlocked
+PASS: NTEC not yet unlocked
+PASS: level 2 unlocks OSCAR + NTEC
+PASS: spend debits balance
+PASS: insufficient funds rejected, balance intact
+PASS: negative cost rejected
+PASS: spend to exactly zero allowed
+PASS: real contacts_lore.json parsed
+PASS: real roles.json parsed
+PASS: known real contact present
+PASS: known real contact district derived
+FAILS=0
+APBAntiCheat.cpp
+run_anticheat_tests.cpp
+Generating Code...
+=== APB Anti-Cheat Tests (M16 server heuristics) ===
+PASS: at max speed -> Ok
+PASS: within tolerance -> Ok
+PASS: over tolerance -> SpeedViolation
+PASS: big jump -> Teleport (even with dt)
+PASS: movement with zero dt -> Teleport
+PASS: no movement, zero dt -> Ok
+PASS: rewound clock, no movement -> Ok
+PASS: zero max_speed + movement -> SpeedViolation
+PASS: zero max_speed, no movement -> Ok
+PASS: diagonal ~1273 u/s over tolerance
+PASS: 600 rpm -> 100ms interval
+PASS: 0 rpm -> no limit
+PASS: first shot Ok
+PASS: 50ms after -> too fast
+PASS: rejected shot does not advance timer
+PASS: 90ms after first -> Ok
+PASS: accepted shot advances timer
+PASS: well-spaced shot Ok
+PASS: rpm 0 first shot Ok
+PASS: rpm 0 second shot Ok (no limit)
+PASS: nominal damage/range Ok
+PASS: damage at tolerance edge Ok
+PASS: excess damage flagged
+PASS: range at tolerance edge Ok
+PASS: excess range flagged
+PASS: damage anomaly takes precedence
+PASS: clean player -> None
+PASS: 1 violation -> None
+PASS: 2 violations -> None
+PASS: 3 violations -> Warn
+PASS: 5 violations -> still Warn
+PASS: 6 violations -> Kick
+PASS: 11 violations -> still Kick
+PASS: 12 violations -> Ban
+PASS: non-positive weight ignored
+PASS: reset clears violations
+PASS: heavy single violation -> Ban
+FAILS=0
+APBDistrictDirectory.cpp
+APBRelayProtocol.cpp
+run_directory_tests.cpp
+Generating Code...
+=== APB District Directory Tests (M16 heartbeat eviction) ===
+PASS: empty directory
+PASS: register returns live
+PASS: found by numeric_id
+PASS: port recorded
+PASS: registered node is alive
+PASS: unknown id not found
+PASS: re-register updates port
+PASS: re-register keeps first-seen time
+PASS: re-register does not duplicate
+PASS: heartbeat known id ok
+PASS: heartbeat advances liveness clock
+PASS: heartbeat unknown id -> false
+PASS: report load ok
+PASS: occupancy recorded
+PASS: report load counts as liveness
+PASS: negative load clamped to 0
+PASS: stale threshold = 2 heartbeats
+PASS: fresh nodes not evicted
+PASS: both alive at 6000
+PASS: one stale node evicted
+PASS: silent node evicted
+PASS: beating node survives
+PASS: evicted node removed from directory
+PASS: at-threshold not evicted
+PASS: just-past-threshold evicted
+PASS: evicted id cannot heartbeat back
+PASS: no resurrection
+PASS: least-loaded Financial instance picked
+PASS: single instance picked
+PASS: no instance for unknown district
+PASS: list alive returns all three
+PASS: apply register
+PASS: register via Apply
+PASS: apply heartbeat
+PASS: heartbeat via Apply advances clock
+PASS: apply report load
+PASS: load via Apply
+PASS: apply player joined
+PASS: player joined increments occupancy
+PASS: apply player left
+PASS: player left decrements occupancy
+PASS: ack verb ignored by directory
+PASS: graceful deregister removes node
+PASS: deregistered node gone
+PASS: deregister missing node -> false
+PASS: evict reason name
+PASS: empty directory -> no district rows
+PASS: two distinct districts aggregated
+PASS: rows sorted by district name (Financial first)
+PASS: Financial pools two instances
+PASS: Financial population summed across instances
+PASS: Waterfront row second
+PASS: Waterfront single instance pop
+PASS: eviction updates aggregate
+FAILS=0

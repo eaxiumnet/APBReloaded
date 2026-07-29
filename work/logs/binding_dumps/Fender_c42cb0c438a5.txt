@@ -1,0 +1,88 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/WaterfrontDistrict/PropMaterials/Fender.upk Ver: 564/33 Engine: 3908 Names: 71 Exports: 7 Imports: 10 Game: 80001D
+Loading Material3 Fender from package MaterialDatabase/WaterfrontDistrict/PropMaterials/Fender.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading StaticMesh3 Fender_LOD0 from package MaterialDatabase/WaterfrontDistrict/PropMaterials/Fender.upk
+Loading Texture2D Fender_DiffSpec from package MaterialDatabase/WaterfrontDistrict/PropMaterials/Fender.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 79 allocs, 0.20 MBytes serialized in 7 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: Fender
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[1] = { Texture2D'Fender_DiffSpec' }
+    Expressions[2] = { MaterialExpressionTextureSample'Fender.MaterialExpressionTextureSample_0' }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'Fender_DiffSpec' }
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: Fender_LOD0
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=31.3033, Y=-44.6883, Z=0.000106812 }
+        BoxExtent = { X=231.301, Y=687.628, Z=200 }
+        SphereRadius = 742.014
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'Fender', FirstIndex=0, NumFaces=656 }
+            }
+            NumVerts = 1152
+            IndexCount = 1968
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Fender_DiffSpec
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 

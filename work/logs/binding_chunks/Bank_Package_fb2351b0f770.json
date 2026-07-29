@@ -1,0 +1,215 @@
+{
+  "package": "Bank_Package",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\FinancialDistrict\\PropMaterials\\Bank_Package.upk",
+  "district": "Financial",
+  "meshes": [
+    {
+      "mesh": "Bank_Chair",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Bank_Chair_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Bank_Chair_Damaged",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Bank_Chair_Damaged_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Bank_Glass_Large",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Glass_Transparent_DarkDistanceBlock",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Bank_Glass_Large_Broken",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Glass_Transparent_DarkDistanceBlock",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Bank_Glass_Large_Door",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Glass_Transparent_DarkDistanceBlock",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Bank_Glass_Large_Door_Broken",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Glass_Transparent_DarkDistanceBlock",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Bank_Glass_Small",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Glass_Transparent_DarkDistanceBlock",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Bank_Glass_Small_Broken",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Glass_Transparent_DarkDistanceBlock",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Bank_Glass_Small_Curved",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Glass_Transparent_DarkDistanceBlock",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Bank_Glass_Small_Curved_Broken",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Glass_Transparent_DarkDistanceBlock",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Bank_Locker",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Bank_Locker",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Bank_Locker_Open",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Bank_Locker_Damage",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Bank_Plant",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Bank_Plant_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Bank_PlasmaScreen",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Bank_PlasmaScreen_Screen",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "Bank_PlasmaScreen_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Bank_PlasmaScreen_Damaged",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Bank_PlasmaScreen_Screen_Damage",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "Bank_PlasmaScreen_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Bank_Sign",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Bank_Sign_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|bank_chair_damaged_mat": [
+      "Bank_Package"
+    ],
+    "material3|bank_chair_mat": [
+      "Bank_Package"
+    ],
+    "material3|bank_locker": [
+      "Bank_Package"
+    ],
+    "material3|bank_locker_damage": [
+      "Bank_Package"
+    ],
+    "material3|bank_plant_mat": [
+      "Bank_Package"
+    ],
+    "material3|bank_plasmascreen_mat": [
+      "Bank_Package"
+    ],
+    "material3|bank_plasmascreen_screen": [
+      "Bank_Package"
+    ],
+    "material3|bank_plasmascreen_screen_damage": [
+      "Bank_Package"
+    ],
+    "material3|bank_sign_mat": [
+      "Bank_Package"
+    ],
+    "material3|fluff": [
+      "Bank_Package"
+    ],
+    "materialinstanceconstant|glass_transparent_darkdistanceblock": [
+      "Glass"
+    ],
+    "material3|glass_transparent": [
+      "Glass"
+    ]
+  }
+}

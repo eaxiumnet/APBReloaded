@@ -1,0 +1,122 @@
+{
+  "schema_version": "apb.perf.v1",
+  "captured_at_utc": "2026-07-25T17:09:48.5174265Z",
+  "terminal_marker": "LOAD_GATE_FAIL",
+  "run": {
+    "map": "Social",
+    "map_asset": "Lvl_APB_Social_Freeroam",
+    "scalability_profile": "Server",
+    "clients": 2,
+    "duration_seconds": 90,
+    "latency_ms": 0.0,
+    "packet_loss_percent": 0.0,
+    "build_sha": "58754f9a30e393bde1f0d4f6770f88bd12bb3a1e"
+  },
+  "hardware": {
+    "os": "Microsoft Windows 11 Pro N for Workstations",
+    "cpu": "AMD Ryzen 7 7800X3D 8-Core Processor           ",
+    "logical_processors": 16,
+    "ram_mb": 31831.9,
+    "gpu": "Parsec Virtual Display Adapter",
+    "vram_mb": 0.0
+  },
+  "metrics": {
+    "fps": {
+      "p50": 60.0,
+      "p95": 60.0,
+      "p99": 60.0
+    },
+    "frame_ms": {
+      "p50": 16.667,
+      "p95": 16.667,
+      "p99": 16.667
+    },
+    "tick_ms": {
+      "p50": 0.026,
+      "p95": 0.033,
+      "p99": 0.035
+    },
+    "cpu_percent": 8.483,
+    "ram_mb": 1711.48,
+    "vram_mb": 0.0,
+    "rtt_ms": {
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0
+    },
+    "packet_loss_percent": 0.0,
+    "replication_rate": 10.0,
+    "corrections": 0,
+    "missed_authoritative_steps": 0
+  },
+  "evidence": {
+    "raw_log": "D:\\APBReloaded\\work\\task17-loadgate\\gate_raw.log",
+    "launch_observed": true,
+    "synthetic": false,
+    "claims_64_player": false
+  },
+  "load_contract": {
+    "hosts_manifest": "D:\\APBReloaded\\tools\\load_hosts.example.json",
+    "workload": [
+      "movement",
+      "combat",
+      "vehicle"
+    ],
+    "identities": [
+      "load_001",
+      "load_002"
+    ],
+    "assignments": [
+      {
+        "ordinal": 1,
+        "identity": "load_001",
+        "account": "probe_load_001",
+        "authentication": "world_server_client_rpc",
+        "host": "localhost",
+        "address": "127.0.0.1",
+        "transport": "local",
+        "editor": "D:/UE58/UE_5.8/Engine/Binaries/Win64/UnrealEditor.exe",
+        "project": "D:/APBReloaded/APBReloaded.uproject",
+        "workload_primary": "movement",
+        "workload_sequence": [
+          "movement",
+          "combat",
+          "vehicle"
+        ],
+        "scratch": "D:\\APBReloaded\\.omo\\load_scratch\\load_001"
+      },
+      {
+        "ordinal": 2,
+        "identity": "load_002",
+        "account": "probe_load_002",
+        "authentication": "world_server_client_rpc",
+        "host": "localhost",
+        "address": "127.0.0.1",
+        "transport": "local",
+        "editor": "D:/UE58/UE_5.8/Engine/Binaries/Win64/UnrealEditor.exe",
+        "project": "D:/APBReloaded/APBReloaded.uproject",
+        "workload_primary": "combat",
+        "workload_sequence": [
+          "movement",
+          "combat",
+          "vehicle"
+        ],
+        "scratch": "D:\\APBReloaded\\.omo\\load_scratch\\load_002"
+      }
+    ],
+    "observed_live_clients": 0,
+    "required_live_clients": 2
+  },
+  "failure_reason": "missing_workload_receipts:0/2",
+  "cleanup": {
+    "run_started_utc": "2026-07-25T17:08:16.3284304Z",
+    "process_ids_started": [
+      1668056,
+      1677956
+    ],
+    "process_ids_stopped": [
+      1668056,
+      1677956
+    ]
+  }
+}

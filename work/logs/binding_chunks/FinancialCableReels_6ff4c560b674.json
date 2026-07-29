@@ -1,0 +1,115 @@
+{
+  "package": "FinancialCableReels",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\FinancialDistrict\\PropMaterials\\FinancialCableReels.upk",
+  "district": "Financial",
+  "meshes": [
+    {
+      "mesh": "FinancialCableReels_Cable",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialCableReels_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialCableReels_Reel",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialCableReels_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialCableReels_ReelAndCable",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialCableReels_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialCableReels_Reels",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialCableReels_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "FinancialCableReels_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialCableReels_Reels_Damage1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialCableReels_Damage_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialCableReels_Reels_Damage2",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialCableReels_Damage_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialCableReels_Stand",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialCableReels_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "FinancialCableReels_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialCableReels_Stand_Damage1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialCableReels_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialCableReels_Stand_Damage2",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialCableReels_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|financialcablereels_damage_mat": [
+      "FinancialCableReels"
+    ],
+    "material3|financialcablereels_mat": [
+      "FinancialCableReels"
+    ]
+  }
+}

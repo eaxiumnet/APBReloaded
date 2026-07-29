@@ -1,0 +1,117 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/FinancialDistrict/PropMaterials/FinancialSnowPile.upk Ver: 564/33 Engine: 3908 Names: 78 Exports: 8 Imports: 7 Game: 80001D
+Loading Material3 FinancialSnowPile_MAT from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialSnowPile.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading StaticMesh3 SnowPile_LOD0 from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialSnowPile.upk
+Loading Texture2D SnowPile_DiffSpec from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialSnowPile.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D SnowPile_Norm from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialSnowPile.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loaded in 0.0 sec, 100 allocs, 0.36 MBytes serialized in 7 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: FinancialSnowPile_MAT
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[2] = { Texture2D'SnowPile_Norm', Texture2D'SnowPile_DiffSpec' }
+    Expressions[2] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'FinancialSnowPile_MAT.MaterialExpressionTextureSample_3'
+        Expressions[1] = MaterialExpressionTextureSample'FinancialSnowPile_MAT.MaterialExpressionTextureSample_4'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_3
+ { Texture=Texture2D'SnowPile_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_4
+ { Texture=Texture2D'SnowPile_Norm' }
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: SnowPile_LOD0
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=6.018, Y=1.60355, Z=4.84015 }
+        BoxExtent = { X=69.4161, Y=55.5904, Z=3.97945 }
+        SphereRadius = 73.2063
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialSnowPile_MAT', FirstIndex=0, NumFaces=268 }
+            }
+            NumVerts = 482
+            IndexCount = 804
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: Texture2D ObjectName: SnowPile_DiffSpec
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: SnowPile_Norm
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source = 

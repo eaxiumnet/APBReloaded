@@ -1,0 +1,132 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/WaterfrontDistrict/Ferry/FerryFloor.upk Ver: 564/33 Engine: 3908 Names: 100 Exports: 15 Imports: 14 Game: 80001D
+Loading Material3 FerryFloor_Mat from package MaterialDatabase/WaterfrontDistrict/Ferry/FerryFloor.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Texture2D FerryFloor from package MaterialDatabase/WaterfrontDistrict/Ferry/FerryFloor.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FerryFloor-Overlay from package MaterialDatabase/WaterfrontDistrict/Ferry/FerryFloor.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FerryFloor_NormDiff from package MaterialDatabase/WaterfrontDistrict/Ferry/FerryFloor.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loaded in 0.0 sec, 151 allocs, 1.76 MBytes serialized in 55 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: FerryFloor_Mat
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[2] = { Texture2D'FerryFloor_NormDiff', Texture2D'FerryFloor-Overlay' }
+    Expressions[9] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'FerryFloor_Mat.MaterialExpressionTextureSample_0'
+        Expressions[2] = MaterialExpressionVectorParameter'FerryFloor_Mat.MaterialExpressionVectorParameter_0'
+        Expressions[3] = MaterialExpressionTextureSample'FerryFloor_Mat.MaterialExpressionTextureSample_1'
+        Expressions[7] = MaterialExpressionVectorParameter'FerryFloor_Mat.MaterialExpressionVectorParameter_1'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[2] =
+    {
+        CollectedVectorParameters[0] =
+        {
+            Value = { R=0.024223, G=0.058187, B=0.030257, A=1 }
+            Name = None
+            Group = None
+        }
+        CollectedVectorParameters[1] =
+        {
+            Value = { R=0.024223, G=0.058187, B=0.030257, A=1 }
+            Name = GreenFloor
+            Group = None
+        }
+    }
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'FerryFloor_NormDiff' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'FerryFloor-Overlay' }
+
+Object info:
+============
+ClassName: MaterialExpressionVectorParameter ObjectName: MaterialExpressionVectorParameter_0
+    DefaultValue = { R=0.024223, G=0.058187, B=0.030257, A=1 }
+    ParameterName = None
+    Group = None
+
+Object info:
+============
+ClassName: MaterialExpressionVectorParameter ObjectName: MaterialExpressionVectorParameter_1
+    DefaultValue = { R=0.024223, G=0.058187, B=0.030257, A=1 }
+    ParameterName = GreenFloor
+    Group = None
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FerryFloor
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FerryFloor-Overlay
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FerryFloor_NormDiff
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_NormalmapAlpha (12)
+    Source = 

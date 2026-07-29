@@ -1,0 +1,403 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/FinancialDistrict/FeatureMaterials/Shop_ShopFaked_Dining.upk Ver: 564/33 Engine: 3908 Names: 128 Exports: 41 Imports: 16 Game: 80001D
+Loading Material3 ShopFaked_Dining_Diner_Diner2_MAT from package MaterialDatabase/FinancialDistrict/FeatureMaterials/Shop_ShopFaked_Dining.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 ShopFaked_Dining_Restaurant_Indian1_MAT from package MaterialDatabase/FinancialDistrict/FeatureMaterials/Shop_ShopFaked_Dining.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading MaterialInstanceConstant ShopFaked_Dining_Cafe_Cafe2_MAT from package MaterialDatabase/FinancialDistrict/FeatureMaterials/Shop_ShopFaked_Dining.upk
+StrProperty: unknown UMaterialInstanceConstant RWTGuid
+ArrayProperty: unknown UMaterialInstanceConstant Channels
+Loading MaterialInstanceConstant ShopFaked_Dining_Diner_Pizza2_MAT from package MaterialDatabase/FinancialDistrict/FeatureMaterials/Shop_ShopFaked_Dining.upk
+StrProperty: unknown UMaterialInstanceConstant RWTGuid
+ArrayProperty: unknown UMaterialInstanceConstant Channels
+Loading MaterialInstanceConstant ShopFaked_Dining_Restaurant_Sushi1_MAT from package MaterialDatabase/FinancialDistrict/FeatureMaterials/Shop_ShopFaked_Dining.upk
+StrProperty: unknown UMaterialInstanceConstant RWTGuid
+ArrayProperty: unknown UMaterialInstanceConstant Channels
+Loading Texture2D ShopFaked_Dining_Diner_DiffOpac from package MaterialDatabase/FinancialDistrict/FeatureMaterials/Shop_ShopFaked_Dining.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D ShopFaked_Dining_Diner_Diner2_DiffOpac from package MaterialDatabase/FinancialDistrict/FeatureMaterials/Shop_ShopFaked_Dining.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D ShopFaked_Dining_Diner_Emis from package MaterialDatabase/FinancialDistrict/FeatureMaterials/Shop_ShopFaked_Dining.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D ShopFaked_Dining_Diner_Norm from package MaterialDatabase/FinancialDistrict/FeatureMaterials/Shop_ShopFaked_Dining.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D ShopFaked_Dining_Diner_Pizza2_DiffOpac from package MaterialDatabase/FinancialDistrict/FeatureMaterials/Shop_ShopFaked_Dining.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D ShopFaked_Dining_Restaurant_Emis from package MaterialDatabase/FinancialDistrict/FeatureMaterials/Shop_ShopFaked_Dining.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D ShopFaked_Dining_Restaurant_Indian1_DiffOpac from package MaterialDatabase/FinancialDistrict/FeatureMaterials/Shop_ShopFaked_Dining.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D ShopFaked_Dining_Restaurant_Indian1_Opac from package MaterialDatabase/FinancialDistrict/FeatureMaterials/Shop_ShopFaked_Dining.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D ShopFaked_Dining_Restaurant_Norm from package MaterialDatabase/FinancialDistrict/FeatureMaterials/Shop_ShopFaked_Dining.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D ShopFaked_Dining_Restaurant_Sushi1_DiffOpac from package MaterialDatabase/FinancialDistrict/FeatureMaterials/Shop_ShopFaked_Dining.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 308 allocs, 3.11 MBytes serialized in 88 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: ShopFaked_Dining_Diner_Diner2_MAT
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'ShopFaked_Dining_Diner_Norm'
+        ReferencedTextures[1] = Texture2D'ShopFaked_Dining_Diner_Diner2_DiffOpac'
+        ReferencedTextures[2] = Texture2D'ShopFaked_Dining_Diner_Emis'
+    }
+    Expressions[12] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'ShopFaked_Dining_Diner_Diner2_MAT.MaterialExpressionTextureSample_2'
+        Expressions[3] = MaterialExpressionTextureSample'ShopFaked_Dining_Diner_Diner2_MAT.MaterialExpressionTextureSample_4'
+        Expressions[6] = MaterialExpressionTextureSampleParameter2D'ShopFaked_Dining_Diner_Diner2_MAT.MaterialExpressionTextureSampleParameter2D_0'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.5
+    CollectedTextureParameters[1] =
+    {
+        CollectedTextureParameters[0] =
+        {
+            Texture = Texture2D'ShopFaked_Dining_Diner_Diner2_DiffOpac'
+            Name = Diffuse Texture
+            Group = None
+        }
+    }
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: Material3 ObjectName: ShopFaked_Dining_Restaurant_Indian1_MAT
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'ShopFaked_Dining_Restaurant_Norm'
+        ReferencedTextures[1] = Texture2D'ShopFaked_Dining_Restaurant_Indian1_DiffOpac'
+        ReferencedTextures[2] = Texture2D'ShopFaked_Dining_Restaurant_Emis'
+    }
+    Expressions[12] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'ShopFaked_Dining_Restaurant_Indian1_MAT.MaterialExpressionTextureSample_2'
+        Expressions[1] = MaterialExpressionTextureSample'ShopFaked_Dining_Restaurant_Indian1_MAT.MaterialExpressionTextureSample_4'
+        Expressions[2] = MaterialExpressionTextureSampleParameter2D'ShopFaked_Dining_Restaurant_Indian1_MAT.MaterialExpressionTextureSampleParameter2D_2'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.4
+    CollectedTextureParameters[1] =
+    {
+        CollectedTextureParameters[0] =
+        {
+            Texture = Texture2D'ShopFaked_Dining_Restaurant_Indian1_DiffOpac'
+            Name = Diffuse Texture
+            Group = None
+        }
+    }
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_2
+ { Texture=Texture2D'ShopFaked_Dining_Diner_Norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_4
+ { Texture=Texture2D'ShopFaked_Dining_Diner_Emis' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_2
+ { Texture=Texture2D'ShopFaked_Dining_Restaurant_Norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_4
+ { Texture=Texture2D'ShopFaked_Dining_Restaurant_Emis' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSampleParameter2D ObjectName: MaterialExpressionTextureSampleParameter2D_0
+    ParameterName = Diffuse Texture
+    Group = None
+    Texture = Texture2D'ShopFaked_Dining_Diner_Diner2_DiffOpac'
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSampleParameter2D ObjectName: MaterialExpressionTextureSampleParameter2D_2
+    ParameterName = Diffuse Texture
+    Group = None
+    Texture = Texture2D'ShopFaked_Dining_Restaurant_Indian1_DiffOpac'
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: ShopFaked_Dining_Cafe_Cafe2_MAT
+    Parent = Material3'ShopFaked_Dining_Restaurant_Indian1_MAT'
+    ScalarParameterValues[0] = {}
+    TextureParameterValues[0] = {}
+    VectorParameterValues[0] = {}
+    BasePropertyOverrides = 
+    StaticParameters = 
+    RuntimeVirtualTextureParameterValues[0] = {}
+    FontParameterValues[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: ShopFaked_Dining_Diner_Pizza2_MAT
+    Parent = Material3'ShopFaked_Dining_Diner_Diner2_MAT'
+    ScalarParameterValues[0] = {}
+    TextureParameterValues[1] =
+    {
+        TextureParameterValues[0] =
+        {
+            ParameterInfo = 
+            ParameterValue = Texture2D'ShopFaked_Dining_Diner_Pizza2_DiffOpac'
+            ParameterName = Diffuse Texture
+        }
+    }
+    VectorParameterValues[0] = {}
+    BasePropertyOverrides = 
+    StaticParameters = 
+    RuntimeVirtualTextureParameterValues[0] = {}
+    FontParameterValues[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: ShopFaked_Dining_Restaurant_Sushi1_MAT
+    Parent = Material3'ShopFaked_Dining_Restaurant_Indian1_MAT'
+    ScalarParameterValues[0] = {}
+    TextureParameterValues[1] =
+    {
+        TextureParameterValues[0] =
+        {
+            ParameterInfo = 
+            ParameterValue = Texture2D'ShopFaked_Dining_Restaurant_Sushi1_DiffOpac'
+            ParameterName = Diffuse Texture
+        }
+    }
+    VectorParameterValues[0] = {}
+    BasePropertyOverrides = 
+    StaticParameters = 
+    RuntimeVirtualTextureParameterValues[0] = {}
+    FontParameterValues[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: Texture2D ObjectName: ShopFaked_Dining_Diner_DiffOpac
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: ShopFaked_Dining_Diner_Diner2_DiffOpac
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: ShopFaked_Dining_Diner_Emis
+    SizeX = 256
+    SizeY = 128
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: ShopFaked_Dining_Diner_Norm
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: ShopFaked_Dining_Diner_Pizza2_DiffOpac
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: ShopFaked_Dining_Restaurant_Emis
+    SizeX = 256
+    SizeY = 128
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: ShopFaked_Dining_Restaurant_Indian1_DiffOpac
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: ShopFaked_Dining_Restaurant_Indian1_Opac
+    SizeX = 1024
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: ShopFaked_Dining_Restaurant_Norm
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: ShopFaked_Dining_Restaurant_Sushi1_DiffOpac
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 

@@ -1,0 +1,53 @@
+{
+  "package": "FinancialAwnings",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\FinancialDistrict\\FeatureMaterials\\FinancialAwnings.upk",
+  "district": "Financial",
+  "meshes": [
+    {
+      "mesh": "FinancialAwnings_CafeBarrier",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialAwnings_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialAwnings_CafeBarrier_Damage1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialAwnings_Damage_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|financialawnings_damage_mat": [
+      "FinancialAwnings"
+    ],
+    "material3|financialawnings_mat": [
+      "FinancialAwnings"
+    ],
+    "materialinstanceconstant|financialawnings_black": [
+      "FinancialAwnings"
+    ],
+    "materialinstanceconstant|financialawnings_blue": [
+      "FinancialAwnings"
+    ],
+    "materialinstanceconstant|financialawnings_brown": [
+      "FinancialAwnings"
+    ],
+    "materialinstanceconstant|financialawnings_green": [
+      "FinancialAwnings"
+    ],
+    "materialinstanceconstant|financialawnings_lightblue": [
+      "FinancialAwnings"
+    ],
+    "materialinstanceconstant|financialawnings_violet": [
+      "FinancialAwnings"
+    ]
+  }
+}

@@ -1,0 +1,91 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: WaterfrontDistrict/Props/W_HarbourRope.upk Ver: 564/33 Engine: 3908 Names: 82 Exports: 10 Imports: 15 Game: 80001D
+Loading Material3 HarbourRope_Mat from package WaterfrontDistrict/Props/W_HarbourRope.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading StaticMesh3 HarbourRope from package WaterfrontDistrict/Props/W_HarbourRope.upk
+Loading Texture2D HarbourRope-Diff from package WaterfrontDistrict/Props/W_HarbourRope.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 74 allocs, 0.03 MBytes serialized in 3 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: HarbourRope_Mat
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[1] = { Texture2D'HarbourRope-Diff' }
+    Expressions[1] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'HarbourRope_Mat.MaterialExpressionTextureSample_0'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'HarbourRope-Diff' }
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: HarbourRope
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-1.52359, Y=1.2114, Z=0 }
+        BoxExtent = { X=360.147, Y=8.1715, Z=29.2767 }
+        SphereRadius = 360.845
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'HarbourRope_Mat', FirstIndex=0, NumFaces=128 }
+            }
+            NumVerts = 288
+            IndexCount = 384
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: Texture2D ObjectName: HarbourRope-Diff
+    SizeX = 256
+    SizeY = 128
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 

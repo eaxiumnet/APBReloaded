@@ -1,0 +1,119 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.0 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/WaterfrontDistrict/PropMaterials/WarehouseDoors.upk Ver: 564/33 Engine: 3908 Names: 166 Exports: 26 Imports: 40 Game: 80001D
+Loading Material3 WarehouseDoors_Mat from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WarehouseDoors.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading StaticMesh3 WarehouseDoors from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WarehouseDoors.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_1"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_1"
+Loading Texture2D WarehouseDoors_DiffSpec from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WarehouseDoors.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D WarehouseDoors_Norm from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WarehouseDoors.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loaded in 0.0 sec, 109 allocs, 0.99 MBytes serialized in 15 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: WarehouseDoors_Mat
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[2] = { Texture2D'WarehouseDoors_Norm', Texture2D'WarehouseDoors_DiffSpec' }
+    Expressions[3] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'WarehouseDoors_Mat.MaterialExpressionTextureSample_0'
+        Expressions[1] = MaterialExpressionTextureSample'WarehouseDoors_Mat.MaterialExpressionTextureSample_1'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'WarehouseDoors_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'WarehouseDoors_Norm' }
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: WarehouseDoors
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=10.7143, Y=-2.14258, Z=296.496 }
+        BoxExtent = { X=12.5, Y=581.842, Z=296.675 }
+        SphereRadius = 653.233
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'WarehouseDoors_Mat', FirstIndex=0, NumFaces=442 }
+            }
+            NumVerts = 1458
+            IndexCount = 1326
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: Texture2D ObjectName: WarehouseDoors_DiffSpec
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: WarehouseDoors_Norm
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source = 

@@ -1,0 +1,55 @@
+{
+  "package": "FinancialWaterfrontSafety",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\FinancialDistrict\\PropMaterials\\FinancialWaterfrontSafety.upk",
+  "district": "Waterfront",
+  "meshes": [
+    {
+      "mesh": "WaterfrontSafety_LifePreserver_Pole",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialWaterfrontSafety_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "WaterfrontSafety_LifePreserver_Pole_Damage1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialWaterfrontSafety_Damage_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "WaterfrontSafety_LifePreserver_Shrouded",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialWaterfrontSafety_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "WaterfrontSafety_LifePreserver_Shrouded_Damage1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialWaterfrontSafety_Damage_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|financialwaterfrontsafety_damage_mat": [
+      "FinancialWaterfrontSafety"
+    ],
+    "material3|financialwaterfrontsafety_mat": [
+      "FinancialWaterfrontSafety"
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+Using bundled DotNet SDK version: 10.0 win-x64
+Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" -Mode=ValidatePlatforms -OutputSDKs  -AllPlatforms  -project="D:/APBReloaded/APBReloaded.uproject" -log="D:/APBReloaded/Saved/Logs/AutoSDKInfo.txt" -verbose -timestamps
+Log file: D:\APBReloaded\Saved\Logs\AutoSDKInfo.txt
+##PlatformValidate: Win64 VALID 10.0.22621.0
+##PlatformValidate: Mac VALID 26.1.1
+##PlatformValidate: IOS VALID 26.1.1
+##PlatformValidate: Android INVALID r27c
+##PlatformValidate: Linux INVALID v26_clang-20.1.8-rockylinux8
+##PlatformValidate: LinuxArm64 INVALID <UNKNOWN>
+##PlatformValidate: TVOS VALID 26.1.1
+##PlatformValidate: VisionOS INVALID <UNKNOWN>
+Unable to find required SDK version 'MainVersion' for platform LinuxArm64. Check your SDK.json files
+Unable to find required SDK version 'MainVersion' for platform VisionOS. Check your SDK.json files
+Trace written to file C:\Users\Support\AppData\Local\UnrealBuildTool\Trace.uba with size 310b
+Build.bat is already running, waiting for existing script to terminate...
+Using bundled DotNet SDK version: 10.0 win-x64
+Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" -Mode=ValidatePlatforms -OutputSDKs  -AllPlatforms  -project="D:/APBReloaded/APBReloaded.uproject" -log="D:/APBReloaded/Saved/Logs/AutoSDKInfo.txt" -verbose -timestamps
+Log file: D:\APBReloaded\Saved\Logs\AutoSDKInfo.txt
+##PlatformValidate: Win64 VALID 10.0.22621.0
+##PlatformValidate: Mac VALID 26.1.1
+##PlatformValidate: IOS VALID 26.1.1
+##PlatformValidate: Android INVALID r27c
+##PlatformValidate: Linux INVALID v26_clang-20.1.8-rockylinux8
+##PlatformValidate: LinuxArm64 INVALID <UNKNOWN>
+##PlatformValidate: TVOS VALID 26.1.1
+##PlatformValidate: VisionOS INVALID <UNKNOWN>
+Unable to find required SDK version 'MainVersion' for platform LinuxArm64. Check your SDK.json files
+Unable to find required SDK version 'MainVersion' for platform VisionOS. Check your SDK.json files
+Trace written to file C:\Users\Support\AppData\Local\UnrealBuildTool\Trace.uba with size 314b
+Using bundled DotNet SDK version: 10.0 win-x64
+Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" -Mode=ValidatePlatforms -OutputSDKs  -AllPlatforms  -project="D:/APBReloaded/APBReloaded.uproject" -log="D:/APBReloaded/Saved/Logs/AutoSDKInfo.txt" -verbose -timestamps
+Log file: D:\APBReloaded\Saved\Logs\AutoSDKInfo.txt
+##PlatformValidate: Win64 VALID 10.0.22621.0
+##PlatformValidate: Mac VALID 26.1.1
+##PlatformValidate: IOS VALID 26.1.1
+##PlatformValidate: Android INVALID r27c
+##PlatformValidate: Linux INVALID v26_clang-20.1.8-rockylinux8
+##PlatformValidate: LinuxArm64 INVALID <UNKNOWN>
+##PlatformValidate: TVOS VALID 26.1.1
+##PlatformValidate: VisionOS INVALID <UNKNOWN>
+Unable to find required SDK version 'MainVersion' for platform LinuxArm64. Check your SDK.json files
+Unable to find required SDK version 'MainVersion' for platform VisionOS. Check your SDK.json files
+Trace written to file C:\Users\Support\AppData\Local\UnrealBuildTool\Trace.uba with size 314b
+===== WORLD DIRECTORY =====
+[2026.07.24-15.57.08:596][  0]LogTemp: RELAY_LISTEN port=17800
+[2026.07.24-15.57.17:537][ 92]LogTemp: RELAY_ACCEPT peer=127.0.0.1:52389
+[2026.07.24-15.57.17:599][ 95]LogTemp: RELAY_REGISTER district=Financial numeric_id=1 ok=1
+===== FINANCIAL A DIRECTORY =====
+[2026.07.24-15.57.17:534][  0]LogTemp: RELAY_CLIENT_CONNECT host=127.0.0.1 port=17800
+[2026.07.24-15.57.17:613][  0]LogTemp: RELAY_CLIENT_REGISTERED district=Financial numeric_id=1
+[2026.07.24-15.57.22:555][  0]LogTemp: RELAY_CLIENT_HEARTBEAT seq=1
+[2026.07.24-15.57.27:564][  0]LogTemp: RELAY_CLIENT_HEARTBEAT seq=2
+[2026.07.24-15.57.32:567][  0]LogTemp: RELAY_CLIENT_HEARTBEAT seq=3
+[2026.07.24-15.57.37:572][  0]LogTemp: RELAY_CLIENT_HEARTBEAT seq=4
+[2026.07.24-15.57.42:576][ 46]LogTemp: RELAY_CLIENT_HEARTBEAT seq=5
+[2026.07.24-15.57.47:578][281]LogTemp: RELAY_CLIENT_HEARTBEAT seq=6
+[2026.07.24-15.57.52:590][522]LogTemp: RELAY_CLIENT_HEARTBEAT seq=7
+[2026.07.24-15.57.57:600][763]LogTemp: RELAY_CLIENT_HEARTBEAT seq=8
+[2026.07.24-15.58.02:611][  1]LogTemp: RELAY_CLIENT_HEARTBEAT seq=9
+[2026.07.24-15.58.07:618][242]LogTemp: RELAY_CLIENT_HEARTBEAT seq=10
+[2026.07.24-15.58.12:623][483]LogTemp: RELAY_CLIENT_HEARTBEAT seq=11
+[2026.07.24-15.58.17:631][721]LogTemp: RELAY_CLIENT_HEARTBEAT seq=12
+[2026.07.24-15.58.22:645][961]LogTemp: RELAY_CLIENT_HEARTBEAT seq=13
+[2026.07.24-15.58.27:659][200]LogTemp: RELAY_CLIENT_HEARTBEAT seq=14
+[2026.07.24-15.58.32:668][438]LogTemp: RELAY_CLIENT_HEARTBEAT seq=15
+[2026.07.24-15.58.37:673][677]LogTemp: RELAY_CLIENT_HEARTBEAT seq=16
+[2026.07.24-15.58.42:673][914]LogTemp: RELAY_CLIENT_HEARTBEAT seq=17
+[2026.07.24-15.58.47:682][152]LogTemp: RELAY_CLIENT_HEARTBEAT seq=18
+[2026.07.24-15.58.52:688][388]LogTemp: RELAY_CLIENT_HEARTBEAT seq=19
+[2026.07.24-15.58.57:689][629]LogTemp: RELAY_CLIENT_HEARTBEAT seq=20
+[2026.07.24-15.59.02:695][866]LogTemp: RELAY_CLIENT_HEARTBEAT seq=21
+[2026.07.24-15.59.07:696][103]LogTemp: RELAY_CLIENT_HEARTBEAT seq=22
+[2026.07.24-15.59.12:711][341]LogTemp: RELAY_CLIENT_HEARTBEAT seq=23
+[2026.07.24-15.59.17:720][577]LogTemp: RELAY_CLIENT_HEARTBEAT seq=24
+[2026.07.24-15.59.22:730][817]LogTemp: RELAY_CLIENT_HEARTBEAT seq=25
+[2026.07.24-15.59.27:742][ 57]LogTemp: RELAY_CLIENT_HEARTBEAT seq=26
+[2026.07.24-15.59.32:754][296]LogTemp: RELAY_CLIENT_HEARTBEAT seq=27
+===== FINANCIAL B DIRECTORY =====
+[2026.07.24-15.57.18:449][  0]LogTemp: Error: RELAY_CLIENT_FAILED reason=district_catalog_mismatch
+===== SEED TRAVEL =====
+(no log written)
+===== LEAST DIRECTORY TICKET =====
+(no log written)
+===== SURVIVOR DIRECTORY TICKET =====
+(no log written)
+LEAKED=0
+M7_DIRECTORY_GATE_FAIL financial_b_register_timeout
+GATE_EXIT_CODE=1

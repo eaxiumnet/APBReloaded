@@ -1,0 +1,140 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialWindows_Office1.upk Ver: 564/33 Engine: 3908 Names: 111 Exports: 19 Imports: 16 Game: 80001D
+Loading Material3 FinancialWindows_Office1_Mat from package MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialWindows_Office1.upk
+WARNING: Import(EngineResources.Black) was not found
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Texture2D FinancialWindows_Office1_DiffSpec from package MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialWindows_Office1.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FinancialWindows_Office1_Emis from package MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialWindows_Office1.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FinancialWindows_Office1_Norm from package MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialWindows_Office1.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loaded in 0.0 sec, 140 allocs, 1.22 MBytes serialized in 22 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: FinancialWindows_Office1_Mat
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'FinancialWindows_Office1_Norm'
+        ReferencedTextures[1] = Texture2D'FinancialWindows_Office1_DiffSpec'
+        ReferencedTextures[2] = Texture2D'FinancialWindows_Office1_Emis'
+    }
+    Expressions[11] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'FinancialWindows_Office1_Mat.MaterialExpressionTextureSample_0'
+        Expressions[1] = MaterialExpressionTextureSample'FinancialWindows_Office1_Mat.MaterialExpressionTextureSample_1'
+        Expressions[2] = MaterialExpressionTextureSample'FinancialWindows_Office1_Mat.MaterialExpressionTextureSample_3'
+        Expressions[7] = MaterialExpressionVectorParameter'FinancialWindows_Office1_Mat.MaterialExpressionVectorParameter_1'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[1] =
+    {
+        CollectedVectorParameters[0] =
+        {
+            Value = { R=1, G=0.796917, B=0.267358, A=1 }
+            Name = None
+            Group = None
+        }
+    }
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionScalarParameter ObjectName: MaterialExpressionScalarParameter_2
+ { DefaultValue=0, ParameterName=EmissiveUVOverride, Group=None }
+
+Object info:
+============
+ClassName: MaterialExpressionScalarParameter ObjectName: MaterialExpressionScalarParameter_3
+ { DefaultValue=1, ParameterName=EmissiveUVMask, Group=None }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'FinancialWindows_Office1_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'FinancialWindows_Office1_Norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_3
+ { Texture=Texture2D'FinancialWindows_Office1_Emis' }
+
+Object info:
+============
+ClassName: MaterialExpressionVectorParameter ObjectName: MaterialExpressionVectorParameter_1
+    DefaultValue = { R=1, G=0.796917, B=0.267358, A=1 }
+    ParameterName = None
+    Group = None
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialWindows_Office1_DiffSpec
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialWindows_Office1_Emis
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialWindows_Office1_Norm
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source = 

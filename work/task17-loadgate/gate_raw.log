@@ -1,0 +1,181 @@
+2026-07-25T19:08:16.3198950+02:00 LOAD_GATE_RAW_LOG_START
+2026-07-25T19:08:16.4055527+02:00 LOAD_GATE_REQUEST map=Social clients=2 duration_seconds=90 latency_ms=0 loss_percent=0
+2026-07-25T19:08:16.4184764+02:00 LOAD_ASSIGNMENT identity=load_001 account=probe_load_001 host=localhost transport=local primary=movement workload=movement,combat,vehicle
+2026-07-25T19:08:16.4254381+02:00 LOAD_ASSIGNMENT identity=load_002 account=probe_load_002 host=localhost transport=local primary=combat workload=movement,combat,vehicle
+2026-07-25T19:08:16.4327071+02:00 LOAD_GATE_LAUNCH clients=2 duration=90 workload=movement,combat,vehicle
+2026-07-25T19:08:16.4879721+02:00 LOAD_GATE_LAUNCHED identity=load_001 host=localhost process_id=1668056
+2026-07-25T19:08:16.5103157+02:00 LOAD_GATE_LAUNCHED identity=load_002 host=localhost process_id=1677956
+[2026.07.25-17.08.22] PROBE_START mode=world_server_client scratch=D:/APBReloaded/.omo/load_scratch/load_001/
+[2026.07.25-17.08.22] PROBE_TIMER world_server_client id=load_001 polling every 0.5s after 3s workload=1 map=Lvl_APB_Social_Freeroam primary=movement account=probe_load_001
+[2026.07.25-17.08.27] WS_CLIENT id=load_001 sent_login user=probe_load_001
+[2026.07.25-17.08.28] WS_CLIENT id=load_001 sent_charlist
+[2026.07.25-17.08.28] WS_CLIENT id=load_001 sent_districtlist
+[2026.07.25-17.08.29] WS_CLIENT id=load_001 sent_issue_ticket
+[2026.07.25-17.08.29] WORLD_CLIENT_OK login=1 charlist=1 districtlist=1 ticket=1 id=load_001
+[2026.07.25-17.08.30] TRAVEL_RESERVATION district=Social host=127.0.0.1 port=17819 id=travel-1
+[2026.07.25-17.08.30] TRAVEL_DISPATCH district=Social
+[2026.07.25-17.08.31] APB_PERF_METRIC identity=load_001 FPS:60.000 FrameMs:16.667 RTT:0.000 Replication:10.000
+[2026.07.25-17.08.31] APB_LOAD_WORKLOAD_COMPLETE identity=load_001 movement=1 combat=0 vehicle=0
+
+[2026.07.25-17.08.24] PROBE_START mode=world_server_client scratch=D:/APBReloaded/.omo/load_scratch/load_002/
+[2026.07.25-17.08.24] PROBE_TIMER world_server_client id=load_002 polling every 0.5s after 3s workload=1 map=Lvl_APB_Social_Freeroam primary=combat account=probe_load_002
+[2026.07.25-17.08.29] WS_CLIENT id=load_002 sent_login user=probe_load_002
+[2026.07.25-17.08.30] WS_CLIENT id=load_002 sent_charlist
+[2026.07.25-17.08.30] WS_CLIENT id=load_002 sent_districtlist
+[2026.07.25-17.08.31] WS_CLIENT id=load_002 sent_issue_ticket
+[2026.07.25-17.08.31] WORLD_CLIENT_OK login=1 charlist=1 districtlist=1 ticket=1 id=load_002
+[2026.07.25-17.08.32] TRAVEL_RESERVATION district=Social host=127.0.0.1 port=17819 id=travel-2
+[2026.07.25-17.08.32] TRAVEL_DISPATCH district=Social
+[2026.07.25-17.08.33] APB_PERF_METRIC identity=load_002 FPS:60.000 FrameMs:16.667 RTT:0.000 Replication:12.000
+[2026.07.25-17.08.33] APB_LOAD_WORKLOAD_COMPLETE identity=load_002 movement=1 combat=0 vehicle=0
+
+APB_PERF_METRIC scope=server TickMs:0.004 MaxStepMs:0.004 FPS:0.490 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.025 MaxStepMs:0.912 FPS:60.032 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.024 MaxStepMs:0.802 FPS:59.997 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.030 MaxStepMs:1.124 FPS:59.991 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.028 MaxStepMs:0.965 FPS:59.997 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.024 MaxStepMs:0.759 FPS:59.985 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.024 MaxStepMs:0.756 FPS:60.007 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.024 MaxStepMs:0.676 FPS:59.991 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.023 MaxStepMs:0.647 FPS:59.992 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.029 MaxStepMs:0.985 FPS:59.988 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.023 MaxStepMs:0.654 FPS:59.970 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.027 MaxStepMs:0.939 FPS:60.017 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.032 MaxStepMs:0.967 FPS:59.997 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.026 MaxStepMs:0.854 FPS:60.001 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.033 MaxStepMs:0.978 FPS:59.994 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.024 MaxStepMs:0.724 FPS:59.997 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.027 MaxStepMs:0.849 FPS:59.992 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.027 MaxStepMs:0.895 FPS:59.996 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.028 MaxStepMs:0.993 FPS:59.996 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.023 MaxStepMs:0.715 FPS:59.992 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.029 MaxStepMs:0.868 FPS:59.993 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.028 MaxStepMs:0.897 FPS:59.970 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.023 MaxStepMs:0.701 FPS:60.003 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.024 MaxStepMs:0.761 FPS:59.996 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.028 MaxStepMs:0.899 FPS:60.005 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.027 MaxStepMs:0.888 FPS:59.994 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.024 MaxStepMs:0.689 FPS:59.992 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.022 MaxStepMs:0.661 FPS:60.000 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.026 MaxStepMs:0.757 FPS:59.987 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.026 MaxStepMs:0.919 FPS:60.002 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.030 MaxStepMs:0.917 FPS:59.992 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.029 MaxStepMs:0.926 FPS:59.989 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.028 MaxStepMs:0.827 FPS:60.000 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.029 MaxStepMs:0.990 FPS:59.871 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.034 MaxStepMs:1.104 FPS:60.009 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.027 MaxStepMs:0.952 FPS:59.993 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.034 MaxStepMs:1.108 FPS:58.319 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.031 MaxStepMs:0.986 FPS:59.999 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.030 MaxStepMs:0.907 FPS:59.357 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.027 MaxStepMs:0.916 FPS:59.897 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.040 MaxStepMs:1.390 FPS:59.680 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.033 MaxStepMs:0.991 FPS:59.893 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.027 MaxStepMs:0.835 FPS:59.933 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.032 MaxStepMs:0.943 FPS:59.970 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.025 MaxStepMs:0.868 FPS:60.003 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.026 MaxStepMs:0.891 FPS:60.002 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.023 MaxStepMs:0.653 FPS:59.993 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.023 MaxStepMs:0.705 FPS:59.996 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.024 MaxStepMs:0.725 FPS:59.999 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.026 MaxStepMs:0.849 FPS:60.004 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.021 MaxStepMs:0.603 FPS:59.986 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.029 MaxStepMs:0.832 FPS:59.986 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.028 MaxStepMs:0.992 FPS:59.997 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.025 MaxStepMs:0.858 FPS:60.002 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.022 MaxStepMs:0.663 FPS:59.991 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.023 MaxStepMs:0.680 FPS:59.999 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.021 MaxStepMs:0.604 FPS:59.999 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.024 MaxStepMs:0.692 FPS:60.005 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.026 MaxStepMs:0.785 FPS:59.996 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.021 MaxStepMs:0.668 FPS:59.988 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.025 MaxStepMs:0.886 FPS:59.899 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.027 MaxStepMs:0.870 FPS:59.378 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.023 MaxStepMs:0.742 FPS:60.027 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.024 MaxStepMs:0.778 FPS:59.996 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.028 MaxStepMs:0.992 FPS:59.989 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.027 MaxStepMs:0.790 FPS:59.998 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.026 MaxStepMs:0.808 FPS:60.013 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.025 MaxStepMs:0.732 FPS:59.997 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.022 MaxStepMs:0.671 FPS:59.991 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.025 MaxStepMs:0.795 FPS:59.996 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.021 MaxStepMs:0.636 FPS:59.987 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.023 MaxStepMs:0.673 FPS:59.997 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.026 MaxStepMs:0.844 FPS:59.996 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.026 MaxStepMs:0.842 FPS:59.995 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.021 MaxStepMs:0.609 FPS:59.995 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.026 MaxStepMs:0.768 FPS:60.000 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.022 MaxStepMs:0.704 FPS:59.993 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.028 MaxStepMs:0.934 FPS:59.995 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.026 MaxStepMs:0.820 FPS:59.989 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.028 MaxStepMs:0.872 FPS:60.000 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.024 MaxStepMs:0.802 FPS:59.970 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.025 MaxStepMs:0.896 FPS:60.018 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.022 MaxStepMs:0.670 FPS:59.989 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.026 MaxStepMs:0.863 FPS:59.990 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.028 MaxStepMs:0.831 FPS:59.997 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.025 MaxStepMs:0.844 FPS:59.994 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.031 MaxStepMs:0.906 FPS:59.987 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.035 MaxStepMs:0.707 FPS:59.973 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.026 MaxStepMs:0.884 FPS:59.967 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.023 MaxStepMs:0.774 FPS:60.041 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.023 MaxStepMs:0.713 FPS:60.013 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.023 MaxStepMs:0.690 FPS:59.993 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.028 MaxStepMs:0.992 FPS:59.871 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.024 MaxStepMs:0.726 FPS:60.007 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.028 MaxStepMs:0.953 FPS:59.990 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.024 MaxStepMs:0.765 FPS:59.998 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.033 MaxStepMs:1.211 FPS:59.999 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.031 MaxStepMs:0.977 FPS:60.012 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.027 MaxStepMs:0.896 FPS:59.996 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.031 MaxStepMs:1.016 FPS:59.999 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.028 MaxStepMs:0.829 FPS:59.994 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.030 MaxStepMs:0.898 FPS:59.992 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.022 MaxStepMs:0.646 FPS:59.996 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.028 MaxStepMs:0.882 FPS:59.955 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.026 MaxStepMs:0.820 FPS:60.001 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.030 MaxStepMs:0.859 FPS:56.096 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.030 MaxStepMs:0.742 FPS:48.383 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.027 MaxStepMs:0.802 FPS:59.998 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.031 MaxStepMs:1.037 FPS:59.997 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.024 MaxStepMs:0.815 FPS:59.994 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.028 MaxStepMs:0.829 FPS:59.996 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.025 MaxStepMs:0.788 FPS:59.992 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.026 MaxStepMs:0.843 FPS:60.015 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.021 MaxStepMs:0.598 FPS:59.994 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.029 MaxStepMs:0.857 FPS:60.000 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.027 MaxStepMs:0.899 FPS:59.986 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.025 MaxStepMs:0.803 FPS:60.003 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.030 MaxStepMs:0.939 FPS:59.999 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.029 MaxStepMs:0.938 FPS:59.989 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.025 MaxStepMs:0.738 FPS:59.989 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.026 MaxStepMs:0.799 FPS:59.988 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.029 MaxStepMs:0.881 FPS:59.999 missed_authoritative_steps:0 corrections:0
+APB_PERF_METRIC scope=server TickMs:0.021 MaxStepMs:0.612 FPS:59.686 missed_authoritative_steps:0 corrections:0
+2026-07-25T19:09:47.2283635+02:00 LOAD_GATE_CLEANUP stopped_identity=load_001 process_id=1668056
+2026-07-25T19:09:47.2371359+02:00 LOAD_GATE_CLEANUP stopped_identity=load_002 process_id=1677956
+[2026.07.25-17.08.22] PROBE_START mode=world_server_client scratch=D:/APBReloaded/.omo/load_scratch/load_001/
+[2026.07.25-17.08.22] PROBE_TIMER world_server_client id=load_001 polling every 0.5s after 3s workload=1 map=Lvl_APB_Social_Freeroam primary=movement account=probe_load_001
+[2026.07.25-17.08.27] WS_CLIENT id=load_001 sent_login user=probe_load_001
+[2026.07.25-17.08.28] WS_CLIENT id=load_001 sent_charlist
+[2026.07.25-17.08.28] WS_CLIENT id=load_001 sent_districtlist
+[2026.07.25-17.08.29] WS_CLIENT id=load_001 sent_issue_ticket
+[2026.07.25-17.08.29] WORLD_CLIENT_OK login=1 charlist=1 districtlist=1 ticket=1 id=load_001
+[2026.07.25-17.08.30] TRAVEL_RESERVATION district=Social host=127.0.0.1 port=17819 id=travel-1
+[2026.07.25-17.08.30] TRAVEL_DISPATCH district=Social
+[2026.07.25-17.08.31] APB_PERF_METRIC identity=load_001 FPS:60.000 FrameMs:16.667 RTT:0.000 Replication:10.000
+[2026.07.25-17.08.31] APB_LOAD_WORKLOAD_COMPLETE identity=load_001 movement=1 combat=0 vehicle=0
+
+[2026.07.25-17.08.24] PROBE_START mode=world_server_client scratch=D:/APBReloaded/.omo/load_scratch/load_002/
+[2026.07.25-17.08.24] PROBE_TIMER world_server_client id=load_002 polling every 0.5s after 3s workload=1 map=Lvl_APB_Social_Freeroam primary=combat account=probe_load_002
+[2026.07.25-17.08.29] WS_CLIENT id=load_002 sent_login user=probe_load_002
+[2026.07.25-17.08.30] WS_CLIENT id=load_002 sent_charlist
+[2026.07.25-17.08.30] WS_CLIENT id=load_002 sent_districtlist
+[2026.07.25-17.08.31] WS_CLIENT id=load_002 sent_issue_ticket
+[2026.07.25-17.08.31] WORLD_CLIENT_OK login=1 charlist=1 districtlist=1 ticket=1 id=load_002
+[2026.07.25-17.08.32] TRAVEL_RESERVATION district=Social host=127.0.0.1 port=17819 id=travel-2
+[2026.07.25-17.08.32] TRAVEL_DISPATCH district=Social
+[2026.07.25-17.08.33] APB_PERF_METRIC identity=load_002 FPS:60.000 FrameMs:16.667 RTT:0.000 Replication:12.000
+[2026.07.25-17.08.33] APB_LOAD_WORKLOAD_COMPLETE identity=load_002 movement=1 combat=0 vehicle=0
+
+2026-07-25T19:09:47.2704321+02:00 LOAD_GATE_FAIL reason=missing_workload_receipts:0/2

@@ -1,0 +1,221 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/FinancialDistrict/PropMaterials/FinancialStreetlights.upk Ver: 564/33 Engine: 3908 Names: 193 Exports: 66 Imports: 36 Game: 80001D
+Loading Material3 FinancialStreetlights_Mat from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialStreetlights.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading StaticMesh3 FinancialStreetlights_Double from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialStreetlights.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_1"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_1"
+Loading StaticMesh3 FinancialStreetlights_Single from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialStreetlights.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_1"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_1"
+Loading Texture2D FinancialStreetlights_DiffSpec from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialStreetlights.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FinancialStreetlights_Emis from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialStreetlights.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FinancialStreetlights_Norm from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialStreetlights.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loaded in 0.0 sec, 178 allocs, 1.50 MBytes serialized in 23 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: FinancialStreetlights_Mat
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'FinancialStreetlights_Norm'
+        ReferencedTextures[1] = Texture2D'FinancialStreetlights_Emis'
+        ReferencedTextures[2] = Texture2D'FinancialStreetlights_DiffSpec'
+    }
+    Expressions[9] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'FinancialStreetlights_Mat.MaterialExpressionTextureSample_0'
+        Expressions[1] = MaterialExpressionTextureSample'FinancialStreetlights_Mat.MaterialExpressionTextureSample_2'
+        Expressions[2] = MaterialExpressionVectorParameter'FinancialStreetlights_Mat.MaterialExpressionVectorParameter_0'
+        Expressions[7] = MaterialExpressionTextureSample'FinancialStreetlights_Mat.MaterialExpressionTextureSample_3'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[1] =
+    {
+        CollectedVectorParameters[0] =
+        {
+            Value = { R=1, G=0.899385, B=0.729919, A=1 }
+            Name = None
+            Group = None
+        }
+    }
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'FinancialStreetlights_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_2
+ { Texture=Texture2D'FinancialStreetlights_Norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_3
+ { Texture=Texture2D'FinancialStreetlights_Emis' }
+
+Object info:
+============
+ClassName: MaterialExpressionVectorParameter ObjectName: MaterialExpressionVectorParameter_0
+    DefaultValue = { R=1, G=0.899385, B=0.729919, A=1 }
+    ParameterName = None
+    Group = None
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialStreetlights_Double
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-0.000198364, Y=0.0188999, Z=503.005 }
+        BoxExtent = { X=252.775, Y=15.7315, Z=503.005 }
+        SphereRadius = 558.351
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[2] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialStreetlights_Mat', FirstIndex=0, NumFaces=356 }
+            }
+            NumVerts = 662
+            IndexCount = 1068
+            NumTexCoords = 1
+        }
+        Lods[1] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialStreetlights_Mat', FirstIndex=0, NumFaces=238 }
+            }
+            NumVerts = 462
+            IndexCount = 714
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 2
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialStreetlights_Single
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=119.36, Y=-0.0188999, Z=503.005 }
+        BoxExtent = { X=133.416, Y=15.7315, Z=503.005 }
+        SphereRadius = 520.397
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[2] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialStreetlights_Mat', FirstIndex=0, NumFaces=242 }
+            }
+            NumVerts = 454
+            IndexCount = 726
+            NumTexCoords = 1
+        }
+        Lods[1] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialStreetlights_Mat', FirstIndex=0, NumFaces=160 }
+            }
+            NumVerts = 312
+            IndexCount = 480
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 2
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialStreetlights_DiffSpec
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialStreetlights_Emis
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialStreetlights_Norm
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source = 

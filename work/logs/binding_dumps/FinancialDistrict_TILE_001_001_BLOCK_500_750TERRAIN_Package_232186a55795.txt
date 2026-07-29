@@ -1,0 +1,233 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: FinancialDistrict/Terrain/FinancialDistrict_TILE_001_001_BLOCK_500_750TERRAIN_Package.upk Ver: 564/33 Engine: 3908 Names: 24 Exports: 8 Imports: 6 Game: 80001D
+Loading StaticMesh3 MT001001B500750_440_LOD_0 from package FinancialDistrict/Terrain/FinancialDistrict_TILE_001_001_BLOCK_500_750TERRAIN_Package.upk
+BoolProperty: unknown UStaticMesh3 m_bRequiresCollisionData
+BoolProperty: unknown UStaticMesh3 m_bDiscardCPURenderData
+Loading package: MaterialDatabase/TerrainMaterials/Terrain.upk Ver: 564/33 Engine: 3908 Names: 236 Exports: 449 Imports: 50 Game: 80001D
+Loading StaticMesh3 MT001001B500750_440_LOD_1 from package FinancialDistrict/Terrain/FinancialDistrict_TILE_001_001_BLOCK_500_750TERRAIN_Package.upk
+Loading StaticMesh3 MT001001B500750_458_LOD_0 from package FinancialDistrict/Terrain/FinancialDistrict_TILE_001_001_BLOCK_500_750TERRAIN_Package.upk
+BoolProperty: unknown UStaticMesh3 m_bRequiresCollisionData
+BoolProperty: unknown UStaticMesh3 m_bDiscardCPURenderData
+Loading StaticMesh3 MT001001B500750_458_LOD_1 from package FinancialDistrict/Terrain/FinancialDistrict_TILE_001_001_BLOCK_500_750TERRAIN_Package.upk
+Loading StaticMesh3 MT001001B500750_502_LOD_0 from package FinancialDistrict/Terrain/FinancialDistrict_TILE_001_001_BLOCK_500_750TERRAIN_Package.upk
+BoolProperty: unknown UStaticMesh3 m_bRequiresCollisionData
+BoolProperty: unknown UStaticMesh3 m_bDiscardCPURenderData
+Loading StaticMesh3 MT001001B500750_502_LOD_1 from package FinancialDistrict/Terrain/FinancialDistrict_TILE_001_001_BLOCK_500_750TERRAIN_Package.upk
+Loading MaterialInstanceConstant TERR_Asphalt_01_FD from package MaterialDatabase/TerrainMaterials/Terrain.upk
+StrProperty: unknown UMaterialInstanceConstant RWTGuid
+ArrayProperty: unknown UMaterialInstanceConstant Channels
+Loading Material3 TERR_Asphalt_01 from package MaterialDatabase/TerrainMaterials/Terrain.upk
+Loading package: MaterialDatabase/GenericMaterials/Shared_Maps.upk Ver: 564/33 Engine: 3908 Names: 128 Exports: 50 Imports: 15 Game: 80001D
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Texture2D AsphaltTerrain01_NRM from package MaterialDatabase/TerrainMaterials/Terrain.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D TerrainMask01 from package MaterialDatabase/TerrainMaterials/Terrain.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D DirtOverlay_01 from package MaterialDatabase/GenericMaterials/Shared_Maps.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D TERR_DarkAsphalt_DiffSpec from package MaterialDatabase/TerrainMaterials/Terrain.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D AsphaltTerrain01 from package MaterialDatabase/TerrainMaterials/Terrain.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 375 allocs, 3.58 MBytes serialized in 62 calls.
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: MT001001B500750_440_LOD_0
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0.00610352, Y=0.00610352, Z=7.85803e-10 }
+        BoxExtent = { X=2557.73, Y=2240.16, Z=0.000307643 }
+        SphereRadius = 3400.04
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'TERR_Asphalt_01_FD', FirstIndex=0, NumFaces=10 }
+            }
+            NumVerts = 24
+            IndexCount = 30
+            NumTexCoords = 3
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: MT001001B500750_440_LOD_1
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0.00610352, Y=0.00610352, Z=7.85803e-10 }
+        BoxExtent = { X=2557.73, Y=2240.16, Z=0.000307643 }
+        SphereRadius = 3400.04
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'TERR_Asphalt_01_FD', FirstIndex=0, NumFaces=10 }
+            }
+            NumVerts = 24
+            IndexCount = 30
+            NumTexCoords = 3
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: MT001001B500750_458_LOD_0
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0, Y=0, Z=4.95324e-05 }
+        BoxExtent = { X=2536.27, Y=2734.38, Z=0.000300378 }
+        SphereRadius = 3729.54
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'TERR_Asphalt_01_FD', FirstIndex=0, NumFaces=4 }
+            }
+            NumVerts = 12
+            IndexCount = 12
+            NumTexCoords = 3
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: MT001001B500750_458_LOD_1
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0, Y=0, Z=4.95324e-05 }
+        BoxExtent = { X=2536.27, Y=2734.38, Z=0.000300378 }
+        SphereRadius = 3729.54
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'TERR_Asphalt_01_FD', FirstIndex=0, NumFaces=4 }
+            }
+            NumVerts = 12
+            IndexCount = 12
+            NumTexCoords = 3
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: MT001001B500750_502_LOD_0
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-0.000244141, Y=-2734.38, Z=-0.000239047 }
+        BoxExtent = { X=2734.38, Y=5468.75, Z=0.000597617 }
+        SphereRadius = 6114.25
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'TERR_Asphalt_01_FD', FirstIndex=0, NumFaces=4 }
+            }
+            NumVerts = 16
+            IndexCount = 12
+            NumTexCoords = 3
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: MT001001B500750_502_LOD_1
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-0.000244141, Y=-2734.38, Z=-0.000239047 }
+        BoxExtent = { X=2734.38, Y=5468.75, Z=0.000597617 }
+        SphereRadius = 6114.25
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'TERR_Asphalt_01_FD', FirstIndex=0, NumFaces=4 }
+            }
+            NumVerts = 16
+            IndexCount = 12
+            NumTexCoords = 3
+        }
+    }
+    LodCount = 1

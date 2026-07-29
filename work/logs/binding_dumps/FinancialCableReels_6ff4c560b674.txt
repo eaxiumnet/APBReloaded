@@ -1,0 +1,707 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCableReels.upk Ver: 564/33 Engine: 3908 Names: 257 Exports: 86 Imports: 51 Game: 80001D
+Loading Material3 FinancialCableReels_Damage_Mat from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCableReels.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 FinancialCableReels_Mat from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCableReels.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading SkeletalMesh3 FinancialCableReels_Reels from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCableReels.upk
+BoolProperty: unknown USkeletalMesh3 bUseCPUSkinning
+Loading SkeletalMesh3 FinancialCableReels_Reels_Damage1 from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCableReels.upk
+BoolProperty: unknown USkeletalMesh3 bUseCPUSkinning
+Loading SkeletalMesh3 FinancialCableReels_Reels_Damage2 from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCableReels.upk
+BoolProperty: unknown USkeletalMesh3 bUseCPUSkinning
+Loading StaticMesh3 FinancialCableReels_Cable from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCableReels.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_4"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_4"
+Loading StaticMesh3 FinancialCableReels_Reel from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCableReels.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_7"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_7"
+Loading StaticMesh3 FinancialCableReels_ReelAndCable from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCableReels.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_6"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_6"
+Loading StaticMesh3 FinancialCableReels_Reels from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCableReels.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_7"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_7"
+Loading StaticMesh3 FinancialCableReels_Reels_Damage1 from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCableReels.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_19"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_19"
+Loading StaticMesh3 FinancialCableReels_Reels_Damage2 from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCableReels.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_18"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_18"
+Loading StaticMesh3 FinancialCableReels_Stand from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCableReels.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_1"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_1"
+Loading StaticMesh3 FinancialCableReels_Stand_Damage1 from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCableReels.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_2"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_2"
+Loading StaticMesh3 FinancialCableReels_Stand_Damage2 from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCableReels.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_0"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_0"
+Loading Texture2D FinancialCableReels_Damage from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCableReels.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FinancialCableReels_DiffSpec from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCableReels.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FinancialCableReels_Norm from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCableReels.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loaded in 0.0 sec, 477 allocs, 1.70 MBytes serialized in 36 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: FinancialCableReels_Damage_Mat
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'FinancialCableReels_Norm'
+        ReferencedTextures[1] = Texture2D'FinancialCableReels_DiffSpec'
+        ReferencedTextures[2] = Texture2D'FinancialCableReels_Damage'
+    }
+    Expressions[6] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'FinancialCableReels_Damage_Mat.MaterialExpressionTextureSample_0'
+        Expressions[1] = MaterialExpressionTextureSample'FinancialCableReels_Damage_Mat.MaterialExpressionTextureSample_2'
+        Expressions[4] = MaterialExpressionTextureSample'FinancialCableReels_Damage_Mat.MaterialExpressionTextureSample_11'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: Material3 ObjectName: FinancialCableReels_Mat
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[2] = { Texture2D'FinancialCableReels_Norm', Texture2D'FinancialCableReels_DiffSpec' }
+    Expressions[4] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'FinancialCableReels_Mat.MaterialExpressionTextureSample_0'
+        Expressions[1] = MaterialExpressionTextureSample'FinancialCableReels_Mat.MaterialExpressionTextureSample_2'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'FinancialCableReels_Norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_11
+ { Texture=Texture2D'FinancialCableReels_Damage' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_2
+ { Texture=Texture2D'FinancialCableReels_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'FinancialCableReels_Norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_2
+ { Texture=Texture2D'FinancialCableReels_DiffSpec' }
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: FinancialCableReels_Reels
+    LODInfo[2] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[1] = { true }
+            BonesToRemove[0] = {}
+            BonesToPrioritize[0] = {}
+            SourceImportFilename = ""
+        }
+        LODInfo[1] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[1] = { 0 }
+            bEnableShadowCasting[1] = { true }
+            BonesToRemove[0] = {}
+            BonesToPrioritize[0] = {}
+            SourceImportFilename = ""
+        }
+    }
+    Sockets[0] = {}
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Skeleton = None
+    Materials[1] = { Material3'FinancialCableReels_Mat' }
+
+    Lods[2] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialCableReels_Mat', FirstIndex=0, NumFaces=164 }
+            }
+            NumVerts = 185
+            IndexCount = 492
+            NumTexCoords = 1
+        }
+        Lods[1] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialCableReels_Mat', FirstIndex=0, NumFaces=86 }
+            }
+            NumVerts = 112
+            IndexCount = 258
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 2
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 1
+    Sockets[0] = {}
+    SocketCount = 0
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: FinancialCableReels_Reels_Damage1
+    LODInfo[2] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[1] = { true }
+            BonesToRemove[0] = {}
+            BonesToPrioritize[0] = {}
+            SourceImportFilename = ""
+        }
+        LODInfo[1] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[1] = { 0 }
+            bEnableShadowCasting[1] = { true }
+            BonesToRemove[0] = {}
+            BonesToPrioritize[0] = {}
+            SourceImportFilename = ""
+        }
+    }
+    Sockets[0] = {}
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Skeleton = None
+    Materials[1] = { Material3'FinancialCableReels_Mat' }
+
+    Lods[2] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialCableReels_Mat', FirstIndex=0, NumFaces=368 }
+            }
+            NumVerts = 569
+            IndexCount = 1104
+            NumTexCoords = 1
+        }
+        Lods[1] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialCableReels_Mat', FirstIndex=0, NumFaces=290 }
+            }
+            NumVerts = 440
+            IndexCount = 870
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 2
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 1
+    Sockets[0] = {}
+    SocketCount = 0
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: FinancialCableReels_Reels_Damage2
+    LODInfo[2] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[1] = { true }
+            BonesToRemove[0] = {}
+            BonesToPrioritize[0] = {}
+            SourceImportFilename = ""
+        }
+        LODInfo[1] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[1] = { 0 }
+            bEnableShadowCasting[1] = { true }
+            BonesToRemove[0] = {}
+            BonesToPrioritize[0] = {}
+            SourceImportFilename = ""
+        }
+    }
+    Sockets[0] = {}
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Skeleton = None
+    Materials[1] = { Material3'FinancialCableReels_Mat' }
+
+    Lods[2] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialCableReels_Mat', FirstIndex=0, NumFaces=348 }
+            }
+            NumVerts = 571
+            IndexCount = 1044
+            NumTexCoords = 1
+        }
+        Lods[1] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialCableReels_Mat', FirstIndex=0, NumFaces=248 }
+            }
+            NumVerts = 393
+            IndexCount = 744
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 2
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 1
+    Sockets[0] = {}
+    SocketCount = 0
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialCableReels_Cable
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0, Y=0, Z=40.01 }
+        BoxExtent = { X=80.5154, Y=79.9274, Z=39.9334 }
+        SphereRadius = 88.3966
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialCableReels_Mat', FirstIndex=0, NumFaces=398 }
+            }
+            NumVerts = 500
+            IndexCount = 1194
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialCableReels_Reel
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0, Y=0, Z=48.6663 }
+        BoxExtent = { X=91.6646, Y=91.1356, Z=48.6436 }
+        SphereRadius = 103.829
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialCableReels_Mat', FirstIndex=0, NumFaces=160 }
+            }
+            NumVerts = 348
+            IndexCount = 480
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialCableReels_ReelAndCable
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0, Y=0, Z=48.6264 }
+        BoxExtent = { X=91.6646, Y=91.1356, Z=48.6435 }
+        SphereRadius = 103.829
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialCableReels_Mat', FirstIndex=0, NumFaces=310 }
+            }
+            NumVerts = 526
+            IndexCount = 930
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialCableReels_Reels
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=1.38609, Y=2.4315, Z=89.7878 }
+        BoxExtent = { X=91.6646, Y=103.286, Z=91.1357 }
+        SphereRadius = 130.647
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[2] =
+            {
+                Sections[0] = { Material=Material3'FinancialCableReels_Mat', FirstIndex=0, NumFaces=460 }
+                Sections[1] = { Material=Material3'FinancialCableReels_Mat', FirstIndex=0, NumFaces=0 }
+            }
+            NumVerts = 1388
+            IndexCount = 1380
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialCableReels_Reels_Damage1
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=3.22749, Y=1.8842, Z=90.2052 }
+        BoxExtent = { X=93.506, Y=102.51, Z=90.7407 }
+        SphereRadius = 130.398
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialCableReels_Damage_Mat', FirstIndex=0, NumFaces=749 }
+            }
+            NumVerts = 2202
+            IndexCount = 2247
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialCableReels_Reels_Damage2
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=1.59805, Y=3.02415, Z=89.7366 }
+        BoxExtent = { X=91.4527, Y=90.138, Z=90.2721 }
+        SphereRadius = 130.911
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialCableReels_Damage_Mat', FirstIndex=0, NumFaces=715 }
+            }
+            NumVerts = 2136
+            IndexCount = 2145
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialCableReels_Stand
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=2.80125, Y=0, Z=83.4209 }
+        BoxExtent = { X=48.1978, Y=103.286, Z=83.4209 }
+        SphereRadius = 126.993
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[2] =
+    {
+        Lods[0] =
+        {
+            Sections[2] =
+            {
+                Sections[0] = { Material=Material3'FinancialCableReels_Mat', FirstIndex=0, NumFaces=300 }
+                Sections[1] = { Material=Material3'FinancialCableReels_Mat', FirstIndex=0, NumFaces=0 }
+            }
+            NumVerts = 1044
+            IndexCount = 900
+            NumTexCoords = 1
+        }
+        Lods[1] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialCableReels_Mat', FirstIndex=0, NumFaces=158 }
+            }
+            NumVerts = 584
+            IndexCount = 474
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 2
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialCableReels_Stand_Damage1
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=2.80125, Y=0, Z=83.726 }
+        BoxExtent = { X=48.1978, Y=102.51, Z=83.9745 }
+        SphereRadius = 127.189
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[2] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialCableReels_Mat', FirstIndex=0, NumFaces=384 }
+            }
+            NumVerts = 1208
+            IndexCount = 1152
+            NumTexCoords = 1
+        }
+        Lods[1] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialCableReels_Mat', FirstIndex=0, NumFaces=222 }
+            }
+            NumVerts = 716
+            IndexCount = 666
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 2
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialCableReels_Stand_Damage2
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=2.80125, Y=3.02415, Z=82.4195 }
+        BoxExtent = { X=48.1978, Y=90.138, Z=82.668 }
+        SphereRadius = 125.657
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[2] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialCableReels_Mat', FirstIndex=0, NumFaces=374 }
+            }
+            NumVerts = 1164
+            IndexCount = 1122
+            NumTexCoords = 1
+        }
+        Lods[1] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialCableReels_Mat', FirstIndex=0, NumFaces=191 }
+            }
+            NumVerts = 600
+            IndexCount = 573
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 2
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialCableReels_Damage
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialCableReels_DiffSpec
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialCableReels_Norm
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source = 

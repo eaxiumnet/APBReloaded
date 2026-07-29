@@ -1,0 +1,139 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.0 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: WaterfrontDistrict/Terrain/WaterfrontDistrict_TILE_001_001_BLOCK_250_750TERRAIN_Package.upk Ver: 564/33 Engine: 3908 Names: 21 Exports: 4 Imports: 6 Game: 80001D
+Loading StaticMesh3 MT001001B250750_001_LOD_0 from package WaterfrontDistrict/Terrain/WaterfrontDistrict_TILE_001_001_BLOCK_250_750TERRAIN_Package.upk
+BoolProperty: unknown UStaticMesh3 m_bRequiresCollisionData
+BoolProperty: unknown UStaticMesh3 m_bDiscardCPURenderData
+Loading package: MaterialDatabase/TerrainMaterials/Water.upk Ver: 564/33 Engine: 3908 Names: 284 Exports: 453 Imports: 46 Game: 80001D
+Loading StaticMesh3 MT001001B250750_001_LOD_1 from package WaterfrontDistrict/Terrain/WaterfrontDistrict_TILE_001_001_BLOCK_250_750TERRAIN_Package.upk
+Loading Material3 Water from package MaterialDatabase/TerrainMaterials/Water.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Texture2D Waves_Norm from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D Water_Colour from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading TextureCube3 Sky_6pm_Rot from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTextureCube3 LODCategory
+Loading TextureCube3 Sky_Midnight_Rot from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTextureCube3 LODCategory
+Loading TextureCube3 Sky_Afternoon_Rot from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTextureCube3 LODCategory
+Loading TextureCube3 Sky_6am_Rot from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTextureCube3 LODCategory
+Loading Texture2D Sky_6pm_RotPosX from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Sky_6pm_RotNegX from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Sky_6pm_RotPosY from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Sky_6pm_RotNegY from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Sky_6pm_RotPosZ from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Sky_6pm_RotNegZ from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Sky_Midnight_RotPosX from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Sky_Midnight_RotNegX from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Sky_Midnight_RotPosY from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Sky_Midnight_RotNegY from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Sky_Midnight_RotPosZ from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Sky_Midnight_RotNegZ from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Sky_Afternoon_RotPosX from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Sky_Afternoon_RotNegX from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Sky_Afternoon_RotPosY from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Sky_Afternoon_RotNegY from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Sky_Afternoon_RotPosZ from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Sky_Afternoon_RotNegZ from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Sky_6am_RotPosX from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Sky_6am_RotNegX from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Sky_6am_RotPosY from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Sky_6am_RotNegY from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Sky_6am_RotPosZ from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Sky_6am_RotNegZ from package MaterialDatabase/TerrainMaterials/Water.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 337 allocs, 1.65 MBytes serialized in 22 calls.
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: MT001001B250750_001_LOD_0
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0, Y=0, Z=0.000213623 }
+        BoxExtent = { X=24383.5, Y=12500, Z=0.00462827 }
+        SphereRadius = 27400.9
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'Water', FirstIndex=0, NumFaces=11 }
+            }
+            NumVerts = 24
+            IndexCount = 33
+            NumTexCoords = 3
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: MT001001B250750_001_LOD_1
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0, Y=0, Z=0.000213623 }
+        BoxExtent = { X=24383.5, Y=12500, Z=0.00462827 }
+        SphereRadius = 27400.9
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'Water', FirstIndex=0, NumFaces=11 }
+            }
+            NumVerts = 24
+            IndexCount = 33
+            NumTexCoords = 3
+        }
+    }
+    LodCount = 1

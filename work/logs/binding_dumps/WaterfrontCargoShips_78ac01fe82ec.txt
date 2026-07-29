@@ -1,0 +1,404 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCargoShips.upk Ver: 564/33 Engine: 3908 Names: 118 Exports: 45 Imports: 14 Game: 80001D
+Loading Material3 LOGO_Baylan_MAT from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCargoShips.upk
+BoolProperty: unknown UMaterial3 bEnableShadowCasting
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 WaterfrontCargoShips_Containers_MAT from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCargoShips.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 WaterfrontCargoShips_Elements_MAT from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCargoShips.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 WaterfrontCargoShips_Hull_MAT from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCargoShips.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+BoolProperty: unknown UMaterialExpressionVectorParameter bRealtimePreview
+Loading Texture2D LOGO_Baylan_Diff from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCargoShips.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D LOGO_Baylan_Opac from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCargoShips.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D WaterfrontCargoShips_Containers_DiffSpec from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCargoShips.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D WaterfrontCargoShips_Containers_Norm from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCargoShips.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D WaterfrontCargoShips_Elements_DiffSpec from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCargoShips.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D WaterfrontCargoShips_Elements_Norm from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCargoShips.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D WaterfrontCargoShips_Hull_DiffSpec from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCargoShips.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D WaterfrontCargoShips_Hull_Norm from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCargoShips.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D WaterfrontCargoShips_Masks from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCargoShips.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 296 allocs, 4.63 MBytes serialized in 100 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: LOGO_Baylan_MAT
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[2] = { Texture2D'LOGO_Baylan_Diff', Texture2D'LOGO_Baylan_Opac' }
+    Expressions[4] =
+    {
+        Expressions[1] = MaterialExpressionVectorParameter'LOGO_Baylan_MAT.MaterialExpressionVectorParameter_0'
+        Expressions[2] = MaterialExpressionTextureSample'LOGO_Baylan_MAT.MaterialExpressionTextureSample_0'
+        Expressions[3] = MaterialExpressionTextureSample'LOGO_Baylan_MAT.MaterialExpressionTextureSample_1'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[1] =
+    {
+        CollectedVectorParameters[0] =
+        {
+            Value = { R=0.058187, G=0.154152, B=0.43134, A=1 }
+            Name = None
+            Group = None
+        }
+    }
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: Material3 ObjectName: WaterfrontCargoShips_Containers_MAT
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'WaterfrontCargoShips_Containers_Norm'
+        ReferencedTextures[1] = Texture2D'WaterfrontCargoShips_Containers_DiffSpec'
+        ReferencedTextures[2] = Texture2D'WaterfrontCargoShips_Masks'
+    }
+    Expressions[13] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'WaterfrontCargoShips_Containers_MAT.MaterialExpressionTextureSample_1'
+        Expressions[1] = MaterialExpressionTextureSample'WaterfrontCargoShips_Containers_MAT.MaterialExpressionTextureSample_0'
+        Expressions[3] = MaterialExpressionTextureSample'WaterfrontCargoShips_Containers_MAT.MaterialExpressionTextureSample_2'
+        Expressions[7] = MaterialExpressionVectorParameter'WaterfrontCargoShips_Containers_MAT.MaterialExpressionVectorParameter_0'
+        Expressions[12] = MaterialExpressionTextureSample'WaterfrontCargoShips_Containers_MAT.MaterialExpressionTextureSample_4'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[1] =
+    {
+        CollectedVectorParameters[0] =
+        {
+            Value = { R=0.965815, G=0.932277, B=0.560499, A=1 }
+            Name = None
+            Group = None
+        }
+    }
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: Material3 ObjectName: WaterfrontCargoShips_Elements_MAT
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'WaterfrontCargoShips_Elements_Norm'
+        ReferencedTextures[1] = Texture2D'WaterfrontCargoShips_Elements_DiffSpec'
+        ReferencedTextures[2] = Texture2D'WaterfrontCargoShips_Masks'
+    }
+    Expressions[10] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'WaterfrontCargoShips_Elements_MAT.MaterialExpressionTextureSample_1'
+        Expressions[1] = MaterialExpressionTextureSample'WaterfrontCargoShips_Elements_MAT.MaterialExpressionTextureSample_0'
+        Expressions[7] = MaterialExpressionTextureSample'WaterfrontCargoShips_Elements_MAT.MaterialExpressionTextureSample_6'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: Material3 ObjectName: WaterfrontCargoShips_Hull_MAT
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[2] =
+    {
+        ReferencedTextures[0] = Texture2D'WaterfrontCargoShips_Hull_Norm'
+        ReferencedTextures[1] = Texture2D'WaterfrontCargoShips_Hull_DiffSpec'
+    }
+    Expressions[3] =
+    {
+        Expressions[1] = MaterialExpressionTextureSample'WaterfrontCargoShips_Hull_MAT.MaterialExpressionTextureSample_0'
+        Expressions[2] = MaterialExpressionTextureSample'WaterfrontCargoShips_Hull_MAT.MaterialExpressionTextureSample_1'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'LOGO_Baylan_Opac' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'LOGO_Baylan_Diff' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'WaterfrontCargoShips_Containers_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'WaterfrontCargoShips_Containers_Norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_2
+ { Texture=Texture2D'WaterfrontCargoShips_Masks' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_4
+ { Texture=Texture2D'WaterfrontCargoShips_Masks' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'WaterfrontCargoShips_Elements_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'WaterfrontCargoShips_Elements_Norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_6
+ { Texture=Texture2D'WaterfrontCargoShips_Masks' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'WaterfrontCargoShips_Hull_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'WaterfrontCargoShips_Hull_Norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionVectorParameter ObjectName: MaterialExpressionVectorParameter_0
+    DefaultValue = { R=0.058187, G=0.154152, B=0.43134, A=1 }
+    ParameterName = None
+    Group = None
+
+Object info:
+============
+ClassName: MaterialExpressionVectorParameter ObjectName: MaterialExpressionVectorParameter_0
+    DefaultValue = { R=0.965815, G=0.932277, B=0.560499, A=1 }
+    ParameterName = None
+    Group = None
+
+Object info:
+============
+ClassName: Texture2D ObjectName: LOGO_Baylan_Diff
+    SizeX = 512
+    SizeY = 128
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: LOGO_Baylan_Opac
+    SizeX = 512
+    SizeY = 128
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: WaterfrontCargoShips_Containers_DiffSpec
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: WaterfrontCargoShips_Containers_Norm
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: WaterfrontCargoShips_Elements_DiffSpec
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: WaterfrontCargoShips_Elements_Norm
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: WaterfrontCargoShips_Hull_DiffSpec
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: WaterfrontCargoShips_Hull_Norm
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: WaterfrontCargoShips_Masks
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 

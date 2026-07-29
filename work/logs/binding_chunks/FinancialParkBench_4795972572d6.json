@@ -1,0 +1,85 @@
+{
+  "package": "FinancialParkBench",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\FinancialDistrict\\PropMaterials\\FinancialParkBench.upk",
+  "district": "Financial",
+  "meshes": [
+    {
+      "mesh": "financialparkbench",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialParkBench_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialParkBench2",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialParkBench_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialParkBench2_Damage1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialParkBench_Damage_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "FinancialParkBench_Damage_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialParkBench2_Damage2",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialParkBench_Damage_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "FinancialParkBench_Damage_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialParkBench_Damage1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialParkBench_Damage_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialParkBench_Damage2",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialParkBench_Damage_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|financialparkbench_damage_mat": [
+      "FinancialParkBench"
+    ],
+    "material3|financialparkbench_mat": [
+      "FinancialParkBench"
+    ]
+  }
+}

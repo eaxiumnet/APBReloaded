@@ -1,0 +1,93 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCutoutDevilDog.upk Ver: 564/33 Engine: 3908 Names: 175 Exports: 24 Imports: 39 Game: 80001D
+Loading Material3 FinancialCutoutDevilDog_Mat from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCutoutDevilDog.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading StaticMesh3 FinancialCutoutDevilDog_LOD0 from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCutoutDevilDog.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_6"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_6"
+Loading Texture2D FinancialCutoutDevilDog_DiffOpac from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCutoutDevilDog.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 83 allocs, 0.57 MBytes serialized in 10 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: FinancialCutoutDevilDog_Mat
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[1] = { Texture2D'FinancialCutoutDevilDog_DiffOpac' }
+    Expressions[4] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'FinancialCutoutDevilDog_Mat.MaterialExpressionTextureSample_0'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'FinancialCutoutDevilDog_DiffOpac' }
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialCutoutDevilDog_LOD0
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0.953651, Y=-0.0230007, Z=95.2375 }
+        BoxExtent = { X=37.6299, Y=18.5287, Z=95.229 }
+        SphereRadius = 102.108
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialCutoutDevilDog_Mat', FirstIndex=0, NumFaces=210 }
+            }
+            NumVerts = 498
+            IndexCount = 630
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialCutoutDevilDog_DiffOpac
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 

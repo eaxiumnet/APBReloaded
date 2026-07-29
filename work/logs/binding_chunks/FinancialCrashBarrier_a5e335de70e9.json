@@ -1,0 +1,85 @@
+{
+  "package": "FinancialCrashBarrier",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\FinancialDistrict\\PropMaterials\\FinancialCrashBarrier.upk",
+  "district": "Financial",
+  "meshes": [
+    {
+      "mesh": "FinancialCrashBarrier_Barrel",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialCrashBarrier_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialCrashBarrier_Barrel_Damage1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialCrashBarrier_Damaged_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialCrashBarrier_Barrel_Damage2",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialCrashBarrier_Damaged_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialCrashBarrier_CatsEye_Green",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialCrashBarrier_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialCrashBarrier_CatsEye_Red",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialCrashBarrier_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialCrashBarrier_Cylindrical",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialCrashBarrier_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialCrashBarrier_Cylindrical_Damage1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialCrashBarrier_Damaged_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|financialcrashbarrier_damaged_mat": [
+      "FinancialCrashBarrier"
+    ],
+    "material3|financialcrashbarrier_mat": [
+      "FinancialCrashBarrier"
+    ]
+  }
+}

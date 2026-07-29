@@ -1,0 +1,3569 @@
+{
+ "weapons": 90,
+ "meshes": 235,
+ "entries": [
+  {
+   "weapon": "Weapon_Armas_AgroSniper",
+   "mesh": "Weapon_Armas_AgroSniper_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Armas_AgroSniper\\Weapon_Armas_AgroSniper_LOD0.obj",
+   "material_slots": [
+    "Weapon_Armas_AgroSniper_Default2_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Armas_AgroSniper\\Weapon_Armas_AgroSniper\\Texture2D\\Weapon_Armas_AgroSniper_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Armas_AgroSniper\\Weapon_Armas_AgroSniper\\Texture2D\\Weapon_Armas_AgroSniper_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Armas_AgroSniper\\Weapon_Armas_AgroSniper\\Texture2D\\Weapon_Armas_AgroSniper_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Armas_AgroSniper"
+  },
+  {
+   "weapon": "Weapon_Armas_LightMachineGun_762",
+   "mesh": "Weapon_LightMachineGun_762_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Armas_LightMachineGun_762\\Weapon_LightMachineGun_762_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Armas_LightMachineGun_762\\Weapon_Armas_LightMachineGun_762\\Texture2D\\Weapon_LightMachineGun_762_DiffSpec.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Armas_LightMachineGun_762\\Weapon_Armas_LightMachineGun_762\\Texture2D\\Weapon_LightMachineGun_762_Norm.tga",
+    "Opacity": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Armas_LightMachineGun_762\\Weapon_Armas_LightMachineGun_762\\Texture2D\\Weapon_LightMachineGun_762_Opac.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Armas_LightMachineGun_762"
+  },
+  {
+   "weapon": "Weapon_Armas_Magnum",
+   "mesh": "Crm_Magnum_Clip_mk3_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Armas_Magnum\\Crm_Magnum_Clip_mk3_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Armas_Magnum\\Weapon_Armas_Magnum\\Texture2D\\Crm_Magnum_Mk3_DiffSpec.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Armas_Magnum\\Weapon_Armas_Magnum\\Texture2D\\Crm_Magnum_Mk3_Norm.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Armas_Magnum"
+  },
+  {
+   "weapon": "Weapon_Armas_Magnum",
+   "mesh": "Crm_Magnum_Mk3_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Armas_Magnum\\Crm_Magnum_Mk3_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Armas_Magnum\\Weapon_Armas_Magnum\\Texture2D\\Crm_Magnum_Mk3_DiffSpec.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Armas_Magnum\\Weapon_Armas_Magnum\\Texture2D\\Crm_Magnum_Mk3_Norm.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Armas_Magnum"
+  },
+  {
+   "weapon": "Weapon_Armas_Magnum",
+   "mesh": "Crm_Magnum_ClipEmpty_mk3_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Armas_Magnum\\Crm_Magnum_ClipEmpty_mk3_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Armas_Magnum\\Weapon_Armas_Magnum\\Texture2D\\Crm_Magnum_Mk3_DiffSpec.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Armas_Magnum\\Weapon_Armas_Magnum\\Texture2D\\Crm_Magnum_Mk3_Norm.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Armas_Magnum"
+  },
+  {
+   "weapon": "Weapon_Armas_Shotgun",
+   "mesh": "Enf_SemiAutomaticRifle_Clip_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Armas_Shotgun\\Enf_SemiAutomaticRifle_Clip_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Armas_Shotgun\\Weapon_Armas_Shotgun\\Texture2D\\Enf_Shotgun_Diffspec.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Armas_Shotgun\\Weapon_Armas_Shotgun\\Texture2D\\Weapon_Armas_Shotgun_Norm.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Armas_Shotgun"
+  },
+  {
+   "weapon": "Weapon_Armas_Shotgun",
+   "mesh": "Weapon_Armas_Shotgun_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Armas_Shotgun\\Weapon_Armas_Shotgun_LOD0.obj",
+   "material_slots": [
+    "Weapon_Armas_Shotgun_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Armas_Shotgun\\Weapon_Armas_Shotgun\\Texture2D\\Weapon_Armas_Shotgun_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Armas_Shotgun\\Weapon_Armas_Shotgun\\Texture2D\\Weapon_Armas_Shotgun_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Armas_Shotgun\\Weapon_Armas_Shotgun\\Texture2D\\Weapon_Armas_Shotgun_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Armas_Shotgun"
+  },
+  {
+   "weapon": "Weapon_Armas_SniperRifle_50Cal",
+   "mesh": "Enf_SniperRifle_Clip_Mk2_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Armas_SniperRifle_50Cal\\Enf_SniperRifle_Clip_Mk2_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Armas_SniperRifle_50Cal\\Weapon_Armas_SniperRifle_50Cal\\Texture2D\\Enf_SniperRifle_Mk2_DiffSpec.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Armas_SniperRifle_50Cal\\Weapon_Armas_SniperRifle_50Cal\\Texture2D\\Enf_SniperRifle_Mk2_Norm.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Armas_SniperRifle_50Cal"
+  },
+  {
+   "weapon": "Weapon_Armas_SniperRifle_50Cal",
+   "mesh": "Enf_SniperRifle_Mk2_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Armas_SniperRifle_50Cal\\Enf_SniperRifle_Mk2_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Armas_SniperRifle_50Cal\\Weapon_Armas_SniperRifle_50Cal\\Texture2D\\Enf_SniperRifle_Mk2_DiffSpec.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Armas_SniperRifle_50Cal\\Weapon_Armas_SniperRifle_50Cal\\Texture2D\\Enf_SniperRifle_Mk2_Norm.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Armas_SniperRifle_50Cal"
+  },
+  {
+   "weapon": "Weapon_Armas_SniperRifle_50Cal",
+   "mesh": "Enf_SniperRifle_ClipEmpty_mk2_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Armas_SniperRifle_50Cal\\Enf_SniperRifle_ClipEmpty_mk2_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Armas_SniperRifle_50Cal\\Weapon_Armas_SniperRifle_50Cal\\Texture2D\\Enf_SniperRifle_Mk2_DiffSpec.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Armas_SniperRifle_50Cal\\Weapon_Armas_SniperRifle_50Cal\\Texture2D\\Enf_SniperRifle_Mk2_Norm.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Armas_SniperRifle_50Cal"
+  },
+  {
+   "weapon": "Weapon_Armas_SubMachineGun_Pitbull",
+   "mesh": "CRM_SubMachineGun_Clip_Mk2_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Armas_SubMachineGun_Pitbull\\CRM_SubMachineGun_Clip_Mk2_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Armas_SubMachineGun_Pitbull\\Weapon_Armas_SubMachineGun_Pitbull\\Texture2D\\CRM_SubMachineGun_Mk2_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Armas_SubMachineGun_Pitbull\\Weapon_Armas_SubMachineGun_Pitbull\\Texture2D\\CRM_SubMachineGun_Mk2_Norm.tga"
+   },
+   "spec_power": "Crm_SubMachineGun_Mk2_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Armas_SubMachineGun_Pitbull"
+  },
+  {
+   "weapon": "Weapon_Armas_SubMachineGun_Pitbull",
+   "mesh": "CRM_SubMachineGun_Mk2_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Armas_SubMachineGun_Pitbull\\CRM_SubMachineGun_Mk2_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Armas_SubMachineGun_Pitbull\\Weapon_Armas_SubMachineGun_Pitbull\\Texture2D\\CRM_SubMachineGun_Mk2_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Armas_SubMachineGun_Pitbull\\Weapon_Armas_SubMachineGun_Pitbull\\Texture2D\\CRM_SubMachineGun_Mk2_Norm.tga"
+   },
+   "spec_power": "Crm_SubMachineGun_Mk2_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Armas_SubMachineGun_Pitbull"
+  },
+  {
+   "weapon": "Weapon_Armas_SubMachineGun_Pitbull",
+   "mesh": "Crm_SubMachineGun_ClipEmpty_mk2_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Armas_SubMachineGun_Pitbull\\Crm_SubMachineGun_ClipEmpty_mk2_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Armas_SubMachineGun_Pitbull\\Weapon_Armas_SubMachineGun_Pitbull\\Texture2D\\CRM_SubMachineGun_Mk2_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Armas_SubMachineGun_Pitbull\\Weapon_Armas_SubMachineGun_Pitbull\\Texture2D\\CRM_SubMachineGun_Mk2_Norm.tga"
+   },
+   "spec_power": "Crm_SubMachineGun_Mk2_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Armas_SubMachineGun_Pitbull"
+  },
+  {
+   "weapon": "Weapon_AssaultRifle",
+   "mesh": "Weapon_AssaultRifle_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_AssaultRifle\\Weapon_AssaultRifle_LOD0.obj",
+   "material_slots": [
+    "Weapon_AssaultRifle_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle\\Weapon_AssaultRifle\\Texture2D\\Weapon_AssaultRifle_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle\\Weapon_AssaultRifle\\Texture2D\\Weapon_AssaultRifle_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle\\Weapon_AssaultRifle\\Texture2D\\Weapon_AssaultRifle_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_AssaultRifle"
+  },
+  {
+   "weapon": "Weapon_AssaultRifle",
+   "mesh": "Weapon_AssaultRifle_Mk2_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_AssaultRifle\\Weapon_AssaultRifle_Mk2_LOD0.obj",
+   "material_slots": [
+    "Weapon_AssaultRifle_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle\\Weapon_AssaultRifle\\Texture2D\\Weapon_AssaultRifle_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle\\Weapon_AssaultRifle\\Texture2D\\Weapon_AssaultRifle_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle\\Weapon_AssaultRifle\\Texture2D\\Weapon_AssaultRifle_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_AssaultRifle"
+  },
+  {
+   "weapon": "Weapon_AssaultRifle",
+   "mesh": "Weapon_AssaultRifle_SolidStock_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_AssaultRifle\\Weapon_AssaultRifle_SolidStock_LOD0.obj",
+   "material_slots": [
+    "Weapon_AssaultRifle_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle\\Weapon_AssaultRifle\\Texture2D\\Weapon_AssaultRifle_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle\\Weapon_AssaultRifle\\Texture2D\\Weapon_AssaultRifle_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle\\Weapon_AssaultRifle\\Texture2D\\Weapon_AssaultRifle_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_AssaultRifle"
+  },
+  {
+   "weapon": "Weapon_AssaultRifle_Apocalypse",
+   "mesh": "Weapon_AssaultRifle_Apocalypse_Death_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_AssaultRifle_Apocalypse\\Weapon_AssaultRifle_Apocalypse_Death_LOD0.obj",
+   "material_slots": [
+    "Weapon_AssaultRifle_Apocalypse_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_Apocalypse\\Weapon_AssaultRifle_Apocalypse\\Texture2D\\Weapon_AssaultRifle_Apocalypse_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_Apocalypse\\Weapon_AssaultRifle_Apocalypse\\Texture2D\\Weapon_AssaultRifle_Apocalypse_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_Apocalypse\\Weapon_AssaultRifle_Apocalypse\\Texture2D\\Weapon_AssaultRifle_Apocalypse_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_AssaultRifle_Apocalypse"
+  },
+  {
+   "weapon": "Weapon_AssaultRifle_Apocalypse",
+   "mesh": "Weapon_AssaultRifle_Apocalypse_Famine_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_AssaultRifle_Apocalypse\\Weapon_AssaultRifle_Apocalypse_Famine_LOD0.obj",
+   "material_slots": [
+    "Weapon_AssaultRifle_Apocalypse_Default_Famine_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_Apocalypse\\Weapon_AssaultRifle_Apocalypse\\Texture2D\\Weapon_AssaultRifle_Apocalypse_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_Apocalypse\\Weapon_AssaultRifle_Apocalypse\\Texture2D\\Weapon_AssaultRifle_Apocalypse_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_Apocalypse\\Weapon_AssaultRifle_Apocalypse\\Texture2D\\Weapon_AssaultRifle_Apocalypse_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_AssaultRifle_Apocalypse"
+  },
+  {
+   "weapon": "Weapon_AssaultRifle_Apocalypse",
+   "mesh": "Weapon_AssaultRifle_Apocalypse_Plague_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_AssaultRifle_Apocalypse\\Weapon_AssaultRifle_Apocalypse_Plague_LOD0.obj",
+   "material_slots": [
+    "Weapon_AssaultRifle_Apocalypse_Default_Plague_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_Apocalypse\\Weapon_AssaultRifle_Apocalypse\\Texture2D\\Weapon_AssaultRifle_Apocalypse_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_Apocalypse\\Weapon_AssaultRifle_Apocalypse\\Texture2D\\Weapon_AssaultRifle_Apocalypse_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_Apocalypse\\Weapon_AssaultRifle_Apocalypse\\Texture2D\\Weapon_AssaultRifle_Apocalypse_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_AssaultRifle_Apocalypse"
+  },
+  {
+   "weapon": "Weapon_AssaultRifle_Apocalypse",
+   "mesh": "Weapon_AssaultRifle_Apocalypse_War_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_AssaultRifle_Apocalypse\\Weapon_AssaultRifle_Apocalypse_War_LOD0.obj",
+   "material_slots": [
+    "Weapon_AssaultRifle_Apocalypse_Default_War_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_Apocalypse\\Weapon_AssaultRifle_Apocalypse\\Texture2D\\Weapon_AssaultRifle_Apocalypse_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_Apocalypse\\Weapon_AssaultRifle_Apocalypse\\Texture2D\\Weapon_AssaultRifle_Apocalypse_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_Apocalypse\\Weapon_AssaultRifle_Apocalypse\\Texture2D\\Weapon_AssaultRifle_Apocalypse_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_AssaultRifle_Apocalypse"
+  },
+  {
+   "weapon": "Weapon_AssaultRifle_ATac",
+   "mesh": "Weapon_AssaultRifle_ATac_Bodyguard_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_AssaultRifle_ATac\\Weapon_AssaultRifle_ATac_Bodyguard_LOD0.obj",
+   "material_slots": [
+    "Weapon_AssaultRifle_ATac_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_ATac\\Weapon_AssaultRifle_ATac\\Texture2D\\Weapon_Atac_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_ATac\\Weapon_AssaultRifle_ATac\\Texture2D\\Weapon_Atac_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_ATac\\Weapon_AssaultRifle_ATac\\Texture2D\\Weapon_Atac_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_AssaultRifle_ATac"
+  },
+  {
+   "weapon": "Weapon_AssaultRifle_ATac",
+   "mesh": "Weapon_AssaultRifle_ATac_Default_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_AssaultRifle_ATac\\Weapon_AssaultRifle_ATac_Default_LOD0.obj",
+   "material_slots": [
+    "Weapon_AssaultRifle_ATac_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_ATac\\Weapon_AssaultRifle_ATac\\Texture2D\\Weapon_Atac_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_ATac\\Weapon_AssaultRifle_ATac\\Texture2D\\Weapon_Atac_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_ATac\\Weapon_AssaultRifle_ATac\\Texture2D\\Weapon_Atac_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_AssaultRifle_ATac"
+  },
+  {
+   "weapon": "Weapon_AssaultRifle_ATac",
+   "mesh": "Weapon_AssaultRifle_ATac_Mercenary_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_AssaultRifle_ATac\\Weapon_AssaultRifle_ATac_Mercenary_LOD0.obj",
+   "material_slots": [
+    "Weapon_AssaultRifle_ATac_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_ATac\\Weapon_AssaultRifle_ATac\\Texture2D\\Weapon_Atac_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_ATac\\Weapon_AssaultRifle_ATac\\Texture2D\\Weapon_Atac_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_ATac\\Weapon_AssaultRifle_ATac\\Texture2D\\Weapon_Atac_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_AssaultRifle_ATac"
+  },
+  {
+   "weapon": "Weapon_AssaultRifle_ATac",
+   "mesh": "Weapon_AssaultRifle_ATac_Watchman_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_AssaultRifle_ATac\\Weapon_AssaultRifle_ATac_Watchman_LOD0.obj",
+   "material_slots": [
+    "Weapon_AssaultRifle_ATac_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_ATac\\Weapon_AssaultRifle_ATac\\Texture2D\\Weapon_Atac_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_ATac\\Weapon_AssaultRifle_ATac\\Texture2D\\Weapon_Atac_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_ATac\\Weapon_AssaultRifle_ATac\\Texture2D\\Weapon_Atac_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_AssaultRifle_ATac"
+  },
+  {
+   "weapon": "Weapon_AssaultRifle_COBR-A",
+   "mesh": "Weapon_AssaultRifle_COBR-A_Base_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_AssaultRifle_COBR-A\\Weapon_AssaultRifle_COBR-A_Base_LOD0.obj",
+   "material_slots": [
+    "Weapon_AssaultRifle_COBR-A_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_COBR-A\\Weapon_AssaultRifle_COBR-A\\Texture2D\\COBR-A_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_COBR-A\\Weapon_AssaultRifle_COBR-A\\Texture2D\\COBR-A_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_COBR-A\\Weapon_AssaultRifle_COBR-A\\Texture2D\\COBR-A_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_AssaultRifle_COBR-A"
+  },
+  {
+   "weapon": "Weapon_AssaultRifle_COBR-A",
+   "mesh": "Weapon_AssaultRifle_COBR-A_Scoped_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_AssaultRifle_COBR-A\\Weapon_AssaultRifle_COBR-A_Scoped_LOD0.obj",
+   "material_slots": [
+    "Weapon_AssaultRifle_COBR-A_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_COBR-A\\Weapon_AssaultRifle_COBR-A\\Texture2D\\COBR-A_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_COBR-A\\Weapon_AssaultRifle_COBR-A\\Texture2D\\COBR-A_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_COBR-A\\Weapon_AssaultRifle_COBR-A\\Texture2D\\COBR-A_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_AssaultRifle_COBR-A"
+  },
+  {
+   "weapon": "Weapon_AssaultRifle_CR5",
+   "mesh": "Weapon_AssaultRifle_CR5_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_AssaultRifle_CR5\\Weapon_AssaultRifle_CR5_LOD0.obj",
+   "material_slots": [
+    "Weapon_AssaultRifle_CR5_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_CR5\\Weapon_AssaultRifle_CR5\\Texture2D\\Weapon_AssaultRifle_CR5_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_CR5\\Weapon_AssaultRifle_CR5\\Texture2D\\Weapon_AssaultRifle_CR5_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_CR5\\Weapon_AssaultRifle_CR5\\Texture2D\\Weapon_AssaultRifle_CR5_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_AssaultRifle_CR5"
+  },
+  {
+   "weapon": "Weapon_AssaultRifle_Fanatic",
+   "mesh": "Weapon_AssaultRifle_Fanatic_Base_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_AssaultRifle_Fanatic\\Weapon_AssaultRifle_Fanatic_Base_LOD0.obj",
+   "material_slots": [
+    "Weapon_AssaultRifle_Fanatic_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_Fanatic\\Weapon_AssaultRifle_Fanatic\\Texture2D\\Weapon_AssaultRifle_Fantic_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_Fanatic\\Weapon_AssaultRifle_Fanatic\\Texture2D\\Weapon_AssaultRifle_Fantic_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_Fanatic\\Weapon_AssaultRifle_Fanatic\\Texture2D\\Weapon_AssaultRifle_Fantic_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_AssaultRifle_Fanatic"
+  },
+  {
+   "weapon": "Weapon_AssaultRifle_Fanatic",
+   "mesh": "Weapon_AssaultRifle_Fanatic_Bipod_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_AssaultRifle_Fanatic\\Weapon_AssaultRifle_Fanatic_Bipod_LOD0.obj",
+   "material_slots": [
+    "Weapon_AssaultRifle_Fanatic_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_Fanatic\\Weapon_AssaultRifle_Fanatic\\Texture2D\\Weapon_AssaultRifle_Fantic_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_Fanatic\\Weapon_AssaultRifle_Fanatic\\Texture2D\\Weapon_AssaultRifle_Fantic_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_Fanatic\\Weapon_AssaultRifle_Fanatic\\Texture2D\\Weapon_AssaultRifle_Fantic_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_AssaultRifle_Fanatic"
+  },
+  {
+   "weapon": "Weapon_AssaultRifle_Fanatic",
+   "mesh": "Weapon_AssaultRifle_Fanatic_Sight_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_AssaultRifle_Fanatic\\Weapon_AssaultRifle_Fanatic_Sight_LOD0.obj",
+   "material_slots": [
+    "Weapon_AssaultRifle_Fanatic_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_Fanatic\\Weapon_AssaultRifle_Fanatic\\Texture2D\\Weapon_AssaultRifle_Fantic_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_Fanatic\\Weapon_AssaultRifle_Fanatic\\Texture2D\\Weapon_AssaultRifle_Fantic_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_Fanatic\\Weapon_AssaultRifle_Fanatic\\Texture2D\\Weapon_AssaultRifle_Fantic_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_AssaultRifle_Fanatic"
+  },
+  {
+   "weapon": "Weapon_AssaultRifle_FAR",
+   "mesh": "Weapon_AssaultRifle_FAR_Base_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_AssaultRifle_FAR\\Weapon_AssaultRifle_FAR_Base_LOD0.obj",
+   "material_slots": [
+    "Weapon_AssaultRifle_FAR_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_FAR\\Weapon_AssaultRifle_FAR\\Texture2D\\Weapon_AssaultRifle_FAR_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_FAR\\Weapon_AssaultRifle_FAR\\Texture2D\\Weapon_AssaultRifle_FAR_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_FAR\\Weapon_AssaultRifle_FAR\\Texture2D\\Weapon_AssaultRifle_FAR_Diffuse.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_AssaultRifle_FAR"
+  },
+  {
+   "weapon": "Weapon_AssaultRifle_FAR",
+   "mesh": "Weapon_AssaultRifle_FAR_Sight_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_AssaultRifle_FAR\\Weapon_AssaultRifle_FAR_Sight_LOD0.obj",
+   "material_slots": [
+    "Weapon_AssaultRifle_FAR_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_FAR\\Weapon_AssaultRifle_FAR\\Texture2D\\Weapon_AssaultRifle_FAR_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_FAR\\Weapon_AssaultRifle_FAR\\Texture2D\\Weapon_AssaultRifle_FAR_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_FAR\\Weapon_AssaultRifle_FAR\\Texture2D\\Weapon_AssaultRifle_FAR_Diffuse.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_AssaultRifle_FAR"
+  },
+  {
+   "weapon": "Weapon_AssaultRifle_FAR",
+   "mesh": "Weapon_AssaultRifle_FAR_Stock_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_AssaultRifle_FAR\\Weapon_AssaultRifle_FAR_Stock_LOD0.obj",
+   "material_slots": [
+    "Weapon_AssaultRifle_FAR_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_FAR\\Weapon_AssaultRifle_FAR\\Texture2D\\Weapon_AssaultRifle_FAR_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_FAR\\Weapon_AssaultRifle_FAR\\Texture2D\\Weapon_AssaultRifle_FAR_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_FAR\\Weapon_AssaultRifle_FAR\\Texture2D\\Weapon_AssaultRifle_FAR_Diffuse.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_AssaultRifle_FAR"
+  },
+  {
+   "weapon": "Weapon_AssaultRifle_NTEC-7",
+   "mesh": "Weapon_AssaultRifle_NTEC-7_Compact_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_AssaultRifle_NTEC-7\\Weapon_AssaultRifle_NTEC-7_Compact_LOD0.obj",
+   "material_slots": [
+    "Weapon_AssaultRifle_NTEC-7_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_NTEC-7\\Weapon_AssaultRifle_NTEC-7\\Texture2D\\Weapon_AssaultRifle_NTEC-7_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_NTEC-7\\Weapon_AssaultRifle_NTEC-7\\Texture2D\\Weapon_AssaultRifle_NTEC-7_NRM.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_NTEC-7\\Weapon_AssaultRifle_NTEC-7\\Texture2D\\Weapon_AssaultRifle_NTEC-7_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_AssaultRifle_NTEC-7"
+  },
+  {
+   "weapon": "Weapon_AssaultRifle_NTEC-7",
+   "mesh": "Weapon_AssaultRifle_NTEC-7_Standard_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_AssaultRifle_NTEC-7\\Weapon_AssaultRifle_NTEC-7_Standard_LOD0.obj",
+   "material_slots": [
+    "Weapon_AssaultRifle_NTEC-7_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_NTEC-7\\Weapon_AssaultRifle_NTEC-7\\Texture2D\\Weapon_AssaultRifle_NTEC-7_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_NTEC-7\\Weapon_AssaultRifle_NTEC-7\\Texture2D\\Weapon_AssaultRifle_NTEC-7_NRM.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_NTEC-7\\Weapon_AssaultRifle_NTEC-7\\Texture2D\\Weapon_AssaultRifle_NTEC-7_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_AssaultRifle_NTEC-7"
+  },
+  {
+   "weapon": "Weapon_AssaultRifle_Raptor",
+   "mesh": "Weapon_AssaultRifle_Raptor_Base_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_AssaultRifle_Raptor\\Weapon_AssaultRifle_Raptor_Base_LOD0.obj",
+   "material_slots": [
+    "Weapon_AssaultRifle_Raptor_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_Raptor\\Weapon_AssaultRifle_Raptor\\Texture2D\\weapon_assaultrifle_raptor_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_Raptor\\Weapon_AssaultRifle_Raptor\\Texture2D\\weapon_assaultrifle_raptor_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_Raptor\\Weapon_AssaultRifle_Raptor\\Texture2D\\weapon_assaultrifle_raptor_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_AssaultRifle_Raptor"
+  },
+  {
+   "weapon": "Weapon_AssaultRifle_Raptor",
+   "mesh": "Weapon_AssaultRifle_Raptor_Foregrip_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_AssaultRifle_Raptor\\Weapon_AssaultRifle_Raptor_Foregrip_LOD0.obj",
+   "material_slots": [
+    "Weapon_AssaultRifle_Raptor_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_Raptor\\Weapon_AssaultRifle_Raptor\\Texture2D\\weapon_assaultrifle_raptor_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_Raptor\\Weapon_AssaultRifle_Raptor\\Texture2D\\weapon_assaultrifle_raptor_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_Raptor\\Weapon_AssaultRifle_Raptor\\Texture2D\\weapon_assaultrifle_raptor_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_AssaultRifle_Raptor"
+  },
+  {
+   "weapon": "Weapon_AssaultRifle_Raptor",
+   "mesh": "Weapon_AssaultRifle_Raptor_Sight_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_AssaultRifle_Raptor\\Weapon_AssaultRifle_Raptor_Sight_LOD0.obj",
+   "material_slots": [
+    "Weapon_AssaultRifle_Raptor_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_Raptor\\Weapon_AssaultRifle_Raptor\\Texture2D\\weapon_assaultrifle_raptor_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_Raptor\\Weapon_AssaultRifle_Raptor\\Texture2D\\weapon_assaultrifle_raptor_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AssaultRifle_Raptor\\Weapon_AssaultRifle_Raptor\\Texture2D\\weapon_assaultrifle_raptor_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_AssaultRifle_Raptor"
+  },
+  {
+   "weapon": "Weapon_AssaultRifle_VAS",
+   "mesh": "Weapon_LightMachineGun_VASSW2_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_AssaultRifle_VAS\\Weapon_LightMachineGun_VASSW2_LOD0.obj",
+   "material_slots": [],
+   "textures": {},
+   "spec_power": "",
+   "external_textures": true,
+   "dest": "/Game/Imported/Weapons/Weapon_AssaultRifle_VAS"
+  },
+  {
+   "weapon": "Weapon_AssaultRifle_VAS",
+   "mesh": "Weapon_Rifle_VASC2_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_AssaultRifle_VAS\\Weapon_Rifle_VASC2_LOD0.obj",
+   "material_slots": [],
+   "textures": {},
+   "spec_power": "",
+   "external_textures": true,
+   "dest": "/Game/Imported/Weapons/Weapon_AssaultRifle_VAS"
+  },
+  {
+   "weapon": "Weapon_AssaultRifle_VAS",
+   "mesh": "Weapon_Rifle_VASR2_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_AssaultRifle_VAS\\Weapon_Rifle_VASR2_LOD0.obj",
+   "material_slots": [],
+   "textures": {},
+   "spec_power": "",
+   "external_textures": true,
+   "dest": "/Game/Imported/Weapons/Weapon_AssaultRifle_VAS"
+  },
+  {
+   "weapon": "Weapon_AssaultRifle_VAS",
+   "mesh": "Weapon_SniperRifle_VASPR2_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_AssaultRifle_VAS\\Weapon_SniperRifle_VASPR2_LOD0.obj",
+   "material_slots": [],
+   "textures": {},
+   "spec_power": "",
+   "external_textures": true,
+   "dest": "/Game/Imported/Weapons/Weapon_AssaultRifle_VAS"
+  },
+  {
+   "weapon": "Weapon_AutomaticShotgun",
+   "mesh": "Weapon_AutomaticShotgun_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_AutomaticShotgun\\Weapon_AutomaticShotgun_LOD0.obj",
+   "material_slots": [
+    "Weapon_AutomaticShotgun_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AutomaticShotgun\\Weapon_AutomaticShotgun\\Texture2D\\Weapon_AutomaticShotgun_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AutomaticShotgun\\Weapon_AutomaticShotgun\\Texture2D\\Weapon_AutomaticShotgun_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AutomaticShotgun\\Weapon_AutomaticShotgun\\Texture2D\\Weapon_AutomaticShotgun_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_AutomaticShotgun"
+  },
+  {
+   "weapon": "Weapon_AutomaticShotgun",
+   "mesh": "Weapon_AutomaticShotgun_Ogre_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_AutomaticShotgun\\Weapon_AutomaticShotgun_Ogre_LOD0.obj",
+   "material_slots": [
+    "Weapon_AutomaticShotgun_Ogre_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AutomaticShotgun\\Weapon_AutomaticShotgun\\Texture2D\\Weapon_AutomaticShotgun_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AutomaticShotgun\\Weapon_AutomaticShotgun\\Texture2D\\Weapon_AutomaticShotgun_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_AutomaticShotgun\\Weapon_AutomaticShotgun\\Texture2D\\Weapon_AutomaticShotgun_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_AutomaticShotgun"
+  },
+  {
+   "weapon": "Weapon_BaseAssaultRifle",
+   "mesh": "Weapon_BaseAssaultRifle_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_BaseAssaultRifle\\Weapon_BaseAssaultRifle_LOD0.obj",
+   "material_slots": [
+    "Weapon_BaseAssaultRifle_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_BaseAssaultRifle\\Weapon_BaseAssaultRifle\\Texture2D\\Weapon_BaseAssaultRifle_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_BaseAssaultRifle\\Weapon_BaseAssaultRifle\\Texture2D\\Weapon_BaseAssaultRifle_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_BaseAssaultRifle\\Weapon_BaseAssaultRifle\\Texture2D\\Weapon_BaseAssaultRifle_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_BaseAssaultRifle"
+  },
+  {
+   "weapon": "Weapon_BurstFirePistol",
+   "mesh": "OLD_Weapon_BurstFirePistol_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_BurstFirePistol\\OLD_Weapon_BurstFirePistol_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_BurstFirePistol\\Weapon_BurstFirePistol\\Texture2D\\OLD_Weapon_BurstFirePistol_DiffSpec.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_BurstFirePistol\\Weapon_BurstFirePistol\\Texture2D\\OLD_Weapon_BurstFirePistol_Norm.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_BurstFirePistol"
+  },
+  {
+   "weapon": "Weapon_BurstFirePistol",
+   "mesh": "OLD_Weapon_BurstFirePistol_M9_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_BurstFirePistol\\OLD_Weapon_BurstFirePistol_M9_LOD0.obj",
+   "material_slots": [
+    "Weapon_BurstFirePistol_Militant_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_BurstFirePistol\\Weapon_BurstFirePistol\\Texture2D\\Weapon_BurstFirePistol_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_BurstFirePistol\\Weapon_BurstFirePistol\\Texture2D\\Weapon_BurstFirePistol_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_BurstFirePistol\\Weapon_BurstFirePistol\\Texture2D\\Weapon_BurstFirePistol_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_BurstFirePistol"
+  },
+  {
+   "weapon": "Weapon_BurstFirePistol",
+   "mesh": "Weapon_BurstFirePistol_Base_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_BurstFirePistol\\Weapon_BurstFirePistol_Base_LOD0.obj",
+   "material_slots": [
+    "Weapon_BurstFirePistol_DigiBlueCamo_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_BurstFirePistol\\Weapon_BurstFirePistol\\Texture2D\\Weapon_BurstFirePistol_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_BurstFirePistol\\Weapon_BurstFirePistol\\Texture2D\\Weapon_BurstFirePistol_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_BurstFirePistol\\Weapon_BurstFirePistol\\Texture2D\\Weapon_BurstFirePistol_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_BurstFirePistol"
+  },
+  {
+   "weapon": "Weapon_BurstFirePistol",
+   "mesh": "Weapon_BurstFirePistol_M9_Legendary_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_BurstFirePistol\\Weapon_BurstFirePistol_M9_Legendary_LOD0.obj",
+   "material_slots": [
+    "Weapon_BurstFirePistol_Militant_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_BurstFirePistol\\Weapon_BurstFirePistol\\Texture2D\\Weapon_BurstFirePistol_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_BurstFirePistol\\Weapon_BurstFirePistol\\Texture2D\\Weapon_BurstFirePistol_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_BurstFirePistol\\Weapon_BurstFirePistol\\Texture2D\\Weapon_BurstFirePistol_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_BurstFirePistol"
+  },
+  {
+   "weapon": "Weapon_BurstFirePistol",
+   "mesh": "Weapon_BurstFirePistol_M9_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_BurstFirePistol\\Weapon_BurstFirePistol_M9_LOD0.obj",
+   "material_slots": [
+    "Weapon_BurstFirePistol_Militant_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_BurstFirePistol\\Weapon_BurstFirePistol\\Texture2D\\Weapon_BurstFirePistol_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_BurstFirePistol\\Weapon_BurstFirePistol\\Texture2D\\Weapon_BurstFirePistol_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_BurstFirePistol\\Weapon_BurstFirePistol\\Texture2D\\Weapon_BurstFirePistol_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_BurstFirePistol"
+  },
+  {
+   "weapon": "Weapon_BurstFirePistol",
+   "mesh": "Weapon_BurstFirePistol_Sight_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_BurstFirePistol\\Weapon_BurstFirePistol_Sight_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_BurstFirePistol\\Weapon_BurstFirePistol\\Texture2D\\OLD_Weapon_BurstFirePistol_DiffSpec.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_BurstFirePistol\\Weapon_BurstFirePistol\\Texture2D\\OLD_Weapon_BurstFirePistol_Norm.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_BurstFirePistol"
+  },
+  {
+   "weapon": "Weapon_BurstFirePistol",
+   "mesh": "Weapon_BurstFirePistol_Silencer_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_BurstFirePistol\\Weapon_BurstFirePistol_Silencer_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_BurstFirePistol\\Weapon_BurstFirePistol\\Texture2D\\OLD_Weapon_BurstFirePistol_DiffSpec.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_BurstFirePistol\\Weapon_BurstFirePistol\\Texture2D\\OLD_Weapon_BurstFirePistol_Norm.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_BurstFirePistol"
+  },
+  {
+   "weapon": "Weapon_BurstFireRifle",
+   "mesh": "Weapon_BurstFireCarbine_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_BurstFireRifle\\Weapon_BurstFireCarbine_LOD0.obj",
+   "material_slots": [
+    "Weapon_BurstFireCarbine_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_BurstFireRifle\\Weapon_BurstFireRifle\\Texture2D\\Weapon_BurstFireRifle_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_BurstFireRifle\\Weapon_BurstFireRifle\\Texture2D\\Weapon_BurstFireRifle_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_BurstFireRifle\\Weapon_BurstFireRifle\\Texture2D\\Weapon_BurstFireRifle_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_BurstFireRifle"
+  },
+  {
+   "weapon": "Weapon_BurstFireRifle",
+   "mesh": "Weapon_BurstFireRifle_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_BurstFireRifle\\Weapon_BurstFireRifle_LOD0.obj",
+   "material_slots": [
+    "Weapon_BurstFireRifle_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_BurstFireRifle\\Weapon_BurstFireRifle\\Texture2D\\Weapon_BurstFireRifle_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_BurstFireRifle\\Weapon_BurstFireRifle\\Texture2D\\Weapon_BurstFireRifle_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_BurstFireRifle\\Weapon_BurstFireRifle\\Texture2D\\Weapon_BurstFireRifle_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_BurstFireRifle"
+  },
+  {
+   "weapon": "Weapon_CAP40",
+   "mesh": "Weapon_CAP40_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_CAP40\\Weapon_CAP40_LOD0.obj",
+   "material_slots": [
+    "Weapon_CAP40_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_CAP40\\Weapon_CAP40\\Texture2D\\Weapon_CAP40_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_CAP40\\Weapon_CAP40\\Texture2D\\Weapon_CAP40_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_CAP40\\Weapon_CAP40\\Texture2D\\Weapon_CAP40_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_CAP40"
+  },
+  {
+   "weapon": "Weapon_CAP40",
+   "mesh": "Weapon_SMG_CAP40_Compact_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_CAP40\\Weapon_SMG_CAP40_Compact_LOD0.obj",
+   "material_slots": [
+    "Weapon_CAP40_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_CAP40\\Weapon_CAP40\\Texture2D\\Weapon_CAP40_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_CAP40\\Weapon_CAP40\\Texture2D\\Weapon_CAP40_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_CAP40\\Weapon_CAP40\\Texture2D\\Weapon_CAP40_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_CAP40"
+  },
+  {
+   "weapon": "Weapon_Carbine",
+   "mesh": "Weapon_Carbine_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Carbine\\Weapon_Carbine_LOD0.obj",
+   "material_slots": [
+    "Weapon_Carbine_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Carbine\\Weapon_Carbine\\Texture2D\\Weapon_Carbine_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Carbine\\Weapon_Carbine\\Texture2D\\Weapon_Carbine_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Carbine\\Weapon_Carbine\\Texture2D\\Weapon_Carbine_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Carbine"
+  },
+  {
+   "weapon": "Weapon_Colby_Commander",
+   "mesh": "Weapon_Colby_Commander_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Colby_Commander\\Weapon_Colby_Commander_LOD0.obj",
+   "material_slots": [
+    "Weapon_Colby_Commander_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Colby_Commander\\Weapon_Colby_Commander\\Texture2D\\Colby_Commander_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Colby_Commander\\Weapon_Colby_Commander\\Texture2D\\Colby_Commander_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Colby_Commander\\Weapon_Colby_Commander\\Texture2D\\Colby_Commander_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Colby_Commander"
+  },
+  {
+   "weapon": "Weapon_Colby_Commander",
+   "mesh": "Weapon_Colby_Joker_Commander_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Colby_Commander\\Weapon_Colby_Joker_Commander_LOD0.obj",
+   "material_slots": [
+    "Weapon_Colby_Commander_Joker_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Colby_Commander\\Weapon_Colby_Commander\\Texture2D\\Colby_Commander_Joker_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Colby_Commander\\Weapon_Colby_Commander\\Texture2D\\Colby_Commander_Joker_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Colby_Commander\\Weapon_Colby_Commander\\Texture2D\\Colby_Commander_Joker_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Colby_Commander"
+  },
+  {
+   "weapon": "Weapon_ColbyClassic",
+   "mesh": "Weapon_ColbyClassic_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_ColbyClassic\\Weapon_ColbyClassic_LOD0.obj",
+   "material_slots": [
+    "Weapon_ColbyClassic_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_ColbyClassic\\Weapon_ColbyClassic\\Texture2D\\Weapon_ColbyClassic_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_ColbyClassic\\Weapon_ColbyClassic\\Texture2D\\Weapon_ColbyClassic_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_ColbyClassic\\Weapon_ColbyClassic\\Texture2D\\Weapon_ColbyClassic_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_ColbyClassic"
+  },
+  {
+   "weapon": "Weapon_ConcussionGrenade",
+   "mesh": "Weapon_ConcussionGrenade_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_ConcussionGrenade\\Weapon_ConcussionGrenade_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_ConcussionGrenade\\Weapon_ConcussionGrenade\\Texture2D\\Weapon_ConcussionGrenade_DiffSpec.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_ConcussionGrenade\\Weapon_ConcussionGrenade\\Texture2D\\Weapon_ConcussionGrenade_Norm.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_ConcussionGrenade"
+  },
+  {
+   "weapon": "Weapon_ConcussionGrenade",
+   "mesh": "Weapon_ConcussionGrenade_Thrown_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_ConcussionGrenade\\Weapon_ConcussionGrenade_Thrown_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_ConcussionGrenade\\Weapon_ConcussionGrenade\\Texture2D\\Weapon_ConcussionGrenade_DiffSpec.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_ConcussionGrenade\\Weapon_ConcussionGrenade\\Texture2D\\Weapon_ConcussionGrenade_Norm.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_ConcussionGrenade"
+  },
+  {
+   "weapon": "Weapon_CrowdControlGun",
+   "mesh": "Weapon_CrowdControlGun_Clip",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_CrowdControlGun\\Weapon_CrowdControlGun_Clip.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_CrowdControlGun\\Weapon_CrowdControlGun\\Texture2D\\Weapon_CrowdControlGun_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_CrowdControlGun\\Weapon_CrowdControlGun\\Texture2D\\Weapon_CrowdControlGun_Norm.tga",
+    "Opacity": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_CrowdControlGun\\Weapon_CrowdControlGun\\Texture2D\\Weapon_CrowdControlGun_Opac.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_CrowdControlGun"
+  },
+  {
+   "weapon": "Weapon_CrowdControlGun",
+   "mesh": "Weapon_CrowdControlGun_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_CrowdControlGun\\Weapon_CrowdControlGun_LOD0.obj",
+   "material_slots": [
+    "Weapon_CrowdControlGun_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_CrowdControlGun\\Weapon_CrowdControlGun\\Texture2D\\Weapon_CrowdControlGun_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_CrowdControlGun\\Weapon_CrowdControlGun\\Texture2D\\Weapon_CrowdControlGun_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_CrowdControlGun\\Weapon_CrowdControlGun\\Texture2D\\Weapon_CrowdControlGun_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_CrowdControlGun"
+  },
+  {
+   "weapon": "Weapon_DartGun",
+   "mesh": "Weapon_DartGun_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_DartGun\\Weapon_DartGun_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_DartGun\\Weapon_DartGun\\Texture2D\\Weapon_DartGun_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_DartGun\\Weapon_DartGun\\Texture2D\\Weapon_DartGun_Norm.tga"
+   },
+   "spec_power": "Weapon_DartGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_DartGun"
+  },
+  {
+   "weapon": "Weapon_EightBall",
+   "mesh": "Weapon_EightBall_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_EightBall\\Weapon_EightBall_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_EightBall\\Weapon_EightBall\\Texture2D\\Weapon_EightBall_Diff.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_EightBall"
+  },
+  {
+   "weapon": "Weapon_EightBall",
+   "mesh": "Weapon_EightBall_Thrown_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_EightBall\\Weapon_EightBall_Thrown_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_EightBall\\Weapon_EightBall\\Texture2D\\Weapon_EightBall_Diff.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_EightBall"
+  },
+  {
+   "weapon": "Weapon_EightBall",
+   "mesh": "EightBall_VFXMesh_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_EightBall\\EightBall_VFXMesh_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_EightBall\\Weapon_EightBall\\Texture2D\\Weapon_EightBall_Diff.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_EightBall"
+  },
+  {
+   "weapon": "Weapon_EMPGrenade",
+   "mesh": "Weapon_EMPGrenade_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_EMPGrenade\\Weapon_EMPGrenade_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_EMPGrenade\\Weapon_EMPGrenade\\Texture2D\\Weapon_EMPGrenade_DiffSpec.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_EMPGrenade\\Weapon_EMPGrenade\\Texture2D\\Weapon_EMPGrenade_Norm.tga",
+    "Emissive": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_EMPGrenade\\Weapon_EMPGrenade\\Texture2D\\Weapon_EMPGrenade_Emissive.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_EMPGrenade"
+  },
+  {
+   "weapon": "Weapon_EMPGrenade",
+   "mesh": "Weapon_EMPGrenade_Thrown_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_EMPGrenade\\Weapon_EMPGrenade_Thrown_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_EMPGrenade\\Weapon_EMPGrenade\\Texture2D\\Weapon_EMPGrenade_DiffSpec.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_EMPGrenade\\Weapon_EMPGrenade\\Texture2D\\Weapon_EMPGrenade_Norm.tga",
+    "Emissive": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_EMPGrenade\\Weapon_EMPGrenade\\Texture2D\\Weapon_EMPGrenade_Emissive.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_EMPGrenade"
+  },
+  {
+   "weapon": "Weapon_Explosive_AAEPD",
+   "mesh": "Weapon_Explosive_AAEPD_Base_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Explosive_AAEPD\\Weapon_Explosive_AAEPD_Base_LOD0.obj",
+   "material_slots": [
+    "Weapon_Material_Master_Default_MAT_INST"
+   ],
+   "textures": {
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Explosive_AAEPD\\Weapon_Explosive_AAEPD\\Texture2D\\Weapon_Explosive_AAEPD_Spec.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Explosive_AAEPD"
+  },
+  {
+   "weapon": "Weapon_Explosive_AAPED",
+   "mesh": "Weapon_Explosive_AAEPD_Base_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Explosive_AAPED\\Weapon_Explosive_AAEPD_Base_LOD0.obj",
+   "material_slots": [
+    "Weapon_Material_Master_Default_MAT_INST"
+   ],
+   "textures": {
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Explosive_AAPED\\Weapon_Explosive_AAPED\\Texture2D\\Weapon_Explosive_AAEPD_Spec.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Explosive_AAPED"
+  },
+  {
+   "weapon": "Weapon_Explosive_EOL",
+   "mesh": "Weapon_Explosive_EOL_Base_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Explosive_EOL\\Weapon_Explosive_EOL_Base_LOD0.obj",
+   "material_slots": [
+    "Weapon_Explosive_EOL_DefaultAlt_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Explosive_EOL\\Weapon_Explosive_EOL\\Texture2D\\Weapon_Explosive_EOL_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Explosive_EOL\\Weapon_Explosive_EOL\\Texture2D\\Weapon_Explosive_EOL_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Explosive_EOL\\Weapon_Explosive_EOL\\Texture2D\\Weapon_Explosive_EOL_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Explosive_EOL"
+  },
+  {
+   "weapon": "Weapon_Explosive_EOL",
+   "mesh": "Weapon_Explosive_EOL_Sight_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Explosive_EOL\\Weapon_Explosive_EOL_Sight_LOD0.obj",
+   "material_slots": [
+    "Weapon_Explosive_EOL_DefaultAlt_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Explosive_EOL\\Weapon_Explosive_EOL\\Texture2D\\Weapon_Explosive_EOL_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Explosive_EOL\\Weapon_Explosive_EOL\\Texture2D\\Weapon_Explosive_EOL_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Explosive_EOL\\Weapon_Explosive_EOL\\Texture2D\\Weapon_Explosive_EOL_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Explosive_EOL"
+  },
+  {
+   "weapon": "Weapon_Explosive_EOL",
+   "mesh": "Weapon_Explosive_EOL_Torch_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Explosive_EOL\\Weapon_Explosive_EOL_Torch_LOD0.obj",
+   "material_slots": [
+    "Weapon_Explosive_EOL_DefaultAlt_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Explosive_EOL\\Weapon_Explosive_EOL\\Texture2D\\Weapon_Explosive_EOL_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Explosive_EOL\\Weapon_Explosive_EOL\\Texture2D\\Weapon_Explosive_EOL_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Explosive_EOL\\Weapon_Explosive_EOL\\Texture2D\\Weapon_Explosive_EOL_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Explosive_EOL"
+  },
+  {
+   "weapon": "Weapon_FlareGun",
+   "mesh": "Weapon_FlareGun_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_FlareGun\\Weapon_FlareGun_LOD0.obj",
+   "material_slots": [
+    "Weapon_FlareGun_Default_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_FlareGun\\Weapon_SnubNoseRevolver\\Texture2D\\Weapon_SnubNoseRevolver_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_FlareGun\\Weapon_SnubNoseRevolver\\Texture2D\\Weapon_SnubNoseRevolver_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_FlareGun\\Weapon_SnubNoseRevolver\\Texture2D\\Weapon_SnubNoseRevolver_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_FlareGun"
+  },
+  {
+   "weapon": "Weapon_FlareGun",
+   "mesh": "Weapon_FlareGun_Projectile_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_FlareGun\\Weapon_FlareGun_Projectile_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_FlareGun\\Weapon_FlareGun\\Texture2D\\Weapon_FlareGun_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_FlareGun\\Weapon_FlareGun\\Texture2D\\Weapon_FlareGun_Norm.tga"
+   },
+   "spec_power": "Weapon_FlareGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_FlareGun"
+  },
+  {
+   "weapon": "Weapon_FlareGun",
+   "mesh": "Weapon_FlareGun_Rocket_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_FlareGun\\Weapon_FlareGun_Rocket_LOD0.obj",
+   "material_slots": [
+    "Weapon_FlareGun_Rocket_MAT_INST",
+    "Weapon_FlareGun_Rocket_MAT_INST",
+    "Weapon_FlareGun_Rocket_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_FlareGun\\Weapon_FlareGun\\Texture2D\\Rocket_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_FlareGun\\Weapon_FlareGun\\Texture2D\\Rocket_normals.tga"
+   },
+   "spec_power": "rocket_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_FlareGun"
+  },
+  {
+   "weapon": "Weapon_FragmentationGrenade",
+   "mesh": "Weapon_FragmentationGrenade_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_FragmentationGrenade\\Weapon_FragmentationGrenade_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_FragmentationGrenade\\Weapon_FragmentationGrenade\\Texture2D\\Weapon_FragmentationGrenade_DiffSpec.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_FragmentationGrenade\\Weapon_FragmentationGrenade\\Texture2D\\Weapon_FragmentationGrenade_Norm.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_FragmentationGrenade"
+  },
+  {
+   "weapon": "Weapon_FragmentationGrenade",
+   "mesh": "Weapon_FragmentationGrenade_Thrown_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_FragmentationGrenade\\Weapon_FragmentationGrenade_Thrown_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_FragmentationGrenade\\Weapon_FragmentationGrenade\\Texture2D\\Weapon_FragmentationGrenade_DiffSpec.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_FragmentationGrenade\\Weapon_FragmentationGrenade\\Texture2D\\Weapon_FragmentationGrenade_Norm.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_FragmentationGrenade"
+  },
+  {
+   "weapon": "Weapon_GrenadeLauncher",
+   "mesh": "Weapon_GrenadeLauncher_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_GrenadeLauncher\\Weapon_GrenadeLauncher_LOD0.obj",
+   "material_slots": [
+    "Weapon_GrenadeLauncher_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_GrenadeLauncher\\Weapon_GrenadeLauncher\\Texture2D\\Weapon_GrenadeLauncher_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_GrenadeLauncher\\Weapon_GrenadeLauncher\\Texture2D\\Weapon_GrenadeLauncher_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_GrenadeLauncher\\Weapon_GrenadeLauncher\\Texture2D\\Weapon_GrenadeLauncher_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_GrenadeLauncher"
+  },
+  {
+   "weapon": "Weapon_GrenadeLauncher",
+   "mesh": "Weapon_GrenadeLauncher_LTL_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_GrenadeLauncher\\Weapon_GrenadeLauncher_LTL_LOD0.obj",
+   "material_slots": [
+    "Weapon_GrenadeLauncher_LTL_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_GrenadeLauncher\\Weapon_GrenadeLauncher\\Texture2D\\Weapon_GrenadeLauncher_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_GrenadeLauncher\\Weapon_GrenadeLauncher\\Texture2D\\Weapon_GrenadeLauncher_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_GrenadeLauncher\\Weapon_GrenadeLauncher\\Texture2D\\Weapon_GrenadeLauncher_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_GrenadeLauncher"
+  },
+  {
+   "weapon": "Weapon_GrenadeLauncher",
+   "mesh": "Weapon_GrenadeLauncher_LTL_Shell_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_GrenadeLauncher\\Weapon_GrenadeLauncher_LTL_Shell_LOD0.obj",
+   "material_slots": [
+    "Weapon_GrenadeLauncher_LTL_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_GrenadeLauncher\\Weapon_GrenadeLauncher\\Texture2D\\Weapon_GrenadeLauncher_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_GrenadeLauncher\\Weapon_GrenadeLauncher\\Texture2D\\Weapon_GrenadeLauncher_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_GrenadeLauncher\\Weapon_GrenadeLauncher\\Texture2D\\Weapon_GrenadeLauncher_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_GrenadeLauncher"
+  },
+  {
+   "weapon": "Weapon_GrenadeLauncher",
+   "mesh": "Weapon_GrenadeLauncher_Shell_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_GrenadeLauncher\\Weapon_GrenadeLauncher_Shell_LOD0.obj",
+   "material_slots": [
+    "Weapon_GrenadeLauncher_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_GrenadeLauncher\\Weapon_GrenadeLauncher\\Texture2D\\Weapon_GrenadeLauncher_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_GrenadeLauncher\\Weapon_GrenadeLauncher\\Texture2D\\Weapon_GrenadeLauncher_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_GrenadeLauncher\\Weapon_GrenadeLauncher\\Texture2D\\Weapon_GrenadeLauncher_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_GrenadeLauncher"
+  },
+  {
+   "weapon": "Weapon_HouseBrick",
+   "mesh": "Weapon_HouseBrick_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_HouseBrick\\Weapon_HouseBrick_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_HouseBrick\\Weapon_HouseBrick\\Texture2D\\Weapon_HouseBrick_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_HouseBrick\\Weapon_HouseBrick\\Texture2D\\Weapon_HouseBrick_Norm.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_HouseBrick"
+  },
+  {
+   "weapon": "Weapon_HouseBrick",
+   "mesh": "Weapon_HouseBrick_Thrown_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_HouseBrick\\Weapon_HouseBrick_Thrown_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_HouseBrick\\Weapon_HouseBrick\\Texture2D\\Weapon_HouseBrick_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_HouseBrick\\Weapon_HouseBrick\\Texture2D\\Weapon_HouseBrick_Norm.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_HouseBrick"
+  },
+  {
+   "weapon": "Weapon_HouseBrick",
+   "mesh": "Weapon_HouseBrick_VFX",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_HouseBrick\\Weapon_HouseBrick_VFX.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_HouseBrick\\Weapon_HouseBrick\\Texture2D\\Weapon_HouseBrick_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_HouseBrick\\Weapon_HouseBrick\\Texture2D\\Weapon_HouseBrick_Norm.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_HouseBrick"
+  },
+  {
+   "weapon": "Weapon_Katana",
+   "mesh": "Weapon_Katana_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Katana\\Weapon_Katana_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Katana\\Weapon_Katana\\Texture2D\\Weapon_Katana_DiffSpec.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Katana\\Weapon_Katana\\Texture2D\\Weapon_Katana_Norm.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Katana"
+  },
+  {
+   "weapon": "Weapon_Katana",
+   "mesh": "Weapon_Katana_Worn_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Katana\\Weapon_Katana_Worn_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Katana\\Weapon_Katana\\Texture2D\\Weapon_Katana_DiffSpec.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Katana\\Weapon_Katana\\Texture2D\\Weapon_Katana_Norm.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Katana"
+  },
+  {
+   "weapon": "Weapon_LightMachineGun_556",
+   "mesh": "Weapon_LightMachineGun_556_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_LightMachineGun_556\\Weapon_LightMachineGun_556_LOD0.obj",
+   "material_slots": [
+    "Weapon_LightMachineGun_556_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LightMachineGun_556\\Weapon_LightMachineGun_556\\Texture2D\\Weapon_LightMachineGun_556_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LightMachineGun_556\\Weapon_LightMachineGun_556\\Texture2D\\Weapon_LightMachineGun_556_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LightMachineGun_556\\Weapon_LightMachineGun_556\\Texture2D\\Weapon_LightMachineGun_556_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_LightMachineGun_556"
+  },
+  {
+   "weapon": "Weapon_LightMachineGun_762",
+   "mesh": "LightMachineGun_Mk2_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_LightMachineGun_762\\LightMachineGun_Mk2_LOD0.obj",
+   "material_slots": [
+    "weapon_lightmachinegun_762_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LightMachineGun_762\\Weapon_LightMachineGun_762\\Texture2D\\Weapon_LightMachineGun_762_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LightMachineGun_762\\Weapon_LightMachineGun_762\\Texture2D\\Weapon_LightMachineGun_762_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LightMachineGun_762\\Weapon_LightMachineGun_762\\Texture2D\\Weapon_LightMachineGun_Textures_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_LightMachineGun_762"
+  },
+  {
+   "weapon": "Weapon_LightMachineGun_762",
+   "mesh": "LightMachineGun_Mk3_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_LightMachineGun_762\\LightMachineGun_Mk3_LOD0.obj",
+   "material_slots": [
+    "weapon_lightmachinegun_762_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LightMachineGun_762\\Weapon_LightMachineGun_762\\Texture2D\\Weapon_LightMachineGun_762_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LightMachineGun_762\\Weapon_LightMachineGun_762\\Texture2D\\Weapon_LightMachineGun_762_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LightMachineGun_762\\Weapon_LightMachineGun_762\\Texture2D\\Weapon_LightMachineGun_Textures_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_LightMachineGun_762"
+  },
+  {
+   "weapon": "Weapon_LightMachineGun_SSW",
+   "mesh": "Weapon_LightMachineGun_SSW_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_LightMachineGun_SSW\\Weapon_LightMachineGun_SSW_LOD0.obj",
+   "material_slots": [
+    "Weapon_LightMachineGun_SSW_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LightMachineGun_SSW\\Weapon_LightMachineGun_SSW\\Texture2D\\Weapon_LightMachineGun_SSW_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LightMachineGun_SSW\\Weapon_LightMachineGun_SSW\\Texture2D\\Weapon_LightMachineGun_SSW_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LightMachineGun_SSW\\Weapon_LightMachineGun_SSW\\Texture2D\\Weapon_LightMachineGun_SSW_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_LightMachineGun_SSW"
+  },
+  {
+   "weapon": "Weapon_LightMachineGun_SSW",
+   "mesh": "Weapon_LightMachineGun_SSW_Version2_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_LightMachineGun_SSW\\Weapon_LightMachineGun_SSW_Version2_LOD0.obj",
+   "material_slots": [
+    "Weapon_LightMachineGun_SSW_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LightMachineGun_SSW\\Weapon_LightMachineGun_SSW\\Texture2D\\Weapon_LightMachineGun_SSW_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LightMachineGun_SSW\\Weapon_LightMachineGun_SSW\\Texture2D\\Weapon_LightMachineGun_SSW_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LightMachineGun_SSW\\Weapon_LightMachineGun_SSW\\Texture2D\\Weapon_LightMachineGun_SSW_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_LightMachineGun_SSW"
+  },
+  {
+   "weapon": "Weapon_LMG_AMG",
+   "mesh": "Weapon_LMG_AMG_Base_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_LMG_AMG\\Weapon_LMG_AMG_Base_LOD0.obj",
+   "material_slots": [
+    "Weapon_Material_Master_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LMG_AMG\\Weapon_LMG_AMG\\Texture2D\\Weapon_LMG_AMG_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LMG_AMG\\Weapon_LMG_AMG\\Texture2D\\Weapon_LMG_AMG_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LMG_AMG\\Weapon_LMG_AMG\\Texture2D\\Weapon_LMG_AMG_Spec.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_LMG_AMG"
+  },
+  {
+   "weapon": "Weapon_LMG_AMG",
+   "mesh": "Weapon_LMG_AMG_Bipod_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_LMG_AMG\\Weapon_LMG_AMG_Bipod_LOD0.obj",
+   "material_slots": [
+    "Weapon_Material_Master_Joker_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LMG_AMG\\Weapon_LMG_AMG\\Texture2D\\Weapon_LMG_AMG_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LMG_AMG\\Weapon_LMG_AMG\\Texture2D\\Weapon_LMG_AMG_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LMG_AMG\\Weapon_LMG_AMG\\Texture2D\\Weapon_LMG_AMG_Spec.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_LMG_AMG"
+  },
+  {
+   "weapon": "Weapon_LMG_AMG",
+   "mesh": "Weapon_LMG_AMG_Compact_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_LMG_AMG\\Weapon_LMG_AMG_Compact_LOD0.obj",
+   "material_slots": [
+    "Weapon_Material_Master_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LMG_AMG\\Weapon_LMG_AMG\\Texture2D\\Weapon_LMG_AMG_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LMG_AMG\\Weapon_LMG_AMG\\Texture2D\\Weapon_LMG_AMG_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LMG_AMG\\Weapon_LMG_AMG\\Texture2D\\Weapon_LMG_AMG_Spec.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_LMG_AMG"
+  },
+  {
+   "weapon": "Weapon_LMG_CAS",
+   "mesh": "Weapon_LMG_CAS_Base_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_LMG_CAS\\Weapon_LMG_CAS_Base_LOD0.obj",
+   "material_slots": [
+    "Weapon_LMG_CAS_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LMG_CAS\\Weapon_LMG_CAS\\Texture2D\\Weapon_LMG_CAS_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LMG_CAS\\Weapon_LMG_CAS\\Texture2D\\Weapon_LMG_CAS_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LMG_CAS\\Weapon_LMG_CAS\\Texture2D\\Weapon_LMG_CAS_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_LMG_CAS"
+  },
+  {
+   "weapon": "Weapon_LMG_CAS",
+   "mesh": "Weapon_LMG_CAS_Handle_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_LMG_CAS\\Weapon_LMG_CAS_Handle_LOD0.obj",
+   "material_slots": [
+    "Weapon_LMG_CAS_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LMG_CAS\\Weapon_LMG_CAS\\Texture2D\\Weapon_LMG_CAS_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LMG_CAS\\Weapon_LMG_CAS\\Texture2D\\Weapon_LMG_CAS_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LMG_CAS\\Weapon_LMG_CAS\\Texture2D\\Weapon_LMG_CAS_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_LMG_CAS"
+  },
+  {
+   "weapon": "Weapon_LMG_CAS",
+   "mesh": "Weapon_LMG_CAS_Sight_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_LMG_CAS\\Weapon_LMG_CAS_Sight_LOD0.obj",
+   "material_slots": [
+    "Weapon_LMG_CAS_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LMG_CAS\\Weapon_LMG_CAS\\Texture2D\\Weapon_LMG_CAS_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LMG_CAS\\Weapon_LMG_CAS\\Texture2D\\Weapon_LMG_CAS_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LMG_CAS\\Weapon_LMG_CAS\\Texture2D\\Weapon_LMG_CAS_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_LMG_CAS"
+  },
+  {
+   "weapon": "Weapon_LMG_Swarm",
+   "mesh": "Weapon_LMG_Swarm_Base_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_LMG_Swarm\\Weapon_LMG_Swarm_Base_LOD0.obj",
+   "material_slots": [
+    "Weapon_LMG_Swarm_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LMG_Swarm\\Weapon_LMG_Swarm\\Texture2D\\Weapon_LMG_Swarm_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LMG_Swarm\\Weapon_LMG_Swarm\\Texture2D\\Weapon_LMG_Swarm_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LMG_Swarm\\Weapon_LMG_Swarm\\Texture2D\\Weapon_LMG_Swarm_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_LMG_Swarm"
+  },
+  {
+   "weapon": "Weapon_LMG_Swarm",
+   "mesh": "Weapon_LMG_Swarm_Handle_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_LMG_Swarm\\Weapon_LMG_Swarm_Handle_LOD0.obj",
+   "material_slots": [
+    "Weapon_LMG_Swarm_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LMG_Swarm\\Weapon_LMG_Swarm\\Texture2D\\Weapon_LMG_Swarm_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LMG_Swarm\\Weapon_LMG_Swarm\\Texture2D\\Weapon_LMG_Swarm_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LMG_Swarm\\Weapon_LMG_Swarm\\Texture2D\\Weapon_LMG_Swarm_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_LMG_Swarm"
+  },
+  {
+   "weapon": "Weapon_LMG_Swarm",
+   "mesh": "Weapon_LMG_Swarm_Sight_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_LMG_Swarm\\Weapon_LMG_Swarm_Sight_LOD0.obj",
+   "material_slots": [
+    "Weapon_LMG_Swarm_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LMG_Swarm\\Weapon_LMG_Swarm\\Texture2D\\Weapon_LMG_Swarm_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LMG_Swarm\\Weapon_LMG_Swarm\\Texture2D\\Weapon_LMG_Swarm_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_LMG_Swarm\\Weapon_LMG_Swarm\\Texture2D\\Weapon_LMG_Swarm_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_LMG_Swarm"
+  },
+  {
+   "weapon": "Weapon_MachinePistol",
+   "mesh": "Weapon_MachinePistol_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_MachinePistol\\Weapon_MachinePistol_LOD0.obj",
+   "material_slots": [
+    "Weapon_MachinePistol_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_MachinePistol\\Weapon_MachinePistol\\Texture2D\\Weapon_MachinePistol_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_MachinePistol\\Weapon_MachinePistol\\Texture2D\\Weapon_MachinePistol_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_MachinePistol\\Weapon_MachinePistol\\Texture2D\\Weapon_MachinePistol_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_MachinePistol"
+  },
+  {
+   "weapon": "Weapon_MachinePistol_PDW",
+   "mesh": "Weapon_MachinePistol_PDW_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_MachinePistol_PDW\\Weapon_MachinePistol_PDW_LOD0.obj",
+   "material_slots": [
+    "Weapon_MachinePistol_PDW_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_MachinePistol_PDW\\Weapon_MachinePistol_PDW\\Texture2D\\Weapon_MachinePistol_PDW_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_MachinePistol_PDW\\Weapon_MachinePistol_PDW\\Texture2D\\Weapon_MachinePistol_PDW_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_MachinePistol_PDW\\Weapon_MachinePistol_PDW\\Texture2D\\Weapon_MachinePistol_PDW_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_MachinePistol_PDW"
+  },
+  {
+   "weapon": "Weapon_Magnum",
+   "mesh": "Weapon_GoldMaster_Magnum_Clip_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Magnum\\Weapon_GoldMaster_Magnum_Clip_LOD0.obj",
+   "material_slots": [
+    "Weapon_GoldMaster_Magnum_MAT"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Magnum\\Weapon_Magnum\\Texture2D\\Weapon_Magnum_DiffSpec.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Magnum\\Weapon_Magnum\\Texture2D\\Weapon_Magnum_Norm.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Magnum"
+  },
+  {
+   "weapon": "Weapon_Magnum",
+   "mesh": "Weapon_GoldMaster_Magnum_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Magnum\\Weapon_GoldMaster_Magnum_LOD0.obj",
+   "material_slots": [
+    "Weapon_GoldMaster_Magnum_MAT"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Magnum\\Weapon_Magnum\\Texture2D\\Weapon_Magnum_DiffSpec.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Magnum\\Weapon_Magnum\\Texture2D\\Weapon_Magnum_Norm.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Magnum"
+  },
+  {
+   "weapon": "Weapon_Magnum",
+   "mesh": "Weapon_Magnum_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Magnum\\Weapon_Magnum_LOD0.obj",
+   "material_slots": [
+    "Weapon_Magnum_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Magnum\\Weapon_Magnum\\Texture2D\\Weapon_Magnum_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Magnum\\Weapon_Magnum\\Texture2D\\Weapon_Magnum_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Magnum\\Weapon_Magnum\\Texture2D\\Weapon_Magnum_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Magnum"
+  },
+  {
+   "weapon": "Weapon_Magnum",
+   "mesh": "Weapon_Retail_Magnum_Clip_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Magnum\\Weapon_Retail_Magnum_Clip_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Magnum\\Weapon_Magnum\\Texture2D\\Weapon_Magnum_DiffSpec.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Magnum\\Weapon_Magnum\\Texture2D\\Weapon_Magnum_Norm.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Magnum"
+  },
+  {
+   "weapon": "Weapon_Magnum",
+   "mesh": "Weapon_Retail_Magnum_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Magnum\\Weapon_Retail_Magnum_LOD0.obj",
+   "material_slots": [
+    "Weapon_Retail_Magnum_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Magnum\\Weapon_Magnum\\Texture2D\\Weapon_Magnum_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Magnum\\Weapon_Magnum\\Texture2D\\Weapon_Magnum_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Magnum\\Weapon_Magnum\\Texture2D\\Weapon_Magnum_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Magnum"
+  },
+  {
+   "weapon": "Weapon_Magnum",
+   "mesh": "Weapon_GoldMaster_Magnum_ClipEmpty_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Magnum\\Weapon_GoldMaster_Magnum_ClipEmpty_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Magnum\\Weapon_Magnum\\Texture2D\\Weapon_Magnum_DiffSpec.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Magnum\\Weapon_Magnum\\Texture2D\\Weapon_Magnum_Norm.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Magnum"
+  },
+  {
+   "weapon": "Weapon_Magnum",
+   "mesh": "Weapon_Retail_Magnum_ClipEmpty_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Magnum\\Weapon_Retail_Magnum_ClipEmpty_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Magnum\\Weapon_Magnum\\Texture2D\\Weapon_Magnum_DiffSpec.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Magnum\\Weapon_Magnum\\Texture2D\\Weapon_Magnum_Norm.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Magnum"
+  },
+  {
+   "weapon": "Weapon_Magnum_Revolver",
+   "mesh": "Weapon_Magnum_Revolver_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Magnum_Revolver\\Weapon_Magnum_Revolver_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Magnum_Revolver\\Weapon_Magnum_Revolver\\Texture2D\\Weapon_Magnum_Revolver_DiffSpec.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Magnum_Revolver\\Weapon_Magnum_Revolver\\Texture2D\\Weapon_Magnum_Revolver_Norm.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Magnum_Revolver"
+  },
+  {
+   "weapon": "Weapon_MobilePhone",
+   "mesh": "MobilePhone_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_MobilePhone\\MobilePhone_LOD0.obj",
+   "material_slots": [],
+   "textures": {},
+   "spec_power": "",
+   "external_textures": true,
+   "dest": "/Game/Imported/Weapons/Weapon_MobilePhone"
+  },
+  {
+   "weapon": "Weapon_ObeyaBattleRifle",
+   "mesh": "Weapon_ObeyaBattleRifle_Base_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_ObeyaBattleRifle\\Weapon_ObeyaBattleRifle_Base_LOD0.obj",
+   "material_slots": [
+    "Weapon_ObeyaBattleRifle_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_ObeyaBattleRifle\\Weapon_ObeyaBattleRifle\\Texture2D\\Weapon_ObeyaBattleRifle_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_ObeyaBattleRifle\\Weapon_ObeyaBattleRifle\\Texture2D\\Weapon_ObeyaBattleRifle_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_ObeyaBattleRifle\\Weapon_ObeyaBattleRifle\\Texture2D\\Weapon_ObeyaBattleRifle_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_ObeyaBattleRifle"
+  },
+  {
+   "weapon": "Weapon_ObeyaBattleRifle",
+   "mesh": "Weapon_ObeyaBattleRifle_Bipod_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_ObeyaBattleRifle\\Weapon_ObeyaBattleRifle_Bipod_LOD0.obj",
+   "material_slots": [
+    "Weapon_ObeyaBattleRifle_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_ObeyaBattleRifle\\Weapon_ObeyaBattleRifle\\Texture2D\\Weapon_ObeyaBattleRifle_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_ObeyaBattleRifle\\Weapon_ObeyaBattleRifle\\Texture2D\\Weapon_ObeyaBattleRifle_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_ObeyaBattleRifle\\Weapon_ObeyaBattleRifle\\Texture2D\\Weapon_ObeyaBattleRifle_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_ObeyaBattleRifle"
+  },
+  {
+   "weapon": "Weapon_ObeyaBattleRifle",
+   "mesh": "Weapon_ObeyaBattleRifle_Stock_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_ObeyaBattleRifle\\Weapon_ObeyaBattleRifle_Stock_LOD0.obj",
+   "material_slots": [
+    "Weapon_ObeyaBattleRifle_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_ObeyaBattleRifle\\Weapon_ObeyaBattleRifle\\Texture2D\\Weapon_ObeyaBattleRifle_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_ObeyaBattleRifle\\Weapon_ObeyaBattleRifle\\Texture2D\\Weapon_ObeyaBattleRifle_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_ObeyaBattleRifle\\Weapon_ObeyaBattleRifle\\Texture2D\\Weapon_ObeyaBattleRifle_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_ObeyaBattleRifle"
+  },
+  {
+   "weapon": "Weapon_PDW57",
+   "mesh": "Weapon_PDW57-S_Base_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_PDW57\\Weapon_PDW57-S_Base_LOD0.obj",
+   "material_slots": [
+    "Weapon_Material_Master_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_PDW57\\Weapon_Rifle_SACR\\Texture2D\\Weapon_Rifle_SACR_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_PDW57\\Weapon_Rifle_SACR\\Texture2D\\Weapon_Rifle_SACR_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_PDW57\\Weapon_Rifle_SACR\\Texture2D\\Weapon_Rifle_SACR_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_PDW57"
+  },
+  {
+   "weapon": "Weapon_PDW57",
+   "mesh": "Weapon_PDW57-S_Scoped_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_PDW57\\Weapon_PDW57-S_Scoped_LOD0.obj",
+   "material_slots": [
+    "Weapon_Material_Master_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_PDW57\\Weapon_Rifle_SACR\\Texture2D\\Weapon_Rifle_SACR_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_PDW57\\Weapon_Rifle_SACR\\Texture2D\\Weapon_Rifle_SACR_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_PDW57\\Weapon_Rifle_SACR\\Texture2D\\Weapon_Rifle_SACR_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_PDW57"
+  },
+  {
+   "weapon": "Weapon_PDW57",
+   "mesh": "Weapon_PDW57-S_Sight_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_PDW57\\Weapon_PDW57-S_Sight_LOD0.obj",
+   "material_slots": [
+    "Weapon_Material_Master_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_PDW57\\Weapon_Rifle_SACR\\Texture2D\\Weapon_Rifle_SACR_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_PDW57\\Weapon_Rifle_SACR\\Texture2D\\Weapon_Rifle_SACR_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_PDW57\\Weapon_Rifle_SACR\\Texture2D\\Weapon_Rifle_SACR_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_PDW57"
+  },
+  {
+   "weapon": "Weapon_PDW57",
+   "mesh": "Weapon_PDW57_Base_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_PDW57\\Weapon_PDW57_Base_LOD0.obj",
+   "material_slots": [
+    "Weapon_Material_Master_DefaultAlt_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_PDW57\\Weapon_Rifle_SACR\\Texture2D\\Weapon_Rifle_SACR_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_PDW57\\Weapon_Rifle_SACR\\Texture2D\\Weapon_Rifle_SACR_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_PDW57\\Weapon_Rifle_SACR\\Texture2D\\Weapon_Rifle_SACR_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_PDW57"
+  },
+  {
+   "weapon": "Weapon_PDW57",
+   "mesh": "Weapon_PDW57_Scoped_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_PDW57\\Weapon_PDW57_Scoped_LOD0.obj",
+   "material_slots": [
+    "Weapon_Material_Master_DefaultAlt_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_PDW57\\Weapon_Rifle_SACR\\Texture2D\\Weapon_Rifle_SACR_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_PDW57\\Weapon_Rifle_SACR\\Texture2D\\Weapon_Rifle_SACR_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_PDW57\\Weapon_Rifle_SACR\\Texture2D\\Weapon_Rifle_SACR_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_PDW57"
+  },
+  {
+   "weapon": "Weapon_PDW57",
+   "mesh": "Weapon_PDW57_Silenced_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_PDW57\\Weapon_PDW57_Silenced_LOD0.obj",
+   "material_slots": [
+    "Weapon_Material_Master_DefaultAlt_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_PDW57\\Weapon_Rifle_SACR\\Texture2D\\Weapon_Rifle_SACR_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_PDW57\\Weapon_Rifle_SACR\\Texture2D\\Weapon_Rifle_SACR_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_PDW57\\Weapon_Rifle_SACR\\Texture2D\\Weapon_Rifle_SACR_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_PDW57"
+  },
+  {
+   "weapon": "Weapon_PercussionGrenade",
+   "mesh": "Weapon_PercussionGrenade_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_PercussionGrenade\\Weapon_PercussionGrenade_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_PercussionGrenade\\Weapon_PercussionGrenade\\Texture2D\\Weapon_PercussionGrenade_DiffSpec.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_PercussionGrenade\\Weapon_PercussionGrenade\\Texture2D\\Weapon_PercussionGrenade_Norm.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_PercussionGrenade"
+  },
+  {
+   "weapon": "Weapon_PercussionGrenade",
+   "mesh": "Weapon_PercussionGrenade_Thrown_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_PercussionGrenade\\Weapon_PercussionGrenade_Thrown_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_PercussionGrenade\\Weapon_PercussionGrenade\\Texture2D\\Weapon_PercussionGrenade_DiffSpec.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_PercussionGrenade\\Weapon_PercussionGrenade\\Texture2D\\Weapon_PercussionGrenade_Norm.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_PercussionGrenade"
+  },
+  {
+   "weapon": "Weapon_Retail_Magnum",
+   "mesh": "Crm_Magnum_Clip_mk2_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Retail_Magnum\\Crm_Magnum_Clip_mk2_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Retail_Magnum\\Weapon_Retail_Magnum\\Texture2D\\Crm_Magnum_Mk2_DiffSpec.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Retail_Magnum\\Weapon_Retail_Magnum\\Texture2D\\Crm_Magnum_Mk2_Norm.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Retail_Magnum"
+  },
+  {
+   "weapon": "Weapon_Retail_Magnum",
+   "mesh": "Crm_Magnum_Mk2_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Retail_Magnum\\Crm_Magnum_Mk2_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Retail_Magnum\\Weapon_Retail_Magnum\\Texture2D\\Crm_Magnum_Mk2_DiffSpec.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Retail_Magnum\\Weapon_Retail_Magnum\\Texture2D\\Crm_Magnum_Mk2_Norm.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Retail_Magnum"
+  },
+  {
+   "weapon": "Weapon_Retail_Magnum",
+   "mesh": "Crm_Magnum_ClipEmpty_mk2_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Retail_Magnum\\Crm_Magnum_ClipEmpty_mk2_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Retail_Magnum\\Weapon_Retail_Magnum\\Texture2D\\Crm_Magnum_Mk2_DiffSpec.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Retail_Magnum\\Weapon_Retail_Magnum\\Texture2D\\Crm_Magnum_Mk2_Norm.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Retail_Magnum"
+  },
+  {
+   "weapon": "Weapon_Revolver_Apocalypse",
+   "mesh": "Weapon_Revolver_Apocalypse_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Revolver_Apocalypse\\Weapon_Revolver_Apocalypse_LOD0.obj",
+   "material_slots": [
+    "Weapon_Revolver_Apocalypse_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Revolver_Apocalypse\\Weapon_Revolver_Apocalypse\\Texture2D\\Weapon_Revolver_Apocalypse_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Revolver_Apocalypse\\Weapon_Revolver_Apocalypse\\Texture2D\\Weapon_Revolver_Apocalypse_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Revolver_Apocalypse\\Weapon_Revolver_Apocalypse\\Texture2D\\Weapon_Revolver_Apocalypse_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Revolver_Apocalypse"
+  },
+  {
+   "weapon": "Weapon_Revolver_Showstopper",
+   "mesh": "Weapon_Revolver_Showstopper_Extended_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Revolver_Showstopper\\Weapon_Revolver_Showstopper_Extended_LOD0.obj",
+   "material_slots": [
+    "Weapon_Showstopper_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Revolver_Showstopper\\Weapon_Revolver_Showstopper\\Texture2D\\Weapon_Revolver_Showstopper_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Revolver_Showstopper\\Weapon_Revolver_Showstopper\\Texture2D\\Weapon_Revolver_Showstopper_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Revolver_Showstopper\\Weapon_Revolver_Showstopper\\Texture2D\\Weapon_Revolver_Showstopper_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Revolver_Showstopper"
+  },
+  {
+   "weapon": "Weapon_Revolver_Showstopper",
+   "mesh": "Weapon_Revolver_Showstopper_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Revolver_Showstopper\\Weapon_Revolver_Showstopper_LOD0.obj",
+   "material_slots": [
+    "Weapon_Showstopper_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Revolver_Showstopper\\Weapon_Revolver_Showstopper\\Texture2D\\Weapon_Revolver_Showstopper_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Revolver_Showstopper\\Weapon_Revolver_Showstopper\\Texture2D\\Weapon_Revolver_Showstopper_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Revolver_Showstopper\\Weapon_Revolver_Showstopper\\Texture2D\\Weapon_Revolver_Showstopper_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Revolver_Showstopper"
+  },
+  {
+   "weapon": "Weapon_Revolver_Showstopper",
+   "mesh": "Weapon_Revolver_Showstopper_Torch_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Revolver_Showstopper\\Weapon_Revolver_Showstopper_Torch_LOD0.obj",
+   "material_slots": [
+    "Weapon_Showstopper_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Revolver_Showstopper\\Weapon_Revolver_Showstopper\\Texture2D\\Weapon_Revolver_Showstopper_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Revolver_Showstopper\\Weapon_Revolver_Showstopper\\Texture2D\\Weapon_Revolver_Showstopper_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Revolver_Showstopper\\Weapon_Revolver_Showstopper\\Texture2D\\Weapon_Revolver_Showstopper_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Revolver_Showstopper"
+  },
+  {
+   "weapon": "Weapon_Rifle",
+   "mesh": "Weapon_Rifle_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Rifle\\Weapon_Rifle_LOD0.obj",
+   "material_slots": [
+    "Weapon_Rifle_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Rifle\\Weapon_Rifle\\Texture2D\\Weapon_Rifle_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Rifle\\Weapon_Rifle\\Texture2D\\Weapon_Rifle_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Rifle\\Weapon_Rifle\\Texture2D\\Weapon_Rifle_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Rifle"
+  },
+  {
+   "weapon": "Weapon_Rifle_FFA",
+   "mesh": "Weapon_Rifle_FFA_Joker_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Rifle_FFA\\Weapon_Rifle_FFA_Joker_LOD0.obj",
+   "material_slots": [
+    "Weapon_Rifle_FFA_Joker_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Rifle_FFA\\Weapon_Rifle_FFA\\Texture2D\\Weapon_Rifle_FFA_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Rifle_FFA\\Weapon_Rifle_FFA\\Texture2D\\Weapon_Rifle_FFA_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Rifle_FFA\\Weapon_Rifle_FFA\\Texture2D\\Weapon_Rifle_FFA_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Rifle_FFA"
+  },
+  {
+   "weapon": "Weapon_Rifle_FFA",
+   "mesh": "Weapon_Rifle_FFA_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Rifle_FFA\\Weapon_Rifle_FFA_LOD0.obj",
+   "material_slots": [
+    "Weapon_Rifle_FFA_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Rifle_FFA\\Weapon_Rifle_FFA\\Texture2D\\Weapon_Rifle_FFA_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Rifle_FFA\\Weapon_Rifle_FFA\\Texture2D\\Weapon_Rifle_FFA_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Rifle_FFA\\Weapon_Rifle_FFA\\Texture2D\\Weapon_Rifle_FFA_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Rifle_FFA"
+  },
+  {
+   "weapon": "Weapon_Rifle_PBR",
+   "mesh": "Weapon_Rifle_PBR_Base_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Rifle_PBR\\Weapon_Rifle_PBR_Base_LOD0.obj",
+   "material_slots": [
+    "Weapon_Rifle_PBR_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Rifle_PBR\\Weapon_Rifle_PBR\\Texture2D\\Weapon_Rifle_PBR_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Rifle_PBR\\Weapon_Rifle_PBR\\Texture2D\\Weapon_Rifle_PBR_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Rifle_PBR\\Weapon_Rifle_PBR\\Texture2D\\Weapon_Rifle_PBR_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Rifle_PBR"
+  },
+  {
+   "weapon": "Weapon_Rifle_PBR",
+   "mesh": "Weapon_Rifle_PBR_Silencer_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Rifle_PBR\\Weapon_Rifle_PBR_Silencer_LOD0.obj",
+   "material_slots": [
+    "Weapon_Rifle_PBR_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Rifle_PBR\\Weapon_Rifle_PBR\\Texture2D\\Weapon_Rifle_PBR_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Rifle_PBR\\Weapon_Rifle_PBR\\Texture2D\\Weapon_Rifle_PBR_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Rifle_PBR\\Weapon_Rifle_PBR\\Texture2D\\Weapon_Rifle_PBR_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Rifle_PBR"
+  },
+  {
+   "weapon": "Weapon_Rifle_PBR",
+   "mesh": "Weapon_Rifle_PBR_Stock_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Rifle_PBR\\Weapon_Rifle_PBR_Stock_LOD0.obj",
+   "material_slots": [
+    "Weapon_Rifle_PBR_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Rifle_PBR\\Weapon_Rifle_PBR\\Texture2D\\Weapon_Rifle_PBR_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Rifle_PBR\\Weapon_Rifle_PBR\\Texture2D\\Weapon_Rifle_PBR_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Rifle_PBR\\Weapon_Rifle_PBR\\Texture2D\\Weapon_Rifle_PBR_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Rifle_PBR"
+  },
+  {
+   "weapon": "Weapon_Rifle_SACR",
+   "mesh": "Weapon_Rifle_SACR_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Rifle_SACR\\Weapon_Rifle_SACR_LOD0.obj",
+   "material_slots": [
+    "Weapon_Rifle_SACR_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Rifle_SACR\\Weapon_Rifle_SACR\\Texture2D\\Weapon_Rifle_SACR_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Rifle_SACR\\Weapon_Rifle_SACR\\Texture2D\\Weapon_Rifle_SACR_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Rifle_SACR\\Weapon_Rifle_SACR\\Texture2D\\Weapon_Rifle_SACR_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Rifle_SACR"
+  },
+  {
+   "weapon": "Weapon_Rifle_SACR",
+   "mesh": "Weapon_Rifle_SACR_Scoped_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Rifle_SACR\\Weapon_Rifle_SACR_Scoped_LOD0.obj",
+   "material_slots": [
+    "Weapon_Rifle_SACR_DefaultAlt_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Rifle_SACR\\Weapon_Rifle_SACR\\Texture2D\\Weapon_Rifle_SACR_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Rifle_SACR\\Weapon_Rifle_SACR\\Texture2D\\Weapon_Rifle_SACR_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Rifle_SACR\\Weapon_Rifle_SACR\\Texture2D\\Weapon_Rifle_SACR_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Rifle_SACR"
+  },
+  {
+   "weapon": "Weapon_Rifle_SACR",
+   "mesh": "Weapon_Rifle_SACR_Stock_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Rifle_SACR\\Weapon_Rifle_SACR_Stock_LOD0.obj",
+   "material_slots": [
+    "Weapon_Rifle_SACR_DefaultAlt_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Rifle_SACR\\Weapon_Rifle_SACR\\Texture2D\\Weapon_Rifle_SACR_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Rifle_SACR\\Weapon_Rifle_SACR\\Texture2D\\Weapon_Rifle_SACR_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Rifle_SACR\\Weapon_Rifle_SACR\\Texture2D\\Weapon_Rifle_SACR_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Rifle_SACR"
+  },
+  {
+   "weapon": "Weapon_RiotGun",
+   "mesh": "Weapon_RiotGun_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_RiotGun\\Weapon_RiotGun_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_RiotGun\\Weapon_RiotGun\\Texture2D\\Weapon_RiotGun_DiffSpec.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_RiotGun\\Weapon_RiotGun\\Texture2D\\Weapon_RiotGun_Norm.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_RiotGun"
+  },
+  {
+   "weapon": "Weapon_RocketLauncher",
+   "mesh": "Weapon_RocketLauncher_Ammo_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_RocketLauncher\\Weapon_RocketLauncher_Ammo_LOD0.obj",
+   "material_slots": [
+    "Weapon_RocketLauncher_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_RocketLauncher\\Weapon_RocketLauncher\\Texture2D\\Weapon_RocketLauncher_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_RocketLauncher\\Weapon_RocketLauncher\\Texture2D\\Weapon_RocketLauncher_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_RocketLauncher\\Weapon_RocketLauncher\\Texture2D\\Weapon_RocketLauncher_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_RocketLauncher"
+  },
+  {
+   "weapon": "Weapon_RocketLauncher",
+   "mesh": "Weapon_RocketLauncher_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_RocketLauncher\\Weapon_RocketLauncher_LOD0.obj",
+   "material_slots": [
+    "Weapon_RocketLauncher_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_RocketLauncher\\Weapon_RocketLauncher\\Texture2D\\Weapon_RocketLauncher_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_RocketLauncher\\Weapon_RocketLauncher\\Texture2D\\Weapon_RocketLauncher_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_RocketLauncher\\Weapon_RocketLauncher\\Texture2D\\Weapon_RocketLauncher_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_RocketLauncher"
+  },
+  {
+   "weapon": "Weapon_RocketLauncher",
+   "mesh": "RocketLauncher_Test",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_RocketLauncher\\RocketLauncher_Test.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_RocketLauncher\\Weapon_RocketLauncher\\Texture2D\\Weapon_RocketLauncher_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_RocketLauncher\\Weapon_RocketLauncher\\Texture2D\\Weapon_RocketLauncher_Norm.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_RocketLauncher"
+  },
+  {
+   "weapon": "Weapon_SawnOffShotgun",
+   "mesh": "Weapon_SawnOffShotgun_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SawnOffShotgun\\Weapon_SawnOffShotgun_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SawnOffShotgun\\Weapon_SawnOffShotgun\\Texture2D\\Weapon_SawnOffShotgun_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SawnOffShotgun\\Weapon_SawnOffShotgun\\Texture2D\\Weapon_SawnOffShotgun_Norm.tga"
+   },
+   "spec_power": "Weapon_SawnOffShotgun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SawnOffShotgun"
+  },
+  {
+   "weapon": "Weapon_SawnOffShotgun",
+   "mesh": "Weapon_SawnOffShotgun_Worn_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SawnOffShotgun\\Weapon_SawnOffShotgun_Worn_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SawnOffShotgun\\Weapon_SawnOffShotgun\\Texture2D\\Weapon_SawnOffShotgun_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SawnOffShotgun\\Weapon_SawnOffShotgun\\Texture2D\\Weapon_SawnOffShotgun_Norm.tga"
+   },
+   "spec_power": "Weapon_SawnOffShotgun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SawnOffShotgun"
+  },
+  {
+   "weapon": "Weapon_Secondary_Fr0g",
+   "mesh": "Weapon_Secondary_Fr0g_Base_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Secondary_Fr0g\\Weapon_Secondary_Fr0g_Base_LOD0.obj",
+   "material_slots": [
+    "Weapon_Secondary_Fr0g_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Secondary_Fr0g\\Weapon_Secondary_Fr0g\\Texture2D\\Weapon_Secondary_Fr0G_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Secondary_Fr0g\\Weapon_Secondary_Fr0g\\Texture2D\\Weapon_Secondary_Fr0G_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Secondary_Fr0g\\Weapon_Secondary_Fr0g\\Texture2D\\Weapon_Secondary_Fr0G_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Secondary_Fr0g"
+  },
+  {
+   "weapon": "Weapon_Secondary_Fr0g",
+   "mesh": "Weapon_Secondary_Fr0g_Sight_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Secondary_Fr0g\\Weapon_Secondary_Fr0g_Sight_LOD0.obj",
+   "material_slots": [
+    "Weapon_Secondary_Fr0g_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Secondary_Fr0g\\Weapon_Secondary_Fr0g\\Texture2D\\Weapon_Secondary_Fr0G_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Secondary_Fr0g\\Weapon_Secondary_Fr0g\\Texture2D\\Weapon_Secondary_Fr0G_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Secondary_Fr0g\\Weapon_Secondary_Fr0g\\Texture2D\\Weapon_Secondary_Fr0G_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Secondary_Fr0g"
+  },
+  {
+   "weapon": "Weapon_Secondary_Fr0g",
+   "mesh": "Weapon_Secondary_Fr0g_Torch_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Secondary_Fr0g\\Weapon_Secondary_Fr0g_Torch_LOD0.obj",
+   "material_slots": [
+    "Weapon_Secondary_Fr0g_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Secondary_Fr0g\\Weapon_Secondary_Fr0g\\Texture2D\\Weapon_Secondary_Fr0G_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Secondary_Fr0g\\Weapon_Secondary_Fr0g\\Texture2D\\Weapon_Secondary_Fr0G_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Secondary_Fr0g\\Weapon_Secondary_Fr0g\\Texture2D\\Weapon_Secondary_Fr0G_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Secondary_Fr0g"
+  },
+  {
+   "weapon": "Weapon_Secondary_Mountie",
+   "mesh": "Weapon_Secondary_Mountie_Base_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Secondary_Mountie\\Weapon_Secondary_Mountie_Base_LOD0.obj",
+   "material_slots": [
+    "Weapon_Secondary_Mountie_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Secondary_Mountie\\Weapon_Secondary_Mountie\\Texture2D\\Weapon_Secondary_Mountie_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Secondary_Mountie\\Weapon_Secondary_Mountie\\Texture2D\\Weapon_Secondary_Mountie_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Secondary_Mountie\\Weapon_Secondary_Mountie\\Texture2D\\Weapon_Secondary_Mountie_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Secondary_Mountie"
+  },
+  {
+   "weapon": "Weapon_Secondary_Mountie",
+   "mesh": "Weapon_Secondary_Mountie_Compact_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Secondary_Mountie\\Weapon_Secondary_Mountie_Compact_LOD0.obj",
+   "material_slots": [
+    "Weapon_Secondary_Mountie_DefaultCompact_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Secondary_Mountie\\Weapon_Secondary_Mountie\\Texture2D\\Weapon_Secondary_Mountie_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Secondary_Mountie\\Weapon_Secondary_Mountie\\Texture2D\\Weapon_Secondary_Mountie_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Secondary_Mountie\\Weapon_Secondary_Mountie\\Texture2D\\Weapon_Secondary_Mountie_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Secondary_Mountie"
+  },
+  {
+   "weapon": "Weapon_Secondary_Mountie",
+   "mesh": "Weapon_Secondary_Mountie_Stock_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Secondary_Mountie\\Weapon_Secondary_Mountie_Stock_LOD0.obj",
+   "material_slots": [
+    "Weapon_Secondary_Mountie_DefaultStock_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Secondary_Mountie\\Weapon_Secondary_Mountie\\Texture2D\\Weapon_Secondary_Mountie_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Secondary_Mountie\\Weapon_Secondary_Mountie\\Texture2D\\Weapon_Secondary_Mountie_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Secondary_Mountie\\Weapon_Secondary_Mountie\\Texture2D\\Weapon_Secondary_Mountie_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Secondary_Mountie"
+  },
+  {
+   "weapon": "Weapon_Secondary_OCSP",
+   "mesh": "Weapon_Secondary_OCSP_Base_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Secondary_OCSP\\Weapon_Secondary_OCSP_Base_LOD0.obj",
+   "material_slots": [
+    "Weapon_Secondary_OCSP_Diamond_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Secondary_OCSP\\Weapon_Secondary_OCSP\\Texture2D\\Secondary_OCSP_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Secondary_OCSP\\Weapon_Secondary_OCSP\\Texture2D\\Secondary_OCSP_NRM.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Secondary_OCSP\\Weapon_Secondary_OCSP\\Texture2D\\Secondary_OCSP_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Secondary_OCSP"
+  },
+  {
+   "weapon": "Weapon_Secondary_OUL",
+   "mesh": "Weapon_Secondary_OUL_Base_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Secondary_OUL\\Weapon_Secondary_OUL_Base_LOD0.obj",
+   "material_slots": [
+    "Weapon_Secondary_OUL_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Secondary_OUL\\Weapon_Secondary_OUL\\Texture2D\\Weapon_OUL_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Secondary_OUL\\Weapon_Secondary_OUL\\Texture2D\\Weapon_OUL_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Secondary_OUL\\Weapon_Secondary_OUL\\Texture2D\\Weapon_OUL_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Secondary_OUL"
+  },
+  {
+   "weapon": "Weapon_Secondary_OUL",
+   "mesh": "Weapon_Secondary_OUL_Sight_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Secondary_OUL\\Weapon_Secondary_OUL_Sight_LOD0.obj",
+   "material_slots": [
+    "Weapon_Secondary_OUL_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Secondary_OUL\\Weapon_Secondary_OUL\\Texture2D\\Weapon_OUL_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Secondary_OUL\\Weapon_Secondary_OUL\\Texture2D\\Weapon_OUL_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Secondary_OUL\\Weapon_Secondary_OUL\\Texture2D\\Weapon_OUL_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Secondary_OUL"
+  },
+  {
+   "weapon": "Weapon_Secondary_OUL",
+   "mesh": "Weapon_Secondary_OUL_Silencer_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Secondary_OUL\\Weapon_Secondary_OUL_Silencer_LOD0.obj",
+   "material_slots": [
+    "Weapon_Secondary_OUL_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Secondary_OUL\\Weapon_Secondary_OUL\\Texture2D\\Weapon_OUL_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Secondary_OUL\\Weapon_Secondary_OUL\\Texture2D\\Weapon_OUL_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Secondary_OUL\\Weapon_Secondary_OUL\\Texture2D\\Weapon_OUL_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Secondary_OUL"
+  },
+  {
+   "weapon": "Weapon_SemiAutoPistol",
+   "mesh": "Weapon_SemiAutoPistol_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SemiAutoPistol\\Weapon_SemiAutoPistol_LOD0.obj",
+   "material_slots": [
+    "Weapon_SemiAutoPistol_Default_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SemiAutoPistol\\Weapon_SemiAutoPistol\\Texture2D\\Weapon_SemiAutoPistol_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SemiAutoPistol\\Weapon_SemiAutoPistol\\Texture2D\\Weapon_SemiAutoPistol_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SemiAutoPistol\\Weapon_SemiAutoPistol\\Texture2D\\Weapon_SemiAutoPistol_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SemiAutoPistol"
+  },
+  {
+   "weapon": "Weapon_SemiAutoPistol",
+   "mesh": "Weapon_SemiAutoPistol_Silenced_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SemiAutoPistol\\Weapon_SemiAutoPistol_Silenced_LOD0.obj",
+   "material_slots": [
+    "Weapon_SemiAutoPistol_Default_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SemiAutoPistol\\Weapon_SemiAutoPistol\\Texture2D\\Weapon_SemiAutoPistol_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SemiAutoPistol\\Weapon_SemiAutoPistol\\Texture2D\\Weapon_SemiAutoPistol_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SemiAutoPistol\\Weapon_SemiAutoPistol\\Texture2D\\Weapon_SemiAutoPistol_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SemiAutoPistol"
+  },
+  {
+   "weapon": "Weapon_Shotgun",
+   "mesh": "Weapon_Shotgun_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Shotgun\\Weapon_Shotgun_LOD0.obj",
+   "material_slots": [
+    "Weapon_Shotgun_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Shotgun\\Weapon_Shotgun\\Texture2D\\Weapon_Shotgun_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Shotgun\\Weapon_Shotgun\\Texture2D\\Weapon_Shotgun_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Shotgun\\Weapon_Shotgun\\Texture2D\\Weapon_Shotgun_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Shotgun"
+  },
+  {
+   "weapon": "Weapon_Shotgun",
+   "mesh": "Weapon_Shotgun_Shell_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Shotgun\\Weapon_Shotgun_Shell_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Shotgun\\Weapon_Shotgun\\Texture2D\\Weapon_Shotgun_Shell_Diffspec.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Shotgun\\Weapon_Shotgun\\Texture2D\\Weapon_Shotgun_Shell_Norm.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Shotgun"
+  },
+  {
+   "weapon": "Weapon_Shotgun",
+   "mesh": "Weapon_Shotgun_StockDown_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Shotgun\\Weapon_Shotgun_StockDown_LOD0.obj",
+   "material_slots": [
+    "Weapon_Shotgun_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Shotgun\\Weapon_Shotgun\\Texture2D\\Weapon_Shotgun_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Shotgun\\Weapon_Shotgun\\Texture2D\\Weapon_Shotgun_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Shotgun\\Weapon_Shotgun\\Texture2D\\Weapon_Shotgun_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Shotgun"
+  },
+  {
+   "weapon": "Weapon_Shotgun_DOW",
+   "mesh": "Weapon_Shotgun_DOW_Base_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Shotgun_DOW\\Weapon_Shotgun_DOW_Base_LOD0.obj",
+   "material_slots": [
+    "Weapon_Shotgun_DOW_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Shotgun_DOW\\Weapon_Shotgun_DOW\\Texture2D\\Weapon_Shotgun_DOW_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Shotgun_DOW\\Weapon_Shotgun_DOW\\Texture2D\\Weapon_Shotgun_DOW_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Shotgun_DOW\\Weapon_Shotgun_DOW\\Texture2D\\Weapon_Shotgun_DOW_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Shotgun_DOW"
+  },
+  {
+   "weapon": "Weapon_Shotgun_DOW",
+   "mesh": "Weapon_Shotgun_DOW_FoldedStock_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Shotgun_DOW\\Weapon_Shotgun_DOW_FoldedStock_LOD0.obj",
+   "material_slots": [
+    "Weapon_Shotgun_DOW_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Shotgun_DOW\\Weapon_Shotgun_DOW\\Texture2D\\Weapon_Shotgun_DOW_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Shotgun_DOW\\Weapon_Shotgun_DOW\\Texture2D\\Weapon_Shotgun_DOW_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Shotgun_DOW\\Weapon_Shotgun_DOW\\Texture2D\\Weapon_Shotgun_DOW_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Shotgun_DOW"
+  },
+  {
+   "weapon": "Weapon_Shotgun_DOW",
+   "mesh": "Weapon_Shotgun_DOW_Stock_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Shotgun_DOW\\Weapon_Shotgun_DOW_Stock_LOD0.obj",
+   "material_slots": [
+    "Weapon_Shotgun_DOW_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Shotgun_DOW\\Weapon_Shotgun_DOW\\Texture2D\\Weapon_Shotgun_DOW_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Shotgun_DOW\\Weapon_Shotgun_DOW\\Texture2D\\Weapon_Shotgun_DOW_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Shotgun_DOW\\Weapon_Shotgun_DOW\\Texture2D\\Weapon_Shotgun_DOW_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Shotgun_DOW"
+  },
+  {
+   "weapon": "Weapon_Shotgun_Shredder",
+   "mesh": "Weapon_Shotgun_Shredder_Base_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Shotgun_Shredder\\Weapon_Shotgun_Shredder_Base_LOD0.obj",
+   "material_slots": [
+    "Weapon_Shotgun_Shredder_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Shotgun_Shredder\\Weapon_Shotgun_Shredder\\Texture2D\\Weapon_Shotgun_Shredder_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Shotgun_Shredder\\Weapon_Shotgun_Shredder\\Texture2D\\Weapon_Shotgun_Shredder_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Shotgun_Shredder\\Weapon_Shotgun_Shredder\\Texture2D\\Weapon_Shotgun_Shredder_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Shotgun_Shredder"
+  },
+  {
+   "weapon": "Weapon_Shotgun_Shredder",
+   "mesh": "Weapon_Shotgun_Shredder_DrumMag_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Shotgun_Shredder\\Weapon_Shotgun_Shredder_DrumMag_LOD0.obj",
+   "material_slots": [
+    "Weapon_Shotgun_Shredder_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Shotgun_Shredder\\Weapon_Shotgun_Shredder\\Texture2D\\Weapon_Shotgun_Shredder_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Shotgun_Shredder\\Weapon_Shotgun_Shredder\\Texture2D\\Weapon_Shotgun_Shredder_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Shotgun_Shredder\\Weapon_Shotgun_Shredder\\Texture2D\\Weapon_Shotgun_Shredder_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Shotgun_Shredder"
+  },
+  {
+   "weapon": "Weapon_Shotgun_Shredder",
+   "mesh": "Weapon_Shotgun_Shredder_Torch_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Shotgun_Shredder\\Weapon_Shotgun_Shredder_Torch_LOD0.obj",
+   "material_slots": [
+    "Weapon_Shotgun_Shredder_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Shotgun_Shredder\\Weapon_Shotgun_Shredder\\Texture2D\\Weapon_Shotgun_Shredder_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Shotgun_Shredder\\Weapon_Shotgun_Shredder\\Texture2D\\Weapon_Shotgun_Shredder_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Shotgun_Shredder\\Weapon_Shotgun_Shredder\\Texture2D\\Weapon_Shotgun_Shredder_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Shotgun_Shredder"
+  },
+  {
+   "weapon": "Weapon_Shotgun_Tas20",
+   "mesh": "Weapon_Shotgun_Tas20_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Shotgun_Tas20\\Weapon_Shotgun_Tas20_LOD0.obj",
+   "material_slots": [
+    "Weapon_Shotgun_Tas20_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Shotgun_Tas20\\Weapon_Shotgun_Tas20\\Texture2D\\Shotgun_Tas_20_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Shotgun_Tas20\\Weapon_Shotgun_Tas20\\Texture2D\\Shotgun_Tas_20_normals.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Shotgun_Tas20\\Weapon_Shotgun_Tas20\\Texture2D\\Shotgun_Tas_20_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Shotgun_Tas20"
+  },
+  {
+   "weapon": "Weapon_Shotgun_Tas20",
+   "mesh": "Weapon_Shotgun_Tas20_Stock_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Shotgun_Tas20\\Weapon_Shotgun_Tas20_Stock_LOD0.obj",
+   "material_slots": [
+    "Weapon_Shotgun_Tas20_DefaultAlt_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Shotgun_Tas20\\Weapon_Shotgun_Tas20\\Texture2D\\Shotgun_Tas_20_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Shotgun_Tas20\\Weapon_Shotgun_Tas20\\Texture2D\\Shotgun_Tas_20_normals.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Shotgun_Tas20\\Weapon_Shotgun_Tas20\\Texture2D\\Shotgun_Tas_20_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Shotgun_Tas20"
+  },
+  {
+   "weapon": "Weapon_Shotgun_Tas20",
+   "mesh": "Weapon_Shotgun_Tas20_Tactical_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Shotgun_Tas20\\Weapon_Shotgun_Tas20_Tactical_LOD0.obj",
+   "material_slots": [
+    "Weapon_Shotgun_Tas20_DefaultAlt_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Shotgun_Tas20\\Weapon_Shotgun_Tas20\\Texture2D\\Shotgun_Tas_20_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Shotgun_Tas20\\Weapon_Shotgun_Tas20\\Texture2D\\Shotgun_Tas_20_normals.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Shotgun_Tas20\\Weapon_Shotgun_Tas20\\Texture2D\\Shotgun_Tas_20_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Shotgun_Tas20"
+  },
+  {
+   "weapon": "Weapon_SMG_ACES",
+   "mesh": "Weapon_SMG_ACES-Rifle_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SMG_ACES\\Weapon_SMG_ACES-Rifle_LOD0.obj",
+   "material_slots": [
+    "Weapon_ACES_SMG_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_ACES\\Weapon_SMG_ACES\\Texture2D\\Weapon_ACE_SMG_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_ACES\\Weapon_SMG_ACES\\Texture2D\\Weapon_ACE_SMG_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_ACES\\Weapon_SMG_ACES\\Texture2D\\Weapon_ACE_SMG_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SMG_ACES"
+  },
+  {
+   "weapon": "Weapon_SMG_ACES",
+   "mesh": "Weapon_SMG_ACES_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SMG_ACES\\Weapon_SMG_ACES_LOD0.obj",
+   "material_slots": [
+    "Weapon_ACES_SMG_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_ACES\\Weapon_SMG_ACES\\Texture2D\\Weapon_ACE_SMG_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_ACES\\Weapon_SMG_ACES\\Texture2D\\Weapon_ACE_SMG_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_ACES\\Weapon_SMG_ACES\\Texture2D\\Weapon_ACE_SMG_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SMG_ACES"
+  },
+  {
+   "weapon": "Weapon_SMG_C9S",
+   "mesh": "Weapon_SMG_C9S_Base_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SMG_C9S\\Weapon_SMG_C9S_Base_LOD0.obj",
+   "material_slots": [
+    "Weapon_SMG_C9S_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_C9S\\Weapon_SMG_C9S\\Texture2D\\Weapon_SMG_C9S_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_C9S\\Weapon_SMG_C9S\\Texture2D\\Weapon_SMG_C9S_NRM.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_C9S\\Weapon_SMG_C9S\\Texture2D\\Weapon_SMG_C9S_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SMG_C9S"
+  },
+  {
+   "weapon": "Weapon_SMG_C9S",
+   "mesh": "Weapon_SMG_C9S_Sight_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SMG_C9S\\Weapon_SMG_C9S_Sight_LOD0.obj",
+   "material_slots": [
+    "Weapon_SMG_C9S_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_C9S\\Weapon_SMG_C9S\\Texture2D\\Weapon_SMG_C9S_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_C9S\\Weapon_SMG_C9S\\Texture2D\\Weapon_SMG_C9S_NRM.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_C9S\\Weapon_SMG_C9S\\Texture2D\\Weapon_SMG_C9S_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SMG_C9S"
+  },
+  {
+   "weapon": "Weapon_SMG_C9S",
+   "mesh": "Weapon_SMG_C9_Base_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SMG_C9S\\Weapon_SMG_C9_Base_LOD0.obj",
+   "material_slots": [
+    "Weapon_SMG_C9S_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_C9S\\Weapon_SMG_C9S\\Texture2D\\Weapon_SMG_C9S_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_C9S\\Weapon_SMG_C9S\\Texture2D\\Weapon_SMG_C9S_NRM.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_C9S\\Weapon_SMG_C9S\\Texture2D\\Weapon_SMG_C9S_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SMG_C9S"
+  },
+  {
+   "weapon": "Weapon_SMG_C9S",
+   "mesh": "Weapon_SMG_C9_Sight_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SMG_C9S\\Weapon_SMG_C9_Sight_LOD0.obj",
+   "material_slots": [
+    "Weapon_SMG_C9S_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_C9S\\Weapon_SMG_C9S\\Texture2D\\Weapon_SMG_C9S_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_C9S\\Weapon_SMG_C9S\\Texture2D\\Weapon_SMG_C9S_NRM.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_C9S\\Weapon_SMG_C9S\\Texture2D\\Weapon_SMG_C9S_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SMG_C9S"
+  },
+  {
+   "weapon": "Weapon_SMG_CBMP",
+   "mesh": "Weapon_SMG_CBMP_Base_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SMG_CBMP\\Weapon_SMG_CBMP_Base_LOD0.obj",
+   "material_slots": [
+    "Weapon_SMG_CBMP_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_CBMP\\Weapon_SMG_CBMP\\Texture2D\\Weapon_SMG_CBMP_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_CBMP\\Weapon_SMG_CBMP\\Texture2D\\Weapon_SMG_CBMP_NRM.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_CBMP\\Weapon_SMG_CBMP\\Texture2D\\Weapon_SMG_CBMP_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SMG_CBMP"
+  },
+  {
+   "weapon": "Weapon_SMG_CBMP",
+   "mesh": "Weapon_SMG_CBMP_Compact_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SMG_CBMP\\Weapon_SMG_CBMP_Compact_LOD0.obj",
+   "material_slots": [
+    "Weapon_SMG_CBMP_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_CBMP\\Weapon_SMG_CBMP\\Texture2D\\Weapon_SMG_CBMP_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_CBMP\\Weapon_SMG_CBMP\\Texture2D\\Weapon_SMG_CBMP_NRM.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_CBMP\\Weapon_SMG_CBMP\\Texture2D\\Weapon_SMG_CBMP_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SMG_CBMP"
+  },
+  {
+   "weapon": "Weapon_SMG_CBMP",
+   "mesh": "Weapon_SMG_CBMP_Tactical_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SMG_CBMP\\Weapon_SMG_CBMP_Tactical_LOD0.obj",
+   "material_slots": [
+    "Weapon_SMG_CBMP_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_CBMP\\Weapon_SMG_CBMP\\Texture2D\\Weapon_SMG_CBMP_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_CBMP\\Weapon_SMG_CBMP\\Texture2D\\Weapon_SMG_CBMP_NRM.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_CBMP\\Weapon_SMG_CBMP\\Texture2D\\Weapon_SMG_CBMP_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SMG_CBMP"
+  },
+  {
+   "weapon": "Weapon_SMG_Norsemen",
+   "mesh": "Weapon_SMG_Norsemen_Base_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SMG_Norsemen\\Weapon_SMG_Norsemen_Base_LOD0.obj",
+   "material_slots": [
+    "Weapon_SMG_Norsemen_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_Norsemen\\Weapon_SMG_Norsemen\\Texture2D\\Weapon_SMG_Norsemen_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_Norsemen\\Weapon_SMG_Norsemen\\Texture2D\\Weapon_SMG_Norsemen_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_Norsemen\\Weapon_SMG_Norsemen\\Texture2D\\Weapon_SMG_Norsemen_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SMG_Norsemen"
+  },
+  {
+   "weapon": "Weapon_SMG_Norsemen",
+   "mesh": "Weapon_SMG_Norsemen_FoldingStock_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SMG_Norsemen\\Weapon_SMG_Norsemen_FoldingStock_LOD0.obj",
+   "material_slots": [
+    "Weapon_SMG_Norsemen_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_Norsemen\\Weapon_SMG_Norsemen\\Texture2D\\Weapon_SMG_Norsemen_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_Norsemen\\Weapon_SMG_Norsemen\\Texture2D\\Weapon_SMG_Norsemen_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_Norsemen\\Weapon_SMG_Norsemen\\Texture2D\\Weapon_SMG_Norsemen_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SMG_Norsemen"
+  },
+  {
+   "weapon": "Weapon_SMG_Norsemen",
+   "mesh": "Weapon_SMG_Norsemen_Sight_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SMG_Norsemen\\Weapon_SMG_Norsemen_Sight_LOD0.obj",
+   "material_slots": [
+    "Weapon_SMG_Norsemen_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_Norsemen\\Weapon_SMG_Norsemen\\Texture2D\\Weapon_SMG_Norsemen_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_Norsemen\\Weapon_SMG_Norsemen\\Texture2D\\Weapon_SMG_Norsemen_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_Norsemen\\Weapon_SMG_Norsemen\\Texture2D\\Weapon_SMG_Norsemen_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SMG_Norsemen"
+  },
+  {
+   "weapon": "Weapon_SMG_Norsemen",
+   "mesh": "Weapon_SMG_Norsemen_Silenced_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SMG_Norsemen\\Weapon_SMG_Norsemen_Silenced_LOD0.obj",
+   "material_slots": [
+    "Weapon_SMG_Norsemen_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_Norsemen\\Weapon_SMG_Norsemen\\Texture2D\\Weapon_SMG_Norsemen_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_Norsemen\\Weapon_SMG_Norsemen\\Texture2D\\Weapon_SMG_Norsemen_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_Norsemen\\Weapon_SMG_Norsemen\\Texture2D\\Weapon_SMG_Norsemen_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SMG_Norsemen"
+  },
+  {
+   "weapon": "Weapon_SMG_Vector",
+   "mesh": "Weapon_SMG_Vector_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SMG_Vector\\Weapon_SMG_Vector_LOD0.obj",
+   "material_slots": [
+    "Weapon_SMG_Vector_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_Vector\\Weapon_SubMachineGun\\Texture2D\\Weapon_SubMachineGun_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_Vector\\Weapon_SubMachineGun\\Texture2D\\Weapon_SubMachineGun_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SMG_Vector\\Weapon_SubMachineGun\\Texture2D\\Weapon_SubMachineGun_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SMG_Vector"
+  },
+  {
+   "weapon": "Weapon_SniperRifle_50Cal",
+   "mesh": "Weapon_SniperRifle_50Cal_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SniperRifle_50Cal\\Weapon_SniperRifle_50Cal_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_50Cal\\Weapon_SniperRifle_50Cal\\Texture2D\\Weapon_SniperRifle_50Cal_DiffSpec.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_50Cal\\Weapon_SniperRifle_50Cal\\Texture2D\\Weapon_SniperRifle_50Cal_Norm.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SniperRifle_50Cal"
+  },
+  {
+   "weapon": "Weapon_SniperRifle_HVR762",
+   "mesh": "Weapon_SniperRifle_HVR243-SD_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SniperRifle_HVR762\\Weapon_SniperRifle_HVR243-SD_LOD0.obj",
+   "material_slots": [
+    "Weapon_SniperRifle_HVR243_SD_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_HVR762\\Weapon_SniperRifle_HVR762\\Texture2D\\Weapon_SniperRifle_HVR762_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_HVR762\\Weapon_SniperRifle_HVR762\\Texture2D\\Weapon_SniperRifle_HVR762_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_HVR762\\Weapon_SniperRifle_HVR762\\Texture2D\\Weapon_SniperRifle_HVR762_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SniperRifle_HVR762"
+  },
+  {
+   "weapon": "Weapon_SniperRifle_HVR762",
+   "mesh": "Weapon_SniperRifle_HVR243_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SniperRifle_HVR762\\Weapon_SniperRifle_HVR243_LOD0.obj",
+   "material_slots": [
+    "Weapon_SniperRifle_HVR243_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_HVR762\\Weapon_SniperRifle_HVR762\\Texture2D\\Weapon_SniperRifle_HVR762_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_HVR762\\Weapon_SniperRifle_HVR762\\Texture2D\\Weapon_SniperRifle_HVR762_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_HVR762\\Weapon_SniperRifle_HVR762\\Texture2D\\Weapon_SniperRifle_HVR762_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SniperRifle_HVR762"
+  },
+  {
+   "weapon": "Weapon_SniperRifle_HVR762",
+   "mesh": "Weapon_SniperRifle_HVR762-SD_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SniperRifle_HVR762\\Weapon_SniperRifle_HVR762-SD_LOD0.obj",
+   "material_slots": [
+    "Weapon_SniperRifle_HVR762_SD_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_HVR762\\Weapon_SniperRifle_HVR762\\Texture2D\\Weapon_SniperRifle_HVR762_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_HVR762\\Weapon_SniperRifle_HVR762\\Texture2D\\Weapon_SniperRifle_HVR762_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_HVR762\\Weapon_SniperRifle_HVR762\\Texture2D\\Weapon_SniperRifle_HVR762_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SniperRifle_HVR762"
+  },
+  {
+   "weapon": "Weapon_SniperRifle_HVR762",
+   "mesh": "Weapon_SniperRifle_HVR762_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SniperRifle_HVR762\\Weapon_SniperRifle_HVR762_LOD0.obj",
+   "material_slots": [
+    "Weapon_SniperRifle_HVR762_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_HVR762\\Weapon_SniperRifle_HVR762\\Texture2D\\Weapon_SniperRifle_HVR762_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_HVR762\\Weapon_SniperRifle_HVR762\\Texture2D\\Weapon_SniperRifle_HVR762_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_HVR762\\Weapon_SniperRifle_HVR762\\Texture2D\\Weapon_SniperRifle_HVR762_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SniperRifle_HVR762"
+  },
+  {
+   "weapon": "Weapon_SniperRifle_Pathfinder",
+   "mesh": "Weapon_SniperRifle_Pathfinder_LongRange_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SniperRifle_Pathfinder\\Weapon_SniperRifle_Pathfinder_LongRange_LOD0.obj",
+   "material_slots": [
+    "Weapon_SniperRifle_Pathfinder_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_Pathfinder\\Weapon_SniperRifle_Pathfinder\\Texture2D\\SniperRifle_Pathfinder_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_Pathfinder\\Weapon_SniperRifle_Pathfinder\\Texture2D\\SniperRifle_Pathfinder_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_Pathfinder\\Weapon_SniperRifle_Pathfinder\\Texture2D\\SniperRifle_Pathfinder_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SniperRifle_Pathfinder"
+  },
+  {
+   "weapon": "Weapon_SniperRifle_Pathfinder",
+   "mesh": "Weapon_SniperRifle_Pathfinder_Silenced_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SniperRifle_Pathfinder\\Weapon_SniperRifle_Pathfinder_Silenced_LOD0.obj",
+   "material_slots": [
+    "Weapon_SniperRifle_Pathfinder_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_Pathfinder\\Weapon_SniperRifle_Pathfinder\\Texture2D\\SniperRifle_Pathfinder_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_Pathfinder\\Weapon_SniperRifle_Pathfinder\\Texture2D\\SniperRifle_Pathfinder_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_Pathfinder\\Weapon_SniperRifle_Pathfinder\\Texture2D\\SniperRifle_Pathfinder_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SniperRifle_Pathfinder"
+  },
+  {
+   "weapon": "Weapon_SniperRifle_Pathfinder",
+   "mesh": "Weapon_SniperRifle_Pathfinder_Standard_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SniperRifle_Pathfinder\\Weapon_SniperRifle_Pathfinder_Standard_LOD0.obj",
+   "material_slots": [
+    "Weapon_SniperRifle_Pathfinder_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_Pathfinder\\Weapon_SniperRifle_Pathfinder\\Texture2D\\SniperRifle_Pathfinder_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_Pathfinder\\Weapon_SniperRifle_Pathfinder\\Texture2D\\SniperRifle_Pathfinder_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_Pathfinder\\Weapon_SniperRifle_Pathfinder\\Texture2D\\SniperRifle_Pathfinder_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SniperRifle_Pathfinder"
+  },
+  {
+   "weapon": "Weapon_SniperRifle_PSR",
+   "mesh": "Weapon_SniperRifle_PSR_Base_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SniperRifle_PSR\\Weapon_SniperRifle_PSR_Base_LOD0.obj",
+   "material_slots": [
+    "Weapon_SniperRifle_PSR_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_PSR\\Weapon_SniperRifle_PSR\\Texture2D\\Weapon_SniperRifle_PSR_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_PSR\\Weapon_SniperRifle_PSR\\Texture2D\\Weapon_SniperRifle_PSR_NRM.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_PSR\\Weapon_SniperRifle_PSR\\Texture2D\\Weapon_SniperRifle_PSR_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SniperRifle_PSR"
+  },
+  {
+   "weapon": "Weapon_SniperRifle_PSR",
+   "mesh": "Weapon_SniperRifle_PSR_MuzzleBrake_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SniperRifle_PSR\\Weapon_SniperRifle_PSR_MuzzleBrake_LOD0.obj",
+   "material_slots": [
+    "Weapon_SniperRifle_PSR_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_PSR\\Weapon_SniperRifle_PSR\\Texture2D\\Weapon_SniperRifle_PSR_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_PSR\\Weapon_SniperRifle_PSR\\Texture2D\\Weapon_SniperRifle_PSR_NRM.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_PSR\\Weapon_SniperRifle_PSR\\Texture2D\\Weapon_SniperRifle_PSR_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SniperRifle_PSR"
+  },
+  {
+   "weapon": "Weapon_SniperRifle_PSR",
+   "mesh": "Weapon_SniperRifle_PSR_Silencer_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SniperRifle_PSR\\Weapon_SniperRifle_PSR_Silencer_LOD0.obj",
+   "material_slots": [
+    "Weapon_SniperRifle_PSR_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_PSR\\Weapon_SniperRifle_PSR\\Texture2D\\Weapon_SniperRifle_PSR_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_PSR\\Weapon_SniperRifle_PSR\\Texture2D\\Weapon_SniperRifle_PSR_NRM.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_PSR\\Weapon_SniperRifle_PSR\\Texture2D\\Weapon_SniperRifle_PSR_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SniperRifle_PSR"
+  },
+  {
+   "weapon": "Weapon_SniperRifle_SBSR",
+   "mesh": "Weapon_SniperRifle_SBSR_Base_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SniperRifle_SBSR\\Weapon_SniperRifle_SBSR_Base_LOD0.obj",
+   "material_slots": [
+    "Weapon_SniperRifle_SBSR_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_SBSR\\Weapon_SniperRifle_SBSR\\Texture2D\\Weapon_SniperRifle_SBSR_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_SBSR\\Weapon_SniperRifle_SBSR\\Texture2D\\Weapon_SniperRifle_SBSR_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_SBSR\\Weapon_SniperRifle_SBSR\\Texture2D\\Weapon_SniperRifle_SBSR_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SniperRifle_SBSR"
+  },
+  {
+   "weapon": "Weapon_SniperRifle_SBSR",
+   "mesh": "Weapon_SniperRifle_SBSR_Sight_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SniperRifle_SBSR\\Weapon_SniperRifle_SBSR_Sight_LOD0.obj",
+   "material_slots": [
+    "Weapon_SniperRifle_SBSR_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_SBSR\\Weapon_SniperRifle_SBSR\\Texture2D\\Weapon_SniperRifle_SBSR_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_SBSR\\Weapon_SniperRifle_SBSR\\Texture2D\\Weapon_SniperRifle_SBSR_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_SBSR\\Weapon_SniperRifle_SBSR\\Texture2D\\Weapon_SniperRifle_SBSR_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SniperRifle_SBSR"
+  },
+  {
+   "weapon": "Weapon_SniperRifle_Vesper",
+   "mesh": "Weapon_AssaultRifle_VespaStandard_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SniperRifle_Vesper\\Weapon_AssaultRifle_VespaStandard_LOD0.obj",
+   "material_slots": [
+    "Weapon_SniperRifle_Vesper_DefaultAlt_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_Vesper\\Weapon_SniperRifle_Vesper\\Texture2D\\Vesper_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_Vesper\\Weapon_SniperRifle_Vesper\\Texture2D\\Vesper_Normals.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_Vesper\\Weapon_SniperRifle_Vesper\\Texture2D\\Vesper_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SniperRifle_Vesper"
+  },
+  {
+   "weapon": "Weapon_SniperRifle_Vesper",
+   "mesh": "Weapon_AssaultRifle_VespaStock_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SniperRifle_Vesper\\Weapon_AssaultRifle_VespaStock_LOD0.obj",
+   "material_slots": [
+    "Weapon_SniperRifle_Vesper_DefaultAlt_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_Vesper\\Weapon_SniperRifle_Vesper\\Texture2D\\Vesper_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_Vesper\\Weapon_SniperRifle_Vesper\\Texture2D\\Vesper_Normals.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_Vesper\\Weapon_SniperRifle_Vesper\\Texture2D\\Vesper_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SniperRifle_Vesper"
+  },
+  {
+   "weapon": "Weapon_SniperRifle_Vesper",
+   "mesh": "Weapon_AssaultRifle_VespaTactical_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SniperRifle_Vesper\\Weapon_AssaultRifle_VespaTactical_LOD0.obj",
+   "material_slots": [
+    "Weapon_SniperRifle_Vesper_DefaultAlt_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_Vesper\\Weapon_SniperRifle_Vesper\\Texture2D\\Vesper_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_Vesper\\Weapon_SniperRifle_Vesper\\Texture2D\\Vesper_Normals.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_Vesper\\Weapon_SniperRifle_Vesper\\Texture2D\\Vesper_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SniperRifle_Vesper"
+  },
+  {
+   "weapon": "Weapon_SniperRifle_Vesper",
+   "mesh": "Weapon_SniperRifle_VesperFoldingStock_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SniperRifle_Vesper\\Weapon_SniperRifle_VesperFoldingStock_LOD0.obj",
+   "material_slots": [
+    "Weapon_SniperRifle_Vesper_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_Vesper\\Weapon_SniperRifle_Vesper\\Texture2D\\Vesper_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_Vesper\\Weapon_SniperRifle_Vesper\\Texture2D\\Vesper_Normals.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_Vesper\\Weapon_SniperRifle_Vesper\\Texture2D\\Vesper_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SniperRifle_Vesper"
+  },
+  {
+   "weapon": "Weapon_SniperRifle_Vesper",
+   "mesh": "Weapon_SniperRifle_VesperTactical_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SniperRifle_Vesper\\Weapon_SniperRifle_VesperTactical_LOD0.obj",
+   "material_slots": [
+    "Weapon_SniperRifle_Vesper_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_Vesper\\Weapon_SniperRifle_Vesper\\Texture2D\\Vesper_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_Vesper\\Weapon_SniperRifle_Vesper\\Texture2D\\Vesper_Normals.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_Vesper\\Weapon_SniperRifle_Vesper\\Texture2D\\Vesper_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SniperRifle_Vesper"
+  },
+  {
+   "weapon": "Weapon_SniperRifle_Vesper",
+   "mesh": "Weapon_SniperRifle_Vesper_Standard_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SniperRifle_Vesper\\Weapon_SniperRifle_Vesper_Standard_LOD0.obj",
+   "material_slots": [
+    "Weapon_SniperRifle_Vesper_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_Vesper\\Weapon_SniperRifle_Vesper\\Texture2D\\Vesper_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_Vesper\\Weapon_SniperRifle_Vesper\\Texture2D\\Vesper_Normals.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SniperRifle_Vesper\\Weapon_SniperRifle_Vesper\\Texture2D\\Vesper_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SniperRifle_Vesper"
+  },
+  {
+   "weapon": "Weapon_SnowBall",
+   "mesh": "Weapon_SnowBall_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SnowBall\\Weapon_SnowBall_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SnowBall\\Weapon_SnowBall\\Texture2D\\Snowflake.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SnowBall"
+  },
+  {
+   "weapon": "Weapon_SnowBall",
+   "mesh": "Weapon_SnowBall_Thrown_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SnowBall\\Weapon_SnowBall_Thrown_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SnowBall\\Weapon_SnowBall\\Texture2D\\Snowflake.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SnowBall"
+  },
+  {
+   "weapon": "Weapon_SnubNoseRevolver",
+   "mesh": "Weapon_SnubNoseRevolver_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SnubNoseRevolver\\Weapon_SnubNoseRevolver_LOD0.obj",
+   "material_slots": [
+    "Weapon_SnubNoseRevolver_Default_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SnubNoseRevolver\\Weapon_SnubNoseRevolver\\Texture2D\\Weapon_SnubNoseRevolver_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SnubNoseRevolver\\Weapon_SnubNoseRevolver\\Texture2D\\Weapon_SnubNoseRevolver_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SnubNoseRevolver\\Weapon_SnubNoseRevolver\\Texture2D\\Weapon_SnubNoseRevolver_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SnubNoseRevolver"
+  },
+  {
+   "weapon": "Weapon_StarterSMG",
+   "mesh": "Weapon_StarterSMG_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_StarterSMG\\Weapon_StarterSMG_LOD0.obj",
+   "material_slots": [
+    "Weapon_StarterSMG_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_StarterSMG\\Weapon_StarterSMG\\Texture2D\\Weapon_StarterSMG_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_StarterSMG\\Weapon_StarterSMG\\Texture2D\\Weapon_StarterSMG_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_StarterSMG\\Weapon_StarterSMG\\Texture2D\\Weapon_StarterSMG_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_StarterSMG"
+  },
+  {
+   "weapon": "Weapon_StarterSMG",
+   "mesh": "Weapon_StarterSMG_Silenced_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_StarterSMG\\Weapon_StarterSMG_Silenced_LOD0.obj",
+   "material_slots": [
+    "Weapon_StarterSMG_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_StarterSMG\\Weapon_StarterSMG\\Texture2D\\Weapon_StarterSMG_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_StarterSMG\\Weapon_StarterSMG\\Texture2D\\Weapon_StarterSMG_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_StarterSMG\\Weapon_StarterSMG\\Texture2D\\Weapon_StarterSMG_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_StarterSMG"
+  },
+  {
+   "weapon": "Weapon_StarterSMG",
+   "mesh": "Weapon_StarterSMG_Stock_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_StarterSMG\\Weapon_StarterSMG_Stock_LOD0.obj",
+   "material_slots": [
+    "Weapon_StarterSMG_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_StarterSMG\\Weapon_StarterSMG\\Texture2D\\Weapon_StarterSMG_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_StarterSMG\\Weapon_StarterSMG\\Texture2D\\Weapon_StarterSMG_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_StarterSMG\\Weapon_StarterSMG\\Texture2D\\Weapon_StarterSMG_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_StarterSMG"
+  },
+  {
+   "weapon": "Weapon_StingerGrenade",
+   "mesh": "Weapon_StingerGrenade_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_StingerGrenade\\Weapon_StingerGrenade_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_StingerGrenade\\Weapon_StingerGrenade\\Texture2D\\Weapon_StingerGrenade_DiffSpec.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_StingerGrenade\\Weapon_StingerGrenade\\Texture2D\\Weapon_StingerGrenade_Norm.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_StingerGrenade"
+  },
+  {
+   "weapon": "Weapon_StingerGrenade",
+   "mesh": "Weapon_StingerGrenade_Thrown_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_StingerGrenade\\Weapon_StingerGrenade_Thrown_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_StingerGrenade\\Weapon_StingerGrenade\\Texture2D\\Weapon_StingerGrenade_DiffSpec.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_StingerGrenade\\Weapon_StingerGrenade\\Texture2D\\Weapon_StingerGrenade_Norm.tga"
+   },
+   "spec_power": "",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_StingerGrenade"
+  },
+  {
+   "weapon": "Weapon_StunGun",
+   "mesh": "Weapon_StunGun_Clip_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_StunGun\\Weapon_StunGun_Clip_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_StunGun\\Weapon_StunGun\\Texture2D\\Weapon_StunGun_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_StunGun\\Weapon_StunGun\\Texture2D\\Weapon_StunGun_Norm.tga"
+   },
+   "spec_power": "Weapon_StunGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_StunGun"
+  },
+  {
+   "weapon": "Weapon_StunGun",
+   "mesh": "Weapon_StunGun_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_StunGun\\Weapon_StunGun_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_StunGun\\Weapon_StunGun\\Texture2D\\Weapon_StunGun_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_StunGun\\Weapon_StunGun\\Texture2D\\Weapon_StunGun_Norm.tga"
+   },
+   "spec_power": "Weapon_StunGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_StunGun"
+  },
+  {
+   "weapon": "Weapon_SubMachineGun",
+   "mesh": "Weapon_SubMachineGun_Nano_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SubMachineGun\\Weapon_SubMachineGun_Nano_LOD0.obj",
+   "material_slots": [
+    "Weapon_SubMachineGun_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SubMachineGun\\Weapon_SubMachineGun\\Texture2D\\Weapon_SubMachineGun_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SubMachineGun\\Weapon_SubMachineGun\\Texture2D\\Weapon_SubMachineGun_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SubMachineGun\\Weapon_SubMachineGun\\Texture2D\\Weapon_SubMachineGun_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SubMachineGun"
+  },
+  {
+   "weapon": "Weapon_SubMachineGun",
+   "mesh": "Weapon_SubMachineGun_Nano_Silenced_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SubMachineGun\\Weapon_SubMachineGun_Nano_Silenced_LOD0.obj",
+   "material_slots": [
+    "Weapon_SubMachineGun_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SubMachineGun\\Weapon_SubMachineGun\\Texture2D\\Weapon_SubMachineGun_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SubMachineGun\\Weapon_SubMachineGun\\Texture2D\\Weapon_SubMachineGun_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SubMachineGun\\Weapon_SubMachineGun\\Texture2D\\Weapon_SubMachineGun_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SubMachineGun"
+  },
+  {
+   "weapon": "Weapon_SubMachineGun",
+   "mesh": "Weapon_SubmachineGun_Silenced_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SubMachineGun\\Weapon_SubmachineGun_Silenced_LOD0.obj",
+   "material_slots": [
+    "Weapon_SubMachineGun_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SubMachineGun\\Weapon_SubMachineGun\\Texture2D\\Weapon_SubMachineGun_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SubMachineGun\\Weapon_SubMachineGun\\Texture2D\\Weapon_SubMachineGun_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SubMachineGun\\Weapon_SubMachineGun\\Texture2D\\Weapon_SubMachineGun_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SubMachineGun"
+  },
+  {
+   "weapon": "Weapon_SubMachineGun",
+   "mesh": "Weapon_SubMachineGun_Standard_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SubMachineGun\\Weapon_SubMachineGun_Standard_LOD0.obj",
+   "material_slots": [
+    "Weapon_SubMachineGun_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SubMachineGun\\Weapon_SubMachineGun\\Texture2D\\Weapon_SubMachineGun_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SubMachineGun\\Weapon_SubMachineGun\\Texture2D\\Weapon_SubMachineGun_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SubMachineGun\\Weapon_SubMachineGun\\Texture2D\\Weapon_SubMachineGun_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SubMachineGun"
+  },
+  {
+   "weapon": "Weapon_SubMachineGun",
+   "mesh": "Weapon_SubmachineGun_Stock_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SubMachineGun\\Weapon_SubmachineGun_Stock_LOD0.obj",
+   "material_slots": [
+    "Weapon_SubMachineGun_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SubMachineGun\\Weapon_SubMachineGun\\Texture2D\\Weapon_SubMachineGun_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SubMachineGun\\Weapon_SubMachineGun\\Texture2D\\Weapon_SubMachineGun_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SubMachineGun\\Weapon_SubMachineGun\\Texture2D\\Weapon_SubMachineGun_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SubMachineGun"
+  },
+  {
+   "weapon": "Weapon_SubMachineGun",
+   "mesh": "Weapon_SubmachineGun_Whisper_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_SubMachineGun\\Weapon_SubmachineGun_Whisper_LOD0.obj",
+   "material_slots": [
+    "Weapon_SubMachineGun_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SubMachineGun\\Weapon_SubMachineGun\\Texture2D\\Weapon_SubMachineGun_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SubMachineGun\\Weapon_SubMachineGun\\Texture2D\\Weapon_SubMachineGun_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_SubMachineGun\\Weapon_SubMachineGun\\Texture2D\\Weapon_SubMachineGun_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_SubMachineGun"
+  },
+  {
+   "weapon": "Weapon_TacticalAssaultRifle",
+   "mesh": "Weapon_TacticalAssaultRifle_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_TacticalAssaultRifle\\Weapon_TacticalAssaultRifle_LOD0.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_TacticalAssaultRifle\\Weapon_TacticalAssaultRifle\\Texture2D\\Weapon_TacticalAssaultRifle_DiffSpec.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_TacticalAssaultRifle\\Weapon_TacticalAssaultRifle\\Texture2D\\Weapon_TacticalAssaultRifle_Norm.tga"
+   },
+   "spec_power": "Weapon_TacticalAssaultRifle_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_TacticalAssaultRifle"
+  },
+  {
+   "weapon": "Weapon_TommyGun",
+   "mesh": "Weapon_TommyGun_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_TommyGun\\Weapon_TommyGun_LOD0.obj",
+   "material_slots": [
+    "Weapon_TommyGun_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_TommyGun\\Weapon_TommyGun\\Texture2D\\Weapon_TommyGun_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_TommyGun\\Weapon_TommyGun\\Texture2D\\Weapon_TommyGun_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_TommyGun\\Weapon_TommyGun\\Texture2D\\Weapon_TommyGun_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_TommyGun"
+  },
+  {
+   "weapon": "Weapon_TommyGun",
+   "mesh": "Weapon_TommyGun",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_TommyGun\\Weapon_TommyGun.obj",
+   "material_slots": [],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_TommyGun\\Weapon_TommyGun\\Texture2D\\Weapon_TommyGun_Diff.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_TommyGun\\Weapon_TommyGun\\Texture2D\\Weapon_TommyGun_Norm.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_TommyGun\\Weapon_TommyGun\\Texture2D\\Weapon_TommyGun_Spec.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_TommyGun"
+  },
+  {
+   "weapon": "Weapon_Vas",
+   "mesh": "Weapon_AssaultRifle_VAS-R2_Base_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Vas\\Weapon_AssaultRifle_VAS-R2_Base_LOD0.obj",
+   "material_slots": [
+    "Weapon_VAS_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Vas\\Weapon_Vas\\Texture2D\\Weapon_VAS_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Vas\\Weapon_Vas\\Texture2D\\Weapon_VAS_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Vas\\Weapon_Vas\\Texture2D\\Weapon_VAS_Specular.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Vas"
+  },
+  {
+   "weapon": "Weapon_Vas",
+   "mesh": "Weapon_AssaultRifle_VAS-R2_Sights_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Vas\\Weapon_AssaultRifle_VAS-R2_Sights_LOD0.obj",
+   "material_slots": [
+    "Weapon_VAS_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Vas\\Weapon_Vas\\Texture2D\\Weapon_VAS_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Vas\\Weapon_Vas\\Texture2D\\Weapon_VAS_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Vas\\Weapon_Vas\\Texture2D\\Weapon_VAS_Specular.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Vas"
+  },
+  {
+   "weapon": "Weapon_Vas",
+   "mesh": "Weapon_AssaultRifle_VAS-R2_Silenced_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Vas\\Weapon_AssaultRifle_VAS-R2_Silenced_LOD0.obj",
+   "material_slots": [
+    "Weapon_VAS_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Vas\\Weapon_Vas\\Texture2D\\Weapon_VAS_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Vas\\Weapon_Vas\\Texture2D\\Weapon_VAS_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Vas\\Weapon_Vas\\Texture2D\\Weapon_VAS_Specular.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Vas"
+  },
+  {
+   "weapon": "Weapon_Vas",
+   "mesh": "Weapon_LMG_VAS-SW2_Base_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Vas\\Weapon_LMG_VAS-SW2_Base_LOD0.obj",
+   "material_slots": [
+    "Weapon_VAS_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Vas\\Weapon_Vas\\Texture2D\\Weapon_VAS_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Vas\\Weapon_Vas\\Texture2D\\Weapon_VAS_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Vas\\Weapon_Vas\\Texture2D\\Weapon_VAS_Specular.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Vas"
+  },
+  {
+   "weapon": "Weapon_Vas",
+   "mesh": "Weapon_LMG_VAS-SW2_Handle_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Vas\\Weapon_LMG_VAS-SW2_Handle_LOD0.obj",
+   "material_slots": [
+    "Weapon_VAS_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Vas\\Weapon_Vas\\Texture2D\\Weapon_VAS_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Vas\\Weapon_Vas\\Texture2D\\Weapon_VAS_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Vas\\Weapon_Vas\\Texture2D\\Weapon_VAS_Specular.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Vas"
+  },
+  {
+   "weapon": "Weapon_Vas",
+   "mesh": "Weapon_LMG_VAS-SW2_Sights_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Vas\\Weapon_LMG_VAS-SW2_Sights_LOD0.obj",
+   "material_slots": [
+    "Weapon_VAS_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Vas\\Weapon_Vas\\Texture2D\\Weapon_VAS_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Vas\\Weapon_Vas\\Texture2D\\Weapon_VAS_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Vas\\Weapon_Vas\\Texture2D\\Weapon_VAS_Specular.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Vas"
+  },
+  {
+   "weapon": "Weapon_Vas",
+   "mesh": "Weapon_SMG_VAS-C2_Base_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Vas\\Weapon_SMG_VAS-C2_Base_LOD0.obj",
+   "material_slots": [
+    "Weapon_VAS_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Vas\\Weapon_Vas\\Texture2D\\Weapon_VAS_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Vas\\Weapon_Vas\\Texture2D\\Weapon_VAS_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Vas\\Weapon_Vas\\Texture2D\\Weapon_VAS_Specular.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Vas"
+  },
+  {
+   "weapon": "Weapon_Vas",
+   "mesh": "Weapon_SMG_VAS-C2_Sights_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Vas\\Weapon_SMG_VAS-C2_Sights_LOD0.obj",
+   "material_slots": [
+    "Weapon_VAS_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Vas\\Weapon_Vas\\Texture2D\\Weapon_VAS_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Vas\\Weapon_Vas\\Texture2D\\Weapon_VAS_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Vas\\Weapon_Vas\\Texture2D\\Weapon_VAS_Specular.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Vas"
+  },
+  {
+   "weapon": "Weapon_Vas",
+   "mesh": "Weapon_SMG_VAS-C2_Silenced_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Vas\\Weapon_SMG_VAS-C2_Silenced_LOD0.obj",
+   "material_slots": [
+    "Weapon_VAS_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Vas\\Weapon_Vas\\Texture2D\\Weapon_VAS_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Vas\\Weapon_Vas\\Texture2D\\Weapon_VAS_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Vas\\Weapon_Vas\\Texture2D\\Weapon_VAS_Specular.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Vas"
+  },
+  {
+   "weapon": "Weapon_Vas",
+   "mesh": "Weapon_SniperRifle_VAS-PR1_Base_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Vas\\Weapon_SniperRifle_VAS-PR1_Base_LOD0.obj",
+   "material_slots": [
+    "Weapon_VAS_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Vas\\Weapon_Vas\\Texture2D\\Weapon_VAS_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Vas\\Weapon_Vas\\Texture2D\\Weapon_VAS_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Vas\\Weapon_Vas\\Texture2D\\Weapon_VAS_Specular.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Vas"
+  },
+  {
+   "weapon": "Weapon_Vas",
+   "mesh": "Weapon_SniperRifle_VAS-PR1_Sights_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Vas\\Weapon_SniperRifle_VAS-PR1_Sights_LOD0.obj",
+   "material_slots": [
+    "Weapon_VAS_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Vas\\Weapon_Vas\\Texture2D\\Weapon_VAS_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Vas\\Weapon_Vas\\Texture2D\\Weapon_VAS_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Vas\\Weapon_Vas\\Texture2D\\Weapon_VAS_Specular.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Vas"
+  },
+  {
+   "weapon": "Weapon_Vas",
+   "mesh": "Weapon_SniperRifle_VAS-PR1_Silenced_LOD0",
+   "obj": "D:\\APBReloaded\\Content\\Extracted\\Weapons_obj\\Weapon_Vas\\Weapon_SniperRifle_VAS-PR1_Silenced_LOD0.obj",
+   "material_slots": [
+    "Weapon_VAS_Default_MAT_INST"
+   ],
+   "textures": {
+    "Diffuse": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Vas\\Weapon_Vas\\Texture2D\\Weapon_VAS_Diffuse.tga",
+    "Normal": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Vas\\Weapon_Vas\\Texture2D\\Weapon_VAS_Normal.tga",
+    "Specular": "D:\\APBReloaded\\Content\\Extracted\\Weapons\\Weapon_Vas\\Weapon_Vas\\Texture2D\\Weapon_VAS_Specular.tga"
+   },
+   "spec_power": "Weapon_TommyGun_Spec",
+   "external_textures": false,
+   "dest": "/Game/Imported/Weapons/Weapon_Vas"
+  }
+ ]
+}

@@ -1,0 +1,148 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.0 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/WaterfrontDistrict/Ferry/Ferry.upk Ver: 564/33 Engine: 3908 Names: 91 Exports: 17 Imports: 25 Game: 80001D
+Loading Material3 WarningSigns_Mat from package MaterialDatabase/WaterfrontDistrict/Ferry/Ferry.upk
+Loading package: MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk Ver: 564/33 Engine: 3908 Names: 224 Exports: 488 Imports: 30 Game: 80001D
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading StaticMesh3 Lights from package MaterialDatabase/WaterfrontDistrict/Ferry/Ferry.upk
+Loading package: MaterialDatabase/MidtownDistrict/FeatureMaterials/MidtownDistrict_Lights.upk Ver: 564/33 Engine: 3908 Names: 188 Exports: 71 Imports: 41 Game: 80001D
+Loading package: MaterialDatabase/FinancialDistrict/FeatureMaterials/ExitSigns.upk Ver: 564/33 Engine: 3908 Names: 158 Exports: 78 Imports: 32 Game: 80001D
+Loading package: MaterialDatabase/MidtownDistrict/PropMaterials/FireObjects.upk Ver: 564/33 Engine: 3908 Names: 235 Exports: 61 Imports: 54 Game: 80001D
+Loading package: MaterialDatabase/MidtownDistrict/PropMaterials/SecurityCamera.upk Ver: 564/33 Engine: 3908 Names: 307 Exports: 70 Imports: 50 Game: 80001D
+Loading Texture2D WarningSigns from package MaterialDatabase/WaterfrontDistrict/Ferry/Ferry.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D bumps from package MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Material3 Lights_Wall_Roof_Interior from package MaterialDatabase/MidtownDistrict/FeatureMaterials/MidtownDistrict_Lights.upk
+BoolProperty: unknown UMaterial3 bEnableShadowCasting
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 exitsigns from package MaterialDatabase/FinancialDistrict/FeatureMaterials/ExitSigns.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 FireObjects_Mat from package MaterialDatabase/MidtownDistrict/PropMaterials/FireObjects.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 SecurityCamera_MAT from package MaterialDatabase/MidtownDistrict/PropMaterials/SecurityCamera.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+BoolProperty: unknown UMaterialExpressionVectorParameter bRealtimePreview
+Loading Texture2D Lights_Wall_Roof_Normal from package MaterialDatabase/MidtownDistrict/FeatureMaterials/MidtownDistrict_Lights.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D Lights_Wall_Roof_DiffSpec from package MaterialDatabase/MidtownDistrict/FeatureMaterials/MidtownDistrict_Lights.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Lights_Wall_Roof_Emissive from package MaterialDatabase/MidtownDistrict/FeatureMaterials/MidtownDistrict_Lights.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D ExitSigns_DiffAlpha from package MaterialDatabase/FinancialDistrict/FeatureMaterials/ExitSigns.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FireObjects_Norm from package MaterialDatabase/MidtownDistrict/PropMaterials/FireObjects.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D FireObjects_Emis from package MaterialDatabase/MidtownDistrict/PropMaterials/FireObjects.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FireObjects_DiffSpec from package MaterialDatabase/MidtownDistrict/PropMaterials/FireObjects.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D SecurityCamera_Norm from package MaterialDatabase/MidtownDistrict/PropMaterials/SecurityCamera.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D SecurityCamera_Emis from package MaterialDatabase/MidtownDistrict/PropMaterials/SecurityCamera.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D SecurityCamera_DiffSpec from package MaterialDatabase/MidtownDistrict/PropMaterials/SecurityCamera.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D SecurityCamera_Opac from package MaterialDatabase/MidtownDistrict/PropMaterials/SecurityCamera.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 506 allocs, 4.24 MBytes serialized in 85 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: WarningSigns_Mat
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[2] = { Texture2D'bumps', Texture2D'WarningSigns' }
+    Expressions[12] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'WarningSigns_Mat.MaterialExpressionTextureSample_1'
+        Expressions[1] = MaterialExpressionTextureSample'WarningSigns_Mat.MaterialExpressionTextureSample_2'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'WarningSigns' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_2
+ { Texture=Texture2D'bumps' }
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: Lights
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=108506, Y=-142846, Z=1076.87 }
+        BoxExtent = { X=3006.32, Y=7236.25, Z=487.135 }
+        SphereRadius = 7758.46
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[5] =
+            {
+                Sections[0] = { Material=Material3'Lights_Wall_Roof_Interior', FirstIndex=0, NumFaces=9112 }
+                Sections[1] = { Material=Material3'exitsigns', FirstIndex=27336, NumFaces=212 }
+                Sections[2] = { Material=Material3'FireObjects_Mat', FirstIndex=27972, NumFaces=396 }
+                Sections[3] = { Material=Material3'WarningSigns_Mat', FirstIndex=29160, NumFaces=308 }
+                Sections[4] = { Material=Material3'SecurityCamera_MAT', FirstIndex=30084, NumFaces=190 }
+            }
+            NumVerts = 23412
+            IndexCount = 30654
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: Texture2D ObjectName: WarningSigns
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 

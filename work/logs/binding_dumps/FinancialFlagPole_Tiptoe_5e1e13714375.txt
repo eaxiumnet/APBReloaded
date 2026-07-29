@@ -1,0 +1,86 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/FinancialDistrict/PropMaterials/FinancialFlagPole_Tiptoe.upk Ver: 564/33 Engine: 3908 Names: 178 Exports: 31 Imports: 46 Game: 80001D
+Loading Material3 FinancialFlagPole_Flag_Tiptoe_Mat from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialFlagPole_Tiptoe.upk
+Loading package: MaterialDatabase/FinancialDistrict/PropMaterials/FinancialFlagPole.upk Ver: 564/33 Engine: 3908 Names: 425 Exports: 1033 Imports: 59 Game: 80001D
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Texture2D FinancialFlagPoles_Tiptoe_DiffSpec_GameRes from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialFlagPole_Tiptoe.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FinancialFlagpoles_PannerMask from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialFlagPole.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FinancialFlagPoles_Flag_Norm from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialFlagPole.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loaded in 0.0 sec, 122 allocs, 0.46 MBytes serialized in 13 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: FinancialFlagPole_Flag_Tiptoe_Mat
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'FinancialFlagpoles_PannerMask'
+        ReferencedTextures[1] = Texture2D'FinancialFlagPoles_Flag_Norm'
+        ReferencedTextures[2] = Texture2D'FinancialFlagPoles_Tiptoe_DiffSpec_GameRes'
+    }
+    Expressions[11] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'FinancialFlagPole_Flag_Tiptoe_Mat.MaterialExpressionTextureSample_1'
+        Expressions[2] = MaterialExpressionTextureSample'FinancialFlagPole_Flag_Tiptoe_Mat.MaterialExpressionTextureSample_4'
+        Expressions[7] = MaterialExpressionTextureSample'FinancialFlagPole_Flag_Tiptoe_Mat.MaterialExpressionTextureSample_0'
+        Expressions[10] = MaterialExpressionTextureSample'FinancialFlagPole_Flag_Tiptoe_Mat.MaterialExpressionTextureSample_7'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.15
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'FinancialFlagPoles_Tiptoe_DiffSpec_GameRes' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'FinancialFlagPoles_Flag_Norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_4
+ { Texture=Texture2D'FinancialFlagpoles_PannerMask' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_7
+ { Texture=Texture2D'FinancialFlagPoles_Tiptoe_DiffSpec_GameRes' }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialFlagPoles_Tiptoe_DiffSpec_GameRes
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 

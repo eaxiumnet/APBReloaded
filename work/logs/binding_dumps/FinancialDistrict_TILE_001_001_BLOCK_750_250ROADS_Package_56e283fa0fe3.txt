@@ -1,0 +1,273 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.0 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: FinancialDistrict/Roads/FinancialDistrict_TILE_001_001_BLOCK_750_250ROADS_Package.upk Ver: 564/33 Engine: 3908 Names: 28 Exports: 8 Imports: 10 Game: 80001D
+Loading StaticMesh3 Road_Tile_001_001_Block_750_250_00000000000000bc_LOD_0 from package FinancialDistrict/Roads/FinancialDistrict_TILE_001_001_BLOCK_750_250ROADS_Package.upk
+BoolProperty: unknown UStaticMesh3 m_bRequiresCollisionData
+BoolProperty: unknown UStaticMesh3 m_bDiscardCPURenderData
+Loading package: MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk Ver: 564/33 Engine: 3908 Names: 272 Exports: 375 Imports: 37 Game: 80001D
+Loading package: MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Pathway.upk Ver: 564/33 Engine: 3908 Names: 185 Exports: 155 Imports: 36 Game: 80001D
+Loading package: MaterialDatabase/RoadEditorMaterials/RoadSurfaces_KerbStone.upk Ver: 564/33 Engine: 3908 Names: 100 Exports: 21 Imports: 12 Game: 80001D
+Loading StaticMesh3 Road_Tile_001_001_Block_750_250_00000000000000bc_LOD_1 from package FinancialDistrict/Roads/FinancialDistrict_TILE_001_001_BLOCK_750_250ROADS_Package.upk
+Loading StaticMesh3 Road_Tile_001_001_Block_750_250_00000000000000c6_LOD_0 from package FinancialDistrict/Roads/FinancialDistrict_TILE_001_001_BLOCK_750_250ROADS_Package.upk
+BoolProperty: unknown UStaticMesh3 m_bRequiresCollisionData
+BoolProperty: unknown UStaticMesh3 m_bDiscardCPURenderData
+Loading StaticMesh3 Road_Tile_001_001_Block_750_250_00000000000000c6_LOD_1 from package FinancialDistrict/Roads/FinancialDistrict_TILE_001_001_BLOCK_750_250ROADS_Package.upk
+Loading StaticMesh3 Road_Tile_001_001_Block_750_250_000000000000012d_LOD_0 from package FinancialDistrict/Roads/FinancialDistrict_TILE_001_001_BLOCK_750_250ROADS_Package.upk
+BoolProperty: unknown UStaticMesh3 m_bRequiresCollisionData
+BoolProperty: unknown UStaticMesh3 m_bDiscardCPURenderData
+Loading StaticMesh3 Road_Tile_001_001_Block_750_250_000000000000012d_LOD_1 from package FinancialDistrict/Roads/FinancialDistrict_TILE_001_001_BLOCK_750_250ROADS_Package.upk
+Loading Material3 Road_Supershader_Baked from package MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk
+Loading package: MaterialDatabase/GenericMaterials/Shared_Maps.upk Ver: 564/33 Engine: 3908 Names: 128 Exports: 50 Imports: 15 Game: 80001D
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 Concrete_Pathway from package MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Pathway.upk
+Loading package: MaterialDatabase/GenericMaterials/Concrete/Concrete.upk Ver: 564/33 Engine: 3908 Names: 220 Exports: 242 Imports: 32 Game: 80001D
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 RoadSurfaces_Kerb01 from package MaterialDatabase/RoadEditorMaterials/RoadSurfaces_KerbStone.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Texture2D Road_Supershader_Baked_LookupTexture from package MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Markings_NormAlph_TPage from package MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D noise2_NRM from package MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D Cracks_NormAlph from package MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D DirtOverlay_01 from package MaterialDatabase/GenericMaterials/Shared_Maps.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Surface_DarkAsphalt_DiffSpec from package MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Grime_TPage from package MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Markings_Pattern2 from package MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Sidewalk_SquareStone2_Norm from package MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Pathway.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D Sidewalk_SquareStone2_DiffSpec from package MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Pathway.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Concrete_01_DiffSpec from package MaterialDatabase/GenericMaterials/Concrete/Concrete.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D SquarePavementTints from package MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Pathway.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Kerb02_Norm from package MaterialDatabase/RoadEditorMaterials/RoadSurfaces_KerbStone.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D Kerb02_DiffSpec from package MaterialDatabase/RoadEditorMaterials/RoadSurfaces_KerbStone.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 676 allocs, 5.49 MBytes serialized in 141 calls.
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: Road_Tile_001_001_Block_750_250_00000000000000bc_LOD_0
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-96.936, Y=518.42, Z=2.28882e-05 }
+        BoxExtent = { X=1820.76, Y=1872.33, Z=5.00014 }
+        SphereRadius = 2609.69
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[3] =
+            {
+                Sections[0] = { Material=Material3'Road_Supershader_Baked', FirstIndex=0, NumFaces=136 }
+                Sections[1] = { Material=Material3'Concrete_Pathway', FirstIndex=408, NumFaces=68 }
+                Sections[2] = { Material=Material3'RoadSurfaces_Kerb01', FirstIndex=612, NumFaces=204 }
+            }
+            NumVerts = 822
+            IndexCount = 1224
+            NumTexCoords = 4
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: Road_Tile_001_001_Block_750_250_00000000000000bc_LOD_1
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-96.936, Y=518.42, Z=2.28882e-05 }
+        BoxExtent = { X=1820.76, Y=1872.33, Z=5.00014 }
+        SphereRadius = 2609.69
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[3] =
+            {
+                Sections[0] = { Material=Material3'Road_Supershader_Baked', FirstIndex=0, NumFaces=136 }
+                Sections[1] = { Material=Material3'Concrete_Pathway', FirstIndex=408, NumFaces=68 }
+                Sections[2] = { Material=Material3'RoadSurfaces_Kerb01', FirstIndex=612, NumFaces=204 }
+            }
+            NumVerts = 822
+            IndexCount = 1224
+            NumTexCoords = 4
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: Road_Tile_001_001_Block_750_250_00000000000000c6_LOD_0
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-50.1832, Y=-767.798, Z=-5.81741e-05 }
+        BoxExtent = { X=1195.83, Y=3453.44, Z=5.00034 }
+        SphereRadius = 3630.27
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[3] =
+            {
+                Sections[0] = { Material=Material3'Road_Supershader_Baked', FirstIndex=0, NumFaces=48 }
+                Sections[1] = { Material=Material3'Concrete_Pathway', FirstIndex=144, NumFaces=24 }
+                Sections[2] = { Material=Material3'RoadSurfaces_Kerb01', FirstIndex=216, NumFaces=72 }
+            }
+            NumVerts = 316
+            IndexCount = 432
+            NumTexCoords = 4
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: Road_Tile_001_001_Block_750_250_00000000000000c6_LOD_1
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-50.1832, Y=-767.798, Z=-5.81741e-05 }
+        BoxExtent = { X=1195.83, Y=3453.44, Z=5.00034 }
+        SphereRadius = 3630.27
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[3] =
+            {
+                Sections[0] = { Material=Material3'Road_Supershader_Baked', FirstIndex=0, NumFaces=48 }
+                Sections[1] = { Material=Material3'Concrete_Pathway', FirstIndex=144, NumFaces=24 }
+                Sections[2] = { Material=Material3'RoadSurfaces_Kerb01', FirstIndex=216, NumFaces=72 }
+            }
+            NumVerts = 316
+            IndexCount = 432
+            NumTexCoords = 4
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: Road_Tile_001_001_Block_750_250_000000000000012d_LOD_0
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-169.568, Y=10.2539, Z=6.67572e-06 }
+        BoxExtent = { X=5799.68, Y=2431.54, Z=5.0002 }
+        SphereRadius = 6061.83
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[3] =
+            {
+                Sections[0] = { Material=Material3'Road_Supershader_Baked', FirstIndex=0, NumFaces=88 }
+                Sections[1] = { Material=Material3'Concrete_Pathway', FirstIndex=264, NumFaces=44 }
+                Sections[2] = { Material=Material3'RoadSurfaces_Kerb01', FirstIndex=396, NumFaces=132 }
+            }
+            NumVerts = 548
+            IndexCount = 792
+            NumTexCoords = 4
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: Road_Tile_001_001_Block_750_250_000000000000012d_LOD_1
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-169.568, Y=10.2539, Z=6.67572e-06 }
+        BoxExtent = { X=5799.68, Y=2431.54, Z=5.0002 }
+        SphereRadius = 6061.83
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[3] =
+            {
+                Sections[0] = { Material=Material3'Road_Supershader_Baked', FirstIndex=0, NumFaces=88 }
+                Sections[1] = { Material=Material3'Concrete_Pathway', FirstIndex=264, NumFaces=44 }
+                Sections[2] = { Material=Material3'RoadSurfaces_Kerb01', FirstIndex=396, NumFaces=132 }
+            }
+            NumVerts = 548
+            IndexCount = 792
+            NumTexCoords = 4
+        }
+    }
+    LodCount = 1

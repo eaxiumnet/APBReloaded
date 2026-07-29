@@ -1,0 +1,32 @@
+{
+  "package": "PoolSign",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\FinancialDistrict\\Signs\\PoolSign.upk",
+  "district": "Financial",
+  "meshes": [
+    {
+      "mesh": "Plane",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "PoolSign_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "tempPoolSignDelete",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "PoolSign_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|poolsign_mat": [
+      "PoolSign"
+    ]
+  }
+}

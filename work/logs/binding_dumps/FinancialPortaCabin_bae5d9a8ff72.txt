@@ -1,0 +1,610 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/FinancialDistrict/PropMaterials/FinancialPortaCabin.upk Ver: 564/33 Engine: 3908 Names: 279 Exports: 117 Imports: 63 Game: 80001D
+Loading Material3 FinancialPortacabin_CRIME_MAT from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialPortaCabin.upk
+Loading package: MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk Ver: 564/33 Engine: 3908 Names: 153 Exports: 58 Imports: 26 Game: 80001D
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 FinancialPortacabin_Damage_MAT from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialPortaCabin.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 FinancialPortacabin_MAT from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialPortaCabin.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading MaterialInstanceConstant FinancialPortacabin_MAT_INST from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialPortaCabin.upk
+StrProperty: unknown UMaterialInstanceConstant RWTGuid
+ArrayProperty: unknown UMaterialInstanceConstant Channels
+Loading StaticMesh3 FinancialPortaCabin_Large from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialPortaCabin.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_12"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_12"
+Loading StaticMesh3 FinancialPortaCabin_Large_CRIME from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialPortaCabin.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_12"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_12"
+Loading StaticMesh3 FinancialPortaCabin_Large_Damage from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialPortaCabin.upk
+Loading StaticMesh3 FinancialPortaCabin_Large_StackDouble from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialPortaCabin.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_1"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_1"
+Loading StaticMesh3 FinancialPortaCabin_Small from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialPortaCabin.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_13"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_13"
+Loading StaticMesh3 FinancialPortaCabin_Small_CRIME from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialPortaCabin.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_13"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_13"
+Loading StaticMesh3 FinancialPortaCabin_Small_Damage from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialPortaCabin.upk
+Loading Texture2D FinancialPortaCabin_DiffSpec from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialPortaCabin.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FinancialPortaCabin_DiffSpec_CRIME from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialPortaCabin.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FinancialPortaCabin_Masks from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialPortaCabin.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FinancialPortaCabin_Masks_CRIME from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialPortaCabin.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FinancialPortaCabin_Norm from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialPortaCabin.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D FinancialPortaCabin_Norm_CRIME from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialPortaCabin.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D FinancialPortaCabinDamaged_Diff from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialPortaCabin.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FinancialPortaCabinDamaged_Norm from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialPortaCabin.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D Sky from package MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 474 allocs, 4.17 MBytes serialized in 117 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: FinancialPortacabin_CRIME_MAT
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'FinancialPortaCabin_Norm_CRIME'
+        ReferencedTextures[1] = Texture2D'FinancialPortaCabin_DiffSpec_CRIME'
+        ReferencedTextures[2] = Texture2D'Sky'
+        ReferencedTextures[3] = Texture2D'FinancialPortaCabin_Masks_CRIME'
+    }
+    Expressions[13] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'FinancialPortacabin_CRIME_MAT.MaterialExpressionTextureSample_1'
+        Expressions[2] = MaterialExpressionTextureSample'FinancialPortacabin_CRIME_MAT.MaterialExpressionTextureSample_2'
+        Expressions[5] = MaterialExpressionTextureSample'FinancialPortacabin_CRIME_MAT.MaterialExpressionTextureSample_5'
+        Expressions[12] = MaterialExpressionTextureSample'FinancialPortacabin_CRIME_MAT.MaterialExpressionTextureSample_3'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: Material3 ObjectName: FinancialPortacabin_Damage_MAT
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'FinancialPortaCabinDamaged_Norm'
+        ReferencedTextures[1] = Texture2D'FinancialPortaCabinDamaged_Diff'
+        ReferencedTextures[2] = Texture2D'FinancialPortaCabin_Masks'
+    }
+    Expressions[9] =
+    {
+        Expressions[1] = MaterialExpressionTextureSample'FinancialPortacabin_Damage_MAT.MaterialExpressionTextureSample_4'
+        Expressions[2] = MaterialExpressionTextureSample'FinancialPortacabin_Damage_MAT.MaterialExpressionTextureSample_1'
+        Expressions[8] = MaterialExpressionTextureSample'FinancialPortacabin_Damage_MAT.MaterialExpressionTextureSample_5'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: Material3 ObjectName: FinancialPortacabin_MAT
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'FinancialPortaCabin_Norm'
+        ReferencedTextures[1] = Texture2D'FinancialPortaCabin_DiffSpec'
+        ReferencedTextures[2] = Texture2D'Sky'
+        ReferencedTextures[3] = Texture2D'FinancialPortaCabin_Masks'
+    }
+    Expressions[13] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'FinancialPortacabin_MAT.MaterialExpressionTextureSample_1'
+        Expressions[2] = MaterialExpressionTextureSample'FinancialPortacabin_MAT.MaterialExpressionTextureSample_2'
+        Expressions[5] = MaterialExpressionTextureSample'FinancialPortacabin_MAT.MaterialExpressionTextureSample_5'
+        Expressions[12] = MaterialExpressionTextureSample'FinancialPortacabin_MAT.MaterialExpressionTextureSample_3'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'FinancialPortaCabin_Norm_CRIME' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_2
+ { Texture=Texture2D'FinancialPortaCabin_DiffSpec_CRIME' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_3
+ { Texture=Texture2D'FinancialPortaCabin_Masks_CRIME' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_5
+ { Texture=Texture2D'Sky' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'FinancialPortaCabinDamaged_Norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_4
+ { Texture=Texture2D'FinancialPortaCabinDamaged_Diff' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_5
+ { Texture=Texture2D'FinancialPortaCabin_Masks' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'FinancialPortaCabin_Norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_2
+ { Texture=Texture2D'FinancialPortaCabin_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_3
+ { Texture=Texture2D'FinancialPortaCabin_Masks' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_5
+ { Texture=Texture2D'Sky' }
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: FinancialPortacabin_MAT_INST
+    Parent = Material3'FinancialPortacabin_MAT'
+    ScalarParameterValues[0] = {}
+    TextureParameterValues[0] = {}
+    VectorParameterValues[0] = {}
+    BasePropertyOverrides = 
+    StaticParameters = 
+    RuntimeVirtualTextureParameterValues[0] = {}
+    FontParameterValues[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialPortaCabin_Large
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=4.57764e-05, Y=6.40259, Z=150 }
+        BoxExtent = { X=218.368, Y=637.61, Z=150 }
+        SphereRadius = 689.282
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialPortacabin_MAT', FirstIndex=0, NumFaces=244 }
+            }
+            NumVerts = 924
+            IndexCount = 732
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialPortaCabin_Large_CRIME
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=4.57764e-05, Y=6.40259, Z=150 }
+        BoxExtent = { X=218.368, Y=637.61, Z=150 }
+        SphereRadius = 689.282
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialPortacabin_CRIME_MAT', FirstIndex=0, NumFaces=244 }
+            }
+            NumVerts = 924
+            IndexCount = 732
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialPortaCabin_Large_Damage
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=13.2467, Y=-9.48596, Z=150.893 }
+        BoxExtent = { X=238.438, Y=645.082, Z=150.893 }
+        SphereRadius = 687.405
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialPortacabin_Damage_MAT', FirstIndex=0, NumFaces=768 }
+            }
+            NumVerts = 2808
+            IndexCount = 2304
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialPortaCabin_Large_StackDouble
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-60.7626, Y=-51.679, Z=300 }
+        BoxExtent = { X=279.131, Y=695.691, Z=300 }
+        SphereRadius = 806.965
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[2] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialPortacabin_MAT', FirstIndex=0, NumFaces=780 }
+            }
+            NumVerts = 3028
+            IndexCount = 2340
+            NumTexCoords = 1
+        }
+        Lods[1] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialPortacabin_MAT', FirstIndex=0, NumFaces=409 }
+            }
+            NumVerts = 1610
+            IndexCount = 1227
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 2
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialPortaCabin_Small
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=6.20105, Y=0, Z=150 }
+        BoxExtent = { X=220.826, Y=220.396, Z=150 }
+        SphereRadius = 343.754
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialPortacabin_MAT', FirstIndex=0, NumFaces=184 }
+            }
+            NumVerts = 684
+            IndexCount = 552
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialPortaCabin_Small_CRIME
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=6.20105, Y=0, Z=150 }
+        BoxExtent = { X=220.826, Y=220.396, Z=150 }
+        SphereRadius = 343.754
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialPortacabin_CRIME_MAT', FirstIndex=0, NumFaces=184 }
+            }
+            NumVerts = 684
+            IndexCount = 552
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialPortaCabin_Small_Damage
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-8.1873, Y=3.41145, Z=150.893 }
+        BoxExtent = { X=227.095, Y=223.808, Z=150.893 }
+        SphereRadius = 347.086
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialPortacabin_Damage_MAT', FirstIndex=0, NumFaces=420 }
+            }
+            NumVerts = 1572
+            IndexCount = 1260
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialPortaCabin_DiffSpec
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialPortaCabin_DiffSpec_CRIME
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialPortaCabin_Masks
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialPortaCabin_Masks_CRIME
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialPortaCabin_Norm
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialPortaCabin_Norm_CRIME
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialPortaCabinDamaged_Diff
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialPortaCabinDamaged_Norm
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source = 

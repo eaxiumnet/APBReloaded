@@ -1,0 +1,442 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/FinancialDistrict/PropMaterials/FinancialParkBench.upk Ver: 564/33 Engine: 3908 Names: 210 Exports: 72 Imports: 44 Game: 80001D
+Loading Material3 FinancialParkBench_Damage_Mat from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialParkBench.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 FinancialParkBench_Mat from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialParkBench.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+BoolProperty: unknown UMaterialExpressionVectorParameter bRealtimePreview
+BoolProperty: unknown UMaterialExpressionVectorParameter bRealtimePreview
+Loading StaticMesh3 financialparkbench from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialParkBench.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_1"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_1"
+Loading StaticMesh3 FinancialParkBench2 from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialParkBench.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_10"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_10"
+Loading StaticMesh3 FinancialParkBench2_Damage1 from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialParkBench.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_8"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_8"
+Loading StaticMesh3 FinancialParkBench2_Damage2 from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialParkBench.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_9"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_9"
+Loading StaticMesh3 FinancialParkBench_Damage1 from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialParkBench.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_4"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_4"
+Loading StaticMesh3 FinancialParkBench_Damage2 from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialParkBench.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_5"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_5"
+Loading Texture2D FinancialParkBench_Damage from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialParkBench.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FinancialParkBench_DiffSpec from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialParkBench.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FinancialParkBench_Norm from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialParkBench.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D ParkBench_Mask from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialParkBench.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 269 allocs, 1.84 MBytes serialized in 26 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: FinancialParkBench_Damage_Mat
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'FinancialParkBench_Norm'
+        ReferencedTextures[1] = Texture2D'FinancialParkBench_DiffSpec'
+        ReferencedTextures[2] = Texture2D'ParkBench_Mask'
+        ReferencedTextures[3] = Texture2D'FinancialParkBench_Damage'
+    }
+    Expressions[9] =
+    {
+        Expressions[1] = MaterialExpressionTextureSample'FinancialParkBench_Damage_Mat.MaterialExpressionTextureSample_5'
+        Expressions[2] = MaterialExpressionTextureSample'FinancialParkBench_Damage_Mat.MaterialExpressionTextureSample_12'
+        Expressions[3] = MaterialExpressionVectorParameter'FinancialParkBench_Damage_Mat.MaterialExpressionVectorParameter_3'
+        Expressions[4] = MaterialExpressionTextureSample'FinancialParkBench_Damage_Mat.MaterialExpressionTextureSample_13'
+        Expressions[7] = MaterialExpressionTextureSample'FinancialParkBench_Damage_Mat.MaterialExpressionTextureSample_15'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[1] =
+    {
+        CollectedVectorParameters[0] =
+        {
+            Value = { R=0.010398, G=0.101145, B=0.334458, A=1 }
+            Name = None
+            Group = None
+        }
+    }
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: Material3 ObjectName: FinancialParkBench_Mat
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'FinancialParkBench_Norm'
+        ReferencedTextures[1] = Texture2D'FinancialParkBench_DiffSpec'
+        ReferencedTextures[2] = Texture2D'ParkBench_Mask'
+    }
+    Expressions[7] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'FinancialParkBench_Mat.MaterialExpressionTextureSample_0'
+        Expressions[1] = MaterialExpressionTextureSample'FinancialParkBench_Mat.MaterialExpressionTextureSample_1'
+        Expressions[3] = MaterialExpressionTextureSample'FinancialParkBench_Mat.MaterialExpressionTextureSample_7'
+        Expressions[4] = MaterialExpressionVectorParameter'FinancialParkBench_Mat.MaterialExpressionVectorParameter_1'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[1] =
+    {
+        CollectedVectorParameters[0] =
+        {
+            Value = { R=0.010398, G=0.101145, B=0.334458, A=1 }
+            Name = None
+            Group = None
+        }
+    }
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_12
+ { Texture=Texture2D'FinancialParkBench_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_13
+ { Texture=Texture2D'ParkBench_Mask' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_15
+ { Texture=Texture2D'FinancialParkBench_Damage' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_5
+ { Texture=Texture2D'FinancialParkBench_Norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'FinancialParkBench_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'FinancialParkBench_Norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_7
+ { Texture=Texture2D'ParkBench_Mask' }
+
+Object info:
+============
+ClassName: MaterialExpressionVectorParameter ObjectName: MaterialExpressionVectorParameter_3
+    DefaultValue = { R=0.010398, G=0.101145, B=0.334458, A=1 }
+    ParameterName = None
+    Group = None
+
+Object info:
+============
+ClassName: MaterialExpressionVectorParameter ObjectName: MaterialExpressionVectorParameter_1
+    DefaultValue = { R=0.010398, G=0.101145, B=0.334458, A=1 }
+    ParameterName = None
+    Group = None
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: financialparkbench
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=11.6304, Y=0, Z=49.6122 }
+        BoxExtent = { X=32.5576, Y=120, Z=49.6458 }
+        SphereRadius = 132.962
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialParkBench_Mat', FirstIndex=0, NumFaces=328 }
+            }
+            NumVerts = 1004
+            IndexCount = 984
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialParkBench2
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0.0388489, Y=0, Z=23.5817 }
+        BoxExtent = { X=42.2407, Y=120, Z=23.6153 }
+        SphereRadius = 129.19
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialParkBench_Mat', FirstIndex=0, NumFaces=264 }
+            }
+            NumVerts = 772
+            IndexCount = 792
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialParkBench2_Damage1
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-2.53595, Y=1.89495, Z=25.4981 }
+        BoxExtent = { X=44.8204, Y=121.895, Z=25.5317 }
+        SphereRadius = 129.612
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[2] =
+            {
+                Sections[0] = { Material=Material3'FinancialParkBench_Damage_Mat', FirstIndex=0, NumFaces=304 }
+                Sections[1] = { Material=Material3'FinancialParkBench_Damage_Mat', FirstIndex=0, NumFaces=0 }
+            }
+            NumVerts = 888
+            IndexCount = 912
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialParkBench2_Damage2
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=2.21585, Y=3.3029, Z=27.4748 }
+        BoxExtent = { X=43.7839, Y=123.303, Z=27.5084 }
+        SphereRadius = 132.344
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[2] =
+            {
+                Sections[0] = { Material=Material3'FinancialParkBench_Damage_Mat', FirstIndex=0, NumFaces=300 }
+                Sections[1] = { Material=Material3'FinancialParkBench_Damage_Mat', FirstIndex=0, NumFaces=0 }
+            }
+            NumVerts = 872
+            IndexCount = 900
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialParkBench_Damage1
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=10.0674, Y=-3.98949, Z=49.6122 }
+        BoxExtent = { X=34.0626, Y=123.99, Z=49.6458 }
+        SphereRadius = 133.911
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialParkBench_Damage_Mat', FirstIndex=0, NumFaces=304 }
+            }
+            NumVerts = 886
+            IndexCount = 912
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialParkBench_Damage2
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=8.84385, Y=-5.2144, Z=49.6122 }
+        BoxExtent = { X=35.2365, Y=125.33, Z=49.6458 }
+        SphereRadius = 134.898
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialParkBench_Damage_Mat', FirstIndex=0, NumFaces=320 }
+            }
+            NumVerts = 934
+            IndexCount = 960
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialParkBench_Damage
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialParkBench_DiffSpec
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialParkBench_Norm
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: ParkBench_Mask
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 

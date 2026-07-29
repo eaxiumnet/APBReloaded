@@ -1,0 +1,181 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block02.upk Ver: 564/33 Engine: 3908 Names: 85 Exports: 18 Imports: 12 Game: 80001D
+Loading Material3 GFX_Eq from package MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block02.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 Neon_Glow from package MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block02.upk
+StrProperty: unknown UMaterial3 RWTGuid
+Loading StaticMesh3 MultiBars from package MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block02.upk
+Loading StaticMesh3 TheTowers from package MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block02.upk
+Loading Texture2D Bars from package MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block02.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Colour from package MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block02.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 120 allocs, 0.03 MBytes serialized in 3 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: GFX_Eq
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[2] = { Texture2D'Colour', Texture2D'Bars' }
+    Expressions[9] =
+    {
+        Expressions[4] = MaterialExpressionTextureSample'GFX_Eq.MaterialExpressionTextureSample_5'
+        Expressions[5] = MaterialExpressionTextureSample'GFX_Eq.MaterialExpressionTextureSample_6'
+        Expressions[6] = MaterialExpressionTextureSample'GFX_Eq.MaterialExpressionTextureSample_8'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: Material3 ObjectName: Neon_Glow
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[0] = {}
+    Expressions[1] = {  }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_5
+ { Texture=Texture2D'Colour' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_6
+ { Texture=Texture2D'Bars' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_8
+ { Texture=Texture2D'Colour' }
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: MultiBars
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=124260, Y=-136004, Z=1381.76 }
+        BoxExtent = { X=306.301, Y=25.9844, Z=750 }
+        SphereRadius = 810.137
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'GFX_Eq', FirstIndex=0, NumFaces=140 }
+            }
+            NumVerts = 392
+            IndexCount = 420
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: TheTowers
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=124289, Y=-136034, Z=2006.5 }
+        BoxExtent = { X=457.016, Y=0, Z=189.688 }
+        SphereRadius = 465.954
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'Neon_Glow', FirstIndex=0, NumFaces=298 }
+            }
+            NumVerts = 608
+            IndexCount = 894
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Bars
+    SizeX = 128
+    SizeY = 128
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 7
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Colour
+    SizeX = 128
+    SizeY = 128
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 7
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 

@@ -1,0 +1,153 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/FinancialDistrict/PropMaterials/AmmoVendingMachine.upk Ver: 564/33 Engine: 3908 Names: 174 Exports: 51 Imports: 36 Game: 80001D
+Loading Material3 AmmoVendingMachine from package MaterialDatabase/FinancialDistrict/PropMaterials/AmmoVendingMachine.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading MaterialInstanceConstant AmmoVendingMachine_BeaconBash_MAT from package MaterialDatabase/FinancialDistrict/PropMaterials/AmmoVendingMachine.upk
+StrProperty: unknown UMaterialInstanceConstant RWTGuid
+ArrayProperty: unknown UMaterialInstanceConstant Channels
+Loading StaticMesh3 AmmoVendingMachine_LOD0 from package MaterialDatabase/FinancialDistrict/PropMaterials/AmmoVendingMachine.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_3"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_3"
+Loading Texture2D AmmoVendingMachine_BeaconBash from package MaterialDatabase/FinancialDistrict/PropMaterials/AmmoVendingMachine.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D AmmoVendingMachine_DiffEmis from package MaterialDatabase/FinancialDistrict/PropMaterials/AmmoVendingMachine.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 121 allocs, 0.77 MBytes serialized in 20 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: AmmoVendingMachine
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[1] = { Texture2D'AmmoVendingMachine_DiffEmis' }
+    Expressions[6] =
+    {
+        Expressions[5] = MaterialExpressionTextureSampleParameter2D'AmmoVendingMachine.MaterialExpressionTextureSampleParameter2D_0'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[1] =
+    {
+        CollectedTextureParameters[0] = { Texture=Texture2D'AmmoVendingMachine_DiffEmis', Name=Texture, Group=None }
+    }
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'AmmoVendingMachine_BeaconBash' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSampleParameter2D ObjectName: MaterialExpressionTextureSampleParameter2D_0
+    ParameterName = Texture
+    Group = None
+    Texture = Texture2D'AmmoVendingMachine_DiffEmis'
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: AmmoVendingMachine_BeaconBash_MAT
+    Parent = Material3'AmmoVendingMachine'
+    ScalarParameterValues[0] = {}
+    TextureParameterValues[1] =
+    {
+        TextureParameterValues[0] =
+        {
+            ParameterInfo = 
+            ParameterValue = Texture2D'AmmoVendingMachine_BeaconBash'
+            ParameterName = Texture
+        }
+    }
+    VectorParameterValues[0] = {}
+    BasePropertyOverrides = 
+    StaticParameters = 
+    RuntimeVirtualTextureParameterValues[0] = {}
+    FontParameterValues[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: AmmoVendingMachine_LOD0
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0, Y=0, Z=112.932 }
+        BoxExtent = { X=49.7124, Y=85.9612, Z=112.932 }
+        SphereRadius = 149.528
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'AmmoVendingMachine', FirstIndex=0, NumFaces=418 }
+            }
+            NumVerts = 1452
+            IndexCount = 1254
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: Texture2D ObjectName: AmmoVendingMachine_BeaconBash
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: AmmoVendingMachine_DiffEmis
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 

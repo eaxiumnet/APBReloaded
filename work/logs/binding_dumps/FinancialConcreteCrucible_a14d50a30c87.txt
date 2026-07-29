@@ -1,0 +1,123 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/FinancialDistrict/PropMaterials/FinancialConcreteCrucible.upk Ver: 564/33 Engine: 3908 Names: 131 Exports: 14 Imports: 19 Game: 80001D
+Loading Material3 FinancialConcreteCrucible_Mat from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialConcreteCrucible.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading StaticMesh3 FinancialConcreteCrucible from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialConcreteCrucible.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_2"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_2"
+Loading Texture2D FinancialConcreteCrucible_DiffSpec from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialConcreteCrucible.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FinancialConcreteCrucible_Norm from package MaterialDatabase/FinancialDistrict/PropMaterials/FinancialConcreteCrucible.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loaded in 0.0 sec, 113 allocs, 1.10 MBytes serialized in 18 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: FinancialConcreteCrucible_Mat
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[2] =
+    {
+        ReferencedTextures[0] = Texture2D'FinancialConcreteCrucible_Norm'
+        ReferencedTextures[1] = Texture2D'FinancialConcreteCrucible_DiffSpec'
+    }
+    Expressions[3] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'FinancialConcreteCrucible_Mat.MaterialExpressionTextureSample_0'
+        Expressions[1] = MaterialExpressionTextureSample'FinancialConcreteCrucible_Mat.MaterialExpressionTextureSample_1'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'FinancialConcreteCrucible_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'FinancialConcreteCrucible_Norm' }
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinancialConcreteCrucible
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=12.7148, Y=0, Z=137.5 }
+        BoxExtent = { X=197.604, Y=180.254, Z=137.5 }
+        SphereRadius = 240.736
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'FinancialConcreteCrucible_Mat', FirstIndex=0, NumFaces=412 }
+            }
+            NumVerts = 1146
+            IndexCount = 1236
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialConcreteCrucible_DiffSpec
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialConcreteCrucible_Norm
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source = 

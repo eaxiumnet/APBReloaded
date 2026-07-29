@@ -1,0 +1,249 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.0 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAmmoStore.upk Ver: 564/33 Engine: 3908 Names: 97 Exports: 19 Imports: 12 Game: 80001D
+Loading Material3 AmmoStore_Mat from package MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAmmoStore.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading StaticMesh3 AmmoStore from package MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAmmoStore.upk
+Loading package: MaterialDatabase/MidtownDistrict/FeatureMaterials/ShopFront_Textures.upk Ver: 564/33 Engine: 3908 Names: 176 Exports: 105 Imports: 40 Game: 80001D
+Loading Texture2D AmmoStore_Diff from package MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAmmoStore.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D AmmoStore_Emiss from package MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAmmoStore.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D AmmoStore_Norm from package MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAmmoStore.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D AmmoStore_Opac from package MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAmmoStore.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D AmmoStore_Spec from package MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAmmoStore.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D FinancialAmmoStore_Diff from package MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAmmoStore.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Material3 RamRaidShopFront_MAT from package MaterialDatabase/MidtownDistrict/FeatureMaterials/ShopFront_Textures.upk
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Material3 PropGlass from package MaterialDatabase/MidtownDistrict/FeatureMaterials/ShopFront_Textures.upk
+Loading package: MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk Ver: 564/33 Engine: 3908 Names: 153 Exports: 58 Imports: 26 Game: 80001D
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading Texture2D RamRaidShopFront_Norm from package MaterialDatabase/MidtownDistrict/FeatureMaterials/ShopFront_Textures.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D RamRaidShopFront_DiffSpec from package MaterialDatabase/MidtownDistrict/FeatureMaterials/ShopFront_Textures.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading TextureCube3 SkyBlue from package MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk
+ByteProperty: unknown UTextureCube3 LODCategory
+Loading Texture2D Cube_L from package MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Cube_R from package MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Cube_F from package MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Cube_B from package MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Cube_T from package MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Cube_A from package MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 439 allocs, 4.81 MBytes serialized in 84 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: AmmoStore_Mat
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[5] =
+    {
+        ReferencedTextures[0] = Texture2D'AmmoStore_Norm'
+        ReferencedTextures[1] = Texture2D'FinancialAmmoStore_Diff'
+        ReferencedTextures[2] = Texture2D'AmmoStore_Emiss'
+        ReferencedTextures[3] = Texture2D'AmmoStore_Spec'
+        ReferencedTextures[4] = Texture2D'AmmoStore_Opac'
+    }
+    Expressions[9] =
+    {
+        Expressions[0] = MaterialExpressionTextureSample'AmmoStore_Mat.MaterialExpressionTextureSample_0'
+        Expressions[1] = MaterialExpressionTextureSample'AmmoStore_Mat.MaterialExpressionTextureSample_2'
+        Expressions[3] = MaterialExpressionTextureSample'AmmoStore_Mat.MaterialExpressionTextureSample_3'
+        Expressions[5] = MaterialExpressionTextureSample'AmmoStore_Mat.MaterialExpressionTextureSample_5'
+        Expressions[8] = MaterialExpressionTextureSample'AmmoStore_Mat.MaterialExpressionTextureSample_7'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 1
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_0
+ { Texture=Texture2D'AmmoStore_Opac' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_2
+ { Texture=Texture2D'AmmoStore_Norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_3
+ { Texture=Texture2D'AmmoStore_Spec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_5
+ { Texture=Texture2D'FinancialAmmoStore_Diff' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_7
+ { Texture=Texture2D'AmmoStore_Emiss' }
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: AmmoStore
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-47.1086, Y=-0.0127411, Z=166.633 }
+        BoxExtent = { X=47.1116, Y=215.784, Z=166.634 }
+        SphereRadius = 276.673
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[5] =
+            {
+                Sections[0] = { Material=Material3'AmmoStore_Mat', FirstIndex=0, NumFaces=33 }
+                Sections[1] = { Material=Material3'RamRaidShopFront_MAT', FirstIndex=99, NumFaces=75 }
+                Sections[2] = { Material=Material3'PropGlass', FirstIndex=324, NumFaces=2 }
+                Sections[3] = { Material=Material3'AmmoStore_Mat', FirstIndex=0, NumFaces=0 }
+                Sections[4] = { Material=None, FirstIndex=0, NumFaces=0 }
+            }
+            NumVerts = 394
+            IndexCount = 330
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: Texture2D ObjectName: AmmoStore_Diff
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: AmmoStore_Emiss
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: AmmoStore_Norm
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: AmmoStore_Opac
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: AmmoStore_Spec
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FinancialAmmoStore_Diff
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 

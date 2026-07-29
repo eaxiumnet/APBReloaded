@@ -1,0 +1,7 @@
+2026-07-25T20:16:57.4973407+02:00 LOAD_GATE_RAW_LOG_START
+2026-07-25T20:16:57.5546507+02:00 LOAD_GATE_WORKLOAD district=Financial required=movement,combat,vehicle
+2026-07-25T20:16:57.5929449+02:00 LOAD_GATE_REQUEST map=Financial clients=2 duration_seconds=1800 latency_ms=0 loss_percent=0
+2026-07-25T20:16:57.6057248+02:00 LOAD_ASSIGNMENT identity=load_001 account=probe_load_001 host=localhost transport=local primary=movement workload=movement,combat,vehicle
+2026-07-25T20:16:57.6132510+02:00 LOAD_ASSIGNMENT identity=load_002 account=probe_load_002 host=localhost transport=local primary=combat workload=movement,combat,vehicle
+2026-07-25T20:16:57.6301144+02:00 LOAD_CONTRACT_READY clients=2 hosts=1 assignments=2 launch=skipped
+2026-07-25T20:16:57.6372281+02:00 LOAD_GATE_FAIL reason=validate_only_no_launch

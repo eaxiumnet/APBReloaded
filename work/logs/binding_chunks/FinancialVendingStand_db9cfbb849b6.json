@@ -1,0 +1,66 @@
+{
+  "package": "FinancialVendingStand",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\FinancialDistrict\\PropMaterials\\FinancialVendingStand.upk",
+  "district": "Financial",
+  "meshes": [
+    {
+      "mesh": "FinancialVendingStand",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialVendingStand_MAT",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "VendingStand_Massive_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialVendingStand_Damage1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialVendingStand_Damage_MAT",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "VendingStand_Massive_Damage_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialVendingStand_Damage2",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialVendingStand_Damage_MAT",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "VendingStand_Massive_Damage_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|financialvendingstand_damage_mat": [
+      "FinancialVendingStand"
+    ],
+    "material3|financialvendingstand_mat": [
+      "FinancialVendingStand"
+    ],
+    "material3|vendingstand_massive_damage_mat": [
+      "FinancialVendingStand"
+    ],
+    "material3|vendingstand_massive_mat": [
+      "FinancialVendingStand"
+    ]
+  }
+}

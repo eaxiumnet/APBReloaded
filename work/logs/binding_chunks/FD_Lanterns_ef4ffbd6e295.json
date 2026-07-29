@@ -1,0 +1,199 @@
+{
+  "package": "FD_Lanterns",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\FinancialDistrict\\PropMaterials\\FD_Lanterns.upk",
+  "district": "Financial",
+  "meshes": [
+    {
+      "mesh": "FloodlightBase",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialParkBench_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "Conc_BlueGrey",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "Grass_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 3,
+          "material": "Lanterns_SmallLights",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "floodLights",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Lanterns_SmallLights",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Lanterns_SmallLights",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Gate_Lights",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Lanterns",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Gate_Lights_small",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Lanterns_SmallLights",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "GroundLight",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Lanterns_SmallLights",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Metal_M04_DarkBlue",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Lantern_Sphere_01",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Lanterns",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "PagodaLanterns",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Lanterns",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "PagodaLights",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Lanterns_SmallLights",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "ToriGate",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Conc_Grey",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "WoodPlank_Painted_Green",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "Roof_Corrugated_Orange",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 3,
+          "material": "Wood_Vertical_Dark",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "WoodenLanterns",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "WoodPlank_Painted_Green",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 1,
+          "material": "Lanterns",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|lanterns": [
+      "FD_Lanterns"
+    ],
+    "materialinstanceconstant|lanterns_smalllights": [
+      "FD_Lanterns"
+    ],
+    "material3|financialparkbench_mat": [
+      "FinancialParkBench"
+    ],
+    "materialinstanceconstant|conc_bluegrey": [
+      "Concrete"
+    ],
+    "material3|grass_mat": [
+      "Grass"
+    ],
+    "materialinstanceconstant|metal_m04_darkblue": [
+      "Metal"
+    ],
+    "materialinstanceconstant|conc_grey": [
+      "Concrete"
+    ],
+    "materialinstanceconstant|woodplank_painted_green": [
+      "Woods"
+    ],
+    "materialinstanceconstant|roof_corrugated_orange": [
+      "Roof_Corrugated"
+    ],
+    "materialinstanceconstant|wood_vertical_dark": [
+      "Woods"
+    ],
+    "material3|conc_parent": [
+      "Concrete"
+    ],
+    "material3|metal_parent": [
+      "Metal"
+    ],
+    "material3|woodplank_painted_parent": [
+      "Woods"
+    ],
+    "material3|roof_corrugated_mat": [
+      "Roof_Corrugated"
+    ],
+    "material3|wood_parent": [
+      "Woods"
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "package": "FinancialDistrict_TILE_001_000_BLOCK_250_500ROADS_Package",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\FinancialDistrict\\Roads\\FinancialDistrict_TILE_001_000_BLOCK_250_500ROADS_Package.upk",
+  "district": "Financial",
+  "meshes": [
+    {
+      "mesh": "Road_Tile_001_000_Block_250_500_00000000000000fe_LOD_0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Road_Supershader_Baked",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "Concrete_Pathway_Plain",
+          "material_class": "Material3"
+        },
+        {
+          "index": 2,
+          "material": "RoadSurfaces_Kerb01",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Road_Tile_001_000_Block_250_500_00000000000000fe_LOD_1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Road_Supershader_Baked",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "Concrete_Pathway_Plain",
+          "material_class": "Material3"
+        },
+        {
+          "index": 2,
+          "material": "RoadSurfaces_Kerb01",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|road_supershader_baked": [
+      "RoadSurfaces_Lanes"
+    ],
+    "material3|concrete_pathway_plain": [
+      "RoadSurfaces_Pathway"
+    ],
+    "material3|roadsurfaces_kerb01": [
+      "RoadSurfaces_KerbStone"
+    ]
+  }
+}

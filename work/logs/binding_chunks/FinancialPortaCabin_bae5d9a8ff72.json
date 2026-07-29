@@ -1,0 +1,91 @@
+{
+  "package": "FinancialPortaCabin",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\MaterialDatabase\\FinancialDistrict\\PropMaterials\\FinancialPortaCabin.upk",
+  "district": "Financial",
+  "meshes": [
+    {
+      "mesh": "FinancialPortaCabin_Large",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialPortacabin_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialPortaCabin_Large_CRIME",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialPortacabin_CRIME_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialPortaCabin_Large_Damage",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialPortacabin_Damage_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialPortaCabin_Large_StackDouble",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialPortacabin_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialPortaCabin_Small",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialPortacabin_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialPortaCabin_Small_CRIME",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialPortacabin_CRIME_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialPortaCabin_Small_Damage",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialPortacabin_Damage_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|financialportacabin_crime_mat": [
+      "FinancialPortaCabin"
+    ],
+    "material3|financialportacabin_damage_mat": [
+      "FinancialPortaCabin"
+    ],
+    "material3|financialportacabin_mat": [
+      "FinancialPortaCabin"
+    ],
+    "materialinstanceconstant|financialportacabin_mat_inst": [
+      "FinancialPortaCabin"
+    ]
+  }
+}

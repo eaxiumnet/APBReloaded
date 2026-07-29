@@ -1,0 +1,5675 @@
+{
+  "package": "FinancialDistrict_Features",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\FinancialDistrict\\Features\\FinancialDistrict_Features.upk",
+  "district": "Financial",
+  "meshes": [
+    {
+      "mesh": "1Plain_RollerBlindClosed_7168543d-bdaf-4996-b88c-2d8fe9bc3e47",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "PropGlass",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "2Cross_CurtainsClosed_c10af92b-5a77-4792-a27c-32ea67718c6e",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "PropGlass",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "2Plain_BlindsClosed_da7c6821-26f1-4a8b-8dd4-62a8c743d8be",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "PropGlass",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Alarm_Bell_860f15dd-b576-439f-9c04-c0a03a5c2e5e",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Alarm_Bell_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Alarm_Box_b9b29d1c-1c2d-4ad3-b557-f589631c7cfe",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Alarm_Box_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Alarm_Box_LOD2_c39eff2c-ea64-463d-9220-273e400bc695",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Alarm_Light_8f1318ce-bbc8-494a-b172-5d057852ca87",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Alarm_Light_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "AmmoStore_Rectangle_ef803ab8-390b-468b-8bc1-dd1b834be1ec",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Shop_AmmoStore_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "AmmoStore_Square_499d1fb9-9057-4cc0-b918-287b71578d2f",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Shop_AmmoStore_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "BackDoor_FireExit  DELETE_85163149-7ce3-4f98-b89f-f60b180a851f",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "BackDoor_FireExit_85163149-7ce3-4f98-b89f-f60b180a851f",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "BackDoor_FireExitLight_7e0eb153-307a-464d-877a-d418e4bc0d29",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "BackDoor_FireExitLight_LOD0_a2cc6b6a-a810-4c1c-9fdd-65bfb5274ec9",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "BackDoor_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "BackDoor_Screen_e2f1d6ca-ecf4-43ef-99be-d5fd969bbaf4",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "BackDoor_Screen_LOD2_f25502e1-2158-49f2-a9dc-47ab811ab79d",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "BackDoor_Vents (Copy)_5510fe5c-b4c9-489a-aa0c-166b4d4c7a2d",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "BackDoor_Vents_642f06d5-1a7d-4dd9-9a34-4b6155f41db9",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "BackDoor_Vents_LOD2_84b16969-cb5d-4eb8-8ee7-0134155aceb0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "BoardedDoor_Double_f0ff2c82-8872-4832-9fef-ce8c143ff1f4",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "BoardedDoor_Double_LOD2_6d696d5f-cd05-486f-a099-0cd42eb4db81",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "BoardedDoors_Single_bdb2504f-dd95-4758-8292-956ed01644e6",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "BoardedDoors_Single_LOD2_662c7a22-5d62-4330-9780-2e956e61c716",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "BoardedWindow_Double_485492ec-2e4a-430a-8de3-d6f6e33cd60d",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "BoardedWindow_Double_LOD2_e4475087-effc-43ec-a167-45c810ddfbfd",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "BoardedWindow_Frame_9a7d145d-7b78-4090-a36a-f8bebea914a3",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "BoardedWindow_Frame_LOD2_d33d801e-94b2-4af2-8d2d-343602f3c2df",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "BoardedWindow_Inside_2d1c16a0-a0b8-4a53-8676-51d12216e7e1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "BoardedWindow_Inside_LOD2_32b87b64-4924-444e-9dfb-28efc97b9e4f",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "BoardedWindow_Outside_a95d4659-7f0d-48d8-a682-ad1bef3a1442",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "BoardedWindow_Outside_LOD2_9b79da64-89f2-4234-9b9b-8407622aec61",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "BoardedWindow_Patchy_a48620ad-2db5-4a55-93e3-b1c96e619045",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "BoardedWindow_Patchy_LOD2_427f16cd-de76-456c-8de8-f41f961e9e28",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Branded_Rectangle_2f9b3840-a9c5-45fa-a9aa-061fdbf4a583",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Restaurant_Cafe_Branded_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Branded_Square_eddb7cc9-41a5-4347-a17a-01504a65d541",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Restaurant_Cafe_Branded_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "ChopShop1_rectangle_597796ca-f025-4acd-b2d0-a0a4b0b95725",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FD_OWT_ChopShop1_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "ChopShop1_square_8ed3c3af-acca-4c09-805a-3733c0811790",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FD_OWT_ChopShop1_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "ChopShop2_rectangle_cc631d03-daab-4bd6-a3b4-399f40f2dafa",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FD_OWT_ChopShop2_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "ChopShop2_square_8bca3e1a-d0d8-46f3-986b-71ec97e11811",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FD_OWT_ChopShop2_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "ChopShop3_rectangle_ddea5fa3-10c3-44d2-9c04-3ce226ca6b76",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FD_OWT_ChopShop3_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "ChopShop3_square_b5169595-b59b-4a6f-b31d-84f1341a0144",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FD_OWT_ChopShop3_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "ChopShop4_rectangle_1aa2b7da-861c-46fa-b42b-47096daea7d8",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FD_OWT_ChopShop4_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "ChopShop4_square_417a8ec7-591d-4651-a725-03e5aaf12187",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FD_OWT_ChopShop4_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "CityDiner2_Rectangle_54bf0bd6-7ebc-4dd7-83a7-2f0aaa282714",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Restaurant_Diner_CityDiner2_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "CityDiner2_Square_765b6cc5-2a2c-451b-8cab-44bfd1e4481e",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Restaurant_Diner_CityDiner2_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "CityDiner_Rectangle_8c63d3b6-5455-409a-a01c-abdf226e25e9",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Restaurant_Diner_CityDiner_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "CityDiner_Square_b0c980ee-993f-4a48-a92c-cfdaa8ac85e7",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Restaurant_Diner_CityDiner_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Clock_LargeBlack_f2b1de7e-448d-47b4-9146-c32d66c86f96",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Clock_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Clock_LargeBlack_LOD1_69306803-1a20-4189-928a-bea291ca8a96",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Clock_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Clock_LargeBrass_90c5c637-e743-474e-856f-ed85273231fd",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Clock_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Clock_LargeBrass_LOD1_09c54819-c8b0-4701-b36a-b38bfab4f0e3",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Clock_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Clock_LargeChrome_6b7bc357-c61b-4f03-ae3a-a1fb3261443d",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Clock_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Clock_SmallBlack_0acb3a13-a1c8-467e-8d00-7d55dcd047ce",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Clock_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Clock_SmallChrome_b3276b5a-e251-4eec-aaaf-7603f502869c",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Clock_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Cocktail_Rectangle_d2626eec-0518-49ed-971f-7c4e08fb89cd",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Restaurant_Bar_Cocktail_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Cocktail_Square_113f93f0-ee18-405e-a5ef-6e2a3944785b",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Restaurant_Bar_Cocktail_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "CommercialWindows_FlipPane_HandleDouble_fccae0ab-9799-43d1-98f5-c2d1fdb1f714",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "CommercialWindows_FlipPane_HandleDouble_LOD0_9f787269-ebf8-4ab5-8807-b3f8b80298ea",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "CommercialWindows_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "CommercialWindows_FlipPane_HandleDouble_LOD2_79f88da4-82f5-42d4-abf9-2b70b047ed13",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "CommercialWindows_FlipPane_HandleDoubleOpen_ae9e176c-f53b-44e1-8805-b834b3b3caf2",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "CommercialWindows_FlipPane_HandleDoubleOpen_LOD2_6cd8ba27-7d49-444b-a8c4-0a1aee8e1620",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "CommercialWindows_FlipPane_HandleSingle_9f51a4fa-83a7-4165-aa31-00a2bfaef8c7",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "CommercialWindows_FlipPane_HandleSingle_LOD2_17b4b778-c94e-4cbb-8f89-7ff06524d342",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "CommercialWindows_FlipPane_HandleSingleOpen_07fdfdfb-5d4e-4d0c-96fb-e3128dc47dbe",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "CommercialWindows_FlipPane_HandleSingleOpen_LOD2_68caa2fc-1518-4b95-aa19-112dae65142e",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "CommercialWindows_HandleDouble_386fa7ac-1ced-4f8a-8bc9-0408e9c9f8b8",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "CommercialWindows_HandleDouble_LOD2_4e9f8bbd-5a6c-4db5-a63f-e5871e0156d0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "CommercialWindows_HandleDoubleOpen_27585d9f-2e4e-4259-84c6-bcce0e033b16",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "CommercialWindows_HandleDoubleOpen_LOD2_69c30f7a-082a-4454-ba64-338be1bbafdd",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "CommercialWindows_HandleSingle_90b9a146-e41e-415d-ad6e-42aa08449452",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "CommercialWindows_HandleSingle_LOD2_cc134575-c353-48be-a549-f9d7a708aafb",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "CommercialWindows_HandleSingleOpen_3adc23e4-3d09-42c1-b8cd-ba7f889d44e6",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "CommercialWindows_HandleSingleOpen_LOD2_94e1394d-96a7-4d3c-8099-1a53c1afe946",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "CommercialWindows_ThinFrameDoubleLedge_4e993d11-3366-408a-9e1a-835f9dc6e089",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "CommercialWindows_ThinFrameDoubleLedge_LOD0_1dca206f-2b66-460c-9ef6-87dc09eb09fe",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "CommercialWindows_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "CommercialWindows_ThinFrameDoubleLedge_LOD1_a0ef9d6c-97ae-4462-a5f6-40c495923e17",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "CommercialWindows_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "CommercialWindows_ThinFrameDoubleLedge_LOD2_25a872a1-80b6-420b-a538-827e674ff856",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "CommercialWindows_ThinFrameSingle_7d4ae104-586f-4fd3-bbd3-8d14cbc01c8e",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "CommercialWindows_ThinFrameSingle_LOD2_46a034de-4097-4092-aec9-ae013e2d273b",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "CommercialWindows_ThinFrameSingleLedge_1ad7277d-76ac-4c3a-a37a-486bdad85835",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "CommercialWindows_ThinFrameSingleLedge_LOD2_aeaba99f-3c44-45ed-b9ea-55bf48d55eb7",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "CommercialWindows_ThinFrameTriple_e494ec19-3669-470b-a914-f593b54e86bd",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "CommercialWindows_ThinFrameTriple_LOD2_108099ce-5af3-438d-9416-780488c14f8a",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "CommercialWindows_ThinFrameTripleLedge_e4486180-81d2-4568-937a-25f34700add1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "CommercialWindows_ThinFrameTripleLedge_LOD2_67885d3c-e96c-4fd1-8790-70b920abbc53",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Corner_Rectangle_64005d7d-0d24-4ca8-84a8-0411cf38994e",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Shop_GroceryStore_Corner_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Corner_Square_c61f3de0-5396-4dc1-8aef-da395b96cfaf",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Shop_GroceryStore_Corner_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "CutPrice_Rectangle_33d67c2a-62ff-4301-91ef-19a96ef11143",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Shop_LawFirm_CutPrice_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "CutPrice_Square_37d6ae73-6b13-483d-b652-7771b98f73a1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Shop_LawFirm_CutPrice_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Door_Oldstone_Double_bc20177c-67bc-47a4-9aae-ff5d9a563687",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Door_Oldstone_DoubleLarge_44bd0f7d-114f-4b2a-b839-20c1058e6f6a",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Door_Oldstone_DoubleWndw_e9a063c1-d4c4-466d-9237-5b677c14b73f",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Door_Oldstone_LargeDoubleDoor_44bd0f7d-114f-4b2a-b839-20c1058e6f6a",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "Glass_Transparent_DirtyNoReflection_Interior",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Door_Oldstone_LargeDoubleDoor_LOD2_8905ccc9-8a75-4198-a3fa-7ac9db090ebf",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Door_Oldstone_LargeDoubleDoorway_d0bd8049-c699-4252-b094-aff4831d7fb1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Door_Oldstone_LargeSingle_6ef22f79-dbc0-4889-b66c-f1e8f006c967",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "Glass_Transparent_DirtyNoReflection_Interior",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Door_Oldstone_LargeSingle_LOD2_0ea1c112-2ab0-4e2d-a91d-e45bb2db0024",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Door_Oldstone_Single_c5935447-2d6b-403a-aaff-866cf4e63edf",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Door_Oldstone_SingleWndw_6ef22f79-dbc0-4889-b66c-f1e8f006c967",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Door_Oldstone_SmallDoubleDoor_bc20177c-67bc-47a4-9aae-ff5d9a563687",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Door_Oldstone_SmallDoubleDoor_LOD2_77c8c262-7937-4895-b81d-72d947cff835",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Door_Oldstone_SmallSingle_c5935447-2d6b-403a-aaff-866cf4e63edf",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Door_Rear_PaintedWood_2acd7d31-f1c7-4352-8a71-eb91cf16bc28",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Door_Rear_PaintedWood",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Door_Wood_Single_b3cb3865-bb14-40c1-add1-f48736b3ec5f",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "DoorMiddle_655222a0-1122-4993-a6e4-8f11a432f198",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "Conc_Grey",
+          "material_class": "MaterialInstanceConstant"
+        },
+        {
+          "index": 2,
+          "material": "Glass",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "DoorRight_0bba0c5c-ef68-48be-978d-80e3f26afbf9",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        },
+        {
+          "index": 2,
+          "material": "Glass",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Doors_Residential1_Panel_5fa4b99d-1c02-4654-9e42-c271a73c6eaa",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Doors_Residential1_Panel_LOD2_a21f271d-fe9e-4f9b-8b92-ad11b9fa96dc",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Doors_Residential1_Plain_8d43829b-9b84-4631-b899-58e5d7ffadef",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Doors_Residential1_Plain_df42f160-fcb7-4115-b6a6-1dc6b05fae4d",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Doors_Residential1_Plain_LOD2_124b0180-918b-4743-a817-19154734b9b8",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Doors_Residential1_Window_8d43829b-9b84-4631-b899-58e5d7ffadef",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Doors_Residential1_Window_df42f160-fcb7-4115-b6a6-1dc6b05fae4d",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Doors_Residential1_Window_LOD0_d250b815-8c8b-4652-a887-bd1b1688ce8d",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "ResidentialDoors1_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Doors_Residential1_Window_LOD2_4687e224-e697-41e0-8d4a-c36b0ef97c38",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "DoorsBoarded_Clean1_efd0dd4f-87a6-4c9e-881d-c423fa1cdfb1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "DoorsBoarded_Clean2_f207dbd3-f1de-4e80-a150-0bbddd4be4b2",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "DoorsBoarded_Clean3_69f17e53-35a9-47d8-8403-415d2c809f8f",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "DoorsBoarded_Clean3_LOD2_f9b697c4-5331-4e6c-90a2-3f08024ac418",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "DoorsBoarded_Patched1_a0d4cc37-005b-4aef-a1d7-723041e7e62e",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "DoorsBoarded_Patched3_ccdeeef8-364d-4ce1-9b05-1fbb0a53ebe3",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "DoubleBarTop_63cdf764-1c79-45f6-8a6a-92746844b8a7",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "WindowGlass",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "DoubleDoor_657ca60c-323a-4d43-a982-c40663377d4e",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "Glass",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Everyday_Rectangle_9410d515-e7aa-4f89-9e82-ee4614a23d5d",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Restaurant_Cafe_Everyday_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Everyday_Square_f89f0559-4607-4787-99dc-4eca8c9d22c6",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Restaurant_Cafe_Everyday_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "ExitSign_98fdb552-1624-48f8-b166-0df0a9dd525c",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ExitSign_LOD2_a6288fad-4ffe-4b4b-983a-009195061bfe",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ExitSignArrow_Left_862347f4-b53f-400b-b05b-953184d927c0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ExitSignArrow_Left_LOD2_6ff35077-e817-4bc6-93ff-a92a8e371b45",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ExitSignArrow_Right_25d85896-e4fd-4923-a8ad-e5cbc777fbda",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ExitSignArrow_Right_LOD2_ff52731b-c8e3-4551-9404-81d3173b83c1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Expensive_Rectangle_ab74cdc4-bcd8-49c0-b076-bb4569276ba6",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Shop_LawFirm_Expensive_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Expensive_Square_c627b387-d383-40fa-9f6a-44176c6944c1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Shop_LawFirm_Expensive_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FastFood_Rectangle_da5ed9a2-6507-40d5-8135-c57848b073ea",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Signage_Asian_FastFood_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FastFood_Square_dde8f7f9-81c2-4d61-af27-5804edd58dbe",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Signage_Asian_FastFood_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FD_Enforcer01_rectangle_88009625-e647-411b-9ddc-9df22864fbfc",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FD_OWT_Enforcer01_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FD_Enforcer01_square_117d513d-640d-4795-8a5b-bc68682b271d",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FD_OWT_Enforcer01_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FD_Enforcer02_rectangle_c7e4d280-99bc-43d3-9151-288522c688e4",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FD_OWT_Enforcer02_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FD_Enforcer02_square_a21bb9fe-4f68-4e48-a6c5-69d5cd93f83f",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FD_OWT_Enforcer02_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FD_Enforcer03_rectangle_d992d1cf-e9bc-4cff-973b-0e33161a604e",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FD_OWT_Enforcer03_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FD_Enforcer03_square_5daf54da-1f72-4d14-99da-e6119bacb6f4",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FD_OWT_Enforcer03_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FD_Enforcer04_rectangle_72cab642-1b3e-44c5-b6e1-3318169ebf6d",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FD_OWT_Enforcer04_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FD_Enforcer04_square_822a26ce-da59-44b1-9dcd-eddb4eeed9f9",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FD_OWT_Enforcer04_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialAirConditioningUnit_55f38231-54aa-485f-99b1-46461842e555",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialAirConditioningUnit_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialAirConditioningUnit_LOD2_630e4136-434e-4f9c-a8b5-524a3a78ab7b",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialAirConditioningUnit_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialCenter_Rectangle_79b27cf8-2452-4ca3-9155-38dd676582ef",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Restaurant_Cafe_FinancialCenter_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialCenter_Square_23fbcead-d050-44c2-90f0-9c7b8b5103f5",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Restaurant_Cafe_FinancialCenter_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDoors_Office1_Double_7b3904aa-d340-4c9d-9027-313e96e54d46",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "PropGlass",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDoors_Office1_Double_Framed_71daec33-66fd-4052-952f-4cf9c92fcc37",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "PropGlass",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDoors_Office1_Double_Framed_LOD0_ad547b79-b4ca-4527-bc3e-09876701d774",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialDoors_Office1_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "PropGlass",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDoors_Office1_Double_Framed_LOD2_cd30a54e-fbf8-40d4-88a1-c93f99cfc91b",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDoors_Office1_Double_LOD0_22a36988-cb2f-4c82-9c4c-7a0853676b7e",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialDoors_Office1_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "PropGlass",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDoors_Office1_Double_LOD1_7f974856-4425-4bf0-bb4b-04bd8472f325",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialDoors_Office1_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "PropGlass",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDoors_Office1_Double_LOD2_626ce387-a400-4430-b039-62015c15759a",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDoors_Office1_Double_Trans_b815e1df-1912-4edc-90bb-ef1b361f50ee",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "PropGlass",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDoors_Office1_Single_65fe28dc-093b-4fd7-95a1-a71613c8e417",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "PropGlass",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDoors_Office1_Single_Framed_326a4617-520e-45e0-8042-429e1c1618c0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "PropGlass",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDoors_Office1_Single_Framed_LOD2_f501e9c5-cdde-426c-b4ee-444b818ba9cf",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDoors_Office1_Single_Framed_Trans_181998ea-dd5f-455c-9138-c7709c5ccbf6",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "FinancialDoors_Office1_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialDoors_Office1_Single_LOD2_ee0d4cf6-e40c-4582-9451-04821bf977f9",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialFlagpoles_Slanting_f58a53ea-ffa9-441a-a8ef-823e2ee9335a",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialFlagPole_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialLightsModern_WallLight_Interior_Tower_fe533288-8e6b-4cc1-a0c5-66984ef24b54",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialLightsModern_WallLight_Tower_3d377a43-ed69-4058-b1d3-bfeb951a804f",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialWindows_Office1_Four_4a588075-becb-4dad-b0d0-a18998fae374",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "PropGlass",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialWindows_Office1_Four_LOD0_b54cd988-ea98-4aa6-8433-662ba2c1fca8",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialWindows_Office1_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "PropGlass",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialWindows_Office1_Four_LOD1_3bae677e-9c22-40be-ad15-09fd6a0ab237",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialWindows_Office1_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "PropGlass",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialWindows_Office1_Four_LOD2_e5eecbc8-ddbd-4b8f-b055-68fe8b4a1dd2",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialWindows_Office1_One_eb490afa-e2db-450d-ac94-52c21d84fb47",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "PropGlass",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialWindows_Office1_One_LOD2_8fb1bbaf-da27-4ef7-9224-05a983771de7",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialWindows_Office1_Two_39be7286-58c7-4ae6-a19e-65fee4dcb391",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "PropGlass",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialWindows_Office1_Two_LOD2_9021a72d-cfa8-4370-b937-8143ef9b0dff",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialWindows_Office1_Two_Vert_1382e80f-5f14-4ff0-b934-d901be862598",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "PropGlass",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialWindows_Office1_Two_Vert_LOD2_1970a066-b604-4d40-86c6-bb919cabb5a0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FinancialWindows_Office1_Two_Vert_Trans_13ee2ada-126e-4532-a03e-b2bb24ccc5b8",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FinancialWindows_Office1_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FireObjects_Hose_f4dc87a8-05b8-4a5f-8b5b-1e908e0c5ae2",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FireObjects_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "PropGlass",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FireObjects_WallSign_b9e10ea4-8aef-4aa1-b7cf-6732e2396de0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FireObjects_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "FireObjects_WallSign_LOD2_6eb88d92-2379-4c71-b9aa-ef178b62d73f",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FireObjects_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Food_Rectangle_9b706748-5189-4ed7-ae73-53a9599ae720",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Shop_GroceryStore_Food_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Food_Square_c8864d50-42cb-41e3-abd7-41e285e90a6a",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Shop_GroceryStore_Food_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "ForSale_Square_29d8ec9a-48aa-44fb-860c-f89139337467",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Shop_Blank_ForSale_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Fusion2_Rectangle_905dc9da-7547-46fa-b172-cc5fc45b62cb",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Restaurant_Asian_Fusion2_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Fusion_Rectangle_b4e0dfb1-3352-4643-81c2-a46f18be1586",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Restaurant_Asian_Fusion_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "GarageDoorsCanopy_Poor_2d9377b2-28a9-443f-986d-0a9d11485a04",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "GarageDoorsCanopy_Poor_LOD2_33cf3df0-8357-4dc4-8eb1-563cd0996a96",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "GarageDoorsCanopy_Window_b7d76bcc-1ce1-43c7-8ba3-3702ae4607bc",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "GarageDoorsSegmented_Alum_54fd41cd-0392-4bfe-8e43-62a36466e6c8",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "GarageDoorsSegmented_Alum_LOD2_3b17885e-ed5c-49a0-9acb-4d396755477c",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "GarageDoorsSegmented_AlumWin_2998f7c7-e758-49ac-90d6-17472582d187",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "GarageDoorsSegmented_AlumWin_LOD2_1905a940-d2a1-41bd-a274-1e2001f2a4bb",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "GarageDoorsSegmented_Audio_4aac8d58-015e-4d30-aa29-7882e60d2772",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "GarageDoorsSegmented_Room_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "GarageDoorsSegmented_WoodWin_37c04dd0-e2da-45a0-a2c1-4d3e36d44895",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "GarageDoorsSliding_7911459a-aa8c-484c-9fa8-ff5881223e49",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "GarageDoorsSliding_LOD2_354df10d-7682-4b70-8e42-e94547453243",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Generic_Rectangle_09c90ccd-6c9a-4cbb-8377-7614d3329904",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Shop_HairSalon_Generic_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Generic_Rectangle_671e59dd-7169-4786-9dd9-5612cc863ef5",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Shop_LiquorStore_Generic_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Generic_Rectangle_7706b443-224a-402d-9585-eb2ec22864a2",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Shop_LiquorStore_Generic_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Generic_Rectangle_ae3159d4-a112-46f5-beb5-b61fa2dea401",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Restaurant_PizzaJoint_Generic_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Generic_Square_62126cb4-85cb-4aea-8846-0710aa07a1f7",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Restaurant_PizzaJoint_Generic_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Generic_Square_65bd18c5-04c7-4a81-a8ae-d00e01e6b403",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Shop_HairSalon_Generic_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Glamour2_Rectangle_ad219eb8-b261-43f4-b990-f333d5746f70",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Shop_Tattoo_Glamour2_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Glamour2_Square_25f3969f-fd26-44dc-b3c2-c3be8f7cbef5",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Shop_Tattoo_Glamour2_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Glamour_Square_9341696a-a002-436c-bcec-4cc2b3bb33c5",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Shop_Tattoo_Glamour_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "IronBars_ShopFront_2Pane_806e0dfe-a361-458e-a914-9e365537b7b0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "BackDoor_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "IronBars_Window_Double_8d6a2678-fa9e-41e7-8861-1ef640defb78",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "BackDoor_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "IronBars_Window_Single_b6c31f52-28cf-438e-8b2d-014d77f6428a",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "BackDoor_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "IronBars_Window_Tall_2d364789-9323-4bd7-9e00-6812f8be941f",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "BackDoor_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "IronGate_Door_Single_c41c809a-eb54-4d74-9662-2da106adbbbe",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "BackDoor_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "IronGate_Double_a7385575-9f5d-40f9-b4f0-ed7460b2c05c",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "BackDoor_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "IronGate_IronBars_b6c31f52-28cf-438e-8b2d-014d77f6428a",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "BackDoor_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "IronGateDouble_9c370e2d-e761-433a-9292-1832ee545b88",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "BackDoor_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Length2M_cc753f63-21b5-4aec-9ff7-179861e63305",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Light_Industrial01_f83657f3-ccb5-452f-bb43-41adaca8b368",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Light_Industrial01_Interior_fb88a4d4-5689-4f3d-bb07-2b1d93f40d8a",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Light_Industrial01_Interior_LOD0_36842e9d-ff0f-4668-b6a0-291e3dafebbd",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Lights_Wall_Roof_Interior",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Light_Industrial01_Interior_LOD2_c9e4dea6-9e08-4908-96dc-0703a1918b6c",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Light_Industrial01_LOD2_22541287-4458-4b42-ae28-deffab4523e6",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Light_Rectangular01_1572c2e8-9534-446d-bda4-85dd9f8a45b5",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Light_Rectangular01_Interior_add87507-88c4-4cbb-b533-d6857b891d2c",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Light_Rectangular01_Interior_LOD2_d6aa2a20-e0b3-4ccc-95e5-b9846dec5125",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Light_Rectangular01_LOD0_3dc674fd-6803-4089-a8f6-3ba5e1808053",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Lights_Wall_Roof",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Light_Rectangular01_LOD2_b98e378d-ed80-4b85-b0fd-c4b85168d4ad",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Light_Rectangular02_2a91a4b0-b147-47cf-a4d5-42c311f45925",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Light_Rectangular02_Interior_42275d2d-ad75-4e30-aac8-978e54fe306a",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Light_Rectangular02_Interior_LOD2_b6990959-f95d-4f87-9b49-6c4f8c3ad9e9",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Light_Rectangular02_LOD2_dc4a6b09-e15d-4357-9b6b-2d12eac26112",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Light_Round01_9179246a-ac9b-4abb-9919-1261246e3c2b",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Lights_Wall_Roof",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Light_Round_Interior_e4d9790c-5881-4135-9b87-005a684080a7",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Light_Round_Interior_LOD2_689fb152-eaec-4136-875e-da0323b59edf",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Light_Round_LOD0_5d58bddb-e58c-4e7c-8396-1f1ac8a95ef4",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Lights_Wall_Roof",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Light_Round_LOD2_f726bdc6-f7cb-498b-a802-65baeb018141",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Light_Strip_3296dc48-01c0-4b70-936a-dc3b41f3c3e5",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Light_Strip_Interior_ea5fb4ed-0b10-4bbb-a39a-3eabb54534f7",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Light_Strip_Interior_LOD2_c9f5740e-4aef-4fd2-9892-67f10d946a9c",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Light_Strip_LOD2_772c5a07-0632-48db-8d3f-62ed8528e32f",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Light_WallLamp_a6b86b83-f40a-4474-88f1-3a32556ee6ea",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Light_WallLamp_Interior_616a3469-6de2-4d4c-a8e4-d2cb47dcbf64",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Light_WallLamp_LOD2_c585e301-4e56-4c91-9d7a-b8302d335002",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "LoadingBayDoor_7a866a91-26ec-418d-ae70-814f7c191b43",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "LoadingBayDoor_LOD2_2c64f855-28ce-44d8-b44d-4bd5bcbde7d5",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "LoadingBayDoor_NoWall_1e080d37-0537-4c68-82ac-f2419b21f357",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "LoadingBayDoor_NoWall_LOD2_adc7a786-fe43-4b46-93c4-e5b19ec307bd",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Local_Rectangle_9cb6d9bf-8c8a-4b90-9eb4-79233bf05d98",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Shop_GroceryStore_Local_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Local_Square_345d6878-a15a-40ab-8720-198092bed905",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Shop_GroceryStore_Local_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Mart_Rectangle_6dd94c6d-c597-4862-ad75-1e352ef6821a",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Shop_LiquorStore_Mart_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Mart_Square_453d1f08-721e-4d68-90b2-a3ede7d66ba1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Shop_LiquorStore_Mart_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "MiddleClass_Rectangle_d0f4b349-089a-4d5b-854b-130d63dedac9",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Restaurant_Bar_MiddleClass_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "MiddleClass_Square_a47c582e-1da2-48f5-8b55-ed0e355b4337",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Restaurant_Bar_MiddleClass_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Midtown_WindowCommercial_ThinFrameDoubleLedge_4e993d11-3366-408a-9e1a-835f9dc6e089",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Midtown_WindowCommercial_ThinFrameDoubleLedgeLOD0_1dca206f-2b66-460c-9ef6-87dc09eb09fe",
+      "raw_slots": []
+    },
+    {
+      "mesh": "Midtown_WindowCommercial_ThinFrameTripleLedge_e4486180-81d2-4568-937a-25f34700add1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Modern2_Rectangle_c39de21b-9d35-4b4d-af80-9d3a55a2d6c4",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Restaurant_Indian_Modern2_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Modern2_Square_98582c38-5f10-4608-a895-08b0088be8e4",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Restaurant_Indian_Modern2_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Modern_Rectangle_0cf51173-0d4e-4701-9d49-323af4ffdbae",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Restaurant_Indian_Modern_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Modern_Rectangle_be8e659a-1fb8-4f70-b1f2-428c7b022769",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Restaurant_PizzaJoint_Modern_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Modern_Square_6d1cb157-86e9-463c-8cad-d038ce934f3f",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Restaurant_Indian_Modern_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Modern_Square_9a1bc6fb-c178-4e73-a605-df1dba006507",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Restaurant_PizzaJoint_Modern_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "NotExpensive_Rectangle_c64e66e5-bbe2-4e6d-98e2-a4ff34f5f3d9",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Shop_LawFirm_NotExpensive_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "NotExpensive_Square_44fa7e0e-1de5-4b9b-ad12-de5259794b6f",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Shop_LawFirm_NotExpensive_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "OldStyle_Rectangle_7964cb91-db06-487e-8052-798773bb1fb3",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Restaurant_Asian_OldStyle_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "ParkingSign_83ef73d6-c42f-4c4b-ac98-a6c16b854017",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ParkingSign_Left_821092ff-44e6-46f1-ae1c-d278d53d9047",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ParkingSign_Left_LOD0_2164b292-b22a-4cb5-96d5-d144601e7953",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "exitsigns",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ParkingSign_Left_LOD2_df157021-942f-4b29-bb73-e6e300ec84f5",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ParkingSign_LOD2_b1f61dc2-2e49-438f-98a2-75cf23730a0f",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ParkingSign_Right_b270f384-ddc4-4aef-8fdc-06383c7d1264",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ParkingSign_Right_LOD2_0621f840-d520-4e64-ab7b-2bd2d04fc732",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Parlour2_Rectangle_9fe9aca9-18b5-4986-97ea-d0a8b0d531c7",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Shop_Tattoo_Parlour2_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Parlour2_Square_51f1ced8-550b-4a9f-9a6e-ca008b1eaef2",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Shop_Tattoo_Parlour2_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Parlour_Square_3ea4919d-649a-470a-8a49-8dbdfc627a21",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Shop_Tattoo_Parlour_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "PawnShop1_rectangle_2235436f-3c94-4e7e-b344-6e5b02acc7b8",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FD_OWT_Pawnshop1_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "PawnShop1_square_a3a83c71-093d-4395-ab91-0654047bbd3a",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FD_OWT_Pawnshop1_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "PawnShop2_rectangle_005920af-20f4-424f-81f5-bcfa391fea9b",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FD_OWT_Pawnshop2_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "PawnShop2_square_184ff32e-e32e-4aac-91c6-45ecd1edad52",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FD_OWT_Pawnshop2_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "PawnShop3_rectangle_07ec8db2-75f5-45bc-870c-7bc3fe60b9b5",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FD_OWT_Pawnshop3_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "PawnShop3_square_61cdc95f-97b8-4f6b-95b4-d8bfab97a5a8",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FD_OWT_Pawnshop3_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "PawnShop4_rectangle_651eedbe-68ce-4d8d-a633-5f35471ca29a",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FD_OWT_Pawnshop4_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "PawnShop4_square_2fe87ebb-6cfd-4572-814e-7f82ea9e85e2",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FD_OWT_Pawnshop4_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Platform_3f52d1b5-a983-4226-a7e4-762e0ba022d6",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "fireescape_rusty",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Residential1_3_8d43829b-9b84-4631-b899-58e5d7ffadef",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "RollUpDoor_52846379-08fd-4b7e-a1a5-8fee466d4c25",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "RollUpDoor_LOD2_35e579b0-909a-4e7e-87c2-af5ae145c6d8",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "RoofVents_WallVentAudio_6114893b-0047-4f22-b5be-9d7a6e24975a",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "RoofVents_WallVentAudio_LOD2_5a68ea3f-530f-48ac-a6bc-9ade3aa9d4e8",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Shop_Awning_RoundShapeLongCurve_1b8ce9d5-a6f8-4c9b-86f3-1813c325d863",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Shop_Awning_RoundShapeShortPattern_2bbf5afc-56e5-4d63-8576-7485844cb4d7",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Shop_Awning_RoundShapeShortVcut_86f81068-b553-4233-9931-d4251ac4e07c",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Shop_Awning_TriaShapeLongVcut_5f33fe79-4593-4481-ae90-02fdfdd8f882",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Shop_Awning_TriaShapeShortVcut_6e86f8f7-2555-40d3-8de0-4c1803fd5141",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Shop_Sign_Lamp_013dfb77-5dc3-47f3-879d-4a6f0710ba79",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Shop_Sign_Lamp_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "Shop_Sign_Lamp_Urban_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopFaked_Dining_Cafe_06aeef69-1ae4-4860-87e7-499f9fcf98f6",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "PropGlass",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopFaked_Dining_Diner_8fafe973-3d01-432c-8c7d-2b663aac5cca",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "PropGlass",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopFaked_Dining_Diner_Pizza2_b3658ef4-371a-441b-9fb6-d02c83cc1b43",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "PropGlass",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopFaked_Dining_Restaurant_Indian_88c5778d-f1f5-4f91-82a9-ef9744b2c18b",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "PropGlass",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopFaked_Dining_Restaurant_Sushi1_c845e56f-a139-4f68-9ba3-bd902a643916",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "PropGlass",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopFaked_GeneralStore_Grubby_3f4cb83e-4367-48d8-8edc-f9f53a332586",
+      "raw_slots": [
+        {
+          "index": 1,
+          "material": "PropGlass",
+          "material_class": "Material3"
+        },
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopFaked_GeneralStore_Posh_fc645f38-8748-4e52-917f-6b8a8d25094f",
+      "raw_slots": [
+        {
+          "index": 1,
+          "material": "PropGlass",
+          "material_class": "Material3"
+        },
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopFaked_LiquorStore_Grubby_92262faf-9cda-4e18-8b3c-ad5c2c97f6ed",
+      "raw_slots": [
+        {
+          "index": 1,
+          "material": "PropGlass",
+          "material_class": "Material3"
+        },
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopFaked_LiquorStore_Posh_0a3b3bb7-b9c0-41a1-b588-db15f34c8ae0",
+      "raw_slots": [
+        {
+          "index": 1,
+          "material": "PropGlass",
+          "material_class": "Material3"
+        },
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopFaked_Retail_GeneralStore_Grubby_3f4cb83e-4367-48d8-8edc-f9f53a332586",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "PropGlass",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopFaked_Retail_GeneralStore_Posh_fc645f38-8748-4e52-917f-6b8a8d25094f",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "Glass_Transparent_Dirty_Interior_NoWire",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopFaked_Retail_LiquorStore_Grubby_92262faf-9cda-4e18-8b3c-ad5c2c97f6ed",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "PropGlass",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopFaked_Retail_LiquorStore_Posh_0a3b3bb7-b9c0-41a1-b588-db15f34c8ae0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "Glass_Transparent_Dirty_Interior_NoWire",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopFaked_Retail_Salon_Grubby_dbdfb162-d332-4b62-a0b0-ad358aebc807",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "ShopFaked_Retail_HairSalon_Grubby_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopFaked_Retail_Salon_Posh_e5baf5a8-f947-4ddb-abd5-8bb073eeb576",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "ShopFaked_Retail_HairSalon_Posh_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopFaked_Retail_Tattoo_Grubby_68f5b503-eaaa-4455-b96f-4ed33b172713",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "ShopFaked_Retail_TattooParlour_Grubby_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopFaked_Retail_Tattoo_Posh_58a6f690-fbfd-47b1-b15c-df14777e5fc7",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "ShopFaked_Retail_TattooParlour_Posh_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopFaked_Retail_Tattoo_Posh_LOD0_478e0c07-18cb-4a5e-8120-c02865a277c2",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Glass_Transparent",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "ShopFaked_Retail_TattooParlour_Posh_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopFaked_Salon_Grubby_dbdfb162-d332-4b62-a0b0-ad358aebc807",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopFaked_Salon_Posh_e5baf5a8-f947-4ddb-abd5-8bb073eeb576",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopFaked_Tattoo_Grubby_68f5b503-eaaa-4455-b96f-4ed33b172713",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopFaked_Tattoo_Posh_58a6f690-fbfd-47b1-b15c-df14777e5fc7",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopFaked_Tattoo_Posh_LOD0_478e0c07-18cb-4a5e-8120-c02865a277c2",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "PropGlass",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopFront_DoorDouble_Burglary_LOD2_3dbaf2ed-655c-46a2-b1a8-f58dd3e3e7ac",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopFront_DoorDouble_e2dde421-4100-4860-9546-ca5558c649df",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "Glass_Solid",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopFront_DoorDouble_LOD2_437fd117-2d9e-4e68-8a4a-77f16002a875",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopFront_DoorSingle_e3948e01-3799-4903-bdb5-13a1060061f7",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "Glass_Solid",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopFront_DoorSingle_LOD2_90d716a1-1f83-4f96-9810-4325741710d4",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopFront_FinancialAmmoStore_2Pane_0baf1245-96f3-42be-95ce-5a2b890894b3",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "RamRaidShopFront_MAT",
+          "material_class": "Material3"
+        },
+        {
+          "index": 2,
+          "material": "PropGlass",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopFront_FinancialClothingStore_2Pane_187c8671-2392-4c8c-99a8-4fc1b699a525",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "RamRaidShopInteriors_MAT",
+          "material_class": "Material3"
+        },
+        {
+          "index": 2,
+          "material": "PropGlass",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopFront_FinancialClothingStore_2Pane_LOD2_f2e9e84c-225f-4ab5-bd31-039a5ac862ad",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopFront_FinancialClothingStore_3Pane_LOD2_f418b82a-6500-44ad-be8d-de59cda8b578",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopFront_FinancialDrugStore_2Pane_a3c6938e-4b9d-4fdf-b560-1ca341c5da01",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "PropGlass",
+          "material_class": "Material3"
+        },
+        {
+          "index": 2,
+          "material": "RamRaidShopInteriors_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopFront_FinancialDrugStore_2Pane_LOD0_9f8e0383-c6ee-4146-ba5f-de49bc391820",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "RamRaidShopFront_MAT",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "PropGlass",
+          "material_class": "Material3"
+        },
+        {
+          "index": 2,
+          "material": "RamRaidShopInteriors_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopFront_FinancialDrugStore_2Pane_LOD2_b45fa14c-4715-4fbf-9b9a-657180e1e9b8",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopFront_FinancialDrugStore_3Pane_LOD2_f7333a22-9214-4aa3-ac20-e98ded23b8d9",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopFront_FinancialElectronics_2Pane_70ac7c2c-d2cc-4275-a9d3-994ba86849bc",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "RamRaidShopFront_MAT",
+          "material_class": "Material3"
+        },
+        {
+          "index": 2,
+          "material": "PropGlass",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopFront_FinancialElectronics_2Pane_LOD2_07f48420-4e4b-46e2-ac34-d5dd47a52973",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopFront_FinancialElectronics_3Pane_LOD2_d5cfe8b8-f32c-4fa1-a71f-a49018c9b627",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopFront_FinancialGeneric_2Pane_046f91a4-9e1e-4700-ae72-ba039c492ec1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "RamRaidShopFront_MAT",
+          "material_class": "Material3"
+        },
+        {
+          "index": 2,
+          "material": "PropGlass",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopFront_FinancialGeneric_2Pane_LOD2_e96d9383-d46c-4e90-8695-097f4fb36cca",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopFront_FinancialJewellery_2Pane_f37d14ae-b9f4-46ad-88e2-9d57aa4d9f71",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "RamRaidShopFront_MAT",
+          "material_class": "Material3"
+        },
+        {
+          "index": 2,
+          "material": "PropGlass",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopFront_FinancialJewellery_2Pane_LOD2_6fb01ee5-eda2-4669-b5d1-79aa163d2371",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopFront_FinancialJewellery_3Pane_LOD2_2ee03206-ad08-42eb-b5d7-bbbe46d097e4",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Shop_Clothing2_a70a9f14-0cc6-4834-a3da-b83b9c327efb",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "ShopSigns_Shop_Clothing2_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Shop_Clothing2_LOD2_6b0c5d0c-1449-4bf4-b40b-5a8b5da023b8",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Shop_Clothing4_d1215152-aacc-45be-b11e-050b977b553c",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "ShopSigns_Shop_Clothing4_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Shop_Clothing4_LOD2_e681858d-8f48-4afb-bfad-8de5cc634553",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Shop_Clothing5_46a322c9-536b-4c42-b082-a9a4f53104af",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "ShopSigns_Shop_Clothing5_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Shop_Clothing5_LOD2_3c1da0b6-a2f1-4922-accc-8c73efd88d05",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Shop_Convenience1_3d710ea1-0af9-4001-8476-8573c86d93dd",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "ShopSigns_Shop_Convenience1_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Shop_Convenience1_LOD2_c3d25a3d-fa43-49b1-92f9-467da94c221c",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Shop_Convenience3_e091824d-41bf-487f-9e6a-02fac05a657a",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "ShopSigns_Shop_Convenience3_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Shop_Convenience3_LOD2_e927667b-57e2-4bdd-8ff0-21afeb96920b",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Shop_Convenience4_b39f437d-f35f-4c50-b36c-1fc59355c453",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "ShopSigns_Shop_Convenience4_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Shop_Convenience4_LOD2_588cc939-dd5d-4580-b2aa-a0d425d2c10d",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Shop_Convenience5_64e86c4e-0223-4e0f-8832-f92981bd0950",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "ShopSigns_Shop_Convenience5_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Shop_Convenience5_LOD2_2655a210-e99b-442d-9b5a-3d93a9c29d22",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Shop_Electrical2_a239893d-28ff-45dc-8558-91378be892b0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "ShopSigns_Shop_Electrical2_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Shop_Electrical2_LOD2_1e6a2b98-aa9f-4807-9b8b-8bb625ce4927",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Shop_Electrical3_458af15a-f3a2-4c54-8558-f44aa8c4b061",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "ShopSigns_Shop_Electrical3_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Shop_Electrical3_LOD2_ef95ba97-6f02-4afc-bb3b-f5f1e2bbce94",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Shop_Electrical4_1bc04b9e-5336-4482-adb9-7fece884cb12",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "ShopSigns_Shop_Electrical4_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Shop_Electrical4_LOD2_e3bc04cc-7b5a-4cc2-8e41-def26fe5f4f8",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Shop_Electrical5_0b7ba0da-4221-4d51-9e64-0cedd0749a44",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "ShopSigns_Shop_Electrical5_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Shop_Electrical5_LOD2_ce9bd995-e283-4d46-9422-515441f79a34",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Shop_Jewellery4_83f4f97d-f857-4d96-8170-d73691f21068",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "ShopSigns_Shop_Jewellery4_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Shop_Jewellery4_LOD2_088037c5-fadf-409b-a2eb-1b0d4d2a9cd5",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Shop_Jewellery5_180af164-1282-4865-837a-8b15b1d21fd6",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "ShopSigns_Shop_Jewellery5_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Shop_Jewellery5_LOD2_e3dc6cb7-a70a-4303-acd1-232811269838",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_ShopLight_Clothing1_997df7bc-6a56-4ff1-beea-42a1fe44873a",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "ShopSigns_ShopLight_Clothing1_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_ShopLight_Clothing3_de855f90-6fc1-4f0a-82ce-76d566869d9a",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "ShopSigns_ShopLight_Clothing3_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_ShopLight_Clothing3_LOD0_9f7cdda7-e80a-44e1-bca5-b770a27d62ac",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "ShopSigns_Brackets_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_ShopLight_Clothing3_LOD2_4a9bb1f4-d1d2-40eb-ae05-9900240c8db7",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_ShopLight_Convenience2_2cd7ca79-0fde-45b2-921f-5b111c0d709f",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "ShopSigns_ShopLight_Convenience2_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_ShopLight_Convenience2_LOD2_898c0be1-5ac1-4889-a4e2-3753cd696368",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_ShopLight_Electrical1_7ee2b4a8-a74c-46ae-a5c2-da3e9000bbdd",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "ShopSigns_ShopLight_Electrical1_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_ShopLight_Electrical1_LOD2_365ea395-162e-4a61-8740-b6e1ac4a1331",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_ShopLight_Jewellery1_e1d1ec52-1a66-445f-a497-e7d7ca0234d5",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "ShopSigns_ShopLight_Jewellery1_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_ShopLight_Jewellery1_LOD2_f971b821-dd7f-4db0-a4f3-8ae2ce7adb31",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_ShopLight_Jewellery2_cd730db2-e7be-4d5e-98b5-0ba433aaf764",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "ShopSigns_ShopLight_Jewellery2_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_ShopLight_Jewellery2_LOD2_f96dad8a-aed5-4e17-b05e-e4566069ca22",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_ShopLight_Jewellery3_8635478d-071a-42d1-9c67-3558ba6ff60a",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "ShopSigns_ShopLight_Jewellery3_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_ShopLight_Jewellery3_LOD2_ec71a2e1-7071-4710-b975-7d6ed4155b1e",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_ShortRectangle_Clothing5_969d21b4-207a-40bd-b793-b04a417df436",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_ShortRectangle_Clothing5_LOD2_71aac45c-177c-400b-89be-f6d181f9b3e0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_ShortRectangle_Jewellery5_4ccd1179-4f4b-4cb8-af24-83b251d26256",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_ShortRectangle_Jewellery5_LOD2_703e387d-1876-410f-b65e-dbce351dab39",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Small_Clothing1_f954b682-d607-4709-a3a1-b14635503b83",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "ShopSigns_Small_Clothing1_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Small_Clothing1_LOD2_017a8baa-9306-4b55-8d92-a150a3341194",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Small_Convenience2_8bd460c4-ea5f-4466-ae12-e21c53eec778",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Small_Convenience2_LOD2_723c25c9-5a06-4a66-9808-cb6745eac187",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Small_Electrical1_4b358c10-007e-4a86-94fa-c081d1d22816",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Small_Jewellery1_b795044f-6555-4e34-9be2-ed1214750248",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Small_Jewellery1_LOD2_113a2b4b-c12b-40d4-8100-f264c14b3137",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Small_Jewellery3_0741bc30-3300-436e-a47d-939745b19f44",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Small_Jewellery3_LOD2_bda25fdd-440b-4e46-95d8-60331bfedcaa",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Square_Cafe1_8e018631-6ba3-4b8a-938b-b7e84c0a30dd",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Square_Cafe1_LOD2_6cb69652-2a9f-4745-a1ca-5d5d5f49dc56",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Square_Clothing2_LOD2_8b18f1f7-4888-4cea-a751-7165abe72449",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Square_Clothing3_LOD2_0ae36f46-48e7-4685-aee2-886c97c6f22c",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Square_Clothing4_LOD2_4b70164a-0ea5-4b2e-830b-869918db5310",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Square_Convenience1_a2e73487-c0b2-40ce-a6e6-45a684549536",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Square_Convenience1_LOD2_acd745b3-7bbf-4491-895c-a468b2e91ddd",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Square_Convenience3_d7869ea2-1693-4eba-a410-75f651b29edb",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Square_Convenience3_LOD2_b2443fd8-a697-482c-9adb-8e27cf1af2d5",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Square_Convenience4_4fd0e5e8-8821-442c-a980-ebd1075292f6",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Square_Convenience4_LOD2_5f927145-ee77-4c8d-84a5-af97bf1a2040",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Square_Convenience5_33dd7219-91d8-4e72-8d16-e478e809276b",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Square_Convenience5_LOD2_5b384e72-4bb5-49d3-9419-e7613cc807f7",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Square_Electrical2_8eeac6ba-9a7b-4214-91b6-cf03b01b2c2c",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Square_Electrical2_LOD2_2037f0a4-f86c-4f5e-add6-80ff1190d67b",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Square_Electrical3_8dff0286-b0ed-499f-bcc3-47dd93a6ed69",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Square_Electrical3_LOD2_987bd897-272b-4aad-8893-2a1285afc5dc",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Square_Electrical4_39da292a-12b2-4e02-9d7a-531fbef30c34",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Square_Electrical4_LOD2_d09660f0-9948-4836-ab3a-b329ddbeee68",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Square_Electrical5_8d284ac4-be22-4def-ba2d-5fa48ef0e4c6",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Square_Electrical5_LOD2_fc7c175a-fd0f-4ee1-a94b-a2043f23f9cf",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Square_Jewellery2_7c113b37-7638-4d4c-b9ef-cc0c897df0ad",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Square_Jewellery2_LOD2_912465c3-d2a3-4686-86c2-550b6d805151",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Square_Jewellery4_877a4fec-9b7e-4b20-af22-812ccc604dca",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSign_Square_Jewellery4_LOD2_5ddd2db0-15dc-40a9-ab1d-b4d08a008f8b",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSigns_Cafe_06aeef69-1ae4-4860-87e7-499f9fcf98f6",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "Glass_Transparent",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSigns_Cafe_LOD2_e12867f3-9825-477e-a551-7da81bba7993",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSigns_Diner_8fafe973-3d01-432c-8c7d-2b663aac5cca",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "Glass_Transparent",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSigns_Diner_Pizza2_b3658ef4-371a-441b-9fb6-d02c83cc1b43",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "Glass_Transparent",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSigns_Diner_Pizza2_LOD2_fc1f524f-2c29-46e0-a371-940926dc2001",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSigns_Restaurant_Indian_88c5778d-f1f5-4f91-82a9-ef9744b2c18b",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "Glass_Transparent",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSigns_Restaurant_LOD2_bc06c023-9b35-4b63-a594-4be827dc0509",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSigns_Restaurant_Sushi1_c845e56f-a139-4f68-9ba3-bd902a643916",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "Glass_Transparent",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSigns_Restaurant_Sushi1_LOD2_81b2d1b1-51bb-4e0b-8508-bf2a4ff7f903",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSigns_ShopFaked_58a6f690-fbfd-47b1-b15c-df14777e5fc7",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSigns_ShopFaked_Games1_e5baf5a8-f947-4ddb-abd5-8bb073eeb576",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSigns_ShopFaked_Games1_LOD2_15621891-16ca-4cda-86b6-a1783f2afc75",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSigns_ShopFaked_Games1b_dbdfb162-d332-4b62-a0b0-ad358aebc807",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSigns_ShopFaked_Games1b_LOD2_32e255bf-cb78-48d7-b173-fafbf86d3cad",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSigns_ShopFaked_LOD2_7af13e83-c20d-417b-96b5-b7d495748b8b",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSigns_Square_Clothing2_01caf92f-bbcd-46d6-986c-fd53809f5ef4",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSigns_Square_Clothing3_f7c07291-39a9-4e7f-943e-9c5c53cb03e9",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "ShopSigns_Square_Clothing4_248a8154-c6af-4d0f-ab98-62acc1a4eaee",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "TexturePageLOD2_TPageB_Mat",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Sign2_Square_9ebece90-3a29-4d0f-be68-72dce8610d2e",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Shop_PoolHall_Sign2_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Sign_Rectangle_3af2cbbe-6010-49c3-84a4-ccbf31c0ec31",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Shop_PoolHall_Sign_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Sign_Square_305090ef-6f8f-4d5c-87a1-394b98dbcb03",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Shop_PoolHall_Sign_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "SingleBarTop_e42c30f7-7e0a-4ac5-958b-4d5ee0485a6c",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "WindowGlass",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "SingleDetailTop_0204365e-24b5-4be0-b44d-31e2518e8153",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "WindowGlass",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "SingleStepTop_4ac74f95-f9dc-436a-9e0e-38b20582cc43",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "WindowGlass",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "SingleStepTopDetailBase_e28d727e-b18b-4393-858a-124f45d34151",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "WindowGlass",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Slum_Rectangle_042b9f83-540b-4d58-9c7b-8550a01820d6",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Restaurant_Bar_Slum_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Slum_Rectangle_c5c90a7e-7b07-4585-820b-f3a1b22aaaca",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Shop_LiquorStore_Slum_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Slum_Square_de62f443-4822-4133-8b49-c63c6f01e618",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Restaurant_Bar_Slum_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Stairs_b967cca8-7c92-4ccb-b83c-d628c7d8538a",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "fireescape_rusty",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Stylish2_Rectangle_4de1edb7-9d5e-438f-bb95-37eb9ed7ca1c",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Shop_HairSalon_Stylish2_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Stylish2_Square_49116919-f5dd-4b0b-b763-ecb576c10919",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Shop_HairSalon_Stylish2_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Stylish_Rectangle_b838b3ed-409f-4bed-98d8-b4d54e964917",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Shop_HairSalon_Stylish_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Stylish_Square_d0e4a760-2c34-47b4-8d2a-206ea3d3d84b",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Shop_HairSalon_Stylish_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Traditional_Rectangle_2657df51-5c68-40d2-aa4d-f0f5a7d454f6",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Restaurant_PizzaJoint_Traditional_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Traditional_Rectangle_5fb2af07-8765-417b-af3f-7e0d64ee590c",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Restaurant_Indian_Traditional_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Traditional_Square_637f704b-1b8a-47e9-a41e-7965d6f6d2bc",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Restaurant_PizzaJoint_Traditional_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "UpperClass_Rectangle_978afef4-53f6-402e-a0f4-72b9c0aaede5",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Restaurant_Bar_UpperClass_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "UpperClass_Square_5c6fb375-f0a2-47d3-a62a-ca0c75475f3f",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Restaurant_Bar_UpperClass_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "VehicleNoEntrySign_36910b13-cfbe-42ec-bd9a-cbb3d25a9a85",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "VehicleNoEntrySign_MAT",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Warehouse1_rectangle_3aa0e5f2-d642-442b-b126-4dfd2e09942b",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FD_OWT_Warehouse1_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Warehouse1_square_71e2d6dd-bd23-4313-991e-e1e12655b524",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FD_OWT_Warehouse1_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Warehouse2_rectangle_5843e6c2-b192-4750-83f5-31f72378d97d",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FD_OWT_Warehouse2_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Warehouse2_square_12c97930-d4b9-4973-92be-e3ab84e4ca39",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "FD_OWT_Warehouse2_MAT",
+          "material_class": "MaterialInstanceConstant"
+        }
+      ]
+    },
+    {
+      "mesh": "Window_Industrial_BarsLarge_d6fe24da-59cb-4d0d-959b-9787ee5b0c52",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Window_Industrial_BarsLargeAc_1d5d1674-5ae4-476f-8967-a11ba6bb54ff",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Window_Industrial_BarsSmall_ece619ee-aeef-4733-91b1-b84b8ef9e5a2",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Window_Industrial_LargePanes_f3e8a3f8-108e-4587-ac7d-d539849d909a",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Window_Industrial_LargePanesProtection_fec11ca3-4d2b-41b2-895f-d6f151f52141",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Window_Industrial_SquaresLarge_270dc3fc-efe0-484e-8838-30f0fa8baf1f",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Window_Industrial_SquaresSmall_110b15bf-3871-4019-bf06-e81050d9e16b",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Window_Industrial_SquaresVentLarge_7cb132f8-c3ae-4372-9539-55c19d1a59bc",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Window_Industrial_SquaresVentSmall_f671535d-ffd9-4c21-883f-a8c26048d733",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "Window_Industrial_VentLarge_6d1e2c2c-ef1b-4378-962c-c8158b9395fc",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "WindowBig_a9925fe7-cd8a-41a5-8c30-96eccb9a1114",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "Glass",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "WindowsBoarded_Clean1_f704d369-4973-47d6-b7f7-43fe7b38b493",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "WindowsBoarded_Clean2_359dd372-be0c-4892-bcf0-69113a51ebd0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "WindowsBoarded_Clean3_f7e7a27b-aff9-4e45-a72a-e70a614654a2",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "WindowsBoarded_Patched2_e458fc38-3832-429b-81b4-cf3e3c300a89",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "WindowsBoarded_Patched3_34cf6718-6c23-4394-8e16-6faa8855dce5",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "WindowSmall_4dc41400-4857-4989-ac18-a1f84da1d595",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "texturepagelod2_tpagea",
+          "material_class": "Material3"
+        },
+        {
+          "index": 1,
+          "material": "Glass",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|windows_residential2_mat": [
+      "Windows_Residential2"
+    ],
+    "material3|propglass": [
+      "PropsGenericMaterials",
+      "ShopFront_Textures"
+    ],
+    "material3|texturepagelod2_tpagea": [
+      "TexturePageLOD2_TPageA"
+    ],
+    "material3|windows_residential1_mat": [
+      "Windows_Residential1"
+    ],
+    "material3|alarm_bell_mat": [
+      "Alarm"
+    ],
+    "material3|alarm_box_mat": [
+      "Alarm"
+    ],
+    "material3|alarm_light_mat": [
+      "Alarm"
+    ],
+    "materialinstanceconstant|shop_ammostore_mat": [
+      "Signage"
+    ],
+    "material3|backdoor_mat": [
+      "Door_BackDoor"
+    ],
+    "material3|midtownboardeddoorswindows_mat": [
+      "MidtownBoardedDoorsWindows"
+    ],
+    "materialinstanceconstant|restaurant_cafe_branded_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|fd_owt_chopshop1_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|fd_owt_chopshop2_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|fd_owt_chopshop3_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|fd_owt_chopshop4_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|restaurant_diner_citydiner2_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|restaurant_diner_citydiner_mat": [
+      "Signage"
+    ],
+    "material3|clock_mat": [
+      "Clocks"
+    ],
+    "materialinstanceconstant|restaurant_bar_cocktail_mat": [
+      "Signage"
+    ],
+    "material3|commercialwindows_mat": [
+      "CommercialWindows"
+    ],
+    "materialinstanceconstant|shop_grocerystore_corner_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|shop_lawfirm_cutprice_mat": [
+      "Signage"
+    ],
+    "material3|newdoor_oldstonewood": [
+      "Door_OldStone"
+    ],
+    "material3|glass_transparent_dirtynoreflection_interior": [
+      "Glass_Dirty"
+    ],
+    "material3|door_oldstonewood": [
+      "Door_OldStone"
+    ],
+    "material3|door_rear_paintedwood": [
+      "Door_Rear"
+    ],
+    "material3|shop_windowfronts": [
+      "Shop_WindowFronts"
+    ],
+    "materialinstanceconstant|conc_grey": [
+      "Concrete"
+    ],
+    "material3|glass": [
+      "Shop_WindowFronts"
+    ],
+    "material3|residentialdoors1_mat": [
+      "Doors_Residential1"
+    ],
+    "material3|doorsboarded_mat": [
+      "DoorsBoarded"
+    ],
+    "material3|window_oldstone": [
+      "Window_OldStone"
+    ],
+    "material3|windowglass": [
+      "Window_OldStone"
+    ],
+    "materialinstanceconstant|restaurant_cafe_everyday_mat": [
+      "Signage"
+    ],
+    "material3|exitsigns": [
+      "ExitSigns"
+    ],
+    "materialinstanceconstant|shop_lawfirm_expensive_mat": [
+      "Signage"
+    ],
+    "material3|signage_asian_fastfood_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|fd_owt_enforcer01_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|fd_owt_enforcer02_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|fd_owt_enforcer03_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|fd_owt_enforcer04_mat": [
+      "Signage"
+    ],
+    "material3|financialairconditioningunit_mat": [
+      "FinancialAirConditioningUnit"
+    ],
+    "materialinstanceconstant|restaurant_cafe_financialcenter_mat": [
+      "Signage"
+    ],
+    "material3|financialdoors_office1_mat": [
+      "FinancialDoors_Office1"
+    ],
+    "material3|financialflagpole_mat": [
+      "FinancialFlagPole"
+    ],
+    "material3|financiallightsmodern_interior_mat": [
+      "FinancialLightsModern"
+    ],
+    "material3|financiallightsmodern_mat": [
+      "FinancialLightsModern"
+    ],
+    "material3|financialwindows_office1_mat": [
+      "FinancialWindows_Office1"
+    ],
+    "material3|fireobjects_mat": [
+      "FireObjects"
+    ],
+    "materialinstanceconstant|shop_grocerystore_food_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|shop_blank_forsale_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|restaurant_asian_fusion2_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|restaurant_asian_fusion_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|garagedoorscanopy_metal": [
+      "GarageDoorsCanopy"
+    ],
+    "material3|garagedoorscanopy_mat": [
+      "GarageDoorsCanopy"
+    ],
+    "material3|garagedoorssegmented_mat": [
+      "GarageDoorsSegmented"
+    ],
+    "material3|garagedoorssegmented_room_mat": [
+      "GarageDoorsSegmented"
+    ],
+    "material3|garagedoorssliding_mat": [
+      "GarageDoorsSliding"
+    ],
+    "materialinstanceconstant|shop_hairsalon_generic_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|shop_liquorstore_generic_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|restaurant_pizzajoint_generic_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|shop_tattoo_glamour2_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|shop_tattoo_glamour_mat": [
+      "Signage"
+    ],
+    "material3|fence_rustyrailings": [
+      "Fence_RustyRailings"
+    ],
+    "material3|lights_wall_roof": [
+      "MidtownDistrict_Lights"
+    ],
+    "material3|lights_wall_roof_interior": [
+      "MidtownDistrict_Lights"
+    ],
+    "material3|loadingbaydoor_mat": [
+      "LoadingBayDoor"
+    ],
+    "materialinstanceconstant|shop_grocerystore_local_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|shop_liquorstore_mart_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|restaurant_bar_middleclass_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|restaurant_indian_modern2_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|restaurant_indian_modern_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|restaurant_pizzajoint_modern_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|shop_lawfirm_notexpensive_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|restaurant_asian_oldstyle_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|shop_tattoo_parlour2_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|shop_tattoo_parlour_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|fd_owt_pawnshop1_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|fd_owt_pawnshop2_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|fd_owt_pawnshop3_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|fd_owt_pawnshop4_mat": [
+      "Signage"
+    ],
+    "material3|fireescape_rusty": [
+      "FireEscape_Rusty"
+    ],
+    "material3|rollupdoor_mat": [
+      "RollUpDoor"
+    ],
+    "material3|roofvents": [
+      "RoofVents"
+    ],
+    "material3|shop_awning": [
+      "Shop_Awning"
+    ],
+    "material3|shop_sign_lamp_mat": [
+      "Shop_Sign_Lamp"
+    ],
+    "material3|shop_sign_lamp_urban_mat": [
+      "Shop_Sign_Lamp"
+    ],
+    "material3|shopfaked_dining_restaurant_indian1_mat": [
+      "Shop_ShopFaked_Dining"
+    ],
+    "material3|texturepagelod2_tpageb_mat": [
+      "TexturePageLOD2_TPageB"
+    ],
+    "material3|shopfaked_dining_diner_diner2_mat": [
+      "Shop_ShopFaked_Dining"
+    ],
+    "materialinstanceconstant|shopfaked_dining_diner_pizza2_mat": [
+      "Shop_ShopFaked_Dining"
+    ],
+    "materialinstanceconstant|shopfaked_dining_restaurant_sushi1_mat": [
+      "Shop_ShopFaked_Dining"
+    ],
+    "materialinstanceconstant|shopfaked_retail_generalstore_grubby_mat": [
+      "Shop_ShopFaked_Retail"
+    ],
+    "material3|shopfaked_retail_generalstore_posh_mat": [
+      "Shop_ShopFaked_Retail"
+    ],
+    "materialinstanceconstant|glass_transparent_dirty_interior_nowire": [
+      "Glass_Dirty"
+    ],
+    "materialinstanceconstant|shopfaked_retail_liquorstore_grubby_mat": [
+      "Shop_ShopFaked_Retail"
+    ],
+    "materialinstanceconstant|shopfaked_retail_liquorstore_posh_mat": [
+      "Shop_ShopFaked_Retail"
+    ],
+    "materialinstanceconstant|shopfaked_retail_hairsalon_grubby_mat": [
+      "Shop_ShopFaked_Retail"
+    ],
+    "materialinstanceconstant|shopfaked_retail_hairsalon_posh_mat": [
+      "Shop_ShopFaked_Retail"
+    ],
+    "materialinstanceconstant|shopfaked_retail_tattooparlour_grubby_mat": [
+      "Shop_ShopFaked_Retail"
+    ],
+    "material3|glass_transparent": [
+      "Glass"
+    ],
+    "materialinstanceconstant|shopfaked_retail_tattooparlour_posh_mat": [
+      "Shop_ShopFaked_Retail"
+    ],
+    "material3|ramraidshopfront_mat": [
+      "ShopFront_Textures"
+    ],
+    "material3|glass_solid": [
+      "Glass"
+    ],
+    "material3|ammostore_mat": [
+      "FinancialAmmoStore"
+    ],
+    "material3|ramraidshopinteriors_mat": [
+      "ShopFront_Textures"
+    ],
+    "material3|shopsigns_brackets_mat": [
+      "ShopSigns_Brackets_Textures"
+    ],
+    "material3|shopsigns_shop_clothing2_mat": [
+      "ShopSigns_Shop"
+    ],
+    "materialinstanceconstant|shopsigns_shop_clothing4_mat": [
+      "ShopSigns_Shop"
+    ],
+    "materialinstanceconstant|shopsigns_shop_clothing5_mat": [
+      "ShopSigns_Shop"
+    ],
+    "materialinstanceconstant|shopsigns_shop_convenience1_mat": [
+      "ShopSigns_Shop"
+    ],
+    "materialinstanceconstant|shopsigns_shop_convenience3_mat": [
+      "ShopSigns_Shop"
+    ],
+    "materialinstanceconstant|shopsigns_shop_convenience4_mat": [
+      "ShopSigns_Shop"
+    ],
+    "materialinstanceconstant|shopsigns_shop_convenience5_mat": [
+      "ShopSigns_Shop"
+    ],
+    "materialinstanceconstant|shopsigns_shop_electrical2_mat": [
+      "ShopSigns_Shop"
+    ],
+    "materialinstanceconstant|shopsigns_shop_electrical3_mat": [
+      "ShopSigns_Shop"
+    ],
+    "materialinstanceconstant|shopsigns_shop_electrical4_mat": [
+      "ShopSigns_Shop"
+    ],
+    "materialinstanceconstant|shopsigns_shop_electrical5_mat": [
+      "ShopSigns_Shop"
+    ],
+    "materialinstanceconstant|shopsigns_shop_jewellery4_mat": [
+      "ShopSigns_Shop"
+    ],
+    "materialinstanceconstant|shopsigns_shop_jewellery5_mat": [
+      "ShopSigns_Shop"
+    ],
+    "material3|shopsigns_shoplight_clothing1_mat": [
+      "ShopSigns_ShopLight"
+    ],
+    "materialinstanceconstant|shopsigns_shoplight_clothing3_mat": [
+      "ShopSigns_ShopLight"
+    ],
+    "materialinstanceconstant|shopsigns_shoplight_convenience2_mat": [
+      "ShopSigns_ShopLight"
+    ],
+    "materialinstanceconstant|shopsigns_shoplight_electrical1_mat": [
+      "ShopSigns_ShopLight"
+    ],
+    "materialinstanceconstant|shopsigns_shoplight_jewellery1_mat": [
+      "ShopSigns_ShopLight"
+    ],
+    "materialinstanceconstant|shopsigns_shoplight_jewellery2_mat": [
+      "ShopSigns_ShopLight"
+    ],
+    "materialinstanceconstant|shopsigns_shoplight_jewellery3_mat": [
+      "ShopSigns_ShopLight"
+    ],
+    "material3|shopsign_shop_clothing5_mat": [
+      "ShopSigns_ShortRectangle"
+    ],
+    "materialinstanceconstant|shopsign_shop_jewellery5_mat_inst": [
+      "ShopSigns_ShortRectangle"
+    ],
+    "materialinstanceconstant|shopsigns_small_convenience2_mat": [
+      "ShopSigns_Small"
+    ],
+    "material3|shopsigns_small_clothing1_mat": [
+      "ShopSigns_Small"
+    ],
+    "materialinstanceconstant|shopsigns_small_electrical1_mat": [
+      "ShopSigns_Small"
+    ],
+    "materialinstanceconstant|shopsigns_small_jewellery1_mat": [
+      "ShopSigns_Small"
+    ],
+    "materialinstanceconstant|shopsigns_small_jewellery3_mat": [
+      "ShopSigns_Small"
+    ],
+    "materialinstanceconstant|shopsigns_square_cafe1_mat_inst": [
+      "ShopSigns_Square"
+    ],
+    "materialinstanceconstant|shopsigns_square_convenience1_mat_inst": [
+      "ShopSigns_Square"
+    ],
+    "materialinstanceconstant|shopsigns_square_convenience3_mat_inst": [
+      "ShopSigns_Square"
+    ],
+    "materialinstanceconstant|shopsigns_square_convenience4_mat_inst": [
+      "ShopSigns_Square"
+    ],
+    "materialinstanceconstant|shopsigns_square_convenience5_mat_inst": [
+      "ShopSigns_Square"
+    ],
+    "materialinstanceconstant|shopsigns_square_electrical2_mat_inst": [
+      "ShopSigns_Square"
+    ],
+    "materialinstanceconstant|shopsigns_square_electrical3_mat_inst": [
+      "ShopSigns_Square"
+    ],
+    "materialinstanceconstant|shopsigns_square_electrical4_mat_inst": [
+      "ShopSigns_Square"
+    ],
+    "materialinstanceconstant|shopsigns_square_electrical5_mat_inst": [
+      "ShopSigns_Square"
+    ],
+    "materialinstanceconstant|shopsigns_square_jewellery2_mat_inst": [
+      "ShopSigns_Square"
+    ],
+    "materialinstanceconstant|shopsigns_square_jewellery4_mat_inst": [
+      "ShopSigns_Square"
+    ],
+    "material3|shopsigns_restaurant_indian1_mat": [
+      "ShopSigns_Restaurant"
+    ],
+    "material3|shopsigns_diner_diner2_mat": [
+      "ShopSigns_Diner"
+    ],
+    "materialinstanceconstant|shopsigns_diner_pizza2_mat": [
+      "ShopSigns_Diner"
+    ],
+    "materialinstanceconstant|shopsigns_restaurant_sushi1_mat": [
+      "ShopSigns_Restaurant"
+    ],
+    "material3|shopsigns_square_clothing2_mat": [
+      "ShopSigns_Square"
+    ],
+    "materialinstanceconstant|shopsigns_square_clothing3_mat_inst": [
+      "ShopSigns_Square"
+    ],
+    "materialinstanceconstant|shopsigns_square_clothing4_mat_inst": [
+      "ShopSigns_Square"
+    ],
+    "materialinstanceconstant|shop_poolhall_sign2_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|shop_poolhall_sign_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|restaurant_bar_slum_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|shop_liquorstore_slum_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|shop_hairsalon_stylish2_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|shop_hairsalon_stylish_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|restaurant_pizzajoint_traditional_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|restaurant_indian_traditional_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|restaurant_bar_upperclass_mat": [
+      "Signage"
+    ],
+    "material3|vehiclenoentrysign_mat": [
+      "VehicleNoEntrySign"
+    ],
+    "materialinstanceconstant|fd_owt_warehouse1_mat": [
+      "Signage"
+    ],
+    "materialinstanceconstant|fd_owt_warehouse2_mat": [
+      "Signage"
+    ],
+    "material3|window_industrial": [
+      "Window_Industrial"
+    ],
+    "material3|windowsboarded_mat": [
+      "WindowsBoarded"
+    ],
+    "material3|conc_parent": [
+      "Concrete"
+    ]
+  }
+}

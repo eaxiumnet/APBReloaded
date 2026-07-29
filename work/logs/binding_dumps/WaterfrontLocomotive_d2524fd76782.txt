@@ -1,0 +1,231 @@
+Found 6621 game files (0 skipped) in 350 folders at path "C:/Program Files (x86)/Steam/steamapps/common/APB Reloaded/APBGame/Content/Release/Packages"
+Scanned game directory in 0.1 sec, 7479 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontLocomotive.upk Ver: 564/33 Engine: 3908 Names: 155 Exports: 31 Imports: 26 Game: 80001D
+Loading Material3 WaterfrontLocomotive_Mat from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontLocomotive.upk
+Loading package: MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk Ver: 564/33 Engine: 3908 Names: 153 Exports: 58 Imports: 26 Game: 80001D
+StrProperty: unknown UMaterial3 RWTGuid
+ArrayProperty: unknown UMaterial3 Channels
+Loading StaticMesh3 WaterfrontLocomotive from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontLocomotive.upk
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_0"
+WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_0"
+Loading Texture2D WaterfrontLocomotive_DiffSpec from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontLocomotive.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D WaterfrontLocomotive_Emis from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontLocomotive.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D WaterfrontLocomotive_GlassMask from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontLocomotive.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D WaterfrontLocomotive_Norm from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontLocomotive.upk
+ByteProperty: unknown UTexture2D LODCategory
+ByteProperty: unknown UTexture2D LODUsage
+Loading Texture2D WaterfrontLocomotive_Opac from package MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontLocomotive.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loading Texture2D Sky from package MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk
+ByteProperty: unknown UTexture2D LODCategory
+Loaded in 0.0 sec, 285 allocs, 2.72 MBytes serialized in 78 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: WaterfrontLocomotive_Mat
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[6] =
+    {
+        ReferencedTextures[0] = Texture2D'WaterfrontLocomotive_Norm'
+        ReferencedTextures[1] = Texture2D'WaterfrontLocomotive_DiffSpec'
+        ReferencedTextures[2] = Texture2D'WaterfrontLocomotive_Emis'
+        ReferencedTextures[3] = Texture2D'Sky'
+        ReferencedTextures[4] = Texture2D'WaterfrontLocomotive_GlassMask'
+        ReferencedTextures[5] = Texture2D'WaterfrontLocomotive_Opac'
+    }
+    Expressions[17] =
+    {
+        Expressions[1] = MaterialExpressionTextureSample'WaterfrontLocomotive_Mat.MaterialExpressionTextureSample_1'
+        Expressions[2] = MaterialExpressionTextureSample'WaterfrontLocomotive_Mat.MaterialExpressionTextureSample_2'
+        Expressions[3] = MaterialExpressionTextureSample'WaterfrontLocomotive_Mat.MaterialExpressionTextureSample_3'
+        Expressions[4] = MaterialExpressionTextureSample'WaterfrontLocomotive_Mat.MaterialExpressionTextureSample_6'
+        Expressions[9] = MaterialExpressionTextureSample'WaterfrontLocomotive_Mat.MaterialExpressionTextureSample_8'
+        Expressions[12] = MaterialExpressionTextureSample'WaterfrontLocomotive_Mat.MaterialExpressionTextureSample_9'
+    }
+    CachedExpressionData = 
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_1
+ { Texture=Texture2D'WaterfrontLocomotive_DiffSpec' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_2
+ { Texture=Texture2D'WaterfrontLocomotive_Emis' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_3
+ { Texture=Texture2D'WaterfrontLocomotive_Opac' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_6
+ { Texture=Texture2D'WaterfrontLocomotive_Norm' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_8
+ { Texture=Texture2D'Sky' }
+
+Object info:
+============
+ClassName: MaterialExpressionTextureSample ObjectName: MaterialExpressionTextureSample_9
+ { Texture=Texture2D'WaterfrontLocomotive_GlassMask' }
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: WaterfrontLocomotive
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0.000106812, Y=-34.3698, Z=295.291 }
+        BoxExtent = { X=197.931, Y=1254.33, Z=295.181 }
+        SphereRadius = 1273.82
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+    Lods[3] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'WaterfrontLocomotive_Mat', FirstIndex=0, NumFaces=3288 }
+            }
+            NumVerts = 10796
+            IndexCount = 9864
+            NumTexCoords = 1
+        }
+        Lods[1] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'WaterfrontLocomotive_Mat', FirstIndex=0, NumFaces=1368 }
+            }
+            NumVerts = 4508
+            IndexCount = 4104
+            NumTexCoords = 1
+        }
+        Lods[2] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'WaterfrontLocomotive_Mat', FirstIndex=0, NumFaces=202 }
+            }
+            NumVerts = 694
+            IndexCount = 606
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 3
+
+Object info:
+============
+ClassName: Texture2D ObjectName: WaterfrontLocomotive_DiffSpec
+    SizeX = 1024
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: WaterfrontLocomotive_Emis
+    SizeX = 256
+    SizeY = 128
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: WaterfrontLocomotive_GlassMask
+    SizeX = 256
+    SizeY = 128
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: WaterfrontLocomotive_Norm
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source = 
+
+Object info:
+============
+ClassName: Texture2D ObjectName: WaterfrontLocomotive_Opac
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    ImportedSize = { X=0, Y=0 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source = 

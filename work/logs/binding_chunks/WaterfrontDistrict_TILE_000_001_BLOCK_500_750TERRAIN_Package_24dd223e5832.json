@@ -1,0 +1,32 @@
+{
+  "package": "WaterfrontDistrict_TILE_000_001_BLOCK_500_750TERRAIN_Package",
+  "package_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded\\APBGame\\Content\\Release\\Packages\\WaterfrontDistrict\\Terrain\\WaterfrontDistrict_TILE_000_001_BLOCK_500_750TERRAIN_Package.upk",
+  "district": "Waterfront",
+  "meshes": [
+    {
+      "mesh": "MT000001B500750_001_VertexLit_LOD_0",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Water",
+          "material_class": "Material3"
+        }
+      ]
+    },
+    {
+      "mesh": "MT000001B500750_001_VertexLit_LOD_1",
+      "raw_slots": [
+        {
+          "index": 0,
+          "material": "Water",
+          "material_class": "Material3"
+        }
+      ]
+    }
+  ],
+  "material_loads": {
+    "material3|water": [
+      "Water"
+    ]
+  }
+}
