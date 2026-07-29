@@ -276,7 +276,7 @@ active milestone (recorded in this file, keeping one plan per effort).
   `[CharacterCustomisationScreens]` screenshot checklist left for optional manual capture
   (same posture as M4 visual sign-off).
 
-### M6 — Login/auth + world server  *(brief #5 — D6/D11)*  — PLAN (hyperplan 2026-07-20)
+### M6 — Login/auth + world server  *(brief #5 — D6/D11)*  — ✅ COMPLETE 2026-07-20
 
 > Authored by the `plan` agent from a 5-member adversarial bundle (minimalist / architect /
 > hardcore / maverick / deep-research; 3 cross-attack rounds). Decision-complete: execute with
@@ -507,6 +507,18 @@ GameModeMapPrefixes edit to avoid clashing with the existing frontend GameMode m
   full §4 schema (start_price/current_bid/bidder/fee_paid/created/expires/state).
   `tests/run_auction_tests.cpp` ($exe13, all 13 suites FAILS=0). Remaining: UE Economy
   widgets + kiosk, `auction.sync` world routing + expiry tick. See `work/m12_auction_note.md`.
+- **Progress (Qoder) — server-side wiring DONE (2026-07-29):** world authority owns
+  auction.json — `WorldService::InitAuctionPersistence` (dedicated `auction_store`,
+  `auction.mail` wired) + `auction_write_enabled` single-writer guard on per-connection
+  services; `AAPBWorldGameMode` loads/saves the store and drives `SettleExpired` on a 5 s
+  Tick cadence (`AUCTION_SETTLED`); new `AuctionHouse::BuyoutViaMail` settles offline
+  sellers via mailbox. Client surface: UGI `AuctionListItemAuth/Bid/Buyout/CancelListing`
+  (SocialSvc + CharacterOwnerSvc resolution) + `AAPBPlayerState::Server_Auction` RPC riding
+  the social dispatch/relay path (`auction.*` branches in `DispatchSocialOpDirect` and
+  `HandleSocialRequest`). Editor build BUILD_EXIT=0; auction suite +
+  `TestBuyoutViaMailSettlesOfflineSeller`, persistence suite + Instance L (authority
+  ownership, write guard, restart round-trip), all suites FAILS=0. Remaining: Economy
+  widgets/kiosk + district browse snapshot. See `work/m12_auction_note.md`.
 
 ### M13 — Vehicle systems  *(brief #12 — D15)*
 - Spec-expansion first step. Scope: catalog stats/handling per `vehicles.json`; spawn
@@ -589,6 +601,20 @@ GameModeMapPrefixes edit to avoid clashing with the existing frontend GameMode m
   relay presence (`friends_svc.SetOnline` in `MarkRelayPlayerJoined/Left`) is world-side and
   believed unaffected. REMAINING: this decision, then Server RPCs + relay presence + chat seam,
   2-client probe GREEN, UMG social panel, `run_m14_social_gate.ps1` + spine wiring.
+- **Progress (Qoder) — M14 gate GREEN (2026-07-29):** the blocker above was resolved via the
+  relay protocol (Server RPCs + `SocialRequest`/`SocialResult` relay + chat seam + UMG panel,
+  commit `3d432bb` era) and the 2-client gate now PASSES end-to-end:
+  `tools\run_m14_social_gate.ps1` → **`M14_SOCIAL_GATE_PASS`** — alice (listen world host)
+  echo-confirms all six ops (clan.create/invite, friend.request, group.create/invite,
+  mail.send); bob (pure network client, replicated-state driven) logs
+  `SOCIAL_CLAN_JOINED clan=ClanProbe`, `SOCIAL_FRIEND_CONFIRMED online=1`,
+  `SOCIAL_GROUP_JOINED group=GRP-1`, `SOCIAL_MAIL_RECEIVED unread=1`. Fixes required:
+  LoginPlayer identity binding + auto character creation (mail anti-spoof), MailUnreadCount
+  replication, `Client_SocialResult` echo fields + direct-path gate markers, single-flight
+  probe (domain AlreadyInvited guards forbid blind resends). Gate script must set
+  APB_DEPLOYMENT_SECRET, purge `Saved\DomainDB\social`, and launch alice before bob.
+  Regression: `M11_MISSION_GATE_OK` re-verified; domain suite FAILS=0. Evidence + remaining
+  relay-path coverage gap: `work/m14_social_gate_findings.md`.
 
 ### M15 — Economy & progression  *(brief #14)*
 - Scope: role progression from `roles.json` + retail `PlayerRoles.INT`/`ContactLevels.INT`;
