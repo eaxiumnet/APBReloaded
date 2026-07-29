@@ -30,7 +30,7 @@ def measure(path: Path) -> dict[str, float]:
     from PIL import Image
 
     with Image.open(path) as img:
-        px = list(img.convert("L").get_flattened_data())
+        px = list(img.convert("L").getdata())
     total = len(px)
     return {
         "mean": sum(px) / total,
