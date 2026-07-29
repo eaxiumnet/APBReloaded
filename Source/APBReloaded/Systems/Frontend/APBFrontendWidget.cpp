@@ -22,6 +22,9 @@
 #include "Components/ScrollBox.h"
 #include "Components/CanvasPanel.h"
 #include "Components/CanvasPanelSlot.h"
+#include "Components/ScaleBox.h"
+#include "Components/ScaleBoxSlot.h"
+#include "APBFrontendSceneData.h"
 #include "Components/ScrollBoxSlot.h"
 #include "Components/AudioComponent.h"
 #include "Components/Image.h"
@@ -35,6 +38,8 @@
 #include "Kismet/GameplayStatics.h"
 #include "Misc/FileHelper.h"
 #include "Misc/Paths.h"
+#include "Misc/CommandLine.h"
+#include "Misc/Parse.h"
 #include "HAL/PlatformMisc.h"
 #include "Engine/Texture2D.h"
 #include "ImageUtils.h"
@@ -59,12 +64,12 @@
 // #FFC254 is the Menu_Button_Light selection amber — replaces the old cyan identity.
 static const FLinearColor APB_PAPER(0.f, 0.f, 0.f, 1.f);
 static const FLinearColor APB_BG(0.f, 0.f, 0.f, 1.f);
-static const FLinearColor APB_PANEL(0.31f, 0.31f, 0.31f, 0.96f);      // #4F4F4F MessageBox_BG
-static const FLinearColor APB_PANEL_EDGE(1.f, 0.761f, 0.329f, 1.f);   // #FFC254 amber frame
+static const FLinearColor APB_PANEL = FLinearColor::FromSRGBColor(FColor(0x4F, 0x4F, 0x4F, 245));      // #4F4F4F MessageBox_BG
+static const FLinearColor APB_PANEL_EDGE = FLinearColor::FromSRGBColor(FColor(0xFF, 0xC2, 0x54, 255)); // #FFC254 amber frame
 static const FLinearColor APB_FIELD(0.08f, 0.09f, 0.10f, 1.f);
 static const FLinearColor APB_FIELD_FOCUS(0.10f, 0.10f, 0.11f, 1.f);
-static const FLinearColor APB_AMBER(1.f, 0.761f, 0.329f, 1.f);        // #FFC254
-static const FLinearColor APB_AMBER_HI(1.f, 0.984f, 0.612f, 1.f);     // #FFFB9C
+static const FLinearColor APB_AMBER = FLinearColor::FromSRGBColor(FColor(0xFF, 0xC2, 0x54, 255));    // #FFC254
+static const FLinearColor APB_AMBER_HI = FLinearColor::FromSRGBColor(FColor(0xFF, 0xFB, 0x9C, 255)); // #FFFB9C
 static const FLinearColor APB_WHITE(0.96f, 0.97f, 0.98f, 1.f);
 static const FLinearColor APB_MUTED(0.62f, 0.66f, 0.70f, 1.f);
 static const FLinearColor APB_BTN(0.16f, 0.17f, 0.19f, 1.f);
@@ -73,6 +78,16 @@ static const FLinearColor APB_BTN_OK(0.42f, 0.30f, 0.10f, 1.f);       // amber-m
 static const FLinearColor APB_BTN_DANGER(0.28f, 0.14f, 0.14f, 1.f);
 static const FLinearColor APB_CRIM(0.72f, 0.12f, 0.14f, 1.f);
 static const FLinearColor APB_ENF(0.12f, 0.32f, 0.62f, 1.f);
+static const FLinearColor APB_INK = FLinearColor::FromSRGBColor(FColor(0xE5, 0xE0, 0xD5, 235));
+static const FLinearColor APB_INK_SEC = FLinearColor::FromSRGBColor(FColor(0xCF, 0xCA, 0xBE, 176));
+static const FLinearColor APB_INK_DARK = FLinearColor::FromSRGBColor(FColor(0x1A, 0x1A, 0x18, 255));
+static const FLinearColor APB_FLAT(0.043f, 0.047f, 0.051f, 0.82f);
+static const FLinearColor APB_FLAT_HOVER(0.12f, 0.125f, 0.13f, 0.90f);
+static const FLinearColor APB_FLAT_PRIMARY(0.16f, 0.13f, 0.06f, 0.86f);
+static const FLinearColor APB_PANEL_DARK(0.039f, 0.047f, 0.043f, 0.72f);
+static const FLinearColor APB_WELL_DARK(0.012f, 0.016f, 0.016f, 0.78f);
+static const FLinearColor APB_FIELD_LIGHT = FLinearColor::FromSRGBColor(FColor(0xCF, 0xCF, 0xCB, 255));
+static const FLinearColor APB_HAIR_AMBER = FLinearColor::FromSRGBColor(FColor(0xFF, 0xC2, 0x54, 97));
 
 static void APB_MakeBoxBrush(FSlateBrush& Brush, const FLinearColor& Tint)
 {
@@ -104,6 +119,18 @@ static FSlateBrush APB_PanelBrush(UTexture2D* Tex, const FLinearColor& Tint)
 	return Brush;
 }
 
+/** Horizontal-only 9-slice for variable-width button/entry plates.
+ *  Left/right caps (CapFraction of texture width) are preserved; center stretches. */
+static FSlateBrush APB_HorizPanelBrush(UTexture2D* Tex, const FLinearColor& Tint, float CapFraction = 0.1f)
+{
+	FSlateBrush Brush;
+	Brush.DrawAs = ESlateBrushDrawType::Box;
+	Brush.SetResourceObject(Tex);
+	Brush.Margin = FMargin(CapFraction, 0.f, CapFraction, 0.f);
+	Brush.TintColor = FSlateColor(Tint);
+	return Brush;
+}
+
 UTextBlock* UAPBFrontendWidget::MakeLabel(const FString& Name, const FString& Text, int32 Size, FLinearColor Color)
 {
 	UTextBlock* T = WidgetTree->ConstructWidget<UTextBlock>(UTextBlock::StaticClass(), *Name);
@@ -128,10 +155,10 @@ UButton* UAPBFrontendWidget::MakeAccentButton(const FString& Name, const FString
 	const bool bHasPlates = (TexBtnOff != nullptr);
 	if (bHasPlates)
 	{
-		Style.Normal = APB_TexBrush(TexBtnOff, FLinearColor::White);
-		Style.Hovered = APB_TexBrush(TexBtnOn ? TexBtnOn : TexBtnOff, FLinearColor::White);
-		Style.Pressed = APB_TexBrush(TexBtnLight ? TexBtnLight : TexBtnOff, FLinearColor::White);
-		Style.Disabled = APB_TexBrush(TexBtnOff, FLinearColor::White.CopyWithNewOpacity(0.5f));
+		Style.Normal = APB_HorizPanelBrush(TexBtnOff, FLinearColor::White, 0.15f);
+		Style.Hovered = APB_HorizPanelBrush(TexBtnOn ? TexBtnOn : TexBtnOff, FLinearColor::White, 0.15f);
+		Style.Pressed = APB_HorizPanelBrush(TexBtnLight ? TexBtnLight : TexBtnOff, FLinearColor::White, 0.15f);
+		Style.Disabled = APB_HorizPanelBrush(TexBtnOff, FLinearColor::White.CopyWithNewOpacity(0.5f), 0.15f);
 	}
 	else
 	{
@@ -157,20 +184,68 @@ UButton* UAPBFrontendWidget::MakeAccentButton(const FString& Name, const FString
 	return B;
 }
 
-UEditableTextBox* UAPBFrontendWidget::MakeTextField(const FString& Name, const FString& Hint, bool bPassword)
+UButton* UAPBFrontendWidget::MakeFlatButton(const FString& Name, const FString& Label, bool bPrimary, int32 FontSize)
 {
-	// 2011 login field: staged APB_BG_TextEntry underline plate; dark inset fallback
+	UButton* B = WidgetTree->ConstructWidget<UButton>(UButton::StaticClass(), *Name);
+	FButtonStyle Style = B->GetStyle();
+	const FLinearColor Base = bPrimary ? APB_FLAT_PRIMARY : FLinearColor(0.016f, 0.018f, 0.020f, 0.94f);
+	APB_MakeBoxBrush(Style.Normal, Base);
+	APB_MakeBoxBrush(Style.Hovered, bPrimary ? FLinearColor(0.26f, 0.20f, 0.08f, 0.94f) : FLinearColor(0.10f, 0.11f, 0.12f, 0.96f));
+	APB_MakeBoxBrush(Style.Pressed, Base * FLinearColor(0.7f, 0.7f, 0.7f, 1.f));
+	APB_MakeBoxBrush(Style.Disabled, Base * FLinearColor(0.5f, 0.5f, 0.5f, 0.6f));
+	// Small fonts sit in short rects (footer 2x2 is 18px pre-scale); shrink vpad so glyphs don't clip.
+	const float VPad = FontSize <= 9 ? 1.f : 3.f;
+	Style.NormalPadding = FMargin(9.f, VPad);
+	Style.PressedPadding = FMargin(9.f, VPad);
+	B->SetStyle(Style);
+	B->OnHovered.AddDynamic(this, &UAPBFrontendWidget::OnAnyHover);
+	UTextBlock* L = MakeLabel(Name + TEXT("_L"), Label, FontSize, bPrimary ? APB_AMBER : APB_WHITE);
+	L->SetJustification(ETextJustify::Center);
+	L->SetAutoWrapText(false);
+	B->AddChild(L);
+	return B;
+}
+
+UButton* UAPBFrontendWidget::MakeLinkButton(const FString& Name, const FString& Label)
+{
+	UButton* B = WidgetTree->ConstructWidget<UButton>(UButton::StaticClass(), *Name);
+	FButtonStyle Style = B->GetStyle();
+	APB_MakeBoxBrush(Style.Normal, FLinearColor(0.f, 0.f, 0.f, 0.01f));
+	APB_MakeBoxBrush(Style.Hovered, FLinearColor(1.f, 1.f, 1.f, 0.06f));
+	APB_MakeBoxBrush(Style.Pressed, FLinearColor(0.f, 0.f, 0.f, 0.12f));
+	APB_MakeBoxBrush(Style.Disabled, FLinearColor(0.f, 0.f, 0.f, 0.01f));
+	Style.NormalPadding = FMargin(4.f, 0.f);
+	Style.PressedPadding = FMargin(4.f, 0.f);
+	B->SetStyle(Style);
+	B->OnHovered.AddDynamic(this, &UAPBFrontendWidget::OnAnyHover);
+	UTextBlock* L = MakeLabel(Name + TEXT("_L"), Label, 9, APB_INK_SEC);
+	L->SetJustification(ETextJustify::Center);
+	L->SetAutoWrapText(false);
+	B->AddChild(L);
+	return B;
+}
+
+UEditableTextBox* UAPBFrontendWidget::MakeTextField(const FString& Name, const FString& Hint, bool bPassword, bool bLight)
+{
 	UEditableTextBox* Box = WidgetTree->ConstructWidget<UEditableTextBox>(UEditableTextBox::StaticClass(), *Name);
 	Box->SetHintText(FText::FromString(Hint));
 	Box->SetIsPassword(bPassword);
-	Box->SetForegroundColor(APB_WHITE);
+	const FLinearColor Fg = bLight ? APB_INK_DARK : APB_WHITE;
+	Box->SetForegroundColor(Fg);
 	FEditableTextBoxStyle Style = Box->WidgetStyle;
-	if (TexTextEntry)
+	if (bLight)
 	{
-		Style.BackgroundImageNormal = APB_TexBrush(TexTextEntry, FLinearColor::White);
-		Style.BackgroundImageHovered = APB_TexBrush(TexTextEntry, APB_AMBER);
-		Style.BackgroundImageFocused = APB_TexBrush(TexTextEntry, APB_AMBER_HI);
-		Style.BackgroundImageReadOnly = APB_TexBrush(TexTextEntry, FLinearColor::White.CopyWithNewOpacity(0.6f));
+		APB_MakeBoxBrush(Style.BackgroundImageNormal, APB_FIELD_LIGHT);
+		APB_MakeBoxBrush(Style.BackgroundImageHovered, APB_FIELD_LIGHT * FLinearColor(1.02f, 1.02f, 1.02f, 1.f));
+		APB_MakeBoxBrush(Style.BackgroundImageFocused, FLinearColor::White);
+		APB_MakeBoxBrush(Style.BackgroundImageReadOnly, APB_FIELD_LIGHT * FLinearColor(0.85f, 0.85f, 0.85f, 1.f));
+	}
+	else if (TexTextEntry)
+	{
+		Style.BackgroundImageNormal = APB_HorizPanelBrush(TexTextEntry, FLinearColor::White, 0.1f);
+		Style.BackgroundImageHovered = APB_HorizPanelBrush(TexTextEntry, APB_AMBER, 0.1f);
+		Style.BackgroundImageFocused = APB_HorizPanelBrush(TexTextEntry, APB_AMBER_HI, 0.1f);
+		Style.BackgroundImageReadOnly = APB_HorizPanelBrush(TexTextEntry, FLinearColor::White.CopyWithNewOpacity(0.6f), 0.1f);
 	}
 	else
 	{
@@ -179,9 +254,13 @@ UEditableTextBox* UAPBFrontendWidget::MakeTextField(const FString& Name, const F
 		APB_MakeBoxBrush(Style.BackgroundImageFocused, APB_FIELD_FOCUS);
 		APB_MakeBoxBrush(Style.BackgroundImageReadOnly, APB_FIELD * 0.8f);
 	}
-	Style.Padding = FMargin(10.f, 8.f);
-	Style.ForegroundColor = FSlateColor(APB_WHITE);
+	// LoginRects edit boxes are 19px tall in design space; font 10 + zero vertical
+	// padding is required to keep glyphs inside the box instead of overflowing.
+	Style.Padding = FMargin(8.f, 0.f);
+	Style.ForegroundColor = FSlateColor(Fg);
+	Style.SetFont(FCoreStyle::GetDefaultFontStyle("Regular", 10));
 	Box->WidgetStyle = Style;
+	Box->SetJustification(ETextJustify::Left);
 	return Box;
 }
 
@@ -220,6 +299,11 @@ void UAPBFrontendWidget::LoadMenu2011Assets()
 	TexFooter = APB_LoadMenu2011Tex(TEXT("Login"), TEXT("frontendFooter"));
 	TexCloseBtn = APB_LoadMenu2011Tex(TEXT("Login"), TEXT("JKICON_close_default"));
 	TexRing = APB_LoadMenu2011Tex(TEXT("Chrome"), TEXT("BG_Button_Active_Ring"));
+	// Design-canvas panel plates (2011 Login/Lobby scene backgrounds)
+	TexDropShadow = APB_LoadMenu2011Tex(TEXT("Chrome"), TEXT("APB_DropShadow"));
+	TexGenericContent = APB_LoadMenu2011Tex(TEXT("Chrome"), TEXT("APB_BG_GenericContent_01"));
+	TexTitleAccent = APB_LoadMenu2011Tex(TEXT("Chrome"), TEXT("Window_Title_Accent_01"));
+	TexWindowBG = APB_LoadMenu2011Tex(TEXT("Chrome"), TEXT("APB_Window_BG"));
 	// District splash photos
 	TexDistFinancial = APB_LoadMenu2011Tex(TEXT("DistrictSelect"), TEXT("FinancialDistrict_MainPhoto256x195"));
 	TexDistSocial = APB_LoadMenu2011Tex(TEXT("DistrictSelect"), TEXT("SocialDistrict_MainPhoto256x195"));
@@ -228,11 +312,12 @@ void UAPBFrontendWidget::LoadMenu2011Assets()
 	// No full-screen male/female character overlays
 	TexAvatarMale = nullptr;
 	TexAvatarFemale = nullptr;
-	UE_LOG(LogTemp, Warning, TEXT("APBFrontend ART2011 logo=%d graffiti=%d panel=%d btn=%d/%d/%d entry=%d footer=%d ring=%d facC=%d facE=%d"),
+	UE_LOG(LogTemp, Warning, TEXT("APBFrontend ART2011 logo=%d graffiti=%d panel=%d btn=%d/%d/%d entry=%d footer=%d ring=%d facC=%d facE=%d | plates shadow=%d content=%d title=%d winbg=%d"),
 		TexLogo ? 1 : 0, TexGraffiti ? 1 : 0, TexWindowPanel ? 1 : 0,
 		TexBtnOn ? 1 : 0, TexBtnOff ? 1 : 0, TexBtnLight ? 1 : 0,
 		TexTextEntry ? 1 : 0, TexFooter ? 1 : 0, TexRing ? 1 : 0,
-		TexFactionCrim ? 1 : 0, TexFactionEnf ? 1 : 0);
+		TexFactionCrim ? 1 : 0, TexFactionEnf ? 1 : 0,
+		TexDropShadow ? 1 : 0, TexGenericContent ? 1 : 0, TexTitleAccent ? 1 : 0, TexWindowBG ? 1 : 0);
 }
 
 void UAPBFrontendWidget::LoadUiStrings2011()
@@ -328,7 +413,6 @@ void UAPBFrontendWidget::PlayUiSfx(FName SfxSlot)
 
 void UAPBFrontendWidget::OnAnyHover()
 {
-	PlayUiSfx(TEXT("UI_Hover"));
 }
 
 void UAPBFrontendWidget::OnAccountLink()
@@ -572,11 +656,50 @@ void UAPBFrontendWidget::NativeConstruct()
 	StartLoginMusic();
 	StartLoginBackgroundVideo();
 	UpdateViewportScale();
+	if (GEngine)
+	{
+		GEngine->OnTravelFailure().AddUObject(this, &UAPBFrontendWidget::HandleTravelFailure);
+	}
 	UE_LOG(LogTemp, Warning, TEXT("APBFrontend NativeConstruct classic_ui root=%d"), RootCanvas != nullptr ? 1 : 0);
+
+	// QA-only capture hook: -APBHoldStage=<Login|CharacterSelect|CharacterCreate|DistrictSelect|Settings|Loading>
+	// Suppresses splash auto-advance, seeds a character (so CharacterSelect renders populated),
+	// jumps straight to the named stage and holds. Never fires for players (no flag => no-op).
+	FString HoldStage;
+	if (FParse::Value(FCommandLine::Get(), TEXT("APBHoldStage="), HoldStage) && !HoldStage.IsEmpty())
+	{
+		bSplashAutoDone = true;
+		if (UGameInstance* GI = GetGameInstance())
+		{
+			if (UAPBGameInstanceSubsystem* APB = GI->GetSubsystem<UAPBGameInstanceSubsystem>())
+			{
+				APB->RegisterAccount(TEXT("player1"), TEXT("password"));
+				APB->Login(TEXT("player1"), TEXT("password"));
+				APB->EnterWorld(TEXT("W1"));
+				if (!APB->CaptureDomainSnapshot().bHasCharacter)
+				{
+					APB->CreateCharacter(TEXT("FrontendOp"), false);
+				}
+			}
+		}
+		EAPBFrontendStage Target = EAPBFrontendStage::Login;
+		if (HoldStage.Equals(TEXT("CharacterSelect"), ESearchCase::IgnoreCase)) Target = EAPBFrontendStage::CharacterSelect;
+		else if (HoldStage.Equals(TEXT("CharacterCreate"), ESearchCase::IgnoreCase)) Target = EAPBFrontendStage::CharacterCreate;
+		else if (HoldStage.Equals(TEXT("DistrictSelect"), ESearchCase::IgnoreCase)) Target = EAPBFrontendStage::DistrictSelect;
+		else if (HoldStage.Equals(TEXT("Settings"), ESearchCase::IgnoreCase)) Target = EAPBFrontendStage::Settings;
+		else if (HoldStage.Equals(TEXT("Loading"), ESearchCase::IgnoreCase)) Target = EAPBFrontendStage::Loading;
+		else if (HoldStage.Equals(TEXT("Splash"), ESearchCase::IgnoreCase)) Target = EAPBFrontendStage::Splash;
+		SetStage(Target);
+		UE_LOG(LogTemp, Warning, TEXT("APBFrontend HOLD_STAGE=%s"), *GetStageToken());
+	}
 }
 
 void UAPBFrontendWidget::NativeDestruct()
 {
+	if (GEngine)
+	{
+		GEngine->OnTravelFailure().RemoveAll(this);
+	}
 	StopLoginBackgroundVideo();
 	DestroyCharacterPreview();
 	StopLoginMusic();
@@ -808,17 +931,26 @@ void UAPBFrontendWidget::EnsureLoginMediaLoop()
 
 void UAPBFrontendWidget::UpdateViewportScale()
 {
+	if (DesignScale && DesignScale->GetVisibility() != ESlateVisibility::Collapsed)
+	{
+		if (CurrentStage == EAPBFrontendStage::CharacterSelect)
+			SetDesignCanvasSize(apb_scene::LobbyDesignW, apb_scene::LobbyDesignH);
+		else
+			SetDesignCanvasSize(apb_scene::LoginDesignW, apb_scene::LoginDesignH);
+	}
 	if (!PanelSizeBox) return;
 	FVector2D VP(1920.f, 1080.f);
 	if (GEngine && GEngine->GameViewport)
 	{
 		GEngine->GameViewport->GetViewportSize(VP);
 	}
-	if (VP.Equals(LastViewport, 1.f)) return;
-	LastViewport = VP;
-
 	// Multi-aspect scale via shipped pure math (APBFrontendLayoutMath.h)
 	const FString Token = GetStageToken();
+	// Panel size is stage-dependent; must recompute on stage change too, not only
+	// on viewport resize (viewport-only early-out => new stage keeps old size, offscreen).
+	if (VP.Equals(LastViewport, 1.f) && Token == LastScaleToken) return;
+	LastViewport = VP;
+	LastScaleToken = Token;
 	const apb_layout::ScaleMode Mode =
 		(UiScaleMode == EAPBUiScaleMode::Fill) ? apb_layout::ScaleMode::Fill
 		: (UiScaleMode == EAPBUiScaleMode::Stretch) ? apb_layout::ScaleMode::Stretch
@@ -1175,10 +1307,10 @@ void UAPBFrontendWidget::BuildLayout()
 	FooterBar = WidgetTree->ConstructWidget<UBorder>(UBorder::StaticClass(), TEXT("FooterBar"));
 	FooterBar->SetPadding(FMargin(24.f, 20.f, 24.f, 12.f));
 	{
-		FSlateBrush Brush = TexFooter ? APB_TexBrush(TexFooter, FLinearColor::White) : FSlateBrush();
-		if (!TexFooter) APB_MakeBoxBrush(Brush, FLinearColor(0.f, 0.f, 0.f, 0.88f));
+		FSlateBrush Brush;
+		APB_MakeBoxBrush(Brush, FLinearColor(0.f, 0.f, 0.f, 0.88f));
 		FooterBar->SetBrush(Brush);
-		FooterBar->SetBrushColor(TexFooter ? FLinearColor::White : FLinearColor(0.f, 0.f, 0.f, 0.88f));
+		FooterBar->SetBrushColor(FLinearColor(0.f, 0.f, 0.f, 0.88f));
 	}
 	UHorizontalBox* FooterLinks = WidgetTree->ConstructWidget<UHorizontalBox>(UHorizontalBox::StaticClass(), TEXT("FooterLinks"));
 	auto AddFooterLink = [&](UButton* Link)
@@ -1223,6 +1355,26 @@ void UAPBFrontendWidget::BuildLayout()
 		CS->SetZOrder(16);
 	}
 	SplashLogo->SetVisibility(ESlateVisibility::Collapsed);
+
+	DesignScale = WidgetTree->ConstructWidget<UScaleBox>(UScaleBox::StaticClass(), TEXT("DesignScale"));
+	DesignScale->SetStretch(EStretch::ScaleToFit);
+	DesignSizeBox = WidgetTree->ConstructWidget<USizeBox>(USizeBox::StaticClass(), TEXT("DesignSizeBox"));
+	DesignSizeBox->SetWidthOverride(apb_scene::LoginDesignW);
+	DesignSizeBox->SetHeightOverride(apb_scene::LoginDesignH);
+	DesignCanvas = WidgetTree->ConstructWidget<UCanvasPanel>(UCanvasPanel::StaticClass(), TEXT("DesignCanvas"));
+	if (UScaleBoxSlot* SBS = Cast<UScaleBoxSlot>(DesignSizeBox->AddChild(DesignCanvas)))
+	{
+		SBS->SetHorizontalAlignment(HAlign_Fill);
+		SBS->SetVerticalAlignment(VAlign_Fill);
+	}
+	DesignScale->AddChild(DesignSizeBox);
+	if (UCanvasPanelSlot* CS = RootCanvas->AddChildToCanvas(DesignScale))
+	{
+		CS->SetAnchors(FAnchors(0.f, 0.f, 1.f, 1.f));
+		CS->SetOffsets(FMargin(0.f));
+		CS->SetZOrder(18);
+	}
+	DesignScale->SetVisibility(ESlateVisibility::Collapsed);
 
 	PanelSizeBox = WidgetTree->ConstructWidget<USizeBox>(USizeBox::StaticClass(), TEXT("PanelSizeBox"));
 	PanelSizeBox->SetWidthOverride(380.f);
@@ -1386,6 +1538,285 @@ void UAPBFrontendWidget::BuildLayout()
 	UE_LOG(LogTemp, Warning, TEXT("APBFrontend BuildLayout GameFlow plate logo=%d"), TexLogo ? 1 : 0);
 }
 
+void UAPBFrontendWidget::SetDesignCanvasSize(float DesignW, float DesignH)
+{
+	if (DesignSizeBox)
+	{
+		DesignSizeBox->SetWidthOverride(DesignW);
+		DesignSizeBox->SetHeightOverride(DesignH);
+	}
+	if (DesignScale)
+	{
+		const EStretch::Type Mode =
+			(UiScaleMode == EAPBUiScaleMode::Fill) ? EStretch::ScaleToFill
+			: (UiScaleMode == EAPBUiScaleMode::Stretch) ? EStretch::Fill
+			: EStretch::ScaleToFit;
+		DesignScale->SetStretch(Mode);
+	}
+}
+
+UCanvasPanelSlot* UAPBFrontendWidget::PlaceRect(UWidget* Child, float X, float Y, float W, float H, int32 ZOrder)
+{
+	if (!DesignCanvas || !Child) return nullptr;
+	UCanvasPanelSlot* CS = DesignCanvas->AddChildToCanvas(Child);
+	if (CS)
+	{
+		CS->SetAnchors(FAnchors(0.f, 0.f));
+		CS->SetAlignment(FVector2D(0.f, 0.f));
+		CS->SetPosition(FVector2D(X, Y));
+		CS->SetSize(FVector2D(W, H));
+		CS->SetZOrder(ZOrder);
+	}
+	return CS;
+}
+
+void UAPBFrontendWidget::ClearDesignCanvas()
+{
+	if (DesignCanvas)
+	{
+		DesignCanvas->ClearChildren();
+	}
+}
+
+void UAPBFrontendWidget::BuildLoginDesign()
+{
+	SetDesignCanvasSize(apb_scene::LoginDesignW, apb_scene::LoginDesignH);
+	ClearDesignCanvas();
+	UserBox = PassBox = nullptr;
+	RememberCheck = nullptr;
+
+	using namespace apb_scene;
+	constexpr float kLoginScale = 0.88f;
+	const float kCx = LoginDesignW * 0.5f;
+	const float kCy = LoginDesignH * 0.5f;
+	auto Scaled = [&](float X, float Y, float W, float H, UWidget* Wd, int32 Z)
+	{
+		const float sx = kCx + (X - kCx) * kLoginScale;
+		const float sy = kCy + (Y - kCy) * kLoginScale;
+		PlaceRect(Wd, sx, sy, W * kLoginScale, H * kLoginScale, Z);
+	};
+	auto Place = [&](const char* N, UWidget* W, int32 Z)
+	{
+		if (const FRectDef* D = FindRect(LoginRects, LoginRectCount, N))
+			Scaled(D->X, D->Y, D->W, D->H, W, Z);
+	};
+	auto TexPanel = [&](const FName& Name, UTexture2D* Tex, bool bNineSlice, const FLinearColor& Fallback)
+	{
+		UBorder* B = WidgetTree->ConstructWidget<UBorder>(UBorder::StaticClass(), Name);
+		if (Tex)
+		{
+			B->SetBrush(bNineSlice ? APB_PanelBrush(Tex, FLinearColor::White) : APB_TexBrush(Tex, FLinearColor::White));
+			B->SetBrushColor(FLinearColor::White);
+		}
+		else
+		{
+			FSlateBrush Brush; APB_MakeBoxBrush(Brush, Fallback);
+			// Brush.TintColor already holds Fallback; keep UBorder color White so
+			// the tint is applied once (loaded path uses White x White = neutral).
+			B->SetBrush(Brush); B->SetBrushColor(FLinearColor::White);
+		}
+		return B;
+	};
+
+	Place("UIImage_dropshadow", TexPanel(TEXT("LoginShadow"), nullptr, false, FLinearColor(0.f, 0.f, 0.f, 0.62f)), 0);
+	Place("UIPanel_EULA_MainPanel", TexPanel(TEXT("LoginPanelBody"), nullptr, false, APB_PANEL_DARK), 1);
+	Place("UIImage_main_under", TexPanel(TEXT("LoginMainUnder"), nullptr, false, APB_WELL_DARK), 2);
+	Place("UIImage_header", TexPanel(TEXT("LoginHeader"), nullptr, false, FLinearColor(0.10f, 0.09f, 0.05f, 0.55f)), 2);
+
+	UImage* Logo = MakeImage(TEXT("LoginLogo"), TexLogo);
+	if (Logo) Logo->SetColorAndOpacity(APB_INK_DARK);
+	if (const FRectDef* LR = FindRect(LoginRects, LoginRectCount, "UIImage_APBlogo"))
+	{
+		const float TexAspect = 512.f / 128.f;
+		float FitW = LR->W;
+		float FitH = FitW / TexAspect;
+		if (FitH > LR->H) { FitH = LR->H; FitW = FitH * TexAspect; }
+		const float FitX = LR->X + (LR->W - FitW) * 0.5f;
+		const float FitY = LR->Y + (LR->H - FitH) * 0.5f;
+		Scaled(FitX, FitY, FitW, FitH, Logo, 5);
+	}
+
+	UImage* Key = MakeImage(TEXT("LoginKey"), TexBrandKey);
+	if (Key) Key->SetColorAndOpacity(APB_INK);
+	Place("UIImage_Key_Icon", Key, 6);
+	UTextBlock* Title = MakeLabel(TEXT("LoginTitle"), S2011(TEXT("APBLoginScreen.Login"), TEXT("LOGIN")), 18, APB_WHITE);
+	Title->SetFont(FCoreStyle::GetDefaultFontStyle("Bold", 18));
+	Place("UILabel", Title, 6);
+	Place("Label_Instructions", MakeLabel(TEXT("LoginInstr"),
+		S2011(TEXT("APBLoginScreen.Instructions"), TEXT("Please enter your account details to continue.")).ToUpper(), 11, APB_INK_SEC), 6);
+
+	UTextBlock* UserLabel = MakeLabel(TEXT("LoginUserLabel"),
+		S2011(TEXT("APBLoginScreen.EmailAddress"), TEXT("Email Address")), 12, APB_INK);
+	UserLabel->SetJustification(ETextJustify::Right);
+	UserLabel->SetAutoWrapText(false);
+	Place("Label_UserID", UserLabel, 6);
+	UserBox = MakeTextField(TEXT("LoginUserBox"), TEXT(""), false, true);
+	Place("EditBox_UserID", UserBox, 7);
+
+	UTextBlock* PassLabel = MakeLabel(TEXT("LoginPassLabel"),
+		S2011(TEXT("APBLoginScreen.Password"), TEXT("Password")), 12, APB_INK);
+	PassLabel->SetJustification(ETextJustify::Right);
+	PassLabel->SetAutoWrapText(false);
+	Place("Label_Password", PassLabel, 6);
+	PassBox = MakeTextField(TEXT("LoginPassBox"), TEXT(""), true, true);
+	Place("EditBox_Password", PassBox, 7);
+
+	RememberCheck = WidgetTree->ConstructWidget<UCheckBox>(UCheckBox::StaticClass(), TEXT("LoginRememberCheck"));
+	if (TexCheckTrue && TexCheckFalse)
+	{
+		FCheckBoxStyle Style = RememberCheck->GetWidgetStyle();
+		Style.UncheckedImage = APB_TexBrush(TexCheckFalse, FLinearColor::White);
+		Style.CheckedImage = APB_TexBrush(TexCheckTrue, FLinearColor::White);
+		RememberCheck->SetWidgetStyle(Style);
+	}
+	RememberCheck->OnCheckStateChanged.AddDynamic(this, &UAPBFrontendWidget::OnRememberToggled);
+	Place("Check_RememberData", RememberCheck, 7);
+	UTextBlock* RememberLabel = MakeLabel(TEXT("LoginRememberLabel"),
+		S2011(TEXT("APBLoginScreen.RememberUserID"), TEXT("Remember Me")), 12, APB_INK);
+	RememberLabel->SetJustification(ETextJustify::Left);
+	Place("UILabel_RememberMeLabel", RememberLabel, 7);
+
+	UButton* ExitB = MakeFlatButton(TEXT("LoginExitBtn"), S2011(TEXT("APBLoginScreen.ExitToDesktop"), TEXT("Exit to Desktop")), false);
+	ExitB->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnExitDesktop);
+	Place("UILabelButton_Exit", ExitB, 7);
+	UButton* LoginB = MakeFlatButton(TEXT("LoginBtn"), S2011(TEXT("APBLoginScreen.Login"), TEXT("Login")), false);
+	LoginB->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnLoginClicked);
+	Place("Button_Login", LoginB, 7);
+
+	Place("UIPanel_footer", TexPanel(TEXT("LoginFooterWell"), nullptr, false, APB_WELL_DARK), 6);
+	UButton* AccB = MakeFlatButton(TEXT("LoginAccBtn"), S2011(TEXT("APBLoginScreen.AccountManagement"), TEXT("Account")), false, 9);
+	AccB->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnAccountLink);
+	Place("UILabelButton_AccMgmt", AccB, 7);
+	UButton* ReplayB = MakeFlatButton(TEXT("LoginReplayBtn"), S2011(TEXT("APBLoginScreen.ReplayVideos"), TEXT("Replay Videos")), false, 9);
+	ReplayB->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnReplayVideosLink);
+	Place("UILabelButton_ReplayVideos", ReplayB, 7);
+	UButton* NewAccB = MakeFlatButton(TEXT("LoginNewAccBtn"), S2011(TEXT("APBLoginScreen.NewAccount"), TEXT("New Account")), false, 9);
+	NewAccB->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnRegisterClicked);
+	Place("UILabelButton_TOS", NewAccB, 7);
+	UButton* CreditsB = MakeFlatButton(TEXT("LoginCreditsBtn"), S2011(TEXT("APBLoginScreen.Credits"), TEXT("Credits")), false, 9);
+	CreditsB->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnReplayVideosLink);
+	Place("UILabelButton_Credits", CreditsB, 7);
+}
+
+void UAPBFrontendWidget::BuildCharacterSelectDesign()
+{
+	SetDesignCanvasSize(apb_scene::LobbyDesignW, apb_scene::LobbyDesignH);
+	ClearDesignCanvas();
+
+	using namespace apb_scene;
+	auto Place = [&](const char* N, UWidget* W, int32 Z)
+	{
+		if (const FRectDef* D = FindRect(LobbyRects, LobbyRectCount, N))
+			PlaceRect(W, D->X, D->Y, D->W, D->H, Z);
+	};
+	auto TexPanel = [&](const FName& Name, UTexture2D* Tex, bool bNineSlice, const FLinearColor& Fallback)
+	{
+		UBorder* B = WidgetTree->ConstructWidget<UBorder>(UBorder::StaticClass(), Name);
+		if (Tex)
+		{
+			B->SetBrush(bNineSlice ? APB_PanelBrush(Tex, FLinearColor::White) : APB_TexBrush(Tex, FLinearColor::White));
+			B->SetBrushColor(FLinearColor::White);
+		}
+		else
+		{
+			FSlateBrush Brush; APB_MakeBoxBrush(Brush, Fallback);
+			// Brush.TintColor already holds Fallback; keep UBorder color White so
+			// the tint is applied once (loaded path uses White x White = neutral).
+			B->SetBrush(Brush); B->SetBrushColor(FLinearColor::White);
+		}
+		return B;
+	};
+
+	FString CharacterName = S2011(TEXT("CharacterSelectScreen.EmptyCharacter"), TEXT("Empty"));
+	FString FactionName = TEXT("-");
+	int32 ThreatRating = 0;
+	bool bHas = false, bEnforcer = false;
+	if (UGameInstance* GI = GetGameInstance())
+	{
+		if (UAPBGameInstanceSubsystem* APB = GI->GetSubsystem<UAPBGameInstanceSubsystem>())
+		{
+			const auto Snap = APB->CaptureDomainSnapshot();
+			bHas = Snap.bHasCharacter;
+			if (bHas)
+			{
+				CharacterName = Snap.CharacterName;
+				bEnforcer = Snap.bEnforcer;
+				FactionName = bEnforcer ? TEXT("ENFORCER") : TEXT("CRIMINAL");
+				ThreatRating = FMath::Max(0, FMath::RoundToInt(Snap.ThreatPoints));
+			}
+		}
+	}
+
+	Place("UIImage_headerBG", TexPanel(TEXT("CSHeaderBG"), nullptr, false, FLinearColor(0.043f, 0.047f, 0.051f, 0.94f)), 1);
+	UImage* LobbyIcon = MakeImage(TEXT("CSLobbyIcon"), TexBrandKey);
+	if (LobbyIcon) LobbyIcon->SetColorAndOpacity(APB_AMBER);
+	Place("UIImage_Lobby_Icon", LobbyIcon, 3);
+	UTextBlock* LobbyTitle = MakeLabel(TEXT("CSTitle"),
+		S2011(TEXT("CharacterSelectScreen.CharacterSelect"), TEXT("CHARACTER SELECT")).ToUpper(), 15, APB_AMBER);
+	LobbyTitle->SetFont(FCoreStyle::GetDefaultFontStyle("Bold", 15));
+	Place("UILabel_Lobby_TITLE", LobbyTitle, 3);
+
+	Place("UIPanel_CharacterList", TexPanel(TEXT("CSCharListBG"), nullptr, false, APB_PANEL_DARK), 1);
+	Place("UIPanel_BusinessModel", TexPanel(TEXT("CSBusModelBG"), nullptr, false, APB_WELL_DARK), 1);
+	Place("UIPanel_Mesh", TexPanel(TEXT("CSMeshBG"), nullptr, false, FLinearColor(0.f, 0.f, 0.f, 0.28f)), 0);
+	Place("UIPanel_C_Content", TexPanel(TEXT("CSNamePlateBG"), nullptr, false, APB_PANEL_DARK), 1);
+
+	Place("UIImage_Characterheader", TexPanel(TEXT("CSCharHeaderBar"), nullptr, false, FLinearColor(0.10f, 0.09f, 0.05f, 0.55f)), 2);
+	UTextBlock* CharHdr = MakeLabel(TEXT("CSCharHeader"),
+		S2011(TEXT("CharacterSelectScreen.Characters"), TEXT("CHARACTERS")), 13, APB_INK);
+	CharHdr->SetFont(FCoreStyle::GetDefaultFontStyle("Bold", 13));
+	Place("UILabel_CharacterHeader", CharHdr, 3);
+	UTextBlock* CharCount = MakeLabel(TEXT("CSCharCount"), bHas ? TEXT("1/1") : TEXT("0/1"), 12, APB_INK_SEC);
+	CharCount->SetJustification(ETextJustify::Right);
+	Place("UILabel_CharacterCount", CharCount, 3);
+
+	UButton* CreateB = MakeAccentButton(TEXT("CSCreateBtn"),
+		S2011(TEXT("CharacterSelectScreen.CreateCharacter"), TEXT("CREATE CHARACTER")), APB_AMBER);
+	CreateB->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnCreateCharOpen);
+	CreateB->SetVisibility(bHas ? ESlateVisibility::Collapsed : ESlateVisibility::Visible);
+	Place("UILabelButton_CreateCharacter", CreateB, 3);
+
+	UButton* CharEntry = MakeAccentButton(TEXT("CSCharEntry"), CharacterName.ToUpper(), APB_AMBER);
+	CharEntry->SetIsEnabled(bHas);
+	CharEntry->SetVisibility(bHas ? ESlateVisibility::Visible : ESlateVisibility::Collapsed);
+	CharEntry->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnSelectExistingChar);
+	Place("UIImage_Characterheader2", CharEntry, 3);
+
+	Place("UIImage_threatbackground", TexPanel(TEXT("CSThreatBG"), nullptr, false, FLinearColor(0.012f, 0.016f, 0.016f, 0.92f)), 2);
+	UTexture2D* FactionTex = bEnforcer ? TexFactionEnf : TexFactionCrim;
+	if (bHas && FactionTex)
+	{
+		UImage* FactionBadge = MakeImage(TEXT("CSFactionBadge"), FactionTex);
+		Place("UIImage_Threat", FactionBadge, 4);
+	}
+
+	UTextBlock* NameVal = MakeLabel(TEXT("CSCharName"), CharacterName.ToUpper(), 18, bHas ? APB_INK : APB_INK_SEC);
+	NameVal->SetFont(FCoreStyle::GetDefaultFontStyle("Bold", 18));
+	NameVal->SetAutoWrapText(false);
+	Place("UILabel_CharacterName", NameVal, 4);
+	Place("UILabel_Cash", MakeLabel(TEXT("CSCash"),
+		bHas ? FactionName : TEXT("-"), 12, APB_INK_SEC), 4);
+	Place("UIImage_threatbackground3", TexPanel(TEXT("CSRatingBG"), nullptr, false, FLinearColor(0.10f, 0.09f, 0.05f, 0.55f)), 3);
+	UTextBlock* Rating = MakeLabel(TEXT("CSRating"), bHas ? FString::FromInt(ThreatRating) : TEXT("-"), 18, APB_AMBER_HI);
+	Rating->SetFont(FCoreStyle::GetDefaultFontStyle("Bold", 18));
+	Rating->SetJustification(ETextJustify::Center);
+	Place("UILabel_Rating", Rating, 4);
+
+	UButton* PlayB = MakeAccentButton(TEXT("CSPlayBtn"), S2011(TEXT("CharacterSelectScreen.Play"), TEXT("PLAY")), APB_AMBER);
+	PlayB->SetIsEnabled(bHas);
+	PlayB->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnSelectExistingChar);
+	Place("cUILabelButton_Play", PlayB, 4);
+	UButton* LogoutB = MakeFlatButton(TEXT("CSLogoutBtn"), S2011(TEXT("CharacterSelectScreen.Logout"), TEXT("Logout")), false);
+	LogoutB->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnBackToLogin);
+	Place("UILabelButton_Logout", LogoutB, 4);
+	UButton* OptionsB = MakeFlatButton(TEXT("CSOptionsBtn"), S2011(TEXT("APBLoginScreen.Settings"), TEXT("Settings")), false);
+	OptionsB->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnOpenSettings);
+	Place("UILabelButton_Options", OptionsB, 4);
+	UButton* QuitB = MakeFlatButton(TEXT("CSQuitBtn"), S2011(TEXT("CharacterSelectScreen.ExitGame"), TEXT("Quit")), false);
+	QuitB->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnExitDesktop);
+	Place("UILabelButton_Quit", QuitB, 4);
+}
+
 void UAPBFrontendWidget::SetStage(EAPBFrontendStage Stage)
 {
 	if (CurrentStage == EAPBFrontendStage::CharacterCreate && Stage != EAPBFrontendStage::CharacterCreate)
@@ -1409,14 +1840,8 @@ void UAPBFrontendWidget::SetStage(EAPBFrontendStage Stage)
 	}
 	if (LogoSizeBox)
 	{
-		// Logo only on main lobby stages (above dialog stack)
-		const bool bLogo =
-			Stage == EAPBFrontendStage::Login ||
-			Stage == EAPBFrontendStage::CharacterSelect ||
-			Stage == EAPBFrontendStage::DistrictSelect ||
-			Stage == EAPBFrontendStage::Settings ||
-			Stage == EAPBFrontendStage::CharacterCreate;
-		LogoSizeBox->SetVisibility(bLogo ? ESlateVisibility::Visible : ESlateVisibility::Collapsed);
+		// No in-window wordmark on any dialog stage (spec §3.1/§4.1 — logo is Splash/Loading only)
+		LogoSizeBox->SetVisibility(ESlateVisibility::Collapsed);
 	}
 }
 
@@ -1442,6 +1867,8 @@ void UAPBFrontendWidget::RebuildStageBody()
 
 	const FLinearColor PanelCol = APB_PANEL;
 
+	if (DesignScale) DesignScale->SetVisibility(ESlateVisibility::Collapsed);
+
 	switch (CurrentStage)
 	{
 	case EAPBFrontendStage::Splash:
@@ -1458,273 +1885,22 @@ void UAPBFrontendWidget::RebuildStageBody()
 	}
 	case EAPBFrontendStage::Login:
 	{
-		BeginStageContent(false);
-		ApplyPanelChrome(true, PanelCol);
+		if (PanelSizeBox) PanelSizeBox->SetVisibility(ESlateVisibility::Collapsed);
+		if (FooterBar) FooterBar->SetVisibility(ESlateVisibility::Collapsed);
 		if (SplashLogo) SplashLogo->SetVisibility(ESlateVisibility::Collapsed);
-		if (FooterBar) FooterBar->SetVisibility(ESlateVisibility::Visible);
-		if (LogoSizeBox) LogoSizeBox->SetVisibility(ESlateVisibility::Visible);
-		if (TitleText)
-		{
-			TitleText->SetVisibility(ESlateVisibility::Visible);
-			TitleText->SetText(FText::FromString(bFirstRunTOS
-				? S2011(TEXT("APBLoginScreen.TermsOfService"), TEXT("TERMS OF SERVICE"))
-				: S2011(TEXT("APBLoginScreen.Login"), TEXT("LOGIN"))));
-			TitleText->SetColorAndOpacity(FSlateColor(APB_WHITE));
-			TitleText->SetFont(FCoreStyle::GetDefaultFontStyle("Bold", 20));
-			TitleText->SetJustification(ETextJustify::Left);
-		}
-		// Keep subtitle empty on login (original plate is clean; status shows errors)
-		if (SubtitleText)
-		{
-			SubtitleText->SetVisibility(ESlateVisibility::Collapsed);
-			SubtitleText->SetText(FText::GetEmpty());
-		}
-		if (StatusText)
-		{
-			StatusText->SetVisibility(ESlateVisibility::Visible);
-			StatusText->SetText(FText::GetEmpty());
-			StatusText->SetJustification(ETextJustify::Center);
-		}
-		if (HintText) HintText->SetVisibility(ESlateVisibility::Collapsed);
-
-		AddToScroll(MakeLabel(TEXT("lu"), S2011(TEXT("APBLoginScreen.EmailAddress"), TEXT("Email Address")), 13, APB_MUTED), 4.f);
-		UserBox = MakeTextField(TEXT("LoginUserBox"), TEXT(""), false);
-		UserBox->SetText(FText::GetEmpty());
-		AddToScroll(UserBox, 2.f);
-
-		AddToScroll(MakeLabel(TEXT("lp"), S2011(TEXT("APBLoginScreen.Password"), TEXT("Password")), 13, APB_MUTED), 8.f);
-		PassBox = MakeTextField(TEXT("LoginPassBox"), TEXT(""), true);
-		PassBox->SetText(FText::GetEmpty());
-		AddToScroll(PassBox, 2.f);
-
-		if (bFirstRunTOS)
-		{
-			UScrollBox* TosScroll = WidgetTree->ConstructWidget<UScrollBox>(UScrollBox::StaticClass(), TEXT("TosScroll"));
-			TosScroll->SetAlwaysShowScrollbar(true);
-			UTextBlock* TosText = MakeLabel(TEXT("TosText"),
-				TEXT("1. LICENSE\n\nThis software is provided for personal use in accordance with the APB Reloaded terms of service. Access to the service is subject to account eligibility and these terms.\n\n")
-				TEXT("2. RESTRICTIONS\n\nYou may not interfere with the service, attempt unauthorized access, exploit defects, or use software that provides an unfair advantage.\n\n")
-				TEXT("3. CONDUCT\n\nPlayers are responsible for account security and for conduct associated with their account. Service access may be suspended when these terms are violated.\n\n")
-				TEXT("4. ACCEPTANCE\n\nSelecting ACCEPT confirms that you have read and agree to these terms."),
-				15, APB_WHITE);
-			TosText->SetAutoWrapText(true);
-			TosScroll->AddChild(TosText);
-			USizeBox* TosSize = WidgetTree->ConstructWidget<USizeBox>(USizeBox::StaticClass(), TEXT("TosSize"));
-			TosSize->SetHeightOverride(500.f);
-			TosSize->AddChild(TosScroll);
-			AddToScroll(TosSize, 12.f);
-		}
-
-		UHorizontalBox* RememberRow = WidgetTree->ConstructWidget<UHorizontalBox>(UHorizontalBox::StaticClass(), TEXT("RememberRow"));
-		RememberCheck = WidgetTree->ConstructWidget<UCheckBox>(UCheckBox::StaticClass(), TEXT("RememberCheck"));
-		if (TexCheckTrue && TexCheckFalse)
-		{
-			FCheckBoxStyle Style = RememberCheck->GetWidgetStyle();
-			Style.UncheckedImage = APB_TexBrush(TexCheckFalse, FLinearColor::White);
-			Style.UncheckedHoveredImage = APB_TexBrush(TexCheckFalse, APB_AMBER_HI);
-			Style.UncheckedPressedImage = APB_TexBrush(TexCheckFalse, APB_AMBER);
-			Style.CheckedImage = APB_TexBrush(TexCheckTrue, FLinearColor::White);
-			Style.CheckedHoveredImage = APB_TexBrush(TexCheckTrue, APB_AMBER_HI);
-			Style.CheckedPressedImage = APB_TexBrush(TexCheckTrue, APB_AMBER);
-			RememberCheck->SetWidgetStyle(Style);
-		}
-		RememberCheck->OnCheckStateChanged.AddDynamic(this, &UAPBFrontendWidget::OnRememberToggled);
-		UTextBlock* RememberLabel = MakeLabel(TEXT("RememberLabel"), S2011(TEXT("APBLoginScreen.RememberUserID"), TEXT("Remember Me")), 13, APB_WHITE);
-		if (UHorizontalBoxSlot* HS = RememberRow->AddChildToHorizontalBox(RememberCheck))
-		{
-			HS->SetPadding(FMargin(0.f, 4.f, 8.f, 0.f));
-			HS->SetVerticalAlignment(VAlign_Center);
-		}
-		if (UHorizontalBoxSlot* HS = RememberRow->AddChildToHorizontalBox(RememberLabel))
-		{
-			HS->SetVerticalAlignment(VAlign_Center);
-		}
-		AddToScroll(RememberRow, 8.f);
-
-		UHorizontalBox* Row = WidgetTree->ConstructWidget<UHorizontalBox>(UHorizontalBox::StaticClass(), TEXT("LoginRow"));
-		UButton* LoginB = MakeAccentButton(TEXT("LoginBtn"), bFirstRunTOS
-			? S2011(TEXT("APBLoginScreen.Accept"), TEXT("Accept"))
-			: S2011(TEXT("APBLoginScreen.Login"), TEXT("Login")), APB_BTN_OK);
-		LoginB->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnLoginClicked);
-		if (UHorizontalBoxSlot* HS = Row->AddChildToHorizontalBox(LoginB))
-		{
-			HS->SetPadding(FMargin(0.f, 12.f));
-			HS->SetSize(FSlateChildSize(ESlateSizeRule::Fill));
-			HS->SetHorizontalAlignment(HAlign_Center);
-		}
-		AddToScroll(Row, 4.f);
-
-		UHorizontalBox* Links = WidgetTree->ConstructWidget<UHorizontalBox>(UHorizontalBox::StaticClass(), TEXT("LinkRow"));
-		UButton* NewB = MakeAccentButton(TEXT("NewBtn"), S2011(TEXT("APBLoginScreen.NewAccount"), TEXT("New Account")), APB_BTN);
-		NewB->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnRegisterClicked);
-		UButton* SetB = MakeAccentButton(TEXT("SettingsBtn"), S2011(TEXT("APBLoginScreen.Settings"), TEXT("Settings")), APB_BTN);
-		SetB->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnOpenSettings);
-		if (UHorizontalBoxSlot* HS = Links->AddChildToHorizontalBox(NewB))
-		{
-			HS->SetPadding(FMargin(0.f, 8.f, 4.f, 0.f));
-			HS->SetSize(FSlateChildSize(ESlateSizeRule::Fill));
-		}
-		if (UHorizontalBoxSlot* HS = Links->AddChildToHorizontalBox(SetB))
-		{
-			HS->SetPadding(FMargin(4.f, 8.f, 0.f, 0.f));
-			HS->SetSize(FSlateChildSize(ESlateSizeRule::Fill));
-		}
-		AddToScroll(Links, 2.f);
+		if (LogoImage) LogoImage->SetVisibility(ESlateVisibility::Collapsed);
+		if (DesignScale) DesignScale->SetVisibility(ESlateVisibility::SelfHitTestInvisible);
+		BuildLoginDesign();
 		break;
 	}
 		case EAPBFrontendStage::CharacterSelect:
 		{
-			BeginStageContent(false);
-			ApplyPanelChrome(true, PanelCol);
-			if (TitleText)
-			{
-				TitleText->SetVisibility(ESlateVisibility::Visible);
-				TitleText->SetText(FText::FromString(S2011(TEXT("CharacterSelectScreen.CharacterSelect"), TEXT("CHARACTER SELECT"))));
-				TitleText->SetColorAndOpacity(FSlateColor(APB_WHITE));
-				TitleText->SetFont(FCoreStyle::GetDefaultFontStyle("Bold", 28));
-				TitleText->SetJustification(ETextJustify::Left);
-			}
-			if (SubtitleText)
-			{
-				SubtitleText->SetVisibility(ESlateVisibility::Collapsed);
-				SubtitleText->SetText(FText::GetEmpty());
-			}
-			if (StatusText) StatusText->SetVisibility(ESlateVisibility::Visible);
-			if (HintText) HintText->SetVisibility(ESlateVisibility::Collapsed);
-
-			FString CharacterName = S2011(TEXT("CharacterSelectScreen.EmptyCharacter"), TEXT("Empty"));
-			FString FactionName = TEXT("-");
-			int32 ThreatRating = 0;
-			bool bHas = false;
-			bool bEnforcer = false;
-			if (UGameInstance* GI = GetGameInstance())
-			{
-				if (UAPBGameInstanceSubsystem* APB = GI->GetSubsystem<UAPBGameInstanceSubsystem>())
-				{
-					const auto Snap = APB->CaptureDomainSnapshot();
-					bHas = Snap.bHasCharacter;
-					if (bHas)
-					{
-						CharacterName = Snap.CharacterName;
-						bEnforcer = Snap.bEnforcer;
-						FactionName = bEnforcer ? TEXT("ENFORCER") : TEXT("CRIMINAL");
-						ThreatRating = FMath::Max(0, FMath::RoundToInt(Snap.ThreatPoints));
-						if (StatusText)
-						{
-							StatusText->SetText(FText::FromString(FString::Printf(TEXT("Ready - %s"), *Snap.CharacterName)));
-						}
-					}
-					else if (StatusText)
-					{
-						StatusText->SetText(FText::FromString(TEXT("No character on this account")));
-					}
-				}
-			}
-			if (TexBrandKey.Get())
-			{
-				UImage* BrandChip = MakeImage(TEXT("CharacterBrandChip"), TexBrandKey.Get());
-				USizeBox* BrandChipSize = WidgetTree->ConstructWidget<USizeBox>(USizeBox::StaticClass(), TEXT("CharacterBrandChipSize"));
-				BrandChipSize->SetWidthOverride(32.f);
-				BrandChipSize->SetHeightOverride(32.f);
-				BrandChipSize->AddChild(BrandChip);
-				AddToScroll(BrandChipSize, 2.f);
-			}
-
-			UBorder* LeftPanel = WidgetTree->ConstructWidget<UBorder>(UBorder::StaticClass(), TEXT("CharacterLeftPanel"));
-			{
-				FSlateBrush Brush;
-				if (TexWindowPanel.Get()) Brush = APB_PanelBrush(TexWindowPanel.Get(), FLinearColor::White);
-				else APB_MakeBoxBrush(Brush, APB_PANEL);
-				LeftPanel->SetBrush(Brush);
-				LeftPanel->SetBrushColor(TexWindowPanel.Get() ? FLinearColor::White : APB_PANEL);
-				LeftPanel->SetPadding(FMargin(18.f, 14.f));
-			}
-			UVerticalBox* LeftV = WidgetTree->ConstructWidget<UVerticalBox>(UVerticalBox::StaticClass(), TEXT("CharacterLeftPanelV"));
-			LeftPanel->AddChild(LeftV);
-			UTextBlock* CharactersHeader = MakeLabel(TEXT("CharactersHeader"), TEXT("CHARACTERS"), 15, APB_WHITE);
-			CharactersHeader->SetFont(FCoreStyle::GetDefaultFontStyle("Bold", 15));
-			if (UVerticalBoxSlot* VS = LeftV->AddChildToVerticalBox(CharactersHeader)) VS->SetPadding(FMargin(2.f, 4.f, 2.f, 8.f));
-
-			UButton* CreateB = MakeAccentButton(TEXT("CreateOpen"), S2011(TEXT("CharacterSelectScreen.CreateCharacter"), TEXT("CREATE CHARACTER")), APB_AMBER);
-			CreateB->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnCreateCharOpen);
-			if (UVerticalBoxSlot* VS = LeftV->AddChildToVerticalBox(CreateB)) VS->SetPadding(FMargin(0.f, 0.f, 0.f, 6.f));
-
-			UButton* CharacterRow = MakeAccentButton(TEXT("CharacterRow"), CharacterName, bHas ? APB_AMBER : APB_BTN);
-			if (bHas && TexBtnLight.Get())
-			{
-				FButtonStyle Style = CharacterRow->GetStyle();
-				Style.Normal = APB_TexBrush(TexBtnLight.Get(), FLinearColor::White);
-				Style.Hovered = APB_TexBrush(TexBtnLight.Get(), APB_AMBER_HI);
-				Style.Pressed = APB_TexBrush(TexBtnLight.Get(), APB_AMBER);
-				CharacterRow->SetStyle(Style);
-			}
-			CharacterRow->SetIsEnabled(bHas);
-			if (!bHas)
-			{
-				if (UTextBlock* EmptyLabel = Cast<UTextBlock>(CharacterRow->GetContent())) EmptyLabel->SetColorAndOpacity(FSlateColor(APB_MUTED));
-			}
-			if (UVerticalBoxSlot* VS = LeftV->AddChildToVerticalBox(CharacterRow)) VS->SetPadding(FMargin(0.f, 0.f, 0.f, 6.f));
-
-			if (bHas)
-			{
-				if (UTexture2D* FactionTex = bEnforcer ? TexFactionEnf.Get() : TexFactionCrim.Get())
-				{
-					UImage* FI = MakeImage(TEXT("CharacterFactionIcon"), FactionTex);
-					USizeBox* FISz = WidgetTree->ConstructWidget<USizeBox>(USizeBox::StaticClass(), TEXT("CS_FacIcoSz"));
-					FISz->SetHeightOverride(32.f);
-					FISz->SetWidthOverride(32.f);
-					FISz->AddChild(FI);
-					if (UVerticalBoxSlot* VS = LeftV->AddChildToVerticalBox(FISz)) VS->SetHorizontalAlignment(HAlign_Right);
-				}
-			}
-			AddToScroll(LeftPanel, 8.f);
-
-			UBorder* NamePlate = WidgetTree->ConstructWidget<UBorder>(UBorder::StaticClass(), TEXT("CharacterNamePlate"));
-			{
-				FSlateBrush Brush;
-				if (TexBtnOn.Get()) Brush = APB_TexBrush(TexBtnOn.Get(), FLinearColor::White);
-				else APB_MakeBoxBrush(Brush, APB_BTN);
-				NamePlate->SetBrush(Brush);
-				NamePlate->SetPadding(FMargin(16.f, 10.f));
-			}
-			UHorizontalBox* NameRow = WidgetTree->ConstructWidget<UHorizontalBox>(UHorizontalBox::StaticClass(), TEXT("CharacterNameRow"));
-			NamePlate->AddChild(NameRow);
-			UVerticalBox* NameTextV = WidgetTree->ConstructWidget<UVerticalBox>(UVerticalBox::StaticClass(), TEXT("CharacterNameTextV"));
-			UTextBlock* NameText = MakeLabel(TEXT("CharacterName"), CharacterName.ToUpper(), 20, bHas ? APB_WHITE : APB_MUTED);
-			NameText->SetFont(FCoreStyle::GetDefaultFontStyle("Bold", 20));
-			NameTextV->AddChildToVerticalBox(NameText);
-			NameTextV->AddChildToVerticalBox(MakeLabel(TEXT("CharacterFaction"), FString::Printf(TEXT("%s: %s"), *S2011(TEXT("CharacterSelectScreen.Faction"), TEXT("FACTION")), *FactionName), 13, APB_MUTED));
-			NameTextV->AddChildToVerticalBox(MakeLabel(TEXT("CharacterThreat"), FString::Printf(TEXT("%s / %s"), *S2011(TEXT("CharacterSelectScreen.Rating"), TEXT("RATING")), *S2011(TEXT("CharacterSelectScreen.Threat"), TEXT("THREAT"))), 13, APB_MUTED));
-			if (UHorizontalBoxSlot* HS = NameRow->AddChildToHorizontalBox(NameTextV)) HS->SetSize(FSlateChildSize(ESlateSizeRule::Fill));
-			if (TexRing.Get())
-			{
-				UBorder* Badge = WidgetTree->ConstructWidget<UBorder>(UBorder::StaticClass(), TEXT("ThreatBadge"));
-				Badge->SetBrush(APB_TexBrush(TexRing.Get(), FLinearColor::White));
-				Badge->SetPadding(FMargin(10.f));
-				UTextBlock* ThreatText = MakeLabel(TEXT("ThreatValue"), FString::FromInt(ThreatRating), 20, APB_AMBER_HI);
-				ThreatText->SetFont(FCoreStyle::GetDefaultFontStyle("Bold", 20));
-				ThreatText->SetJustification(ETextJustify::Center);
-				Badge->AddChild(ThreatText);
-				if (UHorizontalBoxSlot* HS = NameRow->AddChildToHorizontalBox(Badge))
-				{
-					HS->SetPadding(FMargin(12.f, 0.f, 0.f, 0.f));
-					HS->SetHorizontalAlignment(HAlign_Right);
-					HS->SetVerticalAlignment(VAlign_Center);
-				}
-			}
-			AddToScroll(NamePlate, 8.f);
-
-			UButton* PlayB = MakeAccentButton(TEXT("UseExisting"), S2011(TEXT("CharacterSelectScreen.Play"), TEXT("PLAY")), APB_AMBER);
-			PlayB->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnSelectExistingChar);
-			AddToScroll(PlayB, 8.f);
-			UHorizontalBox* Bot = WidgetTree->ConstructWidget<UHorizontalBox>(UHorizontalBox::StaticClass(), TEXT("CSBot"));
-			UButton* Back = MakeButton(TEXT("BackLogin"), S2011(TEXT("CharacterSelectScreen.Logout"), TEXT("LOGOUT")));
-			Back->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnBackToLogin);
-			UButton* SetB = MakeButton(TEXT("CSSettings"), S2011(TEXT("APBLoginScreen.Settings"), TEXT("SETTINGS")));
-			SetB->OnClicked.AddDynamic(this, &UAPBFrontendWidget::OnOpenSettings);
-			if (UHorizontalBoxSlot* HS = Bot->AddChildToHorizontalBox(Back)) { HS->SetPadding(FMargin(2.f)); HS->SetSize(FSlateChildSize(ESlateSizeRule::Fill)); }
-			if (UHorizontalBoxSlot* HS = Bot->AddChildToHorizontalBox(SetB)) { HS->SetPadding(FMargin(2.f)); HS->SetSize(FSlateChildSize(ESlateSizeRule::Fill)); }
-			AddToScroll(Bot, 12.f);
+			if (PanelSizeBox) PanelSizeBox->SetVisibility(ESlateVisibility::Collapsed);
+			if (FooterBar) FooterBar->SetVisibility(ESlateVisibility::Collapsed);
+			if (SplashLogo) SplashLogo->SetVisibility(ESlateVisibility::Collapsed);
+			if (LogoImage) LogoImage->SetVisibility(ESlateVisibility::Collapsed);
+			if (DesignScale) DesignScale->SetVisibility(ESlateVisibility::SelfHitTestInvisible);
+			BuildCharacterSelectDesign();
 			LogStage(TEXT("char_select_ui_built"));
 			break;
 		}
@@ -2312,6 +2488,27 @@ void UAPBFrontendWidget::OnSelectExistingChar()
 {
 	UAPBGameInstanceSubsystem* APB = GetGameInstance() ? GetGameInstance()->GetSubsystem<UAPBGameInstanceSubsystem>() : nullptr;
 	if (!APB) return;
+	if (APB->bWorldServerMode)
+	{
+		APlayerController* PlayerController = GetOwningPlayer();
+		AAPBPlayerState* PlayerState = PlayerController ? PlayerController->GetPlayerState<AAPBPlayerState>() : nullptr;
+		if (!PlayerState)
+		{
+			CompleteWorldTravelFailure(TEXT("no_ticket"));
+			return;
+		}
+		StopLoginMusic();
+		SetStage(EAPBFrontendStage::Loading);
+		PendingTravelPreviousTicket = PlayerState->IssuedTicketJson;
+		PendingTravelReservationId.Empty();
+		bWorldTravelPending = true;
+		WorldAuthTimeout = 0.f;
+		const FString CharacterName = CharNameBox ? CharNameBox->GetText().ToString().TrimStartAndEnd() : TEXT("Operative");
+		PlayerState->Server_IssueTicket(CharacterName.IsEmpty() ? TEXT("Operative") : CharacterName, SelectedDistrictId);
+		GetWorld()->GetTimerManager().SetTimer(WorldAuthPollTimer,
+			FTimerDelegate::CreateUObject(this, &UAPBFrontendWidget::PollWorldTravelReservation), 0.25f, true);
+		return;
+	}
 	if (!APB->CaptureDomainSnapshot().bHasCharacter)
 	{
 		if (StatusText) StatusText->SetText(FText::FromString(TEXT("No character — create one first")));
@@ -2751,13 +2948,105 @@ void UAPBFrontendWidget::OnEnterDistrict()
 	FString MapName = SelectedDistrictMap;
 	if (MapName.IsEmpty()) MapName = TEXT("Lvl_APB_Financial_Freeroam");
 	FString Opts = TEXT("listen?game=/Script/APBReloaded.APBFreeroamGameMode");
-	if (APB->bWorldServerMode)
+	UGameplayStatics::OpenLevel(this, FName(*MapName), true, Opts);
+}
+
+void UAPBFrontendWidget::PollWorldTravelReservation()
+{
+	if (!bWorldTravelPending)
 	{
-		const FString Ticket = APB->GetIssuedTicket();
-		if (!Ticket.IsEmpty())
+		return;
+	}
+	UWorld* World = GetWorld();
+	APlayerController* PlayerController = GetOwningPlayer();
+	AAPBPlayerState* PlayerState = PlayerController ? PlayerController->GetPlayerState<AAPBPlayerState>() : nullptr;
+	if (!World || !PlayerState)
+	{
+		CompleteWorldTravelFailure(TEXT("no_ticket"));
+		return;
+	}
+	const FString ReservationJson = PlayerState->IssuedTicketJson;
+	if (!ReservationJson.IsEmpty() && ReservationJson != PendingTravelPreviousTicket)
+	{
+		World->GetTimerManager().ClearTimer(WorldAuthPollTimer);
+		TSharedPtr<FJsonObject> Reservation;
+		const TSharedRef<TJsonReader<>> Reader = TJsonReaderFactory<>::Create(ReservationJson);
+		if (!FJsonSerializer::Deserialize(Reader, Reservation) || !Reservation.IsValid())
 		{
-			Opts += TEXT("?APBTicket=") + Ticket;
+			CompleteWorldTravelFailure(TEXT("no_ticket"));
+			return;
+		}
+		FString Error;
+		if (Reservation->TryGetStringField(TEXT("error"), Error))
+		{
+			CompleteWorldTravelFailure(Error == TEXT("over_capacity") || Error == TEXT("unknown_district") ||
+				Error == TEXT("no_live_node") ? Error : TEXT("no_ticket"));
+			return;
+		}
+		FString Ticket;
+		FString Host;
+		FString ReservationId;
+		double PortNumber = 0;
+		if (!Reservation->TryGetStringField(TEXT("ticket"), Ticket) || Ticket.IsEmpty() ||
+			!Reservation->TryGetStringField(TEXT("host"), Host) || Host.IsEmpty() ||
+			!Reservation->TryGetNumberField(TEXT("port"), PortNumber) || PortNumber < 1 || PortNumber > 65535 ||
+			!Reservation->TryGetStringField(TEXT("reservation_id"), ReservationId) || ReservationId.IsEmpty())
+		{
+			CompleteWorldTravelFailure(TEXT("no_ticket"));
+			return;
+		}
+		PendingTravelReservationId = ReservationId;
+		bWorldTravelPending = false;
+		const int32 Port = static_cast<int32>(PortNumber);
+		if (UAPBGameInstanceSubsystem* APB = GetGameInstance()->GetSubsystem<UAPBGameInstanceSubsystem>())
+		{
+			APB->StartDistrictTravel(PlayerController, SelectedDistrictId, Host, Port, Ticket, ReservationId);
+		}
+		else
+		{
+			CompleteWorldTravelFailure(TEXT("travel_error"));
+		}
+		return;
+	}
+	WorldAuthTimeout += 0.25f;
+	if (WorldAuthTimeout >= 10.f)
+	{
+		CompleteWorldTravelFailure(TEXT("timeout"));
+	}
+}
+
+void UAPBFrontendWidget::CompleteWorldTravelFailure(const FString& Reason, const bool bEmitMarker)
+{
+	if (!bWorldTravelPending && PendingTravelReservationId.IsEmpty())
+	{
+		return;
+	}
+	bWorldTravelPending = false;
+	if (UWorld* World = GetWorld())
+	{
+		World->GetTimerManager().ClearTimer(WorldAuthPollTimer);
+	}
+	if (APlayerController* PlayerController = GetOwningPlayer())
+	{
+		if (AAPBPlayerState* PlayerState = PlayerController->GetPlayerState<AAPBPlayerState>())
+		{
+			if (!PendingTravelReservationId.IsEmpty())
+			{
+				PlayerState->Server_ReleaseTravelReservation(PendingTravelReservationId);
+			}
 		}
 	}
-	UGameplayStatics::OpenLevel(this, FName(*MapName), true, Opts);
+	PendingTravelReservationId.Empty();
+	WorldAuthTimeout = 0.f;
+	if (StatusText) StatusText->SetText(FText::FromString(TEXT("District travel failed")));
+	SetStage(EAPBFrontendStage::DistrictSelect);
+	if (bEmitMarker)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("TRAVEL_FAIL reason=%s"), *Reason);
+	}
+}
+
+void UAPBFrontendWidget::HandleTravelFailure(UWorld* World, ETravelFailure::Type FailureType, const FString& ErrorString)
+{
+	CompleteWorldTravelFailure(TEXT("travel_error"), false);
 }

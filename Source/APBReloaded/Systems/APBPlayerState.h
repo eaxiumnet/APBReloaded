@@ -1,7 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "GameFramework/PlayerState.h"
+#include "APBGameInstanceSubsystem.h"
 #include "APBPlayerState.generated.h"
+
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FAPBMissionStateChangedDelegate);
 
 UENUM(BlueprintType)
 enum class EAPBFaction : uint8
@@ -36,11 +39,38 @@ public:
 	UPROPERTY(ReplicatedUsing=OnRep_Mission, BlueprintReadOnly, Category="APB")
 	int32 MissionStageCount = 0;
 
+	UPROPERTY(ReplicatedUsing=OnRep_Mission, BlueprintReadOnly, Category="APB|Mission")
+	float MissionStageProgress = 0.f;
+
+	UPROPERTY(ReplicatedUsing=OnRep_Mission, BlueprintReadOnly, Category="APB|Mission")
+	float MissionOppStageProgress = 0.f;
+
+	UPROPERTY(ReplicatedUsing=OnRep_Mission, BlueprintReadOnly, Category="APB|Mission")
+	bool bMissionOppositionContesting = false;
+
+	UPROPERTY(ReplicatedUsing=OnRep_Mission, BlueprintReadOnly, Category="APB|Mission")
+	bool bMissionOppositionWon = false;
+
+	UPROPERTY(ReplicatedUsing=OnRep_Mission, BlueprintReadOnly, Category="APB|Mission")
+	bool bMissionTimedOut = false;
+
+	UPROPERTY(ReplicatedUsing=OnRep_Mission, BlueprintReadOnly, Category="APB|Mission")
+	float MissionStageTimeLimitSec = 0.f;
+
+	UPROPERTY(ReplicatedUsing=OnRep_Mission, BlueprintReadOnly, Category="APB|Mission")
+	float MissionStageDeadlineServerSec = 0.f;
+
 	UPROPERTY(ReplicatedUsing=OnRep_Economy, BlueprintReadOnly, Category="APB")
 	int32 InventoryItemCount = 0;
 
+	UPROPERTY(ReplicatedUsing=OnRep_Economy, BlueprintReadOnly, Category="APB")
+	FString ProgressionState;
+
 	UPROPERTY(Replicated, BlueprintReadOnly, Category="APB")
 	FString DistrictSessionId;
+
+	UPROPERTY(BlueprintAssignable, Category="APB|Mission")
+	FAPBMissionStateChangedDelegate OnMissionUpdated;
 
 	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
 
@@ -58,13 +88,12 @@ public:
 
 	void ApplyFactionAuthority(EAPBFaction NewFaction);
 
-	/** Authority: push domain snapshot for multipath observers. */
 	void ApplyDomainSnapshot(float Threat, int64 InCash, int64 InG1C, int32 InvCount,
-		const FString& Mission, int32 StageIdx, int32 StageCount, const FString& SessionId);
+		const FString& Mission, int32 StageIdx, int32 StageCount, const FString& SessionId,
+		const FString& InProgressionState, const FAPBMissionSnapshotUE& MissionSnap);
 
 	// ── M6 world-server auth RPCs ─────────────────────────────────────────────
 
-	/** Replicated results (world-server → client). */
 	UPROPERTY(ReplicatedUsing=OnRep_WorldAuth, BlueprintReadOnly, Category="APB|Auth")
 	bool bWorldAuthOk = false;
 
@@ -77,22 +106,84 @@ public:
 	UPROPERTY(ReplicatedUsing=OnRep_WorldAuth, BlueprintReadOnly, Category="APB|Auth")
 	FString IssuedTicketJson;
 
+	UPROPERTY(ReplicatedUsing=OnRep_WorldAuth, BlueprintReadOnly, Category="APB|Auth")
+	FString HandoffProbeJson;
+
 	UFUNCTION()
 	void OnRep_WorldAuth();
 
-	/** Client → server: request login. */
+	// ── M14 social state ──────────────────────────────────────────────────────
+
+	UPROPERTY(ReplicatedUsing=OnRep_Social, BlueprintReadOnly, Category="APB|Social")
+	FString ClanId;
+
+	UPROPERTY(ReplicatedUsing=OnRep_Social, BlueprintReadOnly, Category="APB|Social")
+	FString ClanRole;
+
+	UPROPERTY(ReplicatedUsing=OnRep_Social, BlueprintReadOnly, Category="APB|Social")
+	FString GroupId;
+
+	UPROPERTY(ReplicatedUsing=OnRep_Social, BlueprintReadOnly, Category="APB|Social")
+	int32 OnlineFriendCount = 0;
+
+	UPROPERTY(ReplicatedUsing=OnRep_Social, BlueprintReadOnly, Category="APB|Social")
+	bool bHasPendingClanInvite = false;
+
+	UPROPERTY(ReplicatedUsing=OnRep_Social, BlueprintReadOnly, Category="APB|Social")
+	bool bHasPendingGroupInvite = false;
+
+	UPROPERTY(ReplicatedUsing=OnRep_Social, BlueprintReadOnly, Category="APB|Social")
+	bool bGroupAllReady = false;
+
+	UFUNCTION()
+	void OnRep_Social();
+
 	UFUNCTION(Server, Reliable, WithValidation, BlueprintCallable, Category="APB|Auth")
 	void Server_LoginRequest(const FString& User, const FString& Pass);
 
-	/** Client → server: fetch char list (requires prior successful login). */
 	UFUNCTION(Server, Reliable, WithValidation, BlueprintCallable, Category="APB|Auth")
 	void Server_GetCharList();
 
-	/** Client → server: fetch district list (requires prior successful login). */
 	UFUNCTION(Server, Reliable, WithValidation, BlueprintCallable, Category="APB|Auth")
 	void Server_GetDistrictList();
 
-	/** Client → server: issue a travel ticket for CharName + DistrictId. */
 	UFUNCTION(Server, Reliable, WithValidation, BlueprintCallable, Category="APB|Auth")
 	void Server_IssueTicket(const FString& CharName, const FString& DistrictId);
+
+	UFUNCTION(Server, Reliable, WithValidation, BlueprintCallable, Category="APB|Auth")
+	void Server_ReleaseTravelReservation(const FString& ReservationId);
+
+	UFUNCTION(Server, Reliable, WithValidation, BlueprintCallable, Category="APB|Auth")
+	void Server_PrepareHandoffProbe();
+
+	UFUNCTION(Server, Reliable, WithValidation, BlueprintCallable, Category="APB|Auth")
+	void Server_GetHandoffProbeState();
+
+	UFUNCTION(Server, Reliable, WithValidation, BlueprintCallable, Category="APB|Chat")
+	void Server_SubmitChat(const FString& RawLine);
+
+	UFUNCTION(Client, Reliable)
+	void Client_ReceiveChat(const FString& Channel, const FString& Sender, const FString& Recipient, const FString& Body);
+
+	// ── M14 social RPCs (T13) ────────────────────────────────────────────────
+	// Clients request social mutations via these validated Server RPCs. On the world
+	// server, they dispatch to SocialAuthority via the UGI bridge. On a district process,
+	// they forward as SocialRequest relay messages to the world. The owning character is
+	// derived from the PlayerState's authenticated identity, never from a client arg.
+
+	UFUNCTION(Server, Reliable, WithValidation, BlueprintCallable, Category="APB|Social")
+	void Server_SocialClan(const FString& Op, const FString& Arg1, const FString& Arg2);
+
+	UFUNCTION(Server, Reliable, WithValidation, BlueprintCallable, Category="APB|Social")
+	void Server_SocialFriend(const FString& Op, const FString& Target);
+
+	UFUNCTION(Server, Reliable, WithValidation, BlueprintCallable, Category="APB|Social")
+	void Server_SocialGroup(const FString& Op, const FString& Arg1, const FString& Arg2);
+
+	UFUNCTION(Server, Reliable, WithValidation, BlueprintCallable, Category="APB|Social")
+	void Server_SocialMail(const FString& Op, const FString& Arg1);
+
+	UFUNCTION(Client, Reliable)
+	void Client_SocialResult(const FString& Op, const FString& Status, const FString& Body);
+
 };

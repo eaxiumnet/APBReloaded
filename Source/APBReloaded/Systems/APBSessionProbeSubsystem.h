@@ -3,17 +3,20 @@
 #include "Subsystems/GameInstanceSubsystem.h"
 #include "APBSessionProbeSubsystem.generated.h"
 
-/** Probes via -APBProbe=client_loop|playable|mp_observe|frontend_menu|frontend_flow.
+/** Probes via -APBProbe=client_loop|playable|mp_observe|frontend_menu|frontend_flow|social_probe.
  *  frontend_menu: 2011 menu gate — validates every UI stage + district select + travel
  *    dispatch, emits terminal FRONTEND_MENU_OK, then exits (M4 gate).
  *  frontend_flow: menu sequence THEN post-travel freeroam playables, emits terminal
- *    FRONTEND_FLOW_OK/FAIL, then exits (M9/M12 integration gate). */
+ *    FRONTEND_FLOW_OK/FAIL, then exits (M9/M12 integration gate).
+ *  social_probe: M14 social gate — emits a terminal role-specific verdict, then exits. */
 UCLASS()
 class APBRELOADED_API UAPBSessionProbeSubsystem : public UGameInstanceSubsystem
 {
 	GENERATED_BODY()
 public:
 	virtual void Initialize(FSubsystemCollectionBase& Collection) override;
+	void ScheduleDevChat(int32 DelayMs, const FString& RawLine);
+	void ScheduleChatDistrictTravel(int32 DelayMs, const FString& DistrictId);
 
 private:
 	void StartProbe(const FString& Mode);
@@ -35,6 +38,15 @@ private:
 	void RunWorldServerProbe();
 	/** M6: world-server client probe — drives login→charlist→districtlist→ticket via Server RPCs. */
 	void RunWorldServerClientProbe();
+	void RunWorldTravelClientProbe();
+	void RunLoadWorkloadStep();
+	void RunWorldHandoffClientProbe();
+	void RunWorldChatClientProbe();
+	void RunSocialProbe();
+	void QueueChatCommandsFromCommandLine();
+	void ArmQueuedChatCommands();
+	bool ParseHandoffProbeSnapshot(const FString& Json, int64& OutCash, int64& OutG1C, float& OutThreat,
+		int32& OutInventorySlots, int32& OutInventoryQty, FString& OutFaction, FString& OutMission, FString& OutSession, FString& OutProgression) const;
 
 	FString Mode;
 	bool bTerminal = false;
@@ -46,6 +58,7 @@ private:
 	FTimerHandle MpTimer;
 	FTimerHandle FrontendTravelTimer;
 	FTimerHandle WorldServerTimer;
+	FTimerHandle LoadWorkloadTimer;
 	bool bFrontendTravelPending = false;
 	int32 FrontendEquippedSlots = 0;
 
@@ -55,4 +68,72 @@ private:
 	int32 WS_TicketCount = 0;
 	FString WSClientId;
 	bool bWSClientDone = false;
+	bool bLoadWorkloadEnabled = false;
+	bool bLoadTravelDispatched = false;
+	bool bLoadCompletionEmitted = false;
+	bool bLoadMovementRequested = false;
+	bool bLoadCombatRequested = false;
+	bool bLoadVehicleRequested = false;
+	bool bLoadMovementExecuted = false;
+	bool bLoadCombatExecuted = false;
+	bool bLoadVehicleEntered = false;
+	bool bLoadVehicleThrottled = false;
+	bool bLoadCombatSent = false;
+	bool bLoadPerfEmitted = false;
+	int32 LoadCombatStartShots = 0;
+	int32 LoadWorkloadSteps = 0;
+	double LoadWorkloadStartedAt = 0.0;
+	double LoadLastPerfAt = 0.0;
+	FString LoadWorkload;
+	FString LoadMap;
+	FString LoadPrimary;
+	FString LoadIdentity;
+	FString LoadAccount;
+	bool bTravelLoginSent = false;
+	bool bTravelTicketRequested = false;
+	bool bTravelDispatchPending = false;
+	FString TravelDistrictId;
+	int64 TravelDispatchAtMs = 0;
+	int32 HandoffPhase = 0;
+	bool bHandoffLoginSent = false;
+	bool bHandoffPrepareSent = false;
+	bool bHandoffTicketSent = false;
+	bool bHandoffDistrictLogged = false;
+	bool bHandoffReachedDistrict = false;
+	bool bHandoffStateRequested = false;
+	int64 HandoffStateRequestAtMs = 0;
+	int64 HandoffDeadlineMs = 0;
+	int64 HandoffCash = 0;
+	int64 HandoffG1C = 0;
+	float HandoffThreat = 0.f;
+	int32 HandoffInventorySlots = 0;
+	int32 HandoffInventoryQty = 0;
+	FString HandoffFaction;
+	FString HandoffMission;
+	FString HandoffSession;
+	FString HandoffProgression;
+	bool bChatLoginSent = false;
+	bool bChatTicketRequested = false;
+	bool bChatTravelDispatched = false;
+	bool bChatArrivalLogged = false;
+	bool bChatCommandsArmed = false;
+	int64 ChatWorldReconnectReadyAtMs = 0;
+	FString ChatCharacter;
+	FString ChatDistrictId;
+	TArray<FTimerHandle> ChatCommandTimers;
+	FString SocialRole;
+	bool bSocialLoginSent = false;
+	bool bSocialClanOk = false;
+	bool bSocialFriendsOk = false;
+	bool bSocialGroupsOk = false;
+	bool bSocialMailOk = false;
+	int64 SocialProbeStartMs = 0;
+	bool bSocialDone = false;
+	struct FChatGateCommand
+	{
+		int32 DelayMs = 0;
+		FString RawLine;
+		FString TravelDistrictId;
+	};
+	TArray<FChatGateCommand> QueuedChatCommands;
 };

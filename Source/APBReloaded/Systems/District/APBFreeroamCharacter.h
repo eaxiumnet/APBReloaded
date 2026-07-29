@@ -34,7 +34,7 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
 
-	UFUNCTION(BlueprintCallable, Server, Reliable, Category="APB|Combat")
+	UFUNCTION(BlueprintCallable, Server, Unreliable, Category="APB|Combat")
 	void ServerFireWeapon();
 
 	UFUNCTION(BlueprintCallable, Category="APB|Combat")

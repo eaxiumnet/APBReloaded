@@ -4,6 +4,7 @@
 #include "APBFreeroamHUD.generated.h"
 
 class UAPBFreeroamHUDWidget;
+class UAPBSocialWidget;
 
 UCLASS()
 class APBRELOADED_API AAPBFreeroamHUD : public AHUD
@@ -12,6 +13,13 @@ class APBRELOADED_API AAPBFreeroamHUD : public AHUD
 public:
 	virtual void BeginPlay() override;
 
+	/** M14: Toggle social panel (bound to 'O' key via InputComponent). */
+	UFUNCTION() void OnToggleSocial();
+
 	UPROPERTY()
 	TObjectPtr<UAPBFreeroamHUDWidget> HudWidget = nullptr;
+
+	/** M14 social panel — toggled with the 'O' key (retail APB social menu key). */
+	UPROPERTY()
+	TObjectPtr<UAPBSocialWidget> SocialWidget = nullptr;
 };

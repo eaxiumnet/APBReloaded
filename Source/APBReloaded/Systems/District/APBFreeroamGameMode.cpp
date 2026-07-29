@@ -1,5 +1,6 @@
 #include "APBFreeroamGameMode.h"
 #include "APBGameInstanceSubsystem.h"
+#include "APBWorldService.h"
 #include "APBPlayerState.h"
 #include "APBFreeroamCharacter.h"
 #include "APBDriveableVehicle.h"
@@ -7,6 +8,7 @@
 #include "APBBotNPC.h"
 #include "APBFreeroamHUD.h"
 #include "Engine/World.h"
+#include "GameFramework/GameStateBase.h"
 #include "Engine/StaticMeshActor.h"
 #include "Engine/StaticMesh.h"
 #include "Engine/DirectionalLight.h"
@@ -26,12 +28,28 @@
 #include "HAL/PlatformMisc.h"
 #include "HAL/FileManager.h"
 #include "HAL/IConsoleManager.h"
+#include "HAL/PlatformTime.h"
 #include "Kismet/GameplayStatics.h"
 #include "GameFramework/PlayerController.h"
 #include "GameFramework/Pawn.h"
+#include "Misc/CommandLine.h"
+#include "Misc/Parse.h"
 #include "EngineUtils.h"
 
 // ASkyAtmosphere is declared in Components/SkyAtmosphereComponent.h in UE 5.8
+
+namespace
+{
+	constexpr bool APBMissedAuthoritativeStep(const double IntervalSeconds)
+	{
+		return IntervalSeconds > ((1.0 / 30.0) + 0.002);
+	}
+
+	static_assert(!APBMissedAuthoritativeStep(0.034),
+		"The 30 Hz authoritative budget includes scheduling tolerance");
+	static_assert(APBMissedAuthoritativeStep(0.040),
+		"Materially late authoritative steps must be counted");
+}
 
 AAPBFreeroamGameMode::AAPBFreeroamGameMode()
 {
@@ -49,6 +67,15 @@ void AAPBFreeroamGameMode::BeginPlay()
 	// Resolve district before Super so DistrictGameMode session id uses correct district
 	ResolveDistrictFromMap();
 	Super::BeginPlay();
+	if (HasAuthority() && GetWorld() && GetWorld()->GetNetMode() != NM_Client &&
+		FParse::Value(FCommandLine::Get(), TEXT("APBPerfLog="), PerfLogPath) && !PerfLogPath.IsEmpty())
+	{
+		PerfLogPath.ReplaceInline(TEXT("\\"), TEXT("/"));
+		const FString ParentDir = FPaths::GetPath(PerfLogPath);
+		if (!ParentDir.IsEmpty()) IFileManager::Get().MakeDirectory(*ParentDir, true);
+		FFileHelper::SaveStringToFile(TEXT(""), *PerfLogPath);
+		PerfWindowStartedAt = FPlatformTime::Seconds();
+	}
 	if (bLoadPlacementManifest && GetWorld() && GetWorld()->GetNetMode() != NM_Client)
 	{
 		LoadDistrictContent();
@@ -299,6 +326,19 @@ void AAPBFreeroamGameMode::LoadDistrictContent()
 
 	const FVector Center = CachedManifest.PlayerStart;
 	EnsureDistrictLighting(Center);
+
+	FAPBLightManifest LightManifest;
+	if (UAPBDistrictPlacementLoader::LoadLightsForDistrict(ContentDir, DistrictId, LightManifest))
+	{
+		const int32 NL = UAPBDistrictPlacementLoader::SpawnLightsFromManifest(
+			World, LightManifest, Center, StreamRadiusCm, SpawnedActors);
+		UE_LOG(LogTemp, Warning, TEXT("APB freeroam DISTRICT_LIGHTS real=%d/%d radius=%.0f"),
+			NL, LightManifest.Lights.Num(), StreamRadiusCm);
+		AppendFreeroamLog(FString::Printf(
+			TEXT("DISTRICT_LIGHTS district=%s spawned=%d total=%d radius=%.0f\n"),
+			*DistrictId, NL, LightManifest.Lights.Num(), StreamRadiusCm));
+	}
+
 	AlignPlayerStartsAndTeleport(Center);
 
 	// Invisible ground for walk/drive (box collision, no BasicShapes mesh)
@@ -467,14 +507,111 @@ void AAPBFreeroamGameMode::RefreshStreamAroundPlayers()
 
 void AAPBFreeroamGameMode::Tick(float DeltaSeconds)
 {
+	const bool bMeasureAuthoritativeStep = HasAuthority() && GetWorld() && GetWorld()->GetNetMode() != NM_Client;
+	const double StepStartedAt = bMeasureAuthoritativeStep ? FPlatformTime::Seconds() : 0.0;
 	Super::Tick(DeltaSeconds);
-	if (GetWorld() && GetWorld()->GetNetMode() == NM_Client) return;
+	if (!HasAuthority() || !GetWorld() || GetWorld()->GetNetMode() == NM_Client) return;
 	StreamAccum += DeltaSeconds;
 	if (StreamAccum >= 0.5f)
 	{
 		StreamAccum = 0.f;
 		RefreshStreamAroundPlayers();
 	}
+	MissionTickAccum += DeltaSeconds;
+	if (MissionTickAccum >= 1.0f)
+	{
+		MissionTickAccum = 0.f;
+		TickMissionClock();
+	}
+	MatchmakerAccum += DeltaSeconds;
+	if (MatchmakerAccum >= 5.0f)
+	{
+		MatchmakerAccum = 0.f;
+		TickMatchmaker();
+	}
+	if (bMeasureAuthoritativeStep)
+	{
+		RecordAuthoritativeStep(StepStartedAt, FPlatformTime::Seconds());
+	}
+}
+
+void AAPBFreeroamGameMode::TickMissionClock()
+{
+	UGameInstance* GI = GetGameInstance();
+	UAPBGameInstanceSubsystem* APB = GI ? GI->GetSubsystem<UAPBGameInstanceSubsystem>() : nullptr;
+	if (!APB || !APB->IsMissionActive()) return;
+	const AGameStateBase* GS = GetWorld() ? GetWorld()->GetGameState() : nullptr;
+	const float NowSec = GS ? static_cast<float>(GS->GetServerWorldTimeSeconds()) : 0.f;
+	APB->TickMission(NowSec);
+	// M11 D1 hybrid: tiny ambient opposition accrual keeps the race bar visibly moving so
+	// S2 is exercisable before kill/arrest event hooks are wired. Pass the base 0.05 rate;
+	// the Domain's AdvanceOpposition already scales by OppositionPressure, so the effective
+	// rate is 0.05 * max(0.5, Pressure) per tick — slow enough that it cannot win a stage
+	// alone within a realistic mission window (Contact::Interact's 1.0 bump is the primary event).
+	APB->AdvanceOpposition(0.05f);
+	APB->PushDomainSnapshotToAllPlayerStates();
+}
+
+void AAPBFreeroamGameMode::TickMatchmaker()
+{
+	UGameInstance* GI = GetGameInstance();
+	UAPBGameInstanceSubsystem* APB = GI ? GI->GetSubsystem<UAPBGameInstanceSubsystem>() : nullptr;
+	if (!APB) return;
+	// M11 D4: WorldService owns the Matchmaker (D10 facade). The GameMode drives the cadence
+	// and handles UE-side dispatch of returned pairings to the district. The facade refuses
+	// to form a new pairing while a mission run is already active (singleton guard).
+	const AGameStateBase* GS = GetWorld() ? GetWorld()->GetGameState() : nullptr;
+	const int64 NowMs = GS ? static_cast<int64>(GS->GetServerWorldTimeSeconds() * 1000.0) : 0;
+	apb::WorldService* W = reinterpret_cast<apb::WorldService*>(APB->Service);
+	if (!W) return;
+	// Note: FormMatches returns empty until players are enqueued into the matchmaker (from
+	// Contact interaction / mission-start flow). This is wired infrastructure for the full
+	// opposition-dispatch path; the enqueue side lands when player-vs-player mission start is built.
+	const std::vector<apb::MatchPairing> Pairings = W->FormMatches(NowMs);
+	if (!Pairings.empty())
+	{
+		UE_LOG(LogTemp, Log, TEXT("APB MATCHMAKER formed=%d queue=%d"),
+			(int32)Pairings.size(), W->matchmaker.QueueSize());
+	}
+}
+
+void AAPBFreeroamGameMode::RecordAuthoritativeStep(const double StepStartedAt, const double StepFinishedAt)
+{
+	if (!HasAuthority() || !GetWorld() || GetWorld()->GetNetMode() == NM_Client) return;
+	if (LastAuthoritativeStepAt > 0.0 && APBMissedAuthoritativeStep(StepStartedAt - LastAuthoritativeStepAt))
+	{
+		++MissedAuthoritativeSteps;
+	}
+	LastAuthoritativeStepAt = StepStartedAt;
+	const double ThisStepMs = (StepFinishedAt - StepStartedAt) * 1000.0;
+	PerfStepDurationTotalMs += ThisStepMs;
+	PerfStepMaxMs = FMath::Max(PerfStepMaxMs, ThisStepMs);
+	++PerfStepSamples;
+	if (PerfLogPath.IsEmpty()) return;
+	if (PerfWindowStartedAt <= 0.0) PerfWindowStartedAt = StepStartedAt;
+	const double WindowSeconds = StepFinishedAt - PerfWindowStartedAt;
+	if (WindowSeconds < 1.0) return;
+
+	const double TickMs = PerfStepSamples > 0 ? PerfStepDurationTotalMs / static_cast<double>(PerfStepSamples) : 0.0;
+	const double FPS = PerfStepSamples > 0 && WindowSeconds > UE_DOUBLE_SMALL_NUMBER
+		? static_cast<double>(PerfStepSamples) / WindowSeconds
+		: 0.0;
+	const FString Line = FString::Printf(
+		TEXT("APB_PERF_METRIC scope=server TickMs:%.3f MaxStepMs:%.3f FPS:%.3f missed_authoritative_steps:%lld corrections:%lld"),
+		TickMs, PerfStepMaxMs, FPS, MissedAuthoritativeSteps, AuthoritativeCorrections);
+	AppendPerfLog(Line);
+	UE_LOG(LogTemp, Log, TEXT("%s"), *Line);
+	PerfWindowStartedAt = StepFinishedAt;
+	PerfStepDurationTotalMs = 0.0;
+	PerfStepMaxMs = 0.0;
+	PerfStepSamples = 0;
+}
+
+void AAPBFreeroamGameMode::AppendPerfLog(const FString& Line) const
+{
+	if (!HasAuthority() || !GetWorld() || GetWorld()->GetNetMode() == NM_Client || PerfLogPath.IsEmpty()) return;
+	FFileHelper::SaveStringToFile(Line + LINE_TERMINATOR, *PerfLogPath,
+		FFileHelper::EEncodingOptions::AutoDetect, &IFileManager::Get(), FILEWRITE_Append);
 }
 
 void AAPBFreeroamGameMode::PostLogin(APlayerController* NewPlayer)
@@ -498,7 +635,7 @@ void AAPBFreeroamGameMode::PostLogin(APlayerController* NewPlayer)
 	UAPBGameInstanceSubsystem* APB = GI ? GI->GetSubsystem<UAPBGameInstanceSubsystem>() : nullptr;
 	if (!APB || !NewPlayer) return;
 
-	const FString Name = NewPlayer->PlayerState ? NewPlayer->PlayerState->GetPlayerName() : TEXT("Peer");
+	const FString Name = ResolveDistrictPlayerName(NewPlayer);
 	// Server Domain only: join peer into host district session
 	if (APB->GetPhase() != TEXT("District"))
 	{
@@ -512,6 +649,25 @@ void AAPBFreeroamGameMode::PostLogin(APlayerController* NewPlayer)
 	}
 	// Push host Domain snapshot to ALL PlayerStates (including newly joined) for OnRep
 	APB->PushDomainSnapshotToAllPlayerStates();
+
+	// T15: Chat seam — set clan/group chat routing for this player from their social state.
+	// On standalone/listen, the local WorldService has the clan/group; on a district,
+	// replicated PlayerState fields carry the ids. Either way, ChatService needs the id
+	// so clan/group chat channels route to the right members.
+	if (AAPBPlayerState* PS = NewPlayer->GetPlayerState<AAPBPlayerState>())
+	{
+		if (!PS->ClanId.IsEmpty())
+		{
+			ChatService.SetClan(TCHAR_TO_UTF8(*Name), TCHAR_TO_UTF8(*PS->ClanId));
+			UE_LOG(LogTemp, Log, TEXT("SOCIAL_CHAT_CLAN_SET player=%s clan=%s"), *Name, *PS->ClanId);
+		}
+		if (!PS->GroupId.IsEmpty())
+		{
+			ChatService.SetGroup(TCHAR_TO_UTF8(*Name), TCHAR_TO_UTF8(*PS->GroupId));
+			UE_LOG(LogTemp, Log, TEXT("SOCIAL_CHAT_GROUP_SET player=%s group=%s"), *Name, *PS->GroupId);
+		}
+	}
+
 	// Deferred second push so late-joining clients still receive authority economy/mission
 	if (UWorld* World = GetWorld())
 	{

@@ -57,6 +57,7 @@ void AAPBInteractable::BeginPlay()
 
 FString AAPBInteractable::Interact(APlayerController* PC)
 {
+	if (!HasAuthority()) return FString();
 	++UseCount;
 	UGameInstance* GI = GetGameInstance();
 	UAPBGameInstanceSubsystem* APB = GI ? GI->GetSubsystem<UAPBGameInstanceSubsystem>() : nullptr;
@@ -87,6 +88,7 @@ FString AAPBInteractable::Interact(APlayerController* PC)
 	else if (APB && Kind == EAPBInteractableKind::Contact)
 	{
 		APB->StartOppositionMission();
+		APB->AdvanceOpposition(1.0f);
 		APB->PushDomainSnapshotToAllPlayerStates();
 		Result += TEXT(" +mission_offer");
 	}

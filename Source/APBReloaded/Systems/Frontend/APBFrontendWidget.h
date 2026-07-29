@@ -1,6 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
+#include "Engine/EngineBaseTypes.h"
 #include "APBFrontendTypes.h"
 #include "APBFrontendWidget.generated.h"
 
@@ -16,6 +17,7 @@ class UComboBoxString;
 class UBorder;
 class USizeBox;
 class UCanvasPanel;
+class UScaleBox;
 class UAudioComponent;
 class UImage;
 class UCanvasPanelSlot;
@@ -53,6 +55,7 @@ public:
 	UFUNCTION() void OnCharCreateConfirm();
 	UFUNCTION() void OnCharCreateBack();
 	UFUNCTION() void OnEnterDistrict();
+	void HandleTravelFailure(UWorld* World, ETravelFailure::Type FailureType, const FString& ErrorString);
 	UFUNCTION() void OnDistrictComboChanged(FString SelectedItem, ESelectInfo::Type SelectionType);
 	UFUNCTION() void OnBackToLogin();
 	UFUNCTION() void OnClothingSelectionChanged(FString SelectedItem, ESelectInfo::Type SelectionType);
@@ -153,7 +156,16 @@ public:
 protected:
 	void BuildLayout();
 	void RebuildStageBody();
+	/** Size the design canvas + drive the ScaleBox stretch mode for the active stage. */
+	void SetDesignCanvasSize(float DesignW, float DesignH);
+	/** Add a child to DesignCanvas at an absolute design-space rect (top-left anchored). */
+	UCanvasPanelSlot* PlaceRect(UWidget* Child, float X, float Y, float W, float H, int32 ZOrder = 0);
+	void ClearDesignCanvas();
+	void BuildLoginDesign();
+	void BuildCharacterSelectDesign();
 	void LogStage(const FString& Extra = FString());
+	void CompleteWorldTravelFailure(const FString& Reason, bool bEmitMarker = true);
+	void PollWorldTravelReservation();
 	void RefreshClothingCombos();
 	void SelectWardrobeTab(int32 TabId);
 	void RefreshWardrobeItems();
@@ -177,7 +189,7 @@ protected:
 	void ApplyTextureToImage(UImage* Img, UTexture2D* Tex, FLinearColor Tint = FLinearColor::White);
 	void ApplyTextureToBorder(UBorder* Border, UTexture2D* Tex, FLinearColor Tint);
 	UImage* MakeImage(const FString& Name, UTexture2D* Tex, float H = 0.f);
-	UEditableTextBox* MakeTextField(const FString& Name, const FString& Hint, bool bPassword);
+	UEditableTextBox* MakeTextField(const FString& Name, const FString& Hint, bool bPassword, bool bLight = false);
 	void StartLoginBackgroundVideo();
 	void StopLoginBackgroundVideo();
 	void EnsureLoginMediaLoop();
@@ -191,6 +203,9 @@ protected:
 	UTextBlock* MakeLabel(const FString& Name, const FString& Text, int32 Size, FLinearColor Color);
 	UButton* MakeButton(const FString& Name, const FString& Label);
 	UButton* MakeAccentButton(const FString& Name, const FString& Label, FLinearColor NormalTint);
+	/** Login/CharSelect-only styling; kept separate so shared MakeButton/MakeAccentButton (CharacterCreate/District/Settings) stay byte-identical. */
+	UButton* MakeFlatButton(const FString& Name, const FString& Label, bool bPrimary = false, int32 FontSize = 11);
+	UButton* MakeLinkButton(const FString& Name, const FString& Label);
 	void AddToScroll(UWidget* W, float PadY = 6.f);
 	/** Login/select never scroll. Long stages get an inner ScrollBox only. */
 	void BeginStageContent(bool bAllowScroll);
@@ -203,6 +218,11 @@ protected:
 	UPROPERTY() EAPBFrontendStage StageBeforeSettings = EAPBFrontendStage::Login;
 
 	UPROPERTY() TObjectPtr<UCanvasPanel> RootCanvas = nullptr;
+	/** ScaleToFit wrapper reproducing UE3 UIScene uniform scale (design canvas -> viewport). */
+	UPROPERTY() TObjectPtr<UScaleBox> DesignScale = nullptr;
+	UPROPERTY() TObjectPtr<USizeBox> DesignSizeBox = nullptr;
+	/** Fixed design-space canvas (Login 1152x720 / Lobby 800x600) holding 1:1 widget rects. */
+	UPROPERTY() TObjectPtr<UCanvasPanel> DesignCanvas = nullptr;
 	UPROPERTY() TObjectPtr<UBorder> FullscreenBg = nullptr;
 	/** Full-bleed video bed (Login_BG). */
 	UPROPERTY() TObjectPtr<UImage> BgVideo = nullptr;
@@ -244,6 +264,10 @@ protected:
 	UPROPERTY() TObjectPtr<UTexture2D> TexFooter = nullptr;        // frontendFooter grunge strip
 	UPROPERTY() TObjectPtr<UTexture2D> TexCloseBtn = nullptr;      // JKICON_close_default
 	UPROPERTY() TObjectPtr<UTexture2D> TexRing = nullptr;          // BG_Button_Active_Ring (rating badge)
+	UPROPERTY() TObjectPtr<UTexture2D> TexDropShadow = nullptr;    // APB_DropShadow (panel drop shadow)
+	UPROPERTY() TObjectPtr<UTexture2D> TexGenericContent = nullptr;// APB_BG_GenericContent_01 (inner content plate)
+	UPROPERTY() TObjectPtr<UTexture2D> TexTitleAccent = nullptr;   // Window_Title_Accent_01 (header/title bar)
+	UPROPERTY() TObjectPtr<UTexture2D> TexWindowBG = nullptr;      // APB_Window_BG (list/mesh window plate)
 	UPROPERTY() TObjectPtr<UTexture2D> TexDistFinancial = nullptr;
 	UPROPERTY() TObjectPtr<UTexture2D> TexDistSocial = nullptr;
 	UPROPERTY() TObjectPtr<UTexture2D> TexDistWaterfront = nullptr;
@@ -320,6 +344,7 @@ protected:
 	float MenuAudioVolume = 0.55f;
 	FString LastLoggedStage;
 	FVector2D LastViewport = FVector2D::ZeroVector;
+	FString LastScaleToken;
 
 	/** UI scale modes for multi-aspect (4:3 / 16:9 / 16:10 / ultrawide). */
 	enum class EAPBUiScaleMode : uint8 { Fit = 0, Fill, Stretch };
@@ -331,4 +356,7 @@ protected:
 
 	FTimerHandle WorldAuthPollTimer;
 	float WorldAuthTimeout = 0.f;
+	FString PendingTravelPreviousTicket;
+	FString PendingTravelReservationId;
+	bool bWorldTravelPending = false;
 };

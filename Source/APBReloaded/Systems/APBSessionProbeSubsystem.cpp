@@ -9,6 +9,7 @@
 #include "APBPlayerState.h"
 #include "APBFreeroamCharacter.h"
 #include "APBDriveableVehicle.h"
+#include "APBDistrictPlacementLoader.h"
 #include "Engine/GameInstance.h"
 #include "Engine/World.h"
 #include "Engine/Engine.h"
@@ -26,6 +27,30 @@
 #include "Engine/EngineTypes.h"
 #include "EngineUtils.h"
 #include "APBPlayerState.h"
+#include "UnrealClient.h"
+#include "Camera/CameraActor.h"
+
+namespace
+{
+	constexpr int32 APBLoadActionToken(const bool bRequested, const bool bExecuted)
+	{
+		return bRequested && bExecuted ? 1 : 0;
+	}
+
+	constexpr int32 APBLoadVehicleToken(const bool bRequested, const bool bEntered, const bool bThrottled)
+	{
+		return bRequested && bEntered && bThrottled ? 1 : 0;
+	}
+
+	static_assert(APBLoadActionToken(true, false) == 0,
+		"Requested workload actions must remain incomplete until they execute");
+	static_assert(APBLoadActionToken(true, true) == 1,
+		"Executed requested workload actions must report success");
+	static_assert(APBLoadVehicleToken(true, true, false) == 0,
+		"Vehicle workload requires both entry and throttle");
+	static_assert(APBLoadVehicleToken(true, true, true) == 1,
+		"Entered and throttled vehicle workload must report success");
+}
 
 void UAPBSessionProbeSubsystem::Initialize(FSubsystemCollectionBase& Collection)
 {
@@ -40,6 +65,25 @@ void UAPBSessionProbeSubsystem::Initialize(FSubsystemCollectionBase& Collection)
 void UAPBSessionProbeSubsystem::StartProbe(const FString& InMode)
 {
 	Mode = InMode.ToLower();
+	FParse::Value(FCommandLine::Get(), TEXT("WSClientId="), WSClientId);
+	FParse::Value(FCommandLine::Get(), TEXT("SocialRole="), SocialRole);
+	FParse::Value(FCommandLine::Get(), TEXT("APBLoadWorkload="), LoadWorkload);
+	FParse::Value(FCommandLine::Get(), TEXT("APBLoadMap="), LoadMap);
+	FParse::Value(FCommandLine::Get(), TEXT("APBLoadPrimary="), LoadPrimary);
+	FParse::Value(FCommandLine::Get(), TEXT("APBLoadIdentity="), LoadIdentity);
+	FParse::Value(FCommandLine::Get(), TEXT("APBLoadAccount="), LoadAccount);
+	if (WSClientId.IsEmpty()) WSClientId = LoadIdentity;
+	if (LoadIdentity.IsEmpty()) LoadIdentity = WSClientId;
+	bLoadWorkloadEnabled = Mode == TEXT("world_server_client") && !LoadWorkload.IsEmpty();
+	TArray<FString> RequestedActions;
+	LoadWorkload.ParseIntoArray(RequestedActions, TEXT(","), true);
+	for (FString Action : RequestedActions)
+	{
+		Action.TrimStartAndEndInline();
+		bLoadMovementRequested |= Action.Equals(TEXT("movement"), ESearchCase::IgnoreCase);
+		bLoadCombatRequested |= Action.Equals(TEXT("combat"), ESearchCase::IgnoreCase);
+		bLoadVehicleRequested |= Action.Equals(TEXT("vehicle"), ESearchCase::IgnoreCase);
+	}
 	// Prefer APB_SCRATCH env (set by run_verification_gates.ps1); allow -APBScratch= override.
 	FString ScratchDir;
 	if (!FParse::Value(FCommandLine::Get(), TEXT("APBScratch="), ScratchDir))
@@ -64,6 +108,10 @@ void UAPBSessionProbeSubsystem::StartProbe(const FString& InMode)
 	else if (Mode == TEXT("frontend_flow")) LogPath += TEXT("frontend_flow.log");
 	else if (Mode == TEXT("world_server")) LogPath += TEXT("world_server.log");
 	else if (Mode == TEXT("world_server_client")) LogPath += TEXT("world_server_client_") + WSClientId + TEXT(".log");
+	else if (Mode == TEXT("world_travel_client")) LogPath += TEXT("world_travel_client_") + WSClientId + TEXT(".log");
+	else if (Mode == TEXT("world_handoff_client")) LogPath += TEXT("world_handoff_client_") + WSClientId + TEXT(".log");
+	else if (Mode == TEXT("world_chat_client")) LogPath += TEXT("world_chat_client_") + WSClientId + TEXT(".log");
+	else if (Mode == TEXT("social_probe")) LogPath += TEXT("social_probe_") + SocialRole + TEXT(".log");
 	else LogPath += TEXT("probe.log");
 
 	if (Mode != TEXT("mp_observe"))
@@ -149,11 +197,84 @@ void UAPBSessionProbeSubsystem::ArmProbeTimers(UWorld* World)
 	}
 	else if (Mode == TEXT("world_server_client"))
 	{
-		FParse::Value(FCommandLine::Get(), TEXT("WSClientId="), WSClientId);
 		bWSClientDone = false;
 		bTerminal = false;
+		bLoadTravelDispatched = false;
+		bLoadCompletionEmitted = false;
+		bTravelLoginSent = false;
+		bTravelTicketRequested = false;
+		bTravelDispatchPending = false;
+		TravelDistrictId = UAPBDistrictPlacementLoader::ResolveDistrictIdFromMapName(LoadMap);
 		World->GetTimerManager().SetTimer(WorldServerTimer, FTimerDelegate::CreateUObject(this, &UAPBSessionProbeSubsystem::RunWorldServerClientProbe), 0.5f, true, 3.0f);
-		AppendLog(FString::Printf(TEXT("PROBE_TIMER world_server_client id=%s polling every 0.5s after 3s"), *WSClientId));
+		AppendLog(FString::Printf(TEXT("PROBE_TIMER world_server_client id=%s polling every 0.5s after 3s workload=%d map=%s primary=%s account=%s"),
+			*WSClientId, bLoadWorkloadEnabled ? 1 : 0, *LoadMap, *LoadPrimary, *LoadAccount));
+	}
+	else if (Mode == TEXT("social_probe"))
+	{
+		bSocialDone = false;
+		bTerminal = false;
+		bSocialLoginSent = false;
+		bSocialClanOk = false;
+		bSocialFriendsOk = false;
+		bSocialGroupsOk = false;
+		bSocialMailOk = false;
+		SocialProbeStartMs = FDateTime::UtcNow().ToUnixTimestamp() * 1000LL + FDateTime::UtcNow().GetMillisecond();
+		World->GetTimerManager().SetTimer(WorldServerTimer,
+			FTimerDelegate::CreateUObject(this, &UAPBSessionProbeSubsystem::RunSocialProbe), 0.5f, true, 3.0f);
+		AppendLog(FString::Printf(TEXT("PROBE_TIMER social_probe role=%s"), *SocialRole));
+	}
+	else if (Mode == TEXT("world_travel_client"))
+	{
+		FParse::Value(FCommandLine::Get(), TEXT("WSTravelDistrict="), TravelDistrictId);
+		if (TravelDistrictId.IsEmpty()) TravelDistrictId = TEXT("Financial");
+		bTravelLoginSent = false;
+		bTravelTicketRequested = false;
+		bTravelDispatchPending = false;
+		World->GetTimerManager().SetTimer(WorldServerTimer,
+			FTimerDelegate::CreateUObject(this, &UAPBSessionProbeSubsystem::RunWorldTravelClientProbe), 0.25f, true, 3.0f);
+		AppendLog(FString::Printf(TEXT("PROBE_TIMER world_travel_client id=%s district=%s"), *WSClientId, *TravelDistrictId));
+	}
+	else if (Mode == TEXT("world_handoff_client"))
+	{
+		TravelDistrictId = TEXT("Financial");
+		HandoffPhase = 0;
+		bHandoffLoginSent = false;
+		bHandoffPrepareSent = false;
+		bHandoffTicketSent = false;
+		bHandoffDistrictLogged = false;
+		bHandoffStateRequested = false;
+		HandoffStateRequestAtMs = 0;
+		HandoffDeadlineMs = FDateTime::UtcNow().ToUnixTimestamp() * 1000LL + FDateTime::UtcNow().GetMillisecond() + 60000;
+		if (UGameInstance* GI = GetGameInstance())
+		{
+			GI->GetTimerManager().SetTimer(WorldServerTimer,
+				FTimerDelegate::CreateUObject(this, &UAPBSessionProbeSubsystem::RunWorldHandoffClientProbe), 0.25f, true, 2.0f);
+		}
+		AppendLog(FString::Printf(TEXT("PROBE_TIMER world_handoff_client id=%s"), *WSClientId));
+	}
+	else if (Mode == TEXT("world_chat_client"))
+	{
+		FParse::Value(FCommandLine::Get(), TEXT("APBChatCharacter="), ChatCharacter);
+		FParse::Value(FCommandLine::Get(), TEXT("APBChatDistrict="), ChatDistrictId);
+		if (ChatCharacter.IsEmpty() || ChatDistrictId.IsEmpty())
+		{
+			AppendLog(TEXT("CHAT_CLIENT_FAIL reason=missing_identity"));
+			return;
+		}
+		bChatLoginSent = false;
+		bChatTicketRequested = false;
+		bChatTravelDispatched = false;
+		bChatArrivalLogged = false;
+		bChatCommandsArmed = false;
+		QueuedChatCommands.Reset();
+		QueueChatCommandsFromCommandLine();
+		if (UGameInstance* GI = GetGameInstance())
+		{
+			GI->GetTimerManager().SetTimer(WorldServerTimer,
+				FTimerDelegate::CreateUObject(this, &UAPBSessionProbeSubsystem::RunWorldChatClientProbe), 0.25f, true, 3.0f);
+		}
+		AppendLog(FString::Printf(TEXT("PROBE_TIMER world_chat_client id=%s character=%s district=%s"),
+			*WSClientId, *ChatCharacter, *ChatDistrictId));
 	}
 }
 
@@ -239,6 +360,47 @@ void UAPBSessionProbeSubsystem::RunClientLoopProbe()
 	AppendLog(FString::Printf(TEXT("DISTRICT_ENTER ok=%d district=%s session=%s phase=%s inv_slots=%d"),
 		bJoin ? 1 : 0, *JoinDistrictId, *Snap.SessionId, *APB->GetPhase(), Snap.InventorySlotCount));
 
+	// S1 timeout proof, run BEFORE any threat accrues. TickMission arms the current
+	// stage's apbdb-sourced time_limit_sec on the first call (deadline = now + limit) and
+	// breaches on a later call past it. The breach fails the mission, but ApplyMissionFail
+	// clamps at max(0, points-6): with threat still 0 the failure is a true no-op, so this
+	// leaves no economy trace for the S2 opp-won leg below. A fresh StartOppositionMission
+	// after readback restores an un-timed-out run for S2.
+	{
+		const float PreThreat = APB->CaptureDomainSnapshot().ThreatPoints;
+		APB->StartOppositionMission();
+		const bool bArmedTimedOut = APB->TickMission(0.f);
+		FAPBDomainSnapshotUE ArmSnap = APB->CaptureDomainSnapshot();
+		const float Limit = ArmSnap.Mission.MissionStageTimeLimitSec;
+		const float Deadline = ArmSnap.Mission.MissionStageDeadlineServerSec;
+		const bool bBreached = APB->TickMission(Deadline + 1.f);
+		FAPBDomainSnapshotUE ToSnap = APB->CaptureDomainSnapshot();
+		AppendLog(FString::Printf(
+			TEXT("TIMEOUT_DRIVE armed_timed_out=%d limit=%.0f deadline=%.0f breached=%d timed_out=%d status=%s stage=%d/%d pre_threat=%.1f post_threat=%.1f"),
+			bArmedTimedOut ? 1 : 0, Limit, Deadline, bBreached ? 1 : 0,
+			ToSnap.Mission.bMissionTimedOut ? 1 : 0, *ToSnap.MissionStatus,
+			ToSnap.MissionStageIndex, ToSnap.MissionStageCount, PreThreat, ToSnap.ThreatPoints));
+
+		APB->PushDomainSnapshotToAllPlayerStates();
+		if (UWorld* TW = GetWorld())
+		{
+			for (FConstPlayerControllerIterator It = TW->GetPlayerControllerIterator(); It; ++It)
+			{
+				if (APlayerController* PC = It->Get())
+				{
+					if (AAPBPlayerState* PS = PC->GetPlayerState<AAPBPlayerState>())
+					{
+						AppendLog(FString::Printf(
+							TEXT("TIMEOUT_PS_READBACK timed_out=%d limit=%.0f deadline=%.0f mission=%s stage=%d/%d"),
+							PS->bMissionTimedOut ? 1 : 0, PS->MissionStageTimeLimitSec,
+							PS->MissionStageDeadlineServerSec, *PS->MissionTitle,
+							PS->MissionStageIndex, PS->MissionStageCount));
+					}
+				}
+			}
+		}
+	}
+
 	float Hp = 0; bool bKill = false;
 	const float Dmg = APB->FireCatalogWeapon(TEXT(""), 3.f, 0.f, Hp, bKill);
 	for (int32 i = 0; i < 8 && !bKill; ++i) APB->FireCatalogWeapon(TEXT(""), 3.f, 0.f, Hp, bKill);
@@ -273,6 +435,18 @@ void UAPBSessionProbeSubsystem::RunClientLoopProbe()
 	AppendLog(FString::Printf(TEXT("MISSION_DONE title=%s stage=%d/%d status=%s threat=%.1f ticks=%d"),
 		*Snap.MissionTitle, Snap.MissionStageIndex, Snap.MissionStageCount, *Snap.MissionStatus, Snap.ThreatPoints, Ticks));
 
+	// Snapshot retains mission fields on Failed, so a peer OnRep-observes opp_won=1 with stage/title intact.
+	int32 OppTicks = 0;
+	while (OppTicks < 40 && APB->IsMissionActive())
+	{
+		APB->AdvanceOpposition(1.0f);
+		++OppTicks;
+	}
+	Snap = APB->CaptureDomainSnapshot();
+	AppendLog(FString::Printf(TEXT("OPP_WIN_DRIVE title=%s stage=%d/%d status=%s opp_prog=%.2f opp_won=%d threat=%.1f opp_ticks=%d"),
+		*Snap.MissionTitle, Snap.MissionStageIndex, Snap.MissionStageCount, *Snap.MissionStatus,
+		Snap.Mission.MissionOppStageProgress, Snap.Mission.bMissionOppositionWon ? 1 : 0, Snap.ThreatPoints, OppTicks));
+
 	if (UWorld* World = GetWorld())
 	{
 		for (FConstPlayerControllerIterator It = World->GetPlayerControllerIterator(); It; ++It)
@@ -298,6 +472,47 @@ void UAPBSessionProbeSubsystem::RunClientLoopProbe()
 	AppendLog(FString::Printf(TEXT("SYNC_PS threat=%.1f cash=%lld g1c=%lld inv=%d mission=%s stage=%d/%d session=%s"),
 		Snap.ThreatPoints, Snap.Cash, Snap.G1C, Snap.InventorySlotCount,
 		*Snap.MissionTitle, Snap.MissionStageIndex, Snap.MissionStageCount, *Snap.SessionId));
+	// Proves FireWeaponLocal syncs PlayerState through the Domain bridge on its own.
+	// Do NOT add a manual SyncPlayerStateFromDomain in this block: the stale->parity
+	// assertion is only meaningful when FireWeaponLocal is the sole sync path.
+	{
+		int32 FireSyncOk = 0;
+		float StaleThreat = -1.f, PSAfter = -1.f, DomainDiverged = -1.f, DomainFinal = -1.f;
+		int32 Mutated = 0, MovedOffStale = 0, Parity = 0;
+		if (UWorld* FW = GetWorld())
+		{
+			APlayerController* PC = nullptr;
+			for (FConstPlayerControllerIterator It = FW->GetPlayerControllerIterator(); It; ++It)
+			{
+				if ((PC = It->Get()) != nullptr) break;
+			}
+			AAPBFreeroamCharacter* FireChar = PC ? Cast<AAPBFreeroamCharacter>(PC->GetPawn()) : nullptr;
+			if (PC && !FireChar)
+			{
+				FActorSpawnParameters Sp;
+				Sp.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
+				FireChar = FW->SpawnActor<AAPBFreeroamCharacter>(FVector(3000.f, 3000.f, 300.f), FRotator::ZeroRotator, Sp);
+				if (FireChar) PC->Possess(FireChar);
+			}
+			AAPBPlayerState* FirePS = PC ? PC->GetPlayerState<AAPBPlayerState>() : nullptr;
+			if (FireChar && FirePS)
+			{
+				APB->SyncPlayerStateFromDomain(FirePS);
+				StaleThreat = FirePS->ThreatPoints;
+				Mutated = APB->ApplyHandoffProbeMutation() ? 1 : 0;
+				DomainDiverged = APB->CaptureDomainSnapshot().ThreatPoints;
+				FireChar->FireWeaponLocal();
+				PSAfter = FirePS->ThreatPoints;
+				DomainFinal = APB->CaptureDomainSnapshot().ThreatPoints;
+				MovedOffStale = FMath::IsNearlyEqual(PSAfter, StaleThreat, 0.01f) ? 0 : 1;
+				Parity = FMath::IsNearlyEqual(PSAfter, DomainFinal, 0.01f) ? 1 : 0;
+				FireSyncOk = (Mutated == 1 && MovedOffStale == 1 && Parity == 1) ? 1 : 0;
+			}
+		}
+		AppendLog(FString::Printf(
+			TEXT("FIRE_SYNC ok=%d mutated=%d moved_off_stale=%d parity=%d stale_threat=%.1f domain_diverged=%.1f ps_after=%.1f domain_final=%.1f"),
+			FireSyncOk, Mutated, MovedOffStale, Parity, StaleThreat, DomainDiverged, PSAfter, DomainFinal));
+	}
 	AppendLog(TEXT("SESSION_LOOP_COMPLETE CLIENT_LOOP_OK"));
 }
 
@@ -324,6 +539,25 @@ static void SpawnProbeGround(UWorld* World, FVector Center)
 #if WITH_EDITOR
 	Ground->SetActorLabel(TEXT("APB_ProbeGround"));
 #endif
+}
+
+/** True when -APBCapture=<path> is on the command line; optionally returns the path.
+ *  Gates the playable probe's screenshot phase (phase 20) so the headless walk/drive
+ *  gate path (phases 1/2) is completely unaffected unless -APBCapture is passed. */
+static bool APBCaptureWanted(FString* OutPath = nullptr)
+{
+	FString Path;
+	const bool bHas = FParse::Value(FCommandLine::Get(), TEXT("APBCapture="), Path) && !Path.IsEmpty();
+	if (bHas)
+	{
+		Path.ReplaceInline(TEXT("\\"), TEXT("/"));
+		if (OutPath) *OutPath = Path;
+	}
+	else if (OutPath)
+	{
+		OutPath->Reset();
+	}
+	return bHas;
 }
 
 void UAPBSessionProbeSubsystem::PlayableStep()
@@ -395,15 +629,55 @@ void UAPBSessionProbeSubsystem::PlayableStep()
 					PlayableStart = Char->GetActorLocation();
 					AppendLog(FString::Printf(TEXT("PLAYABLE_SETTLED at=(%.1f,%.1f,%.1f) mode=%d"),
 						PlayableStart.X, PlayableStart.Y, PlayableStart.Z, (int32)Move->MovementMode));
-					PlayablePhase = 1;
+					PlayablePhase = APBCaptureWanted() ? 20 : 1;
 					Frames = 0;
 				}
 			}
 		}
 		else if (Frames >= 40)
 		{
-			PlayablePhase = 1;
+			PlayablePhase = APBCaptureWanted() ? 20 : 1;
 			Frames = 0;
+		}
+		return;
+	}
+
+	if (PlayablePhase == 20)
+	{
+		// Capture run (-APBCapture): hold the possessed pawn at the streamed San Paro
+		// centroid and request real-RHI screenshots after the scene has had frames to
+		// compile shaders, then self-exit. OFF unless -APBCapture is passed, so the
+		// headless gate's walk/drive phases (1/2) are byte-for-byte unaffected.
+		FString CapPath;
+		APBCaptureWanted(&CapPath);
+		// Frame the streamed block: place an elevated 3/4 establishing camera aimed down
+		// at where the pawn settled, so the screenshot shows the real San Paro geometry
+		// instead of the ground-level pawn view (which mostly frames sky).
+		if (Frames == 2)
+		{
+			const FVector Focus = PlayableStart;
+			const FVector CamLoc = Focus + FVector(-9000.f, -9000.f, 7000.f);
+			const FRotator CamRot = (Focus - CamLoc).Rotation();
+			FActorSpawnParameters Sp;
+			Sp.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
+			if (ACameraActor* Cam = World->SpawnActor<ACameraActor>(CamLoc, CamRot, Sp))
+			{
+				PC->SetViewTarget(Cam);
+				AppendLog(FString::Printf(TEXT("PLAYABLE_CAPTURE_CAM loc=(%.0f,%.0f,%.0f) focus=(%.0f,%.0f,%.0f)"),
+					CamLoc.X, CamLoc.Y, CamLoc.Z, Focus.X, Focus.Y, Focus.Z));
+			}
+		}
+		if (!CapPath.IsEmpty() && (Frames == 100 || Frames == 250))
+		{
+			FScreenshotRequest::RequestScreenshot(CapPath, false, false);
+			AppendLog(FString::Printf(TEXT("PLAYABLE_CAPTURE_REQUESTED path=%s frame=%d"), *CapPath, Frames));
+		}
+		if (Frames >= 300)
+		{
+			AppendLog(TEXT("PLAYABLE_CAPTURE_DONE PLAYABLE_PROBE_COMPLETE"));
+			World->GetTimerManager().ClearTimer(PlayableTimer);
+			PlayablePhase = 3;
+			FPlatformMisc::RequestExit(false);
 		}
 		return;
 	}
@@ -594,9 +868,11 @@ void UAPBSessionProbeSubsystem::MpPoll()
 		AAPBPlayerState* PS = *It;
 		if (!PS) continue;
 		const FString Line = FString::Printf(
-			TEXT("MP_POLL player=%s threat=%.1f cash=%lld g1c=%lld inv=%d mission=%s stage=%d/%d session=%s"),
+			TEXT("MP_POLL player=%s threat=%.1f cash=%lld g1c=%lld inv=%d mission=%s stage=%d/%d session=%s stage_prog=%.2f opp_prog=%.2f contesting=%d opp_won=%d timed_out=%d deadline=%.1f"),
 			*PS->GetPlayerName(), PS->ThreatPoints, PS->Cash, PS->G1C, PS->InventoryItemCount,
-			*PS->MissionTitle, PS->MissionStageIndex, PS->MissionStageCount, *PS->DistrictSessionId);
+			*PS->MissionTitle, PS->MissionStageIndex, PS->MissionStageCount, *PS->DistrictSessionId,
+			PS->MissionStageProgress, PS->MissionOppStageProgress, PS->bMissionOppositionContesting ? 1 : 0,
+			PS->bMissionOppositionWon ? 1 : 0, PS->bMissionTimedOut ? 1 : 0, PS->MissionStageDeadlineServerSec);
 		AppendLog(Line);
 		// Client-side observer alias for gate script
 		if (World->GetNetMode() == NM_Client)
@@ -605,9 +881,11 @@ void UAPBSessionProbeSubsystem::MpPoll()
 				TEXT("CLIENT_OBS economy threat=%.1f cash=%lld g1c=%lld inv=%d player=%s"),
 				PS->ThreatPoints, PS->Cash, PS->G1C, PS->InventoryItemCount, *PS->GetPlayerName()));
 			AppendLog(FString::Printf(
-				TEXT("CLIENT_OBS mission=%s stage=%d/%d session=%s player=%s"),
+				TEXT("CLIENT_OBS mission=%s stage=%d/%d session=%s player=%s stage_prog=%.2f opp_prog=%.2f contesting=%d opp_won=%d timed_out=%d deadline=%.1f"),
 				*PS->MissionTitle, PS->MissionStageIndex, PS->MissionStageCount,
-				*PS->DistrictSessionId, *PS->GetPlayerName()));
+				*PS->DistrictSessionId, *PS->GetPlayerName(),
+				PS->MissionStageProgress, PS->MissionOppStageProgress, PS->bMissionOppositionContesting ? 1 : 0,
+				PS->bMissionOppositionWon ? 1 : 0, PS->bMissionTimedOut ? 1 : 0, PS->MissionStageDeadlineServerSec));
 		}
 	}
 }
@@ -948,9 +1226,14 @@ void UAPBSessionProbeSubsystem::RunWorldServerProbe()
 
 void UAPBSessionProbeSubsystem::RunWorldServerClientProbe()
 {
-	if (bTerminal || bWSClientDone) return;
+	if (bTerminal || (bWSClientDone && !bLoadWorkloadEnabled)) return;
 	UWorld* World = GetWorld();
 	if (!World) return;
+	if (bLoadWorkloadEnabled && bWSClientDone)
+	{
+		RunWorldTravelClientProbe();
+		return;
+	}
 	UGameInstance* GI = GetGameInstance();
 	UAPBGameInstanceSubsystem* APB = GI ? GI->GetSubsystem<UAPBGameInstanceSubsystem>() : nullptr;
 	if (!APB) return;
@@ -964,7 +1247,9 @@ void UAPBSessionProbeSubsystem::RunWorldServerClientProbe()
 
 			if (!PS->bWorldAuthOk)
 			{
-				const FString User = TEXT("probe_") + WSClientId;
+				const FString User = bLoadWorkloadEnabled && !LoadAccount.IsEmpty()
+					? LoadAccount
+					: TEXT("probe_") + WSClientId;
 				const FString Pass = TEXT("probe_pass");
 				APB->RegisterAccount(User, Pass);
 				PS->Server_LoginRequest(User, Pass);
@@ -985,16 +1270,736 @@ void UAPBSessionProbeSubsystem::RunWorldServerClientProbe()
 			}
 			if (PS->IssuedTicketJson.IsEmpty())
 			{
-				PS->Server_IssueTicket(TEXT("Operative"), TEXT("Financial"));
+				PS->Server_IssueTicket(TEXT("Operative"), bLoadWorkloadEnabled ? TravelDistrictId : TEXT("Financial"));
 				AppendLog(FString::Printf(TEXT("WS_CLIENT id=%s sent_issue_ticket"), *WSClientId));
 				return;
 			}
 			bWSClientDone = true;
+			AppendLog(FString::Printf(TEXT("WORLD_CLIENT_OK login=1 charlist=1 districtlist=1 ticket=1 id=%s"), *WSClientId));
+			if (bLoadWorkloadEnabled)
+			{
+				bTravelTicketRequested = true;
+				return;
+			}
 			bTerminal = true;
 			World->GetTimerManager().ClearTimer(WorldServerTimer);
-			AppendLog(FString::Printf(TEXT("WORLD_CLIENT_OK login=1 charlist=1 districtlist=1 ticket=1 id=%s"), *WSClientId));
-			FPlatformMisc::RequestExit(false);
+			// Linger connected before exiting: the authority gate counts clients that
+			// SIMULTANEOUSLY hold a ticket (FMath::Max over a per-poll snapshot). Two probe
+			// clients finish ~1s apart, so an instant RequestExit tears this client's
+			// PlayerState down before the peer issues its ticket -> the two ticket windows
+			// never overlap and the authority never observes ticket=2. Staying connected a
+			// few seconds guarantees overlap; the client still self-terminates afterward
+			// (and the gate runner also force-kills it), so no process is leaked.
+			FTimerHandle ExitHandle;
+			World->GetTimerManager().SetTimer(ExitHandle,
+				[]() { FPlatformMisc::RequestExit(false); }, 20.0f, false);
 			return;
 		}
+	}
+}
+
+void UAPBSessionProbeSubsystem::RunSocialProbe()
+{
+	if (bTerminal || bSocialDone) return;
+
+	// Timeout: 30s max for the social probe to complete.
+	const int64 NowMs = FDateTime::UtcNow().ToUnixTimestamp() * 1000LL + FDateTime::UtcNow().GetMillisecond();
+	if (SocialProbeStartMs > 0 && (NowMs - SocialProbeStartMs) > 30000)
+	{
+		bSocialDone = true;
+		AppendLog(FString::Printf(TEXT("SOCIAL_PROBE_FAIL reason=timeout role=%s clan=%d friends=%d groups=%d mail=%d"),
+			*SocialRole, bSocialClanOk ? 1 : 0, bSocialFriendsOk ? 1 : 0, bSocialGroupsOk ? 1 : 0, bSocialMailOk ? 1 : 0));
+		EndFrontendProbe();
+		return;
+	}
+
+	UGameInstance* GI = GetGameInstance();
+	UAPBGameInstanceSubsystem* APB = GI ? GI->GetSubsystem<UAPBGameInstanceSubsystem>() : nullptr;
+	if (!APB) { AppendLog(TEXT("SOCIAL_PROBE_FAIL reason=no_apb")); EndFrontendProbe(); return; }
+
+	APlayerController* PC = nullptr;
+	if (UWorld* W = GetWorld())
+		PC = UGameplayStatics::GetPlayerController(W, 0);
+	if (!PC) { AppendLog(TEXT("SOCIAL_PROBE_FAIL reason=no_pc")); EndFrontendProbe(); return; }
+
+	AAPBPlayerState* PS = PC->GetPlayerState<AAPBPlayerState>();
+	if (!PS) { AppendLog(TEXT("SOCIAL_PROBE_FAIL reason=no_ps")); EndFrontendProbe(); return; }
+
+	// Step 1: Login + character creation for the probe role.
+	if (!bSocialLoginSent)
+	{
+		bSocialLoginSent = true;
+		APB->RegisterAccount(SocialRole, TEXT("pass"));
+		APB->Login(SocialRole, TEXT("pass"));
+		APB->EnterWorld(TEXT("W1"));
+		APB->CreateCharacter(SocialRole, false);
+		APB->JoinDistrict(TEXT("Financial"));
+		APB->PushDomainSnapshotToAllPlayerStates();
+		AppendLog(FString::Printf(TEXT("SOCIAL_LOGIN role=%s character=%s"), *SocialRole, *SocialRole));
+		return; // wait one tick for replication
+	}
+
+	// Step 2: Role-specific social operations.
+	// Alice: creates a clan, sends a friend request to Bob, creates a group, sends mail.
+	// Bob: accepts the clan invite, accepts the friend request, accepts the group invite.
+	const bool bIsAlice = SocialRole.Equals(TEXT("alice"), ESearchCase::IgnoreCase);
+	const bool bIsBob = SocialRole.Equals(TEXT("bob"), ESearchCase::IgnoreCase);
+
+	if (bIsAlice)
+	{
+		// Create a clan directly via the bridge (works on standalone/world authority).
+		if (!bSocialClanOk)
+		{
+			const FString ClanId = TEXT("ClanProbe");
+			const bool bOk = APB->SocialClanCreate(ClanId, ClanId, TEXT("PRB"), TEXT("alice"), false);
+			bSocialClanOk = bOk;
+			AppendLog(FString::Printf(TEXT("SOCIAL_CLAN_CREATE ok=%d clan=%s"), bOk ? 1 : 0, *ClanId));
+			if (bOk) APB->PushDomainSnapshotToAllPlayerStates();
+		}
+
+		// Friend request to Bob.
+		if (!bSocialFriendsOk)
+		{
+			const bool bOk = APB->SocialFriendRequest(TEXT("alice"), TEXT("bob"));
+			bSocialFriendsOk = bOk;
+			AppendLog(FString::Printf(TEXT("SOCIAL_FRIEND_REQUEST ok=%d from=alice to=bob"), bOk ? 1 : 0));
+		}
+
+		// Group create.
+		if (!bSocialGroupsOk)
+		{
+			FString OutId;
+			const bool bOk = APB->SocialGroupCreate(TEXT("alice"), OutId);
+			bSocialGroupsOk = bOk;
+			AppendLog(FString::Printf(TEXT("SOCIAL_GROUP_CREATE ok=%d id=%s"), bOk ? 1 : 0, *OutId));
+		}
+
+		// Mail send.
+		if (!bSocialMailOk)
+		{
+			const bool bOk = APB->SocialMailSend(TEXT("alice"), TEXT("bob"), TEXT("Probe"), TEXT("Test mail"), 0);
+			bSocialMailOk = bOk;
+			AppendLog(FString::Printf(TEXT("SOCIAL_MAIL_SEND ok=%d from=alice to=bob"), bOk ? 1 : 0));
+		}
+
+		if (bSocialClanOk && bSocialFriendsOk && bSocialGroupsOk && bSocialMailOk)
+		{
+			bSocialDone = true;
+			AppendLog(TEXT("SOCIAL_PROBE_ALICE_OK"));
+			APB->PushDomainSnapshotToAllPlayerStates();
+			EndFrontendProbe();
+		}
+		return;
+	}
+
+	if (bIsBob)
+	{
+		// Bob: accept the clan invite (waits for replicated bHasPendingClanInvite).
+		if (!bSocialClanOk)
+		{
+			if (PS->bHasPendingClanInvite)
+			{
+				const bool bOk = APB->SocialClanAcceptInvite(TEXT("bob"));
+				bSocialClanOk = bOk;
+				AppendLog(FString::Printf(TEXT("SOCIAL_CLAN_ACCEPT ok=%d invitee=bob"), bOk ? 1 : 0));
+				if (bOk) APB->PushDomainSnapshotToAllPlayerStates();
+			}
+			else
+			{
+				// Try direct accept (standalone might not have replicated invite yet).
+				const bool bOk = APB->SocialClanAcceptInvite(TEXT("bob"));
+				if (bOk)
+				{
+					bSocialClanOk = true;
+					AppendLog(FString::Printf(TEXT("SOCIAL_CLAN_ACCEPT ok=%d invitee=bob source=direct"), 1));
+				}
+			}
+		}
+
+		// Accept the friend request.
+		if (!bSocialFriendsOk)
+		{
+			const bool bOk = APB->SocialFriendAccept(TEXT("bob"), TEXT("alice"));
+			bSocialFriendsOk = bOk;
+			AppendLog(FString::Printf(TEXT("SOCIAL_FRIEND_ACCEPT ok=%d invitee=bob inviter=alice"), bOk ? 1 : 0));
+		}
+
+		// Accept the group invite.
+		if (!bSocialGroupsOk)
+		{
+			const bool bOk = APB->SocialGroupAccept(TEXT("bob"));
+			bSocialGroupsOk = bOk;
+			AppendLog(FString::Printf(TEXT("SOCIAL_GROUP_ACCEPT ok=%d invitee=bob"), bOk ? 1 : 0));
+		}
+
+		// Mail inbox check.
+		if (!bSocialMailOk)
+		{
+			const int32 Unread = APB->SocialMailUnreadCount(TEXT("bob"));
+			bSocialMailOk = Unread > 0;
+			AppendLog(FString::Printf(TEXT("SOCIAL_MAIL_UNREAD count=%d ok=%d"), Unread, bSocialMailOk ? 1 : 0));
+		}
+
+		if (bSocialClanOk && bSocialFriendsOk && bSocialGroupsOk && bSocialMailOk)
+		{
+			bSocialDone = true;
+			AppendLog(TEXT("SOCIAL_PROBE_BOB_OK"));
+			APB->PushDomainSnapshotToAllPlayerStates();
+			EndFrontendProbe();
+		}
+		return;
+	}
+
+	// Unknown role — emit fail.
+	bSocialDone = true;
+	AppendLog(FString::Printf(TEXT("SOCIAL_PROBE_FAIL reason=unknown_role role=%s"), *SocialRole));
+	EndFrontendProbe();
+}
+
+void UAPBSessionProbeSubsystem::RunWorldTravelClientProbe()
+{
+	UWorld* World = GetWorld();
+	UGameInstance* GI = GetGameInstance();
+	UAPBGameInstanceSubsystem* APB = GI ? GI->GetSubsystem<UAPBGameInstanceSubsystem>() : nullptr;
+	if (!World || !APB) return;
+	APlayerController* PlayerController = UGameplayStatics::GetPlayerController(World, 0);
+	AAPBPlayerState* PlayerState = PlayerController ? PlayerController->GetPlayerState<AAPBPlayerState>() : nullptr;
+	if (!PlayerState) return;
+	if (!PlayerState->bWorldAuthOk)
+	{
+		if (!bTravelLoginSent)
+		{
+			const FString User = TEXT("travel_") + WSClientId;
+			PlayerState->Server_LoginRequest(User, TEXT("travel_pass"));
+			bTravelLoginSent = true;
+			AppendLog(FString::Printf(TEXT("TRAVEL_LOGIN id=%s"), *WSClientId));
+		}
+		return;
+	}
+	if (!bTravelTicketRequested)
+	{
+		PlayerState->Server_IssueTicket(TEXT("Operative"), TravelDistrictId);
+		bTravelTicketRequested = true;
+		AppendLog(FString::Printf(TEXT("TRAVEL_TICKET_REQUEST district=%s"), *TravelDistrictId));
+		return;
+	}
+	const FString ReservationJson = PlayerState->IssuedTicketJson;
+	if (ReservationJson.IsEmpty()) return;
+	TSharedPtr<FJsonObject> Reservation;
+	const TSharedRef<TJsonReader<>> Reader = TJsonReaderFactory<>::Create(ReservationJson);
+	if (!FJsonSerializer::Deserialize(Reader, Reservation) || !Reservation.IsValid())
+	{
+		AppendLog(TEXT("TRAVEL_FAIL reason=no_ticket"));
+		World->GetTimerManager().ClearTimer(WorldServerTimer);
+		return;
+	}
+	FString Error;
+	if (Reservation->TryGetStringField(TEXT("error"), Error))
+	{
+		AppendLog(FString::Printf(TEXT("TRAVEL_FAIL reason=%s"), *Error));
+		World->GetTimerManager().ClearTimer(WorldServerTimer);
+		return;
+	}
+	FString Ticket;
+	FString Host;
+	FString ReservationId;
+	double PortNumber = 0;
+	if (!Reservation->TryGetStringField(TEXT("ticket"), Ticket) || !Reservation->TryGetStringField(TEXT("host"), Host) ||
+		!Reservation->TryGetStringField(TEXT("reservation_id"), ReservationId) ||
+		!Reservation->TryGetNumberField(TEXT("port"), PortNumber))
+	{
+		AppendLog(TEXT("TRAVEL_FAIL reason=no_ticket"));
+		World->GetTimerManager().ClearTimer(WorldServerTimer);
+		return;
+	}
+	if (!bTravelDispatchPending)
+	{
+		int32 DelayMs = 0;
+		FParse::Value(FCommandLine::Get(), TEXT("WSTravelDelayMs="), DelayMs);
+		TravelDispatchAtMs = FDateTime::UtcNow().ToUnixTimestamp() * 1000LL + FDateTime::UtcNow().GetMillisecond() + DelayMs;
+		bTravelDispatchPending = true;
+		AppendLog(FString::Printf(TEXT("TRAVEL_RESERVATION district=%s host=%s port=%d id=%s"),
+			*TravelDistrictId, *Host, static_cast<int32>(PortNumber), *ReservationId));
+	}
+	const int64 NowMs = FDateTime::UtcNow().ToUnixTimestamp() * 1000LL + FDateTime::UtcNow().GetMillisecond();
+	if (NowMs < TravelDispatchAtMs) return;
+	World->GetTimerManager().ClearTimer(WorldServerTimer);
+	AppendLog(FString::Printf(TEXT("TRAVEL_DISPATCH district=%s"), *TravelDistrictId));
+	if (bLoadWorkloadEnabled && !bLoadTravelDispatched)
+	{
+		bLoadTravelDispatched = true;
+		LoadWorkloadStartedAt = FPlatformTime::Seconds();
+		LoadLastPerfAt = LoadWorkloadStartedAt;
+		if (GI)
+		{
+			GI->GetTimerManager().SetTimer(LoadWorkloadTimer,
+				FTimerDelegate::CreateUObject(this, &UAPBSessionProbeSubsystem::RunLoadWorkloadStep), 0.1f, true, 1.0f);
+		}
+	}
+	APB->StartDistrictTravel(PlayerController, TravelDistrictId, Host, static_cast<int32>(PortNumber), Ticket, ReservationId);
+}
+
+void UAPBSessionProbeSubsystem::RunLoadWorkloadStep()
+{
+	if (!bLoadWorkloadEnabled || bLoadCompletionEmitted) return;
+	UWorld* World = GetWorld();
+	if (!World || World->GetNetMode() != NM_Client) return;
+	APlayerController* PlayerController = UGameplayStatics::GetPlayerController(World, 0);
+	if (!PlayerController) return;
+	++LoadWorkloadSteps;
+
+	AAPBFreeroamCharacter* Character = Cast<AAPBFreeroamCharacter>(PlayerController->GetPawn());
+	if (Character)
+	{
+		if (bLoadMovementRequested)
+		{
+			const float Right = FMath::Sin(static_cast<float>(LoadWorkloadSteps) * 0.1f) * 0.35f;
+			Character->ApplyMoveInput(1.f, Right);
+			bLoadMovementExecuted = true;
+		}
+		if (bLoadCombatRequested)
+		{
+			if (!bLoadCombatSent)
+			{
+				LoadCombatStartShots = Character->ShotsFired;
+				Character->ServerFireWeapon();
+				bLoadCombatSent = true;
+			}
+			else if (Character->ShotsFired > LoadCombatStartShots)
+			{
+				bLoadCombatExecuted = true;
+				bLoadCombatSent = false;
+			}
+		}
+		if (bLoadVehicleRequested && !bLoadVehicleEntered
+			&& (!bLoadMovementRequested || bLoadMovementExecuted)
+			&& (!bLoadCombatRequested || bLoadCombatExecuted))
+		{
+			Character->ServerEnterNearestVehicle();
+		}
+	}
+
+	if (AAPBDriveableVehicle* Vehicle = Cast<AAPBDriveableVehicle>(PlayerController->GetPawn()))
+	{
+		bLoadVehicleEntered = Vehicle->bHasDriver;
+		if (bLoadVehicleRequested && bLoadVehicleEntered)
+		{
+			Vehicle->ApplyThrottleInput(1.f);
+			bLoadVehicleThrottled = true;
+		}
+	}
+
+	const double Now = FPlatformTime::Seconds();
+	if (Now - LoadLastPerfAt >= 1.0)
+	{
+		int32 ReplicatedActors = 0;
+		for (TActorIterator<AActor> It(World); It; ++It)
+		{
+			if (It->GetIsReplicated()) ++ReplicatedActors;
+		}
+		const float DeltaSeconds = World->GetDeltaSeconds();
+		const float FrameMs = DeltaSeconds * 1000.f;
+		const float FPS = DeltaSeconds > SMALL_NUMBER ? 1.f / DeltaSeconds : 0.f;
+		const APlayerState* PlayerState = PlayerController->PlayerState;
+		const float RTT = PlayerState ? PlayerState->GetPingInMilliseconds() : 0.f;
+		AppendLog(FString::Printf(TEXT("APB_PERF_METRIC identity=%s FPS:%.3f FrameMs:%.3f RTT:%.3f Replication:%.3f"),
+			*LoadIdentity, FPS, FrameMs, RTT, static_cast<float>(ReplicatedActors)));
+		bLoadPerfEmitted = true;
+		LoadLastPerfAt = Now;
+	}
+
+	const bool bRequestedComplete = (!bLoadMovementRequested || bLoadMovementExecuted)
+		&& (!bLoadCombatRequested || bLoadCombatExecuted)
+		&& (!bLoadVehicleRequested || (bLoadVehicleEntered && bLoadVehicleThrottled));
+	if (bLoadPerfEmitted && (bRequestedComplete || Now - LoadWorkloadStartedAt >= 15.0))
+	{
+		bLoadCompletionEmitted = true;
+		AppendLog(FString::Printf(
+			TEXT("APB_LOAD_WORKLOAD_COMPLETE identity=%s movement=%d combat=%d vehicle=%d"),
+			*LoadIdentity,
+			APBLoadActionToken(bLoadMovementRequested, bLoadMovementExecuted),
+			APBLoadActionToken(bLoadCombatRequested, bLoadCombatExecuted),
+			APBLoadVehicleToken(bLoadVehicleRequested, bLoadVehicleEntered, bLoadVehicleThrottled)));
+	}
+}
+
+void UAPBSessionProbeSubsystem::RunWorldChatClientProbe()
+{
+	UWorld* World = GetWorld();
+	UGameInstance* GameInstance = GetGameInstance();
+	UAPBGameInstanceSubsystem* APB = GameInstance ? GameInstance->GetSubsystem<UAPBGameInstanceSubsystem>() : nullptr;
+	if (!World || !APB)
+	{
+		return;
+	}
+	const int64 NowMs = FDateTime::UtcNow().ToUnixTimestamp() * 1000LL + FDateTime::UtcNow().GetMillisecond();
+	if (NowMs < ChatWorldReconnectReadyAtMs)
+	{
+		return;
+	}
+	APlayerController* PlayerController = UGameplayStatics::GetPlayerController(World, 0);
+	AAPBPlayerState* PlayerState = PlayerController ? PlayerController->GetPlayerState<AAPBPlayerState>() : nullptr;
+	if (!PlayerController || !PlayerState)
+	{
+		return;
+	}
+	if (World->GetMapName().Contains(ChatDistrictId, ESearchCase::IgnoreCase))
+	{
+		if (!bChatArrivalLogged)
+		{
+			bChatArrivalLogged = true;
+			AppendLog(FString::Printf(TEXT("CHAT_CLIENT_ARRIVED char=%s district=%s"), *ChatCharacter, *ChatDistrictId));
+			ArmQueuedChatCommands();
+		}
+		return;
+	}
+	if (!PlayerState->bWorldAuthOk)
+	{
+		if (!bChatLoginSent)
+		{
+			PlayerState->Server_LoginRequest(TEXT("chat_") + WSClientId, TEXT("chat_pass"));
+			bChatLoginSent = true;
+			AppendLog(FString::Printf(TEXT("CHAT_CLIENT_LOGIN id=%s"), *WSClientId));
+		}
+		return;
+	}
+	if (!bChatTicketRequested)
+	{
+		PlayerState->Server_IssueTicket(ChatCharacter, ChatDistrictId);
+		bChatTicketRequested = true;
+		AppendLog(FString::Printf(TEXT("CHAT_CLIENT_TICKET_REQUEST char=%s district=%s"), *ChatCharacter, *ChatDistrictId));
+		return;
+	}
+	if (bChatTravelDispatched || PlayerState->IssuedTicketJson.IsEmpty())
+	{
+		return;
+	}
+	TSharedPtr<FJsonObject> Reservation;
+	const TSharedRef<TJsonReader<>> Reader = TJsonReaderFactory<>::Create(PlayerState->IssuedTicketJson);
+	if (!FJsonSerializer::Deserialize(Reader, Reservation) || !Reservation.IsValid())
+	{
+		AppendLog(TEXT("CHAT_CLIENT_FAIL reason=no_ticket"));
+		return;
+	}
+	FString Error;
+	if (Reservation->TryGetStringField(TEXT("error"), Error))
+	{
+		AppendLog(FString::Printf(TEXT("CHAT_CLIENT_FAIL reason=%s"), *Error));
+		return;
+	}
+	FString Ticket;
+	FString Host;
+	FString ReservationId;
+	double PortNumber = 0;
+	if (!Reservation->TryGetStringField(TEXT("ticket"), Ticket) || !Reservation->TryGetStringField(TEXT("host"), Host) ||
+		!Reservation->TryGetStringField(TEXT("reservation_id"), ReservationId) ||
+		!Reservation->TryGetNumberField(TEXT("port"), PortNumber))
+	{
+		AppendLog(TEXT("CHAT_CLIENT_FAIL reason=no_ticket"));
+		return;
+	}
+	bChatTravelDispatched = true;
+	AppendLog(FString::Printf(TEXT("CHAT_CLIENT_TRAVEL char=%s district=%s"), *ChatCharacter, *ChatDistrictId));
+	APB->StartDistrictTravel(PlayerController, ChatDistrictId, Host, static_cast<int32>(PortNumber), Ticket, ReservationId);
+}
+
+void UAPBSessionProbeSubsystem::QueueChatCommandsFromCommandLine()
+{
+	FString ExecCommands;
+	if (!FParse::Value(FCommandLine::Get(), TEXT("ExecCmds="), ExecCommands))
+	{
+		return;
+	}
+	ExecCommands.TrimQuotesInline();
+	TArray<FString> Commands;
+	ExecCommands.ParseIntoArray(Commands, TEXT(","), true);
+	for (FString Command : Commands)
+	{
+		Command.TrimStartAndEndInline();
+		const bool bTravel = Command.StartsWith(TEXT("APBChatTravel "), ESearchCase::IgnoreCase);
+		const FString Prefix = bTravel ? TEXT("APBChatTravel ") : TEXT("APBChat ");
+		if (!Command.StartsWith(Prefix, ESearchCase::IgnoreCase))
+		{
+			continue;
+		}
+		FString DelayText;
+		FString Payload;
+		if (!Command.Mid(Prefix.Len()).TrimStartAndEnd().Split(TEXT(" "), &DelayText, &Payload))
+		{
+			continue;
+		}
+		const int32 DelayMs = FCString::Atoi(*DelayText);
+		Payload.TrimStartAndEndInline();
+		if (DelayMs < 0 || DelayMs > 120000 || Payload.IsEmpty())
+		{
+			continue;
+		}
+		FChatGateCommand& Queued = QueuedChatCommands.AddDefaulted_GetRef();
+		Queued.DelayMs = DelayMs;
+		if (bTravel) Queued.TravelDistrictId = Payload;
+		else Queued.RawLine = Payload;
+	}
+}
+
+void UAPBSessionProbeSubsystem::ArmQueuedChatCommands()
+{
+	if (bChatCommandsArmed)
+	{
+		return;
+	}
+	bChatCommandsArmed = true;
+	for (const FChatGateCommand& Command : QueuedChatCommands)
+	{
+		if (!Command.TravelDistrictId.IsEmpty()) ScheduleChatDistrictTravel(Command.DelayMs, Command.TravelDistrictId);
+		else ScheduleDevChat(Command.DelayMs, Command.RawLine);
+	}
+	AppendLog(FString::Printf(TEXT("CHAT_CLIENT_COMMANDS_ARMED count=%d"), QueuedChatCommands.Num()));
+}
+
+void UAPBSessionProbeSubsystem::ScheduleDevChat(const int32 DelayMs, const FString& RawLine)
+{
+	if (Mode != TEXT("world_chat_client") || DelayMs < 0 || DelayMs > 120000 || RawLine.IsEmpty() || RawLine.Len() > 512)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("CHAT_DENIED reason=BadChannel"));
+		return;
+	}
+	UGameInstance* GameInstance = GetGameInstance();
+	if (!GameInstance)
+	{
+		return;
+	}
+	FTimerHandle& TimerHandle = ChatCommandTimers.AddDefaulted_GetRef();
+	GameInstance->GetTimerManager().SetTimer(TimerHandle, FTimerDelegate::CreateWeakLambda(this, [this, RawLine]()
+	{
+		UWorld* World = GetWorld();
+		APlayerController* PlayerController = World ? UGameplayStatics::GetPlayerController(World, 0) : nullptr;
+		AAPBPlayerState* PlayerState = PlayerController ? PlayerController->GetPlayerState<AAPBPlayerState>() : nullptr;
+		if (!PlayerState)
+		{
+			AppendLog(TEXT("CHAT_CLIENT_FAIL reason=no_player_state"));
+			return;
+		}
+		PlayerState->Server_SubmitChat(RawLine);
+		AppendLog(FString::Printf(TEXT("CHAT_CLIENT_SUBMIT raw=%s"), *RawLine));
+	}), static_cast<float>(DelayMs) / 1000.f, false);
+}
+
+void UAPBSessionProbeSubsystem::ScheduleChatDistrictTravel(const int32 DelayMs, const FString& DistrictId)
+{
+	if (Mode != TEXT("world_chat_client") || DelayMs < 0 || DelayMs > 120000 || DistrictId.IsEmpty() || DistrictId.Len() > 64)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("CHAT_DENIED reason=BadChannel"));
+		return;
+	}
+	UGameInstance* GameInstance = GetGameInstance();
+	if (!GameInstance)
+	{
+		return;
+	}
+	FTimerHandle& TimerHandle = ChatCommandTimers.AddDefaulted_GetRef();
+	GameInstance->GetTimerManager().SetTimer(TimerHandle, FTimerDelegate::CreateWeakLambda(this, [this, DistrictId]()
+	{
+		UWorld* World = GetWorld();
+		APlayerController* PlayerController = World ? UGameplayStatics::GetPlayerController(World, 0) : nullptr;
+		if (!PlayerController)
+		{
+			AppendLog(TEXT("CHAT_CLIENT_FAIL reason=no_player_controller"));
+			return;
+		}
+		int32 WorldPort = 0;
+		FParse::Value(FCommandLine::Get(), TEXT("WorldPort="), WorldPort);
+		if (WorldPort < 1 || WorldPort > 65535)
+		{
+			AppendLog(TEXT("CHAT_CLIENT_FAIL reason=world_port"));
+			return;
+		}
+		ChatDistrictId = DistrictId;
+		bChatLoginSent = false;
+		bChatTicketRequested = false;
+		bChatTravelDispatched = false;
+		bChatArrivalLogged = false;
+		ChatWorldReconnectReadyAtMs = FDateTime::UtcNow().ToUnixTimestamp() * 1000LL + FDateTime::UtcNow().GetMillisecond() + 2000;
+		AppendLog(FString::Printf(TEXT("CHAT_CLIENT_RETURN world_port=%d district=%s"), WorldPort, *ChatDistrictId));
+		PlayerController->ClientTravel(FString::Printf(TEXT("127.0.0.1:%d"), WorldPort), ETravelType::TRAVEL_Absolute);
+	}), static_cast<float>(DelayMs) / 1000.f, false);
+}
+
+bool UAPBSessionProbeSubsystem::ParseHandoffProbeSnapshot(const FString& Json, int64& OutCash, int64& OutG1C,
+	float& OutThreat, int32& OutInventorySlots, int32& OutInventoryQty, FString& OutFaction, FString& OutMission, FString& OutSession,
+	FString& OutProgression) const
+{
+	TSharedPtr<FJsonObject> Root;
+	const TSharedRef<TJsonReader<>> Reader = TJsonReaderFactory<>::Create(Json);
+	if (!FJsonSerializer::Deserialize(Reader, Root) || !Root.IsValid()) return false;
+	double Cash = 0, G1C = 0, Threat = 0, InventorySlots = 0, InventoryQty = 0;
+	if (!Root->TryGetNumberField(TEXT("cash"), Cash) || !Root->TryGetNumberField(TEXT("g1c"), G1C) ||
+		!Root->TryGetNumberField(TEXT("threat_points"), Threat) || !Root->TryGetNumberField(TEXT("inventory_slot_count"), InventorySlots) ||
+		!Root->TryGetNumberField(TEXT("inventory_total_qty"), InventoryQty) ||
+		!Root->TryGetStringField(TEXT("faction"), OutFaction) || !Root->TryGetStringField(TEXT("mission_id"), OutMission) ||
+		!Root->TryGetStringField(TEXT("session_id"), OutSession)) return false;
+	OutProgression.Empty();
+	const TArray<TSharedPtr<FJsonValue>>* Contacts = nullptr;
+	if (Root->TryGetArrayField(TEXT("contact_standings"), Contacts) && Contacts)
+	{
+		for (const TSharedPtr<FJsonValue>& Value : *Contacts)
+		{
+			const TSharedPtr<FJsonObject> Entry = Value.IsValid() ? Value->AsObject() : nullptr;
+			if (!Entry.IsValid()) continue;
+			FString Id; double Amount = 0;
+			if (Entry->TryGetStringField(TEXT("id"), Id) && Entry->TryGetNumberField(TEXT("value"), Amount))
+				OutProgression += FString::Printf(TEXT("C:%s=%lld;"), *Id, static_cast<int64>(Amount));
+		}
+	}
+	const TArray<TSharedPtr<FJsonValue>>* Roles = nullptr;
+	if (Root->TryGetArrayField(TEXT("role_xp"), Roles) && Roles)
+	{
+		for (const TSharedPtr<FJsonValue>& Value : *Roles)
+		{
+			const TSharedPtr<FJsonObject> Entry = Value.IsValid() ? Value->AsObject() : nullptr;
+			if (!Entry.IsValid()) continue;
+			FString Id; double Amount = 0;
+			if (Entry->TryGetStringField(TEXT("id"), Id) && Entry->TryGetNumberField(TEXT("value"), Amount))
+				OutProgression += FString::Printf(TEXT("R:%s=%lld;"), *Id, static_cast<int64>(Amount));
+		}
+	}
+	OutCash = static_cast<int64>(Cash);
+	OutG1C = static_cast<int64>(G1C);
+	OutThreat = static_cast<float>(Threat);
+	OutInventorySlots = static_cast<int32>(InventorySlots);
+	OutInventoryQty = static_cast<int32>(InventoryQty);
+	return true;
+}
+
+void UAPBSessionProbeSubsystem::RunWorldHandoffClientProbe()
+{
+	UWorld* World = GetWorld();
+	UGameInstance* GI = GetGameInstance();
+	UAPBGameInstanceSubsystem* APB = GI ? GI->GetSubsystem<UAPBGameInstanceSubsystem>() : nullptr;
+	if (!World || !APB || bTerminal) return;
+	const int64 NowMs = FDateTime::UtcNow().ToUnixTimestamp() * 1000LL + FDateTime::UtcNow().GetMillisecond();
+	if (NowMs >= HandoffDeadlineMs)
+	{
+		AppendLog(TEXT("HANDOFF_FAIL reason=timeout"));
+		bTerminal = true;
+		if (GI) GI->GetTimerManager().ClearTimer(WorldServerTimer);
+		FPlatformMisc::RequestExit(false);
+		return;
+	}
+	APlayerController* PlayerController = UGameplayStatics::GetPlayerController(World, 0);
+	AAPBPlayerState* PlayerState = PlayerController ? PlayerController->GetPlayerState<AAPBPlayerState>() : nullptr;
+	if (!PlayerState) return;
+	const bool bDistrict = World->GetMapName().Contains(TEXT("Financial"), ESearchCase::IgnoreCase);
+	if (HandoffPhase == 3 && bDistrict)
+	{
+		bHandoffReachedDistrict = true;
+		const bool bParity = PlayerState->Faction == EAPBFaction::Enforcer && PlayerState->Cash == HandoffCash &&
+			PlayerState->G1C == HandoffG1C && FMath::IsNearlyEqual(PlayerState->ThreatPoints, HandoffThreat, 0.01f) &&
+			PlayerState->InventoryItemCount == HandoffInventorySlots && !PlayerState->MissionTitle.IsEmpty() &&
+			PlayerState->DistrictSessionId == HandoffSession && PlayerState->ProgressionState == HandoffProgression;
+		if (!bHandoffDistrictLogged && bParity)
+		{
+			bHandoffDistrictLogged = true;
+			AppendLog(FString::Printf(TEXT("HANDOFF_DISTRICT_PARITY ok=1 cash=%lld g1c=%lld threat=%.1f faction=%d inv=%d mission=%s session=%s progress=%s"),
+				PlayerState->Cash, PlayerState->G1C, PlayerState->ThreatPoints, static_cast<int32>(PlayerState->Faction),
+				PlayerState->InventoryItemCount, *PlayerState->MissionTitle, *PlayerState->DistrictSessionId, *PlayerState->ProgressionState));
+		}
+		return;
+	}
+	if (HandoffPhase == 3 && !bDistrict && bHandoffReachedDistrict)
+	{
+		HandoffPhase = 4;
+		bHandoffLoginSent = false;
+		bHandoffStateRequested = false;
+		HandoffStateRequestAtMs = 0;
+		AppendLog(TEXT("HANDOFF_RETURN_TRAVELLED"));
+	}
+	if (HandoffPhase == 0 || HandoffPhase == 4)
+	{
+		if (!PlayerState->bWorldAuthOk)
+		{
+			if (!bHandoffLoginSent)
+			{
+				PlayerState->Server_LoginRequest(TEXT("handoff_") + WSClientId, TEXT("handoff_pass"));
+				bHandoffLoginSent = true;
+				AppendLog(FString::Printf(TEXT("HANDOFF_LOGIN phase=%d"), HandoffPhase));
+			}
+			return;
+		}
+		if (HandoffPhase == 0)
+		{
+			HandoffPhase = 1;
+			bHandoffPrepareSent = false;
+		}
+	}
+	if (HandoffPhase == 1)
+	{
+		if (!bHandoffPrepareSent)
+		{
+			PlayerState->Server_PrepareHandoffProbe();
+			bHandoffPrepareSent = true;
+			AppendLog(TEXT("HANDOFF_PREPARE_REQUEST"));
+			return;
+		}
+		if (PlayerState->HandoffProbeJson.IsEmpty()) return;
+		if (!ParseHandoffProbeSnapshot(PlayerState->HandoffProbeJson, HandoffCash, HandoffG1C, HandoffThreat,
+			HandoffInventorySlots, HandoffInventoryQty, HandoffFaction, HandoffMission, HandoffSession, HandoffProgression))
+		{
+			AppendLog(TEXT("HANDOFF_FAIL reason=pre_parse"));
+			return;
+		}
+		AppendLog(FString::Printf(TEXT("HANDOFF_PRE cash=%lld g1c=%lld threat=%.1f faction=%s inv_slots=%d inv_qty=%d mission=%s session=%s progress=%s"),
+			HandoffCash, HandoffG1C, HandoffThreat, *HandoffFaction, HandoffInventorySlots, HandoffInventoryQty, *HandoffMission, *HandoffSession, *HandoffProgression));
+		PlayerState->Server_IssueTicket(TEXT("Operative"), TravelDistrictId);
+		bHandoffTicketSent = true;
+		HandoffPhase = 2;
+		return;
+	}
+	if (HandoffPhase == 2)
+	{
+		const FString ReservationJson = PlayerState->IssuedTicketJson;
+		if (ReservationJson.IsEmpty()) return;
+		TSharedPtr<FJsonObject> Reservation;
+		const TSharedRef<TJsonReader<>> Reader = TJsonReaderFactory<>::Create(ReservationJson);
+		FString Ticket, Host, ReservationId, HandoffTravelSession, Error;
+		double PortNumber = 0;
+		if (!FJsonSerializer::Deserialize(Reader, Reservation) || !Reservation.IsValid() ||
+			Reservation->TryGetStringField(TEXT("error"), Error) || !Reservation->TryGetStringField(TEXT("ticket"), Ticket) ||
+			!Reservation->TryGetStringField(TEXT("host"), Host) || !Reservation->TryGetStringField(TEXT("reservation_id"), ReservationId) ||
+			!Reservation->TryGetStringField(TEXT("session_id"), HandoffTravelSession) ||
+			!Reservation->TryGetNumberField(TEXT("port"), PortNumber))
+		{
+			AppendLog(FString::Printf(TEXT("HANDOFF_FAIL reason=ticket_%s"), *Error));
+			return;
+		}
+		HandoffSession = HandoffTravelSession;
+		HandoffPhase = 3;
+		AppendLog(FString::Printf(TEXT("HANDOFF_TRAVEL_DISPATCH host=%s port=%d"), *Host, static_cast<int32>(PortNumber)));
+		APB->StartDistrictTravel(PlayerController, TravelDistrictId, Host, static_cast<int32>(PortNumber), Ticket, ReservationId);
+		return;
+	}
+	if (HandoffPhase == 4)
+	{
+		if (!bHandoffStateRequested)
+		{
+			PlayerState->Server_GetHandoffProbeState();
+			bHandoffStateRequested = true;
+			HandoffStateRequestAtMs = NowMs;
+			return;
+		}
+		if (NowMs - HandoffStateRequestAtMs < 1000 || PlayerState->HandoffProbeJson.IsEmpty()) return;
+		int64 Cash = 0, G1C = 0; float Threat = 0.f; int32 InventorySlots = 0, InventoryQty = 0;
+		FString Faction, Mission, Session, Progression;
+		const bool bParsed = ParseHandoffProbeSnapshot(PlayerState->HandoffProbeJson, Cash, G1C, Threat, InventorySlots, InventoryQty, Faction, Mission, Session, Progression);
+		// Mission/session are district-runtime state, not persisted in the hub character schema
+		// (ARCHITECTURE.md L115-120), so cleared==correct after return-to-hub + fresh re-login.
+		const bool bParity = bParsed && Cash == HandoffCash + 77 && G1C == HandoffG1C && FMath::IsNearlyEqual(Threat, HandoffThreat + 5.f, 0.01f) &&
+			InventorySlots == HandoffInventorySlots && InventoryQty == HandoffInventoryQty && Faction == HandoffFaction && Mission.IsEmpty() &&
+			Session.IsEmpty() && Progression == HandoffProgression;
+		AppendLog(FString::Printf(TEXT("HANDOFF_RETURN_PARITY ok=%d cash=%lld g1c=%lld threat=%.1f faction=%s inv_slots=%d inv_qty=%d mission=%s session=%s progress=%s"),
+			bParity ? 1 : 0, Cash, G1C, Threat, *Faction, InventorySlots, InventoryQty, *Mission, *Session, *Progression));
+		AppendLog(bParity ? TEXT("WORLD_HANDOFF_CLIENT_OK") : TEXT("HANDOFF_FAIL reason=return_parity"));
+		bTerminal = true;
+		if (GI) GI->GetTimerManager().ClearTimer(WorldServerTimer);
+		FPlatformMisc::RequestExit(false);
 	}
 }

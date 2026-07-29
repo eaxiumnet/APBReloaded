@@ -7,11 +7,16 @@ USTRUCT(BlueprintType)
 struct FAPBPlacementEntry
 {
 	GENERATED_BODY()
+	UPROPERTY() FString SourceId;
 	UPROPERTY() FString MeshId;
 	UPROPERTY() FString UePath;
+	UPROPERTY() FString Actor;
+	UPROPERTY() FString Edge;
 	UPROPERTY() FVector Location = FVector::ZeroVector;
 	UPROPERTY() FRotator Rotation = FRotator::ZeroRotator;
 	UPROPERTY() FVector Scale = FVector::OneVector;
+	UPROPERTY() bool bRotationPresent = false;
+	UPROPERTY() bool bScalePresent = false;
 	UPROPERTY() FString Package;
 };
 
@@ -21,6 +26,8 @@ struct FAPBDistrictManifest
 	GENERATED_BODY()
 	UPROPERTY() FString DistrictId;
 	UPROPERTY() FString SourcePackage;
+	UPROPERTY() FString Provenance;
+	UPROPERTY() FString SelectedManifestPath;
 	UPROPERTY() FVector PlayerStart = FVector(-200.f, -1200.f, 120.f);
 	UPROPERTY() FVector VehicleStart = FVector(400.f, -1200.f, 50.f);
 	UPROPERTY() TArray<FAPBPlacementEntry> Placements;
@@ -30,6 +37,33 @@ struct FAPBDistrictManifest
 	UPROPERTY() int32 ManifestTotal = 0;
 	UPROPERTY() float HitRate = 0.f;
 	UPROPERTY() bool bLoadedBoundManifest = false;
+	UPROPERTY() int32 RejectedRowCount = 0;
+	UPROPERTY() int32 MissingSourceIdCount = 0;
+	UPROPERTY() int32 NonRenderableRowCount = 0;
+};
+
+USTRUCT(BlueprintType)
+struct FAPBLightEntry
+{
+	GENERATED_BODY()
+	UPROPERTY() FString Actor;
+	UPROPERTY() bool bSpot = false;
+	UPROPERTY() FVector Location = FVector::ZeroVector;
+	UPROPERTY() FRotator Rotation = FRotator::ZeroRotator;
+	UPROPERTY() float Radius = 1024.f;
+	UPROPERTY() float Brightness = 1.f;
+	UPROPERTY() float Falloff = 2.f;
+	UPROPERTY() FLinearColor Color = FLinearColor::White;
+	UPROPERTY() float OuterCone = 44.f;
+	UPROPERTY() float InnerCone = 0.f;
+};
+
+USTRUCT(BlueprintType)
+struct FAPBLightManifest
+{
+	GENERATED_BODY()
+	UPROPERTY() FString DistrictId;
+	UPROPERTY() TArray<FAPBLightEntry> Lights;
 };
 
 /** Spawns freeroam geometry only from Content/Data/district_placements/*.json (no BasicShapes cubes). */
@@ -61,6 +95,12 @@ public:
 	static int32 SpawnFromManifestNearEx(UWorld* World, const FAPBDistrictManifest& Manifest, FVector Center, float Radius,
 		TArray<AActor*>& OutSpawned, TSet<FString>& InOutSpawnedMeshKeys,
 		int32* OutLoadFailed, int32* OutInRadius, int32* OutSkippedAlready);
+
+	UFUNCTION(BlueprintCallable, Category="APB|District")
+	static bool LoadLightsForDistrict(const FString& ProjectContentDir, const FString& DistrictId, FAPBLightManifest& OutLights);
+
+	UFUNCTION(BlueprintCallable, Category="APB|District")
+	static int32 SpawnLightsFromManifest(UWorld* World, const FAPBLightManifest& Lights, FVector Center, float Radius, TArray<AActor*>& OutSpawned);
 
 	UFUNCTION(BlueprintCallable, Category="APB|District")
 	static bool ManifestUsesEngineCubes(const FAPBDistrictManifest& Manifest);

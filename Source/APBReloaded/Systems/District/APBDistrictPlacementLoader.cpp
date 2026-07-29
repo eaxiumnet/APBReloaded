@@ -1,4 +1,5 @@
 #include "APBDistrictPlacementLoader.h"
+#include "Domain/APBPlacementBinding.h"
 #include "Engine/World.h"
 #include "Engine/StaticMeshActor.h"
 #include "Engine/StaticMesh.h"
@@ -12,62 +13,64 @@
 #include "Serialization/JsonSerializer.h"
 #include "GameFramework/PlayerStart.h"
 #include "Containers/Set.h"
+#include "Engine/PointLight.h"
+#include "Engine/SpotLight.h"
+#include "Components/PointLightComponent.h"
+#include "Components/SpotLightComponent.h"
 
 bool UAPBDistrictPlacementLoader::LoadManifestFromFile(const FString& AbsoluteJsonPath, FAPBDistrictManifest& OutManifest)
 {
 	FString Text;
 	if (!FFileHelper::LoadFileToString(Text, *AbsoluteJsonPath)) return false;
-	TSharedPtr<FJsonObject> Root;
-	const TSharedRef<TJsonReader<>> Reader = TJsonReaderFactory<>::Create(Text);
-	if (!FJsonSerializer::Deserialize(Reader, Root) || !Root.IsValid()) return false;
+	FTCHARToUTF8 Utf8Text(*Text);
+	apb::DistrictManifestPure Parsed;
+	if (!apb::ParsePlacementManifestJson(
+		std::string(Utf8Text.Get(), static_cast<size_t>(Utf8Text.Length())), Parsed))
+	{
+		UE_LOG(LogTemp, Error, TEXT("PLACEMENT_MANIFEST_REJECT path=%s reason=%s"),
+			*AbsoluteJsonPath, UTF8_TO_TCHAR(Parsed.parse_error.c_str()));
+		return false;
+	}
 
 	OutManifest = FAPBDistrictManifest();
-	OutManifest.DistrictId = Root->GetStringField(TEXT("district_id"));
-	OutManifest.SourcePackage = Root->GetStringField(TEXT("source_package"));
-	const TArray<TSharedPtr<FJsonValue>>* Starts;
-	if (Root->TryGetArrayField(TEXT("player_start"), Starts) && Starts->Num() >= 3)
+	OutManifest.DistrictId = UTF8_TO_TCHAR(Parsed.district_id.c_str());
+	OutManifest.SourcePackage = UTF8_TO_TCHAR(Parsed.source_package.c_str());
+	OutManifest.Provenance = UTF8_TO_TCHAR(Parsed.provenance.c_str());
+	OutManifest.PlayerStart = FVector(Parsed.player_start.x, Parsed.player_start.y, Parsed.player_start.z);
+	OutManifest.VehicleStart = FVector(Parsed.vehicle_start.x, Parsed.vehicle_start.y, Parsed.vehicle_start.z);
+	OutManifest.StreamChunkCount = Parsed.stream_chunk_count;
+	OutManifest.BoundCount = Parsed.bound_count;
+	OutManifest.ManifestTotal = Parsed.manifest_total;
+	OutManifest.HitRate = static_cast<float>(Parsed.hit_rate);
+	OutManifest.RejectedRowCount = static_cast<int32>(Parsed.rejected_rows.size());
+	for (const apb::PlacementRejectedRow& Rejection : Parsed.rejected_rows)
 	{
-		OutManifest.PlayerStart = FVector(
-			(*Starts)[0]->AsNumber(), (*Starts)[1]->AsNumber(), (*Starts)[2]->AsNumber());
+		if (Rejection.reason == "MissingSourceId") ++OutManifest.MissingSourceIdCount;
+		else ++OutManifest.NonRenderableRowCount;
 	}
-	if (Root->TryGetArrayField(TEXT("vehicle_start"), Starts) && Starts->Num() >= 3)
+	for (const apb::PlacementEntryPure& ParsedEntry : Parsed.placements)
 	{
-		OutManifest.VehicleStart = FVector(
-			(*Starts)[0]->AsNumber(), (*Starts)[1]->AsNumber(), (*Starts)[2]->AsNumber());
-	}
-	const TArray<TSharedPtr<FJsonValue>>* Chunks;
-	if (Root->TryGetArrayField(TEXT("stream_chunks"), Chunks))
-	{
-		OutManifest.StreamChunkCount = Chunks->Num();
-	}
-	const TArray<TSharedPtr<FJsonValue>>* Placements;
-	if (!Root->TryGetArrayField(TEXT("placements"), Placements)) return false;
-	for (const TSharedPtr<FJsonValue>& V : *Placements)
-	{
-		const TSharedPtr<FJsonObject> O = V->AsObject();
-		if (!O.IsValid()) continue;
 		FAPBPlacementEntry E;
-		E.MeshId = O->GetStringField(TEXT("mesh_id"));
-		E.UePath = O->GetStringField(TEXT("ue_path"));
-		E.Package = O->GetStringField(TEXT("package"));
-		const TArray<TSharedPtr<FJsonValue>>* Loc;
-		if (O->TryGetArrayField(TEXT("location"), Loc) && Loc->Num() >= 3)
-		{
-			E.Location = FVector((*Loc)[0]->AsNumber(), (*Loc)[1]->AsNumber(), (*Loc)[2]->AsNumber());
-		}
-		const TArray<TSharedPtr<FJsonValue>>* Rot;
-		if (O->TryGetArrayField(TEXT("rotation"), Rot) && Rot->Num() >= 3)
-		{
-			E.Rotation = FRotator((*Rot)[0]->AsNumber(), (*Rot)[1]->AsNumber(), (*Rot)[2]->AsNumber());
-		}
-		const TArray<TSharedPtr<FJsonValue>>* Scl;
-		if (O->TryGetArrayField(TEXT("scale"), Scl) && Scl->Num() >= 3)
-		{
-			E.Scale = FVector((*Scl)[0]->AsNumber(), (*Scl)[1]->AsNumber(), (*Scl)[2]->AsNumber());
-		}
+		E.SourceId = UTF8_TO_TCHAR(ParsedEntry.source_id.c_str());
+		E.MeshId = UTF8_TO_TCHAR(ParsedEntry.mesh_id.c_str());
+		E.UePath = UTF8_TO_TCHAR(ParsedEntry.ue_path.c_str());
+		E.Package = UTF8_TO_TCHAR(ParsedEntry.package.c_str());
+		E.Actor = UTF8_TO_TCHAR(ParsedEntry.actor.c_str());
+		E.Edge = UTF8_TO_TCHAR(ParsedEntry.edge.c_str());
+		E.Location = FVector(ParsedEntry.location.x, ParsedEntry.location.y, ParsedEntry.location.z);
+		E.bRotationPresent = ParsedEntry.rotation_present;
+		if (E.bRotationPresent)
+			E.Rotation = FRotator(ParsedEntry.rotation.x, ParsedEntry.rotation.y, ParsedEntry.rotation.z);
+		E.bScalePresent = ParsedEntry.scale_present;
+		if (E.bScalePresent)
+			E.Scale = FVector(ParsedEntry.scale.x, ParsedEntry.scale.y, ParsedEntry.scale.z);
 		OutManifest.Placements.Add(E);
 	}
-	return OutManifest.Placements.Num() > 0;
+	UE_LOG(LogTemp, Warning,
+		TEXT("PLACEMENT_MANIFEST_ROWS path=%s renderable=%d rejected=%d missing_source_id=%d non_renderable=%d"),
+		*AbsoluteJsonPath, OutManifest.Placements.Num(), OutManifest.RejectedRowCount,
+		OutManifest.MissingSourceIdCount, OutManifest.NonRenderableRowCount);
+	return true;
 }
 
 bool UAPBDistrictPlacementLoader::LoadManifestForDistrict(const FString& ProjectContentDir, const FString& DistrictId, FAPBDistrictManifest& OutManifest)
@@ -80,52 +83,29 @@ bool UAPBDistrictPlacementLoader::LoadManifestForDistrict(const FString& Project
 	else if (DistrictId.Contains(TEXT("Crate"))) Base = TEXT("Crate_Block");
 	else if (DistrictId.Contains(TEXT("Social"))) Base = TEXT("Social_Block");
 
-	// Prefer mesh-bound spawn list (spawnable only) then full manifest
-	const FString BoundName = Base + TEXT("_bound.json");
-	const FString FullName = Base + TEXT(".json");
-	const FString BoundPath = FPaths::Combine(ProjectContentDir, TEXT("Data/district_placements"), BoundName);
-	const FString FullPath = FPaths::Combine(ProjectContentDir, TEXT("Data/district_placements"), FullName);
-
-	bool bBound = LoadManifestFromFile(BoundPath, OutManifest);
-	if (bBound)
+	const std::vector<apb::ManifestCandidate> Candidates =
+		apb::PlacementManifestCandidates(TCHAR_TO_UTF8(*DistrictId));
+	for (const apb::ManifestCandidate& Candidate : Candidates)
 	{
-		OutManifest.bLoadedBoundManifest = true;
-		// Total/hit_rate from bound file fields if present
-		FString Text;
-		if (FFileHelper::LoadFileToString(Text, *BoundPath))
+		const FString Name = UTF8_TO_TCHAR(Candidate.file_name.c_str());
+		const FString Path = FPaths::Combine(ProjectContentDir, TEXT("Data/district_placements"), Name);
+		if (!LoadManifestFromFile(Path, OutManifest)) continue;
+		OutManifest.SelectedManifestPath = Path;
+		OutManifest.bLoadedBoundManifest = Candidate.synthetic;
+		if (Candidate.synthetic)
 		{
-			TSharedPtr<FJsonObject> Root;
-			const TSharedRef<TJsonReader<>> Reader = TJsonReaderFactory<>::Create(Text);
-			if (FJsonSerializer::Deserialize(Reader, Root) && Root.IsValid())
-			{
-				OutManifest.BoundCount = Root->HasField(TEXT("bound_count"))
-					? static_cast<int32>(Root->GetNumberField(TEXT("bound_count")))
-					: OutManifest.Placements.Num();
-				OutManifest.ManifestTotal = Root->HasField(TEXT("manifest_total"))
-					? static_cast<int32>(Root->GetNumberField(TEXT("manifest_total")))
-					: OutManifest.Placements.Num();
-				OutManifest.HitRate = Root->HasField(TEXT("hit_rate"))
-					? static_cast<float>(Root->GetNumberField(TEXT("hit_rate")))
-					: 1.f;
-			}
+			UE_LOG(LogTemp, Warning,
+				TEXT("PLACEMENT_MANIFEST_SYNTHETIC district=%s path=%s reason=%s"),
+				*DistrictId, *Path, UTF8_TO_TCHAR(Candidate.reason_code.c_str()));
 		}
-		if (OutManifest.BoundCount <= 0) OutManifest.BoundCount = OutManifest.Placements.Num();
+		UE_LOG(LogTemp, Warning,
+			TEXT("PLACEMENT_MANIFEST_CHOSEN district=%s path=%s provenance=%s renderable=%d rejected=%d"),
+			*DistrictId, *Path, *OutManifest.Provenance, OutManifest.Placements.Num(),
+			OutManifest.RejectedRowCount);
 		return true;
 	}
-
-	if (!LoadManifestFromFile(FullPath, OutManifest))
-	{
-		UE_LOG(LogTemp, Warning, TEXT("APB: missing placement manifest %s for district %s"), *FullName, *DistrictId);
-		return false;
-	}
-	OutManifest.bLoadedBoundManifest = false;
-	OutManifest.BoundCount = OutManifest.Placements.Num();
-	OutManifest.ManifestTotal = OutManifest.Placements.Num();
-	OutManifest.HitRate = 1.f;
-	UE_LOG(LogTemp, Warning,
-		TEXT("APB STEAM_DERIVED placement_load district=%s path=%s n=%d (Content/Data/district_placements)"),
-		*DistrictId, *FullPath, OutManifest.Placements.Num());
-	return true;
+	UE_LOG(LogTemp, Warning, TEXT("PLACEMENT_MANIFEST_MISSING district=%s base=%s"), *DistrictId, *Base);
+	return false;
 }
 
 bool UAPBDistrictPlacementLoader::ManifestUsesEngineCubes(const FAPBDistrictManifest& Manifest)
@@ -138,29 +118,131 @@ bool UAPBDistrictPlacementLoader::ManifestUsesEngineCubes(const FAPBDistrictMani
 	return false;
 }
 
-static UStaticMesh* LoadPlacementMesh(const FAPBPlacementEntry& E)
+bool UAPBDistrictPlacementLoader::LoadLightsForDistrict(const FString& ProjectContentDir, const FString& DistrictId, FAPBLightManifest& OutLights)
 {
-	if (E.UePath.Contains(TEXT("BasicShapes/Cube"))) return nullptr;
-	UStaticMesh* Mesh = LoadObject<UStaticMesh>(nullptr, *E.UePath);
-	if (Mesh) return Mesh;
-	// Infer district folder + LOD0 stem variants (umodel export naming)
-	TArray<FString> Folders = { TEXT("Financial"), TEXT("Waterfront"), TEXT("Asylum"), TEXT("Beacon"), TEXT("Crate"), TEXT("Social") };
-	TArray<FString> Stems;
-	Stems.Add(E.MeshId);
-	if (!E.MeshId.EndsWith(TEXT("_LOD_0"))) Stems.Add(E.MeshId + TEXT("_LOD_0"));
-	if (!E.MeshId.EndsWith(TEXT("_LOD0"))) Stems.Add(E.MeshId + TEXT("_LOD0"));
-	Stems.Add(E.MeshId.Replace(TEXT("_LOD_0"), TEXT("")));
-	Stems.Add(E.MeshId.Replace(TEXT("_LOD0"), TEXT("")));
-	for (const FString& Folder : Folders)
+	FString Base = TEXT("Financial_Block09");
+	if (DistrictId.Contains(TEXT("Waterfront"))) Base = TEXT("Waterfront_Block05");
+	else if (DistrictId.Contains(TEXT("Asylum")) || DistrictId.Contains(TEXT("PGAsylum"))) Base = TEXT("Asylum_Block");
+	else if (DistrictId.Contains(TEXT("Beacon"))) Base = TEXT("Beacon_Block");
+	else if (DistrictId.Contains(TEXT("Crate"))) Base = TEXT("Crate_Block");
+	else if (DistrictId.Contains(TEXT("Social"))) Base = TEXT("Social_Block");
+
+	const FString Path = FPaths::Combine(ProjectContentDir, TEXT("Data/district_placements"), Base + TEXT("_lights.json"));
+	FString Text;
+	if (!FFileHelper::LoadFileToString(Text, *Path)) return false;
+	TSharedPtr<FJsonObject> Root;
+	const TSharedRef<TJsonReader<>> Reader = TJsonReaderFactory<>::Create(Text);
+	if (!FJsonSerializer::Deserialize(Reader, Root) || !Root.IsValid()) return false;
+
+	OutLights = FAPBLightManifest();
+	OutLights.DistrictId = Root->GetStringField(TEXT("district_id"));
+	const TArray<TSharedPtr<FJsonValue>>* Arr;
+	if (!Root->TryGetArrayField(TEXT("lights"), Arr)) return false;
+	for (const TSharedPtr<FJsonValue>& V : *Arr)
 	{
-		for (const FString& Stem : Stems)
+		const TSharedPtr<FJsonObject> O = V->AsObject();
+		if (!O.IsValid()) continue;
+		FAPBLightEntry L;
+		L.Actor = O->GetStringField(TEXT("actor"));
+		L.bSpot = O->GetStringField(TEXT("light_type")) == TEXT("spot");
+		const TArray<TSharedPtr<FJsonValue>>* Loc;
+		if (O->TryGetArrayField(TEXT("location"), Loc) && Loc->Num() >= 3)
+			L.Location = FVector((*Loc)[0]->AsNumber(), (*Loc)[1]->AsNumber(), (*Loc)[2]->AsNumber());
+		const TArray<TSharedPtr<FJsonValue>>* Rot;
+		if (O->TryGetArrayField(TEXT("rotation"), Rot) && Rot->Num() >= 3)
+			L.Rotation = FRotator((*Rot)[0]->AsNumber(), (*Rot)[1]->AsNumber(), (*Rot)[2]->AsNumber());
+		const TArray<TSharedPtr<FJsonValue>>* Col;
+		if (O->TryGetArrayField(TEXT("color"), Col) && Col->Num() >= 3)
+			L.Color = FLinearColor((*Col)[0]->AsNumber(), (*Col)[1]->AsNumber(), (*Col)[2]->AsNumber(), 1.f);
+		L.Radius = O->HasField(TEXT("radius")) ? static_cast<float>(O->GetNumberField(TEXT("radius"))) : 1024.f;
+		L.Brightness = O->HasField(TEXT("brightness")) ? static_cast<float>(O->GetNumberField(TEXT("brightness"))) : 1.f;
+		L.Falloff = O->HasField(TEXT("falloff")) ? static_cast<float>(O->GetNumberField(TEXT("falloff"))) : 2.f;
+		L.OuterCone = O->HasField(TEXT("outer_cone")) ? static_cast<float>(O->GetNumberField(TEXT("outer_cone"))) : 44.f;
+		L.InnerCone = O->HasField(TEXT("inner_cone")) ? static_cast<float>(O->GetNumberField(TEXT("inner_cone"))) : 0.f;
+		OutLights.Lights.Add(L);
+	}
+	return OutLights.Lights.Num() > 0;
+}
+
+int32 UAPBDistrictPlacementLoader::SpawnLightsFromManifest(UWorld* World, const FAPBLightManifest& Lights, FVector Center, float Radius, TArray<AActor*>& OutSpawned)
+{
+	if (!World) return 0;
+	const float R2 = Radius * Radius;
+	int32 Count = 0;
+	for (const FAPBLightEntry& L : Lights.Lights)
+	{
+		if (FVector::DistSquared(L.Location, Center) > R2) continue;
+		FActorSpawnParameters Sp;
+		Sp.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
+		// APB 0..1 brightness -> UE candela, with a floor so default-inherited lights still read.
+		const float Intensity = FMath::Max(L.Brightness, 0.1f) * 5000.f;
+		if (L.bSpot)
 		{
-			if (Stem.IsEmpty()) continue;
-			const FString Alt = FString::Printf(TEXT("/Game/Imported/Districts/%s/%s.%s"), *Folder, *Stem, *Stem);
-			Mesh = LoadObject<UStaticMesh>(nullptr, *Alt);
-			if (Mesh) return Mesh;
+			ASpotLight* A = World->SpawnActor<ASpotLight>(L.Location, L.Rotation, Sp);
+			if (!A) continue;
+			A->SetMobility(EComponentMobility::Movable);
+			if (USpotLightComponent* C = Cast<USpotLightComponent>(A->GetLightComponent()))
+			{
+				C->SetAttenuationRadius(L.Radius);
+				C->SetIntensity(Intensity);
+				C->SetLightColor(L.Color);
+				C->SetOuterConeAngle(FMath::Clamp(L.OuterCone, 1.f, 80.f));
+				C->SetInnerConeAngle(FMath::Clamp(L.InnerCone, 0.f, L.OuterCone));
+				C->SetCastShadows(false);
+			}
+			OutSpawned.Add(A);
+			++Count;
+		}
+		else
+		{
+			APointLight* A = World->SpawnActor<APointLight>(L.Location, L.Rotation, Sp);
+			if (!A) continue;
+			A->SetMobility(EComponentMobility::Movable);
+			if (UPointLightComponent* C = Cast<UPointLightComponent>(A->GetLightComponent()))
+			{
+				C->SetAttenuationRadius(L.Radius);
+				C->SetIntensity(Intensity);
+				C->SetLightColor(L.Color);
+				C->SetCastShadows(false);
+			}
+			OutSpawned.Add(A);
+			++Count;
 		}
 	}
+	return Count;
+}
+
+static UStaticMesh* LoadPlacementMesh(const FAPBPlacementEntry& E, const FString& ManifestDistrictId)
+{
+	const apb::PlacementBinding Binding = apb::BuildPlacementBinding(
+		TCHAR_TO_UTF8(*E.MeshId),
+		TCHAR_TO_UTF8(*E.UePath),
+		TCHAR_TO_UTF8(*E.Package),
+		TCHAR_TO_UTF8(*ManifestDistrictId));
+	const FString ExpectedFolder = UTF8_TO_TCHAR(Binding.expected_folder.c_str());
+	if (!Binding.valid)
+	{
+		const FString Reason = UTF8_TO_TCHAR(Binding.reason_code.c_str());
+		UE_LOG(LogTemp, Error,
+			TEXT("PLACEMENT_MESH_BINDING_FAIL mesh_id=%s expected_folder=%s reason=%s package=%s manifest_district=%s"),
+			*E.MeshId, *ExpectedFolder, *Reason, *E.Package, *ManifestDistrictId);
+		return nullptr;
+	}
+	if (E.UePath.Contains(TEXT("BasicShapes/Cube")))
+	{
+		UE_LOG(LogTemp, Error,
+			TEXT("PLACEMENT_MESH_BINDING_FAIL mesh_id=%s expected_folder=%s reason=forbidden_basic_shape"),
+			*E.MeshId, *ExpectedFolder);
+		return nullptr;
+	}
+	for (const std::string& Candidate : Binding.candidate_paths)
+	{
+		const FString Path = UTF8_TO_TCHAR(Candidate.c_str());
+		if (UStaticMesh* Mesh = LoadObject<UStaticMesh>(nullptr, *Path)) return Mesh;
+	}
+	UE_LOG(LogTemp, Error,
+		TEXT("PLACEMENT_MESH_BINDING_FAIL mesh_id=%s expected_folder=%s reason=mesh_asset_not_found"),
+		*E.MeshId, *ExpectedFolder);
 	return nullptr;
 }
 
@@ -188,11 +270,19 @@ void UAPBDistrictPlacementLoader::EnsureVisibleMeshMaterials(UStaticMeshComponen
 	}
 	if (!Fallback) return;
 
-	// Always force a known-good material on every slot (do not trust empty/black import slots).
+	// Preserve real baked APB materials (MICs assigned offline by assign_district_materials.py);
+	// only stamp the readable fallback onto slots that shipped empty/WorldGrid from the umodel import.
 	const int32 Num = FMath::Max(1, Comp->GetNumMaterials());
 	for (int32 i = 0; i < Num; ++i)
 	{
-		Comp->SetMaterial(i, Fallback);
+		const UMaterialInterface* Existing = Comp->GetMaterial(i);
+		const bool bMissing = (Existing == nullptr)
+			|| (Existing == UMaterial::GetDefaultMaterial(MD_Surface))
+			|| Existing->GetName().Contains(TEXT("WorldGrid"));
+		if (bMissing)
+		{
+			Comp->SetMaterial(i, Fallback);
+		}
 	}
 	Comp->SetVisibility(true);
 	Comp->SetHiddenInGame(false);
@@ -235,16 +325,25 @@ int32 UAPBDistrictPlacementLoader::SpawnFromManifestNearEx(UWorld* World, const 
 	int32 Skipped = 0;
 	for (const FAPBPlacementEntry& E : Manifest.Placements)
 	{
-		const FString Key = E.MeshId + TEXT("@") + E.Location.ToString();
 		const float Dist2 = FVector::DistSquared(E.Location, Center);
 		if (Dist2 > R2) continue;
 		++InRadius;
+		const apb::PlacementIdentity Identity = apb::PlacementDedupKey(TCHAR_TO_UTF8(*E.SourceId));
+		if (!Identity.valid)
+		{
+			++LoadFailed;
+			UE_LOG(LogTemp, Error,
+				TEXT("PLACEMENT_IDENTITY_REJECT mesh_id=%s package=%s reason=%s"),
+				*E.MeshId, *E.Package, UTF8_TO_TCHAR(Identity.reason_code.c_str()));
+			continue;
+		}
+		const FString Key = UTF8_TO_TCHAR(Identity.key.c_str());
 		if (InOutSpawnedMeshKeys.Contains(Key))
 		{
 			++Skipped;
 			continue;
 		}
-		UStaticMesh* Mesh = LoadPlacementMesh(E);
+		UStaticMesh* Mesh = LoadPlacementMesh(E, Manifest.DistrictId);
 		if (!Mesh)
 		{
 			++LoadFailed;
@@ -254,7 +353,6 @@ int32 UAPBDistrictPlacementLoader::SpawnFromManifestNearEx(UWorld* World, const 
 		Sp.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
 		AStaticMeshActor* A = World->SpawnActor<AStaticMeshActor>(E.Location, E.Rotation, Sp);
 		if (!A) continue;
-		// Movable: Static mobility + no lightmaps + Lumen often renders umodel meshes pure black
 		A->SetMobility(EComponentMobility::Movable);
 		UStaticMeshComponent* SMC = A->GetStaticMeshComponent();
 		SMC->SetMobility(EComponentMobility::Movable);
@@ -266,7 +364,10 @@ int32 UAPBDistrictPlacementLoader::SpawnFromManifestNearEx(UWorld* World, const 
 		SMC->SetCollisionResponseToChannel(ECC_Pawn, ECR_Block);
 		SMC->SetCollisionResponseToChannel(ECC_Camera, ECR_Ignore);
 		EnsureVisibleMeshMaterials(SMC);
-		SMC->SetCastShadow(false); // perf + avoid self-shadow black piles
+		SMC->SetCastShadow(true);
+		// Static must be set AFTER all transform calls above, else UE warns about moving
+		// a Static component. Static gives the city shell baked-quality shadows + GI.
+		A->SetMobility(EComponentMobility::Static);
 		OutSpawned.Add(A);
 		InOutSpawnedMeshKeys.Add(Key);
 		++Count;

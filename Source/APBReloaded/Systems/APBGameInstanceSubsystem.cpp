@@ -2,12 +2,17 @@
 #include "APBPlayerState.h"
 #include "APBWorldService.h"
 #include "APBPrivateServerOpcodes.h"
+#include "APBTicket.h"
+#include "Server/APBSecretProvider.h"
+#include "Server/APBWorldGameMode.h"
+#include "Misc/ConfigCacheIni.h"
 #include "Misc/Paths.h"
 #include "Misc/FileHelper.h"
 #include "Misc/Parse.h"
 #include "HAL/PlatformFilemanager.h"
 #include "Engine/World.h"
 #include "Engine/Engine.h"
+#include "UObject/UObjectGlobals.h"
 #include "GameFramework/PlayerController.h"
 #include "Kismet/GameplayStatics.h"
 #include "HAL/IConsoleManager.h"
@@ -16,6 +21,68 @@
 
 static apb::WorldService* Svc(void* P) { return reinterpret_cast<apb::WorldService*>(P); }
 static const apb::WorldService* SvcC(const void* P) { return reinterpret_cast<const apb::WorldService*>(P); }
+
+// Authority helper (plan 1b): social mutations must run against the single shared
+// SocialAuthority on AAPBWorldGameMode, never against per-connection PlayerServices.
+// Resolution order:
+//   1. AAPBWorldGameMode present -> world authority, return its Social().
+//   2. NM_Standalone (single-process editor-PIE / standalone world) -> fall back to
+//      the local WorldService so probes and standalone flows continue to work.
+//   3. All other modes (district listen/dedicated server, NM_Client, no World) ->
+//      fail closed: return nullptr and emit a one-shot Warning so the district process
+//      never silently mutates its own throwaway social state.
+static apb::WorldService* SocialSvc(UWorld* World, void* Service)
+{
+	if (World)
+	{
+		if (AAPBWorldGameMode* GM = World->GetAuthGameMode<AAPBWorldGameMode>())
+		{
+			return &GM->Social();
+		}
+		if (World->GetNetMode() == NM_Standalone)
+		{
+			return Svc(Service);
+		}
+		// District server (listen/dedicated) or NM_Client: no social authority here.
+		static bool bWarnedNoAuthority = false;
+		if (!bWarnedNoAuthority)
+		{
+			bWarnedNoAuthority = true;
+			UE_LOG(LogTemp, Warning,
+				TEXT("SOCIAL_AUTHORITY_UNAVAILABLE netmode=%d ctx=district_process_no_world_gm"),
+				static_cast<int32>(World->GetNetMode()));
+		}
+		return nullptr;
+	}
+	// No World at all (subsystem tear-down race, tool context, etc.).
+	static bool bWarnedNoWorld = false;
+	if (!bWarnedNoWorld)
+	{
+		bWarnedNoWorld = true;
+		UE_LOG(LogTemp, Warning,
+			TEXT("SOCIAL_AUTHORITY_UNAVAILABLE netmode=none ctx=no_world"));
+	}
+	return nullptr;
+}
+
+// Resolves the service whose character actually receives a mail payout. Mirrors
+// SocialSvc's resolution order so standalone/PIE keeps using the local service,
+// but on a world server it returns the per-connection service that owns the
+// character rather than SocialAuthority, which never loads one.
+static apb::WorldService* CharacterOwnerSvc(UWorld* World, void* Service, const FString& Character)
+{
+	if (World)
+	{
+		if (AAPBWorldGameMode* GM = World->GetAuthGameMode<AAPBWorldGameMode>())
+		{
+			if (apb::WorldService* Owner = GM->ServiceForCharacter(Character)) return Owner;
+			if (World->GetNetMode() == NM_Standalone) return Svc(Service);
+			return nullptr;
+		}
+		if (World->GetNetMode() == NM_Standalone) return Svc(Service);
+	}
+	return nullptr;
+}
 
 bool UAPBGameInstanceSubsystem::CanMutateDomain() const
 {
@@ -36,6 +103,10 @@ void UAPBGameInstanceSubsystem::Initialize(FSubsystemCollectionBase& Collection)
 	DataDir = FPaths::ProjectContentDir() / TEXT("Data");
 	PersistDir = FPaths::ProjectSavedDir() / TEXT("DomainDB");
 	InitCatalogFromProjectData();
+	DistrictTravelLoadedHandle = FCoreUObjectDelegates::PostLoadMapWithWorld.AddUObject(this,
+		&UAPBGameInstanceSubsystem::HandleDistrictTravelMapLoaded);
+	DistrictTravelFailureHandle = GEngine->OnTravelFailure().AddUObject(this,
+		&UAPBGameInstanceSubsystem::HandleDistrictTravelFailure);
 
 	// Default FPS lock 60 (config t.MaxFPS + GameUserSettings; F8 debug can change)
 	if (IConsoleVariable* CVar = IConsoleManager::Get().FindConsoleVariable(TEXT("t.MaxFPS")))
@@ -60,10 +131,55 @@ void UAPBGameInstanceSubsystem::Initialize(FSubsystemCollectionBase& Collection)
 		bWorldServerMode = true;
 		UE_LOG(LogTemp, Warning, TEXT("APBSubsystem world-server-client mode host=%s"), *WSHost);
 	}
+
+	const FString CommandLine(FCommandLine::Get());
+	const FString MintKey(TEXT("APBMintTicket="));
+	const int32 MintStart = CommandLine.Find(MintKey, ESearchCase::CaseSensitive);
+	if (MintStart != INDEX_NONE)
+	{
+		const int32 ValueStart = MintStart + MintKey.Len();
+		int32 ValueEnd = ValueStart;
+		while (ValueEnd < CommandLine.Len() && !FChar::IsWhitespace(CommandLine[ValueEnd]))
+		{
+			++ValueEnd;
+		}
+		const FString MintRequest = CommandLine.Mid(ValueStart, ValueEnd - ValueStart);
+		TArray<FString> Fields;
+		MintRequest.ParseIntoArray(Fields, TEXT(","), true);
+		if (Fields.Num() != 4)
+		{
+			UE_LOG(LogTemp, Error, TEXT("MINTED_TICKET_ERROR reason=invalid_request fields=%d"), Fields.Num());
+			FPlatformMisc::RequestExit(false);
+			return;
+		}
+		FString SecretError;
+		if (!FAPBSecretProvider::Initialize(SecretError))
+		{
+			UE_LOG(LogTemp, Error, TEXT("MINTED_TICKET_ERROR reason=%s"), *SecretError);
+			FPlatformMisc::RequestExit(false);
+			return;
+		}
+
+		const FString& Secret = FAPBSecretProvider::TicketSecret();
+		apb::TicketService::Global().SetSecret(TCHAR_TO_UTF8(*Secret));
+		apb::TicketClaims Claims;
+		Claims.account = TCHAR_TO_UTF8(*Fields[0]);
+		Claims.character = TCHAR_TO_UTF8(*Fields[1]);
+		Claims.faction = TCHAR_TO_UTF8(*Fields[2]);
+		Claims.district = TCHAR_TO_UTF8(*Fields[3]);
+		const std::string Token = apb::TicketService::Global().IssueTicket(Claims);
+		UE_LOG(LogTemp, Log, TEXT("MINTED_TICKET=%s"), UTF8_TO_TCHAR(Token.c_str()));
+		FPlatformMisc::RequestExit(false);
+	}
 }
 
 void UAPBGameInstanceSubsystem::Deinitialize()
 {
+	FCoreUObjectDelegates::PostLoadMapWithWorld.Remove(DistrictTravelLoadedHandle);
+	if (GEngine)
+	{
+		GEngine->OnTravelFailure().Remove(DistrictTravelFailureHandle);
+	}
 	if (Service)
 	{
 		Svc(Service)->SaveAllNow(); // flush DomainDB on shutdown when persistence is active
@@ -167,6 +283,25 @@ bool UAPBGameInstanceSubsystem::AdvanceMissionStage()
 {
 	if (!Service || !CanMutateDomain()) return false;
 	return Svc(Service)->AdvanceMission(1.0);
+}
+
+bool UAPBGameInstanceSubsystem::TickMission(float NowSec)
+{
+	if (!Service || !CanMutateDomain()) return false;
+	return Svc(Service)->TickMission(static_cast<double>(NowSec));
+}
+
+bool UAPBGameInstanceSubsystem::AdvanceOpposition(float Amount)
+{
+	if (!Service || !CanMutateDomain()) return false;
+	return Svc(Service)->AdvanceOpposition(static_cast<double>(Amount));
+}
+
+bool UAPBGameInstanceSubsystem::IsMissionActive() const
+{
+	if (!Service) return false;
+	const auto& M = SvcC(Service)->mission;
+	return M.has_value() && M->status == apb::MissionStatus::Active;
 }
 
 float UAPBGameInstanceSubsystem::GetThreatPoints() const
@@ -524,6 +659,24 @@ FAPBDomainSnapshotUE UAPBGameInstanceSubsystem::CaptureDomainSnapshot() const
 	U.MissionStageIndex = S.mission_stage_index;
 	U.MissionStageCount = S.mission_stage_count;
 	U.MissionStatus = UTF8_TO_TCHAR(S.mission_status.c_str());
+	U.Mission.MissionTitle = U.MissionTitle;
+	U.Mission.MissionStageIndex = S.mission_stage_index;
+	U.Mission.MissionStageCount = S.mission_stage_count;
+	U.Mission.MissionStageProgress = static_cast<float>(S.mission_stage_progress);
+	U.Mission.MissionOppStageProgress = static_cast<float>(S.mission_opp_stage_progress);
+	U.Mission.bMissionOppositionContesting = S.mission_opposition_contesting;
+	U.Mission.bMissionOppositionWon = S.mission_opposition_won;
+	U.Mission.bMissionTimedOut = S.mission_timed_out;
+	U.Mission.MissionStageTimeLimitSec = static_cast<float>(S.mission_stage_time_limit_sec);
+	U.Mission.MissionStageDeadlineServerSec = static_cast<float>(S.mission_stage_deadline_server_sec);
+	for (const apb::SnapshotProgressEntry& Entry : S.contact_standings)
+	{
+		U.ProgressionState += FString::Printf(TEXT("C:%s=%lld;"), UTF8_TO_TCHAR(Entry.id.c_str()), Entry.value);
+	}
+	for (const apb::SnapshotProgressEntry& Entry : S.role_xp)
+	{
+		U.ProgressionState += FString::Printf(TEXT("R:%s=%lld;"), UTF8_TO_TCHAR(Entry.id.c_str()), Entry.value);
+	}
 	U.SessionId = UTF8_TO_TCHAR(S.session_id.c_str());
 	U.DistrictId = UTF8_TO_TCHAR(S.district_id.c_str());
 	U.DistrictPlayers = S.district_players;
@@ -573,7 +726,9 @@ void UAPBGameInstanceSubsystem::SyncPlayerStateFromDomain(AAPBPlayerState* Playe
 		S.MissionTitle.IsEmpty() ? S.MissionStatus : S.MissionTitle,
 		S.MissionStageIndex,
 		S.MissionStageCount,
-		S.SessionId);
+		S.SessionId,
+		S.ProgressionState,
+		S.Mission);
 }
 
 bool UAPBGameInstanceSubsystem::ConnectToWorldServer(const FString& Host, int32 Port)
@@ -606,6 +761,90 @@ FString UAPBGameInstanceSubsystem::GetIssuedTicket() const
 	return FString();
 }
 
+void UAPBGameInstanceSubsystem::StartDistrictTravel(APlayerController* PlayerController,
+	const FString& DistrictId, const FString& Host, const int32 Port, const FString& Ticket,
+	const FString& ReservationId)
+{
+	if (!PlayerController || DistrictId.IsEmpty() || Host.IsEmpty() || Port < 1 || Ticket.IsEmpty() || ReservationId.IsEmpty())
+	{
+		return;
+	}
+	bDistrictTravelPending = true;
+	PendingTravelDistrict = DistrictId;
+	PendingTravelHost = Host;
+	PendingTravelPort = Port;
+	PendingTravelReservationId = ReservationId;
+	if (UGameInstance* GI = GetGameInstance())
+	{
+		GI->GetTimerManager().SetTimer(DistrictTravelTimeoutHandle,
+			FTimerDelegate::CreateUObject(this, &UAPBGameInstanceSubsystem::HandleDistrictTravelTimeout), 10.0f, false);
+	}
+	PlayerController->ClientTravel(FString::Printf(TEXT("%s:%d?APBTicket=%s"), *Host, Port, *Ticket),
+		ETravelType::TRAVEL_Absolute);
+}
+
+void UAPBGameInstanceSubsystem::HandleDistrictTravelMapLoaded(UWorld* LoadedWorld)
+{
+	if (!bDistrictTravelPending || !LoadedWorld)
+	{
+		return;
+	}
+	bDistrictTravelPending = false;
+	if (UGameInstance* GI = GetGameInstance())
+	{
+		GI->GetTimerManager().ClearTimer(DistrictTravelTimeoutHandle);
+	}
+	UE_LOG(LogTemp, Log, TEXT("TRAVEL_OK district=%s host=%s port=%d"),
+		*PendingTravelDistrict, *PendingTravelHost, PendingTravelPort);
+	PendingTravelDistrict.Empty();
+	PendingTravelHost.Empty();
+	PendingTravelPort = 0;
+	PendingTravelReservationId.Empty();
+}
+
+void UAPBGameInstanceSubsystem::HandleDistrictTravelFailure(UWorld* FailedWorld,
+	ETravelFailure::Type FailureType, const FString& ErrorString)
+{
+	if (!bDistrictTravelPending)
+	{
+		return;
+	}
+	if (FailedWorld)
+	{
+		if (APlayerController* PlayerController = UGameplayStatics::GetPlayerController(FailedWorld, 0))
+		{
+			if (AAPBPlayerState* PlayerState = PlayerController->GetPlayerState<AAPBPlayerState>())
+			{
+				PlayerState->Server_ReleaseTravelReservation(PendingTravelReservationId);
+			}
+		}
+	}
+	bDistrictTravelPending = false;
+	if (UGameInstance* GI = GetGameInstance())
+	{
+		GI->GetTimerManager().ClearTimer(DistrictTravelTimeoutHandle);
+	}
+	UE_LOG(LogTemp, Warning, TEXT("TRAVEL_FAIL reason=travel_error"));
+	PendingTravelDistrict.Empty();
+	PendingTravelHost.Empty();
+	PendingTravelPort = 0;
+	PendingTravelReservationId.Empty();
+}
+
+void UAPBGameInstanceSubsystem::HandleDistrictTravelTimeout()
+{
+	if (!bDistrictTravelPending)
+	{
+		return;
+	}
+	bDistrictTravelPending = false;
+	UE_LOG(LogTemp, Warning, TEXT("TRAVEL_FAIL reason=timeout"));
+	PendingTravelDistrict.Empty();
+	PendingTravelHost.Empty();
+	PendingTravelPort = 0;
+	PendingTravelReservationId.Empty();
+}
+
 void UAPBGameInstanceSubsystem::PushDomainSnapshotToAllPlayerStates()
 {
 	if (!CanMutateDomain()) return;
@@ -627,12 +866,554 @@ void UAPBGameInstanceSubsystem::PushDomainSnapshotToAllPlayerStates()
 					S.InventorySlotCount,
 					S.MissionTitle.IsEmpty() ? S.MissionStatus : S.MissionTitle,
 					S.MissionStageIndex,
-					S.MissionStageCount,
-					S.SessionId);
+				S.MissionStageCount,
+				S.SessionId,
+				S.ProgressionState,
+				S.Mission);
 				PS->ForceNetUpdate();
 			}
 		}
 	}
+}
+
+bool UAPBGameInstanceSubsystem::ApplyHandoffSnapshot(const apb::DomainSnapshot& Snapshot)
+{
+	if (!Service || !CanMutateDomain()) return false;
+	return Svc(Service)->ApplyHandoff(Snapshot);
+}
+
+bool UAPBGameInstanceSubsystem::ApplyHandoffProbeMutation()
+{
+	if (!Service || !CanMutateDomain()) return false;
+	apb::WorldService* WorldService = Svc(Service);
+	if (!WorldService->character) return false;
+	WorldService->character->cash += 77;
+	WorldService->threat.points += 5.0;
+	WorldService->SaveAllNow();
+	return true;
+}
+
+bool UAPBGameInstanceSubsystem::SocialClanCreate(const FString& ClanId, const FString& Name, const FString& Tag, const FString& Leader, bool bEnforcer)
+{
+	if (!Service || !CanMutateDomain()) return false;
+	apb::WorldService* S = SocialSvc(GetWorld(), Service);
+	if (!S) return false;
+	const apb::Faction F = bEnforcer ? apb::Faction::Enforcer : apb::Faction::Criminal;
+	const apb::ClanResult R = S->clans.CreateClan(TCHAR_TO_UTF8(*ClanId), TCHAR_TO_UTF8(*Name),
+		TCHAR_TO_UTF8(*Tag), F, TCHAR_TO_UTF8(*Leader));
+	UE_LOG(LogTemp, Log, TEXT("SOCIAL_CLAN_CREATE clan=%s leader=%s ok=%d"), *ClanId, *Leader, R == apb::ClanResult::Ok ? 1 : 0);
+	return R == apb::ClanResult::Ok;
+}
+
+bool UAPBGameInstanceSubsystem::SocialClanInvite(const FString& Inviter, const FString& Invitee)
+{
+	if (!Service || !CanMutateDomain()) return false;
+	apb::WorldService* S = SocialSvc(GetWorld(), Service);
+	if (!S) return false;
+	apb::Faction InviteeFaction = apb::Faction::Criminal;
+	if (UWorld* World = GetWorld())
+	{
+		if (AAPBWorldGameMode* GM = World->GetAuthGameMode<AAPBWorldGameMode>())
+		{
+			const FAPBAdmittedPlayer* Entry = GM->FindAdmittedPlayer(Invitee);
+			if (!Entry)
+			{
+				UE_LOG(LogTemp, Warning, TEXT("SOCIAL_CLAN_INVITE_FAIL reason=invitee_not_admitted invitee=%s"), *Invitee);
+				return false;
+			}
+			InviteeFaction = Entry->Faction.Equals(TEXT("Enforcer"), ESearchCase::CaseSensitive)
+				? apb::Faction::Enforcer : apb::Faction::Criminal;
+		}
+		else
+		{
+			UE_LOG(LogTemp, Warning, TEXT("SOCIAL_CLAN_INVITE_FAIL reason=invitee_not_admitted invitee=%s"), *Invitee);
+			return false;
+		}
+	}
+	else
+	{
+		UE_LOG(LogTemp, Warning, TEXT("SOCIAL_CLAN_INVITE_FAIL reason=invitee_not_admitted invitee=%s"), *Invitee);
+		return false;
+	}
+	const apb::ClanResult R = S->clans.Invite(TCHAR_TO_UTF8(*Inviter), TCHAR_TO_UTF8(*Invitee), InviteeFaction);
+	UE_LOG(LogTemp, Log, TEXT("SOCIAL_CLAN_INVITE inviter=%s invitee=%s ok=%d src=roster"), *Inviter, *Invitee, R == apb::ClanResult::Ok ? 1 : 0);
+	return R == apb::ClanResult::Ok;
+}
+
+bool UAPBGameInstanceSubsystem::SocialClanAcceptInvite(const FString& Invitee)
+{
+	if (!Service || !CanMutateDomain()) return false;
+	apb::WorldService* S = SocialSvc(GetWorld(), Service);
+	if (!S) return false;
+	const apb::ClanResult R = S->clans.AcceptInvite(TCHAR_TO_UTF8(*Invitee));
+	UE_LOG(LogTemp, Log, TEXT("SOCIAL_CLAN_ACCEPT invitee=%s ok=%d"), *Invitee, R == apb::ClanResult::Ok ? 1 : 0);
+	return R == apb::ClanResult::Ok;
+}
+
+bool UAPBGameInstanceSubsystem::SocialClanDeclineInvite(const FString& Invitee)
+{
+	if (!Service || !CanMutateDomain()) return false;
+	apb::WorldService* S = SocialSvc(GetWorld(), Service);
+	if (!S) return false;
+	const apb::ClanResult R = S->clans.DeclineInvite(TCHAR_TO_UTF8(*Invitee));
+	UE_LOG(LogTemp, Log, TEXT("SOCIAL_CLAN_DECLINE invitee=%s ok=%d"), *Invitee, R == apb::ClanResult::Ok ? 1 : 0);
+	return R == apb::ClanResult::Ok;
+}
+
+bool UAPBGameInstanceSubsystem::SocialClanKick(const FString& Actor, const FString& Target)
+{
+	if (!Service || !CanMutateDomain()) return false;
+	apb::WorldService* S = SocialSvc(GetWorld(), Service);
+	if (!S) return false;
+	const apb::ClanResult R = S->clans.Kick(TCHAR_TO_UTF8(*Actor), TCHAR_TO_UTF8(*Target));
+	UE_LOG(LogTemp, Log, TEXT("SOCIAL_CLAN_KICK actor=%s target=%s ok=%d"), *Actor, *Target, R == apb::ClanResult::Ok ? 1 : 0);
+	return R == apb::ClanResult::Ok;
+}
+
+bool UAPBGameInstanceSubsystem::SocialClanSetMotd(const FString& Actor, const FString& Text)
+{
+	if (!Service || !CanMutateDomain()) return false;
+	apb::WorldService* S = SocialSvc(GetWorld(), Service);
+	if (!S) return false;
+	const apb::ClanResult R = S->clans.SetMotd(TCHAR_TO_UTF8(*Actor), TCHAR_TO_UTF8(*Text));
+	UE_LOG(LogTemp, Log, TEXT("SOCIAL_CLAN_SETMOTD actor=%s ok=%d"), *Actor, R == apb::ClanResult::Ok ? 1 : 0);
+	return R == apb::ClanResult::Ok;
+}
+
+bool UAPBGameInstanceSubsystem::SocialClanAddRank(const FString& Actor, const FString& RankName, int32 Permissions)
+{
+	if (!Service || !CanMutateDomain()) return false;
+	apb::WorldService* S = SocialSvc(GetWorld(), Service);
+	if (!S) return false;
+	const apb::ClanResult R = S->clans.AddRank(TCHAR_TO_UTF8(*Actor), TCHAR_TO_UTF8(*RankName), static_cast<uint32_t>(Permissions));
+	UE_LOG(LogTemp, Log, TEXT("SOCIAL_CLAN_ADDRANK actor=%s rank=%s ok=%d"), *Actor, *RankName, R == apb::ClanResult::Ok ? 1 : 0);
+	return R == apb::ClanResult::Ok;
+}
+
+bool UAPBGameInstanceSubsystem::SocialClanSetMemberRank(const FString& Actor, const FString& Target, int32 RankIndex)
+{
+	if (!Service || !CanMutateDomain()) return false;
+	apb::WorldService* S = SocialSvc(GetWorld(), Service);
+	if (!S) return false;
+	const apb::ClanResult R = S->clans.SetMemberRank(TCHAR_TO_UTF8(*Actor), TCHAR_TO_UTF8(*Target), RankIndex);
+	UE_LOG(LogTemp, Log, TEXT("SOCIAL_CLAN_SETMEMBERRANK actor=%s target=%s rank=%d ok=%d"), *Actor, *Target, RankIndex, R == apb::ClanResult::Ok ? 1 : 0);
+	return R == apb::ClanResult::Ok;
+}
+
+bool UAPBGameInstanceSubsystem::SocialClanLeave(const FString& Player)
+{
+	if (!Service || !CanMutateDomain()) return false;
+	apb::WorldService* S = SocialSvc(GetWorld(), Service);
+	if (!S) return false;
+	const apb::ClanResult R = S->clans.Leave(TCHAR_TO_UTF8(*Player));
+	UE_LOG(LogTemp, Log, TEXT("SOCIAL_CLAN_LEAVE player=%s ok=%d"), *Player, R == apb::ClanResult::Ok ? 1 : 0);
+	return R == apb::ClanResult::Ok;
+}
+
+bool UAPBGameInstanceSubsystem::SocialClanDisband(const FString& Leader)
+{
+	if (!Service || !CanMutateDomain()) return false;
+	apb::WorldService* S = SocialSvc(GetWorld(), Service);
+	if (!S) return false;
+	const apb::ClanResult R = S->clans.Disband(TCHAR_TO_UTF8(*Leader));
+	UE_LOG(LogTemp, Log, TEXT("SOCIAL_CLAN_DISBAND leader=%s ok=%d"), *Leader, R == apb::ClanResult::Ok ? 1 : 0);
+	return R == apb::ClanResult::Ok;
+}
+
+bool UAPBGameInstanceSubsystem::SocialClanTransferLeader(const FString& Leader, const FString& Target)
+{
+	if (!Service || !CanMutateDomain()) return false;
+	apb::WorldService* S = SocialSvc(GetWorld(), Service);
+	if (!S) return false;
+	const apb::ClanResult R = S->clans.TransferLeader(TCHAR_TO_UTF8(*Leader), TCHAR_TO_UTF8(*Target));
+	UE_LOG(LogTemp, Log, TEXT("SOCIAL_CLAN_TRANSFER leader=%s target=%s ok=%d"), *Leader, *Target, R == apb::ClanResult::Ok ? 1 : 0);
+	return R == apb::ClanResult::Ok;
+}
+
+FAPBClanInfoUE UAPBGameInstanceSubsystem::GetClanInfo(const FString& ClanId) const
+{
+	FAPBClanInfoUE Out;
+	const apb::WorldService* S = SocialSvc(GetWorld(), Service);
+	if (!S) return Out;
+	const apb::Clan* C = S->clans.Find(TCHAR_TO_UTF8(*ClanId));
+	if (!C) return Out;
+	Out.Id         = UTF8_TO_TCHAR(C->id.c_str());
+	Out.Name       = UTF8_TO_TCHAR(C->name.c_str());
+	Out.Tag        = UTF8_TO_TCHAR(C->tag.c_str());
+	Out.Motd       = UTF8_TO_TCHAR(C->motd.c_str());
+	Out.LeaderName = UTF8_TO_TCHAR(C->leader.c_str());
+	for (const auto& M : C->members)
+		Out.Members.Add(UTF8_TO_TCHAR(M.player.c_str()));
+	return Out;
+}
+
+bool UAPBGameInstanceSubsystem::SocialFriendRequest(const FString& From, const FString& To)
+{
+	if (!Service || !CanMutateDomain()) return false;
+	apb::WorldService* S = SocialSvc(GetWorld(), Service);
+	if (!S) return false;
+	const apb::FriendResult R = S->friends_svc.SendRequest(TCHAR_TO_UTF8(*From), TCHAR_TO_UTF8(*To));
+	UE_LOG(LogTemp, Log, TEXT("SOCIAL_FRIEND_REQUEST from=%s to=%s ok=%d"), *From, *To, R == apb::FriendResult::Ok ? 1 : 0);
+	return R == apb::FriendResult::Ok;
+}
+
+bool UAPBGameInstanceSubsystem::SocialFriendAccept(const FString& Invitee, const FString& Inviter)
+{
+	if (!Service || !CanMutateDomain()) return false;
+	apb::WorldService* S = SocialSvc(GetWorld(), Service);
+	if (!S) return false;
+	const apb::FriendResult R = S->friends_svc.AcceptRequest(TCHAR_TO_UTF8(*Invitee), TCHAR_TO_UTF8(*Inviter));
+	UE_LOG(LogTemp, Log, TEXT("SOCIAL_FRIEND_ACCEPT invitee=%s inviter=%s ok=%d"), *Invitee, *Inviter, R == apb::FriendResult::Ok ? 1 : 0);
+	return R == apb::FriendResult::Ok;
+}
+
+bool UAPBGameInstanceSubsystem::SocialFriendDecline(const FString& Invitee, const FString& Inviter)
+{
+	if (!Service || !CanMutateDomain()) return false;
+	apb::WorldService* S = SocialSvc(GetWorld(), Service);
+	if (!S) return false;
+	const apb::FriendResult R = S->friends_svc.DeclineRequest(TCHAR_TO_UTF8(*Invitee), TCHAR_TO_UTF8(*Inviter));
+	UE_LOG(LogTemp, Log, TEXT("SOCIAL_FRIEND_DECLINE invitee=%s inviter=%s ok=%d"), *Invitee, *Inviter, R == apb::FriendResult::Ok ? 1 : 0);
+	return R == apb::FriendResult::Ok;
+}
+
+bool UAPBGameInstanceSubsystem::SocialFriendRemove(const FString& Player, const FString& Other)
+{
+	if (!Service || !CanMutateDomain()) return false;
+	apb::WorldService* S = SocialSvc(GetWorld(), Service);
+	if (!S) return false;
+	const apb::FriendResult R = S->friends_svc.RemoveFriend(TCHAR_TO_UTF8(*Player), TCHAR_TO_UTF8(*Other));
+	UE_LOG(LogTemp, Log, TEXT("SOCIAL_FRIEND_REMOVE player=%s other=%s ok=%d"), *Player, *Other, R == apb::FriendResult::Ok ? 1 : 0);
+	return R == apb::FriendResult::Ok;
+}
+
+bool UAPBGameInstanceSubsystem::SocialFriendIgnore(const FString& Player, const FString& Target)
+{
+	if (!Service || !CanMutateDomain()) return false;
+	apb::WorldService* S = SocialSvc(GetWorld(), Service);
+	if (!S) return false;
+	const apb::FriendResult R = S->friends_svc.Ignore(TCHAR_TO_UTF8(*Player), TCHAR_TO_UTF8(*Target));
+	UE_LOG(LogTemp, Log, TEXT("SOCIAL_FRIEND_IGNORE player=%s target=%s ok=%d"), *Player, *Target, R == apb::FriendResult::Ok ? 1 : 0);
+	return R == apb::FriendResult::Ok;
+}
+
+bool UAPBGameInstanceSubsystem::SocialFriendUnignore(const FString& Player, const FString& Target)
+{
+	if (!Service || !CanMutateDomain()) return false;
+	apb::WorldService* S = SocialSvc(GetWorld(), Service);
+	if (!S) return false;
+	const apb::FriendResult R = S->friends_svc.Unignore(TCHAR_TO_UTF8(*Player), TCHAR_TO_UTF8(*Target));
+	UE_LOG(LogTemp, Log, TEXT("SOCIAL_FRIEND_UNIGNORE player=%s target=%s ok=%d"), *Player, *Target, R == apb::FriendResult::Ok ? 1 : 0);
+	return R == apb::FriendResult::Ok;
+}
+
+bool UAPBGameInstanceSubsystem::SocialAreFriends(const FString& A, const FString& B) const
+{
+	const apb::WorldService* S = SocialSvc(GetWorld(), Service);
+	if (!S) return false;
+	return S->friends_svc.AreFriends(TCHAR_TO_UTF8(*A), TCHAR_TO_UTF8(*B));
+}
+
+bool UAPBGameInstanceSubsystem::SocialIsIgnoring(const FString& Player, const FString& Target) const
+{
+	const apb::WorldService* S = SocialSvc(GetWorld(), Service);
+	if (!S) return false;
+	return S->friends_svc.IsIgnoring(TCHAR_TO_UTF8(*Player), TCHAR_TO_UTF8(*Target));
+}
+
+TArray<FAPBFriendEntryUE> UAPBGameInstanceSubsystem::SocialGetFriendList(const FString& Player) const
+{
+	TArray<FAPBFriendEntryUE> Out;
+	const apb::WorldService* S = SocialSvc(GetWorld(), Service);
+	if (!S) return Out;
+	for (const std::string& N : S->friends_svc.FriendsOf(TCHAR_TO_UTF8(*Player)))
+	{
+		FAPBFriendEntryUE E;
+		E.Name    = UTF8_TO_TCHAR(N.c_str());
+		E.bOnline = S->friends_svc.IsOnline(N);
+		Out.Add(E);
+	}
+	return Out;
+}
+
+TArray<FString> UAPBGameInstanceSubsystem::SocialGetIncomingRequests(const FString& Player) const
+{
+	TArray<FString> Out;
+	const apb::WorldService* S = SocialSvc(GetWorld(), Service);
+	if (!S) return Out;
+	for (const std::string& N : S->friends_svc.IncomingRequests(TCHAR_TO_UTF8(*Player)))
+		Out.Add(UTF8_TO_TCHAR(N.c_str()));
+	return Out;
+}
+
+TArray<FString> UAPBGameInstanceSubsystem::SocialGetIgnoreList(const FString& Player) const
+{
+	TArray<FString> Out;
+	const apb::WorldService* S = SocialSvc(GetWorld(), Service);
+	if (!S) return Out;
+	for (const std::string& N : S->friends_svc.IgnoredBy(TCHAR_TO_UTF8(*Player)))
+		Out.Add(UTF8_TO_TCHAR(N.c_str()));
+	return Out;
+}
+
+bool UAPBGameInstanceSubsystem::SocialGroupCreate(const FString& Leader, FString& OutGroupId)
+{
+	if (!Service || !CanMutateDomain()) return false;
+	apb::WorldService* S = SocialSvc(GetWorld(), Service);
+	if (!S) return false;
+	std::string GroupIdStr;
+	const apb::GroupResult R = S->groups.CreateGroup(TCHAR_TO_UTF8(*Leader), GroupIdStr);
+	OutGroupId = UTF8_TO_TCHAR(GroupIdStr.c_str());
+	UE_LOG(LogTemp, Log, TEXT("SOCIAL_GROUP_CREATE leader=%s id=%s ok=%d"), *Leader, *OutGroupId, R == apb::GroupResult::Ok ? 1 : 0);
+	return R == apb::GroupResult::Ok;
+}
+
+bool UAPBGameInstanceSubsystem::SocialGroupInvite(const FString& Inviter, const FString& Invitee)
+{
+	if (!Service || !CanMutateDomain()) return false;
+	apb::WorldService* S = SocialSvc(GetWorld(), Service);
+	if (!S) return false;
+	const apb::GroupResult R = S->groups.Invite(TCHAR_TO_UTF8(*Inviter), TCHAR_TO_UTF8(*Invitee));
+	UE_LOG(LogTemp, Log, TEXT("SOCIAL_GROUP_INVITE inviter=%s invitee=%s ok=%d"), *Inviter, *Invitee, R == apb::GroupResult::Ok ? 1 : 0);
+	return R == apb::GroupResult::Ok;
+}
+
+bool UAPBGameInstanceSubsystem::SocialGroupAccept(const FString& Invitee)
+{
+	if (!Service || !CanMutateDomain()) return false;
+	apb::WorldService* S = SocialSvc(GetWorld(), Service);
+	if (!S) return false;
+	const apb::GroupResult R = S->groups.AcceptInvite(TCHAR_TO_UTF8(*Invitee));
+	UE_LOG(LogTemp, Log, TEXT("SOCIAL_GROUP_ACCEPT invitee=%s ok=%d"), *Invitee, R == apb::GroupResult::Ok ? 1 : 0);
+	return R == apb::GroupResult::Ok;
+}
+
+bool UAPBGameInstanceSubsystem::SocialGroupLeave(const FString& Player)
+{
+	if (!Service || !CanMutateDomain()) return false;
+	apb::WorldService* S = SocialSvc(GetWorld(), Service);
+	if (!S) return false;
+	const apb::GroupResult R = S->groups.Leave(TCHAR_TO_UTF8(*Player));
+	UE_LOG(LogTemp, Log, TEXT("SOCIAL_GROUP_LEAVE player=%s ok=%d"), *Player, R == apb::GroupResult::Ok ? 1 : 0);
+	return R == apb::GroupResult::Ok;
+}
+
+bool UAPBGameInstanceSubsystem::SocialGroupKick(const FString& Leader, const FString& Target)
+{
+	if (!Service || !CanMutateDomain()) return false;
+	apb::WorldService* S = SocialSvc(GetWorld(), Service);
+	if (!S) return false;
+	const apb::GroupResult R = S->groups.Kick(TCHAR_TO_UTF8(*Leader), TCHAR_TO_UTF8(*Target));
+	UE_LOG(LogTemp, Log, TEXT("SOCIAL_GROUP_KICK leader=%s target=%s ok=%d"), *Leader, *Target, R == apb::GroupResult::Ok ? 1 : 0);
+	return R == apb::GroupResult::Ok;
+}
+
+bool UAPBGameInstanceSubsystem::SocialGroupDisband(const FString& Leader)
+{
+	if (!Service || !CanMutateDomain()) return false;
+	apb::WorldService* S = SocialSvc(GetWorld(), Service);
+	if (!S) return false;
+	const apb::GroupResult R = S->groups.Disband(TCHAR_TO_UTF8(*Leader));
+	UE_LOG(LogTemp, Log, TEXT("SOCIAL_GROUP_DISBAND leader=%s ok=%d"), *Leader, R == apb::GroupResult::Ok ? 1 : 0);
+	return R == apb::GroupResult::Ok;
+}
+
+bool UAPBGameInstanceSubsystem::SocialGroupTransferLeader(const FString& Leader, const FString& Target)
+{
+	if (!Service || !CanMutateDomain()) return false;
+	apb::WorldService* S = SocialSvc(GetWorld(), Service);
+	if (!S) return false;
+	const apb::GroupResult R = S->groups.TransferLeader(TCHAR_TO_UTF8(*Leader), TCHAR_TO_UTF8(*Target));
+	UE_LOG(LogTemp, Log, TEXT("SOCIAL_GROUP_TRANSFER leader=%s target=%s ok=%d"), *Leader, *Target, R == apb::GroupResult::Ok ? 1 : 0);
+	return R == apb::GroupResult::Ok;
+}
+
+bool UAPBGameInstanceSubsystem::SocialGroupSetReady(const FString& Player, bool bReady)
+{
+	if (!Service || !CanMutateDomain()) return false;
+	apb::WorldService* S = SocialSvc(GetWorld(), Service);
+	if (!S) return false;
+	const apb::GroupResult R = S->groups.SetReady(TCHAR_TO_UTF8(*Player), bReady);
+	UE_LOG(LogTemp, Log, TEXT("SOCIAL_GROUP_SETREADY player=%s ready=%d ok=%d"), *Player, bReady ? 1 : 0, R == apb::GroupResult::Ok ? 1 : 0);
+	return R == apb::GroupResult::Ok;
+}
+
+bool UAPBGameInstanceSubsystem::SocialGroupAssignMission(const FString& Leader, const FString& MissionId)
+{
+	if (!Service || !CanMutateDomain()) return false;
+	apb::WorldService* S = SocialSvc(GetWorld(), Service);
+	if (!S) return false;
+	const apb::GroupResult R = S->groups.AssignMission(TCHAR_TO_UTF8(*Leader), TCHAR_TO_UTF8(*MissionId));
+	UE_LOG(LogTemp, Log, TEXT("SOCIAL_GROUP_ASSIGNMISSION leader=%s mission=%s ok=%d"), *Leader, *MissionId, R == apb::GroupResult::Ok ? 1 : 0);
+	return R == apb::GroupResult::Ok;
+}
+
+FAPBGroupInfoUE UAPBGameInstanceSubsystem::GetGroupInfo(const FString& GroupId) const
+{
+	FAPBGroupInfoUE Out;
+	const apb::WorldService* S = SocialSvc(GetWorld(), Service);
+	if (!S) return Out;
+	const apb::Group* G = S->groups.Find(TCHAR_TO_UTF8(*GroupId));
+	if (!G) return Out;
+	Out.Id        = UTF8_TO_TCHAR(G->id.c_str());
+	Out.Leader    = UTF8_TO_TCHAR(G->leader.c_str());
+	Out.MissionId = UTF8_TO_TCHAR(G->mission_id.c_str());
+	Out.bAllReady = S->groups.AllReady(TCHAR_TO_UTF8(*GroupId));
+	for (const auto& M : G->members)
+		Out.Members.Add(UTF8_TO_TCHAR(M.player.c_str()));
+	return Out;
+}
+
+bool UAPBGameInstanceSubsystem::SocialMailSend(const FString& Character, const FString& To, const FString& Subject, const FString& Body, int64 Cash)
+{
+	if (!Service || !CanMutateDomain()) return false;
+	apb::WorldService* S = SocialSvc(GetWorld(), Service);
+	if (!S) return false;
+	// The claimed sender is validated against the service that authoritatively owns
+	// that character. Reading the per-connection service instead would trust a local
+	// field that is empty on a world server, and would let a client spoof the sender.
+	apb::WorldService* Sender = CharacterOwnerSvc(GetWorld(), Service, Character);
+	if (!Sender || !Sender->character.has_value()) return false;
+	const std::string From = Sender->character->name;
+	if (From.empty() || From != std::string(TCHAR_TO_UTF8(*Character))) return false;
+	const bool bOk = S->mail.SendMail(From, TCHAR_TO_UTF8(*To), TCHAR_TO_UTF8(*Subject),
+		TCHAR_TO_UTF8(*Body), static_cast<int64_t>(Cash));
+	UE_LOG(LogTemp, Log, TEXT("SOCIAL_MAIL_SEND from=%s to=%s ok=%d"), UTF8_TO_TCHAR(From.c_str()), *To, bOk ? 1 : 0);
+	return bOk;
+}
+
+TArray<FAPBMailMessageUE> UAPBGameInstanceSubsystem::SocialMailGetInbox(const FString& Character) const
+{
+	TArray<FAPBMailMessageUE> Out;
+	const apb::WorldService* S = SocialSvc(GetWorld(), Service);
+	if (!S) return Out;
+	for (const apb::MailMessage* M : S->mail.InboxFor(TCHAR_TO_UTF8(*Character)))
+	{
+		FAPBMailMessageUE E;
+		E.Id       = FString::Printf(TEXT("%lld"), static_cast<long long>(M->id));
+		E.From     = UTF8_TO_TCHAR(M->from.c_str());
+		E.Subject  = UTF8_TO_TCHAR(M->subject.c_str());
+		E.Body     = UTF8_TO_TCHAR(M->body.c_str());
+		E.bRead    = M->read;
+		E.bClaimed = M->claimed;
+		for (const auto& A : M->attachments) E.Cash += static_cast<int64>(A.cash);
+		Out.Add(E);
+	}
+	return Out;
+}
+
+int32 UAPBGameInstanceSubsystem::SocialMailUnreadCount(const FString& Character) const
+{
+	const apb::WorldService* S = SocialSvc(GetWorld(), Service);
+	if (!S) return 0;
+	return S->mail.UnreadCount(TCHAR_TO_UTF8(*Character));
+}
+
+EAPBMailResult UAPBGameInstanceSubsystem::SocialMailMarkRead(const FString& Character, const FString& MailId)
+{
+	if (!Service || !CanMutateDomain()) return EAPBMailResult::AuthorityUnavailable;
+	apb::WorldService* S = SocialSvc(GetWorld(), Service);
+	if (!S) return EAPBMailResult::AuthorityUnavailable;
+	const int64_t Id = static_cast<int64_t>(FCString::Atoi64(*MailId));
+	const apb::MailMessage* Msg = S->mail.Find(Id);
+	if (!Msg) return EAPBMailResult::NotFound;
+	if (Msg->to != std::string(TCHAR_TO_UTF8(*Character))) return EAPBMailResult::NotOwner;
+	S->mail.MarkRead(Id);
+	UE_LOG(LogTemp, Log, TEXT("SOCIAL_MAIL_MARKREAD character=%s id=%s"), *Character, *MailId);
+	return EAPBMailResult::Ok;
+}
+
+EAPBMailResult UAPBGameInstanceSubsystem::SocialMailClaimAttachments(const FString& Character, const FString& MailId)
+{
+	if (!Service || !CanMutateDomain()) return EAPBMailResult::AuthorityUnavailable;
+	apb::WorldService* S = SocialSvc(GetWorld(), Service);
+	if (!S) return EAPBMailResult::AuthorityUnavailable;
+	const int64_t Id = static_cast<int64_t>(FCString::Atoi64(*MailId));
+	const apb::MailMessage* Msg = S->mail.Find(Id);
+	if (!Msg) return EAPBMailResult::NotFound;
+	if (Msg->to != std::string(TCHAR_TO_UTF8(*Character))) return EAPBMailResult::NotOwner;
+	if (Msg->claimed) return EAPBMailResult::AlreadyClaimed;
+	if (Msg->attachments.empty()) return EAPBMailResult::Ok;
+
+	// Fail closed before touching anything: an item payload cannot be granted until
+	// inventory integration exists, and silently dropping it would destroy the item.
+	if (S->mail.HasItemAttachments(Id))
+	{
+		UE_LOG(LogTemp, Warning,
+			TEXT("SOCIAL_MAIL_CLAIM_UNSUPPORTED_ATTACHMENT character=%s id=%s ctx=no_inventory_grant"),
+			*Character, *MailId);
+		return EAPBMailResult::UnsupportedAttachment;
+	}
+
+	apb::WorldService* Owner = CharacterOwnerSvc(GetWorld(), Service, Character);
+	if (!Owner || !Owner->character.has_value()) return EAPBMailResult::GrantFailed;
+
+	int64_t CashTotal = 0;
+	for (const auto& A : Msg->attachments) CashTotal += A.cash;
+	const std::string Who = TCHAR_TO_UTF8(*Character);
+
+	// Without an active journal (standalone/PIE with no social persistence) there is
+	// nothing durable to reconcile against, so claim directly and keep that path working.
+	if (!S->claim_journal.IsActive())
+	{
+		const std::vector<apb::MailAttachment> Atts = S->mail.ClaimAttachments(Id);
+		if (Atts.empty()) return EAPBMailResult::GrantFailed;
+		Owner->character->cash += CashTotal;
+		UE_LOG(LogTemp, Log, TEXT("SOCIAL_MAIL_CLAIM character=%s id=%s cash=%lld ctx=unjournaled"),
+			*Character, *MailId, static_cast<long long>(CashTotal));
+		return EAPBMailResult::Ok;
+	}
+
+	// Recovery: a crash after the cash receipt but before the mail flag leaves the
+	// message unclaimed with its cash already paid. Finish the flag, never re-credit.
+	if (S->claim_journal.CashAlreadyCredited(Who, Id))
+	{
+		if (S->mail.CommitClaimed(Id))
+		{
+			S->claim_journal.CommitMail(Who, Id);
+			S->SaveSocialNow();
+			UE_LOG(LogTemp, Warning,
+				TEXT("SOCIAL_MAIL_CLAIM_RECOVERED character=%s id=%s ctx=commit_mail_only"),
+				*Character, *MailId);
+			return EAPBMailResult::Ok;
+		}
+		return EAPBMailResult::AlreadyClaimed;
+	}
+
+	// Ordered commit: journal Prepared -> credit cash + durable receipt -> mail flag.
+	const int64_t NowUtc = static_cast<int64_t>(FDateTime::UtcNow().ToUnixTimestamp());
+	if (!S->claim_journal.Prepare(Who, Id, CashTotal, NowUtc)) return EAPBMailResult::GrantFailed;
+
+	Owner->character->cash += CashTotal;
+	if (!S->claim_journal.CommitCharacter(Who, Id))
+	{
+		Owner->character->cash -= CashTotal;
+		return EAPBMailResult::GrantFailed;
+	}
+	Owner->SaveAllNow();
+
+	if (!S->mail.CommitClaimed(Id)) return EAPBMailResult::GrantFailed;
+	S->claim_journal.CommitMail(Who, Id);
+	S->SaveSocialNow();
+
+	UE_LOG(LogTemp, Log, TEXT("SOCIAL_MAIL_CLAIM character=%s id=%s cash=%lld ctx=journaled"),
+		*Character, *MailId, static_cast<long long>(CashTotal));
+	return EAPBMailResult::Ok;
+}
+
+EAPBMailResult UAPBGameInstanceSubsystem::SocialMailDelete(const FString& Character, const FString& MailId)
+{
+	if (!Service || !CanMutateDomain()) return EAPBMailResult::AuthorityUnavailable;
+	apb::WorldService* S = SocialSvc(GetWorld(), Service);
+	if (!S) return EAPBMailResult::AuthorityUnavailable;
+	const int64_t Id = static_cast<int64_t>(FCString::Atoi64(*MailId));
+	const apb::MailMessage* Msg = S->mail.Find(Id);
+	if (!Msg) return EAPBMailResult::NotFound;
+	if (Msg->to != std::string(TCHAR_TO_UTF8(*Character))) return EAPBMailResult::NotOwner;
+	if (S->mail.HasUnclaimedAttachments(Id)) return EAPBMailResult::Unclaimed;
+	S->mail.Delete(Id);
+	UE_LOG(LogTemp, Log, TEXT("SOCIAL_MAIL_DELETE character=%s id=%s"), *Character, *MailId);
+	return EAPBMailResult::Ok;
 }
 
 

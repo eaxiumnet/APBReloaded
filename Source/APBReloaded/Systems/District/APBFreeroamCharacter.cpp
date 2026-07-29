@@ -317,12 +317,8 @@ float AAPBFreeroamCharacter::FireWeaponLocal()
 					Hit.GetActor()->TakeDamage(Dmg, DmgEvent, GetController(), this);
 				}
 			}
-			if (AAPBPlayerState* PS = GetPlayerState<AAPBPlayerState>())
-			{
-				PS->ThreatPoints = APB->GetThreatPoints();
-				PS->Cash = PS->Cash; // keep; sync from domain if available
-				PS->ForceNetUpdate();
-			}
+			// D16b: meta state syncs only via the Domain bridge, never direct PlayerState writes.
+			APB->SyncPlayerStateFromDomain(GetPlayerState<AAPBPlayerState>());
 		}
 	}
 	LastShotDamage = Dmg;
