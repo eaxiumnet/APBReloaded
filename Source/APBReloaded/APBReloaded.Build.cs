@@ -28,11 +28,14 @@ public class APBReloaded : ModuleRules
 			"Json",
 			"JsonUtilities",
 			"NetCore",
+			"CoreOnline",
 			"OnlineSubsystem",
 			"OnlineSubsystemUtils",
 			"MediaAssets",
-			"MediaUtils"
-		});
+			"MediaUtils",
+			"Sockets",
+			"Networking"
+			});
 
 		PrivateDependencyModuleNames.AddRange(new string[] { });
 

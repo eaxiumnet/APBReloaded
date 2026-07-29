@@ -2,7 +2,7 @@
 	"FileVersion": 3,
 	"EngineAssociation": "5.8",
 	"Category": "Game",
-	"Description": "APB Reloaded multiplayer foundation on UE 5.8 — district/world services, inventory, auction, Armas",
+	"Description": "APB Reloaded multiplayer foundation on UE 5.8 - district/world services, inventory, auction, Armas",
 	"Modules": [
 		{
 			"Name": "APBReloaded",
@@ -21,7 +21,9 @@
 		{
 			"Name": "ModelingToolsEditorMode",
 			"Enabled": true,
-			"TargetAllowList": [ "Editor" ]
+			"TargetAllowList": [
+				"Editor"
+			]
 		},
 		{
 			"Name": "StateTree",
@@ -54,6 +56,22 @@
 		{
 			"Name": "ElectraPlayer",
 			"Enabled": true
+		},
+		{
+			"Name": "PythonScriptPlugin",
+			"Enabled": true
+		},
+		{
+			"Name": "UnrealMCPython",
+			"Enabled": true
+		},
+		{
+			"Name": "ModelContextProtocol",
+			"Enabled": true
+		},
+		{
+			"Name": "PCG",
+			"Enabled": false
 		}
 	]
 }
