@@ -4,6 +4,8 @@
 #include <sstream>
 #include <algorithm>
 #include <cstring>
+#include <limits>
+#include <optional>
 
 namespace apb {
 
@@ -63,23 +65,43 @@ static std::string json_str(const std::string& json, const std::string& key) {
     return (end == std::string::npos) ? std::string{} : json.substr(pos, end - pos);
 }
 
-static int64_t json_int(const std::string& json, const std::string& key) {
+static std::optional<int64_t> json_int(const std::string& json, const std::string& key) {
     std::string needle = "\"" + key + "\":";
     auto pos = json.find(needle);
-    if (pos == std::string::npos) return 0;
+    if (pos == std::string::npos) return std::nullopt;
     pos += needle.size();
-    return std::stoll(json.substr(pos));
+    try {
+        size_t parsed = 0;
+        const std::string value = json.substr(pos);
+        const int64_t result = std::stoll(value, &parsed);
+        if (parsed == 0) return std::nullopt;
+        return result;
+    } catch (const std::invalid_argument&) {
+        return std::nullopt;
+    } catch (const std::out_of_range&) {
+        return std::nullopt;
+    }
 }
 
 bool TicketService::parse_payload(const std::string& json, TicketClaims& out) {
-    out.account     = json_str(json, "account");
-    out.character   = json_str(json, "character");
-    out.faction     = json_str(json, "faction");
-    out.district    = json_str(json, "district");
-    out.jti         = json_str(json, "jti");
-    out.issued_utc  = json_int(json, "issued");
-    out.expiry_secs = int32_t(json_int(json, "expiry"));
-    return !out.account.empty() && !out.jti.empty();
+    TicketClaims parsed;
+    parsed.account   = json_str(json, "account");
+    parsed.character = json_str(json, "character");
+    parsed.faction   = json_str(json, "faction");
+    parsed.district  = json_str(json, "district");
+    parsed.jti       = json_str(json, "jti");
+    const auto issued = json_int(json, "issued");
+    const auto expiry = json_int(json, "expiry");
+    if (!issued || !expiry ||
+        *expiry < std::numeric_limits<int32_t>::min() ||
+        *expiry > std::numeric_limits<int32_t>::max() ||
+        parsed.account.empty() || parsed.jti.empty()) {
+        return false;
+    }
+    parsed.issued_utc = *issued;
+    parsed.expiry_secs = static_cast<int32_t>(*expiry);
+    out = std::move(parsed);
+    return true;
 }
 
 std::string TicketService::sign(const std::string& payload) const {

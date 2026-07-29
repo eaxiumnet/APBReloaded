@@ -3,6 +3,7 @@
 #include "APBCustomization.h"
 #include "APBInventory.h"
 #include "APBAuction.h"
+#include "APBProgression.h"
 
 namespace apb {
 
@@ -30,6 +31,7 @@ public:
 	bool Init(const std::string& dir);
 	bool IsActive() const { return active_; }
 	const std::string& Dir() const { return dir_; }
+	size_t CharacterWriteCount() const { return character_write_count_; }
 
 	bool LoadAccounts(LoginService& login) const;
 	bool SaveAccounts(const LoginService& login) const;
@@ -43,6 +45,16 @@ public:
 		const CharacterProfile& profile, const CharacterAppearance& appearance,
 		const Inventory& inventory, double threat_points) const;
 
+	/** Per-character M15 progression sidecar (<account>_<slot>_progress.json).
+	 *  LoadProgress tolerates a missing file (fresh character = empty progress, returns false). */
+	std::string ProgressPath(const std::string& account, int32_t slot) const;
+	bool HasProgress(const std::string& account, int32_t slot) const;
+	bool LoadProgress(const std::string& account, int32_t slot, CharacterProgress& progress) const;
+	bool SaveProgress(const std::string& account, int32_t slot, const CharacterProgress& progress) const;
+	std::string HandoffSnapshotPath(const std::string& account, int32_t slot) const;
+	bool LoadHandoffSnapshot(const std::string& account, int32_t slot, std::string& snapshot_json) const;
+	bool SaveHandoffSnapshot(const std::string& account, int32_t slot, const std::string& snapshot_json) const;
+
 	bool LoadAuction(AuctionHouse& auction) const;
 	bool SaveAuction(const AuctionHouse& auction) const;
 
@@ -52,6 +64,7 @@ public:
 private:
 	std::string dir_;
 	bool active_ = false;
+	mutable size_t character_write_count_ = 0;
 };
 
 } // namespace apb

@@ -138,6 +138,17 @@ inline std::string hex_encode(const uint8_t* data,size_t len){
     return out;
 }
 
+inline bool is_valid_secret_material(const std::string& material){
+    if(material.size()<64 || (material.size()%2)!=0) return false;
+    for(char c:material){
+        const bool digit=c>='0'&&c<='9';
+        const bool lower=c>='a'&&c<='f';
+        const bool upper=c>='A'&&c<='F';
+        if(!digit&&!lower&&!upper) return false;
+    }
+    return true;
+}
+
 inline std::vector<uint8_t> hex_decode(const std::string& s){
     auto v=[](char c)->uint8_t{
         if(c>='0'&&c<='9') return uint8_t(c-'0');

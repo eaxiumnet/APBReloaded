@@ -19,6 +19,8 @@ struct MailMessage {
 	std::string from, to, subject, body;
 	std::vector<MailAttachment> attachments;
 	bool read = false;
+	bool claimed = false; // attachments transferred to the recipient (retail "Take All")
+	int64_t created_utc = 0; // epoch seconds; 0 = no expiry tracking (legacy/system mail)
 };
 
 class MailService {
@@ -27,19 +29,20 @@ public:
 	int64_t next_mail_id = 1;
 
 	bool SendMail(const std::string& from, const std::string& to, const std::string& subject,
-		const std::string& body, int64_t cash = 0) {
+		const std::string& body, int64_t cash = 0, int64_t created_utc = 0) {
 		std::vector<MailAttachment> att;
 		if (cash > 0) att.push_back(MailAttachment{"", 0, cash});
-		return SendMailWithAttachments(from, to, subject, body, att);
+		return SendMailWithAttachments(from, to, subject, body, att, created_utc);
 	}
 
 	bool SendMailWithAttachments(const std::string& from, const std::string& to, const std::string& subject,
-		const std::string& body, const std::vector<MailAttachment>& attachments) {
+		const std::string& body, const std::vector<MailAttachment>& attachments, int64_t created_utc = 0) {
 		if (from.empty() || to.empty()) return false;
 		MailMessage m;
 		m.id = next_mail_id++;
 		m.from = from; m.to = to; m.subject = subject; m.body = body;
 		m.attachments = attachments;
+		m.created_utc = created_utc;
 		messages.push_back(m);
 		return true;
 	}
@@ -68,6 +71,79 @@ public:
 	bool MarkRead(int64_t id) {
 		if (MailMessage* m = Find(id)) { m->read = true; return true; }
 		return false;
+	}
+
+	// Retail attachment claim ("Take All"): hands the recipient the cash+item
+	// attachments exactly once, then marks the message read + claimed. The returned
+	// attachments are what the caller applies to currency/inventory. A second claim
+	// (or a message with no attachments) returns empty.
+	//
+	// FAIL-CLOSED on item payloads (M14 S10): inventory granting does not exist yet,
+	// so an item-bearing message is refused outright rather than claimed-and-dropped.
+	// Leaving claimed=false is load-bearing — Delete() refuses while attachments are
+	// unclaimed, so the message stays undeletable and reclaimable until items land.
+	std::vector<MailAttachment> ClaimAttachments(int64_t id) {
+		MailMessage* m = Find(id);
+		if (!m || m->claimed || m->attachments.empty()) return {};
+		if (HasItemAttachments(id)) return {};
+		m->claimed = true;
+		m->read = true;
+		return m->attachments;
+	}
+
+	bool HasItemAttachments(int64_t id) const {
+		const MailMessage* m = Find(id);
+		if (!m) return false;
+		for (const MailAttachment& a : m->attachments) if (!a.item_id.empty()) return true;
+		return false;
+	}
+
+	// Flag-only half of the journaled claim: the caller credits cash and persists a
+	// durable receipt BEFORE the mail flag is committed, so this step must be
+	// callable on its own. Refuses a second commit so replay cannot double-claim.
+	bool CommitClaimed(int64_t id) {
+		MailMessage* m = Find(id);
+		if (!m || m->claimed) return false;
+		m->claimed = true;
+		m->read = true;
+		return true;
+	}
+
+	bool HasUnclaimedAttachments(int64_t id) const {
+		const MailMessage* m = Find(id);
+		return m && !m->claimed && !m->attachments.empty();
+	}
+
+	// Retail discard: a message that still holds unclaimed attachments cannot be
+	// deleted (the client forces "Take All" first). Returns false in that case.
+	bool Delete(int64_t id) {
+		for (auto it = messages.begin(); it != messages.end(); ++it) {
+			if (it->id == id) {
+				if (!it->claimed && !it->attachments.empty()) return false;
+				messages.erase(it);
+				return true;
+			}
+		}
+		return false;
+	}
+
+	// Retail mail expiry: messages older than ttl_seconds are purged (retail default is
+	// ~30 days = 2592000s). Only messages with created_utc > 0 are considered — legacy /
+	// system mail with no timestamp never expires. `now` is supplied by the caller (the
+	// server clock) so the Domain stays clock-free and deterministic under test. Returns
+	// the number of messages removed. Callers that want retail "return unclaimed
+	// attachments to sender" semantics should inspect HasUnclaimedAttachments first.
+	int32_t PurgeExpired(int64_t now, int64_t ttl_seconds) {
+		int32_t removed = 0;
+		for (auto it = messages.begin(); it != messages.end(); ) {
+			if (it->created_utc > 0 && now - it->created_utc >= ttl_seconds) {
+				it = messages.erase(it);
+				++removed;
+			} else {
+				++it;
+			}
+		}
+		return removed;
 	}
 };
 

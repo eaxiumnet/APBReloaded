@@ -3,6 +3,7 @@
 #include <sstream>
 #include <cctype>
 #include <cstdlib>
+#include <algorithm>
 namespace apb {
 namespace {
 std::string ReadFile(const std::string& path) {
@@ -103,6 +104,99 @@ const MissionScriptDef* MissionScriptLibrary::Find(const std::string& id) const 
 std::vector<std::string> MissionScriptLibrary::ListIds() const {
 	std::vector<std::string> ids; for (const auto& kv : scripts) ids.push_back(kv.first); return ids;
 }
+bool MissionTitleCatalog::LoadFromJsonFile(const std::string& path) { return LoadFromJsonText(ReadFile(path)); }
+bool MissionTitleCatalog::LoadFromJsonText(const std::string& text) {
+	if (text.empty()) return false; /* merge: do not clear existing titles */
+	int added = 0;
+	for (const auto& obj : SplitObjects(text)) {
+		std::string id = JStr(obj, "id"); if (id.empty()) continue;
+		titles[id] = JStr(obj, "title", id); ++added;
+	}
+	return added > 0;
+}
+const std::string* MissionTitleCatalog::Find(const std::string& id) const {
+	auto it = titles.find(id); return it == titles.end() ? nullptr : &it->second;
+}
+std::string MissionTitleCatalog::TitleFor(const std::string& id, const std::string& def) const {
+	auto it = titles.find(id); return it == titles.end() ? def : it->second;
+}
+int32_t MissionTitleCatalog::ApplyTo(MissionScriptLibrary& lib) const {
+	int32_t applied = 0;
+	for (auto& kv : lib.scripts) {
+		auto it = titles.find(kv.first);
+		if (it != titles.end() && kv.second.title != it->second) { kv.second.title = it->second; ++applied; }
+	}
+	return applied;
+}
+bool MissionBriefCatalog::LoadFromJsonFile(const std::string& path) { return LoadFromJsonText(ReadFile(path)); }
+bool MissionBriefCatalog::LoadFromJsonText(const std::string& text) {
+	if (text.empty()) return false; /* merge: do not clear existing briefs */
+	int added = 0;
+	for (const auto& obj : SplitObjects(text)) {
+		std::string id = JStr(obj, "id"); if (id.empty()) continue;
+		MissionBrief b;
+		b.id = id;
+		b.template_id = JStr(obj, "template_id");
+		b.stage = (int32_t)JNum(obj, "stage", 0);
+		b.owner_brief = JStr(obj, "owner_brief");
+		b.dispatch_brief = JStr(obj, "dispatch_brief");
+		briefs[id] = b; ++added;
+	}
+	return added > 0;
+}
+const MissionBrief* MissionBriefCatalog::Find(const std::string& id) const {
+	auto it = briefs.find(id); return it == briefs.end() ? nullptr : &it->second;
+}
+std::vector<const MissionBrief*> MissionBriefCatalog::ForTemplate(const std::string& template_id) const {
+	std::vector<const MissionBrief*> out;
+	for (const auto& kv : briefs) if (kv.second.template_id == template_id) out.push_back(&kv.second);
+	std::sort(out.begin(), out.end(), [](const MissionBrief* a, const MissionBrief* b) { return a->stage < b->stage; });
+	return out;
+}
+bool MissionOperationCatalog::LoadFromJsonFile(const std::string& path) { return LoadFromJsonText(ReadFile(path)); }
+bool MissionOperationCatalog::LoadFromJsonText(const std::string& text) {
+	if (text.empty()) return false; /* merge: do not clear existing ops */
+	int added = 0;
+	for (const auto& obj : SplitObjects(text)) {
+		std::string id = JStr(obj, "id"); if (id.empty()) continue;
+		std::string label = JStr(obj, "ui_description"); if (label.empty()) continue;
+		ops[id] = label; ++added;
+	}
+	return added > 0;
+}
+const std::string* MissionOperationCatalog::Find(const std::string& id) const {
+	auto it = ops.find(id); return it == ops.end() ? nullptr : &it->second;
+}
+std::string MissionOperationCatalog::LabelFor(const std::string& id, const std::string& def) const {
+	auto it = ops.find(id); return it == ops.end() ? def : it->second;
+}
+bool MissionResultReasonCatalog::LoadFromJsonFile(const std::string& path) { return LoadFromJsonText(ReadFile(path)); }
+bool MissionResultReasonCatalog::LoadFromJsonText(const std::string& text) {
+	if (text.empty()) return false; /* merge: do not clear existing reasons */
+	int added = 0;
+	for (const auto& obj : SplitObjects(text)) {
+		std::string id = JStr(obj, "id"); if (id.empty()) continue;
+		MissionResultReason r;
+		r.id = id;
+		r.win_message = JStr(obj, "win_message");
+		r.lose_message = JStr(obj, "lose_message");
+		r.draw_message = JStr(obj, "draw_message");
+		reasons[id] = r; ++added;
+	}
+	return added > 0;
+}
+const MissionResultReason* MissionResultReasonCatalog::Find(const std::string& id) const {
+	auto it = reasons.find(id); return it == reasons.end() ? nullptr : &it->second;
+}
+std::string MissionResultReasonCatalog::WinMessage(const std::string& id, const std::string& def) const {
+	auto it = reasons.find(id); return it == reasons.end() ? def : it->second.win_message;
+}
+std::string MissionResultReasonCatalog::LoseMessage(const std::string& id, const std::string& def) const {
+	auto it = reasons.find(id); return it == reasons.end() ? def : it->second.lose_message;
+}
+std::string MissionResultReasonCatalog::DrawMessage(const std::string& id, const std::string& def) const {
+	auto it = reasons.find(id); return it == reasons.end() ? def : it->second.draw_message;
+}
 MissionRun MissionRun::FromScript(const MissionScriptDef& script, Faction owner) {
 	MissionRun m; m.id = script.id; m.title = script.title; m.owner = owner; m.contact_id = script.contact_id;
 	m.source_script_id = script.id; m.opposition_on_takeouts = script.opposition_on_takeouts;
@@ -144,6 +238,35 @@ bool MissionRun::Progress(double amount) {
 void MissionRun::RegisterOppositionTakeout() {
 	++takeouts; opposition_contesting = true;
 	if (takeout_fail_at > 0 && takeouts >= takeout_fail_at) status = MissionStatus::Failed;
+}
+bool MissionRun::AdvanceOpposition(double amount) {
+	if (status != MissionStatus::Active) return false;
+	if (!opposition_contesting || amount <= 0) return false;
+	MissionStageRuntime* s = Current(); if (!s) return false;
+	s->opp_progress = (s->opp_progress + amount < s->def.target_progress) ? s->opp_progress + amount : s->def.target_progress;
+	if (s->opp_progress + 1e-9 >= s->def.target_progress) {
+		opposition_won = true;
+		status = MissionStatus::Failed;
+		return true;
+	}
+	return false;
+}
+bool MissionRun::CheckTimeout(double now_sec) {
+	if (status != MissionStatus::Active) return false;
+	MissionStageRuntime* s = Current(); if (!s) return false;
+	if (s->def.time_limit_sec <= 0) { timed_stage_index = current_index; current_stage_deadline_sec = 0; return false; }
+	if (timed_stage_index != current_index) {
+		// Arm the countdown for the stage that just became current.
+		timed_stage_index = current_index;
+		current_stage_deadline_sec = now_sec + s->def.time_limit_sec;
+		return false;
+	}
+	if (now_sec > current_stage_deadline_sec) {
+		timed_out = true;
+		status = MissionStatus::Failed;
+		return true;
+	}
+	return false;
 }
 void MissionRun::Fail(const std::string&) { status = MissionStatus::Failed; }
 }
