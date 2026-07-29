@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "decision_sources": [
+    "work/_active.md D1-D4, D8, D12, D14-D15",
+    "work/menu2011_fidelity_checklist.md",
+    "tools/import_ledger.json"
+  ],
+  "rules": [
+    {
+      "domain": "menu_strings",
+      "precedence": ["2011", "retail", "apbdb"],
+      "decision": "D2: the 2011 menu labels and presentation are authoritative."
+    },
+    {
+      "domain": "menu_art",
+      "precedence": ["2011", "retail", "apbdb"],
+      "decision": "D2/D3: the 2011 UIScene art and boot feel are authoritative."
+    },
+    {
+      "domain": "menu_sfx",
+      "precedence": ["2011", "retail", "apbdb"],
+      "decision": "D2: the 2011 interaction feedback is authoritative."
+    },
+    {
+      "domain": "character_customization",
+      "precedence": ["retail", "apbdb", "2011"],
+      "decision": "D4: retail wardrobe flow, palettes, and camera framing are authoritative."
+    },
+    {
+      "domain": "district_assets",
+      "precedence": ["retail", "apbdb", "2011"],
+      "decision": "D8: retail district assets and placement content are authoritative."
+    },
+    {
+      "domain": "vehicle_catalog",
+      "precedence": ["apbdb", "retail", "2011"],
+      "decision": "D15: apbdb is the catalog/stat source; unresolved uniform defaults remain a named gap."
+    },
+    {
+      "domain": "vehicle_assets",
+      "precedence": ["retail", "apbdb", "2011"],
+      "decision": "D15: retail is authoritative for staged vehicle art."
+    },
+    {
+      "domain": "mission_structure",
+      "precedence": ["apbdb", "retail", "2011"],
+      "decision": "D14: apbdb supplies structural mission records pending richer district triggers."
+    },
+    {
+      "domain": "mission_presentation",
+      "precedence": ["retail", "apbdb", "2011"],
+      "decision": "D14: retail INT tables are authoritative for mission names and objectives."
+    },
+    {
+      "domain": "ui_anchors",
+      "precedence": ["2011", "retail", "apbdb"],
+      "decision": "D2: measured 2011 UIScene geometry wins for the frontend layout."
+    },
+    {
+      "domain": "ui_anchor_data",
+      "precedence": ["retail", "apbdb", "2011"],
+      "decision": "Retail DisplayPoint data is authoritative for modern district UI anchors."
+    },
+    {
+      "domain": "ui_screenshot",
+      "precedence": ["2011", "retail", "apbdb"],
+      "decision": "D2/D3: fixed-camera frontend visual comparison uses the 2011 reference row."
+    }
+  ]
+}

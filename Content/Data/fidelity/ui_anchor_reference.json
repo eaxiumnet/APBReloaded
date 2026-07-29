@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "source": "2011",
+  "source_evidence": "work/menu2011_layout_extracted.md",
+  "expected_behavior": "The frontend preserves the 2011 UIScene design canvases and named Login anchors through a fixed ScaleToFit implementation.",
+  "login": {
+    "design_width": 1152,
+    "design_height": 720,
+    "required_tokens": [
+      "LoginDesignW = 1152.f",
+      "LoginDesignH = 720.f",
+      "UIPanel_EULA_MainPanel",
+      "EditBox_UserID",
+      "Button_Login"
+    ]
+  },
+  "character_select": {
+    "design_width": 800,
+    "design_height": 600,
+    "required_tokens": [
+      "LobbyDesignW = 800.f",
+      "LobbyDesignH = 600.f",
+      "UIList_CharacterList",
+      "cUILabelButton_Play"
+    ]
+  }
+}

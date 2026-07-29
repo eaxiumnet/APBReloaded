@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "frontend.login.fixed_camera.v1",
+  "status": "deferred_require_binary",
+  "reference_manifest_row": "menu.art.login_scene",
+  "capture_manifest_row": "ui.screenshot.login.fixed_camera",
+  "reference_asset": "/Game/Imported/UI/Menu2011/Reference/Login_Scene_Preview",
+  "map": "/Game/Maps/Lvl_APB_Frontend",
+  "stage": "Login",
+  "camera_owner": "Source/APBReloaded/Systems/Frontend/APBFrontendGameMode.cpp",
+  "camera": {
+    "location": [0, 0, 200],
+    "rotation": [-10, 0, 0],
+    "field_of_view": 90
+  },
+  "resolution": {
+    "width": 1600,
+    "height": 900
+  },
+  "capture_command": "pwsh -NoProfile -File tools/capture_frontend.ps1 -Map /Game/Maps/Lvl_APB_Frontend -Stage Login -ResX 1600 -ResY 900 -OutDir work/logs/fidelity",
+  "comparison": "perceptual_image_diff",
+  "pass_threshold": {
+    "sample_stride": 8,
+    "pixel_tolerance": 0.12,
+    "max_mean_absolute_error": 0.18,
+    "max_changed_fraction": 0.65
+  },
+  "baseline_capture": "work/logs/fidelity/frontend_login_reference.png",
+  "candidate_capture": "work/logs/fidelity/frontend_login_capture.png",
+  "deferred_reason": "Requires an Unreal Editor/Game binary built from the current worktree; Task 4 explicitly defers capture execution to the orchestrator."
+}

@@ -1,0 +1,1084 @@
+{
+  "district_id": "Financial",
+  "source_package": "FinancialDistrict_Block09",
+  "source_packages": [
+    "FinancialDistrict_Block09",
+    "FinancialDistrict_Props_Block09",
+    "FinancialDistrict_ArtProps_Block09",
+    "FinancialDistrict_Block09_Design"
+  ],
+  "layout": "real_ue3_tagged_transforms",
+  "layout_note": "Real Location/Rotation(URU->deg)/Scale3D from UE3 tagged properties. mesh_id assigned only where resolved mesh maps to an imported asset; props referencing un-imported prefab packages are omitted.",
+  "actor_count": 46,
+  "unresolved_actor_count": 461,
+  "player_start": [
+    178028.16332608697,
+    130545.90521739128,
+    1739.02
+  ],
+  "vehicle_start": [
+    178628.16332608697,
+    130345.90521739128,
+    1689.02
+  ],
+  "placements": [
+    {
+      "mesh_id": "FinancialDistrict_Block09_Generic_0011_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FinancialDistrict_Block09_Generic_0011_LOD_0.FinancialDistrict_Block09_Generic_0011_LOD_0",
+      "location": [
+        177464.391,
+        118496.914,
+        -524.983
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_1345",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FinancialDistrict_Block09_High-street_shop_MC_0001_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FinancialDistrict_Block09_High-street_shop_MC_0001_LOD_0.FinancialDistrict_Block09_High-street_shop_MC_0001_LOD_0",
+      "location": [
+        177147.531,
+        117692.797,
+        0.018
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_1346",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FinancialDistrict_Block09_Generic_0013_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FinancialDistrict_Block09_Generic_0013_LOD_0.FinancialDistrict_Block09_Generic_0013_LOD_0",
+      "location": [
+        179419.531,
+        116363.234,
+        -624.982
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_1432",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FinancialDistrict_Block09_Upmarket_Corporate_UC_0001_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FinancialDistrict_Block09_Upmarket_Corporate_UC_0001_LOD_0.FinancialDistrict_Block09_Upmarket_Corporate_UC_0001_LOD_0",
+      "location": [
+        179419.531,
+        116612.602,
+        -624.982
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_1433",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FinancialDistrict_Block09_Upmarket_Corporate_UC_0002_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FinancialDistrict_Block09_Upmarket_Corporate_UC_0002_LOD_0.FinancialDistrict_Block09_Upmarket_Corporate_UC_0002_LOD_0",
+      "location": [
+        183388.156,
+        122188.0,
+        0.019
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_1434",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FinancialDistrict_Block09_Upmarket_Corporate_UC_0004_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FinancialDistrict_Block09_Upmarket_Corporate_UC_0004_LOD_0.FinancialDistrict_Block09_Upmarket_Corporate_UC_0004_LOD_0",
+      "location": [
+        185039.266,
+        126016.984,
+        0.019
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_1435",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FinancialDistrict_Block09_Upmarket_Corporate_UC_0007_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FinancialDistrict_Block09_Upmarket_Corporate_UC_0007_LOD_0.FinancialDistrict_Block09_Upmarket_Corporate_UC_0007_LOD_0",
+      "location": [
+        179669.641,
+        121387.211,
+        0.018
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_1436",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FinancialDistrict_Block09_Upmarket_Corporate_UC_0008_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FinancialDistrict_Block09_Upmarket_Corporate_UC_0008_LOD_0.FinancialDistrict_Block09_Upmarket_Corporate_UC_0008_LOD_0",
+      "location": [
+        181481.047,
+        119831.797,
+        0.018
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_1437",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FinancialDistrict_Block09_Upmarket_Corporate_UC_0011_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FinancialDistrict_Block09_Upmarket_Corporate_UC_0011_LOD_0.FinancialDistrict_Block09_Upmarket_Corporate_UC_0011_LOD_0",
+      "location": [
+        176283.531,
+        116736.477,
+        0.018
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_1438",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FinancialDistrict_Block09_Upmarket_Corporate_UC_0012_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FinancialDistrict_Block09_Upmarket_Corporate_UC_0012_LOD_0.FinancialDistrict_Block09_Upmarket_Corporate_UC_0012_LOD_0",
+      "location": [
+        180817.078,
+        124945.727,
+        0.019
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_1439",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FinancialDistrict_Block09_Upmarket_Corporate_UC_0015_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FinancialDistrict_Block09_Upmarket_Corporate_UC_0015_LOD_0.FinancialDistrict_Block09_Upmarket_Corporate_UC_0015_LOD_0",
+      "location": [
+        185756.531,
+        123920.414,
+        0.019
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_1440",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FinancialDistrict_Block09_Upmarket_Corporate_UC_0018_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FinancialDistrict_Block09_Upmarket_Corporate_UC_0018_LOD_0.FinancialDistrict_Block09_Upmarket_Corporate_UC_0018_LOD_0",
+      "location": [
+        181231.5,
+        122615.781,
+        200.019
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_1441",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FinancialDistrict_Block09_Business_MC_0001_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FinancialDistrict_Block09_Business_MC_0001_LOD_0.FinancialDistrict_Block09_Business_MC_0001_LOD_0",
+      "location": [
+        175026.641,
+        134138.141,
+        0.019
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_1871",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FinancialDistrict_Block09_Generic_0001_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FinancialDistrict_Block09_Generic_0001_LOD_0.FinancialDistrict_Block09_Generic_0001_LOD_0",
+      "location": [
+        173327.469,
+        137472.156,
+        0.02
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_1872",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FinancialDistrict_Block09_Generic_0003_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FinancialDistrict_Block09_Generic_0003_LOD_0.FinancialDistrict_Block09_Generic_0003_LOD_0",
+      "location": [
+        174487.891,
+        132769.797,
+        0.019
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_1873",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FinancialDistrict_Block09_Generic_0009_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FinancialDistrict_Block09_Generic_0009_LOD_0.FinancialDistrict_Block09_Generic_0009_LOD_0",
+      "location": [
+        171049.156,
+        135066.203,
+        0.019
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_1874",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FinancialDistrict_Block09_Generic_0010_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FinancialDistrict_Block09_Generic_0010_LOD_0.FinancialDistrict_Block09_Generic_0010_LOD_0",
+      "location": [
+        171108.453,
+        135516.281,
+        0.019
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_1875",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FinancialDistrict_Block09_Generic_0012_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FinancialDistrict_Block09_Generic_0012_LOD_0.FinancialDistrict_Block09_Generic_0012_LOD_0",
+      "location": [
+        173842.234,
+        134707.344,
+        0.019
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_1876",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FinancialDistrict_Block09_Generic_0014_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FinancialDistrict_Block09_Generic_0014_LOD_0.FinancialDistrict_Block09_Generic_0014_LOD_0",
+      "location": [
+        172521.781,
+        135734.469,
+        0.019
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_1877",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FinancialDistrict_Block09_Generic_0017_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FinancialDistrict_Block09_Generic_0017_LOD_0.FinancialDistrict_Block09_Generic_0017_LOD_0",
+      "location": [
+        173822.609,
+        137045.891,
+        1210.02
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_1878",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FinancialDistrict_Block09_Generic_0018_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FinancialDistrict_Block09_Generic_0018_LOD_0.FinancialDistrict_Block09_Generic_0018_LOD_0",
+      "location": [
+        173669.297,
+        138867.0,
+        1489.02
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_1879",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FinancialDistrict_Block09_Generic_0019_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FinancialDistrict_Block09_Generic_0019_LOD_0.FinancialDistrict_Block09_Generic_0019_LOD_0",
+      "location": [
+        173230.75,
+        138400.625,
+        1210.02
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_1880",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FinancialDistrict_Block09_Upmarket_Corporate_UC_0014_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FinancialDistrict_Block09_Upmarket_Corporate_UC_0014_LOD_0.FinancialDistrict_Block09_Upmarket_Corporate_UC_0014_LOD_0",
+      "location": [
+        174653.875,
+        137887.562,
+        0.02
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_1881",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FinancialDistrict_Block09_Upmarket_Corporate_UC_0016_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FinancialDistrict_Block09_Upmarket_Corporate_UC_0016_LOD_0.FinancialDistrict_Block09_Upmarket_Corporate_UC_0016_LOD_0",
+      "location": [
+        176177.484,
+        144751.625,
+        0.02
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_1882",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FinancialDistrict_Block09_Generic_0002_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FinancialDistrict_Block09_Generic_0002_LOD_0.FinancialDistrict_Block09_Generic_0002_LOD_0",
+      "location": [
+        182150.734,
+        127349.891,
+        200.019
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_1954",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FinancialDistrict_Block09_Generic_0004_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FinancialDistrict_Block09_Generic_0004_LOD_0.FinancialDistrict_Block09_Generic_0004_LOD_0",
+      "location": [
+        178933.391,
+        130178.312,
+        200.019
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_1955",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FinancialDistrict_Block09_Generic_0005_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FinancialDistrict_Block09_Generic_0005_LOD_0.FinancialDistrict_Block09_Generic_0005_LOD_0",
+      "location": [
+        180189.625,
+        136732.062,
+        0.02
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_1956",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FinancialDistrict_Block09_Generic_0006_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FinancialDistrict_Block09_Generic_0006_LOD_0.FinancialDistrict_Block09_Generic_0006_LOD_0",
+      "location": [
+        176414.328,
+        135393.234,
+        0.019
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_1957",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FinancialDistrict_Block09_Generic_0007_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FinancialDistrict_Block09_Generic_0007_LOD_0.FinancialDistrict_Block09_Generic_0007_LOD_0",
+      "location": [
+        177637.625,
+        133086.312,
+        0.019
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_1958",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FinancialDistrict_Block09_Generic_0008_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FinancialDistrict_Block09_Generic_0008_LOD_0.FinancialDistrict_Block09_Generic_0008_LOD_0",
+      "location": [
+        177925.781,
+        137245.859,
+        800.02
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_1959",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FinancialDistrict_Block09_Generic_0015_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FinancialDistrict_Block09_Generic_0015_LOD_0.FinancialDistrict_Block09_Generic_0015_LOD_0",
+      "location": [
+        179572.641,
+        143037.656,
+        500.02
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_1960",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FinancialDistrict_Block09_Generic_0016_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FinancialDistrict_Block09_Generic_0016_LOD_0.FinancialDistrict_Block09_Generic_0016_LOD_0",
+      "location": [
+        174863.562,
+        135566.125,
+        810.018
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_1961",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FinancialDistrict_Block09_Industrial_Zone_LC_0001_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FinancialDistrict_Block09_Industrial_Zone_LC_0001_LOD_0.FinancialDistrict_Block09_Industrial_Zone_LC_0001_LOD_0",
+      "location": [
+        177511.828,
+        143400.141,
+        0.02
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_1962",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FinancialDistrict_Block09_Industrial_Zone_LC_0002_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FinancialDistrict_Block09_Industrial_Zone_LC_0002_LOD_0.FinancialDistrict_Block09_Industrial_Zone_LC_0002_LOD_0",
+      "location": [
+        175344.844,
+        146346.344,
+        0.021
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_1963",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FinancialDistrict_Block09_Upmarket_Corporate_UC_0003_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FinancialDistrict_Block09_Upmarket_Corporate_UC_0003_LOD_0.FinancialDistrict_Block09_Upmarket_Corporate_UC_0003_LOD_0",
+      "location": [
+        182375.234,
+        127922.578,
+        0.019
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_1964",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FinancialDistrict_Block09_Upmarket_Corporate_UC_0005_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FinancialDistrict_Block09_Upmarket_Corporate_UC_0005_LOD_0.FinancialDistrict_Block09_Upmarket_Corporate_UC_0005_LOD_0",
+      "location": [
+        178927.547,
+        140539.438,
+        0.02
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_1965",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FinancialDistrict_Block09_Upmarket_Corporate_UC_0006_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FinancialDistrict_Block09_Upmarket_Corporate_UC_0006_LOD_0.FinancialDistrict_Block09_Upmarket_Corporate_UC_0006_LOD_0",
+      "location": [
+        183706.359,
+        124026.492,
+        0.019
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_1966",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FinancialDistrict_Block09_Upmarket_Corporate_UC_0009_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FinancialDistrict_Block09_Upmarket_Corporate_UC_0009_LOD_0.FinancialDistrict_Block09_Upmarket_Corporate_UC_0009_LOD_0",
+      "location": [
+        176271.141,
+        140175.422,
+        0.02
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_1967",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FinancialDistrict_Block09_Upmarket_Corporate_UC_0010_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FinancialDistrict_Block09_Upmarket_Corporate_UC_0010_LOD_0.FinancialDistrict_Block09_Upmarket_Corporate_UC_0010_LOD_0",
+      "location": [
+        180633.688,
+        141026.25,
+        0.02
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_1968",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FinancialDistrict_Block09_Upmarket_Corporate_UC_0013_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FinancialDistrict_Block09_Upmarket_Corporate_UC_0013_LOD_0.FinancialDistrict_Block09_Upmarket_Corporate_UC_0013_LOD_0",
+      "location": [
+        180312.25,
+        128855.75,
+        0.019
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_1969",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FinancialDistrict_Block09_Upmarket_Corporate_UC_0017_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FinancialDistrict_Block09_Upmarket_Corporate_UC_0017_LOD_0.FinancialDistrict_Block09_Upmarket_Corporate_UC_0017_LOD_0",
+      "location": [
+        179838.484,
+        138886.359,
+        0.02
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_1970",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FD_B09_AstragalSign_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FD_B09_AstragalSign_LOD_0.FD_B09_AstragalSign_LOD_0",
+      "location": [
+        179597.375,
+        129688.578,
+        837.758
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_224",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FD_B09_SanParoPost_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FD_B09_SanParoPost_LOD_0.FD_B09_SanParoPost_LOD_0",
+      "location": [
+        179197.609,
+        124734.383,
+        804.803
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_225",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FD_B09_boxstorespwn_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FD_B09_boxstorespwn_LOD_0.FD_B09_boxstorespwn_LOD_0",
+      "location": [
+        180322.656,
+        118003.719,
+        -291.112
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_231",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FD_B09_Piping_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FD_B09_Piping_LOD_0.FD_B09_Piping_LOD_0",
+      "location": [
+        179672.406,
+        116267.984,
+        -261.574
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_233",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    },
+    {
+      "mesh_id": "FD_B09_Grate_VertexLit_LOD_0",
+      "ue_path": "/Game/Imported/Districts/Financial/FD_B09_Grate_VertexLit_LOD_0.FD_B09_Grate_VertexLit_LOD_0",
+      "location": [
+        177861.031,
+        117483.719,
+        -787.51
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "package": "FinancialDistrict_Block09",
+      "actor": "cStreamedBuildingActor_240",
+      "actor_class": "cStreamedBuildingActor",
+      "mesh_source": "component"
+    }
+  ]
+}
