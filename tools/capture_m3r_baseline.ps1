@@ -38,15 +38,38 @@ function Test-OwnershipManifest($Manifest) {
     }
     $ids = @($Manifest.tasks | ForEach-Object { [int]$_.task } | Sort-Object)
     if (($ids -join ',') -ne ((1..25) -join ',')) { throw 'BASELINE_OWNERSHIP_REJECT task_ids' }
+    $owners = @{}
     foreach ($task in $Manifest.tasks) {
         $paths = @($task.owned_paths)
         if ($paths.Count -ne @($paths | Sort-Object -Unique).Count) {
             throw "BASELINE_OWNERSHIP_REJECT duplicate_path task=$($task.task)"
         }
+        if ($null -eq $task.initial_sha256) {
+            throw "BASELINE_OWNERSHIP_REJECT missing_initial_sha task=$($task.task)"
+        }
+        $initialPaths = @($task.initial_sha256.PSObject.Properties.Name)
+        if (@($paths | Where-Object { $_ -notin $initialPaths }).Count -gt 0 -or
+            @($initialPaths | Where-Object { $_ -notin $paths }).Count -gt 0) {
+            throw "BASELINE_OWNERSHIP_REJECT initial_path_mismatch task=$($task.task)"
+        }
+        if ($task.task -lt 25 -and $null -eq $task.PSObject.Properties['successor']) {
+            throw "BASELINE_OWNERSHIP_REJECT missing_successor task=$($task.task)"
+        }
         foreach ($path in $paths) {
             if ([IO.Path]::IsPathRooted($path) -or $path -match '(^|/)\.\.(/|$)') {
                 throw "BASELINE_OWNERSHIP_REJECT unsafe_path task=$($task.task) path=$path"
             }
+            if ($path -match '^\.omo/evidence/' -and $task.task -notin @(23, 24)) {
+                throw "BASELINE_OWNERSHIP_REJECT evidence_root_pollution task=$($task.task) path=$path"
+            }
+            $initial = [string]$task.initial_sha256.$path
+            if ($initial -ne 'absent' -and $initial -notmatch '^[0-9a-f]{64}$') {
+                throw "BASELINE_OWNERSHIP_REJECT invalid_initial_sha task=$($task.task) path=$path"
+            }
+            if ($owners.ContainsKey($path)) {
+                throw "BASELINE_OWNERSHIP_REJECT parallel_owner_overlap path=$path tasks=$($owners[$path]),$($task.task)"
+            }
+            $owners[$path] = $task.task
         }
     }
 }
@@ -70,13 +93,37 @@ if ($SelfTestOwnershipGuard) {
         $before = Get-Sha256 $copy
         Add-Content -LiteralPath $copy -Value ' '
         $after = Get-Sha256 $copy
+        function Test-RejectedManifest($Candidate) {
+            try { Test-OwnershipManifest $Candidate; return $false }
+            catch { return $true }
+        }
+        function Copy-OwnershipManifest {
+            return ($ownership | ConvertTo-Json -Depth 100 | ConvertFrom-Json)
+        }
+
+        $unowned = Copy-OwnershipManifest
+        $unowned.tasks[0].owned_paths += 'unowned/path.txt'
+
+        $parallel = Copy-OwnershipManifest
+        $duplicate = [string]$parallel.tasks[0].owned_paths[0]
+        $parallel.tasks[1].owned_paths += $duplicate
+        $parallel.tasks[1].initial_sha256 | Add-Member -NotePropertyName $duplicate -NotePropertyValue 'absent'
+
+        $missingSuccessor = Copy-OwnershipManifest
+        $missingSuccessor.tasks[1].PSObject.Properties.Remove('successor')
+
+        $polluted = Copy-OwnershipManifest
+        $pollutedPath = '.omo/evidence/polluted.json'
+        $polluted.tasks[0].owned_paths += $pollutedPath
+        $polluted.tasks[0].initial_sha256 | Add-Member -NotePropertyName $pollutedPath -NotePropertyValue 'absent'
+
         $fixtureResults = [ordered]@{
             ownership_mismatch = ($before -ne $after)
-            unowned_path = $true
-            parallel_owner_overlap = $true
+            unowned_path = Test-RejectedManifest $unowned
+            parallel_owner_overlap = Test-RejectedManifest $parallel
             stale_pre_edit_hash = $true
-            missing_successor_handoff = $true
-            evidence_root_pollution = $true
+            missing_successor_handoff = Test-RejectedManifest $missingSuccessor
+            evidence_root_pollution = Test-RejectedManifest $polluted
         }
         $negative = [ordered]@{
             schema_version = 1

@@ -132,6 +132,17 @@ foreach ($path in $OwnedPaths) {
     if ($path.Replace('\','/') -notin $declared) { throw "unowned path: $path" }
 }
 
+if (-not $TaskPatch) {
+    $unstagedOwned = @(Invoke-Git $ProjectRoot (@('diff','--name-only','--') + $OwnedPaths))
+    $stagedOwned = @(Invoke-Git $ProjectRoot (@('diff','--cached','--name-only','--') + $OwnedPaths))
+    $untrackedOwned = @(Invoke-Git $ProjectRoot (@('ls-files','--others','--exclude-standard','--') + $OwnedPaths))
+    $dirtyOwned = @($unstagedOwned + $stagedOwned + $untrackedOwned | Sort-Object -Unique)
+    if ($dirtyOwned.Count -gt 0) {
+        Write-Output 'DIRTY_DELTA_OVERLAP_BLOCKED'
+        throw "owned paths are dirty without an explicit task patch: $($dirtyOwned -join ', ')"
+    }
+}
+
 $headBefore = ((Invoke-Git $ProjectRoot @('rev-parse','HEAD') | Select-Object -First 1).ToString()).Trim()
 $branch = ((Invoke-Git $ProjectRoot @('symbolic-ref','--quiet','HEAD') | Select-Object -First 1).ToString()).Trim()
 $indexTreeBefore = ((Invoke-Git $ProjectRoot @('write-tree') | Select-Object -First 1).ToString()).Trim()
