@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "plan": ".omo/plans/m3r-strict-asset-provenance-reset.md",
+  "ownership_epoch": "m3r-task-1-baseline",
+  "tasks": [
+    {"task":1,"owned_paths":["tools/m3r_task_ownership.json","tools/capture_m3r_baseline.ps1","tools/commit_m3r_task_delta.ps1","work/_active.md","work/ARCHITECTURE.md"],"initial_sha256":{"tools/m3r_task_ownership.json":"absent","tools/capture_m3r_baseline.ps1":"absent","tools/commit_m3r_task_delta.ps1":"absent","work/_active.md":"2735b7ac065ffc2b67e881d154d12df23ad8a51cc98ca0856efbde5064683ec6","work/ARCHITECTURE.md":"06d6a7371a0b626c19eaf0d1ef6b7558caf1ca3cfe97c86702ca467e83daf177"},"read_only_references":["tools/import_ledger.json","Content/Data","Source","Config"],"successor":2},
+    {"task":2,"owned_paths":["tools/source_registry.json","tools/check_source_registry.ps1","tools/scripts"],"read_only_references":["tools/m3r_task_ownership.json"],"successor":3},
+    {"task":3,"owned_paths":["tools/import_ledger.json","tools/scripts/build_import_status.py","tools/scripts/test_build_import_status.py"],"read_only_references":["tools/m3r_task_ownership.json"],"successor":6},
+    {"task":4,"owned_paths":["Content/Data/catalog_provenance_manifest.json","Content/Data/fidelity"],"read_only_references":["tools/import_ledger.json"],"successor":6},
+    {"task":5,"owned_paths":["tools/scripts/enumerate_assets.py","work/m3r_r1_inventory.md"],"read_only_references":["tools/import_ledger.json"],"successor":6},
+    {"task":6,"owned_paths":["Content/Data/fidelity/canonicalization_manifest.json","tools/scripts"],"read_only_references":["tools/import_ledger.json"],"successor":7},
+    {"task":7,"owned_paths":["Source/APBReloaded/Systems/Frontend","Content/Imported/UI/Menu2011","Content/Movies"],"read_only_references":["tools/import_ledger.json"],"successor":15},
+    {"task":8,"owned_paths":["Source/APBReloaded/Systems/Frontend","Source/APBReloaded/Systems/District","Content/Imported/Characters"],"read_only_references":["tools/import_ledger.json"],"successor":11},
+    {"task":9,"owned_paths":["Source/APBReloaded/Systems/District","Content/Imported/Vehicles","Content/Imported/Weapons","Content/Audio"],"read_only_references":["tools/import_ledger.json"],"successor":11},
+    {"task":10,"owned_paths":["Source/APBReloaded/Systems/District","Content/Imported/Districts","Content/Data/placements"],"read_only_references":["tools/import_ledger.json"],"successor":12},
+    {"task":11,"owned_paths":["tools/scripts/validate_mesh_semantics.py","tools/scripts/validate_placement_semantics.py"],"read_only_references":["tools/import_ledger.json"],"successor":16},
+    {"task":12,"owned_paths":["tools/scripts/validate_texture_semantics.py","tools/scripts/validate_material_semantics.py"],"read_only_references":["tools/import_ledger.json"],"successor":16},
+    {"task":13,"owned_paths":["tools/scripts/validate_media_semantics.py"],"read_only_references":["tools/import_ledger.json"],"successor":16},
+    {"task":14,"owned_paths":["tools/scripts/validate_animation_semantics.py"],"read_only_references":["tools/import_ledger.json"],"successor":16},
+    {"task":15,"owned_paths":["tools/scripts/validate_ui_visual.py","work/menu2011_fidelity_checklist.md"],"read_only_references":["tools/import_ledger.json"],"successor":16},
+    {"task":16,"owned_paths":["tools/promote_verified_assets.ps1","Content/Data/verified_asset_allowlist.json"],"read_only_references":["tools/import_ledger.json"],"successor":17},
+    {"task":17,"owned_paths":["Source/APBReloaded/Systems/APBVerifiedAssetRegistry.h","Source/APBReloaded/Systems/APBVerifiedAssetRegistry.cpp"],"read_only_references":["Content/Data/verified_asset_allowlist.json"],"successor":18},
+    {"task":18,"owned_paths":["Source/APBReloaded/Systems/Frontend","Source/APBReloaded/Systems/APBGameInstanceSubsystem.cpp"],"read_only_references":["Source/APBReloaded/Systems/APBVerifiedAssetRegistry.h"],"successor":20},
+    {"task":19,"owned_paths":["Source/APBReloaded/Systems/District"],"read_only_references":["Source/APBReloaded/Systems/APBVerifiedAssetRegistry.h"],"successor":20},
+    {"task":20,"owned_paths":["tools/check_static_cook_assets.ps1","Source/APBReloaded/Systems/APBSessionProbeSubsystem.cpp"],"read_only_references":["Content/Data/verified_asset_allowlist.json"],"successor":21},
+    {"task":21,"owned_paths":["tools/check_strict_asset_provenance.ps1"],"read_only_references":["tools/m3r_task_ownership.json"],"successor":22},
+    {"task":22,"owned_paths":["tools/run_verification_gates.ps1"],"read_only_references":["tools/check_strict_asset_provenance.ps1"],"successor":23},
+    {"task":23,"owned_paths":["work/evidence"],"read_only_references":["tools/run_verification_gates.ps1"],"successor":24},
+    {"task":24,"owned_paths":["work/evidence"],"read_only_references":["tools/run_verification_gates.ps1"],"successor":25},
+    {"task":25,"owned_paths":["work/IMPORT_STATUS.md","work/m3r_provenance_report.md","work/m3r_r1_inventory.md"],"read_only_references":["tools/import_ledger.json"],"successor":null}
+  ]
+}

@@ -20,6 +20,14 @@ execute against.
    (umodel/WwiseExtract/ffmpeg).
 5. **One concern per commit** — enforced now that the repo is git-initialized (M0).
 
+### M3R R7 gate contract
+
+Source registry -> catalog provenance -> strict canonical oracle -> semantic-class parity ->
+verified-row promotion -> verified-allowlist build/static audit -> runtime rejection/no-substitute
+probe -> `tools\check_strict_asset_provenance.ps1` -> `bind_report` -> existing runtime gates.
+Semantic proof precedes verification, verified rows precede allowlist generation, and runtime/final
+gates consume those artifacts.
+
 ## 2. Code module map
 
 One runtime module `APBReloaded` (split deferred to M17, see §10). Strict subfolder

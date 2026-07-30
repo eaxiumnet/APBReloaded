@@ -24,6 +24,14 @@ Recreate APB Reloaded **1:1 wherever possible** in UE 5.8, combining:
   vehicles, customization, dedicated-server support, anti-cheat posture.
 - Fully playable **Waterfront** and **Financial**, plus Social district and the PG arenas.
 
+### M3R R7 gate order
+
+Source registry -> catalog provenance -> strict canonical oracle -> semantic-class parity ->
+verified-row promotion -> verified-allowlist build/static audit -> runtime rejection/no-substitute
+probe -> `tools\check_strict_asset_provenance.ps1` -> `bind_report` -> existing runtime gates.
+Semantic proof precedes verification, verified rows precede allowlist generation, and runtime/final
+gates consume those artifacts.
+
 ## 2. Non-goals (standing)
 
 - Protocol compatibility with real 2011/retail clients (generated opcode header stays unused).
