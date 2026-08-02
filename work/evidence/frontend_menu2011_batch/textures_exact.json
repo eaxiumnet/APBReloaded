@@ -1,0 +1,2591 @@
+{
+  "schema": "apb_frontend_menu2011_v1",
+  "batch": "frontend_menu2011_textures",
+  "generated_by": "tools/scripts/record_frontend_menu_import.py",
+  "generated_at": "2026-08-02T22:12:12.008734+00:00",
+  "entries": [
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_GameFlowScenes.upk#Constant_BG",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_GameFlowScenes.upk",
+      "source_sha256": "b39424762c6b5fbc545b6e60e36cc956513d8bd45616dbaf8a029f3bb5cb4421",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_GameFlowScenes"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/Constant_BG.png",
+      "intermediate_sha256": "817432704f21992c8b5aa568636ae30df2ee061b7e4b19f8f45f0f8fa521d2ec",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/Constant_BG.png",
+      "extracted_sha256": "817432704f21992c8b5aa568636ae30df2ee061b7e4b19f8f45f0f8fa521d2ec",
+      "destination": "/Game/Imported/UI/Menu2011/Login/Constant_BG.Constant_BG"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_GameFlowScenes.upk#NewBackgroundImage",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_GameFlowScenes.upk",
+      "source_sha256": "b39424762c6b5fbc545b6e60e36cc956513d8bd45616dbaf8a029f3bb5cb4421",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_GameFlowScenes"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/NewBackgroundImage.png",
+      "intermediate_sha256": "a8adf8344fa0cc9445d60a8323f5e5b6885292eb44a75ab1456e5e0fd6a467d5",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/NewBackgroundImage.png",
+      "extracted_sha256": "a8adf8344fa0cc9445d60a8323f5e5b6885292eb44a75ab1456e5e0fd6a467d5",
+      "destination": "/Game/Imported/UI/Menu2011/Login/NewBackgroundImage.NewBackgroundImage"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_GameFlowScenes.upk#frontendFooter",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_GameFlowScenes.upk",
+      "source_sha256": "b39424762c6b5fbc545b6e60e36cc956513d8bd45616dbaf8a029f3bb5cb4421",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_GameFlowScenes"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/frontendFooter.png",
+      "intermediate_sha256": "a280805cd094ef7019c591af50393a5f0b78332b67e3ac65c4aaaca824040cdf",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/frontendFooter.png",
+      "extracted_sha256": "a280805cd094ef7019c591af50393a5f0b78332b67e3ac65c4aaaca824040cdf",
+      "destination": "/Game/Imported/UI/Menu2011/Login/frontendFooter.frontendFooter"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_GameFlowScenes.upk#JKICON_login_header_key",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_GameFlowScenes.upk",
+      "source_sha256": "b39424762c6b5fbc545b6e60e36cc956513d8bd45616dbaf8a029f3bb5cb4421",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_GameFlowScenes"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/JKICON_login_header_key.png",
+      "intermediate_sha256": "e0e63a83fd50e21c4cf4e4c3518fea7c8505c4d324d2ed63bc9ad5454cc1eef0",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/JKICON_login_header_key.png",
+      "extracted_sha256": "e0e63a83fd50e21c4cf4e4c3518fea7c8505c4d324d2ed63bc9ad5454cc1eef0",
+      "destination": "/Game/Imported/UI/Menu2011/Login/JKICON_login_header_key.JKICON_login_header_key"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_GameFlowScenes.upk#splatter1",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_GameFlowScenes.upk",
+      "source_sha256": "b39424762c6b5fbc545b6e60e36cc956513d8bd45616dbaf8a029f3bb5cb4421",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_GameFlowScenes"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/splatter1.png",
+      "intermediate_sha256": "0f156c7aa8aa86cbb9591c412fd45e07361bc5eeca370bd720d9aaff0ab99b76",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/splatter1.png",
+      "extracted_sha256": "0f156c7aa8aa86cbb9591c412fd45e07361bc5eeca370bd720d9aaff0ab99b76",
+      "destination": "/Game/Imported/UI/Menu2011/Login/splatter1.splatter1"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#APB_BG_TextEntry",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/APB_BG_TextEntry.png",
+      "intermediate_sha256": "2dbf4e859f819bfc72e9a325b0f2b10c1ddbe4611c6b0130be533389d0e6b9b6",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/APB_BG_TextEntry.png",
+      "extracted_sha256": "2dbf4e859f819bfc72e9a325b0f2b10c1ddbe4611c6b0130be533389d0e6b9b6",
+      "destination": "/Game/Imported/UI/Menu2011/Login/APB_BG_TextEntry.APB_BG_TextEntry"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#BG_TextEntry_01",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/BG_TextEntry_01.png",
+      "intermediate_sha256": "34a2c20e5a0639d413325c3c9aad6cf42679cf999aa56f7631ed9938935b5f63",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/BG_TextEntry_01.png",
+      "extracted_sha256": "34a2c20e5a0639d413325c3c9aad6cf42679cf999aa56f7631ed9938935b5f63",
+      "destination": "/Game/Imported/UI/Menu2011/Login/BG_TextEntry_01.BG_TextEntry_01"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#BG_TextEntry_Round_01",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/BG_TextEntry_Round_01.png",
+      "intermediate_sha256": "cf0b96eb0c3cddd9813fde7be0dfd6c7e39bef5a62ac1841bbb2ce01269b6738",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/BG_TextEntry_Round_01.png",
+      "extracted_sha256": "cf0b96eb0c3cddd9813fde7be0dfd6c7e39bef5a62ac1841bbb2ce01269b6738",
+      "destination": "/Game/Imported/UI/Menu2011/Login/BG_TextEntry_Round_01.BG_TextEntry_Round_01"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Skins.upk#Check_True",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Skins.upk",
+      "source_sha256": "a649bc3d6f4c4cf384fe27d1a04ec1faa0de3ef4421a405753d48823ee5aaab3",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Skins"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Skins/Texture2D/Check_True.png",
+      "intermediate_sha256": "fc7019fffce37c6616580aff00f2ef70b39de2bd3c7ed716cd4fb955f86cd4ac",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Skins/Texture2D/Check_True.png",
+      "extracted_sha256": "fc7019fffce37c6616580aff00f2ef70b39de2bd3c7ed716cd4fb955f86cd4ac",
+      "destination": "/Game/Imported/UI/Menu2011/Login/Check_True.Check_True"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Skins.upk#Check_False",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Skins.upk",
+      "source_sha256": "a649bc3d6f4c4cf384fe27d1a04ec1faa0de3ef4421a405753d48823ee5aaab3",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Skins"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Skins/Texture2D/Check_False.png",
+      "intermediate_sha256": "fa9f7508715835b01ee2aa1b7bc6658df4fe06819808c5d9caf412b52018592d",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Skins/Texture2D/Check_False.png",
+      "extracted_sha256": "fa9f7508715835b01ee2aa1b7bc6658df4fe06819808c5d9caf412b52018592d",
+      "destination": "/Game/Imported/UI/Menu2011/Login/Check_False.Check_False"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_PopUpMenu.upk#JKICON_close_default",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_PopUpMenu.upk",
+      "source_sha256": "331e94faabb9e56257d0c999a9826d33ceff8cb747c20f9e0f2183c914397d1b",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_PopUpMenu"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_PopUpMenu/Texture2D/JKICON_close_default.png",
+      "intermediate_sha256": "f06b3298607eb0a9afbcee8fbd663ae4e78f09e364d9855f73042c50d76eb6a3",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_PopUpMenu/Texture2D/JKICON_close_default.png",
+      "extracted_sha256": "f06b3298607eb0a9afbcee8fbd663ae4e78f09e364d9855f73042c50d76eb6a3",
+      "destination": "/Game/Imported/UI/Menu2011/Login/JKICON_close_default.JKICON_close_default"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_PopUpMenu.upk#JKICON_close_over",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_PopUpMenu.upk",
+      "source_sha256": "331e94faabb9e56257d0c999a9826d33ceff8cb747c20f9e0f2183c914397d1b",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_PopUpMenu"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_PopUpMenu/Texture2D/JKICON_close_over.png",
+      "intermediate_sha256": "010a9ed25d18ec73b45d40a4e98ed1fe3b1b3ef0e57ed040e24f59940773dad3",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_PopUpMenu/Texture2D/JKICON_close_over.png",
+      "extracted_sha256": "010a9ed25d18ec73b45d40a4e98ed1fe3b1b3ef0e57ed040e24f59940773dad3",
+      "destination": "/Game/Imported/UI/Menu2011/Login/JKICON_close_over.JKICON_close_over"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_PopUpMenu.upk#JKICON_close_pressed",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_PopUpMenu.upk",
+      "source_sha256": "331e94faabb9e56257d0c999a9826d33ceff8cb747c20f9e0f2183c914397d1b",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_PopUpMenu"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_PopUpMenu/Texture2D/JKICON_close_pressed.png",
+      "intermediate_sha256": "80400623ca0ec3360398ac5d726176049ecf855fa8ce423e4b4c7c4609df4877",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_PopUpMenu/Texture2D/JKICON_close_pressed.png",
+      "extracted_sha256": "80400623ca0ec3360398ac5d726176049ecf855fa8ce423e4b4c7c4609df4877",
+      "destination": "/Game/Imported/UI/Menu2011/Login/JKICON_close_pressed.JKICON_close_pressed"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_PopUpMenu.upk#JKICON_close_Highlight",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_PopUpMenu.upk",
+      "source_sha256": "331e94faabb9e56257d0c999a9826d33ceff8cb747c20f9e0f2183c914397d1b",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_PopUpMenu"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_PopUpMenu/Texture2D/JKICON_close_Highlight.png",
+      "intermediate_sha256": "06d458939d9e9c8bce016940f965ae3a8409c91df391deb316a345d82d7862b3",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_PopUpMenu/Texture2D/JKICON_close_Highlight.png",
+      "extracted_sha256": "06d458939d9e9c8bce016940f965ae3a8409c91df391deb316a345d82d7862b3",
+      "destination": "/Game/Imported/UI/Menu2011/Login/JKICON_close_Highlight.JKICON_close_Highlight"
+    },
+    {
+      "asset_key": "2011:MenuArt/LiveCurrentScene#Login_Scene_Preview",
+      "source_locator": "Content/Extracted/2011/LiveCurrentScene/hero/Login_Scene_Preview.png",
+      "source_sha256": "7670b41a9dc3af971bd996948b0aa997f154ae13f08e02eaf10f46010921a900",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--scene-preview"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "2011 LiveCurrentScene capture -> UE texture import",
+        "source": "2011 scene preview"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/hero/Login_Scene_Preview.png",
+      "intermediate_sha256": "7670b41a9dc3af971bd996948b0aa997f154ae13f08e02eaf10f46010921a900",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/hero/Login_Scene_Preview.png",
+      "extracted_sha256": "7670b41a9dc3af971bd996948b0aa997f154ae13f08e02eaf10f46010921a900",
+      "destination": "/Game/Imported/UI/Menu2011/Reference/Login_Scene_Preview.Login_Scene_Preview"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Skins.upk#MessageBox_BG",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Skins.upk",
+      "source_sha256": "a649bc3d6f4c4cf384fe27d1a04ec1faa0de3ef4421a405753d48823ee5aaab3",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Skins"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Skins/Texture2D/MessageBox_BG.png",
+      "intermediate_sha256": "3d2e7707adf18c04d5cf099c67f9b5f23121cc65ba514924dd913fbf2b20a423",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Skins/Texture2D/MessageBox_BG.png",
+      "extracted_sha256": "3d2e7707adf18c04d5cf099c67f9b5f23121cc65ba514924dd913fbf2b20a423",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/MessageBox_BG.MessageBox_BG"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#APB_Window_BG",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/APB_Window_BG.png",
+      "intermediate_sha256": "8253f1a5172f1207ee1ab0ad28f22a676e9f12a1888bb9d170637e1908cf72d8",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/APB_Window_BG.png",
+      "extracted_sha256": "8253f1a5172f1207ee1ab0ad28f22a676e9f12a1888bb9d170637e1908cf72d8",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/APB_Window_BG.APB_Window_BG"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#APB_Window_BGC",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/APB_Window_BGC.png",
+      "intermediate_sha256": "0f5c71ea01f4a3bb1b20eb75e29dd0d092a96d473187781d2a18caef2af8beb9",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/APB_Window_BGC.png",
+      "extracted_sha256": "0f5c71ea01f4a3bb1b20eb75e29dd0d092a96d473187781d2a18caef2af8beb9",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/APB_Window_BGC.APB_Window_BGC"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#Window_GeneralBG",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Window_GeneralBG.png",
+      "intermediate_sha256": "0e3e0b8067d4a830f0806936373d287fad8d0fb32a96af0715ad7b39906633e1",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Window_GeneralBG.png",
+      "extracted_sha256": "0e3e0b8067d4a830f0806936373d287fad8d0fb32a96af0715ad7b39906633e1",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/Window_GeneralBG.Window_GeneralBG"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#Window_BG_04",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Window_BG_04.png",
+      "intermediate_sha256": "8bc70801a374160517d341a8be0bdf4e85a46567b86775fb1550857eba5d166d",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Window_BG_04.png",
+      "extracted_sha256": "8bc70801a374160517d341a8be0bdf4e85a46567b86775fb1550857eba5d166d",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/Window_BG_04.Window_BG_04"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#Window_BG_05",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Window_BG_05.png",
+      "intermediate_sha256": "0b1b7deceee2cd9a13ac0af11fad76be7e0fa29ffb04986b147e2ea60dff3f86",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Window_BG_05.png",
+      "extracted_sha256": "0b1b7deceee2cd9a13ac0af11fad76be7e0fa29ffb04986b147e2ea60dff3f86",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/Window_BG_05.Window_BG_05"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#Window_BG_05_a",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Window_BG_05_a.png",
+      "intermediate_sha256": "049009aaa52e1356ad601d099572e54726ab2f75e9b88f33269baad6348fbff2",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Window_BG_05_a.png",
+      "extracted_sha256": "049009aaa52e1356ad601d099572e54726ab2f75e9b88f33269baad6348fbff2",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/Window_BG_05_a.Window_BG_05_a"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#Window_BG_06",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Window_BG_06.png",
+      "intermediate_sha256": "ce9227a4e45d7638a525b2a438a35591e0310b5970a919f90b3d7b53dbaf9d02",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Window_BG_06.png",
+      "extracted_sha256": "ce9227a4e45d7638a525b2a438a35591e0310b5970a919f90b3d7b53dbaf9d02",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/Window_BG_06.Window_BG_06"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#Window_BGC_06",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Window_BGC_06.png",
+      "intermediate_sha256": "b1cd73aab06c2b97fc0078364de9f2a4634edc1a3d4ec181f6323f4993adf351",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Window_BGC_06.png",
+      "extracted_sha256": "b1cd73aab06c2b97fc0078364de9f2a4634edc1a3d4ec181f6323f4993adf351",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/Window_BGC_06.Window_BGC_06"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#Window_Devider_01",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Window_Devider_01.png",
+      "intermediate_sha256": "3f3ce3fefaa0c28a3e0e4308b3f3aad6e7f76cf8586335ebb8405b4f803d02a9",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Window_Devider_01.png",
+      "extracted_sha256": "3f3ce3fefaa0c28a3e0e4308b3f3aad6e7f76cf8586335ebb8405b4f803d02a9",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/Window_Devider_01.Window_Devider_01"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#Window_Devider_02",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Window_Devider_02.png",
+      "intermediate_sha256": "5eb6179d40b18f807b933cc98203ce88585e149dbae7bceaf5be77239ade05cb",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Window_Devider_02.png",
+      "extracted_sha256": "5eb6179d40b18f807b933cc98203ce88585e149dbae7bceaf5be77239ade05cb",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/Window_Devider_02.Window_Devider_02"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#Window_Title_Accent_01",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Window_Title_Accent_01.png",
+      "intermediate_sha256": "d72b9c59b4bff45bc5f199cb6eee5170d0df9cbe3614f2bfaaa956e4e8f6a9b0",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Window_Title_Accent_01.png",
+      "extracted_sha256": "d72b9c59b4bff45bc5f199cb6eee5170d0df9cbe3614f2bfaaa956e4e8f6a9b0",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/Window_Title_Accent_01.Window_Title_Accent_01"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#APB_Window_Title_Accent",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/APB_Window_Title_Accent.png",
+      "intermediate_sha256": "c910f703d0f638110a20409cdd608ef90a27f68355ea40c8370f12acbdf8fbf4",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/APB_Window_Title_Accent.png",
+      "extracted_sha256": "c910f703d0f638110a20409cdd608ef90a27f68355ea40c8370f12acbdf8fbf4",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/APB_Window_Title_Accent.APB_Window_Title_Accent"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#APB_DropShadow",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/APB_DropShadow.png",
+      "intermediate_sha256": "6a12fffccc386db58a664bb1a39552c407af6b43a8815ba4e937ac195a9b7117",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/APB_DropShadow.png",
+      "extracted_sha256": "6a12fffccc386db58a664bb1a39552c407af6b43a8815ba4e937ac195a9b7117",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/APB_DropShadow.APB_DropShadow"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#Menu_Button_On",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Menu_Button_On.png",
+      "intermediate_sha256": "4e0795db9c25eb4530486b7e3ba6e62a1eb19de4956d186e6081d803829df67a",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Menu_Button_On.png",
+      "extracted_sha256": "4e0795db9c25eb4530486b7e3ba6e62a1eb19de4956d186e6081d803829df67a",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/Menu_Button_On.Menu_Button_On"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#Menu_Button_Off",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Menu_Button_Off.png",
+      "intermediate_sha256": "c2566fcc8451ffe2ddc870d199b9c67fb06c9d27013aa7736d6177de186042ac",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Menu_Button_Off.png",
+      "extracted_sha256": "c2566fcc8451ffe2ddc870d199b9c67fb06c9d27013aa7736d6177de186042ac",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/Menu_Button_Off.Menu_Button_Off"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#Menu_Button_Light",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Menu_Button_Light.png",
+      "intermediate_sha256": "2f4c7d91eea691608c1601b02dbff49b64d499458386b409aa5df151fce7032d",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Menu_Button_Light.png",
+      "extracted_sha256": "2f4c7d91eea691608c1601b02dbff49b64d499458386b409aa5df151fce7032d",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/Menu_Button_Light.Menu_Button_Light"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#BG_Button_02",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/BG_Button_02.png",
+      "intermediate_sha256": "1efd8200f0a0dae8eeb4396e084e2b78d94ff792fa4f2facffcbc70fa02aa987",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/BG_Button_02.png",
+      "extracted_sha256": "1efd8200f0a0dae8eeb4396e084e2b78d94ff792fa4f2facffcbc70fa02aa987",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/BG_Button_02.BG_Button_02"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#BG_Button_Active_Ring",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/BG_Button_Active_Ring.png",
+      "intermediate_sha256": "b7cae3f374526b19087d3bec9183823d25411a567844e81dbf0cd737503ebce9",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/BG_Button_Active_Ring.png",
+      "extracted_sha256": "b7cae3f374526b19087d3bec9183823d25411a567844e81dbf0cd737503ebce9",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/BG_Button_Active_Ring.BG_Button_Active_Ring"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#APB_BG_GenericContent_01",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/APB_BG_GenericContent_01.png",
+      "intermediate_sha256": "157e070165ef811d2d5e469adabbc741561db7aa92334516af5ed1e7df5ae1dd",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/APB_BG_GenericContent_01.png",
+      "extracted_sha256": "157e070165ef811d2d5e469adabbc741561db7aa92334516af5ed1e7df5ae1dd",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/APB_BG_GenericContent_01.APB_BG_GenericContent_01"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#APB_List_Cell_NoBG_20",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/APB_List_Cell_NoBG_20.png",
+      "intermediate_sha256": "6150adf9f9dbce08c5391d9363cb331ec75febac44b9de8826452bfba95d2f61",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/APB_List_Cell_NoBG_20.png",
+      "extracted_sha256": "6150adf9f9dbce08c5391d9363cb331ec75febac44b9de8826452bfba95d2f61",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/APB_List_Cell_NoBG_20.APB_List_Cell_NoBG_20"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#APB_List_Cell_NoBG_20_Active",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/APB_List_Cell_NoBG_20_Active.png",
+      "intermediate_sha256": "7b7b16112553b00b75a77454cbc7dc01c6f2d937c2c7652b0e4d43d9c1b8a2c2",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/APB_List_Cell_NoBG_20_Active.png",
+      "extracted_sha256": "7b7b16112553b00b75a77454cbc7dc01c6f2d937c2c7652b0e4d43d9c1b8a2c2",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/APB_List_Cell_NoBG_20_Active.APB_List_Cell_NoBG_20_Active"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#APB_List_Cell_NoBG_20_Pressed",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/APB_List_Cell_NoBG_20_Pressed.png",
+      "intermediate_sha256": "f00bc37f05927106daeda033f81a3e8fd234d6afee5103f28c55b4f24ae3809b",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/APB_List_Cell_NoBG_20_Pressed.png",
+      "extracted_sha256": "f00bc37f05927106daeda033f81a3e8fd234d6afee5103f28c55b4f24ae3809b",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/APB_List_Cell_NoBG_20_Pressed.APB_List_Cell_NoBG_20_Pressed"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#APB_SmallListItem_Generic_01",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/APB_SmallListItem_Generic_01.png",
+      "intermediate_sha256": "2b3709f4d6bf75addc6f76071847d911aea000e4610714440115848a9f26cd91",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/APB_SmallListItem_Generic_01.png",
+      "extracted_sha256": "2b3709f4d6bf75addc6f76071847d911aea000e4610714440115848a9f26cd91",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/APB_SmallListItem_Generic_01.APB_SmallListItem_Generic_01"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#Slider_Arrow_01_Up",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Slider_Arrow_01_Up.png",
+      "intermediate_sha256": "f99bc4c67b43c0a3dc1389f9c21dc58764dd17fcb52e0dac77f4ad7a4c2ced6a",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Slider_Arrow_01_Up.png",
+      "extracted_sha256": "f99bc4c67b43c0a3dc1389f9c21dc58764dd17fcb52e0dac77f4ad7a4c2ced6a",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/Slider_Arrow_01_Up.Slider_Arrow_01_Up"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#Slider_Arrow_01_Up_Active",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Slider_Arrow_01_Up_Active.png",
+      "intermediate_sha256": "ba8bd6b7a28e5e8f233a60b5a4e787d0922f6453551b6e4918a1ab660f5e5314",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Slider_Arrow_01_Up_Active.png",
+      "extracted_sha256": "ba8bd6b7a28e5e8f233a60b5a4e787d0922f6453551b6e4918a1ab660f5e5314",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/Slider_Arrow_01_Up_Active.Slider_Arrow_01_Up_Active"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#Slider_Arrow_01_Down",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Slider_Arrow_01_Down.png",
+      "intermediate_sha256": "6d2398efb4b800ee376edffa9f5f1e7cb52e737304ed3b7569a73062bbedc4d2",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Slider_Arrow_01_Down.png",
+      "extracted_sha256": "6d2398efb4b800ee376edffa9f5f1e7cb52e737304ed3b7569a73062bbedc4d2",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/Slider_Arrow_01_Down.Slider_Arrow_01_Down"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#Slider_Arrow_01_Down_Active",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Slider_Arrow_01_Down_Active.png",
+      "intermediate_sha256": "4fedeb987db31c1188ffd489f170d99bfc08fa6a02cbb99d2ac0d091dd1bffd9",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Slider_Arrow_01_Down_Active.png",
+      "extracted_sha256": "4fedeb987db31c1188ffd489f170d99bfc08fa6a02cbb99d2ac0d091dd1bffd9",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/Slider_Arrow_01_Down_Active.Slider_Arrow_01_Down_Active"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#Slider_BG_04",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Slider_BG_04.png",
+      "intermediate_sha256": "fdfaa048c1afe3586f9e6c82620a90cda587d281b856726d7fa1385c87b155a3",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Slider_BG_04.png",
+      "extracted_sha256": "fdfaa048c1afe3586f9e6c82620a90cda587d281b856726d7fa1385c87b155a3",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/Slider_BG_04.Slider_BG_04"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#Slider_Marker_04",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Slider_Marker_04.png",
+      "intermediate_sha256": "72570c1454ca3d1376a4c0e0eed247b6a13c9d623af58fbf8e5b4d74b9be5349",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Slider_Marker_04.png",
+      "extracted_sha256": "72570c1454ca3d1376a4c0e0eed247b6a13c9d623af58fbf8e5b4d74b9be5349",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/Slider_Marker_04.Slider_Marker_04"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#Slider_Marker_04_horiz",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Slider_Marker_04_horiz.png",
+      "intermediate_sha256": "6134a594c97b3e63937d363877b9d3c22b732b3570e3b74e87584f521b774b87",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Slider_Marker_04_horiz.png",
+      "extracted_sha256": "6134a594c97b3e63937d363877b9d3c22b732b3570e3b74e87584f521b774b87",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/Slider_Marker_04_horiz.Slider_Marker_04_horiz"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#Tab_01_On",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Tab_01_On.png",
+      "intermediate_sha256": "ba862634b238e052c47209ba182e032ec6977f85d3a46eac021bbc0099b8722a",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Tab_01_On.png",
+      "extracted_sha256": "ba862634b238e052c47209ba182e032ec6977f85d3a46eac021bbc0099b8722a",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/Tab_01_On.Tab_01_On"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#Tab_01_Off",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Tab_01_Off.png",
+      "intermediate_sha256": "86421e72c20420f933d128afb259ef46fa0e86fa50556dc78f10b6a7cdd0e49c",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Tab_01_Off.png",
+      "extracted_sha256": "86421e72c20420f933d128afb259ef46fa0e86fa50556dc78f10b6a7cdd0e49c",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/Tab_01_Off.Tab_01_Off"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#Tab_02",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Tab_02.png",
+      "intermediate_sha256": "605d1b6cc60fbccabea34f5b81dc6d1ea0da62ecc14b932cb145900ac1aec6a0",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Tab_02.png",
+      "extracted_sha256": "605d1b6cc60fbccabea34f5b81dc6d1ea0da62ecc14b932cb145900ac1aec6a0",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/Tab_02.Tab_02"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#Tab_02_Enabled",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Tab_02_Enabled.png",
+      "intermediate_sha256": "3b6baca358486cb11f92282b8c44585a3142dc39185295df7444b0f8f2ddfb2f",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Tab_02_Enabled.png",
+      "extracted_sha256": "3b6baca358486cb11f92282b8c44585a3142dc39185295df7444b0f8f2ddfb2f",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/Tab_02_Enabled.Tab_02_Enabled"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#APB_Button_Generic_SM_Active",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/APB_Button_Generic_SM_Active.png",
+      "intermediate_sha256": "ee7b1b20e80885349cd06de36f62f050847a869f9ba5b31df639e2edd3c61e5e",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/APB_Button_Generic_SM_Active.png",
+      "extracted_sha256": "ee7b1b20e80885349cd06de36f62f050847a869f9ba5b31df639e2edd3c61e5e",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/APB_Button_Generic_SM_Active.APB_Button_Generic_SM_Active"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#APB_Button_Generic_SM_Active_2",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/APB_Button_Generic_SM_Active_2.png",
+      "intermediate_sha256": "123ed35923635d6f560895e7b948ef8f5a5a97c498f87b1901cbea429034ad3a",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/APB_Button_Generic_SM_Active_2.png",
+      "extracted_sha256": "123ed35923635d6f560895e7b948ef8f5a5a97c498f87b1901cbea429034ad3a",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/APB_Button_Generic_SM_Active_2.APB_Button_Generic_SM_Active_2"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#APB_Button_Generic_SM_On",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/APB_Button_Generic_SM_On.png",
+      "intermediate_sha256": "02796552359cb220f31b53820c39aab3244b329e0f5735e5f486295f17171df9",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/APB_Button_Generic_SM_On.png",
+      "extracted_sha256": "02796552359cb220f31b53820c39aab3244b329e0f5735e5f486295f17171df9",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/APB_Button_Generic_SM_On.APB_Button_Generic_SM_On"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#APB_Button_Global_SM_Off",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/APB_Button_Global_SM_Off.png",
+      "intermediate_sha256": "901480e6515f8d9b7b69168fe7367ad0a7476a384cc0360ac51528a086273e24",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/APB_Button_Global_SM_Off.png",
+      "extracted_sha256": "901480e6515f8d9b7b69168fe7367ad0a7476a384cc0360ac51528a086273e24",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/APB_Button_Global_SM_Off.APB_Button_Global_SM_Off"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#APB_Button_Global_SM_On",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/APB_Button_Global_SM_On.png",
+      "intermediate_sha256": "ae8c3e59693f3b9a6e188e2892ec4af6d7f63f88e317cc9c4c528b257820a7b7",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/APB_Button_Global_SM_On.png",
+      "extracted_sha256": "ae8c3e59693f3b9a6e188e2892ec4af6d7f63f88e317cc9c4c528b257820a7b7",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/APB_Button_Global_SM_On.APB_Button_Global_SM_On"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#APB_Button_Global_SM_Pressed",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/APB_Button_Global_SM_Pressed.png",
+      "intermediate_sha256": "75b2e5b8119aa9d319f76e5f46e10217e37f63466be6f7bc2b92667540098076",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/APB_Button_Global_SM_Pressed.png",
+      "extracted_sha256": "75b2e5b8119aa9d319f76e5f46e10217e37f63466be6f7bc2b92667540098076",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/APB_Button_Global_SM_Pressed.APB_Button_Global_SM_Pressed"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#Tick",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Tick.png",
+      "intermediate_sha256": "b19b948364ee52d919b0489d25346a8030757f99a17113ad3453c65a21680716",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Tick.png",
+      "extracted_sha256": "b19b948364ee52d919b0489d25346a8030757f99a17113ad3453c65a21680716",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/Tick.Tick"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#tickbox",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/tickbox.png",
+      "intermediate_sha256": "e6fde6352d03a10c6165e2a6e919d82604ad83e38935c420be4eae30d76c5610",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/tickbox.png",
+      "extracted_sha256": "e6fde6352d03a10c6165e2a6e919d82604ad83e38935c420be4eae30d76c5610",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/tickbox.tickbox"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#Shine_04",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Shine_04.png",
+      "intermediate_sha256": "fb69624a3a9d055162ea61928fd107f7e0e8a1f4fd97c1eed95e0c4fe9d73252",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/Shine_04.png",
+      "extracted_sha256": "fb69624a3a9d055162ea61928fd107f7e0e8a1f4fd97c1eed95e0c4fe9d73252",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/Shine_04.Shine_04"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_PopUpMenu.upk#MenuItem_Active",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_PopUpMenu.upk",
+      "source_sha256": "331e94faabb9e56257d0c999a9826d33ceff8cb747c20f9e0f2183c914397d1b",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_PopUpMenu"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_PopUpMenu/Texture2D/MenuItem_Active.png",
+      "intermediate_sha256": "1a819b5b86ec6485d0bc4e9069ab2b9608388e485d2af9c65644a8e2bf62408e",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_PopUpMenu/Texture2D/MenuItem_Active.png",
+      "extracted_sha256": "1a819b5b86ec6485d0bc4e9069ab2b9608388e485d2af9c65644a8e2bf62408e",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/MenuItem_Active.MenuItem_Active"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_PopUpMenu.upk#MenuItem_BG",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_PopUpMenu.upk",
+      "source_sha256": "331e94faabb9e56257d0c999a9826d33ceff8cb747c20f9e0f2183c914397d1b",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_PopUpMenu"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_PopUpMenu/Texture2D/MenuItem_BG.png",
+      "intermediate_sha256": "643e5bc40925b8f39b6a59569d1343794def9fcdcfd7a7e9359723108b61510e",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_PopUpMenu/Texture2D/MenuItem_BG.png",
+      "extracted_sha256": "643e5bc40925b8f39b6a59569d1343794def9fcdcfd7a7e9359723108b61510e",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/MenuItem_BG.MenuItem_BG"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_PopUpMenu.upk#cUIbutton_MenuButton",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_PopUpMenu.upk",
+      "source_sha256": "331e94faabb9e56257d0c999a9826d33ceff8cb747c20f9e0f2183c914397d1b",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_PopUpMenu"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_PopUpMenu/Texture2D/cUIbutton_MenuButton.png",
+      "intermediate_sha256": "be931ec9ab82f54a00a1d2bca0f9204543f0d11b52afd9041b55959a8f4ee93a",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_PopUpMenu/Texture2D/cUIbutton_MenuButton.png",
+      "extracted_sha256": "be931ec9ab82f54a00a1d2bca0f9204543f0d11b52afd9041b55959a8f4ee93a",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/cUIbutton_MenuButton.cUIbutton_MenuButton"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_PopUpMenu.upk#hUIButton_MenuButton",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_PopUpMenu.upk",
+      "source_sha256": "331e94faabb9e56257d0c999a9826d33ceff8cb747c20f9e0f2183c914397d1b",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_PopUpMenu"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_PopUpMenu/Texture2D/hUIButton_MenuButton.png",
+      "intermediate_sha256": "d09c4324feebd77319957d2d08d6677bdd1b36dfe00add833d9b5a57e7c23f51",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_PopUpMenu/Texture2D/hUIButton_MenuButton.png",
+      "extracted_sha256": "d09c4324feebd77319957d2d08d6677bdd1b36dfe00add833d9b5a57e7c23f51",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/hUIButton_MenuButton.hUIButton_MenuButton"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_PopUpDialogs.upk#PopupUIHighlightTexture",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_PopUpDialogs.upk",
+      "source_sha256": "2beee78d24d0aaef5dab03b4a72c3a4b240dd613a97325b2bcc8126b0cf27e4a",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_PopUpDialogs"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_PopUpDialogs/Texture2D/PopupUIHighlightTexture.png",
+      "intermediate_sha256": "f267581f9dfcd5e609c735762490eaef6b3e4fd667c302a685c382168e381790",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_PopUpDialogs/Texture2D/PopupUIHighlightTexture.png",
+      "extracted_sha256": "f267581f9dfcd5e609c735762490eaef6b3e4fd667c302a685c382168e381790",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/PopupUIHighlightTexture.PopupUIHighlightTexture"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_PopUpDialogs.upk#bulletpoint",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_PopUpDialogs.upk",
+      "source_sha256": "2beee78d24d0aaef5dab03b4a72c3a4b240dd613a97325b2bcc8126b0cf27e4a",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_PopUpDialogs"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_PopUpDialogs/Texture2D/bulletpoint.png",
+      "intermediate_sha256": "08d508f672df5aa5ccfc0bb792e6440afc5e758516636806ad7f07acb5a195a7",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_PopUpDialogs/Texture2D/bulletpoint.png",
+      "extracted_sha256": "08d508f672df5aa5ccfc0bb792e6440afc5e758516636806ad7f07acb5a195a7",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/bulletpoint.bulletpoint"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#GlossyButton_Highlight",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art/Texture2D/GlossyButton_Highlight.png",
+      "intermediate_sha256": "b2866259e8118bcbf4d2653755fe696d04da62c5d74d36e180a0e9a3d49cd697",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art/Texture2D/GlossyButton_Highlight.png",
+      "extracted_sha256": "b2866259e8118bcbf4d2653755fe696d04da62c5d74d36e180a0e9a3d49cd697",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/GlossyButton_Highlight.GlossyButton_Highlight"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#Disabled",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art/Texture2D/Disabled.png",
+      "intermediate_sha256": "2b634a0a2078a35e984686eda62de07b7b5e4f5d41145627b959aae97128a643",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art/Texture2D/Disabled.png",
+      "extracted_sha256": "2b634a0a2078a35e984686eda62de07b7b5e4f5d41145627b959aae97128a643",
+      "destination": "/Game/Imported/UI/Menu2011/Chrome/Disabled.Disabled"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Font.upk#Texture2D_37",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Font.upk",
+      "source_sha256": "89a10c2479c45e21bfed286a25def94d3e8cb1b92eaacdbcfce89eb48b75f3bd",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Font"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Font/Texture2D/Texture2D_37.png",
+      "intermediate_sha256": "c4af1908e59278a4305563a45f7cc87ea330a499f0b1f3cfdbc06f9e557868b6",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Font/Texture2D/Texture2D_37.png",
+      "extracted_sha256": "c4af1908e59278a4305563a45f7cc87ea330a499f0b1f3cfdbc06f9e557868b6",
+      "destination": "/Game/Imported/UI/Menu2011/Reference/Texture2D_37.Texture2D_37"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_GameFlowScenes.upk#MaleAvatar",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_GameFlowScenes.upk",
+      "source_sha256": "b39424762c6b5fbc545b6e60e36cc956513d8bd45616dbaf8a029f3bb5cb4421",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_GameFlowScenes"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/MaleAvatar.png",
+      "intermediate_sha256": "66401911a56db08e931be668daa5bf6e8a7881a414d4dbbdc499bab6d26ad57e",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/MaleAvatar.png",
+      "extracted_sha256": "66401911a56db08e931be668daa5bf6e8a7881a414d4dbbdc499bab6d26ad57e",
+      "destination": "/Game/Imported/UI/Menu2011/CharSelect/MaleAvatar.MaleAvatar"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_GameFlowScenes.upk#FemaleAvatar",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_GameFlowScenes.upk",
+      "source_sha256": "b39424762c6b5fbc545b6e60e36cc956513d8bd45616dbaf8a029f3bb5cb4421",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_GameFlowScenes"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/FemaleAvatar.png",
+      "intermediate_sha256": "d61129fb1cd67da4f74b0a77af8206b4e2604f9eb35f9e9419eb14ba7b9e0bdb",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/FemaleAvatar.png",
+      "extracted_sha256": "d61129fb1cd67da4f74b0a77af8206b4e2604f9eb35f9e9419eb14ba7b9e0bdb",
+      "destination": "/Game/Imported/UI/Menu2011/CharSelect/FemaleAvatar.FemaleAvatar"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_GameFlowScenes.upk#CharacterSelectIcon",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_GameFlowScenes.upk",
+      "source_sha256": "b39424762c6b5fbc545b6e60e36cc956513d8bd45616dbaf8a029f3bb5cb4421",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_GameFlowScenes"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/CharacterSelectIcon.png",
+      "intermediate_sha256": "56305fab67ac14da2bdab1182dbe91b0ca573593f27f80eb16b8f48c3a5e8558",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/CharacterSelectIcon.png",
+      "extracted_sha256": "56305fab67ac14da2bdab1182dbe91b0ca573593f27f80eb16b8f48c3a5e8558",
+      "destination": "/Game/Imported/UI/Menu2011/CharSelect/CharacterSelectIcon.CharacterSelectIcon"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_GameFlowScenes.upk#CriminalFactionicon",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_GameFlowScenes.upk",
+      "source_sha256": "b39424762c6b5fbc545b6e60e36cc956513d8bd45616dbaf8a029f3bb5cb4421",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_GameFlowScenes"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/CriminalFactionicon.png",
+      "intermediate_sha256": "39f619e5f863cab41462595c2faa54eec06764102d675805bf7e91781cdebb36",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/CriminalFactionicon.png",
+      "extracted_sha256": "39f619e5f863cab41462595c2faa54eec06764102d675805bf7e91781cdebb36",
+      "destination": "/Game/Imported/UI/Menu2011/CharSelect/CriminalFactionicon.CriminalFactionicon"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_GameFlowScenes.upk#CriminalFactionicon_Unselected",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_GameFlowScenes.upk",
+      "source_sha256": "b39424762c6b5fbc545b6e60e36cc956513d8bd45616dbaf8a029f3bb5cb4421",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_GameFlowScenes"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/CriminalFactionicon_Unselected.png",
+      "intermediate_sha256": "44b4f211c456f5398af0fe05fadbd9e54c3b59fa5f24c16413470a94fb283b9d",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/CriminalFactionicon_Unselected.png",
+      "extracted_sha256": "44b4f211c456f5398af0fe05fadbd9e54c3b59fa5f24c16413470a94fb283b9d",
+      "destination": "/Game/Imported/UI/Menu2011/CharSelect/CriminalFactionicon_Unselected.CriminalFactionicon_Unselected"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_GameFlowScenes.upk#EnforcerFactionicon",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_GameFlowScenes.upk",
+      "source_sha256": "b39424762c6b5fbc545b6e60e36cc956513d8bd45616dbaf8a029f3bb5cb4421",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_GameFlowScenes"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/EnforcerFactionicon.png",
+      "intermediate_sha256": "c57f1010fa67c8bc322e8d1b22f92d4613cfcf0d1669dbb52d2b83842eefbddb",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/EnforcerFactionicon.png",
+      "extracted_sha256": "c57f1010fa67c8bc322e8d1b22f92d4613cfcf0d1669dbb52d2b83842eefbddb",
+      "destination": "/Game/Imported/UI/Menu2011/CharSelect/EnforcerFactionicon.EnforcerFactionicon"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_GameFlowScenes.upk#EnforcerFactionicon_Unselected",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_GameFlowScenes.upk",
+      "source_sha256": "b39424762c6b5fbc545b6e60e36cc956513d8bd45616dbaf8a029f3bb5cb4421",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_GameFlowScenes"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/EnforcerFactionicon_Unselected.png",
+      "intermediate_sha256": "75fbb116704191d4f44a104e04d84208df59340cebbaeaf7fefa8366290cc293",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/EnforcerFactionicon_Unselected.png",
+      "extracted_sha256": "75fbb116704191d4f44a104e04d84208df59340cebbaeaf7fefa8366290cc293",
+      "destination": "/Game/Imported/UI/Menu2011/CharSelect/EnforcerFactionicon_Unselected.EnforcerFactionicon_Unselected"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_GameFlowScenes.upk#newCriminalcon",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_GameFlowScenes.upk",
+      "source_sha256": "b39424762c6b5fbc545b6e60e36cc956513d8bd45616dbaf8a029f3bb5cb4421",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_GameFlowScenes"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/newCriminalcon.png",
+      "intermediate_sha256": "c46601e48f3fa55d7a28bbac855adf87fcdb171b3ee821dab7fbda537774cbe5",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/newCriminalcon.png",
+      "extracted_sha256": "c46601e48f3fa55d7a28bbac855adf87fcdb171b3ee821dab7fbda537774cbe5",
+      "destination": "/Game/Imported/UI/Menu2011/CharSelect/newCriminalcon.newCriminalcon"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_GameFlowScenes.upk#newEnforcerIcon",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_GameFlowScenes.upk",
+      "source_sha256": "b39424762c6b5fbc545b6e60e36cc956513d8bd45616dbaf8a029f3bb5cb4421",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_GameFlowScenes"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/newEnforcerIcon.png",
+      "intermediate_sha256": "50d86671daf33cc120e221f45ecbeb018f93cb9fac5d712d5b6d70f5bf425ead",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/newEnforcerIcon.png",
+      "extracted_sha256": "50d86671daf33cc120e221f45ecbeb018f93cb9fac5d712d5b6d70f5bf425ead",
+      "destination": "/Game/Imported/UI/Menu2011/CharSelect/newEnforcerIcon.newEnforcerIcon"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_GameFlowScenes.upk#FactionSelectbulletpoint",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_GameFlowScenes.upk",
+      "source_sha256": "b39424762c6b5fbc545b6e60e36cc956513d8bd45616dbaf8a029f3bb5cb4421",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_GameFlowScenes"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/FactionSelectbulletpoint.png",
+      "intermediate_sha256": "643c873d5cfaa45ecd4b09989621af4e76ab51ea4c6e9e8fb734db7442992d85",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/FactionSelectbulletpoint.png",
+      "extracted_sha256": "643c873d5cfaa45ecd4b09989621af4e76ab51ea4c6e9e8fb734db7442992d85",
+      "destination": "/Game/Imported/UI/Menu2011/CharSelect/FactionSelectbulletpoint.FactionSelectbulletpoint"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_GameFlowScenes.upk#FactionSelectbulletpoint_Unselected",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_GameFlowScenes.upk",
+      "source_sha256": "b39424762c6b5fbc545b6e60e36cc956513d8bd45616dbaf8a029f3bb5cb4421",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_GameFlowScenes"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/FactionSelectbulletpoint_Unselected.png",
+      "intermediate_sha256": "2c84af08d35188a7b0d220a77262e3c8968c7367d78fc8e86d9970dcff0828e2",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/FactionSelectbulletpoint_Unselected.png",
+      "extracted_sha256": "2c84af08d35188a7b0d220a77262e3c8968c7367d78fc8e86d9970dcff0828e2",
+      "destination": "/Game/Imported/UI/Menu2011/CharSelect/FactionSelectbulletpoint_Unselected.FactionSelectbulletpoint_Unselected"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_GameFlowScenes.upk#factionheadericon",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_GameFlowScenes.upk",
+      "source_sha256": "b39424762c6b5fbc545b6e60e36cc956513d8bd45616dbaf8a029f3bb5cb4421",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_GameFlowScenes"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/factionheadericon.png",
+      "intermediate_sha256": "a8c97567eae369be1ff84da786e8c0b8d69e57ae91f550571b93fce111b78eba",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/factionheadericon.png",
+      "extracted_sha256": "a8c97567eae369be1ff84da786e8c0b8d69e57ae91f550571b93fce111b78eba",
+      "destination": "/Game/Imported/UI/Menu2011/CharSelect/factionheadericon.factionheadericon"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_GameFlowScenes.upk#factionselectbuttongrey",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_GameFlowScenes.upk",
+      "source_sha256": "b39424762c6b5fbc545b6e60e36cc956513d8bd45616dbaf8a029f3bb5cb4421",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_GameFlowScenes"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/factionselectbuttongrey.png",
+      "intermediate_sha256": "ff245383ec0fe6ff42f7fb234f3307c6b95c380fe31182eab191e3f4f8341cba",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/factionselectbuttongrey.png",
+      "extracted_sha256": "ff245383ec0fe6ff42f7fb234f3307c6b95c380fe31182eab191e3f4f8341cba",
+      "destination": "/Game/Imported/UI/Menu2011/CharSelect/factionselectbuttongrey.factionselectbuttongrey"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_FactionIcons.upk#Faction_Icon_Criminal_32px",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_FactionIcons.upk",
+      "source_sha256": "282905188c9b40fa8ad354679ad2a0ea89f7229e9194a468d78d1bb6aef0fe40",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_FactionIcons"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_FactionIcons/Texture2D/Faction_Icon_Criminal_32px.png",
+      "intermediate_sha256": "d6fb1159f30fd0478b756fe16867f38a95c7e5fda2da45556b83d1fe3f06b153",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_FactionIcons/Texture2D/Faction_Icon_Criminal_32px.png",
+      "extracted_sha256": "d6fb1159f30fd0478b756fe16867f38a95c7e5fda2da45556b83d1fe3f06b153",
+      "destination": "/Game/Imported/UI/Menu2011/CharSelect/Faction_Icon_Criminal_32px.Faction_Icon_Criminal_32px"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_FactionIcons.upk#Faction_Icon_Criminal_64px",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_FactionIcons.upk",
+      "source_sha256": "282905188c9b40fa8ad354679ad2a0ea89f7229e9194a468d78d1bb6aef0fe40",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_FactionIcons"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_FactionIcons/Texture2D/Faction_Icon_Criminal_64px.png",
+      "intermediate_sha256": "bb1e154d8e47742f8ca9b1e0eaa349e9f777da32f3bfacef8dc2f3e601ef25ee",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_FactionIcons/Texture2D/Faction_Icon_Criminal_64px.png",
+      "extracted_sha256": "bb1e154d8e47742f8ca9b1e0eaa349e9f777da32f3bfacef8dc2f3e601ef25ee",
+      "destination": "/Game/Imported/UI/Menu2011/CharSelect/Faction_Icon_Criminal_64px.Faction_Icon_Criminal_64px"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_FactionIcons.upk#Faction_Icon_Enforcer_32px",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_FactionIcons.upk",
+      "source_sha256": "282905188c9b40fa8ad354679ad2a0ea89f7229e9194a468d78d1bb6aef0fe40",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_FactionIcons"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_FactionIcons/Texture2D/Faction_Icon_Enforcer_32px.png",
+      "intermediate_sha256": "06a8d3c402276b3b1c70ffb42aae076c0ec462b081e2001cabd15147ed7aea32",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_FactionIcons/Texture2D/Faction_Icon_Enforcer_32px.png",
+      "extracted_sha256": "06a8d3c402276b3b1c70ffb42aae076c0ec462b081e2001cabd15147ed7aea32",
+      "destination": "/Game/Imported/UI/Menu2011/CharSelect/Faction_Icon_Enforcer_32px.Faction_Icon_Enforcer_32px"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_FactionIcons.upk#Faction_Icon_Enforcer_64px",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_FactionIcons.upk",
+      "source_sha256": "282905188c9b40fa8ad354679ad2a0ea89f7229e9194a468d78d1bb6aef0fe40",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_FactionIcons"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_FactionIcons/Texture2D/Faction_Icon_Enforcer_64px.png",
+      "intermediate_sha256": "3095bb05e7820167b36fd4081e51214b122980e625464a5e1bb66d47b3230814",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_FactionIcons/Texture2D/Faction_Icon_Enforcer_64px.png",
+      "extracted_sha256": "3095bb05e7820167b36fd4081e51214b122980e625464a5e1bb66d47b3230814",
+      "destination": "/Game/Imported/UI/Menu2011/CharSelect/Faction_Icon_Enforcer_64px.Faction_Icon_Enforcer_64px"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_FactionIcons.upk#Spawnpoint_Select_Arrow",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_FactionIcons.upk",
+      "source_sha256": "282905188c9b40fa8ad354679ad2a0ea89f7229e9194a468d78d1bb6aef0fe40",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_FactionIcons"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_FactionIcons/Texture2D/Spawnpoint_Select_Arrow.png",
+      "intermediate_sha256": "58455c2a84486bc1dd456d7a2cbd26f054bf32b62796f183d7dce4ee06f0045e",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_FactionIcons/Texture2D/Spawnpoint_Select_Arrow.png",
+      "extracted_sha256": "58455c2a84486bc1dd456d7a2cbd26f054bf32b62796f183d7dce4ee06f0045e",
+      "destination": "/Game/Imported/UI/Menu2011/CharSelect/Spawnpoint_Select_Arrow.Spawnpoint_Select_Arrow"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_LargeFactionIcons.upk#JKICON_Criminal_Large",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_LargeFactionIcons.upk",
+      "source_sha256": "2fd22373d1d0b0a60789b63e8aa24cb3c628c703c58aefe6ce72cabdbc83fc10",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_LargeFactionIcons"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_LargeFactionIcons/Texture2D/JKICON_Criminal_Large.png",
+      "intermediate_sha256": "5a3bcbf927d901b292466b8719013a0ff66ffe54f19755019b82406951ffc5c9",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_LargeFactionIcons/Texture2D/JKICON_Criminal_Large.png",
+      "extracted_sha256": "5a3bcbf927d901b292466b8719013a0ff66ffe54f19755019b82406951ffc5c9",
+      "destination": "/Game/Imported/UI/Menu2011/CharSelect/JKICON_Criminal_Large.JKICON_Criminal_Large"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_LargeFactionIcons.upk#JKICON_Enforcer_Large",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_LargeFactionIcons.upk",
+      "source_sha256": "2fd22373d1d0b0a60789b63e8aa24cb3c628c703c58aefe6ce72cabdbc83fc10",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_LargeFactionIcons"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_LargeFactionIcons/Texture2D/JKICON_Enforcer_Large.png",
+      "intermediate_sha256": "ef91062855150795bdcd9b4a3832cd22b17acbac6433f91fb8677484d9c007fa",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_LargeFactionIcons/Texture2D/JKICON_Enforcer_Large.png",
+      "extracted_sha256": "ef91062855150795bdcd9b4a3832cd22b17acbac6433f91fb8677484d9c007fa",
+      "destination": "/Game/Imported/UI/Menu2011/CharSelect/JKICON_Enforcer_Large.JKICON_Enforcer_Large"
+    },
+    {
+      "asset_key": "2011:MenuArt/LiveCurrentScene#Lobby_Scene_Preview",
+      "source_locator": "Content/Extracted/2011/LiveCurrentScene/hero/Lobby_Scene_Preview.png",
+      "source_sha256": "868f5e370909e3d07ac6cef6ddc902dc174756018e64ad81809519749eb1239a",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--scene-preview"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "2011 LiveCurrentScene capture -> UE texture import",
+        "source": "2011 scene preview"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/hero/Lobby_Scene_Preview.png",
+      "intermediate_sha256": "868f5e370909e3d07ac6cef6ddc902dc174756018e64ad81809519749eb1239a",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/hero/Lobby_Scene_Preview.png",
+      "extracted_sha256": "868f5e370909e3d07ac6cef6ddc902dc174756018e64ad81809519749eb1239a",
+      "destination": "/Game/Imported/UI/Menu2011/Reference/Lobby_Scene_Preview.Lobby_Scene_Preview"
+    },
+    {
+      "asset_key": "2011:MenuArt/LiveCurrentScene#CreateCharacter_Scene_Preview",
+      "source_locator": "Content/Extracted/2011/LiveCurrentScene/hero/CreateCharacter_Scene_Preview.png",
+      "source_sha256": "308cddd7612dcc61e4eb6bd8bc33394f3f56841c752fd814a1ab7df018b09aa8",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--scene-preview"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "2011 LiveCurrentScene capture -> UE texture import",
+        "source": "2011 scene preview"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/hero/CreateCharacter_Scene_Preview.png",
+      "intermediate_sha256": "308cddd7612dcc61e4eb6bd8bc33394f3f56841c752fd814a1ab7df018b09aa8",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/hero/CreateCharacter_Scene_Preview.png",
+      "extracted_sha256": "308cddd7612dcc61e4eb6bd8bc33394f3f56841c752fd814a1ab7df018b09aa8",
+      "destination": "/Game/Imported/UI/Menu2011/Reference/CreateCharacter_Scene_Preview.CreateCharacter_Scene_Preview"
+    },
+    {
+      "asset_key": "2011:MenuArt/LiveCurrentScene#FactionSelect_Preview",
+      "source_locator": "Content/Extracted/2011/LiveCurrentScene/hero/FactionSelect_Preview.png",
+      "source_sha256": "e1929171ce22a8ce8c746a0276a4e4183f3e893897cb123850352f605ba4ef75",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--scene-preview"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "2011 LiveCurrentScene capture -> UE texture import",
+        "source": "2011 scene preview"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/hero/FactionSelect_Preview.png",
+      "intermediate_sha256": "e1929171ce22a8ce8c746a0276a4e4183f3e893897cb123850352f605ba4ef75",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/hero/FactionSelect_Preview.png",
+      "extracted_sha256": "e1929171ce22a8ce8c746a0276a4e4183f3e893897cb123850352f605ba4ef75",
+      "destination": "/Game/Imported/UI/Menu2011/Reference/FactionSelect_Preview.FactionSelect_Preview"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_DistrictPictures.upk#FinancialDistrict_MainPhoto256x195",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_DistrictPictures.upk",
+      "source_sha256": "3e378ac12d9d739bb3c20204b3076f2db16d566449802349c52026380a2f9374",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_DistrictPictures"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_DistrictPictures/Texture2D/FinancialDistrict_MainPhoto256x195.png",
+      "intermediate_sha256": "de85f371cedf1df707177e0d9d88674ffee8ad286f50a68f1949e29552f7eb34",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_DistrictPictures/Texture2D/FinancialDistrict_MainPhoto256x195.png",
+      "extracted_sha256": "de85f371cedf1df707177e0d9d88674ffee8ad286f50a68f1949e29552f7eb34",
+      "destination": "/Game/Imported/UI/Menu2011/DistrictSelect/FinancialDistrict_MainPhoto256x195.FinancialDistrict_MainPhoto256x195"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_DistrictPictures.upk#SocialDistrict_MainPhoto256x195",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_DistrictPictures.upk",
+      "source_sha256": "3e378ac12d9d739bb3c20204b3076f2db16d566449802349c52026380a2f9374",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_DistrictPictures"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_DistrictPictures/Texture2D/SocialDistrict_MainPhoto256x195.png",
+      "intermediate_sha256": "ff5f0dc35449f08fc334ac52fadab4cb8c3dc1022c497f6cf6ee89c92d8b7cbb",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_DistrictPictures/Texture2D/SocialDistrict_MainPhoto256x195.png",
+      "extracted_sha256": "ff5f0dc35449f08fc334ac52fadab4cb8c3dc1022c497f6cf6ee89c92d8b7cbb",
+      "destination": "/Game/Imported/UI/Menu2011/DistrictSelect/SocialDistrict_MainPhoto256x195.SocialDistrict_MainPhoto256x195"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_DistrictPictures.upk#WaterfrontDistrict_MainPhoto256x195",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_DistrictPictures.upk",
+      "source_sha256": "3e378ac12d9d739bb3c20204b3076f2db16d566449802349c52026380a2f9374",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_DistrictPictures"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_DistrictPictures/Texture2D/WaterfrontDistrict_MainPhoto256x195.png",
+      "intermediate_sha256": "6104f40810aefef0f54e602542c9b2bba79e3c41830559521e0ba03eebc04630",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_DistrictPictures/Texture2D/WaterfrontDistrict_MainPhoto256x195.png",
+      "extracted_sha256": "6104f40810aefef0f54e602542c9b2bba79e3c41830559521e0ba03eebc04630",
+      "destination": "/Game/Imported/UI/Menu2011/DistrictSelect/WaterfrontDistrict_MainPhoto256x195.WaterfrontDistrict_MainPhoto256x195"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_DistrictPictures.upk#Waterfront_ImageA",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_DistrictPictures.upk",
+      "source_sha256": "3e378ac12d9d739bb3c20204b3076f2db16d566449802349c52026380a2f9374",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_DistrictPictures"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_DistrictPictures/Texture2D/Waterfront_ImageA.png",
+      "intermediate_sha256": "a06483685e4d1136546a02764026552fdeb4a722257273d61e7b8724116287ea",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_DistrictPictures/Texture2D/Waterfront_ImageA.png",
+      "extracted_sha256": "a06483685e4d1136546a02764026552fdeb4a722257273d61e7b8724116287ea",
+      "destination": "/Game/Imported/UI/Menu2011/DistrictSelect/Waterfront_ImageA.Waterfront_ImageA"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_GameFlowScenes.upk#worldselecticon",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_GameFlowScenes.upk",
+      "source_sha256": "b39424762c6b5fbc545b6e60e36cc956513d8bd45616dbaf8a029f3bb5cb4421",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_GameFlowScenes"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/worldselecticon.png",
+      "intermediate_sha256": "1d7b5af9275e44631888e8ba82fd95fe1349d1bbd97fc433c2c79be79095ad5b",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/worldselecticon.png",
+      "extracted_sha256": "1d7b5af9275e44631888e8ba82fd95fe1349d1bbd97fc433c2c79be79095ad5b",
+      "destination": "/Game/Imported/UI/Menu2011/DistrictSelect/worldselecticon.worldselecticon"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#APB_Button_DistrictSelect_Background",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/APB_Button_DistrictSelect_Background.png",
+      "intermediate_sha256": "b1053f89bb82a79f8d33fe961fb79364943688d6fa733b1de98be88f04359cbb",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/APB_Button_DistrictSelect_Background.png",
+      "extracted_sha256": "b1053f89bb82a79f8d33fe961fb79364943688d6fa733b1de98be88f04359cbb",
+      "destination": "/Game/Imported/UI/Menu2011/DistrictSelect/APB_Button_DistrictSelect_Background.APB_Button_DistrictSelect_Background"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#APB_Button_Dropdown_DistrictSelect",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/APB_Button_Dropdown_DistrictSelect.png",
+      "intermediate_sha256": "8e5ebc07f683f265aa821437c82980eef55daf6fdd31e3d34d30a03b79bf0092",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/APB_Button_Dropdown_DistrictSelect.png",
+      "extracted_sha256": "8e5ebc07f683f265aa821437c82980eef55daf6fdd31e3d34d30a03b79bf0092",
+      "destination": "/Game/Imported/UI/Menu2011/DistrictSelect/APB_Button_Dropdown_DistrictSelect.APB_Button_Dropdown_DistrictSelect"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#APB_Button_Dropdown_DistrictSelect_Active",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/APB_Button_Dropdown_DistrictSelect_Active.png",
+      "intermediate_sha256": "cb4530bcb18b3590c4f95eb5d8ebb565a5102be9b86dcb98395ec1fd5e6d5a45",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/APB_Button_Dropdown_DistrictSelect_Active.png",
+      "extracted_sha256": "cb4530bcb18b3590c4f95eb5d8ebb565a5102be9b86dcb98395ec1fd5e6d5a45",
+      "destination": "/Game/Imported/UI/Menu2011/DistrictSelect/APB_Button_Dropdown_DistrictSelect_Active.APB_Button_Dropdown_DistrictSelect_Active"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#APB_Button_Dropdown_DistrictSelect_Pressed",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/APB_Button_Dropdown_DistrictSelect_Pressed.png",
+      "intermediate_sha256": "af102c4245ed920ab358e01aabda1abb2ee9cee5eae0d92168237e66acdad6bd",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/APB_Button_Dropdown_DistrictSelect_Pressed.png",
+      "extracted_sha256": "af102c4245ed920ab358e01aabda1abb2ee9cee5eae0d92168237e66acdad6bd",
+      "destination": "/Game/Imported/UI/Menu2011/DistrictSelect/APB_Button_Dropdown_DistrictSelect_Pressed.APB_Button_Dropdown_DistrictSelect_Pressed"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#APB_Button_Dropdown_DistrictSelect_Targeted",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/APB_Button_Dropdown_DistrictSelect_Targeted.png",
+      "intermediate_sha256": "2771ab9c5e0959b32e9ecbcc77311606dc047aad1fdffd8768de2274e2554cd8",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/APB_Button_Dropdown_DistrictSelect_Targeted.png",
+      "extracted_sha256": "2771ab9c5e0959b32e9ecbcc77311606dc047aad1fdffd8768de2274e2554cd8",
+      "destination": "/Game/Imported/UI/Menu2011/DistrictSelect/APB_Button_Dropdown_DistrictSelect_Targeted.APB_Button_Dropdown_DistrictSelect_Targeted"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#StatusBar_BG",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/StatusBar_BG.png",
+      "intermediate_sha256": "1dc4d5e4205ad394a8afcb3c8ff810f099f939796be669aec0259730d1a8a92b",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/StatusBar_BG.png",
+      "extracted_sha256": "1dc4d5e4205ad394a8afcb3c8ff810f099f939796be669aec0259730d1a8a92b",
+      "destination": "/Game/Imported/UI/Menu2011/DistrictSelect/StatusBar_BG.StatusBar_BG"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art.upk#StatusBar_Bar",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art.upk",
+      "source_sha256": "273cc021d40cc3569b0dd3b5b051541b24c651a3fb005dadebcd7c8fe0dcb151",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/StatusBar_Bar.png",
+      "intermediate_sha256": "3437def8f7d753059d5d091ecc668ec242107f20b5090870549c101ef77d3c75",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/png/packages/APBMenus_Art/APBMenus_Art/Texture2D/StatusBar_Bar.png",
+      "extracted_sha256": "3437def8f7d753059d5d091ecc668ec242107f20b5090870549c101ef77d3c75",
+      "destination": "/Game/Imported/UI/Menu2011/DistrictSelect/StatusBar_Bar.StatusBar_Bar"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_GameFlowScenes.upk#LoadingScreen_APB",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_GameFlowScenes.upk",
+      "source_sha256": "b39424762c6b5fbc545b6e60e36cc956513d8bd45616dbaf8a029f3bb5cb4421",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_GameFlowScenes"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/LoadingScreen_APB.png",
+      "intermediate_sha256": "9dd44f4a2d5fa37986044f9b2878cb2c8e0d8da1b16b0fbc02714a9c8dc79214",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/LoadingScreen_APB.png",
+      "extracted_sha256": "9dd44f4a2d5fa37986044f9b2878cb2c8e0d8da1b16b0fbc02714a9c8dc79214",
+      "destination": "/Game/Imported/UI/Menu2011/Loading/LoadingScreen_APB.LoadingScreen_APB"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_GameFlowScenes.upk#LoadingScreen_APBFlame_Alpha",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_GameFlowScenes.upk",
+      "source_sha256": "b39424762c6b5fbc545b6e60e36cc956513d8bd45616dbaf8a029f3bb5cb4421",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_GameFlowScenes"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/LoadingScreen_APBFlame_Alpha.png",
+      "intermediate_sha256": "66129a0a3cf638eeba1136b7f1bfc90ac0599ea49b6d253102c3371d43ce7e35",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/LoadingScreen_APBFlame_Alpha.png",
+      "extracted_sha256": "66129a0a3cf638eeba1136b7f1bfc90ac0599ea49b6d253102c3371d43ce7e35",
+      "destination": "/Game/Imported/UI/Menu2011/Loading/LoadingScreen_APBFlame_Alpha.LoadingScreen_APBFlame_Alpha"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_GameFlowScenes.upk#LoadingScreen_Flames",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_GameFlowScenes.upk",
+      "source_sha256": "b39424762c6b5fbc545b6e60e36cc956513d8bd45616dbaf8a029f3bb5cb4421",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_GameFlowScenes"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/LoadingScreen_Flames.png",
+      "intermediate_sha256": "f6630ab79024d44a84652e18e836fd88cf12127fcec740c2e985690ce44342d2",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/LoadingScreen_Flames.png",
+      "extracted_sha256": "f6630ab79024d44a84652e18e836fd88cf12127fcec740c2e985690ce44342d2",
+      "destination": "/Game/Imported/UI/Menu2011/Loading/LoadingScreen_Flames.LoadingScreen_Flames"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_GameFlowScenes.upk#LoadingScreen_Flames_Alpha",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_GameFlowScenes.upk",
+      "source_sha256": "b39424762c6b5fbc545b6e60e36cc956513d8bd45616dbaf8a029f3bb5cb4421",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_GameFlowScenes"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/LoadingScreen_Flames_Alpha.png",
+      "intermediate_sha256": "d4c3160f58d98095f0edfb6a204df1ac97b1e88be5aa8577f0445406c0c757ce",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/LoadingScreen_Flames_Alpha.png",
+      "extracted_sha256": "d4c3160f58d98095f0edfb6a204df1ac97b1e88be5aa8577f0445406c0c757ce",
+      "destination": "/Game/Imported/UI/Menu2011/Loading/LoadingScreen_Flames_Alpha.LoadingScreen_Flames_Alpha"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_GameFlowScenes.upk#LoadingScreen_Flames_Mask",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_GameFlowScenes.upk",
+      "source_sha256": "b39424762c6b5fbc545b6e60e36cc956513d8bd45616dbaf8a029f3bb5cb4421",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_GameFlowScenes"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/LoadingScreen_Flames_Mask.png",
+      "intermediate_sha256": "f736f1154603c66e7b338e79bf7bf8195658f0d94b6f27f9a96d955116145621",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/LoadingScreen_Flames_Mask.png",
+      "extracted_sha256": "f736f1154603c66e7b338e79bf7bf8195658f0d94b6f27f9a96d955116145621",
+      "destination": "/Game/Imported/UI/Menu2011/Loading/LoadingScreen_Flames_Mask.LoadingScreen_Flames_Mask"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_GameFlowScenes.upk#LoadingScreen_Flames_RimGlow",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_GameFlowScenes.upk",
+      "source_sha256": "b39424762c6b5fbc545b6e60e36cc956513d8bd45616dbaf8a029f3bb5cb4421",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_GameFlowScenes"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/LoadingScreen_Flames_RimGlow.png",
+      "intermediate_sha256": "4311f7be3f6cdaa2a1224d27e45fd43d5997e375a261dc40cdca88a57e88e54b",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/LoadingScreen_Flames_RimGlow.png",
+      "extracted_sha256": "4311f7be3f6cdaa2a1224d27e45fd43d5997e375a261dc40cdca88a57e88e54b",
+      "destination": "/Game/Imported/UI/Menu2011/Loading/LoadingScreen_Flames_RimGlow.LoadingScreen_Flames_RimGlow"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_GameFlowScenes.upk#LoadingScreen_Flames_Emburs",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_GameFlowScenes.upk",
+      "source_sha256": "b39424762c6b5fbc545b6e60e36cc956513d8bd45616dbaf8a029f3bb5cb4421",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_GameFlowScenes"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/LoadingScreen_Flames_Emburs.png",
+      "intermediate_sha256": "d3f82f4b06775a356d9bab646f5cf69ac9f1ceb1002ae608f48dcce476802016",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/LoadingScreen_Flames_Emburs.png",
+      "extracted_sha256": "d3f82f4b06775a356d9bab646f5cf69ac9f1ceb1002ae608f48dcce476802016",
+      "destination": "/Game/Imported/UI/Menu2011/Loading/LoadingScreen_Flames_Emburs.LoadingScreen_Flames_Emburs"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_GameFlowScenes.upk#LoadingScreen_Flames_Emburs_02",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_GameFlowScenes.upk",
+      "source_sha256": "b39424762c6b5fbc545b6e60e36cc956513d8bd45616dbaf8a029f3bb5cb4421",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_GameFlowScenes"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/LoadingScreen_Flames_Emburs_02.png",
+      "intermediate_sha256": "d710ba40db568b9333bb6d1f683b20a4922f26a70b7c07f28144939bc984c0a4",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/LoadingScreen_Flames_Emburs_02.png",
+      "extracted_sha256": "d710ba40db568b9333bb6d1f683b20a4922f26a70b7c07f28144939bc984c0a4",
+      "destination": "/Game/Imported/UI/Menu2011/Loading/LoadingScreen_Flames_Emburs_02.LoadingScreen_Flames_Emburs_02"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_GameFlowScenes.upk#LoadingScreen_Overlay",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_GameFlowScenes.upk",
+      "source_sha256": "b39424762c6b5fbc545b6e60e36cc956513d8bd45616dbaf8a029f3bb5cb4421",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_GameFlowScenes"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/LoadingScreen_Overlay.png",
+      "intermediate_sha256": "13d2cd2e757d476f44fe850215cb450c5adbb808949a7b0ca9a60ac53aa45643",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/LoadingScreen_Overlay.png",
+      "extracted_sha256": "13d2cd2e757d476f44fe850215cb450c5adbb808949a7b0ca9a60ac53aa45643",
+      "destination": "/Game/Imported/UI/Menu2011/Loading/LoadingScreen_Overlay.LoadingScreen_Overlay"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_GameFlowScenes.upk#LoadingIcon_MAIN",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_GameFlowScenes.upk",
+      "source_sha256": "b39424762c6b5fbc545b6e60e36cc956513d8bd45616dbaf8a029f3bb5cb4421",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_GameFlowScenes"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/LoadingIcon_MAIN.png",
+      "intermediate_sha256": "b94140ffcf9dabe0751ec57d2179a2b70f2214424d5f9912ca969befc7f15f06",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/LoadingIcon_MAIN.png",
+      "extracted_sha256": "b94140ffcf9dabe0751ec57d2179a2b70f2214424d5f9912ca969befc7f15f06",
+      "destination": "/Game/Imported/UI/Menu2011/Loading/LoadingIcon_MAIN.LoadingIcon_MAIN"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_GameFlowScenes.upk#LoadingArrows_BG",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_GameFlowScenes.upk",
+      "source_sha256": "b39424762c6b5fbc545b6e60e36cc956513d8bd45616dbaf8a029f3bb5cb4421",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_GameFlowScenes"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/LoadingArrows_BG.png",
+      "intermediate_sha256": "872ef8b9c976c840b5b29e5a960c4927d2d55e4ac228326ad01a6b031de86329",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/LoadingArrows_BG.png",
+      "extracted_sha256": "872ef8b9c976c840b5b29e5a960c4927d2d55e4ac228326ad01a6b031de86329",
+      "destination": "/Game/Imported/UI/Menu2011/Loading/LoadingArrows_BG.LoadingArrows_BG"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_GameFlowScenes.upk#LoadingArrows_Mask",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_GameFlowScenes.upk",
+      "source_sha256": "b39424762c6b5fbc545b6e60e36cc956513d8bd45616dbaf8a029f3bb5cb4421",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_GameFlowScenes"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/LoadingArrows_Mask.png",
+      "intermediate_sha256": "6f8c15651208947c9deb58c4804b9f91ecb5b31ba87cb8605f0dae0f80978368",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/LoadingArrows_Mask.png",
+      "extracted_sha256": "6f8c15651208947c9deb58c4804b9f91ecb5b31ba87cb8605f0dae0f80978368",
+      "destination": "/Game/Imported/UI/Menu2011/Loading/LoadingArrows_Mask.LoadingArrows_Mask"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_GameFlowScenes.upk#LoadingArrows_Ring",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_GameFlowScenes.upk",
+      "source_sha256": "b39424762c6b5fbc545b6e60e36cc956513d8bd45616dbaf8a029f3bb5cb4421",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_GameFlowScenes"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/LoadingArrows_Ring.png",
+      "intermediate_sha256": "59d93a734ee8411ffe6d0a863dcfc91280932e8f6a7edeac4ba7a0f0a4427fe6",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/LoadingArrows_Ring.png",
+      "extracted_sha256": "59d93a734ee8411ffe6d0a863dcfc91280932e8f6a7edeac4ba7a0f0a4427fe6",
+      "destination": "/Game/Imported/UI/Menu2011/Loading/LoadingArrows_Ring.LoadingArrows_Ring"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_GameFlowScenes.upk#LoadingScreen_FactionIcon_Crim",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_GameFlowScenes.upk",
+      "source_sha256": "b39424762c6b5fbc545b6e60e36cc956513d8bd45616dbaf8a029f3bb5cb4421",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_GameFlowScenes"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/LoadingScreen_FactionIcon_Crim.png",
+      "intermediate_sha256": "c46601e48f3fa55d7a28bbac855adf87fcdb171b3ee821dab7fbda537774cbe5",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/LoadingScreen_FactionIcon_Crim.png",
+      "extracted_sha256": "c46601e48f3fa55d7a28bbac855adf87fcdb171b3ee821dab7fbda537774cbe5",
+      "destination": "/Game/Imported/UI/Menu2011/Loading/LoadingScreen_FactionIcon_Crim.LoadingScreen_FactionIcon_Crim"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_GameFlowScenes.upk#LoadingScreen_FactionIcon_Crim_Mask",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_GameFlowScenes.upk",
+      "source_sha256": "b39424762c6b5fbc545b6e60e36cc956513d8bd45616dbaf8a029f3bb5cb4421",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_GameFlowScenes"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/LoadingScreen_FactionIcon_Crim_Mask.png",
+      "intermediate_sha256": "ebbbb39dad74df41ae2ba37caedfa9b0053c7e38aeb55fe09a619e93bee4b667",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/LoadingScreen_FactionIcon_Crim_Mask.png",
+      "extracted_sha256": "ebbbb39dad74df41ae2ba37caedfa9b0053c7e38aeb55fe09a619e93bee4b667",
+      "destination": "/Game/Imported/UI/Menu2011/Loading/LoadingScreen_FactionIcon_Crim_Mask.LoadingScreen_FactionIcon_Crim_Mask"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_GameFlowScenes.upk#LoadingScreen_FactionIcon_Enf",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_GameFlowScenes.upk",
+      "source_sha256": "b39424762c6b5fbc545b6e60e36cc956513d8bd45616dbaf8a029f3bb5cb4421",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_GameFlowScenes"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/LoadingScreen_FactionIcon_Enf.png",
+      "intermediate_sha256": "50d86671daf33cc120e221f45ecbeb018f93cb9fac5d712d5b6d70f5bf425ead",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/LoadingScreen_FactionIcon_Enf.png",
+      "extracted_sha256": "50d86671daf33cc120e221f45ecbeb018f93cb9fac5d712d5b6d70f5bf425ead",
+      "destination": "/Game/Imported/UI/Menu2011/Loading/LoadingScreen_FactionIcon_Enf.LoadingScreen_FactionIcon_Enf"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_GameFlowScenes.upk#LoadingScreen_FactionIcon_Enf_Mask",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_GameFlowScenes.upk",
+      "source_sha256": "b39424762c6b5fbc545b6e60e36cc956513d8bd45616dbaf8a029f3bb5cb4421",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_GameFlowScenes"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/LoadingScreen_FactionIcon_Enf_Mask.png",
+      "intermediate_sha256": "1e2695fb5c87132a2bc44d5162b87f3e59652d67cd98b0eb20ec92e78ed9db70",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/LoadingScreen_FactionIcon_Enf_Mask.png",
+      "extracted_sha256": "1e2695fb5c87132a2bc44d5162b87f3e59652d67cd98b0eb20ec92e78ed9db70",
+      "destination": "/Game/Imported/UI/Menu2011/Loading/LoadingScreen_FactionIcon_Enf_Mask.LoadingScreen_FactionIcon_Enf_Mask"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_GameFlowScenes.upk#LoadingScreen_FI_Crim_Alpha",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_GameFlowScenes.upk",
+      "source_sha256": "b39424762c6b5fbc545b6e60e36cc956513d8bd45616dbaf8a029f3bb5cb4421",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_GameFlowScenes"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/LoadingScreen_FI_Crim_Alpha.png",
+      "intermediate_sha256": "abe4a2ea536a959a4f62fdb34337d0d44c43a5c7b08ab3916edd24e4163fa638",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/LoadingScreen_FI_Crim_Alpha.png",
+      "extracted_sha256": "abe4a2ea536a959a4f62fdb34337d0d44c43a5c7b08ab3916edd24e4163fa638",
+      "destination": "/Game/Imported/UI/Menu2011/Loading/LoadingScreen_FI_Crim_Alpha.LoadingScreen_FI_Crim_Alpha"
+    },
+    {
+      "asset_key": "2011:MenuArt/APBMenus_Art_GameFlowScenes.upk#LoadingScreen_FI_Enf_Alpha",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Content/Interface/APBMenus_Art_GameFlowScenes.upk",
+      "source_sha256": "b39424762c6b5fbc545b6e60e36cc956513d8bd45616dbaf8a029f3bb5cb4421",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--package=APBMenus_Art_GameFlowScenes"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "umodel tga -> Pillow png -> UE texture import",
+        "source": "2011 menu art"
+      },
+      "intermediate_path": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/LoadingScreen_FI_Enf_Alpha.png",
+      "intermediate_sha256": "dfd7abf63d799b657abd880b3b37f895c624f6316a808048e4d4b7501f111465",
+      "extracted_file": "Content/Extracted/2011/MenuArt/APBMenus_Art_GameFlowScenes/Texture2D/LoadingScreen_FI_Enf_Alpha.png",
+      "extracted_sha256": "dfd7abf63d799b657abd880b3b37f895c624f6316a808048e4d4b7501f111465",
+      "destination": "/Game/Imported/UI/Menu2011/Loading/LoadingScreen_FI_Enf_Alpha.LoadingScreen_FI_Enf_Alpha"
+    },
+    {
+      "asset_key": "2011:MenuArt/LiveCurrentScene#WorldQueue_Scene_Preview",
+      "source_locator": "Content/Extracted/2011/LiveCurrentScene/hero/WorldQueue_Scene_Preview.png",
+      "source_sha256": "02b2d864e45e2b78b4e0aec7fd60031d16960253a5b2a7b6cd0ffcf154562f8f",
+      "extractor": "tools/scripts/export_2011_menu_art.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_menu_art.py",
+        "--scene-preview"
+      ],
+      "conversion_settings": {
+        "format": "png",
+        "pipeline": "2011 LiveCurrentScene capture -> UE texture import",
+        "source": "2011 scene preview"
+      },
+      "intermediate_path": "Content/Extracted/2011/LiveCurrentScene/hero/WorldQueue_Scene_Preview.png",
+      "intermediate_sha256": "02b2d864e45e2b78b4e0aec7fd60031d16960253a5b2a7b6cd0ffcf154562f8f",
+      "extracted_file": "Content/Extracted/2011/LiveCurrentScene/hero/WorldQueue_Scene_Preview.png",
+      "extracted_sha256": "02b2d864e45e2b78b4e0aec7fd60031d16960253a5b2a7b6cd0ffcf154562f8f",
+      "destination": "/Game/Imported/UI/Menu2011/Reference/WorldQueue_Scene_Preview.WorldQueue_Scene_Preview"
+    }
+  ]
+}

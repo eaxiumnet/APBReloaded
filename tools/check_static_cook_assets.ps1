@@ -28,7 +28,19 @@ function Get-AllowlistPaths([string]$AllowlistPath) {
     $Allowlist = Get-Content -LiteralPath $AllowlistPath -Raw | ConvertFrom-Json
     $Paths = New-Object System.Collections.Generic.HashSet[string] ([System.StringComparer]::Ordinal)
     foreach ($Entry in @($Allowlist.entries)) {
-        if ($Entry.object_path) { [void]$Paths.Add([string]$Entry.object_path) }
+        if ($Entry.object_path) {
+            $P = [string]$Entry.object_path
+            [void]$Paths.Add($P)
+            # Catalogs may reference the object path with or without the trailing
+            # .<leaf> suffix; index both forms so either reference form closes.
+            $Leaf = ($P -split '/')[-1]
+            if ($Leaf -match '\.' -and $P.EndsWith('.' + $Leaf)) {
+                [void]$Paths.Add($P.Substring(0, $P.Length - $Leaf.Length - 1))
+            }
+        }
+    }
+    foreach ($Media in @($Allowlist.media_entries)) {
+        if ($Media.object_path) { [void]$Paths.Add([string]$Media.object_path) }
     }
     return ,$Paths
 }

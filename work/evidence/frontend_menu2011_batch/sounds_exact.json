@@ -1,0 +1,260 @@
+{
+  "schema": "apb_frontend_menu2011_v1",
+  "batch": "frontend_menu2011_sounds",
+  "generated_by": "tools/scripts/record_frontend_menu_import.py",
+  "generated_at": "2026-08-02T22:12:12.019296+00:00",
+  "entries": [
+    {
+      "asset_key": "2011:UISfx/TabSound_10",
+      "source_locator": "D:/APBReloaded/Content/Extracted/2011/UISfx/TabSound_10.wav",
+      "source_sha256": "19ef6d60d8e044a2e87266b6692eecdca9cd346bff5c25a485dcbc4d94963da0",
+      "extractor": "tools/scripts/export_2011_ui.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_ui.py",
+        "--sound=TabSound_10"
+      ],
+      "conversion_settings": {
+        "format": "wav",
+        "pipeline": "2011 sound extraction -> UE sound import",
+        "source": "2011 UI sfx"
+      },
+      "intermediate_path": "Content/Extracted/2011/UISfx/TabSound_10.wav",
+      "intermediate_sha256": "19ef6d60d8e044a2e87266b6692eecdca9cd346bff5c25a485dcbc4d94963da0",
+      "extracted_file": "Content/Extracted/2011/UISfx/TabSound_10.wav",
+      "extracted_sha256": "19ef6d60d8e044a2e87266b6692eecdca9cd346bff5c25a485dcbc4d94963da0",
+      "destination": "/Game/Audio/UI/TabSound_10.TabSound_10"
+    },
+    {
+      "asset_key": "2011:UISfx/ButtonPos",
+      "source_locator": "D:/APBReloaded/Content/Extracted/2011/UISfx/ButtonPos.wav",
+      "source_sha256": "b6e3f3229e627301fced29aab25f6ee79ab9a48e0965802e4d66894ff43c6cda",
+      "extractor": "tools/scripts/export_2011_ui.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_ui.py",
+        "--sound=ButtonPos"
+      ],
+      "conversion_settings": {
+        "format": "wav",
+        "pipeline": "2011 sound extraction -> UE sound import",
+        "source": "2011 UI sfx"
+      },
+      "intermediate_path": "Content/Extracted/2011/UISfx/ButtonPos.wav",
+      "intermediate_sha256": "b6e3f3229e627301fced29aab25f6ee79ab9a48e0965802e4d66894ff43c6cda",
+      "extracted_file": "Content/Extracted/2011/UISfx/ButtonPos.wav",
+      "extracted_sha256": "b6e3f3229e627301fced29aab25f6ee79ab9a48e0965802e4d66894ff43c6cda",
+      "destination": "/Game/Audio/UI/ButtonPos.ButtonPos"
+    },
+    {
+      "asset_key": "2011:UISfx/Button2",
+      "source_locator": "D:/APBReloaded/Content/Extracted/2011/UISfx/Button2.wav",
+      "source_sha256": "aa953da1b99229e41402d326ee26fad25cfbddcde4c6fc95d2d676a982cff8ca",
+      "extractor": "tools/scripts/export_2011_ui.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_ui.py",
+        "--sound=Button2"
+      ],
+      "conversion_settings": {
+        "format": "wav",
+        "pipeline": "2011 sound extraction -> UE sound import",
+        "source": "2011 UI sfx"
+      },
+      "intermediate_path": "Content/Extracted/2011/UISfx/Button2.wav",
+      "intermediate_sha256": "aa953da1b99229e41402d326ee26fad25cfbddcde4c6fc95d2d676a982cff8ca",
+      "extracted_file": "Content/Extracted/2011/UISfx/Button2.wav",
+      "extracted_sha256": "aa953da1b99229e41402d326ee26fad25cfbddcde4c6fc95d2d676a982cff8ca",
+      "destination": "/Game/Audio/UI/Button2.Button2"
+    },
+    {
+      "asset_key": "2011:UISfx/Error",
+      "source_locator": "D:/APBReloaded/Content/Extracted/2011/UISfx/Error.wav",
+      "source_sha256": "7a80bb6e1beb89b114f3ccdda9f72027b6dd3a15f5e3bb1de70f95ebfb3a996d",
+      "extractor": "tools/scripts/export_2011_ui.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_ui.py",
+        "--sound=Error"
+      ],
+      "conversion_settings": {
+        "format": "wav",
+        "pipeline": "2011 sound extraction -> UE sound import",
+        "source": "2011 UI sfx"
+      },
+      "intermediate_path": "Content/Extracted/2011/UISfx/Error.wav",
+      "intermediate_sha256": "7a80bb6e1beb89b114f3ccdda9f72027b6dd3a15f5e3bb1de70f95ebfb3a996d",
+      "extracted_file": "Content/Extracted/2011/UISfx/Error.wav",
+      "extracted_sha256": "7a80bb6e1beb89b114f3ccdda9f72027b6dd3a15f5e3bb1de70f95ebfb3a996d",
+      "destination": "/Game/Audio/UI/Error.Error"
+    },
+    {
+      "asset_key": "2011:UISfx/PopUp",
+      "source_locator": "D:/APBReloaded/Content/Extracted/2011/UISfx/PopUp.wav",
+      "source_sha256": "c76668452ae7ad9808d8c184fae44188e10af097b24eb13023f12a3f67fe87e1",
+      "extractor": "tools/scripts/export_2011_ui.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_ui.py",
+        "--sound=PopUp"
+      ],
+      "conversion_settings": {
+        "format": "wav",
+        "pipeline": "2011 sound extraction -> UE sound import",
+        "source": "2011 UI sfx"
+      },
+      "intermediate_path": "Content/Extracted/2011/UISfx/PopUp.wav",
+      "intermediate_sha256": "c76668452ae7ad9808d8c184fae44188e10af097b24eb13023f12a3f67fe87e1",
+      "extracted_file": "Content/Extracted/2011/UISfx/PopUp.wav",
+      "extracted_sha256": "c76668452ae7ad9808d8c184fae44188e10af097b24eb13023f12a3f67fe87e1",
+      "destination": "/Game/Audio/UI/PopUp.PopUp"
+    },
+    {
+      "asset_key": "2011:UISfx/Positive3",
+      "source_locator": "D:/APBReloaded/Content/Extracted/2011/UISfx/Positive3.wav",
+      "source_sha256": "280400fa594d444308031fe9b5397463c7b9733a7fcec7d2aa6009b0b0c737d0",
+      "extractor": "tools/scripts/export_2011_ui.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_ui.py",
+        "--sound=Positive3"
+      ],
+      "conversion_settings": {
+        "format": "wav",
+        "pipeline": "2011 sound extraction -> UE sound import",
+        "source": "2011 UI sfx"
+      },
+      "intermediate_path": "Content/Extracted/2011/UISfx/Positive3.wav",
+      "intermediate_sha256": "280400fa594d444308031fe9b5397463c7b9733a7fcec7d2aa6009b0b0c737d0",
+      "extracted_file": "Content/Extracted/2011/UISfx/Positive3.wav",
+      "extracted_sha256": "280400fa594d444308031fe9b5397463c7b9733a7fcec7d2aa6009b0b0c737d0",
+      "destination": "/Game/Audio/UI/Positive3.Positive3"
+    },
+    {
+      "asset_key": "2011:UISfx/Spark",
+      "source_locator": "D:/APBReloaded/Content/Extracted/2011/UISfx/Spark.wav",
+      "source_sha256": "7dbe170b026cae951638d6be60492cfe022aa656bb6844317fb165409c479373",
+      "extractor": "tools/scripts/export_2011_ui.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_ui.py",
+        "--sound=Spark"
+      ],
+      "conversion_settings": {
+        "format": "wav",
+        "pipeline": "2011 sound extraction -> UE sound import",
+        "source": "2011 UI sfx"
+      },
+      "intermediate_path": "Content/Extracted/2011/UISfx/Spark.wav",
+      "intermediate_sha256": "7dbe170b026cae951638d6be60492cfe022aa656bb6844317fb165409c479373",
+      "extracted_file": "Content/Extracted/2011/UISfx/Spark.wav",
+      "extracted_sha256": "7dbe170b026cae951638d6be60492cfe022aa656bb6844317fb165409c479373",
+      "destination": "/Game/Audio/UI/Spark.Spark"
+    },
+    {
+      "asset_key": "2011:UISfx/Positive",
+      "source_locator": "D:/APBReloaded/Content/Extracted/2011/UISfx/Positive.wav",
+      "source_sha256": "642f2cf4cdcb11833382f2a276b1dd276b10159ba933466d1c0b72e1152c297e",
+      "extractor": "tools/scripts/export_2011_ui.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_ui.py",
+        "--sound=Positive"
+      ],
+      "conversion_settings": {
+        "format": "wav",
+        "pipeline": "2011 sound extraction -> UE sound import",
+        "source": "2011 UI sfx"
+      },
+      "intermediate_path": "Content/Extracted/2011/UISfx/Positive.wav",
+      "intermediate_sha256": "642f2cf4cdcb11833382f2a276b1dd276b10159ba933466d1c0b72e1152c297e",
+      "extracted_file": "Content/Extracted/2011/UISfx/Positive.wav",
+      "extracted_sha256": "642f2cf4cdcb11833382f2a276b1dd276b10159ba933466d1c0b72e1152c297e",
+      "destination": "/Game/Audio/UI/Positive.Positive"
+    },
+    {
+      "asset_key": "2011:UISfx/Button4_616844292",
+      "source_locator": "D:/APBReloaded/Content/Extracted/2011/UISfx/Button4_616844292.wav",
+      "source_sha256": "26f409fcf2db5987e2d13ed0c827aa2c55f51330b0e5f97e78212eaa362e321c",
+      "extractor": "tools/scripts/export_2011_ui.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_ui.py",
+        "--sound=Button4_616844292"
+      ],
+      "conversion_settings": {
+        "format": "wav",
+        "pipeline": "2011 sound extraction -> UE sound import",
+        "source": "2011 UI sfx"
+      },
+      "intermediate_path": "Content/Extracted/2011/UISfx/Button4_616844292.wav",
+      "intermediate_sha256": "26f409fcf2db5987e2d13ed0c827aa2c55f51330b0e5f97e78212eaa362e321c",
+      "extracted_file": "Content/Extracted/2011/UISfx/Button4_616844292.wav",
+      "extracted_sha256": "26f409fcf2db5987e2d13ed0c827aa2c55f51330b0e5f97e78212eaa362e321c",
+      "destination": "/Game/Audio/UI/Button4_616844292.Button4_616844292"
+    },
+    {
+      "asset_key": "2011:UISfx/CSABeep2",
+      "source_locator": "D:/APBReloaded/Content/Extracted/2011/UISfx/CSABeep2.wav",
+      "source_sha256": "81457ea4e62656fb76d0ebb018b1fcb7e90e23fb963e9ceea5da2c25bc1a1ec7",
+      "extractor": "tools/scripts/export_2011_ui.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_ui.py",
+        "--sound=CSABeep2"
+      ],
+      "conversion_settings": {
+        "format": "wav",
+        "pipeline": "2011 sound extraction -> UE sound import",
+        "source": "2011 UI sfx"
+      },
+      "intermediate_path": "Content/Extracted/2011/UISfx/CSABeep2.wav",
+      "intermediate_sha256": "81457ea4e62656fb76d0ebb018b1fcb7e90e23fb963e9ceea5da2c25bc1a1ec7",
+      "extracted_file": "Content/Extracted/2011/UISfx/CSABeep2.wav",
+      "extracted_sha256": "81457ea4e62656fb76d0ebb018b1fcb7e90e23fb963e9ceea5da2c25bc1a1ec7",
+      "destination": "/Game/Audio/UI/CSABeep2.CSABeep2"
+    },
+    {
+      "asset_key": "2011:UISfx/Button1",
+      "source_locator": "D:/APBReloaded/Content/Extracted/2011/UISfx/Button1.wav",
+      "source_sha256": "d467bc95c5f3f5077ccda8115468537ad5a8dda532a0f2c78e6180ff4ac5a9d0",
+      "extractor": "tools/scripts/export_2011_ui.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_ui.py",
+        "--sound=Button1"
+      ],
+      "conversion_settings": {
+        "format": "wav",
+        "pipeline": "2011 sound extraction -> UE sound import",
+        "source": "2011 UI sfx"
+      },
+      "intermediate_path": "Content/Extracted/2011/UISfx/Button1.wav",
+      "intermediate_sha256": "d467bc95c5f3f5077ccda8115468537ad5a8dda532a0f2c78e6180ff4ac5a9d0",
+      "extracted_file": "Content/Extracted/2011/UISfx/Button1.wav",
+      "extracted_sha256": "d467bc95c5f3f5077ccda8115468537ad5a8dda532a0f2c78e6180ff4ac5a9d0",
+      "destination": "/Game/Audio/UI/Button1.Button1"
+    },
+    {
+      "asset_key": "2011:UISfx/Nice",
+      "source_locator": "D:/APBReloaded/Content/Extracted/2011/UISfx/Nice.wav",
+      "source_sha256": "e7a49e3078fa82081bb175460c3d8cf8350cb2e4cbd5e853bd3e7931cc818a50",
+      "extractor": "tools/scripts/export_2011_ui.py",
+      "extractor_args": [
+        "python",
+        "tools/scripts/export_2011_ui.py",
+        "--sound=Nice"
+      ],
+      "conversion_settings": {
+        "format": "wav",
+        "pipeline": "2011 sound extraction -> UE sound import",
+        "source": "2011 UI sfx"
+      },
+      "intermediate_path": "Content/Extracted/2011/UISfx/Nice.wav",
+      "intermediate_sha256": "e7a49e3078fa82081bb175460c3d8cf8350cb2e4cbd5e853bd3e7931cc818a50",
+      "extracted_file": "Content/Extracted/2011/UISfx/Nice.wav",
+      "extracted_sha256": "e7a49e3078fa82081bb175460c3d8cf8350cb2e4cbd5e853bd3e7931cc818a50",
+      "destination": "/Game/Audio/UI/Nice.Nice"
+    }
+  ]
+}

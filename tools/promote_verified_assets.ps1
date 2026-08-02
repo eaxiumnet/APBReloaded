@@ -17,6 +17,7 @@ $ledger = Get-Content -LiteralPath $ledgerPath -Raw | ConvertFrom-Json
 $entries = @($ledger.entries)
 $allowedSourceBuilds = @("retail", "2011", "2011+retail", "apbdb")
 $promoted = [System.Collections.Generic.List[object]]::new()
+$media = [System.Collections.Generic.List[object]]::new()
 
 function Test-SourceLocator {
     param([string]$SourceBuild, [string]$SourceLocator)
@@ -54,6 +55,20 @@ foreach ($entry in $entries) {
     if ($allowedSourceBuilds -notcontains $sourceBuild) {
         throw "VERIFIED_ASSET_ALLOWLIST_FAIL asset=$assetKey reason=invalid_source_build value=$sourceBuild"
     }
+    if ($assetClass -eq "MediaFile") {
+        $mediaFilePath = [string]$entry.media_file_path
+        if ([string]::IsNullOrWhiteSpace($mediaFilePath)) {
+            throw "VERIFIED_ASSET_ALLOWLIST_FAIL asset=$assetKey reason=missing_media_file_path"
+        }
+        $media.Add([ordered]@{
+            asset_key = $assetKey
+            object_path = $dest
+            file_path = $mediaFilePath
+            source_build = $sourceBuild
+            source_locator = $sourceLocator
+        })
+        continue
+    }
     $objectPath = $dest
     $leaf = ($dest -split "/")[-1]
     if ($leaf -notmatch "\.") {
@@ -69,12 +84,14 @@ foreach ($entry in $entries) {
 }
 
 $ordered = @($promoted | Sort-Object object_path, asset_key)
+$mediaOrdered = @($media | Sort-Object object_path, asset_key)
 $document = [ordered]@{
-    schema_version = 1
+    schema_version = 2
     generated_by = "tools/promote_verified_assets.ps1"
     generated_at = ([DateTime]$ledger.updated).ToUniversalTime().ToString("yyyy-MM-dd")
     ledger_version = [int]$ledger.version
     entries = $ordered
+    media_entries = $mediaOrdered
 }
 $parent = Split-Path -Parent $Output
 if ($parent) { New-Item -ItemType Directory -Force -Path $parent | Out-Null }

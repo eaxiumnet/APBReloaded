@@ -3,7 +3,7 @@
 #include "Subsystems/GameInstanceSubsystem.h"
 #include "APBSessionProbeSubsystem.generated.h"
 
-/** Probes via -APBProbe=client_loop|playable|mp_observe|frontend_menu|frontend_flow|social_probe.
+/** Probes via -APBProbe=client_loop|playable|mp_observe|frontend_menu|frontend_flow|asset_allowlist|frontend_routing|social_probe.
  *  frontend_menu: 2011 menu gate — validates every UI stage + district select + travel
  *    dispatch, emits terminal FRONTEND_MENU_OK, then exits (M4 gate).
  *  frontend_flow: menu sequence THEN post-travel freeroam playables, emits terminal
@@ -43,6 +43,12 @@ private:
 	void RunWorldHandoffClientProbe();
 	void RunWorldChatClientProbe();
 	void RunSocialProbe();
+	void RunVerifiedAssetAllowlistProbe();
+	void RunFrontendRoutingProbe();
+	void RunReplicationProbe();
+	/** M11 network dispatch gate — a real network client sets its faction, enqueues via
+	 *  Server_RequestMissionDispatch, and observes the mission the authority dispatches it into. */
+	void RunMissionClientProbe();
 	void QueueChatCommandsFromCommandLine();
 	void ArmQueuedChatCommands();
 	bool ParseHandoffProbeSnapshot(const FString& Json, int64& OutCash, int64& OutG1C, float& OutThreat,
@@ -68,6 +74,12 @@ private:
 	int32 WS_TicketCount = 0;
 	FString WSClientId;
 	bool bWSClientDone = false;
+	// Single-shot login guard: the world authority runs async (PBKDF2) auth that bumps a
+	// per-connection generation nonce on every LoginPlayer call and rejects stale callbacks.
+	// Re-sending login every tick would invalidate every in-flight auth, so send once and
+	// only re-send after a generous interval as a lost-RPC safety net.
+	bool bWSLoginSent = false;
+	double WSLoginSentAt = 0.0;
 	bool bLoadWorkloadEnabled = false;
 	bool bLoadTravelDispatched = false;
 	bool bLoadCompletionEmitted = false;
@@ -124,14 +136,29 @@ private:
 	FString SocialRole;
 	bool bSocialLoginSent = false;
 	bool bSocialWorldLoginSent = false;
+	bool bSocialTicketRequested = false;
+	bool bSocialTravelDispatched = false;
+	bool bSocialArrivedInDistrict = false;
 	bool bSocialClanOk = false;
 	bool bSocialClanInviteOk = false;
 	bool bSocialFriendsOk = false;
 	bool bSocialGroupsOk = false;
 	bool bSocialGroupInviteOk = false;
 	bool bSocialMailOk = false;
+	// Alice's single-flight social op awaiting its Client_SocialResult echo.
+	FString SocialOpInFlight;
 	int64 SocialProbeStartMs = 0;
 	bool bSocialDone = false;
+	FString ReplicationRole;
+	int64 ReplicationProbeStartMs = 0;
+	bool bReplicationDone = false;
+	// M11 network dispatch client (-MissionRole=criminal|enforcer).
+	FString MissionRole;
+	int64 MissionClientStartMs = 0;
+	bool bMissionFactionRequested = false;
+	bool bMissionEnqueued = false;
+	bool bMissionSeenQueued = false;
+	bool bMissionClientDone = false;
 	struct FChatGateCommand
 	{
 		int32 DelayMs = 0;

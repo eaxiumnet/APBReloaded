@@ -136,7 +136,30 @@ if ($PositiveText -notmatch "RUNTIME_ALLOWLIST_ALLOW_OK" -or
 }
 Write-Step "positive_probe PASS (ALLOW_OK + REJECT_OK + NO_SUBSTITUTE_OK)"
 
-# 5. Negative probe(s) against an override copy. Never touches the canonical file.
+# 5. Task-18 frontend routing probe (menu texture + UI sfx + media allow/reject + source boundary).
+$FrontendScratch = Join-Path $Scratch "frontend_$RunId"
+New-Item -ItemType Directory -Force -Path $FrontendScratch | Out-Null
+$FrontendLog = Join-Path $FrontendScratch "frontend_routing.log"
+$FrontendArgs = @(
+    $Project, "/Game/Maps/Lvl_APB_Frontend", "-game",
+    "-APBProbe=frontend_routing", "-APBStrictAssetAllowlist", "-APBScratch=$FrontendScratch",
+    "-nosplash", "-nosound", "-nullrhi", "-unattended"
+)
+$FrontendRes = Invoke-EditorProbe -LegArgs $FrontendArgs -MarkerFile $FrontendLog -IsDone {
+    param($c)
+    $c -match "FRONTEND_RUNTIME_ROUTING_PASS"
+}
+Stop-EditorProcs
+if (-not $FrontendRes.Ok) {
+    throw "M3R_ASSET_QA_FAIL reason=frontend_routing_probe_no_verdict log=$FrontendLog"
+}
+$FrontendText = Get-Content -LiteralPath $FrontendLog -Raw
+if ($FrontendText -notmatch "FRONTEND_RUNTIME_ROUTING_PASS") {
+    throw "M3R_ASSET_QA_FAIL reason=frontend_routing_probe_failed log=$FrontendLog"
+}
+Write-Step "frontend_routing_probe PASS (texture + sfx + media allow/reject + source boundary)"
+
+# 6. Negative probe(s) against an override copy. Never touches the canonical file.
 $NegativePath = $AllowlistOverride
 if ([string]::IsNullOrWhiteSpace($NegativePath)) {
     $NegativePath = Join-Path $Scratch "allowlist_negative_empty_$RunId.json"
@@ -206,6 +229,14 @@ $Evidence = [ordered]@{
         override = $NegativePath.Replace('\', '/')
         log = (Split-Path $NegativeLog -Leaf)
     }
+    frontend_routing_probe = @{
+        texture_allow = $true
+        sfx_allow = $true
+        media_allow = $true
+        wrong_source_reject = $true
+        media_reject = $true
+        log = (Split-Path $FrontendLog -Leaf)
+    }
     canonical_allowlist = @{
         path = "Content/Data/verified_asset_allowlist.json"
         sha256_before = $CanonicalHashBefore
@@ -216,4 +247,4 @@ $EvidenceJson = Join-Path $Scratch "m3r_asset_qa_$RunId.json"
 $Json = $Evidence | ConvertTo-Json -Depth 6
 [System.IO.File]::WriteAllText($EvidenceJson, $Json, [System.Text.UTF8Encoding]::new($false))
 
-Write-Output "M3R_ASSET_QA_PASS run_id=$RunId static_audit=1 cook_audit=$([int]$CookAuditPass) positive=1 negative=1 canonical_integrity=1 evidence=$EvidenceJson"
+Write-Output "M3R_ASSET_QA_PASS run_id=$RunId static_audit=1 cook_audit=$([int]$CookAuditPass) positive=1 frontend_routing=1 negative=1 canonical_integrity=1 evidence=$EvidenceJson"

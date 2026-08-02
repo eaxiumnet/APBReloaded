@@ -1,0 +1,728 @@
+{
+  "schema": "apb_frontend_menu2011_v1",
+  "batch": "frontend_menu2011_media",
+  "generated_by": "tools/scripts/record_frontend_menu_import.py",
+  "generated_at": "2026-08-02T22:12:12.026313+00:00",
+  "entries": [
+    {
+      "asset_key": "retail:Movies/APBFirstSpawnTutorial.bik#mp4",
+      "source_locator": "${retail_steam}/APBGame/Movies/APBFirstSpawnTutorial.bik",
+      "source_sha256": "57cf9c58454276b520dc1bd1fbbbb564fd3c8b7b79d56508c07a6a6275da8839",
+      "extractor": "Content/Extracted/2011/LoginAnimatedBackground_CONVERSION_README.md (documented pipeline)",
+      "extractor_args": [
+        "ffmpeg re-encode per documented pipeline",
+        "see LoginAnimatedBackground_CONVERSION_README.md"
+      ],
+      "conversion_settings": {
+        "format": "mp4",
+        "pipeline": "documented 2011/retail movie conversion",
+        "source": "retail"
+      },
+      "intermediate_path": "Content/Movies/APBFirstSpawnTutorial.mp4",
+      "intermediate_sha256": "ee86016983781dbeb8cdaeb6c18378bea3b8bef27cc95f7054a089081714e4db",
+      "extracted_file": "Content/Movies/APBFirstSpawnTutorial.mp4",
+      "extracted_sha256": "ee86016983781dbeb8cdaeb6c18378bea3b8bef27cc95f7054a089081714e4db",
+      "destination": "/Game/Movies/APBFirstSpawnTutorial"
+    },
+    {
+      "asset_key": "retail:Movies/CrimTutorial.bik#mp4",
+      "source_locator": "${retail_steam}/APBGame/Movies/CrimTutorial.bik",
+      "source_sha256": "03513d6a1df893d316113a56461e6ffe326d1c942ba3373cf9bbdedcacdb2856",
+      "extractor": "Content/Extracted/2011/LoginAnimatedBackground_CONVERSION_README.md (documented pipeline)",
+      "extractor_args": [
+        "ffmpeg re-encode per documented pipeline",
+        "see LoginAnimatedBackground_CONVERSION_README.md"
+      ],
+      "conversion_settings": {
+        "format": "mp4",
+        "pipeline": "documented 2011/retail movie conversion",
+        "source": "retail"
+      },
+      "intermediate_path": "Content/Movies/CrimTutorial.mp4",
+      "intermediate_sha256": "a7ec66e6c6440163fcb982819f42f08870b1c8053ff7564a29cba61ce9158983",
+      "extracted_file": "Content/Movies/CrimTutorial.mp4",
+      "extracted_sha256": "a7ec66e6c6440163fcb982819f42f08870b1c8053ff7564a29cba61ce9158983",
+      "destination": "/Game/Movies/CrimTutorial"
+    },
+    {
+      "asset_key": "retail:Movies/EnfTutorial.bik#mp4",
+      "source_locator": "${retail_steam}/APBGame/Movies/EnfTutorial.bik",
+      "source_sha256": "96f94bfd073092e3a357ed10c3711cda458cfd740fb2a624a924c0415e57ec53",
+      "extractor": "Content/Extracted/2011/LoginAnimatedBackground_CONVERSION_README.md (documented pipeline)",
+      "extractor_args": [
+        "ffmpeg re-encode per documented pipeline",
+        "see LoginAnimatedBackground_CONVERSION_README.md"
+      ],
+      "conversion_settings": {
+        "format": "mp4",
+        "pipeline": "documented 2011/retail movie conversion",
+        "source": "retail"
+      },
+      "intermediate_path": "Content/Movies/EnfTutorial.mp4",
+      "intermediate_sha256": "0d894df046ce4dca64af1c4b225ba732e5cf9fa21a299acd78b30f2b45559c3d",
+      "extracted_file": "Content/Movies/EnfTutorial.mp4",
+      "extracted_sha256": "0d894df046ce4dca64af1c4b225ba732e5cf9fa21a299acd78b30f2b45559c3d",
+      "destination": "/Game/Movies/EnfTutorial"
+    },
+    {
+      "asset_key": "retail:Movies/IntroTitles.bik#mp4",
+      "source_locator": "${retail_steam}/APBGame/Movies/IntroTitles.bik",
+      "source_sha256": "c13ab92cd6729344592ba93f201c8e2049b48756f57336ebcd03ea45ab7acf13",
+      "extractor": "Content/Extracted/2011/LoginAnimatedBackground_CONVERSION_README.md (documented pipeline)",
+      "extractor_args": [
+        "ffmpeg re-encode per documented pipeline",
+        "see LoginAnimatedBackground_CONVERSION_README.md"
+      ],
+      "conversion_settings": {
+        "format": "mp4",
+        "pipeline": "documented 2011/retail movie conversion",
+        "source": "retail"
+      },
+      "intermediate_path": "Content/Movies/IntroTitles.mp4",
+      "intermediate_sha256": "3614ba6e83890da505dc277d9faaaf0bbabb1f68fb27970ad9724302b446d5b7",
+      "extracted_file": "Content/Movies/IntroTitles.mp4",
+      "extracted_sha256": "3614ba6e83890da505dc277d9faaaf0bbabb1f68fb27970ad9724302b446d5b7",
+      "destination": "/Game/Movies/IntroTitles"
+    },
+    {
+      "asset_key": "retail:Movies/LoadingMovieEpidemic.bik#mp4",
+      "source_locator": "${retail_steam}/APBGame/Movies/LoadingMovieEpidemic.bik",
+      "source_sha256": "ff06f8b192d631f2dc02e459ea7b6f170d6e90bb21b207684cf8e411461dd3fa",
+      "extractor": "Content/Extracted/2011/LoginAnimatedBackground_CONVERSION_README.md (documented pipeline)",
+      "extractor_args": [
+        "ffmpeg re-encode per documented pipeline",
+        "see LoginAnimatedBackground_CONVERSION_README.md"
+      ],
+      "conversion_settings": {
+        "format": "mp4",
+        "pipeline": "documented 2011/retail movie conversion",
+        "source": "retail"
+      },
+      "intermediate_path": "Content/Movies/LoadingMovieEpidemic.mp4",
+      "intermediate_sha256": "66483958c6d5a950098d246789ad6321a4aadbe14871e9b9d7531b26e5e1f3d9",
+      "extracted_file": "Content/Movies/LoadingMovieEpidemic.mp4",
+      "extracted_sha256": "66483958c6d5a950098d246789ad6321a4aadbe14871e9b9d7531b26e5e1f3d9",
+      "destination": "/Game/Movies/LoadingMovieEpidemic"
+    },
+    {
+      "asset_key": "retail:Movies/LoadingMovieRiotIntro.bik#mp4",
+      "source_locator": "${retail_steam}/APBGame/Movies/LoadingMovieRiotIntro.bik",
+      "source_sha256": "30fb9c939bd006666ccbb3eea2c814f377fac55973c9cbffb2601737ba730cb6",
+      "extractor": "Content/Extracted/2011/LoginAnimatedBackground_CONVERSION_README.md (documented pipeline)",
+      "extractor_args": [
+        "ffmpeg re-encode per documented pipeline",
+        "see LoginAnimatedBackground_CONVERSION_README.md"
+      ],
+      "conversion_settings": {
+        "format": "mp4",
+        "pipeline": "documented 2011/retail movie conversion",
+        "source": "retail"
+      },
+      "intermediate_path": "Content/Movies/LoadingMovieRiotIntro.mp4",
+      "intermediate_sha256": "240832049cd14279b57eb5f7a461ba27e7c4360ee1cfdb24765b418c22148583",
+      "extracted_file": "Content/Movies/LoadingMovieRiotIntro.mp4",
+      "extracted_sha256": "240832049cd14279b57eb5f7a461ba27e7c4360ee1cfdb24765b418c22148583",
+      "destination": "/Game/Movies/LoadingMovieRiotIntro"
+    },
+    {
+      "asset_key": "retail:Movies/LoadingMovieRiotLoop.bik#mp4",
+      "source_locator": "${retail_steam}/APBGame/Movies/LoadingMovieRiotLoop.bik",
+      "source_sha256": "1ff85e04083152f1ad3152c27d62464e8b0247635b20ce446757f8417f02394a",
+      "extractor": "Content/Extracted/2011/LoginAnimatedBackground_CONVERSION_README.md (documented pipeline)",
+      "extractor_args": [
+        "ffmpeg re-encode per documented pipeline",
+        "see LoginAnimatedBackground_CONVERSION_README.md"
+      ],
+      "conversion_settings": {
+        "format": "mp4",
+        "pipeline": "documented 2011/retail movie conversion",
+        "source": "retail"
+      },
+      "intermediate_path": "Content/Movies/LoadingMovieRiotLoop.mp4",
+      "intermediate_sha256": "bc251ffe469329c9eeb12a1444d33583b6a260af29bd7d3a614834fdc0c667d4",
+      "extracted_file": "Content/Movies/LoadingMovieRiotLoop.mp4",
+      "extracted_sha256": "bc251ffe469329c9eeb12a1444d33583b6a260af29bd7d3a614834fdc0c667d4",
+      "destination": "/Game/Movies/LoadingMovieRiotLoop"
+    },
+    {
+      "asset_key": "retail:Movies/LoadingMovieV1.bik#mp4",
+      "source_locator": "${retail_steam}/APBGame/Movies/LoadingMovieV1.bik",
+      "source_sha256": "7340bc7f55e50e9a1d3628dfe0f7470d0f6e3c794b58a561b4d6af2808965d65",
+      "extractor": "Content/Extracted/2011/LoginAnimatedBackground_CONVERSION_README.md (documented pipeline)",
+      "extractor_args": [
+        "ffmpeg re-encode per documented pipeline",
+        "see LoginAnimatedBackground_CONVERSION_README.md"
+      ],
+      "conversion_settings": {
+        "format": "mp4",
+        "pipeline": "documented 2011/retail movie conversion",
+        "source": "retail"
+      },
+      "intermediate_path": "Content/Movies/LoadingMovieV1.mp4",
+      "intermediate_sha256": "ecd2e9f2f6969006397c326cd73b6623c959431900932df3898adc3b7cdb09f4",
+      "extracted_file": "Content/Movies/LoadingMovieV1.mp4",
+      "extracted_sha256": "ecd2e9f2f6969006397c326cd73b6623c959431900932df3898adc3b7cdb09f4",
+      "destination": "/Game/Movies/LoadingMovieV1"
+    },
+    {
+      "asset_key": "2011:Movies/SplashScreen.bik#mp4",
+      "source_locator": "D:/APBReloaded/2011 apb/APB All Points Bulletin/Client/APBGame/Movies/SplashScreen.bik",
+      "source_sha256": "013433ee9e35d4a81af94776d1272b2ae2aa0683d1f6ea33993825630d0d2ca7",
+      "extractor": "Content/Extracted/2011/LoginAnimatedBackground_CONVERSION_README.md (documented pipeline)",
+      "extractor_args": [
+        "ffmpeg re-encode per documented pipeline",
+        "see LoginAnimatedBackground_CONVERSION_README.md"
+      ],
+      "conversion_settings": {
+        "format": "mp4",
+        "pipeline": "documented 2011/retail movie conversion",
+        "source": "2011"
+      },
+      "intermediate_path": "Content/Movies/SplashScreen.mp4",
+      "intermediate_sha256": "d070ba9f270a4de559be9d1cf58372ed3232de83af9d9fd0faeb4949f62261b5",
+      "extracted_file": "Content/Movies/SplashScreen.mp4",
+      "extracted_sha256": "d070ba9f270a4de559be9d1cf58372ed3232de83af9d9fd0faeb4949f62261b5",
+      "destination": "/Game/Movies/SplashScreen"
+    },
+    {
+      "asset_key": "2011:LoginBg/05_Login_BG_AI_x4_5120x3200.webm",
+      "source_locator": "D:/APBReloaded/Content/Extracted/2011/LoginAnimatedBackground_lossless_mkv/05_Login_BG.mkv",
+      "source_sha256": "5de4bb30a3f156473e820c9d904cff85dca1a024a2f7a863b5963156c9918a2b",
+      "extractor": "Content/Extracted/2011/LoginAnimatedBackground_CONVERSION_README.md (documented pipeline)",
+      "extractor_args": [
+        "ffmpeg re-encode per documented pipeline",
+        "see LoginAnimatedBackground_CONVERSION_README.md"
+      ],
+      "conversion_settings": {
+        "format": "webm",
+        "pipeline": "documented 2011/retail movie conversion",
+        "source": "2011"
+      },
+      "intermediate_path": "Content/Movies/Login/05_Login_BG_AI_x4_5120x3200.webm",
+      "intermediate_sha256": "6fe986b3ddb11a0c352ce02cb49a8d367feb07e278d9665ed39d4cff83d5f9a4",
+      "extracted_file": "Content/Movies/Login/05_Login_BG_AI_x4_5120x3200.webm",
+      "extracted_sha256": "6fe986b3ddb11a0c352ce02cb49a8d367feb07e278d9665ed39d4cff83d5f9a4",
+      "destination": "/Game/Movies/Login/05_Login_BG_AI_x4_5120x3200"
+    },
+    {
+      "asset_key": "2011:LoginBg/Character_Select_BG_AI_4k.webm",
+      "source_locator": "D:/APBReloaded/Content/Extracted/2011/LoginAnimatedBackground_lossless_mkv/01_Character_Select_BG.mkv",
+      "source_sha256": "0482d6d7aae4a62f32ba47d2876d2a495be3a434fabc45fc7341b940ebdb3435",
+      "extractor": "Content/Extracted/2011/LoginAnimatedBackground_CONVERSION_README.md (documented pipeline)",
+      "extractor_args": [
+        "ffmpeg re-encode per documented pipeline",
+        "see LoginAnimatedBackground_CONVERSION_README.md"
+      ],
+      "conversion_settings": {
+        "format": "webm",
+        "pipeline": "documented 2011/retail movie conversion",
+        "source": "2011"
+      },
+      "intermediate_path": "Content/Movies/Login/Character_Select_BG_AI_4k.webm",
+      "intermediate_sha256": "064e4c7da2a113dff7acd8821938e992c1ddb670187a67fbbf4ff35757a56894",
+      "extracted_file": "Content/Movies/Login/Character_Select_BG_AI_4k.webm",
+      "extracted_sha256": "064e4c7da2a113dff7acd8821938e992c1ddb670187a67fbbf4ff35757a56894",
+      "destination": "/Game/Movies/Login/Character_Select_BG_AI_4k"
+    },
+    {
+      "asset_key": "2011:LoginBg/Character_Select_BG_AI_compat.mp4",
+      "source_locator": "D:/APBReloaded/Content/Extracted/2011/LoginAnimatedBackground_lossless_mkv/01_Character_Select_BG.mkv",
+      "source_sha256": "0482d6d7aae4a62f32ba47d2876d2a495be3a434fabc45fc7341b940ebdb3435",
+      "extractor": "Content/Extracted/2011/LoginAnimatedBackground_CONVERSION_README.md (documented pipeline)",
+      "extractor_args": [
+        "ffmpeg re-encode per documented pipeline",
+        "see LoginAnimatedBackground_CONVERSION_README.md"
+      ],
+      "conversion_settings": {
+        "format": "mp4",
+        "pipeline": "documented 2011/retail movie conversion",
+        "source": "2011"
+      },
+      "intermediate_path": "Content/Movies/Login/Character_Select_BG_AI_compat.mp4",
+      "intermediate_sha256": "ef898d13c4365f1502fef6f6a73ed80db61460ffdaae656a1939089725d3f8d1",
+      "extracted_file": "Content/Movies/Login/Character_Select_BG_AI_compat.mp4",
+      "extracted_sha256": "ef898d13c4365f1502fef6f6a73ed80db61460ffdaae656a1939089725d3f8d1",
+      "destination": "/Game/Movies/Login/Character_Select_BG_AI_compat"
+    },
+    {
+      "asset_key": "2011:LoginBg/Faction_Criminal_BG_AI_4k.webm",
+      "source_locator": "D:/APBReloaded/Content/Extracted/2011/LoginAnimatedBackground_lossless_mkv/02_Faction_Select_Criminal_BG.mkv",
+      "source_sha256": "b0624b445b4009002ae73f68a0afd66e8907f524ec2091b300ca04a159e3330f",
+      "extractor": "Content/Extracted/2011/LoginAnimatedBackground_CONVERSION_README.md (documented pipeline)",
+      "extractor_args": [
+        "ffmpeg re-encode per documented pipeline",
+        "see LoginAnimatedBackground_CONVERSION_README.md"
+      ],
+      "conversion_settings": {
+        "format": "webm",
+        "pipeline": "documented 2011/retail movie conversion",
+        "source": "2011"
+      },
+      "intermediate_path": "Content/Movies/Login/Faction_Criminal_BG_AI_4k.webm",
+      "intermediate_sha256": "4697f4025363807273b65c4ee46478ea1c6061f53f49feeb2b8778f66a8f45eb",
+      "extracted_file": "Content/Movies/Login/Faction_Criminal_BG_AI_4k.webm",
+      "extracted_sha256": "4697f4025363807273b65c4ee46478ea1c6061f53f49feeb2b8778f66a8f45eb",
+      "destination": "/Game/Movies/Login/Faction_Criminal_BG_AI_4k"
+    },
+    {
+      "asset_key": "2011:LoginBg/Faction_Criminal_BG_AI_compat.mp4",
+      "source_locator": "D:/APBReloaded/Content/Extracted/2011/LoginAnimatedBackground_lossless_mkv/02_Faction_Select_Criminal_BG.mkv",
+      "source_sha256": "b0624b445b4009002ae73f68a0afd66e8907f524ec2091b300ca04a159e3330f",
+      "extractor": "Content/Extracted/2011/LoginAnimatedBackground_CONVERSION_README.md (documented pipeline)",
+      "extractor_args": [
+        "ffmpeg re-encode per documented pipeline",
+        "see LoginAnimatedBackground_CONVERSION_README.md"
+      ],
+      "conversion_settings": {
+        "format": "mp4",
+        "pipeline": "documented 2011/retail movie conversion",
+        "source": "2011"
+      },
+      "intermediate_path": "Content/Movies/Login/Faction_Criminal_BG_AI_compat.mp4",
+      "intermediate_sha256": "e65621dfd92c44a7c95ebc581ba3259d7041af504d4ed0b692c157f157b57031",
+      "extracted_file": "Content/Movies/Login/Faction_Criminal_BG_AI_compat.mp4",
+      "extracted_sha256": "e65621dfd92c44a7c95ebc581ba3259d7041af504d4ed0b692c157f157b57031",
+      "destination": "/Game/Movies/Login/Faction_Criminal_BG_AI_compat"
+    },
+    {
+      "asset_key": "2011:LoginBg/Faction_Enforcer_BG_AI_4k.webm",
+      "source_locator": "D:/APBReloaded/Content/Extracted/2011/LoginAnimatedBackground_lossless_mkv/03_Faction_Select_Enforcer_BG.mkv",
+      "source_sha256": "29027ffd3bf6603597d7e626a384d0325f883067d6ec69c0f679094084fd737e",
+      "extractor": "Content/Extracted/2011/LoginAnimatedBackground_CONVERSION_README.md (documented pipeline)",
+      "extractor_args": [
+        "ffmpeg re-encode per documented pipeline",
+        "see LoginAnimatedBackground_CONVERSION_README.md"
+      ],
+      "conversion_settings": {
+        "format": "webm",
+        "pipeline": "documented 2011/retail movie conversion",
+        "source": "2011"
+      },
+      "intermediate_path": "Content/Movies/Login/Faction_Enforcer_BG_AI_4k.webm",
+      "intermediate_sha256": "19508700fb3a784ebf97bbb76d54bcfee8149071215fa7659620f81bd1244d7f",
+      "extracted_file": "Content/Movies/Login/Faction_Enforcer_BG_AI_4k.webm",
+      "extracted_sha256": "19508700fb3a784ebf97bbb76d54bcfee8149071215fa7659620f81bd1244d7f",
+      "destination": "/Game/Movies/Login/Faction_Enforcer_BG_AI_4k"
+    },
+    {
+      "asset_key": "2011:LoginBg/Faction_Enforcer_BG_AI_compat.mp4",
+      "source_locator": "D:/APBReloaded/Content/Extracted/2011/LoginAnimatedBackground_lossless_mkv/03_Faction_Select_Enforcer_BG.mkv",
+      "source_sha256": "29027ffd3bf6603597d7e626a384d0325f883067d6ec69c0f679094084fd737e",
+      "extractor": "Content/Extracted/2011/LoginAnimatedBackground_CONVERSION_README.md (documented pipeline)",
+      "extractor_args": [
+        "ffmpeg re-encode per documented pipeline",
+        "see LoginAnimatedBackground_CONVERSION_README.md"
+      ],
+      "conversion_settings": {
+        "format": "mp4",
+        "pipeline": "documented 2011/retail movie conversion",
+        "source": "2011"
+      },
+      "intermediate_path": "Content/Movies/Login/Faction_Enforcer_BG_AI_compat.mp4",
+      "intermediate_sha256": "369cefbc09de7c073515a38f996d85516a6e2164a87504496ac2f3259f84ea16",
+      "extracted_file": "Content/Movies/Login/Faction_Enforcer_BG_AI_compat.mp4",
+      "extracted_sha256": "369cefbc09de7c073515a38f996d85516a6e2164a87504496ac2f3259f84ea16",
+      "destination": "/Game/Movies/Login/Faction_Enforcer_BG_AI_compat"
+    },
+    {
+      "asset_key": "2011:LoginBg/Generic_BG_AI_4k.webm",
+      "source_locator": "D:/APBReloaded/Content/Extracted/2011/LoginAnimatedBackground_lossless_mkv/04_Generic_BG.mkv",
+      "source_sha256": "4395bc53b579494cf74358d80446d03ec40796204c0cb67677c98dbaf2ed9471",
+      "extractor": "Content/Extracted/2011/LoginAnimatedBackground_CONVERSION_README.md (documented pipeline)",
+      "extractor_args": [
+        "ffmpeg re-encode per documented pipeline",
+        "see LoginAnimatedBackground_CONVERSION_README.md"
+      ],
+      "conversion_settings": {
+        "format": "webm",
+        "pipeline": "documented 2011/retail movie conversion",
+        "source": "2011"
+      },
+      "intermediate_path": "Content/Movies/Login/Generic_BG_AI_4k.webm",
+      "intermediate_sha256": "67975affac533152daebad4d9234f81a7ae2574182de9a67535e0803b1fd6ff5",
+      "extracted_file": "Content/Movies/Login/Generic_BG_AI_4k.webm",
+      "extracted_sha256": "67975affac533152daebad4d9234f81a7ae2574182de9a67535e0803b1fd6ff5",
+      "destination": "/Game/Movies/Login/Generic_BG_AI_4k"
+    },
+    {
+      "asset_key": "2011:LoginBg/Generic_BG_AI_compat.mp4",
+      "source_locator": "D:/APBReloaded/Content/Extracted/2011/LoginAnimatedBackground_lossless_mkv/04_Generic_BG.mkv",
+      "source_sha256": "4395bc53b579494cf74358d80446d03ec40796204c0cb67677c98dbaf2ed9471",
+      "extractor": "Content/Extracted/2011/LoginAnimatedBackground_CONVERSION_README.md (documented pipeline)",
+      "extractor_args": [
+        "ffmpeg re-encode per documented pipeline",
+        "see LoginAnimatedBackground_CONVERSION_README.md"
+      ],
+      "conversion_settings": {
+        "format": "mp4",
+        "pipeline": "documented 2011/retail movie conversion",
+        "source": "2011"
+      },
+      "intermediate_path": "Content/Movies/Login/Generic_BG_AI_compat.mp4",
+      "intermediate_sha256": "03fb852da2b6284c07ac5b1e5510dc8d88d26b771d2c6b24279a666ffe493fac",
+      "extracted_file": "Content/Movies/Login/Generic_BG_AI_compat.mp4",
+      "extracted_sha256": "03fb852da2b6284c07ac5b1e5510dc8d88d26b771d2c6b24279a666ffe493fac",
+      "destination": "/Game/Movies/Login/Generic_BG_AI_compat"
+    },
+    {
+      "asset_key": "2011:LoginBg/Login_BG_AI_4k.mp4",
+      "source_locator": "D:/APBReloaded/Content/Extracted/2011/LoginAnimatedBackground_lossless_mkv/05_Login_BG.mkv",
+      "source_sha256": "5de4bb30a3f156473e820c9d904cff85dca1a024a2f7a863b5963156c9918a2b",
+      "extractor": "Content/Extracted/2011/LoginAnimatedBackground_CONVERSION_README.md (documented pipeline)",
+      "extractor_args": [
+        "ffmpeg re-encode per documented pipeline",
+        "see LoginAnimatedBackground_CONVERSION_README.md"
+      ],
+      "conversion_settings": {
+        "format": "mp4",
+        "pipeline": "documented 2011/retail movie conversion",
+        "source": "2011"
+      },
+      "intermediate_path": "Content/Movies/Login/Login_BG_AI_4k.mp4",
+      "intermediate_sha256": "9da2d2e6b802737b0f1a71b8939f8247ebce0e2257975d984f9ead721afd0e07",
+      "extracted_file": "Content/Movies/Login/Login_BG_AI_4k.mp4",
+      "extracted_sha256": "9da2d2e6b802737b0f1a71b8939f8247ebce0e2257975d984f9ead721afd0e07",
+      "destination": "/Game/Movies/Login/Login_BG_AI_4k"
+    },
+    {
+      "asset_key": "2011:LoginBg/Login_BG_AI_4k.webm",
+      "source_locator": "D:/APBReloaded/Content/Extracted/2011/LoginAnimatedBackground_lossless_mkv/05_Login_BG.mkv",
+      "source_sha256": "5de4bb30a3f156473e820c9d904cff85dca1a024a2f7a863b5963156c9918a2b",
+      "extractor": "Content/Extracted/2011/LoginAnimatedBackground_CONVERSION_README.md (documented pipeline)",
+      "extractor_args": [
+        "ffmpeg re-encode per documented pipeline",
+        "see LoginAnimatedBackground_CONVERSION_README.md"
+      ],
+      "conversion_settings": {
+        "format": "webm",
+        "pipeline": "documented 2011/retail movie conversion",
+        "source": "2011"
+      },
+      "intermediate_path": "Content/Movies/Login/Login_BG_AI_4k.webm",
+      "intermediate_sha256": "52c4ca62eb8fa516743e088738360bd2b33dff1e40e7849a25d17616e8d448b7",
+      "extracted_file": "Content/Movies/Login/Login_BG_AI_4k.webm",
+      "extracted_sha256": "52c4ca62eb8fa516743e088738360bd2b33dff1e40e7849a25d17616e8d448b7",
+      "destination": "/Game/Movies/Login/Login_BG_AI_4k"
+    },
+    {
+      "asset_key": "2011:LoginBg/Login_BG_AI_compat.mp4",
+      "source_locator": "D:/APBReloaded/Content/Extracted/2011/LoginAnimatedBackground_lossless_mkv/05_Login_BG.mkv",
+      "source_sha256": "5de4bb30a3f156473e820c9d904cff85dca1a024a2f7a863b5963156c9918a2b",
+      "extractor": "Content/Extracted/2011/LoginAnimatedBackground_CONVERSION_README.md (documented pipeline)",
+      "extractor_args": [
+        "ffmpeg re-encode per documented pipeline",
+        "see LoginAnimatedBackground_CONVERSION_README.md"
+      ],
+      "conversion_settings": {
+        "format": "mp4",
+        "pipeline": "documented 2011/retail movie conversion",
+        "source": "2011"
+      },
+      "intermediate_path": "Content/Movies/Login/Login_BG_AI_compat.mp4",
+      "intermediate_sha256": "9220051fa0fb899190bf3792d410e3deb42cb9d90fe5902cd6172f0f6d55ca27",
+      "extracted_file": "Content/Movies/Login/Login_BG_AI_compat.mp4",
+      "extracted_sha256": "9220051fa0fb899190bf3792d410e3deb42cb9d90fe5902cd6172f0f6d55ca27",
+      "destination": "/Game/Movies/Login/Login_BG_AI_compat"
+    },
+    {
+      "asset_key": "2011:LoginBg/Login_BG_AI_full.webm",
+      "source_locator": "D:/APBReloaded/Content/Extracted/2011/LoginAnimatedBackground_lossless_mkv/05_Login_BG.mkv",
+      "source_sha256": "5de4bb30a3f156473e820c9d904cff85dca1a024a2f7a863b5963156c9918a2b",
+      "extractor": "Content/Extracted/2011/LoginAnimatedBackground_CONVERSION_README.md (documented pipeline)",
+      "extractor_args": [
+        "ffmpeg re-encode per documented pipeline",
+        "see LoginAnimatedBackground_CONVERSION_README.md"
+      ],
+      "conversion_settings": {
+        "format": "webm",
+        "pipeline": "documented 2011/retail movie conversion",
+        "source": "2011"
+      },
+      "intermediate_path": "Content/Movies/Login/Login_BG_AI_full.webm",
+      "intermediate_sha256": "6fe986b3ddb11a0c352ce02cb49a8d367feb07e278d9665ed39d4cff83d5f9a4",
+      "extracted_file": "Content/Movies/Login/Login_BG_AI_full.webm",
+      "extracted_sha256": "6fe986b3ddb11a0c352ce02cb49a8d367feb07e278d9665ed39d4cff83d5f9a4",
+      "destination": "/Game/Movies/Login/Login_BG_AI_full"
+    },
+    {
+      "asset_key": "2011:LoginBg/Login_BG_AI_hd.mp4",
+      "source_locator": "D:/APBReloaded/Content/Extracted/2011/LoginAnimatedBackground_lossless_mkv/05_Login_BG.mkv",
+      "source_sha256": "5de4bb30a3f156473e820c9d904cff85dca1a024a2f7a863b5963156c9918a2b",
+      "extractor": "Content/Extracted/2011/LoginAnimatedBackground_CONVERSION_README.md (documented pipeline)",
+      "extractor_args": [
+        "ffmpeg re-encode per documented pipeline",
+        "see LoginAnimatedBackground_CONVERSION_README.md"
+      ],
+      "conversion_settings": {
+        "format": "mp4",
+        "pipeline": "documented 2011/retail movie conversion",
+        "source": "2011"
+      },
+      "intermediate_path": "Content/Movies/Login/Login_BG_AI_hd.mp4",
+      "intermediate_sha256": "d6603e6b7e27ac3bdc65ea496782dc40f86b99604c1e9200adaa1424c223a7ea",
+      "extracted_file": "Content/Movies/Login/Login_BG_AI_hd.mp4",
+      "extracted_sha256": "d6603e6b7e27ac3bdc65ea496782dc40f86b99604c1e9200adaa1424c223a7ea",
+      "destination": "/Game/Movies/Login/Login_BG_AI_hd"
+    },
+    {
+      "asset_key": "2011:LoginBg/01_Character_Select_BG_AI_x4_5120x3200.webm",
+      "source_locator": "D:/APBReloaded/Content/Extracted/2011/LoginAnimatedBackground_lossless_mkv/01_Character_Select_BG.mkv",
+      "source_sha256": "0482d6d7aae4a62f32ba47d2876d2a495be3a434fabc45fc7341b940ebdb3435",
+      "extractor": "Content/Extracted/2011/LoginAnimatedBackground_CONVERSION_README.md (documented pipeline)",
+      "extractor_args": [
+        "ffmpeg re-encode per documented pipeline",
+        "see LoginAnimatedBackground_CONVERSION_README.md"
+      ],
+      "conversion_settings": {
+        "format": "webm",
+        "pipeline": "documented 2011/retail movie conversion",
+        "source": "2011"
+      },
+      "intermediate_path": "Content/Extracted/2011/LoginAnimatedBackground_ai_upscale/01_Character_Select_BG_AI_x4_5120x3200.webm",
+      "intermediate_sha256": "5a679c4f45c00dfc00cddbb69c06b64323a3ac421c843318e8c3ef4166bcafbd",
+      "extracted_file": "Content/Extracted/2011/LoginAnimatedBackground_ai_upscale/01_Character_Select_BG_AI_x4_5120x3200.webm",
+      "extracted_sha256": "5a679c4f45c00dfc00cddbb69c06b64323a3ac421c843318e8c3ef4166bcafbd",
+      "destination": "/Game/Movies/Login/01_Character_Select_BG_AI_x4_5120x3200"
+    },
+    {
+      "asset_key": "2011:LoginBg/01_Character_Select_BG_AI_x4_to_3840x2400.webm",
+      "source_locator": "D:/APBReloaded/Content/Extracted/2011/LoginAnimatedBackground_lossless_mkv/01_Character_Select_BG.mkv",
+      "source_sha256": "0482d6d7aae4a62f32ba47d2876d2a495be3a434fabc45fc7341b940ebdb3435",
+      "extractor": "Content/Extracted/2011/LoginAnimatedBackground_CONVERSION_README.md (documented pipeline)",
+      "extractor_args": [
+        "ffmpeg re-encode per documented pipeline",
+        "see LoginAnimatedBackground_CONVERSION_README.md"
+      ],
+      "conversion_settings": {
+        "format": "webm",
+        "pipeline": "documented 2011/retail movie conversion",
+        "source": "2011"
+      },
+      "intermediate_path": "Content/Extracted/2011/LoginAnimatedBackground_ai_upscale/01_Character_Select_BG_AI_x4_to_3840x2400.webm",
+      "intermediate_sha256": "064e4c7da2a113dff7acd8821938e992c1ddb670187a67fbbf4ff35757a56894",
+      "extracted_file": "Content/Extracted/2011/LoginAnimatedBackground_ai_upscale/01_Character_Select_BG_AI_x4_to_3840x2400.webm",
+      "extracted_sha256": "064e4c7da2a113dff7acd8821938e992c1ddb670187a67fbbf4ff35757a56894",
+      "destination": "/Game/Movies/Login/01_Character_Select_BG_AI_x4_to_3840x2400"
+    },
+    {
+      "asset_key": "2011:LoginBg/02_Faction_Select_Criminal_BG_AI_x4_5120x3200.webm",
+      "source_locator": "D:/APBReloaded/Content/Extracted/2011/LoginAnimatedBackground_lossless_mkv/02_Faction_Select_Criminal_BG.mkv",
+      "source_sha256": "b0624b445b4009002ae73f68a0afd66e8907f524ec2091b300ca04a159e3330f",
+      "extractor": "Content/Extracted/2011/LoginAnimatedBackground_CONVERSION_README.md (documented pipeline)",
+      "extractor_args": [
+        "ffmpeg re-encode per documented pipeline",
+        "see LoginAnimatedBackground_CONVERSION_README.md"
+      ],
+      "conversion_settings": {
+        "format": "webm",
+        "pipeline": "documented 2011/retail movie conversion",
+        "source": "2011"
+      },
+      "intermediate_path": "Content/Extracted/2011/LoginAnimatedBackground_ai_upscale/02_Faction_Select_Criminal_BG_AI_x4_5120x3200.webm",
+      "intermediate_sha256": "eac203549bcbd4771825eacaa7d29e677c68f535af5646b67b5bb1b0ed022760",
+      "extracted_file": "Content/Extracted/2011/LoginAnimatedBackground_ai_upscale/02_Faction_Select_Criminal_BG_AI_x4_5120x3200.webm",
+      "extracted_sha256": "eac203549bcbd4771825eacaa7d29e677c68f535af5646b67b5bb1b0ed022760",
+      "destination": "/Game/Movies/Login/02_Faction_Select_Criminal_BG_AI_x4_5120x3200"
+    },
+    {
+      "asset_key": "2011:LoginBg/02_Faction_Select_Criminal_BG_AI_x4_to_3840x2400.webm",
+      "source_locator": "D:/APBReloaded/Content/Extracted/2011/LoginAnimatedBackground_lossless_mkv/02_Faction_Select_Criminal_BG.mkv",
+      "source_sha256": "b0624b445b4009002ae73f68a0afd66e8907f524ec2091b300ca04a159e3330f",
+      "extractor": "Content/Extracted/2011/LoginAnimatedBackground_CONVERSION_README.md (documented pipeline)",
+      "extractor_args": [
+        "ffmpeg re-encode per documented pipeline",
+        "see LoginAnimatedBackground_CONVERSION_README.md"
+      ],
+      "conversion_settings": {
+        "format": "webm",
+        "pipeline": "documented 2011/retail movie conversion",
+        "source": "2011"
+      },
+      "intermediate_path": "Content/Extracted/2011/LoginAnimatedBackground_ai_upscale/02_Faction_Select_Criminal_BG_AI_x4_to_3840x2400.webm",
+      "intermediate_sha256": "4697f4025363807273b65c4ee46478ea1c6061f53f49feeb2b8778f66a8f45eb",
+      "extracted_file": "Content/Extracted/2011/LoginAnimatedBackground_ai_upscale/02_Faction_Select_Criminal_BG_AI_x4_to_3840x2400.webm",
+      "extracted_sha256": "4697f4025363807273b65c4ee46478ea1c6061f53f49feeb2b8778f66a8f45eb",
+      "destination": "/Game/Movies/Login/02_Faction_Select_Criminal_BG_AI_x4_to_3840x2400"
+    },
+    {
+      "asset_key": "2011:LoginBg/03_Faction_Select_Enforcer_BG_AI_x4_5120x3200.webm",
+      "source_locator": "D:/APBReloaded/Content/Extracted/2011/LoginAnimatedBackground_lossless_mkv/03_Faction_Select_Enforcer_BG.mkv",
+      "source_sha256": "29027ffd3bf6603597d7e626a384d0325f883067d6ec69c0f679094084fd737e",
+      "extractor": "Content/Extracted/2011/LoginAnimatedBackground_CONVERSION_README.md (documented pipeline)",
+      "extractor_args": [
+        "ffmpeg re-encode per documented pipeline",
+        "see LoginAnimatedBackground_CONVERSION_README.md"
+      ],
+      "conversion_settings": {
+        "format": "webm",
+        "pipeline": "documented 2011/retail movie conversion",
+        "source": "2011"
+      },
+      "intermediate_path": "Content/Extracted/2011/LoginAnimatedBackground_ai_upscale/03_Faction_Select_Enforcer_BG_AI_x4_5120x3200.webm",
+      "intermediate_sha256": "1bc4ae71c500798adb52716537b350bb2ead834da054eddb7a36f8a3267addc3",
+      "extracted_file": "Content/Extracted/2011/LoginAnimatedBackground_ai_upscale/03_Faction_Select_Enforcer_BG_AI_x4_5120x3200.webm",
+      "extracted_sha256": "1bc4ae71c500798adb52716537b350bb2ead834da054eddb7a36f8a3267addc3",
+      "destination": "/Game/Movies/Login/03_Faction_Select_Enforcer_BG_AI_x4_5120x3200"
+    },
+    {
+      "asset_key": "2011:LoginBg/03_Faction_Select_Enforcer_BG_AI_x4_to_3840x2400.webm",
+      "source_locator": "D:/APBReloaded/Content/Extracted/2011/LoginAnimatedBackground_lossless_mkv/03_Faction_Select_Enforcer_BG.mkv",
+      "source_sha256": "29027ffd3bf6603597d7e626a384d0325f883067d6ec69c0f679094084fd737e",
+      "extractor": "Content/Extracted/2011/LoginAnimatedBackground_CONVERSION_README.md (documented pipeline)",
+      "extractor_args": [
+        "ffmpeg re-encode per documented pipeline",
+        "see LoginAnimatedBackground_CONVERSION_README.md"
+      ],
+      "conversion_settings": {
+        "format": "webm",
+        "pipeline": "documented 2011/retail movie conversion",
+        "source": "2011"
+      },
+      "intermediate_path": "Content/Extracted/2011/LoginAnimatedBackground_ai_upscale/03_Faction_Select_Enforcer_BG_AI_x4_to_3840x2400.webm",
+      "intermediate_sha256": "19508700fb3a784ebf97bbb76d54bcfee8149071215fa7659620f81bd1244d7f",
+      "extracted_file": "Content/Extracted/2011/LoginAnimatedBackground_ai_upscale/03_Faction_Select_Enforcer_BG_AI_x4_to_3840x2400.webm",
+      "extracted_sha256": "19508700fb3a784ebf97bbb76d54bcfee8149071215fa7659620f81bd1244d7f",
+      "destination": "/Game/Movies/Login/03_Faction_Select_Enforcer_BG_AI_x4_to_3840x2400"
+    },
+    {
+      "asset_key": "2011:LoginBg/04_Generic_BG_AI_x4_5120x3200.webm",
+      "source_locator": "D:/APBReloaded/Content/Extracted/2011/LoginAnimatedBackground_lossless_mkv/04_Generic_BG.mkv",
+      "source_sha256": "4395bc53b579494cf74358d80446d03ec40796204c0cb67677c98dbaf2ed9471",
+      "extractor": "Content/Extracted/2011/LoginAnimatedBackground_CONVERSION_README.md (documented pipeline)",
+      "extractor_args": [
+        "ffmpeg re-encode per documented pipeline",
+        "see LoginAnimatedBackground_CONVERSION_README.md"
+      ],
+      "conversion_settings": {
+        "format": "webm",
+        "pipeline": "documented 2011/retail movie conversion",
+        "source": "2011"
+      },
+      "intermediate_path": "Content/Extracted/2011/LoginAnimatedBackground_ai_upscale/04_Generic_BG_AI_x4_5120x3200.webm",
+      "intermediate_sha256": "2cb583f999bf3cc2a199bfb567cfadf66239f7f903cf99a6db84498dee140fb6",
+      "extracted_file": "Content/Extracted/2011/LoginAnimatedBackground_ai_upscale/04_Generic_BG_AI_x4_5120x3200.webm",
+      "extracted_sha256": "2cb583f999bf3cc2a199bfb567cfadf66239f7f903cf99a6db84498dee140fb6",
+      "destination": "/Game/Movies/Login/04_Generic_BG_AI_x4_5120x3200"
+    },
+    {
+      "asset_key": "2011:LoginBg/04_Generic_BG_AI_x4_to_3840x2400.webm",
+      "source_locator": "D:/APBReloaded/Content/Extracted/2011/LoginAnimatedBackground_lossless_mkv/04_Generic_BG.mkv",
+      "source_sha256": "4395bc53b579494cf74358d80446d03ec40796204c0cb67677c98dbaf2ed9471",
+      "extractor": "Content/Extracted/2011/LoginAnimatedBackground_CONVERSION_README.md (documented pipeline)",
+      "extractor_args": [
+        "ffmpeg re-encode per documented pipeline",
+        "see LoginAnimatedBackground_CONVERSION_README.md"
+      ],
+      "conversion_settings": {
+        "format": "webm",
+        "pipeline": "documented 2011/retail movie conversion",
+        "source": "2011"
+      },
+      "intermediate_path": "Content/Extracted/2011/LoginAnimatedBackground_ai_upscale/04_Generic_BG_AI_x4_to_3840x2400.webm",
+      "intermediate_sha256": "67975affac533152daebad4d9234f81a7ae2574182de9a67535e0803b1fd6ff5",
+      "extracted_file": "Content/Extracted/2011/LoginAnimatedBackground_ai_upscale/04_Generic_BG_AI_x4_to_3840x2400.webm",
+      "extracted_sha256": "67975affac533152daebad4d9234f81a7ae2574182de9a67535e0803b1fd6ff5",
+      "destination": "/Game/Movies/Login/04_Generic_BG_AI_x4_to_3840x2400"
+    },
+    {
+      "asset_key": "2011:LoginBg/05_Login_BG_AI_x4_to_3840x2400.webm",
+      "source_locator": "D:/APBReloaded/Content/Extracted/2011/LoginAnimatedBackground_lossless_mkv/05_Login_BG.mkv",
+      "source_sha256": "5de4bb30a3f156473e820c9d904cff85dca1a024a2f7a863b5963156c9918a2b",
+      "extractor": "Content/Extracted/2011/LoginAnimatedBackground_CONVERSION_README.md (documented pipeline)",
+      "extractor_args": [
+        "ffmpeg re-encode per documented pipeline",
+        "see LoginAnimatedBackground_CONVERSION_README.md"
+      ],
+      "conversion_settings": {
+        "format": "webm",
+        "pipeline": "documented 2011/retail movie conversion",
+        "source": "2011"
+      },
+      "intermediate_path": "Content/Extracted/2011/LoginAnimatedBackground_ai_upscale/05_Login_BG_AI_x4_to_3840x2400.webm",
+      "intermediate_sha256": "52c4ca62eb8fa516743e088738360bd2b33dff1e40e7849a25d17616e8d448b7",
+      "extracted_file": "Content/Extracted/2011/LoginAnimatedBackground_ai_upscale/05_Login_BG_AI_x4_to_3840x2400.webm",
+      "extracted_sha256": "52c4ca62eb8fa516743e088738360bd2b33dff1e40e7849a25d17616e8d448b7",
+      "destination": "/Game/Movies/Login/05_Login_BG_AI_x4_to_3840x2400"
+    },
+    {
+      "asset_key": "2011:LoginBg/LoginAnimatedBackground_Combined_5-4-3-2-1.webm",
+      "source_locator": "D:/APBReloaded/Content/Extracted/2011/LoginAnimatedBackground_lossless_mkv/05_Login_BG.mkv",
+      "source_sha256": "5de4bb30a3f156473e820c9d904cff85dca1a024a2f7a863b5963156c9918a2b",
+      "extractor": "Content/Extracted/2011/LoginAnimatedBackground_CONVERSION_README.md (documented pipeline)",
+      "extractor_args": [
+        "ffmpeg re-encode per documented pipeline",
+        "see LoginAnimatedBackground_CONVERSION_README.md"
+      ],
+      "conversion_settings": {
+        "format": "webm",
+        "pipeline": "documented 2011/retail movie conversion",
+        "source": "2011"
+      },
+      "intermediate_path": "Content/Extracted/2011/LoginAnimatedBackground_ai_upscale/LoginAnimatedBackground_Combined_5-4-3-2-1.webm",
+      "intermediate_sha256": "0140e89065cb9ac8e61238a053cba32415992dce3d982614fc976b06049c4ff2",
+      "extracted_file": "Content/Extracted/2011/LoginAnimatedBackground_ai_upscale/LoginAnimatedBackground_Combined_5-4-3-2-1.webm",
+      "extracted_sha256": "0140e89065cb9ac8e61238a053cba32415992dce3d982614fc976b06049c4ff2",
+      "destination": "/Game/Movies/Login/LoginAnimatedBackground_Combined_5-4-3-2-1"
+    },
+    {
+      "asset_key": "2011:ThemeWav/841514482_APBTheme1.wav",
+      "source_locator": "D:/APBReloaded/Content/Extracted/Audio/2011/StreamedSFX/wav/841514482_APBTheme1.wav",
+      "source_sha256": "915377d12b21667b2cfe26f75ab4de30a0dcce934cdf7a973df442e97de8e96e",
+      "extractor": "Content/Extracted/2011/LoginAnimatedBackground_CONVERSION_README.md (documented pipeline)",
+      "extractor_args": [
+        "ffmpeg re-encode per documented pipeline",
+        "see LoginAnimatedBackground_CONVERSION_README.md"
+      ],
+      "conversion_settings": {
+        "format": "wav",
+        "pipeline": "documented 2011/retail movie conversion",
+        "source": "2011"
+      },
+      "intermediate_path": "Content/Audio/841514482_APBTheme1.wav",
+      "intermediate_sha256": "915377d12b21667b2cfe26f75ab4de30a0dcce934cdf7a973df442e97de8e96e",
+      "extracted_file": "Content/Audio/841514482_APBTheme1.wav",
+      "extracted_sha256": "915377d12b21667b2cfe26f75ab4de30a0dcce934cdf7a973df442e97de8e96e",
+      "destination": "/Game/Audio/841514482_APBTheme1"
+    },
+    {
+      "asset_key": "2011:ThemeWav/LoginTheme_APBTheme1.wav",
+      "source_locator": "D:/APBReloaded/Content/Extracted/Audio/2011/StreamedSFX/wav/841514482_APBTheme1.wav",
+      "source_sha256": "915377d12b21667b2cfe26f75ab4de30a0dcce934cdf7a973df442e97de8e96e",
+      "extractor": "Content/Extracted/2011/LoginAnimatedBackground_CONVERSION_README.md (documented pipeline)",
+      "extractor_args": [
+        "ffmpeg re-encode per documented pipeline",
+        "see LoginAnimatedBackground_CONVERSION_README.md"
+      ],
+      "conversion_settings": {
+        "format": "wav",
+        "pipeline": "documented 2011/retail movie conversion",
+        "source": "2011"
+      },
+      "intermediate_path": "Content/Audio/LoginTheme_APBTheme1.wav",
+      "intermediate_sha256": "915377d12b21667b2cfe26f75ab4de30a0dcce934cdf7a973df442e97de8e96e",
+      "extracted_file": "Content/Audio/LoginTheme_APBTheme1.wav",
+      "extracted_sha256": "915377d12b21667b2cfe26f75ab4de30a0dcce934cdf7a973df442e97de8e96e",
+      "destination": "/Game/Audio/LoginTheme_APBTheme1"
+    },
+    {
+      "asset_key": "2011:ThemeWav/StreamedSFX_841514482_APBTheme1.wav",
+      "source_locator": "D:/APBReloaded/Content/Extracted/Audio/2011/StreamedSFX/wav/841514482_APBTheme1.wav",
+      "source_sha256": "915377d12b21667b2cfe26f75ab4de30a0dcce934cdf7a973df442e97de8e96e",
+      "extractor": "Content/Extracted/2011/LoginAnimatedBackground_CONVERSION_README.md (documented pipeline)",
+      "extractor_args": [
+        "ffmpeg re-encode per documented pipeline",
+        "see LoginAnimatedBackground_CONVERSION_README.md"
+      ],
+      "conversion_settings": {
+        "format": "wav",
+        "pipeline": "documented 2011/retail movie conversion",
+        "source": "2011"
+      },
+      "intermediate_path": "Content/Extracted/Audio/2011/StreamedSFX/wav/841514482_APBTheme1.wav",
+      "intermediate_sha256": "915377d12b21667b2cfe26f75ab4de30a0dcce934cdf7a973df442e97de8e96e",
+      "extracted_file": "Content/Extracted/Audio/2011/StreamedSFX/wav/841514482_APBTheme1.wav",
+      "extracted_sha256": "915377d12b21667b2cfe26f75ab4de30a0dcce934cdf7a973df442e97de8e96e",
+      "destination": "/Game/Audio/841514482_APBTheme1"
+    }
+  ]
+}

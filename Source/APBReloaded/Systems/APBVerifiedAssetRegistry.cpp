@@ -107,6 +107,14 @@ namespace
 		if (SourceBuild == TEXT("apbdb")) return Normalized.Contains(TEXT("apbdb"));
 		return false;
 	}
+
+	FString NormalizeMediaPath(const FString& Path)
+	{
+		FString Normalized = Path;
+		Normalized.ReplaceInline(TEXT("\\"), TEXT("/"));
+		Normalized = Normalized.ToLower();
+		return Normalized;
+	}
 }
 
 void UAPBVerifiedAssetRegistry::Initialize(FSubsystemCollectionBase& Collection)
@@ -185,16 +193,79 @@ void UAPBVerifiedAssetRegistry::Initialize(FSubsystemCollectionBase& Collection)
 		}
 	}
 
+	MediaEntries.Reset();
+	MediaEntryCount = 0;
+	if (bManifestLoaded)
+	{
+		const TArray<TSharedPtr<FJsonValue>>* Media = nullptr;
+		if (Root->TryGetArrayField(TEXT("media_entries"), Media) && Media)
+		{
+			for (const TSharedPtr<FJsonValue>& Value : *Media)
+			{
+				const TSharedPtr<FJsonObject> Entry = Value.IsValid() ? Value->AsObject() : nullptr;
+				FString ObjectPath;
+				FString FilePath;
+				FString SourceBuild;
+				FString SourceLocator;
+				const bool bValidEntry = Entry.IsValid()
+					&& Entry->TryGetStringField(TEXT("object_path"), ObjectPath)
+					&& Entry->TryGetStringField(TEXT("file_path"), FilePath)
+					&& Entry->TryGetStringField(TEXT("source_build"), SourceBuild)
+					&& Entry->TryGetStringField(TEXT("source_locator"), SourceLocator)
+					&& ObjectPath.StartsWith(TEXT("/Game/"))
+					&& !ObjectPath.Contains(TEXT(".."))
+					&& !ObjectPath.Contains(TEXT(" "))
+					&& !ObjectPath.Contains(TEXT("\\"))
+					&& !FilePath.IsEmpty()
+					&& !SourceLocator.IsEmpty()
+					&& IsSupportedSourceBuild(SourceBuild)
+					&& IsValidSourceLocator(SourceBuild, SourceLocator);
+				if (!bValidEntry)
+				{
+					bManifestLoaded = false;
+					AllowedEntries.Reset();
+					MediaEntries.Reset();
+					MediaEntryCount = 0;
+					break;
+				}
+				// file_path is project-root relative (Content/Movies/...).
+				FString Absolute = FPaths::ConvertRelativePathToFull(FPaths::ProjectDir() / FilePath);
+				const FString FileKey = NormalizeMediaPath(Absolute);
+				const FString ObjectKey = NormalizeMediaPath(ObjectPath);
+				// File paths must be unique (the runtime resolves media by file).
+				// Object-path aliases may collide when mp4/webm variants share a
+				// stem (Login_BG_AI_4k.mp4/.webm) — last write wins, never fatal.
+				if (MediaEntries.Contains(FileKey))
+				{
+					bManifestLoaded = false;
+					AllowedEntries.Reset();
+					MediaEntries.Reset();
+					MediaEntryCount = 0;
+					break;
+				}
+				FMediaEntry MediaEntry;
+				MediaEntry.ObjectPath = ObjectPath;
+				MediaEntry.FilePath = Absolute;
+				MediaEntry.SourceBuild = SourceBuild;
+				MediaEntries.Add(FileKey, MediaEntry);
+				MediaEntries.Add(ObjectKey, MediaEntry);
+				++MediaEntryCount;
+			}
+		}
+	}
+
 	if (bManifestLoaded && !bManifestOverride && !IsAllowlistProvenanceBound(AllowlistBytes, ProvenanceManifestPath))
 	{
 		bManifestLoaded = false;
 		AllowedEntries.Reset();
+		MediaEntries.Reset();
+		MediaEntryCount = 0;
 		UE_LOG(LogTemp, Error, TEXT("VERIFIED_ASSET_REGISTRY_FAIL reason=allowlist_provenance_mismatch path=%s"), *ManifestPath);
 	}
 
 	UE_LOG(LogTemp, Log,
-		TEXT("VERIFIED_ASSET_REGISTRY_INIT strict=%d manifest=%d entries=%d path=%s override=%d"),
-		bStrictEnforcement ? 1 : 0, bManifestLoaded ? 1 : 0, AllowedEntries.Num(), *ManifestPath,
+		TEXT("VERIFIED_ASSET_REGISTRY_INIT strict=%d manifest=%d entries=%d media=%d path=%s override=%d"),
+		bStrictEnforcement ? 1 : 0, bManifestLoaded ? 1 : 0, AllowedEntries.Num(), MediaEntryCount, *ManifestPath,
 		bManifestOverride ? 1 : 0);
 	if (bStrictEnforcement && !bManifestLoaded)
 	{
@@ -203,6 +274,12 @@ void UAPBVerifiedAssetRegistry::Initialize(FSubsystemCollectionBase& Collection)
 }
 
 bool UAPBVerifiedAssetRegistry::IsAllowed(const FString& ObjectPath, const FName& ExpectedClass, FString* OutReason) const
+{
+	return IsAllowedWithSourceBuild(ObjectPath, ExpectedClass, TEXT(""), OutReason);
+}
+
+bool UAPBVerifiedAssetRegistry::IsAllowedWithSourceBuild(const FString& ObjectPath, const FName& ExpectedClass,
+	const FString& ExpectedSourceBuild, FString* OutReason) const
 {
 	const FAllowedEntry* Allowed = AllowedEntries.Find(ObjectPath);
 	if (!bManifestLoaded)
@@ -220,7 +297,48 @@ bool UAPBVerifiedAssetRegistry::IsAllowed(const FString& ObjectPath, const FName
 		if (OutReason) *OutReason = TEXT("wrong_class");
 		return false;
 	}
+	if (!ExpectedSourceBuild.IsEmpty() && Allowed->SourceBuild != ExpectedSourceBuild)
+	{
+		if (OutReason) *OutReason = TEXT("wrong_source_build");
+		return false;
+	}
 	if (OutReason) *OutReason = TEXT("allowlisted");
+	return true;
+}
+
+bool UAPBVerifiedAssetRegistry::IsMediaAllowed(const FString& MediaPath, const FString& Context, FString* OutReason) const
+{
+	if (!bManifestLoaded)
+	{
+		if (OutReason) *OutReason = TEXT("manifest_unavailable");
+		UE_LOG(LogTemp, Error,
+			TEXT("RUNTIME_MEDIA_REJECT path=%s reason=manifest_unavailable context=%s"), *MediaPath, *Context);
+		return false;
+	}
+	FString Normalized = NormalizeMediaPath(MediaPath);
+	const FMediaEntry* Entry = MediaEntries.Find(Normalized);
+	if (!Entry && FPaths::IsRelative(MediaPath))
+	{
+		const FString Absolute = FPaths::ConvertRelativePathToFull(FPaths::ProjectDir() / MediaPath);
+		Entry = MediaEntries.Find(NormalizeMediaPath(Absolute));
+	}
+	if (!Entry)
+	{
+		if (OutReason) *OutReason = TEXT("media_not_allowlisted");
+		UE_LOG(LogTemp, Error,
+			TEXT("RUNTIME_MEDIA_REJECT path=%s reason=media_not_allowlisted context=%s"), *MediaPath, *Context);
+		return false;
+	}
+	if (!FPaths::FileExists(Entry->FilePath))
+	{
+		if (OutReason) *OutReason = TEXT("media_file_missing");
+		UE_LOG(LogTemp, Error,
+			TEXT("RUNTIME_MEDIA_REJECT path=%s reason=media_file_missing context=%s"), *MediaPath, *Context);
+		return false;
+	}
+	if (OutReason) *OutReason = TEXT("media_allowlisted");
+	UE_LOG(LogTemp, Verbose,
+		TEXT("RUNTIME_MEDIA_ALLOW path=%s context=%s"), *MediaPath, *Context);
 	return true;
 }
 
@@ -238,10 +356,11 @@ bool UAPBVerifiedAssetRegistry::GetFirstAllowedStaticMeshEntry(FString& OutObjec
 	return !OutObjectPath.IsEmpty();
 }
 
-UStaticMesh* UAPBVerifiedAssetRegistry::LoadStaticMesh(UWorld* World, const FString& ObjectPath, const FString& Context)
+UStaticMesh* UAPBVerifiedAssetRegistry::LoadStaticMesh(UWorld* World, const FString& ObjectPath,
+	const FString& Context, const FString& ExpectedSourceBuild)
 {
 	FString Reason;
-	if (!IsAllowed(ObjectPath, UStaticMesh::StaticClass()->GetFName(), &Reason))
+	if (!IsAllowedWithSourceBuild(ObjectPath, UStaticMesh::StaticClass()->GetFName(), ExpectedSourceBuild, &Reason))
 	{
 		UE_LOG(LogTemp, Error,
 			TEXT("RUNTIME_ALLOWLIST_REJECT path=%s class=StaticMesh reason=%s context=%s"),
@@ -267,10 +386,11 @@ UStaticMesh* UAPBVerifiedAssetRegistry::LoadStaticMesh(UWorld* World, const FStr
 	return Mesh;
 }
 
-USkeletalMesh* UAPBVerifiedAssetRegistry::LoadSkeletalMesh(UWorld* World, const FString& ObjectPath, const FString& Context)
+USkeletalMesh* UAPBVerifiedAssetRegistry::LoadSkeletalMesh(UWorld* World, const FString& ObjectPath,
+	const FString& Context, const FString& ExpectedSourceBuild)
 {
 	FString Reason;
-	if (!IsAllowed(ObjectPath, USkeletalMesh::StaticClass()->GetFName(), &Reason))
+	if (!IsAllowedWithSourceBuild(ObjectPath, USkeletalMesh::StaticClass()->GetFName(), ExpectedSourceBuild, &Reason))
 	{
 		UE_LOG(LogTemp, Error,
 			TEXT("RUNTIME_ALLOWLIST_REJECT path=%s class=SkeletalMesh reason=%s context=%s"),
@@ -294,10 +414,11 @@ USkeletalMesh* UAPBVerifiedAssetRegistry::LoadSkeletalMesh(UWorld* World, const 
 	return Mesh;
 }
 
-UTexture2D* UAPBVerifiedAssetRegistry::LoadTexture2D(UWorld* World, const FString& ObjectPath, const FString& Context)
+UTexture2D* UAPBVerifiedAssetRegistry::LoadTexture2D(UWorld* World, const FString& ObjectPath,
+	const FString& Context, const FString& ExpectedSourceBuild)
 {
 	FString Reason;
-	if (!IsAllowed(ObjectPath, UTexture2D::StaticClass()->GetFName(), &Reason))
+	if (!IsAllowedWithSourceBuild(ObjectPath, UTexture2D::StaticClass()->GetFName(), ExpectedSourceBuild, &Reason))
 	{
 		UE_LOG(LogTemp, Error,
 			TEXT("RUNTIME_ALLOWLIST_REJECT path=%s class=Texture2D reason=%s context=%s"),
@@ -321,12 +442,13 @@ UTexture2D* UAPBVerifiedAssetRegistry::LoadTexture2D(UWorld* World, const FStrin
 	return Texture;
 }
 
-UMaterialInterface* UAPBVerifiedAssetRegistry::LoadMaterialInterface(UWorld* World, const FString& ObjectPath, const FString& Context)
+UMaterialInterface* UAPBVerifiedAssetRegistry::LoadMaterialInterface(UWorld* World, const FString& ObjectPath,
+	const FString& Context, const FString& ExpectedSourceBuild)
 {
 	FString Reason;
 	FString MaterialReason;
-	const bool bAllowed = IsAllowed(ObjectPath, FName(TEXT("Material")), &MaterialReason)
-		|| IsAllowed(ObjectPath, FName(TEXT("MaterialInstanceConstant")), &Reason);
+	const bool bAllowed = IsAllowedWithSourceBuild(ObjectPath, FName(TEXT("Material")), ExpectedSourceBuild, &MaterialReason)
+		|| IsAllowedWithSourceBuild(ObjectPath, FName(TEXT("MaterialInstanceConstant")), ExpectedSourceBuild, &Reason);
 	if (!bAllowed)
 	{
 		UE_LOG(LogTemp, Error,
@@ -351,12 +473,13 @@ UMaterialInterface* UAPBVerifiedAssetRegistry::LoadMaterialInterface(UWorld* Wor
 	return Material;
 }
 
-USoundBase* UAPBVerifiedAssetRegistry::LoadSoundBase(UWorld* World, const FString& ObjectPath, const FString& Context)
+USoundBase* UAPBVerifiedAssetRegistry::LoadSoundBase(UWorld* World, const FString& ObjectPath,
+	const FString& Context, const FString& ExpectedSourceBuild)
 {
 	FString Reason;
 	FString SoundReason;
-	const bool bAllowed = IsAllowed(ObjectPath, FName(TEXT("SoundWave")), &SoundReason)
-		|| IsAllowed(ObjectPath, FName(TEXT("SoundCue")), &Reason);
+	const bool bAllowed = IsAllowedWithSourceBuild(ObjectPath, FName(TEXT("SoundWave")), ExpectedSourceBuild, &SoundReason)
+		|| IsAllowedWithSourceBuild(ObjectPath, FName(TEXT("SoundCue")), ExpectedSourceBuild, &Reason);
 	if (!bAllowed)
 	{
 		UE_LOG(LogTemp, Error,

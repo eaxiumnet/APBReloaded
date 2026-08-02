@@ -5,7 +5,9 @@
 #include "Engine/TextureRenderTarget2D.h"
 #include "Engine/StaticMesh.h"
 #include "Engine/World.h"
-#include "UObject/ConstructorHelpers.h"
+#include "Engine/GameInstance.h"
+#include "Materials/MaterialInterface.h"
+#include "APBVerifiedAssetRegistry.h"
 
 AAPBCharacterCreatePreviewActor::AAPBCharacterCreatePreviewActor()
 {
@@ -42,13 +44,20 @@ AAPBCharacterCreatePreviewActor::AAPBCharacterCreatePreviewActor()
 	Capture->SetRelativeRotation(FRotator(-8.f, 180.f, 0.f));
 	Capture->bCaptureEveryFrame = true;
 	Capture->bCaptureOnMovement = true;
-	Capture->PrimitiveRenderMode = ESceneCapturePrimitiveRenderMode::PRM_RenderScenePrimitives;
+	Capture->PrimitiveRenderMode = ESceneCapturePrimitiveRenderMode::PRM_UseShowOnlyList;
+	Capture->CaptureSource = ESceneCaptureSource::SCS_FinalColorLDR;
 	Capture->ShowOnlyComponent(BodyMesh);
 
 	KeyLight = CreateDefaultSubobject<UDirectionalLightComponent>(TEXT("KeyLight"));
 	KeyLight->SetupAttachment(Root);
 	KeyLight->SetRelativeRotation(FRotator(-35.f, 40.f, 0.f));
-	KeyLight->SetIntensity(8.f);
+	KeyLight->SetIntensity(2.f);
+
+	FillLight = CreateDefaultSubobject<UDirectionalLightComponent>(TEXT("FillLight"));
+	FillLight->SetupAttachment(Root);
+	FillLight->SetRelativeRotation(FRotator(-10.f, -140.f, 0.f));
+	FillLight->SetIntensity(0.8f);
+	FillLight->SetLightColor(FLinearColor(0.72f, 0.82f, 1.f));
 }
 
 void AAPBCharacterCreatePreviewActor::BeginPlay()
@@ -60,7 +69,7 @@ void AAPBCharacterCreatePreviewActor::BeginPlay()
 	if (!RenderTarget)
 	{
 		RenderTarget = NewObject<UTextureRenderTarget2D>(this, TEXT("CharCreateRT"));
-		RenderTarget->InitAutoFormat(512, 640);
+		RenderTarget->InitCustomFormat(512, 640, PF_B8G8R8A8, false);
 		RenderTarget->ClearColor = FLinearColor(0.02f, 0.05f, 0.09f, 1.f);
 		RenderTarget->UpdateResourceImmediate(true);
 	}
@@ -84,49 +93,70 @@ void AAPBCharacterCreatePreviewActor::BeginPlay()
 void AAPBCharacterCreatePreviewActor::Tick(float DeltaSeconds)
 {
 	Super::Tick(DeltaSeconds);
-	// Gentle studio turntable
-	YawSpin += DeltaSeconds * 25.f;
+	// Gentle studio turntable (paused while the user drags to rotate)
+	if (bAutoSpin)
+	{
+		YawSpin += DeltaSeconds * 25.f;
+	}
 	if (BodyMesh)
 	{
-		BodyMesh->SetRelativeRotation(FRotator(0.f, YawSpin, 0.f));
+		BodyMesh->SetRelativeRotation(FRotator(0.f, YawSpin + ManualYaw, 0.f));
 	}
 }
 
-UStaticMesh* AAPBCharacterCreatePreviewActor::LoadMesh(const TCHAR* Path)
+void AAPBCharacterCreatePreviewActor::SetAutoSpin(bool bSpin)
 {
-	return LoadObject<UStaticMesh>(nullptr, Path);
+	bAutoSpin = bSpin;
+}
+
+void AAPBCharacterCreatePreviewActor::AddYaw(float Degrees)
+{
+	ManualYaw += Degrees;
+}
+
+UStaticMesh* AAPBCharacterCreatePreviewActor::LoadMesh(const TCHAR* Path) const
+{
+	UGameInstance* GI = GetGameInstance();
+	UAPBVerifiedAssetRegistry* Registry = GI ? GI->GetSubsystem<UAPBVerifiedAssetRegistry>() : nullptr;
+	// Character-create content is retail-sourced; the registry rejects a 2011 match.
+	return Registry ? Registry->LoadStaticMesh(GetWorld(), Path, TEXT("character_create_preview_mesh"), TEXT("retail")) : nullptr;
 }
 
 FString AAPBCharacterCreatePreviewActor::ApplyBaseMesh(bool bEnforcer)
 {
-	const TCHAR* Paths[] = {
-		bEnforcer
-			? TEXT("/Game/Imported/Characters/Contact_LaRocha/m_contact_enforcement_larocha.m_contact_enforcement_larocha")
-			: TEXT("/Game/Imported/Characters/Contact_Bloodrose/F_Contact_Criminal_Bloodrose.F_Contact_Criminal_Bloodrose"),
-		TEXT("/Game/Imported/Characters/Wardrobe/StudioCharacter.StudioCharacter"),
-		TEXT("/Game/Imported/Characters/Contact_Sofia/F_Contact_Enforcement_Sofia.F_Contact_Enforcement_Sofia"),
-	};
-	UStaticMesh* Mesh = nullptr;
-	FString Used;
-	for (const TCHAR* P : Paths)
-	{
-		Mesh = LoadMesh(P);
-		if (Mesh)
-		{
-			Used = P;
-			break;
-		}
-	}
+	const TCHAR* Path = bEnforcer
+		? TEXT("/Game/Imported/Characters/Contact_LaRocha/m_contact_enforcement_larocha.m_contact_enforcement_larocha")
+		: TEXT("/Game/Imported/Characters/Contact_Bloodrose/F_Contact_Criminal_Bloodrose.F_Contact_Criminal_Bloodrose");
+	UStaticMesh* Mesh = LoadMesh(Path);
 	if (Mesh && BodyMesh)
 	{
 		BodyMesh->SetStaticMesh(Mesh);
-		LastMeshPath = Used;
+		const TCHAR* MaterialPath = TEXT("/Game/Imported/MaterialDatabase/DisplayPoint_CharacterMesh/MI_DisplyPoint_CharacterMesh.MI_DisplyPoint_CharacterMesh");
+		UGameInstance* GI = GetGameInstance();
+		UAPBVerifiedAssetRegistry* Registry = GI ? GI->GetSubsystem<UAPBVerifiedAssetRegistry>() : nullptr;
+		UMaterialInterface* PreviewMaterial = Registry
+			? Registry->LoadMaterialInterface(GetWorld(), MaterialPath, TEXT("character_create_preview_material"), TEXT("retail"))
+			: nullptr;
+		if (PreviewMaterial)
+		{
+			const int32 MaterialSlots = FMath::Max(1, BodyMesh->GetNumMaterials());
+			for (int32 Slot = 0; Slot < MaterialSlots; ++Slot)
+			{
+				BodyMesh->SetMaterial(Slot, PreviewMaterial);
+			}
+			UE_LOG(LogTemp, Warning, TEXT("APBCharCreate PREVIEW_MATERIAL_OK path=%s slots=%d"), MaterialPath, MaterialSlots);
+		}
+		else
+		{
+			UE_LOG(LogTemp, Error, TEXT("APBCharCreate PREVIEW_MATERIAL_BLOCKED path=%s reason=source_material_missing"), MaterialPath);
+		}
+		LastMeshPath = Path;
 		UE_LOG(LogTemp, Warning, TEXT("APBCharCreate PREVIEW_OK mesh=%s enf=%d"), *LastMeshPath, bEnforcer ? 1 : 0);
 	}
 	else
 	{
 		LastMeshPath = TEXT("missing");
-		UE_LOG(LogTemp, Warning, TEXT("APBCharCreate PREVIEW_FAIL no_mesh enf=%d"), bEnforcer ? 1 : 0);
+		UE_LOG(LogTemp, Warning, TEXT("APBCharCreate PREVIEW_BLOCKED base_mesh_missing enf=%d path=%s"), bEnforcer ? 1 : 0, Path);
 	}
 	CaptureNow();
 	return LastMeshPath;
@@ -172,49 +202,16 @@ UStaticMeshComponent* AAPBCharacterCreatePreviewActor::SlotComp(const FString& S
 
 bool AAPBCharacterCreatePreviewActor::ApplyClothingSlotVisual(const FString& Slot, const FString& ItemId)
 {
-	static const TCHAR* WardrobePool[] = {
-		TEXT("/Game/Imported/Characters/Wardrobe/StudioCharacter.StudioCharacter"),
-		TEXT("/Game/Imported/Characters/Contact_Bloodrose/F_Contact_Criminal_Bloodrose.F_Contact_Criminal_Bloodrose"),
-		TEXT("/Game/Imported/Characters/Contact_LaRocha/m_contact_enforcement_larocha.m_contact_enforcement_larocha"),
-		TEXT("/Game/Imported/Characters/Contact_Sofia/F_Contact_Enforcement_Sofia.F_Contact_Enforcement_Sofia"),
-	};
-	bool bBound = false;
-	if (!ItemId.IsEmpty() && BodyMesh)
-	{
-		const uint32 H = GetTypeHash(ItemId + Slot);
-		const TCHAR* Pick = WardrobePool[H % UE_ARRAY_COUNT(WardrobePool)];
-		if (Slot.Equals(TEXT("torso"), ESearchCase::IgnoreCase) || Slot.Equals(TEXT("face"), ESearchCase::IgnoreCase))
-		{
-			if (UStaticMesh* M = LoadMesh(Pick))
-			{
-				BodyMesh->SetStaticMesh(M);
-				LastMeshPath = Pick;
-				bBound = true;
-			}
-		}
-	}
 	if (UStaticMeshComponent* C = SlotComp(Slot))
 	{
-		const bool bHas = !ItemId.IsEmpty() && ItemId != TEXT("None");
-		C->SetVisibility(bHas);
-		C->SetRelativeScale3D(bHas ? FVector(0.18f) : FVector(0.12f));
-		// Reuse body mesh as simple slot marker when available
-		if (bHas && BodyMesh && BodyMesh->GetStaticMesh())
-		{
-			C->SetStaticMesh(BodyMesh->GetStaticMesh());
-			bBound = true;
-		}
+		C->SetVisibility(false);
+		C->SetRelativeScale3D(FVector(0.12f));
 	}
 	BoundSlotCount = 0;
-	for (UStaticMeshComponent* C : { SlotHeadMesh, SlotTorsoMesh, SlotLegsMesh, SlotFeetMesh,
-		SlotHandsMesh, SlotAccessoryMesh, SlotFaceMesh })
-	{
-		if (C && C->IsVisible()) ++BoundSlotCount;
-	}
-	UE_LOG(LogTemp, Warning, TEXT("APBCharCreate PREVIEW_SLOT slot=%s item=%s bound=%d body=%s"),
-		*Slot, *ItemId, bBound ? 1 : 0, *LastMeshPath);
+	UE_LOG(LogTemp, Warning, TEXT("APBCharCreate PREVIEW_SLOT_BLOCKED slot=%s item=%s reason=item_mesh_unavailable"),
+		*Slot, *ItemId);
 	CaptureNow();
-	return bBound || !LastMeshPath.IsEmpty();
+	return false;
 }
 
 void AAPBCharacterCreatePreviewActor::CaptureNow()
