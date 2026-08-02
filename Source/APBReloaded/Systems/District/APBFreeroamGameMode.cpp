@@ -1,5 +1,6 @@
 #include "APBFreeroamGameMode.h"
 #include "APBGameInstanceSubsystem.h"
+#include "APBVerifiedDistrictAssetRouting.h"
 #include "APBWorldService.h"
 #include "APBPlayerState.h"
 #include "APBFreeroamCharacter.h"
@@ -210,37 +211,7 @@ void AAPBFreeroamGameMode::EnsureDistrictLighting(const FVector& At)
 		SpawnedActors.Add(PPV);
 	}
 
-	// INVISIBLE fall-through backstop only. The retail ground is real now: the Financial
-	// manifest carries 348 layer=road + 630 layer=terrain rows at transform_source=retail_actor,
-	// with road surfaces at Z~-4.99. This plane must therefore never be visible and never sit at
-	// or above that level:
-	//   - Visible, it WAS the flat sheet. A colour census of work/evidence/financial_render.png
-	//     found one bucket, rgb(248,248,248), at 113881/921600 px = 12.36% of frame - this plane
-	//     wearing the BasicShapeMaterial fallback. Hiding it drops that bucket to 252 px (0.03%)
-	//     and lifts midtone geometry 20.76% -> 25.89%. Hence no EnsureVisibleMeshMaterials here.
-	//   - At Z=+5 it sat ABOVE the roads it was standing in for, occluding them.
-	// It is kept purely so a pawn that tunnels past streamed collision does not fall forever.
-	{
-		UStaticMesh* Plane = LoadObject<UStaticMesh>(nullptr, TEXT("/Engine/BasicShapes/Plane.Plane"));
-		if (Plane)
-		{
-			const FVector GroundAt(At.X, At.Y, -2000.f);
-			AStaticMeshActor* Floor = World->SpawnActor<AStaticMeshActor>(GroundAt, FRotator::ZeroRotator, Sp);
-			if (Floor)
-			{
-				Floor->SetMobility(EComponentMobility::Movable);
-				UStaticMeshComponent* SMC = Floor->GetStaticMeshComponent();
-				SMC->SetMobility(EComponentMobility::Movable);
-				SMC->SetStaticMesh(Plane);
-				Floor->SetActorScale3D(FVector(4000.f, 4000.f, 1.f));
-				SMC->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
-				SMC->SetCollisionResponseToAllChannels(ECR_Block);
-				SMC->SetVisibility(false);
-				SMC->SetHiddenInGame(true);
-				SpawnedActors.Add(Floor);
-			}
-		}
-	}
+
 
 	bLightingReady = true;
 	const int32 HasAtmos = Atmos ? 1 : 0;
@@ -378,7 +349,7 @@ void AAPBFreeroamGameMode::LoadDistrictContent()
 	int32 LoadFailed = 0, InRadius = 0, Skipped = 0;
 	const int32 N = UAPBDistrictPlacementLoader::SpawnFromManifestNearEx(
 		World, CachedManifest, Center, StreamRadiusCm, SpawnedActors, SpawnedPlacementKeys,
-		&LoadFailed, &InRadius, &Skipped);
+		RejectedPlacementKeys, &LoadFailed, &InRadius, &Skipped);
 	LastMeshLoadFailed = LoadFailed;
 	LastInRadius = InRadius;
 
@@ -405,21 +376,28 @@ void AAPBFreeroamGameMode::LoadDistrictContent()
 		TEXT("MESH_LOAD district=%s attempted_in_radius=%d spawned=%d failed=%d skipped_dup=%d\n"),
 		*CachedManifest.DistrictId, InRadius, N, LoadFailed, Skipped));
 
-	// Hero preview (Financial contact as landmark)
-	if (UStaticMesh* Hero = LoadObject<UStaticMesh>(nullptr,
-		TEXT("/Game/Imported/Characters/Contact_LaRocha/m_contact_enforcement_larocha.m_contact_enforcement_larocha")))
+		// Hero preview (Financial contact as landmark)
+	if (UStaticMesh* Hero = UAPBVerifiedDistrictAssetRouting::RouteHeroLandmarkMesh(World,
+		TEXT("/Game/Imported/Characters/Contact_LaRocha/m_contact_enforcement_larocha.m_contact_enforcement_larocha"),
+		TEXT("freeroam_hero_landmark")))
 	{
 		AStaticMeshActor* A = World->SpawnActor<AStaticMeshActor>(
 			CachedManifest.PlayerStart + FVector(200.f, -200.f, 0.f), FRotator(0, 45, 0));
 		if (A)
 		{
 			A->GetStaticMeshComponent()->SetStaticMesh(Hero);
-			UAPBDistrictPlacementLoader::EnsureVisibleMeshMaterials(A->GetStaticMeshComponent());
-			SpawnedActors.Add(A);
+			if (!UAPBDistrictPlacementLoader::EnsureVisibleMeshMaterials(A->GetStaticMeshComponent()))
+			{
+				A->Destroy();
+			}
+			else
+			{
+				SpawnedActors.Add(A);
+			}
 		}
 	}
-
 	AAPBDriveableVehicle* V = World->SpawnActor<AAPBDriveableVehicle>(CachedManifest.VehicleStart, FRotator::ZeroRotator);
+
 	if (V)
 	{
 		V->CatalogVehicleId = TEXT("Vehicle_Car_A_UtilityEstate");
@@ -508,7 +486,7 @@ void AAPBFreeroamGameMode::RefreshStreamAroundPlayers()
 	int32 LoadFailed = 0, InRadius = 0, Skipped = 0;
 	const int32 Added = UAPBDistrictPlacementLoader::SpawnFromManifestNearEx(
 		GetWorld(), CachedManifest, Center, StreamRadiusCm, SpawnedActors, SpawnedPlacementKeys,
-		&LoadFailed, &InRadius, &Skipped);
+		RejectedPlacementKeys, &LoadFailed, &InRadius, &Skipped);
 	if (Added > 0)
 	{
 		UE_LOG(LogTemp, Log, TEXT("APB stream added %d near (%.0f,%.0f) keys=%d failed=%d"),
@@ -568,21 +546,22 @@ void AAPBFreeroamGameMode::TickMatchmaker()
 	UGameInstance* GI = GetGameInstance();
 	UAPBGameInstanceSubsystem* APB = GI ? GI->GetSubsystem<UAPBGameInstanceSubsystem>() : nullptr;
 	if (!APB) return;
-	// M11 D4: WorldService owns the Matchmaker (D10 facade). The GameMode drives the cadence
-	// and handles UE-side dispatch of returned pairings to the district. The facade refuses
-	// to form a new pairing while a mission run is already active (singleton guard).
+	// M11 D4: WorldService owns the Matchmaker (D10 facade). The GameMode drives the 5s cadence;
+	// the SHARED UAPBGameInstanceSubsystem::FormAndDispatchMatches turns every formed pairing into
+	// a live opposed MissionRun, clears the paired parties' replicated bMissionQueued flags, pushes
+	// the authority snapshot to all PlayerStates, and returns one "APB MISSION_DISPATCH …" marker
+	// per dispatch. This is the IDENTICAL path the in-process client_loop probe drives, so the
+	// cadence and the probe share one production spine (no log-only FormMatches drain that would
+	// silently consume a pairing without dispatching it). The facade refuses to form a new pairing
+	// while a mission run is already active (singleton guard).
 	const AGameStateBase* GS = GetWorld() ? GetWorld()->GetGameState() : nullptr;
 	const int64 NowMs = GS ? static_cast<int64>(GS->GetServerWorldTimeSeconds() * 1000.0) : 0;
-	apb::WorldService* W = reinterpret_cast<apb::WorldService*>(APB->Service);
-	if (!W) return;
-	// Note: FormMatches returns empty until players are enqueued into the matchmaker (from
-	// Contact interaction / mission-start flow). This is wired infrastructure for the full
-	// opposition-dispatch path; the enqueue side lands when player-vs-player mission start is built.
-	const std::vector<apb::MatchPairing> Pairings = W->FormMatches(NowMs);
-	if (!Pairings.empty())
+	const TArray<FString> Markers = APB->FormAndDispatchMatches(NowMs);
+	for (const FString& Marker : Markers)
 	{
-		UE_LOG(LogTemp, Log, TEXT("APB MATCHMAKER formed=%d queue=%d"),
-			(int32)Pairings.size(), W->matchmaker.QueueSize());
+		// FormAndDispatchMatches already UE_LOGs each marker; mirror it into the district log so
+		// the network dispatch gate (which greps freeroam_district.log) sees the two real parties.
+		AppendFreeroamLog(Marker + TEXT("\n"));
 	}
 }
 

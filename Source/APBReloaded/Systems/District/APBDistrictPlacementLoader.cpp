@@ -1,13 +1,15 @@
 #include "APBDistrictPlacementLoader.h"
+#include "APBVerifiedDistrictAssetRouting.h"
 #include "Domain/APBPlacementBinding.h"
 #include "Engine/World.h"
+#include "Engine/GameInstance.h"
 #include "Engine/StaticMeshActor.h"
 #include "Engine/StaticMesh.h"
 #include "Components/StaticMeshComponent.h"
-#include "Materials/Material.h"
 #include "Materials/MaterialInterface.h"
 #include "Misc/FileHelper.h"
 #include "Misc/Paths.h"
+#include "Misc/Parse.h"
 #include "Dom/JsonObject.h"
 #include "Serialization/JsonReader.h"
 #include "Serialization/JsonSerializer.h"
@@ -35,6 +37,8 @@ bool UAPBDistrictPlacementLoader::LoadManifestFromFile(const FString& AbsoluteJs
 	OutManifest = FAPBDistrictManifest();
 	OutManifest.DistrictId = UTF8_TO_TCHAR(Parsed.district_id.c_str());
 	OutManifest.SourcePackage = UTF8_TO_TCHAR(Parsed.source_package.c_str());
+	OutManifest.SourceBuild = UTF8_TO_TCHAR(Parsed.source_build.c_str());
+	OutManifest.SourceIdSha256 = UTF8_TO_TCHAR(Parsed.source_id_sha256.c_str());
 	OutManifest.Provenance = UTF8_TO_TCHAR(Parsed.provenance.c_str());
 	OutManifest.PlayerStart = FVector(Parsed.player_start.x, Parsed.player_start.y, Parsed.player_start.z);
 	OutManifest.VehicleStart = FVector(Parsed.vehicle_start.x, Parsed.vehicle_start.y, Parsed.vehicle_start.z);
@@ -42,6 +46,10 @@ bool UAPBDistrictPlacementLoader::LoadManifestFromFile(const FString& AbsoluteJs
 	OutManifest.BoundCount = Parsed.bound_count;
 	OutManifest.ManifestTotal = Parsed.manifest_total;
 	OutManifest.HitRate = static_cast<float>(Parsed.hit_rate);
+	OutManifest.SourceVisiblePlacementCount = Parsed.source_visible_placement_count;
+	OutManifest.GeometryBoundCount = Parsed.geometry_bound_count;
+	OutManifest.GeometryMissingCount = Parsed.geometry_missing_count;
+	OutManifest.bSourceGeometryCoverageComplete = Parsed.source_geometry_coverage_complete;
 	OutManifest.RejectedRowCount = static_cast<int32>(Parsed.rejected_rows.size());
 	for (const apb::PlacementRejectedRow& Rejection : Parsed.rejected_rows)
 	{
@@ -99,9 +107,12 @@ bool UAPBDistrictPlacementLoader::LoadManifestForDistrict(const FString& Project
 				*DistrictId, *Path, UTF8_TO_TCHAR(Candidate.reason_code.c_str()));
 		}
 		UE_LOG(LogTemp, Warning,
-			TEXT("PLACEMENT_MANIFEST_CHOSEN district=%s path=%s provenance=%s renderable=%d rejected=%d"),
-			*DistrictId, *Path, *OutManifest.Provenance, OutManifest.Placements.Num(),
-			OutManifest.RejectedRowCount);
+			TEXT("PLACEMENT_MANIFEST_CHOSEN district=%s path=%s provenance=%s source_build=%s visible=%d bound=%d missing=%d complete=%d source_id_sha256=%s renderable=%d rejected=%d"),
+			*DistrictId, *Path, *OutManifest.Provenance, *OutManifest.SourceBuild,
+			OutManifest.SourceVisiblePlacementCount,
+			OutManifest.GeometryBoundCount, OutManifest.GeometryMissingCount,
+			OutManifest.bSourceGeometryCoverageComplete ? 1 : 0, *OutManifest.SourceIdSha256,
+			OutManifest.Placements.Num(), OutManifest.RejectedRowCount);
 		return true;
 	}
 	UE_LOG(LogTemp, Warning, TEXT("PLACEMENT_MANIFEST_MISSING district=%s base=%s"), *DistrictId, *Base);
@@ -212,81 +223,52 @@ int32 UAPBDistrictPlacementLoader::SpawnLightsFromManifest(UWorld* World, const 
 	return Count;
 }
 
-static UStaticMesh* LoadPlacementMesh(const FAPBPlacementEntry& E, const FString& ManifestDistrictId)
+static UStaticMesh* LoadPlacementMesh(UWorld* World, const FAPBPlacementEntry& E, const FString& ManifestDistrictId)
 {
-	const apb::PlacementBinding Binding = apb::BuildPlacementBinding(
-		TCHAR_TO_UTF8(*E.MeshId),
-		TCHAR_TO_UTF8(*E.UePath),
-		TCHAR_TO_UTF8(*E.Package),
-		TCHAR_TO_UTF8(*ManifestDistrictId));
-	const FString ExpectedFolder = UTF8_TO_TCHAR(Binding.expected_folder.c_str());
-	if (!Binding.valid)
-	{
-		const FString Reason = UTF8_TO_TCHAR(Binding.reason_code.c_str());
-		UE_LOG(LogTemp, Error,
-			TEXT("PLACEMENT_MESH_BINDING_FAIL mesh_id=%s expected_folder=%s reason=%s package=%s manifest_district=%s"),
-			*E.MeshId, *ExpectedFolder, *Reason, *E.Package, *ManifestDistrictId);
-		return nullptr;
-	}
-	if (E.UePath.Contains(TEXT("BasicShapes/Cube")))
-	{
-		UE_LOG(LogTemp, Error,
-			TEXT("PLACEMENT_MESH_BINDING_FAIL mesh_id=%s expected_folder=%s reason=forbidden_basic_shape"),
-			*E.MeshId, *ExpectedFolder);
-		return nullptr;
-	}
-	for (const std::string& Candidate : Binding.candidate_paths)
-	{
-		const FString Path = UTF8_TO_TCHAR(Candidate.c_str());
-		if (UStaticMesh* Mesh = LoadObject<UStaticMesh>(nullptr, *Path)) return Mesh;
-	}
-	UE_LOG(LogTemp, Error,
-		TEXT("PLACEMENT_MESH_BINDING_FAIL mesh_id=%s expected_folder=%s reason=mesh_asset_not_found"),
-		*E.MeshId, *ExpectedFolder);
-	return nullptr;
+	return UAPBVerifiedDistrictAssetRouting::RoutePlacementMesh(
+		World, E.MeshId, E.UePath, E.Package, ManifestDistrictId);
 }
 
-void UAPBDistrictPlacementLoader::EnsureVisibleMeshMaterials(UStaticMeshComponent* Comp)
+bool UAPBDistrictPlacementLoader::EnsureVisibleMeshMaterials(UStaticMeshComponent* Comp)
 {
-	if (!Comp) return;
+	if (!Comp) return false;
 
-	// Never engine LevelColoration* here: flat unlit primaries caused the "red ground" defect.
-	// Their old justification (M_APBMaster failed to compile, imports rendered black) is void.
-	static const TCHAR* Candidates[] = {
-		TEXT("/Engine/BasicShapes/BasicShapeMaterial.BasicShapeMaterial"),
-		TEXT("/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"),
-	};
-	UMaterialInterface* Fallback = nullptr;
-	for (const TCHAR* Path : Candidates)
-	{
-		Fallback = LoadObject<UMaterialInterface>(nullptr, Path);
-		if (Fallback) break;
-	}
-	if (!Fallback)
-	{
-		Fallback = UMaterial::GetDefaultMaterial(MD_Surface);
-	}
-	if (!Fallback) return;
-
-	// Preserve real baked APB materials (MICs assigned offline by assign_district_materials.py);
-	// only stamp the readable fallback onto slots that shipped empty/WorldGrid from the umodel import.
+	// Runtime must never replace a missing retail material with an engine-owned substitute.
+	// The assignment/census pipeline owns recovery; this path only accepts source-derived /Game assets.
 	const int32 Num = FMath::Max(1, Comp->GetNumMaterials());
+	bool bValid = true;
 	for (int32 i = 0; i < Num; ++i)
 	{
 		const UMaterialInterface* Existing = Comp->GetMaterial(i);
-		const bool bMissing = (Existing == nullptr)
-			|| (Existing == UMaterial::GetDefaultMaterial(MD_Surface))
-			|| Existing->GetName().Contains(TEXT("WorldGrid"));
-		if (bMissing)
+		const FString Path = Existing ? Existing->GetPathName() : FString();
+		const bool bVerifiedImported = Path.StartsWith(TEXT("/Game/Imported/"));
+		const bool bForbiddenName = Path.Contains(TEXT("WorldGrid"))
+			|| Path.Contains(TEXT("BasicShape"))
+			|| Path.Contains(TEXT("LevelColoration"))
+			|| Path.Contains(TEXT("DefaultMaterial"));
+		if (!Existing || !bVerifiedImported || bForbiddenName)
 		{
-			Comp->SetMaterial(i, Fallback);
+			bValid = false;
+			UE_LOG(LogTemp, Error,
+				TEXT("PLACEMENT_MATERIAL_REJECT actor=%s slot=%d material=%s reason=%s"),
+				*GetNameSafe(Comp->GetOwner()), i,
+				Existing ? *Path : TEXT("<null>"),
+				!Existing ? TEXT("missing") : bForbiddenName ? TEXT("engine_substitute") : TEXT("unverified_path"));
 		}
 	}
+
+	if (!bValid)
+	{
+		Comp->SetVisibility(false);
+		Comp->SetHiddenInGame(true);
+		Comp->SetCastShadow(false);
+		return false;
+	}
+
 	Comp->SetVisibility(true);
 	Comp->SetHiddenInGame(false);
 	Comp->SetCastShadow(true);
-	// Two-sided via custom depth not available; ensure bounds not culled to zero
-	Comp->bUseDefaultCollision = true;
+	return true;
 }
 
 int32 UAPBDistrictPlacementLoader::CountPlacementsNear(const FAPBDistrictManifest& Manifest, FVector Center, float Radius)
@@ -308,11 +290,13 @@ int32 UAPBDistrictPlacementLoader::SpawnFromManifest(UWorld* World, const FAPBDi
 
 int32 UAPBDistrictPlacementLoader::SpawnFromManifestNear(UWorld* World, const FAPBDistrictManifest& Manifest, FVector Center, float Radius, TArray<AActor*>& OutSpawned, TSet<FString>& InOutSpawnedMeshKeys)
 {
-	return SpawnFromManifestNearEx(World, Manifest, Center, Radius, OutSpawned, InOutSpawnedMeshKeys, nullptr, nullptr, nullptr);
+	TSet<FString> RejectedKeys;
+	return SpawnFromManifestNearEx(World, Manifest, Center, Radius, OutSpawned, InOutSpawnedMeshKeys, RejectedKeys, nullptr, nullptr, nullptr);
 }
 
 int32 UAPBDistrictPlacementLoader::SpawnFromManifestNearEx(UWorld* World, const FAPBDistrictManifest& Manifest, FVector Center, float Radius,
 	TArray<AActor*>& OutSpawned, TSet<FString>& InOutSpawnedMeshKeys,
+	TSet<FString>& InOutRejectedMeshKeys,
 	int32* OutLoadFailed, int32* OutInRadius, int32* OutSkippedAlready)
 {
 	if (!World) return 0;
@@ -329,6 +313,13 @@ int32 UAPBDistrictPlacementLoader::SpawnFromManifestNearEx(UWorld* World, const 
 		const apb::PlacementIdentity Identity = apb::PlacementDedupKey(TCHAR_TO_UTF8(*E.SourceId));
 		if (!Identity.valid)
 		{
+			const FString RejectedKey = FString::Printf(TEXT("invalid:%s:%s:%s"), *E.SourceId, *E.MeshId, *E.Package);
+			if (InOutRejectedMeshKeys.Contains(RejectedKey))
+			{
+				++Skipped;
+				continue;
+			}
+			InOutRejectedMeshKeys.Add(RejectedKey);
 			++LoadFailed;
 			UE_LOG(LogTemp, Error,
 				TEXT("PLACEMENT_IDENTITY_REJECT mesh_id=%s package=%s reason=%s"),
@@ -336,14 +327,15 @@ int32 UAPBDistrictPlacementLoader::SpawnFromManifestNearEx(UWorld* World, const 
 			continue;
 		}
 		const FString Key = UTF8_TO_TCHAR(Identity.key.c_str());
-		if (InOutSpawnedMeshKeys.Contains(Key))
+		if (InOutSpawnedMeshKeys.Contains(Key) || InOutRejectedMeshKeys.Contains(Key))
 		{
 			++Skipped;
 			continue;
 		}
-		UStaticMesh* Mesh = LoadPlacementMesh(E, Manifest.DistrictId);
+		UStaticMesh* Mesh = LoadPlacementMesh(World, E, Manifest.DistrictId);
 		if (!Mesh)
 		{
+			InOutRejectedMeshKeys.Add(Key);
 			++LoadFailed;
 			continue;
 		}
@@ -361,7 +353,13 @@ int32 UAPBDistrictPlacementLoader::SpawnFromManifestNearEx(UWorld* World, const 
 		SMC->SetCollisionResponseToAllChannels(ECR_Block);
 		SMC->SetCollisionResponseToChannel(ECC_Pawn, ECR_Block);
 		SMC->SetCollisionResponseToChannel(ECC_Camera, ECR_Ignore);
-		EnsureVisibleMeshMaterials(SMC);
+		if (!EnsureVisibleMeshMaterials(SMC))
+		{
+			A->Destroy();
+			InOutRejectedMeshKeys.Add(Key);
+			++LoadFailed;
+			continue;
+		}
 		SMC->SetCastShadow(true);
 		// Static must be set AFTER all transform calls above, else UE warns about moving
 		// a Static component. Static gives the city shell baked-quality shadows + GI.

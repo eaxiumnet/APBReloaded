@@ -3,6 +3,8 @@
 #include "APBGameInstanceSubsystem.h"
 #include "APBPlayerState.h"
 #include "APBInteractable.h"
+#include "APBFreeroamHUD.h"
+#include "APBSocialFixtureWidget.h"
 #include "APBBotNPC.h"
 #include "Camera/CameraComponent.h"
 #include "GameFramework/SpringArmComponent.h"
@@ -11,12 +13,12 @@
 #include "Components/StaticMeshComponent.h"
 #include "Engine/StaticMesh.h"
 #include "Engine/World.h"
+#include "APBVerifiedDistrictAssetRouting.h"
 #include "DrawDebugHelpers.h"
 #include "Kismet/GameplayStatics.h"
 #include "Net/UnrealNetwork.h"
 #include "GameFramework/PlayerController.h"
 #include "Engine/DamageEvents.h"
-#include "UObject/ConstructorHelpers.h"
 #include "InputCoreTypes.h"
 
 AAPBFreeroamCharacter::AAPBFreeroamCharacter()
@@ -53,9 +55,6 @@ AAPBFreeroamCharacter::AAPBFreeroamCharacter()
 		C->SetRelativeLocation(Rel);
 		C->SetRelativeScale3D(FVector(0.12f));
 		C->SetVisibility(false);
-		// Engine cube as slot marker until per-piece clothing meshes bulk-imported
-		static ConstructorHelpers::FObjectFinder<UStaticMesh> Cube(TEXT("/Engine/BasicShapes/Cube.Cube"));
-		if (Cube.Succeeded()) C->SetStaticMesh(Cube.Object);
 		return C;
 	};
 	SlotHeadMesh = MakeSlot(TEXT("SlotHeadMesh"), FVector(0.f, 0.f, 70.f));
@@ -73,6 +72,10 @@ void AAPBFreeroamCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 	ApplyFactionVisualMesh();
+	if (UCharacterMovementComponent* MoveComp = GetCharacterMovement())
+	{
+		MusicBaseWalkSpeed = MoveComp->MaxWalkSpeed;
+	}
 }
 
 bool AAPBFreeroamCharacter::ApplyFactionVisualMesh()
@@ -93,23 +96,30 @@ bool AAPBFreeroamCharacter::ApplyFactionVisualMesh()
 		}
 	}
 	// Prefer wardrobe LC studio mesh when present, else faction contact heroes
-	UStaticMesh* ContactMesh = LoadObject<UStaticMesh>(nullptr,
-		TEXT("/Game/Imported/Characters/Wardrobe/StudioCharacter.StudioCharacter"));
+	UStaticMesh* ContactMesh = UAPBVerifiedDistrictAssetRouting::RouteFactionVisualMesh(GetWorld(),
+		TEXT("/Game/Imported/Characters/Wardrobe/StudioCharacter.StudioCharacter"),
+		TEXT("freeroam_faction_studio_mesh"));
 	const TCHAR* Path = bEnforcer
 		? TEXT("/Game/Imported/Characters/Contact_LaRocha/m_contact_enforcement_larocha.m_contact_enforcement_larocha")
 		: TEXT("/Game/Imported/Characters/Contact_Bloodrose/F_Contact_Criminal_Bloodrose.F_Contact_Criminal_Bloodrose");
 	if (!ContactMesh)
 	{
-		ContactMesh = LoadObject<UStaticMesh>(nullptr, Path);
+		ContactMesh = UAPBVerifiedDistrictAssetRouting::RouteFactionVisualMesh(GetWorld(), Path, TEXT("freeroam_faction_contact_mesh"));
 	}
 	if (!ContactMesh)
 	{
 		Path = bEnforcer
 			? TEXT("/Game/Imported/Characters/Contact_Sofia/F_Contact_Enforcement_Sofia.F_Contact_Enforcement_Sofia")
 			: TEXT("/Game/Imported/Characters/Contact_Bloodrose/F_Contact_Criminal_Bloodrose.F_Contact_Criminal_Bloodrose");
-		ContactMesh = LoadObject<UStaticMesh>(nullptr, Path);
+		ContactMesh = UAPBVerifiedDistrictAssetRouting::RouteFactionVisualMesh(GetWorld(), Path, TEXT("freeroam_faction_contact_mesh"));
 	}
-	if (!ContactMesh) return false;
+	if (!ContactMesh)
+	{
+		ClothingVisualMesh->SetStaticMesh(nullptr);
+		UE_LOG(LogTemp, Warning, TEXT("CHARACTER_VISUAL_BLOCKED reason=verified_mesh_unavailable faction=%s"),
+			bEnforcer ? TEXT("Enforcer") : TEXT("Criminal"));
+		return false;
+	}
 	ClothingVisualMesh->SetStaticMesh(ContactMesh);
 	AppliedClothingSummary = bEnforcer ? TEXT("enforcer_contact_mesh") : TEXT("criminal_contact_mesh");
 	return true;
@@ -140,7 +150,7 @@ bool AAPBFreeroamCharacter::EquipClothingVisual(const FString& Slot, const FStri
 			bOk = APB->EquipClothingItem(Slot, ItemId);
 		}
 	}
-	ApplyFactionVisualMesh();
+	const bool bBaseVisualApplied = ApplyFactionVisualMesh();
 	// Map catalog clothing items onto imported wardrobe/body meshes (hash pick among pool)
 	static const TCHAR* WardrobePool[] = {
 		TEXT("/Game/Imported/Characters/Wardrobe/StudioCharacter.StudioCharacter"),
@@ -153,31 +163,38 @@ bool AAPBFreeroamCharacter::EquipClothingVisual(const FString& Slot, const FStri
 		TEXT("/Game/Imported/Characters/Contact_LaRocha/m_contact_enforcement_larocha.m_contact_enforcement_larocha"),
 		TEXT("/Game/Imported/Characters/Contact_Sofia/F_Contact_Enforcement_Sofia.F_Contact_Enforcement_Sofia"),
 	};
-	if (!ItemId.IsEmpty() && ClothingVisualMesh)
+	UStaticMesh* ItemMesh = nullptr;
+	if (!ItemId.IsEmpty() && ItemId != TEXT("None"))
 	{
 		const uint32 H = GetTypeHash(ItemId + Slot);
 		const int32 N = UE_ARRAY_COUNT(WardrobePool);
 		const TCHAR* Pick = WardrobePool[H % N];
-		if (UStaticMesh* M = LoadObject<UStaticMesh>(nullptr, Pick))
+		ItemMesh = UAPBVerifiedDistrictAssetRouting::RouteWardrobeMesh(GetWorld(), Pick, Slot, ItemId);
+	}
+	UStaticMeshComponent* SlotComp = SlotComponentFor(this, Slot);
+	const bool bItemVisualLoaded = ItemMesh != nullptr && SlotComp != nullptr;
+	if (bItemVisualLoaded)
+	{
+		SlotComp->SetStaticMesh(ItemMesh);
+		SlotComp->SetVisibility(true);
+		SlotComp->SetRelativeScale3D(FVector(0.18f));
+		if (ClothingVisualMesh && (Slot.Equals(TEXT("torso"), ESearchCase::IgnoreCase) || Slot.Equals(TEXT("face"), ESearchCase::IgnoreCase)))
 		{
-			// Torso/face drive body mesh; other slots still show markers
-			if (Slot.Equals(TEXT("torso"), ESearchCase::IgnoreCase) || Slot.Equals(TEXT("face"), ESearchCase::IgnoreCase))
-			{
-				ClothingVisualMesh->SetStaticMesh(M);
-			}
+			ClothingVisualMesh->SetStaticMesh(ItemMesh);
 		}
 	}
-	if (UStaticMeshComponent* SlotComp = SlotComponentFor(this, Slot))
+	else if (SlotComp)
 	{
-		const bool bHasItem = !ItemId.IsEmpty() && ItemId != TEXT("None");
-		SlotComp->SetVisibility(bHasItem);
-		// Slight scale bump so equipped slots read in freeroam
-		SlotComp->SetRelativeScale3D(bHasItem ? FVector(0.18f) : FVector(0.12f));
-		if (bHasItem) ++WardrobeSlotCount;
+		SlotComp->SetStaticMesh(nullptr);
+		SlotComp->SetVisibility(false);
+		SlotComp->SetRelativeScale3D(FVector(0.12f));
+		UE_LOG(LogTemp, Warning, TEXT("WARDROBE_VISUAL_BLOCKED slot=%s item=%s reason=verified_mesh_unavailable"),
+			*Slot, *ItemId);
 	}
+	WardrobeSlotCount = GetActiveWardrobeSlotCount();
 	AppliedClothingSummary = FString::Printf(TEXT("%s=%s visual=%s wardrobe=%d"),
 		*Slot, *ItemId, *AppliedClothingSummary, WardrobeSlotCount);
-	return bOk || ClothingVisualMesh != nullptr;
+	return bOk && bBaseVisualApplied && bItemVisualLoaded;
 }
 
 int32 AAPBFreeroamCharacter::GetActiveWardrobeSlotCount() const
@@ -333,6 +350,11 @@ void AAPBFreeroamCharacter::OnEnterVehiclePressed()
 	else ServerEnterNearestVehicle();
 }
 
+bool AAPBFreeroamCharacter::ServerEnterNearestVehicle_Validate()
+{
+	return true;
+}
+
 void AAPBFreeroamCharacter::ServerEnterNearestVehicle_Implementation()
 {
 	EnterNearestVehicle();
@@ -344,7 +366,7 @@ bool AAPBFreeroamCharacter::EnterNearestVehicle()
 	TArray<AActor*> Found;
 	UGameplayStatics::GetAllActorsOfClass(GetWorld(), AAPBDriveableVehicle::StaticClass(), Found);
 	AAPBDriveableVehicle* Best = nullptr;
-	float BestDist = 5000.f;
+	float BestDist = 500.f; // N5: Server-authoritative possession range capped to 500 units
 	for (AActor* A : Found)
 	{
 		const float D = FVector::Dist(A->GetActorLocation(), GetActorLocation());
@@ -403,8 +425,113 @@ FString AAPBFreeroamCharacter::InteractNearest()
 		}
 	}
 	if (!Best) return TEXT("none");
+
+	if (!HasAuthority())
+	{
+		ServerInteractNearest(Best);
+		return TEXT("Sent to server");
+	}
+
 	APlayerController* PC = Cast<APlayerController>(GetController());
 	const FString R = Best->Interact(PC);
 	UE_LOG(LogTemp, Log, TEXT("APB INTERACT_RESULT %s"), *R);
+
+	// M8: drive fixture popups for social district interactables (including VehicleKiosk).
+	const EAPBInteractableKind K = Best->Kind;
+	if (K == EAPBInteractableKind::SocialKiosk ||
+		K == EAPBInteractableKind::Terminal ||
+		K == EAPBInteractableKind::MusicStudio ||
+		K == EAPBInteractableKind::VehicleKiosk)
+	{
+		ClientShowFixture(K, R, Best->LastKioskWarnings);
+	}
 	return R;
+}
+
+void AAPBFreeroamCharacter::ServerInteractNearest_Implementation(AAPBInteractable* Target)
+{
+	if (!Target) return;
+	// RISK-2 guard: ensure distance is valid on the server
+	if (GetDistanceTo(Target) > 1000.f)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("APB INTERACT REJECTED: Too far away."));
+		return;
+	}
+
+	APlayerController* PC = Cast<APlayerController>(GetController());
+	const FString R = Target->Interact(PC);
+	UE_LOG(LogTemp, Log, TEXT("APB SERVER_INTERACT_RESULT %s"), *R);
+
+	// M8: drive fixture popups for social district interactables (including VehicleKiosk).
+	const EAPBInteractableKind K = Target->Kind;
+	if (K == EAPBInteractableKind::SocialKiosk ||
+		K == EAPBInteractableKind::Terminal ||
+		K == EAPBInteractableKind::MusicStudio ||
+		K == EAPBInteractableKind::VehicleKiosk)
+	{
+		ClientShowFixture(K, R, Target->LastKioskWarnings);
+	}
+}
+
+void AAPBFreeroamCharacter::ClientShowFixture_Implementation(EAPBInteractableKind Kind, const FString& ServerData, const TArray<FString>& Warnings)
+{
+	if (APlayerController* PC = Cast<APlayerController>(GetController()))
+	{
+		if (AAPBFreeroamHUD* HUD = Cast<AAPBFreeroamHUD>(PC->GetHUD()))
+		{
+			HUD->ShowFixturePopup(Kind, ServerData, Warnings);
+		}
+	}
+}
+
+void AAPBFreeroamCharacter::ApplyMusicSpeedBoost(float Multiplier, float DurationSec)
+{
+	if (Multiplier <= 0.f || DurationSec <= 0.f) return;
+
+	ApplyMusicSpeedBoostLocal(Multiplier, DurationSec);
+
+	// Replicate the buff to the owning client so movement prediction matches the server.
+	if (HasAuthority())
+	{
+		ClientApplyMusicSpeedBoost(Multiplier, DurationSec);
+	}
+}
+
+void AAPBFreeroamCharacter::ApplyMusicSpeedBoostLocal(float Multiplier, float DurationSec)
+{
+	UCharacterMovementComponent* MoveComp = GetCharacterMovement();
+	if (!MoveComp) return;
+
+	// Reset any previous boost before applying a new one to avoid compounding.
+	if (MusicSpeedBoostHandle.IsValid())
+	{
+		GetWorldTimerManager().ClearTimer(MusicSpeedBoostHandle);
+		MoveComp->MaxWalkSpeed = MusicBaseWalkSpeed;
+	}
+
+	MusicBaseWalkSpeed = MoveComp->MaxWalkSpeed;
+	MoveComp->MaxWalkSpeed = MusicBaseWalkSpeed * Multiplier;
+
+	GetWorldTimerManager().SetTimer(MusicSpeedBoostHandle,
+		this,
+		&AAPBFreeroamCharacter::OnMusicSpeedBoostExpired,
+		DurationSec,
+		false);
+}
+
+void AAPBFreeroamCharacter::ClientApplyMusicSpeedBoost_Implementation(float Multiplier, float DurationSec)
+{
+	// In a listen-server / single-process context the server already applied the buff.
+	if (HasAuthority()) return;
+
+	ApplyMusicSpeedBoostLocal(Multiplier, DurationSec);
+}
+
+void AAPBFreeroamCharacter::OnMusicSpeedBoostExpired()
+{
+	if (UCharacterMovementComponent* MoveComp = GetCharacterMovement())
+	{
+		MoveComp->MaxWalkSpeed = MusicBaseWalkSpeed;
+	}
+	MusicSpeedBoostHandle.Invalidate();
 }
