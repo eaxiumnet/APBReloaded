@@ -15,7 +15,7 @@ function Get-Json([string]$RelativePath, [string]$Label) {
         throw "$Label missing: $fullPath"
     }
     try {
-        return Get-Content -LiteralPath $fullPath -Raw | ConvertFrom-Json -Depth 100
+        return Get-Content -LiteralPath $fullPath -Raw | ConvertFrom-Json
     }
     catch {
         throw "$Label parse failed: $fullPath :: $($_.Exception.Message)"
@@ -83,7 +83,7 @@ function Test-JsonCatalog([object]$Row, [string]$RowId) {
     $path = Get-PropertyValue $Row "staged_path"
     $fullPath = Join-Path $RepoRoot $path
     try {
-        $json = Get-Content -LiteralPath $fullPath -Raw | ConvertFrom-Json -Depth 100
+        $json = Get-Content -LiteralPath $fullPath -Raw | ConvertFrom-Json
     }
     catch {
         Add-OracleError "ROW_COMPARISON_FAILED" $RowId "json_parse=$path"
@@ -138,7 +138,7 @@ function Test-UiAnchorTokens([object]$Row, [string]$RowId) {
     }
 
     try {
-        $reference = Get-Content -LiteralPath $referencePath -Raw | ConvertFrom-Json -Depth 100
+        $reference = Get-Content -LiteralPath $referencePath -Raw | ConvertFrom-Json
         $implementation = Get-Content -LiteralPath (Join-Path $RepoRoot $implementationPath) -Raw
     }
     catch {
@@ -167,7 +167,7 @@ function Test-ScreenshotSpec([object]$Row, [string]$RowId) {
     }
 
     try {
-        $spec = Get-Content -LiteralPath (Join-Path $RepoRoot $specPath) -Raw | ConvertFrom-Json -Depth 100
+        $spec = Get-Content -LiteralPath (Join-Path $RepoRoot $specPath) -Raw | ConvertFrom-Json
     }
     catch {
         Add-OracleError "ROW_COMPARISON_FAILED" $RowId "capture_spec_parse"
