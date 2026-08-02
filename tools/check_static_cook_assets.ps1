@@ -21,22 +21,45 @@ $EngineInternalPrefixes = @(
     "/Engine/EngineMaterials/DefaultMaterial"
 )
 
+# Registry-supported uobject classes (schema-v2 entries). Media entries carry no class.
+# Source of truth: UAPBVerifiedAssetRegistry supported-class parse; keep in sync.
+$SupportedClasses = @(
+    "StaticMesh", "SkeletalMesh", "Texture2D", "Material",
+    "MaterialInstanceConstant", "SoundWave", "SoundCue", "AnimSequence", "MediaSource"
+)
+
 function Get-AllowlistPaths([string]$AllowlistPath) {
     if (-not (Test-Path -LiteralPath $AllowlistPath -PathType Leaf)) {
         throw "STATIC_COOK_ASSET_AUDIT_FAIL reason=missing_allowlist path=$AllowlistPath"
     }
-    $Allowlist = Get-Content -LiteralPath $AllowlistPath -Raw | ConvertFrom-Json
+    try {
+        $Allowlist = Get-Content -LiteralPath $AllowlistPath -Raw | ConvertFrom-Json
+    }
+    catch {
+        throw "STATIC_COOK_ASSET_AUDIT_FAIL reason=malformed_allowlist path=$AllowlistPath detail=$($_.Exception.Message)"
+    }
+    if ($Allowlist -isnot [PSCustomObject] -or $Allowlist.entries -isnot [System.Array]) {
+        throw "STATIC_COOK_ASSET_AUDIT_FAIL reason=malformed_allowlist path=$AllowlistPath detail=entries_missing"
+    }
     $Paths = New-Object System.Collections.Generic.HashSet[string] ([System.StringComparer]::Ordinal)
-    foreach ($Entry in @($Allowlist.entries)) {
-        if ($Entry.object_path) {
-            $P = [string]$Entry.object_path
-            [void]$Paths.Add($P)
-            # Catalogs may reference the object path with or without the trailing
-            # .<leaf> suffix; index both forms so either reference form closes.
-            $Leaf = ($P -split '/')[-1]
-            if ($Leaf -match '\.' -and $P.EndsWith('.' + $Leaf)) {
-                [void]$Paths.Add($P.Substring(0, $P.Length - $Leaf.Length - 1))
-            }
+    foreach ($Entry in $Allowlist.entries) {
+        $P = [string]$Entry.object_path
+        if ([string]::IsNullOrWhiteSpace($P)) {
+            throw "STATIC_COOK_ASSET_AUDIT_FAIL reason=malformed_allowlist path=$AllowlistPath detail=missing_object_path"
+        }
+        $Class = [string]$Entry.class
+        if ([string]::IsNullOrWhiteSpace($Class)) {
+            throw "STATIC_COOK_ASSET_AUDIT_FAIL reason=malformed_allowlist path=$AllowlistPath detail=missing_class asset=$P"
+        }
+        if ($SupportedClasses -notcontains $Class) {
+            throw "STATIC_COOK_ASSET_AUDIT_FAIL reason=unsupported_class path=$AllowlistPath asset=$P class=$Class"
+        }
+        [void]$Paths.Add($P)
+        # Catalogs may reference the object path with or without the trailing
+        # .<leaf> suffix; index both forms so either reference form closes.
+        $Leaf = ($P -split '/')[-1]
+        if ($Leaf -match '\.' -and $P.EndsWith('.' + $Leaf)) {
+            [void]$Paths.Add($P.Substring(0, $P.Length - $Leaf.Length - 1))
         }
     }
     foreach ($Media in @($Allowlist.media_entries)) {
@@ -79,7 +102,7 @@ $Allowlisted = New-Object System.Collections.Generic.List[string]
 $Unverified = New-Object System.Collections.Generic.List[string]
 $EngineAllowed = New-Object System.Collections.Generic.List[string]
 $EngineBlocked = New-Object System.Collections.Generic.List[string]
-$ReferencePattern = '"/Game/[A-Za-z0-9_./-]+"'
+$ReferencePattern = '"(?:/Game|/Engine)/[A-Za-z0-9_./-]+"'
 
 foreach ($File in $Files) {
     $Text = Get-Content -LiteralPath $File.FullName -Raw
