@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "roots": {
+    "retail_steam": {
+      "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\APB Reloaded",
+      "canonical": true,
+      "authoritative": true,
+      "expected_package_version": {
+        "file_version": 564,
+        "licensee": 33
+      },
+      "packages_subpath": "APBGame\\Content\\Release\\Packages",
+      "apb_private_server_subpath": "ApbPrivateServer",
+      "note": "Policy-canonical retail root (C1)."
+    },
+    "retail_mirror": {
+      "path": "D:\\APBReloaded\\APB Reloaded",
+      "canonical": false,
+      "authoritative": false,
+      "inventory_approved": false,
+      "note": "Repo-root copy with unverified identity. Warn only when canonical retail is selected; fail closed on direct selection."
+    },
+    "ref_2011": {
+      "path": "D:\\APBReloaded\\2011 apb\\APB All Points Bulletin\\Client",
+      "canonical": true,
+      "authoritative": true,
+      "expected_package_version": {
+        "file_version": 547,
+        "licensee": 31
+      },
+      "packages_subpath": "APBGame\\Content",
+      "note": "2011 RTW game root (Client dir; the installer/launcher layout sits above it). Menu packages: APBGame\\Content\\Interface\\APBMenus_*.upk (pkg 547/31, umodel-verified). Relocated per 2026-08-01 frontend forensics report; the former 'APB North America' root no longer exists on disk."
+    },
+    "ref_2011_archive": {
+      "path": "D:\\APBReloaded\\2011 apb\\APB All Points Bulletin\\Client\\Client1.1.0.534979.7z",
+      "canonical": false,
+      "status": "quarantined_candidate",
+      "note": "List-only archive candidate. Inventory and overlap evidence must precede extraction."
+    }
+  },
+  "readers": {
+    "umodel": {
+      "path": "D:\\APBReloaded\\tools\\UEViewer\\umodel_64.exe",
+      "patched_fork": true,
+      "supports": [
+        "564/33",
+        "547/31"
+      ],
+      "required_patches": [
+        "UnPackage3.cpp DependsOffset 4x int32 pad (GAME_APB licensee>=33)",
+        "GameDatabase.cpp ArVer 564 / Licensee 33 detection",
+        "UnObject.cpp ByteProperty EnumName + BoolProperty byte"
+      ],
+      "note": "Stock build 1590 fails on APB. The sibling umodel.exe is stale and must not be selected."
+    }
+  }
+}
