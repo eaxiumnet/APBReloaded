@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated": "2026-08-02T22:12:12.040511+00:00",
+  "updated": "2026-08-02T22:31:02.839783+00:00",
   "statuses": [
     "extracted",
     "imported",
@@ -26489,6 +26489,1445 @@
       ],
       "media_file_path": "Content/Extracted/Audio/2011/StreamedSFX/wav/841514482_APBTheme1.wav",
       "verified_at": "2026-08-02T22:12:12.344856+00:00",
+      "verified_by": "tools/scripts/promote_verified_batch.py"
+    },
+    {
+      "asset_key": "retail:Character/Contact/Contact_Bloodrose.upk#Contact_Bloodrose_F_Contact_Criminal_Bloodrose",
+      "source_build": "retail",
+      "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/Contact/Contact_Bloodrose.upk",
+      "source_sha256": "9c56601715d0f5989dd7f489fddd339a459aab60099b9e6305279d6c508b7df7",
+      "extractor": "tools/UEViewer/umodel_64.exe",
+      "extractor_args": [
+        "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+      ],
+      "intermediate_path": "Content/Imported/Characters/Wardrobe/Contact_Bloodrose_F_Contact_Criminal_Bloodrose.obj",
+      "intermediate_sha256": "550f263434aa7d492eb2cfad9c8af5335b61ffe534f5618b8cfd27e57937db6b",
+      "conversion_settings": {
+        "converter": "umodel",
+        "format": "OBJ",
+        "normalize": false,
+        "source": "retail character package",
+        "ownership": "retail package name prefix-match + staged obj"
+      },
+      "dest": "/Game/Imported/Characters/Wardrobe/Contact_Bloodrose_F_Contact_Criminal_Bloodrose.Contact_Bloodrose_F_Contact_Criminal_Bloodrose",
+      "asset_class": "StaticMesh",
+      "validation": {
+        "class": "StaticMesh",
+        "source_build": "retail",
+        "note": "character-create wardrobe slot visual"
+      },
+      "status": "verified",
+      "updated": "2026-08-02T22:31:02.658605+00:00",
+      "uasset_path": "Content/Imported/Characters/Wardrobe/Contact_Bloodrose_F_Contact_Criminal_Bloodrose.uasset",
+      "uasset_sha256": "b9080c61cf73c4d9e46f1472808bf421ed8906e5ed64311b06f11b0c6f1b4cfa",
+      "d17_evidence": [
+        {
+          "path": "work/evidence/character_create_batch/wardrobe_exact.json",
+          "sha256": "f076756cf171622772a76eae40eb2a3bb9cc5f190f4638b0a175403ded9d36bd",
+          "schema": "apb_character_create_v1",
+          "record_key": "retail:Character/Contact/Contact_Bloodrose.upk#Contact_Bloodrose_F_Contact_Criminal_Bloodrose",
+          "fields": {
+            "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/Contact/Contact_Bloodrose.upk",
+            "source_sha256": "9c56601715d0f5989dd7f489fddd339a459aab60099b9e6305279d6c508b7df7",
+            "extractor": "tools/UEViewer/umodel_64.exe",
+            "extractor_args": [
+              "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+            ],
+            "conversion_settings": {
+              "converter": "umodel",
+              "format": "OBJ",
+              "normalize": false,
+              "source": "retail character package",
+              "ownership": "retail package name prefix-match + staged obj"
+            },
+            "destination": "/Game/Imported/Characters/Wardrobe/Contact_Bloodrose_F_Contact_Criminal_Bloodrose.Contact_Bloodrose_F_Contact_Criminal_Bloodrose",
+            "intermediate_path": "Content/Imported/Characters/Wardrobe/Contact_Bloodrose_F_Contact_Criminal_Bloodrose.obj",
+            "intermediate_sha256": "550f263434aa7d492eb2cfad9c8af5335b61ffe534f5618b8cfd27e57937db6b",
+            "extracted_file": "Content/Imported/Characters/Wardrobe/Contact_Bloodrose_F_Contact_Criminal_Bloodrose.obj",
+            "extracted_sha256": "550f263434aa7d492eb2cfad9c8af5335b61ffe534f5618b8cfd27e57937db6b"
+          }
+        }
+      ],
+      "verified_at": "2026-08-02T22:31:02.972001+00:00",
+      "verified_by": "tools/scripts/promote_verified_batch.py"
+    },
+    {
+      "asset_key": "retail:Character/Contact/Contact_Bloodrose.upk#F_Contact_Criminal_Bloodrose",
+      "source_build": "retail",
+      "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/Contact/Contact_Bloodrose.upk",
+      "source_sha256": "9c56601715d0f5989dd7f489fddd339a459aab60099b9e6305279d6c508b7df7",
+      "extractor": "tools/UEViewer/umodel_64.exe",
+      "extractor_args": [
+        "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+      ],
+      "intermediate_path": "Content/Imported/Characters/Contact_Bloodrose/F_Contact_Criminal_Bloodrose.obj",
+      "intermediate_sha256": "bfafb10379d7dd26954c3d43eb95fc84fb2ce8b5a4885e156bb0c2f41af9b3b2",
+      "conversion_settings": {
+        "converter": "umodel",
+        "format": "OBJ",
+        "normalize": false,
+        "source": "retail character package",
+        "ownership": "model_reference_catalog name hints"
+      },
+      "dest": "/Game/Imported/Characters/Contact_Bloodrose/F_Contact_Criminal_Bloodrose.F_Contact_Criminal_Bloodrose",
+      "asset_class": "StaticMesh",
+      "validation": {
+        "class": "StaticMesh",
+        "source_build": "retail",
+        "note": "character-create base mesh"
+      },
+      "status": "verified",
+      "updated": "2026-08-02T22:31:02.628068+00:00",
+      "uasset_path": "Content/Imported/Characters/Contact_Bloodrose/F_Contact_Criminal_Bloodrose.uasset",
+      "uasset_sha256": "b82a3914671aa1d0ef02257b238559fbbdda46b0d655148f2847fe25eadf9f44",
+      "d17_evidence": [
+        {
+          "path": "work/evidence/character_create_batch/base_meshes_exact.json",
+          "sha256": "2715cb8dd6f4ee4530f778947864ea7ff9ab67998d7c6051ff45c8dd607bb926",
+          "schema": "apb_character_create_v1",
+          "record_key": "retail:Character/Contact/Contact_Bloodrose.upk#F_Contact_Criminal_Bloodrose",
+          "fields": {
+            "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/Contact/Contact_Bloodrose.upk",
+            "source_sha256": "9c56601715d0f5989dd7f489fddd339a459aab60099b9e6305279d6c508b7df7",
+            "extractor": "tools/UEViewer/umodel_64.exe",
+            "extractor_args": [
+              "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+            ],
+            "conversion_settings": {
+              "converter": "umodel",
+              "format": "OBJ",
+              "normalize": false,
+              "source": "retail character package",
+              "ownership": "model_reference_catalog name hints"
+            },
+            "destination": "/Game/Imported/Characters/Contact_Bloodrose/F_Contact_Criminal_Bloodrose.F_Contact_Criminal_Bloodrose",
+            "intermediate_path": "Content/Imported/Characters/Contact_Bloodrose/F_Contact_Criminal_Bloodrose.obj",
+            "intermediate_sha256": "bfafb10379d7dd26954c3d43eb95fc84fb2ce8b5a4885e156bb0c2f41af9b3b2",
+            "extracted_file": "Content/Imported/Characters/Contact_Bloodrose/F_Contact_Criminal_Bloodrose.obj",
+            "extracted_sha256": "bfafb10379d7dd26954c3d43eb95fc84fb2ce8b5a4885e156bb0c2f41af9b3b2"
+          }
+        }
+      ],
+      "verified_at": "2026-08-02T22:31:02.972001+00:00",
+      "verified_by": "tools/scripts/promote_verified_batch.py"
+    },
+    {
+      "asset_key": "retail:Character/Contact/Contact_Bloodrose_BritneyBloodrose.upk#Contact_Bloodrose_BritneyBloodrose_contact_bloodrose_britneybloodrose",
+      "source_build": "retail",
+      "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/Contact/Contact_Bloodrose_BritneyBloodrose.upk",
+      "source_sha256": "f450cfd9d7861b59276c9dea2d160b64211ab99fcef259b3cf735289a8ff42a4",
+      "extractor": "tools/UEViewer/umodel_64.exe",
+      "extractor_args": [
+        "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+      ],
+      "intermediate_path": "Content/Imported/Characters/Wardrobe/Contact_Bloodrose_BritneyBloodrose_contact_bloodrose_britneybloodrose.obj",
+      "intermediate_sha256": "af61014dcabf4d7dfa03e31353482e7fe4eb70527a77ea927775324ac4e054fa",
+      "conversion_settings": {
+        "converter": "umodel",
+        "format": "OBJ",
+        "normalize": false,
+        "source": "retail character package",
+        "ownership": "retail package name prefix-match + staged obj"
+      },
+      "dest": "/Game/Imported/Characters/Wardrobe/Contact_Bloodrose_BritneyBloodrose_contact_bloodrose_britneybloodrose.Contact_Bloodrose_BritneyBloodrose_contact_bloodrose_britneybloodrose",
+      "asset_class": "StaticMesh",
+      "validation": {
+        "class": "StaticMesh",
+        "source_build": "retail",
+        "note": "character-create wardrobe slot visual"
+      },
+      "status": "verified",
+      "updated": "2026-08-02T22:31:02.646602+00:00",
+      "uasset_path": "Content/Imported/Characters/Wardrobe/Contact_Bloodrose_BritneyBloodrose_contact_bloodrose_britneybloodrose.uasset",
+      "uasset_sha256": "d13936c964b2fa0867167d09b8c9c1772b9456a815d0f7dd4a000c37aae9d9c7",
+      "d17_evidence": [
+        {
+          "path": "work/evidence/character_create_batch/wardrobe_exact.json",
+          "sha256": "f076756cf171622772a76eae40eb2a3bb9cc5f190f4638b0a175403ded9d36bd",
+          "schema": "apb_character_create_v1",
+          "record_key": "retail:Character/Contact/Contact_Bloodrose_BritneyBloodrose.upk#Contact_Bloodrose_BritneyBloodrose_contact_bloodrose_britneybloodrose",
+          "fields": {
+            "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/Contact/Contact_Bloodrose_BritneyBloodrose.upk",
+            "source_sha256": "f450cfd9d7861b59276c9dea2d160b64211ab99fcef259b3cf735289a8ff42a4",
+            "extractor": "tools/UEViewer/umodel_64.exe",
+            "extractor_args": [
+              "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+            ],
+            "conversion_settings": {
+              "converter": "umodel",
+              "format": "OBJ",
+              "normalize": false,
+              "source": "retail character package",
+              "ownership": "retail package name prefix-match + staged obj"
+            },
+            "destination": "/Game/Imported/Characters/Wardrobe/Contact_Bloodrose_BritneyBloodrose_contact_bloodrose_britneybloodrose.Contact_Bloodrose_BritneyBloodrose_contact_bloodrose_britneybloodrose",
+            "intermediate_path": "Content/Imported/Characters/Wardrobe/Contact_Bloodrose_BritneyBloodrose_contact_bloodrose_britneybloodrose.obj",
+            "intermediate_sha256": "af61014dcabf4d7dfa03e31353482e7fe4eb70527a77ea927775324ac4e054fa",
+            "extracted_file": "Content/Imported/Characters/Wardrobe/Contact_Bloodrose_BritneyBloodrose_contact_bloodrose_britneybloodrose.obj",
+            "extracted_sha256": "af61014dcabf4d7dfa03e31353482e7fe4eb70527a77ea927775324ac4e054fa"
+          }
+        }
+      ],
+      "verified_at": "2026-08-02T22:31:02.972001+00:00",
+      "verified_by": "tools/scripts/promote_verified_batch.py"
+    },
+    {
+      "asset_key": "retail:Character/Contact/Contact_Chaos_Bloodrose_Male.upk#Contact_Chaos_Bloodrose_Male_Contact_Chaos_Bloodrose_Male",
+      "source_build": "retail",
+      "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/Contact/Contact_Chaos_Bloodrose_Male.upk",
+      "source_sha256": "5ce9211c6ab95f0e1d4b01b1d9208daa318802da224385ae5f15c63b15dca650",
+      "extractor": "tools/UEViewer/umodel_64.exe",
+      "extractor_args": [
+        "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+      ],
+      "intermediate_path": "Content/Imported/Characters/Wardrobe/Contact_Chaos_Bloodrose_Male_Contact_Chaos_Bloodrose_Male.obj",
+      "intermediate_sha256": "04d905092a0fccf8b76af8d41dbdd3115a15979a22501ebfefb0351213ded27e",
+      "conversion_settings": {
+        "converter": "umodel",
+        "format": "OBJ",
+        "normalize": false,
+        "source": "retail character package",
+        "ownership": "retail package name prefix-match + staged obj"
+      },
+      "dest": "/Game/Imported/Characters/Wardrobe/Contact_Chaos_Bloodrose_Male_Contact_Chaos_Bloodrose_Male.Contact_Chaos_Bloodrose_Male_Contact_Chaos_Bloodrose_Male",
+      "asset_class": "StaticMesh",
+      "validation": {
+        "class": "StaticMesh",
+        "source_build": "retail",
+        "note": "character-create wardrobe slot visual"
+      },
+      "status": "verified",
+      "updated": "2026-08-02T22:31:02.667107+00:00",
+      "uasset_path": "Content/Imported/Characters/Wardrobe/Contact_Chaos_Bloodrose_Male_Contact_Chaos_Bloodrose_Male.uasset",
+      "uasset_sha256": "60e8ae88a9e064e91a755ef94221e245ef8478c467447525d1437e0eb90f9cc2",
+      "d17_evidence": [
+        {
+          "path": "work/evidence/character_create_batch/wardrobe_exact.json",
+          "sha256": "f076756cf171622772a76eae40eb2a3bb9cc5f190f4638b0a175403ded9d36bd",
+          "schema": "apb_character_create_v1",
+          "record_key": "retail:Character/Contact/Contact_Chaos_Bloodrose_Male.upk#Contact_Chaos_Bloodrose_Male_Contact_Chaos_Bloodrose_Male",
+          "fields": {
+            "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/Contact/Contact_Chaos_Bloodrose_Male.upk",
+            "source_sha256": "5ce9211c6ab95f0e1d4b01b1d9208daa318802da224385ae5f15c63b15dca650",
+            "extractor": "tools/UEViewer/umodel_64.exe",
+            "extractor_args": [
+              "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+            ],
+            "conversion_settings": {
+              "converter": "umodel",
+              "format": "OBJ",
+              "normalize": false,
+              "source": "retail character package",
+              "ownership": "retail package name prefix-match + staged obj"
+            },
+            "destination": "/Game/Imported/Characters/Wardrobe/Contact_Chaos_Bloodrose_Male_Contact_Chaos_Bloodrose_Male.Contact_Chaos_Bloodrose_Male_Contact_Chaos_Bloodrose_Male",
+            "intermediate_path": "Content/Imported/Characters/Wardrobe/Contact_Chaos_Bloodrose_Male_Contact_Chaos_Bloodrose_Male.obj",
+            "intermediate_sha256": "04d905092a0fccf8b76af8d41dbdd3115a15979a22501ebfefb0351213ded27e",
+            "extracted_file": "Content/Imported/Characters/Wardrobe/Contact_Chaos_Bloodrose_Male_Contact_Chaos_Bloodrose_Male.obj",
+            "extracted_sha256": "04d905092a0fccf8b76af8d41dbdd3115a15979a22501ebfefb0351213ded27e"
+          }
+        }
+      ],
+      "verified_at": "2026-08-02T22:31:02.972001+00:00",
+      "verified_by": "tools/scripts/promote_verified_batch.py"
+    },
+    {
+      "asset_key": "retail:Character/Contact/Contact_Chaos_Shadowstrike_Male.upk#Contact_Chaos_Shadowstrike_Male_Contact_Chaos_Shadowstrike_Male",
+      "source_build": "retail",
+      "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/Contact/Contact_Chaos_Shadowstrike_Male.upk",
+      "source_sha256": "a6bf328917a9c7d89dee7c805fb97430d08762be983a4075e3ba875ffff3e86f",
+      "extractor": "tools/UEViewer/umodel_64.exe",
+      "extractor_args": [
+        "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+      ],
+      "intermediate_path": "Content/Imported/Characters/Wardrobe/Contact_Chaos_Shadowstrike_Male_Contact_Chaos_Shadowstrike_Male.obj",
+      "intermediate_sha256": "87297a584eaaa16c073e21619d1cea70c3fcd778d38e088e6e6c702dd36300ba",
+      "conversion_settings": {
+        "converter": "umodel",
+        "format": "OBJ",
+        "normalize": false,
+        "source": "retail character package",
+        "ownership": "retail package name prefix-match + staged obj"
+      },
+      "dest": "/Game/Imported/Characters/Wardrobe/Contact_Chaos_Shadowstrike_Male_Contact_Chaos_Shadowstrike_Male.Contact_Chaos_Shadowstrike_Male_Contact_Chaos_Shadowstrike_Male",
+      "asset_class": "StaticMesh",
+      "validation": {
+        "class": "StaticMesh",
+        "source_build": "retail",
+        "note": "character-create wardrobe slot visual"
+      },
+      "status": "verified",
+      "updated": "2026-08-02T22:31:02.675506+00:00",
+      "uasset_path": "Content/Imported/Characters/Wardrobe/Contact_Chaos_Shadowstrike_Male_Contact_Chaos_Shadowstrike_Male.uasset",
+      "uasset_sha256": "beb11d0349bfa63d11bc84a90462815a099b9a73d046d2e0fbf2192bd664b552",
+      "d17_evidence": [
+        {
+          "path": "work/evidence/character_create_batch/wardrobe_exact.json",
+          "sha256": "f076756cf171622772a76eae40eb2a3bb9cc5f190f4638b0a175403ded9d36bd",
+          "schema": "apb_character_create_v1",
+          "record_key": "retail:Character/Contact/Contact_Chaos_Shadowstrike_Male.upk#Contact_Chaos_Shadowstrike_Male_Contact_Chaos_Shadowstrike_Male",
+          "fields": {
+            "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/Contact/Contact_Chaos_Shadowstrike_Male.upk",
+            "source_sha256": "a6bf328917a9c7d89dee7c805fb97430d08762be983a4075e3ba875ffff3e86f",
+            "extractor": "tools/UEViewer/umodel_64.exe",
+            "extractor_args": [
+              "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+            ],
+            "conversion_settings": {
+              "converter": "umodel",
+              "format": "OBJ",
+              "normalize": false,
+              "source": "retail character package",
+              "ownership": "retail package name prefix-match + staged obj"
+            },
+            "destination": "/Game/Imported/Characters/Wardrobe/Contact_Chaos_Shadowstrike_Male_Contact_Chaos_Shadowstrike_Male.Contact_Chaos_Shadowstrike_Male_Contact_Chaos_Shadowstrike_Male",
+            "intermediate_path": "Content/Imported/Characters/Wardrobe/Contact_Chaos_Shadowstrike_Male_Contact_Chaos_Shadowstrike_Male.obj",
+            "intermediate_sha256": "87297a584eaaa16c073e21619d1cea70c3fcd778d38e088e6e6c702dd36300ba",
+            "extracted_file": "Content/Imported/Characters/Wardrobe/Contact_Chaos_Shadowstrike_Male_Contact_Chaos_Shadowstrike_Male.obj",
+            "extracted_sha256": "87297a584eaaa16c073e21619d1cea70c3fcd778d38e088e6e6c702dd36300ba"
+          }
+        }
+      ],
+      "verified_at": "2026-08-02T22:31:02.972001+00:00",
+      "verified_by": "tools/scripts/promote_verified_batch.py"
+    },
+    {
+      "asset_key": "retail:Character/Contact/Contact_GKing_DoubleB.upk#Contact_GKing_DoubleB_contact_gking_doubleb",
+      "source_build": "retail",
+      "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/Contact/Contact_GKing_DoubleB.upk",
+      "source_sha256": "a60ffde3adfa7d4ecf18086a5c5dd7a4925951679044ea21293ed83595fe10bf",
+      "extractor": "tools/UEViewer/umodel_64.exe",
+      "extractor_args": [
+        "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+      ],
+      "intermediate_path": "Content/Imported/Characters/Wardrobe/Contact_GKing_DoubleB_contact_gking_doubleb.obj",
+      "intermediate_sha256": "cf582ad85b93c26dfda899a23abb10c094a9fb4146a4bf8471fcfa20e38e9d26",
+      "conversion_settings": {
+        "converter": "umodel",
+        "format": "OBJ",
+        "normalize": false,
+        "source": "retail character package",
+        "ownership": "retail package name prefix-match + staged obj"
+      },
+      "dest": "/Game/Imported/Characters/Wardrobe/Contact_GKing_DoubleB_contact_gking_doubleb.Contact_GKing_DoubleB_contact_gking_doubleb",
+      "asset_class": "StaticMesh",
+      "validation": {
+        "class": "StaticMesh",
+        "source_build": "retail",
+        "note": "character-create wardrobe slot visual"
+      },
+      "status": "verified",
+      "updated": "2026-08-02T22:31:02.685514+00:00",
+      "uasset_path": "Content/Imported/Characters/Wardrobe/Contact_GKing_DoubleB_contact_gking_doubleb.uasset",
+      "uasset_sha256": "4e7aab01a2d20a65cd54ed190bd6e6c4eec3bfba72fe185aa5b52e7e003960ac",
+      "d17_evidence": [
+        {
+          "path": "work/evidence/character_create_batch/wardrobe_exact.json",
+          "sha256": "f076756cf171622772a76eae40eb2a3bb9cc5f190f4638b0a175403ded9d36bd",
+          "schema": "apb_character_create_v1",
+          "record_key": "retail:Character/Contact/Contact_GKing_DoubleB.upk#Contact_GKing_DoubleB_contact_gking_doubleb",
+          "fields": {
+            "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/Contact/Contact_GKing_DoubleB.upk",
+            "source_sha256": "a60ffde3adfa7d4ecf18086a5c5dd7a4925951679044ea21293ed83595fe10bf",
+            "extractor": "tools/UEViewer/umodel_64.exe",
+            "extractor_args": [
+              "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+            ],
+            "conversion_settings": {
+              "converter": "umodel",
+              "format": "OBJ",
+              "normalize": false,
+              "source": "retail character package",
+              "ownership": "retail package name prefix-match + staged obj"
+            },
+            "destination": "/Game/Imported/Characters/Wardrobe/Contact_GKing_DoubleB_contact_gking_doubleb.Contact_GKing_DoubleB_contact_gking_doubleb",
+            "intermediate_path": "Content/Imported/Characters/Wardrobe/Contact_GKing_DoubleB_contact_gking_doubleb.obj",
+            "intermediate_sha256": "cf582ad85b93c26dfda899a23abb10c094a9fb4146a4bf8471fcfa20e38e9d26",
+            "extracted_file": "Content/Imported/Characters/Wardrobe/Contact_GKing_DoubleB_contact_gking_doubleb.obj",
+            "extracted_sha256": "cf582ad85b93c26dfda899a23abb10c094a9fb4146a4bf8471fcfa20e38e9d26"
+          }
+        }
+      ],
+      "verified_at": "2026-08-02T22:31:02.972001+00:00",
+      "verified_by": "tools/scripts/promote_verified_batch.py"
+    },
+    {
+      "asset_key": "retail:Character/Contact/Contact_LaRocha.upk#m_contact_enforcement_larocha",
+      "source_build": "retail",
+      "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/Contact/Contact_LaRocha.upk",
+      "source_sha256": "601f692685b7a799d19b228f91885e7c09d057e9c01074588307cb902ba279be",
+      "extractor": "tools/UEViewer/umodel_64.exe",
+      "extractor_args": [
+        "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+      ],
+      "intermediate_path": "Content/Imported/Characters/Contact_LaRocha/m_contact_enforcement_larocha.obj",
+      "intermediate_sha256": "ec707fd62b0410c55242d230d2dbbbda2c057b3c67339d6c48d5a94479508022",
+      "conversion_settings": {
+        "converter": "umodel",
+        "format": "OBJ",
+        "normalize": false,
+        "source": "retail character package",
+        "ownership": "model_reference_catalog name hints"
+      },
+      "dest": "/Game/Imported/Characters/Contact_LaRocha/m_contact_enforcement_larocha.m_contact_enforcement_larocha",
+      "asset_class": "StaticMesh",
+      "validation": {
+        "class": "StaticMesh",
+        "source_build": "retail",
+        "note": "character-create base mesh"
+      },
+      "status": "verified",
+      "updated": "2026-08-02T22:31:02.619066+00:00",
+      "uasset_path": "Content/Imported/Characters/Contact_LaRocha/m_contact_enforcement_larocha.uasset",
+      "uasset_sha256": "d0c1733c7f2471151efc1b09ce81e11cc80b7a013802502ce2b5e113eed5647e",
+      "d17_evidence": [
+        {
+          "path": "work/evidence/character_create_batch/base_meshes_exact.json",
+          "sha256": "2715cb8dd6f4ee4530f778947864ea7ff9ab67998d7c6051ff45c8dd607bb926",
+          "schema": "apb_character_create_v1",
+          "record_key": "retail:Character/Contact/Contact_LaRocha.upk#m_contact_enforcement_larocha",
+          "fields": {
+            "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/Contact/Contact_LaRocha.upk",
+            "source_sha256": "601f692685b7a799d19b228f91885e7c09d057e9c01074588307cb902ba279be",
+            "extractor": "tools/UEViewer/umodel_64.exe",
+            "extractor_args": [
+              "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+            ],
+            "conversion_settings": {
+              "converter": "umodel",
+              "format": "OBJ",
+              "normalize": false,
+              "source": "retail character package",
+              "ownership": "model_reference_catalog name hints"
+            },
+            "destination": "/Game/Imported/Characters/Contact_LaRocha/m_contact_enforcement_larocha.m_contact_enforcement_larocha",
+            "intermediate_path": "Content/Imported/Characters/Contact_LaRocha/m_contact_enforcement_larocha.obj",
+            "intermediate_sha256": "ec707fd62b0410c55242d230d2dbbbda2c057b3c67339d6c48d5a94479508022",
+            "extracted_file": "Content/Imported/Characters/Contact_LaRocha/m_contact_enforcement_larocha.obj",
+            "extracted_sha256": "ec707fd62b0410c55242d230d2dbbbda2c057b3c67339d6c48d5a94479508022"
+          }
+        }
+      ],
+      "verified_at": "2026-08-02T22:31:02.972001+00:00",
+      "verified_by": "tools/scripts/promote_verified_batch.py"
+    },
+    {
+      "asset_key": "retail:Character/Contact/Contact_Sofia.upk#F_Contact_Enforcement_Sofia",
+      "source_build": "retail",
+      "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/Contact/Contact_Sofia.upk",
+      "source_sha256": "ff379471ba2c42d5540b0659b0f818b92f80a5957c42602b056719c4785728a1",
+      "extractor": "tools/UEViewer/umodel_64.exe",
+      "extractor_args": [
+        "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+      ],
+      "intermediate_path": "Content/Imported/Characters/Contact_Sofia/F_Contact_Enforcement_Sofia.obj",
+      "intermediate_sha256": "ad430cc8aa4e45f0205b060a5efb320ddd4eaafc7360f20c7fd5ddbae543a566",
+      "conversion_settings": {
+        "converter": "umodel",
+        "format": "OBJ",
+        "normalize": false,
+        "source": "retail character package",
+        "ownership": "model_reference_catalog name hints"
+      },
+      "dest": "/Game/Imported/Characters/Contact_Sofia/F_Contact_Enforcement_Sofia.F_Contact_Enforcement_Sofia",
+      "asset_class": "StaticMesh",
+      "validation": {
+        "class": "StaticMesh",
+        "source_build": "retail",
+        "note": "character-create base mesh"
+      },
+      "status": "verified",
+      "updated": "2026-08-02T22:31:02.636579+00:00",
+      "uasset_path": "Content/Imported/Characters/Contact_Sofia/F_Contact_Enforcement_Sofia.uasset",
+      "uasset_sha256": "e59c9b059fd9da8073933de708452dfb60ea0cac1ec8607000160bf0bc7f27f9",
+      "d17_evidence": [
+        {
+          "path": "work/evidence/character_create_batch/base_meshes_exact.json",
+          "sha256": "2715cb8dd6f4ee4530f778947864ea7ff9ab67998d7c6051ff45c8dd607bb926",
+          "schema": "apb_character_create_v1",
+          "record_key": "retail:Character/Contact/Contact_Sofia.upk#F_Contact_Enforcement_Sofia",
+          "fields": {
+            "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/Contact/Contact_Sofia.upk",
+            "source_sha256": "ff379471ba2c42d5540b0659b0f818b92f80a5957c42602b056719c4785728a1",
+            "extractor": "tools/UEViewer/umodel_64.exe",
+            "extractor_args": [
+              "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+            ],
+            "conversion_settings": {
+              "converter": "umodel",
+              "format": "OBJ",
+              "normalize": false,
+              "source": "retail character package",
+              "ownership": "model_reference_catalog name hints"
+            },
+            "destination": "/Game/Imported/Characters/Contact_Sofia/F_Contact_Enforcement_Sofia.F_Contact_Enforcement_Sofia",
+            "intermediate_path": "Content/Imported/Characters/Contact_Sofia/F_Contact_Enforcement_Sofia.obj",
+            "intermediate_sha256": "ad430cc8aa4e45f0205b060a5efb320ddd4eaafc7360f20c7fd5ddbae543a566",
+            "extracted_file": "Content/Imported/Characters/Contact_Sofia/F_Contact_Enforcement_Sofia.obj",
+            "extracted_sha256": "ad430cc8aa4e45f0205b060a5efb320ddd4eaafc7360f20c7fd5ddbae543a566"
+          }
+        }
+      ],
+      "verified_at": "2026-08-02T22:31:02.972001+00:00",
+      "verified_by": "tools/scripts/promote_verified_batch.py"
+    },
+    {
+      "asset_key": "retail:Character/LC/Baked/LC_M_Business_City_AsianDark_01.upk#LC_M_Business_City_AsianDark_01_StudioCharacter",
+      "source_build": "retail",
+      "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/LC/Baked/LC_M_Business_City_AsianDark_01.upk",
+      "source_sha256": "cd58b54de562e0904ab17da7e40a93731b3bee58a4bd1862dffc89c7bc0d2aae",
+      "extractor": "tools/UEViewer/umodel_64.exe",
+      "extractor_args": [
+        "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+      ],
+      "intermediate_path": "Content/Imported/Characters/Wardrobe/LC_M_Business_City_AsianDark_01_StudioCharacter.obj",
+      "intermediate_sha256": "0aa8fb8fa9843dcc691410846afcc7ba6af965227a2042a214bf6ad02532d43d",
+      "conversion_settings": {
+        "converter": "umodel",
+        "format": "OBJ",
+        "normalize": false,
+        "source": "retail character package",
+        "ownership": "retail package name prefix-match + staged obj"
+      },
+      "dest": "/Game/Imported/Characters/Wardrobe/LC_M_Business_City_AsianDark_01_StudioCharacter.LC_M_Business_City_AsianDark_01_StudioCharacter",
+      "asset_class": "StaticMesh",
+      "validation": {
+        "class": "StaticMesh",
+        "source_build": "retail",
+        "note": "character-create wardrobe slot visual"
+      },
+      "status": "verified",
+      "updated": "2026-08-02T22:31:02.695129+00:00",
+      "uasset_path": "Content/Imported/Characters/Wardrobe/LC_M_Business_City_AsianDark_01_StudioCharacter.uasset",
+      "uasset_sha256": "a7a37b280924da185a2ec13cfc927c82d9127a4218306f6e69784ec7643e2c68",
+      "d17_evidence": [
+        {
+          "path": "work/evidence/character_create_batch/wardrobe_exact.json",
+          "sha256": "f076756cf171622772a76eae40eb2a3bb9cc5f190f4638b0a175403ded9d36bd",
+          "schema": "apb_character_create_v1",
+          "record_key": "retail:Character/LC/Baked/LC_M_Business_City_AsianDark_01.upk#LC_M_Business_City_AsianDark_01_StudioCharacter",
+          "fields": {
+            "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/LC/Baked/LC_M_Business_City_AsianDark_01.upk",
+            "source_sha256": "cd58b54de562e0904ab17da7e40a93731b3bee58a4bd1862dffc89c7bc0d2aae",
+            "extractor": "tools/UEViewer/umodel_64.exe",
+            "extractor_args": [
+              "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+            ],
+            "conversion_settings": {
+              "converter": "umodel",
+              "format": "OBJ",
+              "normalize": false,
+              "source": "retail character package",
+              "ownership": "retail package name prefix-match + staged obj"
+            },
+            "destination": "/Game/Imported/Characters/Wardrobe/LC_M_Business_City_AsianDark_01_StudioCharacter.LC_M_Business_City_AsianDark_01_StudioCharacter",
+            "intermediate_path": "Content/Imported/Characters/Wardrobe/LC_M_Business_City_AsianDark_01_StudioCharacter.obj",
+            "intermediate_sha256": "0aa8fb8fa9843dcc691410846afcc7ba6af965227a2042a214bf6ad02532d43d",
+            "extracted_file": "Content/Imported/Characters/Wardrobe/LC_M_Business_City_AsianDark_01_StudioCharacter.obj",
+            "extracted_sha256": "0aa8fb8fa9843dcc691410846afcc7ba6af965227a2042a214bf6ad02532d43d"
+          }
+        }
+      ],
+      "verified_at": "2026-08-02T22:31:02.972001+00:00",
+      "verified_by": "tools/scripts/promote_verified_batch.py"
+    },
+    {
+      "asset_key": "retail:Character/LC/Baked/LC_M_Business_City_AsianDyed_06.upk#LC_M_Business_City_AsianDyed_06_StudioCharacter",
+      "source_build": "retail",
+      "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/LC/Baked/LC_M_Business_City_AsianDyed_06.upk",
+      "source_sha256": "f22fa2b3a991108e1535b3492d9f92b5259e4367d450927e180099fa69bb65bf",
+      "extractor": "tools/UEViewer/umodel_64.exe",
+      "extractor_args": [
+        "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+      ],
+      "intermediate_path": "Content/Imported/Characters/Wardrobe/LC_M_Business_City_AsianDyed_06_StudioCharacter.obj",
+      "intermediate_sha256": "80d6c7e27f8f9a54bb44730ccebd67f6b98f9d710501922a561c7a9ef89e34f4",
+      "conversion_settings": {
+        "converter": "umodel",
+        "format": "OBJ",
+        "normalize": false,
+        "source": "retail character package",
+        "ownership": "retail package name prefix-match + staged obj"
+      },
+      "dest": "/Game/Imported/Characters/Wardrobe/LC_M_Business_City_AsianDyed_06_StudioCharacter.LC_M_Business_City_AsianDyed_06_StudioCharacter",
+      "asset_class": "StaticMesh",
+      "validation": {
+        "class": "StaticMesh",
+        "source_build": "retail",
+        "note": "character-create wardrobe slot visual"
+      },
+      "status": "verified",
+      "updated": "2026-08-02T22:31:02.703662+00:00",
+      "uasset_path": "Content/Imported/Characters/Wardrobe/LC_M_Business_City_AsianDyed_06_StudioCharacter.uasset",
+      "uasset_sha256": "a9b588cef506b6a12a9fb998391170c6df70d9d3937594c00ada3d05e2f037f7",
+      "d17_evidence": [
+        {
+          "path": "work/evidence/character_create_batch/wardrobe_exact.json",
+          "sha256": "f076756cf171622772a76eae40eb2a3bb9cc5f190f4638b0a175403ded9d36bd",
+          "schema": "apb_character_create_v1",
+          "record_key": "retail:Character/LC/Baked/LC_M_Business_City_AsianDyed_06.upk#LC_M_Business_City_AsianDyed_06_StudioCharacter",
+          "fields": {
+            "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/LC/Baked/LC_M_Business_City_AsianDyed_06.upk",
+            "source_sha256": "f22fa2b3a991108e1535b3492d9f92b5259e4367d450927e180099fa69bb65bf",
+            "extractor": "tools/UEViewer/umodel_64.exe",
+            "extractor_args": [
+              "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+            ],
+            "conversion_settings": {
+              "converter": "umodel",
+              "format": "OBJ",
+              "normalize": false,
+              "source": "retail character package",
+              "ownership": "retail package name prefix-match + staged obj"
+            },
+            "destination": "/Game/Imported/Characters/Wardrobe/LC_M_Business_City_AsianDyed_06_StudioCharacter.LC_M_Business_City_AsianDyed_06_StudioCharacter",
+            "intermediate_path": "Content/Imported/Characters/Wardrobe/LC_M_Business_City_AsianDyed_06_StudioCharacter.obj",
+            "intermediate_sha256": "80d6c7e27f8f9a54bb44730ccebd67f6b98f9d710501922a561c7a9ef89e34f4",
+            "extracted_file": "Content/Imported/Characters/Wardrobe/LC_M_Business_City_AsianDyed_06_StudioCharacter.obj",
+            "extracted_sha256": "80d6c7e27f8f9a54bb44730ccebd67f6b98f9d710501922a561c7a9ef89e34f4"
+          }
+        }
+      ],
+      "verified_at": "2026-08-02T22:31:02.972001+00:00",
+      "verified_by": "tools/scripts/promote_verified_batch.py"
+    },
+    {
+      "asset_key": "retail:Character/LC/Baked/LC_M_Business_City_CaucasianDark_02.upk#LC_M_Business_City_CaucasianDark_02_StudioCharacter",
+      "source_build": "retail",
+      "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/LC/Baked/LC_M_Business_City_CaucasianDark_02.upk",
+      "source_sha256": "f899e6136a3bba43d43ac8ffd9bb63bd03c456576b193f24943cd7aaa0be2ce1",
+      "extractor": "tools/UEViewer/umodel_64.exe",
+      "extractor_args": [
+        "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+      ],
+      "intermediate_path": "Content/Imported/Characters/Wardrobe/LC_M_Business_City_CaucasianDark_02_StudioCharacter.obj",
+      "intermediate_sha256": "52d015f3fa20c7bc90e25e6dbfed4e86ec72be29fc8d257df06e1bca6a5d0650",
+      "conversion_settings": {
+        "converter": "umodel",
+        "format": "OBJ",
+        "normalize": false,
+        "source": "retail character package",
+        "ownership": "retail package name prefix-match + staged obj"
+      },
+      "dest": "/Game/Imported/Characters/Wardrobe/LC_M_Business_City_CaucasianDark_02_StudioCharacter.LC_M_Business_City_CaucasianDark_02_StudioCharacter",
+      "asset_class": "StaticMesh",
+      "validation": {
+        "class": "StaticMesh",
+        "source_build": "retail",
+        "note": "character-create wardrobe slot visual"
+      },
+      "status": "verified",
+      "updated": "2026-08-02T22:31:02.710839+00:00",
+      "uasset_path": "Content/Imported/Characters/Wardrobe/LC_M_Business_City_CaucasianDark_02_StudioCharacter.uasset",
+      "uasset_sha256": "85d8d5602277f9cd002c4307002a5a70b238baec96e77dbab17818823e7168c6",
+      "d17_evidence": [
+        {
+          "path": "work/evidence/character_create_batch/wardrobe_exact.json",
+          "sha256": "f076756cf171622772a76eae40eb2a3bb9cc5f190f4638b0a175403ded9d36bd",
+          "schema": "apb_character_create_v1",
+          "record_key": "retail:Character/LC/Baked/LC_M_Business_City_CaucasianDark_02.upk#LC_M_Business_City_CaucasianDark_02_StudioCharacter",
+          "fields": {
+            "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/LC/Baked/LC_M_Business_City_CaucasianDark_02.upk",
+            "source_sha256": "f899e6136a3bba43d43ac8ffd9bb63bd03c456576b193f24943cd7aaa0be2ce1",
+            "extractor": "tools/UEViewer/umodel_64.exe",
+            "extractor_args": [
+              "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+            ],
+            "conversion_settings": {
+              "converter": "umodel",
+              "format": "OBJ",
+              "normalize": false,
+              "source": "retail character package",
+              "ownership": "retail package name prefix-match + staged obj"
+            },
+            "destination": "/Game/Imported/Characters/Wardrobe/LC_M_Business_City_CaucasianDark_02_StudioCharacter.LC_M_Business_City_CaucasianDark_02_StudioCharacter",
+            "intermediate_path": "Content/Imported/Characters/Wardrobe/LC_M_Business_City_CaucasianDark_02_StudioCharacter.obj",
+            "intermediate_sha256": "52d015f3fa20c7bc90e25e6dbfed4e86ec72be29fc8d257df06e1bca6a5d0650",
+            "extracted_file": "Content/Imported/Characters/Wardrobe/LC_M_Business_City_CaucasianDark_02_StudioCharacter.obj",
+            "extracted_sha256": "52d015f3fa20c7bc90e25e6dbfed4e86ec72be29fc8d257df06e1bca6a5d0650"
+          }
+        }
+      ],
+      "verified_at": "2026-08-02T22:31:02.972001+00:00",
+      "verified_by": "tools/scripts/promote_verified_batch.py"
+    },
+    {
+      "asset_key": "retail:Character/LC/Baked/LC_M_Business_City_CaucasianLight_04.upk#LC_M_Business_City_CaucasianLight_04_StudioCharacter",
+      "source_build": "retail",
+      "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/LC/Baked/LC_M_Business_City_CaucasianLight_04.upk",
+      "source_sha256": "504e99c543e02358817fb1c0fd14a7ac00307879d4ac88465501c74fdb04d014",
+      "extractor": "tools/UEViewer/umodel_64.exe",
+      "extractor_args": [
+        "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+      ],
+      "intermediate_path": "Content/Imported/Characters/Wardrobe/LC_M_Business_City_CaucasianLight_04_StudioCharacter.obj",
+      "intermediate_sha256": "cd27a21dfdcf76a6ebed76a7b48f028e8ba7e77199dd959c84da57c29f511e6d",
+      "conversion_settings": {
+        "converter": "umodel",
+        "format": "OBJ",
+        "normalize": false,
+        "source": "retail character package",
+        "ownership": "retail package name prefix-match + staged obj"
+      },
+      "dest": "/Game/Imported/Characters/Wardrobe/LC_M_Business_City_CaucasianLight_04_StudioCharacter.LC_M_Business_City_CaucasianLight_04_StudioCharacter",
+      "asset_class": "StaticMesh",
+      "validation": {
+        "class": "StaticMesh",
+        "source_build": "retail",
+        "note": "character-create wardrobe slot visual"
+      },
+      "status": "verified",
+      "updated": "2026-08-02T22:31:02.719655+00:00",
+      "uasset_path": "Content/Imported/Characters/Wardrobe/LC_M_Business_City_CaucasianLight_04_StudioCharacter.uasset",
+      "uasset_sha256": "bd20cf4e58a2dd68f50d185f7c167f57ca5a654e0f4fb65ae6418b077d30ec36",
+      "d17_evidence": [
+        {
+          "path": "work/evidence/character_create_batch/wardrobe_exact.json",
+          "sha256": "f076756cf171622772a76eae40eb2a3bb9cc5f190f4638b0a175403ded9d36bd",
+          "schema": "apb_character_create_v1",
+          "record_key": "retail:Character/LC/Baked/LC_M_Business_City_CaucasianLight_04.upk#LC_M_Business_City_CaucasianLight_04_StudioCharacter",
+          "fields": {
+            "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/LC/Baked/LC_M_Business_City_CaucasianLight_04.upk",
+            "source_sha256": "504e99c543e02358817fb1c0fd14a7ac00307879d4ac88465501c74fdb04d014",
+            "extractor": "tools/UEViewer/umodel_64.exe",
+            "extractor_args": [
+              "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+            ],
+            "conversion_settings": {
+              "converter": "umodel",
+              "format": "OBJ",
+              "normalize": false,
+              "source": "retail character package",
+              "ownership": "retail package name prefix-match + staged obj"
+            },
+            "destination": "/Game/Imported/Characters/Wardrobe/LC_M_Business_City_CaucasianLight_04_StudioCharacter.LC_M_Business_City_CaucasianLight_04_StudioCharacter",
+            "intermediate_path": "Content/Imported/Characters/Wardrobe/LC_M_Business_City_CaucasianLight_04_StudioCharacter.obj",
+            "intermediate_sha256": "cd27a21dfdcf76a6ebed76a7b48f028e8ba7e77199dd959c84da57c29f511e6d",
+            "extracted_file": "Content/Imported/Characters/Wardrobe/LC_M_Business_City_CaucasianLight_04_StudioCharacter.obj",
+            "extracted_sha256": "cd27a21dfdcf76a6ebed76a7b48f028e8ba7e77199dd959c84da57c29f511e6d"
+          }
+        }
+      ],
+      "verified_at": "2026-08-02T22:31:02.972001+00:00",
+      "verified_by": "tools/scripts/promote_verified_batch.py"
+    },
+    {
+      "asset_key": "retail:Character/LC/Baked/LC_M_Business_City_HispanicDark_06.upk#LC_M_Business_City_HispanicDark_06_StudioCharacter",
+      "source_build": "retail",
+      "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/LC/Baked/LC_M_Business_City_HispanicDark_06.upk",
+      "source_sha256": "8a1292f760bf707eef5d1a88a8a1c40acac626f8e95c8fdaa4027cbb5f0ece8f",
+      "extractor": "tools/UEViewer/umodel_64.exe",
+      "extractor_args": [
+        "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+      ],
+      "intermediate_path": "Content/Imported/Characters/Wardrobe/LC_M_Business_City_HispanicDark_06_StudioCharacter.obj",
+      "intermediate_sha256": "9f28aece16081d19256e7e1e5e35fa744cc88e10635e08d69a22e74b01df8984",
+      "conversion_settings": {
+        "converter": "umodel",
+        "format": "OBJ",
+        "normalize": false,
+        "source": "retail character package",
+        "ownership": "retail package name prefix-match + staged obj"
+      },
+      "dest": "/Game/Imported/Characters/Wardrobe/LC_M_Business_City_HispanicDark_06_StudioCharacter.LC_M_Business_City_HispanicDark_06_StudioCharacter",
+      "asset_class": "StaticMesh",
+      "validation": {
+        "class": "StaticMesh",
+        "source_build": "retail",
+        "note": "character-create wardrobe slot visual"
+      },
+      "status": "verified",
+      "updated": "2026-08-02T22:31:02.728242+00:00",
+      "uasset_path": "Content/Imported/Characters/Wardrobe/LC_M_Business_City_HispanicDark_06_StudioCharacter.uasset",
+      "uasset_sha256": "f8faf9febac8da050a5417e4de170bae822a48deb8533ca197a2fab33dee8f79",
+      "d17_evidence": [
+        {
+          "path": "work/evidence/character_create_batch/wardrobe_exact.json",
+          "sha256": "f076756cf171622772a76eae40eb2a3bb9cc5f190f4638b0a175403ded9d36bd",
+          "schema": "apb_character_create_v1",
+          "record_key": "retail:Character/LC/Baked/LC_M_Business_City_HispanicDark_06.upk#LC_M_Business_City_HispanicDark_06_StudioCharacter",
+          "fields": {
+            "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/LC/Baked/LC_M_Business_City_HispanicDark_06.upk",
+            "source_sha256": "8a1292f760bf707eef5d1a88a8a1c40acac626f8e95c8fdaa4027cbb5f0ece8f",
+            "extractor": "tools/UEViewer/umodel_64.exe",
+            "extractor_args": [
+              "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+            ],
+            "conversion_settings": {
+              "converter": "umodel",
+              "format": "OBJ",
+              "normalize": false,
+              "source": "retail character package",
+              "ownership": "retail package name prefix-match + staged obj"
+            },
+            "destination": "/Game/Imported/Characters/Wardrobe/LC_M_Business_City_HispanicDark_06_StudioCharacter.LC_M_Business_City_HispanicDark_06_StudioCharacter",
+            "intermediate_path": "Content/Imported/Characters/Wardrobe/LC_M_Business_City_HispanicDark_06_StudioCharacter.obj",
+            "intermediate_sha256": "9f28aece16081d19256e7e1e5e35fa744cc88e10635e08d69a22e74b01df8984",
+            "extracted_file": "Content/Imported/Characters/Wardrobe/LC_M_Business_City_HispanicDark_06_StudioCharacter.obj",
+            "extracted_sha256": "9f28aece16081d19256e7e1e5e35fa744cc88e10635e08d69a22e74b01df8984"
+          }
+        }
+      ],
+      "verified_at": "2026-08-02T22:31:02.972001+00:00",
+      "verified_by": "tools/scripts/promote_verified_batch.py"
+    },
+    {
+      "asset_key": "retail:Character/LC/Baked/LC_M_Business_Local_AsianDark_06.upk#LC_M_Business_Local_AsianDark_06_StudioCharacter",
+      "source_build": "retail",
+      "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/LC/Baked/LC_M_Business_Local_AsianDark_06.upk",
+      "source_sha256": "92af44f41d09c9d4f4ffdcac3772d04ef02031874bc1d214899de66da99e81da",
+      "extractor": "tools/UEViewer/umodel_64.exe",
+      "extractor_args": [
+        "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+      ],
+      "intermediate_path": "Content/Imported/Characters/Wardrobe/LC_M_Business_Local_AsianDark_06_StudioCharacter.obj",
+      "intermediate_sha256": "1a94502b1d220a2b81d1fbe2b8bebb7134e59795e7de660568f5535eba187586",
+      "conversion_settings": {
+        "converter": "umodel",
+        "format": "OBJ",
+        "normalize": false,
+        "source": "retail character package",
+        "ownership": "retail package name prefix-match + staged obj"
+      },
+      "dest": "/Game/Imported/Characters/Wardrobe/LC_M_Business_Local_AsianDark_06_StudioCharacter.LC_M_Business_Local_AsianDark_06_StudioCharacter",
+      "asset_class": "StaticMesh",
+      "validation": {
+        "class": "StaticMesh",
+        "source_build": "retail",
+        "note": "character-create wardrobe slot visual"
+      },
+      "status": "verified",
+      "updated": "2026-08-02T22:31:02.735744+00:00",
+      "uasset_path": "Content/Imported/Characters/Wardrobe/LC_M_Business_Local_AsianDark_06_StudioCharacter.uasset",
+      "uasset_sha256": "aa7bf648a7b58a6be2b4dcfc3bd4f1d2559fbe8f72c1d10b1eacef3cd2d298e2",
+      "d17_evidence": [
+        {
+          "path": "work/evidence/character_create_batch/wardrobe_exact.json",
+          "sha256": "f076756cf171622772a76eae40eb2a3bb9cc5f190f4638b0a175403ded9d36bd",
+          "schema": "apb_character_create_v1",
+          "record_key": "retail:Character/LC/Baked/LC_M_Business_Local_AsianDark_06.upk#LC_M_Business_Local_AsianDark_06_StudioCharacter",
+          "fields": {
+            "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/LC/Baked/LC_M_Business_Local_AsianDark_06.upk",
+            "source_sha256": "92af44f41d09c9d4f4ffdcac3772d04ef02031874bc1d214899de66da99e81da",
+            "extractor": "tools/UEViewer/umodel_64.exe",
+            "extractor_args": [
+              "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+            ],
+            "conversion_settings": {
+              "converter": "umodel",
+              "format": "OBJ",
+              "normalize": false,
+              "source": "retail character package",
+              "ownership": "retail package name prefix-match + staged obj"
+            },
+            "destination": "/Game/Imported/Characters/Wardrobe/LC_M_Business_Local_AsianDark_06_StudioCharacter.LC_M_Business_Local_AsianDark_06_StudioCharacter",
+            "intermediate_path": "Content/Imported/Characters/Wardrobe/LC_M_Business_Local_AsianDark_06_StudioCharacter.obj",
+            "intermediate_sha256": "1a94502b1d220a2b81d1fbe2b8bebb7134e59795e7de660568f5535eba187586",
+            "extracted_file": "Content/Imported/Characters/Wardrobe/LC_M_Business_Local_AsianDark_06_StudioCharacter.obj",
+            "extracted_sha256": "1a94502b1d220a2b81d1fbe2b8bebb7134e59795e7de660568f5535eba187586"
+          }
+        }
+      ],
+      "verified_at": "2026-08-02T22:31:02.972001+00:00",
+      "verified_by": "tools/scripts/promote_verified_batch.py"
+    },
+    {
+      "asset_key": "retail:Character/LC/Baked/LC_M_Business_Local_CaucasianDark_02.upk#LC_M_Business_Local_CaucasianDark_02_StudioCharacter",
+      "source_build": "retail",
+      "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/LC/Baked/LC_M_Business_Local_CaucasianDark_02.upk",
+      "source_sha256": "eeac747ca61bed7ba51c040d3413734948533b8d266602778a206a93d2567205",
+      "extractor": "tools/UEViewer/umodel_64.exe",
+      "extractor_args": [
+        "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+      ],
+      "intermediate_path": "Content/Imported/Characters/Wardrobe/LC_M_Business_Local_CaucasianDark_02_StudioCharacter.obj",
+      "intermediate_sha256": "21be3e31c3678ce2047d12029146daa82ea8a319fb5c8cc1b72c1067a4cf8f9a",
+      "conversion_settings": {
+        "converter": "umodel",
+        "format": "OBJ",
+        "normalize": false,
+        "source": "retail character package",
+        "ownership": "retail package name prefix-match + staged obj"
+      },
+      "dest": "/Game/Imported/Characters/Wardrobe/LC_M_Business_Local_CaucasianDark_02_StudioCharacter.LC_M_Business_Local_CaucasianDark_02_StudioCharacter",
+      "asset_class": "StaticMesh",
+      "validation": {
+        "class": "StaticMesh",
+        "source_build": "retail",
+        "note": "character-create wardrobe slot visual"
+      },
+      "status": "verified",
+      "updated": "2026-08-02T22:31:02.743254+00:00",
+      "uasset_path": "Content/Imported/Characters/Wardrobe/LC_M_Business_Local_CaucasianDark_02_StudioCharacter.uasset",
+      "uasset_sha256": "1e968c177c9f2d8d628fa401128a6a7381622105896b6277f10691d5e024cace",
+      "d17_evidence": [
+        {
+          "path": "work/evidence/character_create_batch/wardrobe_exact.json",
+          "sha256": "f076756cf171622772a76eae40eb2a3bb9cc5f190f4638b0a175403ded9d36bd",
+          "schema": "apb_character_create_v1",
+          "record_key": "retail:Character/LC/Baked/LC_M_Business_Local_CaucasianDark_02.upk#LC_M_Business_Local_CaucasianDark_02_StudioCharacter",
+          "fields": {
+            "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/LC/Baked/LC_M_Business_Local_CaucasianDark_02.upk",
+            "source_sha256": "eeac747ca61bed7ba51c040d3413734948533b8d266602778a206a93d2567205",
+            "extractor": "tools/UEViewer/umodel_64.exe",
+            "extractor_args": [
+              "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+            ],
+            "conversion_settings": {
+              "converter": "umodel",
+              "format": "OBJ",
+              "normalize": false,
+              "source": "retail character package",
+              "ownership": "retail package name prefix-match + staged obj"
+            },
+            "destination": "/Game/Imported/Characters/Wardrobe/LC_M_Business_Local_CaucasianDark_02_StudioCharacter.LC_M_Business_Local_CaucasianDark_02_StudioCharacter",
+            "intermediate_path": "Content/Imported/Characters/Wardrobe/LC_M_Business_Local_CaucasianDark_02_StudioCharacter.obj",
+            "intermediate_sha256": "21be3e31c3678ce2047d12029146daa82ea8a319fb5c8cc1b72c1067a4cf8f9a",
+            "extracted_file": "Content/Imported/Characters/Wardrobe/LC_M_Business_Local_CaucasianDark_02_StudioCharacter.obj",
+            "extracted_sha256": "21be3e31c3678ce2047d12029146daa82ea8a319fb5c8cc1b72c1067a4cf8f9a"
+          }
+        }
+      ],
+      "verified_at": "2026-08-02T22:31:02.972001+00:00",
+      "verified_by": "tools/scripts/promote_verified_batch.py"
+    },
+    {
+      "asset_key": "retail:Character/LC/Baked/LC_M_Business_Local_CaucasianDark_04.upk#LC_M_Business_Local_CaucasianDark_04_StudioCharacter",
+      "source_build": "retail",
+      "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/LC/Baked/LC_M_Business_Local_CaucasianDark_04.upk",
+      "source_sha256": "8f3bac6e2051d9ce156e9e30db42e52c713b919f153197bb4f307e93404af533",
+      "extractor": "tools/UEViewer/umodel_64.exe",
+      "extractor_args": [
+        "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+      ],
+      "intermediate_path": "Content/Imported/Characters/Wardrobe/LC_M_Business_Local_CaucasianDark_04_StudioCharacter.obj",
+      "intermediate_sha256": "317efb16c96cdf98928919ef59e4af618bd9b60b2785cdbdba671cde080f2bb9",
+      "conversion_settings": {
+        "converter": "umodel",
+        "format": "OBJ",
+        "normalize": false,
+        "source": "retail character package",
+        "ownership": "retail package name prefix-match + staged obj"
+      },
+      "dest": "/Game/Imported/Characters/Wardrobe/LC_M_Business_Local_CaucasianDark_04_StudioCharacter.LC_M_Business_Local_CaucasianDark_04_StudioCharacter",
+      "asset_class": "StaticMesh",
+      "validation": {
+        "class": "StaticMesh",
+        "source_build": "retail",
+        "note": "character-create wardrobe slot visual"
+      },
+      "status": "verified",
+      "updated": "2026-08-02T22:31:02.749761+00:00",
+      "uasset_path": "Content/Imported/Characters/Wardrobe/LC_M_Business_Local_CaucasianDark_04_StudioCharacter.uasset",
+      "uasset_sha256": "65df97027d043bf754b6277585e6fabfef9ed9c004a10196243816895bca9c53",
+      "d17_evidence": [
+        {
+          "path": "work/evidence/character_create_batch/wardrobe_exact.json",
+          "sha256": "f076756cf171622772a76eae40eb2a3bb9cc5f190f4638b0a175403ded9d36bd",
+          "schema": "apb_character_create_v1",
+          "record_key": "retail:Character/LC/Baked/LC_M_Business_Local_CaucasianDark_04.upk#LC_M_Business_Local_CaucasianDark_04_StudioCharacter",
+          "fields": {
+            "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/LC/Baked/LC_M_Business_Local_CaucasianDark_04.upk",
+            "source_sha256": "8f3bac6e2051d9ce156e9e30db42e52c713b919f153197bb4f307e93404af533",
+            "extractor": "tools/UEViewer/umodel_64.exe",
+            "extractor_args": [
+              "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+            ],
+            "conversion_settings": {
+              "converter": "umodel",
+              "format": "OBJ",
+              "normalize": false,
+              "source": "retail character package",
+              "ownership": "retail package name prefix-match + staged obj"
+            },
+            "destination": "/Game/Imported/Characters/Wardrobe/LC_M_Business_Local_CaucasianDark_04_StudioCharacter.LC_M_Business_Local_CaucasianDark_04_StudioCharacter",
+            "intermediate_path": "Content/Imported/Characters/Wardrobe/LC_M_Business_Local_CaucasianDark_04_StudioCharacter.obj",
+            "intermediate_sha256": "317efb16c96cdf98928919ef59e4af618bd9b60b2785cdbdba671cde080f2bb9",
+            "extracted_file": "Content/Imported/Characters/Wardrobe/LC_M_Business_Local_CaucasianDark_04_StudioCharacter.obj",
+            "extracted_sha256": "317efb16c96cdf98928919ef59e4af618bd9b60b2785cdbdba671cde080f2bb9"
+          }
+        }
+      ],
+      "verified_at": "2026-08-02T22:31:02.972001+00:00",
+      "verified_by": "tools/scripts/promote_verified_batch.py"
+    },
+    {
+      "asset_key": "retail:Character/LC/Baked/LC_M_Business_Local_CaucasianGrey_01.upk#LC_M_Business_Local_CaucasianGrey_01_StudioCharacter",
+      "source_build": "retail",
+      "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/LC/Baked/LC_M_Business_Local_CaucasianGrey_01.upk",
+      "source_sha256": "9b6af1bac7b661e8d497255fed57cf56550deb70472c84177bb05dbb86019228",
+      "extractor": "tools/UEViewer/umodel_64.exe",
+      "extractor_args": [
+        "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+      ],
+      "intermediate_path": "Content/Imported/Characters/Wardrobe/LC_M_Business_Local_CaucasianGrey_01_StudioCharacter.obj",
+      "intermediate_sha256": "78555ef339a4b6ebbb9871842ddf191befa93f36543cb17399c90f765f599156",
+      "conversion_settings": {
+        "converter": "umodel",
+        "format": "OBJ",
+        "normalize": false,
+        "source": "retail character package",
+        "ownership": "retail package name prefix-match + staged obj"
+      },
+      "dest": "/Game/Imported/Characters/Wardrobe/LC_M_Business_Local_CaucasianGrey_01_StudioCharacter.LC_M_Business_Local_CaucasianGrey_01_StudioCharacter",
+      "asset_class": "StaticMesh",
+      "validation": {
+        "class": "StaticMesh",
+        "source_build": "retail",
+        "note": "character-create wardrobe slot visual"
+      },
+      "status": "verified",
+      "updated": "2026-08-02T22:31:02.758315+00:00",
+      "uasset_path": "Content/Imported/Characters/Wardrobe/LC_M_Business_Local_CaucasianGrey_01_StudioCharacter.uasset",
+      "uasset_sha256": "8a2ab30fedbc6b2c05b2773b5b36d6f2bf994b99845d48034b37e83744925509",
+      "d17_evidence": [
+        {
+          "path": "work/evidence/character_create_batch/wardrobe_exact.json",
+          "sha256": "f076756cf171622772a76eae40eb2a3bb9cc5f190f4638b0a175403ded9d36bd",
+          "schema": "apb_character_create_v1",
+          "record_key": "retail:Character/LC/Baked/LC_M_Business_Local_CaucasianGrey_01.upk#LC_M_Business_Local_CaucasianGrey_01_StudioCharacter",
+          "fields": {
+            "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/LC/Baked/LC_M_Business_Local_CaucasianGrey_01.upk",
+            "source_sha256": "9b6af1bac7b661e8d497255fed57cf56550deb70472c84177bb05dbb86019228",
+            "extractor": "tools/UEViewer/umodel_64.exe",
+            "extractor_args": [
+              "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+            ],
+            "conversion_settings": {
+              "converter": "umodel",
+              "format": "OBJ",
+              "normalize": false,
+              "source": "retail character package",
+              "ownership": "retail package name prefix-match + staged obj"
+            },
+            "destination": "/Game/Imported/Characters/Wardrobe/LC_M_Business_Local_CaucasianGrey_01_StudioCharacter.LC_M_Business_Local_CaucasianGrey_01_StudioCharacter",
+            "intermediate_path": "Content/Imported/Characters/Wardrobe/LC_M_Business_Local_CaucasianGrey_01_StudioCharacter.obj",
+            "intermediate_sha256": "78555ef339a4b6ebbb9871842ddf191befa93f36543cb17399c90f765f599156",
+            "extracted_file": "Content/Imported/Characters/Wardrobe/LC_M_Business_Local_CaucasianGrey_01_StudioCharacter.obj",
+            "extracted_sha256": "78555ef339a4b6ebbb9871842ddf191befa93f36543cb17399c90f765f599156"
+          }
+        }
+      ],
+      "verified_at": "2026-08-02T22:31:02.972001+00:00",
+      "verified_by": "tools/scripts/promote_verified_batch.py"
+    },
+    {
+      "asset_key": "retail:Character/LC/Baked/LC_M_Business_Local_IndianDark_04.upk#LC_M_Business_Local_IndianDark_04_StudioCharacter",
+      "source_build": "retail",
+      "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/LC/Baked/LC_M_Business_Local_IndianDark_04.upk",
+      "source_sha256": "3bfaffa2f5ad7d8b1b973279a8b1c27f29149639671c03b0d2864f0c648c14fc",
+      "extractor": "tools/UEViewer/umodel_64.exe",
+      "extractor_args": [
+        "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+      ],
+      "intermediate_path": "Content/Imported/Characters/Wardrobe/LC_M_Business_Local_IndianDark_04_StudioCharacter.obj",
+      "intermediate_sha256": "cb5bbf12a5b71230858285cef339bc1f59ab598019a06c0d8e7cb7ff39ceb3ed",
+      "conversion_settings": {
+        "converter": "umodel",
+        "format": "OBJ",
+        "normalize": false,
+        "source": "retail character package",
+        "ownership": "retail package name prefix-match + staged obj"
+      },
+      "dest": "/Game/Imported/Characters/Wardrobe/LC_M_Business_Local_IndianDark_04_StudioCharacter.LC_M_Business_Local_IndianDark_04_StudioCharacter",
+      "asset_class": "StaticMesh",
+      "validation": {
+        "class": "StaticMesh",
+        "source_build": "retail",
+        "note": "character-create wardrobe slot visual"
+      },
+      "status": "verified",
+      "updated": "2026-08-02T22:31:02.766317+00:00",
+      "uasset_path": "Content/Imported/Characters/Wardrobe/LC_M_Business_Local_IndianDark_04_StudioCharacter.uasset",
+      "uasset_sha256": "3261f0595fc0aa648218a23f54aee59bd94419f61eec926f90656bf5ddf92b72",
+      "d17_evidence": [
+        {
+          "path": "work/evidence/character_create_batch/wardrobe_exact.json",
+          "sha256": "f076756cf171622772a76eae40eb2a3bb9cc5f190f4638b0a175403ded9d36bd",
+          "schema": "apb_character_create_v1",
+          "record_key": "retail:Character/LC/Baked/LC_M_Business_Local_IndianDark_04.upk#LC_M_Business_Local_IndianDark_04_StudioCharacter",
+          "fields": {
+            "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/LC/Baked/LC_M_Business_Local_IndianDark_04.upk",
+            "source_sha256": "3bfaffa2f5ad7d8b1b973279a8b1c27f29149639671c03b0d2864f0c648c14fc",
+            "extractor": "tools/UEViewer/umodel_64.exe",
+            "extractor_args": [
+              "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+            ],
+            "conversion_settings": {
+              "converter": "umodel",
+              "format": "OBJ",
+              "normalize": false,
+              "source": "retail character package",
+              "ownership": "retail package name prefix-match + staged obj"
+            },
+            "destination": "/Game/Imported/Characters/Wardrobe/LC_M_Business_Local_IndianDark_04_StudioCharacter.LC_M_Business_Local_IndianDark_04_StudioCharacter",
+            "intermediate_path": "Content/Imported/Characters/Wardrobe/LC_M_Business_Local_IndianDark_04_StudioCharacter.obj",
+            "intermediate_sha256": "cb5bbf12a5b71230858285cef339bc1f59ab598019a06c0d8e7cb7ff39ceb3ed",
+            "extracted_file": "Content/Imported/Characters/Wardrobe/LC_M_Business_Local_IndianDark_04_StudioCharacter.obj",
+            "extracted_sha256": "cb5bbf12a5b71230858285cef339bc1f59ab598019a06c0d8e7cb7ff39ceb3ed"
+          }
+        }
+      ],
+      "verified_at": "2026-08-02T22:31:02.972001+00:00",
+      "verified_by": "tools/scripts/promote_verified_batch.py"
+    },
+    {
+      "asset_key": "retail:Character/LC/Baked/LC_M_Clubber_Casual_AsianDark_01.upk#LC_M_Clubber_Casual_AsianDark_01_StudioCharacter",
+      "source_build": "retail",
+      "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/LC/Baked/LC_M_Clubber_Casual_AsianDark_01.upk",
+      "source_sha256": "e768b653039eb559d1ce62c71a618ed77221edd30fa624021b4e3424b4357966",
+      "extractor": "tools/UEViewer/umodel_64.exe",
+      "extractor_args": [
+        "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+      ],
+      "intermediate_path": "Content/Imported/Characters/Wardrobe/LC_M_Clubber_Casual_AsianDark_01_StudioCharacter.obj",
+      "intermediate_sha256": "dfe70e9d3e3bca5da11ca8f37dd0f99141e711855a6a5987b1b62696142f894c",
+      "conversion_settings": {
+        "converter": "umodel",
+        "format": "OBJ",
+        "normalize": false,
+        "source": "retail character package",
+        "ownership": "retail package name prefix-match + staged obj"
+      },
+      "dest": "/Game/Imported/Characters/Wardrobe/LC_M_Clubber_Casual_AsianDark_01_StudioCharacter.LC_M_Clubber_Casual_AsianDark_01_StudioCharacter",
+      "asset_class": "StaticMesh",
+      "validation": {
+        "class": "StaticMesh",
+        "source_build": "retail",
+        "note": "character-create wardrobe slot visual"
+      },
+      "status": "verified",
+      "updated": "2026-08-02T22:31:02.774848+00:00",
+      "uasset_path": "Content/Imported/Characters/Wardrobe/LC_M_Clubber_Casual_AsianDark_01_StudioCharacter.uasset",
+      "uasset_sha256": "dc4556e113c8788c36cfa70f584441549e0c8689e64ff3218beef3ec6b9c0d70",
+      "d17_evidence": [
+        {
+          "path": "work/evidence/character_create_batch/wardrobe_exact.json",
+          "sha256": "f076756cf171622772a76eae40eb2a3bb9cc5f190f4638b0a175403ded9d36bd",
+          "schema": "apb_character_create_v1",
+          "record_key": "retail:Character/LC/Baked/LC_M_Clubber_Casual_AsianDark_01.upk#LC_M_Clubber_Casual_AsianDark_01_StudioCharacter",
+          "fields": {
+            "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/LC/Baked/LC_M_Clubber_Casual_AsianDark_01.upk",
+            "source_sha256": "e768b653039eb559d1ce62c71a618ed77221edd30fa624021b4e3424b4357966",
+            "extractor": "tools/UEViewer/umodel_64.exe",
+            "extractor_args": [
+              "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+            ],
+            "conversion_settings": {
+              "converter": "umodel",
+              "format": "OBJ",
+              "normalize": false,
+              "source": "retail character package",
+              "ownership": "retail package name prefix-match + staged obj"
+            },
+            "destination": "/Game/Imported/Characters/Wardrobe/LC_M_Clubber_Casual_AsianDark_01_StudioCharacter.LC_M_Clubber_Casual_AsianDark_01_StudioCharacter",
+            "intermediate_path": "Content/Imported/Characters/Wardrobe/LC_M_Clubber_Casual_AsianDark_01_StudioCharacter.obj",
+            "intermediate_sha256": "dfe70e9d3e3bca5da11ca8f37dd0f99141e711855a6a5987b1b62696142f894c",
+            "extracted_file": "Content/Imported/Characters/Wardrobe/LC_M_Clubber_Casual_AsianDark_01_StudioCharacter.obj",
+            "extracted_sha256": "dfe70e9d3e3bca5da11ca8f37dd0f99141e711855a6a5987b1b62696142f894c"
+          }
+        }
+      ],
+      "verified_at": "2026-08-02T22:31:02.972001+00:00",
+      "verified_by": "tools/scripts/promote_verified_batch.py"
+    },
+    {
+      "asset_key": "retail:Character/LC/Baked/LC_M_Clubber_Casual_CaucasianLight_03.upk#LC_M_Clubber_Casual_CaucasianLight_03_StudioCharacter",
+      "source_build": "retail",
+      "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/LC/Baked/LC_M_Clubber_Casual_CaucasianLight_03.upk",
+      "source_sha256": "66700ea0a0a44bb578ad821623ba881fd39eac17d6f5642cf562ba4d7c8638df",
+      "extractor": "tools/UEViewer/umodel_64.exe",
+      "extractor_args": [
+        "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+      ],
+      "intermediate_path": "Content/Imported/Characters/Wardrobe/LC_M_Clubber_Casual_CaucasianLight_03_StudioCharacter.obj",
+      "intermediate_sha256": "8c26e6fc74f55dce79c1777004271077ea1f675c4745d2727fa1616933936c0e",
+      "conversion_settings": {
+        "converter": "umodel",
+        "format": "OBJ",
+        "normalize": false,
+        "source": "retail character package",
+        "ownership": "retail package name prefix-match + staged obj"
+      },
+      "dest": "/Game/Imported/Characters/Wardrobe/LC_M_Clubber_Casual_CaucasianLight_03_StudioCharacter.LC_M_Clubber_Casual_CaucasianLight_03_StudioCharacter",
+      "asset_class": "StaticMesh",
+      "validation": {
+        "class": "StaticMesh",
+        "source_build": "retail",
+        "note": "character-create wardrobe slot visual"
+      },
+      "status": "verified",
+      "updated": "2026-08-02T22:31:02.781855+00:00",
+      "uasset_path": "Content/Imported/Characters/Wardrobe/LC_M_Clubber_Casual_CaucasianLight_03_StudioCharacter.uasset",
+      "uasset_sha256": "412a50602b4c8c86824f3b954c63574cc40505b11e5c75649ec81d262d7b304d",
+      "d17_evidence": [
+        {
+          "path": "work/evidence/character_create_batch/wardrobe_exact.json",
+          "sha256": "f076756cf171622772a76eae40eb2a3bb9cc5f190f4638b0a175403ded9d36bd",
+          "schema": "apb_character_create_v1",
+          "record_key": "retail:Character/LC/Baked/LC_M_Clubber_Casual_CaucasianLight_03.upk#LC_M_Clubber_Casual_CaucasianLight_03_StudioCharacter",
+          "fields": {
+            "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/LC/Baked/LC_M_Clubber_Casual_CaucasianLight_03.upk",
+            "source_sha256": "66700ea0a0a44bb578ad821623ba881fd39eac17d6f5642cf562ba4d7c8638df",
+            "extractor": "tools/UEViewer/umodel_64.exe",
+            "extractor_args": [
+              "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+            ],
+            "conversion_settings": {
+              "converter": "umodel",
+              "format": "OBJ",
+              "normalize": false,
+              "source": "retail character package",
+              "ownership": "retail package name prefix-match + staged obj"
+            },
+            "destination": "/Game/Imported/Characters/Wardrobe/LC_M_Clubber_Casual_CaucasianLight_03_StudioCharacter.LC_M_Clubber_Casual_CaucasianLight_03_StudioCharacter",
+            "intermediate_path": "Content/Imported/Characters/Wardrobe/LC_M_Clubber_Casual_CaucasianLight_03_StudioCharacter.obj",
+            "intermediate_sha256": "8c26e6fc74f55dce79c1777004271077ea1f675c4745d2727fa1616933936c0e",
+            "extracted_file": "Content/Imported/Characters/Wardrobe/LC_M_Clubber_Casual_CaucasianLight_03_StudioCharacter.obj",
+            "extracted_sha256": "8c26e6fc74f55dce79c1777004271077ea1f675c4745d2727fa1616933936c0e"
+          }
+        }
+      ],
+      "verified_at": "2026-08-02T22:31:02.972001+00:00",
+      "verified_by": "tools/scripts/promote_verified_batch.py"
+    },
+    {
+      "asset_key": "retail:Character/LC/Baked/LC_M_Clubber_Casual_CaucasianLight_04.upk#LC_M_Clubber_Casual_CaucasianLight_04_StudioCharacter",
+      "source_build": "retail",
+      "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/LC/Baked/LC_M_Clubber_Casual_CaucasianLight_04.upk",
+      "source_sha256": "795393038d4c70d82d2a42e1ac6b9b273231076bc2667a95c96186bacf6e9bba",
+      "extractor": "tools/UEViewer/umodel_64.exe",
+      "extractor_args": [
+        "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+      ],
+      "intermediate_path": "Content/Imported/Characters/Wardrobe/LC_M_Clubber_Casual_CaucasianLight_04_StudioCharacter.obj",
+      "intermediate_sha256": "39c70286f5a285093d1463ed6cd83990d27dc4b0e0b5c7ee8656ad638e3ac261",
+      "conversion_settings": {
+        "converter": "umodel",
+        "format": "OBJ",
+        "normalize": false,
+        "source": "retail character package",
+        "ownership": "retail package name prefix-match + staged obj"
+      },
+      "dest": "/Game/Imported/Characters/Wardrobe/LC_M_Clubber_Casual_CaucasianLight_04_StudioCharacter.LC_M_Clubber_Casual_CaucasianLight_04_StudioCharacter",
+      "asset_class": "StaticMesh",
+      "validation": {
+        "class": "StaticMesh",
+        "source_build": "retail",
+        "note": "character-create wardrobe slot visual"
+      },
+      "status": "verified",
+      "updated": "2026-08-02T22:31:02.789849+00:00",
+      "uasset_path": "Content/Imported/Characters/Wardrobe/LC_M_Clubber_Casual_CaucasianLight_04_StudioCharacter.uasset",
+      "uasset_sha256": "60a106a77749a2e31d54a802bf9a90b146dc5f7c19bc63152a00b855108e155b",
+      "d17_evidence": [
+        {
+          "path": "work/evidence/character_create_batch/wardrobe_exact.json",
+          "sha256": "f076756cf171622772a76eae40eb2a3bb9cc5f190f4638b0a175403ded9d36bd",
+          "schema": "apb_character_create_v1",
+          "record_key": "retail:Character/LC/Baked/LC_M_Clubber_Casual_CaucasianLight_04.upk#LC_M_Clubber_Casual_CaucasianLight_04_StudioCharacter",
+          "fields": {
+            "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/LC/Baked/LC_M_Clubber_Casual_CaucasianLight_04.upk",
+            "source_sha256": "795393038d4c70d82d2a42e1ac6b9b273231076bc2667a95c96186bacf6e9bba",
+            "extractor": "tools/UEViewer/umodel_64.exe",
+            "extractor_args": [
+              "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+            ],
+            "conversion_settings": {
+              "converter": "umodel",
+              "format": "OBJ",
+              "normalize": false,
+              "source": "retail character package",
+              "ownership": "retail package name prefix-match + staged obj"
+            },
+            "destination": "/Game/Imported/Characters/Wardrobe/LC_M_Clubber_Casual_CaucasianLight_04_StudioCharacter.LC_M_Clubber_Casual_CaucasianLight_04_StudioCharacter",
+            "intermediate_path": "Content/Imported/Characters/Wardrobe/LC_M_Clubber_Casual_CaucasianLight_04_StudioCharacter.obj",
+            "intermediate_sha256": "39c70286f5a285093d1463ed6cd83990d27dc4b0e0b5c7ee8656ad638e3ac261",
+            "extracted_file": "Content/Imported/Characters/Wardrobe/LC_M_Clubber_Casual_CaucasianLight_04_StudioCharacter.obj",
+            "extracted_sha256": "39c70286f5a285093d1463ed6cd83990d27dc4b0e0b5c7ee8656ad638e3ac261"
+          }
+        }
+      ],
+      "verified_at": "2026-08-02T22:31:02.972001+00:00",
+      "verified_by": "tools/scripts/promote_verified_batch.py"
+    },
+    {
+      "asset_key": "retail:Character/LC/Baked/LC_M_Clubber_Casual_HispanicDark_04.upk#LC_M_Clubber_Casual_HispanicDark_04_StudioCharacter",
+      "source_build": "retail",
+      "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/LC/Baked/LC_M_Clubber_Casual_HispanicDark_04.upk",
+      "source_sha256": "dca8d6f58455cf6f67331c8bcfa7e813ca1de4b6ac000f89ed88b0f4b1110ce3",
+      "extractor": "tools/UEViewer/umodel_64.exe",
+      "extractor_args": [
+        "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+      ],
+      "intermediate_path": "Content/Imported/Characters/Wardrobe/LC_M_Clubber_Casual_HispanicDark_04_StudioCharacter.obj",
+      "intermediate_sha256": "3a3680a32f79034551355c070de9c202211776ec3e4723084c2f1e23d3965f6a",
+      "conversion_settings": {
+        "converter": "umodel",
+        "format": "OBJ",
+        "normalize": false,
+        "source": "retail character package",
+        "ownership": "retail package name prefix-match + staged obj"
+      },
+      "dest": "/Game/Imported/Characters/Wardrobe/LC_M_Clubber_Casual_HispanicDark_04_StudioCharacter.LC_M_Clubber_Casual_HispanicDark_04_StudioCharacter",
+      "asset_class": "StaticMesh",
+      "validation": {
+        "class": "StaticMesh",
+        "source_build": "retail",
+        "note": "character-create wardrobe slot visual"
+      },
+      "status": "verified",
+      "updated": "2026-08-02T22:31:02.797851+00:00",
+      "uasset_path": "Content/Imported/Characters/Wardrobe/LC_M_Clubber_Casual_HispanicDark_04_StudioCharacter.uasset",
+      "uasset_sha256": "d5cf35e72aef5808db351b62c5e6851717da0c0f90d21521c01877a98cae45bf",
+      "d17_evidence": [
+        {
+          "path": "work/evidence/character_create_batch/wardrobe_exact.json",
+          "sha256": "f076756cf171622772a76eae40eb2a3bb9cc5f190f4638b0a175403ded9d36bd",
+          "schema": "apb_character_create_v1",
+          "record_key": "retail:Character/LC/Baked/LC_M_Clubber_Casual_HispanicDark_04.upk#LC_M_Clubber_Casual_HispanicDark_04_StudioCharacter",
+          "fields": {
+            "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/LC/Baked/LC_M_Clubber_Casual_HispanicDark_04.upk",
+            "source_sha256": "dca8d6f58455cf6f67331c8bcfa7e813ca1de4b6ac000f89ed88b0f4b1110ce3",
+            "extractor": "tools/UEViewer/umodel_64.exe",
+            "extractor_args": [
+              "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+            ],
+            "conversion_settings": {
+              "converter": "umodel",
+              "format": "OBJ",
+              "normalize": false,
+              "source": "retail character package",
+              "ownership": "retail package name prefix-match + staged obj"
+            },
+            "destination": "/Game/Imported/Characters/Wardrobe/LC_M_Clubber_Casual_HispanicDark_04_StudioCharacter.LC_M_Clubber_Casual_HispanicDark_04_StudioCharacter",
+            "intermediate_path": "Content/Imported/Characters/Wardrobe/LC_M_Clubber_Casual_HispanicDark_04_StudioCharacter.obj",
+            "intermediate_sha256": "3a3680a32f79034551355c070de9c202211776ec3e4723084c2f1e23d3965f6a",
+            "extracted_file": "Content/Imported/Characters/Wardrobe/LC_M_Clubber_Casual_HispanicDark_04_StudioCharacter.obj",
+            "extracted_sha256": "3a3680a32f79034551355c070de9c202211776ec3e4723084c2f1e23d3965f6a"
+          }
+        }
+      ],
+      "verified_at": "2026-08-02T22:31:02.972001+00:00",
+      "verified_by": "tools/scripts/promote_verified_batch.py"
+    },
+    {
+      "asset_key": "retail:Character/LC/Baked/LC_M_Clubber_Casual_HispanicDark_06.upk#LC_M_Clubber_Casual_HispanicDark_06_StudioCharacter",
+      "source_build": "retail",
+      "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/LC/Baked/LC_M_Clubber_Casual_HispanicDark_06.upk",
+      "source_sha256": "5739a8507afcab7f86faaa956b1a60daaa7ae3dec500876ea2b20e56b9b95e7b",
+      "extractor": "tools/UEViewer/umodel_64.exe",
+      "extractor_args": [
+        "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+      ],
+      "intermediate_path": "Content/Imported/Characters/Wardrobe/LC_M_Clubber_Casual_HispanicDark_06_StudioCharacter.obj",
+      "intermediate_sha256": "f10fae18476c5815e759c934df2e53bd4ae6f0ab3efac3174a18d3b6c2aa8d3f",
+      "conversion_settings": {
+        "converter": "umodel",
+        "format": "OBJ",
+        "normalize": false,
+        "source": "retail character package",
+        "ownership": "retail package name prefix-match + staged obj"
+      },
+      "dest": "/Game/Imported/Characters/Wardrobe/LC_M_Clubber_Casual_HispanicDark_06_StudioCharacter.LC_M_Clubber_Casual_HispanicDark_06_StudioCharacter",
+      "asset_class": "StaticMesh",
+      "validation": {
+        "class": "StaticMesh",
+        "source_build": "retail",
+        "note": "character-create wardrobe slot visual"
+      },
+      "status": "verified",
+      "updated": "2026-08-02T22:31:02.805271+00:00",
+      "uasset_path": "Content/Imported/Characters/Wardrobe/LC_M_Clubber_Casual_HispanicDark_06_StudioCharacter.uasset",
+      "uasset_sha256": "ae1d0baf6a184db8874f6d1cfbe395929ce044db931f6c708ade02197f8fa348",
+      "d17_evidence": [
+        {
+          "path": "work/evidence/character_create_batch/wardrobe_exact.json",
+          "sha256": "f076756cf171622772a76eae40eb2a3bb9cc5f190f4638b0a175403ded9d36bd",
+          "schema": "apb_character_create_v1",
+          "record_key": "retail:Character/LC/Baked/LC_M_Clubber_Casual_HispanicDark_06.upk#LC_M_Clubber_Casual_HispanicDark_06_StudioCharacter",
+          "fields": {
+            "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/LC/Baked/LC_M_Clubber_Casual_HispanicDark_06.upk",
+            "source_sha256": "5739a8507afcab7f86faaa956b1a60daaa7ae3dec500876ea2b20e56b9b95e7b",
+            "extractor": "tools/UEViewer/umodel_64.exe",
+            "extractor_args": [
+              "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+            ],
+            "conversion_settings": {
+              "converter": "umodel",
+              "format": "OBJ",
+              "normalize": false,
+              "source": "retail character package",
+              "ownership": "retail package name prefix-match + staged obj"
+            },
+            "destination": "/Game/Imported/Characters/Wardrobe/LC_M_Clubber_Casual_HispanicDark_06_StudioCharacter.LC_M_Clubber_Casual_HispanicDark_06_StudioCharacter",
+            "intermediate_path": "Content/Imported/Characters/Wardrobe/LC_M_Clubber_Casual_HispanicDark_06_StudioCharacter.obj",
+            "intermediate_sha256": "f10fae18476c5815e759c934df2e53bd4ae6f0ab3efac3174a18d3b6c2aa8d3f",
+            "extracted_file": "Content/Imported/Characters/Wardrobe/LC_M_Clubber_Casual_HispanicDark_06_StudioCharacter.obj",
+            "extracted_sha256": "f10fae18476c5815e759c934df2e53bd4ae6f0ab3efac3174a18d3b6c2aa8d3f"
+          }
+        }
+      ],
+      "verified_at": "2026-08-02T22:31:02.972001+00:00",
+      "verified_by": "tools/scripts/promote_verified_batch.py"
+    },
+    {
+      "asset_key": "retail:MaterialDatabase/GenericDistrict/DisplayPoint_CharacterMesh.upk#MI_DisplyPoint_CharacterMesh",
+      "source_build": "retail",
+      "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericDistrict/DisplayPoint_CharacterMesh.upk",
+      "source_sha256": "cd4808dfef0aa6c30742755b55fac54ac20c13de7f3b8d1683503fe378f3e7b6",
+      "extractor": "tools/scripts/build_material_import_manifest.py",
+      "extractor_args": [
+        "see work/material_import_manifest.json"
+      ],
+      "intermediate_path": "Content/Extracted/MaterialDatabase/DisplayPoint_CharacterMesh/DisplayPoint_CharacterMesh/Texture2D/Statue_Norm.tga",
+      "intermediate_sha256": "283883fc16787ca001750026c06535cc5824c7251634ad440f9548a3101cf2cb",
+      "conversion_settings": {
+        "converter": "retail texture import",
+        "format": "TGA -> material instance",
+        "normalize": false,
+        "source": "retail material database",
+        "manifest": "work/material_import_manifest.json"
+      },
+      "dest": "/Game/Imported/MaterialDatabase/DisplayPoint_CharacterMesh/MI_DisplyPoint_CharacterMesh.MI_DisplyPoint_CharacterMesh",
+      "asset_class": "MaterialInstanceConstant",
+      "validation": {
+        "class": "MaterialInstanceConstant",
+        "source_build": "retail"
+      },
+      "status": "verified",
+      "updated": "2026-08-02T22:31:02.815281+00:00",
+      "uasset_path": "Content/Imported/MaterialDatabase/DisplayPoint_CharacterMesh/MI_DisplyPoint_CharacterMesh.uasset",
+      "uasset_sha256": "8343d59d48bd94f2a75a43385c7987c67c04787e8a36896401565e7aaa921797",
+      "d17_evidence": [
+        {
+          "path": "work/evidence/character_create_batch/material_exact.json",
+          "sha256": "1644c427bb088dd9f0c88e6f2b77e37ee514f536f83c9b313461d2f0831b095a",
+          "schema": "apb_character_create_v1",
+          "record_key": "retail:MaterialDatabase/GenericDistrict/DisplayPoint_CharacterMesh.upk#MI_DisplyPoint_CharacterMesh",
+          "fields": {
+            "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericDistrict/DisplayPoint_CharacterMesh.upk",
+            "source_sha256": "cd4808dfef0aa6c30742755b55fac54ac20c13de7f3b8d1683503fe378f3e7b6",
+            "extractor": "tools/scripts/build_material_import_manifest.py (documented pipeline)",
+            "extractor_args": [
+              "extract textures -> build material instance; see work/material_import_manifest.json"
+            ],
+            "conversion_settings": {
+              "converter": "retail texture import",
+              "format": "TGA -> material instance",
+              "normalize": false,
+              "source": "retail material database",
+              "manifest": "work/material_import_manifest.json"
+            },
+            "destination": "/Game/Imported/MaterialDatabase/DisplayPoint_CharacterMesh/MI_DisplyPoint_CharacterMesh.MI_DisplyPoint_CharacterMesh",
+            "intermediate_path": "Content/Extracted/MaterialDatabase/DisplayPoint_CharacterMesh/DisplayPoint_CharacterMesh/Texture2D/Statue_Norm.tga",
+            "intermediate_sha256": "283883fc16787ca001750026c06535cc5824c7251634ad440f9548a3101cf2cb",
+            "extracted_file": "Content/Extracted/MaterialDatabase/DisplayPoint_CharacterMesh/DisplayPoint_CharacterMesh/Texture2D/Statue_Norm.tga",
+            "extracted_sha256": "283883fc16787ca001750026c06535cc5824c7251634ad440f9548a3101cf2cb"
+          }
+        }
+      ],
+      "verified_at": "2026-08-02T22:31:02.972001+00:00",
       "verified_by": "tools/scripts/promote_verified_batch.py"
     }
   ]

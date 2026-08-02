@@ -1,0 +1,29 @@
+{
+  "schema": "apb_character_create_v1",
+  "batch": "character_create_material",
+  "generated_by": "tools/scripts/record_character_create_import.py",
+  "generated_at": "2026-08-02T22:31:02.830041+00:00",
+  "entries": [
+    {
+      "asset_key": "retail:MaterialDatabase/GenericDistrict/DisplayPoint_CharacterMesh.upk#MI_DisplyPoint_CharacterMesh",
+      "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericDistrict/DisplayPoint_CharacterMesh.upk",
+      "source_sha256": "cd4808dfef0aa6c30742755b55fac54ac20c13de7f3b8d1683503fe378f3e7b6",
+      "extractor": "tools/scripts/build_material_import_manifest.py (documented pipeline)",
+      "extractor_args": [
+        "extract textures -> build material instance; see work/material_import_manifest.json"
+      ],
+      "conversion_settings": {
+        "converter": "retail texture import",
+        "format": "TGA -> material instance",
+        "normalize": false,
+        "source": "retail material database",
+        "manifest": "work/material_import_manifest.json"
+      },
+      "intermediate_path": "Content/Extracted/MaterialDatabase/DisplayPoint_CharacterMesh/DisplayPoint_CharacterMesh/Texture2D/Statue_Norm.tga",
+      "intermediate_sha256": "283883fc16787ca001750026c06535cc5824c7251634ad440f9548a3101cf2cb",
+      "extracted_file": "Content/Extracted/MaterialDatabase/DisplayPoint_CharacterMesh/DisplayPoint_CharacterMesh/Texture2D/Statue_Norm.tga",
+      "extracted_sha256": "283883fc16787ca001750026c06535cc5824c7251634ad440f9548a3101cf2cb",
+      "destination": "/Game/Imported/MaterialDatabase/DisplayPoint_CharacterMesh/MI_DisplyPoint_CharacterMesh.MI_DisplyPoint_CharacterMesh"
+    }
+  ]
+}

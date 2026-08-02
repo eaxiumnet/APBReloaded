@@ -1759,14 +1759,45 @@ void UAPBSessionProbeSubsystem::RunFrontendRoutingProbe()
 		FPaths::ProjectContentDir() / TEXT("Movies/__not_allowlisted__.mp4"));
 	const bool bMediaReject = !Registry->IsMediaAllowed(MissingMedia, TEXT("frontend_routing_probe"), &Reason);
 
+	// Positive: the character-create base mesh (retail) is allowlisted and loads.
+	const FString CharMesh = TEXT("/Game/Imported/Characters/Contact_LaRocha/m_contact_enforcement_larocha.m_contact_enforcement_larocha");
+	const bool bCharMeshAllowed = Registry->IsAllowedWithSourceBuild(
+		CharMesh, UStaticMesh::StaticClass()->GetFName(), TEXT("retail"), &Reason);
+	const bool bCharMeshLoad = bCharMeshAllowed && Registry->LoadStaticMesh(
+		GetWorld(), CharMesh, TEXT("frontend_routing_probe"), TEXT("retail")) != nullptr;
+
+	// Positive: the character-create preview material (retail MIC) resolves.
+	const FString CharMat = TEXT("/Game/Imported/MaterialDatabase/DisplayPoint_CharacterMesh/MI_DisplyPoint_CharacterMesh.MI_DisplyPoint_CharacterMesh");
+	const bool bCharMatAllowed = Registry->IsAllowedWithSourceBuild(
+		CharMat, FName(TEXT("MaterialInstanceConstant")), TEXT("retail"), &Reason);
+	const bool bCharMatLoad = bCharMatAllowed && Registry->LoadMaterialInterface(
+		GetWorld(), CharMat, TEXT("frontend_routing_probe"), TEXT("retail")) != nullptr;
+
+	// Negative: the retail character mesh must reject a 2011 source request.
+	const bool bCharWrongSourceReject = !Registry->IsAllowedWithSourceBuild(
+		CharMesh, UStaticMesh::StaticClass()->GetFName(), TEXT("2011"), &Reason);
+
+	// Negative: an unlisted character path must reject without substitute.
+	const bool bCharUnlistedReject = !Registry->IsAllowedWithSourceBuild(
+		TEXT("/Game/Imported/Characters/Contact_Unlisted/Missing.Missing"),
+		UStaticMesh::StaticClass()->GetFName(), TEXT("retail"), &Reason);
+
 	AppendLog(bTexAllowed ? TEXT("FRONTEND_ROUTING_TEXTURE_ALLOWED_OK") : TEXT("FRONTEND_ROUTING_TEXTURE_ALLOWED_FAIL"));
 	AppendLog(bTexLoad ? TEXT("FRONTEND_ROUTING_TEXTURE_LOAD_OK") : TEXT("FRONTEND_ROUTING_TEXTURE_LOAD_FAIL"));
 	AppendLog(bSfxLoad ? TEXT("FRONTEND_ROUTING_SFX_LOAD_OK") : TEXT("FRONTEND_ROUTING_SFX_LOAD_FAIL"));
 	AppendLog(bMediaAllow ? TEXT("FRONTEND_ROUTING_MEDIA_ALLOW_OK") : TEXT("FRONTEND_ROUTING_MEDIA_ALLOW_FAIL"));
 	AppendLog(bWrongSourceReject ? TEXT("FRONTEND_ROUTING_WRONG_SOURCE_REJECT_OK") : TEXT("FRONTEND_ROUTING_WRONG_SOURCE_REJECT_FAIL"));
 	AppendLog(bMediaReject ? TEXT("FRONTEND_ROUTING_MEDIA_REJECT_OK") : TEXT("FRONTEND_ROUTING_MEDIA_REJECT_FAIL"));
+	AppendLog(bCharMeshAllowed ? TEXT("FRONTEND_ROUTING_CHAR_MESH_ALLOWED_OK") : TEXT("FRONTEND_ROUTING_CHAR_MESH_ALLOWED_FAIL"));
+	AppendLog(bCharMeshLoad ? TEXT("FRONTEND_ROUTING_CHAR_MESH_LOAD_OK") : TEXT("FRONTEND_ROUTING_CHAR_MESH_LOAD_FAIL"));
+	AppendLog(bCharMatAllowed ? TEXT("FRONTEND_ROUTING_CHAR_MATERIAL_ALLOWED_OK") : TEXT("FRONTEND_ROUTING_CHAR_MATERIAL_ALLOWED_FAIL"));
+	AppendLog(bCharMatLoad ? TEXT("FRONTEND_ROUTING_CHAR_MATERIAL_LOAD_OK") : TEXT("FRONTEND_ROUTING_CHAR_MATERIAL_LOAD_FAIL"));
+	AppendLog(bCharWrongSourceReject ? TEXT("FRONTEND_ROUTING_CHAR_WRONG_SOURCE_REJECT_OK") : TEXT("FRONTEND_ROUTING_CHAR_WRONG_SOURCE_REJECT_FAIL"));
+	AppendLog(bCharUnlistedReject ? TEXT("FRONTEND_ROUTING_CHAR_UNLISTED_REJECT_OK") : TEXT("FRONTEND_ROUTING_CHAR_UNLISTED_REJECT_FAIL"));
 
-	const bool bPass = bTexAllowed && bTexLoad && bSfxLoad && bMediaAllow && bWrongSourceReject && bMediaReject;
+	const bool bPass = bTexAllowed && bTexLoad && bSfxLoad && bMediaAllow && bWrongSourceReject && bMediaReject
+		&& bCharMeshAllowed && bCharMeshLoad && bCharMatAllowed && bCharMatLoad
+		&& bCharWrongSourceReject && bCharUnlistedReject;
 	AppendLog(bPass ? TEXT("FRONTEND_RUNTIME_ROUTING_PASS") : TEXT("FRONTEND_RUNTIME_ROUTING_FAIL"));
 
 	bTerminal = true;

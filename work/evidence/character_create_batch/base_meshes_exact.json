@@ -1,0 +1,71 @@
+{
+  "schema": "apb_character_create_v1",
+  "batch": "character_create_base_meshes",
+  "generated_by": "tools/scripts/record_character_create_import.py",
+  "generated_at": "2026-08-02T22:31:02.815281+00:00",
+  "entries": [
+    {
+      "asset_key": "retail:Character/Contact/Contact_LaRocha.upk#m_contact_enforcement_larocha",
+      "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/Contact/Contact_LaRocha.upk",
+      "source_sha256": "601f692685b7a799d19b228f91885e7c09d057e9c01074588307cb902ba279be",
+      "extractor": "tools/UEViewer/umodel_64.exe",
+      "extractor_args": [
+        "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+      ],
+      "conversion_settings": {
+        "converter": "umodel",
+        "format": "OBJ",
+        "normalize": false,
+        "source": "retail character package",
+        "ownership": "model_reference_catalog name hints"
+      },
+      "intermediate_path": "Content/Imported/Characters/Contact_LaRocha/m_contact_enforcement_larocha.obj",
+      "intermediate_sha256": "ec707fd62b0410c55242d230d2dbbbda2c057b3c67339d6c48d5a94479508022",
+      "extracted_file": "Content/Imported/Characters/Contact_LaRocha/m_contact_enforcement_larocha.obj",
+      "extracted_sha256": "ec707fd62b0410c55242d230d2dbbbda2c057b3c67339d6c48d5a94479508022",
+      "destination": "/Game/Imported/Characters/Contact_LaRocha/m_contact_enforcement_larocha.m_contact_enforcement_larocha"
+    },
+    {
+      "asset_key": "retail:Character/Contact/Contact_Bloodrose.upk#F_Contact_Criminal_Bloodrose",
+      "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/Contact/Contact_Bloodrose.upk",
+      "source_sha256": "9c56601715d0f5989dd7f489fddd339a459aab60099b9e6305279d6c508b7df7",
+      "extractor": "tools/UEViewer/umodel_64.exe",
+      "extractor_args": [
+        "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+      ],
+      "conversion_settings": {
+        "converter": "umodel",
+        "format": "OBJ",
+        "normalize": false,
+        "source": "retail character package",
+        "ownership": "model_reference_catalog name hints"
+      },
+      "intermediate_path": "Content/Imported/Characters/Contact_Bloodrose/F_Contact_Criminal_Bloodrose.obj",
+      "intermediate_sha256": "bfafb10379d7dd26954c3d43eb95fc84fb2ce8b5a4885e156bb0c2f41af9b3b2",
+      "extracted_file": "Content/Imported/Characters/Contact_Bloodrose/F_Contact_Criminal_Bloodrose.obj",
+      "extracted_sha256": "bfafb10379d7dd26954c3d43eb95fc84fb2ce8b5a4885e156bb0c2f41af9b3b2",
+      "destination": "/Game/Imported/Characters/Contact_Bloodrose/F_Contact_Criminal_Bloodrose.F_Contact_Criminal_Bloodrose"
+    },
+    {
+      "asset_key": "retail:Character/Contact/Contact_Sofia.upk#F_Contact_Enforcement_Sofia",
+      "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/Character/Contact/Contact_Sofia.upk",
+      "source_sha256": "ff379471ba2c42d5540b0659b0f818b92f80a5957c42602b056719c4785728a1",
+      "extractor": "tools/UEViewer/umodel_64.exe",
+      "extractor_args": [
+        "umodel -obj export of character mesh; legacy payload extraction settings not retained"
+      ],
+      "conversion_settings": {
+        "converter": "umodel",
+        "format": "OBJ",
+        "normalize": false,
+        "source": "retail character package",
+        "ownership": "model_reference_catalog name hints"
+      },
+      "intermediate_path": "Content/Imported/Characters/Contact_Sofia/F_Contact_Enforcement_Sofia.obj",
+      "intermediate_sha256": "ad430cc8aa4e45f0205b060a5efb320ddd4eaafc7360f20c7fd5ddbae543a566",
+      "extracted_file": "Content/Imported/Characters/Contact_Sofia/F_Contact_Enforcement_Sofia.obj",
+      "extracted_sha256": "ad430cc8aa4e45f0205b060a5efb320ddd4eaafc7360f20c7fd5ddbae543a566",
+      "destination": "/Game/Imported/Characters/Contact_Sofia/F_Contact_Enforcement_Sofia.F_Contact_Enforcement_Sofia"
+    }
+  ]
+}
