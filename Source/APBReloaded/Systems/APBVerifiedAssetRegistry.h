@@ -40,4 +40,5 @@ private:
 	FString ManifestPath;
 	bool bManifestLoaded = false;
 	bool bStrictEnforcement = false;
+	bool bManifestOverride = false;
 };

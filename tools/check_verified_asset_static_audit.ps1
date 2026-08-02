@@ -42,7 +42,7 @@ $UnroutedRows = @($Rows | Where-Object { $AllowedPaths -notcontains $_.path })
 $PlacementText = Get-Content -LiteralPath $PlacementPath -Raw
 $RegistryText = Get-Content -LiteralPath $RegistryPath -Raw
 $RegistryOwnerOk = $RegistryText -match '\bLoadObject<[^>]+>\s*\(' -and $RegistryText -match 'UAPBVerifiedAssetRegistry::LoadStaticMesh'
-$PlacementRouteOk = $PlacementText -match 'GetSubsystem<UAPBVerifiedAssetRegistry>' -and $PlacementText -match 'Registry->LoadStaticMesh'
+$PlacementRouteOk = $PlacementText -match 'UAPBVerifiedDistrictAssetRouting::RoutePlacementMesh' -and $PlacementText -match 'APBVerifiedDistrictAssetRouting.h'
 if (-not $RegistryOwnerOk) { throw 'VERIFIED_ASSET_STATIC_AUDIT_FAIL reason=registry_owner_missing' }
 if (-not $PlacementRouteOk) { throw 'VERIFIED_ASSET_STATIC_AUDIT_FAIL reason=placement_registry_route_missing' }
 
@@ -54,6 +54,7 @@ $Document = [ordered]@{
     allowed_paths = $AllowedPaths
     registry_owner = $true
     placement_registry_route = $true
+    routing_layer = 'UAPBVerifiedDistrictAssetRouting'
     unrouted_load_count = $UnroutedRows.Count
     loads = @($Rows)
 }

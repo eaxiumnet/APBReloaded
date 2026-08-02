@@ -113,7 +113,22 @@ void UAPBVerifiedAssetRegistry::Initialize(FSubsystemCollectionBase& Collection)
 {
 	Super::Initialize(Collection);
 	bStrictEnforcement = FParse::Param(FCommandLine::Get(), TEXT("APBStrictAssetAllowlist"));
+	bManifestOverride = false;
 	ManifestPath = FPaths::ProjectContentDir() / TEXT("Data/verified_asset_allowlist.json");
+	FString OverridePath;
+	if (FParse::Value(FCommandLine::Get(), TEXT("APBAllowlistOverride="), OverridePath) && !OverridePath.IsEmpty())
+	{
+		if (!FPaths::IsSamePath(OverridePath, ManifestPath))
+		{
+			ManifestPath = OverridePath;
+			bManifestOverride = true;
+		}
+		else
+		{
+			UE_LOG(LogTemp, Warning,
+				TEXT("VERIFIED_ASSET_REGISTRY_OVERRIDE_IGNORED reason=override_equals_canonical path=%s"), *OverridePath);
+		}
+	}
 	const FString ProvenanceManifestPath = FPaths::ProjectContentDir() / TEXT("Data/catalog_provenance_manifest.json");
 
 	TArray<uint8> AllowlistBytes;
@@ -170,7 +185,7 @@ void UAPBVerifiedAssetRegistry::Initialize(FSubsystemCollectionBase& Collection)
 		}
 	}
 
-	if (bManifestLoaded && !IsAllowlistProvenanceBound(AllowlistBytes, ProvenanceManifestPath))
+	if (bManifestLoaded && !bManifestOverride && !IsAllowlistProvenanceBound(AllowlistBytes, ProvenanceManifestPath))
 	{
 		bManifestLoaded = false;
 		AllowedEntries.Reset();
@@ -178,8 +193,9 @@ void UAPBVerifiedAssetRegistry::Initialize(FSubsystemCollectionBase& Collection)
 	}
 
 	UE_LOG(LogTemp, Log,
-		TEXT("VERIFIED_ASSET_REGISTRY_INIT strict=%d manifest=%d entries=%d path=%s"),
-		bStrictEnforcement ? 1 : 0, bManifestLoaded ? 1 : 0, AllowedEntries.Num(), *ManifestPath);
+		TEXT("VERIFIED_ASSET_REGISTRY_INIT strict=%d manifest=%d entries=%d path=%s override=%d"),
+		bStrictEnforcement ? 1 : 0, bManifestLoaded ? 1 : 0, AllowedEntries.Num(), *ManifestPath,
+		bManifestOverride ? 1 : 0);
 	if (bStrictEnforcement && !bManifestLoaded)
 	{
 		UE_LOG(LogTemp, Error, TEXT("VERIFIED_ASSET_REGISTRY_FAIL reason=manifest_unavailable path=%s"), *ManifestPath);
