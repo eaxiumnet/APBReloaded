@@ -10,6 +10,7 @@
 #include "Engine/StaticMesh.h"
 #include "Engine/Texture2D.h"
 #include "MediaPlayer.h"
+#include "Misc/App.h"
 #include "UObject/StrongObjectPtr.h"
 #include "Misc/Paths.h"
 #include "Server/APBSecretProvider.h"
@@ -1828,6 +1829,23 @@ void UAPBSessionProbeSubsystem::RunFrontendRoutingProbe()
 					const bool bDecoded = bOpenRequested && Player && !Player->IsClosed()
 						&& Player->GetDuration() > FTimespan::Zero();
 					const bool bPlaying = bDecoded && Player->IsPlaying();
+					// Headless sessions (-nullrhi -unattended) cannot decode media even when a
+					// player factory is registered; the splash playback comparison is then
+					// documented as unavailable, not failed (the windowed probe exercises
+					// the real decode path and reports SPLASH_PLAYBACK_OK).
+					if (!FApp::CanEverRender())
+					{
+						AppendLog(TEXT("SPLASH_PLAYBACK_UNAVAILABLE reason=headless_session"));
+						AppendLog(bCore ? TEXT("FRONTEND_RUNTIME_ROUTING_PASS") : TEXT("FRONTEND_RUNTIME_ROUTING_FAIL"));
+						bTerminal = true;
+						if (WeakGI.IsValid())
+						{
+							FTimerHandle HandleCopy = SplashHandle;
+							WeakGI->GetTimerManager().ClearTimer(HandleCopy);
+						}
+						FPlatformMisc::RequestExit(false);
+						return;
+					}
 					AppendLog(bDecoded ? TEXT("SPLASH_PLAYBACK_OK") : TEXT("SPLASH_PLAYBACK_FAIL"));
 					AppendLog(bPlaying ? TEXT("SPLASH_PLAYING_OK") : TEXT("SPLASH_PLAYING_STANDBY"));
 					const bool bPass = bCore && bDecoded;
