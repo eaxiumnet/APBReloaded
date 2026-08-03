@@ -1,0 +1,114 @@
+===== WORLD CHAT =====
+LogCsvProfiler: Display: Metadata set : commandline="" D:\APBReloaded\APBReloaded.uproject /Game/Maps/Lvl_APB_Frontend?listen?game=/Script/APBReloaded.APBWorldGameMode -game -WorldServer -Port=17778 -RelayPort=17800 -nullrhi -nosound -unattended -AbsLog=D:\APBReloaded\.omo\evidence\chat_fix_v3\world.log""
+LogInit: Command Line: /Game/Maps/Lvl_APB_Frontend?listen?game=/Script/APBReloaded.APBWorldGameMode -game -WorldServer -Port=17778 -RelayPort=17800 -nullrhi -nosound -unattended -AbsLog=D:\APBReloaded\.omo\evidence\chat_fix_v3\world.log
+[2026.08.03-10.48.32:154][  0]LogTemp: RELAY_LISTEN port=17800
+[2026.08.03-10.48.32:462][  0]LogTemp: RELAY_ACCEPT peer=127.0.0.1:57660
+[2026.08.03-10.48.32:484][  0]LogTemp: RELAY_REGISTER district=Social numeric_id=9 ok=1 port=17819 reason=none
+[2026.08.03-10.48.35:884][ 13]LogTemp: RELAY_ACCEPT peer=127.0.0.1:57661
+[2026.08.03-10.48.35:905][ 13]LogTemp: RELAY_REGISTER district=Financial numeric_id=1 ok=1 port=17811 reason=none
+[2026.08.03-10.48.38:625][150]LogTemp: Warning: SERVER_LOGIN_REQUEST_RECEIVED user=chat_alice
+[2026.08.03-10.48.39:194][184]LogTemp: SOCIAL_DIRECT_BIND character=ChatAlice account=chat_alice faction=Enforcer
+[2026.08.03-10.48.39:375][195]LogTemp: CHAR_HANDOFF_SENT account=ACC-chat_alice jti=c7451889e50b9792df5c51f874aca1f4 nonce=97d9458711b082157e264a344d346bfd faction=Enforcer cash=10000 g1c=5000 threat=0.0 inv=1 mission= session=DS-Financial-1 progress=0
+[2026.08.03-10.48.40:475][261]LogTemp: Warning: SERVER_LOGIN_REQUEST_RECEIVED user=chat_bob
+[2026.08.03-10.48.41:061][296]LogTemp: SOCIAL_DIRECT_BIND character=ChatBob account=chat_bob faction=Enforcer
+[2026.08.03-10.48.41:226][306]LogTemp: CHAR_HANDOFF_SENT account=ACC-chat_bob jti=ca132e02ccaf842f94f17968df651dfb nonce=f2fb5eec19b3aa4eb9184068a72030d4 faction=Enforcer cash=10000 g1c=5000 threat=0.0 inv=1 mission= session=DS-Financial-1 progress=0
+[2026.08.03-10.48.45:593][568]LogTemp: CHAR_HANDOFF_ADMITTED account=ACC-chat_bob jti=ca132e02ccaf842f94f17968df651dfb
+[2026.08.03-10.48.45:627][570]LogTemp: CHAR_HANDOFF_ADMITTED account=ACC-chat_alice jti=c7451889e50b9792df5c51f874aca1f4
+[2026.08.03-10.48.57:975][295]LogTemp: Warning: SERVER_LOGIN_REQUEST_RECEIVED user=chat_bob
+[2026.08.03-10.48.58:526][328]LogTemp: SOCIAL_DIRECT_BIND character=ChatBob account=chat_bob faction=Enforcer
+[2026.08.03-10.48.58:725][340]LogTemp: CHAR_HANDOFF_SENT account=ACC-chat_bob jti=75068983f86421b235a70e1ae1371992 nonce=44ed915a161d4ac956e83328cc10d4fb faction=Enforcer cash=10000 g1c=5000 threat=0.0 inv=1 mission= session=DS-Social-1 progress=0
+[2026.08.03-10.48.59:109][363]LogTemp: CHAR_HANDOFF_ADMITTED account=ACC-chat_bob jti=75068983f86421b235a70e1ae1371992
+[2026.08.03-10.49.26:805][684]LogTemp: CHAR_RETURN_APPLIED account=ACC-chat_bob cash=10000 threat=0.0
+[2026.08.03-10.49.27:277][692]LogTemp: CHAR_RETURN_APPLIED account=ACC-chat_alice cash=10000 threat=0.0
+===== FINANCIAL CHAT =====
+LogCsvProfiler: Display: Metadata set : commandline="" D:\APBReloaded\APBReloaded.uproject /Game/Maps/Lvl_APB_Financial_Freeroam?listen?MaxPlayers=64?game=/Script/APBReloaded.APBFreeroamGameMode -game -Port=17811 -RelayHost=127.0.0.1 -RelayPort=17800 -DistrictId=Financial -NumericId=1 -RequireTicket -nullrhi -nosound -unattended -AbsLog=D:\APBReloaded\.omo\evidence\chat_fix_v3\financial.log""
+LogInit: Command Line: /Game/Maps/Lvl_APB_Financial_Freeroam?listen?MaxPlayers=64?game=/Script/APBReloaded.APBFreeroamGameMode -game -Port=17811 -RelayHost=127.0.0.1 -RelayPort=17800 -DistrictId=Financial -NumericId=1 -RequireTicket -nullrhi -nosound -unattended -AbsLog=D:\APBReloaded\.omo\evidence\chat_fix_v3\financial.log
+[2026.08.03-10.48.35:877][  0]LogTemp: RELAY_CLIENT_CONNECT host=127.0.0.1 port=17800
+[2026.08.03-10.48.35:908][  0]LogTemp: RELAY_CLIENT_REGISTERED district=Financial numeric_id=1
+[2026.08.03-10.48.40:891][  0]LogTemp: RELAY_CLIENT_HEARTBEAT seq=1
+[2026.08.03-10.48.45:524][  1]LogTemp: APB PreLogin ticket ok account=ACC-chat_bob char=ChatBob district=Financial jti=ca132e02ccaf842f94f17968df651dfb
+[2026.08.03-10.48.45:524][  1]LogTemp: DISTRICT_TICKET_OK account=ACC-chat_bob char=ChatBob district=Financial jti=ca132e02ccaf842f94f17968df651dfb
+[2026.08.03-10.48.45:562][  3]LogTemp: APB PreLogin ticket ok account=ACC-chat_alice char=ChatAlice district=Financial jti=c7451889e50b9792df5c51f874aca1f4
+[2026.08.03-10.48.45:562][  3]LogTemp: DISTRICT_TICKET_OK account=ACC-chat_alice char=ChatAlice district=Financial jti=c7451889e50b9792df5c51f874aca1f4
+[2026.08.03-10.48.45:566][  3]LogTemp: CHAR_HANDOFF_APPLIED account=ACC-chat_bob faction=Enforcer cash=10000 threat=0.0
+[2026.08.03-10.48.45:566][  3]LogTemp: DISTRICT_TICKET_ADMITTED account=ACC-chat_bob char=ChatBob faction=Enforcer
+[2026.08.03-10.48.45:615][  6]LogTemp: CHAR_HANDOFF_APPLIED account=ACC-chat_alice faction=Enforcer cash=10000 threat=0.0
+[2026.08.03-10.48.45:616][  6]LogTemp: DISTRICT_TICKET_ADMITTED account=ACC-chat_alice char=ChatAlice faction=Enforcer
+[2026.08.03-10.48.45:894][ 23]LogTemp: RELAY_CLIENT_HEARTBEAT seq=2
+[2026.08.03-10.48.50:878][322]LogTemp: CHAT_DELIVERED channel=District from=ChatAlice to=ChatBob
+[2026.08.03-10.48.50:878][322]LogTemp: CHAT_DELIVERED channel=District from=ChatAlice to=ChatAlice
+[2026.08.03-10.48.50:897][323]LogTemp: RELAY_CLIENT_HEARTBEAT seq=3
+[2026.08.03-10.48.55:899][624]LogTemp: RELAY_CLIENT_HEARTBEAT seq=4
+[2026.08.03-10.48.55:979][628]LogTemp: CHAR_RETURN_SENT account=ACC-chat_bob nonce=fc35c9165cac24ee73aa6a02e66b79ea
+[2026.08.03-10.49.00:901][924]LogTemp: RELAY_CLIENT_HEARTBEAT seq=5
+[2026.08.03-10.49.05:908][196]LogTemp: RELAY_CLIENT_HEARTBEAT seq=6
+[2026.08.03-10.49.10:911][435]LogTemp: RELAY_CLIENT_HEARTBEAT seq=7
+[2026.08.03-10.49.11:888][482]LogTemp: CHAT_RELAY_FORWARD to=ChatBob
+[2026.08.03-10.49.15:921][677]LogTemp: RELAY_CLIENT_HEARTBEAT seq=8
+[2026.08.03-10.49.20:930][916]LogTemp: RELAY_CLIENT_HEARTBEAT seq=9
+[2026.08.03-10.49.25:887][151]LogTemp: CHAT_DELIVERED channel=District from=ChatAlice to=ChatAlice
+[2026.08.03-10.49.25:887][151]LogTemp: CHAT_DELIVERED channel=District from=ChatAlice to=ChatAlice
+[2026.08.03-10.49.25:887][151]LogTemp: CHAT_DELIVERED channel=District from=ChatAlice to=ChatAlice
+[2026.08.03-10.49.25:887][151]LogTemp: CHAT_DELIVERED channel=District from=ChatAlice to=ChatAlice
+[2026.08.03-10.49.25:887][151]LogTemp: CHAT_DELIVERED channel=District from=ChatAlice to=ChatAlice
+[2026.08.03-10.49.25:887][151]LogTemp: CHAT_DELIVERED channel=District from=ChatAlice to=ChatAlice
+[2026.08.03-10.49.25:887][151]LogTemp: CHAT_DELIVERED channel=District from=ChatAlice to=ChatAlice
+[2026.08.03-10.49.25:887][151]LogTemp: CHAT_DELIVERED channel=District from=ChatAlice to=ChatAlice
+[2026.08.03-10.49.25:887][151]LogTemp: Warning: CHAT_DENIED reason=Muted
+[2026.08.03-10.49.25:934][154]LogTemp: RELAY_CLIENT_HEARTBEAT seq=10
+[2026.08.03-10.49.26:908][200]LogTemp: CHAR_RETURN_SENT account=ACC-chat_alice nonce=bb00b85277c9f9ec217334d033d44024
+===== SOCIAL CHAT =====
+LogCsvProfiler: Display: Metadata set : commandline="" D:\APBReloaded\APBReloaded.uproject /Game/Maps/Lvl_APB_Social_Freeroam?listen?MaxPlayers=64?game=/Script/APBReloaded.APBFreeroamGameMode -game -Port=17819 -RelayHost=127.0.0.1 -RelayPort=17800 -DistrictId=Social -NumericId=9 -RequireTicket -nullrhi -nosound -unattended -AbsLog=D:\APBReloaded\.omo\evidence\chat_fix_v3\social.log""
+LogInit: Command Line: /Game/Maps/Lvl_APB_Social_Freeroam?listen?MaxPlayers=64?game=/Script/APBReloaded.APBFreeroamGameMode -game -Port=17819 -RelayHost=127.0.0.1 -RelayPort=17800 -DistrictId=Social -NumericId=9 -RequireTicket -nullrhi -nosound -unattended -AbsLog=D:\APBReloaded\.omo\evidence\chat_fix_v3\social.log
+[2026.08.03-10.48.32:454][  0]LogTemp: RELAY_CLIENT_CONNECT host=127.0.0.1 port=17800
+[2026.08.03-10.48.32:487][  0]LogTemp: RELAY_CLIENT_REGISTERED district=Social numeric_id=9
+[2026.08.03-10.48.37:469][ 37]LogTemp: RELAY_CLIENT_HEARTBEAT seq=1
+[2026.08.03-10.48.42:471][337]LogTemp: RELAY_CLIENT_HEARTBEAT seq=2
+[2026.08.03-10.48.47:472][637]LogTemp: RELAY_CLIENT_HEARTBEAT seq=3
+[2026.08.03-10.48.52:476][937]LogTemp: RELAY_CLIENT_HEARTBEAT seq=4
+[2026.08.03-10.48.57:479][237]LogTemp: RELAY_CLIENT_HEARTBEAT seq=5
+[2026.08.03-10.48.59:047][331]LogTemp: APB PreLogin ticket ok account=ACC-chat_bob char=ChatBob district=Social jti=75068983f86421b235a70e1ae1371992
+[2026.08.03-10.48.59:047][331]LogTemp: DISTRICT_TICKET_OK account=ACC-chat_bob char=ChatBob district=Social jti=75068983f86421b235a70e1ae1371992
+[2026.08.03-10.48.59:083][333]LogTemp: CHAR_HANDOFF_APPLIED account=ACC-chat_bob faction=Enforcer cash=10000 threat=0.0
+[2026.08.03-10.48.59:084][333]LogTemp: DISTRICT_TICKET_ADMITTED account=ACC-chat_bob char=ChatBob faction=Enforcer
+[2026.08.03-10.49.02:482][538]LogTemp: RELAY_CLIENT_HEARTBEAT seq=6
+[2026.08.03-10.49.07:488][790]LogTemp: RELAY_CLIENT_HEARTBEAT seq=7
+[2026.08.03-10.49.11:948][  4]LogTemp: RELAY_CLIENT_CHAT_RECEIVED from=ChatAlice
+[2026.08.03-10.49.11:948][  4]LogTemp: CHAT_DELIVERED channel=Whisper from=ChatAlice to=ChatBob
+[2026.08.03-10.49.12:492][ 31]LogTemp: RELAY_CLIENT_HEARTBEAT seq=8
+[2026.08.03-10.49.17:500][271]LogTemp: RELAY_CLIENT_HEARTBEAT seq=9
+[2026.08.03-10.49.22:512][513]LogTemp: RELAY_CLIENT_HEARTBEAT seq=10
+[2026.08.03-10.49.26:430][701]LogTemp: CHAR_RETURN_SENT account=ACC-chat_bob nonce=cfdd7480015c17dd29e576e25d1119af
+===== ALICE CHAT =====
+LogCsvProfiler: Display: Metadata set : commandline="" D:\APBReloaded\APBReloaded.uproject 127.0.0.1:17778 -game -WorldServerHost=127.0.0.1 -APBProbe=world_chat_client -WSClientId=alice -APBChatCharacter=ChatAlice -APBChatDistrict=Financial -WorldPort=17778 -ExecCmds="APBChat 5000 /d m7_in_district,APBChat 26000 /w ChatBob m7_cross_district,APBChat 40000 /d flood_1,APBChat 40000 /d flood_2,APBChat 40000 /d flood_3,APBChat 40000 /d flood_4,APBChat 40000 /d flood_5,APBChat 40000 /d flood_6,APBChat 40000 /d flood_7,APBChat 40000 /d flood_8,APBChat 40000 /d flood_9" -nullrhi -nosound -unattended -AbsLog=D:\APBReloaded\.omo\evidence\chat_fix_v3\alice.log -APBScratch=D:/APBReloaded/.omo/evidence/chat_fix_v3""
+LogInit: Command Line: 127.0.0.1:17778 -game -WorldServerHost=127.0.0.1 -APBProbe=world_chat_client -WSClientId=alice -APBChatCharacter=ChatAlice -APBChatDistrict=Financial -WorldPort=17778 -ExecCmds="APBChat 5000 /d m7_in_district,APBChat 26000 /w ChatBob m7_cross_district,APBChat 40000 /d flood_1,APBChat 40000 /d flood_2,APBChat 40000 /d flood_3,APBChat 40000 /d flood_4,APBChat 40000 /d flood_5,APBChat 40000 /d flood_6,APBChat 40000 /d flood_7,APBChat 40000 /d flood_8,APBChat 40000 /d flood_9" -nullrhi -nosound -unattended -AbsLog=D:\APBReloaded\.omo\evidence\chat_fix_v3\alice.log -APBScratch=D:/APBReloaded/.omo/evidence/chat_fix_v3
+[2026.08.03-10.48.31:611][  0]LogTemp: APBProbe PROBE_START mode=world_chat_client scratch=D:/APBReloaded/.omo/evidence/chat_fix_v3/
+[2026.08.03-10.48.31:611][  0]LogTemp: APBProbe PROBE_TIMER world_chat_client id=alice character=ChatAlice district=Financial
+[2026.08.03-10.48.38:369][168]LogTemp: APBProbe CHAT_CLIENT_ENCRYPTION_ENABLED
+[2026.08.03-10.48.38:619][183]LogTemp: APBProbe CHAT_CLIENT_LOGIN id=alice
+[2026.08.03-10.48.39:370][228]LogTemp: APBProbe CHAT_CLIENT_TICKET_REQUEST char=ChatAlice district=Financial
+[2026.08.03-10.48.39:620][243]LogTemp: APBProbe CHAT_CLIENT_TRAVEL char=ChatAlice district=Financial
+[2026.08.03-10.48.45:614][602]LogTemp: APBProbe CHAT_CLIENT_ENCRYPTION_ENABLED
+[2026.08.03-10.48.45:863][617]LogTemp: APBProbe CHAT_CLIENT_ARRIVED char=ChatAlice district=Financial
+[2026.08.03-10.48.45:864][617]LogTemp: APBProbe CHAT_CLIENT_COMMANDS_ARMED count=11
+[2026.08.03-10.48.50:864][917]LogTemp: APBProbe CHAT_CLIENT_SUBMIT raw=/d m7_in_district
+[2026.08.03-10.48.50:897][919]LogTemp: CHAT_RECEIVED channel=District from=ChatAlice to=ChatAlice body=m7_in_district
+[2026.08.03-10.49.11:873][ 66]LogTemp: APBProbe CHAT_CLIENT_SUBMIT raw=/w ChatBob m7_cross_district
+[2026.08.03-10.49.25:874][709]LogTemp: APBProbe CHAT_CLIENT_SUBMIT raw=/d flood_8
+[2026.08.03-10.49.25:874][709]LogTemp: APBProbe CHAT_CLIENT_SUBMIT raw=/d flood_1
+[2026.08.03-10.49.25:875][709]LogTemp: APBProbe CHAT_CLIENT_SUBMIT raw=/d flood_4
+[2026.08.03-10.49.25:875][709]LogTemp: APBProbe CHAT_CLIENT_SUBMIT raw=/d flood_3
+[2026.08.03-10.49.25:875][709]LogTemp: APBProbe CHAT_CLIENT_SUBMIT raw=/d flood_2
+[2026.08.03-10.49.25:875][709]LogTemp: APBProbe CHAT_CLIENT_SUBMIT raw=/d flood_6
+[2026.08.03-10.49.25:875][709]LogTemp: APBProbe CHAT_CLIENT_SUBMIT raw=/d flood_5
+[2026.08.03-10.49.25:875][709]LogTemp: APBProbe CHAT_CLIENT_SUBMIT raw=/d flood_7
+[2026.08.03-10.49.25:876][709]LogTemp: APBProbe CHAT_CLIENT_SUBMIT raw=/d flood_9
+[2026.08.03-10.49.25:903][710]LogTemp: CHAT_RECEIVED channel=District from=ChatAlice to=ChatAlice body=flood_8
+[2026.08.03-10.49.25:903][710]LogTemp: CHAT_RECEIVED channel=District from=ChatAlice to=ChatAlice body=flood_1
+[2026.08.03-10.49.25:903][710]LogTemp: CHAT_RECEIVED channel=District from=ChatAlice to=ChatAlice body=flood_4
+[2026.08.03-10.49.25:903][710]LogTemp: CHAT_RECEIVED channel=District from=ChatAlice to=ChatAlice body=flood_3
+[2026.08.03-10.49.25:903][710]LogTemp: CHAT_RECEIVED channel=District from=ChatAlice to=ChatAlice body=flood_2
+[2026.08.03-10.49.25:903][710]LogTemp: CHAT_RECEIVED channel=District from=ChatAlice to=ChatAlice body=flood_6
+[2026.08.03-10.49.25:903][710]LogTemp: CHAT_RECEIVED channel=District from=ChatAlice to=ChatAlice body=flood_5
+[2026.08.03-10.49.25:903][710]LogTemp: CHAT_RECEIVED channel=District from=ChatAlice to=ChatAlice body=flood_7
+CHAT_GATE_OK

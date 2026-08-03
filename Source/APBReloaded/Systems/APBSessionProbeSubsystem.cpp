@@ -2388,6 +2388,38 @@ void UAPBSessionProbeSubsystem::RunWorldChatClientProbe()
 	{
 		return;
 	}
+
+	// The world authority enables AES-GCM on this connection in PostLogin and the engine
+	// ack handshake is not wired, so the client must enable encryption on its
+	// ServerConnection with the shared key (same as the world_server_client / travel /
+	// handoff / replication probe pattern). Without this, every server->client packet
+	// (including the AAPBPlayerState replication the probe drives login off of) is dropped
+	// as "received encrypted packet before key was set" and the probe silently stalls.
+	// Per-connection, not once-only: after the district return the client travels BACK to
+	// the world on a brand-new ServerConnection, which needs its own key.
+	if (World->GetNetDriver() && World->GetNetDriver()->ServerConnection && !FParse::Param(FCommandLine::Get(), TEXT("DisableEncryption")))
+	{
+		static TWeakObjectPtr<UNetConnection> ChatEncryptedConnection;
+		UNetConnection* Conn = World->GetNetDriver()->ServerConnection;
+		if (ChatEncryptedConnection.Get() != Conn)
+		{
+			const FString& Secret = FAPBSecretProvider::TicketSecret();
+			if (!Secret.IsEmpty())
+			{
+				std::vector<uint8_t> Bytes = apb::hex_decode(TCHAR_TO_UTF8(*Secret));
+				if (Bytes.size() == 32)
+				{
+					FEncryptionData Data;
+					Data.Key.SetNum(32);
+					FMemory::Memcpy(Data.Key.GetData(), Bytes.data(), 32);
+					Conn->EnableEncryption(Data);
+					ChatEncryptedConnection = Conn;
+					AppendLog(TEXT("CHAT_CLIENT_ENCRYPTION_ENABLED"));
+				}
+			}
+		}
+	}
+
 	const int64 NowMs = FDateTime::UtcNow().ToUnixTimestamp() * 1000LL + FDateTime::UtcNow().GetMillisecond();
 	if (NowMs < ChatWorldReconnectReadyAtMs)
 	{

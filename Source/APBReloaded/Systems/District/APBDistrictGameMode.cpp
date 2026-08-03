@@ -5,6 +5,8 @@
 #include "APBDistrictStreamer.h"
 #include "APBServerControl.h"
 #include "APBSecretProvider.h"
+#include "Domain/APBCrypto.h"
+#include "Engine/NetConnection.h"
 #include "APBHandoff.h"
 #include "APBChat.h"
 #include "APBRelayProtocol.h"
@@ -17,6 +19,7 @@
 #include "Misc/Parse.h"
 
 #include <string>
+#include <vector>
 
 namespace
 {
@@ -274,6 +277,26 @@ int32 AAPBDistrictGameMode::GetRemotePlayerCount() const
 void AAPBDistrictGameMode::PostLogin(APlayerController* NewPlayer)
 {
 	Super::PostLogin(NewPlayer);
+
+	// M16 zero-trust: mirror the world authority's AES-GCM enable. Chat and other
+	// client->district RPCs are encrypted by the client's ServerConnection key; without
+	// the district-side key every such packet is dropped as "received encrypted packet
+	// before key was set, ignoring." and delivery never reaches ChatService.
+	if (NewPlayer && NewPlayer->NetConnection && !FParse::Param(FCommandLine::Get(), TEXT("DisableEncryption")))
+	{
+		const FString& Secret = FAPBSecretProvider::TicketSecret();
+		if (!Secret.IsEmpty())
+		{
+			std::vector<uint8_t> Bytes = apb::hex_decode(TCHAR_TO_UTF8(*Secret));
+			if (Bytes.size() == 32)
+			{
+				FEncryptionData Data;
+				Data.Key.SetNum(32);
+				FMemory::Memcpy(Data.Key.GetData(), Bytes.data(), 32);
+				NewPlayer->NetConnection->EnableEncryption(Data);
+			}
+		}
+	}
 
 	FAPBVerifiedTicket Ticket;
 	const bool bHasTicket = NewPlayer && NewPlayer->PlayerState
