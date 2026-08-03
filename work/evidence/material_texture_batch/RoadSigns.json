@@ -1,0 +1,99 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "RoadSigns",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/RoadSigns.upk",
+ "source_sha256": "069ad92b9f153390fa81759b65981d3326812b2e251ca92fb302faddfb62d9e6",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/RoadSigns.upk#MI_RoadSigns_MAT",
+   "object": "MI_RoadSigns_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RoadSigns_MAT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSigns/RoadSigns/Texture2D/RoadSigns_Signs_DiffSpec.tga",
+   "extracted_sha256": "578a00f576a72aa36f9969d1838f0d8631baea568092f20496ec43db9eed1c8b",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSigns/RoadSigns/Texture2D/RoadSigns_Signs_DiffSpec.tga",
+   "output_sha256": "578a00f576a72aa36f9969d1838f0d8631baea568092f20496ec43db9eed1c8b",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSigns/MI_RoadSigns_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/RoadSigns.upk#MI_RoadSigns_RIOT_MAT_INST",
+   "object": "MI_RoadSigns_RIOT_MAT_INST",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RoadSigns_RIOT_MAT_INST",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSigns/RoadSigns/Texture2D/RoadSigns_RIOT_DiffSpec.tga",
+   "extracted_sha256": "c29f8cd15ecb0b155124c9187b248d9c03495e745c70c1d0baed9086c6c07aad",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSigns/RoadSigns/Texture2D/RoadSigns_RIOT_DiffSpec.tga",
+   "output_sha256": "c29f8cd15ecb0b155124c9187b248d9c03495e745c70c1d0baed9086c6c07aad",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSigns/MI_RoadSigns_RIOT_MAT_INST.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/RoadSigns.upk#MI_RoadSigns_Sign_MAT",
+   "object": "MI_RoadSigns_Sign_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RoadSigns_Sign_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSigns/RoadSigns/Texture2D/RoadSigns_Pole_DiffSpec.tga",
+   "extracted_sha256": "1ed285cf807e81e7cfde9d025a22c24382e30e371a626935c0ad6cfdd0540dbc",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSigns/RoadSigns/Texture2D/RoadSigns_Pole_DiffSpec.tga",
+   "output_sha256": "1ed285cf807e81e7cfde9d025a22c24382e30e371a626935c0ad6cfdd0540dbc",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSigns/MI_RoadSigns_Sign_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/RoadSigns.upk#RoadSigns_Pole_DiffSpec",
+   "object": "RoadSigns_Pole_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSigns/RoadSigns/Texture2D/RoadSigns_Pole_DiffSpec.tga",
+   "extracted_sha256": "1ed285cf807e81e7cfde9d025a22c24382e30e371a626935c0ad6cfdd0540dbc",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSigns/RoadSigns/Texture2D/RoadSigns_Pole_DiffSpec.tga",
+   "output_sha256": "1ed285cf807e81e7cfde9d025a22c24382e30e371a626935c0ad6cfdd0540dbc",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSigns/RoadSigns_Pole_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/RoadSigns.upk#RoadSigns_Pole_Norm",
+   "object": "RoadSigns_Pole_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSigns/RoadSigns/Texture2D/RoadSigns_Pole_Norm.tga",
+   "extracted_sha256": "b1755c799425f7635dd9a843e88cf7dbc3949d4a572f389c3b2253ec38138934",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSigns/RoadSigns/Texture2D/RoadSigns_Pole_Norm.tga",
+   "output_sha256": "b1755c799425f7635dd9a843e88cf7dbc3949d4a572f389c3b2253ec38138934",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSigns/RoadSigns_Pole_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/RoadSigns.upk#RoadSigns_RIOT_DiffSpec",
+   "object": "RoadSigns_RIOT_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSigns/RoadSigns/Texture2D/RoadSigns_RIOT_DiffSpec.tga",
+   "extracted_sha256": "c29f8cd15ecb0b155124c9187b248d9c03495e745c70c1d0baed9086c6c07aad",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSigns/RoadSigns/Texture2D/RoadSigns_RIOT_DiffSpec.tga",
+   "output_sha256": "c29f8cd15ecb0b155124c9187b248d9c03495e745c70c1d0baed9086c6c07aad",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSigns/RoadSigns_RIOT_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/RoadSigns.upk#RoadSigns_Signs_DiffSpec",
+   "object": "RoadSigns_Signs_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSigns/RoadSigns/Texture2D/RoadSigns_Signs_DiffSpec.tga",
+   "extracted_sha256": "578a00f576a72aa36f9969d1838f0d8631baea568092f20496ec43db9eed1c8b",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSigns/RoadSigns/Texture2D/RoadSigns_Signs_DiffSpec.tga",
+   "output_sha256": "578a00f576a72aa36f9969d1838f0d8631baea568092f20496ec43db9eed1c8b",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSigns/RoadSigns_Signs_DiffSpec.uasset"
+  }
+ ]
+}

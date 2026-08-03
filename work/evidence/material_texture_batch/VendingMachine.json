@@ -1,0 +1,265 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "VendingMachine",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/VendingMachine.upk",
+ "source_sha256": "475ef219d15ed5436157cbbecfea2da7da0a530512f22a2847e555b2a3bf35d7",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/VendingMachine.upk#crackedglass",
+   "object": "crackedglass",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/VendingMachine/PropsGenericMaterials/Texture2D/crackedglass.tga",
+   "extracted_sha256": "dfa317aa7fb2240af7f70a04291e38bffe78163ed2df9334514b23bb823cc808",
+   "output_file": "Content/Extracted/MaterialDatabase/VendingMachine/PropsGenericMaterials/Texture2D/crackedglass.tga",
+   "output_sha256": "dfa317aa7fb2240af7f70a04291e38bffe78163ed2df9334514b23bb823cc808",
+   "uasset": "Content/Imported/MaterialDatabase/VendingMachine/crackedglass.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/VendingMachine.upk#CrackedGlass_Norm",
+   "object": "CrackedGlass_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/VendingMachine/PropsGenericMaterials/Texture2D/CrackedGlass_Norm.tga",
+   "extracted_sha256": "785619d634027205ac11fddf228e8ff86e308e8ec9386fb9c8d74e1e34b242c3",
+   "output_file": "Content/Extracted/MaterialDatabase/VendingMachine/PropsGenericMaterials/Texture2D/CrackedGlass_Norm.tga",
+   "output_sha256": "785619d634027205ac11fddf228e8ff86e308e8ec9386fb9c8d74e1e34b242c3",
+   "uasset": "Content/Imported/MaterialDatabase/VendingMachine/CrackedGlass_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/VendingMachine.upk#MI_CrackedPropGlass",
+   "object": "MI_CrackedPropGlass",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CrackedPropGlass",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/VendingMachine/PropsGenericMaterials/Texture2D/crackedglass.tga",
+   "extracted_sha256": "dfa317aa7fb2240af7f70a04291e38bffe78163ed2df9334514b23bb823cc808",
+   "output_file": "Content/Extracted/MaterialDatabase/VendingMachine/PropsGenericMaterials/Texture2D/crackedglass.tga",
+   "output_sha256": "dfa317aa7fb2240af7f70a04291e38bffe78163ed2df9334514b23bb823cc808",
+   "uasset": "Content/Imported/MaterialDatabase/VendingMachine/MI_CrackedPropGlass.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/VendingMachine.upk#MI_VendingMachine_Damage_Mat",
+   "object": "MI_VendingMachine_Damage_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "VendingMachine_Damage_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/VendingMachine/VendingMachine/Texture2D/VendingMachine_DiffSpec.tga",
+   "extracted_sha256": "cecd509eb0acc660b44d987b0f6c49f209fb8efc17b07b67b89101326d05487b",
+   "output_file": "Content/Extracted/MaterialDatabase/VendingMachine/VendingMachine/Texture2D/VendingMachine_DiffSpec.tga",
+   "output_sha256": "cecd509eb0acc660b44d987b0f6c49f209fb8efc17b07b67b89101326d05487b",
+   "uasset": "Content/Imported/MaterialDatabase/VendingMachine/MI_VendingMachine_Damage_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/VendingMachine.upk#MI_VendingMachine_Massive1_Damage_Mat",
+   "object": "MI_VendingMachine_Massive1_Damage_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "VendingMachine_Massive1_Damage_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/VendingMachine/VendingMachine/Texture2D/VendingMachine_MassDiffSpec1.tga",
+   "extracted_sha256": "c881283943302ed29575a9320704b75dafffda435285aaa4a48d02b087c17cbc",
+   "output_file": "Content/Extracted/MaterialDatabase/VendingMachine/VendingMachine/Texture2D/VendingMachine_MassDiffSpec1.tga",
+   "output_sha256": "c881283943302ed29575a9320704b75dafffda435285aaa4a48d02b087c17cbc",
+   "uasset": "Content/Imported/MaterialDatabase/VendingMachine/MI_VendingMachine_Massive1_Damage_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/VendingMachine.upk#MI_VendingMachine_Massive1_Mat",
+   "object": "MI_VendingMachine_Massive1_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "VendingMachine_Massive1_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/VendingMachine/VendingMachine/Texture2D/VendingMachine_MassDiffSpec1.tga",
+   "extracted_sha256": "c881283943302ed29575a9320704b75dafffda435285aaa4a48d02b087c17cbc",
+   "output_file": "Content/Extracted/MaterialDatabase/VendingMachine/VendingMachine/Texture2D/VendingMachine_MassDiffSpec1.tga",
+   "output_sha256": "c881283943302ed29575a9320704b75dafffda435285aaa4a48d02b087c17cbc",
+   "uasset": "Content/Imported/MaterialDatabase/VendingMachine/MI_VendingMachine_Massive1_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/VendingMachine.upk#MI_VendingMachine_Massive2_Damage_Mat",
+   "object": "MI_VendingMachine_Massive2_Damage_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "VendingMachine_Massive2_Damage_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/VendingMachine/VendingMachine/Texture2D/VendingMachine_MassDiffSpec2.tga",
+   "extracted_sha256": "725e98daa429f164e6b01464e9692975acb269a27f5a095819fdf07c74d67e41",
+   "output_file": "Content/Extracted/MaterialDatabase/VendingMachine/VendingMachine/Texture2D/VendingMachine_MassDiffSpec2.tga",
+   "output_sha256": "725e98daa429f164e6b01464e9692975acb269a27f5a095819fdf07c74d67e41",
+   "uasset": "Content/Imported/MaterialDatabase/VendingMachine/MI_VendingMachine_Massive2_Damage_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/VendingMachine.upk#MI_VendingMachine_Massive2_Mat",
+   "object": "MI_VendingMachine_Massive2_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "VendingMachine_Massive2_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/VendingMachine/VendingMachine/Texture2D/VendingMachine_MassDiffSpec2.tga",
+   "extracted_sha256": "725e98daa429f164e6b01464e9692975acb269a27f5a095819fdf07c74d67e41",
+   "output_file": "Content/Extracted/MaterialDatabase/VendingMachine/VendingMachine/Texture2D/VendingMachine_MassDiffSpec2.tga",
+   "output_sha256": "725e98daa429f164e6b01464e9692975acb269a27f5a095819fdf07c74d67e41",
+   "uasset": "Content/Imported/MaterialDatabase/VendingMachine/MI_VendingMachine_Massive2_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/VendingMachine.upk#MI_VendingMachine_MAT",
+   "object": "MI_VendingMachine_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "VendingMachine_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/VendingMachine/VendingMachine/Texture2D/VendingMachine_DiffSpec.tga",
+   "extracted_sha256": "cecd509eb0acc660b44d987b0f6c49f209fb8efc17b07b67b89101326d05487b",
+   "output_file": "Content/Extracted/MaterialDatabase/VendingMachine/VendingMachine/Texture2D/VendingMachine_DiffSpec.tga",
+   "output_sha256": "cecd509eb0acc660b44d987b0f6c49f209fb8efc17b07b67b89101326d05487b",
+   "uasset": "Content/Imported/MaterialDatabase/VendingMachine/MI_VendingMachine_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/VendingMachine.upk#VendingMachine_DiffSpec",
+   "object": "VendingMachine_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/VendingMachine/VendingMachine/Texture2D/VendingMachine_DiffSpec.tga",
+   "extracted_sha256": "cecd509eb0acc660b44d987b0f6c49f209fb8efc17b07b67b89101326d05487b",
+   "output_file": "Content/Extracted/MaterialDatabase/VendingMachine/VendingMachine/Texture2D/VendingMachine_DiffSpec.tga",
+   "output_sha256": "cecd509eb0acc660b44d987b0f6c49f209fb8efc17b07b67b89101326d05487b",
+   "uasset": "Content/Imported/MaterialDatabase/VendingMachine/VendingMachine_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/VendingMachine.upk#VendingMachine_Emis",
+   "object": "VendingMachine_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/VendingMachine/VendingMachine/Texture2D/VendingMachine_Emis.tga",
+   "extracted_sha256": "338f3fc5537829cedd1ab367bfba6edf2470f391da07788d36c9f4e6817bc812",
+   "output_file": "Content/Extracted/MaterialDatabase/VendingMachine/VendingMachine/Texture2D/VendingMachine_Emis.tga",
+   "output_sha256": "338f3fc5537829cedd1ab367bfba6edf2470f391da07788d36c9f4e6817bc812",
+   "uasset": "Content/Imported/MaterialDatabase/VendingMachine/VendingMachine_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/VendingMachine.upk#VendingMachine_Emis2",
+   "object": "VendingMachine_Emis2",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/VendingMachine/VendingMachine/Texture2D/VendingMachine_Emis2.tga",
+   "extracted_sha256": "303b66436cbffe00615bcb81e40fe35abb29397886df816a15b2b26a134ecf73",
+   "output_file": "Content/Extracted/MaterialDatabase/VendingMachine/VendingMachine/Texture2D/VendingMachine_Emis2.tga",
+   "output_sha256": "303b66436cbffe00615bcb81e40fe35abb29397886df816a15b2b26a134ecf73",
+   "uasset": "Content/Imported/MaterialDatabase/VendingMachine/VendingMachine_Emis2.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/VendingMachine.upk#VendingMachine_Emis3",
+   "object": "VendingMachine_Emis3",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/VendingMachine/VendingMachine/Texture2D/VendingMachine_Emis3.tga",
+   "extracted_sha256": "391a00d459a808866cc4cce4d260bf686ed6bcc4fa3b234fd12dacdb19065618",
+   "output_file": "Content/Extracted/MaterialDatabase/VendingMachine/VendingMachine/Texture2D/VendingMachine_Emis3.tga",
+   "output_sha256": "391a00d459a808866cc4cce4d260bf686ed6bcc4fa3b234fd12dacdb19065618",
+   "uasset": "Content/Imported/MaterialDatabase/VendingMachine/VendingMachine_Emis3.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/VendingMachine.upk#VendingMachine_MassDiffSpec1",
+   "object": "VendingMachine_MassDiffSpec1",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/VendingMachine/VendingMachine/Texture2D/VendingMachine_MassDiffSpec1.tga",
+   "extracted_sha256": "c881283943302ed29575a9320704b75dafffda435285aaa4a48d02b087c17cbc",
+   "output_file": "Content/Extracted/MaterialDatabase/VendingMachine/VendingMachine/Texture2D/VendingMachine_MassDiffSpec1.tga",
+   "output_sha256": "c881283943302ed29575a9320704b75dafffda435285aaa4a48d02b087c17cbc",
+   "uasset": "Content/Imported/MaterialDatabase/VendingMachine/VendingMachine_MassDiffSpec1.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/VendingMachine.upk#VendingMachine_MassDiffSpec2",
+   "object": "VendingMachine_MassDiffSpec2",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/VendingMachine/VendingMachine/Texture2D/VendingMachine_MassDiffSpec2.tga",
+   "extracted_sha256": "725e98daa429f164e6b01464e9692975acb269a27f5a095819fdf07c74d67e41",
+   "output_file": "Content/Extracted/MaterialDatabase/VendingMachine/VendingMachine/Texture2D/VendingMachine_MassDiffSpec2.tga",
+   "output_sha256": "725e98daa429f164e6b01464e9692975acb269a27f5a095819fdf07c74d67e41",
+   "uasset": "Content/Imported/MaterialDatabase/VendingMachine/VendingMachine_MassDiffSpec2.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/VendingMachine.upk#VendingMachine_Norm",
+   "object": "VendingMachine_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/VendingMachine/VendingMachine/Texture2D/VendingMachine_Norm.tga",
+   "extracted_sha256": "255201d0f690f868b011f164de689aba7913f33d6a8ff1bb1cd31cc22cf9a120",
+   "output_file": "Content/Extracted/MaterialDatabase/VendingMachine/VendingMachine/Texture2D/VendingMachine_Norm.tga",
+   "output_sha256": "255201d0f690f868b011f164de689aba7913f33d6a8ff1bb1cd31cc22cf9a120",
+   "uasset": "Content/Imported/MaterialDatabase/VendingMachine/VendingMachine_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/VendingMachine.upk#VendingMachine_Norm2",
+   "object": "VendingMachine_Norm2",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/VendingMachine/VendingMachine/Texture2D/VendingMachine_Norm2.tga",
+   "extracted_sha256": "5dcaf735d9fccdadff6f3be17a8d9d64aba9d54ddf69df74a0e33c5d41a788c7",
+   "output_file": "Content/Extracted/MaterialDatabase/VendingMachine/VendingMachine/Texture2D/VendingMachine_Norm2.tga",
+   "output_sha256": "5dcaf735d9fccdadff6f3be17a8d9d64aba9d54ddf69df74a0e33c5d41a788c7",
+   "uasset": "Content/Imported/MaterialDatabase/VendingMachine/VendingMachine_Norm2.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/VendingMachine.upk#VendingMachine_Norm3",
+   "object": "VendingMachine_Norm3",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/VendingMachine/VendingMachine/Texture2D/VendingMachine_Norm3.tga",
+   "extracted_sha256": "919226630568f1bb75593a168f6a5c75bfe8ac4010eb7bcf3149cea03087c543",
+   "output_file": "Content/Extracted/MaterialDatabase/VendingMachine/VendingMachine/Texture2D/VendingMachine_Norm3.tga",
+   "output_sha256": "919226630568f1bb75593a168f6a5c75bfe8ac4010eb7bcf3149cea03087c543",
+   "uasset": "Content/Imported/MaterialDatabase/VendingMachine/VendingMachine_Norm3.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/VendingMachine.upk#VendingMachine_Opac",
+   "object": "VendingMachine_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/VendingMachine/VendingMachine/Texture2D/VendingMachine_Opac.tga",
+   "extracted_sha256": "a80d24f306b14379f27ce34ad6b3edc0b839a02203b70fdba2009028771ffee8",
+   "output_file": "Content/Extracted/MaterialDatabase/VendingMachine/VendingMachine/Texture2D/VendingMachine_Opac.tga",
+   "output_sha256": "a80d24f306b14379f27ce34ad6b3edc0b839a02203b70fdba2009028771ffee8",
+   "uasset": "Content/Imported/MaterialDatabase/VendingMachine/VendingMachine_Opac.uasset"
+  }
+ ]
+}

@@ -1,0 +1,92 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "MidtownDistrict_Lights",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/FeatureMaterials/MidtownDistrict_Lights.upk",
+ "source_sha256": "a69f5313020a0f33c0e8ded6bb546273b267ab3e1b40cba2ffbcca32d5fa4633",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/MidtownDistrict_Lights.upk#Lights_Wall_Roof_DiffSpec",
+   "object": "Lights_Wall_Roof_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/MidtownDistrict_Lights/MidtownDistrict_Lights/Texture2D/Lights_Wall_Roof_DiffSpec.tga",
+   "extracted_sha256": "e3569ee19c1ec5db0f6e08c6e7fa22e10735e7c9b19d661fbde11e04df86ddd7",
+   "output_file": "Content/Extracted/MaterialDatabase/MidtownDistrict_Lights/MidtownDistrict_Lights/Texture2D/Lights_Wall_Roof_DiffSpec.tga",
+   "output_sha256": "e3569ee19c1ec5db0f6e08c6e7fa22e10735e7c9b19d661fbde11e04df86ddd7",
+   "uasset": "Content/Imported/MaterialDatabase/MidtownDistrict_Lights/Lights_Wall_Roof_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/MidtownDistrict_Lights.upk#Lights_Wall_Roof_Emissive",
+   "object": "Lights_Wall_Roof_Emissive",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/MidtownDistrict_Lights/MidtownDistrict_Lights/Texture2D/Lights_Wall_Roof_Emissive.tga",
+   "extracted_sha256": "eff2e65d04a35b7353f2784547da5e6a71ccb07e47038a8255738cf0cf943fc5",
+   "output_file": "Content/Extracted/MaterialDatabase/MidtownDistrict_Lights/MidtownDistrict_Lights/Texture2D/Lights_Wall_Roof_Emissive.tga",
+   "output_sha256": "eff2e65d04a35b7353f2784547da5e6a71ccb07e47038a8255738cf0cf943fc5",
+   "uasset": "Content/Imported/MaterialDatabase/MidtownDistrict_Lights/Lights_Wall_Roof_Emissive.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/MidtownDistrict_Lights.upk#Lights_Wall_Roof_Normal",
+   "object": "Lights_Wall_Roof_Normal",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/MidtownDistrict_Lights/MidtownDistrict_Lights/Texture2D/Lights_Wall_Roof_Normal.tga",
+   "extracted_sha256": "8b9de3efc533005c41286723c6191db7703309273ee7bc5328fe186aa01db429",
+   "output_file": "Content/Extracted/MaterialDatabase/MidtownDistrict_Lights/MidtownDistrict_Lights/Texture2D/Lights_Wall_Roof_Normal.tga",
+   "output_sha256": "8b9de3efc533005c41286723c6191db7703309273ee7bc5328fe186aa01db429",
+   "uasset": "Content/Imported/MaterialDatabase/MidtownDistrict_Lights/Lights_Wall_Roof_Normal.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/MidtownDistrict_Lights.upk#MI_Lights_Wall_Roof",
+   "object": "MI_Lights_Wall_Roof",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Lights_Wall_Roof",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/MidtownDistrict_Lights/MidtownDistrict_Lights/Texture2D/Lights_Wall_Roof_DiffSpec.tga",
+   "extracted_sha256": "e3569ee19c1ec5db0f6e08c6e7fa22e10735e7c9b19d661fbde11e04df86ddd7",
+   "output_file": "Content/Extracted/MaterialDatabase/MidtownDistrict_Lights/MidtownDistrict_Lights/Texture2D/Lights_Wall_Roof_DiffSpec.tga",
+   "output_sha256": "e3569ee19c1ec5db0f6e08c6e7fa22e10735e7c9b19d661fbde11e04df86ddd7",
+   "uasset": "Content/Imported/MaterialDatabase/MidtownDistrict_Lights/MI_Lights_Wall_Roof.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/MidtownDistrict_Lights.upk#MI_Lights_Wall_Roof_Interior",
+   "object": "MI_Lights_Wall_Roof_Interior",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Lights_Wall_Roof_Interior",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/MidtownDistrict_Lights/MidtownDistrict_Lights/Texture2D/Lights_Wall_Roof_DiffSpec.tga",
+   "extracted_sha256": "e3569ee19c1ec5db0f6e08c6e7fa22e10735e7c9b19d661fbde11e04df86ddd7",
+   "output_file": "Content/Extracted/MaterialDatabase/MidtownDistrict_Lights/MidtownDistrict_Lights/Texture2D/Lights_Wall_Roof_DiffSpec.tga",
+   "output_sha256": "e3569ee19c1ec5db0f6e08c6e7fa22e10735e7c9b19d661fbde11e04df86ddd7",
+   "uasset": "Content/Imported/MaterialDatabase/MidtownDistrict_Lights/MI_Lights_Wall_Roof_Interior.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/MidtownDistrict_Lights.upk#MI_Neon_Purple",
+   "object": "MI_Neon_Purple",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Neon_Purple",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/MidtownDistrict_Lights/MidtownDistrict_Lights/Texture2D/Lights_Wall_Roof_DiffSpec.tga",
+   "extracted_sha256": "e3569ee19c1ec5db0f6e08c6e7fa22e10735e7c9b19d661fbde11e04df86ddd7",
+   "output_file": "Content/Extracted/MaterialDatabase/MidtownDistrict_Lights/MidtownDistrict_Lights/Texture2D/Lights_Wall_Roof_DiffSpec.tga",
+   "output_sha256": "e3569ee19c1ec5db0f6e08c6e7fa22e10735e7c9b19d661fbde11e04df86ddd7",
+   "uasset": "Content/Imported/MaterialDatabase/MidtownDistrict_Lights/MI_Neon_Purple.uasset"
+  }
+ ]
+}

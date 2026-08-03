@@ -1,0 +1,86 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Asylum_BlackMarketGoods",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/PropMaterials/Asylum_BlackMarketGoods.upk",
+ "source_sha256": "d6d0c5d529f857a93e31799f9cd537f16966cb561ad0927baeac456c40feb879",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Asylum_BlackMarketGoods.upk#AmmoCarrier_Diff",
+   "object": "AmmoCarrier_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Asylum_BlackMarketGoods/AmmoCarrier/Texture2D/AmmoCarrier_Diff.tga",
+   "extracted_sha256": "ef3a97e6d286bb90f6d289bd5b9627c35b3a764ed35978e674d7a75c8c88d4a5",
+   "output_file": "Content/Extracted/MaterialDatabase/Asylum_BlackMarketGoods/AmmoCarrier/Texture2D/AmmoCarrier_Diff.tga",
+   "output_sha256": "ef3a97e6d286bb90f6d289bd5b9627c35b3a764ed35978e674d7a75c8c88d4a5",
+   "uasset": "Content/Imported/MaterialDatabase/Asylum_BlackMarketGoods/AmmoCarrier_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Asylum_BlackMarketGoods.upk#AmmoCarrier_Norm",
+   "object": "AmmoCarrier_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Asylum_BlackMarketGoods/AmmoCarrier/Texture2D/AmmoCarrier_Norm.tga",
+   "extracted_sha256": "747c501525ed0f84e8f7a4bc7a794b7e1575ee4a151909f7c7ced24c6e443475",
+   "output_file": "Content/Extracted/MaterialDatabase/Asylum_BlackMarketGoods/AmmoCarrier/Texture2D/AmmoCarrier_Norm.tga",
+   "output_sha256": "747c501525ed0f84e8f7a4bc7a794b7e1575ee4a151909f7c7ced24c6e443475",
+   "uasset": "Content/Imported/MaterialDatabase/Asylum_BlackMarketGoods/AmmoCarrier_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Asylum_BlackMarketGoods.upk#MI_AmmoCarrier_MAT",
+   "object": "MI_AmmoCarrier_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "AmmoCarrier_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Asylum_BlackMarketGoods/AmmoCarrier/Texture2D/AmmoCarrier_Diff.tga",
+   "extracted_sha256": "ef3a97e6d286bb90f6d289bd5b9627c35b3a764ed35978e674d7a75c8c88d4a5",
+   "output_file": "Content/Extracted/MaterialDatabase/Asylum_BlackMarketGoods/AmmoCarrier/Texture2D/AmmoCarrier_Diff.tga",
+   "output_sha256": "ef3a97e6d286bb90f6d289bd5b9627c35b3a764ed35978e674d7a75c8c88d4a5",
+   "uasset": "Content/Imported/MaterialDatabase/Asylum_BlackMarketGoods/MI_AmmoCarrier_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Asylum_BlackMarketGoods.upk#MI_Weapon_SubMachineGun_MAT",
+   "object": "MI_Weapon_SubMachineGun_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Weapon_SubMachineGun_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Asylum_BlackMarketGoods/Weapon_SubMachineGun/Texture2D/Weapon_SubMachineGun_DiffSpec.tga",
+   "extracted_sha256": "a40ee39a157e36ad784650961ed86f4ef915d07e9cce80cfbf62591c633ba9c3",
+   "output_file": "Content/Extracted/MaterialDatabase/Asylum_BlackMarketGoods/Weapon_SubMachineGun/Texture2D/Weapon_SubMachineGun_DiffSpec.tga",
+   "output_sha256": "a40ee39a157e36ad784650961ed86f4ef915d07e9cce80cfbf62591c633ba9c3",
+   "uasset": "Content/Imported/MaterialDatabase/Asylum_BlackMarketGoods/MI_Weapon_SubMachineGun_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Asylum_BlackMarketGoods.upk#Weapon_SubMachineGun_DiffSpec",
+   "object": "Weapon_SubMachineGun_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Asylum_BlackMarketGoods/Weapon_SubMachineGun/Texture2D/Weapon_SubMachineGun_DiffSpec.tga",
+   "extracted_sha256": "a40ee39a157e36ad784650961ed86f4ef915d07e9cce80cfbf62591c633ba9c3",
+   "output_file": "Content/Extracted/MaterialDatabase/Asylum_BlackMarketGoods/Weapon_SubMachineGun/Texture2D/Weapon_SubMachineGun_DiffSpec.tga",
+   "output_sha256": "a40ee39a157e36ad784650961ed86f4ef915d07e9cce80cfbf62591c633ba9c3",
+   "uasset": "Content/Imported/MaterialDatabase/Asylum_BlackMarketGoods/Weapon_SubMachineGun_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Asylum_BlackMarketGoods.upk#Weapon_SubMachineGun_Norm",
+   "object": "Weapon_SubMachineGun_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Asylum_BlackMarketGoods/Weapon_SubMachineGun/Texture2D/Weapon_SubMachineGun_Norm.tga",
+   "extracted_sha256": "4fc65f3416bc1fb2c4ad929185bd48469e33536909bdeb2f8564fac35c7681df",
+   "output_file": "Content/Extracted/MaterialDatabase/Asylum_BlackMarketGoods/Weapon_SubMachineGun/Texture2D/Weapon_SubMachineGun_Norm.tga",
+   "output_sha256": "4fc65f3416bc1fb2c4ad929185bd48469e33536909bdeb2f8564fac35c7681df",
+   "uasset": "Content/Imported/MaterialDatabase/Asylum_BlackMarketGoods/Weapon_SubMachineGun_Norm.uasset"
+  }
+ ]
+}

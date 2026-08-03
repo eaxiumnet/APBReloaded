@@ -1,0 +1,76 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Stones",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/Terrain/Stones.upk",
+ "source_sha256": "a303926ab0914aed98eac9cda36c9c6db73f862a5d0aad43b4f314ffadfed22d",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Terrain/Stones.upk#MI_Stones_Beige",
+   "object": "MI_Stones_Beige",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stones_Beige",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stones/Stones/Texture2D/Stones_DiffSpec.tga",
+   "extracted_sha256": "69805698610b3b5d7377f8fa65ace0170f6fe6d8ecefad205a120b158f3a4b61",
+   "output_file": "Content/Extracted/MaterialDatabase/Stones/Stones/Texture2D/Stones_DiffSpec.tga",
+   "output_sha256": "69805698610b3b5d7377f8fa65ace0170f6fe6d8ecefad205a120b158f3a4b61",
+   "uasset": "Content/Imported/MaterialDatabase/Stones/MI_Stones_Beige.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Terrain/Stones.upk#MI_Stones_Grey",
+   "object": "MI_Stones_Grey",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stones_Grey",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stones/Stones/Texture2D/Stones_DiffSpec.tga",
+   "extracted_sha256": "69805698610b3b5d7377f8fa65ace0170f6fe6d8ecefad205a120b158f3a4b61",
+   "output_file": "Content/Extracted/MaterialDatabase/Stones/Stones/Texture2D/Stones_DiffSpec.tga",
+   "output_sha256": "69805698610b3b5d7377f8fa65ace0170f6fe6d8ecefad205a120b158f3a4b61",
+   "uasset": "Content/Imported/MaterialDatabase/Stones/MI_Stones_Grey.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Terrain/Stones.upk#MI_Stones_PARENT",
+   "object": "MI_Stones_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stones_PARENT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stones/Stones/Texture2D/Stones_DiffSpec.tga",
+   "extracted_sha256": "69805698610b3b5d7377f8fa65ace0170f6fe6d8ecefad205a120b158f3a4b61",
+   "output_file": "Content/Extracted/MaterialDatabase/Stones/Stones/Texture2D/Stones_DiffSpec.tga",
+   "output_sha256": "69805698610b3b5d7377f8fa65ace0170f6fe6d8ecefad205a120b158f3a4b61",
+   "uasset": "Content/Imported/MaterialDatabase/Stones/MI_Stones_PARENT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Terrain/Stones.upk#MI_Stones_Pink",
+   "object": "MI_Stones_Pink",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stones_Pink",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stones/Stones/Texture2D/Stones_DiffSpec.tga",
+   "extracted_sha256": "69805698610b3b5d7377f8fa65ace0170f6fe6d8ecefad205a120b158f3a4b61",
+   "output_file": "Content/Extracted/MaterialDatabase/Stones/Stones/Texture2D/Stones_DiffSpec.tga",
+   "output_sha256": "69805698610b3b5d7377f8fa65ace0170f6fe6d8ecefad205a120b158f3a4b61",
+   "uasset": "Content/Imported/MaterialDatabase/Stones/MI_Stones_Pink.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Terrain/Stones.upk#Stones_DiffSpec",
+   "object": "Stones_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stones/Stones/Texture2D/Stones_DiffSpec.tga",
+   "extracted_sha256": "69805698610b3b5d7377f8fa65ace0170f6fe6d8ecefad205a120b158f3a4b61",
+   "output_file": "Content/Extracted/MaterialDatabase/Stones/Stones/Texture2D/Stones_DiffSpec.tga",
+   "output_sha256": "69805698610b3b5d7377f8fa65ace0170f6fe6d8ecefad205a120b158f3a4b61",
+   "uasset": "Content/Imported/MaterialDatabase/Stones/Stones_DiffSpec.uasset"
+  }
+ ]
+}

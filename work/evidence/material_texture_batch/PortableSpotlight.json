@@ -1,0 +1,60 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "PortableSpotlight",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/PropMaterials/PortableSpotlight.upk",
+ "source_sha256": "b46cb3d1c3b4207c51271362542c28803e39ab806f8439719a66cec696bc4405",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/PortableSpotlight.upk#MI_PortableSpotlight",
+   "object": "MI_PortableSpotlight",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PortableSpotlight",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/PortableSpotlight/PortableSpotlight/Texture2D/PROP_PortableSpotlight_DiffSpec.tga",
+   "extracted_sha256": "dce2fb90f0a8ee3881a1359fd47de4193a5a036c1c5c545ca73b387f46ce488b",
+   "output_file": "Content/Extracted/MaterialDatabase/PortableSpotlight/PortableSpotlight/Texture2D/PROP_PortableSpotlight_DiffSpec.tga",
+   "output_sha256": "dce2fb90f0a8ee3881a1359fd47de4193a5a036c1c5c545ca73b387f46ce488b",
+   "uasset": "Content/Imported/MaterialDatabase/PortableSpotlight/MI_PortableSpotlight.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/PortableSpotlight.upk#PROP_PortableSpotlight_DiffSpec",
+   "object": "PROP_PortableSpotlight_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/PortableSpotlight/PortableSpotlight/Texture2D/PROP_PortableSpotlight_DiffSpec.tga",
+   "extracted_sha256": "dce2fb90f0a8ee3881a1359fd47de4193a5a036c1c5c545ca73b387f46ce488b",
+   "output_file": "Content/Extracted/MaterialDatabase/PortableSpotlight/PortableSpotlight/Texture2D/PROP_PortableSpotlight_DiffSpec.tga",
+   "output_sha256": "dce2fb90f0a8ee3881a1359fd47de4193a5a036c1c5c545ca73b387f46ce488b",
+   "uasset": "Content/Imported/MaterialDatabase/PortableSpotlight/PROP_PortableSpotlight_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/PortableSpotlight.upk#PROP_PortableSpotlight_Emissive",
+   "object": "PROP_PortableSpotlight_Emissive",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/PortableSpotlight/PortableSpotlight/Texture2D/PROP_PortableSpotlight_Emissive.tga",
+   "extracted_sha256": "fade22fd214922cb1a966c98322db036918d5621964190fd02cf85c40d7200a2",
+   "output_file": "Content/Extracted/MaterialDatabase/PortableSpotlight/PortableSpotlight/Texture2D/PROP_PortableSpotlight_Emissive.tga",
+   "output_sha256": "fade22fd214922cb1a966c98322db036918d5621964190fd02cf85c40d7200a2",
+   "uasset": "Content/Imported/MaterialDatabase/PortableSpotlight/PROP_PortableSpotlight_Emissive.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/PortableSpotlight.upk#PROP_PortableSpotlight_NORM",
+   "object": "PROP_PortableSpotlight_NORM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/PortableSpotlight/PortableSpotlight/Texture2D/PROP_PortableSpotlight_NORM.tga",
+   "extracted_sha256": "839f458ad7b71dbaaa2ef7040ef4a2f4bd0f45db6e963e89d1092ce9e20de9ce",
+   "output_file": "Content/Extracted/MaterialDatabase/PortableSpotlight/PortableSpotlight/Texture2D/PROP_PortableSpotlight_NORM.tga",
+   "output_sha256": "839f458ad7b71dbaaa2ef7040ef4a2f4bd0f45db6e963e89d1092ce9e20de9ce",
+   "uasset": "Content/Imported/MaterialDatabase/PortableSpotlight/PROP_PortableSpotlight_NORM.uasset"
+  }
+ ]
+}

@@ -1,0 +1,76 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "PayPhone",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/PayPhone.upk",
+ "source_sha256": "a36be82f60a87b78d6010d8a87f5ff33e8148718f6874b1c29e8baed728e9c50",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/PayPhone.upk#MI_PayPhone",
+   "object": "MI_PayPhone",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PayPhone",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/PayPhone/PayPhone/Texture2D/PayPhone_DiffSpec.tga",
+   "extracted_sha256": "f007cd543387fb2c00f489cc3ed137db370715c47542f3fea4c8d658ebdf7165",
+   "output_file": "Content/Extracted/MaterialDatabase/PayPhone/PayPhone/Texture2D/PayPhone_DiffSpec.tga",
+   "output_sha256": "f007cd543387fb2c00f489cc3ed137db370715c47542f3fea4c8d658ebdf7165",
+   "uasset": "Content/Imported/MaterialDatabase/PayPhone/MI_PayPhone.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/PayPhone.upk#MI_PayPhone_Damage",
+   "object": "MI_PayPhone_Damage",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PayPhone_Damage",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/PayPhone/PayPhone/Texture2D/PayPhone_DiffSpec.tga",
+   "extracted_sha256": "f007cd543387fb2c00f489cc3ed137db370715c47542f3fea4c8d658ebdf7165",
+   "output_file": "Content/Extracted/MaterialDatabase/PayPhone/PayPhone/Texture2D/PayPhone_DiffSpec.tga",
+   "output_sha256": "f007cd543387fb2c00f489cc3ed137db370715c47542f3fea4c8d658ebdf7165",
+   "uasset": "Content/Imported/MaterialDatabase/PayPhone/MI_PayPhone_Damage.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/PayPhone.upk#PayPhone_DiffSpec",
+   "object": "PayPhone_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/PayPhone/PayPhone/Texture2D/PayPhone_DiffSpec.tga",
+   "extracted_sha256": "f007cd543387fb2c00f489cc3ed137db370715c47542f3fea4c8d658ebdf7165",
+   "output_file": "Content/Extracted/MaterialDatabase/PayPhone/PayPhone/Texture2D/PayPhone_DiffSpec.tga",
+   "output_sha256": "f007cd543387fb2c00f489cc3ed137db370715c47542f3fea4c8d658ebdf7165",
+   "uasset": "Content/Imported/MaterialDatabase/PayPhone/PayPhone_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/PayPhone.upk#PayPhone_Emis",
+   "object": "PayPhone_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/PayPhone/PayPhone/Texture2D/PayPhone_Emis.tga",
+   "extracted_sha256": "82f1a9cbe77a5ca982b248f9f19d55b3c8eee061305f3962a868fc9c70ee235b",
+   "output_file": "Content/Extracted/MaterialDatabase/PayPhone/PayPhone/Texture2D/PayPhone_Emis.tga",
+   "output_sha256": "82f1a9cbe77a5ca982b248f9f19d55b3c8eee061305f3962a868fc9c70ee235b",
+   "uasset": "Content/Imported/MaterialDatabase/PayPhone/PayPhone_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/PayPhone.upk#PayPhone_Norm",
+   "object": "PayPhone_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/PayPhone/PayPhone/Texture2D/PayPhone_Norm.tga",
+   "extracted_sha256": "b4d53913dd4083e3af17c18e08b602ac668f3cc2c456d225446704f31f1c57d5",
+   "output_file": "Content/Extracted/MaterialDatabase/PayPhone/PayPhone/Texture2D/PayPhone_Norm.tga",
+   "output_sha256": "b4d53913dd4083e3af17c18e08b602ac668f3cc2c456d225446704f31f1c57d5",
+   "uasset": "Content/Imported/MaterialDatabase/PayPhone/PayPhone_Norm.uasset"
+  }
+ ]
+}

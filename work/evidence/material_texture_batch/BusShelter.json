@@ -1,0 +1,153 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "BusShelter",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/BusShelter.upk",
+ "source_sha256": "578ba788fc34244bed27ec11a38cae7cb30ee2fa68814f7d209ab400e061b7ae",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/BusShelter.upk#BusShelter_DiffSpec",
+   "object": "BusShelter_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BusShelter/BusShelter/Texture2D/BusShelter_DiffSpec.tga",
+   "extracted_sha256": "7ef812887a8ce99627a98e7c1c557ea6ba7d8546db7a67fce596c61f60633891",
+   "output_file": "Content/Extracted/MaterialDatabase/BusShelter/BusShelter/Texture2D/BusShelter_DiffSpec.tga",
+   "output_sha256": "7ef812887a8ce99627a98e7c1c557ea6ba7d8546db7a67fce596c61f60633891",
+   "uasset": "Content/Imported/MaterialDatabase/BusShelter/BusShelter_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/BusShelter.upk#BusShelter_Emiss",
+   "object": "BusShelter_Emiss",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BusShelter/BusShelter/Texture2D/BusShelter_Emiss.tga",
+   "extracted_sha256": "b21f2ee6710a0ba4cf51468219c37f9b506ea2fc7b0e307de2b8a34de50ea108",
+   "output_file": "Content/Extracted/MaterialDatabase/BusShelter/BusShelter/Texture2D/BusShelter_Emiss.tga",
+   "output_sha256": "b21f2ee6710a0ba4cf51468219c37f9b506ea2fc7b0e307de2b8a34de50ea108",
+   "uasset": "Content/Imported/MaterialDatabase/BusShelter/BusShelter_Emiss.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/BusShelter.upk#BusShelter_Norm",
+   "object": "BusShelter_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BusShelter/BusShelter/Texture2D/BusShelter_Norm.tga",
+   "extracted_sha256": "3641f6399eafd10ec0437731a8c40210292b855713cf56acdd85b7de6f7cf898",
+   "output_file": "Content/Extracted/MaterialDatabase/BusShelter/BusShelter/Texture2D/BusShelter_Norm.tga",
+   "output_sha256": "3641f6399eafd10ec0437731a8c40210292b855713cf56acdd85b7de6f7cf898",
+   "uasset": "Content/Imported/MaterialDatabase/BusShelter/BusShelter_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/BusShelter.upk#BusShelterSign_DiffSpec",
+   "object": "BusShelterSign_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BusShelter/BusShelter/Texture2D/BusShelterSign_DiffSpec.tga",
+   "extracted_sha256": "f323516721c3d9cd18da09f804351878608b57801dd23a2725085613f13bccd2",
+   "output_file": "Content/Extracted/MaterialDatabase/BusShelter/BusShelter/Texture2D/BusShelterSign_DiffSpec.tga",
+   "output_sha256": "f323516721c3d9cd18da09f804351878608b57801dd23a2725085613f13bccd2",
+   "uasset": "Content/Imported/MaterialDatabase/BusShelter/BusShelterSign_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/BusShelter.upk#BusShelterSign_Emiss",
+   "object": "BusShelterSign_Emiss",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BusShelter/BusShelter/Texture2D/BusShelterSign_Emiss.tga",
+   "extracted_sha256": "58d9919c7dd3695b440832f7c11bac2d9530fc3810d2b830d4fbdea600e0621b",
+   "output_file": "Content/Extracted/MaterialDatabase/BusShelter/BusShelter/Texture2D/BusShelterSign_Emiss.tga",
+   "output_sha256": "58d9919c7dd3695b440832f7c11bac2d9530fc3810d2b830d4fbdea600e0621b",
+   "uasset": "Content/Imported/MaterialDatabase/BusShelter/BusShelterSign_Emiss.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/BusShelter.upk#MI_BusShelter_Damage_Mat",
+   "object": "MI_BusShelter_Damage_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "BusShelter_Damage_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BusShelter/BusShelter/Texture2D/BusShelter_DiffSpec.tga",
+   "extracted_sha256": "7ef812887a8ce99627a98e7c1c557ea6ba7d8546db7a67fce596c61f60633891",
+   "output_file": "Content/Extracted/MaterialDatabase/BusShelter/BusShelter/Texture2D/BusShelter_DiffSpec.tga",
+   "output_sha256": "7ef812887a8ce99627a98e7c1c557ea6ba7d8546db7a67fce596c61f60633891",
+   "uasset": "Content/Imported/MaterialDatabase/BusShelter/MI_BusShelter_Damage_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/BusShelter.upk#MI_BusShelter_Mat",
+   "object": "MI_BusShelter_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "BusShelter_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BusShelter/BusShelter/Texture2D/BusShelter_DiffSpec.tga",
+   "extracted_sha256": "7ef812887a8ce99627a98e7c1c557ea6ba7d8546db7a67fce596c61f60633891",
+   "output_file": "Content/Extracted/MaterialDatabase/BusShelter/BusShelter/Texture2D/BusShelter_DiffSpec.tga",
+   "output_sha256": "7ef812887a8ce99627a98e7c1c557ea6ba7d8546db7a67fce596c61f60633891",
+   "uasset": "Content/Imported/MaterialDatabase/BusShelter/MI_BusShelter_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/BusShelter.upk#MI_RamRaidShopFront_MAT",
+   "object": "MI_RamRaidShopFront_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RamRaidShopFront_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BusShelter/ShopFront_Textures/Texture2D/RamRaidShopFront_DiffSpec.tga",
+   "extracted_sha256": "285a89c0ec0a87acfa376e7ac6b81d10c4c2d40c5118056e8656a21c2803dd5b",
+   "output_file": "Content/Extracted/MaterialDatabase/BusShelter/ShopFront_Textures/Texture2D/RamRaidShopFront_DiffSpec.tga",
+   "output_sha256": "285a89c0ec0a87acfa376e7ac6b81d10c4c2d40c5118056e8656a21c2803dd5b",
+   "uasset": "Content/Imported/MaterialDatabase/BusShelter/MI_RamRaidShopFront_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/BusShelter.upk#MI_Sign_Mat",
+   "object": "MI_Sign_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Sign_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BusShelter/BusShelter/Texture2D/BusShelterSign_DiffSpec.tga",
+   "extracted_sha256": "f323516721c3d9cd18da09f804351878608b57801dd23a2725085613f13bccd2",
+   "output_file": "Content/Extracted/MaterialDatabase/BusShelter/BusShelter/Texture2D/BusShelterSign_DiffSpec.tga",
+   "output_sha256": "f323516721c3d9cd18da09f804351878608b57801dd23a2725085613f13bccd2",
+   "uasset": "Content/Imported/MaterialDatabase/BusShelter/MI_Sign_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/BusShelter.upk#RamRaidShopFront_DiffSpec",
+   "object": "RamRaidShopFront_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BusShelter/ShopFront_Textures/Texture2D/RamRaidShopFront_DiffSpec.tga",
+   "extracted_sha256": "285a89c0ec0a87acfa376e7ac6b81d10c4c2d40c5118056e8656a21c2803dd5b",
+   "output_file": "Content/Extracted/MaterialDatabase/BusShelter/ShopFront_Textures/Texture2D/RamRaidShopFront_DiffSpec.tga",
+   "output_sha256": "285a89c0ec0a87acfa376e7ac6b81d10c4c2d40c5118056e8656a21c2803dd5b",
+   "uasset": "Content/Imported/MaterialDatabase/BusShelter/RamRaidShopFront_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/BusShelter.upk#RamRaidShopFront_Norm",
+   "object": "RamRaidShopFront_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BusShelter/ShopFront_Textures/Texture2D/RamRaidShopFront_Norm.tga",
+   "extracted_sha256": "2f80b7714be8bdc0dfee3413fc776ee2e97289db41df2968342f2a22e82afe3f",
+   "output_file": "Content/Extracted/MaterialDatabase/BusShelter/ShopFront_Textures/Texture2D/RamRaidShopFront_Norm.tga",
+   "output_sha256": "2f80b7714be8bdc0dfee3413fc776ee2e97289db41df2968342f2a22e82afe3f",
+   "uasset": "Content/Imported/MaterialDatabase/BusShelter/RamRaidShopFront_Norm.uasset"
+  }
+ ]
+}

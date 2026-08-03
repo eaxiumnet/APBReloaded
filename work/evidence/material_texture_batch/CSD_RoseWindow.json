@@ -1,0 +1,34 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "CSD_RoseWindow",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/PropMaterials/CSD_RoseWindow.upk",
+ "source_sha256": "cc68bb1a4717058f27f7a886c4debf316491b8525a93ae8f419e07e242b7a500",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_RoseWindow.upk#MI_csd_rosewindow",
+   "object": "MI_csd_rosewindow",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "csd_rosewindow",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_RoseWindow/CSD_RoseWindow/Texture2D/RoseWindow_Diff.tga",
+   "extracted_sha256": "3503155c5c4963dca538fc5b3af609f689537fd0a7de716e81a4558a1fcd91b5",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_RoseWindow/CSD_RoseWindow/Texture2D/RoseWindow_Diff.tga",
+   "output_sha256": "3503155c5c4963dca538fc5b3af609f689537fd0a7de716e81a4558a1fcd91b5",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_RoseWindow/MI_csd_rosewindow.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_RoseWindow.upk#RoseWindow_Diff",
+   "object": "RoseWindow_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_RoseWindow/CSD_RoseWindow/Texture2D/RoseWindow_Diff.tga",
+   "extracted_sha256": "3503155c5c4963dca538fc5b3af609f689537fd0a7de716e81a4558a1fcd91b5",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_RoseWindow/CSD_RoseWindow/Texture2D/RoseWindow_Diff.tga",
+   "output_sha256": "3503155c5c4963dca538fc5b3af609f689537fd0a7de716e81a4558a1fcd91b5",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_RoseWindow/RoseWindow_Diff.uasset"
+  }
+ ]
+}

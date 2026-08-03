@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FinancialFlagPole_Tiptoe",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/PropMaterials/FinancialFlagPole_Tiptoe.upk",
+ "source_sha256": "b9291b50a250c5dcc5be3edb9d6bd157c93946eeb1266f324bf2acb3ad00aa1e",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialFlagPole_Tiptoe.upk#FinancialFlagPoles_Flag_Norm",
+   "object": "FinancialFlagPoles_Flag_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialFlagPole_Tiptoe/FinancialFlagPole/Texture2D/FinancialFlagPoles_Flag_Norm.tga",
+   "extracted_sha256": "dfdfaa96537ef8c6820f50571b7b662a65d7b3e5e1bd8dba297584eb411fbdc5",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialFlagPole_Tiptoe/FinancialFlagPole/Texture2D/FinancialFlagPoles_Flag_Norm.tga",
+   "output_sha256": "dfdfaa96537ef8c6820f50571b7b662a65d7b3e5e1bd8dba297584eb411fbdc5",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialFlagPole_Tiptoe/FinancialFlagPoles_Flag_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialFlagPole_Tiptoe.upk#FinancialFlagPoles_Tiptoe_DiffSpec_GameRes",
+   "object": "FinancialFlagPoles_Tiptoe_DiffSpec_GameRes",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialFlagPole_Tiptoe/FinancialFlagPole_Tiptoe/Texture2D/FinancialFlagPoles_Tiptoe_DiffSpec_GameRes.tga",
+   "extracted_sha256": "8c5b2f5f7f2f315fc243e737a5ce5c6bb6935065784703e5c9bb214c80af18d0",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialFlagPole_Tiptoe/FinancialFlagPole_Tiptoe/Texture2D/FinancialFlagPoles_Tiptoe_DiffSpec_GameRes.tga",
+   "output_sha256": "8c5b2f5f7f2f315fc243e737a5ce5c6bb6935065784703e5c9bb214c80af18d0",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialFlagPole_Tiptoe/FinancialFlagPoles_Tiptoe_DiffSpec_GameRes.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialFlagPole_Tiptoe.upk#MI_FinancialFlagPole_Flag_Tiptoe_Mat",
+   "object": "MI_FinancialFlagPole_Flag_Tiptoe_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialFlagPole_Flag_Tiptoe_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialFlagPole_Tiptoe/FinancialFlagPole_Tiptoe/Texture2D/FinancialFlagPoles_Tiptoe_DiffSpec_GameRes.tga",
+   "extracted_sha256": "8c5b2f5f7f2f315fc243e737a5ce5c6bb6935065784703e5c9bb214c80af18d0",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialFlagPole_Tiptoe/FinancialFlagPole_Tiptoe/Texture2D/FinancialFlagPoles_Tiptoe_DiffSpec_GameRes.tga",
+   "output_sha256": "8c5b2f5f7f2f315fc243e737a5ce5c6bb6935065784703e5c9bb214c80af18d0",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialFlagPole_Tiptoe/MI_FinancialFlagPole_Flag_Tiptoe_Mat.uasset"
+  }
+ ]
+}

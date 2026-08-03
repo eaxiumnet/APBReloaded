@@ -1,0 +1,164 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "TestMapBlockNames",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/TestMaterials/TestMapBlockNames.upk",
+ "source_sha256": "95aac60f1ca043c944d6172f2e4b21a8a446d03c55272cb454aaaebaf6dbfc02",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/TestMaterials/TestMapBlockNames.upk#FinancialActiveFeatures",
+   "object": "FinancialActiveFeatures",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/TestMapBlockNames/TestMapBlockNames/Texture2D/FinancialActiveFeatures.tga",
+   "extracted_sha256": "cee7bfb60fd6a33f9b2489c6aa58b3c9bde1cfb33021ee0f32e469f32a5cf3fc",
+   "output_file": "Content/Extracted/MaterialDatabase/TestMapBlockNames/TestMapBlockNames/Texture2D/FinancialActiveFeatures.tga",
+   "output_sha256": "cee7bfb60fd6a33f9b2489c6aa58b3c9bde1cfb33021ee0f32e469f32a5cf3fc",
+   "uasset": "Content/Imported/MaterialDatabase/TestMapBlockNames/FinancialActiveFeatures.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TestMaterials/TestMapBlockNames.upk#FinancialProps",
+   "object": "FinancialProps",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/TestMapBlockNames/TestMapBlockNames/Texture2D/FinancialProps.tga",
+   "extracted_sha256": "c076b47c9c0240f0224cffb792bf060d8f1ac3f165b7cc1c387d67bfbc623473",
+   "output_file": "Content/Extracted/MaterialDatabase/TestMapBlockNames/TestMapBlockNames/Texture2D/FinancialProps.tga",
+   "output_sha256": "c076b47c9c0240f0224cffb792bf060d8f1ac3f165b7cc1c387d67bfbc623473",
+   "uasset": "Content/Imported/MaterialDatabase/TestMapBlockNames/FinancialProps.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TestMaterials/TestMapBlockNames.upk#FinancialStaticFeatures",
+   "object": "FinancialStaticFeatures",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/TestMapBlockNames/TestMapBlockNames/Texture2D/FinancialStaticFeatures.tga",
+   "extracted_sha256": "18d0b9fabcb8d0a49431e1f1bdaafea9dbedd83e6fa0398765a6f3a449673b89",
+   "output_file": "Content/Extracted/MaterialDatabase/TestMapBlockNames/TestMapBlockNames/Texture2D/FinancialStaticFeatures.tga",
+   "output_sha256": "18d0b9fabcb8d0a49431e1f1bdaafea9dbedd83e6fa0398765a6f3a449673b89",
+   "uasset": "Content/Imported/MaterialDatabase/TestMapBlockNames/FinancialStaticFeatures.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TestMaterials/TestMapBlockNames.upk#MI_FinancialActiveFeatures_Mat",
+   "object": "MI_FinancialActiveFeatures_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialActiveFeatures_Mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/TestMapBlockNames/TestMapBlockNames/Texture2D/FinancialActiveFeatures.tga",
+   "extracted_sha256": "cee7bfb60fd6a33f9b2489c6aa58b3c9bde1cfb33021ee0f32e469f32a5cf3fc",
+   "output_file": "Content/Extracted/MaterialDatabase/TestMapBlockNames/TestMapBlockNames/Texture2D/FinancialActiveFeatures.tga",
+   "output_sha256": "cee7bfb60fd6a33f9b2489c6aa58b3c9bde1cfb33021ee0f32e469f32a5cf3fc",
+   "uasset": "Content/Imported/MaterialDatabase/TestMapBlockNames/MI_FinancialActiveFeatures_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TestMaterials/TestMapBlockNames.upk#MI_FinancialProps_Mat",
+   "object": "MI_FinancialProps_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialProps_Mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/TestMapBlockNames/TestMapBlockNames/Texture2D/FinancialProps.tga",
+   "extracted_sha256": "c076b47c9c0240f0224cffb792bf060d8f1ac3f165b7cc1c387d67bfbc623473",
+   "output_file": "Content/Extracted/MaterialDatabase/TestMapBlockNames/TestMapBlockNames/Texture2D/FinancialProps.tga",
+   "output_sha256": "c076b47c9c0240f0224cffb792bf060d8f1ac3f165b7cc1c387d67bfbc623473",
+   "uasset": "Content/Imported/MaterialDatabase/TestMapBlockNames/MI_FinancialProps_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TestMaterials/TestMapBlockNames.upk#MI_FinancialStaticFeatures_Mat",
+   "object": "MI_FinancialStaticFeatures_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialStaticFeatures_Mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/TestMapBlockNames/TestMapBlockNames/Texture2D/FinancialStaticFeatures.tga",
+   "extracted_sha256": "18d0b9fabcb8d0a49431e1f1bdaafea9dbedd83e6fa0398765a6f3a449673b89",
+   "output_file": "Content/Extracted/MaterialDatabase/TestMapBlockNames/TestMapBlockNames/Texture2D/FinancialStaticFeatures.tga",
+   "output_sha256": "18d0b9fabcb8d0a49431e1f1bdaafea9dbedd83e6fa0398765a6f3a449673b89",
+   "uasset": "Content/Imported/MaterialDatabase/TestMapBlockNames/MI_FinancialStaticFeatures_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TestMaterials/TestMapBlockNames.upk#MI_MidtownActiveFeature_Mat",
+   "object": "MI_MidtownActiveFeature_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "MidtownActiveFeature_Mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/TestMapBlockNames/TestMapBlockNames/Texture2D/MidtownActiveFeatures.tga",
+   "extracted_sha256": "5e36cb718bd415e497999099317d9317236c72351cbea87043107937c2df2bcb",
+   "output_file": "Content/Extracted/MaterialDatabase/TestMapBlockNames/TestMapBlockNames/Texture2D/MidtownActiveFeatures.tga",
+   "output_sha256": "5e36cb718bd415e497999099317d9317236c72351cbea87043107937c2df2bcb",
+   "uasset": "Content/Imported/MaterialDatabase/TestMapBlockNames/MI_MidtownActiveFeature_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TestMaterials/TestMapBlockNames.upk#MI_MidtownProps_Mat",
+   "object": "MI_MidtownProps_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "MidtownProps_Mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/TestMapBlockNames/TestMapBlockNames/Texture2D/MidtownProps.tga",
+   "extracted_sha256": "bcdb4a3bd030907201f374dd47f1d5ecddd712ae93f06e0172fe513e2f7054d3",
+   "output_file": "Content/Extracted/MaterialDatabase/TestMapBlockNames/TestMapBlockNames/Texture2D/MidtownProps.tga",
+   "output_sha256": "bcdb4a3bd030907201f374dd47f1d5ecddd712ae93f06e0172fe513e2f7054d3",
+   "uasset": "Content/Imported/MaterialDatabase/TestMapBlockNames/MI_MidtownProps_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TestMaterials/TestMapBlockNames.upk#MI_MidtownStaticFeature_Mat",
+   "object": "MI_MidtownStaticFeature_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "MidtownStaticFeature_Mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/TestMapBlockNames/TestMapBlockNames/Texture2D/MidtownStaticFeatures.tga",
+   "extracted_sha256": "05c27e1a1ae506315d8298f63a79eab15af301fd19961b4f0538df05c9c89360",
+   "output_file": "Content/Extracted/MaterialDatabase/TestMapBlockNames/TestMapBlockNames/Texture2D/MidtownStaticFeatures.tga",
+   "output_sha256": "05c27e1a1ae506315d8298f63a79eab15af301fd19961b4f0538df05c9c89360",
+   "uasset": "Content/Imported/MaterialDatabase/TestMapBlockNames/MI_MidtownStaticFeature_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TestMaterials/TestMapBlockNames.upk#MidtownActiveFeatures",
+   "object": "MidtownActiveFeatures",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/TestMapBlockNames/TestMapBlockNames/Texture2D/MidtownActiveFeatures.tga",
+   "extracted_sha256": "5e36cb718bd415e497999099317d9317236c72351cbea87043107937c2df2bcb",
+   "output_file": "Content/Extracted/MaterialDatabase/TestMapBlockNames/TestMapBlockNames/Texture2D/MidtownActiveFeatures.tga",
+   "output_sha256": "5e36cb718bd415e497999099317d9317236c72351cbea87043107937c2df2bcb",
+   "uasset": "Content/Imported/MaterialDatabase/TestMapBlockNames/MidtownActiveFeatures.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TestMaterials/TestMapBlockNames.upk#MidtownProps",
+   "object": "MidtownProps",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/TestMapBlockNames/TestMapBlockNames/Texture2D/MidtownProps.tga",
+   "extracted_sha256": "bcdb4a3bd030907201f374dd47f1d5ecddd712ae93f06e0172fe513e2f7054d3",
+   "output_file": "Content/Extracted/MaterialDatabase/TestMapBlockNames/TestMapBlockNames/Texture2D/MidtownProps.tga",
+   "output_sha256": "bcdb4a3bd030907201f374dd47f1d5ecddd712ae93f06e0172fe513e2f7054d3",
+   "uasset": "Content/Imported/MaterialDatabase/TestMapBlockNames/MidtownProps.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TestMaterials/TestMapBlockNames.upk#MidtownStaticFeatures",
+   "object": "MidtownStaticFeatures",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/TestMapBlockNames/TestMapBlockNames/Texture2D/MidtownStaticFeatures.tga",
+   "extracted_sha256": "05c27e1a1ae506315d8298f63a79eab15af301fd19961b4f0538df05c9c89360",
+   "output_file": "Content/Extracted/MaterialDatabase/TestMapBlockNames/TestMapBlockNames/Texture2D/MidtownStaticFeatures.tga",
+   "output_sha256": "05c27e1a1ae506315d8298f63a79eab15af301fd19961b4f0538df05c9c89360",
+   "uasset": "Content/Imported/MaterialDatabase/TestMapBlockNames/MidtownStaticFeatures.uasset"
+  }
+ ]
+}

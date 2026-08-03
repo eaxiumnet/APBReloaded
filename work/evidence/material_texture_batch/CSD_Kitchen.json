@@ -1,0 +1,404 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "CSD_Kitchen",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Kitchen.upk",
+ "source_sha256": "0f8c4f117360f3e45ad4603833cd889c25a5aa7da95fb2f7ae50c2164acd1977",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Kitchen.upk#CSD_Kitchen01_DiffSpec",
+   "object": "CSD_Kitchen01_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/CSD_Kitchen/Texture2D/CSD_Kitchen01_DiffSpec.tga",
+   "extracted_sha256": "c64f2ac93f5a30674a42c577d8c2421dcdbb009d853cb73dc27ddf8f94bf2a0b",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/CSD_Kitchen/Texture2D/CSD_Kitchen01_DiffSpec.tga",
+   "output_sha256": "c64f2ac93f5a30674a42c577d8c2421dcdbb009d853cb73dc27ddf8f94bf2a0b",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Kitchen/CSD_Kitchen01_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Kitchen.upk#CSD_KitchenObjects_Pans_DiffSpec",
+   "object": "CSD_KitchenObjects_Pans_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/CSD_KitchenObjects/Texture2D/CSD_KitchenObjects_Pans_DiffSpec.tga",
+   "extracted_sha256": "9f144c1bb906868c1e1e20c1bd76691901b2f2630a14537825bcc315e1fb9bca",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/CSD_KitchenObjects/Texture2D/CSD_KitchenObjects_Pans_DiffSpec.tga",
+   "output_sha256": "9f144c1bb906868c1e1e20c1bd76691901b2f2630a14537825bcc315e1fb9bca",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Kitchen/CSD_KitchenObjects_Pans_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Kitchen.upk#CSD_KitchenObjects_Pans_Norm",
+   "object": "CSD_KitchenObjects_Pans_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/CSD_KitchenObjects/Texture2D/CSD_KitchenObjects_Pans_Norm.tga",
+   "extracted_sha256": "d0c91bcb485d741bb15e15f5fd79b13abc7d4b3fbfa54912bb0a1eacfe99ac73",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/CSD_KitchenObjects/Texture2D/CSD_KitchenObjects_Pans_Norm.tga",
+   "output_sha256": "d0c91bcb485d741bb15e15f5fd79b13abc7d4b3fbfa54912bb0a1eacfe99ac73",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Kitchen/CSD_KitchenObjects_Pans_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Kitchen.upk#CSD_KitchenShelvingUnits_DiffSpec",
+   "object": "CSD_KitchenShelvingUnits_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/CSD_KitchenShelvingUnits/Texture2D/CSD_KitchenShelvingUnits_DiffSpec.tga",
+   "extracted_sha256": "c6053c8b4537033b418f3dac243d1e9c2adf926c4d3334ddec653d8319014822",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/CSD_KitchenShelvingUnits/Texture2D/CSD_KitchenShelvingUnits_DiffSpec.tga",
+   "output_sha256": "c6053c8b4537033b418f3dac243d1e9c2adf926c4d3334ddec653d8319014822",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Kitchen/CSD_KitchenShelvingUnits_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Kitchen.upk#CSD_KitchenShelvingUnits_Norm",
+   "object": "CSD_KitchenShelvingUnits_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/CSD_KitchenShelvingUnits/Texture2D/CSD_KitchenShelvingUnits_Norm.tga",
+   "extracted_sha256": "610dcb0b315f5de218a4c8fe74b3e3a262a14f4386c0b24c081c7d0e8f8906c5",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/CSD_KitchenShelvingUnits/Texture2D/CSD_KitchenShelvingUnits_Norm.tga",
+   "output_sha256": "610dcb0b315f5de218a4c8fe74b3e3a262a14f4386c0b24c081c7d0e8f8906c5",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Kitchen/CSD_KitchenShelvingUnits_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Kitchen.upk#CSD_KitchenShelvingUnits_Opac",
+   "object": "CSD_KitchenShelvingUnits_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/CSD_KitchenShelvingUnits/Texture2D/CSD_KitchenShelvingUnits_Opac.tga",
+   "extracted_sha256": "e66b125a47818b3519ef26978166bda29536d660a61ed7fa06bc95f7c70a1e3b",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/CSD_KitchenShelvingUnits/Texture2D/CSD_KitchenShelvingUnits_Opac.tga",
+   "output_sha256": "e66b125a47818b3519ef26978166bda29536d660a61ed7fa06bc95f7c70a1e3b",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Kitchen/CSD_KitchenShelvingUnits_Opac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Kitchen.upk#DirtOverlay_01",
+   "object": "DirtOverlay_01",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Kitchen/DirtOverlay_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Kitchen.upk#Drips",
+   "object": "Drips",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/CSD_Kitchen/Texture2D/Drips.tga",
+   "extracted_sha256": "1271b5ed38222ed1ad5f387e6101410fec03986974c55669cb2c91f89ff980af",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/CSD_Kitchen/Texture2D/Drips.tga",
+   "output_sha256": "1271b5ed38222ed1ad5f387e6101410fec03986974c55669cb2c91f89ff980af",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Kitchen/Drips.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Kitchen.upk#FloorTile_OldBlue_Diff",
+   "object": "FloorTile_OldBlue_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/CSD_FloorTiles/Texture2D/FloorTile_OldBlue_Diff.tga",
+   "extracted_sha256": "59e360bb4bb1176be5c61be6cba67daefb553557312c46a5c5092b8998a039d7",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/CSD_FloorTiles/Texture2D/FloorTile_OldBlue_Diff.tga",
+   "output_sha256": "59e360bb4bb1176be5c61be6cba67daefb553557312c46a5c5092b8998a039d7",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Kitchen/FloorTile_OldBlue_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Kitchen.upk#InteriorWall_CreamTileable_Diff",
+   "object": "InteriorWall_CreamTileable_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/InteriorWall_Old/Texture2D/InteriorWall_CreamTileable_Diff.tga",
+   "extracted_sha256": "3caeeade0146d541c3634b89f062a801573f4a88193ce783168afb556cfa5cd1",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/InteriorWall_Old/Texture2D/InteriorWall_CreamTileable_Diff.tga",
+   "output_sha256": "3caeeade0146d541c3634b89f062a801573f4a88193ce783168afb556cfa5cd1",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Kitchen/InteriorWall_CreamTileable_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Kitchen.upk#Metal_Checkerplate_Norm",
+   "object": "Metal_Checkerplate_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/Metal/Texture2D/Metal_Checkerplate_Norm.tga",
+   "extracted_sha256": "f9de6d8240a00daba225da306f3524848e2ec8b7031e37343dbad7e5a6fbf432",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/Metal/Texture2D/Metal_Checkerplate_Norm.tga",
+   "output_sha256": "f9de6d8240a00daba225da306f3524848e2ec8b7031e37343dbad7e5a6fbf432",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Kitchen/Metal_Checkerplate_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Kitchen.upk#MI_CSD_Kitchen01",
+   "object": "MI_CSD_Kitchen01",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CSD_Kitchen01",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/CSD_Kitchen/Texture2D/CSD_Kitchen01_DiffSpec.tga",
+   "extracted_sha256": "c64f2ac93f5a30674a42c577d8c2421dcdbb009d853cb73dc27ddf8f94bf2a0b",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/CSD_Kitchen/Texture2D/CSD_Kitchen01_DiffSpec.tga",
+   "output_sha256": "c64f2ac93f5a30674a42c577d8c2421dcdbb009d853cb73dc27ddf8f94bf2a0b",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Kitchen/MI_CSD_Kitchen01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Kitchen.upk#MI_CSD_KitchenObjects_Pans_MAT",
+   "object": "MI_CSD_KitchenObjects_Pans_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CSD_KitchenObjects_Pans_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/CSD_KitchenObjects/Texture2D/CSD_KitchenObjects_Pans_DiffSpec.tga",
+   "extracted_sha256": "9f144c1bb906868c1e1e20c1bd76691901b2f2630a14537825bcc315e1fb9bca",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/CSD_KitchenObjects/Texture2D/CSD_KitchenObjects_Pans_DiffSpec.tga",
+   "output_sha256": "9f144c1bb906868c1e1e20c1bd76691901b2f2630a14537825bcc315e1fb9bca",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Kitchen/MI_CSD_KitchenObjects_Pans_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Kitchen.upk#MI_CSD_KitchenShelvingUnits_MAT",
+   "object": "MI_CSD_KitchenShelvingUnits_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CSD_KitchenShelvingUnits_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/CSD_KitchenShelvingUnits/Texture2D/CSD_KitchenShelvingUnits_DiffSpec.tga",
+   "extracted_sha256": "c6053c8b4537033b418f3dac243d1e9c2adf926c4d3334ddec653d8319014822",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/CSD_KitchenShelvingUnits/Texture2D/CSD_KitchenShelvingUnits_DiffSpec.tga",
+   "output_sha256": "c6053c8b4537033b418f3dac243d1e9c2adf926c4d3334ddec653d8319014822",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Kitchen/MI_CSD_KitchenShelvingUnits_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Kitchen.upk#MI_CSD_MetalBrushed",
+   "object": "MI_CSD_MetalBrushed",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CSD_MetalBrushed",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/CSD_Kitchen/Texture2D/Drips.tga",
+   "extracted_sha256": "1271b5ed38222ed1ad5f387e6101410fec03986974c55669cb2c91f89ff980af",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/CSD_Kitchen/Texture2D/Drips.tga",
+   "output_sha256": "1271b5ed38222ed1ad5f387e6101410fec03986974c55669cb2c91f89ff980af",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Kitchen/MI_CSD_MetalBrushed.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Kitchen.upk#MI_Drips",
+   "object": "MI_Drips",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Drips",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/CSD_Kitchen/Texture2D/Drips.tga",
+   "extracted_sha256": "1271b5ed38222ed1ad5f387e6101410fec03986974c55669cb2c91f89ff980af",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/CSD_Kitchen/Texture2D/Drips.tga",
+   "output_sha256": "1271b5ed38222ed1ad5f387e6101410fec03986974c55669cb2c91f89ff980af",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Kitchen/MI_Drips.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Kitchen.upk#MI_FloorTile_Old_Mat",
+   "object": "MI_FloorTile_Old_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FloorTile_Old_Mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/CSD_FloorTiles/Texture2D/FloorTile_OldBlue_Diff.tga",
+   "extracted_sha256": "59e360bb4bb1176be5c61be6cba67daefb553557312c46a5c5092b8998a039d7",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/CSD_FloorTiles/Texture2D/FloorTile_OldBlue_Diff.tga",
+   "output_sha256": "59e360bb4bb1176be5c61be6cba67daefb553557312c46a5c5092b8998a039d7",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Kitchen/MI_FloorTile_Old_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Kitchen.upk#MI_InteriorWall_CreamTileable",
+   "object": "MI_InteriorWall_CreamTileable",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "InteriorWall_CreamTileable",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/InteriorWall_Old/Texture2D/InteriorWall_CreamTileable_Diff.tga",
+   "extracted_sha256": "3caeeade0146d541c3634b89f062a801573f4a88193ce783168afb556cfa5cd1",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/InteriorWall_Old/Texture2D/InteriorWall_CreamTileable_Diff.tga",
+   "output_sha256": "3caeeade0146d541c3634b89f062a801573f4a88193ce783168afb556cfa5cd1",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Kitchen/MI_InteriorWall_CreamTileable.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Kitchen.upk#MI_Metal_M02_Grey",
+   "object": "MI_Metal_M02_Grey",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_M02_Grey",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Kitchen/MI_Metal_M02_Grey.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Kitchen.upk#MI_Metal_PARENT",
+   "object": "MI_Metal_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_PARENT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Kitchen/MI_Metal_PARENT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Kitchen.upk#MI_Metal_Rust",
+   "object": "MI_Metal_Rust",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_Rust",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Kitchen/MI_Metal_Rust.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Kitchen.upk#MI_PaintedCeiling_Mat",
+   "object": "MI_PaintedCeiling_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PaintedCeiling_Mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/CSD_Ceiling/Texture2D/PaintedCeiling_Diff.tga",
+   "extracted_sha256": "11c42617831d99de602e738e5ae08eaa7dd722d0b1a87030d6cd506946adcd47",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/CSD_Ceiling/Texture2D/PaintedCeiling_Diff.tga",
+   "output_sha256": "11c42617831d99de602e738e5ae08eaa7dd722d0b1a87030d6cd506946adcd47",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Kitchen/MI_PaintedCeiling_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Kitchen.upk#MI_Pipe",
+   "object": "MI_Pipe",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Pipe",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/Pipes/Texture2D/Pipe_DiffSpec.tga",
+   "extracted_sha256": "bd8c58d7e30b1aeb5f72a954067fe80a2f7206c7a56fc2221d5dd8b38e8cec6d",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/Pipes/Texture2D/Pipe_DiffSpec.tga",
+   "output_sha256": "bd8c58d7e30b1aeb5f72a954067fe80a2f7206c7a56fc2221d5dd8b38e8cec6d",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Kitchen/MI_Pipe.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Kitchen.upk#MI_Plastic_Blue",
+   "object": "MI_Plastic_Blue",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Plastic_Blue",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/Plastic/Texture2D/Plastic_DiffSpec.tga",
+   "extracted_sha256": "88a6ba9e77d347833ace7f71a510a573c4fc68d1501ae6dceb5da6ae20faad15",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/Plastic/Texture2D/Plastic_DiffSpec.tga",
+   "output_sha256": "88a6ba9e77d347833ace7f71a510a573c4fc68d1501ae6dceb5da6ae20faad15",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Kitchen/MI_Plastic_Blue.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Kitchen.upk#MI_Plastic_PARENT",
+   "object": "MI_Plastic_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Plastic_PARENT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/Plastic/Texture2D/Plastic_DiffSpec.tga",
+   "extracted_sha256": "88a6ba9e77d347833ace7f71a510a573c4fc68d1501ae6dceb5da6ae20faad15",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/Plastic/Texture2D/Plastic_DiffSpec.tga",
+   "output_sha256": "88a6ba9e77d347833ace7f71a510a573c4fc68d1501ae6dceb5da6ae20faad15",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Kitchen/MI_Plastic_PARENT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Kitchen.upk#MI_Plastic_White",
+   "object": "MI_Plastic_White",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Plastic_White",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/Plastic/Texture2D/Plastic_DiffSpec.tga",
+   "extracted_sha256": "88a6ba9e77d347833ace7f71a510a573c4fc68d1501ae6dceb5da6ae20faad15",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/Plastic/Texture2D/Plastic_DiffSpec.tga",
+   "output_sha256": "88a6ba9e77d347833ace7f71a510a573c4fc68d1501ae6dceb5da6ae20faad15",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Kitchen/MI_Plastic_White.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Kitchen.upk#PaintedCeiling_Diff",
+   "object": "PaintedCeiling_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/CSD_Ceiling/Texture2D/PaintedCeiling_Diff.tga",
+   "extracted_sha256": "11c42617831d99de602e738e5ae08eaa7dd722d0b1a87030d6cd506946adcd47",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/CSD_Ceiling/Texture2D/PaintedCeiling_Diff.tga",
+   "output_sha256": "11c42617831d99de602e738e5ae08eaa7dd722d0b1a87030d6cd506946adcd47",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Kitchen/PaintedCeiling_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Kitchen.upk#Pipe_DiffSpec",
+   "object": "Pipe_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/Pipes/Texture2D/Pipe_DiffSpec.tga",
+   "extracted_sha256": "bd8c58d7e30b1aeb5f72a954067fe80a2f7206c7a56fc2221d5dd8b38e8cec6d",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/Pipes/Texture2D/Pipe_DiffSpec.tga",
+   "output_sha256": "bd8c58d7e30b1aeb5f72a954067fe80a2f7206c7a56fc2221d5dd8b38e8cec6d",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Kitchen/Pipe_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Kitchen.upk#Pipe_Norm",
+   "object": "Pipe_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/Pipes/Texture2D/Pipe_Norm.tga",
+   "extracted_sha256": "7446e0dccec7b78b94cebac46620a301283df1047a982c23172d3df901d0e2ae",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/Pipes/Texture2D/Pipe_Norm.tga",
+   "output_sha256": "7446e0dccec7b78b94cebac46620a301283df1047a982c23172d3df901d0e2ae",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Kitchen/Pipe_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Kitchen.upk#Plastic_DiffSpec",
+   "object": "Plastic_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/Plastic/Texture2D/Plastic_DiffSpec.tga",
+   "extracted_sha256": "88a6ba9e77d347833ace7f71a510a573c4fc68d1501ae6dceb5da6ae20faad15",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Kitchen/Plastic/Texture2D/Plastic_DiffSpec.tga",
+   "output_sha256": "88a6ba9e77d347833ace7f71a510a573c4fc68d1501ae6dceb5da6ae20faad15",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Kitchen/Plastic_DiffSpec.uasset"
+  }
+ ]
+}

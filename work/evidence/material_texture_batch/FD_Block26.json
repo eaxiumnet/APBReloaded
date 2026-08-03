@@ -1,0 +1,114 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FD_Block26",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block26.upk",
+ "source_sha256": "ac9f05645a3bd43d74f8f320927d1eaf769111cffc7fefe269b5c8aaac546801",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block26.upk#Banner_Wind_NORM",
+   "object": "Banner_Wind_NORM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Block26/Banners/Texture2D/Banner_Wind_NORM.tga",
+   "extracted_sha256": "e13d9c9776faf464b922f0292a6a9476257c57818deebd813390bca01bafc9a9",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Block26/Banners/Texture2D/Banner_Wind_NORM.tga",
+   "output_sha256": "e13d9c9776faf464b922f0292a6a9476257c57818deebd813390bca01bafc9a9",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Block26/Banner_Wind_NORM.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block26.upk#DirtOverlay_01",
+   "object": "DirtOverlay_01",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Block26/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Block26/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Block26/DirtOverlay_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block26.upk#Metal_Checkerplate_Norm",
+   "object": "Metal_Checkerplate_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Block26/Metal/Texture2D/Metal_Checkerplate_Norm.tga",
+   "extracted_sha256": "f9de6d8240a00daba225da306f3524848e2ec8b7031e37343dbad7e5a6fbf432",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Block26/Metal/Texture2D/Metal_Checkerplate_Norm.tga",
+   "output_sha256": "f9de6d8240a00daba225da306f3524848e2ec8b7031e37343dbad7e5a6fbf432",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Block26/Metal_Checkerplate_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block26.upk#MI_Banner_CommunityHall_01",
+   "object": "MI_Banner_CommunityHall_01",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Banner_CommunityHall_01",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Block26/Banners/Texture2D/Banner_Wind_NORM.tga",
+   "extracted_sha256": "e13d9c9776faf464b922f0292a6a9476257c57818deebd813390bca01bafc9a9",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Block26/Banners/Texture2D/Banner_Wind_NORM.tga",
+   "output_sha256": "e13d9c9776faf464b922f0292a6a9476257c57818deebd813390bca01bafc9a9",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Block26/MI_Banner_CommunityHall_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block26.upk#MI_HotelSign",
+   "object": "MI_HotelSign",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "HotelSign",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Block26/FD_Signage/Texture2D/Spectrum.tga",
+   "extracted_sha256": "8e9b4925947177fc0d3c7808567f06f022842da315f83fcd56a7facf104b511a",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Block26/FD_Signage/Texture2D/Spectrum.tga",
+   "output_sha256": "8e9b4925947177fc0d3c7808567f06f022842da315f83fcd56a7facf104b511a",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Block26/MI_HotelSign.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block26.upk#MI_Metal_M03_GreyDark",
+   "object": "MI_Metal_M03_GreyDark",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_M03_GreyDark",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Block26/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Block26/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Block26/MI_Metal_M03_GreyDark.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block26.upk#MI_Metal_PARENT",
+   "object": "MI_Metal_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_PARENT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Block26/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Block26/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Block26/MI_Metal_PARENT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block26.upk#Spectrum",
+   "object": "Spectrum",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Block26/FD_Signage/Texture2D/Spectrum.tga",
+   "extracted_sha256": "8e9b4925947177fc0d3c7808567f06f022842da315f83fcd56a7facf104b511a",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Block26/FD_Signage/Texture2D/Spectrum.tga",
+   "output_sha256": "8e9b4925947177fc0d3c7808567f06f022842da315f83fcd56a7facf104b511a",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Block26/Spectrum.uasset"
+  }
+ ]
+}

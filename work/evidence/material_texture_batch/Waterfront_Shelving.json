@@ -1,0 +1,34 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Waterfront_Shelving",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/WaterfrontDistrict/PropMaterials/Waterfront_Shelving.upk",
+ "source_sha256": "c474500a8797011b08289fa79b6ad261b8c6102c824877f5a5ca776fdacaf1a9",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/Waterfront_Shelving.upk#MI_Shelving_Metal",
+   "object": "MI_Shelving_Metal",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Shelving_Metal",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Waterfront_Shelving/Waterfront_Shelving/Texture2D/Shelving_DIFF.tga",
+   "extracted_sha256": "ad1b791110ccdfccac555873230a2913d452132d7723f60ae87688013dc3d224",
+   "output_file": "Content/Extracted/MaterialDatabase/Waterfront_Shelving/Waterfront_Shelving/Texture2D/Shelving_DIFF.tga",
+   "output_sha256": "ad1b791110ccdfccac555873230a2913d452132d7723f60ae87688013dc3d224",
+   "uasset": "Content/Imported/MaterialDatabase/Waterfront_Shelving/MI_Shelving_Metal.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/Waterfront_Shelving.upk#Shelving_DIFF",
+   "object": "Shelving_DIFF",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Waterfront_Shelving/Waterfront_Shelving/Texture2D/Shelving_DIFF.tga",
+   "extracted_sha256": "ad1b791110ccdfccac555873230a2913d452132d7723f60ae87688013dc3d224",
+   "output_file": "Content/Extracted/MaterialDatabase/Waterfront_Shelving/Waterfront_Shelving/Texture2D/Shelving_DIFF.tga",
+   "output_sha256": "ad1b791110ccdfccac555873230a2913d452132d7723f60ae87688013dc3d224",
+   "uasset": "Content/Imported/MaterialDatabase/Waterfront_Shelving/Shelving_DIFF.uasset"
+  }
+ ]
+}

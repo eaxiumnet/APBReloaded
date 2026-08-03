@@ -1,0 +1,74 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Terrain_RLD",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/Terrain/Terrain_RLD.upk",
+ "source_sha256": "aab0b21ed4fd2716c1c59f19c12fb30043017cc019c75e6d4029e63d71abcda2",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Terrain/Terrain_RLD.upk#MI_Sand_01_RLD",
+   "object": "MI_Sand_01_RLD",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Sand_01_RLD",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain_RLD/Terrain_RLD/Texture2D/Sand_01_RLD_Diff.tga",
+   "extracted_sha256": "0f6bcbea9bf2b03cab73f3f3957248b1050b8699e708704294ff50bc39a2915e",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain_RLD/Terrain_RLD/Texture2D/Sand_01_RLD_Diff.tga",
+   "output_sha256": "0f6bcbea9bf2b03cab73f3f3957248b1050b8699e708704294ff50bc39a2915e",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain_RLD/MI_Sand_01_RLD.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Terrain/Terrain_RLD.upk#MI_Sand_02_RLD",
+   "object": "MI_Sand_02_RLD",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Sand_02_RLD",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain_RLD/Terrain_RLD/Texture2D/Sand_01_RLD_Diff.tga",
+   "extracted_sha256": "0f6bcbea9bf2b03cab73f3f3957248b1050b8699e708704294ff50bc39a2915e",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain_RLD/Terrain_RLD/Texture2D/Sand_01_RLD_Diff.tga",
+   "output_sha256": "0f6bcbea9bf2b03cab73f3f3957248b1050b8699e708704294ff50bc39a2915e",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain_RLD/MI_Sand_02_RLD.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Terrain/Terrain_RLD.upk#Sand_01_RLD_Diff",
+   "object": "Sand_01_RLD_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain_RLD/Terrain_RLD/Texture2D/Sand_01_RLD_Diff.tga",
+   "extracted_sha256": "0f6bcbea9bf2b03cab73f3f3957248b1050b8699e708704294ff50bc39a2915e",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain_RLD/Terrain_RLD/Texture2D/Sand_01_RLD_Diff.tga",
+   "output_sha256": "0f6bcbea9bf2b03cab73f3f3957248b1050b8699e708704294ff50bc39a2915e",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain_RLD/Sand_01_RLD_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Terrain/Terrain_RLD.upk#Sand_01_RLD_Norm",
+   "object": "Sand_01_RLD_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain_RLD/Terrain_RLD/Texture2D/Sand_01_RLD_Norm.tga",
+   "extracted_sha256": "00b2c07289217a2ddeb1ceb9617f64b52232ad93914d8c32ddbe8a3033ac5810",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain_RLD/Terrain_RLD/Texture2D/Sand_01_RLD_Norm.tga",
+   "output_sha256": "00b2c07289217a2ddeb1ceb9617f64b52232ad93914d8c32ddbe8a3033ac5810",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain_RLD/Sand_01_RLD_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Terrain/Terrain_RLD.upk#Sand_02_RLD_Norm",
+   "object": "Sand_02_RLD_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain_RLD/Terrain_RLD/Texture2D/Sand_02_RLD_Norm.tga",
+   "extracted_sha256": "b647347f60876595b9525b3365eb282e11131de883590248bbd4e85474874993",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain_RLD/Terrain_RLD/Texture2D/Sand_02_RLD_Norm.tga",
+   "output_sha256": "b647347f60876595b9525b3365eb282e11131de883590248bbd4e85474874993",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain_RLD/Sand_02_RLD_Norm.uasset"
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FD_Block06",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block06.upk",
+ "source_sha256": "2df12c73da72c178a4e0cda639956382d2c287c5bfe7726a1c1f3c34b1b81be5",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block06.upk#MI_SkyCity_mat",
+   "object": "MI_SkyCity_mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "SkyCity_mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Block06/FD_Block06/Texture2D/SkyCity_masks.tga",
+   "extracted_sha256": "107fbb57ecb3a78a748a60862df6c25e6a03f27258a1774c76b52e996e66cbf1",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Block06/FD_Block06/Texture2D/SkyCity_masks.tga",
+   "output_sha256": "107fbb57ecb3a78a748a60862df6c25e6a03f27258a1774c76b52e996e66cbf1",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Block06/MI_SkyCity_mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block06.upk#SkyCity_masks",
+   "object": "SkyCity_masks",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Block06/FD_Block06/Texture2D/SkyCity_masks.tga",
+   "extracted_sha256": "107fbb57ecb3a78a748a60862df6c25e6a03f27258a1774c76b52e996e66cbf1",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Block06/FD_Block06/Texture2D/SkyCity_masks.tga",
+   "output_sha256": "107fbb57ecb3a78a748a60862df6c25e6a03f27258a1774c76b52e996e66cbf1",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Block06/SkyCity_masks.uasset"
+  }
+ ]
+}

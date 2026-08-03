@@ -1,0 +1,595 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FD_Signage",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk",
+ "source_sha256": "103362b09497708bfa4d63be25bd0a5824e01b4c74484835e98b932bdadc4e58",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk#Banner_Wind_NORM",
+   "object": "Banner_Wind_NORM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Signage/Banners/Texture2D/Banner_Wind_NORM.tga",
+   "extracted_sha256": "e13d9c9776faf464b922f0292a6a9476257c57818deebd813390bca01bafc9a9",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Signage/Banners/Texture2D/Banner_Wind_NORM.tga",
+   "output_sha256": "e13d9c9776faf464b922f0292a6a9476257c57818deebd813390bca01bafc9a9",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Signage/Banner_Wind_NORM.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk#Billboards_Scaffold",
+   "object": "Billboards_Scaffold",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/Billboards_Scaffold.tga",
+   "extracted_sha256": "611988c412245bd4b3d55ba9017c49ac51abdf401b210e7884e48e22133b103c",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/Billboards_Scaffold.tga",
+   "output_sha256": "611988c412245bd4b3d55ba9017c49ac51abdf401b210e7884e48e22133b103c",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Signage/Billboards_Scaffold.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk#Billboards_Sheet04a",
+   "object": "Billboards_Sheet04a",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/Billboards_Sheet04a.tga",
+   "extracted_sha256": "310c6a9e147bf3c76f9328764bf2ab91716bcb309ba60e421a5fe35fa6512206",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/Billboards_Sheet04a.tga",
+   "output_sha256": "310c6a9e147bf3c76f9328764bf2ab91716bcb309ba60e421a5fe35fa6512206",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Signage/Billboards_Sheet04a.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk#Concrete_01_DiffSpec",
+   "object": "Concrete_01_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Signage/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Signage/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Signage/Concrete_01_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk#MI_Banner_CommunityHall_01",
+   "object": "MI_Banner_CommunityHall_01",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Banner_CommunityHall_01",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Signage/Banners/Texture2D/Banner_Wind_NORM.tga",
+   "extracted_sha256": "e13d9c9776faf464b922f0292a6a9476257c57818deebd813390bca01bafc9a9",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Signage/Banners/Texture2D/Banner_Wind_NORM.tga",
+   "output_sha256": "e13d9c9776faf464b922f0292a6a9476257c57818deebd813390bca01bafc9a9",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Signage/MI_Banner_CommunityHall_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk#MI_BANNER_NationalProgress",
+   "object": "MI_BANNER_NationalProgress",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "BANNER_NationalProgress",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NPB.tga",
+   "extracted_sha256": "4f9f2885c69144175f3053f185be4499ede1014b1c0d02ebac89e23180b3097e",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NPB.tga",
+   "output_sha256": "4f9f2885c69144175f3053f185be4499ede1014b1c0d02ebac89e23180b3097e",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Signage/MI_BANNER_NationalProgress.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk#MI_BillBoard_Generic_1a",
+   "object": "MI_BillBoard_Generic_1a",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "BillBoard_Generic_1a",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "extracted_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "output_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Signage/MI_BillBoard_Generic_1a.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk#MI_BillBoard_Generic_1a_2a_Transitional",
+   "object": "MI_BillBoard_Generic_1a_2a_Transitional",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "BillBoard_Generic_1a_2a_Transitional",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "extracted_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "output_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Signage/MI_BillBoard_Generic_1a_2a_Transitional.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk#MI_BillBoard_Generic_1b",
+   "object": "MI_BillBoard_Generic_1b",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "BillBoard_Generic_1b",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "extracted_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "output_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Signage/MI_BillBoard_Generic_1b.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk#MI_BillBoard_Generic_1b_2b_Transitional",
+   "object": "MI_BillBoard_Generic_1b_2b_Transitional",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "BillBoard_Generic_1b_2b_Transitional",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "extracted_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "output_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Signage/MI_BillBoard_Generic_1b_2b_Transitional.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk#MI_BillBoard_Generic_2b",
+   "object": "MI_BillBoard_Generic_2b",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "BillBoard_Generic_2b",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "extracted_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "output_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Signage/MI_BillBoard_Generic_2b.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk#MI_BillBoard_Generic_3a",
+   "object": "MI_BillBoard_Generic_3a",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "BillBoard_Generic_3a",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "extracted_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "output_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Signage/MI_BillBoard_Generic_3a.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk#MI_BillBoard_Generic_3a_3b_transitional",
+   "object": "MI_BillBoard_Generic_3a_3b_transitional",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "BillBoard_Generic_3a_3b_transitional",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "extracted_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "output_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Signage/MI_BillBoard_Generic_3a_3b_transitional.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk#MI_BillBoard_Generic_3b",
+   "object": "MI_BillBoard_Generic_3b",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "BillBoard_Generic_3b",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "extracted_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "output_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Signage/MI_BillBoard_Generic_3b.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk#MI_BillBoard_Generic__2a",
+   "object": "MI_BillBoard_Generic__2a",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "BillBoard_Generic__2a",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "extracted_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "output_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Signage/MI_BillBoard_Generic__2a.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk#MI_Billboard_Generic__4a",
+   "object": "MI_Billboard_Generic__4a",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Billboard_Generic__4a",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/Billboards_Sheet04a.tga",
+   "extracted_sha256": "310c6a9e147bf3c76f9328764bf2ab91716bcb309ba60e421a5fe35fa6512206",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/Billboards_Sheet04a.tga",
+   "output_sha256": "310c6a9e147bf3c76f9328764bf2ab91716bcb309ba60e421a5fe35fa6512206",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Signage/MI_Billboard_Generic__4a.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk#MI_BillBoard_Generic_Main",
+   "object": "MI_BillBoard_Generic_Main",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "BillBoard_Generic_Main",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "extracted_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "output_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Signage/MI_BillBoard_Generic_Main.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk#MI_Billboard_Scaffold_Mat",
+   "object": "MI_Billboard_Scaffold_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Billboard_Scaffold_Mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/Billboards_Scaffold.tga",
+   "extracted_sha256": "611988c412245bd4b3d55ba9017c49ac51abdf401b210e7884e48e22133b103c",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/Billboards_Scaffold.tga",
+   "output_sha256": "611988c412245bd4b3d55ba9017c49ac51abdf401b210e7884e48e22133b103c",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Signage/MI_Billboard_Scaffold_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk#MI_Block_01_Signage",
+   "object": "MI_Block_01_Signage",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Block_01_Signage",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "extracted_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "output_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Signage/MI_Block_01_Signage.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk#MI_Block_07_Signage",
+   "object": "MI_Block_07_Signage",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Block_07_Signage",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "extracted_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "output_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Signage/MI_Block_07_Signage.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk#MI_NationalProgressBank_Stone",
+   "object": "MI_NationalProgressBank_Stone",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "NationalProgressBank_Stone",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Signage/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Signage/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Signage/MI_NationalProgressBank_Stone.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk#MI_NEON_Spectrum",
+   "object": "MI_NEON_Spectrum",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "NEON_Spectrum",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/Spectrum.tga",
+   "extracted_sha256": "8e9b4925947177fc0d3c7808567f06f022842da315f83fcd56a7facf104b511a",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/Spectrum.tga",
+   "output_sha256": "8e9b4925947177fc0d3c7808567f06f022842da315f83fcd56a7facf104b511a",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Signage/MI_NEON_Spectrum.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk#MI_SIGN_Enjinn",
+   "object": "MI_SIGN_Enjinn",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "SIGN_Enjinn",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "extracted_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "output_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Signage/MI_SIGN_Enjinn.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk#MI_SIGN_Enjinn_02",
+   "object": "MI_SIGN_Enjinn_02",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "SIGN_Enjinn_02",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "extracted_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "output_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Signage/MI_SIGN_Enjinn_02.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk#MI_SIGN_Enjinn_03",
+   "object": "MI_SIGN_Enjinn_03",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "SIGN_Enjinn_03",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "extracted_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "output_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Signage/MI_SIGN_Enjinn_03.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk#MI_SIGN_Enjinn_04",
+   "object": "MI_SIGN_Enjinn_04",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "SIGN_Enjinn_04",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "extracted_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "output_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Signage/MI_SIGN_Enjinn_04.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk#MI_SIGN_Enjinn_Flip_01",
+   "object": "MI_SIGN_Enjinn_Flip_01",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "SIGN_Enjinn_Flip_01",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "extracted_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "output_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Signage/MI_SIGN_Enjinn_Flip_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk#MI_SIGN_GunsIPod",
+   "object": "MI_SIGN_GunsIPod",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "SIGN_GunsIPod",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "extracted_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "output_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Signage/MI_SIGN_GunsIPod.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk#MI_SIGN_GunsIpod_02",
+   "object": "MI_SIGN_GunsIpod_02",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "SIGN_GunsIpod_02",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "extracted_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "output_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Signage/MI_SIGN_GunsIpod_02.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk#MI_SIGN_LacunaBrown",
+   "object": "MI_SIGN_LacunaBrown",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "SIGN_LacunaBrown",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "extracted_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "output_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Signage/MI_SIGN_LacunaBrown.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk#MI_SIGN_Movie_GenAction",
+   "object": "MI_SIGN_Movie_GenAction",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "SIGN_Movie_GenAction",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "extracted_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "output_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Signage/MI_SIGN_Movie_GenAction.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk#MI_SIGN_Square_01",
+   "object": "MI_SIGN_Square_01",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "SIGN_Square_01",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "extracted_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "output_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Signage/MI_SIGN_Square_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk#MI_SIGN_Square_02",
+   "object": "MI_SIGN_Square_02",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "SIGN_Square_02",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "extracted_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "output_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Signage/MI_SIGN_Square_02.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk#MI_SIGN_Square_03",
+   "object": "MI_SIGN_Square_03",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "SIGN_Square_03",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "extracted_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "output_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Signage/MI_SIGN_Square_03.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk#MI_SIGN_Stallions",
+   "object": "MI_SIGN_Stallions",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "SIGN_Stallions",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "extracted_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "output_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Signage/MI_SIGN_Stallions.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk#MI_SIGN_TastyBurger",
+   "object": "MI_SIGN_TastyBurger",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "SIGN_TastyBurger",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "extracted_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "output_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Signage/MI_SIGN_TastyBurger.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk#MI_SIGN_WildcatFlip",
+   "object": "MI_SIGN_WildcatFlip",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "SIGN_WildcatFlip",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "extracted_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "output_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Signage/MI_SIGN_WildcatFlip.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk#MI_Spectrum_Mat",
+   "object": "MI_Spectrum_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Spectrum_Mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/Spectrum.tga",
+   "extracted_sha256": "8e9b4925947177fc0d3c7808567f06f022842da315f83fcd56a7facf104b511a",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/Spectrum.tga",
+   "output_sha256": "8e9b4925947177fc0d3c7808567f06f022842da315f83fcd56a7facf104b511a",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Signage/MI_Spectrum_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk#MI_TestSign_Horz01",
+   "object": "MI_TestSign_Horz01",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "TestSign_Horz01",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "extracted_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "output_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Signage/MI_TestSign_Horz01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk#NationalProgressBank_Norm",
+   "object": "NationalProgressBank_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NationalProgressBank_Norm.tga",
+   "extracted_sha256": "a9e184b441b427c32a32a362f18f0c15e1d09db777a896fca45ba723c2d03ff8",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NationalProgressBank_Norm.tga",
+   "output_sha256": "a9e184b441b427c32a32a362f18f0c15e1d09db777a896fca45ba723c2d03ff8",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Signage/NationalProgressBank_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk#NEON_DotMatrix_01",
+   "object": "NEON_DotMatrix_01",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "extracted_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "output_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Signage/NEON_DotMatrix_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk#NPB",
+   "object": "NPB",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NPB.tga",
+   "extracted_sha256": "4f9f2885c69144175f3053f185be4499ede1014b1c0d02ebac89e23180b3097e",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/NPB.tga",
+   "output_sha256": "4f9f2885c69144175f3053f185be4499ede1014b1c0d02ebac89e23180b3097e",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Signage/NPB.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/FD_Signage.upk#Spectrum",
+   "object": "Spectrum",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/Spectrum.tga",
+   "extracted_sha256": "8e9b4925947177fc0d3c7808567f06f022842da315f83fcd56a7facf104b511a",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Signage/FD_Signage/Texture2D/Spectrum.tga",
+   "output_sha256": "8e9b4925947177fc0d3c7808567f06f022842da315f83fcd56a7facf104b511a",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Signage/Spectrum.uasset"
+  }
+ ]
+}

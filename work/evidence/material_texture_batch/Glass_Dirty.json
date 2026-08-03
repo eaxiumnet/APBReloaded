@@ -1,0 +1,90 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Glass_Dirty",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/Glass/Glass_Dirty.upk",
+ "source_sha256": "f0433a21337cd4c4aa7a601d4142a5459b933464169955b7d80cd92140bb46a3",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Glass/Glass_Dirty.upk#Distortion",
+   "object": "Distortion",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Glass_Dirty/Glass/Texture2D/Distortion.tga",
+   "extracted_sha256": "b141fad20c648b88cbaa4e086c514206d4c1ec6b7921f41c655513cba7543389",
+   "output_file": "Content/Extracted/MaterialDatabase/Glass_Dirty/Glass/Texture2D/Distortion.tga",
+   "output_sha256": "b141fad20c648b88cbaa4e086c514206d4c1ec6b7921f41c655513cba7543389",
+   "uasset": "Content/Imported/MaterialDatabase/Glass_Dirty/Distortion.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Glass/Glass_Dirty.upk#MI_Glass_Transparent_Dirty_Exterior_NoWire",
+   "object": "MI_Glass_Transparent_Dirty_Exterior_NoWire",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Glass_Transparent_Dirty_Exterior_NoWire",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Glass_Dirty/Glass/Texture2D/Distortion.tga",
+   "extracted_sha256": "b141fad20c648b88cbaa4e086c514206d4c1ec6b7921f41c655513cba7543389",
+   "output_file": "Content/Extracted/MaterialDatabase/Glass_Dirty/Glass/Texture2D/Distortion.tga",
+   "output_sha256": "b141fad20c648b88cbaa4e086c514206d4c1ec6b7921f41c655513cba7543389",
+   "uasset": "Content/Imported/MaterialDatabase/Glass_Dirty/MI_Glass_Transparent_Dirty_Exterior_NoWire.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Glass/Glass_Dirty.upk#MI_Glass_Transparent_Dirty_Interior_NoWire",
+   "object": "MI_Glass_Transparent_Dirty_Interior_NoWire",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Glass_Transparent_Dirty_Interior_NoWire",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Glass_Dirty/Glass/Texture2D/Distortion.tga",
+   "extracted_sha256": "b141fad20c648b88cbaa4e086c514206d4c1ec6b7921f41c655513cba7543389",
+   "output_file": "Content/Extracted/MaterialDatabase/Glass_Dirty/Glass/Texture2D/Distortion.tga",
+   "output_sha256": "b141fad20c648b88cbaa4e086c514206d4c1ec6b7921f41c655513cba7543389",
+   "uasset": "Content/Imported/MaterialDatabase/Glass_Dirty/MI_Glass_Transparent_Dirty_Interior_NoWire.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Glass/Glass_Dirty.upk#MI_Glass_Transparent_DirtyNoReflection_Exterior",
+   "object": "MI_Glass_Transparent_DirtyNoReflection_Exterior",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Glass_Transparent_DirtyNoReflection_Exterior",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Glass_Dirty/Glass/Texture2D/Distortion.tga",
+   "extracted_sha256": "b141fad20c648b88cbaa4e086c514206d4c1ec6b7921f41c655513cba7543389",
+   "output_file": "Content/Extracted/MaterialDatabase/Glass_Dirty/Glass/Texture2D/Distortion.tga",
+   "output_sha256": "b141fad20c648b88cbaa4e086c514206d4c1ec6b7921f41c655513cba7543389",
+   "uasset": "Content/Imported/MaterialDatabase/Glass_Dirty/MI_Glass_Transparent_DirtyNoReflection_Exterior.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Glass/Glass_Dirty.upk#MI_Glass_Transparent_DirtyNoReflection_Interior",
+   "object": "MI_Glass_Transparent_DirtyNoReflection_Interior",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Glass_Transparent_DirtyNoReflection_Interior",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Glass_Dirty/Glass/Texture2D/Distortion.tga",
+   "extracted_sha256": "b141fad20c648b88cbaa4e086c514206d4c1ec6b7921f41c655513cba7543389",
+   "output_file": "Content/Extracted/MaterialDatabase/Glass_Dirty/Glass/Texture2D/Distortion.tga",
+   "output_sha256": "b141fad20c648b88cbaa4e086c514206d4c1ec6b7921f41c655513cba7543389",
+   "uasset": "Content/Imported/MaterialDatabase/Glass_Dirty/MI_Glass_Transparent_DirtyNoReflection_Interior.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Glass/Glass_Dirty.upk#MI_Glass_Transparent_DirtyNoReflection_Interior_NoDistortion",
+   "object": "MI_Glass_Transparent_DirtyNoReflection_Interior_NoDistortion",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Glass_Transparent_DirtyNoReflection_Interior_NoDistortion",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Glass_Dirty/Glass/Texture2D/Distortion.tga",
+   "extracted_sha256": "b141fad20c648b88cbaa4e086c514206d4c1ec6b7921f41c655513cba7543389",
+   "output_file": "Content/Extracted/MaterialDatabase/Glass_Dirty/Glass/Texture2D/Distortion.tga",
+   "output_sha256": "b141fad20c648b88cbaa4e086c514206d4c1ec6b7921f41c655513cba7543389",
+   "uasset": "Content/Imported/MaterialDatabase/Glass_Dirty/MI_Glass_Transparent_DirtyNoReflection_Interior_NoDistortion.uasset"
+  }
+ ]
+}

@@ -1,0 +1,86 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "RoadShader",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/RoadMaterials/RoadMateralsInProgress/RoadShader.upk",
+ "source_sha256": "b662505deb300d4e228351941839a139f557fa2b7967583bb0fe3dd40b3ee33f",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/RoadMaterials/RoadMateralsInProgress/RoadShader.upk#AsphaltNORM_Dup",
+   "object": "AsphaltNORM_Dup",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadShader/RoadShader/Texture2D/AsphaltNORM_Dup.tga",
+   "extracted_sha256": "728b536caff737eebf7f7cae3e05d5abd66971c960864e2289efbd1ba65cab3b",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadShader/RoadShader/Texture2D/AsphaltNORM_Dup.tga",
+   "output_sha256": "728b536caff737eebf7f7cae3e05d5abd66971c960864e2289efbd1ba65cab3b",
+   "uasset": "Content/Imported/MaterialDatabase/RoadShader/AsphaltNORM_Dup.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/RoadMaterials/RoadMateralsInProgress/RoadShader.upk#CurbNORM",
+   "object": "CurbNORM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadShader/RoadShader/Texture2D/CurbNORM.tga",
+   "extracted_sha256": "bc344ba44e4c1c80f33b04b55e85874012e3682515091ba8802bee1233d57dfe",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadShader/RoadShader/Texture2D/CurbNORM.tga",
+   "output_sha256": "bc344ba44e4c1c80f33b04b55e85874012e3682515091ba8802bee1233d57dfe",
+   "uasset": "Content/Imported/MaterialDatabase/RoadShader/CurbNORM.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/RoadMaterials/RoadMateralsInProgress/RoadShader.upk#MI_CurbMAT",
+   "object": "MI_CurbMAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CurbMAT",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadShader/RoadShader/Texture2D/CurbNORM.tga",
+   "extracted_sha256": "bc344ba44e4c1c80f33b04b55e85874012e3682515091ba8802bee1233d57dfe",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadShader/RoadShader/Texture2D/CurbNORM.tga",
+   "output_sha256": "bc344ba44e4c1c80f33b04b55e85874012e3682515091ba8802bee1233d57dfe",
+   "uasset": "Content/Imported/MaterialDatabase/RoadShader/MI_CurbMAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/RoadMaterials/RoadMateralsInProgress/RoadShader.upk#MI_RoadMarkings_Centre_Dup",
+   "object": "MI_RoadMarkings_Centre_Dup",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RoadMarkings_Centre_Dup",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadShader/RoadShader/Texture2D/AsphaltNORM_Dup.tga",
+   "extracted_sha256": "728b536caff737eebf7f7cae3e05d5abd66971c960864e2289efbd1ba65cab3b",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadShader/RoadShader/Texture2D/AsphaltNORM_Dup.tga",
+   "output_sha256": "728b536caff737eebf7f7cae3e05d5abd66971c960864e2289efbd1ba65cab3b",
+   "uasset": "Content/Imported/MaterialDatabase/RoadShader/MI_RoadMarkings_Centre_Dup.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/RoadMaterials/RoadMateralsInProgress/RoadShader.upk#MI_SideWalkMAT",
+   "object": "MI_SideWalkMAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "SideWalkMAT",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadShader/RoadShader/Texture2D/SidewalkNORM.tga",
+   "extracted_sha256": "e582f227318633bd885288dabc53ac7dbb51702fe4c07a76bc9ac839790e16c2",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadShader/RoadShader/Texture2D/SidewalkNORM.tga",
+   "output_sha256": "e582f227318633bd885288dabc53ac7dbb51702fe4c07a76bc9ac839790e16c2",
+   "uasset": "Content/Imported/MaterialDatabase/RoadShader/MI_SideWalkMAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/RoadMaterials/RoadMateralsInProgress/RoadShader.upk#SidewalkNORM",
+   "object": "SidewalkNORM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadShader/RoadShader/Texture2D/SidewalkNORM.tga",
+   "extracted_sha256": "e582f227318633bd885288dabc53ac7dbb51702fe4c07a76bc9ac839790e16c2",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadShader/RoadShader/Texture2D/SidewalkNORM.tga",
+   "output_sha256": "e582f227318633bd885288dabc53ac7dbb51702fe4c07a76bc9ac839790e16c2",
+   "uasset": "Content/Imported/MaterialDatabase/RoadShader/SidewalkNORM.uasset"
+  }
+ ]
+}

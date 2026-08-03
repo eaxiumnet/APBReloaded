@@ -1,0 +1,101 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "ParkingMeter",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/ParkingMeter.upk",
+ "source_sha256": "e6202a5c145a33892aab72e4c5ab15c21fa6230aba23aad4db5e4759c4b6c9da",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/ParkingMeter.upk#crackedglass",
+   "object": "crackedglass",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ParkingMeter/PropsGenericMaterials/Texture2D/crackedglass.tga",
+   "extracted_sha256": "dfa317aa7fb2240af7f70a04291e38bffe78163ed2df9334514b23bb823cc808",
+   "output_file": "Content/Extracted/MaterialDatabase/ParkingMeter/PropsGenericMaterials/Texture2D/crackedglass.tga",
+   "output_sha256": "dfa317aa7fb2240af7f70a04291e38bffe78163ed2df9334514b23bb823cc808",
+   "uasset": "Content/Imported/MaterialDatabase/ParkingMeter/crackedglass.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/ParkingMeter.upk#CrackedGlass_Norm",
+   "object": "CrackedGlass_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ParkingMeter/PropsGenericMaterials/Texture2D/CrackedGlass_Norm.tga",
+   "extracted_sha256": "785619d634027205ac11fddf228e8ff86e308e8ec9386fb9c8d74e1e34b242c3",
+   "output_file": "Content/Extracted/MaterialDatabase/ParkingMeter/PropsGenericMaterials/Texture2D/CrackedGlass_Norm.tga",
+   "output_sha256": "785619d634027205ac11fddf228e8ff86e308e8ec9386fb9c8d74e1e34b242c3",
+   "uasset": "Content/Imported/MaterialDatabase/ParkingMeter/CrackedGlass_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/ParkingMeter.upk#MI_CrackedPropGlass",
+   "object": "MI_CrackedPropGlass",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CrackedPropGlass",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ParkingMeter/PropsGenericMaterials/Texture2D/crackedglass.tga",
+   "extracted_sha256": "dfa317aa7fb2240af7f70a04291e38bffe78163ed2df9334514b23bb823cc808",
+   "output_file": "Content/Extracted/MaterialDatabase/ParkingMeter/PropsGenericMaterials/Texture2D/crackedglass.tga",
+   "output_sha256": "dfa317aa7fb2240af7f70a04291e38bffe78163ed2df9334514b23bb823cc808",
+   "uasset": "Content/Imported/MaterialDatabase/ParkingMeter/MI_CrackedPropGlass.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/ParkingMeter.upk#MI_ParkingMeter",
+   "object": "MI_ParkingMeter",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "ParkingMeter",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ParkingMeter/ParkingMeter/Texture2D/ParkingMeter_DiffSpec.tga",
+   "extracted_sha256": "115ab8decfe646557ee5e66c7fbbc483138a2f44e097a567e87e7c1c6008a514",
+   "output_file": "Content/Extracted/MaterialDatabase/ParkingMeter/ParkingMeter/Texture2D/ParkingMeter_DiffSpec.tga",
+   "output_sha256": "115ab8decfe646557ee5e66c7fbbc483138a2f44e097a567e87e7c1c6008a514",
+   "uasset": "Content/Imported/MaterialDatabase/ParkingMeter/MI_ParkingMeter.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/ParkingMeter.upk#MI_ParkingMeterDamage",
+   "object": "MI_ParkingMeterDamage",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "ParkingMeterDamage",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ParkingMeter/ParkingMeter/Texture2D/ParkingMeter_DiffSpec.tga",
+   "extracted_sha256": "115ab8decfe646557ee5e66c7fbbc483138a2f44e097a567e87e7c1c6008a514",
+   "output_file": "Content/Extracted/MaterialDatabase/ParkingMeter/ParkingMeter/Texture2D/ParkingMeter_DiffSpec.tga",
+   "output_sha256": "115ab8decfe646557ee5e66c7fbbc483138a2f44e097a567e87e7c1c6008a514",
+   "uasset": "Content/Imported/MaterialDatabase/ParkingMeter/MI_ParkingMeterDamage.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/ParkingMeter.upk#ParkingMeter_DiffSpec",
+   "object": "ParkingMeter_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ParkingMeter/ParkingMeter/Texture2D/ParkingMeter_DiffSpec.tga",
+   "extracted_sha256": "115ab8decfe646557ee5e66c7fbbc483138a2f44e097a567e87e7c1c6008a514",
+   "output_file": "Content/Extracted/MaterialDatabase/ParkingMeter/ParkingMeter/Texture2D/ParkingMeter_DiffSpec.tga",
+   "output_sha256": "115ab8decfe646557ee5e66c7fbbc483138a2f44e097a567e87e7c1c6008a514",
+   "uasset": "Content/Imported/MaterialDatabase/ParkingMeter/ParkingMeter_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/ParkingMeter.upk#ParkingMeter_Norm",
+   "object": "ParkingMeter_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ParkingMeter/ParkingMeter/Texture2D/ParkingMeter_Norm.tga",
+   "extracted_sha256": "dc8622efa6a71b89f3025ddea5c3ff33852186b0563a8b31f5caa08a5736d57d",
+   "output_file": "Content/Extracted/MaterialDatabase/ParkingMeter/ParkingMeter/Texture2D/ParkingMeter_Norm.tga",
+   "output_sha256": "dc8622efa6a71b89f3025ddea5c3ff33852186b0563a8b31f5caa08a5736d57d",
+   "uasset": "Content/Imported/MaterialDatabase/ParkingMeter/ParkingMeter_Norm.uasset"
+  }
+ ]
+}

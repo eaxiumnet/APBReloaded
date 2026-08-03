@@ -1,0 +1,104 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "WaterfrontPowerYacht",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontPowerYacht.upk",
+ "source_sha256": "590be9fad1170ede017369f71716552ccfae285844475141591646db6e835dfc",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontPowerYacht.upk#MI_PowerYacht_Damage_Mat",
+   "object": "MI_PowerYacht_Damage_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PowerYacht_Damage_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontPowerYacht/WaterfrontPowerYacht/Texture2D/PowerYacht_DamageDiff.tga",
+   "extracted_sha256": "f2d25a9db42780f7c339ce79511a551ec6f80acd22aa5b2cd5492a59ee620bac",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontPowerYacht/WaterfrontPowerYacht/Texture2D/PowerYacht_DamageDiff.tga",
+   "output_sha256": "f2d25a9db42780f7c339ce79511a551ec6f80acd22aa5b2cd5492a59ee620bac",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontPowerYacht/MI_PowerYacht_Damage_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontPowerYacht.upk#MI_PowerYacht_Mat",
+   "object": "MI_PowerYacht_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PowerYacht_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontPowerYacht/WaterfrontPowerYacht/Texture2D/PowerYacht_Diff.tga",
+   "extracted_sha256": "ace1c2e18bf3d7b60f2030a6e9e9704012fff7ab64136830610f7dbd3577c628",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontPowerYacht/WaterfrontPowerYacht/Texture2D/PowerYacht_Diff.tga",
+   "output_sha256": "ace1c2e18bf3d7b60f2030a6e9e9704012fff7ab64136830610f7dbd3577c628",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontPowerYacht/MI_PowerYacht_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontPowerYacht.upk#MI_PowerYacht_Mat_INST",
+   "object": "MI_PowerYacht_Mat_INST",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PowerYacht_Mat_INST",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontPowerYacht/WaterfrontPowerYacht/Texture2D/PowerYacht_Diff.tga",
+   "extracted_sha256": "ace1c2e18bf3d7b60f2030a6e9e9704012fff7ab64136830610f7dbd3577c628",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontPowerYacht/WaterfrontPowerYacht/Texture2D/PowerYacht_Diff.tga",
+   "output_sha256": "ace1c2e18bf3d7b60f2030a6e9e9704012fff7ab64136830610f7dbd3577c628",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontPowerYacht/MI_PowerYacht_Mat_INST.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontPowerYacht.upk#PowerYacht_DamageDiff",
+   "object": "PowerYacht_DamageDiff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontPowerYacht/WaterfrontPowerYacht/Texture2D/PowerYacht_DamageDiff.tga",
+   "extracted_sha256": "f2d25a9db42780f7c339ce79511a551ec6f80acd22aa5b2cd5492a59ee620bac",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontPowerYacht/WaterfrontPowerYacht/Texture2D/PowerYacht_DamageDiff.tga",
+   "output_sha256": "f2d25a9db42780f7c339ce79511a551ec6f80acd22aa5b2cd5492a59ee620bac",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontPowerYacht/PowerYacht_DamageDiff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontPowerYacht.upk#PowerYacht_Diff",
+   "object": "PowerYacht_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontPowerYacht/WaterfrontPowerYacht/Texture2D/PowerYacht_Diff.tga",
+   "extracted_sha256": "ace1c2e18bf3d7b60f2030a6e9e9704012fff7ab64136830610f7dbd3577c628",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontPowerYacht/WaterfrontPowerYacht/Texture2D/PowerYacht_Diff.tga",
+   "output_sha256": "ace1c2e18bf3d7b60f2030a6e9e9704012fff7ab64136830610f7dbd3577c628",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontPowerYacht/PowerYacht_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontPowerYacht.upk#PowerYacht_Norm_FullRes",
+   "object": "PowerYacht_Norm_FullRes",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontPowerYacht/WaterfrontPowerYacht/Texture2D/PowerYacht_Norm_FullRes.tga",
+   "extracted_sha256": "856d6d55b32791a3c9cd26c50d69e1de43a001bf48d7f1949d6804c7058a17ec",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontPowerYacht/WaterfrontPowerYacht/Texture2D/PowerYacht_Norm_FullRes.tga",
+   "output_sha256": "856d6d55b32791a3c9cd26c50d69e1de43a001bf48d7f1949d6804c7058a17ec",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontPowerYacht/PowerYacht_Norm_FullRes.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontPowerYacht.upk#PowerYacht_Opac",
+   "object": "PowerYacht_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontPowerYacht/WaterfrontPowerYacht/Texture2D/PowerYacht_Opac.tga",
+   "extracted_sha256": "d03841d84bc45096a008fb6a8ae78f01014d521cf66963d35cfe67627d4e5603",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontPowerYacht/WaterfrontPowerYacht/Texture2D/PowerYacht_Opac.tga",
+   "output_sha256": "d03841d84bc45096a008fb6a8ae78f01014d521cf66963d35cfe67627d4e5603",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontPowerYacht/PowerYacht_Opac.uasset"
+  }
+ ]
+}

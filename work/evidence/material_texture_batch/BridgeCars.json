@@ -1,0 +1,35 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "BridgeCars",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/WaterfrontDistrict/PropMaterials/BridgeCars.upk",
+ "source_sha256": "f8bad7352a33df1dd1ef1b5b4b4693b39bd6f2c34bdae356fb7f4ef549ec0793",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/BridgeCars.upk#CarsLine-Emis",
+   "object": "CarsLine-Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BridgeCars/BridgeCars/Texture2D/CarsLine-Emis.tga",
+   "extracted_sha256": "d79777c81583681cf1f9a5464f1ce24d72d54da40a422cd9bd1c71bc4ad377db",
+   "output_file": "Content/Extracted/MaterialDatabase/BridgeCars/BridgeCars/Texture2D/CarsLine-Emis.tga",
+   "output_sha256": "d79777c81583681cf1f9a5464f1ce24d72d54da40a422cd9bd1c71bc4ad377db",
+   "uasset": "Content/Imported/MaterialDatabase/BridgeCars/CarsLine-Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/BridgeCars.upk#MI_BridgeCars_Mat",
+   "object": "MI_BridgeCars_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "BridgeCars_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BridgeCars/BridgeCars/Texture2D/CarsLine-Emis.tga",
+   "extracted_sha256": "d79777c81583681cf1f9a5464f1ce24d72d54da40a422cd9bd1c71bc4ad377db",
+   "output_file": "Content/Extracted/MaterialDatabase/BridgeCars/BridgeCars/Texture2D/CarsLine-Emis.tga",
+   "output_sha256": "d79777c81583681cf1f9a5464f1ce24d72d54da40a422cd9bd1c71bc4ad377db",
+   "uasset": "Content/Imported/MaterialDatabase/BridgeCars/MI_BridgeCars_Mat.uasset"
+  }
+ ]
+}

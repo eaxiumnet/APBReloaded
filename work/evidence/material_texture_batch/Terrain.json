@@ -1,0 +1,548 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Terrain",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/TerrainMaterials/Terrain.upk",
+ "source_sha256": "3c9e80ec781df6c6108e7fb0949a55885e1267bbc242f52c065ec976e13d3def",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Terrain.upk#AsphaltTerrain01_NRM",
+   "object": "AsphaltTerrain01_NRM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/AsphaltTerrain01_NRM.tga",
+   "extracted_sha256": "eac1e2a656094fb5c29fe34a144aa840865800b2f0730402bc8b09e71f58898e",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/AsphaltTerrain01_NRM.tga",
+   "output_sha256": "eac1e2a656094fb5c29fe34a144aa840865800b2f0730402bc8b09e71f58898e",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain/AsphaltTerrain01_NRM.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Terrain.upk#Concrete_01_DiffSpec",
+   "object": "Concrete_01_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain/Concrete_01_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Terrain.upk#Concrete_01_Norm",
+   "object": "Concrete_01_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain/Concrete/Texture2D/Concrete_01_Norm.tga",
+   "extracted_sha256": "fb2c158dc91901cfdedc1433dbb4cbfa57ca8a439f567afbe5fdbc7bbdcc52f6",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain/Concrete/Texture2D/Concrete_01_Norm.tga",
+   "output_sha256": "fb2c158dc91901cfdedc1433dbb4cbfa57ca8a439f567afbe5fdbc7bbdcc52f6",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain/Concrete_01_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Terrain.upk#Gravel_Diff",
+   "object": "Gravel_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/Gravel_Diff.tga",
+   "extracted_sha256": "409d84b0d96fbba8c25bdda1de09c05fe43425fb49b96e48b8cfb35c218c4372",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/Gravel_Diff.tga",
+   "output_sha256": "409d84b0d96fbba8c25bdda1de09c05fe43425fb49b96e48b8cfb35c218c4372",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain/Gravel_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Terrain.upk#GravelAlphaEdge",
+   "object": "GravelAlphaEdge",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/GravelAlphaEdge.tga",
+   "extracted_sha256": "2e35c29d8796ec4f10c886f537a2c64fd1d31c9cb52f3c445c91f0a1d4dc0ec1",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/GravelAlphaEdge.tga",
+   "output_sha256": "2e35c29d8796ec4f10c886f537a2c64fd1d31c9cb52f3c445c91f0a1d4dc0ec1",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain/GravelAlphaEdge.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Terrain.upk#GroundVariation_NRM",
+   "object": "GroundVariation_NRM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/GroundVariation_NRM.tga",
+   "extracted_sha256": "2714cdb83fc91059223d68cb27ab541aaeb9832651bc66be9404d1fa5ec06bb4",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/GroundVariation_NRM.tga",
+   "output_sha256": "2714cdb83fc91059223d68cb27ab541aaeb9832651bc66be9404d1fa5ec06bb4",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain/GroundVariation_NRM.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Terrain.upk#Metal_Generic_01",
+   "object": "Metal_Generic_01",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/Metal_Generic_01.tga",
+   "extracted_sha256": "35b7a1eb58264223cad48d1758a3fa41b5d1858ebd6bfc7920ad25bc40d420c6",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/Metal_Generic_01.tga",
+   "output_sha256": "35b7a1eb58264223cad48d1758a3fa41b5d1858ebd6bfc7920ad25bc40d420c6",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain/Metal_Generic_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Terrain.upk#MI_Railway_Gravel_01",
+   "object": "MI_Railway_Gravel_01",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Railway_Gravel_01",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/Stones_001_DiffSpec.tga",
+   "extracted_sha256": "35689a0022998c155290fac30060b6bea0fab78cd0600022995faaf3b44f0c23",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/Stones_001_DiffSpec.tga",
+   "output_sha256": "35689a0022998c155290fac30060b6bea0fab78cd0600022995faaf3b44f0c23",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain/MI_Railway_Gravel_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Terrain.upk#MI_Railway_Gravel_01_Desaturated",
+   "object": "MI_Railway_Gravel_01_Desaturated",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Railway_Gravel_01_Desaturated",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/Stones_001_DiffSpec.tga",
+   "extracted_sha256": "35689a0022998c155290fac30060b6bea0fab78cd0600022995faaf3b44f0c23",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/Stones_001_DiffSpec.tga",
+   "output_sha256": "35689a0022998c155290fac30060b6bea0fab78cd0600022995faaf3b44f0c23",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain/MI_Railway_Gravel_01_Desaturated.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Terrain.upk#MI_Railway_Track_01",
+   "object": "MI_Railway_Track_01",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Railway_Track_01",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/Stones_001_DiffSpec.tga",
+   "extracted_sha256": "35689a0022998c155290fac30060b6bea0fab78cd0600022995faaf3b44f0c23",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/Stones_001_DiffSpec.tga",
+   "output_sha256": "35689a0022998c155290fac30060b6bea0fab78cd0600022995faaf3b44f0c23",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain/MI_Railway_Track_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Terrain.upk#MI_Railway_Track_01_Desaturated",
+   "object": "MI_Railway_Track_01_Desaturated",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Railway_Track_01_Desaturated",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/Stones_001_DiffSpec.tga",
+   "extracted_sha256": "35689a0022998c155290fac30060b6bea0fab78cd0600022995faaf3b44f0c23",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/Stones_001_DiffSpec.tga",
+   "output_sha256": "35689a0022998c155290fac30060b6bea0fab78cd0600022995faaf3b44f0c23",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain/MI_Railway_Track_01_Desaturated.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Terrain.upk#MI_RailwayTrack",
+   "object": "MI_RailwayTrack",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RailwayTrack",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/Metal_Generic_01.tga",
+   "extracted_sha256": "35b7a1eb58264223cad48d1758a3fa41b5d1858ebd6bfc7920ad25bc40d420c6",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/Metal_Generic_01.tga",
+   "output_sha256": "35b7a1eb58264223cad48d1758a3fa41b5d1858ebd6bfc7920ad25bc40d420c6",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain/MI_RailwayTrack.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Terrain.upk#MI_Sand",
+   "object": "MI_Sand",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Sand",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/Sand01_DIF.tga",
+   "extracted_sha256": "f240abfe40f4a713c151aaa53c6db1eb811ffdb7ade679d0af5c78471bae6fd9",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/Sand01_DIF.tga",
+   "output_sha256": "f240abfe40f4a713c151aaa53c6db1eb811ffdb7ade679d0af5c78471bae6fd9",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain/MI_Sand.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Terrain.upk#MI_StormDrain_Conc_01",
+   "object": "MI_StormDrain_Conc_01",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StormDrain_Conc_01",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain/MI_StormDrain_Conc_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Terrain.upk#MI_StormDrain_Conc_02",
+   "object": "MI_StormDrain_Conc_02",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StormDrain_Conc_02",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain/MI_StormDrain_Conc_02.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Terrain.upk#MI_StormDrain_Conc_03",
+   "object": "MI_StormDrain_Conc_03",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StormDrain_Conc_03",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain/MI_StormDrain_Conc_03.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Terrain.upk#MI_TERR_Asphalt_01",
+   "object": "MI_TERR_Asphalt_01",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "TERR_Asphalt_01",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/TERR_DarkAsphalt_DiffSpec.tga",
+   "extracted_sha256": "0296a2f55c6a92accb5cb498061400ac3e9942de1c6a01fe97494451a941eb64",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/TERR_DarkAsphalt_DiffSpec.tga",
+   "output_sha256": "0296a2f55c6a92accb5cb498061400ac3e9942de1c6a01fe97494451a941eb64",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain/MI_TERR_Asphalt_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Terrain.upk#MI_TERR_Asphalt_01_Benchmark",
+   "object": "MI_TERR_Asphalt_01_Benchmark",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "TERR_Asphalt_01_Benchmark",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/TERR_DarkAsphalt_DiffSpec.tga",
+   "extracted_sha256": "0296a2f55c6a92accb5cb498061400ac3e9942de1c6a01fe97494451a941eb64",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/TERR_DarkAsphalt_DiffSpec.tga",
+   "output_sha256": "0296a2f55c6a92accb5cb498061400ac3e9942de1c6a01fe97494451a941eb64",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain/MI_TERR_Asphalt_01_Benchmark.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Terrain.upk#MI_TERR_Asphalt_01_FD",
+   "object": "MI_TERR_Asphalt_01_FD",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "TERR_Asphalt_01_FD",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/TERR_DarkAsphalt_DiffSpec.tga",
+   "extracted_sha256": "0296a2f55c6a92accb5cb498061400ac3e9942de1c6a01fe97494451a941eb64",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/TERR_DarkAsphalt_DiffSpec.tga",
+   "output_sha256": "0296a2f55c6a92accb5cb498061400ac3e9942de1c6a01fe97494451a941eb64",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain/MI_TERR_Asphalt_01_FD.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Terrain.upk#MI_TERR_Asphalt_01_WD",
+   "object": "MI_TERR_Asphalt_01_WD",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "TERR_Asphalt_01_WD",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/TERR_DarkAsphalt_DiffSpec.tga",
+   "extracted_sha256": "0296a2f55c6a92accb5cb498061400ac3e9942de1c6a01fe97494451a941eb64",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/TERR_DarkAsphalt_DiffSpec.tga",
+   "output_sha256": "0296a2f55c6a92accb5cb498061400ac3e9942de1c6a01fe97494451a941eb64",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain/MI_TERR_Asphalt_01_WD.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Terrain.upk#MI_TERR_Concrete_01",
+   "object": "MI_TERR_Concrete_01",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "TERR_Concrete_01",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/Gravel_Diff.tga",
+   "extracted_sha256": "409d84b0d96fbba8c25bdda1de09c05fe43425fb49b96e48b8cfb35c218c4372",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/Gravel_Diff.tga",
+   "output_sha256": "409d84b0d96fbba8c25bdda1de09c05fe43425fb49b96e48b8cfb35c218c4372",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain/MI_TERR_Concrete_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Terrain.upk#MI_TERR_Concrete_01_Benchmark",
+   "object": "MI_TERR_Concrete_01_Benchmark",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "TERR_Concrete_01_Benchmark",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/Gravel_Diff.tga",
+   "extracted_sha256": "409d84b0d96fbba8c25bdda1de09c05fe43425fb49b96e48b8cfb35c218c4372",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/Gravel_Diff.tga",
+   "output_sha256": "409d84b0d96fbba8c25bdda1de09c05fe43425fb49b96e48b8cfb35c218c4372",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain/MI_TERR_Concrete_01_Benchmark.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Terrain.upk#MI_TERR_Concrete_01_Fallback",
+   "object": "MI_TERR_Concrete_01_Fallback",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "TERR_Concrete_01_Fallback",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/Gravel_Diff.tga",
+   "extracted_sha256": "409d84b0d96fbba8c25bdda1de09c05fe43425fb49b96e48b8cfb35c218c4372",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/Gravel_Diff.tga",
+   "output_sha256": "409d84b0d96fbba8c25bdda1de09c05fe43425fb49b96e48b8cfb35c218c4372",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain/MI_TERR_Concrete_01_Fallback.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Terrain.upk#MI_TERR_Concrete_01_FD",
+   "object": "MI_TERR_Concrete_01_FD",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "TERR_Concrete_01_FD",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/Gravel_Diff.tga",
+   "extracted_sha256": "409d84b0d96fbba8c25bdda1de09c05fe43425fb49b96e48b8cfb35c218c4372",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/Gravel_Diff.tga",
+   "output_sha256": "409d84b0d96fbba8c25bdda1de09c05fe43425fb49b96e48b8cfb35c218c4372",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain/MI_TERR_Concrete_01_FD.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Terrain.upk#MI_TERR_Gravel_01",
+   "object": "MI_TERR_Gravel_01",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "TERR_Gravel_01",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/Stones_001_DiffSpec.tga",
+   "extracted_sha256": "35689a0022998c155290fac30060b6bea0fab78cd0600022995faaf3b44f0c23",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/Stones_001_DiffSpec.tga",
+   "output_sha256": "35689a0022998c155290fac30060b6bea0fab78cd0600022995faaf3b44f0c23",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain/MI_TERR_Gravel_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Terrain.upk#MI_TERR_Gravel_01_AlphaEdge",
+   "object": "MI_TERR_Gravel_01_AlphaEdge",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "TERR_Gravel_01_AlphaEdge",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/Stones_001_DiffSpec.tga",
+   "extracted_sha256": "35689a0022998c155290fac30060b6bea0fab78cd0600022995faaf3b44f0c23",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/Stones_001_DiffSpec.tga",
+   "output_sha256": "35689a0022998c155290fac30060b6bea0fab78cd0600022995faaf3b44f0c23",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain/MI_TERR_Gravel_01_AlphaEdge.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Terrain.upk#MI_TERR_Gravel_01_Benchmark",
+   "object": "MI_TERR_Gravel_01_Benchmark",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "TERR_Gravel_01_Benchmark",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/Stones_001_DiffSpec.tga",
+   "extracted_sha256": "35689a0022998c155290fac30060b6bea0fab78cd0600022995faaf3b44f0c23",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/Stones_001_DiffSpec.tga",
+   "output_sha256": "35689a0022998c155290fac30060b6bea0fab78cd0600022995faaf3b44f0c23",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain/MI_TERR_Gravel_01_Benchmark.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Terrain.upk#MI_TERR_Gravel_01_FD",
+   "object": "MI_TERR_Gravel_01_FD",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "TERR_Gravel_01_FD",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/Stones_001_DiffSpec.tga",
+   "extracted_sha256": "35689a0022998c155290fac30060b6bea0fab78cd0600022995faaf3b44f0c23",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/Stones_001_DiffSpec.tga",
+   "output_sha256": "35689a0022998c155290fac30060b6bea0fab78cd0600022995faaf3b44f0c23",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain/MI_TERR_Gravel_01_FD.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Terrain.upk#MI_TERR_PaveSlab_01",
+   "object": "MI_TERR_PaveSlab_01",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "TERR_PaveSlab_01",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain/RoadSurfaces_Pathway/Texture2D/Sidewalk_SquareStone2_DiffSpec.tga",
+   "extracted_sha256": "57dd75296af4aac1b144e6f9cc27b4451b4c1fcc996551a826823a412d0eb864",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain/RoadSurfaces_Pathway/Texture2D/Sidewalk_SquareStone2_DiffSpec.tga",
+   "output_sha256": "57dd75296af4aac1b144e6f9cc27b4451b4c1fcc996551a826823a412d0eb864",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain/MI_TERR_PaveSlab_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Terrain.upk#MI_Water_StormDrain_01",
+   "object": "MI_Water_StormDrain_01",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Water_StormDrain_01",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain/MI_Water_StormDrain_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Terrain.upk#Sand01_DIF",
+   "object": "Sand01_DIF",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/Sand01_DIF.tga",
+   "extracted_sha256": "f240abfe40f4a713c151aaa53c6db1eb811ffdb7ade679d0af5c78471bae6fd9",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/Sand01_DIF.tga",
+   "output_sha256": "f240abfe40f4a713c151aaa53c6db1eb811ffdb7ade679d0af5c78471bae6fd9",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain/Sand01_DIF.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Terrain.upk#Sand01_NRM",
+   "object": "Sand01_NRM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/Sand01_NRM.tga",
+   "extracted_sha256": "66090ab84b2b623a11c52852ebaa5ad9b738d57575119fb9d2470bbdee0c8c0a",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/Sand01_NRM.tga",
+   "output_sha256": "66090ab84b2b623a11c52852ebaa5ad9b738d57575119fb9d2470bbdee0c8c0a",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain/Sand01_NRM.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Terrain.upk#Sidewalk_SquareStone2_DiffSpec",
+   "object": "Sidewalk_SquareStone2_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain/RoadSurfaces_Pathway/Texture2D/Sidewalk_SquareStone2_DiffSpec.tga",
+   "extracted_sha256": "57dd75296af4aac1b144e6f9cc27b4451b4c1fcc996551a826823a412d0eb864",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain/RoadSurfaces_Pathway/Texture2D/Sidewalk_SquareStone2_DiffSpec.tga",
+   "output_sha256": "57dd75296af4aac1b144e6f9cc27b4451b4c1fcc996551a826823a412d0eb864",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain/Sidewalk_SquareStone2_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Terrain.upk#Sidewalk_SquareStone2_Norm",
+   "object": "Sidewalk_SquareStone2_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain/RoadSurfaces_Pathway/Texture2D/Sidewalk_SquareStone2_Norm.tga",
+   "extracted_sha256": "1bbf00c2eed77fb496a2a169e8f1fd33415f01d1064083abc6693e0f845e3000",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain/RoadSurfaces_Pathway/Texture2D/Sidewalk_SquareStone2_Norm.tga",
+   "output_sha256": "1bbf00c2eed77fb496a2a169e8f1fd33415f01d1064083abc6693e0f845e3000",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain/Sidewalk_SquareStone2_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Terrain.upk#Stones_001_Alpha",
+   "object": "Stones_001_Alpha",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/Stones_001_Alpha.tga",
+   "extracted_sha256": "de4d0b735915fd799613a04d86824622977b3121ffcfd87dd51352ceb0045d0b",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/Stones_001_Alpha.tga",
+   "output_sha256": "de4d0b735915fd799613a04d86824622977b3121ffcfd87dd51352ceb0045d0b",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain/Stones_001_Alpha.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Terrain.upk#Stones_001_DiffSpec",
+   "object": "Stones_001_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/Stones_001_DiffSpec.tga",
+   "extracted_sha256": "35689a0022998c155290fac30060b6bea0fab78cd0600022995faaf3b44f0c23",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/Stones_001_DiffSpec.tga",
+   "output_sha256": "35689a0022998c155290fac30060b6bea0fab78cd0600022995faaf3b44f0c23",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain/Stones_001_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Terrain.upk#Stones_001_Norm",
+   "object": "Stones_001_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/Stones_001_Norm.tga",
+   "extracted_sha256": "0e7b0049505d916cc0a911c375f3e337f32c859891819f4d3c0d88c32dbb4013",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/Stones_001_Norm.tga",
+   "output_sha256": "0e7b0049505d916cc0a911c375f3e337f32c859891819f4d3c0d88c32dbb4013",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain/Stones_001_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Terrain.upk#TERR_DarkAsphalt_DiffSpec",
+   "object": "TERR_DarkAsphalt_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/TERR_DarkAsphalt_DiffSpec.tga",
+   "extracted_sha256": "0296a2f55c6a92accb5cb498061400ac3e9942de1c6a01fe97494451a941eb64",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain/Terrain/Texture2D/TERR_DarkAsphalt_DiffSpec.tga",
+   "output_sha256": "0296a2f55c6a92accb5cb498061400ac3e9942de1c6a01fe97494451a941eb64",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain/TERR_DarkAsphalt_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Terrain.upk#Waves_Norm",
+   "object": "Waves_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain/Water/Texture2D/Waves_Norm.tga",
+   "extracted_sha256": "63098a145fd6cab63b12dd3f9981df702dbf5238108963e4102198cd60c37dfb",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain/Water/Texture2D/Waves_Norm.tga",
+   "output_sha256": "63098a145fd6cab63b12dd3f9981df702dbf5238108963e4102198cd60c37dfb",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain/Waves_Norm.uasset"
+  }
+ ]
+}

@@ -1,0 +1,75 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "CSD_Cement",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/Cement/CSD_Cement.upk",
+ "source_sha256": "5ebc81f8f79373f9e6e7398c9a607881ba94c94220dca215e73ed2eab6186391",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Cement/CSD_Cement.upk#Abingtontowers_NRM",
+   "object": "Abingtontowers_NRM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Cement/CSD_Cement/Texture2D/Abingtontowers_NRM.tga",
+   "extracted_sha256": "a12cb4dda2c84427b0797fd77b21642ba21f168b9e9a1ddd9eb6c0678eef6825",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Cement/CSD_Cement/Texture2D/Abingtontowers_NRM.tga",
+   "output_sha256": "a12cb4dda2c84427b0797fd77b21642ba21f168b9e9a1ddd9eb6c0678eef6825",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Cement/Abingtontowers_NRM.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Cement/CSD_Cement.upk#Cement_DiffSpec",
+   "object": "Cement_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Cement/CSD_Cement/Texture2D/Cement_DiffSpec.tga",
+   "extracted_sha256": "0d4c5ef2e9ad7a6c5157fee8856d320ef89b2dc34a31c66e3758ffc855facb1d",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Cement/CSD_Cement/Texture2D/Cement_DiffSpec.tga",
+   "output_sha256": "0d4c5ef2e9ad7a6c5157fee8856d320ef89b2dc34a31c66e3758ffc855facb1d",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Cement/Cement_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Cement/CSD_Cement.upk#MI_Cement_Dirty_AbingtonTowers",
+   "object": "MI_Cement_Dirty_AbingtonTowers",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Cement_Dirty_AbingtonTowers",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Cement/CSD_Cement/Texture2D/Cement_DiffSpec.tga",
+   "extracted_sha256": "0d4c5ef2e9ad7a6c5157fee8856d320ef89b2dc34a31c66e3758ffc855facb1d",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Cement/CSD_Cement/Texture2D/Cement_DiffSpec.tga",
+   "output_sha256": "0d4c5ef2e9ad7a6c5157fee8856d320ef89b2dc34a31c66e3758ffc855facb1d",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Cement/MI_Cement_Dirty_AbingtonTowers.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Cement/CSD_Cement.upk#MI_Cement_Dirty_Beige",
+   "object": "MI_Cement_Dirty_Beige",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Cement_Dirty_Beige",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Cement/CSD_Cement/Texture2D/Cement_DiffSpec.tga",
+   "extracted_sha256": "0d4c5ef2e9ad7a6c5157fee8856d320ef89b2dc34a31c66e3758ffc855facb1d",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Cement/CSD_Cement/Texture2D/Cement_DiffSpec.tga",
+   "output_sha256": "0d4c5ef2e9ad7a6c5157fee8856d320ef89b2dc34a31c66e3758ffc855facb1d",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Cement/MI_Cement_Dirty_Beige.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Cement/CSD_Cement.upk#MI_Cement_Dirty_PARENT",
+   "object": "MI_Cement_Dirty_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Cement_Dirty_PARENT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Cement/CSD_Cement/Texture2D/Cement_DiffSpec.tga",
+   "extracted_sha256": "0d4c5ef2e9ad7a6c5157fee8856d320ef89b2dc34a31c66e3758ffc855facb1d",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Cement/CSD_Cement/Texture2D/Cement_DiffSpec.tga",
+   "output_sha256": "0d4c5ef2e9ad7a6c5157fee8856d320ef89b2dc34a31c66e3758ffc855facb1d",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Cement/MI_Cement_Dirty_PARENT.uasset"
+  }
+ ]
+}

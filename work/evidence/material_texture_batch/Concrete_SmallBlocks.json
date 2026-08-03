@@ -1,0 +1,34 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Concrete_SmallBlocks",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/Floor/Concrete_SmallBlocks.upk",
+ "source_sha256": "5e2ea010d2fd16d6c0d36880bbcced9511b5b19f141a1633761c8d8082b13adf",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Floor/Concrete_SmallBlocks.upk#Concrete_SmallBlocks_Diff",
+   "object": "Concrete_SmallBlocks_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Concrete_SmallBlocks/Concrete_SmallBlocks/Texture2D/Concrete_SmallBlocks_Diff.tga",
+   "extracted_sha256": "d4e7de2ce6de9d34e0a656ebd64a233aec29db2df9e747f773a8cd670e6c70ff",
+   "output_file": "Content/Extracted/MaterialDatabase/Concrete_SmallBlocks/Concrete_SmallBlocks/Texture2D/Concrete_SmallBlocks_Diff.tga",
+   "output_sha256": "d4e7de2ce6de9d34e0a656ebd64a233aec29db2df9e747f773a8cd670e6c70ff",
+   "uasset": "Content/Imported/MaterialDatabase/Concrete_SmallBlocks/Concrete_SmallBlocks_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Floor/Concrete_SmallBlocks.upk#MI_Concrete_SmallBlocks_Mat",
+   "object": "MI_Concrete_SmallBlocks_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Concrete_SmallBlocks_Mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Concrete_SmallBlocks/Concrete_SmallBlocks/Texture2D/Concrete_SmallBlocks_Diff.tga",
+   "extracted_sha256": "d4e7de2ce6de9d34e0a656ebd64a233aec29db2df9e747f773a8cd670e6c70ff",
+   "output_file": "Content/Extracted/MaterialDatabase/Concrete_SmallBlocks/Concrete_SmallBlocks/Texture2D/Concrete_SmallBlocks_Diff.tga",
+   "output_sha256": "d4e7de2ce6de9d34e0a656ebd64a233aec29db2df9e747f773a8cd670e6c70ff",
+   "uasset": "Content/Imported/MaterialDatabase/Concrete_SmallBlocks/MI_Concrete_SmallBlocks_Mat.uasset"
+  }
+ ]
+}

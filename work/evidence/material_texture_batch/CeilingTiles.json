@@ -1,0 +1,34 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "CeilingTiles",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/Ceiling/CeilingTiles.upk",
+ "source_sha256": "27abeaf687affea1ba9683abbd96bb308500630aa86cc2c8035cf9bf951b381f",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Ceiling/CeilingTiles.upk#CeilingTile_NRM",
+   "object": "CeilingTile_NRM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CeilingTiles/CeilingTiles/Texture2D/CeilingTile_NRM.tga",
+   "extracted_sha256": "4ad72cd2e7493b98c6fdb977f3f71f66d35742bd0fd86f2dca1f0883fb8188bc",
+   "output_file": "Content/Extracted/MaterialDatabase/CeilingTiles/CeilingTiles/Texture2D/CeilingTile_NRM.tga",
+   "output_sha256": "4ad72cd2e7493b98c6fdb977f3f71f66d35742bd0fd86f2dca1f0883fb8188bc",
+   "uasset": "Content/Imported/MaterialDatabase/CeilingTiles/CeilingTile_NRM.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Ceiling/CeilingTiles.upk#MI_CeilingTile_Mat",
+   "object": "MI_CeilingTile_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CeilingTile_Mat",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CeilingTiles/CeilingTiles/Texture2D/CeilingTile_NRM.tga",
+   "extracted_sha256": "4ad72cd2e7493b98c6fdb977f3f71f66d35742bd0fd86f2dca1f0883fb8188bc",
+   "output_file": "Content/Extracted/MaterialDatabase/CeilingTiles/CeilingTiles/Texture2D/CeilingTile_NRM.tga",
+   "output_sha256": "4ad72cd2e7493b98c6fdb977f3f71f66d35742bd0fd86f2dca1f0883fb8188bc",
+   "uasset": "Content/Imported/MaterialDatabase/CeilingTiles/MI_CeilingTile_Mat.uasset"
+  }
+ ]
+}

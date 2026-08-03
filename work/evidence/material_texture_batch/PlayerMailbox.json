@@ -1,0 +1,100 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "PlayerMailbox",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/SocialDistrict/PropMaterials/PlayerMailbox.upk",
+ "source_sha256": "660dc9d3e1dc93a89939d8cd03a257b33a864763aa1ea15858acf6ce7121d48e",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/PlayerMailbox.upk#MI_PlayerMailbox_MassiveAd",
+   "object": "MI_PlayerMailbox_MassiveAd",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PlayerMailbox_MassiveAd",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/PlayerMailbox/PlayerMailbox/Texture2D/PlayerMailbox_Ad.tga",
+   "extracted_sha256": "d62cdd3ab87117c3da587b3e15db27f934d4610ad078db1696931b464214835f",
+   "output_file": "Content/Extracted/MaterialDatabase/PlayerMailbox/PlayerMailbox/Texture2D/PlayerMailbox_Ad.tga",
+   "output_sha256": "d62cdd3ab87117c3da587b3e15db27f934d4610ad078db1696931b464214835f",
+   "uasset": "Content/Imported/MaterialDatabase/PlayerMailbox/MI_PlayerMailbox_MassiveAd.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/PlayerMailbox.upk#MI_PlayerMailbox_Mat",
+   "object": "MI_PlayerMailbox_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PlayerMailbox_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/PlayerMailbox/PlayerMailbox/Texture2D/PlayerMailbox_DiffSpec.tga",
+   "extracted_sha256": "e0b0917795c1662e251adfcbefff15581c9eb81507442048d4ec341e6ce7178f",
+   "output_file": "Content/Extracted/MaterialDatabase/PlayerMailbox/PlayerMailbox/Texture2D/PlayerMailbox_DiffSpec.tga",
+   "output_sha256": "e0b0917795c1662e251adfcbefff15581c9eb81507442048d4ec341e6ce7178f",
+   "uasset": "Content/Imported/MaterialDatabase/PlayerMailbox/MI_PlayerMailbox_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/PlayerMailbox.upk#MI_PlayerVaultbox_Mat",
+   "object": "MI_PlayerVaultbox_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PlayerVaultbox_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/PlayerMailbox/PlayerMailbox/Texture2D/PlayerVaultbox_DiffSpec.tga",
+   "extracted_sha256": "b6b7fd2fadb1e23c6eedcd4fd39fbc8a13cd45eb0d60e648c7736b7538e4fc61",
+   "output_file": "Content/Extracted/MaterialDatabase/PlayerMailbox/PlayerMailbox/Texture2D/PlayerVaultbox_DiffSpec.tga",
+   "output_sha256": "b6b7fd2fadb1e23c6eedcd4fd39fbc8a13cd45eb0d60e648c7736b7538e4fc61",
+   "uasset": "Content/Imported/MaterialDatabase/PlayerMailbox/MI_PlayerVaultbox_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/PlayerMailbox.upk#PlayerMailbox_Ad",
+   "object": "PlayerMailbox_Ad",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/PlayerMailbox/PlayerMailbox/Texture2D/PlayerMailbox_Ad.tga",
+   "extracted_sha256": "d62cdd3ab87117c3da587b3e15db27f934d4610ad078db1696931b464214835f",
+   "output_file": "Content/Extracted/MaterialDatabase/PlayerMailbox/PlayerMailbox/Texture2D/PlayerMailbox_Ad.tga",
+   "output_sha256": "d62cdd3ab87117c3da587b3e15db27f934d4610ad078db1696931b464214835f",
+   "uasset": "Content/Imported/MaterialDatabase/PlayerMailbox/PlayerMailbox_Ad.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/PlayerMailbox.upk#PlayerMailbox_DiffSpec",
+   "object": "PlayerMailbox_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/PlayerMailbox/PlayerMailbox/Texture2D/PlayerMailbox_DiffSpec.tga",
+   "extracted_sha256": "e0b0917795c1662e251adfcbefff15581c9eb81507442048d4ec341e6ce7178f",
+   "output_file": "Content/Extracted/MaterialDatabase/PlayerMailbox/PlayerMailbox/Texture2D/PlayerMailbox_DiffSpec.tga",
+   "output_sha256": "e0b0917795c1662e251adfcbefff15581c9eb81507442048d4ec341e6ce7178f",
+   "uasset": "Content/Imported/MaterialDatabase/PlayerMailbox/PlayerMailbox_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/PlayerMailbox.upk#PlayerMailbox_Norm",
+   "object": "PlayerMailbox_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/PlayerMailbox/PlayerMailbox/Texture2D/PlayerMailbox_Norm.tga",
+   "extracted_sha256": "80c105f3d6858ae381a2a128308b09b4fa36e045aaa4abfb0cde122c89da1a04",
+   "output_file": "Content/Extracted/MaterialDatabase/PlayerMailbox/PlayerMailbox/Texture2D/PlayerMailbox_Norm.tga",
+   "output_sha256": "80c105f3d6858ae381a2a128308b09b4fa36e045aaa4abfb0cde122c89da1a04",
+   "uasset": "Content/Imported/MaterialDatabase/PlayerMailbox/PlayerMailbox_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/PlayerMailbox.upk#PlayerVaultbox_DiffSpec",
+   "object": "PlayerVaultbox_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/PlayerMailbox/PlayerMailbox/Texture2D/PlayerVaultbox_DiffSpec.tga",
+   "extracted_sha256": "b6b7fd2fadb1e23c6eedcd4fd39fbc8a13cd45eb0d60e648c7736b7538e4fc61",
+   "output_file": "Content/Extracted/MaterialDatabase/PlayerMailbox/PlayerMailbox/Texture2D/PlayerVaultbox_DiffSpec.tga",
+   "output_sha256": "b6b7fd2fadb1e23c6eedcd4fd39fbc8a13cd45eb0d60e648c7736b7538e4fc61",
+   "uasset": "Content/Imported/MaterialDatabase/PlayerMailbox/PlayerVaultbox_DiffSpec.uasset"
+  }
+ ]
+}

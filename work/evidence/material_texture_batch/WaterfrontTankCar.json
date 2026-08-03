@@ -1,0 +1,60 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "WaterfrontTankCar",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontTankCar.upk",
+ "source_sha256": "34c79fa3f485166a64ce3a3c99791e3b441aaa8ab02020f39b24c9de9e199b69",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontTankCar.upk#MI_WaterfrontTankCar_Mat",
+   "object": "MI_WaterfrontTankCar_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WaterfrontTankCar_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontTankCar/WaterfrontTankCar/Texture2D/WaterfrontTankCar_DiffSpec.tga",
+   "extracted_sha256": "f53a6641191019fc867a33ef14ff64db313090e3d407efc571e40d719effad31",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontTankCar/WaterfrontTankCar/Texture2D/WaterfrontTankCar_DiffSpec.tga",
+   "output_sha256": "f53a6641191019fc867a33ef14ff64db313090e3d407efc571e40d719effad31",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontTankCar/MI_WaterfrontTankCar_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontTankCar.upk#WaterfrontTankCar_DiffSpec",
+   "object": "WaterfrontTankCar_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontTankCar/WaterfrontTankCar/Texture2D/WaterfrontTankCar_DiffSpec.tga",
+   "extracted_sha256": "f53a6641191019fc867a33ef14ff64db313090e3d407efc571e40d719effad31",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontTankCar/WaterfrontTankCar/Texture2D/WaterfrontTankCar_DiffSpec.tga",
+   "output_sha256": "f53a6641191019fc867a33ef14ff64db313090e3d407efc571e40d719effad31",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontTankCar/WaterfrontTankCar_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontTankCar.upk#WaterfrontTankCar_Norm",
+   "object": "WaterfrontTankCar_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontTankCar/WaterfrontTankCar/Texture2D/WaterfrontTankCar_Norm.tga",
+   "extracted_sha256": "ebafcf28cee639e9f3c3145e005f66cf416937abbc3ec7c6b695b6cacf85b6af",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontTankCar/WaterfrontTankCar/Texture2D/WaterfrontTankCar_Norm.tga",
+   "output_sha256": "ebafcf28cee639e9f3c3145e005f66cf416937abbc3ec7c6b695b6cacf85b6af",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontTankCar/WaterfrontTankCar_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontTankCar.upk#WaterfrontTankCar_Opac",
+   "object": "WaterfrontTankCar_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontTankCar/WaterfrontTankCar/Texture2D/WaterfrontTankCar_Opac.tga",
+   "extracted_sha256": "59d3f83808fedde7900ee657a88f7f614b421cffa2581cd5067cfab2b7a730fb",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontTankCar/WaterfrontTankCar/Texture2D/WaterfrontTankCar_Opac.tga",
+   "output_sha256": "59d3f83808fedde7900ee657a88f7f614b421cffa2581cd5067cfab2b7a730fb",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontTankCar/WaterfrontTankCar_Opac.uasset"
+  }
+ ]
+}

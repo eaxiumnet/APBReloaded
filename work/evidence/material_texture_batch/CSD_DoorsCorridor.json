@@ -1,0 +1,60 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "CSD_DoorsCorridor",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/FeatureMaterials/CSD_DoorsCorridor.upk",
+ "source_sha256": "6f9b69d10f31f595d8ab94c0fcfca4bfa188a84be450665e58440b64ce6ece76",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/FeatureMaterials/CSD_DoorsCorridor.upk#CSD_DoorsCorridor_DiffSpec",
+   "object": "CSD_DoorsCorridor_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_DoorsCorridor/CSD_DoorsCorridor/Texture2D/CSD_DoorsCorridor_DiffSpec.tga",
+   "extracted_sha256": "11975ec2556c8e5e354e5da92f247071cf3bd5287b31dfa99e30946fa58db941",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_DoorsCorridor/CSD_DoorsCorridor/Texture2D/CSD_DoorsCorridor_DiffSpec.tga",
+   "output_sha256": "11975ec2556c8e5e354e5da92f247071cf3bd5287b31dfa99e30946fa58db941",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_DoorsCorridor/CSD_DoorsCorridor_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/FeatureMaterials/CSD_DoorsCorridor.upk#Distortion",
+   "object": "Distortion",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_DoorsCorridor/Glass/Texture2D/Distortion.tga",
+   "extracted_sha256": "b141fad20c648b88cbaa4e086c514206d4c1ec6b7921f41c655513cba7543389",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_DoorsCorridor/Glass/Texture2D/Distortion.tga",
+   "output_sha256": "b141fad20c648b88cbaa4e086c514206d4c1ec6b7921f41c655513cba7543389",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_DoorsCorridor/Distortion.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/FeatureMaterials/CSD_DoorsCorridor.upk#MI_csd_doorscorridor",
+   "object": "MI_csd_doorscorridor",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "csd_doorscorridor",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_DoorsCorridor/CSD_DoorsCorridor/Texture2D/CSD_DoorsCorridor_DiffSpec.tga",
+   "extracted_sha256": "11975ec2556c8e5e354e5da92f247071cf3bd5287b31dfa99e30946fa58db941",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_DoorsCorridor/CSD_DoorsCorridor/Texture2D/CSD_DoorsCorridor_DiffSpec.tga",
+   "output_sha256": "11975ec2556c8e5e354e5da92f247071cf3bd5287b31dfa99e30946fa58db941",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_DoorsCorridor/MI_csd_doorscorridor.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/FeatureMaterials/CSD_DoorsCorridor.upk#MI_Glass_Transparent_DirtyNoReflection_Interior",
+   "object": "MI_Glass_Transparent_DirtyNoReflection_Interior",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Glass_Transparent_DirtyNoReflection_Interior",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_DoorsCorridor/Glass/Texture2D/Distortion.tga",
+   "extracted_sha256": "b141fad20c648b88cbaa4e086c514206d4c1ec6b7921f41c655513cba7543389",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_DoorsCorridor/Glass/Texture2D/Distortion.tga",
+   "output_sha256": "b141fad20c648b88cbaa4e086c514206d4c1ec6b7921f41c655513cba7543389",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_DoorsCorridor/MI_Glass_Transparent_DirtyNoReflection_Interior.uasset"
+  }
+ ]
+}

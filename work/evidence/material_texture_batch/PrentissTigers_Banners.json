@@ -1,0 +1,74 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "PrentissTigers_Banners",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericDistrict/Signs/PrentissTigers_Banners.upk",
+ "source_sha256": "bb8ab0aee19c71da0f15dff2ff67b7ff0d3544d157aee54f664d52513ff1cbdb",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericDistrict/Signs/PrentissTigers_Banners.upk#Banners_Wind_NORM",
+   "object": "Banners_Wind_NORM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/PrentissTigers_Banners/FD_Block08/Texture2D/Banners_Wind_NORM.tga",
+   "extracted_sha256": "add18dbb086785881f5432826fb635d9101df468b9234aa1eaac567ca6d5783f",
+   "output_file": "Content/Extracted/MaterialDatabase/PrentissTigers_Banners/FD_Block08/Texture2D/Banners_Wind_NORM.tga",
+   "output_sha256": "add18dbb086785881f5432826fb635d9101df468b9234aa1eaac567ca6d5783f",
+   "uasset": "Content/Imported/MaterialDatabase/PrentissTigers_Banners/Banners_Wind_NORM.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericDistrict/Signs/PrentissTigers_Banners.upk#Metal_Corroded_DiffSpec",
+   "object": "Metal_Corroded_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/PrentissTigers_Banners/Metal/Texture2D/Metal_Corroded_DiffSpec.tga",
+   "extracted_sha256": "77c5a335153bf38a56296ad62f6377862c76590ffbdc4056a9d5df39f459c2fd",
+   "output_file": "Content/Extracted/MaterialDatabase/PrentissTigers_Banners/Metal/Texture2D/Metal_Corroded_DiffSpec.tga",
+   "output_sha256": "77c5a335153bf38a56296ad62f6377862c76590ffbdc4056a9d5df39f459c2fd",
+   "uasset": "Content/Imported/MaterialDatabase/PrentissTigers_Banners/Metal_Corroded_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericDistrict/Signs/PrentissTigers_Banners.upk#MI_Metal_Corroded",
+   "object": "MI_Metal_Corroded",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_Corroded",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/PrentissTigers_Banners/Metal/Texture2D/Metal_Corroded_DiffSpec.tga",
+   "extracted_sha256": "77c5a335153bf38a56296ad62f6377862c76590ffbdc4056a9d5df39f459c2fd",
+   "output_file": "Content/Extracted/MaterialDatabase/PrentissTigers_Banners/Metal/Texture2D/Metal_Corroded_DiffSpec.tga",
+   "output_sha256": "77c5a335153bf38a56296ad62f6377862c76590ffbdc4056a9d5df39f459c2fd",
+   "uasset": "Content/Imported/MaterialDatabase/PrentissTigers_Banners/MI_Metal_Corroded.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericDistrict/Signs/PrentissTigers_Banners.upk#MI_PTigers_Banner",
+   "object": "MI_PTigers_Banner",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PTigers_Banner",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/PrentissTigers_Banners/FD_Block08/Texture2D/Banners_Wind_NORM.tga",
+   "extracted_sha256": "add18dbb086785881f5432826fb635d9101df468b9234aa1eaac567ca6d5783f",
+   "output_file": "Content/Extracted/MaterialDatabase/PrentissTigers_Banners/FD_Block08/Texture2D/Banners_Wind_NORM.tga",
+   "output_sha256": "add18dbb086785881f5432826fb635d9101df468b9234aa1eaac567ca6d5783f",
+   "uasset": "Content/Imported/MaterialDatabase/PrentissTigers_Banners/MI_PTigers_Banner.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericDistrict/Signs/PrentissTigers_Banners.upk#MI_PTigers_Banner_NoWind",
+   "object": "MI_PTigers_Banner_NoWind",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PTigers_Banner_NoWind",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/PrentissTigers_Banners/FD_Block08/Texture2D/Banners_Wind_NORM.tga",
+   "extracted_sha256": "add18dbb086785881f5432826fb635d9101df468b9234aa1eaac567ca6d5783f",
+   "output_file": "Content/Extracted/MaterialDatabase/PrentissTigers_Banners/FD_Block08/Texture2D/Banners_Wind_NORM.tga",
+   "output_sha256": "add18dbb086785881f5432826fb635d9101df468b9234aa1eaac567ca6d5783f",
+   "uasset": "Content/Imported/MaterialDatabase/PrentissTigers_Banners/MI_PTigers_Banner_NoWind.uasset"
+  }
+ ]
+}

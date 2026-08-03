@@ -1,0 +1,34 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FD_DecalMeshes",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/Decals/FD_DecalMeshes.upk",
+ "source_sha256": "185ef99f9f5b93b68e3da8cddf2e9e93b0ad0b83a01237aacc80ebdeb1f43773",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/Decals/FD_DecalMeshes.upk#MI_ParkingBay",
+   "object": "MI_ParkingBay",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "ParkingBay",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_DecalMeshes/RoadDecals/Texture2D/ParkingBay.tga",
+   "extracted_sha256": "a45016c4aa8002b4aff77cdc2715f7e0a46d569466183c2da99d078ddf26f42e",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_DecalMeshes/RoadDecals/Texture2D/ParkingBay.tga",
+   "output_sha256": "a45016c4aa8002b4aff77cdc2715f7e0a46d569466183c2da99d078ddf26f42e",
+   "uasset": "Content/Imported/MaterialDatabase/FD_DecalMeshes/MI_ParkingBay.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/Decals/FD_DecalMeshes.upk#ParkingBay",
+   "object": "ParkingBay",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_DecalMeshes/RoadDecals/Texture2D/ParkingBay.tga",
+   "extracted_sha256": "a45016c4aa8002b4aff77cdc2715f7e0a46d569466183c2da99d078ddf26f42e",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_DecalMeshes/RoadDecals/Texture2D/ParkingBay.tga",
+   "output_sha256": "a45016c4aa8002b4aff77cdc2715f7e0a46d569466183c2da99d078ddf26f42e",
+   "uasset": "Content/Imported/MaterialDatabase/FD_DecalMeshes/ParkingBay.uasset"
+  }
+ ]
+}

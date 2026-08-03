@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "GarageDoorsSliding",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/FeatureMaterials/GarageDoorsSliding.upk",
+ "source_sha256": "8e245f6f1095e459ef388a6af2aa3990cfb81707ac8026abcb0f465b8d1cd75e",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/GarageDoorsSliding.upk#GarageDoorsSliding_DiffSpec",
+   "object": "GarageDoorsSliding_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GarageDoorsSliding/GarageDoorsSliding/Texture2D/GarageDoorsSliding_DiffSpec.tga",
+   "extracted_sha256": "cfbc84ec466adc46d9b6f568bab70084b25f19686ca6edff0b24046bcd80cf33",
+   "output_file": "Content/Extracted/MaterialDatabase/GarageDoorsSliding/GarageDoorsSliding/Texture2D/GarageDoorsSliding_DiffSpec.tga",
+   "output_sha256": "cfbc84ec466adc46d9b6f568bab70084b25f19686ca6edff0b24046bcd80cf33",
+   "uasset": "Content/Imported/MaterialDatabase/GarageDoorsSliding/GarageDoorsSliding_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/GarageDoorsSliding.upk#GarageDoorsSliding_Norm",
+   "object": "GarageDoorsSliding_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GarageDoorsSliding/GarageDoorsSliding/Texture2D/GarageDoorsSliding_Norm.tga",
+   "extracted_sha256": "961d280d7b18027af74245e26c4ca00ce3bb1efe0435953ef9559c024fb338ae",
+   "output_file": "Content/Extracted/MaterialDatabase/GarageDoorsSliding/GarageDoorsSliding/Texture2D/GarageDoorsSliding_Norm.tga",
+   "output_sha256": "961d280d7b18027af74245e26c4ca00ce3bb1efe0435953ef9559c024fb338ae",
+   "uasset": "Content/Imported/MaterialDatabase/GarageDoorsSliding/GarageDoorsSliding_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/GarageDoorsSliding.upk#MI_GarageDoorsSliding_Mat",
+   "object": "MI_GarageDoorsSliding_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "GarageDoorsSliding_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GarageDoorsSliding/GarageDoorsSliding/Texture2D/GarageDoorsSliding_DiffSpec.tga",
+   "extracted_sha256": "cfbc84ec466adc46d9b6f568bab70084b25f19686ca6edff0b24046bcd80cf33",
+   "output_file": "Content/Extracted/MaterialDatabase/GarageDoorsSliding/GarageDoorsSliding/Texture2D/GarageDoorsSliding_DiffSpec.tga",
+   "output_sha256": "cfbc84ec466adc46d9b6f568bab70084b25f19686ca6edff0b24046bcd80cf33",
+   "uasset": "Content/Imported/MaterialDatabase/GarageDoorsSliding/MI_GarageDoorsSliding_Mat.uasset"
+  }
+ ]
+}

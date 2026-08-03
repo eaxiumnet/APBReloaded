@@ -1,0 +1,107 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FinancialLightsModern",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/PropMaterials/FinancialLightsModern.upk",
+ "source_sha256": "8440be15fa2958c65d64b6cae3046f1715d7074c0f870b9783763cd2d3cd0fed",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialLightsModern.upk#FinancialLightsModern_DiffSpec",
+   "object": "FinancialLightsModern_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialLightsModern/FinancialLightsModern/Texture2D/FinancialLightsModern_DiffSpec.tga",
+   "extracted_sha256": "6279838acc6760aabfb26785f0de3ab8925737daf187721e90b44bbb31f9a0f4",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialLightsModern/FinancialLightsModern/Texture2D/FinancialLightsModern_DiffSpec.tga",
+   "output_sha256": "6279838acc6760aabfb26785f0de3ab8925737daf187721e90b44bbb31f9a0f4",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialLightsModern/FinancialLightsModern_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialLightsModern.upk#FinancialLightsModern_Emis",
+   "object": "FinancialLightsModern_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialLightsModern/FinancialLightsModern/Texture2D/FinancialLightsModern_Emis.tga",
+   "extracted_sha256": "bef6572decb53616b17e3db8c45031036ad9101dc21435ea8bb1387b34d1cd22",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialLightsModern/FinancialLightsModern/Texture2D/FinancialLightsModern_Emis.tga",
+   "output_sha256": "bef6572decb53616b17e3db8c45031036ad9101dc21435ea8bb1387b34d1cd22",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialLightsModern/FinancialLightsModern_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialLightsModern.upk#FinancialLightsModern_Norm",
+   "object": "FinancialLightsModern_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialLightsModern/FinancialLightsModern/Texture2D/FinancialLightsModern_Norm.tga",
+   "extracted_sha256": "a0c2a279a97e2b6fcd6ac8b8bdaea28e86983be5f77f7906a9eeec3295f2ea99",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialLightsModern/FinancialLightsModern/Texture2D/FinancialLightsModern_Norm.tga",
+   "output_sha256": "a0c2a279a97e2b6fcd6ac8b8bdaea28e86983be5f77f7906a9eeec3295f2ea99",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialLightsModern/FinancialLightsModern_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialLightsModern.upk#MI_FinancialLightsModern_Damage_MAT",
+   "object": "MI_FinancialLightsModern_Damage_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialLightsModern_Damage_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialLightsModern/FinancialLightsModern/Texture2D/FinancialLightsModern_DiffSpec.tga",
+   "extracted_sha256": "6279838acc6760aabfb26785f0de3ab8925737daf187721e90b44bbb31f9a0f4",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialLightsModern/FinancialLightsModern/Texture2D/FinancialLightsModern_DiffSpec.tga",
+   "output_sha256": "6279838acc6760aabfb26785f0de3ab8925737daf187721e90b44bbb31f9a0f4",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialLightsModern/MI_FinancialLightsModern_Damage_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialLightsModern.upk#MI_FinancialLightsModern_Interior_MAT",
+   "object": "MI_FinancialLightsModern_Interior_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialLightsModern_Interior_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialLightsModern/FinancialLightsModern/Texture2D/FinancialLightsModern_DiffSpec.tga",
+   "extracted_sha256": "6279838acc6760aabfb26785f0de3ab8925737daf187721e90b44bbb31f9a0f4",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialLightsModern/FinancialLightsModern/Texture2D/FinancialLightsModern_DiffSpec.tga",
+   "output_sha256": "6279838acc6760aabfb26785f0de3ab8925737daf187721e90b44bbb31f9a0f4",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialLightsModern/MI_FinancialLightsModern_Interior_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialLightsModern.upk#MI_FinancialLightsModern_MAT",
+   "object": "MI_FinancialLightsModern_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialLightsModern_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialLightsModern/FinancialLightsModern/Texture2D/FinancialLightsModern_DiffSpec.tga",
+   "extracted_sha256": "6279838acc6760aabfb26785f0de3ab8925737daf187721e90b44bbb31f9a0f4",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialLightsModern/FinancialLightsModern/Texture2D/FinancialLightsModern_DiffSpec.tga",
+   "output_sha256": "6279838acc6760aabfb26785f0de3ab8925737daf187721e90b44bbb31f9a0f4",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialLightsModern/MI_FinancialLightsModern_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialLightsModern.upk#MI_FinancialLightsModern_Parklight_Nightlight",
+   "object": "MI_FinancialLightsModern_Parklight_Nightlight",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialLightsModern_Parklight_Nightlight",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialLightsModern/FinancialLightsModern/Texture2D/FinancialLightsModern_DiffSpec.tga",
+   "extracted_sha256": "6279838acc6760aabfb26785f0de3ab8925737daf187721e90b44bbb31f9a0f4",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialLightsModern/FinancialLightsModern/Texture2D/FinancialLightsModern_DiffSpec.tga",
+   "output_sha256": "6279838acc6760aabfb26785f0de3ab8925737daf187721e90b44bbb31f9a0f4",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialLightsModern/MI_FinancialLightsModern_Parklight_Nightlight.uasset"
+  }
+ ]
+}

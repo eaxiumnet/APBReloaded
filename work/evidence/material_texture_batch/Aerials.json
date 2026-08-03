@@ -1,0 +1,76 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Aerials",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/Aerials.upk",
+ "source_sha256": "b8b76d4ecbb2c1be63a48ef928f3431e96fe1c5a876ca1356e8fd83059215754",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Aerials.upk#Aerials_DiffSpec",
+   "object": "Aerials_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Aerials/Aerials/Texture2D/Aerials_DiffSpec.tga",
+   "extracted_sha256": "a50de0437762d737580dc1128d93e7152c394bd3b859fa258c9502d24004494a",
+   "output_file": "Content/Extracted/MaterialDatabase/Aerials/Aerials/Texture2D/Aerials_DiffSpec.tga",
+   "output_sha256": "a50de0437762d737580dc1128d93e7152c394bd3b859fa258c9502d24004494a",
+   "uasset": "Content/Imported/MaterialDatabase/Aerials/Aerials_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Aerials.upk#Aerials_Norm",
+   "object": "Aerials_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Aerials/Aerials/Texture2D/Aerials_Norm.tga",
+   "extracted_sha256": "6efffac45a4062f5874aa4aca87ecdde6572db322c1dc5a2ab804dac8c1d4df7",
+   "output_file": "Content/Extracted/MaterialDatabase/Aerials/Aerials/Texture2D/Aerials_Norm.tga",
+   "output_sha256": "6efffac45a4062f5874aa4aca87ecdde6572db322c1dc5a2ab804dac8c1d4df7",
+   "uasset": "Content/Imported/MaterialDatabase/Aerials/Aerials_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Aerials.upk#Aerials_Opac",
+   "object": "Aerials_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Aerials/Aerials/Texture2D/Aerials_Opac.tga",
+   "extracted_sha256": "45ccfdfb312ea6fb81cb91cfac93610188016dddc28e16b382be22f191eaeddb",
+   "output_file": "Content/Extracted/MaterialDatabase/Aerials/Aerials/Texture2D/Aerials_Opac.tga",
+   "output_sha256": "45ccfdfb312ea6fb81cb91cfac93610188016dddc28e16b382be22f191eaeddb",
+   "uasset": "Content/Imported/MaterialDatabase/Aerials/Aerials_Opac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Aerials.upk#MI_Aerials_Damaged_Mat",
+   "object": "MI_Aerials_Damaged_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Aerials_Damaged_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Aerials/Aerials/Texture2D/Aerials_DiffSpec.tga",
+   "extracted_sha256": "a50de0437762d737580dc1128d93e7152c394bd3b859fa258c9502d24004494a",
+   "output_file": "Content/Extracted/MaterialDatabase/Aerials/Aerials/Texture2D/Aerials_DiffSpec.tga",
+   "output_sha256": "a50de0437762d737580dc1128d93e7152c394bd3b859fa258c9502d24004494a",
+   "uasset": "Content/Imported/MaterialDatabase/Aerials/MI_Aerials_Damaged_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Aerials.upk#MI_Aerials_Mat",
+   "object": "MI_Aerials_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Aerials_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Aerials/Aerials/Texture2D/Aerials_DiffSpec.tga",
+   "extracted_sha256": "a50de0437762d737580dc1128d93e7152c394bd3b859fa258c9502d24004494a",
+   "output_file": "Content/Extracted/MaterialDatabase/Aerials/Aerials/Texture2D/Aerials_DiffSpec.tga",
+   "output_sha256": "a50de0437762d737580dc1128d93e7152c394bd3b859fa258c9502d24004494a",
+   "uasset": "Content/Imported/MaterialDatabase/Aerials/MI_Aerials_Mat.uasset"
+  }
+ ]
+}

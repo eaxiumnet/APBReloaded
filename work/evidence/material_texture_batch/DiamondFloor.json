@@ -1,0 +1,34 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "DiamondFloor",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/Floor/DiamondFloor.upk",
+ "source_sha256": "1dca9fe19ed96e7a8514cbcc21b2c860a95607aa547154d580875b488b1cf4b6",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Floor/DiamondFloor.upk#DiamondFloor_Diff",
+   "object": "DiamondFloor_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/DiamondFloor/DiamondFloor/Texture2D/DiamondFloor_Diff.tga",
+   "extracted_sha256": "b400f7737d7b4cda0c13bdf6c050e44365c5e2c603bfb7a6bd889389b3779d85",
+   "output_file": "Content/Extracted/MaterialDatabase/DiamondFloor/DiamondFloor/Texture2D/DiamondFloor_Diff.tga",
+   "output_sha256": "b400f7737d7b4cda0c13bdf6c050e44365c5e2c603bfb7a6bd889389b3779d85",
+   "uasset": "Content/Imported/MaterialDatabase/DiamondFloor/DiamondFloor_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Floor/DiamondFloor.upk#MI_DiamondFloor_Mat",
+   "object": "MI_DiamondFloor_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "DiamondFloor_Mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/DiamondFloor/DiamondFloor/Texture2D/DiamondFloor_Diff.tga",
+   "extracted_sha256": "b400f7737d7b4cda0c13bdf6c050e44365c5e2c603bfb7a6bd889389b3779d85",
+   "output_file": "Content/Extracted/MaterialDatabase/DiamondFloor/DiamondFloor/Texture2D/DiamondFloor_Diff.tga",
+   "output_sha256": "b400f7737d7b4cda0c13bdf6c050e44365c5e2c603bfb7a6bd889389b3779d85",
+   "uasset": "Content/Imported/MaterialDatabase/DiamondFloor/MI_DiamondFloor_Mat.uasset"
+  }
+ ]
+}

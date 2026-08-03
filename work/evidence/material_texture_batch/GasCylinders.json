@@ -1,0 +1,77 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "GasCylinders",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/GasCylinders.upk",
+ "source_sha256": "ef657ce96c827a331663079a4894ea9a8d801f7d914e42b53149091d952faacc",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/GasCylinders.upk#GasCylinders_DiffSpec",
+   "object": "GasCylinders_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GasCylinders/GasCylinders/Texture2D/GasCylinders_DiffSpec.tga",
+   "extracted_sha256": "566ee6a2494a5e745eab20de965f4d7112c0502bf3273e0c7f2bcec5041d043f",
+   "output_file": "Content/Extracted/MaterialDatabase/GasCylinders/GasCylinders/Texture2D/GasCylinders_DiffSpec.tga",
+   "output_sha256": "566ee6a2494a5e745eab20de965f4d7112c0502bf3273e0c7f2bcec5041d043f",
+   "uasset": "Content/Imported/MaterialDatabase/GasCylinders/GasCylinders_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/GasCylinders.upk#GasCylinders_Norm",
+   "object": "GasCylinders_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GasCylinders/GasCylinders/Texture2D/GasCylinders_Norm.tga",
+   "extracted_sha256": "8c281da7cec551329173f2eacffd3e4eff98b1916f52522cca2e6b3bae44d148",
+   "output_file": "Content/Extracted/MaterialDatabase/GasCylinders/GasCylinders/Texture2D/GasCylinders_Norm.tga",
+   "output_sha256": "8c281da7cec551329173f2eacffd3e4eff98b1916f52522cca2e6b3bae44d148",
+   "uasset": "Content/Imported/MaterialDatabase/GasCylinders/GasCylinders_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/GasCylinders.upk#MI_GasCylinders_ColourVariation1",
+   "object": "MI_GasCylinders_ColourVariation1",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "GasCylinders_ColourVariation1",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GasCylinders/GasCylinders/Texture2D/GasCylinders_DiffSpec.tga",
+   "extracted_sha256": "566ee6a2494a5e745eab20de965f4d7112c0502bf3273e0c7f2bcec5041d043f",
+   "output_file": "Content/Extracted/MaterialDatabase/GasCylinders/GasCylinders/Texture2D/GasCylinders_DiffSpec.tga",
+   "output_sha256": "566ee6a2494a5e745eab20de965f4d7112c0502bf3273e0c7f2bcec5041d043f",
+   "uasset": "Content/Imported/MaterialDatabase/GasCylinders/MI_GasCylinders_ColourVariation1.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/GasCylinders.upk#MI_GasCylinders_ColourVariation2",
+   "object": "MI_GasCylinders_ColourVariation2",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "GasCylinders_ColourVariation2",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GasCylinders/GasCylinders/Texture2D/GasCylinders_DiffSpec.tga",
+   "extracted_sha256": "566ee6a2494a5e745eab20de965f4d7112c0502bf3273e0c7f2bcec5041d043f",
+   "output_file": "Content/Extracted/MaterialDatabase/GasCylinders/GasCylinders/Texture2D/GasCylinders_DiffSpec.tga",
+   "output_sha256": "566ee6a2494a5e745eab20de965f4d7112c0502bf3273e0c7f2bcec5041d043f",
+   "uasset": "Content/Imported/MaterialDatabase/GasCylinders/MI_GasCylinders_ColourVariation2.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/GasCylinders.upk#MI_GasCylinders_Mat",
+   "object": "MI_GasCylinders_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "GasCylinders_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GasCylinders/GasCylinders/Texture2D/GasCylinders_DiffSpec.tga",
+   "extracted_sha256": "566ee6a2494a5e745eab20de965f4d7112c0502bf3273e0c7f2bcec5041d043f",
+   "output_file": "Content/Extracted/MaterialDatabase/GasCylinders/GasCylinders/Texture2D/GasCylinders_DiffSpec.tga",
+   "output_sha256": "566ee6a2494a5e745eab20de965f4d7112c0502bf3273e0c7f2bcec5041d043f",
+   "uasset": "Content/Imported/MaterialDatabase/GasCylinders/MI_GasCylinders_Mat.uasset"
+  }
+ ]
+}

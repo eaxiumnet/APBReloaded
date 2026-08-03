@@ -1,0 +1,89 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Concrete_Generic",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/ToBeRemoved/Concrete_Generic.upk",
+ "source_sha256": "937720938033a262bf5d575f4822783b3e7a3e720075a79ee0a17b5b00bde04c",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/ToBeRemoved/Concrete_Generic.upk#Concrete_Diff",
+   "object": "Concrete_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Concrete_Generic/Concrete_Generic/Texture2D/Concrete_Diff.tga",
+   "extracted_sha256": "525217005990ef52c9bb1f0143859af6c5fc3424aad72e25e2e23b1a61ea568e",
+   "output_file": "Content/Extracted/MaterialDatabase/Concrete_Generic/Concrete_Generic/Texture2D/Concrete_Diff.tga",
+   "output_sha256": "525217005990ef52c9bb1f0143859af6c5fc3424aad72e25e2e23b1a61ea568e",
+   "uasset": "Content/Imported/MaterialDatabase/Concrete_Generic/Concrete_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/ToBeRemoved/Concrete_Generic.upk#Concrete_Norm",
+   "object": "Concrete_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Concrete_Generic/Concrete_Generic/Texture2D/Concrete_Norm.tga",
+   "extracted_sha256": "bff8be347fa3f2408e6764d989b334745a1c7951d504ac30763fe7df3c643b5d",
+   "output_file": "Content/Extracted/MaterialDatabase/Concrete_Generic/Concrete_Generic/Texture2D/Concrete_Norm.tga",
+   "output_sha256": "bff8be347fa3f2408e6764d989b334745a1c7951d504ac30763fe7df3c643b5d",
+   "uasset": "Content/Imported/MaterialDatabase/Concrete_Generic/Concrete_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/ToBeRemoved/Concrete_Generic.upk#MI_Concrete_Generic_Blocks_Mat",
+   "object": "MI_Concrete_Generic_Blocks_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Concrete_Generic_Blocks_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Concrete_Generic/Concrete_Generic/Texture2D/Pattern_Diff.tga",
+   "extracted_sha256": "f69d53cd71c14440420b0fcd26fa3c3378d4b5882310b30a81f68c141e7cd6f8",
+   "output_file": "Content/Extracted/MaterialDatabase/Concrete_Generic/Concrete_Generic/Texture2D/Pattern_Diff.tga",
+   "output_sha256": "f69d53cd71c14440420b0fcd26fa3c3378d4b5882310b30a81f68c141e7cd6f8",
+   "uasset": "Content/Imported/MaterialDatabase/Concrete_Generic/MI_Concrete_Generic_Blocks_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/ToBeRemoved/Concrete_Generic.upk#MI_Concrete_Generic_Clean_Mat",
+   "object": "MI_Concrete_Generic_Clean_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Concrete_Generic_Clean_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Concrete_Generic/Concrete_Generic/Texture2D/Concrete_Diff.tga",
+   "extracted_sha256": "525217005990ef52c9bb1f0143859af6c5fc3424aad72e25e2e23b1a61ea568e",
+   "output_file": "Content/Extracted/MaterialDatabase/Concrete_Generic/Concrete_Generic/Texture2D/Concrete_Diff.tga",
+   "output_sha256": "525217005990ef52c9bb1f0143859af6c5fc3424aad72e25e2e23b1a61ea568e",
+   "uasset": "Content/Imported/MaterialDatabase/Concrete_Generic/MI_Concrete_Generic_Clean_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/ToBeRemoved/Concrete_Generic.upk#MI_Concrete_Generic_Clean_NoGrime",
+   "object": "MI_Concrete_Generic_Clean_NoGrime",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Concrete_Generic_Clean_NoGrime",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Concrete_Generic/Concrete_Generic/Texture2D/Concrete_Diff.tga",
+   "extracted_sha256": "525217005990ef52c9bb1f0143859af6c5fc3424aad72e25e2e23b1a61ea568e",
+   "output_file": "Content/Extracted/MaterialDatabase/Concrete_Generic/Concrete_Generic/Texture2D/Concrete_Diff.tga",
+   "output_sha256": "525217005990ef52c9bb1f0143859af6c5fc3424aad72e25e2e23b1a61ea568e",
+   "uasset": "Content/Imported/MaterialDatabase/Concrete_Generic/MI_Concrete_Generic_Clean_NoGrime.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/ToBeRemoved/Concrete_Generic.upk#Pattern_Diff",
+   "object": "Pattern_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Concrete_Generic/Concrete_Generic/Texture2D/Pattern_Diff.tga",
+   "extracted_sha256": "f69d53cd71c14440420b0fcd26fa3c3378d4b5882310b30a81f68c141e7cd6f8",
+   "output_file": "Content/Extracted/MaterialDatabase/Concrete_Generic/Concrete_Generic/Texture2D/Pattern_Diff.tga",
+   "output_sha256": "f69d53cd71c14440420b0fcd26fa3c3378d4b5882310b30a81f68c141e7cd6f8",
+   "uasset": "Content/Imported/MaterialDatabase/Concrete_Generic/Pattern_Diff.uasset"
+  }
+ ]
+}

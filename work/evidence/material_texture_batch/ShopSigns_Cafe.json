@@ -1,0 +1,117 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "ShopSigns_Cafe",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/FeatureMaterials/ShopSigns_Cafe.upk",
+ "source_sha256": "85b0db8a0bb75bfb00e501421c153eb9b1c1b8c66c80ab032825b5085c08e900",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/ShopSigns_Cafe.upk#MI_ShopSigns_Cafe_Cafe2_MAT",
+   "object": "MI_ShopSigns_Cafe_Cafe2_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "ShopSigns_Cafe_Cafe2_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ShopSigns_Cafe/ShopSigns_Restaurant/Texture2D/ShopSigns_Restaurant_Indian1_DiffOpac.tga",
+   "extracted_sha256": "ec060e83255a4651eb505eb4deabb8cd3f3455f413481a93ba1239cf0a5e27e3",
+   "output_file": "Content/Extracted/MaterialDatabase/ShopSigns_Cafe/ShopSigns_Restaurant/Texture2D/ShopSigns_Restaurant_Indian1_DiffOpac.tga",
+   "output_sha256": "ec060e83255a4651eb505eb4deabb8cd3f3455f413481a93ba1239cf0a5e27e3",
+   "uasset": "Content/Imported/MaterialDatabase/ShopSigns_Cafe/MI_ShopSigns_Cafe_Cafe2_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/ShopSigns_Cafe.upk#MI_ShopSigns_Restaurant_Indian1_MAT",
+   "object": "MI_ShopSigns_Restaurant_Indian1_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "ShopSigns_Restaurant_Indian1_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ShopSigns_Cafe/ShopSigns_Restaurant/Texture2D/ShopSigns_Restaurant_Indian1_DiffOpac.tga",
+   "extracted_sha256": "ec060e83255a4651eb505eb4deabb8cd3f3455f413481a93ba1239cf0a5e27e3",
+   "output_file": "Content/Extracted/MaterialDatabase/ShopSigns_Cafe/ShopSigns_Restaurant/Texture2D/ShopSigns_Restaurant_Indian1_DiffOpac.tga",
+   "output_sha256": "ec060e83255a4651eb505eb4deabb8cd3f3455f413481a93ba1239cf0a5e27e3",
+   "uasset": "Content/Imported/MaterialDatabase/ShopSigns_Cafe/MI_ShopSigns_Restaurant_Indian1_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/ShopSigns_Cafe.upk#MI_TexturePageLOD2_TPageB_Mat",
+   "object": "MI_TexturePageLOD2_TPageB_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "TexturePageLOD2_TPageB_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ShopSigns_Cafe/TexturePageLOD2_TPageB/Texture2D/TexturePageLOD2_TPageB_Diff.tga",
+   "extracted_sha256": "0036dca985d0cf9c319c34ebe72d6f24400b548bdd6ea08e80809b9a93536cdd",
+   "output_file": "Content/Extracted/MaterialDatabase/ShopSigns_Cafe/TexturePageLOD2_TPageB/Texture2D/TexturePageLOD2_TPageB_Diff.tga",
+   "output_sha256": "0036dca985d0cf9c319c34ebe72d6f24400b548bdd6ea08e80809b9a93536cdd",
+   "uasset": "Content/Imported/MaterialDatabase/ShopSigns_Cafe/MI_TexturePageLOD2_TPageB_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/ShopSigns_Cafe.upk#ShopSigns_Restaurant_Indian1_DiffOpac",
+   "object": "ShopSigns_Restaurant_Indian1_DiffOpac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ShopSigns_Cafe/ShopSigns_Restaurant/Texture2D/ShopSigns_Restaurant_Indian1_DiffOpac.tga",
+   "extracted_sha256": "ec060e83255a4651eb505eb4deabb8cd3f3455f413481a93ba1239cf0a5e27e3",
+   "output_file": "Content/Extracted/MaterialDatabase/ShopSigns_Cafe/ShopSigns_Restaurant/Texture2D/ShopSigns_Restaurant_Indian1_DiffOpac.tga",
+   "output_sha256": "ec060e83255a4651eb505eb4deabb8cd3f3455f413481a93ba1239cf0a5e27e3",
+   "uasset": "Content/Imported/MaterialDatabase/ShopSigns_Cafe/ShopSigns_Restaurant_Indian1_DiffOpac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/ShopSigns_Cafe.upk#ShopSigns_ShopFaked_Restaurant_Emis",
+   "object": "ShopSigns_ShopFaked_Restaurant_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ShopSigns_Cafe/ShopSigns_Restaurant/Texture2D/ShopSigns_ShopFaked_Restaurant_Emis.tga",
+   "extracted_sha256": "61c41bb69cca85397c82aed54f6b54076208d0def5b7342ece9836ff65aa6b2b",
+   "output_file": "Content/Extracted/MaterialDatabase/ShopSigns_Cafe/ShopSigns_Restaurant/Texture2D/ShopSigns_ShopFaked_Restaurant_Emis.tga",
+   "output_sha256": "61c41bb69cca85397c82aed54f6b54076208d0def5b7342ece9836ff65aa6b2b",
+   "uasset": "Content/Imported/MaterialDatabase/ShopSigns_Cafe/ShopSigns_ShopFaked_Restaurant_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/ShopSigns_Cafe.upk#ShopSigns_ShopFaked_Restaurant_Norm",
+   "object": "ShopSigns_ShopFaked_Restaurant_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ShopSigns_Cafe/ShopSigns_Restaurant/Texture2D/ShopSigns_ShopFaked_Restaurant_Norm.tga",
+   "extracted_sha256": "e13c78f0eb9f75c2aeff5241d72df293f7566cbc0fb373d52484cd8923acb043",
+   "output_file": "Content/Extracted/MaterialDatabase/ShopSigns_Cafe/ShopSigns_Restaurant/Texture2D/ShopSigns_ShopFaked_Restaurant_Norm.tga",
+   "output_sha256": "e13c78f0eb9f75c2aeff5241d72df293f7566cbc0fb373d52484cd8923acb043",
+   "uasset": "Content/Imported/MaterialDatabase/ShopSigns_Cafe/ShopSigns_ShopFaked_Restaurant_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/ShopSigns_Cafe.upk#TexturePageLOD2_TPageB_Diff",
+   "object": "TexturePageLOD2_TPageB_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ShopSigns_Cafe/TexturePageLOD2_TPageB/Texture2D/TexturePageLOD2_TPageB_Diff.tga",
+   "extracted_sha256": "0036dca985d0cf9c319c34ebe72d6f24400b548bdd6ea08e80809b9a93536cdd",
+   "output_file": "Content/Extracted/MaterialDatabase/ShopSigns_Cafe/TexturePageLOD2_TPageB/Texture2D/TexturePageLOD2_TPageB_Diff.tga",
+   "output_sha256": "0036dca985d0cf9c319c34ebe72d6f24400b548bdd6ea08e80809b9a93536cdd",
+   "uasset": "Content/Imported/MaterialDatabase/ShopSigns_Cafe/TexturePageLOD2_TPageB_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/ShopSigns_Cafe.upk#TexturePageLOD2_TPageB_Emis",
+   "object": "TexturePageLOD2_TPageB_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ShopSigns_Cafe/TexturePageLOD2_TPageB/Texture2D/TexturePageLOD2_TPageB_Emis.tga",
+   "extracted_sha256": "d5091c0799dc0657056c2358ddb3e3f592f8d071609f4a99502f5a962d54d2f3",
+   "output_file": "Content/Extracted/MaterialDatabase/ShopSigns_Cafe/TexturePageLOD2_TPageB/Texture2D/TexturePageLOD2_TPageB_Emis.tga",
+   "output_sha256": "d5091c0799dc0657056c2358ddb3e3f592f8d071609f4a99502f5a962d54d2f3",
+   "uasset": "Content/Imported/MaterialDatabase/ShopSigns_Cafe/TexturePageLOD2_TPageB_Emis.uasset"
+  }
+ ]
+}

@@ -1,0 +1,62 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FinancialCivicGarbageCan",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCivicGarbageCan.upk",
+ "source_sha256": "c48557c639826342ea6f6510d696893be9043f1fc3e079215948b378522257a6",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCivicGarbageCan.upk#FinancialCivicGarbageCan_DiffSpec",
+   "object": "FinancialCivicGarbageCan_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialCivicGarbageCan/FinancialCivicGarbageCan/Texture2D/FinancialCivicGarbageCan_DiffSpec.tga",
+   "extracted_sha256": "7e8fdbb33ce6111a985e135a0a7b3f98d041d3ed66196a0addf871603d407db9",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialCivicGarbageCan/FinancialCivicGarbageCan/Texture2D/FinancialCivicGarbageCan_DiffSpec.tga",
+   "output_sha256": "7e8fdbb33ce6111a985e135a0a7b3f98d041d3ed66196a0addf871603d407db9",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialCivicGarbageCan/FinancialCivicGarbageCan_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCivicGarbageCan.upk#FinancialCivicGarbageCan_Norm",
+   "object": "FinancialCivicGarbageCan_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialCivicGarbageCan/FinancialCivicGarbageCan/Texture2D/FinancialCivicGarbageCan_Norm.tga",
+   "extracted_sha256": "42b08548d5fcef0be55f9c424028629eeafc1838b1e3f74241ce83ab8a56caa7",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialCivicGarbageCan/FinancialCivicGarbageCan/Texture2D/FinancialCivicGarbageCan_Norm.tga",
+   "output_sha256": "42b08548d5fcef0be55f9c424028629eeafc1838b1e3f74241ce83ab8a56caa7",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialCivicGarbageCan/FinancialCivicGarbageCan_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCivicGarbageCan.upk#MI_FinancialCivicGarbageCan_Damage_Mat",
+   "object": "MI_FinancialCivicGarbageCan_Damage_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialCivicGarbageCan_Damage_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialCivicGarbageCan/FinancialCivicGarbageCan/Texture2D/FinancialCivicGarbageCan_DiffSpec.tga",
+   "extracted_sha256": "7e8fdbb33ce6111a985e135a0a7b3f98d041d3ed66196a0addf871603d407db9",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialCivicGarbageCan/FinancialCivicGarbageCan/Texture2D/FinancialCivicGarbageCan_DiffSpec.tga",
+   "output_sha256": "7e8fdbb33ce6111a985e135a0a7b3f98d041d3ed66196a0addf871603d407db9",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialCivicGarbageCan/MI_FinancialCivicGarbageCan_Damage_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCivicGarbageCan.upk#MI_FinancialCivicGarbageCan_Mat",
+   "object": "MI_FinancialCivicGarbageCan_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialCivicGarbageCan_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialCivicGarbageCan/FinancialCivicGarbageCan/Texture2D/FinancialCivicGarbageCan_DiffSpec.tga",
+   "extracted_sha256": "7e8fdbb33ce6111a985e135a0a7b3f98d041d3ed66196a0addf871603d407db9",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialCivicGarbageCan/FinancialCivicGarbageCan/Texture2D/FinancialCivicGarbageCan_DiffSpec.tga",
+   "output_sha256": "7e8fdbb33ce6111a985e135a0a7b3f98d041d3ed66196a0addf871603d407db9",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialCivicGarbageCan/MI_FinancialCivicGarbageCan_Mat.uasset"
+  }
+ ]
+}

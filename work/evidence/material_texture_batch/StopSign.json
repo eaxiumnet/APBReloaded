@@ -1,0 +1,73 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "StopSign",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/StopSign.upk",
+ "source_sha256": "56b3bca833e6407b78f0099a730d1c0f17201d7cc87be25c34ccbd0a5d8f76c5",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StopSign.upk#FencePost_DiffSpec",
+   "object": "FencePost_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StopSign/FencePost/Texture2D/FencePost_DiffSpec.tga",
+   "extracted_sha256": "d66659eec3122caece8b4dedf238d5f2b400e218ec4f46d9d9414003d02bfb5b",
+   "output_file": "Content/Extracted/MaterialDatabase/StopSign/FencePost/Texture2D/FencePost_DiffSpec.tga",
+   "output_sha256": "d66659eec3122caece8b4dedf238d5f2b400e218ec4f46d9d9414003d02bfb5b",
+   "uasset": "Content/Imported/MaterialDatabase/StopSign/FencePost_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StopSign.upk#FencePost_Norm",
+   "object": "FencePost_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StopSign/FencePost/Texture2D/FencePost_Norm.tga",
+   "extracted_sha256": "ad54c0ce562bf46992edaa758b4966e1c5432a0de81fe9c19c92b3ca7e0ccd6c",
+   "output_file": "Content/Extracted/MaterialDatabase/StopSign/FencePost/Texture2D/FencePost_Norm.tga",
+   "output_sha256": "ad54c0ce562bf46992edaa758b4966e1c5432a0de81fe9c19c92b3ca7e0ccd6c",
+   "uasset": "Content/Imported/MaterialDatabase/StopSign/FencePost_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StopSign.upk#MI_FencePost",
+   "object": "MI_FencePost",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FencePost",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StopSign/FencePost/Texture2D/FencePost_DiffSpec.tga",
+   "extracted_sha256": "d66659eec3122caece8b4dedf238d5f2b400e218ec4f46d9d9414003d02bfb5b",
+   "output_file": "Content/Extracted/MaterialDatabase/StopSign/FencePost/Texture2D/FencePost_DiffSpec.tga",
+   "output_sha256": "d66659eec3122caece8b4dedf238d5f2b400e218ec4f46d9d9414003d02bfb5b",
+   "uasset": "Content/Imported/MaterialDatabase/StopSign/MI_FencePost.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StopSign.upk#MI_StopSign",
+   "object": "MI_StopSign",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StopSign",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StopSign/StopSign/Texture2D/StopSign_DiffSpec.tga",
+   "extracted_sha256": "c68611bf058cbc56dac48b58c6e586a82347826dc24f8d479eaa03343780a00b",
+   "output_file": "Content/Extracted/MaterialDatabase/StopSign/StopSign/Texture2D/StopSign_DiffSpec.tga",
+   "output_sha256": "c68611bf058cbc56dac48b58c6e586a82347826dc24f8d479eaa03343780a00b",
+   "uasset": "Content/Imported/MaterialDatabase/StopSign/MI_StopSign.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StopSign.upk#StopSign_DiffSpec",
+   "object": "StopSign_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StopSign/StopSign/Texture2D/StopSign_DiffSpec.tga",
+   "extracted_sha256": "c68611bf058cbc56dac48b58c6e586a82347826dc24f8d479eaa03343780a00b",
+   "output_file": "Content/Extracted/MaterialDatabase/StopSign/StopSign/Texture2D/StopSign_DiffSpec.tga",
+   "output_sha256": "c68611bf058cbc56dac48b58c6e586a82347826dc24f8d479eaa03343780a00b",
+   "uasset": "Content/Imported/MaterialDatabase/StopSign/StopSign_DiffSpec.uasset"
+  }
+ ]
+}

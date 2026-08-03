@@ -1,0 +1,146 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Concrete_Grooved",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/Concrete/Concrete_Grooved.upk",
+ "source_sha256": "f6d29622ecff495cf32ec10152cf410fe7170775b8774b3d66e011deb50a3325",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Concrete/Concrete_Grooved.upk#Brick_NRM",
+   "object": "Brick_NRM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Concrete_Grooved/Concrete_Grooved/Texture2D/Brick_NRM.tga",
+   "extracted_sha256": "2d2adc9fe232dde6903fb9e498c369e6b06eba6266a6ddd86e700ccf69a6f097",
+   "output_file": "Content/Extracted/MaterialDatabase/Concrete_Grooved/Concrete_Grooved/Texture2D/Brick_NRM.tga",
+   "output_sha256": "2d2adc9fe232dde6903fb9e498c369e6b06eba6266a6ddd86e700ccf69a6f097",
+   "uasset": "Content/Imported/MaterialDatabase/Concrete_Grooved/Brick_NRM.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Concrete/Concrete_Grooved.upk#Conc_Grooved_DiffSpec",
+   "object": "Conc_Grooved_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Concrete_Grooved/Concrete_Grooved/Texture2D/Conc_Grooved_DiffSpec.tga",
+   "extracted_sha256": "56ac978e0b1c024ef56e042aa302789a9e6c033015e6987bb625a5dade150f70",
+   "output_file": "Content/Extracted/MaterialDatabase/Concrete_Grooved/Concrete_Grooved/Texture2D/Conc_Grooved_DiffSpec.tga",
+   "output_sha256": "56ac978e0b1c024ef56e042aa302789a9e6c033015e6987bb625a5dade150f70",
+   "uasset": "Content/Imported/MaterialDatabase/Concrete_Grooved/Conc_Grooved_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Concrete/Concrete_Grooved.upk#Concrete_01_DiffSpec",
+   "object": "Concrete_01_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Concrete_Grooved/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Concrete_Grooved/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/Concrete_Grooved/Concrete_01_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Concrete/Concrete_Grooved.upk#Concrete_Grooved01_Norm",
+   "object": "Concrete_Grooved01_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Concrete_Grooved/Concrete_Grooved/Texture2D/Concrete_Grooved01_Norm.tga",
+   "extracted_sha256": "aa186bd1c0924cd8834ebec9e2124ae6ad1e59888dab147b94d495b0506316af",
+   "output_file": "Content/Extracted/MaterialDatabase/Concrete_Grooved/Concrete_Grooved/Texture2D/Concrete_Grooved01_Norm.tga",
+   "output_sha256": "aa186bd1c0924cd8834ebec9e2124ae6ad1e59888dab147b94d495b0506316af",
+   "uasset": "Content/Imported/MaterialDatabase/Concrete_Grooved/Concrete_Grooved01_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Concrete/Concrete_Grooved.upk#MI_Conc_Grooved",
+   "object": "MI_Conc_Grooved",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Conc_Grooved",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Concrete_Grooved/Concrete_Grooved/Texture2D/Conc_Grooved_DiffSpec.tga",
+   "extracted_sha256": "56ac978e0b1c024ef56e042aa302789a9e6c033015e6987bb625a5dade150f70",
+   "output_file": "Content/Extracted/MaterialDatabase/Concrete_Grooved/Concrete_Grooved/Texture2D/Conc_Grooved_DiffSpec.tga",
+   "output_sha256": "56ac978e0b1c024ef56e042aa302789a9e6c033015e6987bb625a5dade150f70",
+   "uasset": "Content/Imported/MaterialDatabase/Concrete_Grooved/MI_Conc_Grooved.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Concrete/Concrete_Grooved.upk#MI_Stone",
+   "object": "MI_Stone",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stone",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Concrete_Grooved/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Concrete_Grooved/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/Concrete_Grooved/MI_Stone.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Concrete/Concrete_Grooved.upk#MI_Stone_Detail_Brick",
+   "object": "MI_Stone_Detail_Brick",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stone_Detail_Brick",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Concrete_Grooved/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Concrete_Grooved/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/Concrete_Grooved/MI_Stone_Detail_Brick.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Concrete/Concrete_Grooved.upk#MI_Stone_Detail_Carved",
+   "object": "MI_Stone_Detail_Carved",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stone_Detail_Carved",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Concrete_Grooved/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Concrete_Grooved/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/Concrete_Grooved/MI_Stone_Detail_Carved.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Concrete/Concrete_Grooved.upk#MI_Stone_Line_LightDirt",
+   "object": "MI_Stone_Line_LightDirt",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stone_Line_LightDirt",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Concrete_Grooved/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Concrete_Grooved/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/Concrete_Grooved/MI_Stone_Line_LightDirt.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Concrete/Concrete_Grooved.upk#MI_Stone_Line_LightDirt_Graffiti",
+   "object": "MI_Stone_Line_LightDirt_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stone_Line_LightDirt_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Concrete_Grooved/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Concrete_Grooved/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/Concrete_Grooved/MI_Stone_Line_LightDirt_Graffiti.uasset"
+  }
+ ]
+}

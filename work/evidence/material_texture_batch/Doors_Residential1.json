@@ -1,0 +1,76 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Doors_Residential1",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/FeatureMaterials/Doors_Residential1.upk",
+ "source_sha256": "b352ebb44f14c3b972e390b0c9505e9e428d0999ae9220f7f5dc41dc27d8c2f8",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Doors_Residential1.upk#Doors_Residential1_DiffSpec",
+   "object": "Doors_Residential1_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Doors_Residential1/Doors_Residential1/Texture2D/Doors_Residential1_DiffSpec.tga",
+   "extracted_sha256": "4e4faf79a0444c546d7db98714b21453960b8aa7943044ce950df72ce06b8fb0",
+   "output_file": "Content/Extracted/MaterialDatabase/Doors_Residential1/Doors_Residential1/Texture2D/Doors_Residential1_DiffSpec.tga",
+   "output_sha256": "4e4faf79a0444c546d7db98714b21453960b8aa7943044ce950df72ce06b8fb0",
+   "uasset": "Content/Imported/MaterialDatabase/Doors_Residential1/Doors_Residential1_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Doors_Residential1.upk#Doors_Residential1_Emis",
+   "object": "Doors_Residential1_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Doors_Residential1/Doors_Residential1/Texture2D/Doors_Residential1_Emis.tga",
+   "extracted_sha256": "470ce85c01d24ae3ece11e7cccfe46fc98efb8aba8407948f4951cc3f9419b96",
+   "output_file": "Content/Extracted/MaterialDatabase/Doors_Residential1/Doors_Residential1/Texture2D/Doors_Residential1_Emis.tga",
+   "output_sha256": "470ce85c01d24ae3ece11e7cccfe46fc98efb8aba8407948f4951cc3f9419b96",
+   "uasset": "Content/Imported/MaterialDatabase/Doors_Residential1/Doors_Residential1_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Doors_Residential1.upk#Doors_Residential1_Norm",
+   "object": "Doors_Residential1_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Doors_Residential1/Doors_Residential1/Texture2D/Doors_Residential1_Norm.tga",
+   "extracted_sha256": "3fb51e7f5c52151b192885a0d75f493ac95bae6f5a9173c9b9c98663ab2fb41e",
+   "output_file": "Content/Extracted/MaterialDatabase/Doors_Residential1/Doors_Residential1/Texture2D/Doors_Residential1_Norm.tga",
+   "output_sha256": "3fb51e7f5c52151b192885a0d75f493ac95bae6f5a9173c9b9c98663ab2fb41e",
+   "uasset": "Content/Imported/MaterialDatabase/Doors_Residential1/Doors_Residential1_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Doors_Residential1.upk#MI_ResidentialDoors1_Damage_Mat",
+   "object": "MI_ResidentialDoors1_Damage_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "ResidentialDoors1_Damage_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Doors_Residential1/Doors_Residential1/Texture2D/Doors_Residential1_DiffSpec.tga",
+   "extracted_sha256": "4e4faf79a0444c546d7db98714b21453960b8aa7943044ce950df72ce06b8fb0",
+   "output_file": "Content/Extracted/MaterialDatabase/Doors_Residential1/Doors_Residential1/Texture2D/Doors_Residential1_DiffSpec.tga",
+   "output_sha256": "4e4faf79a0444c546d7db98714b21453960b8aa7943044ce950df72ce06b8fb0",
+   "uasset": "Content/Imported/MaterialDatabase/Doors_Residential1/MI_ResidentialDoors1_Damage_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Doors_Residential1.upk#MI_ResidentialDoors1_Mat",
+   "object": "MI_ResidentialDoors1_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "ResidentialDoors1_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Doors_Residential1/Doors_Residential1/Texture2D/Doors_Residential1_DiffSpec.tga",
+   "extracted_sha256": "4e4faf79a0444c546d7db98714b21453960b8aa7943044ce950df72ce06b8fb0",
+   "output_file": "Content/Extracted/MaterialDatabase/Doors_Residential1/Doors_Residential1/Texture2D/Doors_Residential1_DiffSpec.tga",
+   "output_sha256": "4e4faf79a0444c546d7db98714b21453960b8aa7943044ce950df72ce06b8fb0",
+   "uasset": "Content/Imported/MaterialDatabase/Doors_Residential1/MI_ResidentialDoors1_Mat.uasset"
+  }
+ ]
+}

@@ -1,0 +1,86 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Shop_Sign_Hori",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Hori.upk",
+ "source_sha256": "e09c142d414fbe0df924412d3ede10d99b4b7591916767b595e063d4d3302418",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Hori.upk#MI_Shop_Sign_Hori_Mat",
+   "object": "MI_Shop_Sign_Hori_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Shop_Sign_Hori_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Hori/Shop_Sign_Hori/Texture2D/Shop_Sign_Hori_Streaming_DiffSpec.tga",
+   "extracted_sha256": "0d6bb28b3b7ad6d29020c89ec7aa092f18ddeddf7732fdeec973f0c879a7b337",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Hori/Shop_Sign_Hori/Texture2D/Shop_Sign_Hori_Streaming_DiffSpec.tga",
+   "output_sha256": "0d6bb28b3b7ad6d29020c89ec7aa092f18ddeddf7732fdeec973f0c879a7b337",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_Sign_Hori/MI_Shop_Sign_Hori_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Hori.upk#MI_Shop_Sign_Hori_Streaming_Mat",
+   "object": "MI_Shop_Sign_Hori_Streaming_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Shop_Sign_Hori_Streaming_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Hori/Shop_Sign_Hori/Texture2D/Shop_Sgin_Hori_DiffSpec.tga",
+   "extracted_sha256": "3652cb7c000f245bb81599858cb94ef2ca4b1dd8b7b4cefd78fece48eb61a63f",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Hori/Shop_Sign_Hori/Texture2D/Shop_Sgin_Hori_DiffSpec.tga",
+   "output_sha256": "3652cb7c000f245bb81599858cb94ef2ca4b1dd8b7b4cefd78fece48eb61a63f",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_Sign_Hori/MI_Shop_Sign_Hori_Streaming_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Hori.upk#Shop_Sgin_Hori_DiffSpec",
+   "object": "Shop_Sgin_Hori_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Hori/Shop_Sign_Hori/Texture2D/Shop_Sgin_Hori_DiffSpec.tga",
+   "extracted_sha256": "3652cb7c000f245bb81599858cb94ef2ca4b1dd8b7b4cefd78fece48eb61a63f",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Hori/Shop_Sign_Hori/Texture2D/Shop_Sgin_Hori_DiffSpec.tga",
+   "output_sha256": "3652cb7c000f245bb81599858cb94ef2ca4b1dd8b7b4cefd78fece48eb61a63f",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_Sign_Hori/Shop_Sgin_Hori_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Hori.upk#Shop_Sgin_Hori_Norm",
+   "object": "Shop_Sgin_Hori_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Hori/Shop_Sign_Hori/Texture2D/Shop_Sgin_Hori_Norm.tga",
+   "extracted_sha256": "57e6e80209eb3d31e816e90d36c23016cea70330a51ec7e8c5ea731d54acced3",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Hori/Shop_Sign_Hori/Texture2D/Shop_Sgin_Hori_Norm.tga",
+   "output_sha256": "57e6e80209eb3d31e816e90d36c23016cea70330a51ec7e8c5ea731d54acced3",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_Sign_Hori/Shop_Sgin_Hori_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Hori.upk#Shop_Sign_Hori_Streaming_DiffSpec",
+   "object": "Shop_Sign_Hori_Streaming_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Hori/Shop_Sign_Hori/Texture2D/Shop_Sign_Hori_Streaming_DiffSpec.tga",
+   "extracted_sha256": "0d6bb28b3b7ad6d29020c89ec7aa092f18ddeddf7732fdeec973f0c879a7b337",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Hori/Shop_Sign_Hori/Texture2D/Shop_Sign_Hori_Streaming_DiffSpec.tga",
+   "output_sha256": "0d6bb28b3b7ad6d29020c89ec7aa092f18ddeddf7732fdeec973f0c879a7b337",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_Sign_Hori/Shop_Sign_Hori_Streaming_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Hori.upk#Shop_Sign_Hori_Streaming_Emis",
+   "object": "Shop_Sign_Hori_Streaming_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Hori/Shop_Sign_Hori/Texture2D/Shop_Sign_Hori_Streaming_Emis.tga",
+   "extracted_sha256": "098f62023780e89c1b4d7cd2351ee76b97af6d78a0bbb8deca43513c2b302197",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Hori/Shop_Sign_Hori/Texture2D/Shop_Sign_Hori_Streaming_Emis.tga",
+   "output_sha256": "098f62023780e89c1b4d7cd2351ee76b97af6d78a0bbb8deca43513c2b302197",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_Sign_Hori/Shop_Sign_Hori_Streaming_Emis.uasset"
+  }
+ ]
+}

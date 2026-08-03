@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "RWorld_Speakers",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/RWorldSocialDistrict/Props/RWorld_Speakers.upk",
+ "source_sha256": "41be6907dced886992c8ab7a122c2611c269d423e23d2e1d0400abb7eee198af",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_Speakers.upk#MI_Speakers_Large_Material",
+   "object": "MI_Speakers_Large_Material",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Speakers_Large_Material",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_Speakers/RWorld_Speakers/Texture2D/Speaker.tga",
+   "extracted_sha256": "81f395130fa92b2411332faab15bee291cb01e7205e075fcb6605f6e76131f76",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_Speakers/RWorld_Speakers/Texture2D/Speaker.tga",
+   "output_sha256": "81f395130fa92b2411332faab15bee291cb01e7205e075fcb6605f6e76131f76",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_Speakers/MI_Speakers_Large_Material.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_Speakers.upk#Speaker",
+   "object": "Speaker",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_Speakers/RWorld_Speakers/Texture2D/Speaker.tga",
+   "extracted_sha256": "81f395130fa92b2411332faab15bee291cb01e7205e075fcb6605f6e76131f76",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_Speakers/RWorld_Speakers/Texture2D/Speaker.tga",
+   "output_sha256": "81f395130fa92b2411332faab15bee291cb01e7205e075fcb6605f6e76131f76",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_Speakers/Speaker.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_Speakers.upk#Speaker_NRM",
+   "object": "Speaker_NRM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_Speakers/RWorld_Speakers/Texture2D/Speaker_NRM.tga",
+   "extracted_sha256": "fc59cf9edce6431fd992503fa039a2adfeda8790e8c48741199f34eb14fa8d3c",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_Speakers/RWorld_Speakers/Texture2D/Speaker_NRM.tga",
+   "output_sha256": "fc59cf9edce6431fd992503fa039a2adfeda8790e8c48741199f34eb14fa8d3c",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_Speakers/Speaker_NRM.uasset"
+  }
+ ]
+}

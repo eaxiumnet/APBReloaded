@@ -1,0 +1,74 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "breakwater_galleria",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/RWorldSocialDistrict/Signs/breakwater_galleria.upk",
+ "source_sha256": "8ed74ede5ceeb7bd300905d65af6c7c66f7deb568982fccfdf393cd7b428882b",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Signs/breakwater_galleria.upk#breakwater_galleria_alpha_tex",
+   "object": "breakwater_galleria_alpha_tex",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/breakwater_galleria/breakwater_galleria/Texture2D/breakwater_galleria_alpha_tex.tga",
+   "extracted_sha256": "8240a74efcc5ba73748b9afe92680d81161e6409c8554ad40c75d7ca95729c26",
+   "output_file": "Content/Extracted/MaterialDatabase/breakwater_galleria/breakwater_galleria/Texture2D/breakwater_galleria_alpha_tex.tga",
+   "output_sha256": "8240a74efcc5ba73748b9afe92680d81161e6409c8554ad40c75d7ca95729c26",
+   "uasset": "Content/Imported/MaterialDatabase/breakwater_galleria/breakwater_galleria_alpha_tex.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Signs/breakwater_galleria.upk#breakwater_galleria_billboard_tex",
+   "object": "breakwater_galleria_billboard_tex",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/breakwater_galleria/breakwater_galleria/Texture2D/breakwater_galleria_billboard_tex.tga",
+   "extracted_sha256": "61915d7a2b2fab1019a20468db26afa937b71ff3b75167e6221a89f7e49ef8de",
+   "output_file": "Content/Extracted/MaterialDatabase/breakwater_galleria/breakwater_galleria/Texture2D/breakwater_galleria_billboard_tex.tga",
+   "output_sha256": "61915d7a2b2fab1019a20468db26afa937b71ff3b75167e6221a89f7e49ef8de",
+   "uasset": "Content/Imported/MaterialDatabase/breakwater_galleria/breakwater_galleria_billboard_tex.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Signs/breakwater_galleria.upk#breakwater_galleria_icon_01_tex",
+   "object": "breakwater_galleria_icon_01_tex",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/breakwater_galleria/breakwater_galleria/Texture2D/breakwater_galleria_icon_01_tex.tga",
+   "extracted_sha256": "185317fb96e6e20ce388ee8bcfce8fad3972c3ea9873b55abe49b88f50312957",
+   "output_file": "Content/Extracted/MaterialDatabase/breakwater_galleria/breakwater_galleria/Texture2D/breakwater_galleria_icon_01_tex.tga",
+   "output_sha256": "185317fb96e6e20ce388ee8bcfce8fad3972c3ea9873b55abe49b88f50312957",
+   "uasset": "Content/Imported/MaterialDatabase/breakwater_galleria/breakwater_galleria_icon_01_tex.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Signs/breakwater_galleria.upk#MI_breakwater_galleria_billboard_mat",
+   "object": "MI_breakwater_galleria_billboard_mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "breakwater_galleria_billboard_mat",
+   "texture_roles": [
+    "Diffuse",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/breakwater_galleria/breakwater_galleria/Texture2D/breakwater_galleria_billboard_tex.tga",
+   "extracted_sha256": "61915d7a2b2fab1019a20468db26afa937b71ff3b75167e6221a89f7e49ef8de",
+   "output_file": "Content/Extracted/MaterialDatabase/breakwater_galleria/breakwater_galleria/Texture2D/breakwater_galleria_billboard_tex.tga",
+   "output_sha256": "61915d7a2b2fab1019a20468db26afa937b71ff3b75167e6221a89f7e49ef8de",
+   "uasset": "Content/Imported/MaterialDatabase/breakwater_galleria/MI_breakwater_galleria_billboard_mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Signs/breakwater_galleria.upk#MI_breakwater_galleria_icon_mat",
+   "object": "MI_breakwater_galleria_icon_mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "breakwater_galleria_icon_mat",
+   "texture_roles": [
+    "Diffuse",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/breakwater_galleria/breakwater_galleria/Texture2D/breakwater_galleria_icon_01_tex.tga",
+   "extracted_sha256": "185317fb96e6e20ce388ee8bcfce8fad3972c3ea9873b55abe49b88f50312957",
+   "output_file": "Content/Extracted/MaterialDatabase/breakwater_galleria/breakwater_galleria/Texture2D/breakwater_galleria_icon_01_tex.tga",
+   "output_sha256": "185317fb96e6e20ce388ee8bcfce8fad3972c3ea9873b55abe49b88f50312957",
+   "uasset": "Content/Imported/MaterialDatabase/breakwater_galleria/MI_breakwater_galleria_icon_mat.uasset"
+  }
+ ]
+}

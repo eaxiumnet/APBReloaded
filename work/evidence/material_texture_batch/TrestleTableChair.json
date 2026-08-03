@@ -1,0 +1,34 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "TrestleTableChair",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/PropMaterials/TrestleTableChair.upk",
+ "source_sha256": "49b61b97a774bc8e4fd4549a01691beab9bad4ed4407af328e8993733ed7e69c",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/TrestleTableChair.upk#MI_trestletablechair",
+   "object": "MI_trestletablechair",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "trestletablechair",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/TrestleTableChair/TrestleTableChair/Texture2D/TressleTable01_NORM.tga",
+   "extracted_sha256": "a08c45dd5e410579b542415db6b363f17e7a4716d2217d5e4796c4756b5fa813",
+   "output_file": "Content/Extracted/MaterialDatabase/TrestleTableChair/TrestleTableChair/Texture2D/TressleTable01_NORM.tga",
+   "output_sha256": "a08c45dd5e410579b542415db6b363f17e7a4716d2217d5e4796c4756b5fa813",
+   "uasset": "Content/Imported/MaterialDatabase/TrestleTableChair/MI_trestletablechair.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/TrestleTableChair.upk#TressleTable01_NORM",
+   "object": "TressleTable01_NORM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/TrestleTableChair/TrestleTableChair/Texture2D/TressleTable01_NORM.tga",
+   "extracted_sha256": "a08c45dd5e410579b542415db6b363f17e7a4716d2217d5e4796c4756b5fa813",
+   "output_file": "Content/Extracted/MaterialDatabase/TrestleTableChair/TrestleTableChair/Texture2D/TressleTable01_NORM.tga",
+   "output_sha256": "a08c45dd5e410579b542415db6b363f17e7a4716d2217d5e4796c4756b5fa813",
+   "uasset": "Content/Imported/MaterialDatabase/TrestleTableChair/TressleTable01_NORM.uasset"
+  }
+ ]
+}

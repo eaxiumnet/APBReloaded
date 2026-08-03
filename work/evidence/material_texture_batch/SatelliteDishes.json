@@ -1,0 +1,76 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "SatelliteDishes",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/SatelliteDishes.upk",
+ "source_sha256": "5f84bcf6db68f1a5685f8a83422161bc402a70a416882bb2d9209d2c9f348ca6",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/SatelliteDishes.upk#MI_SatelliteDishes_Damaged_Mat",
+   "object": "MI_SatelliteDishes_Damaged_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "SatelliteDishes_Damaged_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/SatelliteDishes/SatelliteDishes/Texture2D/SatelliteDishes_DiffSpec.tga",
+   "extracted_sha256": "6fe646863cf74f126dba76de0beb18eb6924b5220e7c346aa4d0e503e8546b1a",
+   "output_file": "Content/Extracted/MaterialDatabase/SatelliteDishes/SatelliteDishes/Texture2D/SatelliteDishes_DiffSpec.tga",
+   "output_sha256": "6fe646863cf74f126dba76de0beb18eb6924b5220e7c346aa4d0e503e8546b1a",
+   "uasset": "Content/Imported/MaterialDatabase/SatelliteDishes/MI_SatelliteDishes_Damaged_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/SatelliteDishes.upk#MI_SatelliteDishes_Mat",
+   "object": "MI_SatelliteDishes_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "SatelliteDishes_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/SatelliteDishes/SatelliteDishes/Texture2D/SatelliteDishes_DiffSpec.tga",
+   "extracted_sha256": "6fe646863cf74f126dba76de0beb18eb6924b5220e7c346aa4d0e503e8546b1a",
+   "output_file": "Content/Extracted/MaterialDatabase/SatelliteDishes/SatelliteDishes/Texture2D/SatelliteDishes_DiffSpec.tga",
+   "output_sha256": "6fe646863cf74f126dba76de0beb18eb6924b5220e7c346aa4d0e503e8546b1a",
+   "uasset": "Content/Imported/MaterialDatabase/SatelliteDishes/MI_SatelliteDishes_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/SatelliteDishes.upk#SatelliteDishes_DiffSpec",
+   "object": "SatelliteDishes_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/SatelliteDishes/SatelliteDishes/Texture2D/SatelliteDishes_DiffSpec.tga",
+   "extracted_sha256": "6fe646863cf74f126dba76de0beb18eb6924b5220e7c346aa4d0e503e8546b1a",
+   "output_file": "Content/Extracted/MaterialDatabase/SatelliteDishes/SatelliteDishes/Texture2D/SatelliteDishes_DiffSpec.tga",
+   "output_sha256": "6fe646863cf74f126dba76de0beb18eb6924b5220e7c346aa4d0e503e8546b1a",
+   "uasset": "Content/Imported/MaterialDatabase/SatelliteDishes/SatelliteDishes_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/SatelliteDishes.upk#SatelliteDishes_Norm",
+   "object": "SatelliteDishes_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/SatelliteDishes/SatelliteDishes/Texture2D/SatelliteDishes_Norm.tga",
+   "extracted_sha256": "31b327947ca6f1d0ab9600a85dc5f13a323a2d8587787ac72d6adb34fad13f44",
+   "output_file": "Content/Extracted/MaterialDatabase/SatelliteDishes/SatelliteDishes/Texture2D/SatelliteDishes_Norm.tga",
+   "output_sha256": "31b327947ca6f1d0ab9600a85dc5f13a323a2d8587787ac72d6adb34fad13f44",
+   "uasset": "Content/Imported/MaterialDatabase/SatelliteDishes/SatelliteDishes_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/SatelliteDishes.upk#SatelliteDishes_Opac",
+   "object": "SatelliteDishes_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/SatelliteDishes/SatelliteDishes/Texture2D/SatelliteDishes_Opac.tga",
+   "extracted_sha256": "592ece4f0e1ad26c36425d2a7f33227487f474fb5576398837a6388f0ef91eec",
+   "output_file": "Content/Extracted/MaterialDatabase/SatelliteDishes/SatelliteDishes/Texture2D/SatelliteDishes_Opac.tga",
+   "output_sha256": "592ece4f0e1ad26c36425d2a7f33227487f474fb5576398837a6388f0ef91eec",
+   "uasset": "Content/Imported/MaterialDatabase/SatelliteDishes/SatelliteDishes_Opac.uasset"
+  }
+ ]
+}

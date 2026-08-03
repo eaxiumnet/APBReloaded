@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "WindowsBoarded",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/FeatureMaterials/WindowsBoarded.upk",
+ "source_sha256": "04f2ab04ba5978c6f95d53b4747575f5070e0bed10231e8b99fb034066168c19",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/WindowsBoarded.upk#MI_WindowsBoarded_Mat",
+   "object": "MI_WindowsBoarded_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WindowsBoarded_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WindowsBoarded/WindowsBoarded/Texture2D/WindowsBoarded_DiffSpec.tga",
+   "extracted_sha256": "a53eac9db1478eea17b6dd87d48570e75785f25a960dc88f4e593f98fc107f8b",
+   "output_file": "Content/Extracted/MaterialDatabase/WindowsBoarded/WindowsBoarded/Texture2D/WindowsBoarded_DiffSpec.tga",
+   "output_sha256": "a53eac9db1478eea17b6dd87d48570e75785f25a960dc88f4e593f98fc107f8b",
+   "uasset": "Content/Imported/MaterialDatabase/WindowsBoarded/MI_WindowsBoarded_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/WindowsBoarded.upk#WindowsBoarded_DiffSpec",
+   "object": "WindowsBoarded_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WindowsBoarded/WindowsBoarded/Texture2D/WindowsBoarded_DiffSpec.tga",
+   "extracted_sha256": "a53eac9db1478eea17b6dd87d48570e75785f25a960dc88f4e593f98fc107f8b",
+   "output_file": "Content/Extracted/MaterialDatabase/WindowsBoarded/WindowsBoarded/Texture2D/WindowsBoarded_DiffSpec.tga",
+   "output_sha256": "a53eac9db1478eea17b6dd87d48570e75785f25a960dc88f4e593f98fc107f8b",
+   "uasset": "Content/Imported/MaterialDatabase/WindowsBoarded/WindowsBoarded_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/WindowsBoarded.upk#WindowsBoarded_Norm",
+   "object": "WindowsBoarded_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WindowsBoarded/WindowsBoarded/Texture2D/WindowsBoarded_Norm.tga",
+   "extracted_sha256": "449eebb6dd6de86b51915119511f7318a8436cbf133024e328d59bdb8e1e599f",
+   "output_file": "Content/Extracted/MaterialDatabase/WindowsBoarded/WindowsBoarded/Texture2D/WindowsBoarded_Norm.tga",
+   "output_sha256": "449eebb6dd6de86b51915119511f7318a8436cbf133024e328d59bdb8e1e599f",
+   "uasset": "Content/Imported/MaterialDatabase/WindowsBoarded/WindowsBoarded_Norm.uasset"
+  }
+ ]
+}

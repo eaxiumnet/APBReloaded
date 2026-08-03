@@ -1,0 +1,62 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "PublicAddress",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/PublicAddress.upk",
+ "source_sha256": "b5e03f46ce26d028592f74b13b5354b446735eb16103e25d059a6860b287ce46",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/PublicAddress.upk#MI_PublicAddress_Damage_Mat",
+   "object": "MI_PublicAddress_Damage_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PublicAddress_Damage_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/PublicAddress/PublicAddress/Texture2D/PublicAddress_DiffSpec.tga",
+   "extracted_sha256": "94b203f031e0f9b0d5f857918311752d40aae95cde3d9e8ddd9ffe652a94acbf",
+   "output_file": "Content/Extracted/MaterialDatabase/PublicAddress/PublicAddress/Texture2D/PublicAddress_DiffSpec.tga",
+   "output_sha256": "94b203f031e0f9b0d5f857918311752d40aae95cde3d9e8ddd9ffe652a94acbf",
+   "uasset": "Content/Imported/MaterialDatabase/PublicAddress/MI_PublicAddress_Damage_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/PublicAddress.upk#MI_PublicAddress_Mat",
+   "object": "MI_PublicAddress_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PublicAddress_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/PublicAddress/PublicAddress/Texture2D/PublicAddress_DiffSpec.tga",
+   "extracted_sha256": "94b203f031e0f9b0d5f857918311752d40aae95cde3d9e8ddd9ffe652a94acbf",
+   "output_file": "Content/Extracted/MaterialDatabase/PublicAddress/PublicAddress/Texture2D/PublicAddress_DiffSpec.tga",
+   "output_sha256": "94b203f031e0f9b0d5f857918311752d40aae95cde3d9e8ddd9ffe652a94acbf",
+   "uasset": "Content/Imported/MaterialDatabase/PublicAddress/MI_PublicAddress_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/PublicAddress.upk#PublicAddress_DiffSpec",
+   "object": "PublicAddress_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/PublicAddress/PublicAddress/Texture2D/PublicAddress_DiffSpec.tga",
+   "extracted_sha256": "94b203f031e0f9b0d5f857918311752d40aae95cde3d9e8ddd9ffe652a94acbf",
+   "output_file": "Content/Extracted/MaterialDatabase/PublicAddress/PublicAddress/Texture2D/PublicAddress_DiffSpec.tga",
+   "output_sha256": "94b203f031e0f9b0d5f857918311752d40aae95cde3d9e8ddd9ffe652a94acbf",
+   "uasset": "Content/Imported/MaterialDatabase/PublicAddress/PublicAddress_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/PublicAddress.upk#PublicAddress_Norm",
+   "object": "PublicAddress_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/PublicAddress/PublicAddress/Texture2D/PublicAddress_Norm.tga",
+   "extracted_sha256": "8a23cc37006c05f5cfcf30b2ad0716db15541cabe2b5aa574b2a1f2fd17bd134",
+   "output_file": "Content/Extracted/MaterialDatabase/PublicAddress/PublicAddress/Texture2D/PublicAddress_Norm.tga",
+   "output_sha256": "8a23cc37006c05f5cfcf30b2ad0716db15541cabe2b5aa574b2a1f2fd17bd134",
+   "uasset": "Content/Imported/MaterialDatabase/PublicAddress/PublicAddress_Norm.uasset"
+  }
+ ]
+}

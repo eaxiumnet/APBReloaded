@@ -1,0 +1,299 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Social_Interactive_Pods",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/SocialDistrict/PropMaterials/Social_Interactive_Pods.upk",
+ "source_sha256": "c6bd64cbd0d47cd16ef571902be160ad7e06f0b2cfd361f3f58b8753cd97a5d4",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/Social_Interactive_Pods.upk#Interactive_Pods_DIFF",
+   "object": "Interactive_Pods_DIFF",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Social_Interactive_Pods/Social_Interactive_Pods/Texture2D/Interactive_Pods_DIFF.tga",
+   "extracted_sha256": "b9519e71921947a24ae7aa035b1a234cd4ecf790fe3bafc84417a671efad9d8e",
+   "output_file": "Content/Extracted/MaterialDatabase/Social_Interactive_Pods/Social_Interactive_Pods/Texture2D/Interactive_Pods_DIFF.tga",
+   "output_sha256": "b9519e71921947a24ae7aa035b1a234cd4ecf790fe3bafc84417a671efad9d8e",
+   "uasset": "Content/Imported/MaterialDatabase/Social_Interactive_Pods/Interactive_Pods_DIFF.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/Social_Interactive_Pods.upk#Interactive_Pods_NORM",
+   "object": "Interactive_Pods_NORM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Social_Interactive_Pods/Social_Interactive_Pods/Texture2D/Interactive_Pods_NORM.tga",
+   "extracted_sha256": "def204b2015b84dd86eaca8d5f0e3ac134233503c0b895d29586fd7f534adabe",
+   "output_file": "Content/Extracted/MaterialDatabase/Social_Interactive_Pods/Social_Interactive_Pods/Texture2D/Interactive_Pods_NORM.tga",
+   "output_sha256": "def204b2015b84dd86eaca8d5f0e3ac134233503c0b895d29586fd7f534adabe",
+   "uasset": "Content/Imported/MaterialDatabase/Social_Interactive_Pods/Interactive_Pods_NORM.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/Social_Interactive_Pods.upk#Interactive_Pods_Text",
+   "object": "Interactive_Pods_Text",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Social_Interactive_Pods/Social_Interactive_Pods/Texture2D/Interactive_Pods_Text.tga",
+   "extracted_sha256": "949782c5e9f6bfa89817a54242e2d7ae22e5c203321f58b2d0b14adeaf8a3a9c",
+   "output_file": "Content/Extracted/MaterialDatabase/Social_Interactive_Pods/Social_Interactive_Pods/Texture2D/Interactive_Pods_Text.tga",
+   "output_sha256": "949782c5e9f6bfa89817a54242e2d7ae22e5c203321f58b2d0b14adeaf8a3a9c",
+   "uasset": "Content/Imported/MaterialDatabase/Social_Interactive_Pods/Interactive_Pods_Text.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/Social_Interactive_Pods.upk#MI_Interactive_Pods_Brush_Text_MAT",
+   "object": "MI_Interactive_Pods_Brush_Text_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Interactive_Pods_Brush_Text_MAT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Social_Interactive_Pods/Social_Interactive_Pods/Texture2D/Interactive_Pods_Text.tga",
+   "extracted_sha256": "949782c5e9f6bfa89817a54242e2d7ae22e5c203321f58b2d0b14adeaf8a3a9c",
+   "output_file": "Content/Extracted/MaterialDatabase/Social_Interactive_Pods/Social_Interactive_Pods/Texture2D/Interactive_Pods_Text.tga",
+   "output_sha256": "949782c5e9f6bfa89817a54242e2d7ae22e5c203321f58b2d0b14adeaf8a3a9c",
+   "uasset": "Content/Imported/MaterialDatabase/Social_Interactive_Pods/MI_Interactive_Pods_Brush_Text_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/Social_Interactive_Pods.upk#MI_Interactive_Pods_Clothes_Text_MAT",
+   "object": "MI_Interactive_Pods_Clothes_Text_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Interactive_Pods_Clothes_Text_MAT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Social_Interactive_Pods/Social_Interactive_Pods/Texture2D/Interactive_Pods_Text.tga",
+   "extracted_sha256": "949782c5e9f6bfa89817a54242e2d7ae22e5c203321f58b2d0b14adeaf8a3a9c",
+   "output_file": "Content/Extracted/MaterialDatabase/Social_Interactive_Pods/Social_Interactive_Pods/Texture2D/Interactive_Pods_Text.tga",
+   "output_sha256": "949782c5e9f6bfa89817a54242e2d7ae22e5c203321f58b2d0b14adeaf8a3a9c",
+   "uasset": "Content/Imported/MaterialDatabase/Social_Interactive_Pods/MI_Interactive_Pods_Clothes_Text_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/Social_Interactive_Pods.upk#MI_Interactive_Pods_Man_Text_MAT",
+   "object": "MI_Interactive_Pods_Man_Text_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Interactive_Pods_Man_Text_MAT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Social_Interactive_Pods/Social_Interactive_Pods/Texture2D/Interactive_Pods_Text.tga",
+   "extracted_sha256": "949782c5e9f6bfa89817a54242e2d7ae22e5c203321f58b2d0b14adeaf8a3a9c",
+   "output_file": "Content/Extracted/MaterialDatabase/Social_Interactive_Pods/Social_Interactive_Pods/Texture2D/Interactive_Pods_Text.tga",
+   "output_sha256": "949782c5e9f6bfa89817a54242e2d7ae22e5c203321f58b2d0b14adeaf8a3a9c",
+   "uasset": "Content/Imported/MaterialDatabase/Social_Interactive_Pods/MI_Interactive_Pods_Man_Text_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/Social_Interactive_Pods.upk#MI_Interactive_Pods_MAT",
+   "object": "MI_Interactive_Pods_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Interactive_Pods_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Social_Interactive_Pods/Social_Interactive_Pods/Texture2D/Interactive_Pods_DIFF.tga",
+   "extracted_sha256": "b9519e71921947a24ae7aa035b1a234cd4ecf790fe3bafc84417a671efad9d8e",
+   "output_file": "Content/Extracted/MaterialDatabase/Social_Interactive_Pods/Social_Interactive_Pods/Texture2D/Interactive_Pods_DIFF.tga",
+   "output_sha256": "b9519e71921947a24ae7aa035b1a234cd4ecf790fe3bafc84417a671efad9d8e",
+   "uasset": "Content/Imported/MaterialDatabase/Social_Interactive_Pods/MI_Interactive_Pods_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/Social_Interactive_Pods.upk#MI_Interactive_Pods_Money_Text_MAT",
+   "object": "MI_Interactive_Pods_Money_Text_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Interactive_Pods_Money_Text_MAT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Social_Interactive_Pods/Social_Interactive_Pods/Texture2D/Interactive_Pods_Text.tga",
+   "extracted_sha256": "949782c5e9f6bfa89817a54242e2d7ae22e5c203321f58b2d0b14adeaf8a3a9c",
+   "output_file": "Content/Extracted/MaterialDatabase/Social_Interactive_Pods/Social_Interactive_Pods/Texture2D/Interactive_Pods_Text.tga",
+   "output_sha256": "949782c5e9f6bfa89817a54242e2d7ae22e5c203321f58b2d0b14adeaf8a3a9c",
+   "uasset": "Content/Imported/MaterialDatabase/Social_Interactive_Pods/MI_Interactive_Pods_Money_Text_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/Social_Interactive_Pods.upk#MI_Interactive_Pods_Music_Text_MAT",
+   "object": "MI_Interactive_Pods_Music_Text_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Interactive_Pods_Music_Text_MAT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Social_Interactive_Pods/Social_Interactive_Pods/Texture2D/Interactive_Pods_Text.tga",
+   "extracted_sha256": "949782c5e9f6bfa89817a54242e2d7ae22e5c203321f58b2d0b14adeaf8a3a9c",
+   "output_file": "Content/Extracted/MaterialDatabase/Social_Interactive_Pods/Social_Interactive_Pods/Texture2D/Interactive_Pods_Text.tga",
+   "output_sha256": "949782c5e9f6bfa89817a54242e2d7ae22e5c203321f58b2d0b14adeaf8a3a9c",
+   "uasset": "Content/Imported/MaterialDatabase/Social_Interactive_Pods/MI_Interactive_Pods_Music_Text_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/Social_Interactive_Pods.upk#MI_Interactive_Pods_Vehicle_Text_MAT",
+   "object": "MI_Interactive_Pods_Vehicle_Text_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Interactive_Pods_Vehicle_Text_MAT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Social_Interactive_Pods/Social_Interactive_Pods/Texture2D/Interactive_Pods_Text.tga",
+   "extracted_sha256": "949782c5e9f6bfa89817a54242e2d7ae22e5c203321f58b2d0b14adeaf8a3a9c",
+   "output_file": "Content/Extracted/MaterialDatabase/Social_Interactive_Pods/Social_Interactive_Pods/Texture2D/Interactive_Pods_Text.tga",
+   "output_sha256": "949782c5e9f6bfa89817a54242e2d7ae22e5c203321f58b2d0b14adeaf8a3a9c",
+   "uasset": "Content/Imported/MaterialDatabase/Social_Interactive_Pods/MI_Interactive_Pods_Vehicle_Text_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/Social_Interactive_Pods.upk#MI_Screen_FX_Brush_MAT",
+   "object": "MI_Screen_FX_Brush_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Screen_FX_Brush_MAT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Social_Interactive_Pods/Social_Interactive_Pods/Texture2D/Screen_FX_Brush.tga",
+   "extracted_sha256": "895dedcacc28e8e4b97cd0084421951f26198c35e8304e9016840a5fa408e2cb",
+   "output_file": "Content/Extracted/MaterialDatabase/Social_Interactive_Pods/Social_Interactive_Pods/Texture2D/Screen_FX_Brush.tga",
+   "output_sha256": "895dedcacc28e8e4b97cd0084421951f26198c35e8304e9016840a5fa408e2cb",
+   "uasset": "Content/Imported/MaterialDatabase/Social_Interactive_Pods/MI_Screen_FX_Brush_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/Social_Interactive_Pods.upk#MI_Screen_FX_Clothing_MAT",
+   "object": "MI_Screen_FX_Clothing_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Screen_FX_Clothing_MAT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Social_Interactive_Pods/Social_Interactive_Pods/Texture2D/Screen_FX_Clothes.tga",
+   "extracted_sha256": "a2419e905009cd396888d5dbac8d847ead8cef814303f417453a373bf8dd8e35",
+   "output_file": "Content/Extracted/MaterialDatabase/Social_Interactive_Pods/Social_Interactive_Pods/Texture2D/Screen_FX_Clothes.tga",
+   "output_sha256": "a2419e905009cd396888d5dbac8d847ead8cef814303f417453a373bf8dd8e35",
+   "uasset": "Content/Imported/MaterialDatabase/Social_Interactive_Pods/MI_Screen_FX_Clothing_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/Social_Interactive_Pods.upk#MI_Screen_FX_Man_MAT",
+   "object": "MI_Screen_FX_Man_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Screen_FX_Man_MAT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Social_Interactive_Pods/Social_Interactive_Pods/Texture2D/Screen_FX_Guy.tga",
+   "extracted_sha256": "ed0e3dd0df34086d2a4389e9835d74421f98b2d1cce7a9167720db76480600b3",
+   "output_file": "Content/Extracted/MaterialDatabase/Social_Interactive_Pods/Social_Interactive_Pods/Texture2D/Screen_FX_Guy.tga",
+   "output_sha256": "ed0e3dd0df34086d2a4389e9835d74421f98b2d1cce7a9167720db76480600b3",
+   "uasset": "Content/Imported/MaterialDatabase/Social_Interactive_Pods/MI_Screen_FX_Man_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/Social_Interactive_Pods.upk#MI_Screen_FX_Money_MAT",
+   "object": "MI_Screen_FX_Money_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Screen_FX_Money_MAT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Social_Interactive_Pods/Social_Interactive_Pods/Texture2D/Screen_FX_Money.tga",
+   "extracted_sha256": "2f5978c226d74009b0168736a12ca40ee4f540af3dcf360523a6c88d1a6b4a56",
+   "output_file": "Content/Extracted/MaterialDatabase/Social_Interactive_Pods/Social_Interactive_Pods/Texture2D/Screen_FX_Money.tga",
+   "output_sha256": "2f5978c226d74009b0168736a12ca40ee4f540af3dcf360523a6c88d1a6b4a56",
+   "uasset": "Content/Imported/MaterialDatabase/Social_Interactive_Pods/MI_Screen_FX_Money_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/Social_Interactive_Pods.upk#MI_Screen_FX_Music_MAT",
+   "object": "MI_Screen_FX_Music_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Screen_FX_Music_MAT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Social_Interactive_Pods/Social_Interactive_Pods/Texture2D/Screen_FX_Music.tga",
+   "extracted_sha256": "9df0eb9efea8bb2ad8bbc9a73dea2b95bcd1637a610969f7934841b965b35fc1",
+   "output_file": "Content/Extracted/MaterialDatabase/Social_Interactive_Pods/Social_Interactive_Pods/Texture2D/Screen_FX_Music.tga",
+   "output_sha256": "9df0eb9efea8bb2ad8bbc9a73dea2b95bcd1637a610969f7934841b965b35fc1",
+   "uasset": "Content/Imported/MaterialDatabase/Social_Interactive_Pods/MI_Screen_FX_Music_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/Social_Interactive_Pods.upk#MI_Screen_FX_Vehicle_MAT",
+   "object": "MI_Screen_FX_Vehicle_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Screen_FX_Vehicle_MAT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Social_Interactive_Pods/Social_Interactive_Pods/Texture2D/Screen_FX_Vehicle.tga",
+   "extracted_sha256": "bcbb72d2a1bc642ab08a1574ad44ba317f3cef7e1d2b360150333529aa0c3960",
+   "output_file": "Content/Extracted/MaterialDatabase/Social_Interactive_Pods/Social_Interactive_Pods/Texture2D/Screen_FX_Vehicle.tga",
+   "output_sha256": "bcbb72d2a1bc642ab08a1574ad44ba317f3cef7e1d2b360150333529aa0c3960",
+   "uasset": "Content/Imported/MaterialDatabase/Social_Interactive_Pods/MI_Screen_FX_Vehicle_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/Social_Interactive_Pods.upk#Screen_FX_Brush",
+   "object": "Screen_FX_Brush",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Social_Interactive_Pods/Social_Interactive_Pods/Texture2D/Screen_FX_Brush.tga",
+   "extracted_sha256": "895dedcacc28e8e4b97cd0084421951f26198c35e8304e9016840a5fa408e2cb",
+   "output_file": "Content/Extracted/MaterialDatabase/Social_Interactive_Pods/Social_Interactive_Pods/Texture2D/Screen_FX_Brush.tga",
+   "output_sha256": "895dedcacc28e8e4b97cd0084421951f26198c35e8304e9016840a5fa408e2cb",
+   "uasset": "Content/Imported/MaterialDatabase/Social_Interactive_Pods/Screen_FX_Brush.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/Social_Interactive_Pods.upk#Screen_FX_Clothes",
+   "object": "Screen_FX_Clothes",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Social_Interactive_Pods/Social_Interactive_Pods/Texture2D/Screen_FX_Clothes.tga",
+   "extracted_sha256": "a2419e905009cd396888d5dbac8d847ead8cef814303f417453a373bf8dd8e35",
+   "output_file": "Content/Extracted/MaterialDatabase/Social_Interactive_Pods/Social_Interactive_Pods/Texture2D/Screen_FX_Clothes.tga",
+   "output_sha256": "a2419e905009cd396888d5dbac8d847ead8cef814303f417453a373bf8dd8e35",
+   "uasset": "Content/Imported/MaterialDatabase/Social_Interactive_Pods/Screen_FX_Clothes.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/Social_Interactive_Pods.upk#Screen_FX_Guy",
+   "object": "Screen_FX_Guy",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Social_Interactive_Pods/Social_Interactive_Pods/Texture2D/Screen_FX_Guy.tga",
+   "extracted_sha256": "ed0e3dd0df34086d2a4389e9835d74421f98b2d1cce7a9167720db76480600b3",
+   "output_file": "Content/Extracted/MaterialDatabase/Social_Interactive_Pods/Social_Interactive_Pods/Texture2D/Screen_FX_Guy.tga",
+   "output_sha256": "ed0e3dd0df34086d2a4389e9835d74421f98b2d1cce7a9167720db76480600b3",
+   "uasset": "Content/Imported/MaterialDatabase/Social_Interactive_Pods/Screen_FX_Guy.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/Social_Interactive_Pods.upk#Screen_FX_Money",
+   "object": "Screen_FX_Money",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Social_Interactive_Pods/Social_Interactive_Pods/Texture2D/Screen_FX_Money.tga",
+   "extracted_sha256": "2f5978c226d74009b0168736a12ca40ee4f540af3dcf360523a6c88d1a6b4a56",
+   "output_file": "Content/Extracted/MaterialDatabase/Social_Interactive_Pods/Social_Interactive_Pods/Texture2D/Screen_FX_Money.tga",
+   "output_sha256": "2f5978c226d74009b0168736a12ca40ee4f540af3dcf360523a6c88d1a6b4a56",
+   "uasset": "Content/Imported/MaterialDatabase/Social_Interactive_Pods/Screen_FX_Money.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/Social_Interactive_Pods.upk#Screen_FX_Music",
+   "object": "Screen_FX_Music",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Social_Interactive_Pods/Social_Interactive_Pods/Texture2D/Screen_FX_Music.tga",
+   "extracted_sha256": "9df0eb9efea8bb2ad8bbc9a73dea2b95bcd1637a610969f7934841b965b35fc1",
+   "output_file": "Content/Extracted/MaterialDatabase/Social_Interactive_Pods/Social_Interactive_Pods/Texture2D/Screen_FX_Music.tga",
+   "output_sha256": "9df0eb9efea8bb2ad8bbc9a73dea2b95bcd1637a610969f7934841b965b35fc1",
+   "uasset": "Content/Imported/MaterialDatabase/Social_Interactive_Pods/Screen_FX_Music.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/Social_Interactive_Pods.upk#Screen_FX_Vehicle",
+   "object": "Screen_FX_Vehicle",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Social_Interactive_Pods/Social_Interactive_Pods/Texture2D/Screen_FX_Vehicle.tga",
+   "extracted_sha256": "bcbb72d2a1bc642ab08a1574ad44ba317f3cef7e1d2b360150333529aa0c3960",
+   "output_file": "Content/Extracted/MaterialDatabase/Social_Interactive_Pods/Social_Interactive_Pods/Texture2D/Screen_FX_Vehicle.tga",
+   "output_sha256": "bcbb72d2a1bc642ab08a1574ad44ba317f3cef7e1d2b360150333529aa0c3960",
+   "uasset": "Content/Imported/MaterialDatabase/Social_Interactive_Pods/Screen_FX_Vehicle.uasset"
+  }
+ ]
+}

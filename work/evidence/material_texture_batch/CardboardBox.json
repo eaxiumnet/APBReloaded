@@ -1,0 +1,60 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "CardboardBox",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/CardboardBox.upk",
+ "source_sha256": "51dcd5800f4108c950421237c6a09ab2c5b23fd79e6e76f4a4e5245b6a3d859f",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/CardboardBox.upk#Boxes_DiffSpec",
+   "object": "Boxes_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CardboardBox/CardboardBox/Texture2D/Boxes_DiffSpec.tga",
+   "extracted_sha256": "7ee6cc0b9def32244d7d3e169746431cca454e766c45d16cf422e5f019ae54ec",
+   "output_file": "Content/Extracted/MaterialDatabase/CardboardBox/CardboardBox/Texture2D/Boxes_DiffSpec.tga",
+   "output_sha256": "7ee6cc0b9def32244d7d3e169746431cca454e766c45d16cf422e5f019ae54ec",
+   "uasset": "Content/Imported/MaterialDatabase/CardboardBox/Boxes_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/CardboardBox.upk#Boxes_Norm",
+   "object": "Boxes_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CardboardBox/CardboardBox/Texture2D/Boxes_Norm.tga",
+   "extracted_sha256": "3003aeef243805abc84027566be78378b15cde5edc75681918b922ee296a7928",
+   "output_file": "Content/Extracted/MaterialDatabase/CardboardBox/CardboardBox/Texture2D/Boxes_Norm.tga",
+   "output_sha256": "3003aeef243805abc84027566be78378b15cde5edc75681918b922ee296a7928",
+   "uasset": "Content/Imported/MaterialDatabase/CardboardBox/Boxes_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/CardboardBox.upk#Boxes_Opac",
+   "object": "Boxes_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CardboardBox/CardboardBox/Texture2D/Boxes_Opac.tga",
+   "extracted_sha256": "aacc6638c6a1cb70259cb191fb58c922769696fe602eb441f2cfb47a0bf670cf",
+   "output_file": "Content/Extracted/MaterialDatabase/CardboardBox/CardboardBox/Texture2D/Boxes_Opac.tga",
+   "output_sha256": "aacc6638c6a1cb70259cb191fb58c922769696fe602eb441f2cfb47a0bf670cf",
+   "uasset": "Content/Imported/MaterialDatabase/CardboardBox/Boxes_Opac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/CardboardBox.upk#MI_CardboardBox_MAT",
+   "object": "MI_CardboardBox_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CardboardBox_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CardboardBox/CardboardBox/Texture2D/Boxes_DiffSpec.tga",
+   "extracted_sha256": "7ee6cc0b9def32244d7d3e169746431cca454e766c45d16cf422e5f019ae54ec",
+   "output_file": "Content/Extracted/MaterialDatabase/CardboardBox/CardboardBox/Texture2D/Boxes_DiffSpec.tga",
+   "output_sha256": "7ee6cc0b9def32244d7d3e169746431cca454e766c45d16cf422e5f019ae54ec",
+   "uasset": "Content/Imported/MaterialDatabase/CardboardBox/MI_CardboardBox_MAT.uasset"
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Roof_TileOld",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/Roof/Roof_TileOld.upk",
+ "source_sha256": "b2de37bdbdfb432401751480b6c4795deb36b42064a0e35c69924c75043cb211",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Roof/Roof_TileOld.upk#MI_Roof_TileOld_Diff_Mat",
+   "object": "MI_Roof_TileOld_Diff_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_TileOld_Diff_Mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_TileOld/Roof_TileOld/Texture2D/Roof_TileOld_Diff.tga",
+   "extracted_sha256": "79e17c11d7ba0e95de0b0bc4d36bd4b799c23f9dc6e93f412f73c371cf33f0e2",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_TileOld/Roof_TileOld/Texture2D/Roof_TileOld_Diff.tga",
+   "output_sha256": "79e17c11d7ba0e95de0b0bc4d36bd4b799c23f9dc6e93f412f73c371cf33f0e2",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_TileOld/MI_Roof_TileOld_Diff_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Roof/Roof_TileOld.upk#Roof_TileOld_Diff",
+   "object": "Roof_TileOld_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_TileOld/Roof_TileOld/Texture2D/Roof_TileOld_Diff.tga",
+   "extracted_sha256": "79e17c11d7ba0e95de0b0bc4d36bd4b799c23f9dc6e93f412f73c371cf33f0e2",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_TileOld/Roof_TileOld/Texture2D/Roof_TileOld_Diff.tga",
+   "output_sha256": "79e17c11d7ba0e95de0b0bc4d36bd4b799c23f9dc6e93f412f73c371cf33f0e2",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_TileOld/Roof_TileOld_Diff.uasset"
+  }
+ ]
+}

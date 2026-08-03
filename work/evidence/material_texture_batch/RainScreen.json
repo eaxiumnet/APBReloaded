@@ -1,0 +1,842 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "RainScreen",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk",
+ "source_sha256": "f27cf4fd189ffb65882618ce3fd5213f8550d9cb665f7046bb497a4998234dba",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_Rainscreen_Beige",
+   "object": "MI_Rainscreen_Beige",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Rainscreen_Beige",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_Rainscreen_Beige.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_Rainscreen_Beige_Graffiti",
+   "object": "MI_Rainscreen_Beige_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Rainscreen_Beige_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_Rainscreen_Beige_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_RainScreen_Black",
+   "object": "MI_RainScreen_Black",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RainScreen_Black",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_RainScreen_Black.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_RainScreen_Black_Graffiti",
+   "object": "MI_RainScreen_Black_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RainScreen_Black_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_RainScreen_Black_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_Rainscreen_Blue",
+   "object": "MI_Rainscreen_Blue",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Rainscreen_Blue",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_Rainscreen_Blue.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_Rainscreen_Blue_Graffiti",
+   "object": "MI_Rainscreen_Blue_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Rainscreen_Blue_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_Rainscreen_Blue_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_Rainscreen_BlueDark",
+   "object": "MI_Rainscreen_BlueDark",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Rainscreen_BlueDark",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_Rainscreen_BlueDark.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_Rainscreen_BlueDark_Graffiti",
+   "object": "MI_Rainscreen_BlueDark_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Rainscreen_BlueDark_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_Rainscreen_BlueDark_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_RainScreen_BlueGreen",
+   "object": "MI_RainScreen_BlueGreen",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RainScreen_BlueGreen",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_RainScreen_BlueGreen.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_RainScreen_BlueGreen_Graffiti",
+   "object": "MI_RainScreen_BlueGreen_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RainScreen_BlueGreen_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_RainScreen_BlueGreen_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_RainScreen_Brown",
+   "object": "MI_RainScreen_Brown",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RainScreen_Brown",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_RainScreen_Brown.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_RainScreen_Brown_Graffiti",
+   "object": "MI_RainScreen_Brown_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RainScreen_Brown_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_RainScreen_Brown_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_RainScreen_DarkRed",
+   "object": "MI_RainScreen_DarkRed",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RainScreen_DarkRed",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_RainScreen_DarkRed.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_RainScreen_DarkRed_Graffiti",
+   "object": "MI_RainScreen_DarkRed_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RainScreen_DarkRed_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_RainScreen_DarkRed_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_RainScreen_Gold",
+   "object": "MI_RainScreen_Gold",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RainScreen_Gold",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_RainScreen_Gold.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_RainScreen_Gold_Graffiti",
+   "object": "MI_RainScreen_Gold_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RainScreen_Gold_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_RainScreen_Gold_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_Rainscreen_Green",
+   "object": "MI_Rainscreen_Green",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Rainscreen_Green",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_Rainscreen_Green.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_Rainscreen_Green_Graffiti",
+   "object": "MI_Rainscreen_Green_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Rainscreen_Green_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_Rainscreen_Green_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_RainScreen_Grey",
+   "object": "MI_RainScreen_Grey",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RainScreen_Grey",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_RainScreen_Grey.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_RainScreen_Grey_Graffiti",
+   "object": "MI_RainScreen_Grey_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RainScreen_Grey_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_RainScreen_Grey_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_RainScreen_GreyDark",
+   "object": "MI_RainScreen_GreyDark",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RainScreen_GreyDark",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_RainScreen_GreyDark.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_RainScreen_GreyDark_Graffiti",
+   "object": "MI_RainScreen_GreyDark_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RainScreen_GreyDark_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_RainScreen_GreyDark_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_RainScreen_Indigo",
+   "object": "MI_RainScreen_Indigo",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RainScreen_Indigo",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_RainScreen_Indigo.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_RainScreen_Indigo_Graffiti",
+   "object": "MI_RainScreen_Indigo_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RainScreen_Indigo_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_RainScreen_Indigo_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_RainScreen_LightGreen",
+   "object": "MI_RainScreen_LightGreen",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RainScreen_LightGreen",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_RainScreen_LightGreen.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_RainScreen_LightGreen_Graffiti",
+   "object": "MI_RainScreen_LightGreen_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RainScreen_LightGreen_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_RainScreen_LightGreen_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_RainScreen_Orange",
+   "object": "MI_RainScreen_Orange",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RainScreen_Orange",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_RainScreen_Orange.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_RainScreen_Orange_Graffiti",
+   "object": "MI_RainScreen_Orange_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RainScreen_Orange_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_RainScreen_Orange_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_RainScreen_PARENT",
+   "object": "MI_RainScreen_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RainScreen_PARENT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_RainScreen_PARENT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_RainScreen_PARENT_Baked",
+   "object": "MI_RainScreen_PARENT_Baked",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RainScreen_PARENT_Baked",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_RainScreen_PARENT_Baked.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_RainScreen_RedBright",
+   "object": "MI_RainScreen_RedBright",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RainScreen_RedBright",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_RainScreen_RedBright.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_RainScreen_RedBright_Graffiti",
+   "object": "MI_RainScreen_RedBright_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RainScreen_RedBright_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_RainScreen_RedBright_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_RainScreen_RoyalBlue",
+   "object": "MI_RainScreen_RoyalBlue",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RainScreen_RoyalBlue",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_RainScreen_RoyalBlue.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_RainScreen_RoyalBlue_Graffiti",
+   "object": "MI_RainScreen_RoyalBlue_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RainScreen_RoyalBlue_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_RainScreen_RoyalBlue_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_RainScreen_Rust",
+   "object": "MI_RainScreen_Rust",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RainScreen_Rust",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_RainScreen_Rust.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_RainScreen_Rust_Graffiti",
+   "object": "MI_RainScreen_Rust_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RainScreen_Rust_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_RainScreen_Rust_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_RainScreen_Salmon",
+   "object": "MI_RainScreen_Salmon",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RainScreen_Salmon",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_RainScreen_Salmon.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_RainScreen_Salmon_Graffiti",
+   "object": "MI_RainScreen_Salmon_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RainScreen_Salmon_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_RainScreen_Salmon_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_RainScreen_SandyBrown",
+   "object": "MI_RainScreen_SandyBrown",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RainScreen_SandyBrown",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_RainScreen_SandyBrown.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_RainScreen_SandyBrown_Graffiti",
+   "object": "MI_RainScreen_SandyBrown_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RainScreen_SandyBrown_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_RainScreen_SandyBrown_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_RainScreen_SeaGreen",
+   "object": "MI_RainScreen_SeaGreen",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RainScreen_SeaGreen",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_RainScreen_SeaGreen.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_RainScreen_SeaGreen_Graffiti",
+   "object": "MI_RainScreen_SeaGreen_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RainScreen_SeaGreen_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_RainScreen_SeaGreen_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_Rainscreen_Silver",
+   "object": "MI_Rainscreen_Silver",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Rainscreen_Silver",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_Rainscreen_Silver.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_Rainscreen_Silver_Graffiti",
+   "object": "MI_Rainscreen_Silver_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Rainscreen_Silver_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_Rainscreen_Silver_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_RainScreen_SilverDark",
+   "object": "MI_RainScreen_SilverDark",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RainScreen_SilverDark",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_RainScreen_SilverDark.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_RainScreen_SilverDark_Graffiti",
+   "object": "MI_RainScreen_SilverDark_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RainScreen_SilverDark_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_RainScreen_SilverDark_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_RainScreen_SkyBlue",
+   "object": "MI_RainScreen_SkyBlue",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RainScreen_SkyBlue",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_RainScreen_SkyBlue.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_RainScreen_SkyBlue_Graffiti",
+   "object": "MI_RainScreen_SkyBlue_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RainScreen_SkyBlue_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_RainScreen_SkyBlue_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_RainScreen_Violet",
+   "object": "MI_RainScreen_Violet",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RainScreen_Violet",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_RainScreen_Violet.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_RainScreen_Violet_Graffiti",
+   "object": "MI_RainScreen_Violet_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RainScreen_Violet_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_RainScreen_Violet_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_RainScreen_White",
+   "object": "MI_RainScreen_White",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RainScreen_White",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_RainScreen_White.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_RainScreen_White_Graffiti",
+   "object": "MI_RainScreen_White_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RainScreen_White_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_RainScreen_White_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_RainScreen_YellowBright",
+   "object": "MI_RainScreen_YellowBright",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RainScreen_YellowBright",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_RainScreen_YellowBright.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#MI_RainScreen_YellowBright_Graffiti",
+   "object": "MI_RainScreen_YellowBright_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RainScreen_YellowBright_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/MI_RainScreen_YellowBright_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#RainScreen_DiffSpec",
+   "object": "RainScreen_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "extracted_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_DiffSpec.tga",
+   "output_sha256": "fe9455e62eeaf879c9b812a38842932a6a3827149e3b14afc11da81ec71c7e02",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/RainScreen_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rainscreen/RainScreen.upk#RainScreen_NormBump",
+   "object": "RainScreen_NormBump",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_NormBump.tga",
+   "extracted_sha256": "f77eabf602f8224a073c7c034fb239e9d72945fee8ff8acd1071aec3e8c091bc",
+   "output_file": "Content/Extracted/MaterialDatabase/RainScreen/RainScreen/Texture2D/RainScreen_NormBump.tga",
+   "output_sha256": "f77eabf602f8224a073c7c034fb239e9d72945fee8ff8acd1071aec3e8c091bc",
+   "uasset": "Content/Imported/MaterialDatabase/RainScreen/RainScreen_NormBump.uasset"
+  }
+ ]
+}

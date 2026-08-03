@@ -1,0 +1,62 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Sandstone_Brick",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/Brick/Large/Sandstone_Brick.upk",
+ "source_sha256": "2171084b1b899ea3df65175766e70ed6abe7829908079527df664596af84f761",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Large/Sandstone_Brick.upk#MI_sandstone_brick",
+   "object": "MI_sandstone_brick",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "sandstone_brick",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Sandstone_Brick/Sandstone_Brick/Texture2D/SandStone_Brick_Diff.tga",
+   "extracted_sha256": "acb4ebf86972939d94270fcbc6fd8d0c727c1af8c4ae6af3d39731ce2450e806",
+   "output_file": "Content/Extracted/MaterialDatabase/Sandstone_Brick/Sandstone_Brick/Texture2D/SandStone_Brick_Diff.tga",
+   "output_sha256": "acb4ebf86972939d94270fcbc6fd8d0c727c1af8c4ae6af3d39731ce2450e806",
+   "uasset": "Content/Imported/MaterialDatabase/Sandstone_Brick/MI_sandstone_brick.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Large/Sandstone_Brick.upk#MI_SandStone_Brick_Graffiti",
+   "object": "MI_SandStone_Brick_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "SandStone_Brick_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Sandstone_Brick/Sandstone_Brick/Texture2D/SandStone_Brick_Diff.tga",
+   "extracted_sha256": "acb4ebf86972939d94270fcbc6fd8d0c727c1af8c4ae6af3d39731ce2450e806",
+   "output_file": "Content/Extracted/MaterialDatabase/Sandstone_Brick/Sandstone_Brick/Texture2D/SandStone_Brick_Diff.tga",
+   "output_sha256": "acb4ebf86972939d94270fcbc6fd8d0c727c1af8c4ae6af3d39731ce2450e806",
+   "uasset": "Content/Imported/MaterialDatabase/Sandstone_Brick/MI_SandStone_Brick_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Large/Sandstone_Brick.upk#SandStone_Brick_Diff",
+   "object": "SandStone_Brick_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Sandstone_Brick/Sandstone_Brick/Texture2D/SandStone_Brick_Diff.tga",
+   "extracted_sha256": "acb4ebf86972939d94270fcbc6fd8d0c727c1af8c4ae6af3d39731ce2450e806",
+   "output_file": "Content/Extracted/MaterialDatabase/Sandstone_Brick/Sandstone_Brick/Texture2D/SandStone_Brick_Diff.tga",
+   "output_sha256": "acb4ebf86972939d94270fcbc6fd8d0c727c1af8c4ae6af3d39731ce2450e806",
+   "uasset": "Content/Imported/MaterialDatabase/Sandstone_Brick/SandStone_Brick_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Large/Sandstone_Brick.upk#SandStone_Brick_Norm",
+   "object": "SandStone_Brick_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Sandstone_Brick/Sandstone_Brick/Texture2D/SandStone_Brick_Norm.tga",
+   "extracted_sha256": "55bee1dd994da55fdea54895806216b1f544708c2a220d5aaf98be6fd254b913",
+   "output_file": "Content/Extracted/MaterialDatabase/Sandstone_Brick/Sandstone_Brick/Texture2D/SandStone_Brick_Norm.tga",
+   "output_sha256": "55bee1dd994da55fdea54895806216b1f544708c2a220d5aaf98be6fd254b913",
+   "uasset": "Content/Imported/MaterialDatabase/Sandstone_Brick/SandStone_Brick_Norm.uasset"
+  }
+ ]
+}

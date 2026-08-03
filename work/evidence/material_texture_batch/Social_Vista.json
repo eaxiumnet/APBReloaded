@@ -1,0 +1,256 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Social_Vista",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/SocialDistrict/PropMaterials/Social_Vista.upk",
+ "source_sha256": "d6bffe5151957892918439b86cbc9224d2f2c905913635634f571d6968eb03d6",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/Social_Vista.upk#CityBackdrop_Vista_Diff_FullRes",
+   "object": "CityBackdrop_Vista_Diff_FullRes",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Social_Vista/Social_Vista/Texture2D/CityBackdrop_Vista_Diff_FullRes.tga",
+   "extracted_sha256": "76a6d2b420ff264fec5b7aabd5d61133645cd1b7db315ee5c0edb05354a626e8",
+   "output_file": "Content/Extracted/MaterialDatabase/Social_Vista/Social_Vista/Texture2D/CityBackdrop_Vista_Diff_FullRes.tga",
+   "output_sha256": "76a6d2b420ff264fec5b7aabd5d61133645cd1b7db315ee5c0edb05354a626e8",
+   "uasset": "Content/Imported/MaterialDatabase/Social_Vista/CityBackdrop_Vista_Diff_FullRes.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/Social_Vista.upk#CityBackdrop_Vista_Norm_FullRes",
+   "object": "CityBackdrop_Vista_Norm_FullRes",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Social_Vista/Social_Vista/Texture2D/CityBackdrop_Vista_Norm_FullRes.tga",
+   "extracted_sha256": "f79adcb9b7f87a9702d677318b62bdb31935faaa84cf8c9fb80ed7a662872097",
+   "output_file": "Content/Extracted/MaterialDatabase/Social_Vista/Social_Vista/Texture2D/CityBackdrop_Vista_Norm_FullRes.tga",
+   "output_sha256": "f79adcb9b7f87a9702d677318b62bdb31935faaa84cf8c9fb80ed7a662872097",
+   "uasset": "Content/Imported/MaterialDatabase/Social_Vista/CityBackdrop_Vista_Norm_FullRes.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/Social_Vista.upk#CityBackdrop_Vista_Opac_FullRes",
+   "object": "CityBackdrop_Vista_Opac_FullRes",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Social_Vista/Social_Vista/Texture2D/CityBackdrop_Vista_Opac_FullRes.tga",
+   "extracted_sha256": "a4d9fb94a62665899b26255d29cb3c69e2161919578c95178ca0c9df2ecd3582",
+   "output_file": "Content/Extracted/MaterialDatabase/Social_Vista/Social_Vista/Texture2D/CityBackdrop_Vista_Opac_FullRes.tga",
+   "output_sha256": "a4d9fb94a62665899b26255d29cb3c69e2161919578c95178ca0c9df2ecd3582",
+   "uasset": "Content/Imported/MaterialDatabase/Social_Vista/CityBackdrop_Vista_Opac_FullRes.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/Social_Vista.upk#Concrete_01_DiffSpec",
+   "object": "Concrete_01_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Social_Vista/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Social_Vista/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/Social_Vista/Concrete_01_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/Social_Vista.upk#MI_CityBackdrop_Vista_MAT",
+   "object": "MI_CityBackdrop_Vista_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CityBackdrop_Vista_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Social_Vista/Social_Vista/Texture2D/CityBackdrop_Vista_Diff_FullRes.tga",
+   "extracted_sha256": "76a6d2b420ff264fec5b7aabd5d61133645cd1b7db315ee5c0edb05354a626e8",
+   "output_file": "Content/Extracted/MaterialDatabase/Social_Vista/Social_Vista/Texture2D/CityBackdrop_Vista_Diff_FullRes.tga",
+   "output_sha256": "76a6d2b420ff264fec5b7aabd5d61133645cd1b7db315ee5c0edb05354a626e8",
+   "uasset": "Content/Imported/MaterialDatabase/Social_Vista/MI_CityBackdrop_Vista_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/Social_Vista.upk#MI_Skyline_Windows",
+   "object": "MI_Skyline_Windows",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Skyline_Windows",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Social_Vista/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Social_Vista/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/Social_Vista/MI_Skyline_Windows.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/Social_Vista.upk#MI_Skyline_Windows_V3",
+   "object": "MI_Skyline_Windows_V3",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Skyline_Windows_V3",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Social_Vista/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Social_Vista/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/Social_Vista/MI_Skyline_Windows_V3.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/Social_Vista.upk#MI_Water",
+   "object": "MI_Water",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Water",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Social_Vista/Water/Texture2D/Waves_Norm.tga",
+   "extracted_sha256": "63098a145fd6cab63b12dd3f9981df702dbf5238108963e4102198cd60c37dfb",
+   "output_file": "Content/Extracted/MaterialDatabase/Social_Vista/Water/Texture2D/Waves_Norm.tga",
+   "output_sha256": "63098a145fd6cab63b12dd3f9981df702dbf5238108963e4102198cd60c37dfb",
+   "uasset": "Content/Imported/MaterialDatabase/Social_Vista/MI_Water.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/Social_Vista.upk#MI_WD_Block15_HillsAndTrees_Mat",
+   "object": "MI_WD_Block15_HillsAndTrees_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WD_Block15_HillsAndTrees_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Social_Vista/Social_Vista/Texture2D/WD_Block15_HillsAndTrees_Diff.tga",
+   "extracted_sha256": "df69d6a6085781c82c799d113b0022797cad09d310d05328032c9937ce5cfe71",
+   "output_file": "Content/Extracted/MaterialDatabase/Social_Vista/Social_Vista/Texture2D/WD_Block15_HillsAndTrees_Diff.tga",
+   "output_sha256": "df69d6a6085781c82c799d113b0022797cad09d310d05328032c9937ce5cfe71",
+   "uasset": "Content/Imported/MaterialDatabase/Social_Vista/MI_WD_Block15_HillsAndTrees_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/Social_Vista.upk#MI_WD_Block15_LighthouseAndBridge_Mat",
+   "object": "MI_WD_Block15_LighthouseAndBridge_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WD_Block15_LighthouseAndBridge_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Social_Vista/Social_Vista/Texture2D/WD_Block15_LighthouseAndBridge_Diff.tga",
+   "extracted_sha256": "70a6baed9f91c0451ac458adf6a4f4e7e6aaa308e0ab7dca9dbff0908f0b3732",
+   "output_file": "Content/Extracted/MaterialDatabase/Social_Vista/Social_Vista/Texture2D/WD_Block15_LighthouseAndBridge_Diff.tga",
+   "output_sha256": "70a6baed9f91c0451ac458adf6a4f4e7e6aaa308e0ab7dca9dbff0908f0b3732",
+   "uasset": "Content/Imported/MaterialDatabase/Social_Vista/MI_WD_Block15_LighthouseAndBridge_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/Social_Vista.upk#Waves_Norm",
+   "object": "Waves_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Social_Vista/Water/Texture2D/Waves_Norm.tga",
+   "extracted_sha256": "63098a145fd6cab63b12dd3f9981df702dbf5238108963e4102198cd60c37dfb",
+   "output_file": "Content/Extracted/MaterialDatabase/Social_Vista/Water/Texture2D/Waves_Norm.tga",
+   "output_sha256": "63098a145fd6cab63b12dd3f9981df702dbf5238108963e4102198cd60c37dfb",
+   "uasset": "Content/Imported/MaterialDatabase/Social_Vista/Waves_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/Social_Vista.upk#WD_Block15_HillsAndTrees_Diff",
+   "object": "WD_Block15_HillsAndTrees_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Social_Vista/Social_Vista/Texture2D/WD_Block15_HillsAndTrees_Diff.tga",
+   "extracted_sha256": "df69d6a6085781c82c799d113b0022797cad09d310d05328032c9937ce5cfe71",
+   "output_file": "Content/Extracted/MaterialDatabase/Social_Vista/Social_Vista/Texture2D/WD_Block15_HillsAndTrees_Diff.tga",
+   "output_sha256": "df69d6a6085781c82c799d113b0022797cad09d310d05328032c9937ce5cfe71",
+   "uasset": "Content/Imported/MaterialDatabase/Social_Vista/WD_Block15_HillsAndTrees_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/Social_Vista.upk#WD_Block15_HillsAndTrees_Emis",
+   "object": "WD_Block15_HillsAndTrees_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Social_Vista/Social_Vista/Texture2D/WD_Block15_HillsAndTrees_Emis.tga",
+   "extracted_sha256": "f8259651072eb8d3e14fe8f9c126e7733a633069283a9f0eb57fbc3538188c3b",
+   "output_file": "Content/Extracted/MaterialDatabase/Social_Vista/Social_Vista/Texture2D/WD_Block15_HillsAndTrees_Emis.tga",
+   "output_sha256": "f8259651072eb8d3e14fe8f9c126e7733a633069283a9f0eb57fbc3538188c3b",
+   "uasset": "Content/Imported/MaterialDatabase/Social_Vista/WD_Block15_HillsAndTrees_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/Social_Vista.upk#WD_Block15_HillsAndTrees_Norm",
+   "object": "WD_Block15_HillsAndTrees_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Social_Vista/Social_Vista/Texture2D/WD_Block15_HillsAndTrees_Norm.tga",
+   "extracted_sha256": "97b17f5cd2e6c0328a4a2bf8521a19e7b7437f157a7b9fc4e4e4e01b2a65310d",
+   "output_file": "Content/Extracted/MaterialDatabase/Social_Vista/Social_Vista/Texture2D/WD_Block15_HillsAndTrees_Norm.tga",
+   "output_sha256": "97b17f5cd2e6c0328a4a2bf8521a19e7b7437f157a7b9fc4e4e4e01b2a65310d",
+   "uasset": "Content/Imported/MaterialDatabase/Social_Vista/WD_Block15_HillsAndTrees_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/Social_Vista.upk#WD_Block15_HillsAndTrees_Opac",
+   "object": "WD_Block15_HillsAndTrees_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Social_Vista/Social_Vista/Texture2D/WD_Block15_HillsAndTrees_Opac.tga",
+   "extracted_sha256": "2138a64f41399038add8e3aac29b90b73e969ebb7bffe8ec5f332d4010853b5a",
+   "output_file": "Content/Extracted/MaterialDatabase/Social_Vista/Social_Vista/Texture2D/WD_Block15_HillsAndTrees_Opac.tga",
+   "output_sha256": "2138a64f41399038add8e3aac29b90b73e969ebb7bffe8ec5f332d4010853b5a",
+   "uasset": "Content/Imported/MaterialDatabase/Social_Vista/WD_Block15_HillsAndTrees_Opac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/Social_Vista.upk#WD_Block15_LighthouseAndBridge_Diff",
+   "object": "WD_Block15_LighthouseAndBridge_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Social_Vista/Social_Vista/Texture2D/WD_Block15_LighthouseAndBridge_Diff.tga",
+   "extracted_sha256": "70a6baed9f91c0451ac458adf6a4f4e7e6aaa308e0ab7dca9dbff0908f0b3732",
+   "output_file": "Content/Extracted/MaterialDatabase/Social_Vista/Social_Vista/Texture2D/WD_Block15_LighthouseAndBridge_Diff.tga",
+   "output_sha256": "70a6baed9f91c0451ac458adf6a4f4e7e6aaa308e0ab7dca9dbff0908f0b3732",
+   "uasset": "Content/Imported/MaterialDatabase/Social_Vista/WD_Block15_LighthouseAndBridge_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/Social_Vista.upk#WD_Block15_LighthouseAndBridge_Emis",
+   "object": "WD_Block15_LighthouseAndBridge_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Social_Vista/Social_Vista/Texture2D/WD_Block15_LighthouseAndBridge_Emis.tga",
+   "extracted_sha256": "e3a2245e5f21084418ed12feaac82bf685f6ed82f2adb6648a7be60fe48352a4",
+   "output_file": "Content/Extracted/MaterialDatabase/Social_Vista/Social_Vista/Texture2D/WD_Block15_LighthouseAndBridge_Emis.tga",
+   "output_sha256": "e3a2245e5f21084418ed12feaac82bf685f6ed82f2adb6648a7be60fe48352a4",
+   "uasset": "Content/Imported/MaterialDatabase/Social_Vista/WD_Block15_LighthouseAndBridge_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/Social_Vista.upk#WD_Block15_LighthouseAndBridge_Norm",
+   "object": "WD_Block15_LighthouseAndBridge_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Social_Vista/Social_Vista/Texture2D/WD_Block15_LighthouseAndBridge_Norm.tga",
+   "extracted_sha256": "26df0190b87630523cbd5159d52c26197611032bbc12fdb70fcd081d32614779",
+   "output_file": "Content/Extracted/MaterialDatabase/Social_Vista/Social_Vista/Texture2D/WD_Block15_LighthouseAndBridge_Norm.tga",
+   "output_sha256": "26df0190b87630523cbd5159d52c26197611032bbc12fdb70fcd081d32614779",
+   "uasset": "Content/Imported/MaterialDatabase/Social_Vista/WD_Block15_LighthouseAndBridge_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/Social_Vista.upk#WD_Block15_LighthouseAndBridge_Opac",
+   "object": "WD_Block15_LighthouseAndBridge_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Social_Vista/Social_Vista/Texture2D/WD_Block15_LighthouseAndBridge_Opac.tga",
+   "extracted_sha256": "5268b98026af0282d896b65abb53244df23a90a9216395d7447ded53225ba769",
+   "output_file": "Content/Extracted/MaterialDatabase/Social_Vista/Social_Vista/Texture2D/WD_Block15_LighthouseAndBridge_Opac.tga",
+   "output_sha256": "5268b98026af0282d896b65abb53244df23a90a9216395d7447ded53225ba769",
+   "uasset": "Content/Imported/MaterialDatabase/Social_Vista/WD_Block15_LighthouseAndBridge_Opac.uasset"
+  }
+ ]
+}

@@ -1,0 +1,73 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "WaterfrontLocomotive",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontLocomotive.upk",
+ "source_sha256": "7cb9cb1919becc010f1fac8a4140720c3c5a408c0493c3954836ec8ccb95229e",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontLocomotive.upk#MI_WaterfrontLocomotive_Mat",
+   "object": "MI_WaterfrontLocomotive_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WaterfrontLocomotive_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontLocomotive/WaterfrontLocomotive/Texture2D/WaterfrontLocomotive_DiffSpec.tga",
+   "extracted_sha256": "fcf8f2ced626b699b1d4f3695768c182ee616e070a2fcd1c7f1b85a015c061bd",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontLocomotive/WaterfrontLocomotive/Texture2D/WaterfrontLocomotive_DiffSpec.tga",
+   "output_sha256": "fcf8f2ced626b699b1d4f3695768c182ee616e070a2fcd1c7f1b85a015c061bd",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontLocomotive/MI_WaterfrontLocomotive_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontLocomotive.upk#WaterfrontLocomotive_DiffSpec",
+   "object": "WaterfrontLocomotive_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontLocomotive/WaterfrontLocomotive/Texture2D/WaterfrontLocomotive_DiffSpec.tga",
+   "extracted_sha256": "fcf8f2ced626b699b1d4f3695768c182ee616e070a2fcd1c7f1b85a015c061bd",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontLocomotive/WaterfrontLocomotive/Texture2D/WaterfrontLocomotive_DiffSpec.tga",
+   "output_sha256": "fcf8f2ced626b699b1d4f3695768c182ee616e070a2fcd1c7f1b85a015c061bd",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontLocomotive/WaterfrontLocomotive_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontLocomotive.upk#WaterfrontLocomotive_Emis",
+   "object": "WaterfrontLocomotive_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontLocomotive/WaterfrontLocomotive/Texture2D/WaterfrontLocomotive_Emis.tga",
+   "extracted_sha256": "30be944673f04c8504e6647d32c6aaa5511c850217d91fbdce7b8dacca96726f",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontLocomotive/WaterfrontLocomotive/Texture2D/WaterfrontLocomotive_Emis.tga",
+   "output_sha256": "30be944673f04c8504e6647d32c6aaa5511c850217d91fbdce7b8dacca96726f",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontLocomotive/WaterfrontLocomotive_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontLocomotive.upk#WaterfrontLocomotive_Norm",
+   "object": "WaterfrontLocomotive_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontLocomotive/WaterfrontLocomotive/Texture2D/WaterfrontLocomotive_Norm.tga",
+   "extracted_sha256": "2f5a593b4970f6f647eb666f4473b5ab552691bc051719fc3a55f4df01f2248e",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontLocomotive/WaterfrontLocomotive/Texture2D/WaterfrontLocomotive_Norm.tga",
+   "output_sha256": "2f5a593b4970f6f647eb666f4473b5ab552691bc051719fc3a55f4df01f2248e",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontLocomotive/WaterfrontLocomotive_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontLocomotive.upk#WaterfrontLocomotive_Opac",
+   "object": "WaterfrontLocomotive_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontLocomotive/WaterfrontLocomotive/Texture2D/WaterfrontLocomotive_Opac.tga",
+   "extracted_sha256": "567cf169e2d1451ebdc0bcbff8b5877cdb3fda098075b4ebce4828b5839d6683",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontLocomotive/WaterfrontLocomotive/Texture2D/WaterfrontLocomotive_Opac.tga",
+   "output_sha256": "567cf169e2d1451ebdc0bcbff8b5877cdb3fda098075b4ebce4828b5839d6683",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontLocomotive/WaterfrontLocomotive_Opac.uasset"
+  }
+ ]
+}

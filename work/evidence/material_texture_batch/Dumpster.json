@@ -1,0 +1,107 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Dumpster",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/Dumpster.upk",
+ "source_sha256": "62ec86a82f29331d2cabe7c766705692f623d869eda86a43f932c58f9a95a0fa",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Dumpster.upk#Dumpster_DiffSpec",
+   "object": "Dumpster_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Dumpster/Dumpster/Texture2D/Dumpster_DiffSpec.tga",
+   "extracted_sha256": "a76e677e93be244af92cf8411afdeff2da9afc9e2499fafa3c4495670ed8eae9",
+   "output_file": "Content/Extracted/MaterialDatabase/Dumpster/Dumpster/Texture2D/Dumpster_DiffSpec.tga",
+   "output_sha256": "a76e677e93be244af92cf8411afdeff2da9afc9e2499fafa3c4495670ed8eae9",
+   "uasset": "Content/Imported/MaterialDatabase/Dumpster/Dumpster_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Dumpster.upk#Dumpster_Norm",
+   "object": "Dumpster_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Dumpster/Dumpster/Texture2D/Dumpster_Norm.tga",
+   "extracted_sha256": "e3c80194ba9a8d03f96199627117275ba717bba3da2a746914af69505f1bb77b",
+   "output_file": "Content/Extracted/MaterialDatabase/Dumpster/Dumpster/Texture2D/Dumpster_Norm.tga",
+   "output_sha256": "e3c80194ba9a8d03f96199627117275ba717bba3da2a746914af69505f1bb77b",
+   "uasset": "Content/Imported/MaterialDatabase/Dumpster/Dumpster_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Dumpster.upk#MI_Dumpster_Blue_Mat",
+   "object": "MI_Dumpster_Blue_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Dumpster_Blue_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Dumpster/Dumpster/Texture2D/Dumpster_DiffSpec.tga",
+   "extracted_sha256": "a76e677e93be244af92cf8411afdeff2da9afc9e2499fafa3c4495670ed8eae9",
+   "output_file": "Content/Extracted/MaterialDatabase/Dumpster/Dumpster/Texture2D/Dumpster_DiffSpec.tga",
+   "output_sha256": "a76e677e93be244af92cf8411afdeff2da9afc9e2499fafa3c4495670ed8eae9",
+   "uasset": "Content/Imported/MaterialDatabase/Dumpster/MI_Dumpster_Blue_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Dumpster.upk#MI_Dumpster_Damage_Blue_Mat",
+   "object": "MI_Dumpster_Damage_Blue_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Dumpster_Damage_Blue_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Dumpster/Dumpster/Texture2D/Dumpster_DiffSpec.tga",
+   "extracted_sha256": "a76e677e93be244af92cf8411afdeff2da9afc9e2499fafa3c4495670ed8eae9",
+   "output_file": "Content/Extracted/MaterialDatabase/Dumpster/Dumpster/Texture2D/Dumpster_DiffSpec.tga",
+   "output_sha256": "a76e677e93be244af92cf8411afdeff2da9afc9e2499fafa3c4495670ed8eae9",
+   "uasset": "Content/Imported/MaterialDatabase/Dumpster/MI_Dumpster_Damage_Blue_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Dumpster.upk#MI_Dumpster_Damage_Mat",
+   "object": "MI_Dumpster_Damage_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Dumpster_Damage_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Dumpster/Dumpster/Texture2D/Dumpster_DiffSpec.tga",
+   "extracted_sha256": "a76e677e93be244af92cf8411afdeff2da9afc9e2499fafa3c4495670ed8eae9",
+   "output_file": "Content/Extracted/MaterialDatabase/Dumpster/Dumpster/Texture2D/Dumpster_DiffSpec.tga",
+   "output_sha256": "a76e677e93be244af92cf8411afdeff2da9afc9e2499fafa3c4495670ed8eae9",
+   "uasset": "Content/Imported/MaterialDatabase/Dumpster/MI_Dumpster_Damage_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Dumpster.upk#MI_Dumpster_Green_Mat",
+   "object": "MI_Dumpster_Green_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Dumpster_Green_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Dumpster/Dumpster/Texture2D/Dumpster_DiffSpec.tga",
+   "extracted_sha256": "a76e677e93be244af92cf8411afdeff2da9afc9e2499fafa3c4495670ed8eae9",
+   "output_file": "Content/Extracted/MaterialDatabase/Dumpster/Dumpster/Texture2D/Dumpster_DiffSpec.tga",
+   "output_sha256": "a76e677e93be244af92cf8411afdeff2da9afc9e2499fafa3c4495670ed8eae9",
+   "uasset": "Content/Imported/MaterialDatabase/Dumpster/MI_Dumpster_Green_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Dumpster.upk#MI_Dumpster_Mat",
+   "object": "MI_Dumpster_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Dumpster_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Dumpster/Dumpster/Texture2D/Dumpster_DiffSpec.tga",
+   "extracted_sha256": "a76e677e93be244af92cf8411afdeff2da9afc9e2499fafa3c4495670ed8eae9",
+   "output_file": "Content/Extracted/MaterialDatabase/Dumpster/Dumpster/Texture2D/Dumpster_DiffSpec.tga",
+   "output_sha256": "a76e677e93be244af92cf8411afdeff2da9afc9e2499fafa3c4495670ed8eae9",
+   "uasset": "Content/Imported/MaterialDatabase/Dumpster/MI_Dumpster_Mat.uasset"
+  }
+ ]
+}

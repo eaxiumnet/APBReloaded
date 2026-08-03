@@ -1,0 +1,73 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "RWorld_SearchLight",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/RWorldSocialDistrict/Props/RWorld_SearchLight.upk",
+ "source_sha256": "bbe30a27ebb54313700048561de435dd3d078a1fafeda961343d70fb58a8310f",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_SearchLight.upk#LightFalloff_01",
+   "object": "LightFalloff_01",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_SearchLight/FD_NeonSigns/Texture2D/LightFalloff_01.tga",
+   "extracted_sha256": "3b9288827296846906205fc32919ec1109da6f5cdbb5da7f0cfc0eb0519b1a8b",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_SearchLight/FD_NeonSigns/Texture2D/LightFalloff_01.tga",
+   "output_sha256": "3b9288827296846906205fc32919ec1109da6f5cdbb5da7f0cfc0eb0519b1a8b",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_SearchLight/LightFalloff_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_SearchLight.upk#MI_LightBeam_shader",
+   "object": "MI_LightBeam_shader",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "LightBeam_shader",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_SearchLight/FD_NeonSigns/Texture2D/LightFalloff_01.tga",
+   "extracted_sha256": "3b9288827296846906205fc32919ec1109da6f5cdbb5da7f0cfc0eb0519b1a8b",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_SearchLight/FD_NeonSigns/Texture2D/LightFalloff_01.tga",
+   "output_sha256": "3b9288827296846906205fc32919ec1109da6f5cdbb5da7f0cfc0eb0519b1a8b",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_SearchLight/MI_LightBeam_shader.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_SearchLight.upk#MI_SearchLight_MAT",
+   "object": "MI_SearchLight_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "SearchLight_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_SearchLight/RWorld_SearchLight/Texture2D/SearchLight_DiffSpec.tga",
+   "extracted_sha256": "cff4d6b2eda41481f3d572918bbe7ac82ee5029ef181f5d15adb743117749872",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_SearchLight/RWorld_SearchLight/Texture2D/SearchLight_DiffSpec.tga",
+   "output_sha256": "cff4d6b2eda41481f3d572918bbe7ac82ee5029ef181f5d15adb743117749872",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_SearchLight/MI_SearchLight_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_SearchLight.upk#SearchLight_DiffSpec",
+   "object": "SearchLight_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_SearchLight/RWorld_SearchLight/Texture2D/SearchLight_DiffSpec.tga",
+   "extracted_sha256": "cff4d6b2eda41481f3d572918bbe7ac82ee5029ef181f5d15adb743117749872",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_SearchLight/RWorld_SearchLight/Texture2D/SearchLight_DiffSpec.tga",
+   "output_sha256": "cff4d6b2eda41481f3d572918bbe7ac82ee5029ef181f5d15adb743117749872",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_SearchLight/SearchLight_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_SearchLight.upk#SearchLight_Norm",
+   "object": "SearchLight_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_SearchLight/RWorld_SearchLight/Texture2D/SearchLight_Norm.tga",
+   "extracted_sha256": "a69569d4df7cf6d37a76a6099ed049a2376c30fd640b416f693c1d462e3bf888",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_SearchLight/RWorld_SearchLight/Texture2D/SearchLight_Norm.tga",
+   "output_sha256": "a69569d4df7cf6d37a76a6099ed049a2376c30fd640b416f693c1d462e3bf888",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_SearchLight/SearchLight_Norm.uasset"
+  }
+ ]
+}

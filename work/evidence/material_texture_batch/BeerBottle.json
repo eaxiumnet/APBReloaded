@@ -1,0 +1,87 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "BeerBottle",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/BeerBottle.upk",
+ "source_sha256": "3fbd579387e43b3818dcb8df95abcce1f22846e1b3a843a1cd7213b1178481fc",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/BeerBottle.upk#BeerBottle_Diff",
+   "object": "BeerBottle_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BeerBottle/BeerBottle/Texture2D/BeerBottle_Diff.tga",
+   "extracted_sha256": "7894150ffe2f710e42806bf18379bc33cb4f3c749cce7f29f56cc405812dba14",
+   "output_file": "Content/Extracted/MaterialDatabase/BeerBottle/BeerBottle/Texture2D/BeerBottle_Diff.tga",
+   "output_sha256": "7894150ffe2f710e42806bf18379bc33cb4f3c749cce7f29f56cc405812dba14",
+   "uasset": "Content/Imported/MaterialDatabase/BeerBottle/BeerBottle_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/BeerBottle.upk#BeerBottle_Norm",
+   "object": "BeerBottle_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BeerBottle/BeerBottle/Texture2D/BeerBottle_Norm.tga",
+   "extracted_sha256": "8b86d2a6837d2fc439dfa63dff0ae8e30b222a6a7c3c6f19d511622514f0bba3",
+   "output_file": "Content/Extracted/MaterialDatabase/BeerBottle/BeerBottle/Texture2D/BeerBottle_Norm.tga",
+   "output_sha256": "8b86d2a6837d2fc439dfa63dff0ae8e30b222a6a7c3c6f19d511622514f0bba3",
+   "uasset": "Content/Imported/MaterialDatabase/BeerBottle/BeerBottle_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/BeerBottle.upk#MI_BeerBottle_MAT",
+   "object": "MI_BeerBottle_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "BeerBottle_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BeerBottle/BeerBottle/Texture2D/BeerBottle_Diff.tga",
+   "extracted_sha256": "7894150ffe2f710e42806bf18379bc33cb4f3c749cce7f29f56cc405812dba14",
+   "output_file": "Content/Extracted/MaterialDatabase/BeerBottle/BeerBottle/Texture2D/BeerBottle_Diff.tga",
+   "output_sha256": "7894150ffe2f710e42806bf18379bc33cb4f3c749cce7f29f56cc405812dba14",
+   "uasset": "Content/Imported/MaterialDatabase/BeerBottle/MI_BeerBottle_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/BeerBottle.upk#MI_Marshmallow_Pink_Mat",
+   "object": "MI_Marshmallow_Pink_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Marshmallow_Pink_Mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BeerBottle/Terrain/Texture2D/Sand01_SPEC.tga",
+   "extracted_sha256": "8b105104e8afde602bab90b24c42a448faba54f01dc5294a9dc0fcac4e2e93a3",
+   "output_file": "Content/Extracted/MaterialDatabase/BeerBottle/Terrain/Texture2D/Sand01_SPEC.tga",
+   "output_sha256": "8b105104e8afde602bab90b24c42a448faba54f01dc5294a9dc0fcac4e2e93a3",
+   "uasset": "Content/Imported/MaterialDatabase/BeerBottle/MI_Marshmallow_Pink_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/BeerBottle.upk#MI_Marshmallow_White_INST",
+   "object": "MI_Marshmallow_White_INST",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Marshmallow_White_INST",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BeerBottle/Terrain/Texture2D/Sand01_SPEC.tga",
+   "extracted_sha256": "8b105104e8afde602bab90b24c42a448faba54f01dc5294a9dc0fcac4e2e93a3",
+   "output_file": "Content/Extracted/MaterialDatabase/BeerBottle/Terrain/Texture2D/Sand01_SPEC.tga",
+   "output_sha256": "8b105104e8afde602bab90b24c42a448faba54f01dc5294a9dc0fcac4e2e93a3",
+   "uasset": "Content/Imported/MaterialDatabase/BeerBottle/MI_Marshmallow_White_INST.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/BeerBottle.upk#Sand01_SPEC",
+   "object": "Sand01_SPEC",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BeerBottle/Terrain/Texture2D/Sand01_SPEC.tga",
+   "extracted_sha256": "8b105104e8afde602bab90b24c42a448faba54f01dc5294a9dc0fcac4e2e93a3",
+   "output_file": "Content/Extracted/MaterialDatabase/BeerBottle/Terrain/Texture2D/Sand01_SPEC.tga",
+   "output_sha256": "8b105104e8afde602bab90b24c42a448faba54f01dc5294a9dc0fcac4e2e93a3",
+   "uasset": "Content/Imported/MaterialDatabase/BeerBottle/Sand01_SPEC.uasset"
+  }
+ ]
+}

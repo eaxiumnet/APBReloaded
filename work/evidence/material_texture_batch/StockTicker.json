@@ -1,0 +1,34 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "StockTicker",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/Misc/StockTicker.upk",
+ "source_sha256": "1c3bb52e4fd1ac5a230c1ac69e25264579a7418df643ed24c6e207916c406dd3",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Misc/StockTicker.upk#MI_StockTickerMat",
+   "object": "MI_StockTickerMat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StockTickerMat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StockTicker/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "extracted_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "output_file": "Content/Extracted/MaterialDatabase/StockTicker/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "output_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "uasset": "Content/Imported/MaterialDatabase/StockTicker/MI_StockTickerMat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Misc/StockTicker.upk#NEON_DotMatrix_01",
+   "object": "NEON_DotMatrix_01",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StockTicker/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "extracted_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "output_file": "Content/Extracted/MaterialDatabase/StockTicker/FD_Signage/Texture2D/NEON_DotMatrix_01.tga",
+   "output_sha256": "dd229e0107d20550cab7a6291e8b47ed5e04ae3a17b9928d8f454658723c2692",
+   "uasset": "Content/Imported/MaterialDatabase/StockTicker/NEON_DotMatrix_01.uasset"
+  }
+ ]
+}

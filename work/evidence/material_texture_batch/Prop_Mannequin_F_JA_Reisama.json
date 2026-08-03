@@ -1,0 +1,100 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Prop_Mannequin_F_JA_Reisama",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Mannequin_F_JA_Reisama.upk",
+ "source_sha256": "34199d0b83156aacd79d23a1497a6836f27046d707e68cd8f72846b951f4634f",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Mannequin_F_JA_Reisama.upk#Diffuse",
+   "object": "Diffuse",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_JA_Reisama/Prop_Mannequin_F_JA_Reisama/Texture2D/Diffuse.tga",
+   "extracted_sha256": "15682f8dee3d7d64212f649bc017c2d2ea2dcbe15c09e8bc38978794a809bbc2",
+   "output_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_JA_Reisama/Prop_Mannequin_F_JA_Reisama/Texture2D/Diffuse.tga",
+   "output_sha256": "15682f8dee3d7d64212f649bc017c2d2ea2dcbe15c09e8bc38978794a809bbc2",
+   "uasset": "Content/Imported/MaterialDatabase/Prop_Mannequin_F_JA_Reisama/Diffuse.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Mannequin_F_JA_Reisama.upk#F_Hair_Bunches_Functional_Middleparting_Xtra_Norm",
+   "object": "F_Hair_Bunches_Functional_Middleparting_Xtra_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_JA_Reisama/F_Hair_Bunches_Functional_Middleparting/Texture2D/F_Hair_Bunches_Functional_Middleparting_Xtra_Norm.tga",
+   "extracted_sha256": "6faa197c574f86f88f359c89ef9a7ac2bf85453ce77fcb9df633e80c57826446",
+   "output_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_JA_Reisama/F_Hair_Bunches_Functional_Middleparting/Texture2D/F_Hair_Bunches_Functional_Middleparting_Xtra_Norm.tga",
+   "output_sha256": "6faa197c574f86f88f359c89ef9a7ac2bf85453ce77fcb9df633e80c57826446",
+   "uasset": "Content/Imported/MaterialDatabase/Prop_Mannequin_F_JA_Reisama/F_Hair_Bunches_Functional_Middleparting_Xtra_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Mannequin_F_JA_Reisama.upk#F_Hair_Eyelashes_Opac",
+   "object": "F_Hair_Eyelashes_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_JA_Reisama/F_Hair/Texture2D/F_Hair_Eyelashes_Opac.tga",
+   "extracted_sha256": "04a5790c59643d52826487d6dc0b9506563ef01f4a4b4c394f601a6439982bc5",
+   "output_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_JA_Reisama/F_Hair/Texture2D/F_Hair_Eyelashes_Opac.tga",
+   "output_sha256": "04a5790c59643d52826487d6dc0b9506563ef01f4a4b4c394f601a6439982bc5",
+   "uasset": "Content/Imported/MaterialDatabase/Prop_Mannequin_F_JA_Reisama/F_Hair_Eyelashes_Opac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Mannequin_F_JA_Reisama.upk#MI_BodyMaterial",
+   "object": "MI_BodyMaterial",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "BodyMaterial",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_JA_Reisama/Prop_Mannequin_F_JA_Reisama/Texture2D/Diffuse.tga",
+   "extracted_sha256": "15682f8dee3d7d64212f649bc017c2d2ea2dcbe15c09e8bc38978794a809bbc2",
+   "output_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_JA_Reisama/Prop_Mannequin_F_JA_Reisama/Texture2D/Diffuse.tga",
+   "output_sha256": "15682f8dee3d7d64212f649bc017c2d2ea2dcbe15c09e8bc38978794a809bbc2",
+   "uasset": "Content/Imported/MaterialDatabase/Prop_Mannequin_F_JA_Reisama/MI_BodyMaterial.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Mannequin_F_JA_Reisama.upk#MI_F_Hair_Eyelashes_Mat",
+   "object": "MI_F_Hair_Eyelashes_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "F_Hair_Eyelashes_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_JA_Reisama/F_Hair/Texture2D/F_Hair_Eyelashes_Opac.tga",
+   "extracted_sha256": "04a5790c59643d52826487d6dc0b9506563ef01f4a4b4c394f601a6439982bc5",
+   "output_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_JA_Reisama/F_Hair/Texture2D/F_Hair_Eyelashes_Opac.tga",
+   "output_sha256": "04a5790c59643d52826487d6dc0b9506563ef01f4a4b4c394f601a6439982bc5",
+   "uasset": "Content/Imported/MaterialDatabase/Prop_Mannequin_F_JA_Reisama/MI_F_Hair_Eyelashes_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Mannequin_F_JA_Reisama.upk#MI_HairMaterial",
+   "object": "MI_HairMaterial",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "HairMaterial",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_JA_Reisama/F_Hair_Bunches_Functional_Middleparting/Texture2D/F_Hair_Bunches_Functional_Middleparting_Xtra_Norm.tga",
+   "extracted_sha256": "6faa197c574f86f88f359c89ef9a7ac2bf85453ce77fcb9df633e80c57826446",
+   "output_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_JA_Reisama/F_Hair_Bunches_Functional_Middleparting/Texture2D/F_Hair_Bunches_Functional_Middleparting_Xtra_Norm.tga",
+   "output_sha256": "6faa197c574f86f88f359c89ef9a7ac2bf85453ce77fcb9df633e80c57826446",
+   "uasset": "Content/Imported/MaterialDatabase/Prop_Mannequin_F_JA_Reisama/MI_HairMaterial.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Mannequin_F_JA_Reisama.upk#Normal",
+   "object": "Normal",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_JA_Reisama/Prop_Mannequin_F_JA_Reisama/Texture2D/Normal.tga",
+   "extracted_sha256": "4fd8a0e1835523acd9df67131d3be2f1e1106844be021eef1f3fdb0f612b21a9",
+   "output_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_JA_Reisama/Prop_Mannequin_F_JA_Reisama/Texture2D/Normal.tga",
+   "output_sha256": "4fd8a0e1835523acd9df67131d3be2f1e1106844be021eef1f3fdb0f612b21a9",
+   "uasset": "Content/Imported/MaterialDatabase/Prop_Mannequin_F_JA_Reisama/Normal.uasset"
+  }
+ ]
+}

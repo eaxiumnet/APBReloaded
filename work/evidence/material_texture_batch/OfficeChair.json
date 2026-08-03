@@ -1,0 +1,35 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "OfficeChair",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/EnforcerSocialDistrict/PropMaterials/OfficeChair.upk",
+ "source_sha256": "081f29f0e90cd33c8748a836e66e6510dfb75cbe0f5651639bec2a6cbd24f640",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/OfficeChair.upk#MI_OfficeChair",
+   "object": "MI_OfficeChair",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "OfficeChair",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/OfficeChair/OfficeChair/Texture2D/OfficeChair_DiffSpec_NRM.tga",
+   "extracted_sha256": "9cf7b9c3b051e9211c77ab44c12ae9f156b8be9946e9186f72b1f2d2cabf6353",
+   "output_file": "Content/Extracted/MaterialDatabase/OfficeChair/OfficeChair/Texture2D/OfficeChair_DiffSpec_NRM.tga",
+   "output_sha256": "9cf7b9c3b051e9211c77ab44c12ae9f156b8be9946e9186f72b1f2d2cabf6353",
+   "uasset": "Content/Imported/MaterialDatabase/OfficeChair/MI_OfficeChair.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/OfficeChair.upk#OfficeChair_DiffSpec_NRM",
+   "object": "OfficeChair_DiffSpec_NRM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/OfficeChair/OfficeChair/Texture2D/OfficeChair_DiffSpec_NRM.tga",
+   "extracted_sha256": "9cf7b9c3b051e9211c77ab44c12ae9f156b8be9946e9186f72b1f2d2cabf6353",
+   "output_file": "Content/Extracted/MaterialDatabase/OfficeChair/OfficeChair/Texture2D/OfficeChair_DiffSpec_NRM.tga",
+   "output_sha256": "9cf7b9c3b051e9211c77ab44c12ae9f156b8be9946e9186f72b1f2d2cabf6353",
+   "uasset": "Content/Imported/MaterialDatabase/OfficeChair/OfficeChair_DiffSpec_NRM.uasset"
+  }
+ ]
+}

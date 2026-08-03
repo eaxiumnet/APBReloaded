@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Shop_Awning",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Awning.upk",
+ "source_sha256": "08365bd3a47df37e385f5b5260e55a1ea9f2ada3d7735e00c4048345a7cf3c54",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Awning.upk#MI_shop_awning",
+   "object": "MI_shop_awning",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "shop_awning",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_Awning/Shop_Awning/Texture2D/Shop_Awning_Diff.tga",
+   "extracted_sha256": "a237185493bf500ee43692509cd9fad5822c7e8990a59afb4e3971bb4aa18642",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_Awning/Shop_Awning/Texture2D/Shop_Awning_Diff.tga",
+   "output_sha256": "a237185493bf500ee43692509cd9fad5822c7e8990a59afb4e3971bb4aa18642",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_Awning/MI_shop_awning.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Awning.upk#Shop_Awning_Diff",
+   "object": "Shop_Awning_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_Awning/Shop_Awning/Texture2D/Shop_Awning_Diff.tga",
+   "extracted_sha256": "a237185493bf500ee43692509cd9fad5822c7e8990a59afb4e3971bb4aa18642",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_Awning/Shop_Awning/Texture2D/Shop_Awning_Diff.tga",
+   "output_sha256": "a237185493bf500ee43692509cd9fad5822c7e8990a59afb4e3971bb4aa18642",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_Awning/Shop_Awning_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Awning.upk#Shop_Awning_Norm",
+   "object": "Shop_Awning_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_Awning/Shop_Awning/Texture2D/Shop_Awning_Norm.tga",
+   "extracted_sha256": "e8b1a0ada2b9b6c4161c138f8de1792a287a16a8dc170f26d29295c869b21028",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_Awning/Shop_Awning/Texture2D/Shop_Awning_Norm.tga",
+   "output_sha256": "e8b1a0ada2b9b6c4161c138f8de1792a287a16a8dc170f26d29295c869b21028",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_Awning/Shop_Awning_Norm.uasset"
+  }
+ ]
+}

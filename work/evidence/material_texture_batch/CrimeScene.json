@@ -1,0 +1,102 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "CrimeScene",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/UIDistrict/CrimeScene/CrimeScene.upk",
+ "source_sha256": "480244dc32111cfa60cae16a6e52e4d10d0fd61c3f267163bd6acc9d92179e8a",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/UIDistrict/CrimeScene/CrimeScene.upk#CrimeSceneTapeNRM",
+   "object": "CrimeSceneTapeNRM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CrimeScene/CrimeScene/Texture2D/CrimeSceneTapeNRM.tga",
+   "extracted_sha256": "10aafd06c25eb35c16458cd10db0062e18c940435d31dacd42e2f8afb61ac6fb",
+   "output_file": "Content/Extracted/MaterialDatabase/CrimeScene/CrimeScene/Texture2D/CrimeSceneTapeNRM.tga",
+   "output_sha256": "10aafd06c25eb35c16458cd10db0062e18c940435d31dacd42e2f8afb61ac6fb",
+   "uasset": "Content/Imported/MaterialDatabase/CrimeScene/CrimeSceneTapeNRM.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/UIDistrict/CrimeScene/CrimeScene.upk#MI_PoliceTape_MAT",
+   "object": "MI_PoliceTape_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PoliceTape_MAT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CrimeScene/CrimeScene/Texture2D/CrimeSceneTapeNRM.tga",
+   "extracted_sha256": "10aafd06c25eb35c16458cd10db0062e18c940435d31dacd42e2f8afb61ac6fb",
+   "output_file": "Content/Extracted/MaterialDatabase/CrimeScene/CrimeScene/Texture2D/CrimeSceneTapeNRM.tga",
+   "output_sha256": "10aafd06c25eb35c16458cd10db0062e18c940435d31dacd42e2f8afb61ac6fb",
+   "uasset": "Content/Imported/MaterialDatabase/CrimeScene/MI_PoliceTape_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/UIDistrict/CrimeScene/CrimeScene.upk#MI_roadmarkers",
+   "object": "MI_roadmarkers",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "roadmarkers",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CrimeScene/RoadMarkers/Texture2D/RoadMarkers_DiffSpec.tga",
+   "extracted_sha256": "10815a26cf540c8c144f3b325c516da7ceee2980065b23b8d066aa7120524bd6",
+   "output_file": "Content/Extracted/MaterialDatabase/CrimeScene/RoadMarkers/Texture2D/RoadMarkers_DiffSpec.tga",
+   "output_sha256": "10815a26cf540c8c144f3b325c516da7ceee2980065b23b8d066aa7120524bd6",
+   "uasset": "Content/Imported/MaterialDatabase/CrimeScene/MI_roadmarkers.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/UIDistrict/CrimeScene/CrimeScene.upk#MI_Roadmarkers_NoAnim",
+   "object": "MI_Roadmarkers_NoAnim",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roadmarkers_NoAnim",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CrimeScene/RoadMarkers/Texture2D/RoadMarkers_DiffSpec.tga",
+   "extracted_sha256": "10815a26cf540c8c144f3b325c516da7ceee2980065b23b8d066aa7120524bd6",
+   "output_file": "Content/Extracted/MaterialDatabase/CrimeScene/RoadMarkers/Texture2D/RoadMarkers_DiffSpec.tga",
+   "output_sha256": "10815a26cf540c8c144f3b325c516da7ceee2980065b23b8d066aa7120524bd6",
+   "uasset": "Content/Imported/MaterialDatabase/CrimeScene/MI_Roadmarkers_NoAnim.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/UIDistrict/CrimeScene/CrimeScene.upk#RoadMarkers_DiffSpec",
+   "object": "RoadMarkers_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CrimeScene/RoadMarkers/Texture2D/RoadMarkers_DiffSpec.tga",
+   "extracted_sha256": "10815a26cf540c8c144f3b325c516da7ceee2980065b23b8d066aa7120524bd6",
+   "output_file": "Content/Extracted/MaterialDatabase/CrimeScene/RoadMarkers/Texture2D/RoadMarkers_DiffSpec.tga",
+   "output_sha256": "10815a26cf540c8c144f3b325c516da7ceee2980065b23b8d066aa7120524bd6",
+   "uasset": "Content/Imported/MaterialDatabase/CrimeScene/RoadMarkers_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/UIDistrict/CrimeScene/CrimeScene.upk#RoadMarkers_Emis",
+   "object": "RoadMarkers_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CrimeScene/RoadMarkers/Texture2D/RoadMarkers_Emis.tga",
+   "extracted_sha256": "85873e120dce6a1493ef4cf046b6fbb10eb1146d75efb354ef598cc1c5b31b8f",
+   "output_file": "Content/Extracted/MaterialDatabase/CrimeScene/RoadMarkers/Texture2D/RoadMarkers_Emis.tga",
+   "output_sha256": "85873e120dce6a1493ef4cf046b6fbb10eb1146d75efb354ef598cc1c5b31b8f",
+   "uasset": "Content/Imported/MaterialDatabase/CrimeScene/RoadMarkers_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/UIDistrict/CrimeScene/CrimeScene.upk#RoadMarkers_Norm",
+   "object": "RoadMarkers_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CrimeScene/RoadMarkers/Texture2D/RoadMarkers_Norm.tga",
+   "extracted_sha256": "69aee95d09ac0c1a190f845bd127d599615c7645efd79aa3c0429972bf1cec4e",
+   "output_file": "Content/Extracted/MaterialDatabase/CrimeScene/RoadMarkers/Texture2D/RoadMarkers_Norm.tga",
+   "output_sha256": "69aee95d09ac0c1a190f845bd127d599615c7645efd79aa3c0429972bf1cec4e",
+   "uasset": "Content/Imported/MaterialDatabase/CrimeScene/RoadMarkers_Norm.uasset"
+  }
+ ]
+}

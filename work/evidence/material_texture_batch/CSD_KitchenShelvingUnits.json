@@ -1,0 +1,60 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "CSD_KitchenShelvingUnits",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/PropMaterials/CSD_KitchenShelvingUnits.upk",
+ "source_sha256": "ef4dc4dca0193a5d4c53a59eb84b1917e9979ce9fc6fe39819f6f0f6d1529b97",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_KitchenShelvingUnits.upk#CSD_KitchenShelvingUnits_DiffSpec",
+   "object": "CSD_KitchenShelvingUnits_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_KitchenShelvingUnits/CSD_KitchenShelvingUnits/Texture2D/CSD_KitchenShelvingUnits_DiffSpec.tga",
+   "extracted_sha256": "c6053c8b4537033b418f3dac243d1e9c2adf926c4d3334ddec653d8319014822",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_KitchenShelvingUnits/CSD_KitchenShelvingUnits/Texture2D/CSD_KitchenShelvingUnits_DiffSpec.tga",
+   "output_sha256": "c6053c8b4537033b418f3dac243d1e9c2adf926c4d3334ddec653d8319014822",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_KitchenShelvingUnits/CSD_KitchenShelvingUnits_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_KitchenShelvingUnits.upk#CSD_KitchenShelvingUnits_Norm",
+   "object": "CSD_KitchenShelvingUnits_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_KitchenShelvingUnits/CSD_KitchenShelvingUnits/Texture2D/CSD_KitchenShelvingUnits_Norm.tga",
+   "extracted_sha256": "610dcb0b315f5de218a4c8fe74b3e3a262a14f4386c0b24c081c7d0e8f8906c5",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_KitchenShelvingUnits/CSD_KitchenShelvingUnits/Texture2D/CSD_KitchenShelvingUnits_Norm.tga",
+   "output_sha256": "610dcb0b315f5de218a4c8fe74b3e3a262a14f4386c0b24c081c7d0e8f8906c5",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_KitchenShelvingUnits/CSD_KitchenShelvingUnits_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_KitchenShelvingUnits.upk#CSD_KitchenShelvingUnits_Opac",
+   "object": "CSD_KitchenShelvingUnits_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_KitchenShelvingUnits/CSD_KitchenShelvingUnits/Texture2D/CSD_KitchenShelvingUnits_Opac.tga",
+   "extracted_sha256": "e66b125a47818b3519ef26978166bda29536d660a61ed7fa06bc95f7c70a1e3b",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_KitchenShelvingUnits/CSD_KitchenShelvingUnits/Texture2D/CSD_KitchenShelvingUnits_Opac.tga",
+   "output_sha256": "e66b125a47818b3519ef26978166bda29536d660a61ed7fa06bc95f7c70a1e3b",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_KitchenShelvingUnits/CSD_KitchenShelvingUnits_Opac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_KitchenShelvingUnits.upk#MI_CSD_KitchenShelvingUnits_MAT",
+   "object": "MI_CSD_KitchenShelvingUnits_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CSD_KitchenShelvingUnits_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_KitchenShelvingUnits/CSD_KitchenShelvingUnits/Texture2D/CSD_KitchenShelvingUnits_DiffSpec.tga",
+   "extracted_sha256": "c6053c8b4537033b418f3dac243d1e9c2adf926c4d3334ddec653d8319014822",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_KitchenShelvingUnits/CSD_KitchenShelvingUnits/Texture2D/CSD_KitchenShelvingUnits_DiffSpec.tga",
+   "output_sha256": "c6053c8b4537033b418f3dac243d1e9c2adf926c4d3334ddec653d8319014822",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_KitchenShelvingUnits/MI_CSD_KitchenShelvingUnits_MAT.uasset"
+  }
+ ]
+}

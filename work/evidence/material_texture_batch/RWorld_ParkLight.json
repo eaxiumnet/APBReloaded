@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "RWorld_ParkLight",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/RWorldSocialDistrict/Props/RWorld_ParkLight.upk",
+ "source_sha256": "819b07f590f67abd166f62a9687e34690a81b39f890ac7533497a4c2e3bb2be1",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_ParkLight.upk#MI_ParkLight_MAT",
+   "object": "MI_ParkLight_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "ParkLight_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_ParkLight/RWorld_ParkLight/Texture2D/ParkLight_DiffSpec.tga",
+   "extracted_sha256": "c06c85421ab04c25d5826fa8ceb5ccf199d9a80ccec12cc44c525a9cd5e79a7d",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_ParkLight/RWorld_ParkLight/Texture2D/ParkLight_DiffSpec.tga",
+   "output_sha256": "c06c85421ab04c25d5826fa8ceb5ccf199d9a80ccec12cc44c525a9cd5e79a7d",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_ParkLight/MI_ParkLight_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_ParkLight.upk#ParkLight_DiffSpec",
+   "object": "ParkLight_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_ParkLight/RWorld_ParkLight/Texture2D/ParkLight_DiffSpec.tga",
+   "extracted_sha256": "c06c85421ab04c25d5826fa8ceb5ccf199d9a80ccec12cc44c525a9cd5e79a7d",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_ParkLight/RWorld_ParkLight/Texture2D/ParkLight_DiffSpec.tga",
+   "output_sha256": "c06c85421ab04c25d5826fa8ceb5ccf199d9a80ccec12cc44c525a9cd5e79a7d",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_ParkLight/ParkLight_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_ParkLight.upk#ParkLight_Norm",
+   "object": "ParkLight_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_ParkLight/RWorld_ParkLight/Texture2D/ParkLight_Norm.tga",
+   "extracted_sha256": "41d72dfaa7caf3c6c2e7f2ea114890034de52d9c36122d8c5a85b4cf3e3df705",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_ParkLight/RWorld_ParkLight/Texture2D/ParkLight_Norm.tga",
+   "output_sha256": "41d72dfaa7caf3c6c2e7f2ea114890034de52d9c36122d8c5a85b4cf3e3df705",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_ParkLight/ParkLight_Norm.uasset"
+  }
+ ]
+}

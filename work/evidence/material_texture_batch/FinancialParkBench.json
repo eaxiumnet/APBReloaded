@@ -1,0 +1,62 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FinancialParkBench",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/PropMaterials/FinancialParkBench.upk",
+ "source_sha256": "084d20310b6169ce060c44dfa5f082a4c97ebb9fb68a83dabdbbaf2d522f2ed1",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialParkBench.upk#FinancialParkBench_DiffSpec",
+   "object": "FinancialParkBench_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialParkBench/FinancialParkBench/Texture2D/FinancialParkBench_DiffSpec.tga",
+   "extracted_sha256": "4bf586079fadde3b1eef165319fbc9c39825fadc31769a0df64f92e90ad75ad2",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialParkBench/FinancialParkBench/Texture2D/FinancialParkBench_DiffSpec.tga",
+   "output_sha256": "4bf586079fadde3b1eef165319fbc9c39825fadc31769a0df64f92e90ad75ad2",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialParkBench/FinancialParkBench_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialParkBench.upk#FinancialParkBench_Norm",
+   "object": "FinancialParkBench_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialParkBench/FinancialParkBench/Texture2D/FinancialParkBench_Norm.tga",
+   "extracted_sha256": "d37cab130723f71e004f1f36bb36f86a3b041b0d451c5b908443e66be335219f",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialParkBench/FinancialParkBench/Texture2D/FinancialParkBench_Norm.tga",
+   "output_sha256": "d37cab130723f71e004f1f36bb36f86a3b041b0d451c5b908443e66be335219f",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialParkBench/FinancialParkBench_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialParkBench.upk#MI_FinancialParkBench_Damage_Mat",
+   "object": "MI_FinancialParkBench_Damage_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialParkBench_Damage_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialParkBench/FinancialParkBench/Texture2D/FinancialParkBench_DiffSpec.tga",
+   "extracted_sha256": "4bf586079fadde3b1eef165319fbc9c39825fadc31769a0df64f92e90ad75ad2",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialParkBench/FinancialParkBench/Texture2D/FinancialParkBench_DiffSpec.tga",
+   "output_sha256": "4bf586079fadde3b1eef165319fbc9c39825fadc31769a0df64f92e90ad75ad2",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialParkBench/MI_FinancialParkBench_Damage_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialParkBench.upk#MI_FinancialParkBench_Mat",
+   "object": "MI_FinancialParkBench_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialParkBench_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialParkBench/FinancialParkBench/Texture2D/FinancialParkBench_DiffSpec.tga",
+   "extracted_sha256": "4bf586079fadde3b1eef165319fbc9c39825fadc31769a0df64f92e90ad75ad2",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialParkBench/FinancialParkBench/Texture2D/FinancialParkBench_DiffSpec.tga",
+   "output_sha256": "4bf586079fadde3b1eef165319fbc9c39825fadc31769a0df64f92e90ad75ad2",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialParkBench/MI_FinancialParkBench_Mat.uasset"
+  }
+ ]
+}

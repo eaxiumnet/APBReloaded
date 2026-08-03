@@ -1,0 +1,87 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Shop_Sign_Alpha_Carpark",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Alpha_Carpark.upk",
+ "source_sha256": "f6ca9922a48bdac50a2369c4d38d635e647d874fbd3d8056d7ef1d6ceccb388f",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Alpha_Carpark.upk#bricks-Norm",
+   "object": "bricks-Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Alpha_Carpark/Brick_Test/Texture2D/bricks-Norm.tga",
+   "extracted_sha256": "7714452a4e39c359b712c7d6dced44901978817a6516080bed8aa20be7c3a164",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Alpha_Carpark/Brick_Test/Texture2D/bricks-Norm.tga",
+   "output_sha256": "7714452a4e39c359b712c7d6dced44901978817a6516080bed8aa20be7c3a164",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_Sign_Alpha_Carpark/bricks-Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Alpha_Carpark.upk#MI_BricksMat",
+   "object": "MI_BricksMat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "BricksMat",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Alpha_Carpark/Brick_Test/Texture2D/bricks-Norm.tga",
+   "extracted_sha256": "7714452a4e39c359b712c7d6dced44901978817a6516080bed8aa20be7c3a164",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Alpha_Carpark/Brick_Test/Texture2D/bricks-Norm.tga",
+   "output_sha256": "7714452a4e39c359b712c7d6dced44901978817a6516080bed8aa20be7c3a164",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_Sign_Alpha_Carpark/MI_BricksMat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Alpha_Carpark.upk#MI_Shop_Sign_Alpha_Carpark_Mat",
+   "object": "MI_Shop_Sign_Alpha_Carpark_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Shop_Sign_Alpha_Carpark_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Alpha_Carpark/Shop_Sign_Alpha_Carpark/Texture2D/Shop_Sign_Alpha_Carpark_Diff.tga",
+   "extracted_sha256": "5541c489677f062c0952ed728fca4e9590ad7497999b6d6bc02192dea56cd1fb",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Alpha_Carpark/Shop_Sign_Alpha_Carpark/Texture2D/Shop_Sign_Alpha_Carpark_Diff.tga",
+   "output_sha256": "5541c489677f062c0952ed728fca4e9590ad7497999b6d6bc02192dea56cd1fb",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_Sign_Alpha_Carpark/MI_Shop_Sign_Alpha_Carpark_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Alpha_Carpark.upk#Shop_Sign_Alpha_Carpark_Diff",
+   "object": "Shop_Sign_Alpha_Carpark_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Alpha_Carpark/Shop_Sign_Alpha_Carpark/Texture2D/Shop_Sign_Alpha_Carpark_Diff.tga",
+   "extracted_sha256": "5541c489677f062c0952ed728fca4e9590ad7497999b6d6bc02192dea56cd1fb",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Alpha_Carpark/Shop_Sign_Alpha_Carpark/Texture2D/Shop_Sign_Alpha_Carpark_Diff.tga",
+   "output_sha256": "5541c489677f062c0952ed728fca4e9590ad7497999b6d6bc02192dea56cd1fb",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_Sign_Alpha_Carpark/Shop_Sign_Alpha_Carpark_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Alpha_Carpark.upk#Shop_Sign_Alpha_Carpark_Emis",
+   "object": "Shop_Sign_Alpha_Carpark_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Alpha_Carpark/Shop_Sign_Alpha_Carpark/Texture2D/Shop_Sign_Alpha_Carpark_Emis.tga",
+   "extracted_sha256": "0037ad157d6b92cb7fe2ec40f03ef8255fd1500f01e83246a0e105a27d62107a",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Alpha_Carpark/Shop_Sign_Alpha_Carpark/Texture2D/Shop_Sign_Alpha_Carpark_Emis.tga",
+   "output_sha256": "0037ad157d6b92cb7fe2ec40f03ef8255fd1500f01e83246a0e105a27d62107a",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_Sign_Alpha_Carpark/Shop_Sign_Alpha_Carpark_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Alpha_Carpark.upk#Shop_Sign_Alpha_Carpark_Norm",
+   "object": "Shop_Sign_Alpha_Carpark_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Alpha_Carpark/Shop_Sign_Alpha_Carpark/Texture2D/Shop_Sign_Alpha_Carpark_Norm.tga",
+   "extracted_sha256": "3ac219d0e65cbcd35815897bca55693ac48851f7648c23827e9a86e5683f2ded",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Alpha_Carpark/Shop_Sign_Alpha_Carpark/Texture2D/Shop_Sign_Alpha_Carpark_Norm.tga",
+   "output_sha256": "3ac219d0e65cbcd35815897bca55693ac48851f7648c23827e9a86e5683f2ded",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_Sign_Alpha_Carpark/Shop_Sign_Alpha_Carpark_Norm.uasset"
+  }
+ ]
+}

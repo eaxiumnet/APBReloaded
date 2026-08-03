@@ -1,0 +1,62 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FireHydrant",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/FireHydrant.upk",
+ "source_sha256": "5b96e5ff4e098040a0705e3f0e805b49127a5dab10a93f95f6c9d320da1af053",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/FireHydrant.upk#FireHydrant_DiffSpec",
+   "object": "FireHydrant_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FireHydrant/FireHydrant/Texture2D/FireHydrant_DiffSpec.tga",
+   "extracted_sha256": "b4670a797c0726ac945fa82bad3a514a0cc055c74f9cb5fc75acdf70b351e188",
+   "output_file": "Content/Extracted/MaterialDatabase/FireHydrant/FireHydrant/Texture2D/FireHydrant_DiffSpec.tga",
+   "output_sha256": "b4670a797c0726ac945fa82bad3a514a0cc055c74f9cb5fc75acdf70b351e188",
+   "uasset": "Content/Imported/MaterialDatabase/FireHydrant/FireHydrant_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/FireHydrant.upk#FireHydrant_Norm",
+   "object": "FireHydrant_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FireHydrant/FireHydrant/Texture2D/FireHydrant_Norm.tga",
+   "extracted_sha256": "69efe9f9a9a0c3632fc20b44bea849d40f43905cb13a0a11365e28ef0e9cf754",
+   "output_file": "Content/Extracted/MaterialDatabase/FireHydrant/FireHydrant/Texture2D/FireHydrant_Norm.tga",
+   "output_sha256": "69efe9f9a9a0c3632fc20b44bea849d40f43905cb13a0a11365e28ef0e9cf754",
+   "uasset": "Content/Imported/MaterialDatabase/FireHydrant/FireHydrant_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/FireHydrant.upk#MI_FireHydrant",
+   "object": "MI_FireHydrant",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FireHydrant",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FireHydrant/FireHydrant/Texture2D/FireHydrant_DiffSpec.tga",
+   "extracted_sha256": "b4670a797c0726ac945fa82bad3a514a0cc055c74f9cb5fc75acdf70b351e188",
+   "output_file": "Content/Extracted/MaterialDatabase/FireHydrant/FireHydrant/Texture2D/FireHydrant_DiffSpec.tga",
+   "output_sha256": "b4670a797c0726ac945fa82bad3a514a0cc055c74f9cb5fc75acdf70b351e188",
+   "uasset": "Content/Imported/MaterialDatabase/FireHydrant/MI_FireHydrant.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/FireHydrant.upk#MI_FireHydrantDamage",
+   "object": "MI_FireHydrantDamage",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FireHydrantDamage",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FireHydrant/FireHydrant/Texture2D/FireHydrant_DiffSpec.tga",
+   "extracted_sha256": "b4670a797c0726ac945fa82bad3a514a0cc055c74f9cb5fc75acdf70b351e188",
+   "output_file": "Content/Extracted/MaterialDatabase/FireHydrant/FireHydrant/Texture2D/FireHydrant_DiffSpec.tga",
+   "output_sha256": "b4670a797c0726ac945fa82bad3a514a0cc055c74f9cb5fc75acdf70b351e188",
+   "uasset": "Content/Imported/MaterialDatabase/FireHydrant/MI_FireHydrantDamage.uasset"
+  }
+ ]
+}

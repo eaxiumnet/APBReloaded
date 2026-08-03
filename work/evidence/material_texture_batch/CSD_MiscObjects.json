@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "CSD_MiscObjects",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/PropMaterials/CSD_MiscObjects.upk",
+ "source_sha256": "8f60fedbf899d4f9dfe2fa5dd288ea139f70f0f09fe8c3b64653d96bc68113f1",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_MiscObjects.upk#CSD_MiscObjects_DiffSpec",
+   "object": "CSD_MiscObjects_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_MiscObjects/CSD_MiscObjects/Texture2D/CSD_MiscObjects_DiffSpec.tga",
+   "extracted_sha256": "e7acbdcee66692974e8886162e09624064e449040976e2f595540300ee52c251",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_MiscObjects/CSD_MiscObjects/Texture2D/CSD_MiscObjects_DiffSpec.tga",
+   "output_sha256": "e7acbdcee66692974e8886162e09624064e449040976e2f595540300ee52c251",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_MiscObjects/CSD_MiscObjects_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_MiscObjects.upk#CSD_MiscObjects_Norm",
+   "object": "CSD_MiscObjects_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_MiscObjects/CSD_MiscObjects/Texture2D/CSD_MiscObjects_Norm.tga",
+   "extracted_sha256": "399b0bb10cebdb8661cb354a648d61ce99a09aa192369aeb249f10237bf264df",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_MiscObjects/CSD_MiscObjects/Texture2D/CSD_MiscObjects_Norm.tga",
+   "output_sha256": "399b0bb10cebdb8661cb354a648d61ce99a09aa192369aeb249f10237bf264df",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_MiscObjects/CSD_MiscObjects_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_MiscObjects.upk#MI_CSD_MiscObjects_MAT",
+   "object": "MI_CSD_MiscObjects_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CSD_MiscObjects_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_MiscObjects/CSD_MiscObjects/Texture2D/CSD_MiscObjects_DiffSpec.tga",
+   "extracted_sha256": "e7acbdcee66692974e8886162e09624064e449040976e2f595540300ee52c251",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_MiscObjects/CSD_MiscObjects/Texture2D/CSD_MiscObjects_DiffSpec.tga",
+   "output_sha256": "e7acbdcee66692974e8886162e09624064e449040976e2f595540300ee52c251",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_MiscObjects/MI_CSD_MiscObjects_MAT.uasset"
+  }
+ ]
+}

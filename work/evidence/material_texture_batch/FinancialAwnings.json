@@ -1,0 +1,152 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FinancialAwnings",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAwnings.upk",
+ "source_sha256": "66f5caf02bdda6b6eabcf3955289b5642de57680ceda8914556072b26a5c4b04",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAwnings.upk#FinancialAwnings_DiffSpec",
+   "object": "FinancialAwnings_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialAwnings/FinancialAwnings/Texture2D/FinancialAwnings_DiffSpec.tga",
+   "extracted_sha256": "e58a327444788f95d0264bd96d970206570ede17a8fbe0b59ce2060ad17aa2ba",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialAwnings/FinancialAwnings/Texture2D/FinancialAwnings_DiffSpec.tga",
+   "output_sha256": "e58a327444788f95d0264bd96d970206570ede17a8fbe0b59ce2060ad17aa2ba",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialAwnings/FinancialAwnings_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAwnings.upk#FinancialAwnings_Norm",
+   "object": "FinancialAwnings_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialAwnings/FinancialAwnings/Texture2D/FinancialAwnings_Norm.tga",
+   "extracted_sha256": "6abb9f33e5fe58231de5f1d1e346126675088263186a1f35c30c73e5579b005e",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialAwnings/FinancialAwnings/Texture2D/FinancialAwnings_Norm.tga",
+   "output_sha256": "6abb9f33e5fe58231de5f1d1e346126675088263186a1f35c30c73e5579b005e",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialAwnings/FinancialAwnings_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAwnings.upk#MI_FinancialAwnings_Black",
+   "object": "MI_FinancialAwnings_Black",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialAwnings_Black",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialAwnings/FinancialAwnings/Texture2D/FinancialAwnings_DiffSpec.tga",
+   "extracted_sha256": "e58a327444788f95d0264bd96d970206570ede17a8fbe0b59ce2060ad17aa2ba",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialAwnings/FinancialAwnings/Texture2D/FinancialAwnings_DiffSpec.tga",
+   "output_sha256": "e58a327444788f95d0264bd96d970206570ede17a8fbe0b59ce2060ad17aa2ba",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialAwnings/MI_FinancialAwnings_Black.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAwnings.upk#MI_FinancialAwnings_Blue",
+   "object": "MI_FinancialAwnings_Blue",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialAwnings_Blue",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialAwnings/FinancialAwnings/Texture2D/FinancialAwnings_DiffSpec.tga",
+   "extracted_sha256": "e58a327444788f95d0264bd96d970206570ede17a8fbe0b59ce2060ad17aa2ba",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialAwnings/FinancialAwnings/Texture2D/FinancialAwnings_DiffSpec.tga",
+   "output_sha256": "e58a327444788f95d0264bd96d970206570ede17a8fbe0b59ce2060ad17aa2ba",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialAwnings/MI_FinancialAwnings_Blue.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAwnings.upk#MI_FinancialAwnings_Brown",
+   "object": "MI_FinancialAwnings_Brown",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialAwnings_Brown",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialAwnings/FinancialAwnings/Texture2D/FinancialAwnings_DiffSpec.tga",
+   "extracted_sha256": "e58a327444788f95d0264bd96d970206570ede17a8fbe0b59ce2060ad17aa2ba",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialAwnings/FinancialAwnings/Texture2D/FinancialAwnings_DiffSpec.tga",
+   "output_sha256": "e58a327444788f95d0264bd96d970206570ede17a8fbe0b59ce2060ad17aa2ba",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialAwnings/MI_FinancialAwnings_Brown.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAwnings.upk#MI_FinancialAwnings_Damage_Mat",
+   "object": "MI_FinancialAwnings_Damage_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialAwnings_Damage_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialAwnings/FinancialAwnings/Texture2D/FinancialAwnings_DiffSpec.tga",
+   "extracted_sha256": "e58a327444788f95d0264bd96d970206570ede17a8fbe0b59ce2060ad17aa2ba",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialAwnings/FinancialAwnings/Texture2D/FinancialAwnings_DiffSpec.tga",
+   "output_sha256": "e58a327444788f95d0264bd96d970206570ede17a8fbe0b59ce2060ad17aa2ba",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialAwnings/MI_FinancialAwnings_Damage_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAwnings.upk#MI_FinancialAwnings_Green",
+   "object": "MI_FinancialAwnings_Green",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialAwnings_Green",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialAwnings/FinancialAwnings/Texture2D/FinancialAwnings_DiffSpec.tga",
+   "extracted_sha256": "e58a327444788f95d0264bd96d970206570ede17a8fbe0b59ce2060ad17aa2ba",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialAwnings/FinancialAwnings/Texture2D/FinancialAwnings_DiffSpec.tga",
+   "output_sha256": "e58a327444788f95d0264bd96d970206570ede17a8fbe0b59ce2060ad17aa2ba",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialAwnings/MI_FinancialAwnings_Green.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAwnings.upk#MI_FinancialAwnings_LightBlue",
+   "object": "MI_FinancialAwnings_LightBlue",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialAwnings_LightBlue",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialAwnings/FinancialAwnings/Texture2D/FinancialAwnings_DiffSpec.tga",
+   "extracted_sha256": "e58a327444788f95d0264bd96d970206570ede17a8fbe0b59ce2060ad17aa2ba",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialAwnings/FinancialAwnings/Texture2D/FinancialAwnings_DiffSpec.tga",
+   "output_sha256": "e58a327444788f95d0264bd96d970206570ede17a8fbe0b59ce2060ad17aa2ba",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialAwnings/MI_FinancialAwnings_LightBlue.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAwnings.upk#MI_FinancialAwnings_Mat",
+   "object": "MI_FinancialAwnings_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialAwnings_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialAwnings/FinancialAwnings/Texture2D/FinancialAwnings_DiffSpec.tga",
+   "extracted_sha256": "e58a327444788f95d0264bd96d970206570ede17a8fbe0b59ce2060ad17aa2ba",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialAwnings/FinancialAwnings/Texture2D/FinancialAwnings_DiffSpec.tga",
+   "output_sha256": "e58a327444788f95d0264bd96d970206570ede17a8fbe0b59ce2060ad17aa2ba",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialAwnings/MI_FinancialAwnings_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAwnings.upk#MI_FinancialAwnings_Violet",
+   "object": "MI_FinancialAwnings_Violet",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialAwnings_Violet",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialAwnings/FinancialAwnings/Texture2D/FinancialAwnings_DiffSpec.tga",
+   "extracted_sha256": "e58a327444788f95d0264bd96d970206570ede17a8fbe0b59ce2060ad17aa2ba",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialAwnings/FinancialAwnings/Texture2D/FinancialAwnings_DiffSpec.tga",
+   "output_sha256": "e58a327444788f95d0264bd96d970206570ede17a8fbe0b59ce2060ad17aa2ba",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialAwnings/MI_FinancialAwnings_Violet.uasset"
+  }
+ ]
+}

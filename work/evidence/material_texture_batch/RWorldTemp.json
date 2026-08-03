@@ -1,0 +1,102 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "RWorldTemp",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/RWorldSocialDistrict/RWorldTemp.upk",
+ "source_sha256": "5ee63f49ce74134ee8e67915a49e749c8748009a56d7a0909625ffa336c78624",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/RWorldTemp.upk#Concrete_003_Norm",
+   "object": "Concrete_003_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorldTemp/Concrete/Texture2D/Concrete_003_Norm.tga",
+   "extracted_sha256": "fe51cf21d28a3ec12c2b5041f35c6768302f98c29c1436db4d637b207fdda6e4",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorldTemp/Concrete/Texture2D/Concrete_003_Norm.tga",
+   "output_sha256": "fe51cf21d28a3ec12c2b5041f35c6768302f98c29c1436db4d637b207fdda6e4",
+   "uasset": "Content/Imported/MaterialDatabase/RWorldTemp/Concrete_003_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/RWorldTemp.upk#Concrete_01_DiffSpec",
+   "object": "Concrete_01_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorldTemp/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorldTemp/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/RWorldTemp/Concrete_01_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/RWorldTemp.upk#DirtOverlay_01",
+   "object": "DirtOverlay_01",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorldTemp/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorldTemp/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/RWorldTemp/DirtOverlay_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/RWorldTemp.upk#MI_Conc_Grey",
+   "object": "MI_Conc_Grey",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Conc_Grey",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorldTemp/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorldTemp/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/RWorldTemp/MI_Conc_Grey.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/RWorldTemp.upk#MI_Conc_PARENT",
+   "object": "MI_Conc_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Conc_PARENT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorldTemp/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorldTemp/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/RWorldTemp/MI_Conc_PARENT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/RWorldTemp.upk#MI_Metal_Brushed_PARENT",
+   "object": "MI_Metal_Brushed_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_Brushed_PARENT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorldTemp/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorldTemp/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/RWorldTemp/MI_Metal_Brushed_PARENT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/RWorldTemp.upk#MI_Metal_Brushed_SilverBlue",
+   "object": "MI_Metal_Brushed_SilverBlue",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_Brushed_SilverBlue",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorldTemp/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorldTemp/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/RWorldTemp/MI_Metal_Brushed_SilverBlue.uasset"
+  }
+ ]
+}

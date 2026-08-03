@@ -1,0 +1,60 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Shop_WindowFronts",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_WindowFronts.upk",
+ "source_sha256": "2598d5522592368355e675eb25c4d012db4c39dfebf5433b95c868f9e690ba2c",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_WindowFronts.upk#MI_shop_windowfronts",
+   "object": "MI_shop_windowfronts",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "shop_windowfronts",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_WindowFronts/Shop_WindowFronts/Texture2D/Shop_WindowFront_DiffSpec.tga",
+   "extracted_sha256": "4f749ee9abcfe3e94f4b2439c3296f1feb2a24b2e91d0c689ea160e1d8d69704",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_WindowFronts/Shop_WindowFronts/Texture2D/Shop_WindowFront_DiffSpec.tga",
+   "output_sha256": "4f749ee9abcfe3e94f4b2439c3296f1feb2a24b2e91d0c689ea160e1d8d69704",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_WindowFronts/MI_shop_windowfronts.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_WindowFronts.upk#Shop_WindowFront_DiffSpec",
+   "object": "Shop_WindowFront_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_WindowFronts/Shop_WindowFronts/Texture2D/Shop_WindowFront_DiffSpec.tga",
+   "extracted_sha256": "4f749ee9abcfe3e94f4b2439c3296f1feb2a24b2e91d0c689ea160e1d8d69704",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_WindowFronts/Shop_WindowFronts/Texture2D/Shop_WindowFront_DiffSpec.tga",
+   "output_sha256": "4f749ee9abcfe3e94f4b2439c3296f1feb2a24b2e91d0c689ea160e1d8d69704",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_WindowFronts/Shop_WindowFront_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_WindowFronts.upk#Shop_WindowFront_Emiss",
+   "object": "Shop_WindowFront_Emiss",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_WindowFronts/Shop_WindowFronts/Texture2D/Shop_WindowFront_Emiss.tga",
+   "extracted_sha256": "0c1a3f3484206eb4bab08721cae4ed210c2b3c4df3c78f818f497bbc3447cc06",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_WindowFronts/Shop_WindowFronts/Texture2D/Shop_WindowFront_Emiss.tga",
+   "output_sha256": "0c1a3f3484206eb4bab08721cae4ed210c2b3c4df3c78f818f497bbc3447cc06",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_WindowFronts/Shop_WindowFront_Emiss.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_WindowFronts.upk#Shop_WindowFront_Norm",
+   "object": "Shop_WindowFront_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_WindowFronts/Shop_WindowFronts/Texture2D/Shop_WindowFront_Norm.tga",
+   "extracted_sha256": "4195de9beede74430067a9a238340ad8519f1236006af9e207cf3dc1658b51b8",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_WindowFronts/Shop_WindowFronts/Texture2D/Shop_WindowFront_Norm.tga",
+   "output_sha256": "4195de9beede74430067a9a238340ad8519f1236006af9e207cf3dc1658b51b8",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_WindowFronts/Shop_WindowFront_Norm.uasset"
+  }
+ ]
+}

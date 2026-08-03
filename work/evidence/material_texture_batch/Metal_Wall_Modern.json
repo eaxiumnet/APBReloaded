@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Metal_Wall_Modern",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/Metal/Metal_Wall_Modern.upk",
+ "source_sha256": "271fd06288a8ce9b4bc57c7883b4a375ba00c7b58a0e73e856d93a6b42151291",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal_Wall_Modern.upk#Metal_Wall_Modern_DiffSpec",
+   "object": "Metal_Wall_Modern_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal_Wall_Modern/Metal_Wall_Modern/Texture2D/Metal_Wall_Modern_DiffSpec.tga",
+   "extracted_sha256": "463372d1c77b3218461b4337203a887a431dbf338ad10eedf71b0247a8b4ff4a",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal_Wall_Modern/Metal_Wall_Modern/Texture2D/Metal_Wall_Modern_DiffSpec.tga",
+   "output_sha256": "463372d1c77b3218461b4337203a887a431dbf338ad10eedf71b0247a8b4ff4a",
+   "uasset": "Content/Imported/MaterialDatabase/Metal_Wall_Modern/Metal_Wall_Modern_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal_Wall_Modern.upk#Metal_Wall_Modern_Norm",
+   "object": "Metal_Wall_Modern_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal_Wall_Modern/Metal_Wall_Modern/Texture2D/Metal_Wall_Modern_Norm.tga",
+   "extracted_sha256": "0e5645c555ef15fc967df7e4679c07ad9b191b43bb71d856ed8efc6021e2eb3a",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal_Wall_Modern/Metal_Wall_Modern/Texture2D/Metal_Wall_Modern_Norm.tga",
+   "output_sha256": "0e5645c555ef15fc967df7e4679c07ad9b191b43bb71d856ed8efc6021e2eb3a",
+   "uasset": "Content/Imported/MaterialDatabase/Metal_Wall_Modern/Metal_Wall_Modern_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal_Wall_Modern.upk#MI_Metal_Wall_Modern_Mat",
+   "object": "MI_Metal_Wall_Modern_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_Wall_Modern_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal_Wall_Modern/Metal_Wall_Modern/Texture2D/Metal_Wall_Modern_DiffSpec.tga",
+   "extracted_sha256": "463372d1c77b3218461b4337203a887a431dbf338ad10eedf71b0247a8b4ff4a",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal_Wall_Modern/Metal_Wall_Modern/Texture2D/Metal_Wall_Modern_DiffSpec.tga",
+   "output_sha256": "463372d1c77b3218461b4337203a887a431dbf338ad10eedf71b0247a8b4ff4a",
+   "uasset": "Content/Imported/MaterialDatabase/Metal_Wall_Modern/MI_Metal_Wall_Modern_Mat.uasset"
+  }
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "CSD_FilingCabinet",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/PropMaterials/CSD_FilingCabinet.upk",
+ "source_sha256": "bb5f7c62955b98fa03514ebde7c99e956e0c8e783940c726822d995786f33c51",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_FilingCabinet.upk#CSD_FilingCabinet_DiffSpec",
+   "object": "CSD_FilingCabinet_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_FilingCabinet/CSD_FilingCabinet/Texture2D/CSD_FilingCabinet_DiffSpec.tga",
+   "extracted_sha256": "1487dea6dcb3299d6113abeb6d4b2741439be72468577e433e18af3b52430c86",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_FilingCabinet/CSD_FilingCabinet/Texture2D/CSD_FilingCabinet_DiffSpec.tga",
+   "output_sha256": "1487dea6dcb3299d6113abeb6d4b2741439be72468577e433e18af3b52430c86",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_FilingCabinet/CSD_FilingCabinet_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_FilingCabinet.upk#CSD_FilingCabinet_Norm",
+   "object": "CSD_FilingCabinet_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_FilingCabinet/CSD_FilingCabinet/Texture2D/CSD_FilingCabinet_Norm.tga",
+   "extracted_sha256": "9f595c5a0aa47437ad2f2a58695a7c7071341798b75e90b14c80c8d91a6955db",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_FilingCabinet/CSD_FilingCabinet/Texture2D/CSD_FilingCabinet_Norm.tga",
+   "output_sha256": "9f595c5a0aa47437ad2f2a58695a7c7071341798b75e90b14c80c8d91a6955db",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_FilingCabinet/CSD_FilingCabinet_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_FilingCabinet.upk#MI_CSD_FilingCabinet_MAT",
+   "object": "MI_CSD_FilingCabinet_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CSD_FilingCabinet_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_FilingCabinet/CSD_FilingCabinet/Texture2D/CSD_FilingCabinet_DiffSpec.tga",
+   "extracted_sha256": "1487dea6dcb3299d6113abeb6d4b2741439be72468577e433e18af3b52430c86",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_FilingCabinet/CSD_FilingCabinet/Texture2D/CSD_FilingCabinet_DiffSpec.tga",
+   "output_sha256": "1487dea6dcb3299d6113abeb6d4b2741439be72468577e433e18af3b52430c86",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_FilingCabinet/MI_CSD_FilingCabinet_MAT.uasset"
+  }
+ ]
+}

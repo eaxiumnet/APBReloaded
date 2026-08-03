@@ -1,0 +1,131 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "BarrelsAndBoxes",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/BarrelsAndBoxes.upk",
+ "source_sha256": "662fa6e892a6a2c4a1f8bfeeb8892f612b01879a89a9efa5b1d8f14f1fd57b14",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/BarrelsAndBoxes.upk#BarrelsAndBoxes_Barrel_DiffSpec",
+   "object": "BarrelsAndBoxes_Barrel_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BarrelsAndBoxes/BarrelsAndBoxes/Texture2D/BarrelsAndBoxes_Barrel_DiffSpec.tga",
+   "extracted_sha256": "1de573efdbd281c86c350c9ffe6cdbbc737999f50e7211c859c2c05a9bfe9da8",
+   "output_file": "Content/Extracted/MaterialDatabase/BarrelsAndBoxes/BarrelsAndBoxes/Texture2D/BarrelsAndBoxes_Barrel_DiffSpec.tga",
+   "output_sha256": "1de573efdbd281c86c350c9ffe6cdbbc737999f50e7211c859c2c05a9bfe9da8",
+   "uasset": "Content/Imported/MaterialDatabase/BarrelsAndBoxes/BarrelsAndBoxes_Barrel_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/BarrelsAndBoxes.upk#BarrelsAndBoxes_Barrel_Norm",
+   "object": "BarrelsAndBoxes_Barrel_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BarrelsAndBoxes/BarrelsAndBoxes/Texture2D/BarrelsAndBoxes_Barrel_Norm.tga",
+   "extracted_sha256": "25a9c8984a62b2badec63b00f4714683aacd6fa63463fdb9cb93a09bf7512edd",
+   "output_file": "Content/Extracted/MaterialDatabase/BarrelsAndBoxes/BarrelsAndBoxes/Texture2D/BarrelsAndBoxes_Barrel_Norm.tga",
+   "output_sha256": "25a9c8984a62b2badec63b00f4714683aacd6fa63463fdb9cb93a09bf7512edd",
+   "uasset": "Content/Imported/MaterialDatabase/BarrelsAndBoxes/BarrelsAndBoxes_Barrel_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/BarrelsAndBoxes.upk#BarrelsAndBoxes_Box_DiffSpec",
+   "object": "BarrelsAndBoxes_Box_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BarrelsAndBoxes/BarrelsAndBoxes/Texture2D/BarrelsAndBoxes_Box_DiffSpec.tga",
+   "extracted_sha256": "27f1551de58d2988757190b4b027695c269cb84d50da19fbfb0d31d33608fbdf",
+   "output_file": "Content/Extracted/MaterialDatabase/BarrelsAndBoxes/BarrelsAndBoxes/Texture2D/BarrelsAndBoxes_Box_DiffSpec.tga",
+   "output_sha256": "27f1551de58d2988757190b4b027695c269cb84d50da19fbfb0d31d33608fbdf",
+   "uasset": "Content/Imported/MaterialDatabase/BarrelsAndBoxes/BarrelsAndBoxes_Box_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/BarrelsAndBoxes.upk#BarrelsAndBoxes_Box_Norm",
+   "object": "BarrelsAndBoxes_Box_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BarrelsAndBoxes/BarrelsAndBoxes/Texture2D/BarrelsAndBoxes_Box_Norm.tga",
+   "extracted_sha256": "e564f6271ce785311fe95df42231486b41a4928ddf3c7cd6aa41d2e922c61ff4",
+   "output_file": "Content/Extracted/MaterialDatabase/BarrelsAndBoxes/BarrelsAndBoxes/Texture2D/BarrelsAndBoxes_Box_Norm.tga",
+   "output_sha256": "e564f6271ce785311fe95df42231486b41a4928ddf3c7cd6aa41d2e922c61ff4",
+   "uasset": "Content/Imported/MaterialDatabase/BarrelsAndBoxes/BarrelsAndBoxes_Box_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/BarrelsAndBoxes.upk#MI_BarrelsAndBoxes_Barrel_Damage_Mat",
+   "object": "MI_BarrelsAndBoxes_Barrel_Damage_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "BarrelsAndBoxes_Barrel_Damage_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BarrelsAndBoxes/BarrelsAndBoxes/Texture2D/BarrelsAndBoxes_Barrel_DiffSpec.tga",
+   "extracted_sha256": "1de573efdbd281c86c350c9ffe6cdbbc737999f50e7211c859c2c05a9bfe9da8",
+   "output_file": "Content/Extracted/MaterialDatabase/BarrelsAndBoxes/BarrelsAndBoxes/Texture2D/BarrelsAndBoxes_Barrel_DiffSpec.tga",
+   "output_sha256": "1de573efdbd281c86c350c9ffe6cdbbc737999f50e7211c859c2c05a9bfe9da8",
+   "uasset": "Content/Imported/MaterialDatabase/BarrelsAndBoxes/MI_BarrelsAndBoxes_Barrel_Damage_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/BarrelsAndBoxes.upk#MI_BarrelsAndBoxes_Barrel_Fire_Mat_INST",
+   "object": "MI_BarrelsAndBoxes_Barrel_Fire_Mat_INST",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "BarrelsAndBoxes_Barrel_Fire_Mat_INST",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BarrelsAndBoxes/BarrelsAndBoxes/Texture2D/BarrelsAndBoxes_Barrel_DiffSpec.tga",
+   "extracted_sha256": "1de573efdbd281c86c350c9ffe6cdbbc737999f50e7211c859c2c05a9bfe9da8",
+   "output_file": "Content/Extracted/MaterialDatabase/BarrelsAndBoxes/BarrelsAndBoxes/Texture2D/BarrelsAndBoxes_Barrel_DiffSpec.tga",
+   "output_sha256": "1de573efdbd281c86c350c9ffe6cdbbc737999f50e7211c859c2c05a9bfe9da8",
+   "uasset": "Content/Imported/MaterialDatabase/BarrelsAndBoxes/MI_BarrelsAndBoxes_Barrel_Fire_Mat_INST.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/BarrelsAndBoxes.upk#MI_BarrelsAndBoxes_Barrel_Mat",
+   "object": "MI_BarrelsAndBoxes_Barrel_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "BarrelsAndBoxes_Barrel_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BarrelsAndBoxes/BarrelsAndBoxes/Texture2D/BarrelsAndBoxes_Barrel_DiffSpec.tga",
+   "extracted_sha256": "1de573efdbd281c86c350c9ffe6cdbbc737999f50e7211c859c2c05a9bfe9da8",
+   "output_file": "Content/Extracted/MaterialDatabase/BarrelsAndBoxes/BarrelsAndBoxes/Texture2D/BarrelsAndBoxes_Barrel_DiffSpec.tga",
+   "output_sha256": "1de573efdbd281c86c350c9ffe6cdbbc737999f50e7211c859c2c05a9bfe9da8",
+   "uasset": "Content/Imported/MaterialDatabase/BarrelsAndBoxes/MI_BarrelsAndBoxes_Barrel_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/BarrelsAndBoxes.upk#MI_BarrelsAndBoxes_Box_Damage_Mat",
+   "object": "MI_BarrelsAndBoxes_Box_Damage_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "BarrelsAndBoxes_Box_Damage_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BarrelsAndBoxes/BarrelsAndBoxes/Texture2D/BarrelsAndBoxes_Box_DiffSpec.tga",
+   "extracted_sha256": "27f1551de58d2988757190b4b027695c269cb84d50da19fbfb0d31d33608fbdf",
+   "output_file": "Content/Extracted/MaterialDatabase/BarrelsAndBoxes/BarrelsAndBoxes/Texture2D/BarrelsAndBoxes_Box_DiffSpec.tga",
+   "output_sha256": "27f1551de58d2988757190b4b027695c269cb84d50da19fbfb0d31d33608fbdf",
+   "uasset": "Content/Imported/MaterialDatabase/BarrelsAndBoxes/MI_BarrelsAndBoxes_Box_Damage_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/BarrelsAndBoxes.upk#MI_BarrelsAndBoxes_Box_Mat",
+   "object": "MI_BarrelsAndBoxes_Box_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "BarrelsAndBoxes_Box_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BarrelsAndBoxes/BarrelsAndBoxes/Texture2D/BarrelsAndBoxes_Box_DiffSpec.tga",
+   "extracted_sha256": "27f1551de58d2988757190b4b027695c269cb84d50da19fbfb0d31d33608fbdf",
+   "output_file": "Content/Extracted/MaterialDatabase/BarrelsAndBoxes/BarrelsAndBoxes/Texture2D/BarrelsAndBoxes_Box_DiffSpec.tga",
+   "output_sha256": "27f1551de58d2988757190b4b027695c269cb84d50da19fbfb0d31d33608fbdf",
+   "uasset": "Content/Imported/MaterialDatabase/BarrelsAndBoxes/MI_BarrelsAndBoxes_Box_Mat.uasset"
+  }
+ ]
+}

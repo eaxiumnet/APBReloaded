@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FinancialSnowPile",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/PropMaterials/FinancialSnowPile.upk",
+ "source_sha256": "c89d190a192861bd95db7a87f75830f2ba9106044c100128a156b1eaf4fc0d83",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialSnowPile.upk#MI_FinancialSnowPile_MAT",
+   "object": "MI_FinancialSnowPile_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialSnowPile_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialSnowPile/FinancialSnowPile/Texture2D/SnowPile_DiffSpec.tga",
+   "extracted_sha256": "1e3565c23efcfc473f7230893567e102b9b4e6168833b5281c45295b48205fcf",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialSnowPile/FinancialSnowPile/Texture2D/SnowPile_DiffSpec.tga",
+   "output_sha256": "1e3565c23efcfc473f7230893567e102b9b4e6168833b5281c45295b48205fcf",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialSnowPile/MI_FinancialSnowPile_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialSnowPile.upk#SnowPile_DiffSpec",
+   "object": "SnowPile_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialSnowPile/FinancialSnowPile/Texture2D/SnowPile_DiffSpec.tga",
+   "extracted_sha256": "1e3565c23efcfc473f7230893567e102b9b4e6168833b5281c45295b48205fcf",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialSnowPile/FinancialSnowPile/Texture2D/SnowPile_DiffSpec.tga",
+   "output_sha256": "1e3565c23efcfc473f7230893567e102b9b4e6168833b5281c45295b48205fcf",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialSnowPile/SnowPile_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialSnowPile.upk#SnowPile_Norm",
+   "object": "SnowPile_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialSnowPile/FinancialSnowPile/Texture2D/SnowPile_Norm.tga",
+   "extracted_sha256": "164eb52df079b7189e24097b2aa3a029607c0313479d27eba7d1889efaa14aac",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialSnowPile/FinancialSnowPile/Texture2D/SnowPile_Norm.tga",
+   "output_sha256": "164eb52df079b7189e24097b2aa3a029607c0313479d27eba7d1889efaa14aac",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialSnowPile/SnowPile_Norm.uasset"
+  }
+ ]
+}

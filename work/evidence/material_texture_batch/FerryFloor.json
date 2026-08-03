@@ -1,0 +1,35 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FerryFloor",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/WaterfrontDistrict/Ferry/FerryFloor.upk",
+ "source_sha256": "11d8fe1cb7721f3bab5a28ae8800b7e7c273a15a3e44ecf54e7396015126057b",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/Ferry/FerryFloor.upk#FerryFloor_NormDiff",
+   "object": "FerryFloor_NormDiff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FerryFloor/FerryFloor/Texture2D/FerryFloor_NormDiff.tga",
+   "extracted_sha256": "b0fbd3a857ae40400ea70d9c32dda9dd6dce6ce8075e2d79343ba1813191eaf0",
+   "output_file": "Content/Extracted/MaterialDatabase/FerryFloor/FerryFloor/Texture2D/FerryFloor_NormDiff.tga",
+   "output_sha256": "b0fbd3a857ae40400ea70d9c32dda9dd6dce6ce8075e2d79343ba1813191eaf0",
+   "uasset": "Content/Imported/MaterialDatabase/FerryFloor/FerryFloor_NormDiff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/Ferry/FerryFloor.upk#MI_FerryFloor_Mat",
+   "object": "MI_FerryFloor_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FerryFloor_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FerryFloor/FerryFloor/Texture2D/FerryFloor_NormDiff.tga",
+   "extracted_sha256": "b0fbd3a857ae40400ea70d9c32dda9dd6dce6ce8075e2d79343ba1813191eaf0",
+   "output_file": "Content/Extracted/MaterialDatabase/FerryFloor/FerryFloor/Texture2D/FerryFloor_NormDiff.tga",
+   "output_sha256": "b0fbd3a857ae40400ea70d9c32dda9dd6dce6ce8075e2d79343ba1813191eaf0",
+   "uasset": "Content/Imported/MaterialDatabase/FerryFloor/MI_FerryFloor_Mat.uasset"
+  }
+ ]
+}

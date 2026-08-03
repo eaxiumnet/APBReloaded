@@ -1,0 +1,102 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "ChainLinkFence",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/ChainLinkFence.upk",
+ "source_sha256": "d58ac7f561b3feb86ac8f75fcdc636539a6f22923457914b4ecaee771e5983d2",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/ChainLinkFence.upk#ChainLinkFence_DiffSpec",
+   "object": "ChainLinkFence_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ChainLinkFence/ChainLinkFence/Texture2D/ChainLinkFence_DiffSpec.tga",
+   "extracted_sha256": "56c14eb376377afa3b40985caaa8b9aa36b6567bff776cd9cd136e3f8f7d22bd",
+   "output_file": "Content/Extracted/MaterialDatabase/ChainLinkFence/ChainLinkFence/Texture2D/ChainLinkFence_DiffSpec.tga",
+   "output_sha256": "56c14eb376377afa3b40985caaa8b9aa36b6567bff776cd9cd136e3f8f7d22bd",
+   "uasset": "Content/Imported/MaterialDatabase/ChainLinkFence/ChainLinkFence_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/ChainLinkFence.upk#ChainLinkFence_Norm",
+   "object": "ChainLinkFence_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ChainLinkFence/ChainLinkFence/Texture2D/ChainLinkFence_Norm.tga",
+   "extracted_sha256": "31ecea67aa8492753ad550073e201c506eb21f374414fc80fb92769aaf653046",
+   "output_file": "Content/Extracted/MaterialDatabase/ChainLinkFence/ChainLinkFence/Texture2D/ChainLinkFence_Norm.tga",
+   "output_sha256": "31ecea67aa8492753ad550073e201c506eb21f374414fc80fb92769aaf653046",
+   "uasset": "Content/Imported/MaterialDatabase/ChainLinkFence/ChainLinkFence_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/ChainLinkFence.upk#ChainLinkFence_Opac",
+   "object": "ChainLinkFence_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ChainLinkFence/ChainLinkFence/Texture2D/ChainLinkFence_Opac.tga",
+   "extracted_sha256": "743f77277ff18d2693ec79d5dfaf36ed96ca97b824d57702d328b4e16dc26ce1",
+   "output_file": "Content/Extracted/MaterialDatabase/ChainLinkFence/ChainLinkFence/Texture2D/ChainLinkFence_Opac.tga",
+   "output_sha256": "743f77277ff18d2693ec79d5dfaf36ed96ca97b824d57702d328b4e16dc26ce1",
+   "uasset": "Content/Imported/MaterialDatabase/ChainLinkFence/ChainLinkFence_Opac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/ChainLinkFence.upk#MI_chainlinkfence",
+   "object": "MI_chainlinkfence",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "chainlinkfence",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ChainLinkFence/ChainLinkFence/Texture2D/ChainLinkFence_DiffSpec.tga",
+   "extracted_sha256": "56c14eb376377afa3b40985caaa8b9aa36b6567bff776cd9cd136e3f8f7d22bd",
+   "output_file": "Content/Extracted/MaterialDatabase/ChainLinkFence/ChainLinkFence/Texture2D/ChainLinkFence_DiffSpec.tga",
+   "output_sha256": "56c14eb376377afa3b40985caaa8b9aa36b6567bff776cd9cd136e3f8f7d22bd",
+   "uasset": "Content/Imported/MaterialDatabase/ChainLinkFence/MI_chainlinkfence.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/ChainLinkFence.upk#MI_ChainLinkFence_BlackVariation",
+   "object": "MI_ChainLinkFence_BlackVariation",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "ChainLinkFence_BlackVariation",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ChainLinkFence/ChainLinkFence/Texture2D/ChainLinkFence_DiffSpec.tga",
+   "extracted_sha256": "56c14eb376377afa3b40985caaa8b9aa36b6567bff776cd9cd136e3f8f7d22bd",
+   "output_file": "Content/Extracted/MaterialDatabase/ChainLinkFence/ChainLinkFence/Texture2D/ChainLinkFence_DiffSpec.tga",
+   "output_sha256": "56c14eb376377afa3b40985caaa8b9aa36b6567bff776cd9cd136e3f8f7d22bd",
+   "uasset": "Content/Imported/MaterialDatabase/ChainLinkFence/MI_ChainLinkFence_BlackVariation.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/ChainLinkFence.upk#MI_Warning_Sign",
+   "object": "MI_Warning_Sign",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Warning_Sign",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ChainLinkFence/ChainLinkFence/Texture2D/warning_NORM.tga",
+   "extracted_sha256": "d5acd0189dedcc1c151ac7f290c4ebc9d4749cdec0a9a38e81e4055972f2f13e",
+   "output_file": "Content/Extracted/MaterialDatabase/ChainLinkFence/ChainLinkFence/Texture2D/warning_NORM.tga",
+   "output_sha256": "d5acd0189dedcc1c151ac7f290c4ebc9d4749cdec0a9a38e81e4055972f2f13e",
+   "uasset": "Content/Imported/MaterialDatabase/ChainLinkFence/MI_Warning_Sign.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/ChainLinkFence.upk#warning_NORM",
+   "object": "warning_NORM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ChainLinkFence/ChainLinkFence/Texture2D/warning_NORM.tga",
+   "extracted_sha256": "d5acd0189dedcc1c151ac7f290c4ebc9d4749cdec0a9a38e81e4055972f2f13e",
+   "output_file": "Content/Extracted/MaterialDatabase/ChainLinkFence/ChainLinkFence/Texture2D/warning_NORM.tga",
+   "output_sha256": "d5acd0189dedcc1c151ac7f290c4ebc9d4749cdec0a9a38e81e4055972f2f13e",
+   "uasset": "Content/Imported/MaterialDatabase/ChainLinkFence/warning_NORM.uasset"
+  }
+ ]
+}

@@ -1,0 +1,92 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "CommercialWindows",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/FeatureMaterials/CommercialWindows.upk",
+ "source_sha256": "95313866a8bc2dcb393d3d01241ff9a7586152d3ac2332873332603aeaabc291",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/CommercialWindows.upk#CommercialWindows_DiffSpec",
+   "object": "CommercialWindows_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CommercialWindows/CommercialWindows/Texture2D/CommercialWindows_DiffSpec.tga",
+   "extracted_sha256": "7805861fd2be6ef8ca4a99b78ca9c151542b845f8619cfc2b0c5033c4d519eb4",
+   "output_file": "Content/Extracted/MaterialDatabase/CommercialWindows/CommercialWindows/Texture2D/CommercialWindows_DiffSpec.tga",
+   "output_sha256": "7805861fd2be6ef8ca4a99b78ca9c151542b845f8619cfc2b0c5033c4d519eb4",
+   "uasset": "Content/Imported/MaterialDatabase/CommercialWindows/CommercialWindows_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/CommercialWindows.upk#CommercialWindows_EmissMask",
+   "object": "CommercialWindows_EmissMask",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CommercialWindows/CommercialWindows/Texture2D/CommercialWindows_EmissMask.tga",
+   "extracted_sha256": "4c5f63f911d4fc52c06e1573edba5bbf244dc7adccaaa0f22cc258f1fa5a4488",
+   "output_file": "Content/Extracted/MaterialDatabase/CommercialWindows/CommercialWindows/Texture2D/CommercialWindows_EmissMask.tga",
+   "output_sha256": "4c5f63f911d4fc52c06e1573edba5bbf244dc7adccaaa0f22cc258f1fa5a4488",
+   "uasset": "Content/Imported/MaterialDatabase/CommercialWindows/CommercialWindows_EmissMask.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/CommercialWindows.upk#CommercialWindows_Norm",
+   "object": "CommercialWindows_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CommercialWindows/CommercialWindows/Texture2D/CommercialWindows_Norm.tga",
+   "extracted_sha256": "bfba85c863528305ce3c7f54ef20efa4af52b6987e596e98a17883ec264430c7",
+   "output_file": "Content/Extracted/MaterialDatabase/CommercialWindows/CommercialWindows/Texture2D/CommercialWindows_Norm.tga",
+   "output_sha256": "bfba85c863528305ce3c7f54ef20efa4af52b6987e596e98a17883ec264430c7",
+   "uasset": "Content/Imported/MaterialDatabase/CommercialWindows/CommercialWindows_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/CommercialWindows.upk#MI_CommercialWindows_Arson_Damage_MAT",
+   "object": "MI_CommercialWindows_Arson_Damage_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CommercialWindows_Arson_Damage_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CommercialWindows/CommercialWindows/Texture2D/CommercialWindows_DiffSpec.tga",
+   "extracted_sha256": "7805861fd2be6ef8ca4a99b78ca9c151542b845f8619cfc2b0c5033c4d519eb4",
+   "output_file": "Content/Extracted/MaterialDatabase/CommercialWindows/CommercialWindows/Texture2D/CommercialWindows_DiffSpec.tga",
+   "output_sha256": "7805861fd2be6ef8ca4a99b78ca9c151542b845f8619cfc2b0c5033c4d519eb4",
+   "uasset": "Content/Imported/MaterialDatabase/CommercialWindows/MI_CommercialWindows_Arson_Damage_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/CommercialWindows.upk#MI_CommercialWindows_Burglary_Damage_MAT",
+   "object": "MI_CommercialWindows_Burglary_Damage_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CommercialWindows_Burglary_Damage_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CommercialWindows/CommercialWindows/Texture2D/CommercialWindows_DiffSpec.tga",
+   "extracted_sha256": "7805861fd2be6ef8ca4a99b78ca9c151542b845f8619cfc2b0c5033c4d519eb4",
+   "output_file": "Content/Extracted/MaterialDatabase/CommercialWindows/CommercialWindows/Texture2D/CommercialWindows_DiffSpec.tga",
+   "output_sha256": "7805861fd2be6ef8ca4a99b78ca9c151542b845f8619cfc2b0c5033c4d519eb4",
+   "uasset": "Content/Imported/MaterialDatabase/CommercialWindows/MI_CommercialWindows_Burglary_Damage_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/CommercialWindows.upk#MI_CommercialWindows_MAT",
+   "object": "MI_CommercialWindows_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CommercialWindows_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CommercialWindows/CommercialWindows/Texture2D/CommercialWindows_DiffSpec.tga",
+   "extracted_sha256": "7805861fd2be6ef8ca4a99b78ca9c151542b845f8619cfc2b0c5033c4d519eb4",
+   "output_file": "Content/Extracted/MaterialDatabase/CommercialWindows/CommercialWindows/Texture2D/CommercialWindows_DiffSpec.tga",
+   "output_sha256": "7805861fd2be6ef8ca4a99b78ca9c151542b845f8619cfc2b0c5033c4d519eb4",
+   "uasset": "Content/Imported/MaterialDatabase/CommercialWindows/MI_CommercialWindows_MAT.uasset"
+  }
+ ]
+}

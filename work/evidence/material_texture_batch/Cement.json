@@ -1,0 +1,137 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Cement",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/Concrete/Cement.upk",
+ "source_sha256": "deec038f19dd7d167f4f974704e2c0c93c7f456043c6b1d05fc3efbdc42e8778",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Concrete/Cement.upk#Cement_DiffSpec",
+   "object": "Cement_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Cement/Cement/Texture2D/Cement_DiffSpec.tga",
+   "extracted_sha256": "0d4c5ef2e9ad7a6c5157fee8856d320ef89b2dc34a31c66e3758ffc855facb1d",
+   "output_file": "Content/Extracted/MaterialDatabase/Cement/Cement/Texture2D/Cement_DiffSpec.tga",
+   "output_sha256": "0d4c5ef2e9ad7a6c5157fee8856d320ef89b2dc34a31c66e3758ffc855facb1d",
+   "uasset": "Content/Imported/MaterialDatabase/Cement/Cement_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Concrete/Cement.upk#Concrete_003_Norm",
+   "object": "Concrete_003_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Cement/Concrete/Texture2D/Concrete_003_Norm.tga",
+   "extracted_sha256": "fe51cf21d28a3ec12c2b5041f35c6768302f98c29c1436db4d637b207fdda6e4",
+   "output_file": "Content/Extracted/MaterialDatabase/Cement/Concrete/Texture2D/Concrete_003_Norm.tga",
+   "output_sha256": "fe51cf21d28a3ec12c2b5041f35c6768302f98c29c1436db4d637b207fdda6e4",
+   "uasset": "Content/Imported/MaterialDatabase/Cement/Concrete_003_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Concrete/Cement.upk#MI_Cement_Beige",
+   "object": "MI_Cement_Beige",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Cement_Beige",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Cement/Cement/Texture2D/Cement_DiffSpec.tga",
+   "extracted_sha256": "0d4c5ef2e9ad7a6c5157fee8856d320ef89b2dc34a31c66e3758ffc855facb1d",
+   "output_file": "Content/Extracted/MaterialDatabase/Cement/Cement/Texture2D/Cement_DiffSpec.tga",
+   "output_sha256": "0d4c5ef2e9ad7a6c5157fee8856d320ef89b2dc34a31c66e3758ffc855facb1d",
+   "uasset": "Content/Imported/MaterialDatabase/Cement/MI_Cement_Beige.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Concrete/Cement.upk#MI_Cement_Beige_Graffiti",
+   "object": "MI_Cement_Beige_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Cement_Beige_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Cement/Cement/Texture2D/Cement_DiffSpec.tga",
+   "extracted_sha256": "0d4c5ef2e9ad7a6c5157fee8856d320ef89b2dc34a31c66e3758ffc855facb1d",
+   "output_file": "Content/Extracted/MaterialDatabase/Cement/Cement/Texture2D/Cement_DiffSpec.tga",
+   "output_sha256": "0d4c5ef2e9ad7a6c5157fee8856d320ef89b2dc34a31c66e3758ffc855facb1d",
+   "uasset": "Content/Imported/MaterialDatabase/Cement/MI_Cement_Beige_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Concrete/Cement.upk#MI_Cement_DarkGrey",
+   "object": "MI_Cement_DarkGrey",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Cement_DarkGrey",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Cement/Cement/Texture2D/Cement_DiffSpec.tga",
+   "extracted_sha256": "0d4c5ef2e9ad7a6c5157fee8856d320ef89b2dc34a31c66e3758ffc855facb1d",
+   "output_file": "Content/Extracted/MaterialDatabase/Cement/Cement/Texture2D/Cement_DiffSpec.tga",
+   "output_sha256": "0d4c5ef2e9ad7a6c5157fee8856d320ef89b2dc34a31c66e3758ffc855facb1d",
+   "uasset": "Content/Imported/MaterialDatabase/Cement/MI_Cement_DarkGrey.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Concrete/Cement.upk#MI_Cement_Grey",
+   "object": "MI_Cement_Grey",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Cement_Grey",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Cement/Cement/Texture2D/Cement_DiffSpec.tga",
+   "extracted_sha256": "0d4c5ef2e9ad7a6c5157fee8856d320ef89b2dc34a31c66e3758ffc855facb1d",
+   "output_file": "Content/Extracted/MaterialDatabase/Cement/Cement/Texture2D/Cement_DiffSpec.tga",
+   "output_sha256": "0d4c5ef2e9ad7a6c5157fee8856d320ef89b2dc34a31c66e3758ffc855facb1d",
+   "uasset": "Content/Imported/MaterialDatabase/Cement/MI_Cement_Grey.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Concrete/Cement.upk#MI_Cement_Grey_Graffiti",
+   "object": "MI_Cement_Grey_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Cement_Grey_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Cement/Cement/Texture2D/Cement_DiffSpec.tga",
+   "extracted_sha256": "0d4c5ef2e9ad7a6c5157fee8856d320ef89b2dc34a31c66e3758ffc855facb1d",
+   "output_file": "Content/Extracted/MaterialDatabase/Cement/Cement/Texture2D/Cement_DiffSpec.tga",
+   "output_sha256": "0d4c5ef2e9ad7a6c5157fee8856d320ef89b2dc34a31c66e3758ffc855facb1d",
+   "uasset": "Content/Imported/MaterialDatabase/Cement/MI_Cement_Grey_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Concrete/Cement.upk#MI_Cement_LightGrey",
+   "object": "MI_Cement_LightGrey",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Cement_LightGrey",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Cement/Cement/Texture2D/Cement_DiffSpec.tga",
+   "extracted_sha256": "0d4c5ef2e9ad7a6c5157fee8856d320ef89b2dc34a31c66e3758ffc855facb1d",
+   "output_file": "Content/Extracted/MaterialDatabase/Cement/Cement/Texture2D/Cement_DiffSpec.tga",
+   "output_sha256": "0d4c5ef2e9ad7a6c5157fee8856d320ef89b2dc34a31c66e3758ffc855facb1d",
+   "uasset": "Content/Imported/MaterialDatabase/Cement/MI_Cement_LightGrey.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Concrete/Cement.upk#MI_Cement_LightGrey_Graffiti",
+   "object": "MI_Cement_LightGrey_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Cement_LightGrey_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Cement/Cement/Texture2D/Cement_DiffSpec.tga",
+   "extracted_sha256": "0d4c5ef2e9ad7a6c5157fee8856d320ef89b2dc34a31c66e3758ffc855facb1d",
+   "output_file": "Content/Extracted/MaterialDatabase/Cement/Cement/Texture2D/Cement_DiffSpec.tga",
+   "output_sha256": "0d4c5ef2e9ad7a6c5157fee8856d320ef89b2dc34a31c66e3758ffc855facb1d",
+   "uasset": "Content/Imported/MaterialDatabase/Cement/MI_Cement_LightGrey_Graffiti.uasset"
+  }
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Tarpaulins",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/ProvingGrounds/PropMaterials/Tarpaulins.upk",
+ "source_sha256": "c3021bbfeba95cbdaf0c11a5dcbc69b9417abfa86e23a99ff898f2c87c17ac56",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/ProvingGrounds/PropMaterials/Tarpaulins.upk#MI_Tarpaulins_Mat",
+   "object": "MI_Tarpaulins_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Tarpaulins_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Tarpaulins/Tarpaulins/Texture2D/TarpaulinsDiff.tga",
+   "extracted_sha256": "6b782af6d29e26c8265f16ef0025824a7fc40cbc2452f8478ba81f04cc29f894",
+   "output_file": "Content/Extracted/MaterialDatabase/Tarpaulins/Tarpaulins/Texture2D/TarpaulinsDiff.tga",
+   "output_sha256": "6b782af6d29e26c8265f16ef0025824a7fc40cbc2452f8478ba81f04cc29f894",
+   "uasset": "Content/Imported/MaterialDatabase/Tarpaulins/MI_Tarpaulins_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/ProvingGrounds/PropMaterials/Tarpaulins.upk#TarpaulinsDiff",
+   "object": "TarpaulinsDiff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Tarpaulins/Tarpaulins/Texture2D/TarpaulinsDiff.tga",
+   "extracted_sha256": "6b782af6d29e26c8265f16ef0025824a7fc40cbc2452f8478ba81f04cc29f894",
+   "output_file": "Content/Extracted/MaterialDatabase/Tarpaulins/Tarpaulins/Texture2D/TarpaulinsDiff.tga",
+   "output_sha256": "6b782af6d29e26c8265f16ef0025824a7fc40cbc2452f8478ba81f04cc29f894",
+   "uasset": "Content/Imported/MaterialDatabase/Tarpaulins/TarpaulinsDiff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/ProvingGrounds/PropMaterials/Tarpaulins.upk#TarpaulinsNorm",
+   "object": "TarpaulinsNorm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Tarpaulins/Tarpaulins/Texture2D/TarpaulinsNorm.tga",
+   "extracted_sha256": "a3d7b8c9a369894acbc78c3e94da619d19807f789bed963768faab9dac740d8c",
+   "output_file": "Content/Extracted/MaterialDatabase/Tarpaulins/Tarpaulins/Texture2D/TarpaulinsNorm.tga",
+   "output_sha256": "a3d7b8c9a369894acbc78c3e94da619d19807f789bed963768faab9dac740d8c",
+   "uasset": "Content/Imported/MaterialDatabase/Tarpaulins/TarpaulinsNorm.uasset"
+  }
+ ]
+}

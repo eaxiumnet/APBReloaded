@@ -1,0 +1,60 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FinancialConcertHallDome",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/PropMaterials/FinancialConcertHallDome.upk",
+ "source_sha256": "08d2781b11ef2b9d3caeee488aba9eb79c39302f9bed0872e265ce6078580d88",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialConcertHallDome.upk#MI_Iron_Panels",
+   "object": "MI_Iron_Panels",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Iron_Panels",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialConcertHallDome/FinancialConcertHallDome/Texture2D/Normal_Iron_Panels.tga",
+   "extracted_sha256": "66d4bc7204ab84e0a7e5dd53be491d797fd2501cd08f033e49f3477f8ab0c921",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialConcertHallDome/FinancialConcertHallDome/Texture2D/Normal_Iron_Panels.tga",
+   "output_sha256": "66d4bc7204ab84e0a7e5dd53be491d797fd2501cd08f033e49f3477f8ab0c921",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialConcertHallDome/MI_Iron_Panels.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialConcertHallDome.upk#MI_Reflective_Rooftiles",
+   "object": "MI_Reflective_Rooftiles",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Reflective_Rooftiles",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialConcertHallDome/FinancialConcertHallDome/Texture2D/Normal_ReflectiveRooftiles.tga",
+   "extracted_sha256": "81f739c95141647f6d51792d5f8fc07c5be7bd8674aee80bcc24faf74fbc82be",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialConcertHallDome/FinancialConcertHallDome/Texture2D/Normal_ReflectiveRooftiles.tga",
+   "output_sha256": "81f739c95141647f6d51792d5f8fc07c5be7bd8674aee80bcc24faf74fbc82be",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialConcertHallDome/MI_Reflective_Rooftiles.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialConcertHallDome.upk#Normal_Iron_Panels",
+   "object": "Normal_Iron_Panels",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialConcertHallDome/FinancialConcertHallDome/Texture2D/Normal_Iron_Panels.tga",
+   "extracted_sha256": "66d4bc7204ab84e0a7e5dd53be491d797fd2501cd08f033e49f3477f8ab0c921",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialConcertHallDome/FinancialConcertHallDome/Texture2D/Normal_Iron_Panels.tga",
+   "output_sha256": "66d4bc7204ab84e0a7e5dd53be491d797fd2501cd08f033e49f3477f8ab0c921",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialConcertHallDome/Normal_Iron_Panels.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialConcertHallDome.upk#Normal_ReflectiveRooftiles",
+   "object": "Normal_ReflectiveRooftiles",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialConcertHallDome/FinancialConcertHallDome/Texture2D/Normal_ReflectiveRooftiles.tga",
+   "extracted_sha256": "81f739c95141647f6d51792d5f8fc07c5be7bd8674aee80bcc24faf74fbc82be",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialConcertHallDome/FinancialConcertHallDome/Texture2D/Normal_ReflectiveRooftiles.tga",
+   "output_sha256": "81f739c95141647f6d51792d5f8fc07c5be7bd8674aee80bcc24faf74fbc82be",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialConcertHallDome/Normal_ReflectiveRooftiles.uasset"
+  }
+ ]
+}

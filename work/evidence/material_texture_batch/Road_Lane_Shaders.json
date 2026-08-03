@@ -1,0 +1,212 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Road_Lane_Shaders",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/RoadMaterials/RoadMateralsInProgress/Road_Lane_Shaders.upk",
+ "source_sha256": "9cec34a5a8b2dcbc7c411817ddde8faf1ea8f9c1bffec0f49664e06ba5b5e264",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/RoadMaterials/RoadMateralsInProgress/Road_Lane_Shaders.upk#Grey01_Bare_Diffuse",
+   "object": "Grey01_Bare_Diffuse",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Road_Lane_Shaders/Road_Lane_Shaders/Texture2D/Grey01_Bare_Diffuse.tga",
+   "extracted_sha256": "584ff7dcbeea17a02ca20cf1c5e13350e3210b4dea79ca1a20fb061d3abf4e37",
+   "output_file": "Content/Extracted/MaterialDatabase/Road_Lane_Shaders/Road_Lane_Shaders/Texture2D/Grey01_Bare_Diffuse.tga",
+   "output_sha256": "584ff7dcbeea17a02ca20cf1c5e13350e3210b4dea79ca1a20fb061d3abf4e37",
+   "uasset": "Content/Imported/MaterialDatabase/Road_Lane_Shaders/Grey01_Bare_Diffuse.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/RoadMaterials/RoadMateralsInProgress/Road_Lane_Shaders.upk#Grey01_Bare_Normal",
+   "object": "Grey01_Bare_Normal",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Road_Lane_Shaders/Road_Lane_Shaders/Texture2D/Grey01_Bare_Normal.tga",
+   "extracted_sha256": "c608ed220973a14b8ef04317a535b3291cc6f8aecf6621eebcb9548786a62797",
+   "output_file": "Content/Extracted/MaterialDatabase/Road_Lane_Shaders/Road_Lane_Shaders/Texture2D/Grey01_Bare_Normal.tga",
+   "output_sha256": "c608ed220973a14b8ef04317a535b3291cc6f8aecf6621eebcb9548786a62797",
+   "uasset": "Content/Imported/MaterialDatabase/Road_Lane_Shaders/Grey01_Bare_Normal.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/RoadMaterials/RoadMateralsInProgress/Road_Lane_Shaders.upk#MI_Grey01_Bare_MAT",
+   "object": "MI_Grey01_Bare_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Grey01_Bare_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Road_Lane_Shaders/Road_Lane_Shaders/Texture2D/Grey01_Bare_Diffuse.tga",
+   "extracted_sha256": "584ff7dcbeea17a02ca20cf1c5e13350e3210b4dea79ca1a20fb061d3abf4e37",
+   "output_file": "Content/Extracted/MaterialDatabase/Road_Lane_Shaders/Road_Lane_Shaders/Texture2D/Grey01_Bare_Diffuse.tga",
+   "output_sha256": "584ff7dcbeea17a02ca20cf1c5e13350e3210b4dea79ca1a20fb061d3abf4e37",
+   "uasset": "Content/Imported/MaterialDatabase/Road_Lane_Shaders/MI_Grey01_Bare_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/RoadMaterials/RoadMateralsInProgress/Road_Lane_Shaders.upk#MI_Grey01_CentreDash_FWDArrow_MAT",
+   "object": "MI_Grey01_CentreDash_FWDArrow_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Grey01_CentreDash_FWDArrow_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Road_Lane_Shaders/Road_Lane_Shaders/Texture2D/Grey01_Bare_Diffuse.tga",
+   "extracted_sha256": "584ff7dcbeea17a02ca20cf1c5e13350e3210b4dea79ca1a20fb061d3abf4e37",
+   "output_file": "Content/Extracted/MaterialDatabase/Road_Lane_Shaders/Road_Lane_Shaders/Texture2D/Grey01_Bare_Diffuse.tga",
+   "output_sha256": "584ff7dcbeea17a02ca20cf1c5e13350e3210b4dea79ca1a20fb061d3abf4e37",
+   "uasset": "Content/Imported/MaterialDatabase/Road_Lane_Shaders/MI_Grey01_CentreDash_FWDArrow_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/RoadMaterials/RoadMateralsInProgress/Road_Lane_Shaders.upk#MI_Grey01_CentreDash_MAT",
+   "object": "MI_Grey01_CentreDash_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Grey01_CentreDash_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Road_Lane_Shaders/Road_Lane_Shaders/Texture2D/Grey01_Bare_Diffuse.tga",
+   "extracted_sha256": "584ff7dcbeea17a02ca20cf1c5e13350e3210b4dea79ca1a20fb061d3abf4e37",
+   "output_file": "Content/Extracted/MaterialDatabase/Road_Lane_Shaders/Road_Lane_Shaders/Texture2D/Grey01_Bare_Diffuse.tga",
+   "output_sha256": "584ff7dcbeea17a02ca20cf1c5e13350e3210b4dea79ca1a20fb061d3abf4e37",
+   "uasset": "Content/Imported/MaterialDatabase/Road_Lane_Shaders/MI_Grey01_CentreDash_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/RoadMaterials/RoadMateralsInProgress/Road_Lane_Shaders.upk#MI_Grey01_CentreDash_ONLY_MAT",
+   "object": "MI_Grey01_CentreDash_ONLY_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Grey01_CentreDash_ONLY_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Road_Lane_Shaders/Road_Lane_Shaders/Texture2D/Grey01_Bare_Diffuse.tga",
+   "extracted_sha256": "584ff7dcbeea17a02ca20cf1c5e13350e3210b4dea79ca1a20fb061d3abf4e37",
+   "output_file": "Content/Extracted/MaterialDatabase/Road_Lane_Shaders/Road_Lane_Shaders/Texture2D/Grey01_Bare_Diffuse.tga",
+   "output_sha256": "584ff7dcbeea17a02ca20cf1c5e13350e3210b4dea79ca1a20fb061d3abf4e37",
+   "uasset": "Content/Imported/MaterialDatabase/Road_Lane_Shaders/MI_Grey01_CentreDash_ONLY_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/RoadMaterials/RoadMateralsInProgress/Road_Lane_Shaders.upk#MI_Grey01_CentreDash_WhiteLine_MAT",
+   "object": "MI_Grey01_CentreDash_WhiteLine_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Grey01_CentreDash_WhiteLine_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Road_Lane_Shaders/Road_Lane_Shaders/Texture2D/Grey01_Bare_Diffuse.tga",
+   "extracted_sha256": "584ff7dcbeea17a02ca20cf1c5e13350e3210b4dea79ca1a20fb061d3abf4e37",
+   "output_file": "Content/Extracted/MaterialDatabase/Road_Lane_Shaders/Road_Lane_Shaders/Texture2D/Grey01_Bare_Diffuse.tga",
+   "output_sha256": "584ff7dcbeea17a02ca20cf1c5e13350e3210b4dea79ca1a20fb061d3abf4e37",
+   "uasset": "Content/Imported/MaterialDatabase/Road_Lane_Shaders/MI_Grey01_CentreDash_WhiteLine_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/RoadMaterials/RoadMateralsInProgress/Road_Lane_Shaders.upk#MI_Grey01_CentreDash_YellowLine_FWDArrow_MAT",
+   "object": "MI_Grey01_CentreDash_YellowLine_FWDArrow_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Grey01_CentreDash_YellowLine_FWDArrow_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Road_Lane_Shaders/Road_Lane_Shaders/Texture2D/Grey01_Bare_Diffuse.tga",
+   "extracted_sha256": "584ff7dcbeea17a02ca20cf1c5e13350e3210b4dea79ca1a20fb061d3abf4e37",
+   "output_file": "Content/Extracted/MaterialDatabase/Road_Lane_Shaders/Road_Lane_Shaders/Texture2D/Grey01_Bare_Diffuse.tga",
+   "output_sha256": "584ff7dcbeea17a02ca20cf1c5e13350e3210b4dea79ca1a20fb061d3abf4e37",
+   "uasset": "Content/Imported/MaterialDatabase/Road_Lane_Shaders/MI_Grey01_CentreDash_YellowLine_FWDArrow_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/RoadMaterials/RoadMateralsInProgress/Road_Lane_Shaders.upk#MI_Grey01_CentreDash_YellowLine_MAT",
+   "object": "MI_Grey01_CentreDash_YellowLine_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Grey01_CentreDash_YellowLine_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Road_Lane_Shaders/Road_Lane_Shaders/Texture2D/Grey01_Bare_Diffuse.tga",
+   "extracted_sha256": "584ff7dcbeea17a02ca20cf1c5e13350e3210b4dea79ca1a20fb061d3abf4e37",
+   "output_file": "Content/Extracted/MaterialDatabase/Road_Lane_Shaders/Road_Lane_Shaders/Texture2D/Grey01_Bare_Diffuse.tga",
+   "output_sha256": "584ff7dcbeea17a02ca20cf1c5e13350e3210b4dea79ca1a20fb061d3abf4e37",
+   "uasset": "Content/Imported/MaterialDatabase/Road_Lane_Shaders/MI_Grey01_CentreDash_YellowLine_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/RoadMaterials/RoadMateralsInProgress/Road_Lane_Shaders.upk#MI_Grey01_CentreDash_YellowLine_ONLY_MAT",
+   "object": "MI_Grey01_CentreDash_YellowLine_ONLY_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Grey01_CentreDash_YellowLine_ONLY_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Road_Lane_Shaders/Road_Lane_Shaders/Texture2D/Grey01_Bare_Diffuse.tga",
+   "extracted_sha256": "584ff7dcbeea17a02ca20cf1c5e13350e3210b4dea79ca1a20fb061d3abf4e37",
+   "output_file": "Content/Extracted/MaterialDatabase/Road_Lane_Shaders/Road_Lane_Shaders/Texture2D/Grey01_Bare_Diffuse.tga",
+   "output_sha256": "584ff7dcbeea17a02ca20cf1c5e13350e3210b4dea79ca1a20fb061d3abf4e37",
+   "uasset": "Content/Imported/MaterialDatabase/Road_Lane_Shaders/MI_Grey01_CentreDash_YellowLine_ONLY_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/RoadMaterials/RoadMateralsInProgress/Road_Lane_Shaders.upk#MI_Grey01_WhiteLine_FWDArrow_MAT",
+   "object": "MI_Grey01_WhiteLine_FWDArrow_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Grey01_WhiteLine_FWDArrow_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Road_Lane_Shaders/Road_Lane_Shaders/Texture2D/Grey01_Bare_Diffuse.tga",
+   "extracted_sha256": "584ff7dcbeea17a02ca20cf1c5e13350e3210b4dea79ca1a20fb061d3abf4e37",
+   "output_file": "Content/Extracted/MaterialDatabase/Road_Lane_Shaders/Road_Lane_Shaders/Texture2D/Grey01_Bare_Diffuse.tga",
+   "output_sha256": "584ff7dcbeea17a02ca20cf1c5e13350e3210b4dea79ca1a20fb061d3abf4e37",
+   "uasset": "Content/Imported/MaterialDatabase/Road_Lane_Shaders/MI_Grey01_WhiteLine_FWDArrow_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/RoadMaterials/RoadMateralsInProgress/Road_Lane_Shaders.upk#MI_Grey01_WhiteLine_Left_MAT",
+   "object": "MI_Grey01_WhiteLine_Left_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Grey01_WhiteLine_Left_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Road_Lane_Shaders/Road_Lane_Shaders/Texture2D/Grey01_Bare_Diffuse.tga",
+   "extracted_sha256": "584ff7dcbeea17a02ca20cf1c5e13350e3210b4dea79ca1a20fb061d3abf4e37",
+   "output_file": "Content/Extracted/MaterialDatabase/Road_Lane_Shaders/Road_Lane_Shaders/Texture2D/Grey01_Bare_Diffuse.tga",
+   "output_sha256": "584ff7dcbeea17a02ca20cf1c5e13350e3210b4dea79ca1a20fb061d3abf4e37",
+   "uasset": "Content/Imported/MaterialDatabase/Road_Lane_Shaders/MI_Grey01_WhiteLine_Left_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/RoadMaterials/RoadMateralsInProgress/Road_Lane_Shaders.upk#MI_Grey01_WhiteLine_ONLY_MAT",
+   "object": "MI_Grey01_WhiteLine_ONLY_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Grey01_WhiteLine_ONLY_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Road_Lane_Shaders/Road_Lane_Shaders/Texture2D/Grey01_Bare_Diffuse.tga",
+   "extracted_sha256": "584ff7dcbeea17a02ca20cf1c5e13350e3210b4dea79ca1a20fb061d3abf4e37",
+   "output_file": "Content/Extracted/MaterialDatabase/Road_Lane_Shaders/Road_Lane_Shaders/Texture2D/Grey01_Bare_Diffuse.tga",
+   "output_sha256": "584ff7dcbeea17a02ca20cf1c5e13350e3210b4dea79ca1a20fb061d3abf4e37",
+   "uasset": "Content/Imported/MaterialDatabase/Road_Lane_Shaders/MI_Grey01_WhiteLine_ONLY_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/RoadMaterials/RoadMateralsInProgress/Road_Lane_Shaders.upk#MI_Grey01_YellowLine_Left_MAT",
+   "object": "MI_Grey01_YellowLine_Left_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Grey01_YellowLine_Left_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Road_Lane_Shaders/Road_Lane_Shaders/Texture2D/Grey01_Bare_Diffuse.tga",
+   "extracted_sha256": "584ff7dcbeea17a02ca20cf1c5e13350e3210b4dea79ca1a20fb061d3abf4e37",
+   "output_file": "Content/Extracted/MaterialDatabase/Road_Lane_Shaders/Road_Lane_Shaders/Texture2D/Grey01_Bare_Diffuse.tga",
+   "output_sha256": "584ff7dcbeea17a02ca20cf1c5e13350e3210b4dea79ca1a20fb061d3abf4e37",
+   "uasset": "Content/Imported/MaterialDatabase/Road_Lane_Shaders/MI_Grey01_YellowLine_Left_MAT.uasset"
+  }
+ ]
+}

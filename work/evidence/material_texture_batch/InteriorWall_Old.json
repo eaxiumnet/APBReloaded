@@ -1,0 +1,230 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "InteriorWall_Old",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/Walls/InteriorWall_Old.upk",
+ "source_sha256": "0f91c3b1523adb4947cfbe3141cc47b5cdcabbde554c996dcd020c0003d53301",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Walls/InteriorWall_Old.upk#FloorTile_OldBlue_Diff",
+   "object": "FloorTile_OldBlue_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/InteriorWall_Old/CSD_FloorTiles/Texture2D/FloorTile_OldBlue_Diff.tga",
+   "extracted_sha256": "59e360bb4bb1176be5c61be6cba67daefb553557312c46a5c5092b8998a039d7",
+   "output_file": "Content/Extracted/MaterialDatabase/InteriorWall_Old/CSD_FloorTiles/Texture2D/FloorTile_OldBlue_Diff.tga",
+   "output_sha256": "59e360bb4bb1176be5c61be6cba67daefb553557312c46a5c5092b8998a039d7",
+   "uasset": "Content/Imported/MaterialDatabase/InteriorWall_Old/FloorTile_OldBlue_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Walls/InteriorWall_Old.upk#InteriorWall_CreamTileable_Diff",
+   "object": "InteriorWall_CreamTileable_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/InteriorWall_Old/InteriorWall_Old/Texture2D/InteriorWall_CreamTileable_Diff.tga",
+   "extracted_sha256": "3caeeade0146d541c3634b89f062a801573f4a88193ce783168afb556cfa5cd1",
+   "output_file": "Content/Extracted/MaterialDatabase/InteriorWall_Old/InteriorWall_Old/Texture2D/InteriorWall_CreamTileable_Diff.tga",
+   "output_sha256": "3caeeade0146d541c3634b89f062a801573f4a88193ce783168afb556cfa5cd1",
+   "uasset": "Content/Imported/MaterialDatabase/InteriorWall_Old/InteriorWall_CreamTileable_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Walls/InteriorWall_Old.upk#InteriorWall_Old_Diff",
+   "object": "InteriorWall_Old_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/InteriorWall_Old/InteriorWall_Old/Texture2D/InteriorWall_Old_Diff.tga",
+   "extracted_sha256": "bcd5ff5b9ba9a97f3dccf289b750038c9c0551853890767d4d3e9f50dc55bbf0",
+   "output_file": "Content/Extracted/MaterialDatabase/InteriorWall_Old/InteriorWall_Old/Texture2D/InteriorWall_Old_Diff.tga",
+   "output_sha256": "bcd5ff5b9ba9a97f3dccf289b750038c9c0551853890767d4d3e9f50dc55bbf0",
+   "uasset": "Content/Imported/MaterialDatabase/InteriorWall_Old/InteriorWall_Old_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Walls/InteriorWall_Old.upk#KitchenWallTile_Diff",
+   "object": "KitchenWallTile_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/InteriorWall_Old/InteriorWall_Old/Texture2D/KitchenWallTile_Diff.tga",
+   "extracted_sha256": "911d55bec02ea641db55b56ffe11bdd8c6e2d24f22e1bae5aaee05c3fd30665e",
+   "output_file": "Content/Extracted/MaterialDatabase/InteriorWall_Old/InteriorWall_Old/Texture2D/KitchenWallTile_Diff.tga",
+   "output_sha256": "911d55bec02ea641db55b56ffe11bdd8c6e2d24f22e1bae5aaee05c3fd30665e",
+   "uasset": "Content/Imported/MaterialDatabase/InteriorWall_Old/KitchenWallTile_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Walls/InteriorWall_Old.upk#MI_FloorTile_Old_Mat",
+   "object": "MI_FloorTile_Old_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FloorTile_Old_Mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/InteriorWall_Old/CSD_FloorTiles/Texture2D/FloorTile_OldBlue_Diff.tga",
+   "extracted_sha256": "59e360bb4bb1176be5c61be6cba67daefb553557312c46a5c5092b8998a039d7",
+   "output_file": "Content/Extracted/MaterialDatabase/InteriorWall_Old/CSD_FloorTiles/Texture2D/FloorTile_OldBlue_Diff.tga",
+   "output_sha256": "59e360bb4bb1176be5c61be6cba67daefb553557312c46a5c5092b8998a039d7",
+   "uasset": "Content/Imported/MaterialDatabase/InteriorWall_Old/MI_FloorTile_Old_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Walls/InteriorWall_Old.upk#MI_InteriorWall_CreamTileable",
+   "object": "MI_InteriorWall_CreamTileable",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "InteriorWall_CreamTileable",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/InteriorWall_Old/InteriorWall_Old/Texture2D/InteriorWall_CreamTileable_Diff.tga",
+   "extracted_sha256": "3caeeade0146d541c3634b89f062a801573f4a88193ce783168afb556cfa5cd1",
+   "output_file": "Content/Extracted/MaterialDatabase/InteriorWall_Old/InteriorWall_Old/Texture2D/InteriorWall_CreamTileable_Diff.tga",
+   "output_sha256": "3caeeade0146d541c3634b89f062a801573f4a88193ce783168afb556cfa5cd1",
+   "uasset": "Content/Imported/MaterialDatabase/InteriorWall_Old/MI_InteriorWall_CreamTileable.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Walls/InteriorWall_Old.upk#MI_InteriorWall_Old_Mat",
+   "object": "MI_InteriorWall_Old_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "InteriorWall_Old_Mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/InteriorWall_Old/InteriorWall_Old/Texture2D/InteriorWall_Old_Diff.tga",
+   "extracted_sha256": "bcd5ff5b9ba9a97f3dccf289b750038c9c0551853890767d4d3e9f50dc55bbf0",
+   "output_file": "Content/Extracted/MaterialDatabase/InteriorWall_Old/InteriorWall_Old/Texture2D/InteriorWall_Old_Diff.tga",
+   "output_sha256": "bcd5ff5b9ba9a97f3dccf289b750038c9c0551853890767d4d3e9f50dc55bbf0",
+   "uasset": "Content/Imported/MaterialDatabase/InteriorWall_Old/MI_InteriorWall_Old_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Walls/InteriorWall_Old.upk#MI_KitchenWallTiles",
+   "object": "MI_KitchenWallTiles",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "KitchenWallTiles",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/InteriorWall_Old/InteriorWall_Old/Texture2D/KitchenWallTile_Diff.tga",
+   "extracted_sha256": "911d55bec02ea641db55b56ffe11bdd8c6e2d24f22e1bae5aaee05c3fd30665e",
+   "output_file": "Content/Extracted/MaterialDatabase/InteriorWall_Old/InteriorWall_Old/Texture2D/KitchenWallTile_Diff.tga",
+   "output_sha256": "911d55bec02ea641db55b56ffe11bdd8c6e2d24f22e1bae5aaee05c3fd30665e",
+   "uasset": "Content/Imported/MaterialDatabase/InteriorWall_Old/MI_KitchenWallTiles.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Walls/InteriorWall_Old.upk#MI_PaintedCeiling_Mat",
+   "object": "MI_PaintedCeiling_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PaintedCeiling_Mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/InteriorWall_Old/CSD_Ceiling/Texture2D/PaintedCeiling_Diff.tga",
+   "extracted_sha256": "11c42617831d99de602e738e5ae08eaa7dd722d0b1a87030d6cd506946adcd47",
+   "output_file": "Content/Extracted/MaterialDatabase/InteriorWall_Old/CSD_Ceiling/Texture2D/PaintedCeiling_Diff.tga",
+   "output_sha256": "11c42617831d99de602e738e5ae08eaa7dd722d0b1a87030d6cd506946adcd47",
+   "uasset": "Content/Imported/MaterialDatabase/InteriorWall_Old/MI_PaintedCeiling_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Walls/InteriorWall_Old.upk#MI_Wood_01",
+   "object": "MI_Wood_01",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Wood_01",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/InteriorWall_Old/InteriorWall_Old/Texture2D/Wood_01_DIFF_NRM.tga",
+   "extracted_sha256": "121c9183962b8a1fac75fabc03074289064ea333456172879fa7e3d5d4ab3a1c",
+   "output_file": "Content/Extracted/MaterialDatabase/InteriorWall_Old/InteriorWall_Old/Texture2D/Wood_01_DIFF_NRM.tga",
+   "output_sha256": "121c9183962b8a1fac75fabc03074289064ea333456172879fa7e3d5d4ab3a1c",
+   "uasset": "Content/Imported/MaterialDatabase/InteriorWall_Old/MI_Wood_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Walls/InteriorWall_Old.upk#MI_Wood_Panel",
+   "object": "MI_Wood_Panel",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Wood_Panel",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/InteriorWall_Old/InteriorWall_Old/Texture2D/Wood_Panel_01_DIFF.tga",
+   "extracted_sha256": "25338a9e75bdd1486a288ff3edbff6fb506a1e6ef6a2af993e3111e342586d0a",
+   "output_file": "Content/Extracted/MaterialDatabase/InteriorWall_Old/InteriorWall_Old/Texture2D/Wood_Panel_01_DIFF.tga",
+   "output_sha256": "25338a9e75bdd1486a288ff3edbff6fb506a1e6ef6a2af993e3111e342586d0a",
+   "uasset": "Content/Imported/MaterialDatabase/InteriorWall_Old/MI_Wood_Panel.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Walls/InteriorWall_Old.upk#MI_WoodPanel_Wallpaper_01",
+   "object": "MI_WoodPanel_Wallpaper_01",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WoodPanel_Wallpaper_01",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/InteriorWall_Old/InteriorWall_Old/Texture2D/WoodPanel_Wallpaper_NRM.tga",
+   "extracted_sha256": "f12cf73e9ec52755fe71dd79de97b9bce8899a1ac212a5c79fe2fcdd69c7b03f",
+   "output_file": "Content/Extracted/MaterialDatabase/InteriorWall_Old/InteriorWall_Old/Texture2D/WoodPanel_Wallpaper_NRM.tga",
+   "output_sha256": "f12cf73e9ec52755fe71dd79de97b9bce8899a1ac212a5c79fe2fcdd69c7b03f",
+   "uasset": "Content/Imported/MaterialDatabase/InteriorWall_Old/MI_WoodPanel_Wallpaper_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Walls/InteriorWall_Old.upk#PaintedCeiling_Diff",
+   "object": "PaintedCeiling_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/InteriorWall_Old/CSD_Ceiling/Texture2D/PaintedCeiling_Diff.tga",
+   "extracted_sha256": "11c42617831d99de602e738e5ae08eaa7dd722d0b1a87030d6cd506946adcd47",
+   "output_file": "Content/Extracted/MaterialDatabase/InteriorWall_Old/CSD_Ceiling/Texture2D/PaintedCeiling_Diff.tga",
+   "output_sha256": "11c42617831d99de602e738e5ae08eaa7dd722d0b1a87030d6cd506946adcd47",
+   "uasset": "Content/Imported/MaterialDatabase/InteriorWall_Old/PaintedCeiling_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Walls/InteriorWall_Old.upk#Wood_01_DIFF_NRM",
+   "object": "Wood_01_DIFF_NRM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/InteriorWall_Old/InteriorWall_Old/Texture2D/Wood_01_DIFF_NRM.tga",
+   "extracted_sha256": "121c9183962b8a1fac75fabc03074289064ea333456172879fa7e3d5d4ab3a1c",
+   "output_file": "Content/Extracted/MaterialDatabase/InteriorWall_Old/InteriorWall_Old/Texture2D/Wood_01_DIFF_NRM.tga",
+   "output_sha256": "121c9183962b8a1fac75fabc03074289064ea333456172879fa7e3d5d4ab3a1c",
+   "uasset": "Content/Imported/MaterialDatabase/InteriorWall_Old/Wood_01_DIFF_NRM.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Walls/InteriorWall_Old.upk#Wood_Panel_01_DIFF",
+   "object": "Wood_Panel_01_DIFF",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/InteriorWall_Old/InteriorWall_Old/Texture2D/Wood_Panel_01_DIFF.tga",
+   "extracted_sha256": "25338a9e75bdd1486a288ff3edbff6fb506a1e6ef6a2af993e3111e342586d0a",
+   "output_file": "Content/Extracted/MaterialDatabase/InteriorWall_Old/InteriorWall_Old/Texture2D/Wood_Panel_01_DIFF.tga",
+   "output_sha256": "25338a9e75bdd1486a288ff3edbff6fb506a1e6ef6a2af993e3111e342586d0a",
+   "uasset": "Content/Imported/MaterialDatabase/InteriorWall_Old/Wood_Panel_01_DIFF.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Walls/InteriorWall_Old.upk#Wood_Panel_01_Test_NRM",
+   "object": "Wood_Panel_01_Test_NRM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/InteriorWall_Old/InteriorWall_Old/Texture2D/Wood_Panel_01_Test_NRM.tga",
+   "extracted_sha256": "9ced69b787bc56547bea9d9045b7d555017dac87a3316c7afd5612616180ed86",
+   "output_file": "Content/Extracted/MaterialDatabase/InteriorWall_Old/InteriorWall_Old/Texture2D/Wood_Panel_01_Test_NRM.tga",
+   "output_sha256": "9ced69b787bc56547bea9d9045b7d555017dac87a3316c7afd5612616180ed86",
+   "uasset": "Content/Imported/MaterialDatabase/InteriorWall_Old/Wood_Panel_01_Test_NRM.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Walls/InteriorWall_Old.upk#WoodPanel_Wallpaper_NRM",
+   "object": "WoodPanel_Wallpaper_NRM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/InteriorWall_Old/InteriorWall_Old/Texture2D/WoodPanel_Wallpaper_NRM.tga",
+   "extracted_sha256": "f12cf73e9ec52755fe71dd79de97b9bce8899a1ac212a5c79fe2fcdd69c7b03f",
+   "output_file": "Content/Extracted/MaterialDatabase/InteriorWall_Old/InteriorWall_Old/Texture2D/WoodPanel_Wallpaper_NRM.tga",
+   "output_sha256": "f12cf73e9ec52755fe71dd79de97b9bce8899a1ac212a5c79fe2fcdd69c7b03f",
+   "uasset": "Content/Imported/MaterialDatabase/InteriorWall_Old/WoodPanel_Wallpaper_NRM.uasset"
+  }
+ ]
+}

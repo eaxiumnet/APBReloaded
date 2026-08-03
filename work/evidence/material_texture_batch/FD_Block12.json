@@ -1,0 +1,34 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FD_Block12",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block12.upk",
+ "source_sha256": "f5778ef26505169c3c82e8c09332949d0a4e3a110a006d4cfd40ab879186b9cb",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block12.upk#MI_SignPanels",
+   "object": "MI_SignPanels",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "SignPanels",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Block12/FD_Block12/Texture2D/SignPanels.tga",
+   "extracted_sha256": "4e9e4d9451b1f1866bdd4d0249b9cd22152aff414789a3a4983ac8d0f1d44a77",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Block12/FD_Block12/Texture2D/SignPanels.tga",
+   "output_sha256": "4e9e4d9451b1f1866bdd4d0249b9cd22152aff414789a3a4983ac8d0f1d44a77",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Block12/MI_SignPanels.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block12.upk#SignPanels",
+   "object": "SignPanels",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Block12/FD_Block12/Texture2D/SignPanels.tga",
+   "extracted_sha256": "4e9e4d9451b1f1866bdd4d0249b9cd22152aff414789a3a4983ac8d0f1d44a77",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Block12/FD_Block12/Texture2D/SignPanels.tga",
+   "output_sha256": "4e9e4d9451b1f1866bdd4d0249b9cd22152aff414789a3a4983ac8d0f1d44a77",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Block12/SignPanels.uasset"
+  }
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FireEscape_Rusty",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/FeatureMaterials/FireEscape_Rusty.upk",
+ "source_sha256": "d2d872586d6e6a0856e7584fc94b6ba4c8267b7590038df0db38920596aeec9a",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/FireEscape_Rusty.upk#FireEscape_Rusty_DiffSpec",
+   "object": "FireEscape_Rusty_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FireEscape_Rusty/FireEscape_Rusty/Texture2D/FireEscape_Rusty_DiffSpec.tga",
+   "extracted_sha256": "ad543c7cc08a1dea67af8e0a1902254e8640573ffb77c1873f873a2d214f484a",
+   "output_file": "Content/Extracted/MaterialDatabase/FireEscape_Rusty/FireEscape_Rusty/Texture2D/FireEscape_Rusty_DiffSpec.tga",
+   "output_sha256": "ad543c7cc08a1dea67af8e0a1902254e8640573ffb77c1873f873a2d214f484a",
+   "uasset": "Content/Imported/MaterialDatabase/FireEscape_Rusty/FireEscape_Rusty_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/FireEscape_Rusty.upk#FireEscape_Rusty_NormAlph",
+   "object": "FireEscape_Rusty_NormAlph",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FireEscape_Rusty/FireEscape_Rusty/Texture2D/FireEscape_Rusty_NormAlph.tga",
+   "extracted_sha256": "d51a36ec220f84ec0f4c5ffe238e236bf0a3bf559434f3f4e60c6a634e707597",
+   "output_file": "Content/Extracted/MaterialDatabase/FireEscape_Rusty/FireEscape_Rusty/Texture2D/FireEscape_Rusty_NormAlph.tga",
+   "output_sha256": "d51a36ec220f84ec0f4c5ffe238e236bf0a3bf559434f3f4e60c6a634e707597",
+   "uasset": "Content/Imported/MaterialDatabase/FireEscape_Rusty/FireEscape_Rusty_NormAlph.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/FireEscape_Rusty.upk#MI_fireescape_rusty",
+   "object": "MI_fireescape_rusty",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "fireescape_rusty",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FireEscape_Rusty/FireEscape_Rusty/Texture2D/FireEscape_Rusty_DiffSpec.tga",
+   "extracted_sha256": "ad543c7cc08a1dea67af8e0a1902254e8640573ffb77c1873f873a2d214f484a",
+   "output_file": "Content/Extracted/MaterialDatabase/FireEscape_Rusty/FireEscape_Rusty/Texture2D/FireEscape_Rusty_DiffSpec.tga",
+   "output_sha256": "ad543c7cc08a1dea67af8e0a1902254e8640573ffb77c1873f873a2d214f484a",
+   "uasset": "Content/Imported/MaterialDatabase/FireEscape_Rusty/MI_fireescape_rusty.uasset"
+  }
+ ]
+}

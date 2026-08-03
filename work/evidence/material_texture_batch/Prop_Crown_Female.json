@@ -1,0 +1,167 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Prop_Crown_Female",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Crown_Female.upk",
+ "source_sha256": "24458d753d47615d29e14a8dc0f9514fc003ae0fe9cf0f1c9b9a0d3e471d7818",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Crown_Female.upk#Diffuse",
+   "object": "Diffuse",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Prop_Crown_Female/Prop_Crown_Female/Texture2D/Diffuse.tga",
+   "extracted_sha256": "e61e023fc1db0ce8144025fe440eb55daee65b62adad38f98c473d21c3c13d6a",
+   "output_file": "Content/Extracted/MaterialDatabase/Prop_Crown_Female/Prop_Crown_Female/Texture2D/Diffuse.tga",
+   "output_sha256": "e61e023fc1db0ce8144025fe440eb55daee65b62adad38f98c473d21c3c13d6a",
+   "uasset": "Content/Imported/MaterialDatabase/Prop_Crown_Female/Diffuse.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Crown_Female.upk#F_Hair_Eyelashes_Opac",
+   "object": "F_Hair_Eyelashes_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Prop_Crown_Female/F_Hair/Texture2D/F_Hair_Eyelashes_Opac.tga",
+   "extracted_sha256": "04a5790c59643d52826487d6dc0b9506563ef01f4a4b4c394f601a6439982bc5",
+   "output_file": "Content/Extracted/MaterialDatabase/Prop_Crown_Female/F_Hair/Texture2D/F_Hair_Eyelashes_Opac.tga",
+   "output_sha256": "04a5790c59643d52826487d6dc0b9506563ef01f4a4b4c394f601a6439982bc5",
+   "uasset": "Content/Imported/MaterialDatabase/Prop_Crown_Female/F_Hair_Eyelashes_Opac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Crown_Female.upk#F_Hair_Fauxhawk_Functional_Cropped_Xtra_Norm",
+   "object": "F_Hair_Fauxhawk_Functional_Cropped_Xtra_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Prop_Crown_Female/F_Hair_Fauxhawk_Functional_Cropped/Texture2D/F_Hair_Fauxhawk_Functional_Cropped_Xtra_Norm.tga",
+   "extracted_sha256": "6faa197c574f86f88f359c89ef9a7ac2bf85453ce77fcb9df633e80c57826446",
+   "output_file": "Content/Extracted/MaterialDatabase/Prop_Crown_Female/F_Hair_Fauxhawk_Functional_Cropped/Texture2D/F_Hair_Fauxhawk_Functional_Cropped_Xtra_Norm.tga",
+   "output_sha256": "6faa197c574f86f88f359c89ef9a7ac2bf85453ce77fcb9df633e80c57826446",
+   "uasset": "Content/Imported/MaterialDatabase/Prop_Crown_Female/F_Hair_Fauxhawk_Functional_Cropped_Xtra_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Crown_Female.upk#MI_BodyMaterial",
+   "object": "MI_BodyMaterial",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "BodyMaterial",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Prop_Crown_Female/Prop_Crown_Female/Texture2D/Diffuse.tga",
+   "extracted_sha256": "e61e023fc1db0ce8144025fe440eb55daee65b62adad38f98c473d21c3c13d6a",
+   "output_file": "Content/Extracted/MaterialDatabase/Prop_Crown_Female/Prop_Crown_Female/Texture2D/Diffuse.tga",
+   "output_sha256": "e61e023fc1db0ce8144025fe440eb55daee65b62adad38f98c473d21c3c13d6a",
+   "uasset": "Content/Imported/MaterialDatabase/Prop_Crown_Female/MI_BodyMaterial.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Crown_Female.upk#MI_F_Hair_Eyelashes_Mat",
+   "object": "MI_F_Hair_Eyelashes_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "F_Hair_Eyelashes_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Prop_Crown_Female/F_Hair/Texture2D/F_Hair_Eyelashes_Opac.tga",
+   "extracted_sha256": "04a5790c59643d52826487d6dc0b9506563ef01f4a4b4c394f601a6439982bc5",
+   "output_file": "Content/Extracted/MaterialDatabase/Prop_Crown_Female/F_Hair/Texture2D/F_Hair_Eyelashes_Opac.tga",
+   "output_sha256": "04a5790c59643d52826487d6dc0b9506563ef01f4a4b4c394f601a6439982bc5",
+   "uasset": "Content/Imported/MaterialDatabase/Prop_Crown_Female/MI_F_Hair_Eyelashes_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Crown_Female.upk#MI_HairMaterial",
+   "object": "MI_HairMaterial",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "HairMaterial",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Prop_Crown_Female/F_Hair_Fauxhawk_Functional_Cropped/Texture2D/F_Hair_Fauxhawk_Functional_Cropped_Xtra_Norm.tga",
+   "extracted_sha256": "6faa197c574f86f88f359c89ef9a7ac2bf85453ce77fcb9df633e80c57826446",
+   "output_file": "Content/Extracted/MaterialDatabase/Prop_Crown_Female/F_Hair_Fauxhawk_Functional_Cropped/Texture2D/F_Hair_Fauxhawk_Functional_Cropped_Xtra_Norm.tga",
+   "output_sha256": "6faa197c574f86f88f359c89ef9a7ac2bf85453ce77fcb9df633e80c57826446",
+   "uasset": "Content/Imported/MaterialDatabase/Prop_Crown_Female/MI_HairMaterial.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Crown_Female.upk#MI_Prop_Crown_Female_Gold_MAT_INST",
+   "object": "MI_Prop_Crown_Female_Gold_MAT_INST",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Prop_Crown_Female_Gold_MAT_INST",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Specular"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Prop_Crown_Female/WeaponSkins/Texture2D/Nothing.tga",
+   "extracted_sha256": "ea2926063b242b98129a2a6ec32b1ea655a98544bb777581e5ee0b48b64a9ee0",
+   "output_file": "Content/Extracted/MaterialDatabase/Prop_Crown_Female/WeaponSkins/Texture2D/Nothing.tga",
+   "output_sha256": "ea2926063b242b98129a2a6ec32b1ea655a98544bb777581e5ee0b48b64a9ee0",
+   "uasset": "Content/Imported/MaterialDatabase/Prop_Crown_Female/MI_Prop_Crown_Female_Gold_MAT_INST.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Crown_Female.upk#MI_Weapon_SuperShader_MASTER_MAT",
+   "object": "MI_Weapon_SuperShader_MASTER_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Weapon_SuperShader_MASTER_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Prop_Crown_Female/Weapon_TommyGun/Texture2D/Weapon_TommyGun_Diff.tga",
+   "extracted_sha256": "ffa57fe33f1a7a43dd963603869bbf5330bd0f37c5f2fa3fc3aca488aad13cf5",
+   "output_file": "Content/Extracted/MaterialDatabase/Prop_Crown_Female/Weapon_TommyGun/Texture2D/Weapon_TommyGun_Diff.tga",
+   "output_sha256": "ffa57fe33f1a7a43dd963603869bbf5330bd0f37c5f2fa3fc3aca488aad13cf5",
+   "uasset": "Content/Imported/MaterialDatabase/Prop_Crown_Female/MI_Weapon_SuperShader_MASTER_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Crown_Female.upk#Normal",
+   "object": "Normal",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Prop_Crown_Female/Prop_Crown_Female/Texture2D/Normal.tga",
+   "extracted_sha256": "b866d4b61dd40ae1dc304a4b1f2f7537dda57a793f3f12ed1f4bfa96fa47afde",
+   "output_file": "Content/Extracted/MaterialDatabase/Prop_Crown_Female/Prop_Crown_Female/Texture2D/Normal.tga",
+   "output_sha256": "b866d4b61dd40ae1dc304a4b1f2f7537dda57a793f3f12ed1f4bfa96fa47afde",
+   "uasset": "Content/Imported/MaterialDatabase/Prop_Crown_Female/Normal.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Crown_Female.upk#Nothing",
+   "object": "Nothing",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Prop_Crown_Female/WeaponSkins/Texture2D/Nothing.tga",
+   "extracted_sha256": "ea2926063b242b98129a2a6ec32b1ea655a98544bb777581e5ee0b48b64a9ee0",
+   "output_file": "Content/Extracted/MaterialDatabase/Prop_Crown_Female/WeaponSkins/Texture2D/Nothing.tga",
+   "output_sha256": "ea2926063b242b98129a2a6ec32b1ea655a98544bb777581e5ee0b48b64a9ee0",
+   "uasset": "Content/Imported/MaterialDatabase/Prop_Crown_Female/Nothing.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Crown_Female.upk#Weapon_TommyGun_Diff",
+   "object": "Weapon_TommyGun_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Prop_Crown_Female/Weapon_TommyGun/Texture2D/Weapon_TommyGun_Diff.tga",
+   "extracted_sha256": "ffa57fe33f1a7a43dd963603869bbf5330bd0f37c5f2fa3fc3aca488aad13cf5",
+   "output_file": "Content/Extracted/MaterialDatabase/Prop_Crown_Female/Weapon_TommyGun/Texture2D/Weapon_TommyGun_Diff.tga",
+   "output_sha256": "ffa57fe33f1a7a43dd963603869bbf5330bd0f37c5f2fa3fc3aca488aad13cf5",
+   "uasset": "Content/Imported/MaterialDatabase/Prop_Crown_Female/Weapon_TommyGun_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Crown_Female.upk#Weapon_TommyGun_Norm",
+   "object": "Weapon_TommyGun_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Prop_Crown_Female/Weapon_TommyGun/Texture2D/Weapon_TommyGun_Norm.tga",
+   "extracted_sha256": "26a23b21db0d58fdb918be653a10db99b596f348e1078fa351c08fdaa1baf172",
+   "output_file": "Content/Extracted/MaterialDatabase/Prop_Crown_Female/Weapon_TommyGun/Texture2D/Weapon_TommyGun_Norm.tga",
+   "output_sha256": "26a23b21db0d58fdb918be653a10db99b596f348e1078fa351c08fdaa1baf172",
+   "uasset": "Content/Imported/MaterialDatabase/Prop_Crown_Female/Weapon_TommyGun_Norm.uasset"
+  }
+ ]
+}

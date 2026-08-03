@@ -1,0 +1,34 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Terrain_Concrete",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/ToBeRemoved/Terrain_Concrete.upk",
+ "source_sha256": "707256d97707ccdd6168628e276408e5d56a375d1565528ae0068dce65d53113",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/ToBeRemoved/Terrain_Concrete.upk#Concrete_Norm",
+   "object": "Concrete_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain_Concrete/Concrete_Generic/Texture2D/Concrete_Norm.tga",
+   "extracted_sha256": "bff8be347fa3f2408e6764d989b334745a1c7951d504ac30763fe7df3c643b5d",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain_Concrete/Concrete_Generic/Texture2D/Concrete_Norm.tga",
+   "output_sha256": "bff8be347fa3f2408e6764d989b334745a1c7951d504ac30763fe7df3c643b5d",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain_Concrete/Concrete_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/ToBeRemoved/Terrain_Concrete.upk#MI_Concrete_Terrain",
+   "object": "MI_Concrete_Terrain",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Concrete_Terrain",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain_Concrete/Concrete_Generic/Texture2D/Concrete_Norm.tga",
+   "extracted_sha256": "bff8be347fa3f2408e6764d989b334745a1c7951d504ac30763fe7df3c643b5d",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain_Concrete/Concrete_Generic/Texture2D/Concrete_Norm.tga",
+   "output_sha256": "bff8be347fa3f2408e6764d989b334745a1c7951d504ac30763fe7df3c643b5d",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain_Concrete/MI_Concrete_Terrain.uasset"
+  }
+ ]
+}

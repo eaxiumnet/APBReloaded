@@ -1,0 +1,100 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "CSD_Wood",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/Wood/CSD_Wood.upk",
+ "source_sha256": "09f4760aac9167718802872f52efdaac7503c002c7b768559d2febdd6b746a2e",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Wood/CSD_Wood.upk#BurntWood_Diff",
+   "object": "BurntWood_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Wood/CSD_Wood/Texture2D/BurntWood_Diff.tga",
+   "extracted_sha256": "90bbb960a1a68b39e45951c0c5b3284bfbe1e8f945d055945fc8fd7f808df366",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Wood/CSD_Wood/Texture2D/BurntWood_Diff.tga",
+   "output_sha256": "90bbb960a1a68b39e45951c0c5b3284bfbe1e8f945d055945fc8fd7f808df366",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Wood/BurntWood_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Wood/CSD_Wood.upk#MI_BurnedWood",
+   "object": "MI_BurnedWood",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "BurnedWood",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Wood/CSD_Wood/Texture2D/BurntWood_Diff.tga",
+   "extracted_sha256": "90bbb960a1a68b39e45951c0c5b3284bfbe1e8f945d055945fc8fd7f808df366",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Wood/CSD_Wood/Texture2D/BurntWood_Diff.tga",
+   "output_sha256": "90bbb960a1a68b39e45951c0c5b3284bfbe1e8f945d055945fc8fd7f808df366",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Wood/MI_BurnedWood.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Wood/CSD_Wood.upk#MI_peir",
+   "object": "MI_peir",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "peir",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Wood/CSD_Wood/Texture2D/Peir_Planks_DIFF.tga",
+   "extracted_sha256": "9226e213139d4b9f58fb81348cf164b880c1f638f5cd9a43056f999b0a61f68e",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Wood/CSD_Wood/Texture2D/Peir_Planks_DIFF.tga",
+   "output_sha256": "9226e213139d4b9f58fb81348cf164b880c1f638f5cd9a43056f999b0a61f68e",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Wood/MI_peir.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Wood/CSD_Wood.upk#MI_Wood_Detail_01",
+   "object": "MI_Wood_Detail_01",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Wood_Detail_01",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Wood/InteriorWall_Old/Texture2D/Wood_01_DIFF_NRM.tga",
+   "extracted_sha256": "121c9183962b8a1fac75fabc03074289064ea333456172879fa7e3d5d4ab3a1c",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Wood/InteriorWall_Old/Texture2D/Wood_01_DIFF_NRM.tga",
+   "output_sha256": "121c9183962b8a1fac75fabc03074289064ea333456172879fa7e3d5d4ab3a1c",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Wood/MI_Wood_Detail_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Wood/CSD_Wood.upk#Peir_Planks_DIFF",
+   "object": "Peir_Planks_DIFF",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Wood/CSD_Wood/Texture2D/Peir_Planks_DIFF.tga",
+   "extracted_sha256": "9226e213139d4b9f58fb81348cf164b880c1f638f5cd9a43056f999b0a61f68e",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Wood/CSD_Wood/Texture2D/Peir_Planks_DIFF.tga",
+   "output_sha256": "9226e213139d4b9f58fb81348cf164b880c1f638f5cd9a43056f999b0a61f68e",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Wood/Peir_Planks_DIFF.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Wood/CSD_Wood.upk#Peir_Planks_NRM",
+   "object": "Peir_Planks_NRM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Wood/CSD_Wood/Texture2D/Peir_Planks_NRM.tga",
+   "extracted_sha256": "5847f132cd7be0cbf8e837b1aa50874b7e65faf4909708928346777d7be12155",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Wood/CSD_Wood/Texture2D/Peir_Planks_NRM.tga",
+   "output_sha256": "5847f132cd7be0cbf8e837b1aa50874b7e65faf4909708928346777d7be12155",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Wood/Peir_Planks_NRM.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Wood/CSD_Wood.upk#Wood_01_DIFF_NRM",
+   "object": "Wood_01_DIFF_NRM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Wood/InteriorWall_Old/Texture2D/Wood_01_DIFF_NRM.tga",
+   "extracted_sha256": "121c9183962b8a1fac75fabc03074289064ea333456172879fa7e3d5d4ab3a1c",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Wood/InteriorWall_Old/Texture2D/Wood_01_DIFF_NRM.tga",
+   "output_sha256": "121c9183962b8a1fac75fabc03074289064ea333456172879fa7e3d5d4ab3a1c",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Wood/Wood_01_DIFF_NRM.uasset"
+  }
+ ]
+}

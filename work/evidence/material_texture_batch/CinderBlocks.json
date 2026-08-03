@@ -1,0 +1,182 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "CinderBlocks",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/Brick/Large/CinderBlocks.upk",
+ "source_sha256": "128f1de9bfc8aad5d93f7aa375e3c5e744f9c81ced38de5ed47aa24f00f951ce",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Large/CinderBlocks.upk#CinderBlocks_DiffSpec",
+   "object": "CinderBlocks_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CinderBlocks/CinderBlocks/Texture2D/CinderBlocks_DiffSpec.tga",
+   "extracted_sha256": "653f567885d3ff3c7b0378abe0cc51a6adcd2e8649fe2c7bb195d9656dd9bfdd",
+   "output_file": "Content/Extracted/MaterialDatabase/CinderBlocks/CinderBlocks/Texture2D/CinderBlocks_DiffSpec.tga",
+   "output_sha256": "653f567885d3ff3c7b0378abe0cc51a6adcd2e8649fe2c7bb195d9656dd9bfdd",
+   "uasset": "Content/Imported/MaterialDatabase/CinderBlocks/CinderBlocks_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Large/CinderBlocks.upk#CinderBlocks_NormClrmask",
+   "object": "CinderBlocks_NormClrmask",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CinderBlocks/CinderBlocks/Texture2D/CinderBlocks_NormClrmask.tga",
+   "extracted_sha256": "e0aeac65afd5a95c664302cdeb230da303b1382253479cac065c3d1e17a415fa",
+   "output_file": "Content/Extracted/MaterialDatabase/CinderBlocks/CinderBlocks/Texture2D/CinderBlocks_NormClrmask.tga",
+   "output_sha256": "e0aeac65afd5a95c664302cdeb230da303b1382253479cac065c3d1e17a415fa",
+   "uasset": "Content/Imported/MaterialDatabase/CinderBlocks/CinderBlocks_NormClrmask.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Large/CinderBlocks.upk#MI_CinderBlocks_PARENT",
+   "object": "MI_CinderBlocks_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CinderBlocks_PARENT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CinderBlocks/CinderBlocks/Texture2D/CinderBlocks_DiffSpec.tga",
+   "extracted_sha256": "653f567885d3ff3c7b0378abe0cc51a6adcd2e8649fe2c7bb195d9656dd9bfdd",
+   "output_file": "Content/Extracted/MaterialDatabase/CinderBlocks/CinderBlocks/Texture2D/CinderBlocks_DiffSpec.tga",
+   "output_sha256": "653f567885d3ff3c7b0378abe0cc51a6adcd2e8649fe2c7bb195d9656dd9bfdd",
+   "uasset": "Content/Imported/MaterialDatabase/CinderBlocks/MI_CinderBlocks_PARENT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Large/CinderBlocks.upk#MI_CinderBlocks_Purple",
+   "object": "MI_CinderBlocks_Purple",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CinderBlocks_Purple",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CinderBlocks/CinderBlocks/Texture2D/CinderBlocks_DiffSpec.tga",
+   "extracted_sha256": "653f567885d3ff3c7b0378abe0cc51a6adcd2e8649fe2c7bb195d9656dd9bfdd",
+   "output_file": "Content/Extracted/MaterialDatabase/CinderBlocks/CinderBlocks/Texture2D/CinderBlocks_DiffSpec.tga",
+   "output_sha256": "653f567885d3ff3c7b0378abe0cc51a6adcd2e8649fe2c7bb195d9656dd9bfdd",
+   "uasset": "Content/Imported/MaterialDatabase/CinderBlocks/MI_CinderBlocks_Purple.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Large/CinderBlocks.upk#MI_CinderBlocks_Purple_Graffiti",
+   "object": "MI_CinderBlocks_Purple_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CinderBlocks_Purple_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CinderBlocks/CinderBlocks/Texture2D/CinderBlocks_DiffSpec.tga",
+   "extracted_sha256": "653f567885d3ff3c7b0378abe0cc51a6adcd2e8649fe2c7bb195d9656dd9bfdd",
+   "output_file": "Content/Extracted/MaterialDatabase/CinderBlocks/CinderBlocks/Texture2D/CinderBlocks_DiffSpec.tga",
+   "output_sha256": "653f567885d3ff3c7b0378abe0cc51a6adcd2e8649fe2c7bb195d9656dd9bfdd",
+   "uasset": "Content/Imported/MaterialDatabase/CinderBlocks/MI_CinderBlocks_Purple_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Large/CinderBlocks.upk#MI_CinderBlocks_White",
+   "object": "MI_CinderBlocks_White",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CinderBlocks_White",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CinderBlocks/CinderBlocks/Texture2D/CinderBlocks_DiffSpec.tga",
+   "extracted_sha256": "653f567885d3ff3c7b0378abe0cc51a6adcd2e8649fe2c7bb195d9656dd9bfdd",
+   "output_file": "Content/Extracted/MaterialDatabase/CinderBlocks/CinderBlocks/Texture2D/CinderBlocks_DiffSpec.tga",
+   "output_sha256": "653f567885d3ff3c7b0378abe0cc51a6adcd2e8649fe2c7bb195d9656dd9bfdd",
+   "uasset": "Content/Imported/MaterialDatabase/CinderBlocks/MI_CinderBlocks_White.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Large/CinderBlocks.upk#MI_CinderBlocks_White_Graffiti",
+   "object": "MI_CinderBlocks_White_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CinderBlocks_White_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CinderBlocks/CinderBlocks/Texture2D/CinderBlocks_DiffSpec.tga",
+   "extracted_sha256": "653f567885d3ff3c7b0378abe0cc51a6adcd2e8649fe2c7bb195d9656dd9bfdd",
+   "output_file": "Content/Extracted/MaterialDatabase/CinderBlocks/CinderBlocks/Texture2D/CinderBlocks_DiffSpec.tga",
+   "output_sha256": "653f567885d3ff3c7b0378abe0cc51a6adcd2e8649fe2c7bb195d9656dd9bfdd",
+   "uasset": "Content/Imported/MaterialDatabase/CinderBlocks/MI_CinderBlocks_White_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Large/CinderBlocks.upk#MI_CinderBlocks_WhitePainted",
+   "object": "MI_CinderBlocks_WhitePainted",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CinderBlocks_WhitePainted",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CinderBlocks/CinderBlocks/Texture2D/CinderBlocks_DiffSpec.tga",
+   "extracted_sha256": "653f567885d3ff3c7b0378abe0cc51a6adcd2e8649fe2c7bb195d9656dd9bfdd",
+   "output_file": "Content/Extracted/MaterialDatabase/CinderBlocks/CinderBlocks/Texture2D/CinderBlocks_DiffSpec.tga",
+   "output_sha256": "653f567885d3ff3c7b0378abe0cc51a6adcd2e8649fe2c7bb195d9656dd9bfdd",
+   "uasset": "Content/Imported/MaterialDatabase/CinderBlocks/MI_CinderBlocks_WhitePainted.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Large/CinderBlocks.upk#MI_CinderBlocks_WhitePainted_Dirtier",
+   "object": "MI_CinderBlocks_WhitePainted_Dirtier",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CinderBlocks_WhitePainted_Dirtier",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CinderBlocks/CinderBlocks/Texture2D/CinderBlocks_DiffSpec.tga",
+   "extracted_sha256": "653f567885d3ff3c7b0378abe0cc51a6adcd2e8649fe2c7bb195d9656dd9bfdd",
+   "output_file": "Content/Extracted/MaterialDatabase/CinderBlocks/CinderBlocks/Texture2D/CinderBlocks_DiffSpec.tga",
+   "output_sha256": "653f567885d3ff3c7b0378abe0cc51a6adcd2e8649fe2c7bb195d9656dd9bfdd",
+   "uasset": "Content/Imported/MaterialDatabase/CinderBlocks/MI_CinderBlocks_WhitePainted_Dirtier.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Large/CinderBlocks.upk#MI_CinderBlocks_Yellow",
+   "object": "MI_CinderBlocks_Yellow",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CinderBlocks_Yellow",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CinderBlocks/CinderBlocks/Texture2D/CinderBlocks_DiffSpec.tga",
+   "extracted_sha256": "653f567885d3ff3c7b0378abe0cc51a6adcd2e8649fe2c7bb195d9656dd9bfdd",
+   "output_file": "Content/Extracted/MaterialDatabase/CinderBlocks/CinderBlocks/Texture2D/CinderBlocks_DiffSpec.tga",
+   "output_sha256": "653f567885d3ff3c7b0378abe0cc51a6adcd2e8649fe2c7bb195d9656dd9bfdd",
+   "uasset": "Content/Imported/MaterialDatabase/CinderBlocks/MI_CinderBlocks_Yellow.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Large/CinderBlocks.upk#MI_CinderBlocks_Yellow_Graffiti",
+   "object": "MI_CinderBlocks_Yellow_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CinderBlocks_Yellow_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CinderBlocks/CinderBlocks/Texture2D/CinderBlocks_DiffSpec.tga",
+   "extracted_sha256": "653f567885d3ff3c7b0378abe0cc51a6adcd2e8649fe2c7bb195d9656dd9bfdd",
+   "output_file": "Content/Extracted/MaterialDatabase/CinderBlocks/CinderBlocks/Texture2D/CinderBlocks_DiffSpec.tga",
+   "output_sha256": "653f567885d3ff3c7b0378abe0cc51a6adcd2e8649fe2c7bb195d9656dd9bfdd",
+   "uasset": "Content/Imported/MaterialDatabase/CinderBlocks/MI_CinderBlocks_Yellow_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Large/CinderBlocks.upk#MI_CinderBlocks_YellowMortar",
+   "object": "MI_CinderBlocks_YellowMortar",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CinderBlocks_YellowMortar",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CinderBlocks/CinderBlocks/Texture2D/CinderBlocks_DiffSpec.tga",
+   "extracted_sha256": "653f567885d3ff3c7b0378abe0cc51a6adcd2e8649fe2c7bb195d9656dd9bfdd",
+   "output_file": "Content/Extracted/MaterialDatabase/CinderBlocks/CinderBlocks/Texture2D/CinderBlocks_DiffSpec.tga",
+   "output_sha256": "653f567885d3ff3c7b0378abe0cc51a6adcd2e8649fe2c7bb195d9656dd9bfdd",
+   "uasset": "Content/Imported/MaterialDatabase/CinderBlocks/MI_CinderBlocks_YellowMortar.uasset"
+  }
+ ]
+}

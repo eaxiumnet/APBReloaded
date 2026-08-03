@@ -1,0 +1,77 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Roof_Corrugated",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/Roof/Roof_Corrugated.upk",
+ "source_sha256": "d6197b099cb981b12dcd9c555e7b07d607f7ad01531548a774397940635668f7",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_Corrugated.upk#MI_Roof_Corrugated_Beige",
+   "object": "MI_Roof_Corrugated_Beige",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_Corrugated_Beige",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_Corrugated/Roof_Corrugated/Texture2D/Roof_Corrugated_DiffSpec.tga",
+   "extracted_sha256": "ec373b5627698f37fee2199e9e46682100762535f60d0f4d4dd71dd02e8442bc",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_Corrugated/Roof_Corrugated/Texture2D/Roof_Corrugated_DiffSpec.tga",
+   "output_sha256": "ec373b5627698f37fee2199e9e46682100762535f60d0f4d4dd71dd02e8442bc",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_Corrugated/MI_Roof_Corrugated_Beige.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_Corrugated.upk#MI_Roof_Corrugated_Mat",
+   "object": "MI_Roof_Corrugated_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_Corrugated_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_Corrugated/Roof_Corrugated/Texture2D/Roof_Corrugated_DiffSpec.tga",
+   "extracted_sha256": "ec373b5627698f37fee2199e9e46682100762535f60d0f4d4dd71dd02e8442bc",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_Corrugated/Roof_Corrugated/Texture2D/Roof_Corrugated_DiffSpec.tga",
+   "output_sha256": "ec373b5627698f37fee2199e9e46682100762535f60d0f4d4dd71dd02e8442bc",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_Corrugated/MI_Roof_Corrugated_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_Corrugated.upk#MI_Roof_Corrugated_Orange",
+   "object": "MI_Roof_Corrugated_Orange",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_Corrugated_Orange",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_Corrugated/Roof_Corrugated/Texture2D/Roof_Corrugated_DiffSpec.tga",
+   "extracted_sha256": "ec373b5627698f37fee2199e9e46682100762535f60d0f4d4dd71dd02e8442bc",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_Corrugated/Roof_Corrugated/Texture2D/Roof_Corrugated_DiffSpec.tga",
+   "output_sha256": "ec373b5627698f37fee2199e9e46682100762535f60d0f4d4dd71dd02e8442bc",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_Corrugated/MI_Roof_Corrugated_Orange.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_Corrugated.upk#Roof_Corrugated_DiffSpec",
+   "object": "Roof_Corrugated_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_Corrugated/Roof_Corrugated/Texture2D/Roof_Corrugated_DiffSpec.tga",
+   "extracted_sha256": "ec373b5627698f37fee2199e9e46682100762535f60d0f4d4dd71dd02e8442bc",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_Corrugated/Roof_Corrugated/Texture2D/Roof_Corrugated_DiffSpec.tga",
+   "output_sha256": "ec373b5627698f37fee2199e9e46682100762535f60d0f4d4dd71dd02e8442bc",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_Corrugated/Roof_Corrugated_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_Corrugated.upk#Roof_Corrugated_NormDisp",
+   "object": "Roof_Corrugated_NormDisp",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_Corrugated/Roof_Corrugated/Texture2D/Roof_Corrugated_NormDisp.tga",
+   "extracted_sha256": "b618ac7e19def346695a0a33fa5c3a9961dcea1037cda695f90aec6679db5a77",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_Corrugated/Roof_Corrugated/Texture2D/Roof_Corrugated_NormDisp.tga",
+   "output_sha256": "b618ac7e19def346695a0a33fa5c3a9961dcea1037cda695f90aec6679db5a77",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_Corrugated/Roof_Corrugated_NormDisp.uasset"
+  }
+ ]
+}

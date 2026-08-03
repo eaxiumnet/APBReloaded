@@ -1,0 +1,74 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "GarbageCan",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/GarbageCan.upk",
+ "source_sha256": "f61b1437022a83646c47e5733e762572a2a753bab49378d12ba9435003c8153b",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/GarbageCan.upk#GarbageCan_DamageNorm",
+   "object": "GarbageCan_DamageNorm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GarbageCan/GarbageCan/Texture2D/GarbageCan_DamageNorm.tga",
+   "extracted_sha256": "97e86d294b970167c6cfba129feebb58e34de94c0158d6d5e946782f4dc7fa22",
+   "output_file": "Content/Extracted/MaterialDatabase/GarbageCan/GarbageCan/Texture2D/GarbageCan_DamageNorm.tga",
+   "output_sha256": "97e86d294b970167c6cfba129feebb58e34de94c0158d6d5e946782f4dc7fa22",
+   "uasset": "Content/Imported/MaterialDatabase/GarbageCan/GarbageCan_DamageNorm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/GarbageCan.upk#GarbageCan_DiffSpec",
+   "object": "GarbageCan_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GarbageCan/GarbageCan/Texture2D/GarbageCan_DiffSpec.tga",
+   "extracted_sha256": "ea65e9a6ab7f3c02262f5c11249ef4ee1cb41744d7adfb2970318c17e3735f20",
+   "output_file": "Content/Extracted/MaterialDatabase/GarbageCan/GarbageCan/Texture2D/GarbageCan_DiffSpec.tga",
+   "output_sha256": "ea65e9a6ab7f3c02262f5c11249ef4ee1cb41744d7adfb2970318c17e3735f20",
+   "uasset": "Content/Imported/MaterialDatabase/GarbageCan/GarbageCan_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/GarbageCan.upk#GarbageCan_Norm",
+   "object": "GarbageCan_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GarbageCan/GarbageCan/Texture2D/GarbageCan_Norm.tga",
+   "extracted_sha256": "489476090ee86fcd5ab5c011f752474182d7759c3b1ae5620ae71e6fe0eafea1",
+   "output_file": "Content/Extracted/MaterialDatabase/GarbageCan/GarbageCan/Texture2D/GarbageCan_Norm.tga",
+   "output_sha256": "489476090ee86fcd5ab5c011f752474182d7759c3b1ae5620ae71e6fe0eafea1",
+   "uasset": "Content/Imported/MaterialDatabase/GarbageCan/GarbageCan_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/GarbageCan.upk#MI_GarbageCan_Damage_Mat",
+   "object": "MI_GarbageCan_Damage_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "GarbageCan_Damage_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GarbageCan/GarbageCan/Texture2D/GarbageCan_DiffSpec.tga",
+   "extracted_sha256": "ea65e9a6ab7f3c02262f5c11249ef4ee1cb41744d7adfb2970318c17e3735f20",
+   "output_file": "Content/Extracted/MaterialDatabase/GarbageCan/GarbageCan/Texture2D/GarbageCan_DiffSpec.tga",
+   "output_sha256": "ea65e9a6ab7f3c02262f5c11249ef4ee1cb41744d7adfb2970318c17e3735f20",
+   "uasset": "Content/Imported/MaterialDatabase/GarbageCan/MI_GarbageCan_Damage_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/GarbageCan.upk#MI_GarbageCan_Mat",
+   "object": "MI_GarbageCan_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "GarbageCan_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GarbageCan/GarbageCan/Texture2D/GarbageCan_DiffSpec.tga",
+   "extracted_sha256": "ea65e9a6ab7f3c02262f5c11249ef4ee1cb41744d7adfb2970318c17e3735f20",
+   "output_file": "Content/Extracted/MaterialDatabase/GarbageCan/GarbageCan/Texture2D/GarbageCan_DiffSpec.tga",
+   "output_sha256": "ea65e9a6ab7f3c02262f5c11249ef4ee1cb41744d7adfb2970318c17e3735f20",
+   "uasset": "Content/Imported/MaterialDatabase/GarbageCan/MI_GarbageCan_Mat.uasset"
+  }
+ ]
+}

@@ -1,0 +1,985 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Stucco",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/Stucco/Stucco.upk",
+ "source_sha256": "b6674a9f6d26e053ae812edb4031cc0dd5c9733d7178221afde5d13a405e40a3",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#DirtOverlay_01",
+   "object": "DirtOverlay_01",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/DirtOverlay_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_ModernStucco_PARENT",
+   "object": "MI_ModernStucco_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "ModernStucco_PARENT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_ModernStucco_PARENT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_ModernStucco_PARENT_INST",
+   "object": "MI_ModernStucco_PARENT_INST",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "ModernStucco_PARENT_INST",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_ModernStucco_PARENT_INST.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_ModernStucco_White",
+   "object": "MI_ModernStucco_White",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "ModernStucco_White",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_ModernStucco_White.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_ModernStucco_White_Graffiti",
+   "object": "MI_ModernStucco_White_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "ModernStucco_White_Graffiti",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_ModernStucco_White_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_Baked",
+   "object": "MI_Stucco_Baked",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_Baked",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_Baked.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_Beige_NG",
+   "object": "MI_Stucco_Beige_NG",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_Beige_NG",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_Beige_NG.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_Chocolate_NG",
+   "object": "MI_Stucco_Chocolate_NG",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_Chocolate_NG",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_Chocolate_NG.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_Cream_NG",
+   "object": "MI_Stucco_Cream_NG",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_Cream_NG",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_Cream_NG.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_Cream_NG_Graffiti",
+   "object": "MI_Stucco_Cream_NG_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_Cream_NG_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_Cream_NG_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_DarkBlue_NG",
+   "object": "MI_Stucco_DarkBlue_NG",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_DarkBlue_NG",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_DarkBlue_NG.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_M01_White",
+   "object": "MI_Stucco_M01_White",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_M01_White",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_M01_White.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_M01_White_Graffiti",
+   "object": "MI_Stucco_M01_White_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_M01_White_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_M01_White_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_M01_White_IgnoreSafe",
+   "object": "MI_Stucco_M01_White_IgnoreSafe",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_M01_White_IgnoreSafe",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_M01_White_IgnoreSafe.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_M02_Cream",
+   "object": "MI_Stucco_M02_Cream",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_M02_Cream",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_M02_Cream.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_M02_Cream_Graffiti",
+   "object": "MI_Stucco_M02_Cream_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_M02_Cream_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_M02_Cream_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_M03_Magnolia",
+   "object": "MI_Stucco_M03_Magnolia",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_M03_Magnolia",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_M03_Magnolia.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_M03_Magnolia_Graffiti",
+   "object": "MI_Stucco_M03_Magnolia_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_M03_Magnolia_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_M03_Magnolia_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_M04_Beige",
+   "object": "MI_Stucco_M04_Beige",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_M04_Beige",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_M04_Beige.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_M04_Beige_Graffiti",
+   "object": "MI_Stucco_M04_Beige_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_M04_Beige_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_M04_Beige_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_M05_Terracotta",
+   "object": "MI_Stucco_M05_Terracotta",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_M05_Terracotta",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_M05_Terracotta.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_M05_Terracotta_Graffiti",
+   "object": "MI_Stucco_M05_Terracotta_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_M05_Terracotta_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_M05_Terracotta_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_M06_Orange",
+   "object": "MI_Stucco_M06_Orange",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_M06_Orange",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_M06_Orange.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_M06_Orange_Graffiti",
+   "object": "MI_Stucco_M06_Orange_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_M06_Orange_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_M06_Orange_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_M07_Rust",
+   "object": "MI_Stucco_M07_Rust",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_M07_Rust",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_M07_Rust.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_M07_Rust_Graffiti",
+   "object": "MI_Stucco_M07_Rust_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_M07_Rust_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_M07_Rust_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_M08_Red",
+   "object": "MI_Stucco_M08_Red",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_M08_Red",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_M08_Red.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_M08_Red_Graffiti",
+   "object": "MI_Stucco_M08_Red_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_M08_Red_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_M08_Red_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_M09_Brown",
+   "object": "MI_Stucco_M09_Brown",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_M09_Brown",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_M09_Brown.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_M09_Brown_Graffiti",
+   "object": "MI_Stucco_M09_Brown_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_M09_Brown_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_M09_Brown_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_M10_Tan",
+   "object": "MI_Stucco_M10_Tan",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_M10_Tan",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_M10_Tan.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_M10_Tan_Graffiti",
+   "object": "MI_Stucco_M10_Tan_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_M10_Tan_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_M10_Tan_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_M11_Violet",
+   "object": "MI_Stucco_M11_Violet",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_M11_Violet",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_M11_Violet.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_M11_Violet_Graffiti",
+   "object": "MI_Stucco_M11_Violet_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_M11_Violet_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_M11_Violet_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_M12_BlueDark",
+   "object": "MI_Stucco_M12_BlueDark",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_M12_BlueDark",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_M12_BlueDark.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_M12_BlueDark_Graffiti",
+   "object": "MI_Stucco_M12_BlueDark_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_M12_BlueDark_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_M12_BlueDark_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_M13_SilverBlue",
+   "object": "MI_Stucco_M13_SilverBlue",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_M13_SilverBlue",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_M13_SilverBlue.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_M13_SilverBlue_Graffiti",
+   "object": "MI_Stucco_M13_SilverBlue_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_M13_SilverBlue_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_M13_SilverBlue_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_M14_RoyalBlue",
+   "object": "MI_Stucco_M14_RoyalBlue",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_M14_RoyalBlue",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_M14_RoyalBlue.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_M14_RoyalBlue_Graffiti",
+   "object": "MI_Stucco_M14_RoyalBlue_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_M14_RoyalBlue_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_M14_RoyalBlue_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_M15_Teal",
+   "object": "MI_Stucco_M15_Teal",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_M15_Teal",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_M15_Teal.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_M15_Teal_Graffiti",
+   "object": "MI_Stucco_M15_Teal_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_M15_Teal_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_M15_Teal_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_M16_Aqua",
+   "object": "MI_Stucco_M16_Aqua",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_M16_Aqua",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_M16_Aqua.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_M16_Aqua_Graffiti",
+   "object": "MI_Stucco_M16_Aqua_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_M16_Aqua_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_M16_Aqua_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_M17_PaleGreen",
+   "object": "MI_Stucco_M17_PaleGreen",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_M17_PaleGreen",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_M17_PaleGreen.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_M17_PaleGreen_Graffiti",
+   "object": "MI_Stucco_M17_PaleGreen_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_M17_PaleGreen_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_M17_PaleGreen_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_M18_Green",
+   "object": "MI_Stucco_M18_Green",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_M18_Green",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_M18_Green.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_M18_Green_Graffiti",
+   "object": "MI_Stucco_M18_Green_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_M18_Green_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_M18_Green_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_M19_Yellow",
+   "object": "MI_Stucco_M19_Yellow",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_M19_Yellow",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_M19_Yellow.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_M19_Yellow_Graffiti",
+   "object": "MI_Stucco_M19_Yellow_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_M19_Yellow_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_M19_Yellow_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_M20_Black",
+   "object": "MI_Stucco_M20_Black",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_M20_Black",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_M20_Black.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_M20_Black_Graffiti",
+   "object": "MI_Stucco_M20_Black_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_M20_Black_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_M20_Black_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_Magnolia_NG",
+   "object": "MI_Stucco_Magnolia_NG",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_Magnolia_NG",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_Magnolia_NG.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_Orange_NG",
+   "object": "MI_Stucco_Orange_NG",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_Orange_NG",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_Orange_NG.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_Orange_NG_Graffiti",
+   "object": "MI_Stucco_Orange_NG_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_Orange_NG_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_Orange_NG_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_PaleGreen_NG",
+   "object": "MI_Stucco_PaleGreen_NG",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_PaleGreen_NG",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_PaleGreen_NG.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_PARENT",
+   "object": "MI_Stucco_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_PARENT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_PARENT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_PARENT_IgnoreSafeCheck",
+   "object": "MI_Stucco_PARENT_IgnoreSafeCheck",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_PARENT_IgnoreSafeCheck",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_PARENT_IgnoreSafeCheck.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_Red_NG",
+   "object": "MI_Stucco_Red_NG",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_Red_NG",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_Red_NG.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_Red_NG_Graffiti",
+   "object": "MI_Stucco_Red_NG_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_Red_NG_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_Red_NG_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_SilverBlue_NG",
+   "object": "MI_Stucco_SilverBlue_NG",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_SilverBlue_NG",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_SilverBlue_NG.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_Terracotta_NG",
+   "object": "MI_Stucco_Terracotta_NG",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_Terracotta_NG",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_Terracotta_NG.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_White_NG",
+   "object": "MI_Stucco_White_NG",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_White_NG",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_White_NG.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#MI_Stucco_White_NG_Graffiti",
+   "object": "MI_Stucco_White_NG_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_White_NG_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/MI_Stucco_White_NG_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#Stucco_DiffSpec",
+   "object": "Stucco_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/Stucco_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Stucco/Stucco.upk#Stucco_Norm",
+   "object": "Stucco_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_Norm.tga",
+   "extracted_sha256": "474e2cd39b065023f62d022f0e72a0b8391a019188e0e0785446133a2dd9276d",
+   "output_file": "Content/Extracted/MaterialDatabase/Stucco/Stucco/Texture2D/Stucco_Norm.tga",
+   "output_sha256": "474e2cd39b065023f62d022f0e72a0b8391a019188e0e0785446133a2dd9276d",
+   "uasset": "Content/Imported/MaterialDatabase/Stucco/Stucco_Norm.uasset"
+  }
+ ]
+}

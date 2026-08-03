@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "WarehouseDoor",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/WarehouseDoor.upk",
+ "source_sha256": "956801e6ef5921496de1d2b2117cc1d6fb2c9be618a72fe4a495ab4f22c844b1",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/WarehouseDoor.upk#MI_WarehouseDoor",
+   "object": "MI_WarehouseDoor",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WarehouseDoor",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WarehouseDoor/WarehouseDoor/Texture2D/WarehouseDoors_DiffSpec.tga",
+   "extracted_sha256": "792082b8dab01aa0949eb24d22f92dc5a3708d6abda902499f223c01f940ba01",
+   "output_file": "Content/Extracted/MaterialDatabase/WarehouseDoor/WarehouseDoor/Texture2D/WarehouseDoors_DiffSpec.tga",
+   "output_sha256": "792082b8dab01aa0949eb24d22f92dc5a3708d6abda902499f223c01f940ba01",
+   "uasset": "Content/Imported/MaterialDatabase/WarehouseDoor/MI_WarehouseDoor.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/WarehouseDoor.upk#WarehouseDoors_DiffSpec",
+   "object": "WarehouseDoors_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WarehouseDoor/WarehouseDoor/Texture2D/WarehouseDoors_DiffSpec.tga",
+   "extracted_sha256": "792082b8dab01aa0949eb24d22f92dc5a3708d6abda902499f223c01f940ba01",
+   "output_file": "Content/Extracted/MaterialDatabase/WarehouseDoor/WarehouseDoor/Texture2D/WarehouseDoors_DiffSpec.tga",
+   "output_sha256": "792082b8dab01aa0949eb24d22f92dc5a3708d6abda902499f223c01f940ba01",
+   "uasset": "Content/Imported/MaterialDatabase/WarehouseDoor/WarehouseDoors_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/WarehouseDoor.upk#WarehouseDoors_Norm",
+   "object": "WarehouseDoors_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WarehouseDoor/WarehouseDoor/Texture2D/WarehouseDoors_Norm.tga",
+   "extracted_sha256": "594a67843ba153094051a0c6405800fd299e8213ae88dc59b1eb98fd5feaf187",
+   "output_file": "Content/Extracted/MaterialDatabase/WarehouseDoor/WarehouseDoor/Texture2D/WarehouseDoors_Norm.tga",
+   "output_sha256": "594a67843ba153094051a0c6405800fd299e8213ae88dc59b1eb98fd5feaf187",
+   "uasset": "Content/Imported/MaterialDatabase/WarehouseDoor/WarehouseDoors_Norm.uasset"
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "OrnamentalMetalwork",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/OrnamentalMetalwork/OrnamentalMetalwork.upk",
+ "source_sha256": "ac05bed7a3ba6653c927847d61eadfaa683b8adbbf1fa4b3a4b6c17711e45503",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/OrnamentalMetalwork/OrnamentalMetalwork.upk#CSD_OrnamentalMetalwork_DiffOpac",
+   "object": "CSD_OrnamentalMetalwork_DiffOpac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/OrnamentalMetalwork/OrnamentalMetalwork/Texture2D/CSD_OrnamentalMetalwork_DiffOpac.tga",
+   "extracted_sha256": "19b5c237feed08546cda83d8bec2f9ae1008edd9c8939307981aeb5fe95bee67",
+   "output_file": "Content/Extracted/MaterialDatabase/OrnamentalMetalwork/OrnamentalMetalwork/Texture2D/CSD_OrnamentalMetalwork_DiffOpac.tga",
+   "output_sha256": "19b5c237feed08546cda83d8bec2f9ae1008edd9c8939307981aeb5fe95bee67",
+   "uasset": "Content/Imported/MaterialDatabase/OrnamentalMetalwork/CSD_OrnamentalMetalwork_DiffOpac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/OrnamentalMetalwork/OrnamentalMetalwork.upk#MI_ornamentalmetalwork",
+   "object": "MI_ornamentalmetalwork",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "ornamentalmetalwork",
+   "texture_roles": [
+    "Diffuse",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/OrnamentalMetalwork/OrnamentalMetalwork/Texture2D/CSD_OrnamentalMetalwork_DiffOpac.tga",
+   "extracted_sha256": "19b5c237feed08546cda83d8bec2f9ae1008edd9c8939307981aeb5fe95bee67",
+   "output_file": "Content/Extracted/MaterialDatabase/OrnamentalMetalwork/OrnamentalMetalwork/Texture2D/CSD_OrnamentalMetalwork_DiffOpac.tga",
+   "output_sha256": "19b5c237feed08546cda83d8bec2f9ae1008edd9c8939307981aeb5fe95bee67",
+   "uasset": "Content/Imported/MaterialDatabase/OrnamentalMetalwork/MI_ornamentalmetalwork.uasset"
+  }
+ ]
+}

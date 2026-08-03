@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "RoofSupport",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/ProvingGrounds/PropMaterials/RoofSupport.upk",
+ "source_sha256": "60936d4d4581ddd2f640fd95c6de8b8bd8184ef0492eb693d0c4c7e052c3711a",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/ProvingGrounds/PropMaterials/RoofSupport.upk#MI_RoofSupport_Mat",
+   "object": "MI_RoofSupport_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RoofSupport_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoofSupport/RoofSupport/Texture2D/RoofSurpport_Diff.tga",
+   "extracted_sha256": "b7eff7dfa971024708819ebd1a21420914852cd797a076caa9b75a97ad648851",
+   "output_file": "Content/Extracted/MaterialDatabase/RoofSupport/RoofSupport/Texture2D/RoofSurpport_Diff.tga",
+   "output_sha256": "b7eff7dfa971024708819ebd1a21420914852cd797a076caa9b75a97ad648851",
+   "uasset": "Content/Imported/MaterialDatabase/RoofSupport/MI_RoofSupport_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/ProvingGrounds/PropMaterials/RoofSupport.upk#RoofSurpport_Diff",
+   "object": "RoofSurpport_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoofSupport/RoofSupport/Texture2D/RoofSurpport_Diff.tga",
+   "extracted_sha256": "b7eff7dfa971024708819ebd1a21420914852cd797a076caa9b75a97ad648851",
+   "output_file": "Content/Extracted/MaterialDatabase/RoofSupport/RoofSupport/Texture2D/RoofSurpport_Diff.tga",
+   "output_sha256": "b7eff7dfa971024708819ebd1a21420914852cd797a076caa9b75a97ad648851",
+   "uasset": "Content/Imported/MaterialDatabase/RoofSupport/RoofSurpport_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/ProvingGrounds/PropMaterials/RoofSupport.upk#RoofSurpport_Norm",
+   "object": "RoofSurpport_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoofSupport/RoofSupport/Texture2D/RoofSurpport_Norm.tga",
+   "extracted_sha256": "26d3426d0524f32b88a195f269e0c27440c0259eb25eaa413a699318ccfefd3d",
+   "output_file": "Content/Extracted/MaterialDatabase/RoofSupport/RoofSupport/Texture2D/RoofSurpport_Norm.tga",
+   "output_sha256": "26d3426d0524f32b88a195f269e0c27440c0259eb25eaa413a699318ccfefd3d",
+   "uasset": "Content/Imported/MaterialDatabase/RoofSupport/RoofSurpport_Norm.uasset"
+  }
+ ]
+}

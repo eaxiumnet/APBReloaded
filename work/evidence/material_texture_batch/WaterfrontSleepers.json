@@ -1,0 +1,62 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "WaterfrontSleepers",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontSleepers.upk",
+ "source_sha256": "ece99342c528bbc2acb670078057c3b441232868f251cd16102b5708833dc4fe",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontSleepers.upk#MI_WaterfrontSleepers_Damage_Mat",
+   "object": "MI_WaterfrontSleepers_Damage_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WaterfrontSleepers_Damage_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontSleepers/WaterfrontSleepers/Texture2D/WaterfrontSleepers_DiffSpec.tga",
+   "extracted_sha256": "4ba8258ae29a4c618c2c154f8438de79e8ec4c52ca99163329dcb8e96654aa90",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontSleepers/WaterfrontSleepers/Texture2D/WaterfrontSleepers_DiffSpec.tga",
+   "output_sha256": "4ba8258ae29a4c618c2c154f8438de79e8ec4c52ca99163329dcb8e96654aa90",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontSleepers/MI_WaterfrontSleepers_Damage_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontSleepers.upk#MI_WaterfrontSleepers_Mat",
+   "object": "MI_WaterfrontSleepers_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WaterfrontSleepers_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontSleepers/WaterfrontSleepers/Texture2D/WaterfrontSleepers_DiffSpec.tga",
+   "extracted_sha256": "4ba8258ae29a4c618c2c154f8438de79e8ec4c52ca99163329dcb8e96654aa90",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontSleepers/WaterfrontSleepers/Texture2D/WaterfrontSleepers_DiffSpec.tga",
+   "output_sha256": "4ba8258ae29a4c618c2c154f8438de79e8ec4c52ca99163329dcb8e96654aa90",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontSleepers/MI_WaterfrontSleepers_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontSleepers.upk#WaterfrontSleepers_DiffSpec",
+   "object": "WaterfrontSleepers_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontSleepers/WaterfrontSleepers/Texture2D/WaterfrontSleepers_DiffSpec.tga",
+   "extracted_sha256": "4ba8258ae29a4c618c2c154f8438de79e8ec4c52ca99163329dcb8e96654aa90",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontSleepers/WaterfrontSleepers/Texture2D/WaterfrontSleepers_DiffSpec.tga",
+   "output_sha256": "4ba8258ae29a4c618c2c154f8438de79e8ec4c52ca99163329dcb8e96654aa90",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontSleepers/WaterfrontSleepers_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontSleepers.upk#WaterfrontSleepers_Norm",
+   "object": "WaterfrontSleepers_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontSleepers/WaterfrontSleepers/Texture2D/WaterfrontSleepers_Norm.tga",
+   "extracted_sha256": "887c8416252190218d1801d3b7052c9e55c4f8573c9b9b90bf3500007cf5911a",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontSleepers/WaterfrontSleepers/Texture2D/WaterfrontSleepers_Norm.tga",
+   "output_sha256": "887c8416252190218d1801d3b7052c9e55c4f8573c9b9b90bf3500007cf5911a",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontSleepers/WaterfrontSleepers_Norm.uasset"
+  }
+ ]
+}

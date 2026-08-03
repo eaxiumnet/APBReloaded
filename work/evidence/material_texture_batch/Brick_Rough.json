@@ -1,0 +1,62 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Brick_Rough",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/ToBeRemoved/Brick_Rough.upk",
+ "source_sha256": "2f48f1c663cd9c2fc7e9e242570c76e19eedc52003323ea10df9681e901c63e2",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/ToBeRemoved/Brick_Rough.upk#Brick_Rough_DiffSpec",
+   "object": "Brick_Rough_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Brick_Rough/Brick_Rough/Texture2D/Brick_Rough_DiffSpec.tga",
+   "extracted_sha256": "846564fdf2b495a2d0dde579c48daeb45f09030f3d55f5290169f24510524636",
+   "output_file": "Content/Extracted/MaterialDatabase/Brick_Rough/Brick_Rough/Texture2D/Brick_Rough_DiffSpec.tga",
+   "output_sha256": "846564fdf2b495a2d0dde579c48daeb45f09030f3d55f5290169f24510524636",
+   "uasset": "Content/Imported/MaterialDatabase/Brick_Rough/Brick_Rough_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/ToBeRemoved/Brick_Rough.upk#Brick_Rough_NormDisp",
+   "object": "Brick_Rough_NormDisp",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Brick_Rough/Brick_Rough/Texture2D/Brick_Rough_NormDisp.tga",
+   "extracted_sha256": "8a1aeaf58be8ecce8a2baeb27507827b580ed05e3f68551a2b78cdc7d20a3376",
+   "output_file": "Content/Extracted/MaterialDatabase/Brick_Rough/Brick_Rough/Texture2D/Brick_Rough_NormDisp.tga",
+   "output_sha256": "8a1aeaf58be8ecce8a2baeb27507827b580ed05e3f68551a2b78cdc7d20a3376",
+   "uasset": "Content/Imported/MaterialDatabase/Brick_Rough/Brick_Rough_NormDisp.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/ToBeRemoved/Brick_Rough.upk#MI_Brick_Rough_Mat",
+   "object": "MI_Brick_Rough_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Brick_Rough_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Brick_Rough/Brick_Rough/Texture2D/Brick_Rough_DiffSpec.tga",
+   "extracted_sha256": "846564fdf2b495a2d0dde579c48daeb45f09030f3d55f5290169f24510524636",
+   "output_file": "Content/Extracted/MaterialDatabase/Brick_Rough/Brick_Rough/Texture2D/Brick_Rough_DiffSpec.tga",
+   "output_sha256": "846564fdf2b495a2d0dde579c48daeb45f09030f3d55f5290169f24510524636",
+   "uasset": "Content/Imported/MaterialDatabase/Brick_Rough/MI_Brick_Rough_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/ToBeRemoved/Brick_Rough.upk#MI_Brick_Rough_Pink",
+   "object": "MI_Brick_Rough_Pink",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Brick_Rough_Pink",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Brick_Rough/Brick_Rough/Texture2D/Brick_Rough_DiffSpec.tga",
+   "extracted_sha256": "846564fdf2b495a2d0dde579c48daeb45f09030f3d55f5290169f24510524636",
+   "output_file": "Content/Extracted/MaterialDatabase/Brick_Rough/Brick_Rough/Texture2D/Brick_Rough_DiffSpec.tga",
+   "output_sha256": "846564fdf2b495a2d0dde579c48daeb45f09030f3d55f5290169f24510524636",
+   "uasset": "Content/Imported/MaterialDatabase/Brick_Rough/MI_Brick_Rough_Pink.uasset"
+  }
+ ]
+}

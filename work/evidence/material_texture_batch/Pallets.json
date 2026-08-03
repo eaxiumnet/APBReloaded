@@ -1,0 +1,130 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Pallets",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/Pallets.upk",
+ "source_sha256": "246ab728fad3171413ed59600efd0f0923a08d9d9a7fb0301fb93a1f9a935737",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Pallets.upk#MI_MidtownPallets_Damage_Mat",
+   "object": "MI_MidtownPallets_Damage_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "MidtownPallets_Damage_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Pallets/Pallets/Texture2D/MidtownPallets_DiffSpec.tga",
+   "extracted_sha256": "4bf1aedbcdc3c67575a3d74990c4386126a03009571864dab28fb00ddc79cf5f",
+   "output_file": "Content/Extracted/MaterialDatabase/Pallets/Pallets/Texture2D/MidtownPallets_DiffSpec.tga",
+   "output_sha256": "4bf1aedbcdc3c67575a3d74990c4386126a03009571864dab28fb00ddc79cf5f",
+   "uasset": "Content/Imported/MaterialDatabase/Pallets/MI_MidtownPallets_Damage_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Pallets.upk#MI_MidtownPallets_Mat",
+   "object": "MI_MidtownPallets_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "MidtownPallets_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Pallets/Pallets/Texture2D/MidtownPallets_DiffSpec.tga",
+   "extracted_sha256": "4bf1aedbcdc3c67575a3d74990c4386126a03009571864dab28fb00ddc79cf5f",
+   "output_file": "Content/Extracted/MaterialDatabase/Pallets/Pallets/Texture2D/MidtownPallets_DiffSpec.tga",
+   "output_sha256": "4bf1aedbcdc3c67575a3d74990c4386126a03009571864dab28fb00ddc79cf5f",
+   "uasset": "Content/Imported/MaterialDatabase/Pallets/MI_MidtownPallets_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Pallets.upk#MI_MidtownPallets_Sacks_Damage_Mat",
+   "object": "MI_MidtownPallets_Sacks_Damage_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "MidtownPallets_Sacks_Damage_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Pallets/Pallets/Texture2D/MidtownPallets_Sacks_DiffSpec.tga",
+   "extracted_sha256": "ae2eba556e9524b1fe951bfd74c53d7c5ec04f555ff7508aeb31ce347909b0be",
+   "output_file": "Content/Extracted/MaterialDatabase/Pallets/Pallets/Texture2D/MidtownPallets_Sacks_DiffSpec.tga",
+   "output_sha256": "ae2eba556e9524b1fe951bfd74c53d7c5ec04f555ff7508aeb31ce347909b0be",
+   "uasset": "Content/Imported/MaterialDatabase/Pallets/MI_MidtownPallets_Sacks_Damage_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Pallets.upk#MI_MidtownPallets_Sacks_Mat",
+   "object": "MI_MidtownPallets_Sacks_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "MidtownPallets_Sacks_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Pallets/Pallets/Texture2D/MidtownPallets_Sacks_DiffSpec.tga",
+   "extracted_sha256": "ae2eba556e9524b1fe951bfd74c53d7c5ec04f555ff7508aeb31ce347909b0be",
+   "output_file": "Content/Extracted/MaterialDatabase/Pallets/Pallets/Texture2D/MidtownPallets_Sacks_DiffSpec.tga",
+   "output_sha256": "ae2eba556e9524b1fe951bfd74c53d7c5ec04f555ff7508aeb31ce347909b0be",
+   "uasset": "Content/Imported/MaterialDatabase/Pallets/MI_MidtownPallets_Sacks_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Pallets.upk#MidtownPallets_DiffSpec",
+   "object": "MidtownPallets_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Pallets/Pallets/Texture2D/MidtownPallets_DiffSpec.tga",
+   "extracted_sha256": "4bf1aedbcdc3c67575a3d74990c4386126a03009571864dab28fb00ddc79cf5f",
+   "output_file": "Content/Extracted/MaterialDatabase/Pallets/Pallets/Texture2D/MidtownPallets_DiffSpec.tga",
+   "output_sha256": "4bf1aedbcdc3c67575a3d74990c4386126a03009571864dab28fb00ddc79cf5f",
+   "uasset": "Content/Imported/MaterialDatabase/Pallets/MidtownPallets_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Pallets.upk#MidtownPallets_Norm",
+   "object": "MidtownPallets_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Pallets/Pallets/Texture2D/MidtownPallets_Norm.tga",
+   "extracted_sha256": "84cad07c0880587bfcbbdd8f40381e9d666824ddb1704968befaed87d16ef79d",
+   "output_file": "Content/Extracted/MaterialDatabase/Pallets/Pallets/Texture2D/MidtownPallets_Norm.tga",
+   "output_sha256": "84cad07c0880587bfcbbdd8f40381e9d666824ddb1704968befaed87d16ef79d",
+   "uasset": "Content/Imported/MaterialDatabase/Pallets/MidtownPallets_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Pallets.upk#MidtownPallets_Opac",
+   "object": "MidtownPallets_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Pallets/Pallets/Texture2D/MidtownPallets_Opac.tga",
+   "extracted_sha256": "a36ad2c6ce5044312f0751f38672f12fa9ee2d5ad53bf911f54b005fcd66e69b",
+   "output_file": "Content/Extracted/MaterialDatabase/Pallets/Pallets/Texture2D/MidtownPallets_Opac.tga",
+   "output_sha256": "a36ad2c6ce5044312f0751f38672f12fa9ee2d5ad53bf911f54b005fcd66e69b",
+   "uasset": "Content/Imported/MaterialDatabase/Pallets/MidtownPallets_Opac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Pallets.upk#MidtownPallets_Sacks_DiffSpec",
+   "object": "MidtownPallets_Sacks_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Pallets/Pallets/Texture2D/MidtownPallets_Sacks_DiffSpec.tga",
+   "extracted_sha256": "ae2eba556e9524b1fe951bfd74c53d7c5ec04f555ff7508aeb31ce347909b0be",
+   "output_file": "Content/Extracted/MaterialDatabase/Pallets/Pallets/Texture2D/MidtownPallets_Sacks_DiffSpec.tga",
+   "output_sha256": "ae2eba556e9524b1fe951bfd74c53d7c5ec04f555ff7508aeb31ce347909b0be",
+   "uasset": "Content/Imported/MaterialDatabase/Pallets/MidtownPallets_Sacks_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Pallets.upk#MidtownPallets_Sacks_Norm",
+   "object": "MidtownPallets_Sacks_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Pallets/Pallets/Texture2D/MidtownPallets_Sacks_Norm.tga",
+   "extracted_sha256": "25dbf695b903facaa4618c99288284660761b927b3977dc5310f5c194b86d8ba",
+   "output_file": "Content/Extracted/MaterialDatabase/Pallets/Pallets/Texture2D/MidtownPallets_Sacks_Norm.tga",
+   "output_sha256": "25dbf695b903facaa4618c99288284660761b927b3977dc5310f5c194b86d8ba",
+   "uasset": "Content/Imported/MaterialDatabase/Pallets/MidtownPallets_Sacks_Norm.uasset"
+  }
+ ]
+}

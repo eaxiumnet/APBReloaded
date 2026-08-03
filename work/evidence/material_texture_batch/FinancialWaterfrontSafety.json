@@ -1,0 +1,76 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FinancialWaterfrontSafety",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/PropMaterials/FinancialWaterfrontSafety.upk",
+ "source_sha256": "92c18e6eb70ffbf8c270929e946c68990f85f86335bc034e7f81d384da4a4757",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialWaterfrontSafety.upk#FinancialWaterfrontSafety_DiffSpec",
+   "object": "FinancialWaterfrontSafety_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialWaterfrontSafety/FinancialWaterfrontSafety/Texture2D/FinancialWaterfrontSafety_DiffSpec.tga",
+   "extracted_sha256": "bcdb51cae06b6bb4ab0a4c5e671a891d78c7062901d35a5f4a559ae3201cc0f0",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialWaterfrontSafety/FinancialWaterfrontSafety/Texture2D/FinancialWaterfrontSafety_DiffSpec.tga",
+   "output_sha256": "bcdb51cae06b6bb4ab0a4c5e671a891d78c7062901d35a5f4a559ae3201cc0f0",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialWaterfrontSafety/FinancialWaterfrontSafety_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialWaterfrontSafety.upk#FinancialWaterfrontSafety_Norm",
+   "object": "FinancialWaterfrontSafety_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialWaterfrontSafety/FinancialWaterfrontSafety/Texture2D/FinancialWaterfrontSafety_Norm.tga",
+   "extracted_sha256": "904b693c6d09c0b91443147c08f5607640c238eeace1e09490c76e373455538e",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialWaterfrontSafety/FinancialWaterfrontSafety/Texture2D/FinancialWaterfrontSafety_Norm.tga",
+   "output_sha256": "904b693c6d09c0b91443147c08f5607640c238eeace1e09490c76e373455538e",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialWaterfrontSafety/FinancialWaterfrontSafety_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialWaterfrontSafety.upk#FinancialWaterfrontSafety_Opac",
+   "object": "FinancialWaterfrontSafety_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialWaterfrontSafety/FinancialWaterfrontSafety/Texture2D/FinancialWaterfrontSafety_Opac.tga",
+   "extracted_sha256": "2f110d227c7d85e78ae4bd56b8494902fbb7c575cd8a43fa28573e566c9c93f8",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialWaterfrontSafety/FinancialWaterfrontSafety/Texture2D/FinancialWaterfrontSafety_Opac.tga",
+   "output_sha256": "2f110d227c7d85e78ae4bd56b8494902fbb7c575cd8a43fa28573e566c9c93f8",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialWaterfrontSafety/FinancialWaterfrontSafety_Opac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialWaterfrontSafety.upk#MI_FinancialWaterfrontSafety_Damage_Mat",
+   "object": "MI_FinancialWaterfrontSafety_Damage_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialWaterfrontSafety_Damage_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialWaterfrontSafety/FinancialWaterfrontSafety/Texture2D/FinancialWaterfrontSafety_DiffSpec.tga",
+   "extracted_sha256": "bcdb51cae06b6bb4ab0a4c5e671a891d78c7062901d35a5f4a559ae3201cc0f0",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialWaterfrontSafety/FinancialWaterfrontSafety/Texture2D/FinancialWaterfrontSafety_DiffSpec.tga",
+   "output_sha256": "bcdb51cae06b6bb4ab0a4c5e671a891d78c7062901d35a5f4a559ae3201cc0f0",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialWaterfrontSafety/MI_FinancialWaterfrontSafety_Damage_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialWaterfrontSafety.upk#MI_FinancialWaterfrontSafety_Mat",
+   "object": "MI_FinancialWaterfrontSafety_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialWaterfrontSafety_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialWaterfrontSafety/FinancialWaterfrontSafety/Texture2D/FinancialWaterfrontSafety_DiffSpec.tga",
+   "extracted_sha256": "bcdb51cae06b6bb4ab0a4c5e671a891d78c7062901d35a5f4a559ae3201cc0f0",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialWaterfrontSafety/FinancialWaterfrontSafety/Texture2D/FinancialWaterfrontSafety_DiffSpec.tga",
+   "output_sha256": "bcdb51cae06b6bb4ab0a4c5e671a891d78c7062901d35a5f4a559ae3201cc0f0",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialWaterfrontSafety/MI_FinancialWaterfrontSafety_Mat.uasset"
+  }
+ ]
+}

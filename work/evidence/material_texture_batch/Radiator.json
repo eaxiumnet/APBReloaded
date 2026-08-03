@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Radiator",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/PropMaterials/Radiator.upk",
+ "source_sha256": "bf76f7b203fd7ad3e358fe9df1e2211c611d4bbd3b05b83e4e1023ad286aa42f",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Radiator.upk#MI_Radiator_Mat",
+   "object": "MI_Radiator_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Radiator_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Radiator/Radiator/Texture2D/Radiator_DiffSpec.tga",
+   "extracted_sha256": "92aade6ba94e8c776b738dc92300abe7a4000fb4ee0de779ecc437fabb82fe8a",
+   "output_file": "Content/Extracted/MaterialDatabase/Radiator/Radiator/Texture2D/Radiator_DiffSpec.tga",
+   "output_sha256": "92aade6ba94e8c776b738dc92300abe7a4000fb4ee0de779ecc437fabb82fe8a",
+   "uasset": "Content/Imported/MaterialDatabase/Radiator/MI_Radiator_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Radiator.upk#Radiator_DiffSpec",
+   "object": "Radiator_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Radiator/Radiator/Texture2D/Radiator_DiffSpec.tga",
+   "extracted_sha256": "92aade6ba94e8c776b738dc92300abe7a4000fb4ee0de779ecc437fabb82fe8a",
+   "output_file": "Content/Extracted/MaterialDatabase/Radiator/Radiator/Texture2D/Radiator_DiffSpec.tga",
+   "output_sha256": "92aade6ba94e8c776b738dc92300abe7a4000fb4ee0de779ecc437fabb82fe8a",
+   "uasset": "Content/Imported/MaterialDatabase/Radiator/Radiator_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Radiator.upk#Radiator_Norm",
+   "object": "Radiator_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Radiator/Radiator/Texture2D/Radiator_Norm.tga",
+   "extracted_sha256": "68748ae4d3fc067d1c4e320010bf8162d7698653b5806f35054ea959bc8be499",
+   "output_file": "Content/Extracted/MaterialDatabase/Radiator/Radiator/Texture2D/Radiator_Norm.tga",
+   "output_sha256": "68748ae4d3fc067d1c4e320010bf8162d7698653b5806f35054ea959bc8be499",
+   "uasset": "Content/Imported/MaterialDatabase/Radiator/Radiator_Norm.uasset"
+  }
+ ]
+}

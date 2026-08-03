@@ -1,0 +1,60 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "BedFrame",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/PropMaterials/BedFrame.upk",
+ "source_sha256": "368b1108b988b6370a63b4939d8f43e3429258f4d72951cdd0c3305b8a1cf261",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/BedFrame.upk#BedFrame_DiffSpec",
+   "object": "BedFrame_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BedFrame/BedFrame/Texture2D/BedFrame_DiffSpec.tga",
+   "extracted_sha256": "891b789a1958b1d826099b9e5cb911ee0aa73bf05b9918e3969c6d488a73607f",
+   "output_file": "Content/Extracted/MaterialDatabase/BedFrame/BedFrame/Texture2D/BedFrame_DiffSpec.tga",
+   "output_sha256": "891b789a1958b1d826099b9e5cb911ee0aa73bf05b9918e3969c6d488a73607f",
+   "uasset": "Content/Imported/MaterialDatabase/BedFrame/BedFrame_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/BedFrame.upk#BedFrame_Norm",
+   "object": "BedFrame_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BedFrame/BedFrame/Texture2D/BedFrame_Norm.tga",
+   "extracted_sha256": "26fa01bfd90b1a5ab7e27feb696b47e1393c4e396094eb5ddebf13b4053a09f7",
+   "output_file": "Content/Extracted/MaterialDatabase/BedFrame/BedFrame/Texture2D/BedFrame_Norm.tga",
+   "output_sha256": "26fa01bfd90b1a5ab7e27feb696b47e1393c4e396094eb5ddebf13b4053a09f7",
+   "uasset": "Content/Imported/MaterialDatabase/BedFrame/BedFrame_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/BedFrame.upk#BedFrame_Opac",
+   "object": "BedFrame_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BedFrame/BedFrame/Texture2D/BedFrame_Opac.tga",
+   "extracted_sha256": "ca9ce090e41da733dbe6b5cf1de9df575087fd051fcb8f2bb60f09d598628078",
+   "output_file": "Content/Extracted/MaterialDatabase/BedFrame/BedFrame/Texture2D/BedFrame_Opac.tga",
+   "output_sha256": "ca9ce090e41da733dbe6b5cf1de9df575087fd051fcb8f2bb60f09d598628078",
+   "uasset": "Content/Imported/MaterialDatabase/BedFrame/BedFrame_Opac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/BedFrame.upk#MI_BedFrame_MAT",
+   "object": "MI_BedFrame_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "BedFrame_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BedFrame/BedFrame/Texture2D/BedFrame_DiffSpec.tga",
+   "extracted_sha256": "891b789a1958b1d826099b9e5cb911ee0aa73bf05b9918e3969c6d488a73607f",
+   "output_file": "Content/Extracted/MaterialDatabase/BedFrame/BedFrame/Texture2D/BedFrame_DiffSpec.tga",
+   "output_sha256": "891b789a1958b1d826099b9e5cb911ee0aa73bf05b9918e3969c6d488a73607f",
+   "uasset": "Content/Imported/MaterialDatabase/BedFrame/MI_BedFrame_MAT.uasset"
+  }
+ ]
+}

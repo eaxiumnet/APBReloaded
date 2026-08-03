@@ -1,0 +1,253 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "RWorld_Social_Interactive_Pods",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/RWorldSocialDistrict/Props/RWorld_Social_Interactive_Pods.upk",
+ "source_sha256": "d3bb6a74f591eb698ebdc642e02deb7a7f64be404e15f53e4044a8562f20016a",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_Social_Interactive_Pods.upk#Interactive_Pods_DIFF",
+   "object": "Interactive_Pods_DIFF",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_Social_Interactive_Pods/RWorld_Social_Interactive_Pods/Texture2D/Interactive_Pods_DIFF.tga",
+   "extracted_sha256": "b65dce7fffa45500e2494d037b6fe833cb5983d9fa42012c55d8415026c6df94",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_Social_Interactive_Pods/RWorld_Social_Interactive_Pods/Texture2D/Interactive_Pods_DIFF.tga",
+   "output_sha256": "b65dce7fffa45500e2494d037b6fe833cb5983d9fa42012c55d8415026c6df94",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_Social_Interactive_Pods/Interactive_Pods_DIFF.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_Social_Interactive_Pods.upk#Interactive_Pods_NORM",
+   "object": "Interactive_Pods_NORM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_Social_Interactive_Pods/RWorld_Social_Interactive_Pods/Texture2D/Interactive_Pods_NORM.tga",
+   "extracted_sha256": "93a0a59a090bc08ba5a931eb5f4d1b35a34bdd95d9f8b286586499a44bf915fd",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_Social_Interactive_Pods/RWorld_Social_Interactive_Pods/Texture2D/Interactive_Pods_NORM.tga",
+   "output_sha256": "93a0a59a090bc08ba5a931eb5f4d1b35a34bdd95d9f8b286586499a44bf915fd",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_Social_Interactive_Pods/Interactive_Pods_NORM.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_Social_Interactive_Pods.upk#Interactive_Pods_Screen_Diff",
+   "object": "Interactive_Pods_Screen_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_Social_Interactive_Pods/RWorld_Social_Interactive_Pods/Texture2D/Interactive_Pods_Screen_Diff.tga",
+   "extracted_sha256": "0babbab8bfd2d2c685f00c3baab45a464a06c6910f55ea5d056a26d1042e537d",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_Social_Interactive_Pods/RWorld_Social_Interactive_Pods/Texture2D/Interactive_Pods_Screen_Diff.tga",
+   "output_sha256": "0babbab8bfd2d2c685f00c3baab45a464a06c6910f55ea5d056a26d1042e537d",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_Social_Interactive_Pods/Interactive_Pods_Screen_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_Social_Interactive_Pods.upk#Interactive_Pods_Text",
+   "object": "Interactive_Pods_Text",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_Social_Interactive_Pods/RWorld_Social_Interactive_Pods/Texture2D/Interactive_Pods_Text.tga",
+   "extracted_sha256": "88e36bddebc6d6daf78ce5838eed16e0542f79cab68045dabb404249b4ef4609",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_Social_Interactive_Pods/RWorld_Social_Interactive_Pods/Texture2D/Interactive_Pods_Text.tga",
+   "output_sha256": "88e36bddebc6d6daf78ce5838eed16e0542f79cab68045dabb404249b4ef4609",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_Social_Interactive_Pods/Interactive_Pods_Text.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_Social_Interactive_Pods.upk#MI_Interactive_Pods_APBay_Text_MAT",
+   "object": "MI_Interactive_Pods_APBay_Text_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Interactive_Pods_APBay_Text_MAT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_Social_Interactive_Pods/RWorld_Social_Interactive_Pods/Texture2D/Interactive_Pods_Text.tga",
+   "extracted_sha256": "88e36bddebc6d6daf78ce5838eed16e0542f79cab68045dabb404249b4ef4609",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_Social_Interactive_Pods/RWorld_Social_Interactive_Pods/Texture2D/Interactive_Pods_Text.tga",
+   "output_sha256": "88e36bddebc6d6daf78ce5838eed16e0542f79cab68045dabb404249b4ef4609",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_Social_Interactive_Pods/MI_Interactive_Pods_APBay_Text_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_Social_Interactive_Pods.upk#MI_Interactive_Pods_Garage_Text_MAT",
+   "object": "MI_Interactive_Pods_Garage_Text_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Interactive_Pods_Garage_Text_MAT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_Social_Interactive_Pods/RWorld_Social_Interactive_Pods/Texture2D/Interactive_Pods_Text.tga",
+   "extracted_sha256": "88e36bddebc6d6daf78ce5838eed16e0542f79cab68045dabb404249b4ef4609",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_Social_Interactive_Pods/RWorld_Social_Interactive_Pods/Texture2D/Interactive_Pods_Text.tga",
+   "output_sha256": "88e36bddebc6d6daf78ce5838eed16e0542f79cab68045dabb404249b4ef4609",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_Social_Interactive_Pods/MI_Interactive_Pods_Garage_Text_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_Social_Interactive_Pods.upk#MI_Interactive_Pods_MAT",
+   "object": "MI_Interactive_Pods_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Interactive_Pods_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_Social_Interactive_Pods/RWorld_Social_Interactive_Pods/Texture2D/Interactive_Pods_DIFF.tga",
+   "extracted_sha256": "b65dce7fffa45500e2494d037b6fe833cb5983d9fa42012c55d8415026c6df94",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_Social_Interactive_Pods/RWorld_Social_Interactive_Pods/Texture2D/Interactive_Pods_DIFF.tga",
+   "output_sha256": "b65dce7fffa45500e2494d037b6fe833cb5983d9fa42012c55d8415026c6df94",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_Social_Interactive_Pods/MI_Interactive_Pods_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_Social_Interactive_Pods.upk#MI_Interactive_Pods_Music_Text_MAT",
+   "object": "MI_Interactive_Pods_Music_Text_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Interactive_Pods_Music_Text_MAT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_Social_Interactive_Pods/RWorld_Social_Interactive_Pods/Texture2D/Interactive_Pods_Text.tga",
+   "extracted_sha256": "88e36bddebc6d6daf78ce5838eed16e0542f79cab68045dabb404249b4ef4609",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_Social_Interactive_Pods/RWorld_Social_Interactive_Pods/Texture2D/Interactive_Pods_Text.tga",
+   "output_sha256": "88e36bddebc6d6daf78ce5838eed16e0542f79cab68045dabb404249b4ef4609",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_Social_Interactive_Pods/MI_Interactive_Pods_Music_Text_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_Social_Interactive_Pods.upk#MI_Interactive_Pods_Persona_Text_MAT",
+   "object": "MI_Interactive_Pods_Persona_Text_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Interactive_Pods_Persona_Text_MAT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_Social_Interactive_Pods/RWorld_Social_Interactive_Pods/Texture2D/Interactive_Pods_Text.tga",
+   "extracted_sha256": "88e36bddebc6d6daf78ce5838eed16e0542f79cab68045dabb404249b4ef4609",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_Social_Interactive_Pods/RWorld_Social_Interactive_Pods/Texture2D/Interactive_Pods_Text.tga",
+   "output_sha256": "88e36bddebc6d6daf78ce5838eed16e0542f79cab68045dabb404249b4ef4609",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_Social_Interactive_Pods/MI_Interactive_Pods_Persona_Text_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_Social_Interactive_Pods.upk#MI_Interactive_Pods_Symbol_Text_MAT",
+   "object": "MI_Interactive_Pods_Symbol_Text_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Interactive_Pods_Symbol_Text_MAT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_Social_Interactive_Pods/RWorld_Social_Interactive_Pods/Texture2D/Interactive_Pods_Text.tga",
+   "extracted_sha256": "88e36bddebc6d6daf78ce5838eed16e0542f79cab68045dabb404249b4ef4609",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_Social_Interactive_Pods/RWorld_Social_Interactive_Pods/Texture2D/Interactive_Pods_Text.tga",
+   "output_sha256": "88e36bddebc6d6daf78ce5838eed16e0542f79cab68045dabb404249b4ef4609",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_Social_Interactive_Pods/MI_Interactive_Pods_Symbol_Text_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_Social_Interactive_Pods.upk#MI_Interactive_Pods_Wardrobe_Text_MAT",
+   "object": "MI_Interactive_Pods_Wardrobe_Text_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Interactive_Pods_Wardrobe_Text_MAT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_Social_Interactive_Pods/RWorld_Social_Interactive_Pods/Texture2D/Interactive_Pods_Text.tga",
+   "extracted_sha256": "88e36bddebc6d6daf78ce5838eed16e0542f79cab68045dabb404249b4ef4609",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_Social_Interactive_Pods/RWorld_Social_Interactive_Pods/Texture2D/Interactive_Pods_Text.tga",
+   "output_sha256": "88e36bddebc6d6daf78ce5838eed16e0542f79cab68045dabb404249b4ef4609",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_Social_Interactive_Pods/MI_Interactive_Pods_Wardrobe_Text_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_Social_Interactive_Pods.upk#MI_Screen_FX_APBay_MAT",
+   "object": "MI_Screen_FX_APBay_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Screen_FX_APBay_MAT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_Social_Interactive_Pods/RWorld_Social_Interactive_Pods/Texture2D/Interactive_Pods_Screen_Diff.tga",
+   "extracted_sha256": "0babbab8bfd2d2c685f00c3baab45a464a06c6910f55ea5d056a26d1042e537d",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_Social_Interactive_Pods/RWorld_Social_Interactive_Pods/Texture2D/Interactive_Pods_Screen_Diff.tga",
+   "output_sha256": "0babbab8bfd2d2c685f00c3baab45a464a06c6910f55ea5d056a26d1042e537d",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_Social_Interactive_Pods/MI_Screen_FX_APBay_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_Social_Interactive_Pods.upk#MI_Screen_FX_Body_MAT",
+   "object": "MI_Screen_FX_Body_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Screen_FX_Body_MAT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_Social_Interactive_Pods/RWorld_Social_Interactive_Pods/Texture2D/Interactive_Pods_Screen_Diff.tga",
+   "extracted_sha256": "0babbab8bfd2d2c685f00c3baab45a464a06c6910f55ea5d056a26d1042e537d",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_Social_Interactive_Pods/RWorld_Social_Interactive_Pods/Texture2D/Interactive_Pods_Screen_Diff.tga",
+   "output_sha256": "0babbab8bfd2d2c685f00c3baab45a464a06c6910f55ea5d056a26d1042e537d",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_Social_Interactive_Pods/MI_Screen_FX_Body_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_Social_Interactive_Pods.upk#MI_Screen_FX_Brush_MAT",
+   "object": "MI_Screen_FX_Brush_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Screen_FX_Brush_MAT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_Social_Interactive_Pods/RWorld_Social_Interactive_Pods/Texture2D/Interactive_Pods_Screen_Diff.tga",
+   "extracted_sha256": "0babbab8bfd2d2c685f00c3baab45a464a06c6910f55ea5d056a26d1042e537d",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_Social_Interactive_Pods/RWorld_Social_Interactive_Pods/Texture2D/Interactive_Pods_Screen_Diff.tga",
+   "output_sha256": "0babbab8bfd2d2c685f00c3baab45a464a06c6910f55ea5d056a26d1042e537d",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_Social_Interactive_Pods/MI_Screen_FX_Brush_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_Social_Interactive_Pods.upk#MI_Screen_FX_Clothing_MAT",
+   "object": "MI_Screen_FX_Clothing_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Screen_FX_Clothing_MAT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_Social_Interactive_Pods/RWorld_Social_Interactive_Pods/Texture2D/Interactive_Pods_Screen_Diff.tga",
+   "extracted_sha256": "0babbab8bfd2d2c685f00c3baab45a464a06c6910f55ea5d056a26d1042e537d",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_Social_Interactive_Pods/RWorld_Social_Interactive_Pods/Texture2D/Interactive_Pods_Screen_Diff.tga",
+   "output_sha256": "0babbab8bfd2d2c685f00c3baab45a464a06c6910f55ea5d056a26d1042e537d",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_Social_Interactive_Pods/MI_Screen_FX_Clothing_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_Social_Interactive_Pods.upk#MI_Screen_FX_Garage_MAT",
+   "object": "MI_Screen_FX_Garage_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Screen_FX_Garage_MAT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_Social_Interactive_Pods/RWorld_Social_Interactive_Pods/Texture2D/Interactive_Pods_Screen_Diff.tga",
+   "extracted_sha256": "0babbab8bfd2d2c685f00c3baab45a464a06c6910f55ea5d056a26d1042e537d",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_Social_Interactive_Pods/RWorld_Social_Interactive_Pods/Texture2D/Interactive_Pods_Screen_Diff.tga",
+   "output_sha256": "0babbab8bfd2d2c685f00c3baab45a464a06c6910f55ea5d056a26d1042e537d",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_Social_Interactive_Pods/MI_Screen_FX_Garage_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_Social_Interactive_Pods.upk#MI_Screen_FX_Music_MAT",
+   "object": "MI_Screen_FX_Music_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Screen_FX_Music_MAT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_Social_Interactive_Pods/RWorld_Social_Interactive_Pods/Texture2D/Interactive_Pods_Screen_Diff.tga",
+   "extracted_sha256": "0babbab8bfd2d2c685f00c3baab45a464a06c6910f55ea5d056a26d1042e537d",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_Social_Interactive_Pods/RWorld_Social_Interactive_Pods/Texture2D/Interactive_Pods_Screen_Diff.tga",
+   "output_sha256": "0babbab8bfd2d2c685f00c3baab45a464a06c6910f55ea5d056a26d1042e537d",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_Social_Interactive_Pods/MI_Screen_FX_Music_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_Social_Interactive_Pods.upk#MI_Screen_FX_Vault_MAT",
+   "object": "MI_Screen_FX_Vault_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Screen_FX_Vault_MAT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_Social_Interactive_Pods/RWorld_Social_Interactive_Pods/Texture2D/Interactive_Pods_Screen_Diff.tga",
+   "extracted_sha256": "0babbab8bfd2d2c685f00c3baab45a464a06c6910f55ea5d056a26d1042e537d",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_Social_Interactive_Pods/RWorld_Social_Interactive_Pods/Texture2D/Interactive_Pods_Screen_Diff.tga",
+   "output_sha256": "0babbab8bfd2d2c685f00c3baab45a464a06c6910f55ea5d056a26d1042e537d",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_Social_Interactive_Pods/MI_Screen_FX_Vault_MAT.uasset"
+  }
+ ]
+}

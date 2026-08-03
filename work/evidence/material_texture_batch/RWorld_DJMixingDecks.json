@@ -1,0 +1,76 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "RWorld_DJMixingDecks",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/RWorldSocialDistrict/Props/RWorld_DJMixingDecks.upk",
+ "source_sha256": "28799627564c7f202ccc6fa16702d5247017bf0730e8dd61929b9660c8774ee9",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_DJMixingDecks.upk#DJMixingDecks_DiffSpec",
+   "object": "DJMixingDecks_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_DJMixingDecks/RWorld_DJMixingDecks/Texture2D/DJMixingDecks_DiffSpec.tga",
+   "extracted_sha256": "7e723e35c12544cc2c2aebcab2f1fab84e5195e626c5dad37de68e30b37a12cb",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_DJMixingDecks/RWorld_DJMixingDecks/Texture2D/DJMixingDecks_DiffSpec.tga",
+   "output_sha256": "7e723e35c12544cc2c2aebcab2f1fab84e5195e626c5dad37de68e30b37a12cb",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_DJMixingDecks/DJMixingDecks_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_DJMixingDecks.upk#DJMixingDecks_Emissive",
+   "object": "DJMixingDecks_Emissive",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_DJMixingDecks/RWorld_DJMixingDecks/Texture2D/DJMixingDecks_Emissive.tga",
+   "extracted_sha256": "199496e262c748d63d90f5781f81d5ae212ba8d93cbdde9b9ef12d3b2a3eb40a",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_DJMixingDecks/RWorld_DJMixingDecks/Texture2D/DJMixingDecks_Emissive.tga",
+   "output_sha256": "199496e262c748d63d90f5781f81d5ae212ba8d93cbdde9b9ef12d3b2a3eb40a",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_DJMixingDecks/DJMixingDecks_Emissive.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_DJMixingDecks.upk#DJMixingDecks_Norm",
+   "object": "DJMixingDecks_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_DJMixingDecks/RWorld_DJMixingDecks/Texture2D/DJMixingDecks_Norm.tga",
+   "extracted_sha256": "42aa98e2d54883d386167b2c2ce41e3a622a3dd89d510abe767712ee32b7a4ff",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_DJMixingDecks/RWorld_DJMixingDecks/Texture2D/DJMixingDecks_Norm.tga",
+   "output_sha256": "42aa98e2d54883d386167b2c2ce41e3a622a3dd89d510abe767712ee32b7a4ff",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_DJMixingDecks/DJMixingDecks_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_DJMixingDecks.upk#MI_DJMixingDecks_EnvironmentVersion",
+   "object": "MI_DJMixingDecks_EnvironmentVersion",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "DJMixingDecks_EnvironmentVersion",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_DJMixingDecks/RWorld_DJMixingDecks/Texture2D/DJMixingDecks_DiffSpec.tga",
+   "extracted_sha256": "7e723e35c12544cc2c2aebcab2f1fab84e5195e626c5dad37de68e30b37a12cb",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_DJMixingDecks/RWorld_DJMixingDecks/Texture2D/DJMixingDecks_DiffSpec.tga",
+   "output_sha256": "7e723e35c12544cc2c2aebcab2f1fab84e5195e626c5dad37de68e30b37a12cb",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_DJMixingDecks/MI_DJMixingDecks_EnvironmentVersion.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_DJMixingDecks.upk#MI_DJMixingDecks_Mat",
+   "object": "MI_DJMixingDecks_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "DJMixingDecks_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_DJMixingDecks/RWorld_DJMixingDecks/Texture2D/DJMixingDecks_DiffSpec.tga",
+   "extracted_sha256": "7e723e35c12544cc2c2aebcab2f1fab84e5195e626c5dad37de68e30b37a12cb",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_DJMixingDecks/RWorld_DJMixingDecks/Texture2D/DJMixingDecks_DiffSpec.tga",
+   "output_sha256": "7e723e35c12544cc2c2aebcab2f1fab84e5195e626c5dad37de68e30b37a12cb",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_DJMixingDecks/MI_DJMixingDecks_Mat.uasset"
+  }
+ ]
+}

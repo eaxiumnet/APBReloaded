@@ -1,0 +1,199 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "CargoContainer",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/CargoContainer.upk",
+ "source_sha256": "2498bdf9aa50849973a76721823971855155fefa4512567c345d5a388851b977",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/CargoContainer.upk#CargoContainer_DiffSpec",
+   "object": "CargoContainer_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CargoContainer/CargoContainer/Texture2D/CargoContainer_DiffSpec.tga",
+   "extracted_sha256": "1e57508ce10aafbbedc50e83eaa0d1f142b08cf0de13865f49f3c88c581ff5c2",
+   "output_file": "Content/Extracted/MaterialDatabase/CargoContainer/CargoContainer/Texture2D/CargoContainer_DiffSpec.tga",
+   "output_sha256": "1e57508ce10aafbbedc50e83eaa0d1f142b08cf0de13865f49f3c88c581ff5c2",
+   "uasset": "Content/Imported/MaterialDatabase/CargoContainer/CargoContainer_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/CargoContainer.upk#CargoContainer_Norm",
+   "object": "CargoContainer_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CargoContainer/CargoContainer/Texture2D/CargoContainer_Norm.tga",
+   "extracted_sha256": "8896e90be5f90a77f58491073334571edd2c0df8c1be1f46d2455fb6a998608d",
+   "output_file": "Content/Extracted/MaterialDatabase/CargoContainer/CargoContainer/Texture2D/CargoContainer_Norm.tga",
+   "output_sha256": "8896e90be5f90a77f58491073334571edd2c0df8c1be1f46d2455fb6a998608d",
+   "uasset": "Content/Imported/MaterialDatabase/CargoContainer/CargoContainer_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/CargoContainer.upk#CargoContainer_Opac",
+   "object": "CargoContainer_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CargoContainer/CargoContainer/Texture2D/CargoContainer_Opac.tga",
+   "extracted_sha256": "80a8ddadb1cfcd856d689bd82e096ee892042ff5597ed4e41d8c04dc5a4a331c",
+   "output_file": "Content/Extracted/MaterialDatabase/CargoContainer/CargoContainer/Texture2D/CargoContainer_Opac.tga",
+   "output_sha256": "80a8ddadb1cfcd856d689bd82e096ee892042ff5597ed4e41d8c04dc5a4a331c",
+   "uasset": "Content/Imported/MaterialDatabase/CargoContainer/CargoContainer_Opac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/CargoContainer.upk#CargoContainerRiot_DiffSpec",
+   "object": "CargoContainerRiot_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CargoContainer/CargoContainer/Texture2D/CargoContainerRiot_DiffSpec.tga",
+   "extracted_sha256": "5fe7580844e1892aa48a087f999fa4c8b838e980becf48cb96b2c216380e35b0",
+   "output_file": "Content/Extracted/MaterialDatabase/CargoContainer/CargoContainer/Texture2D/CargoContainerRiot_DiffSpec.tga",
+   "output_sha256": "5fe7580844e1892aa48a087f999fa4c8b838e980becf48cb96b2c216380e35b0",
+   "uasset": "Content/Imported/MaterialDatabase/CargoContainer/CargoContainerRiot_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/CargoContainer.upk#MI_CargoContainer_Blue_Mat_INST",
+   "object": "MI_CargoContainer_Blue_Mat_INST",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CargoContainer_Blue_Mat_INST",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CargoContainer/CargoContainer/Texture2D/CargoContainer_DiffSpec.tga",
+   "extracted_sha256": "1e57508ce10aafbbedc50e83eaa0d1f142b08cf0de13865f49f3c88c581ff5c2",
+   "output_file": "Content/Extracted/MaterialDatabase/CargoContainer/CargoContainer/Texture2D/CargoContainer_DiffSpec.tga",
+   "output_sha256": "1e57508ce10aafbbedc50e83eaa0d1f142b08cf0de13865f49f3c88c581ff5c2",
+   "uasset": "Content/Imported/MaterialDatabase/CargoContainer/MI_CargoContainer_Blue_Mat_INST.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/CargoContainer.upk#MI_CargoContainer_Brown_Mat_INST",
+   "object": "MI_CargoContainer_Brown_Mat_INST",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CargoContainer_Brown_Mat_INST",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CargoContainer/CargoContainer/Texture2D/CargoContainer_DiffSpec.tga",
+   "extracted_sha256": "1e57508ce10aafbbedc50e83eaa0d1f142b08cf0de13865f49f3c88c581ff5c2",
+   "output_file": "Content/Extracted/MaterialDatabase/CargoContainer/CargoContainer/Texture2D/CargoContainer_DiffSpec.tga",
+   "output_sha256": "1e57508ce10aafbbedc50e83eaa0d1f142b08cf0de13865f49f3c88c581ff5c2",
+   "uasset": "Content/Imported/MaterialDatabase/CargoContainer/MI_CargoContainer_Brown_Mat_INST.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/CargoContainer.upk#MI_CargoContainer_Green_Mat_INST",
+   "object": "MI_CargoContainer_Green_Mat_INST",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CargoContainer_Green_Mat_INST",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CargoContainer/CargoContainer/Texture2D/CargoContainer_DiffSpec.tga",
+   "extracted_sha256": "1e57508ce10aafbbedc50e83eaa0d1f142b08cf0de13865f49f3c88c581ff5c2",
+   "output_file": "Content/Extracted/MaterialDatabase/CargoContainer/CargoContainer/Texture2D/CargoContainer_DiffSpec.tga",
+   "output_sha256": "1e57508ce10aafbbedc50e83eaa0d1f142b08cf0de13865f49f3c88c581ff5c2",
+   "uasset": "Content/Imported/MaterialDatabase/CargoContainer/MI_CargoContainer_Green_Mat_INST.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/CargoContainer.upk#MI_CargoContainer_Mat",
+   "object": "MI_CargoContainer_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CargoContainer_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CargoContainer/CargoContainer/Texture2D/CargoContainer_DiffSpec.tga",
+   "extracted_sha256": "1e57508ce10aafbbedc50e83eaa0d1f142b08cf0de13865f49f3c88c581ff5c2",
+   "output_file": "Content/Extracted/MaterialDatabase/CargoContainer/CargoContainer/Texture2D/CargoContainer_DiffSpec.tga",
+   "output_sha256": "1e57508ce10aafbbedc50e83eaa0d1f142b08cf0de13865f49f3c88c581ff5c2",
+   "uasset": "Content/Imported/MaterialDatabase/CargoContainer/MI_CargoContainer_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/CargoContainer.upk#MI_CargoContainer_Red_Mat_INST",
+   "object": "MI_CargoContainer_Red_Mat_INST",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CargoContainer_Red_Mat_INST",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CargoContainer/CargoContainer/Texture2D/CargoContainer_DiffSpec.tga",
+   "extracted_sha256": "1e57508ce10aafbbedc50e83eaa0d1f142b08cf0de13865f49f3c88c581ff5c2",
+   "output_file": "Content/Extracted/MaterialDatabase/CargoContainer/CargoContainer/Texture2D/CargoContainer_DiffSpec.tga",
+   "output_sha256": "1e57508ce10aafbbedc50e83eaa0d1f142b08cf0de13865f49f3c88c581ff5c2",
+   "uasset": "Content/Imported/MaterialDatabase/CargoContainer/MI_CargoContainer_Red_Mat_INST.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/CargoContainer.upk#MI_CargoContainer_Riot_Mat_INST",
+   "object": "MI_CargoContainer_Riot_Mat_INST",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CargoContainer_Riot_Mat_INST",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CargoContainer/CargoContainer/Texture2D/CargoContainerRiot_DiffSpec.tga",
+   "extracted_sha256": "5fe7580844e1892aa48a087f999fa4c8b838e980becf48cb96b2c216380e35b0",
+   "output_file": "Content/Extracted/MaterialDatabase/CargoContainer/CargoContainer/Texture2D/CargoContainerRiot_DiffSpec.tga",
+   "output_sha256": "5fe7580844e1892aa48a087f999fa4c8b838e980becf48cb96b2c216380e35b0",
+   "uasset": "Content/Imported/MaterialDatabase/CargoContainer/MI_CargoContainer_Riot_Mat_INST.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/CargoContainer.upk#MI_CargoContainer_White_Mat_INST",
+   "object": "MI_CargoContainer_White_Mat_INST",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CargoContainer_White_Mat_INST",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CargoContainer/CargoContainer/Texture2D/CargoContainer_DiffSpec.tga",
+   "extracted_sha256": "1e57508ce10aafbbedc50e83eaa0d1f142b08cf0de13865f49f3c88c581ff5c2",
+   "output_file": "Content/Extracted/MaterialDatabase/CargoContainer/CargoContainer/Texture2D/CargoContainer_DiffSpec.tga",
+   "output_sha256": "1e57508ce10aafbbedc50e83eaa0d1f142b08cf0de13865f49f3c88c581ff5c2",
+   "uasset": "Content/Imported/MaterialDatabase/CargoContainer/MI_CargoContainer_White_Mat_INST.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/CargoContainer.upk#MI_CargoContainer_Yellow_Mat",
+   "object": "MI_CargoContainer_Yellow_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CargoContainer_Yellow_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CargoContainer/CargoContainer/Texture2D/CargoContainer_DiffSpec.tga",
+   "extracted_sha256": "1e57508ce10aafbbedc50e83eaa0d1f142b08cf0de13865f49f3c88c581ff5c2",
+   "output_file": "Content/Extracted/MaterialDatabase/CargoContainer/CargoContainer/Texture2D/CargoContainer_DiffSpec.tga",
+   "output_sha256": "1e57508ce10aafbbedc50e83eaa0d1f142b08cf0de13865f49f3c88c581ff5c2",
+   "uasset": "Content/Imported/MaterialDatabase/CargoContainer/MI_CargoContainer_Yellow_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/CargoContainer.upk#MI_CargoContainer_Yellow_Mat_INST",
+   "object": "MI_CargoContainer_Yellow_Mat_INST",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CargoContainer_Yellow_Mat_INST",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CargoContainer/CargoContainer/Texture2D/CargoContainer_DiffSpec.tga",
+   "extracted_sha256": "1e57508ce10aafbbedc50e83eaa0d1f142b08cf0de13865f49f3c88c581ff5c2",
+   "output_file": "Content/Extracted/MaterialDatabase/CargoContainer/CargoContainer/Texture2D/CargoContainer_DiffSpec.tga",
+   "output_sha256": "1e57508ce10aafbbedc50e83eaa0d1f142b08cf0de13865f49f3c88c581ff5c2",
+   "uasset": "Content/Imported/MaterialDatabase/CargoContainer/MI_CargoContainer_Yellow_Mat_INST.uasset"
+  }
+ ]
+}

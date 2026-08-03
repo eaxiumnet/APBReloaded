@@ -1,0 +1,35 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "WindowGuards",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/FeatureMaterials/WindowGuards.upk",
+ "source_sha256": "82faf0ab8fe4008f9b14fe3e4599b0933c3e34841281a063ea183bbeb3e4ee33",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/WindowGuards.upk#MI_WindowGuards",
+   "object": "MI_WindowGuards",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WindowGuards",
+   "texture_roles": [
+    "Diffuse",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WindowGuards/WindowGuards/Texture2D/WindowGuard_DiffAlpha.tga",
+   "extracted_sha256": "b5b265bd75473163e69905a236580b8c00ac47aa2eb09643c6e32d9ec51aa978",
+   "output_file": "Content/Extracted/MaterialDatabase/WindowGuards/WindowGuards/Texture2D/WindowGuard_DiffAlpha.tga",
+   "output_sha256": "b5b265bd75473163e69905a236580b8c00ac47aa2eb09643c6e32d9ec51aa978",
+   "uasset": "Content/Imported/MaterialDatabase/WindowGuards/MI_WindowGuards.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/WindowGuards.upk#WindowGuard_DiffAlpha",
+   "object": "WindowGuard_DiffAlpha",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WindowGuards/WindowGuards/Texture2D/WindowGuard_DiffAlpha.tga",
+   "extracted_sha256": "b5b265bd75473163e69905a236580b8c00ac47aa2eb09643c6e32d9ec51aa978",
+   "output_file": "Content/Extracted/MaterialDatabase/WindowGuards/WindowGuards/Texture2D/WindowGuard_DiffAlpha.tga",
+   "output_sha256": "b5b265bd75473163e69905a236580b8c00ac47aa2eb09643c6e32d9ec51aa978",
+   "uasset": "Content/Imported/MaterialDatabase/WindowGuards/WindowGuard_DiffAlpha.uasset"
+  }
+ ]
+}

@@ -1,0 +1,60 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "LoadingBayDoor",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/FeatureMaterials/LoadingBayDoor.upk",
+ "source_sha256": "01b656014e6f474d0c9c920d315272aab0a20394c6dade8fadbf0af67d6b6d95",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/LoadingBayDoor.upk#LoadingBayDoor_DiffSpec",
+   "object": "LoadingBayDoor_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/LoadingBayDoor/LoadingBayDoor/Texture2D/LoadingBayDoor_DiffSpec.tga",
+   "extracted_sha256": "5a21f1ee85de686998a864c48fdeecca31feb0034d455cae93a06abd12a6c290",
+   "output_file": "Content/Extracted/MaterialDatabase/LoadingBayDoor/LoadingBayDoor/Texture2D/LoadingBayDoor_DiffSpec.tga",
+   "output_sha256": "5a21f1ee85de686998a864c48fdeecca31feb0034d455cae93a06abd12a6c290",
+   "uasset": "Content/Imported/MaterialDatabase/LoadingBayDoor/LoadingBayDoor_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/LoadingBayDoor.upk#LoadingBayDoor_Emis",
+   "object": "LoadingBayDoor_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/LoadingBayDoor/LoadingBayDoor/Texture2D/LoadingBayDoor_Emis.tga",
+   "extracted_sha256": "b1f235b061eea445ed5efe39d24ab952f444969ef07b785bfdab84c2696bd4c4",
+   "output_file": "Content/Extracted/MaterialDatabase/LoadingBayDoor/LoadingBayDoor/Texture2D/LoadingBayDoor_Emis.tga",
+   "output_sha256": "b1f235b061eea445ed5efe39d24ab952f444969ef07b785bfdab84c2696bd4c4",
+   "uasset": "Content/Imported/MaterialDatabase/LoadingBayDoor/LoadingBayDoor_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/LoadingBayDoor.upk#LoadingBayDoor_Norm",
+   "object": "LoadingBayDoor_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/LoadingBayDoor/LoadingBayDoor/Texture2D/LoadingBayDoor_Norm.tga",
+   "extracted_sha256": "5e7f6038a227af542bf602e3a104d8436a56e2d1dc26980e2d8462ef5bd2cd15",
+   "output_file": "Content/Extracted/MaterialDatabase/LoadingBayDoor/LoadingBayDoor/Texture2D/LoadingBayDoor_Norm.tga",
+   "output_sha256": "5e7f6038a227af542bf602e3a104d8436a56e2d1dc26980e2d8462ef5bd2cd15",
+   "uasset": "Content/Imported/MaterialDatabase/LoadingBayDoor/LoadingBayDoor_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/LoadingBayDoor.upk#MI_LoadingBayDoor_Mat",
+   "object": "MI_LoadingBayDoor_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "LoadingBayDoor_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/LoadingBayDoor/LoadingBayDoor/Texture2D/LoadingBayDoor_DiffSpec.tga",
+   "extracted_sha256": "5a21f1ee85de686998a864c48fdeecca31feb0034d455cae93a06abd12a6c290",
+   "output_file": "Content/Extracted/MaterialDatabase/LoadingBayDoor/LoadingBayDoor/Texture2D/LoadingBayDoor_DiffSpec.tga",
+   "output_sha256": "5a21f1ee85de686998a864c48fdeecca31feb0034d455cae93a06abd12a6c290",
+   "uasset": "Content/Imported/MaterialDatabase/LoadingBayDoor/MI_LoadingBayDoor_Mat.uasset"
+  }
+ ]
+}

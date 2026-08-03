@@ -1,0 +1,76 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "BankMachine",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/FeatureMaterials/BankMachine.upk",
+ "source_sha256": "ea9668264928adaef7d14105ecfd69e940da1b3630dad8672d6288033756bf79",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/BankMachine.upk#BankMachine_DiffSpec",
+   "object": "BankMachine_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BankMachine/BankMachine/Texture2D/BankMachine_DiffSpec.tga",
+   "extracted_sha256": "d48337aa9814689616273f3ed7ffe1d9e6cfd88d3f14d9db0840458770b4d7c7",
+   "output_file": "Content/Extracted/MaterialDatabase/BankMachine/BankMachine/Texture2D/BankMachine_DiffSpec.tga",
+   "output_sha256": "d48337aa9814689616273f3ed7ffe1d9e6cfd88d3f14d9db0840458770b4d7c7",
+   "uasset": "Content/Imported/MaterialDatabase/BankMachine/BankMachine_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/BankMachine.upk#BankMachine_Emis",
+   "object": "BankMachine_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BankMachine/BankMachine/Texture2D/BankMachine_Emis.tga",
+   "extracted_sha256": "2b535ba28337a685a4fae57a77030f6c1f327e83baaf8d83181f8a03f611ea1e",
+   "output_file": "Content/Extracted/MaterialDatabase/BankMachine/BankMachine/Texture2D/BankMachine_Emis.tga",
+   "output_sha256": "2b535ba28337a685a4fae57a77030f6c1f327e83baaf8d83181f8a03f611ea1e",
+   "uasset": "Content/Imported/MaterialDatabase/BankMachine/BankMachine_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/BankMachine.upk#BankMachine_Norm",
+   "object": "BankMachine_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BankMachine/BankMachine/Texture2D/BankMachine_Norm.tga",
+   "extracted_sha256": "4324bcedcc3041dd9af84ca67c274970764de1bdb3c6cff551976a1f83d56424",
+   "output_file": "Content/Extracted/MaterialDatabase/BankMachine/BankMachine/Texture2D/BankMachine_Norm.tga",
+   "output_sha256": "4324bcedcc3041dd9af84ca67c274970764de1bdb3c6cff551976a1f83d56424",
+   "uasset": "Content/Imported/MaterialDatabase/BankMachine/BankMachine_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/BankMachine.upk#MI_BankMachine_Mat",
+   "object": "MI_BankMachine_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "BankMachine_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BankMachine/BankMachine/Texture2D/BankMachine_DiffSpec.tga",
+   "extracted_sha256": "d48337aa9814689616273f3ed7ffe1d9e6cfd88d3f14d9db0840458770b4d7c7",
+   "output_file": "Content/Extracted/MaterialDatabase/BankMachine/BankMachine/Texture2D/BankMachine_DiffSpec.tga",
+   "output_sha256": "d48337aa9814689616273f3ed7ffe1d9e6cfd88d3f14d9db0840458770b4d7c7",
+   "uasset": "Content/Imported/MaterialDatabase/BankMachine/MI_BankMachine_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/BankMachine.upk#MI_BankMachine_Mat_Damage",
+   "object": "MI_BankMachine_Mat_Damage",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "BankMachine_Mat_Damage",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BankMachine/BankMachine/Texture2D/BankMachine_DiffSpec.tga",
+   "extracted_sha256": "d48337aa9814689616273f3ed7ffe1d9e6cfd88d3f14d9db0840458770b4d7c7",
+   "output_file": "Content/Extracted/MaterialDatabase/BankMachine/BankMachine/Texture2D/BankMachine_DiffSpec.tga",
+   "output_sha256": "d48337aa9814689616273f3ed7ffe1d9e6cfd88d3f14d9db0840458770b4d7c7",
+   "uasset": "Content/Imported/MaterialDatabase/BankMachine/MI_BankMachine_Mat_Damage.uasset"
+  }
+ ]
+}

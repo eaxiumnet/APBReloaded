@@ -1,0 +1,76 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "NewsRacksLadder",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/NewsRacksLadder.upk",
+ "source_sha256": "b2e5d86dda1e2c37f3d506e045178f41e65d09fbcd5adc22c327788d4f8e116f",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/NewsRacksLadder.upk#MI_NewsRacksLadder_Damage_Mat",
+   "object": "MI_NewsRacksLadder_Damage_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "NewsRacksLadder_Damage_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/NewsRacksLadder/NewsRacksLadder/Texture2D/NewsRacksLadder_DiffSpec.tga",
+   "extracted_sha256": "0a4948cb62af8f74d615c8c384257cc0f0481e295c7c1048df030ca82ca98ced",
+   "output_file": "Content/Extracted/MaterialDatabase/NewsRacksLadder/NewsRacksLadder/Texture2D/NewsRacksLadder_DiffSpec.tga",
+   "output_sha256": "0a4948cb62af8f74d615c8c384257cc0f0481e295c7c1048df030ca82ca98ced",
+   "uasset": "Content/Imported/MaterialDatabase/NewsRacksLadder/MI_NewsRacksLadder_Damage_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/NewsRacksLadder.upk#MI_NewsRacksLadder_Mat",
+   "object": "MI_NewsRacksLadder_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "NewsRacksLadder_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/NewsRacksLadder/NewsRacksLadder/Texture2D/NewsRacksLadder_DiffSpec.tga",
+   "extracted_sha256": "0a4948cb62af8f74d615c8c384257cc0f0481e295c7c1048df030ca82ca98ced",
+   "output_file": "Content/Extracted/MaterialDatabase/NewsRacksLadder/NewsRacksLadder/Texture2D/NewsRacksLadder_DiffSpec.tga",
+   "output_sha256": "0a4948cb62af8f74d615c8c384257cc0f0481e295c7c1048df030ca82ca98ced",
+   "uasset": "Content/Imported/MaterialDatabase/NewsRacksLadder/MI_NewsRacksLadder_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/NewsRacksLadder.upk#NewsRacksLadder_DiffSpec",
+   "object": "NewsRacksLadder_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/NewsRacksLadder/NewsRacksLadder/Texture2D/NewsRacksLadder_DiffSpec.tga",
+   "extracted_sha256": "0a4948cb62af8f74d615c8c384257cc0f0481e295c7c1048df030ca82ca98ced",
+   "output_file": "Content/Extracted/MaterialDatabase/NewsRacksLadder/NewsRacksLadder/Texture2D/NewsRacksLadder_DiffSpec.tga",
+   "output_sha256": "0a4948cb62af8f74d615c8c384257cc0f0481e295c7c1048df030ca82ca98ced",
+   "uasset": "Content/Imported/MaterialDatabase/NewsRacksLadder/NewsRacksLadder_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/NewsRacksLadder.upk#NewsRacksLadder_Norm",
+   "object": "NewsRacksLadder_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/NewsRacksLadder/NewsRacksLadder/Texture2D/NewsRacksLadder_Norm.tga",
+   "extracted_sha256": "a75338686166efa1bd9ef33a0ef16a1158632b5cb6c81ed117095ee5e7368ea3",
+   "output_file": "Content/Extracted/MaterialDatabase/NewsRacksLadder/NewsRacksLadder/Texture2D/NewsRacksLadder_Norm.tga",
+   "output_sha256": "a75338686166efa1bd9ef33a0ef16a1158632b5cb6c81ed117095ee5e7368ea3",
+   "uasset": "Content/Imported/MaterialDatabase/NewsRacksLadder/NewsRacksLadder_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/NewsRacksLadder.upk#NewsRacksLadder_Opac",
+   "object": "NewsRacksLadder_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/NewsRacksLadder/NewsRacksLadder/Texture2D/NewsRacksLadder_Opac.tga",
+   "extracted_sha256": "4a244a11032fad4565d90b31872951f581dd699da42a4633e54d88261b2f61ad",
+   "output_file": "Content/Extracted/MaterialDatabase/NewsRacksLadder/NewsRacksLadder/Texture2D/NewsRacksLadder_Opac.tga",
+   "output_sha256": "4a244a11032fad4565d90b31872951f581dd699da42a4633e54d88261b2f61ad",
+   "uasset": "Content/Imported/MaterialDatabase/NewsRacksLadder/NewsRacksLadder_Opac.uasset"
+  }
+ ]
+}

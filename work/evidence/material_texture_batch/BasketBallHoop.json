@@ -1,0 +1,99 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "BasketBallHoop",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/BasketBallHoop.upk",
+ "source_sha256": "2976be5d8ddd61c6e127eda72ec02e082ab4fdcadd5f355680467ea6062ec549",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/BasketBallHoop.upk#Basketball_DiffSpec",
+   "object": "Basketball_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BasketBallHoop/BasketBallHoop/Texture2D/Basketball_DiffSpec.tga",
+   "extracted_sha256": "c60e03a75acf7a41a9ed8403d1784e8b2dffeb87151b7dc0de744d2fd4a8828d",
+   "output_file": "Content/Extracted/MaterialDatabase/BasketBallHoop/BasketBallHoop/Texture2D/Basketball_DiffSpec.tga",
+   "output_sha256": "c60e03a75acf7a41a9ed8403d1784e8b2dffeb87151b7dc0de744d2fd4a8828d",
+   "uasset": "Content/Imported/MaterialDatabase/BasketBallHoop/Basketball_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/BasketBallHoop.upk#Basketball_Norm",
+   "object": "Basketball_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BasketBallHoop/BasketBallHoop/Texture2D/Basketball_Norm.tga",
+   "extracted_sha256": "7ea2893955f1b72a9e132e08154a4afcb64a21ef441bbf4c150442d1abf967a8",
+   "output_file": "Content/Extracted/MaterialDatabase/BasketBallHoop/BasketBallHoop/Texture2D/Basketball_Norm.tga",
+   "output_sha256": "7ea2893955f1b72a9e132e08154a4afcb64a21ef441bbf4c150442d1abf967a8",
+   "uasset": "Content/Imported/MaterialDatabase/BasketBallHoop/Basketball_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/BasketBallHoop.upk#BasketballHoop_DiffSpec",
+   "object": "BasketballHoop_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BasketBallHoop/BasketBallHoop/Texture2D/BasketballHoop_DiffSpec.tga",
+   "extracted_sha256": "414f7a6f32da689cf890b134a712f1910d65fe9d23dd12a8206b6bcd827c8d18",
+   "output_file": "Content/Extracted/MaterialDatabase/BasketBallHoop/BasketBallHoop/Texture2D/BasketballHoop_DiffSpec.tga",
+   "output_sha256": "414f7a6f32da689cf890b134a712f1910d65fe9d23dd12a8206b6bcd827c8d18",
+   "uasset": "Content/Imported/MaterialDatabase/BasketBallHoop/BasketballHoop_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/BasketBallHoop.upk#BasketballHoop_Norm",
+   "object": "BasketballHoop_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BasketBallHoop/BasketBallHoop/Texture2D/BasketballHoop_Norm.tga",
+   "extracted_sha256": "7e6b011b1203b0ae9872de44ae1e8419c759611f5bf8b044088f24c1e3a381fc",
+   "output_file": "Content/Extracted/MaterialDatabase/BasketBallHoop/BasketBallHoop/Texture2D/BasketballHoop_Norm.tga",
+   "output_sha256": "7e6b011b1203b0ae9872de44ae1e8419c759611f5bf8b044088f24c1e3a381fc",
+   "uasset": "Content/Imported/MaterialDatabase/BasketBallHoop/BasketballHoop_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/BasketBallHoop.upk#BasketballHoop_Opac",
+   "object": "BasketballHoop_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BasketBallHoop/BasketBallHoop/Texture2D/BasketballHoop_Opac.tga",
+   "extracted_sha256": "64b218e59396efaec9973fcd5b1bc41525cc195cf398b9acb98fd5b0bf1b006b",
+   "output_file": "Content/Extracted/MaterialDatabase/BasketBallHoop/BasketBallHoop/Texture2D/BasketballHoop_Opac.tga",
+   "output_sha256": "64b218e59396efaec9973fcd5b1bc41525cc195cf398b9acb98fd5b0bf1b006b",
+   "uasset": "Content/Imported/MaterialDatabase/BasketBallHoop/BasketballHoop_Opac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/BasketBallHoop.upk#MI_BasketBall_Mat",
+   "object": "MI_BasketBall_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "BasketBall_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BasketBallHoop/BasketBallHoop/Texture2D/Basketball_DiffSpec.tga",
+   "extracted_sha256": "c60e03a75acf7a41a9ed8403d1784e8b2dffeb87151b7dc0de744d2fd4a8828d",
+   "output_file": "Content/Extracted/MaterialDatabase/BasketBallHoop/BasketBallHoop/Texture2D/Basketball_DiffSpec.tga",
+   "output_sha256": "c60e03a75acf7a41a9ed8403d1784e8b2dffeb87151b7dc0de744d2fd4a8828d",
+   "uasset": "Content/Imported/MaterialDatabase/BasketBallHoop/MI_BasketBall_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/BasketBallHoop.upk#MI_BasketBallHoop_MAT",
+   "object": "MI_BasketBallHoop_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "BasketBallHoop_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BasketBallHoop/BasketBallHoop/Texture2D/BasketballHoop_DiffSpec.tga",
+   "extracted_sha256": "414f7a6f32da689cf890b134a712f1910d65fe9d23dd12a8206b6bcd827c8d18",
+   "output_file": "Content/Extracted/MaterialDatabase/BasketBallHoop/BasketBallHoop/Texture2D/BasketballHoop_DiffSpec.tga",
+   "output_sha256": "414f7a6f32da689cf890b134a712f1910d65fe9d23dd12a8206b6bcd827c8d18",
+   "uasset": "Content/Imported/MaterialDatabase/BasketBallHoop/MI_BasketBallHoop_MAT.uasset"
+  }
+ ]
+}

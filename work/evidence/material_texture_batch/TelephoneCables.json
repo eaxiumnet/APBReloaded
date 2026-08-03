@@ -1,0 +1,60 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "TelephoneCables",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/TelephoneCables.upk",
+ "source_sha256": "82bccdf05fa6eeef4ec3ad66dad5b32964b7d00f82b174daafbdf20bfe43c8d1",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/TelephoneCables.upk#MI_TelephoneCables_MAT",
+   "object": "MI_TelephoneCables_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "TelephoneCables_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/TelephoneCables/TelephoneCables/Texture2D/TelephoneCable_Diff.tga",
+   "extracted_sha256": "b9911a60c67a1bac20e610edc36a08a8cc5243ab375c2daf62bf1e425234e75c",
+   "output_file": "Content/Extracted/MaterialDatabase/TelephoneCables/TelephoneCables/Texture2D/TelephoneCable_Diff.tga",
+   "output_sha256": "b9911a60c67a1bac20e610edc36a08a8cc5243ab375c2daf62bf1e425234e75c",
+   "uasset": "Content/Imported/MaterialDatabase/TelephoneCables/MI_TelephoneCables_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/TelephoneCables.upk#TelephoneCable_Diff",
+   "object": "TelephoneCable_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/TelephoneCables/TelephoneCables/Texture2D/TelephoneCable_Diff.tga",
+   "extracted_sha256": "b9911a60c67a1bac20e610edc36a08a8cc5243ab375c2daf62bf1e425234e75c",
+   "output_file": "Content/Extracted/MaterialDatabase/TelephoneCables/TelephoneCables/Texture2D/TelephoneCable_Diff.tga",
+   "output_sha256": "b9911a60c67a1bac20e610edc36a08a8cc5243ab375c2daf62bf1e425234e75c",
+   "uasset": "Content/Imported/MaterialDatabase/TelephoneCables/TelephoneCable_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/TelephoneCables.upk#TelephoneCable_Norm",
+   "object": "TelephoneCable_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/TelephoneCables/TelephoneCables/Texture2D/TelephoneCable_Norm.tga",
+   "extracted_sha256": "33afac7b21daf943c3cc08a1fe59a2d2834493e5132599c3949a30262034f1d7",
+   "output_file": "Content/Extracted/MaterialDatabase/TelephoneCables/TelephoneCables/Texture2D/TelephoneCable_Norm.tga",
+   "output_sha256": "33afac7b21daf943c3cc08a1fe59a2d2834493e5132599c3949a30262034f1d7",
+   "uasset": "Content/Imported/MaterialDatabase/TelephoneCables/TelephoneCable_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/TelephoneCables.upk#TelephoneCable_Opac",
+   "object": "TelephoneCable_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/TelephoneCables/TelephoneCables/Texture2D/TelephoneCable_Opac.tga",
+   "extracted_sha256": "ad884c2b8b776ad508a47098128381b06b0cf75485199e4be085cceaaa8ef36a",
+   "output_file": "Content/Extracted/MaterialDatabase/TelephoneCables/TelephoneCables/Texture2D/TelephoneCable_Opac.tga",
+   "output_sha256": "ad884c2b8b776ad508a47098128381b06b0cf75485199e4be085cceaaa8ef36a",
+   "uasset": "Content/Imported/MaterialDatabase/TelephoneCables/TelephoneCable_Opac.uasset"
+  }
+ ]
+}

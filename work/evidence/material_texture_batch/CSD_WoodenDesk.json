@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "CSD_WoodenDesk",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/PropMaterials/CSD_WoodenDesk.upk",
+ "source_sha256": "131fae5aa8bb5332dfc240287a3f5772d8635b1794a27f61b36932e4227bb5df",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_WoodenDesk.upk#CSD_WoodenDesk_DiffSpec",
+   "object": "CSD_WoodenDesk_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_WoodenDesk/CSD_WoodenDesk/Texture2D/CSD_WoodenDesk_DiffSpec.tga",
+   "extracted_sha256": "5678e8fe2ad4db86022dcdba8e40d14c4845216c07b8f589b7c0736ca854e8d9",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_WoodenDesk/CSD_WoodenDesk/Texture2D/CSD_WoodenDesk_DiffSpec.tga",
+   "output_sha256": "5678e8fe2ad4db86022dcdba8e40d14c4845216c07b8f589b7c0736ca854e8d9",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_WoodenDesk/CSD_WoodenDesk_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_WoodenDesk.upk#CSD_WoodenDesk_Norm",
+   "object": "CSD_WoodenDesk_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_WoodenDesk/CSD_WoodenDesk/Texture2D/CSD_WoodenDesk_Norm.tga",
+   "extracted_sha256": "9b602108beeb0b85dcdba3aff04039430f7d78b12b65c697fe061bc202b9b090",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_WoodenDesk/CSD_WoodenDesk/Texture2D/CSD_WoodenDesk_Norm.tga",
+   "output_sha256": "9b602108beeb0b85dcdba3aff04039430f7d78b12b65c697fe061bc202b9b090",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_WoodenDesk/CSD_WoodenDesk_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_WoodenDesk.upk#MI_CSD_WoodenDesk_MAT",
+   "object": "MI_CSD_WoodenDesk_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CSD_WoodenDesk_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_WoodenDesk/CSD_WoodenDesk/Texture2D/CSD_WoodenDesk_DiffSpec.tga",
+   "extracted_sha256": "5678e8fe2ad4db86022dcdba8e40d14c4845216c07b8f589b7c0736ca854e8d9",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_WoodenDesk/CSD_WoodenDesk/Texture2D/CSD_WoodenDesk_DiffSpec.tga",
+   "output_sha256": "5678e8fe2ad4db86022dcdba8e40d14c4845216c07b8f589b7c0736ca854e8d9",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_WoodenDesk/MI_CSD_WoodenDesk_MAT.uasset"
+  }
+ ]
+}

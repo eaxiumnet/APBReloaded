@@ -1,0 +1,103 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "ArsonDoor",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/ArsonDoor.upk",
+ "source_sha256": "b812878686c4ad2b46df7455b9dac8e99a8e953e0fa900f461a3397e839eb5d2",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/ArsonDoor.upk#ArsonDoor_DamageNorm",
+   "object": "ArsonDoor_DamageNorm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ArsonDoor/ArsonDoor/Texture2D/ArsonDoor_DamageNorm.tga",
+   "extracted_sha256": "fc3564fc977b3c3e037215c3aca85d0e789beb946e85fdd347d34bb0a309b23d",
+   "output_file": "Content/Extracted/MaterialDatabase/ArsonDoor/ArsonDoor/Texture2D/ArsonDoor_DamageNorm.tga",
+   "output_sha256": "fc3564fc977b3c3e037215c3aca85d0e789beb946e85fdd347d34bb0a309b23d",
+   "uasset": "Content/Imported/MaterialDatabase/ArsonDoor/ArsonDoor_DamageNorm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/ArsonDoor.upk#ArsonDoor_DamageOpac",
+   "object": "ArsonDoor_DamageOpac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ArsonDoor/ArsonDoor/Texture2D/ArsonDoor_DamageOpac.tga",
+   "extracted_sha256": "721f1de6a590d597444a4c8ab07fc0c3ae1fa53123d1345b207b719cf35e7e29",
+   "output_file": "Content/Extracted/MaterialDatabase/ArsonDoor/ArsonDoor/Texture2D/ArsonDoor_DamageOpac.tga",
+   "output_sha256": "721f1de6a590d597444a4c8ab07fc0c3ae1fa53123d1345b207b719cf35e7e29",
+   "uasset": "Content/Imported/MaterialDatabase/ArsonDoor/ArsonDoor_DamageOpac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/ArsonDoor.upk#ArsonDoor_DiffSpec",
+   "object": "ArsonDoor_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ArsonDoor/ArsonDoor/Texture2D/ArsonDoor_DiffSpec.tga",
+   "extracted_sha256": "06128d4e8d92642d303259dbea75ae1d397d431ea4b118be032298dae2f6a005",
+   "output_file": "Content/Extracted/MaterialDatabase/ArsonDoor/ArsonDoor/Texture2D/ArsonDoor_DiffSpec.tga",
+   "output_sha256": "06128d4e8d92642d303259dbea75ae1d397d431ea4b118be032298dae2f6a005",
+   "uasset": "Content/Imported/MaterialDatabase/ArsonDoor/ArsonDoor_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/ArsonDoor.upk#ArsonDoor_Norm",
+   "object": "ArsonDoor_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ArsonDoor/ArsonDoor/Texture2D/ArsonDoor_Norm.tga",
+   "extracted_sha256": "9a5e324aceb0cb8b7087ed6b6f29d9f7716759c474a0603e8fb871b3b792a439",
+   "output_file": "Content/Extracted/MaterialDatabase/ArsonDoor/ArsonDoor/Texture2D/ArsonDoor_Norm.tga",
+   "output_sha256": "9a5e324aceb0cb8b7087ed6b6f29d9f7716759c474a0603e8fb871b3b792a439",
+   "uasset": "Content/Imported/MaterialDatabase/ArsonDoor/ArsonDoor_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/ArsonDoor.upk#MI_ArsonDoor_Damage1_Mat",
+   "object": "MI_ArsonDoor_Damage1_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "ArsonDoor_Damage1_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ArsonDoor/ArsonDoor/Texture2D/ArsonDoor_DiffSpec.tga",
+   "extracted_sha256": "06128d4e8d92642d303259dbea75ae1d397d431ea4b118be032298dae2f6a005",
+   "output_file": "Content/Extracted/MaterialDatabase/ArsonDoor/ArsonDoor/Texture2D/ArsonDoor_DiffSpec.tga",
+   "output_sha256": "06128d4e8d92642d303259dbea75ae1d397d431ea4b118be032298dae2f6a005",
+   "uasset": "Content/Imported/MaterialDatabase/ArsonDoor/MI_ArsonDoor_Damage1_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/ArsonDoor.upk#MI_ArsonDoor_Damage2_Mat",
+   "object": "MI_ArsonDoor_Damage2_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "ArsonDoor_Damage2_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ArsonDoor/ArsonDoor/Texture2D/ArsonDoor_DiffSpec.tga",
+   "extracted_sha256": "06128d4e8d92642d303259dbea75ae1d397d431ea4b118be032298dae2f6a005",
+   "output_file": "Content/Extracted/MaterialDatabase/ArsonDoor/ArsonDoor/Texture2D/ArsonDoor_DiffSpec.tga",
+   "output_sha256": "06128d4e8d92642d303259dbea75ae1d397d431ea4b118be032298dae2f6a005",
+   "uasset": "Content/Imported/MaterialDatabase/ArsonDoor/MI_ArsonDoor_Damage2_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/ArsonDoor.upk#MI_arsondoor_mat",
+   "object": "MI_arsondoor_mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "arsondoor_mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ArsonDoor/ArsonDoor/Texture2D/ArsonDoor_DiffSpec.tga",
+   "extracted_sha256": "06128d4e8d92642d303259dbea75ae1d397d431ea4b118be032298dae2f6a005",
+   "output_file": "Content/Extracted/MaterialDatabase/ArsonDoor/ArsonDoor/Texture2D/ArsonDoor_DiffSpec.tga",
+   "output_sha256": "06128d4e8d92642d303259dbea75ae1d397d431ea4b118be032298dae2f6a005",
+   "uasset": "Content/Imported/MaterialDatabase/ArsonDoor/MI_arsondoor_mat.uasset"
+  }
+ ]
+}

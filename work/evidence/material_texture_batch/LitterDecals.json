@@ -1,0 +1,75 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "LitterDecals",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/Decals/LitterDecals.upk",
+ "source_sha256": "e575c9a4aac24b24934ea5a9c7b6001e8efadc9cb5dc5bc86762c7ed59e2d447",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/Decals/LitterDecals.upk#Litter_DiffSpec",
+   "object": "Litter_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/LitterDecals/LitterDecals/Texture2D/Litter_DiffSpec.tga",
+   "extracted_sha256": "07ad986aacd3e6a35af5d0925d0421a81b59ad6c435710c3cc26443dc38cc9da",
+   "output_file": "Content/Extracted/MaterialDatabase/LitterDecals/LitterDecals/Texture2D/Litter_DiffSpec.tga",
+   "output_sha256": "07ad986aacd3e6a35af5d0925d0421a81b59ad6c435710c3cc26443dc38cc9da",
+   "uasset": "Content/Imported/MaterialDatabase/LitterDecals/Litter_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/Decals/LitterDecals.upk#Litter_Norm",
+   "object": "Litter_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/LitterDecals/LitterDecals/Texture2D/Litter_Norm.tga",
+   "extracted_sha256": "30f30c823c6945aafa2a08be8acd10cdd429d6055ab077fe32298ec760392b7a",
+   "output_file": "Content/Extracted/MaterialDatabase/LitterDecals/LitterDecals/Texture2D/Litter_Norm.tga",
+   "output_sha256": "30f30c823c6945aafa2a08be8acd10cdd429d6055ab077fe32298ec760392b7a",
+   "uasset": "Content/Imported/MaterialDatabase/LitterDecals/Litter_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/Decals/LitterDecals.upk#MI_Litter_Mat",
+   "object": "MI_Litter_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Litter_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/LitterDecals/LitterDecals/Texture2D/Litter_DiffSpec.tga",
+   "extracted_sha256": "07ad986aacd3e6a35af5d0925d0421a81b59ad6c435710c3cc26443dc38cc9da",
+   "output_file": "Content/Extracted/MaterialDatabase/LitterDecals/LitterDecals/Texture2D/Litter_DiffSpec.tga",
+   "output_sha256": "07ad986aacd3e6a35af5d0925d0421a81b59ad6c435710c3cc26443dc38cc9da",
+   "uasset": "Content/Imported/MaterialDatabase/LitterDecals/MI_Litter_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/Decals/LitterDecals.upk#MI_Litter_Volume",
+   "object": "MI_Litter_Volume",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Litter_Volume",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/LitterDecals/LitterDecals/Texture2D/Litter_DiffSpec.tga",
+   "extracted_sha256": "07ad986aacd3e6a35af5d0925d0421a81b59ad6c435710c3cc26443dc38cc9da",
+   "output_file": "Content/Extracted/MaterialDatabase/LitterDecals/LitterDecals/Texture2D/Litter_DiffSpec.tga",
+   "output_sha256": "07ad986aacd3e6a35af5d0925d0421a81b59ad6c435710c3cc26443dc38cc9da",
+   "uasset": "Content/Imported/MaterialDatabase/LitterDecals/MI_Litter_Volume.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/Decals/LitterDecals.upk#MI_Litter_Volume_Dark",
+   "object": "MI_Litter_Volume_Dark",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Litter_Volume_Dark",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/LitterDecals/LitterDecals/Texture2D/Litter_DiffSpec.tga",
+   "extracted_sha256": "07ad986aacd3e6a35af5d0925d0421a81b59ad6c435710c3cc26443dc38cc9da",
+   "output_file": "Content/Extracted/MaterialDatabase/LitterDecals/LitterDecals/Texture2D/Litter_DiffSpec.tga",
+   "output_sha256": "07ad986aacd3e6a35af5d0925d0421a81b59ad6c435710c3cc26443dc38cc9da",
+   "uasset": "Content/Imported/MaterialDatabase/LitterDecals/MI_Litter_Volume_Dark.uasset"
+  }
+ ]
+}

@@ -1,0 +1,88 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FinancialTicketMachine",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTicketMachine.upk",
+ "source_sha256": "18f10ea0d62c34f088071cfe839a1fe4197f70c5da1bacd724a25387834e58a5",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTicketMachine.upk#FinancialTicketMachine_Damage",
+   "object": "FinancialTicketMachine_Damage",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialTicketMachine/FinancialTicketMachine/Texture2D/FinancialTicketMachine_Damage.tga",
+   "extracted_sha256": "414f98418efafc8e2f58e82a092c1ae5dfbe76483516cec8c01153bc4e9df295",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialTicketMachine/FinancialTicketMachine/Texture2D/FinancialTicketMachine_Damage.tga",
+   "output_sha256": "414f98418efafc8e2f58e82a092c1ae5dfbe76483516cec8c01153bc4e9df295",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialTicketMachine/FinancialTicketMachine_Damage.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTicketMachine.upk#FinancialTicketMachine_DiffSpec",
+   "object": "FinancialTicketMachine_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialTicketMachine/FinancialTicketMachine/Texture2D/FinancialTicketMachine_DiffSpec.tga",
+   "extracted_sha256": "955db240d6c0b6615c5ea0b37d2d74fa6e845dc0074aa6701e866b04f8a18870",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialTicketMachine/FinancialTicketMachine/Texture2D/FinancialTicketMachine_DiffSpec.tga",
+   "output_sha256": "955db240d6c0b6615c5ea0b37d2d74fa6e845dc0074aa6701e866b04f8a18870",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialTicketMachine/FinancialTicketMachine_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTicketMachine.upk#FinancialTicketMachine_Emis",
+   "object": "FinancialTicketMachine_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialTicketMachine/FinancialTicketMachine/Texture2D/FinancialTicketMachine_Emis.tga",
+   "extracted_sha256": "18eb966e029feefa89b8f43a019b52556c06f1227f55de816190cb380dcf5626",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialTicketMachine/FinancialTicketMachine/Texture2D/FinancialTicketMachine_Emis.tga",
+   "output_sha256": "18eb966e029feefa89b8f43a019b52556c06f1227f55de816190cb380dcf5626",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialTicketMachine/FinancialTicketMachine_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTicketMachine.upk#FinancialTicketMachine_Norm",
+   "object": "FinancialTicketMachine_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialTicketMachine/FinancialTicketMachine/Texture2D/FinancialTicketMachine_Norm.tga",
+   "extracted_sha256": "9bc25925990bdd023a0f628440772032aada3bdf5f5f40d39202de8fe695e391",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialTicketMachine/FinancialTicketMachine/Texture2D/FinancialTicketMachine_Norm.tga",
+   "output_sha256": "9bc25925990bdd023a0f628440772032aada3bdf5f5f40d39202de8fe695e391",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialTicketMachine/FinancialTicketMachine_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTicketMachine.upk#MI_FinancialTicketMachine_Damage_MAT",
+   "object": "MI_FinancialTicketMachine_Damage_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialTicketMachine_Damage_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialTicketMachine/FinancialTicketMachine/Texture2D/FinancialTicketMachine_Damage.tga",
+   "extracted_sha256": "414f98418efafc8e2f58e82a092c1ae5dfbe76483516cec8c01153bc4e9df295",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialTicketMachine/FinancialTicketMachine/Texture2D/FinancialTicketMachine_Damage.tga",
+   "output_sha256": "414f98418efafc8e2f58e82a092c1ae5dfbe76483516cec8c01153bc4e9df295",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialTicketMachine/MI_FinancialTicketMachine_Damage_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTicketMachine.upk#MI_FinancialTicketMachine_MAT",
+   "object": "MI_FinancialTicketMachine_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialTicketMachine_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialTicketMachine/FinancialTicketMachine/Texture2D/FinancialTicketMachine_DiffSpec.tga",
+   "extracted_sha256": "955db240d6c0b6615c5ea0b37d2d74fa6e845dc0074aa6701e866b04f8a18870",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialTicketMachine/FinancialTicketMachine/Texture2D/FinancialTicketMachine_DiffSpec.tga",
+   "output_sha256": "955db240d6c0b6615c5ea0b37d2d74fa6e845dc0074aa6701e866b04f8a18870",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialTicketMachine/MI_FinancialTicketMachine_MAT.uasset"
+  }
+ ]
+}

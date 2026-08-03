@@ -1,0 +1,164 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Wood-RLD",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/Wood/Wood-RLD.upk",
+ "source_sha256": "c20eeeadbb42613512949e248af6d8737d4a2ae6f6580b5ff8d2d750ce69e5b5",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Wood-RLD.upk#MI_MAT_Driftwood",
+   "object": "MI_MAT_Driftwood",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "MAT_Driftwood",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Wood-RLD/Wood-RLD/Texture2D/Wood_Driftwood_Diff.tga",
+   "extracted_sha256": "ed27e39d1dfc5235a515774721994554f318eff8f9114f3a0278264a0937714a",
+   "output_file": "Content/Extracted/MaterialDatabase/Wood-RLD/Wood-RLD/Texture2D/Wood_Driftwood_Diff.tga",
+   "output_sha256": "ed27e39d1dfc5235a515774721994554f318eff8f9114f3a0278264a0937714a",
+   "uasset": "Content/Imported/MaterialDatabase/Wood-RLD/MI_MAT_Driftwood.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Wood-RLD.upk#MI_MAT_Wood_Planked_01",
+   "object": "MI_MAT_Wood_Planked_01",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "MAT_Wood_Planked_01",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Wood-RLD/Wood-RLD/Texture2D/Wood_Planked_01_Diff.tga",
+   "extracted_sha256": "ecbda7e887b3bafee340a41c28746a8e9cd14c0e6d810137e93cd2c7641ce4b5",
+   "output_file": "Content/Extracted/MaterialDatabase/Wood-RLD/Wood-RLD/Texture2D/Wood_Planked_01_Diff.tga",
+   "output_sha256": "ecbda7e887b3bafee340a41c28746a8e9cd14c0e6d810137e93cd2c7641ce4b5",
+   "uasset": "Content/Imported/MaterialDatabase/Wood-RLD/MI_MAT_Wood_Planked_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Wood-RLD.upk#MI_MAT_Wood_Planked_BlueWhite",
+   "object": "MI_MAT_Wood_Planked_BlueWhite",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "MAT_Wood_Planked_BlueWhite",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Wood-RLD/Wood-RLD/Texture2D/Wood_Planked_BlueWhite_Diff.tga",
+   "extracted_sha256": "e1c4bea3011f4c9872918e3282f03e0db4656cf4a3ece97606ab0d2a1e41c46f",
+   "output_file": "Content/Extracted/MaterialDatabase/Wood-RLD/Wood-RLD/Texture2D/Wood_Planked_BlueWhite_Diff.tga",
+   "output_sha256": "e1c4bea3011f4c9872918e3282f03e0db4656cf4a3ece97606ab0d2a1e41c46f",
+   "uasset": "Content/Imported/MaterialDatabase/Wood-RLD/MI_MAT_Wood_Planked_BlueWhite.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Wood-RLD.upk#MI_MAT_Wood_Planked_White",
+   "object": "MI_MAT_Wood_Planked_White",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "MAT_Wood_Planked_White",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Wood-RLD/Wood-RLD/Texture2D/Wood_Planked_White_Diff.tga",
+   "extracted_sha256": "85b5a01e3cd6a120804d925c8db614d31bb134e8440cbbb8c00751c2938f0b3a",
+   "output_file": "Content/Extracted/MaterialDatabase/Wood-RLD/Wood-RLD/Texture2D/Wood_Planked_White_Diff.tga",
+   "output_sha256": "85b5a01e3cd6a120804d925c8db614d31bb134e8440cbbb8c00751c2938f0b3a",
+   "uasset": "Content/Imported/MaterialDatabase/Wood-RLD/MI_MAT_Wood_Planked_White.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Wood-RLD.upk#Wood_Driftwood_Diff",
+   "object": "Wood_Driftwood_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Wood-RLD/Wood-RLD/Texture2D/Wood_Driftwood_Diff.tga",
+   "extracted_sha256": "ed27e39d1dfc5235a515774721994554f318eff8f9114f3a0278264a0937714a",
+   "output_file": "Content/Extracted/MaterialDatabase/Wood-RLD/Wood-RLD/Texture2D/Wood_Driftwood_Diff.tga",
+   "output_sha256": "ed27e39d1dfc5235a515774721994554f318eff8f9114f3a0278264a0937714a",
+   "uasset": "Content/Imported/MaterialDatabase/Wood-RLD/Wood_Driftwood_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Wood-RLD.upk#Wood_Driftwood_Norm",
+   "object": "Wood_Driftwood_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Wood-RLD/Wood-RLD/Texture2D/Wood_Driftwood_Norm.tga",
+   "extracted_sha256": "7f1736792c8c5ee230634b622e22c67843a91b7773fdf8842366a1f9f4eb4ea4",
+   "output_file": "Content/Extracted/MaterialDatabase/Wood-RLD/Wood-RLD/Texture2D/Wood_Driftwood_Norm.tga",
+   "output_sha256": "7f1736792c8c5ee230634b622e22c67843a91b7773fdf8842366a1f9f4eb4ea4",
+   "uasset": "Content/Imported/MaterialDatabase/Wood-RLD/Wood_Driftwood_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Wood-RLD.upk#Wood_Planked_01_Diff",
+   "object": "Wood_Planked_01_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Wood-RLD/Wood-RLD/Texture2D/Wood_Planked_01_Diff.tga",
+   "extracted_sha256": "ecbda7e887b3bafee340a41c28746a8e9cd14c0e6d810137e93cd2c7641ce4b5",
+   "output_file": "Content/Extracted/MaterialDatabase/Wood-RLD/Wood-RLD/Texture2D/Wood_Planked_01_Diff.tga",
+   "output_sha256": "ecbda7e887b3bafee340a41c28746a8e9cd14c0e6d810137e93cd2c7641ce4b5",
+   "uasset": "Content/Imported/MaterialDatabase/Wood-RLD/Wood_Planked_01_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Wood-RLD.upk#Wood_Planked_01_Norm",
+   "object": "Wood_Planked_01_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Wood-RLD/Wood-RLD/Texture2D/Wood_Planked_01_Norm.tga",
+   "extracted_sha256": "74fc0fb5d8e2858a51841db4feffdadacbb7999b1a8e1aac1df65b60aacb1a42",
+   "output_file": "Content/Extracted/MaterialDatabase/Wood-RLD/Wood-RLD/Texture2D/Wood_Planked_01_Norm.tga",
+   "output_sha256": "74fc0fb5d8e2858a51841db4feffdadacbb7999b1a8e1aac1df65b60aacb1a42",
+   "uasset": "Content/Imported/MaterialDatabase/Wood-RLD/Wood_Planked_01_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Wood-RLD.upk#Wood_Planked_BlueWhite_Diff",
+   "object": "Wood_Planked_BlueWhite_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Wood-RLD/Wood-RLD/Texture2D/Wood_Planked_BlueWhite_Diff.tga",
+   "extracted_sha256": "e1c4bea3011f4c9872918e3282f03e0db4656cf4a3ece97606ab0d2a1e41c46f",
+   "output_file": "Content/Extracted/MaterialDatabase/Wood-RLD/Wood-RLD/Texture2D/Wood_Planked_BlueWhite_Diff.tga",
+   "output_sha256": "e1c4bea3011f4c9872918e3282f03e0db4656cf4a3ece97606ab0d2a1e41c46f",
+   "uasset": "Content/Imported/MaterialDatabase/Wood-RLD/Wood_Planked_BlueWhite_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Wood-RLD.upk#Wood_Planked_BlueWhite_Norm",
+   "object": "Wood_Planked_BlueWhite_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Wood-RLD/Wood-RLD/Texture2D/Wood_Planked_BlueWhite_Norm.tga",
+   "extracted_sha256": "8993c62447d1264a2ac2a55c2eaf0eefb7de2eba42f7b5f78dae034289280372",
+   "output_file": "Content/Extracted/MaterialDatabase/Wood-RLD/Wood-RLD/Texture2D/Wood_Planked_BlueWhite_Norm.tga",
+   "output_sha256": "8993c62447d1264a2ac2a55c2eaf0eefb7de2eba42f7b5f78dae034289280372",
+   "uasset": "Content/Imported/MaterialDatabase/Wood-RLD/Wood_Planked_BlueWhite_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Wood-RLD.upk#Wood_Planked_White_Diff",
+   "object": "Wood_Planked_White_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Wood-RLD/Wood-RLD/Texture2D/Wood_Planked_White_Diff.tga",
+   "extracted_sha256": "85b5a01e3cd6a120804d925c8db614d31bb134e8440cbbb8c00751c2938f0b3a",
+   "output_file": "Content/Extracted/MaterialDatabase/Wood-RLD/Wood-RLD/Texture2D/Wood_Planked_White_Diff.tga",
+   "output_sha256": "85b5a01e3cd6a120804d925c8db614d31bb134e8440cbbb8c00751c2938f0b3a",
+   "uasset": "Content/Imported/MaterialDatabase/Wood-RLD/Wood_Planked_White_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Wood-RLD.upk#Wood_Planked_White_Norm",
+   "object": "Wood_Planked_White_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Wood-RLD/Wood-RLD/Texture2D/Wood_Planked_White_Norm.tga",
+   "extracted_sha256": "cb13642c5ba91eed24af7335548eed2f0b0b39569b3e4c3f266a52c384a2d7ee",
+   "output_file": "Content/Extracted/MaterialDatabase/Wood-RLD/Wood-RLD/Texture2D/Wood_Planked_White_Norm.tga",
+   "output_sha256": "cb13642c5ba91eed24af7335548eed2f0b0b39569b3e4c3f266a52c384a2d7ee",
+   "uasset": "Content/Imported/MaterialDatabase/Wood-RLD/Wood_Planked_White_Norm.uasset"
+  }
+ ]
+}

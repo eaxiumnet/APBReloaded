@@ -1,0 +1,48 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Generic_Banners",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericDistrict/Signs/Generic_Banners.upk",
+ "source_sha256": "03437c3f1e84061682bcd4e5c87af8272831a0528f62b0a3abd54d9a2460da5f",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericDistrict/Signs/Generic_Banners.upk#Generic_Banners_Texture_NormUp",
+   "object": "Generic_Banners_Texture_NormUp",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Generic_Banners/Generic_Banners/Texture2D/Generic_Banners_Texture_NormUp.tga",
+   "extracted_sha256": "7a3191ca1d609b5066347628cb39f4dee1556a3bc7372a7ed4c13bfd35515d9c",
+   "output_file": "Content/Extracted/MaterialDatabase/Generic_Banners/Generic_Banners/Texture2D/Generic_Banners_Texture_NormUp.tga",
+   "output_sha256": "7a3191ca1d609b5066347628cb39f4dee1556a3bc7372a7ed4c13bfd35515d9c",
+   "uasset": "Content/Imported/MaterialDatabase/Generic_Banners/Generic_Banners_Texture_NormUp.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericDistrict/Signs/Generic_Banners.upk#MI_generic_banners",
+   "object": "MI_generic_banners",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "generic_banners",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Generic_Banners/Generic_Banners/Texture2D/Generic_Banners_Texture_NormUp.tga",
+   "extracted_sha256": "7a3191ca1d609b5066347628cb39f4dee1556a3bc7372a7ed4c13bfd35515d9c",
+   "output_file": "Content/Extracted/MaterialDatabase/Generic_Banners/Generic_Banners/Texture2D/Generic_Banners_Texture_NormUp.tga",
+   "output_sha256": "7a3191ca1d609b5066347628cb39f4dee1556a3bc7372a7ed4c13bfd35515d9c",
+   "uasset": "Content/Imported/MaterialDatabase/Generic_Banners/MI_generic_banners.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericDistrict/Signs/Generic_Banners.upk#MI_Generic_Banners_NoAnim",
+   "object": "MI_Generic_Banners_NoAnim",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Generic_Banners_NoAnim",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Generic_Banners/Generic_Banners/Texture2D/Generic_Banners_Texture_NormUp.tga",
+   "extracted_sha256": "7a3191ca1d609b5066347628cb39f4dee1556a3bc7372a7ed4c13bfd35515d9c",
+   "output_file": "Content/Extracted/MaterialDatabase/Generic_Banners/Generic_Banners/Texture2D/Generic_Banners_Texture_NormUp.tga",
+   "output_sha256": "7a3191ca1d609b5066347628cb39f4dee1556a3bc7372a7ed4c13bfd35515d9c",
+   "uasset": "Content/Imported/MaterialDatabase/Generic_Banners/MI_Generic_Banners_NoAnim.uasset"
+  }
+ ]
+}

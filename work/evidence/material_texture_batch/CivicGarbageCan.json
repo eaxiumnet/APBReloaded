@@ -1,0 +1,48 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "CivicGarbageCan",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/CivicGarbageCan.upk",
+ "source_sha256": "970bbe44aae08a34c28bbdff7df21559b80d319067317923bbaa088f6f3e5aa9",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/CivicGarbageCan.upk#CivicGarbageCan_DiffSpec",
+   "object": "CivicGarbageCan_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CivicGarbageCan/CivicGarbageCan/Texture2D/CivicGarbageCan_DiffSpec.tga",
+   "extracted_sha256": "0ed3a6c5f029fcef64d97ba79abf748947917dfb5de48a4e9018fa8b66cbcde2",
+   "output_file": "Content/Extracted/MaterialDatabase/CivicGarbageCan/CivicGarbageCan/Texture2D/CivicGarbageCan_DiffSpec.tga",
+   "output_sha256": "0ed3a6c5f029fcef64d97ba79abf748947917dfb5de48a4e9018fa8b66cbcde2",
+   "uasset": "Content/Imported/MaterialDatabase/CivicGarbageCan/CivicGarbageCan_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/CivicGarbageCan.upk#MI_CivicGarbageCan_Damage_Mat",
+   "object": "MI_CivicGarbageCan_Damage_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CivicGarbageCan_Damage_Mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CivicGarbageCan/CivicGarbageCan/Texture2D/CivicGarbageCan_DiffSpec.tga",
+   "extracted_sha256": "0ed3a6c5f029fcef64d97ba79abf748947917dfb5de48a4e9018fa8b66cbcde2",
+   "output_file": "Content/Extracted/MaterialDatabase/CivicGarbageCan/CivicGarbageCan/Texture2D/CivicGarbageCan_DiffSpec.tga",
+   "output_sha256": "0ed3a6c5f029fcef64d97ba79abf748947917dfb5de48a4e9018fa8b66cbcde2",
+   "uasset": "Content/Imported/MaterialDatabase/CivicGarbageCan/MI_CivicGarbageCan_Damage_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/CivicGarbageCan.upk#MI_CivicGarbageCan_Mat",
+   "object": "MI_CivicGarbageCan_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CivicGarbageCan_Mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CivicGarbageCan/CivicGarbageCan/Texture2D/CivicGarbageCan_DiffSpec.tga",
+   "extracted_sha256": "0ed3a6c5f029fcef64d97ba79abf748947917dfb5de48a4e9018fa8b66cbcde2",
+   "output_file": "Content/Extracted/MaterialDatabase/CivicGarbageCan/CivicGarbageCan/Texture2D/CivicGarbageCan_DiffSpec.tga",
+   "output_sha256": "0ed3a6c5f029fcef64d97ba79abf748947917dfb5de48a4e9018fa8b66cbcde2",
+   "uasset": "Content/Imported/MaterialDatabase/CivicGarbageCan/MI_CivicGarbageCan_Mat.uasset"
+  }
+ ]
+}

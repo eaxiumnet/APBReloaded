@@ -1,0 +1,35 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Planters",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/PropMaterials/Planters.upk",
+ "source_sha256": "03976c9fe37094200688d2071f99ff63d6f232831135f48f0c8649a431683f3f",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/Planters.upk#MI_Planter",
+   "object": "MI_Planter",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Planter",
+   "texture_roles": [
+    "Diffuse",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Planters/Planters/Texture2D/Planter_DiffAlpha.tga",
+   "extracted_sha256": "9bc741a552b030b78f315d1afd51c6f265b0356084464aa1e36d3f8997c7464c",
+   "output_file": "Content/Extracted/MaterialDatabase/Planters/Planters/Texture2D/Planter_DiffAlpha.tga",
+   "output_sha256": "9bc741a552b030b78f315d1afd51c6f265b0356084464aa1e36d3f8997c7464c",
+   "uasset": "Content/Imported/MaterialDatabase/Planters/MI_Planter.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/Planters.upk#Planter_DiffAlpha",
+   "object": "Planter_DiffAlpha",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Planters/Planters/Texture2D/Planter_DiffAlpha.tga",
+   "extracted_sha256": "9bc741a552b030b78f315d1afd51c6f265b0356084464aa1e36d3f8997c7464c",
+   "output_file": "Content/Extracted/MaterialDatabase/Planters/Planters/Texture2D/Planter_DiffAlpha.tga",
+   "output_sha256": "9bc741a552b030b78f315d1afd51c6f265b0356084464aa1e36d3f8997c7464c",
+   "uasset": "Content/Imported/MaterialDatabase/Planters/Planter_DiffAlpha.uasset"
+  }
+ ]
+}

@@ -1,0 +1,88 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "IndustrialAirConditioningUnit",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/IndustrialAirConditioningUnit.upk",
+ "source_sha256": "54fb8dfb1530d2e50a71b8afec0be294f0fe8351c4ea12d38b43e419d3720dd0",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/IndustrialAirConditioningUnit.upk#IndustrialAirConditioningUnit_Damage",
+   "object": "IndustrialAirConditioningUnit_Damage",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/IndustrialAirConditioningUnit/IndustrialAirConditioningUnit/Texture2D/IndustrialAirConditioningUnit_Damage.tga",
+   "extracted_sha256": "9e59b2a7c86d332b01e5698cc4c2cee32e2413d13dc4a6318c9a23bad3164cee",
+   "output_file": "Content/Extracted/MaterialDatabase/IndustrialAirConditioningUnit/IndustrialAirConditioningUnit/Texture2D/IndustrialAirConditioningUnit_Damage.tga",
+   "output_sha256": "9e59b2a7c86d332b01e5698cc4c2cee32e2413d13dc4a6318c9a23bad3164cee",
+   "uasset": "Content/Imported/MaterialDatabase/IndustrialAirConditioningUnit/IndustrialAirConditioningUnit_Damage.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/IndustrialAirConditioningUnit.upk#IndustrialAirConditioningUnit_DiffSpec",
+   "object": "IndustrialAirConditioningUnit_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/IndustrialAirConditioningUnit/IndustrialAirConditioningUnit/Texture2D/IndustrialAirConditioningUnit_DiffSpec.tga",
+   "extracted_sha256": "b4ce5b18f99f2e3aa70c92405855f3c19e19f84399f06f2fc521f4e1b763d14a",
+   "output_file": "Content/Extracted/MaterialDatabase/IndustrialAirConditioningUnit/IndustrialAirConditioningUnit/Texture2D/IndustrialAirConditioningUnit_DiffSpec.tga",
+   "output_sha256": "b4ce5b18f99f2e3aa70c92405855f3c19e19f84399f06f2fc521f4e1b763d14a",
+   "uasset": "Content/Imported/MaterialDatabase/IndustrialAirConditioningUnit/IndustrialAirConditioningUnit_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/IndustrialAirConditioningUnit.upk#IndustrialAirConditioningUnit_Norm",
+   "object": "IndustrialAirConditioningUnit_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/IndustrialAirConditioningUnit/IndustrialAirConditioningUnit/Texture2D/IndustrialAirConditioningUnit_Norm.tga",
+   "extracted_sha256": "1f209d9df4dc8f8e27761b4e2c8a2ccfee3b49575d79557a693cb9d8e8cb5bab",
+   "output_file": "Content/Extracted/MaterialDatabase/IndustrialAirConditioningUnit/IndustrialAirConditioningUnit/Texture2D/IndustrialAirConditioningUnit_Norm.tga",
+   "output_sha256": "1f209d9df4dc8f8e27761b4e2c8a2ccfee3b49575d79557a693cb9d8e8cb5bab",
+   "uasset": "Content/Imported/MaterialDatabase/IndustrialAirConditioningUnit/IndustrialAirConditioningUnit_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/IndustrialAirConditioningUnit.upk#IndustrialAirConditioningUnit_Opac",
+   "object": "IndustrialAirConditioningUnit_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/IndustrialAirConditioningUnit/IndustrialAirConditioningUnit/Texture2D/IndustrialAirConditioningUnit_Opac.tga",
+   "extracted_sha256": "f3fb3941454c2a997f0ecb6d48730ebb97ac0d2809f691b7f0a1bdce55ad3aa3",
+   "output_file": "Content/Extracted/MaterialDatabase/IndustrialAirConditioningUnit/IndustrialAirConditioningUnit/Texture2D/IndustrialAirConditioningUnit_Opac.tga",
+   "output_sha256": "f3fb3941454c2a997f0ecb6d48730ebb97ac0d2809f691b7f0a1bdce55ad3aa3",
+   "uasset": "Content/Imported/MaterialDatabase/IndustrialAirConditioningUnit/IndustrialAirConditioningUnit_Opac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/IndustrialAirConditioningUnit.upk#MI_IndustrialAirConditioningUnit_Damage_Mat",
+   "object": "MI_IndustrialAirConditioningUnit_Damage_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "IndustrialAirConditioningUnit_Damage_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/IndustrialAirConditioningUnit/IndustrialAirConditioningUnit/Texture2D/IndustrialAirConditioningUnit_Damage.tga",
+   "extracted_sha256": "9e59b2a7c86d332b01e5698cc4c2cee32e2413d13dc4a6318c9a23bad3164cee",
+   "output_file": "Content/Extracted/MaterialDatabase/IndustrialAirConditioningUnit/IndustrialAirConditioningUnit/Texture2D/IndustrialAirConditioningUnit_Damage.tga",
+   "output_sha256": "9e59b2a7c86d332b01e5698cc4c2cee32e2413d13dc4a6318c9a23bad3164cee",
+   "uasset": "Content/Imported/MaterialDatabase/IndustrialAirConditioningUnit/MI_IndustrialAirConditioningUnit_Damage_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/IndustrialAirConditioningUnit.upk#MI_IndustrialAirConditioningUnit_Mat",
+   "object": "MI_IndustrialAirConditioningUnit_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "IndustrialAirConditioningUnit_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/IndustrialAirConditioningUnit/IndustrialAirConditioningUnit/Texture2D/IndustrialAirConditioningUnit_DiffSpec.tga",
+   "extracted_sha256": "b4ce5b18f99f2e3aa70c92405855f3c19e19f84399f06f2fc521f4e1b763d14a",
+   "output_file": "Content/Extracted/MaterialDatabase/IndustrialAirConditioningUnit/IndustrialAirConditioningUnit/Texture2D/IndustrialAirConditioningUnit_DiffSpec.tga",
+   "output_sha256": "b4ce5b18f99f2e3aa70c92405855f3c19e19f84399f06f2fc521f4e1b763d14a",
+   "uasset": "Content/Imported/MaterialDatabase/IndustrialAirConditioningUnit/MI_IndustrialAirConditioningUnit_Mat.uasset"
+  }
+ ]
+}

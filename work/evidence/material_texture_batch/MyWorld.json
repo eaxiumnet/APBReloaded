@@ -1,0 +1,35 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "MyWorld",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/Misc/MyWorld.upk",
+ "source_sha256": "60d137385d8c7d5d5096619be71ec0e5194bba23968fbfacab4e8de8315194db",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Misc/MyWorld.upk#MI_MyWorldLogo",
+   "object": "MI_MyWorldLogo",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "MyWorldLogo",
+   "texture_roles": [
+    "Diffuse",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/MyWorld/MyWorld/Texture2D/MyWorldLogo_DiffAlpha.tga",
+   "extracted_sha256": "647fd7fd24b95e4a4e4fe76fffddb38e9529dbad204afb63976d0bc333ae11ce",
+   "output_file": "Content/Extracted/MaterialDatabase/MyWorld/MyWorld/Texture2D/MyWorldLogo_DiffAlpha.tga",
+   "output_sha256": "647fd7fd24b95e4a4e4fe76fffddb38e9529dbad204afb63976d0bc333ae11ce",
+   "uasset": "Content/Imported/MaterialDatabase/MyWorld/MI_MyWorldLogo.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Misc/MyWorld.upk#MyWorldLogo_DiffAlpha",
+   "object": "MyWorldLogo_DiffAlpha",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/MyWorld/MyWorld/Texture2D/MyWorldLogo_DiffAlpha.tga",
+   "extracted_sha256": "647fd7fd24b95e4a4e4fe76fffddb38e9529dbad204afb63976d0bc333ae11ce",
+   "output_file": "Content/Extracted/MaterialDatabase/MyWorld/MyWorld/Texture2D/MyWorldLogo_DiffAlpha.tga",
+   "output_sha256": "647fd7fd24b95e4a4e4fe76fffddb38e9529dbad204afb63976d0bc333ae11ce",
+   "uasset": "Content/Imported/MaterialDatabase/MyWorld/MyWorldLogo_DiffAlpha.uasset"
+  }
+ ]
+}

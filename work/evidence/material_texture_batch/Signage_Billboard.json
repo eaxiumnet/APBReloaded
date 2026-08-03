@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Signage_Billboard",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/FeatureMaterials/Signage_Billboard.upk",
+ "source_sha256": "a56ca4d6e5783f0034871f90281a9e7de884c0ee5d897ff53f8c99f2aa98acdf",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Signage_Billboard.upk#MI_Signage_Billboard",
+   "object": "MI_Signage_Billboard",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Signage_Billboard",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Signage_Billboard/Signage_Billboard/Texture2D/Signage_Billboard_DiffSpec.tga",
+   "extracted_sha256": "206d1f14baada9d94b5b05501b1fd38805325e5cf816ca59bc6dbbb27219346a",
+   "output_file": "Content/Extracted/MaterialDatabase/Signage_Billboard/Signage_Billboard/Texture2D/Signage_Billboard_DiffSpec.tga",
+   "output_sha256": "206d1f14baada9d94b5b05501b1fd38805325e5cf816ca59bc6dbbb27219346a",
+   "uasset": "Content/Imported/MaterialDatabase/Signage_Billboard/MI_Signage_Billboard.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Signage_Billboard.upk#Signage_Billboard_DiffSpec",
+   "object": "Signage_Billboard_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Signage_Billboard/Signage_Billboard/Texture2D/Signage_Billboard_DiffSpec.tga",
+   "extracted_sha256": "206d1f14baada9d94b5b05501b1fd38805325e5cf816ca59bc6dbbb27219346a",
+   "output_file": "Content/Extracted/MaterialDatabase/Signage_Billboard/Signage_Billboard/Texture2D/Signage_Billboard_DiffSpec.tga",
+   "output_sha256": "206d1f14baada9d94b5b05501b1fd38805325e5cf816ca59bc6dbbb27219346a",
+   "uasset": "Content/Imported/MaterialDatabase/Signage_Billboard/Signage_Billboard_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Signage_Billboard.upk#Signage_Billboard_Norm",
+   "object": "Signage_Billboard_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Signage_Billboard/Signage_Billboard/Texture2D/Signage_Billboard_Norm.tga",
+   "extracted_sha256": "d4e94f07eb1dd1dacf3a593bd75290b15cd21e96f07ec5ee941e68d6566728f9",
+   "output_file": "Content/Extracted/MaterialDatabase/Signage_Billboard/Signage_Billboard/Texture2D/Signage_Billboard_Norm.tga",
+   "output_sha256": "d4e94f07eb1dd1dacf3a593bd75290b15cd21e96f07ec5ee941e68d6566728f9",
+   "uasset": "Content/Imported/MaterialDatabase/Signage_Billboard/Signage_Billboard_Norm.uasset"
+  }
+ ]
+}

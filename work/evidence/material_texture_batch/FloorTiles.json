@@ -1,0 +1,277 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FloorTiles",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/Paving/FloorTiles.upk",
+ "source_sha256": "43d23d506f459d3df1387249b785fab28a139a460cb186913a7120133e5f28a4",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Paving/FloorTiles.upk#Concrete_01_DiffSpec",
+   "object": "Concrete_01_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FloorTiles/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/FloorTiles/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/FloorTiles/Concrete_01_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Paving/FloorTiles.upk#MI_15cm_InteriorTile_Mat",
+   "object": "MI_15cm_InteriorTile_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "15cm_InteriorTile_Mat",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FloorTiles/FloorTiles/Texture2D/PavingSlab_NormMask_256x256.tga",
+   "extracted_sha256": "23fcf08b1d4fee8c2090d1cbace6bba2c0ec8f57e0bd5e864b6607420aaee813",
+   "output_file": "Content/Extracted/MaterialDatabase/FloorTiles/FloorTiles/Texture2D/PavingSlab_NormMask_256x256.tga",
+   "output_sha256": "23fcf08b1d4fee8c2090d1cbace6bba2c0ec8f57e0bd5e864b6607420aaee813",
+   "uasset": "Content/Imported/MaterialDatabase/FloorTiles/MI_15cm_InteriorTile_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Paving/FloorTiles.upk#MI_30cm_InteriorTile_Mat",
+   "object": "MI_30cm_InteriorTile_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "30cm_InteriorTile_Mat",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FloorTiles/FloorTiles/Texture2D/PavingSlab_NormMask_256x256.tga",
+   "extracted_sha256": "23fcf08b1d4fee8c2090d1cbace6bba2c0ec8f57e0bd5e864b6607420aaee813",
+   "output_file": "Content/Extracted/MaterialDatabase/FloorTiles/FloorTiles/Texture2D/PavingSlab_NormMask_256x256.tga",
+   "output_sha256": "23fcf08b1d4fee8c2090d1cbace6bba2c0ec8f57e0bd5e864b6607420aaee813",
+   "uasset": "Content/Imported/MaterialDatabase/FloorTiles/MI_30cm_InteriorTile_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Paving/FloorTiles.upk#MI_Floor_Stone2_Square_Beige",
+   "object": "MI_Floor_Stone2_Square_Beige",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Floor_Stone2_Square_Beige",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FloorTiles/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/FloorTiles/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/FloorTiles/MI_Floor_Stone2_Square_Beige.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Paving/FloorTiles.upk#MI_Floor_Stone2_Square_Blue",
+   "object": "MI_Floor_Stone2_Square_Blue",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Floor_Stone2_Square_Blue",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FloorTiles/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/FloorTiles/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/FloorTiles/MI_Floor_Stone2_Square_Blue.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Paving/FloorTiles.upk#MI_Floor_Stone2_Square_Grey",
+   "object": "MI_Floor_Stone2_Square_Grey",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Floor_Stone2_Square_Grey",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FloorTiles/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/FloorTiles/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/FloorTiles/MI_Floor_Stone2_Square_Grey.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Paving/FloorTiles.upk#MI_Floor_Stone3_Square_Beige",
+   "object": "MI_Floor_Stone3_Square_Beige",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Floor_Stone3_Square_Beige",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FloorTiles/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/FloorTiles/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/FloorTiles/MI_Floor_Stone3_Square_Beige.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Paving/FloorTiles.upk#MI_Floor_Stone3_Square_Grey",
+   "object": "MI_Floor_Stone3_Square_Grey",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Floor_Stone3_Square_Grey",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FloorTiles/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/FloorTiles/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/FloorTiles/MI_Floor_Stone3_Square_Grey.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Paving/FloorTiles.upk#MI_Floor_Stone_Square_Beige",
+   "object": "MI_Floor_Stone_Square_Beige",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Floor_Stone_Square_Beige",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FloorTiles/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/FloorTiles/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/FloorTiles/MI_Floor_Stone_Square_Beige.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Paving/FloorTiles.upk#MI_Floor_Stone_Square_Blue",
+   "object": "MI_Floor_Stone_Square_Blue",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Floor_Stone_Square_Blue",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FloorTiles/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/FloorTiles/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/FloorTiles/MI_Floor_Stone_Square_Blue.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Paving/FloorTiles.upk#MI_Floor_Stone_Square_Grey",
+   "object": "MI_Floor_Stone_Square_Grey",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Floor_Stone_Square_Grey",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FloorTiles/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/FloorTiles/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/FloorTiles/MI_Floor_Stone_Square_Grey.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Paving/FloorTiles.upk#MI_FloorTile_GraniteSquare_Grey",
+   "object": "MI_FloorTile_GraniteSquare_Grey",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FloorTile_GraniteSquare_Grey",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FloorTiles/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/FloorTiles/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/FloorTiles/MI_FloorTile_GraniteSquare_Grey.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Paving/FloorTiles.upk#MI_FloorTile_PARENT",
+   "object": "MI_FloorTile_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FloorTile_PARENT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FloorTiles/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/FloorTiles/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/FloorTiles/MI_FloorTile_PARENT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Paving/FloorTiles.upk#MI_InteriorTile_Marble_Mat",
+   "object": "MI_InteriorTile_Marble_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "InteriorTile_Marble_Mat",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FloorTiles/FloorTiles/Texture2D/PavingSlab_NormMask_256x256.tga",
+   "extracted_sha256": "23fcf08b1d4fee8c2090d1cbace6bba2c0ec8f57e0bd5e864b6607420aaee813",
+   "output_file": "Content/Extracted/MaterialDatabase/FloorTiles/FloorTiles/Texture2D/PavingSlab_NormMask_256x256.tga",
+   "output_sha256": "23fcf08b1d4fee8c2090d1cbace6bba2c0ec8f57e0bd5e864b6607420aaee813",
+   "uasset": "Content/Imported/MaterialDatabase/FloorTiles/MI_InteriorTile_Marble_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Paving/FloorTiles.upk#MI_MarbleFloor_Dark_Mat",
+   "object": "MI_MarbleFloor_Dark_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "MarbleFloor_Dark_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FloorTiles/FloorTiles/Texture2D/Tile_Marble_01.tga",
+   "extracted_sha256": "7715f499a69cf2a7b609818a4883fd3a56ed89e6446b364a17a5fd5b6ce9e5be",
+   "output_file": "Content/Extracted/MaterialDatabase/FloorTiles/FloorTiles/Texture2D/Tile_Marble_01.tga",
+   "output_sha256": "7715f499a69cf2a7b609818a4883fd3a56ed89e6446b364a17a5fd5b6ce9e5be",
+   "uasset": "Content/Imported/MaterialDatabase/FloorTiles/MI_MarbleFloor_Dark_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Paving/FloorTiles.upk#MI_MarbleFloor_Mat",
+   "object": "MI_MarbleFloor_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "MarbleFloor_Mat",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FloorTiles/FloorTiles/Texture2D/PavingSlab_NormMask_256x256.tga",
+   "extracted_sha256": "23fcf08b1d4fee8c2090d1cbace6bba2c0ec8f57e0bd5e864b6607420aaee813",
+   "output_file": "Content/Extracted/MaterialDatabase/FloorTiles/FloorTiles/Texture2D/PavingSlab_NormMask_256x256.tga",
+   "output_sha256": "23fcf08b1d4fee8c2090d1cbace6bba2c0ec8f57e0bd5e864b6607420aaee813",
+   "uasset": "Content/Imported/MaterialDatabase/FloorTiles/MI_MarbleFloor_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Paving/FloorTiles.upk#PavingSlab_NormMask_256x256",
+   "object": "PavingSlab_NormMask_256x256",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FloorTiles/FloorTiles/Texture2D/PavingSlab_NormMask_256x256.tga",
+   "extracted_sha256": "23fcf08b1d4fee8c2090d1cbace6bba2c0ec8f57e0bd5e864b6607420aaee813",
+   "output_file": "Content/Extracted/MaterialDatabase/FloorTiles/FloorTiles/Texture2D/PavingSlab_NormMask_256x256.tga",
+   "output_sha256": "23fcf08b1d4fee8c2090d1cbace6bba2c0ec8f57e0bd5e864b6607420aaee813",
+   "uasset": "Content/Imported/MaterialDatabase/FloorTiles/PavingSlab_NormMask_256x256.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Paving/FloorTiles.upk#Tile_Marble_01",
+   "object": "Tile_Marble_01",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FloorTiles/FloorTiles/Texture2D/Tile_Marble_01.tga",
+   "extracted_sha256": "7715f499a69cf2a7b609818a4883fd3a56ed89e6446b364a17a5fd5b6ce9e5be",
+   "output_file": "Content/Extracted/MaterialDatabase/FloorTiles/FloorTiles/Texture2D/Tile_Marble_01.tga",
+   "output_sha256": "7715f499a69cf2a7b609818a4883fd3a56ed89e6446b364a17a5fd5b6ce9e5be",
+   "uasset": "Content/Imported/MaterialDatabase/FloorTiles/Tile_Marble_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Paving/FloorTiles.upk#Tile_Square03_NormMask_256x256",
+   "object": "Tile_Square03_NormMask_256x256",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FloorTiles/FloorTiles/Texture2D/Tile_Square03_NormMask_256x256.tga",
+   "extracted_sha256": "607e3e99692de0a79cc06efacce4570856b7997cb6f0ca67fe3f8178d0fd32a5",
+   "output_file": "Content/Extracted/MaterialDatabase/FloorTiles/FloorTiles/Texture2D/Tile_Square03_NormMask_256x256.tga",
+   "output_sha256": "607e3e99692de0a79cc06efacce4570856b7997cb6f0ca67fe3f8178d0fd32a5",
+   "uasset": "Content/Imported/MaterialDatabase/FloorTiles/Tile_Square03_NormMask_256x256.uasset"
+  }
+ ]
+}

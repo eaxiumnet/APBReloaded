@@ -1,0 +1,116 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Gantry",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/Metal/Gantry.upk",
+ "source_sha256": "fb57ff9fa7bce978cd3ee562d7290c3b15d7c1b10f526c048d29394af915efc3",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Gantry.upk#Gantry_DarkCoat_Diff",
+   "object": "Gantry_DarkCoat_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Gantry/Gantry/Texture2D/Gantry_DarkCoat_Diff.tga",
+   "extracted_sha256": "40cd52bac7f29a375e3074fb397366772bdbca5e18f8a961be1dd3b57f91f03c",
+   "output_file": "Content/Extracted/MaterialDatabase/Gantry/Gantry/Texture2D/Gantry_DarkCoat_Diff.tga",
+   "output_sha256": "40cd52bac7f29a375e3074fb397366772bdbca5e18f8a961be1dd3b57f91f03c",
+   "uasset": "Content/Imported/MaterialDatabase/Gantry/Gantry_DarkCoat_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Gantry.upk#Gantry_DiffAlph",
+   "object": "Gantry_DiffAlph",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Gantry/Gantry/Texture2D/Gantry_DiffAlph.tga",
+   "extracted_sha256": "122919907df251135d8216d784bc4f9bd4674c66ca4b536f1608199ce84fd4e1",
+   "output_file": "Content/Extracted/MaterialDatabase/Gantry/Gantry/Texture2D/Gantry_DiffAlph.tga",
+   "output_sha256": "122919907df251135d8216d784bc4f9bd4674c66ca4b536f1608199ce84fd4e1",
+   "uasset": "Content/Imported/MaterialDatabase/Gantry/Gantry_DiffAlph.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Gantry.upk#Gantry_Medium_Diff",
+   "object": "Gantry_Medium_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Gantry/Gantry/Texture2D/Gantry_Medium_Diff.tga",
+   "extracted_sha256": "6010b10ff3681cc0a3b26c28751851a97b2e26e9b2694ebc2230b8dcfeda6928",
+   "output_file": "Content/Extracted/MaterialDatabase/Gantry/Gantry/Texture2D/Gantry_Medium_Diff.tga",
+   "output_sha256": "6010b10ff3681cc0a3b26c28751851a97b2e26e9b2694ebc2230b8dcfeda6928",
+   "uasset": "Content/Imported/MaterialDatabase/Gantry/Gantry_Medium_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Gantry.upk#Gantry_Norm",
+   "object": "Gantry_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Gantry/Gantry/Texture2D/Gantry_Norm.tga",
+   "extracted_sha256": "66598028d4f510f3ed89c1dd9623394d9c816f330edf0ca4648b9e952eedd8f1",
+   "output_file": "Content/Extracted/MaterialDatabase/Gantry/Gantry/Texture2D/Gantry_Norm.tga",
+   "output_sha256": "66598028d4f510f3ed89c1dd9623394d9c816f330edf0ca4648b9e952eedd8f1",
+   "uasset": "Content/Imported/MaterialDatabase/Gantry/Gantry_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Gantry.upk#MI_gantry",
+   "object": "MI_gantry",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "gantry",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Gantry/Gantry/Texture2D/Gantry_DiffAlph.tga",
+   "extracted_sha256": "122919907df251135d8216d784bc4f9bd4674c66ca4b536f1608199ce84fd4e1",
+   "output_file": "Content/Extracted/MaterialDatabase/Gantry/Gantry/Texture2D/Gantry_DiffAlph.tga",
+   "output_sha256": "122919907df251135d8216d784bc4f9bd4674c66ca4b536f1608199ce84fd4e1",
+   "uasset": "Content/Imported/MaterialDatabase/Gantry/MI_gantry.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Gantry.upk#MI_Gantry_DarkCoat",
+   "object": "MI_Gantry_DarkCoat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Gantry_DarkCoat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Gantry/Gantry/Texture2D/Gantry_DarkCoat_Diff.tga",
+   "extracted_sha256": "40cd52bac7f29a375e3074fb397366772bdbca5e18f8a961be1dd3b57f91f03c",
+   "output_file": "Content/Extracted/MaterialDatabase/Gantry/Gantry/Texture2D/Gantry_DarkCoat_Diff.tga",
+   "output_sha256": "40cd52bac7f29a375e3074fb397366772bdbca5e18f8a961be1dd3b57f91f03c",
+   "uasset": "Content/Imported/MaterialDatabase/Gantry/MI_Gantry_DarkCoat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Gantry.upk#MI_Gantry_Medium",
+   "object": "MI_Gantry_Medium",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Gantry_Medium",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Gantry/Gantry/Texture2D/Gantry_Medium_Diff.tga",
+   "extracted_sha256": "6010b10ff3681cc0a3b26c28751851a97b2e26e9b2694ebc2230b8dcfeda6928",
+   "output_file": "Content/Extracted/MaterialDatabase/Gantry/Gantry/Texture2D/Gantry_Medium_Diff.tga",
+   "output_sha256": "6010b10ff3681cc0a3b26c28751851a97b2e26e9b2694ebc2230b8dcfeda6928",
+   "uasset": "Content/Imported/MaterialDatabase/Gantry/MI_Gantry_Medium.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Gantry.upk#MI_gantry_NoAlpha",
+   "object": "MI_gantry_NoAlpha",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "gantry_NoAlpha",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Gantry/Gantry/Texture2D/Gantry_DiffAlph.tga",
+   "extracted_sha256": "122919907df251135d8216d784bc4f9bd4674c66ca4b536f1608199ce84fd4e1",
+   "output_file": "Content/Extracted/MaterialDatabase/Gantry/Gantry/Texture2D/Gantry_DiffAlph.tga",
+   "output_sha256": "122919907df251135d8216d784bc4f9bd4674c66ca4b536f1608199ce84fd4e1",
+   "uasset": "Content/Imported/MaterialDatabase/Gantry/MI_gantry_NoAlpha.uasset"
+  }
+ ]
+}

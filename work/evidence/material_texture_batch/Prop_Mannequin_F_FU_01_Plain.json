@@ -1,0 +1,100 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Prop_Mannequin_F_FU_01_Plain",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Mannequin_F_FU_01_Plain.upk",
+ "source_sha256": "c58cce43eb82196f2955db3e1e458089863ec3c3878450c493ef084d8d3bf18d",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Mannequin_F_FU_01_Plain.upk#Diffuse",
+   "object": "Diffuse",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_FU_01_Plain/Prop_Mannequin_F_FU_01_Plain/Texture2D/Diffuse.tga",
+   "extracted_sha256": "f8ad0403bcbe1422629457f9b7aff1ad2132b60a280e94b940cab487784d1905",
+   "output_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_FU_01_Plain/Prop_Mannequin_F_FU_01_Plain/Texture2D/Diffuse.tga",
+   "output_sha256": "f8ad0403bcbe1422629457f9b7aff1ad2132b60a280e94b940cab487784d1905",
+   "uasset": "Content/Imported/MaterialDatabase/Prop_Mannequin_F_FU_01_Plain/Diffuse.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Mannequin_F_FU_01_Plain.upk#F_Hair_Eyelashes_Opac",
+   "object": "F_Hair_Eyelashes_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_FU_01_Plain/F_Hair/Texture2D/F_Hair_Eyelashes_Opac.tga",
+   "extracted_sha256": "04a5790c59643d52826487d6dc0b9506563ef01f4a4b4c394f601a6439982bc5",
+   "output_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_FU_01_Plain/F_Hair/Texture2D/F_Hair_Eyelashes_Opac.tga",
+   "output_sha256": "04a5790c59643d52826487d6dc0b9506563ef01f4a4b4c394f601a6439982bc5",
+   "uasset": "Content/Imported/MaterialDatabase/Prop_Mannequin_F_FU_01_Plain/F_Hair_Eyelashes_Opac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Mannequin_F_FU_01_Plain.upk#FlatNormal_Norm",
+   "object": "FlatNormal_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_FU_01_Plain/GolemMaterials/Texture2D/FlatNormal_Norm.tga",
+   "extracted_sha256": "56f5dd67c9ed8ad48979c978a13ccfae1ea4b20cdb93f27b20cec443a23832e8",
+   "output_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_FU_01_Plain/GolemMaterials/Texture2D/FlatNormal_Norm.tga",
+   "output_sha256": "56f5dd67c9ed8ad48979c978a13ccfae1ea4b20cdb93f27b20cec443a23832e8",
+   "uasset": "Content/Imported/MaterialDatabase/Prop_Mannequin_F_FU_01_Plain/FlatNormal_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Mannequin_F_FU_01_Plain.upk#MI_BodyMaterial",
+   "object": "MI_BodyMaterial",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "BodyMaterial",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_FU_01_Plain/Prop_Mannequin_F_FU_01_Plain/Texture2D/Diffuse.tga",
+   "extracted_sha256": "f8ad0403bcbe1422629457f9b7aff1ad2132b60a280e94b940cab487784d1905",
+   "output_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_FU_01_Plain/Prop_Mannequin_F_FU_01_Plain/Texture2D/Diffuse.tga",
+   "output_sha256": "f8ad0403bcbe1422629457f9b7aff1ad2132b60a280e94b940cab487784d1905",
+   "uasset": "Content/Imported/MaterialDatabase/Prop_Mannequin_F_FU_01_Plain/MI_BodyMaterial.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Mannequin_F_FU_01_Plain.upk#MI_F_Hair_Eyelashes_Mat",
+   "object": "MI_F_Hair_Eyelashes_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "F_Hair_Eyelashes_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_FU_01_Plain/F_Hair/Texture2D/F_Hair_Eyelashes_Opac.tga",
+   "extracted_sha256": "04a5790c59643d52826487d6dc0b9506563ef01f4a4b4c394f601a6439982bc5",
+   "output_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_FU_01_Plain/F_Hair/Texture2D/F_Hair_Eyelashes_Opac.tga",
+   "output_sha256": "04a5790c59643d52826487d6dc0b9506563ef01f4a4b4c394f601a6439982bc5",
+   "uasset": "Content/Imported/MaterialDatabase/Prop_Mannequin_F_FU_01_Plain/MI_F_Hair_Eyelashes_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Mannequin_F_FU_01_Plain.upk#MI_HairMaterial",
+   "object": "MI_HairMaterial",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "HairMaterial",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_FU_01_Plain/GolemMaterials/Texture2D/FlatNormal_Norm.tga",
+   "extracted_sha256": "56f5dd67c9ed8ad48979c978a13ccfae1ea4b20cdb93f27b20cec443a23832e8",
+   "output_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_FU_01_Plain/GolemMaterials/Texture2D/FlatNormal_Norm.tga",
+   "output_sha256": "56f5dd67c9ed8ad48979c978a13ccfae1ea4b20cdb93f27b20cec443a23832e8",
+   "uasset": "Content/Imported/MaterialDatabase/Prop_Mannequin_F_FU_01_Plain/MI_HairMaterial.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Mannequin_F_FU_01_Plain.upk#Normal",
+   "object": "Normal",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_FU_01_Plain/Prop_Mannequin_F_FU_01_Plain/Texture2D/Normal.tga",
+   "extracted_sha256": "e8211f74818bf50bede2b19e51a887b36b9fd4c9508e8925f51dca0789366e20",
+   "output_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_FU_01_Plain/Prop_Mannequin_F_FU_01_Plain/Texture2D/Normal.tga",
+   "output_sha256": "e8211f74818bf50bede2b19e51a887b36b9fd4c9508e8925f51dca0789366e20",
+   "uasset": "Content/Imported/MaterialDatabase/Prop_Mannequin_F_FU_01_Plain/Normal.uasset"
+  }
+ ]
+}

@@ -1,0 +1,73 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "CSD_DoorsCell",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/FeatureMaterials/CSD_DoorsCell.upk",
+ "source_sha256": "041c5b6c694861189bf0a333a59bf7a3bbae57d29877fbebb3fefdf16ff07021",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/FeatureMaterials/CSD_DoorsCell.upk#Brick_OldPaint_Diff",
+   "object": "Brick_OldPaint_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_DoorsCell/Brick_OldPaint/Texture2D/Brick_OldPaint_Diff.tga",
+   "extracted_sha256": "0cf6f30a59361409eba7425330d7167a2e3129077063ed9ce7f5d2445d45fb35",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_DoorsCell/Brick_OldPaint/Texture2D/Brick_OldPaint_Diff.tga",
+   "output_sha256": "0cf6f30a59361409eba7425330d7167a2e3129077063ed9ce7f5d2445d45fb35",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_DoorsCell/Brick_OldPaint_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/FeatureMaterials/CSD_DoorsCell.upk#CSD_DoorsCell_DiffSpec",
+   "object": "CSD_DoorsCell_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_DoorsCell/CSD_DoorsCell/Texture2D/CSD_DoorsCell_DiffSpec.tga",
+   "extracted_sha256": "90426e02f3e25b4d98ab635a6f786ddb95f93beaf89360eaec2801c5def75631",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_DoorsCell/CSD_DoorsCell/Texture2D/CSD_DoorsCell_DiffSpec.tga",
+   "output_sha256": "90426e02f3e25b4d98ab635a6f786ddb95f93beaf89360eaec2801c5def75631",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_DoorsCell/CSD_DoorsCell_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/FeatureMaterials/CSD_DoorsCell.upk#CSD_DoorsCell_Norm",
+   "object": "CSD_DoorsCell_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_DoorsCell/CSD_DoorsCell/Texture2D/CSD_DoorsCell_Norm.tga",
+   "extracted_sha256": "76e65251b481eb3ae3a2cdc26b0a05f25465f02ef24b32c00e17fdd0bf751eec",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_DoorsCell/CSD_DoorsCell/Texture2D/CSD_DoorsCell_Norm.tga",
+   "output_sha256": "76e65251b481eb3ae3a2cdc26b0a05f25465f02ef24b32c00e17fdd0bf751eec",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_DoorsCell/CSD_DoorsCell_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/FeatureMaterials/CSD_DoorsCell.upk#MI_Brick_OldPaint_Mat",
+   "object": "MI_Brick_OldPaint_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Brick_OldPaint_Mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_DoorsCell/Brick_OldPaint/Texture2D/Brick_OldPaint_Diff.tga",
+   "extracted_sha256": "0cf6f30a59361409eba7425330d7167a2e3129077063ed9ce7f5d2445d45fb35",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_DoorsCell/Brick_OldPaint/Texture2D/Brick_OldPaint_Diff.tga",
+   "output_sha256": "0cf6f30a59361409eba7425330d7167a2e3129077063ed9ce7f5d2445d45fb35",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_DoorsCell/MI_Brick_OldPaint_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/FeatureMaterials/CSD_DoorsCell.upk#MI_CSD_DoorsCell_MAT",
+   "object": "MI_CSD_DoorsCell_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CSD_DoorsCell_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_DoorsCell/CSD_DoorsCell/Texture2D/CSD_DoorsCell_DiffSpec.tga",
+   "extracted_sha256": "90426e02f3e25b4d98ab635a6f786ddb95f93beaf89360eaec2801c5def75631",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_DoorsCell/CSD_DoorsCell/Texture2D/CSD_DoorsCell_DiffSpec.tga",
+   "output_sha256": "90426e02f3e25b4d98ab635a6f786ddb95f93beaf89360eaec2801c5def75631",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_DoorsCell/MI_CSD_DoorsCell_MAT.uasset"
+  }
+ ]
+}

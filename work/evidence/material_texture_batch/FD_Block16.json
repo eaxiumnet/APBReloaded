@@ -1,0 +1,62 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FD_Block16",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block16.upk",
+ "source_sha256": "3db4d09a683c8fc88d55fc8b76219575fbfc1cdc49e84c75522ab94f990b1e39",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block16.upk#Concrete_003_Norm",
+   "object": "Concrete_003_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Block16/Concrete/Texture2D/Concrete_003_Norm.tga",
+   "extracted_sha256": "fe51cf21d28a3ec12c2b5041f35c6768302f98c29c1436db4d637b207fdda6e4",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Block16/Concrete/Texture2D/Concrete_003_Norm.tga",
+   "output_sha256": "fe51cf21d28a3ec12c2b5041f35c6768302f98c29c1436db4d637b207fdda6e4",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Block16/Concrete_003_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block16.upk#Concrete_01_DiffSpec",
+   "object": "Concrete_01_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Block16/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Block16/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Block16/Concrete_01_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block16.upk#MI_Conc_Grey",
+   "object": "MI_Conc_Grey",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Conc_Grey",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Block16/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Block16/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Block16/MI_Conc_Grey.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block16.upk#MI_Conc_PARENT",
+   "object": "MI_Conc_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Conc_PARENT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Block16/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Block16/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Block16/MI_Conc_PARENT.uasset"
+  }
+ ]
+}

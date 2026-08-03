@@ -1,0 +1,62 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "IndustrialWheeledUnits",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/IndustrialWheeledUnits.upk",
+ "source_sha256": "4026779ae50a626fcf3320d07d1b9fa0cedd5f1487f73caf2bce1406e89e87f2",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/IndustrialWheeledUnits.upk#IndustrialWheeledUnits_DiffSpec",
+   "object": "IndustrialWheeledUnits_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/IndustrialWheeledUnits/IndustrialWheeledUnits/Texture2D/IndustrialWheeledUnits_DiffSpec.tga",
+   "extracted_sha256": "2804998763cee282b90fd2fe51f4912e7e74305d9c16c306f4651d1a75e5e732",
+   "output_file": "Content/Extracted/MaterialDatabase/IndustrialWheeledUnits/IndustrialWheeledUnits/Texture2D/IndustrialWheeledUnits_DiffSpec.tga",
+   "output_sha256": "2804998763cee282b90fd2fe51f4912e7e74305d9c16c306f4651d1a75e5e732",
+   "uasset": "Content/Imported/MaterialDatabase/IndustrialWheeledUnits/IndustrialWheeledUnits_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/IndustrialWheeledUnits.upk#IndustrialWheeledUnits_Norm",
+   "object": "IndustrialWheeledUnits_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/IndustrialWheeledUnits/IndustrialWheeledUnits/Texture2D/IndustrialWheeledUnits_Norm.tga",
+   "extracted_sha256": "9831319b307ddeaf6b546751a816709a4a38e2cc2fab277f4b5cfa3af3d75cdb",
+   "output_file": "Content/Extracted/MaterialDatabase/IndustrialWheeledUnits/IndustrialWheeledUnits/Texture2D/IndustrialWheeledUnits_Norm.tga",
+   "output_sha256": "9831319b307ddeaf6b546751a816709a4a38e2cc2fab277f4b5cfa3af3d75cdb",
+   "uasset": "Content/Imported/MaterialDatabase/IndustrialWheeledUnits/IndustrialWheeledUnits_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/IndustrialWheeledUnits.upk#MI_MidtownIndustrialWheeledUnits_Damage_MAT",
+   "object": "MI_MidtownIndustrialWheeledUnits_Damage_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "MidtownIndustrialWheeledUnits_Damage_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/IndustrialWheeledUnits/IndustrialWheeledUnits/Texture2D/IndustrialWheeledUnits_DiffSpec.tga",
+   "extracted_sha256": "2804998763cee282b90fd2fe51f4912e7e74305d9c16c306f4651d1a75e5e732",
+   "output_file": "Content/Extracted/MaterialDatabase/IndustrialWheeledUnits/IndustrialWheeledUnits/Texture2D/IndustrialWheeledUnits_DiffSpec.tga",
+   "output_sha256": "2804998763cee282b90fd2fe51f4912e7e74305d9c16c306f4651d1a75e5e732",
+   "uasset": "Content/Imported/MaterialDatabase/IndustrialWheeledUnits/MI_MidtownIndustrialWheeledUnits_Damage_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/IndustrialWheeledUnits.upk#MI_MidtownIndustrialWheeledUnits_MAT",
+   "object": "MI_MidtownIndustrialWheeledUnits_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "MidtownIndustrialWheeledUnits_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/IndustrialWheeledUnits/IndustrialWheeledUnits/Texture2D/IndustrialWheeledUnits_DiffSpec.tga",
+   "extracted_sha256": "2804998763cee282b90fd2fe51f4912e7e74305d9c16c306f4651d1a75e5e732",
+   "output_file": "Content/Extracted/MaterialDatabase/IndustrialWheeledUnits/IndustrialWheeledUnits/Texture2D/IndustrialWheeledUnits_DiffSpec.tga",
+   "output_sha256": "2804998763cee282b90fd2fe51f4912e7e74305d9c16c306f4651d1a75e5e732",
+   "uasset": "Content/Imported/MaterialDatabase/IndustrialWheeledUnits/MI_MidtownIndustrialWheeledUnits_MAT.uasset"
+  }
+ ]
+}

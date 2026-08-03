@@ -1,0 +1,60 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "VehicleTicketMachine",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/PropMaterials/VehicleTicketMachine.upk",
+ "source_sha256": "97f70265f7d6ba2d3d6c4cc9b49fc8d189faf4405b12d9e9e37b682200fc887c",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/VehicleTicketMachine.upk#MI_VehicleTicketMachine_MAT",
+   "object": "MI_VehicleTicketMachine_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "VehicleTicketMachine_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/VehicleTicketMachine/VehicleTicketMachine/Texture2D/VehicleTicketMachine_Diff.tga",
+   "extracted_sha256": "6e24d5985a528de904edda3383b90a35b6cf8a6619461b7a6b44e590678dfa73",
+   "output_file": "Content/Extracted/MaterialDatabase/VehicleTicketMachine/VehicleTicketMachine/Texture2D/VehicleTicketMachine_Diff.tga",
+   "output_sha256": "6e24d5985a528de904edda3383b90a35b6cf8a6619461b7a6b44e590678dfa73",
+   "uasset": "Content/Imported/MaterialDatabase/VehicleTicketMachine/MI_VehicleTicketMachine_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/VehicleTicketMachine.upk#VehicleTicketMachine_Diff",
+   "object": "VehicleTicketMachine_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/VehicleTicketMachine/VehicleTicketMachine/Texture2D/VehicleTicketMachine_Diff.tga",
+   "extracted_sha256": "6e24d5985a528de904edda3383b90a35b6cf8a6619461b7a6b44e590678dfa73",
+   "output_file": "Content/Extracted/MaterialDatabase/VehicleTicketMachine/VehicleTicketMachine/Texture2D/VehicleTicketMachine_Diff.tga",
+   "output_sha256": "6e24d5985a528de904edda3383b90a35b6cf8a6619461b7a6b44e590678dfa73",
+   "uasset": "Content/Imported/MaterialDatabase/VehicleTicketMachine/VehicleTicketMachine_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/VehicleTicketMachine.upk#VehicleTicketMachine_EmisMask2",
+   "object": "VehicleTicketMachine_EmisMask2",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/VehicleTicketMachine/VehicleTicketMachine/Texture2D/VehicleTicketMachine_EmisMask2.tga",
+   "extracted_sha256": "8d199e29d675fd4e5e724addf68ca00e62ed982c5dfb4bc58f90efa70f57f53b",
+   "output_file": "Content/Extracted/MaterialDatabase/VehicleTicketMachine/VehicleTicketMachine/Texture2D/VehicleTicketMachine_EmisMask2.tga",
+   "output_sha256": "8d199e29d675fd4e5e724addf68ca00e62ed982c5dfb4bc58f90efa70f57f53b",
+   "uasset": "Content/Imported/MaterialDatabase/VehicleTicketMachine/VehicleTicketMachine_EmisMask2.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/VehicleTicketMachine.upk#VehicleTicketMachine_Norm",
+   "object": "VehicleTicketMachine_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/VehicleTicketMachine/VehicleTicketMachine/Texture2D/VehicleTicketMachine_Norm.tga",
+   "extracted_sha256": "08aa3440906e146c18a0effe0dbbdf3b960a64829894d258a01569e65e419b8f",
+   "output_file": "Content/Extracted/MaterialDatabase/VehicleTicketMachine/VehicleTicketMachine/Texture2D/VehicleTicketMachine_Norm.tga",
+   "output_sha256": "08aa3440906e146c18a0effe0dbbdf3b960a64829894d258a01569e65e419b8f",
+   "uasset": "Content/Imported/MaterialDatabase/VehicleTicketMachine/VehicleTicketMachine_Norm.uasset"
+  }
+ ]
+}

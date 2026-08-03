@@ -1,0 +1,62 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "RoofVents",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/RoofVents.upk",
+ "source_sha256": "8c424516f5bb6375b12922f9bfbe1057dafd16bad543466a7b631ed05d9812f9",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/RoofVents.upk#MI_roofvents",
+   "object": "MI_roofvents",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "roofvents",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoofVents/RoofVents/Texture2D/RoofVents_DiffSpec.tga",
+   "extracted_sha256": "ded7a732ed693316cd3db85481080b3991255862b99229abdcbd223cf61d6630",
+   "output_file": "Content/Extracted/MaterialDatabase/RoofVents/RoofVents/Texture2D/RoofVents_DiffSpec.tga",
+   "output_sha256": "ded7a732ed693316cd3db85481080b3991255862b99229abdcbd223cf61d6630",
+   "uasset": "Content/Imported/MaterialDatabase/RoofVents/MI_roofvents.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/RoofVents.upk#MI_RoofVents_Ridges",
+   "object": "MI_RoofVents_Ridges",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RoofVents_Ridges",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoofVents/RoofVents/Texture2D/RoofVents_DiffSpec.tga",
+   "extracted_sha256": "ded7a732ed693316cd3db85481080b3991255862b99229abdcbd223cf61d6630",
+   "output_file": "Content/Extracted/MaterialDatabase/RoofVents/RoofVents/Texture2D/RoofVents_DiffSpec.tga",
+   "output_sha256": "ded7a732ed693316cd3db85481080b3991255862b99229abdcbd223cf61d6630",
+   "uasset": "Content/Imported/MaterialDatabase/RoofVents/MI_RoofVents_Ridges.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/RoofVents.upk#RoofVents_DiffSpec",
+   "object": "RoofVents_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoofVents/RoofVents/Texture2D/RoofVents_DiffSpec.tga",
+   "extracted_sha256": "ded7a732ed693316cd3db85481080b3991255862b99229abdcbd223cf61d6630",
+   "output_file": "Content/Extracted/MaterialDatabase/RoofVents/RoofVents/Texture2D/RoofVents_DiffSpec.tga",
+   "output_sha256": "ded7a732ed693316cd3db85481080b3991255862b99229abdcbd223cf61d6630",
+   "uasset": "Content/Imported/MaterialDatabase/RoofVents/RoofVents_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/RoofVents.upk#RoofVents_Norm",
+   "object": "RoofVents_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoofVents/RoofVents/Texture2D/RoofVents_Norm.tga",
+   "extracted_sha256": "7b463c124ce4288b9c29e3ec91fd7d79e77fe96c1677dbb266e3edf6987346d8",
+   "output_file": "Content/Extracted/MaterialDatabase/RoofVents/RoofVents/Texture2D/RoofVents_Norm.tga",
+   "output_sha256": "7b463c124ce4288b9c29e3ec91fd7d79e77fe96c1677dbb266e3edf6987346d8",
+   "uasset": "Content/Imported/MaterialDatabase/RoofVents/RoofVents_Norm.uasset"
+  }
+ ]
+}

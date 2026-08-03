@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FinancialFreewayScafolding",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/PropMaterials/FinancialFreewayScafolding.upk",
+ "source_sha256": "11249b72a4c508d328f1bf15ce695a8cc20f92b7599b2f2004f290269e152d56",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialFreewayScafolding.upk#FreewayScafolding_DiffSpec",
+   "object": "FreewayScafolding_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialFreewayScafolding/FinancialFreewayScafolding/Texture2D/FreewayScafolding_DiffSpec.tga",
+   "extracted_sha256": "3da606e87edc515151ff7a5fea552957fabaab687aae05e48200d77f77b4de81",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialFreewayScafolding/FinancialFreewayScafolding/Texture2D/FreewayScafolding_DiffSpec.tga",
+   "output_sha256": "3da606e87edc515151ff7a5fea552957fabaab687aae05e48200d77f77b4de81",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialFreewayScafolding/FreewayScafolding_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialFreewayScafolding.upk#FreewayScafolding_Norm",
+   "object": "FreewayScafolding_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialFreewayScafolding/FinancialFreewayScafolding/Texture2D/FreewayScafolding_Norm.tga",
+   "extracted_sha256": "2e15619d06c466482892ad0144cc3cce9a0f77ba96e35fea6139ecac07f9cfbc",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialFreewayScafolding/FinancialFreewayScafolding/Texture2D/FreewayScafolding_Norm.tga",
+   "output_sha256": "2e15619d06c466482892ad0144cc3cce9a0f77ba96e35fea6139ecac07f9cfbc",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialFreewayScafolding/FreewayScafolding_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialFreewayScafolding.upk#MI_FinancialFreewayScafolding_MAT",
+   "object": "MI_FinancialFreewayScafolding_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialFreewayScafolding_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialFreewayScafolding/FinancialFreewayScafolding/Texture2D/FreewayScafolding_DiffSpec.tga",
+   "extracted_sha256": "3da606e87edc515151ff7a5fea552957fabaab687aae05e48200d77f77b4de81",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialFreewayScafolding/FinancialFreewayScafolding/Texture2D/FreewayScafolding_DiffSpec.tga",
+   "output_sha256": "3da606e87edc515151ff7a5fea552957fabaab687aae05e48200d77f77b4de81",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialFreewayScafolding/MI_FinancialFreewayScafolding_MAT.uasset"
+  }
+ ]
+}

@@ -1,0 +1,100 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "BoxHedge",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/BoxHedge.upk",
+ "source_sha256": "0a89cf0c5df85b1a6248577ca616ab3b810f23c53086366f1fa2f1b65f1b739e",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/BoxHedge.upk#BoxHedge_Inner_DiffSpec",
+   "object": "BoxHedge_Inner_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BoxHedge/BoxHedge/Texture2D/BoxHedge_Inner_DiffSpec.tga",
+   "extracted_sha256": "7681f4b82cfa06abbf018969ca2cb55ed35f9b22dc28db9d2cf9c1dcf9255c9a",
+   "output_file": "Content/Extracted/MaterialDatabase/BoxHedge/BoxHedge/Texture2D/BoxHedge_Inner_DiffSpec.tga",
+   "output_sha256": "7681f4b82cfa06abbf018969ca2cb55ed35f9b22dc28db9d2cf9c1dcf9255c9a",
+   "uasset": "Content/Imported/MaterialDatabase/BoxHedge/BoxHedge_Inner_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/BoxHedge.upk#BoxHedge_Inner_Norm",
+   "object": "BoxHedge_Inner_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BoxHedge/BoxHedge/Texture2D/BoxHedge_Inner_Norm.tga",
+   "extracted_sha256": "8d21ca9768c9d5548b85d0dd6c1d1da22c5fa528b827b2288f9cdef8f161b788",
+   "output_file": "Content/Extracted/MaterialDatabase/BoxHedge/BoxHedge/Texture2D/BoxHedge_Inner_Norm.tga",
+   "output_sha256": "8d21ca9768c9d5548b85d0dd6c1d1da22c5fa528b827b2288f9cdef8f161b788",
+   "uasset": "Content/Imported/MaterialDatabase/BoxHedge/BoxHedge_Inner_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/BoxHedge.upk#BoxHedge_InnerOuter_Opac",
+   "object": "BoxHedge_InnerOuter_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BoxHedge/BoxHedge/Texture2D/BoxHedge_InnerOuter_Opac.tga",
+   "extracted_sha256": "e2e2af5245df79226395ddc7523914731d3cf20b986319581b6fdf87ce4d9806",
+   "output_file": "Content/Extracted/MaterialDatabase/BoxHedge/BoxHedge/Texture2D/BoxHedge_InnerOuter_Opac.tga",
+   "output_sha256": "e2e2af5245df79226395ddc7523914731d3cf20b986319581b6fdf87ce4d9806",
+   "uasset": "Content/Imported/MaterialDatabase/BoxHedge/BoxHedge_InnerOuter_Opac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/BoxHedge.upk#BoxHedge_Outer_DiffSpec",
+   "object": "BoxHedge_Outer_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BoxHedge/BoxHedge/Texture2D/BoxHedge_Outer_DiffSpec.tga",
+   "extracted_sha256": "bf2a9643606045bbe1269b3a8aa6655f4c1ae334f2d45941defe48b8c6a8e628",
+   "output_file": "Content/Extracted/MaterialDatabase/BoxHedge/BoxHedge/Texture2D/BoxHedge_Outer_DiffSpec.tga",
+   "output_sha256": "bf2a9643606045bbe1269b3a8aa6655f4c1ae334f2d45941defe48b8c6a8e628",
+   "uasset": "Content/Imported/MaterialDatabase/BoxHedge/BoxHedge_Outer_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/BoxHedge.upk#BoxHedge_Outer_Norm",
+   "object": "BoxHedge_Outer_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BoxHedge/BoxHedge/Texture2D/BoxHedge_Outer_Norm.tga",
+   "extracted_sha256": "80cf47b15eb233e5048acb547e763d972302d42c3bc8cb6e22552a06bbba767b",
+   "output_file": "Content/Extracted/MaterialDatabase/BoxHedge/BoxHedge/Texture2D/BoxHedge_Outer_Norm.tga",
+   "output_sha256": "80cf47b15eb233e5048acb547e763d972302d42c3bc8cb6e22552a06bbba767b",
+   "uasset": "Content/Imported/MaterialDatabase/BoxHedge/BoxHedge_Outer_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/BoxHedge.upk#MI_BoxHedge_Inner_Mat",
+   "object": "MI_BoxHedge_Inner_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "BoxHedge_Inner_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BoxHedge/BoxHedge/Texture2D/BoxHedge_Inner_DiffSpec.tga",
+   "extracted_sha256": "7681f4b82cfa06abbf018969ca2cb55ed35f9b22dc28db9d2cf9c1dcf9255c9a",
+   "output_file": "Content/Extracted/MaterialDatabase/BoxHedge/BoxHedge/Texture2D/BoxHedge_Inner_DiffSpec.tga",
+   "output_sha256": "7681f4b82cfa06abbf018969ca2cb55ed35f9b22dc28db9d2cf9c1dcf9255c9a",
+   "uasset": "Content/Imported/MaterialDatabase/BoxHedge/MI_BoxHedge_Inner_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/BoxHedge.upk#MI_BoxHedge_Outer_Mat",
+   "object": "MI_BoxHedge_Outer_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "BoxHedge_Outer_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BoxHedge/BoxHedge/Texture2D/BoxHedge_Outer_DiffSpec.tga",
+   "extracted_sha256": "bf2a9643606045bbe1269b3a8aa6655f4c1ae334f2d45941defe48b8c6a8e628",
+   "output_file": "Content/Extracted/MaterialDatabase/BoxHedge/BoxHedge/Texture2D/BoxHedge_Outer_DiffSpec.tga",
+   "output_sha256": "bf2a9643606045bbe1269b3a8aa6655f4c1ae334f2d45941defe48b8c6a8e628",
+   "uasset": "Content/Imported/MaterialDatabase/BoxHedge/MI_BoxHedge_Outer_Mat.uasset"
+  }
+ ]
+}

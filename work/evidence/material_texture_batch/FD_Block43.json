@@ -1,0 +1,182 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FD_Block43",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block43.upk",
+ "source_sha256": "1aeb821b91dfa1d171b65cbfff889a64ab07a384b44a72f25963d9e861d380d7",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block43.upk#Brick_Large_Norm",
+   "object": "Brick_Large_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Block43/Brick_Large/Texture2D/Brick_Large_Norm.tga",
+   "extracted_sha256": "c60a747e096db8d760c7fd288b9d955e0cfb4b3eb396b0aec2da3130f3ee0c24",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Block43/Brick_Large/Texture2D/Brick_Large_Norm.tga",
+   "output_sha256": "c60a747e096db8d760c7fd288b9d955e0cfb4b3eb396b0aec2da3130f3ee0c24",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Block43/Brick_Large_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block43.upk#Concrete_003_Norm",
+   "object": "Concrete_003_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Block43/Concrete/Texture2D/Concrete_003_Norm.tga",
+   "extracted_sha256": "fe51cf21d28a3ec12c2b5041f35c6768302f98c29c1436db4d637b207fdda6e4",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Block43/Concrete/Texture2D/Concrete_003_Norm.tga",
+   "output_sha256": "fe51cf21d28a3ec12c2b5041f35c6768302f98c29c1436db4d637b207fdda6e4",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Block43/Concrete_003_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block43.upk#Concrete_01_DiffSpec",
+   "object": "Concrete_01_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Block43/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Block43/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Block43/Concrete_01_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block43.upk#Hospital_Signs",
+   "object": "Hospital_Signs",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Block43/FD_Block43/Texture2D/Hospital_Signs.tga",
+   "extracted_sha256": "b6097a377956415da1cbee6df1a42781e6dd3eebd82f952ffc867414e4fa7a81",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Block43/FD_Block43/Texture2D/Hospital_Signs.tga",
+   "output_sha256": "b6097a377956415da1cbee6df1a42781e6dd3eebd82f952ffc867414e4fa7a81",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Block43/Hospital_Signs.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block43.upk#MI_Brick_Burnished_Beige",
+   "object": "MI_Brick_Burnished_Beige",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Brick_Burnished_Beige",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Block43/Brick_Large/Texture2D/Brick_Large_Norm.tga",
+   "extracted_sha256": "c60a747e096db8d760c7fd288b9d955e0cfb4b3eb396b0aec2da3130f3ee0c24",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Block43/Brick_Large/Texture2D/Brick_Large_Norm.tga",
+   "output_sha256": "c60a747e096db8d760c7fd288b9d955e0cfb4b3eb396b0aec2da3130f3ee0c24",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Block43/MI_Brick_Burnished_Beige.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block43.upk#MI_Brick_Burnished_PARENT",
+   "object": "MI_Brick_Burnished_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Brick_Burnished_PARENT",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Block43/Brick_Large/Texture2D/Brick_Large_Norm.tga",
+   "extracted_sha256": "c60a747e096db8d760c7fd288b9d955e0cfb4b3eb396b0aec2da3130f3ee0c24",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Block43/Brick_Large/Texture2D/Brick_Large_Norm.tga",
+   "output_sha256": "c60a747e096db8d760c7fd288b9d955e0cfb4b3eb396b0aec2da3130f3ee0c24",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Block43/MI_Brick_Burnished_PARENT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block43.upk#MI_Conc_GreyDark",
+   "object": "MI_Conc_GreyDark",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Conc_GreyDark",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Block43/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Block43/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Block43/MI_Conc_GreyDark.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block43.upk#MI_Conc_PARENT",
+   "object": "MI_Conc_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Conc_PARENT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Block43/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Block43/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Block43/MI_Conc_PARENT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block43.upk#MI_Hospital_Plaque",
+   "object": "MI_Hospital_Plaque",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Hospital_Plaque",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Block43/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Block43/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Block43/MI_Hospital_Plaque.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block43.upk#MI_Hospital_Sign",
+   "object": "MI_Hospital_Sign",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Hospital_Sign",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Block43/FD_Block43/Texture2D/Hospital_Signs.tga",
+   "extracted_sha256": "b6097a377956415da1cbee6df1a42781e6dd3eebd82f952ffc867414e4fa7a81",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Block43/FD_Block43/Texture2D/Hospital_Signs.tga",
+   "output_sha256": "b6097a377956415da1cbee6df1a42781e6dd3eebd82f952ffc867414e4fa7a81",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Block43/MI_Hospital_Sign.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block43.upk#MI_PaintedMetal_Black",
+   "object": "MI_PaintedMetal_Black",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PaintedMetal_Black",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Block43/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "extracted_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Block43/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "output_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Block43/MI_PaintedMetal_Black.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block43.upk#MI_PaintedMetal_PARENT",
+   "object": "MI_PaintedMetal_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PaintedMetal_PARENT",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Block43/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "extracted_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Block43/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "output_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Block43/MI_PaintedMetal_PARENT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block43.upk#PaintedMetal_Norm",
+   "object": "PaintedMetal_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Block43/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "extracted_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Block43/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "output_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Block43/PaintedMetal_Norm.uasset"
+  }
+ ]
+}

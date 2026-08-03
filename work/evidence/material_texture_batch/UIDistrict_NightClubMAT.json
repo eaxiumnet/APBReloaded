@@ -1,0 +1,203 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "UIDistrict_NightClubMAT",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/UIDistrict/Nightclub/UIDistrict_NightClubMAT.upk",
+ "source_sha256": "b178c206face21505bc5efaf7dd239ad82c5307f7167fee688fb335b33db9096",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/UIDistrict/Nightclub/UIDistrict_NightClubMAT.upk#Gothic01",
+   "object": "Gothic01",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/UIDistrict_NightClubMAT/UIDistrict_NightClubMAT/Texture2D/Gothic01.tga",
+   "extracted_sha256": "ac1a76fd7e4876cabffb1119ce461ab27bdbaf8a1ddea8d8d7c86918d7b60c4c",
+   "output_file": "Content/Extracted/MaterialDatabase/UIDistrict_NightClubMAT/UIDistrict_NightClubMAT/Texture2D/Gothic01.tga",
+   "output_sha256": "ac1a76fd7e4876cabffb1119ce461ab27bdbaf8a1ddea8d8d7c86918d7b60c4c",
+   "uasset": "Content/Imported/MaterialDatabase/UIDistrict_NightClubMAT/Gothic01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/UIDistrict/Nightclub/UIDistrict_NightClubMAT.upk#Gothic02_Norm",
+   "object": "Gothic02_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/UIDistrict_NightClubMAT/UIDistrict_NightClubMAT/Texture2D/Gothic02_Norm.tga",
+   "extracted_sha256": "77b5b30c776628a12bc9092264972261fc85f47a118a6da91ed309b1434af817",
+   "output_file": "Content/Extracted/MaterialDatabase/UIDistrict_NightClubMAT/UIDistrict_NightClubMAT/Texture2D/Gothic02_Norm.tga",
+   "output_sha256": "77b5b30c776628a12bc9092264972261fc85f47a118a6da91ed309b1434af817",
+   "uasset": "Content/Imported/MaterialDatabase/UIDistrict_NightClubMAT/Gothic02_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/UIDistrict/Nightclub/UIDistrict_NightClubMAT.upk#LaminateFloor_Black_Norm",
+   "object": "LaminateFloor_Black_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/UIDistrict_NightClubMAT/UIDistrict_NightClubMAT/Texture2D/LaminateFloor_Black_Norm.tga",
+   "extracted_sha256": "150b95d2e8d1693bc840c9d29eb9279132fc429838834d69dd8b796059037489",
+   "output_file": "Content/Extracted/MaterialDatabase/UIDistrict_NightClubMAT/UIDistrict_NightClubMAT/Texture2D/LaminateFloor_Black_Norm.tga",
+   "output_sha256": "150b95d2e8d1693bc840c9d29eb9279132fc429838834d69dd8b796059037489",
+   "uasset": "Content/Imported/MaterialDatabase/UIDistrict_NightClubMAT/LaminateFloor_Black_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/UIDistrict/Nightclub/UIDistrict_NightClubMAT.upk#LeatherBump",
+   "object": "LeatherBump",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/UIDistrict_NightClubMAT/Leather/Texture2D/LeatherBump.tga",
+   "extracted_sha256": "cbd9dec1e2a38d36dc5dcba97339a0e4e2d54942329067e7b4e3de6aac44053a",
+   "output_file": "Content/Extracted/MaterialDatabase/UIDistrict_NightClubMAT/Leather/Texture2D/LeatherBump.tga",
+   "output_sha256": "cbd9dec1e2a38d36dc5dcba97339a0e4e2d54942329067e7b4e3de6aac44053a",
+   "uasset": "Content/Imported/MaterialDatabase/UIDistrict_NightClubMAT/LeatherBump.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/UIDistrict/Nightclub/UIDistrict_NightClubMAT.upk#MI_Banner_01",
+   "object": "MI_Banner_01",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Banner_01",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/UIDistrict_NightClubMAT/UIDistrict_NightClubMAT/Texture2D/Nightclub_SujiChalk.tga",
+   "extracted_sha256": "b88e55aa7919907b7d58bd233d3aa42adc97b54925eb8569634aea0cf852c55d",
+   "output_file": "Content/Extracted/MaterialDatabase/UIDistrict_NightClubMAT/UIDistrict_NightClubMAT/Texture2D/Nightclub_SujiChalk.tga",
+   "output_sha256": "b88e55aa7919907b7d58bd233d3aa42adc97b54925eb8569634aea0cf852c55d",
+   "uasset": "Content/Imported/MaterialDatabase/UIDistrict_NightClubMAT/MI_Banner_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/UIDistrict/Nightclub/UIDistrict_NightClubMAT.upk#MI_GothicPattern01",
+   "object": "MI_GothicPattern01",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "GothicPattern01",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/UIDistrict_NightClubMAT/UIDistrict_NightClubMAT/Texture2D/Gothic01.tga",
+   "extracted_sha256": "ac1a76fd7e4876cabffb1119ce461ab27bdbaf8a1ddea8d8d7c86918d7b60c4c",
+   "output_file": "Content/Extracted/MaterialDatabase/UIDistrict_NightClubMAT/UIDistrict_NightClubMAT/Texture2D/Gothic01.tga",
+   "output_sha256": "ac1a76fd7e4876cabffb1119ce461ab27bdbaf8a1ddea8d8d7c86918d7b60c4c",
+   "uasset": "Content/Imported/MaterialDatabase/UIDistrict_NightClubMAT/MI_GothicPattern01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/UIDistrict/Nightclub/UIDistrict_NightClubMAT.upk#MI_GothicPattern02",
+   "object": "MI_GothicPattern02",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "GothicPattern02",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/UIDistrict_NightClubMAT/UIDistrict_NightClubMAT/Texture2D/Gothic02_Norm.tga",
+   "extracted_sha256": "77b5b30c776628a12bc9092264972261fc85f47a118a6da91ed309b1434af817",
+   "output_file": "Content/Extracted/MaterialDatabase/UIDistrict_NightClubMAT/UIDistrict_NightClubMAT/Texture2D/Gothic02_Norm.tga",
+   "output_sha256": "77b5b30c776628a12bc9092264972261fc85f47a118a6da91ed309b1434af817",
+   "uasset": "Content/Imported/MaterialDatabase/UIDistrict_NightClubMAT/MI_GothicPattern02.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/UIDistrict/Nightclub/UIDistrict_NightClubMAT.upk#MI_LaminateFloor_Black",
+   "object": "MI_LaminateFloor_Black",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "LaminateFloor_Black",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/UIDistrict_NightClubMAT/UIDistrict_NightClubMAT/Texture2D/LaminateFloor_Black_Norm.tga",
+   "extracted_sha256": "150b95d2e8d1693bc840c9d29eb9279132fc429838834d69dd8b796059037489",
+   "output_file": "Content/Extracted/MaterialDatabase/UIDistrict_NightClubMAT/UIDistrict_NightClubMAT/Texture2D/LaminateFloor_Black_Norm.tga",
+   "output_sha256": "150b95d2e8d1693bc840c9d29eb9279132fc429838834d69dd8b796059037489",
+   "uasset": "Content/Imported/MaterialDatabase/UIDistrict_NightClubMAT/MI_LaminateFloor_Black.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/UIDistrict/Nightclub/UIDistrict_NightClubMAT.upk#MI_Leather_Black",
+   "object": "MI_Leather_Black",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Leather_Black",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/UIDistrict_NightClubMAT/Leather/Texture2D/LeatherBump.tga",
+   "extracted_sha256": "cbd9dec1e2a38d36dc5dcba97339a0e4e2d54942329067e7b4e3de6aac44053a",
+   "output_file": "Content/Extracted/MaterialDatabase/UIDistrict_NightClubMAT/Leather/Texture2D/LeatherBump.tga",
+   "output_sha256": "cbd9dec1e2a38d36dc5dcba97339a0e4e2d54942329067e7b4e3de6aac44053a",
+   "uasset": "Content/Imported/MaterialDatabase/UIDistrict_NightClubMAT/MI_Leather_Black.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/UIDistrict/Nightclub/UIDistrict_NightClubMAT.upk#MI_RedWall",
+   "object": "MI_RedWall",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RedWall",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/UIDistrict_NightClubMAT/Faux_Wall/Texture2D/WallTex_DiffSpec_Red.tga",
+   "extracted_sha256": "a1a5c3813cf81a54545d52c4695560c14ca9571f9541c8ba242c0ec727310efa",
+   "output_file": "Content/Extracted/MaterialDatabase/UIDistrict_NightClubMAT/Faux_Wall/Texture2D/WallTex_DiffSpec_Red.tga",
+   "output_sha256": "a1a5c3813cf81a54545d52c4695560c14ca9571f9541c8ba242c0ec727310efa",
+   "uasset": "Content/Imported/MaterialDatabase/UIDistrict_NightClubMAT/MI_RedWall.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/UIDistrict/Nightclub/UIDistrict_NightClubMAT.upk#MI_StoneWall_Black",
+   "object": "MI_StoneWall_Black",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StoneWall_Black",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/UIDistrict_NightClubMAT/UIDistrict_NightClubMAT/Texture2D/SandstoneBlack_Brick_Diff.tga",
+   "extracted_sha256": "111b5e0a06841bb79650a4fffd237de190bbc47bb574368e7f6a6093c0a2d7d4",
+   "output_file": "Content/Extracted/MaterialDatabase/UIDistrict_NightClubMAT/UIDistrict_NightClubMAT/Texture2D/SandstoneBlack_Brick_Diff.tga",
+   "output_sha256": "111b5e0a06841bb79650a4fffd237de190bbc47bb574368e7f6a6093c0a2d7d4",
+   "uasset": "Content/Imported/MaterialDatabase/UIDistrict_NightClubMAT/MI_StoneWall_Black.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/UIDistrict/Nightclub/UIDistrict_NightClubMAT.upk#Nightclub_SujiChalk",
+   "object": "Nightclub_SujiChalk",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/UIDistrict_NightClubMAT/UIDistrict_NightClubMAT/Texture2D/Nightclub_SujiChalk.tga",
+   "extracted_sha256": "b88e55aa7919907b7d58bd233d3aa42adc97b54925eb8569634aea0cf852c55d",
+   "output_file": "Content/Extracted/MaterialDatabase/UIDistrict_NightClubMAT/UIDistrict_NightClubMAT/Texture2D/Nightclub_SujiChalk.tga",
+   "output_sha256": "b88e55aa7919907b7d58bd233d3aa42adc97b54925eb8569634aea0cf852c55d",
+   "uasset": "Content/Imported/MaterialDatabase/UIDistrict_NightClubMAT/Nightclub_SujiChalk.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/UIDistrict/Nightclub/UIDistrict_NightClubMAT.upk#SandStone_Brick_Norm",
+   "object": "SandStone_Brick_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/UIDistrict_NightClubMAT/Sandstone_Brick/Texture2D/SandStone_Brick_Norm.tga",
+   "extracted_sha256": "55bee1dd994da55fdea54895806216b1f544708c2a220d5aaf98be6fd254b913",
+   "output_file": "Content/Extracted/MaterialDatabase/UIDistrict_NightClubMAT/Sandstone_Brick/Texture2D/SandStone_Brick_Norm.tga",
+   "output_sha256": "55bee1dd994da55fdea54895806216b1f544708c2a220d5aaf98be6fd254b913",
+   "uasset": "Content/Imported/MaterialDatabase/UIDistrict_NightClubMAT/SandStone_Brick_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/UIDistrict/Nightclub/UIDistrict_NightClubMAT.upk#SandstoneBlack_Brick_Diff",
+   "object": "SandstoneBlack_Brick_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/UIDistrict_NightClubMAT/UIDistrict_NightClubMAT/Texture2D/SandstoneBlack_Brick_Diff.tga",
+   "extracted_sha256": "111b5e0a06841bb79650a4fffd237de190bbc47bb574368e7f6a6093c0a2d7d4",
+   "output_file": "Content/Extracted/MaterialDatabase/UIDistrict_NightClubMAT/UIDistrict_NightClubMAT/Texture2D/SandstoneBlack_Brick_Diff.tga",
+   "output_sha256": "111b5e0a06841bb79650a4fffd237de190bbc47bb574368e7f6a6093c0a2d7d4",
+   "uasset": "Content/Imported/MaterialDatabase/UIDistrict_NightClubMAT/SandstoneBlack_Brick_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/UIDistrict/Nightclub/UIDistrict_NightClubMAT.upk#WallTex_DiffSpec_Red",
+   "object": "WallTex_DiffSpec_Red",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/UIDistrict_NightClubMAT/Faux_Wall/Texture2D/WallTex_DiffSpec_Red.tga",
+   "extracted_sha256": "a1a5c3813cf81a54545d52c4695560c14ca9571f9541c8ba242c0ec727310efa",
+   "output_file": "Content/Extracted/MaterialDatabase/UIDistrict_NightClubMAT/Faux_Wall/Texture2D/WallTex_DiffSpec_Red.tga",
+   "output_sha256": "a1a5c3813cf81a54545d52c4695560c14ca9571f9541c8ba242c0ec727310efa",
+   "uasset": "Content/Imported/MaterialDatabase/UIDistrict_NightClubMAT/WallTex_DiffSpec_Red.uasset"
+  }
+ ]
+}

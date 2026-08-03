@@ -1,0 +1,60 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FD_Block07",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block07.upk",
+ "source_sha256": "61bf16c7a17774dcf8cfcdc7bfa9cc261eab97dde7b20e52f10f3e8ca5bf31cb",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block07.upk#dempseys",
+   "object": "dempseys",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Block07/FD_Block07/Texture2D/dempseys.tga",
+   "extracted_sha256": "2b91a5f385b845995fc2a0b559c53537ddaae9200ecba6e5919c5555fa1cfb8e",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Block07/FD_Block07/Texture2D/dempseys.tga",
+   "output_sha256": "2b91a5f385b845995fc2a0b559c53537ddaae9200ecba6e5919c5555fa1cfb8e",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Block07/dempseys.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block07.upk#MI_casinoglyphs",
+   "object": "MI_casinoglyphs",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "casinoglyphs",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Block07/FD_Block07/Texture2D/sandstone_NRM.tga",
+   "extracted_sha256": "793c096618b3f115c456ba145584dd0079741d2a31b70e3dcc33ea15e717741a",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Block07/FD_Block07/Texture2D/sandstone_NRM.tga",
+   "output_sha256": "793c096618b3f115c456ba145584dd0079741d2a31b70e3dcc33ea15e717741a",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Block07/MI_casinoglyphs.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block07.upk#MI_Image",
+   "object": "MI_Image",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Image",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Block07/FD_Block07/Texture2D/dempseys.tga",
+   "extracted_sha256": "2b91a5f385b845995fc2a0b559c53537ddaae9200ecba6e5919c5555fa1cfb8e",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Block07/FD_Block07/Texture2D/dempseys.tga",
+   "output_sha256": "2b91a5f385b845995fc2a0b559c53537ddaae9200ecba6e5919c5555fa1cfb8e",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Block07/MI_Image.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block07.upk#sandstone_NRM",
+   "object": "sandstone_NRM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Block07/FD_Block07/Texture2D/sandstone_NRM.tga",
+   "extracted_sha256": "793c096618b3f115c456ba145584dd0079741d2a31b70e3dcc33ea15e717741a",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Block07/FD_Block07/Texture2D/sandstone_NRM.tga",
+   "output_sha256": "793c096618b3f115c456ba145584dd0079741d2a31b70e3dcc33ea15e717741a",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Block07/sandstone_NRM.uasset"
+  }
+ ]
+}

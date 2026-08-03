@@ -1,0 +1,249 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Financial_CarnacCasino",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/StaticMeshes/Financial_CarnacCasino.upk",
+ "source_sha256": "1811980cc30d5573a609cb9d58a498ad87ecaa814ac7fc460010dc62cd38d427",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/Financial_CarnacCasino.upk#CarnacCasino_NRM_Dup",
+   "object": "CarnacCasino_NRM_Dup",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Financial_CarnacCasino/Financial_CarnacCasino/Texture2D/CarnacCasino_NRM_Dup.tga",
+   "extracted_sha256": "b391590343c1d6eda159cfbf0f9e82b90cd2703f63ca31208fd1b5d5b0e38150",
+   "output_file": "Content/Extracted/MaterialDatabase/Financial_CarnacCasino/Financial_CarnacCasino/Texture2D/CarnacCasino_NRM_Dup.tga",
+   "output_sha256": "b391590343c1d6eda159cfbf0f9e82b90cd2703f63ca31208fd1b5d5b0e38150",
+   "uasset": "Content/Imported/MaterialDatabase/Financial_CarnacCasino/CarnacCasino_NRM_Dup.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/Financial_CarnacCasino.upk#Concrete_003_Norm",
+   "object": "Concrete_003_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Financial_CarnacCasino/Concrete/Texture2D/Concrete_003_Norm.tga",
+   "extracted_sha256": "fe51cf21d28a3ec12c2b5041f35c6768302f98c29c1436db4d637b207fdda6e4",
+   "output_file": "Content/Extracted/MaterialDatabase/Financial_CarnacCasino/Concrete/Texture2D/Concrete_003_Norm.tga",
+   "output_sha256": "fe51cf21d28a3ec12c2b5041f35c6768302f98c29c1436db4d637b207fdda6e4",
+   "uasset": "Content/Imported/MaterialDatabase/Financial_CarnacCasino/Concrete_003_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/Financial_CarnacCasino.upk#Concrete_01_DiffSpec",
+   "object": "Concrete_01_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Financial_CarnacCasino/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Financial_CarnacCasino/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/Financial_CarnacCasino/Concrete_01_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/Financial_CarnacCasino.upk#distort_Dup",
+   "object": "distort_Dup",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Financial_CarnacCasino/Financial_CarnacCasino/Texture2D/distort_Dup.tga",
+   "extracted_sha256": "b3141f0166f544441d42a38c9487e794e53f341e263355af2063c00e3b8c1574",
+   "output_file": "Content/Extracted/MaterialDatabase/Financial_CarnacCasino/Financial_CarnacCasino/Texture2D/distort_Dup.tga",
+   "output_sha256": "b3141f0166f544441d42a38c9487e794e53f341e263355af2063c00e3b8c1574",
+   "uasset": "Content/Imported/MaterialDatabase/Financial_CarnacCasino/distort_Dup.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/Financial_CarnacCasino.upk#MI_Conc_PARENT",
+   "object": "MI_Conc_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Conc_PARENT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Financial_CarnacCasino/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Financial_CarnacCasino/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/Financial_CarnacCasino/MI_Conc_PARENT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/Financial_CarnacCasino.upk#MI_Conc_Sign_Kajiki_Emmisive",
+   "object": "MI_Conc_Sign_Kajiki_Emmisive",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Conc_Sign_Kajiki_Emmisive",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Financial_CarnacCasino/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Financial_CarnacCasino/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/Financial_CarnacCasino/MI_Conc_Sign_Kajiki_Emmisive.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/Financial_CarnacCasino.upk#MI_ConcGrime_GreyDark",
+   "object": "MI_ConcGrime_GreyDark",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "ConcGrime_GreyDark",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Financial_CarnacCasino/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Financial_CarnacCasino/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/Financial_CarnacCasino/MI_ConcGrime_GreyDark.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/Financial_CarnacCasino.upk#MI_Flames_Dup",
+   "object": "MI_Flames_Dup",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Flames_Dup",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Financial_CarnacCasino/Financial_CarnacCasino/Texture2D/distort_Dup.tga",
+   "extracted_sha256": "b3141f0166f544441d42a38c9487e794e53f341e263355af2063c00e3b8c1574",
+   "output_file": "Content/Extracted/MaterialDatabase/Financial_CarnacCasino/Financial_CarnacCasino/Texture2D/distort_Dup.tga",
+   "output_sha256": "b3141f0166f544441d42a38c9487e794e53f341e263355af2063c00e3b8c1574",
+   "uasset": "Content/Imported/MaterialDatabase/Financial_CarnacCasino/MI_Flames_Dup.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/Financial_CarnacCasino.upk#MI_Logo",
+   "object": "MI_Logo",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Logo",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Financial_CarnacCasino/Financial_CarnacCasino/Texture2D/PraetoriansFlat.tga",
+   "extracted_sha256": "2e7e075f51efb9e4958708819d268b788cdc157b25366c4c7108cbefacf5c2a2",
+   "output_file": "Content/Extracted/MaterialDatabase/Financial_CarnacCasino/Financial_CarnacCasino/Texture2D/PraetoriansFlat.tga",
+   "output_sha256": "2e7e075f51efb9e4958708819d268b788cdc157b25366c4c7108cbefacf5c2a2",
+   "uasset": "Content/Imported/MaterialDatabase/Financial_CarnacCasino/MI_Logo.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/Financial_CarnacCasino.upk#MI_ModernStucco_Carnac_Casino_Dup",
+   "object": "MI_ModernStucco_Carnac_Casino_Dup",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "ModernStucco_Carnac_Casino_Dup",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Financial_CarnacCasino/Financial_CarnacCasino/Texture2D/CarnacCasino_NRM_Dup.tga",
+   "extracted_sha256": "b391590343c1d6eda159cfbf0f9e82b90cd2703f63ca31208fd1b5d5b0e38150",
+   "output_file": "Content/Extracted/MaterialDatabase/Financial_CarnacCasino/Financial_CarnacCasino/Texture2D/CarnacCasino_NRM_Dup.tga",
+   "output_sha256": "b391590343c1d6eda159cfbf0f9e82b90cd2703f63ca31208fd1b5d5b0e38150",
+   "uasset": "Content/Imported/MaterialDatabase/Financial_CarnacCasino/MI_ModernStucco_Carnac_Casino_Dup.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/Financial_CarnacCasino.upk#MI_PaintedMetal_Black",
+   "object": "MI_PaintedMetal_Black",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PaintedMetal_Black",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Financial_CarnacCasino/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "extracted_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "output_file": "Content/Extracted/MaterialDatabase/Financial_CarnacCasino/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "output_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "uasset": "Content/Imported/MaterialDatabase/Financial_CarnacCasino/MI_PaintedMetal_Black.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/Financial_CarnacCasino.upk#MI_PaintedMetal_PARENT",
+   "object": "MI_PaintedMetal_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PaintedMetal_PARENT",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Financial_CarnacCasino/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "extracted_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "output_file": "Content/Extracted/MaterialDatabase/Financial_CarnacCasino/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "output_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "uasset": "Content/Imported/MaterialDatabase/Financial_CarnacCasino/MI_PaintedMetal_PARENT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/Financial_CarnacCasino.upk#MI_Praetorian_Pillar",
+   "object": "MI_Praetorian_Pillar",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Praetorian_Pillar",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Financial_CarnacCasino/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Financial_CarnacCasino/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/Financial_CarnacCasino/MI_Praetorian_Pillar.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/Financial_CarnacCasino.upk#MI_Praetorian_Plaque",
+   "object": "MI_Praetorian_Plaque",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Praetorian_Plaque",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Financial_CarnacCasino/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Financial_CarnacCasino/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/Financial_CarnacCasino/MI_Praetorian_Plaque.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/Financial_CarnacCasino.upk#PaintedMetal_Norm",
+   "object": "PaintedMetal_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Financial_CarnacCasino/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "extracted_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "output_file": "Content/Extracted/MaterialDatabase/Financial_CarnacCasino/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "output_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "uasset": "Content/Imported/MaterialDatabase/Financial_CarnacCasino/PaintedMetal_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/Financial_CarnacCasino.upk#Pillar_NRM",
+   "object": "Pillar_NRM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Financial_CarnacCasino/Financial_CarnacCasino/Texture2D/Pillar_NRM.tga",
+   "extracted_sha256": "73bbeecf37fa41509ebf3e764378560efaa9584a7be19ce01a6fc35a4962e915",
+   "output_file": "Content/Extracted/MaterialDatabase/Financial_CarnacCasino/Financial_CarnacCasino/Texture2D/Pillar_NRM.tga",
+   "output_sha256": "73bbeecf37fa41509ebf3e764378560efaa9584a7be19ce01a6fc35a4962e915",
+   "uasset": "Content/Imported/MaterialDatabase/Financial_CarnacCasino/Pillar_NRM.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/Financial_CarnacCasino.upk#Praetorians_Bump_NRM",
+   "object": "Praetorians_Bump_NRM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Financial_CarnacCasino/Financial_CarnacCasino/Texture2D/Praetorians_Bump_NRM.tga",
+   "extracted_sha256": "edcae9b549ac20c8e3276cb8504f54a49d63a2feea492c247230b5d4ba2f475b",
+   "output_file": "Content/Extracted/MaterialDatabase/Financial_CarnacCasino/Financial_CarnacCasino/Texture2D/Praetorians_Bump_NRM.tga",
+   "output_sha256": "edcae9b549ac20c8e3276cb8504f54a49d63a2feea492c247230b5d4ba2f475b",
+   "uasset": "Content/Imported/MaterialDatabase/Financial_CarnacCasino/Praetorians_Bump_NRM.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/Financial_CarnacCasino.upk#PraetoriansFlat",
+   "object": "PraetoriansFlat",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Financial_CarnacCasino/Financial_CarnacCasino/Texture2D/PraetoriansFlat.tga",
+   "extracted_sha256": "2e7e075f51efb9e4958708819d268b788cdc157b25366c4c7108cbefacf5c2a2",
+   "output_file": "Content/Extracted/MaterialDatabase/Financial_CarnacCasino/Financial_CarnacCasino/Texture2D/PraetoriansFlat.tga",
+   "output_sha256": "2e7e075f51efb9e4958708819d268b788cdc157b25366c4c7108cbefacf5c2a2",
+   "uasset": "Content/Imported/MaterialDatabase/Financial_CarnacCasino/PraetoriansFlat.uasset"
+  }
+ ]
+}

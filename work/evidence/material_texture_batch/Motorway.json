@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Motorway",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/RoadEditorMaterials/Motorway.upk",
+ "source_sha256": "8ba83bb1531d3f5e1ca6e5e6106b0208ee033d4b311dd6e30348bf71af84cead",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/Motorway.upk#Concrete_01_DiffSpec",
+   "object": "Concrete_01_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Motorway/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Motorway/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/Motorway/Concrete_01_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/Motorway.upk#MI_MotorwayWall",
+   "object": "MI_MotorwayWall",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "MotorwayWall",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Motorway/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Motorway/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/Motorway/MI_MotorwayWall.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/Motorway.upk#MotorwayWall_Norm",
+   "object": "MotorwayWall_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Motorway/Motorway/Texture2D/MotorwayWall_Norm.tga",
+   "extracted_sha256": "835a2100087538fc7e7e6bfc71a9659aa312347eb1a2a359f42c8b3c6a417170",
+   "output_file": "Content/Extracted/MaterialDatabase/Motorway/Motorway/Texture2D/MotorwayWall_Norm.tga",
+   "output_sha256": "835a2100087538fc7e7e6bfc71a9659aa312347eb1a2a359f42c8b3c6a417170",
+   "uasset": "Content/Imported/MaterialDatabase/Motorway/MotorwayWall_Norm.uasset"
+  }
+ ]
+}

@@ -1,0 +1,142 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "GolemobileMaterials",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GolemobileMaterials.upk",
+ "source_sha256": "d6feddf27bef2942eaae6b772d74d7e906c392ad3e92b15a7b5a62c53e34f6be",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GolemobileMaterials.upk#CloudMap",
+   "object": "CloudMap",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GolemobileMaterials/GolemobileMaterials/Texture2D/CloudMap.tga",
+   "extracted_sha256": "ce08ca114bd0113128a1823ec5d28765545d8990639723b3d09d2b344eae42af",
+   "output_file": "Content/Extracted/MaterialDatabase/GolemobileMaterials/GolemobileMaterials/Texture2D/CloudMap.tga",
+   "output_sha256": "ce08ca114bd0113128a1823ec5d28765545d8990639723b3d09d2b344eae42af",
+   "uasset": "Content/Imported/MaterialDatabase/GolemobileMaterials/CloudMap.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GolemobileMaterials.upk#DefaultNormal",
+   "object": "DefaultNormal",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GolemobileMaterials/GolemobileMaterials/Texture2D/DefaultNormal.tga",
+   "extracted_sha256": "7b36da22fc185c296ad433160cc6eabb80af36940324fc173ae546a818330d60",
+   "output_file": "Content/Extracted/MaterialDatabase/GolemobileMaterials/GolemobileMaterials/Texture2D/DefaultNormal.tga",
+   "output_sha256": "7b36da22fc185c296ad433160cc6eabb80af36940324fc173ae546a818330d60",
+   "uasset": "Content/Imported/MaterialDatabase/GolemobileMaterials/DefaultNormal.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GolemobileMaterials.upk#DefaultWheel_OpacityMask",
+   "object": "DefaultWheel_OpacityMask",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GolemobileMaterials/Vehicles_CommonAssets/Texture2D/DefaultWheel_OpacityMask.tga",
+   "extracted_sha256": "3e7b3be6cf16c1031c8c35d36b7480d2ae49d9bb747f118eb22ce7fa0f56ef37",
+   "output_file": "Content/Extracted/MaterialDatabase/GolemobileMaterials/Vehicles_CommonAssets/Texture2D/DefaultWheel_OpacityMask.tga",
+   "output_sha256": "3e7b3be6cf16c1031c8c35d36b7480d2ae49d9bb747f118eb22ce7fa0f56ef37",
+   "uasset": "Content/Imported/MaterialDatabase/GolemobileMaterials/DefaultWheel_OpacityMask.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GolemobileMaterials.upk#FlatNormal_X_Y",
+   "object": "FlatNormal_X_Y",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GolemobileMaterials/GenericAssets/Texture2D/FlatNormal_X_Y.tga",
+   "extracted_sha256": "a0136214cd28f5447f3e4a0a4861e251b6e4512e530bd9d3266cf69dce29879e",
+   "output_file": "Content/Extracted/MaterialDatabase/GolemobileMaterials/GenericAssets/Texture2D/FlatNormal_X_Y.tga",
+   "output_sha256": "a0136214cd28f5447f3e4a0a4861e251b6e4512e530bd9d3266cf69dce29879e",
+   "uasset": "Content/Imported/MaterialDatabase/GolemobileMaterials/FlatNormal_X_Y.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GolemobileMaterials.upk#MI_RealtimeGlassMaterial",
+   "object": "MI_RealtimeGlassMaterial",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RealtimeGlassMaterial",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GolemobileMaterials/GolemobileMaterials/Texture2D/CloudMap.tga",
+   "extracted_sha256": "ce08ca114bd0113128a1823ec5d28765545d8990639723b3d09d2b344eae42af",
+   "output_file": "Content/Extracted/MaterialDatabase/GolemobileMaterials/GolemobileMaterials/Texture2D/CloudMap.tga",
+   "output_sha256": "ce08ca114bd0113128a1823ec5d28765545d8990639723b3d09d2b344eae42af",
+   "uasset": "Content/Imported/MaterialDatabase/GolemobileMaterials/MI_RealtimeGlassMaterial.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GolemobileMaterials.upk#MI_RealtimeInteriorMaterial_CompressedNM",
+   "object": "MI_RealtimeInteriorMaterial_CompressedNM",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RealtimeInteriorMaterial_CompressedNM",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GolemobileMaterials/GenericAssets/Texture2D/FlatNormal_X_Y.tga",
+   "extracted_sha256": "a0136214cd28f5447f3e4a0a4861e251b6e4512e530bd9d3266cf69dce29879e",
+   "output_file": "Content/Extracted/MaterialDatabase/GolemobileMaterials/GenericAssets/Texture2D/FlatNormal_X_Y.tga",
+   "output_sha256": "a0136214cd28f5447f3e4a0a4861e251b6e4512e530bd9d3266cf69dce29879e",
+   "uasset": "Content/Imported/MaterialDatabase/GolemobileMaterials/MI_RealtimeInteriorMaterial_CompressedNM.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GolemobileMaterials.upk#MI_RealtimePaintMaterial",
+   "object": "MI_RealtimePaintMaterial",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RealtimePaintMaterial",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GolemobileMaterials/GenericAssets/Texture2D/FlatNormal_X_Y.tga",
+   "extracted_sha256": "a0136214cd28f5447f3e4a0a4861e251b6e4512e530bd9d3266cf69dce29879e",
+   "output_file": "Content/Extracted/MaterialDatabase/GolemobileMaterials/GenericAssets/Texture2D/FlatNormal_X_Y.tga",
+   "output_sha256": "a0136214cd28f5447f3e4a0a4861e251b6e4512e530bd9d3266cf69dce29879e",
+   "uasset": "Content/Imported/MaterialDatabase/GolemobileMaterials/MI_RealtimePaintMaterial.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GolemobileMaterials.upk#MI_RealtimeWheelMaterial",
+   "object": "MI_RealtimeWheelMaterial",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RealtimeWheelMaterial",
+   "texture_roles": [
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GolemobileMaterials/Vehicles_CommonAssets/Texture2D/DefaultWheel_OpacityMask.tga",
+   "extracted_sha256": "3e7b3be6cf16c1031c8c35d36b7480d2ae49d9bb747f118eb22ce7fa0f56ef37",
+   "output_file": "Content/Extracted/MaterialDatabase/GolemobileMaterials/Vehicles_CommonAssets/Texture2D/DefaultWheel_OpacityMask.tga",
+   "output_sha256": "3e7b3be6cf16c1031c8c35d36b7480d2ae49d9bb747f118eb22ce7fa0f56ef37",
+   "uasset": "Content/Imported/MaterialDatabase/GolemobileMaterials/MI_RealtimeWheelMaterial.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GolemobileMaterials.upk#MI_RealtimeWheelMaterial_CompressedNM",
+   "object": "MI_RealtimeWheelMaterial_CompressedNM",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RealtimeWheelMaterial_CompressedNM",
+   "texture_roles": [
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GolemobileMaterials/GenericAssets/Texture2D/FlatNormal_X_Y.tga",
+   "extracted_sha256": "a0136214cd28f5447f3e4a0a4861e251b6e4512e530bd9d3266cf69dce29879e",
+   "output_file": "Content/Extracted/MaterialDatabase/GolemobileMaterials/GenericAssets/Texture2D/FlatNormal_X_Y.tga",
+   "output_sha256": "a0136214cd28f5447f3e4a0a4861e251b6e4512e530bd9d3266cf69dce29879e",
+   "uasset": "Content/Imported/MaterialDatabase/GolemobileMaterials/MI_RealtimeWheelMaterial_CompressedNM.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GolemobileMaterials.upk#MI_RealtimeWheelMaterial_Damaged",
+   "object": "MI_RealtimeWheelMaterial_Damaged",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RealtimeWheelMaterial_Damaged",
+   "texture_roles": [
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GolemobileMaterials/GolemobileMaterials/Texture2D/DefaultNormal.tga",
+   "extracted_sha256": "7b36da22fc185c296ad433160cc6eabb80af36940324fc173ae546a818330d60",
+   "output_file": "Content/Extracted/MaterialDatabase/GolemobileMaterials/GolemobileMaterials/Texture2D/DefaultNormal.tga",
+   "output_sha256": "7b36da22fc185c296ad433160cc6eabb80af36940324fc173ae546a818330d60",
+   "uasset": "Content/Imported/MaterialDatabase/GolemobileMaterials/MI_RealtimeWheelMaterial_Damaged.uasset"
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Temp_Ground",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/ToBeRemoved/Temp_Ground.upk",
+ "source_sha256": "8efd0adaf03f9217fd05a4a02af2aa67386abeb2e98c85997594e4258a02cddd",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/ToBeRemoved/Temp_Ground.upk#asphalt",
+   "object": "asphalt",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Temp_Ground/Temp_Ground/Texture2D/asphalt.tga",
+   "extracted_sha256": "643e9fbee835a564fc2e5b4549664dac83d94643815699d5bf47dd610f59c886",
+   "output_file": "Content/Extracted/MaterialDatabase/Temp_Ground/Temp_Ground/Texture2D/asphalt.tga",
+   "output_sha256": "643e9fbee835a564fc2e5b4549664dac83d94643815699d5bf47dd610f59c886",
+   "uasset": "Content/Imported/MaterialDatabase/Temp_Ground/asphalt.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/ToBeRemoved/Temp_Ground.upk#MI_Temp_Ground_Asphalt",
+   "object": "MI_Temp_Ground_Asphalt",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Temp_Ground_Asphalt",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Temp_Ground/Temp_Ground/Texture2D/asphalt.tga",
+   "extracted_sha256": "643e9fbee835a564fc2e5b4549664dac83d94643815699d5bf47dd610f59c886",
+   "output_file": "Content/Extracted/MaterialDatabase/Temp_Ground/Temp_Ground/Texture2D/asphalt.tga",
+   "output_sha256": "643e9fbee835a564fc2e5b4549664dac83d94643815699d5bf47dd610f59c886",
+   "uasset": "Content/Imported/MaterialDatabase/Temp_Ground/MI_Temp_Ground_Asphalt.uasset"
+  }
+ ]
+}

@@ -1,0 +1,74 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Glass_Chips",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/Glass/Glass_Chips.upk",
+ "source_sha256": "60d4b23be1710faa8e20fa65bd99b48b15e4a3249f1f38c7a467b5930cc7770d",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Glass/Glass_Chips.upk#Glass_Chips_Diff",
+   "object": "Glass_Chips_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Glass_Chips/Glass_Chips/Texture2D/Glass_Chips_Diff.tga",
+   "extracted_sha256": "427ac6e75e1c6fee3368ff327fa2e30259fa8abed08de62ac68562155345d076",
+   "output_file": "Content/Extracted/MaterialDatabase/Glass_Chips/Glass_Chips/Texture2D/Glass_Chips_Diff.tga",
+   "output_sha256": "427ac6e75e1c6fee3368ff327fa2e30259fa8abed08de62ac68562155345d076",
+   "uasset": "Content/Imported/MaterialDatabase/Glass_Chips/Glass_Chips_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Glass/Glass_Chips.upk#Glass_Chips_MetalReinforced_DiffOpacity",
+   "object": "Glass_Chips_MetalReinforced_DiffOpacity",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Glass_Chips/Glass_Chips/Texture2D/Glass_Chips_MetalReinforced_DiffOpacity.tga",
+   "extracted_sha256": "19da007e30c7cfa51c608af98848026e921dc1b47dd2699daf1ef31831677d8d",
+   "output_file": "Content/Extracted/MaterialDatabase/Glass_Chips/Glass_Chips/Texture2D/Glass_Chips_MetalReinforced_DiffOpacity.tga",
+   "output_sha256": "19da007e30c7cfa51c608af98848026e921dc1b47dd2699daf1ef31831677d8d",
+   "uasset": "Content/Imported/MaterialDatabase/Glass_Chips/Glass_Chips_MetalReinforced_DiffOpacity.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Glass/Glass_Chips.upk#Glass_Chips_MetalReinforced_Norm",
+   "object": "Glass_Chips_MetalReinforced_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Glass_Chips/Glass_Chips/Texture2D/Glass_Chips_MetalReinforced_Norm.tga",
+   "extracted_sha256": "2c8983ae74157fa137271627329c8c5919e8a22d7de07ee72664571ac2a10313",
+   "output_file": "Content/Extracted/MaterialDatabase/Glass_Chips/Glass_Chips/Texture2D/Glass_Chips_MetalReinforced_Norm.tga",
+   "output_sha256": "2c8983ae74157fa137271627329c8c5919e8a22d7de07ee72664571ac2a10313",
+   "uasset": "Content/Imported/MaterialDatabase/Glass_Chips/Glass_Chips_MetalReinforced_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Glass/Glass_Chips.upk#MI_glass_chips_mat",
+   "object": "MI_glass_chips_mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "glass_chips_mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Glass_Chips/Glass_Chips/Texture2D/Glass_Chips_Diff.tga",
+   "extracted_sha256": "427ac6e75e1c6fee3368ff327fa2e30259fa8abed08de62ac68562155345d076",
+   "output_file": "Content/Extracted/MaterialDatabase/Glass_Chips/Glass_Chips/Texture2D/Glass_Chips_Diff.tga",
+   "output_sha256": "427ac6e75e1c6fee3368ff327fa2e30259fa8abed08de62ac68562155345d076",
+   "uasset": "Content/Imported/MaterialDatabase/Glass_Chips/MI_glass_chips_mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Glass/Glass_Chips.upk#MI_Glass_Chips_MetalReinforced_Mat",
+   "object": "MI_Glass_Chips_MetalReinforced_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Glass_Chips_MetalReinforced_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Glass_Chips/Glass_Chips/Texture2D/Glass_Chips_MetalReinforced_DiffOpacity.tga",
+   "extracted_sha256": "19da007e30c7cfa51c608af98848026e921dc1b47dd2699daf1ef31831677d8d",
+   "output_file": "Content/Extracted/MaterialDatabase/Glass_Chips/Glass_Chips/Texture2D/Glass_Chips_MetalReinforced_DiffOpacity.tga",
+   "output_sha256": "19da007e30c7cfa51c608af98848026e921dc1b47dd2699daf1ef31831677d8d",
+   "uasset": "Content/Imported/MaterialDatabase/Glass_Chips/MI_Glass_Chips_MetalReinforced_Mat.uasset"
+  }
+ ]
+}

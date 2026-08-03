@@ -1,0 +1,62 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FinancialCrashBarrier",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCrashBarrier.upk",
+ "source_sha256": "d05cca9d3ac38ab53604302b62c970bd5cce6c4ad5b32c057e3f3dcd852626c4",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCrashBarrier.upk#FinancialCrashBarrier_DiffSpec",
+   "object": "FinancialCrashBarrier_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialCrashBarrier/FinancialCrashBarrier/Texture2D/FinancialCrashBarrier_DiffSpec.tga",
+   "extracted_sha256": "edeb5166537e188146448191d9cbd69f8f8978688cdf4fb3869820800bd15c59",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialCrashBarrier/FinancialCrashBarrier/Texture2D/FinancialCrashBarrier_DiffSpec.tga",
+   "output_sha256": "edeb5166537e188146448191d9cbd69f8f8978688cdf4fb3869820800bd15c59",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialCrashBarrier/FinancialCrashBarrier_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCrashBarrier.upk#FinancialCrashBarrier_Norm",
+   "object": "FinancialCrashBarrier_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialCrashBarrier/FinancialCrashBarrier/Texture2D/FinancialCrashBarrier_Norm.tga",
+   "extracted_sha256": "ae0f5b2594345715a6c53cc9db3aa7f3360a48610f5c1133bdf3830cd38dd7e7",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialCrashBarrier/FinancialCrashBarrier/Texture2D/FinancialCrashBarrier_Norm.tga",
+   "output_sha256": "ae0f5b2594345715a6c53cc9db3aa7f3360a48610f5c1133bdf3830cd38dd7e7",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialCrashBarrier/FinancialCrashBarrier_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCrashBarrier.upk#MI_FinancialCrashBarrier_Damaged_Mat",
+   "object": "MI_FinancialCrashBarrier_Damaged_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialCrashBarrier_Damaged_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialCrashBarrier/FinancialCrashBarrier/Texture2D/FinancialCrashBarrier_DiffSpec.tga",
+   "extracted_sha256": "edeb5166537e188146448191d9cbd69f8f8978688cdf4fb3869820800bd15c59",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialCrashBarrier/FinancialCrashBarrier/Texture2D/FinancialCrashBarrier_DiffSpec.tga",
+   "output_sha256": "edeb5166537e188146448191d9cbd69f8f8978688cdf4fb3869820800bd15c59",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialCrashBarrier/MI_FinancialCrashBarrier_Damaged_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCrashBarrier.upk#MI_FinancialCrashBarrier_Mat",
+   "object": "MI_FinancialCrashBarrier_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialCrashBarrier_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialCrashBarrier/FinancialCrashBarrier/Texture2D/FinancialCrashBarrier_DiffSpec.tga",
+   "extracted_sha256": "edeb5166537e188146448191d9cbd69f8f8978688cdf4fb3869820800bd15c59",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialCrashBarrier/FinancialCrashBarrier/Texture2D/FinancialCrashBarrier_DiffSpec.tga",
+   "output_sha256": "edeb5166537e188146448191d9cbd69f8f8978688cdf4fb3869820800bd15c59",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialCrashBarrier/MI_FinancialCrashBarrier_Mat.uasset"
+  }
+ ]
+}

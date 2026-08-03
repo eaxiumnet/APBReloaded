@@ -1,0 +1,76 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FireObjects",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/FireObjects.upk",
+ "source_sha256": "966382e50b320d52d67457dfb22a9f6b69c3c01d2dd4faafef05b1b2e38ec52d",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/FireObjects.upk#FireObjects_DiffSpec",
+   "object": "FireObjects_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FireObjects/FireObjects/Texture2D/FireObjects_DiffSpec.tga",
+   "extracted_sha256": "9be494470d0d8f8ed4948965f5e73053a3e1f322b45c223cf361024f453cf0f1",
+   "output_file": "Content/Extracted/MaterialDatabase/FireObjects/FireObjects/Texture2D/FireObjects_DiffSpec.tga",
+   "output_sha256": "9be494470d0d8f8ed4948965f5e73053a3e1f322b45c223cf361024f453cf0f1",
+   "uasset": "Content/Imported/MaterialDatabase/FireObjects/FireObjects_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/FireObjects.upk#FireObjects_Emis",
+   "object": "FireObjects_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FireObjects/FireObjects/Texture2D/FireObjects_Emis.tga",
+   "extracted_sha256": "1e5e35c2cea8724b19fc918d1e5ccbb8d077b9ace53c0a1ff0d94941a817d567",
+   "output_file": "Content/Extracted/MaterialDatabase/FireObjects/FireObjects/Texture2D/FireObjects_Emis.tga",
+   "output_sha256": "1e5e35c2cea8724b19fc918d1e5ccbb8d077b9ace53c0a1ff0d94941a817d567",
+   "uasset": "Content/Imported/MaterialDatabase/FireObjects/FireObjects_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/FireObjects.upk#FireObjects_Norm",
+   "object": "FireObjects_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FireObjects/FireObjects/Texture2D/FireObjects_Norm.tga",
+   "extracted_sha256": "e2b6b957343d60f5f512ab6f817f95257161c080e8cdecd74b2914b64bc6fcd8",
+   "output_file": "Content/Extracted/MaterialDatabase/FireObjects/FireObjects/Texture2D/FireObjects_Norm.tga",
+   "output_sha256": "e2b6b957343d60f5f512ab6f817f95257161c080e8cdecd74b2914b64bc6fcd8",
+   "uasset": "Content/Imported/MaterialDatabase/FireObjects/FireObjects_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/FireObjects.upk#MI_FireObjects_Damage_Mat",
+   "object": "MI_FireObjects_Damage_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FireObjects_Damage_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FireObjects/FireObjects/Texture2D/FireObjects_DiffSpec.tga",
+   "extracted_sha256": "9be494470d0d8f8ed4948965f5e73053a3e1f322b45c223cf361024f453cf0f1",
+   "output_file": "Content/Extracted/MaterialDatabase/FireObjects/FireObjects/Texture2D/FireObjects_DiffSpec.tga",
+   "output_sha256": "9be494470d0d8f8ed4948965f5e73053a3e1f322b45c223cf361024f453cf0f1",
+   "uasset": "Content/Imported/MaterialDatabase/FireObjects/MI_FireObjects_Damage_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/FireObjects.upk#MI_FireObjects_Mat",
+   "object": "MI_FireObjects_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FireObjects_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FireObjects/FireObjects/Texture2D/FireObjects_DiffSpec.tga",
+   "extracted_sha256": "9be494470d0d8f8ed4948965f5e73053a3e1f322b45c223cf361024f453cf0f1",
+   "output_file": "Content/Extracted/MaterialDatabase/FireObjects/FireObjects/Texture2D/FireObjects_DiffSpec.tga",
+   "output_sha256": "9be494470d0d8f8ed4948965f5e73053a3e1f322b45c223cf361024f453cf0f1",
+   "uasset": "Content/Imported/MaterialDatabase/FireObjects/MI_FireObjects_Mat.uasset"
+  }
+ ]
+}

@@ -1,0 +1,153 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "ESD_StaticMeshes",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/EnforcerSocialDistrict/StaticMeshes/ESD_StaticMeshes.upk",
+ "source_sha256": "2b45531dea46c74d7656f26c5ebe4e720ed7b66213202b8deb6f107bb935d2b2",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/StaticMeshes/ESD_StaticMeshes.upk#Concrete_003_Norm",
+   "object": "Concrete_003_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ESD_StaticMeshes/Concrete/Texture2D/Concrete_003_Norm.tga",
+   "extracted_sha256": "fe51cf21d28a3ec12c2b5041f35c6768302f98c29c1436db4d637b207fdda6e4",
+   "output_file": "Content/Extracted/MaterialDatabase/ESD_StaticMeshes/Concrete/Texture2D/Concrete_003_Norm.tga",
+   "output_sha256": "fe51cf21d28a3ec12c2b5041f35c6768302f98c29c1436db4d637b207fdda6e4",
+   "uasset": "Content/Imported/MaterialDatabase/ESD_StaticMeshes/Concrete_003_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/StaticMeshes/ESD_StaticMeshes.upk#Concrete_01_DiffSpec",
+   "object": "Concrete_01_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ESD_StaticMeshes/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/ESD_StaticMeshes/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/ESD_StaticMeshes/Concrete_01_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/StaticMeshes/ESD_StaticMeshes.upk#Metal_Corroded_DiffSpec",
+   "object": "Metal_Corroded_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ESD_StaticMeshes/Metal/Texture2D/Metal_Corroded_DiffSpec.tga",
+   "extracted_sha256": "77c5a335153bf38a56296ad62f6377862c76590ffbdc4056a9d5df39f459c2fd",
+   "output_file": "Content/Extracted/MaterialDatabase/ESD_StaticMeshes/Metal/Texture2D/Metal_Corroded_DiffSpec.tga",
+   "output_sha256": "77c5a335153bf38a56296ad62f6377862c76590ffbdc4056a9d5df39f459c2fd",
+   "uasset": "Content/Imported/MaterialDatabase/ESD_StaticMeshes/Metal_Corroded_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/StaticMeshes/ESD_StaticMeshes.upk#MI_Conc_GreyDark",
+   "object": "MI_Conc_GreyDark",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Conc_GreyDark",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ESD_StaticMeshes/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/ESD_StaticMeshes/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/ESD_StaticMeshes/MI_Conc_GreyDark.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/StaticMeshes/ESD_StaticMeshes.upk#MI_Conc_PARENT",
+   "object": "MI_Conc_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Conc_PARENT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ESD_StaticMeshes/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/ESD_StaticMeshes/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/ESD_StaticMeshes/MI_Conc_PARENT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/StaticMeshes/ESD_StaticMeshes.upk#MI_ESD_PraetorianSign_Material",
+   "object": "MI_ESD_PraetorianSign_Material",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "ESD_PraetorianSign_Material",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ESD_StaticMeshes/ESD_StaticMeshes/Texture2D/Praetorian_NRM.tga",
+   "extracted_sha256": "8e69777f65ddc3b2ed79122669075f516f277e5fb13ea22b06a50ce1ba7615f0",
+   "output_file": "Content/Extracted/MaterialDatabase/ESD_StaticMeshes/ESD_StaticMeshes/Texture2D/Praetorian_NRM.tga",
+   "output_sha256": "8e69777f65ddc3b2ed79122669075f516f277e5fb13ea22b06a50ce1ba7615f0",
+   "uasset": "Content/Imported/MaterialDatabase/ESD_StaticMeshes/MI_ESD_PraetorianSign_Material.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/StaticMeshes/ESD_StaticMeshes.upk#MI_Metal_Corroded",
+   "object": "MI_Metal_Corroded",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_Corroded",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ESD_StaticMeshes/Metal/Texture2D/Metal_Corroded_DiffSpec.tga",
+   "extracted_sha256": "77c5a335153bf38a56296ad62f6377862c76590ffbdc4056a9d5df39f459c2fd",
+   "output_file": "Content/Extracted/MaterialDatabase/ESD_StaticMeshes/Metal/Texture2D/Metal_Corroded_DiffSpec.tga",
+   "output_sha256": "77c5a335153bf38a56296ad62f6377862c76590ffbdc4056a9d5df39f459c2fd",
+   "uasset": "Content/Imported/MaterialDatabase/ESD_StaticMeshes/MI_Metal_Corroded.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/StaticMeshes/ESD_StaticMeshes.upk#MI_Pipe",
+   "object": "MI_Pipe",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Pipe",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ESD_StaticMeshes/Pipes/Texture2D/Pipe_DiffSpec.tga",
+   "extracted_sha256": "bd8c58d7e30b1aeb5f72a954067fe80a2f7206c7a56fc2221d5dd8b38e8cec6d",
+   "output_file": "Content/Extracted/MaterialDatabase/ESD_StaticMeshes/Pipes/Texture2D/Pipe_DiffSpec.tga",
+   "output_sha256": "bd8c58d7e30b1aeb5f72a954067fe80a2f7206c7a56fc2221d5dd8b38e8cec6d",
+   "uasset": "Content/Imported/MaterialDatabase/ESD_StaticMeshes/MI_Pipe.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/StaticMeshes/ESD_StaticMeshes.upk#Pipe_DiffSpec",
+   "object": "Pipe_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ESD_StaticMeshes/Pipes/Texture2D/Pipe_DiffSpec.tga",
+   "extracted_sha256": "bd8c58d7e30b1aeb5f72a954067fe80a2f7206c7a56fc2221d5dd8b38e8cec6d",
+   "output_file": "Content/Extracted/MaterialDatabase/ESD_StaticMeshes/Pipes/Texture2D/Pipe_DiffSpec.tga",
+   "output_sha256": "bd8c58d7e30b1aeb5f72a954067fe80a2f7206c7a56fc2221d5dd8b38e8cec6d",
+   "uasset": "Content/Imported/MaterialDatabase/ESD_StaticMeshes/Pipe_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/StaticMeshes/ESD_StaticMeshes.upk#Pipe_Norm",
+   "object": "Pipe_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ESD_StaticMeshes/Pipes/Texture2D/Pipe_Norm.tga",
+   "extracted_sha256": "7446e0dccec7b78b94cebac46620a301283df1047a982c23172d3df901d0e2ae",
+   "output_file": "Content/Extracted/MaterialDatabase/ESD_StaticMeshes/Pipes/Texture2D/Pipe_Norm.tga",
+   "output_sha256": "7446e0dccec7b78b94cebac46620a301283df1047a982c23172d3df901d0e2ae",
+   "uasset": "Content/Imported/MaterialDatabase/ESD_StaticMeshes/Pipe_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/StaticMeshes/ESD_StaticMeshes.upk#Praetorian_NRM",
+   "object": "Praetorian_NRM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ESD_StaticMeshes/ESD_StaticMeshes/Texture2D/Praetorian_NRM.tga",
+   "extracted_sha256": "8e69777f65ddc3b2ed79122669075f516f277e5fb13ea22b06a50ce1ba7615f0",
+   "output_file": "Content/Extracted/MaterialDatabase/ESD_StaticMeshes/ESD_StaticMeshes/Texture2D/Praetorian_NRM.tga",
+   "output_sha256": "8e69777f65ddc3b2ed79122669075f516f277e5fb13ea22b06a50ce1ba7615f0",
+   "uasset": "Content/Imported/MaterialDatabase/ESD_StaticMeshes/Praetorian_NRM.uasset"
+  }
+ ]
+}

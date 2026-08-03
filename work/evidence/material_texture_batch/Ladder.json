@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Ladder",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/Ladder.upk",
+ "source_sha256": "66b0bd308c0b51a03c12ba2cff3e7320f81f7ff4a7b2c6e4eb7d6e1a8588cb3a",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Ladder.upk#Ladder_DiffSpec",
+   "object": "Ladder_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Ladder/Ladder/Texture2D/Ladder_DiffSpec.tga",
+   "extracted_sha256": "6d26c8dc2ba9110af859f6f73829da64c2bd314d4c876f894ec98f0ab59acdf1",
+   "output_file": "Content/Extracted/MaterialDatabase/Ladder/Ladder/Texture2D/Ladder_DiffSpec.tga",
+   "output_sha256": "6d26c8dc2ba9110af859f6f73829da64c2bd314d4c876f894ec98f0ab59acdf1",
+   "uasset": "Content/Imported/MaterialDatabase/Ladder/Ladder_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Ladder.upk#Ladder_Norm",
+   "object": "Ladder_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Ladder/Ladder/Texture2D/Ladder_Norm.tga",
+   "extracted_sha256": "58838ebb74a591bcc46d7398b332e1d3ab21e782528959c99c364f70f7ca57ff",
+   "output_file": "Content/Extracted/MaterialDatabase/Ladder/Ladder/Texture2D/Ladder_Norm.tga",
+   "output_sha256": "58838ebb74a591bcc46d7398b332e1d3ab21e782528959c99c364f70f7ca57ff",
+   "uasset": "Content/Imported/MaterialDatabase/Ladder/Ladder_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Ladder.upk#MI_Ladder",
+   "object": "MI_Ladder",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Ladder",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Ladder/Ladder/Texture2D/Ladder_DiffSpec.tga",
+   "extracted_sha256": "6d26c8dc2ba9110af859f6f73829da64c2bd314d4c876f894ec98f0ab59acdf1",
+   "output_file": "Content/Extracted/MaterialDatabase/Ladder/Ladder/Texture2D/Ladder_DiffSpec.tga",
+   "output_sha256": "6d26c8dc2ba9110af859f6f73829da64c2bd314d4c876f894ec98f0ab59acdf1",
+   "uasset": "Content/Imported/MaterialDatabase/Ladder/MI_Ladder.uasset"
+  }
+ ]
+}

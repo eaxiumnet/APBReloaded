@@ -1,0 +1,611 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "StreetSign",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/StreetSign.upk",
+ "source_sha256": "aae4321bb7d5e326eef5a68cb8632134cb4bb26c31e99c42ee1d46cf3cb4884b",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StreetSign.upk#MI_StreetSign_Mat",
+   "object": "MI_StreetSign_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StreetSign_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_DiffSpec.tga",
+   "extracted_sha256": "9c2a90e99e6a8968838aba99b00b0100c4bfe65c371803c083294e9c599fed2e",
+   "output_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_DiffSpec.tga",
+   "output_sha256": "9c2a90e99e6a8968838aba99b00b0100c4bfe65c371803c083294e9c599fed2e",
+   "uasset": "Content/Imported/MaterialDatabase/StreetSign/MI_StreetSign_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StreetSign.upk#MI_StreetSign_Sign_Mat",
+   "object": "MI_StreetSign_Sign_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StreetSign_Sign_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "extracted_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "output_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "output_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "uasset": "Content/Imported/MaterialDatabase/StreetSign/MI_StreetSign_Sign_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StreetSign.upk#MI_StreetSign_Street01",
+   "object": "MI_StreetSign_Street01",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StreetSign_Street01",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "extracted_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "output_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "output_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "uasset": "Content/Imported/MaterialDatabase/StreetSign/MI_StreetSign_Street01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StreetSign.upk#MI_StreetSign_Street02",
+   "object": "MI_StreetSign_Street02",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StreetSign_Street02",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "extracted_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "output_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "output_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "uasset": "Content/Imported/MaterialDatabase/StreetSign/MI_StreetSign_Street02.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StreetSign.upk#MI_StreetSign_Street03",
+   "object": "MI_StreetSign_Street03",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StreetSign_Street03",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "extracted_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "output_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "output_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "uasset": "Content/Imported/MaterialDatabase/StreetSign/MI_StreetSign_Street03.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StreetSign.upk#MI_StreetSign_Street04",
+   "object": "MI_StreetSign_Street04",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StreetSign_Street04",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "extracted_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "output_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "output_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "uasset": "Content/Imported/MaterialDatabase/StreetSign/MI_StreetSign_Street04.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StreetSign.upk#MI_StreetSign_Street05",
+   "object": "MI_StreetSign_Street05",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StreetSign_Street05",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "extracted_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "output_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "output_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "uasset": "Content/Imported/MaterialDatabase/StreetSign/MI_StreetSign_Street05.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StreetSign.upk#MI_StreetSign_Street06",
+   "object": "MI_StreetSign_Street06",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StreetSign_Street06",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "extracted_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "output_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "output_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "uasset": "Content/Imported/MaterialDatabase/StreetSign/MI_StreetSign_Street06.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StreetSign.upk#MI_StreetSign_Street07",
+   "object": "MI_StreetSign_Street07",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StreetSign_Street07",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "extracted_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "output_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "output_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "uasset": "Content/Imported/MaterialDatabase/StreetSign/MI_StreetSign_Street07.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StreetSign.upk#MI_StreetSign_Street08",
+   "object": "MI_StreetSign_Street08",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StreetSign_Street08",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "extracted_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "output_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "output_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "uasset": "Content/Imported/MaterialDatabase/StreetSign/MI_StreetSign_Street08.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StreetSign.upk#MI_StreetSign_Street09",
+   "object": "MI_StreetSign_Street09",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StreetSign_Street09",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "extracted_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "output_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "output_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "uasset": "Content/Imported/MaterialDatabase/StreetSign/MI_StreetSign_Street09.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StreetSign.upk#MI_StreetSign_Street10",
+   "object": "MI_StreetSign_Street10",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StreetSign_Street10",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "extracted_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "output_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "output_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "uasset": "Content/Imported/MaterialDatabase/StreetSign/MI_StreetSign_Street10.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StreetSign.upk#MI_StreetSign_Street11",
+   "object": "MI_StreetSign_Street11",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StreetSign_Street11",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "extracted_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "output_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "output_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "uasset": "Content/Imported/MaterialDatabase/StreetSign/MI_StreetSign_Street11.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StreetSign.upk#MI_StreetSign_Street12",
+   "object": "MI_StreetSign_Street12",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StreetSign_Street12",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "extracted_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "output_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "output_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "uasset": "Content/Imported/MaterialDatabase/StreetSign/MI_StreetSign_Street12.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StreetSign.upk#MI_StreetSign_Street13",
+   "object": "MI_StreetSign_Street13",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StreetSign_Street13",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "extracted_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "output_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "output_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "uasset": "Content/Imported/MaterialDatabase/StreetSign/MI_StreetSign_Street13.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StreetSign.upk#MI_StreetSign_Street14",
+   "object": "MI_StreetSign_Street14",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StreetSign_Street14",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "extracted_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "output_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "output_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "uasset": "Content/Imported/MaterialDatabase/StreetSign/MI_StreetSign_Street14.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StreetSign.upk#MI_StreetSign_Street15",
+   "object": "MI_StreetSign_Street15",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StreetSign_Street15",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "extracted_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "output_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "output_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "uasset": "Content/Imported/MaterialDatabase/StreetSign/MI_StreetSign_Street15.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StreetSign.upk#MI_StreetSign_Street16",
+   "object": "MI_StreetSign_Street16",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StreetSign_Street16",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "extracted_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "output_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "output_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "uasset": "Content/Imported/MaterialDatabase/StreetSign/MI_StreetSign_Street16.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StreetSign.upk#MI_StreetSign_Street17",
+   "object": "MI_StreetSign_Street17",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StreetSign_Street17",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "extracted_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "output_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "output_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "uasset": "Content/Imported/MaterialDatabase/StreetSign/MI_StreetSign_Street17.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StreetSign.upk#MI_StreetSign_Street18",
+   "object": "MI_StreetSign_Street18",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StreetSign_Street18",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "extracted_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "output_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "output_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "uasset": "Content/Imported/MaterialDatabase/StreetSign/MI_StreetSign_Street18.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StreetSign.upk#MI_StreetSign_Street19",
+   "object": "MI_StreetSign_Street19",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StreetSign_Street19",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "extracted_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "output_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "output_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "uasset": "Content/Imported/MaterialDatabase/StreetSign/MI_StreetSign_Street19.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StreetSign.upk#MI_StreetSign_Street20",
+   "object": "MI_StreetSign_Street20",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StreetSign_Street20",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "extracted_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "output_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "output_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "uasset": "Content/Imported/MaterialDatabase/StreetSign/MI_StreetSign_Street20.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StreetSign.upk#MI_StreetSign_Street21",
+   "object": "MI_StreetSign_Street21",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StreetSign_Street21",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "extracted_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "output_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "output_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "uasset": "Content/Imported/MaterialDatabase/StreetSign/MI_StreetSign_Street21.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StreetSign.upk#MI_StreetSign_Street22",
+   "object": "MI_StreetSign_Street22",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StreetSign_Street22",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "extracted_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "output_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "output_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "uasset": "Content/Imported/MaterialDatabase/StreetSign/MI_StreetSign_Street22.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StreetSign.upk#MI_StreetSign_Street23",
+   "object": "MI_StreetSign_Street23",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StreetSign_Street23",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "extracted_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "output_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "output_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "uasset": "Content/Imported/MaterialDatabase/StreetSign/MI_StreetSign_Street23.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StreetSign.upk#MI_StreetSign_Street24",
+   "object": "MI_StreetSign_Street24",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StreetSign_Street24",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "extracted_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "output_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "output_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "uasset": "Content/Imported/MaterialDatabase/StreetSign/MI_StreetSign_Street24.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StreetSign.upk#MI_StreetSign_Street25",
+   "object": "MI_StreetSign_Street25",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StreetSign_Street25",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "extracted_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "output_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "output_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "uasset": "Content/Imported/MaterialDatabase/StreetSign/MI_StreetSign_Street25.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StreetSign.upk#MI_StreetSign_Street26",
+   "object": "MI_StreetSign_Street26",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StreetSign_Street26",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "extracted_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "output_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "output_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "uasset": "Content/Imported/MaterialDatabase/StreetSign/MI_StreetSign_Street26.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StreetSign.upk#MI_StreetSign_Street27",
+   "object": "MI_StreetSign_Street27",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StreetSign_Street27",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "extracted_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "output_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "output_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "uasset": "Content/Imported/MaterialDatabase/StreetSign/MI_StreetSign_Street27.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StreetSign.upk#MI_StreetSign_Street28",
+   "object": "MI_StreetSign_Street28",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StreetSign_Street28",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "extracted_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "output_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "output_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "uasset": "Content/Imported/MaterialDatabase/StreetSign/MI_StreetSign_Street28.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StreetSign.upk#MI_StreetSign_Street29",
+   "object": "MI_StreetSign_Street29",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StreetSign_Street29",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "extracted_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "output_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "output_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "uasset": "Content/Imported/MaterialDatabase/StreetSign/MI_StreetSign_Street29.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StreetSign.upk#MI_StreetSign_Street30",
+   "object": "MI_StreetSign_Street30",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StreetSign_Street30",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "extracted_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "output_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "output_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "uasset": "Content/Imported/MaterialDatabase/StreetSign/MI_StreetSign_Street30.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StreetSign.upk#MI_StreetSign_Street31",
+   "object": "MI_StreetSign_Street31",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StreetSign_Street31",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "extracted_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "output_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "output_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "uasset": "Content/Imported/MaterialDatabase/StreetSign/MI_StreetSign_Street31.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StreetSign.upk#MI_StreetSign_Street32",
+   "object": "MI_StreetSign_Street32",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StreetSign_Street32",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "extracted_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "output_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "output_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "uasset": "Content/Imported/MaterialDatabase/StreetSign/MI_StreetSign_Street32.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StreetSign.upk#StreetSign_DiffSpec",
+   "object": "StreetSign_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_DiffSpec.tga",
+   "extracted_sha256": "9c2a90e99e6a8968838aba99b00b0100c4bfe65c371803c083294e9c599fed2e",
+   "output_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_DiffSpec.tga",
+   "output_sha256": "9c2a90e99e6a8968838aba99b00b0100c4bfe65c371803c083294e9c599fed2e",
+   "uasset": "Content/Imported/MaterialDatabase/StreetSign/StreetSign_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StreetSign.upk#StreetSign_Norm",
+   "object": "StreetSign_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Norm.tga",
+   "extracted_sha256": "877fa0b16bbe58ac4407121c3c66572c45be3061825703a2ab0f617b86088061",
+   "output_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Norm.tga",
+   "output_sha256": "877fa0b16bbe58ac4407121c3c66572c45be3061825703a2ab0f617b86088061",
+   "uasset": "Content/Imported/MaterialDatabase/StreetSign/StreetSign_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StreetSign.upk#StreetSign_Sign_DiffSpec",
+   "object": "StreetSign_Sign_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "extracted_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "output_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_DiffSpec.tga",
+   "output_sha256": "8917656a2e9f6726c659c6bd2508e1b844d2765b4a8732dd95c1b0005fde2528",
+   "uasset": "Content/Imported/MaterialDatabase/StreetSign/StreetSign_Sign_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StreetSign.upk#StreetSign_Sign_Norm",
+   "object": "StreetSign_Sign_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_Norm.tga",
+   "extracted_sha256": "d9ba36164ffcbcdbc8f7beb7564d37445960e10058eac90da1886da691f5b5d2",
+   "output_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_Norm.tga",
+   "output_sha256": "d9ba36164ffcbcdbc8f7beb7564d37445960e10058eac90da1886da691f5b5d2",
+   "uasset": "Content/Imported/MaterialDatabase/StreetSign/StreetSign_Sign_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StreetSign.upk#StreetSign_Sign_Opac",
+   "object": "StreetSign_Sign_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_Opac.tga",
+   "extracted_sha256": "694a53b8fbee4fe91a86f6122629a981bcc5c6921443fa5000e334ee4454a3de",
+   "output_file": "Content/Extracted/MaterialDatabase/StreetSign/StreetSign/Texture2D/StreetSign_Sign_Opac.tga",
+   "output_sha256": "694a53b8fbee4fe91a86f6122629a981bcc5c6921443fa5000e334ee4454a3de",
+   "uasset": "Content/Imported/MaterialDatabase/StreetSign/StreetSign_Sign_Opac.uasset"
+  }
+ ]
+}

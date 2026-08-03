@@ -1,0 +1,34 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "SoundWall",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/EnforcerSocialDistrict/SoundWall.upk",
+ "source_sha256": "87998eddb415885ac578b567ba647d7f1d5076d5a89ad7f856e3a6d0c9f84cfd",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/SoundWall.upk#MI_SoundWall_Mat",
+   "object": "MI_SoundWall_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "SoundWall_Mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/SoundWall/SoundWall/Texture2D/SoundWall.tga",
+   "extracted_sha256": "466eb01d8e76bb5c7bc05350a75a4a1b766839ca7e1a6d1fac21f0b19c14c52e",
+   "output_file": "Content/Extracted/MaterialDatabase/SoundWall/SoundWall/Texture2D/SoundWall.tga",
+   "output_sha256": "466eb01d8e76bb5c7bc05350a75a4a1b766839ca7e1a6d1fac21f0b19c14c52e",
+   "uasset": "Content/Imported/MaterialDatabase/SoundWall/MI_SoundWall_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/SoundWall.upk#SoundWall",
+   "object": "SoundWall",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/SoundWall/SoundWall/Texture2D/SoundWall.tga",
+   "extracted_sha256": "466eb01d8e76bb5c7bc05350a75a4a1b766839ca7e1a6d1fac21f0b19c14c52e",
+   "output_file": "Content/Extracted/MaterialDatabase/SoundWall/SoundWall/Texture2D/SoundWall.tga",
+   "output_sha256": "466eb01d8e76bb5c7bc05350a75a4a1b766839ca7e1a6d1fac21f0b19c14c52e",
+   "uasset": "Content/Imported/MaterialDatabase/SoundWall/SoundWall.uasset"
+  }
+ ]
+}

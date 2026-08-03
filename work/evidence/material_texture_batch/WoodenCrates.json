@@ -1,0 +1,62 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "WoodenCrates",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/WoodenCrates.upk",
+ "source_sha256": "03b6e8253e1e4e74644b86cdc59eb21f3546ed851f9a6d60f116683be0af1d67",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/WoodenCrates.upk#MI_WoodenCrates_Damage_Mat",
+   "object": "MI_WoodenCrates_Damage_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WoodenCrates_Damage_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WoodenCrates/WoodenCrates/Texture2D/MidtownWoodenCrates_DiffSpec.tga",
+   "extracted_sha256": "546f8f2b0e2f602feaff2d4dcb303a6f2bd449a0b95814d2bbc77db54d3e6bd3",
+   "output_file": "Content/Extracted/MaterialDatabase/WoodenCrates/WoodenCrates/Texture2D/MidtownWoodenCrates_DiffSpec.tga",
+   "output_sha256": "546f8f2b0e2f602feaff2d4dcb303a6f2bd449a0b95814d2bbc77db54d3e6bd3",
+   "uasset": "Content/Imported/MaterialDatabase/WoodenCrates/MI_WoodenCrates_Damage_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/WoodenCrates.upk#MI_WoodenCrates_Mat",
+   "object": "MI_WoodenCrates_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WoodenCrates_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WoodenCrates/WoodenCrates/Texture2D/MidtownWoodenCrates_DiffSpec.tga",
+   "extracted_sha256": "546f8f2b0e2f602feaff2d4dcb303a6f2bd449a0b95814d2bbc77db54d3e6bd3",
+   "output_file": "Content/Extracted/MaterialDatabase/WoodenCrates/WoodenCrates/Texture2D/MidtownWoodenCrates_DiffSpec.tga",
+   "output_sha256": "546f8f2b0e2f602feaff2d4dcb303a6f2bd449a0b95814d2bbc77db54d3e6bd3",
+   "uasset": "Content/Imported/MaterialDatabase/WoodenCrates/MI_WoodenCrates_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/WoodenCrates.upk#MidtownWoodenCrates_DiffSpec",
+   "object": "MidtownWoodenCrates_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WoodenCrates/WoodenCrates/Texture2D/MidtownWoodenCrates_DiffSpec.tga",
+   "extracted_sha256": "546f8f2b0e2f602feaff2d4dcb303a6f2bd449a0b95814d2bbc77db54d3e6bd3",
+   "output_file": "Content/Extracted/MaterialDatabase/WoodenCrates/WoodenCrates/Texture2D/MidtownWoodenCrates_DiffSpec.tga",
+   "output_sha256": "546f8f2b0e2f602feaff2d4dcb303a6f2bd449a0b95814d2bbc77db54d3e6bd3",
+   "uasset": "Content/Imported/MaterialDatabase/WoodenCrates/MidtownWoodenCrates_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/WoodenCrates.upk#MidtownWoodenCrates_Norm",
+   "object": "MidtownWoodenCrates_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WoodenCrates/WoodenCrates/Texture2D/MidtownWoodenCrates_Norm.tga",
+   "extracted_sha256": "ffded949a54c48aa090b45203a43fb05a3d77d1d94f848ce6bb6b046c95ae683",
+   "output_file": "Content/Extracted/MaterialDatabase/WoodenCrates/WoodenCrates/Texture2D/MidtownWoodenCrates_Norm.tga",
+   "output_sha256": "ffded949a54c48aa090b45203a43fb05a3d77d1d94f848ce6bb6b046c95ae683",
+   "uasset": "Content/Imported/MaterialDatabase/WoodenCrates/MidtownWoodenCrates_Norm.uasset"
+  }
+ ]
+}

@@ -1,0 +1,155 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FinancialCafeFurniture",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCafeFurniture.upk",
+ "source_sha256": "fddb3168380e60908fd2b6294e413ef8947aaca99d4a4e703632b9cfd6493166",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCafeFurniture.upk#FinancialCafeFurniture_DiffSpec",
+   "object": "FinancialCafeFurniture_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialCafeFurniture/FinancialCafeFurniture/Texture2D/FinancialCafeFurniture_DiffSpec.tga",
+   "extracted_sha256": "7332e9574f41b7c32b87081d84a79b9cd80ab3b24d047aa4da9a46d1d189c366",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialCafeFurniture/FinancialCafeFurniture/Texture2D/FinancialCafeFurniture_DiffSpec.tga",
+   "output_sha256": "7332e9574f41b7c32b87081d84a79b9cd80ab3b24d047aa4da9a46d1d189c366",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialCafeFurniture/FinancialCafeFurniture_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCafeFurniture.upk#FinancialCafeFurniture_Norm",
+   "object": "FinancialCafeFurniture_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialCafeFurniture/FinancialCafeFurniture/Texture2D/FinancialCafeFurniture_Norm.tga",
+   "extracted_sha256": "a5621d3cf6b5bbd650cbb1ae99e9dfd5f1ffff7ac0789da0d5c5460c57c5d4b4",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialCafeFurniture/FinancialCafeFurniture/Texture2D/FinancialCafeFurniture_Norm.tga",
+   "output_sha256": "a5621d3cf6b5bbd650cbb1ae99e9dfd5f1ffff7ac0789da0d5c5460c57c5d4b4",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialCafeFurniture/FinancialCafeFurniture_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCafeFurniture.upk#FinancialCafeFurniture_Opac",
+   "object": "FinancialCafeFurniture_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialCafeFurniture/FinancialCafeFurniture/Texture2D/FinancialCafeFurniture_Opac.tga",
+   "extracted_sha256": "e7f0c12ad62c546a25b80cd3bca1779451f0527616eabefcbe273f4aba413bce",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialCafeFurniture/FinancialCafeFurniture/Texture2D/FinancialCafeFurniture_Opac.tga",
+   "output_sha256": "e7f0c12ad62c546a25b80cd3bca1779451f0527616eabefcbe273f4aba413bce",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialCafeFurniture/FinancialCafeFurniture_Opac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCafeFurniture.upk#MI_FinancialCafeFurniture_Blue_Mat",
+   "object": "MI_FinancialCafeFurniture_Blue_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialCafeFurniture_Blue_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialCafeFurniture/FinancialCafeFurniture/Texture2D/FinancialCafeFurniture_DiffSpec.tga",
+   "extracted_sha256": "7332e9574f41b7c32b87081d84a79b9cd80ab3b24d047aa4da9a46d1d189c366",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialCafeFurniture/FinancialCafeFurniture/Texture2D/FinancialCafeFurniture_DiffSpec.tga",
+   "output_sha256": "7332e9574f41b7c32b87081d84a79b9cd80ab3b24d047aa4da9a46d1d189c366",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialCafeFurniture/MI_FinancialCafeFurniture_Blue_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCafeFurniture.upk#MI_FinancialCafeFurniture_Damage_Blue_Mat",
+   "object": "MI_FinancialCafeFurniture_Damage_Blue_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialCafeFurniture_Damage_Blue_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialCafeFurniture/FinancialCafeFurniture/Texture2D/FinancialCafeFurniture_DiffSpec.tga",
+   "extracted_sha256": "7332e9574f41b7c32b87081d84a79b9cd80ab3b24d047aa4da9a46d1d189c366",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialCafeFurniture/FinancialCafeFurniture/Texture2D/FinancialCafeFurniture_DiffSpec.tga",
+   "output_sha256": "7332e9574f41b7c32b87081d84a79b9cd80ab3b24d047aa4da9a46d1d189c366",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialCafeFurniture/MI_FinancialCafeFurniture_Damage_Blue_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCafeFurniture.upk#MI_FinancialCafeFurniture_Damage_Green_Mat",
+   "object": "MI_FinancialCafeFurniture_Damage_Green_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialCafeFurniture_Damage_Green_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialCafeFurniture/FinancialCafeFurniture/Texture2D/FinancialCafeFurniture_DiffSpec.tga",
+   "extracted_sha256": "7332e9574f41b7c32b87081d84a79b9cd80ab3b24d047aa4da9a46d1d189c366",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialCafeFurniture/FinancialCafeFurniture/Texture2D/FinancialCafeFurniture_DiffSpec.tga",
+   "output_sha256": "7332e9574f41b7c32b87081d84a79b9cd80ab3b24d047aa4da9a46d1d189c366",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialCafeFurniture/MI_FinancialCafeFurniture_Damage_Green_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCafeFurniture.upk#MI_FinancialCafeFurniture_Damage_MAT",
+   "object": "MI_FinancialCafeFurniture_Damage_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialCafeFurniture_Damage_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialCafeFurniture/FinancialCafeFurniture/Texture2D/FinancialCafeFurniture_DiffSpec.tga",
+   "extracted_sha256": "7332e9574f41b7c32b87081d84a79b9cd80ab3b24d047aa4da9a46d1d189c366",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialCafeFurniture/FinancialCafeFurniture/Texture2D/FinancialCafeFurniture_DiffSpec.tga",
+   "output_sha256": "7332e9574f41b7c32b87081d84a79b9cd80ab3b24d047aa4da9a46d1d189c366",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialCafeFurniture/MI_FinancialCafeFurniture_Damage_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCafeFurniture.upk#MI_FinancialCafeFurniture_GKing_Mat",
+   "object": "MI_FinancialCafeFurniture_GKing_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialCafeFurniture_GKing_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialCafeFurniture/FinancialCafeFurniture/Texture2D/FinancialCafeFurniture_DiffSpec.tga",
+   "extracted_sha256": "7332e9574f41b7c32b87081d84a79b9cd80ab3b24d047aa4da9a46d1d189c366",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialCafeFurniture/FinancialCafeFurniture/Texture2D/FinancialCafeFurniture_DiffSpec.tga",
+   "output_sha256": "7332e9574f41b7c32b87081d84a79b9cd80ab3b24d047aa4da9a46d1d189c366",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialCafeFurniture/MI_FinancialCafeFurniture_GKing_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCafeFurniture.upk#MI_FinancialCafeFurniture_Green_Mat",
+   "object": "MI_FinancialCafeFurniture_Green_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialCafeFurniture_Green_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialCafeFurniture/FinancialCafeFurniture/Texture2D/FinancialCafeFurniture_DiffSpec.tga",
+   "extracted_sha256": "7332e9574f41b7c32b87081d84a79b9cd80ab3b24d047aa4da9a46d1d189c366",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialCafeFurniture/FinancialCafeFurniture/Texture2D/FinancialCafeFurniture_DiffSpec.tga",
+   "output_sha256": "7332e9574f41b7c32b87081d84a79b9cd80ab3b24d047aa4da9a46d1d189c366",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialCafeFurniture/MI_FinancialCafeFurniture_Green_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCafeFurniture.upk#MI_FinancialCafeFurniture_MAT",
+   "object": "MI_FinancialCafeFurniture_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialCafeFurniture_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialCafeFurniture/FinancialCafeFurniture/Texture2D/FinancialCafeFurniture_DiffSpec.tga",
+   "extracted_sha256": "7332e9574f41b7c32b87081d84a79b9cd80ab3b24d047aa4da9a46d1d189c366",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialCafeFurniture/FinancialCafeFurniture/Texture2D/FinancialCafeFurniture_DiffSpec.tga",
+   "output_sha256": "7332e9574f41b7c32b87081d84a79b9cd80ab3b24d047aa4da9a46d1d189c366",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialCafeFurniture/MI_FinancialCafeFurniture_MAT.uasset"
+  }
+ ]
+}

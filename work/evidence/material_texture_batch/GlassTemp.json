@@ -1,0 +1,34 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "GlassTemp",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/Glass/GlassTemp.upk",
+ "source_sha256": "07da84c6a174ed5e86ca208d1ca2e776c06f3f24fc4a28313766e6bd93f204e0",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Glass/GlassTemp.upk#4P_Square",
+   "object": "4P_Square",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GlassTemp/GlassTemp/Texture2D/4P_Square.tga",
+   "extracted_sha256": "1520c5c0fca46ec73bc928a89d1594a9fabd1e1025a9b75ae14e96630410c310",
+   "output_file": "Content/Extracted/MaterialDatabase/GlassTemp/GlassTemp/Texture2D/4P_Square.tga",
+   "output_sha256": "1520c5c0fca46ec73bc928a89d1594a9fabd1e1025a9b75ae14e96630410c310",
+   "uasset": "Content/Imported/MaterialDatabase/GlassTemp/4P_Square.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Glass/GlassTemp.upk#MI_GlassTemp",
+   "object": "MI_GlassTemp",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "GlassTemp",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GlassTemp/GlassTemp/Texture2D/4P_Square.tga",
+   "extracted_sha256": "1520c5c0fca46ec73bc928a89d1594a9fabd1e1025a9b75ae14e96630410c310",
+   "output_file": "Content/Extracted/MaterialDatabase/GlassTemp/GlassTemp/Texture2D/4P_Square.tga",
+   "output_sha256": "1520c5c0fca46ec73bc928a89d1594a9fabd1e1025a9b75ae14e96630410c310",
+   "uasset": "Content/Imported/MaterialDatabase/GlassTemp/MI_GlassTemp.uasset"
+  }
+ ]
+}

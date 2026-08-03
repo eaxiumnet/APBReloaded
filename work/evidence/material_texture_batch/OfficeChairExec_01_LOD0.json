@@ -1,0 +1,50 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "OfficeChairExec_01_LOD0",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/EnforcerSocialDistrict/PropMaterials/OfficeChairExec_01_LOD0.upk",
+ "source_sha256": "7650d7a4e170dfb8bd48ccb045e4a00e88023a2004bbc894d5b72ca4eebca866",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/OfficeChairExec_01_LOD0.upk#MI_officechairexec_01_lod0",
+   "object": "MI_officechairexec_01_lod0",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "officechairexec_01_lod0",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/OfficeChairExec_01_LOD0/OfficeChairExec_01_LOD0/Texture2D/OfficeChair_01_DiffSpec_NRM.tga",
+   "extracted_sha256": "b457c237cafdadea5286fc78f650717bc6b420452598329c4d92f24a9d13d3f6",
+   "output_file": "Content/Extracted/MaterialDatabase/OfficeChairExec_01_LOD0/OfficeChairExec_01_LOD0/Texture2D/OfficeChair_01_DiffSpec_NRM.tga",
+   "output_sha256": "b457c237cafdadea5286fc78f650717bc6b420452598329c4d92f24a9d13d3f6",
+   "uasset": "Content/Imported/MaterialDatabase/OfficeChairExec_01_LOD0/MI_officechairexec_01_lod0.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/OfficeChairExec_01_LOD0.upk#MI_OfficeChairExec_01_LOD0_RED",
+   "object": "MI_OfficeChairExec_01_LOD0_RED",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "OfficeChairExec_01_LOD0_RED",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/OfficeChairExec_01_LOD0/OfficeChairExec_01_LOD0/Texture2D/OfficeChair_01_DiffSpec_NRM.tga",
+   "extracted_sha256": "b457c237cafdadea5286fc78f650717bc6b420452598329c4d92f24a9d13d3f6",
+   "output_file": "Content/Extracted/MaterialDatabase/OfficeChairExec_01_LOD0/OfficeChairExec_01_LOD0/Texture2D/OfficeChair_01_DiffSpec_NRM.tga",
+   "output_sha256": "b457c237cafdadea5286fc78f650717bc6b420452598329c4d92f24a9d13d3f6",
+   "uasset": "Content/Imported/MaterialDatabase/OfficeChairExec_01_LOD0/MI_OfficeChairExec_01_LOD0_RED.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/OfficeChairExec_01_LOD0.upk#OfficeChair_01_DiffSpec_NRM",
+   "object": "OfficeChair_01_DiffSpec_NRM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/OfficeChairExec_01_LOD0/OfficeChairExec_01_LOD0/Texture2D/OfficeChair_01_DiffSpec_NRM.tga",
+   "extracted_sha256": "b457c237cafdadea5286fc78f650717bc6b420452598329c4d92f24a9d13d3f6",
+   "output_file": "Content/Extracted/MaterialDatabase/OfficeChairExec_01_LOD0/OfficeChairExec_01_LOD0/Texture2D/OfficeChair_01_DiffSpec_NRM.tga",
+   "output_sha256": "b457c237cafdadea5286fc78f650717bc6b420452598329c4d92f24a9d13d3f6",
+   "uasset": "Content/Imported/MaterialDatabase/OfficeChairExec_01_LOD0/OfficeChair_01_DiffSpec_NRM.uasset"
+  }
+ ]
+}

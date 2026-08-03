@@ -1,0 +1,88 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Rubber",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/Rubber/Rubber.upk",
+ "source_sha256": "bd6c7869c8568385e5b84763f1d9a6149cff5886043d330a9aa6a22d122939ac",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rubber/Rubber.upk#MI_Rubber_Round_Black_Mat",
+   "object": "MI_Rubber_Round_Black_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Rubber_Round_Black_Mat",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Rubber/Rubber/Texture2D/Straight_NRM.tga",
+   "extracted_sha256": "e7e6831cafe401e2bdc023da7a531003badab19b185f7664dac4e8ad73f09ef4",
+   "output_file": "Content/Extracted/MaterialDatabase/Rubber/Rubber/Texture2D/Straight_NRM.tga",
+   "output_sha256": "e7e6831cafe401e2bdc023da7a531003badab19b185f7664dac4e8ad73f09ef4",
+   "uasset": "Content/Imported/MaterialDatabase/Rubber/MI_Rubber_Round_Black_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rubber/Rubber.upk#MI_Rubber_Round_Mat",
+   "object": "MI_Rubber_Round_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Rubber_Round_Mat",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Rubber/Rubber/Texture2D/Straight_NRM.tga",
+   "extracted_sha256": "e7e6831cafe401e2bdc023da7a531003badab19b185f7664dac4e8ad73f09ef4",
+   "output_file": "Content/Extracted/MaterialDatabase/Rubber/Rubber/Texture2D/Straight_NRM.tga",
+   "output_sha256": "e7e6831cafe401e2bdc023da7a531003badab19b185f7664dac4e8ad73f09ef4",
+   "uasset": "Content/Imported/MaterialDatabase/Rubber/MI_Rubber_Round_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rubber/Rubber.upk#MI_Rubber_Round_Small_Mat",
+   "object": "MI_Rubber_Round_Small_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Rubber_Round_Small_Mat",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Rubber/Rubber/Texture2D/Round_NRM.tga",
+   "extracted_sha256": "5eb0f604b7573bb58adb18f2bf17dbe73039977f785f3aa1ec9b483ce6f1545f",
+   "output_file": "Content/Extracted/MaterialDatabase/Rubber/Rubber/Texture2D/Round_NRM.tga",
+   "output_sha256": "5eb0f604b7573bb58adb18f2bf17dbe73039977f785f3aa1ec9b483ce6f1545f",
+   "uasset": "Content/Imported/MaterialDatabase/Rubber/MI_Rubber_Round_Small_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rubber/Rubber.upk#MI_Rubber_Straight_Mat",
+   "object": "MI_Rubber_Straight_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Rubber_Straight_Mat",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Rubber/Rubber/Texture2D/Straight_NRM.tga",
+   "extracted_sha256": "e7e6831cafe401e2bdc023da7a531003badab19b185f7664dac4e8ad73f09ef4",
+   "output_file": "Content/Extracted/MaterialDatabase/Rubber/Rubber/Texture2D/Straight_NRM.tga",
+   "output_sha256": "e7e6831cafe401e2bdc023da7a531003badab19b185f7664dac4e8ad73f09ef4",
+   "uasset": "Content/Imported/MaterialDatabase/Rubber/MI_Rubber_Straight_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rubber/Rubber.upk#Round_NRM",
+   "object": "Round_NRM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Rubber/Rubber/Texture2D/Round_NRM.tga",
+   "extracted_sha256": "5eb0f604b7573bb58adb18f2bf17dbe73039977f785f3aa1ec9b483ce6f1545f",
+   "output_file": "Content/Extracted/MaterialDatabase/Rubber/Rubber/Texture2D/Round_NRM.tga",
+   "output_sha256": "5eb0f604b7573bb58adb18f2bf17dbe73039977f785f3aa1ec9b483ce6f1545f",
+   "uasset": "Content/Imported/MaterialDatabase/Rubber/Round_NRM.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Rubber/Rubber.upk#Straight_NRM",
+   "object": "Straight_NRM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Rubber/Rubber/Texture2D/Straight_NRM.tga",
+   "extracted_sha256": "e7e6831cafe401e2bdc023da7a531003badab19b185f7664dac4e8ad73f09ef4",
+   "output_file": "Content/Extracted/MaterialDatabase/Rubber/Rubber/Texture2D/Straight_NRM.tga",
+   "output_sha256": "e7e6831cafe401e2bdc023da7a531003badab19b185f7664dac4e8ad73f09ef4",
+   "uasset": "Content/Imported/MaterialDatabase/Rubber/Straight_NRM.uasset"
+  }
+ ]
+}

@@ -1,0 +1,107 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Cornice",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/Cornice/Cornice.upk",
+ "source_sha256": "8459c7c786fe0ce5d5518116d3fbab34c31b3af6f48902f5980f63825fb08a0e",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Cornice/Cornice.upk#Cornice01_Diff",
+   "object": "Cornice01_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Cornice/Cornice/Texture2D/Cornice01_Diff.tga",
+   "extracted_sha256": "beebbdf9b7acd970c2b28a9b87135e1872f08d55f1d56b06ee49138075147816",
+   "output_file": "Content/Extracted/MaterialDatabase/Cornice/Cornice/Texture2D/Cornice01_Diff.tga",
+   "output_sha256": "beebbdf9b7acd970c2b28a9b87135e1872f08d55f1d56b06ee49138075147816",
+   "uasset": "Content/Imported/MaterialDatabase/Cornice/Cornice01_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Cornice/Cornice.upk#Cornice01_Norm",
+   "object": "Cornice01_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Cornice/Cornice/Texture2D/Cornice01_Norm.tga",
+   "extracted_sha256": "80ba6e0d5d39f626a3a957ee69d02ebed2c9df471955d44dd16153f49666bd73",
+   "output_file": "Content/Extracted/MaterialDatabase/Cornice/Cornice/Texture2D/Cornice01_Norm.tga",
+   "output_sha256": "80ba6e0d5d39f626a3a957ee69d02ebed2c9df471955d44dd16153f49666bd73",
+   "uasset": "Content/Imported/MaterialDatabase/Cornice/Cornice01_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Cornice/Cornice.upk#MI_Cornice_Brown",
+   "object": "MI_Cornice_Brown",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Cornice_Brown",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Cornice/Cornice/Texture2D/Cornice01_Diff.tga",
+   "extracted_sha256": "beebbdf9b7acd970c2b28a9b87135e1872f08d55f1d56b06ee49138075147816",
+   "output_file": "Content/Extracted/MaterialDatabase/Cornice/Cornice/Texture2D/Cornice01_Diff.tga",
+   "output_sha256": "beebbdf9b7acd970c2b28a9b87135e1872f08d55f1d56b06ee49138075147816",
+   "uasset": "Content/Imported/MaterialDatabase/Cornice/MI_Cornice_Brown.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Cornice/Cornice.upk#MI_Cornice_GreyMedium",
+   "object": "MI_Cornice_GreyMedium",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Cornice_GreyMedium",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Cornice/Cornice/Texture2D/Cornice01_Diff.tga",
+   "extracted_sha256": "beebbdf9b7acd970c2b28a9b87135e1872f08d55f1d56b06ee49138075147816",
+   "output_file": "Content/Extracted/MaterialDatabase/Cornice/Cornice/Texture2D/Cornice01_Diff.tga",
+   "output_sha256": "beebbdf9b7acd970c2b28a9b87135e1872f08d55f1d56b06ee49138075147816",
+   "uasset": "Content/Imported/MaterialDatabase/Cornice/MI_Cornice_GreyMedium.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Cornice/Cornice.upk#MI_Cornice_PARENT",
+   "object": "MI_Cornice_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Cornice_PARENT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Cornice/Cornice/Texture2D/Cornice01_Diff.tga",
+   "extracted_sha256": "beebbdf9b7acd970c2b28a9b87135e1872f08d55f1d56b06ee49138075147816",
+   "output_file": "Content/Extracted/MaterialDatabase/Cornice/Cornice/Texture2D/Cornice01_Diff.tga",
+   "output_sha256": "beebbdf9b7acd970c2b28a9b87135e1872f08d55f1d56b06ee49138075147816",
+   "uasset": "Content/Imported/MaterialDatabase/Cornice/MI_Cornice_PARENT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Cornice/Cornice.upk#MI_Cornice_Unknown",
+   "object": "MI_Cornice_Unknown",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Cornice_Unknown",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Cornice/Cornice/Texture2D/Cornice01_Diff.tga",
+   "extracted_sha256": "beebbdf9b7acd970c2b28a9b87135e1872f08d55f1d56b06ee49138075147816",
+   "output_file": "Content/Extracted/MaterialDatabase/Cornice/Cornice/Texture2D/Cornice01_Diff.tga",
+   "output_sha256": "beebbdf9b7acd970c2b28a9b87135e1872f08d55f1d56b06ee49138075147816",
+   "uasset": "Content/Imported/MaterialDatabase/Cornice/MI_Cornice_Unknown.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Cornice/Cornice.upk#MI_Cornice_White",
+   "object": "MI_Cornice_White",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Cornice_White",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Cornice/Cornice/Texture2D/Cornice01_Diff.tga",
+   "extracted_sha256": "beebbdf9b7acd970c2b28a9b87135e1872f08d55f1d56b06ee49138075147816",
+   "output_file": "Content/Extracted/MaterialDatabase/Cornice/Cornice/Texture2D/Cornice01_Diff.tga",
+   "output_sha256": "beebbdf9b7acd970c2b28a9b87135e1872f08d55f1d56b06ee49138075147816",
+   "uasset": "Content/Imported/MaterialDatabase/Cornice/MI_Cornice_White.uasset"
+  }
+ ]
+}

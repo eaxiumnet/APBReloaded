@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "GarbageBag",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/GarbageBag.upk",
+ "source_sha256": "a9fa0468b38446f1bf82585f097cf9275e62a993cbf60d48528f47b97c48089b",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/GarbageBag.upk#GarbageBag_DiffSpec",
+   "object": "GarbageBag_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GarbageBag/GarbageBag/Texture2D/GarbageBag_DiffSpec.tga",
+   "extracted_sha256": "feb83d7f5e5d71314ad6386a505fb23a3a3078fe45b4e8ca1dd251acfa02fecd",
+   "output_file": "Content/Extracted/MaterialDatabase/GarbageBag/GarbageBag/Texture2D/GarbageBag_DiffSpec.tga",
+   "output_sha256": "feb83d7f5e5d71314ad6386a505fb23a3a3078fe45b4e8ca1dd251acfa02fecd",
+   "uasset": "Content/Imported/MaterialDatabase/GarbageBag/GarbageBag_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/GarbageBag.upk#GarbageBag_Norm",
+   "object": "GarbageBag_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GarbageBag/GarbageBag/Texture2D/GarbageBag_Norm.tga",
+   "extracted_sha256": "4e792f0675de6177a5d961529b4a8c72c0f161a90bb5e0a7af0e32fdecd0f48a",
+   "output_file": "Content/Extracted/MaterialDatabase/GarbageBag/GarbageBag/Texture2D/GarbageBag_Norm.tga",
+   "output_sha256": "4e792f0675de6177a5d961529b4a8c72c0f161a90bb5e0a7af0e32fdecd0f48a",
+   "uasset": "Content/Imported/MaterialDatabase/GarbageBag/GarbageBag_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/GarbageBag.upk#MI_GarbageBag_Mat",
+   "object": "MI_GarbageBag_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "GarbageBag_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GarbageBag/GarbageBag/Texture2D/GarbageBag_DiffSpec.tga",
+   "extracted_sha256": "feb83d7f5e5d71314ad6386a505fb23a3a3078fe45b4e8ca1dd251acfa02fecd",
+   "output_file": "Content/Extracted/MaterialDatabase/GarbageBag/GarbageBag/Texture2D/GarbageBag_DiffSpec.tga",
+   "output_sha256": "feb83d7f5e5d71314ad6386a505fb23a3a3078fe45b4e8ca1dd251acfa02fecd",
+   "uasset": "Content/Imported/MaterialDatabase/GarbageBag/MI_GarbageBag_Mat.uasset"
+  }
+ ]
+}

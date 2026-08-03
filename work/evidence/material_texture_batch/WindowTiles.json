@@ -1,0 +1,48 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "WindowTiles",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/WindowTiles.upk",
+ "source_sha256": "364206074b2df95d62fc6e91250887b982a192290194c8ecc5cdef9dc416d68e",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/WindowTiles.upk#MI_WindowTiles_Mat",
+   "object": "MI_WindowTiles_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WindowTiles_Mat",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WindowTiles/WindowTiles/Texture2D/WindowTiles_NRM.tga",
+   "extracted_sha256": "2b39e8bc617e0ac2af73ae122f98a67a9f7ef158e04ab22283e43be74d166216",
+   "output_file": "Content/Extracted/MaterialDatabase/WindowTiles/WindowTiles/Texture2D/WindowTiles_NRM.tga",
+   "output_sha256": "2b39e8bc617e0ac2af73ae122f98a67a9f7ef158e04ab22283e43be74d166216",
+   "uasset": "Content/Imported/MaterialDatabase/WindowTiles/MI_WindowTiles_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/WindowTiles.upk#MI_WindowTiles_Mat_Transparent",
+   "object": "MI_WindowTiles_Mat_Transparent",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WindowTiles_Mat_Transparent",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WindowTiles/WindowTiles/Texture2D/WindowTiles_NRM.tga",
+   "extracted_sha256": "2b39e8bc617e0ac2af73ae122f98a67a9f7ef158e04ab22283e43be74d166216",
+   "output_file": "Content/Extracted/MaterialDatabase/WindowTiles/WindowTiles/Texture2D/WindowTiles_NRM.tga",
+   "output_sha256": "2b39e8bc617e0ac2af73ae122f98a67a9f7ef158e04ab22283e43be74d166216",
+   "uasset": "Content/Imported/MaterialDatabase/WindowTiles/MI_WindowTiles_Mat_Transparent.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/WindowTiles.upk#WindowTiles_NRM",
+   "object": "WindowTiles_NRM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WindowTiles/WindowTiles/Texture2D/WindowTiles_NRM.tga",
+   "extracted_sha256": "2b39e8bc617e0ac2af73ae122f98a67a9f7ef158e04ab22283e43be74d166216",
+   "output_file": "Content/Extracted/MaterialDatabase/WindowTiles/WindowTiles/Texture2D/WindowTiles_NRM.tga",
+   "output_sha256": "2b39e8bc617e0ac2af73ae122f98a67a9f7ef158e04ab22283e43be74d166216",
+   "uasset": "Content/Imported/MaterialDatabase/WindowTiles/WindowTiles_NRM.uasset"
+  }
+ ]
+}

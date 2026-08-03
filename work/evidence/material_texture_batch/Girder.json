@@ -1,0 +1,77 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Girder",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/Metal/Girder.upk",
+ "source_sha256": "be58cef83232f11afdc053f398117ad7a716677f52d6994b77d9b344b5515c06",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Girder.upk#Girder_Diff",
+   "object": "Girder_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Girder/Girder/Texture2D/Girder_Diff.tga",
+   "extracted_sha256": "9efe5d2b9d4fc45aaba9f262c075c4898dcd8a64750e7b78aa203ff4f35e095d",
+   "output_file": "Content/Extracted/MaterialDatabase/Girder/Girder/Texture2D/Girder_Diff.tga",
+   "output_sha256": "9efe5d2b9d4fc45aaba9f262c075c4898dcd8a64750e7b78aa203ff4f35e095d",
+   "uasset": "Content/Imported/MaterialDatabase/Girder/Girder_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Girder.upk#Girder_Norm",
+   "object": "Girder_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Girder/Girder/Texture2D/Girder_Norm.tga",
+   "extracted_sha256": "1639a03e0082c2619e05b4ff420c6d4712a083fae556186f40d5a616e524843d",
+   "output_file": "Content/Extracted/MaterialDatabase/Girder/Girder/Texture2D/Girder_Norm.tga",
+   "output_sha256": "1639a03e0082c2619e05b4ff420c6d4712a083fae556186f40d5a616e524843d",
+   "uasset": "Content/Imported/MaterialDatabase/Girder/Girder_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Girder.upk#MI_Girder_Grime_Mat",
+   "object": "MI_Girder_Grime_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Girder_Grime_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Girder/Girder/Texture2D/Girder_Diff.tga",
+   "extracted_sha256": "9efe5d2b9d4fc45aaba9f262c075c4898dcd8a64750e7b78aa203ff4f35e095d",
+   "output_file": "Content/Extracted/MaterialDatabase/Girder/Girder/Texture2D/Girder_Diff.tga",
+   "output_sha256": "9efe5d2b9d4fc45aaba9f262c075c4898dcd8a64750e7b78aa203ff4f35e095d",
+   "uasset": "Content/Imported/MaterialDatabase/Girder/MI_Girder_Grime_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Girder.upk#MI_Girder_Mat",
+   "object": "MI_Girder_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Girder_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Girder/Girder/Texture2D/Girder_Diff.tga",
+   "extracted_sha256": "9efe5d2b9d4fc45aaba9f262c075c4898dcd8a64750e7b78aa203ff4f35e095d",
+   "output_file": "Content/Extracted/MaterialDatabase/Girder/Girder/Texture2D/Girder_Diff.tga",
+   "output_sha256": "9efe5d2b9d4fc45aaba9f262c075c4898dcd8a64750e7b78aa203ff4f35e095d",
+   "uasset": "Content/Imported/MaterialDatabase/Girder/MI_Girder_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Girder.upk#MI_Girder_Mat_Painted",
+   "object": "MI_Girder_Mat_Painted",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Girder_Mat_Painted",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Girder/Girder/Texture2D/Girder_Diff.tga",
+   "extracted_sha256": "9efe5d2b9d4fc45aaba9f262c075c4898dcd8a64750e7b78aa203ff4f35e095d",
+   "output_file": "Content/Extracted/MaterialDatabase/Girder/Girder/Texture2D/Girder_Diff.tga",
+   "output_sha256": "9efe5d2b9d4fc45aaba9f262c075c4898dcd8a64750e7b78aa203ff4f35e095d",
+   "uasset": "Content/Imported/MaterialDatabase/Girder/MI_Girder_Mat_Painted.uasset"
+  }
+ ]
+}

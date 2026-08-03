@@ -1,0 +1,60 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "MetalFence",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/Fence/MetalFence.upk",
+ "source_sha256": "53f236e44978987de45c057af4e041e1d711777c5522a018faa3f345a7ae0605",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Fence/MetalFence.upk#GlassFence",
+   "object": "GlassFence",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/MetalFence/MetalFence/Texture2D/GlassFence.tga",
+   "extracted_sha256": "055a1142a6086c27226d5ef20280a4722c9f2ff0ba88ea7af91a019ff1e80445",
+   "output_file": "Content/Extracted/MaterialDatabase/MetalFence/MetalFence/Texture2D/GlassFence.tga",
+   "output_sha256": "055a1142a6086c27226d5ef20280a4722c9f2ff0ba88ea7af91a019ff1e80445",
+   "uasset": "Content/Imported/MaterialDatabase/MetalFence/GlassFence.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Fence/MetalFence.upk#MetalFence",
+   "object": "MetalFence",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/MetalFence/MetalFence/Texture2D/MetalFence.tga",
+   "extracted_sha256": "5d01eecb245e80061f2ec58e222730fbe1373df831cbc1227a55ff84ffba2c92",
+   "output_file": "Content/Extracted/MaterialDatabase/MetalFence/MetalFence/Texture2D/MetalFence.tga",
+   "output_sha256": "5d01eecb245e80061f2ec58e222730fbe1373df831cbc1227a55ff84ffba2c92",
+   "uasset": "Content/Imported/MaterialDatabase/MetalFence/MetalFence.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Fence/MetalFence.upk#MI_MetalFence_Glass",
+   "object": "MI_MetalFence_Glass",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "MetalFence_Glass",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/MetalFence/MetalFence/Texture2D/GlassFence.tga",
+   "extracted_sha256": "055a1142a6086c27226d5ef20280a4722c9f2ff0ba88ea7af91a019ff1e80445",
+   "output_file": "Content/Extracted/MaterialDatabase/MetalFence/MetalFence/Texture2D/GlassFence.tga",
+   "output_sha256": "055a1142a6086c27226d5ef20280a4722c9f2ff0ba88ea7af91a019ff1e80445",
+   "uasset": "Content/Imported/MaterialDatabase/MetalFence/MI_MetalFence_Glass.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Fence/MetalFence.upk#MI_MetalFence_mat",
+   "object": "MI_MetalFence_mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "MetalFence_mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/MetalFence/MetalFence/Texture2D/MetalFence.tga",
+   "extracted_sha256": "5d01eecb245e80061f2ec58e222730fbe1373df831cbc1227a55ff84ffba2c92",
+   "output_file": "Content/Extracted/MaterialDatabase/MetalFence/MetalFence/Texture2D/MetalFence.tga",
+   "output_sha256": "5d01eecb245e80061f2ec58e222730fbe1373df831cbc1227a55ff84ffba2c92",
+   "uasset": "Content/Imported/MaterialDatabase/MetalFence/MI_MetalFence_mat.uasset"
+  }
+ ]
+}

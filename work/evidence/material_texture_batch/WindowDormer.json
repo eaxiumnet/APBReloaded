@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "WindowDormer",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/FeatureMaterials/WindowDormer.upk",
+ "source_sha256": "03a6eef647afd345db982dcfae4d64a13b8dfcdbc6e849d2068ed46a9c123a3c",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/FeatureMaterials/WindowDormer.upk#MI_WindowDormer_MAT",
+   "object": "MI_WindowDormer_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WindowDormer_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WindowDormer/WindowDormer/Texture2D/WindowDormer_DiffSpec.tga",
+   "extracted_sha256": "5a8f323fec01a97b41309c55fe400d061ec36d60eade38eb7b2f2b47601d7420",
+   "output_file": "Content/Extracted/MaterialDatabase/WindowDormer/WindowDormer/Texture2D/WindowDormer_DiffSpec.tga",
+   "output_sha256": "5a8f323fec01a97b41309c55fe400d061ec36d60eade38eb7b2f2b47601d7420",
+   "uasset": "Content/Imported/MaterialDatabase/WindowDormer/MI_WindowDormer_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/FeatureMaterials/WindowDormer.upk#WindowDormer_DiffSpec",
+   "object": "WindowDormer_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WindowDormer/WindowDormer/Texture2D/WindowDormer_DiffSpec.tga",
+   "extracted_sha256": "5a8f323fec01a97b41309c55fe400d061ec36d60eade38eb7b2f2b47601d7420",
+   "output_file": "Content/Extracted/MaterialDatabase/WindowDormer/WindowDormer/Texture2D/WindowDormer_DiffSpec.tga",
+   "output_sha256": "5a8f323fec01a97b41309c55fe400d061ec36d60eade38eb7b2f2b47601d7420",
+   "uasset": "Content/Imported/MaterialDatabase/WindowDormer/WindowDormer_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/FeatureMaterials/WindowDormer.upk#WindowDormer_Norm",
+   "object": "WindowDormer_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WindowDormer/WindowDormer/Texture2D/WindowDormer_Norm.tga",
+   "extracted_sha256": "a4493fa734641f7d040177e795df8fe7474fa881da7d0813fdf53d29509c9b61",
+   "output_file": "Content/Extracted/MaterialDatabase/WindowDormer/WindowDormer/Texture2D/WindowDormer_Norm.tga",
+   "output_sha256": "a4493fa734641f7d040177e795df8fe7474fa881da7d0813fdf53d29509c9b61",
+   "uasset": "Content/Imported/MaterialDatabase/WindowDormer/WindowDormer_Norm.uasset"
+  }
+ ]
+}

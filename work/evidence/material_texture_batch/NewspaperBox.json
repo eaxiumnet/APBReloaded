@@ -1,0 +1,62 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "NewspaperBox",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/NewspaperBox.upk",
+ "source_sha256": "4e84b7278308249d6c82a6e6db0727f84f90a835a9733b52d2fbb292d6d44f3b",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/NewspaperBox.upk#MI_NewspaperBox_Damage_Mat",
+   "object": "MI_NewspaperBox_Damage_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "NewspaperBox_Damage_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/NewspaperBox/NewspaperBox/Texture2D/NewspaperBox_DiffSpec.tga",
+   "extracted_sha256": "d4ccd0801f0bc4a7d4ccb2e1d278e07d8304e2cb0cedb7481084a98ba82a59c4",
+   "output_file": "Content/Extracted/MaterialDatabase/NewspaperBox/NewspaperBox/Texture2D/NewspaperBox_DiffSpec.tga",
+   "output_sha256": "d4ccd0801f0bc4a7d4ccb2e1d278e07d8304e2cb0cedb7481084a98ba82a59c4",
+   "uasset": "Content/Imported/MaterialDatabase/NewspaperBox/MI_NewspaperBox_Damage_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/NewspaperBox.upk#MI_NewspaperBox_Mat",
+   "object": "MI_NewspaperBox_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "NewspaperBox_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/NewspaperBox/NewspaperBox/Texture2D/NewspaperBox_DiffSpec.tga",
+   "extracted_sha256": "d4ccd0801f0bc4a7d4ccb2e1d278e07d8304e2cb0cedb7481084a98ba82a59c4",
+   "output_file": "Content/Extracted/MaterialDatabase/NewspaperBox/NewspaperBox/Texture2D/NewspaperBox_DiffSpec.tga",
+   "output_sha256": "d4ccd0801f0bc4a7d4ccb2e1d278e07d8304e2cb0cedb7481084a98ba82a59c4",
+   "uasset": "Content/Imported/MaterialDatabase/NewspaperBox/MI_NewspaperBox_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/NewspaperBox.upk#NewspaperBox_DiffSpec",
+   "object": "NewspaperBox_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/NewspaperBox/NewspaperBox/Texture2D/NewspaperBox_DiffSpec.tga",
+   "extracted_sha256": "d4ccd0801f0bc4a7d4ccb2e1d278e07d8304e2cb0cedb7481084a98ba82a59c4",
+   "output_file": "Content/Extracted/MaterialDatabase/NewspaperBox/NewspaperBox/Texture2D/NewspaperBox_DiffSpec.tga",
+   "output_sha256": "d4ccd0801f0bc4a7d4ccb2e1d278e07d8304e2cb0cedb7481084a98ba82a59c4",
+   "uasset": "Content/Imported/MaterialDatabase/NewspaperBox/NewspaperBox_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/NewspaperBox.upk#NewspaperBox_Norm",
+   "object": "NewspaperBox_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/NewspaperBox/NewspaperBox/Texture2D/NewspaperBox_Norm.tga",
+   "extracted_sha256": "be13f6df98dd6147f7d7fbcb4a440389a75d87cd912f2aa0fc2400227aa9e416",
+   "output_file": "Content/Extracted/MaterialDatabase/NewspaperBox/NewspaperBox/Texture2D/NewspaperBox_Norm.tga",
+   "output_sha256": "be13f6df98dd6147f7d7fbcb4a440389a75d87cd912f2aa0fc2400227aa9e416",
+   "uasset": "Content/Imported/MaterialDatabase/NewspaperBox/NewspaperBox_Norm.uasset"
+  }
+ ]
+}

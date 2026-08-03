@@ -1,0 +1,35 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FinancialCutoutDevilDog",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCutoutDevilDog.upk",
+ "source_sha256": "ed3046788ebf6829fc61e7a202c47fb5265260279f99c999a488071a26581db0",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCutoutDevilDog.upk#FinancialCutoutDevilDog_DiffOpac",
+   "object": "FinancialCutoutDevilDog_DiffOpac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialCutoutDevilDog/FinancialCutoutDevilDog/Texture2D/FinancialCutoutDevilDog_DiffOpac.tga",
+   "extracted_sha256": "d6c600dfc0989c2e42f2e3ffbaf1b4ad5bb1b37216fc69bed06656c8f2146572",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialCutoutDevilDog/FinancialCutoutDevilDog/Texture2D/FinancialCutoutDevilDog_DiffOpac.tga",
+   "output_sha256": "d6c600dfc0989c2e42f2e3ffbaf1b4ad5bb1b37216fc69bed06656c8f2146572",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialCutoutDevilDog/FinancialCutoutDevilDog_DiffOpac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCutoutDevilDog.upk#MI_FinancialCutoutDevilDog_Mat",
+   "object": "MI_FinancialCutoutDevilDog_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialCutoutDevilDog_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialCutoutDevilDog/FinancialCutoutDevilDog/Texture2D/FinancialCutoutDevilDog_DiffOpac.tga",
+   "extracted_sha256": "d6c600dfc0989c2e42f2e3ffbaf1b4ad5bb1b37216fc69bed06656c8f2146572",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialCutoutDevilDog/FinancialCutoutDevilDog/Texture2D/FinancialCutoutDevilDog_DiffOpac.tga",
+   "output_sha256": "d6c600dfc0989c2e42f2e3ffbaf1b4ad5bb1b37216fc69bed06656c8f2146572",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialCutoutDevilDog/MI_FinancialCutoutDevilDog_Mat.uasset"
+  }
+ ]
+}

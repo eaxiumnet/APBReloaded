@@ -1,0 +1,142 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "NewsStand",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/NewsStand.upk",
+ "source_sha256": "5f93c47a41d3e95c62bb1c5488781382f52bab0c45336b46fb0b392f3b908f5f",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/NewsStand.upk#MI_NewsStand_Damage_Mat",
+   "object": "MI_NewsStand_Damage_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "NewsStand_Damage_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/NewsStand/NewsStand/Texture2D/NewsStand_DiffSpec.tga",
+   "extracted_sha256": "b80af88925d5c341cfdae6fe6567524b6135a51cd988d6a51c93324de038dea2",
+   "output_file": "Content/Extracted/MaterialDatabase/NewsStand/NewsStand/Texture2D/NewsStand_DiffSpec.tga",
+   "output_sha256": "b80af88925d5c341cfdae6fe6567524b6135a51cd988d6a51c93324de038dea2",
+   "uasset": "Content/Imported/MaterialDatabase/NewsStand/MI_NewsStand_Damage_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/NewsStand.upk#MI_NewsStand_Massive_Damage_Mat",
+   "object": "MI_NewsStand_Massive_Damage_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "NewsStand_Massive_Damage_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/NewsStand/NewsStand/Texture2D/NewsStand_MassiveDiff1.tga",
+   "extracted_sha256": "d08650b41a7896909c78aa0a99ec35a8e76417ef58f4435837afef77f8380ef1",
+   "output_file": "Content/Extracted/MaterialDatabase/NewsStand/NewsStand/Texture2D/NewsStand_MassiveDiff1.tga",
+   "output_sha256": "d08650b41a7896909c78aa0a99ec35a8e76417ef58f4435837afef77f8380ef1",
+   "uasset": "Content/Imported/MaterialDatabase/NewsStand/MI_NewsStand_Massive_Damage_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/NewsStand.upk#MI_NewsStand_Massive_Mat",
+   "object": "MI_NewsStand_Massive_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "NewsStand_Massive_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/NewsStand/NewsStand/Texture2D/NewsStand_MassiveDiff1.tga",
+   "extracted_sha256": "d08650b41a7896909c78aa0a99ec35a8e76417ef58f4435837afef77f8380ef1",
+   "output_file": "Content/Extracted/MaterialDatabase/NewsStand/NewsStand/Texture2D/NewsStand_MassiveDiff1.tga",
+   "output_sha256": "d08650b41a7896909c78aa0a99ec35a8e76417ef58f4435837afef77f8380ef1",
+   "uasset": "Content/Imported/MaterialDatabase/NewsStand/MI_NewsStand_Massive_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/NewsStand.upk#MI_NewsStand_MAT",
+   "object": "MI_NewsStand_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "NewsStand_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/NewsStand/NewsStand/Texture2D/NewsStand_DiffSpec.tga",
+   "extracted_sha256": "b80af88925d5c341cfdae6fe6567524b6135a51cd988d6a51c93324de038dea2",
+   "output_file": "Content/Extracted/MaterialDatabase/NewsStand/NewsStand/Texture2D/NewsStand_DiffSpec.tga",
+   "output_sha256": "b80af88925d5c341cfdae6fe6567524b6135a51cd988d6a51c93324de038dea2",
+   "uasset": "Content/Imported/MaterialDatabase/NewsStand/MI_NewsStand_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/NewsStand.upk#NewsStand_DiffSpec",
+   "object": "NewsStand_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/NewsStand/NewsStand/Texture2D/NewsStand_DiffSpec.tga",
+   "extracted_sha256": "b80af88925d5c341cfdae6fe6567524b6135a51cd988d6a51c93324de038dea2",
+   "output_file": "Content/Extracted/MaterialDatabase/NewsStand/NewsStand/Texture2D/NewsStand_DiffSpec.tga",
+   "output_sha256": "b80af88925d5c341cfdae6fe6567524b6135a51cd988d6a51c93324de038dea2",
+   "uasset": "Content/Imported/MaterialDatabase/NewsStand/NewsStand_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/NewsStand.upk#NewsStand_Emis",
+   "object": "NewsStand_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/NewsStand/NewsStand/Texture2D/NewsStand_Emis.tga",
+   "extracted_sha256": "dd7c00c52804cf79fc9bac8f1cccefd34638c87f789589ab696e971ea69618c5",
+   "output_file": "Content/Extracted/MaterialDatabase/NewsStand/NewsStand/Texture2D/NewsStand_Emis.tga",
+   "output_sha256": "dd7c00c52804cf79fc9bac8f1cccefd34638c87f789589ab696e971ea69618c5",
+   "uasset": "Content/Imported/MaterialDatabase/NewsStand/NewsStand_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/NewsStand.upk#NewsStand_MassiveDiff1",
+   "object": "NewsStand_MassiveDiff1",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/NewsStand/NewsStand/Texture2D/NewsStand_MassiveDiff1.tga",
+   "extracted_sha256": "d08650b41a7896909c78aa0a99ec35a8e76417ef58f4435837afef77f8380ef1",
+   "output_file": "Content/Extracted/MaterialDatabase/NewsStand/NewsStand/Texture2D/NewsStand_MassiveDiff1.tga",
+   "output_sha256": "d08650b41a7896909c78aa0a99ec35a8e76417ef58f4435837afef77f8380ef1",
+   "uasset": "Content/Imported/MaterialDatabase/NewsStand/NewsStand_MassiveDiff1.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/NewsStand.upk#NewsStand_MassiveEmis1",
+   "object": "NewsStand_MassiveEmis1",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/NewsStand/NewsStand/Texture2D/NewsStand_MassiveEmis1.tga",
+   "extracted_sha256": "5fae10408a24b8ac14ce01be9afc57f41722fc289206a73e428a8b1de4b28b5c",
+   "output_file": "Content/Extracted/MaterialDatabase/NewsStand/NewsStand/Texture2D/NewsStand_MassiveEmis1.tga",
+   "output_sha256": "5fae10408a24b8ac14ce01be9afc57f41722fc289206a73e428a8b1de4b28b5c",
+   "uasset": "Content/Imported/MaterialDatabase/NewsStand/NewsStand_MassiveEmis1.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/NewsStand.upk#NewsStand_MassiveNorm1",
+   "object": "NewsStand_MassiveNorm1",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/NewsStand/NewsStand/Texture2D/NewsStand_MassiveNorm1.tga",
+   "extracted_sha256": "3977cd4434d7bb9ca7c16e21dd320e6be1f56b7f9aee0f166ded58e1c2432cda",
+   "output_file": "Content/Extracted/MaterialDatabase/NewsStand/NewsStand/Texture2D/NewsStand_MassiveNorm1.tga",
+   "output_sha256": "3977cd4434d7bb9ca7c16e21dd320e6be1f56b7f9aee0f166ded58e1c2432cda",
+   "uasset": "Content/Imported/MaterialDatabase/NewsStand/NewsStand_MassiveNorm1.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/NewsStand.upk#NewsStand_Norm",
+   "object": "NewsStand_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/NewsStand/NewsStand/Texture2D/NewsStand_Norm.tga",
+   "extracted_sha256": "d541c45a8a5b819f85b6b0c4b08c67f34885c42e98b3acddef5f9083fe91ca57",
+   "output_file": "Content/Extracted/MaterialDatabase/NewsStand/NewsStand/Texture2D/NewsStand_Norm.tga",
+   "output_sha256": "d541c45a8a5b819f85b6b0c4b08c67f34885c42e98b3acddef5f9083fe91ca57",
+   "uasset": "Content/Imported/MaterialDatabase/NewsStand/NewsStand_Norm.uasset"
+  }
+ ]
+}

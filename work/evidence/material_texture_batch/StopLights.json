@@ -1,0 +1,106 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "StopLights",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/StopLights.upk",
+ "source_sha256": "0e53e9b0709f5abc5253a026fd3a09550bb702727dd1b4f976cd9cf2130d5d95",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StopLights.upk#MI_StopLights_Damage_Mat",
+   "object": "MI_StopLights_Damage_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StopLights_Damage_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StopLights/StopLights/Texture2D/StopLightDouble_DiffSpec.tga",
+   "extracted_sha256": "5ccd15d9d2bdc9bcfe2bb7e81558e8ab7e4d0c588088fd40ebb981dc3a388a7d",
+   "output_file": "Content/Extracted/MaterialDatabase/StopLights/StopLights/Texture2D/StopLightDouble_DiffSpec.tga",
+   "output_sha256": "5ccd15d9d2bdc9bcfe2bb7e81558e8ab7e4d0c588088fd40ebb981dc3a388a7d",
+   "uasset": "Content/Imported/MaterialDatabase/StopLights/MI_StopLights_Damage_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StopLights.upk#MI_StopLights_Mat",
+   "object": "MI_StopLights_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StopLights_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StopLights/StopLights/Texture2D/StopLightDouble_DiffSpec.tga",
+   "extracted_sha256": "5ccd15d9d2bdc9bcfe2bb7e81558e8ab7e4d0c588088fd40ebb981dc3a388a7d",
+   "output_file": "Content/Extracted/MaterialDatabase/StopLights/StopLights/Texture2D/StopLightDouble_DiffSpec.tga",
+   "output_sha256": "5ccd15d9d2bdc9bcfe2bb7e81558e8ab7e4d0c588088fd40ebb981dc3a388a7d",
+   "uasset": "Content/Imported/MaterialDatabase/StopLights/MI_StopLights_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StopLights.upk#MI_StopLights_Mat_instance",
+   "object": "MI_StopLights_Mat_instance",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StopLights_Mat_instance",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StopLights/StopLights/Texture2D/StopLightDouble_DiffSpec.tga",
+   "extracted_sha256": "5ccd15d9d2bdc9bcfe2bb7e81558e8ab7e4d0c588088fd40ebb981dc3a388a7d",
+   "output_file": "Content/Extracted/MaterialDatabase/StopLights/StopLights/Texture2D/StopLightDouble_DiffSpec.tga",
+   "output_sha256": "5ccd15d9d2bdc9bcfe2bb7e81558e8ab7e4d0c588088fd40ebb981dc3a388a7d",
+   "uasset": "Content/Imported/MaterialDatabase/StopLights/MI_StopLights_Mat_instance.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StopLights.upk#StopLightDouble_DiffSpec",
+   "object": "StopLightDouble_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StopLights/StopLights/Texture2D/StopLightDouble_DiffSpec.tga",
+   "extracted_sha256": "5ccd15d9d2bdc9bcfe2bb7e81558e8ab7e4d0c588088fd40ebb981dc3a388a7d",
+   "output_file": "Content/Extracted/MaterialDatabase/StopLights/StopLights/Texture2D/StopLightDouble_DiffSpec.tga",
+   "output_sha256": "5ccd15d9d2bdc9bcfe2bb7e81558e8ab7e4d0c588088fd40ebb981dc3a388a7d",
+   "uasset": "Content/Imported/MaterialDatabase/StopLights/StopLightDouble_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StopLights.upk#StopLightDouble_Emis",
+   "object": "StopLightDouble_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StopLights/StopLights/Texture2D/StopLightDouble_Emis.tga",
+   "extracted_sha256": "0c139f5a4307712ef82f4916ab535dcc3c56e802043d669e90442e90f436e23b",
+   "output_file": "Content/Extracted/MaterialDatabase/StopLights/StopLights/Texture2D/StopLightDouble_Emis.tga",
+   "output_sha256": "0c139f5a4307712ef82f4916ab535dcc3c56e802043d669e90442e90f436e23b",
+   "uasset": "Content/Imported/MaterialDatabase/StopLights/StopLightDouble_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StopLights.upk#StopLightDouble_Norm",
+   "object": "StopLightDouble_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StopLights/StopLights/Texture2D/StopLightDouble_Norm.tga",
+   "extracted_sha256": "4430afe672642d7c8a76bcc8697bc5bde24b45236cb665ebaffae3187652602c",
+   "output_file": "Content/Extracted/MaterialDatabase/StopLights/StopLights/Texture2D/StopLightDouble_Norm.tga",
+   "output_sha256": "4430afe672642d7c8a76bcc8697bc5bde24b45236cb665ebaffae3187652602c",
+   "uasset": "Content/Imported/MaterialDatabase/StopLights/StopLightDouble_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StopLights.upk#StopLightDouble_Opac",
+   "object": "StopLightDouble_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StopLights/StopLights/Texture2D/StopLightDouble_Opac.tga",
+   "extracted_sha256": "97a8f55cdd117ce2161235d96c1849f484d9e11da32e51b370c651cd5293f1f5",
+   "output_file": "Content/Extracted/MaterialDatabase/StopLights/StopLights/Texture2D/StopLightDouble_Opac.tga",
+   "output_sha256": "97a8f55cdd117ce2161235d96c1849f484d9e11da32e51b370c651cd5293f1f5",
+   "uasset": "Content/Imported/MaterialDatabase/StopLights/StopLightDouble_Opac.uasset"
+  }
+ ]
+}

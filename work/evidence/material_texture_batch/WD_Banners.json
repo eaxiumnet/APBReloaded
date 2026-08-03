@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "WD_Banners",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/WaterfrontDistrict/Signs/WD_Banners.upk",
+ "source_sha256": "f58109f21847de62ce6b79e3a7c06fb76a346619fc4ff9668f055a9a0635b3d1",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/Signs/WD_Banners.upk#Banners_New_Texture_Emis",
+   "object": "Banners_New_Texture_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WD_Banners/WD_Banners/Texture2D/Banners_New_Texture_Emis.tga",
+   "extracted_sha256": "9e0ec5d2031275bd8acadc541483b22a7cc55cd0d839a927d34ef45f06a9add2",
+   "output_file": "Content/Extracted/MaterialDatabase/WD_Banners/WD_Banners/Texture2D/Banners_New_Texture_Emis.tga",
+   "output_sha256": "9e0ec5d2031275bd8acadc541483b22a7cc55cd0d839a927d34ef45f06a9add2",
+   "uasset": "Content/Imported/MaterialDatabase/WD_Banners/Banners_New_Texture_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/Signs/WD_Banners.upk#Banners_New_Texture_Wind_NORM",
+   "object": "Banners_New_Texture_Wind_NORM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WD_Banners/WD_Banners/Texture2D/Banners_New_Texture_Wind_NORM.tga",
+   "extracted_sha256": "add18dbb086785881f5432826fb635d9101df468b9234aa1eaac567ca6d5783f",
+   "output_file": "Content/Extracted/MaterialDatabase/WD_Banners/WD_Banners/Texture2D/Banners_New_Texture_Wind_NORM.tga",
+   "output_sha256": "add18dbb086785881f5432826fb635d9101df468b9234aa1eaac567ca6d5783f",
+   "uasset": "Content/Imported/MaterialDatabase/WD_Banners/Banners_New_Texture_Wind_NORM.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/Signs/WD_Banners.upk#MI_Hanging_Banners_MAT",
+   "object": "MI_Hanging_Banners_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Hanging_Banners_MAT",
+   "texture_roles": [
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WD_Banners/WD_Banners/Texture2D/Banners_New_Texture_Wind_NORM.tga",
+   "extracted_sha256": "add18dbb086785881f5432826fb635d9101df468b9234aa1eaac567ca6d5783f",
+   "output_file": "Content/Extracted/MaterialDatabase/WD_Banners/WD_Banners/Texture2D/Banners_New_Texture_Wind_NORM.tga",
+   "output_sha256": "add18dbb086785881f5432826fb635d9101df468b9234aa1eaac567ca6d5783f",
+   "uasset": "Content/Imported/MaterialDatabase/WD_Banners/MI_Hanging_Banners_MAT.uasset"
+  }
+ ]
+}

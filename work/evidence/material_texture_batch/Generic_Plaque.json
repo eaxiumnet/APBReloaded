@@ -1,0 +1,60 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Generic_Plaque",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericDistrict/Generic_Plaque.upk",
+ "source_sha256": "30b27c31678fb793f6fb6fdb3749d054a14ce1ffa110ee98c3e7ed1ca53b44d4",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericDistrict/Generic_Plaque.upk#MI_RWSD_Plaque_Material",
+   "object": "MI_RWSD_Plaque_Material",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RWSD_Plaque_Material",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Specular"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Generic_Plaque/Generic_Plaque/Texture2D/RWSD_Plague_diffuse.tga",
+   "extracted_sha256": "62c675feea1f473db2cb5f3904d32669146ac68aa31b77e2e4934fdecabd0f3c",
+   "output_file": "Content/Extracted/MaterialDatabase/Generic_Plaque/Generic_Plaque/Texture2D/RWSD_Plague_diffuse.tga",
+   "output_sha256": "62c675feea1f473db2cb5f3904d32669146ac68aa31b77e2e4934fdecabd0f3c",
+   "uasset": "Content/Imported/MaterialDatabase/Generic_Plaque/MI_RWSD_Plaque_Material.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericDistrict/Generic_Plaque.upk#RWSD_Plague_diffuse",
+   "object": "RWSD_Plague_diffuse",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Generic_Plaque/Generic_Plaque/Texture2D/RWSD_Plague_diffuse.tga",
+   "extracted_sha256": "62c675feea1f473db2cb5f3904d32669146ac68aa31b77e2e4934fdecabd0f3c",
+   "output_file": "Content/Extracted/MaterialDatabase/Generic_Plaque/Generic_Plaque/Texture2D/RWSD_Plague_diffuse.tga",
+   "output_sha256": "62c675feea1f473db2cb5f3904d32669146ac68aa31b77e2e4934fdecabd0f3c",
+   "uasset": "Content/Imported/MaterialDatabase/Generic_Plaque/RWSD_Plague_diffuse.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericDistrict/Generic_Plaque.upk#RWSD_Plague_Normal",
+   "object": "RWSD_Plague_Normal",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Generic_Plaque/Generic_Plaque/Texture2D/RWSD_Plague_Normal.tga",
+   "extracted_sha256": "bf22eed6d2113a4ac883fb5ebbeee02f2b99e3082d28f6827f763acbab886d9c",
+   "output_file": "Content/Extracted/MaterialDatabase/Generic_Plaque/Generic_Plaque/Texture2D/RWSD_Plague_Normal.tga",
+   "output_sha256": "bf22eed6d2113a4ac883fb5ebbeee02f2b99e3082d28f6827f763acbab886d9c",
+   "uasset": "Content/Imported/MaterialDatabase/Generic_Plaque/RWSD_Plague_Normal.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericDistrict/Generic_Plaque.upk#RWSD_Plague_Specular",
+   "object": "RWSD_Plague_Specular",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Generic_Plaque/Generic_Plaque/Texture2D/RWSD_Plague_Specular.tga",
+   "extracted_sha256": "740f20a0ea9b0de767e3bac1f6409acfd837912f8410ff5484a07873f3f16f62",
+   "output_file": "Content/Extracted/MaterialDatabase/Generic_Plaque/Generic_Plaque/Texture2D/RWSD_Plague_Specular.tga",
+   "output_sha256": "740f20a0ea9b0de767e3bac1f6409acfd837912f8410ff5484a07873f3f16f62",
+   "uasset": "Content/Imported/MaterialDatabase/Generic_Plaque/RWSD_Plague_Specular.uasset"
+  }
+ ]
+}

@@ -1,0 +1,91 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Balcony",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/Balcony/Balcony.upk",
+ "source_sha256": "6cdc16016964e3d20e7be9e68764257b43b24b01922e3432558e4e48fc55f760",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Balcony/Balcony.upk#Balcony_05_DiffSpec",
+   "object": "Balcony_05_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Balcony/Balcony/Texture2D/Balcony_05_DiffSpec.tga",
+   "extracted_sha256": "088c099f1133696653b4ee96e0f18e74123f54f63128e8967d268458deab126c",
+   "output_file": "Content/Extracted/MaterialDatabase/Balcony/Balcony/Texture2D/Balcony_05_DiffSpec.tga",
+   "output_sha256": "088c099f1133696653b4ee96e0f18e74123f54f63128e8967d268458deab126c",
+   "uasset": "Content/Imported/MaterialDatabase/Balcony/Balcony_05_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Balcony/Balcony.upk#Balcony_05_NormAlpha",
+   "object": "Balcony_05_NormAlpha",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Balcony/Balcony/Texture2D/Balcony_05_NormAlpha.tga",
+   "extracted_sha256": "7ae178d8b91c8614a4f613132658c04af5b271e77dd842e4bdca23ab1a7ef0dc",
+   "output_file": "Content/Extracted/MaterialDatabase/Balcony/Balcony/Texture2D/Balcony_05_NormAlpha.tga",
+   "output_sha256": "7ae178d8b91c8614a4f613132658c04af5b271e77dd842e4bdca23ab1a7ef0dc",
+   "uasset": "Content/Imported/MaterialDatabase/Balcony/Balcony_05_NormAlpha.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Balcony/Balcony.upk#Balcony_06_NormAlpha",
+   "object": "Balcony_06_NormAlpha",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Balcony/Balcony/Texture2D/Balcony_06_NormAlpha.tga",
+   "extracted_sha256": "1245246c5a022c5ed4e5ebfb469663cec9d568bd166f83b5e0fa25084fdaa904",
+   "output_file": "Content/Extracted/MaterialDatabase/Balcony/Balcony/Texture2D/Balcony_06_NormAlpha.tga",
+   "output_sha256": "1245246c5a022c5ed4e5ebfb469663cec9d568bd166f83b5e0fa25084fdaa904",
+   "uasset": "Content/Imported/MaterialDatabase/Balcony/Balcony_06_NormAlpha.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Balcony/Balcony.upk#MI_Balcony_Blue",
+   "object": "MI_Balcony_Blue",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Balcony_Blue",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Balcony/Balcony/Texture2D/Balcony_05_DiffSpec.tga",
+   "extracted_sha256": "088c099f1133696653b4ee96e0f18e74123f54f63128e8967d268458deab126c",
+   "output_file": "Content/Extracted/MaterialDatabase/Balcony/Balcony/Texture2D/Balcony_05_DiffSpec.tga",
+   "output_sha256": "088c099f1133696653b4ee96e0f18e74123f54f63128e8967d268458deab126c",
+   "uasset": "Content/Imported/MaterialDatabase/Balcony/MI_Balcony_Blue.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Balcony/Balcony.upk#MI_Balcony_Grey",
+   "object": "MI_Balcony_Grey",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Balcony_Grey",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Balcony/Balcony/Texture2D/Balcony_05_DiffSpec.tga",
+   "extracted_sha256": "088c099f1133696653b4ee96e0f18e74123f54f63128e8967d268458deab126c",
+   "output_file": "Content/Extracted/MaterialDatabase/Balcony/Balcony/Texture2D/Balcony_05_DiffSpec.tga",
+   "output_sha256": "088c099f1133696653b4ee96e0f18e74123f54f63128e8967d268458deab126c",
+   "uasset": "Content/Imported/MaterialDatabase/Balcony/MI_Balcony_Grey.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Balcony/Balcony.upk#MI_Balcony_PARENT",
+   "object": "MI_Balcony_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Balcony_PARENT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Balcony/Balcony/Texture2D/Balcony_05_DiffSpec.tga",
+   "extracted_sha256": "088c099f1133696653b4ee96e0f18e74123f54f63128e8967d268458deab126c",
+   "output_file": "Content/Extracted/MaterialDatabase/Balcony/Balcony/Texture2D/Balcony_05_DiffSpec.tga",
+   "output_sha256": "088c099f1133696653b4ee96e0f18e74123f54f63128e8967d268458deab126c",
+   "uasset": "Content/Imported/MaterialDatabase/Balcony/MI_Balcony_PARENT.uasset"
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "AmmoVendingMachine",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/PropMaterials/AmmoVendingMachine.upk",
+ "source_sha256": "c36f963cf1ea7cb714f665263786cef5bf4770e93251c54beb96196001a482f7",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/AmmoVendingMachine.upk#AmmoVendingMachine_DiffEmis",
+   "object": "AmmoVendingMachine_DiffEmis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/AmmoVendingMachine/AmmoVendingMachine/Texture2D/AmmoVendingMachine_DiffEmis.tga",
+   "extracted_sha256": "45a2401aa7c4502ef154312f5be089d909926d8a648b19c42ac7b0bab3617901",
+   "output_file": "Content/Extracted/MaterialDatabase/AmmoVendingMachine/AmmoVendingMachine/Texture2D/AmmoVendingMachine_DiffEmis.tga",
+   "output_sha256": "45a2401aa7c4502ef154312f5be089d909926d8a648b19c42ac7b0bab3617901",
+   "uasset": "Content/Imported/MaterialDatabase/AmmoVendingMachine/AmmoVendingMachine_DiffEmis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/AmmoVendingMachine.upk#MI_AmmoVendingMachine",
+   "object": "MI_AmmoVendingMachine",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "AmmoVendingMachine",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/AmmoVendingMachine/AmmoVendingMachine/Texture2D/AmmoVendingMachine_DiffEmis.tga",
+   "extracted_sha256": "45a2401aa7c4502ef154312f5be089d909926d8a648b19c42ac7b0bab3617901",
+   "output_file": "Content/Extracted/MaterialDatabase/AmmoVendingMachine/AmmoVendingMachine/Texture2D/AmmoVendingMachine_DiffEmis.tga",
+   "output_sha256": "45a2401aa7c4502ef154312f5be089d909926d8a648b19c42ac7b0bab3617901",
+   "uasset": "Content/Imported/MaterialDatabase/AmmoVendingMachine/MI_AmmoVendingMachine.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/AmmoVendingMachine.upk#MI_AmmoVendingMachine_BeaconBash_MAT",
+   "object": "MI_AmmoVendingMachine_BeaconBash_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "AmmoVendingMachine_BeaconBash_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/AmmoVendingMachine/AmmoVendingMachine/Texture2D/AmmoVendingMachine_DiffEmis.tga",
+   "extracted_sha256": "45a2401aa7c4502ef154312f5be089d909926d8a648b19c42ac7b0bab3617901",
+   "output_file": "Content/Extracted/MaterialDatabase/AmmoVendingMachine/AmmoVendingMachine/Texture2D/AmmoVendingMachine_DiffEmis.tga",
+   "output_sha256": "45a2401aa7c4502ef154312f5be089d909926d8a648b19c42ac7b0bab3617901",
+   "uasset": "Content/Imported/MaterialDatabase/AmmoVendingMachine/MI_AmmoVendingMachine_BeaconBash_MAT.uasset"
+  }
+ ]
+}

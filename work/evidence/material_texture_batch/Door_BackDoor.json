@@ -1,0 +1,101 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Door_BackDoor",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/FeatureMaterials/Door_BackDoor.upk",
+ "source_sha256": "4ec182f2acf1381064939bb9966f6b206eb69b78202ab8ce783747d5f5020ce0",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Door_BackDoor.upk#BackDoor_Damage_Norm",
+   "object": "BackDoor_Damage_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Door_BackDoor/Door_BackDoor/Texture2D/BackDoor_Damage_Norm.tga",
+   "extracted_sha256": "0fbf41789473fcc8a6feb6deb6c5ca61c58b401e9335398078c9126060ddabbe",
+   "output_file": "Content/Extracted/MaterialDatabase/Door_BackDoor/Door_BackDoor/Texture2D/BackDoor_Damage_Norm.tga",
+   "output_sha256": "0fbf41789473fcc8a6feb6deb6c5ca61c58b401e9335398078c9126060ddabbe",
+   "uasset": "Content/Imported/MaterialDatabase/Door_BackDoor/BackDoor_Damage_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Door_BackDoor.upk#BackDoor_DiffSpec",
+   "object": "BackDoor_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Door_BackDoor/Door_BackDoor/Texture2D/BackDoor_DiffSpec.tga",
+   "extracted_sha256": "b5253738e7e367c7a6a928c66d0c301ddeceab6da12bb32cd0589c24ba393ab3",
+   "output_file": "Content/Extracted/MaterialDatabase/Door_BackDoor/Door_BackDoor/Texture2D/BackDoor_DiffSpec.tga",
+   "output_sha256": "b5253738e7e367c7a6a928c66d0c301ddeceab6da12bb32cd0589c24ba393ab3",
+   "uasset": "Content/Imported/MaterialDatabase/Door_BackDoor/BackDoor_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Door_BackDoor.upk#BackDoor_Emis",
+   "object": "BackDoor_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Door_BackDoor/Door_BackDoor/Texture2D/BackDoor_Emis.tga",
+   "extracted_sha256": "2b6e552bf341f4cc12e069590d841e2609ad7aedfd64254b3126f0c19f9b63cf",
+   "output_file": "Content/Extracted/MaterialDatabase/Door_BackDoor/Door_BackDoor/Texture2D/BackDoor_Emis.tga",
+   "output_sha256": "2b6e552bf341f4cc12e069590d841e2609ad7aedfd64254b3126f0c19f9b63cf",
+   "uasset": "Content/Imported/MaterialDatabase/Door_BackDoor/BackDoor_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Door_BackDoor.upk#BackDoor_Norm",
+   "object": "BackDoor_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Door_BackDoor/Door_BackDoor/Texture2D/BackDoor_Norm.tga",
+   "extracted_sha256": "14f6c10584eef33a302151b64cc2d1baefcc8e84dc211872aa0e66c4efb860ec",
+   "output_file": "Content/Extracted/MaterialDatabase/Door_BackDoor/Door_BackDoor/Texture2D/BackDoor_Norm.tga",
+   "output_sha256": "14f6c10584eef33a302151b64cc2d1baefcc8e84dc211872aa0e66c4efb860ec",
+   "uasset": "Content/Imported/MaterialDatabase/Door_BackDoor/BackDoor_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Door_BackDoor.upk#BackDoor_Opac",
+   "object": "BackDoor_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Door_BackDoor/Door_BackDoor/Texture2D/BackDoor_Opac.tga",
+   "extracted_sha256": "9597bc5fc0f46294f1de1253794bb821befc1f4bf812e309518bada5bb3053a0",
+   "output_file": "Content/Extracted/MaterialDatabase/Door_BackDoor/Door_BackDoor/Texture2D/BackDoor_Opac.tga",
+   "output_sha256": "9597bc5fc0f46294f1de1253794bb821befc1f4bf812e309518bada5bb3053a0",
+   "uasset": "Content/Imported/MaterialDatabase/Door_BackDoor/BackDoor_Opac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Door_BackDoor.upk#MI_BackDoor_Damage_Mat",
+   "object": "MI_BackDoor_Damage_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "BackDoor_Damage_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Door_BackDoor/Door_BackDoor/Texture2D/BackDoor_DiffSpec.tga",
+   "extracted_sha256": "b5253738e7e367c7a6a928c66d0c301ddeceab6da12bb32cd0589c24ba393ab3",
+   "output_file": "Content/Extracted/MaterialDatabase/Door_BackDoor/Door_BackDoor/Texture2D/BackDoor_DiffSpec.tga",
+   "output_sha256": "b5253738e7e367c7a6a928c66d0c301ddeceab6da12bb32cd0589c24ba393ab3",
+   "uasset": "Content/Imported/MaterialDatabase/Door_BackDoor/MI_BackDoor_Damage_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Door_BackDoor.upk#MI_BackDoor_Mat",
+   "object": "MI_BackDoor_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "BackDoor_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Door_BackDoor/Door_BackDoor/Texture2D/BackDoor_DiffSpec.tga",
+   "extracted_sha256": "b5253738e7e367c7a6a928c66d0c301ddeceab6da12bb32cd0589c24ba393ab3",
+   "output_file": "Content/Extracted/MaterialDatabase/Door_BackDoor/Door_BackDoor/Texture2D/BackDoor_DiffSpec.tga",
+   "output_sha256": "b5253738e7e367c7a6a928c66d0c301ddeceab6da12bb32cd0589c24ba393ab3",
+   "uasset": "Content/Imported/MaterialDatabase/Door_BackDoor/MI_BackDoor_Mat.uasset"
+  }
+ ]
+}

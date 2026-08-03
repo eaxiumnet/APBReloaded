@@ -1,0 +1,861 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "WallTiles",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk",
+ "source_sha256": "7c168bf45a35d442fbd24324e19cdc9a3aeea0ee3094950c482208e2ae41af06",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_Granite_Baked",
+   "object": "MI_Granite_Baked",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Granite_Baked",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Granite_DiffSpec256x256.tga",
+   "extracted_sha256": "0662b3b6b94ba01fbae0493a837a61bfaf760f37be770394b7d2f6cf59acc77e",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Granite_DiffSpec256x256.tga",
+   "output_sha256": "0662b3b6b94ba01fbae0493a837a61bfaf760f37be770394b7d2f6cf59acc77e",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_Granite_Baked.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_Granite_RectV_Grey",
+   "object": "MI_Granite_RectV_Grey",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Granite_RectV_Grey",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_RectV_Granite_01_256x256.tga",
+   "extracted_sha256": "0bd50dd163580838dc6f2e2aab182925e0690c4540a46a9e2c546abf63ebe8a4",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_RectV_Granite_01_256x256.tga",
+   "output_sha256": "0bd50dd163580838dc6f2e2aab182925e0690c4540a46a9e2c546abf63ebe8a4",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_Granite_RectV_Grey.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_Granite_RectV_Grey_Graffiti",
+   "object": "MI_Granite_RectV_Grey_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Granite_RectV_Grey_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_RectV_Granite_01_256x256.tga",
+   "extracted_sha256": "0bd50dd163580838dc6f2e2aab182925e0690c4540a46a9e2c546abf63ebe8a4",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_RectV_Granite_01_256x256.tga",
+   "output_sha256": "0bd50dd163580838dc6f2e2aab182925e0690c4540a46a9e2c546abf63ebe8a4",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_Granite_RectV_Grey_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_Granite_RectVSmall_Grey",
+   "object": "MI_Granite_RectVSmall_Grey",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Granite_RectVSmall_Grey",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tiles_Rect01_NormMask_256x256.tga",
+   "extracted_sha256": "51299b24f96fd9828128fa3d0a16183689c3eceee3d3e6666f67e4a0b7d81d22",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tiles_Rect01_NormMask_256x256.tga",
+   "output_sha256": "51299b24f96fd9828128fa3d0a16183689c3eceee3d3e6666f67e4a0b7d81d22",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_Granite_RectVSmall_Grey.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_Granite_RectVSmall_Grey_Graffiti",
+   "object": "MI_Granite_RectVSmall_Grey_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Granite_RectVSmall_Grey_Graffiti",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tiles_Rect01_NormMask_256x256.tga",
+   "extracted_sha256": "51299b24f96fd9828128fa3d0a16183689c3eceee3d3e6666f67e4a0b7d81d22",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tiles_Rect01_NormMask_256x256.tga",
+   "output_sha256": "51299b24f96fd9828128fa3d0a16183689c3eceee3d3e6666f67e4a0b7d81d22",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_Granite_RectVSmall_Grey_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_Granite_Square2_Grey",
+   "object": "MI_Granite_Square2_Grey",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Granite_Square2_Grey",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Granite_DiffSpec256x256.tga",
+   "extracted_sha256": "0662b3b6b94ba01fbae0493a837a61bfaf760f37be770394b7d2f6cf59acc77e",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Granite_DiffSpec256x256.tga",
+   "output_sha256": "0662b3b6b94ba01fbae0493a837a61bfaf760f37be770394b7d2f6cf59acc77e",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_Granite_Square2_Grey.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_Granite_Square2_Grey_Graffiti",
+   "object": "MI_Granite_Square2_Grey_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Granite_Square2_Grey_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Granite_DiffSpec256x256.tga",
+   "extracted_sha256": "0662b3b6b94ba01fbae0493a837a61bfaf760f37be770394b7d2f6cf59acc77e",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Granite_DiffSpec256x256.tga",
+   "output_sha256": "0662b3b6b94ba01fbae0493a837a61bfaf760f37be770394b7d2f6cf59acc77e",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_Granite_Square2_Grey_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_Granite_Square_Beige",
+   "object": "MI_Granite_Square_Beige",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Granite_Square_Beige",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Granite_DiffSpec256x256.tga",
+   "extracted_sha256": "0662b3b6b94ba01fbae0493a837a61bfaf760f37be770394b7d2f6cf59acc77e",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Granite_DiffSpec256x256.tga",
+   "output_sha256": "0662b3b6b94ba01fbae0493a837a61bfaf760f37be770394b7d2f6cf59acc77e",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_Granite_Square_Beige.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_Granite_Square_Beige_Graffiti",
+   "object": "MI_Granite_Square_Beige_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Granite_Square_Beige_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Granite_DiffSpec256x256.tga",
+   "extracted_sha256": "0662b3b6b94ba01fbae0493a837a61bfaf760f37be770394b7d2f6cf59acc77e",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Granite_DiffSpec256x256.tga",
+   "output_sha256": "0662b3b6b94ba01fbae0493a837a61bfaf760f37be770394b7d2f6cf59acc77e",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_Granite_Square_Beige_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_Granite_Square_Blue",
+   "object": "MI_Granite_Square_Blue",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Granite_Square_Blue",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Granite_DiffSpec256x256.tga",
+   "extracted_sha256": "0662b3b6b94ba01fbae0493a837a61bfaf760f37be770394b7d2f6cf59acc77e",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Granite_DiffSpec256x256.tga",
+   "output_sha256": "0662b3b6b94ba01fbae0493a837a61bfaf760f37be770394b7d2f6cf59acc77e",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_Granite_Square_Blue.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_Granite_Square_Blue_Graffiti",
+   "object": "MI_Granite_Square_Blue_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Granite_Square_Blue_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Granite_DiffSpec256x256.tga",
+   "extracted_sha256": "0662b3b6b94ba01fbae0493a837a61bfaf760f37be770394b7d2f6cf59acc77e",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Granite_DiffSpec256x256.tga",
+   "output_sha256": "0662b3b6b94ba01fbae0493a837a61bfaf760f37be770394b7d2f6cf59acc77e",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_Granite_Square_Blue_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_Granite_Square_Grey",
+   "object": "MI_Granite_Square_Grey",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Granite_Square_Grey",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Granite_DiffSpec256x256.tga",
+   "extracted_sha256": "0662b3b6b94ba01fbae0493a837a61bfaf760f37be770394b7d2f6cf59acc77e",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Granite_DiffSpec256x256.tga",
+   "output_sha256": "0662b3b6b94ba01fbae0493a837a61bfaf760f37be770394b7d2f6cf59acc77e",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_Granite_Square_Grey.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_Granite_Square_Grey_Graffiti",
+   "object": "MI_Granite_Square_Grey_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Granite_Square_Grey_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Granite_DiffSpec256x256.tga",
+   "extracted_sha256": "0662b3b6b94ba01fbae0493a837a61bfaf760f37be770394b7d2f6cf59acc77e",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Granite_DiffSpec256x256.tga",
+   "output_sha256": "0662b3b6b94ba01fbae0493a837a61bfaf760f37be770394b7d2f6cf59acc77e",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_Granite_Square_Grey_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_Marble_RectH_Black",
+   "object": "MI_Marble_RectH_Black",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Marble_RectH_Black",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_RectH_NormMask_256x256.tga",
+   "extracted_sha256": "5ac4693ca6f637ffd07065dac8be3761a0f411f6ec761f20e163156096356a48",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_RectH_NormMask_256x256.tga",
+   "output_sha256": "5ac4693ca6f637ffd07065dac8be3761a0f411f6ec761f20e163156096356a48",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_Marble_RectH_Black.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_Marble_RectV_DarkBlue",
+   "object": "MI_Marble_RectV_DarkBlue",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Marble_RectV_DarkBlue",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Rect_Marble_01_256x256.tga",
+   "extracted_sha256": "46c5ea97a8f5b8324a40dfe2abc94229a2d20223f147b15d087250e2f82f5b92",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Rect_Marble_01_256x256.tga",
+   "output_sha256": "46c5ea97a8f5b8324a40dfe2abc94229a2d20223f147b15d087250e2f82f5b92",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_Marble_RectV_DarkBlue.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_Marble_RectV_DarkBlue_Graffiti",
+   "object": "MI_Marble_RectV_DarkBlue_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Marble_RectV_DarkBlue_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Rect_Marble_01_256x256.tga",
+   "extracted_sha256": "46c5ea97a8f5b8324a40dfe2abc94229a2d20223f147b15d087250e2f82f5b92",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Rect_Marble_01_256x256.tga",
+   "output_sha256": "46c5ea97a8f5b8324a40dfe2abc94229a2d20223f147b15d087250e2f82f5b92",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_Marble_RectV_DarkBlue_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_Marble_RectV_DarkGreen",
+   "object": "MI_Marble_RectV_DarkGreen",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Marble_RectV_DarkGreen",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Rect_Marble_01_256x256.tga",
+   "extracted_sha256": "46c5ea97a8f5b8324a40dfe2abc94229a2d20223f147b15d087250e2f82f5b92",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Rect_Marble_01_256x256.tga",
+   "output_sha256": "46c5ea97a8f5b8324a40dfe2abc94229a2d20223f147b15d087250e2f82f5b92",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_Marble_RectV_DarkGreen.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_Marble_RectV_DarkGreen_Graffiti",
+   "object": "MI_Marble_RectV_DarkGreen_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Marble_RectV_DarkGreen_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Rect_Marble_01_256x256.tga",
+   "extracted_sha256": "46c5ea97a8f5b8324a40dfe2abc94229a2d20223f147b15d087250e2f82f5b92",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Rect_Marble_01_256x256.tga",
+   "output_sha256": "46c5ea97a8f5b8324a40dfe2abc94229a2d20223f147b15d087250e2f82f5b92",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_Marble_RectV_DarkGreen_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_Marble_RectV_Grey",
+   "object": "MI_Marble_RectV_Grey",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Marble_RectV_Grey",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Rect_Marble_01_256x256.tga",
+   "extracted_sha256": "46c5ea97a8f5b8324a40dfe2abc94229a2d20223f147b15d087250e2f82f5b92",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Rect_Marble_01_256x256.tga",
+   "output_sha256": "46c5ea97a8f5b8324a40dfe2abc94229a2d20223f147b15d087250e2f82f5b92",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_Marble_RectV_Grey.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_Marble_RectV_Grey_Graffiti",
+   "object": "MI_Marble_RectV_Grey_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Marble_RectV_Grey_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Rect_Marble_01_256x256.tga",
+   "extracted_sha256": "46c5ea97a8f5b8324a40dfe2abc94229a2d20223f147b15d087250e2f82f5b92",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Rect_Marble_01_256x256.tga",
+   "output_sha256": "46c5ea97a8f5b8324a40dfe2abc94229a2d20223f147b15d087250e2f82f5b92",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_Marble_RectV_Grey_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_Marble_Square_Black",
+   "object": "MI_Marble_Square_Black",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Marble_Square_Black",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Rect_Marble_01_256x256.tga",
+   "extracted_sha256": "46c5ea97a8f5b8324a40dfe2abc94229a2d20223f147b15d087250e2f82f5b92",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Rect_Marble_01_256x256.tga",
+   "output_sha256": "46c5ea97a8f5b8324a40dfe2abc94229a2d20223f147b15d087250e2f82f5b92",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_Marble_Square_Black.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_Marble_Square_Black_Graffiti",
+   "object": "MI_Marble_Square_Black_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Marble_Square_Black_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Rect_Marble_01_256x256.tga",
+   "extracted_sha256": "46c5ea97a8f5b8324a40dfe2abc94229a2d20223f147b15d087250e2f82f5b92",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Rect_Marble_01_256x256.tga",
+   "output_sha256": "46c5ea97a8f5b8324a40dfe2abc94229a2d20223f147b15d087250e2f82f5b92",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_Marble_Square_Black_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_Stone_RectH_Red",
+   "object": "MI_Stone_RectH_Red",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stone_RectH_Red",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_RectH_NormMask_256x256.tga",
+   "extracted_sha256": "5ac4693ca6f637ffd07065dac8be3761a0f411f6ec761f20e163156096356a48",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_RectH_NormMask_256x256.tga",
+   "output_sha256": "5ac4693ca6f637ffd07065dac8be3761a0f411f6ec761f20e163156096356a48",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_Stone_RectH_Red.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_Stone_RectH_Red_Graffiti",
+   "object": "MI_Stone_RectH_Red_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stone_RectH_Red_Graffiti",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_RectH_NormMask_256x256.tga",
+   "extracted_sha256": "5ac4693ca6f637ffd07065dac8be3761a0f411f6ec761f20e163156096356a48",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_RectH_NormMask_256x256.tga",
+   "output_sha256": "5ac4693ca6f637ffd07065dac8be3761a0f411f6ec761f20e163156096356a48",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_Stone_RectH_Red_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_Stone_RectVSmall_Beige",
+   "object": "MI_Stone_RectVSmall_Beige",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stone_RectVSmall_Beige",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tiles_Rect01_NormMask_256x256.tga",
+   "extracted_sha256": "51299b24f96fd9828128fa3d0a16183689c3eceee3d3e6666f67e4a0b7d81d22",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tiles_Rect01_NormMask_256x256.tga",
+   "output_sha256": "51299b24f96fd9828128fa3d0a16183689c3eceee3d3e6666f67e4a0b7d81d22",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_Stone_RectVSmall_Beige.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_Stone_RectVSmall_Beige_Graffiti",
+   "object": "MI_Stone_RectVSmall_Beige_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stone_RectVSmall_Beige_Graffiti",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tiles_Rect01_NormMask_256x256.tga",
+   "extracted_sha256": "51299b24f96fd9828128fa3d0a16183689c3eceee3d3e6666f67e4a0b7d81d22",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tiles_Rect01_NormMask_256x256.tga",
+   "output_sha256": "51299b24f96fd9828128fa3d0a16183689c3eceee3d3e6666f67e4a0b7d81d22",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_Stone_RectVSmall_Beige_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_Stone_RectVSmall_DarkBlue",
+   "object": "MI_Stone_RectVSmall_DarkBlue",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stone_RectVSmall_DarkBlue",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tiles_Rect01_NormMask_256x256.tga",
+   "extracted_sha256": "51299b24f96fd9828128fa3d0a16183689c3eceee3d3e6666f67e4a0b7d81d22",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tiles_Rect01_NormMask_256x256.tga",
+   "output_sha256": "51299b24f96fd9828128fa3d0a16183689c3eceee3d3e6666f67e4a0b7d81d22",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_Stone_RectVSmall_DarkBlue.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_Stone_RectVSmall_DarkBlue_Graffiti",
+   "object": "MI_Stone_RectVSmall_DarkBlue_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stone_RectVSmall_DarkBlue_Graffiti",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tiles_Rect01_NormMask_256x256.tga",
+   "extracted_sha256": "51299b24f96fd9828128fa3d0a16183689c3eceee3d3e6666f67e4a0b7d81d22",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tiles_Rect01_NormMask_256x256.tga",
+   "output_sha256": "51299b24f96fd9828128fa3d0a16183689c3eceee3d3e6666f67e4a0b7d81d22",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_Stone_RectVSmall_DarkBlue_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_Stone_RectVSmall_DarkGrey",
+   "object": "MI_Stone_RectVSmall_DarkGrey",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stone_RectVSmall_DarkGrey",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tiles_Rect01_NormMask_256x256.tga",
+   "extracted_sha256": "51299b24f96fd9828128fa3d0a16183689c3eceee3d3e6666f67e4a0b7d81d22",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tiles_Rect01_NormMask_256x256.tga",
+   "output_sha256": "51299b24f96fd9828128fa3d0a16183689c3eceee3d3e6666f67e4a0b7d81d22",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_Stone_RectVSmall_DarkGrey.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_Stone_RectVSmall_DarkGrey_Graffiti",
+   "object": "MI_Stone_RectVSmall_DarkGrey_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stone_RectVSmall_DarkGrey_Graffiti",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tiles_Rect01_NormMask_256x256.tga",
+   "extracted_sha256": "51299b24f96fd9828128fa3d0a16183689c3eceee3d3e6666f67e4a0b7d81d22",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tiles_Rect01_NormMask_256x256.tga",
+   "output_sha256": "51299b24f96fd9828128fa3d0a16183689c3eceee3d3e6666f67e4a0b7d81d22",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_Stone_RectVSmall_DarkGrey_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_Stone_RectVSmall_Green",
+   "object": "MI_Stone_RectVSmall_Green",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stone_RectVSmall_Green",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tiles_Rect01_NormMask_256x256.tga",
+   "extracted_sha256": "51299b24f96fd9828128fa3d0a16183689c3eceee3d3e6666f67e4a0b7d81d22",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tiles_Rect01_NormMask_256x256.tga",
+   "output_sha256": "51299b24f96fd9828128fa3d0a16183689c3eceee3d3e6666f67e4a0b7d81d22",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_Stone_RectVSmall_Green.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_Stone_RectVSmall_Green_Graffiti",
+   "object": "MI_Stone_RectVSmall_Green_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stone_RectVSmall_Green_Graffiti",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tiles_Rect01_NormMask_256x256.tga",
+   "extracted_sha256": "51299b24f96fd9828128fa3d0a16183689c3eceee3d3e6666f67e4a0b7d81d22",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tiles_Rect01_NormMask_256x256.tga",
+   "output_sha256": "51299b24f96fd9828128fa3d0a16183689c3eceee3d3e6666f67e4a0b7d81d22",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_Stone_RectVSmall_Green_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_Stone_RectVSmall_Red",
+   "object": "MI_Stone_RectVSmall_Red",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stone_RectVSmall_Red",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tiles_Rect01_NormMask_256x256.tga",
+   "extracted_sha256": "51299b24f96fd9828128fa3d0a16183689c3eceee3d3e6666f67e4a0b7d81d22",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tiles_Rect01_NormMask_256x256.tga",
+   "output_sha256": "51299b24f96fd9828128fa3d0a16183689c3eceee3d3e6666f67e4a0b7d81d22",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_Stone_RectVSmall_Red.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_Stone_RectVSmall_Red_Graffiti",
+   "object": "MI_Stone_RectVSmall_Red_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stone_RectVSmall_Red_Graffiti",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tiles_Rect01_NormMask_256x256.tga",
+   "extracted_sha256": "51299b24f96fd9828128fa3d0a16183689c3eceee3d3e6666f67e4a0b7d81d22",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tiles_Rect01_NormMask_256x256.tga",
+   "output_sha256": "51299b24f96fd9828128fa3d0a16183689c3eceee3d3e6666f67e4a0b7d81d22",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_Stone_RectVSmall_Red_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_Stone_Square_Beige",
+   "object": "MI_Stone_Square_Beige",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stone_Square_Beige",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tiles_Square01_NormMask_256x256.tga",
+   "extracted_sha256": "32ca9542b836b899ad2f162619178b07aebb5a91e11d7d666b03b607369a441e",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tiles_Square01_NormMask_256x256.tga",
+   "output_sha256": "32ca9542b836b899ad2f162619178b07aebb5a91e11d7d666b03b607369a441e",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_Stone_Square_Beige.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_Stone_Square_Beige_Graffiti",
+   "object": "MI_Stone_Square_Beige_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stone_Square_Beige_Graffiti",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tiles_Square01_NormMask_256x256.tga",
+   "extracted_sha256": "32ca9542b836b899ad2f162619178b07aebb5a91e11d7d666b03b607369a441e",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tiles_Square01_NormMask_256x256.tga",
+   "output_sha256": "32ca9542b836b899ad2f162619178b07aebb5a91e11d7d666b03b607369a441e",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_Stone_Square_Beige_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_Stone_Square_Blue",
+   "object": "MI_Stone_Square_Blue",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stone_Square_Blue",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Square_Stone_01_256x256.tga",
+   "extracted_sha256": "6e1beab8b9a5aa6fb5f26b70a8cb05677749ddbf7d318410ae80244efd4f2641",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Square_Stone_01_256x256.tga",
+   "output_sha256": "6e1beab8b9a5aa6fb5f26b70a8cb05677749ddbf7d318410ae80244efd4f2641",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_Stone_Square_Blue.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_Stone_Square_Blue_Graffiti",
+   "object": "MI_Stone_Square_Blue_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stone_Square_Blue_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Square_Stone_01_256x256.tga",
+   "extracted_sha256": "6e1beab8b9a5aa6fb5f26b70a8cb05677749ddbf7d318410ae80244efd4f2641",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Square_Stone_01_256x256.tga",
+   "output_sha256": "6e1beab8b9a5aa6fb5f26b70a8cb05677749ddbf7d318410ae80244efd4f2641",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_Stone_Square_Blue_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_Stone_Square_Grey",
+   "object": "MI_Stone_Square_Grey",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stone_Square_Grey",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Square_Stone_01_256x256.tga",
+   "extracted_sha256": "6e1beab8b9a5aa6fb5f26b70a8cb05677749ddbf7d318410ae80244efd4f2641",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Square_Stone_01_256x256.tga",
+   "output_sha256": "6e1beab8b9a5aa6fb5f26b70a8cb05677749ddbf7d318410ae80244efd4f2641",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_Stone_Square_Grey.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_Stone_Square_Grey_Graffiti",
+   "object": "MI_Stone_Square_Grey_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stone_Square_Grey_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Square_Stone_01_256x256.tga",
+   "extracted_sha256": "6e1beab8b9a5aa6fb5f26b70a8cb05677749ddbf7d318410ae80244efd4f2641",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Square_Stone_01_256x256.tga",
+   "output_sha256": "6e1beab8b9a5aa6fb5f26b70a8cb05677749ddbf7d318410ae80244efd4f2641",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_Stone_Square_Grey_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_Stone_SquareSmall_Blue",
+   "object": "MI_Stone_SquareSmall_Blue",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stone_SquareSmall_Blue",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_SquareSml_NormMask_256x256.tga",
+   "extracted_sha256": "81edfae18821c191676465ba91e74f7dedd5d62a22a8aae6684cac45b58d1126",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_SquareSml_NormMask_256x256.tga",
+   "output_sha256": "81edfae18821c191676465ba91e74f7dedd5d62a22a8aae6684cac45b58d1126",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_Stone_SquareSmall_Blue.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_Stone_SquareSmall_Blue_Graffiti",
+   "object": "MI_Stone_SquareSmall_Blue_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stone_SquareSmall_Blue_Graffiti",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_SquareSml_NormMask_256x256.tga",
+   "extracted_sha256": "81edfae18821c191676465ba91e74f7dedd5d62a22a8aae6684cac45b58d1126",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_SquareSml_NormMask_256x256.tga",
+   "output_sha256": "81edfae18821c191676465ba91e74f7dedd5d62a22a8aae6684cac45b58d1126",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_Stone_SquareSmall_Blue_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_Stone_SquareSmall_GreyDark",
+   "object": "MI_Stone_SquareSmall_GreyDark",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stone_SquareSmall_GreyDark",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_SquareSml_Stone_01_256x256.tga",
+   "extracted_sha256": "29bbc9cbacef8a7e2408b0cff9232b058d1ba5683505e477afc06730917af791",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_SquareSml_Stone_01_256x256.tga",
+   "output_sha256": "29bbc9cbacef8a7e2408b0cff9232b058d1ba5683505e477afc06730917af791",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_Stone_SquareSmall_GreyDark.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_Stone_SquareSmall_GreyDark_Graffiti",
+   "object": "MI_Stone_SquareSmall_GreyDark_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stone_SquareSmall_GreyDark_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_SquareSml_Stone_01_256x256.tga",
+   "extracted_sha256": "29bbc9cbacef8a7e2408b0cff9232b058d1ba5683505e477afc06730917af791",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_SquareSml_Stone_01_256x256.tga",
+   "output_sha256": "29bbc9cbacef8a7e2408b0cff9232b058d1ba5683505e477afc06730917af791",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_Stone_SquareSmall_GreyDark_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_WallTile_NormalTest",
+   "object": "MI_WallTile_NormalTest",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WallTile_NormalTest",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Granite_DiffSpec256x256.tga",
+   "extracted_sha256": "0662b3b6b94ba01fbae0493a837a61bfaf760f37be770394b7d2f6cf59acc77e",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Granite_DiffSpec256x256.tga",
+   "output_sha256": "0662b3b6b94ba01fbae0493a837a61bfaf760f37be770394b7d2f6cf59acc77e",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_WallTile_NormalTest.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_WallTile_NormalTest_INST",
+   "object": "MI_WallTile_NormalTest_INST",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WallTile_NormalTest_INST",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Granite_DiffSpec256x256.tga",
+   "extracted_sha256": "0662b3b6b94ba01fbae0493a837a61bfaf760f37be770394b7d2f6cf59acc77e",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Granite_DiffSpec256x256.tga",
+   "output_sha256": "0662b3b6b94ba01fbae0493a837a61bfaf760f37be770394b7d2f6cf59acc77e",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_WallTile_NormalTest_INST.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_WallTile_NormalTest_RectH",
+   "object": "MI_WallTile_NormalTest_RectH",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WallTile_NormalTest_RectH",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Granite_DiffSpec256x256.tga",
+   "extracted_sha256": "0662b3b6b94ba01fbae0493a837a61bfaf760f37be770394b7d2f6cf59acc77e",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Granite_DiffSpec256x256.tga",
+   "output_sha256": "0662b3b6b94ba01fbae0493a837a61bfaf760f37be770394b7d2f6cf59acc77e",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_WallTile_NormalTest_RectH.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_WallTile_NormalTest_RectV",
+   "object": "MI_WallTile_NormalTest_RectV",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WallTile_NormalTest_RectV",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Granite_DiffSpec256x256.tga",
+   "extracted_sha256": "0662b3b6b94ba01fbae0493a837a61bfaf760f37be770394b7d2f6cf59acc77e",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Granite_DiffSpec256x256.tga",
+   "output_sha256": "0662b3b6b94ba01fbae0493a837a61bfaf760f37be770394b7d2f6cf59acc77e",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_WallTile_NormalTest_RectV.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_WallTile_NormalTest_RectV_Granite",
+   "object": "MI_WallTile_NormalTest_RectV_Granite",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WallTile_NormalTest_RectV_Granite",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Granite_DiffSpec256x256.tga",
+   "extracted_sha256": "0662b3b6b94ba01fbae0493a837a61bfaf760f37be770394b7d2f6cf59acc77e",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Granite_DiffSpec256x256.tga",
+   "output_sha256": "0662b3b6b94ba01fbae0493a837a61bfaf760f37be770394b7d2f6cf59acc77e",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_WallTile_NormalTest_RectV_Granite.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_WallTile_NormalTest_SquareSmall",
+   "object": "MI_WallTile_NormalTest_SquareSmall",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WallTile_NormalTest_SquareSmall",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Granite_DiffSpec256x256.tga",
+   "extracted_sha256": "0662b3b6b94ba01fbae0493a837a61bfaf760f37be770394b7d2f6cf59acc77e",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Granite_DiffSpec256x256.tga",
+   "output_sha256": "0662b3b6b94ba01fbae0493a837a61bfaf760f37be770394b7d2f6cf59acc77e",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_WallTile_NormalTest_SquareSmall.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#MI_WallTile_PARENT",
+   "object": "MI_WallTile_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WallTile_PARENT",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tiles_Square01_NormMask_256x256.tga",
+   "extracted_sha256": "32ca9542b836b899ad2f162619178b07aebb5a91e11d7d666b03b607369a441e",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tiles_Square01_NormMask_256x256.tga",
+   "output_sha256": "32ca9542b836b899ad2f162619178b07aebb5a91e11d7d666b03b607369a441e",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/MI_WallTile_PARENT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#Tile_Granite_DiffSpec256x256",
+   "object": "Tile_Granite_DiffSpec256x256",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Granite_DiffSpec256x256.tga",
+   "extracted_sha256": "0662b3b6b94ba01fbae0493a837a61bfaf760f37be770394b7d2f6cf59acc77e",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Granite_DiffSpec256x256.tga",
+   "output_sha256": "0662b3b6b94ba01fbae0493a837a61bfaf760f37be770394b7d2f6cf59acc77e",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/Tile_Granite_DiffSpec256x256.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#Tile_Rect_Marble_01_256x256",
+   "object": "Tile_Rect_Marble_01_256x256",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Rect_Marble_01_256x256.tga",
+   "extracted_sha256": "46c5ea97a8f5b8324a40dfe2abc94229a2d20223f147b15d087250e2f82f5b92",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Rect_Marble_01_256x256.tga",
+   "output_sha256": "46c5ea97a8f5b8324a40dfe2abc94229a2d20223f147b15d087250e2f82f5b92",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/Tile_Rect_Marble_01_256x256.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#Tile_RectH_NormMask_256x256",
+   "object": "Tile_RectH_NormMask_256x256",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_RectH_NormMask_256x256.tga",
+   "extracted_sha256": "5ac4693ca6f637ffd07065dac8be3761a0f411f6ec761f20e163156096356a48",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_RectH_NormMask_256x256.tga",
+   "output_sha256": "5ac4693ca6f637ffd07065dac8be3761a0f411f6ec761f20e163156096356a48",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/Tile_RectH_NormMask_256x256.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#Tile_RectV_Granite_01_256x256",
+   "object": "Tile_RectV_Granite_01_256x256",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_RectV_Granite_01_256x256.tga",
+   "extracted_sha256": "0bd50dd163580838dc6f2e2aab182925e0690c4540a46a9e2c546abf63ebe8a4",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_RectV_Granite_01_256x256.tga",
+   "output_sha256": "0bd50dd163580838dc6f2e2aab182925e0690c4540a46a9e2c546abf63ebe8a4",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/Tile_RectV_Granite_01_256x256.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#Tile_Square_Stone_01_256x256",
+   "object": "Tile_Square_Stone_01_256x256",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Square_Stone_01_256x256.tga",
+   "extracted_sha256": "6e1beab8b9a5aa6fb5f26b70a8cb05677749ddbf7d318410ae80244efd4f2641",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_Square_Stone_01_256x256.tga",
+   "output_sha256": "6e1beab8b9a5aa6fb5f26b70a8cb05677749ddbf7d318410ae80244efd4f2641",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/Tile_Square_Stone_01_256x256.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#Tile_SquareSml_NormMask_256x256",
+   "object": "Tile_SquareSml_NormMask_256x256",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_SquareSml_NormMask_256x256.tga",
+   "extracted_sha256": "81edfae18821c191676465ba91e74f7dedd5d62a22a8aae6684cac45b58d1126",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_SquareSml_NormMask_256x256.tga",
+   "output_sha256": "81edfae18821c191676465ba91e74f7dedd5d62a22a8aae6684cac45b58d1126",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/Tile_SquareSml_NormMask_256x256.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#Tile_SquareSml_Stone_01_256x256",
+   "object": "Tile_SquareSml_Stone_01_256x256",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_SquareSml_Stone_01_256x256.tga",
+   "extracted_sha256": "29bbc9cbacef8a7e2408b0cff9232b058d1ba5683505e477afc06730917af791",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tile_SquareSml_Stone_01_256x256.tga",
+   "output_sha256": "29bbc9cbacef8a7e2408b0cff9232b058d1ba5683505e477afc06730917af791",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/Tile_SquareSml_Stone_01_256x256.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#Tiles_Rect01_NormMask_256x256",
+   "object": "Tiles_Rect01_NormMask_256x256",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tiles_Rect01_NormMask_256x256.tga",
+   "extracted_sha256": "51299b24f96fd9828128fa3d0a16183689c3eceee3d3e6666f67e4a0b7d81d22",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tiles_Rect01_NormMask_256x256.tga",
+   "output_sha256": "51299b24f96fd9828128fa3d0a16183689c3eceee3d3e6666f67e4a0b7d81d22",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/Tiles_Rect01_NormMask_256x256.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/WallTiles/WallTiles.upk#Tiles_Square01_NormMask_256x256",
+   "object": "Tiles_Square01_NormMask_256x256",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tiles_Square01_NormMask_256x256.tga",
+   "extracted_sha256": "32ca9542b836b899ad2f162619178b07aebb5a91e11d7d666b03b607369a441e",
+   "output_file": "Content/Extracted/MaterialDatabase/WallTiles/WallTiles/Texture2D/Tiles_Square01_NormMask_256x256.tga",
+   "output_sha256": "32ca9542b836b899ad2f162619178b07aebb5a91e11d7d666b03b607369a441e",
+   "uasset": "Content/Imported/MaterialDatabase/WallTiles/Tiles_Square01_NormMask_256x256.uasset"
+  }
+ ]
+}

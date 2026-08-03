@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "PlasterBoardPack",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/ProvingGrounds/PropMaterials/PlasterBoardPack.upk",
+ "source_sha256": "2a4d94d0cd3e91ca18b2788514fca9bdc570b00d1c59aba2ccb4b5ba0ef56449",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/ProvingGrounds/PropMaterials/PlasterBoardPack.upk#MI_PlasterBoardPack_Mat",
+   "object": "MI_PlasterBoardPack_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PlasterBoardPack_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/PlasterBoardPack/PlasterBoardPack/Texture2D/PlasterBoardPack_Diff.tga",
+   "extracted_sha256": "c4464bb055fea8a69c2fe22dbe5159e189ceab3411ef601eef594f88a5c1cabd",
+   "output_file": "Content/Extracted/MaterialDatabase/PlasterBoardPack/PlasterBoardPack/Texture2D/PlasterBoardPack_Diff.tga",
+   "output_sha256": "c4464bb055fea8a69c2fe22dbe5159e189ceab3411ef601eef594f88a5c1cabd",
+   "uasset": "Content/Imported/MaterialDatabase/PlasterBoardPack/MI_PlasterBoardPack_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/ProvingGrounds/PropMaterials/PlasterBoardPack.upk#PlasterBoardPack_Diff",
+   "object": "PlasterBoardPack_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/PlasterBoardPack/PlasterBoardPack/Texture2D/PlasterBoardPack_Diff.tga",
+   "extracted_sha256": "c4464bb055fea8a69c2fe22dbe5159e189ceab3411ef601eef594f88a5c1cabd",
+   "output_file": "Content/Extracted/MaterialDatabase/PlasterBoardPack/PlasterBoardPack/Texture2D/PlasterBoardPack_Diff.tga",
+   "output_sha256": "c4464bb055fea8a69c2fe22dbe5159e189ceab3411ef601eef594f88a5c1cabd",
+   "uasset": "Content/Imported/MaterialDatabase/PlasterBoardPack/PlasterBoardPack_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/ProvingGrounds/PropMaterials/PlasterBoardPack.upk#PlasterBoardPack_Norm",
+   "object": "PlasterBoardPack_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/PlasterBoardPack/PlasterBoardPack/Texture2D/PlasterBoardPack_Norm.tga",
+   "extracted_sha256": "d8bbcbb4f8b8959ca843e3332b1a8afb3cf71f652c9775009b0dc1159510a251",
+   "output_file": "Content/Extracted/MaterialDatabase/PlasterBoardPack/PlasterBoardPack/Texture2D/PlasterBoardPack_Norm.tga",
+   "output_sha256": "d8bbcbb4f8b8959ca843e3332b1a8afb3cf71f652c9775009b0dc1159510a251",
+   "uasset": "Content/Imported/MaterialDatabase/PlasterBoardPack/PlasterBoardPack_Norm.uasset"
+  }
+ ]
+}

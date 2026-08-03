@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "VehicleSpawnIcon",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericDistrict/VehicleSpawnIcon.upk",
+ "source_sha256": "65ba60a8b068b665f6ce5dba4c56190891e246e66f8a9d490e1b28ca07104347",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericDistrict/VehicleSpawnIcon.upk#MI_VehicleSpawnIcon_MAT",
+   "object": "MI_VehicleSpawnIcon_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "VehicleSpawnIcon_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/VehicleSpawnIcon/VehicleSpawnIcon/Texture2D/VehicleSpawnIcon_DiffSpec.tga",
+   "extracted_sha256": "151ed5e3daa902e9a4c481e66c72f04749f75cc72fce560e44d54461f42dc7b7",
+   "output_file": "Content/Extracted/MaterialDatabase/VehicleSpawnIcon/VehicleSpawnIcon/Texture2D/VehicleSpawnIcon_DiffSpec.tga",
+   "output_sha256": "151ed5e3daa902e9a4c481e66c72f04749f75cc72fce560e44d54461f42dc7b7",
+   "uasset": "Content/Imported/MaterialDatabase/VehicleSpawnIcon/MI_VehicleSpawnIcon_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericDistrict/VehicleSpawnIcon.upk#VehicleSpawnIcon_DiffSpec",
+   "object": "VehicleSpawnIcon_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/VehicleSpawnIcon/VehicleSpawnIcon/Texture2D/VehicleSpawnIcon_DiffSpec.tga",
+   "extracted_sha256": "151ed5e3daa902e9a4c481e66c72f04749f75cc72fce560e44d54461f42dc7b7",
+   "output_file": "Content/Extracted/MaterialDatabase/VehicleSpawnIcon/VehicleSpawnIcon/Texture2D/VehicleSpawnIcon_DiffSpec.tga",
+   "output_sha256": "151ed5e3daa902e9a4c481e66c72f04749f75cc72fce560e44d54461f42dc7b7",
+   "uasset": "Content/Imported/MaterialDatabase/VehicleSpawnIcon/VehicleSpawnIcon_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericDistrict/VehicleSpawnIcon.upk#VehicleSpawnIcon_Normal",
+   "object": "VehicleSpawnIcon_Normal",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/VehicleSpawnIcon/VehicleSpawnIcon/Texture2D/VehicleSpawnIcon_Normal.tga",
+   "extracted_sha256": "a9471855e477a9c0a588bb5246fc772802be46f8b4d0bf5477d5eeb460923d38",
+   "output_file": "Content/Extracted/MaterialDatabase/VehicleSpawnIcon/VehicleSpawnIcon/Texture2D/VehicleSpawnIcon_Normal.tga",
+   "output_sha256": "a9471855e477a9c0a588bb5246fc772802be46f8b4d0bf5477d5eeb460923d38",
+   "uasset": "Content/Imported/MaterialDatabase/VehicleSpawnIcon/VehicleSpawnIcon_Normal.uasset"
+  }
+ ]
+}

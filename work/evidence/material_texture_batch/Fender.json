@@ -1,0 +1,34 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Fender",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/WaterfrontDistrict/PropMaterials/Fender.upk",
+ "source_sha256": "b121e2e7c0ee4c287e7b9633339705ca4f16e33d5e6d6f9ab633b3b1c56862d5",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/Fender.upk#Fender_DiffSpec",
+   "object": "Fender_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Fender/Fender/Texture2D/Fender_DiffSpec.tga",
+   "extracted_sha256": "800d54d5cff43899a782e252daa8a170a8c66f76f85027f9079570d37a8dbff4",
+   "output_file": "Content/Extracted/MaterialDatabase/Fender/Fender/Texture2D/Fender_DiffSpec.tga",
+   "output_sha256": "800d54d5cff43899a782e252daa8a170a8c66f76f85027f9079570d37a8dbff4",
+   "uasset": "Content/Imported/MaterialDatabase/Fender/Fender_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/Fender.upk#MI_Fender",
+   "object": "MI_Fender",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Fender",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Fender/Fender/Texture2D/Fender_DiffSpec.tga",
+   "extracted_sha256": "800d54d5cff43899a782e252daa8a170a8c66f76f85027f9079570d37a8dbff4",
+   "output_file": "Content/Extracted/MaterialDatabase/Fender/Fender/Texture2D/Fender_DiffSpec.tga",
+   "output_sha256": "800d54d5cff43899a782e252daa8a170a8c66f76f85027f9079570d37a8dbff4",
+   "uasset": "Content/Imported/MaterialDatabase/Fender/MI_Fender.uasset"
+  }
+ ]
+}

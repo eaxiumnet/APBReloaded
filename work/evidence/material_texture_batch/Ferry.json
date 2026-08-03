@@ -1,0 +1,230 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Ferry",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/WaterfrontDistrict/Ferry/Ferry.upk",
+ "source_sha256": "bfdf9ea5a8a6fa86867658d57a59ed7b97d4af2ec86646a5d602e96b381cf546",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/Ferry/Ferry.upk#bumps",
+   "object": "bumps",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Ferry/Roof_CorrugatedMetal/Texture2D/bumps.tga",
+   "extracted_sha256": "43eade4e27b173b45a2a70a486c19e36c9cc703a81d05edca7bf77d91de68e8e",
+   "output_file": "Content/Extracted/MaterialDatabase/Ferry/Roof_CorrugatedMetal/Texture2D/bumps.tga",
+   "output_sha256": "43eade4e27b173b45a2a70a486c19e36c9cc703a81d05edca7bf77d91de68e8e",
+   "uasset": "Content/Imported/MaterialDatabase/Ferry/bumps.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/Ferry/Ferry.upk#ExitSigns_DiffAlpha",
+   "object": "ExitSigns_DiffAlpha",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Ferry/ExitSigns/Texture2D/ExitSigns_DiffAlpha.tga",
+   "extracted_sha256": "57810e404513e8c18926126123d0fb95c4d5cf307a65533b82b069c7e75c2c9d",
+   "output_file": "Content/Extracted/MaterialDatabase/Ferry/ExitSigns/Texture2D/ExitSigns_DiffAlpha.tga",
+   "output_sha256": "57810e404513e8c18926126123d0fb95c4d5cf307a65533b82b069c7e75c2c9d",
+   "uasset": "Content/Imported/MaterialDatabase/Ferry/ExitSigns_DiffAlpha.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/Ferry/Ferry.upk#FireObjects_DiffSpec",
+   "object": "FireObjects_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Ferry/FireObjects/Texture2D/FireObjects_DiffSpec.tga",
+   "extracted_sha256": "9be494470d0d8f8ed4948965f5e73053a3e1f322b45c223cf361024f453cf0f1",
+   "output_file": "Content/Extracted/MaterialDatabase/Ferry/FireObjects/Texture2D/FireObjects_DiffSpec.tga",
+   "output_sha256": "9be494470d0d8f8ed4948965f5e73053a3e1f322b45c223cf361024f453cf0f1",
+   "uasset": "Content/Imported/MaterialDatabase/Ferry/FireObjects_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/Ferry/Ferry.upk#FireObjects_Emis",
+   "object": "FireObjects_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Ferry/FireObjects/Texture2D/FireObjects_Emis.tga",
+   "extracted_sha256": "1e5e35c2cea8724b19fc918d1e5ccbb8d077b9ace53c0a1ff0d94941a817d567",
+   "output_file": "Content/Extracted/MaterialDatabase/Ferry/FireObjects/Texture2D/FireObjects_Emis.tga",
+   "output_sha256": "1e5e35c2cea8724b19fc918d1e5ccbb8d077b9ace53c0a1ff0d94941a817d567",
+   "uasset": "Content/Imported/MaterialDatabase/Ferry/FireObjects_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/Ferry/Ferry.upk#FireObjects_Norm",
+   "object": "FireObjects_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Ferry/FireObjects/Texture2D/FireObjects_Norm.tga",
+   "extracted_sha256": "e2b6b957343d60f5f512ab6f817f95257161c080e8cdecd74b2914b64bc6fcd8",
+   "output_file": "Content/Extracted/MaterialDatabase/Ferry/FireObjects/Texture2D/FireObjects_Norm.tga",
+   "output_sha256": "e2b6b957343d60f5f512ab6f817f95257161c080e8cdecd74b2914b64bc6fcd8",
+   "uasset": "Content/Imported/MaterialDatabase/Ferry/FireObjects_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/Ferry/Ferry.upk#Lights_Wall_Roof_DiffSpec",
+   "object": "Lights_Wall_Roof_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Ferry/MidtownDistrict_Lights/Texture2D/Lights_Wall_Roof_DiffSpec.tga",
+   "extracted_sha256": "e3569ee19c1ec5db0f6e08c6e7fa22e10735e7c9b19d661fbde11e04df86ddd7",
+   "output_file": "Content/Extracted/MaterialDatabase/Ferry/MidtownDistrict_Lights/Texture2D/Lights_Wall_Roof_DiffSpec.tga",
+   "output_sha256": "e3569ee19c1ec5db0f6e08c6e7fa22e10735e7c9b19d661fbde11e04df86ddd7",
+   "uasset": "Content/Imported/MaterialDatabase/Ferry/Lights_Wall_Roof_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/Ferry/Ferry.upk#Lights_Wall_Roof_Emissive",
+   "object": "Lights_Wall_Roof_Emissive",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Ferry/MidtownDistrict_Lights/Texture2D/Lights_Wall_Roof_Emissive.tga",
+   "extracted_sha256": "eff2e65d04a35b7353f2784547da5e6a71ccb07e47038a8255738cf0cf943fc5",
+   "output_file": "Content/Extracted/MaterialDatabase/Ferry/MidtownDistrict_Lights/Texture2D/Lights_Wall_Roof_Emissive.tga",
+   "output_sha256": "eff2e65d04a35b7353f2784547da5e6a71ccb07e47038a8255738cf0cf943fc5",
+   "uasset": "Content/Imported/MaterialDatabase/Ferry/Lights_Wall_Roof_Emissive.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/Ferry/Ferry.upk#Lights_Wall_Roof_Normal",
+   "object": "Lights_Wall_Roof_Normal",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Ferry/MidtownDistrict_Lights/Texture2D/Lights_Wall_Roof_Normal.tga",
+   "extracted_sha256": "8b9de3efc533005c41286723c6191db7703309273ee7bc5328fe186aa01db429",
+   "output_file": "Content/Extracted/MaterialDatabase/Ferry/MidtownDistrict_Lights/Texture2D/Lights_Wall_Roof_Normal.tga",
+   "output_sha256": "8b9de3efc533005c41286723c6191db7703309273ee7bc5328fe186aa01db429",
+   "uasset": "Content/Imported/MaterialDatabase/Ferry/Lights_Wall_Roof_Normal.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/Ferry/Ferry.upk#MI_exitsigns",
+   "object": "MI_exitsigns",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "exitsigns",
+   "texture_roles": [
+    "Diffuse",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Ferry/ExitSigns/Texture2D/ExitSigns_DiffAlpha.tga",
+   "extracted_sha256": "57810e404513e8c18926126123d0fb95c4d5cf307a65533b82b069c7e75c2c9d",
+   "output_file": "Content/Extracted/MaterialDatabase/Ferry/ExitSigns/Texture2D/ExitSigns_DiffAlpha.tga",
+   "output_sha256": "57810e404513e8c18926126123d0fb95c4d5cf307a65533b82b069c7e75c2c9d",
+   "uasset": "Content/Imported/MaterialDatabase/Ferry/MI_exitsigns.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/Ferry/Ferry.upk#MI_FireObjects_Mat",
+   "object": "MI_FireObjects_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FireObjects_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Ferry/FireObjects/Texture2D/FireObjects_DiffSpec.tga",
+   "extracted_sha256": "9be494470d0d8f8ed4948965f5e73053a3e1f322b45c223cf361024f453cf0f1",
+   "output_file": "Content/Extracted/MaterialDatabase/Ferry/FireObjects/Texture2D/FireObjects_DiffSpec.tga",
+   "output_sha256": "9be494470d0d8f8ed4948965f5e73053a3e1f322b45c223cf361024f453cf0f1",
+   "uasset": "Content/Imported/MaterialDatabase/Ferry/MI_FireObjects_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/Ferry/Ferry.upk#MI_Lights_Wall_Roof_Interior",
+   "object": "MI_Lights_Wall_Roof_Interior",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Lights_Wall_Roof_Interior",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Ferry/MidtownDistrict_Lights/Texture2D/Lights_Wall_Roof_DiffSpec.tga",
+   "extracted_sha256": "e3569ee19c1ec5db0f6e08c6e7fa22e10735e7c9b19d661fbde11e04df86ddd7",
+   "output_file": "Content/Extracted/MaterialDatabase/Ferry/MidtownDistrict_Lights/Texture2D/Lights_Wall_Roof_DiffSpec.tga",
+   "output_sha256": "e3569ee19c1ec5db0f6e08c6e7fa22e10735e7c9b19d661fbde11e04df86ddd7",
+   "uasset": "Content/Imported/MaterialDatabase/Ferry/MI_Lights_Wall_Roof_Interior.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/Ferry/Ferry.upk#MI_SecurityCamera_MAT",
+   "object": "MI_SecurityCamera_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "SecurityCamera_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Ferry/SecurityCamera/Texture2D/SecurityCamera_DiffSpec.tga",
+   "extracted_sha256": "eec3a29b2e668814c6e799be4f67ed32b875a2b3cbd8ae7ee2a13838bee9551e",
+   "output_file": "Content/Extracted/MaterialDatabase/Ferry/SecurityCamera/Texture2D/SecurityCamera_DiffSpec.tga",
+   "output_sha256": "eec3a29b2e668814c6e799be4f67ed32b875a2b3cbd8ae7ee2a13838bee9551e",
+   "uasset": "Content/Imported/MaterialDatabase/Ferry/MI_SecurityCamera_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/Ferry/Ferry.upk#MI_WarningSigns_Mat",
+   "object": "MI_WarningSigns_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WarningSigns_Mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Ferry/Roof_CorrugatedMetal/Texture2D/bumps.tga",
+   "extracted_sha256": "43eade4e27b173b45a2a70a486c19e36c9cc703a81d05edca7bf77d91de68e8e",
+   "output_file": "Content/Extracted/MaterialDatabase/Ferry/Roof_CorrugatedMetal/Texture2D/bumps.tga",
+   "output_sha256": "43eade4e27b173b45a2a70a486c19e36c9cc703a81d05edca7bf77d91de68e8e",
+   "uasset": "Content/Imported/MaterialDatabase/Ferry/MI_WarningSigns_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/Ferry/Ferry.upk#SecurityCamera_DiffSpec",
+   "object": "SecurityCamera_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Ferry/SecurityCamera/Texture2D/SecurityCamera_DiffSpec.tga",
+   "extracted_sha256": "eec3a29b2e668814c6e799be4f67ed32b875a2b3cbd8ae7ee2a13838bee9551e",
+   "output_file": "Content/Extracted/MaterialDatabase/Ferry/SecurityCamera/Texture2D/SecurityCamera_DiffSpec.tga",
+   "output_sha256": "eec3a29b2e668814c6e799be4f67ed32b875a2b3cbd8ae7ee2a13838bee9551e",
+   "uasset": "Content/Imported/MaterialDatabase/Ferry/SecurityCamera_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/Ferry/Ferry.upk#SecurityCamera_Emis",
+   "object": "SecurityCamera_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Ferry/SecurityCamera/Texture2D/SecurityCamera_Emis.tga",
+   "extracted_sha256": "6f2fe0ed5cd3e002a38d9e5c10e7109d0a3e43e32bb2e1fc416e00cf722201e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Ferry/SecurityCamera/Texture2D/SecurityCamera_Emis.tga",
+   "output_sha256": "6f2fe0ed5cd3e002a38d9e5c10e7109d0a3e43e32bb2e1fc416e00cf722201e6",
+   "uasset": "Content/Imported/MaterialDatabase/Ferry/SecurityCamera_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/Ferry/Ferry.upk#SecurityCamera_Norm",
+   "object": "SecurityCamera_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Ferry/SecurityCamera/Texture2D/SecurityCamera_Norm.tga",
+   "extracted_sha256": "507ed287261a93788c21d8a93e32a6f78c9bdf04ba0e344ab1ddc8edeb2d7211",
+   "output_file": "Content/Extracted/MaterialDatabase/Ferry/SecurityCamera/Texture2D/SecurityCamera_Norm.tga",
+   "output_sha256": "507ed287261a93788c21d8a93e32a6f78c9bdf04ba0e344ab1ddc8edeb2d7211",
+   "uasset": "Content/Imported/MaterialDatabase/Ferry/SecurityCamera_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/Ferry/Ferry.upk#SecurityCamera_Opac",
+   "object": "SecurityCamera_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Ferry/SecurityCamera/Texture2D/SecurityCamera_Opac.tga",
+   "extracted_sha256": "1da8f25c6b55bc41a7edc62ff8cf2ee4850468eefcc475fba1fc3d61fd747605",
+   "output_file": "Content/Extracted/MaterialDatabase/Ferry/SecurityCamera/Texture2D/SecurityCamera_Opac.tga",
+   "output_sha256": "1da8f25c6b55bc41a7edc62ff8cf2ee4850468eefcc475fba1fc3d61fd747605",
+   "uasset": "Content/Imported/MaterialDatabase/Ferry/SecurityCamera_Opac.uasset"
+  }
+ ]
+}

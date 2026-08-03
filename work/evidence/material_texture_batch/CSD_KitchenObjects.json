@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "CSD_KitchenObjects",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/PropMaterials/CSD_KitchenObjects.upk",
+ "source_sha256": "51fe9e383123effa1fcce79ac43d2e7e432b0ea4b5b3c94d25cab59fd6a66651",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_KitchenObjects.upk#CSD_KitchenObjects_Pans_DiffSpec",
+   "object": "CSD_KitchenObjects_Pans_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_KitchenObjects/CSD_KitchenObjects/Texture2D/CSD_KitchenObjects_Pans_DiffSpec.tga",
+   "extracted_sha256": "9f144c1bb906868c1e1e20c1bd76691901b2f2630a14537825bcc315e1fb9bca",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_KitchenObjects/CSD_KitchenObjects/Texture2D/CSD_KitchenObjects_Pans_DiffSpec.tga",
+   "output_sha256": "9f144c1bb906868c1e1e20c1bd76691901b2f2630a14537825bcc315e1fb9bca",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_KitchenObjects/CSD_KitchenObjects_Pans_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_KitchenObjects.upk#CSD_KitchenObjects_Pans_Norm",
+   "object": "CSD_KitchenObjects_Pans_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_KitchenObjects/CSD_KitchenObjects/Texture2D/CSD_KitchenObjects_Pans_Norm.tga",
+   "extracted_sha256": "d0c91bcb485d741bb15e15f5fd79b13abc7d4b3fbfa54912bb0a1eacfe99ac73",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_KitchenObjects/CSD_KitchenObjects/Texture2D/CSD_KitchenObjects_Pans_Norm.tga",
+   "output_sha256": "d0c91bcb485d741bb15e15f5fd79b13abc7d4b3fbfa54912bb0a1eacfe99ac73",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_KitchenObjects/CSD_KitchenObjects_Pans_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_KitchenObjects.upk#MI_CSD_KitchenObjects_Pans_MAT",
+   "object": "MI_CSD_KitchenObjects_Pans_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CSD_KitchenObjects_Pans_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_KitchenObjects/CSD_KitchenObjects/Texture2D/CSD_KitchenObjects_Pans_DiffSpec.tga",
+   "extracted_sha256": "9f144c1bb906868c1e1e20c1bd76691901b2f2630a14537825bcc315e1fb9bca",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_KitchenObjects/CSD_KitchenObjects/Texture2D/CSD_KitchenObjects_Pans_DiffSpec.tga",
+   "output_sha256": "9f144c1bb906868c1e1e20c1bd76691901b2f2630a14537825bcc315e1fb9bca",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_KitchenObjects/MI_CSD_KitchenObjects_Pans_MAT.uasset"
+  }
+ ]
+}

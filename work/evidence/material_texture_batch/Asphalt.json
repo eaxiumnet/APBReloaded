@@ -1,0 +1,48 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Asphalt",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/Terrain/Asphalt.upk",
+ "source_sha256": "2b838f000d1dd06f13f70743812be80c9d7736bed77cee89e654781e89df3b1e",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Terrain/Asphalt.upk#MI_Asphalt_01",
+   "object": "MI_Asphalt_01",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Asphalt_01",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Asphalt/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "extracted_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "output_file": "Content/Extracted/MaterialDatabase/Asphalt/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "output_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "uasset": "Content/Imported/MaterialDatabase/Asphalt/MI_Asphalt_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Terrain/Asphalt.upk#MI_Asphalt_01_TwoSided",
+   "object": "MI_Asphalt_01_TwoSided",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Asphalt_01_TwoSided",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Asphalt/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "extracted_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "output_file": "Content/Extracted/MaterialDatabase/Asphalt/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "output_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "uasset": "Content/Imported/MaterialDatabase/Asphalt/MI_Asphalt_01_TwoSided.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Terrain/Asphalt.upk#Surface_DarkAsphalt_DiffSpec",
+   "object": "Surface_DarkAsphalt_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Asphalt/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "extracted_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "output_file": "Content/Extracted/MaterialDatabase/Asphalt/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "output_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "uasset": "Content/Imported/MaterialDatabase/Asphalt/Surface_DarkAsphalt_DiffSpec.uasset"
+  }
+ ]
+}

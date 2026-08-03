@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "CSD_Rubble",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Rubble.upk",
+ "source_sha256": "a0ced426347a91c620b968a38493479cdebc18fc4b7dc634b2b7bb285b1fa98a",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Rubble.upk#CSD_Rubble_Diffuse",
+   "object": "CSD_Rubble_Diffuse",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Rubble/CSD_Rubble/Texture2D/CSD_Rubble_Diffuse.tga",
+   "extracted_sha256": "96fe72d6132601b2894077e932890b1674037d73642e390e2d5517047ea8a296",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Rubble/CSD_Rubble/Texture2D/CSD_Rubble_Diffuse.tga",
+   "output_sha256": "96fe72d6132601b2894077e932890b1674037d73642e390e2d5517047ea8a296",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Rubble/CSD_Rubble_Diffuse.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Rubble.upk#CSD_Rubble_Norm",
+   "object": "CSD_Rubble_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Rubble/CSD_Rubble/Texture2D/CSD_Rubble_Norm.tga",
+   "extracted_sha256": "2fd12b04162fbc674bb316fd8f58d62bb796d92134245da0e713f829b6efc60e",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Rubble/CSD_Rubble/Texture2D/CSD_Rubble_Norm.tga",
+   "output_sha256": "2fd12b04162fbc674bb316fd8f58d62bb796d92134245da0e713f829b6efc60e",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Rubble/CSD_Rubble_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Rubble.upk#MI_CSD_Rubble_MAT",
+   "object": "MI_CSD_Rubble_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CSD_Rubble_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Rubble/CSD_Rubble/Texture2D/CSD_Rubble_Diffuse.tga",
+   "extracted_sha256": "96fe72d6132601b2894077e932890b1674037d73642e390e2d5517047ea8a296",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Rubble/CSD_Rubble/Texture2D/CSD_Rubble_Diffuse.tga",
+   "output_sha256": "96fe72d6132601b2894077e932890b1674037d73642e390e2d5517047ea8a296",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Rubble/MI_CSD_Rubble_MAT.uasset"
+  }
+ ]
+}

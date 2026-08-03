@@ -1,0 +1,34 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Concrete_Horizontal",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/Ceiling/Concrete_Horizontal.upk",
+ "source_sha256": "225c778d07edb901f081e022386e6fad8e1589fe5c49ec2a48ed2ed51354151b",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Ceiling/Concrete_Horizontal.upk#Concrete_Horizontal-Diff",
+   "object": "Concrete_Horizontal-Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Concrete_Horizontal/Concrete_Horizontal/Texture2D/Concrete_Horizontal-Diff.tga",
+   "extracted_sha256": "36e5b2d8ed6ee5212da9198bf641c82cecb6dd18854c467498f4eda180a9de1d",
+   "output_file": "Content/Extracted/MaterialDatabase/Concrete_Horizontal/Concrete_Horizontal/Texture2D/Concrete_Horizontal-Diff.tga",
+   "output_sha256": "36e5b2d8ed6ee5212da9198bf641c82cecb6dd18854c467498f4eda180a9de1d",
+   "uasset": "Content/Imported/MaterialDatabase/Concrete_Horizontal/Concrete_Horizontal-Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Ceiling/Concrete_Horizontal.upk#MI_Concrete_Horizontal_Mat",
+   "object": "MI_Concrete_Horizontal_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Concrete_Horizontal_Mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Concrete_Horizontal/Concrete_Horizontal/Texture2D/Concrete_Horizontal-Diff.tga",
+   "extracted_sha256": "36e5b2d8ed6ee5212da9198bf641c82cecb6dd18854c467498f4eda180a9de1d",
+   "output_file": "Content/Extracted/MaterialDatabase/Concrete_Horizontal/Concrete_Horizontal/Texture2D/Concrete_Horizontal-Diff.tga",
+   "output_sha256": "36e5b2d8ed6ee5212da9198bf641c82cecb6dd18854c467498f4eda180a9de1d",
+   "uasset": "Content/Imported/MaterialDatabase/Concrete_Horizontal/MI_Concrete_Horizontal_Mat.uasset"
+  }
+ ]
+}

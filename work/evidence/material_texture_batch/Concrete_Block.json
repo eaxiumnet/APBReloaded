@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Concrete_Block",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/ToBeRemoved/Concrete_Block.upk",
+ "source_sha256": "4990ae92341c1f8b3ebdceb9f5c3ba92ef55ce25634a708f8d26c39e672dd778",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/ToBeRemoved/Concrete_Block.upk#Concrete_Diff",
+   "object": "Concrete_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Concrete_Block/Concrete_Block/Texture2D/Concrete_Diff.tga",
+   "extracted_sha256": "dabaa5eb96d105425c176fc005b810e32a9233d8ef90e735323eeafa49912a22",
+   "output_file": "Content/Extracted/MaterialDatabase/Concrete_Block/Concrete_Block/Texture2D/Concrete_Diff.tga",
+   "output_sha256": "dabaa5eb96d105425c176fc005b810e32a9233d8ef90e735323eeafa49912a22",
+   "uasset": "Content/Imported/MaterialDatabase/Concrete_Block/Concrete_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/ToBeRemoved/Concrete_Block.upk#Concrete_Norm",
+   "object": "Concrete_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Concrete_Block/Concrete_Block/Texture2D/Concrete_Norm.tga",
+   "extracted_sha256": "e8572a90e68bba079966e4748cb04c320d598164e04b10a55e02488bfb0c3ff9",
+   "output_file": "Content/Extracted/MaterialDatabase/Concrete_Block/Concrete_Block/Texture2D/Concrete_Norm.tga",
+   "output_sha256": "e8572a90e68bba079966e4748cb04c320d598164e04b10a55e02488bfb0c3ff9",
+   "uasset": "Content/Imported/MaterialDatabase/Concrete_Block/Concrete_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/ToBeRemoved/Concrete_Block.upk#MI_Concrete_Block_Mat",
+   "object": "MI_Concrete_Block_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Concrete_Block_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Concrete_Block/Concrete_Block/Texture2D/Concrete_Diff.tga",
+   "extracted_sha256": "dabaa5eb96d105425c176fc005b810e32a9233d8ef90e735323eeafa49912a22",
+   "output_file": "Content/Extracted/MaterialDatabase/Concrete_Block/Concrete_Block/Texture2D/Concrete_Diff.tga",
+   "output_sha256": "dabaa5eb96d105425c176fc005b810e32a9233d8ef90e735323eeafa49912a22",
+   "uasset": "Content/Imported/MaterialDatabase/Concrete_Block/MI_Concrete_Block_Mat.uasset"
+  }
+ ]
+}

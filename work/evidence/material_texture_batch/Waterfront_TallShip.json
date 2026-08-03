@@ -1,0 +1,34 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Waterfront_TallShip",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/WaterfrontDistrict/PropMaterials/Waterfront_TallShip.upk",
+ "source_sha256": "da5f21dd6895178f273c55372f72e3e2c565dac4a18df589edcf4c31488d014e",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/Waterfront_TallShip.upk#MI_SHIP_Hull01_MAT",
+   "object": "MI_SHIP_Hull01_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "SHIP_Hull01_MAT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Waterfront_TallShip/Waterfront_TallShip/Texture2D/SHIP_Hull01.tga",
+   "extracted_sha256": "ae19641dce4b6b33af28ebe830974e9178ef9b3138df9da9e621df79dd077f28",
+   "output_file": "Content/Extracted/MaterialDatabase/Waterfront_TallShip/Waterfront_TallShip/Texture2D/SHIP_Hull01.tga",
+   "output_sha256": "ae19641dce4b6b33af28ebe830974e9178ef9b3138df9da9e621df79dd077f28",
+   "uasset": "Content/Imported/MaterialDatabase/Waterfront_TallShip/MI_SHIP_Hull01_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/Waterfront_TallShip.upk#SHIP_Hull01",
+   "object": "SHIP_Hull01",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Waterfront_TallShip/Waterfront_TallShip/Texture2D/SHIP_Hull01.tga",
+   "extracted_sha256": "ae19641dce4b6b33af28ebe830974e9178ef9b3138df9da9e621df79dd077f28",
+   "output_file": "Content/Extracted/MaterialDatabase/Waterfront_TallShip/Waterfront_TallShip/Texture2D/SHIP_Hull01.tga",
+   "output_sha256": "ae19641dce4b6b33af28ebe830974e9178ef9b3138df9da9e621df79dd077f28",
+   "uasset": "Content/Imported/MaterialDatabase/Waterfront_TallShip/SHIP_Hull01.uasset"
+  }
+ ]
+}

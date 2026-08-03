@@ -1,0 +1,60 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Tree",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/Tree.upk",
+ "source_sha256": "b1935d78855a0b128df80dcebcee7781f635b84425048d24f2827d5fe15bc661",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Tree.upk#MI_Tree_Mat",
+   "object": "MI_Tree_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Tree_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Tree/Tree/Texture2D/Tree_DiffSpec.tga",
+   "extracted_sha256": "02806b71871a1e0a5c13ef97734b3e38a8bb25ec6273978dcf10b4044a60b1f9",
+   "output_file": "Content/Extracted/MaterialDatabase/Tree/Tree/Texture2D/Tree_DiffSpec.tga",
+   "output_sha256": "02806b71871a1e0a5c13ef97734b3e38a8bb25ec6273978dcf10b4044a60b1f9",
+   "uasset": "Content/Imported/MaterialDatabase/Tree/MI_Tree_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Tree.upk#Tree_DiffSpec",
+   "object": "Tree_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Tree/Tree/Texture2D/Tree_DiffSpec.tga",
+   "extracted_sha256": "02806b71871a1e0a5c13ef97734b3e38a8bb25ec6273978dcf10b4044a60b1f9",
+   "output_file": "Content/Extracted/MaterialDatabase/Tree/Tree/Texture2D/Tree_DiffSpec.tga",
+   "output_sha256": "02806b71871a1e0a5c13ef97734b3e38a8bb25ec6273978dcf10b4044a60b1f9",
+   "uasset": "Content/Imported/MaterialDatabase/Tree/Tree_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Tree.upk#Tree_Norm",
+   "object": "Tree_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Tree/Tree/Texture2D/Tree_Norm.tga",
+   "extracted_sha256": "6302c918a94086c2855fc97ca8542901b4ce842603b9b27fb0987d943c8b6b76",
+   "output_file": "Content/Extracted/MaterialDatabase/Tree/Tree/Texture2D/Tree_Norm.tga",
+   "output_sha256": "6302c918a94086c2855fc97ca8542901b4ce842603b9b27fb0987d943c8b6b76",
+   "uasset": "Content/Imported/MaterialDatabase/Tree/Tree_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Tree.upk#Tree_Opac",
+   "object": "Tree_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Tree/Tree/Texture2D/Tree_Opac.tga",
+   "extracted_sha256": "edba387b2d5df6aac834806e0779a488078ad40ec638615129af033246e470c4",
+   "output_file": "Content/Extracted/MaterialDatabase/Tree/Tree/Texture2D/Tree_Opac.tga",
+   "output_sha256": "edba387b2d5df6aac834806e0779a488078ad40ec638615129af033246e470c4",
+   "uasset": "Content/Imported/MaterialDatabase/Tree/Tree_Opac.uasset"
+  }
+ ]
+}

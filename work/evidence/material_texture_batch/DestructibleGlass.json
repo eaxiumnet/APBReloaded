@@ -1,0 +1,86 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "DestructibleGlass",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/DestructibleGlass.upk",
+ "source_sha256": "ca4f75fc5ad6e68d402aca3cc30967dc876ef7d8abf63b864305b217136a8217",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/DestructibleGlass.upk#crackedglass",
+   "object": "crackedglass",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/DestructibleGlass/PropsGenericMaterials/Texture2D/crackedglass.tga",
+   "extracted_sha256": "dfa317aa7fb2240af7f70a04291e38bffe78163ed2df9334514b23bb823cc808",
+   "output_file": "Content/Extracted/MaterialDatabase/DestructibleGlass/PropsGenericMaterials/Texture2D/crackedglass.tga",
+   "output_sha256": "dfa317aa7fb2240af7f70a04291e38bffe78163ed2df9334514b23bb823cc808",
+   "uasset": "Content/Imported/MaterialDatabase/DestructibleGlass/crackedglass.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/DestructibleGlass.upk#CrackedGlass_Norm",
+   "object": "CrackedGlass_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/DestructibleGlass/PropsGenericMaterials/Texture2D/CrackedGlass_Norm.tga",
+   "extracted_sha256": "785619d634027205ac11fddf228e8ff86e308e8ec9386fb9c8d74e1e34b242c3",
+   "output_file": "Content/Extracted/MaterialDatabase/DestructibleGlass/PropsGenericMaterials/Texture2D/CrackedGlass_Norm.tga",
+   "output_sha256": "785619d634027205ac11fddf228e8ff86e308e8ec9386fb9c8d74e1e34b242c3",
+   "uasset": "Content/Imported/MaterialDatabase/DestructibleGlass/CrackedGlass_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/DestructibleGlass.upk#MI_CrackedPropGlass",
+   "object": "MI_CrackedPropGlass",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CrackedPropGlass",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/DestructibleGlass/PropsGenericMaterials/Texture2D/crackedglass.tga",
+   "extracted_sha256": "dfa317aa7fb2240af7f70a04291e38bffe78163ed2df9334514b23bb823cc808",
+   "output_file": "Content/Extracted/MaterialDatabase/DestructibleGlass/PropsGenericMaterials/Texture2D/crackedglass.tga",
+   "output_sha256": "dfa317aa7fb2240af7f70a04291e38bffe78163ed2df9334514b23bb823cc808",
+   "uasset": "Content/Imported/MaterialDatabase/DestructibleGlass/MI_CrackedPropGlass.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/DestructibleGlass.upk#MI_RamRaidShopFront_MAT",
+   "object": "MI_RamRaidShopFront_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RamRaidShopFront_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/DestructibleGlass/ShopFront_Textures/Texture2D/RamRaidShopFront_DiffSpec.tga",
+   "extracted_sha256": "285a89c0ec0a87acfa376e7ac6b81d10c4c2d40c5118056e8656a21c2803dd5b",
+   "output_file": "Content/Extracted/MaterialDatabase/DestructibleGlass/ShopFront_Textures/Texture2D/RamRaidShopFront_DiffSpec.tga",
+   "output_sha256": "285a89c0ec0a87acfa376e7ac6b81d10c4c2d40c5118056e8656a21c2803dd5b",
+   "uasset": "Content/Imported/MaterialDatabase/DestructibleGlass/MI_RamRaidShopFront_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/DestructibleGlass.upk#RamRaidShopFront_DiffSpec",
+   "object": "RamRaidShopFront_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/DestructibleGlass/ShopFront_Textures/Texture2D/RamRaidShopFront_DiffSpec.tga",
+   "extracted_sha256": "285a89c0ec0a87acfa376e7ac6b81d10c4c2d40c5118056e8656a21c2803dd5b",
+   "output_file": "Content/Extracted/MaterialDatabase/DestructibleGlass/ShopFront_Textures/Texture2D/RamRaidShopFront_DiffSpec.tga",
+   "output_sha256": "285a89c0ec0a87acfa376e7ac6b81d10c4c2d40c5118056e8656a21c2803dd5b",
+   "uasset": "Content/Imported/MaterialDatabase/DestructibleGlass/RamRaidShopFront_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/DestructibleGlass.upk#RamRaidShopFront_Norm",
+   "object": "RamRaidShopFront_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/DestructibleGlass/ShopFront_Textures/Texture2D/RamRaidShopFront_Norm.tga",
+   "extracted_sha256": "2f80b7714be8bdc0dfee3413fc776ee2e97289db41df2968342f2a22e82afe3f",
+   "output_file": "Content/Extracted/MaterialDatabase/DestructibleGlass/ShopFront_Textures/Texture2D/RamRaidShopFront_Norm.tga",
+   "output_sha256": "2f80b7714be8bdc0dfee3413fc776ee2e97289db41df2968342f2a22e82afe3f",
+   "uasset": "Content/Imported/MaterialDatabase/DestructibleGlass/RamRaidShopFront_Norm.uasset"
+  }
+ ]
+}

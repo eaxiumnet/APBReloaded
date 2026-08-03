@@ -1,0 +1,35 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "ExitSigns",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/FeatureMaterials/ExitSigns.upk",
+ "source_sha256": "4db00dcff744052871763d162c0b36859cc00f80683fb75381d40e9aabecef50",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/ExitSigns.upk#ExitSigns_DiffAlpha",
+   "object": "ExitSigns_DiffAlpha",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ExitSigns/ExitSigns/Texture2D/ExitSigns_DiffAlpha.tga",
+   "extracted_sha256": "57810e404513e8c18926126123d0fb95c4d5cf307a65533b82b069c7e75c2c9d",
+   "output_file": "Content/Extracted/MaterialDatabase/ExitSigns/ExitSigns/Texture2D/ExitSigns_DiffAlpha.tga",
+   "output_sha256": "57810e404513e8c18926126123d0fb95c4d5cf307a65533b82b069c7e75c2c9d",
+   "uasset": "Content/Imported/MaterialDatabase/ExitSigns/ExitSigns_DiffAlpha.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/ExitSigns.upk#MI_exitsigns",
+   "object": "MI_exitsigns",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "exitsigns",
+   "texture_roles": [
+    "Diffuse",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ExitSigns/ExitSigns/Texture2D/ExitSigns_DiffAlpha.tga",
+   "extracted_sha256": "57810e404513e8c18926126123d0fb95c4d5cf307a65533b82b069c7e75c2c9d",
+   "output_file": "Content/Extracted/MaterialDatabase/ExitSigns/ExitSigns/Texture2D/ExitSigns_DiffAlpha.tga",
+   "output_sha256": "57810e404513e8c18926126123d0fb95c4d5cf307a65533b82b069c7e75c2c9d",
+   "uasset": "Content/Imported/MaterialDatabase/ExitSigns/MI_exitsigns.uasset"
+  }
+ ]
+}

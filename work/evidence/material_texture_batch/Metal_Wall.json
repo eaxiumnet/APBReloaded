@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Metal_Wall",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/Metal/Metal_Wall.upk",
+ "source_sha256": "1d25b00b78b9947e01ac2743331d201d5d2c6041cd8391f46a3a10a305b35374",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal_Wall.upk#Metal_Wall_DiffSpec",
+   "object": "Metal_Wall_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal_Wall/Metal_Wall/Texture2D/Metal_Wall_DiffSpec.tga",
+   "extracted_sha256": "a7097181170849a042bc6447101899a3a8a87e8341828bacf50f0cd15524c352",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal_Wall/Metal_Wall/Texture2D/Metal_Wall_DiffSpec.tga",
+   "output_sha256": "a7097181170849a042bc6447101899a3a8a87e8341828bacf50f0cd15524c352",
+   "uasset": "Content/Imported/MaterialDatabase/Metal_Wall/Metal_Wall_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal_Wall.upk#Metal_Wall_Norm",
+   "object": "Metal_Wall_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal_Wall/Metal_Wall/Texture2D/Metal_Wall_Norm.tga",
+   "extracted_sha256": "2d717627146f82c00d3a1024aa3ad98cc5ba357f3a7368c45cbaee6af0507f89",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal_Wall/Metal_Wall/Texture2D/Metal_Wall_Norm.tga",
+   "output_sha256": "2d717627146f82c00d3a1024aa3ad98cc5ba357f3a7368c45cbaee6af0507f89",
+   "uasset": "Content/Imported/MaterialDatabase/Metal_Wall/Metal_Wall_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal_Wall.upk#MI_Metal_Wall_Mat",
+   "object": "MI_Metal_Wall_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_Wall_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal_Wall/Metal_Wall/Texture2D/Metal_Wall_DiffSpec.tga",
+   "extracted_sha256": "a7097181170849a042bc6447101899a3a8a87e8341828bacf50f0cd15524c352",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal_Wall/Metal_Wall/Texture2D/Metal_Wall_DiffSpec.tga",
+   "output_sha256": "a7097181170849a042bc6447101899a3a8a87e8341828bacf50f0cd15524c352",
+   "uasset": "Content/Imported/MaterialDatabase/Metal_Wall/MI_Metal_Wall_Mat.uasset"
+  }
+ ]
+}

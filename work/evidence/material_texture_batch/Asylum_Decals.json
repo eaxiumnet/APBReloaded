@@ -1,0 +1,198 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Asylum_Decals",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/PropMaterials/Asylum_Decals.upk",
+ "source_sha256": "0d18afbbb55753c51f491512aeebd03b2234f97e24f1b6463968ab81889ac2ae",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Asylum_Decals.upk#AsylumLogo_01",
+   "object": "AsylumLogo_01",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Asylum_Decals/Asylum_Decals/Texture2D/AsylumLogo_01.tga",
+   "extracted_sha256": "b8e6b442f9a2d6fd619950b99c6b79ecb806caee09941d4d4796171e5ed5cbd7",
+   "output_file": "Content/Extracted/MaterialDatabase/Asylum_Decals/Asylum_Decals/Texture2D/AsylumLogo_01.tga",
+   "output_sha256": "b8e6b442f9a2d6fd619950b99c6b79ecb806caee09941d4d4796171e5ed5cbd7",
+   "uasset": "Content/Imported/MaterialDatabase/Asylum_Decals/AsylumLogo_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Asylum_Decals.upk#Feet_CurvedLeft_Red",
+   "object": "Feet_CurvedLeft_Red",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Asylum_Decals/Asylum_Decals/Texture2D/Feet_CurvedLeft_Red.tga",
+   "extracted_sha256": "28930d37d1adeae7ba70d861fe7a92302d91d142a22507cf206a54a903d8a8fd",
+   "output_file": "Content/Extracted/MaterialDatabase/Asylum_Decals/Asylum_Decals/Texture2D/Feet_CurvedLeft_Red.tga",
+   "output_sha256": "28930d37d1adeae7ba70d861fe7a92302d91d142a22507cf206a54a903d8a8fd",
+   "uasset": "Content/Imported/MaterialDatabase/Asylum_Decals/Feet_CurvedLeft_Red.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Asylum_Decals.upk#Feet_CurvedRight_01_White",
+   "object": "Feet_CurvedRight_01_White",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Asylum_Decals/Asylum_Decals/Texture2D/Feet_CurvedRight_01_White.tga",
+   "extracted_sha256": "a62aafbe116b884f50da1627dcb39895d22c973ff62b5e8d800c38ba374fcd70",
+   "output_file": "Content/Extracted/MaterialDatabase/Asylum_Decals/Asylum_Decals/Texture2D/Feet_CurvedRight_01_White.tga",
+   "output_sha256": "a62aafbe116b884f50da1627dcb39895d22c973ff62b5e8d800c38ba374fcd70",
+   "uasset": "Content/Imported/MaterialDatabase/Asylum_Decals/Feet_CurvedRight_01_White.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Asylum_Decals.upk#MI_Asylum_Feet_Decal_PARENT_MAT",
+   "object": "MI_Asylum_Feet_Decal_PARENT_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Asylum_Feet_Decal_PARENT_MAT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Asylum_Decals/Asylum_Decals/Texture2D/Feet_CurvedRight_01_White.tga",
+   "extracted_sha256": "a62aafbe116b884f50da1627dcb39895d22c973ff62b5e8d800c38ba374fcd70",
+   "output_file": "Content/Extracted/MaterialDatabase/Asylum_Decals/Asylum_Decals/Texture2D/Feet_CurvedRight_01_White.tga",
+   "output_sha256": "a62aafbe116b884f50da1627dcb39895d22c973ff62b5e8d800c38ba374fcd70",
+   "uasset": "Content/Imported/MaterialDatabase/Asylum_Decals/MI_Asylum_Feet_Decal_PARENT_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Asylum_Decals.upk#MI_Asylum_FeetCurvedLeftRed_Decal_MAT_INST",
+   "object": "MI_Asylum_FeetCurvedLeftRed_Decal_MAT_INST",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Asylum_FeetCurvedLeftRed_Decal_MAT_INST",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Asylum_Decals/Asylum_Decals/Texture2D/Feet_CurvedRight_01_White.tga",
+   "extracted_sha256": "a62aafbe116b884f50da1627dcb39895d22c973ff62b5e8d800c38ba374fcd70",
+   "output_file": "Content/Extracted/MaterialDatabase/Asylum_Decals/Asylum_Decals/Texture2D/Feet_CurvedRight_01_White.tga",
+   "output_sha256": "a62aafbe116b884f50da1627dcb39895d22c973ff62b5e8d800c38ba374fcd70",
+   "uasset": "Content/Imported/MaterialDatabase/Asylum_Decals/MI_Asylum_FeetCurvedLeftRed_Decal_MAT_INST.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Asylum_Decals.upk#MI_Asylum_FeetCurvedLeftWhite_Decal_MAT_INST",
+   "object": "MI_Asylum_FeetCurvedLeftWhite_Decal_MAT_INST",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Asylum_FeetCurvedLeftWhite_Decal_MAT_INST",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Asylum_Decals/Asylum_Decals/Texture2D/Feet_CurvedRight_01_White.tga",
+   "extracted_sha256": "a62aafbe116b884f50da1627dcb39895d22c973ff62b5e8d800c38ba374fcd70",
+   "output_file": "Content/Extracted/MaterialDatabase/Asylum_Decals/Asylum_Decals/Texture2D/Feet_CurvedRight_01_White.tga",
+   "output_sha256": "a62aafbe116b884f50da1627dcb39895d22c973ff62b5e8d800c38ba374fcd70",
+   "uasset": "Content/Imported/MaterialDatabase/Asylum_Decals/MI_Asylum_FeetCurvedLeftWhite_Decal_MAT_INST.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Asylum_Decals.upk#MI_Asylum_FeetCurvedRightRed_Decal_MAT_INST",
+   "object": "MI_Asylum_FeetCurvedRightRed_Decal_MAT_INST",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Asylum_FeetCurvedRightRed_Decal_MAT_INST",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Asylum_Decals/Asylum_Decals/Texture2D/Feet_CurvedRight_01_White.tga",
+   "extracted_sha256": "a62aafbe116b884f50da1627dcb39895d22c973ff62b5e8d800c38ba374fcd70",
+   "output_file": "Content/Extracted/MaterialDatabase/Asylum_Decals/Asylum_Decals/Texture2D/Feet_CurvedRight_01_White.tga",
+   "output_sha256": "a62aafbe116b884f50da1627dcb39895d22c973ff62b5e8d800c38ba374fcd70",
+   "uasset": "Content/Imported/MaterialDatabase/Asylum_Decals/MI_Asylum_FeetCurvedRightRed_Decal_MAT_INST.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Asylum_Decals.upk#MI_Asylum_FeetCurvedRightWhite_Decal_MAT_INST",
+   "object": "MI_Asylum_FeetCurvedRightWhite_Decal_MAT_INST",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Asylum_FeetCurvedRightWhite_Decal_MAT_INST",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Asylum_Decals/Asylum_Decals/Texture2D/Feet_CurvedRight_01_White.tga",
+   "extracted_sha256": "a62aafbe116b884f50da1627dcb39895d22c973ff62b5e8d800c38ba374fcd70",
+   "output_file": "Content/Extracted/MaterialDatabase/Asylum_Decals/Asylum_Decals/Texture2D/Feet_CurvedRight_01_White.tga",
+   "output_sha256": "a62aafbe116b884f50da1627dcb39895d22c973ff62b5e8d800c38ba374fcd70",
+   "uasset": "Content/Imported/MaterialDatabase/Asylum_Decals/MI_Asylum_FeetCurvedRightWhite_Decal_MAT_INST.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Asylum_Decals.upk#MI_Asylum_FeetStraightRed_Decal_MAT_INST",
+   "object": "MI_Asylum_FeetStraightRed_Decal_MAT_INST",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Asylum_FeetStraightRed_Decal_MAT_INST",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Asylum_Decals/Asylum_Decals/Texture2D/Feet_CurvedRight_01_White.tga",
+   "extracted_sha256": "a62aafbe116b884f50da1627dcb39895d22c973ff62b5e8d800c38ba374fcd70",
+   "output_file": "Content/Extracted/MaterialDatabase/Asylum_Decals/Asylum_Decals/Texture2D/Feet_CurvedRight_01_White.tga",
+   "output_sha256": "a62aafbe116b884f50da1627dcb39895d22c973ff62b5e8d800c38ba374fcd70",
+   "uasset": "Content/Imported/MaterialDatabase/Asylum_Decals/MI_Asylum_FeetStraightRed_Decal_MAT_INST.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Asylum_Decals.upk#MI_Asylum_FeetStraightWhite_Decal_MAT_INST",
+   "object": "MI_Asylum_FeetStraightWhite_Decal_MAT_INST",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Asylum_FeetStraightWhite_Decal_MAT_INST",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Asylum_Decals/Asylum_Decals/Texture2D/Feet_CurvedRight_01_White.tga",
+   "extracted_sha256": "a62aafbe116b884f50da1627dcb39895d22c973ff62b5e8d800c38ba374fcd70",
+   "output_file": "Content/Extracted/MaterialDatabase/Asylum_Decals/Asylum_Decals/Texture2D/Feet_CurvedRight_01_White.tga",
+   "output_sha256": "a62aafbe116b884f50da1627dcb39895d22c973ff62b5e8d800c38ba374fcd70",
+   "uasset": "Content/Imported/MaterialDatabase/Asylum_Decals/MI_Asylum_FeetStraightWhite_Decal_MAT_INST.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Asylum_Decals.upk#MI_Asylum_Logo_Decal_PARENT_MAT",
+   "object": "MI_Asylum_Logo_Decal_PARENT_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Asylum_Logo_Decal_PARENT_MAT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Asylum_Decals/Asylum_Decals/Texture2D/AsylumLogo_01.tga",
+   "extracted_sha256": "b8e6b442f9a2d6fd619950b99c6b79ecb806caee09941d4d4796171e5ed5cbd7",
+   "output_file": "Content/Extracted/MaterialDatabase/Asylum_Decals/Asylum_Decals/Texture2D/AsylumLogo_01.tga",
+   "output_sha256": "b8e6b442f9a2d6fd619950b99c6b79ecb806caee09941d4d4796171e5ed5cbd7",
+   "uasset": "Content/Imported/MaterialDatabase/Asylum_Decals/MI_Asylum_Logo_Decal_PARENT_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Asylum_Decals.upk#MI_Asylum_LOGOClean_MAT_INST",
+   "object": "MI_Asylum_LOGOClean_MAT_INST",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Asylum_LOGOClean_MAT_INST",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Asylum_Decals/Asylum_Decals/Texture2D/Feet_CurvedRight_01_White.tga",
+   "extracted_sha256": "a62aafbe116b884f50da1627dcb39895d22c973ff62b5e8d800c38ba374fcd70",
+   "output_file": "Content/Extracted/MaterialDatabase/Asylum_Decals/Asylum_Decals/Texture2D/Feet_CurvedRight_01_White.tga",
+   "output_sha256": "a62aafbe116b884f50da1627dcb39895d22c973ff62b5e8d800c38ba374fcd70",
+   "uasset": "Content/Imported/MaterialDatabase/Asylum_Decals/MI_Asylum_LOGOClean_MAT_INST.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Asylum_Decals.upk#MI_Asylum_LOGOText_MAT_INST",
+   "object": "MI_Asylum_LOGOText_MAT_INST",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Asylum_LOGOText_MAT_INST",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Asylum_Decals/Asylum_Decals/Texture2D/Feet_CurvedRight_01_White.tga",
+   "extracted_sha256": "a62aafbe116b884f50da1627dcb39895d22c973ff62b5e8d800c38ba374fcd70",
+   "output_file": "Content/Extracted/MaterialDatabase/Asylum_Decals/Asylum_Decals/Texture2D/Feet_CurvedRight_01_White.tga",
+   "output_sha256": "a62aafbe116b884f50da1627dcb39895d22c973ff62b5e8d800c38ba374fcd70",
+   "uasset": "Content/Imported/MaterialDatabase/Asylum_Decals/MI_Asylum_LOGOText_MAT_INST.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Asylum_Decals.upk#MI_Feet_CurvedLeft_Red_MAT",
+   "object": "MI_Feet_CurvedLeft_Red_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Feet_CurvedLeft_Red_MAT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Asylum_Decals/Asylum_Decals/Texture2D/Feet_CurvedLeft_Red.tga",
+   "extracted_sha256": "28930d37d1adeae7ba70d861fe7a92302d91d142a22507cf206a54a903d8a8fd",
+   "output_file": "Content/Extracted/MaterialDatabase/Asylum_Decals/Asylum_Decals/Texture2D/Feet_CurvedLeft_Red.tga",
+   "output_sha256": "28930d37d1adeae7ba70d861fe7a92302d91d142a22507cf206a54a903d8a8fd",
+   "uasset": "Content/Imported/MaterialDatabase/Asylum_Decals/MI_Feet_CurvedLeft_Red_MAT.uasset"
+  }
+ ]
+}

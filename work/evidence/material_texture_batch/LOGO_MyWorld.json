@@ -1,0 +1,34 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "LOGO_MyWorld",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/SocialDistrict/PropMaterials/LOGO_MyWorld.upk",
+ "source_sha256": "ff5d9aa3b40b030b2ab6791dfee56edb39f416f68e2f8cf77f97eaf0468341d6",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/LOGO_MyWorld.upk#MI_LOGO_MyWorld",
+   "object": "MI_LOGO_MyWorld",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "LOGO_MyWorld",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/LOGO_MyWorld/LOGO_MyWorld/Texture2D/MyWorlds.tga",
+   "extracted_sha256": "a2ddaa549998be39f8e1c9aa9d6762381748364260f1c401cf9468bb14d728bd",
+   "output_file": "Content/Extracted/MaterialDatabase/LOGO_MyWorld/LOGO_MyWorld/Texture2D/MyWorlds.tga",
+   "output_sha256": "a2ddaa549998be39f8e1c9aa9d6762381748364260f1c401cf9468bb14d728bd",
+   "uasset": "Content/Imported/MaterialDatabase/LOGO_MyWorld/MI_LOGO_MyWorld.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/LOGO_MyWorld.upk#MyWorlds",
+   "object": "MyWorlds",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/LOGO_MyWorld/LOGO_MyWorld/Texture2D/MyWorlds.tga",
+   "extracted_sha256": "a2ddaa549998be39f8e1c9aa9d6762381748364260f1c401cf9468bb14d728bd",
+   "output_file": "Content/Extracted/MaterialDatabase/LOGO_MyWorld/LOGO_MyWorld/Texture2D/MyWorlds.tga",
+   "output_sha256": "a2ddaa549998be39f8e1c9aa9d6762381748364260f1c401cf9468bb14d728bd",
+   "uasset": "Content/Imported/MaterialDatabase/LOGO_MyWorld/MyWorlds.uasset"
+  }
+ ]
+}

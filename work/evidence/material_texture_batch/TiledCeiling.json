@@ -1,0 +1,35 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "TiledCeiling",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/EnforcerSocialDistrict/TiledCeiling.upk",
+ "source_sha256": "619dd526cdf14adf4a3e961163a32c6e728ffaecd2529d71aa1d85e36f4076a9",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/TiledCeiling.upk#MI_TiledCeiling_Mat",
+   "object": "MI_TiledCeiling_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "TiledCeiling_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/TiledCeiling/TiledCeiling/Texture2D/TiledCeiling_NormDiff.tga",
+   "extracted_sha256": "9adf03ec3393d972ae482e8da46b5c6232eb4c65ca330920000f4022e573fe3f",
+   "output_file": "Content/Extracted/MaterialDatabase/TiledCeiling/TiledCeiling/Texture2D/TiledCeiling_NormDiff.tga",
+   "output_sha256": "9adf03ec3393d972ae482e8da46b5c6232eb4c65ca330920000f4022e573fe3f",
+   "uasset": "Content/Imported/MaterialDatabase/TiledCeiling/MI_TiledCeiling_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/TiledCeiling.upk#TiledCeiling_NormDiff",
+   "object": "TiledCeiling_NormDiff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/TiledCeiling/TiledCeiling/Texture2D/TiledCeiling_NormDiff.tga",
+   "extracted_sha256": "9adf03ec3393d972ae482e8da46b5c6232eb4c65ca330920000f4022e573fe3f",
+   "output_file": "Content/Extracted/MaterialDatabase/TiledCeiling/TiledCeiling/Texture2D/TiledCeiling_NormDiff.tga",
+   "output_sha256": "9adf03ec3393d972ae482e8da46b5c6232eb4c65ca330920000f4022e573fe3f",
+   "uasset": "Content/Imported/MaterialDatabase/TiledCeiling/TiledCeiling_NormDiff.uasset"
+  }
+ ]
+}

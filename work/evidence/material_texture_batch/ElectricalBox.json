@@ -1,0 +1,62 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "ElectricalBox",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/ElectricalBox.upk",
+ "source_sha256": "6acc0d8028687840163f26c459104bdf0eb2dc456fa470991c7b41b1c614dd9e",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/ElectricalBox.upk#ElectricalBox_DiffSpec",
+   "object": "ElectricalBox_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ElectricalBox/ElectricalBox/Texture2D/ElectricalBox_DiffSpec.tga",
+   "extracted_sha256": "28d9b71bd21e443a1b3d4c0d41f7b7eea95745ee4e994bbea22e357f4ebb48a0",
+   "output_file": "Content/Extracted/MaterialDatabase/ElectricalBox/ElectricalBox/Texture2D/ElectricalBox_DiffSpec.tga",
+   "output_sha256": "28d9b71bd21e443a1b3d4c0d41f7b7eea95745ee4e994bbea22e357f4ebb48a0",
+   "uasset": "Content/Imported/MaterialDatabase/ElectricalBox/ElectricalBox_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/ElectricalBox.upk#ElectricalBox_Norm",
+   "object": "ElectricalBox_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ElectricalBox/ElectricalBox/Texture2D/ElectricalBox_Norm.tga",
+   "extracted_sha256": "5d12c5a10b1b2e3e02c5273c88a625e2d04995f07c24d5064acd107b4ed48ddd",
+   "output_file": "Content/Extracted/MaterialDatabase/ElectricalBox/ElectricalBox/Texture2D/ElectricalBox_Norm.tga",
+   "output_sha256": "5d12c5a10b1b2e3e02c5273c88a625e2d04995f07c24d5064acd107b4ed48ddd",
+   "uasset": "Content/Imported/MaterialDatabase/ElectricalBox/ElectricalBox_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/ElectricalBox.upk#MI_ElectricalBox_Damage_Mat",
+   "object": "MI_ElectricalBox_Damage_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "ElectricalBox_Damage_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ElectricalBox/ElectricalBox/Texture2D/ElectricalBox_DiffSpec.tga",
+   "extracted_sha256": "28d9b71bd21e443a1b3d4c0d41f7b7eea95745ee4e994bbea22e357f4ebb48a0",
+   "output_file": "Content/Extracted/MaterialDatabase/ElectricalBox/ElectricalBox/Texture2D/ElectricalBox_DiffSpec.tga",
+   "output_sha256": "28d9b71bd21e443a1b3d4c0d41f7b7eea95745ee4e994bbea22e357f4ebb48a0",
+   "uasset": "Content/Imported/MaterialDatabase/ElectricalBox/MI_ElectricalBox_Damage_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/ElectricalBox.upk#MI_ElectricalBox_Mat",
+   "object": "MI_ElectricalBox_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "ElectricalBox_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ElectricalBox/ElectricalBox/Texture2D/ElectricalBox_DiffSpec.tga",
+   "extracted_sha256": "28d9b71bd21e443a1b3d4c0d41f7b7eea95745ee4e994bbea22e357f4ebb48a0",
+   "output_file": "Content/Extracted/MaterialDatabase/ElectricalBox/ElectricalBox/Texture2D/ElectricalBox_DiffSpec.tga",
+   "output_sha256": "28d9b71bd21e443a1b3d4c0d41f7b7eea95745ee4e994bbea22e357f4ebb48a0",
+   "uasset": "Content/Imported/MaterialDatabase/ElectricalBox/MI_ElectricalBox_Mat.uasset"
+  }
+ ]
+}

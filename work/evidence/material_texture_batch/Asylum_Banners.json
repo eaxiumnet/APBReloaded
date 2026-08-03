@@ -1,0 +1,191 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Asylum_Banners",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/PropMaterials/Asylum_Banners.upk",
+ "source_sha256": "b43b1c48b03dbcf761f0f847838710d487f78442823c6c103225be2dd4952ac5",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Asylum_Banners.upk#AsylumBanners_MainBracket_Diff",
+   "object": "AsylumBanners_MainBracket_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Asylum_Banners/Asylum_Banners/Texture2D/AsylumBanners_MainBracket_Diff.tga",
+   "extracted_sha256": "3caea0d219f25adc20c12ede5fa76e8e63233e231981d46b935fd7f782165235",
+   "output_file": "Content/Extracted/MaterialDatabase/Asylum_Banners/Asylum_Banners/Texture2D/AsylumBanners_MainBracket_Diff.tga",
+   "output_sha256": "3caea0d219f25adc20c12ede5fa76e8e63233e231981d46b935fd7f782165235",
+   "uasset": "Content/Imported/MaterialDatabase/Asylum_Banners/AsylumBanners_MainBracket_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Asylum_Banners.upk#AsylumBanners_MainBracket_Norm",
+   "object": "AsylumBanners_MainBracket_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Asylum_Banners/Asylum_Banners/Texture2D/AsylumBanners_MainBracket_Norm.tga",
+   "extracted_sha256": "f5421f6ec2076e06f60321f423667a0bdee86e6715a86f83408ac1fb20d50c1d",
+   "output_file": "Content/Extracted/MaterialDatabase/Asylum_Banners/Asylum_Banners/Texture2D/AsylumBanners_MainBracket_Norm.tga",
+   "output_sha256": "f5421f6ec2076e06f60321f423667a0bdee86e6715a86f83408ac1fb20d50c1d",
+   "uasset": "Content/Imported/MaterialDatabase/Asylum_Banners/AsylumBanners_MainBracket_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Asylum_Banners.upk#AsylumBanners_MainHoriz_Diff",
+   "object": "AsylumBanners_MainHoriz_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Asylum_Banners/Asylum_Banners/Texture2D/AsylumBanners_MainHoriz_Diff.tga",
+   "extracted_sha256": "40f210da9a93d6e16f5ed6d03f00ad3c63224c342adc3ebb3691b17afe948136",
+   "output_file": "Content/Extracted/MaterialDatabase/Asylum_Banners/Asylum_Banners/Texture2D/AsylumBanners_MainHoriz_Diff.tga",
+   "output_sha256": "40f210da9a93d6e16f5ed6d03f00ad3c63224c342adc3ebb3691b17afe948136",
+   "uasset": "Content/Imported/MaterialDatabase/Asylum_Banners/AsylumBanners_MainHoriz_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Asylum_Banners.upk#AsylumBanners_MainHoriz_Norm",
+   "object": "AsylumBanners_MainHoriz_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Asylum_Banners/Asylum_Banners/Texture2D/AsylumBanners_MainHoriz_Norm.tga",
+   "extracted_sha256": "38babdfc108a67bfcc38f93541c1c526ee42d3a84f96ea75e7fb01f78cdbfc8e",
+   "output_file": "Content/Extracted/MaterialDatabase/Asylum_Banners/Asylum_Banners/Texture2D/AsylumBanners_MainHoriz_Norm.tga",
+   "output_sha256": "38babdfc108a67bfcc38f93541c1c526ee42d3a84f96ea75e7fb01f78cdbfc8e",
+   "uasset": "Content/Imported/MaterialDatabase/Asylum_Banners/AsylumBanners_MainHoriz_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Asylum_Banners.upk#MI_Asylum_Banners_Brackets",
+   "object": "MI_Asylum_Banners_Brackets",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Asylum_Banners_Brackets",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Asylum_Banners/Asylum_Banners/Texture2D/AsylumBanners_MainBracket_Diff.tga",
+   "extracted_sha256": "3caea0d219f25adc20c12ede5fa76e8e63233e231981d46b935fd7f782165235",
+   "output_file": "Content/Extracted/MaterialDatabase/Asylum_Banners/Asylum_Banners/Texture2D/AsylumBanners_MainBracket_Diff.tga",
+   "output_sha256": "3caea0d219f25adc20c12ede5fa76e8e63233e231981d46b935fd7f782165235",
+   "uasset": "Content/Imported/MaterialDatabase/Asylum_Banners/MI_Asylum_Banners_Brackets.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Asylum_Banners.upk#MI_Asylum_Banners_Horiz_PARENT_Mat",
+   "object": "MI_Asylum_Banners_Horiz_PARENT_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Asylum_Banners_Horiz_PARENT_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Asylum_Banners/Asylum_Banners/Texture2D/AsylumBanners_MainHoriz_Diff.tga",
+   "extracted_sha256": "40f210da9a93d6e16f5ed6d03f00ad3c63224c342adc3ebb3691b17afe948136",
+   "output_file": "Content/Extracted/MaterialDatabase/Asylum_Banners/Asylum_Banners/Texture2D/AsylumBanners_MainHoriz_Diff.tga",
+   "output_sha256": "40f210da9a93d6e16f5ed6d03f00ad3c63224c342adc3ebb3691b17afe948136",
+   "uasset": "Content/Imported/MaterialDatabase/Asylum_Banners/MI_Asylum_Banners_Horiz_PARENT_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Asylum_Banners.upk#MI_Asylum_Banners_Horiz_Variation01_Mat_INST",
+   "object": "MI_Asylum_Banners_Horiz_Variation01_Mat_INST",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Asylum_Banners_Horiz_Variation01_Mat_INST",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Asylum_Banners/Asylum_Banners/Texture2D/AsylumBanners_MainHoriz_Diff.tga",
+   "extracted_sha256": "40f210da9a93d6e16f5ed6d03f00ad3c63224c342adc3ebb3691b17afe948136",
+   "output_file": "Content/Extracted/MaterialDatabase/Asylum_Banners/Asylum_Banners/Texture2D/AsylumBanners_MainHoriz_Diff.tga",
+   "output_sha256": "40f210da9a93d6e16f5ed6d03f00ad3c63224c342adc3ebb3691b17afe948136",
+   "uasset": "Content/Imported/MaterialDatabase/Asylum_Banners/MI_Asylum_Banners_Horiz_Variation01_Mat_INST.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Asylum_Banners.upk#MI_Asylum_Banners_TallVert_PARENT_Mat",
+   "object": "MI_Asylum_Banners_TallVert_PARENT_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Asylum_Banners_TallVert_PARENT_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Asylum_Banners/Asylum_Banners/Texture2D/AsylumBanners_MainHoriz_Diff.tga",
+   "extracted_sha256": "40f210da9a93d6e16f5ed6d03f00ad3c63224c342adc3ebb3691b17afe948136",
+   "output_file": "Content/Extracted/MaterialDatabase/Asylum_Banners/Asylum_Banners/Texture2D/AsylumBanners_MainHoriz_Diff.tga",
+   "output_sha256": "40f210da9a93d6e16f5ed6d03f00ad3c63224c342adc3ebb3691b17afe948136",
+   "uasset": "Content/Imported/MaterialDatabase/Asylum_Banners/MI_Asylum_Banners_TallVert_PARENT_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Asylum_Banners.upk#MI_Asylum_Banners_Vert_PARENT_Mat",
+   "object": "MI_Asylum_Banners_Vert_PARENT_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Asylum_Banners_Vert_PARENT_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Asylum_Banners/Asylum_Banners/Texture2D/AsylumBanners_MainHoriz_Diff.tga",
+   "extracted_sha256": "40f210da9a93d6e16f5ed6d03f00ad3c63224c342adc3ebb3691b17afe948136",
+   "output_file": "Content/Extracted/MaterialDatabase/Asylum_Banners/Asylum_Banners/Texture2D/AsylumBanners_MainHoriz_Diff.tga",
+   "output_sha256": "40f210da9a93d6e16f5ed6d03f00ad3c63224c342adc3ebb3691b17afe948136",
+   "uasset": "Content/Imported/MaterialDatabase/Asylum_Banners/MI_Asylum_Banners_Vert_PARENT_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Asylum_Banners.upk#MI_Asylum_Banners_Vert_Variation02_Mat_INST",
+   "object": "MI_Asylum_Banners_Vert_Variation02_Mat_INST",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Asylum_Banners_Vert_Variation02_Mat_INST",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Asylum_Banners/Asylum_Banners/Texture2D/AsylumBanners_MainHoriz_Diff.tga",
+   "extracted_sha256": "40f210da9a93d6e16f5ed6d03f00ad3c63224c342adc3ebb3691b17afe948136",
+   "output_file": "Content/Extracted/MaterialDatabase/Asylum_Banners/Asylum_Banners/Texture2D/AsylumBanners_MainHoriz_Diff.tga",
+   "output_sha256": "40f210da9a93d6e16f5ed6d03f00ad3c63224c342adc3ebb3691b17afe948136",
+   "uasset": "Content/Imported/MaterialDatabase/Asylum_Banners/MI_Asylum_Banners_Vert_Variation02_Mat_INST.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Asylum_Banners.upk#MI_Asylum_Banners_Vert_Variation03_Mat_INST",
+   "object": "MI_Asylum_Banners_Vert_Variation03_Mat_INST",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Asylum_Banners_Vert_Variation03_Mat_INST",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Asylum_Banners/Asylum_Banners/Texture2D/AsylumBanners_MainHoriz_Diff.tga",
+   "extracted_sha256": "40f210da9a93d6e16f5ed6d03f00ad3c63224c342adc3ebb3691b17afe948136",
+   "output_file": "Content/Extracted/MaterialDatabase/Asylum_Banners/Asylum_Banners/Texture2D/AsylumBanners_MainHoriz_Diff.tga",
+   "output_sha256": "40f210da9a93d6e16f5ed6d03f00ad3c63224c342adc3ebb3691b17afe948136",
+   "uasset": "Content/Imported/MaterialDatabase/Asylum_Banners/MI_Asylum_Banners_Vert_Variation03_Mat_INST.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Asylum_Banners.upk#MI_Asylum_Banners_Vert_Variation04_Mat_INST",
+   "object": "MI_Asylum_Banners_Vert_Variation04_Mat_INST",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Asylum_Banners_Vert_Variation04_Mat_INST",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Asylum_Banners/Asylum_Banners/Texture2D/AsylumBanners_MainHoriz_Diff.tga",
+   "extracted_sha256": "40f210da9a93d6e16f5ed6d03f00ad3c63224c342adc3ebb3691b17afe948136",
+   "output_file": "Content/Extracted/MaterialDatabase/Asylum_Banners/Asylum_Banners/Texture2D/AsylumBanners_MainHoriz_Diff.tga",
+   "output_sha256": "40f210da9a93d6e16f5ed6d03f00ad3c63224c342adc3ebb3691b17afe948136",
+   "uasset": "Content/Imported/MaterialDatabase/Asylum_Banners/MI_Asylum_Banners_Vert_Variation04_Mat_INST.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Asylum_Banners.upk#MI_Asylum_Banners_Vert_Variation05_Mat_INST",
+   "object": "MI_Asylum_Banners_Vert_Variation05_Mat_INST",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Asylum_Banners_Vert_Variation05_Mat_INST",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Asylum_Banners/Asylum_Banners/Texture2D/AsylumBanners_MainHoriz_Diff.tga",
+   "extracted_sha256": "40f210da9a93d6e16f5ed6d03f00ad3c63224c342adc3ebb3691b17afe948136",
+   "output_file": "Content/Extracted/MaterialDatabase/Asylum_Banners/Asylum_Banners/Texture2D/AsylumBanners_MainHoriz_Diff.tga",
+   "output_sha256": "40f210da9a93d6e16f5ed6d03f00ad3c63224c342adc3ebb3691b17afe948136",
+   "uasset": "Content/Imported/MaterialDatabase/Asylum_Banners/MI_Asylum_Banners_Vert_Variation05_Mat_INST.uasset"
+  }
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FinancialAmmoCrates",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/PropMaterials/FinancialAmmoCrates.upk",
+ "source_sha256": "6e10bf609709f11d535e91ebcb8a68ceb289bfb8c486d66cbc1899a6aa565d18",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialAmmoCrates.upk#AmmoCrates_Diff",
+   "object": "AmmoCrates_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialAmmoCrates/FinancialAmmoCrates/Texture2D/AmmoCrates_Diff.tga",
+   "extracted_sha256": "2e23f76f6581ae68aef47266410ca52b7d50b556f9df2e1910c7a6ddd246ff77",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialAmmoCrates/FinancialAmmoCrates/Texture2D/AmmoCrates_Diff.tga",
+   "output_sha256": "2e23f76f6581ae68aef47266410ca52b7d50b556f9df2e1910c7a6ddd246ff77",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialAmmoCrates/AmmoCrates_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialAmmoCrates.upk#AmmoCrates_Norm",
+   "object": "AmmoCrates_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialAmmoCrates/FinancialAmmoCrates/Texture2D/AmmoCrates_Norm.tga",
+   "extracted_sha256": "981ad114a3576c59c273b1422ea8d12e75801eda607399e5289c4cdb0a24fa15",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialAmmoCrates/FinancialAmmoCrates/Texture2D/AmmoCrates_Norm.tga",
+   "output_sha256": "981ad114a3576c59c273b1422ea8d12e75801eda607399e5289c4cdb0a24fa15",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialAmmoCrates/AmmoCrates_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialAmmoCrates.upk#MI_AmmoCrates_Mat",
+   "object": "MI_AmmoCrates_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "AmmoCrates_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialAmmoCrates/FinancialAmmoCrates/Texture2D/AmmoCrates_Diff.tga",
+   "extracted_sha256": "2e23f76f6581ae68aef47266410ca52b7d50b556f9df2e1910c7a6ddd246ff77",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialAmmoCrates/FinancialAmmoCrates/Texture2D/AmmoCrates_Diff.tga",
+   "output_sha256": "2e23f76f6581ae68aef47266410ca52b7d50b556f9df2e1910c7a6ddd246ff77",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialAmmoCrates/MI_AmmoCrates_Mat.uasset"
+  }
+ ]
+}

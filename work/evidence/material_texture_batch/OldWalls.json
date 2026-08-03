@@ -1,0 +1,190 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "OldWalls",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/Walls/OldWalls.upk",
+ "source_sha256": "0c89b24cb1070a375ff7908d7b2e6a673802520aa0bbed2dc1e2f3c743a7887b",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Walls/OldWalls.upk#Bricks_DirtyPaint_Diff",
+   "object": "Bricks_DirtyPaint_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/OldWalls/OldWalls/Texture2D/Bricks_DirtyPaint_Diff.tga",
+   "extracted_sha256": "6bc13a1f22e4b9acb87116087c8325ab7214cc8cad7b61e29892e5f501478550",
+   "output_file": "Content/Extracted/MaterialDatabase/OldWalls/OldWalls/Texture2D/Bricks_DirtyPaint_Diff.tga",
+   "output_sha256": "6bc13a1f22e4b9acb87116087c8325ab7214cc8cad7b61e29892e5f501478550",
+   "uasset": "Content/Imported/MaterialDatabase/OldWalls/Bricks_DirtyPaint_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Walls/OldWalls.upk#Bricks_DirtyPaint_NRM",
+   "object": "Bricks_DirtyPaint_NRM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/OldWalls/OldWalls/Texture2D/Bricks_DirtyPaint_NRM.tga",
+   "extracted_sha256": "5bdbef797300e5f4903850f1944d86735a508a34d04b8a2bd76e7ce8c8b5bdc1",
+   "output_file": "Content/Extracted/MaterialDatabase/OldWalls/OldWalls/Texture2D/Bricks_DirtyPaint_NRM.tga",
+   "output_sha256": "5bdbef797300e5f4903850f1944d86735a508a34d04b8a2bd76e7ce8c8b5bdc1",
+   "uasset": "Content/Imported/MaterialDatabase/OldWalls/Bricks_DirtyPaint_NRM.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Walls/OldWalls.upk#Bricks_DirtyPaintAlt_Diff",
+   "object": "Bricks_DirtyPaintAlt_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/OldWalls/OldWalls/Texture2D/Bricks_DirtyPaintAlt_Diff.tga",
+   "extracted_sha256": "476d5ad434bb025daf1a58e5ca4aecc8da012973dbbfbec8c44aef3db03e4b98",
+   "output_file": "Content/Extracted/MaterialDatabase/OldWalls/OldWalls/Texture2D/Bricks_DirtyPaintAlt_Diff.tga",
+   "output_sha256": "476d5ad434bb025daf1a58e5ca4aecc8da012973dbbfbec8c44aef3db03e4b98",
+   "uasset": "Content/Imported/MaterialDatabase/OldWalls/Bricks_DirtyPaintAlt_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Walls/OldWalls.upk#Bricks_DirtyPaintAlt_NRM",
+   "object": "Bricks_DirtyPaintAlt_NRM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/OldWalls/OldWalls/Texture2D/Bricks_DirtyPaintAlt_NRM.tga",
+   "extracted_sha256": "09385c3c54d47d04d575793083c74c7cfbf4a8f7915268262d63a19a9342feb3",
+   "output_file": "Content/Extracted/MaterialDatabase/OldWalls/OldWalls/Texture2D/Bricks_DirtyPaintAlt_NRM.tga",
+   "output_sha256": "09385c3c54d47d04d575793083c74c7cfbf4a8f7915268262d63a19a9342feb3",
+   "uasset": "Content/Imported/MaterialDatabase/OldWalls/Bricks_DirtyPaintAlt_NRM.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Walls/OldWalls.upk#MI_Bricks_DirtyPaint_Diff_Mat",
+   "object": "MI_Bricks_DirtyPaint_Diff_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Bricks_DirtyPaint_Diff_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/OldWalls/OldWalls/Texture2D/Bricks_DirtyPaint_Diff.tga",
+   "extracted_sha256": "6bc13a1f22e4b9acb87116087c8325ab7214cc8cad7b61e29892e5f501478550",
+   "output_file": "Content/Extracted/MaterialDatabase/OldWalls/OldWalls/Texture2D/Bricks_DirtyPaint_Diff.tga",
+   "output_sha256": "6bc13a1f22e4b9acb87116087c8325ab7214cc8cad7b61e29892e5f501478550",
+   "uasset": "Content/Imported/MaterialDatabase/OldWalls/MI_Bricks_DirtyPaint_Diff_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Walls/OldWalls.upk#MI_Bricks_DirtyPaintAlt",
+   "object": "MI_Bricks_DirtyPaintAlt",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Bricks_DirtyPaintAlt",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/OldWalls/OldWalls/Texture2D/Bricks_DirtyPaintAlt_Diff.tga",
+   "extracted_sha256": "476d5ad434bb025daf1a58e5ca4aecc8da012973dbbfbec8c44aef3db03e4b98",
+   "output_file": "Content/Extracted/MaterialDatabase/OldWalls/OldWalls/Texture2D/Bricks_DirtyPaintAlt_Diff.tga",
+   "output_sha256": "476d5ad434bb025daf1a58e5ca4aecc8da012973dbbfbec8c44aef3db03e4b98",
+   "uasset": "Content/Imported/MaterialDatabase/OldWalls/MI_Bricks_DirtyPaintAlt.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Walls/OldWalls.upk#MI_Plaster_Colored_Mat",
+   "object": "MI_Plaster_Colored_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Plaster_Colored_Mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/OldWalls/OldWalls/Texture2D/Plaster_Colored_Diff.tga",
+   "extracted_sha256": "021706df3af7ec74ba51964112d8a01621fe0117d1e715d26c02f32a0b1dab4c",
+   "output_file": "Content/Extracted/MaterialDatabase/OldWalls/OldWalls/Texture2D/Plaster_Colored_Diff.tga",
+   "output_sha256": "021706df3af7ec74ba51964112d8a01621fe0117d1e715d26c02f32a0b1dab4c",
+   "uasset": "Content/Imported/MaterialDatabase/OldWalls/MI_Plaster_Colored_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Walls/OldWalls.upk#MI_Plaster_Dirty_Mat",
+   "object": "MI_Plaster_Dirty_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Plaster_Dirty_Mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/OldWalls/OldWalls/Texture2D/Plaster_Dirty_Diff.tga",
+   "extracted_sha256": "37873ce159ca2ebb0cf91cd42f671dd73f3f6256da6b1700b4979ad529e46301",
+   "output_file": "Content/Extracted/MaterialDatabase/OldWalls/OldWalls/Texture2D/Plaster_Dirty_Diff.tga",
+   "output_sha256": "37873ce159ca2ebb0cf91cd42f671dd73f3f6256da6b1700b4979ad529e46301",
+   "uasset": "Content/Imported/MaterialDatabase/OldWalls/MI_Plaster_Dirty_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Walls/OldWalls.upk#MI_PlasterWall",
+   "object": "MI_PlasterWall",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PlasterWall",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/OldWalls/OldWalls/Texture2D/PlasterWall_Diff.tga",
+   "extracted_sha256": "99e18c147fb6c9b5d696d454ed6f05f3d34eb3d7d7342df7c86f9dff66937f0e",
+   "output_file": "Content/Extracted/MaterialDatabase/OldWalls/OldWalls/Texture2D/PlasterWall_Diff.tga",
+   "output_sha256": "99e18c147fb6c9b5d696d454ed6f05f3d34eb3d7d7342df7c86f9dff66937f0e",
+   "uasset": "Content/Imported/MaterialDatabase/OldWalls/MI_PlasterWall.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Walls/OldWalls.upk#MI_StoneWall_Cracked_Mat",
+   "object": "MI_StoneWall_Cracked_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StoneWall_Cracked_Mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/OldWalls/OldWalls/Texture2D/StoneWall_Cracked_Diff.tga",
+   "extracted_sha256": "84746e417391011c669d7985f95bac7fdbaaeb20e71495faa6d63592c842a87d",
+   "output_file": "Content/Extracted/MaterialDatabase/OldWalls/OldWalls/Texture2D/StoneWall_Cracked_Diff.tga",
+   "output_sha256": "84746e417391011c669d7985f95bac7fdbaaeb20e71495faa6d63592c842a87d",
+   "uasset": "Content/Imported/MaterialDatabase/OldWalls/MI_StoneWall_Cracked_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Walls/OldWalls.upk#Plaster_Colored_Diff",
+   "object": "Plaster_Colored_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/OldWalls/OldWalls/Texture2D/Plaster_Colored_Diff.tga",
+   "extracted_sha256": "021706df3af7ec74ba51964112d8a01621fe0117d1e715d26c02f32a0b1dab4c",
+   "output_file": "Content/Extracted/MaterialDatabase/OldWalls/OldWalls/Texture2D/Plaster_Colored_Diff.tga",
+   "output_sha256": "021706df3af7ec74ba51964112d8a01621fe0117d1e715d26c02f32a0b1dab4c",
+   "uasset": "Content/Imported/MaterialDatabase/OldWalls/Plaster_Colored_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Walls/OldWalls.upk#Plaster_Dirty_Diff",
+   "object": "Plaster_Dirty_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/OldWalls/OldWalls/Texture2D/Plaster_Dirty_Diff.tga",
+   "extracted_sha256": "37873ce159ca2ebb0cf91cd42f671dd73f3f6256da6b1700b4979ad529e46301",
+   "output_file": "Content/Extracted/MaterialDatabase/OldWalls/OldWalls/Texture2D/Plaster_Dirty_Diff.tga",
+   "output_sha256": "37873ce159ca2ebb0cf91cd42f671dd73f3f6256da6b1700b4979ad529e46301",
+   "uasset": "Content/Imported/MaterialDatabase/OldWalls/Plaster_Dirty_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Walls/OldWalls.upk#PlasterWall_Diff",
+   "object": "PlasterWall_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/OldWalls/OldWalls/Texture2D/PlasterWall_Diff.tga",
+   "extracted_sha256": "99e18c147fb6c9b5d696d454ed6f05f3d34eb3d7d7342df7c86f9dff66937f0e",
+   "output_file": "Content/Extracted/MaterialDatabase/OldWalls/OldWalls/Texture2D/PlasterWall_Diff.tga",
+   "output_sha256": "99e18c147fb6c9b5d696d454ed6f05f3d34eb3d7d7342df7c86f9dff66937f0e",
+   "uasset": "Content/Imported/MaterialDatabase/OldWalls/PlasterWall_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Walls/OldWalls.upk#StoneWall_Cracked_Diff",
+   "object": "StoneWall_Cracked_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/OldWalls/OldWalls/Texture2D/StoneWall_Cracked_Diff.tga",
+   "extracted_sha256": "84746e417391011c669d7985f95bac7fdbaaeb20e71495faa6d63592c842a87d",
+   "output_file": "Content/Extracted/MaterialDatabase/OldWalls/OldWalls/Texture2D/StoneWall_Cracked_Diff.tga",
+   "output_sha256": "84746e417391011c669d7985f95bac7fdbaaeb20e71495faa6d63592c842a87d",
+   "uasset": "Content/Imported/MaterialDatabase/OldWalls/StoneWall_Cracked_Diff.uasset"
+  }
+ ]
+}

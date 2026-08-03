@@ -1,0 +1,34 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Wires",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/ProvingGrounds/PropMaterials/Wires.upk",
+ "source_sha256": "4735b6d98436a7edf9cb72fe41491b37f2338444b03ce1111fb86a18e1f17d25",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/ProvingGrounds/PropMaterials/Wires.upk#MI_Wires_Mat",
+   "object": "MI_Wires_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Wires_Mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Wires/Wires/Texture2D/Wires_Diff.tga",
+   "extracted_sha256": "30a0f6a5427e7dc2bd9db28bd3f9b6dbb84a9c987e4991e0bc19d37349eb72a1",
+   "output_file": "Content/Extracted/MaterialDatabase/Wires/Wires/Texture2D/Wires_Diff.tga",
+   "output_sha256": "30a0f6a5427e7dc2bd9db28bd3f9b6dbb84a9c987e4991e0bc19d37349eb72a1",
+   "uasset": "Content/Imported/MaterialDatabase/Wires/MI_Wires_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/ProvingGrounds/PropMaterials/Wires.upk#Wires_Diff",
+   "object": "Wires_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Wires/Wires/Texture2D/Wires_Diff.tga",
+   "extracted_sha256": "30a0f6a5427e7dc2bd9db28bd3f9b6dbb84a9c987e4991e0bc19d37349eb72a1",
+   "output_file": "Content/Extracted/MaterialDatabase/Wires/Wires/Texture2D/Wires_Diff.tga",
+   "output_sha256": "30a0f6a5427e7dc2bd9db28bd3f9b6dbb84a9c987e4991e0bc19d37349eb72a1",
+   "uasset": "Content/Imported/MaterialDatabase/Wires/Wires_Diff.uasset"
+  }
+ ]
+}

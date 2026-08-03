@@ -1,0 +1,60 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "IndustrialMachinery",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/IndustrialMachinery.upk",
+ "source_sha256": "3f46df58406bcb18e108d0f5f1ddb5652d2034e71cdc96a021f5d3f0b6d37e91",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/IndustrialMachinery.upk#IndustrialMachinery_DiffSpec",
+   "object": "IndustrialMachinery_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/IndustrialMachinery/IndustrialMachinery/Texture2D/IndustrialMachinery_DiffSpec.tga",
+   "extracted_sha256": "7bb02907cc5184c0b47840529c601301428524aa109c963e984cf66967e4d0ce",
+   "output_file": "Content/Extracted/MaterialDatabase/IndustrialMachinery/IndustrialMachinery/Texture2D/IndustrialMachinery_DiffSpec.tga",
+   "output_sha256": "7bb02907cc5184c0b47840529c601301428524aa109c963e984cf66967e4d0ce",
+   "uasset": "Content/Imported/MaterialDatabase/IndustrialMachinery/IndustrialMachinery_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/IndustrialMachinery.upk#IndustrialMachinery_Norm",
+   "object": "IndustrialMachinery_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/IndustrialMachinery/IndustrialMachinery/Texture2D/IndustrialMachinery_Norm.tga",
+   "extracted_sha256": "cb43ce0c771343ec8413addc2b6c00e96b5ed55c56deee621fca893debdb5fe6",
+   "output_file": "Content/Extracted/MaterialDatabase/IndustrialMachinery/IndustrialMachinery/Texture2D/IndustrialMachinery_Norm.tga",
+   "output_sha256": "cb43ce0c771343ec8413addc2b6c00e96b5ed55c56deee621fca893debdb5fe6",
+   "uasset": "Content/Imported/MaterialDatabase/IndustrialMachinery/IndustrialMachinery_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/IndustrialMachinery.upk#IndustrialMachinery_Opac",
+   "object": "IndustrialMachinery_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/IndustrialMachinery/IndustrialMachinery/Texture2D/IndustrialMachinery_Opac.tga",
+   "extracted_sha256": "6dec86152c89d06f2ddd7134a34724e50f0a793f1cd003d8f511abdfe053e1aa",
+   "output_file": "Content/Extracted/MaterialDatabase/IndustrialMachinery/IndustrialMachinery/Texture2D/IndustrialMachinery_Opac.tga",
+   "output_sha256": "6dec86152c89d06f2ddd7134a34724e50f0a793f1cd003d8f511abdfe053e1aa",
+   "uasset": "Content/Imported/MaterialDatabase/IndustrialMachinery/IndustrialMachinery_Opac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/IndustrialMachinery.upk#MI_IndustrialMachinery_Mat",
+   "object": "MI_IndustrialMachinery_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "IndustrialMachinery_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/IndustrialMachinery/IndustrialMachinery/Texture2D/IndustrialMachinery_DiffSpec.tga",
+   "extracted_sha256": "7bb02907cc5184c0b47840529c601301428524aa109c963e984cf66967e4d0ce",
+   "output_file": "Content/Extracted/MaterialDatabase/IndustrialMachinery/IndustrialMachinery/Texture2D/IndustrialMachinery_DiffSpec.tga",
+   "output_sha256": "7bb02907cc5184c0b47840529c601301428524aa109c963e984cf66967e4d0ce",
+   "uasset": "Content/Imported/MaterialDatabase/IndustrialMachinery/MI_IndustrialMachinery_Mat.uasset"
+  }
+ ]
+}

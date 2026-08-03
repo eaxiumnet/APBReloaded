@@ -1,0 +1,62 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "PoolTiles",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/Floor/PoolTiles.upk",
+ "source_sha256": "3559fae210931c0d9031cff330248e4599dc67123f19bbad319d3526c2ed3b5d",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Floor/PoolTiles.upk#MI_PoolTiles_Floor",
+   "object": "MI_PoolTiles_Floor",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PoolTiles_Floor",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/PoolTiles/PoolTiles/Texture2D/PoolTiles-Diff.tga",
+   "extracted_sha256": "ccc2cc6354255e3f282d429adf60927aee7722abb3028425c56ff179043204b0",
+   "output_file": "Content/Extracted/MaterialDatabase/PoolTiles/PoolTiles/Texture2D/PoolTiles-Diff.tga",
+   "output_sha256": "ccc2cc6354255e3f282d429adf60927aee7722abb3028425c56ff179043204b0",
+   "uasset": "Content/Imported/MaterialDatabase/PoolTiles/MI_PoolTiles_Floor.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Floor/PoolTiles.upk#MI_PoolTiles_Graffiti",
+   "object": "MI_PoolTiles_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PoolTiles_Graffiti",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/PoolTiles/PoolTiles/Texture2D/PoolTiles-Diff.tga",
+   "extracted_sha256": "ccc2cc6354255e3f282d429adf60927aee7722abb3028425c56ff179043204b0",
+   "output_file": "Content/Extracted/MaterialDatabase/PoolTiles/PoolTiles/Texture2D/PoolTiles-Diff.tga",
+   "output_sha256": "ccc2cc6354255e3f282d429adf60927aee7722abb3028425c56ff179043204b0",
+   "uasset": "Content/Imported/MaterialDatabase/PoolTiles/MI_PoolTiles_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Floor/PoolTiles.upk#MI_PoolTiles_Mat",
+   "object": "MI_PoolTiles_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PoolTiles_Mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/PoolTiles/PoolTiles/Texture2D/PoolTiles-Diff.tga",
+   "extracted_sha256": "ccc2cc6354255e3f282d429adf60927aee7722abb3028425c56ff179043204b0",
+   "output_file": "Content/Extracted/MaterialDatabase/PoolTiles/PoolTiles/Texture2D/PoolTiles-Diff.tga",
+   "output_sha256": "ccc2cc6354255e3f282d429adf60927aee7722abb3028425c56ff179043204b0",
+   "uasset": "Content/Imported/MaterialDatabase/PoolTiles/MI_PoolTiles_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Floor/PoolTiles.upk#PoolTiles-Diff",
+   "object": "PoolTiles-Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/PoolTiles/PoolTiles/Texture2D/PoolTiles-Diff.tga",
+   "extracted_sha256": "ccc2cc6354255e3f282d429adf60927aee7722abb3028425c56ff179043204b0",
+   "output_file": "Content/Extracted/MaterialDatabase/PoolTiles/PoolTiles/Texture2D/PoolTiles-Diff.tga",
+   "output_sha256": "ccc2cc6354255e3f282d429adf60927aee7722abb3028425c56ff179043204b0",
+   "uasset": "Content/Imported/MaterialDatabase/PoolTiles/PoolTiles-Diff.uasset"
+  }
+ ]
+}

@@ -1,0 +1,106 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "RWorld_StreetBillboard",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/RWorldSocialDistrict/Props/RWorld_StreetBillboard.upk",
+ "source_sha256": "70127feaf29936a452fa657ef63e9982dfc8113b68dc8ad0979db17b2c672a9e",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_StreetBillboard.upk#MI_StreetBillboard_01_Mat",
+   "object": "MI_StreetBillboard_01_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StreetBillboard_01_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_StreetBillboard/RWorld_StreetBillboard/Texture2D/StreetBillboard_DiffSpec.tga",
+   "extracted_sha256": "d1a663d9da90c7759c24aaa6d38cd35b4cdcbca9f2683accb927e058033b276c",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_StreetBillboard/RWorld_StreetBillboard/Texture2D/StreetBillboard_DiffSpec.tga",
+   "output_sha256": "d1a663d9da90c7759c24aaa6d38cd35b4cdcbca9f2683accb927e058033b276c",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_StreetBillboard/MI_StreetBillboard_01_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_StreetBillboard.upk#MI_StreetBillboard_02_Mat",
+   "object": "MI_StreetBillboard_02_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StreetBillboard_02_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_StreetBillboard/RWorld_StreetBillboard/Texture2D/StreetBillboard_DiffSpec.tga",
+   "extracted_sha256": "d1a663d9da90c7759c24aaa6d38cd35b4cdcbca9f2683accb927e058033b276c",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_StreetBillboard/RWorld_StreetBillboard/Texture2D/StreetBillboard_DiffSpec.tga",
+   "output_sha256": "d1a663d9da90c7759c24aaa6d38cd35b4cdcbca9f2683accb927e058033b276c",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_StreetBillboard/MI_StreetBillboard_02_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_StreetBillboard.upk#MI_StreetBillboard_Damage_Mat",
+   "object": "MI_StreetBillboard_Damage_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StreetBillboard_Damage_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_StreetBillboard/RWorld_StreetBillboard/Texture2D/StreetBillboard_DiffSpec.tga",
+   "extracted_sha256": "d1a663d9da90c7759c24aaa6d38cd35b4cdcbca9f2683accb927e058033b276c",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_StreetBillboard/RWorld_StreetBillboard/Texture2D/StreetBillboard_DiffSpec.tga",
+   "output_sha256": "d1a663d9da90c7759c24aaa6d38cd35b4cdcbca9f2683accb927e058033b276c",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_StreetBillboard/MI_StreetBillboard_Damage_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_StreetBillboard.upk#MI_StreetBillboard_Damage_NoMovement_Mat",
+   "object": "MI_StreetBillboard_Damage_NoMovement_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StreetBillboard_Damage_NoMovement_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_StreetBillboard/RWorld_StreetBillboard/Texture2D/StreetBillboard_DiffSpec.tga",
+   "extracted_sha256": "d1a663d9da90c7759c24aaa6d38cd35b4cdcbca9f2683accb927e058033b276c",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_StreetBillboard/RWorld_StreetBillboard/Texture2D/StreetBillboard_DiffSpec.tga",
+   "output_sha256": "d1a663d9da90c7759c24aaa6d38cd35b4cdcbca9f2683accb927e058033b276c",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_StreetBillboard/MI_StreetBillboard_Damage_NoMovement_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_StreetBillboard.upk#StreetBillboard_DiffSpec",
+   "object": "StreetBillboard_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_StreetBillboard/RWorld_StreetBillboard/Texture2D/StreetBillboard_DiffSpec.tga",
+   "extracted_sha256": "d1a663d9da90c7759c24aaa6d38cd35b4cdcbca9f2683accb927e058033b276c",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_StreetBillboard/RWorld_StreetBillboard/Texture2D/StreetBillboard_DiffSpec.tga",
+   "output_sha256": "d1a663d9da90c7759c24aaa6d38cd35b4cdcbca9f2683accb927e058033b276c",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_StreetBillboard/StreetBillboard_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_StreetBillboard.upk#StreetBillboard_Emis",
+   "object": "StreetBillboard_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_StreetBillboard/RWorld_StreetBillboard/Texture2D/StreetBillboard_Emis.tga",
+   "extracted_sha256": "16ff63f879b55809b5dac54660368eb40216c5117e64127479b1c4d0fe05a1ae",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_StreetBillboard/RWorld_StreetBillboard/Texture2D/StreetBillboard_Emis.tga",
+   "output_sha256": "16ff63f879b55809b5dac54660368eb40216c5117e64127479b1c4d0fe05a1ae",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_StreetBillboard/StreetBillboard_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_StreetBillboard.upk#StreetBillboard_Norm",
+   "object": "StreetBillboard_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_StreetBillboard/RWorld_StreetBillboard/Texture2D/StreetBillboard_Norm.tga",
+   "extracted_sha256": "2468fb095f753734ce3d9d049984d3d85f35d13a3c59b61641c9ab8c88f08bbd",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_StreetBillboard/RWorld_StreetBillboard/Texture2D/StreetBillboard_Norm.tga",
+   "output_sha256": "2468fb095f753734ce3d9d049984d3d85f35d13a3c59b61641c9ab8c88f08bbd",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_StreetBillboard/StreetBillboard_Norm.uasset"
+  }
+ ]
+}

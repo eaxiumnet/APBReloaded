@@ -1,0 +1,211 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Water",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/TerrainMaterials/Water.upk",
+ "source_sha256": "49969c6ad38e8ad140305f6c37bd74b6ee54af92942405e212c51c675e223f5b",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Water.upk#Concrete_003_Norm",
+   "object": "Concrete_003_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Water/Concrete/Texture2D/Concrete_003_Norm.tga",
+   "extracted_sha256": "fe51cf21d28a3ec12c2b5041f35c6768302f98c29c1436db4d637b207fdda6e4",
+   "output_file": "Content/Extracted/MaterialDatabase/Water/Concrete/Texture2D/Concrete_003_Norm.tga",
+   "output_sha256": "fe51cf21d28a3ec12c2b5041f35c6768302f98c29c1436db4d637b207fdda6e4",
+   "uasset": "Content/Imported/MaterialDatabase/Water/Concrete_003_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Water.upk#Concrete_01_DiffSpec",
+   "object": "Concrete_01_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Water/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Water/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/Water/Concrete_01_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Water.upk#MI_Conc_Grey",
+   "object": "MI_Conc_Grey",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Conc_Grey",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Water/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Water/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/Water/MI_Conc_Grey.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Water.upk#MI_Conc_PARENT",
+   "object": "MI_Conc_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Conc_PARENT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Water/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Water/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/Water/MI_Conc_PARENT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Water.upk#MI_csd_water",
+   "object": "MI_csd_water",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "csd_water",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Water/Water/Texture2D/Waves_Norm.tga",
+   "extracted_sha256": "63098a145fd6cab63b12dd3f9981df702dbf5238108963e4102198cd60c37dfb",
+   "output_file": "Content/Extracted/MaterialDatabase/Water/Water/Texture2D/Waves_Norm.tga",
+   "output_sha256": "63098a145fd6cab63b12dd3f9981df702dbf5238108963e4102198cd60c37dfb",
+   "uasset": "Content/Imported/MaterialDatabase/Water/MI_csd_water.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Water.upk#MI_New_Water_Mat",
+   "object": "MI_New_Water_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "New_Water_Mat",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Water/Water/Texture2D/Waves_Norm.tga",
+   "extracted_sha256": "63098a145fd6cab63b12dd3f9981df702dbf5238108963e4102198cd60c37dfb",
+   "output_file": "Content/Extracted/MaterialDatabase/Water/Water/Texture2D/Waves_Norm.tga",
+   "output_sha256": "63098a145fd6cab63b12dd3f9981df702dbf5238108963e4102198cd60c37dfb",
+   "uasset": "Content/Imported/MaterialDatabase/Water/MI_New_Water_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Water.upk#MI_UnderwaterConcrete",
+   "object": "MI_UnderwaterConcrete",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "UnderwaterConcrete",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Water/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Water/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/Water/MI_UnderwaterConcrete.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Water.upk#MI_Water",
+   "object": "MI_Water",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Water",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Water/Water/Texture2D/Waves_Norm.tga",
+   "extracted_sha256": "63098a145fd6cab63b12dd3f9981df702dbf5238108963e4102198cd60c37dfb",
+   "output_file": "Content/Extracted/MaterialDatabase/Water/Water/Texture2D/Waves_Norm.tga",
+   "output_sha256": "63098a145fd6cab63b12dd3f9981df702dbf5238108963e4102198cd60c37dfb",
+   "uasset": "Content/Imported/MaterialDatabase/Water/MI_Water.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Water.upk#MI_Water_FountainRipples",
+   "object": "MI_Water_FountainRipples",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Water_FountainRipples",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Water/Water/Texture2D/Waves_Norm.tga",
+   "extracted_sha256": "63098a145fd6cab63b12dd3f9981df702dbf5238108963e4102198cd60c37dfb",
+   "output_file": "Content/Extracted/MaterialDatabase/Water/Water/Texture2D/Waves_Norm.tga",
+   "output_sha256": "63098a145fd6cab63b12dd3f9981df702dbf5238108963e4102198cd60c37dfb",
+   "uasset": "Content/Imported/MaterialDatabase/Water/MI_Water_FountainRipples.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Water.upk#MI_Water_River",
+   "object": "MI_Water_River",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Water_River",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Water/Water/Texture2D/Waves_Norm.tga",
+   "extracted_sha256": "63098a145fd6cab63b12dd3f9981df702dbf5238108963e4102198cd60c37dfb",
+   "output_file": "Content/Extracted/MaterialDatabase/Water/Water/Texture2D/Waves_Norm.tga",
+   "output_sha256": "63098a145fd6cab63b12dd3f9981df702dbf5238108963e4102198cd60c37dfb",
+   "uasset": "Content/Imported/MaterialDatabase/Water/MI_Water_River.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Water.upk#MI_Water_SandBlend",
+   "object": "MI_Water_SandBlend",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Water_SandBlend",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Water/Water/Texture2D/Water_Colour.tga",
+   "extracted_sha256": "f1c4a85e099218e59ecf906ad6f83c9b3250c2a6b13a3e01ae98142f4f181592",
+   "output_file": "Content/Extracted/MaterialDatabase/Water/Water/Texture2D/Water_Colour.tga",
+   "output_sha256": "f1c4a85e099218e59ecf906ad6f83c9b3250c2a6b13a3e01ae98142f4f181592",
+   "uasset": "Content/Imported/MaterialDatabase/Water/MI_Water_SandBlend.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Water.upk#MI_WaterEdge",
+   "object": "MI_WaterEdge",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WaterEdge",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Water/Terrain/Texture2D/StormDrainMask.tga",
+   "extracted_sha256": "6166a211f46bd840def6179482fcf7363b9d7c0680ca227d5279f09e4e731d80",
+   "output_file": "Content/Extracted/MaterialDatabase/Water/Terrain/Texture2D/StormDrainMask.tga",
+   "output_sha256": "6166a211f46bd840def6179482fcf7363b9d7c0680ca227d5279f09e4e731d80",
+   "uasset": "Content/Imported/MaterialDatabase/Water/MI_WaterEdge.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Water.upk#StormDrainMask",
+   "object": "StormDrainMask",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Water/Terrain/Texture2D/StormDrainMask.tga",
+   "extracted_sha256": "6166a211f46bd840def6179482fcf7363b9d7c0680ca227d5279f09e4e731d80",
+   "output_file": "Content/Extracted/MaterialDatabase/Water/Terrain/Texture2D/StormDrainMask.tga",
+   "output_sha256": "6166a211f46bd840def6179482fcf7363b9d7c0680ca227d5279f09e4e731d80",
+   "uasset": "Content/Imported/MaterialDatabase/Water/StormDrainMask.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Water.upk#Water_Colour",
+   "object": "Water_Colour",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Water/Water/Texture2D/Water_Colour.tga",
+   "extracted_sha256": "f1c4a85e099218e59ecf906ad6f83c9b3250c2a6b13a3e01ae98142f4f181592",
+   "output_file": "Content/Extracted/MaterialDatabase/Water/Water/Texture2D/Water_Colour.tga",
+   "output_sha256": "f1c4a85e099218e59ecf906ad6f83c9b3250c2a6b13a3e01ae98142f4f181592",
+   "uasset": "Content/Imported/MaterialDatabase/Water/Water_Colour.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Water.upk#Waves_Norm",
+   "object": "Waves_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Water/Water/Texture2D/Waves_Norm.tga",
+   "extracted_sha256": "63098a145fd6cab63b12dd3f9981df702dbf5238108963e4102198cd60c37dfb",
+   "output_file": "Content/Extracted/MaterialDatabase/Water/Water/Texture2D/Waves_Norm.tga",
+   "output_sha256": "63098a145fd6cab63b12dd3f9981df702dbf5238108963e4102198cd60c37dfb",
+   "uasset": "Content/Imported/MaterialDatabase/Water/Waves_Norm.uasset"
+  }
+ ]
+}

@@ -1,0 +1,62 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FinancialCableReels",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCableReels.upk",
+ "source_sha256": "f2dbdc6ff91e4a92618c92036ae7f141487e9536754177aad88267b038b68ce9",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCableReels.upk#FinancialCableReels_DiffSpec",
+   "object": "FinancialCableReels_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialCableReels/FinancialCableReels/Texture2D/FinancialCableReels_DiffSpec.tga",
+   "extracted_sha256": "03d4c0dd78af88d0e14e4538e3f7b310d23c64915a54b613ae18358375a80f17",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialCableReels/FinancialCableReels/Texture2D/FinancialCableReels_DiffSpec.tga",
+   "output_sha256": "03d4c0dd78af88d0e14e4538e3f7b310d23c64915a54b613ae18358375a80f17",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialCableReels/FinancialCableReels_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCableReels.upk#FinancialCableReels_Norm",
+   "object": "FinancialCableReels_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialCableReels/FinancialCableReels/Texture2D/FinancialCableReels_Norm.tga",
+   "extracted_sha256": "6f84093b7385725f51a0debcb2c961a3a368fe087dc0f7f106ddcff4402f588d",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialCableReels/FinancialCableReels/Texture2D/FinancialCableReels_Norm.tga",
+   "output_sha256": "6f84093b7385725f51a0debcb2c961a3a368fe087dc0f7f106ddcff4402f588d",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialCableReels/FinancialCableReels_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCableReels.upk#MI_FinancialCableReels_Damage_Mat",
+   "object": "MI_FinancialCableReels_Damage_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialCableReels_Damage_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialCableReels/FinancialCableReels/Texture2D/FinancialCableReels_DiffSpec.tga",
+   "extracted_sha256": "03d4c0dd78af88d0e14e4538e3f7b310d23c64915a54b613ae18358375a80f17",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialCableReels/FinancialCableReels/Texture2D/FinancialCableReels_DiffSpec.tga",
+   "output_sha256": "03d4c0dd78af88d0e14e4538e3f7b310d23c64915a54b613ae18358375a80f17",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialCableReels/MI_FinancialCableReels_Damage_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCableReels.upk#MI_FinancialCableReels_Mat",
+   "object": "MI_FinancialCableReels_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialCableReels_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialCableReels/FinancialCableReels/Texture2D/FinancialCableReels_DiffSpec.tga",
+   "extracted_sha256": "03d4c0dd78af88d0e14e4538e3f7b310d23c64915a54b613ae18358375a80f17",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialCableReels/FinancialCableReels/Texture2D/FinancialCableReels_DiffSpec.tga",
+   "output_sha256": "03d4c0dd78af88d0e14e4538e3f7b310d23c64915a54b613ae18358375a80f17",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialCableReels/MI_FinancialCableReels_Mat.uasset"
+  }
+ ]
+}

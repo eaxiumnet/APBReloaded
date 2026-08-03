@@ -1,0 +1,101 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Door_OldStone",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/FeatureMaterials/Door_OldStone.upk",
+ "source_sha256": "a5926c1e1960c73dd3b508ff4185b7dc1b96cca382ef29f16d09f534b277b2ca",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Door_OldStone.upk#Door_OldStone_DiffSpec",
+   "object": "Door_OldStone_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Door_OldStone/Door_OldStone/Texture2D/Door_OldStone_DiffSpec.tga",
+   "extracted_sha256": "73dd35860d6bbf2752e73517ae0398c3bbce271c32dce334066d3063ee6a5567",
+   "output_file": "Content/Extracted/MaterialDatabase/Door_OldStone/Door_OldStone/Texture2D/Door_OldStone_DiffSpec.tga",
+   "output_sha256": "73dd35860d6bbf2752e73517ae0398c3bbce271c32dce334066d3063ee6a5567",
+   "uasset": "Content/Imported/MaterialDatabase/Door_OldStone/Door_OldStone_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Door_OldStone.upk#Door_OldStone_Emis",
+   "object": "Door_OldStone_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Door_OldStone/Door_OldStone/Texture2D/Door_OldStone_Emis.tga",
+   "extracted_sha256": "cc4aad090ae4679da56bd23d9912c3c32014b7b9e61d32ae000fe34bdd17024d",
+   "output_file": "Content/Extracted/MaterialDatabase/Door_OldStone/Door_OldStone/Texture2D/Door_OldStone_Emis.tga",
+   "output_sha256": "cc4aad090ae4679da56bd23d9912c3c32014b7b9e61d32ae000fe34bdd17024d",
+   "uasset": "Content/Imported/MaterialDatabase/Door_OldStone/Door_OldStone_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Door_OldStone.upk#Door_OldStone_NormEmis",
+   "object": "Door_OldStone_NormEmis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Door_OldStone/Door_OldStone/Texture2D/Door_OldStone_NormEmis.tga",
+   "extracted_sha256": "d200c8c797411f4773ae69adb3ef98ac1de6b6d8f4239763d1028d7bdfded73f",
+   "output_file": "Content/Extracted/MaterialDatabase/Door_OldStone/Door_OldStone/Texture2D/Door_OldStone_NormEmis.tga",
+   "output_sha256": "d200c8c797411f4773ae69adb3ef98ac1de6b6d8f4239763d1028d7bdfded73f",
+   "uasset": "Content/Imported/MaterialDatabase/Door_OldStone/Door_OldStone_NormEmis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Door_OldStone.upk#Door_OldStoneWood_DiffSpec",
+   "object": "Door_OldStoneWood_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Door_OldStone/Door_OldStone/Texture2D/Door_OldStoneWood_DiffSpec.tga",
+   "extracted_sha256": "dc5556fa808c4940064b06326536c851dc7bacaf265783f08823b757bb206144",
+   "output_file": "Content/Extracted/MaterialDatabase/Door_OldStone/Door_OldStone/Texture2D/Door_OldStoneWood_DiffSpec.tga",
+   "output_sha256": "dc5556fa808c4940064b06326536c851dc7bacaf265783f08823b757bb206144",
+   "uasset": "Content/Imported/MaterialDatabase/Door_OldStone/Door_OldStoneWood_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Door_OldStone.upk#Door_OldStoneWood_NormAlpha",
+   "object": "Door_OldStoneWood_NormAlpha",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Door_OldStone/Door_OldStone/Texture2D/Door_OldStoneWood_NormAlpha.tga",
+   "extracted_sha256": "756a3cd7c81a6838da05c748dac71d1470c0f35763001565e97c68c5779de562",
+   "output_file": "Content/Extracted/MaterialDatabase/Door_OldStone/Door_OldStone/Texture2D/Door_OldStoneWood_NormAlpha.tga",
+   "output_sha256": "756a3cd7c81a6838da05c748dac71d1470c0f35763001565e97c68c5779de562",
+   "uasset": "Content/Imported/MaterialDatabase/Door_OldStone/Door_OldStoneWood_NormAlpha.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Door_OldStone.upk#MI_door_oldstonewood",
+   "object": "MI_door_oldstonewood",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "door_oldstonewood",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Door_OldStone/Door_OldStone/Texture2D/Door_OldStone_DiffSpec.tga",
+   "extracted_sha256": "73dd35860d6bbf2752e73517ae0398c3bbce271c32dce334066d3063ee6a5567",
+   "output_file": "Content/Extracted/MaterialDatabase/Door_OldStone/Door_OldStone/Texture2D/Door_OldStone_DiffSpec.tga",
+   "output_sha256": "73dd35860d6bbf2752e73517ae0398c3bbce271c32dce334066d3063ee6a5567",
+   "uasset": "Content/Imported/MaterialDatabase/Door_OldStone/MI_door_oldstonewood.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Door_OldStone.upk#MI_Newdoor_oldstonewood",
+   "object": "MI_Newdoor_oldstonewood",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Newdoor_oldstonewood",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Door_OldStone/Door_OldStone/Texture2D/Door_OldStoneWood_DiffSpec.tga",
+   "extracted_sha256": "dc5556fa808c4940064b06326536c851dc7bacaf265783f08823b757bb206144",
+   "output_file": "Content/Extracted/MaterialDatabase/Door_OldStone/Door_OldStone/Texture2D/Door_OldStoneWood_DiffSpec.tga",
+   "output_sha256": "dc5556fa808c4940064b06326536c851dc7bacaf265783f08823b757bb206144",
+   "uasset": "Content/Imported/MaterialDatabase/Door_OldStone/MI_Newdoor_oldstonewood.uasset"
+  }
+ ]
+}

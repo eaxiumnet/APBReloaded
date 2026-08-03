@@ -1,0 +1,73 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Concrete_Floor",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/Floor/Concrete_Floor.upk",
+ "source_sha256": "51457134a64b371df25187157db2376d90d0c2e74c51f9f4ba22039e670e3a3f",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Floor/Concrete_Floor.upk#Concrete_Floor_Diff",
+   "object": "Concrete_Floor_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Concrete_Floor/Concrete_Floor/Texture2D/Concrete_Floor_Diff.tga",
+   "extracted_sha256": "72a53d72994eec2e00272c4f69fae4e67f96924d0ac97f272c78936bfa1b4741",
+   "output_file": "Content/Extracted/MaterialDatabase/Concrete_Floor/Concrete_Floor/Texture2D/Concrete_Floor_Diff.tga",
+   "output_sha256": "72a53d72994eec2e00272c4f69fae4e67f96924d0ac97f272c78936bfa1b4741",
+   "uasset": "Content/Imported/MaterialDatabase/Concrete_Floor/Concrete_Floor_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Floor/Concrete_Floor.upk#MI_concrete_floor",
+   "object": "MI_concrete_floor",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "concrete_floor",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Concrete_Floor/Concrete_Floor/Texture2D/Concrete_Floor_Diff.tga",
+   "extracted_sha256": "72a53d72994eec2e00272c4f69fae4e67f96924d0ac97f272c78936bfa1b4741",
+   "output_file": "Content/Extracted/MaterialDatabase/Concrete_Floor/Concrete_Floor/Texture2D/Concrete_Floor_Diff.tga",
+   "output_sha256": "72a53d72994eec2e00272c4f69fae4e67f96924d0ac97f272c78936bfa1b4741",
+   "uasset": "Content/Imported/MaterialDatabase/Concrete_Floor/MI_concrete_floor.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Floor/Concrete_Floor.upk#MI_Rubble",
+   "object": "MI_Rubble",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Rubble",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Concrete_Floor/Concrete_Floor/Texture2D/Rubble_01_Diff.tga",
+   "extracted_sha256": "d170716283b5433417a71c612a0f147bb7cfa3665cfe376a766b9a4566538a82",
+   "output_file": "Content/Extracted/MaterialDatabase/Concrete_Floor/Concrete_Floor/Texture2D/Rubble_01_Diff.tga",
+   "output_sha256": "d170716283b5433417a71c612a0f147bb7cfa3665cfe376a766b9a4566538a82",
+   "uasset": "Content/Imported/MaterialDatabase/Concrete_Floor/MI_Rubble.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Floor/Concrete_Floor.upk#Rubble_01_Diff",
+   "object": "Rubble_01_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Concrete_Floor/Concrete_Floor/Texture2D/Rubble_01_Diff.tga",
+   "extracted_sha256": "d170716283b5433417a71c612a0f147bb7cfa3665cfe376a766b9a4566538a82",
+   "output_file": "Content/Extracted/MaterialDatabase/Concrete_Floor/Concrete_Floor/Texture2D/Rubble_01_Diff.tga",
+   "output_sha256": "d170716283b5433417a71c612a0f147bb7cfa3665cfe376a766b9a4566538a82",
+   "uasset": "Content/Imported/MaterialDatabase/Concrete_Floor/Rubble_01_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Floor/Concrete_Floor.upk#Rubble_01_NRM",
+   "object": "Rubble_01_NRM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Concrete_Floor/Concrete_Floor/Texture2D/Rubble_01_NRM.tga",
+   "extracted_sha256": "e7721ea93c373497e3e8c7307e4e761317900bae7ac20c4567828653d09332b5",
+   "output_file": "Content/Extracted/MaterialDatabase/Concrete_Floor/Concrete_Floor/Texture2D/Rubble_01_NRM.tga",
+   "output_sha256": "e7721ea93c373497e3e8c7307e4e761317900bae7ac20c4567828653d09332b5",
+   "uasset": "Content/Imported/MaterialDatabase/Concrete_Floor/Rubble_01_NRM.uasset"
+  }
+ ]
+}

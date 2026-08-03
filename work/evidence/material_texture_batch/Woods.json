@@ -1,0 +1,792 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Woods",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/Wood/Woods.upk",
+ "source_sha256": "84c4ac437b0dec413dfbec1b2c3f3bd8f16d5a448e1433575f2ea9d2b82429e6",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#Decking_Alpha_NRM",
+   "object": "Decking_Alpha_NRM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Decking_Alpha_NRM.tga",
+   "extracted_sha256": "53f3039679a2896c0f070977025c626cd1ea8a1495fa7716ca481776fb1caf74",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Decking_Alpha_NRM.tga",
+   "output_sha256": "53f3039679a2896c0f070977025c626cd1ea8a1495fa7716ca481776fb1caf74",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/Decking_Alpha_NRM.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#DirtOverlay_01",
+   "object": "DirtOverlay_01",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/DirtOverlay_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#GreyWood_Diff",
+   "object": "GreyWood_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/GreyWood_Diff.tga",
+   "extracted_sha256": "cc41be74093befefd8875acd48ce7e912851b90d982096a1658a58ca599ba29c",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/GreyWood_Diff.tga",
+   "output_sha256": "cc41be74093befefd8875acd48ce7e912851b90d982096a1658a58ca599ba29c",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/GreyWood_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#LaminateFloor_Wood01",
+   "object": "LaminateFloor_Wood01",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/LaminateFloor_Wood01.tga",
+   "extracted_sha256": "bbd95ad6215bb248ad9402b5a0944ca2f984c9a59a7f4f667e93722698040b5f",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/LaminateFloor_Wood01.tga",
+   "output_sha256": "bbd95ad6215bb248ad9402b5a0944ca2f984c9a59a7f4f667e93722698040b5f",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/LaminateFloor_Wood01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#MI_GreyWood",
+   "object": "MI_GreyWood",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "GreyWood",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/GreyWood_Diff.tga",
+   "extracted_sha256": "cc41be74093befefd8875acd48ce7e912851b90d982096a1658a58ca599ba29c",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/GreyWood_Diff.tga",
+   "output_sha256": "cc41be74093befefd8875acd48ce7e912851b90d982096a1658a58ca599ba29c",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/MI_GreyWood.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#MI_laminateFloor_Darker",
+   "object": "MI_laminateFloor_Darker",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "laminateFloor_Darker",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/LaminateFloor_Wood01.tga",
+   "extracted_sha256": "bbd95ad6215bb248ad9402b5a0944ca2f984c9a59a7f4f667e93722698040b5f",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/LaminateFloor_Wood01.tga",
+   "output_sha256": "bbd95ad6215bb248ad9402b5a0944ca2f984c9a59a7f4f667e93722698040b5f",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/MI_laminateFloor_Darker.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#MI_laminateFloor_MAT",
+   "object": "MI_laminateFloor_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "laminateFloor_MAT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/LaminateFloor_Wood01.tga",
+   "extracted_sha256": "bbd95ad6215bb248ad9402b5a0944ca2f984c9a59a7f4f667e93722698040b5f",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/LaminateFloor_Wood01.tga",
+   "output_sha256": "bbd95ad6215bb248ad9402b5a0944ca2f984c9a59a7f4f667e93722698040b5f",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/MI_laminateFloor_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#MI_laminateFloor_MAT_WithDirt",
+   "object": "MI_laminateFloor_MAT_WithDirt",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "laminateFloor_MAT_WithDirt",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/LaminateFloor_Wood01.tga",
+   "extracted_sha256": "bbd95ad6215bb248ad9402b5a0944ca2f984c9a59a7f4f667e93722698040b5f",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/LaminateFloor_Wood01.tga",
+   "output_sha256": "bbd95ad6215bb248ad9402b5a0944ca2f984c9a59a7f4f667e93722698040b5f",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/MI_laminateFloor_MAT_WithDirt.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#MI_laminateFloor_MAT_WithDirt_Darker",
+   "object": "MI_laminateFloor_MAT_WithDirt_Darker",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "laminateFloor_MAT_WithDirt_Darker",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/LaminateFloor_Wood01.tga",
+   "extracted_sha256": "bbd95ad6215bb248ad9402b5a0944ca2f984c9a59a7f4f667e93722698040b5f",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/LaminateFloor_Wood01.tga",
+   "output_sha256": "bbd95ad6215bb248ad9402b5a0944ca2f984c9a59a7f4f667e93722698040b5f",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/MI_laminateFloor_MAT_WithDirt_Darker.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#MI_wood01",
+   "object": "MI_wood01",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "wood01",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Wood01_DiffSpec.tga",
+   "extracted_sha256": "344c118e212f400efc5b05f7bb8fbe98dff13cc471f7e33b5e91404ea6e40d1e",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Wood01_DiffSpec.tga",
+   "output_sha256": "344c118e212f400efc5b05f7bb8fbe98dff13cc471f7e33b5e91404ea6e40d1e",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/MI_wood01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#MI_Wood_Cladding_Hor",
+   "object": "MI_Wood_Cladding_Hor",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Wood_Cladding_Hor",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/WoodCladding_NRM.tga",
+   "extracted_sha256": "838baa3d043e05595f1fabfd2a730b13c5002f731a6b5451b7c55274ad40901a",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/WoodCladding_NRM.tga",
+   "output_sha256": "838baa3d043e05595f1fabfd2a730b13c5002f731a6b5451b7c55274ad40901a",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/MI_Wood_Cladding_Hor.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#MI_Wood_Cladding_Hor_1to1",
+   "object": "MI_Wood_Cladding_Hor_1to1",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Wood_Cladding_Hor_1to1",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/WoodCladding_NRM.tga",
+   "extracted_sha256": "838baa3d043e05595f1fabfd2a730b13c5002f731a6b5451b7c55274ad40901a",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/WoodCladding_NRM.tga",
+   "output_sha256": "838baa3d043e05595f1fabfd2a730b13c5002f731a6b5451b7c55274ad40901a",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/MI_Wood_Cladding_Hor_1to1.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#MI_Wood_Cladding_Ver",
+   "object": "MI_Wood_Cladding_Ver",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Wood_Cladding_Ver",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/WoodCladding_NRM.tga",
+   "extracted_sha256": "838baa3d043e05595f1fabfd2a730b13c5002f731a6b5451b7c55274ad40901a",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/WoodCladding_NRM.tga",
+   "output_sha256": "838baa3d043e05595f1fabfd2a730b13c5002f731a6b5451b7c55274ad40901a",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/MI_Wood_Cladding_Ver.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#MI_Wood_Cladding_Ver_1to1",
+   "object": "MI_Wood_Cladding_Ver_1to1",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Wood_Cladding_Ver_1to1",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/WoodCladding_NRM.tga",
+   "extracted_sha256": "838baa3d043e05595f1fabfd2a730b13c5002f731a6b5451b7c55274ad40901a",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/WoodCladding_NRM.tga",
+   "output_sha256": "838baa3d043e05595f1fabfd2a730b13c5002f731a6b5451b7c55274ad40901a",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/MI_Wood_Cladding_Ver_1to1.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#MI_Wood_Decking",
+   "object": "MI_Wood_Decking",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Wood_Decking",
+   "texture_roles": [
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Decking_Alpha_NRM.tga",
+   "extracted_sha256": "53f3039679a2896c0f070977025c626cd1ea8a1495fa7716ca481776fb1caf74",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Decking_Alpha_NRM.tga",
+   "output_sha256": "53f3039679a2896c0f070977025c626cd1ea8a1495fa7716ca481776fb1caf74",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/MI_Wood_Decking.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#MI_Wood_Decking_Darker",
+   "object": "MI_Wood_Decking_Darker",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Wood_Decking_Darker",
+   "texture_roles": [
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Decking_Alpha_NRM.tga",
+   "extracted_sha256": "53f3039679a2896c0f070977025c626cd1ea8a1495fa7716ca481776fb1caf74",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Decking_Alpha_NRM.tga",
+   "output_sha256": "53f3039679a2896c0f070977025c626cd1ea8a1495fa7716ca481776fb1caf74",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/MI_Wood_Decking_Darker.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#MI_Wood_ForBankOnly",
+   "object": "MI_Wood_ForBankOnly",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Wood_ForBankOnly",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/MI_Wood_ForBankOnly.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#MI_Wood_Green_Horizontal",
+   "object": "MI_Wood_Green_Horizontal",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Wood_Green_Horizontal",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01_DiffSpec.tga",
+   "extracted_sha256": "69bd834d53cc612a14893ab70c7d83444a224b46d531f932721aeb2adc57523f",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01_DiffSpec.tga",
+   "output_sha256": "69bd834d53cc612a14893ab70c7d83444a224b46d531f932721aeb2adc57523f",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/MI_Wood_Green_Horizontal.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#MI_Wood_Horizontal_Dark",
+   "object": "MI_Wood_Horizontal_Dark",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Wood_Horizontal_Dark",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01H_DiffSpec.tga",
+   "extracted_sha256": "655b08765472532a8aa1fa8c3b6cff094cb039d41b0f150182580a5ff16fd33d",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01H_DiffSpec.tga",
+   "output_sha256": "655b08765472532a8aa1fa8c3b6cff094cb039d41b0f150182580a5ff16fd33d",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/MI_Wood_Horizontal_Dark.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#MI_Wood_Horizontal_Light",
+   "object": "MI_Wood_Horizontal_Light",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Wood_Horizontal_Light",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01H_DiffSpec.tga",
+   "extracted_sha256": "655b08765472532a8aa1fa8c3b6cff094cb039d41b0f150182580a5ff16fd33d",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01H_DiffSpec.tga",
+   "output_sha256": "655b08765472532a8aa1fa8c3b6cff094cb039d41b0f150182580a5ff16fd33d",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/MI_Wood_Horizontal_Light.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#MI_Wood_Painted_PARENT",
+   "object": "MI_Wood_Painted_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Wood_Painted_PARENT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01_DiffSpec.tga",
+   "extracted_sha256": "69bd834d53cc612a14893ab70c7d83444a224b46d531f932721aeb2adc57523f",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01_DiffSpec.tga",
+   "output_sha256": "69bd834d53cc612a14893ab70c7d83444a224b46d531f932721aeb2adc57523f",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/MI_Wood_Painted_PARENT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#MI_Wood_PARENT",
+   "object": "MI_Wood_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Wood_PARENT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01_DiffSpec.tga",
+   "extracted_sha256": "69bd834d53cc612a14893ab70c7d83444a224b46d531f932721aeb2adc57523f",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01_DiffSpec.tga",
+   "output_sha256": "69bd834d53cc612a14893ab70c7d83444a224b46d531f932721aeb2adc57523f",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/MI_Wood_PARENT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#MI_Wood_Vertical_Blue",
+   "object": "MI_Wood_Vertical_Blue",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Wood_Vertical_Blue",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01_DiffSpec.tga",
+   "extracted_sha256": "69bd834d53cc612a14893ab70c7d83444a224b46d531f932721aeb2adc57523f",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01_DiffSpec.tga",
+   "output_sha256": "69bd834d53cc612a14893ab70c7d83444a224b46d531f932721aeb2adc57523f",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/MI_Wood_Vertical_Blue.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#MI_Wood_Vertical_Blue_Graffiti",
+   "object": "MI_Wood_Vertical_Blue_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Wood_Vertical_Blue_Graffiti",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01_DiffSpec.tga",
+   "extracted_sha256": "69bd834d53cc612a14893ab70c7d83444a224b46d531f932721aeb2adc57523f",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01_DiffSpec.tga",
+   "output_sha256": "69bd834d53cc612a14893ab70c7d83444a224b46d531f932721aeb2adc57523f",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/MI_Wood_Vertical_Blue_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#MI_Wood_Vertical_Dark",
+   "object": "MI_Wood_Vertical_Dark",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Wood_Vertical_Dark",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01_DiffSpec.tga",
+   "extracted_sha256": "69bd834d53cc612a14893ab70c7d83444a224b46d531f932721aeb2adc57523f",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01_DiffSpec.tga",
+   "output_sha256": "69bd834d53cc612a14893ab70c7d83444a224b46d531f932721aeb2adc57523f",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/MI_Wood_Vertical_Dark.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#MI_Wood_Vertical_Dark_Graffiti",
+   "object": "MI_Wood_Vertical_Dark_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Wood_Vertical_Dark_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01_DiffSpec.tga",
+   "extracted_sha256": "69bd834d53cc612a14893ab70c7d83444a224b46d531f932721aeb2adc57523f",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01_DiffSpec.tga",
+   "output_sha256": "69bd834d53cc612a14893ab70c7d83444a224b46d531f932721aeb2adc57523f",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/MI_Wood_Vertical_Dark_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#MI_Wood_Vertical_Grey",
+   "object": "MI_Wood_Vertical_Grey",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Wood_Vertical_Grey",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01_DiffSpec.tga",
+   "extracted_sha256": "69bd834d53cc612a14893ab70c7d83444a224b46d531f932721aeb2adc57523f",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01_DiffSpec.tga",
+   "output_sha256": "69bd834d53cc612a14893ab70c7d83444a224b46d531f932721aeb2adc57523f",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/MI_Wood_Vertical_Grey.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#MI_Wood_Vertical_Grey_Graffiti",
+   "object": "MI_Wood_Vertical_Grey_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Wood_Vertical_Grey_Graffiti",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01_DiffSpec.tga",
+   "extracted_sha256": "69bd834d53cc612a14893ab70c7d83444a224b46d531f932721aeb2adc57523f",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01_DiffSpec.tga",
+   "output_sha256": "69bd834d53cc612a14893ab70c7d83444a224b46d531f932721aeb2adc57523f",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/MI_Wood_Vertical_Grey_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#MI_Wood_Vertical_Light",
+   "object": "MI_Wood_Vertical_Light",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Wood_Vertical_Light",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01_DiffSpec.tga",
+   "extracted_sha256": "69bd834d53cc612a14893ab70c7d83444a224b46d531f932721aeb2adc57523f",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01_DiffSpec.tga",
+   "output_sha256": "69bd834d53cc612a14893ab70c7d83444a224b46d531f932721aeb2adc57523f",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/MI_Wood_Vertical_Light.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#MI_Wood_Vertical_Light_Graffiti",
+   "object": "MI_Wood_Vertical_Light_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Wood_Vertical_Light_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01_DiffSpec.tga",
+   "extracted_sha256": "69bd834d53cc612a14893ab70c7d83444a224b46d531f932721aeb2adc57523f",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01_DiffSpec.tga",
+   "output_sha256": "69bd834d53cc612a14893ab70c7d83444a224b46d531f932721aeb2adc57523f",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/MI_Wood_Vertical_Light_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#MI_Wood_Vertical_Red",
+   "object": "MI_Wood_Vertical_Red",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Wood_Vertical_Red",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01_DiffSpec.tga",
+   "extracted_sha256": "69bd834d53cc612a14893ab70c7d83444a224b46d531f932721aeb2adc57523f",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01_DiffSpec.tga",
+   "output_sha256": "69bd834d53cc612a14893ab70c7d83444a224b46d531f932721aeb2adc57523f",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/MI_Wood_Vertical_Red.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#MI_Wood_Vertical_Red_Graffiti",
+   "object": "MI_Wood_Vertical_Red_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Wood_Vertical_Red_Graffiti",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01_DiffSpec.tga",
+   "extracted_sha256": "69bd834d53cc612a14893ab70c7d83444a224b46d531f932721aeb2adc57523f",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01_DiffSpec.tga",
+   "output_sha256": "69bd834d53cc612a14893ab70c7d83444a224b46d531f932721aeb2adc57523f",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/MI_Wood_Vertical_Red_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#MI_Wood_Vertical_White",
+   "object": "MI_Wood_Vertical_White",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Wood_Vertical_White",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01_DiffSpec.tga",
+   "extracted_sha256": "69bd834d53cc612a14893ab70c7d83444a224b46d531f932721aeb2adc57523f",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01_DiffSpec.tga",
+   "output_sha256": "69bd834d53cc612a14893ab70c7d83444a224b46d531f932721aeb2adc57523f",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/MI_Wood_Vertical_White.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#MI_Wood_Vertical_White_Dirtier",
+   "object": "MI_Wood_Vertical_White_Dirtier",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Wood_Vertical_White_Dirtier",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01_DiffSpec.tga",
+   "extracted_sha256": "69bd834d53cc612a14893ab70c7d83444a224b46d531f932721aeb2adc57523f",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01_DiffSpec.tga",
+   "output_sha256": "69bd834d53cc612a14893ab70c7d83444a224b46d531f932721aeb2adc57523f",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/MI_Wood_Vertical_White_Dirtier.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#MI_Wood_Vertical_White_Dirtier_Graffiti",
+   "object": "MI_Wood_Vertical_White_Dirtier_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Wood_Vertical_White_Dirtier_Graffiti",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01_DiffSpec.tga",
+   "extracted_sha256": "69bd834d53cc612a14893ab70c7d83444a224b46d531f932721aeb2adc57523f",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01_DiffSpec.tga",
+   "output_sha256": "69bd834d53cc612a14893ab70c7d83444a224b46d531f932721aeb2adc57523f",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/MI_Wood_Vertical_White_Dirtier_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#MI_Wood_Vertical_White_Graffiti",
+   "object": "MI_Wood_Vertical_White_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Wood_Vertical_White_Graffiti",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01_DiffSpec.tga",
+   "extracted_sha256": "69bd834d53cc612a14893ab70c7d83444a224b46d531f932721aeb2adc57523f",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01_DiffSpec.tga",
+   "output_sha256": "69bd834d53cc612a14893ab70c7d83444a224b46d531f932721aeb2adc57523f",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/MI_Wood_Vertical_White_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#MI_WoodPlank_Painted_Blue",
+   "object": "MI_WoodPlank_Painted_Blue",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WoodPlank_Painted_Blue",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/WoodPlank_DiffSpec.tga",
+   "extracted_sha256": "91eb6858360d76f476be1026fe0999f5e406d9d8bd6d7bec0600b7e69debeaa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/WoodPlank_DiffSpec.tga",
+   "output_sha256": "91eb6858360d76f476be1026fe0999f5e406d9d8bd6d7bec0600b7e69debeaa2",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/MI_WoodPlank_Painted_Blue.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#MI_WoodPlank_Painted_Blue_Graffiti",
+   "object": "MI_WoodPlank_Painted_Blue_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WoodPlank_Painted_Blue_Graffiti",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/WoodPlank_DiffSpec.tga",
+   "extracted_sha256": "91eb6858360d76f476be1026fe0999f5e406d9d8bd6d7bec0600b7e69debeaa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/WoodPlank_DiffSpec.tga",
+   "output_sha256": "91eb6858360d76f476be1026fe0999f5e406d9d8bd6d7bec0600b7e69debeaa2",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/MI_WoodPlank_Painted_Blue_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#MI_WoodPlank_Painted_Green",
+   "object": "MI_WoodPlank_Painted_Green",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WoodPlank_Painted_Green",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/WoodPlank_DiffSpec.tga",
+   "extracted_sha256": "91eb6858360d76f476be1026fe0999f5e406d9d8bd6d7bec0600b7e69debeaa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/WoodPlank_DiffSpec.tga",
+   "output_sha256": "91eb6858360d76f476be1026fe0999f5e406d9d8bd6d7bec0600b7e69debeaa2",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/MI_WoodPlank_Painted_Green.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#MI_WoodPlank_Painted_Green_Graffiti",
+   "object": "MI_WoodPlank_Painted_Green_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WoodPlank_Painted_Green_Graffiti",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/WoodPlank_DiffSpec.tga",
+   "extracted_sha256": "91eb6858360d76f476be1026fe0999f5e406d9d8bd6d7bec0600b7e69debeaa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/WoodPlank_DiffSpec.tga",
+   "output_sha256": "91eb6858360d76f476be1026fe0999f5e406d9d8bd6d7bec0600b7e69debeaa2",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/MI_WoodPlank_Painted_Green_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#MI_WoodPlank_Painted_Grey",
+   "object": "MI_WoodPlank_Painted_Grey",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WoodPlank_Painted_Grey",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/WoodPlank_DiffSpec.tga",
+   "extracted_sha256": "91eb6858360d76f476be1026fe0999f5e406d9d8bd6d7bec0600b7e69debeaa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/WoodPlank_DiffSpec.tga",
+   "output_sha256": "91eb6858360d76f476be1026fe0999f5e406d9d8bd6d7bec0600b7e69debeaa2",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/MI_WoodPlank_Painted_Grey.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#MI_WoodPlank_Painted_Grey_Graffiti",
+   "object": "MI_WoodPlank_Painted_Grey_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WoodPlank_Painted_Grey_Graffiti",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/WoodPlank_DiffSpec.tga",
+   "extracted_sha256": "91eb6858360d76f476be1026fe0999f5e406d9d8bd6d7bec0600b7e69debeaa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/WoodPlank_DiffSpec.tga",
+   "output_sha256": "91eb6858360d76f476be1026fe0999f5e406d9d8bd6d7bec0600b7e69debeaa2",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/MI_WoodPlank_Painted_Grey_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#MI_WoodPlank_Painted_PARENT",
+   "object": "MI_WoodPlank_Painted_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WoodPlank_Painted_PARENT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/WoodPlank_DiffSpec.tga",
+   "extracted_sha256": "91eb6858360d76f476be1026fe0999f5e406d9d8bd6d7bec0600b7e69debeaa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/WoodPlank_DiffSpec.tga",
+   "output_sha256": "91eb6858360d76f476be1026fe0999f5e406d9d8bd6d7bec0600b7e69debeaa2",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/MI_WoodPlank_Painted_PARENT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#MI_WoodPlank_Painted_Red",
+   "object": "MI_WoodPlank_Painted_Red",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WoodPlank_Painted_Red",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/WoodPlank_DiffSpec.tga",
+   "extracted_sha256": "91eb6858360d76f476be1026fe0999f5e406d9d8bd6d7bec0600b7e69debeaa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/WoodPlank_DiffSpec.tga",
+   "output_sha256": "91eb6858360d76f476be1026fe0999f5e406d9d8bd6d7bec0600b7e69debeaa2",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/MI_WoodPlank_Painted_Red.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#MI_WoodPlank_Painted_Red_Graffiti",
+   "object": "MI_WoodPlank_Painted_Red_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WoodPlank_Painted_Red_Graffiti",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/WoodPlank_DiffSpec.tga",
+   "extracted_sha256": "91eb6858360d76f476be1026fe0999f5e406d9d8bd6d7bec0600b7e69debeaa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/WoodPlank_DiffSpec.tga",
+   "output_sha256": "91eb6858360d76f476be1026fe0999f5e406d9d8bd6d7bec0600b7e69debeaa2",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/MI_WoodPlank_Painted_Red_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#MI_WoodPlank_Painted_White",
+   "object": "MI_WoodPlank_Painted_White",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WoodPlank_Painted_White",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/WoodPlank_DiffSpec.tga",
+   "extracted_sha256": "91eb6858360d76f476be1026fe0999f5e406d9d8bd6d7bec0600b7e69debeaa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/WoodPlank_DiffSpec.tga",
+   "output_sha256": "91eb6858360d76f476be1026fe0999f5e406d9d8bd6d7bec0600b7e69debeaa2",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/MI_WoodPlank_Painted_White.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#MI_WoodPlank_Painted_White_Graffiti",
+   "object": "MI_WoodPlank_Painted_White_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WoodPlank_Painted_White_Graffiti",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/WoodPlank_DiffSpec.tga",
+   "extracted_sha256": "91eb6858360d76f476be1026fe0999f5e406d9d8bd6d7bec0600b7e69debeaa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/WoodPlank_DiffSpec.tga",
+   "output_sha256": "91eb6858360d76f476be1026fe0999f5e406d9d8bd6d7bec0600b7e69debeaa2",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/MI_WoodPlank_Painted_White_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#MI_WoodPlank_WornPainted_PARENT",
+   "object": "MI_WoodPlank_WornPainted_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WoodPlank_WornPainted_PARENT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/WoodPlank_DiffSpec.tga",
+   "extracted_sha256": "91eb6858360d76f476be1026fe0999f5e406d9d8bd6d7bec0600b7e69debeaa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/WoodPlank_DiffSpec.tga",
+   "output_sha256": "91eb6858360d76f476be1026fe0999f5e406d9d8bd6d7bec0600b7e69debeaa2",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/MI_WoodPlank_WornPainted_PARENT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#Wood01_DiffSpec",
+   "object": "Wood01_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Wood01_DiffSpec.tga",
+   "extracted_sha256": "344c118e212f400efc5b05f7bb8fbe98dff13cc471f7e33b5e91404ea6e40d1e",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Wood01_DiffSpec.tga",
+   "output_sha256": "344c118e212f400efc5b05f7bb8fbe98dff13cc471f7e33b5e91404ea6e40d1e",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/Wood01_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#Wood_NoGrain",
+   "object": "Wood_NoGrain",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Wood_NoGrain.tga",
+   "extracted_sha256": "2cadc07c2b6a81f34b2c9d66a9d062e2bc6f72c13328d4e81d0d67a41e47f243",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Wood_NoGrain.tga",
+   "output_sha256": "2cadc07c2b6a81f34b2c9d66a9d062e2bc6f72c13328d4e81d0d67a41e47f243",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/Wood_NoGrain.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#WoodCladding_NRM",
+   "object": "WoodCladding_NRM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/WoodCladding_NRM.tga",
+   "extracted_sha256": "838baa3d043e05595f1fabfd2a730b13c5002f731a6b5451b7c55274ad40901a",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/WoodCladding_NRM.tga",
+   "output_sha256": "838baa3d043e05595f1fabfd2a730b13c5002f731a6b5451b7c55274ad40901a",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/WoodCladding_NRM.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#Woodgrain01_DiffSpec",
+   "object": "Woodgrain01_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01_DiffSpec.tga",
+   "extracted_sha256": "69bd834d53cc612a14893ab70c7d83444a224b46d531f932721aeb2adc57523f",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01_DiffSpec.tga",
+   "output_sha256": "69bd834d53cc612a14893ab70c7d83444a224b46d531f932721aeb2adc57523f",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/Woodgrain01_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#Woodgrain01_Norm",
+   "object": "Woodgrain01_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01_Norm.tga",
+   "extracted_sha256": "f0e749b56d5eb217ac35e73635e57ab3583ba192d30a65c882f2923325510a63",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01_Norm.tga",
+   "output_sha256": "f0e749b56d5eb217ac35e73635e57ab3583ba192d30a65c882f2923325510a63",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/Woodgrain01_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#Woodgrain01H_DiffSpec",
+   "object": "Woodgrain01H_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01H_DiffSpec.tga",
+   "extracted_sha256": "655b08765472532a8aa1fa8c3b6cff094cb039d41b0f150182580a5ff16fd33d",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01H_DiffSpec.tga",
+   "output_sha256": "655b08765472532a8aa1fa8c3b6cff094cb039d41b0f150182580a5ff16fd33d",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/Woodgrain01H_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#Woodgrain01H_Norm",
+   "object": "Woodgrain01H_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01H_Norm.tga",
+   "extracted_sha256": "2f02f1047c264080d2d7e2b86aa5e88e5afeb95c0fccb8144efadd1239fcb5a2",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/Woodgrain01H_Norm.tga",
+   "output_sha256": "2f02f1047c264080d2d7e2b86aa5e88e5afeb95c0fccb8144efadd1239fcb5a2",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/Woodgrain01H_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#WoodPlank_DiffSpec",
+   "object": "WoodPlank_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/WoodPlank_DiffSpec.tga",
+   "extracted_sha256": "91eb6858360d76f476be1026fe0999f5e406d9d8bd6d7bec0600b7e69debeaa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/WoodPlank_DiffSpec.tga",
+   "output_sha256": "91eb6858360d76f476be1026fe0999f5e406d9d8bd6d7bec0600b7e69debeaa2",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/WoodPlank_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Woods.upk#WoodPlank_Norm",
+   "object": "WoodPlank_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/WoodPlank_Norm.tga",
+   "extracted_sha256": "b8de7c61c1e1c6c6dd9d74bd064cc1d55908c7206a68068f47e03cb2e5fb511e",
+   "output_file": "Content/Extracted/MaterialDatabase/Woods/Woods/Texture2D/WoodPlank_Norm.tga",
+   "output_sha256": "b8de7c61c1e1c6c6dd9d74bd064cc1d55908c7206a68068f47e03cb2e5fb511e",
+   "uasset": "Content/Imported/MaterialDatabase/Woods/WoodPlank_Norm.uasset"
+  }
+ ]
+}

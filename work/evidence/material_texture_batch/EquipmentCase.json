@@ -1,0 +1,74 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "EquipmentCase",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/PropMaterials/EquipmentCase.upk",
+ "source_sha256": "db6da033ab88a21081925af3d7b4c8dc0165f0ffaa02da4ddc9dbf544fec100e",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/EquipmentCase.upk#EquipmentCase_Diff",
+   "object": "EquipmentCase_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/EquipmentCase/EquipmentCase/Texture2D/EquipmentCase_Diff.tga",
+   "extracted_sha256": "3ab2e379e9f48f869dc3bb9afd16ae6445121b6b12977e651dfcf02128d0cf1f",
+   "output_file": "Content/Extracted/MaterialDatabase/EquipmentCase/EquipmentCase/Texture2D/EquipmentCase_Diff.tga",
+   "output_sha256": "3ab2e379e9f48f869dc3bb9afd16ae6445121b6b12977e651dfcf02128d0cf1f",
+   "uasset": "Content/Imported/MaterialDatabase/EquipmentCase/EquipmentCase_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/EquipmentCase.upk#EquipmentCase_Norm",
+   "object": "EquipmentCase_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/EquipmentCase/EquipmentCase/Texture2D/EquipmentCase_Norm.tga",
+   "extracted_sha256": "3f75ac19d09123445585c000c226fb6ab4ede60c09f24cb3484a9eb245d80a16",
+   "output_file": "Content/Extracted/MaterialDatabase/EquipmentCase/EquipmentCase/Texture2D/EquipmentCase_Norm.tga",
+   "output_sha256": "3f75ac19d09123445585c000c226fb6ab4ede60c09f24cb3484a9eb245d80a16",
+   "uasset": "Content/Imported/MaterialDatabase/EquipmentCase/EquipmentCase_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/EquipmentCase.upk#EquipmentCaseRiot_Diff",
+   "object": "EquipmentCaseRiot_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/EquipmentCase/EquipmentCase/Texture2D/EquipmentCaseRiot_Diff.tga",
+   "extracted_sha256": "181880fc0d550ddf4e35465034fc38edd8d6d61e499b78cf3b6b3f75e835f0a6",
+   "output_file": "Content/Extracted/MaterialDatabase/EquipmentCase/EquipmentCase/Texture2D/EquipmentCaseRiot_Diff.tga",
+   "output_sha256": "181880fc0d550ddf4e35465034fc38edd8d6d61e499b78cf3b6b3f75e835f0a6",
+   "uasset": "Content/Imported/MaterialDatabase/EquipmentCase/EquipmentCaseRiot_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/EquipmentCase.upk#MI_EquipmentCase_MAT",
+   "object": "MI_EquipmentCase_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "EquipmentCase_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/EquipmentCase/EquipmentCase/Texture2D/EquipmentCase_Diff.tga",
+   "extracted_sha256": "3ab2e379e9f48f869dc3bb9afd16ae6445121b6b12977e651dfcf02128d0cf1f",
+   "output_file": "Content/Extracted/MaterialDatabase/EquipmentCase/EquipmentCase/Texture2D/EquipmentCase_Diff.tga",
+   "output_sha256": "3ab2e379e9f48f869dc3bb9afd16ae6445121b6b12977e651dfcf02128d0cf1f",
+   "uasset": "Content/Imported/MaterialDatabase/EquipmentCase/MI_EquipmentCase_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/EquipmentCase.upk#MI_EquipmentCaseRiot_MAT",
+   "object": "MI_EquipmentCaseRiot_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "EquipmentCaseRiot_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/EquipmentCase/EquipmentCase/Texture2D/EquipmentCaseRiot_Diff.tga",
+   "extracted_sha256": "181880fc0d550ddf4e35465034fc38edd8d6d61e499b78cf3b6b3f75e835f0a6",
+   "output_file": "Content/Extracted/MaterialDatabase/EquipmentCase/EquipmentCase/Texture2D/EquipmentCaseRiot_Diff.tga",
+   "output_sha256": "181880fc0d550ddf4e35465034fc38edd8d6d61e499b78cf3b6b3f75e835f0a6",
+   "uasset": "Content/Imported/MaterialDatabase/EquipmentCase/MI_EquipmentCaseRiot_MAT.uasset"
+  }
+ ]
+}

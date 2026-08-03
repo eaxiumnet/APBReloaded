@@ -1,0 +1,114 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Bollards",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/Bollards.upk",
+ "source_sha256": "5266973016fa6f38624c850b3199a707b4c29383b706ae97147745f308f291fc",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Bollards.upk#Bollards_DiffSpec",
+   "object": "Bollards_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Bollards/Bollards/Texture2D/Bollards_DiffSpec.tga",
+   "extracted_sha256": "f4e635fd72b8ea90e499278845f2132e78121bd5ff964dd94e4788c4a2719dfd",
+   "output_file": "Content/Extracted/MaterialDatabase/Bollards/Bollards/Texture2D/Bollards_DiffSpec.tga",
+   "output_sha256": "f4e635fd72b8ea90e499278845f2132e78121bd5ff964dd94e4788c4a2719dfd",
+   "uasset": "Content/Imported/MaterialDatabase/Bollards/Bollards_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Bollards.upk#Bollards_Emis",
+   "object": "Bollards_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Bollards/Bollards/Texture2D/Bollards_Emis.tga",
+   "extracted_sha256": "f14197ca912977d392f6af78ca40eaf65d87b0539dcb017b30f1a92b83ebff52",
+   "output_file": "Content/Extracted/MaterialDatabase/Bollards/Bollards/Texture2D/Bollards_Emis.tga",
+   "output_sha256": "f14197ca912977d392f6af78ca40eaf65d87b0539dcb017b30f1a92b83ebff52",
+   "uasset": "Content/Imported/MaterialDatabase/Bollards/Bollards_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Bollards.upk#Bollards_Norm",
+   "object": "Bollards_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Bollards/Bollards/Texture2D/Bollards_Norm.tga",
+   "extracted_sha256": "9fe5fc68162d22b064c6fce6165910640570412c0549bed327edff4ba5aabaef",
+   "output_file": "Content/Extracted/MaterialDatabase/Bollards/Bollards/Texture2D/Bollards_Norm.tga",
+   "output_sha256": "9fe5fc68162d22b064c6fce6165910640570412c0549bed327edff4ba5aabaef",
+   "uasset": "Content/Imported/MaterialDatabase/Bollards/Bollards_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Bollards.upk#Concrete_01_DiffSpec",
+   "object": "Concrete_01_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Bollards/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Bollards/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/Bollards/Concrete_01_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Bollards.upk#Concrete_Grooved01_Norm",
+   "object": "Concrete_Grooved01_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Bollards/Concrete_Grooved/Texture2D/Concrete_Grooved01_Norm.tga",
+   "extracted_sha256": "aa186bd1c0924cd8834ebec9e2124ae6ad1e59888dab147b94d495b0506316af",
+   "output_file": "Content/Extracted/MaterialDatabase/Bollards/Concrete_Grooved/Texture2D/Concrete_Grooved01_Norm.tga",
+   "output_sha256": "aa186bd1c0924cd8834ebec9e2124ae6ad1e59888dab147b94d495b0506316af",
+   "uasset": "Content/Imported/MaterialDatabase/Bollards/Concrete_Grooved01_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Bollards.upk#MI_Bollards_Damage_Mat",
+   "object": "MI_Bollards_Damage_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Bollards_Damage_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Bollards/Bollards/Texture2D/Bollards_DiffSpec.tga",
+   "extracted_sha256": "f4e635fd72b8ea90e499278845f2132e78121bd5ff964dd94e4788c4a2719dfd",
+   "output_file": "Content/Extracted/MaterialDatabase/Bollards/Bollards/Texture2D/Bollards_DiffSpec.tga",
+   "output_sha256": "f4e635fd72b8ea90e499278845f2132e78121bd5ff964dd94e4788c4a2719dfd",
+   "uasset": "Content/Imported/MaterialDatabase/Bollards/MI_Bollards_Damage_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Bollards.upk#MI_Bollards_Mat",
+   "object": "MI_Bollards_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Bollards_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Bollards/Bollards/Texture2D/Bollards_DiffSpec.tga",
+   "extracted_sha256": "f4e635fd72b8ea90e499278845f2132e78121bd5ff964dd94e4788c4a2719dfd",
+   "output_file": "Content/Extracted/MaterialDatabase/Bollards/Bollards/Texture2D/Bollards_DiffSpec.tga",
+   "output_sha256": "f4e635fd72b8ea90e499278845f2132e78121bd5ff964dd94e4788c4a2719dfd",
+   "uasset": "Content/Imported/MaterialDatabase/Bollards/MI_Bollards_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Bollards.upk#MI_Stone_Line_LightDirt",
+   "object": "MI_Stone_Line_LightDirt",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stone_Line_LightDirt",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Bollards/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Bollards/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/Bollards/MI_Stone_Line_LightDirt.uasset"
+  }
+ ]
+}

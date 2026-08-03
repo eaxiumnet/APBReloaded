@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "WaterfrontCleats",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCleats.upk",
+ "source_sha256": "66e3370e7c2d8b95bdd219ccf41edd64fb33318ebd306dabe4381c159d7507af",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCleats.upk#MI_WaterfrontCleats_MAT",
+   "object": "MI_WaterfrontCleats_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WaterfrontCleats_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontCleats/WaterfrontCleats/Texture2D/WaterfrontCleats_DiffSpec.tga",
+   "extracted_sha256": "4d8fe343a29ff9a1d8407351634c94e1f5d924eaf60bd422e8d07322a11f8d60",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontCleats/WaterfrontCleats/Texture2D/WaterfrontCleats_DiffSpec.tga",
+   "output_sha256": "4d8fe343a29ff9a1d8407351634c94e1f5d924eaf60bd422e8d07322a11f8d60",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontCleats/MI_WaterfrontCleats_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCleats.upk#WaterfrontCleats_DiffSpec",
+   "object": "WaterfrontCleats_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontCleats/WaterfrontCleats/Texture2D/WaterfrontCleats_DiffSpec.tga",
+   "extracted_sha256": "4d8fe343a29ff9a1d8407351634c94e1f5d924eaf60bd422e8d07322a11f8d60",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontCleats/WaterfrontCleats/Texture2D/WaterfrontCleats_DiffSpec.tga",
+   "output_sha256": "4d8fe343a29ff9a1d8407351634c94e1f5d924eaf60bd422e8d07322a11f8d60",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontCleats/WaterfrontCleats_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCleats.upk#WaterfrontCleats_Norm",
+   "object": "WaterfrontCleats_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontCleats/WaterfrontCleats/Texture2D/WaterfrontCleats_Norm.tga",
+   "extracted_sha256": "3814eab96ed30133c90bc6be3b77a0c5518c6723ba7944a23c8671c775ac3e7f",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontCleats/WaterfrontCleats/Texture2D/WaterfrontCleats_Norm.tga",
+   "output_sha256": "3814eab96ed30133c90bc6be3b77a0c5518c6723ba7944a23c8671c775ac3e7f",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontCleats/WaterfrontCleats_Norm.uasset"
+  }
+ ]
+}

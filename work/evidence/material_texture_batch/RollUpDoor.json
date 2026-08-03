@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "RollUpDoor",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/FeatureMaterials/RollUpDoor.upk",
+ "source_sha256": "a6bf81783cc18d2ad371c570df197ab304c8e6eeb637f427344c8d2f1dc0ea44",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/RollUpDoor.upk#MI_RollUpDoor_Mat",
+   "object": "MI_RollUpDoor_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RollUpDoor_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RollUpDoor/RollUpDoor/Texture2D/RollUpDoor_DiffSpec.tga",
+   "extracted_sha256": "d76b0d05c001b0d860d67cd4cf92632a90da5e872d24f16b6b3865fbd964aba1",
+   "output_file": "Content/Extracted/MaterialDatabase/RollUpDoor/RollUpDoor/Texture2D/RollUpDoor_DiffSpec.tga",
+   "output_sha256": "d76b0d05c001b0d860d67cd4cf92632a90da5e872d24f16b6b3865fbd964aba1",
+   "uasset": "Content/Imported/MaterialDatabase/RollUpDoor/MI_RollUpDoor_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/RollUpDoor.upk#RollUpDoor_DiffSpec",
+   "object": "RollUpDoor_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RollUpDoor/RollUpDoor/Texture2D/RollUpDoor_DiffSpec.tga",
+   "extracted_sha256": "d76b0d05c001b0d860d67cd4cf92632a90da5e872d24f16b6b3865fbd964aba1",
+   "output_file": "Content/Extracted/MaterialDatabase/RollUpDoor/RollUpDoor/Texture2D/RollUpDoor_DiffSpec.tga",
+   "output_sha256": "d76b0d05c001b0d860d67cd4cf92632a90da5e872d24f16b6b3865fbd964aba1",
+   "uasset": "Content/Imported/MaterialDatabase/RollUpDoor/RollUpDoor_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/RollUpDoor.upk#RollUpDoor_Norm",
+   "object": "RollUpDoor_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RollUpDoor/RollUpDoor/Texture2D/RollUpDoor_Norm.tga",
+   "extracted_sha256": "d7a08aa31f699a7a0f344b891b1408f68775dcee3af811bf51c81b7e04d757d5",
+   "output_file": "Content/Extracted/MaterialDatabase/RollUpDoor/RollUpDoor/Texture2D/RollUpDoor_Norm.tga",
+   "output_sha256": "d7a08aa31f699a7a0f344b891b1408f68775dcee3af811bf51c81b7e04d757d5",
+   "uasset": "Content/Imported/MaterialDatabase/RollUpDoor/RollUpDoor_Norm.uasset"
+  }
+ ]
+}

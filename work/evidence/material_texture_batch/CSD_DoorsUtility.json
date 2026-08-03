@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "CSD_DoorsUtility",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/FeatureMaterials/CSD_DoorsUtility.upk",
+ "source_sha256": "e8b1e85d5f8d2db1c192cc696b50074c5f522fbecf2f35305f28223268da9ca6",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/FeatureMaterials/CSD_DoorsUtility.upk#CSD_DoorsUtility_DiffSpec",
+   "object": "CSD_DoorsUtility_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_DoorsUtility/CSD_DoorsUtility/Texture2D/CSD_DoorsUtility_DiffSpec.tga",
+   "extracted_sha256": "4af910c101a2cbc93664fc9dc1ae1237716bf3eb3ab80a2069573f48247567cc",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_DoorsUtility/CSD_DoorsUtility/Texture2D/CSD_DoorsUtility_DiffSpec.tga",
+   "output_sha256": "4af910c101a2cbc93664fc9dc1ae1237716bf3eb3ab80a2069573f48247567cc",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_DoorsUtility/CSD_DoorsUtility_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/FeatureMaterials/CSD_DoorsUtility.upk#CSD_DoorsUtility_Norm",
+   "object": "CSD_DoorsUtility_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_DoorsUtility/CSD_DoorsUtility/Texture2D/CSD_DoorsUtility_Norm.tga",
+   "extracted_sha256": "2f816fe50bb7bfeab69942dc8d1d0289b7f9c6469cc9d042870b993834322212",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_DoorsUtility/CSD_DoorsUtility/Texture2D/CSD_DoorsUtility_Norm.tga",
+   "output_sha256": "2f816fe50bb7bfeab69942dc8d1d0289b7f9c6469cc9d042870b993834322212",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_DoorsUtility/CSD_DoorsUtility_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/FeatureMaterials/CSD_DoorsUtility.upk#MI_CSD_DoorsUtility_MAT",
+   "object": "MI_CSD_DoorsUtility_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CSD_DoorsUtility_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_DoorsUtility/CSD_DoorsUtility/Texture2D/CSD_DoorsUtility_DiffSpec.tga",
+   "extracted_sha256": "4af910c101a2cbc93664fc9dc1ae1237716bf3eb3ab80a2069573f48247567cc",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_DoorsUtility/CSD_DoorsUtility/Texture2D/CSD_DoorsUtility_DiffSpec.tga",
+   "output_sha256": "4af910c101a2cbc93664fc9dc1ae1237716bf3eb3ab80a2069573f48247567cc",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_DoorsUtility/MI_CSD_DoorsUtility_MAT.uasset"
+  }
+ ]
+}

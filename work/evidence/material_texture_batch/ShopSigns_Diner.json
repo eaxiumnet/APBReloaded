@@ -1,0 +1,128 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "ShopSigns_Diner",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/FeatureMaterials/ShopSigns_Diner.upk",
+ "source_sha256": "a70e656f49b0812a513fbc30b7d59a037d53f296a41cbd9f03bc38ff59cd21ca",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/ShopSigns_Diner.upk#MI_ShopSigns_Diner_Diner2_MAT",
+   "object": "MI_ShopSigns_Diner_Diner2_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "ShopSigns_Diner_Diner2_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ShopSigns_Diner/ShopSigns_Diner/Texture2D/ShopSigns_Diner_Diner2_DiffOpac.tga",
+   "extracted_sha256": "902722484571151d94d9188ab543cbcfe9df8778ddc64e6af9f9093766118bd1",
+   "output_file": "Content/Extracted/MaterialDatabase/ShopSigns_Diner/ShopSigns_Diner/Texture2D/ShopSigns_Diner_Diner2_DiffOpac.tga",
+   "output_sha256": "902722484571151d94d9188ab543cbcfe9df8778ddc64e6af9f9093766118bd1",
+   "uasset": "Content/Imported/MaterialDatabase/ShopSigns_Diner/MI_ShopSigns_Diner_Diner2_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/ShopSigns_Diner.upk#MI_ShopSigns_Diner_Pizza2_MAT",
+   "object": "MI_ShopSigns_Diner_Pizza2_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "ShopSigns_Diner_Pizza2_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ShopSigns_Diner/ShopSigns_Diner/Texture2D/ShopSigns_Diner_Pizza2_DiffOpac.tga",
+   "extracted_sha256": "9bf69fcedaee67139b805dd73c1b52e997ee7c59c6e7f26142b90cd45f951fb2",
+   "output_file": "Content/Extracted/MaterialDatabase/ShopSigns_Diner/ShopSigns_Diner/Texture2D/ShopSigns_Diner_Pizza2_DiffOpac.tga",
+   "output_sha256": "9bf69fcedaee67139b805dd73c1b52e997ee7c59c6e7f26142b90cd45f951fb2",
+   "uasset": "Content/Imported/MaterialDatabase/ShopSigns_Diner/MI_ShopSigns_Diner_Pizza2_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/ShopSigns_Diner.upk#MI_TexturePageLOD2_TPageB_Mat",
+   "object": "MI_TexturePageLOD2_TPageB_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "TexturePageLOD2_TPageB_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ShopSigns_Diner/TexturePageLOD2_TPageB/Texture2D/TexturePageLOD2_TPageB_Diff.tga",
+   "extracted_sha256": "0036dca985d0cf9c319c34ebe72d6f24400b548bdd6ea08e80809b9a93536cdd",
+   "output_file": "Content/Extracted/MaterialDatabase/ShopSigns_Diner/TexturePageLOD2_TPageB/Texture2D/TexturePageLOD2_TPageB_Diff.tga",
+   "output_sha256": "0036dca985d0cf9c319c34ebe72d6f24400b548bdd6ea08e80809b9a93536cdd",
+   "uasset": "Content/Imported/MaterialDatabase/ShopSigns_Diner/MI_TexturePageLOD2_TPageB_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/ShopSigns_Diner.upk#ShopSigns_Diner_Diner2_DiffOpac",
+   "object": "ShopSigns_Diner_Diner2_DiffOpac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ShopSigns_Diner/ShopSigns_Diner/Texture2D/ShopSigns_Diner_Diner2_DiffOpac.tga",
+   "extracted_sha256": "902722484571151d94d9188ab543cbcfe9df8778ddc64e6af9f9093766118bd1",
+   "output_file": "Content/Extracted/MaterialDatabase/ShopSigns_Diner/ShopSigns_Diner/Texture2D/ShopSigns_Diner_Diner2_DiffOpac.tga",
+   "output_sha256": "902722484571151d94d9188ab543cbcfe9df8778ddc64e6af9f9093766118bd1",
+   "uasset": "Content/Imported/MaterialDatabase/ShopSigns_Diner/ShopSigns_Diner_Diner2_DiffOpac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/ShopSigns_Diner.upk#ShopSigns_Diner_Emis",
+   "object": "ShopSigns_Diner_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ShopSigns_Diner/ShopSigns_Diner/Texture2D/ShopSigns_Diner_Emis.tga",
+   "extracted_sha256": "ea2b29a334e232261f0a9f15fc54dcc4b15f937f753280681c9e3e7d07203142",
+   "output_file": "Content/Extracted/MaterialDatabase/ShopSigns_Diner/ShopSigns_Diner/Texture2D/ShopSigns_Diner_Emis.tga",
+   "output_sha256": "ea2b29a334e232261f0a9f15fc54dcc4b15f937f753280681c9e3e7d07203142",
+   "uasset": "Content/Imported/MaterialDatabase/ShopSigns_Diner/ShopSigns_Diner_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/ShopSigns_Diner.upk#ShopSigns_Diner_Norm",
+   "object": "ShopSigns_Diner_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ShopSigns_Diner/ShopSigns_Diner/Texture2D/ShopSigns_Diner_Norm.tga",
+   "extracted_sha256": "b173eca058b45425d3610c69e56708e4e266322dff0be3fb9564ba4b2f081491",
+   "output_file": "Content/Extracted/MaterialDatabase/ShopSigns_Diner/ShopSigns_Diner/Texture2D/ShopSigns_Diner_Norm.tga",
+   "output_sha256": "b173eca058b45425d3610c69e56708e4e266322dff0be3fb9564ba4b2f081491",
+   "uasset": "Content/Imported/MaterialDatabase/ShopSigns_Diner/ShopSigns_Diner_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/ShopSigns_Diner.upk#ShopSigns_Diner_Pizza2_DiffOpac",
+   "object": "ShopSigns_Diner_Pizza2_DiffOpac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ShopSigns_Diner/ShopSigns_Diner/Texture2D/ShopSigns_Diner_Pizza2_DiffOpac.tga",
+   "extracted_sha256": "9bf69fcedaee67139b805dd73c1b52e997ee7c59c6e7f26142b90cd45f951fb2",
+   "output_file": "Content/Extracted/MaterialDatabase/ShopSigns_Diner/ShopSigns_Diner/Texture2D/ShopSigns_Diner_Pizza2_DiffOpac.tga",
+   "output_sha256": "9bf69fcedaee67139b805dd73c1b52e997ee7c59c6e7f26142b90cd45f951fb2",
+   "uasset": "Content/Imported/MaterialDatabase/ShopSigns_Diner/ShopSigns_Diner_Pizza2_DiffOpac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/ShopSigns_Diner.upk#TexturePageLOD2_TPageB_Diff",
+   "object": "TexturePageLOD2_TPageB_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ShopSigns_Diner/TexturePageLOD2_TPageB/Texture2D/TexturePageLOD2_TPageB_Diff.tga",
+   "extracted_sha256": "0036dca985d0cf9c319c34ebe72d6f24400b548bdd6ea08e80809b9a93536cdd",
+   "output_file": "Content/Extracted/MaterialDatabase/ShopSigns_Diner/TexturePageLOD2_TPageB/Texture2D/TexturePageLOD2_TPageB_Diff.tga",
+   "output_sha256": "0036dca985d0cf9c319c34ebe72d6f24400b548bdd6ea08e80809b9a93536cdd",
+   "uasset": "Content/Imported/MaterialDatabase/ShopSigns_Diner/TexturePageLOD2_TPageB_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/ShopSigns_Diner.upk#TexturePageLOD2_TPageB_Emis",
+   "object": "TexturePageLOD2_TPageB_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ShopSigns_Diner/TexturePageLOD2_TPageB/Texture2D/TexturePageLOD2_TPageB_Emis.tga",
+   "extracted_sha256": "d5091c0799dc0657056c2358ddb3e3f592f8d071609f4a99502f5a962d54d2f3",
+   "output_file": "Content/Extracted/MaterialDatabase/ShopSigns_Diner/TexturePageLOD2_TPageB/Texture2D/TexturePageLOD2_TPageB_Emis.tga",
+   "output_sha256": "d5091c0799dc0657056c2358ddb3e3f592f8d071609f4a99502f5a962d54d2f3",
+   "uasset": "Content/Imported/MaterialDatabase/ShopSigns_Diner/TexturePageLOD2_TPageB_Emis.uasset"
+  }
+ ]
+}

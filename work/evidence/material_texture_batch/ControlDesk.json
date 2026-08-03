@@ -1,0 +1,48 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "ControlDesk",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/EnforcerSocialDistrict/PropMaterials/ControlDesk.upk",
+ "source_sha256": "4f388d37c47c8056e7ca248b7d282c11e0bb3455b206e2d0070129eb1736cbd6",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/ControlDesk.upk#EnforcerControlDesk_NormNEmiss",
+   "object": "EnforcerControlDesk_NormNEmiss",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ControlDesk/ControlDesk/Texture2D/EnforcerControlDesk_NormNEmiss.tga",
+   "extracted_sha256": "f491e4268252c6fe3b701934870ccc0124a2b593aaa7b051a9e35ac612436f47",
+   "output_file": "Content/Extracted/MaterialDatabase/ControlDesk/ControlDesk/Texture2D/EnforcerControlDesk_NormNEmiss.tga",
+   "output_sha256": "f491e4268252c6fe3b701934870ccc0124a2b593aaa7b051a9e35ac612436f47",
+   "uasset": "Content/Imported/MaterialDatabase/ControlDesk/EnforcerControlDesk_NormNEmiss.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/ControlDesk.upk#EnforcerControlDeskDiffNSpec",
+   "object": "EnforcerControlDeskDiffNSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ControlDesk/ControlDesk/Texture2D/EnforcerControlDeskDiffNSpec.tga",
+   "extracted_sha256": "6f55cfc2a9783da9dd82b92a4a0f53d34a069bc6fc45f048ef0274f75f6d5db7",
+   "output_file": "Content/Extracted/MaterialDatabase/ControlDesk/ControlDesk/Texture2D/EnforcerControlDeskDiffNSpec.tga",
+   "output_sha256": "6f55cfc2a9783da9dd82b92a4a0f53d34a069bc6fc45f048ef0274f75f6d5db7",
+   "uasset": "Content/Imported/MaterialDatabase/ControlDesk/EnforcerControlDeskDiffNSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/ControlDesk.upk#MI_ControlDesk",
+   "object": "MI_ControlDesk",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "ControlDesk",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ControlDesk/ControlDesk/Texture2D/EnforcerControlDeskDiffNSpec.tga",
+   "extracted_sha256": "6f55cfc2a9783da9dd82b92a4a0f53d34a069bc6fc45f048ef0274f75f6d5db7",
+   "output_file": "Content/Extracted/MaterialDatabase/ControlDesk/ControlDesk/Texture2D/EnforcerControlDeskDiffNSpec.tga",
+   "output_sha256": "6f55cfc2a9783da9dd82b92a4a0f53d34a069bc6fc45f048ef0274f75f6d5db7",
+   "uasset": "Content/Imported/MaterialDatabase/ControlDesk/MI_ControlDesk.uasset"
+  }
+ ]
+}

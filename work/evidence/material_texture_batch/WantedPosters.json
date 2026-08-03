@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "WantedPosters",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/EnforcerSocialDistrict/PropMaterials/WantedPosters.upk",
+ "source_sha256": "1ed8498665a1e747ac536096faf0fac8a8309151e82ce4827ce61c6945526d5c",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/WantedPosters.upk#MI_WantedPosters_Mat",
+   "object": "MI_WantedPosters_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WantedPosters_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WantedPosters/WantedPosters/Texture2D/WantedPosters-Diff.tga",
+   "extracted_sha256": "f8ae134fa0c8f2978770f42031433b244ee2c7a9e35866d7902933f3b04a1d09",
+   "output_file": "Content/Extracted/MaterialDatabase/WantedPosters/WantedPosters/Texture2D/WantedPosters-Diff.tga",
+   "output_sha256": "f8ae134fa0c8f2978770f42031433b244ee2c7a9e35866d7902933f3b04a1d09",
+   "uasset": "Content/Imported/MaterialDatabase/WantedPosters/MI_WantedPosters_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/WantedPosters.upk#WantedPoster-Alpha",
+   "object": "WantedPoster-Alpha",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WantedPosters/WantedPosters/Texture2D/WantedPoster-Alpha.tga",
+   "extracted_sha256": "5e487b982f5e229b4e6cbebaf77ebb7d037b442c4636c025bc758cebabde7ffc",
+   "output_file": "Content/Extracted/MaterialDatabase/WantedPosters/WantedPosters/Texture2D/WantedPoster-Alpha.tga",
+   "output_sha256": "5e487b982f5e229b4e6cbebaf77ebb7d037b442c4636c025bc758cebabde7ffc",
+   "uasset": "Content/Imported/MaterialDatabase/WantedPosters/WantedPoster-Alpha.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/WantedPosters.upk#WantedPosters-Diff",
+   "object": "WantedPosters-Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WantedPosters/WantedPosters/Texture2D/WantedPosters-Diff.tga",
+   "extracted_sha256": "f8ae134fa0c8f2978770f42031433b244ee2c7a9e35866d7902933f3b04a1d09",
+   "output_file": "Content/Extracted/MaterialDatabase/WantedPosters/WantedPosters/Texture2D/WantedPosters-Diff.tga",
+   "output_sha256": "f8ae134fa0c8f2978770f42031433b244ee2c7a9e35866d7902933f3b04a1d09",
+   "uasset": "Content/Imported/MaterialDatabase/WantedPosters/WantedPosters-Diff.uasset"
+  }
+ ]
+}

@@ -1,0 +1,157 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Satellite_Dish",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/EnforcerSocialDistrict/PropMaterials/Satellite_Dish.upk",
+ "source_sha256": "72c7ac443e55cada35ac4b4d9d51aea7ae2e2455eca809839d7ecaaa83d72cb5",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/Satellite_Dish.upk#DirtOverlay_01",
+   "object": "DirtOverlay_01",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Satellite_Dish/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/Satellite_Dish/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/Satellite_Dish/DirtOverlay_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/Satellite_Dish.upk#Metal_Checkerplate_Norm",
+   "object": "Metal_Checkerplate_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Satellite_Dish/Metal/Texture2D/Metal_Checkerplate_Norm.tga",
+   "extracted_sha256": "f9de6d8240a00daba225da306f3524848e2ec8b7031e37343dbad7e5a6fbf432",
+   "output_file": "Content/Extracted/MaterialDatabase/Satellite_Dish/Metal/Texture2D/Metal_Checkerplate_Norm.tga",
+   "output_sha256": "f9de6d8240a00daba225da306f3524848e2ec8b7031e37343dbad7e5a6fbf432",
+   "uasset": "Content/Imported/MaterialDatabase/Satellite_Dish/Metal_Checkerplate_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/Satellite_Dish.upk#Metal_Wall_DiffSpec",
+   "object": "Metal_Wall_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Satellite_Dish/Metal_Wall/Texture2D/Metal_Wall_DiffSpec.tga",
+   "extracted_sha256": "a7097181170849a042bc6447101899a3a8a87e8341828bacf50f0cd15524c352",
+   "output_file": "Content/Extracted/MaterialDatabase/Satellite_Dish/Metal_Wall/Texture2D/Metal_Wall_DiffSpec.tga",
+   "output_sha256": "a7097181170849a042bc6447101899a3a8a87e8341828bacf50f0cd15524c352",
+   "uasset": "Content/Imported/MaterialDatabase/Satellite_Dish/Metal_Wall_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/Satellite_Dish.upk#Metal_Wall_Norm",
+   "object": "Metal_Wall_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Satellite_Dish/Metal_Wall/Texture2D/Metal_Wall_Norm.tga",
+   "extracted_sha256": "2d717627146f82c00d3a1024aa3ad98cc5ba357f3a7368c45cbaee6af0507f89",
+   "output_file": "Content/Extracted/MaterialDatabase/Satellite_Dish/Metal_Wall/Texture2D/Metal_Wall_Norm.tga",
+   "output_sha256": "2d717627146f82c00d3a1024aa3ad98cc5ba357f3a7368c45cbaee6af0507f89",
+   "uasset": "Content/Imported/MaterialDatabase/Satellite_Dish/Metal_Wall_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/Satellite_Dish.upk#MI_Metal_M01_GreyLight",
+   "object": "MI_Metal_M01_GreyLight",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_M01_GreyLight",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Satellite_Dish/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/Satellite_Dish/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/Satellite_Dish/MI_Metal_M01_GreyLight.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/Satellite_Dish.upk#MI_Metal_M01_GreyLight_Graffiti",
+   "object": "MI_Metal_M01_GreyLight_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_M01_GreyLight_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Satellite_Dish/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/Satellite_Dish/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/Satellite_Dish/MI_Metal_M01_GreyLight_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/Satellite_Dish.upk#MI_Metal_M04_DarkBlue",
+   "object": "MI_Metal_M04_DarkBlue",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_M04_DarkBlue",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Satellite_Dish/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/Satellite_Dish/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/Satellite_Dish/MI_Metal_M04_DarkBlue.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/Satellite_Dish.upk#MI_Metal_PARENT",
+   "object": "MI_Metal_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_PARENT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Satellite_Dish/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/Satellite_Dish/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/Satellite_Dish/MI_Metal_PARENT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/Satellite_Dish.upk#MI_Metal_Wall_Mat",
+   "object": "MI_Metal_Wall_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_Wall_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Satellite_Dish/Metal_Wall/Texture2D/Metal_Wall_DiffSpec.tga",
+   "extracted_sha256": "a7097181170849a042bc6447101899a3a8a87e8341828bacf50f0cd15524c352",
+   "output_file": "Content/Extracted/MaterialDatabase/Satellite_Dish/Metal_Wall/Texture2D/Metal_Wall_DiffSpec.tga",
+   "output_sha256": "a7097181170849a042bc6447101899a3a8a87e8341828bacf50f0cd15524c352",
+   "uasset": "Content/Imported/MaterialDatabase/Satellite_Dish/MI_Metal_Wall_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/Satellite_Dish.upk#MI_SatelliteDish",
+   "object": "MI_SatelliteDish",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "SatelliteDish",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Satellite_Dish/Satellite_Dish/Texture2D/SatelliteDish_DiffSpec.tga",
+   "extracted_sha256": "3d5e8d0ce9a9dc7f9ce3b7aefd58f6d86a0718507e908b36470dfaea67e62fe4",
+   "output_file": "Content/Extracted/MaterialDatabase/Satellite_Dish/Satellite_Dish/Texture2D/SatelliteDish_DiffSpec.tga",
+   "output_sha256": "3d5e8d0ce9a9dc7f9ce3b7aefd58f6d86a0718507e908b36470dfaea67e62fe4",
+   "uasset": "Content/Imported/MaterialDatabase/Satellite_Dish/MI_SatelliteDish.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/Satellite_Dish.upk#SatelliteDish_DiffSpec",
+   "object": "SatelliteDish_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Satellite_Dish/Satellite_Dish/Texture2D/SatelliteDish_DiffSpec.tga",
+   "extracted_sha256": "3d5e8d0ce9a9dc7f9ce3b7aefd58f6d86a0718507e908b36470dfaea67e62fe4",
+   "output_file": "Content/Extracted/MaterialDatabase/Satellite_Dish/Satellite_Dish/Texture2D/SatelliteDish_DiffSpec.tga",
+   "output_sha256": "3d5e8d0ce9a9dc7f9ce3b7aefd58f6d86a0718507e908b36470dfaea67e62fe4",
+   "uasset": "Content/Imported/MaterialDatabase/Satellite_Dish/SatelliteDish_DiffSpec.uasset"
+  }
+ ]
+}

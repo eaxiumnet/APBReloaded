@@ -1,0 +1,164 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "WaterfrontCargoShips",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCargoShips.upk",
+ "source_sha256": "2be8cd1fa48d2c78afd1d6fe288dddc1160df1251b484402eee161d16d854522",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCargoShips.upk#LOGO_Baylan_Diff",
+   "object": "LOGO_Baylan_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontCargoShips/WaterfrontCargoShips/Texture2D/LOGO_Baylan_Diff.tga",
+   "extracted_sha256": "7a36cbbfe3501709edb60156f78e4585a2a93f993ab97100b8f3f8c06631494c",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontCargoShips/WaterfrontCargoShips/Texture2D/LOGO_Baylan_Diff.tga",
+   "output_sha256": "7a36cbbfe3501709edb60156f78e4585a2a93f993ab97100b8f3f8c06631494c",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontCargoShips/LOGO_Baylan_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCargoShips.upk#LOGO_Baylan_Opac",
+   "object": "LOGO_Baylan_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontCargoShips/WaterfrontCargoShips/Texture2D/LOGO_Baylan_Opac.tga",
+   "extracted_sha256": "970de41f0d35aba3c98c8941a3e2b1e44d6dbb87eff373e868fe7963ac7e44de",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontCargoShips/WaterfrontCargoShips/Texture2D/LOGO_Baylan_Opac.tga",
+   "output_sha256": "970de41f0d35aba3c98c8941a3e2b1e44d6dbb87eff373e868fe7963ac7e44de",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontCargoShips/LOGO_Baylan_Opac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCargoShips.upk#MI_LOGO_Baylan_MAT",
+   "object": "MI_LOGO_Baylan_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "LOGO_Baylan_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontCargoShips/WaterfrontCargoShips/Texture2D/LOGO_Baylan_Diff.tga",
+   "extracted_sha256": "7a36cbbfe3501709edb60156f78e4585a2a93f993ab97100b8f3f8c06631494c",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontCargoShips/WaterfrontCargoShips/Texture2D/LOGO_Baylan_Diff.tga",
+   "output_sha256": "7a36cbbfe3501709edb60156f78e4585a2a93f993ab97100b8f3f8c06631494c",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontCargoShips/MI_LOGO_Baylan_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCargoShips.upk#MI_WaterfrontCargoShips_Containers_MAT",
+   "object": "MI_WaterfrontCargoShips_Containers_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WaterfrontCargoShips_Containers_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontCargoShips/WaterfrontCargoShips/Texture2D/WaterfrontCargoShips_Containers_DiffSpec.tga",
+   "extracted_sha256": "c90e4fd07880b0612fe4966b0ced52bef4a96d15c96eadc5030c56ba34e4591e",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontCargoShips/WaterfrontCargoShips/Texture2D/WaterfrontCargoShips_Containers_DiffSpec.tga",
+   "output_sha256": "c90e4fd07880b0612fe4966b0ced52bef4a96d15c96eadc5030c56ba34e4591e",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontCargoShips/MI_WaterfrontCargoShips_Containers_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCargoShips.upk#MI_WaterfrontCargoShips_Elements_MAT",
+   "object": "MI_WaterfrontCargoShips_Elements_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WaterfrontCargoShips_Elements_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontCargoShips/WaterfrontCargoShips/Texture2D/WaterfrontCargoShips_Elements_DiffSpec.tga",
+   "extracted_sha256": "64f4cc6cdc3b366f72c5caea65a40d6382b0a86557e6651d1aae0133680a7f1e",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontCargoShips/WaterfrontCargoShips/Texture2D/WaterfrontCargoShips_Elements_DiffSpec.tga",
+   "output_sha256": "64f4cc6cdc3b366f72c5caea65a40d6382b0a86557e6651d1aae0133680a7f1e",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontCargoShips/MI_WaterfrontCargoShips_Elements_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCargoShips.upk#MI_WaterfrontCargoShips_Hull_MAT",
+   "object": "MI_WaterfrontCargoShips_Hull_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WaterfrontCargoShips_Hull_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontCargoShips/WaterfrontCargoShips/Texture2D/WaterfrontCargoShips_Hull_DiffSpec.tga",
+   "extracted_sha256": "2aaeccbdf7da6df85a837b99f98ece3ee1ae304c05f3c0a4ead3d5866c5cbe16",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontCargoShips/WaterfrontCargoShips/Texture2D/WaterfrontCargoShips_Hull_DiffSpec.tga",
+   "output_sha256": "2aaeccbdf7da6df85a837b99f98ece3ee1ae304c05f3c0a4ead3d5866c5cbe16",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontCargoShips/MI_WaterfrontCargoShips_Hull_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCargoShips.upk#WaterfrontCargoShips_Containers_DiffSpec",
+   "object": "WaterfrontCargoShips_Containers_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontCargoShips/WaterfrontCargoShips/Texture2D/WaterfrontCargoShips_Containers_DiffSpec.tga",
+   "extracted_sha256": "c90e4fd07880b0612fe4966b0ced52bef4a96d15c96eadc5030c56ba34e4591e",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontCargoShips/WaterfrontCargoShips/Texture2D/WaterfrontCargoShips_Containers_DiffSpec.tga",
+   "output_sha256": "c90e4fd07880b0612fe4966b0ced52bef4a96d15c96eadc5030c56ba34e4591e",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontCargoShips/WaterfrontCargoShips_Containers_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCargoShips.upk#WaterfrontCargoShips_Containers_Norm",
+   "object": "WaterfrontCargoShips_Containers_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontCargoShips/WaterfrontCargoShips/Texture2D/WaterfrontCargoShips_Containers_Norm.tga",
+   "extracted_sha256": "c76ab39aadeab0a1ec00dc3db0499ba4f4a21db468729b80828d782a8036e273",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontCargoShips/WaterfrontCargoShips/Texture2D/WaterfrontCargoShips_Containers_Norm.tga",
+   "output_sha256": "c76ab39aadeab0a1ec00dc3db0499ba4f4a21db468729b80828d782a8036e273",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontCargoShips/WaterfrontCargoShips_Containers_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCargoShips.upk#WaterfrontCargoShips_Elements_DiffSpec",
+   "object": "WaterfrontCargoShips_Elements_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontCargoShips/WaterfrontCargoShips/Texture2D/WaterfrontCargoShips_Elements_DiffSpec.tga",
+   "extracted_sha256": "64f4cc6cdc3b366f72c5caea65a40d6382b0a86557e6651d1aae0133680a7f1e",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontCargoShips/WaterfrontCargoShips/Texture2D/WaterfrontCargoShips_Elements_DiffSpec.tga",
+   "output_sha256": "64f4cc6cdc3b366f72c5caea65a40d6382b0a86557e6651d1aae0133680a7f1e",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontCargoShips/WaterfrontCargoShips_Elements_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCargoShips.upk#WaterfrontCargoShips_Elements_Norm",
+   "object": "WaterfrontCargoShips_Elements_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontCargoShips/WaterfrontCargoShips/Texture2D/WaterfrontCargoShips_Elements_Norm.tga",
+   "extracted_sha256": "6e881f11cdd20ea9346b4d211bfa1e8879bdb259478afd983e19149bffc733d9",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontCargoShips/WaterfrontCargoShips/Texture2D/WaterfrontCargoShips_Elements_Norm.tga",
+   "output_sha256": "6e881f11cdd20ea9346b4d211bfa1e8879bdb259478afd983e19149bffc733d9",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontCargoShips/WaterfrontCargoShips_Elements_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCargoShips.upk#WaterfrontCargoShips_Hull_DiffSpec",
+   "object": "WaterfrontCargoShips_Hull_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontCargoShips/WaterfrontCargoShips/Texture2D/WaterfrontCargoShips_Hull_DiffSpec.tga",
+   "extracted_sha256": "2aaeccbdf7da6df85a837b99f98ece3ee1ae304c05f3c0a4ead3d5866c5cbe16",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontCargoShips/WaterfrontCargoShips/Texture2D/WaterfrontCargoShips_Hull_DiffSpec.tga",
+   "output_sha256": "2aaeccbdf7da6df85a837b99f98ece3ee1ae304c05f3c0a4ead3d5866c5cbe16",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontCargoShips/WaterfrontCargoShips_Hull_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCargoShips.upk#WaterfrontCargoShips_Hull_Norm",
+   "object": "WaterfrontCargoShips_Hull_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontCargoShips/WaterfrontCargoShips/Texture2D/WaterfrontCargoShips_Hull_Norm.tga",
+   "extracted_sha256": "96ca290efe674e97f444724f834f889ca094e1642e72b815d218b0157e7a8bb3",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontCargoShips/WaterfrontCargoShips/Texture2D/WaterfrontCargoShips_Hull_Norm.tga",
+   "output_sha256": "96ca290efe674e97f444724f834f889ca094e1642e72b815d218b0157e7a8bb3",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontCargoShips/WaterfrontCargoShips_Hull_Norm.uasset"
+  }
+ ]
+}

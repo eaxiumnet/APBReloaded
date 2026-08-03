@@ -1,0 +1,60 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "BreakableDoors",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/BreakableDoors.upk",
+ "source_sha256": "2583fecab7710f0c42f598d9a0201ced4e64a8294f387386b7ad5a6dc91fac06",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/BreakableDoors.upk#BreakableDoor_DiffSpec",
+   "object": "BreakableDoor_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BreakableDoors/BreakableDoors/Texture2D/BreakableDoor_DiffSpec.tga",
+   "extracted_sha256": "5364384675e012849de2630675ed8efdd166d4bfe79b17feb6fa4eb294644b96",
+   "output_file": "Content/Extracted/MaterialDatabase/BreakableDoors/BreakableDoors/Texture2D/BreakableDoor_DiffSpec.tga",
+   "output_sha256": "5364384675e012849de2630675ed8efdd166d4bfe79b17feb6fa4eb294644b96",
+   "uasset": "Content/Imported/MaterialDatabase/BreakableDoors/BreakableDoor_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/BreakableDoors.upk#BreakableDoor_Norm",
+   "object": "BreakableDoor_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BreakableDoors/BreakableDoors/Texture2D/BreakableDoor_Norm.tga",
+   "extracted_sha256": "9f160129f082b4a41a366bcf6dfff7bb5618a2f63ab5a601748471b381377702",
+   "output_file": "Content/Extracted/MaterialDatabase/BreakableDoors/BreakableDoors/Texture2D/BreakableDoor_Norm.tga",
+   "output_sha256": "9f160129f082b4a41a366bcf6dfff7bb5618a2f63ab5a601748471b381377702",
+   "uasset": "Content/Imported/MaterialDatabase/BreakableDoors/BreakableDoor_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/BreakableDoors.upk#BreakableDoor_Opac",
+   "object": "BreakableDoor_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BreakableDoors/BreakableDoors/Texture2D/BreakableDoor_Opac.tga",
+   "extracted_sha256": "4d4db3367107024ace1c5e93737fa772969e887c1e410a4693ad9f960b1831bc",
+   "output_file": "Content/Extracted/MaterialDatabase/BreakableDoors/BreakableDoors/Texture2D/BreakableDoor_Opac.tga",
+   "output_sha256": "4d4db3367107024ace1c5e93737fa772969e887c1e410a4693ad9f960b1831bc",
+   "uasset": "Content/Imported/MaterialDatabase/BreakableDoors/BreakableDoor_Opac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/BreakableDoors.upk#MI_BreakableDoors_Mat",
+   "object": "MI_BreakableDoors_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "BreakableDoors_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BreakableDoors/BreakableDoors/Texture2D/BreakableDoor_DiffSpec.tga",
+   "extracted_sha256": "5364384675e012849de2630675ed8efdd166d4bfe79b17feb6fa4eb294644b96",
+   "output_file": "Content/Extracted/MaterialDatabase/BreakableDoors/BreakableDoors/Texture2D/BreakableDoor_DiffSpec.tga",
+   "output_sha256": "5364384675e012849de2630675ed8efdd166d4bfe79b17feb6fa4eb294644b96",
+   "uasset": "Content/Imported/MaterialDatabase/BreakableDoors/MI_BreakableDoors_Mat.uasset"
+  }
+ ]
+}

@@ -1,0 +1,116 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "RoundCeiling",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/EnforcerSocialDistrict/RoundCeiling.upk",
+ "source_sha256": "1a3f4bcd5384ecba02a6f10a76492fd72d07dc260c6f00161704cc4416ce160c",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/RoundCeiling.upk#MI_Stucco_M12_BlueDark",
+   "object": "MI_Stucco_M12_BlueDark",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_M12_BlueDark",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoundCeiling/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/RoundCeiling/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/RoundCeiling/MI_Stucco_M12_BlueDark.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/RoundCeiling.upk#MI_Stucco_PARENT",
+   "object": "MI_Stucco_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stucco_PARENT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoundCeiling/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/RoundCeiling/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/RoundCeiling/MI_Stucco_PARENT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/RoundCeiling.upk#MI_ThreadedPlate_Mat",
+   "object": "MI_ThreadedPlate_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "ThreadedPlate_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoundCeiling/RoundCeiling/Texture2D/ThreadedPlate_DiffEmis.tga",
+   "extracted_sha256": "2abc1581fcf8b8692e32cb8a1a6bb7490c374cafe1c7b58ef2c4340f2fae6385",
+   "output_file": "Content/Extracted/MaterialDatabase/RoundCeiling/RoundCeiling/Texture2D/ThreadedPlate_DiffEmis.tga",
+   "output_sha256": "2abc1581fcf8b8692e32cb8a1a6bb7490c374cafe1c7b58ef2c4340f2fae6385",
+   "uasset": "Content/Imported/MaterialDatabase/RoundCeiling/MI_ThreadedPlate_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/RoundCeiling.upk#MI_TiledCeiling_Mat",
+   "object": "MI_TiledCeiling_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "TiledCeiling_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoundCeiling/TiledCeiling/Texture2D/TiledCeiling_NormDiff.tga",
+   "extracted_sha256": "9adf03ec3393d972ae482e8da46b5c6232eb4c65ca330920000f4022e573fe3f",
+   "output_file": "Content/Extracted/MaterialDatabase/RoundCeiling/TiledCeiling/Texture2D/TiledCeiling_NormDiff.tga",
+   "output_sha256": "9adf03ec3393d972ae482e8da46b5c6232eb4c65ca330920000f4022e573fe3f",
+   "uasset": "Content/Imported/MaterialDatabase/RoundCeiling/MI_TiledCeiling_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/RoundCeiling.upk#Stucco_DiffSpec",
+   "object": "Stucco_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoundCeiling/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "extracted_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "output_file": "Content/Extracted/MaterialDatabase/RoundCeiling/Stucco/Texture2D/Stucco_DiffSpec.tga",
+   "output_sha256": "30ea2914fcbae9f01b7601a1ac44d41ff6029afdd35fe6ef00306a49e2e307e6",
+   "uasset": "Content/Imported/MaterialDatabase/RoundCeiling/Stucco_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/RoundCeiling.upk#Stucco_Norm",
+   "object": "Stucco_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoundCeiling/Stucco/Texture2D/Stucco_Norm.tga",
+   "extracted_sha256": "474e2cd39b065023f62d022f0e72a0b8391a019188e0e0785446133a2dd9276d",
+   "output_file": "Content/Extracted/MaterialDatabase/RoundCeiling/Stucco/Texture2D/Stucco_Norm.tga",
+   "output_sha256": "474e2cd39b065023f62d022f0e72a0b8391a019188e0e0785446133a2dd9276d",
+   "uasset": "Content/Imported/MaterialDatabase/RoundCeiling/Stucco_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/RoundCeiling.upk#ThreadedPlate_DiffEmis",
+   "object": "ThreadedPlate_DiffEmis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoundCeiling/RoundCeiling/Texture2D/ThreadedPlate_DiffEmis.tga",
+   "extracted_sha256": "2abc1581fcf8b8692e32cb8a1a6bb7490c374cafe1c7b58ef2c4340f2fae6385",
+   "output_file": "Content/Extracted/MaterialDatabase/RoundCeiling/RoundCeiling/Texture2D/ThreadedPlate_DiffEmis.tga",
+   "output_sha256": "2abc1581fcf8b8692e32cb8a1a6bb7490c374cafe1c7b58ef2c4340f2fae6385",
+   "uasset": "Content/Imported/MaterialDatabase/RoundCeiling/ThreadedPlate_DiffEmis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/RoundCeiling.upk#TiledCeiling_NormDiff",
+   "object": "TiledCeiling_NormDiff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoundCeiling/TiledCeiling/Texture2D/TiledCeiling_NormDiff.tga",
+   "extracted_sha256": "9adf03ec3393d972ae482e8da46b5c6232eb4c65ca330920000f4022e573fe3f",
+   "output_file": "Content/Extracted/MaterialDatabase/RoundCeiling/TiledCeiling/Texture2D/TiledCeiling_NormDiff.tga",
+   "output_sha256": "9adf03ec3393d972ae482e8da46b5c6232eb4c65ca330920000f4022e573fe3f",
+   "uasset": "Content/Imported/MaterialDatabase/RoundCeiling/TiledCeiling_NormDiff.uasset"
+  }
+ ]
+}

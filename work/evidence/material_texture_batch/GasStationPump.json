@@ -1,0 +1,60 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "GasStationPump",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/GasStationPump.upk",
+ "source_sha256": "0b7cc024479d6e9f497d0b5a7282295c993d25e65276c97f239d75a546807267",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/GasStationPump.upk#GasStationPump_DiffSpec",
+   "object": "GasStationPump_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GasStationPump/GasStationPump/Texture2D/GasStationPump_DiffSpec.tga",
+   "extracted_sha256": "c2240d3ca80aabef6413e99896bbadc93ffd367a5eef089afd28d088cc067062",
+   "output_file": "Content/Extracted/MaterialDatabase/GasStationPump/GasStationPump/Texture2D/GasStationPump_DiffSpec.tga",
+   "output_sha256": "c2240d3ca80aabef6413e99896bbadc93ffd367a5eef089afd28d088cc067062",
+   "uasset": "Content/Imported/MaterialDatabase/GasStationPump/GasStationPump_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/GasStationPump.upk#GasStationPump_Emis",
+   "object": "GasStationPump_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GasStationPump/GasStationPump/Texture2D/GasStationPump_Emis.tga",
+   "extracted_sha256": "606ffa4a3abb1bd97880a8deef90fa5108da8080d3e19e5885533af33cc36024",
+   "output_file": "Content/Extracted/MaterialDatabase/GasStationPump/GasStationPump/Texture2D/GasStationPump_Emis.tga",
+   "output_sha256": "606ffa4a3abb1bd97880a8deef90fa5108da8080d3e19e5885533af33cc36024",
+   "uasset": "Content/Imported/MaterialDatabase/GasStationPump/GasStationPump_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/GasStationPump.upk#GasStationPump_Norm",
+   "object": "GasStationPump_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GasStationPump/GasStationPump/Texture2D/GasStationPump_Norm.tga",
+   "extracted_sha256": "30ece34b563edfd702c6f75e2e50133c07b9f821ba0d634620e84c6166d7433a",
+   "output_file": "Content/Extracted/MaterialDatabase/GasStationPump/GasStationPump/Texture2D/GasStationPump_Norm.tga",
+   "output_sha256": "30ece34b563edfd702c6f75e2e50133c07b9f821ba0d634620e84c6166d7433a",
+   "uasset": "Content/Imported/MaterialDatabase/GasStationPump/GasStationPump_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/GasStationPump.upk#MI_gasstationpump",
+   "object": "MI_gasstationpump",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "gasstationpump",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GasStationPump/GasStationPump/Texture2D/GasStationPump_DiffSpec.tga",
+   "extracted_sha256": "c2240d3ca80aabef6413e99896bbadc93ffd367a5eef089afd28d088cc067062",
+   "output_file": "Content/Extracted/MaterialDatabase/GasStationPump/GasStationPump/Texture2D/GasStationPump_DiffSpec.tga",
+   "output_sha256": "c2240d3ca80aabef6413e99896bbadc93ffd367a5eef089afd28d088cc067062",
+   "uasset": "Content/Imported/MaterialDatabase/GasStationPump/MI_gasstationpump.uasset"
+  }
+ ]
+}

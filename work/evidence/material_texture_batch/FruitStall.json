@@ -1,0 +1,76 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FruitStall",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/FruitStall.upk",
+ "source_sha256": "571f997c85fd12626617f34281ef19d2093a8cafcc42379b2aaba39cf3c686e8",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/FruitStall.upk#FruitStall_DiffSpec",
+   "object": "FruitStall_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FruitStall/FruitStall/Texture2D/FruitStall_DiffSpec.tga",
+   "extracted_sha256": "c1d57678081bf241e2f47d29e8e465ff7fa51a3abee4e1484089edf3856194f0",
+   "output_file": "Content/Extracted/MaterialDatabase/FruitStall/FruitStall/Texture2D/FruitStall_DiffSpec.tga",
+   "output_sha256": "c1d57678081bf241e2f47d29e8e465ff7fa51a3abee4e1484089edf3856194f0",
+   "uasset": "Content/Imported/MaterialDatabase/FruitStall/FruitStall_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/FruitStall.upk#FruitStall_Norm",
+   "object": "FruitStall_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FruitStall/FruitStall/Texture2D/FruitStall_Norm.tga",
+   "extracted_sha256": "8ca62ef99ef814059167593247300c8e7f6d3af66be1d21d550b8b9dd3ee97f9",
+   "output_file": "Content/Extracted/MaterialDatabase/FruitStall/FruitStall/Texture2D/FruitStall_Norm.tga",
+   "output_sha256": "8ca62ef99ef814059167593247300c8e7f6d3af66be1d21d550b8b9dd3ee97f9",
+   "uasset": "Content/Imported/MaterialDatabase/FruitStall/FruitStall_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/FruitStall.upk#FruitStall_Opac",
+   "object": "FruitStall_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FruitStall/FruitStall/Texture2D/FruitStall_Opac.tga",
+   "extracted_sha256": "1e0218132457132e9cba734420586bb53e36096649c6ce39377c38168b20b214",
+   "output_file": "Content/Extracted/MaterialDatabase/FruitStall/FruitStall/Texture2D/FruitStall_Opac.tga",
+   "output_sha256": "1e0218132457132e9cba734420586bb53e36096649c6ce39377c38168b20b214",
+   "uasset": "Content/Imported/MaterialDatabase/FruitStall/FruitStall_Opac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/FruitStall.upk#MI_FruitStall_Damage_Mat",
+   "object": "MI_FruitStall_Damage_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FruitStall_Damage_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FruitStall/FruitStall/Texture2D/FruitStall_DiffSpec.tga",
+   "extracted_sha256": "c1d57678081bf241e2f47d29e8e465ff7fa51a3abee4e1484089edf3856194f0",
+   "output_file": "Content/Extracted/MaterialDatabase/FruitStall/FruitStall/Texture2D/FruitStall_DiffSpec.tga",
+   "output_sha256": "c1d57678081bf241e2f47d29e8e465ff7fa51a3abee4e1484089edf3856194f0",
+   "uasset": "Content/Imported/MaterialDatabase/FruitStall/MI_FruitStall_Damage_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/FruitStall.upk#MI_FruitStall_Mat",
+   "object": "MI_FruitStall_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FruitStall_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FruitStall/FruitStall/Texture2D/FruitStall_DiffSpec.tga",
+   "extracted_sha256": "c1d57678081bf241e2f47d29e8e465ff7fa51a3abee4e1484089edf3856194f0",
+   "output_file": "Content/Extracted/MaterialDatabase/FruitStall/FruitStall/Texture2D/FruitStall_DiffSpec.tga",
+   "output_sha256": "c1d57678081bf241e2f47d29e8e465ff7fa51a3abee4e1484089edf3856194f0",
+   "uasset": "Content/Imported/MaterialDatabase/FruitStall/MI_FruitStall_Mat.uasset"
+  }
+ ]
+}

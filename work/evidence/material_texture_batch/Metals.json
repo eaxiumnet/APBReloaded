@@ -1,0 +1,164 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Metals",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/Metal/Metals.upk",
+ "source_sha256": "2beba7185c1c747a081261b6bda87a904d901f8e9e3123f59cbb5e3645b81656",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metals.upk#Metal_Mesh_01_Diff",
+   "object": "Metal_Mesh_01_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metals/Metals/Texture2D/Metal_Mesh_01_Diff.tga",
+   "extracted_sha256": "66822e6dfe6bb185ad1cf575da750faa649ba4c2cce764493391c7a2a8de3bae",
+   "output_file": "Content/Extracted/MaterialDatabase/Metals/Metals/Texture2D/Metal_Mesh_01_Diff.tga",
+   "output_sha256": "66822e6dfe6bb185ad1cf575da750faa649ba4c2cce764493391c7a2a8de3bae",
+   "uasset": "Content/Imported/MaterialDatabase/Metals/Metal_Mesh_01_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metals.upk#Metal_Mesh_01_Nrm",
+   "object": "Metal_Mesh_01_Nrm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metals/Metals/Texture2D/Metal_Mesh_01_Nrm.tga",
+   "extracted_sha256": "f81b7b056cc28fa6373535c32b839012a9d265a381e641037324061ff92311ea",
+   "output_file": "Content/Extracted/MaterialDatabase/Metals/Metals/Texture2D/Metal_Mesh_01_Nrm.tga",
+   "output_sha256": "f81b7b056cc28fa6373535c32b839012a9d265a381e641037324061ff92311ea",
+   "uasset": "Content/Imported/MaterialDatabase/Metals/Metal_Mesh_01_Nrm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metals.upk#MetalTank_02_Diff",
+   "object": "MetalTank_02_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metals/Metals/Texture2D/MetalTank_02_Diff.tga",
+   "extracted_sha256": "3afe30bc59e5605c82cfe70385213c3d27cc06768031ac917732ca77f328eeb8",
+   "output_file": "Content/Extracted/MaterialDatabase/Metals/Metals/Texture2D/MetalTank_02_Diff.tga",
+   "output_sha256": "3afe30bc59e5605c82cfe70385213c3d27cc06768031ac917732ca77f328eeb8",
+   "uasset": "Content/Imported/MaterialDatabase/Metals/MetalTank_02_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metals.upk#MetalTank_02_Norm",
+   "object": "MetalTank_02_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metals/Metals/Texture2D/MetalTank_02_Norm.tga",
+   "extracted_sha256": "20bcbe9b3db30fd8c8821cb3b72a9455b2531e4282eef86f997134e918facc73",
+   "output_file": "Content/Extracted/MaterialDatabase/Metals/Metals/Texture2D/MetalTank_02_Norm.tga",
+   "output_sha256": "20bcbe9b3db30fd8c8821cb3b72a9455b2531e4282eef86f997134e918facc73",
+   "uasset": "Content/Imported/MaterialDatabase/Metals/MetalTank_02_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metals.upk#MetalTank_Diff",
+   "object": "MetalTank_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metals/Metals/Texture2D/MetalTank_Diff.tga",
+   "extracted_sha256": "f874d8b160793618b9e460523b07c74969c86981de1c9f1979395dfd8f1744d5",
+   "output_file": "Content/Extracted/MaterialDatabase/Metals/Metals/Texture2D/MetalTank_Diff.tga",
+   "output_sha256": "f874d8b160793618b9e460523b07c74969c86981de1c9f1979395dfd8f1744d5",
+   "uasset": "Content/Imported/MaterialDatabase/Metals/MetalTank_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metals.upk#MetalTank_Norm",
+   "object": "MetalTank_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metals/Metals/Texture2D/MetalTank_Norm.tga",
+   "extracted_sha256": "994b95662e3474a5787935ccf7c7fbfd2f272a0ac7418752cfc848feafeedf51",
+   "output_file": "Content/Extracted/MaterialDatabase/Metals/Metals/Texture2D/MetalTank_Norm.tga",
+   "output_sha256": "994b95662e3474a5787935ccf7c7fbfd2f272a0ac7418752cfc848feafeedf51",
+   "uasset": "Content/Imported/MaterialDatabase/Metals/MetalTank_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metals.upk#MI_Metal_Mesh_01",
+   "object": "MI_Metal_Mesh_01",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_Mesh_01",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metals/Metals/Texture2D/Metal_Mesh_01_Diff.tga",
+   "extracted_sha256": "66822e6dfe6bb185ad1cf575da750faa649ba4c2cce764493391c7a2a8de3bae",
+   "output_file": "Content/Extracted/MaterialDatabase/Metals/Metals/Texture2D/Metal_Mesh_01_Diff.tga",
+   "output_sha256": "66822e6dfe6bb185ad1cf575da750faa649ba4c2cce764493391c7a2a8de3bae",
+   "uasset": "Content/Imported/MaterialDatabase/Metals/MI_Metal_Mesh_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metals.upk#MI_MetalTank_01",
+   "object": "MI_MetalTank_01",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "MetalTank_01",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metals/Metals/Texture2D/MetalTank_Diff.tga",
+   "extracted_sha256": "f874d8b160793618b9e460523b07c74969c86981de1c9f1979395dfd8f1744d5",
+   "output_file": "Content/Extracted/MaterialDatabase/Metals/Metals/Texture2D/MetalTank_Diff.tga",
+   "output_sha256": "f874d8b160793618b9e460523b07c74969c86981de1c9f1979395dfd8f1744d5",
+   "uasset": "Content/Imported/MaterialDatabase/Metals/MI_MetalTank_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metals.upk#MI_MetalTank_02",
+   "object": "MI_MetalTank_02",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "MetalTank_02",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metals/Metals/Texture2D/MetalTank_02_Diff.tga",
+   "extracted_sha256": "3afe30bc59e5605c82cfe70385213c3d27cc06768031ac917732ca77f328eeb8",
+   "output_file": "Content/Extracted/MaterialDatabase/Metals/Metals/Texture2D/MetalTank_02_Diff.tga",
+   "output_sha256": "3afe30bc59e5605c82cfe70385213c3d27cc06768031ac917732ca77f328eeb8",
+   "uasset": "Content/Imported/MaterialDatabase/Metals/MI_MetalTank_02.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metals.upk#MI_SteelCable_Rusty",
+   "object": "MI_SteelCable_Rusty",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "SteelCable_Rusty",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metals/Metals/Texture2D/SteelCable_Rusty_Diff.tga",
+   "extracted_sha256": "644437af6ddc2ea3cea75c948881662c4df32ae248ca351cd2f1168cc1a1a3c9",
+   "output_file": "Content/Extracted/MaterialDatabase/Metals/Metals/Texture2D/SteelCable_Rusty_Diff.tga",
+   "output_sha256": "644437af6ddc2ea3cea75c948881662c4df32ae248ca351cd2f1168cc1a1a3c9",
+   "uasset": "Content/Imported/MaterialDatabase/Metals/MI_SteelCable_Rusty.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metals.upk#SteelCable_Rusty_Diff",
+   "object": "SteelCable_Rusty_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metals/Metals/Texture2D/SteelCable_Rusty_Diff.tga",
+   "extracted_sha256": "644437af6ddc2ea3cea75c948881662c4df32ae248ca351cd2f1168cc1a1a3c9",
+   "output_file": "Content/Extracted/MaterialDatabase/Metals/Metals/Texture2D/SteelCable_Rusty_Diff.tga",
+   "output_sha256": "644437af6ddc2ea3cea75c948881662c4df32ae248ca351cd2f1168cc1a1a3c9",
+   "uasset": "Content/Imported/MaterialDatabase/Metals/SteelCable_Rusty_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metals.upk#SteelCable_Rusty_Nrm",
+   "object": "SteelCable_Rusty_Nrm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metals/Metals/Texture2D/SteelCable_Rusty_Nrm.tga",
+   "extracted_sha256": "4189d99bc016aaaf89781d2a6fe2b8ea826cbdbcbf11e938c02809c49f771a45",
+   "output_file": "Content/Extracted/MaterialDatabase/Metals/Metals/Texture2D/SteelCable_Rusty_Nrm.tga",
+   "output_sha256": "4189d99bc016aaaf89781d2a6fe2b8ea826cbdbcbf11e938c02809c49f771a45",
+   "uasset": "Content/Imported/MaterialDatabase/Metals/SteelCable_Rusty_Nrm.uasset"
+  }
+ ]
+}

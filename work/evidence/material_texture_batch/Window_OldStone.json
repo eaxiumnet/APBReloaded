@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Window_OldStone",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/FeatureMaterials/Window_OldStone.upk",
+ "source_sha256": "7c92fb879ca243ce9f6bc7b46bb8b33b963b969b1255dfd33f9ee743549fdf2e",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Window_OldStone.upk#MI_window_oldstone",
+   "object": "MI_window_oldstone",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "window_oldstone",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Window_OldStone/Window_OldStone/Texture2D/WindowsDiffNSpec.tga",
+   "extracted_sha256": "8e396844f6205031368c58ab88f74a6a2ef283a9ca9cf83df69bf9d8cadefff8",
+   "output_file": "Content/Extracted/MaterialDatabase/Window_OldStone/Window_OldStone/Texture2D/WindowsDiffNSpec.tga",
+   "output_sha256": "8e396844f6205031368c58ab88f74a6a2ef283a9ca9cf83df69bf9d8cadefff8",
+   "uasset": "Content/Imported/MaterialDatabase/Window_OldStone/MI_window_oldstone.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Window_OldStone.upk#WindowsDiffNSpec",
+   "object": "WindowsDiffNSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Window_OldStone/Window_OldStone/Texture2D/WindowsDiffNSpec.tga",
+   "extracted_sha256": "8e396844f6205031368c58ab88f74a6a2ef283a9ca9cf83df69bf9d8cadefff8",
+   "output_file": "Content/Extracted/MaterialDatabase/Window_OldStone/Window_OldStone/Texture2D/WindowsDiffNSpec.tga",
+   "output_sha256": "8e396844f6205031368c58ab88f74a6a2ef283a9ca9cf83df69bf9d8cadefff8",
+   "uasset": "Content/Imported/MaterialDatabase/Window_OldStone/WindowsDiffNSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Window_OldStone.upk#WindowsNorm",
+   "object": "WindowsNorm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Window_OldStone/Window_OldStone/Texture2D/WindowsNorm.tga",
+   "extracted_sha256": "e8c6de67fc1e22bdebadf19b1c73327951c37d962aae0b3b698cfaebd474ba91",
+   "output_file": "Content/Extracted/MaterialDatabase/Window_OldStone/Window_OldStone/Texture2D/WindowsNorm.tga",
+   "output_sha256": "e8c6de67fc1e22bdebadf19b1c73327951c37d962aae0b3b698cfaebd474ba91",
+   "uasset": "Content/Imported/MaterialDatabase/Window_OldStone/WindowsNorm.uasset"
+  }
+ ]
+}

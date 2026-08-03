@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "PoolSign",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/Signs/PoolSign.upk",
+ "source_sha256": "a5a8017ea7f57b6bf07de955133cdc51f9eadc95b395aaa113c43bb64517d4f7",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/PoolSign.upk#MI_PoolSign_Mat",
+   "object": "MI_PoolSign_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PoolSign_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/PoolSign/PoolSign/Texture2D/PoolSign_DiffAlph.tga",
+   "extracted_sha256": "be2b381de5f67a7d6b7358d37b4e5860324d6e5e75fdd0207e1f9a4575e003e6",
+   "output_file": "Content/Extracted/MaterialDatabase/PoolSign/PoolSign/Texture2D/PoolSign_DiffAlph.tga",
+   "output_sha256": "be2b381de5f67a7d6b7358d37b4e5860324d6e5e75fdd0207e1f9a4575e003e6",
+   "uasset": "Content/Imported/MaterialDatabase/PoolSign/MI_PoolSign_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/PoolSign.upk#PoolSign_DiffAlph",
+   "object": "PoolSign_DiffAlph",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/PoolSign/PoolSign/Texture2D/PoolSign_DiffAlph.tga",
+   "extracted_sha256": "be2b381de5f67a7d6b7358d37b4e5860324d6e5e75fdd0207e1f9a4575e003e6",
+   "output_file": "Content/Extracted/MaterialDatabase/PoolSign/PoolSign/Texture2D/PoolSign_DiffAlph.tga",
+   "output_sha256": "be2b381de5f67a7d6b7358d37b4e5860324d6e5e75fdd0207e1f9a4575e003e6",
+   "uasset": "Content/Imported/MaterialDatabase/PoolSign/PoolSign_DiffAlph.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/PoolSign.upk#PoolSign_Emis",
+   "object": "PoolSign_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/PoolSign/PoolSign/Texture2D/PoolSign_Emis.tga",
+   "extracted_sha256": "09670582a5e00f934983f9db8704cdb0fa995be827ae6992432b13ecf1705b61",
+   "output_file": "Content/Extracted/MaterialDatabase/PoolSign/PoolSign/Texture2D/PoolSign_Emis.tga",
+   "output_sha256": "09670582a5e00f934983f9db8704cdb0fa995be827ae6992432b13ecf1705b61",
+   "uasset": "Content/Imported/MaterialDatabase/PoolSign/PoolSign_Emis.uasset"
+  }
+ ]
+}

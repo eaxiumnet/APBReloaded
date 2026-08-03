@@ -1,0 +1,60 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FoliageBushy",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/FoliageBushy.upk",
+ "source_sha256": "d78c47688e8a72b456fa0d8688bef69cec152909e72b5429a551d8e32ef07340",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/FoliageBushy.upk#FoliageBushy_DiffSpec",
+   "object": "FoliageBushy_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FoliageBushy/FoliageBushy/Texture2D/FoliageBushy_DiffSpec.tga",
+   "extracted_sha256": "39acbdfb366f551410ce66131da8faa7547f3b3470e421ab1ffeacc2e3606964",
+   "output_file": "Content/Extracted/MaterialDatabase/FoliageBushy/FoliageBushy/Texture2D/FoliageBushy_DiffSpec.tga",
+   "output_sha256": "39acbdfb366f551410ce66131da8faa7547f3b3470e421ab1ffeacc2e3606964",
+   "uasset": "Content/Imported/MaterialDatabase/FoliageBushy/FoliageBushy_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/FoliageBushy.upk#FoliageBushy_Norm",
+   "object": "FoliageBushy_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FoliageBushy/FoliageBushy/Texture2D/FoliageBushy_Norm.tga",
+   "extracted_sha256": "ec4e60e95ebdd1b2929e2477c40849b77a1215050b3c8b6f2b23569d7f65a9b5",
+   "output_file": "Content/Extracted/MaterialDatabase/FoliageBushy/FoliageBushy/Texture2D/FoliageBushy_Norm.tga",
+   "output_sha256": "ec4e60e95ebdd1b2929e2477c40849b77a1215050b3c8b6f2b23569d7f65a9b5",
+   "uasset": "Content/Imported/MaterialDatabase/FoliageBushy/FoliageBushy_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/FoliageBushy.upk#FoliageBushy_Opac",
+   "object": "FoliageBushy_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FoliageBushy/FoliageBushy/Texture2D/FoliageBushy_Opac.tga",
+   "extracted_sha256": "2489f329df56006695e31ff48c1cf1b074e0fd3bcf6b49f5613bb15400925716",
+   "output_file": "Content/Extracted/MaterialDatabase/FoliageBushy/FoliageBushy/Texture2D/FoliageBushy_Opac.tga",
+   "output_sha256": "2489f329df56006695e31ff48c1cf1b074e0fd3bcf6b49f5613bb15400925716",
+   "uasset": "Content/Imported/MaterialDatabase/FoliageBushy/FoliageBushy_Opac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/FoliageBushy.upk#MI_FoliageBushy_MAT",
+   "object": "MI_FoliageBushy_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FoliageBushy_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FoliageBushy/FoliageBushy/Texture2D/FoliageBushy_DiffSpec.tga",
+   "extracted_sha256": "39acbdfb366f551410ce66131da8faa7547f3b3470e421ab1ffeacc2e3606964",
+   "output_file": "Content/Extracted/MaterialDatabase/FoliageBushy/FoliageBushy/Texture2D/FoliageBushy_DiffSpec.tga",
+   "output_sha256": "39acbdfb366f551410ce66131da8faa7547f3b3470e421ab1ffeacc2e3606964",
+   "uasset": "Content/Imported/MaterialDatabase/FoliageBushy/MI_FoliageBushy_MAT.uasset"
+  }
+ ]
+}

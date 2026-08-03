@@ -1,0 +1,185 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Grass",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/Terrain/Grass.upk",
+ "source_sha256": "c70bbf7488bf006b2e6e89d44de6e2e4630670d5d6a00014d9e97094592d8a6e",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Terrain/Grass.upk#Dirt_DiffSpec",
+   "object": "Dirt_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Grass/Grass/Texture2D/Dirt_DiffSpec.tga",
+   "extracted_sha256": "dbd712b4a2c61696dc74cadf9b4683285c7be8a9bad1dd9cbee0cd98f682a7b3",
+   "output_file": "Content/Extracted/MaterialDatabase/Grass/Grass/Texture2D/Dirt_DiffSpec.tga",
+   "output_sha256": "dbd712b4a2c61696dc74cadf9b4683285c7be8a9bad1dd9cbee0cd98f682a7b3",
+   "uasset": "Content/Imported/MaterialDatabase/Grass/Dirt_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Terrain/Grass.upk#Dirt_Norm",
+   "object": "Dirt_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Grass/Grass/Texture2D/Dirt_Norm.tga",
+   "extracted_sha256": "9655737026780bbc2076e9065727f6bc525c772f852fcd2ad904719434e34df2",
+   "output_file": "Content/Extracted/MaterialDatabase/Grass/Grass/Texture2D/Dirt_Norm.tga",
+   "output_sha256": "9655737026780bbc2076e9065727f6bc525c772f852fcd2ad904719434e34df2",
+   "uasset": "Content/Imported/MaterialDatabase/Grass/Dirt_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Terrain/Grass.upk#Grass_DiffSpec",
+   "object": "Grass_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Grass/Grass/Texture2D/Grass_DiffSpec.tga",
+   "extracted_sha256": "6facd2fb6e0edd0825ab1de7ec250e7111fa8a25c5a99b702689507ae94aa8c0",
+   "output_file": "Content/Extracted/MaterialDatabase/Grass/Grass/Texture2D/Grass_DiffSpec.tga",
+   "output_sha256": "6facd2fb6e0edd0825ab1de7ec250e7111fa8a25c5a99b702689507ae94aa8c0",
+   "uasset": "Content/Imported/MaterialDatabase/Grass/Grass_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Terrain/Grass.upk#MI_CSD_Grass",
+   "object": "MI_CSD_Grass",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CSD_Grass",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Grass/Grass/Texture2D/Grass_DiffSpec.tga",
+   "extracted_sha256": "6facd2fb6e0edd0825ab1de7ec250e7111fa8a25c5a99b702689507ae94aa8c0",
+   "output_file": "Content/Extracted/MaterialDatabase/Grass/Grass/Texture2D/Grass_DiffSpec.tga",
+   "output_sha256": "6facd2fb6e0edd0825ab1de7ec250e7111fa8a25c5a99b702689507ae94aa8c0",
+   "uasset": "Content/Imported/MaterialDatabase/Grass/MI_CSD_Grass.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Terrain/Grass.upk#MI_dirt",
+   "object": "MI_dirt",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "dirt",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Grass/Grass/Texture2D/Dirt_DiffSpec.tga",
+   "extracted_sha256": "dbd712b4a2c61696dc74cadf9b4683285c7be8a9bad1dd9cbee0cd98f682a7b3",
+   "output_file": "Content/Extracted/MaterialDatabase/Grass/Grass/Texture2D/Dirt_DiffSpec.tga",
+   "output_sha256": "dbd712b4a2c61696dc74cadf9b4683285c7be8a9bad1dd9cbee0cd98f682a7b3",
+   "uasset": "Content/Imported/MaterialDatabase/Grass/MI_dirt.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Terrain/Grass.upk#MI_Earth",
+   "object": "MI_Earth",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Earth",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Grass/Grass/Texture2D/Dirt_DiffSpec.tga",
+   "extracted_sha256": "dbd712b4a2c61696dc74cadf9b4683285c7be8a9bad1dd9cbee0cd98f682a7b3",
+   "output_file": "Content/Extracted/MaterialDatabase/Grass/Grass/Texture2D/Dirt_DiffSpec.tga",
+   "output_sha256": "dbd712b4a2c61696dc74cadf9b4683285c7be8a9bad1dd9cbee0cd98f682a7b3",
+   "uasset": "Content/Imported/MaterialDatabase/Grass/MI_Earth.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Terrain/Grass.upk#MI_Earth_Fallback",
+   "object": "MI_Earth_Fallback",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Earth_Fallback",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Grass/Grass/Texture2D/Dirt_DiffSpec.tga",
+   "extracted_sha256": "dbd712b4a2c61696dc74cadf9b4683285c7be8a9bad1dd9cbee0cd98f682a7b3",
+   "output_file": "Content/Extracted/MaterialDatabase/Grass/Grass/Texture2D/Dirt_DiffSpec.tga",
+   "output_sha256": "dbd712b4a2c61696dc74cadf9b4683285c7be8a9bad1dd9cbee0cd98f682a7b3",
+   "uasset": "Content/Imported/MaterialDatabase/Grass/MI_Earth_Fallback.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Terrain/Grass.upk#MI_Earth_LessDetail",
+   "object": "MI_Earth_LessDetail",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Earth_LessDetail",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Grass/Grass/Texture2D/Dirt_DiffSpec.tga",
+   "extracted_sha256": "dbd712b4a2c61696dc74cadf9b4683285c7be8a9bad1dd9cbee0cd98f682a7b3",
+   "output_file": "Content/Extracted/MaterialDatabase/Grass/Grass/Texture2D/Dirt_DiffSpec.tga",
+   "output_sha256": "dbd712b4a2c61696dc74cadf9b4683285c7be8a9bad1dd9cbee0cd98f682a7b3",
+   "uasset": "Content/Imported/MaterialDatabase/Grass/MI_Earth_LessDetail.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Terrain/Grass.upk#MI_Grass_Mat",
+   "object": "MI_Grass_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Grass_Mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Grass/Grass/Texture2D/Dirt_DiffSpec.tga",
+   "extracted_sha256": "dbd712b4a2c61696dc74cadf9b4683285c7be8a9bad1dd9cbee0cd98f682a7b3",
+   "output_file": "Content/Extracted/MaterialDatabase/Grass/Grass/Texture2D/Dirt_DiffSpec.tga",
+   "output_sha256": "dbd712b4a2c61696dc74cadf9b4683285c7be8a9bad1dd9cbee0cd98f682a7b3",
+   "uasset": "Content/Imported/MaterialDatabase/Grass/MI_Grass_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Terrain/Grass.upk#MI_Grass_Mat_FD",
+   "object": "MI_Grass_Mat_FD",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Grass_Mat_FD",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Grass/Grass/Texture2D/Dirt_DiffSpec.tga",
+   "extracted_sha256": "dbd712b4a2c61696dc74cadf9b4683285c7be8a9bad1dd9cbee0cd98f682a7b3",
+   "output_file": "Content/Extracted/MaterialDatabase/Grass/Grass/Texture2D/Dirt_DiffSpec.tga",
+   "output_sha256": "dbd712b4a2c61696dc74cadf9b4683285c7be8a9bad1dd9cbee0cd98f682a7b3",
+   "uasset": "Content/Imported/MaterialDatabase/Grass/MI_Grass_Mat_FD.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Terrain/Grass.upk#MI_Grass_Mat_Small_Dirt",
+   "object": "MI_Grass_Mat_Small_Dirt",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Grass_Mat_Small_Dirt",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Grass/Grass/Texture2D/Dirt_DiffSpec.tga",
+   "extracted_sha256": "dbd712b4a2c61696dc74cadf9b4683285c7be8a9bad1dd9cbee0cd98f682a7b3",
+   "output_file": "Content/Extracted/MaterialDatabase/Grass/Grass/Texture2D/Dirt_DiffSpec.tga",
+   "output_sha256": "dbd712b4a2c61696dc74cadf9b4683285c7be8a9bad1dd9cbee0cd98f682a7b3",
+   "uasset": "Content/Imported/MaterialDatabase/Grass/MI_Grass_Mat_Small_Dirt.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Terrain/Grass.upk#MI_GrassEdge",
+   "object": "MI_GrassEdge",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "GrassEdge",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Grass/Grass/Texture2D/Grass_DiffSpec.tga",
+   "extracted_sha256": "6facd2fb6e0edd0825ab1de7ec250e7111fa8a25c5a99b702689507ae94aa8c0",
+   "output_file": "Content/Extracted/MaterialDatabase/Grass/Grass/Texture2D/Grass_DiffSpec.tga",
+   "output_sha256": "6facd2fb6e0edd0825ab1de7ec250e7111fa8a25c5a99b702689507ae94aa8c0",
+   "uasset": "Content/Imported/MaterialDatabase/Grass/MI_GrassEdge.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Terrain/Grass.upk#MI_TERR_GrassDirt",
+   "object": "MI_TERR_GrassDirt",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "TERR_GrassDirt",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Grass/Grass/Texture2D/Grass_DiffSpec.tga",
+   "extracted_sha256": "6facd2fb6e0edd0825ab1de7ec250e7111fa8a25c5a99b702689507ae94aa8c0",
+   "output_file": "Content/Extracted/MaterialDatabase/Grass/Grass/Texture2D/Grass_DiffSpec.tga",
+   "output_sha256": "6facd2fb6e0edd0825ab1de7ec250e7111fa8a25c5a99b702689507ae94aa8c0",
+   "uasset": "Content/Imported/MaterialDatabase/Grass/MI_TERR_GrassDirt.uasset"
+  }
+ ]
+}

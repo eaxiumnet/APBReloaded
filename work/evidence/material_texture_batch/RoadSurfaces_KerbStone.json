@@ -1,0 +1,112 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "RoadSurfaces_KerbStone",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/RoadEditorMaterials/RoadSurfaces_KerbStone.upk",
+ "source_sha256": "4844029fe3fb52041f8afc1fb5e835e77ae5bd782c5a87adbc13fe060a58651a",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_KerbStone.upk#Curb_DiffSpec",
+   "object": "Curb_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_KerbStone/RoadSurfaces_KerbStone/Texture2D/Curb_DiffSpec.tga",
+   "extracted_sha256": "6b7118f6bc7b07886f9330d69fc55bf91390e142688e2eb49919c28c33001563",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_KerbStone/RoadSurfaces_KerbStone/Texture2D/Curb_DiffSpec.tga",
+   "output_sha256": "6b7118f6bc7b07886f9330d69fc55bf91390e142688e2eb49919c28c33001563",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_KerbStone/Curb_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_KerbStone.upk#Curb_Norm",
+   "object": "Curb_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_KerbStone/RoadSurfaces_KerbStone/Texture2D/Curb_Norm.tga",
+   "extracted_sha256": "3e267335b37e99aa2fd1deb1891d2f9896256cddd6d6adf0a4d2ef8e02785746",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_KerbStone/RoadSurfaces_KerbStone/Texture2D/Curb_Norm.tga",
+   "output_sha256": "3e267335b37e99aa2fd1deb1891d2f9896256cddd6d6adf0a4d2ef8e02785746",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_KerbStone/Curb_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_KerbStone.upk#EdgeSlab_01",
+   "object": "EdgeSlab_01",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_KerbStone/RoadSurfaces_KerbStone/Texture2D/EdgeSlab_01.tga",
+   "extracted_sha256": "38586a9508164d3841bfb297c4dad3d9ddfc8104dd5583e6b122d17359f97317",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_KerbStone/RoadSurfaces_KerbStone/Texture2D/EdgeSlab_01.tga",
+   "output_sha256": "38586a9508164d3841bfb297c4dad3d9ddfc8104dd5583e6b122d17359f97317",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_KerbStone/EdgeSlab_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_KerbStone.upk#Kerb02_DiffSpec",
+   "object": "Kerb02_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_KerbStone/RoadSurfaces_KerbStone/Texture2D/Kerb02_DiffSpec.tga",
+   "extracted_sha256": "1f9a89e110bcc7a8a59e9334e9d545e38dca9609d97a22da4c97a33898a5bfe8",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_KerbStone/RoadSurfaces_KerbStone/Texture2D/Kerb02_DiffSpec.tga",
+   "output_sha256": "1f9a89e110bcc7a8a59e9334e9d545e38dca9609d97a22da4c97a33898a5bfe8",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_KerbStone/Kerb02_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_KerbStone.upk#Kerb02_Norm",
+   "object": "Kerb02_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_KerbStone/RoadSurfaces_KerbStone/Texture2D/Kerb02_Norm.tga",
+   "extracted_sha256": "276720c44219b35611f5a46068c73c158bf411fbfb05c6fa9eb96408204963ee",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_KerbStone/RoadSurfaces_KerbStone/Texture2D/Kerb02_Norm.tga",
+   "output_sha256": "276720c44219b35611f5a46068c73c158bf411fbfb05c6fa9eb96408204963ee",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_KerbStone/Kerb02_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_KerbStone.upk#MI_EdgeSlab",
+   "object": "MI_EdgeSlab",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "EdgeSlab",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_KerbStone/RoadSurfaces_KerbStone/Texture2D/EdgeSlab_01.tga",
+   "extracted_sha256": "38586a9508164d3841bfb297c4dad3d9ddfc8104dd5583e6b122d17359f97317",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_KerbStone/RoadSurfaces_KerbStone/Texture2D/EdgeSlab_01.tga",
+   "output_sha256": "38586a9508164d3841bfb297c4dad3d9ddfc8104dd5583e6b122d17359f97317",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_KerbStone/MI_EdgeSlab.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_KerbStone.upk#MI_RoadSurfaces_Kerb01",
+   "object": "MI_RoadSurfaces_Kerb01",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RoadSurfaces_Kerb01",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_KerbStone/RoadSurfaces_KerbStone/Texture2D/Kerb02_DiffSpec.tga",
+   "extracted_sha256": "1f9a89e110bcc7a8a59e9334e9d545e38dca9609d97a22da4c97a33898a5bfe8",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_KerbStone/RoadSurfaces_KerbStone/Texture2D/Kerb02_DiffSpec.tga",
+   "output_sha256": "1f9a89e110bcc7a8a59e9334e9d545e38dca9609d97a22da4c97a33898a5bfe8",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_KerbStone/MI_RoadSurfaces_Kerb01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_KerbStone.upk#MI_roadsurfaces_kerbstone",
+   "object": "MI_roadsurfaces_kerbstone",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "roadsurfaces_kerbstone",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_KerbStone/RoadSurfaces_KerbStone/Texture2D/Curb_DiffSpec.tga",
+   "extracted_sha256": "6b7118f6bc7b07886f9330d69fc55bf91390e142688e2eb49919c28c33001563",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_KerbStone/RoadSurfaces_KerbStone/Texture2D/Curb_DiffSpec.tga",
+   "output_sha256": "6b7118f6bc7b07886f9330d69fc55bf91390e142688e2eb49919c28c33001563",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_KerbStone/MI_roadsurfaces_kerbstone.uasset"
+  }
+ ]
+}

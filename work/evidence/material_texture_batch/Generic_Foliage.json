@@ -1,0 +1,442 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Generic_Foliage",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/Foliage/Generic_Foliage.upk",
+ "source_sha256": "0d8f59fff7ef402bf8ce7a0404772ab88f550e5b77cc9c11fcbe723acbed4e82",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/Foliage/Generic_Foliage.upk#Dirt_DiffSpec",
+   "object": "Dirt_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Grass/Texture2D/Dirt_DiffSpec.tga",
+   "extracted_sha256": "dbd712b4a2c61696dc74cadf9b4683285c7be8a9bad1dd9cbee0cd98f682a7b3",
+   "output_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Grass/Texture2D/Dirt_DiffSpec.tga",
+   "output_sha256": "dbd712b4a2c61696dc74cadf9b4683285c7be8a9bad1dd9cbee0cd98f682a7b3",
+   "uasset": "Content/Imported/MaterialDatabase/Generic_Foliage/Dirt_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/Foliage/Generic_Foliage.upk#Foliage_Masks_01",
+   "object": "Foliage_Masks_01",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Foliage_Masks_01.tga",
+   "extracted_sha256": "db19db1fa30894c628e0e71d9a1c235fbb5ef45455895a02e66faede44fd4a8b",
+   "output_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Foliage_Masks_01.tga",
+   "output_sha256": "db19db1fa30894c628e0e71d9a1c235fbb5ef45455895a02e66faede44fd4a8b",
+   "uasset": "Content/Imported/MaterialDatabase/Generic_Foliage/Foliage_Masks_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/Foliage/Generic_Foliage.upk#GrassBlades",
+   "object": "GrassBlades",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/GrassBlades.tga",
+   "extracted_sha256": "e294feeb677575107bcd1146c9d9a8547aaf45db813c5d42e419c8ed2e0f9d15",
+   "output_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/GrassBlades.tga",
+   "output_sha256": "e294feeb677575107bcd1146c9d9a8547aaf45db813c5d42e419c8ed2e0f9d15",
+   "uasset": "Content/Imported/MaterialDatabase/Generic_Foliage/GrassBlades.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/Foliage/Generic_Foliage.upk#Ivy_sections01",
+   "object": "Ivy_sections01",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Ivy_sections01.tga",
+   "extracted_sha256": "023a9c676729fdb785dc2a0616df9d5048dba20f49a521a171a79bbb6ec80fbc",
+   "output_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Ivy_sections01.tga",
+   "output_sha256": "023a9c676729fdb785dc2a0616df9d5048dba20f49a521a171a79bbb6ec80fbc",
+   "uasset": "Content/Imported/MaterialDatabase/Generic_Foliage/Ivy_sections01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/Foliage/Generic_Foliage.upk#MI_Bush_01",
+   "object": "MI_Bush_01",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Bush_01",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Foliage_Masks_01.tga",
+   "extracted_sha256": "db19db1fa30894c628e0e71d9a1c235fbb5ef45455895a02e66faede44fd4a8b",
+   "output_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Foliage_Masks_01.tga",
+   "output_sha256": "db19db1fa30894c628e0e71d9a1c235fbb5ef45455895a02e66faede44fd4a8b",
+   "uasset": "Content/Imported/MaterialDatabase/Generic_Foliage/MI_Bush_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/Foliage/Generic_Foliage.upk#MI_CameraFacing_Test",
+   "object": "MI_CameraFacing_Test",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CameraFacing_Test",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Spring_Tree_Test.tga",
+   "extracted_sha256": "0eb08e0e29eae3764534682446e38719b54dd7050341a820ade3e6d0224eef58",
+   "output_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Spring_Tree_Test.tga",
+   "output_sha256": "0eb08e0e29eae3764534682446e38719b54dd7050341a820ade3e6d0224eef58",
+   "uasset": "Content/Imported/MaterialDatabase/Generic_Foliage/MI_CameraFacing_Test.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/Foliage/Generic_Foliage.upk#MI_ESD_LargeGrass__Volume",
+   "object": "MI_ESD_LargeGrass__Volume",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "ESD_LargeGrass__Volume",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Foliage_Masks_01.tga",
+   "extracted_sha256": "db19db1fa30894c628e0e71d9a1c235fbb5ef45455895a02e66faede44fd4a8b",
+   "output_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Foliage_Masks_01.tga",
+   "output_sha256": "db19db1fa30894c628e0e71d9a1c235fbb5ef45455895a02e66faede44fd4a8b",
+   "uasset": "Content/Imported/MaterialDatabase/Generic_Foliage/MI_ESD_LargeGrass__Volume.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/Foliage/Generic_Foliage.upk#MI_FDGrass_Volume",
+   "object": "MI_FDGrass_Volume",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FDGrass_Volume",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Foliage_Masks_01.tga",
+   "extracted_sha256": "db19db1fa30894c628e0e71d9a1c235fbb5ef45455895a02e66faede44fd4a8b",
+   "output_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Foliage_Masks_01.tga",
+   "output_sha256": "db19db1fa30894c628e0e71d9a1c235fbb5ef45455895a02e66faede44fd4a8b",
+   "uasset": "Content/Imported/MaterialDatabase/Generic_Foliage/MI_FDGrass_Volume.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/Foliage/Generic_Foliage.upk#MI_FDGrass_Volume_Dead",
+   "object": "MI_FDGrass_Volume_Dead",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FDGrass_Volume_Dead",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Foliage_Masks_01.tga",
+   "extracted_sha256": "db19db1fa30894c628e0e71d9a1c235fbb5ef45455895a02e66faede44fd4a8b",
+   "output_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Foliage_Masks_01.tga",
+   "output_sha256": "db19db1fa30894c628e0e71d9a1c235fbb5ef45455895a02e66faede44fd4a8b",
+   "uasset": "Content/Imported/MaterialDatabase/Generic_Foliage/MI_FDGrass_Volume_Dead.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/Foliage/Generic_Foliage.upk#MI_FDGrass_Volume_V1",
+   "object": "MI_FDGrass_Volume_V1",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FDGrass_Volume_V1",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Foliage_Masks_01.tga",
+   "extracted_sha256": "db19db1fa30894c628e0e71d9a1c235fbb5ef45455895a02e66faede44fd4a8b",
+   "output_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Foliage_Masks_01.tga",
+   "output_sha256": "db19db1fa30894c628e0e71d9a1c235fbb5ef45455895a02e66faede44fd4a8b",
+   "uasset": "Content/Imported/MaterialDatabase/Generic_Foliage/MI_FDGrass_Volume_V1.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/Foliage/Generic_Foliage.upk#MI_FDGrass_Volume_V2",
+   "object": "MI_FDGrass_Volume_V2",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FDGrass_Volume_V2",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Foliage_Masks_01.tga",
+   "extracted_sha256": "db19db1fa30894c628e0e71d9a1c235fbb5ef45455895a02e66faede44fd4a8b",
+   "output_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Foliage_Masks_01.tga",
+   "output_sha256": "db19db1fa30894c628e0e71d9a1c235fbb5ef45455895a02e66faede44fd4a8b",
+   "uasset": "Content/Imported/MaterialDatabase/Generic_Foliage/MI_FDGrass_Volume_V2.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/Foliage/Generic_Foliage.upk#MI_FDGrass_Volume_V3",
+   "object": "MI_FDGrass_Volume_V3",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FDGrass_Volume_V3",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Foliage_Masks_01.tga",
+   "extracted_sha256": "db19db1fa30894c628e0e71d9a1c235fbb5ef45455895a02e66faede44fd4a8b",
+   "output_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Foliage_Masks_01.tga",
+   "output_sha256": "db19db1fa30894c628e0e71d9a1c235fbb5ef45455895a02e66faede44fd4a8b",
+   "uasset": "Content/Imported/MaterialDatabase/Generic_Foliage/MI_FDGrass_Volume_V3.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/Foliage/Generic_Foliage.upk#MI_Grass_Mat",
+   "object": "MI_Grass_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Grass_Mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Grass/Texture2D/Dirt_DiffSpec.tga",
+   "extracted_sha256": "dbd712b4a2c61696dc74cadf9b4683285c7be8a9bad1dd9cbee0cd98f682a7b3",
+   "output_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Grass/Texture2D/Dirt_DiffSpec.tga",
+   "output_sha256": "dbd712b4a2c61696dc74cadf9b4683285c7be8a9bad1dd9cbee0cd98f682a7b3",
+   "uasset": "Content/Imported/MaterialDatabase/Generic_Foliage/MI_Grass_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/Foliage/Generic_Foliage.upk#MI_Grass_Tests",
+   "object": "MI_Grass_Tests",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Grass_Tests",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/GrassBlades.tga",
+   "extracted_sha256": "e294feeb677575107bcd1146c9d9a8547aaf45db813c5d42e419c8ed2e0f9d15",
+   "output_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/GrassBlades.tga",
+   "output_sha256": "e294feeb677575107bcd1146c9d9a8547aaf45db813c5d42e419c8ed2e0f9d15",
+   "uasset": "Content/Imported/MaterialDatabase/Generic_Foliage/MI_Grass_Tests.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/Foliage/Generic_Foliage.upk#MI_Ivy",
+   "object": "MI_Ivy",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Ivy",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Ivy_sections01.tga",
+   "extracted_sha256": "023a9c676729fdb785dc2a0616df9d5048dba20f49a521a171a79bbb6ec80fbc",
+   "output_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Ivy_sections01.tga",
+   "output_sha256": "023a9c676729fdb785dc2a0616df9d5048dba20f49a521a171a79bbb6ec80fbc",
+   "uasset": "Content/Imported/MaterialDatabase/Generic_Foliage/MI_Ivy.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/Foliage/Generic_Foliage.upk#MI_Ivy_01",
+   "object": "MI_Ivy_01",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Ivy_01",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Foliage_Masks_01.tga",
+   "extracted_sha256": "db19db1fa30894c628e0e71d9a1c235fbb5ef45455895a02e66faede44fd4a8b",
+   "output_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Foliage_Masks_01.tga",
+   "output_sha256": "db19db1fa30894c628e0e71d9a1c235fbb5ef45455895a02e66faede44fd4a8b",
+   "uasset": "Content/Imported/MaterialDatabase/Generic_Foliage/MI_Ivy_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/Foliage/Generic_Foliage.upk#MI_Ivy_Wall",
+   "object": "MI_Ivy_Wall",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Ivy_Wall",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Foliage_Masks_01.tga",
+   "extracted_sha256": "db19db1fa30894c628e0e71d9a1c235fbb5ef45455895a02e66faede44fd4a8b",
+   "output_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Foliage_Masks_01.tga",
+   "output_sha256": "db19db1fa30894c628e0e71d9a1c235fbb5ef45455895a02e66faede44fd4a8b",
+   "uasset": "Content/Imported/MaterialDatabase/Generic_Foliage/MI_Ivy_Wall.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/Foliage/Generic_Foliage.upk#MI_LargeGrass_01",
+   "object": "MI_LargeGrass_01",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "LargeGrass_01",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Foliage_Masks_01.tga",
+   "extracted_sha256": "db19db1fa30894c628e0e71d9a1c235fbb5ef45455895a02e66faede44fd4a8b",
+   "output_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Foliage_Masks_01.tga",
+   "output_sha256": "db19db1fa30894c628e0e71d9a1c235fbb5ef45455895a02e66faede44fd4a8b",
+   "uasset": "Content/Imported/MaterialDatabase/Generic_Foliage/MI_LargeGrass_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/Foliage/Generic_Foliage.upk#MI_LargeGrass__Volume",
+   "object": "MI_LargeGrass__Volume",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "LargeGrass__Volume",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Foliage_Masks_01.tga",
+   "extracted_sha256": "db19db1fa30894c628e0e71d9a1c235fbb5ef45455895a02e66faede44fd4a8b",
+   "output_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Foliage_Masks_01.tga",
+   "output_sha256": "db19db1fa30894c628e0e71d9a1c235fbb5ef45455895a02e66faede44fd4a8b",
+   "uasset": "Content/Imported/MaterialDatabase/Generic_Foliage/MI_LargeGrass__Volume.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/Foliage/Generic_Foliage.upk#MI_LargeGrass__Volume_V2",
+   "object": "MI_LargeGrass__Volume_V2",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "LargeGrass__Volume_V2",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Foliage_Masks_01.tga",
+   "extracted_sha256": "db19db1fa30894c628e0e71d9a1c235fbb5ef45455895a02e66faede44fd4a8b",
+   "output_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Foliage_Masks_01.tga",
+   "output_sha256": "db19db1fa30894c628e0e71d9a1c235fbb5ef45455895a02e66faede44fd4a8b",
+   "uasset": "Content/Imported/MaterialDatabase/Generic_Foliage/MI_LargeGrass__Volume_V2.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/Foliage/Generic_Foliage.upk#MI_LargeGrass_Volume_Tint01",
+   "object": "MI_LargeGrass_Volume_Tint01",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "LargeGrass_Volume_Tint01",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Foliage_Masks_01.tga",
+   "extracted_sha256": "db19db1fa30894c628e0e71d9a1c235fbb5ef45455895a02e66faede44fd4a8b",
+   "output_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Foliage_Masks_01.tga",
+   "output_sha256": "db19db1fa30894c628e0e71d9a1c235fbb5ef45455895a02e66faede44fd4a8b",
+   "uasset": "Content/Imported/MaterialDatabase/Generic_Foliage/MI_LargeGrass_Volume_Tint01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/Foliage/Generic_Foliage.upk#MI_ThinTallGrass",
+   "object": "MI_ThinTallGrass",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "ThinTallGrass",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Thin_Tall_Grass.tga",
+   "extracted_sha256": "c5310a2913a7008c7d90872326a88df08e4acad0bcec6452f0bfc0820f838e0c",
+   "output_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Thin_Tall_Grass.tga",
+   "output_sha256": "c5310a2913a7008c7d90872326a88df08e4acad0bcec6452f0bfc0820f838e0c",
+   "uasset": "Content/Imported/MaterialDatabase/Generic_Foliage/MI_ThinTallGrass.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/Foliage/Generic_Foliage.upk#MI_Tree_CSD_Less_Saturation",
+   "object": "MI_Tree_CSD_Less_Saturation",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Tree_CSD_Less_Saturation",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Foliage_Masks_01.tga",
+   "extracted_sha256": "db19db1fa30894c628e0e71d9a1c235fbb5ef45455895a02e66faede44fd4a8b",
+   "output_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Foliage_Masks_01.tga",
+   "output_sha256": "db19db1fa30894c628e0e71d9a1c235fbb5ef45455895a02e66faede44fd4a8b",
+   "uasset": "Content/Imported/MaterialDatabase/Generic_Foliage/MI_Tree_CSD_Less_Saturation.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/Foliage/Generic_Foliage.upk#MI_tree_CSD_LessSaturation",
+   "object": "MI_tree_CSD_LessSaturation",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "tree_CSD_LessSaturation",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Foliage_Masks_01.tga",
+   "extracted_sha256": "db19db1fa30894c628e0e71d9a1c235fbb5ef45455895a02e66faede44fd4a8b",
+   "output_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Foliage_Masks_01.tga",
+   "output_sha256": "db19db1fa30894c628e0e71d9a1c235fbb5ef45455895a02e66faede44fd4a8b",
+   "uasset": "Content/Imported/MaterialDatabase/Generic_Foliage/MI_tree_CSD_LessSaturation.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/Foliage/Generic_Foliage.upk#MI_tree_CSD_LessSaturation_Tint",
+   "object": "MI_tree_CSD_LessSaturation_Tint",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "tree_CSD_LessSaturation_Tint",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Foliage_Masks_01.tga",
+   "extracted_sha256": "db19db1fa30894c628e0e71d9a1c235fbb5ef45455895a02e66faede44fd4a8b",
+   "output_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Foliage_Masks_01.tga",
+   "output_sha256": "db19db1fa30894c628e0e71d9a1c235fbb5ef45455895a02e66faede44fd4a8b",
+   "uasset": "Content/Imported/MaterialDatabase/Generic_Foliage/MI_tree_CSD_LessSaturation_Tint.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/Foliage/Generic_Foliage.upk#MI_tree_test",
+   "object": "MI_tree_test",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "tree_test",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Foliage_Masks_01.tga",
+   "extracted_sha256": "db19db1fa30894c628e0e71d9a1c235fbb5ef45455895a02e66faede44fd4a8b",
+   "output_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Foliage_Masks_01.tga",
+   "output_sha256": "db19db1fa30894c628e0e71d9a1c235fbb5ef45455895a02e66faede44fd4a8b",
+   "uasset": "Content/Imported/MaterialDatabase/Generic_Foliage/MI_tree_test.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/Foliage/Generic_Foliage.upk#MI_tree_test_ColourTint",
+   "object": "MI_tree_test_ColourTint",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "tree_test_ColourTint",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Foliage_Masks_01.tga",
+   "extracted_sha256": "db19db1fa30894c628e0e71d9a1c235fbb5ef45455895a02e66faede44fd4a8b",
+   "output_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Foliage_Masks_01.tga",
+   "output_sha256": "db19db1fa30894c628e0e71d9a1c235fbb5ef45455895a02e66faede44fd4a8b",
+   "uasset": "Content/Imported/MaterialDatabase/Generic_Foliage/MI_tree_test_ColourTint.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/Foliage/Generic_Foliage.upk#MI_tree_test_Fallback",
+   "object": "MI_tree_test_Fallback",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "tree_test_Fallback",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Foliage_Masks_01.tga",
+   "extracted_sha256": "db19db1fa30894c628e0e71d9a1c235fbb5ef45455895a02e66faede44fd4a8b",
+   "output_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Foliage_Masks_01.tga",
+   "output_sha256": "db19db1fa30894c628e0e71d9a1c235fbb5ef45455895a02e66faede44fd4a8b",
+   "uasset": "Content/Imported/MaterialDatabase/Generic_Foliage/MI_tree_test_Fallback.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/Foliage/Generic_Foliage.upk#MI_TreeLine_01",
+   "object": "MI_TreeLine_01",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "TreeLine_01",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/TreeLine_Tmp.tga",
+   "extracted_sha256": "7139eb15cf2cb497b86e214a83178ec447dedba65329b938668e23f0b6d8db00",
+   "output_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/TreeLine_Tmp.tga",
+   "output_sha256": "7139eb15cf2cb497b86e214a83178ec447dedba65329b938668e23f0b6d8db00",
+   "uasset": "Content/Imported/MaterialDatabase/Generic_Foliage/MI_TreeLine_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/Foliage/Generic_Foliage.upk#Spring_Tree_Test",
+   "object": "Spring_Tree_Test",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Spring_Tree_Test.tga",
+   "extracted_sha256": "0eb08e0e29eae3764534682446e38719b54dd7050341a820ade3e6d0224eef58",
+   "output_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Spring_Tree_Test.tga",
+   "output_sha256": "0eb08e0e29eae3764534682446e38719b54dd7050341a820ade3e6d0224eef58",
+   "uasset": "Content/Imported/MaterialDatabase/Generic_Foliage/Spring_Tree_Test.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/Foliage/Generic_Foliage.upk#Thin_Tall_Grass",
+   "object": "Thin_Tall_Grass",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Thin_Tall_Grass.tga",
+   "extracted_sha256": "c5310a2913a7008c7d90872326a88df08e4acad0bcec6452f0bfc0820f838e0c",
+   "output_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/Thin_Tall_Grass.tga",
+   "output_sha256": "c5310a2913a7008c7d90872326a88df08e4acad0bcec6452f0bfc0820f838e0c",
+   "uasset": "Content/Imported/MaterialDatabase/Generic_Foliage/Thin_Tall_Grass.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/Foliage/Generic_Foliage.upk#TreeLine_Tmp",
+   "object": "TreeLine_Tmp",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/TreeLine_Tmp.tga",
+   "extracted_sha256": "7139eb15cf2cb497b86e214a83178ec447dedba65329b938668e23f0b6d8db00",
+   "output_file": "Content/Extracted/MaterialDatabase/Generic_Foliage/Generic_Foliage/Texture2D/TreeLine_Tmp.tga",
+   "output_sha256": "7139eb15cf2cb497b86e214a83178ec447dedba65329b938668e23f0b6d8db00",
+   "uasset": "Content/Imported/MaterialDatabase/Generic_Foliage/TreeLine_Tmp.uasset"
+  }
+ ]
+}

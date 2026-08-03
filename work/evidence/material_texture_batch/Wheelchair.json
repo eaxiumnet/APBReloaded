@@ -1,0 +1,60 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Wheelchair",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/PropMaterials/Wheelchair.upk",
+ "source_sha256": "7a19c3c34c20e44f01a6e3306a8c6163f3be39bb9d9fe19e0ffd9c6d52a63f4e",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Wheelchair.upk#MI_Wheelchair_MAT",
+   "object": "MI_Wheelchair_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Wheelchair_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Wheelchair/Wheelchair/Texture2D/Wheelchair_DiffSpec.tga",
+   "extracted_sha256": "668a79e9b98d255a89b89296cdbac3c80578b8d13d33093dd64335e6e67d0e1e",
+   "output_file": "Content/Extracted/MaterialDatabase/Wheelchair/Wheelchair/Texture2D/Wheelchair_DiffSpec.tga",
+   "output_sha256": "668a79e9b98d255a89b89296cdbac3c80578b8d13d33093dd64335e6e67d0e1e",
+   "uasset": "Content/Imported/MaterialDatabase/Wheelchair/MI_Wheelchair_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Wheelchair.upk#Wheelchair_DiffSpec",
+   "object": "Wheelchair_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Wheelchair/Wheelchair/Texture2D/Wheelchair_DiffSpec.tga",
+   "extracted_sha256": "668a79e9b98d255a89b89296cdbac3c80578b8d13d33093dd64335e6e67d0e1e",
+   "output_file": "Content/Extracted/MaterialDatabase/Wheelchair/Wheelchair/Texture2D/Wheelchair_DiffSpec.tga",
+   "output_sha256": "668a79e9b98d255a89b89296cdbac3c80578b8d13d33093dd64335e6e67d0e1e",
+   "uasset": "Content/Imported/MaterialDatabase/Wheelchair/Wheelchair_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Wheelchair.upk#Wheelchair_Norm",
+   "object": "Wheelchair_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Wheelchair/Wheelchair/Texture2D/Wheelchair_Norm.tga",
+   "extracted_sha256": "4c176fb69294b5763ffd4c2292c1e8ba0ce9b52630821434c1c8e9dc19f8f860",
+   "output_file": "Content/Extracted/MaterialDatabase/Wheelchair/Wheelchair/Texture2D/Wheelchair_Norm.tga",
+   "output_sha256": "4c176fb69294b5763ffd4c2292c1e8ba0ce9b52630821434c1c8e9dc19f8f860",
+   "uasset": "Content/Imported/MaterialDatabase/Wheelchair/Wheelchair_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Wheelchair.upk#Wheelchair_Opac",
+   "object": "Wheelchair_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Wheelchair/Wheelchair/Texture2D/Wheelchair_Opac.tga",
+   "extracted_sha256": "6315dc686b6ba343da67a23cbb1bf00df01113c2a775e6fc9fb1f582b1e79563",
+   "output_file": "Content/Extracted/MaterialDatabase/Wheelchair/Wheelchair/Texture2D/Wheelchair_Opac.tga",
+   "output_sha256": "6315dc686b6ba343da67a23cbb1bf00df01113c2a775e6fc9fb1f582b1e79563",
+   "uasset": "Content/Imported/MaterialDatabase/Wheelchair/Wheelchair_Opac.uasset"
+  }
+ ]
+}

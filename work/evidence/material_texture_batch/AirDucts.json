@@ -1,0 +1,89 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "AirDucts",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/AirDucts/AirDucts.upk",
+ "source_sha256": "7edfd1f60414a929b3d9359f473595d4076933f13e4da68d00a396bb971403aa",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/AirDucts/AirDucts.upk#AirDuct01_H_Norm",
+   "object": "AirDuct01_H_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/AirDucts/AirDucts/Texture2D/AirDuct01_H_Norm.tga",
+   "extracted_sha256": "389fea9e7e6921d26730639e1281fe52a2f5653082c4a4536f9ef422e669096a",
+   "output_file": "Content/Extracted/MaterialDatabase/AirDucts/AirDucts/Texture2D/AirDuct01_H_Norm.tga",
+   "output_sha256": "389fea9e7e6921d26730639e1281fe52a2f5653082c4a4536f9ef422e669096a",
+   "uasset": "Content/Imported/MaterialDatabase/AirDucts/AirDuct01_H_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/AirDucts/AirDucts.upk#AirDuct01_V_DiffSpec",
+   "object": "AirDuct01_V_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/AirDucts/AirDucts/Texture2D/AirDuct01_V_DiffSpec.tga",
+   "extracted_sha256": "cf1c825207bb4254c920e43c3e01d8f4e7c213c58ec12ee235992fc66200c5a3",
+   "output_file": "Content/Extracted/MaterialDatabase/AirDucts/AirDucts/Texture2D/AirDuct01_V_DiffSpec.tga",
+   "output_sha256": "cf1c825207bb4254c920e43c3e01d8f4e7c213c58ec12ee235992fc66200c5a3",
+   "uasset": "Content/Imported/MaterialDatabase/AirDucts/AirDuct01_V_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/AirDucts/AirDucts.upk#AirDuct01_V_Norm",
+   "object": "AirDuct01_V_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/AirDucts/AirDucts/Texture2D/AirDuct01_V_Norm.tga",
+   "extracted_sha256": "7f1132535a34d99598d86cf609dccdd6505490d89a57e5ab4afeb1d646485bd1",
+   "output_file": "Content/Extracted/MaterialDatabase/AirDucts/AirDucts/Texture2D/AirDuct01_V_Norm.tga",
+   "output_sha256": "7f1132535a34d99598d86cf609dccdd6505490d89a57e5ab4afeb1d646485bd1",
+   "uasset": "Content/Imported/MaterialDatabase/AirDucts/AirDuct01_V_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/AirDucts/AirDucts.upk#MI_AirDuct01_H_Clean",
+   "object": "MI_AirDuct01_H_Clean",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "AirDuct01_H_Clean",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/AirDucts/AirDucts/Texture2D/AirDuct01_V_DiffSpec.tga",
+   "extracted_sha256": "cf1c825207bb4254c920e43c3e01d8f4e7c213c58ec12ee235992fc66200c5a3",
+   "output_file": "Content/Extracted/MaterialDatabase/AirDucts/AirDucts/Texture2D/AirDuct01_V_DiffSpec.tga",
+   "output_sha256": "cf1c825207bb4254c920e43c3e01d8f4e7c213c58ec12ee235992fc66200c5a3",
+   "uasset": "Content/Imported/MaterialDatabase/AirDucts/MI_AirDuct01_H_Clean.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/AirDucts/AirDucts.upk#MI_AirDuct01_V_Clean",
+   "object": "MI_AirDuct01_V_Clean",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "AirDuct01_V_Clean",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/AirDucts/AirDucts/Texture2D/AirDuct01_V_DiffSpec.tga",
+   "extracted_sha256": "cf1c825207bb4254c920e43c3e01d8f4e7c213c58ec12ee235992fc66200c5a3",
+   "output_file": "Content/Extracted/MaterialDatabase/AirDucts/AirDucts/Texture2D/AirDuct01_V_DiffSpec.tga",
+   "output_sha256": "cf1c825207bb4254c920e43c3e01d8f4e7c213c58ec12ee235992fc66200c5a3",
+   "uasset": "Content/Imported/MaterialDatabase/AirDucts/MI_AirDuct01_V_Clean.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/AirDucts/AirDucts.upk#MI_AirDuct_PARENT",
+   "object": "MI_AirDuct_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "AirDuct_PARENT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/AirDucts/AirDucts/Texture2D/AirDuct01_V_DiffSpec.tga",
+   "extracted_sha256": "cf1c825207bb4254c920e43c3e01d8f4e7c213c58ec12ee235992fc66200c5a3",
+   "output_file": "Content/Extracted/MaterialDatabase/AirDucts/AirDucts/Texture2D/AirDuct01_V_DiffSpec.tga",
+   "output_sha256": "cf1c825207bb4254c920e43c3e01d8f4e7c213c58ec12ee235992fc66200c5a3",
+   "uasset": "Content/Imported/MaterialDatabase/AirDucts/MI_AirDuct_PARENT.uasset"
+  }
+ ]
+}

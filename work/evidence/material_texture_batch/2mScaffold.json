@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "2mScaffold",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/ProvingGrounds/PropMaterials/2mScaffold.upk",
+ "source_sha256": "6dbc48ecbdcdf013ddef2241d7ae34cdfef3b96d73139d46ba948d18351a06b5",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/ProvingGrounds/PropMaterials/2mScaffold.upk#FreewayScafolding_DiffSpec",
+   "object": "FreewayScafolding_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/2mScaffold/FinancialFreewayScafolding/Texture2D/FreewayScafolding_DiffSpec.tga",
+   "extracted_sha256": "3da606e87edc515151ff7a5fea552957fabaab687aae05e48200d77f77b4de81",
+   "output_file": "Content/Extracted/MaterialDatabase/2mScaffold/FinancialFreewayScafolding/Texture2D/FreewayScafolding_DiffSpec.tga",
+   "output_sha256": "3da606e87edc515151ff7a5fea552957fabaab687aae05e48200d77f77b4de81",
+   "uasset": "Content/Imported/MaterialDatabase/2mScaffold/FreewayScafolding_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/ProvingGrounds/PropMaterials/2mScaffold.upk#FreewayScafolding_Norm",
+   "object": "FreewayScafolding_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/2mScaffold/FinancialFreewayScafolding/Texture2D/FreewayScafolding_Norm.tga",
+   "extracted_sha256": "2e15619d06c466482892ad0144cc3cce9a0f77ba96e35fea6139ecac07f9cfbc",
+   "output_file": "Content/Extracted/MaterialDatabase/2mScaffold/FinancialFreewayScafolding/Texture2D/FreewayScafolding_Norm.tga",
+   "output_sha256": "2e15619d06c466482892ad0144cc3cce9a0f77ba96e35fea6139ecac07f9cfbc",
+   "uasset": "Content/Imported/MaterialDatabase/2mScaffold/FreewayScafolding_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/ProvingGrounds/PropMaterials/2mScaffold.upk#MI_2mScaffold_MAT",
+   "object": "MI_2mScaffold_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "2mScaffold_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/2mScaffold/FinancialFreewayScafolding/Texture2D/FreewayScafolding_DiffSpec.tga",
+   "extracted_sha256": "3da606e87edc515151ff7a5fea552957fabaab687aae05e48200d77f77b4de81",
+   "output_file": "Content/Extracted/MaterialDatabase/2mScaffold/FinancialFreewayScafolding/Texture2D/FreewayScafolding_DiffSpec.tga",
+   "output_sha256": "3da606e87edc515151ff7a5fea552957fabaab687aae05e48200d77f77b4de81",
+   "uasset": "Content/Imported/MaterialDatabase/2mScaffold/MI_2mScaffold_MAT.uasset"
+  }
+ ]
+}

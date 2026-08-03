@@ -1,0 +1,76 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "NewsRacksWire",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/NewsRacksWire.upk",
+ "source_sha256": "b654b979b63f90f4ba799f0c4814500de2306da076d07f3c8393365815422a90",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/NewsRacksWire.upk#MI_NewsRacksWire_Damage_Mat",
+   "object": "MI_NewsRacksWire_Damage_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "NewsRacksWire_Damage_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/NewsRacksWire/NewsRacksWire/Texture2D/NewsRacksWire_DiffSpec.tga",
+   "extracted_sha256": "9dceebbe64b88357d186a4f49a0f29c2b277a33943d69fafef7411b00e36d021",
+   "output_file": "Content/Extracted/MaterialDatabase/NewsRacksWire/NewsRacksWire/Texture2D/NewsRacksWire_DiffSpec.tga",
+   "output_sha256": "9dceebbe64b88357d186a4f49a0f29c2b277a33943d69fafef7411b00e36d021",
+   "uasset": "Content/Imported/MaterialDatabase/NewsRacksWire/MI_NewsRacksWire_Damage_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/NewsRacksWire.upk#MI_NewsRacksWire_Mat",
+   "object": "MI_NewsRacksWire_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "NewsRacksWire_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/NewsRacksWire/NewsRacksWire/Texture2D/NewsRacksWire_DiffSpec.tga",
+   "extracted_sha256": "9dceebbe64b88357d186a4f49a0f29c2b277a33943d69fafef7411b00e36d021",
+   "output_file": "Content/Extracted/MaterialDatabase/NewsRacksWire/NewsRacksWire/Texture2D/NewsRacksWire_DiffSpec.tga",
+   "output_sha256": "9dceebbe64b88357d186a4f49a0f29c2b277a33943d69fafef7411b00e36d021",
+   "uasset": "Content/Imported/MaterialDatabase/NewsRacksWire/MI_NewsRacksWire_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/NewsRacksWire.upk#NewsRacksWire_DiffSpec",
+   "object": "NewsRacksWire_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/NewsRacksWire/NewsRacksWire/Texture2D/NewsRacksWire_DiffSpec.tga",
+   "extracted_sha256": "9dceebbe64b88357d186a4f49a0f29c2b277a33943d69fafef7411b00e36d021",
+   "output_file": "Content/Extracted/MaterialDatabase/NewsRacksWire/NewsRacksWire/Texture2D/NewsRacksWire_DiffSpec.tga",
+   "output_sha256": "9dceebbe64b88357d186a4f49a0f29c2b277a33943d69fafef7411b00e36d021",
+   "uasset": "Content/Imported/MaterialDatabase/NewsRacksWire/NewsRacksWire_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/NewsRacksWire.upk#NewsRacksWire_Norm",
+   "object": "NewsRacksWire_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/NewsRacksWire/NewsRacksWire/Texture2D/NewsRacksWire_Norm.tga",
+   "extracted_sha256": "df77bc72626521986190d280535a6b4681d4b02aba8ac4fa3b4ccdcf03d8b0ce",
+   "output_file": "Content/Extracted/MaterialDatabase/NewsRacksWire/NewsRacksWire/Texture2D/NewsRacksWire_Norm.tga",
+   "output_sha256": "df77bc72626521986190d280535a6b4681d4b02aba8ac4fa3b4ccdcf03d8b0ce",
+   "uasset": "Content/Imported/MaterialDatabase/NewsRacksWire/NewsRacksWire_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/NewsRacksWire.upk#NewsRacksWire_Opac",
+   "object": "NewsRacksWire_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/NewsRacksWire/NewsRacksWire/Texture2D/NewsRacksWire_Opac.tga",
+   "extracted_sha256": "f39b7c9d06166d630410ffbc9169330f8e15809d7d8509b7f85e25b5c0b4fe1f",
+   "output_file": "Content/Extracted/MaterialDatabase/NewsRacksWire/NewsRacksWire/Texture2D/NewsRacksWire_Opac.tga",
+   "output_sha256": "f39b7c9d06166d630410ffbc9169330f8e15809d7d8509b7f85e25b5c0b4fe1f",
+   "uasset": "Content/Imported/MaterialDatabase/NewsRacksWire/NewsRacksWire_Opac.uasset"
+  }
+ ]
+}

@@ -1,0 +1,60 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FenceUVTest",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/TestMaterials/FenceUVTest.upk",
+ "source_sha256": "ba6a865f6de7c37e217c61d5cb2edc91d523e0d6cdb0998914251f1f1b00cbb2",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/TestMaterials/FenceUVTest.upk#FenceUVTest",
+   "object": "FenceUVTest",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FenceUVTest/FenceUVTest/Texture2D/FenceUVTest.tga",
+   "extracted_sha256": "e1ba1f333df5aa761ce6d903dc3425a102efaf52258802f74e553bf368b38275",
+   "output_file": "Content/Extracted/MaterialDatabase/FenceUVTest/FenceUVTest/Texture2D/FenceUVTest.tga",
+   "output_sha256": "e1ba1f333df5aa761ce6d903dc3425a102efaf52258802f74e553bf368b38275",
+   "uasset": "Content/Imported/MaterialDatabase/FenceUVTest/FenceUVTest.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TestMaterials/FenceUVTest.upk#MI_CheckerTest",
+   "object": "MI_CheckerTest",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CheckerTest",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FenceUVTest/FenceUVTest/Texture2D/TestMaterial.tga",
+   "extracted_sha256": "c5f37aa48bbdb670ecff0fd679dc93b01e8c14a7703f6b3fca00c94ade9b9c46",
+   "output_file": "Content/Extracted/MaterialDatabase/FenceUVTest/FenceUVTest/Texture2D/TestMaterial.tga",
+   "output_sha256": "c5f37aa48bbdb670ecff0fd679dc93b01e8c14a7703f6b3fca00c94ade9b9c46",
+   "uasset": "Content/Imported/MaterialDatabase/FenceUVTest/MI_CheckerTest.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TestMaterials/FenceUVTest.upk#MI_FenceUVTest",
+   "object": "MI_FenceUVTest",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FenceUVTest",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FenceUVTest/FenceUVTest/Texture2D/FenceUVTest.tga",
+   "extracted_sha256": "e1ba1f333df5aa761ce6d903dc3425a102efaf52258802f74e553bf368b38275",
+   "output_file": "Content/Extracted/MaterialDatabase/FenceUVTest/FenceUVTest/Texture2D/FenceUVTest.tga",
+   "output_sha256": "e1ba1f333df5aa761ce6d903dc3425a102efaf52258802f74e553bf368b38275",
+   "uasset": "Content/Imported/MaterialDatabase/FenceUVTest/MI_FenceUVTest.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TestMaterials/FenceUVTest.upk#TestMaterial",
+   "object": "TestMaterial",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FenceUVTest/FenceUVTest/Texture2D/TestMaterial.tga",
+   "extracted_sha256": "c5f37aa48bbdb670ecff0fd679dc93b01e8c14a7703f6b3fca00c94ade9b9c46",
+   "output_file": "Content/Extracted/MaterialDatabase/FenceUVTest/FenceUVTest/Texture2D/TestMaterial.tga",
+   "output_sha256": "c5f37aa48bbdb670ecff0fd679dc93b01e8c14a7703f6b3fca00c94ade9b9c46",
+   "uasset": "Content/Imported/MaterialDatabase/FenceUVTest/TestMaterial.uasset"
+  }
+ ]
+}

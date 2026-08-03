@@ -1,0 +1,34 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "GraffitiMaps",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/GraffitiMaps.upk",
+ "source_sha256": "e8bff07b72f7ddf80761adaabe508bbe123205b204ec7a038d119dfc4d77dded",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/GraffitiMaps.upk#EnforcementPatrolArea",
+   "object": "EnforcementPatrolArea",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GraffitiMaps/GraffitiMaps/Texture2D/EnforcementPatrolArea.tga",
+   "extracted_sha256": "6ff4abb275f23e524a4a69e42a422da40f53389816cb0e114d5054b04baccf26",
+   "output_file": "Content/Extracted/MaterialDatabase/GraffitiMaps/GraffitiMaps/Texture2D/EnforcementPatrolArea.tga",
+   "output_sha256": "6ff4abb275f23e524a4a69e42a422da40f53389816cb0e114d5054b04baccf26",
+   "uasset": "Content/Imported/MaterialDatabase/GraffitiMaps/EnforcementPatrolArea.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/GraffitiMaps.upk#MI_FullWallGraf_EPA",
+   "object": "MI_FullWallGraf_EPA",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FullWallGraf_EPA",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GraffitiMaps/GraffitiMaps/Texture2D/EnforcementPatrolArea.tga",
+   "extracted_sha256": "6ff4abb275f23e524a4a69e42a422da40f53389816cb0e114d5054b04baccf26",
+   "output_file": "Content/Extracted/MaterialDatabase/GraffitiMaps/GraffitiMaps/Texture2D/EnforcementPatrolArea.tga",
+   "output_sha256": "6ff4abb275f23e524a4a69e42a422da40f53389816cb0e114d5054b04baccf26",
+   "uasset": "Content/Imported/MaterialDatabase/GraffitiMaps/MI_FullWallGraf_EPA.uasset"
+  }
+ ]
+}

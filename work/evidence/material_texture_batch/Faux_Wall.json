@@ -1,0 +1,88 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Faux_Wall",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/Faux_Wall/Faux_Wall.upk",
+ "source_sha256": "8789244ea2156d362d96057a4cf15f2c4d2d0a45007da46848512be6a4c96bdf",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Faux_Wall/Faux_Wall.upk#MI_Faux_Wall_DarkBlue",
+   "object": "MI_Faux_Wall_DarkBlue",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Faux_Wall_DarkBlue",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Faux_Wall/Faux_Wall/Texture2D/WallTex_DiffSpec.tga",
+   "extracted_sha256": "dc60b781c97e50133399e78f62d53927193ace329d11d7e21148de230395de60",
+   "output_file": "Content/Extracted/MaterialDatabase/Faux_Wall/Faux_Wall/Texture2D/WallTex_DiffSpec.tga",
+   "output_sha256": "dc60b781c97e50133399e78f62d53927193ace329d11d7e21148de230395de60",
+   "uasset": "Content/Imported/MaterialDatabase/Faux_Wall/MI_Faux_Wall_DarkBlue.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Faux_Wall/Faux_Wall.upk#MI_Faux_Wall_DarkRed",
+   "object": "MI_Faux_Wall_DarkRed",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Faux_Wall_DarkRed",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Faux_Wall/Faux_Wall/Texture2D/WallTex_DiffSpec.tga",
+   "extracted_sha256": "dc60b781c97e50133399e78f62d53927193ace329d11d7e21148de230395de60",
+   "output_file": "Content/Extracted/MaterialDatabase/Faux_Wall/Faux_Wall/Texture2D/WallTex_DiffSpec.tga",
+   "output_sha256": "dc60b781c97e50133399e78f62d53927193ace329d11d7e21148de230395de60",
+   "uasset": "Content/Imported/MaterialDatabase/Faux_Wall/MI_Faux_Wall_DarkRed.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Faux_Wall/Faux_Wall.upk#MI_Faux_Wall_Mat",
+   "object": "MI_Faux_Wall_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Faux_Wall_Mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Faux_Wall/Faux_Wall/Texture2D/WallTex_DiffSpec.tga",
+   "extracted_sha256": "dc60b781c97e50133399e78f62d53927193ace329d11d7e21148de230395de60",
+   "output_file": "Content/Extracted/MaterialDatabase/Faux_Wall/Faux_Wall/Texture2D/WallTex_DiffSpec.tga",
+   "output_sha256": "dc60b781c97e50133399e78f62d53927193ace329d11d7e21148de230395de60",
+   "uasset": "Content/Imported/MaterialDatabase/Faux_Wall/MI_Faux_Wall_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Faux_Wall/Faux_Wall.upk#MI_Faux_Wall_Red",
+   "object": "MI_Faux_Wall_Red",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Faux_Wall_Red",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Faux_Wall/Faux_Wall/Texture2D/WallTex_DiffSpec_Red.tga",
+   "extracted_sha256": "a1a5c3813cf81a54545d52c4695560c14ca9571f9541c8ba242c0ec727310efa",
+   "output_file": "Content/Extracted/MaterialDatabase/Faux_Wall/Faux_Wall/Texture2D/WallTex_DiffSpec_Red.tga",
+   "output_sha256": "a1a5c3813cf81a54545d52c4695560c14ca9571f9541c8ba242c0ec727310efa",
+   "uasset": "Content/Imported/MaterialDatabase/Faux_Wall/MI_Faux_Wall_Red.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Faux_Wall/Faux_Wall.upk#WallTex_DiffSpec",
+   "object": "WallTex_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Faux_Wall/Faux_Wall/Texture2D/WallTex_DiffSpec.tga",
+   "extracted_sha256": "dc60b781c97e50133399e78f62d53927193ace329d11d7e21148de230395de60",
+   "output_file": "Content/Extracted/MaterialDatabase/Faux_Wall/Faux_Wall/Texture2D/WallTex_DiffSpec.tga",
+   "output_sha256": "dc60b781c97e50133399e78f62d53927193ace329d11d7e21148de230395de60",
+   "uasset": "Content/Imported/MaterialDatabase/Faux_Wall/WallTex_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Faux_Wall/Faux_Wall.upk#WallTex_DiffSpec_Red",
+   "object": "WallTex_DiffSpec_Red",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Faux_Wall/Faux_Wall/Texture2D/WallTex_DiffSpec_Red.tga",
+   "extracted_sha256": "a1a5c3813cf81a54545d52c4695560c14ca9571f9541c8ba242c0ec727310efa",
+   "output_file": "Content/Extracted/MaterialDatabase/Faux_Wall/Faux_Wall/Texture2D/WallTex_DiffSpec_Red.tga",
+   "output_sha256": "a1a5c3813cf81a54545d52c4695560c14ca9571f9541c8ba242c0ec727310efa",
+   "uasset": "Content/Imported/MaterialDatabase/Faux_Wall/WallTex_DiffSpec_Red.uasset"
+  }
+ ]
+}

@@ -1,0 +1,139 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "DJ_Equipment",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/EnforcerSocialDistrict/PropMaterials/DJ_Equipment.upk",
+ "source_sha256": "9c8d399f407e31b86e1616aa52ade17ba97fa80f244d8867a1ef39ed2c630c04",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/DJ_Equipment.upk#DJ_Booth",
+   "object": "DJ_Booth",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/DJ_Equipment/DJ_Equipment/Texture2D/DJ_Booth.tga",
+   "extracted_sha256": "3bd2f1ff9ec25d2dff1d041b43fc67a5b3a3b33ee2cd573a656655c51d2770e8",
+   "output_file": "Content/Extracted/MaterialDatabase/DJ_Equipment/DJ_Equipment/Texture2D/DJ_Booth.tga",
+   "output_sha256": "3bd2f1ff9ec25d2dff1d041b43fc67a5b3a3b33ee2cd573a656655c51d2770e8",
+   "uasset": "Content/Imported/MaterialDatabase/DJ_Equipment/DJ_Booth.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/DJ_Equipment.upk#DJ_Booth2",
+   "object": "DJ_Booth2",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/DJ_Equipment/DJ_Equipment/Texture2D/DJ_Booth2.tga",
+   "extracted_sha256": "485a404601430ba2595a3ae993d7f29d772736370ad67fcb949f44b475b087d2",
+   "output_file": "Content/Extracted/MaterialDatabase/DJ_Equipment/DJ_Equipment/Texture2D/DJ_Booth2.tga",
+   "output_sha256": "485a404601430ba2595a3ae993d7f29d772736370ad67fcb949f44b475b087d2",
+   "uasset": "Content/Imported/MaterialDatabase/DJ_Equipment/DJ_Booth2.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/DJ_Equipment.upk#DJ_Box",
+   "object": "DJ_Box",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/DJ_Equipment/DJ_Equipment/Texture2D/DJ_Box.tga",
+   "extracted_sha256": "bfc1804016a714534bdc07c5fa13ff98e2994548b93f1053d473b44e9d55c9ab",
+   "output_file": "Content/Extracted/MaterialDatabase/DJ_Equipment/DJ_Equipment/Texture2D/DJ_Box.tga",
+   "output_sha256": "bfc1804016a714534bdc07c5fa13ff98e2994548b93f1053d473b44e9d55c9ab",
+   "uasset": "Content/Imported/MaterialDatabase/DJ_Equipment/DJ_Box.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/DJ_Equipment.upk#MI_DJ_Booth_01",
+   "object": "MI_DJ_Booth_01",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "DJ_Booth_01",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/DJ_Equipment/DJ_Equipment/Texture2D/DJ_Booth.tga",
+   "extracted_sha256": "3bd2f1ff9ec25d2dff1d041b43fc67a5b3a3b33ee2cd573a656655c51d2770e8",
+   "output_file": "Content/Extracted/MaterialDatabase/DJ_Equipment/DJ_Equipment/Texture2D/DJ_Booth.tga",
+   "output_sha256": "3bd2f1ff9ec25d2dff1d041b43fc67a5b3a3b33ee2cd573a656655c51d2770e8",
+   "uasset": "Content/Imported/MaterialDatabase/DJ_Equipment/MI_DJ_Booth_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/DJ_Equipment.upk#MI_DJ_BOOTH_02",
+   "object": "MI_DJ_BOOTH_02",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "DJ_BOOTH_02",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/DJ_Equipment/DJ_Equipment/Texture2D/DJ_Booth2.tga",
+   "extracted_sha256": "485a404601430ba2595a3ae993d7f29d772736370ad67fcb949f44b475b087d2",
+   "output_file": "Content/Extracted/MaterialDatabase/DJ_Equipment/DJ_Equipment/Texture2D/DJ_Booth2.tga",
+   "output_sha256": "485a404601430ba2595a3ae993d7f29d772736370ad67fcb949f44b475b087d2",
+   "uasset": "Content/Imported/MaterialDatabase/DJ_Equipment/MI_DJ_BOOTH_02.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/DJ_Equipment.upk#MI_DJ_RecordBoxs",
+   "object": "MI_DJ_RecordBoxs",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "DJ_RecordBoxs",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/DJ_Equipment/DJ_Equipment/Texture2D/DJ_Box.tga",
+   "extracted_sha256": "bfc1804016a714534bdc07c5fa13ff98e2994548b93f1053d473b44e9d55c9ab",
+   "output_file": "Content/Extracted/MaterialDatabase/DJ_Equipment/DJ_Equipment/Texture2D/DJ_Box.tga",
+   "output_sha256": "bfc1804016a714534bdc07c5fa13ff98e2994548b93f1053d473b44e9d55c9ab",
+   "uasset": "Content/Imported/MaterialDatabase/DJ_Equipment/MI_DJ_RecordBoxs.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/DJ_Equipment.upk#MI_NeonTest_Material",
+   "object": "MI_NeonTest_Material",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "NeonTest_Material",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/DJ_Equipment/DJ_Equipment/Texture2D/DJ_Booth.tga",
+   "extracted_sha256": "3bd2f1ff9ec25d2dff1d041b43fc67a5b3a3b33ee2cd573a656655c51d2770e8",
+   "output_file": "Content/Extracted/MaterialDatabase/DJ_Equipment/DJ_Equipment/Texture2D/DJ_Booth.tga",
+   "output_sha256": "3bd2f1ff9ec25d2dff1d041b43fc67a5b3a3b33ee2cd573a656655c51d2770e8",
+   "uasset": "Content/Imported/MaterialDatabase/DJ_Equipment/MI_NeonTest_Material.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/DJ_Equipment.upk#MI_Speakers_Large_Material",
+   "object": "MI_Speakers_Large_Material",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Speakers_Large_Material",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/DJ_Equipment/DJ_Equipment/Texture2D/Speaker.tga",
+   "extracted_sha256": "81f395130fa92b2411332faab15bee291cb01e7205e075fcb6605f6e76131f76",
+   "output_file": "Content/Extracted/MaterialDatabase/DJ_Equipment/DJ_Equipment/Texture2D/Speaker.tga",
+   "output_sha256": "81f395130fa92b2411332faab15bee291cb01e7205e075fcb6605f6e76131f76",
+   "uasset": "Content/Imported/MaterialDatabase/DJ_Equipment/MI_Speakers_Large_Material.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/DJ_Equipment.upk#Speaker",
+   "object": "Speaker",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/DJ_Equipment/DJ_Equipment/Texture2D/Speaker.tga",
+   "extracted_sha256": "81f395130fa92b2411332faab15bee291cb01e7205e075fcb6605f6e76131f76",
+   "output_file": "Content/Extracted/MaterialDatabase/DJ_Equipment/DJ_Equipment/Texture2D/Speaker.tga",
+   "output_sha256": "81f395130fa92b2411332faab15bee291cb01e7205e075fcb6605f6e76131f76",
+   "uasset": "Content/Imported/MaterialDatabase/DJ_Equipment/Speaker.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/DJ_Equipment.upk#Speaker_NRM",
+   "object": "Speaker_NRM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/DJ_Equipment/DJ_Equipment/Texture2D/Speaker_NRM.tga",
+   "extracted_sha256": "fc59cf9edce6431fd992503fa039a2adfeda8790e8c48741199f34eb14fa8d3c",
+   "output_file": "Content/Extracted/MaterialDatabase/DJ_Equipment/DJ_Equipment/Texture2D/Speaker_NRM.tga",
+   "output_sha256": "fc59cf9edce6431fd992503fa039a2adfeda8790e8c48741199f34eb14fa8d3c",
+   "uasset": "Content/Imported/MaterialDatabase/DJ_Equipment/Speaker_NRM.uasset"
+  }
+ ]
+}

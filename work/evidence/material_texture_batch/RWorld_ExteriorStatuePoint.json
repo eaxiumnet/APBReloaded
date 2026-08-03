@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "RWorld_ExteriorStatuePoint",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/RWorldSocialDistrict/Props/RWorld_ExteriorStatuePoint.upk",
+ "source_sha256": "6f0016fd01c38af58af4e95f7fe8e93660a9e1f792c7ae385e3e2a1ea44c31c0",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_ExteriorStatuePoint.upk#ExteriorStatuePoint_Diff",
+   "object": "ExteriorStatuePoint_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_ExteriorStatuePoint/RWorld_ExteriorStatuePoint/Texture2D/ExteriorStatuePoint_Diff.tga",
+   "extracted_sha256": "dede9f4bdb9e2503c02b6ff3ef512037e9b2781fe6082b47c9456751bd2c43dd",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_ExteriorStatuePoint/RWorld_ExteriorStatuePoint/Texture2D/ExteriorStatuePoint_Diff.tga",
+   "output_sha256": "dede9f4bdb9e2503c02b6ff3ef512037e9b2781fe6082b47c9456751bd2c43dd",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_ExteriorStatuePoint/ExteriorStatuePoint_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_ExteriorStatuePoint.upk#ExteriorStatuePoint_Norm",
+   "object": "ExteriorStatuePoint_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_ExteriorStatuePoint/RWorld_ExteriorStatuePoint/Texture2D/ExteriorStatuePoint_Norm.tga",
+   "extracted_sha256": "0abf469c0fbcb92bc10791b084fb4d7c3a21c60d9782b11a52222a61ac4086cd",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_ExteriorStatuePoint/RWorld_ExteriorStatuePoint/Texture2D/ExteriorStatuePoint_Norm.tga",
+   "output_sha256": "0abf469c0fbcb92bc10791b084fb4d7c3a21c60d9782b11a52222a61ac4086cd",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_ExteriorStatuePoint/ExteriorStatuePoint_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_ExteriorStatuePoint.upk#MI_ExteriorStatuePoint_MAT",
+   "object": "MI_ExteriorStatuePoint_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "ExteriorStatuePoint_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_ExteriorStatuePoint/RWorld_ExteriorStatuePoint/Texture2D/ExteriorStatuePoint_Diff.tga",
+   "extracted_sha256": "dede9f4bdb9e2503c02b6ff3ef512037e9b2781fe6082b47c9456751bd2c43dd",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_ExteriorStatuePoint/RWorld_ExteriorStatuePoint/Texture2D/ExteriorStatuePoint_Diff.tga",
+   "output_sha256": "dede9f4bdb9e2503c02b6ff3ef512037e9b2781fe6082b47c9456751bd2c43dd",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_ExteriorStatuePoint/MI_ExteriorStatuePoint_MAT.uasset"
+  }
+ ]
+}

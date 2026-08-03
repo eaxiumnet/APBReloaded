@@ -1,0 +1,61 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FerryHull",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/WaterfrontDistrict/Ferry/FerryHull.upk",
+ "source_sha256": "c77d15ca118a79faa9b4c104e5818114de692eb90eaa7250665faee12c9a8ae4",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/Ferry/FerryHull.upk#FerryFloor_NormDiff",
+   "object": "FerryFloor_NormDiff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FerryHull/FerryFloor/Texture2D/FerryFloor_NormDiff.tga",
+   "extracted_sha256": "b0fbd3a857ae40400ea70d9c32dda9dd6dce6ce8075e2d79343ba1813191eaf0",
+   "output_file": "Content/Extracted/MaterialDatabase/FerryHull/FerryFloor/Texture2D/FerryFloor_NormDiff.tga",
+   "output_sha256": "b0fbd3a857ae40400ea70d9c32dda9dd6dce6ce8075e2d79343ba1813191eaf0",
+   "uasset": "Content/Imported/MaterialDatabase/FerryHull/FerryFloor_NormDiff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/Ferry/FerryHull.upk#MI_FerryFloor_Mat",
+   "object": "MI_FerryFloor_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FerryFloor_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FerryHull/FerryFloor/Texture2D/FerryFloor_NormDiff.tga",
+   "extracted_sha256": "b0fbd3a857ae40400ea70d9c32dda9dd6dce6ce8075e2d79343ba1813191eaf0",
+   "output_file": "Content/Extracted/MaterialDatabase/FerryHull/FerryFloor/Texture2D/FerryFloor_NormDiff.tga",
+   "output_sha256": "b0fbd3a857ae40400ea70d9c32dda9dd6dce6ce8075e2d79343ba1813191eaf0",
+   "uasset": "Content/Imported/MaterialDatabase/FerryHull/MI_FerryFloor_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/Ferry/FerryHull.upk#MI_FerryHull_Mat",
+   "object": "MI_FerryHull_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FerryHull_Mat",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FerryHull/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "extracted_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "output_file": "Content/Extracted/MaterialDatabase/FerryHull/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "output_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "uasset": "Content/Imported/MaterialDatabase/FerryHull/MI_FerryHull_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/Ferry/FerryHull.upk#PaintedMetal_Norm",
+   "object": "PaintedMetal_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FerryHull/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "extracted_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "output_file": "Content/Extracted/MaterialDatabase/FerryHull/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "output_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "uasset": "Content/Imported/MaterialDatabase/FerryHull/PaintedMetal_Norm.uasset"
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FinancialConstructionPipes",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/PropMaterials/FinancialConstructionPipes.upk",
+ "source_sha256": "140fab5fc454473d5efde7b3c1e07fb9082742ccd13de36cfe4379a942c6a49e",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialConstructionPipes.upk#FinancialConstructionPipes_DiffSpec",
+   "object": "FinancialConstructionPipes_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialConstructionPipes/FinancialConstructionPipes/Texture2D/FinancialConstructionPipes_DiffSpec.tga",
+   "extracted_sha256": "d743a8044e05d40848af5cdf02764f0f2a998c29b9f1ea9bba3eb3f16a7aee39",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialConstructionPipes/FinancialConstructionPipes/Texture2D/FinancialConstructionPipes_DiffSpec.tga",
+   "output_sha256": "d743a8044e05d40848af5cdf02764f0f2a998c29b9f1ea9bba3eb3f16a7aee39",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialConstructionPipes/FinancialConstructionPipes_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialConstructionPipes.upk#MI_FinancialConstructionPipes_Mat",
+   "object": "MI_FinancialConstructionPipes_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialConstructionPipes_Mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialConstructionPipes/FinancialConstructionPipes/Texture2D/FinancialConstructionPipes_DiffSpec.tga",
+   "extracted_sha256": "d743a8044e05d40848af5cdf02764f0f2a998c29b9f1ea9bba3eb3f16a7aee39",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialConstructionPipes/FinancialConstructionPipes/Texture2D/FinancialConstructionPipes_DiffSpec.tga",
+   "output_sha256": "d743a8044e05d40848af5cdf02764f0f2a998c29b9f1ea9bba3eb3f16a7aee39",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialConstructionPipes/MI_FinancialConstructionPipes_Mat.uasset"
+  }
+ ]
+}

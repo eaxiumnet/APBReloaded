@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "RWorld_SkateRamps",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/RWorldSocialDistrict/Props/RWorld_SkateRamps.upk",
+ "source_sha256": "3820fa1b874fc0b41b2bc19e007fb4a51adbd180156c42c83eb2b0d038b71875",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_SkateRamps.upk#MI_RWorld_SkateRamps_Mat",
+   "object": "MI_RWorld_SkateRamps_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RWorld_SkateRamps_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_SkateRamps/RWorld_SkateRamps/Texture2D/SkateRamps_DiffSpec.tga",
+   "extracted_sha256": "b6c04f7993b7a01e953f6c1a1320448488e26ee8f124dbe889a43bc9922fae04",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_SkateRamps/RWorld_SkateRamps/Texture2D/SkateRamps_DiffSpec.tga",
+   "output_sha256": "b6c04f7993b7a01e953f6c1a1320448488e26ee8f124dbe889a43bc9922fae04",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_SkateRamps/MI_RWorld_SkateRamps_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_SkateRamps.upk#SkateRamps_DiffSpec",
+   "object": "SkateRamps_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_SkateRamps/RWorld_SkateRamps/Texture2D/SkateRamps_DiffSpec.tga",
+   "extracted_sha256": "b6c04f7993b7a01e953f6c1a1320448488e26ee8f124dbe889a43bc9922fae04",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_SkateRamps/RWorld_SkateRamps/Texture2D/SkateRamps_DiffSpec.tga",
+   "output_sha256": "b6c04f7993b7a01e953f6c1a1320448488e26ee8f124dbe889a43bc9922fae04",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_SkateRamps/SkateRamps_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_SkateRamps.upk#SkateRamps_Norm",
+   "object": "SkateRamps_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_SkateRamps/RWorld_SkateRamps/Texture2D/SkateRamps_Norm.tga",
+   "extracted_sha256": "6f6e8df4e3ada2e55fb3b2c98099eb7de495a9aebd7144870dc2fc241b8304e8",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_SkateRamps/RWorld_SkateRamps/Texture2D/SkateRamps_Norm.tga",
+   "output_sha256": "6f6e8df4e3ada2e55fb3b2c98099eb7de495a9aebd7144870dc2fc241b8304e8",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_SkateRamps/SkateRamps_Norm.uasset"
+  }
+ ]
+}

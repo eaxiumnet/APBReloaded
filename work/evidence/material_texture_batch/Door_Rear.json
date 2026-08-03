@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Door_Rear",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/FeatureMaterials/Door_Rear.upk",
+ "source_sha256": "3f4273e0bab064a67494da0ef29e10e7f7c9a3660cf8f3b18f8aaab789a9138b",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Door_Rear.upk#Door_Rear_DiffSpec",
+   "object": "Door_Rear_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Door_Rear/Door_Rear/Texture2D/Door_Rear_DiffSpec.tga",
+   "extracted_sha256": "1757411762740259e758c6f604a3de3ceacc6d7e4f3fe93e2941e115ecefa56c",
+   "output_file": "Content/Extracted/MaterialDatabase/Door_Rear/Door_Rear/Texture2D/Door_Rear_DiffSpec.tga",
+   "output_sha256": "1757411762740259e758c6f604a3de3ceacc6d7e4f3fe93e2941e115ecefa56c",
+   "uasset": "Content/Imported/MaterialDatabase/Door_Rear/Door_Rear_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Door_Rear.upk#Door_Rear_Norm",
+   "object": "Door_Rear_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Door_Rear/Door_Rear/Texture2D/Door_Rear_Norm.tga",
+   "extracted_sha256": "e0da29626f5ac67a8e25238d7c0320d5e5479f0ff2dc0807c985ef86a885e02a",
+   "output_file": "Content/Extracted/MaterialDatabase/Door_Rear/Door_Rear/Texture2D/Door_Rear_Norm.tga",
+   "output_sha256": "e0da29626f5ac67a8e25238d7c0320d5e5479f0ff2dc0807c985ef86a885e02a",
+   "uasset": "Content/Imported/MaterialDatabase/Door_Rear/Door_Rear_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Door_Rear.upk#MI_Door_Rear_PaintedWood",
+   "object": "MI_Door_Rear_PaintedWood",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Door_Rear_PaintedWood",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Door_Rear/Door_Rear/Texture2D/Door_Rear_DiffSpec.tga",
+   "extracted_sha256": "1757411762740259e758c6f604a3de3ceacc6d7e4f3fe93e2941e115ecefa56c",
+   "output_file": "Content/Extracted/MaterialDatabase/Door_Rear/Door_Rear/Texture2D/Door_Rear_DiffSpec.tga",
+   "output_sha256": "1757411762740259e758c6f604a3de3ceacc6d7e4f3fe93e2941e115ecefa56c",
+   "uasset": "Content/Imported/MaterialDatabase/Door_Rear/MI_Door_Rear_PaintedWood.uasset"
+  }
+ ]
+}

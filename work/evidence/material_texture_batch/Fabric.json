@@ -1,0 +1,118 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Fabric",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/ToBeRemoved/Fabric.upk",
+ "source_sha256": "5a3b77bc23e1260aa36f750c821f8f258a128bfcf14a24d0aff1d5da748d221e",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/ToBeRemoved/Fabric.upk#Canvas_DiffSpec",
+   "object": "Canvas_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Fabric/Fabric/Texture2D/Canvas_DiffSpec.tga",
+   "extracted_sha256": "2bdba46b02a8e13753eeb2b231be72574efdadccc3068875715bce801347af14",
+   "output_file": "Content/Extracted/MaterialDatabase/Fabric/Fabric/Texture2D/Canvas_DiffSpec.tga",
+   "output_sha256": "2bdba46b02a8e13753eeb2b231be72574efdadccc3068875715bce801347af14",
+   "uasset": "Content/Imported/MaterialDatabase/Fabric/Canvas_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/ToBeRemoved/Fabric.upk#MI_Canvas_Black",
+   "object": "MI_Canvas_Black",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Canvas_Black",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Fabric/Fabric/Texture2D/Canvas_DiffSpec.tga",
+   "extracted_sha256": "2bdba46b02a8e13753eeb2b231be72574efdadccc3068875715bce801347af14",
+   "output_file": "Content/Extracted/MaterialDatabase/Fabric/Fabric/Texture2D/Canvas_DiffSpec.tga",
+   "output_sha256": "2bdba46b02a8e13753eeb2b231be72574efdadccc3068875715bce801347af14",
+   "uasset": "Content/Imported/MaterialDatabase/Fabric/MI_Canvas_Black.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/ToBeRemoved/Fabric.upk#MI_Canvas_Blue",
+   "object": "MI_Canvas_Blue",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Canvas_Blue",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Fabric/Fabric/Texture2D/Canvas_DiffSpec.tga",
+   "extracted_sha256": "2bdba46b02a8e13753eeb2b231be72574efdadccc3068875715bce801347af14",
+   "output_file": "Content/Extracted/MaterialDatabase/Fabric/Fabric/Texture2D/Canvas_DiffSpec.tga",
+   "output_sha256": "2bdba46b02a8e13753eeb2b231be72574efdadccc3068875715bce801347af14",
+   "uasset": "Content/Imported/MaterialDatabase/Fabric/MI_Canvas_Blue.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/ToBeRemoved/Fabric.upk#MI_Canvas_Green",
+   "object": "MI_Canvas_Green",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Canvas_Green",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Fabric/Fabric/Texture2D/Canvas_DiffSpec.tga",
+   "extracted_sha256": "2bdba46b02a8e13753eeb2b231be72574efdadccc3068875715bce801347af14",
+   "output_file": "Content/Extracted/MaterialDatabase/Fabric/Fabric/Texture2D/Canvas_DiffSpec.tga",
+   "output_sha256": "2bdba46b02a8e13753eeb2b231be72574efdadccc3068875715bce801347af14",
+   "uasset": "Content/Imported/MaterialDatabase/Fabric/MI_Canvas_Green.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/ToBeRemoved/Fabric.upk#MI_Canvas_PARENT",
+   "object": "MI_Canvas_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Canvas_PARENT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Fabric/Fabric/Texture2D/Canvas_DiffSpec.tga",
+   "extracted_sha256": "2bdba46b02a8e13753eeb2b231be72574efdadccc3068875715bce801347af14",
+   "output_file": "Content/Extracted/MaterialDatabase/Fabric/Fabric/Texture2D/Canvas_DiffSpec.tga",
+   "output_sha256": "2bdba46b02a8e13753eeb2b231be72574efdadccc3068875715bce801347af14",
+   "uasset": "Content/Imported/MaterialDatabase/Fabric/MI_Canvas_PARENT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/ToBeRemoved/Fabric.upk#MI_Canvas_Red",
+   "object": "MI_Canvas_Red",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Canvas_Red",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Fabric/Fabric/Texture2D/Canvas_DiffSpec.tga",
+   "extracted_sha256": "2bdba46b02a8e13753eeb2b231be72574efdadccc3068875715bce801347af14",
+   "output_file": "Content/Extracted/MaterialDatabase/Fabric/Fabric/Texture2D/Canvas_DiffSpec.tga",
+   "output_sha256": "2bdba46b02a8e13753eeb2b231be72574efdadccc3068875715bce801347af14",
+   "uasset": "Content/Imported/MaterialDatabase/Fabric/MI_Canvas_Red.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/ToBeRemoved/Fabric.upk#MI_Canvas_White",
+   "object": "MI_Canvas_White",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Canvas_White",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Fabric/Fabric/Texture2D/Canvas_DiffSpec.tga",
+   "extracted_sha256": "2bdba46b02a8e13753eeb2b231be72574efdadccc3068875715bce801347af14",
+   "output_file": "Content/Extracted/MaterialDatabase/Fabric/Fabric/Texture2D/Canvas_DiffSpec.tga",
+   "output_sha256": "2bdba46b02a8e13753eeb2b231be72574efdadccc3068875715bce801347af14",
+   "uasset": "Content/Imported/MaterialDatabase/Fabric/MI_Canvas_White.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/ToBeRemoved/Fabric.upk#MI_Canvas_Yellow",
+   "object": "MI_Canvas_Yellow",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Canvas_Yellow",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Fabric/Fabric/Texture2D/Canvas_DiffSpec.tga",
+   "extracted_sha256": "2bdba46b02a8e13753eeb2b231be72574efdadccc3068875715bce801347af14",
+   "output_file": "Content/Extracted/MaterialDatabase/Fabric/Fabric/Texture2D/Canvas_DiffSpec.tga",
+   "output_sha256": "2bdba46b02a8e13753eeb2b231be72574efdadccc3068875715bce801347af14",
+   "uasset": "Content/Imported/MaterialDatabase/Fabric/MI_Canvas_Yellow.uasset"
+  }
+ ]
+}

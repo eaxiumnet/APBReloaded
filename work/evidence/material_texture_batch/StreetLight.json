@@ -1,0 +1,60 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "StreetLight",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/StreetLight.upk",
+ "source_sha256": "711f61d496b6f09ecbf6b495b59a4b9e976091ab921ff5b4cfde8198abdf4998",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StreetLight.upk#MI_StreetLight",
+   "object": "MI_StreetLight",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StreetLight",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StreetLight/StreetLight/Texture2D/StreetLight_DiffSpec.tga",
+   "extracted_sha256": "682af092d99826c0373923a0ef303758525e60f0a7eee072e389d3f8bfc07a69",
+   "output_file": "Content/Extracted/MaterialDatabase/StreetLight/StreetLight/Texture2D/StreetLight_DiffSpec.tga",
+   "output_sha256": "682af092d99826c0373923a0ef303758525e60f0a7eee072e389d3f8bfc07a69",
+   "uasset": "Content/Imported/MaterialDatabase/StreetLight/MI_StreetLight.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StreetLight.upk#StreetLight_DiffSpec",
+   "object": "StreetLight_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StreetLight/StreetLight/Texture2D/StreetLight_DiffSpec.tga",
+   "extracted_sha256": "682af092d99826c0373923a0ef303758525e60f0a7eee072e389d3f8bfc07a69",
+   "output_file": "Content/Extracted/MaterialDatabase/StreetLight/StreetLight/Texture2D/StreetLight_DiffSpec.tga",
+   "output_sha256": "682af092d99826c0373923a0ef303758525e60f0a7eee072e389d3f8bfc07a69",
+   "uasset": "Content/Imported/MaterialDatabase/StreetLight/StreetLight_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StreetLight.upk#StreetLight_Emis",
+   "object": "StreetLight_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StreetLight/StreetLight/Texture2D/StreetLight_Emis.tga",
+   "extracted_sha256": "4681ca4459ee0cb1a956a50d0536ea90562e7a3c63525210a8a16044829a9524",
+   "output_file": "Content/Extracted/MaterialDatabase/StreetLight/StreetLight/Texture2D/StreetLight_Emis.tga",
+   "output_sha256": "4681ca4459ee0cb1a956a50d0536ea90562e7a3c63525210a8a16044829a9524",
+   "uasset": "Content/Imported/MaterialDatabase/StreetLight/StreetLight_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/StreetLight.upk#StreetLight_Norm",
+   "object": "StreetLight_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StreetLight/StreetLight/Texture2D/StreetLight_Norm.tga",
+   "extracted_sha256": "104ea7c9d1d4eb916c0d6886754477ad75c333f2551bbcddca5420d54201a37f",
+   "output_file": "Content/Extracted/MaterialDatabase/StreetLight/StreetLight/Texture2D/StreetLight_Norm.tga",
+   "output_sha256": "104ea7c9d1d4eb916c0d6886754477ad75c333f2551bbcddca5420d54201a37f",
+   "uasset": "Content/Imported/MaterialDatabase/StreetLight/StreetLight_Norm.uasset"
+  }
+ ]
+}

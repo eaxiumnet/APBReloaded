@@ -1,0 +1,48 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "CSD_Brick",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/Brick/CSD_Brick.upk",
+ "source_sha256": "9ab9f8108f6c8133a90148fc82a1ac66bf1f9b1e2a6cd76b51530afffff0e680",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Brick/CSD_Brick.upk#MI_Brick_Red",
+   "object": "MI_Brick_Red",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Brick_Red",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Brick/CSD_Brick/Texture2D/RedBrick_DiffSpec.tga",
+   "extracted_sha256": "2e1f829e1c4d32807c8564bfbd4fca7d55abbd05ef692812e39ac95bcce57da1",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Brick/CSD_Brick/Texture2D/RedBrick_DiffSpec.tga",
+   "output_sha256": "2e1f829e1c4d32807c8564bfbd4fca7d55abbd05ef692812e39ac95bcce57da1",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Brick/MI_Brick_Red.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Brick/CSD_Brick.upk#MI_Brick_Red_Graffiti",
+   "object": "MI_Brick_Red_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Brick_Red_Graffiti",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Brick/CSD_Brick/Texture2D/RedBrick_DiffSpec.tga",
+   "extracted_sha256": "2e1f829e1c4d32807c8564bfbd4fca7d55abbd05ef692812e39ac95bcce57da1",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Brick/CSD_Brick/Texture2D/RedBrick_DiffSpec.tga",
+   "output_sha256": "2e1f829e1c4d32807c8564bfbd4fca7d55abbd05ef692812e39ac95bcce57da1",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Brick/MI_Brick_Red_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Brick/CSD_Brick.upk#RedBrick_DiffSpec",
+   "object": "RedBrick_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Brick/CSD_Brick/Texture2D/RedBrick_DiffSpec.tga",
+   "extracted_sha256": "2e1f829e1c4d32807c8564bfbd4fca7d55abbd05ef692812e39ac95bcce57da1",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Brick/CSD_Brick/Texture2D/RedBrick_DiffSpec.tga",
+   "output_sha256": "2e1f829e1c4d32807c8564bfbd4fca7d55abbd05ef692812e39ac95bcce57da1",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Brick/RedBrick_DiffSpec.uasset"
+  }
+ ]
+}

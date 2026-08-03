@@ -1,0 +1,219 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "RoadSurfaces_CSD",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/RoadEditorMaterials/RoadSurfaces_CSD.upk",
+ "source_sha256": "bdc405c3f13a08df0d554cf2ca0a2c7cb6f1cc2040b19876c98702c8b1ae2843",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_CSD.upk#Cliff01_Diff",
+   "object": "Cliff01_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_CSD/Rock/Texture2D/Cliff01_Diff.tga",
+   "extracted_sha256": "44970c0bc9361c46cd0fc45418f3ca4986db7a1322dc70e5950e624b7881a0dc",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_CSD/Rock/Texture2D/Cliff01_Diff.tga",
+   "output_sha256": "44970c0bc9361c46cd0fc45418f3ca4986db7a1322dc70e5950e624b7881a0dc",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_CSD/Cliff01_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_CSD.upk#CSD_Grass_DiffSpec",
+   "object": "CSD_Grass_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_CSD/RoadSurfaces_CSD/Texture2D/CSD_Grass_DiffSpec.tga",
+   "extracted_sha256": "ca004cfafb2c855cb993bdae3f9604f6ab3b3bf812ec793f059c35ca1d329ea5",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_CSD/RoadSurfaces_CSD/Texture2D/CSD_Grass_DiffSpec.tga",
+   "output_sha256": "ca004cfafb2c855cb993bdae3f9604f6ab3b3bf812ec793f059c35ca1d329ea5",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_CSD/CSD_Grass_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_CSD.upk#Grass_DiffSpec",
+   "object": "Grass_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_CSD/Grass/Texture2D/Grass_DiffSpec.tga",
+   "extracted_sha256": "6facd2fb6e0edd0825ab1de7ec250e7111fa8a25c5a99b702689507ae94aa8c0",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_CSD/Grass/Texture2D/Grass_DiffSpec.tga",
+   "output_sha256": "6facd2fb6e0edd0825ab1de7ec250e7111fa8a25c5a99b702689507ae94aa8c0",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_CSD/Grass_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_CSD.upk#GroundCover_NRM_Test2",
+   "object": "GroundCover_NRM_Test2",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_CSD/RoadSurfaces_CSD/Texture2D/GroundCover_NRM_Test2.tga",
+   "extracted_sha256": "ac9cc3d59101ad4ed793deae0d03ec61bd60769e9fea5748e79e5c669d866101",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_CSD/RoadSurfaces_CSD/Texture2D/GroundCover_NRM_Test2.tga",
+   "output_sha256": "ac9cc3d59101ad4ed793deae0d03ec61bd60769e9fea5748e79e5c669d866101",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_CSD/GroundCover_NRM_Test2.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_CSD.upk#MI_CSD_GrassEarthRock_Global",
+   "object": "MI_CSD_GrassEarthRock_Global",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CSD_GrassEarthRock_Global",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_CSD/RoadSurfaces_CSD/Texture2D/CSD_Grass_DiffSpec.tga",
+   "extracted_sha256": "ca004cfafb2c855cb993bdae3f9604f6ab3b3bf812ec793f059c35ca1d329ea5",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_CSD/RoadSurfaces_CSD/Texture2D/CSD_Grass_DiffSpec.tga",
+   "output_sha256": "ca004cfafb2c855cb993bdae3f9604f6ab3b3bf812ec793f059c35ca1d329ea5",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_CSD/MI_CSD_GrassEarthRock_Global.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_CSD.upk#MI_Grass_Only",
+   "object": "MI_Grass_Only",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Grass_Only",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_CSD/RoadSurfaces_CSD/Texture2D/CSD_Grass_DiffSpec.tga",
+   "extracted_sha256": "ca004cfafb2c855cb993bdae3f9604f6ab3b3bf812ec793f059c35ca1d329ea5",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_CSD/RoadSurfaces_CSD/Texture2D/CSD_Grass_DiffSpec.tga",
+   "output_sha256": "ca004cfafb2c855cb993bdae3f9604f6ab3b3bf812ec793f059c35ca1d329ea5",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_CSD/MI_Grass_Only.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_CSD.upk#MI_Road_CountryRoad",
+   "object": "MI_Road_CountryRoad",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Road_CountryRoad",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_CSD/Grass/Texture2D/Grass_DiffSpec.tga",
+   "extracted_sha256": "6facd2fb6e0edd0825ab1de7ec250e7111fa8a25c5a99b702689507ae94aa8c0",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_CSD/Grass/Texture2D/Grass_DiffSpec.tga",
+   "output_sha256": "6facd2fb6e0edd0825ab1de7ec250e7111fa8a25c5a99b702689507ae94aa8c0",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_CSD/MI_Road_CountryRoad.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_CSD.upk#MI_Road_CountryRoad_Gutter",
+   "object": "MI_Road_CountryRoad_Gutter",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Road_CountryRoad_Gutter",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_CSD/Grass/Texture2D/Grass_DiffSpec.tga",
+   "extracted_sha256": "6facd2fb6e0edd0825ab1de7ec250e7111fa8a25c5a99b702689507ae94aa8c0",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_CSD/Grass/Texture2D/Grass_DiffSpec.tga",
+   "output_sha256": "6facd2fb6e0edd0825ab1de7ec250e7111fa8a25c5a99b702689507ae94aa8c0",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_CSD/MI_Road_CountryRoad_Gutter.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_CSD.upk#MI_Road_CountryRoad_GutterRoad_DirtRoad_Gutter",
+   "object": "MI_Road_CountryRoad_GutterRoad_DirtRoad_Gutter",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Road_CountryRoad_GutterRoad_DirtRoad_Gutter",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_CSD/Grass/Texture2D/Grass_DiffSpec.tga",
+   "extracted_sha256": "6facd2fb6e0edd0825ab1de7ec250e7111fa8a25c5a99b702689507ae94aa8c0",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_CSD/Grass/Texture2D/Grass_DiffSpec.tga",
+   "output_sha256": "6facd2fb6e0edd0825ab1de7ec250e7111fa8a25c5a99b702689507ae94aa8c0",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_CSD/MI_Road_CountryRoad_GutterRoad_DirtRoad_Gutter.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_CSD.upk#MI_Road_CountryRoadGlobal",
+   "object": "MI_Road_CountryRoadGlobal",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Road_CountryRoadGlobal",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_CSD/RoadSurfaces_CSD/Texture2D/RoughGravel_Diff.tga",
+   "extracted_sha256": "e03ee17d17007fbd4ea2783d32080a8fda44f2be48c990ae51b7545cc751ccdd",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_CSD/RoadSurfaces_CSD/Texture2D/RoughGravel_Diff.tga",
+   "output_sha256": "e03ee17d17007fbd4ea2783d32080a8fda44f2be48c990ae51b7545cc751ccdd",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_CSD/MI_Road_CountryRoadGlobal.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_CSD.upk#MI_Road_CountryRoadRoad_DirtRoad",
+   "object": "MI_Road_CountryRoadRoad_DirtRoad",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Road_CountryRoadRoad_DirtRoad",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_CSD/RoadSurfaces_CSD/Texture2D/RoughSand_Diff.tga",
+   "extracted_sha256": "df2b60886283f3f3a689828f871ba71fcdb710929ce92ac657a852b65418f1be",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_CSD/RoadSurfaces_CSD/Texture2D/RoughSand_Diff.tga",
+   "output_sha256": "df2b60886283f3f3a689828f871ba71fcdb710929ce92ac657a852b65418f1be",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_CSD/MI_Road_CountryRoadRoad_DirtRoad.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_CSD.upk#MI_stones",
+   "object": "MI_stones",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "stones",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_CSD/Rock/Texture2D/Cliff01_Diff.tga",
+   "extracted_sha256": "44970c0bc9361c46cd0fc45418f3ca4986db7a1322dc70e5950e624b7881a0dc",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_CSD/Rock/Texture2D/Cliff01_Diff.tga",
+   "output_sha256": "44970c0bc9361c46cd0fc45418f3ca4986db7a1322dc70e5950e624b7881a0dc",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_CSD/MI_stones.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_CSD.upk#MI_Water_FountainRipples",
+   "object": "MI_Water_FountainRipples",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Water_FountainRipples",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_CSD/Water/Texture2D/Waves_Norm.tga",
+   "extracted_sha256": "63098a145fd6cab63b12dd3f9981df702dbf5238108963e4102198cd60c37dfb",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_CSD/Water/Texture2D/Waves_Norm.tga",
+   "output_sha256": "63098a145fd6cab63b12dd3f9981df702dbf5238108963e4102198cd60c37dfb",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_CSD/MI_Water_FountainRipples.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_CSD.upk#RoughGravel_Diff",
+   "object": "RoughGravel_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_CSD/RoadSurfaces_CSD/Texture2D/RoughGravel_Diff.tga",
+   "extracted_sha256": "e03ee17d17007fbd4ea2783d32080a8fda44f2be48c990ae51b7545cc751ccdd",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_CSD/RoadSurfaces_CSD/Texture2D/RoughGravel_Diff.tga",
+   "output_sha256": "e03ee17d17007fbd4ea2783d32080a8fda44f2be48c990ae51b7545cc751ccdd",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_CSD/RoughGravel_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_CSD.upk#RoughSand_Diff",
+   "object": "RoughSand_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_CSD/RoadSurfaces_CSD/Texture2D/RoughSand_Diff.tga",
+   "extracted_sha256": "df2b60886283f3f3a689828f871ba71fcdb710929ce92ac657a852b65418f1be",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_CSD/RoadSurfaces_CSD/Texture2D/RoughSand_Diff.tga",
+   "output_sha256": "df2b60886283f3f3a689828f871ba71fcdb710929ce92ac657a852b65418f1be",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_CSD/RoughSand_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_CSD.upk#Waves_Norm",
+   "object": "Waves_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_CSD/Water/Texture2D/Waves_Norm.tga",
+   "extracted_sha256": "63098a145fd6cab63b12dd3f9981df702dbf5238108963e4102198cd60c37dfb",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_CSD/Water/Texture2D/Waves_Norm.tga",
+   "output_sha256": "63098a145fd6cab63b12dd3f9981df702dbf5238108963e4102198cd60c37dfb",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_CSD/Waves_Norm.uasset"
+  }
+ ]
+}

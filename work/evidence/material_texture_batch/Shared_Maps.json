@@ -1,0 +1,182 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Shared_Maps",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/Shared_Maps.upk",
+ "source_sha256": "e06735eb82518215aed4da117973d0db2958e19b16d97b349faea3508994c998",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Shared_Maps.upk#Brick_Paint_NormDiff",
+   "object": "Brick_Paint_NormDiff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shared_Maps/Brick_Paint/Texture2D/Brick_Paint_NormDiff.tga",
+   "extracted_sha256": "c8141380335ab509c57855ef6266fadadf5b6ab2c1d76eea8aadf64692f7f718",
+   "output_file": "Content/Extracted/MaterialDatabase/Shared_Maps/Brick_Paint/Texture2D/Brick_Paint_NormDiff.tga",
+   "output_sha256": "c8141380335ab509c57855ef6266fadadf5b6ab2c1d76eea8aadf64692f7f718",
+   "uasset": "Content/Imported/MaterialDatabase/Shared_Maps/Brick_Paint_NormDiff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Shared_Maps.upk#Concrete_003_Norm",
+   "object": "Concrete_003_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shared_Maps/Concrete/Texture2D/Concrete_003_Norm.tga",
+   "extracted_sha256": "fe51cf21d28a3ec12c2b5041f35c6768302f98c29c1436db4d637b207fdda6e4",
+   "output_file": "Content/Extracted/MaterialDatabase/Shared_Maps/Concrete/Texture2D/Concrete_003_Norm.tga",
+   "output_sha256": "fe51cf21d28a3ec12c2b5041f35c6768302f98c29c1436db4d637b207fdda6e4",
+   "uasset": "Content/Imported/MaterialDatabase/Shared_Maps/Concrete_003_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Shared_Maps.upk#Concrete_01_DiffSpec",
+   "object": "Concrete_01_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shared_Maps/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Shared_Maps/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/Shared_Maps/Concrete_01_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Shared_Maps.upk#MI_Brick_Paint_Beige",
+   "object": "MI_Brick_Paint_Beige",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Brick_Paint_Beige",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shared_Maps/Brick_Paint/Texture2D/Brick_Paint_NormDiff.tga",
+   "extracted_sha256": "c8141380335ab509c57855ef6266fadadf5b6ab2c1d76eea8aadf64692f7f718",
+   "output_file": "Content/Extracted/MaterialDatabase/Shared_Maps/Brick_Paint/Texture2D/Brick_Paint_NormDiff.tga",
+   "output_sha256": "c8141380335ab509c57855ef6266fadadf5b6ab2c1d76eea8aadf64692f7f718",
+   "uasset": "Content/Imported/MaterialDatabase/Shared_Maps/MI_Brick_Paint_Beige.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Shared_Maps.upk#MI_Bricks_Paint_PARENT",
+   "object": "MI_Bricks_Paint_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Bricks_Paint_PARENT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shared_Maps/Brick_Paint/Texture2D/Brick_Paint_NormDiff.tga",
+   "extracted_sha256": "c8141380335ab509c57855ef6266fadadf5b6ab2c1d76eea8aadf64692f7f718",
+   "output_file": "Content/Extracted/MaterialDatabase/Shared_Maps/Brick_Paint/Texture2D/Brick_Paint_NormDiff.tga",
+   "output_sha256": "c8141380335ab509c57855ef6266fadadf5b6ab2c1d76eea8aadf64692f7f718",
+   "uasset": "Content/Imported/MaterialDatabase/Shared_Maps/MI_Bricks_Paint_PARENT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Shared_Maps.upk#MI_Conc_PARENT",
+   "object": "MI_Conc_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Conc_PARENT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shared_Maps/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Shared_Maps/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/Shared_Maps/MI_Conc_PARENT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Shared_Maps.upk#MI_ConcGrime_Grey",
+   "object": "MI_ConcGrime_Grey",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "ConcGrime_Grey",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shared_Maps/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Shared_Maps/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/Shared_Maps/MI_ConcGrime_Grey.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Shared_Maps.upk#MI_Concrete_Pathway",
+   "object": "MI_Concrete_Pathway",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Concrete_Pathway",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shared_Maps/RoadSurfaces_Pathway/Texture2D/Sidewalk_SquareStone2_DiffSpec.tga",
+   "extracted_sha256": "57dd75296af4aac1b144e6f9cc27b4451b4c1fcc996551a826823a412d0eb864",
+   "output_file": "Content/Extracted/MaterialDatabase/Shared_Maps/RoadSurfaces_Pathway/Texture2D/Sidewalk_SquareStone2_DiffSpec.tga",
+   "output_sha256": "57dd75296af4aac1b144e6f9cc27b4451b4c1fcc996551a826823a412d0eb864",
+   "uasset": "Content/Imported/MaterialDatabase/Shared_Maps/MI_Concrete_Pathway.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Shared_Maps.upk#MI_Concrete_Pathway_RectangularStone",
+   "object": "MI_Concrete_Pathway_RectangularStone",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Concrete_Pathway_RectangularStone",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shared_Maps/RoadSurfaces_Pathway/Texture2D/Sidewalk_RectangularStone_DiffSpec.tga",
+   "extracted_sha256": "e6d203ac3c025208a4a78216173cd0360fabb12c0fb464a97205d90cc0c0b795",
+   "output_file": "Content/Extracted/MaterialDatabase/Shared_Maps/RoadSurfaces_Pathway/Texture2D/Sidewalk_RectangularStone_DiffSpec.tga",
+   "output_sha256": "e6d203ac3c025208a4a78216173cd0360fabb12c0fb464a97205d90cc0c0b795",
+   "uasset": "Content/Imported/MaterialDatabase/Shared_Maps/MI_Concrete_Pathway_RectangularStone.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Shared_Maps.upk#Sidewalk_RectangularStone_DiffSpec",
+   "object": "Sidewalk_RectangularStone_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shared_Maps/RoadSurfaces_Pathway/Texture2D/Sidewalk_RectangularStone_DiffSpec.tga",
+   "extracted_sha256": "e6d203ac3c025208a4a78216173cd0360fabb12c0fb464a97205d90cc0c0b795",
+   "output_file": "Content/Extracted/MaterialDatabase/Shared_Maps/RoadSurfaces_Pathway/Texture2D/Sidewalk_RectangularStone_DiffSpec.tga",
+   "output_sha256": "e6d203ac3c025208a4a78216173cd0360fabb12c0fb464a97205d90cc0c0b795",
+   "uasset": "Content/Imported/MaterialDatabase/Shared_Maps/Sidewalk_RectangularStone_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Shared_Maps.upk#Sidewalk_RectangularStone_Norm",
+   "object": "Sidewalk_RectangularStone_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shared_Maps/RoadSurfaces_Pathway/Texture2D/Sidewalk_RectangularStone_Norm.tga",
+   "extracted_sha256": "1772caf842806d33ef14516954d454f91c19f682dfbb0abe91718b95fc816cc5",
+   "output_file": "Content/Extracted/MaterialDatabase/Shared_Maps/RoadSurfaces_Pathway/Texture2D/Sidewalk_RectangularStone_Norm.tga",
+   "output_sha256": "1772caf842806d33ef14516954d454f91c19f682dfbb0abe91718b95fc816cc5",
+   "uasset": "Content/Imported/MaterialDatabase/Shared_Maps/Sidewalk_RectangularStone_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Shared_Maps.upk#Sidewalk_SquareStone2_DiffSpec",
+   "object": "Sidewalk_SquareStone2_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shared_Maps/RoadSurfaces_Pathway/Texture2D/Sidewalk_SquareStone2_DiffSpec.tga",
+   "extracted_sha256": "57dd75296af4aac1b144e6f9cc27b4451b4c1fcc996551a826823a412d0eb864",
+   "output_file": "Content/Extracted/MaterialDatabase/Shared_Maps/RoadSurfaces_Pathway/Texture2D/Sidewalk_SquareStone2_DiffSpec.tga",
+   "output_sha256": "57dd75296af4aac1b144e6f9cc27b4451b4c1fcc996551a826823a412d0eb864",
+   "uasset": "Content/Imported/MaterialDatabase/Shared_Maps/Sidewalk_SquareStone2_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Shared_Maps.upk#Sidewalk_SquareStone2_Norm",
+   "object": "Sidewalk_SquareStone2_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shared_Maps/RoadSurfaces_Pathway/Texture2D/Sidewalk_SquareStone2_Norm.tga",
+   "extracted_sha256": "1bbf00c2eed77fb496a2a169e8f1fd33415f01d1064083abc6693e0f845e3000",
+   "output_file": "Content/Extracted/MaterialDatabase/Shared_Maps/RoadSurfaces_Pathway/Texture2D/Sidewalk_SquareStone2_Norm.tga",
+   "output_sha256": "1bbf00c2eed77fb496a2a169e8f1fd33415f01d1064083abc6693e0f845e3000",
+   "uasset": "Content/Imported/MaterialDatabase/Shared_Maps/Sidewalk_SquareStone2_Norm.uasset"
+  }
+ ]
+}

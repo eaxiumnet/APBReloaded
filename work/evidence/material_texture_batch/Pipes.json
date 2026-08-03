@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Pipes",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/Pipes/Pipes.upk",
+ "source_sha256": "21933f381f051e4db3d02deda210d7069b9d199fd94ff504917370c93c9df3de",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Pipes/Pipes.upk#MI_Pipe",
+   "object": "MI_Pipe",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Pipe",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Pipes/Pipes/Texture2D/Pipe_DiffSpec.tga",
+   "extracted_sha256": "bd8c58d7e30b1aeb5f72a954067fe80a2f7206c7a56fc2221d5dd8b38e8cec6d",
+   "output_file": "Content/Extracted/MaterialDatabase/Pipes/Pipes/Texture2D/Pipe_DiffSpec.tga",
+   "output_sha256": "bd8c58d7e30b1aeb5f72a954067fe80a2f7206c7a56fc2221d5dd8b38e8cec6d",
+   "uasset": "Content/Imported/MaterialDatabase/Pipes/MI_Pipe.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Pipes/Pipes.upk#Pipe_DiffSpec",
+   "object": "Pipe_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Pipes/Pipes/Texture2D/Pipe_DiffSpec.tga",
+   "extracted_sha256": "bd8c58d7e30b1aeb5f72a954067fe80a2f7206c7a56fc2221d5dd8b38e8cec6d",
+   "output_file": "Content/Extracted/MaterialDatabase/Pipes/Pipes/Texture2D/Pipe_DiffSpec.tga",
+   "output_sha256": "bd8c58d7e30b1aeb5f72a954067fe80a2f7206c7a56fc2221d5dd8b38e8cec6d",
+   "uasset": "Content/Imported/MaterialDatabase/Pipes/Pipe_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Pipes/Pipes.upk#Pipe_Norm",
+   "object": "Pipe_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Pipes/Pipes/Texture2D/Pipe_Norm.tga",
+   "extracted_sha256": "7446e0dccec7b78b94cebac46620a301283df1047a982c23172d3df901d0e2ae",
+   "output_file": "Content/Extracted/MaterialDatabase/Pipes/Pipes/Texture2D/Pipe_Norm.tga",
+   "output_sha256": "7446e0dccec7b78b94cebac46620a301283df1047a982c23172d3df901d0e2ae",
+   "uasset": "Content/Imported/MaterialDatabase/Pipes/Pipe_Norm.uasset"
+  }
+ ]
+}

@@ -1,0 +1,99 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "WaterfrontPalmTree",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontPalmTree.upk",
+ "source_sha256": "7ce4aa97e93c24b663b644e8b6f0f120338917595c1a6fcc892c40d57d1947a5",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontPalmTree.upk#MI_WaterfrontPalmTree_Leaves_Mat",
+   "object": "MI_WaterfrontPalmTree_Leaves_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WaterfrontPalmTree_Leaves_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontPalmTree/WaterfrontPalmTree/Texture2D/PalmTree_Leaves1_DiffSpec.tga",
+   "extracted_sha256": "e732891601e7433bc4ce5b0cb34a6c4a9d7ec9a73682645ff6502a633dc78dda",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontPalmTree/WaterfrontPalmTree/Texture2D/PalmTree_Leaves1_DiffSpec.tga",
+   "output_sha256": "e732891601e7433bc4ce5b0cb34a6c4a9d7ec9a73682645ff6502a633dc78dda",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontPalmTree/MI_WaterfrontPalmTree_Leaves_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontPalmTree.upk#MI_WaterfrontPalmTree_Trunk_Mat",
+   "object": "MI_WaterfrontPalmTree_Trunk_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WaterfrontPalmTree_Trunk_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontPalmTree/WaterfrontPalmTree/Texture2D/PalmTree_Trunk_DiffSpec.tga",
+   "extracted_sha256": "2bfcd3db04e303090f4f2550dfc9725252f5494caa522e2df1280b2fc6b6ffcf",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontPalmTree/WaterfrontPalmTree/Texture2D/PalmTree_Trunk_DiffSpec.tga",
+   "output_sha256": "2bfcd3db04e303090f4f2550dfc9725252f5494caa522e2df1280b2fc6b6ffcf",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontPalmTree/MI_WaterfrontPalmTree_Trunk_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontPalmTree.upk#PalmTree_Leaves1_DiffSpec",
+   "object": "PalmTree_Leaves1_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontPalmTree/WaterfrontPalmTree/Texture2D/PalmTree_Leaves1_DiffSpec.tga",
+   "extracted_sha256": "e732891601e7433bc4ce5b0cb34a6c4a9d7ec9a73682645ff6502a633dc78dda",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontPalmTree/WaterfrontPalmTree/Texture2D/PalmTree_Leaves1_DiffSpec.tga",
+   "output_sha256": "e732891601e7433bc4ce5b0cb34a6c4a9d7ec9a73682645ff6502a633dc78dda",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontPalmTree/PalmTree_Leaves1_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontPalmTree.upk#PalmTree_Leaves1_Norm",
+   "object": "PalmTree_Leaves1_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontPalmTree/WaterfrontPalmTree/Texture2D/PalmTree_Leaves1_Norm.tga",
+   "extracted_sha256": "a5dc1e06ac47e48b36824639fc8d58bf6df56ad94c0738d367e4dd56edae2769",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontPalmTree/WaterfrontPalmTree/Texture2D/PalmTree_Leaves1_Norm.tga",
+   "output_sha256": "a5dc1e06ac47e48b36824639fc8d58bf6df56ad94c0738d367e4dd56edae2769",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontPalmTree/PalmTree_Leaves1_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontPalmTree.upk#PalmTree_Leaves1_Opac",
+   "object": "PalmTree_Leaves1_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontPalmTree/WaterfrontPalmTree/Texture2D/PalmTree_Leaves1_Opac.tga",
+   "extracted_sha256": "19acbbb0967283d4dde7c475668f5a3ac07717c2fd51d3a5dd269e7efa46170f",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontPalmTree/WaterfrontPalmTree/Texture2D/PalmTree_Leaves1_Opac.tga",
+   "output_sha256": "19acbbb0967283d4dde7c475668f5a3ac07717c2fd51d3a5dd269e7efa46170f",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontPalmTree/PalmTree_Leaves1_Opac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontPalmTree.upk#PalmTree_Trunk_DiffSpec",
+   "object": "PalmTree_Trunk_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontPalmTree/WaterfrontPalmTree/Texture2D/PalmTree_Trunk_DiffSpec.tga",
+   "extracted_sha256": "2bfcd3db04e303090f4f2550dfc9725252f5494caa522e2df1280b2fc6b6ffcf",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontPalmTree/WaterfrontPalmTree/Texture2D/PalmTree_Trunk_DiffSpec.tga",
+   "output_sha256": "2bfcd3db04e303090f4f2550dfc9725252f5494caa522e2df1280b2fc6b6ffcf",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontPalmTree/PalmTree_Trunk_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontPalmTree.upk#PalmTree_Trunk_Norm",
+   "object": "PalmTree_Trunk_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontPalmTree/WaterfrontPalmTree/Texture2D/PalmTree_Trunk_Norm.tga",
+   "extracted_sha256": "bcfe93eb752d908ad7b2e0b76a6389abe7577ae6d4794eb9abec3c24c5ddd863",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontPalmTree/WaterfrontPalmTree/Texture2D/PalmTree_Trunk_Norm.tga",
+   "output_sha256": "bcfe93eb752d908ad7b2e0b76a6389abe7577ae6d4794eb9abec3c24c5ddd863",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontPalmTree/PalmTree_Trunk_Norm.uasset"
+  }
+ ]
+}

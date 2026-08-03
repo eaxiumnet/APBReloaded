@@ -1,0 +1,101 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "DisplayPoint_CharacterMesh",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericDistrict/DisplayPoint_CharacterMesh.upk",
+ "source_sha256": "cd4808dfef0aa6c30742755b55fac54ac20c13de7f3b8d1683503fe378f3e7b6",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericDistrict/DisplayPoint_CharacterMesh.upk#green-alpha",
+   "object": "green-alpha",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/DisplayPoint_CharacterMesh/StatueMaterials/Texture2D/green-alpha.tga",
+   "extracted_sha256": "c019ee2c75b399c77e7571ba3c0837e18d5f1a3b94a6a570d44446b66654b216",
+   "output_file": "Content/Extracted/MaterialDatabase/DisplayPoint_CharacterMesh/StatueMaterials/Texture2D/green-alpha.tga",
+   "output_sha256": "c019ee2c75b399c77e7571ba3c0837e18d5f1a3b94a6a570d44446b66654b216",
+   "uasset": "Content/Imported/MaterialDatabase/DisplayPoint_CharacterMesh/green-alpha.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericDistrict/DisplayPoint_CharacterMesh.upk#MI_DisplayStatue_Bronze",
+   "object": "MI_DisplayStatue_Bronze",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "DisplayStatue_Bronze",
+   "texture_roles": [
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/DisplayPoint_CharacterMesh/DisplayPoint_CharacterMesh/Texture2D/Statue_Norm.tga",
+   "extracted_sha256": "283883fc16787ca001750026c06535cc5824c7251634ad440f9548a3101cf2cb",
+   "output_file": "Content/Extracted/MaterialDatabase/DisplayPoint_CharacterMesh/DisplayPoint_CharacterMesh/Texture2D/Statue_Norm.tga",
+   "output_sha256": "283883fc16787ca001750026c06535cc5824c7251634ad440f9548a3101cf2cb",
+   "uasset": "Content/Imported/MaterialDatabase/DisplayPoint_CharacterMesh/MI_DisplayStatue_Bronze.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericDistrict/DisplayPoint_CharacterMesh.upk#MI_DisplayStatue_Bronze_INST",
+   "object": "MI_DisplayStatue_Bronze_INST",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "DisplayStatue_Bronze_INST",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/DisplayPoint_CharacterMesh/Animation_Player_Male_ReferenceMesh/Texture2D/Normal.tga",
+   "extracted_sha256": "988cfa2c7fb22ca2bf804561eeaba077db0423154ccebcdf4711b903be16487c",
+   "output_file": "Content/Extracted/MaterialDatabase/DisplayPoint_CharacterMesh/Animation_Player_Male_ReferenceMesh/Texture2D/Normal.tga",
+   "output_sha256": "988cfa2c7fb22ca2bf804561eeaba077db0423154ccebcdf4711b903be16487c",
+   "uasset": "Content/Imported/MaterialDatabase/DisplayPoint_CharacterMesh/MI_DisplayStatue_Bronze_INST.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericDistrict/DisplayPoint_CharacterMesh.upk#MI_DisplayStatue_Gold_INST",
+   "object": "MI_DisplayStatue_Gold_INST",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "DisplayStatue_Gold_INST",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/DisplayPoint_CharacterMesh/DisplayPoint_CharacterMesh/Texture2D/Statue_Norm.tga",
+   "extracted_sha256": "283883fc16787ca001750026c06535cc5824c7251634ad440f9548a3101cf2cb",
+   "output_file": "Content/Extracted/MaterialDatabase/DisplayPoint_CharacterMesh/DisplayPoint_CharacterMesh/Texture2D/Statue_Norm.tga",
+   "output_sha256": "283883fc16787ca001750026c06535cc5824c7251634ad440f9548a3101cf2cb",
+   "uasset": "Content/Imported/MaterialDatabase/DisplayPoint_CharacterMesh/MI_DisplayStatue_Gold_INST.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericDistrict/DisplayPoint_CharacterMesh.upk#MI_DisplayStatue_Silver_INST",
+   "object": "MI_DisplayStatue_Silver_INST",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "DisplayStatue_Silver_INST",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/DisplayPoint_CharacterMesh/DisplayPoint_CharacterMesh/Texture2D/Statue_Norm.tga",
+   "extracted_sha256": "283883fc16787ca001750026c06535cc5824c7251634ad440f9548a3101cf2cb",
+   "output_file": "Content/Extracted/MaterialDatabase/DisplayPoint_CharacterMesh/DisplayPoint_CharacterMesh/Texture2D/Statue_Norm.tga",
+   "output_sha256": "283883fc16787ca001750026c06535cc5824c7251634ad440f9548a3101cf2cb",
+   "uasset": "Content/Imported/MaterialDatabase/DisplayPoint_CharacterMesh/MI_DisplayStatue_Silver_INST.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericDistrict/DisplayPoint_CharacterMesh.upk#Normal",
+   "object": "Normal",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/DisplayPoint_CharacterMesh/Animation_Player_Male_ReferenceMesh/Texture2D/Normal.tga",
+   "extracted_sha256": "988cfa2c7fb22ca2bf804561eeaba077db0423154ccebcdf4711b903be16487c",
+   "output_file": "Content/Extracted/MaterialDatabase/DisplayPoint_CharacterMesh/Animation_Player_Male_ReferenceMesh/Texture2D/Normal.tga",
+   "output_sha256": "988cfa2c7fb22ca2bf804561eeaba077db0423154ccebcdf4711b903be16487c",
+   "uasset": "Content/Imported/MaterialDatabase/DisplayPoint_CharacterMesh/Normal.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericDistrict/DisplayPoint_CharacterMesh.upk#Statue_Norm",
+   "object": "Statue_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/DisplayPoint_CharacterMesh/DisplayPoint_CharacterMesh/Texture2D/Statue_Norm.tga",
+   "extracted_sha256": "283883fc16787ca001750026c06535cc5824c7251634ad440f9548a3101cf2cb",
+   "output_file": "Content/Extracted/MaterialDatabase/DisplayPoint_CharacterMesh/DisplayPoint_CharacterMesh/Texture2D/Statue_Norm.tga",
+   "output_sha256": "283883fc16787ca001750026c06535cc5824c7251634ad440f9548a3101cf2cb",
+   "uasset": "Content/Imported/MaterialDatabase/DisplayPoint_CharacterMesh/Statue_Norm.uasset"
+  }
+ ]
+}

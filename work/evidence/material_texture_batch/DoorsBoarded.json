@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "DoorsBoarded",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/FeatureMaterials/DoorsBoarded.upk",
+ "source_sha256": "1793d57509b75accf664804080a0517fdedc8ff47599df2b579fe5f4a29c8720",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/DoorsBoarded.upk#MI_DoorsBoarded_Mat",
+   "object": "MI_DoorsBoarded_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "DoorsBoarded_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/DoorsBoarded/DoorsBoarded/Texture2D/MidtownDoorsBoarded_DiffSpec.tga",
+   "extracted_sha256": "f55217532dee252c9d4b0352e374e6443cbc48cc95783ababe3a9cbcab96ec23",
+   "output_file": "Content/Extracted/MaterialDatabase/DoorsBoarded/DoorsBoarded/Texture2D/MidtownDoorsBoarded_DiffSpec.tga",
+   "output_sha256": "f55217532dee252c9d4b0352e374e6443cbc48cc95783ababe3a9cbcab96ec23",
+   "uasset": "Content/Imported/MaterialDatabase/DoorsBoarded/MI_DoorsBoarded_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/DoorsBoarded.upk#MidtownDoorsBoarded_DiffSpec",
+   "object": "MidtownDoorsBoarded_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/DoorsBoarded/DoorsBoarded/Texture2D/MidtownDoorsBoarded_DiffSpec.tga",
+   "extracted_sha256": "f55217532dee252c9d4b0352e374e6443cbc48cc95783ababe3a9cbcab96ec23",
+   "output_file": "Content/Extracted/MaterialDatabase/DoorsBoarded/DoorsBoarded/Texture2D/MidtownDoorsBoarded_DiffSpec.tga",
+   "output_sha256": "f55217532dee252c9d4b0352e374e6443cbc48cc95783ababe3a9cbcab96ec23",
+   "uasset": "Content/Imported/MaterialDatabase/DoorsBoarded/MidtownDoorsBoarded_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/DoorsBoarded.upk#MidtownDoorsBoarded_Norm",
+   "object": "MidtownDoorsBoarded_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/DoorsBoarded/DoorsBoarded/Texture2D/MidtownDoorsBoarded_Norm.tga",
+   "extracted_sha256": "8da878af17ab776ccf416f8d281ce7aba573688609ead420427b91abfc950b83",
+   "output_file": "Content/Extracted/MaterialDatabase/DoorsBoarded/DoorsBoarded/Texture2D/MidtownDoorsBoarded_Norm.tga",
+   "output_sha256": "8da878af17ab776ccf416f8d281ce7aba573688609ead420427b91abfc950b83",
+   "uasset": "Content/Imported/MaterialDatabase/DoorsBoarded/MidtownDoorsBoarded_Norm.uasset"
+  }
+ ]
+}

@@ -1,0 +1,60 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FinancialTicketBarriers",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTicketBarriers.upk",
+ "source_sha256": "54c9a80d32facf5fad2902f2b24982432fc56ab21b0f31344a5620bd31050b07",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTicketBarriers.upk#MI_TicketBarriers_Mat",
+   "object": "MI_TicketBarriers_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "TicketBarriers_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialTicketBarriers/FinancialTicketBarriers/Texture2D/TicketBarriers_DiffSpec.tga",
+   "extracted_sha256": "e7a8ae0b56b3254a12ac11321414ec2afd78f67ad0b34fa484386041fe1f8442",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialTicketBarriers/FinancialTicketBarriers/Texture2D/TicketBarriers_DiffSpec.tga",
+   "output_sha256": "e7a8ae0b56b3254a12ac11321414ec2afd78f67ad0b34fa484386041fe1f8442",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialTicketBarriers/MI_TicketBarriers_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTicketBarriers.upk#TicketBarriers_DiffSpec",
+   "object": "TicketBarriers_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialTicketBarriers/FinancialTicketBarriers/Texture2D/TicketBarriers_DiffSpec.tga",
+   "extracted_sha256": "e7a8ae0b56b3254a12ac11321414ec2afd78f67ad0b34fa484386041fe1f8442",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialTicketBarriers/FinancialTicketBarriers/Texture2D/TicketBarriers_DiffSpec.tga",
+   "output_sha256": "e7a8ae0b56b3254a12ac11321414ec2afd78f67ad0b34fa484386041fe1f8442",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialTicketBarriers/TicketBarriers_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTicketBarriers.upk#TicketBarriers_EmisRefMask",
+   "object": "TicketBarriers_EmisRefMask",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialTicketBarriers/FinancialTicketBarriers/Texture2D/TicketBarriers_EmisRefMask.tga",
+   "extracted_sha256": "da18db20f9b9f0d2957c9bf9edc1d778cc088fef91986036b0a779dc7ada25c9",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialTicketBarriers/FinancialTicketBarriers/Texture2D/TicketBarriers_EmisRefMask.tga",
+   "output_sha256": "da18db20f9b9f0d2957c9bf9edc1d778cc088fef91986036b0a779dc7ada25c9",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialTicketBarriers/TicketBarriers_EmisRefMask.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTicketBarriers.upk#TicketBarriers_Norm",
+   "object": "TicketBarriers_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialTicketBarriers/FinancialTicketBarriers/Texture2D/TicketBarriers_Norm.tga",
+   "extracted_sha256": "e25c8428e408e286629fee3e9dee88b54ee3d475333204bf30057fee2b7f61f5",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialTicketBarriers/FinancialTicketBarriers/Texture2D/TicketBarriers_Norm.tga",
+   "output_sha256": "e25c8428e408e286629fee3e9dee88b54ee3d475333204bf30057fee2b7f61f5",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialTicketBarriers/TicketBarriers_Norm.uasset"
+  }
+ ]
+}

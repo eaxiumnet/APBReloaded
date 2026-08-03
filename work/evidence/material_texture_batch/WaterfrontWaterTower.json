@@ -1,0 +1,60 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "WaterfrontWaterTower",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontWaterTower.upk",
+ "source_sha256": "137ac68476a8be53fef7d5e93684dde1fc870978990a0e3aec0f41f58903e97c",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontWaterTower.upk#MI_WaterfrontWaterTower_MAT",
+   "object": "MI_WaterfrontWaterTower_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WaterfrontWaterTower_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontWaterTower/WaterfrontWaterTower/Texture2D/WaterfrontWaterTower_DiffSpec.tga",
+   "extracted_sha256": "0d387ae6573b13637719616d0e38d2131c0ed46a493e9e11f552c8e93e19714d",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontWaterTower/WaterfrontWaterTower/Texture2D/WaterfrontWaterTower_DiffSpec.tga",
+   "output_sha256": "0d387ae6573b13637719616d0e38d2131c0ed46a493e9e11f552c8e93e19714d",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontWaterTower/MI_WaterfrontWaterTower_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontWaterTower.upk#WaterfrontWaterTower_DiffSpec",
+   "object": "WaterfrontWaterTower_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontWaterTower/WaterfrontWaterTower/Texture2D/WaterfrontWaterTower_DiffSpec.tga",
+   "extracted_sha256": "0d387ae6573b13637719616d0e38d2131c0ed46a493e9e11f552c8e93e19714d",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontWaterTower/WaterfrontWaterTower/Texture2D/WaterfrontWaterTower_DiffSpec.tga",
+   "output_sha256": "0d387ae6573b13637719616d0e38d2131c0ed46a493e9e11f552c8e93e19714d",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontWaterTower/WaterfrontWaterTower_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontWaterTower.upk#WaterfrontWaterTower_Norm",
+   "object": "WaterfrontWaterTower_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontWaterTower/WaterfrontWaterTower/Texture2D/WaterfrontWaterTower_Norm.tga",
+   "extracted_sha256": "792b6609702ed27edd7f5a1dedb9c42092e1db0b58c97060700a9ede4b3716a5",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontWaterTower/WaterfrontWaterTower/Texture2D/WaterfrontWaterTower_Norm.tga",
+   "output_sha256": "792b6609702ed27edd7f5a1dedb9c42092e1db0b58c97060700a9ede4b3716a5",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontWaterTower/WaterfrontWaterTower_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontWaterTower.upk#WaterfrontWaterTower_Opac",
+   "object": "WaterfrontWaterTower_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontWaterTower/WaterfrontWaterTower/Texture2D/WaterfrontWaterTower_Opac.tga",
+   "extracted_sha256": "fba31b16a6e56e0b9b8fbd7ba2019d2e4fbf78248d0ebfb1d19bb302553d6f0d",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontWaterTower/WaterfrontWaterTower/Texture2D/WaterfrontWaterTower_Opac.tga",
+   "output_sha256": "fba31b16a6e56e0b9b8fbd7ba2019d2e4fbf78248d0ebfb1d19bb302553d6f0d",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontWaterTower/WaterfrontWaterTower_Opac.uasset"
+  }
+ ]
+}

@@ -1,0 +1,76 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Skylights",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/Skylights.upk",
+ "source_sha256": "8d9f6839ddb02c0f946488e5ddeb7e43b5a8096386e1b8c1faeec287b8d5dfa3",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Skylights.upk#MI_SkylightMat",
+   "object": "MI_SkylightMat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "SkylightMat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Skylights/Skylights/Texture2D/skylight_diffspec.tga",
+   "extracted_sha256": "a5d2629d02fb5e352e044b708d98609cd642773d08f01e52bd279b43117d0191",
+   "output_file": "Content/Extracted/MaterialDatabase/Skylights/Skylights/Texture2D/skylight_diffspec.tga",
+   "output_sha256": "a5d2629d02fb5e352e044b708d98609cd642773d08f01e52bd279b43117d0191",
+   "uasset": "Content/Imported/MaterialDatabase/Skylights/MI_SkylightMat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Skylights.upk#MI_SkylightMat_SmallPyramid",
+   "object": "MI_SkylightMat_SmallPyramid",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "SkylightMat_SmallPyramid",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Skylights/Skylights/Texture2D/skylight_diffspec.tga",
+   "extracted_sha256": "a5d2629d02fb5e352e044b708d98609cd642773d08f01e52bd279b43117d0191",
+   "output_file": "Content/Extracted/MaterialDatabase/Skylights/Skylights/Texture2D/skylight_diffspec.tga",
+   "output_sha256": "a5d2629d02fb5e352e044b708d98609cd642773d08f01e52bd279b43117d0191",
+   "uasset": "Content/Imported/MaterialDatabase/Skylights/MI_SkylightMat_SmallPyramid.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Skylights.upk#skylight_diffspec",
+   "object": "skylight_diffspec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Skylights/Skylights/Texture2D/skylight_diffspec.tga",
+   "extracted_sha256": "a5d2629d02fb5e352e044b708d98609cd642773d08f01e52bd279b43117d0191",
+   "output_file": "Content/Extracted/MaterialDatabase/Skylights/Skylights/Texture2D/skylight_diffspec.tga",
+   "output_sha256": "a5d2629d02fb5e352e044b708d98609cd642773d08f01e52bd279b43117d0191",
+   "uasset": "Content/Imported/MaterialDatabase/Skylights/skylight_diffspec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Skylights.upk#skylight_emissive",
+   "object": "skylight_emissive",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Skylights/Skylights/Texture2D/skylight_emissive.tga",
+   "extracted_sha256": "be52eb35f4393f6847c33d598ebe44895606236d36471958697cd7b08ed7ffe1",
+   "output_file": "Content/Extracted/MaterialDatabase/Skylights/Skylights/Texture2D/skylight_emissive.tga",
+   "output_sha256": "be52eb35f4393f6847c33d598ebe44895606236d36471958697cd7b08ed7ffe1",
+   "uasset": "Content/Imported/MaterialDatabase/Skylights/skylight_emissive.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Skylights.upk#Skylights_Norm",
+   "object": "Skylights_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Skylights/Skylights/Texture2D/Skylights_Norm.tga",
+   "extracted_sha256": "d89c7b9ffdc1938054fb602dddfcc42c541e56cfee8212d8dca980de5d7077e7",
+   "output_file": "Content/Extracted/MaterialDatabase/Skylights/Skylights/Texture2D/Skylights_Norm.tga",
+   "output_sha256": "d89c7b9ffdc1938054fb602dddfcc42c541e56cfee8212d8dca980de5d7077e7",
+   "uasset": "Content/Imported/MaterialDatabase/Skylights/Skylights_Norm.uasset"
+  }
+ ]
+}

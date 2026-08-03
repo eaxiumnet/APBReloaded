@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "CSD_Litter",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Litter.upk",
+ "source_sha256": "3e1d7212ac6b7097007aabfcb2046b76af28041f543741585c55ff84c79e681d",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Litter.upk#CSD_Litter_DiffSpec",
+   "object": "CSD_Litter_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Litter/CSD_Litter/Texture2D/CSD_Litter_DiffSpec.tga",
+   "extracted_sha256": "036c105c6cd051c98b941aee8ad8d498cebcf27b1e653133271b11fa5f3e380e",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Litter/CSD_Litter/Texture2D/CSD_Litter_DiffSpec.tga",
+   "output_sha256": "036c105c6cd051c98b941aee8ad8d498cebcf27b1e653133271b11fa5f3e380e",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Litter/CSD_Litter_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Litter.upk#CSD_Litter_Norm",
+   "object": "CSD_Litter_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Litter/CSD_Litter/Texture2D/CSD_Litter_Norm.tga",
+   "extracted_sha256": "06f133df96750c3cedec8c54f2b2b7c74951f23063528f48b1a3393dfe4ddbc7",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Litter/CSD_Litter/Texture2D/CSD_Litter_Norm.tga",
+   "output_sha256": "06f133df96750c3cedec8c54f2b2b7c74951f23063528f48b1a3393dfe4ddbc7",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Litter/CSD_Litter_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Litter.upk#MI_CSD_Litter_MAT",
+   "object": "MI_CSD_Litter_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CSD_Litter_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Litter/CSD_Litter/Texture2D/CSD_Litter_DiffSpec.tga",
+   "extracted_sha256": "036c105c6cd051c98b941aee8ad8d498cebcf27b1e653133271b11fa5f3e380e",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Litter/CSD_Litter/Texture2D/CSD_Litter_DiffSpec.tga",
+   "output_sha256": "036c105c6cd051c98b941aee8ad8d498cebcf27b1e653133271b11fa5f3e380e",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Litter/MI_CSD_Litter_MAT.uasset"
+  }
+ ]
+}

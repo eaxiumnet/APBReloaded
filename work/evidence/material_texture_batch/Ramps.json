@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Ramps",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/Ramps.upk",
+ "source_sha256": "1af60159804c9711977cf667c9a62189534e68b041b4286b95da70b59c2d4607",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Ramps.upk#MI_Ramps_Mat",
+   "object": "MI_Ramps_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Ramps_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Ramps/Ramps/Texture2D/Ramps_DiffSpec.tga",
+   "extracted_sha256": "153ba1fe054a53daccf8b65fbf85dbf51b9cf78df962738fe5089bfecdf28754",
+   "output_file": "Content/Extracted/MaterialDatabase/Ramps/Ramps/Texture2D/Ramps_DiffSpec.tga",
+   "output_sha256": "153ba1fe054a53daccf8b65fbf85dbf51b9cf78df962738fe5089bfecdf28754",
+   "uasset": "Content/Imported/MaterialDatabase/Ramps/MI_Ramps_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Ramps.upk#Ramps_DiffSpec",
+   "object": "Ramps_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Ramps/Ramps/Texture2D/Ramps_DiffSpec.tga",
+   "extracted_sha256": "153ba1fe054a53daccf8b65fbf85dbf51b9cf78df962738fe5089bfecdf28754",
+   "output_file": "Content/Extracted/MaterialDatabase/Ramps/Ramps/Texture2D/Ramps_DiffSpec.tga",
+   "output_sha256": "153ba1fe054a53daccf8b65fbf85dbf51b9cf78df962738fe5089bfecdf28754",
+   "uasset": "Content/Imported/MaterialDatabase/Ramps/Ramps_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Ramps.upk#Ramps_Norm",
+   "object": "Ramps_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Ramps/Ramps/Texture2D/Ramps_Norm.tga",
+   "extracted_sha256": "4b3a04a88dc3252cd4181d373c159f409b3c3fd057f6d2a4fe354aa4f2ad26ff",
+   "output_file": "Content/Extracted/MaterialDatabase/Ramps/Ramps/Texture2D/Ramps_Norm.tga",
+   "output_sha256": "4b3a04a88dc3252cd4181d373c159f409b3c3fd057f6d2a4fe354aa4f2ad26ff",
+   "uasset": "Content/Imported/MaterialDatabase/Ramps/Ramps_Norm.uasset"
+  }
+ ]
+}

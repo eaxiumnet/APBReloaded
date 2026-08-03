@@ -1,0 +1,90 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "SecurityCamera",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/SecurityCamera.upk",
+ "source_sha256": "83512d031a2bdddaff2537b35a036a79a58b1821c269e0571c6ed69ab9435741",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/SecurityCamera.upk#MI_SecurityCamera_Damage_Mat",
+   "object": "MI_SecurityCamera_Damage_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "SecurityCamera_Damage_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/SecurityCamera/SecurityCamera/Texture2D/SecurityCamera_DiffSpec.tga",
+   "extracted_sha256": "eec3a29b2e668814c6e799be4f67ed32b875a2b3cbd8ae7ee2a13838bee9551e",
+   "output_file": "Content/Extracted/MaterialDatabase/SecurityCamera/SecurityCamera/Texture2D/SecurityCamera_DiffSpec.tga",
+   "output_sha256": "eec3a29b2e668814c6e799be4f67ed32b875a2b3cbd8ae7ee2a13838bee9551e",
+   "uasset": "Content/Imported/MaterialDatabase/SecurityCamera/MI_SecurityCamera_Damage_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/SecurityCamera.upk#MI_SecurityCamera_MAT",
+   "object": "MI_SecurityCamera_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "SecurityCamera_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/SecurityCamera/SecurityCamera/Texture2D/SecurityCamera_DiffSpec.tga",
+   "extracted_sha256": "eec3a29b2e668814c6e799be4f67ed32b875a2b3cbd8ae7ee2a13838bee9551e",
+   "output_file": "Content/Extracted/MaterialDatabase/SecurityCamera/SecurityCamera/Texture2D/SecurityCamera_DiffSpec.tga",
+   "output_sha256": "eec3a29b2e668814c6e799be4f67ed32b875a2b3cbd8ae7ee2a13838bee9551e",
+   "uasset": "Content/Imported/MaterialDatabase/SecurityCamera/MI_SecurityCamera_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/SecurityCamera.upk#SecurityCamera_DiffSpec",
+   "object": "SecurityCamera_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/SecurityCamera/SecurityCamera/Texture2D/SecurityCamera_DiffSpec.tga",
+   "extracted_sha256": "eec3a29b2e668814c6e799be4f67ed32b875a2b3cbd8ae7ee2a13838bee9551e",
+   "output_file": "Content/Extracted/MaterialDatabase/SecurityCamera/SecurityCamera/Texture2D/SecurityCamera_DiffSpec.tga",
+   "output_sha256": "eec3a29b2e668814c6e799be4f67ed32b875a2b3cbd8ae7ee2a13838bee9551e",
+   "uasset": "Content/Imported/MaterialDatabase/SecurityCamera/SecurityCamera_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/SecurityCamera.upk#SecurityCamera_Emis",
+   "object": "SecurityCamera_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/SecurityCamera/SecurityCamera/Texture2D/SecurityCamera_Emis.tga",
+   "extracted_sha256": "6f2fe0ed5cd3e002a38d9e5c10e7109d0a3e43e32bb2e1fc416e00cf722201e6",
+   "output_file": "Content/Extracted/MaterialDatabase/SecurityCamera/SecurityCamera/Texture2D/SecurityCamera_Emis.tga",
+   "output_sha256": "6f2fe0ed5cd3e002a38d9e5c10e7109d0a3e43e32bb2e1fc416e00cf722201e6",
+   "uasset": "Content/Imported/MaterialDatabase/SecurityCamera/SecurityCamera_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/SecurityCamera.upk#SecurityCamera_Norm",
+   "object": "SecurityCamera_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/SecurityCamera/SecurityCamera/Texture2D/SecurityCamera_Norm.tga",
+   "extracted_sha256": "507ed287261a93788c21d8a93e32a6f78c9bdf04ba0e344ab1ddc8edeb2d7211",
+   "output_file": "Content/Extracted/MaterialDatabase/SecurityCamera/SecurityCamera/Texture2D/SecurityCamera_Norm.tga",
+   "output_sha256": "507ed287261a93788c21d8a93e32a6f78c9bdf04ba0e344ab1ddc8edeb2d7211",
+   "uasset": "Content/Imported/MaterialDatabase/SecurityCamera/SecurityCamera_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/SecurityCamera.upk#SecurityCamera_Opac",
+   "object": "SecurityCamera_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/SecurityCamera/SecurityCamera/Texture2D/SecurityCamera_Opac.tga",
+   "extracted_sha256": "1da8f25c6b55bc41a7edc62ff8cf2ee4850468eefcc475fba1fc3d61fd747605",
+   "output_file": "Content/Extracted/MaterialDatabase/SecurityCamera/SecurityCamera/Texture2D/SecurityCamera_Opac.tga",
+   "output_sha256": "1da8f25c6b55bc41a7edc62ff8cf2ee4850468eefcc475fba1fc3d61fd747605",
+   "uasset": "Content/Imported/MaterialDatabase/SecurityCamera/SecurityCamera_Opac.uasset"
+  }
+ ]
+}

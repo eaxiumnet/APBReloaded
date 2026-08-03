@@ -1,0 +1,34 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FD_Block02",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block02.upk",
+ "source_sha256": "3eea535937d8b99e0044451979dec2e3046cdf0a9579957a1a40881b13358cab",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block02.upk#Colour",
+   "object": "Colour",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Block02/FD_Block02/Texture2D/Colour.tga",
+   "extracted_sha256": "7fe92686c2fb4c2ffff343a078d555c5d2ec7e271e95b530ce470ab49dad5fee",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Block02/FD_Block02/Texture2D/Colour.tga",
+   "output_sha256": "7fe92686c2fb4c2ffff343a078d555c5d2ec7e271e95b530ce470ab49dad5fee",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Block02/Colour.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/StaticMeshes/FD_Block02.upk#MI_GFX_Eq",
+   "object": "MI_GFX_Eq",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "GFX_Eq",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FD_Block02/FD_Block02/Texture2D/Colour.tga",
+   "extracted_sha256": "7fe92686c2fb4c2ffff343a078d555c5d2ec7e271e95b530ce470ab49dad5fee",
+   "output_file": "Content/Extracted/MaterialDatabase/FD_Block02/FD_Block02/Texture2D/Colour.tga",
+   "output_sha256": "7fe92686c2fb4c2ffff343a078d555c5d2ec7e271e95b530ce470ab49dad5fee",
+   "uasset": "Content/Imported/MaterialDatabase/FD_Block02/MI_GFX_Eq.uasset"
+  }
+ ]
+}

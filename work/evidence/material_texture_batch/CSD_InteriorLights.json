@@ -1,0 +1,130 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "CSD_InteriorLights",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/PropMaterials/CSD_InteriorLights.upk",
+ "source_sha256": "c3c0ef283ae1c1335e09028628b3d86fb690b1d289ae61c8f3f1b13fbad2f8da",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_InteriorLights.upk#CSD_InteriorLights_DiffSpec",
+   "object": "CSD_InteriorLights_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_InteriorLights/CSD_InteriorLights/Texture2D/CSD_InteriorLights_DiffSpec.tga",
+   "extracted_sha256": "ddcefc59a7eddd1b4d234b376d5fe3bdfcd94dc309bc9df1d2c6600e989c3d98",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_InteriorLights/CSD_InteriorLights/Texture2D/CSD_InteriorLights_DiffSpec.tga",
+   "output_sha256": "ddcefc59a7eddd1b4d234b376d5fe3bdfcd94dc309bc9df1d2c6600e989c3d98",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_InteriorLights/CSD_InteriorLights_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_InteriorLights.upk#CSD_InteriorLights_Emiss",
+   "object": "CSD_InteriorLights_Emiss",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_InteriorLights/CSD_InteriorLights/Texture2D/CSD_InteriorLights_Emiss.tga",
+   "extracted_sha256": "52e13e0d05f6e2587300b24ca4e0fb00154416c4e0dea37b0a9ca1d1007069d4",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_InteriorLights/CSD_InteriorLights/Texture2D/CSD_InteriorLights_Emiss.tga",
+   "output_sha256": "52e13e0d05f6e2587300b24ca4e0fb00154416c4e0dea37b0a9ca1d1007069d4",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_InteriorLights/CSD_InteriorLights_Emiss.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_InteriorLights.upk#CSD_InteriorLights_Norm",
+   "object": "CSD_InteriorLights_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_InteriorLights/CSD_InteriorLights/Texture2D/CSD_InteriorLights_Norm.tga",
+   "extracted_sha256": "66f100a133b6b68ad0ea32db3f133d98c918868410509e08b2b2fa8318370453",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_InteriorLights/CSD_InteriorLights/Texture2D/CSD_InteriorLights_Norm.tga",
+   "output_sha256": "66f100a133b6b68ad0ea32db3f133d98c918868410509e08b2b2fa8318370453",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_InteriorLights/CSD_InteriorLights_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_InteriorLights.upk#InteriorLamp_DiffSpec",
+   "object": "InteriorLamp_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_InteriorLights/CSD_InteriorLights/Texture2D/InteriorLamp_DiffSpec.tga",
+   "extracted_sha256": "efed7f8f3c00669d42929cf387b046d7ab1ae8d10558dde3ad0d6a5966187830",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_InteriorLights/CSD_InteriorLights/Texture2D/InteriorLamp_DiffSpec.tga",
+   "output_sha256": "efed7f8f3c00669d42929cf387b046d7ab1ae8d10558dde3ad0d6a5966187830",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_InteriorLights/InteriorLamp_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_InteriorLights.upk#InteriorLamp_Emis",
+   "object": "InteriorLamp_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_InteriorLights/CSD_InteriorLights/Texture2D/InteriorLamp_Emis.tga",
+   "extracted_sha256": "5e12d7d8c3fc589e32c82fffba868636bc35d208e31899136725a5cf3c9f6fc9",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_InteriorLights/CSD_InteriorLights/Texture2D/InteriorLamp_Emis.tga",
+   "output_sha256": "5e12d7d8c3fc589e32c82fffba868636bc35d208e31899136725a5cf3c9f6fc9",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_InteriorLights/InteriorLamp_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_InteriorLights.upk#MI_CSD_InteriorLights_MAT",
+   "object": "MI_CSD_InteriorLights_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CSD_InteriorLights_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_InteriorLights/CSD_InteriorLights/Texture2D/CSD_InteriorLights_DiffSpec.tga",
+   "extracted_sha256": "ddcefc59a7eddd1b4d234b376d5fe3bdfcd94dc309bc9df1d2c6600e989c3d98",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_InteriorLights/CSD_InteriorLights/Texture2D/CSD_InteriorLights_DiffSpec.tga",
+   "output_sha256": "ddcefc59a7eddd1b4d234b376d5fe3bdfcd94dc309bc9df1d2c6600e989c3d98",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_InteriorLights/MI_CSD_InteriorLights_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_InteriorLights.upk#MI_CSD_InteriorLightsOff_MAT",
+   "object": "MI_CSD_InteriorLightsOff_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CSD_InteriorLightsOff_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_InteriorLights/CSD_InteriorLights/Texture2D/CSD_InteriorLights_DiffSpec.tga",
+   "extracted_sha256": "ddcefc59a7eddd1b4d234b376d5fe3bdfcd94dc309bc9df1d2c6600e989c3d98",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_InteriorLights/CSD_InteriorLights/Texture2D/CSD_InteriorLights_DiffSpec.tga",
+   "output_sha256": "ddcefc59a7eddd1b4d234b376d5fe3bdfcd94dc309bc9df1d2c6600e989c3d98",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_InteriorLights/MI_CSD_InteriorLightsOff_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_InteriorLights.upk#MI_InteriorLamp",
+   "object": "MI_InteriorLamp",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "InteriorLamp",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_InteriorLights/CSD_InteriorLights/Texture2D/InteriorLamp_DiffSpec.tga",
+   "extracted_sha256": "efed7f8f3c00669d42929cf387b046d7ab1ae8d10558dde3ad0d6a5966187830",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_InteriorLights/CSD_InteriorLights/Texture2D/InteriorLamp_DiffSpec.tga",
+   "output_sha256": "efed7f8f3c00669d42929cf387b046d7ab1ae8d10558dde3ad0d6a5966187830",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_InteriorLights/MI_InteriorLamp.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_InteriorLights.upk#MI_InteriorWallLamp",
+   "object": "MI_InteriorWallLamp",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "InteriorWallLamp",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_InteriorLights/CSD_InteriorLights/Texture2D/InteriorLamp_DiffSpec.tga",
+   "extracted_sha256": "efed7f8f3c00669d42929cf387b046d7ab1ae8d10558dde3ad0d6a5966187830",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_InteriorLights/CSD_InteriorLights/Texture2D/InteriorLamp_DiffSpec.tga",
+   "output_sha256": "efed7f8f3c00669d42929cf387b046d7ab1ae8d10558dde3ad0d6a5966187830",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_InteriorLights/MI_InteriorWallLamp.uasset"
+  }
+ ]
+}

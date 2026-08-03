@@ -1,0 +1,62 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FenceWood_1",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/FenceWood_1.upk",
+ "source_sha256": "78851fa2e4924ba72c4a20bf0681a838c8688b4dbace65388a66e425eb81d82c",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/FenceWood_1.upk#FenceWood_1_DiffSpec",
+   "object": "FenceWood_1_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FenceWood_1/FenceWood_1/Texture2D/FenceWood_1_DiffSpec.tga",
+   "extracted_sha256": "583e5ac9913af6f57fa20241da2d2f13b182027dcd30721126057e24aff37d80",
+   "output_file": "Content/Extracted/MaterialDatabase/FenceWood_1/FenceWood_1/Texture2D/FenceWood_1_DiffSpec.tga",
+   "output_sha256": "583e5ac9913af6f57fa20241da2d2f13b182027dcd30721126057e24aff37d80",
+   "uasset": "Content/Imported/MaterialDatabase/FenceWood_1/FenceWood_1_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/FenceWood_1.upk#FenceWood_1_Norm",
+   "object": "FenceWood_1_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FenceWood_1/FenceWood_1/Texture2D/FenceWood_1_Norm.tga",
+   "extracted_sha256": "c74b937278d31d59e026f40a86e1094e765ea6e00992e2206a5754468230c638",
+   "output_file": "Content/Extracted/MaterialDatabase/FenceWood_1/FenceWood_1/Texture2D/FenceWood_1_Norm.tga",
+   "output_sha256": "c74b937278d31d59e026f40a86e1094e765ea6e00992e2206a5754468230c638",
+   "uasset": "Content/Imported/MaterialDatabase/FenceWood_1/FenceWood_1_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/FenceWood_1.upk#MI_FenceWood_1_Extrude_Mat",
+   "object": "MI_FenceWood_1_Extrude_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FenceWood_1_Extrude_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FenceWood_1/FenceWood_1/Texture2D/FenceWood_1_DiffSpec.tga",
+   "extracted_sha256": "583e5ac9913af6f57fa20241da2d2f13b182027dcd30721126057e24aff37d80",
+   "output_file": "Content/Extracted/MaterialDatabase/FenceWood_1/FenceWood_1/Texture2D/FenceWood_1_DiffSpec.tga",
+   "output_sha256": "583e5ac9913af6f57fa20241da2d2f13b182027dcd30721126057e24aff37d80",
+   "uasset": "Content/Imported/MaterialDatabase/FenceWood_1/MI_FenceWood_1_Extrude_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/FenceWood_1.upk#MI_FenceWood_1_Mat",
+   "object": "MI_FenceWood_1_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FenceWood_1_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FenceWood_1/FenceWood_1/Texture2D/FenceWood_1_DiffSpec.tga",
+   "extracted_sha256": "583e5ac9913af6f57fa20241da2d2f13b182027dcd30721126057e24aff37d80",
+   "output_file": "Content/Extracted/MaterialDatabase/FenceWood_1/FenceWood_1/Texture2D/FenceWood_1_DiffSpec.tga",
+   "output_sha256": "583e5ac9913af6f57fa20241da2d2f13b182027dcd30721126057e24aff37d80",
+   "uasset": "Content/Imported/MaterialDatabase/FenceWood_1/MI_FenceWood_1_Mat.uasset"
+  }
+ ]
+}

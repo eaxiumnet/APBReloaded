@@ -1,0 +1,76 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Balloon_Prop",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericDistrict/Props/Balloon_Prop.upk",
+ "source_sha256": "746a8403a5c72ee0fae3bfa36050ef96e61146644aebbf2e70a3dd88f8eefa03",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericDistrict/Props/Balloon_Prop.upk#Balloon_norm",
+   "object": "Balloon_norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Balloon_Prop/Balloon_Prop/Texture2D/Balloon_norm.tga",
+   "extracted_sha256": "99a691a7a74936a40dce19a0538ae177931d058a2f2b3ce6263e585682ac477a",
+   "output_file": "Content/Extracted/MaterialDatabase/Balloon_Prop/Balloon_Prop/Texture2D/Balloon_norm.tga",
+   "output_sha256": "99a691a7a74936a40dce19a0538ae177931d058a2f2b3ce6263e585682ac477a",
+   "uasset": "Content/Imported/MaterialDatabase/Balloon_Prop/Balloon_norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericDistrict/Props/Balloon_Prop.upk#MI_Balloon_Blue_Prop_MAT",
+   "object": "MI_Balloon_Blue_Prop_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Balloon_Blue_Prop_MAT",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Balloon_Prop/Balloon_Prop/Texture2D/Balloon_norm.tga",
+   "extracted_sha256": "99a691a7a74936a40dce19a0538ae177931d058a2f2b3ce6263e585682ac477a",
+   "output_file": "Content/Extracted/MaterialDatabase/Balloon_Prop/Balloon_Prop/Texture2D/Balloon_norm.tga",
+   "output_sha256": "99a691a7a74936a40dce19a0538ae177931d058a2f2b3ce6263e585682ac477a",
+   "uasset": "Content/Imported/MaterialDatabase/Balloon_Prop/MI_Balloon_Blue_Prop_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericDistrict/Props/Balloon_Prop.upk#MI_Balloon_Prop_MAT",
+   "object": "MI_Balloon_Prop_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Balloon_Prop_MAT",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Balloon_Prop/Balloon_Prop/Texture2D/Balloon_norm.tga",
+   "extracted_sha256": "99a691a7a74936a40dce19a0538ae177931d058a2f2b3ce6263e585682ac477a",
+   "output_file": "Content/Extracted/MaterialDatabase/Balloon_Prop/Balloon_Prop/Texture2D/Balloon_norm.tga",
+   "output_sha256": "99a691a7a74936a40dce19a0538ae177931d058a2f2b3ce6263e585682ac477a",
+   "uasset": "Content/Imported/MaterialDatabase/Balloon_Prop/MI_Balloon_Prop_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericDistrict/Props/Balloon_Prop.upk#MI_Balloon_Red_Prop_MAT",
+   "object": "MI_Balloon_Red_Prop_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Balloon_Red_Prop_MAT",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Balloon_Prop/Balloon_Prop/Texture2D/Balloon_norm.tga",
+   "extracted_sha256": "99a691a7a74936a40dce19a0538ae177931d058a2f2b3ce6263e585682ac477a",
+   "output_file": "Content/Extracted/MaterialDatabase/Balloon_Prop/Balloon_Prop/Texture2D/Balloon_norm.tga",
+   "output_sha256": "99a691a7a74936a40dce19a0538ae177931d058a2f2b3ce6263e585682ac477a",
+   "uasset": "Content/Imported/MaterialDatabase/Balloon_Prop/MI_Balloon_Red_Prop_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericDistrict/Props/Balloon_Prop.upk#MI_Balloon_White_Prop_MAT",
+   "object": "MI_Balloon_White_Prop_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Balloon_White_Prop_MAT",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Balloon_Prop/Balloon_Prop/Texture2D/Balloon_norm.tga",
+   "extracted_sha256": "99a691a7a74936a40dce19a0538ae177931d058a2f2b3ce6263e585682ac477a",
+   "output_file": "Content/Extracted/MaterialDatabase/Balloon_Prop/Balloon_Prop/Texture2D/Balloon_norm.tga",
+   "output_sha256": "99a691a7a74936a40dce19a0538ae177931d058a2f2b3ce6263e585682ac477a",
+   "uasset": "Content/Imported/MaterialDatabase/Balloon_Prop/MI_Balloon_White_Prop_MAT.uasset"
+  }
+ ]
+}

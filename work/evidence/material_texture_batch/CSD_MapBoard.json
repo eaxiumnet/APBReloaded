@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "CSD_MapBoard",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/PropMaterials/CSD_MapBoard.upk",
+ "source_sha256": "49681574316fab407af0b627ac46d5e99bcbb03e3e227dc45b3bfd92658410b7",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_MapBoard.upk#CSD_MapBoard_DiffSpec",
+   "object": "CSD_MapBoard_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_MapBoard/CSD_MapBoard/Texture2D/CSD_MapBoard_DiffSpec.tga",
+   "extracted_sha256": "4ce00285adca38632632d6466380da36565b9057b5a70d866042930af7c738b0",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_MapBoard/CSD_MapBoard/Texture2D/CSD_MapBoard_DiffSpec.tga",
+   "output_sha256": "4ce00285adca38632632d6466380da36565b9057b5a70d866042930af7c738b0",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_MapBoard/CSD_MapBoard_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_MapBoard.upk#CSD_MapBoard_Norm",
+   "object": "CSD_MapBoard_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_MapBoard/CSD_MapBoard/Texture2D/CSD_MapBoard_Norm.tga",
+   "extracted_sha256": "1556b56b59d4a1025858c70b64217e5a7239772cc11e25854600804749ba05e3",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_MapBoard/CSD_MapBoard/Texture2D/CSD_MapBoard_Norm.tga",
+   "output_sha256": "1556b56b59d4a1025858c70b64217e5a7239772cc11e25854600804749ba05e3",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_MapBoard/CSD_MapBoard_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_MapBoard.upk#MI_CSD_MapBoard_MAT",
+   "object": "MI_CSD_MapBoard_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CSD_MapBoard_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_MapBoard/CSD_MapBoard/Texture2D/CSD_MapBoard_DiffSpec.tga",
+   "extracted_sha256": "4ce00285adca38632632d6466380da36565b9057b5a70d866042930af7c738b0",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_MapBoard/CSD_MapBoard/Texture2D/CSD_MapBoard_DiffSpec.tga",
+   "output_sha256": "4ce00285adca38632632d6466380da36565b9057b5a70d866042930af7c738b0",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_MapBoard/MI_CSD_MapBoard_MAT.uasset"
+  }
+ ]
+}

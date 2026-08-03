@@ -1,0 +1,73 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "PavingSlabs",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/Paving/PavingSlabs.upk",
+ "source_sha256": "e452b1508f8601d4ce296fc9515a70a6c5dd8a0f3b45436af7e37236bdbb0a3e",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Paving/PavingSlabs.upk#MI_PaveSlab01",
+   "object": "MI_PaveSlab01",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PaveSlab01",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/PavingSlabs/RoadSurfaces_Pathway/Texture2D/Sidewalk_SquareStone2_DiffSpec.tga",
+   "extracted_sha256": "57dd75296af4aac1b144e6f9cc27b4451b4c1fcc996551a826823a412d0eb864",
+   "output_file": "Content/Extracted/MaterialDatabase/PavingSlabs/RoadSurfaces_Pathway/Texture2D/Sidewalk_SquareStone2_DiffSpec.tga",
+   "output_sha256": "57dd75296af4aac1b144e6f9cc27b4451b4c1fcc996551a826823a412d0eb864",
+   "uasset": "Content/Imported/MaterialDatabase/PavingSlabs/MI_PaveSlab01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Paving/PavingSlabs.upk#MI_pavingslabs",
+   "object": "MI_pavingslabs",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "pavingslabs",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/PavingSlabs/PavingSlabs/Texture2D/PavingSlab_DiffSpec.tga",
+   "extracted_sha256": "f663da5ad8feb5d5aa42dc252be4efe4b96a4c3040eeb467a5b4d2eabc201049",
+   "output_file": "Content/Extracted/MaterialDatabase/PavingSlabs/PavingSlabs/Texture2D/PavingSlab_DiffSpec.tga",
+   "output_sha256": "f663da5ad8feb5d5aa42dc252be4efe4b96a4c3040eeb467a5b4d2eabc201049",
+   "uasset": "Content/Imported/MaterialDatabase/PavingSlabs/MI_pavingslabs.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Paving/PavingSlabs.upk#PavingSlab_DiffSpec",
+   "object": "PavingSlab_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/PavingSlabs/PavingSlabs/Texture2D/PavingSlab_DiffSpec.tga",
+   "extracted_sha256": "f663da5ad8feb5d5aa42dc252be4efe4b96a4c3040eeb467a5b4d2eabc201049",
+   "output_file": "Content/Extracted/MaterialDatabase/PavingSlabs/PavingSlabs/Texture2D/PavingSlab_DiffSpec.tga",
+   "output_sha256": "f663da5ad8feb5d5aa42dc252be4efe4b96a4c3040eeb467a5b4d2eabc201049",
+   "uasset": "Content/Imported/MaterialDatabase/PavingSlabs/PavingSlab_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Paving/PavingSlabs.upk#Sidewalk_SquareStone2_DiffSpec",
+   "object": "Sidewalk_SquareStone2_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/PavingSlabs/RoadSurfaces_Pathway/Texture2D/Sidewalk_SquareStone2_DiffSpec.tga",
+   "extracted_sha256": "57dd75296af4aac1b144e6f9cc27b4451b4c1fcc996551a826823a412d0eb864",
+   "output_file": "Content/Extracted/MaterialDatabase/PavingSlabs/RoadSurfaces_Pathway/Texture2D/Sidewalk_SquareStone2_DiffSpec.tga",
+   "output_sha256": "57dd75296af4aac1b144e6f9cc27b4451b4c1fcc996551a826823a412d0eb864",
+   "uasset": "Content/Imported/MaterialDatabase/PavingSlabs/Sidewalk_SquareStone2_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Paving/PavingSlabs.upk#Sidewalk_SquareStone2_Norm",
+   "object": "Sidewalk_SquareStone2_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/PavingSlabs/RoadSurfaces_Pathway/Texture2D/Sidewalk_SquareStone2_Norm.tga",
+   "extracted_sha256": "1bbf00c2eed77fb496a2a169e8f1fd33415f01d1064083abc6693e0f845e3000",
+   "output_file": "Content/Extracted/MaterialDatabase/PavingSlabs/RoadSurfaces_Pathway/Texture2D/Sidewalk_SquareStone2_Norm.tga",
+   "output_sha256": "1bbf00c2eed77fb496a2a169e8f1fd33415f01d1064083abc6693e0f845e3000",
+   "uasset": "Content/Imported/MaterialDatabase/PavingSlabs/Sidewalk_SquareStone2_Norm.uasset"
+  }
+ ]
+}

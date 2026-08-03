@@ -1,0 +1,164 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "WaterfrontLighthouseAndBridge",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontLighthouseAndBridge.upk",
+ "source_sha256": "a0d47ac4d7776091e583586b9f125505f167887a17a89abfc4822a03cfd84558",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontLighthouseAndBridge.upk#MI_Water",
+   "object": "MI_Water",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Water",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontLighthouseAndBridge/Water/Texture2D/Waves_Norm.tga",
+   "extracted_sha256": "63098a145fd6cab63b12dd3f9981df702dbf5238108963e4102198cd60c37dfb",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontLighthouseAndBridge/Water/Texture2D/Waves_Norm.tga",
+   "output_sha256": "63098a145fd6cab63b12dd3f9981df702dbf5238108963e4102198cd60c37dfb",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontLighthouseAndBridge/MI_Water.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontLighthouseAndBridge.upk#MI_WD_Block15_HillsAndTrees_Mat",
+   "object": "MI_WD_Block15_HillsAndTrees_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WD_Block15_HillsAndTrees_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontLighthouseAndBridge/WaterfrontLighthouseAndBridge/Texture2D/WD_Block15_HillsAndTrees_Diff.tga",
+   "extracted_sha256": "df69d6a6085781c82c799d113b0022797cad09d310d05328032c9937ce5cfe71",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontLighthouseAndBridge/WaterfrontLighthouseAndBridge/Texture2D/WD_Block15_HillsAndTrees_Diff.tga",
+   "output_sha256": "df69d6a6085781c82c799d113b0022797cad09d310d05328032c9937ce5cfe71",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontLighthouseAndBridge/MI_WD_Block15_HillsAndTrees_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontLighthouseAndBridge.upk#MI_WD_Block15_LighthouseAndBridge_Mat",
+   "object": "MI_WD_Block15_LighthouseAndBridge_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WD_Block15_LighthouseAndBridge_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontLighthouseAndBridge/WaterfrontLighthouseAndBridge/Texture2D/WD_Block15_LighthouseAndBridge_Diff.tga",
+   "extracted_sha256": "70a6baed9f91c0451ac458adf6a4f4e7e6aaa308e0ab7dca9dbff0908f0b3732",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontLighthouseAndBridge/WaterfrontLighthouseAndBridge/Texture2D/WD_Block15_LighthouseAndBridge_Diff.tga",
+   "output_sha256": "70a6baed9f91c0451ac458adf6a4f4e7e6aaa308e0ab7dca9dbff0908f0b3732",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontLighthouseAndBridge/MI_WD_Block15_LighthouseAndBridge_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontLighthouseAndBridge.upk#Waves_Norm",
+   "object": "Waves_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontLighthouseAndBridge/Water/Texture2D/Waves_Norm.tga",
+   "extracted_sha256": "63098a145fd6cab63b12dd3f9981df702dbf5238108963e4102198cd60c37dfb",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontLighthouseAndBridge/Water/Texture2D/Waves_Norm.tga",
+   "output_sha256": "63098a145fd6cab63b12dd3f9981df702dbf5238108963e4102198cd60c37dfb",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontLighthouseAndBridge/Waves_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontLighthouseAndBridge.upk#WD_Block15_HillsAndTrees_Diff",
+   "object": "WD_Block15_HillsAndTrees_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontLighthouseAndBridge/WaterfrontLighthouseAndBridge/Texture2D/WD_Block15_HillsAndTrees_Diff.tga",
+   "extracted_sha256": "df69d6a6085781c82c799d113b0022797cad09d310d05328032c9937ce5cfe71",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontLighthouseAndBridge/WaterfrontLighthouseAndBridge/Texture2D/WD_Block15_HillsAndTrees_Diff.tga",
+   "output_sha256": "df69d6a6085781c82c799d113b0022797cad09d310d05328032c9937ce5cfe71",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontLighthouseAndBridge/WD_Block15_HillsAndTrees_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontLighthouseAndBridge.upk#WD_Block15_HillsAndTrees_Emis",
+   "object": "WD_Block15_HillsAndTrees_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontLighthouseAndBridge/WaterfrontLighthouseAndBridge/Texture2D/WD_Block15_HillsAndTrees_Emis.tga",
+   "extracted_sha256": "f8259651072eb8d3e14fe8f9c126e7733a633069283a9f0eb57fbc3538188c3b",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontLighthouseAndBridge/WaterfrontLighthouseAndBridge/Texture2D/WD_Block15_HillsAndTrees_Emis.tga",
+   "output_sha256": "f8259651072eb8d3e14fe8f9c126e7733a633069283a9f0eb57fbc3538188c3b",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontLighthouseAndBridge/WD_Block15_HillsAndTrees_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontLighthouseAndBridge.upk#WD_Block15_HillsAndTrees_Norm",
+   "object": "WD_Block15_HillsAndTrees_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontLighthouseAndBridge/WaterfrontLighthouseAndBridge/Texture2D/WD_Block15_HillsAndTrees_Norm.tga",
+   "extracted_sha256": "97b17f5cd2e6c0328a4a2bf8521a19e7b7437f157a7b9fc4e4e4e01b2a65310d",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontLighthouseAndBridge/WaterfrontLighthouseAndBridge/Texture2D/WD_Block15_HillsAndTrees_Norm.tga",
+   "output_sha256": "97b17f5cd2e6c0328a4a2bf8521a19e7b7437f157a7b9fc4e4e4e01b2a65310d",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontLighthouseAndBridge/WD_Block15_HillsAndTrees_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontLighthouseAndBridge.upk#WD_Block15_HillsAndTrees_Opac",
+   "object": "WD_Block15_HillsAndTrees_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontLighthouseAndBridge/WaterfrontLighthouseAndBridge/Texture2D/WD_Block15_HillsAndTrees_Opac.tga",
+   "extracted_sha256": "2138a64f41399038add8e3aac29b90b73e969ebb7bffe8ec5f332d4010853b5a",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontLighthouseAndBridge/WaterfrontLighthouseAndBridge/Texture2D/WD_Block15_HillsAndTrees_Opac.tga",
+   "output_sha256": "2138a64f41399038add8e3aac29b90b73e969ebb7bffe8ec5f332d4010853b5a",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontLighthouseAndBridge/WD_Block15_HillsAndTrees_Opac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontLighthouseAndBridge.upk#WD_Block15_LighthouseAndBridge_Diff",
+   "object": "WD_Block15_LighthouseAndBridge_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontLighthouseAndBridge/WaterfrontLighthouseAndBridge/Texture2D/WD_Block15_LighthouseAndBridge_Diff.tga",
+   "extracted_sha256": "70a6baed9f91c0451ac458adf6a4f4e7e6aaa308e0ab7dca9dbff0908f0b3732",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontLighthouseAndBridge/WaterfrontLighthouseAndBridge/Texture2D/WD_Block15_LighthouseAndBridge_Diff.tga",
+   "output_sha256": "70a6baed9f91c0451ac458adf6a4f4e7e6aaa308e0ab7dca9dbff0908f0b3732",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontLighthouseAndBridge/WD_Block15_LighthouseAndBridge_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontLighthouseAndBridge.upk#WD_Block15_LighthouseAndBridge_Emis",
+   "object": "WD_Block15_LighthouseAndBridge_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontLighthouseAndBridge/WaterfrontLighthouseAndBridge/Texture2D/WD_Block15_LighthouseAndBridge_Emis.tga",
+   "extracted_sha256": "e3a2245e5f21084418ed12feaac82bf685f6ed82f2adb6648a7be60fe48352a4",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontLighthouseAndBridge/WaterfrontLighthouseAndBridge/Texture2D/WD_Block15_LighthouseAndBridge_Emis.tga",
+   "output_sha256": "e3a2245e5f21084418ed12feaac82bf685f6ed82f2adb6648a7be60fe48352a4",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontLighthouseAndBridge/WD_Block15_LighthouseAndBridge_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontLighthouseAndBridge.upk#WD_Block15_LighthouseAndBridge_Norm",
+   "object": "WD_Block15_LighthouseAndBridge_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontLighthouseAndBridge/WaterfrontLighthouseAndBridge/Texture2D/WD_Block15_LighthouseAndBridge_Norm.tga",
+   "extracted_sha256": "f3d6884ed2c76c10bbedaa923752bebc09e17c8b0f3b9571f98ef9d62f97a0f4",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontLighthouseAndBridge/WaterfrontLighthouseAndBridge/Texture2D/WD_Block15_LighthouseAndBridge_Norm.tga",
+   "output_sha256": "f3d6884ed2c76c10bbedaa923752bebc09e17c8b0f3b9571f98ef9d62f97a0f4",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontLighthouseAndBridge/WD_Block15_LighthouseAndBridge_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontLighthouseAndBridge.upk#WD_Block15_LighthouseAndBridge_Opac",
+   "object": "WD_Block15_LighthouseAndBridge_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontLighthouseAndBridge/WaterfrontLighthouseAndBridge/Texture2D/WD_Block15_LighthouseAndBridge_Opac.tga",
+   "extracted_sha256": "9e35a1e28e31a7e9a5fc86ade36f6221f6cebc2123ccebf852c80534beeaf49f",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontLighthouseAndBridge/WaterfrontLighthouseAndBridge/Texture2D/WD_Block15_LighthouseAndBridge_Opac.tga",
+   "output_sha256": "9e35a1e28e31a7e9a5fc86ade36f6221f6cebc2123ccebf852c80534beeaf49f",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontLighthouseAndBridge/WD_Block15_LighthouseAndBridge_Opac.uasset"
+  }
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "DisplayPoint_VehicleMesh",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericDistrict/DisplayPoint_VehicleMesh.upk",
+ "source_sha256": "81b26bbb58b35874947e42b4ac3dabe69a8f626605920c56aee0e4bb0b1c4075",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericDistrict/DisplayPoint_VehicleMesh.upk#CarCover_Diff",
+   "object": "CarCover_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/DisplayPoint_VehicleMesh/DisplayPoint_VehicleMesh/Texture2D/CarCover_Diff.tga",
+   "extracted_sha256": "b12d229b6461013fa8a222ac2bd448ec983e54058e0af01a95f5283608fa8983",
+   "output_file": "Content/Extracted/MaterialDatabase/DisplayPoint_VehicleMesh/DisplayPoint_VehicleMesh/Texture2D/CarCover_Diff.tga",
+   "output_sha256": "b12d229b6461013fa8a222ac2bd448ec983e54058e0af01a95f5283608fa8983",
+   "uasset": "Content/Imported/MaterialDatabase/DisplayPoint_VehicleMesh/CarCover_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericDistrict/DisplayPoint_VehicleMesh.upk#CarCover_Norm",
+   "object": "CarCover_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/DisplayPoint_VehicleMesh/DisplayPoint_VehicleMesh/Texture2D/CarCover_Norm.tga",
+   "extracted_sha256": "fdbf66d3a225cb20db3d75c9e4c428da006f0f305f52adefa86d3f0b0334e89c",
+   "output_file": "Content/Extracted/MaterialDatabase/DisplayPoint_VehicleMesh/DisplayPoint_VehicleMesh/Texture2D/CarCover_Norm.tga",
+   "output_sha256": "fdbf66d3a225cb20db3d75c9e4c428da006f0f305f52adefa86d3f0b0334e89c",
+   "uasset": "Content/Imported/MaterialDatabase/DisplayPoint_VehicleMesh/CarCover_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericDistrict/DisplayPoint_VehicleMesh.upk#MI_DisplayPoint_VehicleMesh_MAT",
+   "object": "MI_DisplayPoint_VehicleMesh_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "DisplayPoint_VehicleMesh_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/DisplayPoint_VehicleMesh/DisplayPoint_VehicleMesh/Texture2D/CarCover_Diff.tga",
+   "extracted_sha256": "b12d229b6461013fa8a222ac2bd448ec983e54058e0af01a95f5283608fa8983",
+   "output_file": "Content/Extracted/MaterialDatabase/DisplayPoint_VehicleMesh/DisplayPoint_VehicleMesh/Texture2D/CarCover_Diff.tga",
+   "output_sha256": "b12d229b6461013fa8a222ac2bd448ec983e54058e0af01a95f5283608fa8983",
+   "uasset": "Content/Imported/MaterialDatabase/DisplayPoint_VehicleMesh/MI_DisplayPoint_VehicleMesh_MAT.uasset"
+  }
+ ]
+}

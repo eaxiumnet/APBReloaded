@@ -1,0 +1,62 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Carpet",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/Floor/Carpet.upk",
+ "source_sha256": "b54f3cb1e05e7bfe719e0f7a8925b5ef501e38e452af4c1b16c50476be702872",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Floor/Carpet.upk#Carpet_Dirty",
+   "object": "Carpet_Dirty",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Carpet/Carpet/Texture2D/Carpet_Dirty.tga",
+   "extracted_sha256": "a4dedbc7653172747e10544e619c493ce841cb156091932b3dc846e1ef045da7",
+   "output_file": "Content/Extracted/MaterialDatabase/Carpet/Carpet/Texture2D/Carpet_Dirty.tga",
+   "output_sha256": "a4dedbc7653172747e10544e619c493ce841cb156091932b3dc846e1ef045da7",
+   "uasset": "Content/Imported/MaterialDatabase/Carpet/Carpet_Dirty.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Floor/Carpet.upk#MI_Carpet_Cyan_Mat",
+   "object": "MI_Carpet_Cyan_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Carpet_Cyan_Mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Carpet/Carpet/Texture2D/Carpet_Dirty.tga",
+   "extracted_sha256": "a4dedbc7653172747e10544e619c493ce841cb156091932b3dc846e1ef045da7",
+   "output_file": "Content/Extracted/MaterialDatabase/Carpet/Carpet/Texture2D/Carpet_Dirty.tga",
+   "output_sha256": "a4dedbc7653172747e10544e619c493ce841cb156091932b3dc846e1ef045da7",
+   "uasset": "Content/Imported/MaterialDatabase/Carpet/MI_Carpet_Cyan_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Floor/Carpet.upk#MI_Carpet_Mat",
+   "object": "MI_Carpet_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Carpet_Mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Carpet/Carpet/Texture2D/Carpet_Dirty.tga",
+   "extracted_sha256": "a4dedbc7653172747e10544e619c493ce841cb156091932b3dc846e1ef045da7",
+   "output_file": "Content/Extracted/MaterialDatabase/Carpet/Carpet/Texture2D/Carpet_Dirty.tga",
+   "output_sha256": "a4dedbc7653172747e10544e619c493ce841cb156091932b3dc846e1ef045da7",
+   "uasset": "Content/Imported/MaterialDatabase/Carpet/MI_Carpet_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Floor/Carpet.upk#MI_Carpet_Mat_Blue",
+   "object": "MI_Carpet_Mat_Blue",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Carpet_Mat_Blue",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Carpet/Carpet/Texture2D/Carpet_Dirty.tga",
+   "extracted_sha256": "a4dedbc7653172747e10544e619c493ce841cb156091932b3dc846e1ef045da7",
+   "output_file": "Content/Extracted/MaterialDatabase/Carpet/Carpet/Texture2D/Carpet_Dirty.tga",
+   "output_sha256": "a4dedbc7653172747e10544e619c493ce841cb156091932b3dc846e1ef045da7",
+   "uasset": "Content/Imported/MaterialDatabase/Carpet/MI_Carpet_Mat_Blue.uasset"
+  }
+ ]
+}

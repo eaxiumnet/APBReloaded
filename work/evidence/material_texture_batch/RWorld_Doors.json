@@ -1,0 +1,74 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "RWorld_Doors",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/RWorldSocialDistrict/Props/RWorld_Doors.upk",
+ "source_sha256": "283544bc14ca8a00e1e3ed638ded1a95213525be73885b3963e24cf51e853651",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_Doors.upk#DirtOverlay_01",
+   "object": "DirtOverlay_01",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_Doors/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_Doors/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_Doors/DirtOverlay_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_Doors.upk#MI_Metal_Brushed_PARENT",
+   "object": "MI_Metal_Brushed_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_Brushed_PARENT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_Doors/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_Doors/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_Doors/MI_Metal_Brushed_PARENT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_Doors.upk#MI_Metal_Brushed_SilverBlue",
+   "object": "MI_Metal_Brushed_SilverBlue",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_Brushed_SilverBlue",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_Doors/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_Doors/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_Doors/MI_Metal_Brushed_SilverBlue.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_Doors.upk#MI_RWorlds_Doors_Glass_MAT",
+   "object": "MI_RWorlds_Doors_Glass_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RWorlds_Doors_Glass_MAT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_Doors/RWorld_Doors/Texture2D/RWorld_Doors_Glass_DiffSpec.tga",
+   "extracted_sha256": "2e9a331770d1d37c56208cf9fd2905245b2922c5916666f7d4bf26d2153b69da",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_Doors/RWorld_Doors/Texture2D/RWorld_Doors_Glass_DiffSpec.tga",
+   "output_sha256": "2e9a331770d1d37c56208cf9fd2905245b2922c5916666f7d4bf26d2153b69da",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_Doors/MI_RWorlds_Doors_Glass_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_Doors.upk#RWorld_Doors_Glass_DiffSpec",
+   "object": "RWorld_Doors_Glass_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_Doors/RWorld_Doors/Texture2D/RWorld_Doors_Glass_DiffSpec.tga",
+   "extracted_sha256": "2e9a331770d1d37c56208cf9fd2905245b2922c5916666f7d4bf26d2153b69da",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_Doors/RWorld_Doors/Texture2D/RWorld_Doors_Glass_DiffSpec.tga",
+   "output_sha256": "2e9a331770d1d37c56208cf9fd2905245b2922c5916666f7d4bf26d2153b69da",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_Doors/RWorld_Doors_Glass_DiffSpec.uasset"
+  }
+ ]
+}

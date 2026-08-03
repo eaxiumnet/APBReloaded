@@ -1,0 +1,60 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "VehicleNoEntrySign",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/FeatureMaterials/VehicleNoEntrySign.upk",
+ "source_sha256": "cf46a784df96cb1467dc9a1899a68f8845bde3ad6543d2ecfc33bcb93110e161",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/VehicleNoEntrySign.upk#MI_VehicleNoEntrySign_MAT",
+   "object": "MI_VehicleNoEntrySign_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "VehicleNoEntrySign_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/VehicleNoEntrySign/VehicleNoEntrySign/Texture2D/VehicleNoEntrySign_Diff.tga",
+   "extracted_sha256": "3385640b38f4d0e76caeddb6bc03d91e3a152eb8a8d800241d9d85394d080d14",
+   "output_file": "Content/Extracted/MaterialDatabase/VehicleNoEntrySign/VehicleNoEntrySign/Texture2D/VehicleNoEntrySign_Diff.tga",
+   "output_sha256": "3385640b38f4d0e76caeddb6bc03d91e3a152eb8a8d800241d9d85394d080d14",
+   "uasset": "Content/Imported/MaterialDatabase/VehicleNoEntrySign/MI_VehicleNoEntrySign_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/VehicleNoEntrySign.upk#VehicleNoEntrySign_Diff",
+   "object": "VehicleNoEntrySign_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/VehicleNoEntrySign/VehicleNoEntrySign/Texture2D/VehicleNoEntrySign_Diff.tga",
+   "extracted_sha256": "3385640b38f4d0e76caeddb6bc03d91e3a152eb8a8d800241d9d85394d080d14",
+   "output_file": "Content/Extracted/MaterialDatabase/VehicleNoEntrySign/VehicleNoEntrySign/Texture2D/VehicleNoEntrySign_Diff.tga",
+   "output_sha256": "3385640b38f4d0e76caeddb6bc03d91e3a152eb8a8d800241d9d85394d080d14",
+   "uasset": "Content/Imported/MaterialDatabase/VehicleNoEntrySign/VehicleNoEntrySign_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/VehicleNoEntrySign.upk#VehicleNoEntrySign_Emis",
+   "object": "VehicleNoEntrySign_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/VehicleNoEntrySign/VehicleNoEntrySign/Texture2D/VehicleNoEntrySign_Emis.tga",
+   "extracted_sha256": "0f0f5848e1d5066f1ed76516af2fc2f416169f25fa5e273dcd22005e3c761720",
+   "output_file": "Content/Extracted/MaterialDatabase/VehicleNoEntrySign/VehicleNoEntrySign/Texture2D/VehicleNoEntrySign_Emis.tga",
+   "output_sha256": "0f0f5848e1d5066f1ed76516af2fc2f416169f25fa5e273dcd22005e3c761720",
+   "uasset": "Content/Imported/MaterialDatabase/VehicleNoEntrySign/VehicleNoEntrySign_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/VehicleNoEntrySign.upk#VehicleNoEntrySign_Norm",
+   "object": "VehicleNoEntrySign_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/VehicleNoEntrySign/VehicleNoEntrySign/Texture2D/VehicleNoEntrySign_Norm.tga",
+   "extracted_sha256": "4cccb6ff9d1aab061801438dea367d7f7b53d374f4335c112ea5d8ce482c9294",
+   "output_file": "Content/Extracted/MaterialDatabase/VehicleNoEntrySign/VehicleNoEntrySign/Texture2D/VehicleNoEntrySign_Norm.tga",
+   "output_sha256": "4cccb6ff9d1aab061801438dea367d7f7b53d374f4335c112ea5d8ce482c9294",
+   "uasset": "Content/Imported/MaterialDatabase/VehicleNoEntrySign/VehicleNoEntrySign_Norm.uasset"
+  }
+ ]
+}

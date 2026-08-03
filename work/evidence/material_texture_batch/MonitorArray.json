@@ -1,0 +1,73 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "MonitorArray",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/EnforcerSocialDistrict/PropMaterials/MonitorArray.upk",
+ "source_sha256": "6ece705740b834bf1672346b824641a1800eed7cf0499b5b3fa079d8c987845c",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/MonitorArray.upk#MI_MonitorArray",
+   "object": "MI_MonitorArray",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "MonitorArray",
+   "texture_roles": [
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/MonitorArray/MonitorArray/Texture2D/MonitorArray_NORM.tga",
+   "extracted_sha256": "f009478d104fb1bb46046696f4d02da3f5e581b8b94de43b79ab9fac4c1c8876",
+   "output_file": "Content/Extracted/MaterialDatabase/MonitorArray/MonitorArray/Texture2D/MonitorArray_NORM.tga",
+   "output_sha256": "f009478d104fb1bb46046696f4d02da3f5e581b8b94de43b79ab9fac4c1c8876",
+   "uasset": "Content/Imported/MaterialDatabase/MonitorArray/MI_MonitorArray.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/MonitorArray.upk#MI_MonitorArray_Screen_01_Mat",
+   "object": "MI_MonitorArray_Screen_01_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "MonitorArray_Screen_01_Mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/MonitorArray/MonitorArray/Texture2D/MonitorArray_Screen_02.tga",
+   "extracted_sha256": "42c8d13b43bc20dc0def67782d8fcf7f07e00c9d71433fcdf5e06261e0a61189",
+   "output_file": "Content/Extracted/MaterialDatabase/MonitorArray/MonitorArray/Texture2D/MonitorArray_Screen_02.tga",
+   "output_sha256": "42c8d13b43bc20dc0def67782d8fcf7f07e00c9d71433fcdf5e06261e0a61189",
+   "uasset": "Content/Imported/MaterialDatabase/MonitorArray/MI_MonitorArray_Screen_01_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/MonitorArray.upk#MonitorArray_EMISSIVE",
+   "object": "MonitorArray_EMISSIVE",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/MonitorArray/MonitorArray/Texture2D/MonitorArray_EMISSIVE.tga",
+   "extracted_sha256": "a5e99e953ae09e7b7a3712506aac373566c209369eca4034a99945c17a4dc4ab",
+   "output_file": "Content/Extracted/MaterialDatabase/MonitorArray/MonitorArray/Texture2D/MonitorArray_EMISSIVE.tga",
+   "output_sha256": "a5e99e953ae09e7b7a3712506aac373566c209369eca4034a99945c17a4dc4ab",
+   "uasset": "Content/Imported/MaterialDatabase/MonitorArray/MonitorArray_EMISSIVE.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/MonitorArray.upk#MonitorArray_NORM",
+   "object": "MonitorArray_NORM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/MonitorArray/MonitorArray/Texture2D/MonitorArray_NORM.tga",
+   "extracted_sha256": "f009478d104fb1bb46046696f4d02da3f5e581b8b94de43b79ab9fac4c1c8876",
+   "output_file": "Content/Extracted/MaterialDatabase/MonitorArray/MonitorArray/Texture2D/MonitorArray_NORM.tga",
+   "output_sha256": "f009478d104fb1bb46046696f4d02da3f5e581b8b94de43b79ab9fac4c1c8876",
+   "uasset": "Content/Imported/MaterialDatabase/MonitorArray/MonitorArray_NORM.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/MonitorArray.upk#MonitorArray_Screen_02",
+   "object": "MonitorArray_Screen_02",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/MonitorArray/MonitorArray/Texture2D/MonitorArray_Screen_02.tga",
+   "extracted_sha256": "42c8d13b43bc20dc0def67782d8fcf7f07e00c9d71433fcdf5e06261e0a61189",
+   "output_file": "Content/Extracted/MaterialDatabase/MonitorArray/MonitorArray/Texture2D/MonitorArray_Screen_02.tga",
+   "output_sha256": "42c8d13b43bc20dc0def67782d8fcf7f07e00c9d71433fcdf5e06261e0a61189",
+   "uasset": "Content/Imported/MaterialDatabase/MonitorArray/MonitorArray_Screen_02.uasset"
+  }
+ ]
+}

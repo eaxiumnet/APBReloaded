@@ -1,0 +1,154 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Dancefloor",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/EnforcerSocialDistrict/Dancefloor.upk",
+ "source_sha256": "1323dfdd2e73d7b1d13bca8a4faae70058506defc1ebb2ff1626c218a84b410c",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/Dancefloor.upk#GlitterBall_FunctionMap",
+   "object": "GlitterBall_FunctionMap",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Dancefloor/Dancefloor/Texture2D/GlitterBall_FunctionMap.tga",
+   "extracted_sha256": "cab90b3c902b7116a4d30d2e89367aeef9e348d9a200fabd93d8947708c13026",
+   "output_file": "Content/Extracted/MaterialDatabase/Dancefloor/Dancefloor/Texture2D/GlitterBall_FunctionMap.tga",
+   "output_sha256": "cab90b3c902b7116a4d30d2e89367aeef9e348d9a200fabd93d8947708c13026",
+   "uasset": "Content/Imported/MaterialDatabase/Dancefloor/GlitterBall_FunctionMap.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/Dancefloor.upk#LEDDanceFloor_Pattern",
+   "object": "LEDDanceFloor_Pattern",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Dancefloor/Dancefloor/Texture2D/LEDDanceFloor_Pattern.tga",
+   "extracted_sha256": "e40b1446cb5fc3d888cacd470d55f5c2f63e2e0b547d33966c56263a47b1ea22",
+   "output_file": "Content/Extracted/MaterialDatabase/Dancefloor/Dancefloor/Texture2D/LEDDanceFloor_Pattern.tga",
+   "output_sha256": "e40b1446cb5fc3d888cacd470d55f5c2f63e2e0b547d33966c56263a47b1ea22",
+   "uasset": "Content/Imported/MaterialDatabase/Dancefloor/LEDDanceFloor_Pattern.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/Dancefloor.upk#LightFalloff_01",
+   "object": "LightFalloff_01",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Dancefloor/FD_NeonSigns/Texture2D/LightFalloff_01.tga",
+   "extracted_sha256": "3b9288827296846906205fc32919ec1109da6f5cdbb5da7f0cfc0eb0519b1a8b",
+   "output_file": "Content/Extracted/MaterialDatabase/Dancefloor/FD_NeonSigns/Texture2D/LightFalloff_01.tga",
+   "output_sha256": "3b9288827296846906205fc32919ec1109da6f5cdbb5da7f0cfc0eb0519b1a8b",
+   "uasset": "Content/Imported/MaterialDatabase/Dancefloor/LightFalloff_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/Dancefloor.upk#MI_GlitterBall_LightFunction",
+   "object": "MI_GlitterBall_LightFunction",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "GlitterBall_LightFunction",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Dancefloor/Dancefloor/Texture2D/GlitterBall_FunctionMap.tga",
+   "extracted_sha256": "cab90b3c902b7116a4d30d2e89367aeef9e348d9a200fabd93d8947708c13026",
+   "output_file": "Content/Extracted/MaterialDatabase/Dancefloor/Dancefloor/Texture2D/GlitterBall_FunctionMap.tga",
+   "output_sha256": "cab90b3c902b7116a4d30d2e89367aeef9e348d9a200fabd93d8947708c13026",
+   "uasset": "Content/Imported/MaterialDatabase/Dancefloor/MI_GlitterBall_LightFunction.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/Dancefloor.upk#MI_LEDDanceFloor_Mat",
+   "object": "MI_LEDDanceFloor_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "LEDDanceFloor_Mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Dancefloor/Dancefloor/Texture2D/LEDDanceFloor_Pattern.tga",
+   "extracted_sha256": "e40b1446cb5fc3d888cacd470d55f5c2f63e2e0b547d33966c56263a47b1ea22",
+   "output_file": "Content/Extracted/MaterialDatabase/Dancefloor/Dancefloor/Texture2D/LEDDanceFloor_Pattern.tga",
+   "output_sha256": "e40b1446cb5fc3d888cacd470d55f5c2f63e2e0b547d33966c56263a47b1ea22",
+   "uasset": "Content/Imported/MaterialDatabase/Dancefloor/MI_LEDDanceFloor_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/Dancefloor.upk#MI_LightBeam_shader_Foggish_MAT",
+   "object": "MI_LightBeam_shader_Foggish_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "LightBeam_shader_Foggish_MAT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Dancefloor/VFX_TexturesArchive/Texture2D/TiledVapourT01.tga",
+   "extracted_sha256": "4cc9faa04f30eb635b8e60b66ad7854255a6024c9d9d2521fea150cd05055cf0",
+   "output_file": "Content/Extracted/MaterialDatabase/Dancefloor/VFX_TexturesArchive/Texture2D/TiledVapourT01.tga",
+   "output_sha256": "4cc9faa04f30eb635b8e60b66ad7854255a6024c9d9d2521fea150cd05055cf0",
+   "uasset": "Content/Imported/MaterialDatabase/Dancefloor/MI_LightBeam_shader_Foggish_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/Dancefloor.upk#MI_LightBeam_shader_Foggish_MAT_INST_Red",
+   "object": "MI_LightBeam_shader_Foggish_MAT_INST_Red",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "LightBeam_shader_Foggish_MAT_INST_Red",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Dancefloor/VFX_TexturesArchive/Texture2D/TiledVapourT01.tga",
+   "extracted_sha256": "4cc9faa04f30eb635b8e60b66ad7854255a6024c9d9d2521fea150cd05055cf0",
+   "output_file": "Content/Extracted/MaterialDatabase/Dancefloor/VFX_TexturesArchive/Texture2D/TiledVapourT01.tga",
+   "output_sha256": "4cc9faa04f30eb635b8e60b66ad7854255a6024c9d9d2521fea150cd05055cf0",
+   "uasset": "Content/Imported/MaterialDatabase/Dancefloor/MI_LightBeam_shader_Foggish_MAT_INST_Red.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/Dancefloor.upk#MI_LightBeam_shader_Foggish_MAT_Yellow",
+   "object": "MI_LightBeam_shader_Foggish_MAT_Yellow",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "LightBeam_shader_Foggish_MAT_Yellow",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Dancefloor/VFX_TexturesArchive/Texture2D/TiledVapourT01.tga",
+   "extracted_sha256": "4cc9faa04f30eb635b8e60b66ad7854255a6024c9d9d2521fea150cd05055cf0",
+   "output_file": "Content/Extracted/MaterialDatabase/Dancefloor/VFX_TexturesArchive/Texture2D/TiledVapourT01.tga",
+   "output_sha256": "4cc9faa04f30eb635b8e60b66ad7854255a6024c9d9d2521fea150cd05055cf0",
+   "uasset": "Content/Imported/MaterialDatabase/Dancefloor/MI_LightBeam_shader_Foggish_MAT_Yellow.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/Dancefloor.upk#MI_LightBeam_Spotlights",
+   "object": "MI_LightBeam_Spotlights",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "LightBeam_Spotlights",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Dancefloor/FD_NeonSigns/Texture2D/LightFalloff_01.tga",
+   "extracted_sha256": "3b9288827296846906205fc32919ec1109da6f5cdbb5da7f0cfc0eb0519b1a8b",
+   "output_file": "Content/Extracted/MaterialDatabase/Dancefloor/FD_NeonSigns/Texture2D/LightFalloff_01.tga",
+   "output_sha256": "3b9288827296846906205fc32919ec1109da6f5cdbb5da7f0cfc0eb0519b1a8b",
+   "uasset": "Content/Imported/MaterialDatabase/Dancefloor/MI_LightBeam_Spotlights.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/Dancefloor.upk#MI_LightBeam_Spotlights_INST",
+   "object": "MI_LightBeam_Spotlights_INST",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "LightBeam_Spotlights_INST",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Dancefloor/FD_NeonSigns/Texture2D/LightFalloff_01.tga",
+   "extracted_sha256": "3b9288827296846906205fc32919ec1109da6f5cdbb5da7f0cfc0eb0519b1a8b",
+   "output_file": "Content/Extracted/MaterialDatabase/Dancefloor/FD_NeonSigns/Texture2D/LightFalloff_01.tga",
+   "output_sha256": "3b9288827296846906205fc32919ec1109da6f5cdbb5da7f0cfc0eb0519b1a8b",
+   "uasset": "Content/Imported/MaterialDatabase/Dancefloor/MI_LightBeam_Spotlights_INST.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/Dancefloor.upk#TiledVapourT01",
+   "object": "TiledVapourT01",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Dancefloor/VFX_TexturesArchive/Texture2D/TiledVapourT01.tga",
+   "extracted_sha256": "4cc9faa04f30eb635b8e60b66ad7854255a6024c9d9d2521fea150cd05055cf0",
+   "output_file": "Content/Extracted/MaterialDatabase/Dancefloor/VFX_TexturesArchive/Texture2D/TiledVapourT01.tga",
+   "output_sha256": "4cc9faa04f30eb635b8e60b66ad7854255a6024c9d9d2521fea150cd05055cf0",
+   "uasset": "Content/Imported/MaterialDatabase/Dancefloor/TiledVapourT01.uasset"
+  }
+ ]
+}

@@ -1,0 +1,148 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Pumpkin",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/PropMaterials/Pumpkin.upk",
+ "source_sha256": "6c3ae489c16baa705d457129ec7d836ec06de4de50c583568f952a98777cc29a",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Pumpkin.upk#MI_Pumpkin_Damaged_MAT_INST",
+   "object": "MI_Pumpkin_Damaged_MAT_INST",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Pumpkin_Damaged_MAT_INST",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Pumpkin/Pumpkin/Texture2D/Pumpkin_DiffSpec.tga",
+   "extracted_sha256": "8a545f489e92c4025c8f7c80f09fda20dcee46f46087cfab730bb5b3accf8842",
+   "output_file": "Content/Extracted/MaterialDatabase/Pumpkin/Pumpkin/Texture2D/Pumpkin_DiffSpec.tga",
+   "output_sha256": "8a545f489e92c4025c8f7c80f09fda20dcee46f46087cfab730bb5b3accf8842",
+   "uasset": "Content/Imported/MaterialDatabase/Pumpkin/MI_Pumpkin_Damaged_MAT_INST.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Pumpkin.upk#MI_Pumpkin_MAT",
+   "object": "MI_Pumpkin_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Pumpkin_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Pumpkin/Pumpkin/Texture2D/Pumpkin_DiffSpec.tga",
+   "extracted_sha256": "8a545f489e92c4025c8f7c80f09fda20dcee46f46087cfab730bb5b3accf8842",
+   "output_file": "Content/Extracted/MaterialDatabase/Pumpkin/Pumpkin/Texture2D/Pumpkin_DiffSpec.tga",
+   "output_sha256": "8a545f489e92c4025c8f7c80f09fda20dcee46f46087cfab730bb5b3accf8842",
+   "uasset": "Content/Imported/MaterialDatabase/Pumpkin/MI_Pumpkin_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Pumpkin.upk#MI_PumpkinPurple_Damaged_MAT_INST",
+   "object": "MI_PumpkinPurple_Damaged_MAT_INST",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PumpkinPurple_Damaged_MAT_INST",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Pumpkin/Pumpkin/Texture2D/Pumpkin_Purple_DiffSpec.tga",
+   "extracted_sha256": "b76f9b40b357a216dc8205728d1d808dadd6c8083ef3c7636da0ad5a77b98da6",
+   "output_file": "Content/Extracted/MaterialDatabase/Pumpkin/Pumpkin/Texture2D/Pumpkin_Purple_DiffSpec.tga",
+   "output_sha256": "b76f9b40b357a216dc8205728d1d808dadd6c8083ef3c7636da0ad5a77b98da6",
+   "uasset": "Content/Imported/MaterialDatabase/Pumpkin/MI_PumpkinPurple_Damaged_MAT_INST.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Pumpkin.upk#MI_PumpkinPurple_MAT",
+   "object": "MI_PumpkinPurple_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PumpkinPurple_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Pumpkin/Pumpkin/Texture2D/Pumpkin_Purple_DiffSpec.tga",
+   "extracted_sha256": "b76f9b40b357a216dc8205728d1d808dadd6c8083ef3c7636da0ad5a77b98da6",
+   "output_file": "Content/Extracted/MaterialDatabase/Pumpkin/Pumpkin/Texture2D/Pumpkin_Purple_DiffSpec.tga",
+   "output_sha256": "b76f9b40b357a216dc8205728d1d808dadd6c8083ef3c7636da0ad5a77b98da6",
+   "uasset": "Content/Imported/MaterialDatabase/Pumpkin/MI_PumpkinPurple_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Pumpkin.upk#Pumpkin_DiffSpec",
+   "object": "Pumpkin_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Pumpkin/Pumpkin/Texture2D/Pumpkin_DiffSpec.tga",
+   "extracted_sha256": "8a545f489e92c4025c8f7c80f09fda20dcee46f46087cfab730bb5b3accf8842",
+   "output_file": "Content/Extracted/MaterialDatabase/Pumpkin/Pumpkin/Texture2D/Pumpkin_DiffSpec.tga",
+   "output_sha256": "8a545f489e92c4025c8f7c80f09fda20dcee46f46087cfab730bb5b3accf8842",
+   "uasset": "Content/Imported/MaterialDatabase/Pumpkin/Pumpkin_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Pumpkin.upk#Pumpkin_EmisOpac",
+   "object": "Pumpkin_EmisOpac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Pumpkin/Pumpkin/Texture2D/Pumpkin_EmisOpac.tga",
+   "extracted_sha256": "45bd1b1b27f457c969436731ce53fba67c13939e0db77bfa7c51bdd2a333c46b",
+   "output_file": "Content/Extracted/MaterialDatabase/Pumpkin/Pumpkin/Texture2D/Pumpkin_EmisOpac.tga",
+   "output_sha256": "45bd1b1b27f457c969436731ce53fba67c13939e0db77bfa7c51bdd2a333c46b",
+   "uasset": "Content/Imported/MaterialDatabase/Pumpkin/Pumpkin_EmisOpac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Pumpkin.upk#Pumpkin_Norm",
+   "object": "Pumpkin_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Pumpkin/Pumpkin/Texture2D/Pumpkin_Norm.tga",
+   "extracted_sha256": "19fb5c175e573f6e989c25ffec6a63b1f8bb77444efbd32a39ca4e0a035f80c2",
+   "output_file": "Content/Extracted/MaterialDatabase/Pumpkin/Pumpkin/Texture2D/Pumpkin_Norm.tga",
+   "output_sha256": "19fb5c175e573f6e989c25ffec6a63b1f8bb77444efbd32a39ca4e0a035f80c2",
+   "uasset": "Content/Imported/MaterialDatabase/Pumpkin/Pumpkin_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Pumpkin.upk#Pumpkin_Purple_DiffSpec",
+   "object": "Pumpkin_Purple_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Pumpkin/Pumpkin/Texture2D/Pumpkin_Purple_DiffSpec.tga",
+   "extracted_sha256": "b76f9b40b357a216dc8205728d1d808dadd6c8083ef3c7636da0ad5a77b98da6",
+   "output_file": "Content/Extracted/MaterialDatabase/Pumpkin/Pumpkin/Texture2D/Pumpkin_Purple_DiffSpec.tga",
+   "output_sha256": "b76f9b40b357a216dc8205728d1d808dadd6c8083ef3c7636da0ad5a77b98da6",
+   "uasset": "Content/Imported/MaterialDatabase/Pumpkin/Pumpkin_Purple_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Pumpkin.upk#Pumpkin_Purple_EmisOpac",
+   "object": "Pumpkin_Purple_EmisOpac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Pumpkin/Pumpkin/Texture2D/Pumpkin_Purple_EmisOpac.tga",
+   "extracted_sha256": "ae1be5a40409ab8ccfb23e558d3567443b6533ce0f2fd0e98c92773b69a1d56e",
+   "output_file": "Content/Extracted/MaterialDatabase/Pumpkin/Pumpkin/Texture2D/Pumpkin_Purple_EmisOpac.tga",
+   "output_sha256": "ae1be5a40409ab8ccfb23e558d3567443b6533ce0f2fd0e98c92773b69a1d56e",
+   "uasset": "Content/Imported/MaterialDatabase/Pumpkin/Pumpkin_Purple_EmisOpac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Pumpkin.upk#Pumpkin_Purple_Normal",
+   "object": "Pumpkin_Purple_Normal",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Pumpkin/Pumpkin/Texture2D/Pumpkin_Purple_Normal.tga",
+   "extracted_sha256": "f45d8027adca2ea38f26488f0bf07feb1f523eb91a902d2987ba068e614f7aac",
+   "output_file": "Content/Extracted/MaterialDatabase/Pumpkin/Pumpkin/Texture2D/Pumpkin_Purple_Normal.tga",
+   "output_sha256": "f45d8027adca2ea38f26488f0bf07feb1f523eb91a902d2987ba068e614f7aac",
+   "uasset": "Content/Imported/MaterialDatabase/Pumpkin/Pumpkin_Purple_Normal.uasset"
+  }
+ ]
+}

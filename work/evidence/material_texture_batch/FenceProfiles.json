@@ -1,0 +1,112 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FenceProfiles",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/RoadEditorMaterials/FenceProfiles.upk",
+ "source_sha256": "ae3daa7d2c193e2eae2bddeb412fc501b29e35b79ab18b6259ce0338116e8ff6",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/FenceProfiles.upk#Barb_Diff",
+   "object": "Barb_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FenceProfiles/Fence/Texture2D/Barb_Diff.tga",
+   "extracted_sha256": "a926ffb1ed7cc71bf5ecc9f5c2ecc8cfe461836244c6b49bb7dc07cc33351285",
+   "output_file": "Content/Extracted/MaterialDatabase/FenceProfiles/Fence/Texture2D/Barb_Diff.tga",
+   "output_sha256": "a926ffb1ed7cc71bf5ecc9f5c2ecc8cfe461836244c6b49bb7dc07cc33351285",
+   "uasset": "Content/Imported/MaterialDatabase/FenceProfiles/Barb_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/FenceProfiles.upk#Barb_Norm",
+   "object": "Barb_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FenceProfiles/Fence/Texture2D/Barb_Norm.tga",
+   "extracted_sha256": "0b13ce542fb630b0f22dea89afefdab71fbb01c092f7c1454507052eb2aa1a46",
+   "output_file": "Content/Extracted/MaterialDatabase/FenceProfiles/Fence/Texture2D/Barb_Norm.tga",
+   "output_sha256": "0b13ce542fb630b0f22dea89afefdab71fbb01c092f7c1454507052eb2aa1a46",
+   "uasset": "Content/Imported/MaterialDatabase/FenceProfiles/Barb_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/FenceProfiles.upk#Barb_Opacity",
+   "object": "Barb_Opacity",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FenceProfiles/Fence/Texture2D/Barb_Opacity.tga",
+   "extracted_sha256": "224441efd3a035f8a300ab67bc464b992105d53cb529ad437848236c956fe01b",
+   "output_file": "Content/Extracted/MaterialDatabase/FenceProfiles/Fence/Texture2D/Barb_Opacity.tga",
+   "output_sha256": "224441efd3a035f8a300ab67bc464b992105d53cb529ad437848236c956fe01b",
+   "uasset": "Content/Imported/MaterialDatabase/FenceProfiles/Barb_Opacity.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/FenceProfiles.upk#Fence_Diff",
+   "object": "Fence_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FenceProfiles/Fence/Texture2D/Fence_Diff.tga",
+   "extracted_sha256": "28ac13c61aa7cb5c5d7a3fa9cd7ae8a55763593ed22874c798efbc9df5bd7675",
+   "output_file": "Content/Extracted/MaterialDatabase/FenceProfiles/Fence/Texture2D/Fence_Diff.tga",
+   "output_sha256": "28ac13c61aa7cb5c5d7a3fa9cd7ae8a55763593ed22874c798efbc9df5bd7675",
+   "uasset": "Content/Imported/MaterialDatabase/FenceProfiles/Fence_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/FenceProfiles.upk#Fence_Norm",
+   "object": "Fence_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FenceProfiles/Fence/Texture2D/Fence_Norm.tga",
+   "extracted_sha256": "2e1e57bfb3c289d43fd16348fb41c5f450dda6e9804e5ac5730670964813a152",
+   "output_file": "Content/Extracted/MaterialDatabase/FenceProfiles/Fence/Texture2D/Fence_Norm.tga",
+   "output_sha256": "2e1e57bfb3c289d43fd16348fb41c5f450dda6e9804e5ac5730670964813a152",
+   "uasset": "Content/Imported/MaterialDatabase/FenceProfiles/Fence_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/FenceProfiles.upk#Fence_Opacity",
+   "object": "Fence_Opacity",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FenceProfiles/Fence/Texture2D/Fence_Opacity.tga",
+   "extracted_sha256": "b555fb9c5457d2490c9d7760f6cccd622d066378118037c4fac7e4e9933b03dd",
+   "output_file": "Content/Extracted/MaterialDatabase/FenceProfiles/Fence/Texture2D/Fence_Opacity.tga",
+   "output_sha256": "b555fb9c5457d2490c9d7760f6cccd622d066378118037c4fac7e4e9933b03dd",
+   "uasset": "Content/Imported/MaterialDatabase/FenceProfiles/Fence_Opacity.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/FenceProfiles.upk#MI_BarbWire_Profile_DO_NOT_USE",
+   "object": "MI_BarbWire_Profile_DO_NOT_USE",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "BarbWire_Profile_DO_NOT_USE",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FenceProfiles/Fence/Texture2D/Barb_Diff.tga",
+   "extracted_sha256": "a926ffb1ed7cc71bf5ecc9f5c2ecc8cfe461836244c6b49bb7dc07cc33351285",
+   "output_file": "Content/Extracted/MaterialDatabase/FenceProfiles/Fence/Texture2D/Barb_Diff.tga",
+   "output_sha256": "a926ffb1ed7cc71bf5ecc9f5c2ecc8cfe461836244c6b49bb7dc07cc33351285",
+   "uasset": "Content/Imported/MaterialDatabase/FenceProfiles/MI_BarbWire_Profile_DO_NOT_USE.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/FenceProfiles.upk#MI_ChainlinkFenceProfile_DO_NOT_USE",
+   "object": "MI_ChainlinkFenceProfile_DO_NOT_USE",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "ChainlinkFenceProfile_DO_NOT_USE",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FenceProfiles/Fence/Texture2D/Fence_Diff.tga",
+   "extracted_sha256": "28ac13c61aa7cb5c5d7a3fa9cd7ae8a55763593ed22874c798efbc9df5bd7675",
+   "output_file": "Content/Extracted/MaterialDatabase/FenceProfiles/Fence/Texture2D/Fence_Diff.tga",
+   "output_sha256": "28ac13c61aa7cb5c5d7a3fa9cd7ae8a55763593ed22874c798efbc9df5bd7675",
+   "uasset": "Content/Imported/MaterialDatabase/FenceProfiles/MI_ChainlinkFenceProfile_DO_NOT_USE.uasset"
+  }
+ ]
+}

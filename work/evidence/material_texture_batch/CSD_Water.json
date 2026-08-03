@@ -1,0 +1,34 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "CSD_Water",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/Water/CSD_Water.upk",
+ "source_sha256": "687b7452da69e162ac076af984b4e0393039f48c34e401657463bea8f7789332",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Water/CSD_Water.upk#ColouredClouds_Dup",
+   "object": "ColouredClouds_Dup",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Water/CSD_Water/Texture2D/ColouredClouds_Dup.tga",
+   "extracted_sha256": "bf7f8d906995738af9a3cb2ef40d73c3d02d7203ea329375a1562464b5e02e79",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Water/CSD_Water/Texture2D/ColouredClouds_Dup.tga",
+   "output_sha256": "bf7f8d906995738af9a3cb2ef40d73c3d02d7203ea329375a1562464b5e02e79",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Water/ColouredClouds_Dup.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Water/CSD_Water.upk#MI_Rough_Foam_Dup",
+   "object": "MI_Rough_Foam_Dup",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Rough_Foam_Dup",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Water/CSD_Water/Texture2D/ColouredClouds_Dup.tga",
+   "extracted_sha256": "bf7f8d906995738af9a3cb2ef40d73c3d02d7203ea329375a1562464b5e02e79",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Water/CSD_Water/Texture2D/ColouredClouds_Dup.tga",
+   "output_sha256": "bf7f8d906995738af9a3cb2ef40d73c3d02d7203ea329375a1562464b5e02e79",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Water/MI_Rough_Foam_Dup.uasset"
+  }
+ ]
+}

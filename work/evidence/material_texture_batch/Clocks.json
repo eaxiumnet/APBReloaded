@@ -1,0 +1,60 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Clocks",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/FeatureMaterials/Clocks.upk",
+ "source_sha256": "0e73b9ffd730365bacbb48a06e38044e48fa74480e72e478ba2e25fb45ce8831",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Clocks.upk#Clocks_HourHand_Norm",
+   "object": "Clocks_HourHand_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Clocks/Clocks/Texture2D/Clocks_HourHand_Norm.tga",
+   "extracted_sha256": "186799a7f36ab197a7182a8e6cfbcecfcc4b48d13dd4d7be6c9eb1285f95fc38",
+   "output_file": "Content/Extracted/MaterialDatabase/Clocks/Clocks/Texture2D/Clocks_HourHand_Norm.tga",
+   "output_sha256": "186799a7f36ab197a7182a8e6cfbcecfcc4b48d13dd4d7be6c9eb1285f95fc38",
+   "uasset": "Content/Imported/MaterialDatabase/Clocks/Clocks_HourHand_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Clocks.upk#Clocks_Main_DiffSpec",
+   "object": "Clocks_Main_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Clocks/Clocks/Texture2D/Clocks_Main_DiffSpec.tga",
+   "extracted_sha256": "227cdd8313ba9e9188de3d93e032bbd53e91de7dfe901213b82caef8f814fca4",
+   "output_file": "Content/Extracted/MaterialDatabase/Clocks/Clocks/Texture2D/Clocks_Main_DiffSpec.tga",
+   "output_sha256": "227cdd8313ba9e9188de3d93e032bbd53e91de7dfe901213b82caef8f814fca4",
+   "uasset": "Content/Imported/MaterialDatabase/Clocks/Clocks_Main_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Clocks.upk#Clocks_Main_Emis",
+   "object": "Clocks_Main_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Clocks/Clocks/Texture2D/Clocks_Main_Emis.tga",
+   "extracted_sha256": "b653288299635e825a825dc89dc462bdb4bed2a958421593e2cc878338be7704",
+   "output_file": "Content/Extracted/MaterialDatabase/Clocks/Clocks/Texture2D/Clocks_Main_Emis.tga",
+   "output_sha256": "b653288299635e825a825dc89dc462bdb4bed2a958421593e2cc878338be7704",
+   "uasset": "Content/Imported/MaterialDatabase/Clocks/Clocks_Main_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Clocks.upk#MI_Clock_Mat",
+   "object": "MI_Clock_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Clock_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Clocks/Clocks/Texture2D/Clocks_Main_DiffSpec.tga",
+   "extracted_sha256": "227cdd8313ba9e9188de3d93e032bbd53e91de7dfe901213b82caef8f814fca4",
+   "output_file": "Content/Extracted/MaterialDatabase/Clocks/Clocks/Texture2D/Clocks_Main_DiffSpec.tga",
+   "output_sha256": "227cdd8313ba9e9188de3d93e032bbd53e91de7dfe901213b82caef8f814fca4",
+   "uasset": "Content/Imported/MaterialDatabase/Clocks/MI_Clock_Mat.uasset"
+  }
+ ]
+}

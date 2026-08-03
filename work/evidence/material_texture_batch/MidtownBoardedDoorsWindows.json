@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "MidtownBoardedDoorsWindows",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/FeatureMaterials/MidtownBoardedDoorsWindows.upk",
+ "source_sha256": "742d51fe6a8866f5a16081bf54cf3af23561d909da0719a01ac6f973f8e9fa6b",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/MidtownBoardedDoorsWindows.upk#BoardedDoorsWindows_DiffSpec",
+   "object": "BoardedDoorsWindows_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/MidtownBoardedDoorsWindows/MidtownBoardedDoorsWindows/Texture2D/BoardedDoorsWindows_DiffSpec.tga",
+   "extracted_sha256": "65d3395da1688e380603b52cff7ed5a63aa082749218c73ab14e3c29bae36730",
+   "output_file": "Content/Extracted/MaterialDatabase/MidtownBoardedDoorsWindows/MidtownBoardedDoorsWindows/Texture2D/BoardedDoorsWindows_DiffSpec.tga",
+   "output_sha256": "65d3395da1688e380603b52cff7ed5a63aa082749218c73ab14e3c29bae36730",
+   "uasset": "Content/Imported/MaterialDatabase/MidtownBoardedDoorsWindows/BoardedDoorsWindows_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/MidtownBoardedDoorsWindows.upk#BoardedDoorsWindows_Norm",
+   "object": "BoardedDoorsWindows_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/MidtownBoardedDoorsWindows/MidtownBoardedDoorsWindows/Texture2D/BoardedDoorsWindows_Norm.tga",
+   "extracted_sha256": "4227485eac6b229559b601bc3ed36a870da29afab0825bc87e64eba091760fe4",
+   "output_file": "Content/Extracted/MaterialDatabase/MidtownBoardedDoorsWindows/MidtownBoardedDoorsWindows/Texture2D/BoardedDoorsWindows_Norm.tga",
+   "output_sha256": "4227485eac6b229559b601bc3ed36a870da29afab0825bc87e64eba091760fe4",
+   "uasset": "Content/Imported/MaterialDatabase/MidtownBoardedDoorsWindows/BoardedDoorsWindows_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/MidtownBoardedDoorsWindows.upk#MI_MidtownBoardedDoorsWindows_MAT",
+   "object": "MI_MidtownBoardedDoorsWindows_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "MidtownBoardedDoorsWindows_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/MidtownBoardedDoorsWindows/MidtownBoardedDoorsWindows/Texture2D/BoardedDoorsWindows_DiffSpec.tga",
+   "extracted_sha256": "65d3395da1688e380603b52cff7ed5a63aa082749218c73ab14e3c29bae36730",
+   "output_file": "Content/Extracted/MaterialDatabase/MidtownBoardedDoorsWindows/MidtownBoardedDoorsWindows/Texture2D/BoardedDoorsWindows_DiffSpec.tga",
+   "output_sha256": "65d3395da1688e380603b52cff7ed5a63aa082749218c73ab14e3c29bae36730",
+   "uasset": "Content/Imported/MaterialDatabase/MidtownBoardedDoorsWindows/MI_MidtownBoardedDoorsWindows_MAT.uasset"
+  }
+ ]
+}

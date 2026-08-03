@@ -1,0 +1,114 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "RWorld_WallPanels",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/RWorldSocialDistrict/Props/RWorld_WallPanels.upk",
+ "source_sha256": "c9c37e4e7adf10d0f51d0f8507ae5e4f742cea4678234871ca720cb46373d56c",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_WallPanels.upk#ColourBars2",
+   "object": "ColourBars2",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_WallPanels/RWorld_WallPanels/Texture2D/ColourBars2.tga",
+   "extracted_sha256": "1814fcd3040e2dc83341ddf51ced1b3af15fccc52058da74f02fb00ea642c85f",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_WallPanels/RWorld_WallPanels/Texture2D/ColourBars2.tga",
+   "output_sha256": "1814fcd3040e2dc83341ddf51ced1b3af15fccc52058da74f02fb00ea642c85f",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_WallPanels/ColourBars2.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_WallPanels.upk#MI_Equalizer_MAT",
+   "object": "MI_Equalizer_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Equalizer_MAT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_WallPanels/RWorld_WallPanels/Texture2D/ColourBars2.tga",
+   "extracted_sha256": "1814fcd3040e2dc83341ddf51ced1b3af15fccc52058da74f02fb00ea642c85f",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_WallPanels/RWorld_WallPanels/Texture2D/ColourBars2.tga",
+   "output_sha256": "1814fcd3040e2dc83341ddf51ced1b3af15fccc52058da74f02fb00ea642c85f",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_WallPanels/MI_Equalizer_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_WallPanels.upk#MI_Monitor_MAT",
+   "object": "MI_Monitor_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Monitor_MAT",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_WallPanels/RWorld_ShowRoom_Props/Texture2D/Monitor_Norm.tga",
+   "extracted_sha256": "8f0f47c2df12d234eeee299259d9730d69dc15c4e44940bd2ccd48a84172e0f1",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_WallPanels/RWorld_ShowRoom_Props/Texture2D/Monitor_Norm.tga",
+   "output_sha256": "8f0f47c2df12d234eeee299259d9730d69dc15c4e44940bd2ccd48a84172e0f1",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_WallPanels/MI_Monitor_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_WallPanels.upk#MI_WallPanels_2_MAT",
+   "object": "MI_WallPanels_2_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WallPanels_2_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_WallPanels/RWorld_WallPanels/Texture2D/WallPanel_2_Emis.tga",
+   "extracted_sha256": "30638422b5683862b63005d00cc40b2d8baca785c5ca12ec1b9c77932bfb74e7",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_WallPanels/RWorld_WallPanels/Texture2D/WallPanel_2_Emis.tga",
+   "output_sha256": "30638422b5683862b63005d00cc40b2d8baca785c5ca12ec1b9c77932bfb74e7",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_WallPanels/MI_WallPanels_2_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_WallPanels.upk#MI_WallPanels_MAT",
+   "object": "MI_WallPanels_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WallPanels_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_WallPanels/RWorld_WallPanels/Texture2D/WallPanel_Emis.tga",
+   "extracted_sha256": "4d22244599c1ed93b95e55e1076efab0d54f9e10ffca68219e5da82f6ecf1015",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_WallPanels/RWorld_WallPanels/Texture2D/WallPanel_Emis.tga",
+   "output_sha256": "4d22244599c1ed93b95e55e1076efab0d54f9e10ffca68219e5da82f6ecf1015",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_WallPanels/MI_WallPanels_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_WallPanels.upk#Monitor_Norm",
+   "object": "Monitor_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_WallPanels/RWorld_ShowRoom_Props/Texture2D/Monitor_Norm.tga",
+   "extracted_sha256": "8f0f47c2df12d234eeee299259d9730d69dc15c4e44940bd2ccd48a84172e0f1",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_WallPanels/RWorld_ShowRoom_Props/Texture2D/Monitor_Norm.tga",
+   "output_sha256": "8f0f47c2df12d234eeee299259d9730d69dc15c4e44940bd2ccd48a84172e0f1",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_WallPanels/Monitor_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_WallPanels.upk#WallPanel_2_Emis",
+   "object": "WallPanel_2_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_WallPanels/RWorld_WallPanels/Texture2D/WallPanel_2_Emis.tga",
+   "extracted_sha256": "30638422b5683862b63005d00cc40b2d8baca785c5ca12ec1b9c77932bfb74e7",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_WallPanels/RWorld_WallPanels/Texture2D/WallPanel_2_Emis.tga",
+   "output_sha256": "30638422b5683862b63005d00cc40b2d8baca785c5ca12ec1b9c77932bfb74e7",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_WallPanels/WallPanel_2_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_WallPanels.upk#WallPanel_Emis",
+   "object": "WallPanel_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_WallPanels/RWorld_WallPanels/Texture2D/WallPanel_Emis.tga",
+   "extracted_sha256": "4d22244599c1ed93b95e55e1076efab0d54f9e10ffca68219e5da82f6ecf1015",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_WallPanels/RWorld_WallPanels/Texture2D/WallPanel_Emis.tga",
+   "output_sha256": "4d22244599c1ed93b95e55e1076efab0d54f9e10ffca68219e5da82f6ecf1015",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_WallPanels/WallPanel_Emis.uasset"
+  }
+ ]
+}

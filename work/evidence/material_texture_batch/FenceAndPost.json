@@ -1,0 +1,48 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FenceAndPost",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/Fence/FenceAndPost.upk",
+ "source_sha256": "a0170f01602f8c12000c99308a09ab80429224aaa2ec37082796bdb86c5ba775",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Fence/FenceAndPost.upk#FenceAndPostDiffSpec",
+   "object": "FenceAndPostDiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FenceAndPost/FenceAndPost/Texture2D/FenceAndPostDiffSpec.tga",
+   "extracted_sha256": "fa6931ef3c3805adc8cb11129380bb4f6e2ad4596e707f42bd1bf84151533f90",
+   "output_file": "Content/Extracted/MaterialDatabase/FenceAndPost/FenceAndPost/Texture2D/FenceAndPostDiffSpec.tga",
+   "output_sha256": "fa6931ef3c3805adc8cb11129380bb4f6e2ad4596e707f42bd1bf84151533f90",
+   "uasset": "Content/Imported/MaterialDatabase/FenceAndPost/FenceAndPostDiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Fence/FenceAndPost.upk#FenceAndPostNormOpac",
+   "object": "FenceAndPostNormOpac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FenceAndPost/FenceAndPost/Texture2D/FenceAndPostNormOpac.tga",
+   "extracted_sha256": "73ef7c3227fda1292524db4f318868f2a794369197111630fe0a6a7e7ee85124",
+   "output_file": "Content/Extracted/MaterialDatabase/FenceAndPost/FenceAndPost/Texture2D/FenceAndPostNormOpac.tga",
+   "output_sha256": "73ef7c3227fda1292524db4f318868f2a794369197111630fe0a6a7e7ee85124",
+   "uasset": "Content/Imported/MaterialDatabase/FenceAndPost/FenceAndPostNormOpac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Fence/FenceAndPost.upk#MI_fenceandpost",
+   "object": "MI_fenceandpost",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "fenceandpost",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FenceAndPost/FenceAndPost/Texture2D/FenceAndPostDiffSpec.tga",
+   "extracted_sha256": "fa6931ef3c3805adc8cb11129380bb4f6e2ad4596e707f42bd1bf84151533f90",
+   "output_file": "Content/Extracted/MaterialDatabase/FenceAndPost/FenceAndPost/Texture2D/FenceAndPostDiffSpec.tga",
+   "output_sha256": "fa6931ef3c3805adc8cb11129380bb4f6e2ad4596e707f42bd1bf84151533f90",
+   "uasset": "Content/Imported/MaterialDatabase/FenceAndPost/MI_fenceandpost.uasset"
+  }
+ ]
+}

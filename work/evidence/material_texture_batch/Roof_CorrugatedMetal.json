@@ -1,0 +1,946 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Roof_CorrugatedMetal",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk",
+ "source_sha256": "7c0b5e7b5b79cc7f303f65d615eb1794acb82f1c479ee461bd2c4b50b3cc324c",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#CorrugatedMetal_Wave_Metal_DiffSpec",
+   "object": "CorrugatedMetal_Wave_Metal_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/CorrugatedMetal_Wave_Metal_DiffSpec.tga",
+   "extracted_sha256": "6425392382f66b78f3b458091f226df06deb3c8e9c26a42cebfee5c80479f79f",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/CorrugatedMetal_Wave_Metal_DiffSpec.tga",
+   "output_sha256": "6425392382f66b78f3b458091f226df06deb3c8e9c26a42cebfee5c80479f79f",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/CorrugatedMetal_Wave_Metal_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#CorrugatedMetal_Wave_NormDisp",
+   "object": "CorrugatedMetal_Wave_NormDisp",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/CorrugatedMetal_Wave_NormDisp.tga",
+   "extracted_sha256": "af67a930cce714eb1b38e4d0cbc1aef5e9461bab66c221c98dff7d6f318f70dd",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/CorrugatedMetal_Wave_NormDisp.tga",
+   "output_sha256": "af67a930cce714eb1b38e4d0cbc1aef5e9461bab66c221c98dff7d6f318f70dd",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/CorrugatedMetal_Wave_NormDisp.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#CorrugatedMetal_Wave_Paint_DiffSpec",
+   "object": "CorrugatedMetal_Wave_Paint_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/CorrugatedMetal_Wave_Paint_DiffSpec.tga",
+   "extracted_sha256": "554cc559aa1fa6be5c8d3b30ffb319c5c322bd6442ac786bd73c5fe27b8e9844",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/CorrugatedMetal_Wave_Paint_DiffSpec.tga",
+   "output_sha256": "554cc559aa1fa6be5c8d3b30ffb319c5c322bd6442ac786bd73c5fe27b8e9844",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/CorrugatedMetal_Wave_Paint_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_CorrugatedMetal_Wave_Metal_Mat",
+   "object": "MI_CorrugatedMetal_Wave_Metal_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CorrugatedMetal_Wave_Metal_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/CorrugatedMetal_Wave_Metal_DiffSpec.tga",
+   "extracted_sha256": "6425392382f66b78f3b458091f226df06deb3c8e9c26a42cebfee5c80479f79f",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/CorrugatedMetal_Wave_Metal_DiffSpec.tga",
+   "output_sha256": "6425392382f66b78f3b458091f226df06deb3c8e9c26a42cebfee5c80479f79f",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_CorrugatedMetal_Wave_Metal_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_CorrugatedMetal_Wave_Metal_Mat_Rust",
+   "object": "MI_CorrugatedMetal_Wave_Metal_Mat_Rust",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CorrugatedMetal_Wave_Metal_Mat_Rust",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/CorrugatedMetal_Wave_Metal_DiffSpec.tga",
+   "extracted_sha256": "6425392382f66b78f3b458091f226df06deb3c8e9c26a42cebfee5c80479f79f",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/CorrugatedMetal_Wave_Metal_DiffSpec.tga",
+   "output_sha256": "6425392382f66b78f3b458091f226df06deb3c8e9c26a42cebfee5c80479f79f",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_CorrugatedMetal_Wave_Metal_Mat_Rust.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_CorrugatedMetal_Wave_Paint_Blue",
+   "object": "MI_CorrugatedMetal_Wave_Paint_Blue",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CorrugatedMetal_Wave_Paint_Blue",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/CorrugatedMetal_Wave_Paint_DiffSpec.tga",
+   "extracted_sha256": "554cc559aa1fa6be5c8d3b30ffb319c5c322bd6442ac786bd73c5fe27b8e9844",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/CorrugatedMetal_Wave_Paint_DiffSpec.tga",
+   "output_sha256": "554cc559aa1fa6be5c8d3b30ffb319c5c322bd6442ac786bd73c5fe27b8e9844",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_CorrugatedMetal_Wave_Paint_Blue.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_CorrugatedMetal_Wave_Paint_Blue_Rust",
+   "object": "MI_CorrugatedMetal_Wave_Paint_Blue_Rust",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CorrugatedMetal_Wave_Paint_Blue_Rust",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/CorrugatedMetal_Wave_Paint_DiffSpec.tga",
+   "extracted_sha256": "554cc559aa1fa6be5c8d3b30ffb319c5c322bd6442ac786bd73c5fe27b8e9844",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/CorrugatedMetal_Wave_Paint_DiffSpec.tga",
+   "output_sha256": "554cc559aa1fa6be5c8d3b30ffb319c5c322bd6442ac786bd73c5fe27b8e9844",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_CorrugatedMetal_Wave_Paint_Blue_Rust.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_CorrugatedMetal_Wave_Paint_Brown",
+   "object": "MI_CorrugatedMetal_Wave_Paint_Brown",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CorrugatedMetal_Wave_Paint_Brown",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/CorrugatedMetal_Wave_Paint_DiffSpec.tga",
+   "extracted_sha256": "554cc559aa1fa6be5c8d3b30ffb319c5c322bd6442ac786bd73c5fe27b8e9844",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/CorrugatedMetal_Wave_Paint_DiffSpec.tga",
+   "output_sha256": "554cc559aa1fa6be5c8d3b30ffb319c5c322bd6442ac786bd73c5fe27b8e9844",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_CorrugatedMetal_Wave_Paint_Brown.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_CorrugatedMetal_Wave_Paint_Brown_Rust",
+   "object": "MI_CorrugatedMetal_Wave_Paint_Brown_Rust",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CorrugatedMetal_Wave_Paint_Brown_Rust",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/CorrugatedMetal_Wave_Paint_DiffSpec.tga",
+   "extracted_sha256": "554cc559aa1fa6be5c8d3b30ffb319c5c322bd6442ac786bd73c5fe27b8e9844",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/CorrugatedMetal_Wave_Paint_DiffSpec.tga",
+   "output_sha256": "554cc559aa1fa6be5c8d3b30ffb319c5c322bd6442ac786bd73c5fe27b8e9844",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_CorrugatedMetal_Wave_Paint_Brown_Rust.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_CorrugatedMetal_Wave_Paint_Brown_Rust_Graffiti",
+   "object": "MI_CorrugatedMetal_Wave_Paint_Brown_Rust_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CorrugatedMetal_Wave_Paint_Brown_Rust_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/CorrugatedMetal_Wave_Paint_DiffSpec.tga",
+   "extracted_sha256": "554cc559aa1fa6be5c8d3b30ffb319c5c322bd6442ac786bd73c5fe27b8e9844",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/CorrugatedMetal_Wave_Paint_DiffSpec.tga",
+   "output_sha256": "554cc559aa1fa6be5c8d3b30ffb319c5c322bd6442ac786bd73c5fe27b8e9844",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_CorrugatedMetal_Wave_Paint_Brown_Rust_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_CorrugatedMetal_Wave_Paint_Green",
+   "object": "MI_CorrugatedMetal_Wave_Paint_Green",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CorrugatedMetal_Wave_Paint_Green",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/CorrugatedMetal_Wave_Paint_DiffSpec.tga",
+   "extracted_sha256": "554cc559aa1fa6be5c8d3b30ffb319c5c322bd6442ac786bd73c5fe27b8e9844",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/CorrugatedMetal_Wave_Paint_DiffSpec.tga",
+   "output_sha256": "554cc559aa1fa6be5c8d3b30ffb319c5c322bd6442ac786bd73c5fe27b8e9844",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_CorrugatedMetal_Wave_Paint_Green.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_CorrugatedMetal_Wave_Paint_Green_Rust",
+   "object": "MI_CorrugatedMetal_Wave_Paint_Green_Rust",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CorrugatedMetal_Wave_Paint_Green_Rust",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/CorrugatedMetal_Wave_Paint_DiffSpec.tga",
+   "extracted_sha256": "554cc559aa1fa6be5c8d3b30ffb319c5c322bd6442ac786bd73c5fe27b8e9844",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/CorrugatedMetal_Wave_Paint_DiffSpec.tga",
+   "output_sha256": "554cc559aa1fa6be5c8d3b30ffb319c5c322bd6442ac786bd73c5fe27b8e9844",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_CorrugatedMetal_Wave_Paint_Green_Rust.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_CorrugatedMetal_Wave_Paint_Mat",
+   "object": "MI_CorrugatedMetal_Wave_Paint_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CorrugatedMetal_Wave_Paint_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/CorrugatedMetal_Wave_Paint_DiffSpec.tga",
+   "extracted_sha256": "554cc559aa1fa6be5c8d3b30ffb319c5c322bd6442ac786bd73c5fe27b8e9844",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/CorrugatedMetal_Wave_Paint_DiffSpec.tga",
+   "output_sha256": "554cc559aa1fa6be5c8d3b30ffb319c5c322bd6442ac786bd73c5fe27b8e9844",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_CorrugatedMetal_Wave_Paint_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_CorrugatedMetal_Wave_Paint_Mat_Rust",
+   "object": "MI_CorrugatedMetal_Wave_Paint_Mat_Rust",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CorrugatedMetal_Wave_Paint_Mat_Rust",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/CorrugatedMetal_Wave_Paint_DiffSpec.tga",
+   "extracted_sha256": "554cc559aa1fa6be5c8d3b30ffb319c5c322bd6442ac786bd73c5fe27b8e9844",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/CorrugatedMetal_Wave_Paint_DiffSpec.tga",
+   "output_sha256": "554cc559aa1fa6be5c8d3b30ffb319c5c322bd6442ac786bd73c5fe27b8e9844",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_CorrugatedMetal_Wave_Paint_Mat_Rust.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_CorrugatedMetal_Wave_Paint_Red",
+   "object": "MI_CorrugatedMetal_Wave_Paint_Red",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CorrugatedMetal_Wave_Paint_Red",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/CorrugatedMetal_Wave_Paint_DiffSpec.tga",
+   "extracted_sha256": "554cc559aa1fa6be5c8d3b30ffb319c5c322bd6442ac786bd73c5fe27b8e9844",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/CorrugatedMetal_Wave_Paint_DiffSpec.tga",
+   "output_sha256": "554cc559aa1fa6be5c8d3b30ffb319c5c322bd6442ac786bd73c5fe27b8e9844",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_CorrugatedMetal_Wave_Paint_Red.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_CorrugatedMetal_Wave_Paint_Red_Rust",
+   "object": "MI_CorrugatedMetal_Wave_Paint_Red_Rust",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CorrugatedMetal_Wave_Paint_Red_Rust",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/CorrugatedMetal_Wave_Paint_DiffSpec.tga",
+   "extracted_sha256": "554cc559aa1fa6be5c8d3b30ffb319c5c322bd6442ac786bd73c5fe27b8e9844",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/CorrugatedMetal_Wave_Paint_DiffSpec.tga",
+   "output_sha256": "554cc559aa1fa6be5c8d3b30ffb319c5c322bd6442ac786bd73c5fe27b8e9844",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_CorrugatedMetal_Wave_Paint_Red_Rust.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_CorrugatedMetal_Wave_Paint_Red_Rust_Graffiti",
+   "object": "MI_CorrugatedMetal_Wave_Paint_Red_Rust_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CorrugatedMetal_Wave_Paint_Red_Rust_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/CorrugatedMetal_Wave_Paint_DiffSpec.tga",
+   "extracted_sha256": "554cc559aa1fa6be5c8d3b30ffb319c5c322bd6442ac786bd73c5fe27b8e9844",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/CorrugatedMetal_Wave_Paint_DiffSpec.tga",
+   "output_sha256": "554cc559aa1fa6be5c8d3b30ffb319c5c322bd6442ac786bd73c5fe27b8e9844",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_CorrugatedMetal_Wave_Paint_Red_Rust_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_Roof_CorrugatedMetal_Green",
+   "object": "MI_Roof_CorrugatedMetal_Green",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_CorrugatedMetal_Green",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "extracted_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "output_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_Roof_CorrugatedMetal_Green.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_Roof_CorrugatedMetal_Green_Graffiti",
+   "object": "MI_Roof_CorrugatedMetal_Green_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_CorrugatedMetal_Green_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "extracted_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "output_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_Roof_CorrugatedMetal_Green_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_Roof_CorrugatedMetal_Green_Graffiti_Rust",
+   "object": "MI_Roof_CorrugatedMetal_Green_Graffiti_Rust",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_CorrugatedMetal_Green_Graffiti_Rust",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "extracted_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "output_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_Roof_CorrugatedMetal_Green_Graffiti_Rust.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_Roof_CorrugatedMetal_Green_Rust",
+   "object": "MI_Roof_CorrugatedMetal_Green_Rust",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_CorrugatedMetal_Green_Rust",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "extracted_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "output_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_Roof_CorrugatedMetal_Green_Rust.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_Roof_CorrugatedMetal_GreyOrange",
+   "object": "MI_Roof_CorrugatedMetal_GreyOrange",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_CorrugatedMetal_GreyOrange",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "extracted_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "output_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_Roof_CorrugatedMetal_GreyOrange.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_Roof_CorrugatedMetal_GreyOrange_Graffiti",
+   "object": "MI_Roof_CorrugatedMetal_GreyOrange_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_CorrugatedMetal_GreyOrange_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "extracted_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "output_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_Roof_CorrugatedMetal_GreyOrange_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_Roof_CorrugatedMetal_GreyOrange_Graffiti_Rust",
+   "object": "MI_Roof_CorrugatedMetal_GreyOrange_Graffiti_Rust",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_CorrugatedMetal_GreyOrange_Graffiti_Rust",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "extracted_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "output_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_Roof_CorrugatedMetal_GreyOrange_Graffiti_Rust.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_Roof_CorrugatedMetal_GreyOrange_Rust",
+   "object": "MI_Roof_CorrugatedMetal_GreyOrange_Rust",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_CorrugatedMetal_GreyOrange_Rust",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "extracted_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "output_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_Roof_CorrugatedMetal_GreyOrange_Rust.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_Roof_CorrugatedMetal_LightGreen",
+   "object": "MI_Roof_CorrugatedMetal_LightGreen",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_CorrugatedMetal_LightGreen",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "extracted_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "output_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_Roof_CorrugatedMetal_LightGreen.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_Roof_CorrugatedMetal_LightGreen_Graffiti",
+   "object": "MI_Roof_CorrugatedMetal_LightGreen_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_CorrugatedMetal_LightGreen_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "extracted_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "output_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_Roof_CorrugatedMetal_LightGreen_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_Roof_CorrugatedMetal_LightGreen_Graffiti_Rust",
+   "object": "MI_Roof_CorrugatedMetal_LightGreen_Graffiti_Rust",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_CorrugatedMetal_LightGreen_Graffiti_Rust",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "extracted_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "output_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_Roof_CorrugatedMetal_LightGreen_Graffiti_Rust.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_Roof_CorrugatedMetal_LightGreen_Rust",
+   "object": "MI_Roof_CorrugatedMetal_LightGreen_Rust",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_CorrugatedMetal_LightGreen_Rust",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "extracted_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "output_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_Roof_CorrugatedMetal_LightGreen_Rust.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_Roof_CorrugatedMetal_PARENT",
+   "object": "MI_Roof_CorrugatedMetal_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_CorrugatedMetal_PARENT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "extracted_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "output_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_Roof_CorrugatedMetal_PARENT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_Roof_CorrugatedMetal_PARENT_OOB",
+   "object": "MI_Roof_CorrugatedMetal_PARENT_OOB",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_CorrugatedMetal_PARENT_OOB",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "extracted_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "output_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_Roof_CorrugatedMetal_PARENT_OOB.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_Roof_CorrugatedMetal_Red",
+   "object": "MI_Roof_CorrugatedMetal_Red",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_CorrugatedMetal_Red",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "extracted_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "output_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_Roof_CorrugatedMetal_Red.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_Roof_CorrugatedMetal_Red_Graffiti",
+   "object": "MI_Roof_CorrugatedMetal_Red_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_CorrugatedMetal_Red_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "extracted_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "output_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_Roof_CorrugatedMetal_Red_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_Roof_CorrugatedMetal_Red_Graffiti_Rust",
+   "object": "MI_Roof_CorrugatedMetal_Red_Graffiti_Rust",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_CorrugatedMetal_Red_Graffiti_Rust",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "extracted_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "output_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_Roof_CorrugatedMetal_Red_Graffiti_Rust.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_Roof_CorrugatedMetal_Red_Rust",
+   "object": "MI_Roof_CorrugatedMetal_Red_Rust",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_CorrugatedMetal_Red_Rust",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "extracted_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "output_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_Roof_CorrugatedMetal_Red_Rust.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_Roof_CorrugatedMetal_Variation_Blue",
+   "object": "MI_Roof_CorrugatedMetal_Variation_Blue",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_CorrugatedMetal_Variation_Blue",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Variation_DiffSpec.tga",
+   "extracted_sha256": "2db8f0671b17a93310eb9b2f7746fa94c742e2e7d1307fbf1eb569f770739c2f",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Variation_DiffSpec.tga",
+   "output_sha256": "2db8f0671b17a93310eb9b2f7746fa94c742e2e7d1307fbf1eb569f770739c2f",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_Roof_CorrugatedMetal_Variation_Blue.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_Roof_CorrugatedMetal_Variation_Blue_Graffiti",
+   "object": "MI_Roof_CorrugatedMetal_Variation_Blue_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_CorrugatedMetal_Variation_Blue_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Variation_DiffSpec.tga",
+   "extracted_sha256": "2db8f0671b17a93310eb9b2f7746fa94c742e2e7d1307fbf1eb569f770739c2f",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Variation_DiffSpec.tga",
+   "output_sha256": "2db8f0671b17a93310eb9b2f7746fa94c742e2e7d1307fbf1eb569f770739c2f",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_Roof_CorrugatedMetal_Variation_Blue_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_Roof_CorrugatedMetal_Variation_Blue_Graffiti_Rust",
+   "object": "MI_Roof_CorrugatedMetal_Variation_Blue_Graffiti_Rust",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_CorrugatedMetal_Variation_Blue_Graffiti_Rust",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Variation_DiffSpec.tga",
+   "extracted_sha256": "2db8f0671b17a93310eb9b2f7746fa94c742e2e7d1307fbf1eb569f770739c2f",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Variation_DiffSpec.tga",
+   "output_sha256": "2db8f0671b17a93310eb9b2f7746fa94c742e2e7d1307fbf1eb569f770739c2f",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_Roof_CorrugatedMetal_Variation_Blue_Graffiti_Rust.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_Roof_CorrugatedMetal_Variation_Blue_Rust",
+   "object": "MI_Roof_CorrugatedMetal_Variation_Blue_Rust",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_CorrugatedMetal_Variation_Blue_Rust",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Variation_DiffSpec.tga",
+   "extracted_sha256": "2db8f0671b17a93310eb9b2f7746fa94c742e2e7d1307fbf1eb569f770739c2f",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Variation_DiffSpec.tga",
+   "output_sha256": "2db8f0671b17a93310eb9b2f7746fa94c742e2e7d1307fbf1eb569f770739c2f",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_Roof_CorrugatedMetal_Variation_Blue_Rust.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_Roof_CorrugatedMetal_Variation_DarkGrey",
+   "object": "MI_Roof_CorrugatedMetal_Variation_DarkGrey",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_CorrugatedMetal_Variation_DarkGrey",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Variation_DiffSpec.tga",
+   "extracted_sha256": "2db8f0671b17a93310eb9b2f7746fa94c742e2e7d1307fbf1eb569f770739c2f",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Variation_DiffSpec.tga",
+   "output_sha256": "2db8f0671b17a93310eb9b2f7746fa94c742e2e7d1307fbf1eb569f770739c2f",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_Roof_CorrugatedMetal_Variation_DarkGrey.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_Roof_CorrugatedMetal_Variation_DarkGrey_Graffiti",
+   "object": "MI_Roof_CorrugatedMetal_Variation_DarkGrey_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_CorrugatedMetal_Variation_DarkGrey_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Variation_DiffSpec.tga",
+   "extracted_sha256": "2db8f0671b17a93310eb9b2f7746fa94c742e2e7d1307fbf1eb569f770739c2f",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Variation_DiffSpec.tga",
+   "output_sha256": "2db8f0671b17a93310eb9b2f7746fa94c742e2e7d1307fbf1eb569f770739c2f",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_Roof_CorrugatedMetal_Variation_DarkGrey_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_Roof_CorrugatedMetal_Variation_DarkGrey_Graffiti_Rust",
+   "object": "MI_Roof_CorrugatedMetal_Variation_DarkGrey_Graffiti_Rust",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_CorrugatedMetal_Variation_DarkGrey_Graffiti_Rust",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Variation_DiffSpec.tga",
+   "extracted_sha256": "2db8f0671b17a93310eb9b2f7746fa94c742e2e7d1307fbf1eb569f770739c2f",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Variation_DiffSpec.tga",
+   "output_sha256": "2db8f0671b17a93310eb9b2f7746fa94c742e2e7d1307fbf1eb569f770739c2f",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_Roof_CorrugatedMetal_Variation_DarkGrey_Graffiti_Rust.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_Roof_CorrugatedMetal_Variation_DarkGrey_Rust",
+   "object": "MI_Roof_CorrugatedMetal_Variation_DarkGrey_Rust",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_CorrugatedMetal_Variation_DarkGrey_Rust",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Variation_DiffSpec.tga",
+   "extracted_sha256": "2db8f0671b17a93310eb9b2f7746fa94c742e2e7d1307fbf1eb569f770739c2f",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Variation_DiffSpec.tga",
+   "output_sha256": "2db8f0671b17a93310eb9b2f7746fa94c742e2e7d1307fbf1eb569f770739c2f",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_Roof_CorrugatedMetal_Variation_DarkGrey_Rust.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_Roof_CorrugatedMetal_Variation_Green",
+   "object": "MI_Roof_CorrugatedMetal_Variation_Green",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_CorrugatedMetal_Variation_Green",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Variation_DiffSpec.tga",
+   "extracted_sha256": "2db8f0671b17a93310eb9b2f7746fa94c742e2e7d1307fbf1eb569f770739c2f",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Variation_DiffSpec.tga",
+   "output_sha256": "2db8f0671b17a93310eb9b2f7746fa94c742e2e7d1307fbf1eb569f770739c2f",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_Roof_CorrugatedMetal_Variation_Green.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_Roof_CorrugatedMetal_Variation_Green_Graffiti",
+   "object": "MI_Roof_CorrugatedMetal_Variation_Green_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_CorrugatedMetal_Variation_Green_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Variation_DiffSpec.tga",
+   "extracted_sha256": "2db8f0671b17a93310eb9b2f7746fa94c742e2e7d1307fbf1eb569f770739c2f",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Variation_DiffSpec.tga",
+   "output_sha256": "2db8f0671b17a93310eb9b2f7746fa94c742e2e7d1307fbf1eb569f770739c2f",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_Roof_CorrugatedMetal_Variation_Green_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_Roof_CorrugatedMetal_Variation_Green_Graffiti_Rust",
+   "object": "MI_Roof_CorrugatedMetal_Variation_Green_Graffiti_Rust",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_CorrugatedMetal_Variation_Green_Graffiti_Rust",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Variation_DiffSpec.tga",
+   "extracted_sha256": "2db8f0671b17a93310eb9b2f7746fa94c742e2e7d1307fbf1eb569f770739c2f",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Variation_DiffSpec.tga",
+   "output_sha256": "2db8f0671b17a93310eb9b2f7746fa94c742e2e7d1307fbf1eb569f770739c2f",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_Roof_CorrugatedMetal_Variation_Green_Graffiti_Rust.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_Roof_CorrugatedMetal_Variation_Green_Rust",
+   "object": "MI_Roof_CorrugatedMetal_Variation_Green_Rust",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_CorrugatedMetal_Variation_Green_Rust",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Variation_DiffSpec.tga",
+   "extracted_sha256": "2db8f0671b17a93310eb9b2f7746fa94c742e2e7d1307fbf1eb569f770739c2f",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Variation_DiffSpec.tga",
+   "output_sha256": "2db8f0671b17a93310eb9b2f7746fa94c742e2e7d1307fbf1eb569f770739c2f",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_Roof_CorrugatedMetal_Variation_Green_Rust.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_Roof_CorrugatedMetal_Variation_Lime_Green",
+   "object": "MI_Roof_CorrugatedMetal_Variation_Lime_Green",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_CorrugatedMetal_Variation_Lime_Green",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Variation_DiffSpec.tga",
+   "extracted_sha256": "2db8f0671b17a93310eb9b2f7746fa94c742e2e7d1307fbf1eb569f770739c2f",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Variation_DiffSpec.tga",
+   "output_sha256": "2db8f0671b17a93310eb9b2f7746fa94c742e2e7d1307fbf1eb569f770739c2f",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_Roof_CorrugatedMetal_Variation_Lime_Green.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_Roof_CorrugatedMetal_Variation_Lime_Green_Graffiti",
+   "object": "MI_Roof_CorrugatedMetal_Variation_Lime_Green_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_CorrugatedMetal_Variation_Lime_Green_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Variation_DiffSpec.tga",
+   "extracted_sha256": "2db8f0671b17a93310eb9b2f7746fa94c742e2e7d1307fbf1eb569f770739c2f",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Variation_DiffSpec.tga",
+   "output_sha256": "2db8f0671b17a93310eb9b2f7746fa94c742e2e7d1307fbf1eb569f770739c2f",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_Roof_CorrugatedMetal_Variation_Lime_Green_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_Roof_CorrugatedMetal_Variation_PARENT",
+   "object": "MI_Roof_CorrugatedMetal_Variation_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_CorrugatedMetal_Variation_PARENT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Variation_DiffSpec.tga",
+   "extracted_sha256": "2db8f0671b17a93310eb9b2f7746fa94c742e2e7d1307fbf1eb569f770739c2f",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Variation_DiffSpec.tga",
+   "output_sha256": "2db8f0671b17a93310eb9b2f7746fa94c742e2e7d1307fbf1eb569f770739c2f",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_Roof_CorrugatedMetal_Variation_PARENT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_Roof_CorrugatedMetal_Variation_Wave_Paint_Blue_Graffiti",
+   "object": "MI_Roof_CorrugatedMetal_Variation_Wave_Paint_Blue_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_CorrugatedMetal_Variation_Wave_Paint_Blue_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/CorrugatedMetal_Wave_Paint_DiffSpec.tga",
+   "extracted_sha256": "554cc559aa1fa6be5c8d3b30ffb319c5c322bd6442ac786bd73c5fe27b8e9844",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/CorrugatedMetal_Wave_Paint_DiffSpec.tga",
+   "output_sha256": "554cc559aa1fa6be5c8d3b30ffb319c5c322bd6442ac786bd73c5fe27b8e9844",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_Roof_CorrugatedMetal_Variation_Wave_Paint_Blue_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_Roof_CorrugatedMetal_Variation_Yellow",
+   "object": "MI_Roof_CorrugatedMetal_Variation_Yellow",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_CorrugatedMetal_Variation_Yellow",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Variation_DiffSpec.tga",
+   "extracted_sha256": "2db8f0671b17a93310eb9b2f7746fa94c742e2e7d1307fbf1eb569f770739c2f",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Variation_DiffSpec.tga",
+   "output_sha256": "2db8f0671b17a93310eb9b2f7746fa94c742e2e7d1307fbf1eb569f770739c2f",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_Roof_CorrugatedMetal_Variation_Yellow.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_Roof_CorrugatedMetal_Variation_Yellow_Graffiti",
+   "object": "MI_Roof_CorrugatedMetal_Variation_Yellow_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_CorrugatedMetal_Variation_Yellow_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Variation_DiffSpec.tga",
+   "extracted_sha256": "2db8f0671b17a93310eb9b2f7746fa94c742e2e7d1307fbf1eb569f770739c2f",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Variation_DiffSpec.tga",
+   "output_sha256": "2db8f0671b17a93310eb9b2f7746fa94c742e2e7d1307fbf1eb569f770739c2f",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_Roof_CorrugatedMetal_Variation_Yellow_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_Roof_CorrugatedMetal_Variation_Yellow_Graffiti_Rust",
+   "object": "MI_Roof_CorrugatedMetal_Variation_Yellow_Graffiti_Rust",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_CorrugatedMetal_Variation_Yellow_Graffiti_Rust",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Variation_DiffSpec.tga",
+   "extracted_sha256": "2db8f0671b17a93310eb9b2f7746fa94c742e2e7d1307fbf1eb569f770739c2f",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Variation_DiffSpec.tga",
+   "output_sha256": "2db8f0671b17a93310eb9b2f7746fa94c742e2e7d1307fbf1eb569f770739c2f",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_Roof_CorrugatedMetal_Variation_Yellow_Graffiti_Rust.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_Roof_CorrugatedMetal_Variation_Yellow_Rust",
+   "object": "MI_Roof_CorrugatedMetal_Variation_Yellow_Rust",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_CorrugatedMetal_Variation_Yellow_Rust",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Variation_DiffSpec.tga",
+   "extracted_sha256": "2db8f0671b17a93310eb9b2f7746fa94c742e2e7d1307fbf1eb569f770739c2f",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Variation_DiffSpec.tga",
+   "output_sha256": "2db8f0671b17a93310eb9b2f7746fa94c742e2e7d1307fbf1eb569f770739c2f",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_Roof_CorrugatedMetal_Variation_Yellow_Rust.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_Roof_CorrugatedMetal_White",
+   "object": "MI_Roof_CorrugatedMetal_White",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_CorrugatedMetal_White",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "extracted_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "output_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_Roof_CorrugatedMetal_White.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_Roof_CorrugatedMetal_White_Graffiti",
+   "object": "MI_Roof_CorrugatedMetal_White_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_CorrugatedMetal_White_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "extracted_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "output_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_Roof_CorrugatedMetal_White_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_Roof_CorrugatedMetal_White_Graffiti_Rust",
+   "object": "MI_Roof_CorrugatedMetal_White_Graffiti_Rust",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_CorrugatedMetal_White_Graffiti_Rust",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "extracted_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "output_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_Roof_CorrugatedMetal_White_Graffiti_Rust.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_Roof_CorrugatedMetal_White_Rust",
+   "object": "MI_Roof_CorrugatedMetal_White_Rust",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Roof_CorrugatedMetal_White_Rust",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "extracted_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "output_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_Roof_CorrugatedMetal_White_Rust.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#MI_Rust_Test",
+   "object": "MI_Rust_Test",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Rust_Test",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/CorrugatedMetal_Wave_Metal_DiffSpec.tga",
+   "extracted_sha256": "6425392382f66b78f3b458091f226df06deb3c8e9c26a42cebfee5c80479f79f",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/CorrugatedMetal_Wave_Metal_DiffSpec.tga",
+   "output_sha256": "6425392382f66b78f3b458091f226df06deb3c8e9c26a42cebfee5c80479f79f",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/MI_Rust_Test.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#Roof_CorrugatedMetal_Diff",
+   "object": "Roof_CorrugatedMetal_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "extracted_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Diff.tga",
+   "output_sha256": "3fe5cb216120b3017c26381b53daa3a638dd7fe0113ba564eab359935bd51242",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#Roof_CorrugatedMetal_Norm",
+   "object": "Roof_CorrugatedMetal_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Norm.tga",
+   "extracted_sha256": "555b2d971d13102d1fa1a1919db43db81f926cbf4ca120f2c2b8a85dfe30fffb",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Norm.tga",
+   "output_sha256": "555b2d971d13102d1fa1a1919db43db81f926cbf4ca120f2c2b8a85dfe30fffb",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#Roof_CorrugatedMetal_Norm_Variation",
+   "object": "Roof_CorrugatedMetal_Norm_Variation",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Norm_Variation.tga",
+   "extracted_sha256": "e156f6a977cb36ba864256d1ee1c38ea1ff4224516b909ddf33447a538b42bdb",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Norm_Variation.tga",
+   "output_sha256": "e156f6a977cb36ba864256d1ee1c38ea1ff4224516b909ddf33447a538b42bdb",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal_Norm_Variation.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Roof/Roof_CorrugatedMetal.upk#Roof_CorrugatedMetal_Variation_DiffSpec",
+   "object": "Roof_CorrugatedMetal_Variation_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Variation_DiffSpec.tga",
+   "extracted_sha256": "2db8f0671b17a93310eb9b2f7746fa94c742e2e7d1307fbf1eb569f770739c2f",
+   "output_file": "Content/Extracted/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal/Texture2D/Roof_CorrugatedMetal_Variation_DiffSpec.tga",
+   "output_sha256": "2db8f0671b17a93310eb9b2f7746fa94c742e2e7d1307fbf1eb569f770739c2f",
+   "uasset": "Content/Imported/MaterialDatabase/Roof_CorrugatedMetal/Roof_CorrugatedMetal_Variation_DiffSpec.uasset"
+  }
+ ]
+}

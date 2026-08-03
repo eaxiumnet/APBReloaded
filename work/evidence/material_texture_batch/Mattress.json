@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Mattress",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/PropMaterials/Mattress.upk",
+ "source_sha256": "8b0014325e7c2f0a845d4aeb3e1c9e16480a1afcd6871cb8f30edab34fcd765d",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Mattress.upk#Mattress_DiffSpec",
+   "object": "Mattress_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Mattress/Mattress/Texture2D/Mattress_DiffSpec.tga",
+   "extracted_sha256": "5c26b2b52f410cac8975d0072c2373ab7ff6f8b7ce56b3918c874d0a20b9cba5",
+   "output_file": "Content/Extracted/MaterialDatabase/Mattress/Mattress/Texture2D/Mattress_DiffSpec.tga",
+   "output_sha256": "5c26b2b52f410cac8975d0072c2373ab7ff6f8b7ce56b3918c874d0a20b9cba5",
+   "uasset": "Content/Imported/MaterialDatabase/Mattress/Mattress_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Mattress.upk#Mattress_Norm",
+   "object": "Mattress_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Mattress/Mattress/Texture2D/Mattress_Norm.tga",
+   "extracted_sha256": "769fdc9e957b378ae5f5cdefc0bd2fd600dd43c91375d591d1997a5869fb3813",
+   "output_file": "Content/Extracted/MaterialDatabase/Mattress/Mattress/Texture2D/Mattress_Norm.tga",
+   "output_sha256": "769fdc9e957b378ae5f5cdefc0bd2fd600dd43c91375d591d1997a5869fb3813",
+   "uasset": "Content/Imported/MaterialDatabase/Mattress/Mattress_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Mattress.upk#MI_Mattress_MAT",
+   "object": "MI_Mattress_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Mattress_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Mattress/Mattress/Texture2D/Mattress_DiffSpec.tga",
+   "extracted_sha256": "5c26b2b52f410cac8975d0072c2373ab7ff6f8b7ce56b3918c874d0a20b9cba5",
+   "output_file": "Content/Extracted/MaterialDatabase/Mattress/Mattress/Texture2D/Mattress_DiffSpec.tga",
+   "output_sha256": "5c26b2b52f410cac8975d0072c2373ab7ff6f8b7ce56b3918c874d0a20b9cba5",
+   "uasset": "Content/Imported/MaterialDatabase/Mattress/MI_Mattress_MAT.uasset"
+  }
+ ]
+}

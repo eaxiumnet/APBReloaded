@@ -1,0 +1,34 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "ConstructionAids",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/ConstructionAids/ConstructionAids.upk",
+ "source_sha256": "ebe2520e0aa999134b6837b8c6f9d1bf46d59f4c36f97a8d7e2fce6b08bcb6e2",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/ConstructionAids/ConstructionAids.upk#MI_RulerGrid_Mat",
+   "object": "MI_RulerGrid_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RulerGrid_Mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ConstructionAids/ConstructionAids/Texture2D/RulerGrid.tga",
+   "extracted_sha256": "ab5c06cd490d372ae20ca75c88fa2784a2b77d3f2a8e749214477f9fdf81c6cd",
+   "output_file": "Content/Extracted/MaterialDatabase/ConstructionAids/ConstructionAids/Texture2D/RulerGrid.tga",
+   "output_sha256": "ab5c06cd490d372ae20ca75c88fa2784a2b77d3f2a8e749214477f9fdf81c6cd",
+   "uasset": "Content/Imported/MaterialDatabase/ConstructionAids/MI_RulerGrid_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/ConstructionAids/ConstructionAids.upk#RulerGrid",
+   "object": "RulerGrid",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ConstructionAids/ConstructionAids/Texture2D/RulerGrid.tga",
+   "extracted_sha256": "ab5c06cd490d372ae20ca75c88fa2784a2b77d3f2a8e749214477f9fdf81c6cd",
+   "output_file": "Content/Extracted/MaterialDatabase/ConstructionAids/ConstructionAids/Texture2D/RulerGrid.tga",
+   "output_sha256": "ab5c06cd490d372ae20ca75c88fa2784a2b77d3f2a8e749214477f9fdf81c6cd",
+   "uasset": "Content/Imported/MaterialDatabase/ConstructionAids/RulerGrid.uasset"
+  }
+ ]
+}

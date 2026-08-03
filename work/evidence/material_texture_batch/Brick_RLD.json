@@ -1,0 +1,229 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Brick_RLD",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/Brick/Small/Brick_RLD.upk",
+ "source_sha256": "317894fff7ae033497e1e77e86c66a3682409d6675035287bcff202f68cb3ce3",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Small/Brick_RLD.upk#Brick_Dirty_01",
+   "object": "Brick_Dirty_01",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Brick_RLD/Brick_RLD/Texture2D/Brick_Dirty_01.tga",
+   "extracted_sha256": "1a15be89d06ccb8d4b96351fb082d1cf217eb12cf1fcec90152b363bc9be5d7a",
+   "output_file": "Content/Extracted/MaterialDatabase/Brick_RLD/Brick_RLD/Texture2D/Brick_Dirty_01.tga",
+   "output_sha256": "1a15be89d06ccb8d4b96351fb082d1cf217eb12cf1fcec90152b363bc9be5d7a",
+   "uasset": "Content/Imported/MaterialDatabase/Brick_RLD/Brick_Dirty_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Small/Brick_RLD.upk#Brick_Old_Norm",
+   "object": "Brick_Old_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Brick_RLD/Brick_Old/Texture2D/Brick_Old_Norm.tga",
+   "extracted_sha256": "4f33278cac131e41e3516adb7d0508a57e6f7f452dc5376bbfcda42b6b5a6c66",
+   "output_file": "Content/Extracted/MaterialDatabase/Brick_RLD/Brick_Old/Texture2D/Brick_Old_Norm.tga",
+   "output_sha256": "4f33278cac131e41e3516adb7d0508a57e6f7f452dc5376bbfcda42b6b5a6c66",
+   "uasset": "Content/Imported/MaterialDatabase/Brick_RLD/Brick_Old_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Small/Brick_RLD.upk#MI_Brick_BlackEng_01",
+   "object": "MI_Brick_BlackEng_01",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Brick_BlackEng_01",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Brick_RLD/Brick_Old/Texture2D/Brick_Old_Norm.tga",
+   "extracted_sha256": "4f33278cac131e41e3516adb7d0508a57e6f7f452dc5376bbfcda42b6b5a6c66",
+   "output_file": "Content/Extracted/MaterialDatabase/Brick_RLD/Brick_Old/Texture2D/Brick_Old_Norm.tga",
+   "output_sha256": "4f33278cac131e41e3516adb7d0508a57e6f7f452dc5376bbfcda42b6b5a6c66",
+   "uasset": "Content/Imported/MaterialDatabase/Brick_RLD/MI_Brick_BlackEng_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Small/Brick_RLD.upk#MI_Brick_BlueEng_01",
+   "object": "MI_Brick_BlueEng_01",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Brick_BlueEng_01",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Brick_RLD/Brick_Old/Texture2D/Brick_Old_Norm.tga",
+   "extracted_sha256": "4f33278cac131e41e3516adb7d0508a57e6f7f452dc5376bbfcda42b6b5a6c66",
+   "output_file": "Content/Extracted/MaterialDatabase/Brick_RLD/Brick_Old/Texture2D/Brick_Old_Norm.tga",
+   "output_sha256": "4f33278cac131e41e3516adb7d0508a57e6f7f452dc5376bbfcda42b6b5a6c66",
+   "uasset": "Content/Imported/MaterialDatabase/Brick_RLD/MI_Brick_BlueEng_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Small/Brick_RLD.upk#MI_Brick_BlueEng_02",
+   "object": "MI_Brick_BlueEng_02",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Brick_BlueEng_02",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Brick_RLD/Brick_Old/Texture2D/Brick_Old_Norm.tga",
+   "extracted_sha256": "4f33278cac131e41e3516adb7d0508a57e6f7f452dc5376bbfcda42b6b5a6c66",
+   "output_file": "Content/Extracted/MaterialDatabase/Brick_RLD/Brick_Old/Texture2D/Brick_Old_Norm.tga",
+   "output_sha256": "4f33278cac131e41e3516adb7d0508a57e6f7f452dc5376bbfcda42b6b5a6c66",
+   "uasset": "Content/Imported/MaterialDatabase/Brick_RLD/MI_Brick_BlueEng_02.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Small/Brick_RLD.upk#MI_Brick_BrownEng_01",
+   "object": "MI_Brick_BrownEng_01",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Brick_BrownEng_01",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Brick_RLD/Brick_Old/Texture2D/Brick_Old_Norm.tga",
+   "extracted_sha256": "4f33278cac131e41e3516adb7d0508a57e6f7f452dc5376bbfcda42b6b5a6c66",
+   "output_file": "Content/Extracted/MaterialDatabase/Brick_RLD/Brick_Old/Texture2D/Brick_Old_Norm.tga",
+   "output_sha256": "4f33278cac131e41e3516adb7d0508a57e6f7f452dc5376bbfcda42b6b5a6c66",
+   "uasset": "Content/Imported/MaterialDatabase/Brick_RLD/MI_Brick_BrownEng_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Small/Brick_RLD.upk#MI_Brick_BrownEng_02",
+   "object": "MI_Brick_BrownEng_02",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Brick_BrownEng_02",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Brick_RLD/Brick_Old/Texture2D/Brick_Old_Norm.tga",
+   "extracted_sha256": "4f33278cac131e41e3516adb7d0508a57e6f7f452dc5376bbfcda42b6b5a6c66",
+   "output_file": "Content/Extracted/MaterialDatabase/Brick_RLD/Brick_Old/Texture2D/Brick_Old_Norm.tga",
+   "output_sha256": "4f33278cac131e41e3516adb7d0508a57e6f7f452dc5376bbfcda42b6b5a6c66",
+   "uasset": "Content/Imported/MaterialDatabase/Brick_RLD/MI_Brick_BrownEng_02.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Small/Brick_RLD.upk#MI_Brick_Dirty_01",
+   "object": "MI_Brick_Dirty_01",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Brick_Dirty_01",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Brick_RLD/Brick_RLD/Texture2D/Brick_Dirty_01.tga",
+   "extracted_sha256": "1a15be89d06ccb8d4b96351fb082d1cf217eb12cf1fcec90152b363bc9be5d7a",
+   "output_file": "Content/Extracted/MaterialDatabase/Brick_RLD/Brick_RLD/Texture2D/Brick_Dirty_01.tga",
+   "output_sha256": "1a15be89d06ccb8d4b96351fb082d1cf217eb12cf1fcec90152b363bc9be5d7a",
+   "uasset": "Content/Imported/MaterialDatabase/Brick_RLD/MI_Brick_Dirty_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Small/Brick_RLD.upk#MI_Brick_Reclaimed_01",
+   "object": "MI_Brick_Reclaimed_01",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Brick_Reclaimed_01",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Brick_RLD/Brick_Old/Texture2D/Brick_Old_Norm.tga",
+   "extracted_sha256": "4f33278cac131e41e3516adb7d0508a57e6f7f452dc5376bbfcda42b6b5a6c66",
+   "output_file": "Content/Extracted/MaterialDatabase/Brick_RLD/Brick_Old/Texture2D/Brick_Old_Norm.tga",
+   "output_sha256": "4f33278cac131e41e3516adb7d0508a57e6f7f452dc5376bbfcda42b6b5a6c66",
+   "uasset": "Content/Imported/MaterialDatabase/Brick_RLD/MI_Brick_Reclaimed_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Small/Brick_RLD.upk#MI_Brick_Reclaimed_02",
+   "object": "MI_Brick_Reclaimed_02",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Brick_Reclaimed_02",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Brick_RLD/Brick_Old/Texture2D/Brick_Old_Norm.tga",
+   "extracted_sha256": "4f33278cac131e41e3516adb7d0508a57e6f7f452dc5376bbfcda42b6b5a6c66",
+   "output_file": "Content/Extracted/MaterialDatabase/Brick_RLD/Brick_Old/Texture2D/Brick_Old_Norm.tga",
+   "output_sha256": "4f33278cac131e41e3516adb7d0508a57e6f7f452dc5376bbfcda42b6b5a6c66",
+   "uasset": "Content/Imported/MaterialDatabase/Brick_RLD/MI_Brick_Reclaimed_02.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Small/Brick_RLD.upk#MI_Brick_Red_01",
+   "object": "MI_Brick_Red_01",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Brick_Red_01",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Brick_RLD/Brick_Old/Texture2D/Brick_Old_Norm.tga",
+   "extracted_sha256": "4f33278cac131e41e3516adb7d0508a57e6f7f452dc5376bbfcda42b6b5a6c66",
+   "output_file": "Content/Extracted/MaterialDatabase/Brick_RLD/Brick_Old/Texture2D/Brick_Old_Norm.tga",
+   "output_sha256": "4f33278cac131e41e3516adb7d0508a57e6f7f452dc5376bbfcda42b6b5a6c66",
+   "uasset": "Content/Imported/MaterialDatabase/Brick_RLD/MI_Brick_Red_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Small/Brick_RLD.upk#MI_Brick_Red_02",
+   "object": "MI_Brick_Red_02",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Brick_Red_02",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Brick_RLD/Brick_Old/Texture2D/Brick_Old_Norm.tga",
+   "extracted_sha256": "4f33278cac131e41e3516adb7d0508a57e6f7f452dc5376bbfcda42b6b5a6c66",
+   "output_file": "Content/Extracted/MaterialDatabase/Brick_RLD/Brick_Old/Texture2D/Brick_Old_Norm.tga",
+   "output_sha256": "4f33278cac131e41e3516adb7d0508a57e6f7f452dc5376bbfcda42b6b5a6c66",
+   "uasset": "Content/Imported/MaterialDatabase/Brick_RLD/MI_Brick_Red_02.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Small/Brick_RLD.upk#MI_Brick_Red_03",
+   "object": "MI_Brick_Red_03",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Brick_Red_03",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Brick_RLD/Brick_Old/Texture2D/Brick_Old_Norm.tga",
+   "extracted_sha256": "4f33278cac131e41e3516adb7d0508a57e6f7f452dc5376bbfcda42b6b5a6c66",
+   "output_file": "Content/Extracted/MaterialDatabase/Brick_RLD/Brick_Old/Texture2D/Brick_Old_Norm.tga",
+   "output_sha256": "4f33278cac131e41e3516adb7d0508a57e6f7f452dc5376bbfcda42b6b5a6c66",
+   "uasset": "Content/Imported/MaterialDatabase/Brick_RLD/MI_Brick_Red_03.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Small/Brick_RLD.upk#MI_Brick_Red_04",
+   "object": "MI_Brick_Red_04",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Brick_Red_04",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Brick_RLD/Brick_Old/Texture2D/Brick_Old_Norm.tga",
+   "extracted_sha256": "4f33278cac131e41e3516adb7d0508a57e6f7f452dc5376bbfcda42b6b5a6c66",
+   "output_file": "Content/Extracted/MaterialDatabase/Brick_RLD/Brick_Old/Texture2D/Brick_Old_Norm.tga",
+   "output_sha256": "4f33278cac131e41e3516adb7d0508a57e6f7f452dc5376bbfcda42b6b5a6c66",
+   "uasset": "Content/Imported/MaterialDatabase/Brick_RLD/MI_Brick_Red_04.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Small/Brick_RLD.upk#MI_Brick_Yellow_01",
+   "object": "MI_Brick_Yellow_01",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Brick_Yellow_01",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Brick_RLD/Brick_Old/Texture2D/Brick_Old_Norm.tga",
+   "extracted_sha256": "4f33278cac131e41e3516adb7d0508a57e6f7f452dc5376bbfcda42b6b5a6c66",
+   "output_file": "Content/Extracted/MaterialDatabase/Brick_RLD/Brick_Old/Texture2D/Brick_Old_Norm.tga",
+   "output_sha256": "4f33278cac131e41e3516adb7d0508a57e6f7f452dc5376bbfcda42b6b5a6c66",
+   "uasset": "Content/Imported/MaterialDatabase/Brick_RLD/MI_Brick_Yellow_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Small/Brick_RLD.upk#MI_Brick_Yellow_02",
+   "object": "MI_Brick_Yellow_02",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Brick_Yellow_02",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Brick_RLD/Brick_Old/Texture2D/Brick_Old_Norm.tga",
+   "extracted_sha256": "4f33278cac131e41e3516adb7d0508a57e6f7f452dc5376bbfcda42b6b5a6c66",
+   "output_file": "Content/Extracted/MaterialDatabase/Brick_RLD/Brick_Old/Texture2D/Brick_Old_Norm.tga",
+   "output_sha256": "4f33278cac131e41e3516adb7d0508a57e6f7f452dc5376bbfcda42b6b5a6c66",
+   "uasset": "Content/Imported/MaterialDatabase/Brick_RLD/MI_Brick_Yellow_02.uasset"
+  }
+ ]
+}

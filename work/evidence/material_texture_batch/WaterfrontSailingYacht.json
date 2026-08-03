@@ -1,0 +1,60 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "WaterfrontSailingYacht",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontSailingYacht.upk",
+ "source_sha256": "b4b75f3e76b35a5964d4f90ad68877051769ca0fa5a7db2a152c5cdab827b440",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontSailingYacht.upk#MI_SailingYacht_Mat",
+   "object": "MI_SailingYacht_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "SailingYacht_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontSailingYacht/WaterfrontSailingYacht/Texture2D/SailingYacht_Diff.tga",
+   "extracted_sha256": "091e6444fc5f6a6266f32cac661139058a2519b86f41d479d50b8110af9b963f",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontSailingYacht/WaterfrontSailingYacht/Texture2D/SailingYacht_Diff.tga",
+   "output_sha256": "091e6444fc5f6a6266f32cac661139058a2519b86f41d479d50b8110af9b963f",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontSailingYacht/MI_SailingYacht_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontSailingYacht.upk#SailingYacht_Diff",
+   "object": "SailingYacht_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontSailingYacht/WaterfrontSailingYacht/Texture2D/SailingYacht_Diff.tga",
+   "extracted_sha256": "091e6444fc5f6a6266f32cac661139058a2519b86f41d479d50b8110af9b963f",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontSailingYacht/WaterfrontSailingYacht/Texture2D/SailingYacht_Diff.tga",
+   "output_sha256": "091e6444fc5f6a6266f32cac661139058a2519b86f41d479d50b8110af9b963f",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontSailingYacht/SailingYacht_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontSailingYacht.upk#SailingYacht_Norm_FullRes",
+   "object": "SailingYacht_Norm_FullRes",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontSailingYacht/WaterfrontSailingYacht/Texture2D/SailingYacht_Norm_FullRes.tga",
+   "extracted_sha256": "39cae9673141001973d6ab592b76b639792cd9e1359f3e80d81844460b80f768",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontSailingYacht/WaterfrontSailingYacht/Texture2D/SailingYacht_Norm_FullRes.tga",
+   "output_sha256": "39cae9673141001973d6ab592b76b639792cd9e1359f3e80d81844460b80f768",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontSailingYacht/SailingYacht_Norm_FullRes.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontSailingYacht.upk#SailingYacht_Opac",
+   "object": "SailingYacht_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontSailingYacht/WaterfrontSailingYacht/Texture2D/SailingYacht_Opac.tga",
+   "extracted_sha256": "f5280f15f2991cec37aea314032e3c939b6888c651135cd69dbadba49d0b68f3",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontSailingYacht/WaterfrontSailingYacht/Texture2D/SailingYacht_Opac.tga",
+   "output_sha256": "f5280f15f2991cec37aea314032e3c939b6888c651135cd69dbadba49d0b68f3",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontSailingYacht/SailingYacht_Opac.uasset"
+  }
+ ]
+}

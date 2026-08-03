@@ -1,0 +1,91 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "RoadMarkers",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/RoadMarkers.upk",
+ "source_sha256": "101913d23da39d93e8c8ea9ad90f9c7c62a287f8341a2779f548e03fd90422e6",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/RoadMarkers.upk#MI_roadmarkers",
+   "object": "MI_roadmarkers",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "roadmarkers",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadMarkers/RoadMarkers/Texture2D/RoadMarkers_DiffSpec.tga",
+   "extracted_sha256": "10815a26cf540c8c144f3b325c516da7ceee2980065b23b8d066aa7120524bd6",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadMarkers/RoadMarkers/Texture2D/RoadMarkers_DiffSpec.tga",
+   "output_sha256": "10815a26cf540c8c144f3b325c516da7ceee2980065b23b8d066aa7120524bd6",
+   "uasset": "Content/Imported/MaterialDatabase/RoadMarkers/MI_roadmarkers.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/RoadMarkers.upk#MI_RoadMarkers_DamageMat",
+   "object": "MI_RoadMarkers_DamageMat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RoadMarkers_DamageMat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadMarkers/RoadMarkers/Texture2D/RoadMarkers_DiffSpec.tga",
+   "extracted_sha256": "10815a26cf540c8c144f3b325c516da7ceee2980065b23b8d066aa7120524bd6",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadMarkers/RoadMarkers/Texture2D/RoadMarkers_DiffSpec.tga",
+   "output_sha256": "10815a26cf540c8c144f3b325c516da7ceee2980065b23b8d066aa7120524bd6",
+   "uasset": "Content/Imported/MaterialDatabase/RoadMarkers/MI_RoadMarkers_DamageMat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/RoadMarkers.upk#MI_RoadMarkers_Instance",
+   "object": "MI_RoadMarkers_Instance",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RoadMarkers_Instance",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadMarkers/RoadMarkers/Texture2D/RoadMarkers_DiffSpec.tga",
+   "extracted_sha256": "10815a26cf540c8c144f3b325c516da7ceee2980065b23b8d066aa7120524bd6",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadMarkers/RoadMarkers/Texture2D/RoadMarkers_DiffSpec.tga",
+   "output_sha256": "10815a26cf540c8c144f3b325c516da7ceee2980065b23b8d066aa7120524bd6",
+   "uasset": "Content/Imported/MaterialDatabase/RoadMarkers/MI_RoadMarkers_Instance.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/RoadMarkers.upk#RoadMarkers_DiffSpec",
+   "object": "RoadMarkers_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadMarkers/RoadMarkers/Texture2D/RoadMarkers_DiffSpec.tga",
+   "extracted_sha256": "10815a26cf540c8c144f3b325c516da7ceee2980065b23b8d066aa7120524bd6",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadMarkers/RoadMarkers/Texture2D/RoadMarkers_DiffSpec.tga",
+   "output_sha256": "10815a26cf540c8c144f3b325c516da7ceee2980065b23b8d066aa7120524bd6",
+   "uasset": "Content/Imported/MaterialDatabase/RoadMarkers/RoadMarkers_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/RoadMarkers.upk#RoadMarkers_Emis",
+   "object": "RoadMarkers_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadMarkers/RoadMarkers/Texture2D/RoadMarkers_Emis.tga",
+   "extracted_sha256": "85873e120dce6a1493ef4cf046b6fbb10eb1146d75efb354ef598cc1c5b31b8f",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadMarkers/RoadMarkers/Texture2D/RoadMarkers_Emis.tga",
+   "output_sha256": "85873e120dce6a1493ef4cf046b6fbb10eb1146d75efb354ef598cc1c5b31b8f",
+   "uasset": "Content/Imported/MaterialDatabase/RoadMarkers/RoadMarkers_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/RoadMarkers.upk#RoadMarkers_Norm",
+   "object": "RoadMarkers_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadMarkers/RoadMarkers/Texture2D/RoadMarkers_Norm.tga",
+   "extracted_sha256": "69aee95d09ac0c1a190f845bd127d599615c7645efd79aa3c0429972bf1cec4e",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadMarkers/RoadMarkers/Texture2D/RoadMarkers_Norm.tga",
+   "output_sha256": "69aee95d09ac0c1a190f845bd127d599615c7645efd79aa3c0429972bf1cec4e",
+   "uasset": "Content/Imported/MaterialDatabase/RoadMarkers/RoadMarkers_Norm.uasset"
+  }
+ ]
+}

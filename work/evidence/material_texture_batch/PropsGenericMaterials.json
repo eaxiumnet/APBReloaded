@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "PropsGenericMaterials",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk",
+ "source_sha256": "d57de32136320f5d3c26a0c96fd7a18f7d8dff15e8050f5881d7143cf69dc1d2",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk#crackedglass",
+   "object": "crackedglass",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/PropsGenericMaterials/PropsGenericMaterials/Texture2D/crackedglass.tga",
+   "extracted_sha256": "dfa317aa7fb2240af7f70a04291e38bffe78163ed2df9334514b23bb823cc808",
+   "output_file": "Content/Extracted/MaterialDatabase/PropsGenericMaterials/PropsGenericMaterials/Texture2D/crackedglass.tga",
+   "output_sha256": "dfa317aa7fb2240af7f70a04291e38bffe78163ed2df9334514b23bb823cc808",
+   "uasset": "Content/Imported/MaterialDatabase/PropsGenericMaterials/crackedglass.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk#CrackedGlass_Norm",
+   "object": "CrackedGlass_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/PropsGenericMaterials/PropsGenericMaterials/Texture2D/CrackedGlass_Norm.tga",
+   "extracted_sha256": "785619d634027205ac11fddf228e8ff86e308e8ec9386fb9c8d74e1e34b242c3",
+   "output_file": "Content/Extracted/MaterialDatabase/PropsGenericMaterials/PropsGenericMaterials/Texture2D/CrackedGlass_Norm.tga",
+   "output_sha256": "785619d634027205ac11fddf228e8ff86e308e8ec9386fb9c8d74e1e34b242c3",
+   "uasset": "Content/Imported/MaterialDatabase/PropsGenericMaterials/CrackedGlass_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericDistrict/Props/PropsGenericMaterials.upk#MI_CrackedPropGlass",
+   "object": "MI_CrackedPropGlass",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CrackedPropGlass",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/PropsGenericMaterials/PropsGenericMaterials/Texture2D/crackedglass.tga",
+   "extracted_sha256": "dfa317aa7fb2240af7f70a04291e38bffe78163ed2df9334514b23bb823cc808",
+   "output_file": "Content/Extracted/MaterialDatabase/PropsGenericMaterials/PropsGenericMaterials/Texture2D/crackedglass.tga",
+   "output_sha256": "dfa317aa7fb2240af7f70a04291e38bffe78163ed2df9334514b23bb823cc808",
+   "uasset": "Content/Imported/MaterialDatabase/PropsGenericMaterials/MI_CrackedPropGlass.uasset"
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "NEON_Cocktail",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/Signage/NEON_Cocktail.upk",
+ "source_sha256": "8ccfb7d56fdace192e979863aa77b5b7d65c2ebb08a2378ae7d6094d3c99fd07",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/Signage/NEON_Cocktail.upk#MI_NEON_Cocktail",
+   "object": "MI_NEON_Cocktail",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "NEON_Cocktail",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/NEON_Cocktail/NEON_Cocktail/Texture2D/Neon_CocktailSign_01.tga",
+   "extracted_sha256": "c409da96d2d98f255d84a929abb791b5973d5b3f2172c79a62dc84df98eac58b",
+   "output_file": "Content/Extracted/MaterialDatabase/NEON_Cocktail/NEON_Cocktail/Texture2D/Neon_CocktailSign_01.tga",
+   "output_sha256": "c409da96d2d98f255d84a929abb791b5973d5b3f2172c79a62dc84df98eac58b",
+   "uasset": "Content/Imported/MaterialDatabase/NEON_Cocktail/MI_NEON_Cocktail.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/Signage/NEON_Cocktail.upk#Neon_CocktailSign_01",
+   "object": "Neon_CocktailSign_01",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/NEON_Cocktail/NEON_Cocktail/Texture2D/Neon_CocktailSign_01.tga",
+   "extracted_sha256": "c409da96d2d98f255d84a929abb791b5973d5b3f2172c79a62dc84df98eac58b",
+   "output_file": "Content/Extracted/MaterialDatabase/NEON_Cocktail/NEON_Cocktail/Texture2D/Neon_CocktailSign_01.tga",
+   "output_sha256": "c409da96d2d98f255d84a929abb791b5973d5b3f2172c79a62dc84df98eac58b",
+   "uasset": "Content/Imported/MaterialDatabase/NEON_Cocktail/Neon_CocktailSign_01.uasset"
+  }
+ ]
+}

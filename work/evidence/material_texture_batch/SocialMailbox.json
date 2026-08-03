@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "SocialMailbox",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/SocialDistrict/PropMaterials/SocialMailbox.upk",
+ "source_sha256": "ac7c0946cae9eef2c273aabd52d7274e518e191a1497052edb9642025159da6c",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/SocialMailbox.upk#MI_SocialMailbox_MAT",
+   "object": "MI_SocialMailbox_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "SocialMailbox_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/SocialMailbox/SocialMailbox/Texture2D/SocialMailbox_DiffSpec.tga",
+   "extracted_sha256": "c55a7c7a2314c0178f016a11455d3d619fd0580c22278ee36b372b0a940c989a",
+   "output_file": "Content/Extracted/MaterialDatabase/SocialMailbox/SocialMailbox/Texture2D/SocialMailbox_DiffSpec.tga",
+   "output_sha256": "c55a7c7a2314c0178f016a11455d3d619fd0580c22278ee36b372b0a940c989a",
+   "uasset": "Content/Imported/MaterialDatabase/SocialMailbox/MI_SocialMailbox_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/SocialMailbox.upk#SocialMailbox_DiffSpec",
+   "object": "SocialMailbox_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/SocialMailbox/SocialMailbox/Texture2D/SocialMailbox_DiffSpec.tga",
+   "extracted_sha256": "c55a7c7a2314c0178f016a11455d3d619fd0580c22278ee36b372b0a940c989a",
+   "output_file": "Content/Extracted/MaterialDatabase/SocialMailbox/SocialMailbox/Texture2D/SocialMailbox_DiffSpec.tga",
+   "output_sha256": "c55a7c7a2314c0178f016a11455d3d619fd0580c22278ee36b372b0a940c989a",
+   "uasset": "Content/Imported/MaterialDatabase/SocialMailbox/SocialMailbox_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/SocialMailbox.upk#SocialMailbox_Norm",
+   "object": "SocialMailbox_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/SocialMailbox/SocialMailbox/Texture2D/SocialMailbox_Norm.tga",
+   "extracted_sha256": "87bd9801d1b8c1cb141212bf9696bce660b90da28eb24311aa7de4e5b95310b3",
+   "output_file": "Content/Extracted/MaterialDatabase/SocialMailbox/SocialMailbox/Texture2D/SocialMailbox_Norm.tga",
+   "output_sha256": "87bd9801d1b8c1cb141212bf9696bce660b90da28eb24311aa7de4e5b95310b3",
+   "uasset": "Content/Imported/MaterialDatabase/SocialMailbox/SocialMailbox_Norm.uasset"
+  }
+ ]
+}

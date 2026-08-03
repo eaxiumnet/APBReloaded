@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "SpotlightStand",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/PropMaterials/SpotlightStand.upk",
+ "source_sha256": "3df725acf251a362ecbd655bc7a118b8091da69c5e8db0a3de12cd199427a3b3",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/SpotlightStand.upk#MI_SpotlightStand",
+   "object": "MI_SpotlightStand",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "SpotlightStand",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/SpotlightStand/SpotlightStand/Texture2D/PROP_LightStand_01_Diffspec.tga",
+   "extracted_sha256": "318f217537f4b5dcdf868729a163128266e7e4ae3c7c25c8cde8d21585c1c5ad",
+   "output_file": "Content/Extracted/MaterialDatabase/SpotlightStand/SpotlightStand/Texture2D/PROP_LightStand_01_Diffspec.tga",
+   "output_sha256": "318f217537f4b5dcdf868729a163128266e7e4ae3c7c25c8cde8d21585c1c5ad",
+   "uasset": "Content/Imported/MaterialDatabase/SpotlightStand/MI_SpotlightStand.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/SpotlightStand.upk#PROP_LightStand_01_Diffspec",
+   "object": "PROP_LightStand_01_Diffspec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/SpotlightStand/SpotlightStand/Texture2D/PROP_LightStand_01_Diffspec.tga",
+   "extracted_sha256": "318f217537f4b5dcdf868729a163128266e7e4ae3c7c25c8cde8d21585c1c5ad",
+   "output_file": "Content/Extracted/MaterialDatabase/SpotlightStand/SpotlightStand/Texture2D/PROP_LightStand_01_Diffspec.tga",
+   "output_sha256": "318f217537f4b5dcdf868729a163128266e7e4ae3c7c25c8cde8d21585c1c5ad",
+   "uasset": "Content/Imported/MaterialDatabase/SpotlightStand/PROP_LightStand_01_Diffspec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/SpotlightStand.upk#PROP_LightStand_01_Emissive",
+   "object": "PROP_LightStand_01_Emissive",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/SpotlightStand/SpotlightStand/Texture2D/PROP_LightStand_01_Emissive.tga",
+   "extracted_sha256": "edba087af489aabc955873d859ecd00ad9c82becd13699b73c019fbc2d6bfd25",
+   "output_file": "Content/Extracted/MaterialDatabase/SpotlightStand/SpotlightStand/Texture2D/PROP_LightStand_01_Emissive.tga",
+   "output_sha256": "edba087af489aabc955873d859ecd00ad9c82becd13699b73c019fbc2d6bfd25",
+   "uasset": "Content/Imported/MaterialDatabase/SpotlightStand/PROP_LightStand_01_Emissive.uasset"
+  }
+ ]
+}

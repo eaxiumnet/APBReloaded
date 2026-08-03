@@ -1,0 +1,90 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "GarageDoorsCanopy",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/FeatureMaterials/GarageDoorsCanopy.upk",
+ "source_sha256": "8f3b53b6b59579138716fdb028538548a1d9659ac97aa97c08b28a5e54c9b4fa",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/GarageDoorsCanopy.upk#GarageDoorsCanopy_DiffSpec",
+   "object": "GarageDoorsCanopy_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GarageDoorsCanopy/GarageDoorsCanopy/Texture2D/GarageDoorsCanopy_DiffSpec.tga",
+   "extracted_sha256": "2063b94b59605a112fe8ce176ce3d75e07063cda133b8e0fdf3c5f1bc0bf278e",
+   "output_file": "Content/Extracted/MaterialDatabase/GarageDoorsCanopy/GarageDoorsCanopy/Texture2D/GarageDoorsCanopy_DiffSpec.tga",
+   "output_sha256": "2063b94b59605a112fe8ce176ce3d75e07063cda133b8e0fdf3c5f1bc0bf278e",
+   "uasset": "Content/Imported/MaterialDatabase/GarageDoorsCanopy/GarageDoorsCanopy_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/GarageDoorsCanopy.upk#GarageDoorsCanopy_EmisGlassMask",
+   "object": "GarageDoorsCanopy_EmisGlassMask",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GarageDoorsCanopy/GarageDoorsCanopy/Texture2D/GarageDoorsCanopy_EmisGlassMask.tga",
+   "extracted_sha256": "3c1851585952a1b16f5e06b9b58e3f41020fe22f0fc5fbe608bf508f17a479d2",
+   "output_file": "Content/Extracted/MaterialDatabase/GarageDoorsCanopy/GarageDoorsCanopy/Texture2D/GarageDoorsCanopy_EmisGlassMask.tga",
+   "output_sha256": "3c1851585952a1b16f5e06b9b58e3f41020fe22f0fc5fbe608bf508f17a479d2",
+   "uasset": "Content/Imported/MaterialDatabase/GarageDoorsCanopy/GarageDoorsCanopy_EmisGlassMask.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/GarageDoorsCanopy.upk#GarageDoorsCanopy_Norm",
+   "object": "GarageDoorsCanopy_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GarageDoorsCanopy/GarageDoorsCanopy/Texture2D/GarageDoorsCanopy_Norm.tga",
+   "extracted_sha256": "f72cd23342fb2328f26269d8c8b24a45a4a37989a425677d3a986fc8e658ecbd",
+   "output_file": "Content/Extracted/MaterialDatabase/GarageDoorsCanopy/GarageDoorsCanopy/Texture2D/GarageDoorsCanopy_Norm.tga",
+   "output_sha256": "f72cd23342fb2328f26269d8c8b24a45a4a37989a425677d3a986fc8e658ecbd",
+   "uasset": "Content/Imported/MaterialDatabase/GarageDoorsCanopy/GarageDoorsCanopy_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/GarageDoorsCanopy.upk#GarageDoorsCanopy_Opac",
+   "object": "GarageDoorsCanopy_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GarageDoorsCanopy/GarageDoorsCanopy/Texture2D/GarageDoorsCanopy_Opac.tga",
+   "extracted_sha256": "9591113d00677a440cb4822c485365515e40cd62dbee34b1af1ef51e80889c47",
+   "output_file": "Content/Extracted/MaterialDatabase/GarageDoorsCanopy/GarageDoorsCanopy/Texture2D/GarageDoorsCanopy_Opac.tga",
+   "output_sha256": "9591113d00677a440cb4822c485365515e40cd62dbee34b1af1ef51e80889c47",
+   "uasset": "Content/Imported/MaterialDatabase/GarageDoorsCanopy/GarageDoorsCanopy_Opac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/GarageDoorsCanopy.upk#MI_GarageDoorsCanopy_Mat",
+   "object": "MI_GarageDoorsCanopy_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "GarageDoorsCanopy_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GarageDoorsCanopy/GarageDoorsCanopy/Texture2D/GarageDoorsCanopy_DiffSpec.tga",
+   "extracted_sha256": "2063b94b59605a112fe8ce176ce3d75e07063cda133b8e0fdf3c5f1bc0bf278e",
+   "output_file": "Content/Extracted/MaterialDatabase/GarageDoorsCanopy/GarageDoorsCanopy/Texture2D/GarageDoorsCanopy_DiffSpec.tga",
+   "output_sha256": "2063b94b59605a112fe8ce176ce3d75e07063cda133b8e0fdf3c5f1bc0bf278e",
+   "uasset": "Content/Imported/MaterialDatabase/GarageDoorsCanopy/MI_GarageDoorsCanopy_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/GarageDoorsCanopy.upk#MI_GarageDoorsCanopy_Metal",
+   "object": "MI_GarageDoorsCanopy_Metal",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "GarageDoorsCanopy_Metal",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GarageDoorsCanopy/GarageDoorsCanopy/Texture2D/GarageDoorsCanopy_DiffSpec.tga",
+   "extracted_sha256": "2063b94b59605a112fe8ce176ce3d75e07063cda133b8e0fdf3c5f1bc0bf278e",
+   "output_file": "Content/Extracted/MaterialDatabase/GarageDoorsCanopy/GarageDoorsCanopy/Texture2D/GarageDoorsCanopy_DiffSpec.tga",
+   "output_sha256": "2063b94b59605a112fe8ce176ce3d75e07063cda133b8e0fdf3c5f1bc0bf278e",
+   "uasset": "Content/Imported/MaterialDatabase/GarageDoorsCanopy/MI_GarageDoorsCanopy_Metal.uasset"
+  }
+ ]
+}

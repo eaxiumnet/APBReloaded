@@ -1,0 +1,34 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Brick_OldPaint",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/Brick/Brick_OldPaint.upk",
+ "source_sha256": "e8d8bdbb3d023dd5ac1cb388e81164aced508f82755b5d9198c02f50bab737f9",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Brick/Brick_OldPaint.upk#Brick_OldPaint_Diff",
+   "object": "Brick_OldPaint_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Brick_OldPaint/Brick_OldPaint/Texture2D/Brick_OldPaint_Diff.tga",
+   "extracted_sha256": "0cf6f30a59361409eba7425330d7167a2e3129077063ed9ce7f5d2445d45fb35",
+   "output_file": "Content/Extracted/MaterialDatabase/Brick_OldPaint/Brick_OldPaint/Texture2D/Brick_OldPaint_Diff.tga",
+   "output_sha256": "0cf6f30a59361409eba7425330d7167a2e3129077063ed9ce7f5d2445d45fb35",
+   "uasset": "Content/Imported/MaterialDatabase/Brick_OldPaint/Brick_OldPaint_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Brick/Brick_OldPaint.upk#MI_Brick_OldPaint_Mat",
+   "object": "MI_Brick_OldPaint_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Brick_OldPaint_Mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Brick_OldPaint/Brick_OldPaint/Texture2D/Brick_OldPaint_Diff.tga",
+   "extracted_sha256": "0cf6f30a59361409eba7425330d7167a2e3129077063ed9ce7f5d2445d45fb35",
+   "output_file": "Content/Extracted/MaterialDatabase/Brick_OldPaint/Brick_OldPaint/Texture2D/Brick_OldPaint_Diff.tga",
+   "output_sha256": "0cf6f30a59361409eba7425330d7167a2e3129077063ed9ce7f5d2445d45fb35",
+   "uasset": "Content/Imported/MaterialDatabase/Brick_OldPaint/MI_Brick_OldPaint_Mat.uasset"
+  }
+ ]
+}

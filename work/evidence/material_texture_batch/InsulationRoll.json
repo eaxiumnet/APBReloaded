@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "InsulationRoll",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/ProvingGrounds/PropMaterials/InsulationRoll.upk",
+ "source_sha256": "f056d19f793458df822a656730f8dafb0f52fd1e137212893bee7bacf4a39e5d",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/ProvingGrounds/PropMaterials/InsulationRoll.upk#InsurlationRoll_Diff",
+   "object": "InsurlationRoll_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/InsulationRoll/InsulationRoll/Texture2D/InsurlationRoll_Diff.tga",
+   "extracted_sha256": "93245da27d9a495cf196eab109ecaa9fd99688a0c8d9532c243f5326377bc03b",
+   "output_file": "Content/Extracted/MaterialDatabase/InsulationRoll/InsulationRoll/Texture2D/InsurlationRoll_Diff.tga",
+   "output_sha256": "93245da27d9a495cf196eab109ecaa9fd99688a0c8d9532c243f5326377bc03b",
+   "uasset": "Content/Imported/MaterialDatabase/InsulationRoll/InsurlationRoll_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/ProvingGrounds/PropMaterials/InsulationRoll.upk#InsurlationRoll_Norm",
+   "object": "InsurlationRoll_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/InsulationRoll/InsulationRoll/Texture2D/InsurlationRoll_Norm.tga",
+   "extracted_sha256": "c722cf18e0b93bec2f286d5d28dc6af45fd1e312e981c26f1fdc685542fed965",
+   "output_file": "Content/Extracted/MaterialDatabase/InsulationRoll/InsulationRoll/Texture2D/InsurlationRoll_Norm.tga",
+   "output_sha256": "c722cf18e0b93bec2f286d5d28dc6af45fd1e312e981c26f1fdc685542fed965",
+   "uasset": "Content/Imported/MaterialDatabase/InsulationRoll/InsurlationRoll_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/ProvingGrounds/PropMaterials/InsulationRoll.upk#MI_InsulationRoll_Mat",
+   "object": "MI_InsulationRoll_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "InsulationRoll_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/InsulationRoll/InsulationRoll/Texture2D/InsurlationRoll_Diff.tga",
+   "extracted_sha256": "93245da27d9a495cf196eab109ecaa9fd99688a0c8d9532c243f5326377bc03b",
+   "output_file": "Content/Extracted/MaterialDatabase/InsulationRoll/InsulationRoll/Texture2D/InsurlationRoll_Diff.tga",
+   "output_sha256": "93245da27d9a495cf196eab109ecaa9fd99688a0c8d9532c243f5326377bc03b",
+   "uasset": "Content/Imported/MaterialDatabase/InsulationRoll/MI_InsulationRoll_Mat.uasset"
+  }
+ ]
+}

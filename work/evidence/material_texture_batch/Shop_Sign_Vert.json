@@ -1,0 +1,99 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Shop_Sign_Vert",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Vert.upk",
+ "source_sha256": "2acab551fe8fefdacdda95cb7fefe392f70c0a579a4bd3d71307be4bb89fd4fa",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Vert.upk#MI_Shop_Sign_Vert_Material",
+   "object": "MI_Shop_Sign_Vert_Material",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Shop_Sign_Vert_Material",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Vert/Shop_Sign_Vert/Texture2D/Shop_Sign_Vert_DiffSpec.tga",
+   "extracted_sha256": "ba23421d761c9b50e987a3c17fa6dc62870339d724748b08e14d977158ac9522",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Vert/Shop_Sign_Vert/Texture2D/Shop_Sign_Vert_DiffSpec.tga",
+   "output_sha256": "ba23421d761c9b50e987a3c17fa6dc62870339d724748b08e14d977158ac9522",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_Sign_Vert/MI_Shop_Sign_Vert_Material.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Vert.upk#MI_vertSignMat",
+   "object": "MI_vertSignMat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "vertSignMat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Vert/Shop_Sign_Vert/Texture2D/Shop_Sign_Vert_Hotel_DiffSpec.tga",
+   "extracted_sha256": "7cb8ca13a78c45d5ffa3944f1f710d2907f7a839d161f2191604909d0b86bb99",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Vert/Shop_Sign_Vert/Texture2D/Shop_Sign_Vert_Hotel_DiffSpec.tga",
+   "output_sha256": "7cb8ca13a78c45d5ffa3944f1f710d2907f7a839d161f2191604909d0b86bb99",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_Sign_Vert/MI_vertSignMat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Vert.upk#Shop_Sign_Vert_DiffSpec",
+   "object": "Shop_Sign_Vert_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Vert/Shop_Sign_Vert/Texture2D/Shop_Sign_Vert_DiffSpec.tga",
+   "extracted_sha256": "ba23421d761c9b50e987a3c17fa6dc62870339d724748b08e14d977158ac9522",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Vert/Shop_Sign_Vert/Texture2D/Shop_Sign_Vert_DiffSpec.tga",
+   "output_sha256": "ba23421d761c9b50e987a3c17fa6dc62870339d724748b08e14d977158ac9522",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_Sign_Vert/Shop_Sign_Vert_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Vert.upk#Shop_Sign_Vert_Emis",
+   "object": "Shop_Sign_Vert_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Vert/Shop_Sign_Vert/Texture2D/Shop_Sign_Vert_Emis.tga",
+   "extracted_sha256": "2bd9c51d9287f653a5ef3167471c1f40231ef23f15294236b511d01101e10250",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Vert/Shop_Sign_Vert/Texture2D/Shop_Sign_Vert_Emis.tga",
+   "output_sha256": "2bd9c51d9287f653a5ef3167471c1f40231ef23f15294236b511d01101e10250",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_Sign_Vert/Shop_Sign_Vert_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Vert.upk#Shop_Sign_Vert_Hotel_DiffSpec",
+   "object": "Shop_Sign_Vert_Hotel_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Vert/Shop_Sign_Vert/Texture2D/Shop_Sign_Vert_Hotel_DiffSpec.tga",
+   "extracted_sha256": "7cb8ca13a78c45d5ffa3944f1f710d2907f7a839d161f2191604909d0b86bb99",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Vert/Shop_Sign_Vert/Texture2D/Shop_Sign_Vert_Hotel_DiffSpec.tga",
+   "output_sha256": "7cb8ca13a78c45d5ffa3944f1f710d2907f7a839d161f2191604909d0b86bb99",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_Sign_Vert/Shop_Sign_Vert_Hotel_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Vert.upk#Shop_Sign_Vert_Hotel_Norm",
+   "object": "Shop_Sign_Vert_Hotel_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Vert/Shop_Sign_Vert/Texture2D/Shop_Sign_Vert_Hotel_Norm.tga",
+   "extracted_sha256": "16b984f309371082786740bb25ff42f155c30008d1854de0e6d44732d2d170b4",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Vert/Shop_Sign_Vert/Texture2D/Shop_Sign_Vert_Hotel_Norm.tga",
+   "output_sha256": "16b984f309371082786740bb25ff42f155c30008d1854de0e6d44732d2d170b4",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_Sign_Vert/Shop_Sign_Vert_Hotel_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Vert.upk#Shop_Sign_Vert_Norm",
+   "object": "Shop_Sign_Vert_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Vert/Shop_Sign_Vert/Texture2D/Shop_Sign_Vert_Norm.tga",
+   "extracted_sha256": "238625092e376e1953cac98e3da379060008da9c9817472e8f5b526cf7d9eb34",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Vert/Shop_Sign_Vert/Texture2D/Shop_Sign_Vert_Norm.tga",
+   "output_sha256": "238625092e376e1953cac98e3da379060008da9c9817472e8f5b526cf7d9eb34",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_Sign_Vert/Shop_Sign_Vert_Norm.uasset"
+  }
+ ]
+}

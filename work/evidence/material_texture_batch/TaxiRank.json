@@ -1,0 +1,73 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "TaxiRank",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/TaxiRank.upk",
+ "source_sha256": "0c378310bc5b0e6701604724632de5e1bf847b345f427ef1899eb377c49ae8f8",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/TaxiRank.upk#FencePost_DiffSpec",
+   "object": "FencePost_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/TaxiRank/FencePost/Texture2D/FencePost_DiffSpec.tga",
+   "extracted_sha256": "d66659eec3122caece8b4dedf238d5f2b400e218ec4f46d9d9414003d02bfb5b",
+   "output_file": "Content/Extracted/MaterialDatabase/TaxiRank/FencePost/Texture2D/FencePost_DiffSpec.tga",
+   "output_sha256": "d66659eec3122caece8b4dedf238d5f2b400e218ec4f46d9d9414003d02bfb5b",
+   "uasset": "Content/Imported/MaterialDatabase/TaxiRank/FencePost_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/TaxiRank.upk#FencePost_Norm",
+   "object": "FencePost_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/TaxiRank/FencePost/Texture2D/FencePost_Norm.tga",
+   "extracted_sha256": "ad54c0ce562bf46992edaa758b4966e1c5432a0de81fe9c19c92b3ca7e0ccd6c",
+   "output_file": "Content/Extracted/MaterialDatabase/TaxiRank/FencePost/Texture2D/FencePost_Norm.tga",
+   "output_sha256": "ad54c0ce562bf46992edaa758b4966e1c5432a0de81fe9c19c92b3ca7e0ccd6c",
+   "uasset": "Content/Imported/MaterialDatabase/TaxiRank/FencePost_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/TaxiRank.upk#MI_FencePost",
+   "object": "MI_FencePost",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FencePost",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/TaxiRank/FencePost/Texture2D/FencePost_DiffSpec.tga",
+   "extracted_sha256": "d66659eec3122caece8b4dedf238d5f2b400e218ec4f46d9d9414003d02bfb5b",
+   "output_file": "Content/Extracted/MaterialDatabase/TaxiRank/FencePost/Texture2D/FencePost_DiffSpec.tga",
+   "output_sha256": "d66659eec3122caece8b4dedf238d5f2b400e218ec4f46d9d9414003d02bfb5b",
+   "uasset": "Content/Imported/MaterialDatabase/TaxiRank/MI_FencePost.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/TaxiRank.upk#MI_TaxiSign",
+   "object": "MI_TaxiSign",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "TaxiSign",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/TaxiRank/TaxiRank/Texture2D/Taxi_DiffSpec.tga",
+   "extracted_sha256": "d9a156a7e8b2c95c852aa5749f9361fda3f8666e3498f618f228023b5b5763ad",
+   "output_file": "Content/Extracted/MaterialDatabase/TaxiRank/TaxiRank/Texture2D/Taxi_DiffSpec.tga",
+   "output_sha256": "d9a156a7e8b2c95c852aa5749f9361fda3f8666e3498f618f228023b5b5763ad",
+   "uasset": "Content/Imported/MaterialDatabase/TaxiRank/MI_TaxiSign.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/TaxiRank.upk#Taxi_DiffSpec",
+   "object": "Taxi_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/TaxiRank/TaxiRank/Texture2D/Taxi_DiffSpec.tga",
+   "extracted_sha256": "d9a156a7e8b2c95c852aa5749f9361fda3f8666e3498f618f228023b5b5763ad",
+   "output_file": "Content/Extracted/MaterialDatabase/TaxiRank/TaxiRank/Texture2D/Taxi_DiffSpec.tga",
+   "output_sha256": "d9a156a7e8b2c95c852aa5749f9361fda3f8666e3498f618f228023b5b5763ad",
+   "uasset": "Content/Imported/MaterialDatabase/TaxiRank/Taxi_DiffSpec.uasset"
+  }
+ ]
+}

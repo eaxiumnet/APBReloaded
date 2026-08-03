@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "EnforcerFoodLitter",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/EnforcerSocialDistrict/PropMaterials/EnforcerFoodLitter.upk",
+ "source_sha256": "5c7185cfb56edf0a5c404e89fc44b4db1007306688eb016d84c0c72f510940a9",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/EnforcerFoodLitter.upk#EnforcerFoodLitter_DiffSpec",
+   "object": "EnforcerFoodLitter_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/EnforcerFoodLitter/EnforcerFoodLitter/Texture2D/EnforcerFoodLitter_DiffSpec.tga",
+   "extracted_sha256": "e1e0af67bc1f1fd6970cd864ce8b4975ad90125d55f690edf6437941ec81a6e3",
+   "output_file": "Content/Extracted/MaterialDatabase/EnforcerFoodLitter/EnforcerFoodLitter/Texture2D/EnforcerFoodLitter_DiffSpec.tga",
+   "output_sha256": "e1e0af67bc1f1fd6970cd864ce8b4975ad90125d55f690edf6437941ec81a6e3",
+   "uasset": "Content/Imported/MaterialDatabase/EnforcerFoodLitter/EnforcerFoodLitter_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/EnforcerFoodLitter.upk#EnforcerFoodLitter_Norm",
+   "object": "EnforcerFoodLitter_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/EnforcerFoodLitter/EnforcerFoodLitter/Texture2D/EnforcerFoodLitter_Norm.tga",
+   "extracted_sha256": "99dc519b69ac3c1f2f808368fa8c48f5644036c23a0eed69c81320098f16487d",
+   "output_file": "Content/Extracted/MaterialDatabase/EnforcerFoodLitter/EnforcerFoodLitter/Texture2D/EnforcerFoodLitter_Norm.tga",
+   "output_sha256": "99dc519b69ac3c1f2f808368fa8c48f5644036c23a0eed69c81320098f16487d",
+   "uasset": "Content/Imported/MaterialDatabase/EnforcerFoodLitter/EnforcerFoodLitter_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/EnforcerFoodLitter.upk#MI_EnforcerFoodLitter_MAT",
+   "object": "MI_EnforcerFoodLitter_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "EnforcerFoodLitter_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/EnforcerFoodLitter/EnforcerFoodLitter/Texture2D/EnforcerFoodLitter_DiffSpec.tga",
+   "extracted_sha256": "e1e0af67bc1f1fd6970cd864ce8b4975ad90125d55f690edf6437941ec81a6e3",
+   "output_file": "Content/Extracted/MaterialDatabase/EnforcerFoodLitter/EnforcerFoodLitter/Texture2D/EnforcerFoodLitter_DiffSpec.tga",
+   "output_sha256": "e1e0af67bc1f1fd6970cd864ce8b4975ad90125d55f690edf6437941ec81a6e3",
+   "uasset": "Content/Imported/MaterialDatabase/EnforcerFoodLitter/MI_EnforcerFoodLitter_MAT.uasset"
+  }
+ ]
+}

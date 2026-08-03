@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Sink",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/PropMaterials/Sink.upk",
+ "source_sha256": "efa20b088145f375ff3ae6af065f24f008d070837aa8ce63f42e73ae78a35c13",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Sink.upk#MI_Sink_MAT",
+   "object": "MI_Sink_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Sink_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Sink/Sink/Texture2D/Sink_DiffSpec.tga",
+   "extracted_sha256": "95e48eb2e748f7acfe73a692ba7cc17d52a3437e85b27d4e9e66819935bcb8df",
+   "output_file": "Content/Extracted/MaterialDatabase/Sink/Sink/Texture2D/Sink_DiffSpec.tga",
+   "output_sha256": "95e48eb2e748f7acfe73a692ba7cc17d52a3437e85b27d4e9e66819935bcb8df",
+   "uasset": "Content/Imported/MaterialDatabase/Sink/MI_Sink_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Sink.upk#Sink_DiffSpec",
+   "object": "Sink_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Sink/Sink/Texture2D/Sink_DiffSpec.tga",
+   "extracted_sha256": "95e48eb2e748f7acfe73a692ba7cc17d52a3437e85b27d4e9e66819935bcb8df",
+   "output_file": "Content/Extracted/MaterialDatabase/Sink/Sink/Texture2D/Sink_DiffSpec.tga",
+   "output_sha256": "95e48eb2e748f7acfe73a692ba7cc17d52a3437e85b27d4e9e66819935bcb8df",
+   "uasset": "Content/Imported/MaterialDatabase/Sink/Sink_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/Sink.upk#Sink_Norm",
+   "object": "Sink_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Sink/Sink/Texture2D/Sink_Norm.tga",
+   "extracted_sha256": "8db0efc083fd8a558fbbc5571325ea876596999ee91d6eca10031952c2e9aa48",
+   "output_file": "Content/Extracted/MaterialDatabase/Sink/Sink/Texture2D/Sink_Norm.tga",
+   "output_sha256": "8db0efc083fd8a558fbbc5571325ea876596999ee91d6eca10031952c2e9aa48",
+   "uasset": "Content/Imported/MaterialDatabase/Sink/Sink_Norm.uasset"
+  }
+ ]
+}

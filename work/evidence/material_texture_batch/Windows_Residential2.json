@@ -1,0 +1,107 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Windows_Residential2",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/FeatureMaterials/Windows_Residential2.upk",
+ "source_sha256": "6288b54a7798e54e768adde8e7f9b0a3d0df100062cbd54a57bb528a3a05c96a",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Windows_Residential2.upk#MI_Windows_Residential2_Blue",
+   "object": "MI_Windows_Residential2_Blue",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Windows_Residential2_Blue",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Windows_Residential2/Windows_Residential2/Texture2D/Windows_Residential2_DiffSpec.tga",
+   "extracted_sha256": "bf1b07c597b9c281126ffc511428bd76455e2f6cb90bdfd737dfbe023f413ddd",
+   "output_file": "Content/Extracted/MaterialDatabase/Windows_Residential2/Windows_Residential2/Texture2D/Windows_Residential2_DiffSpec.tga",
+   "output_sha256": "bf1b07c597b9c281126ffc511428bd76455e2f6cb90bdfd737dfbe023f413ddd",
+   "uasset": "Content/Imported/MaterialDatabase/Windows_Residential2/MI_Windows_Residential2_Blue.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Windows_Residential2.upk#MI_Windows_Residential2_Mat",
+   "object": "MI_Windows_Residential2_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Windows_Residential2_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Windows_Residential2/Windows_Residential2/Texture2D/Windows_Residential2_DiffSpec.tga",
+   "extracted_sha256": "bf1b07c597b9c281126ffc511428bd76455e2f6cb90bdfd737dfbe023f413ddd",
+   "output_file": "Content/Extracted/MaterialDatabase/Windows_Residential2/Windows_Residential2/Texture2D/Windows_Residential2_DiffSpec.tga",
+   "output_sha256": "bf1b07c597b9c281126ffc511428bd76455e2f6cb90bdfd737dfbe023f413ddd",
+   "uasset": "Content/Imported/MaterialDatabase/Windows_Residential2/MI_Windows_Residential2_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Windows_Residential2.upk#MI_Windows_Residential2_Red",
+   "object": "MI_Windows_Residential2_Red",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Windows_Residential2_Red",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Windows_Residential2/Windows_Residential2/Texture2D/Windows_Residential2_DiffSpec.tga",
+   "extracted_sha256": "bf1b07c597b9c281126ffc511428bd76455e2f6cb90bdfd737dfbe023f413ddd",
+   "output_file": "Content/Extracted/MaterialDatabase/Windows_Residential2/Windows_Residential2/Texture2D/Windows_Residential2_DiffSpec.tga",
+   "output_sha256": "bf1b07c597b9c281126ffc511428bd76455e2f6cb90bdfd737dfbe023f413ddd",
+   "uasset": "Content/Imported/MaterialDatabase/Windows_Residential2/MI_Windows_Residential2_Red.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Windows_Residential2.upk#Windows_Residential2_DiffSpec",
+   "object": "Windows_Residential2_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Windows_Residential2/Windows_Residential2/Texture2D/Windows_Residential2_DiffSpec.tga",
+   "extracted_sha256": "bf1b07c597b9c281126ffc511428bd76455e2f6cb90bdfd737dfbe023f413ddd",
+   "output_file": "Content/Extracted/MaterialDatabase/Windows_Residential2/Windows_Residential2/Texture2D/Windows_Residential2_DiffSpec.tga",
+   "output_sha256": "bf1b07c597b9c281126ffc511428bd76455e2f6cb90bdfd737dfbe023f413ddd",
+   "uasset": "Content/Imported/MaterialDatabase/Windows_Residential2/Windows_Residential2_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Windows_Residential2.upk#Windows_Residential2_Emis",
+   "object": "Windows_Residential2_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Windows_Residential2/Windows_Residential2/Texture2D/Windows_Residential2_Emis.tga",
+   "extracted_sha256": "f270c0cd64278859bf86b5a9b26d046018334b692c4d6fd56c821aa9bbc45140",
+   "output_file": "Content/Extracted/MaterialDatabase/Windows_Residential2/Windows_Residential2/Texture2D/Windows_Residential2_Emis.tga",
+   "output_sha256": "f270c0cd64278859bf86b5a9b26d046018334b692c4d6fd56c821aa9bbc45140",
+   "uasset": "Content/Imported/MaterialDatabase/Windows_Residential2/Windows_Residential2_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Windows_Residential2.upk#Windows_Residential2_Norm",
+   "object": "Windows_Residential2_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Windows_Residential2/Windows_Residential2/Texture2D/Windows_Residential2_Norm.tga",
+   "extracted_sha256": "e98a43507834107c12ae4fb00d19ddcf98f95286d333172361f81a8d8a80b913",
+   "output_file": "Content/Extracted/MaterialDatabase/Windows_Residential2/Windows_Residential2/Texture2D/Windows_Residential2_Norm.tga",
+   "output_sha256": "e98a43507834107c12ae4fb00d19ddcf98f95286d333172361f81a8d8a80b913",
+   "uasset": "Content/Imported/MaterialDatabase/Windows_Residential2/Windows_Residential2_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Windows_Residential2.upk#Windows_Residential2_Opac",
+   "object": "Windows_Residential2_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Windows_Residential2/Windows_Residential2/Texture2D/Windows_Residential2_Opac.tga",
+   "extracted_sha256": "b6c5d9dc2d0f6bb21c1250052dce1afab3c7c6033528801aea2504d2b2ed7f79",
+   "output_file": "Content/Extracted/MaterialDatabase/Windows_Residential2/Windows_Residential2/Texture2D/Windows_Residential2_Opac.tga",
+   "output_sha256": "b6c5d9dc2d0f6bb21c1250052dce1afab3c7c6033528801aea2504d2b2ed7f79",
+   "uasset": "Content/Imported/MaterialDatabase/Windows_Residential2/Windows_Residential2_Opac.uasset"
+  }
+ ]
+}

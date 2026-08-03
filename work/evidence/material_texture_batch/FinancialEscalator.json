@@ -1,0 +1,60 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FinancialEscalator",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/PropMaterials/FinancialEscalator.upk",
+ "source_sha256": "64ba7b608f3ec9c7ff48c0be7ce0b07026140b0242be09ec7222546c59c54548",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialEscalator.upk#FinancialEscalator_DiffSpec",
+   "object": "FinancialEscalator_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialEscalator/FinancialEscalator/Texture2D/FinancialEscalator_DiffSpec.tga",
+   "extracted_sha256": "ba471704d6a78716d112f0674be0d79ffc19d3f51e9033960cbf9213e7540a44",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialEscalator/FinancialEscalator/Texture2D/FinancialEscalator_DiffSpec.tga",
+   "output_sha256": "ba471704d6a78716d112f0674be0d79ffc19d3f51e9033960cbf9213e7540a44",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialEscalator/FinancialEscalator_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialEscalator.upk#FinancialEscalator_Emis",
+   "object": "FinancialEscalator_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialEscalator/FinancialEscalator/Texture2D/FinancialEscalator_Emis.tga",
+   "extracted_sha256": "e9f6d4e4999d111d98e0bca389ef8ecfd33c4b9ca82def7f366b69af73f6b6e1",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialEscalator/FinancialEscalator/Texture2D/FinancialEscalator_Emis.tga",
+   "output_sha256": "e9f6d4e4999d111d98e0bca389ef8ecfd33c4b9ca82def7f366b69af73f6b6e1",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialEscalator/FinancialEscalator_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialEscalator.upk#FinancialEscalator_Norm",
+   "object": "FinancialEscalator_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialEscalator/FinancialEscalator/Texture2D/FinancialEscalator_Norm.tga",
+   "extracted_sha256": "767c506318cd967118319b736c45a9d73707f8e092cf9589e8ae49a87519e3c9",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialEscalator/FinancialEscalator/Texture2D/FinancialEscalator_Norm.tga",
+   "output_sha256": "767c506318cd967118319b736c45a9d73707f8e092cf9589e8ae49a87519e3c9",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialEscalator/FinancialEscalator_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialEscalator.upk#MI_FinancialEscalator_MAT",
+   "object": "MI_FinancialEscalator_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialEscalator_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialEscalator/FinancialEscalator/Texture2D/FinancialEscalator_DiffSpec.tga",
+   "extracted_sha256": "ba471704d6a78716d112f0674be0d79ffc19d3f51e9033960cbf9213e7540a44",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialEscalator/FinancialEscalator/Texture2D/FinancialEscalator_DiffSpec.tga",
+   "output_sha256": "ba471704d6a78716d112f0674be0d79ffc19d3f51e9033960cbf9213e7540a44",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialEscalator/MI_FinancialEscalator_MAT.uasset"
+  }
+ ]
+}

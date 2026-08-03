@@ -1,0 +1,178 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "RamRaidShopFront",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/FeatureMaterials/RamRaidShopFront.upk",
+ "source_sha256": "359f3fdb14c9cfb691c65623214db92d1123775ef1606a8b8252069f2896c052",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/RamRaidShopFront.upk#Concrete_Diff",
+   "object": "Concrete_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RamRaidShopFront/Concrete_Generic/Texture2D/Concrete_Diff.tga",
+   "extracted_sha256": "525217005990ef52c9bb1f0143859af6c5fc3424aad72e25e2e23b1a61ea568e",
+   "output_file": "Content/Extracted/MaterialDatabase/RamRaidShopFront/Concrete_Generic/Texture2D/Concrete_Diff.tga",
+   "output_sha256": "525217005990ef52c9bb1f0143859af6c5fc3424aad72e25e2e23b1a61ea568e",
+   "uasset": "Content/Imported/MaterialDatabase/RamRaidShopFront/Concrete_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/RamRaidShopFront.upk#Concrete_Norm",
+   "object": "Concrete_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RamRaidShopFront/Concrete_Generic/Texture2D/Concrete_Norm.tga",
+   "extracted_sha256": "bff8be347fa3f2408e6764d989b334745a1c7951d504ac30763fe7df3c643b5d",
+   "output_file": "Content/Extracted/MaterialDatabase/RamRaidShopFront/Concrete_Generic/Texture2D/Concrete_Norm.tga",
+   "output_sha256": "bff8be347fa3f2408e6764d989b334745a1c7951d504ac30763fe7df3c643b5d",
+   "uasset": "Content/Imported/MaterialDatabase/RamRaidShopFront/Concrete_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/RamRaidShopFront.upk#crackedglass",
+   "object": "crackedglass",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RamRaidShopFront/PropsGenericMaterials/Texture2D/crackedglass.tga",
+   "extracted_sha256": "dfa317aa7fb2240af7f70a04291e38bffe78163ed2df9334514b23bb823cc808",
+   "output_file": "Content/Extracted/MaterialDatabase/RamRaidShopFront/PropsGenericMaterials/Texture2D/crackedglass.tga",
+   "output_sha256": "dfa317aa7fb2240af7f70a04291e38bffe78163ed2df9334514b23bb823cc808",
+   "uasset": "Content/Imported/MaterialDatabase/RamRaidShopFront/crackedglass.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/RamRaidShopFront.upk#CrackedGlass_Norm",
+   "object": "CrackedGlass_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RamRaidShopFront/PropsGenericMaterials/Texture2D/CrackedGlass_Norm.tga",
+   "extracted_sha256": "785619d634027205ac11fddf228e8ff86e308e8ec9386fb9c8d74e1e34b242c3",
+   "output_file": "Content/Extracted/MaterialDatabase/RamRaidShopFront/PropsGenericMaterials/Texture2D/CrackedGlass_Norm.tga",
+   "output_sha256": "785619d634027205ac11fddf228e8ff86e308e8ec9386fb9c8d74e1e34b242c3",
+   "uasset": "Content/Imported/MaterialDatabase/RamRaidShopFront/CrackedGlass_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/RamRaidShopFront.upk#MI_Concrete_Generic_Clean_NoGrime",
+   "object": "MI_Concrete_Generic_Clean_NoGrime",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Concrete_Generic_Clean_NoGrime",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RamRaidShopFront/Concrete_Generic/Texture2D/Concrete_Diff.tga",
+   "extracted_sha256": "525217005990ef52c9bb1f0143859af6c5fc3424aad72e25e2e23b1a61ea568e",
+   "output_file": "Content/Extracted/MaterialDatabase/RamRaidShopFront/Concrete_Generic/Texture2D/Concrete_Diff.tga",
+   "output_sha256": "525217005990ef52c9bb1f0143859af6c5fc3424aad72e25e2e23b1a61ea568e",
+   "uasset": "Content/Imported/MaterialDatabase/RamRaidShopFront/MI_Concrete_Generic_Clean_NoGrime.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/RamRaidShopFront.upk#MI_CrackedPropGlass",
+   "object": "MI_CrackedPropGlass",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CrackedPropGlass",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RamRaidShopFront/PropsGenericMaterials/Texture2D/crackedglass.tga",
+   "extracted_sha256": "dfa317aa7fb2240af7f70a04291e38bffe78163ed2df9334514b23bb823cc808",
+   "output_file": "Content/Extracted/MaterialDatabase/RamRaidShopFront/PropsGenericMaterials/Texture2D/crackedglass.tga",
+   "output_sha256": "dfa317aa7fb2240af7f70a04291e38bffe78163ed2df9334514b23bb823cc808",
+   "uasset": "Content/Imported/MaterialDatabase/RamRaidShopFront/MI_CrackedPropGlass.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/RamRaidShopFront.upk#MI_RamRaidShopFront",
+   "object": "MI_RamRaidShopFront",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RamRaidShopFront",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RamRaidShopFront/RamRaidShopFront/Texture2D/RamRaidShopFront_DiffSpec.tga",
+   "extracted_sha256": "d9afbf87d3df285c69f7959ac133c13f33c31ac70573a636f2caca51a11143dc",
+   "output_file": "Content/Extracted/MaterialDatabase/RamRaidShopFront/RamRaidShopFront/Texture2D/RamRaidShopFront_DiffSpec.tga",
+   "output_sha256": "d9afbf87d3df285c69f7959ac133c13f33c31ac70573a636f2caca51a11143dc",
+   "uasset": "Content/Imported/MaterialDatabase/RamRaidShopFront/MI_RamRaidShopFront.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/RamRaidShopFront.upk#MI_RamRaidShopFront_Damage",
+   "object": "MI_RamRaidShopFront_Damage",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RamRaidShopFront_Damage",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RamRaidShopFront/RamRaidShopFront/Texture2D/RamRaidShopFront_DamDiffSpec.tga",
+   "extracted_sha256": "14464f0bec9949d1f5a28fa1338ad71a93a5607644787035f26b46574a799b59",
+   "output_file": "Content/Extracted/MaterialDatabase/RamRaidShopFront/RamRaidShopFront/Texture2D/RamRaidShopFront_DamDiffSpec.tga",
+   "output_sha256": "14464f0bec9949d1f5a28fa1338ad71a93a5607644787035f26b46574a799b59",
+   "uasset": "Content/Imported/MaterialDatabase/RamRaidShopFront/MI_RamRaidShopFront_Damage.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/RamRaidShopFront.upk#RamRaidShopFront_DamDiffSpec",
+   "object": "RamRaidShopFront_DamDiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RamRaidShopFront/RamRaidShopFront/Texture2D/RamRaidShopFront_DamDiffSpec.tga",
+   "extracted_sha256": "14464f0bec9949d1f5a28fa1338ad71a93a5607644787035f26b46574a799b59",
+   "output_file": "Content/Extracted/MaterialDatabase/RamRaidShopFront/RamRaidShopFront/Texture2D/RamRaidShopFront_DamDiffSpec.tga",
+   "output_sha256": "14464f0bec9949d1f5a28fa1338ad71a93a5607644787035f26b46574a799b59",
+   "uasset": "Content/Imported/MaterialDatabase/RamRaidShopFront/RamRaidShopFront_DamDiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/RamRaidShopFront.upk#RamRaidShopFront_DamNorm",
+   "object": "RamRaidShopFront_DamNorm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RamRaidShopFront/RamRaidShopFront/Texture2D/RamRaidShopFront_DamNorm.tga",
+   "extracted_sha256": "31448640569436a4c68e581d6d5c36f531220331a32deadeb2e11b370e49038e",
+   "output_file": "Content/Extracted/MaterialDatabase/RamRaidShopFront/RamRaidShopFront/Texture2D/RamRaidShopFront_DamNorm.tga",
+   "output_sha256": "31448640569436a4c68e581d6d5c36f531220331a32deadeb2e11b370e49038e",
+   "uasset": "Content/Imported/MaterialDatabase/RamRaidShopFront/RamRaidShopFront_DamNorm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/RamRaidShopFront.upk#RamRaidShopFront_DamOpac",
+   "object": "RamRaidShopFront_DamOpac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RamRaidShopFront/RamRaidShopFront/Texture2D/RamRaidShopFront_DamOpac.tga",
+   "extracted_sha256": "ad1657c0876ae431bfe97b5bb837c431b9bca6a2d9886596bb48403e42db9017",
+   "output_file": "Content/Extracted/MaterialDatabase/RamRaidShopFront/RamRaidShopFront/Texture2D/RamRaidShopFront_DamOpac.tga",
+   "output_sha256": "ad1657c0876ae431bfe97b5bb837c431b9bca6a2d9886596bb48403e42db9017",
+   "uasset": "Content/Imported/MaterialDatabase/RamRaidShopFront/RamRaidShopFront_DamOpac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/RamRaidShopFront.upk#RamRaidShopFront_DiffSpec",
+   "object": "RamRaidShopFront_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RamRaidShopFront/RamRaidShopFront/Texture2D/RamRaidShopFront_DiffSpec.tga",
+   "extracted_sha256": "d9afbf87d3df285c69f7959ac133c13f33c31ac70573a636f2caca51a11143dc",
+   "output_file": "Content/Extracted/MaterialDatabase/RamRaidShopFront/RamRaidShopFront/Texture2D/RamRaidShopFront_DiffSpec.tga",
+   "output_sha256": "d9afbf87d3df285c69f7959ac133c13f33c31ac70573a636f2caca51a11143dc",
+   "uasset": "Content/Imported/MaterialDatabase/RamRaidShopFront/RamRaidShopFront_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/RamRaidShopFront.upk#RamRaidShopFront_Norm",
+   "object": "RamRaidShopFront_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RamRaidShopFront/RamRaidShopFront/Texture2D/RamRaidShopFront_Norm.tga",
+   "extracted_sha256": "ab4d54397c36fced8a09842799bbb4cfa212100536aec6d76e8326189f3ab2fe",
+   "output_file": "Content/Extracted/MaterialDatabase/RamRaidShopFront/RamRaidShopFront/Texture2D/RamRaidShopFront_Norm.tga",
+   "output_sha256": "ab4d54397c36fced8a09842799bbb4cfa212100536aec6d76e8326189f3ab2fe",
+   "uasset": "Content/Imported/MaterialDatabase/RamRaidShopFront/RamRaidShopFront_Norm.uasset"
+  }
+ ]
+}

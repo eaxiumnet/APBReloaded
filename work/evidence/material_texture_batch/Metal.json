@@ -1,0 +1,876 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Metal",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/Metal/Metal.upk",
+ "source_sha256": "e050da672ec4b70dc522e13196b1aaa113ad6f62d5db54f31698f4458f40e2fd",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#DepthBars_NRM",
+   "object": "DepthBars_NRM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/John_TemplateFiles/Texture2D/DepthBars_NRM.tga",
+   "extracted_sha256": "f1b84b259e10ce10bd22aee6f148e94ffb6c73b1e5b693d00aec032f5ee62efb",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/John_TemplateFiles/Texture2D/DepthBars_NRM.tga",
+   "output_sha256": "f1b84b259e10ce10bd22aee6f148e94ffb6c73b1e5b693d00aec032f5ee62efb",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/DepthBars_NRM.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#DirtOverlay_01",
+   "object": "DirtOverlay_01",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/DirtOverlay_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#Divider_NRM",
+   "object": "Divider_NRM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/Divider_NRM.tga",
+   "extracted_sha256": "7a9a42d3527bc3d7cb39b42b4f4369aea8f3df3290b940f3d5eb02d567b59fbc",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/Divider_NRM.tga",
+   "output_sha256": "7a9a42d3527bc3d7cb39b42b4f4369aea8f3df3290b940f3d5eb02d567b59fbc",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/Divider_NRM.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#Metal_Checkerplate_Norm",
+   "object": "Metal_Checkerplate_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/Metal_Checkerplate_Norm.tga",
+   "extracted_sha256": "f9de6d8240a00daba225da306f3524848e2ec8b7031e37343dbad7e5a6fbf432",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/Metal_Checkerplate_Norm.tga",
+   "output_sha256": "f9de6d8240a00daba225da306f3524848e2ec8b7031e37343dbad7e5a6fbf432",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/Metal_Checkerplate_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#Metal_Corroded_DiffSpec",
+   "object": "Metal_Corroded_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/Metal_Corroded_DiffSpec.tga",
+   "extracted_sha256": "77c5a335153bf38a56296ad62f6377862c76590ffbdc4056a9d5df39f459c2fd",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/Metal_Corroded_DiffSpec.tga",
+   "output_sha256": "77c5a335153bf38a56296ad62f6377862c76590ffbdc4056a9d5df39f459c2fd",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/Metal_Corroded_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#Metal_PARENT_Baked_LookupTexture",
+   "object": "Metal_PARENT_Baked_LookupTexture",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/Metal_PARENT_Baked_LookupTexture.tga",
+   "extracted_sha256": "605730105b2d8dc9f66ce9a64cf9f0454156faefe234a6773c5eac0160d2d5e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/Metal_PARENT_Baked_LookupTexture.tga",
+   "output_sha256": "605730105b2d8dc9f66ce9a64cf9f0454156faefe234a6773c5eac0160d2d5e6",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/Metal_PARENT_Baked_LookupTexture.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_AluminumCladding_Blue_Mat",
+   "object": "MI_AluminumCladding_Blue_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "AluminumCladding_Blue_Mat",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/John_TemplateFiles/Texture2D/DepthBars_NRM.tga",
+   "extracted_sha256": "f1b84b259e10ce10bd22aee6f148e94ffb6c73b1e5b693d00aec032f5ee62efb",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/John_TemplateFiles/Texture2D/DepthBars_NRM.tga",
+   "output_sha256": "f1b84b259e10ce10bd22aee6f148e94ffb6c73b1e5b693d00aec032f5ee62efb",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_AluminumCladding_Blue_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_AluminumCladding_Mat",
+   "object": "MI_AluminumCladding_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "AluminumCladding_Mat",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/John_TemplateFiles/Texture2D/DepthBars_NRM.tga",
+   "extracted_sha256": "f1b84b259e10ce10bd22aee6f148e94ffb6c73b1e5b693d00aec032f5ee62efb",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/John_TemplateFiles/Texture2D/DepthBars_NRM.tga",
+   "output_sha256": "f1b84b259e10ce10bd22aee6f148e94ffb6c73b1e5b693d00aec032f5ee62efb",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_AluminumCladding_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_CSD_Metal_Corroded",
+   "object": "MI_CSD_Metal_Corroded",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CSD_Metal_Corroded",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/Metal_Corroded_DiffSpec.tga",
+   "extracted_sha256": "77c5a335153bf38a56296ad62f6377862c76590ffbdc4056a9d5df39f459c2fd",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/Metal_Corroded_DiffSpec.tga",
+   "output_sha256": "77c5a335153bf38a56296ad62f6377862c76590ffbdc4056a9d5df39f459c2fd",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_CSD_Metal_Corroded.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_Metal_Brushed_Blue",
+   "object": "MI_Metal_Brushed_Blue",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_Brushed_Blue",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_Metal_Brushed_Blue.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_Metal_Brushed_Blue_Graffiti",
+   "object": "MI_Metal_Brushed_Blue_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_Brushed_Blue_Graffiti",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_Metal_Brushed_Blue_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_Metal_Brushed_DarkGrey",
+   "object": "MI_Metal_Brushed_DarkGrey",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_Brushed_DarkGrey",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_Metal_Brushed_DarkGrey.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_Metal_Brushed_DarkGrey_Graffiti",
+   "object": "MI_Metal_Brushed_DarkGrey_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_Brushed_DarkGrey_Graffiti",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_Metal_Brushed_DarkGrey_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_Metal_Brushed_Grey",
+   "object": "MI_Metal_Brushed_Grey",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_Brushed_Grey",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_Metal_Brushed_Grey.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_Metal_Brushed_PARENT",
+   "object": "MI_Metal_Brushed_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_Brushed_PARENT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_Metal_Brushed_PARENT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_Metal_Brushed_PARENT_DoubleSided",
+   "object": "MI_Metal_Brushed_PARENT_DoubleSided",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_Brushed_PARENT_DoubleSided",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_Metal_Brushed_PARENT_DoubleSided.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_Metal_Brushed_Red",
+   "object": "MI_Metal_Brushed_Red",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_Brushed_Red",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_Metal_Brushed_Red.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_Metal_Brushed_Red_Graffiti",
+   "object": "MI_Metal_Brushed_Red_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_Brushed_Red_Graffiti",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_Metal_Brushed_Red_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_Metal_Brushed_Silver",
+   "object": "MI_Metal_Brushed_Silver",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_Brushed_Silver",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_Metal_Brushed_Silver.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_Metal_Brushed_Silver_Graffiti",
+   "object": "MI_Metal_Brushed_Silver_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_Brushed_Silver_Graffiti",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_Metal_Brushed_Silver_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_Metal_Brushed_SilverBlue",
+   "object": "MI_Metal_Brushed_SilverBlue",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_Brushed_SilverBlue",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_Metal_Brushed_SilverBlue.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_Metal_Brushed_SilverBlue_Graffiti",
+   "object": "MI_Metal_Brushed_SilverBlue_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_Brushed_SilverBlue_Graffiti",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_Metal_Brushed_SilverBlue_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_Metal_Checkerplate",
+   "object": "MI_Metal_Checkerplate",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_Checkerplate",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/Metal_Checkerplate_Norm.tga",
+   "extracted_sha256": "f9de6d8240a00daba225da306f3524848e2ec8b7031e37343dbad7e5a6fbf432",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/Metal_Checkerplate_Norm.tga",
+   "output_sha256": "f9de6d8240a00daba225da306f3524848e2ec8b7031e37343dbad7e5a6fbf432",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_Metal_Checkerplate.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_Metal_Corroded",
+   "object": "MI_Metal_Corroded",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_Corroded",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/Metal_Corroded_DiffSpec.tga",
+   "extracted_sha256": "77c5a335153bf38a56296ad62f6377862c76590ffbdc4056a9d5df39f459c2fd",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/Metal_Corroded_DiffSpec.tga",
+   "output_sha256": "77c5a335153bf38a56296ad62f6377862c76590ffbdc4056a9d5df39f459c2fd",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_Metal_Corroded.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_Metal_Corroded_Graffiti",
+   "object": "MI_Metal_Corroded_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_Corroded_Graffiti",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/Metal_Corroded_DiffSpec.tga",
+   "extracted_sha256": "77c5a335153bf38a56296ad62f6377862c76590ffbdc4056a9d5df39f459c2fd",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/Metal_Corroded_DiffSpec.tga",
+   "output_sha256": "77c5a335153bf38a56296ad62f6377862c76590ffbdc4056a9d5df39f459c2fd",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_Metal_Corroded_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_Metal_Divider",
+   "object": "MI_Metal_Divider",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_Divider",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/Divider_NRM.tga",
+   "extracted_sha256": "7a9a42d3527bc3d7cb39b42b4f4369aea8f3df3290b940f3d5eb02d567b59fbc",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/Divider_NRM.tga",
+   "output_sha256": "7a9a42d3527bc3d7cb39b42b4f4369aea8f3df3290b940f3d5eb02d567b59fbc",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_Metal_Divider.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_Metal_M01_GreyLight",
+   "object": "MI_Metal_M01_GreyLight",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_M01_GreyLight",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_Metal_M01_GreyLight.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_Metal_M01_GreyLight_Graffiti",
+   "object": "MI_Metal_M01_GreyLight_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_M01_GreyLight_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_Metal_M01_GreyLight_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_Metal_M02_Grey",
+   "object": "MI_Metal_M02_Grey",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_M02_Grey",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_Metal_M02_Grey.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_Metal_M02_Grey_Graffiti",
+   "object": "MI_Metal_M02_Grey_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_M02_Grey_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_Metal_M02_Grey_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_Metal_M03_GreyDark",
+   "object": "MI_Metal_M03_GreyDark",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_M03_GreyDark",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_Metal_M03_GreyDark.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_Metal_M03_GreyDark_Graffiti",
+   "object": "MI_Metal_M03_GreyDark_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_M03_GreyDark_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_Metal_M03_GreyDark_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_Metal_M04_DarkBlue",
+   "object": "MI_Metal_M04_DarkBlue",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_M04_DarkBlue",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_Metal_M04_DarkBlue.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_Metal_M04_DarkBlue_Graffiti",
+   "object": "MI_Metal_M04_DarkBlue_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_M04_DarkBlue_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_Metal_M04_DarkBlue_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_Metal_M05_Gold",
+   "object": "MI_Metal_M05_Gold",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_M05_Gold",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_Metal_M05_Gold.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_Metal_M06_Matt_LightBlue",
+   "object": "MI_Metal_M06_Matt_LightBlue",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_M06_Matt_LightBlue",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_Metal_M06_Matt_LightBlue.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_Metal_M07_Aluminum_LightBlue",
+   "object": "MI_Metal_M07_Aluminum_LightBlue",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_M07_Aluminum_LightBlue",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_Metal_M07_Aluminum_LightBlue.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_Metal_M08_Checkerplate_Lightgrey",
+   "object": "MI_Metal_M08_Checkerplate_Lightgrey",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_M08_Checkerplate_Lightgrey",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_Metal_M08_Checkerplate_Lightgrey.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_Metal_PARENT",
+   "object": "MI_Metal_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_PARENT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_Metal_PARENT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_Metal_PARENT_Baked",
+   "object": "MI_Metal_PARENT_Baked",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_PARENT_Baked",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/Metal_PARENT_Baked_LookupTexture.tga",
+   "extracted_sha256": "605730105b2d8dc9f66ce9a64cf9f0454156faefe234a6773c5eac0160d2d5e6",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/Metal_PARENT_Baked_LookupTexture.tga",
+   "output_sha256": "605730105b2d8dc9f66ce9a64cf9f0454156faefe234a6773c5eac0160d2d5e6",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_Metal_PARENT_Baked.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_Metal_Rust",
+   "object": "MI_Metal_Rust",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_Rust",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_Metal_Rust.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_Metal_Rust_Graffiti",
+   "object": "MI_Metal_Rust_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_Rust_Graffiti",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_Metal_Rust_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_PaintedMetal_Beige",
+   "object": "MI_PaintedMetal_Beige",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PaintedMetal_Beige",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "extracted_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "output_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_PaintedMetal_Beige.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_PaintedMetal_Black",
+   "object": "MI_PaintedMetal_Black",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PaintedMetal_Black",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "extracted_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "output_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_PaintedMetal_Black.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_PaintedMetal_Blue",
+   "object": "MI_PaintedMetal_Blue",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PaintedMetal_Blue",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "extracted_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "output_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_PaintedMetal_Blue.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_PaintedMetal_BlueDark",
+   "object": "MI_PaintedMetal_BlueDark",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PaintedMetal_BlueDark",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "extracted_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "output_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_PaintedMetal_BlueDark.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_PaintedMetal_BlueDark_Graffiti",
+   "object": "MI_PaintedMetal_BlueDark_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PaintedMetal_BlueDark_Graffiti",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "extracted_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "output_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_PaintedMetal_BlueDark_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_PaintedMetal_BlueGreen",
+   "object": "MI_PaintedMetal_BlueGreen",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PaintedMetal_BlueGreen",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "extracted_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "output_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_PaintedMetal_BlueGreen.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_PaintedMetal_Brown",
+   "object": "MI_PaintedMetal_Brown",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PaintedMetal_Brown",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "extracted_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "output_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_PaintedMetal_Brown.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_PaintedMetal_Green",
+   "object": "MI_PaintedMetal_Green",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PaintedMetal_Green",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "extracted_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "output_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_PaintedMetal_Green.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_PaintedMetal_GreenBright",
+   "object": "MI_PaintedMetal_GreenBright",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PaintedMetal_GreenBright",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "extracted_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "output_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_PaintedMetal_GreenBright.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_PaintedMetal_Grey",
+   "object": "MI_PaintedMetal_Grey",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PaintedMetal_Grey",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "extracted_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "output_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_PaintedMetal_Grey.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_PaintedMetal_GreyDark",
+   "object": "MI_PaintedMetal_GreyDark",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PaintedMetal_GreyDark",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "extracted_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "output_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_PaintedMetal_GreyDark.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_PaintedMetal_PARENT",
+   "object": "MI_PaintedMetal_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PaintedMetal_PARENT",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "extracted_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "output_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_PaintedMetal_PARENT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_PaintedMetal_Red",
+   "object": "MI_PaintedMetal_Red",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PaintedMetal_Red",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "extracted_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "output_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_PaintedMetal_Red.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_PaintedMetal_RedBright",
+   "object": "MI_PaintedMetal_RedBright",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PaintedMetal_RedBright",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "extracted_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "output_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_PaintedMetal_RedBright.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_PaintedMetal_Silver",
+   "object": "MI_PaintedMetal_Silver",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PaintedMetal_Silver",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "extracted_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "output_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_PaintedMetal_Silver.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_PaintedMetal_SilverDark",
+   "object": "MI_PaintedMetal_SilverDark",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PaintedMetal_SilverDark",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "extracted_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "output_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_PaintedMetal_SilverDark.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_PaintedMetal_White",
+   "object": "MI_PaintedMetal_White",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PaintedMetal_White",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "extracted_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "output_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_PaintedMetal_White.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_PaintedMetal_White_Graffiti",
+   "object": "MI_PaintedMetal_White_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PaintedMetal_White_Graffiti",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "extracted_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "output_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_PaintedMetal_White_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#MI_PaintedMetal_Yellow",
+   "object": "MI_PaintedMetal_Yellow",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PaintedMetal_Yellow",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "extracted_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "output_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/MI_PaintedMetal_Yellow.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Metal/Metal.upk#PaintedMetal_Norm",
+   "object": "PaintedMetal_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "extracted_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "output_file": "Content/Extracted/MaterialDatabase/Metal/Metal/Texture2D/PaintedMetal_Norm.tga",
+   "output_sha256": "f545e1633338885cbee59f4912b2b3a417db191f11a17b149bfcd60ea9652fe7",
+   "uasset": "Content/Imported/MaterialDatabase/Metal/PaintedMetal_Norm.uasset"
+  }
+ ]
+}

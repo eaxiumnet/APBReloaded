@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "CSD_Laptop",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Laptop.upk",
+ "source_sha256": "3a96c2a9b3b4baf3488689a7ac895f59b3ed35cd86a184e76f10715cfeb71b58",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Laptop.upk#CSD_Laptop_DiffSpec",
+   "object": "CSD_Laptop_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Laptop/CSD_Laptop/Texture2D/CSD_Laptop_DiffSpec.tga",
+   "extracted_sha256": "4304159d23e9a5b4007a8ab8aadec00b83ffc37209b2151185b233e173c43253",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Laptop/CSD_Laptop/Texture2D/CSD_Laptop_DiffSpec.tga",
+   "output_sha256": "4304159d23e9a5b4007a8ab8aadec00b83ffc37209b2151185b233e173c43253",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Laptop/CSD_Laptop_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Laptop.upk#CSD_Laptop_Norm",
+   "object": "CSD_Laptop_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Laptop/CSD_Laptop/Texture2D/CSD_Laptop_Norm.tga",
+   "extracted_sha256": "817ba99a3285919845fcbb96e475d5b1d20bcefcb5e1e081e6af6f8af4316aec",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Laptop/CSD_Laptop/Texture2D/CSD_Laptop_Norm.tga",
+   "output_sha256": "817ba99a3285919845fcbb96e475d5b1d20bcefcb5e1e081e6af6f8af4316aec",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Laptop/CSD_Laptop_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Laptop.upk#MI_CSD_Laptop_MAT",
+   "object": "MI_CSD_Laptop_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CSD_Laptop_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Laptop/CSD_Laptop/Texture2D/CSD_Laptop_DiffSpec.tga",
+   "extracted_sha256": "4304159d23e9a5b4007a8ab8aadec00b83ffc37209b2151185b233e173c43253",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Laptop/CSD_Laptop/Texture2D/CSD_Laptop_DiffSpec.tga",
+   "output_sha256": "4304159d23e9a5b4007a8ab8aadec00b83ffc37209b2151185b233e173c43253",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Laptop/MI_CSD_Laptop_MAT.uasset"
+  }
+ ]
+}

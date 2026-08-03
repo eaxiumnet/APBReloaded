@@ -1,0 +1,34 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Canvas",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/canvas/Canvas.upk",
+ "source_sha256": "ae8a694b305fed3e7078d30298a9e4d44592cff3e44a57d7cea9af5680d83782",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/canvas/Canvas.upk#Canvas",
+   "object": "Canvas",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Canvas/Canvas/Texture2D/Canvas.tga",
+   "extracted_sha256": "c67f080f6dd242e8a4cd844a11698eab2de6ac9e71afab7829424ed250c4a4fb",
+   "output_file": "Content/Extracted/MaterialDatabase/Canvas/Canvas/Texture2D/Canvas.tga",
+   "output_sha256": "c67f080f6dd242e8a4cd844a11698eab2de6ac9e71afab7829424ed250c4a4fb",
+   "uasset": "Content/Imported/MaterialDatabase/Canvas/Canvas.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/canvas/Canvas.upk#MI_Canvas_Mat",
+   "object": "MI_Canvas_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Canvas_Mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Canvas/Canvas/Texture2D/Canvas.tga",
+   "extracted_sha256": "c67f080f6dd242e8a4cd844a11698eab2de6ac9e71afab7829424ed250c4a4fb",
+   "output_file": "Content/Extracted/MaterialDatabase/Canvas/Canvas/Texture2D/Canvas.tga",
+   "output_sha256": "c67f080f6dd242e8a4cd844a11698eab2de6ac9e71afab7829424ed250c4a4fb",
+   "uasset": "Content/Imported/MaterialDatabase/Canvas/MI_Canvas_Mat.uasset"
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "EnforcerSigns",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/EnforcerSocialDistrict/PropMaterials/EnforcerSigns.upk",
+ "source_sha256": "5129bc148d4acab61998f6e4b923282d8bde11fe3011331569a3995fc68951e9",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/EnforcerSigns.upk#EnforcerSigns",
+   "object": "EnforcerSigns",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/EnforcerSigns/EnforcerSigns/Texture2D/EnforcerSigns.tga",
+   "extracted_sha256": "f0f1e4ad4ff04340af072db81f9b756da6e216fe3a1db7c86dfd2c1e592afb14",
+   "output_file": "Content/Extracted/MaterialDatabase/EnforcerSigns/EnforcerSigns/Texture2D/EnforcerSigns.tga",
+   "output_sha256": "f0f1e4ad4ff04340af072db81f9b756da6e216fe3a1db7c86dfd2c1e592afb14",
+   "uasset": "Content/Imported/MaterialDatabase/EnforcerSigns/EnforcerSigns.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/EnforcerSigns.upk#MI_DirectionSigns_01",
+   "object": "MI_DirectionSigns_01",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "DirectionSigns_01",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/EnforcerSigns/EnforcerSigns/Texture2D/EnforcerSigns.tga",
+   "extracted_sha256": "f0f1e4ad4ff04340af072db81f9b756da6e216fe3a1db7c86dfd2c1e592afb14",
+   "output_file": "Content/Extracted/MaterialDatabase/EnforcerSigns/EnforcerSigns/Texture2D/EnforcerSigns.tga",
+   "output_sha256": "f0f1e4ad4ff04340af072db81f9b756da6e216fe3a1db7c86dfd2c1e592afb14",
+   "uasset": "Content/Imported/MaterialDatabase/EnforcerSigns/MI_DirectionSigns_01.uasset"
+  }
+ ]
+}

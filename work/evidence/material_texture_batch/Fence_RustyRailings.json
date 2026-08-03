@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Fence_RustyRailings",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/Fence_RustyRailings.upk",
+ "source_sha256": "0de49f928abd901c217687b7e467e5648df613d5f46dd963a6d8c99b61769c41",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Fence_RustyRailings.upk#Fence_RustyRailings_DiffSpec",
+   "object": "Fence_RustyRailings_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Fence_RustyRailings/Fence_RustyRailings/Texture2D/Fence_RustyRailings_DiffSpec.tga",
+   "extracted_sha256": "c99d4592033d2b0e5bda6d6029335edb88c2ef4f92376dddb10b63ba61859641",
+   "output_file": "Content/Extracted/MaterialDatabase/Fence_RustyRailings/Fence_RustyRailings/Texture2D/Fence_RustyRailings_DiffSpec.tga",
+   "output_sha256": "c99d4592033d2b0e5bda6d6029335edb88c2ef4f92376dddb10b63ba61859641",
+   "uasset": "Content/Imported/MaterialDatabase/Fence_RustyRailings/Fence_RustyRailings_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Fence_RustyRailings.upk#Fence_RustyRailings_NormAlph",
+   "object": "Fence_RustyRailings_NormAlph",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Fence_RustyRailings/Fence_RustyRailings/Texture2D/Fence_RustyRailings_NormAlph.tga",
+   "extracted_sha256": "8356780dccc82128be50833a455c00f7df755e7d0aa0adc15688f4e1857c7f82",
+   "output_file": "Content/Extracted/MaterialDatabase/Fence_RustyRailings/Fence_RustyRailings/Texture2D/Fence_RustyRailings_NormAlph.tga",
+   "output_sha256": "8356780dccc82128be50833a455c00f7df755e7d0aa0adc15688f4e1857c7f82",
+   "uasset": "Content/Imported/MaterialDatabase/Fence_RustyRailings/Fence_RustyRailings_NormAlph.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Fence_RustyRailings.upk#MI_fence_rustyrailings",
+   "object": "MI_fence_rustyrailings",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "fence_rustyrailings",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Fence_RustyRailings/Fence_RustyRailings/Texture2D/Fence_RustyRailings_DiffSpec.tga",
+   "extracted_sha256": "c99d4592033d2b0e5bda6d6029335edb88c2ef4f92376dddb10b63ba61859641",
+   "output_file": "Content/Extracted/MaterialDatabase/Fence_RustyRailings/Fence_RustyRailings/Texture2D/Fence_RustyRailings_DiffSpec.tga",
+   "output_sha256": "c99d4592033d2b0e5bda6d6029335edb88c2ef4f92376dddb10b63ba61859641",
+   "uasset": "Content/Imported/MaterialDatabase/Fence_RustyRailings/MI_fence_rustyrailings.uasset"
+  }
+ ]
+}

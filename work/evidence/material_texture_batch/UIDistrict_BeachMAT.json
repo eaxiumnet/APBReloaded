@@ -1,0 +1,164 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "UIDistrict_BeachMAT",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/UIDistrict/BeachScene/UIDistrict_BeachMAT.upk",
+ "source_sha256": "4ee5bd4721add1f7132bd176a96c5e3b15ee9e392fa3296d9f23b3252db668aa",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/UIDistrict/BeachScene/UIDistrict_BeachMAT.upk#Barrel_Orange_Diff",
+   "object": "Barrel_Orange_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/UIDistrict_BeachMAT/UIDistrict_BeachMAT/Texture2D/Barrel_Orange_Diff.tga",
+   "extracted_sha256": "6ee1fe970ce0bb6cebca4ddb4a66c01cedbbbdfd98a9b265583e08a9f06031e4",
+   "output_file": "Content/Extracted/MaterialDatabase/UIDistrict_BeachMAT/UIDistrict_BeachMAT/Texture2D/Barrel_Orange_Diff.tga",
+   "output_sha256": "6ee1fe970ce0bb6cebca4ddb4a66c01cedbbbdfd98a9b265583e08a9f06031e4",
+   "uasset": "Content/Imported/MaterialDatabase/UIDistrict_BeachMAT/Barrel_Orange_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/UIDistrict/BeachScene/UIDistrict_BeachMAT.upk#Barrel_Orange_Norm",
+   "object": "Barrel_Orange_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/UIDistrict_BeachMAT/UIDistrict_BeachMAT/Texture2D/Barrel_Orange_Norm.tga",
+   "extracted_sha256": "9d10c762a9bb5396d44bac782e04fde5eaea77c3275ff5a20eb9dd1a7a8e26c0",
+   "output_file": "Content/Extracted/MaterialDatabase/UIDistrict_BeachMAT/UIDistrict_BeachMAT/Texture2D/Barrel_Orange_Norm.tga",
+   "output_sha256": "9d10c762a9bb5396d44bac782e04fde5eaea77c3275ff5a20eb9dd1a7a8e26c0",
+   "uasset": "Content/Imported/MaterialDatabase/UIDistrict_BeachMAT/Barrel_Orange_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/UIDistrict/BeachScene/UIDistrict_BeachMAT.upk#Fireplace_Diff",
+   "object": "Fireplace_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/UIDistrict_BeachMAT/UIDistrict_BeachMAT/Texture2D/Fireplace_Diff.tga",
+   "extracted_sha256": "7d2735a6a618ea639724f8cade3ee24aa7adb166d3a685054b4a6fcfbc83dc45",
+   "output_file": "Content/Extracted/MaterialDatabase/UIDistrict_BeachMAT/UIDistrict_BeachMAT/Texture2D/Fireplace_Diff.tga",
+   "output_sha256": "7d2735a6a618ea639724f8cade3ee24aa7adb166d3a685054b4a6fcfbc83dc45",
+   "uasset": "Content/Imported/MaterialDatabase/UIDistrict_BeachMAT/Fireplace_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/UIDistrict/BeachScene/UIDistrict_BeachMAT.upk#Fireplace_Emis",
+   "object": "Fireplace_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/UIDistrict_BeachMAT/UIDistrict_BeachMAT/Texture2D/Fireplace_Emis.tga",
+   "extracted_sha256": "6b32b7588281d05e7f9c445eb1b99e5745888f0b0f381138b613f2e575b8270a",
+   "output_file": "Content/Extracted/MaterialDatabase/UIDistrict_BeachMAT/UIDistrict_BeachMAT/Texture2D/Fireplace_Emis.tga",
+   "output_sha256": "6b32b7588281d05e7f9c445eb1b99e5745888f0b0f381138b613f2e575b8270a",
+   "uasset": "Content/Imported/MaterialDatabase/UIDistrict_BeachMAT/Fireplace_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/UIDistrict/BeachScene/UIDistrict_BeachMAT.upk#Fireplace_Norm",
+   "object": "Fireplace_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/UIDistrict_BeachMAT/UIDistrict_BeachMAT/Texture2D/Fireplace_Norm.tga",
+   "extracted_sha256": "1011486be92d96ad5ddf1afc15131b6acda844e0c4e5f7d2f07431b17e9f3b38",
+   "output_file": "Content/Extracted/MaterialDatabase/UIDistrict_BeachMAT/UIDistrict_BeachMAT/Texture2D/Fireplace_Norm.tga",
+   "output_sha256": "1011486be92d96ad5ddf1afc15131b6acda844e0c4e5f7d2f07431b17e9f3b38",
+   "uasset": "Content/Imported/MaterialDatabase/UIDistrict_BeachMAT/Fireplace_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/UIDistrict/BeachScene/UIDistrict_BeachMAT.upk#MI_Barrel_Orange",
+   "object": "MI_Barrel_Orange",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Barrel_Orange",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/UIDistrict_BeachMAT/UIDistrict_BeachMAT/Texture2D/Barrel_Orange_Diff.tga",
+   "extracted_sha256": "6ee1fe970ce0bb6cebca4ddb4a66c01cedbbbdfd98a9b265583e08a9f06031e4",
+   "output_file": "Content/Extracted/MaterialDatabase/UIDistrict_BeachMAT/UIDistrict_BeachMAT/Texture2D/Barrel_Orange_Diff.tga",
+   "output_sha256": "6ee1fe970ce0bb6cebca4ddb4a66c01cedbbbdfd98a9b265583e08a9f06031e4",
+   "uasset": "Content/Imported/MaterialDatabase/UIDistrict_BeachMAT/MI_Barrel_Orange.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/UIDistrict/BeachScene/UIDistrict_BeachMAT.upk#MI_Fireplace",
+   "object": "MI_Fireplace",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Fireplace",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/UIDistrict_BeachMAT/UIDistrict_BeachMAT/Texture2D/Fireplace_Diff.tga",
+   "extracted_sha256": "7d2735a6a618ea639724f8cade3ee24aa7adb166d3a685054b4a6fcfbc83dc45",
+   "output_file": "Content/Extracted/MaterialDatabase/UIDistrict_BeachMAT/UIDistrict_BeachMAT/Texture2D/Fireplace_Diff.tga",
+   "output_sha256": "7d2735a6a618ea639724f8cade3ee24aa7adb166d3a685054b4a6fcfbc83dc45",
+   "uasset": "Content/Imported/MaterialDatabase/UIDistrict_BeachMAT/MI_Fireplace.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/UIDistrict/BeachScene/UIDistrict_BeachMAT.upk#MI_Sand_01_RLD",
+   "object": "MI_Sand_01_RLD",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Sand_01_RLD",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/UIDistrict_BeachMAT/Terrain_RLD/Texture2D/Sand_01_RLD_Diff.tga",
+   "extracted_sha256": "0f6bcbea9bf2b03cab73f3f3957248b1050b8699e708704294ff50bc39a2915e",
+   "output_file": "Content/Extracted/MaterialDatabase/UIDistrict_BeachMAT/Terrain_RLD/Texture2D/Sand_01_RLD_Diff.tga",
+   "output_sha256": "0f6bcbea9bf2b03cab73f3f3957248b1050b8699e708704294ff50bc39a2915e",
+   "uasset": "Content/Imported/MaterialDatabase/UIDistrict_BeachMAT/MI_Sand_01_RLD.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/UIDistrict/BeachScene/UIDistrict_BeachMAT.upk#MI_Surfboards",
+   "object": "MI_Surfboards",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Surfboards",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/UIDistrict_BeachMAT/UIDistrict_BeachMAT/Texture2D/Surfboard_Diff.tga",
+   "extracted_sha256": "a323c6a51c75eaf7fdedd432b65d7b9d1c1fbdb83cb9751020df153fabc32d1a",
+   "output_file": "Content/Extracted/MaterialDatabase/UIDistrict_BeachMAT/UIDistrict_BeachMAT/Texture2D/Surfboard_Diff.tga",
+   "output_sha256": "a323c6a51c75eaf7fdedd432b65d7b9d1c1fbdb83cb9751020df153fabc32d1a",
+   "uasset": "Content/Imported/MaterialDatabase/UIDistrict_BeachMAT/MI_Surfboards.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/UIDistrict/BeachScene/UIDistrict_BeachMAT.upk#Sand_01_RLD_Diff",
+   "object": "Sand_01_RLD_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/UIDistrict_BeachMAT/Terrain_RLD/Texture2D/Sand_01_RLD_Diff.tga",
+   "extracted_sha256": "0f6bcbea9bf2b03cab73f3f3957248b1050b8699e708704294ff50bc39a2915e",
+   "output_file": "Content/Extracted/MaterialDatabase/UIDistrict_BeachMAT/Terrain_RLD/Texture2D/Sand_01_RLD_Diff.tga",
+   "output_sha256": "0f6bcbea9bf2b03cab73f3f3957248b1050b8699e708704294ff50bc39a2915e",
+   "uasset": "Content/Imported/MaterialDatabase/UIDistrict_BeachMAT/Sand_01_RLD_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/UIDistrict/BeachScene/UIDistrict_BeachMAT.upk#Sand_01_RLD_Norm",
+   "object": "Sand_01_RLD_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/UIDistrict_BeachMAT/Terrain_RLD/Texture2D/Sand_01_RLD_Norm.tga",
+   "extracted_sha256": "00b2c07289217a2ddeb1ceb9617f64b52232ad93914d8c32ddbe8a3033ac5810",
+   "output_file": "Content/Extracted/MaterialDatabase/UIDistrict_BeachMAT/Terrain_RLD/Texture2D/Sand_01_RLD_Norm.tga",
+   "output_sha256": "00b2c07289217a2ddeb1ceb9617f64b52232ad93914d8c32ddbe8a3033ac5810",
+   "uasset": "Content/Imported/MaterialDatabase/UIDistrict_BeachMAT/Sand_01_RLD_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/UIDistrict/BeachScene/UIDistrict_BeachMAT.upk#Surfboard_Diff",
+   "object": "Surfboard_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/UIDistrict_BeachMAT/UIDistrict_BeachMAT/Texture2D/Surfboard_Diff.tga",
+   "extracted_sha256": "a323c6a51c75eaf7fdedd432b65d7b9d1c1fbdb83cb9751020df153fabc32d1a",
+   "output_file": "Content/Extracted/MaterialDatabase/UIDistrict_BeachMAT/UIDistrict_BeachMAT/Texture2D/Surfboard_Diff.tga",
+   "output_sha256": "a323c6a51c75eaf7fdedd432b65d7b9d1c1fbdb83cb9751020df153fabc32d1a",
+   "uasset": "Content/Imported/MaterialDatabase/UIDistrict_BeachMAT/Surfboard_Diff.uasset"
+  }
+ ]
+}

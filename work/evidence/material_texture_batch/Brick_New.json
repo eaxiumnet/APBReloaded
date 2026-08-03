@@ -1,0 +1,167 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Brick_New",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/Brick/Small/Brick_New.upk",
+ "source_sha256": "caf33483adccb75fae058d7f92132e0dbe8bb35cb68710a38d0d5d389f913976",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Small/Brick_New.upk#Brick_New_DiffSpec",
+   "object": "Brick_New_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Brick_New/Brick_New/Texture2D/Brick_New_DiffSpec.tga",
+   "extracted_sha256": "938ddcd1f1c92afddfb7f203ca738ff936475a9e9279093a5cdd6bb44b78240d",
+   "output_file": "Content/Extracted/MaterialDatabase/Brick_New/Brick_New/Texture2D/Brick_New_DiffSpec.tga",
+   "output_sha256": "938ddcd1f1c92afddfb7f203ca738ff936475a9e9279093a5cdd6bb44b78240d",
+   "uasset": "Content/Imported/MaterialDatabase/Brick_New/Brick_New_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Small/Brick_New.upk#Brick_New_Norm",
+   "object": "Brick_New_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Brick_New/Brick_New/Texture2D/Brick_New_Norm.tga",
+   "extracted_sha256": "a5fdaa214a337f3e9b0a5c33d64febed7591d2f98184c44a07582b42dd05f2d3",
+   "output_file": "Content/Extracted/MaterialDatabase/Brick_New/Brick_New/Texture2D/Brick_New_Norm.tga",
+   "output_sha256": "a5fdaa214a337f3e9b0a5c33d64febed7591d2f98184c44a07582b42dd05f2d3",
+   "uasset": "Content/Imported/MaterialDatabase/Brick_New/Brick_New_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Small/Brick_New.upk#MI_Brick_New_Brown",
+   "object": "MI_Brick_New_Brown",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Brick_New_Brown",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Brick_New/Brick_New/Texture2D/Brick_New_DiffSpec.tga",
+   "extracted_sha256": "938ddcd1f1c92afddfb7f203ca738ff936475a9e9279093a5cdd6bb44b78240d",
+   "output_file": "Content/Extracted/MaterialDatabase/Brick_New/Brick_New/Texture2D/Brick_New_DiffSpec.tga",
+   "output_sha256": "938ddcd1f1c92afddfb7f203ca738ff936475a9e9279093a5cdd6bb44b78240d",
+   "uasset": "Content/Imported/MaterialDatabase/Brick_New/MI_Brick_New_Brown.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Small/Brick_New.upk#MI_Brick_New_Brown_Graffiti",
+   "object": "MI_Brick_New_Brown_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Brick_New_Brown_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Brick_New/Brick_New/Texture2D/Brick_New_DiffSpec.tga",
+   "extracted_sha256": "938ddcd1f1c92afddfb7f203ca738ff936475a9e9279093a5cdd6bb44b78240d",
+   "output_file": "Content/Extracted/MaterialDatabase/Brick_New/Brick_New/Texture2D/Brick_New_DiffSpec.tga",
+   "output_sha256": "938ddcd1f1c92afddfb7f203ca738ff936475a9e9279093a5cdd6bb44b78240d",
+   "uasset": "Content/Imported/MaterialDatabase/Brick_New/MI_Brick_New_Brown_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Small/Brick_New.upk#MI_Brick_New_Orange",
+   "object": "MI_Brick_New_Orange",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Brick_New_Orange",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Brick_New/Brick_New/Texture2D/Brick_New_DiffSpec.tga",
+   "extracted_sha256": "938ddcd1f1c92afddfb7f203ca738ff936475a9e9279093a5cdd6bb44b78240d",
+   "output_file": "Content/Extracted/MaterialDatabase/Brick_New/Brick_New/Texture2D/Brick_New_DiffSpec.tga",
+   "output_sha256": "938ddcd1f1c92afddfb7f203ca738ff936475a9e9279093a5cdd6bb44b78240d",
+   "uasset": "Content/Imported/MaterialDatabase/Brick_New/MI_Brick_New_Orange.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Small/Brick_New.upk#MI_Brick_New_Orange_Graffiti",
+   "object": "MI_Brick_New_Orange_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Brick_New_Orange_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Brick_New/Brick_New/Texture2D/Brick_New_DiffSpec.tga",
+   "extracted_sha256": "938ddcd1f1c92afddfb7f203ca738ff936475a9e9279093a5cdd6bb44b78240d",
+   "output_file": "Content/Extracted/MaterialDatabase/Brick_New/Brick_New/Texture2D/Brick_New_DiffSpec.tga",
+   "output_sha256": "938ddcd1f1c92afddfb7f203ca738ff936475a9e9279093a5cdd6bb44b78240d",
+   "uasset": "Content/Imported/MaterialDatabase/Brick_New/MI_Brick_New_Orange_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Small/Brick_New.upk#MI_Brick_New_PARENT",
+   "object": "MI_Brick_New_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Brick_New_PARENT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Brick_New/Brick_New/Texture2D/Brick_New_DiffSpec.tga",
+   "extracted_sha256": "938ddcd1f1c92afddfb7f203ca738ff936475a9e9279093a5cdd6bb44b78240d",
+   "output_file": "Content/Extracted/MaterialDatabase/Brick_New/Brick_New/Texture2D/Brick_New_DiffSpec.tga",
+   "output_sha256": "938ddcd1f1c92afddfb7f203ca738ff936475a9e9279093a5cdd6bb44b78240d",
+   "uasset": "Content/Imported/MaterialDatabase/Brick_New/MI_Brick_New_PARENT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Small/Brick_New.upk#MI_Brick_New_Red",
+   "object": "MI_Brick_New_Red",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Brick_New_Red",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Brick_New/Brick_New/Texture2D/Brick_New_DiffSpec.tga",
+   "extracted_sha256": "938ddcd1f1c92afddfb7f203ca738ff936475a9e9279093a5cdd6bb44b78240d",
+   "output_file": "Content/Extracted/MaterialDatabase/Brick_New/Brick_New/Texture2D/Brick_New_DiffSpec.tga",
+   "output_sha256": "938ddcd1f1c92afddfb7f203ca738ff936475a9e9279093a5cdd6bb44b78240d",
+   "uasset": "Content/Imported/MaterialDatabase/Brick_New/MI_Brick_New_Red.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Small/Brick_New.upk#MI_Brick_New_Red_Graffiti",
+   "object": "MI_Brick_New_Red_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Brick_New_Red_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Brick_New/Brick_New/Texture2D/Brick_New_DiffSpec.tga",
+   "extracted_sha256": "938ddcd1f1c92afddfb7f203ca738ff936475a9e9279093a5cdd6bb44b78240d",
+   "output_file": "Content/Extracted/MaterialDatabase/Brick_New/Brick_New/Texture2D/Brick_New_DiffSpec.tga",
+   "output_sha256": "938ddcd1f1c92afddfb7f203ca738ff936475a9e9279093a5cdd6bb44b78240d",
+   "uasset": "Content/Imported/MaterialDatabase/Brick_New/MI_Brick_New_Red_Graffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Small/Brick_New.upk#MI_Brick_New_Yellow",
+   "object": "MI_Brick_New_Yellow",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Brick_New_Yellow",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Brick_New/Brick_New/Texture2D/Brick_New_DiffSpec.tga",
+   "extracted_sha256": "938ddcd1f1c92afddfb7f203ca738ff936475a9e9279093a5cdd6bb44b78240d",
+   "output_file": "Content/Extracted/MaterialDatabase/Brick_New/Brick_New/Texture2D/Brick_New_DiffSpec.tga",
+   "output_sha256": "938ddcd1f1c92afddfb7f203ca738ff936475a9e9279093a5cdd6bb44b78240d",
+   "uasset": "Content/Imported/MaterialDatabase/Brick_New/MI_Brick_New_Yellow.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Small/Brick_New.upk#MI_Brick_New_Yellow_Graffiti",
+   "object": "MI_Brick_New_Yellow_Graffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Brick_New_Yellow_Graffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Brick_New/Brick_New/Texture2D/Brick_New_DiffSpec.tga",
+   "extracted_sha256": "938ddcd1f1c92afddfb7f203ca738ff936475a9e9279093a5cdd6bb44b78240d",
+   "output_file": "Content/Extracted/MaterialDatabase/Brick_New/Brick_New/Texture2D/Brick_New_DiffSpec.tga",
+   "output_sha256": "938ddcd1f1c92afddfb7f203ca738ff936475a9e9279093a5cdd6bb44b78240d",
+   "uasset": "Content/Imported/MaterialDatabase/Brick_New/MI_Brick_New_Yellow_Graffiti.uasset"
+  }
+ ]
+}

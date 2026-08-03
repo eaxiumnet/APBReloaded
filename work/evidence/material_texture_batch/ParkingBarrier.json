@@ -1,0 +1,104 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "ParkingBarrier",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/ParkingBarrier.upk",
+ "source_sha256": "e8273593d4534486608515da92b11e379906f24c95201f31e52cc302b35ca0cb",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/ParkingBarrier.upk#MI_ParkingBarrier_Damage_Mat",
+   "object": "MI_ParkingBarrier_Damage_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "ParkingBarrier_Damage_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ParkingBarrier/ParkingBarrier/Texture2D/ParkingBarrier_DiffSpec.tga",
+   "extracted_sha256": "a3b08f9118f3cf816193642cdaeac33db9f69f9b8e3ca760f287622aa8ea485d",
+   "output_file": "Content/Extracted/MaterialDatabase/ParkingBarrier/ParkingBarrier/Texture2D/ParkingBarrier_DiffSpec.tga",
+   "output_sha256": "a3b08f9118f3cf816193642cdaeac33db9f69f9b8e3ca760f287622aa8ea485d",
+   "uasset": "Content/Imported/MaterialDatabase/ParkingBarrier/MI_ParkingBarrier_Damage_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/ParkingBarrier.upk#MI_ParkingBarrier_Mat",
+   "object": "MI_ParkingBarrier_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "ParkingBarrier_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ParkingBarrier/ParkingBarrier/Texture2D/ParkingBarrier_DiffSpec.tga",
+   "extracted_sha256": "a3b08f9118f3cf816193642cdaeac33db9f69f9b8e3ca760f287622aa8ea485d",
+   "output_file": "Content/Extracted/MaterialDatabase/ParkingBarrier/ParkingBarrier/Texture2D/ParkingBarrier_DiffSpec.tga",
+   "output_sha256": "a3b08f9118f3cf816193642cdaeac33db9f69f9b8e3ca760f287622aa8ea485d",
+   "uasset": "Content/Imported/MaterialDatabase/ParkingBarrier/MI_ParkingBarrier_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/ParkingBarrier.upk#MI_ParkingBarrierIndestructible_Mat",
+   "object": "MI_ParkingBarrierIndestructible_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "ParkingBarrierIndestructible_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ParkingBarrier/ParkingBarrier/Texture2D/ParkingBarrierindestructible_DiffSpec.tga",
+   "extracted_sha256": "554ac9dd18102c56b24524678d15576d68cd95d10b4ed1db88e8510e61374f8d",
+   "output_file": "Content/Extracted/MaterialDatabase/ParkingBarrier/ParkingBarrier/Texture2D/ParkingBarrierindestructible_DiffSpec.tga",
+   "output_sha256": "554ac9dd18102c56b24524678d15576d68cd95d10b4ed1db88e8510e61374f8d",
+   "uasset": "Content/Imported/MaterialDatabase/ParkingBarrier/MI_ParkingBarrierIndestructible_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/ParkingBarrier.upk#ParkingBarrier_DiffSpec",
+   "object": "ParkingBarrier_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ParkingBarrier/ParkingBarrier/Texture2D/ParkingBarrier_DiffSpec.tga",
+   "extracted_sha256": "a3b08f9118f3cf816193642cdaeac33db9f69f9b8e3ca760f287622aa8ea485d",
+   "output_file": "Content/Extracted/MaterialDatabase/ParkingBarrier/ParkingBarrier/Texture2D/ParkingBarrier_DiffSpec.tga",
+   "output_sha256": "a3b08f9118f3cf816193642cdaeac33db9f69f9b8e3ca760f287622aa8ea485d",
+   "uasset": "Content/Imported/MaterialDatabase/ParkingBarrier/ParkingBarrier_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/ParkingBarrier.upk#ParkingBarrier_Norm",
+   "object": "ParkingBarrier_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ParkingBarrier/ParkingBarrier/Texture2D/ParkingBarrier_Norm.tga",
+   "extracted_sha256": "ad4221e9197ae4b401cdc07125167e7c5804412c8c06911ff4c150e752fdaa1f",
+   "output_file": "Content/Extracted/MaterialDatabase/ParkingBarrier/ParkingBarrier/Texture2D/ParkingBarrier_Norm.tga",
+   "output_sha256": "ad4221e9197ae4b401cdc07125167e7c5804412c8c06911ff4c150e752fdaa1f",
+   "uasset": "Content/Imported/MaterialDatabase/ParkingBarrier/ParkingBarrier_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/ParkingBarrier.upk#ParkingBarrier_Opac",
+   "object": "ParkingBarrier_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ParkingBarrier/ParkingBarrier/Texture2D/ParkingBarrier_Opac.tga",
+   "extracted_sha256": "d3aa9be4eb2589a800edb008014789424b8e347c964ae0b57a37c792df55e7cc",
+   "output_file": "Content/Extracted/MaterialDatabase/ParkingBarrier/ParkingBarrier/Texture2D/ParkingBarrier_Opac.tga",
+   "output_sha256": "d3aa9be4eb2589a800edb008014789424b8e347c964ae0b57a37c792df55e7cc",
+   "uasset": "Content/Imported/MaterialDatabase/ParkingBarrier/ParkingBarrier_Opac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/ParkingBarrier.upk#ParkingBarrierindestructible_DiffSpec",
+   "object": "ParkingBarrierindestructible_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ParkingBarrier/ParkingBarrier/Texture2D/ParkingBarrierindestructible_DiffSpec.tga",
+   "extracted_sha256": "554ac9dd18102c56b24524678d15576d68cd95d10b4ed1db88e8510e61374f8d",
+   "output_file": "Content/Extracted/MaterialDatabase/ParkingBarrier/ParkingBarrier/Texture2D/ParkingBarrierindestructible_DiffSpec.tga",
+   "output_sha256": "554ac9dd18102c56b24524678d15576d68cd95d10b4ed1db88e8510e61374f8d",
+   "uasset": "Content/Imported/MaterialDatabase/ParkingBarrier/ParkingBarrierindestructible_DiffSpec.uasset"
+  }
+ ]
+}

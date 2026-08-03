@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "RTW_Banners",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/RWorldSocialDistrict/Props/RTW_Banners.upk",
+ "source_sha256": "bb16848f91c5ff246dffe982d55177858ed3a3d2c4ed4e37404543a16637925c",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RTW_Banners.upk#MI_RTW_Banners_MAT",
+   "object": "MI_RTW_Banners_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RTW_Banners_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RTW_Banners/RTW_Banners/Texture2D/RTW_Banners_DIFF.tga",
+   "extracted_sha256": "1babbd5ee00e4f113d64f183fd3d7b84ef2a7ab32ebca3248a88271956df6282",
+   "output_file": "Content/Extracted/MaterialDatabase/RTW_Banners/RTW_Banners/Texture2D/RTW_Banners_DIFF.tga",
+   "output_sha256": "1babbd5ee00e4f113d64f183fd3d7b84ef2a7ab32ebca3248a88271956df6282",
+   "uasset": "Content/Imported/MaterialDatabase/RTW_Banners/MI_RTW_Banners_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RTW_Banners.upk#RTW_Banners_DIFF",
+   "object": "RTW_Banners_DIFF",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RTW_Banners/RTW_Banners/Texture2D/RTW_Banners_DIFF.tga",
+   "extracted_sha256": "1babbd5ee00e4f113d64f183fd3d7b84ef2a7ab32ebca3248a88271956df6282",
+   "output_file": "Content/Extracted/MaterialDatabase/RTW_Banners/RTW_Banners/Texture2D/RTW_Banners_DIFF.tga",
+   "output_sha256": "1babbd5ee00e4f113d64f183fd3d7b84ef2a7ab32ebca3248a88271956df6282",
+   "uasset": "Content/Imported/MaterialDatabase/RTW_Banners/RTW_Banners_DIFF.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RTW_Banners.upk#RTW_Banners_Wind_NORM",
+   "object": "RTW_Banners_Wind_NORM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RTW_Banners/RTW_Banners/Texture2D/RTW_Banners_Wind_NORM.tga",
+   "extracted_sha256": "add18dbb086785881f5432826fb635d9101df468b9234aa1eaac567ca6d5783f",
+   "output_file": "Content/Extracted/MaterialDatabase/RTW_Banners/RTW_Banners/Texture2D/RTW_Banners_Wind_NORM.tga",
+   "output_sha256": "add18dbb086785881f5432826fb635d9101df468b9234aa1eaac567ca6d5783f",
+   "uasset": "Content/Imported/MaterialDatabase/RTW_Banners/RTW_Banners_Wind_NORM.uasset"
+  }
+ ]
+}

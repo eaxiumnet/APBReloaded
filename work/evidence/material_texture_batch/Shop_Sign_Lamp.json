@@ -1,0 +1,99 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Shop_Sign_Lamp",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Lamp.upk",
+ "source_sha256": "e1d667093e04b20d7b8596ab12666fd1157ddca16de4b6069aa6a2adc180f095",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Lamp.upk#MI_Shop_Sign_Lamp_Mat",
+   "object": "MI_Shop_Sign_Lamp_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Shop_Sign_Lamp_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Lamp/Shop_Sign_Lamp/Texture2D/Shop_Sign_Lamp_DiffSpec.tga",
+   "extracted_sha256": "c8b3d94a34843821c9217ffe78ce22aea49ff0f8d95ec7004308d553d708c3f5",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Lamp/Shop_Sign_Lamp/Texture2D/Shop_Sign_Lamp_DiffSpec.tga",
+   "output_sha256": "c8b3d94a34843821c9217ffe78ce22aea49ff0f8d95ec7004308d553d708c3f5",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_Sign_Lamp/MI_Shop_Sign_Lamp_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Lamp.upk#MI_Shop_Sign_Lamp_Urban_Mat",
+   "object": "MI_Shop_Sign_Lamp_Urban_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Shop_Sign_Lamp_Urban_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Lamp/Shop_Sign_Lamp/Texture2D/Shop_Sign_Lamp_Urban_DiffSpec.tga",
+   "extracted_sha256": "24e48836b25d511b4cc3e7c6db17f6effa1032c5d6b861060cb3d64c9f254d7a",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Lamp/Shop_Sign_Lamp/Texture2D/Shop_Sign_Lamp_Urban_DiffSpec.tga",
+   "output_sha256": "24e48836b25d511b4cc3e7c6db17f6effa1032c5d6b861060cb3d64c9f254d7a",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_Sign_Lamp/MI_Shop_Sign_Lamp_Urban_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Lamp.upk#Shop_Sign_Lamp_DiffSpec",
+   "object": "Shop_Sign_Lamp_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Lamp/Shop_Sign_Lamp/Texture2D/Shop_Sign_Lamp_DiffSpec.tga",
+   "extracted_sha256": "c8b3d94a34843821c9217ffe78ce22aea49ff0f8d95ec7004308d553d708c3f5",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Lamp/Shop_Sign_Lamp/Texture2D/Shop_Sign_Lamp_DiffSpec.tga",
+   "output_sha256": "c8b3d94a34843821c9217ffe78ce22aea49ff0f8d95ec7004308d553d708c3f5",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_Sign_Lamp/Shop_Sign_Lamp_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Lamp.upk#Shop_Sign_Lamp_Emis",
+   "object": "Shop_Sign_Lamp_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Lamp/Shop_Sign_Lamp/Texture2D/Shop_Sign_Lamp_Emis.tga",
+   "extracted_sha256": "d311f0d93b70a88ea43d61ad81e6a4bb76f726088cba05c00525d1528498f5af",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Lamp/Shop_Sign_Lamp/Texture2D/Shop_Sign_Lamp_Emis.tga",
+   "output_sha256": "d311f0d93b70a88ea43d61ad81e6a4bb76f726088cba05c00525d1528498f5af",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_Sign_Lamp/Shop_Sign_Lamp_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Lamp.upk#Shop_Sign_Lamp_Normal",
+   "object": "Shop_Sign_Lamp_Normal",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Lamp/Shop_Sign_Lamp/Texture2D/Shop_Sign_Lamp_Normal.tga",
+   "extracted_sha256": "040627a121e6f3b8d8d3a0a1d0c7c888f08e60d3fe18eb492015c5e88079617d",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Lamp/Shop_Sign_Lamp/Texture2D/Shop_Sign_Lamp_Normal.tga",
+   "output_sha256": "040627a121e6f3b8d8d3a0a1d0c7c888f08e60d3fe18eb492015c5e88079617d",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_Sign_Lamp/Shop_Sign_Lamp_Normal.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Lamp.upk#Shop_Sign_Lamp_Urban_DiffSpec",
+   "object": "Shop_Sign_Lamp_Urban_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Lamp/Shop_Sign_Lamp/Texture2D/Shop_Sign_Lamp_Urban_DiffSpec.tga",
+   "extracted_sha256": "24e48836b25d511b4cc3e7c6db17f6effa1032c5d6b861060cb3d64c9f254d7a",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Lamp/Shop_Sign_Lamp/Texture2D/Shop_Sign_Lamp_Urban_DiffSpec.tga",
+   "output_sha256": "24e48836b25d511b4cc3e7c6db17f6effa1032c5d6b861060cb3d64c9f254d7a",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_Sign_Lamp/Shop_Sign_Lamp_Urban_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Lamp.upk#Shop_Sign_Lamp_Urban_Emis",
+   "object": "Shop_Sign_Lamp_Urban_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Lamp/Shop_Sign_Lamp/Texture2D/Shop_Sign_Lamp_Urban_Emis.tga",
+   "extracted_sha256": "7432ee5ce054dea11ba64475a74cd6bc1da2975857eb5da2da29bc4fb74eb101",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Lamp/Shop_Sign_Lamp/Texture2D/Shop_Sign_Lamp_Urban_Emis.tga",
+   "output_sha256": "7432ee5ce054dea11ba64475a74cd6bc1da2975857eb5da2da29bc4fb74eb101",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_Sign_Lamp/Shop_Sign_Lamp_Urban_Emis.uasset"
+  }
+ ]
+}

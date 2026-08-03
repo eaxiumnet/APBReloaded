@@ -1,0 +1,112 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FinancialAmmoStore",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAmmoStore.upk",
+ "source_sha256": "877cc0d70508f6a810ad8cc5a5555b88cbfaa7e670d037157db67306cb73225f",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAmmoStore.upk#AmmoStore_Emiss",
+   "object": "AmmoStore_Emiss",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialAmmoStore/FinancialAmmoStore/Texture2D/AmmoStore_Emiss.tga",
+   "extracted_sha256": "b5aba91f2bd8683d34e894e58f37ecfd729d3daa39902161228364ef1f629c6f",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialAmmoStore/FinancialAmmoStore/Texture2D/AmmoStore_Emiss.tga",
+   "output_sha256": "b5aba91f2bd8683d34e894e58f37ecfd729d3daa39902161228364ef1f629c6f",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialAmmoStore/AmmoStore_Emiss.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAmmoStore.upk#AmmoStore_Norm",
+   "object": "AmmoStore_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialAmmoStore/FinancialAmmoStore/Texture2D/AmmoStore_Norm.tga",
+   "extracted_sha256": "bf1bbe6099fa22a7d360b80eda48735170fb7450e8d5c52dbb4b56c32549600c",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialAmmoStore/FinancialAmmoStore/Texture2D/AmmoStore_Norm.tga",
+   "output_sha256": "bf1bbe6099fa22a7d360b80eda48735170fb7450e8d5c52dbb4b56c32549600c",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialAmmoStore/AmmoStore_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAmmoStore.upk#AmmoStore_Opac",
+   "object": "AmmoStore_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialAmmoStore/FinancialAmmoStore/Texture2D/AmmoStore_Opac.tga",
+   "extracted_sha256": "b5b2006f21ce02f865a95f7d5460a0be4f2fe9dca8f1341a2b5a6db0d5c61a23",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialAmmoStore/FinancialAmmoStore/Texture2D/AmmoStore_Opac.tga",
+   "output_sha256": "b5b2006f21ce02f865a95f7d5460a0be4f2fe9dca8f1341a2b5a6db0d5c61a23",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialAmmoStore/AmmoStore_Opac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAmmoStore.upk#FinancialAmmoStore_Diff",
+   "object": "FinancialAmmoStore_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialAmmoStore/FinancialAmmoStore/Texture2D/FinancialAmmoStore_Diff.tga",
+   "extracted_sha256": "3bc407d264b39449596442a6668f3c758ff3e852f56e202aad65142823f0326c",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialAmmoStore/FinancialAmmoStore/Texture2D/FinancialAmmoStore_Diff.tga",
+   "output_sha256": "3bc407d264b39449596442a6668f3c758ff3e852f56e202aad65142823f0326c",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialAmmoStore/FinancialAmmoStore_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAmmoStore.upk#MI_AmmoStore_Mat",
+   "object": "MI_AmmoStore_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "AmmoStore_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialAmmoStore/FinancialAmmoStore/Texture2D/FinancialAmmoStore_Diff.tga",
+   "extracted_sha256": "3bc407d264b39449596442a6668f3c758ff3e852f56e202aad65142823f0326c",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialAmmoStore/FinancialAmmoStore/Texture2D/FinancialAmmoStore_Diff.tga",
+   "output_sha256": "3bc407d264b39449596442a6668f3c758ff3e852f56e202aad65142823f0326c",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialAmmoStore/MI_AmmoStore_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAmmoStore.upk#MI_RamRaidShopFront_MAT",
+   "object": "MI_RamRaidShopFront_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RamRaidShopFront_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialAmmoStore/ShopFront_Textures/Texture2D/RamRaidShopFront_DiffSpec.tga",
+   "extracted_sha256": "285a89c0ec0a87acfa376e7ac6b81d10c4c2d40c5118056e8656a21c2803dd5b",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialAmmoStore/ShopFront_Textures/Texture2D/RamRaidShopFront_DiffSpec.tga",
+   "output_sha256": "285a89c0ec0a87acfa376e7ac6b81d10c4c2d40c5118056e8656a21c2803dd5b",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialAmmoStore/MI_RamRaidShopFront_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAmmoStore.upk#RamRaidShopFront_DiffSpec",
+   "object": "RamRaidShopFront_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialAmmoStore/ShopFront_Textures/Texture2D/RamRaidShopFront_DiffSpec.tga",
+   "extracted_sha256": "285a89c0ec0a87acfa376e7ac6b81d10c4c2d40c5118056e8656a21c2803dd5b",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialAmmoStore/ShopFront_Textures/Texture2D/RamRaidShopFront_DiffSpec.tga",
+   "output_sha256": "285a89c0ec0a87acfa376e7ac6b81d10c4c2d40c5118056e8656a21c2803dd5b",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialAmmoStore/RamRaidShopFront_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAmmoStore.upk#RamRaidShopFront_Norm",
+   "object": "RamRaidShopFront_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialAmmoStore/ShopFront_Textures/Texture2D/RamRaidShopFront_Norm.tga",
+   "extracted_sha256": "2f80b7714be8bdc0dfee3413fc776ee2e97289db41df2968342f2a22e82afe3f",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialAmmoStore/ShopFront_Textures/Texture2D/RamRaidShopFront_Norm.tga",
+   "output_sha256": "2f80b7714be8bdc0dfee3413fc776ee2e97289db41df2968342f2a22e82afe3f",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialAmmoStore/RamRaidShopFront_Norm.uasset"
+  }
+ ]
+}

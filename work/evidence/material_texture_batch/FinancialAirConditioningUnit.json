@@ -1,0 +1,60 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FinancialAirConditioningUnit",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAirConditioningUnit.upk",
+ "source_sha256": "042aeef00fcc7937ad0077af7d36c9e78b335a276615d1e326b4ac8c99318d05",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAirConditioningUnit.upk#FinancialAirConditioningUnit_DiffSpec",
+   "object": "FinancialAirConditioningUnit_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialAirConditioningUnit/FinancialAirConditioningUnit/Texture2D/FinancialAirConditioningUnit_DiffSpec.tga",
+   "extracted_sha256": "63873b2ccf7ce2236f405eede1f2f00e169ff364775cb8faff3985f667761ec0",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialAirConditioningUnit/FinancialAirConditioningUnit/Texture2D/FinancialAirConditioningUnit_DiffSpec.tga",
+   "output_sha256": "63873b2ccf7ce2236f405eede1f2f00e169ff364775cb8faff3985f667761ec0",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialAirConditioningUnit/FinancialAirConditioningUnit_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAirConditioningUnit.upk#FinancialAirConditioningUnit_Norm",
+   "object": "FinancialAirConditioningUnit_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialAirConditioningUnit/FinancialAirConditioningUnit/Texture2D/FinancialAirConditioningUnit_Norm.tga",
+   "extracted_sha256": "322a19dbba370f9f325e4eea1f19739c4199ad0163370eba945a7b443958d4ff",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialAirConditioningUnit/FinancialAirConditioningUnit/Texture2D/FinancialAirConditioningUnit_Norm.tga",
+   "output_sha256": "322a19dbba370f9f325e4eea1f19739c4199ad0163370eba945a7b443958d4ff",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialAirConditioningUnit/FinancialAirConditioningUnit_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAirConditioningUnit.upk#FinancialAirConditioningUnit_Opac",
+   "object": "FinancialAirConditioningUnit_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialAirConditioningUnit/FinancialAirConditioningUnit/Texture2D/FinancialAirConditioningUnit_Opac.tga",
+   "extracted_sha256": "7cd5348ed515f805c70022ce99fd4164e2f8b81c4212d5f2819aff4e4f9b0335",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialAirConditioningUnit/FinancialAirConditioningUnit/Texture2D/FinancialAirConditioningUnit_Opac.tga",
+   "output_sha256": "7cd5348ed515f805c70022ce99fd4164e2f8b81c4212d5f2819aff4e4f9b0335",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialAirConditioningUnit/FinancialAirConditioningUnit_Opac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialAirConditioningUnit.upk#MI_FinancialAirConditioningUnit_Mat",
+   "object": "MI_FinancialAirConditioningUnit_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialAirConditioningUnit_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialAirConditioningUnit/FinancialAirConditioningUnit/Texture2D/FinancialAirConditioningUnit_DiffSpec.tga",
+   "extracted_sha256": "63873b2ccf7ce2236f405eede1f2f00e169ff364775cb8faff3985f667761ec0",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialAirConditioningUnit/FinancialAirConditioningUnit/Texture2D/FinancialAirConditioningUnit_DiffSpec.tga",
+   "output_sha256": "63873b2ccf7ce2236f405eede1f2f00e169ff364775cb8faff3985f667761ec0",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialAirConditioningUnit/MI_FinancialAirConditioningUnit_Mat.uasset"
+  }
+ ]
+}

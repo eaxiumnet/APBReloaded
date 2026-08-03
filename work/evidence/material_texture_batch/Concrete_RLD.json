@@ -1,0 +1,86 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Concrete_RLD",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/Concrete/Concrete_RLD.upk",
+ "source_sha256": "ba2c4ea380560c4839b01348797a61bcc19ed6526c62e01e3f046cefb667ae98",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Concrete/Concrete_RLD.upk#Concrete_001_Diff",
+   "object": "Concrete_001_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Concrete_RLD/Concrete_RLD/Texture2D/Concrete_001_Diff.tga",
+   "extracted_sha256": "fbbb6584a98fc78dac1821d0adb8c26e49887bfcfe09d65f4f1036bbc947a3de",
+   "output_file": "Content/Extracted/MaterialDatabase/Concrete_RLD/Concrete_RLD/Texture2D/Concrete_001_Diff.tga",
+   "output_sha256": "fbbb6584a98fc78dac1821d0adb8c26e49887bfcfe09d65f4f1036bbc947a3de",
+   "uasset": "Content/Imported/MaterialDatabase/Concrete_RLD/Concrete_001_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Concrete/Concrete_RLD.upk#Concrete_001_Norm",
+   "object": "Concrete_001_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Concrete_RLD/Concrete_RLD/Texture2D/Concrete_001_Norm.tga",
+   "extracted_sha256": "e9422a2865f4cf85e6ab84b1f35f9211487c7312c43a50220485f1503e4e6c32",
+   "output_file": "Content/Extracted/MaterialDatabase/Concrete_RLD/Concrete_RLD/Texture2D/Concrete_001_Norm.tga",
+   "output_sha256": "e9422a2865f4cf85e6ab84b1f35f9211487c7312c43a50220485f1503e4e6c32",
+   "uasset": "Content/Imported/MaterialDatabase/Concrete_RLD/Concrete_001_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Concrete/Concrete_RLD.upk#ConcreteWall_01_Diff",
+   "object": "ConcreteWall_01_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Concrete_RLD/Concrete_RLD/Texture2D/ConcreteWall_01_Diff.tga",
+   "extracted_sha256": "d8d622215d1db960a4f72fdabd384ab17740f731aa558b06c3d79e5eb64e0b0f",
+   "output_file": "Content/Extracted/MaterialDatabase/Concrete_RLD/Concrete_RLD/Texture2D/ConcreteWall_01_Diff.tga",
+   "output_sha256": "d8d622215d1db960a4f72fdabd384ab17740f731aa558b06c3d79e5eb64e0b0f",
+   "uasset": "Content/Imported/MaterialDatabase/Concrete_RLD/ConcreteWall_01_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Concrete/Concrete_RLD.upk#ConcreteWall_01_Norm",
+   "object": "ConcreteWall_01_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Concrete_RLD/Concrete_RLD/Texture2D/ConcreteWall_01_Norm.tga",
+   "extracted_sha256": "7d2c7ae7212c8d1a5914e78a52fe6bb34f39d250ca3318507d71ba0c08bd1739",
+   "output_file": "Content/Extracted/MaterialDatabase/Concrete_RLD/Concrete_RLD/Texture2D/ConcreteWall_01_Norm.tga",
+   "output_sha256": "7d2c7ae7212c8d1a5914e78a52fe6bb34f39d250ca3318507d71ba0c08bd1739",
+   "uasset": "Content/Imported/MaterialDatabase/Concrete_RLD/ConcreteWall_01_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Concrete/Concrete_RLD.upk#MI_Concrete_001",
+   "object": "MI_Concrete_001",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Concrete_001",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Concrete_RLD/Concrete_RLD/Texture2D/Concrete_001_Diff.tga",
+   "extracted_sha256": "fbbb6584a98fc78dac1821d0adb8c26e49887bfcfe09d65f4f1036bbc947a3de",
+   "output_file": "Content/Extracted/MaterialDatabase/Concrete_RLD/Concrete_RLD/Texture2D/Concrete_001_Diff.tga",
+   "output_sha256": "fbbb6584a98fc78dac1821d0adb8c26e49887bfcfe09d65f4f1036bbc947a3de",
+   "uasset": "Content/Imported/MaterialDatabase/Concrete_RLD/MI_Concrete_001.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Concrete/Concrete_RLD.upk#MI_ConcreteWall_01",
+   "object": "MI_ConcreteWall_01",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "ConcreteWall_01",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Concrete_RLD/Concrete_RLD/Texture2D/ConcreteWall_01_Diff.tga",
+   "extracted_sha256": "d8d622215d1db960a4f72fdabd384ab17740f731aa558b06c3d79e5eb64e0b0f",
+   "output_file": "Content/Extracted/MaterialDatabase/Concrete_RLD/Concrete_RLD/Texture2D/ConcreteWall_01_Diff.tga",
+   "output_sha256": "d8d622215d1db960a4f72fdabd384ab17740f731aa558b06c3d79e5eb64e0b0f",
+   "uasset": "Content/Imported/MaterialDatabase/Concrete_RLD/MI_ConcreteWall_01.uasset"
+  }
+ ]
+}

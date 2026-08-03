@@ -1,0 +1,138 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "BarbWire",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/Fence/BarbWire.upk",
+ "source_sha256": "b20264c835a51b2109631a962e5501e3b6d1a3f258b47c0830506d04fc808e24",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Fence/BarbWire.upk#Barb_Norm",
+   "object": "Barb_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BarbWire/BarbWire/Texture2D/Barb_Norm.tga",
+   "extracted_sha256": "b63166997e90f83d1be15abb8d5e30fc476f0dbdee00b7df7cc17b8140231d03",
+   "output_file": "Content/Extracted/MaterialDatabase/BarbWire/BarbWire/Texture2D/Barb_Norm.tga",
+   "output_sha256": "b63166997e90f83d1be15abb8d5e30fc476f0dbdee00b7df7cc17b8140231d03",
+   "uasset": "Content/Imported/MaterialDatabase/BarbWire/Barb_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Fence/BarbWire.upk#Barb_Opacity",
+   "object": "Barb_Opacity",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BarbWire/BarbWire/Texture2D/Barb_Opacity.tga",
+   "extracted_sha256": "82983d65651d28cc78f522188a3c487ecf82e5954b823059200f194cb83ca8c8",
+   "output_file": "Content/Extracted/MaterialDatabase/BarbWire/BarbWire/Texture2D/Barb_Opacity.tga",
+   "output_sha256": "82983d65651d28cc78f522188a3c487ecf82e5954b823059200f194cb83ca8c8",
+   "uasset": "Content/Imported/MaterialDatabase/BarbWire/Barb_Opacity.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Fence/BarbWire.upk#BarbTop_Norm",
+   "object": "BarbTop_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BarbWire/BarbWire/Texture2D/BarbTop_Norm.tga",
+   "extracted_sha256": "516f18b006eba04e918e157e5522b0e989d2a9f390d11c88436e8ba8bf36da71",
+   "output_file": "Content/Extracted/MaterialDatabase/BarbWire/BarbWire/Texture2D/BarbTop_Norm.tga",
+   "output_sha256": "516f18b006eba04e918e157e5522b0e989d2a9f390d11c88436e8ba8bf36da71",
+   "uasset": "Content/Imported/MaterialDatabase/BarbWire/BarbTop_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Fence/BarbWire.upk#Barbwire_Norm",
+   "object": "Barbwire_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BarbWire/BarbWire/Texture2D/Barbwire_Norm.tga",
+   "extracted_sha256": "0ab777d9907bf539ae89779102478d0c012417221bb222c60248b5fdfe33c961",
+   "output_file": "Content/Extracted/MaterialDatabase/BarbWire/BarbWire/Texture2D/Barbwire_Norm.tga",
+   "output_sha256": "0ab777d9907bf539ae89779102478d0c012417221bb222c60248b5fdfe33c961",
+   "uasset": "Content/Imported/MaterialDatabase/BarbWire/Barbwire_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Fence/BarbWire.upk#Barbwire_Opac",
+   "object": "Barbwire_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BarbWire/BarbWire/Texture2D/Barbwire_Opac.tga",
+   "extracted_sha256": "ecdaeff33c4bca9efd57dbf1761faab077b3b1dd0314d922655559efbfd00e5b",
+   "output_file": "Content/Extracted/MaterialDatabase/BarbWire/BarbWire/Texture2D/Barbwire_Opac.tga",
+   "output_sha256": "ecdaeff33c4bca9efd57dbf1761faab077b3b1dd0314d922655559efbfd00e5b",
+   "uasset": "Content/Imported/MaterialDatabase/BarbWire/Barbwire_Opac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Fence/BarbWire.upk#Metal_Generic_01",
+   "object": "Metal_Generic_01",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BarbWire/Metal/Texture2D/Metal_Generic_01.tga",
+   "extracted_sha256": "70145db4be79bd43112b761253ebf589c03db4c19a04686de217ad55272df256",
+   "output_file": "Content/Extracted/MaterialDatabase/BarbWire/Metal/Texture2D/Metal_Generic_01.tga",
+   "output_sha256": "70145db4be79bd43112b761253ebf589c03db4c19a04686de217ad55272df256",
+   "uasset": "Content/Imported/MaterialDatabase/BarbWire/Metal_Generic_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Fence/BarbWire.upk#MI_barbwire",
+   "object": "MI_barbwire",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "barbwire",
+   "texture_roles": [
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BarbWire/BarbWire/Texture2D/Barb_Norm.tga",
+   "extracted_sha256": "b63166997e90f83d1be15abb8d5e30fc476f0dbdee00b7df7cc17b8140231d03",
+   "output_file": "Content/Extracted/MaterialDatabase/BarbWire/BarbWire/Texture2D/Barb_Norm.tga",
+   "output_sha256": "b63166997e90f83d1be15abb8d5e30fc476f0dbdee00b7df7cc17b8140231d03",
+   "uasset": "Content/Imported/MaterialDatabase/BarbWire/MI_barbwire.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Fence/BarbWire.upk#MI_Barbwire_Double",
+   "object": "MI_Barbwire_Double",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Barbwire_Double",
+   "texture_roles": [
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BarbWire/BarbWire/Texture2D/Barbwire_Norm.tga",
+   "extracted_sha256": "0ab777d9907bf539ae89779102478d0c012417221bb222c60248b5fdfe33c961",
+   "output_file": "Content/Extracted/MaterialDatabase/BarbWire/BarbWire/Texture2D/Barbwire_Norm.tga",
+   "output_sha256": "0ab777d9907bf539ae89779102478d0c012417221bb222c60248b5fdfe33c961",
+   "uasset": "Content/Imported/MaterialDatabase/BarbWire/MI_Barbwire_Double.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Fence/BarbWire.upk#MI_Barbwire_TMP",
+   "object": "MI_Barbwire_TMP",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Barbwire_TMP",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BarbWire/Metal/Texture2D/Metal_Generic_01.tga",
+   "extracted_sha256": "70145db4be79bd43112b761253ebf589c03db4c19a04686de217ad55272df256",
+   "output_file": "Content/Extracted/MaterialDatabase/BarbWire/Metal/Texture2D/Metal_Generic_01.tga",
+   "output_sha256": "70145db4be79bd43112b761253ebf589c03db4c19a04686de217ad55272df256",
+   "uasset": "Content/Imported/MaterialDatabase/BarbWire/MI_Barbwire_TMP.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Fence/BarbWire.upk#MI_BarbWireTop",
+   "object": "MI_BarbWireTop",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "BarbWireTop",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/BarbWire/BarbWire/Texture2D/BarbTop_Norm.tga",
+   "extracted_sha256": "516f18b006eba04e918e157e5522b0e989d2a9f390d11c88436e8ba8bf36da71",
+   "output_file": "Content/Extracted/MaterialDatabase/BarbWire/BarbWire/Texture2D/BarbTop_Norm.tga",
+   "output_sha256": "516f18b006eba04e918e157e5522b0e989d2a9f390d11c88436e8ba8bf36da71",
+   "uasset": "Content/Imported/MaterialDatabase/BarbWire/MI_BarbWireTop.uasset"
+  }
+ ]
+}

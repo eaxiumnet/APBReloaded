@@ -1,0 +1,62 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Mailbox",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/Mailbox.upk",
+ "source_sha256": "2e46daf1fd83b79e3e927743a4f9a5968f7d8d57de851aeeff867595688adff3",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Mailbox.upk#Mailbox_DiffSpec",
+   "object": "Mailbox_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Mailbox/Mailbox/Texture2D/Mailbox_DiffSpec.tga",
+   "extracted_sha256": "4acd1692737c9fb79f7edc25e05f68c39713a9969095c553e099486edb17b175",
+   "output_file": "Content/Extracted/MaterialDatabase/Mailbox/Mailbox/Texture2D/Mailbox_DiffSpec.tga",
+   "output_sha256": "4acd1692737c9fb79f7edc25e05f68c39713a9969095c553e099486edb17b175",
+   "uasset": "Content/Imported/MaterialDatabase/Mailbox/Mailbox_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Mailbox.upk#Mailbox_Norm",
+   "object": "Mailbox_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Mailbox/Mailbox/Texture2D/Mailbox_Norm.tga",
+   "extracted_sha256": "3497723109fc626d92958dad2e76caa32b5e7cf8bc9c6d14f20d47a1114f1eb3",
+   "output_file": "Content/Extracted/MaterialDatabase/Mailbox/Mailbox/Texture2D/Mailbox_Norm.tga",
+   "output_sha256": "3497723109fc626d92958dad2e76caa32b5e7cf8bc9c6d14f20d47a1114f1eb3",
+   "uasset": "Content/Imported/MaterialDatabase/Mailbox/Mailbox_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Mailbox.upk#MI_Mailbox_Damage_Mat",
+   "object": "MI_Mailbox_Damage_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Mailbox_Damage_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Mailbox/Mailbox/Texture2D/Mailbox_DiffSpec.tga",
+   "extracted_sha256": "4acd1692737c9fb79f7edc25e05f68c39713a9969095c553e099486edb17b175",
+   "output_file": "Content/Extracted/MaterialDatabase/Mailbox/Mailbox/Texture2D/Mailbox_DiffSpec.tga",
+   "output_sha256": "4acd1692737c9fb79f7edc25e05f68c39713a9969095c553e099486edb17b175",
+   "uasset": "Content/Imported/MaterialDatabase/Mailbox/MI_Mailbox_Damage_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Mailbox.upk#MI_Mailbox_MAT",
+   "object": "MI_Mailbox_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Mailbox_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Mailbox/Mailbox/Texture2D/Mailbox_DiffSpec.tga",
+   "extracted_sha256": "4acd1692737c9fb79f7edc25e05f68c39713a9969095c553e099486edb17b175",
+   "output_file": "Content/Extracted/MaterialDatabase/Mailbox/Mailbox/Texture2D/Mailbox_DiffSpec.tga",
+   "output_sha256": "4acd1692737c9fb79f7edc25e05f68c39713a9969095c553e099486edb17b175",
+   "uasset": "Content/Imported/MaterialDatabase/Mailbox/MI_Mailbox_MAT.uasset"
+  }
+ ]
+}

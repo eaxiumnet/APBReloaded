@@ -1,0 +1,60 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "ESD_Plaque",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/EnforcerSocialDistrict/PropMaterials/ESD_Plaque.upk",
+ "source_sha256": "c8dacb71cbeea4689d9487c63eab1f9909182f0ab048145bb42abbbfd4dbff13",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/ESD_Plaque.upk#ESD_Plague_diffuse",
+   "object": "ESD_Plague_diffuse",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ESD_Plaque/ESD_Plaque/Texture2D/ESD_Plague_diffuse.tga",
+   "extracted_sha256": "b9d701e2b60daf37948bd8854712323457268561fbf10a9b0b37341f223b6114",
+   "output_file": "Content/Extracted/MaterialDatabase/ESD_Plaque/ESD_Plaque/Texture2D/ESD_Plague_diffuse.tga",
+   "output_sha256": "b9d701e2b60daf37948bd8854712323457268561fbf10a9b0b37341f223b6114",
+   "uasset": "Content/Imported/MaterialDatabase/ESD_Plaque/ESD_Plague_diffuse.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/ESD_Plaque.upk#ESD_Plague_Normal",
+   "object": "ESD_Plague_Normal",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ESD_Plaque/ESD_Plaque/Texture2D/ESD_Plague_Normal.tga",
+   "extracted_sha256": "2c28f348eb2136714204948e6d9f37feb1d89db0ed728d1ba1c489ca010fb98a",
+   "output_file": "Content/Extracted/MaterialDatabase/ESD_Plaque/ESD_Plaque/Texture2D/ESD_Plague_Normal.tga",
+   "output_sha256": "2c28f348eb2136714204948e6d9f37feb1d89db0ed728d1ba1c489ca010fb98a",
+   "uasset": "Content/Imported/MaterialDatabase/ESD_Plaque/ESD_Plague_Normal.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/ESD_Plaque.upk#ESD_Plague_Specular",
+   "object": "ESD_Plague_Specular",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ESD_Plaque/ESD_Plaque/Texture2D/ESD_Plague_Specular.tga",
+   "extracted_sha256": "7750b2e08388e53d0471ca73462e125913c1da5bab81f0473cbb822189f2b9b7",
+   "output_file": "Content/Extracted/MaterialDatabase/ESD_Plaque/ESD_Plaque/Texture2D/ESD_Plague_Specular.tga",
+   "output_sha256": "7750b2e08388e53d0471ca73462e125913c1da5bab81f0473cbb822189f2b9b7",
+   "uasset": "Content/Imported/MaterialDatabase/ESD_Plaque/ESD_Plague_Specular.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/ESD_Plaque.upk#MI_ESD_Plaque_Material",
+   "object": "MI_ESD_Plaque_Material",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "ESD_Plaque_Material",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Specular"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ESD_Plaque/ESD_Plaque/Texture2D/ESD_Plague_diffuse.tga",
+   "extracted_sha256": "b9d701e2b60daf37948bd8854712323457268561fbf10a9b0b37341f223b6114",
+   "output_file": "Content/Extracted/MaterialDatabase/ESD_Plaque/ESD_Plaque/Texture2D/ESD_Plague_diffuse.tga",
+   "output_sha256": "b9d701e2b60daf37948bd8854712323457268561fbf10a9b0b37341f223b6114",
+   "uasset": "Content/Imported/MaterialDatabase/ESD_Plaque/MI_ESD_Plaque_Material.uasset"
+  }
+ ]
+}

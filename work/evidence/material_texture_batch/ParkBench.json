@@ -1,0 +1,62 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "ParkBench",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/ParkBench.upk",
+ "source_sha256": "d98aa4846d4194625becfa8cdfc7851856cc16c16c57b5e6d6d585911ec1539b",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/ParkBench.upk#MI_ParkBench",
+   "object": "MI_ParkBench",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "ParkBench",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ParkBench/ParkBench/Texture2D/ParkBench_DiffSpec.tga",
+   "extracted_sha256": "33e1c18df9d30544e54766269fead019f95a8f53336667c02246ccf30456491f",
+   "output_file": "Content/Extracted/MaterialDatabase/ParkBench/ParkBench/Texture2D/ParkBench_DiffSpec.tga",
+   "output_sha256": "33e1c18df9d30544e54766269fead019f95a8f53336667c02246ccf30456491f",
+   "uasset": "Content/Imported/MaterialDatabase/ParkBench/MI_ParkBench.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/ParkBench.upk#MI_ParkBenchDamage",
+   "object": "MI_ParkBenchDamage",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "ParkBenchDamage",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ParkBench/ParkBench/Texture2D/ParkBench_DiffSpec.tga",
+   "extracted_sha256": "33e1c18df9d30544e54766269fead019f95a8f53336667c02246ccf30456491f",
+   "output_file": "Content/Extracted/MaterialDatabase/ParkBench/ParkBench/Texture2D/ParkBench_DiffSpec.tga",
+   "output_sha256": "33e1c18df9d30544e54766269fead019f95a8f53336667c02246ccf30456491f",
+   "uasset": "Content/Imported/MaterialDatabase/ParkBench/MI_ParkBenchDamage.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/ParkBench.upk#ParkBench_DiffSpec",
+   "object": "ParkBench_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ParkBench/ParkBench/Texture2D/ParkBench_DiffSpec.tga",
+   "extracted_sha256": "33e1c18df9d30544e54766269fead019f95a8f53336667c02246ccf30456491f",
+   "output_file": "Content/Extracted/MaterialDatabase/ParkBench/ParkBench/Texture2D/ParkBench_DiffSpec.tga",
+   "output_sha256": "33e1c18df9d30544e54766269fead019f95a8f53336667c02246ccf30456491f",
+   "uasset": "Content/Imported/MaterialDatabase/ParkBench/ParkBench_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/ParkBench.upk#ParkBench_Norm",
+   "object": "ParkBench_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ParkBench/ParkBench/Texture2D/ParkBench_Norm.tga",
+   "extracted_sha256": "ce8b319afe50a4c01512e7ed3a5de83609410cc8ed3c8715494426e90b4216ed",
+   "output_file": "Content/Extracted/MaterialDatabase/ParkBench/ParkBench/Texture2D/ParkBench_Norm.tga",
+   "output_sha256": "ce8b319afe50a4c01512e7ed3a5de83609410cc8ed3c8715494426e90b4216ed",
+   "uasset": "Content/Imported/MaterialDatabase/ParkBench/ParkBench_Norm.uasset"
+  }
+ ]
+}

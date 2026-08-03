@@ -1,0 +1,74 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Walkways",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/Walkways.upk",
+ "source_sha256": "2703818f34d3387208452b7efda7fa561dc831915a3d13dfab202a8de0517323",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Walkways.upk#MI_Walkways_Damage_Mat",
+   "object": "MI_Walkways_Damage_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Walkways_Damage_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Walkways/Walkways/Texture2D/Walkways_DamageDiff.tga",
+   "extracted_sha256": "fb3d0643439e8ae78c1e55fc0dc6826fd42655ad54df649293c95f98e047e90a",
+   "output_file": "Content/Extracted/MaterialDatabase/Walkways/Walkways/Texture2D/Walkways_DamageDiff.tga",
+   "output_sha256": "fb3d0643439e8ae78c1e55fc0dc6826fd42655ad54df649293c95f98e047e90a",
+   "uasset": "Content/Imported/MaterialDatabase/Walkways/MI_Walkways_Damage_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Walkways.upk#MI_Walkways_Mat",
+   "object": "MI_Walkways_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Walkways_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Walkways/Walkways/Texture2D/Walkways_DiffSpec.tga",
+   "extracted_sha256": "ce0b8856991c7568309964245d66da8ee32fb7b3f05b5caf5741e7d9c267523b",
+   "output_file": "Content/Extracted/MaterialDatabase/Walkways/Walkways/Texture2D/Walkways_DiffSpec.tga",
+   "output_sha256": "ce0b8856991c7568309964245d66da8ee32fb7b3f05b5caf5741e7d9c267523b",
+   "uasset": "Content/Imported/MaterialDatabase/Walkways/MI_Walkways_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Walkways.upk#Walkways_DamageDiff",
+   "object": "Walkways_DamageDiff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Walkways/Walkways/Texture2D/Walkways_DamageDiff.tga",
+   "extracted_sha256": "fb3d0643439e8ae78c1e55fc0dc6826fd42655ad54df649293c95f98e047e90a",
+   "output_file": "Content/Extracted/MaterialDatabase/Walkways/Walkways/Texture2D/Walkways_DamageDiff.tga",
+   "output_sha256": "fb3d0643439e8ae78c1e55fc0dc6826fd42655ad54df649293c95f98e047e90a",
+   "uasset": "Content/Imported/MaterialDatabase/Walkways/Walkways_DamageDiff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Walkways.upk#Walkways_DiffSpec",
+   "object": "Walkways_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Walkways/Walkways/Texture2D/Walkways_DiffSpec.tga",
+   "extracted_sha256": "ce0b8856991c7568309964245d66da8ee32fb7b3f05b5caf5741e7d9c267523b",
+   "output_file": "Content/Extracted/MaterialDatabase/Walkways/Walkways/Texture2D/Walkways_DiffSpec.tga",
+   "output_sha256": "ce0b8856991c7568309964245d66da8ee32fb7b3f05b5caf5741e7d9c267523b",
+   "uasset": "Content/Imported/MaterialDatabase/Walkways/Walkways_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Walkways.upk#Walkways_Norm",
+   "object": "Walkways_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Walkways/Walkways/Texture2D/Walkways_Norm.tga",
+   "extracted_sha256": "2d99db62895061659357995250a30555360e7ce3894db044885afc77305b66b6",
+   "output_file": "Content/Extracted/MaterialDatabase/Walkways/Walkways/Texture2D/Walkways_Norm.tga",
+   "output_sha256": "2d99db62895061659357995250a30555360e7ce3894db044885afc77305b66b6",
+   "uasset": "Content/Imported/MaterialDatabase/Walkways/Walkways_Norm.uasset"
+  }
+ ]
+}

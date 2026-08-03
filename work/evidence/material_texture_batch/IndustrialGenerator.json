@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "IndustrialGenerator",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/IndustrialGenerator.upk",
+ "source_sha256": "12938f7523cdbadd16384e83da5910ec36d42f49190e34b707070e0a49b9bf32",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/IndustrialGenerator.upk#MI_IndustrialGenerator_Mat",
+   "object": "MI_IndustrialGenerator_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "IndustrialGenerator_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/IndustrialGenerator/IndustrialGenerator/Texture2D/MidtownIndustrialGenerator_DiffSpec.tga",
+   "extracted_sha256": "ebfbb860961311667be180df0e6964a1f1dd53894f739406227230e9e2ea3582",
+   "output_file": "Content/Extracted/MaterialDatabase/IndustrialGenerator/IndustrialGenerator/Texture2D/MidtownIndustrialGenerator_DiffSpec.tga",
+   "output_sha256": "ebfbb860961311667be180df0e6964a1f1dd53894f739406227230e9e2ea3582",
+   "uasset": "Content/Imported/MaterialDatabase/IndustrialGenerator/MI_IndustrialGenerator_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/IndustrialGenerator.upk#MidtownIndustrialGenerator_DiffSpec",
+   "object": "MidtownIndustrialGenerator_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/IndustrialGenerator/IndustrialGenerator/Texture2D/MidtownIndustrialGenerator_DiffSpec.tga",
+   "extracted_sha256": "ebfbb860961311667be180df0e6964a1f1dd53894f739406227230e9e2ea3582",
+   "output_file": "Content/Extracted/MaterialDatabase/IndustrialGenerator/IndustrialGenerator/Texture2D/MidtownIndustrialGenerator_DiffSpec.tga",
+   "output_sha256": "ebfbb860961311667be180df0e6964a1f1dd53894f739406227230e9e2ea3582",
+   "uasset": "Content/Imported/MaterialDatabase/IndustrialGenerator/MidtownIndustrialGenerator_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/IndustrialGenerator.upk#MidtownIndustrialGenerator_Norm",
+   "object": "MidtownIndustrialGenerator_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/IndustrialGenerator/IndustrialGenerator/Texture2D/MidtownIndustrialGenerator_Norm.tga",
+   "extracted_sha256": "a8cde583db6864bf62e4179c867240ce09fdecc0490984b6e8f2633362879180",
+   "output_file": "Content/Extracted/MaterialDatabase/IndustrialGenerator/IndustrialGenerator/Texture2D/MidtownIndustrialGenerator_Norm.tga",
+   "output_sha256": "a8cde583db6864bf62e4179c867240ce09fdecc0490984b6e8f2633362879180",
+   "uasset": "Content/Imported/MaterialDatabase/IndustrialGenerator/MidtownIndustrialGenerator_Norm.uasset"
+  }
+ ]
+}

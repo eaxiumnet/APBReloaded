@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FinancialCandyCane",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCandyCane.upk",
+ "source_sha256": "f00b63af841e4e88facbaa129604049ecb952a64d39e5e0c055a8bef0fa03c56",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCandyCane.upk#CandyCane_Diff_256",
+   "object": "CandyCane_Diff_256",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialCandyCane/FinancialCandyCane/Texture2D/CandyCane_Diff_256.tga",
+   "extracted_sha256": "3841e4ec2a5b82d1328f37b08d02fe85617f2adf710c421c3dc3f84b0923a0bb",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialCandyCane/FinancialCandyCane/Texture2D/CandyCane_Diff_256.tga",
+   "output_sha256": "3841e4ec2a5b82d1328f37b08d02fe85617f2adf710c421c3dc3f84b0923a0bb",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialCandyCane/CandyCane_Diff_256.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCandyCane.upk#CandyCane_Norm_256",
+   "object": "CandyCane_Norm_256",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialCandyCane/FinancialCandyCane/Texture2D/CandyCane_Norm_256.tga",
+   "extracted_sha256": "a83a3b8fc24295e31550ef2edf7f0e8d6995b0ac87457cee7df883639c6950f0",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialCandyCane/FinancialCandyCane/Texture2D/CandyCane_Norm_256.tga",
+   "output_sha256": "a83a3b8fc24295e31550ef2edf7f0e8d6995b0ac87457cee7df883639c6950f0",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialCandyCane/CandyCane_Norm_256.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialCandyCane.upk#MI_CandyCane_MAT",
+   "object": "MI_CandyCane_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CandyCane_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialCandyCane/FinancialCandyCane/Texture2D/CandyCane_Diff_256.tga",
+   "extracted_sha256": "3841e4ec2a5b82d1328f37b08d02fe85617f2adf710c421c3dc3f84b0923a0bb",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialCandyCane/FinancialCandyCane/Texture2D/CandyCane_Diff_256.tga",
+   "output_sha256": "3841e4ec2a5b82d1328f37b08d02fe85617f2adf710c421c3dc3f84b0923a0bb",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialCandyCane/MI_CandyCane_MAT.uasset"
+  }
+ ]
+}

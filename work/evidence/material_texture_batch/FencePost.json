@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FencePost",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/FencePost.upk",
+ "source_sha256": "6d47346384f20b39810e2a2f5ae4ee4d244391db9f185c2ee7f14946867ab191",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/FencePost.upk#FencePost_DiffSpec",
+   "object": "FencePost_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FencePost/FencePost/Texture2D/FencePost_DiffSpec.tga",
+   "extracted_sha256": "d66659eec3122caece8b4dedf238d5f2b400e218ec4f46d9d9414003d02bfb5b",
+   "output_file": "Content/Extracted/MaterialDatabase/FencePost/FencePost/Texture2D/FencePost_DiffSpec.tga",
+   "output_sha256": "d66659eec3122caece8b4dedf238d5f2b400e218ec4f46d9d9414003d02bfb5b",
+   "uasset": "Content/Imported/MaterialDatabase/FencePost/FencePost_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/FencePost.upk#FencePost_Norm",
+   "object": "FencePost_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FencePost/FencePost/Texture2D/FencePost_Norm.tga",
+   "extracted_sha256": "ad54c0ce562bf46992edaa758b4966e1c5432a0de81fe9c19c92b3ca7e0ccd6c",
+   "output_file": "Content/Extracted/MaterialDatabase/FencePost/FencePost/Texture2D/FencePost_Norm.tga",
+   "output_sha256": "ad54c0ce562bf46992edaa758b4966e1c5432a0de81fe9c19c92b3ca7e0ccd6c",
+   "uasset": "Content/Imported/MaterialDatabase/FencePost/FencePost_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/FencePost.upk#MI_FencePost",
+   "object": "MI_FencePost",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FencePost",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FencePost/FencePost/Texture2D/FencePost_DiffSpec.tga",
+   "extracted_sha256": "d66659eec3122caece8b4dedf238d5f2b400e218ec4f46d9d9414003d02bfb5b",
+   "output_file": "Content/Extracted/MaterialDatabase/FencePost/FencePost/Texture2D/FencePost_DiffSpec.tga",
+   "output_sha256": "d66659eec3122caece8b4dedf238d5f2b400e218ec4f46d9d9414003d02bfb5b",
+   "uasset": "Content/Imported/MaterialDatabase/FencePost/MI_FencePost.uasset"
+  }
+ ]
+}

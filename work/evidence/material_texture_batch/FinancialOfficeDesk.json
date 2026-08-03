@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FinancialOfficeDesk",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/PropMaterials/FinancialOfficeDesk.upk",
+ "source_sha256": "d09d6227124c98905c894aa6c14da75f87160a57f83854755853628ca9692029",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialOfficeDesk.upk#FinancialOfficeDeskDiffSpec",
+   "object": "FinancialOfficeDeskDiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialOfficeDesk/FinancialOfficeDesk/Texture2D/FinancialOfficeDeskDiffSpec.tga",
+   "extracted_sha256": "6e162efb6d16f57ade43a18a290313a60e22a58187cad62f5d439f039776b781",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialOfficeDesk/FinancialOfficeDesk/Texture2D/FinancialOfficeDeskDiffSpec.tga",
+   "output_sha256": "6e162efb6d16f57ade43a18a290313a60e22a58187cad62f5d439f039776b781",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialOfficeDesk/FinancialOfficeDeskDiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialOfficeDesk.upk#FinancialOfficeDeskNorm",
+   "object": "FinancialOfficeDeskNorm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialOfficeDesk/FinancialOfficeDesk/Texture2D/FinancialOfficeDeskNorm.tga",
+   "extracted_sha256": "9025efa98fda934096efa44e166d4e562a3f26ee419bfeaae3bba3db50df9cc3",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialOfficeDesk/FinancialOfficeDesk/Texture2D/FinancialOfficeDeskNorm.tga",
+   "output_sha256": "9025efa98fda934096efa44e166d4e562a3f26ee419bfeaae3bba3db50df9cc3",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialOfficeDesk/FinancialOfficeDeskNorm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialOfficeDesk.upk#MI_FinancialOfficeDesk",
+   "object": "MI_FinancialOfficeDesk",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialOfficeDesk",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialOfficeDesk/FinancialOfficeDesk/Texture2D/FinancialOfficeDeskDiffSpec.tga",
+   "extracted_sha256": "6e162efb6d16f57ade43a18a290313a60e22a58187cad62f5d439f039776b781",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialOfficeDesk/FinancialOfficeDesk/Texture2D/FinancialOfficeDeskDiffSpec.tga",
+   "output_sha256": "6e162efb6d16f57ade43a18a290313a60e22a58187cad62f5d439f039776b781",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialOfficeDesk/MI_FinancialOfficeDesk.uasset"
+  }
+ ]
+}

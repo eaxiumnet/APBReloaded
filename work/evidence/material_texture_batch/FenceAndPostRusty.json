@@ -1,0 +1,48 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FenceAndPostRusty",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/Fence/FenceAndPostRusty.upk",
+ "source_sha256": "f8c0143729da1363f237495349c853c63127cc1921684008619a4a3b95b96fbd",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Fence/FenceAndPostRusty.upk#FenceAndPostRustyDiffSpec",
+   "object": "FenceAndPostRustyDiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FenceAndPostRusty/FenceAndPostRusty/Texture2D/FenceAndPostRustyDiffSpec.tga",
+   "extracted_sha256": "394a876823f411921baa58fd9786eeb1b1b52c1e199c1f971c21bfcd1375b7ea",
+   "output_file": "Content/Extracted/MaterialDatabase/FenceAndPostRusty/FenceAndPostRusty/Texture2D/FenceAndPostRustyDiffSpec.tga",
+   "output_sha256": "394a876823f411921baa58fd9786eeb1b1b52c1e199c1f971c21bfcd1375b7ea",
+   "uasset": "Content/Imported/MaterialDatabase/FenceAndPostRusty/FenceAndPostRustyDiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Fence/FenceAndPostRusty.upk#FenceAndPostRustyNormOpac",
+   "object": "FenceAndPostRustyNormOpac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FenceAndPostRusty/FenceAndPostRusty/Texture2D/FenceAndPostRustyNormOpac.tga",
+   "extracted_sha256": "f38dcd04967884b24dcde54538a5e501248b51f9f8b74ccb165f30af3776926e",
+   "output_file": "Content/Extracted/MaterialDatabase/FenceAndPostRusty/FenceAndPostRusty/Texture2D/FenceAndPostRustyNormOpac.tga",
+   "output_sha256": "f38dcd04967884b24dcde54538a5e501248b51f9f8b74ccb165f30af3776926e",
+   "uasset": "Content/Imported/MaterialDatabase/FenceAndPostRusty/FenceAndPostRustyNormOpac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Fence/FenceAndPostRusty.upk#MI_fenceandpostrusty",
+   "object": "MI_fenceandpostrusty",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "fenceandpostrusty",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FenceAndPostRusty/FenceAndPostRusty/Texture2D/FenceAndPostRustyDiffSpec.tga",
+   "extracted_sha256": "394a876823f411921baa58fd9786eeb1b1b52c1e199c1f971c21bfcd1375b7ea",
+   "output_file": "Content/Extracted/MaterialDatabase/FenceAndPostRusty/FenceAndPostRusty/Texture2D/FenceAndPostRustyDiffSpec.tga",
+   "output_sha256": "394a876823f411921baa58fd9786eeb1b1b52c1e199c1f971c21bfcd1375b7ea",
+   "uasset": "Content/Imported/MaterialDatabase/FenceAndPostRusty/MI_fenceandpostrusty.uasset"
+  }
+ ]
+}

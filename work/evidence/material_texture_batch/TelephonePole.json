@@ -1,0 +1,60 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "TelephonePole",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/TelephonePole.upk",
+ "source_sha256": "c820e71f1512a6be8393de70665f934f6376cb47e0667011562dcc20ed4e540d",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/TelephonePole.upk#MI_telephonepole",
+   "object": "MI_telephonepole",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "telephonepole",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/TelephonePole/TelephonePole/Texture2D/TelephonePole_DiffSpec.tga",
+   "extracted_sha256": "7c87c2947aac01793ae63a0fba334742df07d4d0f30f570a89c7d910d9ffb4aa",
+   "output_file": "Content/Extracted/MaterialDatabase/TelephonePole/TelephonePole/Texture2D/TelephonePole_DiffSpec.tga",
+   "output_sha256": "7c87c2947aac01793ae63a0fba334742df07d4d0f30f570a89c7d910d9ffb4aa",
+   "uasset": "Content/Imported/MaterialDatabase/TelephonePole/MI_telephonepole.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/TelephonePole.upk#TelephonePole_DiffSpec",
+   "object": "TelephonePole_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/TelephonePole/TelephonePole/Texture2D/TelephonePole_DiffSpec.tga",
+   "extracted_sha256": "7c87c2947aac01793ae63a0fba334742df07d4d0f30f570a89c7d910d9ffb4aa",
+   "output_file": "Content/Extracted/MaterialDatabase/TelephonePole/TelephonePole/Texture2D/TelephonePole_DiffSpec.tga",
+   "output_sha256": "7c87c2947aac01793ae63a0fba334742df07d4d0f30f570a89c7d910d9ffb4aa",
+   "uasset": "Content/Imported/MaterialDatabase/TelephonePole/TelephonePole_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/TelephonePole.upk#TelephonePole_Norm",
+   "object": "TelephonePole_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/TelephonePole/TelephonePole/Texture2D/TelephonePole_Norm.tga",
+   "extracted_sha256": "96cc3af5b87436060e5a82d774ca81b32357e5bd45c81438df66f277039ccd8e",
+   "output_file": "Content/Extracted/MaterialDatabase/TelephonePole/TelephonePole/Texture2D/TelephonePole_Norm.tga",
+   "output_sha256": "96cc3af5b87436060e5a82d774ca81b32357e5bd45c81438df66f277039ccd8e",
+   "uasset": "Content/Imported/MaterialDatabase/TelephonePole/TelephonePole_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/TelephonePole.upk#TelephonePole_Opac",
+   "object": "TelephonePole_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/TelephonePole/TelephonePole/Texture2D/TelephonePole_Opac.tga",
+   "extracted_sha256": "7aed727d198f35138a441389f0a197dbd8b363a9258046af8bf1e12846b39662",
+   "output_file": "Content/Extracted/MaterialDatabase/TelephonePole/TelephonePole/Texture2D/TelephonePole_Opac.tga",
+   "output_sha256": "7aed727d198f35138a441389f0a197dbd8b363a9258046af8bf1e12846b39662",
+   "uasset": "Content/Imported/MaterialDatabase/TelephonePole/TelephonePole_Opac.uasset"
+  }
+ ]
+}

@@ -1,0 +1,154 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Roads",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/RoadMaterials/RoadMateralsInProgress/Roads.upk",
+ "source_sha256": "267d38b6f83f68742b6521fee981274a4ef5fc7770606cd11aaab032c4410fc8",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/RoadMaterials/RoadMateralsInProgress/Roads.upk#Cracks_NormAlph",
+   "object": "Cracks_NormAlph",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roads/Roads/Texture2D/Cracks_NormAlph.tga",
+   "extracted_sha256": "18a7a4ddebf8ac20b506dc687cf5c483c982ae00c4268e76faf9de4a212bc520",
+   "output_file": "Content/Extracted/MaterialDatabase/Roads/Roads/Texture2D/Cracks_NormAlph.tga",
+   "output_sha256": "18a7a4ddebf8ac20b506dc687cf5c483c982ae00c4268e76faf9de4a212bc520",
+   "uasset": "Content/Imported/MaterialDatabase/Roads/Cracks_NormAlph.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/RoadMaterials/RoadMateralsInProgress/Roads.upk#Curb_DiffSpec",
+   "object": "Curb_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roads/Roads/Texture2D/Curb_DiffSpec.tga",
+   "extracted_sha256": "6b7118f6bc7b07886f9330d69fc55bf91390e142688e2eb49919c28c33001563",
+   "output_file": "Content/Extracted/MaterialDatabase/Roads/Roads/Texture2D/Curb_DiffSpec.tga",
+   "output_sha256": "6b7118f6bc7b07886f9330d69fc55bf91390e142688e2eb49919c28c33001563",
+   "uasset": "Content/Imported/MaterialDatabase/Roads/Curb_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/RoadMaterials/RoadMateralsInProgress/Roads.upk#Curb_Norm",
+   "object": "Curb_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roads/Roads/Texture2D/Curb_Norm.tga",
+   "extracted_sha256": "ea56f48ec9384e6eb3b59d8b7994fc758503270294428a27eedecd21b0f983e8",
+   "output_file": "Content/Extracted/MaterialDatabase/Roads/Roads/Texture2D/Curb_Norm.tga",
+   "output_sha256": "ea56f48ec9384e6eb3b59d8b7994fc758503270294428a27eedecd21b0f983e8",
+   "uasset": "Content/Imported/MaterialDatabase/Roads/Curb_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/RoadMaterials/RoadMateralsInProgress/Roads.upk#MI_Lane",
+   "object": "MI_Lane",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Lane",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roads/Roads/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "extracted_sha256": "0352c2a1b05103238eb8d1c2f641d412ffc9f04d2f5abfc13bc6413a6f0ac260",
+   "output_file": "Content/Extracted/MaterialDatabase/Roads/Roads/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "output_sha256": "0352c2a1b05103238eb8d1c2f641d412ffc9f04d2f5abfc13bc6413a6f0ac260",
+   "uasset": "Content/Imported/MaterialDatabase/Roads/MI_Lane.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/RoadMaterials/RoadMateralsInProgress/Roads.upk#MI_Lane_2_INSTANCE",
+   "object": "MI_Lane_2_INSTANCE",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Lane_2_INSTANCE",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roads/Roads/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "extracted_sha256": "0352c2a1b05103238eb8d1c2f641d412ffc9f04d2f5abfc13bc6413a6f0ac260",
+   "output_file": "Content/Extracted/MaterialDatabase/Roads/Roads/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "output_sha256": "0352c2a1b05103238eb8d1c2f641d412ffc9f04d2f5abfc13bc6413a6f0ac260",
+   "uasset": "Content/Imported/MaterialDatabase/Roads/MI_Lane_2_INSTANCE.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/RoadMaterials/RoadMateralsInProgress/Roads.upk#MI_Road_Gutter_Mat",
+   "object": "MI_Road_Gutter_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Road_Gutter_Mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roads/Roads/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "extracted_sha256": "0352c2a1b05103238eb8d1c2f641d412ffc9f04d2f5abfc13bc6413a6f0ac260",
+   "output_file": "Content/Extracted/MaterialDatabase/Roads/Roads/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "output_sha256": "0352c2a1b05103238eb8d1c2f641d412ffc9f04d2f5abfc13bc6413a6f0ac260",
+   "uasset": "Content/Imported/MaterialDatabase/Roads/MI_Road_Gutter_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/RoadMaterials/RoadMateralsInProgress/Roads.upk#MI_Sidestone_Mat",
+   "object": "MI_Sidestone_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Sidestone_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roads/Roads/Texture2D/Curb_DiffSpec.tga",
+   "extracted_sha256": "6b7118f6bc7b07886f9330d69fc55bf91390e142688e2eb49919c28c33001563",
+   "output_file": "Content/Extracted/MaterialDatabase/Roads/Roads/Texture2D/Curb_DiffSpec.tga",
+   "output_sha256": "6b7118f6bc7b07886f9330d69fc55bf91390e142688e2eb49919c28c33001563",
+   "uasset": "Content/Imported/MaterialDatabase/Roads/MI_Sidestone_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/RoadMaterials/RoadMateralsInProgress/Roads.upk#MI_Sidewalk",
+   "object": "MI_Sidewalk",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Sidewalk",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roads/Roads/Texture2D/Sidewalk_Concrete_DiffSpec.tga",
+   "extracted_sha256": "1a544726a7925a976eaa488ea5a3adedddbe62384703fe0aadd88c504451afcd",
+   "output_file": "Content/Extracted/MaterialDatabase/Roads/Roads/Texture2D/Sidewalk_Concrete_DiffSpec.tga",
+   "output_sha256": "1a544726a7925a976eaa488ea5a3adedddbe62384703fe0aadd88c504451afcd",
+   "uasset": "Content/Imported/MaterialDatabase/Roads/MI_Sidewalk.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/RoadMaterials/RoadMateralsInProgress/Roads.upk#Sidewalk_Concrete_DiffSpec",
+   "object": "Sidewalk_Concrete_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roads/Roads/Texture2D/Sidewalk_Concrete_DiffSpec.tga",
+   "extracted_sha256": "1a544726a7925a976eaa488ea5a3adedddbe62384703fe0aadd88c504451afcd",
+   "output_file": "Content/Extracted/MaterialDatabase/Roads/Roads/Texture2D/Sidewalk_Concrete_DiffSpec.tga",
+   "output_sha256": "1a544726a7925a976eaa488ea5a3adedddbe62384703fe0aadd88c504451afcd",
+   "uasset": "Content/Imported/MaterialDatabase/Roads/Sidewalk_Concrete_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/RoadMaterials/RoadMateralsInProgress/Roads.upk#Sidewalk_Concrete_Norm",
+   "object": "Sidewalk_Concrete_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roads/Roads/Texture2D/Sidewalk_Concrete_Norm.tga",
+   "extracted_sha256": "05d1c9f248293b6b20b7c845d982e8bdff632c15d8c07d181bfcc3b1c9dbfff6",
+   "output_file": "Content/Extracted/MaterialDatabase/Roads/Roads/Texture2D/Sidewalk_Concrete_Norm.tga",
+   "output_sha256": "05d1c9f248293b6b20b7c845d982e8bdff632c15d8c07d181bfcc3b1c9dbfff6",
+   "uasset": "Content/Imported/MaterialDatabase/Roads/Sidewalk_Concrete_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/RoadMaterials/RoadMateralsInProgress/Roads.upk#Surface_DarkAsphalt_DiffSpec",
+   "object": "Surface_DarkAsphalt_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Roads/Roads/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "extracted_sha256": "0352c2a1b05103238eb8d1c2f641d412ffc9f04d2f5abfc13bc6413a6f0ac260",
+   "output_file": "Content/Extracted/MaterialDatabase/Roads/Roads/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "output_sha256": "0352c2a1b05103238eb8d1c2f641d412ffc9f04d2f5abfc13bc6413a6f0ac260",
+   "uasset": "Content/Imported/MaterialDatabase/Roads/Surface_DarkAsphalt_DiffSpec.uasset"
+  }
+ ]
+}

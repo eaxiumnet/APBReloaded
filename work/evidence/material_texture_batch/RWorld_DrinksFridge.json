@@ -1,0 +1,75 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "RWorld_DrinksFridge",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/RWorldSocialDistrict/Props/RWorld_DrinksFridge.upk",
+ "source_sha256": "23d09a8ef276d02b5c4dd404927153bbb24591536baeb55a38afccf05a0e4527",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_DrinksFridge.upk#DrinksFridge_DiffSpec",
+   "object": "DrinksFridge_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_DrinksFridge/RWorld_DrinksFridge/Texture2D/DrinksFridge_DiffSpec.tga",
+   "extracted_sha256": "b024a88b8d2578dfa78e4d55fe2a17a28f708b74e19b7c4e84f20a52e8fcdfad",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_DrinksFridge/RWorld_DrinksFridge/Texture2D/DrinksFridge_DiffSpec.tga",
+   "output_sha256": "b024a88b8d2578dfa78e4d55fe2a17a28f708b74e19b7c4e84f20a52e8fcdfad",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_DrinksFridge/DrinksFridge_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_DrinksFridge.upk#DrinksFridge_Emissive",
+   "object": "DrinksFridge_Emissive",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_DrinksFridge/RWorld_DrinksFridge/Texture2D/DrinksFridge_Emissive.tga",
+   "extracted_sha256": "110e7661a87dcf0a21db1ebb6e874e1c82c5e65e0c94095bf447b48934b58933",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_DrinksFridge/RWorld_DrinksFridge/Texture2D/DrinksFridge_Emissive.tga",
+   "output_sha256": "110e7661a87dcf0a21db1ebb6e874e1c82c5e65e0c94095bf447b48934b58933",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_DrinksFridge/DrinksFridge_Emissive.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_DrinksFridge.upk#DrinksFridge_Norm",
+   "object": "DrinksFridge_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_DrinksFridge/RWorld_DrinksFridge/Texture2D/DrinksFridge_Norm.tga",
+   "extracted_sha256": "da2000c68d1c8cfdf8e751a0cbe9dd43b1ea445971d4f31ae6c3c58cae773e60",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_DrinksFridge/RWorld_DrinksFridge/Texture2D/DrinksFridge_Norm.tga",
+   "output_sha256": "da2000c68d1c8cfdf8e751a0cbe9dd43b1ea445971d4f31ae6c3c58cae773e60",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_DrinksFridge/DrinksFridge_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_DrinksFridge.upk#MI_DrinksFridgeMaterial1",
+   "object": "MI_DrinksFridgeMaterial1",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "DrinksFridgeMaterial1",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_DrinksFridge/RWorld_DrinksFridge/Texture2D/DrinksFridge_DiffSpec.tga",
+   "extracted_sha256": "b024a88b8d2578dfa78e4d55fe2a17a28f708b74e19b7c4e84f20a52e8fcdfad",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_DrinksFridge/RWorld_DrinksFridge/Texture2D/DrinksFridge_DiffSpec.tga",
+   "output_sha256": "b024a88b8d2578dfa78e4d55fe2a17a28f708b74e19b7c4e84f20a52e8fcdfad",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_DrinksFridge/MI_DrinksFridgeMaterial1.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_DrinksFridge.upk#MI_DrinksFridgeMaterial2",
+   "object": "MI_DrinksFridgeMaterial2",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "DrinksFridgeMaterial2",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_DrinksFridge/RWorld_DrinksFridge/Texture2D/DrinksFridge_DiffSpec.tga",
+   "extracted_sha256": "b024a88b8d2578dfa78e4d55fe2a17a28f708b74e19b7c4e84f20a52e8fcdfad",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_DrinksFridge/RWorld_DrinksFridge/Texture2D/DrinksFridge_DiffSpec.tga",
+   "output_sha256": "b024a88b8d2578dfa78e4d55fe2a17a28f708b74e19b7c4e84f20a52e8fcdfad",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_DrinksFridge/MI_DrinksFridgeMaterial2.uasset"
+  }
+ ]
+}

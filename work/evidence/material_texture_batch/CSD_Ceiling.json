@@ -1,0 +1,48 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "CSD_Ceiling",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/Ceiling/CSD_Ceiling.upk",
+ "source_sha256": "80ba86406380f1c046339f8fe4aed379ee5ba91cc68dbec08aff255f3eb1b972",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Ceiling/CSD_Ceiling.upk#MI_PaintedCeiling_Greenish",
+   "object": "MI_PaintedCeiling_Greenish",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PaintedCeiling_Greenish",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Ceiling/CSD_Ceiling/Texture2D/PaintedCeiling_Diff.tga",
+   "extracted_sha256": "11c42617831d99de602e738e5ae08eaa7dd722d0b1a87030d6cd506946adcd47",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Ceiling/CSD_Ceiling/Texture2D/PaintedCeiling_Diff.tga",
+   "output_sha256": "11c42617831d99de602e738e5ae08eaa7dd722d0b1a87030d6cd506946adcd47",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Ceiling/MI_PaintedCeiling_Greenish.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Ceiling/CSD_Ceiling.upk#MI_PaintedCeiling_Mat",
+   "object": "MI_PaintedCeiling_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "PaintedCeiling_Mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Ceiling/CSD_Ceiling/Texture2D/PaintedCeiling_Diff.tga",
+   "extracted_sha256": "11c42617831d99de602e738e5ae08eaa7dd722d0b1a87030d6cd506946adcd47",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Ceiling/CSD_Ceiling/Texture2D/PaintedCeiling_Diff.tga",
+   "output_sha256": "11c42617831d99de602e738e5ae08eaa7dd722d0b1a87030d6cd506946adcd47",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Ceiling/MI_PaintedCeiling_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Ceiling/CSD_Ceiling.upk#PaintedCeiling_Diff",
+   "object": "PaintedCeiling_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Ceiling/CSD_Ceiling/Texture2D/PaintedCeiling_Diff.tga",
+   "extracted_sha256": "11c42617831d99de602e738e5ae08eaa7dd722d0b1a87030d6cd506946adcd47",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Ceiling/CSD_Ceiling/Texture2D/PaintedCeiling_Diff.tga",
+   "output_sha256": "11c42617831d99de602e738e5ae08eaa7dd722d0b1a87030d6cd506946adcd47",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Ceiling/PaintedCeiling_Diff.uasset"
+  }
+ ]
+}

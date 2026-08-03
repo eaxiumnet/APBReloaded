@@ -1,0 +1,100 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Prop_Mannequin_F_Villainy_01_Plain",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Mannequin_F_Villainy_01_Plain.upk",
+ "source_sha256": "7bc03b2cf562a1c706a79e5c67e37c9b9aa6c740874355a2ad5237caedafc006",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Mannequin_F_Villainy_01_Plain.upk#Diffuse",
+   "object": "Diffuse",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_Villainy_01_Plain/Prop_Mannequin_F_Villainy_01_Plain/Texture2D/Diffuse.tga",
+   "extracted_sha256": "970435783ea785769dda1a3706946dfd2f27d5af86674da74c6f30ceb465f78c",
+   "output_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_Villainy_01_Plain/Prop_Mannequin_F_Villainy_01_Plain/Texture2D/Diffuse.tga",
+   "output_sha256": "970435783ea785769dda1a3706946dfd2f27d5af86674da74c6f30ceb465f78c",
+   "uasset": "Content/Imported/MaterialDatabase/Prop_Mannequin_F_Villainy_01_Plain/Diffuse.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Mannequin_F_Villainy_01_Plain.upk#F_Hair_Buns_Noir_Odango_Xtra_Norm",
+   "object": "F_Hair_Buns_Noir_Odango_Xtra_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_Villainy_01_Plain/F_Hair_Buns_Noir_Odango/Texture2D/F_Hair_Buns_Noir_Odango_Xtra_Norm.tga",
+   "extracted_sha256": "6faa197c574f86f88f359c89ef9a7ac2bf85453ce77fcb9df633e80c57826446",
+   "output_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_Villainy_01_Plain/F_Hair_Buns_Noir_Odango/Texture2D/F_Hair_Buns_Noir_Odango_Xtra_Norm.tga",
+   "output_sha256": "6faa197c574f86f88f359c89ef9a7ac2bf85453ce77fcb9df633e80c57826446",
+   "uasset": "Content/Imported/MaterialDatabase/Prop_Mannequin_F_Villainy_01_Plain/F_Hair_Buns_Noir_Odango_Xtra_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Mannequin_F_Villainy_01_Plain.upk#F_Hair_Eyelashes_Opac",
+   "object": "F_Hair_Eyelashes_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_Villainy_01_Plain/F_Hair/Texture2D/F_Hair_Eyelashes_Opac.tga",
+   "extracted_sha256": "04a5790c59643d52826487d6dc0b9506563ef01f4a4b4c394f601a6439982bc5",
+   "output_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_Villainy_01_Plain/F_Hair/Texture2D/F_Hair_Eyelashes_Opac.tga",
+   "output_sha256": "04a5790c59643d52826487d6dc0b9506563ef01f4a4b4c394f601a6439982bc5",
+   "uasset": "Content/Imported/MaterialDatabase/Prop_Mannequin_F_Villainy_01_Plain/F_Hair_Eyelashes_Opac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Mannequin_F_Villainy_01_Plain.upk#MI_BodyMaterial",
+   "object": "MI_BodyMaterial",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "BodyMaterial",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_Villainy_01_Plain/Prop_Mannequin_F_Villainy_01_Plain/Texture2D/Diffuse.tga",
+   "extracted_sha256": "970435783ea785769dda1a3706946dfd2f27d5af86674da74c6f30ceb465f78c",
+   "output_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_Villainy_01_Plain/Prop_Mannequin_F_Villainy_01_Plain/Texture2D/Diffuse.tga",
+   "output_sha256": "970435783ea785769dda1a3706946dfd2f27d5af86674da74c6f30ceb465f78c",
+   "uasset": "Content/Imported/MaterialDatabase/Prop_Mannequin_F_Villainy_01_Plain/MI_BodyMaterial.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Mannequin_F_Villainy_01_Plain.upk#MI_F_Hair_Eyelashes_Mat",
+   "object": "MI_F_Hair_Eyelashes_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "F_Hair_Eyelashes_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_Villainy_01_Plain/F_Hair/Texture2D/F_Hair_Eyelashes_Opac.tga",
+   "extracted_sha256": "04a5790c59643d52826487d6dc0b9506563ef01f4a4b4c394f601a6439982bc5",
+   "output_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_Villainy_01_Plain/F_Hair/Texture2D/F_Hair_Eyelashes_Opac.tga",
+   "output_sha256": "04a5790c59643d52826487d6dc0b9506563ef01f4a4b4c394f601a6439982bc5",
+   "uasset": "Content/Imported/MaterialDatabase/Prop_Mannequin_F_Villainy_01_Plain/MI_F_Hair_Eyelashes_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Mannequin_F_Villainy_01_Plain.upk#MI_HairMaterial",
+   "object": "MI_HairMaterial",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "HairMaterial",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_Villainy_01_Plain/F_Hair_Buns_Noir_Odango/Texture2D/F_Hair_Buns_Noir_Odango_Xtra_Norm.tga",
+   "extracted_sha256": "6faa197c574f86f88f359c89ef9a7ac2bf85453ce77fcb9df633e80c57826446",
+   "output_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_Villainy_01_Plain/F_Hair_Buns_Noir_Odango/Texture2D/F_Hair_Buns_Noir_Odango_Xtra_Norm.tga",
+   "output_sha256": "6faa197c574f86f88f359c89ef9a7ac2bf85453ce77fcb9df633e80c57826446",
+   "uasset": "Content/Imported/MaterialDatabase/Prop_Mannequin_F_Villainy_01_Plain/MI_HairMaterial.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Mannequin_F_Villainy_01_Plain.upk#Normal",
+   "object": "Normal",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_Villainy_01_Plain/Prop_Mannequin_F_Villainy_01_Plain/Texture2D/Normal.tga",
+   "extracted_sha256": "f839322e2630a1eb0fa775ab4f9192b2ef891de80cf1f5597c2a26c9ea34fd22",
+   "output_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_Villainy_01_Plain/Prop_Mannequin_F_Villainy_01_Plain/Texture2D/Normal.tga",
+   "output_sha256": "f839322e2630a1eb0fa775ab4f9192b2ef891de80cf1f5597c2a26c9ea34fd22",
+   "uasset": "Content/Imported/MaterialDatabase/Prop_Mannequin_F_Villainy_01_Plain/Normal.uasset"
+  }
+ ]
+}

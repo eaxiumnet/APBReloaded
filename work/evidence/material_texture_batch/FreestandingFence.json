@@ -1,0 +1,60 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FreestandingFence",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/ProvingGrounds/PropMaterials/FreestandingFence.upk",
+ "source_sha256": "ed21e5da1bea793d3afdc91a9f29e285d233803ef381c30dc04e307fb86fbc24",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/ProvingGrounds/PropMaterials/FreestandingFence.upk#Fence_Alpha",
+   "object": "Fence_Alpha",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FreestandingFence/FreestandingFence/Texture2D/Fence_Alpha.tga",
+   "extracted_sha256": "572882c0271498f35ab7a2f31393eadd43a08565a3c7d96f0fa2031a61ee8d7e",
+   "output_file": "Content/Extracted/MaterialDatabase/FreestandingFence/FreestandingFence/Texture2D/Fence_Alpha.tga",
+   "output_sha256": "572882c0271498f35ab7a2f31393eadd43a08565a3c7d96f0fa2031a61ee8d7e",
+   "uasset": "Content/Imported/MaterialDatabase/FreestandingFence/Fence_Alpha.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/ProvingGrounds/PropMaterials/FreestandingFence.upk#Fence_Diff",
+   "object": "Fence_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FreestandingFence/FreestandingFence/Texture2D/Fence_Diff.tga",
+   "extracted_sha256": "a96045ec6764764011c287e43934d5337c8a652a29294bf5d2bc66b01f84c5a0",
+   "output_file": "Content/Extracted/MaterialDatabase/FreestandingFence/FreestandingFence/Texture2D/Fence_Diff.tga",
+   "output_sha256": "a96045ec6764764011c287e43934d5337c8a652a29294bf5d2bc66b01f84c5a0",
+   "uasset": "Content/Imported/MaterialDatabase/FreestandingFence/Fence_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/ProvingGrounds/PropMaterials/FreestandingFence.upk#Fence_Norm",
+   "object": "Fence_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FreestandingFence/FreestandingFence/Texture2D/Fence_Norm.tga",
+   "extracted_sha256": "25d6df9c6180e9ddd675ddcfcd9ead3a108c946a21636d8413e0719bef3dfdf1",
+   "output_file": "Content/Extracted/MaterialDatabase/FreestandingFence/FreestandingFence/Texture2D/Fence_Norm.tga",
+   "output_sha256": "25d6df9c6180e9ddd675ddcfcd9ead3a108c946a21636d8413e0719bef3dfdf1",
+   "uasset": "Content/Imported/MaterialDatabase/FreestandingFence/Fence_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/ProvingGrounds/PropMaterials/FreestandingFence.upk#MI_FreestandingFence_MAT",
+   "object": "MI_FreestandingFence_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FreestandingFence_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FreestandingFence/FreestandingFence/Texture2D/Fence_Diff.tga",
+   "extracted_sha256": "a96045ec6764764011c287e43934d5337c8a652a29294bf5d2bc66b01f84c5a0",
+   "output_file": "Content/Extracted/MaterialDatabase/FreestandingFence/FreestandingFence/Texture2D/Fence_Diff.tga",
+   "output_sha256": "a96045ec6764764011c287e43934d5337c8a652a29294bf5d2bc66b01f84c5a0",
+   "uasset": "Content/Imported/MaterialDatabase/FreestandingFence/MI_FreestandingFence_MAT.uasset"
+  }
+ ]
+}

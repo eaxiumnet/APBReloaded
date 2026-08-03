@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "RWorld_Jukebox",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/RWorldSocialDistrict/Props/RWorld_Jukebox.upk",
+ "source_sha256": "7bc334f8a950f056b13dd35b7ec1a43b70b6391802a53e3384dc0ad5e4740107",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_Jukebox.upk#Jukebox_DiffSpec",
+   "object": "Jukebox_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_Jukebox/RWorld_Jukebox/Texture2D/Jukebox_DiffSpec.tga",
+   "extracted_sha256": "7be5e4f2c779a869ba18f2619435ed03c106c6d7e6fbd543673705e91f97b6ba",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_Jukebox/RWorld_Jukebox/Texture2D/Jukebox_DiffSpec.tga",
+   "output_sha256": "7be5e4f2c779a869ba18f2619435ed03c106c6d7e6fbd543673705e91f97b6ba",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_Jukebox/Jukebox_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_Jukebox.upk#Jukebox_Norm",
+   "object": "Jukebox_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_Jukebox/RWorld_Jukebox/Texture2D/Jukebox_Norm.tga",
+   "extracted_sha256": "0ded7b156008227f6ef880dc999211e36ea3ffa4502f628a2c0e8a990203b3d3",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_Jukebox/RWorld_Jukebox/Texture2D/Jukebox_Norm.tga",
+   "output_sha256": "0ded7b156008227f6ef880dc999211e36ea3ffa4502f628a2c0e8a990203b3d3",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_Jukebox/Jukebox_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_Jukebox.upk#MI_Jukebox_MAT",
+   "object": "MI_Jukebox_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Jukebox_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_Jukebox/RWorld_Jukebox/Texture2D/Jukebox_DiffSpec.tga",
+   "extracted_sha256": "7be5e4f2c779a869ba18f2619435ed03c106c6d7e6fbd543673705e91f97b6ba",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_Jukebox/RWorld_Jukebox/Texture2D/Jukebox_DiffSpec.tga",
+   "output_sha256": "7be5e4f2c779a869ba18f2619435ed03c106c6d7e6fbd543673705e91f97b6ba",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_Jukebox/MI_Jukebox_MAT.uasset"
+  }
+ ]
+}

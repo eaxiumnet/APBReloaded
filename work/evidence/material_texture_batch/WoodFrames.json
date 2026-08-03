@@ -1,0 +1,34 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "WoodFrames",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/ProvingGrounds/PropMaterials/WoodFrames.upk",
+ "source_sha256": "f9d1a7180039737350dd6865d2718e8afb0e87db55560c1f65a17d24b851121c",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/ProvingGrounds/PropMaterials/WoodFrames.upk#MI_WoodFrame_Mat",
+   "object": "MI_WoodFrame_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WoodFrame_Mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WoodFrames/WoodFrames/Texture2D/Woodframe_Diff.tga",
+   "extracted_sha256": "2da08749d0f5a19c1cb21b463b159402ff89af52abf2c064baf4560e0cf85fe0",
+   "output_file": "Content/Extracted/MaterialDatabase/WoodFrames/WoodFrames/Texture2D/Woodframe_Diff.tga",
+   "output_sha256": "2da08749d0f5a19c1cb21b463b159402ff89af52abf2c064baf4560e0cf85fe0",
+   "uasset": "Content/Imported/MaterialDatabase/WoodFrames/MI_WoodFrame_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/ProvingGrounds/PropMaterials/WoodFrames.upk#Woodframe_Diff",
+   "object": "Woodframe_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WoodFrames/WoodFrames/Texture2D/Woodframe_Diff.tga",
+   "extracted_sha256": "2da08749d0f5a19c1cb21b463b159402ff89af52abf2c064baf4560e0cf85fe0",
+   "output_file": "Content/Extracted/MaterialDatabase/WoodFrames/WoodFrames/Texture2D/Woodframe_Diff.tga",
+   "output_sha256": "2da08749d0f5a19c1cb21b463b159402ff89af52abf2c064baf4560e0cf85fe0",
+   "uasset": "Content/Imported/MaterialDatabase/WoodFrames/Woodframe_Diff.uasset"
+  }
+ ]
+}

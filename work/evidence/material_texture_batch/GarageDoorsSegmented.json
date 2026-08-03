@@ -1,0 +1,102 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "GarageDoorsSegmented",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/FeatureMaterials/GarageDoorsSegmented.upk",
+ "source_sha256": "27d05e1d38f5a0de3a4a613567814f7cb769f6c75099a774dc8d605bbe3c9098",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/GarageDoorsSegmented.upk#GarageDoorsSegmented_DiffSpec",
+   "object": "GarageDoorsSegmented_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GarageDoorsSegmented/GarageDoorsSegmented/Texture2D/GarageDoorsSegmented_DiffSpec.tga",
+   "extracted_sha256": "ee801a2dd5dca804c41f7d6fc27396e7cf33a5620b61258acabd32baf8da22bb",
+   "output_file": "Content/Extracted/MaterialDatabase/GarageDoorsSegmented/GarageDoorsSegmented/Texture2D/GarageDoorsSegmented_DiffSpec.tga",
+   "output_sha256": "ee801a2dd5dca804c41f7d6fc27396e7cf33a5620b61258acabd32baf8da22bb",
+   "uasset": "Content/Imported/MaterialDatabase/GarageDoorsSegmented/GarageDoorsSegmented_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/GarageDoorsSegmented.upk#GarageDoorsSegmented_EmisGlassMask",
+   "object": "GarageDoorsSegmented_EmisGlassMask",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GarageDoorsSegmented/GarageDoorsSegmented/Texture2D/GarageDoorsSegmented_EmisGlassMask.tga",
+   "extracted_sha256": "cb7b8c7cfbbe6837cc6a2731bcc74df5cf5fd2d779ef3b8919ca15e126263256",
+   "output_file": "Content/Extracted/MaterialDatabase/GarageDoorsSegmented/GarageDoorsSegmented/Texture2D/GarageDoorsSegmented_EmisGlassMask.tga",
+   "output_sha256": "cb7b8c7cfbbe6837cc6a2731bcc74df5cf5fd2d779ef3b8919ca15e126263256",
+   "uasset": "Content/Imported/MaterialDatabase/GarageDoorsSegmented/GarageDoorsSegmented_EmisGlassMask.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/GarageDoorsSegmented.upk#GarageDoorsSegmented_Norm",
+   "object": "GarageDoorsSegmented_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GarageDoorsSegmented/GarageDoorsSegmented/Texture2D/GarageDoorsSegmented_Norm.tga",
+   "extracted_sha256": "1b8e996a8c304545f439da0620bd63b92372c1ca08bca3d693610319550c200d",
+   "output_file": "Content/Extracted/MaterialDatabase/GarageDoorsSegmented/GarageDoorsSegmented/Texture2D/GarageDoorsSegmented_Norm.tga",
+   "output_sha256": "1b8e996a8c304545f439da0620bd63b92372c1ca08bca3d693610319550c200d",
+   "uasset": "Content/Imported/MaterialDatabase/GarageDoorsSegmented/GarageDoorsSegmented_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/GarageDoorsSegmented.upk#GarageDoorsSegmented_Room",
+   "object": "GarageDoorsSegmented_Room",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GarageDoorsSegmented/GarageDoorsSegmented/Texture2D/GarageDoorsSegmented_Room.tga",
+   "extracted_sha256": "90d4023d05ee09cb54af808480c9f76ef646459a503116ba14aed0864efe3ed2",
+   "output_file": "Content/Extracted/MaterialDatabase/GarageDoorsSegmented/GarageDoorsSegmented/Texture2D/GarageDoorsSegmented_Room.tga",
+   "output_sha256": "90d4023d05ee09cb54af808480c9f76ef646459a503116ba14aed0864efe3ed2",
+   "uasset": "Content/Imported/MaterialDatabase/GarageDoorsSegmented/GarageDoorsSegmented_Room.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/GarageDoorsSegmented.upk#MI_GarageDoorsSegmented_Mat",
+   "object": "MI_GarageDoorsSegmented_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "GarageDoorsSegmented_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GarageDoorsSegmented/GarageDoorsSegmented/Texture2D/GarageDoorsSegmented_DiffSpec.tga",
+   "extracted_sha256": "ee801a2dd5dca804c41f7d6fc27396e7cf33a5620b61258acabd32baf8da22bb",
+   "output_file": "Content/Extracted/MaterialDatabase/GarageDoorsSegmented/GarageDoorsSegmented/Texture2D/GarageDoorsSegmented_DiffSpec.tga",
+   "output_sha256": "ee801a2dd5dca804c41f7d6fc27396e7cf33a5620b61258acabd32baf8da22bb",
+   "uasset": "Content/Imported/MaterialDatabase/GarageDoorsSegmented/MI_GarageDoorsSegmented_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/GarageDoorsSegmented.upk#MI_GarageDoorsSegmented_Mat_INST",
+   "object": "MI_GarageDoorsSegmented_Mat_INST",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "GarageDoorsSegmented_Mat_INST",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GarageDoorsSegmented/GarageDoorsSegmented/Texture2D/GarageDoorsSegmented_DiffSpec.tga",
+   "extracted_sha256": "ee801a2dd5dca804c41f7d6fc27396e7cf33a5620b61258acabd32baf8da22bb",
+   "output_file": "Content/Extracted/MaterialDatabase/GarageDoorsSegmented/GarageDoorsSegmented/Texture2D/GarageDoorsSegmented_DiffSpec.tga",
+   "output_sha256": "ee801a2dd5dca804c41f7d6fc27396e7cf33a5620b61258acabd32baf8da22bb",
+   "uasset": "Content/Imported/MaterialDatabase/GarageDoorsSegmented/MI_GarageDoorsSegmented_Mat_INST.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/GarageDoorsSegmented.upk#MI_GarageDoorsSegmented_Room_Mat",
+   "object": "MI_GarageDoorsSegmented_Room_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "GarageDoorsSegmented_Room_Mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/GarageDoorsSegmented/GarageDoorsSegmented/Texture2D/GarageDoorsSegmented_Room.tga",
+   "extracted_sha256": "90d4023d05ee09cb54af808480c9f76ef646459a503116ba14aed0864efe3ed2",
+   "output_file": "Content/Extracted/MaterialDatabase/GarageDoorsSegmented/GarageDoorsSegmented/Texture2D/GarageDoorsSegmented_Room.tga",
+   "output_sha256": "90d4023d05ee09cb54af808480c9f76ef646459a503116ba14aed0864efe3ed2",
+   "uasset": "Content/Imported/MaterialDatabase/GarageDoorsSegmented/MI_GarageDoorsSegmented_Room_Mat.uasset"
+  }
+ ]
+}

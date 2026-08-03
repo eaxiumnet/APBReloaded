@@ -1,0 +1,140 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "RWorld_NightclubTables",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/RWorldSocialDistrict/Props/RWorld_NightclubTables.upk",
+ "source_sha256": "3a52d89a72eb479edc911af71aafc56da888d4c74a259b4c511ae32fa5cdd5e6",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_NightclubTables.upk#MI_NightclubSkylight_MAT",
+   "object": "MI_NightclubSkylight_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "NightclubSkylight_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_NightclubTables/RWorld_NightclubTables/Texture2D/NightclubSkylight_Diff.tga",
+   "extracted_sha256": "40b14b4e5d7593c3b98802f11ebd781185825f37fb28edf3389d10f1230342e1",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_NightclubTables/RWorld_NightclubTables/Texture2D/NightclubSkylight_Diff.tga",
+   "output_sha256": "40b14b4e5d7593c3b98802f11ebd781185825f37fb28edf3389d10f1230342e1",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_NightclubTables/MI_NightclubSkylight_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_NightclubTables.upk#MI_NightclubTables_2_MAT",
+   "object": "MI_NightclubTables_2_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "NightclubTables_2_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_NightclubTables/RWorld_NightclubTables/Texture2D/NightclubTables_Diff.tga",
+   "extracted_sha256": "55b0aadd2cc39422cc321017718d664a0ffe27a9751cc5e4204bb9b16e6e577d",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_NightclubTables/RWorld_NightclubTables/Texture2D/NightclubTables_Diff.tga",
+   "output_sha256": "55b0aadd2cc39422cc321017718d664a0ffe27a9751cc5e4204bb9b16e6e577d",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_NightclubTables/MI_NightclubTables_2_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_NightclubTables.upk#MI_NightclubTables_MAT",
+   "object": "MI_NightclubTables_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "NightclubTables_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_NightclubTables/RWorld_NightclubTables/Texture2D/NightclubTables_Diff.tga",
+   "extracted_sha256": "55b0aadd2cc39422cc321017718d664a0ffe27a9751cc5e4204bb9b16e6e577d",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_NightclubTables/RWorld_NightclubTables/Texture2D/NightclubTables_Diff.tga",
+   "output_sha256": "55b0aadd2cc39422cc321017718d664a0ffe27a9751cc5e4204bb9b16e6e577d",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_NightclubTables/MI_NightclubTables_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_NightclubTables.upk#NightclubSkylight_Diff",
+   "object": "NightclubSkylight_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_NightclubTables/RWorld_NightclubTables/Texture2D/NightclubSkylight_Diff.tga",
+   "extracted_sha256": "40b14b4e5d7593c3b98802f11ebd781185825f37fb28edf3389d10f1230342e1",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_NightclubTables/RWorld_NightclubTables/Texture2D/NightclubSkylight_Diff.tga",
+   "output_sha256": "40b14b4e5d7593c3b98802f11ebd781185825f37fb28edf3389d10f1230342e1",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_NightclubTables/NightclubSkylight_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_NightclubTables.upk#NightclubSkylight_Emis",
+   "object": "NightclubSkylight_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_NightclubTables/RWorld_NightclubTables/Texture2D/NightclubSkylight_Emis.tga",
+   "extracted_sha256": "7d8961f2102177eb6a39595e84be406e568b080f63c1d0103b1121f43d0bd0ed",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_NightclubTables/RWorld_NightclubTables/Texture2D/NightclubSkylight_Emis.tga",
+   "output_sha256": "7d8961f2102177eb6a39595e84be406e568b080f63c1d0103b1121f43d0bd0ed",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_NightclubTables/NightclubSkylight_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_NightclubTables.upk#NightclubSkylight_Norm",
+   "object": "NightclubSkylight_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_NightclubTables/RWorld_NightclubTables/Texture2D/NightclubSkylight_Norm.tga",
+   "extracted_sha256": "de890b87ed25d6d8f584b305131dcc3af6b93d5c01377b905e4df00c87186b91",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_NightclubTables/RWorld_NightclubTables/Texture2D/NightclubSkylight_Norm.tga",
+   "output_sha256": "de890b87ed25d6d8f584b305131dcc3af6b93d5c01377b905e4df00c87186b91",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_NightclubTables/NightclubSkylight_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_NightclubTables.upk#NightclubTables_Diff",
+   "object": "NightclubTables_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_NightclubTables/RWorld_NightclubTables/Texture2D/NightclubTables_Diff.tga",
+   "extracted_sha256": "55b0aadd2cc39422cc321017718d664a0ffe27a9751cc5e4204bb9b16e6e577d",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_NightclubTables/RWorld_NightclubTables/Texture2D/NightclubTables_Diff.tga",
+   "output_sha256": "55b0aadd2cc39422cc321017718d664a0ffe27a9751cc5e4204bb9b16e6e577d",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_NightclubTables/NightclubTables_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_NightclubTables.upk#NightclubTables_Emis",
+   "object": "NightclubTables_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_NightclubTables/RWorld_NightclubTables/Texture2D/NightclubTables_Emis.tga",
+   "extracted_sha256": "76eed7b1891e114680f5dc8e899e7bd6b7340629885ac856d912e7c60ec3355f",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_NightclubTables/RWorld_NightclubTables/Texture2D/NightclubTables_Emis.tga",
+   "output_sha256": "76eed7b1891e114680f5dc8e899e7bd6b7340629885ac856d912e7c60ec3355f",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_NightclubTables/NightclubTables_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_NightclubTables.upk#NightclubTables_Emis_2",
+   "object": "NightclubTables_Emis_2",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_NightclubTables/RWorld_NightclubTables/Texture2D/NightclubTables_Emis_2.tga",
+   "extracted_sha256": "1d6d099b0ad8a95a38496bb0ec00e79e2155936167ce0f18232d2b9391389cfe",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_NightclubTables/RWorld_NightclubTables/Texture2D/NightclubTables_Emis_2.tga",
+   "output_sha256": "1d6d099b0ad8a95a38496bb0ec00e79e2155936167ce0f18232d2b9391389cfe",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_NightclubTables/NightclubTables_Emis_2.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_NightclubTables.upk#NightclubTables_Norm",
+   "object": "NightclubTables_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_NightclubTables/RWorld_NightclubTables/Texture2D/NightclubTables_Norm.tga",
+   "extracted_sha256": "a3a0a67d7a89bb4ccc85e5433bac07161ae5521abb4dcd94f1fdf9645235c696",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_NightclubTables/RWorld_NightclubTables/Texture2D/NightclubTables_Norm.tga",
+   "output_sha256": "a3a0a67d7a89bb4ccc85e5433bac07161ae5521abb4dcd94f1fdf9645235c696",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_NightclubTables/NightclubTables_Norm.uasset"
+  }
+ ]
+}

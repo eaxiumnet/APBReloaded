@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Terrain_Asphalt",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/ToBeRemoved/Terrain_Asphalt.upk",
+ "source_sha256": "adeda5606ee61a10843dfa4eedb9d1c98bb4e94bfe6784fd37215f32512b5fa7",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/ToBeRemoved/Terrain_Asphalt.upk#MI_Terrain_Asphalt_Mat",
+   "object": "MI_Terrain_Asphalt_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Terrain_Asphalt_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain_Asphalt/Terrain_Asphalt/Texture2D/Surface_GreyAsphalt_DiffSpec_Dup.tga",
+   "extracted_sha256": "9b0f283bb5c1074c95fa1862ff7e61c34c4ab1c6b7bac472ba903bfe1a40ad03",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain_Asphalt/Terrain_Asphalt/Texture2D/Surface_GreyAsphalt_DiffSpec_Dup.tga",
+   "output_sha256": "9b0f283bb5c1074c95fa1862ff7e61c34c4ab1c6b7bac472ba903bfe1a40ad03",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain_Asphalt/MI_Terrain_Asphalt_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/ToBeRemoved/Terrain_Asphalt.upk#Surface_GreyAsphalt_DiffSpec_Dup",
+   "object": "Surface_GreyAsphalt_DiffSpec_Dup",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain_Asphalt/Terrain_Asphalt/Texture2D/Surface_GreyAsphalt_DiffSpec_Dup.tga",
+   "extracted_sha256": "9b0f283bb5c1074c95fa1862ff7e61c34c4ab1c6b7bac472ba903bfe1a40ad03",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain_Asphalt/Terrain_Asphalt/Texture2D/Surface_GreyAsphalt_DiffSpec_Dup.tga",
+   "output_sha256": "9b0f283bb5c1074c95fa1862ff7e61c34c4ab1c6b7bac472ba903bfe1a40ad03",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain_Asphalt/Surface_GreyAsphalt_DiffSpec_Dup.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/ToBeRemoved/Terrain_Asphalt.upk#Surface_GreyAsphalt_NormDisp",
+   "object": "Surface_GreyAsphalt_NormDisp",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Terrain_Asphalt/Terrain_Asphalt/Texture2D/Surface_GreyAsphalt_NormDisp.tga",
+   "extracted_sha256": "f80d8d8814c3301f7c569651de309c4b831c5e661e72f4e6b9861de0db7d427b",
+   "output_file": "Content/Extracted/MaterialDatabase/Terrain_Asphalt/Terrain_Asphalt/Texture2D/Surface_GreyAsphalt_NormDisp.tga",
+   "output_sha256": "f80d8d8814c3301f7c569651de309c4b831c5e661e72f4e6b9861de0db7d427b",
+   "uasset": "Content/Imported/MaterialDatabase/Terrain_Asphalt/Surface_GreyAsphalt_NormDisp.uasset"
+  }
+ ]
+}

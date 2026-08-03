@@ -1,0 +1,60 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "CSD_FloorTiles",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/Floor/CSD_FloorTiles.upk",
+ "source_sha256": "1b82785d1360127a535d7bae0be060baee6c5870f549416e3b076b30da557409",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Floor/CSD_FloorTiles.upk#FloorTile_Old_Pool_Diff",
+   "object": "FloorTile_Old_Pool_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_FloorTiles/CSD_FloorTiles/Texture2D/FloorTile_Old_Pool_Diff.tga",
+   "extracted_sha256": "2dbaad8350746d3d97fbe978b2301010168e98fe6260336d01cbcbeec70866be",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_FloorTiles/CSD_FloorTiles/Texture2D/FloorTile_Old_Pool_Diff.tga",
+   "output_sha256": "2dbaad8350746d3d97fbe978b2301010168e98fe6260336d01cbcbeec70866be",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_FloorTiles/FloorTile_Old_Pool_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Floor/CSD_FloorTiles.upk#FloorTile_OldBlue_Diff",
+   "object": "FloorTile_OldBlue_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_FloorTiles/CSD_FloorTiles/Texture2D/FloorTile_OldBlue_Diff.tga",
+   "extracted_sha256": "59e360bb4bb1176be5c61be6cba67daefb553557312c46a5c5092b8998a039d7",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_FloorTiles/CSD_FloorTiles/Texture2D/FloorTile_OldBlue_Diff.tga",
+   "output_sha256": "59e360bb4bb1176be5c61be6cba67daefb553557312c46a5c5092b8998a039d7",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_FloorTiles/FloorTile_OldBlue_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Floor/CSD_FloorTiles.upk#MI_FloorTile_Old_Mat",
+   "object": "MI_FloorTile_Old_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FloorTile_Old_Mat",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_FloorTiles/CSD_FloorTiles/Texture2D/FloorTile_OldBlue_Diff.tga",
+   "extracted_sha256": "59e360bb4bb1176be5c61be6cba67daefb553557312c46a5c5092b8998a039d7",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_FloorTiles/CSD_FloorTiles/Texture2D/FloorTile_OldBlue_Diff.tga",
+   "output_sha256": "59e360bb4bb1176be5c61be6cba67daefb553557312c46a5c5092b8998a039d7",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_FloorTiles/MI_FloorTile_Old_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Floor/CSD_FloorTiles.upk#MI_FloorTile_PoolArea",
+   "object": "MI_FloorTile_PoolArea",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FloorTile_PoolArea",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_FloorTiles/CSD_FloorTiles/Texture2D/FloorTile_Old_Pool_Diff.tga",
+   "extracted_sha256": "2dbaad8350746d3d97fbe978b2301010168e98fe6260336d01cbcbeec70866be",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_FloorTiles/CSD_FloorTiles/Texture2D/FloorTile_Old_Pool_Diff.tga",
+   "output_sha256": "2dbaad8350746d3d97fbe978b2301010168e98fe6260336d01cbcbeec70866be",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_FloorTiles/MI_FloorTile_PoolArea.uasset"
+  }
+ ]
+}

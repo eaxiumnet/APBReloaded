@@ -1,0 +1,86 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "RWorld_Blimp",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/RWorldSocialDistrict/Props/RWorld_Blimp.upk",
+ "source_sha256": "f5bc1ac3430c1cc9b5734855230f06268d6e446e7d9100ed7a92df883627585a",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_Blimp.upk#Blimp_DiffSpec",
+   "object": "Blimp_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_Blimp/RWorld_Blimp/Texture2D/Blimp_DiffSpec.tga",
+   "extracted_sha256": "b7b05790f3a0c740b94fd38f9fd60886a64db556ef6c1566c13e403a7c21e25e",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_Blimp/RWorld_Blimp/Texture2D/Blimp_DiffSpec.tga",
+   "output_sha256": "b7b05790f3a0c740b94fd38f9fd60886a64db556ef6c1566c13e403a7c21e25e",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_Blimp/Blimp_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_Blimp.upk#Blimp_Norm",
+   "object": "Blimp_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_Blimp/RWorld_Blimp/Texture2D/Blimp_Norm.tga",
+   "extracted_sha256": "a50babdcee94791d61edef3f0d61481c475f822004a0e223f1b0b0fdf4ee6f55",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_Blimp/RWorld_Blimp/Texture2D/Blimp_Norm.tga",
+   "output_sha256": "a50babdcee94791d61edef3f0d61481c475f822004a0e223f1b0b0fdf4ee6f55",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_Blimp/Blimp_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_Blimp.upk#Blimp_Small_DiffSpec",
+   "object": "Blimp_Small_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_Blimp/RWorld_Blimp/Texture2D/Blimp_Small_DiffSpec.tga",
+   "extracted_sha256": "7f97f8ec12f6883a25339014f1513e869a86efa5f228e97e8de3a3c3df4ab68d",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_Blimp/RWorld_Blimp/Texture2D/Blimp_Small_DiffSpec.tga",
+   "output_sha256": "7f97f8ec12f6883a25339014f1513e869a86efa5f228e97e8de3a3c3df4ab68d",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_Blimp/Blimp_Small_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_Blimp.upk#Blimp_Small_Norm",
+   "object": "Blimp_Small_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_Blimp/RWorld_Blimp/Texture2D/Blimp_Small_Norm.tga",
+   "extracted_sha256": "b32fe5f9788c6d4730ace0e334666045026caefd55cf367d1067303476431e1b",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_Blimp/RWorld_Blimp/Texture2D/Blimp_Small_Norm.tga",
+   "output_sha256": "b32fe5f9788c6d4730ace0e334666045026caefd55cf367d1067303476431e1b",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_Blimp/Blimp_Small_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_Blimp.upk#MI_Blimp_Mat",
+   "object": "MI_Blimp_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Blimp_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_Blimp/RWorld_Blimp/Texture2D/Blimp_DiffSpec.tga",
+   "extracted_sha256": "b7b05790f3a0c740b94fd38f9fd60886a64db556ef6c1566c13e403a7c21e25e",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_Blimp/RWorld_Blimp/Texture2D/Blimp_DiffSpec.tga",
+   "output_sha256": "b7b05790f3a0c740b94fd38f9fd60886a64db556ef6c1566c13e403a7c21e25e",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_Blimp/MI_Blimp_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/RWorld_Blimp.upk#MI_Blimp_Small_MAT",
+   "object": "MI_Blimp_Small_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Blimp_Small_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RWorld_Blimp/RWorld_Blimp/Texture2D/Blimp_Small_DiffSpec.tga",
+   "extracted_sha256": "7f97f8ec12f6883a25339014f1513e869a86efa5f228e97e8de3a3c3df4ab68d",
+   "output_file": "Content/Extracted/MaterialDatabase/RWorld_Blimp/RWorld_Blimp/Texture2D/Blimp_Small_DiffSpec.tga",
+   "output_sha256": "7f97f8ec12f6883a25339014f1513e869a86efa5f228e97e8de3a3c3df4ab68d",
+   "uasset": "Content/Imported/MaterialDatabase/RWorld_Blimp/MI_Blimp_Small_MAT.uasset"
+  }
+ ]
+}

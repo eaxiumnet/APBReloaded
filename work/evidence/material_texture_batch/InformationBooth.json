@@ -1,0 +1,60 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "InformationBooth",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/InformationBooth.upk",
+ "source_sha256": "e8417be5f5c2697e63e3246014cfb02743100bbc4b41b6fb691fff043d35b1a1",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/InformationBooth.upk#InformationBooth_DiffSpec",
+   "object": "InformationBooth_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/InformationBooth/InformationBooth/Texture2D/InformationBooth_DiffSpec.tga",
+   "extracted_sha256": "175f4897ffc2b2342ffa38f105a476017f8dab04ece6aa4d078dfa2014ab972d",
+   "output_file": "Content/Extracted/MaterialDatabase/InformationBooth/InformationBooth/Texture2D/InformationBooth_DiffSpec.tga",
+   "output_sha256": "175f4897ffc2b2342ffa38f105a476017f8dab04ece6aa4d078dfa2014ab972d",
+   "uasset": "Content/Imported/MaterialDatabase/InformationBooth/InformationBooth_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/InformationBooth.upk#InformationBooth_Emis",
+   "object": "InformationBooth_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/InformationBooth/InformationBooth/Texture2D/InformationBooth_Emis.tga",
+   "extracted_sha256": "cd0931d60dc367cfd0d44c11bb2d01d13bce5fd243eb4193aee5060fdba3ac6b",
+   "output_file": "Content/Extracted/MaterialDatabase/InformationBooth/InformationBooth/Texture2D/InformationBooth_Emis.tga",
+   "output_sha256": "cd0931d60dc367cfd0d44c11bb2d01d13bce5fd243eb4193aee5060fdba3ac6b",
+   "uasset": "Content/Imported/MaterialDatabase/InformationBooth/InformationBooth_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/InformationBooth.upk#InformationBooth_Norm",
+   "object": "InformationBooth_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/InformationBooth/InformationBooth/Texture2D/InformationBooth_Norm.tga",
+   "extracted_sha256": "d1d89cdb76f90f6e5736b5c65bd5d6012f398b465dd63b140b21e54c81d93799",
+   "output_file": "Content/Extracted/MaterialDatabase/InformationBooth/InformationBooth/Texture2D/InformationBooth_Norm.tga",
+   "output_sha256": "d1d89cdb76f90f6e5736b5c65bd5d6012f398b465dd63b140b21e54c81d93799",
+   "uasset": "Content/Imported/MaterialDatabase/InformationBooth/InformationBooth_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/InformationBooth.upk#MI_InformationBooth_Mat",
+   "object": "MI_InformationBooth_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "InformationBooth_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/InformationBooth/InformationBooth/Texture2D/InformationBooth_DiffSpec.tga",
+   "extracted_sha256": "175f4897ffc2b2342ffa38f105a476017f8dab04ece6aa4d078dfa2014ab972d",
+   "output_file": "Content/Extracted/MaterialDatabase/InformationBooth/InformationBooth/Texture2D/InformationBooth_DiffSpec.tga",
+   "output_sha256": "175f4897ffc2b2342ffa38f105a476017f8dab04ece6aa4d078dfa2014ab972d",
+   "uasset": "Content/Imported/MaterialDatabase/InformationBooth/MI_InformationBooth_Mat.uasset"
+  }
+ ]
+}

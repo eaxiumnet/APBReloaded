@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Skips",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/Skips.upk",
+ "source_sha256": "799fe2986e327c6216f08cff87e9435bd4be448d6cd9978cdfe0e1d253875b78",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Skips.upk#MI_Skips_Mat",
+   "object": "MI_Skips_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Skips_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Skips/Skips/Texture2D/Skips_DiffSpec.tga",
+   "extracted_sha256": "59e1ebeda087949fd9c6257ede3b2a2443589fdbf9763fc110a6a294f06a49d5",
+   "output_file": "Content/Extracted/MaterialDatabase/Skips/Skips/Texture2D/Skips_DiffSpec.tga",
+   "output_sha256": "59e1ebeda087949fd9c6257ede3b2a2443589fdbf9763fc110a6a294f06a49d5",
+   "uasset": "Content/Imported/MaterialDatabase/Skips/MI_Skips_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Skips.upk#Skips_DiffSpec",
+   "object": "Skips_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Skips/Skips/Texture2D/Skips_DiffSpec.tga",
+   "extracted_sha256": "59e1ebeda087949fd9c6257ede3b2a2443589fdbf9763fc110a6a294f06a49d5",
+   "output_file": "Content/Extracted/MaterialDatabase/Skips/Skips/Texture2D/Skips_DiffSpec.tga",
+   "output_sha256": "59e1ebeda087949fd9c6257ede3b2a2443589fdbf9763fc110a6a294f06a49d5",
+   "uasset": "Content/Imported/MaterialDatabase/Skips/Skips_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Skips.upk#Skips_Norm",
+   "object": "Skips_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Skips/Skips/Texture2D/Skips_Norm.tga",
+   "extracted_sha256": "399e2800009e0d577f388a676f8862b948535111f6ee9a513ca8112f255980db",
+   "output_file": "Content/Extracted/MaterialDatabase/Skips/Skips/Texture2D/Skips_Norm.tga",
+   "output_sha256": "399e2800009e0d577f388a676f8862b948535111f6ee9a513ca8112f255980db",
+   "uasset": "Content/Imported/MaterialDatabase/Skips/Skips_Norm.uasset"
+  }
+ ]
+}

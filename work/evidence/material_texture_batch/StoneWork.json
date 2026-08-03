@@ -1,0 +1,130 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "StoneWork",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/StoneWork/StoneWork.upk",
+ "source_sha256": "8848610949a61cb2f3739a77c52b0769f3e559898e301b0b66e8712aeb7b0a76",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/StoneWork/StoneWork.upk#Brick_NRM",
+   "object": "Brick_NRM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StoneWork/StoneWork/Texture2D/Brick_NRM.tga",
+   "extracted_sha256": "2d2adc9fe232dde6903fb9e498c369e6b06eba6266a6ddd86e700ccf69a6f097",
+   "output_file": "Content/Extracted/MaterialDatabase/StoneWork/StoneWork/Texture2D/Brick_NRM.tga",
+   "output_sha256": "2d2adc9fe232dde6903fb9e498c369e6b06eba6266a6ddd86e700ccf69a6f097",
+   "uasset": "Content/Imported/MaterialDatabase/StoneWork/Brick_NRM.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/StoneWork/StoneWork.upk#Cement_DiffSpec",
+   "object": "Cement_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StoneWork/CSD_Cement/Texture2D/Cement_DiffSpec.tga",
+   "extracted_sha256": "0d4c5ef2e9ad7a6c5157fee8856d320ef89b2dc34a31c66e3758ffc855facb1d",
+   "output_file": "Content/Extracted/MaterialDatabase/StoneWork/CSD_Cement/Texture2D/Cement_DiffSpec.tga",
+   "output_sha256": "0d4c5ef2e9ad7a6c5157fee8856d320ef89b2dc34a31c66e3758ffc855facb1d",
+   "uasset": "Content/Imported/MaterialDatabase/StoneWork/Cement_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/StoneWork/StoneWork.upk#MI_RoofRidge",
+   "object": "MI_RoofRidge",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RoofRidge",
+   "texture_roles": [
+    "Diffuse",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StoneWork/CSD_Cement/Texture2D/Cement_DiffSpec.tga",
+   "extracted_sha256": "0d4c5ef2e9ad7a6c5157fee8856d320ef89b2dc34a31c66e3758ffc855facb1d",
+   "output_file": "Content/Extracted/MaterialDatabase/StoneWork/CSD_Cement/Texture2D/Cement_DiffSpec.tga",
+   "output_sha256": "0d4c5ef2e9ad7a6c5157fee8856d320ef89b2dc34a31c66e3758ffc855facb1d",
+   "uasset": "Content/Imported/MaterialDatabase/StoneWork/MI_RoofRidge.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/StoneWork/StoneWork.upk#MI_StoneDetails_Horizontal",
+   "object": "MI_StoneDetails_Horizontal",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StoneDetails_Horizontal",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StoneWork/CSD_Cement/Texture2D/Cement_DiffSpec.tga",
+   "extracted_sha256": "0d4c5ef2e9ad7a6c5157fee8856d320ef89b2dc34a31c66e3758ffc855facb1d",
+   "output_file": "Content/Extracted/MaterialDatabase/StoneWork/CSD_Cement/Texture2D/Cement_DiffSpec.tga",
+   "output_sha256": "0d4c5ef2e9ad7a6c5157fee8856d320ef89b2dc34a31c66e3758ffc855facb1d",
+   "uasset": "Content/Imported/MaterialDatabase/StoneWork/MI_StoneDetails_Horizontal.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/StoneWork/StoneWork.upk#MI_StoneDetails_Verticle",
+   "object": "MI_StoneDetails_Verticle",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StoneDetails_Verticle",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StoneWork/CSD_Cement/Texture2D/Cement_DiffSpec.tga",
+   "extracted_sha256": "0d4c5ef2e9ad7a6c5157fee8856d320ef89b2dc34a31c66e3758ffc855facb1d",
+   "output_file": "Content/Extracted/MaterialDatabase/StoneWork/CSD_Cement/Texture2D/Cement_DiffSpec.tga",
+   "output_sha256": "0d4c5ef2e9ad7a6c5157fee8856d320ef89b2dc34a31c66e3758ffc855facb1d",
+   "uasset": "Content/Imported/MaterialDatabase/StoneWork/MI_StoneDetails_Verticle.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/StoneWork/StoneWork.upk#MI_StoneFountain",
+   "object": "MI_StoneFountain",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "StoneFountain",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StoneWork/CSD_Cement/Texture2D/Cement_DiffSpec.tga",
+   "extracted_sha256": "0d4c5ef2e9ad7a6c5157fee8856d320ef89b2dc34a31c66e3758ffc855facb1d",
+   "output_file": "Content/Extracted/MaterialDatabase/StoneWork/CSD_Cement/Texture2D/Cement_DiffSpec.tga",
+   "output_sha256": "0d4c5ef2e9ad7a6c5157fee8856d320ef89b2dc34a31c66e3758ffc855facb1d",
+   "uasset": "Content/Imported/MaterialDatabase/StoneWork/MI_StoneFountain.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/StoneWork/StoneWork.upk#MI_YearStamp",
+   "object": "MI_YearStamp",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "YearStamp",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StoneWork/CSD_Cement/Texture2D/Cement_DiffSpec.tga",
+   "extracted_sha256": "0d4c5ef2e9ad7a6c5157fee8856d320ef89b2dc34a31c66e3758ffc855facb1d",
+   "output_file": "Content/Extracted/MaterialDatabase/StoneWork/CSD_Cement/Texture2D/Cement_DiffSpec.tga",
+   "output_sha256": "0d4c5ef2e9ad7a6c5157fee8856d320ef89b2dc34a31c66e3758ffc855facb1d",
+   "uasset": "Content/Imported/MaterialDatabase/StoneWork/MI_YearStamp.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/StoneWork/StoneWork.upk#RoofRidge01_DiffAlpha",
+   "object": "RoofRidge01_DiffAlpha",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StoneWork/StoneWork/Texture2D/RoofRidge01_DiffAlpha.tga",
+   "extracted_sha256": "413f4e6f3e4905a9d0c1724b201e176b6a21975a1e2f911bb267e70b18dfc6e6",
+   "output_file": "Content/Extracted/MaterialDatabase/StoneWork/StoneWork/Texture2D/RoofRidge01_DiffAlpha.tga",
+   "output_sha256": "413f4e6f3e4905a9d0c1724b201e176b6a21975a1e2f911bb267e70b18dfc6e6",
+   "uasset": "Content/Imported/MaterialDatabase/StoneWork/RoofRidge01_DiffAlpha.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/StoneWork/StoneWork.upk#YearStamp_NormAlpha",
+   "object": "YearStamp_NormAlpha",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/StoneWork/StoneWork/Texture2D/YearStamp_NormAlpha.tga",
+   "extracted_sha256": "4ff86540c9bbe28d0d007cc2e032afa68c70606b2ed42f1be7765ffb055c2a76",
+   "output_file": "Content/Extracted/MaterialDatabase/StoneWork/StoneWork/Texture2D/YearStamp_NormAlpha.tga",
+   "output_sha256": "4ff86540c9bbe28d0d007cc2e032afa68c70606b2ed42f1be7765ffb055c2a76",
+   "uasset": "Content/Imported/MaterialDatabase/StoneWork/YearStamp_NormAlpha.uasset"
+  }
+ ]
+}

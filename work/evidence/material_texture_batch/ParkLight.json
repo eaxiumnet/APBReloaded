@@ -1,0 +1,89 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "ParkLight",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/ParkLight.upk",
+ "source_sha256": "3269dd87a69c51b36d91845c8f3f1bd986d07e8aade2de04edfc79ba7c5a94bb",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/ParkLight.upk#MI_ParkLight_Damage_Mat",
+   "object": "MI_ParkLight_Damage_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "ParkLight_Damage_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ParkLight/ParkLight/Texture2D/ParkLight_DiffSpec.tga",
+   "extracted_sha256": "8a613d189d92e0c93b7b9b6f0efb06fdf22c599bf2b5fdf93e50a6c36ee7e739",
+   "output_file": "Content/Extracted/MaterialDatabase/ParkLight/ParkLight/Texture2D/ParkLight_DiffSpec.tga",
+   "output_sha256": "8a613d189d92e0c93b7b9b6f0efb06fdf22c599bf2b5fdf93e50a6c36ee7e739",
+   "uasset": "Content/Imported/MaterialDatabase/ParkLight/MI_ParkLight_Damage_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/ParkLight.upk#MI_ParkLight_MAT",
+   "object": "MI_ParkLight_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "ParkLight_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ParkLight/ParkLight/Texture2D/ParkLight_DiffSpec.tga",
+   "extracted_sha256": "8a613d189d92e0c93b7b9b6f0efb06fdf22c599bf2b5fdf93e50a6c36ee7e739",
+   "output_file": "Content/Extracted/MaterialDatabase/ParkLight/ParkLight/Texture2D/ParkLight_DiffSpec.tga",
+   "output_sha256": "8a613d189d92e0c93b7b9b6f0efb06fdf22c599bf2b5fdf93e50a6c36ee7e739",
+   "uasset": "Content/Imported/MaterialDatabase/ParkLight/MI_ParkLight_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/ParkLight.upk#ParkLight_DiffSpec",
+   "object": "ParkLight_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ParkLight/ParkLight/Texture2D/ParkLight_DiffSpec.tga",
+   "extracted_sha256": "8a613d189d92e0c93b7b9b6f0efb06fdf22c599bf2b5fdf93e50a6c36ee7e739",
+   "output_file": "Content/Extracted/MaterialDatabase/ParkLight/ParkLight/Texture2D/ParkLight_DiffSpec.tga",
+   "output_sha256": "8a613d189d92e0c93b7b9b6f0efb06fdf22c599bf2b5fdf93e50a6c36ee7e739",
+   "uasset": "Content/Imported/MaterialDatabase/ParkLight/ParkLight_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/ParkLight.upk#ParkLight_Emis",
+   "object": "ParkLight_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ParkLight/ParkLight/Texture2D/ParkLight_Emis.tga",
+   "extracted_sha256": "96c7b57e766391bf8b48c60f71b67d92869123559a3767293e18685b4d89044c",
+   "output_file": "Content/Extracted/MaterialDatabase/ParkLight/ParkLight/Texture2D/ParkLight_Emis.tga",
+   "output_sha256": "96c7b57e766391bf8b48c60f71b67d92869123559a3767293e18685b4d89044c",
+   "uasset": "Content/Imported/MaterialDatabase/ParkLight/ParkLight_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/ParkLight.upk#ParkLight_Norm",
+   "object": "ParkLight_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ParkLight/ParkLight/Texture2D/ParkLight_Norm.tga",
+   "extracted_sha256": "6f7345b51fc534865c6f75fd560237e72a89ade60882ad7da8fb68bddcf33b2f",
+   "output_file": "Content/Extracted/MaterialDatabase/ParkLight/ParkLight/Texture2D/ParkLight_Norm.tga",
+   "output_sha256": "6f7345b51fc534865c6f75fd560237e72a89ade60882ad7da8fb68bddcf33b2f",
+   "uasset": "Content/Imported/MaterialDatabase/ParkLight/ParkLight_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/ParkLight.upk#ParkLight_Opac",
+   "object": "ParkLight_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ParkLight/ParkLight/Texture2D/ParkLight_Opac.tga",
+   "extracted_sha256": "f4162f33b036718619672a1da72acb927366f1609841874f8d8da8c245862541",
+   "output_file": "Content/Extracted/MaterialDatabase/ParkLight/ParkLight/Texture2D/ParkLight_Opac.tga",
+   "output_sha256": "f4162f33b036718619672a1da72acb927366f1609841874f8d8da8c245862541",
+   "uasset": "Content/Imported/MaterialDatabase/ParkLight/ParkLight_Opac.uasset"
+  }
+ ]
+}

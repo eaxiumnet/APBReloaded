@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FinancialConcreteCrucible",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/PropMaterials/FinancialConcreteCrucible.upk",
+ "source_sha256": "7ed4441e74bc9cdab3064cc1008e8cb7cf84d36e2c0d2a777a7a93a575b71a1d",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialConcreteCrucible.upk#FinancialConcreteCrucible_DiffSpec",
+   "object": "FinancialConcreteCrucible_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialConcreteCrucible/FinancialConcreteCrucible/Texture2D/FinancialConcreteCrucible_DiffSpec.tga",
+   "extracted_sha256": "055081688126dfa3ad8a94c94199c31699069a8077095229f3eee2b192d2d070",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialConcreteCrucible/FinancialConcreteCrucible/Texture2D/FinancialConcreteCrucible_DiffSpec.tga",
+   "output_sha256": "055081688126dfa3ad8a94c94199c31699069a8077095229f3eee2b192d2d070",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialConcreteCrucible/FinancialConcreteCrucible_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialConcreteCrucible.upk#FinancialConcreteCrucible_Norm",
+   "object": "FinancialConcreteCrucible_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialConcreteCrucible/FinancialConcreteCrucible/Texture2D/FinancialConcreteCrucible_Norm.tga",
+   "extracted_sha256": "a898ef737c84057082d88c6ec75a22cf20a959c141d2b165108e2b85e9a74886",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialConcreteCrucible/FinancialConcreteCrucible/Texture2D/FinancialConcreteCrucible_Norm.tga",
+   "output_sha256": "a898ef737c84057082d88c6ec75a22cf20a959c141d2b165108e2b85e9a74886",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialConcreteCrucible/FinancialConcreteCrucible_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialConcreteCrucible.upk#MI_FinancialConcreteCrucible_Mat",
+   "object": "MI_FinancialConcreteCrucible_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialConcreteCrucible_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialConcreteCrucible/FinancialConcreteCrucible/Texture2D/FinancialConcreteCrucible_DiffSpec.tga",
+   "extracted_sha256": "055081688126dfa3ad8a94c94199c31699069a8077095229f3eee2b192d2d070",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialConcreteCrucible/FinancialConcreteCrucible/Texture2D/FinancialConcreteCrucible_DiffSpec.tga",
+   "output_sha256": "055081688126dfa3ad8a94c94199c31699069a8077095229f3eee2b192d2d070",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialConcreteCrucible/MI_FinancialConcreteCrucible_Mat.uasset"
+  }
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "ConcreteBarrier",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/ProvingGrounds/PropMaterials/ConcreteBarrier.upk",
+ "source_sha256": "f0ca415ec627c55d7bb0278fe8c76fb93c522625dd869cb4cb53526bec3776be",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/ProvingGrounds/PropMaterials/ConcreteBarrier.upk#ConcreteBarrier_Diff",
+   "object": "ConcreteBarrier_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ConcreteBarrier/ConcreteBarrier/Texture2D/ConcreteBarrier_Diff.tga",
+   "extracted_sha256": "e37bbd827bf5cdb0956047da1b47c6f098b78fa9a2496099ed20d9811602f40d",
+   "output_file": "Content/Extracted/MaterialDatabase/ConcreteBarrier/ConcreteBarrier/Texture2D/ConcreteBarrier_Diff.tga",
+   "output_sha256": "e37bbd827bf5cdb0956047da1b47c6f098b78fa9a2496099ed20d9811602f40d",
+   "uasset": "Content/Imported/MaterialDatabase/ConcreteBarrier/ConcreteBarrier_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/ProvingGrounds/PropMaterials/ConcreteBarrier.upk#ConcreteBarrier_Norm",
+   "object": "ConcreteBarrier_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ConcreteBarrier/ConcreteBarrier/Texture2D/ConcreteBarrier_Norm.tga",
+   "extracted_sha256": "f8b97b5f57ee5c149eae21bb85d62956993e25c62e9ba82e4b0d7e129b352353",
+   "output_file": "Content/Extracted/MaterialDatabase/ConcreteBarrier/ConcreteBarrier/Texture2D/ConcreteBarrier_Norm.tga",
+   "output_sha256": "f8b97b5f57ee5c149eae21bb85d62956993e25c62e9ba82e4b0d7e129b352353",
+   "uasset": "Content/Imported/MaterialDatabase/ConcreteBarrier/ConcreteBarrier_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/ProvingGrounds/PropMaterials/ConcreteBarrier.upk#MI_ConcreteBarrier_Mat",
+   "object": "MI_ConcreteBarrier_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "ConcreteBarrier_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ConcreteBarrier/ConcreteBarrier/Texture2D/ConcreteBarrier_Diff.tga",
+   "extracted_sha256": "e37bbd827bf5cdb0956047da1b47c6f098b78fa9a2496099ed20d9811602f40d",
+   "output_file": "Content/Extracted/MaterialDatabase/ConcreteBarrier/ConcreteBarrier/Texture2D/ConcreteBarrier_Diff.tga",
+   "output_sha256": "e37bbd827bf5cdb0956047da1b47c6f098b78fa9a2496099ed20d9811602f40d",
+   "uasset": "Content/Imported/MaterialDatabase/ConcreteBarrier/MI_ConcreteBarrier_Mat.uasset"
+  }
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Garage",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/EnforcerSocialDistrict/PropMaterials/Garage.upk",
+ "source_sha256": "2363b576fb7a1277031b5bc12fadcaae5593e2c9b3ed2cbc1fa57723a1497d9e",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/Garage.upk#Car_Jack_DIFF",
+   "object": "Car_Jack_DIFF",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Garage/Garage/Texture2D/Car_Jack_DIFF.tga",
+   "extracted_sha256": "9032b7bd5257fb761a8fcb2ee02fc1e8edc6f5134e3bbe92cafcc5b34ad909ad",
+   "output_file": "Content/Extracted/MaterialDatabase/Garage/Garage/Texture2D/Car_Jack_DIFF.tga",
+   "output_sha256": "9032b7bd5257fb761a8fcb2ee02fc1e8edc6f5134e3bbe92cafcc5b34ad909ad",
+   "uasset": "Content/Imported/MaterialDatabase/Garage/Car_Jack_DIFF.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/Garage.upk#Car_Jack_NRM",
+   "object": "Car_Jack_NRM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Garage/Garage/Texture2D/Car_Jack_NRM.tga",
+   "extracted_sha256": "02b762b576b663873b93c618ccdbeac9ade20d7777a31749dd303f4cad46bb99",
+   "output_file": "Content/Extracted/MaterialDatabase/Garage/Garage/Texture2D/Car_Jack_NRM.tga",
+   "output_sha256": "02b762b576b663873b93c618ccdbeac9ade20d7777a31749dd303f4cad46bb99",
+   "uasset": "Content/Imported/MaterialDatabase/Garage/Car_Jack_NRM.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/EnforcerSocialDistrict/PropMaterials/Garage.upk#MI_CarJack_Material",
+   "object": "MI_CarJack_Material",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CarJack_Material",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Garage/Garage/Texture2D/Car_Jack_DIFF.tga",
+   "extracted_sha256": "9032b7bd5257fb761a8fcb2ee02fc1e8edc6f5134e3bbe92cafcc5b34ad909ad",
+   "output_file": "Content/Extracted/MaterialDatabase/Garage/Garage/Texture2D/Car_Jack_DIFF.tga",
+   "output_sha256": "9032b7bd5257fb761a8fcb2ee02fc1e8edc6f5134e3bbe92cafcc5b34ad909ad",
+   "uasset": "Content/Imported/MaterialDatabase/Garage/MI_CarJack_Material.uasset"
+  }
+ ]
+}

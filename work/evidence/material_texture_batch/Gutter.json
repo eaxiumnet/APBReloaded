@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Gutter",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/MiscMaterials/Gutter.upk",
+ "source_sha256": "9f6bda37e38c9350f2fb6a4a2c7ad31fb79c095482d366a1f857215040670fef",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/MiscMaterials/Gutter.upk#Gutter_DiffSpec",
+   "object": "Gutter_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Gutter/Gutter/Texture2D/Gutter_DiffSpec.tga",
+   "extracted_sha256": "e09df59a38461be8d342329f185af3c196adabdaeb0c6e8a894ac680d4244926",
+   "output_file": "Content/Extracted/MaterialDatabase/Gutter/Gutter/Texture2D/Gutter_DiffSpec.tga",
+   "output_sha256": "e09df59a38461be8d342329f185af3c196adabdaeb0c6e8a894ac680d4244926",
+   "uasset": "Content/Imported/MaterialDatabase/Gutter/Gutter_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/MiscMaterials/Gutter.upk#Gutter_Norm",
+   "object": "Gutter_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Gutter/Gutter/Texture2D/Gutter_Norm.tga",
+   "extracted_sha256": "9538341a85abffaf394d471721458a1bc5a9ad4b270048ea5b38ceb5d0359e79",
+   "output_file": "Content/Extracted/MaterialDatabase/Gutter/Gutter/Texture2D/Gutter_Norm.tga",
+   "output_sha256": "9538341a85abffaf394d471721458a1bc5a9ad4b270048ea5b38ceb5d0359e79",
+   "uasset": "Content/Imported/MaterialDatabase/Gutter/Gutter_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/MiscMaterials/Gutter.upk#MI_Gutter_Mat",
+   "object": "MI_Gutter_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Gutter_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Gutter/Gutter/Texture2D/Gutter_DiffSpec.tga",
+   "extracted_sha256": "e09df59a38461be8d342329f185af3c196adabdaeb0c6e8a894ac680d4244926",
+   "output_file": "Content/Extracted/MaterialDatabase/Gutter/Gutter/Texture2D/Gutter_DiffSpec.tga",
+   "output_sha256": "e09df59a38461be8d342329f185af3c196adabdaeb0c6e8a894ac680d4244926",
+   "uasset": "Content/Imported/MaterialDatabase/Gutter/MI_Gutter_Mat.uasset"
+  }
+ ]
+}

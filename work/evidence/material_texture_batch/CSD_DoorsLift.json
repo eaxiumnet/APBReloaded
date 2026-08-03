@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "CSD_DoorsLift",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/FeatureMaterials/CSD_DoorsLift.upk",
+ "source_sha256": "93c57c16829c67f64bc01d57508e441002ce59740845603bf85958c51909b223",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/FeatureMaterials/CSD_DoorsLift.upk#CSD_DoorsLift_DiffSpec",
+   "object": "CSD_DoorsLift_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_DoorsLift/CSD_DoorsLift/Texture2D/CSD_DoorsLift_DiffSpec.tga",
+   "extracted_sha256": "5fe4356efc07e7c652299d3aef1b203583cace061d42f5d42d028a112390c5aa",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_DoorsLift/CSD_DoorsLift/Texture2D/CSD_DoorsLift_DiffSpec.tga",
+   "output_sha256": "5fe4356efc07e7c652299d3aef1b203583cace061d42f5d42d028a112390c5aa",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_DoorsLift/CSD_DoorsLift_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/FeatureMaterials/CSD_DoorsLift.upk#CSD_DoorsLift_Norm",
+   "object": "CSD_DoorsLift_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_DoorsLift/CSD_DoorsLift/Texture2D/CSD_DoorsLift_Norm.tga",
+   "extracted_sha256": "14b08ba0982fe3a334d3d1b7aa54dc4259cd4819e71d365c505923162c1966e7",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_DoorsLift/CSD_DoorsLift/Texture2D/CSD_DoorsLift_Norm.tga",
+   "output_sha256": "14b08ba0982fe3a334d3d1b7aa54dc4259cd4819e71d365c505923162c1966e7",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_DoorsLift/CSD_DoorsLift_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/FeatureMaterials/CSD_DoorsLift.upk#MI_CSD_DoorsLift_MAT",
+   "object": "MI_CSD_DoorsLift_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CSD_DoorsLift_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_DoorsLift/CSD_DoorsLift/Texture2D/CSD_DoorsLift_DiffSpec.tga",
+   "extracted_sha256": "5fe4356efc07e7c652299d3aef1b203583cace061d42f5d42d028a112390c5aa",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_DoorsLift/CSD_DoorsLift/Texture2D/CSD_DoorsLift_DiffSpec.tga",
+   "output_sha256": "5fe4356efc07e7c652299d3aef1b203583cace061d42f5d42d028a112390c5aa",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_DoorsLift/MI_CSD_DoorsLift_MAT.uasset"
+  }
+ ]
+}

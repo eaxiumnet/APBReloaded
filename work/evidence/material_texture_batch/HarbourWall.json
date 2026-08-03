@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "HarbourWall",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/WaterfrontDistrict/HarbourWall.upk",
+ "source_sha256": "20956a9f15c6efb813dffc49d7ca16b341e2dcd7a074fddb4528d50717d5c1e7",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/HarbourWall.upk#HarbourWall_DiffSpec",
+   "object": "HarbourWall_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/HarbourWall/HarbourWall/Texture2D/HarbourWall_DiffSpec.tga",
+   "extracted_sha256": "de45d7f9a26925bbe23d5e27c6932b952ec67ee882d69e34c691d32c5a3f4fdb",
+   "output_file": "Content/Extracted/MaterialDatabase/HarbourWall/HarbourWall/Texture2D/HarbourWall_DiffSpec.tga",
+   "output_sha256": "de45d7f9a26925bbe23d5e27c6932b952ec67ee882d69e34c691d32c5a3f4fdb",
+   "uasset": "Content/Imported/MaterialDatabase/HarbourWall/HarbourWall_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/HarbourWall.upk#HarbourWall_Norm",
+   "object": "HarbourWall_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/HarbourWall/HarbourWall/Texture2D/HarbourWall_Norm.tga",
+   "extracted_sha256": "fdb4e81b91bf49bdd352b0ad23dc113617b43316cb6520afc2d6e8e737fbbe3c",
+   "output_file": "Content/Extracted/MaterialDatabase/HarbourWall/HarbourWall/Texture2D/HarbourWall_Norm.tga",
+   "output_sha256": "fdb4e81b91bf49bdd352b0ad23dc113617b43316cb6520afc2d6e8e737fbbe3c",
+   "uasset": "Content/Imported/MaterialDatabase/HarbourWall/HarbourWall_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/HarbourWall.upk#MI_HarbourWall",
+   "object": "MI_HarbourWall",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "HarbourWall",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/HarbourWall/HarbourWall/Texture2D/HarbourWall_DiffSpec.tga",
+   "extracted_sha256": "de45d7f9a26925bbe23d5e27c6932b952ec67ee882d69e34c691d32c5a3f4fdb",
+   "output_file": "Content/Extracted/MaterialDatabase/HarbourWall/HarbourWall/Texture2D/HarbourWall_DiffSpec.tga",
+   "output_sha256": "de45d7f9a26925bbe23d5e27c6932b952ec67ee882d69e34c691d32c5a3f4fdb",
+   "uasset": "Content/Imported/MaterialDatabase/HarbourWall/MI_HarbourWall.uasset"
+  }
+ ]
+}

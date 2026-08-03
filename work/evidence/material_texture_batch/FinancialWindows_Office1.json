@@ -1,0 +1,60 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FinancialWindows_Office1",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialWindows_Office1.upk",
+ "source_sha256": "92b13d10b1e3d403f2c7b0575d9174cd5ebedf47ae680154d5168174d4ad894b",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialWindows_Office1.upk#FinancialWindows_Office1_DiffSpec",
+   "object": "FinancialWindows_Office1_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialWindows_Office1/FinancialWindows_Office1/Texture2D/FinancialWindows_Office1_DiffSpec.tga",
+   "extracted_sha256": "c3def1ef3d9a753d349dbd507eb12dbf82b5d8453bab7005fa1d635cab9754af",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialWindows_Office1/FinancialWindows_Office1/Texture2D/FinancialWindows_Office1_DiffSpec.tga",
+   "output_sha256": "c3def1ef3d9a753d349dbd507eb12dbf82b5d8453bab7005fa1d635cab9754af",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialWindows_Office1/FinancialWindows_Office1_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialWindows_Office1.upk#FinancialWindows_Office1_Emis",
+   "object": "FinancialWindows_Office1_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialWindows_Office1/FinancialWindows_Office1/Texture2D/FinancialWindows_Office1_Emis.tga",
+   "extracted_sha256": "05e53c2b54702356b3357d7151243cbb7d8e164ee3d4d2f1f5c2108488db8d77",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialWindows_Office1/FinancialWindows_Office1/Texture2D/FinancialWindows_Office1_Emis.tga",
+   "output_sha256": "05e53c2b54702356b3357d7151243cbb7d8e164ee3d4d2f1f5c2108488db8d77",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialWindows_Office1/FinancialWindows_Office1_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialWindows_Office1.upk#FinancialWindows_Office1_Norm",
+   "object": "FinancialWindows_Office1_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialWindows_Office1/FinancialWindows_Office1/Texture2D/FinancialWindows_Office1_Norm.tga",
+   "extracted_sha256": "d29b6e7f99fe41bdad6e6fb394aab2ca9ba328839e46c6b5618ed2a42b243d12",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialWindows_Office1/FinancialWindows_Office1/Texture2D/FinancialWindows_Office1_Norm.tga",
+   "output_sha256": "d29b6e7f99fe41bdad6e6fb394aab2ca9ba328839e46c6b5618ed2a42b243d12",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialWindows_Office1/FinancialWindows_Office1_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialWindows_Office1.upk#MI_FinancialWindows_Office1_Mat",
+   "object": "MI_FinancialWindows_Office1_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialWindows_Office1_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialWindows_Office1/FinancialWindows_Office1/Texture2D/FinancialWindows_Office1_DiffSpec.tga",
+   "extracted_sha256": "c3def1ef3d9a753d349dbd507eb12dbf82b5d8453bab7005fa1d635cab9754af",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialWindows_Office1/FinancialWindows_Office1/Texture2D/FinancialWindows_Office1_DiffSpec.tga",
+   "output_sha256": "c3def1ef3d9a753d349dbd507eb12dbf82b5d8453bab7005fa1d635cab9754af",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialWindows_Office1/MI_FinancialWindows_Office1_Mat.uasset"
+  }
+ ]
+}

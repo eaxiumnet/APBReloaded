@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FactionLogoAPB",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/SocialDistrict/PropMaterials/FactionLogoAPB.upk",
+ "source_sha256": "875da04c40891c6199896f0fa38193ec30a49c0f731cddc839f38dbe7782edc6",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/FactionLogoAPB.upk#FactionLogoDecals_02",
+   "object": "FactionLogoDecals_02",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FactionLogoAPB/FactionLogoAPB/Texture2D/FactionLogoDecals_02.tga",
+   "extracted_sha256": "a2d35d112882083ba80fb42f1e273b0e6c6c4f7d88c31ef623605e821cde38af",
+   "output_file": "Content/Extracted/MaterialDatabase/FactionLogoAPB/FactionLogoAPB/Texture2D/FactionLogoDecals_02.tga",
+   "output_sha256": "a2d35d112882083ba80fb42f1e273b0e6c6c4f7d88c31ef623605e821cde38af",
+   "uasset": "Content/Imported/MaterialDatabase/FactionLogoAPB/FactionLogoDecals_02.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/FactionLogoAPB.upk#FactionLogoDecals_02_EMIS",
+   "object": "FactionLogoDecals_02_EMIS",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FactionLogoAPB/FactionLogoAPB/Texture2D/FactionLogoDecals_02_EMIS.tga",
+   "extracted_sha256": "d8dc306b8c7acc6bd05bb09c243863cc13460c1b9799d52cde9cd29ffcf753d8",
+   "output_file": "Content/Extracted/MaterialDatabase/FactionLogoAPB/FactionLogoAPB/Texture2D/FactionLogoDecals_02_EMIS.tga",
+   "output_sha256": "d8dc306b8c7acc6bd05bb09c243863cc13460c1b9799d52cde9cd29ffcf753d8",
+   "uasset": "Content/Imported/MaterialDatabase/FactionLogoAPB/FactionLogoDecals_02_EMIS.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/SocialDistrict/PropMaterials/FactionLogoAPB.upk#MI_FactionLogoAPB",
+   "object": "MI_FactionLogoAPB",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FactionLogoAPB",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FactionLogoAPB/FactionLogoAPB/Texture2D/FactionLogoDecals_02.tga",
+   "extracted_sha256": "a2d35d112882083ba80fb42f1e273b0e6c6c4f7d88c31ef623605e821cde38af",
+   "output_file": "Content/Extracted/MaterialDatabase/FactionLogoAPB/FactionLogoAPB/Texture2D/FactionLogoDecals_02.tga",
+   "output_sha256": "a2d35d112882083ba80fb42f1e273b0e6c6c4f7d88c31ef623605e821cde38af",
+   "uasset": "Content/Imported/MaterialDatabase/FactionLogoAPB/MI_FactionLogoAPB.uasset"
+  }
+ ]
+}

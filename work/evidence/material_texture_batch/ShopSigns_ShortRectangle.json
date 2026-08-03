@@ -1,0 +1,88 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "ShopSigns_ShortRectangle",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/FeatureMaterials/ShopSigns_ShortRectangle.upk",
+ "source_sha256": "51271351f419fa72f4fdcf21cdb667742155f8c75855ccae305f8892253c9659",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/ShopSigns_ShortRectangle.upk#MI_ShopSign_Shop_Clothing5_MAT",
+   "object": "MI_ShopSign_Shop_Clothing5_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "ShopSign_Shop_Clothing5_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ShopSigns_ShortRectangle/ShopSigns_ShortRectangle/Texture2D/ShopSigns_ShortRectangle_Clothing5_DiffSpec.tga",
+   "extracted_sha256": "b7945388b1743472d739db51bb396b401219f4a0aae1ae58a943348b01dd5e52",
+   "output_file": "Content/Extracted/MaterialDatabase/ShopSigns_ShortRectangle/ShopSigns_ShortRectangle/Texture2D/ShopSigns_ShortRectangle_Clothing5_DiffSpec.tga",
+   "output_sha256": "b7945388b1743472d739db51bb396b401219f4a0aae1ae58a943348b01dd5e52",
+   "uasset": "Content/Imported/MaterialDatabase/ShopSigns_ShortRectangle/MI_ShopSign_Shop_Clothing5_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/ShopSigns_ShortRectangle.upk#MI_ShopSign_Shop_Jewellery5_MAT_INST",
+   "object": "MI_ShopSign_Shop_Jewellery5_MAT_INST",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "ShopSign_Shop_Jewellery5_MAT_INST",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ShopSigns_ShortRectangle/ShopSigns_ShortRectangle/Texture2D/ShopSigns_ShortRectangle_Clothing5_DiffSpec.tga",
+   "extracted_sha256": "b7945388b1743472d739db51bb396b401219f4a0aae1ae58a943348b01dd5e52",
+   "output_file": "Content/Extracted/MaterialDatabase/ShopSigns_ShortRectangle/ShopSigns_ShortRectangle/Texture2D/ShopSigns_ShortRectangle_Clothing5_DiffSpec.tga",
+   "output_sha256": "b7945388b1743472d739db51bb396b401219f4a0aae1ae58a943348b01dd5e52",
+   "uasset": "Content/Imported/MaterialDatabase/ShopSigns_ShortRectangle/MI_ShopSign_Shop_Jewellery5_MAT_INST.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/ShopSigns_ShortRectangle.upk#ShopSigns_Norm",
+   "object": "ShopSigns_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ShopSigns_ShortRectangle/ShopSigns_Brackets_Textures/Texture2D/ShopSigns_Norm.tga",
+   "extracted_sha256": "ca62d763ca9b1632d227b176ed7e631e994f0213d51d8a662ac63a5e6489dd32",
+   "output_file": "Content/Extracted/MaterialDatabase/ShopSigns_ShortRectangle/ShopSigns_Brackets_Textures/Texture2D/ShopSigns_Norm.tga",
+   "output_sha256": "ca62d763ca9b1632d227b176ed7e631e994f0213d51d8a662ac63a5e6489dd32",
+   "uasset": "Content/Imported/MaterialDatabase/ShopSigns_ShortRectangle/ShopSigns_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/ShopSigns_ShortRectangle.upk#ShopSigns_ShortRectangle_Clothing5_DiffSpec",
+   "object": "ShopSigns_ShortRectangle_Clothing5_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ShopSigns_ShortRectangle/ShopSigns_ShortRectangle/Texture2D/ShopSigns_ShortRectangle_Clothing5_DiffSpec.tga",
+   "extracted_sha256": "b7945388b1743472d739db51bb396b401219f4a0aae1ae58a943348b01dd5e52",
+   "output_file": "Content/Extracted/MaterialDatabase/ShopSigns_ShortRectangle/ShopSigns_ShortRectangle/Texture2D/ShopSigns_ShortRectangle_Clothing5_DiffSpec.tga",
+   "output_sha256": "b7945388b1743472d739db51bb396b401219f4a0aae1ae58a943348b01dd5e52",
+   "uasset": "Content/Imported/MaterialDatabase/ShopSigns_ShortRectangle/ShopSigns_ShortRectangle_Clothing5_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/ShopSigns_ShortRectangle.upk#ShopSigns_ShortRectangle_Emis1",
+   "object": "ShopSigns_ShortRectangle_Emis1",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ShopSigns_ShortRectangle/ShopSigns_ShortRectangle/Texture2D/ShopSigns_ShortRectangle_Emis1.tga",
+   "extracted_sha256": "82f45fe5e633b73f0cc588cd58ca8a306f694f1c826101c890b77cd04ffaa459",
+   "output_file": "Content/Extracted/MaterialDatabase/ShopSigns_ShortRectangle/ShopSigns_ShortRectangle/Texture2D/ShopSigns_ShortRectangle_Emis1.tga",
+   "output_sha256": "82f45fe5e633b73f0cc588cd58ca8a306f694f1c826101c890b77cd04ffaa459",
+   "uasset": "Content/Imported/MaterialDatabase/ShopSigns_ShortRectangle/ShopSigns_ShortRectangle_Emis1.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/ShopSigns_ShortRectangle.upk#ShopSigns_ShortRectangle_Emis3",
+   "object": "ShopSigns_ShortRectangle_Emis3",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ShopSigns_ShortRectangle/ShopSigns_ShortRectangle/Texture2D/ShopSigns_ShortRectangle_Emis3.tga",
+   "extracted_sha256": "5fa74da746331730b37a8e2dd99874ab98dac92795641dca983f77fcc221537a",
+   "output_file": "Content/Extracted/MaterialDatabase/ShopSigns_ShortRectangle/ShopSigns_ShortRectangle/Texture2D/ShopSigns_ShortRectangle_Emis3.tga",
+   "output_sha256": "5fa74da746331730b37a8e2dd99874ab98dac92795641dca983f77fcc221537a",
+   "uasset": "Content/Imported/MaterialDatabase/ShopSigns_ShortRectangle/ShopSigns_ShortRectangle_Emis3.uasset"
+  }
+ ]
+}

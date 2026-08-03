@@ -1,0 +1,76 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FinancialTowerCrane",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTowerCrane.upk",
+ "source_sha256": "1488d7630d1d7ab2634cbe9123b5f6b21b39af4afbf3ab3078cafac62a5f8714",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTowerCrane.upk#FinancialTowerCrane_DiffSpec",
+   "object": "FinancialTowerCrane_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialTowerCrane/FinancialTowerCrane/Texture2D/FinancialTowerCrane_DiffSpec.tga",
+   "extracted_sha256": "713e7fc69d499daf6a3ccf403b9367b13a6a2f14e224085805d3020b8ca649d1",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialTowerCrane/FinancialTowerCrane/Texture2D/FinancialTowerCrane_DiffSpec.tga",
+   "output_sha256": "713e7fc69d499daf6a3ccf403b9367b13a6a2f14e224085805d3020b8ca649d1",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialTowerCrane/FinancialTowerCrane_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTowerCrane.upk#FinancialTowerCrane_Norm",
+   "object": "FinancialTowerCrane_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialTowerCrane/FinancialTowerCrane/Texture2D/FinancialTowerCrane_Norm.tga",
+   "extracted_sha256": "164aad06984b5aaef5233f0458332be1646620e5aef03b9f6e2016fc28bb2746",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialTowerCrane/FinancialTowerCrane/Texture2D/FinancialTowerCrane_Norm.tga",
+   "output_sha256": "164aad06984b5aaef5233f0458332be1646620e5aef03b9f6e2016fc28bb2746",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialTowerCrane/FinancialTowerCrane_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTowerCrane.upk#FinancialTowerCrane_Opac",
+   "object": "FinancialTowerCrane_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialTowerCrane/FinancialTowerCrane/Texture2D/FinancialTowerCrane_Opac.tga",
+   "extracted_sha256": "d9b690337233dd1d817d835a505fcdcdfc5d8749d9f13a989605fbe5b0955017",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialTowerCrane/FinancialTowerCrane/Texture2D/FinancialTowerCrane_Opac.tga",
+   "output_sha256": "d9b690337233dd1d817d835a505fcdcdfc5d8749d9f13a989605fbe5b0955017",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialTowerCrane/FinancialTowerCrane_Opac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTowerCrane.upk#MI_FinancialTowerCrane_Blue_INST",
+   "object": "MI_FinancialTowerCrane_Blue_INST",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialTowerCrane_Blue_INST",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialTowerCrane/FinancialTowerCrane/Texture2D/FinancialTowerCrane_DiffSpec.tga",
+   "extracted_sha256": "713e7fc69d499daf6a3ccf403b9367b13a6a2f14e224085805d3020b8ca649d1",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialTowerCrane/FinancialTowerCrane/Texture2D/FinancialTowerCrane_DiffSpec.tga",
+   "output_sha256": "713e7fc69d499daf6a3ccf403b9367b13a6a2f14e224085805d3020b8ca649d1",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialTowerCrane/MI_FinancialTowerCrane_Blue_INST.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialTowerCrane.upk#MI_FinancialTowerCrane_Mat",
+   "object": "MI_FinancialTowerCrane_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialTowerCrane_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialTowerCrane/FinancialTowerCrane/Texture2D/FinancialTowerCrane_DiffSpec.tga",
+   "extracted_sha256": "713e7fc69d499daf6a3ccf403b9367b13a6a2f14e224085805d3020b8ca649d1",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialTowerCrane/FinancialTowerCrane/Texture2D/FinancialTowerCrane_DiffSpec.tga",
+   "output_sha256": "713e7fc69d499daf6a3ccf403b9367b13a6a2f14e224085805d3020b8ca649d1",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialTowerCrane/MI_FinancialTowerCrane_Mat.uasset"
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Brick_Test",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/ToBeRemoved/Brick_Test.upk",
+ "source_sha256": "8185875d99c265e79ad4e776d8f97673f19381938c3a654a788cc335f91e694e",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/ToBeRemoved/Brick_Test.upk#bricks-Norm",
+   "object": "bricks-Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Brick_Test/Brick_Test/Texture2D/bricks-Norm.tga",
+   "extracted_sha256": "7714452a4e39c359b712c7d6dced44901978817a6516080bed8aa20be7c3a164",
+   "output_file": "Content/Extracted/MaterialDatabase/Brick_Test/Brick_Test/Texture2D/bricks-Norm.tga",
+   "output_sha256": "7714452a4e39c359b712c7d6dced44901978817a6516080bed8aa20be7c3a164",
+   "uasset": "Content/Imported/MaterialDatabase/Brick_Test/bricks-Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/ToBeRemoved/Brick_Test.upk#MI_BricksMat",
+   "object": "MI_BricksMat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "BricksMat",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Brick_Test/Brick_Test/Texture2D/bricks-Norm.tga",
+   "extracted_sha256": "7714452a4e39c359b712c7d6dced44901978817a6516080bed8aa20be7c3a164",
+   "output_file": "Content/Extracted/MaterialDatabase/Brick_Test/Brick_Test/Texture2D/bricks-Norm.tga",
+   "output_sha256": "7714452a4e39c359b712c7d6dced44901978817a6516080bed8aa20be7c3a164",
+   "uasset": "Content/Imported/MaterialDatabase/Brick_Test/MI_BricksMat.uasset"
+  }
+ ]
+}

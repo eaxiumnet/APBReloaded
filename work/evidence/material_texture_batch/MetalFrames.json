@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "MetalFrames",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/ProvingGrounds/PropMaterials/MetalFrames.upk",
+ "source_sha256": "af19a6535cacb4327448ffdca462ac5996d68c136420ef6e6a554f959888b308",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/ProvingGrounds/PropMaterials/MetalFrames.upk#MetalFrameCorner_Diff",
+   "object": "MetalFrameCorner_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/MetalFrames/MetalFrames/Texture2D/MetalFrameCorner_Diff.tga",
+   "extracted_sha256": "6727777b8332d1cde847365af8a553acb93adb9b8db287b4243c296ce6d7989f",
+   "output_file": "Content/Extracted/MaterialDatabase/MetalFrames/MetalFrames/Texture2D/MetalFrameCorner_Diff.tga",
+   "output_sha256": "6727777b8332d1cde847365af8a553acb93adb9b8db287b4243c296ce6d7989f",
+   "uasset": "Content/Imported/MaterialDatabase/MetalFrames/MetalFrameCorner_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/ProvingGrounds/PropMaterials/MetalFrames.upk#MetalFrameCorner_Norm",
+   "object": "MetalFrameCorner_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/MetalFrames/MetalFrames/Texture2D/MetalFrameCorner_Norm.tga",
+   "extracted_sha256": "59c15fc8abd47e6dda559cc7eef48db2be2493c7ff72de1e84435e4f3e7a280b",
+   "output_file": "Content/Extracted/MaterialDatabase/MetalFrames/MetalFrames/Texture2D/MetalFrameCorner_Norm.tga",
+   "output_sha256": "59c15fc8abd47e6dda559cc7eef48db2be2493c7ff72de1e84435e4f3e7a280b",
+   "uasset": "Content/Imported/MaterialDatabase/MetalFrames/MetalFrameCorner_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/ProvingGrounds/PropMaterials/MetalFrames.upk#MI_MetalFrames_MAT",
+   "object": "MI_MetalFrames_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "MetalFrames_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/MetalFrames/MetalFrames/Texture2D/MetalFrameCorner_Diff.tga",
+   "extracted_sha256": "6727777b8332d1cde847365af8a553acb93adb9b8db287b4243c296ce6d7989f",
+   "output_file": "Content/Extracted/MaterialDatabase/MetalFrames/MetalFrames/Texture2D/MetalFrameCorner_Diff.tga",
+   "output_sha256": "6727777b8332d1cde847365af8a553acb93adb9b8db287b4243c296ce6d7989f",
+   "uasset": "Content/Imported/MaterialDatabase/MetalFrames/MI_MetalFrames_MAT.uasset"
+  }
+ ]
+}

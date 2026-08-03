@@ -1,0 +1,99 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Warehouse_CrateAndBoxes",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/Warehouse_CrateAndBoxes.upk",
+ "source_sha256": "7d6214d5f5a0d591a934315536ad315f78196a06c71682d16c02ab4f7a933731",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Warehouse_CrateAndBoxes.upk#MI_Warehouse_CrateAndBoxes_Damage_MAT",
+   "object": "MI_Warehouse_CrateAndBoxes_Damage_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Warehouse_CrateAndBoxes_Damage_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Warehouse_CrateAndBoxes/Warehouse_CrateAndBoxes/Texture2D/Warehouse_CrateAndBoxes_Damage_Diff.tga",
+   "extracted_sha256": "71dffcaabcd8ec991521dfd53ed0d2cda73e2f316612983389f5d55495762d9c",
+   "output_file": "Content/Extracted/MaterialDatabase/Warehouse_CrateAndBoxes/Warehouse_CrateAndBoxes/Texture2D/Warehouse_CrateAndBoxes_Damage_Diff.tga",
+   "output_sha256": "71dffcaabcd8ec991521dfd53ed0d2cda73e2f316612983389f5d55495762d9c",
+   "uasset": "Content/Imported/MaterialDatabase/Warehouse_CrateAndBoxes/MI_Warehouse_CrateAndBoxes_Damage_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Warehouse_CrateAndBoxes.upk#MI_Warehouse_CrateAndBoxes_MAT",
+   "object": "MI_Warehouse_CrateAndBoxes_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Warehouse_CrateAndBoxes_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Warehouse_CrateAndBoxes/Warehouse_CrateAndBoxes/Texture2D/Warehouse_CrateAndBoxes_Diff.tga",
+   "extracted_sha256": "486906f33e65f3b5dff9a1014cc56c6a278a29e0e105a311c944c9fa4b3f1c96",
+   "output_file": "Content/Extracted/MaterialDatabase/Warehouse_CrateAndBoxes/Warehouse_CrateAndBoxes/Texture2D/Warehouse_CrateAndBoxes_Diff.tga",
+   "output_sha256": "486906f33e65f3b5dff9a1014cc56c6a278a29e0e105a311c944c9fa4b3f1c96",
+   "uasset": "Content/Imported/MaterialDatabase/Warehouse_CrateAndBoxes/MI_Warehouse_CrateAndBoxes_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Warehouse_CrateAndBoxes.upk#Warehouse_CrateAndBoxes_Damage_Diff",
+   "object": "Warehouse_CrateAndBoxes_Damage_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Warehouse_CrateAndBoxes/Warehouse_CrateAndBoxes/Texture2D/Warehouse_CrateAndBoxes_Damage_Diff.tga",
+   "extracted_sha256": "71dffcaabcd8ec991521dfd53ed0d2cda73e2f316612983389f5d55495762d9c",
+   "output_file": "Content/Extracted/MaterialDatabase/Warehouse_CrateAndBoxes/Warehouse_CrateAndBoxes/Texture2D/Warehouse_CrateAndBoxes_Damage_Diff.tga",
+   "output_sha256": "71dffcaabcd8ec991521dfd53ed0d2cda73e2f316612983389f5d55495762d9c",
+   "uasset": "Content/Imported/MaterialDatabase/Warehouse_CrateAndBoxes/Warehouse_CrateAndBoxes_Damage_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Warehouse_CrateAndBoxes.upk#Warehouse_CrateAndBoxes_Damage_Norm",
+   "object": "Warehouse_CrateAndBoxes_Damage_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Warehouse_CrateAndBoxes/Warehouse_CrateAndBoxes/Texture2D/Warehouse_CrateAndBoxes_Damage_Norm.tga",
+   "extracted_sha256": "ece5dab46db6f3fe0d1feb77ba1f0a056251808db205a2b34465b92bd3580880",
+   "output_file": "Content/Extracted/MaterialDatabase/Warehouse_CrateAndBoxes/Warehouse_CrateAndBoxes/Texture2D/Warehouse_CrateAndBoxes_Damage_Norm.tga",
+   "output_sha256": "ece5dab46db6f3fe0d1feb77ba1f0a056251808db205a2b34465b92bd3580880",
+   "uasset": "Content/Imported/MaterialDatabase/Warehouse_CrateAndBoxes/Warehouse_CrateAndBoxes_Damage_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Warehouse_CrateAndBoxes.upk#Warehouse_CrateAndBoxes_Diff",
+   "object": "Warehouse_CrateAndBoxes_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Warehouse_CrateAndBoxes/Warehouse_CrateAndBoxes/Texture2D/Warehouse_CrateAndBoxes_Diff.tga",
+   "extracted_sha256": "486906f33e65f3b5dff9a1014cc56c6a278a29e0e105a311c944c9fa4b3f1c96",
+   "output_file": "Content/Extracted/MaterialDatabase/Warehouse_CrateAndBoxes/Warehouse_CrateAndBoxes/Texture2D/Warehouse_CrateAndBoxes_Diff.tga",
+   "output_sha256": "486906f33e65f3b5dff9a1014cc56c6a278a29e0e105a311c944c9fa4b3f1c96",
+   "uasset": "Content/Imported/MaterialDatabase/Warehouse_CrateAndBoxes/Warehouse_CrateAndBoxes_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Warehouse_CrateAndBoxes.upk#Warehouse_CrateAndBoxes_Norm",
+   "object": "Warehouse_CrateAndBoxes_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Warehouse_CrateAndBoxes/Warehouse_CrateAndBoxes/Texture2D/Warehouse_CrateAndBoxes_Norm.tga",
+   "extracted_sha256": "b4c8d75726e4b9d102d7b28193810b0c80a63913279989acc3695dedac1cfc98",
+   "output_file": "Content/Extracted/MaterialDatabase/Warehouse_CrateAndBoxes/Warehouse_CrateAndBoxes/Texture2D/Warehouse_CrateAndBoxes_Norm.tga",
+   "output_sha256": "b4c8d75726e4b9d102d7b28193810b0c80a63913279989acc3695dedac1cfc98",
+   "uasset": "Content/Imported/MaterialDatabase/Warehouse_CrateAndBoxes/Warehouse_CrateAndBoxes_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Warehouse_CrateAndBoxes.upk#Warehouse_CrateAndBoxes_Opac",
+   "object": "Warehouse_CrateAndBoxes_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Warehouse_CrateAndBoxes/Warehouse_CrateAndBoxes/Texture2D/Warehouse_CrateAndBoxes_Opac.tga",
+   "extracted_sha256": "18f6b4ab111277ee111d205bccf16eb41d63cbf779a5bcb72d68fa52c3a6a6df",
+   "output_file": "Content/Extracted/MaterialDatabase/Warehouse_CrateAndBoxes/Warehouse_CrateAndBoxes/Texture2D/Warehouse_CrateAndBoxes_Opac.tga",
+   "output_sha256": "18f6b4ab111277ee111d205bccf16eb41d63cbf779a5bcb72d68fa52c3a6a6df",
+   "uasset": "Content/Imported/MaterialDatabase/Warehouse_CrateAndBoxes/Warehouse_CrateAndBoxes_Opac.uasset"
+  }
+ ]
+}

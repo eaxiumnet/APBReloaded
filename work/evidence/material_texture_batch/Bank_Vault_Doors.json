@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Bank_Vault_Doors",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/PropMaterials/Bank_Vault_Doors.upk",
+ "source_sha256": "a75f9873d4157b368a3a673898a79ec75cd62fc1d82feef0447771c5d7e04456",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/Bank_Vault_Doors.upk#Bank_Vault_Door_Round_DIFF",
+   "object": "Bank_Vault_Door_Round_DIFF",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Bank_Vault_Doors/Bank_Vault_Doors/Texture2D/Bank_Vault_Door_Round_DIFF.tga",
+   "extracted_sha256": "0584604409d9ce81292f8f67eece081c5c65298c10f64715630782337ad65edc",
+   "output_file": "Content/Extracted/MaterialDatabase/Bank_Vault_Doors/Bank_Vault_Doors/Texture2D/Bank_Vault_Door_Round_DIFF.tga",
+   "output_sha256": "0584604409d9ce81292f8f67eece081c5c65298c10f64715630782337ad65edc",
+   "uasset": "Content/Imported/MaterialDatabase/Bank_Vault_Doors/Bank_Vault_Door_Round_DIFF.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/Bank_Vault_Doors.upk#Bank_Vault_Door_Round_NORM",
+   "object": "Bank_Vault_Door_Round_NORM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Bank_Vault_Doors/Bank_Vault_Doors/Texture2D/Bank_Vault_Door_Round_NORM.tga",
+   "extracted_sha256": "30d257a9e64c53bee79c0c5c4fbbb1f092572f44d865374c4a1ab59c949f6475",
+   "output_file": "Content/Extracted/MaterialDatabase/Bank_Vault_Doors/Bank_Vault_Doors/Texture2D/Bank_Vault_Door_Round_NORM.tga",
+   "output_sha256": "30d257a9e64c53bee79c0c5c4fbbb1f092572f44d865374c4a1ab59c949f6475",
+   "uasset": "Content/Imported/MaterialDatabase/Bank_Vault_Doors/Bank_Vault_Door_Round_NORM.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/Bank_Vault_Doors.upk#MI_Bank_Vault_Door_Round_MAT",
+   "object": "MI_Bank_Vault_Door_Round_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Bank_Vault_Door_Round_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Bank_Vault_Doors/Bank_Vault_Doors/Texture2D/Bank_Vault_Door_Round_DIFF.tga",
+   "extracted_sha256": "0584604409d9ce81292f8f67eece081c5c65298c10f64715630782337ad65edc",
+   "output_file": "Content/Extracted/MaterialDatabase/Bank_Vault_Doors/Bank_Vault_Doors/Texture2D/Bank_Vault_Door_Round_DIFF.tga",
+   "output_sha256": "0584604409d9ce81292f8f67eece081c5c65298c10f64715630782337ad65edc",
+   "uasset": "Content/Imported/MaterialDatabase/Bank_Vault_Doors/MI_Bank_Vault_Door_Round_MAT.uasset"
+  }
+ ]
+}

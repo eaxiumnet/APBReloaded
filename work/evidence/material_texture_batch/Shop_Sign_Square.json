@@ -1,0 +1,113 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Shop_Sign_Square",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Square.upk",
+ "source_sha256": "271079c5e35817fc6cf09777f19776c9007e7a5ba3a1cad8d844d193e43e9edc",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Square.upk#MI_Shop_Sign_Square_Bank_Mat",
+   "object": "MI_Shop_Sign_Square_Bank_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Shop_Sign_Square_Bank_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Square/Shop_Sign_Square/Texture2D/Shop_Sign_Square_Bank_DiffSpec.tga",
+   "extracted_sha256": "50dee0cc9bd0e46f0b9ff4f61574ef67df44b40cc0249c39f0b3c833a640ab18",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Square/Shop_Sign_Square/Texture2D/Shop_Sign_Square_Bank_DiffSpec.tga",
+   "output_sha256": "50dee0cc9bd0e46f0b9ff4f61574ef67df44b40cc0249c39f0b3c833a640ab18",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_Sign_Square/MI_Shop_Sign_Square_Bank_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Square.upk#MI_Shop_Sign_Square_Mat",
+   "object": "MI_Shop_Sign_Square_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Shop_Sign_Square_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Square/Shop_Sign_Square/Texture2D/Shop_Sign_Square_DiffSpec.tga",
+   "extracted_sha256": "165d5638f63462eab9b48b3a5085698fdc26f5f5deae8020076e5c3b7a8f1194",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Square/Shop_Sign_Square/Texture2D/Shop_Sign_Square_DiffSpec.tga",
+   "output_sha256": "165d5638f63462eab9b48b3a5085698fdc26f5f5deae8020076e5c3b7a8f1194",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_Sign_Square/MI_Shop_Sign_Square_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Square.upk#MI_Shop_Sign_Square_Travel_Mat",
+   "object": "MI_Shop_Sign_Square_Travel_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Shop_Sign_Square_Travel_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Square/Shop_Sign_Square/Texture2D/Shop_Sign_Square_Travel_DiffSpec.tga",
+   "extracted_sha256": "d7cd532779c3cb8c695e0717c9845b226fc3e4541dc97136e79b9b889104240f",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Square/Shop_Sign_Square/Texture2D/Shop_Sign_Square_Travel_DiffSpec.tga",
+   "output_sha256": "d7cd532779c3cb8c695e0717c9845b226fc3e4541dc97136e79b9b889104240f",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_Sign_Square/MI_Shop_Sign_Square_Travel_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Square.upk#Shop_Sign_Square_Bank_DiffSpec",
+   "object": "Shop_Sign_Square_Bank_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Square/Shop_Sign_Square/Texture2D/Shop_Sign_Square_Bank_DiffSpec.tga",
+   "extracted_sha256": "50dee0cc9bd0e46f0b9ff4f61574ef67df44b40cc0249c39f0b3c833a640ab18",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Square/Shop_Sign_Square/Texture2D/Shop_Sign_Square_Bank_DiffSpec.tga",
+   "output_sha256": "50dee0cc9bd0e46f0b9ff4f61574ef67df44b40cc0249c39f0b3c833a640ab18",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_Sign_Square/Shop_Sign_Square_Bank_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Square.upk#Shop_Sign_Square_DiffSpec",
+   "object": "Shop_Sign_Square_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Square/Shop_Sign_Square/Texture2D/Shop_Sign_Square_DiffSpec.tga",
+   "extracted_sha256": "165d5638f63462eab9b48b3a5085698fdc26f5f5deae8020076e5c3b7a8f1194",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Square/Shop_Sign_Square/Texture2D/Shop_Sign_Square_DiffSpec.tga",
+   "output_sha256": "165d5638f63462eab9b48b3a5085698fdc26f5f5deae8020076e5c3b7a8f1194",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_Sign_Square/Shop_Sign_Square_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Square.upk#Shop_Sign_Square_Norm",
+   "object": "Shop_Sign_Square_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Square/Shop_Sign_Square/Texture2D/Shop_Sign_Square_Norm.tga",
+   "extracted_sha256": "87c6a9c77dc361864bd6f6eb518d3d893e141f89dc5b59969edd28f1252c35dc",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Square/Shop_Sign_Square/Texture2D/Shop_Sign_Square_Norm.tga",
+   "output_sha256": "87c6a9c77dc361864bd6f6eb518d3d893e141f89dc5b59969edd28f1252c35dc",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_Sign_Square/Shop_Sign_Square_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Square.upk#Shop_Sign_Square_Travel_DiffSpec",
+   "object": "Shop_Sign_Square_Travel_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Square/Shop_Sign_Square/Texture2D/Shop_Sign_Square_Travel_DiffSpec.tga",
+   "extracted_sha256": "d7cd532779c3cb8c695e0717c9845b226fc3e4541dc97136e79b9b889104240f",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Square/Shop_Sign_Square/Texture2D/Shop_Sign_Square_Travel_DiffSpec.tga",
+   "output_sha256": "d7cd532779c3cb8c695e0717c9845b226fc3e4541dc97136e79b9b889104240f",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_Sign_Square/Shop_Sign_Square_Travel_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Square.upk#Shop_Sign_Square_Travel_Norm",
+   "object": "Shop_Sign_Square_Travel_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Square/Shop_Sign_Square/Texture2D/Shop_Sign_Square_Travel_Norm.tga",
+   "extracted_sha256": "83bd5c6550c2a8d40d2dfe6ba18111b37339da9a9f41cdb9485941efe332264e",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Square/Shop_Sign_Square/Texture2D/Shop_Sign_Square_Travel_Norm.tga",
+   "output_sha256": "83bd5c6550c2a8d40d2dfe6ba18111b37339da9a9f41cdb9485941efe332264e",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_Sign_Square/Shop_Sign_Square_Travel_Norm.uasset"
+  }
+ ]
+}

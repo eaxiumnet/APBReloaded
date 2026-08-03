@@ -1,0 +1,35 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "VictorianRidge",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/Roof/VictorianRidge.upk",
+ "source_sha256": "1b2470506fb9500f7019ee918607ed802126d03c58c778e80169a3090ff3f0f1",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Roof/VictorianRidge.upk#MI_VictorianRidge_Mat",
+   "object": "MI_VictorianRidge_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "VictorianRidge_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/VictorianRidge/VictorianRidge/Texture2D/VictorianRidge-DiffAlpha.tga",
+   "extracted_sha256": "6c502ac71dc70bee568cff7b678e59afe3a0dd18760a3167768368fd52e1df80",
+   "output_file": "Content/Extracted/MaterialDatabase/VictorianRidge/VictorianRidge/Texture2D/VictorianRidge-DiffAlpha.tga",
+   "output_sha256": "6c502ac71dc70bee568cff7b678e59afe3a0dd18760a3167768368fd52e1df80",
+   "uasset": "Content/Imported/MaterialDatabase/VictorianRidge/MI_VictorianRidge_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/Roof/VictorianRidge.upk#VictorianRidge-DiffAlpha",
+   "object": "VictorianRidge-DiffAlpha",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/VictorianRidge/VictorianRidge/Texture2D/VictorianRidge-DiffAlpha.tga",
+   "extracted_sha256": "6c502ac71dc70bee568cff7b678e59afe3a0dd18760a3167768368fd52e1df80",
+   "output_file": "Content/Extracted/MaterialDatabase/VictorianRidge/VictorianRidge/Texture2D/VictorianRidge-DiffAlpha.tga",
+   "output_sha256": "6c502ac71dc70bee568cff7b678e59afe3a0dd18760a3167768368fd52e1df80",
+   "uasset": "Content/Imported/MaterialDatabase/VictorianRidge/VictorianRidge-DiffAlpha.uasset"
+  }
+ ]
+}

@@ -1,0 +1,168 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "ShopFront_Financial",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/FeatureMaterials/ShopFront_Financial.upk",
+ "source_sha256": "7817bde433921c58f60f58f1e48613eef85031c44d3cffea9a9bf9ff63e36a97",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/ShopFront_Financial.upk#crackedglass",
+   "object": "crackedglass",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ShopFront_Financial/PropsGenericMaterials/Texture2D/crackedglass.tga",
+   "extracted_sha256": "dfa317aa7fb2240af7f70a04291e38bffe78163ed2df9334514b23bb823cc808",
+   "output_file": "Content/Extracted/MaterialDatabase/ShopFront_Financial/PropsGenericMaterials/Texture2D/crackedglass.tga",
+   "output_sha256": "dfa317aa7fb2240af7f70a04291e38bffe78163ed2df9334514b23bb823cc808",
+   "uasset": "Content/Imported/MaterialDatabase/ShopFront_Financial/crackedglass.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/ShopFront_Financial.upk#CrackedGlass_Norm",
+   "object": "CrackedGlass_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ShopFront_Financial/PropsGenericMaterials/Texture2D/CrackedGlass_Norm.tga",
+   "extracted_sha256": "785619d634027205ac11fddf228e8ff86e308e8ec9386fb9c8d74e1e34b242c3",
+   "output_file": "Content/Extracted/MaterialDatabase/ShopFront_Financial/PropsGenericMaterials/Texture2D/CrackedGlass_Norm.tga",
+   "output_sha256": "785619d634027205ac11fddf228e8ff86e308e8ec9386fb9c8d74e1e34b242c3",
+   "uasset": "Content/Imported/MaterialDatabase/ShopFront_Financial/CrackedGlass_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/ShopFront_Financial.upk#MI_CrackedPropGlass",
+   "object": "MI_CrackedPropGlass",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CrackedPropGlass",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ShopFront_Financial/PropsGenericMaterials/Texture2D/crackedglass.tga",
+   "extracted_sha256": "dfa317aa7fb2240af7f70a04291e38bffe78163ed2df9334514b23bb823cc808",
+   "output_file": "Content/Extracted/MaterialDatabase/ShopFront_Financial/PropsGenericMaterials/Texture2D/crackedglass.tga",
+   "output_sha256": "dfa317aa7fb2240af7f70a04291e38bffe78163ed2df9334514b23bb823cc808",
+   "uasset": "Content/Imported/MaterialDatabase/ShopFront_Financial/MI_CrackedPropGlass.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/ShopFront_Financial.upk#MI_RamRaidShopFront_MAT",
+   "object": "MI_RamRaidShopFront_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RamRaidShopFront_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ShopFront_Financial/ShopFront_Textures/Texture2D/RamRaidShopFront_DiffSpec.tga",
+   "extracted_sha256": "285a89c0ec0a87acfa376e7ac6b81d10c4c2d40c5118056e8656a21c2803dd5b",
+   "output_file": "Content/Extracted/MaterialDatabase/ShopFront_Financial/ShopFront_Textures/Texture2D/RamRaidShopFront_DiffSpec.tga",
+   "output_sha256": "285a89c0ec0a87acfa376e7ac6b81d10c4c2d40c5118056e8656a21c2803dd5b",
+   "uasset": "Content/Imported/MaterialDatabase/ShopFront_Financial/MI_RamRaidShopFront_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/ShopFront_Financial.upk#MI_RamRaidShopInteriors_Damaged_Mat",
+   "object": "MI_RamRaidShopInteriors_Damaged_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RamRaidShopInteriors_Damaged_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ShopFront_Financial/ShopFront_Textures/Texture2D/ShopInteriors_DiffSpec.tga",
+   "extracted_sha256": "bd5ec5edb992434d774deb2600700d0cc17e0781e7eb7ef65ab5aa23c2d8e101",
+   "output_file": "Content/Extracted/MaterialDatabase/ShopFront_Financial/ShopFront_Textures/Texture2D/ShopInteriors_DiffSpec.tga",
+   "output_sha256": "bd5ec5edb992434d774deb2600700d0cc17e0781e7eb7ef65ab5aa23c2d8e101",
+   "uasset": "Content/Imported/MaterialDatabase/ShopFront_Financial/MI_RamRaidShopInteriors_Damaged_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/ShopFront_Financial.upk#MI_RamRaidShopInteriors_MAT",
+   "object": "MI_RamRaidShopInteriors_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RamRaidShopInteriors_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ShopFront_Financial/ShopFront_Textures/Texture2D/ShopInteriors_DiffSpec.tga",
+   "extracted_sha256": "bd5ec5edb992434d774deb2600700d0cc17e0781e7eb7ef65ab5aa23c2d8e101",
+   "output_file": "Content/Extracted/MaterialDatabase/ShopFront_Financial/ShopFront_Textures/Texture2D/ShopInteriors_DiffSpec.tga",
+   "output_sha256": "bd5ec5edb992434d774deb2600700d0cc17e0781e7eb7ef65ab5aa23c2d8e101",
+   "uasset": "Content/Imported/MaterialDatabase/ShopFront_Financial/MI_RamRaidShopInteriors_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/ShopFront_Financial.upk#RamRaidShopFront_DiffSpec",
+   "object": "RamRaidShopFront_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ShopFront_Financial/ShopFront_Textures/Texture2D/RamRaidShopFront_DiffSpec.tga",
+   "extracted_sha256": "285a89c0ec0a87acfa376e7ac6b81d10c4c2d40c5118056e8656a21c2803dd5b",
+   "output_file": "Content/Extracted/MaterialDatabase/ShopFront_Financial/ShopFront_Textures/Texture2D/RamRaidShopFront_DiffSpec.tga",
+   "output_sha256": "285a89c0ec0a87acfa376e7ac6b81d10c4c2d40c5118056e8656a21c2803dd5b",
+   "uasset": "Content/Imported/MaterialDatabase/ShopFront_Financial/RamRaidShopFront_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/ShopFront_Financial.upk#RamRaidShopFront_Norm",
+   "object": "RamRaidShopFront_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ShopFront_Financial/ShopFront_Textures/Texture2D/RamRaidShopFront_Norm.tga",
+   "extracted_sha256": "2f80b7714be8bdc0dfee3413fc776ee2e97289db41df2968342f2a22e82afe3f",
+   "output_file": "Content/Extracted/MaterialDatabase/ShopFront_Financial/ShopFront_Textures/Texture2D/RamRaidShopFront_Norm.tga",
+   "output_sha256": "2f80b7714be8bdc0dfee3413fc776ee2e97289db41df2968342f2a22e82afe3f",
+   "uasset": "Content/Imported/MaterialDatabase/ShopFront_Financial/RamRaidShopFront_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/ShopFront_Financial.upk#ShopInteriors_DiffSpec",
+   "object": "ShopInteriors_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ShopFront_Financial/ShopFront_Textures/Texture2D/ShopInteriors_DiffSpec.tga",
+   "extracted_sha256": "bd5ec5edb992434d774deb2600700d0cc17e0781e7eb7ef65ab5aa23c2d8e101",
+   "output_file": "Content/Extracted/MaterialDatabase/ShopFront_Financial/ShopFront_Textures/Texture2D/ShopInteriors_DiffSpec.tga",
+   "output_sha256": "bd5ec5edb992434d774deb2600700d0cc17e0781e7eb7ef65ab5aa23c2d8e101",
+   "uasset": "Content/Imported/MaterialDatabase/ShopFront_Financial/ShopInteriors_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/ShopFront_Financial.upk#ShopInteriors_Emis",
+   "object": "ShopInteriors_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ShopFront_Financial/ShopFront_Textures/Texture2D/ShopInteriors_Emis.tga",
+   "extracted_sha256": "611d48e77a81b5664d77aea1ff99afd07fcb1ec9bd8f9821fec921d9efc66a95",
+   "output_file": "Content/Extracted/MaterialDatabase/ShopFront_Financial/ShopFront_Textures/Texture2D/ShopInteriors_Emis.tga",
+   "output_sha256": "611d48e77a81b5664d77aea1ff99afd07fcb1ec9bd8f9821fec921d9efc66a95",
+   "uasset": "Content/Imported/MaterialDatabase/ShopFront_Financial/ShopInteriors_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/ShopFront_Financial.upk#ShopInteriors_Norm",
+   "object": "ShopInteriors_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ShopFront_Financial/ShopFront_Textures/Texture2D/ShopInteriors_Norm.tga",
+   "extracted_sha256": "4cfdb82592f4cbd6aba3f5670b7866f08034c47c02d70873d328762e8a895be8",
+   "output_file": "Content/Extracted/MaterialDatabase/ShopFront_Financial/ShopFront_Textures/Texture2D/ShopInteriors_Norm.tga",
+   "output_sha256": "4cfdb82592f4cbd6aba3f5670b7866f08034c47c02d70873d328762e8a895be8",
+   "uasset": "Content/Imported/MaterialDatabase/ShopFront_Financial/ShopInteriors_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/ShopFront_Financial.upk#ShopInteriors_Opac",
+   "object": "ShopInteriors_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/ShopFront_Financial/ShopFront_Textures/Texture2D/ShopInteriors_Opac.tga",
+   "extracted_sha256": "dfa3146bea33c8aff95089684fcc70ca8a4fb44682ea828bf69e1231081c1baa",
+   "output_file": "Content/Extracted/MaterialDatabase/ShopFront_Financial/ShopFront_Textures/Texture2D/ShopInteriors_Opac.tga",
+   "output_sha256": "dfa3146bea33c8aff95089684fcc70ca8a4fb44682ea828bf69e1231081c1baa",
+   "uasset": "Content/Imported/MaterialDatabase/ShopFront_Financial/ShopInteriors_Opac.uasset"
+  }
+ ]
+}

@@ -1,0 +1,644 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "RoadSurfaces_Lanes",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk",
+ "source_sha256": "91668a2af30c56d05a5a174d5e6bb1d5e2141a8a21de11f3839a63884dc89016",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk#Curb_DiffSpec",
+   "object": "Curb_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_KerbStone/Texture2D/Curb_DiffSpec.tga",
+   "extracted_sha256": "6b7118f6bc7b07886f9330d69fc55bf91390e142688e2eb49919c28c33001563",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_KerbStone/Texture2D/Curb_DiffSpec.tga",
+   "output_sha256": "6b7118f6bc7b07886f9330d69fc55bf91390e142688e2eb49919c28c33001563",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_Lanes/Curb_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk#Curb_Norm",
+   "object": "Curb_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_KerbStone/Texture2D/Curb_Norm.tga",
+   "extracted_sha256": "3e267335b37e99aa2fd1deb1891d2f9896256cddd6d6adf0a4d2ef8e02785746",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_KerbStone/Texture2D/Curb_Norm.tga",
+   "output_sha256": "3e267335b37e99aa2fd1deb1891d2f9896256cddd6d6adf0a4d2ef8e02785746",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_Lanes/Curb_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk#Gutter_Cobble_DiffSpec",
+   "object": "Gutter_Cobble_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Gutter_Cobble_DiffSpec.tga",
+   "extracted_sha256": "aefbf5b96592d492652c47dccfeb98a4082ad36fd1b295326419376302c45528",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Gutter_Cobble_DiffSpec.tga",
+   "output_sha256": "aefbf5b96592d492652c47dccfeb98a4082ad36fd1b295326419376302c45528",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_Lanes/Gutter_Cobble_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk#Gutter_Cobble_Norm",
+   "object": "Gutter_Cobble_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Gutter_Cobble_Norm.tga",
+   "extracted_sha256": "b2cf55443b09ce1b4e34c8586cc81fc6c6c0295e936e4f1c12852602293de8ff",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Gutter_Cobble_Norm.tga",
+   "output_sha256": "b2cf55443b09ce1b4e34c8586cc81fc6c6c0295e936e4f1c12852602293de8ff",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_Lanes/Gutter_Cobble_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk#Markings_NormAlph_TPage",
+   "object": "Markings_NormAlph_TPage",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Markings_NormAlph_TPage.tga",
+   "extracted_sha256": "8d0c4178acfd72a17ce21eb8fb025d88cabc2c0efde563668df1d71e9f66e7a5",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Markings_NormAlph_TPage.tga",
+   "output_sha256": "8d0c4178acfd72a17ce21eb8fb025d88cabc2c0efde563668df1d71e9f66e7a5",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_Lanes/Markings_NormAlph_TPage.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk#MI_Cobblestone_PARENT",
+   "object": "MI_Cobblestone_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Cobblestone_PARENT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_Cobblestone_DiffSpec.tga",
+   "extracted_sha256": "cd7edb8dc4b787a2e85cd956b30b3da99290751071899c880de2ae31d9df2557",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_Cobblestone_DiffSpec.tga",
+   "output_sha256": "cd7edb8dc4b787a2e85cd956b30b3da99290751071899c880de2ae31d9df2557",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_Lanes/MI_Cobblestone_PARENT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk#MI_Road_Supershader",
+   "object": "MI_Road_Supershader",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Road_Supershader",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "extracted_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "output_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_Lanes/MI_Road_Supershader.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk#MI_Road_Supershader_Baked",
+   "object": "MI_Road_Supershader_Baked",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Road_Supershader_Baked",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "extracted_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "output_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_Lanes/MI_Road_Supershader_Baked.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk#MI_RoadSurfaces_Cobble_Gutter",
+   "object": "MI_RoadSurfaces_Cobble_Gutter",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RoadSurfaces_Cobble_Gutter",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Gutter_Cobble_DiffSpec.tga",
+   "extracted_sha256": "aefbf5b96592d492652c47dccfeb98a4082ad36fd1b295326419376302c45528",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Gutter_Cobble_DiffSpec.tga",
+   "output_sha256": "aefbf5b96592d492652c47dccfeb98a4082ad36fd1b295326419376302c45528",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_Lanes/MI_RoadSurfaces_Cobble_Gutter.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk#MI_RoadSurfaces_Cobble_Gutter_PARENT",
+   "object": "MI_RoadSurfaces_Cobble_Gutter_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RoadSurfaces_Cobble_Gutter_PARENT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Gutter_Cobble_DiffSpec.tga",
+   "extracted_sha256": "aefbf5b96592d492652c47dccfeb98a4082ad36fd1b295326419376302c45528",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Gutter_Cobble_DiffSpec.tga",
+   "output_sha256": "aefbf5b96592d492652c47dccfeb98a4082ad36fd1b295326419376302c45528",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_Lanes/MI_RoadSurfaces_Cobble_Gutter_PARENT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk#MI_RoadSurfaces_Cobble_NoMarkings",
+   "object": "MI_RoadSurfaces_Cobble_NoMarkings",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RoadSurfaces_Cobble_NoMarkings",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_Cobblestone_DiffSpec.tga",
+   "extracted_sha256": "cd7edb8dc4b787a2e85cd956b30b3da99290751071899c880de2ae31d9df2557",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_Cobblestone_DiffSpec.tga",
+   "output_sha256": "cd7edb8dc4b787a2e85cd956b30b3da99290751071899c880de2ae31d9df2557",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_Lanes/MI_RoadSurfaces_Cobble_NoMarkings.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk#MI_RoadSurfaces_Cracked_Centre",
+   "object": "MI_RoadSurfaces_Cracked_Centre",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RoadSurfaces_Cracked_Centre",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "extracted_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "output_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_Lanes/MI_RoadSurfaces_Cracked_Centre.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk#MI_RoadSurfaces_Cracked_Clean",
+   "object": "MI_RoadSurfaces_Cracked_Clean",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RoadSurfaces_Cracked_Clean",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "extracted_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "output_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_Lanes/MI_RoadSurfaces_Cracked_Clean.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk#MI_RoadSurfaces_Cracked_Gutter",
+   "object": "MI_RoadSurfaces_Cracked_Gutter",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RoadSurfaces_Cracked_Gutter",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "extracted_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "output_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_Lanes/MI_RoadSurfaces_Cracked_Gutter.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk#MI_RoadSurfaces_Cracked_NoMarkings",
+   "object": "MI_RoadSurfaces_Cracked_NoMarkings",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RoadSurfaces_Cracked_NoMarkings",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "extracted_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "output_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_Lanes/MI_RoadSurfaces_Cracked_NoMarkings.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk#MI_RoadSurfaces_Cracked_WhiteDashed",
+   "object": "MI_RoadSurfaces_Cracked_WhiteDashed",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RoadSurfaces_Cracked_WhiteDashed",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "extracted_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "output_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_Lanes/MI_RoadSurfaces_Cracked_WhiteDashed.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk#MI_RoadSurfaces_Cracked_Yellow",
+   "object": "MI_RoadSurfaces_Cracked_Yellow",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RoadSurfaces_Cracked_Yellow",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "extracted_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "output_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_Lanes/MI_RoadSurfaces_Cracked_Yellow.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk#MI_RoadSurfaces_Cracked_Yellow2",
+   "object": "MI_RoadSurfaces_Cracked_Yellow2",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RoadSurfaces_Cracked_Yellow2",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "extracted_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "output_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_Lanes/MI_RoadSurfaces_Cracked_Yellow2.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk#MI_RoadSurfaces_Gutter_Parent",
+   "object": "MI_RoadSurfaces_Gutter_Parent",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RoadSurfaces_Gutter_Parent",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "extracted_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "output_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_Lanes/MI_RoadSurfaces_Gutter_Parent.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk#MI_RoadSurfaces_Highway_BusLane_CentreAndYellow",
+   "object": "MI_RoadSurfaces_Highway_BusLane_CentreAndYellow",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RoadSurfaces_Highway_BusLane_CentreAndYellow",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "extracted_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "output_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_Lanes/MI_RoadSurfaces_Highway_BusLane_CentreAndYellow.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk#MI_RoadSurfaces_Highway_Buslane_Yellow",
+   "object": "MI_RoadSurfaces_Highway_Buslane_Yellow",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RoadSurfaces_Highway_Buslane_Yellow",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "extracted_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "output_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_Lanes/MI_RoadSurfaces_Highway_Buslane_Yellow.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk#MI_RoadSurfaces_Highway_Centre",
+   "object": "MI_RoadSurfaces_Highway_Centre",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RoadSurfaces_Highway_Centre",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "extracted_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "output_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_Lanes/MI_RoadSurfaces_Highway_Centre.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk#MI_RoadSurfaces_Highway_Clean",
+   "object": "MI_RoadSurfaces_Highway_Clean",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RoadSurfaces_Highway_Clean",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "extracted_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "output_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_Lanes/MI_RoadSurfaces_Highway_Clean.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk#MI_RoadSurfaces_Highway_Gutter",
+   "object": "MI_RoadSurfaces_Highway_Gutter",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RoadSurfaces_Highway_Gutter",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "extracted_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "output_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_Lanes/MI_RoadSurfaces_Highway_Gutter.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk#MI_RoadSurfaces_Highway_Gutter_NoMarkings",
+   "object": "MI_RoadSurfaces_Highway_Gutter_NoMarkings",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RoadSurfaces_Highway_Gutter_NoMarkings",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "extracted_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "output_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_Lanes/MI_RoadSurfaces_Highway_Gutter_NoMarkings.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk#MI_RoadSurfaces_Highway_Gutter_NoWear",
+   "object": "MI_RoadSurfaces_Highway_Gutter_NoWear",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RoadSurfaces_Highway_Gutter_NoWear",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "extracted_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "output_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_Lanes/MI_RoadSurfaces_Highway_Gutter_NoWear.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk#MI_RoadSurfaces_Highway_NoMarkings",
+   "object": "MI_RoadSurfaces_Highway_NoMarkings",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RoadSurfaces_Highway_NoMarkings",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "extracted_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "output_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_Lanes/MI_RoadSurfaces_Highway_NoMarkings.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk#MI_RoadSurfaces_Highway_WhiteDashed",
+   "object": "MI_RoadSurfaces_Highway_WhiteDashed",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RoadSurfaces_Highway_WhiteDashed",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "extracted_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "output_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_Lanes/MI_RoadSurfaces_Highway_WhiteDashed.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk#MI_RoadSurfaces_Highway_Yellow_Deprecated",
+   "object": "MI_RoadSurfaces_Highway_Yellow_Deprecated",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RoadSurfaces_Highway_Yellow_Deprecated",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "extracted_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "output_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_Lanes/MI_RoadSurfaces_Highway_Yellow_Deprecated.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk#MI_roadsurfaces_kerbstone",
+   "object": "MI_roadsurfaces_kerbstone",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "roadsurfaces_kerbstone",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_KerbStone/Texture2D/Curb_DiffSpec.tga",
+   "extracted_sha256": "6b7118f6bc7b07886f9330d69fc55bf91390e142688e2eb49919c28c33001563",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_KerbStone/Texture2D/Curb_DiffSpec.tga",
+   "output_sha256": "6b7118f6bc7b07886f9330d69fc55bf91390e142688e2eb49919c28c33001563",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_Lanes/MI_roadsurfaces_kerbstone.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk#MI_RoadSurfaces_SliplaneChevrons",
+   "object": "MI_RoadSurfaces_SliplaneChevrons",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RoadSurfaces_SliplaneChevrons",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "extracted_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "output_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_Lanes/MI_RoadSurfaces_SliplaneChevrons.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk#MI_RoadSurfaces_TransitionTexture_Cracked2Cobble",
+   "object": "MI_RoadSurfaces_TransitionTexture_Cracked2Cobble",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RoadSurfaces_TransitionTexture_Cracked2Cobble",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "extracted_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "output_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_Lanes/MI_RoadSurfaces_TransitionTexture_Cracked2Cobble.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk#MI_RoadSurfaces_TransitionTexture_Gutter_Cracked2Cobble",
+   "object": "MI_RoadSurfaces_TransitionTexture_Gutter_Cracked2Cobble",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RoadSurfaces_TransitionTexture_Gutter_Cracked2Cobble",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "extracted_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "output_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_Lanes/MI_RoadSurfaces_TransitionTexture_Gutter_Cracked2Cobble.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk#MI_RoadSurfaces_TransitionTexture_Gutter_Highway2Cobble",
+   "object": "MI_RoadSurfaces_TransitionTexture_Gutter_Highway2Cobble",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RoadSurfaces_TransitionTexture_Gutter_Highway2Cobble",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Gutter_Cobble_DiffSpec.tga",
+   "extracted_sha256": "aefbf5b96592d492652c47dccfeb98a4082ad36fd1b295326419376302c45528",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Gutter_Cobble_DiffSpec.tga",
+   "output_sha256": "aefbf5b96592d492652c47dccfeb98a4082ad36fd1b295326419376302c45528",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_Lanes/MI_RoadSurfaces_TransitionTexture_Gutter_Highway2Cobble.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk#MI_RoadSurfaces_TransitionTexture_Gutter_Highway2Cracked",
+   "object": "MI_RoadSurfaces_TransitionTexture_Gutter_Highway2Cracked",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RoadSurfaces_TransitionTexture_Gutter_Highway2Cracked",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "extracted_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "output_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_Lanes/MI_RoadSurfaces_TransitionTexture_Gutter_Highway2Cracked.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk#MI_RoadSurfaces_TransitionTexture_Highway2Cobble",
+   "object": "MI_RoadSurfaces_TransitionTexture_Highway2Cobble",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RoadSurfaces_TransitionTexture_Highway2Cobble",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_Cobblestone_DiffSpec.tga",
+   "extracted_sha256": "cd7edb8dc4b787a2e85cd956b30b3da99290751071899c880de2ae31d9df2557",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_Cobblestone_DiffSpec.tga",
+   "output_sha256": "cd7edb8dc4b787a2e85cd956b30b3da99290751071899c880de2ae31d9df2557",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_Lanes/MI_RoadSurfaces_TransitionTexture_Highway2Cobble.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk#MI_RoadSurfaces_TransitionTexture_Highway2Cracked",
+   "object": "MI_RoadSurfaces_TransitionTexture_Highway2Cracked",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RoadSurfaces_TransitionTexture_Highway2Cracked",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "extracted_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "output_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_Lanes/MI_RoadSurfaces_TransitionTexture_Highway2Cracked.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk#MI_RoadSurfaces_TransitionWear_Cracked",
+   "object": "MI_RoadSurfaces_TransitionWear_Cracked",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RoadSurfaces_TransitionWear_Cracked",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "extracted_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "output_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_Lanes/MI_RoadSurfaces_TransitionWear_Cracked.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk#MI_RoadSurfaces_TransitionWear_Cracked_Offset",
+   "object": "MI_RoadSurfaces_TransitionWear_Cracked_Offset",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RoadSurfaces_TransitionWear_Cracked_Offset",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "extracted_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "output_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_Lanes/MI_RoadSurfaces_TransitionWear_Cracked_Offset.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk#MI_RoadSurfaces_TransitionWear_Highway",
+   "object": "MI_RoadSurfaces_TransitionWear_Highway",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RoadSurfaces_TransitionWear_Highway",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "extracted_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "output_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_Lanes/MI_RoadSurfaces_TransitionWear_Highway.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk#MI_RoadSurfaces_TransitionWear_Highway_Offset",
+   "object": "MI_RoadSurfaces_TransitionWear_Highway_Offset",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RoadSurfaces_TransitionWear_Highway_Offset",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "extracted_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "output_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_Lanes/MI_RoadSurfaces_TransitionWear_Highway_Offset.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk#Surface_Cobblestone_DiffSpec",
+   "object": "Surface_Cobblestone_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_Cobblestone_DiffSpec.tga",
+   "extracted_sha256": "cd7edb8dc4b787a2e85cd956b30b3da99290751071899c880de2ae31d9df2557",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_Cobblestone_DiffSpec.tga",
+   "output_sha256": "cd7edb8dc4b787a2e85cd956b30b3da99290751071899c880de2ae31d9df2557",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_Lanes/Surface_Cobblestone_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk#Surface_Cobblestone_Norm",
+   "object": "Surface_Cobblestone_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_Cobblestone_Norm.tga",
+   "extracted_sha256": "8cc6cc5d56d975d3dd1c00b0a508c8782c13f944202d2cb8c1ceaf7c5eea051a",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_Cobblestone_Norm.tga",
+   "output_sha256": "8cc6cc5d56d975d3dd1c00b0a508c8782c13f944202d2cb8c1ceaf7c5eea051a",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_Lanes/Surface_Cobblestone_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RoadEditorMaterials/RoadSurfaces_Lanes.upk#Surface_DarkAsphalt_DiffSpec",
+   "object": "Surface_DarkAsphalt_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "extracted_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "output_file": "Content/Extracted/MaterialDatabase/RoadSurfaces_Lanes/RoadSurfaces_Lanes/Texture2D/Surface_DarkAsphalt_DiffSpec.tga",
+   "output_sha256": "4016aa40da75fee55115987b0e1b69e275bbe415f3018bdbe0a9ade6b682deaa",
+   "uasset": "Content/Imported/MaterialDatabase/RoadSurfaces_Lanes/Surface_DarkAsphalt_DiffSpec.uasset"
+  }
+ ]
+}

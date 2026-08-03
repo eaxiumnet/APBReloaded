@@ -1,0 +1,60 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Window_Industrial",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/FeatureMaterials/Window_Industrial.upk",
+ "source_sha256": "770d4714a8c81c8e60a32a7aa3076b97c2a750dbbdb6384eaa8f0695348a676d",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Window_Industrial.upk#MI_window_industrial",
+   "object": "MI_window_industrial",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "window_industrial",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Window_Industrial/Window_Industrial/Texture2D/Window_Industrial_Diff.tga",
+   "extracted_sha256": "2081c5f145c9872e1de32824e6b913ba62ff50561dffc701685e9c2fd849e6a5",
+   "output_file": "Content/Extracted/MaterialDatabase/Window_Industrial/Window_Industrial/Texture2D/Window_Industrial_Diff.tga",
+   "output_sha256": "2081c5f145c9872e1de32824e6b913ba62ff50561dffc701685e9c2fd849e6a5",
+   "uasset": "Content/Imported/MaterialDatabase/Window_Industrial/MI_window_industrial.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Window_Industrial.upk#Window_Industrial_Diff",
+   "object": "Window_Industrial_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Window_Industrial/Window_Industrial/Texture2D/Window_Industrial_Diff.tga",
+   "extracted_sha256": "2081c5f145c9872e1de32824e6b913ba62ff50561dffc701685e9c2fd849e6a5",
+   "output_file": "Content/Extracted/MaterialDatabase/Window_Industrial/Window_Industrial/Texture2D/Window_Industrial_Diff.tga",
+   "output_sha256": "2081c5f145c9872e1de32824e6b913ba62ff50561dffc701685e9c2fd849e6a5",
+   "uasset": "Content/Imported/MaterialDatabase/Window_Industrial/Window_Industrial_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Window_Industrial.upk#Window_Industrial_Mask",
+   "object": "Window_Industrial_Mask",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Window_Industrial/Window_Industrial/Texture2D/Window_Industrial_Mask.tga",
+   "extracted_sha256": "ba32c8b192f1d1eaea00be6516f8bf343ced1f983e873bb8a9eef46821507393",
+   "output_file": "Content/Extracted/MaterialDatabase/Window_Industrial/Window_Industrial/Texture2D/Window_Industrial_Mask.tga",
+   "output_sha256": "ba32c8b192f1d1eaea00be6516f8bf343ced1f983e873bb8a9eef46821507393",
+   "uasset": "Content/Imported/MaterialDatabase/Window_Industrial/Window_Industrial_Mask.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Window_Industrial.upk#Window_Industrial_Norm",
+   "object": "Window_Industrial_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Window_Industrial/Window_Industrial/Texture2D/Window_Industrial_Norm.tga",
+   "extracted_sha256": "aeba507dc5c27ea2696863f6b976f340ff3cfbd991a6e755c2ba89ec1d3a98ff",
+   "output_file": "Content/Extracted/MaterialDatabase/Window_Industrial/Window_Industrial/Texture2D/Window_Industrial_Norm.tga",
+   "output_sha256": "aeba507dc5c27ea2696863f6b976f340ff3cfbd991a6e755c2ba89ec1d3a98ff",
+   "uasset": "Content/Imported/MaterialDatabase/Window_Industrial/Window_Industrial_Norm.uasset"
+  }
+ ]
+}

@@ -1,0 +1,164 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "TreeSmall",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/TreeSmall.upk",
+ "source_sha256": "bf9956bc05fa9a5d27658170efa4f7e78809ede53739dbda77ad1c7f2b069bdf",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/TreeSmall.upk#MI_TreeSmall_Leaves1_MAT",
+   "object": "MI_TreeSmall_Leaves1_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "TreeSmall_Leaves1_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/TreeSmall/TreeSmall/Texture2D/TreeSmall_Leaves1_DiffSpec.tga",
+   "extracted_sha256": "9dbd12af1a6b00c7445fc49c52acf15a19bbf6c3534cc92c27f0ba30a40fe142",
+   "output_file": "Content/Extracted/MaterialDatabase/TreeSmall/TreeSmall/Texture2D/TreeSmall_Leaves1_DiffSpec.tga",
+   "output_sha256": "9dbd12af1a6b00c7445fc49c52acf15a19bbf6c3534cc92c27f0ba30a40fe142",
+   "uasset": "Content/Imported/MaterialDatabase/TreeSmall/MI_TreeSmall_Leaves1_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/TreeSmall.upk#MI_TreeSmall_Leaves2_MAT",
+   "object": "MI_TreeSmall_Leaves2_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "TreeSmall_Leaves2_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/TreeSmall/TreeSmall/Texture2D/TreeSmall_Leaves2_DiffSpec.tga",
+   "extracted_sha256": "508029c3cc802659a0a1fb124e9d433639f7d2e2b24f1a592e1c41958f662ca7",
+   "output_file": "Content/Extracted/MaterialDatabase/TreeSmall/TreeSmall/Texture2D/TreeSmall_Leaves2_DiffSpec.tga",
+   "output_sha256": "508029c3cc802659a0a1fb124e9d433639f7d2e2b24f1a592e1c41958f662ca7",
+   "uasset": "Content/Imported/MaterialDatabase/TreeSmall/MI_TreeSmall_Leaves2_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/TreeSmall.upk#MI_TreeSmall_Trunk1_MAT",
+   "object": "MI_TreeSmall_Trunk1_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "TreeSmall_Trunk1_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/TreeSmall/TreeSmall/Texture2D/TreeSmall_Trunk1_DiffSpec.tga",
+   "extracted_sha256": "5d402450f9593977e512ef607f4c71145843cd53f0dc563f4467197948d03ebe",
+   "output_file": "Content/Extracted/MaterialDatabase/TreeSmall/TreeSmall/Texture2D/TreeSmall_Trunk1_DiffSpec.tga",
+   "output_sha256": "5d402450f9593977e512ef607f4c71145843cd53f0dc563f4467197948d03ebe",
+   "uasset": "Content/Imported/MaterialDatabase/TreeSmall/MI_TreeSmall_Trunk1_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/TreeSmall.upk#MI_TreeSmall_Trunk2_MAT",
+   "object": "MI_TreeSmall_Trunk2_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "TreeSmall_Trunk2_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/TreeSmall/TreeSmall/Texture2D/TreeSmall_Trunk2_DiffSpec.tga",
+   "extracted_sha256": "e88ad96cf637329f18461f1b40afd4c597c4c29ce010b843b9480daec2de87b6",
+   "output_file": "Content/Extracted/MaterialDatabase/TreeSmall/TreeSmall/Texture2D/TreeSmall_Trunk2_DiffSpec.tga",
+   "output_sha256": "e88ad96cf637329f18461f1b40afd4c597c4c29ce010b843b9480daec2de87b6",
+   "uasset": "Content/Imported/MaterialDatabase/TreeSmall/MI_TreeSmall_Trunk2_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/TreeSmall.upk#TreeSmall_Leaves1_DiffSpec",
+   "object": "TreeSmall_Leaves1_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/TreeSmall/TreeSmall/Texture2D/TreeSmall_Leaves1_DiffSpec.tga",
+   "extracted_sha256": "9dbd12af1a6b00c7445fc49c52acf15a19bbf6c3534cc92c27f0ba30a40fe142",
+   "output_file": "Content/Extracted/MaterialDatabase/TreeSmall/TreeSmall/Texture2D/TreeSmall_Leaves1_DiffSpec.tga",
+   "output_sha256": "9dbd12af1a6b00c7445fc49c52acf15a19bbf6c3534cc92c27f0ba30a40fe142",
+   "uasset": "Content/Imported/MaterialDatabase/TreeSmall/TreeSmall_Leaves1_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/TreeSmall.upk#TreeSmall_Leaves1_Norm",
+   "object": "TreeSmall_Leaves1_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/TreeSmall/TreeSmall/Texture2D/TreeSmall_Leaves1_Norm.tga",
+   "extracted_sha256": "942af122b44a0357fc6266fd6ed5fb07329ea095a1e6c91bdb6c2cbe7190ea74",
+   "output_file": "Content/Extracted/MaterialDatabase/TreeSmall/TreeSmall/Texture2D/TreeSmall_Leaves1_Norm.tga",
+   "output_sha256": "942af122b44a0357fc6266fd6ed5fb07329ea095a1e6c91bdb6c2cbe7190ea74",
+   "uasset": "Content/Imported/MaterialDatabase/TreeSmall/TreeSmall_Leaves1_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/TreeSmall.upk#TreeSmall_Leaves2_DiffSpec",
+   "object": "TreeSmall_Leaves2_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/TreeSmall/TreeSmall/Texture2D/TreeSmall_Leaves2_DiffSpec.tga",
+   "extracted_sha256": "508029c3cc802659a0a1fb124e9d433639f7d2e2b24f1a592e1c41958f662ca7",
+   "output_file": "Content/Extracted/MaterialDatabase/TreeSmall/TreeSmall/Texture2D/TreeSmall_Leaves2_DiffSpec.tga",
+   "output_sha256": "508029c3cc802659a0a1fb124e9d433639f7d2e2b24f1a592e1c41958f662ca7",
+   "uasset": "Content/Imported/MaterialDatabase/TreeSmall/TreeSmall_Leaves2_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/TreeSmall.upk#TreeSmall_Leaves2_Norm",
+   "object": "TreeSmall_Leaves2_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/TreeSmall/TreeSmall/Texture2D/TreeSmall_Leaves2_Norm.tga",
+   "extracted_sha256": "caa1f55bfa288375e33fbfaa955e8cb0d21df27ba6c1298beb331a72f6f0618a",
+   "output_file": "Content/Extracted/MaterialDatabase/TreeSmall/TreeSmall/Texture2D/TreeSmall_Leaves2_Norm.tga",
+   "output_sha256": "caa1f55bfa288375e33fbfaa955e8cb0d21df27ba6c1298beb331a72f6f0618a",
+   "uasset": "Content/Imported/MaterialDatabase/TreeSmall/TreeSmall_Leaves2_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/TreeSmall.upk#TreeSmall_Trunk1_DiffSpec",
+   "object": "TreeSmall_Trunk1_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/TreeSmall/TreeSmall/Texture2D/TreeSmall_Trunk1_DiffSpec.tga",
+   "extracted_sha256": "5d402450f9593977e512ef607f4c71145843cd53f0dc563f4467197948d03ebe",
+   "output_file": "Content/Extracted/MaterialDatabase/TreeSmall/TreeSmall/Texture2D/TreeSmall_Trunk1_DiffSpec.tga",
+   "output_sha256": "5d402450f9593977e512ef607f4c71145843cd53f0dc563f4467197948d03ebe",
+   "uasset": "Content/Imported/MaterialDatabase/TreeSmall/TreeSmall_Trunk1_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/TreeSmall.upk#TreeSmall_Trunk1_Norm",
+   "object": "TreeSmall_Trunk1_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/TreeSmall/TreeSmall/Texture2D/TreeSmall_Trunk1_Norm.tga",
+   "extracted_sha256": "f19017fcebf182896696f165cb1de4379417f120c4fcbf6180b5e4b16eec22b1",
+   "output_file": "Content/Extracted/MaterialDatabase/TreeSmall/TreeSmall/Texture2D/TreeSmall_Trunk1_Norm.tga",
+   "output_sha256": "f19017fcebf182896696f165cb1de4379417f120c4fcbf6180b5e4b16eec22b1",
+   "uasset": "Content/Imported/MaterialDatabase/TreeSmall/TreeSmall_Trunk1_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/TreeSmall.upk#TreeSmall_Trunk2_DiffSpec",
+   "object": "TreeSmall_Trunk2_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/TreeSmall/TreeSmall/Texture2D/TreeSmall_Trunk2_DiffSpec.tga",
+   "extracted_sha256": "e88ad96cf637329f18461f1b40afd4c597c4c29ce010b843b9480daec2de87b6",
+   "output_file": "Content/Extracted/MaterialDatabase/TreeSmall/TreeSmall/Texture2D/TreeSmall_Trunk2_DiffSpec.tga",
+   "output_sha256": "e88ad96cf637329f18461f1b40afd4c597c4c29ce010b843b9480daec2de87b6",
+   "uasset": "Content/Imported/MaterialDatabase/TreeSmall/TreeSmall_Trunk2_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/TreeSmall.upk#TreeSmall_Trunk2_Norm",
+   "object": "TreeSmall_Trunk2_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/TreeSmall/TreeSmall/Texture2D/TreeSmall_Trunk2_Norm.tga",
+   "extracted_sha256": "5274647ebaaf00d8a52a60b4b7aed009c9bf5b4702e0a77927cec815d2ad60fe",
+   "output_file": "Content/Extracted/MaterialDatabase/TreeSmall/TreeSmall/Texture2D/TreeSmall_Trunk2_Norm.tga",
+   "output_sha256": "5274647ebaaf00d8a52a60b4b7aed009c9bf5b4702e0a77927cec815d2ad60fe",
+   "uasset": "Content/Imported/MaterialDatabase/TreeSmall/TreeSmall_Trunk2_Norm.uasset"
+  }
+ ]
+}

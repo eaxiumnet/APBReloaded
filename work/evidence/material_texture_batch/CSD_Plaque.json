@@ -1,0 +1,60 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "CSD_Plaque",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Plaque.upk",
+ "source_sha256": "558f4262a984a5e43eff9a0837395a660657fb7208d4b97b8891329d8fd14def",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Plaque.upk#CSD_Plague_diffuse",
+   "object": "CSD_Plague_diffuse",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Plaque/CSD_Plaque/Texture2D/CSD_Plague_diffuse.tga",
+   "extracted_sha256": "0532c0716a63373d69c3a75578bc4417a94fbcf034ebbf4470c05e5a5482b468",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Plaque/CSD_Plaque/Texture2D/CSD_Plague_diffuse.tga",
+   "output_sha256": "0532c0716a63373d69c3a75578bc4417a94fbcf034ebbf4470c05e5a5482b468",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Plaque/CSD_Plague_diffuse.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Plaque.upk#CSD_Plague_Normal",
+   "object": "CSD_Plague_Normal",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Plaque/CSD_Plaque/Texture2D/CSD_Plague_Normal.tga",
+   "extracted_sha256": "3a6b7ce68b8d61e8469c935bd282b1ac6310293ff0628637d23f86c023d92575",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Plaque/CSD_Plaque/Texture2D/CSD_Plague_Normal.tga",
+   "output_sha256": "3a6b7ce68b8d61e8469c935bd282b1ac6310293ff0628637d23f86c023d92575",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Plaque/CSD_Plague_Normal.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Plaque.upk#CSD_Plague_Specular",
+   "object": "CSD_Plague_Specular",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Plaque/CSD_Plaque/Texture2D/CSD_Plague_Specular.tga",
+   "extracted_sha256": "7ce33d05492def82f5fdc757e4044651027d3b58f28b6f0911485f8a188bab75",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Plaque/CSD_Plaque/Texture2D/CSD_Plague_Specular.tga",
+   "output_sha256": "7ce33d05492def82f5fdc757e4044651027d3b58f28b6f0911485f8a188bab75",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Plaque/CSD_Plague_Specular.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Plaque.upk#MI_CSD_Plaque_Material",
+   "object": "MI_CSD_Plaque_Material",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CSD_Plaque_Material",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Specular"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Plaque/CSD_Plaque/Texture2D/CSD_Plague_diffuse.tga",
+   "extracted_sha256": "0532c0716a63373d69c3a75578bc4417a94fbcf034ebbf4470c05e5a5482b468",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Plaque/CSD_Plaque/Texture2D/CSD_Plague_diffuse.tga",
+   "output_sha256": "0532c0716a63373d69c3a75578bc4417a94fbcf034ebbf4470c05e5a5482b468",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Plaque/MI_CSD_Plaque_Material.uasset"
+  }
+ ]
+}

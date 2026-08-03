@@ -1,0 +1,60 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FinancialStreetlights",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/PropMaterials/FinancialStreetlights.upk",
+ "source_sha256": "2058fbe47d639c90ada03128d24d9ce4cee4da139017eac3bd199b82a1d687b4",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialStreetlights.upk#FinancialStreetlights_DiffSpec",
+   "object": "FinancialStreetlights_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialStreetlights/FinancialStreetlights/Texture2D/FinancialStreetlights_DiffSpec.tga",
+   "extracted_sha256": "b08dae25b04725214396aee313008fedab80092578c91bdaf735007475d379bc",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialStreetlights/FinancialStreetlights/Texture2D/FinancialStreetlights_DiffSpec.tga",
+   "output_sha256": "b08dae25b04725214396aee313008fedab80092578c91bdaf735007475d379bc",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialStreetlights/FinancialStreetlights_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialStreetlights.upk#FinancialStreetlights_Emis",
+   "object": "FinancialStreetlights_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialStreetlights/FinancialStreetlights/Texture2D/FinancialStreetlights_Emis.tga",
+   "extracted_sha256": "fe2a1b7994fce029197b4ceb1f30937e30c110598458b77deefa8ab51c877cb2",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialStreetlights/FinancialStreetlights/Texture2D/FinancialStreetlights_Emis.tga",
+   "output_sha256": "fe2a1b7994fce029197b4ceb1f30937e30c110598458b77deefa8ab51c877cb2",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialStreetlights/FinancialStreetlights_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialStreetlights.upk#FinancialStreetlights_Norm",
+   "object": "FinancialStreetlights_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialStreetlights/FinancialStreetlights/Texture2D/FinancialStreetlights_Norm.tga",
+   "extracted_sha256": "f22f54f62adc6a10ec3b47ba8bdc1cbb2e2f5bde5ba2b8ab8da19d7c0053dd85",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialStreetlights/FinancialStreetlights/Texture2D/FinancialStreetlights_Norm.tga",
+   "output_sha256": "f22f54f62adc6a10ec3b47ba8bdc1cbb2e2f5bde5ba2b8ab8da19d7c0053dd85",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialStreetlights/FinancialStreetlights_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/PropMaterials/FinancialStreetlights.upk#MI_FinancialStreetlights_Mat",
+   "object": "MI_FinancialStreetlights_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialStreetlights_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialStreetlights/FinancialStreetlights/Texture2D/FinancialStreetlights_DiffSpec.tga",
+   "extracted_sha256": "b08dae25b04725214396aee313008fedab80092578c91bdaf735007475d379bc",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialStreetlights/FinancialStreetlights/Texture2D/FinancialStreetlights_DiffSpec.tga",
+   "output_sha256": "b08dae25b04725214396aee313008fedab80092578c91bdaf735007475d379bc",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialStreetlights/MI_FinancialStreetlights_Mat.uasset"
+  }
+ ]
+}

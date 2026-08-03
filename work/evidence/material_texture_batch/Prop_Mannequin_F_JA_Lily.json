@@ -1,0 +1,100 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Prop_Mannequin_F_JA_Lily",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Mannequin_F_JA_Lily.upk",
+ "source_sha256": "b9e8a986b1eec86c0e58a5d3d92add7f53c4d79b6f388a563c3511b15979d758",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Mannequin_F_JA_Lily.upk#Diffuse",
+   "object": "Diffuse",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_JA_Lily/Prop_Mannequin_F_JA_Lily/Texture2D/Diffuse.tga",
+   "extracted_sha256": "fd316362aea43d8c5a0da6b1c77e77d80e192b251f6b9d751dff991f7ff83010",
+   "output_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_JA_Lily/Prop_Mannequin_F_JA_Lily/Texture2D/Diffuse.tga",
+   "output_sha256": "fd316362aea43d8c5a0da6b1c77e77d80e192b251f6b9d751dff991f7ff83010",
+   "uasset": "Content/Imported/MaterialDatabase/Prop_Mannequin_F_JA_Lily/Diffuse.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Mannequin_F_JA_Lily.upk#F_Hair_Eyelashes_Opac",
+   "object": "F_Hair_Eyelashes_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_JA_Lily/F_Hair/Texture2D/F_Hair_Eyelashes_Opac.tga",
+   "extracted_sha256": "04a5790c59643d52826487d6dc0b9506563ef01f4a4b4c394f601a6439982bc5",
+   "output_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_JA_Lily/F_Hair/Texture2D/F_Hair_Eyelashes_Opac.tga",
+   "output_sha256": "04a5790c59643d52826487d6dc0b9506563ef01f4a4b4c394f601a6439982bc5",
+   "uasset": "Content/Imported/MaterialDatabase/Prop_Mannequin_F_JA_Lily/F_Hair_Eyelashes_Opac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Mannequin_F_JA_Lily.upk#FlatNormal_Norm",
+   "object": "FlatNormal_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_JA_Lily/GolemMaterials/Texture2D/FlatNormal_Norm.tga",
+   "extracted_sha256": "56f5dd67c9ed8ad48979c978a13ccfae1ea4b20cdb93f27b20cec443a23832e8",
+   "output_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_JA_Lily/GolemMaterials/Texture2D/FlatNormal_Norm.tga",
+   "output_sha256": "56f5dd67c9ed8ad48979c978a13ccfae1ea4b20cdb93f27b20cec443a23832e8",
+   "uasset": "Content/Imported/MaterialDatabase/Prop_Mannequin_F_JA_Lily/FlatNormal_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Mannequin_F_JA_Lily.upk#MI_BodyMaterial",
+   "object": "MI_BodyMaterial",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "BodyMaterial",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_JA_Lily/Prop_Mannequin_F_JA_Lily/Texture2D/Diffuse.tga",
+   "extracted_sha256": "fd316362aea43d8c5a0da6b1c77e77d80e192b251f6b9d751dff991f7ff83010",
+   "output_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_JA_Lily/Prop_Mannequin_F_JA_Lily/Texture2D/Diffuse.tga",
+   "output_sha256": "fd316362aea43d8c5a0da6b1c77e77d80e192b251f6b9d751dff991f7ff83010",
+   "uasset": "Content/Imported/MaterialDatabase/Prop_Mannequin_F_JA_Lily/MI_BodyMaterial.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Mannequin_F_JA_Lily.upk#MI_F_Hair_Eyelashes_Mat",
+   "object": "MI_F_Hair_Eyelashes_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "F_Hair_Eyelashes_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_JA_Lily/F_Hair/Texture2D/F_Hair_Eyelashes_Opac.tga",
+   "extracted_sha256": "04a5790c59643d52826487d6dc0b9506563ef01f4a4b4c394f601a6439982bc5",
+   "output_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_JA_Lily/F_Hair/Texture2D/F_Hair_Eyelashes_Opac.tga",
+   "output_sha256": "04a5790c59643d52826487d6dc0b9506563ef01f4a4b4c394f601a6439982bc5",
+   "uasset": "Content/Imported/MaterialDatabase/Prop_Mannequin_F_JA_Lily/MI_F_Hair_Eyelashes_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Mannequin_F_JA_Lily.upk#MI_HairMaterial",
+   "object": "MI_HairMaterial",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "HairMaterial",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_JA_Lily/GolemMaterials/Texture2D/FlatNormal_Norm.tga",
+   "extracted_sha256": "56f5dd67c9ed8ad48979c978a13ccfae1ea4b20cdb93f27b20cec443a23832e8",
+   "output_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_JA_Lily/GolemMaterials/Texture2D/FlatNormal_Norm.tga",
+   "output_sha256": "56f5dd67c9ed8ad48979c978a13ccfae1ea4b20cdb93f27b20cec443a23832e8",
+   "uasset": "Content/Imported/MaterialDatabase/Prop_Mannequin_F_JA_Lily/MI_HairMaterial.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/Props/JokerStore/Prop_Mannequin_F_JA_Lily.upk#Normal",
+   "object": "Normal",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_JA_Lily/Prop_Mannequin_F_JA_Lily/Texture2D/Normal.tga",
+   "extracted_sha256": "06b5e6133b5e91c994a8c33a3832f54d5bc4eda39922148e9927cb449326866e",
+   "output_file": "Content/Extracted/MaterialDatabase/Prop_Mannequin_F_JA_Lily/Prop_Mannequin_F_JA_Lily/Texture2D/Normal.tga",
+   "output_sha256": "06b5e6133b5e91c994a8c33a3832f54d5bc4eda39922148e9927cb449326866e",
+   "uasset": "Content/Imported/MaterialDatabase/Prop_Mannequin_F_JA_Lily/Normal.uasset"
+  }
+ ]
+}

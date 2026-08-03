@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "CSD_PictureFrames",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/PropMaterials/CSD_PictureFrames.upk",
+ "source_sha256": "2a9172d5916c13a323a693d3f3a358dd037ca9d41bf161c685d02280acb699f0",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_PictureFrames.upk#CSD_PictureFrames_DiffSpec",
+   "object": "CSD_PictureFrames_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_PictureFrames/CSD_PictureFrames/Texture2D/CSD_PictureFrames_DiffSpec.tga",
+   "extracted_sha256": "3c230a959de77abcd46494ed4cedf705c3aa8fc0efb0cb7be16f41e4f4f085b8",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_PictureFrames/CSD_PictureFrames/Texture2D/CSD_PictureFrames_DiffSpec.tga",
+   "output_sha256": "3c230a959de77abcd46494ed4cedf705c3aa8fc0efb0cb7be16f41e4f4f085b8",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_PictureFrames/CSD_PictureFrames_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_PictureFrames.upk#CSD_PictureFrames_Norm",
+   "object": "CSD_PictureFrames_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_PictureFrames/CSD_PictureFrames/Texture2D/CSD_PictureFrames_Norm.tga",
+   "extracted_sha256": "dee79c1033557dd4690a4b2d719ea13bdf4815333492426eecda08d49ffb060e",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_PictureFrames/CSD_PictureFrames/Texture2D/CSD_PictureFrames_Norm.tga",
+   "output_sha256": "dee79c1033557dd4690a4b2d719ea13bdf4815333492426eecda08d49ffb060e",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_PictureFrames/CSD_PictureFrames_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_PictureFrames.upk#MI_CSD_PictureFrames_MAT",
+   "object": "MI_CSD_PictureFrames_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CSD_PictureFrames_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_PictureFrames/CSD_PictureFrames/Texture2D/CSD_PictureFrames_DiffSpec.tga",
+   "extracted_sha256": "3c230a959de77abcd46494ed4cedf705c3aa8fc0efb0cb7be16f41e4f4f085b8",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_PictureFrames/CSD_PictureFrames/Texture2D/CSD_PictureFrames_DiffSpec.tga",
+   "output_sha256": "3c230a959de77abcd46494ed4cedf705c3aa8fc0efb0cb7be16f41e4f4f085b8",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_PictureFrames/MI_CSD_PictureFrames_MAT.uasset"
+  }
+ ]
+}

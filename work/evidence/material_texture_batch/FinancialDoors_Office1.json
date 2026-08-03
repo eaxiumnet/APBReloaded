@@ -1,0 +1,60 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "FinancialDoors_Office1",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialDoors_Office1.upk",
+ "source_sha256": "505f1c7ff60dc3896f7df43fb8445b02ca6646188d3772beef90359900858d99",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialDoors_Office1.upk#FinancialDoors_Office1_DiffSpec",
+   "object": "FinancialDoors_Office1_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialDoors_Office1/FinancialDoors_Office1/Texture2D/FinancialDoors_Office1_DiffSpec.tga",
+   "extracted_sha256": "6453471e0c432600fe54bc120bff6ae0cd575f9509f5f24a7779fe6c898281b0",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialDoors_Office1/FinancialDoors_Office1/Texture2D/FinancialDoors_Office1_DiffSpec.tga",
+   "output_sha256": "6453471e0c432600fe54bc120bff6ae0cd575f9509f5f24a7779fe6c898281b0",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialDoors_Office1/FinancialDoors_Office1_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialDoors_Office1.upk#FinancialDoors_Office1_Emis",
+   "object": "FinancialDoors_Office1_Emis",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialDoors_Office1/FinancialDoors_Office1/Texture2D/FinancialDoors_Office1_Emis.tga",
+   "extracted_sha256": "0acf83f8ba8c10a6c0c48ee15da79e90dece3ea719f0b1fef819c1fa852f35cc",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialDoors_Office1/FinancialDoors_Office1/Texture2D/FinancialDoors_Office1_Emis.tga",
+   "output_sha256": "0acf83f8ba8c10a6c0c48ee15da79e90dece3ea719f0b1fef819c1fa852f35cc",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialDoors_Office1/FinancialDoors_Office1_Emis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialDoors_Office1.upk#FinancialDoors_Office1_Norm",
+   "object": "FinancialDoors_Office1_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialDoors_Office1/FinancialDoors_Office1/Texture2D/FinancialDoors_Office1_Norm.tga",
+   "extracted_sha256": "82b9a051f97df48b0a55dc79d1ab7c6e1bc22a63eb61cf8279d245737f14a7df",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialDoors_Office1/FinancialDoors_Office1/Texture2D/FinancialDoors_Office1_Norm.tga",
+   "output_sha256": "82b9a051f97df48b0a55dc79d1ab7c6e1bc22a63eb61cf8279d245737f14a7df",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialDoors_Office1/FinancialDoors_Office1_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/FeatureMaterials/FinancialDoors_Office1.upk#MI_FinancialDoors_Office1_Mat",
+   "object": "MI_FinancialDoors_Office1_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "FinancialDoors_Office1_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/FinancialDoors_Office1/FinancialDoors_Office1/Texture2D/FinancialDoors_Office1_DiffSpec.tga",
+   "extracted_sha256": "6453471e0c432600fe54bc120bff6ae0cd575f9509f5f24a7779fe6c898281b0",
+   "output_file": "Content/Extracted/MaterialDatabase/FinancialDoors_Office1/FinancialDoors_Office1/Texture2D/FinancialDoors_Office1_DiffSpec.tga",
+   "output_sha256": "6453471e0c432600fe54bc120bff6ae0cd575f9509f5f24a7779fe6c898281b0",
+   "uasset": "Content/Imported/MaterialDatabase/FinancialDoors_Office1/MI_FinancialDoors_Office1_Mat.uasset"
+  }
+ ]
+}

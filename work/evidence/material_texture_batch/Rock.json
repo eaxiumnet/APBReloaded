@@ -1,0 +1,48 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Rock",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/TerrainMaterials/Rock.upk",
+ "source_sha256": "6e7c4820f9b9d084f0588da63fa3f5a57809ac93554650674038b0389247d314",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Rock.upk#Cliff01_Diff",
+   "object": "Cliff01_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Rock/Rock/Texture2D/Cliff01_Diff.tga",
+   "extracted_sha256": "44970c0bc9361c46cd0fc45418f3ca4986db7a1322dc70e5950e624b7881a0dc",
+   "output_file": "Content/Extracted/MaterialDatabase/Rock/Rock/Texture2D/Cliff01_Diff.tga",
+   "output_sha256": "44970c0bc9361c46cd0fc45418f3ca4986db7a1322dc70e5950e624b7881a0dc",
+   "uasset": "Content/Imported/MaterialDatabase/Rock/Cliff01_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Rock.upk#MI_Fallen_Rock",
+   "object": "MI_Fallen_Rock",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Fallen_Rock",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Rock/Rock/Texture2D/Cliff01_Diff.tga",
+   "extracted_sha256": "44970c0bc9361c46cd0fc45418f3ca4986db7a1322dc70e5950e624b7881a0dc",
+   "output_file": "Content/Extracted/MaterialDatabase/Rock/Rock/Texture2D/Cliff01_Diff.tga",
+   "output_sha256": "44970c0bc9361c46cd0fc45418f3ca4986db7a1322dc70e5950e624b7881a0dc",
+   "uasset": "Content/Imported/MaterialDatabase/Rock/MI_Fallen_Rock.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/TerrainMaterials/Rock.upk#MI_RockFace",
+   "object": "MI_RockFace",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "RockFace",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Rock/Rock/Texture2D/Cliff01_Diff.tga",
+   "extracted_sha256": "44970c0bc9361c46cd0fc45418f3ca4986db7a1322dc70e5950e624b7881a0dc",
+   "output_file": "Content/Extracted/MaterialDatabase/Rock/Rock/Texture2D/Cliff01_Diff.tga",
+   "output_sha256": "44970c0bc9361c46cd0fc45418f3ca4986db7a1322dc70e5950e624b7881a0dc",
+   "uasset": "Content/Imported/MaterialDatabase/Rock/MI_RockFace.uasset"
+  }
+ ]
+}

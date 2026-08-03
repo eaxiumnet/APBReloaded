@@ -1,0 +1,60 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Boxcar",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/Boxcar.upk",
+ "source_sha256": "3db4bfdbd0e08272b035bb7b94d2b51754260571e5e4e6ae6409c8b3e958ce3c",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Boxcar.upk#Boxcar_DiffSpec",
+   "object": "Boxcar_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Boxcar/Boxcar/Texture2D/Boxcar_DiffSpec.tga",
+   "extracted_sha256": "6dded461669d8ddb8fda96e63e1eaf971e013c538681e51ca32d39ff22873e57",
+   "output_file": "Content/Extracted/MaterialDatabase/Boxcar/Boxcar/Texture2D/Boxcar_DiffSpec.tga",
+   "output_sha256": "6dded461669d8ddb8fda96e63e1eaf971e013c538681e51ca32d39ff22873e57",
+   "uasset": "Content/Imported/MaterialDatabase/Boxcar/Boxcar_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Boxcar.upk#Boxcar_Norm",
+   "object": "Boxcar_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Boxcar/Boxcar/Texture2D/Boxcar_Norm.tga",
+   "extracted_sha256": "06bf1f24cc47c8073e106bfdef5723ccbc4ecc2d9bd425632ad17344ad10cbd6",
+   "output_file": "Content/Extracted/MaterialDatabase/Boxcar/Boxcar/Texture2D/Boxcar_Norm.tga",
+   "output_sha256": "06bf1f24cc47c8073e106bfdef5723ccbc4ecc2d9bd425632ad17344ad10cbd6",
+   "uasset": "Content/Imported/MaterialDatabase/Boxcar/Boxcar_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Boxcar.upk#Boxcar_Opac",
+   "object": "Boxcar_Opac",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Boxcar/Boxcar/Texture2D/Boxcar_Opac.tga",
+   "extracted_sha256": "7be5320a68f9966040a59584edc024f65dd9207ede983f26df2288b7899ca332",
+   "output_file": "Content/Extracted/MaterialDatabase/Boxcar/Boxcar/Texture2D/Boxcar_Opac.tga",
+   "output_sha256": "7be5320a68f9966040a59584edc024f65dd9207ede983f26df2288b7899ca332",
+   "uasset": "Content/Imported/MaterialDatabase/Boxcar/Boxcar_Opac.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/Boxcar.upk#MI_Boxcar_MAT",
+   "object": "MI_Boxcar_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Boxcar_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Boxcar/Boxcar/Texture2D/Boxcar_DiffSpec.tga",
+   "extracted_sha256": "6dded461669d8ddb8fda96e63e1eaf971e013c538681e51ca32d39ff22873e57",
+   "output_file": "Content/Extracted/MaterialDatabase/Boxcar/Boxcar/Texture2D/Boxcar_DiffSpec.tga",
+   "output_sha256": "6dded461669d8ddb8fda96e63e1eaf971e013c538681e51ca32d39ff22873e57",
+   "uasset": "Content/Imported/MaterialDatabase/Boxcar/MI_Boxcar_MAT.uasset"
+  }
+ ]
+}

@@ -1,0 +1,74 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Shop_Sign_Alpha",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Alpha.upk",
+ "source_sha256": "17edffbc680dcbc9a657ca3ffcb74541c4a0f313da516b6d6f522082920d7def",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Alpha.upk#bricks-Norm",
+   "object": "bricks-Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Alpha/Brick_Test/Texture2D/bricks-Norm.tga",
+   "extracted_sha256": "7714452a4e39c359b712c7d6dced44901978817a6516080bed8aa20be7c3a164",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Alpha/Brick_Test/Texture2D/bricks-Norm.tga",
+   "output_sha256": "7714452a4e39c359b712c7d6dced44901978817a6516080bed8aa20be7c3a164",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_Sign_Alpha/bricks-Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Alpha.upk#MI_BricksMat",
+   "object": "MI_BricksMat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "BricksMat",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Alpha/Brick_Test/Texture2D/bricks-Norm.tga",
+   "extracted_sha256": "7714452a4e39c359b712c7d6dced44901978817a6516080bed8aa20be7c3a164",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Alpha/Brick_Test/Texture2D/bricks-Norm.tga",
+   "output_sha256": "7714452a4e39c359b712c7d6dced44901978817a6516080bed8aa20be7c3a164",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_Sign_Alpha/MI_BricksMat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Alpha.upk#MI_Shop_Sign_Alpha_Mat",
+   "object": "MI_Shop_Sign_Alpha_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Shop_Sign_Alpha_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Alpha/Shop_Sign_Alpha/Texture2D/Shop_Sign_Alpha_Diffuse.tga",
+   "extracted_sha256": "d6af20728e297371f8f015654af98af6fc1538d0f20071b39d701fc4834e74f3",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Alpha/Shop_Sign_Alpha/Texture2D/Shop_Sign_Alpha_Diffuse.tga",
+   "output_sha256": "d6af20728e297371f8f015654af98af6fc1538d0f20071b39d701fc4834e74f3",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_Sign_Alpha/MI_Shop_Sign_Alpha_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Alpha.upk#Shop_Sign_Alpha_Diffuse",
+   "object": "Shop_Sign_Alpha_Diffuse",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Alpha/Shop_Sign_Alpha/Texture2D/Shop_Sign_Alpha_Diffuse.tga",
+   "extracted_sha256": "d6af20728e297371f8f015654af98af6fc1538d0f20071b39d701fc4834e74f3",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Alpha/Shop_Sign_Alpha/Texture2D/Shop_Sign_Alpha_Diffuse.tga",
+   "output_sha256": "d6af20728e297371f8f015654af98af6fc1538d0f20071b39d701fc4834e74f3",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_Sign_Alpha/Shop_Sign_Alpha_Diffuse.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/FeatureMaterials/Shop_Sign_Alpha.upk#Shop_Sign_Alpha_Normal",
+   "object": "Shop_Sign_Alpha_Normal",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Alpha/Shop_Sign_Alpha/Texture2D/Shop_Sign_Alpha_Normal.tga",
+   "extracted_sha256": "093c94e82e40a948eda33c432b9a3e99e00ade4687514e3f4e5a45fa4c798750",
+   "output_file": "Content/Extracted/MaterialDatabase/Shop_Sign_Alpha/Shop_Sign_Alpha/Texture2D/Shop_Sign_Alpha_Normal.tga",
+   "output_sha256": "093c94e82e40a948eda33c432b9a3e99e00ade4687514e3f4e5a45fa4c798750",
+   "uasset": "Content/Imported/MaterialDatabase/Shop_Sign_Alpha/Shop_Sign_Alpha_Normal.uasset"
+  }
+ ]
+}

@@ -1,0 +1,73 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Praetorian_Signage",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/Signage/Praetorian_Signage.upk",
+ "source_sha256": "6de559e31ced517c2ea10d6a7937ebd97cfd6d1450d45805ec574ba6cddd7e1d",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/Signage/Praetorian_Signage.upk#Concrete_003_Norm",
+   "object": "Concrete_003_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Praetorian_Signage/Concrete/Texture2D/Concrete_003_Norm.tga",
+   "extracted_sha256": "fe51cf21d28a3ec12c2b5041f35c6768302f98c29c1436db4d637b207fdda6e4",
+   "output_file": "Content/Extracted/MaterialDatabase/Praetorian_Signage/Concrete/Texture2D/Concrete_003_Norm.tga",
+   "output_sha256": "fe51cf21d28a3ec12c2b5041f35c6768302f98c29c1436db4d637b207fdda6e4",
+   "uasset": "Content/Imported/MaterialDatabase/Praetorian_Signage/Concrete_003_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/Signage/Praetorian_Signage.upk#Concrete_01_DiffSpec",
+   "object": "Concrete_01_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Praetorian_Signage/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Praetorian_Signage/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/Praetorian_Signage/Concrete_01_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/Signage/Praetorian_Signage.upk#MI_Conc_PARENT",
+   "object": "MI_Conc_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Conc_PARENT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Praetorian_Signage/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/Praetorian_Signage/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/Praetorian_Signage/MI_Conc_PARENT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/Signage/Praetorian_Signage.upk#MI_Praetorian_Sign_Mat",
+   "object": "MI_Praetorian_Sign_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Praetorian_Sign_Mat",
+   "texture_roles": [
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Praetorian_Signage/Praetorian_Signage/Texture2D/Praetorian_Signage_NRM.tga",
+   "extracted_sha256": "8e69777f65ddc3b2ed79122669075f516f277e5fb13ea22b06a50ce1ba7615f0",
+   "output_file": "Content/Extracted/MaterialDatabase/Praetorian_Signage/Praetorian_Signage/Texture2D/Praetorian_Signage_NRM.tga",
+   "output_sha256": "8e69777f65ddc3b2ed79122669075f516f277e5fb13ea22b06a50ce1ba7615f0",
+   "uasset": "Content/Imported/MaterialDatabase/Praetorian_Signage/MI_Praetorian_Sign_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/Signage/Praetorian_Signage.upk#Praetorian_Signage_NRM",
+   "object": "Praetorian_Signage_NRM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Praetorian_Signage/Praetorian_Signage/Texture2D/Praetorian_Signage_NRM.tga",
+   "extracted_sha256": "8e69777f65ddc3b2ed79122669075f516f277e5fb13ea22b06a50ce1ba7615f0",
+   "output_file": "Content/Extracted/MaterialDatabase/Praetorian_Signage/Praetorian_Signage/Texture2D/Praetorian_Signage_NRM.tga",
+   "output_sha256": "8e69777f65ddc3b2ed79122669075f516f277e5fb13ea22b06a50ce1ba7615f0",
+   "uasset": "Content/Imported/MaterialDatabase/Praetorian_Signage/Praetorian_Signage_NRM.uasset"
+  }
+ ]
+}

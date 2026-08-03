@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Fieldstone_Brick",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/ToBeRemoved/Fieldstone_Brick.upk",
+ "source_sha256": "2430fdcd30c4c59e38934cb502016537f94744964cb25a23079a84639f332954",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/ToBeRemoved/Fieldstone_Brick.upk#MI_Stone_Bricks_Mat",
+   "object": "MI_Stone_Bricks_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Stone_Bricks_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Fieldstone_Brick/Fieldstone_Brick/Texture2D/Stone_Bricks_DiffSpec.tga",
+   "extracted_sha256": "92abf3e9bd6fbcb85172654d7f20330c7a8ce9307bf9aeac22a190986417cfb1",
+   "output_file": "Content/Extracted/MaterialDatabase/Fieldstone_Brick/Fieldstone_Brick/Texture2D/Stone_Bricks_DiffSpec.tga",
+   "output_sha256": "92abf3e9bd6fbcb85172654d7f20330c7a8ce9307bf9aeac22a190986417cfb1",
+   "uasset": "Content/Imported/MaterialDatabase/Fieldstone_Brick/MI_Stone_Bricks_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/ToBeRemoved/Fieldstone_Brick.upk#Stone_Bricks_DiffSpec",
+   "object": "Stone_Bricks_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Fieldstone_Brick/Fieldstone_Brick/Texture2D/Stone_Bricks_DiffSpec.tga",
+   "extracted_sha256": "92abf3e9bd6fbcb85172654d7f20330c7a8ce9307bf9aeac22a190986417cfb1",
+   "output_file": "Content/Extracted/MaterialDatabase/Fieldstone_Brick/Fieldstone_Brick/Texture2D/Stone_Bricks_DiffSpec.tga",
+   "output_sha256": "92abf3e9bd6fbcb85172654d7f20330c7a8ce9307bf9aeac22a190986417cfb1",
+   "uasset": "Content/Imported/MaterialDatabase/Fieldstone_Brick/Stone_Bricks_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/ToBeRemoved/Fieldstone_Brick.upk#Stone_Bricks_Norm",
+   "object": "Stone_Bricks_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Fieldstone_Brick/Fieldstone_Brick/Texture2D/Stone_Bricks_Norm.tga",
+   "extracted_sha256": "3f359f7d0cf5bce91486ce159c8c424eb6854edaf97dd1e38c76d8c067f17ddf",
+   "output_file": "Content/Extracted/MaterialDatabase/Fieldstone_Brick/Fieldstone_Brick/Texture2D/Stone_Bricks_Norm.tga",
+   "output_sha256": "3f359f7d0cf5bce91486ce159c8c424eb6854edaf97dd1e38c76d8c067f17ddf",
+   "uasset": "Content/Imported/MaterialDatabase/Fieldstone_Brick/Stone_Bricks_Norm.uasset"
+  }
+ ]
+}

@@ -1,0 +1,107 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Brick_Old_GraffitiTemp",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/Brick/Graffiti/Brick_Old_GraffitiTemp.upk",
+ "source_sha256": "9937df4f5fe47e003d82e5feee21e662eb744b58e1d16719e0e6bb3e08d4e89b",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Graffiti/Brick_Old_GraffitiTemp.upk#Brick_Old_DiffSpec",
+   "object": "Brick_Old_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Brick_Old_GraffitiTemp/Brick_Old_GraffitiTemp/Texture2D/Brick_Old_DiffSpec.tga",
+   "extracted_sha256": "53a129e87e4cc5a321ee8803abbd486b8de3ad26d3d5d101d83aa5f99b62191e",
+   "output_file": "Content/Extracted/MaterialDatabase/Brick_Old_GraffitiTemp/Brick_Old_GraffitiTemp/Texture2D/Brick_Old_DiffSpec.tga",
+   "output_sha256": "53a129e87e4cc5a321ee8803abbd486b8de3ad26d3d5d101d83aa5f99b62191e",
+   "uasset": "Content/Imported/MaterialDatabase/Brick_Old_GraffitiTemp/Brick_Old_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Graffiti/Brick_Old_GraffitiTemp.upk#Brick_Old_Norm",
+   "object": "Brick_Old_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Brick_Old_GraffitiTemp/Brick_Old_GraffitiTemp/Texture2D/Brick_Old_Norm.tga",
+   "extracted_sha256": "2d06ef3215260f0922f72d3253142c9aace9f81c7fba6515c7c045bb0cb09bc0",
+   "output_file": "Content/Extracted/MaterialDatabase/Brick_Old_GraffitiTemp/Brick_Old_GraffitiTemp/Texture2D/Brick_Old_Norm.tga",
+   "output_sha256": "2d06ef3215260f0922f72d3253142c9aace9f81c7fba6515c7c045bb0cb09bc0",
+   "uasset": "Content/Imported/MaterialDatabase/Brick_Old_GraffitiTemp/Brick_Old_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Graffiti/Brick_Old_GraffitiTemp.upk#MI_Brick_Old_GraffitiTemp_ArtGraffiti",
+   "object": "MI_Brick_Old_GraffitiTemp_ArtGraffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Brick_Old_GraffitiTemp_ArtGraffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Brick_Old_GraffitiTemp/Brick_Old_GraffitiTemp/Texture2D/Brick_Old_DiffSpec.tga",
+   "extracted_sha256": "53a129e87e4cc5a321ee8803abbd486b8de3ad26d3d5d101d83aa5f99b62191e",
+   "output_file": "Content/Extracted/MaterialDatabase/Brick_Old_GraffitiTemp/Brick_Old_GraffitiTemp/Texture2D/Brick_Old_DiffSpec.tga",
+   "output_sha256": "53a129e87e4cc5a321ee8803abbd486b8de3ad26d3d5d101d83aa5f99b62191e",
+   "uasset": "Content/Imported/MaterialDatabase/Brick_Old_GraffitiTemp/MI_Brick_Old_GraffitiTemp_ArtGraffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Graffiti/Brick_Old_GraffitiTemp.upk#MI_Brick_Old_GraffitiTemp_ControlGraffiti",
+   "object": "MI_Brick_Old_GraffitiTemp_ControlGraffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Brick_Old_GraffitiTemp_ControlGraffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Brick_Old_GraffitiTemp/Brick_Old_GraffitiTemp/Texture2D/Brick_Old_DiffSpec.tga",
+   "extracted_sha256": "53a129e87e4cc5a321ee8803abbd486b8de3ad26d3d5d101d83aa5f99b62191e",
+   "output_file": "Content/Extracted/MaterialDatabase/Brick_Old_GraffitiTemp/Brick_Old_GraffitiTemp/Texture2D/Brick_Old_DiffSpec.tga",
+   "output_sha256": "53a129e87e4cc5a321ee8803abbd486b8de3ad26d3d5d101d83aa5f99b62191e",
+   "uasset": "Content/Imported/MaterialDatabase/Brick_Old_GraffitiTemp/MI_Brick_Old_GraffitiTemp_ControlGraffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Graffiti/Brick_Old_GraffitiTemp.upk#MI_Brick_Old_GraffitiTemp_CrimeGraffiti",
+   "object": "MI_Brick_Old_GraffitiTemp_CrimeGraffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Brick_Old_GraffitiTemp_CrimeGraffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Brick_Old_GraffitiTemp/Brick_Old_GraffitiTemp/Texture2D/Brick_Old_DiffSpec.tga",
+   "extracted_sha256": "53a129e87e4cc5a321ee8803abbd486b8de3ad26d3d5d101d83aa5f99b62191e",
+   "output_file": "Content/Extracted/MaterialDatabase/Brick_Old_GraffitiTemp/Brick_Old_GraffitiTemp/Texture2D/Brick_Old_DiffSpec.tga",
+   "output_sha256": "53a129e87e4cc5a321ee8803abbd486b8de3ad26d3d5d101d83aa5f99b62191e",
+   "uasset": "Content/Imported/MaterialDatabase/Brick_Old_GraffitiTemp/MI_Brick_Old_GraffitiTemp_CrimeGraffiti.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Graffiti/Brick_Old_GraffitiTemp.upk#MI_Brick_Old_GraffitiTemp_Mat",
+   "object": "MI_Brick_Old_GraffitiTemp_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Brick_Old_GraffitiTemp_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Brick_Old_GraffitiTemp/Brick_Old_GraffitiTemp/Texture2D/Brick_Old_DiffSpec.tga",
+   "extracted_sha256": "53a129e87e4cc5a321ee8803abbd486b8de3ad26d3d5d101d83aa5f99b62191e",
+   "output_file": "Content/Extracted/MaterialDatabase/Brick_Old_GraffitiTemp/Brick_Old_GraffitiTemp/Texture2D/Brick_Old_DiffSpec.tga",
+   "output_sha256": "53a129e87e4cc5a321ee8803abbd486b8de3ad26d3d5d101d83aa5f99b62191e",
+   "uasset": "Content/Imported/MaterialDatabase/Brick_Old_GraffitiTemp/MI_Brick_Old_GraffitiTemp_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Brick/Graffiti/Brick_Old_GraffitiTemp.upk#MI_Brick_Old_GraffitiTemp_TurfGraffiti",
+   "object": "MI_Brick_Old_GraffitiTemp_TurfGraffiti",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Brick_Old_GraffitiTemp_TurfGraffiti",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Brick_Old_GraffitiTemp/Brick_Old_GraffitiTemp/Texture2D/Brick_Old_DiffSpec.tga",
+   "extracted_sha256": "53a129e87e4cc5a321ee8803abbd486b8de3ad26d3d5d101d83aa5f99b62191e",
+   "output_file": "Content/Extracted/MaterialDatabase/Brick_Old_GraffitiTemp/Brick_Old_GraffitiTemp/Texture2D/Brick_Old_DiffSpec.tga",
+   "output_sha256": "53a129e87e4cc5a321ee8803abbd486b8de3ad26d3d5d101d83aa5f99b62191e",
+   "uasset": "Content/Imported/MaterialDatabase/Brick_Old_GraffitiTemp/MI_Brick_Old_GraffitiTemp_TurfGraffiti.uasset"
+  }
+ ]
+}

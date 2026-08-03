@@ -1,0 +1,88 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "CSD_Vista",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Vista.upk",
+ "source_sha256": "584e65df3cc930ec40d698820fa000a7e2d34a4fd125937b6c2e4ddc7f2303c2",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Vista.upk#B44_Diff",
+   "object": "B44_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Vista/CSD_Vista/Texture2D/B44_Diff.tga",
+   "extracted_sha256": "48348aecc189a3a5830c25c1118b373050a5bb0424bb5e81f0621489bddbe843",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Vista/CSD_Vista/Texture2D/B44_Diff.tga",
+   "output_sha256": "48348aecc189a3a5830c25c1118b373050a5bb0424bb5e81f0621489bddbe843",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Vista/B44_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Vista.upk#Concrete_003_Norm",
+   "object": "Concrete_003_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Vista/Concrete/Texture2D/Concrete_003_Norm.tga",
+   "extracted_sha256": "fe51cf21d28a3ec12c2b5041f35c6768302f98c29c1436db4d637b207fdda6e4",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Vista/Concrete/Texture2D/Concrete_003_Norm.tga",
+   "output_sha256": "fe51cf21d28a3ec12c2b5041f35c6768302f98c29c1436db4d637b207fdda6e4",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Vista/Concrete_003_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Vista.upk#Concrete_01_DiffSpec",
+   "object": "Concrete_01_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Vista/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Vista/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Vista/Concrete_01_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Vista.upk#MI_Conc_GreyDark",
+   "object": "MI_Conc_GreyDark",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Conc_GreyDark",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Vista/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Vista/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Vista/MI_Conc_GreyDark.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Vista.upk#MI_Conc_PARENT",
+   "object": "MI_Conc_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Conc_PARENT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Vista/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "extracted_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Vista/Concrete/Texture2D/Concrete_01_DiffSpec.tga",
+   "output_sha256": "459b42cac8dbcea3d54abd7274b1d49980fa537c2d72d79bdb3a145c5f613aa2",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Vista/MI_Conc_PARENT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_Vista.upk#MI_CSD_Vista_MAT",
+   "object": "MI_CSD_Vista_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CSD_Vista_MAT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_Vista/CSD_Vista/Texture2D/B44_Diff.tga",
+   "extracted_sha256": "48348aecc189a3a5830c25c1118b373050a5bb0424bb5e81f0621489bddbe843",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_Vista/CSD_Vista/Texture2D/B44_Diff.tga",
+   "output_sha256": "48348aecc189a3a5830c25c1118b373050a5bb0424bb5e81f0621489bddbe843",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_Vista/MI_CSD_Vista_MAT.uasset"
+  }
+ ]
+}

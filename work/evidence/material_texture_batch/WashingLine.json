@@ -1,0 +1,60 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "WashingLine",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/MidtownDistrict/PropMaterials/WashingLine.upk",
+ "source_sha256": "8ad6e42ed3313c0bb58fd9ad778ef0a70ca5b95507c50e8a684f0cc26785ce9f",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/WashingLine.upk#MI_WashingLine_MAT",
+   "object": "MI_WashingLine_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WashingLine_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal",
+    "Opacity"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WashingLine/WashingLine/Texture2D/WashingLine_DiffSpec.tga",
+   "extracted_sha256": "7b21dd2f1407f8b8380b9e2bbab30e9df0e21796f19ec6560da01dc8117b5bc5",
+   "output_file": "Content/Extracted/MaterialDatabase/WashingLine/WashingLine/Texture2D/WashingLine_DiffSpec.tga",
+   "output_sha256": "7b21dd2f1407f8b8380b9e2bbab30e9df0e21796f19ec6560da01dc8117b5bc5",
+   "uasset": "Content/Imported/MaterialDatabase/WashingLine/MI_WashingLine_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/WashingLine.upk#WashingLine_DiffSpec",
+   "object": "WashingLine_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WashingLine/WashingLine/Texture2D/WashingLine_DiffSpec.tga",
+   "extracted_sha256": "7b21dd2f1407f8b8380b9e2bbab30e9df0e21796f19ec6560da01dc8117b5bc5",
+   "output_file": "Content/Extracted/MaterialDatabase/WashingLine/WashingLine/Texture2D/WashingLine_DiffSpec.tga",
+   "output_sha256": "7b21dd2f1407f8b8380b9e2bbab30e9df0e21796f19ec6560da01dc8117b5bc5",
+   "uasset": "Content/Imported/MaterialDatabase/WashingLine/WashingLine_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/WashingLine.upk#WashingLine_Norm",
+   "object": "WashingLine_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WashingLine/WashingLine/Texture2D/WashingLine_Norm.tga",
+   "extracted_sha256": "68dc277c7f5eac1f46aacdc6d5c39d907d9d8a0ab4bd481529ed4f1c655057d5",
+   "output_file": "Content/Extracted/MaterialDatabase/WashingLine/WashingLine/Texture2D/WashingLine_Norm.tga",
+   "output_sha256": "68dc277c7f5eac1f46aacdc6d5c39d907d9d8a0ab4bd481529ed4f1c655057d5",
+   "uasset": "Content/Imported/MaterialDatabase/WashingLine/WashingLine_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/MidtownDistrict/PropMaterials/WashingLine.upk#WashingLine_Opacity",
+   "object": "WashingLine_Opacity",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WashingLine/WashingLine/Texture2D/WashingLine_Opacity.tga",
+   "extracted_sha256": "db21600a3942756bc41f485e4cfe8972c7e9952a232c094b6444a63c770778eb",
+   "output_file": "Content/Extracted/MaterialDatabase/WashingLine/WashingLine/Texture2D/WashingLine_Opacity.tga",
+   "output_sha256": "db21600a3942756bc41f485e4cfe8972c7e9952a232c094b6444a63c770778eb",
+   "uasset": "Content/Imported/MaterialDatabase/WashingLine/WashingLine_Opacity.uasset"
+  }
+ ]
+}

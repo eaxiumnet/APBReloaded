@@ -1,0 +1,92 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Wood_Horizontal",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/Wood/Wood_Horizontal.upk",
+ "source_sha256": "37af71884d17021d9e0736ce6201c159729b7e94266a73270f798fbef77f07d1",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Wood_Horizontal.upk#MI_Wood_Horizontal_Brown",
+   "object": "MI_Wood_Horizontal_Brown",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Wood_Horizontal_Brown",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Wood_Horizontal/Wood_Horizontal/Texture2D/WoodHorizontal_DiffSpec.tga",
+   "extracted_sha256": "71950e6969057ff6b42ebda2a64ef7945b52b2d1e74646e0127bdfbad8299871",
+   "output_file": "Content/Extracted/MaterialDatabase/Wood_Horizontal/Wood_Horizontal/Texture2D/WoodHorizontal_DiffSpec.tga",
+   "output_sha256": "71950e6969057ff6b42ebda2a64ef7945b52b2d1e74646e0127bdfbad8299871",
+   "uasset": "Content/Imported/MaterialDatabase/Wood_Horizontal/MI_Wood_Horizontal_Brown.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Wood_Horizontal.upk#MI_Wood_Horizontal_Grey",
+   "object": "MI_Wood_Horizontal_Grey",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Wood_Horizontal_Grey",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Wood_Horizontal/Wood_Horizontal/Texture2D/WoodHorizontal_DiffSpec.tga",
+   "extracted_sha256": "71950e6969057ff6b42ebda2a64ef7945b52b2d1e74646e0127bdfbad8299871",
+   "output_file": "Content/Extracted/MaterialDatabase/Wood_Horizontal/Wood_Horizontal/Texture2D/WoodHorizontal_DiffSpec.tga",
+   "output_sha256": "71950e6969057ff6b42ebda2a64ef7945b52b2d1e74646e0127bdfbad8299871",
+   "uasset": "Content/Imported/MaterialDatabase/Wood_Horizontal/MI_Wood_Horizontal_Grey.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Wood_Horizontal.upk#MI_Wood_Horizontal_PARENT",
+   "object": "MI_Wood_Horizontal_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Wood_Horizontal_PARENT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Wood_Horizontal/Wood_Horizontal/Texture2D/WoodHorizontal_DiffSpec.tga",
+   "extracted_sha256": "71950e6969057ff6b42ebda2a64ef7945b52b2d1e74646e0127bdfbad8299871",
+   "output_file": "Content/Extracted/MaterialDatabase/Wood_Horizontal/Wood_Horizontal/Texture2D/WoodHorizontal_DiffSpec.tga",
+   "output_sha256": "71950e6969057ff6b42ebda2a64ef7945b52b2d1e74646e0127bdfbad8299871",
+   "uasset": "Content/Imported/MaterialDatabase/Wood_Horizontal/MI_Wood_Horizontal_PARENT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Wood_Horizontal.upk#MI_Wood_Horizontal_Pine",
+   "object": "MI_Wood_Horizontal_Pine",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Wood_Horizontal_Pine",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Wood_Horizontal/Wood_Horizontal/Texture2D/WoodHorizontal_DiffSpec.tga",
+   "extracted_sha256": "71950e6969057ff6b42ebda2a64ef7945b52b2d1e74646e0127bdfbad8299871",
+   "output_file": "Content/Extracted/MaterialDatabase/Wood_Horizontal/Wood_Horizontal/Texture2D/WoodHorizontal_DiffSpec.tga",
+   "output_sha256": "71950e6969057ff6b42ebda2a64ef7945b52b2d1e74646e0127bdfbad8299871",
+   "uasset": "Content/Imported/MaterialDatabase/Wood_Horizontal/MI_Wood_Horizontal_Pine.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Wood_Horizontal.upk#WoodHorizontal_DiffSpec",
+   "object": "WoodHorizontal_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Wood_Horizontal/Wood_Horizontal/Texture2D/WoodHorizontal_DiffSpec.tga",
+   "extracted_sha256": "71950e6969057ff6b42ebda2a64ef7945b52b2d1e74646e0127bdfbad8299871",
+   "output_file": "Content/Extracted/MaterialDatabase/Wood_Horizontal/Wood_Horizontal/Texture2D/WoodHorizontal_DiffSpec.tga",
+   "output_sha256": "71950e6969057ff6b42ebda2a64ef7945b52b2d1e74646e0127bdfbad8299871",
+   "uasset": "Content/Imported/MaterialDatabase/Wood_Horizontal/WoodHorizontal_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Wood/Wood_Horizontal.upk#WoodHorizontal_Norm",
+   "object": "WoodHorizontal_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Wood_Horizontal/Wood_Horizontal/Texture2D/WoodHorizontal_Norm.tga",
+   "extracted_sha256": "507c4b736662a68984168ea14a3f101af9d1b4b3032360ef15af8af5d7dceb3f",
+   "output_file": "Content/Extracted/MaterialDatabase/Wood_Horizontal/Wood_Horizontal/Texture2D/WoodHorizontal_Norm.tga",
+   "output_sha256": "507c4b736662a68984168ea14a3f101af9d1b4b3032360ef15af8af5d7dceb3f",
+   "uasset": "Content/Imported/MaterialDatabase/Wood_Horizontal/WoodHorizontal_Norm.uasset"
+  }
+ ]
+}

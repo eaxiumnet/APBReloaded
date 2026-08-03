@@ -1,0 +1,34 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Baylan_01",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/Signage/Baylan_01.upk",
+ "source_sha256": "851b3607b818b54b51abea4786e4299ab171fc46d4ae75e73434fb3ccfa42132",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/Signage/Baylan_01.upk#LOGO_Baylan_Text_01",
+   "object": "LOGO_Baylan_Text_01",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Baylan_01/Baylan_01/Texture2D/LOGO_Baylan_Text_01.tga",
+   "extracted_sha256": "5add27729e2e0223f88a94983b142b87606026d883397d85665cd37d568f4d08",
+   "output_file": "Content/Extracted/MaterialDatabase/Baylan_01/Baylan_01/Texture2D/LOGO_Baylan_Text_01.tga",
+   "output_sha256": "5add27729e2e0223f88a94983b142b87606026d883397d85665cd37d568f4d08",
+   "uasset": "Content/Imported/MaterialDatabase/Baylan_01/LOGO_Baylan_Text_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/Signage/Baylan_01.upk#MI_LOGO_Baylan_01",
+   "object": "MI_LOGO_Baylan_01",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "LOGO_Baylan_01",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Baylan_01/Baylan_01/Texture2D/LOGO_Baylan_Text_01.tga",
+   "extracted_sha256": "5add27729e2e0223f88a94983b142b87606026d883397d85665cd37d568f4d08",
+   "output_file": "Content/Extracted/MaterialDatabase/Baylan_01/Baylan_01/Texture2D/LOGO_Baylan_Text_01.tga",
+   "output_sha256": "5add27729e2e0223f88a94983b142b87606026d883397d85665cd37d568f4d08",
+   "uasset": "Content/Imported/MaterialDatabase/Baylan_01/MI_LOGO_Baylan_01.uasset"
+  }
+ ]
+}

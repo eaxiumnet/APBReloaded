@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "CSD_OperatingTrolley",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/AsylumDistrict/PropMaterials/CSD_OperatingTrolley.upk",
+ "source_sha256": "52d48f243906c70f05c1484bb4a0705dee10c860bc56585dd2d315788c2961b9",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_OperatingTrolley.upk#CSD_OperatingTrolley_DiffSpec",
+   "object": "CSD_OperatingTrolley_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_OperatingTrolley/CSD_OperatingTrolley/Texture2D/CSD_OperatingTrolley_DiffSpec.tga",
+   "extracted_sha256": "96c368c27dd2ccfaaae4b6a1965468b6a33d7b46098d16aa4c9e65732cd75ed6",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_OperatingTrolley/CSD_OperatingTrolley/Texture2D/CSD_OperatingTrolley_DiffSpec.tga",
+   "output_sha256": "96c368c27dd2ccfaaae4b6a1965468b6a33d7b46098d16aa4c9e65732cd75ed6",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_OperatingTrolley/CSD_OperatingTrolley_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_OperatingTrolley.upk#CSD_OperatingTrolley_Norm",
+   "object": "CSD_OperatingTrolley_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_OperatingTrolley/CSD_OperatingTrolley/Texture2D/CSD_OperatingTrolley_Norm.tga",
+   "extracted_sha256": "21c5f5587c09852baae1e7c3c6f9774a4b448f7f8ace912fa2d47b9888073eac",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_OperatingTrolley/CSD_OperatingTrolley/Texture2D/CSD_OperatingTrolley_Norm.tga",
+   "output_sha256": "21c5f5587c09852baae1e7c3c6f9774a4b448f7f8ace912fa2d47b9888073eac",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_OperatingTrolley/CSD_OperatingTrolley_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/AsylumDistrict/PropMaterials/CSD_OperatingTrolley.upk#MI_CSD_OperatingTrolley_MAT",
+   "object": "MI_CSD_OperatingTrolley_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "CSD_OperatingTrolley_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/CSD_OperatingTrolley/CSD_OperatingTrolley/Texture2D/CSD_OperatingTrolley_DiffSpec.tga",
+   "extracted_sha256": "96c368c27dd2ccfaaae4b6a1965468b6a33d7b46098d16aa4c9e65732cd75ed6",
+   "output_file": "Content/Extracted/MaterialDatabase/CSD_OperatingTrolley/CSD_OperatingTrolley/Texture2D/CSD_OperatingTrolley_DiffSpec.tga",
+   "output_sha256": "96c368c27dd2ccfaaae4b6a1965468b6a33d7b46098d16aa4c9e65732cd75ed6",
+   "uasset": "Content/Imported/MaterialDatabase/CSD_OperatingTrolley/MI_CSD_OperatingTrolley_MAT.uasset"
+  }
+ ]
+}

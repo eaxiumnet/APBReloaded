@@ -1,0 +1,47 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "WaterfrontCargoCrane",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCargoCrane.upk",
+ "source_sha256": "f949a61cf5480b51cbb8d550b371ac04bb080291e0205035a59b78a0839a89d0",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCargoCrane.upk#MI_WaterfrontCargoCrane_MAT",
+   "object": "MI_WaterfrontCargoCrane_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WaterfrontCargoCrane_MAT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontCargoCrane/WaterfrontCargoCrane/Texture2D/WaterfrontCargoCranes_DiffSpec.tga",
+   "extracted_sha256": "1c441f5d18adaf6750dfd5aeae8e298ed56d74d55bf76dd680919b4d641ff514",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontCargoCrane/WaterfrontCargoCrane/Texture2D/WaterfrontCargoCranes_DiffSpec.tga",
+   "output_sha256": "1c441f5d18adaf6750dfd5aeae8e298ed56d74d55bf76dd680919b4d641ff514",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontCargoCrane/MI_WaterfrontCargoCrane_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCargoCrane.upk#WaterfrontCargoCranes_DiffSpec",
+   "object": "WaterfrontCargoCranes_DiffSpec",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontCargoCrane/WaterfrontCargoCrane/Texture2D/WaterfrontCargoCranes_DiffSpec.tga",
+   "extracted_sha256": "1c441f5d18adaf6750dfd5aeae8e298ed56d74d55bf76dd680919b4d641ff514",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontCargoCrane/WaterfrontCargoCrane/Texture2D/WaterfrontCargoCranes_DiffSpec.tga",
+   "output_sha256": "1c441f5d18adaf6750dfd5aeae8e298ed56d74d55bf76dd680919b4d641ff514",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontCargoCrane/WaterfrontCargoCranes_DiffSpec.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/WaterfrontDistrict/PropMaterials/WaterfrontCargoCrane.upk#WaterfrontCargoCranes_Norm",
+   "object": "WaterfrontCargoCranes_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/WaterfrontCargoCrane/WaterfrontCargoCrane/Texture2D/WaterfrontCargoCranes_Norm.tga",
+   "extracted_sha256": "3610b2853227a48a79b1901e614ed23f0e31bfdce95aa0688058cf1582cdc439",
+   "output_file": "Content/Extracted/MaterialDatabase/WaterfrontCargoCrane/WaterfrontCargoCrane/Texture2D/WaterfrontCargoCranes_Norm.tga",
+   "output_sha256": "3610b2853227a48a79b1901e614ed23f0e31bfdce95aa0688058cf1582cdc439",
+   "uasset": "Content/Imported/MaterialDatabase/WaterfrontCargoCrane/WaterfrontCargoCranes_Norm.uasset"
+  }
+ ]
+}

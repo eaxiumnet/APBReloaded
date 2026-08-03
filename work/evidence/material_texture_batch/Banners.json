@@ -1,0 +1,118 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Banners",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/FinancialDistrict/Signs/Banners.upk",
+ "source_sha256": "f3d669226febd2bd866955d461578ab93a062582ea402240d9947d82b8b43726",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/Banners.upk#Banner_SpecEmiss",
+   "object": "Banner_SpecEmiss",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Banners/Banners/Texture2D/Banner_SpecEmiss.tga",
+   "extracted_sha256": "99392bb1785f821232f055c519b1193298f66c14b759752d6a2c70a93f4e2670",
+   "output_file": "Content/Extracted/MaterialDatabase/Banners/Banners/Texture2D/Banner_SpecEmiss.tga",
+   "output_sha256": "99392bb1785f821232f055c519b1193298f66c14b759752d6a2c70a93f4e2670",
+   "uasset": "Content/Imported/MaterialDatabase/Banners/Banner_SpecEmiss.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/Banners.upk#Banner_Wind_NORM",
+   "object": "Banner_Wind_NORM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Banners/Banners/Texture2D/Banner_Wind_NORM.tga",
+   "extracted_sha256": "e13d9c9776faf464b922f0292a6a9476257c57818deebd813390bca01bafc9a9",
+   "output_file": "Content/Extracted/MaterialDatabase/Banners/Banners/Texture2D/Banner_Wind_NORM.tga",
+   "output_sha256": "e13d9c9776faf464b922f0292a6a9476257c57818deebd813390bca01bafc9a9",
+   "uasset": "Content/Imported/MaterialDatabase/Banners/Banner_Wind_NORM.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/Banners.upk#BannerCityHall",
+   "object": "BannerCityHall",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Banners/Banners/Texture2D/BannerCityHall.tga",
+   "extracted_sha256": "1da3de76f6b93ffc8b5fc467b61304e9b59e35b42a999c46a1bfc1ee188dc1ca",
+   "output_file": "Content/Extracted/MaterialDatabase/Banners/Banners/Texture2D/BannerCityHall.tga",
+   "output_sha256": "1da3de76f6b93ffc8b5fc467b61304e9b59e35b42a999c46a1bfc1ee188dc1ca",
+   "uasset": "Content/Imported/MaterialDatabase/Banners/BannerCityHall.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/Banners.upk#BannerFestival",
+   "object": "BannerFestival",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Banners/Banners/Texture2D/BannerFestival.tga",
+   "extracted_sha256": "2fcf835502340d78f93b731e4d35a0642b9ee7b22c103544c55d079d6f516414",
+   "output_file": "Content/Extracted/MaterialDatabase/Banners/Banners/Texture2D/BannerFestival.tga",
+   "output_sha256": "2fcf835502340d78f93b731e4d35a0642b9ee7b22c103544c55d079d6f516414",
+   "uasset": "Content/Imported/MaterialDatabase/Banners/BannerFestival.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/Banners.upk#MI_Banners_material",
+   "object": "MI_Banners_material",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Banners_material",
+   "texture_roles": [
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Banners/Banners/Texture2D/Banner_Wind_NORM.tga",
+   "extracted_sha256": "e13d9c9776faf464b922f0292a6a9476257c57818deebd813390bca01bafc9a9",
+   "output_file": "Content/Extracted/MaterialDatabase/Banners/Banners/Texture2D/Banner_Wind_NORM.tga",
+   "output_sha256": "e13d9c9776faf464b922f0292a6a9476257c57818deebd813390bca01bafc9a9",
+   "uasset": "Content/Imported/MaterialDatabase/Banners/MI_Banners_material.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/Banners.upk#MI_Banners_material_Cityhall",
+   "object": "MI_Banners_material_Cityhall",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Banners_material_Cityhall",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Banners/Banners/Texture2D/BannerCityHall.tga",
+   "extracted_sha256": "1da3de76f6b93ffc8b5fc467b61304e9b59e35b42a999c46a1bfc1ee188dc1ca",
+   "output_file": "Content/Extracted/MaterialDatabase/Banners/Banners/Texture2D/BannerCityHall.tga",
+   "output_sha256": "1da3de76f6b93ffc8b5fc467b61304e9b59e35b42a999c46a1bfc1ee188dc1ca",
+   "uasset": "Content/Imported/MaterialDatabase/Banners/MI_Banners_material_Cityhall.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/Banners.upk#MI_Banners_material_Festival",
+   "object": "MI_Banners_material_Festival",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Banners_material_Festival",
+   "texture_roles": [
+    "Diffuse",
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Banners/Banners/Texture2D/BannerFestival.tga",
+   "extracted_sha256": "2fcf835502340d78f93b731e4d35a0642b9ee7b22c103544c55d079d6f516414",
+   "output_file": "Content/Extracted/MaterialDatabase/Banners/Banners/Texture2D/BannerFestival.tga",
+   "output_sha256": "2fcf835502340d78f93b731e4d35a0642b9ee7b22c103544c55d079d6f516414",
+   "uasset": "Content/Imported/MaterialDatabase/Banners/MI_Banners_material_Festival.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/FinancialDistrict/Signs/Banners.upk#MI_Banners_NoAnim",
+   "object": "MI_Banners_NoAnim",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Banners_NoAnim",
+   "texture_roles": [
+    "Emissive",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Banners/Banners/Texture2D/Banner_Wind_NORM.tga",
+   "extracted_sha256": "e13d9c9776faf464b922f0292a6a9476257c57818deebd813390bca01bafc9a9",
+   "output_file": "Content/Extracted/MaterialDatabase/Banners/Banners/Texture2D/Banner_Wind_NORM.tga",
+   "output_sha256": "e13d9c9776faf464b922f0292a6a9476257c57818deebd813390bca01bafc9a9",
+   "uasset": "Content/Imported/MaterialDatabase/Banners/MI_Banners_NoAnim.uasset"
+  }
+ ]
+}

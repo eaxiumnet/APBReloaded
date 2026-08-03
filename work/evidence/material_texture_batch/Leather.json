@@ -1,0 +1,62 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "Leather",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/GenericMaterials/Leather/Leather.upk",
+ "source_sha256": "ee72bfeed2e9d78b24c704c94d5a1b885fa5d7579c8b5aec30ab82bc5b27d29e",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Leather/Leather.upk#LeatherBump",
+   "object": "LeatherBump",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Leather/Leather/Texture2D/LeatherBump.tga",
+   "extracted_sha256": "cbd9dec1e2a38d36dc5dcba97339a0e4e2d54942329067e7b4e3de6aac44053a",
+   "output_file": "Content/Extracted/MaterialDatabase/Leather/Leather/Texture2D/LeatherBump.tga",
+   "output_sha256": "cbd9dec1e2a38d36dc5dcba97339a0e4e2d54942329067e7b4e3de6aac44053a",
+   "uasset": "Content/Imported/MaterialDatabase/Leather/LeatherBump.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Leather/Leather.upk#LeatherBump_NRM",
+   "object": "LeatherBump_NRM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Leather/Leather/Texture2D/LeatherBump_NRM.tga",
+   "extracted_sha256": "ac3cb7c6af46c4146f8cc30da2a0d04e98b26ea9e723a692ae730a8408a55720",
+   "output_file": "Content/Extracted/MaterialDatabase/Leather/Leather/Texture2D/LeatherBump_NRM.tga",
+   "output_sha256": "ac3cb7c6af46c4146f8cc30da2a0d04e98b26ea9e723a692ae730a8408a55720",
+   "uasset": "Content/Imported/MaterialDatabase/Leather/LeatherBump_NRM.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Leather/Leather.upk#MI_Leather_Blue_Mat",
+   "object": "MI_Leather_Blue_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Leather_Blue_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Leather/Leather/Texture2D/LeatherBump.tga",
+   "extracted_sha256": "cbd9dec1e2a38d36dc5dcba97339a0e4e2d54942329067e7b4e3de6aac44053a",
+   "output_file": "Content/Extracted/MaterialDatabase/Leather/Leather/Texture2D/LeatherBump.tga",
+   "output_sha256": "cbd9dec1e2a38d36dc5dcba97339a0e4e2d54942329067e7b4e3de6aac44053a",
+   "uasset": "Content/Imported/MaterialDatabase/Leather/MI_Leather_Blue_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/GenericMaterials/Leather/Leather.upk#MI_Leather_Mat",
+   "object": "MI_Leather_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Leather_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/Leather/Leather/Texture2D/LeatherBump.tga",
+   "extracted_sha256": "cbd9dec1e2a38d36dc5dcba97339a0e4e2d54942329067e7b4e3de6aac44053a",
+   "output_file": "Content/Extracted/MaterialDatabase/Leather/Leather/Texture2D/LeatherBump.tga",
+   "output_sha256": "cbd9dec1e2a38d36dc5dcba97339a0e4e2d54942329067e7b4e3de6aac44053a",
+   "uasset": "Content/Imported/MaterialDatabase/Leather/MI_Leather_Mat.uasset"
+  }
+ ]
+}

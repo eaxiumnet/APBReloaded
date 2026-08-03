@@ -1,0 +1,352 @@
+{
+ "schema": "apb_material_database_v1",
+ "package": "JokerStore",
+ "source_locator": "${retail_steam}/APBGame/Content/Release/Packages/MaterialDatabase/RWorldSocialDistrict/JokerStore.upk",
+ "source_sha256": "00541dee3dc4c06041513471a37c5aed24ddd16fd79036e48283b2ec4863e98c",
+ "records": [
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/JokerStore.upk#Carbon",
+   "object": "Carbon",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/JokerStore/JokerStore/Texture2D/Carbon.tga",
+   "extracted_sha256": "7c1967ec5a7d02ffde512bf63453295205c17e31c1f3f7ecef15ccb9e4965b64",
+   "output_file": "Content/Extracted/MaterialDatabase/JokerStore/JokerStore/Texture2D/Carbon.tga",
+   "output_sha256": "7c1967ec5a7d02ffde512bf63453295205c17e31c1f3f7ecef15ccb9e4965b64",
+   "uasset": "Content/Imported/MaterialDatabase/JokerStore/Carbon.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/JokerStore.upk#DirtOverlay_01",
+   "object": "DirtOverlay_01",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/JokerStore/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/JokerStore/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/JokerStore/DirtOverlay_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/JokerStore.upk#JokerLogo",
+   "object": "JokerLogo",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/JokerStore/JokerStore/Texture2D/JokerLogo.tga",
+   "extracted_sha256": "7ecfaa8e1813817b3840459b1dfdd6d0a48530743549a5bb53dfc1e5c8b0f9b1",
+   "output_file": "Content/Extracted/MaterialDatabase/JokerStore/JokerStore/Texture2D/JokerLogo.tga",
+   "output_sha256": "7ecfaa8e1813817b3840459b1dfdd6d0a48530743549a5bb53dfc1e5c8b0f9b1",
+   "uasset": "Content/Imported/MaterialDatabase/JokerStore/JokerLogo.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/JokerStore.upk#JokerStoreBanners_01",
+   "object": "JokerStoreBanners_01",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/JokerStore/JokerStore/Texture2D/JokerStoreBanners_01.tga",
+   "extracted_sha256": "1e4aaf7cf7413d3cf885239710570bb75d718e2e399cb036eb7248a525a8adb4",
+   "output_file": "Content/Extracted/MaterialDatabase/JokerStore/JokerStore/Texture2D/JokerStoreBanners_01.tga",
+   "output_sha256": "1e4aaf7cf7413d3cf885239710570bb75d718e2e399cb036eb7248a525a8adb4",
+   "uasset": "Content/Imported/MaterialDatabase/JokerStore/JokerStoreBanners_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/JokerStore.upk#JokerTickets_Diff",
+   "object": "JokerTickets_Diff",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/JokerStore/JokerStore/Texture2D/JokerTickets_Diff.tga",
+   "extracted_sha256": "497731ea3e7ba9c9d814078443dbddfdeb4db6a07da2db963fbab9cc3cf5f5bc",
+   "output_file": "Content/Extracted/MaterialDatabase/JokerStore/JokerStore/Texture2D/JokerTickets_Diff.tga",
+   "output_sha256": "497731ea3e7ba9c9d814078443dbddfdeb4db6a07da2db963fbab9cc3cf5f5bc",
+   "uasset": "Content/Imported/MaterialDatabase/JokerStore/JokerTickets_Diff.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/JokerStore.upk#LaminateFloor_Wood01",
+   "object": "LaminateFloor_Wood01",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/JokerStore/Woods/Texture2D/LaminateFloor_Wood01.tga",
+   "extracted_sha256": "bbd95ad6215bb248ad9402b5a0944ca2f984c9a59a7f4f667e93722698040b5f",
+   "output_file": "Content/Extracted/MaterialDatabase/JokerStore/Woods/Texture2D/LaminateFloor_Wood01.tga",
+   "output_sha256": "bbd95ad6215bb248ad9402b5a0944ca2f984c9a59a7f4f667e93722698040b5f",
+   "uasset": "Content/Imported/MaterialDatabase/JokerStore/LaminateFloor_Wood01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/JokerStore.upk#LeatherBump",
+   "object": "LeatherBump",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/JokerStore/Leather/Texture2D/LeatherBump.tga",
+   "extracted_sha256": "cbd9dec1e2a38d36dc5dcba97339a0e4e2d54942329067e7b4e3de6aac44053a",
+   "output_file": "Content/Extracted/MaterialDatabase/JokerStore/Leather/Texture2D/LeatherBump.tga",
+   "output_sha256": "cbd9dec1e2a38d36dc5dcba97339a0e4e2d54942329067e7b4e3de6aac44053a",
+   "uasset": "Content/Imported/MaterialDatabase/JokerStore/LeatherBump.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/JokerStore.upk#LeatherBump_NRM",
+   "object": "LeatherBump_NRM",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/JokerStore/Leather/Texture2D/LeatherBump_NRM.tga",
+   "extracted_sha256": "ac3cb7c6af46c4146f8cc30da2a0d04e98b26ea9e723a692ae730a8408a55720",
+   "output_file": "Content/Extracted/MaterialDatabase/JokerStore/Leather/Texture2D/LeatherBump_NRM.tga",
+   "output_sha256": "ac3cb7c6af46c4146f8cc30da2a0d04e98b26ea9e723a692ae730a8408a55720",
+   "uasset": "Content/Imported/MaterialDatabase/JokerStore/LeatherBump_NRM.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/JokerStore.upk#Metal_Checkerplate_Norm",
+   "object": "Metal_Checkerplate_Norm",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/JokerStore/Metal/Texture2D/Metal_Checkerplate_Norm.tga",
+   "extracted_sha256": "f9de6d8240a00daba225da306f3524848e2ec8b7031e37343dbad7e5a6fbf432",
+   "output_file": "Content/Extracted/MaterialDatabase/JokerStore/Metal/Texture2D/Metal_Checkerplate_Norm.tga",
+   "output_sha256": "f9de6d8240a00daba225da306f3524848e2ec8b7031e37343dbad7e5a6fbf432",
+   "uasset": "Content/Imported/MaterialDatabase/JokerStore/Metal_Checkerplate_Norm.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/JokerStore.upk#MI_Carbon",
+   "object": "MI_Carbon",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Carbon",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/JokerStore/JokerStore/Texture2D/Carbon.tga",
+   "extracted_sha256": "7c1967ec5a7d02ffde512bf63453295205c17e31c1f3f7ecef15ccb9e4965b64",
+   "output_file": "Content/Extracted/MaterialDatabase/JokerStore/JokerStore/Texture2D/Carbon.tga",
+   "output_sha256": "7c1967ec5a7d02ffde512bf63453295205c17e31c1f3f7ecef15ccb9e4965b64",
+   "uasset": "Content/Imported/MaterialDatabase/JokerStore/MI_Carbon.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/JokerStore.upk#MI_JokerLogo",
+   "object": "MI_JokerLogo",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "JokerLogo",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/JokerStore/JokerStore/Texture2D/JokerLogo.tga",
+   "extracted_sha256": "7ecfaa8e1813817b3840459b1dfdd6d0a48530743549a5bb53dfc1e5c8b0f9b1",
+   "output_file": "Content/Extracted/MaterialDatabase/JokerStore/JokerStore/Texture2D/JokerLogo.tga",
+   "output_sha256": "7ecfaa8e1813817b3840459b1dfdd6d0a48530743549a5bb53dfc1e5c8b0f9b1",
+   "uasset": "Content/Imported/MaterialDatabase/JokerStore/MI_JokerLogo.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/JokerStore.upk#MI_JokerStore_Tickets_MAT",
+   "object": "MI_JokerStore_Tickets_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "JokerStore_Tickets_MAT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/JokerStore/JokerStore/Texture2D/JokerTickets_Diff.tga",
+   "extracted_sha256": "497731ea3e7ba9c9d814078443dbddfdeb4db6a07da2db963fbab9cc3cf5f5bc",
+   "output_file": "Content/Extracted/MaterialDatabase/JokerStore/JokerStore/Texture2D/JokerTickets_Diff.tga",
+   "output_sha256": "497731ea3e7ba9c9d814078443dbddfdeb4db6a07da2db963fbab9cc3cf5f5bc",
+   "uasset": "Content/Imported/MaterialDatabase/JokerStore/MI_JokerStore_Tickets_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/JokerStore.upk#MI_JokerStoreBanners_01",
+   "object": "MI_JokerStoreBanners_01",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "JokerStoreBanners_01",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/JokerStore/JokerStore/Texture2D/JokerStoreBanners_01.tga",
+   "extracted_sha256": "1e4aaf7cf7413d3cf885239710570bb75d718e2e399cb036eb7248a525a8adb4",
+   "output_file": "Content/Extracted/MaterialDatabase/JokerStore/JokerStore/Texture2D/JokerStoreBanners_01.tga",
+   "output_sha256": "1e4aaf7cf7413d3cf885239710570bb75d718e2e399cb036eb7248a525a8adb4",
+   "uasset": "Content/Imported/MaterialDatabase/JokerStore/MI_JokerStoreBanners_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/JokerStore.upk#MI_laminateFloor_MAT",
+   "object": "MI_laminateFloor_MAT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "laminateFloor_MAT",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/JokerStore/Woods/Texture2D/LaminateFloor_Wood01.tga",
+   "extracted_sha256": "bbd95ad6215bb248ad9402b5a0944ca2f984c9a59a7f4f667e93722698040b5f",
+   "output_file": "Content/Extracted/MaterialDatabase/JokerStore/Woods/Texture2D/LaminateFloor_Wood01.tga",
+   "output_sha256": "bbd95ad6215bb248ad9402b5a0944ca2f984c9a59a7f4f667e93722698040b5f",
+   "uasset": "Content/Imported/MaterialDatabase/JokerStore/MI_laminateFloor_MAT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/JokerStore.upk#MI_Leather_Mat",
+   "object": "MI_Leather_Mat",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Leather_Mat",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/JokerStore/Leather/Texture2D/LeatherBump.tga",
+   "extracted_sha256": "cbd9dec1e2a38d36dc5dcba97339a0e4e2d54942329067e7b4e3de6aac44053a",
+   "output_file": "Content/Extracted/MaterialDatabase/JokerStore/Leather/Texture2D/LeatherBump.tga",
+   "output_sha256": "cbd9dec1e2a38d36dc5dcba97339a0e4e2d54942329067e7b4e3de6aac44053a",
+   "uasset": "Content/Imported/MaterialDatabase/JokerStore/MI_Leather_Mat.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/JokerStore.upk#MI_Metal_M03_GreyDark",
+   "object": "MI_Metal_M03_GreyDark",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_M03_GreyDark",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/JokerStore/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/JokerStore/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/JokerStore/MI_Metal_M03_GreyDark.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/JokerStore.upk#MI_Metal_M08_Checkerplate_Lightgrey",
+   "object": "MI_Metal_M08_Checkerplate_Lightgrey",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_M08_Checkerplate_Lightgrey",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/JokerStore/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/JokerStore/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/JokerStore/MI_Metal_M08_Checkerplate_Lightgrey.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/JokerStore.upk#MI_Metal_PARENT",
+   "object": "MI_Metal_PARENT",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Metal_PARENT",
+   "texture_roles": [
+    "Diffuse",
+    "Normal"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/JokerStore/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "extracted_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "output_file": "Content/Extracted/MaterialDatabase/JokerStore/Shared_Maps/Texture2D/DirtOverlay_01.tga",
+   "output_sha256": "fe084a9214af7d4fb85e0e33543da3afd43a5961dcc27accbbccd1d038a88a34",
+   "uasset": "Content/Imported/MaterialDatabase/JokerStore/MI_Metal_PARENT.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/JokerStore.upk#MI_OpheliaLogo",
+   "object": "MI_OpheliaLogo",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "OpheliaLogo",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/JokerStore/JokerStore/Texture2D/OpheliaLogo_01.tga",
+   "extracted_sha256": "a3c1f42ae6316aa2e0d9098395803a94e2b9802518bb5a533e26270f377eeeba",
+   "output_file": "Content/Extracted/MaterialDatabase/JokerStore/JokerStore/Texture2D/OpheliaLogo_01.tga",
+   "output_sha256": "a3c1f42ae6316aa2e0d9098395803a94e2b9802518bb5a533e26270f377eeeba",
+   "uasset": "Content/Imported/MaterialDatabase/JokerStore/MI_OpheliaLogo.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/JokerStore.upk#MI_OpheliaLogoEmis",
+   "object": "MI_OpheliaLogoEmis",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "OpheliaLogoEmis",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/JokerStore/JokerStore/Texture2D/OpheliaLogo_01.tga",
+   "extracted_sha256": "a3c1f42ae6316aa2e0d9098395803a94e2b9802518bb5a533e26270f377eeeba",
+   "output_file": "Content/Extracted/MaterialDatabase/JokerStore/JokerStore/Texture2D/OpheliaLogo_01.tga",
+   "output_sha256": "a3c1f42ae6316aa2e0d9098395803a94e2b9802518bb5a533e26270f377eeeba",
+   "uasset": "Content/Imported/MaterialDatabase/JokerStore/MI_OpheliaLogoEmis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/JokerStore.upk#MI_Speaker_Ceiling",
+   "object": "MI_Speaker_Ceiling",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "Speaker_Ceiling",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/JokerStore/JokerStore/Texture2D/Speaker_Ceiling.tga",
+   "extracted_sha256": "437e97dedeec8968873c1a0dd00790b91430b7f7cdffb8d32490ebf6aaf7ad7f",
+   "output_file": "Content/Extracted/MaterialDatabase/JokerStore/JokerStore/Texture2D/Speaker_Ceiling.tga",
+   "output_sha256": "437e97dedeec8968873c1a0dd00790b91430b7f7cdffb8d32490ebf6aaf7ad7f",
+   "uasset": "Content/Imported/MaterialDatabase/JokerStore/MI_Speaker_Ceiling.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/JokerStore.upk#MI_WildeLogo",
+   "object": "MI_WildeLogo",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WildeLogo",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/JokerStore/JokerStore/Texture2D/WildeLogo_01.tga",
+   "extracted_sha256": "8f0cf688ddab50f6ec9f91aca6591aae06ada02dc29183904c85351a4985f193",
+   "output_file": "Content/Extracted/MaterialDatabase/JokerStore/JokerStore/Texture2D/WildeLogo_01.tga",
+   "output_sha256": "8f0cf688ddab50f6ec9f91aca6591aae06ada02dc29183904c85351a4985f193",
+   "uasset": "Content/Imported/MaterialDatabase/JokerStore/MI_WildeLogo.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/JokerStore.upk#MI_WildeLogoEmis",
+   "object": "MI_WildeLogoEmis",
+   "asset_class": "MaterialInstanceConstant",
+   "material": "WildeLogoEmis",
+   "texture_roles": [
+    "Diffuse"
+   ],
+   "extracted_file": "Content/Extracted/MaterialDatabase/JokerStore/JokerStore/Texture2D/WildeLogo_01.tga",
+   "extracted_sha256": "8f0cf688ddab50f6ec9f91aca6591aae06ada02dc29183904c85351a4985f193",
+   "output_file": "Content/Extracted/MaterialDatabase/JokerStore/JokerStore/Texture2D/WildeLogo_01.tga",
+   "output_sha256": "8f0cf688ddab50f6ec9f91aca6591aae06ada02dc29183904c85351a4985f193",
+   "uasset": "Content/Imported/MaterialDatabase/JokerStore/MI_WildeLogoEmis.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/JokerStore.upk#OpheliaLogo_01",
+   "object": "OpheliaLogo_01",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/JokerStore/JokerStore/Texture2D/OpheliaLogo_01.tga",
+   "extracted_sha256": "a3c1f42ae6316aa2e0d9098395803a94e2b9802518bb5a533e26270f377eeeba",
+   "output_file": "Content/Extracted/MaterialDatabase/JokerStore/JokerStore/Texture2D/OpheliaLogo_01.tga",
+   "output_sha256": "a3c1f42ae6316aa2e0d9098395803a94e2b9802518bb5a533e26270f377eeeba",
+   "uasset": "Content/Imported/MaterialDatabase/JokerStore/OpheliaLogo_01.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/JokerStore.upk#Speaker_Ceiling",
+   "object": "Speaker_Ceiling",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/JokerStore/JokerStore/Texture2D/Speaker_Ceiling.tga",
+   "extracted_sha256": "437e97dedeec8968873c1a0dd00790b91430b7f7cdffb8d32490ebf6aaf7ad7f",
+   "output_file": "Content/Extracted/MaterialDatabase/JokerStore/JokerStore/Texture2D/Speaker_Ceiling.tga",
+   "output_sha256": "437e97dedeec8968873c1a0dd00790b91430b7f7cdffb8d32490ebf6aaf7ad7f",
+   "uasset": "Content/Imported/MaterialDatabase/JokerStore/Speaker_Ceiling.uasset"
+  },
+  {
+   "asset_key": "retail:MaterialDatabase/RWorldSocialDistrict/JokerStore.upk#WildeLogo_01",
+   "object": "WildeLogo_01",
+   "asset_class": "Texture2D",
+   "material": null,
+   "texture_roles": [],
+   "extracted_file": "Content/Extracted/MaterialDatabase/JokerStore/JokerStore/Texture2D/WildeLogo_01.tga",
+   "extracted_sha256": "8f0cf688ddab50f6ec9f91aca6591aae06ada02dc29183904c85351a4985f193",
+   "output_file": "Content/Extracted/MaterialDatabase/JokerStore/JokerStore/Texture2D/WildeLogo_01.tga",
+   "output_sha256": "8f0cf688ddab50f6ec9f91aca6591aae06ada02dc29183904c85351a4985f193",
+   "uasset": "Content/Imported/MaterialDatabase/JokerStore/WildeLogo_01.uasset"
+  }
+ ]
+}
