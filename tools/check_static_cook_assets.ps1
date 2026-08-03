@@ -21,11 +21,30 @@ $EngineInternalPrefixes = @(
     "/Engine/EngineMaterials/DefaultMaterial"
 )
 
+# Documented non-cook catalogs (relative to Content/Data). Their /Game/ refs are
+# not cook asset loads; excluding them matches the audit's stated purpose (closure
+# table in work/m19_district_mesh_registry_routing.md).
+# 1) model_reference_catalog.json - reference inventory (contacts/wardrobe name
+#    hints); APBWorldService loads it for names, never for asset paths.
+# 2) fidelity/*.json - oracle verification metadata (/Game/Data/* catalog keys +
+#    /Game/Maps/*), not cook references.
+# 3) Superseded canonical placement manifests - the runtime loader consumes only
+#    *_realv2.json (PlacementManifestCandidates returns base + "_realv2.json");
+#    these legacy files survive as build/binding inputs only.
+$ReferenceOnlyCatalogPaths = @(
+    "Content/Data/model_reference_catalog.json",
+    "Content/Data/fidelity/fidelity_oracle_manifest.json",
+    "Content/Data/fidelity/frontend_screenshot_oracle.json",
+    "Content/Data/district_placements/Financial_Block09.json",
+    "Content/Data/district_placements/Beacon_Block.json",
+    "Content/Data/district_placements/Waterfront_Block05.json"
+)
+
 # Registry-supported uobject classes (schema-v2 entries). Media entries carry no class.
 # Source of truth: UAPBVerifiedAssetRegistry supported-class parse; keep in sync.
 $SupportedClasses = @(
     "StaticMesh", "SkeletalMesh", "Texture2D", "Material",
-    "MaterialInstanceConstant", "SoundWave", "SoundCue", "AnimSequence", "MediaSource"
+    "MaterialInstanceConstant", "SoundWave", "SoundCue", "AnimSequence", "AnimSet", "MediaSource"
 )
 
 function Get-AllowlistPaths([string]$AllowlistPath) {
@@ -93,8 +112,10 @@ function Test-AllowlistMatch([string]$Reference, $AllowlistPaths) {
 
 # Scan JSON catalogs for string references that look like /Game/ object paths.
 $DataDir = Join-Path $ProjectRoot "Content/Data"
+$ReferenceOnlyFullPaths = $ReferenceOnlyCatalogPaths |
+    ForEach-Object { Join-Path $ProjectRoot $_ }
 $Files = Get-ChildItem -LiteralPath $DataDir -Recurse -Filter *.json -File |
-    Where-Object { $_.FullName -notmatch "\\Extracted\\" } |
+    Where-Object { $_.FullName -notmatch "\\Extracted\\" -and $ReferenceOnlyFullPaths -notcontains $_.FullName } |
     Sort-Object FullName
 $AllowlistPaths = Get-AllowlistPaths $AllowlistPath
 
@@ -130,6 +151,7 @@ $Document = [ordered]@{
     engine_allowed_references = $EngineAllowed.Count
     engine_blocked_references = $EngineBlocked.Count
     engine_internal_prefixes = $EngineInternalPrefixes
+    reference_only_catalog_paths = $ReferenceOnlyCatalogPaths
     unverified_sample = @($Unverified | Select-Object -First 15)
     engine_blocked_sample = @($EngineBlocked | Select-Object -First 15)
 }

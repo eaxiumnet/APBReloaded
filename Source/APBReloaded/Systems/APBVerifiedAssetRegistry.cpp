@@ -34,7 +34,7 @@ namespace
 		static const TSet<FString> SupportedClasses = {
 			TEXT("StaticMesh"), TEXT("SkeletalMesh"), TEXT("Texture2D"),
 			TEXT("Material"), TEXT("MaterialInstanceConstant"), TEXT("SoundWave"),
-			TEXT("SoundCue"), TEXT("AnimSequence"), TEXT("MediaSource")
+			TEXT("SoundCue"), TEXT("AnimSequence"), TEXT("AnimSet"), TEXT("MediaSource")
 		};
 		return SupportedClasses.Contains(ClassName);
 	}
