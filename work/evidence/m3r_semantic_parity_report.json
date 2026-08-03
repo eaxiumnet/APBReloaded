@@ -1,0 +1,82 @@
+{
+  "animation": {
+    "accepted": 31,
+    "failures": [],
+    "status": "pass",
+    "total_anims": 139
+  },
+  "audio": {
+    "accepted": 12,
+    "failures": [],
+    "status": "pass"
+  },
+  "inputs": {
+    "ledger": {
+      "path": "tools/import_ledger.json",
+      "sha256": "a97f823767bdab2e37d948ab65e77ed7092f7fb69b9dd57dd4ceb1e69b062a8c"
+    },
+    "loaded_validation": {
+      "path": "work/evidence/g1_payload_batch2/g1_payload_batch2_loaded_validation.json",
+      "sha256": "2f45b626b5689d53323e21f48691c2c83d35632f42cf5f11b9fe11ff8e6ae385"
+    },
+    "mesh_manifest": {
+      "path": "work/evidence/g1_payload_batch2/g1_payload_batch2_import_manifest.json",
+      "sha256": "24f117be2a7776d16f744926bb23953e64105da8f9120b37fbaa7ec67924f34a"
+    },
+    "oracle": {
+      "path": "Content/Data/fidelity/fidelity_oracle_manifest.json",
+      "sha256": "898d31366eca2c6454847a93e4f8838d166c6fe41e38be16318c7a0c847a923a"
+    },
+    "placement_manifest": {
+      "path": "Content/Data/district_placements/Social_Block_realv2.json",
+      "sha256": "d3389f1f5b96b81a92078b35c30b9e1e2e5cb0808a6ab45016c0b2e4dad49e04"
+    }
+  },
+  "material": {
+    "accepted": 2341,
+    "failures": [],
+    "status": "pass"
+  },
+  "mesh": {
+    "accepted_objects": 26,
+    "accepted_sections": 35,
+    "accepted_unique_slots": 34,
+    "blocked_objects": 0,
+    "failures": [],
+    "semantic_only": true,
+    "status": "pass"
+  },
+  "placement": {
+    "accepted_bound": 763,
+    "accepted_rows": 1832,
+    "accepted_spawnable": 763,
+    "accepted_visible": 763,
+    "blocked_rows": 0,
+    "district": "Social",
+    "failures": [],
+    "semantic_only": true,
+    "source_identity_unverified_rows": 1832,
+    "source_identity_verified": false,
+    "status": "pass"
+  },
+  "runtime_eligible_count": 0,
+  "schema": "apb_m3r_semantic_parity_v1",
+  "status": "semantic_pass",
+  "texture": {
+    "accepted": 1894,
+    "failures": [],
+    "status": "pass"
+  },
+  "ui_visual": {
+    "accepted": 123,
+    "deferred_screenshot": null,
+    "failures": [],
+    "status": "pass"
+  },
+  "verified_count": 0,
+  "video": {
+    "accepted": 34,
+    "failures": [],
+    "status": "pass"
+  }
+}
