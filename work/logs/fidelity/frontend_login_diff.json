@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "comparison": "perceptual_image_diff",
+  "reference": "Content\\Movies\\Login\\Login_BG_AI_still.png",
+  "reference_note": "2011 login background still (5120x3200, center-cropped to 16:9)",
+  "candidate": "work\\logs\\fidelity\\frontend_login_capture.png",
+  "candidate_note": "UE frontend Login hold capture, client area cropped",
+  "normalized_resolution": {
+    "width": 1600,
+    "height": 900
+  },
+  "sample_stride": 8,
+  "pixel_tolerance": 0.12,
+  "max_mean_absolute_error": 0.18,
+  "max_changed_fraction": 0.65,
+  "samples": 22600,
+  "changed_samples": 17036,
+  "mean_absolute_error": 0.4028,
+  "changed_fraction": 0.7538,
+  "result": "fail"
+}

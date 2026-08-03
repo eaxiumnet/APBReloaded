@@ -9,6 +9,8 @@
 #include "APBVerifiedAssetRegistry.h"
 #include "Engine/StaticMesh.h"
 #include "Engine/Texture2D.h"
+#include "MediaPlayer.h"
+#include "UObject/StrongObjectPtr.h"
 #include "Misc/Paths.h"
 #include "Server/APBSecretProvider.h"
 #include "Domain/APBCrypto.h"
@@ -1759,6 +1761,13 @@ void UAPBSessionProbeSubsystem::RunFrontendRoutingProbe()
 		FPaths::ProjectContentDir() / TEXT("Movies/__not_allowlisted__.mp4"));
 	const bool bMediaReject = !Registry->IsMediaAllowed(MissingMedia, TEXT("frontend_routing_probe"), &Reason);
 
+	// Negative: Golem morph binaries must reject as unlisted. Character customization is
+	// a bounded body-profile + discrete-preset fallback (work/morph_spike.md) and the
+	// allowlist must never route extracted Golem morph assets.
+	const bool bMorphReject = !Registry->IsAllowedWithSourceBuild(
+		TEXT("/Game/Imported/Characters/GolemMorph/FaceMorph.GolemMorph"),
+		UStaticMesh::StaticClass()->GetFName(), TEXT("retail"), &Reason);
+
 	// Positive: the character-create base mesh (retail) is allowlisted and loads.
 	const FString CharMesh = TEXT("/Game/Imported/Characters/Contact_LaRocha/m_contact_enforcement_larocha.m_contact_enforcement_larocha");
 	const bool bCharMeshAllowed = Registry->IsAllowedWithSourceBuild(
@@ -1788,6 +1797,7 @@ void UAPBSessionProbeSubsystem::RunFrontendRoutingProbe()
 	AppendLog(bMediaAllow ? TEXT("FRONTEND_ROUTING_MEDIA_ALLOW_OK") : TEXT("FRONTEND_ROUTING_MEDIA_ALLOW_FAIL"));
 	AppendLog(bWrongSourceReject ? TEXT("FRONTEND_ROUTING_WRONG_SOURCE_REJECT_OK") : TEXT("FRONTEND_ROUTING_WRONG_SOURCE_REJECT_FAIL"));
 	AppendLog(bMediaReject ? TEXT("FRONTEND_ROUTING_MEDIA_REJECT_OK") : TEXT("FRONTEND_ROUTING_MEDIA_REJECT_FAIL"));
+	AppendLog(bMorphReject ? TEXT("FRONTEND_ROUTING_MORPH_GOLEM_REJECT_OK") : TEXT("FRONTEND_ROUTING_MORPH_GOLEM_REJECT_FAIL"));
 	AppendLog(bCharMeshAllowed ? TEXT("FRONTEND_ROUTING_CHAR_MESH_ALLOWED_OK") : TEXT("FRONTEND_ROUTING_CHAR_MESH_ALLOWED_FAIL"));
 	AppendLog(bCharMeshLoad ? TEXT("FRONTEND_ROUTING_CHAR_MESH_LOAD_OK") : TEXT("FRONTEND_ROUTING_CHAR_MESH_LOAD_FAIL"));
 	AppendLog(bCharMatAllowed ? TEXT("FRONTEND_ROUTING_CHAR_MATERIAL_ALLOWED_OK") : TEXT("FRONTEND_ROUTING_CHAR_MATERIAL_ALLOWED_FAIL"));
@@ -1795,14 +1805,51 @@ void UAPBSessionProbeSubsystem::RunFrontendRoutingProbe()
 	AppendLog(bCharWrongSourceReject ? TEXT("FRONTEND_ROUTING_CHAR_WRONG_SOURCE_REJECT_OK") : TEXT("FRONTEND_ROUTING_CHAR_WRONG_SOURCE_REJECT_FAIL"));
 	AppendLog(bCharUnlistedReject ? TEXT("FRONTEND_ROUTING_CHAR_UNLISTED_REJECT_OK") : TEXT("FRONTEND_ROUTING_CHAR_UNLISTED_REJECT_FAIL"));
 
-	const bool bPass = bTexAllowed && bTexLoad && bSfxLoad && bMediaAllow && bWrongSourceReject && bMediaReject
-		&& bCharMeshAllowed && bCharMeshLoad && bCharMatAllowed && bCharMatLoad
+	const bool bCore = bTexAllowed && bTexLoad && bSfxLoad && bMediaAllow && bWrongSourceReject && bMediaReject
+		&& bMorphReject && bCharMeshAllowed && bCharMeshLoad && bCharMatAllowed && bCharMatLoad
 		&& bCharWrongSourceReject && bCharUnlistedReject;
-	AppendLog(bPass ? TEXT("FRONTEND_RUNTIME_ROUTING_PASS") : TEXT("FRONTEND_RUNTIME_ROUTING_FAIL"));
 
-	bTerminal = true;
-	if (GI) GI->GetTimerManager().ClearTimer(WorldServerTimer);
-	FPlatformMisc::RequestExit(false);
+	// The splash playback comparison (oracle row menu.movies.splash) needs a moment for
+	// the media player to open and decode the transcoded MP4 in current UE. Defer the
+	// final verdict until the media check completes.
+	TWeakObjectPtr<UGameInstance> WeakGI = GI;
+	if (UMediaPlayer* SplashPlayer = NewObject<UMediaPlayer>(GetTransientPackage()))
+	{
+		TSharedPtr<TStrongObjectPtr<UMediaPlayer>> Keep = MakeShared<TStrongObjectPtr<UMediaPlayer>>(SplashPlayer);
+		const bool bOpenRequested = SplashPlayer->OpenFile(SplashMedia);
+		AppendLog(bOpenRequested ? TEXT("SPLASH_OPEN_REQUESTED") : TEXT("SPLASH_OPEN_REJECTED"));
+		FTimerHandle SplashHandle;
+		if (GI)
+		{
+			GI->GetTimerManager().SetTimer(SplashHandle,
+				FTimerDelegate::CreateLambda([this, WeakGI, Keep, SplashHandle, bCore, bOpenRequested]()
+				{
+					UMediaPlayer* Player = Keep->Get();
+					const bool bDecoded = bOpenRequested && Player && !Player->IsClosed()
+						&& Player->GetDuration() > FTimespan::Zero();
+					const bool bPlaying = bDecoded && Player->IsPlaying();
+					AppendLog(bDecoded ? TEXT("SPLASH_PLAYBACK_OK") : TEXT("SPLASH_PLAYBACK_FAIL"));
+					AppendLog(bPlaying ? TEXT("SPLASH_PLAYING_OK") : TEXT("SPLASH_PLAYING_STANDBY"));
+					const bool bPass = bCore && bDecoded;
+					AppendLog(bPass ? TEXT("FRONTEND_RUNTIME_ROUTING_PASS") : TEXT("FRONTEND_RUNTIME_ROUTING_FAIL"));
+					bTerminal = true;
+					if (WeakGI.IsValid())
+					{
+						FTimerHandle HandleCopy = SplashHandle;
+						WeakGI->GetTimerManager().ClearTimer(HandleCopy);
+					}
+					FPlatformMisc::RequestExit(false);
+				}), 2.5f, false);
+		}
+	}
+	else
+	{
+		AppendLog(TEXT("SPLASH_PLAYER_CREATE_FAIL"));
+		AppendLog(bCore ? TEXT("FRONTEND_RUNTIME_ROUTING_PASS") : TEXT("FRONTEND_RUNTIME_ROUTING_FAIL"));
+		bTerminal = true;
+		if (GI) GI->GetTimerManager().ClearTimer(WorldServerTimer);
+		FPlatformMisc::RequestExit(false);
+	}
 }
 
 void UAPBSessionProbeSubsystem::RunSocialProbe()

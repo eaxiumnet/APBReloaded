@@ -1,435 +1,436 @@
-﻿{
-    "schema_version":  1,
-    "generated_at":  "2026-07-30",
-    "generator":  "T3A/T3B bootstrap",
-    "allowlist_count":  51,
-    "registrations":  [
-                          {
-                              "catalog":  "Content/Data/contact_levels.json",
-                              "source_build":  "retail",
-                              "source_locator":  "${retail_steam}/APBGame/Localization/INT/ContactLevels.INT",
-                              "generator":  "tools/scripts/extract_contact_levels.ps1",
-                              "source_hash":  "c9a490f3eeeb0a29dc6c71cb70882011e07971db1a3623fcefa550fe5e874a85"
-                          },
-                          {
-                              "catalog":  "Content/Data/player_roles.json",
-                              "source_build":  "retail",
-                              "source_locator":  "${retail_steam}/APBGame/Localization/INT/PlayerRoles.INT",
-                              "generator":  "tools/scripts/extract_player_roles.ps1",
-                              "source_hash":  "63f5bf2cb71622d2ce36d45be74b013b9e1d234070d7939938483783a58df0d8"
-                          },
-                          {
-                              "catalog":  "Content/Data/mission_templates.json",
-                              "source_build":  "retail",
-                              "source_locator":  "${retail_steam}/APBGame/Localization/INT/MissionTemplates.INT",
-                              "generator":  "tools/scripts/extract_mission_templates.ps1",
-                              "source_hash":  "f14c2b0b50ce3fe04b49181a5d9d37a3f20f829625d83a36bafe078b06beb6fc"
-                          },
-                          {
-                              "catalog":  "Content/Data/task_objectives.json",
-                              "source_build":  "retail",
-                              "source_locator":  "${retail_steam}/APBGame/Localization/INT/TaskObjectives.INT",
-                              "generator":  "tools/scripts/extract_task_objectives.ps1",
-                              "source_hash":  "486679ea2ea945d25d59b63e15ed6d3651e9243a9a23183c3e622ae22c537039"
-                          },
-                          {
-                              "catalog":  "Content/Data/subtitles.json",
-                              "source_build":  "retail",
-                              "source_locator":  "${retail_steam}/APBGame/Localization/INT/Subtitles_MASC.int",
-                              "generator":  "tools/scripts/extract_subtitles.ps1",
-                              "source_hash":  "05f4ea27a083725ae2c3d2c03f2a45b818ad04b6d104734d9460f35367866a94"
-                          },
-                          {
-                              "catalog":  "Content/Data/ui_strings_2011.json",
-                              "source_build":  "2011",
-                              "source_locator":  "${ref_2011}/APBGame/Localization/INT/APBUserInterface.int",
-                              "generator":  "tools/convert/parse_int_tables.py",
-                              "source_hash":  "46ddda5c72e038fc7ff9ef57bab106414ec1aec61da3240f54eedb5bc4cab692"
-                          },
-                          {
-                              "catalog":  "Content/Data/ui_strings_retail.json",
-                              "source_build":  "retail",
-                              "source_locator":  "${retail_steam}/APBGame/Localization/INT/APBUserInterface.int",
-                              "generator":  "tools/convert/parse_int_tables.py",
-                              "source_hash":  "2e009fb15dcdfaab134a43f34b25417135c0d93e51403e0ee5e6cf61ac410485"
-                          },
-                          {
-                              "catalog":  "Content/Data/contacts_lore.json",
-                              "source_build":  "apbdb",
-                              "source_locator":  "https://apbdb.com/contacts",
-                              "generator":  "tools/apbdb/sync_apbdb.py",
-                              "source_hash":  "013ed3bd26aec15f86a2a92ce51dcae4a8090d0086927bc474e0f7fdb9f99544"
-                          },
-                          {
-                              "catalog":  "Content/Data/districts.json",
-                              "source_build":  "apbdb",
-                              "source_locator":  "https://api.apbdb.com/beacon/districts",
-                              "generator":  "tools/apbdb/sync_apbdb.py",
-                              "source_hash":  "e84f07745de16bc2b33ff1b73fa50748bc12eaa163d58f1a7bacdf67bb729b80"
-                          },
-                          {
-                              "catalog":  "Content/Data/threat_table.json",
-                              "source_build":  "apbdb",
-                              "source_locator":  "https://api.apbdb.com/beacon/heat",
-                              "generator":  "tools/apbdb/sync_apbdb.py",
-                              "source_hash":  "53af8891375804b35f30ba01de9ca0ae1e4ca3e458f00aea3e539ea7a615b9a1"
-                          },
-                          {
-                              "catalog":  "Content/Data/missions.json",
-                              "source_build":  "apbdb",
-                              "source_locator":  "https://api.apbdb.com/beacon/missions",
-                              "generator":  "tools/apbdb/sync_apbdb.py",
-                              "source_hash":  "c1182f936f8e4e76c67aa8924f6473bad2aa4e06b98da7431da0d5364213e45c"
-                          },
-                          {
-                              "catalog":  "Content/Data/weapons.json",
-                              "source_build":  "apbdb",
-                              "source_locator":  "https://api.apbdb.com/beacon/items?cat=Weapon",
-                              "generator":  "tools/apbdb/sync_apbdb.py",
-                              "source_hash":  "346e25f35807cacffd57baedd3562751c9266e7e219e66c9cbf14fe88e103676"
-                          },
-                          {
-                              "catalog":  "Content/Data/weapons_catalog.json",
-                              "source_build":  "apbdb",
-                              "source_locator":  "https://api.apbdb.com/beacon/items?cat=Weapon",
-                              "generator":  "tools/apbdb/sync_apbdb.py",
-                              "source_hash":  "c8ff8e2ad6c487f60c928cebd07eb125e0657c0ed6bb8a312b843dcdc7fc2da4"
-                          },
-                          {
-                              "catalog":  "Content/Data/vehicles.json",
-                              "source_build":  "apbdb",
-                              "source_locator":  "https://api.apbdb.com/beacon/items?cat=Vehicle",
-                              "generator":  "tools/apbdb/sync_apbdb.py",
-                              "source_hash":  "cae9bc26bb2e77cebc18760cd0e32df9f0059028d287637ec3bf76161283c981"
-                          },
-                          {
-                              "catalog":  "Content/Data/vehicles_catalog.json",
-                              "source_build":  "apbdb",
-                              "source_locator":  "https://api.apbdb.com/beacon/items?cat=Vehicle",
-                              "generator":  "tools/apbdb/sync_apbdb.py",
-                              "source_hash":  "d951976a3d2b9c20800ca4c54f81dee92b494e2778bcda5d6618f37d92519f94"
-                          },
-                          {
-                              "catalog":  "Content/Data/apbdb_meta.json",
-                              "source_build":  "apbdb",
-                              "source_locator":  "https://apbdb.com",
-                              "generator":  "tools/apbdb/sync_apbdb.py",
-                              "source_hash":  "f5518c7decb2f7b41b77479782ea182b156f5191190d4726386688050958345c"
-                          },
-                          {
-                              "catalog":  "Content/Data/verified_asset_allowlist.json",
-                              "source_build":  "generated",
-                              "source_locator":  "${repo}/tools/import_ledger.json",
-                              "generator":  "tools/promote_verified_assets.ps1",
-                              "source_hash":  "481cf035cb62886c17b5c7ab3972abfe8b60aca11e9159a225607e233428465d"
-                          }
-                      ],
-    "allowlist":  [
-                      {
-                          "catalog":  "Content/Data/ammo_categories.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/capacity_item_types.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/chat_message_categories.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/clothing_item_types.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/clothing.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/colour_palettes.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/contacts_catalog.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/daily_activity_contacts.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/display_points.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/district_stream.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/emote_commands.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/equipment_types.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/factions.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/gameplay_objects.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/hud_ceremony_msgs.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/hud_combat_messages.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/hud_marker_text.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/hud_messages.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/inventory_infra_categories.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/inventory_item_types.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/loading_tips.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/medals.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/mission_result_reasons.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/mission_scripts.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/model_reference_catalog.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/modifier_effects.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/modifier_item_types.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/organisations.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/palettes.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/popup_dialogs.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/redeemable_rewards.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/reward_item_types.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/reward_package_item_types.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/reward_packages.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/role_milestones.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/roles.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/scoreboard_descriptions.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/social_kiosk_fallback.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/street_names.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/task_operation_ui_profiles.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/task_operations.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/task_target_types.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/threat_ratings.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/tooltips.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/tutorials.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/unlock_item_types.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/vehicle_item_types.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/wardrobe_categories.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/weapon_display_names.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/weapon_item_types.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      },
-                      {
-                          "catalog":  "Content/Data/weighted_rewards.json",
-                          "owner":  "T3A",
-                          "reason":  "No dedicated extractor writes this catalog output.",
-                          "added":  "2026-07-30"
-                      }
-                  ]
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-03",
+  "generator": "T3A/T3B bootstrap",
+  "allowlist_count": 51,
+  "registrations": [
+    {
+      "catalog": "Content/Data/contact_levels.json",
+      "source_build": "retail",
+      "source_locator": "${retail_steam}/APBGame/Localization/INT/ContactLevels.INT",
+      "generator": "tools/scripts/extract_contact_levels.ps1",
+      "source_hash": "c9a490f3eeeb0a29dc6c71cb70882011e07971db1a3623fcefa550fe5e874a85"
+    },
+    {
+      "catalog": "Content/Data/player_roles.json",
+      "source_build": "retail",
+      "source_locator": "${retail_steam}/APBGame/Localization/INT/PlayerRoles.INT",
+      "generator": "tools/scripts/extract_player_roles.ps1",
+      "source_hash": "63f5bf2cb71622d2ce36d45be74b013b9e1d234070d7939938483783a58df0d8"
+    },
+    {
+      "catalog": "Content/Data/mission_templates.json",
+      "source_build": "retail",
+      "source_locator": "${retail_steam}/APBGame/Localization/INT/MissionTemplates.INT",
+      "generator": "tools/scripts/extract_mission_templates.ps1",
+      "source_hash": "f14c2b0b50ce3fe04b49181a5d9d37a3f20f829625d83a36bafe078b06beb6fc"
+    },
+    {
+      "catalog": "Content/Data/task_objectives.json",
+      "source_build": "retail",
+      "source_locator": "${retail_steam}/APBGame/Localization/INT/TaskObjectives.INT",
+      "generator": "tools/scripts/extract_task_objectives.ps1",
+      "source_hash": "486679ea2ea945d25d59b63e15ed6d3651e9243a9a23183c3e622ae22c537039"
+    },
+    {
+      "catalog": "Content/Data/subtitles.json",
+      "source_build": "retail",
+      "source_locator": "${retail_steam}/APBGame/Localization/INT/Subtitles_MASC.int",
+      "generator": "tools/scripts/extract_subtitles.ps1",
+      "source_hash": "05f4ea27a083725ae2c3d2c03f2a45b818ad04b6d104734d9460f35367866a94"
+    },
+    {
+      "catalog": "Content/Data/ui_strings_2011.json",
+      "source_build": "2011",
+      "source_locator": "${ref_2011}/APBGame/Localization/INT/APBUserInterface.int",
+      "generator": "tools/convert/parse_int_tables.py",
+      "source_hash": "46ddda5c72e038fc7ff9ef57bab106414ec1aec61da3240f54eedb5bc4cab692"
+    },
+    {
+      "catalog": "Content/Data/ui_strings_retail.json",
+      "source_build": "retail",
+      "source_locator": "${retail_steam}/APBGame/Localization/INT/APBUserInterface.int",
+      "generator": "tools/convert/parse_int_tables.py",
+      "source_hash": "2e009fb15dcdfaab134a43f34b25417135c0d93e51403e0ee5e6cf61ac410485"
+    },
+    {
+      "catalog": "Content/Data/contacts_lore.json",
+      "source_build": "apbdb",
+      "source_locator": "https://apbdb.com/contacts",
+      "generator": "tools/apbdb/sync_apbdb.py",
+      "source_hash": "013ed3bd26aec15f86a2a92ce51dcae4a8090d0086927bc474e0f7fdb9f99544"
+    },
+    {
+      "catalog": "Content/Data/districts.json",
+      "source_build": "apbdb",
+      "source_locator": "https://api.apbdb.com/beacon/districts",
+      "generator": "tools/apbdb/sync_apbdb.py",
+      "source_hash": "e84f07745de16bc2b33ff1b73fa50748bc12eaa163d58f1a7bacdf67bb729b80"
+    },
+    {
+      "catalog": "Content/Data/threat_table.json",
+      "source_build": "apbdb",
+      "source_locator": "https://api.apbdb.com/beacon/heat",
+      "generator": "tools/apbdb/sync_apbdb.py",
+      "source_hash": "53af8891375804b35f30ba01de9ca0ae1e4ca3e458f00aea3e539ea7a615b9a1"
+    },
+    {
+      "catalog": "Content/Data/missions.json",
+      "source_build": "apbdb",
+      "source_locator": "https://api.apbdb.com/beacon/missions",
+      "generator": "tools/apbdb/sync_apbdb.py",
+      "source_hash": "c1182f936f8e4e76c67aa8924f6473bad2aa4e06b98da7431da0d5364213e45c"
+    },
+    {
+      "catalog": "Content/Data/weapons.json",
+      "source_build": "apbdb",
+      "source_locator": "https://api.apbdb.com/beacon/items?cat=Weapon",
+      "generator": "tools/apbdb/sync_apbdb.py",
+      "source_hash": "346e25f35807cacffd57baedd3562751c9266e7e219e66c9cbf14fe88e103676"
+    },
+    {
+      "catalog": "Content/Data/weapons_catalog.json",
+      "source_build": "apbdb",
+      "source_locator": "https://api.apbdb.com/beacon/items?cat=Weapon",
+      "generator": "tools/apbdb/sync_apbdb.py",
+      "source_hash": "c8ff8e2ad6c487f60c928cebd07eb125e0657c0ed6bb8a312b843dcdc7fc2da4"
+    },
+    {
+      "catalog": "Content/Data/vehicles.json",
+      "source_build": "apbdb",
+      "source_locator": "https://api.apbdb.com/beacon/items?cat=Vehicle",
+      "generator": "tools/scripts/refresh_vehicle_stats.py",
+      "source_hash": "e30909502e23cb3bf7cabdbb3f18a1368bad2215bd8de78c42f8a3ba2a5aa74b",
+      "note": "Re-seeded per-vehicle max_speed/max_health from Wayback-archived apbdb item pages (503/575 rows); accel per-class default"
+    },
+    {
+      "catalog": "Content/Data/vehicles_catalog.json",
+      "source_build": "apbdb",
+      "source_locator": "https://api.apbdb.com/beacon/items?cat=Vehicle",
+      "generator": "tools/apbdb/sync_apbdb.py",
+      "source_hash": "d951976a3d2b9c20800ca4c54f81dee92b494e2778bcda5d6618f37d92519f94"
+    },
+    {
+      "catalog": "Content/Data/apbdb_meta.json",
+      "source_build": "apbdb",
+      "source_locator": "https://apbdb.com",
+      "generator": "tools/apbdb/sync_apbdb.py",
+      "source_hash": "f5518c7decb2f7b41b77479782ea182b156f5191190d4726386688050958345c"
+    },
+    {
+      "catalog": "Content/Data/verified_asset_allowlist.json",
+      "source_build": "generated",
+      "source_locator": "${repo}/tools/import_ledger.json",
+      "generator": "tools/promote_verified_assets.ps1",
+      "source_hash": "481cf035cb62886c17b5c7ab3972abfe8b60aca11e9159a225607e233428465d"
+    }
+  ],
+  "allowlist": [
+    {
+      "catalog": "Content/Data/ammo_categories.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/capacity_item_types.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/chat_message_categories.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/clothing_item_types.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/clothing.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/colour_palettes.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/contacts_catalog.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/daily_activity_contacts.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/display_points.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/district_stream.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/emote_commands.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/equipment_types.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/factions.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/gameplay_objects.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/hud_ceremony_msgs.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/hud_combat_messages.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/hud_marker_text.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/hud_messages.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/inventory_infra_categories.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/inventory_item_types.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/loading_tips.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/medals.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/mission_result_reasons.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/mission_scripts.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/model_reference_catalog.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/modifier_effects.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/modifier_item_types.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/organisations.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/palettes.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/popup_dialogs.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/redeemable_rewards.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/reward_item_types.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/reward_package_item_types.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/reward_packages.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/role_milestones.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/roles.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/scoreboard_descriptions.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/social_kiosk_fallback.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/street_names.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/task_operation_ui_profiles.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/task_operations.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/task_target_types.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/threat_ratings.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/tooltips.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/tutorials.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/unlock_item_types.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/vehicle_item_types.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/wardrobe_categories.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/weapon_display_names.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/weapon_item_types.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    },
+    {
+      "catalog": "Content/Data/weighted_rewards.json",
+      "owner": "T3A",
+      "reason": "No dedicated extractor writes this catalog output.",
+      "added": "2026-07-30"
+    }
+  ]
 }

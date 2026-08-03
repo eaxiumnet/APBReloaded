@@ -55,7 +55,7 @@
       "dest": "/Game/Imported/UI/Menu2011",
       "status": "imported",
       "updated": "2026-07-19",
-      "note": "umodel 547 spike: WORKS (work/umodel_547_spike.md). 77 pkgs, 2085 PNG extracted at Content/Extracted/2011/MenuArt. M4a: 123 spec-referenced textures imported (Login 14, Chrome 52, CharSelect 20, DistrictSelect 12, Loading 19, Reference 6) via tools/scripts/import_menu2011_assets.py \u2014 chrome sourced from the fuller LiveCurrentScene APBMenus_Art dump (222 PNGs; MenuArt tree has only 8 for that package). Spec: work/menu2011_spec.md",
+      "note": "umodel 547 spike: WORKS (work/umodel_547_spike.md). 77 pkgs, 2085 PNG extracted at Content/Extracted/2011/MenuArt. M4a: 123 spec-referenced textures imported (Login 14, Chrome 52, CharSelect 20, DistrictSelect 12, Loading 19, Reference 6) via tools/scripts/import_menu2011_assets.py — chrome sourced from the fuller LiveCurrentScene APBMenus_Art dump (222 PNGs; MenuArt tree has only 8 for that package). Spec: work/menu2011_spec.md",
       "source_build": "2011"
     },
     {
@@ -63,7 +63,7 @@
       "dest": "/Game/Audio/UI",
       "status": "imported",
       "updated": "2026-07-19",
-      "note": "72 UISounds WAV (Basic_Media+Main_Media) extracted at Content/Extracted/2011/UISfx. M4a: 12 menu-interaction WAVs imported to /Game/Audio/UI (hover/click/back/error/popup/scene-open/list-select/char-confirm/slider/loading) \u2014 mapping table in work/menu2011_spec.md \u00a77",
+      "note": "72 UISounds WAV (Basic_Media+Main_Media) extracted at Content/Extracted/2011/UISfx. M4a: 12 menu-interaction WAVs imported to /Game/Audio/UI (hover/click/back/error/popup/scene-open/list-select/char-confirm/slider/loading) — mapping table in work/menu2011_spec.md §7",
       "source_build": "2011"
     },
     {
@@ -99,7 +99,7 @@
       "dest": "/Game/Imported/Districts/Financial",
       "status": "imported",
       "updated": "2026-07-20",
-      "note": "MASTER LevelStreaming decoded: 57 chunks / 2345 placements, 100% resolvable (Financial_Block09.json). Streaming set complete; verify variants (Chaos/Riot) separately \u2014 see work/district_coverage_note.md",
+      "note": "MASTER LevelStreaming decoded: 57 chunks / 2345 placements, 100% resolvable (Financial_Block09.json). Streaming set complete; verify variants (Chaos/Riot) separately — see work/district_coverage_note.md",
       "source_build": "retail"
     },
     {
@@ -681,7 +681,7 @@
       "dest": "/Game/Imported/Districts/Waterfront",
       "status": "imported",
       "updated": "2026-07-20",
-      "note": "MASTER LevelStreaming decoded: 30 chunks / 1394 placements, 100% resolvable (Waterfront_Block05.json). Streaming set complete \u2014 see work/district_coverage_note.md",
+      "note": "MASTER LevelStreaming decoded: 30 chunks / 1394 placements, 100% resolvable (Waterfront_Block05.json). Streaming set complete — see work/district_coverage_note.md",
       "source_build": "retail"
     },
     {
@@ -1535,7 +1535,7 @@
       "dest": "/Game/Imported/MaterialDatabase/Bank_lights",
       "status": "blocked_source",
       "updated": "2026-07-30",
-      "note": "Empty extract directory \u2014 UE3 MIC with emissive color params only, no bitmaps. Requires manual Material Instance Constant reconstruction in UE editor from retail color values.",
+      "note": "Empty extract directory — UE3 MIC with emissive color params only, no bitmaps. Requires manual Material Instance Constant reconstruction in UE editor from retail color values.",
       "source_build": "retail",
       "source_locator": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Bank_lights"
     },
@@ -2426,7 +2426,7 @@
       "dest": "/Game/Imported/MaterialDatabase/Emissive",
       "status": "blocked_source",
       "updated": "2026-07-30",
-      "note": "Empty extract directory \u2014 UE3 MIC with emissive color params only, no bitmaps. Requires manual Material Instance Constant reconstruction in UE editor from retail color values.",
+      "note": "Empty extract directory — UE3 MIC with emissive color params only, no bitmaps. Requires manual Material Instance Constant reconstruction in UE editor from retail color values.",
       "source_build": "retail",
       "source_locator": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Emissive"
     },
@@ -4001,7 +4001,7 @@
       "dest": "/Game/Imported/MaterialDatabase/Prop_Crown_Male",
       "status": "blocked_source",
       "updated": "2026-07-30",
-      "note": "Empty extract directory \u2014 UE3 MIC with emissive color params only, no bitmaps. Requires manual Material Instance Constant reconstruction in UE editor from retail color values.",
+      "note": "Empty extract directory — UE3 MIC with emissive color params only, no bitmaps. Requires manual Material Instance Constant reconstruction in UE editor from retail color values.",
       "source_build": "retail",
       "source_locator": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Prop_Crown_Male"
     },
@@ -5243,7 +5243,7 @@
       "dest": "/Game/Imported/MaterialDatabase/Transparent",
       "status": "blocked_source",
       "updated": "2026-07-30",
-      "note": "Empty extract directory \u2014 UE3 MIC with emissive color params only, no bitmaps. Requires manual Material Instance Constant reconstruction in UE editor from retail color values.",
+      "note": "Empty extract directory — UE3 MIC with emissive color params only, no bitmaps. Requires manual Material Instance Constant reconstruction in UE editor from retail color values.",
       "source_build": "retail",
       "source_locator": "D:\\APBReloaded\\Content\\Extracted\\MaterialDatabase\\Transparent"
     },
@@ -27929,6 +27929,17 @@
       ],
       "verified_at": "2026-08-02T22:31:02.972001+00:00",
       "verified_by": "tools/scripts/promote_verified_batch.py"
+    },
+    {
+      "asset_key": "group:Districts/Social",
+      "dest": "/Game/Imported/Districts/Social",
+      "status": "imported",
+      "updated": "2026-08-03",
+      "items": [
+        "MT000000B250000_03_LOD_0 (1 streamed terrain mesh)"
+      ],
+      "note": "Social district streamed terrain mesh imported (Social_Block_bound.json placements); resolves the fidelity-oracle group:Districts/Social ledger requirement.",
+      "source_build": "retail"
     }
   ]
 }

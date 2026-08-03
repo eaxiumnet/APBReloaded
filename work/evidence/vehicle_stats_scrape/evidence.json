@@ -1,0 +1,3552 @@
+{
+  "schema_version": 1,
+  "generated_by": "tools/scripts/refresh_vehicle_stats.py",
+  "generated_at": "2026-08-03T04:46:55Z",
+  "vehicles_total": 575,
+  "rows_updated": 503,
+  "pages_resolved": 494,
+  "unresolved": [
+    "Vehicle_Truck_E_Carrying_Crim_GKing_T5",
+    "Vehicle_Car_A_UtilityEstate_slot_1",
+    "Vehicle_Car_A_UtilityEstate_slot_4",
+    "Vehicle_Car_A_Utility2DrVan",
+    "Vehicle_Car_A_Utility2DrVan_Preset_FN1",
+    "Vehicle_Car_A_Utility2DrVan_Preset_FN4",
+    "Vehicle_Rally_Car_A_2DVan_slot_1",
+    "Vehicle_Rally_Car_A_2DVan_slot_2",
+    "Vehicle_Rally_Car_A_2DVan_slot_3",
+    "Vehicle_Rally_Car_A_2DVan_slot_4",
+    "Vehicle_Car_C_Performance_slot_2",
+    "Vehicle_Car_A_UtilityTaxi_Pre_FN1_Enf",
+    "Vehicle_Car_A_UtilityTaxi_Pre_FN2_BR",
+    "Vehicle_Car_A_UtilityTaxi_Pre_FN3_Enf",
+    "Vehicle_Car_A_UtilityTaxi_Pre_FN3_BR",
+    "Vehicle_Car_A_UtilityTaxi_Pre_FN4_Pra",
+    "Vehicle_Car_A_UtilityTaxi_Pre_FN4_PT",
+    "Vehicle_Car_A_UtilityTaxi_Pre_FN4_GK",
+    "Vehicle_Car_A_UtilityTaxi_Pre_FN4_Enf",
+    "Vehicle_Car_A_UtilityTaxi_Pre_FN4_BR",
+    "Vehicle_Van_A_VanStandard_Pre_FN1_BR",
+    "Vehicle_Car_C_Compact_Slot4_Armas",
+    "Vehicle_Truck_A_SUV",
+    "Vehicle_Truck_A_Pickup_slot_1",
+    "Vehicle_Car_A_ExoticMuscle",
+    "Vehicle_Car_A_ExoticMuscle_Slot1",
+    "Vehicle_Car_A_ExoticMuscle_Slot2",
+    "Vehicle_Car_A_ExoticMuscle_Slot3",
+    "Vehicle_Car_A_ExoticMuscle_Slot4",
+    "Vehicle_Car_A_RallySaloon_PR4_LaRocha",
+    "Vehicle_Car_A_RallySaloon_PR4_Zombie",
+    "Vehicle_Ambient_A_ClassicMuscle_slot_3_Joker",
+    "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN1_GK",
+    "Vehicle_Car_A_UtilityHatchback_slot_1",
+    "Vehicle_Truck_E_Carrying",
+    "Vehicle_Truck_E_Carrying_Pre_FN2_Enf_v2",
+    "Vehicle_Car_C_Performance_Pre_FN1_GK",
+    "Vehicle_Car_C_Performance_Pre_FN1_Crim_v1",
+    "Vehicle_Car_C_Performance_Pre_FN2_GK",
+    "Vehicle_Car_C_Performance_Pre_FN4_Crim_v2",
+    "Vehicle_Car_C_Performance_Pre_FN4_BR",
+    "Vehicle_Van_C_Carrying",
+    "Vehicle_Van_C_Carrying_slot_2",
+    "Vehicle_Van_C_Carrying_slot_3",
+    "Vehicle_Van_C_Carrying_slot_4",
+    "Vehicle_Truck_A_SUV_Pre_FN4_GK",
+    "Vehicle_Car_PerformanceSaloon_Slot_2",
+    "Vehicle_Truck_A_KingCab_Pre_FN1_Enf_v2",
+    "Vehicle_Rally_Car_A_2DVan_slot_4_legacy",
+    "Vehicle_Car_A_UtilitySaloon_Pre_FN1_PT",
+    "Vehicle_Car_C_Performance_slot_4_Crim",
+    "Vehicle_Car_A_UtilityRoadster_Pre_PR1_Crim",
+    "Vehicle_Car_A_UtilityRoadster_Pre_PR1_Enf",
+    "Vehicle_Car_A_UtilityClassicMuscle_PR4_Halloween",
+    "Vehicle_Car_A_ExoticMuscle_Slot4_Mamba_Armas",
+    "Vehicle_Car_A_ExoticMuscle_Slot4_Armas",
+    "Vehicle_Car_A_RallySaloon_PR4_Armas_Birth",
+    "Vehicle_Car_A_RallySaloon_PR4_Armas_Ophelia",
+    "Vehicle_Car_A_RallySaloon_PR4_Joker_Remus",
+    "Vehicle_Car_A_RallySaloon_PR4_Joker_Romulus",
+    "Vehicle_Car_A_RallySaloon_slot4_Armas_Crim",
+    "Vehicle_Car_A_RallySaloon_slot4_Armas_Enf",
+    "Vehicle_Truck_E_Carrying_slot4_Waragi_Enf",
+    "Vehicle_Truck_E_Carrying_slot4_Waragi_Crim",
+    "Vehicle_Truck_E_Compact_Slot4_Armas",
+    "Vehicle_Car_E_Performance_slot_4_Crim",
+    "Vehicle_Car_E_Performance_Slot4_Armas",
+    "Vehicle_Van_C_Carrying_slot_4_Bighorn_Armas",
+    "Vehicle_Van_C_Carrying_slot_2_Enf",
+    "Vehicle_Van_C_Carrying_slot_3_Enf",
+    "Vehicle_Van_C_Carrying_slot_4_Enf",
+    "Vehicle_Van_C_Carrying_Slot4_Armas",
+    "Vehicle_Van_C_Carrying_slot_4_Mammoth_Armas",
+    "Vehicle_Car_A_PerformanceSaloon_PR4_Joker_Horizon",
+    "Vehicle_Car_A_PerformanceSaloon_PR4_Joker_Sundown",
+    "Vehicle_Armas_PerformanceSaloon_Slot_4",
+    "Vehicle_Car_A_UtilityClassicMuscle_FireBomb_Crim",
+    "Vehicle_Car_A_UtilityClassicMuscle_Slot4_Crim_FireHawk",
+    "Vehicle_Car_A_UtilityClassicMuscle_Slot4_Enf_FireHawk",
+    "Vehicle_Car_A_UtilityClassicMuscle_Slot4_4x4_Armas",
+    "Vehicle_Truck_A_Pickup_FN3_Joker"
+  ],
+  "fetch_failures": [],
+  "per_vehicle": {
+    "Vehicle_Truck_C_Carrying_Enf_Praetorian_T5": {
+      "id": "Vehicle_Truck_C_Carrying_Enf_Praetorian_T5",
+      "snapshot": "http://web.archive.org/web/20220630062645/https://apbdb.com/items/Vehicle_Truck_C_Carrying_Enf_Praetorian_T5",
+      "timestamp": "20220630062645",
+      "max_speed": 21.5,
+      "health": 1350.0
+    },
+    "Vehicle_Car_A_UtilityEstate": {
+      "id": "Vehicle_Car_A_UtilityEstate",
+      "snapshot": "http://web.archive.org/web/20230607222846/https://apbdb.com/items/Vehicle_Car_A_UtilityEstate",
+      "timestamp": "20230607222846",
+      "max_speed": 19.9,
+      "health": 1100.0
+    },
+    "Vehicle_Car_A_UtilityEstate_slot_2": {
+      "id": "Vehicle_Car_A_UtilityEstate_slot_2",
+      "snapshot": "http://web.archive.org/web/20220626162433/https://apbdb.com/items/Vehicle_Car_A_UtilityEstate_slot_2",
+      "timestamp": "20220626162433",
+      "max_speed": 19.9,
+      "health": 1100.0
+    },
+    "Vehicle_Car_A_UtilityEstate_slot_3": {
+      "id": "Vehicle_Car_A_UtilityEstate_slot_3",
+      "snapshot": "http://web.archive.org/web/20220630073654/https://apbdb.com/items/Vehicle_Car_A_UtilityEstate_slot_3",
+      "timestamp": "20220630073654",
+      "max_speed": 19.9,
+      "health": 1100.0
+    },
+    "Vehicle_Car_A_Utility2DrVan_slot_1": {
+      "id": "Vehicle_Car_A_Utility2DrVan_slot_1",
+      "snapshot": "http://web.archive.org/web/20220626164339/https://apbdb.com/items/Vehicle_Car_A_Utility2DrVan_slot_1",
+      "timestamp": "20220626164339",
+      "max_speed": 20.2,
+      "health": 950.0
+    },
+    "Vehicle_Car_A_Utility2DrVan_slot_2": {
+      "id": "Vehicle_Car_A_Utility2DrVan_slot_2",
+      "snapshot": "http://web.archive.org/web/20220626174754/https://apbdb.com/items/Vehicle_Car_A_Utility2DrVan_slot_2",
+      "timestamp": "20220626174754",
+      "max_speed": 20.2,
+      "health": 950.0
+    },
+    "Vehicle_Car_A_Utility2DrVan_slot_3": {
+      "id": "Vehicle_Car_A_Utility2DrVan_slot_3",
+      "snapshot": "http://web.archive.org/web/20220630070701/https://apbdb.com/items/Vehicle_Car_A_Utility2DrVan_slot_3",
+      "timestamp": "20220630070701",
+      "max_speed": 20.2,
+      "health": 950.0
+    },
+    "Vehicle_Car_A_Utility2DrVan_slot_4": {
+      "id": "Vehicle_Car_A_Utility2DrVan_slot_4",
+      "snapshot": "http://web.archive.org/web/20220630080121/https://apbdb.com/items/Vehicle_Car_A_Utility2DrVan_slot_4",
+      "timestamp": "20220630080121",
+      "max_speed": 20.2,
+      "health": 950.0
+    },
+    "Vehicle_Car_A_Utility2DrVan_Preset_FN2": {
+      "id": "Vehicle_Car_A_Utility2DrVan_Preset_FN2",
+      "snapshot": "http://web.archive.org/web/20220626163750/https://apbdb.com/items/Vehicle_Car_A_Utility2DrVan_Preset_FN2",
+      "timestamp": "20220626163750",
+      "max_speed": 20.2,
+      "health": 950.0
+    },
+    "Vehicle_Car_A_Utility2DrVan_Preset_FN3": {
+      "id": "Vehicle_Car_A_Utility2DrVan_Preset_FN3",
+      "snapshot": "http://web.archive.org/web/20220626174649/https://apbdb.com/items/Vehicle_Car_A_Utility2DrVan_Preset_FN3",
+      "timestamp": "20220626174649",
+      "max_speed": 20.2,
+      "health": 950.0
+    },
+    "Vehicle_Rally_Car_A_2DVan": {
+      "id": "Vehicle_Rally_Car_A_2DVan",
+      "snapshot": "http://web.archive.org/web/20220630072501/https://apbdb.com/items/Vehicle_Rally_Car_A_2DVan",
+      "timestamp": "20220630072501",
+      "max_speed": 21.0,
+      "health": 950.0
+    },
+    "Vehicle_Car_C_Performance": {
+      "id": "Vehicle_Car_C_Performance",
+      "snapshot": "http://web.archive.org/web/20230607231231/https://apbdb.com/items/Vehicle_Car_C_Performance",
+      "timestamp": "20230607231231",
+      "max_speed": 23.0,
+      "health": 1150.0
+    },
+    "Vehicle_Car_C_Performance_Enf": {
+      "id": "Vehicle_Car_C_Performance_Enf",
+      "snapshot": "http://web.archive.org/web/20220630082430/https://apbdb.com/items/Vehicle_Car_C_Performance_Enf",
+      "timestamp": "20220630082430",
+      "max_speed": 23.0,
+      "health": 1150.0
+    },
+    "Vehicle_Car_C_Performance_slot_1": {
+      "id": "Vehicle_Car_C_Performance_slot_1",
+      "snapshot": "http://web.archive.org/web/20220630071048/https://apbdb.com/items/Vehicle_Car_C_Performance_slot_1",
+      "timestamp": "20220630071048",
+      "max_speed": 23.0,
+      "health": 1150.0
+    },
+    "Vehicle_Car_C_Performance_slot_1_Enf": {
+      "id": "Vehicle_Car_C_Performance_slot_1_Enf",
+      "snapshot": "http://web.archive.org/web/20220630071048/https://apbdb.com/items/Vehicle_Car_C_Performance_slot_1_Enf",
+      "timestamp": "20220630071048",
+      "max_speed": 23.0,
+      "health": 1150.0
+    },
+    "Vehicle_Car_C_Performance_slot_2_Enf": {
+      "id": "Vehicle_Car_C_Performance_slot_2_Enf",
+      "snapshot": "http://web.archive.org/web/20220630071124/https://apbdb.com/items/Vehicle_Car_C_Performance_slot_2_Enf",
+      "timestamp": "20220630071124",
+      "max_speed": 23.0,
+      "health": 1150.0
+    },
+    "Vehicle_Car_C_Performance_slot_3": {
+      "id": "Vehicle_Car_C_Performance_slot_3",
+      "snapshot": "http://web.archive.org/web/20220626170204/https://apbdb.com/items/Vehicle_Car_C_Performance_slot_3",
+      "timestamp": "20220626170204",
+      "max_speed": 23.0,
+      "health": 1150.0
+    },
+    "Vehicle_Car_C_Performance_slot_3_Enf": {
+      "id": "Vehicle_Car_C_Performance_slot_3_Enf",
+      "snapshot": "http://web.archive.org/web/20220626170204/https://apbdb.com/items/Vehicle_Car_C_Performance_slot_3_Enf",
+      "timestamp": "20220626170204",
+      "max_speed": 23.0,
+      "health": 1150.0
+    },
+    "Vehicle_Car_C_Performance_slot_4": {
+      "id": "Vehicle_Car_C_Performance_slot_4",
+      "snapshot": "http://web.archive.org/web/20230607231231/https://apbdb.com/items/Vehicle_Car_C_Performance_slot_4",
+      "timestamp": "20230607231231",
+      "max_speed": 23.0,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_UtilityTaxi_Pre_FN1_Pra": {
+      "id": "Vehicle_Car_A_UtilityTaxi_Pre_FN1_Pra",
+      "snapshot": "http://web.archive.org/web/20220626175958/https://apbdb.com/items/Vehicle_Car_A_UtilityTaxi_Pre_FN1_Pra",
+      "timestamp": "20220626175958",
+      "max_speed": 21.2,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_UtilityTaxi_Pre_FN1_PT": {
+      "id": "Vehicle_Car_A_UtilityTaxi_Pre_FN1_PT",
+      "snapshot": "http://web.archive.org/web/20220626173638/https://apbdb.com/items/Vehicle_Car_A_UtilityTaxi_Pre_FN1_PT",
+      "timestamp": "20220626173638",
+      "max_speed": 21.2,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_UtilityTaxi_Pre_FN1_GK": {
+      "id": "Vehicle_Car_A_UtilityTaxi_Pre_FN1_GK",
+      "snapshot": "http://web.archive.org/web/20220626175844/https://apbdb.com/items/Vehicle_Car_A_UtilityTaxi_Pre_FN1_GK",
+      "timestamp": "20220626175844",
+      "max_speed": 21.2,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_UtilityTaxi_Pre_FN1_BR": {
+      "id": "Vehicle_Car_A_UtilityTaxi_Pre_FN1_BR",
+      "snapshot": "http://web.archive.org/web/20220626173958/https://apbdb.com/items/Vehicle_Car_A_UtilityTaxi_Pre_FN1_BR",
+      "timestamp": "20220626173958",
+      "max_speed": 21.2,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_UtilityTaxi_Pre_FN2_Pra": {
+      "id": "Vehicle_Car_A_UtilityTaxi_Pre_FN2_Pra",
+      "snapshot": "http://web.archive.org/web/20220630081810/https://apbdb.com/items/Vehicle_Car_A_UtilityTaxi_Pre_FN2_Pra",
+      "timestamp": "20220630081810",
+      "max_speed": 21.2,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_UtilityTaxi_Pre_FN2_PT": {
+      "id": "Vehicle_Car_A_UtilityTaxi_Pre_FN2_PT",
+      "snapshot": "http://web.archive.org/web/20220626175209/https://apbdb.com/items/Vehicle_Car_A_UtilityTaxi_Pre_FN2_PT",
+      "timestamp": "20220626175209",
+      "max_speed": 21.2,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_UtilityTaxi_Pre_FN2_GK": {
+      "id": "Vehicle_Car_A_UtilityTaxi_Pre_FN2_GK",
+      "snapshot": "http://web.archive.org/web/20220630081657/https://apbdb.com/items/Vehicle_Car_A_UtilityTaxi_Pre_FN2_GK",
+      "timestamp": "20220630081657",
+      "max_speed": 21.2,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_UtilityTaxi_Pre_FN2_Enf": {
+      "id": "Vehicle_Car_A_UtilityTaxi_Pre_FN2_Enf",
+      "snapshot": "http://web.archive.org/web/20220626175704/https://apbdb.com/items/Vehicle_Car_A_UtilityTaxi_Pre_FN2_Enf",
+      "timestamp": "20220626175704",
+      "max_speed": 21.2,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_UtilityTaxi_Pre_FN3_Pra": {
+      "id": "Vehicle_Car_A_UtilityTaxi_Pre_FN3_Pra",
+      "snapshot": "http://web.archive.org/web/20220627105428/https://apbdb.com/items/Vehicle_Car_A_UtilityTaxi_Pre_FN3_Pra",
+      "timestamp": "20220627105428",
+      "max_speed": 21.2,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_UtilityTaxi_Pre_FN3_PT": {
+      "id": "Vehicle_Car_A_UtilityTaxi_Pre_FN3_PT",
+      "snapshot": "http://web.archive.org/web/20220626180852/https://apbdb.com/items/Vehicle_Car_A_UtilityTaxi_Pre_FN3_PT",
+      "timestamp": "20220626180852",
+      "max_speed": 21.2,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_UtilityTaxi_Pre_FN3_GK": {
+      "id": "Vehicle_Car_A_UtilityTaxi_Pre_FN3_GK",
+      "snapshot": "http://web.archive.org/web/20220630064031/https://apbdb.com/items/Vehicle_Car_A_UtilityTaxi_Pre_FN3_GK",
+      "timestamp": "20220630064031",
+      "max_speed": 21.2,
+      "health": 1150.0
+    },
+    "Vehicle_Van_A_VanStandard_Pre_FN1_Pra": {
+      "id": "Vehicle_Van_A_VanStandard_Pre_FN1_Pra",
+      "snapshot": "http://web.archive.org/web/20190126041921/https://apbdb.com/items/Vehicle_Van_A_VanStandard_Pre_FN1_Pra",
+      "timestamp": "20190126041921",
+      "max_speed": 19.5,
+      "health": 1250.0
+    },
+    "Vehicle_Van_A_VanStandard_Pre_FN1_GK": {
+      "id": "Vehicle_Van_A_VanStandard_Pre_FN1_GK",
+      "snapshot": "http://web.archive.org/web/20190126041911/https://apbdb.com/items/Vehicle_Van_A_VanStandard_Pre_FN1_GK",
+      "timestamp": "20190126041911",
+      "max_speed": 19.5,
+      "health": 1250.0
+    },
+    "Vehicle_Van_A_VanStandard_Pre_FN1_PT": {
+      "id": "Vehicle_Van_A_VanStandard_Pre_FN1_PT",
+      "snapshot": "http://web.archive.org/web/20190126041916/https://apbdb.com/items/Vehicle_Van_A_VanStandard_Pre_FN1_PT",
+      "timestamp": "20190126041916",
+      "max_speed": 19.5,
+      "health": 1250.0
+    },
+    "Vehicle_Van_A_VanStandard_Pre_FN2_BR": {
+      "id": "Vehicle_Van_A_VanStandard_Pre_FN2_BR",
+      "snapshot": "http://web.archive.org/web/20190126041319/https://apbdb.com/items/Vehicle_Van_A_VanStandard_Pre_FN2_BR",
+      "timestamp": "20190126041319",
+      "max_speed": 19.5,
+      "health": 1250.0
+    },
+    "Vehicle_Van_A_VanStandard_Pre_FN2_Pra": {
+      "id": "Vehicle_Van_A_VanStandard_Pre_FN2_Pra",
+      "snapshot": "http://web.archive.org/web/20190126041926/https://apbdb.com/items/Vehicle_Van_A_VanStandard_Pre_FN2_Pra",
+      "timestamp": "20190126041926",
+      "max_speed": 19.5,
+      "health": 1250.0
+    },
+    "Vehicle_Van_A_VanStandard_Pre_FN2_GK": {
+      "id": "Vehicle_Van_A_VanStandard_Pre_FN2_GK",
+      "snapshot": "http://web.archive.org/web/20190214141741/https://apbdb.com/items/Vehicle_Van_A_VanStandard_Pre_FN2_GK",
+      "timestamp": "20190214141741",
+      "max_speed": 19.5,
+      "health": 1250.0
+    },
+    "Vehicle_Van_A_VanStandard_Pre_FN2_PT": {
+      "id": "Vehicle_Van_A_VanStandard_Pre_FN2_PT",
+      "snapshot": "http://web.archive.org/web/20190227154923/https://apbdb.com/items/Vehicle_Van_A_VanStandard_Pre_FN2_PT",
+      "timestamp": "20190227154923",
+      "max_speed": 19.5,
+      "health": 1250.0
+    },
+    "Vehicle_Van_A_VanStandard_Pre_FN3_BR": {
+      "id": "Vehicle_Van_A_VanStandard_Pre_FN3_BR",
+      "snapshot": "http://web.archive.org/web/20190227062646/https://apbdb.com/items/Vehicle_Van_A_VanStandard_Pre_FN3_BR",
+      "timestamp": "20190227062646",
+      "max_speed": 19.5,
+      "health": 1250.0
+    },
+    "Vehicle_Van_A_VanStandard_Pre_FN3_Pra": {
+      "id": "Vehicle_Van_A_VanStandard_Pre_FN3_Pra",
+      "snapshot": "http://web.archive.org/web/20190214141746/https://apbdb.com/items/Vehicle_Van_A_VanStandard_Pre_FN3_Pra",
+      "timestamp": "20190214141746",
+      "max_speed": 19.5,
+      "health": 1250.0
+    },
+    "Vehicle_Van_A_VanStandard_Pre_FN3_GK": {
+      "id": "Vehicle_Van_A_VanStandard_Pre_FN3_GK",
+      "snapshot": "http://web.archive.org/web/20190126041324/https://apbdb.com/items/Vehicle_Van_A_VanStandard_Pre_FN3_GK",
+      "timestamp": "20190126041324",
+      "max_speed": 19.5,
+      "health": 1250.0
+    },
+    "Vehicle_Van_A_VanStandard_Pre_FN3_PT": {
+      "id": "Vehicle_Van_A_VanStandard_Pre_FN3_PT",
+      "snapshot": "http://web.archive.org/web/20190126041329/https://apbdb.com/items/Vehicle_Van_A_VanStandard_Pre_FN3_PT",
+      "timestamp": "20190126041329",
+      "max_speed": 19.5,
+      "health": 1250.0
+    },
+    "Vehicle_Van_A_VanStandard_Pre_FN4_BR": {
+      "id": "Vehicle_Van_A_VanStandard_Pre_FN4_BR",
+      "snapshot": "http://web.archive.org/web/20190214142409/https://apbdb.com/items/Vehicle_Van_A_VanStandard_Pre_FN4_BR",
+      "timestamp": "20190214142409",
+      "max_speed": 19.5,
+      "health": 1250.0
+    },
+    "Vehicle_Van_A_VanStandard_Pre_FN4_Pra": {
+      "id": "Vehicle_Van_A_VanStandard_Pre_FN4_Pra",
+      "snapshot": "http://web.archive.org/web/20190126041339/https://apbdb.com/items/Vehicle_Van_A_VanStandard_Pre_FN4_Pra",
+      "timestamp": "20190126041339",
+      "max_speed": 19.5,
+      "health": 1250.0
+    },
+    "Vehicle_Van_A_VanStandard_Pre_FN4_GK": {
+      "id": "Vehicle_Van_A_VanStandard_Pre_FN4_GK",
+      "snapshot": "http://web.archive.org/web/20190126041931/https://apbdb.com/items/Vehicle_Van_A_VanStandard_Pre_FN4_GK",
+      "timestamp": "20190126041931",
+      "max_speed": 19.5,
+      "health": 1250.0
+    },
+    "Vehicle_Van_A_VanStandard_Pre_FN4_PT": {
+      "id": "Vehicle_Van_A_VanStandard_Pre_FN4_PT",
+      "snapshot": "http://web.archive.org/web/20190126041334/https://apbdb.com/items/Vehicle_Van_A_VanStandard_Pre_FN4_PT",
+      "timestamp": "20190126041334",
+      "max_speed": 19.5,
+      "health": 1250.0
+    },
+    "Vehicle_Car_A_UtilityRoadster": {
+      "id": "Vehicle_Car_A_UtilityRoadster",
+      "snapshot": "http://web.archive.org/web/20220524005848/https://apbdb.com/items/Vehicle_Car_A_UtilityRoadster",
+      "timestamp": "20220524005848",
+      "max_speed": 22.5,
+      "health": 980.0
+    },
+    "Vehicle_Car_A_UtilityRoadster_slot_1": {
+      "id": "Vehicle_Car_A_UtilityRoadster_slot_1",
+      "snapshot": "http://web.archive.org/web/20190208230922/https://apbdb.com/items/Vehicle_Car_A_UtilityRoadster_slot_1",
+      "timestamp": "20190208230922",
+      "max_speed": 22.5,
+      "health": 980.0
+    },
+    "Vehicle_Car_A_UtilityRoadster_slot_2": {
+      "id": "Vehicle_Car_A_UtilityRoadster_slot_2",
+      "snapshot": "http://web.archive.org/web/20190111170019/https://apbdb.com/items/Vehicle_Car_A_UtilityRoadster_slot_2",
+      "timestamp": "20190111170019",
+      "max_speed": 22.5,
+      "health": 980.0
+    },
+    "Vehicle_Car_A_UtilityRoadster_slot_3": {
+      "id": "Vehicle_Car_A_UtilityRoadster_slot_3",
+      "snapshot": "http://web.archive.org/web/20190111164741/https://apbdb.com/items/Vehicle_Car_A_UtilityRoadster_slot_3",
+      "timestamp": "20190111164741",
+      "max_speed": 22.5,
+      "health": 980.0
+    },
+    "Vehicle_Car_A_UtilityRoadster_slot_4": {
+      "id": "Vehicle_Car_A_UtilityRoadster_slot_4",
+      "snapshot": "http://web.archive.org/web/20190305062920/https://apbdb.com/items/Vehicle_Car_A_UtilityRoadster_slot_4",
+      "timestamp": "20190305062920",
+      "max_speed": 22.5,
+      "health": 980.0
+    },
+    "Vehicle_Car_C_Compact": {
+      "id": "Vehicle_Car_C_Compact",
+      "snapshot": "http://web.archive.org/web/20190306001208/https://apbdb.com/items/Vehicle_Car_C_Compact",
+      "timestamp": "20190306001208",
+      "max_speed": 19.5,
+      "health": 900.0
+    },
+    "Vehicle_Car_C_Compact_Enf": {
+      "id": "Vehicle_Car_C_Compact_Enf",
+      "snapshot": "http://web.archive.org/web/20190210061622/https://apbdb.com/items/Vehicle_Car_C_Compact_Enf",
+      "timestamp": "20190210061622",
+      "max_speed": 19.5,
+      "health": 900.0
+    },
+    "Vehicle_Car_C_Compact_slot_1": {
+      "id": "Vehicle_Car_C_Compact_slot_1",
+      "snapshot": "http://web.archive.org/web/20190306001208/https://apbdb.com/items/Vehicle_Car_C_Compact_slot_1",
+      "timestamp": "20190306001208",
+      "max_speed": 19.5,
+      "health": 900.0
+    },
+    "Vehicle_Car_C_Compact_slot_1_Enf": {
+      "id": "Vehicle_Car_C_Compact_slot_1_Enf",
+      "snapshot": "http://web.archive.org/web/20190306001208/https://apbdb.com/items/Vehicle_Car_C_Compact_slot_1_Enf",
+      "timestamp": "20190306001208",
+      "max_speed": 19.5,
+      "health": 900.0
+    },
+    "Vehicle_Car_C_Compact_slot_2": {
+      "id": "Vehicle_Car_C_Compact_slot_2",
+      "snapshot": "http://web.archive.org/web/20190227154502/https://apbdb.com/items/Vehicle_Car_C_Compact_slot_2",
+      "timestamp": "20190227154502",
+      "max_speed": 19.5,
+      "health": 900.0
+    },
+    "Vehicle_Car_C_Compact_slot_2_Enf": {
+      "id": "Vehicle_Car_C_Compact_slot_2_Enf",
+      "snapshot": "http://web.archive.org/web/20190111163524/https://apbdb.com/items/Vehicle_Car_C_Compact_slot_2_Enf",
+      "timestamp": "20190111163524",
+      "max_speed": 19.5,
+      "health": 900.0
+    },
+    "Vehicle_Car_C_Compact_slot_3": {
+      "id": "Vehicle_Car_C_Compact_slot_3",
+      "snapshot": "http://web.archive.org/web/20190227154913/https://apbdb.com/items/Vehicle_Car_C_Compact_slot_3",
+      "timestamp": "20190227154913",
+      "max_speed": 19.5,
+      "health": 900.0
+    },
+    "Vehicle_Car_C_Compact_slot_3_Enf": {
+      "id": "Vehicle_Car_C_Compact_slot_3_Enf",
+      "snapshot": "http://web.archive.org/web/20190111164756/https://apbdb.com/items/Vehicle_Car_C_Compact_slot_3_Enf",
+      "timestamp": "20190111164756",
+      "max_speed": 19.5,
+      "health": 900.0
+    },
+    "Vehicle_Car_C_Compact_slot_4": {
+      "id": "Vehicle_Car_C_Compact_slot_4",
+      "snapshot": "http://web.archive.org/web/20190111170029/https://apbdb.com/items/Vehicle_Car_C_Compact_slot_4",
+      "timestamp": "20190111170029",
+      "max_speed": 19.5,
+      "health": 900.0
+    },
+    "Vehicle_Truck_A_SUV_slot_1": {
+      "id": "Vehicle_Truck_A_SUV_slot_1",
+      "snapshot": "http://web.archive.org/web/20190307122406/https://apbdb.com/items/Vehicle_Truck_A_SUV_slot_1",
+      "timestamp": "20190307122406",
+      "max_speed": 20.0,
+      "health": 1050.0
+    },
+    "Vehicle_Truck_A_SUV_slot_2": {
+      "id": "Vehicle_Truck_A_SUV_slot_2",
+      "snapshot": "http://web.archive.org/web/20190307122411/https://apbdb.com/items/Vehicle_Truck_A_SUV_slot_2",
+      "timestamp": "20190307122411",
+      "max_speed": 20.0,
+      "health": 1050.0
+    },
+    "Vehicle_Truck_A_SUV_slot_3": {
+      "id": "Vehicle_Truck_A_SUV_slot_3",
+      "snapshot": "http://web.archive.org/web/20190126041219/https://apbdb.com/items/Vehicle_Truck_A_SUV_slot_3",
+      "timestamp": "20190126041219",
+      "max_speed": 20.0,
+      "health": 1050.0
+    },
+    "Vehicle_Truck_A_SUV_slot_4": {
+      "id": "Vehicle_Truck_A_SUV_slot_4",
+      "snapshot": "http://web.archive.org/web/20180724110437/https://apbdb.com/items/Vehicle_Truck_A_SUV_slot_4",
+      "timestamp": "20180724110437",
+      "max_speed": 20.0,
+      "health": 1050.0
+    },
+    "Vehicle_Car_A_UtilityRoadster_Crim_Joker": {
+      "id": "Vehicle_Car_A_UtilityRoadster_Crim_Joker",
+      "snapshot": "http://web.archive.org/web/20190227154908/https://apbdb.com/items/Vehicle_Car_A_UtilityRoadster_Crim_Joker",
+      "timestamp": "20190227154908",
+      "max_speed": 22.5,
+      "health": 980.0
+    },
+    "Vehicle_Car_A_UtilityRoadster_Pre_FN1_GK": {
+      "id": "Vehicle_Car_A_UtilityRoadster_Pre_FN1_GK",
+      "snapshot": "http://web.archive.org/web/20190111163654/https://apbdb.com/items/Vehicle_Car_A_UtilityRoadster_Pre_FN1_GK",
+      "timestamp": "20190111163654",
+      "max_speed": 22.5,
+      "health": 980.0
+    },
+    "Vehicle_Car_A_UtilityRoadster_Pre_FN1_Pra": {
+      "id": "Vehicle_Car_A_UtilityRoadster_Pre_FN1_Pra",
+      "snapshot": "http://web.archive.org/web/20190111164535/https://apbdb.com/items/Vehicle_Car_A_UtilityRoadster_Pre_FN1_Pra",
+      "timestamp": "20190111164535",
+      "max_speed": 22.5,
+      "health": 980.0
+    },
+    "Vehicle_Car_A_UtilityRoadster_Pre_FN1_BR": {
+      "id": "Vehicle_Car_A_UtilityRoadster_Pre_FN1_BR",
+      "snapshot": "http://web.archive.org/web/20190111163453/https://apbdb.com/items/Vehicle_Car_A_UtilityRoadster_Pre_FN1_BR",
+      "timestamp": "20190111163453",
+      "max_speed": 22.5,
+      "health": 980.0
+    },
+    "Vehicle_Car_A_UtilityRoadster_Pre_FN1_PT": {
+      "id": "Vehicle_Car_A_UtilityRoadster_Pre_FN1_PT",
+      "snapshot": "http://web.archive.org/web/20190111170304/https://apbdb.com/items/Vehicle_Car_A_UtilityRoadster_Pre_FN1_PT",
+      "timestamp": "20190111170304",
+      "max_speed": 22.5,
+      "health": 980.0
+    },
+    "Vehicle_Car_A_UtilityRoadster_Pre_FN1_Enf": {
+      "id": "Vehicle_Car_A_UtilityRoadster_Pre_FN1_Enf",
+      "snapshot": "http://web.archive.org/web/20190111170004/https://apbdb.com/items/Vehicle_Car_A_UtilityRoadster_Pre_FN1_Enf",
+      "timestamp": "20190111170004",
+      "max_speed": 22.5,
+      "health": 980.0
+    },
+    "Vehicle_Car_A_UtilityRoadster_Pre_FN1_Crim": {
+      "id": "Vehicle_Car_A_UtilityRoadster_Pre_FN1_Crim",
+      "snapshot": "http://web.archive.org/web/20190111164731/https://apbdb.com/items/Vehicle_Car_A_UtilityRoadster_Pre_FN1_Crim",
+      "timestamp": "20190111164731",
+      "max_speed": 22.5,
+      "health": 980.0
+    },
+    "Vehicle_Car_A_UtilityRoadster_Pre_FN2_GK": {
+      "id": "Vehicle_Car_A_UtilityRoadster_Pre_FN2_GK",
+      "snapshot": "http://web.archive.org/web/20190111171617/https://apbdb.com/items/Vehicle_Car_A_UtilityRoadster_Pre_FN2_GK",
+      "timestamp": "20190111171617",
+      "max_speed": 22.5,
+      "health": 980.0
+    },
+    "Vehicle_Car_A_UtilityRoadster_Pre_FN2_Pra": {
+      "id": "Vehicle_Car_A_UtilityRoadster_Pre_FN2_Pra",
+      "snapshot": "http://web.archive.org/web/20190111164540/https://apbdb.com/items/Vehicle_Car_A_UtilityRoadster_Pre_FN2_Pra",
+      "timestamp": "20190111164540",
+      "max_speed": 22.5,
+      "health": 980.0
+    },
+    "Vehicle_Car_A_UtilityRoadster_Pre_FN2_BR": {
+      "id": "Vehicle_Car_A_UtilityRoadster_Pre_FN2_BR",
+      "snapshot": "http://web.archive.org/web/20190111163458/https://apbdb.com/items/Vehicle_Car_A_UtilityRoadster_Pre_FN2_BR",
+      "timestamp": "20190111163458",
+      "max_speed": 22.5,
+      "health": 980.0
+    },
+    "Vehicle_Car_A_UtilityRoadster_Pre_FN2_PT": {
+      "id": "Vehicle_Car_A_UtilityRoadster_Pre_FN2_PT",
+      "snapshot": "http://web.archive.org/web/20190111170009/https://apbdb.com/items/Vehicle_Car_A_UtilityRoadster_Pre_FN2_PT",
+      "timestamp": "20190111170009",
+      "max_speed": 22.5,
+      "health": 980.0
+    },
+    "Vehicle_Car_A_UtilityRoadster_Pre_FN2_Enf": {
+      "id": "Vehicle_Car_A_UtilityRoadster_Pre_FN2_Enf",
+      "snapshot": "http://web.archive.org/web/20190111171843/https://apbdb.com/items/Vehicle_Car_A_UtilityRoadster_Pre_FN2_Enf",
+      "timestamp": "20190111171843",
+      "max_speed": 22.5,
+      "health": 980.0
+    },
+    "Vehicle_Car_A_UtilityRoadster_Pre_FN2_Crim": {
+      "id": "Vehicle_Car_A_UtilityRoadster_Pre_FN2_Crim",
+      "snapshot": "http://web.archive.org/web/20190111163503/https://apbdb.com/items/Vehicle_Car_A_UtilityRoadster_Pre_FN2_Crim",
+      "timestamp": "20190111163503",
+      "max_speed": 22.5,
+      "health": 980.0
+    },
+    "Vehicle_Car_A_UtilityRoadster_Pre_FN3_GK": {
+      "id": "Vehicle_Car_A_UtilityRoadster_Pre_FN3_GK",
+      "snapshot": "http://web.archive.org/web/20190111163509/https://apbdb.com/items/Vehicle_Car_A_UtilityRoadster_Pre_FN3_GK",
+      "timestamp": "20190111163509",
+      "max_speed": 22.5,
+      "health": 980.0
+    },
+    "Vehicle_Car_A_UtilityRoadster_Pre_FN3_Pra": {
+      "id": "Vehicle_Car_A_UtilityRoadster_Pre_FN3_Pra",
+      "snapshot": "http://web.archive.org/web/20190111164323/https://apbdb.com/items/Vehicle_Car_A_UtilityRoadster_Pre_FN3_Pra",
+      "timestamp": "20190111164323",
+      "max_speed": 22.5,
+      "health": 980.0
+    },
+    "Vehicle_Car_A_UtilityRoadster_Pre_FN3_BR": {
+      "id": "Vehicle_Car_A_UtilityRoadster_Pre_FN3_BR",
+      "snapshot": "http://web.archive.org/web/20190111164545/https://apbdb.com/items/Vehicle_Car_A_UtilityRoadster_Pre_FN3_BR",
+      "timestamp": "20190111164545",
+      "max_speed": 22.5,
+      "health": 980.0
+    },
+    "Vehicle_Car_A_UtilityRoadster_Pre_FN3_PT": {
+      "id": "Vehicle_Car_A_UtilityRoadster_Pre_FN3_PT",
+      "snapshot": "http://web.archive.org/web/20190111164946/https://apbdb.com/items/Vehicle_Car_A_UtilityRoadster_Pre_FN3_PT",
+      "timestamp": "20190111164946",
+      "max_speed": 22.5,
+      "health": 980.0
+    },
+    "Vehicle_Car_A_UtilityRoadster_Pre_FN3_Enf": {
+      "id": "Vehicle_Car_A_UtilityRoadster_Pre_FN3_Enf",
+      "snapshot": "http://web.archive.org/web/20190111165407/https://apbdb.com/items/Vehicle_Car_A_UtilityRoadster_Pre_FN3_Enf",
+      "timestamp": "20190111165407",
+      "max_speed": 22.5,
+      "health": 980.0
+    },
+    "Vehicle_Car_A_UtilityRoadster_Pre_FN3_Crim": {
+      "id": "Vehicle_Car_A_UtilityRoadster_Pre_FN3_Crim",
+      "snapshot": "http://web.archive.org/web/20190111165402/https://apbdb.com/items/Vehicle_Car_A_UtilityRoadster_Pre_FN3_Crim",
+      "timestamp": "20190111165402",
+      "max_speed": 22.5,
+      "health": 980.0
+    },
+    "Vehicle_Car_A_UtilityRoadster_DevilDog": {
+      "id": "Vehicle_Car_A_UtilityRoadster_DevilDog",
+      "snapshot": "http://web.archive.org/web/20190227062636/https://apbdb.com/items/Vehicle_Car_A_UtilityRoadster_DevilDog",
+      "timestamp": "20190227062636",
+      "max_speed": 22.5,
+      "health": 980.0
+    },
+    "Vehicle_Car_A_UtilityRoadster_Pre_FN4_GK": {
+      "id": "Vehicle_Car_A_UtilityRoadster_Pre_FN4_GK",
+      "snapshot": "http://web.archive.org/web/20190111170309/https://apbdb.com/items/Vehicle_Car_A_UtilityRoadster_Pre_FN4_GK",
+      "timestamp": "20190111170309",
+      "max_speed": 22.5,
+      "health": 980.0
+    },
+    "Vehicle_Car_A_UtilityRoadster_Pre_FN4_Pra": {
+      "id": "Vehicle_Car_A_UtilityRoadster_Pre_FN4_Pra",
+      "snapshot": "http://web.archive.org/web/20190111163659/https://apbdb.com/items/Vehicle_Car_A_UtilityRoadster_Pre_FN4_Pra",
+      "timestamp": "20190111163659",
+      "max_speed": 22.5,
+      "health": 980.0
+    },
+    "Vehicle_Car_A_UtilityRoadster_Pre_FN4_BR": {
+      "id": "Vehicle_Car_A_UtilityRoadster_Pre_FN4_BR",
+      "snapshot": "http://web.archive.org/web/20190111165823/https://apbdb.com/items/Vehicle_Car_A_UtilityRoadster_Pre_FN4_BR",
+      "timestamp": "20190111165823",
+      "max_speed": 22.5,
+      "health": 980.0
+    },
+    "Vehicle_Car_A_UtilityRoadster_Pre_FN4_PT": {
+      "id": "Vehicle_Car_A_UtilityRoadster_Pre_FN4_PT",
+      "snapshot": "http://web.archive.org/web/20190209053058/https://apbdb.com/items/Vehicle_Car_A_UtilityRoadster_Pre_FN4_PT",
+      "timestamp": "20190209053058",
+      "max_speed": 22.5,
+      "health": 980.0
+    },
+    "Vehicle_Car_A_UtilityRoadster_Pre_FN4_Enf": {
+      "id": "Vehicle_Car_A_UtilityRoadster_Pre_FN4_Enf",
+      "snapshot": "http://web.archive.org/web/20190111163513/https://apbdb.com/items/Vehicle_Car_A_UtilityRoadster_Pre_FN4_Enf",
+      "timestamp": "20190111163513",
+      "max_speed": 22.5,
+      "health": 980.0
+    },
+    "Vehicle_Car_A_UtilityRoadster_Pre_FN4_Crim": {
+      "id": "Vehicle_Car_A_UtilityRoadster_Pre_FN4_Crim",
+      "snapshot": "http://web.archive.org/web/20190111171848/https://apbdb.com/items/Vehicle_Car_A_UtilityRoadster_Pre_FN4_Crim",
+      "timestamp": "20190111171848",
+      "max_speed": 22.5,
+      "health": 980.0
+    },
+    "Vehicle_Car_A_UtilityRoadster_ComputerBildSpiele_Crim": {
+      "id": "Vehicle_Car_A_UtilityRoadster_ComputerBildSpiele_Crim",
+      "snapshot": "http://web.archive.org/web/20190227053705/https://apbdb.com/items/Vehicle_Car_A_UtilityRoadster_ComputerBildSpiele_Crim",
+      "timestamp": "20190227053705",
+      "max_speed": 22.5,
+      "health": 980.0
+    },
+    "Vehicle_Car_A_UtilityRoadster_ComputerBildSpiele_Enf": {
+      "id": "Vehicle_Car_A_UtilityRoadster_ComputerBildSpiele_Enf",
+      "snapshot": "http://web.archive.org/web/20190111165357/https://apbdb.com/items/Vehicle_Car_A_UtilityRoadster_ComputerBildSpiele_Enf",
+      "timestamp": "20190111165357",
+      "max_speed": 22.5,
+      "health": 980.0
+    },
+    "Vehicle_Car_A_UtilityHatchback_Pre_FN1_BR": {
+      "id": "Vehicle_Car_A_UtilityHatchback_Pre_FN1_BR",
+      "snapshot": "http://web.archive.org/web/20190211061740/https://apbdb.com/items/Vehicle_Car_A_UtilityHatchback_Pre_FN1_BR",
+      "timestamp": "20190211061740",
+      "max_speed": 20.0,
+      "health": 1025.0
+    },
+    "Vehicle_Car_A_UtilityHatchback_Pre_FN1_PT": {
+      "id": "Vehicle_Car_A_UtilityHatchback_Pre_FN1_PT",
+      "snapshot": "http://web.archive.org/web/20190211061745/https://apbdb.com/items/Vehicle_Car_A_UtilityHatchback_Pre_FN1_PT",
+      "timestamp": "20190211061745",
+      "max_speed": 20.0,
+      "health": 1025.0
+    },
+    "Vehicle_Car_A_UtilityHatchback_Pre_FN2_BR": {
+      "id": "Vehicle_Car_A_UtilityHatchback_Pre_FN2_BR",
+      "snapshot": "http://web.archive.org/web/20190211061750/https://apbdb.com/items/Vehicle_Car_A_UtilityHatchback_Pre_FN2_BR",
+      "timestamp": "20190211061750",
+      "max_speed": 20.0,
+      "health": 1025.0
+    },
+    "Vehicle_Car_A_UtilityHatchback_Pre_FN2_PT": {
+      "id": "Vehicle_Car_A_UtilityHatchback_Pre_FN2_PT",
+      "snapshot": "http://web.archive.org/web/20190211061755/https://apbdb.com/items/Vehicle_Car_A_UtilityHatchback_Pre_FN2_PT",
+      "timestamp": "20190211061755",
+      "max_speed": 20.0,
+      "health": 1025.0
+    },
+    "Vehicle_Car_A_UtilityHatchback_Pre_FN3_BR": {
+      "id": "Vehicle_Car_A_UtilityHatchback_Pre_FN3_BR",
+      "snapshot": "http://web.archive.org/web/20190211061800/https://apbdb.com/items/Vehicle_Car_A_UtilityHatchback_Pre_FN3_BR",
+      "timestamp": "20190211061800",
+      "max_speed": 20.0,
+      "health": 1025.0
+    },
+    "Vehicle_Car_A_UtilityHatchback_Pre_FN3_PT": {
+      "id": "Vehicle_Car_A_UtilityHatchback_Pre_FN3_PT",
+      "snapshot": "http://web.archive.org/web/20190211061806/https://apbdb.com/items/Vehicle_Car_A_UtilityHatchback_Pre_FN3_PT",
+      "timestamp": "20190211061806",
+      "max_speed": 20.0,
+      "health": 1025.0
+    },
+    "Vehicle_Car_A_UtilityHatchback_Pre_FN4_BR": {
+      "id": "Vehicle_Car_A_UtilityHatchback_Pre_FN4_BR",
+      "snapshot": "http://web.archive.org/web/20190211061811/https://apbdb.com/items/Vehicle_Car_A_UtilityHatchback_Pre_FN4_BR",
+      "timestamp": "20190211061811",
+      "max_speed": 20.0,
+      "health": 1025.0
+    },
+    "Vehicle_Car_A_UtilityHatchback_Pre_FN4_PT": {
+      "id": "Vehicle_Car_A_UtilityHatchback_Pre_FN4_PT",
+      "snapshot": "http://web.archive.org/web/20190211061816/https://apbdb.com/items/Vehicle_Car_A_UtilityHatchback_Pre_FN4_PT",
+      "timestamp": "20190211061816",
+      "max_speed": 20.0,
+      "health": 1025.0
+    },
+    "Vehicle_Car_A_UtilityTaxi": {
+      "id": "Vehicle_Car_A_UtilityTaxi",
+      "snapshot": "http://web.archive.org/web/20250824022110/https://apbdb.com/items/Vehicle_Car_A_UtilityTaxi",
+      "timestamp": "20250824022110",
+      "max_speed": 21.2,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_UtilityTaxi_slot_1": {
+      "id": "Vehicle_Car_A_UtilityTaxi_slot_1",
+      "snapshot": "http://web.archive.org/web/20190920095725/https://apbdb.com/items/Vehicle_Car_A_UtilityTaxi_slot_1",
+      "timestamp": "20190920095725",
+      "max_speed": 21.2,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_UtilityTaxi_slot_2": {
+      "id": "Vehicle_Car_A_UtilityTaxi_slot_2",
+      "snapshot": "http://web.archive.org/web/20190921173250/https://apbdb.com/items/Vehicle_Car_A_UtilityTaxi_slot_2",
+      "timestamp": "20190921173250",
+      "max_speed": 21.2,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_UtilityTaxi_slot_3": {
+      "id": "Vehicle_Car_A_UtilityTaxi_slot_3",
+      "snapshot": "http://web.archive.org/web/20190921173256/https://apbdb.com/items/Vehicle_Car_A_UtilityTaxi_slot_3",
+      "timestamp": "20190921173256",
+      "max_speed": 21.2,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_UtilityTaxi_slot_4": {
+      "id": "Vehicle_Car_A_UtilityTaxi_slot_4",
+      "snapshot": "http://web.archive.org/web/20190921173309/https://apbdb.com/items/Vehicle_Car_A_UtilityTaxi_slot_4",
+      "timestamp": "20190921173309",
+      "max_speed": 21.2,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_UtilityLowRider": {
+      "id": "Vehicle_Car_A_UtilityLowRider",
+      "snapshot": "http://web.archive.org/web/20190307123515/https://apbdb.com/items/Vehicle_Car_A_UtilityLowRider",
+      "timestamp": "20190307123515",
+      "max_speed": 21.4,
+      "health": 1450.0
+    },
+    "Vehicle_Car_A_UtilityLowRider_slot_1": {
+      "id": "Vehicle_Car_A_UtilityLowRider_slot_1",
+      "snapshot": "http://web.archive.org/web/20190307123515/https://apbdb.com/items/Vehicle_Car_A_UtilityLowRider_slot_1",
+      "timestamp": "20190307123515",
+      "max_speed": 21.4,
+      "health": 1450.0
+    },
+    "Vehicle_Car_A_UtilityLowRider_slot_2": {
+      "id": "Vehicle_Car_A_UtilityLowRider_slot_2",
+      "snapshot": "http://web.archive.org/web/20190307123329/https://apbdb.com/items/Vehicle_Car_A_UtilityLowRider_slot_2",
+      "timestamp": "20190307123329",
+      "max_speed": 21.4,
+      "health": 1450.0
+    },
+    "Vehicle_Car_A_UtilityLowRider_slot_3": {
+      "id": "Vehicle_Car_A_UtilityLowRider_slot_3",
+      "snapshot": "http://web.archive.org/web/20190126041640/https://apbdb.com/items/Vehicle_Car_A_UtilityLowRider_slot_3",
+      "timestamp": "20190126041640",
+      "max_speed": 21.4,
+      "health": 1450.0
+    },
+    "Vehicle_Car_A_UtilityLowRider_slot_4": {
+      "id": "Vehicle_Car_A_UtilityLowRider_slot_4",
+      "snapshot": "http://web.archive.org/web/20180922184107/https://apbdb.com/items/Vehicle_Car_A_UtilityLowRider_slot_4",
+      "timestamp": "20180922184107",
+      "max_speed": 21.4,
+      "health": 1450.0
+    },
+    "Vehicle_Truck_A_Pickup": {
+      "id": "Vehicle_Truck_A_Pickup",
+      "snapshot": "http://web.archive.org/web/20230305022045/https://apbdb.com/items/Vehicle_Truck_A_Pickup",
+      "timestamp": "20230305022045",
+      "max_speed": 21.0,
+      "health": 1250.0
+    },
+    "Vehicle_Truck_A_Pickup_slot_2": {
+      "id": "Vehicle_Truck_A_Pickup_slot_2",
+      "snapshot": "http://web.archive.org/web/20190126041204/https://apbdb.com/items/Vehicle_Truck_A_Pickup_slot_2",
+      "timestamp": "20190126041204",
+      "max_speed": 21.0,
+      "health": 1250.0
+    },
+    "Vehicle_Truck_A_Pickup_slot_3": {
+      "id": "Vehicle_Truck_A_Pickup_slot_3",
+      "snapshot": "http://web.archive.org/web/20190126041805/https://apbdb.com/items/Vehicle_Truck_A_Pickup_slot_3",
+      "timestamp": "20190126041805",
+      "max_speed": 21.0,
+      "health": 1250.0
+    },
+    "Vehicle_Truck_A_Pickup_slot_4": {
+      "id": "Vehicle_Truck_A_Pickup_slot_4",
+      "snapshot": "http://web.archive.org/web/20180724104030/https://apbdb.com/items/Vehicle_Truck_A_Pickup_slot_4",
+      "timestamp": "20180724104030",
+      "max_speed": 21.0,
+      "health": 1250.0
+    },
+    "Vehicle_Van_C_Carrying_Pre_FN1_GK": {
+      "id": "Vehicle_Van_C_Carrying_Pre_FN1_GK",
+      "snapshot": "http://web.archive.org/web/20190307094732/https://apbdb.com/items/Vehicle_Van_C_Carrying_Pre_FN1_GK",
+      "timestamp": "20190307094732",
+      "max_speed": 21.5,
+      "health": 1600.0
+    },
+    "Vehicle_Van_C_Carrying_Pre_FN1_BR": {
+      "id": "Vehicle_Van_C_Carrying_Pre_FN1_BR",
+      "snapshot": "http://web.archive.org/web/20190307094716/https://apbdb.com/items/Vehicle_Van_C_Carrying_Pre_FN1_BR",
+      "timestamp": "20190307094716",
+      "max_speed": 21.5,
+      "health": 1600.0
+    },
+    "Vehicle_Van_C_Carrying_Pre_FN1_Crim_v2": {
+      "id": "Vehicle_Van_C_Carrying_Pre_FN1_Crim_v2",
+      "snapshot": "http://web.archive.org/web/20190307094727/https://apbdb.com/items/Vehicle_Van_C_Carrying_Pre_FN1_Crim_v2",
+      "timestamp": "20190307094727",
+      "max_speed": 21.5,
+      "health": 1600.0
+    },
+    "Vehicle_Van_C_Carrying_Pre_FN1_Crim_v1": {
+      "id": "Vehicle_Van_C_Carrying_Pre_FN1_Crim_v1",
+      "snapshot": "http://web.archive.org/web/20190307094722/https://apbdb.com/items/Vehicle_Van_C_Carrying_Pre_FN1_Crim_v1",
+      "timestamp": "20190307094722",
+      "max_speed": 21.5,
+      "health": 1600.0
+    },
+    "Vehicle_Van_C_Carrying_Pre_FN2_GK": {
+      "id": "Vehicle_Van_C_Carrying_Pre_FN2_GK",
+      "snapshot": "http://web.archive.org/web/20190307094752/https://apbdb.com/items/Vehicle_Van_C_Carrying_Pre_FN2_GK",
+      "timestamp": "20190307094752",
+      "max_speed": 21.5,
+      "health": 1600.0
+    },
+    "Vehicle_Van_C_Carrying_Pre_FN2_BR": {
+      "id": "Vehicle_Van_C_Carrying_Pre_FN2_BR",
+      "snapshot": "http://web.archive.org/web/20190307094737/https://apbdb.com/items/Vehicle_Van_C_Carrying_Pre_FN2_BR",
+      "timestamp": "20190307094737",
+      "max_speed": 21.5,
+      "health": 1600.0
+    },
+    "Vehicle_Van_C_Carrying_Pre_FN2_Crim_v2": {
+      "id": "Vehicle_Van_C_Carrying_Pre_FN2_Crim_v2",
+      "snapshot": "http://web.archive.org/web/20190307094747/https://apbdb.com/items/Vehicle_Van_C_Carrying_Pre_FN2_Crim_v2",
+      "timestamp": "20190307094747",
+      "max_speed": 21.5,
+      "health": 1600.0
+    },
+    "Vehicle_Van_C_Carrying_Pre_FN2_Crim_v1": {
+      "id": "Vehicle_Van_C_Carrying_Pre_FN2_Crim_v1",
+      "snapshot": "http://web.archive.org/web/20190307094742/https://apbdb.com/items/Vehicle_Van_C_Carrying_Pre_FN2_Crim_v1",
+      "timestamp": "20190307094742",
+      "max_speed": 21.5,
+      "health": 1600.0
+    },
+    "Vehicle_Van_C_Carrying_Pre_FN3_GK": {
+      "id": "Vehicle_Van_C_Carrying_Pre_FN3_GK",
+      "snapshot": "http://web.archive.org/web/20190307094812/https://apbdb.com/items/Vehicle_Van_C_Carrying_Pre_FN3_GK",
+      "timestamp": "20190307094812",
+      "max_speed": 21.5,
+      "health": 1600.0
+    },
+    "Vehicle_Van_C_Carrying_Pre_FN3_BR": {
+      "id": "Vehicle_Van_C_Carrying_Pre_FN3_BR",
+      "snapshot": "http://web.archive.org/web/20190307094757/https://apbdb.com/items/Vehicle_Van_C_Carrying_Pre_FN3_BR",
+      "timestamp": "20190307094757",
+      "max_speed": 21.5,
+      "health": 1600.0
+    },
+    "Vehicle_Van_C_Carrying_Pre_FN3_Crim_v2": {
+      "id": "Vehicle_Van_C_Carrying_Pre_FN3_Crim_v2",
+      "snapshot": "http://web.archive.org/web/20190307094807/https://apbdb.com/items/Vehicle_Van_C_Carrying_Pre_FN3_Crim_v2",
+      "timestamp": "20190307094807",
+      "max_speed": 21.5,
+      "health": 1600.0
+    },
+    "Vehicle_Van_C_Carrying_Pre_FN3_Crim_v1": {
+      "id": "Vehicle_Van_C_Carrying_Pre_FN3_Crim_v1",
+      "snapshot": "http://web.archive.org/web/20190307094802/https://apbdb.com/items/Vehicle_Van_C_Carrying_Pre_FN3_Crim_v1",
+      "timestamp": "20190307094802",
+      "max_speed": 21.5,
+      "health": 1600.0
+    },
+    "Vehicle_Van_C_Carrying_Pre_FN4_GK": {
+      "id": "Vehicle_Van_C_Carrying_Pre_FN4_GK",
+      "snapshot": "http://web.archive.org/web/20190307094827/https://apbdb.com/items/Vehicle_Van_C_Carrying_Pre_FN4_GK",
+      "timestamp": "20190307094827",
+      "max_speed": 21.5,
+      "health": 1600.0
+    },
+    "Vehicle_Van_C_Carrying_Pre_FN4_BR": {
+      "id": "Vehicle_Van_C_Carrying_Pre_FN4_BR",
+      "snapshot": "http://web.archive.org/web/20190107221214/https://apbdb.com/items/Vehicle_Van_C_Carrying_Pre_FN4_BR",
+      "timestamp": "20190107221214",
+      "max_speed": 21.5,
+      "health": 1600.0
+    },
+    "Vehicle_Van_C_Carrying_Pre_FN4_Crim_v2": {
+      "id": "Vehicle_Van_C_Carrying_Pre_FN4_Crim_v2",
+      "snapshot": "http://web.archive.org/web/20190307094822/https://apbdb.com/items/Vehicle_Van_C_Carrying_Pre_FN4_Crim_v2",
+      "timestamp": "20190307094822",
+      "max_speed": 21.5,
+      "health": 1600.0
+    },
+    "Vehicle_Van_C_Carrying_Pre_FN4_Crim_v1": {
+      "id": "Vehicle_Van_C_Carrying_Pre_FN4_Crim_v1",
+      "snapshot": "http://web.archive.org/web/20190307094817/https://apbdb.com/items/Vehicle_Van_C_Carrying_Pre_FN4_Crim_v1",
+      "timestamp": "20190307094817",
+      "max_speed": 21.5,
+      "health": 1600.0
+    },
+    "Vehicle_Car_A_UtilityLowRider_Pre_FN1_BR": {
+      "id": "Vehicle_Car_A_UtilityLowRider_Pre_FN1_BR",
+      "snapshot": "http://web.archive.org/web/20180922184144/https://apbdb.com/items/Vehicle_Car_A_UtilityLowRider_Pre_FN1_BR",
+      "timestamp": "20180922184144",
+      "max_speed": 21.4,
+      "health": 1450.0
+    },
+    "Vehicle_Car_A_UtilityLowRider_Pre_FN1_PT": {
+      "id": "Vehicle_Car_A_UtilityLowRider_Pre_FN1_PT",
+      "snapshot": "http://web.archive.org/web/20180922183756/https://apbdb.com/items/Vehicle_Car_A_UtilityLowRider_Pre_FN1_PT",
+      "timestamp": "20180922183756",
+      "max_speed": 21.4,
+      "health": 1450.0
+    },
+    "Vehicle_Car_A_UtilityLowRider_Pre_FN1_GK": {
+      "id": "Vehicle_Car_A_UtilityLowRider_Pre_FN1_GK",
+      "snapshot": "http://web.archive.org/web/20180922184149/https://apbdb.com/items/Vehicle_Car_A_UtilityLowRider_Pre_FN1_GK",
+      "timestamp": "20180922184149",
+      "max_speed": 21.4,
+      "health": 1450.0
+    },
+    "Vehicle_Car_A_UtilityLowRider_Pre_FN1_Pra": {
+      "id": "Vehicle_Car_A_UtilityLowRider_Pre_FN1_Pra",
+      "snapshot": "http://web.archive.org/web/20180922184154/https://apbdb.com/items/Vehicle_Car_A_UtilityLowRider_Pre_FN1_Pra",
+      "timestamp": "20180922184154",
+      "max_speed": 21.4,
+      "health": 1450.0
+    },
+    "Vehicle_Car_A_UtilityLowRider_Pre_FN1_Crim": {
+      "id": "Vehicle_Car_A_UtilityLowRider_Pre_FN1_Crim",
+      "snapshot": "http://web.archive.org/web/20180922183752/https://apbdb.com/items/Vehicle_Car_A_UtilityLowRider_Pre_FN1_Crim",
+      "timestamp": "20180922183752",
+      "max_speed": 21.4,
+      "health": 1450.0
+    },
+    "Vehicle_Car_A_UtilityLowRider_Pre_FN1_Enf": {
+      "id": "Vehicle_Car_A_UtilityLowRider_Pre_FN1_Enf",
+      "snapshot": "http://web.archive.org/web/20190126041004/https://apbdb.com/items/Vehicle_Car_A_UtilityLowRider_Pre_FN1_Enf",
+      "timestamp": "20190126041004",
+      "max_speed": 21.4,
+      "health": 1450.0
+    },
+    "Vehicle_Car_A_UtilityLowRider_Pre_FN2_BR": {
+      "id": "Vehicle_Car_A_UtilityLowRider_Pre_FN2_BR",
+      "snapshot": "http://web.archive.org/web/20180922184042/https://apbdb.com/items/Vehicle_Car_A_UtilityLowRider_Pre_FN2_BR",
+      "timestamp": "20180922184042",
+      "max_speed": 21.4,
+      "health": 1450.0
+    },
+    "Vehicle_Car_A_UtilityLowRider_Pre_FN2_PT": {
+      "id": "Vehicle_Car_A_UtilityLowRider_Pre_FN2_PT",
+      "snapshot": "http://web.archive.org/web/20180922184159/https://apbdb.com/items/Vehicle_Car_A_UtilityLowRider_Pre_FN2_PT",
+      "timestamp": "20180922184159",
+      "max_speed": 21.4,
+      "health": 1450.0
+    },
+    "Vehicle_Car_A_UtilityLowRider_Pre_FN2_GK": {
+      "id": "Vehicle_Car_A_UtilityLowRider_Pre_FN2_GK",
+      "snapshot": "http://web.archive.org/web/20180922184052/https://apbdb.com/items/Vehicle_Car_A_UtilityLowRider_Pre_FN2_GK",
+      "timestamp": "20180922184052",
+      "max_speed": 21.4,
+      "health": 1450.0
+    },
+    "Vehicle_Car_A_UtilityLowRider_Pre_FN2_Pra": {
+      "id": "Vehicle_Car_A_UtilityLowRider_Pre_FN2_Pra",
+      "snapshot": "http://web.archive.org/web/20180922183801/https://apbdb.com/items/Vehicle_Car_A_UtilityLowRider_Pre_FN2_Pra",
+      "timestamp": "20180922183801",
+      "max_speed": 21.4,
+      "health": 1450.0
+    },
+    "Vehicle_Car_A_UtilityLowRider_Pre_FN2_Crim": {
+      "id": "Vehicle_Car_A_UtilityLowRider_Pre_FN2_Crim",
+      "snapshot": "http://web.archive.org/web/20190126041620/https://apbdb.com/items/Vehicle_Car_A_UtilityLowRider_Pre_FN2_Crim",
+      "timestamp": "20190126041620",
+      "max_speed": 21.4,
+      "health": 1450.0
+    },
+    "Vehicle_Car_A_UtilityLowRider_Pre_FN2_Enf": {
+      "id": "Vehicle_Car_A_UtilityLowRider_Pre_FN2_Enf",
+      "snapshot": "http://web.archive.org/web/20180922183911/https://apbdb.com/items/Vehicle_Car_A_UtilityLowRider_Pre_FN2_Enf",
+      "timestamp": "20180922183911",
+      "max_speed": 21.4,
+      "health": 1450.0
+    },
+    "Vehicle_Car_A_UtilityLowRider_Pre_FN3_BR": {
+      "id": "Vehicle_Car_A_UtilityLowRider_Pre_FN3_BR",
+      "snapshot": "http://web.archive.org/web/20190126041625/https://apbdb.com/items/Vehicle_Car_A_UtilityLowRider_Pre_FN3_BR",
+      "timestamp": "20190126041625",
+      "max_speed": 21.4,
+      "health": 1450.0
+    },
+    "Vehicle_Car_A_UtilityLowRider_Pre_FN3_PT": {
+      "id": "Vehicle_Car_A_UtilityLowRider_Pre_FN3_PT",
+      "snapshot": "http://web.archive.org/web/20190126041630/https://apbdb.com/items/Vehicle_Car_A_UtilityLowRider_Pre_FN3_PT",
+      "timestamp": "20190126041630",
+      "max_speed": 21.4,
+      "health": 1450.0
+    },
+    "Vehicle_Car_A_UtilityLowRider_Pre_FN3_GK": {
+      "id": "Vehicle_Car_A_UtilityLowRider_Pre_FN3_GK",
+      "snapshot": "http://web.archive.org/web/20180922184210/https://apbdb.com/items/Vehicle_Car_A_UtilityLowRider_Pre_FN3_GK",
+      "timestamp": "20180922184210",
+      "max_speed": 21.4,
+      "health": 1450.0
+    },
+    "Vehicle_Car_A_UtilityLowRider_Pre_FN3_Pra": {
+      "id": "Vehicle_Car_A_UtilityLowRider_Pre_FN3_Pra",
+      "snapshot": "http://web.archive.org/web/20180922184102/https://apbdb.com/items/Vehicle_Car_A_UtilityLowRider_Pre_FN3_Pra",
+      "timestamp": "20180922184102",
+      "max_speed": 21.4,
+      "health": 1450.0
+    },
+    "Vehicle_Car_A_UtilityLowRider_Pre_FN3_Crim": {
+      "id": "Vehicle_Car_A_UtilityLowRider_Pre_FN3_Crim",
+      "snapshot": "http://web.archive.org/web/20180922183916/https://apbdb.com/items/Vehicle_Car_A_UtilityLowRider_Pre_FN3_Crim",
+      "timestamp": "20180922183916",
+      "max_speed": 21.4,
+      "health": 1450.0
+    },
+    "Vehicle_Car_A_UtilityLowRider_Pre_FN3_Enf": {
+      "id": "Vehicle_Car_A_UtilityLowRider_Pre_FN3_Enf",
+      "snapshot": "http://web.archive.org/web/20180922184205/https://apbdb.com/items/Vehicle_Car_A_UtilityLowRider_Pre_FN3_Enf",
+      "timestamp": "20180922184205",
+      "max_speed": 21.4,
+      "health": 1450.0
+    },
+    "Vehicle_Car_A_UtilityLowRider_Pre_FN4_BR": {
+      "id": "Vehicle_Car_A_UtilityLowRider_Pre_FN4_BR",
+      "snapshot": "http://web.archive.org/web/20180922183807/https://apbdb.com/items/Vehicle_Car_A_UtilityLowRider_Pre_FN4_BR",
+      "timestamp": "20180922183807",
+      "max_speed": 21.4,
+      "health": 1450.0
+    },
+    "Vehicle_Car_A_UtilityLowRider_Pre_FN4_PT": {
+      "id": "Vehicle_Car_A_UtilityLowRider_Pre_FN4_PT",
+      "snapshot": "http://web.archive.org/web/20180922183811/https://apbdb.com/items/Vehicle_Car_A_UtilityLowRider_Pre_FN4_PT",
+      "timestamp": "20180922183811",
+      "max_speed": 21.4,
+      "health": 1450.0
+    },
+    "Vehicle_Car_A_UtilityLowRider_Pre_FN4_GK": {
+      "id": "Vehicle_Car_A_UtilityLowRider_Pre_FN4_GK",
+      "snapshot": "http://web.archive.org/web/20190129121509/https://apbdb.com/items/Vehicle_Car_A_UtilityLowRider_Pre_FN4_GK",
+      "timestamp": "20190129121509",
+      "max_speed": 21.4,
+      "health": 1450.0
+    },
+    "Vehicle_Car_A_UtilityLowRider_Pre_FN4_Pra": {
+      "id": "Vehicle_Car_A_UtilityLowRider_Pre_FN4_Pra",
+      "snapshot": "http://web.archive.org/web/20190126041635/https://apbdb.com/items/Vehicle_Car_A_UtilityLowRider_Pre_FN4_Pra",
+      "timestamp": "20190126041635",
+      "max_speed": 21.4,
+      "health": 1450.0
+    },
+    "Vehicle_Car_A_UtilityLowRider_Pre_Fn4_Crim": {
+      "id": "Vehicle_Car_A_UtilityLowRider_Pre_Fn4_Crim",
+      "snapshot": "http://web.archive.org/web/20180922184220/https://apbdb.com/items/Vehicle_Car_A_UtilityLowRider_Pre_Fn4_Crim",
+      "timestamp": "20180922184220",
+      "max_speed": 21.4,
+      "health": 1450.0
+    },
+    "Vehicle_Car_A_UtilityLowRider_Pre_FN4_Enf": {
+      "id": "Vehicle_Car_A_UtilityLowRider_Pre_FN4_Enf",
+      "snapshot": "http://web.archive.org/web/20180922184215/https://apbdb.com/items/Vehicle_Car_A_UtilityLowRider_Pre_FN4_Enf",
+      "timestamp": "20180922184215",
+      "max_speed": 21.4,
+      "health": 1450.0
+    },
+    "Vehicle_Car_A_UtilitySaloon": {
+      "id": "Vehicle_Car_A_UtilitySaloon",
+      "snapshot": "http://web.archive.org/web/20250824000102/https://apbdb.com/items/Vehicle_Car_A_UtilitySaloon",
+      "timestamp": "20250824000102",
+      "max_speed": 21.0,
+      "health": 1075.0
+    },
+    "Vehicle_Car_A_UtilitySaloon_slot_1": {
+      "id": "Vehicle_Car_A_UtilitySaloon_slot_1",
+      "snapshot": "http://web.archive.org/web/20190307122936/https://apbdb.com/items/Vehicle_Car_A_UtilitySaloon_slot_1",
+      "timestamp": "20190307122936",
+      "max_speed": 21.0,
+      "health": 1075.0
+    },
+    "Vehicle_Car_A_UtilitySaloon_slot_2": {
+      "id": "Vehicle_Car_A_UtilitySaloon_slot_2",
+      "snapshot": "http://web.archive.org/web/20190107221159/https://apbdb.com/items/Vehicle_Car_A_UtilitySaloon_slot_2",
+      "timestamp": "20190107221159",
+      "max_speed": 21.0,
+      "health": 1075.0
+    },
+    "Vehicle_Car_A_UtilitySaloon_slot_3": {
+      "id": "Vehicle_Car_A_UtilitySaloon_slot_3",
+      "snapshot": "http://web.archive.org/web/20190207182519/https://apbdb.com/items/Vehicle_Car_A_UtilitySaloon_slot_3",
+      "timestamp": "20190207182519",
+      "max_speed": 21.0,
+      "health": 1075.0
+    },
+    "Vehicle_Car_A_UtilitySaloon_slot_4": {
+      "id": "Vehicle_Car_A_UtilitySaloon_slot_4",
+      "snapshot": "http://web.archive.org/web/20190227062641/https://apbdb.com/items/Vehicle_Car_A_UtilitySaloon_slot_4",
+      "timestamp": "20190227062641",
+      "max_speed": 21.0,
+      "health": 1075.0
+    },
+    "Vehicle_Ambient_A_ClassicMuscle_slot_1_Joker": {
+      "id": "Vehicle_Ambient_A_ClassicMuscle_slot_1_Joker",
+      "snapshot": "http://web.archive.org/web/20190208225952/https://apbdb.com/items/Vehicle_Ambient_A_ClassicMuscle_slot_1_Joker",
+      "timestamp": "20190208225952",
+      "max_speed": 22.0,
+      "health": 1350.0
+    },
+    "Vehicle_Ambient_A_ClassicMuscle_slot_2_Joker": {
+      "id": "Vehicle_Ambient_A_ClassicMuscle_slot_2_Joker",
+      "snapshot": "http://web.archive.org/web/20190225234026/https://apbdb.com/items/Vehicle_Ambient_A_ClassicMuscle_slot_2_Joker",
+      "timestamp": "20190225234026",
+      "max_speed": 22.0,
+      "health": 1350.0
+    },
+    "Vehicle_Ambient_A_ClassicMuscle_slot_4_Joker": {
+      "id": "Vehicle_Ambient_A_ClassicMuscle_slot_4_Joker",
+      "snapshot": "http://web.archive.org/web/20190305025047/https://apbdb.com/items/Vehicle_Ambient_A_ClassicMuscle_slot_4_Joker",
+      "timestamp": "20190305025047",
+      "max_speed": 22.0,
+      "health": 1350.0
+    },
+    "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN1_PT": {
+      "id": "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN1_PT",
+      "snapshot": "http://web.archive.org/web/20180808000616/https://apbdb.com/items/Vehicle_Truck_A_UtilitySportsSUV_Pre_FN1_PT",
+      "timestamp": "20180808000616",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN1_BR": {
+      "id": "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN1_BR",
+      "snapshot": "http://web.archive.org/web/20180808000759/https://apbdb.com/items/Vehicle_Truck_A_UtilitySportsSUV_Pre_FN1_BR",
+      "timestamp": "20180808000759",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN1_Crim": {
+      "id": "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN1_Crim",
+      "snapshot": "http://web.archive.org/web/20180808000804/https://apbdb.com/items/Vehicle_Truck_A_UtilitySportsSUV_Pre_FN1_Crim",
+      "timestamp": "20180808000804",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN1_Pra": {
+      "id": "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN1_Pra",
+      "snapshot": "http://web.archive.org/web/20180808000814/https://apbdb.com/items/Vehicle_Truck_A_UtilitySportsSUV_Pre_FN1_Pra",
+      "timestamp": "20180808000814",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN1_Enf": {
+      "id": "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN1_Enf",
+      "snapshot": "http://web.archive.org/web/20180808000611/https://apbdb.com/items/Vehicle_Truck_A_UtilitySportsSUV_Pre_FN1_Enf",
+      "timestamp": "20180808000611",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN2_PT": {
+      "id": "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN2_PT",
+      "snapshot": "http://web.archive.org/web/20180808000831/https://apbdb.com/items/Vehicle_Truck_A_UtilitySportsSUV_Pre_FN2_PT",
+      "timestamp": "20180808000831",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN2_GK": {
+      "id": "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN2_GK",
+      "snapshot": "http://web.archive.org/web/20180808000825/https://apbdb.com/items/Vehicle_Truck_A_UtilitySportsSUV_Pre_FN2_GK",
+      "timestamp": "20180808000825",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN2_BR": {
+      "id": "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN2_BR",
+      "snapshot": "http://web.archive.org/web/20180808000621/https://apbdb.com/items/Vehicle_Truck_A_UtilitySportsSUV_Pre_FN2_BR",
+      "timestamp": "20180808000621",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN2_Crim": {
+      "id": "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN2_Crim",
+      "snapshot": "http://web.archive.org/web/20190118101122/https://apbdb.com/items/Vehicle_Truck_A_UtilitySportsSUV_Pre_FN2_Crim",
+      "timestamp": "20190118101122",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN2_Pra": {
+      "id": "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN2_Pra",
+      "snapshot": "http://web.archive.org/web/20180808000627/https://apbdb.com/items/Vehicle_Truck_A_UtilitySportsSUV_Pre_FN2_Pra",
+      "timestamp": "20180808000627",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN2_Enf": {
+      "id": "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN2_Enf",
+      "snapshot": "http://web.archive.org/web/20180808000819/https://apbdb.com/items/Vehicle_Truck_A_UtilitySportsSUV_Pre_FN2_Enf",
+      "timestamp": "20180808000819",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN3_PT": {
+      "id": "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN3_PT",
+      "snapshot": "http://web.archive.org/web/20180808000637/https://apbdb.com/items/Vehicle_Truck_A_UtilitySportsSUV_Pre_FN3_PT",
+      "timestamp": "20180808000637",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN3_GK": {
+      "id": "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN3_GK",
+      "snapshot": "http://web.archive.org/web/20190210143829/https://apbdb.com/items/Vehicle_Truck_A_UtilitySportsSUV_Pre_FN3_GK",
+      "timestamp": "20190210143829",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN3_BR": {
+      "id": "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN3_BR",
+      "snapshot": "http://web.archive.org/web/20190210142850/https://apbdb.com/items/Vehicle_Truck_A_UtilitySportsSUV_Pre_FN3_BR",
+      "timestamp": "20190210142850",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN3_Crim": {
+      "id": "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN3_Crim",
+      "snapshot": "http://web.archive.org/web/20180808000632/https://apbdb.com/items/Vehicle_Truck_A_UtilitySportsSUV_Pre_FN3_Crim",
+      "timestamp": "20180808000632",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN3_Pra": {
+      "id": "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN3_Pra",
+      "snapshot": "http://web.archive.org/web/20190210143459/https://apbdb.com/items/Vehicle_Truck_A_UtilitySportsSUV_Pre_FN3_Pra",
+      "timestamp": "20190210143459",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN3_Enf": {
+      "id": "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN3_Enf",
+      "snapshot": "http://web.archive.org/web/20180808000841/https://apbdb.com/items/Vehicle_Truck_A_UtilitySportsSUV_Pre_FN3_Enf",
+      "timestamp": "20180808000841",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN4_PT": {
+      "id": "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN4_PT",
+      "snapshot": "http://web.archive.org/web/20190209045935/https://apbdb.com/items/Vehicle_Truck_A_UtilitySportsSUV_Pre_FN4_PT",
+      "timestamp": "20190209045935",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN4_GK": {
+      "id": "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN4_GK",
+      "snapshot": "http://web.archive.org/web/20180808000856/https://apbdb.com/items/Vehicle_Truck_A_UtilitySportsSUV_Pre_FN4_GK",
+      "timestamp": "20180808000856",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN4_BR": {
+      "id": "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN4_BR",
+      "snapshot": "http://web.archive.org/web/20180808000642/https://apbdb.com/items/Vehicle_Truck_A_UtilitySportsSUV_Pre_FN4_BR",
+      "timestamp": "20180808000642",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN4_Crim": {
+      "id": "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN4_Crim",
+      "snapshot": "http://web.archive.org/web/20180808000647/https://apbdb.com/items/Vehicle_Truck_A_UtilitySportsSUV_Pre_FN4_Crim",
+      "timestamp": "20180808000647",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN4_Pra": {
+      "id": "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN4_Pra",
+      "snapshot": "http://web.archive.org/web/20180808000901/https://apbdb.com/items/Vehicle_Truck_A_UtilitySportsSUV_Pre_FN4_Pra",
+      "timestamp": "20180808000901",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN4_Enf": {
+      "id": "Vehicle_Truck_A_UtilitySportsSUV_Pre_FN4_Enf",
+      "snapshot": "http://web.archive.org/web/20190210143504/https://apbdb.com/items/Vehicle_Truck_A_UtilitySportsSUV_Pre_FN4_Enf",
+      "timestamp": "20190210143504",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_Utility2DCoupe": {
+      "id": "Vehicle_Car_A_Utility2DCoupe",
+      "snapshot": "http://web.archive.org/web/20190307122626/https://apbdb.com/items/Vehicle_Car_A_Utility2DCoupe",
+      "timestamp": "20190307122626",
+      "max_speed": 19.0,
+      "health": 1000.0
+    },
+    "Vehicle_Car_A_Utility2DCoupe_Enf": {
+      "id": "Vehicle_Car_A_Utility2DCoupe_Enf",
+      "snapshot": "http://web.archive.org/web/20190207175418/https://apbdb.com/items/Vehicle_Car_A_Utility2DCoupe_Enf",
+      "timestamp": "20190207175418",
+      "max_speed": 19.0,
+      "health": 1000.0
+    },
+    "Vehicle_Car_A_Utility2DCoupe_slot_1": {
+      "id": "Vehicle_Car_A_Utility2DCoupe_slot_1",
+      "snapshot": "http://web.archive.org/web/20190111165618/https://apbdb.com/items/Vehicle_Car_A_Utility2DCoupe_slot_1",
+      "timestamp": "20190111165618",
+      "max_speed": 19.0,
+      "health": 1000.0
+    },
+    "Vehicle_Car_A_Utility2DrCoupe_slot3_Alienware": {
+      "id": "Vehicle_Car_A_Utility2DrCoupe_slot3_Alienware",
+      "snapshot": "http://web.archive.org/web/20190921113734/https://apbdb.com/items/Vehicle_Car_A_Utility2DrCoupe_slot3_Alienware",
+      "timestamp": "20190921113734",
+      "max_speed": 19.0,
+      "health": 1000.0
+    },
+    "Vehicle_Car_A_Utility2DrCoupe_PCGamer_Crim": {
+      "id": "Vehicle_Car_A_Utility2DrCoupe_PCGamer_Crim",
+      "snapshot": "http://web.archive.org/web/20190225033733/https://apbdb.com/items/Vehicle_Car_A_Utility2DrCoupe_PCGamer_Crim",
+      "timestamp": "20190225033733",
+      "max_speed": 19.0,
+      "health": 1000.0
+    },
+    "Vehicle_Car_A_Utility2DrCoupe_PCGamer_Enf": {
+      "id": "Vehicle_Car_A_Utility2DrCoupe_PCGamer_Enf",
+      "snapshot": "http://web.archive.org/web/20190207182724/https://apbdb.com/items/Vehicle_Car_A_Utility2DrCoupe_PCGamer_Enf",
+      "timestamp": "20190207182724",
+      "max_speed": 19.0,
+      "health": 1000.0
+    },
+    "Vehicle_Car_A_Utility2DCoupe_slot_2": {
+      "id": "Vehicle_Car_A_Utility2DCoupe_slot_2",
+      "snapshot": "http://web.archive.org/web/20190307122626/https://apbdb.com/items/Vehicle_Car_A_Utility2DCoupe_slot_2",
+      "timestamp": "20190307122626",
+      "max_speed": 19.0,
+      "health": 1000.0
+    },
+    "Vehicle_Car_A_Utility2DCoupe_slot_3": {
+      "id": "Vehicle_Car_A_Utility2DCoupe_slot_3",
+      "snapshot": "http://web.archive.org/web/20190207180253/https://apbdb.com/items/Vehicle_Car_A_Utility2DCoupe_slot_3",
+      "timestamp": "20190207180253",
+      "max_speed": 19.0,
+      "health": 1000.0
+    },
+    "Vehicle_Car_A_Utility2DCoupe_slot_4": {
+      "id": "Vehicle_Car_A_Utility2DCoupe_slot_4",
+      "snapshot": "http://web.archive.org/web/20190227154622/https://apbdb.com/items/Vehicle_Car_A_Utility2DCoupe_slot_4",
+      "timestamp": "20190227154622",
+      "max_speed": 19.0,
+      "health": 1000.0
+    },
+    "Vehicle_Car_A_UtilityHatchback": {
+      "id": "Vehicle_Car_A_UtilityHatchback",
+      "snapshot": "http://web.archive.org/web/20250816192201/https://apbdb.com/items/Vehicle_Car_A_UtilityHatchback",
+      "timestamp": "20250816192201",
+      "max_speed": 20.0,
+      "health": 1025.0
+    },
+    "Vehicle_Car_A_UtilityHatchback_slot_2": {
+      "id": "Vehicle_Car_A_UtilityHatchback_slot_2",
+      "snapshot": "http://web.archive.org/web/20190111165147/https://apbdb.com/items/Vehicle_Car_A_UtilityHatchback_slot_2",
+      "timestamp": "20190111165147",
+      "max_speed": 20.0,
+      "health": 1025.0
+    },
+    "Vehicle_Car_A_UtilityHatchback_slot_3": {
+      "id": "Vehicle_Car_A_UtilityHatchback_slot_3",
+      "snapshot": "http://web.archive.org/web/20190207180849/https://apbdb.com/items/Vehicle_Car_A_UtilityHatchback_slot_3",
+      "timestamp": "20190207180849",
+      "max_speed": 20.0,
+      "health": 1025.0
+    },
+    "Vehicle_Car_A_UtilityHatchback_slot_4": {
+      "id": "Vehicle_Car_A_UtilityHatchback_slot_4",
+      "snapshot": "http://web.archive.org/web/20190305033106/https://apbdb.com/items/Vehicle_Car_A_UtilityHatchback_slot_4",
+      "timestamp": "20190305033106",
+      "max_speed": 20.0,
+      "health": 1025.0
+    },
+    "Vehicle_Car_C_Compact_Pre_FN1_Crim_v2": {
+      "id": "Vehicle_Car_C_Compact_Pre_FN1_Crim_v2",
+      "snapshot": "http://web.archive.org/web/20190111164550/https://apbdb.com/items/Vehicle_Car_C_Compact_Pre_FN1_Crim_v2",
+      "timestamp": "20190111164550",
+      "max_speed": 19.5,
+      "health": 900.0
+    },
+    "Vehicle_Car_C_Compact_Pre_FN1_Crim_v1": {
+      "id": "Vehicle_Car_C_Compact_Pre_FN1_Crim_v1",
+      "snapshot": "http://web.archive.org/web/20190111165152/https://apbdb.com/items/Vehicle_Car_C_Compact_Pre_FN1_Crim_v1",
+      "timestamp": "20190111165152",
+      "max_speed": 19.5,
+      "health": 900.0
+    },
+    "Vehicle_Car_C_Compact_Pre_FN1_GK": {
+      "id": "Vehicle_Car_C_Compact_Pre_FN1_GK",
+      "snapshot": "http://web.archive.org/web/20190111163248/https://apbdb.com/items/Vehicle_Car_C_Compact_Pre_FN1_GK",
+      "timestamp": "20190111163248",
+      "max_speed": 19.5,
+      "health": 900.0
+    },
+    "Vehicle_Car_C_Compact_Pre_FN1_BR": {
+      "id": "Vehicle_Car_C_Compact_Pre_FN1_BR",
+      "snapshot": "http://web.archive.org/web/20190111171853/https://apbdb.com/items/Vehicle_Car_C_Compact_Pre_FN1_BR",
+      "timestamp": "20190111171853",
+      "max_speed": 19.5,
+      "health": 900.0
+    },
+    "Vehicle_Car_C_Compact_Pre_FN2_Crim_v2": {
+      "id": "Vehicle_Car_C_Compact_Pre_FN2_Crim_v2",
+      "snapshot": "http://web.archive.org/web/20190111170024/https://apbdb.com/items/Vehicle_Car_C_Compact_Pre_FN2_Crim_v2",
+      "timestamp": "20190111170024",
+      "max_speed": 19.5,
+      "health": 900.0
+    },
+    "Vehicle_Car_C_Compact_Pre_FN2_Crim_v1": {
+      "id": "Vehicle_Car_C_Compact_Pre_FN2_Crim_v1",
+      "snapshot": "http://web.archive.org/web/20190107221209/https://apbdb.com/items/Vehicle_Car_C_Compact_Pre_FN2_Crim_v1",
+      "timestamp": "20190107221209",
+      "max_speed": 19.5,
+      "health": 900.0
+    },
+    "Vehicle_Car_C_Compact_Pre_FN2_GK": {
+      "id": "Vehicle_Car_C_Compact_Pre_FN2_GK",
+      "snapshot": "http://web.archive.org/web/20190111165412/https://apbdb.com/items/Vehicle_Car_C_Compact_Pre_FN2_GK",
+      "timestamp": "20190111165412",
+      "max_speed": 19.5,
+      "health": 900.0
+    },
+    "Vehicle_Car_C_Compact_Pre_FN2_BR": {
+      "id": "Vehicle_Car_C_Compact_Pre_FN2_BR",
+      "snapshot": "http://web.archive.org/web/20190111164746/https://apbdb.com/items/Vehicle_Car_C_Compact_Pre_FN2_BR",
+      "timestamp": "20190111164746",
+      "max_speed": 19.5,
+      "health": 900.0
+    },
+    "Vehicle_Car_C_Compact_Pre_FN3_Crim_v2": {
+      "id": "Vehicle_Car_C_Compact_Pre_FN3_Crim_v2",
+      "snapshot": "http://web.archive.org/web/20190111165157/https://apbdb.com/items/Vehicle_Car_C_Compact_Pre_FN3_Crim_v2",
+      "timestamp": "20190111165157",
+      "max_speed": 19.5,
+      "health": 900.0
+    },
+    "Vehicle_Car_C_Compact_Pre_FN3_Crim_v1": {
+      "id": "Vehicle_Car_C_Compact_Pre_FN3_Crim_v1",
+      "snapshot": "http://web.archive.org/web/20190111163253/https://apbdb.com/items/Vehicle_Car_C_Compact_Pre_FN3_Crim_v1",
+      "timestamp": "20190111163253",
+      "max_speed": 19.5,
+      "health": 900.0
+    },
+    "Vehicle_Car_C_Compact_Pre_FN3_GK": {
+      "id": "Vehicle_Car_C_Compact_Pre_FN3_GK",
+      "snapshot": "http://web.archive.org/web/20190111171903/https://apbdb.com/items/Vehicle_Car_C_Compact_Pre_FN3_GK",
+      "timestamp": "20190111171903",
+      "max_speed": 19.5,
+      "health": 900.0
+    },
+    "Vehicle_Car_C_Compact_Pre_FN3_BR": {
+      "id": "Vehicle_Car_C_Compact_Pre_FN3_BR",
+      "snapshot": "http://web.archive.org/web/20190111171858/https://apbdb.com/items/Vehicle_Car_C_Compact_Pre_FN3_BR",
+      "timestamp": "20190111171858",
+      "max_speed": 19.5,
+      "health": 900.0
+    },
+    "Vehicle_Car_C_Compact_Pre_FN4_Crim_v2": {
+      "id": "Vehicle_Car_C_Compact_Pre_FN4_Crim_v2",
+      "snapshot": "http://web.archive.org/web/20190111164751/https://apbdb.com/items/Vehicle_Car_C_Compact_Pre_FN4_Crim_v2",
+      "timestamp": "20190111164751",
+      "max_speed": 19.5,
+      "health": 900.0
+    },
+    "Vehicle_Car_C_Compact_Pre_FN4_Crim_v1": {
+      "id": "Vehicle_Car_C_Compact_Pre_FN4_Crim_v1",
+      "snapshot": "http://web.archive.org/web/20190111171623/https://apbdb.com/items/Vehicle_Car_C_Compact_Pre_FN4_Crim_v1",
+      "timestamp": "20190111171623",
+      "max_speed": 19.5,
+      "health": 900.0
+    },
+    "Vehicle_Car_C_Compact_Pre_FN4_GK": {
+      "id": "Vehicle_Car_C_Compact_Pre_FN4_GK",
+      "snapshot": "http://web.archive.org/web/20190111163709/https://apbdb.com/items/Vehicle_Car_C_Compact_Pre_FN4_GK",
+      "timestamp": "20190111163709",
+      "max_speed": 19.5,
+      "health": 900.0
+    },
+    "Vehicle_Car_C_Compact_Pre_FN4_BR": {
+      "id": "Vehicle_Car_C_Compact_Pre_FN4_BR",
+      "snapshot": "http://web.archive.org/web/20190111165202/https://apbdb.com/items/Vehicle_Car_C_Compact_Pre_FN4_BR",
+      "timestamp": "20190111165202",
+      "max_speed": 19.5,
+      "health": 900.0
+    },
+    "Vehicle_Car_A_UtilityExecSaloon_Pre_FN1_Crim": {
+      "id": "Vehicle_Car_A_UtilityExecSaloon_Pre_FN1_Crim",
+      "snapshot": "http://web.archive.org/web/20190126041505/https://apbdb.com/items/Vehicle_Car_A_UtilityExecSaloon_Pre_FN1_Crim",
+      "timestamp": "20190126041505",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_UtilityExecSaloon_Enf_Joker": {
+      "id": "Vehicle_Car_A_UtilityExecSaloon_Enf_Joker",
+      "snapshot": "http://web.archive.org/web/20190305024623/https://apbdb.com/items/Vehicle_Car_A_UtilityExecSaloon_Enf_Joker",
+      "timestamp": "20190305024623",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_UtilityExecSaloon_Pre_FN1_Pra": {
+      "id": "Vehicle_Car_A_UtilityExecSaloon_Pre_FN1_Pra",
+      "snapshot": "http://web.archive.org/web/20190126041519/https://apbdb.com/items/Vehicle_Car_A_UtilityExecSaloon_Pre_FN1_Pra",
+      "timestamp": "20190126041519",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_UtilityExecSaloon_Pre_FN1_PT": {
+      "id": "Vehicle_Car_A_UtilityExecSaloon_Pre_FN1_PT",
+      "snapshot": "http://web.archive.org/web/20190126041514/https://apbdb.com/items/Vehicle_Car_A_UtilityExecSaloon_Pre_FN1_PT",
+      "timestamp": "20190126041514",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_UtilityExecSaloon_Pre_FN1_BR": {
+      "id": "Vehicle_Car_A_UtilityExecSaloon_Pre_FN1_BR",
+      "snapshot": "http://web.archive.org/web/20190126041500/https://apbdb.com/items/Vehicle_Car_A_UtilityExecSaloon_Pre_FN1_BR",
+      "timestamp": "20190126041500",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_UtilityExecSaloon_Pre_FN1_Enf": {
+      "id": "Vehicle_Car_A_UtilityExecSaloon_Pre_FN1_Enf",
+      "snapshot": "http://web.archive.org/web/20190126041509/https://apbdb.com/items/Vehicle_Car_A_UtilityExecSaloon_Pre_FN1_Enf",
+      "timestamp": "20190126041509",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_UtilityExecSaloon_Pre_FN1_GK": {
+      "id": "Vehicle_Car_A_UtilityExecSaloon_Pre_FN1_GK",
+      "snapshot": "http://web.archive.org/web/20190126040914/https://apbdb.com/items/Vehicle_Car_A_UtilityExecSaloon_Pre_FN1_GK",
+      "timestamp": "20190126040914",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_UtilityExecSaloon_Pre_FN2_Crim": {
+      "id": "Vehicle_Car_A_UtilityExecSaloon_Pre_FN2_Crim",
+      "snapshot": "http://web.archive.org/web/20190126041529/https://apbdb.com/items/Vehicle_Car_A_UtilityExecSaloon_Pre_FN2_Crim",
+      "timestamp": "20190126041529",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_UtilityExecSaloon_Pre_FN2_Pra": {
+      "id": "Vehicle_Car_A_UtilityExecSaloon_Pre_FN2_Pra",
+      "snapshot": "http://web.archive.org/web/20190126040929/https://apbdb.com/items/Vehicle_Car_A_UtilityExecSaloon_Pre_FN2_Pra",
+      "timestamp": "20190126040929",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_UtilityExecSaloon_Pre_FN2_PT": {
+      "id": "Vehicle_Car_A_UtilityExecSaloon_Pre_FN2_PT",
+      "snapshot": "http://web.archive.org/web/20190126041535/https://apbdb.com/items/Vehicle_Car_A_UtilityExecSaloon_Pre_FN2_PT",
+      "timestamp": "20190126041535",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_UtilityExecSaloon_Pre_FN2_BR": {
+      "id": "Vehicle_Car_A_UtilityExecSaloon_Pre_FN2_BR",
+      "snapshot": "http://web.archive.org/web/20190126041524/https://apbdb.com/items/Vehicle_Car_A_UtilityExecSaloon_Pre_FN2_BR",
+      "timestamp": "20190126041524",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_UtilityExecSaloon_Pre_FN2_Enf": {
+      "id": "Vehicle_Car_A_UtilityExecSaloon_Pre_FN2_Enf",
+      "snapshot": "http://web.archive.org/web/20190126040919/https://apbdb.com/items/Vehicle_Car_A_UtilityExecSaloon_Pre_FN2_Enf",
+      "timestamp": "20190126040919",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_UtilityExecSaloon_Pre_FN2_GK": {
+      "id": "Vehicle_Car_A_UtilityExecSaloon_Pre_FN2_GK",
+      "snapshot": "http://web.archive.org/web/20190126040924/https://apbdb.com/items/Vehicle_Car_A_UtilityExecSaloon_Pre_FN2_GK",
+      "timestamp": "20190126040924",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_UtilityExecSaloon_Pre_FN3_Crim": {
+      "id": "Vehicle_Car_A_UtilityExecSaloon_Pre_FN3_Crim",
+      "snapshot": "http://web.archive.org/web/20190126041545/https://apbdb.com/items/Vehicle_Car_A_UtilityExecSaloon_Pre_FN3_Crim",
+      "timestamp": "20190126041545",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_UtilityExecSaloon_Pre_FN3_Pra": {
+      "id": "Vehicle_Car_A_UtilityExecSaloon_Pre_FN3_Pra",
+      "snapshot": "http://web.archive.org/web/20190126040939/https://apbdb.com/items/Vehicle_Car_A_UtilityExecSaloon_Pre_FN3_Pra",
+      "timestamp": "20190126040939",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_UtilityExecSaloon_Pre_FN3_PT": {
+      "id": "Vehicle_Car_A_UtilityExecSaloon_Pre_FN3_PT",
+      "snapshot": "http://web.archive.org/web/20190126041554/https://apbdb.com/items/Vehicle_Car_A_UtilityExecSaloon_Pre_FN3_PT",
+      "timestamp": "20190126041554",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_UtilityExecSaloon_Pre_FN3_BR": {
+      "id": "Vehicle_Car_A_UtilityExecSaloon_Pre_FN3_BR",
+      "snapshot": "http://web.archive.org/web/20190126041540/https://apbdb.com/items/Vehicle_Car_A_UtilityExecSaloon_Pre_FN3_BR",
+      "timestamp": "20190126041540",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_UtilityExecSaloon_Pre_FN3_Enf": {
+      "id": "Vehicle_Car_A_UtilityExecSaloon_Pre_FN3_Enf",
+      "snapshot": "http://web.archive.org/web/20190126040934/https://apbdb.com/items/Vehicle_Car_A_UtilityExecSaloon_Pre_FN3_Enf",
+      "timestamp": "20190126040934",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_UtilityExecSaloon_Pre_FN3_GK": {
+      "id": "Vehicle_Car_A_UtilityExecSaloon_Pre_FN3_GK",
+      "snapshot": "http://web.archive.org/web/20190126041550/https://apbdb.com/items/Vehicle_Car_A_UtilityExecSaloon_Pre_FN3_GK",
+      "timestamp": "20190126041550",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_UtilityExecSaloon_Pre_FN4_Crim": {
+      "id": "Vehicle_Car_A_UtilityExecSaloon_Pre_FN4_Crim",
+      "snapshot": "http://web.archive.org/web/20190126040944/https://apbdb.com/items/Vehicle_Car_A_UtilityExecSaloon_Pre_FN4_Crim",
+      "timestamp": "20190126040944",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_UtilityExecSaloon_Pre_FN4_Pra": {
+      "id": "Vehicle_Car_A_UtilityExecSaloon_Pre_FN4_Pra",
+      "snapshot": "http://web.archive.org/web/20190126040949/https://apbdb.com/items/Vehicle_Car_A_UtilityExecSaloon_Pre_FN4_Pra",
+      "timestamp": "20190126040949",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_UtilityExecSaloon_Pre_FN4_PT": {
+      "id": "Vehicle_Car_A_UtilityExecSaloon_Pre_FN4_PT",
+      "snapshot": "http://web.archive.org/web/20190210142441/https://apbdb.com/items/Vehicle_Car_A_UtilityExecSaloon_Pre_FN4_PT",
+      "timestamp": "20190210142441",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_UtilityExecSaloon_Pre_FN4_BR": {
+      "id": "Vehicle_Car_A_UtilityExecSaloon_Pre_FN4_BR",
+      "snapshot": "http://web.archive.org/web/20190126041600/https://apbdb.com/items/Vehicle_Car_A_UtilityExecSaloon_Pre_FN4_BR",
+      "timestamp": "20190126041600",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_UtilityExecSaloon_Pre_FN4_Enf": {
+      "id": "Vehicle_Car_A_UtilityExecSaloon_Pre_FN4_Enf",
+      "snapshot": "http://web.archive.org/web/20190126041605/https://apbdb.com/items/Vehicle_Car_A_UtilityExecSaloon_Pre_FN4_Enf",
+      "timestamp": "20190126041605",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_UtilityExecSaloon_Pre_FN4_GK": {
+      "id": "Vehicle_Car_A_UtilityExecSaloon_Pre_FN4_GK",
+      "snapshot": "http://web.archive.org/web/20190126041610/https://apbdb.com/items/Vehicle_Car_A_UtilityExecSaloon_Pre_FN4_GK",
+      "timestamp": "20190126041610",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Truck_A_Pickup_Pre_FN1_GK": {
+      "id": "Vehicle_Truck_A_Pickup_Pre_FN1_GK",
+      "snapshot": "http://web.archive.org/web/20180724110250/https://apbdb.com/items/Vehicle_Truck_A_Pickup_Pre_FN1_GK",
+      "timestamp": "20180724110250",
+      "max_speed": 21.0,
+      "health": 1250.0
+    },
+    "Vehicle_Truck_A_Pickup_Pre_FN1_BR": {
+      "id": "Vehicle_Truck_A_Pickup_Pre_FN1_BR",
+      "snapshot": "http://web.archive.org/web/20180724110245/https://apbdb.com/items/Vehicle_Truck_A_Pickup_Pre_FN1_BR",
+      "timestamp": "20180724110245",
+      "max_speed": 21.0,
+      "health": 1250.0
+    },
+    "Vehicle_Truck_A_Pickup_Pre_FN1_Pra": {
+      "id": "Vehicle_Truck_A_Pickup_Pre_FN1_Pra",
+      "snapshot": "http://web.archive.org/web/20180724110300/https://apbdb.com/items/Vehicle_Truck_A_Pickup_Pre_FN1_Pra",
+      "timestamp": "20180724110300",
+      "max_speed": 21.0,
+      "health": 1250.0
+    },
+    "Vehicle_Truck_A_Pickup_Pre_FN1_PT": {
+      "id": "Vehicle_Truck_A_Pickup_Pre_FN1_PT",
+      "snapshot": "http://web.archive.org/web/20180724110255/https://apbdb.com/items/Vehicle_Truck_A_Pickup_Pre_FN1_PT",
+      "timestamp": "20180724110255",
+      "max_speed": 21.0,
+      "health": 1250.0
+    },
+    "Vehicle_Truck_A_Pickup_Pre_FN2_GK": {
+      "id": "Vehicle_Truck_A_Pickup_Pre_FN2_GK",
+      "snapshot": "http://web.archive.org/web/20180724110305/https://apbdb.com/items/Vehicle_Truck_A_Pickup_Pre_FN2_GK",
+      "timestamp": "20180724110305",
+      "max_speed": 21.0,
+      "health": 1250.0
+    },
+    "Vehicle_Truck_A_Pickup_Pre_FN2_BR": {
+      "id": "Vehicle_Truck_A_Pickup_Pre_FN2_BR",
+      "snapshot": "http://web.archive.org/web/20190302022012/https://apbdb.com/items/Vehicle_Truck_A_Pickup_Pre_FN2_BR",
+      "timestamp": "20190302022012",
+      "max_speed": 21.0,
+      "health": 1250.0
+    },
+    "Vehicle_Truck_A_Pickup_Pre_FN2_Pra": {
+      "id": "Vehicle_Truck_A_Pickup_Pre_FN2_Pra",
+      "snapshot": "http://web.archive.org/web/20180724104000/https://apbdb.com/items/Vehicle_Truck_A_Pickup_Pre_FN2_Pra",
+      "timestamp": "20180724104000",
+      "max_speed": 21.0,
+      "health": 1250.0
+    },
+    "Vehicle_Truck_A_Pickup_Pre_FN2_PT": {
+      "id": "Vehicle_Truck_A_Pickup_Pre_FN2_PT",
+      "snapshot": "http://web.archive.org/web/20190126041149/https://apbdb.com/items/Vehicle_Truck_A_Pickup_Pre_FN2_PT",
+      "timestamp": "20190126041149",
+      "max_speed": 21.0,
+      "health": 1250.0
+    },
+    "Vehicle_Truck_A_Pickup_Pre_FN3_GK": {
+      "id": "Vehicle_Truck_A_Pickup_Pre_FN3_GK",
+      "snapshot": "http://web.archive.org/web/20190126041154/https://apbdb.com/items/Vehicle_Truck_A_Pickup_Pre_FN3_GK",
+      "timestamp": "20190126041154",
+      "max_speed": 21.0,
+      "health": 1250.0
+    },
+    "Vehicle_Truck_A_Pickup_Pre_FN3_BR": {
+      "id": "Vehicle_Truck_A_Pickup_Pre_FN3_BR",
+      "snapshot": "http://web.archive.org/web/20180724110316/https://apbdb.com/items/Vehicle_Truck_A_Pickup_Pre_FN3_BR",
+      "timestamp": "20180724110316",
+      "max_speed": 21.0,
+      "health": 1250.0
+    },
+    "Vehicle_Truck_A_Pickup_Pre_FN3_Pra": {
+      "id": "Vehicle_Truck_A_Pickup_Pre_FN3_Pra",
+      "snapshot": "http://web.archive.org/web/20190126041159/https://apbdb.com/items/Vehicle_Truck_A_Pickup_Pre_FN3_Pra",
+      "timestamp": "20190126041159",
+      "max_speed": 21.0,
+      "health": 1250.0
+    },
+    "Vehicle_Truck_A_Pickup_Pre_FN3_PT": {
+      "id": "Vehicle_Truck_A_Pickup_Pre_FN3_PT",
+      "snapshot": "http://web.archive.org/web/20180724104010/https://apbdb.com/items/Vehicle_Truck_A_Pickup_Pre_FN3_PT",
+      "timestamp": "20180724104010",
+      "max_speed": 21.0,
+      "health": 1250.0
+    },
+    "Vehicle_Truck_A_Pickup_Pre_FN4_GK": {
+      "id": "Vehicle_Truck_A_Pickup_Pre_FN4_GK",
+      "snapshot": "http://web.archive.org/web/20180724104025/https://apbdb.com/items/Vehicle_Truck_A_Pickup_Pre_FN4_GK",
+      "timestamp": "20180724104025",
+      "max_speed": 21.0,
+      "health": 1250.0
+    },
+    "Vehicle_Truck_A_Pickup_Pre_FN4_BR": {
+      "id": "Vehicle_Truck_A_Pickup_Pre_FN4_BR",
+      "snapshot": "http://web.archive.org/web/20180724104020/https://apbdb.com/items/Vehicle_Truck_A_Pickup_Pre_FN4_BR",
+      "timestamp": "20180724104020",
+      "max_speed": 21.0,
+      "health": 1250.0
+    },
+    "Vehicle_Truck_A_Pickup_Pre_FN4_Pra": {
+      "id": "Vehicle_Truck_A_Pickup_Pre_FN4_Pra",
+      "snapshot": "http://web.archive.org/web/20180724110326/https://apbdb.com/items/Vehicle_Truck_A_Pickup_Pre_FN4_Pra",
+      "timestamp": "20180724110326",
+      "max_speed": 21.0,
+      "health": 1250.0
+    },
+    "Vehicle_Truck_A_Pickup_Pre_FN4_PT": {
+      "id": "Vehicle_Truck_A_Pickup_Pre_FN4_PT",
+      "snapshot": "http://web.archive.org/web/20180724110321/https://apbdb.com/items/Vehicle_Truck_A_Pickup_Pre_FN4_PT",
+      "timestamp": "20180724110321",
+      "max_speed": 21.0,
+      "health": 1250.0
+    },
+    "Vehicle_Truck_A_UtilitySportsSUV": {
+      "id": "Vehicle_Truck_A_UtilitySportsSUV",
+      "snapshot": "http://web.archive.org/web/20230305021932/https://apbdb.com/items/Vehicle_Truck_A_UtilitySportsSUV",
+      "timestamp": "20230305021932",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Truck_A_UtilitySportsSUV_slot_1": {
+      "id": "Vehicle_Truck_A_UtilitySportsSUV_slot_1",
+      "snapshot": "http://web.archive.org/web/20190210143048/https://apbdb.com/items/Vehicle_Truck_A_UtilitySportsSUV_slot_1",
+      "timestamp": "20190210143048",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Truck_A_UtilitySportsSUV_slot_2": {
+      "id": "Vehicle_Truck_A_UtilitySportsSUV_slot_2",
+      "snapshot": "http://web.archive.org/web/20190210142855/https://apbdb.com/items/Vehicle_Truck_A_UtilitySportsSUV_slot_2",
+      "timestamp": "20190210142855",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Truck_A_UtilitySportsSUV_slot_3": {
+      "id": "Vehicle_Truck_A_UtilitySportsSUV_slot_3",
+      "snapshot": "http://web.archive.org/web/20190209045940/https://apbdb.com/items/Vehicle_Truck_A_UtilitySportsSUV_slot_3",
+      "timestamp": "20190209045940",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Truck_A_UtilitySportsSUV_slot_4": {
+      "id": "Vehicle_Truck_A_UtilitySportsSUV_slot_4",
+      "snapshot": "http://web.archive.org/web/20190129113503/https://apbdb.com/items/Vehicle_Truck_A_UtilitySportsSUV_slot_4",
+      "timestamp": "20190129113503",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Truck_E_Carrying_Crim": {
+      "id": "Vehicle_Truck_E_Carrying_Crim",
+      "snapshot": "http://web.archive.org/web/20230607213025/https://apbdb.com/items/Vehicle_Truck_E_Carrying_Crim",
+      "timestamp": "20230607213025",
+      "max_speed": 20.9,
+      "health": 1600.0
+    },
+    "Vehicle_Truck_E_Carrying_slot_1": {
+      "id": "Vehicle_Truck_E_Carrying_slot_1",
+      "snapshot": "http://web.archive.org/web/20190126041850/https://apbdb.com/items/Vehicle_Truck_E_Carrying_slot_1",
+      "timestamp": "20190126041850",
+      "max_speed": 20.9,
+      "health": 1600.0
+    },
+    "Vehicle_Truck_E_Carrying_slot_2": {
+      "id": "Vehicle_Truck_E_Carrying_slot_2",
+      "snapshot": "http://web.archive.org/web/20190212200452/https://apbdb.com/items/Vehicle_Truck_E_Carrying_slot_2",
+      "timestamp": "20190212200452",
+      "max_speed": 20.9,
+      "health": 1600.0
+    },
+    "Vehicle_Truck_E_Carrying_slot_3": {
+      "id": "Vehicle_Truck_E_Carrying_slot_3",
+      "snapshot": "http://web.archive.org/web/20190222092051/https://apbdb.com/items/Vehicle_Truck_E_Carrying_slot_3",
+      "timestamp": "20190222092051",
+      "max_speed": 20.9,
+      "health": 1600.0
+    },
+    "Vehicle_Truck_E_Carrying_slot_4": {
+      "id": "Vehicle_Truck_E_Carrying_slot_4",
+      "snapshot": "http://web.archive.org/web/20190307100613/https://apbdb.com/items/Vehicle_Truck_E_Carrying_slot_4",
+      "timestamp": "20190307100613",
+      "max_speed": 20.9,
+      "health": 1600.0
+    },
+    "Vehicle_Van_A_VanStandard": {
+      "id": "Vehicle_Van_A_VanStandard",
+      "snapshot": "http://web.archive.org/web/20230429161716/https://apbdb.com/items/Vehicle_Van_A_VanStandard",
+      "timestamp": "20230429161716",
+      "max_speed": 19.5,
+      "health": 1250.0
+    },
+    "Vehicle_Van_A_VanStandard_slot_1": {
+      "id": "Vehicle_Van_A_VanStandard_slot_1",
+      "snapshot": "http://web.archive.org/web/20190227154753/https://apbdb.com/items/Vehicle_Van_A_VanStandard_slot_1",
+      "timestamp": "20190227154753",
+      "max_speed": 19.5,
+      "health": 1250.0
+    },
+    "Vehicle_Van_A_VanStandard_slot_2": {
+      "id": "Vehicle_Van_A_VanStandard_slot_2",
+      "snapshot": "http://web.archive.org/web/20190303004436/https://apbdb.com/items/Vehicle_Van_A_VanStandard_slot_2",
+      "timestamp": "20190303004436",
+      "max_speed": 19.5,
+      "health": 1250.0
+    },
+    "Vehicle_Van_A_VanStandard_slot_3": {
+      "id": "Vehicle_Van_A_VanStandard_slot_3",
+      "snapshot": "http://web.archive.org/web/20190209045946/https://apbdb.com/items/Vehicle_Van_A_VanStandard_slot_3",
+      "timestamp": "20190209045946",
+      "max_speed": 19.5,
+      "health": 1250.0
+    },
+    "Vehicle_Van_A_VanStandard_slot_4": {
+      "id": "Vehicle_Van_A_VanStandard_slot_4",
+      "snapshot": "http://web.archive.org/web/20190303014834/https://apbdb.com/items/Vehicle_Van_A_VanStandard_slot_4",
+      "timestamp": "20190303014834",
+      "max_speed": 19.5,
+      "health": 1250.0
+    },
+    "Vehicle_Truck_E_Compact_Crim": {
+      "id": "Vehicle_Truck_E_Compact_Crim",
+      "snapshot": "http://web.archive.org/web/20190305032311/https://apbdb.com/items/Vehicle_Truck_E_Compact_Crim",
+      "timestamp": "20190305032311",
+      "max_speed": 19.5,
+      "health": 950.0
+    },
+    "Vehicle_Truck_E_Compact_slot_1_Crim": {
+      "id": "Vehicle_Truck_E_Compact_slot_1_Crim",
+      "snapshot": "http://web.archive.org/web/20190207184512/https://apbdb.com/items/Vehicle_Truck_E_Compact_slot_1_Crim",
+      "timestamp": "20190207184512",
+      "max_speed": 19.5,
+      "health": 950.0
+    },
+    "Vehicle_Truck_E_Compact_slot_2_Crim": {
+      "id": "Vehicle_Truck_E_Compact_slot_2_Crim",
+      "snapshot": "http://web.archive.org/web/20190207181213/https://apbdb.com/items/Vehicle_Truck_E_Compact_slot_2_Crim",
+      "timestamp": "20190207181213",
+      "max_speed": 19.5,
+      "health": 950.0
+    },
+    "Vehicle_Truck_E_Compact_slot_3_Crim": {
+      "id": "Vehicle_Truck_E_Compact_slot_3_Crim",
+      "snapshot": "http://web.archive.org/web/20190207175423/https://apbdb.com/items/Vehicle_Truck_E_Compact_slot_3_Crim",
+      "timestamp": "20190207175423",
+      "max_speed": 19.5,
+      "health": 950.0
+    },
+    "Vehicle_Truck_E_Compact": {
+      "id": "Vehicle_Truck_E_Compact",
+      "snapshot": "http://web.archive.org/web/20190307061038/https://apbdb.com/items/Vehicle_Truck_E_Compact",
+      "timestamp": "20190307061038",
+      "max_speed": 19.5,
+      "health": 950.0
+    },
+    "Vehicle_Truck_E_Compact_slot_1": {
+      "id": "Vehicle_Truck_E_Compact_slot_1",
+      "snapshot": "http://web.archive.org/web/20190227154918/https://apbdb.com/items/Vehicle_Truck_E_Compact_slot_1",
+      "timestamp": "20190227154918",
+      "max_speed": 19.5,
+      "health": 950.0
+    },
+    "Vehicle_Truck_E_Compact_slot_2": {
+      "id": "Vehicle_Truck_E_Compact_slot_2",
+      "snapshot": "http://web.archive.org/web/20190207182828/https://apbdb.com/items/Vehicle_Truck_E_Compact_slot_2",
+      "timestamp": "20190207182828",
+      "max_speed": 19.5,
+      "health": 950.0
+    },
+    "Vehicle_Truck_E_Compact_slot_3": {
+      "id": "Vehicle_Truck_E_Compact_slot_3",
+      "snapshot": "http://web.archive.org/web/20190227053011/https://apbdb.com/items/Vehicle_Truck_E_Compact_slot_3",
+      "timestamp": "20190227053011",
+      "max_speed": 19.5,
+      "health": 950.0
+    },
+    "Vehicle_Truck_E_Compact_slot_4": {
+      "id": "Vehicle_Truck_E_Compact_slot_4",
+      "snapshot": "http://web.archive.org/web/20190207184522/https://apbdb.com/items/Vehicle_Truck_E_Compact_slot_4",
+      "timestamp": "20190207184522",
+      "max_speed": 19.5,
+      "health": 950.0
+    },
+    "Vehicle_Truck_A_KingCab": {
+      "id": "Vehicle_Truck_A_KingCab",
+      "snapshot": "http://web.archive.org/web/20230429161822/https://apbdb.com/items/Vehicle_Truck_A_KingCab",
+      "timestamp": "20230429161822",
+      "max_speed": 20.5,
+      "health": 1300.0
+    },
+    "Vehicle_Truck_A_KingCab_slot_1": {
+      "id": "Vehicle_Truck_A_KingCab_slot_1",
+      "snapshot": "http://web.archive.org/web/20190113182651/https://apbdb.com/items/Vehicle_Truck_A_KingCab_slot_1",
+      "timestamp": "20190113182651",
+      "max_speed": 20.5,
+      "health": 1300.0
+    },
+    "Vehicle_Truck_A_KingCab_slot_2": {
+      "id": "Vehicle_Truck_A_KingCab_slot_2",
+      "snapshot": "http://web.archive.org/web/20190126041800/https://apbdb.com/items/Vehicle_Truck_A_KingCab_slot_2",
+      "timestamp": "20190126041800",
+      "max_speed": 20.5,
+      "health": 1300.0
+    },
+    "Vehicle_Truck_A_KingCab_slot_3": {
+      "id": "Vehicle_Truck_A_KingCab_slot_3",
+      "snapshot": "http://web.archive.org/web/20190210143319/https://apbdb.com/items/Vehicle_Truck_A_KingCab_slot_3",
+      "timestamp": "20190210143319",
+      "max_speed": 20.5,
+      "health": 1300.0
+    },
+    "Vehicle_Truck_A_KingCab_slot_4": {
+      "id": "Vehicle_Truck_A_KingCab_slot_4",
+      "snapshot": "http://web.archive.org/web/20190126041139/https://apbdb.com/items/Vehicle_Truck_A_KingCab_slot_4",
+      "timestamp": "20190126041139",
+      "max_speed": 20.5,
+      "health": 1300.0
+    },
+    "Vehicle_Car_E_Performance": {
+      "id": "Vehicle_Car_E_Performance",
+      "snapshot": "http://web.archive.org/web/20230521082353/https://apbdb.com/items/Vehicle_Car_E_Performance",
+      "timestamp": "20230521082353",
+      "max_speed": 23.0,
+      "health": 1100.0
+    },
+    "Vehicle_Car_E_Performance_slot_1": {
+      "id": "Vehicle_Car_E_Performance_slot_1",
+      "snapshot": "http://web.archive.org/web/20190307082433/https://apbdb.com/items/Vehicle_Car_E_Performance_slot_1",
+      "timestamp": "20190307082433",
+      "max_speed": 23.0,
+      "health": 1100.0
+    },
+    "Vehicle_Car_E_Performance_slot_2": {
+      "id": "Vehicle_Car_E_Performance_slot_2",
+      "snapshot": "http://web.archive.org/web/20190210143624/https://apbdb.com/items/Vehicle_Car_E_Performance_slot_2",
+      "timestamp": "20190210143624",
+      "max_speed": 23.0,
+      "health": 1100.0
+    },
+    "Vehicle_Car_E_Performance_slot_3": {
+      "id": "Vehicle_Car_E_Performance_slot_3",
+      "snapshot": "http://web.archive.org/web/20190223142001/https://apbdb.com/items/Vehicle_Car_E_Performance_slot_3",
+      "timestamp": "20190223142001",
+      "max_speed": 23.0,
+      "health": 1100.0
+    },
+    "Vehicle_Car_E_Performance_slot_4": {
+      "id": "Vehicle_Car_E_Performance_slot_4",
+      "snapshot": "http://web.archive.org/web/20230521082353/https://apbdb.com/items/Vehicle_Car_E_Performance_slot_4",
+      "timestamp": "20230521082353",
+      "max_speed": 23.0,
+      "health": 1100.0
+    },
+    "Vehicle_Car_A_UtilityClassicMuscle": {
+      "id": "Vehicle_Car_A_UtilityClassicMuscle",
+      "snapshot": "http://web.archive.org/web/20230522023707/https://apbdb.com/items/Vehicle_Car_A_UtilityClassicMuscle",
+      "timestamp": "20230522023707",
+      "max_speed": 23.0,
+      "health": 1350.0
+    },
+    "Vehicle_Car_A_UtilityClassicMuscle_slot_1": {
+      "id": "Vehicle_Car_A_UtilityClassicMuscle_slot_1",
+      "snapshot": "http://web.archive.org/web/20190210060326/https://apbdb.com/items/Vehicle_Car_A_UtilityClassicMuscle_slot_1",
+      "timestamp": "20190210060326",
+      "max_speed": 23.0,
+      "health": 1350.0
+    },
+    "Vehicle_Car_A_UtilityClassicMuscle_slot_2": {
+      "id": "Vehicle_Car_A_UtilityClassicMuscle_slot_2",
+      "snapshot": "http://web.archive.org/web/20190305024830/https://apbdb.com/items/Vehicle_Car_A_UtilityClassicMuscle_slot_2",
+      "timestamp": "20190305024830",
+      "max_speed": 23.0,
+      "health": 1350.0
+    },
+    "Vehicle_Car_A_UtilityClassicMuscle_slot_3": {
+      "id": "Vehicle_Car_A_UtilityClassicMuscle_slot_3",
+      "snapshot": "http://web.archive.org/web/20190225034509/https://apbdb.com/items/Vehicle_Car_A_UtilityClassicMuscle_slot_3",
+      "timestamp": "20190225034509",
+      "max_speed": 23.0,
+      "health": 1350.0
+    },
+    "Vehicle_Car_A_UtilityClassicMuscle_slot_4": {
+      "id": "Vehicle_Car_A_UtilityClassicMuscle_slot_4",
+      "snapshot": "http://web.archive.org/web/20190305233507/https://apbdb.com/items/Vehicle_Car_A_UtilityClassicMuscle_slot_4",
+      "timestamp": "20190305233507",
+      "max_speed": 23.0,
+      "health": 1350.0
+    },
+    "Vehicle_Truck_E_Carrying_Pre_FN1_PT": {
+      "id": "Vehicle_Truck_E_Carrying_Pre_FN1_PT",
+      "snapshot": "http://web.archive.org/web/20190126041234/https://apbdb.com/items/Vehicle_Truck_E_Carrying_Pre_FN1_PT",
+      "timestamp": "20190126041234",
+      "max_speed": 20.9,
+      "health": 1600.0
+    },
+    "Vehicle_Truck_E_Carrying_Pre_FN1_Enf_v1": {
+      "id": "Vehicle_Truck_E_Carrying_Pre_FN1_Enf_v1",
+      "snapshot": "http://web.archive.org/web/20190126041224/https://apbdb.com/items/Vehicle_Truck_E_Carrying_Pre_FN1_Enf_v1",
+      "timestamp": "20190126041224",
+      "max_speed": 20.9,
+      "health": 1600.0
+    },
+    "Vehicle_Truck_E_Carrying_Pre_FN1_Enf_v2": {
+      "id": "Vehicle_Truck_E_Carrying_Pre_FN1_Enf_v2",
+      "snapshot": "http://web.archive.org/web/20190126041229/https://apbdb.com/items/Vehicle_Truck_E_Carrying_Pre_FN1_Enf_v2",
+      "timestamp": "20190126041229",
+      "max_speed": 20.9,
+      "health": 1600.0
+    },
+    "Vehicle_Truck_E_Carrying_Pre_FN1_Pra": {
+      "id": "Vehicle_Truck_E_Carrying_Pre_FN1_Pra",
+      "snapshot": "http://web.archive.org/web/20190126041825/https://apbdb.com/items/Vehicle_Truck_E_Carrying_Pre_FN1_Pra",
+      "timestamp": "20190126041825",
+      "max_speed": 20.9,
+      "health": 1600.0
+    },
+    "Vehicle_Truck_E_Carrying_Pre_FN2_PT": {
+      "id": "Vehicle_Truck_E_Carrying_Pre_FN2_PT",
+      "snapshot": "http://web.archive.org/web/20190126041830/https://apbdb.com/items/Vehicle_Truck_E_Carrying_Pre_FN2_PT",
+      "timestamp": "20190126041830",
+      "max_speed": 20.9,
+      "health": 1600.0
+    },
+    "Vehicle_Truck_E_Carrying_Pre_FN2_Enf_v1": {
+      "id": "Vehicle_Truck_E_Carrying_Pre_FN2_Enf_v1",
+      "snapshot": "http://web.archive.org/web/20190224014346/https://apbdb.com/items/Vehicle_Truck_E_Carrying_Pre_FN2_Enf_v1",
+      "timestamp": "20190224014346",
+      "max_speed": 20.9,
+      "health": 1600.0
+    },
+    "Vehicle_Truck_E_Carrying_Pre_FN2_Pra": {
+      "id": "Vehicle_Truck_E_Carrying_Pre_FN2_Pra",
+      "snapshot": "http://web.archive.org/web/20190126041239/https://apbdb.com/items/Vehicle_Truck_E_Carrying_Pre_FN2_Pra",
+      "timestamp": "20190126041239",
+      "max_speed": 20.9,
+      "health": 1600.0
+    },
+    "Vehicle_Truck_E_Carrying_Pre_FN3_PT": {
+      "id": "Vehicle_Truck_E_Carrying_Pre_FN3_PT",
+      "snapshot": "http://web.archive.org/web/20190126041840/https://apbdb.com/items/Vehicle_Truck_E_Carrying_Pre_FN3_PT",
+      "timestamp": "20190126041840",
+      "max_speed": 20.9,
+      "health": 1600.0
+    },
+    "Vehicle_Truck_E_Carrying_Pre_FN3_Enf_v1": {
+      "id": "Vehicle_Truck_E_Carrying_Pre_FN3_Enf_v1",
+      "snapshot": "http://web.archive.org/web/20190126041244/https://apbdb.com/items/Vehicle_Truck_E_Carrying_Pre_FN3_Enf_v1",
+      "timestamp": "20190126041244",
+      "max_speed": 20.9,
+      "health": 1600.0
+    },
+    "Vehicle_Truck_E_Carrying_Pre_FN3_Enf_v2": {
+      "id": "Vehicle_Truck_E_Carrying_Pre_FN3_Enf_v2",
+      "snapshot": "http://web.archive.org/web/20190126041835/https://apbdb.com/items/Vehicle_Truck_E_Carrying_Pre_FN3_Enf_v2",
+      "timestamp": "20190126041835",
+      "max_speed": 20.9,
+      "health": 1600.0
+    },
+    "Vehicle_Truck_E_Carrying_Pre_FN3_Pra": {
+      "id": "Vehicle_Truck_E_Carrying_Pre_FN3_Pra",
+      "snapshot": "http://web.archive.org/web/20190224014544/https://apbdb.com/items/Vehicle_Truck_E_Carrying_Pre_FN3_Pra",
+      "timestamp": "20190224014544",
+      "max_speed": 20.9,
+      "health": 1600.0
+    },
+    "Vehicle_Truck_E_Carrying_Pre_FN4_PT": {
+      "id": "Vehicle_Truck_E_Carrying_Pre_FN4_PT",
+      "snapshot": "http://web.archive.org/web/20190126041845/https://apbdb.com/items/Vehicle_Truck_E_Carrying_Pre_FN4_PT",
+      "timestamp": "20190126041845",
+      "max_speed": 20.9,
+      "health": 1600.0
+    },
+    "Vehicle_Truck_E_Carrying_Pre_FN4_Enf_v1": {
+      "id": "Vehicle_Truck_E_Carrying_Pre_FN4_Enf_v1",
+      "snapshot": "http://web.archive.org/web/20190126041249/https://apbdb.com/items/Vehicle_Truck_E_Carrying_Pre_FN4_Enf_v1",
+      "timestamp": "20190126041249",
+      "max_speed": 20.9,
+      "health": 1600.0
+    },
+    "Vehicle_Truck_E_Carrying_Pre_FN4_Enf_v2": {
+      "id": "Vehicle_Truck_E_Carrying_Pre_FN4_Enf_v2",
+      "snapshot": "http://web.archive.org/web/20190126041254/https://apbdb.com/items/Vehicle_Truck_E_Carrying_Pre_FN4_Enf_v2",
+      "timestamp": "20190126041254",
+      "max_speed": 20.9,
+      "health": 1600.0
+    },
+    "Vehicle_Truck_E_Carrying_Pre_FN4_Pra": {
+      "id": "Vehicle_Truck_E_Carrying_Pre_FN4_Pra",
+      "snapshot": "http://web.archive.org/web/20190111171908/https://apbdb.com/items/Vehicle_Truck_E_Carrying_Pre_FN4_Pra",
+      "timestamp": "20190111171908",
+      "max_speed": 20.9,
+      "health": 1600.0
+    },
+    "Vehicle_Car_C_Performance_Tiptoe": {
+      "id": "Vehicle_Car_C_Performance_Tiptoe",
+      "snapshot": "http://web.archive.org/web/20190818195941/https://apbdb.com/items/Vehicle_Car_C_Performance_Tiptoe",
+      "timestamp": "20190818195941",
+      "max_speed": 23.0,
+      "health": 900.0
+    },
+    "Vehicle_Car_C_Performance_Pre_FN1_Crim_v2": {
+      "id": "Vehicle_Car_C_Performance_Pre_FN1_Crim_v2",
+      "snapshot": "http://web.archive.org/web/20190125065508/https://apbdb.com/items/Vehicle_Car_C_Performance_Pre_FN1_Crim_v2",
+      "timestamp": "20190125065508",
+      "max_speed": 23.0,
+      "health": 900.0
+    },
+    "Vehicle_Car_C_Performance_Pre_FN1_BR": {
+      "id": "Vehicle_Car_C_Performance_Pre_FN1_BR",
+      "snapshot": "http://web.archive.org/web/20190125065503/https://apbdb.com/items/Vehicle_Car_C_Performance_Pre_FN1_BR",
+      "timestamp": "20190125065503",
+      "max_speed": 23.0,
+      "health": 900.0
+    },
+    "Vehicle_Car_C_Performance_Pre_FN2_Crim_v2": {
+      "id": "Vehicle_Car_C_Performance_Pre_FN2_Crim_v2",
+      "snapshot": "http://web.archive.org/web/20190125065518/https://apbdb.com/items/Vehicle_Car_C_Performance_Pre_FN2_Crim_v2",
+      "timestamp": "20190125065518",
+      "max_speed": 23.0,
+      "health": 900.0
+    },
+    "Vehicle_Car_C_Performance_Pre_FN2_BR": {
+      "id": "Vehicle_Car_C_Performance_Pre_FN2_BR",
+      "snapshot": "http://web.archive.org/web/20190125065513/https://apbdb.com/items/Vehicle_Car_C_Performance_Pre_FN2_BR",
+      "timestamp": "20190125065513",
+      "max_speed": 23.0,
+      "health": 900.0
+    },
+    "Vehicle_Car_C_Performance_Pre_FN2_Crim_v1": {
+      "id": "Vehicle_Car_C_Performance_Pre_FN2_Crim_v1",
+      "snapshot": "http://web.archive.org/web/20190125065013/https://apbdb.com/items/Vehicle_Car_C_Performance_Pre_FN2_Crim_v1",
+      "timestamp": "20190125065013",
+      "max_speed": 23.0,
+      "health": 900.0
+    },
+    "Vehicle_Car_C_Performance_Pre_FN3_GK": {
+      "id": "Vehicle_Car_C_Performance_Pre_FN3_GK",
+      "snapshot": "http://web.archive.org/web/20190125065533/https://apbdb.com/items/Vehicle_Car_C_Performance_Pre_FN3_GK",
+      "timestamp": "20190125065533",
+      "max_speed": 23.0,
+      "health": 900.0
+    },
+    "Vehicle_Car_C_Performance_Pre_FN3_Crim_v2": {
+      "id": "Vehicle_Car_C_Performance_Pre_FN3_Crim_v2",
+      "snapshot": "http://web.archive.org/web/20190125065528/https://apbdb.com/items/Vehicle_Car_C_Performance_Pre_FN3_Crim_v2",
+      "timestamp": "20190125065528",
+      "max_speed": 23.0,
+      "health": 900.0
+    },
+    "Vehicle_Car_C_Performance_Pre_FN3_BR": {
+      "id": "Vehicle_Car_C_Performance_Pre_FN3_BR",
+      "snapshot": "http://web.archive.org/web/20190308051823/https://apbdb.com/items/Vehicle_Car_C_Performance_Pre_FN3_BR",
+      "timestamp": "20190308051823",
+      "max_speed": 23.0,
+      "health": 900.0
+    },
+    "Vehicle_Car_C_Performance_Pre_FN3_Crim_v1": {
+      "id": "Vehicle_Car_C_Performance_Pre_FN3_Crim_v1",
+      "snapshot": "http://web.archive.org/web/20190125065523/https://apbdb.com/items/Vehicle_Car_C_Performance_Pre_FN3_Crim_v1",
+      "timestamp": "20190125065523",
+      "max_speed": 23.0,
+      "health": 900.0
+    },
+    "Vehicle_Car_C_Performance_Pre_FN4_GK": {
+      "id": "Vehicle_Car_C_Performance_Pre_FN4_GK",
+      "snapshot": "http://web.archive.org/web/20190125065549/https://apbdb.com/items/Vehicle_Car_C_Performance_Pre_FN4_GK",
+      "timestamp": "20190125065549",
+      "max_speed": 23.0,
+      "health": 900.0
+    },
+    "Vehicle_Car_C_Performance_Pre_FN4_Crim_v1": {
+      "id": "Vehicle_Car_C_Performance_Pre_FN4_Crim_v1",
+      "snapshot": "http://web.archive.org/web/20190125065543/https://apbdb.com/items/Vehicle_Car_C_Performance_Pre_FN4_Crim_v1",
+      "timestamp": "20190125065543",
+      "max_speed": 23.0,
+      "health": 900.0
+    },
+    "Vehicle_Car_A_UtilityEstate_Pre_FN1_GK": {
+      "id": "Vehicle_Car_A_UtilityEstate_Pre_FN1_GK",
+      "snapshot": "http://web.archive.org/web/20190113182743/https://apbdb.com/items/Vehicle_Car_A_UtilityEstate_Pre_FN1_GK",
+      "timestamp": "20190113182743",
+      "max_speed": 19.9,
+      "health": 1100.0
+    },
+    "Vehicle_Car_A_UtilityEstate_Pre_FN1_Pra": {
+      "id": "Vehicle_Car_A_UtilityEstate_Pre_FN1_Pra",
+      "snapshot": "http://web.archive.org/web/20190111170254/https://apbdb.com/items/Vehicle_Car_A_UtilityEstate_Pre_FN1_Pra",
+      "timestamp": "20190111170254",
+      "max_speed": 19.9,
+      "health": 1100.0
+    },
+    "Vehicle_Car_A_UtilityEstate_Pre_FN2_GK": {
+      "id": "Vehicle_Car_A_UtilityEstate_Pre_FN2_GK",
+      "snapshot": "http://web.archive.org/web/20180710044325/https://apbdb.com/items/Vehicle_Car_A_UtilityEstate_Pre_FN2_GK",
+      "timestamp": "20180710044325",
+      "max_speed": 19.9,
+      "health": 1100.0
+    },
+    "Vehicle_Car_A_UtilityEstate_Pre_FN2_Pra": {
+      "id": "Vehicle_Car_A_UtilityEstate_Pre_FN2_Pra",
+      "snapshot": "http://web.archive.org/web/20180710044330/https://apbdb.com/items/Vehicle_Car_A_UtilityEstate_Pre_FN2_Pra",
+      "timestamp": "20180710044330",
+      "max_speed": 19.9,
+      "health": 1100.0
+    },
+    "Vehicle_Car_A_UtilityEstate_Pre_FN3_GK": {
+      "id": "Vehicle_Car_A_UtilityEstate_Pre_FN3_GK",
+      "snapshot": "http://web.archive.org/web/20180710044335/https://apbdb.com/items/Vehicle_Car_A_UtilityEstate_Pre_FN3_GK",
+      "timestamp": "20180710044335",
+      "max_speed": 19.9,
+      "health": 1100.0
+    },
+    "Vehicle_Car_A_UtilityEstate_Pre_FN3_Pra": {
+      "id": "Vehicle_Car_A_UtilityEstate_Pre_FN3_Pra",
+      "snapshot": "http://web.archive.org/web/20180710044446/https://apbdb.com/items/Vehicle_Car_A_UtilityEstate_Pre_FN3_Pra",
+      "timestamp": "20180710044446",
+      "max_speed": 19.9,
+      "health": 1100.0
+    },
+    "Vehicle_Car_A_UtilityEstate_Pre_FN4_GK": {
+      "id": "Vehicle_Car_A_UtilityEstate_Pre_FN4_GK",
+      "snapshot": "http://web.archive.org/web/20180710044340/https://apbdb.com/items/Vehicle_Car_A_UtilityEstate_Pre_FN4_GK",
+      "timestamp": "20180710044340",
+      "max_speed": 19.9,
+      "health": 1100.0
+    },
+    "Vehicle_Car_A_UtilityEstate_Pre_FN4_Pra": {
+      "id": "Vehicle_Car_A_UtilityEstate_Pre_FN4_Pra",
+      "snapshot": "http://web.archive.org/web/20180710044345/https://apbdb.com/items/Vehicle_Car_A_UtilityEstate_Pre_FN4_Pra",
+      "timestamp": "20180710044345",
+      "max_speed": 19.9,
+      "health": 1100.0
+    },
+    "Vehicle_Van_C_Carrying_slot_1": {
+      "id": "Vehicle_Van_C_Carrying_slot_1",
+      "snapshot": "http://web.archive.org/web/20190107221220/https://apbdb.com/items/Vehicle_Van_C_Carrying_slot_1",
+      "timestamp": "20190107221220",
+      "max_speed": 21.5,
+      "health": 1600.0
+    },
+    "Vehicle_Truck_A_SUV_Pre_FN1_PT": {
+      "id": "Vehicle_Truck_A_SUV_Pre_FN1_PT",
+      "snapshot": "http://web.archive.org/web/20180724104045/https://apbdb.com/items/Vehicle_Truck_A_SUV_Pre_FN1_PT",
+      "timestamp": "20180724104045",
+      "max_speed": 20.0,
+      "health": 1050.0
+    },
+    "Vehicle_Truck_A_SUV_Pre_FN1_GK": {
+      "id": "Vehicle_Truck_A_SUV_Pre_FN1_GK",
+      "snapshot": "http://web.archive.org/web/20180724104040/https://apbdb.com/items/Vehicle_Truck_A_SUV_Pre_FN1_GK",
+      "timestamp": "20180724104040",
+      "max_speed": 20.0,
+      "health": 1050.0
+    },
+    "Vehicle_Truck_A_SUV_Pre_FN1_BR": {
+      "id": "Vehicle_Truck_A_SUV_Pre_FN1_BR",
+      "snapshot": "http://web.archive.org/web/20180724110341/https://apbdb.com/items/Vehicle_Truck_A_SUV_Pre_FN1_BR",
+      "timestamp": "20180724110341",
+      "max_speed": 20.0,
+      "health": 1050.0
+    },
+    "Vehicle_Truck_A_SUV_Pre_FN1_Pra": {
+      "id": "Vehicle_Truck_A_SUV_Pre_FN1_Pra",
+      "snapshot": "http://web.archive.org/web/20180724104050/https://apbdb.com/items/Vehicle_Truck_A_SUV_Pre_FN1_Pra",
+      "timestamp": "20180724104050",
+      "max_speed": 20.0,
+      "health": 1050.0
+    },
+    "Vehicle_Truck_A_SUV_Pre_FN2_PT": {
+      "id": "Vehicle_Truck_A_SUV_Pre_FN2_PT",
+      "snapshot": "http://web.archive.org/web/20180724110351/https://apbdb.com/items/Vehicle_Truck_A_SUV_Pre_FN2_PT",
+      "timestamp": "20180724110351",
+      "max_speed": 20.0,
+      "health": 1050.0
+    },
+    "Vehicle_Truck_A_SUV_Pre_FN2_GK": {
+      "id": "Vehicle_Truck_A_SUV_Pre_FN2_GK",
+      "snapshot": "http://web.archive.org/web/20180724110346/https://apbdb.com/items/Vehicle_Truck_A_SUV_Pre_FN2_GK",
+      "timestamp": "20180724110346",
+      "max_speed": 20.0,
+      "health": 1050.0
+    },
+    "Vehicle_Truck_A_SUV_Pre_FN2_BR": {
+      "id": "Vehicle_Truck_A_SUV_Pre_FN2_BR",
+      "snapshot": "http://web.archive.org/web/20190119100434/https://apbdb.com/items/Vehicle_Truck_A_SUV_Pre_FN2_BR",
+      "timestamp": "20190119100434",
+      "max_speed": 20.0,
+      "health": 1050.0
+    },
+    "Vehicle_Truck_A_SUV_Pre_FN2_Pra": {
+      "id": "Vehicle_Truck_A_SUV_Pre_FN2_Pra",
+      "snapshot": "http://web.archive.org/web/20190303010447/https://apbdb.com/items/Vehicle_Truck_A_SUV_Pre_FN2_Pra",
+      "timestamp": "20190303010447",
+      "max_speed": 20.0,
+      "health": 1050.0
+    },
+    "Vehicle_Truck_A_SUV_Pre_FN3_PT": {
+      "id": "Vehicle_Truck_A_SUV_Pre_FN3_PT",
+      "snapshot": "http://web.archive.org/web/20190126041214/https://apbdb.com/items/Vehicle_Truck_A_SUV_Pre_FN3_PT",
+      "timestamp": "20190126041214",
+      "max_speed": 20.0,
+      "health": 1050.0
+    },
+    "Vehicle_Truck_A_SUV_Pre_FN3_GK": {
+      "id": "Vehicle_Truck_A_SUV_Pre_FN3_GK",
+      "snapshot": "http://web.archive.org/web/20190126041209/https://apbdb.com/items/Vehicle_Truck_A_SUV_Pre_FN3_GK",
+      "timestamp": "20190126041209",
+      "max_speed": 20.0,
+      "health": 1050.0
+    },
+    "Vehicle_Truck_A_SUV_Pre_FN3_BR": {
+      "id": "Vehicle_Truck_A_SUV_Pre_FN3_BR",
+      "snapshot": "http://web.archive.org/web/20180724110401/https://apbdb.com/items/Vehicle_Truck_A_SUV_Pre_FN3_BR",
+      "timestamp": "20180724110401",
+      "max_speed": 20.0,
+      "health": 1050.0
+    },
+    "Vehicle_Truck_A_SUV_Pre_FN3_Pra": {
+      "id": "Vehicle_Truck_A_SUV_Pre_FN3_Pra",
+      "snapshot": "http://web.archive.org/web/20190126041815/https://apbdb.com/items/Vehicle_Truck_A_SUV_Pre_FN3_Pra",
+      "timestamp": "20190126041815",
+      "max_speed": 20.0,
+      "health": 1050.0
+    },
+    "Vehicle_Truck_A_SUV_Pre_FN4_PT": {
+      "id": "Vehicle_Truck_A_SUV_Pre_FN4_PT",
+      "snapshot": "http://web.archive.org/web/20180724110422/https://apbdb.com/items/Vehicle_Truck_A_SUV_Pre_FN4_PT",
+      "timestamp": "20180724110422",
+      "max_speed": 20.0,
+      "health": 1050.0
+    },
+    "Vehicle_Truck_A_SUV_Pre_FN4_BR": {
+      "id": "Vehicle_Truck_A_SUV_Pre_FN4_BR",
+      "snapshot": "http://web.archive.org/web/20180724110412/https://apbdb.com/items/Vehicle_Truck_A_SUV_Pre_FN4_BR",
+      "timestamp": "20180724110412",
+      "max_speed": 20.0,
+      "health": 1050.0
+    },
+    "Vehicle_Truck_A_SUV_Pre_FN4_Pra": {
+      "id": "Vehicle_Truck_A_SUV_Pre_FN4_Pra",
+      "snapshot": "http://web.archive.org/web/20180724110427/https://apbdb.com/items/Vehicle_Truck_A_SUV_Pre_FN4_Pra",
+      "timestamp": "20180724110427",
+      "max_speed": 20.0,
+      "health": 1050.0
+    },
+    "Vehicle_Car_C_Performance_slot_4_Enf_Aletta": {
+      "id": "Vehicle_Car_C_Performance_slot_4_Enf_Aletta",
+      "snapshot": "http://web.archive.org/web/20190227060233/https://apbdb.com/items/Vehicle_Car_C_Performance_slot_4_Enf_Aletta",
+      "timestamp": "20190227060233",
+      "max_speed": 23.0,
+      "health": 900.0
+    },
+    "Vehicle_Car_E_Performance_slot_4_Crim_Gumball": {
+      "id": "Vehicle_Car_E_Performance_slot_4_Crim_Gumball",
+      "snapshot": "http://web.archive.org/web/20190307082645/https://apbdb.com/items/Vehicle_Car_E_Performance_slot_4_Crim_Gumball",
+      "timestamp": "20190307082645",
+      "max_speed": 23.0,
+      "health": 1100.0
+    },
+    "Vehicle_Car_A_UtilityExecSaloon": {
+      "id": "Vehicle_Car_A_UtilityExecSaloon",
+      "snapshot": "http://web.archive.org/web/20190305024623/https://apbdb.com/items/Vehicle_Car_A_UtilityExecSaloon",
+      "timestamp": "20190305024623",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_UtilityExecSaloon_slot_1": {
+      "id": "Vehicle_Car_A_UtilityExecSaloon_slot_1",
+      "snapshot": "http://web.archive.org/web/20190126040954/https://apbdb.com/items/Vehicle_Car_A_UtilityExecSaloon_slot_1",
+      "timestamp": "20190126040954",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_UtilityExecSaloon_slot_2": {
+      "id": "Vehicle_Car_A_UtilityExecSaloon_slot_2",
+      "snapshot": "http://web.archive.org/web/20190126040959/https://apbdb.com/items/Vehicle_Car_A_UtilityExecSaloon_slot_2",
+      "timestamp": "20190126040959",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_UtilityExecSaloon_slot_3": {
+      "id": "Vehicle_Car_A_UtilityExecSaloon_slot_3",
+      "snapshot": "http://web.archive.org/web/20190210143423/https://apbdb.com/items/Vehicle_Car_A_UtilityExecSaloon_slot_3",
+      "timestamp": "20190210143423",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Car_A_UtilityExecSaloon_slot_4": {
+      "id": "Vehicle_Car_A_UtilityExecSaloon_slot_4",
+      "snapshot": "http://web.archive.org/web/20190126041615/https://apbdb.com/items/Vehicle_Car_A_UtilityExecSaloon_slot_4",
+      "timestamp": "20190126041615",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Truck_A_KingCab_Pre_FN1_Crim_v2": {
+      "id": "Vehicle_Truck_A_KingCab_Pre_FN1_Crim_v2",
+      "snapshot": "http://web.archive.org/web/20190126041104/https://apbdb.com/items/Vehicle_Truck_A_KingCab_Pre_FN1_Crim_v2",
+      "timestamp": "20190126041104",
+      "max_speed": 20.5,
+      "health": 1300.0
+    },
+    "Vehicle_Truck_A_KingCab_Pre_FN1_Enf_v1": {
+      "id": "Vehicle_Truck_A_KingCab_Pre_FN1_Enf_v1",
+      "snapshot": "http://web.archive.org/web/20190126041735/https://apbdb.com/items/Vehicle_Truck_A_KingCab_Pre_FN1_Enf_v1",
+      "timestamp": "20190126041735",
+      "max_speed": 20.5,
+      "health": 1300.0
+    },
+    "Vehicle_Truck_A_KingCab_Pre_FN1_Crim_v1": {
+      "id": "Vehicle_Truck_A_KingCab_Pre_FN1_Crim_v1",
+      "snapshot": "http://web.archive.org/web/20190126041730/https://apbdb.com/items/Vehicle_Truck_A_KingCab_Pre_FN1_Crim_v1",
+      "timestamp": "20190126041730",
+      "max_speed": 20.5,
+      "health": 1300.0
+    },
+    "Vehicle_Truck_A_KingCab_Pre_FN2_Crim_v2": {
+      "id": "Vehicle_Truck_A_KingCab_Pre_FN2_Crim_v2",
+      "snapshot": "http://web.archive.org/web/20190307122811/https://apbdb.com/items/Vehicle_Truck_A_KingCab_Pre_FN2_Crim_v2",
+      "timestamp": "20190307122811",
+      "max_speed": 20.5,
+      "health": 1300.0
+    },
+    "Vehicle_Truck_A_KingCab_Pre_FN2_Enf_v1": {
+      "id": "Vehicle_Truck_A_KingCab_Pre_FN2_Enf_v1",
+      "snapshot": "http://web.archive.org/web/20190126041114/https://apbdb.com/items/Vehicle_Truck_A_KingCab_Pre_FN2_Enf_v1",
+      "timestamp": "20190126041114",
+      "max_speed": 20.5,
+      "health": 1300.0
+    },
+    "Vehicle_Truck_A_KingCab_Pre_FN2_Crim_v1": {
+      "id": "Vehicle_Truck_A_KingCab_Pre_FN2_Crim_v1",
+      "snapshot": "http://web.archive.org/web/20190126041109/https://apbdb.com/items/Vehicle_Truck_A_KingCab_Pre_FN2_Crim_v1",
+      "timestamp": "20190126041109",
+      "max_speed": 20.5,
+      "health": 1300.0
+    },
+    "Vehicle_Truck_A_KingCab_Pre_FN2_Enf_v2": {
+      "id": "Vehicle_Truck_A_KingCab_Pre_FN2_Enf_v2",
+      "snapshot": "http://web.archive.org/web/20190227152952/https://apbdb.com/items/Vehicle_Truck_A_KingCab_Pre_FN2_Enf_v2",
+      "timestamp": "20190227152952",
+      "max_speed": 20.5,
+      "health": 1300.0
+    },
+    "Vehicle_Truck_A_KingCab_Pre_FN3_Crim_v2": {
+      "id": "Vehicle_Truck_A_KingCab_Pre_FN3_Crim_v2",
+      "snapshot": "http://web.archive.org/web/20190126041124/https://apbdb.com/items/Vehicle_Truck_A_KingCab_Pre_FN3_Crim_v2",
+      "timestamp": "20190126041124",
+      "max_speed": 20.5,
+      "health": 1300.0
+    },
+    "Vehicle_Truck_A_KingCab_Pre_FN3_Enf_v1": {
+      "id": "Vehicle_Truck_A_KingCab_Pre_FN3_Enf_v1",
+      "snapshot": "http://web.archive.org/web/20190305032425/https://apbdb.com/items/Vehicle_Truck_A_KingCab_Pre_FN3_Enf_v1",
+      "timestamp": "20190305032425",
+      "max_speed": 20.5,
+      "health": 1300.0
+    },
+    "Vehicle_Truck_A_KingCab_Pre_FN3_Crim_v1": {
+      "id": "Vehicle_Truck_A_KingCab_Pre_FN3_Crim_v1",
+      "snapshot": "http://web.archive.org/web/20190126041119/https://apbdb.com/items/Vehicle_Truck_A_KingCab_Pre_FN3_Crim_v1",
+      "timestamp": "20190126041119",
+      "max_speed": 20.5,
+      "health": 1300.0
+    },
+    "Vehicle_Truck_A_KingCab_Pre_FN3_Enf_v2": {
+      "id": "Vehicle_Truck_A_KingCab_Pre_FN3_Enf_v2",
+      "snapshot": "http://web.archive.org/web/20190126041129/https://apbdb.com/items/Vehicle_Truck_A_KingCab_Pre_FN3_Enf_v2",
+      "timestamp": "20190126041129",
+      "max_speed": 20.5,
+      "health": 1300.0
+    },
+    "Vehicle_Truck_A_KingCab_Pre_FN4_Crim_v2": {
+      "id": "Vehicle_Truck_A_KingCab_Pre_FN4_Crim_v2",
+      "snapshot": "http://web.archive.org/web/20190126041745/https://apbdb.com/items/Vehicle_Truck_A_KingCab_Pre_FN4_Crim_v2",
+      "timestamp": "20190126041745",
+      "max_speed": 20.5,
+      "health": 1300.0
+    },
+    "Vehicle_Truck_A_KingCab_Pre_FN4_Enf_v1": {
+      "id": "Vehicle_Truck_A_KingCab_Pre_FN4_Enf_v1",
+      "snapshot": "http://web.archive.org/web/20190126041750/https://apbdb.com/items/Vehicle_Truck_A_KingCab_Pre_FN4_Enf_v1",
+      "timestamp": "20190126041750",
+      "max_speed": 20.5,
+      "health": 1300.0
+    },
+    "Vehicle_Truck_A_KingCab_Pre_FN4_Crim_v1": {
+      "id": "Vehicle_Truck_A_KingCab_Pre_FN4_Crim_v1",
+      "snapshot": "http://web.archive.org/web/20190126041134/https://apbdb.com/items/Vehicle_Truck_A_KingCab_Pre_FN4_Crim_v1",
+      "timestamp": "20190126041134",
+      "max_speed": 20.5,
+      "health": 1300.0
+    },
+    "Vehicle_Truck_A_KingCab_Pre_FN4_Enf_v2": {
+      "id": "Vehicle_Truck_A_KingCab_Pre_FN4_Enf_v2",
+      "snapshot": "http://web.archive.org/web/20190126041755/https://apbdb.com/items/Vehicle_Truck_A_KingCab_Pre_FN4_Enf_v2",
+      "timestamp": "20190126041755",
+      "max_speed": 20.5,
+      "health": 1300.0
+    },
+    "Vehicle_Car_E_Performance_Pre_FN1_Pra": {
+      "id": "Vehicle_Car_E_Performance_Pre_FN1_Pra",
+      "snapshot": "http://web.archive.org/web/20190210142651/https://apbdb.com/items/Vehicle_Car_E_Performance_Pre_FN1_Pra",
+      "timestamp": "20190210142651",
+      "max_speed": 23.0,
+      "health": 1100.0
+    },
+    "Vehicle_Car_E_Performance_Pre_FN1_Enf_v1": {
+      "id": "Vehicle_Car_E_Performance_Pre_FN1_Enf_v1",
+      "snapshot": "http://web.archive.org/web/20190210142828/https://apbdb.com/items/Vehicle_Car_E_Performance_Pre_FN1_Enf_v1",
+      "timestamp": "20190210142828",
+      "max_speed": 23.0,
+      "health": 1100.0
+    },
+    "Vehicle_Car_E_Performance_Pre_FN1_Enf_v2": {
+      "id": "Vehicle_Car_E_Performance_Pre_FN1_Enf_v2",
+      "snapshot": "http://web.archive.org/web/20190210143259/https://apbdb.com/items/Vehicle_Car_E_Performance_Pre_FN1_Enf_v2",
+      "timestamp": "20190210143259",
+      "max_speed": 23.0,
+      "health": 1100.0
+    },
+    "Vehicle_Car_E_Performance_Pre_FN1_PT": {
+      "id": "Vehicle_Car_E_Performance_Pre_FN1_PT",
+      "snapshot": "http://web.archive.org/web/20190210143304/https://apbdb.com/items/Vehicle_Car_E_Performance_Pre_FN1_PT",
+      "timestamp": "20190210143304",
+      "max_speed": 23.0,
+      "health": 1100.0
+    },
+    "Vehicle_Car_E_Performance_Pre_FN2_Pra": {
+      "id": "Vehicle_Car_E_Performance_Pre_FN2_Pra",
+      "snapshot": "http://web.archive.org/web/20190210143439/https://apbdb.com/items/Vehicle_Car_E_Performance_Pre_FN2_Pra",
+      "timestamp": "20190210143439",
+      "max_speed": 23.0,
+      "health": 1100.0
+    },
+    "Vehicle_Car_E_Performance_Pre_FN2_Enf_v1": {
+      "id": "Vehicle_Car_E_Performance_Pre_FN2_Enf_v1",
+      "snapshot": "http://web.archive.org/web/20190307082428/https://apbdb.com/items/Vehicle_Car_E_Performance_Pre_FN2_Enf_v1",
+      "timestamp": "20190307082428",
+      "max_speed": 23.0,
+      "health": 1100.0
+    },
+    "Vehicle_Car_E_Performance_Pre_FN2_Enf_v2": {
+      "id": "Vehicle_Car_E_Performance_Pre_FN2_Enf_v2",
+      "snapshot": "http://web.archive.org/web/20190210143433/https://apbdb.com/items/Vehicle_Car_E_Performance_Pre_FN2_Enf_v2",
+      "timestamp": "20190210143433",
+      "max_speed": 23.0,
+      "health": 1100.0
+    },
+    "Vehicle_Car_E_Performance_Pre_FN2_PT": {
+      "id": "Vehicle_Car_E_Performance_Pre_FN2_PT",
+      "snapshot": "http://web.archive.org/web/20190210142833/https://apbdb.com/items/Vehicle_Car_E_Performance_Pre_FN2_PT",
+      "timestamp": "20190210142833",
+      "max_speed": 23.0,
+      "health": 1100.0
+    },
+    "Vehicle_Car_E_Performance_Pre_FN3_Pra": {
+      "id": "Vehicle_Car_E_Performance_Pre_FN3_Pra",
+      "snapshot": "http://web.archive.org/web/20190210143310/https://apbdb.com/items/Vehicle_Car_E_Performance_Pre_FN3_Pra",
+      "timestamp": "20190210143310",
+      "max_speed": 23.0,
+      "health": 1100.0
+    },
+    "Vehicle_Car_E_Performance_Pre_FN3_Enf_v1": {
+      "id": "Vehicle_Car_E_Performance_Pre_FN3_Enf_v1",
+      "snapshot": "http://web.archive.org/web/20190210143819/https://apbdb.com/items/Vehicle_Car_E_Performance_Pre_FN3_Enf_v1",
+      "timestamp": "20190210143819",
+      "max_speed": 23.0,
+      "health": 1100.0
+    },
+    "Vehicle_Car_E_Performance_Pre_FN3_Enf_v2": {
+      "id": "Vehicle_Car_E_Performance_Pre_FN3_Enf_v2",
+      "snapshot": "http://web.archive.org/web/20190210143444/https://apbdb.com/items/Vehicle_Car_E_Performance_Pre_FN3_Enf_v2",
+      "timestamp": "20190210143444",
+      "max_speed": 23.0,
+      "health": 1100.0
+    },
+    "Vehicle_Car_E_Performance_Pre_FN3_PT": {
+      "id": "Vehicle_Car_E_Performance_Pre_FN3_PT",
+      "snapshot": "http://web.archive.org/web/20190307082640/https://apbdb.com/items/Vehicle_Car_E_Performance_Pre_FN3_PT",
+      "timestamp": "20190307082640",
+      "max_speed": 23.0,
+      "health": 1100.0
+    },
+    "Vehicle_Car_E_Performance_Pre_FN4_Pra": {
+      "id": "Vehicle_Car_E_Performance_Pre_FN4_Pra",
+      "snapshot": "http://web.archive.org/web/20190305063434/https://apbdb.com/items/Vehicle_Car_E_Performance_Pre_FN4_Pra",
+      "timestamp": "20190305063434",
+      "max_speed": 23.0,
+      "health": 1100.0
+    },
+    "Vehicle_Car_E_Performance_Pre_FN4_Enf_v1": {
+      "id": "Vehicle_Car_E_Performance_Pre_FN4_Enf_v1",
+      "snapshot": "http://web.archive.org/web/20190210143449/https://apbdb.com/items/Vehicle_Car_E_Performance_Pre_FN4_Enf_v1",
+      "timestamp": "20190210143449",
+      "max_speed": 23.0,
+      "health": 1100.0
+    },
+    "Vehicle_Car_E_Performance_Pre_FN4_Enf_v2": {
+      "id": "Vehicle_Car_E_Performance_Pre_FN4_Enf_v2",
+      "snapshot": "http://web.archive.org/web/20190210143619/https://apbdb.com/items/Vehicle_Car_E_Performance_Pre_FN4_Enf_v2",
+      "timestamp": "20190210143619",
+      "max_speed": 23.0,
+      "health": 1100.0
+    },
+    "Vehicle_Car_E_Performance_Pre_FN4_PT": {
+      "id": "Vehicle_Car_E_Performance_Pre_FN4_PT",
+      "snapshot": "http://web.archive.org/web/20190210143043/https://apbdb.com/items/Vehicle_Car_E_Performance_Pre_FN4_PT",
+      "timestamp": "20190210143043",
+      "max_speed": 23.0,
+      "health": 1100.0
+    },
+    "Vehicle_Truck_E_Compact_Pre_FN1_Enf_v2": {
+      "id": "Vehicle_Truck_E_Compact_Pre_FN1_Enf_v2",
+      "snapshot": "http://web.archive.org/web/20190207185034/https://apbdb.com/items/Vehicle_Truck_E_Compact_Pre_FN1_Enf_v2",
+      "timestamp": "20190207185034",
+      "max_speed": 19.5,
+      "health": 950.0
+    },
+    "Vehicle_Truck_E_Compact_Pre_FN1_PT": {
+      "id": "Vehicle_Truck_E_Compact_Pre_FN1_PT",
+      "snapshot": "http://web.archive.org/web/20190207180854/https://apbdb.com/items/Vehicle_Truck_E_Compact_Pre_FN1_PT",
+      "timestamp": "20190207180854",
+      "max_speed": 19.5,
+      "health": 950.0
+    },
+    "Vehicle_Truck_E_Compact_Pre_FN1_Pra": {
+      "id": "Vehicle_Truck_E_Compact_Pre_FN1_Pra",
+      "snapshot": "http://web.archive.org/web/20190207185144/https://apbdb.com/items/Vehicle_Truck_E_Compact_Pre_FN1_Pra",
+      "timestamp": "20190207185144",
+      "max_speed": 19.5,
+      "health": 950.0
+    },
+    "Vehicle_Truck_E_Compact_Pre_FN1_Enf_v1": {
+      "id": "Vehicle_Truck_E_Compact_Pre_FN1_Enf_v1",
+      "snapshot": "http://web.archive.org/web/20190207182524/https://apbdb.com/items/Vehicle_Truck_E_Compact_Pre_FN1_Enf_v1",
+      "timestamp": "20190207182524",
+      "max_speed": 19.5,
+      "health": 950.0
+    },
+    "Vehicle_Truck_E_Compact_Pre_FN2_Enf_v2": {
+      "id": "Vehicle_Truck_E_Compact_Pre_FN2_Enf_v2",
+      "snapshot": "http://web.archive.org/web/20190207184822/https://apbdb.com/items/Vehicle_Truck_E_Compact_Pre_FN2_Enf_v2",
+      "timestamp": "20190207184822",
+      "max_speed": 19.5,
+      "health": 950.0
+    },
+    "Vehicle_Truck_E_Compact_Pre_FN2_PT": {
+      "id": "Vehicle_Truck_E_Compact_Pre_FN2_PT",
+      "snapshot": "http://web.archive.org/web/20190207181859/https://apbdb.com/items/Vehicle_Truck_E_Compact_Pre_FN2_PT",
+      "timestamp": "20190207181859",
+      "max_speed": 19.5,
+      "health": 950.0
+    },
+    "Vehicle_Truck_E_Compact_Pre_FN2_Pra": {
+      "id": "Vehicle_Truck_E_Compact_Pre_FN2_Pra",
+      "snapshot": "http://web.archive.org/web/20190207184557/https://apbdb.com/items/Vehicle_Truck_E_Compact_Pre_FN2_Pra",
+      "timestamp": "20190207184557",
+      "max_speed": 19.5,
+      "health": 950.0
+    },
+    "Vehicle_Truck_E_Compact_Pre_FN2_Enf_v1": {
+      "id": "Vehicle_Truck_E_Compact_Pre_FN2_Enf_v1",
+      "snapshot": "http://web.archive.org/web/20190207184427/https://apbdb.com/items/Vehicle_Truck_E_Compact_Pre_FN2_Enf_v1",
+      "timestamp": "20190207184427",
+      "max_speed": 19.5,
+      "health": 950.0
+    },
+    "Vehicle_Truck_E_Compact_Pre_FN3_Enf_v2": {
+      "id": "Vehicle_Truck_E_Compact_Pre_FN3_Enf_v2",
+      "snapshot": "http://web.archive.org/web/20190207182729/https://apbdb.com/items/Vehicle_Truck_E_Compact_Pre_FN3_Enf_v2",
+      "timestamp": "20190207182729",
+      "max_speed": 19.5,
+      "health": 950.0
+    },
+    "Vehicle_Truck_E_Compact_Pre_FN3_PT": {
+      "id": "Vehicle_Truck_E_Compact_Pre_FN3_PT",
+      "snapshot": "http://web.archive.org/web/20190207181904/https://apbdb.com/items/Vehicle_Truck_E_Compact_Pre_FN3_PT",
+      "timestamp": "20190207181904",
+      "max_speed": 19.5,
+      "health": 950.0
+    },
+    "Vehicle_Truck_E_Compact_Pre_FN3_Pra": {
+      "id": "Vehicle_Truck_E_Compact_Pre_FN3_Pra",
+      "snapshot": "http://web.archive.org/web/20190227153328/https://apbdb.com/items/Vehicle_Truck_E_Compact_Pre_FN3_Pra",
+      "timestamp": "20190227153328",
+      "max_speed": 19.5,
+      "health": 950.0
+    },
+    "Vehicle_Truck_E_Compact_Pre_FN3_Enf_v1": {
+      "id": "Vehicle_Truck_E_Compact_Pre_FN3_Enf_v1",
+      "snapshot": "http://web.archive.org/web/20190207182529/https://apbdb.com/items/Vehicle_Truck_E_Compact_Pre_FN3_Enf_v1",
+      "timestamp": "20190207182529",
+      "max_speed": 19.5,
+      "health": 950.0
+    },
+    "Vehicle_Truck_E_Compact_Pre_FN4_Enf_v2": {
+      "id": "Vehicle_Truck_E_Compact_Pre_FN4_Enf_v2",
+      "snapshot": "http://web.archive.org/web/20190207180258/https://apbdb.com/items/Vehicle_Truck_E_Compact_Pre_FN4_Enf_v2",
+      "timestamp": "20190207180258",
+      "max_speed": 19.5,
+      "health": 950.0
+    },
+    "Vehicle_Truck_E_Compact_Pre_FN4_PT": {
+      "id": "Vehicle_Truck_E_Compact_Pre_FN4_PT",
+      "snapshot": "http://web.archive.org/web/20190207182148/https://apbdb.com/items/Vehicle_Truck_E_Compact_Pre_FN4_PT",
+      "timestamp": "20190207182148",
+      "max_speed": 19.5,
+      "health": 950.0
+    },
+    "Vehicle_Truck_E_Compact_Pre_FN4_Pra": {
+      "id": "Vehicle_Truck_E_Compact_Pre_FN4_Pra",
+      "snapshot": "http://web.archive.org/web/20190207182024/https://apbdb.com/items/Vehicle_Truck_E_Compact_Pre_FN4_Pra",
+      "timestamp": "20190207182024",
+      "max_speed": 19.5,
+      "health": 950.0
+    },
+    "Vehicle_Truck_E_Compact_Pre_FN4_Enf_v1": {
+      "id": "Vehicle_Truck_E_Compact_Pre_FN4_Enf_v1",
+      "snapshot": "http://web.archive.org/web/20190207184920/https://apbdb.com/items/Vehicle_Truck_E_Compact_Pre_FN4_Enf_v1",
+      "timestamp": "20190207184920",
+      "max_speed": 19.5,
+      "health": 950.0
+    },
+    "Vehicle_Car_A_Utility2DrVan_Pre_FN1_Crim": {
+      "id": "Vehicle_Car_A_Utility2DrVan_Pre_FN1_Crim",
+      "snapshot": "http://web.archive.org/web/20190307123043/https://apbdb.com/items/Vehicle_Car_A_Utility2DrVan_Pre_FN1_Crim",
+      "timestamp": "20190307123043",
+      "max_speed": 20.2,
+      "health": 900.0
+    },
+    "Vehicle_Car_A_Utility2DrVan_Pre_FN2_Crim": {
+      "id": "Vehicle_Car_A_Utility2DrVan_Pre_FN2_Crim",
+      "snapshot": "http://web.archive.org/web/20180427184231/https://apbdb.com/items/Vehicle_Car_A_Utility2DrVan_Pre_FN2_Crim",
+      "timestamp": "20180427184231",
+      "max_speed": 20.2,
+      "health": 900.0
+    },
+    "Vehicle_Car_A_Utility2DrVan_Pre_FN3_Crim": {
+      "id": "Vehicle_Car_A_Utility2DrVan_Pre_FN3_Crim",
+      "snapshot": "http://web.archive.org/web/20180427184236/https://apbdb.com/items/Vehicle_Car_A_Utility2DrVan_Pre_FN3_Crim",
+      "timestamp": "20180427184236",
+      "max_speed": 20.2,
+      "health": 900.0
+    },
+    "Vehicle_Car_A_Utility2DrVan_Pre_FN4_Crim": {
+      "id": "Vehicle_Car_A_Utility2DrVan_Pre_FN4_Crim",
+      "snapshot": "http://web.archive.org/web/20180427184355/https://apbdb.com/items/Vehicle_Car_A_Utility2DrVan_Pre_FN4_Crim",
+      "timestamp": "20180427184355",
+      "max_speed": 20.2,
+      "health": 900.0
+    },
+    "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN1_Crim": {
+      "id": "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN1_Crim",
+      "snapshot": "http://web.archive.org/web/20190130063510/https://apbdb.com/items/Vehicle_Car_A_UtilityClassicMuscle_Pre_FN1_Crim",
+      "timestamp": "20190130063510",
+      "max_speed": 23.0,
+      "health": 1350.0
+    },
+    "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN1_Enf": {
+      "id": "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN1_Enf",
+      "snapshot": "http://web.archive.org/web/20190130063515/https://apbdb.com/items/Vehicle_Car_A_UtilityClassicMuscle_Pre_FN1_Enf",
+      "timestamp": "20190130063515",
+      "max_speed": 23.0,
+      "health": 1350.0
+    },
+    "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN1_BR": {
+      "id": "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN1_BR",
+      "snapshot": "http://web.archive.org/web/20190130063505/https://apbdb.com/items/Vehicle_Car_A_UtilityClassicMuscle_Pre_FN1_BR",
+      "timestamp": "20190130063505",
+      "max_speed": 23.0,
+      "health": 1350.0
+    },
+    "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN1_Pra": {
+      "id": "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN1_Pra",
+      "snapshot": "http://web.archive.org/web/20190130063531/https://apbdb.com/items/Vehicle_Car_A_UtilityClassicMuscle_Pre_FN1_Pra",
+      "timestamp": "20190130063531",
+      "max_speed": 23.0,
+      "health": 1350.0
+    },
+    "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN1_GK": {
+      "id": "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN1_GK",
+      "snapshot": "http://web.archive.org/web/20190130063520/https://apbdb.com/items/Vehicle_Car_A_UtilityClassicMuscle_Pre_FN1_GK",
+      "timestamp": "20190130063520",
+      "max_speed": 23.0,
+      "health": 1350.0
+    },
+    "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN1_PT": {
+      "id": "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN1_PT",
+      "snapshot": "http://web.archive.org/web/20190218035043/https://apbdb.com/items/Vehicle_Car_A_UtilityClassicMuscle_Pre_FN1_PT",
+      "timestamp": "20190218035043",
+      "max_speed": 23.0,
+      "health": 1350.0
+    },
+    "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN2_Crim": {
+      "id": "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN2_Crim",
+      "snapshot": "http://web.archive.org/web/20190210060250/https://apbdb.com/items/Vehicle_Car_A_UtilityClassicMuscle_Pre_FN2_Crim",
+      "timestamp": "20190210060250",
+      "max_speed": 23.0,
+      "health": 1350.0
+    },
+    "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN2_Enf": {
+      "id": "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN2_Enf",
+      "snapshot": "http://web.archive.org/web/20190130063540/https://apbdb.com/items/Vehicle_Car_A_UtilityClassicMuscle_Pre_FN2_Enf",
+      "timestamp": "20190130063540",
+      "max_speed": 23.0,
+      "health": 1350.0
+    },
+    "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN2_BR": {
+      "id": "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN2_BR",
+      "snapshot": "http://web.archive.org/web/20190130063536/https://apbdb.com/items/Vehicle_Car_A_UtilityClassicMuscle_Pre_FN2_BR",
+      "timestamp": "20190130063536",
+      "max_speed": 23.0,
+      "health": 1350.0
+    },
+    "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN2_Pra": {
+      "id": "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN2_Pra",
+      "snapshot": "http://web.archive.org/web/20190130063555/https://apbdb.com/items/Vehicle_Car_A_UtilityClassicMuscle_Pre_FN2_Pra",
+      "timestamp": "20190130063555",
+      "max_speed": 23.0,
+      "health": 1350.0
+    },
+    "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN2_GK": {
+      "id": "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN2_GK",
+      "snapshot": "http://web.archive.org/web/20190130063546/https://apbdb.com/items/Vehicle_Car_A_UtilityClassicMuscle_Pre_FN2_GK",
+      "timestamp": "20190130063546",
+      "max_speed": 23.0,
+      "health": 1350.0
+    },
+    "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN2_PT": {
+      "id": "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN2_PT",
+      "snapshot": "http://web.archive.org/web/20190130063550/https://apbdb.com/items/Vehicle_Car_A_UtilityClassicMuscle_Pre_FN2_PT",
+      "timestamp": "20190130063550",
+      "max_speed": 23.0,
+      "health": 1350.0
+    },
+    "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN3_Crim": {
+      "id": "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN3_Crim",
+      "snapshot": "http://web.archive.org/web/20190130063605/https://apbdb.com/items/Vehicle_Car_A_UtilityClassicMuscle_Pre_FN3_Crim",
+      "timestamp": "20190130063605",
+      "max_speed": 23.0,
+      "health": 1350.0
+    },
+    "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN3_Enf": {
+      "id": "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN3_Enf",
+      "snapshot": "http://web.archive.org/web/20190130063611/https://apbdb.com/items/Vehicle_Car_A_UtilityClassicMuscle_Pre_FN3_Enf",
+      "timestamp": "20190130063611",
+      "max_speed": 23.0,
+      "health": 1350.0
+    },
+    "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN3_BR": {
+      "id": "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN3_BR",
+      "snapshot": "http://web.archive.org/web/20190130063600/https://apbdb.com/items/Vehicle_Car_A_UtilityClassicMuscle_Pre_FN3_BR",
+      "timestamp": "20190130063600",
+      "max_speed": 23.0,
+      "health": 1350.0
+    },
+    "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN3_Pra": {
+      "id": "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN3_Pra",
+      "snapshot": "http://web.archive.org/web/20190130063626/https://apbdb.com/items/Vehicle_Car_A_UtilityClassicMuscle_Pre_FN3_Pra",
+      "timestamp": "20190130063626",
+      "max_speed": 23.0,
+      "health": 1350.0
+    },
+    "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN3_GK": {
+      "id": "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN3_GK",
+      "snapshot": "http://web.archive.org/web/20190130063617/https://apbdb.com/items/Vehicle_Car_A_UtilityClassicMuscle_Pre_FN3_GK",
+      "timestamp": "20190130063617",
+      "max_speed": 23.0,
+      "health": 1350.0
+    },
+    "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN3_PT": {
+      "id": "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN3_PT",
+      "snapshot": "http://web.archive.org/web/20190130063620/https://apbdb.com/items/Vehicle_Car_A_UtilityClassicMuscle_Pre_FN3_PT",
+      "timestamp": "20190130063620",
+      "max_speed": 23.0,
+      "health": 1350.0
+    },
+    "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN4_Crim": {
+      "id": "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN4_Crim",
+      "snapshot": "http://web.archive.org/web/20190130063635/https://apbdb.com/items/Vehicle_Car_A_UtilityClassicMuscle_Pre_FN4_Crim",
+      "timestamp": "20190130063635",
+      "max_speed": 23.0,
+      "health": 1350.0
+    },
+    "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN4_Enf": {
+      "id": "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN4_Enf",
+      "snapshot": "http://web.archive.org/web/20220627113558/https://apbdb.com/items/Vehicle_Car_A_UtilityClassicMuscle_Pre_FN4_Enf",
+      "timestamp": "20220627113558",
+      "max_speed": 23.0,
+      "health": 1300.0
+    },
+    "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN4_BR": {
+      "id": "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN4_BR",
+      "snapshot": "http://web.archive.org/web/20190130063631/https://apbdb.com/items/Vehicle_Car_A_UtilityClassicMuscle_Pre_FN4_BR",
+      "timestamp": "20190130063631",
+      "max_speed": 23.0,
+      "health": 1350.0
+    },
+    "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN4_Pra": {
+      "id": "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN4_Pra",
+      "snapshot": "http://web.archive.org/web/20190130063651/https://apbdb.com/items/Vehicle_Car_A_UtilityClassicMuscle_Pre_FN4_Pra",
+      "timestamp": "20190130063651",
+      "max_speed": 23.0,
+      "health": 1350.0
+    },
+    "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN4_GK": {
+      "id": "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN4_GK",
+      "snapshot": "http://web.archive.org/web/20190128163604/https://apbdb.com/items/Vehicle_Car_A_UtilityClassicMuscle_Pre_FN4_GK",
+      "timestamp": "20190128163604",
+      "max_speed": 23.0,
+      "health": 1350.0
+    },
+    "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN4_PT": {
+      "id": "Vehicle_Car_A_UtilityClassicMuscle_Pre_FN4_PT",
+      "snapshot": "http://web.archive.org/web/20190130063646/https://apbdb.com/items/Vehicle_Car_A_UtilityClassicMuscle_Pre_FN4_PT",
+      "timestamp": "20190130063646",
+      "max_speed": 23.0,
+      "health": 1350.0
+    },
+    "Vehicle_Car_A_UtilitySaloon_Pre_FN1_BR": {
+      "id": "Vehicle_Car_A_UtilitySaloon_Pre_FN1_BR",
+      "snapshot": "http://web.archive.org/web/20180427105855/https://apbdb.com/items/Vehicle_Car_A_UtilitySaloon_Pre_FN1_BR",
+      "timestamp": "20180427105855",
+      "max_speed": 21.0,
+      "health": 1075.0
+    },
+    "Vehicle_Car_A_UtilitySaloon_Pre_FN2_PT": {
+      "id": "Vehicle_Car_A_UtilitySaloon_Pre_FN2_PT",
+      "snapshot": "http://web.archive.org/web/20170818221439/https://apbdb.com/items/Vehicle_Car_A_UtilitySaloon_Pre_FN2_PT",
+      "timestamp": "20170818221439",
+      "max_speed": 21.0,
+      "health": 1075.0
+    },
+    "Vehicle_Car_A_UtilitySaloon_Pre_FN2_BR": {
+      "id": "Vehicle_Car_A_UtilitySaloon_Pre_FN2_BR",
+      "snapshot": "http://web.archive.org/web/20170818220934/https://apbdb.com/items/Vehicle_Car_A_UtilitySaloon_Pre_FN2_BR",
+      "timestamp": "20170818220934",
+      "max_speed": 21.0,
+      "health": 1075.0
+    },
+    "Vehicle_Car_A_UtilitySaloon_Pre_FN3_PT": {
+      "id": "Vehicle_Car_A_UtilitySaloon_Pre_FN3_PT",
+      "snapshot": "http://web.archive.org/web/20170818223304/https://apbdb.com/items/Vehicle_Car_A_UtilitySaloon_Pre_FN3_PT",
+      "timestamp": "20170818223304",
+      "max_speed": 21.0,
+      "health": 1075.0
+    },
+    "Vehicle_Car_A_UtilitySaloon_Pre_FN3_BR": {
+      "id": "Vehicle_Car_A_UtilitySaloon_Pre_FN3_BR",
+      "snapshot": "http://web.archive.org/web/20170818220643/https://apbdb.com/items/Vehicle_Car_A_UtilitySaloon_Pre_FN3_BR",
+      "timestamp": "20170818220643",
+      "max_speed": 21.0,
+      "health": 1075.0
+    },
+    "Vehicle_Car_A_UtilitySaloon_Pre_FN4_PT": {
+      "id": "Vehicle_Car_A_UtilitySaloon_Pre_FN4_PT",
+      "snapshot": "http://web.archive.org/web/20170818223309/https://apbdb.com/items/Vehicle_Car_A_UtilitySaloon_Pre_FN4_PT",
+      "timestamp": "20170818223309",
+      "max_speed": 21.0,
+      "health": 1075.0
+    },
+    "Vehicle_Car_A_UtilitySaloon_Pre_FN4_BR": {
+      "id": "Vehicle_Car_A_UtilitySaloon_Pre_FN4_BR",
+      "snapshot": "http://web.archive.org/web/20170818223435/https://apbdb.com/items/Vehicle_Car_A_UtilitySaloon_Pre_FN4_BR",
+      "timestamp": "20170818223435",
+      "max_speed": 21.0,
+      "health": 1075.0
+    },
+    "Vehicle_Car_C_Performance_slot_4_Enf": {
+      "id": "Vehicle_Car_C_Performance_slot_4_Enf",
+      "snapshot": "http://web.archive.org/web/20220626170320/https://apbdb.com/items/Vehicle_Car_C_Performance_slot_4_Enf",
+      "timestamp": "20220626170320",
+      "max_speed": 23.0,
+      "health": 1150.0
+    },
+    "Vehicle_Armas_C_Performance_Slot_4": {
+      "id": "Vehicle_Armas_C_Performance_Slot_4",
+      "snapshot": "http://web.archive.org/web/20220627123600/https://apbdb.com/items/Vehicle_Armas_C_Performance_Slot_4",
+      "timestamp": "20220627123600",
+      "max_speed": 23.0,
+      "health": 1150.0
+    },
+    "Vehicle_Car_C_Performance_Slot4_Armas": {
+      "id": "Vehicle_Car_C_Performance_Slot4_Armas",
+      "snapshot": "http://web.archive.org/web/20220630081337/https://apbdb.com/items/Vehicle_Car_C_Performance_Slot4_Armas",
+      "timestamp": "20220630081337",
+      "max_speed": 23.0,
+      "health": 1150.0
+    },
+    "Vehicle_Car_C_Performance_Slot_4_Crim_Spectre": {
+      "id": "Vehicle_Car_C_Performance_Slot_4_Crim_Spectre",
+      "snapshot": "http://web.archive.org/web/20220626171947/https://apbdb.com/items/Vehicle_Car_C_Performance_Slot_4_Crim_Spectre",
+      "timestamp": "20220626171947",
+      "max_speed": 23.0,
+      "health": 1150.0
+    },
+    "Vehicle_Car_C_Performance_Slot_4_Enf_Spectre": {
+      "id": "Vehicle_Car_C_Performance_Slot_4_Enf_Spectre",
+      "snapshot": "http://web.archive.org/web/20220630073029/https://apbdb.com/items/Vehicle_Car_C_Performance_Slot_4_Enf_Spectre",
+      "timestamp": "20220630073029",
+      "max_speed": 23.0,
+      "health": 1150.0
+    },
+    "Vehicle_Car_C_Compact_slot_4_Crim_Armas": {
+      "id": "Vehicle_Car_C_Compact_slot_4_Crim_Armas",
+      "snapshot": "http://web.archive.org/web/20190111164951/https://apbdb.com/items/Vehicle_Car_C_Compact_slot_4_Crim_Armas",
+      "timestamp": "20190111164951",
+      "max_speed": 19.5,
+      "health": 900.0
+    },
+    "Vehicle_Armas_Roadster_Slot_4": {
+      "id": "Vehicle_Armas_Roadster_Slot_4",
+      "snapshot": "http://web.archive.org/web/20190111164530/https://apbdb.com/items/Vehicle_Armas_Roadster_Slot_4",
+      "timestamp": "20190111164530",
+      "max_speed": 22.5,
+      "health": 980.0
+    },
+    "Vehicle_Car_C_Compact_PR4_Noob_Joker": {
+      "id": "Vehicle_Car_C_Compact_PR4_Noob_Joker",
+      "snapshot": "http://web.archive.org/web/20190218104335/https://apbdb.com/items/Vehicle_Car_C_Compact_PR4_Noob_Joker",
+      "timestamp": "20190218104335",
+      "max_speed": 19.5,
+      "health": 900.0
+    },
+    "Vehicle_Armas_C_Compact_Slot_4": {
+      "id": "Vehicle_Armas_C_Compact_Slot_4",
+      "snapshot": "http://web.archive.org/web/20190111170244/https://apbdb.com/items/Vehicle_Armas_C_Compact_Slot_4",
+      "timestamp": "20190111170244",
+      "max_speed": 19.5,
+      "health": 900.0
+    },
+    "Vehicle_Car_C_Compact_slot_4_Enf": {
+      "id": "Vehicle_Car_C_Compact_slot_4_Enf",
+      "snapshot": "http://web.archive.org/web/20190111170029/https://apbdb.com/items/Vehicle_Car_C_Compact_slot_4_Enf",
+      "timestamp": "20190111170029",
+      "max_speed": 19.5,
+      "health": 900.0
+    },
+    "Vehicle_Car_C_Compact_slot_4_Enf_Armas": {
+      "id": "Vehicle_Car_C_Compact_slot_4_Enf_Armas",
+      "snapshot": "http://web.archive.org/web/20190111164801/https://apbdb.com/items/Vehicle_Car_C_Compact_slot_4_Enf_Armas",
+      "timestamp": "20190111164801",
+      "max_speed": 19.5,
+      "health": 900.0
+    },
+    "Vehicle_Car_A_UtilityRoadster_Armas_NewCross": {
+      "id": "Vehicle_Car_A_UtilityRoadster_Armas_NewCross",
+      "snapshot": "http://web.archive.org/web/20190111170259/https://apbdb.com/items/Vehicle_Car_A_UtilityRoadster_Armas_NewCross",
+      "timestamp": "20190111170259",
+      "max_speed": 22.5,
+      "health": 980.0
+    },
+    "Vehicle_Armas_LowRider_Slot_4": {
+      "id": "Vehicle_Armas_LowRider_Slot_4",
+      "snapshot": "http://web.archive.org/web/20180922184139/https://apbdb.com/items/Vehicle_Armas_LowRider_Slot_4",
+      "timestamp": "20180922184139",
+      "max_speed": 21.4,
+      "health": 1450.0
+    },
+    "Vehicle_Van_C_Carrying_Armas_Shift": {
+      "id": "Vehicle_Van_C_Carrying_Armas_Shift",
+      "snapshot": "http://web.archive.org/web/20190307094706/https://apbdb.com/items/Vehicle_Van_C_Carrying_Armas_Shift",
+      "timestamp": "20190307094706",
+      "max_speed": 21.5,
+      "health": 1600.0
+    },
+    "Vehicle_Car_E_Performance_Armas_Ophelia": {
+      "id": "Vehicle_Car_E_Performance_Armas_Ophelia",
+      "snapshot": "http://web.archive.org/web/20190305033456/https://apbdb.com/items/Vehicle_Car_E_Performance_Armas_Ophelia",
+      "timestamp": "20190305033456",
+      "max_speed": 23.0,
+      "health": 1100.0
+    },
+    "Vehicle_Car_C_Compact_Armas_NewCross": {
+      "id": "Vehicle_Car_C_Compact_Armas_NewCross",
+      "snapshot": "http://web.archive.org/web/20190111163859/https://apbdb.com/items/Vehicle_Car_C_Compact_Armas_NewCross",
+      "timestamp": "20190111163859",
+      "max_speed": 19.5,
+      "health": 900.0
+    },
+    "Vehicle_Car_A_UtilityExecSaloon_Armas_Stuntman_Enf": {
+      "id": "Vehicle_Car_A_UtilityExecSaloon_Armas_Stuntman_Enf",
+      "snapshot": "http://web.archive.org/web/20190126040909/https://apbdb.com/items/Vehicle_Car_A_UtilityExecSaloon_Armas_Stuntman_Enf",
+      "timestamp": "20190126040909",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Armas_SportsSUV_Slot_4": {
+      "id": "Vehicle_Armas_SportsSUV_Slot_4",
+      "snapshot": "http://web.archive.org/web/20180808000733/https://apbdb.com/items/Vehicle_Armas_SportsSUV_Slot_4",
+      "timestamp": "20180808000733",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Truck_E_Carrying_slot_1_Crim": {
+      "id": "Vehicle_Truck_E_Carrying_slot_1_Crim",
+      "snapshot": "http://web.archive.org/web/20190126041850/https://apbdb.com/items/Vehicle_Truck_E_Carrying_slot_1_Crim",
+      "timestamp": "20190126041850",
+      "max_speed": 20.9,
+      "health": 1600.0
+    },
+    "Vehicle_Truck_E_Carrying_slot_2_Crim": {
+      "id": "Vehicle_Truck_E_Carrying_slot_2_Crim",
+      "snapshot": "http://web.archive.org/web/20190126041304/https://apbdb.com/items/Vehicle_Truck_E_Carrying_slot_2_Crim",
+      "timestamp": "20190126041304",
+      "max_speed": 20.9,
+      "health": 1600.0
+    },
+    "Vehicle_Truck_E_Carrying_slot_3_Crim": {
+      "id": "Vehicle_Truck_E_Carrying_slot_3_Crim",
+      "snapshot": "http://web.archive.org/web/20190126041855/https://apbdb.com/items/Vehicle_Truck_E_Carrying_slot_3_Crim",
+      "timestamp": "20190126041855",
+      "max_speed": 20.9,
+      "health": 1600.0
+    },
+    "Vehicle_Truck_E_Carrying_slot_4_Crim": {
+      "id": "Vehicle_Truck_E_Carrying_slot_4_Crim",
+      "snapshot": "http://web.archive.org/web/20190303012932/https://apbdb.com/items/Vehicle_Truck_E_Carrying_slot_4_Crim",
+      "timestamp": "20190303012932",
+      "max_speed": 20.9,
+      "health": 1600.0
+    },
+    "Vehicle_Armas_E_Carrying_Slot_4": {
+      "id": "Vehicle_Armas_E_Carrying_Slot_4",
+      "snapshot": "http://web.archive.org/web/20190305023145/https://apbdb.com/items/Vehicle_Armas_E_Carrying_Slot_4",
+      "timestamp": "20190305023145",
+      "max_speed": 20.9,
+      "health": 1600.0
+    },
+    "Vehicle_Van_A_VanStandard_PR4_Noob_Joker": {
+      "id": "Vehicle_Van_A_VanStandard_PR4_Noob_Joker",
+      "snapshot": "http://web.archive.org/web/20190212073029/https://apbdb.com/items/Vehicle_Van_A_VanStandard_PR4_Noob_Joker",
+      "timestamp": "20190212073029",
+      "max_speed": 19.5,
+      "health": 1250.0
+    },
+    "Vehicle_Truck_E_Compact_slot_4_Crim": {
+      "id": "Vehicle_Truck_E_Compact_slot_4_Crim",
+      "snapshot": "http://web.archive.org/web/20190207184517/https://apbdb.com/items/Vehicle_Truck_E_Compact_slot_4_Crim",
+      "timestamp": "20190207184517",
+      "max_speed": 19.5,
+      "health": 950.0
+    },
+    "Vehicle_Armas_E_Compact_Slot_4": {
+      "id": "Vehicle_Armas_E_Compact_Slot_4",
+      "snapshot": "http://web.archive.org/web/20190207185134/https://apbdb.com/items/Vehicle_Armas_E_Compact_Slot_4",
+      "timestamp": "20190207185134",
+      "max_speed": 19.5,
+      "health": 950.0
+    },
+    "Vehicle_Truck_E_Compact_slot_4_Enf": {
+      "id": "Vehicle_Truck_E_Compact_slot_4_Enf",
+      "snapshot": "http://web.archive.org/web/20190207184522/https://apbdb.com/items/Vehicle_Truck_E_Compact_slot_4_Enf",
+      "timestamp": "20190207184522",
+      "max_speed": 19.5,
+      "health": 950.0
+    },
+    "Vehicle_Car_E_Performance_Crim": {
+      "id": "Vehicle_Car_E_Performance_Crim",
+      "snapshot": "http://web.archive.org/web/20190210142646/https://apbdb.com/items/Vehicle_Car_E_Performance_Crim",
+      "timestamp": "20190210142646",
+      "max_speed": 23.0,
+      "health": 1100.0
+    },
+    "Vehicle_Car_E_Performance_slot_1_Crim": {
+      "id": "Vehicle_Car_E_Performance_slot_1_Crim",
+      "snapshot": "http://web.archive.org/web/20190218023723/https://apbdb.com/items/Vehicle_Car_E_Performance_slot_1_Crim",
+      "timestamp": "20190218023723",
+      "max_speed": 23.0,
+      "health": 1100.0
+    },
+    "Vehicle_Car_E_Performance_slot_2_Crim": {
+      "id": "Vehicle_Car_E_Performance_slot_2_Crim",
+      "snapshot": "http://web.archive.org/web/20190210143624/https://apbdb.com/items/Vehicle_Car_E_Performance_slot_2_Crim",
+      "timestamp": "20190210143624",
+      "max_speed": 23.0,
+      "health": 1100.0
+    },
+    "Vehicle_Car_E_Performance_slot_3_Crim": {
+      "id": "Vehicle_Car_E_Performance_slot_3_Crim",
+      "snapshot": "http://web.archive.org/web/20190210143824/https://apbdb.com/items/Vehicle_Car_E_Performance_slot_3_Crim",
+      "timestamp": "20190210143824",
+      "max_speed": 23.0,
+      "health": 1100.0
+    },
+    "Vehicle_Car_E_Performance_Phantom_Crim": {
+      "id": "Vehicle_Car_E_Performance_Phantom_Crim",
+      "snapshot": "http://web.archive.org/web/20190210143428/https://apbdb.com/items/Vehicle_Car_E_Performance_Phantom_Crim",
+      "timestamp": "20190210143428",
+      "max_speed": 23.0,
+      "health": 1100.0
+    },
+    "Vehicle_Car_E_Performance_Phantom_Enf": {
+      "id": "Vehicle_Car_E_Performance_Phantom_Enf",
+      "snapshot": "http://web.archive.org/web/20190210143253/https://apbdb.com/items/Vehicle_Car_E_Performance_Phantom_Enf",
+      "timestamp": "20190210143253",
+      "max_speed": 23.0,
+      "health": 1100.0
+    },
+    "Vehicle_Car_E_Performance_slot_4_Enf": {
+      "id": "Vehicle_Car_E_Performance_slot_4_Enf",
+      "snapshot": "http://web.archive.org/web/20190307082743/https://apbdb.com/items/Vehicle_Car_E_Performance_slot_4_Enf",
+      "timestamp": "20190307082743",
+      "max_speed": 23.0,
+      "health": 1100.0
+    },
+    "Vehicle_Armas_E_Performance_Slot_4": {
+      "id": "Vehicle_Armas_E_Performance_Slot_4",
+      "snapshot": "http://web.archive.org/web/20190210143614/https://apbdb.com/items/Vehicle_Armas_E_Performance_Slot_4",
+      "timestamp": "20190210143614",
+      "max_speed": 23.0,
+      "health": 1100.0
+    },
+    "Vehicle_Car_E_Performance_Pre_PR1_Enf": {
+      "id": "Vehicle_Car_E_Performance_Pre_PR1_Enf",
+      "snapshot": "http://web.archive.org/web/20190210142839/https://apbdb.com/items/Vehicle_Car_E_Performance_Pre_PR1_Enf",
+      "timestamp": "20190210142839",
+      "max_speed": 23.0,
+      "health": 1100.0
+    },
+    "Vehicle_Armas_UtilityClassicMuscle_Slot_4": {
+      "id": "Vehicle_Armas_UtilityClassicMuscle_Slot_4",
+      "snapshot": "http://web.archive.org/web/20190305032158/https://apbdb.com/items/Vehicle_Armas_UtilityClassicMuscle_Slot_4",
+      "timestamp": "20190305032158",
+      "max_speed": 23.0,
+      "health": 1350.0
+    },
+    "Vehicle_Car_A_UtilityClassicMuscle_slot_4_Kit4": {
+      "id": "Vehicle_Car_A_UtilityClassicMuscle_slot_4_Kit4",
+      "snapshot": "http://web.archive.org/web/20190305233507/https://apbdb.com/items/Vehicle_Car_A_UtilityClassicMuscle_slot_4_Kit4",
+      "timestamp": "20190305233507",
+      "max_speed": 22.0,
+      "health": 1350.0
+    },
+    "Vehicle_Truck_E_Carrying_Joker_Airmech": {
+      "id": "Vehicle_Truck_E_Carrying_Joker_Airmech",
+      "snapshot": "http://web.archive.org/web/20190307100608/https://apbdb.com/items/Vehicle_Truck_E_Carrying_Joker_Airmech",
+      "timestamp": "20190307100608",
+      "max_speed": 20.9,
+      "health": 1600.0
+    },
+    "Vehicle_Truck_E_Carrying_Armas_InsideOut": {
+      "id": "Vehicle_Truck_E_Carrying_Armas_InsideOut",
+      "snapshot": "http://web.archive.org/web/20190126041820/https://apbdb.com/items/Vehicle_Truck_E_Carrying_Armas_InsideOut",
+      "timestamp": "20190126041820",
+      "max_speed": 20.9,
+      "health": 1600.0
+    },
+    "Vehicle_Truck_E_Carrying_Armas_Ophelia": {
+      "id": "Vehicle_Truck_E_Carrying_Armas_Ophelia",
+      "snapshot": "http://web.archive.org/web/20190307100603/https://apbdb.com/items/Vehicle_Truck_E_Carrying_Armas_Ophelia",
+      "timestamp": "20190307100603",
+      "max_speed": 20.9,
+      "health": 1600.0
+    },
+    "Vehicle_Car_C_Performance_Pre_PR1_Crim": {
+      "id": "Vehicle_Car_C_Performance_Pre_PR1_Crim",
+      "snapshot": "http://web.archive.org/web/20190227042609/https://apbdb.com/items/Vehicle_Car_C_Performance_Pre_PR1_Crim",
+      "timestamp": "20190227042609",
+      "max_speed": 23.0,
+      "health": 900.0
+    },
+    "Vehicle_Car_C_Performance_Armas_BirthSpecial": {
+      "id": "Vehicle_Car_C_Performance_Armas_BirthSpecial",
+      "snapshot": "http://web.archive.org/web/20190305231446/https://apbdb.com/items/Vehicle_Car_C_Performance_Armas_BirthSpecial",
+      "timestamp": "20190305231446",
+      "max_speed": 23.0,
+      "health": 900.0
+    },
+    "Vehicle_Car_C_Performance_Armas_Gnarly": {
+      "id": "Vehicle_Car_C_Performance_Armas_Gnarly",
+      "snapshot": "http://web.archive.org/web/20190125064958/https://apbdb.com/items/Vehicle_Car_C_Performance_Armas_Gnarly",
+      "timestamp": "20190125064958",
+      "max_speed": 23.0,
+      "health": 900.0
+    },
+    "Vehicle_Car_C_Performance_Armas_Radical": {
+      "id": "Vehicle_Car_C_Performance_Armas_Radical",
+      "snapshot": "http://web.archive.org/web/20190125065452/https://apbdb.com/items/Vehicle_Car_C_Performance_Armas_Radical",
+      "timestamp": "20190125065452",
+      "max_speed": 23.0,
+      "health": 900.0
+    },
+    "Vehicle_Van_C_Carrying_Enf": {
+      "id": "Vehicle_Van_C_Carrying_Enf",
+      "snapshot": "http://web.archive.org/web/20190307094711/https://apbdb.com/items/Vehicle_Van_C_Carrying_Enf",
+      "timestamp": "20190307094711",
+      "max_speed": 21.5,
+      "health": 1600.0
+    },
+    "Vehicle_Van_C_Carrying_slot_1_Enf": {
+      "id": "Vehicle_Van_C_Carrying_slot_1_Enf",
+      "snapshot": "http://web.archive.org/web/20150726025722/https://apbdb.com/items/Vehicle_Van_C_Carrying_slot_1_Enf",
+      "timestamp": "20150726025722",
+      "max_speed": 21.5,
+      "health": 1600.0
+    },
+    "Vehicle_Armas_C_Carrying_Slot_4": {
+      "id": "Vehicle_Armas_C_Carrying_Slot_4",
+      "snapshot": "http://web.archive.org/web/20190305235657/https://apbdb.com/items/Vehicle_Armas_C_Carrying_Slot_4",
+      "timestamp": "20190305235657",
+      "max_speed": 21.5,
+      "health": 1600.0
+    },
+    "Vehicle_Armas_ExecSaloon_Slot_4": {
+      "id": "Vehicle_Armas_ExecSaloon_Slot_4",
+      "snapshot": "http://web.archive.org/web/20190126041454/https://apbdb.com/items/Vehicle_Armas_ExecSaloon_Slot_4",
+      "timestamp": "20190126041454",
+      "max_speed": 21.75,
+      "health": 1150.0
+    },
+    "Vehicle_Truck_E_Compact_Armas_Bobcat": {
+      "id": "Vehicle_Truck_E_Compact_Armas_Bobcat",
+      "snapshot": "http://web.archive.org/web/20190207180553/https://apbdb.com/items/Vehicle_Truck_E_Compact_Armas_Bobcat",
+      "timestamp": "20190207180553",
+      "max_speed": 19.5,
+      "health": 950.0
+    },
+    "Vehicle_Truck_E_Compact_Armas_Treefrog": {
+      "id": "Vehicle_Truck_E_Compact_Armas_Treefrog",
+      "snapshot": "http://web.archive.org/web/20190207180428/https://apbdb.com/items/Vehicle_Truck_E_Compact_Armas_Treefrog",
+      "timestamp": "20190207180428",
+      "max_speed": 19.5,
+      "health": 950.0
+    },
+    "Vehicle_Car_A_2DrVan_PR4_Noob_Joker": {
+      "id": "Vehicle_Car_A_2DrVan_PR4_Noob_Joker",
+      "snapshot": "http://web.archive.org/web/20190305235642/https://apbdb.com/items/Vehicle_Car_A_2DrVan_PR4_Noob_Joker",
+      "timestamp": "20190305235642",
+      "max_speed": 21.0,
+      "health": 900.0
+    },
+    "Vehicle_Ambient_A_ClassicMuscle_Armas_BirthRacing": {
+      "id": "Vehicle_Ambient_A_ClassicMuscle_Armas_BirthRacing",
+      "snapshot": "http://web.archive.org/web/20190225035159/https://apbdb.com/items/Vehicle_Ambient_A_ClassicMuscle_Armas_BirthRacing",
+      "timestamp": "20190225035159",
+      "max_speed": 22.0,
+      "health": 1350.0
+    },
+    "Vehicle_Ambient_A_ClassicMuscle_Armas_BirthRacing_Enf": {
+      "id": "Vehicle_Ambient_A_ClassicMuscle_Armas_BirthRacing_Enf",
+      "snapshot": "http://web.archive.org/web/20190130063450/https://apbdb.com/items/Vehicle_Ambient_A_ClassicMuscle_Armas_BirthRacing_Enf",
+      "timestamp": "20190130063450",
+      "max_speed": 22.0,
+      "health": 1350.0
+    },
+    "Vehicle_Car_A_UtilityClassicMuscle_Pre_PR1_Enf": {
+      "id": "Vehicle_Car_A_UtilityClassicMuscle_Pre_PR1_Enf",
+      "snapshot": "http://web.archive.org/web/20190130063701/https://apbdb.com/items/Vehicle_Car_A_UtilityClassicMuscle_Pre_PR1_Enf",
+      "timestamp": "20190130063701",
+      "max_speed": 23.0,
+      "health": 1350.0
+    },
+    "Vehicle_Car_A_UtilityClassicMuscle_Pre_PR1_Crim": {
+      "id": "Vehicle_Car_A_UtilityClassicMuscle_Pre_PR1_Crim",
+      "snapshot": "http://web.archive.org/web/20190130063655/https://apbdb.com/items/Vehicle_Car_A_UtilityClassicMuscle_Pre_PR1_Crim",
+      "timestamp": "20190130063655",
+      "max_speed": 23.0,
+      "health": 1350.0
+    },
+    "Vehicle_Car_A_UtilityClassicMuscle_Armas_Ophelia_Crim": {
+      "id": "Vehicle_Car_A_UtilityClassicMuscle_Armas_Ophelia_Crim",
+      "snapshot": "http://web.archive.org/web/20190225224814/https://apbdb.com/items/Vehicle_Car_A_UtilityClassicMuscle_Armas_Ophelia_Crim",
+      "timestamp": "20190225224814",
+      "max_speed": 22.0,
+      "health": 1350.0
+    },
+    "Vehicle_Car_A_UtilityClassicMuscle_Armas_Ophelia_Enf": {
+      "id": "Vehicle_Car_A_UtilityClassicMuscle_Armas_Ophelia_Enf",
+      "snapshot": "http://web.archive.org/web/20190110015354/https://apbdb.com/items/Vehicle_Car_A_UtilityClassicMuscle_Armas_Ophelia_Enf",
+      "timestamp": "20190110015354",
+      "max_speed": 22.0,
+      "health": 1350.0
+    },
+    "Vehicle_Car_A_UtilityClassicMuscle_FireBomb_Crim_7Days": {
+      "id": "Vehicle_Car_A_UtilityClassicMuscle_FireBomb_Crim_7Days",
+      "snapshot": "http://web.archive.org/web/20190110172953/https://apbdb.com/items/Vehicle_Car_A_UtilityClassicMuscle_FireBomb_Crim_7Days",
+      "timestamp": "20190110172953",
+      "max_speed": 22.0,
+      "health": 1350.0
+    },
+    "Vehicle_Car_A_UtilityClassicMuscle_FireBomb_Enf": {
+      "id": "Vehicle_Car_A_UtilityClassicMuscle_FireBomb_Enf",
+      "snapshot": "http://web.archive.org/web/20190110173003/https://apbdb.com/items/Vehicle_Car_A_UtilityClassicMuscle_FireBomb_Enf",
+      "timestamp": "20190110173003",
+      "max_speed": 22.0,
+      "health": 1350.0
+    },
+    "Vehicle_Car_A_UtilityClassicMuscle_FireBomb_Enf_7Days": {
+      "id": "Vehicle_Car_A_UtilityClassicMuscle_FireBomb_Enf_7Days",
+      "snapshot": "http://web.archive.org/web/20190110173003/https://apbdb.com/items/Vehicle_Car_A_UtilityClassicMuscle_FireBomb_Enf_7Days",
+      "timestamp": "20190110173003",
+      "max_speed": 22.0,
+      "health": 1350.0
+    }
+  }
+}

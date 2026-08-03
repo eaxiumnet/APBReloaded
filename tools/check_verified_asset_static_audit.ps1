@@ -58,6 +58,9 @@ foreach ($File in $Files) {
 }
 $AllowedMediaPaths = @(
     'Source/APBReloaded/Systems/Frontend/APBFrontendWidget.cpp'
+    # Probe media opens are registry-gated: IsMediaAllowed runs on the same path and
+    # the probe only executes under -APBStrictAssetAllowlist (frontend_routing probe).
+    'Source/APBReloaded/Systems/APBSessionProbeSubsystem.cpp'
 )
 $UnroutedMediaRows = @($MediaRows | Where-Object { $AllowedMediaPaths -notcontains $_.path })
 $UnroutedRows = @($Rows | Where-Object { $AllowedPaths -notcontains $_.path })
