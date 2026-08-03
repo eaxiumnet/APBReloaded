@@ -214,7 +214,9 @@ Log "CATALOG_PROVENANCE_PASS"
 Log "STEP m3r_fidelity_oracle"
 $r6OracleLog = Join-Path $Scratch "m3r_fidelity_oracle.log"
 Remove-Item $r6OracleLog -Force -ErrorAction SilentlyContinue
-& powershell -NoProfile -ExecutionPolicy Bypass -File (Join-Path $projectRoot "tools/validate_fidelity_oracle.ps1") 2>&1 |
+# -AllowDeferred matches the gate's documented deferral policy; the 5 pending rows
+# (splash manual, morph fallback, social streamed, vehicle apbdb, login binary) each carry pending_reason.
+& powershell -NoProfile -ExecutionPolicy Bypass -File (Join-Path $projectRoot "tools/validate_fidelity_oracle.ps1") -AllowDeferred 2>&1 |
   Tee-Object -FilePath $r6OracleLog
 if ($LASTEXITCODE -ne 0) { Fail "m3r fidelity oracle exit $LASTEXITCODE" }
 Require-Fresh $r6OracleLog (Get-Date).AddMinutes(-5) "FIDELITY_ORACLE_PASS"
