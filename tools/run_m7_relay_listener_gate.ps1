@@ -8,7 +8,6 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
-$projectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
 . (Join-Path $PSScriptRoot "scripts\APBGateCleanup.ps1")
 $logPath = Join-Path $Scratch "world_relay.log"
 $world = $null
@@ -20,6 +19,25 @@ function Fail([string]$Reason) {
 
 function Stop-WorldProcess([switch]$BestEffort) {
   Stop-APBGateProcesses -Tracked @($world) -Project $Project -EngineBin (Split-Path $Editor) -BestEffort:$BestEffort
+}
+
+function Get-RelaySecretHex([string]$MaterialHex) {
+  $root = [byte[]]::new([Math]::Floor($MaterialHex.Length / 2))
+  for ($i = 0; $i -lt $root.Length; $i++) {
+    $root[$i] = [Convert]::ToByte($MaterialHex.Substring($i * 2, 2), 16)
+  }
+  $purpose = [Text.Encoding]::ASCII.GetBytes("apb/relay/v1")
+  $hmac = [System.Security.Cryptography.HMACSHA256]::new($root)
+  try { $digest = $hmac.ComputeHash($purpose) } finally { $hmac.Dispose() }
+  return -join ($digest | ForEach-Object { $_.ToString("x2") })
+}
+
+function Get-RelayFrameAuth([string]$CanonicalJson, [string]$RelaySecretHex) {
+  $key = [Text.Encoding]::ASCII.GetBytes($RelaySecretHex)
+  $data = [Text.Encoding]::ASCII.GetBytes($CanonicalJson)
+  $hmac = [System.Security.Cryptography.HMACSHA256]::new($key)
+  try { $digest = $hmac.ComputeHash($data) } finally { $hmac.Dispose() }
+  return -join ($digest | ForEach-Object { $_.ToString("x2") })
 }
 
 function Send-RelayLine([string]$Line, [bool]$ReadResponse) {
@@ -54,10 +72,10 @@ try {
   if (-not (Test-Path -LiteralPath $Project)) { Fail "project_missing" }
   if (-not (Test-Path -LiteralPath $Editor)) { Fail "editor_binary_missing" }
 
-  $ticketSecretLine = Get-Content (Join-Path $projectRoot "Config\DefaultGame.ini") |
-    Where-Object { $_ -match '^TicketSecret=' } | Select-Object -First 1
-  if ([string]::IsNullOrWhiteSpace($ticketSecretLine)) { Fail "ticket_secret_missing" }
-  $secret = $ticketSecretLine.Substring("TicketSecret=".Length)
+  # M16 zero-trust: world/district processes preflight APB_DEPLOYMENT_SECRET and halt when it
+  # is missing. The spine exports it for child gates; standalone leg runs must set it too.
+  [Environment]::SetEnvironmentVariable('APB_DEPLOYMENT_SECRET', ('a1' * 32), 'Process')
+  $relaySecretHex = Get-RelaySecretHex -MaterialHex ('a1' * 32)
 
   Remove-Item -LiteralPath $Scratch -Recurse -Force -ErrorAction SilentlyContinue
   New-Item -ItemType Directory -Force -Path $Scratch | Out-Null
@@ -85,9 +103,12 @@ try {
   if ($startup.Elapsed.TotalSeconds -ge $TimeoutSec) { Fail "listen_timeout" }
 
   $nowMs = [DateTimeOffset]::UtcNow.ToUnixTimeMilliseconds()
-  $register = @{ version = 1; request_id = "gate-register-1"; sent_ms = $nowMs; auth = $secret; verb = "register"; district = "Financial"; numeric_id = 1; port = 17811 } |
-    ConvertTo-Json -Compress
-  $ack = Send-RelayLine "$register`n" $true | ConvertFrom-Json
+  $sentMsText = $nowMs.ToString([System.Globalization.CultureInfo]::InvariantCulture)
+  $canonical = '{"version":1,"request_id":"gate-register-1","sent_ms":' + $sentMsText +
+    ',"auth":"","verb":"register","district":"Financial","numeric_id":1,"port":17811}' + "`n"
+  $frameAuth = Get-RelayFrameAuth -CanonicalJson $canonical -RelaySecretHex $relaySecretHex
+  $register = $canonical.Replace('"auth":""', '"auth":"' + $frameAuth + '"')
+  $ack = Send-RelayLine $register $true | ConvertFrom-Json
   if ($ack.verb -ne "register_ack" -or $ack.request_id -ne "gate-register-1" -or -not $ack.ok -or $ack.numeric_id -ne 1) {
     Fail "register_ack_invalid"
   }

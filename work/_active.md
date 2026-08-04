@@ -433,6 +433,13 @@ GameModeMapPrefixes edit to avoid clashing with the existing frontend GameMode m
   `work\m7_travel_gate_findings.md`). REMAINING (server-side, Sisyphus): N2 PreLogin
   ticket redeem, N3 travel dispatch, N4 `FSocket` transport wiring, N6 chat RPC.
 
+- **Full-compose run + hardened teardown (2026-08-04):** `run_m7_gate.ps1` all five legs
+  compose green → `M7_TRAVEL_GATE_OK`, `M7 leg OK` x5, 0 leftover editors across every leg
+  transition (shared sweep-and-verify in `tools/scripts/APBGateCleanup.ps1`, committed
+  `5a2dab4`). See `work/m7_full_compose_note.md`. `run_m7_relay_listener_gate.ps1` fixed
+  to the M16 `APB_DEPLOYMENT_SECRET` contract (`RELAY_LISTENER_GATE_OK`, register
+  `ok=1 reason=none`) — standalone socket probe only, not part of the compose.
+
 ### M8 — Social district  *(brief #7 — D8)*
 - Spec-expansion first step. Scope: `RWorldSocialDistrict` content gap-closure via
   pipeline + ledger; social-space fixtures (kiosks, terminals, music studio stubs);
