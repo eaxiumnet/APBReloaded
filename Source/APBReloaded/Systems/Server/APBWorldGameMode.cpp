@@ -3,9 +3,12 @@
 #include "APBPlayerState.h"
 #include "APBServerControl.h"
 #include "APBSecretProvider.h"
+#include "Domain/APBCrypto.h"
 #include "APBHandoff.h"
 #include "APBRelayProtocol.h"
+#include "Engine/NetConnection.h"
 #include "APBGameInstanceSubsystem.h"
+#include "APBAesEncryptionDelegate.h"
 #include "APBFriends.h"
 #include "APBClan.h"
 #include "APBGroup.h"
@@ -14,6 +17,8 @@
 #include "Misc/ConfigCacheIni.h"
 #include "APBSocial.h"
 #include "APBTicket.h"
+#include "APBAuthExecutor.h"
+#include "Async/Async.h"
 #include <string>
 
 AAPBWorldGameMode::AAPBWorldGameMode()
@@ -23,9 +28,16 @@ AAPBWorldGameMode::AAPBWorldGameMode()
 	PrimaryActorTick.bCanEverTick = true;
 }
 
+AAPBWorldGameMode::~AAPBWorldGameMode() = default;
+
 void AAPBWorldGameMode::BeginPlay()
 {
 	Super::BeginPlay();
+	FAPBAesEncryptionDelegate::Bind(true);
+	
+	AuthExecutor = MakeUnique<apb::AuthExecutor>();
+	AuthExecutor->Initialize(2, 64);
+	
 	DataDir    = FPaths::ProjectContentDir() / TEXT("Data");
 	PersistDir = FPaths::ProjectSavedDir()   / TEXT("DomainDB");
 	SocialAuthority.InitFromDataDir(TCHAR_TO_UTF8(*DataDir));
@@ -33,15 +45,34 @@ void AAPBWorldGameMode::BeginPlay()
 	{
 		UE_LOG(LogTemp, Log, TEXT("SOCIAL_PERSIST_INIT dir=%s"), *(PersistDir / TEXT("social")));
 	}
+	// M12: the world authority owns auction.json (single writer) and settles
+	// bids/buyouts/expiry through its own mailboxes.
+	if (SocialAuthority.InitAuctionPersistence(TCHAR_TO_UTF8(*PersistDir)))
+	{
+		UE_LOG(LogTemp, Log, TEXT("AUCTION_PERSIST_INIT dir=%s listings=%d"),
+			*PersistDir, static_cast<int32>(SocialAuthority.auction.listings.size()));
+	}
 	{
 		const FString& TicketSecretHex = FAPBSecretProvider::TicketSecret();
-		if (!TicketSecretHex.IsEmpty())
-		{
-			apb::TicketService::Global().SetSecret(TCHAR_TO_UTF8(*TicketSecretHex));
-		}
+		TicketSvc = MakeUnique<apb::TicketService>(TCHAR_TO_UTF8(*TicketSecretHex));
 	}
+	WorldEpoch = FGuid::NewGuid().ToString();
 	ServerControl = NewObject<UAPBServerControl>(this);
 	ServerControl->Init(this);
+
+	// DIAG (p17): catch any engine-level network/travel failure on the world server that
+	// could request engine exit ~3-5s after the sole remote client disconnects.
+	if (GEngine)
+	{
+		GEngine->OnNetworkFailure().AddWeakLambda(this, [](UWorld*, UNetDriver*, ENetworkFailure::Type FailureType, const FString& Msg)
+		{
+			UE_LOG(LogTemp, Warning, TEXT("WS_NET_FAILURE type=%d msg=%s"), (int32)FailureType, *Msg);
+		});
+		GEngine->OnTravelFailure().AddWeakLambda(this, [](UWorld*, ETravelFailure::Type FailureType, const FString& Msg)
+		{
+			UE_LOG(LogTemp, Warning, TEXT("WS_TRAVEL_FAILURE type=%d msg=%s"), (int32)FailureType, *Msg);
+		});
+	}
 }
 
 void AAPBWorldGameMode::EndPlay(const EEndPlayReason::Type EndPlayReason)
@@ -50,7 +81,12 @@ void AAPBWorldGameMode::EndPlay(const EEndPlayReason::Type EndPlayReason)
 	{
 		ServerControl->Shutdown();
 	}
+	if (AuthExecutor)
+	{
+		AuthExecutor->Shutdown();
+	}
 	SocialAuthority.SaveSocialNow();
+	SocialAuthority.SaveAuctionNow();
 	Super::EndPlay(EndPlayReason);
 }
 
@@ -60,36 +96,73 @@ void AAPBWorldGameMode::BeginDestroy()
 	{
 		ServerControl->Shutdown();
 	}
+	if (AuthExecutor)
+	{
+		AuthExecutor->Shutdown();
+	}
 	Super::BeginDestroy();
 }
 
 void AAPBWorldGameMode::PostLogin(APlayerController* NewPlayer)
 {
 	Super::PostLogin(NewPlayer);
-	const FString Key = PCKey(NewPlayer);
-	if (!PlayerServices.Contains(Key))
+
+	if (NewPlayer && NewPlayer->NetConnection && !FParse::Param(FCommandLine::Get(), TEXT("DisableEncryption")))
+	{
+		const FString& Secret = FAPBSecretProvider::TicketSecret();
+		if (!Secret.IsEmpty())
+		{
+			std::vector<uint8_t> Bytes = apb::hex_decode(TCHAR_TO_UTF8(*Secret));
+			if (Bytes.size() == 32)
+			{
+				FEncryptionData Data;
+				Data.Key.SetNum(32);
+				FMemory::Memcpy(Data.Key.GetData(), Bytes.data(), 32);
+				NewPlayer->NetConnection->EnableEncryption(Data);
+			}
+		}
+	}
+
+	uint64 Key = 0;
+	if (AAPBPlayerController* APBPC = Cast<AAPBPlayerController>(NewPlayer))
+	{
+		if (APBPC->PlayerSessionId == 0)
+		{
+			static uint64 NextSessionId = 1;
+			APBPC->PlayerSessionId = NextSessionId++;
+		}
+		Key = APBPC->PlayerSessionId;
+	}
+
+	if (Key != 0 && !PlayerServices.Contains(Key))
 	{
 		auto Entry = MakeUnique<FAPBPlayerService>();
 		Entry->Service = MakeUnique<apb::WorldService>();
 		Entry->Service->InitFromDataDir(TCHAR_TO_UTF8(*DataDir));
 		Entry->Service->InitPersistence(TCHAR_TO_UTF8(*PersistDir));
+		// M12 single-writer: the authority owns auction.json; this connection's copy
+		// is read-only so its SaveAllNow at Logout cannot clobber authority listings.
+		Entry->Service->auction_write_enabled = false;
 		PlayerServices.Add(Key, MoveTemp(Entry));
 	}
 }
 
 void AAPBWorldGameMode::Logout(AController* Exiting)
 {
-	if (APlayerController* PC = Cast<APlayerController>(Exiting))
+	const double LogoutT0 = FPlatformTime::Seconds();
+	if (AAPBPlayerController* PC = Cast<AAPBPlayerController>(Exiting))
 	{
-		const FString Key = PCKey(PC);
+		const uint64 Key = PC->PlayerSessionId;
+		UE_LOG(LogTemp, Warning, TEXT("LOGOUT_BEGIN session=%llu"), Key);
 		if (TUniquePtr<FAPBPlayerService>* Found = PlayerServices.Find(Key))
 		{
 			if (*Found && (*Found)->Service) (*Found)->Service->SaveAllNow();
 		}
+		UE_LOG(LogTemp, Warning, TEXT("LOGOUT_AFTER_SAVE dt=%.3f"), FPlatformTime::Seconds() - LogoutT0);
 		bool bTravelReservationActive = false;
 		for (const TPair<FString, FTravelReservation>& Entry : TravelReservations)
 		{
-			if (Entry.Value.OwnerKey == Key)
+			if (Entry.Value.OwnerSessionId == Key)
 			{
 				bTravelReservationActive = true;
 				break;
@@ -105,79 +178,155 @@ void AAPBWorldGameMode::Logout(AController* Exiting)
 		}
 		for (TPair<FString, FTravelReservation>& Entry : TravelReservations)
 		{
-			if (Entry.Value.OwnerKey == Key)
+			if (Entry.Value.OwnerSessionId == Key)
 			{
 				CancelTravelDomainReservation(Entry.Value);
 			}
 		}
 		PlayerServices.Remove(Key);
+		UE_LOG(LogTemp, Warning, TEXT("LOGOUT_AFTER_RESV dt=%.3f"), FPlatformTime::Seconds() - LogoutT0);
 	}
 	Super::Logout(Exiting);
+	UE_LOG(LogTemp, Warning, TEXT("LOGOUT_END dt=%.3f"), FPlatformTime::Seconds() - LogoutT0);
 }
 
 FAPBPlayerService* AAPBWorldGameMode::ServiceFor(APlayerController* PC) const
 {
-	if (!PC) return nullptr;
-	const FString Key = PCKey(PC);
-	const TUniquePtr<FAPBPlayerService>* Found = PlayerServices.Find(Key);
-	return Found ? Found->Get() : nullptr;
-}
-
-FString AAPBWorldGameMode::PCKey(APlayerController* PC)
-{
-	if (!PC) return TEXT("");
-	return FString::Printf(TEXT("%p"), (void*)PC);
+	if (AAPBPlayerController* APBPC = Cast<AAPBPlayerController>(PC))
+	{
+		const uint64 Key = APBPC->PlayerSessionId;
+		const TUniquePtr<FAPBPlayerService>* Found = PlayerServices.Find(Key);
+		return Found ? Found->Get() : nullptr;
+	}
+	return nullptr;
 }
 
 bool AAPBWorldGameMode::LoginPlayer(APlayerController* PC,
                                     const FString& User, const FString& Pass,
                                     FString& OutError)
 {
+	if (PC && PC->NetConnection && !PC->NetConnection->IsEncryptionEnabled()
+	    && !FParse::Param(FCommandLine::Get(), TEXT("DisableEncryption")))
+	{
+		OutError = TEXT("auth_refused_plaintext");
+		UE_LOG(LogTemp, Warning, TEXT("LOGIN_REFUSED reason=auth_refused_plaintext"));
+		return false;
+	}
+
 	FAPBPlayerService* Svc = ServiceFor(PC);
 	if (!Svc || !Svc->Service) { OutError = TEXT("no_service"); return false; }
+	
+	if (!AuthExecutor) { OutError = TEXT("no_executor"); return false; }
+	
+	const uint32_t ConnectionId = PC->GetUniqueID();
+	if (!AuthExecutor->CheckRateLimit(ConnectionId)) {
+		OutError = TEXT("rate_limited");
+		return false;
+	}
+
 	const std::string U = TCHAR_TO_UTF8(*User);
 	const std::string P = TCHAR_TO_UTF8(*Pass);
-	// Server-authoritative first-seen provisioning: registration must happen on the
-	// authority, not the client (the client's in-process RegisterAccount never reaches
-	// this per-player service). RegisterAccount is a no-op when the account already
-	// exists, so existing accounts still validate their PBKDF2 password (and banned
-	// accounts still fail) via LoginAccount below. Per-player isolation (R3) is preserved.
-	Svc->Service->RegisterAccount(U, P);
-	bool ok = Svc->Service->LoginAccount(U, P);
-	if (!ok) { OutError = TEXT("login_failed"); return false; }
-
-	// M14: bind the connection's social identity server-authoritatively. Direct world
-	// clients (no district relay) must still be admitted + online for clan invites,
-	// friend presence, and the name-keyed PushSocialStateToPlayerStates to reach them.
-	// Identity = the domain character when one exists, else the password-verified account.
-	FString Identity = User;
-	FString FactionName = TEXT("Criminal");
-	if (Svc->Service->character.has_value())
-	{
-		Identity = UTF8_TO_TCHAR(Svc->Service->character->name.c_str());
-		FactionName = (Svc->Service->character->faction == apb::Faction::Enforcer)
-			? TEXT("Enforcer") : TEXT("Criminal");
+	
+	apb::AccountRecord record_snapshot;
+	if (Svc->Service->login.accounts.count(U)) {
+		record_snapshot = Svc->Service->login.accounts[U];
+	} else {
+		record_snapshot.account_id = "ACC-" + U;
+		record_snapshot.username = U;
+		record_snapshot.password_scheme = "pbkdf2";
+		record_snapshot.password_iterations = 600000;
+		record_snapshot.password_dk_bytes = 32;
+		record_snapshot.password_salt = apb::random_hex(16);
 	}
-	if (PC && PC->PlayerState)
+	
+	Svc->GenerationNonce++;
+	const uint32_t Nonce = Svc->GenerationNonce;
+	
+	TWeakObjectPtr<AAPBWorldGameMode> WeakThis(this);
+	TWeakObjectPtr<AAPBPlayerController> WeakPC(Cast<AAPBPlayerController>(PC));
+	uint64 SessionId = WeakPC.IsValid() ? WeakPC->PlayerSessionId : 0;
+	
+	auto Callback = [WeakThis, WeakPC, SessionId, U](uint32_t CId, const std::string& Username, uint32_t ReturnedNonce, apb::AuthResult Result, const apb::AccountRecord& Record)
 	{
-		PC->PlayerState->SetPlayerName(Identity);
+		AsyncTask(ENamedThreads::GameThread, [WeakThis, WeakPC, SessionId, U, ReturnedNonce, Result, Record]() {
+			AAPBWorldGameMode* GM = WeakThis.Get();
+			if (!GM) { UE_LOG(LogTemp, Warning, TEXT("CB_FAIL_GM")); return; }
+			
+			AAPBPlayerController* PC = WeakPC.Get();
+			if (!PC || PC->PlayerSessionId != SessionId) { UE_LOG(LogTemp, Warning, TEXT("CB_FAIL_PC")); return; }
+			
+			FAPBPlayerService* Svc = GM->ServiceFor(PC);
+			if (!Svc || !Svc->Service || Svc->GenerationNonce != ReturnedNonce) { UE_LOG(LogTemp, Warning, TEXT("CB_FAIL_SVC")); return; }
+			
+			UE_LOG(LogTemp, Warning, TEXT("CB_RESULT=%d"), (int32)Result); if (Result == apb::AuthResult::Rejected) {
+				return;
+			}
+			
+			if (Result == apb::AuthResult::Registered || Result == apb::AuthResult::AuthenticatedNeedsRehash) {
+				Svc->Service->login.accounts[U] = Record;
+				if (Svc->Service->store.IsActive()) {
+					Svc->Service->store.SaveAccounts(Svc->Service->login);
+				}
+			}
+			
+			// Enforce one session per account
+			for (const TPair<uint64, TUniquePtr<FAPBPlayerService>>& Entry : GM->PlayerServices) {
+				if (Entry.Value && Entry.Value->Service && Entry.Key != SessionId) {
+					if (Entry.Value->Service->login.IsLoggedIn() && Entry.Value->Service->login.session->username == U) {
+						UE_LOG(LogTemp, Warning, TEXT("ACCOUNT_IN_USE_KICK username=%s"), UTF8_TO_TCHAR(U.c_str()));
+						Entry.Value->Service->LogoutAccount();
+					}
+				}
+			}
+			
+			// Adopt via the Domain so LoginAccount's post-verify bookkeeping runs —
+			// critically TryLoadPersistedCharacter(), otherwise a returning account gets a
+			// fabricated default character that clobbers its persisted one at Logout.
+			Svc->Service->AdoptAuthenticatedSession(Record);
+			
+			if (!Svc->Service->character.has_value()) {
+				Svc->Service->CreateCharacter(U, apb::Faction::Criminal);
+			}
+			FString Identity = UTF8_TO_TCHAR(U.c_str());
+			FString FactionName = TEXT("Criminal");
+			if (Svc->Service->character.has_value()) {
+				Identity = UTF8_TO_TCHAR(Svc->Service->character->name.c_str());
+				FactionName = (Svc->Service->character->faction == apb::Faction::Enforcer) ? TEXT("Enforcer") : TEXT("Criminal");
+			}
+			if (PC->PlayerState) {
+				PC->PlayerState->SetPlayerName(Identity);
+			}
+			if (!GM->FindAdmittedPlayer(Identity)) {
+				FAPBAdmittedPlayer Entry;
+				Entry.Account = UTF8_TO_TCHAR(U.c_str());
+				Entry.Character = Identity;
+				Entry.Faction = FactionName;
+				Entry.Jti = TEXT("direct");
+				Entry.DistrictNumericId = 0;
+				Entry.bAdmitted = true;
+				GM->AdmittedRoster.Add(Identity, MoveTemp(Entry));
+			}
+			GM->SocialAuthority.friends_svc.SetOnline(TCHAR_TO_UTF8(*Identity), true);
+			UE_LOG(LogTemp, Log, TEXT("SOCIAL_DIRECT_BIND character=%s account=%s faction=%s"), *Identity, UTF8_TO_TCHAR(U.c_str()), *FactionName);
+			GM->PushSocialStateToPlayerStates();
+			
+			if (AAPBPlayerState* PS = PC->GetPlayerState<AAPBPlayerState>()) {
+				UE_LOG(LogTemp, Warning, TEXT("SETTING_BWORLDAUTHOK"));
+				PS->bWorldAuthOk = true;
+				PS->ForceNetUpdate();
+			} else {
+				UE_LOG(LogTemp, Warning, TEXT("PS_IS_NULL"));
+			}
+		});
+	};
+	
+	if (!AuthExecutor->DispatchAuth(ConnectionId, U, P, record_snapshot, Nonce, Callback)) {
+		OutError = TEXT("auth_queue_full");
+		return false;
 	}
-	if (!FindAdmittedPlayer(Identity))
-	{
-		FAPBAdmittedPlayer Entry;
-		Entry.Account           = User;
-		Entry.Character         = Identity;
-		Entry.Faction           = FactionName;
-		Entry.Jti               = TEXT("direct");
-		Entry.DistrictNumericId = 0;
-		Entry.bAdmitted         = true;
-		AdmittedRoster.Add(Identity, MoveTemp(Entry));
-	}
-	SocialAuthority.friends_svc.SetOnline(TCHAR_TO_UTF8(*Identity), true);
-	UE_LOG(LogTemp, Log, TEXT("SOCIAL_DIRECT_BIND character=%s account=%s faction=%s"),
-		*Identity, *User, *FactionName);
-	PushSocialStateToPlayerStates();
-	return true;
+	
+	OutError = TEXT("pending");
+	return false;
 }
 
 FString AAPBWorldGameMode::GetCharListJson(APlayerController* PC) const
@@ -230,30 +379,27 @@ FString AAPBWorldGameMode::IssueTicketJson(APlayerController* PC,
                                            const FString& CharName,
                                            const FString& DistrictId)
 {
-	FAPBPlayerService* Svc = ServiceFor(PC);
-	if (!Svc || !Svc->Service || !ServerControl) return TEXT("{\"error\":\"no_live_node\"}");
-	apb::WorldService* WS = Svc->Service.Get();
-	// Plan intent (C4/C7): ticket issue requires IsLoggedIn. A freshly provisioned
-	// account may not have a character yet, so faction falls back to Enforcer when no
-	// character is loaded; the ticket is still a genuine HMAC payload.sig token.
-	if (!WS->login.IsLoggedIn()) return TEXT("{\"error\":\"no_ticket\"}");
-	if (!WS->character || WS->character->name != TCHAR_TO_UTF8(*CharName))
+	FAuthenticatedPlayer Auth = RequireAuthenticatedPlayer(PC);
+	if (!Auth.IsValid()) return TEXT("{\"error\":\"no_ticket\"}");
+	if (Auth.Character != CharName)
 	{
-		if (!WS->CreateCharacter(TCHAR_TO_UTF8(*CharName), apb::Faction::Enforcer))
-		{
-			return TEXT("{\"error\":\"character_unavailable\"}");
-		}
+		UE_LOG(LogTemp, Warning, TEXT("TICKET_ISSUE_REJECTED character_mismatch requested=%s auth=%s"), *CharName, *Auth.Character);
+		return TEXT("{\"error\":\"character_unavailable\"}");
 	}
 	FString Host;
 	FString ReservationId;
 	FString Error;
 	int32 Port = 0;
 	int32 NumericId = 0;
-	const FString PlayerKey = PCKey(PC);
+	uint64 PlayerSessionId = 0;
+	if (AAPBPlayerController* APBPC = Cast<AAPBPlayerController>(PC))
+	{
+		PlayerSessionId = APBPC->PlayerSessionId;
+	}
 	TArray<FString> PreviousReservations;
 	for (const TPair<FString, FTravelReservation>& Entry : TravelReservations)
 	{
-		if (Entry.Value.OwnerKey == PlayerKey)
+		if (Entry.Value.OwnerSessionId == PlayerSessionId)
 		{
 			PreviousReservations.Add(Entry.Key);
 		}
@@ -262,6 +408,8 @@ FString AAPBWorldGameMode::IssueTicketJson(APlayerController* PC,
 	{
 		ReleaseTravelReservationById(PreviousReservationId);
 	}
+	apb::WorldService* WS = static_cast<apb::WorldService*>(Auth.Service);
+	if (!WS || !ServerControl) return TEXT("{\"error\":\"no_live_node\"}");
 	const apb::DistrictInfo* CatalogDistrict = nullptr;
 	for (const apb::DistrictInfo& District : WS->catalog.districts)
 	{
@@ -275,8 +423,9 @@ FString AAPBWorldGameMode::IssueTicketJson(APlayerController* PC,
 	{
 		return TEXT("{\"error\":\"unknown_district\"}");
 	}
+	FString TargetDistrictEpoch;
 	if (!ServerControl->ResolveLiveDistrict(DistrictId, CatalogDistrict->max_players, Host, Port,
-		NumericId, Error))
+		NumericId, TargetDistrictEpoch, Error))
 	{
 		return FString::Printf(TEXT("{\"error\":\"%s\"}"), *Error);
 	}
@@ -287,8 +436,8 @@ FString AAPBWorldGameMode::IssueTicketJson(APlayerController* PC,
 		WS->CancelDistrictReservation(WS->character->name);
 		return TEXT("{\"error\":\"over_capacity\"}");
 	}
-	if (!ServerControl->ReserveLiveDistrict(PlayerKey, DistrictId, CatalogDistrict->max_players, Host, Port,
-		NumericId, ReservationId, Error))
+	if (!ServerControl->ReserveLiveDistrict(PlayerSessionId, DistrictId, CatalogDistrict->max_players, Host, Port,
+		NumericId, TargetDistrictEpoch, ReservationId, Error))
 	{
 		WS->CancelDistrictReservation(WS->character->name);
 		return FString::Printf(TEXT("{\"error\":\"%s\"}"), *Error);
@@ -300,7 +449,9 @@ FString AAPBWorldGameMode::IssueTicketJson(APlayerController* PC,
 	                    WS->character->faction == apb::Faction::Criminal)
 	                   ? "Criminal" : "Enforcer";
 	Claims.district  = TCHAR_TO_UTF8(*DistrictId);
-	std::string Token = apb::TicketService::Global().IssueTicket(Claims);
+	Claims.issuer_world_epoch = TCHAR_TO_UTF8(*GetWorldEpoch());
+	Claims.target_district_epoch = TCHAR_TO_UTF8(*TargetDistrictEpoch);
+	std::string Token = TicketSvc->IssueTicket(Claims);
 	if (Token.empty())
 	{
 		WS->CancelDistrictReservation(WS->character->name);
@@ -308,7 +459,7 @@ FString AAPBWorldGameMode::IssueTicketJson(APlayerController* PC,
 		return TEXT("{\"error\":\"no_ticket\"}");
 	}
 	apb::TicketClaims VerifiedClaims;
-	if (!apb::TicketService::Global().VerifyTicket(Token, VerifiedClaims))
+	if (!TicketSvc->VerifyAndConsume(Token, VerifiedClaims))
 	{
 		WS->CancelDistrictReservation(WS->character->name);
 		ServerControl->ReleaseLiveDistrictReservation(ReservationId);
@@ -350,7 +501,7 @@ FString AAPBWorldGameMode::IssueTicketJson(APlayerController* PC,
 		return TEXT("{\"error\":\"relay_unavailable\"}");
 	}
 	FTravelReservation Reservation;
-	Reservation.OwnerKey = PlayerKey;
+	Reservation.OwnerSessionId = PlayerSessionId;
 	Reservation.PlayerName = UTF8_TO_TCHAR(WS->character->name.c_str());
 	Reservation.Account = UTF8_TO_TCHAR(Handoff.account.c_str());
 	Reservation.PersistenceAccount = UTF8_TO_TCHAR(WS->login.session->username.c_str());
@@ -374,7 +525,7 @@ FString AAPBWorldGameMode::IssueTicketJson(APlayerController* PC,
 	UE_LOG(LogTemp, Log, TEXT("TRAVEL_RESERVATION_ISSUED id=%s district=%s port=%d"),
 		*ReservationId, *DistrictId, Port);
 	UE_LOG(LogTemp, Log, TEXT("CHAR_HANDOFF_SENT account=%s jti=%s nonce=%s faction=%s cash=%lld g1c=%lld threat=%.1f inv=%d mission=%s session=%s progress=%d"),
-		*Reservation.Account, *Reservation.Jti, *Reservation.HandoffNonce, *Reservation.Faction, Handoff.snapshot.cash,
+		UTF8_TO_TCHAR(Handoff.account.c_str()), UTF8_TO_TCHAR(Handoff.jti.c_str()), UTF8_TO_TCHAR(Handoff.nonce.c_str()), UTF8_TO_TCHAR(Handoff.faction.c_str()), Handoff.snapshot.cash,
 		Handoff.snapshot.g1c, Handoff.snapshot.threat_points, Handoff.snapshot.inventory_total_qty,
 		UTF8_TO_TCHAR(Handoff.snapshot.mission_id.c_str()), UTF8_TO_TCHAR(Handoff.snapshot.session_id.c_str()),
 		static_cast<int32>(Handoff.snapshot.contact_standings.size() + Handoff.snapshot.role_xp.size()));
@@ -422,7 +573,7 @@ void AAPBWorldGameMode::CancelTravelDomainReservation(FTravelReservation& Reserv
 	{
 		return;
 	}
-	if (TUniquePtr<FAPBPlayerService>* Service = PlayerServices.Find(Reservation.OwnerKey))
+	if (TUniquePtr<FAPBPlayerService>* Service = PlayerServices.Find(Reservation.OwnerSessionId))
 	{
 		if (*Service && (*Service)->Service)
 		{
@@ -438,9 +589,12 @@ void AAPBWorldGameMode::ReleaseTravelReservation(APlayerController* PC, const FS
 	{
 		if (const FTravelReservation* Reservation = TravelReservations.Find(ReservationId))
 		{
-			if (Reservation->OwnerKey == PCKey(PC))
+			if (AAPBPlayerController* APBPC = Cast<AAPBPlayerController>(PC))
 			{
-				ReleaseTravelReservationById(ReservationId);
+				if (Reservation->OwnerSessionId == APBPC->PlayerSessionId)
+				{
+					ReleaseTravelReservationById(ReservationId);
+				}
 			}
 		}
 	}
@@ -475,6 +629,10 @@ void AAPBWorldGameMode::ReleaseTravelReservationById(const FString& ReservationI
 void AAPBWorldGameMode::Tick(float DeltaSeconds)
 {
 	Super::Tick(DeltaSeconds);
+	if (AuthExecutor)
+	{
+		AuthExecutor->TickRateLimits(DeltaSeconds);
+	}
 	ProcessRelayReturns();
 	const int64 NowMs = FDateTime::UtcNow().ToUnixTimestamp() * 1000LL + FDateTime::UtcNow().GetMillisecond();
 	TArray<FString> ExpiredReservations;
@@ -489,6 +647,21 @@ void AAPBWorldGameMode::Tick(float DeltaSeconds)
 	{
 		ReleaseTravelReservationById(ReservationId);
 		UE_LOG(LogTemp, Log, TEXT("TRAVEL_RESERVATION_EXPIRED id=%s"), *ReservationId);
+	}
+	// M12: the authority settles expired listings on a 5s cadence. Settlement
+	// delivers item/cash via SocialAuthority.mail, so persist both stores and
+	// refresh replicated mail badges when anything settled.
+	if (NowMs >= NextAuctionSettleMs)
+	{
+		NextAuctionSettleMs = NowMs + 5000;
+		const int32 Settled = SocialAuthority.auction.SettleExpired(NowMs / 1000);
+		if (Settled > 0)
+		{
+			SocialAuthority.SaveAuctionNow();
+			SocialAuthority.SaveSocialNow();
+			PushSocialStateToPlayerStates();
+			UE_LOG(LogTemp, Log, TEXT("AUCTION_SETTLED count=%d"), Settled);
+		}
 	}
 }
 
@@ -611,20 +784,6 @@ const FAPBAdmittedPlayer* AAPBWorldGameMode::FindAdmittedPlayer(const FString& C
 	return nullptr;
 }
 
-apb::WorldService* AAPBWorldGameMode::ServiceForCharacter(const FString& Character) const
-{
-	if (Character.IsEmpty()) return nullptr;
-	const std::string Wanted = TCHAR_TO_UTF8(*Character);
-	for (const TPair<FString, TUniquePtr<FAPBPlayerService>>& Entry : PlayerServices)
-	{
-		if (!Entry.Value || !Entry.Value->Service) continue;
-		apb::WorldService* Candidate = Entry.Value->Service.Get();
-		if (Candidate->character.has_value() && Candidate->character->name == Wanted)
-			return Candidate;
-	}
-	return nullptr;
-}
-
 bool AAPBWorldGameMode::ApplyRelayReturn(const apb::RelayMessage& Message)
 {
 	if (Message.verb != apb::RelayVerb::Return) return false;
@@ -731,82 +890,84 @@ void AAPBWorldGameMode::HandleSocialRequest(const apb::RelayMessage& Message)
 
 	FString Status = TEXT("unknown_op");
 	const FString Op = SocialOp.ToLower();
+	FAuthenticatedPlayer AuthActor;
+	AuthActor.Character = Character;
 
 	// Clan ops
 	if (Op == TEXT("clan.create"))
 	{
-		Status = APB->SocialClanCreate(Arg1, Arg1, Arg2, Character, false) ? TEXT("ok") : TEXT("domain_rejected");
+		Status = APB->SocialClanCreate(Arg1, Arg1, Arg2, AuthActor, false) ? TEXT("ok") : TEXT("domain_rejected");
 	}
 	else if (Op == TEXT("clan.invite"))
 	{
-		Status = APB->SocialClanInvite(Character, Arg1) ? TEXT("ok") : TEXT("domain_rejected");
+		Status = APB->SocialClanInvite(AuthActor, Arg1) ? TEXT("ok") : TEXT("domain_rejected");
 	}
 	else if (Op == TEXT("clan.accept"))
 	{
-		Status = APB->SocialClanAcceptInvite(Character) ? TEXT("ok") : TEXT("domain_rejected");
+		Status = APB->SocialClanAcceptInvite(AuthActor) ? TEXT("ok") : TEXT("domain_rejected");
 	}
 	else if (Op == TEXT("clan.decline"))
 	{
-		Status = APB->SocialClanDeclineInvite(Character) ? TEXT("ok") : TEXT("domain_rejected");
+		Status = APB->SocialClanDeclineInvite(AuthActor) ? TEXT("ok") : TEXT("domain_rejected");
 	}
 	else if (Op == TEXT("clan.leave"))
 	{
-		Status = APB->SocialClanLeave(Character) ? TEXT("ok") : TEXT("domain_rejected");
+		Status = APB->SocialClanLeave(AuthActor) ? TEXT("ok") : TEXT("domain_rejected");
 	}
 	else if (Op == TEXT("clan.disband"))
 	{
-		Status = APB->SocialClanDisband(Character) ? TEXT("ok") : TEXT("domain_rejected");
+		Status = APB->SocialClanDisband(AuthActor) ? TEXT("ok") : TEXT("domain_rejected");
 	}
 	// Friend ops
 	else if (Op == TEXT("friend.request"))
 	{
-		Status = APB->SocialFriendRequest(Character, Arg1) ? TEXT("ok") : TEXT("domain_rejected");
+		Status = APB->SocialFriendRequest(AuthActor, Arg1) ? TEXT("ok") : TEXT("domain_rejected");
 	}
 	else if (Op == TEXT("friend.accept"))
 	{
-		Status = APB->SocialFriendAccept(Character, Arg1) ? TEXT("ok") : TEXT("domain_rejected");
+		Status = APB->SocialFriendAccept(AuthActor, Arg1) ? TEXT("ok") : TEXT("domain_rejected");
 	}
 	else if (Op == TEXT("friend.decline"))
 	{
-		Status = APB->SocialFriendDecline(Character, Arg1) ? TEXT("ok") : TEXT("domain_rejected");
+		Status = APB->SocialFriendDecline(AuthActor, Arg1) ? TEXT("ok") : TEXT("domain_rejected");
 	}
 	else if (Op == TEXT("friend.remove"))
 	{
-		Status = APB->SocialFriendRemove(Character, Arg1) ? TEXT("ok") : TEXT("domain_rejected");
+		Status = APB->SocialFriendRemove(AuthActor, Arg1) ? TEXT("ok") : TEXT("domain_rejected");
 	}
 	else if (Op == TEXT("friend.ignore"))
 	{
-		Status = APB->SocialFriendIgnore(Character, Arg1) ? TEXT("ok") : TEXT("domain_rejected");
+		Status = APB->SocialFriendIgnore(AuthActor, Arg1) ? TEXT("ok") : TEXT("domain_rejected");
 	}
 	else if (Op == TEXT("friend.unignore"))
 	{
-		Status = APB->SocialFriendUnignore(Character, Arg1) ? TEXT("ok") : TEXT("domain_rejected");
+		Status = APB->SocialFriendUnignore(AuthActor, Arg1) ? TEXT("ok") : TEXT("domain_rejected");
 	}
 	// Group ops
 	else if (Op == TEXT("group.create"))
 	{
 		FString OutId;
-		Status = APB->SocialGroupCreate(Character, OutId) ? FString::Printf(TEXT("ok:%s"), *OutId) : TEXT("domain_rejected");
+		Status = APB->SocialGroupCreate(AuthActor, OutId) ? FString::Printf(TEXT("ok:%s"), *OutId) : TEXT("domain_rejected");
 	}
 	else if (Op == TEXT("group.invite"))
 	{
-		Status = APB->SocialGroupInvite(Character, Arg1) ? TEXT("ok") : TEXT("domain_rejected");
+		Status = APB->SocialGroupInvite(AuthActor, Arg1) ? TEXT("ok") : TEXT("domain_rejected");
 	}
 	else if (Op == TEXT("group.accept"))
 	{
-		Status = APB->SocialGroupAccept(Character) ? TEXT("ok") : TEXT("domain_rejected");
+		Status = APB->SocialGroupAccept(AuthActor) ? TEXT("ok") : TEXT("domain_rejected");
 	}
 	else if (Op == TEXT("group.leave"))
 	{
-		Status = APB->SocialGroupLeave(Character) ? TEXT("ok") : TEXT("domain_rejected");
+		Status = APB->SocialGroupLeave(AuthActor) ? TEXT("ok") : TEXT("domain_rejected");
 	}
 	else if (Op == TEXT("group.setready"))
 	{
-		Status = APB->SocialGroupSetReady(Character, Arg1 == TEXT("1") || Arg1 == TEXT("true")) ? TEXT("ok") : TEXT("domain_rejected");
+		Status = APB->SocialGroupSetReady(AuthActor, Arg1 == TEXT("1") || Arg1 == TEXT("true")) ? TEXT("ok") : TEXT("domain_rejected");
 	}
 	else if (Op == TEXT("group.disband"))
 	{
-		Status = APB->SocialGroupDisband(Character) ? TEXT("ok") : TEXT("domain_rejected");
+		Status = APB->SocialGroupDisband(AuthActor) ? TEXT("ok") : TEXT("domain_rejected");
 	}
 	// Mail ops
 	else if (Op == TEXT("mail.send"))
@@ -821,11 +982,53 @@ void AAPBWorldGameMode::HandleSocialRequest(const apb::RelayMessage& Message)
 		{
 			Subject = Arg2;
 		}
-		Status = APB->SocialMailSend(Character, Arg1, Subject, BodyText, 0) ? TEXT("ok") : TEXT("domain_rejected");
+		Status = APB->SocialMailSend(AuthActor, Arg1, Subject, BodyText, 0) ? TEXT("ok") : TEXT("domain_rejected");
 	}
 	else if (Op == TEXT("mail.markread"))
 	{
-		Status = APB->SocialMailMarkRead(Character, Arg1) == EAPBMailResult::Ok ? TEXT("ok") : TEXT("domain_rejected");
+		Status = APB->SocialMailMarkRead(AuthActor, Arg1) == EAPBMailResult::Ok ? TEXT("ok") : TEXT("domain_rejected");
+	}
+	// Auction ops (M12) — same shapes as DispatchSocialOpDirect so a district player
+	// gets identical semantics to a lobby player. Fails closed when the character has
+	// no live service on this process (the owning session lives here on the world).
+	else if (Op == TEXT("auction.list"))
+	{
+		// Arg1 = "ItemId|Qty|Buyout|StartPrice|DurationSec"
+		TArray<FString> Parts;
+		Arg1.ParseIntoArray(Parts, TEXT("|"), true);
+		if (Parts.Num() < 2)
+		{
+			Status = TEXT("bad_args");
+		}
+		else
+		{
+			const int64 BuyoutPrice = Parts.Num() >= 3 ? FCString::Atoi64(*Parts[2]) : 0;
+			const int64 StartPrice  = Parts.Num() >= 4 ? FCString::Atoi64(*Parts[3]) : 0;
+			const int32 DurationSec = Parts.Num() >= 5 ? FCString::Atoi(*Parts[4]) : 0;
+			int64 OutId = 0; FString Err;
+			Status = APB->AuctionListItemAuth(AuthActor, Parts[0], FCString::Atoi(*Parts[1]),
+					BuyoutPrice, StartPrice, DurationSec, OutId, Err)
+				? FString::Printf(TEXT("ok:%lld"), static_cast<long long>(OutId))
+				: (TEXT("domain_rejected:") + Err);
+		}
+	}
+	else if (Op == TEXT("auction.bid"))
+	{
+		FString Err;
+		Status = APB->AuctionBid(AuthActor, FCString::Atoi64(*Arg1), FCString::Atoi64(*Arg2), Err)
+			? TEXT("ok") : (TEXT("domain_rejected:") + Err);
+	}
+	else if (Op == TEXT("auction.buyout"))
+	{
+		FString Err;
+		Status = APB->AuctionBuyout(AuthActor, FCString::Atoi64(*Arg1), Err)
+			? TEXT("ok") : (TEXT("domain_rejected:") + Err);
+	}
+	else if (Op == TEXT("auction.cancel"))
+	{
+		FString Err;
+		Status = APB->AuctionCancelListing(AuthActor, FCString::Atoi64(*Arg1), Err)
+			? TEXT("ok") : (TEXT("domain_rejected:") + Err);
 	}
 
 	UE_LOG(LogTemp, Log, TEXT("SOCIAL_RELAY_OP character=%s op=%s status=%s op_id=%s"),
@@ -902,4 +1105,29 @@ void AAPBWorldGameMode::PushSocialStateToPlayerStates()
 		PS->OnRep_Social();
 		PS->ForceNetUpdate();
 	}
+}
+
+FAuthenticatedPlayer AAPBWorldGameMode::RequireAuthenticatedPlayer(APlayerController* PC) const
+{
+	FAuthenticatedPlayer Auth;
+	if (!PC) return Auth;
+	if (AAPBPlayerController* APC = Cast<AAPBPlayerController>(PC))
+	{
+		Auth.SessionId = APC->PlayerSessionId;
+		if (const TUniquePtr<FAPBPlayerService>* SvcPtr = PlayerServices.Find(Auth.SessionId))
+		{
+			if (*SvcPtr && (*SvcPtr)->Service)
+			{
+				Auth.Service = (*SvcPtr)->Service.Get();
+				if (apb::WorldService* WS = static_cast<apb::WorldService*>(Auth.Service))
+				{
+					if (WS->character.has_value() && !WS->character->name.empty())
+					{
+						Auth.Character = UTF8_TO_TCHAR(WS->character->name.c_str());
+					}
+				}
+			}
+		}
+	}
+	return Auth;
 }

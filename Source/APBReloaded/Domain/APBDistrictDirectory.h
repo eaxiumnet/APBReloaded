@@ -24,6 +24,7 @@ struct DistrictNode {
 	std::string district;        // district id/name, e.g. "Financial"
 	int32_t     numeric_id = 0;  // stable apbdb numeric_id (also the map key)
 	int32_t     port = 0;        // district NetDriver port (world hands this to clients)
+	std::string target_district_epoch; // district boot epoch
 	int32_t     player_count = 0;// last ReportLoad occupancy
 	int64_t     registered_ms = 0;
 	int64_t     last_heartbeat_ms = 0;
@@ -55,7 +56,7 @@ public:
 
 	// Register or refresh a district instance. Returns true if the instance is now live.
 	// A re-Register of an existing numeric_id updates its port and re-arms liveness.
-	bool Register(const std::string& district, int32_t numeric_id, int32_t port, int64_t now_ms);
+	bool Register(const std::string& district, int32_t numeric_id, int32_t port, const std::string& target_district_epoch, int64_t now_ms);
 
 	// Record a liveness beat. Returns false if numeric_id is unknown (world should ask it
 	// to Register). Beats from an evicted/unknown id do NOT resurrect it.

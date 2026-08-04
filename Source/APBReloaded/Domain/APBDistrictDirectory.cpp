@@ -14,16 +14,29 @@ const char* EvictReasonName(EvictReason r) {
 	}
 }
 
-bool DistrictDirectory::Register(const std::string& district, int32_t numeric_id,
-	int32_t port, int64_t now_ms) {
-	const bool is_new = nodes_.find(numeric_id) == nodes_.end();
-	DistrictNode& n = nodes_[numeric_id];
-	n.district = district;
-	n.numeric_id = numeric_id;
-	n.port = port;
-	if (is_new) n.registered_ms = now_ms; // first-seen; re-register keeps the original
-	n.last_heartbeat_ms = now_ms;
-	n.alive = true;
+bool DistrictDirectory::Register(const std::string& district, int32_t numeric_id, int32_t port, const std::string& target_district_epoch, int64_t now_ms) {
+	if (numeric_id <= 0 || district.empty() || port <= 0) {
+		return false;
+	}
+	
+	auto it = nodes_.find(numeric_id);
+	if (it != nodes_.end()) {
+		// Existing node: update port, epoch, and re-arm liveness
+		it->second.port = port;
+		it->second.target_district_epoch = target_district_epoch;
+		it->second.last_heartbeat_ms = now_ms;
+		it->second.alive = true;
+	} else {
+		// New node
+		DistrictNode& n = nodes_[numeric_id];
+		n.district = district;
+		n.numeric_id = numeric_id;
+		n.port = port;
+		n.target_district_epoch = target_district_epoch;
+		n.registered_ms = now_ms;
+		n.last_heartbeat_ms = now_ms;
+		n.alive = true;
+	}
 	return true;
 }
 
@@ -49,7 +62,7 @@ bool DistrictDirectory::Deregister(int32_t numeric_id, EvictReason /*reason*/) {
 bool DistrictDirectory::Apply(const RelayMessage& m, int64_t now_ms) {
 	switch (m.verb) {
 		case RelayVerb::Register:
-			return Register(m.district, m.numeric_id, m.port, now_ms);
+			return Register(m.district, m.numeric_id, m.port, m.target_district_epoch, now_ms);
 		case RelayVerb::Heartbeat:
 			return Heartbeat(m.numeric_id, now_ms);
 		case RelayVerb::ReportLoad:

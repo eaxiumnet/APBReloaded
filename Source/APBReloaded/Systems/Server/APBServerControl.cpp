@@ -57,6 +57,7 @@ namespace
 		std::unordered_set<std::string> Jtis;
 		std::deque<std::string> OutboundFrames;
 		int32 NumericId = 0;
+		int64 LastActivityMs = 0;
 	};
 
 	struct FRelayDistrictConfig
@@ -66,6 +67,7 @@ namespace
 		int32 RelayPort = 0;
 		int32 NumericId = 0;
 		int32 DistrictPort = 0;
+		FString TargetDistrictEpoch;
 	};
 
 	bool ResolveJoinableDistrictName(const FString& RequestedDistrictId,
@@ -275,7 +277,7 @@ public:
 
 	bool ResolveLeastLoaded(const FString& DistrictId, const int32 MaxPlayers,
 		const TMap<int32, int32>& PendingReservations,
-		FString& OutHost, int32& OutPort, int32& OutNumericId, FString& OutError) const
+		FString& OutHost, int32& OutPort, int32& OutNumericId, FString& OutEpoch, FString& OutError) const
 	{
 		FScopeLock Lock(&DirectoryLock);
 		const std::vector<apb::DistrictNode> Nodes = Directory.ListAlive();
@@ -332,10 +334,38 @@ private:
 			return;
 		}
 
+		const int64 NowMs = RelayNowMs();
+		const int64 NowSec = NowMs / 1000;
+		if (NowSec != LastAcceptSecond)
+		{
+			LastAcceptSecond = NowSec;
+			AcceptsThisSecond = 0;
+		}
+
 		bool bPendingConnection = false;
 		while (!bStopRequested.load(std::memory_order_acquire) &&
 			ListenSocket->HasPendingConnection(bPendingConnection) && bPendingConnection)
 		{
+			if (AcceptsThisSecond >= 10)
+			{
+				break;
+			}
+
+			FScopeLock Lock(&ClientLock);
+			if (Clients.Num() >= 64)
+			{
+				break;
+			}
+			int32 PreAuthCount = 0;
+			for (const FRelayClient& Client : Clients)
+			{
+				if (Client.NumericId == 0) PreAuthCount++;
+			}
+			if (PreAuthCount >= 16)
+			{
+				break;
+			}
+
 			TSharedRef<FInternetAddr> PeerAddress = SocketSubsystem->CreateInternetAddr(FNetworkProtocolTypes::IPv4);
 			FSocket* ClientSocket = ListenSocket->Accept(*PeerAddress,
 				FString::Printf(TEXT("APBRelayClient_%d"), NextClientId++));
@@ -351,13 +381,12 @@ private:
 				continue;
 			}
 
-			{
-				FScopeLock Lock(&ClientLock);
-				FRelayClient& Client = Clients.AddDefaulted_GetRef();
-				Client.Socket = ClientSocket;
-				Client.Peer = PeerAddress->ToString(true);
-				UE_LOG(LogTemp, Log, TEXT("RELAY_ACCEPT peer=%s"), *Client.Peer);
-			}
+			FRelayClient& Client = Clients.AddDefaulted_GetRef();
+			Client.Socket = ClientSocket;
+			Client.Peer = PeerAddress->ToString(true);
+			UE_LOG(LogTemp, Log, TEXT("RELAY_ACCEPT peer=%s"), *Client.Peer);
+			
+			AcceptsThisSecond++;
 			bPendingConnection = false;
 		}
 	}
@@ -458,7 +487,14 @@ private:
 
 	void ProcessFrames(FRelayClient& Client, const std::vector<std::string>& Frames, const int64 NowMs)
 	{
-		apb::RelayInbox Inbox({NowMs, ExpectedAuth, true});
+		Client.LastActivityMs = NowMs;
+		apb::RelayValidationOptions Opts;
+		Opts.now_ms = NowMs;
+		Opts.expected_auth = ExpectedAuth;
+		Opts.require_auth = true;
+		Opts.is_world_server = true;
+		Opts.expected_numeric_id = Client.NumericId;
+		apb::RelayInbox Inbox(Opts);
 		for (const std::string& Frame : Frames)
 		{
 			std::string StreamFrame = Frame;
@@ -569,7 +605,7 @@ private:
 
 				if (RejectReason.IsEmpty())
 				{
-					bApplied = Directory.Register(CanonicalDistrictUtf8, Message.numeric_id, Message.port, NowMs);
+					bApplied = Directory.Register(CanonicalDistrictUtf8, Message.numeric_id, Message.port, Message.target_district_epoch, NowMs);
 					if (!bApplied)
 					{
 						RejectReason = TEXT("directory_register_failed");
@@ -580,6 +616,34 @@ private:
 			{
 				Client.NumericId = Message.numeric_id;
 				RejectReason = TEXT("none");
+				
+				for (FRelayClient& OtherClient : Clients)
+				{
+					if (&OtherClient != &Client && OtherClient.NumericId == Client.NumericId)
+					{
+						// Duplicate numeric_id: only evict a prior socket that has gone quiet.
+						// A healthy duplicate is a ghost process that must NOT be allowed to
+						// wedge the live district into a reconnect ping-pong (its register
+						// kills the live socket, the live reconnect kills the ghost, ad infinitum).
+						// QueueToDistrict broadcasts to every matching socket, so a retained
+						// healthy duplicate still receives relay traffic.
+						const int64 ActivityAgeMs = OtherClient.LastActivityMs > 0
+							? NowMs - OtherClient.LastActivityMs : INT64_MAX;
+						const bool bStale = ActivityAgeMs > apb::kRelayHeartbeatIntervalMs * 3;
+						UE_CLOG(bStale, LogTemp, Warning,
+							TEXT("RELAY_DUPLICATE_CLIENT peer=%s numeric_id=%d stale=1 age_ms=%lld"),
+							*OtherClient.Peer, OtherClient.NumericId,
+							ActivityAgeMs == INT64_MAX ? -1 : ActivityAgeMs);
+						UE_CLOG(!bStale, LogTemp, Log,
+							TEXT("RELAY_DUPLICATE_CLIENT peer=%s numeric_id=%d stale=0 age_ms=%lld"),
+							*OtherClient.Peer, OtherClient.NumericId,
+							ActivityAgeMs == INT64_MAX ? -1 : ActivityAgeMs);
+						if (bStale && OtherClient.Socket)
+						{
+							OtherClient.Socket->Close();
+						}
+					}
+				}
 			}
 			UE_LOG(LogTemp, Log, TEXT("RELAY_REGISTER district=%s numeric_id=%d ok=%d port=%d reason=%s"),
 				*CanonicalDistrict, Message.numeric_id, bApplied ? 1 : 0, Message.port, *RejectReason);
@@ -719,6 +783,9 @@ private:
 	mutable FCriticalSection DirectoryLock;
 	apb::DistrictDirectory Directory;
 	std::deque<apb::RelayMessage> InboundMessages;
+
+	int64 LastAcceptSecond = 0;
+	int32 AcceptsThisSecond = 0;
 	uint16 Port = 0;
 	std::string ExpectedAuth;
 	std::atomic<bool> bStopRequested = false;
@@ -933,28 +1000,34 @@ private:
 			}
 		}
 
-		std::vector<apb::RelayMessage> Messages = apb::RelayCodec::DecodeStream(ReceiveBuffer);
-		if (Messages.size() > apb::kRelayMaxQueueDepth)
+		// Submit the RAW newline-delimited wire frames to the inbox. Decoding a frame and
+		// re-encoding it corrupts the auth: Encode() treats a populated message.auth (which after
+		// Decode holds the received HMAC hex) as the HMAC *key* and recomputes a different value,
+		// so every authenticated inbound message (RegisterAck, Handoff, Return, Social*) would fail
+		// validation. Validate the bytes exactly as they arrived, mirroring the listener path.
+		apb::RelayInbox Inbox({NowMs, ExpectedAuth, true});
+		size_t Consumed = 0;
+		while (true)
 		{
-			UE_LOG(LogTemp, Warning, TEXT("RELAY_CLIENT_REJECT reason=queue_full"));
-			return false;
-		}
-		for (const apb::RelayMessage& Message : Messages)
-		{
-			const std::string Frame = apb::RelayCodec::Encode(Message);
-			apb::RelayInbox Inbox({NowMs, ExpectedAuth, true});
+			const size_t Newline = ReceiveBuffer.find('\n', Consumed);
+			if (Newline == std::string::npos) break;
+			const std::string Frame = ReceiveBuffer.substr(Consumed, Newline - Consumed);
+			Consumed = Newline + 1;
+			if (Frame.empty()) continue;
 			const apb::RelayRejectReason Reason = Inbox.Submit(Frame);
 			if (Reason != apb::RelayRejectReason::None)
 			{
 				UE_LOG(LogTemp, Warning, TEXT("RELAY_CLIENT_REJECT reason=%s"),
 					UTF8_TO_TCHAR(apb::RelayRejectReasonName(Reason)));
-				continue;
 			}
-			apb::RelayMessage Accepted;
-			while (Inbox.Pop(Accepted))
-			{
-				HandleIncoming(Accepted);
-			}
+		}
+		if (Consumed > 0) ReceiveBuffer.erase(0, Consumed);
+		if (ReceiveBuffer.size() > apb::kRelayMaxFrameBytes) ReceiveBuffer.clear();
+
+		apb::RelayMessage Accepted;
+		while (Inbox.Pop(Accepted))
+		{
+			HandleIncoming(Accepted);
 		}
 		return true;
 	}
@@ -1126,7 +1199,7 @@ void UAPBServerControl::Init(AAPBWorldGameMode* InMode)
 	}
 }
 
-void UAPBServerControl::InitDistrict(const FString& ResolvedDistrictId)
+void UAPBServerControl::InitDistrict(const FString& ResolvedDistrictId, const FString& DistrictEpoch)
 {
 	bWorldServerRole = FParse::Param(FCommandLine::Get(), TEXT("WorldServer"));
 	if (bWorldServerRole)
@@ -1146,6 +1219,7 @@ void UAPBServerControl::InitDistrict(const FString& ResolvedDistrictId)
 		}
 		return;
 	}
+	DistrictConfig.TargetDistrictEpoch = DistrictEpoch;
 
 	const FString& Secret = FAPBSecretProvider::RelaySecret();
 	if (Secret.IsEmpty())
@@ -1197,7 +1271,7 @@ void UAPBServerControl::BeginDestroy()
 
 bool UAPBServerControl::ResolveLiveDistrict(const FString& DistrictId, const int32 MaxPlayers,
 	FString& OutHost, int32& OutPort,
-	int32& OutNumericId, FString& OutError) const
+	int32& OutNumericId, FString& OutEpoch, FString& OutError) const
 {
 	if (!RelayListener)
 	{
@@ -1205,7 +1279,7 @@ bool UAPBServerControl::ResolveLiveDistrict(const FString& DistrictId, const int
 		return false;
 	}
 	return RelayListener->ResolveLeastLoaded(DistrictId, MaxPlayers, PendingReservationsByNode,
-		OutHost, OutPort, OutNumericId, OutError);
+		OutHost, OutPort, OutNumericId, OutEpoch, OutError);
 }
 
 std::vector<FAPBDistrictPopulationSnapshot> UAPBServerControl::GetLiveDistrictPopulationSnapshot() const
@@ -1214,21 +1288,21 @@ std::vector<FAPBDistrictPopulationSnapshot> UAPBServerControl::GetLiveDistrictPo
 		: std::vector<FAPBDistrictPopulationSnapshot>();
 }
 
-bool UAPBServerControl::ReserveLiveDistrict(const FString& PlayerKey, const FString& DistrictId,
+bool UAPBServerControl::ReserveLiveDistrict(const uint64 PlayerSessionId, const FString& DistrictId,
 	const int32 MaxPlayers, FString& OutHost, int32& OutPort, int32& OutNumericId,
-	FString& OutReservationId,
+	FString& OutEpoch, FString& OutReservationId,
 	FString& OutError)
 {
-	if (!ResolveLiveDistrict(DistrictId, MaxPlayers, OutHost, OutPort, OutNumericId, OutError))
+	if (!ResolveLiveDistrict(DistrictId, MaxPlayers, OutHost, OutPort, OutNumericId, OutEpoch, OutError))
 	{
 		return false;
 	}
-	if (const FString* ExistingReservation = ReservationByPlayer.Find(PlayerKey))
+	if (const FString* ExistingReservation = ReservationByPlayer.Find(PlayerSessionId))
 	{
 		ReleaseLiveDistrictReservation(*ExistingReservation);
 	}
 	OutReservationId = FString::Printf(TEXT("travel-%lld"), NextReservationId++);
-	ReservationByPlayer.Add(PlayerKey, OutReservationId);
+	ReservationByPlayer.Add(PlayerSessionId, OutReservationId);
 	ReservationNodeById.Add(OutReservationId, OutNumericId);
 	PendingReservationsByNode.FindOrAdd(OutNumericId)++;
 	return true;
@@ -1263,10 +1337,10 @@ void UAPBServerControl::ReleaseLiveDistrictReservation(const FString& Reservatio
 	}
 }
 
-TArray<FString> UAPBServerControl::ReleaseLiveDistrictReservationsForPlayer(const FString& PlayerKey)
+TArray<FString> UAPBServerControl::ReleaseLiveDistrictReservationsForPlayer(const uint64 PlayerSessionId)
 {
 	TArray<FString> ReleasedReservations;
-	if (const FString* ReservationId = ReservationByPlayer.Find(PlayerKey))
+	if (const FString* ReservationId = ReservationByPlayer.Find(PlayerSessionId))
 	{
 		ReleasedReservations.Add(*ReservationId);
 		ReleaseLiveDistrictReservation(*ReservationId);

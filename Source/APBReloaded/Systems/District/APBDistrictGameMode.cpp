@@ -39,6 +39,8 @@ AAPBDistrictGameMode::AAPBDistrictGameMode()
 	PrimaryActorTick.bCanEverTick = true;
 }
 
+AAPBDistrictGameMode::~AAPBDistrictGameMode() = default;
+
 FString AAPBDistrictGameMode::TicketNetKey(const FUniqueNetIdRepl& UniqueId)
 {
 	return UniqueId.IsValid() ? UniqueId.ToString() : TEXT("");
@@ -81,15 +83,6 @@ EAPBFaction AAPBDistrictGameMode::FactionFromTicketString(const FString& Faction
 		: EAPBFaction::Criminal;
 }
 
-void AAPBDistrictGameMode::InitTicketSecretFromProvider() const
-{
-	const FString& Hex = FAPBSecretProvider::TicketSecret();
-	if (!Hex.IsEmpty())
-	{
-		apb::TicketService::Global().SetSecret(TCHAR_TO_UTF8(*Hex));
-	}
-}
-
 bool AAPBDistrictGameMode::TakePendingTicket(const FUniqueNetIdRepl& UniqueId, FAPBVerifiedTicket& Out)
 {
 	const FString Key = TicketNetKey(UniqueId);
@@ -122,7 +115,11 @@ FString AAPBDistrictGameMode::ResolveDistrictPlayerName(APlayerController* PC) c
 void AAPBDistrictGameMode::BeginPlay()
 {
 	Super::BeginPlay();
-	InitTicketSecretFromProvider();
+	
+	FString Err;
+	FAPBSecretProvider::Initialize(Err);
+	TicketSvc = MakeUnique<apb::TicketService>(TCHAR_TO_UTF8(*FAPBSecretProvider::TicketSecret()));
+	
 	SessionId = FString::Printf(TEXT("DS-%s-1"), *DistrictId);
 	if (UGameInstance* GI = GetGameInstance())
 	{
@@ -145,8 +142,9 @@ void AAPBDistrictGameMode::BeginPlay()
 			}
 		}
 	}
+	DistrictEpoch = FGuid::NewGuid().ToString();
 	RelayControl = NewObject<UAPBServerControl>(this);
-	RelayControl->InitDistrict(DistrictId);
+	RelayControl->InitDistrict(DistrictId, DistrictEpoch);
 	RelayControl->SetDistrictPopulation(GetRemotePlayerCount());
 	UE_LOG(LogTemp, Log, TEXT("APB District session %s district=%s (listen-server freeroam)"), *SessionId, *DistrictId);
 }
@@ -178,7 +176,11 @@ void AAPBDistrictGameMode::PreLogin(const FString& Options, const FString& Addre
 		return;
 	}
 
-	InitTicketSecretFromProvider();
+	if (!TicketSvc)
+	{
+		ErrorMessage = TEXT("Server configuration error");
+		return;
+	}
 
 	const FString TokenRaw = ExtractTicketFromOptions(Options);
 	if (TokenRaw.IsEmpty())
@@ -194,16 +196,23 @@ void AAPBDistrictGameMode::PreLogin(const FString& Options, const FString& Addre
 
 	apb::TicketClaims Claims;
 	const std::string Token = TCHAR_TO_UTF8(*TokenRaw);
-	if (!apb::TicketService::Global().VerifyTicket(Token, Claims))
+	const apb::TicketVerdict Verdict = TicketSvc->VerifyAndConsumeChecked(Token, Claims);
+	if (Verdict != apb::TicketVerdict::Ok)
 	{
-		if (const FString* RedeemedJti = RedeemedJtiByToken.Find(TokenRaw))
+		// A raw token already successfully redeemed on this district is a replay even after
+		// it expires: VerifyAndConsumeChecked reports Invalid once the clock passes expiry,
+		// before the replay-window is reached. RedeemedJtiByToken (never cleared for the
+		// district's lifetime) is the expiry-independent replay signal; the Replay verdict
+		// covers the not-yet-expired case. A replayed ticket is a distinct security event
+		// from a forged/expired one.
+		if (Verdict == apb::TicketVerdict::Replay || RedeemedJtiByToken.Find(TokenRaw) != nullptr)
 		{
 			ErrorMessage = TEXT("APB ticket already used");
-			UE_LOG(LogTemp, Warning, TEXT("APB PreLogin reject: replay jti=%s"), **RedeemedJti);
+			UE_LOG(LogTemp, Warning, TEXT("APB PreLogin reject: replay ticket from %s"), *Address);
 			UE_LOG(LogTemp, Warning, TEXT("DISTRICT_TICKET_FAIL reason=replay"));
 			return;
 		}
-		ErrorMessage = TEXT("APB ticket invalid or expired");
+		ErrorMessage = TEXT("Invalid or expired APB ticket");
 		UE_LOG(LogTemp, Warning, TEXT("APB PreLogin reject: invalid ticket from %s"), *Address);
 		UE_LOG(LogTemp, Warning, TEXT("DISTRICT_TICKET_FAIL reason=invalid"));
 		return;
@@ -222,14 +231,18 @@ void AAPBDistrictGameMode::PreLogin(const FString& Options, const FString& Addre
 		}
 	}
 
-	if (!apb::TicketService::Global().ConsumeJti(Claims.jti))
-	{
-		ErrorMessage = TEXT("APB ticket already used");
-		UE_LOG(LogTemp, Warning, TEXT("APB PreLogin reject: replay jti=%s"), UTF8_TO_TCHAR(Claims.jti.c_str()));
-		UE_LOG(LogTemp, Warning, TEXT("DISTRICT_TICKET_FAIL reason=replay"));
-		return;
-	}
 	RedeemedJtiByToken.Add(TokenRaw, UTF8_TO_TCHAR(Claims.jti.c_str()));
+
+	if (!Claims.target_district_epoch.empty() && !DistrictEpoch.IsEmpty())
+	{
+		const FString ClaimEpoch = UTF8_TO_TCHAR(Claims.target_district_epoch.c_str());
+		if (ClaimEpoch != DistrictEpoch)
+		{
+			ErrorMessage = TEXT("APB ticket epoch mismatch");
+			UE_LOG(LogTemp, Warning, TEXT("DISTRICT_EPOCH_RESTART_REFUSED expected=%s actual=%s"), *DistrictEpoch, *ClaimEpoch);
+			return;
+		}
+	}
 
 	FAPBVerifiedTicket Verified;
 	Verified.Account = UTF8_TO_TCHAR(Claims.account.c_str());
@@ -335,7 +348,7 @@ void AAPBDistrictGameMode::PostLogin(APlayerController* NewPlayer)
 				APB->SyncPlayerStateFromDomain(PS);
 				if (bHasTicket && Ticket.bValid)
 				{
-					PS->ApplyFactionAuthority(Faction);
+					PS->ApplyFactionAuthority(Faction, true);
 				}
 			}
 		}
@@ -582,6 +595,9 @@ bool AAPBDistrictGameMode::ApplyRelayHandoff(const apb::RelayMessage& Message)
 	APB->PushDomainSnapshotToAllPlayerStates();
 	UE_LOG(LogTemp, Log, TEXT("CHAR_HANDOFF_APPLIED account=%s faction=%s cash=%lld threat=%.1f"),
 		*Ticket->Account, *Ticket->Faction, Handoff.snapshot.cash, Handoff.snapshot.threat_points);
+	// M13: the Domain now holds any persisted session vehicle (RestoreHandoff); let
+	// the district respawn its actor + paint.
+	OnHandoffApplied();
 	FString Probe;
 	if (FParse::Value(FCommandLine::Get(), TEXT("APBProbe="), Probe) && Probe.Equals(TEXT("world_handoff_district"), ESearchCase::IgnoreCase))
 	{

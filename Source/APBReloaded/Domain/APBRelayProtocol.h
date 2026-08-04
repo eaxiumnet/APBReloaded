@@ -20,6 +20,7 @@
 #include <vector>
 #include <cstdint>
 #include <deque>
+#include <optional>
 #include <unordered_set>
 
 namespace apb {
@@ -67,6 +68,7 @@ struct RelayMessage {
 	std::string district;     // district id/name, e.g. "Financial"
 	int32_t     numeric_id = 0; // opaque, positive, globally-unique relay district-INSTANCE id — NOT districts.json numeric_id; district TYPE is carried by district (canonical name)
 	int32_t     port = 0;       // district NetDriver port (world hands this to the client)
+	std::string target_district_epoch; // Unique district instance boot identifier
 	std::string account;      // account login
 	std::string character;    // selected character
 	std::string faction;      // "Enforcer" / "Criminal" / ""
@@ -177,7 +179,9 @@ enum class RelayRejectReason {
 	AuthFailed,
 	StaleJti,
 	ReplayJti,
-	QueueFull
+	QueueFull,
+	VerbDirection,
+	IdentityMismatch
 };
 
 const char* RelayRejectReasonName(RelayRejectReason reason);
@@ -186,6 +190,8 @@ struct RelayValidationOptions {
 	int64_t now_ms = 0;
 	std::string expected_auth;
 	bool require_auth = true;
+	std::optional<bool> is_world_server;
+	int32_t expected_numeric_id = 0;
 };
 
 // Stateful receive-side contract enforcement. It bounds memory and rejects malformed,

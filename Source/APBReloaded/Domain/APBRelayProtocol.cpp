@@ -1,4 +1,5 @@
 #include "APBRelayProtocol.h"
+#include "APBCrypto.h"
 #include <algorithm>
 #include <cerrno>
 #include <cstdlib>
@@ -217,8 +218,7 @@ std::string RelayCodec::Encode(const RelayMessage& message) {
 	out << "{\"version\":" << message.version
 		<< ",\"request_id\":\"" << JsonEscape(message.request_id)
 		<< "\",\"sent_ms\":" << message.sent_ms
-		<< ",\"auth\":\"" << JsonEscape(message.auth)
-		<< "\",\"verb\":\"" << VerbToken(message.verb) << '"';
+		<< ",\"auth\":\"" << "\",\"verb\":\"" << VerbToken(message.verb) << '"';
 	if (!message.district.empty()) out << ",\"district\":\"" << JsonEscape(message.district) << '"';
 	if (message.numeric_id != 0) out << ",\"numeric_id\":" << message.numeric_id;
 	if (message.port != 0) out << ",\"port\":" << message.port;
@@ -242,6 +242,15 @@ std::string RelayCodec::Encode(const RelayMessage& message) {
 		out << ",\"ok\":" << (message.ok ? "true" : "false");
 	out << "}\n";
 	std::string encoded = out.str();
+	if (!message.auth.empty()) {
+		std::string hmac_hex = hmac_sha256_hex(
+			reinterpret_cast<const uint8_t*>(message.auth.data()), message.auth.size(),
+			reinterpret_cast<const uint8_t*>(encoded.data()), encoded.size());
+		size_t auth_pos = encoded.find("\"auth\":\"\"");
+		if (auth_pos != std::string::npos) {
+			encoded.insert(auth_pos + 8, hmac_hex);
+		}
+	}
 	return IsFrameSizeValid(encoded) ? encoded : std::string{};
 }
 
@@ -435,6 +444,8 @@ const char* RelayRejectReasonName(RelayRejectReason reason) {
 		case RelayRejectReason::StaleJti: return "stale_jti";
 		case RelayRejectReason::ReplayJti: return "replay_jti";
 		case RelayRejectReason::QueueFull: return "queue_full";
+		case RelayRejectReason::VerbDirection: return "verb_direction";
+		case RelayRejectReason::IdentityMismatch: return "identity_mismatch";
 		default: return "unknown";
 	}
 }
@@ -459,9 +470,51 @@ RelayRejectReason RelayInbox::Submit(const std::string& frame) {
 	}
 	if (message.sent_ms < options_.now_ms - kRelayRequestTimeoutMs ||
 		message.sent_ms > options_.now_ms + kRelayRequestTimeoutMs) return RelayRejectReason::TimedOut;
+
 	if (options_.require_auth && message.auth.empty()) return RelayRejectReason::AuthFailed;
-	if (!options_.expected_auth.empty() && message.auth != options_.expected_auth)
-		return RelayRejectReason::AuthFailed;
+	if (!options_.expected_auth.empty()) {
+		std::string provided_auth = message.auth;
+		RelayMessage m2 = message;
+		m2.auth = "";
+		std::string canonical = RelayCodec::Encode(m2);
+		std::string expected_hmac = hmac_sha256_hex(
+			reinterpret_cast<const uint8_t*>(options_.expected_auth.data()), options_.expected_auth.size(),
+			reinterpret_cast<const uint8_t*>(canonical.data()), canonical.size());
+		
+		if (provided_auth.size() != expected_hmac.size()) {
+			return RelayRejectReason::AuthFailed;
+		}
+		volatile uint8_t diff = 0;
+		for (size_t i = 0; i < expected_hmac.size(); ++i) {
+			diff |= (static_cast<uint8_t>(provided_auth[i]) ^ static_cast<uint8_t>(expected_hmac[i]));
+		}
+		if (diff != 0) {
+			return RelayRejectReason::AuthFailed;
+		}
+	}
+
+	if (options_.is_world_server.has_value()) {
+		if (options_.is_world_server.value()) {
+			if (message.verb == RelayVerb::RegisterAck || message.verb == RelayVerb::ExpectTicket ||
+				message.verb == RelayVerb::Handoff || message.verb == RelayVerb::SocialResult ||
+				message.verb == RelayVerb::SocialProjection) {
+				return RelayRejectReason::VerbDirection;
+			}
+		} else {
+			if (message.verb == RelayVerb::Register || message.verb == RelayVerb::Heartbeat ||
+				message.verb == RelayVerb::ReportLoad || message.verb == RelayVerb::ExpectAck ||
+				message.verb == RelayVerb::PlayerJoined || message.verb == RelayVerb::PlayerLeft ||
+				message.verb == RelayVerb::Return || message.verb == RelayVerb::SocialRequest) {
+				return RelayRejectReason::VerbDirection;
+			}
+		}
+	}
+
+	if (options_.expected_numeric_id != 0 && message.numeric_id != 0 &&
+		message.numeric_id != options_.expected_numeric_id) {
+		return RelayRejectReason::IdentityMismatch;
+	}
+
 	if (request_ids_.find(message.request_id) != request_ids_.end()) return RelayRejectReason::DuplicateRequestId;
 	if (message.verb == RelayVerb::ExpectTicket) {
 		if (message.jti.empty() || message.jti_expires_ms <= options_.now_ms) return RelayRejectReason::StaleJti;
