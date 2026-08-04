@@ -8,6 +8,7 @@ param(
 $ErrorActionPreference = "Stop"
 $projectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
 . (Join-Path $PSScriptRoot "scripts\APBPortContract.ps1")
+. (Join-Path $PSScriptRoot "scripts\APBGateCleanup.ps1")
 $ports = Get-APBPortContract -ProjectRoot $projectRoot
 $districtLog = Join-Path $Scratch "district_ticket.log"
 $mintIndex = 0
@@ -30,15 +31,12 @@ function Stop-ProcessTree([Diagnostics.Process]$Process) {
   } catch {}
 }
 
-function Stop-GateProcesses {
-  Stop-ProcessTree $district
-  Get-Process -Name "UnrealEditor","CrashReportClientEditor" -ErrorAction SilentlyContinue |
-    Where-Object { $_.Path -like "D:\UE58\UE_5.8\Engine\Binaries\Win64\*" } |
-    Stop-Process -Force -ErrorAction SilentlyContinue
+function Stop-GateProcesses([switch]$BestEffort) {
+  Stop-APBGateProcesses -Tracked @($district) -Project $Project -EngineBin (Split-Path $Editor) -BestEffort:$BestEffort
 }
 
 function Start-Editor([string[]]$Arguments) {
-  return Start-Process -FilePath $Editor -ArgumentList $Arguments -PassThru -WorkingDirectory (Split-Path $Editor) -NoNewWindow
+  return Start-Process -FilePath $Editor -ArgumentList $Arguments -PassThru -WorkingDirectory (Split-Path $Editor) -WindowStyle Hidden
 }
 
 function Wait-Log([string]$Path, [string]$Pattern, [string]$FailureName) {
@@ -58,7 +56,7 @@ function Mint-Ticket([string]$Account, [string]$Character, [string]$Faction, [st
   $mintLog = Join-Path $Scratch "mint_$script:mintIndex.log"
   $mint = Start-Editor @(
     $Project, "-game", "-APBMintTicket=$Account,$Character,$Faction,$DistrictId",
-    "-nullrhi", "-nosound", "-unattended", "-log", "-AbsLog=$mintLog"
+    "-nullrhi", "-nosound", "-unattended", "-AbsLog=$mintLog"
   )
   try {
     $content = Wait-Log $mintLog "MINTED_TICKET=([^\r\n\s]+)" "mint_timeout_$script:mintIndex"
@@ -73,7 +71,7 @@ function Mint-Ticket([string]$Account, [string]$Character, [string]$Faction, [st
 function Connect-Client([string]$Name, [string]$TravelUrl, [string]$ExpectedMarker) {
   $clientLog = Join-Path $Scratch "client_$Name.log"
   $client = Start-Editor @(
-    $Project, $TravelUrl, "-game", "-nullrhi", "-nosound", "-unattended", "-log", "-AbsLog=$clientLog"
+    $Project, $TravelUrl, "-game", "-nullrhi", "-nosound", "-unattended", "-AbsLog=$clientLog"
   )
   try {
     [void](Wait-Log $districtLog $ExpectedMarker "client_$Name`_marker_timeout")
@@ -93,6 +91,12 @@ try {
 
   Remove-Item -LiteralPath $Scratch -Recurse -Force -ErrorAction SilentlyContinue
   New-Item -ItemType Directory -Force -Path $Scratch | Out-Null
+  # M16 zero-trust: world/district processes preflight APB_DEPLOYMENT_SECRET and halt when it
+  # is missing. The spine exports it for child gates; standalone leg runs must set it too.
+  [Environment]::SetEnvironmentVariable('APB_DEPLOYMENT_SECRET', ('a1' * 32), 'Process')
+  # M7 teardown hardening: kill any leftover editors from a prior run BEFORE launching,
+  # so this gate never starts with a live ghost. Sweep-and-verify throws if any persist.
+  Stop-GateProcesses
 
   $validToken = Mint-Ticket "probe" "ProbeChar" "Criminal" $financial.id
   $wrongDistrictToken = Mint-Ticket "probe" "ProbeChar" "Criminal" "Waterfront"
@@ -103,7 +107,7 @@ try {
   $district = Start-Editor @(
     $Project, "$freeroamMap`?listen?MaxPlayers=$([int]$financial.max_players)?game=/Script/APBReloaded.APBFreeroamGameMode",
     "-game", "-Port=$districtPort", "-DistrictId=$($financial.id)", "-NumericId=$([int]$financial.numeric_id)",
-    "-RequireTicket", "-nullrhi", "-nosound", "-unattended", "-log", "-AbsLog=$districtLog"
+    "-RequireTicket", "-nullrhi", "-nosound", "-unattended", "-AbsLog=$districtLog"
   )
   [void](Wait-Log $districtLog "APB District session .*district=$($financial.id)" "district_bootstrap_timeout")
 
@@ -121,7 +125,7 @@ try {
 } catch {
   $failure = $_.Exception.Message.Replace("`r", " ").Replace("`n", " ")
 } finally {
-  Stop-GateProcesses
+  Stop-GateProcesses -BestEffort
   Write-Host "===== district_ticket.log ====="
   if (Test-Path $districtLog) {
     Get-Content $districtLog | Where-Object { $_ -match "DISTRICT_TICKET_" }

@@ -9,6 +9,7 @@ param(
 
 $ErrorActionPreference = "Stop"
 $projectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
+. (Join-Path $PSScriptRoot "scripts\APBGateCleanup.ps1")
 $logPath = Join-Path $Scratch "world_relay.log"
 $world = $null
 $failure = $null
@@ -17,18 +18,8 @@ function Fail([string]$Reason) {
   throw [System.InvalidOperationException]::new($Reason)
 }
 
-function Stop-WorldProcess {
-  if ($null -ne $world) {
-    try {
-      if (-not $world.HasExited) {
-        Stop-Process -Id $world.Id -Force -ErrorAction SilentlyContinue
-        $world.WaitForExit(10000) | Out-Null
-      }
-    } catch {}
-  }
-  Get-Process -Name "UnrealEditor","CrashReportClientEditor" -ErrorAction SilentlyContinue |
-    Where-Object { $_.Path -like "D:\UE58\UE_5.8\Engine\Binaries\Win64\*" } |
-    Stop-Process -Force -ErrorAction SilentlyContinue
+function Stop-WorldProcess([switch]$BestEffort) {
+  Stop-APBGateProcesses -Tracked @($world) -Project $Project -EngineBin (Split-Path $Editor) -BestEffort:$BestEffort
 }
 
 function Send-RelayLine([string]$Line, [bool]$ReadResponse) {
@@ -71,14 +62,17 @@ try {
   Remove-Item -LiteralPath $Scratch -Recurse -Force -ErrorAction SilentlyContinue
   New-Item -ItemType Directory -Force -Path $Scratch | Out-Null
   Remove-Item -LiteralPath $logPath -Force -ErrorAction SilentlyContinue
+  # M7 teardown hardening: kill any leftover editors from a prior run BEFORE launching,
+  # so this gate never starts with a live ghost. Sweep-and-verify throws if any persist.
+  Stop-WorldProcess
 
   $frontendMap = "/Game/Maps/Lvl_APB_Frontend"
   $worldArgs = @(
     $Project, "$frontendMap`?listen?game=/Script/APBReloaded.APBWorldGameMode",
     "-game", "-WorldServer", "-Port=17778", "-RelayPort=$RelayPort",
-    "-nullrhi", "-nosound", "-unattended", "-log", "-AbsLog=$logPath"
+    "-nullrhi", "-nosound", "-unattended", "-AbsLog=$logPath"
   )
-  $world = Start-Process -FilePath $Editor -ArgumentList $worldArgs -PassThru -WorkingDirectory (Split-Path $Editor) -NoNewWindow
+  $world = Start-Process -FilePath $Editor -ArgumentList $worldArgs -PassThru -WorkingDirectory (Split-Path $Editor) -WindowStyle Hidden
 
   $startup = [Diagnostics.Stopwatch]::StartNew()
   while ($startup.Elapsed.TotalSeconds -lt $TimeoutSec) {
@@ -119,7 +113,7 @@ try {
 } catch {
   $failure = $_.Exception.Message.Replace("`r", " ").Replace("`n", " ")
 } finally {
-  Stop-WorldProcess
+  Stop-WorldProcess -BestEffort
   Write-Host "===== world_relay.log ====="
   if (Test-Path $logPath) {
     Get-Content $logPath | Where-Object { $_ -match "RELAY_" }

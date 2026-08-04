@@ -8,6 +8,7 @@ param(
 $ErrorActionPreference = "Stop"
 $projectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
 . (Join-Path $PSScriptRoot "scripts\APBPortContract.ps1")
+. (Join-Path $PSScriptRoot "scripts\APBGateCleanup.ps1")
 $ports = Get-APBPortContract -ProjectRoot $projectRoot
 $failure = $null
 $world = $null
@@ -24,28 +25,11 @@ $tamperProbeLog = $null
 
 function Fail([string]$Reason) { throw [InvalidOperationException]::new($Reason) }
 
-function Stop-ProcessTree([Diagnostics.Process]$Process) {
-  if ($null -eq $Process) { return }
-  try {
-    Get-CimInstance Win32_Process -Filter "ParentProcessId=$($Process.Id)" |
-      ForEach-Object { Stop-Process -Id $_.ProcessId -Force -ErrorAction SilentlyContinue }
-    if (-not $Process.HasExited) {
-      Stop-Process -Id $Process.Id -Force -ErrorAction SilentlyContinue
-      $Process.WaitForExit(10000) | Out-Null
-    }
-  } catch {}
-}
-
-function Stop-GateProcesses {
-  Stop-ProcessTree $client
-  Stop-ProcessTree $district
-  Stop-ProcessTree $world
+function Stop-GateProcesses([switch]$BestEffort) {
+  Stop-APBGateProcesses -Tracked @($client, $district, $world) -Project $Project -EngineBin (Split-Path $Editor) -BestEffort:$BestEffort
   $client = $null
   $district = $null
   $world = $null
-  Get-Process -Name "UnrealEditor","CrashReportClientEditor" -ErrorAction SilentlyContinue |
-    Where-Object { $_.Path -like "D:\UE58\UE_5.8\Engine\Binaries\Win64\*" } |
-    Stop-Process -Force -ErrorAction SilentlyContinue
 }
 
 function Assert-PortsFree([int]$DistrictPort) {
@@ -59,7 +43,7 @@ function Assert-PortsFree([int]$DistrictPort) {
 }
 
 function Start-Editor([string[]]$Arguments) {
-  Start-Process -FilePath $Editor -ArgumentList $Arguments -PassThru -WorkingDirectory (Split-Path $Editor) -NoNewWindow
+  Start-Process -FilePath $Editor -ArgumentList $Arguments -PassThru -WorkingDirectory (Split-Path $Editor) -WindowStyle Hidden
 }
 
 function Wait-Log([string]$Path, [string]$Pattern, [string]$FailureName) {
@@ -78,7 +62,7 @@ function Start-World([string]$LogPath, [bool]$Tamper) {
   $arguments = @(
     $Project, "/Game/Maps/Lvl_APB_Frontend?listen?game=/Script/APBReloaded.APBWorldGameMode",
     "-game", "-WorldServer", "-APBProbe=world_handoff_server", "-Port=$($ports.World)", "-RelayPort=$($ports.Relay)",
-    "-nullrhi", "-nosound", "-unattended", "-log", "-AbsLog=$LogPath"
+    "-nullrhi", "-nosound", "-unattended", "-AbsLog=$LogPath"
   )
   if ($Tamper) { $arguments += "-APBRelayTamperCharacter=Operative" }
   Start-Editor $arguments
@@ -89,14 +73,14 @@ function Start-District([pscustomobject]$DistrictInfo, [int]$DistrictPort, [stri
     $Project, "/Game/Maps/$($DistrictInfo.map)`?listen?MaxPlayers=$([int]$DistrictInfo.max_players)?game=/Script/APBReloaded.APBFreeroamGameMode",
     "-game", "-APBProbe=world_handoff_district", "-Port=$DistrictPort", "-WorldPort=$($ports.World)",
     "-RelayHost=127.0.0.1", "-RelayPort=$($ports.Relay)", "-DistrictId=$($DistrictInfo.id)", "-NumericId=$([int]$DistrictInfo.numeric_id)", "-RequireTicket",
-    "-nullrhi", "-nosound", "-unattended", "-log", "-AbsLog=$LogPath"
+    "-nullrhi", "-nosound", "-unattended", "-AbsLog=$LogPath"
   )
 }
 
 function Start-HandoffClient([string]$Id, [string]$EngineLog) {
   Start-Editor @(
     $Project, "127.0.0.1:$($ports.World)", "-game", "-WorldServerHost=127.0.0.1", "-APBProbe=world_handoff_client", "-WSClientId=$Id",
-    "-nullrhi", "-nosound", "-unattended", "-log", "-AbsLog=$EngineLog", "-APBScratch=$Scratch"
+    "-nullrhi", "-nosound", "-unattended", "-AbsLog=$EngineLog", "-APBScratch=$Scratch"
   )
 }
 
@@ -117,6 +101,9 @@ try {
   Assert-PortsFree $financialPort
   Remove-Item $Scratch -Recurse -Force -ErrorAction SilentlyContinue
   New-Item -ItemType Directory -Force -Path $Scratch | Out-Null
+  # M16 zero-trust: world/district processes preflight APB_DEPLOYMENT_SECRET and halt when it
+  # is missing. The spine exports it for child gates; standalone leg runs must set it too.
+  [Environment]::SetEnvironmentVariable('APB_DEPLOYMENT_SECRET', ('a1' * 32), 'Process')
 
   $happyWorldLog = Join-Path $Scratch "world_happy.log"
   $happyDistrictLog = Join-Path $Scratch "district_happy.log"
@@ -151,7 +138,7 @@ try {
 } catch {
   $failure = $_.Exception.Message.Replace("`r", " ").Replace("`n", " ")
 } finally {
-  Stop-GateProcesses
+  Stop-GateProcesses -BestEffort
   Write-Host "===== happy world ====="
   if ($happyWorldLog -and (Test-Path $happyWorldLog)) { Get-Content $happyWorldLog | Where-Object { $_ -match "CHAR_HANDOFF|CHAR_RETURN|RELAY_|TRAVEL_" } }
   Write-Host "===== happy district ====="

@@ -8,6 +8,7 @@ param(
 $ErrorActionPreference = "Stop"
 $projectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
 . (Join-Path $PSScriptRoot "scripts\APBPortContract.ps1")
+. (Join-Path $PSScriptRoot "scripts\APBGateCleanup.ps1")
 $ports = Get-APBPortContract -ProjectRoot $projectRoot
 $worldLog = Join-Path $Scratch "world_relay.log"
 $worldRestartLog = Join-Path $Scratch "world_relay_restart.log"
@@ -32,12 +33,8 @@ function Stop-ProcessTree([Diagnostics.Process]$Process) {
   } catch {}
 }
 
-function Stop-AllGateProcesses {
-  Stop-ProcessTree $district
-  Stop-ProcessTree $world
-  Get-Process -Name "UnrealEditor","CrashReportClientEditor" -ErrorAction SilentlyContinue |
-    Where-Object { $_.Path -like "D:\UE58\UE_5.8\Engine\Binaries\Win64\*" } |
-    Stop-Process -Force -ErrorAction SilentlyContinue
+function Stop-AllGateProcesses([switch]$BestEffort) {
+  Stop-APBGateProcesses -Tracked @($district, $world) -Project $Project -EngineBin (Split-Path $Editor) -BestEffort:$BestEffort
 }
 
 function Launch-World([string]$LogPath) {
@@ -45,9 +42,9 @@ function Launch-World([string]$LogPath) {
   $args = @(
     $Project, "$frontendMap`?listen?game=/Script/APBReloaded.APBWorldGameMode",
     "-game", "-WorldServer", "-Port=$($ports.World)", "-RelayPort=$($ports.Relay)",
-    "-nullrhi", "-nosound", "-unattended", "-log", "-AbsLog=$LogPath"
+    "-nullrhi", "-nosound", "-unattended", "-AbsLog=$LogPath"
   )
-  return Start-Process -FilePath $Editor -ArgumentList $args -PassThru -WorkingDirectory (Split-Path $Editor) -NoNewWindow
+  return Start-Process -FilePath $Editor -ArgumentList $args -PassThru -WorkingDirectory (Split-Path $Editor) -WindowStyle Hidden
 }
 
 function Launch-District([pscustomobject]$District, [int]$DistrictPort) {
@@ -56,9 +53,9 @@ function Launch-District([pscustomobject]$District, [int]$DistrictPort) {
     $Project, "$map`?listen?MaxPlayers=$([int]$District.max_players)?game=/Script/APBReloaded.APBFreeroamGameMode",
     "-game", "-Port=$DistrictPort", "-RelayHost=127.0.0.1", "-RelayPort=$($ports.Relay)",
     "-DistrictId=$($District.id)", "-NumericId=$([int]$District.numeric_id)",
-    "-nullrhi", "-nosound", "-unattended", "-log", "-AbsLog=$districtLog"
+    "-nullrhi", "-nosound", "-unattended", "-AbsLog=$districtLog"
   )
-  return Start-Process -FilePath $Editor -ArgumentList $args -PassThru -WorkingDirectory (Split-Path $Editor) -NoNewWindow
+  return Start-Process -FilePath $Editor -ArgumentList $args -PassThru -WorkingDirectory (Split-Path $Editor) -WindowStyle Hidden
 }
 
 function Wait-Log([string]$Path, [string]$Pattern, [string]$FailureName) {
@@ -84,6 +81,12 @@ try {
 
   Remove-Item -LiteralPath $Scratch -Recurse -Force -ErrorAction SilentlyContinue
   New-Item -ItemType Directory -Force -Path $Scratch | Out-Null
+  # M16 zero-trust: world/district processes preflight APB_DEPLOYMENT_SECRET and halt when it
+  # is missing. The spine exports it for child gates; standalone leg runs must set it too.
+  [Environment]::SetEnvironmentVariable('APB_DEPLOYMENT_SECRET', ('a1' * 32), 'Process')
+  # M7 teardown hardening: kill any leftover editors from a prior run BEFORE launching,
+  # so this gate never starts with a live ghost. Sweep-and-verify throws if any persist.
+  Stop-AllGateProcesses
 
   $world = Launch-World $worldLog
   [void](Wait-Log $worldLog "RELAY_LISTEN port=$($ports.Relay)" "world_listen_timeout")
@@ -108,7 +111,7 @@ try {
 } catch {
   $failure = $_.Exception.Message.Replace("`r", " ").Replace("`n", " ")
 } finally {
-  Stop-AllGateProcesses
+  Stop-AllGateProcesses -BestEffort
   Write-Host "===== world_relay.log ====="
   if (Test-Path $worldLog) { Get-Content $worldLog | Where-Object { $_ -match "RELAY_" } } else { Write-Host "(no world log written)" }
   Write-Host "===== district_relay.log ====="

@@ -2,13 +2,14 @@ param(
   [string]$Scratch = "$env:TEMP\apb_m7_directory_gate",
   [string]$Project = "D:\APBReloaded\APBReloaded.uproject",
   [string]$Editor = "D:\UE58\UE_5.8\Engine\Binaries\Win64\UnrealEditor.exe",
-  [int]$TimeoutSec = 120
+  [int]$TimeoutSec = 300
 )
 
 $ErrorActionPreference = 'Stop'
 Set-StrictMode -Version Latest
 $projectRoot = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
 . (Join-Path $PSScriptRoot 'scripts\APBPortContract.ps1')
+. (Join-Path $PSScriptRoot 'scripts\APBGateCleanup.ps1')
 $ports = Get-APBPortContract -ProjectRoot $projectRoot
 $failure = $null
 $world = $null
@@ -77,16 +78,10 @@ function Get-GateProcesses {
     })
 }
 
-function Stop-AllGateProcesses {
-  foreach ($client in @($survivorClient, $leastClient, $seedClient)) {
-    if ($null -ne $client) { Stop-ProcessTree $client.Process }
-  }
-  foreach ($gateProcess in @($financialB, $financialA, $world)) {
-    Stop-ProcessTree $gateProcess
-  }
-  Get-GateProcesses | ForEach-Object {
-    Stop-Process -Id $_.ProcessId -Force -ErrorAction SilentlyContinue
-  }
+function Stop-AllGateProcesses([switch]$BestEffort) {
+  $clients = @($survivorClient, $leastClient, $seedClient) | Where-Object { $null -ne $_ } | ForEach-Object { $_.Process }
+  Stop-APBGateProcesses -Tracked ($clients + @($financialB, $financialA, $world)) `
+    -Project $Project -EngineBin (Split-Path $Editor) -BestEffort:$BestEffort
 }
 
 function Get-BoundPortCount([int[]]$DistrictPorts) {
@@ -103,14 +98,14 @@ function Assert-PortsFree([int[]]$DistrictPorts) {
 
 function Start-Editor([string[]]$Arguments) {
   return Start-Process -FilePath $Editor -ArgumentList $Arguments -PassThru `
-    -WorkingDirectory (Split-Path $Editor) -NoNewWindow
+    -WorkingDirectory (Split-Path $Editor) -WindowStyle Hidden
 }
 
 function Launch-World([string]$LogPath) {
   return Start-Editor @(
     $Project, '/Game/Maps/Lvl_APB_Frontend?listen?game=/Script/APBReloaded.APBWorldGameMode',
     '-game', '-WorldServer', "-Port=$($ports.World)", "-RelayPort=$($ports.Relay)",
-    '-nullrhi', '-nosound', '-unattended', '-log', "-AbsLog=$LogPath", "-APBScratch=$Scratch"
+    '-nullrhi', '-nosound', '-unattended', "-AbsLog=$LogPath", "-APBScratch=$Scratch"
   )
 }
 
@@ -120,7 +115,7 @@ function Launch-District([pscustomobject]$District, [string]$InstanceId,
     $Project, "/Game/Maps/$($District.map)?listen?MaxPlayers=$([int]$District.max_players)?game=/Script/APBReloaded.APBFreeroamGameMode",
     '-game', "-Port=$InstancePort", '-RelayHost=127.0.0.1', "-RelayPort=$($ports.Relay)",
     "-DistrictId=$($District.id)", "-NumericId=$InstanceNumericId", '-RequireTicket',
-    '-nullrhi', '-nosound', '-unattended', '-log', "-AbsLog=$LogPath", "-APBScratch=$Scratch"
+    '-nullrhi', '-nosound', '-unattended', "-AbsLog=$LogPath", "-APBScratch=$Scratch"
   )
 }
 
@@ -130,7 +125,7 @@ function Start-TravelClient([string]$Id) {
   $process = Start-Editor @(
     $Project, "127.0.0.1:$($ports.World)", '-game', '-WorldServerHost=127.0.0.1',
     '-APBProbe=world_travel_client', "-WSClientId=$Id", '-WSTravelDistrict=Financial',
-    '-nullrhi', '-nosound', '-unattended', '-log', "-AbsLog=$engineLog", "-APBScratch=$Scratch"
+    '-nullrhi', '-nosound', '-unattended', "-AbsLog=$engineLog", "-APBScratch=$Scratch"
   )
   return [pscustomobject]@{ Process = $process; ProbeLog = $probeLog; EngineLog = $engineLog }
 }
@@ -141,7 +136,7 @@ function Start-DirectoryTicketClient([string]$Id) {
   $process = Start-Editor @(
     $Project, "127.0.0.1:$($ports.World)", '-game', '-WorldServerHost=127.0.0.1',
     '-APBProbe=world_server_client', "-WSClientId=$Id",
-    '-nullrhi', '-nosound', '-unattended', '-log', "-AbsLog=$engineLog", "-APBScratch=$Scratch"
+    '-nullrhi', '-nosound', '-unattended', "-AbsLog=$engineLog", "-APBScratch=$Scratch"
   )
   return [pscustomobject]@{ Process = $process; ProbeLog = $probeLog; EngineLog = $engineLog }
 }
@@ -307,6 +302,12 @@ try {
   New-Item -ItemType Directory -Force -Path $Scratch | Out-Null
   Stop-AllGateProcesses
 	Assert-PortsFree $allBoundPorts
+	$persistedCharacters = Join-Path $projectRoot 'Saved\DomainDB\characters'
+	foreach ($probeAccount in @('travel_directory_seed', 'probe_directory_least', 'probe_directory_survivor')) {
+	  foreach ($suffix in @('_0.json', '_0_progress.json')) {
+		Remove-Item -LiteralPath (Join-Path $persistedCharacters ($probeAccount + $suffix)) -Force -ErrorAction SilentlyContinue
+	  }
+	}
 	[Environment]::SetEnvironmentVariable('APB_DEPLOYMENT_SECRET', ('a1' * 32), 'Process')
   $deadline = [Diagnostics.Stopwatch]::GetTimestamp() + ($TimeoutSec * [Diagnostics.Stopwatch]::Frequency)
   $worldLog = Join-Path $Scratch 'world.log'
@@ -326,7 +327,7 @@ try {
   $seedEngineLog = $seedClient.EngineLog
   $seedProbeLog = $seedClient.ProbeLog
   [void](Wait-Log $seedEngineLog "TRAVEL_OK district=Financial host=127.0.0.1 port=$financialAPort" 'seed_travel_to_financial_a_timeout')
-  [void](Wait-Log $financialALog 'DISTRICT_TICKET_ADMITTED account=ACC-travel_directory_seed char=Operative' 'seed_admission_timeout')
+  [void](Wait-Log $financialALog 'DISTRICT_TICKET_ADMITTED account=ACC-travel_directory_seed char=travel_directory_seed' 'seed_admission_timeout')
 
   $leastClient = Start-DirectoryTicketClient 'directory_least'
   $leastEngineLog = $leastClient.EngineLog
@@ -363,7 +364,7 @@ try {
 } catch {
   $failure = $_.Exception.Message.Replace("`r", ' ').Replace("`n", ' ')
 } finally {
-	Stop-AllGateProcesses
+	Stop-AllGateProcesses -BestEffort
 	[Environment]::SetEnvironmentVariable('APB_DEPLOYMENT_SECRET', $oldDeploymentSecret, 'Process')
   Start-Sleep -Milliseconds 500
   $leaked = @(Get-GateProcesses).Count + (Get-BoundPortCount $allBoundPorts)
