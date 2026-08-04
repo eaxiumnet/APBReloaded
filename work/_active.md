@@ -440,15 +440,32 @@ GameModeMapPrefixes edit to avoid clashing with the existing frontend GameMode m
   to the M16 `APB_DEPLOYMENT_SECRET` contract (`RELAY_LISTENER_GATE_OK`, register
   `ok=1 reason=none`) — standalone socket probe only, not part of the compose.
 
-### M8 — Social district  *(brief #7 — D8)*
-- Spec-expansion first step. Scope: `RWorldSocialDistrict` content gap-closure via
-  pipeline + ledger; social-space fixtures (kiosks, terminals, music studio stubs);
-  `Lvl_APB_Social_Freeroam` probe green. Verify: bind report clean for Social.
+### M8 — Social district  *(brief #7 — D8)* — ✅ COMPLETE 2026-08-04
+- Scope delivered: `RWorldSocialDistrict` content gap-closure via pipeline + ledger
+  (466/466 placements bound, hit-rate 1.0, geometry_missing=0); social-space fixture
+  stubs (2 kiosks, 2 terminals, 1 music studio) spawned by
+  `AAPBFreeroamGameMode::SpawnPlayableWorldProps()`; kiosk validation test.
+- Evidence: `work/m8_social_district_pipeline.md` (PASS, standalone + verification
+  gate); spine runs `M8_SOCIAL_GATE_OK` (2026-08-04 spine_full7).
+- Remaining (not M8-scoped): full kiosk/terminal/studio gameplay — feeds M12 Economy.
 
-### M9 — Financial District  *(brief #8)*
-- Spec-expansion first step. Scope: geometry/prop gap closure (270 blocks, manifests
-  exist), lighting/collision pass, `-APBProbe=playable` on `Lvl_APB_Financial_Freeroam`.
-  Verify: gate spine Financial variant exit 0; no cube placeholders in bind report.
+### M9 — Financial District  *(brief #8)* — SPEC-EXPANDED 2026-08-04
+- **Spec-expansion (first step of M9):** the financial placement manifest is already
+  promoted to the full district — 44 source packages, 3565 manifest rows, 1457
+  source-visible placements, all geometry-bound (hit-rate 1.0, geometry_missing=0,
+  bind_report `financial_pass=true`), spawn-Z defect fixed (10th-percentile grounding).
+  What remains is the lighting/collision pass + playable probe acceptance.
+- Scope (this milestone): (1) lighting pass — `Financial_Block09_lights.json` is
+  currently empty (2 bytes); generate per-placement light data from retail sources and
+  verify no unlit/placeholder-looking blocks; (2) collision pass — verify pawn/vehicle
+  collision on the bound geometry, no gaps, no cube placeholders in bind report;
+  (3) `-APBProbe=playable` on `Lvl_APB_Financial_Freeroam` — walk=1 drive=1 terminal
+  markers green; (4) gate spine Financial variant exit 0.
+- Verify: bind report clean for Financial (`no cube placeholders`), `PLAYABLE_OK` on
+  the Financial map, `financial_hit_rate=1.0` holds; both `APBReloaded` +
+  `APBReloadedEditor` build exit 0.
+- Parallel-safe: M9 files (district placement JSONs, GameMode/probe) do not touch the
+  M12/M13 Domain files — M9 can run in parallel with M12/M13 UE surfaces.
 
 ### M10 — Waterfront  *(brief #9)*
 - Same shape as M9 for `Lvl_APB_Waterfront_Freeroam` (268 blocks). Verify: both district
