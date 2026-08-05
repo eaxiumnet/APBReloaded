@@ -8,14 +8,42 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import subprocess
 import sys
 from pathlib import Path
 
-STEAM_PS = Path(
-    r"C:\Program Files (x86)\Steam\steamapps\common\APB Reloaded\ApbPrivateServer"
-)
-PROJECT = Path(r"D:\APBReloaded")
+TOOLS_ROOT = Path(__file__).resolve().parents[1]
+REGISTRY_PATH = TOOLS_ROOT / "source_registry.json"
+REGISTRY = json.loads(REGISTRY_PATH.read_text(encoding="utf-8"))
+PROJECT = TOOLS_ROOT.parent
 SCRATCH_DEFAULT = Path(r"C:\Users\Support\AppData\Local\Temp\grok-goal-e6df5b4a9676\implementer")
+
+
+def resolve_source_root(alias: str) -> Path:
+    resolver = TOOLS_ROOT / "scripts" / "resolve_source_root.ps1"
+    completed = subprocess.run(
+        [
+            "pwsh",
+            "-NoProfile",
+            "-File",
+            str(resolver),
+            "-Alias",
+            alias,
+            "-Preflight",
+            "-RegistryPath",
+            str(REGISTRY_PATH),
+        ],
+        capture_output=True,
+        check=False,
+        text=True,
+    )
+    if completed.returncode != 0:
+        raise RuntimeError(completed.stderr.strip() or completed.stdout.strip())
+    return Path(completed.stdout.strip())
+
+
+RETAIL_ROOT = resolve_source_root("retail_steam")
+STEAM_PS = RETAIL_ROOT / REGISTRY["roots"]["retail_steam"]["apb_private_server_subpath"]
 
 LOBBY_OPODES = STEAM_PS / "LobbyServer" / "TCP" / "Opodes.cs"
 WORLD_OPCODES = STEAM_PS / "WorldServer" / "Tcp" / "Opcodes.cs"
@@ -176,16 +204,29 @@ def emit_report(data: dict, path: Path) -> None:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--scratch", type=Path, default=SCRATCH_DEFAULT)
+    ap.add_argument("--steam-root", type=Path)
+    ap.add_argument("--project-root", type=Path, default=PROJECT)
+    ap.add_argument("--out", type=Path)
     args = ap.parse_args()
-    data = load_privateserver_map()
-    out_json = PROJECT / "Content" / "Extracted" / "Convert" / "privateserver_opcodes.json"
+    if args.steam_root is not None and args.steam_root.resolve() != RETAIL_ROOT.resolve():
+        raise RuntimeError("--steam-root must equal the canonical retail_steam resolver result")
+    private_server_root = STEAM_PS
+    lobby_path = private_server_root / "LobbyServer" / "TCP" / "Opodes.cs"
+    world_path = private_server_root / "WorldServer" / "Tcp" / "Opcodes.cs"
+    char_path = private_server_root / "Common" / "DBCharacter.cs"
+    data = load_privateserver_map(lobby_path, world_path, char_path)
+    out_json = args.project_root / "Content" / "Extracted" / "Convert" / "privateserver_opcodes.json"
     out_json.parent.mkdir(parents=True, exist_ok=True)
     out_json.write_text(json.dumps(data, indent=2), encoding="utf-8")
     args.scratch.mkdir(parents=True, exist_ok=True)
     (args.scratch / "privateserver_opcodes.json").write_text(json.dumps(data, indent=2), encoding="utf-8")
-    emit_cpp_header(data, PROJECT / "Source" / "APBReloaded" / "Domain" / "APBPrivateServerOpcodes.h")
-    emit_report(data, PROJECT / "tools" / "convert" / "PRIVATESERVER_REUSE.md")
+    header_out = args.out or args.project_root / "Source" / "APBReloaded" / "Domain" / "APBPrivateServerOpcodes.h"
+    emit_cpp_header(data, header_out)
+    emit_report(data, args.project_root / "tools" / "convert" / "PRIVATESERVER_REUSE.md")
     emit_report(data, args.scratch / "privateserver_reuse.md")
+    print(f"resolved_steam_root={RETAIL_ROOT}")
+    print(f"resolved_project_root={args.project_root}")
+    print(f"header_out={header_out}")
     print(
         f"lobby={len(data['lobby'])} world={len(data['world'])} "
         f"ASK_LOGIN=0x{data['lobby'].get('ASK_LOGIN',0):X} "

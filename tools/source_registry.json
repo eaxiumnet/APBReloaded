@@ -10,6 +10,7 @@
         "licensee": 33
       },
       "packages_subpath": "APBGame\\Content\\Release\\Packages",
+      "package_probe": "Character\\Contact\\Contact_LaRocha.upk",
       "apb_private_server_subpath": "ApbPrivateServer",
       "note": "Policy-canonical retail root (C1)."
     },
@@ -29,6 +30,7 @@
         "licensee": 31
       },
       "packages_subpath": "APBGame\\Content",
+      "package_probe": "Interface\\APBMenus_AcceptDecline.upk",
       "note": "2011 RTW game root (Client dir; the installer/launcher layout sits above it). Menu packages: APBGame\\Content\\Interface\\APBMenus_*.upk (pkg 547/31, umodel-verified). Relocated per 2026-08-01 frontend forensics report; the former 'APB North America' root no longer exists on disk."
     },
     "ref_2011_archive": {
@@ -42,6 +44,17 @@
     "umodel": {
       "path": "D:\\APBReloaded\\tools\\UEViewer\\umodel_64.exe",
       "patched_fork": true,
+      "identity": {
+        "file_name": "umodel_64.exe",
+        "sha256": "aff4fcbfe40646fd2f3011d94ee3ba4e894e8b03fb4d73358dde51818428b410",
+        "bytes": 1218560
+      },
+      "capability_probe": {
+        "source_alias": "retail_steam",
+        "package": "Character\\Contact\\Contact_LaRocha.upk",
+        "game_tag": "apb",
+        "list_pattern": "(?m)^\\s*\\d+\\s+\\S+"
+      },
       "supports": [
         "564/33",
         "547/31"
