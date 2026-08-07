@@ -22,6 +22,7 @@ def test_list_colmask_regions_returns_dict(tmp_path: Path) -> None:
     (item_dir / "TestItem_Main_ColMask_0Base.tga").touch()
     (item_dir / "TestItem_Main_ColMask_1Straps.tga").touch()
     (item_dir / "TestItem_Main_ColMask_2Buckle.tga").touch()
+    (item_dir / "TestItem_Main_Diff.tga").touch()
 
     regions = list_colmask_regions(item_dir.parent)
 
@@ -58,17 +59,24 @@ def test_build_clothing_catalog(tmp_path: Path) -> None:
     (item1_dir / "Item1_Main_ColMask_0Base.tga").touch()
     (item1_dir / "Item1_Main_ColMask_1Straps.tga").touch()
     (item1_dir / "Item1_Main_ColMask_2Buckle.tga").touch()
+    (item1_dir / "Item1_Main_Diff.tga").touch()
 
     # Item 2: 2 regions
     item2_dir = characters_bulk / "Item2" / "Item2" / "Texture2D"
     item2_dir.mkdir(parents=True)
     (item2_dir / "Item2_Main_ColMask_0Base.tga").touch()
     (item2_dir / "Item2_Main_ColMask_1Trim.tga").touch()
+    (item2_dir / "Item2_Main_Diff.tga").touch()
 
     # Item 3: no ColMask regions (should be skipped)
     item3_dir = characters_bulk / "Item3" / "Item3" / "Texture2D"
     item3_dir.mkdir(parents=True)
     (item3_dir / "Item3_Diff.tga").touch()
+
+    # Item 4: mapping-only folder (should be skipped)
+    item4_dir = characters_bulk / "Item4" / "Item4" / "Texture2D"
+    item4_dir.mkdir(parents=True)
+    (item4_dir / "Item4_Main_ColMask_0Base.tga").touch()
 
     catalog = build_clothing_catalog(characters_bulk)
 

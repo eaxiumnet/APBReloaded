@@ -24,7 +24,21 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          sparse-checkout: docs
+          sparse-checkout: |
+            docs
+            tools/content-studio/studio-static
+      # The baked static studio (build_static.ps1) is gitignored by default;
+      # when a maintainer commits it under tools/content-studio/studio-static,
+      # publish it at /studio/ alongside the landing page. A committed
+      # docs/studio/ wins (never overwritten) if a maintainer copied the bake
+      # there instead.
+      - name: Prepare site
+        shell: bash
+        run: |
+          if [ -d tools/content-studio/studio-static ] && [ ! -d docs/studio ]; then
+            mkdir -p docs/studio
+            cp -r tools/content-studio/studio-static/. docs/studio/
+          fi
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact

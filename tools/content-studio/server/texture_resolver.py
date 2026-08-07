@@ -92,6 +92,16 @@ def _find_stencil(design: Path, material: MaterialInstance) -> Path | None:
     return None
 
 
+def _find_referenced_texture(design: Path, reference: str) -> Path | None:
+    stem = reference.rsplit(".", 1)[-1].casefold()
+    matches = sorted(
+        path.resolve()
+        for path in design.rglob("*.tga")
+        if path.stem.casefold() == stem
+    )
+    return matches[0] if len(matches) == 1 else None
+
+
 def _strip_weapon_prefix(name: str) -> str:
     return name[len("weapon_"):] if name.startswith("weapon_") else name
 
@@ -150,6 +160,25 @@ def find_default_textures(psk_path: Path, skin: str | None = None) -> TextureRes
         if material_path is None:
             return default
         material = parse_material_instance(material_path)
+        for parameter, reference in material.textures.items():
+            if reference.casefold() == "none":
+                continue
+            texture = _find_referenced_texture(design, reference)
+            if texture is None:
+                continue
+            parameter_key = parameter.casefold()
+            if "normal" in parameter_key:
+                default["normal"] = texture
+            elif "mask 1" in parameter_key:
+                default["mask1"] = texture
+            elif "mask 2" in parameter_key:
+                default["mask2"] = texture
+            elif "spec" in parameter_key:
+                default["specular"] = texture
+            elif "diff" in parameter_key:
+                default["baseColor"] = texture
+            elif "opac" in parameter_key:
+                default["opacity"] = texture
         default["skin_colors"] = material.vectors
         default["skin_scalars"] = material.scalars
         stencil = _find_stencil(design, material)

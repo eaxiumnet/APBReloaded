@@ -28,6 +28,10 @@ const FRONTEND_URL = "http://localhost:5173/";
 
 export default defineConfig({
   testDir: "./e2e",
+  // static.spec.ts runs against the baked bundle under its own config
+  // (playwright.static.config.ts); it asserts zero /api traffic and would
+  // fail against the live backend.
+  testIgnore: /static\.spec\.ts/,
   // One worker, no parallelism: we run two shared dev servers per run.
   fullyParallel: false,
   workers: 1,

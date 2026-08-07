@@ -104,6 +104,15 @@ def build_clothing_catalog(characters_bulk: Path) -> list[dict]:
         if not regions:
             continue  # skip items without ColMask regions
 
+        texture_dir = inner / "Texture2D"
+        has_diffuse = any(
+            path.is_file()
+            for pattern in ("*_Main_Diff.tga", "*_Xtra_Diff.tga", "*_Diff.tga")
+            for path in texture_dir.glob(pattern)
+        )
+        if not has_diffuse:
+            continue  # mapping-only folders do not produce a useful preview
+
         item_id = f"{item_dir.name}/{inner.name}"
         items.append({
             "id": item_id,
@@ -113,5 +122,3 @@ def build_clothing_catalog(characters_bulk: Path) -> list[dict]:
         })
 
     return items
-
-

@@ -243,3 +243,18 @@ def test_flare_gun_picks_stem_diff_not_joker() -> None:
     textures = find_default_textures(FLARE_GUN)
     assert textures["baseColor"].name.casefold() == "weapon_flaregun_diff.tga"
     assert textures["normal"].name.casefold() == "weapon_flaregun_norm.tga"
+
+
+def test_alig_skin_uses_its_referenced_variant_textures() -> None:
+    mesh = (
+        REPO_ROOT
+        / "Content/Extracted/WeaponsBase/Weapon_Armas_LightMachineGun_762"
+        / "Weapon_Armas_LightMachineGun_762/SkeletalMesh3/Weapon_LightMachineGun_762_LOD0.psk"
+    )
+    skin = (
+        "Weapon_Armas_LightMachineGun_762/MaterialInstanceConstant/"
+        "Weapon_LightMachineGun_762_Propaganda_MAT_INST.props.txt"
+    )
+    textures = find_default_textures(mesh, skin=skin)
+    assert textures["baseColor"].name == "Weapon_LightMachineGun_556_Diff.tga"
+    assert textures["normal"].name == "Weapon_LightMachineGun_556_Norm.tga"

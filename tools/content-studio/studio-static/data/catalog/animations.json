@@ -1,0 +1,63 @@
+{
+ "count": 2,
+ "animsets": [
+  {
+   "id": "AnimSet",
+   "display": "Anim_Contact_Specific_Standing",
+   "relpath": "Anim_Contact_Specific_Standing/AnimSet/Anim_Contact_Specific_Standing_AnimSet.psa",
+   "bone_count": 143,
+   "clips": [
+    {
+     "name": "Contact_Stand_Alert_to_DefaultIdle",
+     "frames": 78,
+     "rate": 30.000001907348633,
+     "duration": 2.6,
+     "tracks": 0
+    },
+    {
+     "name": "Contact_Stand_DefaultIdle_01",
+     "frames": 364,
+     "rate": 30.0,
+     "duration": 12.133,
+     "tracks": 0
+    },
+    {
+     "name": "Contact_Stand_DefaultIdle_02",
+     "frames": 240,
+     "rate": 30.0,
+     "duration": 8.0,
+     "tracks": 0
+    }
+   ]
+  },
+  {
+   "id": "AnimSet",
+   "display": "Anim_Contact_Specific_Standing_Fem",
+   "relpath": "Anim_Contact_Specific_Standing_Fem/AnimSet/Anim_Contact_Specific_Standing_Fem_AnimSet.psa",
+   "bone_count": 143,
+   "clips": [
+    {
+     "name": "Contact_Stand_Alert_to_DefaultIdle",
+     "frames": 67,
+     "rate": 30.0,
+     "duration": 2.233,
+     "tracks": 0
+    },
+    {
+     "name": "Contact_Stand_DefaultIdle_01",
+     "frames": 61,
+     "rate": 30.0,
+     "duration": 2.033,
+     "tracks": 0
+    },
+    {
+     "name": "Contact_Stand_DefaultIdle_02",
+     "frames": 129,
+     "rate": 29.999998092651367,
+     "duration": 4.3,
+     "tracks": 0
+    }
+   ]
+  }
+ ]
+}

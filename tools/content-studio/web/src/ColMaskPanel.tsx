@@ -1,5 +1,7 @@
 ﻿import { useEffect, useState } from "react";
 
+import { apiFetch, staticUrl } from "./api";
+
 type ClothingItem = {
   id: string;
   name: string;
@@ -27,33 +29,45 @@ export function ClothingSidebar({ onMeshChange, onColorChange }: ClothingSidebar
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("/api/catalog/clothing")
-      .then((r) => r.json())
+    const controller = new AbortController();
+    apiFetch("/api/catalog/clothing", { signal: controller.signal })
+      .then((r) => {
+        if (!r.ok) throw new Error(`clothing catalog failed: ${r.status}`);
+        return r.json();
+      })
       .then((data) => {
         setItems(data.items ?? []);
-        if (data.items?.length) setSelected(data.items[0]);
+        setSelected((current) => current ?? data.items?.[0] ?? null);
         setLoading(false);
       })
       .catch((e) => {
+        if (e.name === "AbortError") return;
         setError(String(e));
         setLoading(false);
       });
+    return () => controller.abort();
   }, []);
 
   useEffect(() => {
-    if (!selected) {
+    const selectedId = selected?.id;
+    const selectedName = selected?.name;
+    if (!selectedId || !selectedName) {
       setRegions([]);
       onMeshChange(null, "");
       return;
     }
 
     // Construct mesh URL: /api/clothing/mesh.glb?item=<name>
-    const meshUrl = `/api/clothing/mesh.glb?item=${encodeURIComponent(selected.name)}`;
-    onMeshChange(meshUrl, selected.name);
+    const meshUrl = staticUrl(`/api/clothing/mesh.glb?item=${encodeURIComponent(selectedName)}`);
+    onMeshChange(meshUrl, selectedName);
 
     setLoadingRegions(true);
-    fetch(`/api/colmask?item=${encodeURIComponent(selected.id)}`)
-      .then((r) => r.json())
+    const controller = new AbortController();
+    apiFetch(`/api/colmask?item=${encodeURIComponent(selectedId)}`, { signal: controller.signal })
+      .then(async (r) => {
+        if (!r.ok) throw new Error(await r.text());
+        return r.json();
+      })
       .then((data) => {
         const regionList: RegionData[] = Object.entries(data.regions || {}).map(
           ([name, path]) => ({
@@ -66,11 +80,13 @@ export function ClothingSidebar({ onMeshChange, onColorChange }: ClothingSidebar
         setLoadingRegions(false);
       })
       .catch((e) => {
+        if (e.name === "AbortError") return;
         console.error("Failed to load regions:", e);
         setRegions([]);
         setLoadingRegions(false);
       });
-  }, [selected, onMeshChange]);
+    return () => controller.abort();
+  }, [selected?.id, selected?.name, onMeshChange]);
 
   const handleColorChange = (regionName: string, color: string) => {
     setRegions((prev) =>
@@ -111,7 +127,7 @@ export function ClothingSidebar({ onMeshChange, onColorChange }: ClothingSidebar
                 <div key={region.name} className="region-card">
                   <div className="region-thumb">
                     <img
-                      src={`/api/colmask/texture?path=${encodeURIComponent(region.path)}`}
+                      src={staticUrl(`/api/colmask/texture?path=${encodeURIComponent(region.path)}`)}
                       alt={region.name}
                       onError={(e) => {
                         (e.target as HTMLImageElement).style.display = "none";

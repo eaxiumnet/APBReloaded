@@ -1,0 +1,259 @@
+{
+ "sockets": [
+  {
+   "name": "Wheel",
+   "bone": "Bone:WheelDamage_RearRight",
+   "position": [
+    -134.69349670410156,
+    -79.9450454711914,
+    32.96685791015625
+   ],
+   "quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Wheel",
+   "bone": "Bone:WheelDamage_RearLeft",
+   "position": [
+    -134.6934814453125,
+    79.945068359375,
+    32.96685791015625
+   ],
+   "quat": [
+    0.0,
+    0.0,
+    1.0,
+    6.123233995736766e-17
+   ]
+  },
+  {
+   "name": "Wheel",
+   "bone": "Bone:WheelDamage_FrontLeft",
+   "position": [
+    147.03964233398438,
+    79.945068359375,
+    32.96685791015625
+   ],
+   "quat": [
+    0.0,
+    0.0,
+    1.0,
+    6.123233995736766e-17
+   ]
+  },
+  {
+   "name": "Wheel",
+   "bone": "Bone:WheelDamage_FrontRight",
+   "position": [
+    147.03964233398438,
+    -79.945068359375,
+    32.96685791015625
+   ],
+   "quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Socket_AccessPoint_Door_FrontLeft",
+   "bone": "Bone:Vehicle_Body",
+   "position": [
+    -57.496,
+    -161.909,
+    50.0
+   ],
+   "quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Socket_AccessPoint_Door_FrontRight",
+   "bone": "Bone:Vehicle_Body",
+   "position": [
+    -57.496,
+    161.909,
+    50.0
+   ],
+   "quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Socket_SeatPoint_FrontLeft",
+   "bone": "Bone:Vehicle_Body",
+   "position": [
+    3.0,
+    -38.072,
+    42.394999999999996
+   ],
+   "quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Socket_SeatPoint_FrontRight",
+   "bone": "Bone:Vehicle_Body",
+   "position": [
+    -1.334,
+    38.072,
+    43.5
+   ],
+   "quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Socket_CombatPoint_FrontRight",
+   "bone": "Bone:Vehicle_Body",
+   "position": [
+    -6.003,
+    85.631,
+    107.564
+   ],
+   "quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Socket_HandIKPoint_FrontRight",
+   "bone": "Bone:Vehicle_Body",
+   "position": [
+    -25.473,
+    73.5842,
+    120.4834
+   ],
+   "quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Socket_CSAPoint_Door_FrontLeft",
+   "bone": "Bone:Vehicle_Body",
+   "position": [
+    8.0,
+    -87.0,
+    84.0
+   ],
+   "quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Socket_CSAPoint_Door_FrontRight",
+   "bone": "Bone:Vehicle_Body",
+   "position": [
+    8.0,
+    87.0,
+    84.0
+   ],
+   "quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Socket_CSAPoint_Door_Cargo",
+   "bone": "Bone:Vehicle_Body",
+   "position": [
+    -220.0,
+    0.0,
+    50.0
+   ],
+   "quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Socket_CSAPoint_Ground_FrontLeft",
+   "bone": "Bone:Vehicle_Body",
+   "position": [
+    -28.0,
+    -136.0,
+    0.0
+   ],
+   "quat": [
+    0.0,
+    0.0,
+    0.7071067811865476,
+    0.7071067811865476
+   ]
+  },
+  {
+   "name": "Socket_CSAPoint_Ground_FrontRight",
+   "bone": "Bone:Vehicle_Body",
+   "position": [
+    -28.0,
+    136.0,
+    0.0
+   ],
+   "quat": [
+    0.0,
+    0.0,
+    -0.7071067811865476,
+    0.7071067811865476
+   ]
+  },
+  {
+   "name": "Socket_CSAPoint_Ground_Cargo",
+   "bone": "Bone:Vehicle_Body",
+   "position": [
+    -282.0,
+    0.0,
+    0.0
+   ],
+   "quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Socket_AccessPoint_Door_Cargo",
+   "bone": "Bone:Vehicle_Body",
+   "position": [
+    0.0,
+    0.0,
+    50.0
+   ],
+   "quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ]
+}

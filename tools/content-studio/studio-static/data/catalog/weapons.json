@@ -1,0 +1,179 @@
+{
+ "count": 6,
+ "weapons": [
+  {
+   "id": "Weapon_Armas_Magnum",
+   "folder": "Weapon_Armas_Magnum",
+   "display": "ACT 44 GM PR1",
+   "name_confidence": "alias",
+   "sapbdb": "Weapon_Pistol_ACT44-GM_Joker",
+   "primary": "Weapon_Armas_Magnum/Weapon_Armas_Magnum/SkeletalMesh3/Crm_Magnum_Mk3_LOD0.psk",
+   "parts": [
+    {
+     "id": "Weapon_Armas_Magnum/Weapon_Armas_Magnum/StaticMesh3/Crm_Magnum_ClipEmpty_mk3_LOD0.pskx",
+     "name": "Crm_Magnum_ClipEmpty_mk3_LOD0",
+     "label": "Crm Magnum ClipEmpty mk3",
+     "bytes": 1736
+    },
+    {
+     "id": "Weapon_Armas_Magnum/Weapon_Armas_Magnum/SkeletalMesh3/Crm_Magnum_Clip_mk3_LOD0.psk",
+     "name": "Crm_Magnum_Clip_mk3_LOD0",
+     "label": "Crm Magnum Clip mk3",
+     "bytes": 1536
+    },
+    {
+     "id": "Weapon_Armas_Magnum/Weapon_Armas_Magnum/SkeletalMesh3/Crm_Magnum_Mk3_LOD0.psk",
+     "name": "Crm_Magnum_Mk3_LOD0",
+     "label": "Crm Magnum Mk3",
+     "bytes": 29388
+    }
+   ],
+   "skins": []
+  },
+  {
+   "id": "Weapon_Armas_SniperRifle_50Cal",
+   "folder": "Weapon_Armas_SniperRifle_50Cal",
+   "display": "Armas Sniper Rifle 50 Cal",
+   "name_confidence": "derived",
+   "sapbdb": null,
+   "primary": "Weapon_Armas_SniperRifle_50Cal/Weapon_Armas_SniperRifle_50Cal/SkeletalMesh3/Enf_SniperRifle_Mk2_LOD0.psk",
+   "parts": [
+    {
+     "id": "Weapon_Armas_SniperRifle_50Cal/Weapon_Armas_SniperRifle_50Cal/StaticMesh3/Enf_SniperRifle_ClipEmpty_mk2_LOD0.pskx",
+     "name": "Enf_SniperRifle_ClipEmpty_mk2_LOD0",
+     "label": "Enf SniperRifle ClipEmpty mk2",
+     "bytes": 1464
+    },
+    {
+     "id": "Weapon_Armas_SniperRifle_50Cal/Weapon_Armas_SniperRifle_50Cal/SkeletalMesh3/Enf_SniperRifle_Clip_Mk2_LOD0.psk",
+     "name": "Enf_SniperRifle_Clip_Mk2_LOD0",
+     "label": "Enf SniperRifle Clip Mk2",
+     "bytes": 1440
+    },
+    {
+     "id": "Weapon_Armas_SniperRifle_50Cal/Weapon_Armas_SniperRifle_50Cal/SkeletalMesh3/Enf_SniperRifle_Mk2_LOD0.psk",
+     "name": "Enf_SniperRifle_Mk2_LOD0",
+     "label": "Enf SniperRifle Mk2",
+     "bytes": 36284
+    }
+   ],
+   "skins": []
+  },
+  {
+   "id": "Weapon_Armas_SubMachineGun_Pitbull",
+   "folder": "Weapon_Armas_SubMachineGun_Pitbull",
+   "display": "Armas Sub Machine Gun Pitbull",
+   "name_confidence": "derived",
+   "sapbdb": null,
+   "primary": "Weapon_Armas_SubMachineGun_Pitbull/Weapon_Armas_SubMachineGun_Pitbull/SkeletalMesh3/CRM_SubMachineGun_Mk2_LOD0.psk",
+   "parts": [
+    {
+     "id": "Weapon_Armas_SubMachineGun_Pitbull/Weapon_Armas_SubMachineGun_Pitbull/SkeletalMesh3/CRM_SubMachineGun_Clip_Mk2_LOD0.psk",
+     "name": "CRM_SubMachineGun_Clip_Mk2_LOD0",
+     "label": "CRM SubMachineGun Clip Mk2",
+     "bytes": 2792
+    },
+    {
+     "id": "Weapon_Armas_SubMachineGun_Pitbull/Weapon_Armas_SubMachineGun_Pitbull/SkeletalMesh3/CRM_SubMachineGun_Mk2_LOD0.psk",
+     "name": "CRM_SubMachineGun_Mk2_LOD0",
+     "label": "CRM SubMachineGun Mk2",
+     "bytes": 34296
+    },
+    {
+     "id": "Weapon_Armas_SubMachineGun_Pitbull/Weapon_Armas_SubMachineGun_Pitbull/StaticMesh3/Crm_SubMachineGun_ClipEmpty_mk2_LOD0.pskx",
+     "name": "Crm_SubMachineGun_ClipEmpty_mk2_LOD0",
+     "label": "Crm SubMachineGun ClipEmpty mk2",
+     "bytes": 1680
+    }
+   ],
+   "skins": []
+  },
+  {
+   "id": "Weapon_AssaultRifle",
+   "folder": "Weapon_AssaultRifle",
+   "display": "N-TEC 5",
+   "name_confidence": "alias",
+   "sapbdb": "Weapon_AssaultRifle_NTEC",
+   "primary": "Weapon_AssaultRifle/Weapon_AssaultRifle/SkeletalMesh3/Weapon_AssaultRifle_Mk2_LOD0.psk",
+   "parts": [
+    {
+     "id": "Weapon_AssaultRifle/Weapon_AssaultRifle/SkeletalMesh3/Weapon_AssaultRifle_LOD0.psk",
+     "name": "Weapon_AssaultRifle_LOD0",
+     "label": "Default",
+     "bytes": 35184
+    },
+    {
+     "id": "Weapon_AssaultRifle/Weapon_AssaultRifle/SkeletalMesh3/Weapon_AssaultRifle_Mk2_LOD0.psk",
+     "name": "Weapon_AssaultRifle_Mk2_LOD0",
+     "label": "Mk2",
+     "bytes": 35864
+    },
+    {
+     "id": "Weapon_AssaultRifle/Weapon_AssaultRifle/SkeletalMesh3/Weapon_AssaultRifle_SolidStock_LOD0.psk",
+     "name": "Weapon_AssaultRifle_SolidStock_LOD0",
+     "label": "SolidStock",
+     "bytes": 32848
+    }
+   ],
+   "skins": []
+  },
+  {
+   "id": "Weapon_AssaultRifle_ATac",
+   "folder": "Weapon_AssaultRifle_ATac",
+   "display": "ATAC 424",
+   "name_confidence": "exact",
+   "sapbdb": "Weapon_AssaultRifle_ATAC",
+   "primary": "Weapon_AssaultRifle_ATac/Weapon_AssaultRifle_ATac/SkeletalMesh3/Weapon_AssaultRifle_ATac_Bodyguard_LOD0.psk",
+   "parts": [
+    {
+     "id": "Weapon_AssaultRifle_ATac/Weapon_AssaultRifle_ATac/SkeletalMesh3/Weapon_AssaultRifle_ATac_Bodyguard_LOD0.psk",
+     "name": "Weapon_AssaultRifle_ATac_Bodyguard_LOD0",
+     "label": "Bodyguard",
+     "bytes": 63960
+    },
+    {
+     "id": "Weapon_AssaultRifle_ATac/Weapon_AssaultRifle_ATac/SkeletalMesh3/Weapon_AssaultRifle_ATac_Default_LOD0.psk",
+     "name": "Weapon_AssaultRifle_ATac_Default_LOD0",
+     "label": "Default",
+     "bytes": 54456
+    },
+    {
+     "id": "Weapon_AssaultRifle_ATac/Weapon_AssaultRifle_ATac/SkeletalMesh3/Weapon_AssaultRifle_ATac_Mercenary_LOD0.psk",
+     "name": "Weapon_AssaultRifle_ATac_Mercenary_LOD0",
+     "label": "Mercenary",
+     "bytes": 61248
+    },
+    {
+     "id": "Weapon_AssaultRifle_ATac/Weapon_AssaultRifle_ATac/SkeletalMesh3/Weapon_AssaultRifle_ATac_Watchman_LOD0.psk",
+     "name": "Weapon_AssaultRifle_ATac_Watchman_LOD0",
+     "label": "Watchman",
+     "bytes": 60452
+    }
+   ],
+   "skins": []
+  },
+  {
+   "id": "Weapon_AssaultRifle_COBR-A",
+   "folder": "Weapon_AssaultRifle_COBR-A",
+   "display": "COBR-A",
+   "name_confidence": "exact",
+   "sapbdb": "Weapon_AssaultRifle_COBR-A",
+   "primary": "Weapon_AssaultRifle_COBR-A/Weapon_AssaultRifle_COBR-A/SkeletalMesh3/Weapon_AssaultRifle_COBR-A_Scoped_LOD0.psk",
+   "parts": [
+    {
+     "id": "Weapon_AssaultRifle_COBR-A/Weapon_AssaultRifle_COBR-A/SkeletalMesh3/Weapon_AssaultRifle_COBR-A_Base_LOD0.psk",
+     "name": "Weapon_AssaultRifle_COBR-A_Base_LOD0",
+     "label": "Base",
+     "bytes": 64540
+    },
+    {
+     "id": "Weapon_AssaultRifle_COBR-A/Weapon_AssaultRifle_COBR-A/SkeletalMesh3/Weapon_AssaultRifle_COBR-A_Scoped_LOD0.psk",
+     "name": "Weapon_AssaultRifle_COBR-A_Scoped_LOD0",
+     "label": "Scoped",
+     "bytes": 68232
+    }
+   ],
+   "skins": []
+  }
+ ]
+}

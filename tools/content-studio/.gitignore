@@ -16,8 +16,13 @@ web/*.tsbuildinfo
 .cache/
 *.glb
 
+# Static bake output (build artifact - deploy by copying to docs/studio/)
+studio-static/
+web/.env.static.local
+
 # Playwright (Track B Slice 1 QA)
 web/test-results/
+web/test-results-static/
 web/playwright-report/
 web/blob-report/
 web/.playwright/

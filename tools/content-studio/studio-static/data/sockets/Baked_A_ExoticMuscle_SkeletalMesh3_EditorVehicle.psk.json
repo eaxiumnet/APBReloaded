@@ -1,0 +1,304 @@
+{
+ "sockets": [
+  {
+   "name": "Socket_AccessPoint_Door_FrontLeft",
+   "bone": "Bone:Vehicle_Body",
+   "position": [
+    -81.136,
+    -160.314,
+    50.0
+   ],
+   "quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Socket_SeatPoint_FrontLeft",
+   "bone": "Bone:Vehicle_Body",
+   "position": [
+    -20.629,
+    -41.087,
+    40.837
+   ],
+   "quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Socket_SeatPoint_FrontRight",
+   "bone": "Bone:Vehicle_Body",
+   "position": [
+    -25.129,
+    41.087,
+    38.0
+   ],
+   "quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Socket_CombatPoint_FrontRight",
+   "bone": "Bone:Vehicle_Body",
+   "position": [
+    -27.478,
+    79.209,
+    106.781
+   ],
+   "quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Socket_HandIKPoint_FrontRight",
+   "bone": "Bone:Vehicle_Body",
+   "position": [
+    -42.411,
+    60.5724,
+    120.5097
+   ],
+   "quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Socket_CSAPoint_Door_FrontLeft",
+   "bone": "Bone:Vehicle_Body",
+   "position": [
+    -21.0,
+    -85.0,
+    83.0
+   ],
+   "quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Socket_CSAPoint_Door_FrontRight",
+   "bone": "Bone:Vehicle_Body",
+   "position": [
+    -21.0,
+    85.0,
+    83.0
+   ],
+   "quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Socket_CSAPoint_Door_Cargo",
+   "bone": "Bone:Vehicle_Body",
+   "position": [
+    -198.076,
+    0.0,
+    100.75
+   ],
+   "quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Socket_CSAPoint_Ground_FrontLeft",
+   "bone": "Bone:Vehicle_Body",
+   "position": [
+    -52.0,
+    -131.0,
+    0.0
+   ],
+   "quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Socket_CSAPoint_Ground_FrontRight",
+   "bone": "Bone:Vehicle_Body",
+   "position": [
+    -52.0,
+    131.0,
+    0.0
+   ],
+   "quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Socket_CSAPoint_Ground_Cargo",
+   "bone": "Bone:Vehicle_Body",
+   "position": [
+    -264.0,
+    0.0,
+    0.0
+   ],
+   "quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Socket_AccessPoint_Door_Cargo",
+   "bone": "Bone:Vehicle_Body",
+   "position": [
+    -271.0,
+    0.0,
+    0.0
+   ],
+   "quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Socket_Exhaust_01",
+   "bone": "Bone:Bumper_Rear",
+   "position": [
+    -230.00641309570312,
+    -0.258487,
+    36.97645950317383
+   ],
+   "quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Socket_Exhaust_02",
+   "bone": "Bone:Bumper_Rear",
+   "position": [
+    -226.74530309570312,
+    -0.250141,
+    29.476459503173828
+   ],
+   "quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Socket_Exhaust_03",
+   "bone": "Bone:Bumper_Rear",
+   "position": [
+    -219.33417309570314,
+    -0.069353,
+    29.476459503173828
+   ],
+   "quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Socket_AccessPoint_Door_FrontRight",
+   "bone": "Bone:Vehicle_Body",
+   "position": [
+    -81.136,
+    160.314,
+    50.0
+   ],
+   "quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Wheel",
+   "bone": "Bone:WheelDamage_FrontRight",
+   "position": [
+    141.91134643554688,
+    -82.05061340332031,
+    35.6485595703125
+   ],
+   "quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Wheel",
+   "bone": "Bone:WheelDamage_FrontLeft",
+   "position": [
+    141.91436767578125,
+    81.98958587646484,
+    35.64856719970703
+   ],
+   "quat": [
+    0.0,
+    0.0,
+    1.0,
+    6.123233995736766e-17
+   ]
+  },
+  {
+   "name": "Wheel",
+   "bone": "Bone:WheelDamage_RearLeft",
+   "position": [
+    -128.02120971679688,
+    82.12472534179688,
+    35.647438049316406
+   ],
+   "quat": [
+    0.0,
+    0.0,
+    1.0,
+    6.123233995736766e-17
+   ]
+  },
+  {
+   "name": "Wheel",
+   "bone": "Bone:WheelDamage_RearRight",
+   "position": [
+    -128.01614379882812,
+    -82.12471008300781,
+    35.64436721801758
+   ],
+   "quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ]
+}

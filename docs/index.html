@@ -117,6 +117,8 @@
     overflow: hidden; transition: border-color 0.2s, transform 0.2s;
   }
   .card:hover { border-color: var(--amber); transform: translateY(-2px); }
+  .card-link { display: block; color: inherit; text-decoration: none; }
+  .card-link:hover .cap b { color: var(--amber); }
   .card img { width: 100%; display: block; aspect-ratio: 16/10; object-fit: cover; background: #0F0D09; }
   .card .cap { padding: 12px 16px; font-family: var(--mono); font-size: 12px; color: var(--ink-dim); display: flex; justify-content: space-between; }
   .card .cap b { color: var(--amber); font-weight: 500; }
@@ -189,20 +191,20 @@
     extracted mesh into a browsable, animated preview.
   </p>
   <div class="actions">
-    <a class="btn btn-primary" href="https://github.com/eaxiumnet/APBReloaded">View the repo</a>
+    <a class="btn btn-primary" href="studio/">Open the live studio</a>
+    <a class="btn btn-ghost" href="https://github.com/eaxiumnet/APBReloaded">View the repo</a>
     <a class="btn btn-ghost" href="https://github.com/eaxiumnet/APBReloaded/issues">Report an issue</a>
-    <a class="btn btn-ghost" href="#try">Run it locally</a>
   </div>
 </section>
 
 <section id="studio">
   <div class="section-head"><span class="idx">01</span><h2>THE ASSET STUDIO</h2><span class="rule"></span></div>
   <div class="gallery">
-    <div class="card"><img src="assets/site-weapons.png" alt="Weapons preview in the content studio"><div class="cap"><b>WEAPONS</b><span>skinned previews</span></div></div>
-    <div class="card"><img src="assets/site-vehicles.png" alt="Vehicle preview with wheel assembly"><div class="cap"><b>VEHICLES</b><span>wheel families</span></div></div>
-    <div class="card"><img src="assets/site-characters.png" alt="Character and clothing preview"><div class="cap"><b>CHARACTERS</b><span>clothing + anims</span></div></div>
-    <div class="card"><img src="assets/site-all-assets.png" alt="All assets inventory view"><div class="cap"><b>ALL ASSETS</b><span>full inventory</span></div></div>
-    <div class="card"><img src="assets/prop-breakable-doors.png" alt="Animated prop preview"><div class="cap"><b>PROPS</b><span>animated</span></div></div>
+    <div class="card"><a href="studio/" class="card-link"><img src="assets/site-weapons.png" alt="Weapons preview in the content studio"><div class="cap"><b>WEAPONS</b><span>live 3D previews</span></div></a></div>
+    <div class="card"><a href="studio/" class="card-link"><img src="assets/site-vehicles.png" alt="Vehicle preview with wheel assembly"><div class="cap"><b>VEHICLES</b><span>wheel families</span></div></a></div>
+    <div class="card"><a href="studio/" class="card-link"><img src="assets/site-characters.png" alt="Character and clothing preview"><div class="cap"><b>CHARACTERS</b><span>clothing + anims</span></div></a></div>
+    <div class="card"><a href="studio/" class="card-link"><img src="assets/site-all-assets.png" alt="All assets inventory view"><div class="cap"><b>ALL ASSETS</b><span>full inventory</span></div></a></div>
+    <div class="card"><a href="studio/" class="card-link"><img src="assets/prop-breakable-doors.png" alt="Animated prop preview"><div class="cap"><b>PROPS</b><span>animated</span></div></a></div>
   </div>
 </section>
 
@@ -253,18 +255,20 @@
   <div class="steps">
     <div class="step">
       <span class="n">1</span>
-      <div><h3>Clone the repo</h3><p>Requires a local <code>Content/Extracted</code> tree (produced by the extraction tooling from a retail APB install — not distributed here).</p></div>
+      <div><h3>Open the live studio — no downloads</h3><p>Once published, this page hosts the <b>baked static build</b> of the studio at <a href="studio/"><code>/studio/</code></a>: every mesh is pre-converted to GLB, every texture to PNG, and the whole app runs from plain files. No repo clone, no servers, no install. (Before the first bake is committed, the link returns 404.)</p></div>
     </div>
     <div class="step">
       <span class="n">2</span>
-      <div><h3>Start the server</h3>
-        <div class="codeblock"><span class="cmt"># Python 3.11+</span><br><span class="kw">cd</span> tools/content-studio/server<br>python -m venv .venv <span class="kw">&amp;&amp;</span> .venv/Scripts/pip install -r requirements.txt<br>.venv/Scripts/python -m uvicorn main:app <span class="kw">--port</span> 8777</div>
+      <div><h3>Bake a new bundle (from a machine with the extracted assets)</h3>
+        <div class="codeblock"><span class="cmt"># converts a curated showcase (weapons, vehicles, clothing,
+# animations, props, districts) into studio-static/
+# then publish by copying it into docs/studio/</span><br><span class="kw">powershell -File</span> tools/content-studio/build_static.ps1</div>
       </div>
     </div>
     <div class="step">
       <span class="n">3</span>
-      <div><h3>Start the web app</h3>
-        <div class="codeblock"><span class="cmt"># Node 18+</span><br><span class="kw">cd</span> ../web<br>npm install <span class="kw">&amp;&amp;</span> npm run dev <span class="cmt"># http://localhost:5173</span></div>
+      <div><h3>Run the full studio locally (all assets)</h3>
+        <div class="codeblock"><span class="kw">powershell -File</span> tools/content-studio/run.ps1 <span class="cmt"># backend :8777 + web :5173</span></div>
       </div>
     </div>
     <div class="step">
