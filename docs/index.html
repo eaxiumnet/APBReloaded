@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>APB Reloaded — UE 5.8 Recreation + Asset Studio</title>
+<meta name="description" content="A from-scratch recreation of APB: All Points Bulletin (Reloaded) on Unreal Engine 5.8, with a web asset studio for every extracted mesh.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --amber: #FFC254;
+    --amber-hi: #FFFB9C;
+    --amber-dim: rgba(255, 194, 84, 0.14);
+    --charcoal: #16130E;
+    --panel: #1F1A13;
+    --panel-2: #2A231A;
+    --ink: #EDE6DA;
+    --ink-dim: #A79A86;
+    --hairline: rgba(255, 194, 84, 0.22);
+    --ok: #7FD88F;
+    --display: 'Chakra Petch', sans-serif;
+    --body: 'Inter', sans-serif;
+    --mono: 'JetBrains Mono', monospace;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--charcoal);
+    color: var(--ink);
+    font-family: var(--body);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: var(--amber); color: #1A140B; }
+
+  /* ---- top bar ---- */
+  .topbar {
+    position: sticky; top: 0; z-index: 50;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 14px 5vw;
+    background: rgba(22, 19, 14, 0.92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--hairline);
+  }
+  .brand { display: flex; align-items: center; gap: 10px; font-family: var(--display); font-weight: 700; letter-spacing: 0.08em; }
+  .brand .key {
+    width: 22px; height: 22px; border: 2px solid var(--amber); border-radius: 3px;
+    display: grid; place-items: center; font-size: 12px; color: var(--amber);
+  }
+  .brand .accent { color: var(--amber); }
+  .topbar nav { display: flex; gap: 22px; font-size: 14px; font-weight: 500; }
+  .topbar nav a { color: var(--ink-dim); text-decoration: none; transition: color 0.15s; }
+  .topbar nav a:hover { color: var(--amber); }
+  @media (max-width: 720px) { .topbar nav { display: none; } }
+
+  /* ---- hero ---- */
+  .hero {
+    min-height: 88vh;
+    display: flex; flex-direction: column; justify-content: center;
+    padding: 0 5vw 8vh;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: "";
+    position: absolute; inset: 0;
+    background:
+      linear-gradient(rgba(255, 194, 84, 0.045) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 194, 84, 0.045) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: radial-gradient(ellipse at 30% 40%, black, transparent 70%);
+    pointer-events: none;
+  }
+  .eyebrow {
+    font-family: var(--mono); font-size: 12px; letter-spacing: 0.35em;
+    color: var(--amber); text-transform: uppercase; margin-bottom: 18px;
+  }
+  .hero h1 {
+    font-family: var(--display); font-weight: 700;
+    font-size: clamp(2.6rem, 7vw, 5.4rem);
+    line-height: 0.98; letter-spacing: 0.01em;
+    max-width: 13ch;
+  }
+  .hero h1 .line2 { color: var(--amber); }
+  .hero p.lede {
+    margin-top: 22px; max-width: 56ch;
+    font-size: 1.06rem; color: var(--ink-dim);
+  }
+  .hero .actions { display: flex; gap: 14px; margin-top: 34px; flex-wrap: wrap; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 12px 22px; border-radius: 4px;
+    font-family: var(--display); font-weight: 600; letter-spacing: 0.06em;
+    text-decoration: none; font-size: 15px;
+    transition: transform 0.15s, box-shadow 0.15s, background 0.15s;
+  }
+  .btn:hover { transform: translateY(-1px); }
+  .btn-primary { background: var(--amber); color: #1A140B; box-shadow: 0 4px 22px rgba(255, 194, 84, 0.28); }
+  .btn-primary:hover { background: var(--amber-hi); }
+  .btn-ghost { border: 1px solid var(--hairline); color: var(--ink); }
+  .btn-ghost:hover { border-color: var(--amber); color: var(--amber); }
+
+  /* ---- sections ---- */
+  section { padding: 9vh 5vw; border-top: 1px solid rgba(255, 194, 84, 0.1); }
+  .section-head { display: flex; align-items: baseline; gap: 16px; margin-bottom: 40px; }
+  .section-head .idx { font-family: var(--mono); color: var(--amber); font-size: 13px; }
+  .section-head h2 { font-family: var(--display); font-weight: 600; font-size: clamp(1.5rem, 3.4vw, 2.2rem); letter-spacing: 0.02em; }
+  .section-head .rule { flex: 1; height: 1px; background: var(--hairline); }
+
+  /* ---- gallery ---- */
+  .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px; }
+  .card {
+    background: var(--panel); border: 1px solid var(--hairline); border-radius: 6px;
+    overflow: hidden; transition: border-color 0.2s, transform 0.2s;
+  }
+  .card:hover { border-color: var(--amber); transform: translateY(-2px); }
+  .card img { width: 100%; display: block; aspect-ratio: 16/10; object-fit: cover; background: #0F0D09; }
+  .card .cap { padding: 12px 16px; font-family: var(--mono); font-size: 12px; color: var(--ink-dim); display: flex; justify-content: space-between; }
+  .card .cap b { color: var(--amber); font-weight: 500; }
+
+  /* ---- features ---- */
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+  .feat { background: var(--panel); border: 1px solid rgba(255, 194, 84, 0.12); border-radius: 6px; padding: 22px; }
+  .feat .tag { font-family: var(--mono); font-size: 11px; color: var(--amber); letter-spacing: 0.18em; text-transform: uppercase; }
+  .feat h3 { font-family: var(--display); font-weight: 600; font-size: 1.05rem; margin: 10px 0 8px; }
+  .feat p { font-size: 0.92rem; color: var(--ink-dim); }
+  .feat .ok { color: var(--ok); font-family: var(--mono); font-size: 12px; margin-top: 10px; display: block; }
+
+  /* ---- try it ---- */
+  .codeblock {
+    background: #0F0D09; border: 1px solid var(--hairline); border-radius: 6px;
+    padding: 20px 22px; font-family: var(--mono); font-size: 13.5px;
+    overflow-x: auto; color: var(--ink);
+  }
+  .codeblock .cmt { color: var(--ink-dim); }
+  .codeblock .kw { color: var(--amber); }
+  .steps { display: grid; gap: 18px; max-width: 900px; }
+  .step { display: grid; grid-template-columns: 40px 1fr; gap: 14px; align-items: start; }
+  .step .n {
+    width: 34px; height: 34px; border: 1px solid var(--amber); border-radius: 50%;
+    display: grid; place-items: center; font-family: var(--display); font-weight: 600; color: var(--amber);
+  }
+  .step h3 { font-family: var(--display); font-size: 1.02rem; font-weight: 600; margin-bottom: 4px; }
+  .step p { color: var(--ink-dim); font-size: 0.93rem; max-width: 70ch; }
+  .step code { font-family: var(--mono); font-size: 0.86em; color: var(--amber); background: var(--amber-dim); padding: 1px 6px; border-radius: 3px; }
+
+  /* ---- contribute ---- */
+  .contribute { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+  .panel { background: var(--panel-2); border: 1px solid var(--hairline); border-radius: 6px; padding: 24px; }
+  .panel h3 { font-family: var(--display); font-weight: 600; font-size: 1.1rem; margin-bottom: 10px; }
+  .panel p { color: var(--ink-dim); font-size: 0.93rem; margin-bottom: 14px; }
+  .panel ul { list-style: none; color: var(--ink-dim); font-size: 0.9rem; }
+  .panel li { padding: 4px 0 4px 18px; position: relative; }
+  .panel li::before { content: "▸"; position: absolute; left: 0; color: var(--amber); }
+
+  footer {
+    padding: 40px 5vw; border-top: 1px solid var(--hairline);
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+    font-family: var(--mono); font-size: 12px; color: var(--ink-dim);
+  }
+  footer a { color: var(--amber); text-decoration: none; }
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; scroll-behavior: auto !important; }
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><span class="key">🔑</span>APB<span class="accent">RELOADED</span></div>
+  <nav>
+    <a href="#studio">Studio</a>
+    <a href="#features">Features</a>
+    <a href="#try">Try it</a>
+    <a href="#contribute">Contribute</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="eyebrow">Unreal Engine 5.8 · Fan recreation · Preservation</div>
+  <h1>APB RELOADED,<br><span class="line2">REBUILT FROM SCRATCH.</span></h1>
+  <p class="lede">
+    The streets of San Paro are back. A from-scratch UE 5.8 recreation of
+    APB: All Points Bulletin — domain logic in pure C++, replicated multiplayer
+    state, a 2011-fidelity frontend, and a web asset studio that turns every
+    extracted mesh into a browsable, animated preview.
+  </p>
+  <div class="actions">
+    <a class="btn btn-primary" href="https://github.com/eaxiumnet/APBReloaded">View the repo</a>
+    <a class="btn btn-ghost" href="https://github.com/eaxiumnet/APBReloaded/issues">Report an issue</a>
+    <a class="btn btn-ghost" href="#try">Run it locally</a>
+  </div>
+</section>
+
+<section id="studio">
+  <div class="section-head"><span class="idx">01</span><h2>THE ASSET STUDIO</h2><span class="rule"></span></div>
+  <div class="gallery">
+    <div class="card"><img src="assets/site-weapons.png" alt="Weapons preview in the content studio"><div class="cap"><b>WEAPONS</b><span>skinned previews</span></div></div>
+    <div class="card"><img src="assets/site-vehicles.png" alt="Vehicle preview with wheel assembly"><div class="cap"><b>VEHICLES</b><span>wheel families</span></div></div>
+    <div class="card"><img src="assets/site-characters.png" alt="Character and clothing preview"><div class="cap"><b>CHARACTERS</b><span>clothing + anims</span></div></div>
+    <div class="card"><img src="assets/site-all-assets.png" alt="All assets inventory view"><div class="cap"><b>ALL ASSETS</b><span>full inventory</span></div></div>
+    <div class="card"><img src="assets/prop-breakable-doors.png" alt="Animated prop preview"><div class="cap"><b>PROPS</b><span>animated</span></div></div>
+  </div>
+</section>
+
+<section id="features">
+  <div class="section-head"><span class="idx">02</span><h2>WHAT'S BUILT</h2><span class="rule"></span></div>
+  <div class="grid">
+    <div class="feat">
+      <span class="tag">Domain</span>
+      <h3>Engine-free C++ core</h3>
+      <p>Characters, districts, economy, missions, combat resolve — pure C++17 with a standalone test harness. No engine needed to run the logic.</p>
+      <span class="ok">✓ standalone test suite</span>
+    </div>
+    <div class="feat">
+      <span class="tag">Netcode</span>
+      <h3>Replicated multiplayer</h3>
+      <p>Lobby, district tickets, freeroam admission, chat relay, and replicated faction/threat/currency player state.</p>
+      <span class="ok">✓ server-authoritative</span>
+    </div>
+    <div class="feat">
+      <span class="tag">Frontend</span>
+      <h3>2011-fidelity menus</h3>
+      <p>Login, character create/select, district select, settings overlay, replay videos, credits — rebuilt to match the original UI.</p>
+      <span class="ok">✓ one-accent amber identity</span>
+    </div>
+    <div class="feat">
+      <span class="tag">Pipeline</span>
+      <h3>PSK → glTF export</h3>
+      <p>Skinned GLB generation with animation rebase, frame-0-exact skinning, and principled axis detection for mechanical props.</p>
+      <span class="ok">✓ 190+ backend tests</span>
+    </div>
+    <div class="feat">
+      <span class="tag">Viewer</span>
+      <h3>three.js preview</h3>
+      <p>Auto-rotate, orbit/pan/zoom, animation playback, UV decal placement for clothing, texture zoom inspection.</p>
+      <span class="ok">✓ 20+ e2e tests</span>
+    </div>
+    <div class="feat">
+      <span class="tag">Data</span>
+      <h3>Source-evidence catalogs</h3>
+      <p>JSON catalogs seeded from apbdb.com and the retail reference — verified assets only, no guessed values.</p>
+      <span class="ok">✓ import ledger</span>
+    </div>
+  </div>
+</section>
+
+<section id="try">
+  <div class="section-head"><span class="idx">03</span><h2>TRY THE ASSET STUDIO</h2><span class="rule"></span></div>
+  <div class="steps">
+    <div class="step">
+      <span class="n">1</span>
+      <div><h3>Clone the repo</h3><p>Requires a local <code>Content/Extracted</code> tree (produced by the extraction tooling from a retail APB install — not distributed here).</p></div>
+    </div>
+    <div class="step">
+      <span class="n">2</span>
+      <div><h3>Start the server</h3>
+        <div class="codeblock"><span class="cmt"># Python 3.11+</span><br><span class="kw">cd</span> tools/content-studio/server<br>python -m venv .venv <span class="kw">&amp;&amp;</span> .venv/Scripts/pip install -r requirements.txt<br>.venv/Scripts/python -m uvicorn main:app <span class="kw">--port</span> 8777</div>
+      </div>
+    </div>
+    <div class="step">
+      <span class="n">3</span>
+      <div><h3>Start the web app</h3>
+        <div class="codeblock"><span class="cmt"># Node 18+</span><br><span class="kw">cd</span> ../web<br>npm install <span class="kw">&amp;&amp;</span> npm run dev <span class="cmt"># http://localhost:5173</span></div>
+      </div>
+    </div>
+    <div class="step">
+      <span class="n">4</span>
+      <div><h3>Build the game (UE 5.8)</h3>
+        <div class="codeblock"><span class="kw">powershell -File</span> tests/build_and_run.ps1<br><span class="kw">D:\UE58\UE_5.8\Engine\Binaries\Win64\UnrealEditor.exe</span> APBReloaded.uproject <span class="kw">-game -windowed -log</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contribute">
+  <div class="section-head"><span class="idx">04</span><h2>CONTRIBUTE</h2><span class="rule"></span></div>
+  <div class="contribute">
+    <div class="panel">
+      <h3>Report an issue</h3>
+      <p>Asset gaps, viewer bugs, menu glitches — file an issue with a screenshot and browser console output.</p>
+      <a class="btn btn-ghost" href="https://github.com/eaxiumnet/APBReloaded/issues">Open Issues</a>
+    </div>
+    <div class="panel">
+      <h3>Open a pull request</h3>
+      <ul>
+        <li>One concern per PR</li>
+        <li>Run the relevant test suite first</li>
+        <li>Domain logic belongs in <code>Source/APBReloaded/Domain</code></li>
+        <li>Catalogs: source evidence, no guessed values</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>APB RELOADED — fan recreation for research &amp; preservation</span>
+  <span>No retail binaries distributed · <a href="https://github.com/eaxiumnet/APBReloaded">github.com/eaxiumnet/APBReloaded</a></span>
+</footer>
+
+</body>
+</html>
